@@ -1,0 +1,9 @@
+# 音频素材（从 B 站下载的 m4a，文件大且是素材而非代码版本，不入库）
+assets/audio/
+
+# 临时文件
+*.tmp
+*.log
+
+# ���Բ���
+_filetest.html

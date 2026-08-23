@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#a9ae98">
+    <title>24.xsl</title>
+    <link rel="icon" href="assets/no-solution.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="game-stage" id="game-stage" aria-label="24点游戏">
+        <picture class="stage-art" aria-hidden="true">
+            <source media="(max-width: 720px)" srcset="assets/stage-mobile.png">
+            <img src="assets/stage-desktop.png" alt="">
+        </picture>
+
+        <section class="cards-container" id="cards-container" aria-label="扑克牌"></section>
+
+        <header class="title-layer">
+            <img src="assets/title-plaque.png" alt="24点，使用加减乘除得出24">
+        </header>
+
+        <div class="counter" aria-live="polite">已解决：<span id="solved-count">0</span></div>
+
+        <nav class="controls" aria-label="运算符">
+            <button type="button" class="operator-btn" data-operator="+" aria-label="加">
+                <img src="assets/operator-plus.png" alt="">
+            </button>
+            <button type="button" class="operator-btn" data-operator="-" aria-label="减">
+                <img src="assets/operator-minus.png" alt="">
+            </button>
+            <button type="button" class="operator-btn" data-operator="×" aria-label="乘">
+                <img src="assets/operator-multiply.png" alt="">
+            </button>
+            <button type="button" class="operator-btn" data-operator="÷" aria-label="除">
+                <img src="assets/operator-divide.png" alt="">
+            </button>
+            <button type="button" class="operator-btn no-solution-btn" id="no-solution-btn" aria-label="判断无解">
+                <img src="assets/no-solution.png" alt="">
+            </button>
+        </nav>
+
+        <div class="calculation-display" id="calculation-display" aria-live="polite">点击牌开始计算</div>
+
+        <nav class="action-buttons" aria-label="题目操作">
+            <button type="button" class="action-btn next-btn" id="next-btn" aria-label="下一题">
+                <img src="assets/nav-next.png" alt="">
+            </button>
+            <button type="button" class="action-btn reset-btn" id="reset-btn" aria-label="重置">
+                <img src="assets/nav-reset.png" alt="">
+            </button>
+            <button type="button" class="action-btn solution-btn" id="solution-btn" aria-label="查看答案">
+                <img src="assets/nav-answer.png" alt="">
+            </button>
+        </nav>
+    </main>
+
+    <div class="message-container" id="message-container" aria-live="polite"></div>
+    <div class="celebration" id="celebration" aria-hidden="true"></div>
+    <script src="game.js"></script>
+</body>
+</html>
