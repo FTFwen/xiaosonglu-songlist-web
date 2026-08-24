@@ -4,7 +4,7 @@
   "generatedAt": "2026-08-22T15:36:59.183Z",
   "source": "song-cut-audio-download",
   "description": "每首歌对应的翻唱切片音频（从 B 站歌切/回放下载），供网页在线播放。",
-  "count": 89,
+  "count": 96,
   "audios": {
     "勾指起誓": "assets/audio/song_88.m4a",
     "寄明月": "assets/audio/song_02.m4a",
@@ -95,6 +95,12 @@
     "プロポーズ": "assets/audio/song_87.m4a",
     "YOU & IDOL": "assets/audio/song_89.m4a",
     "吹灭小山河": "assets/audio/song_90.m4a",
-    "多情岸": "assets/audio/song_91.m4a"
+    "多情岸": "assets/audio/song_91.m4a",
+    "流霰": "assets/audio/song_92.m4a",
+    "栖凰": "assets/audio/song_93.m4a",
+    "夏霞": "assets/audio/song_94.m4a",
+    "夏恋慕": "assets/audio/song_95.m4a",
+    "恋苦": "assets/audio/song_96.m4a",
+    "光": "assets/audio/song_97.m4a"
   }
 }

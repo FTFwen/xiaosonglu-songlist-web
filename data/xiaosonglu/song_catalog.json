@@ -1,7 +1,7 @@
 {
   "roomKey": "xiaosonglu",
   "roomId": "1727071052",
-  "generatedAt": "2026-08-24T12:02:18.393Z",
+  "generatedAt": "2026-08-24T16:15:34.278Z",
   "source": "local-replay-ingestion",
   "songs": [
     {
@@ -194,14 +194,14 @@
       "row_key": "虫儿飞"
     },
     {
-      "song_id": 93,
+      "song_id": 92,
       "song_name": "吹灭小山河",
       "show_as_song_name": "",
       "display_song_name": "吹灭小山河",
       "artist": "国风堂 / 司南",
       "artist_search": "国风堂 司南 吹灭小山河",
       "feat_artist": "",
-      "remark": "弹幕02:46:33“吹灭小山河有品”（有品=选曲品味好，指演唱中）。网易云核实：国风堂/司南《观风月·竹马篇》。",
+      "remark": "弹幕02:46:33“吹灭小山河有品”（有品=选曲品味好，指演唱中）。网易云核实：国风堂/司南《观风月·竹马篇》。已找到专门歌切 BV11F8h6BE4d（华丽失败酱）。",
       "tone": "",
       "language": "中文",
       "type": "国风",
@@ -362,14 +362,14 @@
       "row_key": "都落ち"
     },
     {
-      "song_id": 92,
+      "song_id": 91,
       "song_name": "多情岸",
       "show_as_song_name": "",
       "display_song_name": "多情岸",
       "artist": "忘川风华录 / 洛天依",
       "artist_search": "忘川风华录 洛天依 多情岸",
       "feat_artist": "",
-      "remark": "弹幕02:40:26“多情岸是写曹植的吗”、02:40:36“多情岸，落泪了”；02:42:57“这是天依原唱吧”印证洛天依原唱。百度百科核实：忘川风华录曹植主题曲，洛天依演唱。",
+      "remark": "弹幕02:40:26“多情岸是写曹植的吗”、02:40:36“多情岸，落泪了”；02:42:57“这是天依原唱吧”印证洛天依原唱。百度百科核实：忘川风华录曹植主题曲，洛天依演唱。已找到专门歌切 BV1yw8h6TEBf（华丽失败酱）。",
       "tone": "",
       "language": "中文",
       "type": "忘川风华录、古风",
@@ -446,7 +446,7 @@
       "row_key": "風になる"
     },
     {
-      "song_id": 94,
+      "song_id": 93,
       "song_name": "腐草为萤",
       "show_as_song_name": "",
       "display_song_name": "腐草为萤",
@@ -486,6 +486,27 @@
       "status_labels": "歌切直补、待原始回放定位",
       "last_sing_at": "2026-08-15",
       "row_key": "故梦"
+    },
+    {
+      "song_id": 97,
+      "song_name": "光",
+      "show_as_song_name": "",
+      "display_song_name": "光",
+      "artist": "ventus / 星尘Infinity",
+      "artist_search": "光 ventus 星尘",
+      "feat_artist": "",
+      "remark": "来自 2026-08-23 行道树投稿回（2）清唱加演段，歌切合集《【小松绿Viridis】20260823 歌切》分P《光》（心灵火Flame）。VocaDB核实：ventus feat. 星尘Infinity（Cover）。弹幕\"还有《光》\"\"星尘专场吗这是\"印证。",
+      "tone": "",
+      "language": "中文",
+      "type": "中V、原创",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1m9886kEMZ/?p=4",
+      "sing_count": 1,
+      "status_labels": "清唱、自动识别待人工复核",
+      "last_sing_at": "2026-08-23",
+      "row_key": "光"
     },
     {
       "song_id": 79,
@@ -698,27 +719,6 @@
       "row_key": "可愛くてごめん"
     },
     {
-      "song_id": 96,
-      "song_name": "可惜夜",
-      "show_as_song_name": "",
-      "display_song_name": "可惜夜",
-      "artist": "凪",
-      "artist_search": "凪 可惜夜",
-      "feat_artist": "",
-      "remark": "弹幕02:54:35“你还会可惜夜阿”（惊讶主播会唱这首）。uta-net核实：凪の「可惜夜」。歌手待复核。",
-      "tone": "",
-      "language": "日文",
-      "type": "J-Pop",
-      "identification": "",
-      "display_version": "",
-      "search_name": "",
-      "cut_link": "https://www.bilibili.com/video/BV1758h6FEmv/",
-      "sing_count": 1,
-      "status_labels": "清唱、自动识别待人工复核",
-      "last_sing_at": "2026-08-23",
-      "row_key": "可惜夜"
-    },
-    {
       "song_id": 65,
       "song_name": "涟漪",
       "show_as_song_name": "",
@@ -761,6 +761,27 @@
       "row_key": "恋爱困难少女"
     },
     {
+      "song_id": 96,
+      "song_name": "恋苦",
+      "show_as_song_name": "",
+      "display_song_name": "恋苦",
+      "artist": "月犬P / 星尘",
+      "artist_search": "恋苦 月犬P 星尘",
+      "feat_artist": "",
+      "remark": "来自 2026-08-23 行道树投稿回（2）清唱加演段，歌切合集《【小松绿Viridis】20260823 歌切》分P《恋苦》（心灵火Flame）。萌百核实：月犬P 2022年投稿 Synthesizer V 中文原创，星尘（星尘Infinity）演唱。",
+      "tone": "",
+      "language": "中文",
+      "type": "中V、原创",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1m9886kEMZ/?p=2",
+      "sing_count": 1,
+      "status_labels": "清唱、自动识别待人工复核",
+      "last_sing_at": "2026-08-23",
+      "row_key": "恋苦"
+    },
+    {
       "song_id": 89,
       "song_name": "流霰",
       "show_as_song_name": "",
@@ -775,7 +796,7 @@
       "identification": "",
       "display_version": "",
       "search_name": "",
-      "cut_link": "https://www.bilibili.com/video/BV1758h6FEmv/",
+      "cut_link": "https://www.bilibili.com/video/BV1Td886GEoN/",
       "sing_count": 1,
       "status_labels": "清唱、自动识别待人工复核",
       "last_sing_at": "2026-08-23",
@@ -929,7 +950,7 @@
       "row_key": "聘书"
     },
     {
-      "song_id": 91,
+      "song_id": 90,
       "song_name": "栖凰",
       "show_as_song_name": "",
       "display_song_name": "栖凰",
@@ -943,7 +964,7 @@
       "identification": "",
       "display_version": "",
       "search_name": "",
-      "cut_link": "https://www.bilibili.com/video/BV1758h6FEmv/",
+      "cut_link": "https://www.bilibili.com/video/BV1BN8i66Ej6/",
       "sing_count": 1,
       "status_labels": "清唱、自动识别待人工复核",
       "last_sing_at": "2026-08-23",
@@ -1475,7 +1496,7 @@
       "row_key": "下等马"
     },
     {
-      "song_id": 95,
+      "song_id": 94,
       "song_name": "夏恋慕",
       "show_as_song_name": "",
       "display_song_name": "夏恋慕",
@@ -1489,14 +1510,14 @@
       "identification": "",
       "display_version": "",
       "search_name": "",
-      "cut_link": "https://www.bilibili.com/video/BV1758h6FEmv/",
+      "cut_link": "https://www.bilibili.com/video/BV1m9886kEMZ/?p=7",
       "sing_count": 1,
       "status_labels": "清唱、自动识别待人工复核",
       "last_sing_at": "2026-08-23",
       "row_key": "夏恋慕"
     },
     {
-      "song_id": 97,
+      "song_id": 95,
       "song_name": "夏霞",
       "show_as_song_name": "",
       "display_song_name": "夏霞",
@@ -1510,7 +1531,7 @@
       "identification": "",
       "display_version": "",
       "search_name": "",
-      "cut_link": "https://www.bilibili.com/video/BV1758h6FEmv/",
+      "cut_link": "https://www.bilibili.com/video/BV12o8866EsR/",
       "sing_count": 1,
       "status_labels": "清唱、自动识别待人工复核",
       "last_sing_at": "2026-08-23",

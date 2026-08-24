@@ -3,7 +3,7 @@
   "roomId": "1727071052",
   "sourceType": "bilibili-live-replay-song-segments",
   "description": "从小松绿直播回放中识别出的唱歌片段原始记录。由每日自动化或人工补录维护，随后通过 scripts/build_xiaosonglu_song_data.js 聚合成插件可直接读取的歌单与历史数据。歌名允许先根据歌词片段联网检索后再补全，回放日期允许先留空并由脚本从回放标题中解析。",
-  "updatedAt": "2026-08-24T12:02:18.393Z",
+  "updatedAt": "2026-08-24T16:15:34.278Z",
   "segments": [
     {
       "replay_id": "BV1Xiu86aEwV",
@@ -3654,7 +3654,7 @@
       "type": "Synthesizer V、中文Vocaloid",
       "remark": "弹幕02:16:53“我去，流霰!”、02:17:30“特别喜欢流霰”、02:20:04“请大家去听《流霰》！超级好听”。网易云核实：旅行的蜗牛（Snapmod）2021年投稿，诗岸演唱，2022年星尘版；与弹幕“星尘连着来三首”吻合。",
       "identification": "",
-      "cut_link": "https://www.bilibili.com/video/BV1758h6FEmv/",
+      "cut_link": "https://www.bilibili.com/video/BV1Td886GEoN/",
       "confidence": 0.8,
       "row_key": "流霰",
       "search_name": "",
@@ -3693,7 +3693,7 @@
       "type": "忘川风华录、古风",
       "remark": "弹幕02:27:01/02:28:25点名“栖凰”，02:31:18“栖凰好听捏”，02:31:42“星尘连着来三首”。百度百科/萌百核实：栖凰为忘川风华录2018年投稿、星尘演唱。",
       "identification": "",
-      "cut_link": "https://www.bilibili.com/video/BV1758h6FEmv/",
+      "cut_link": "https://www.bilibili.com/video/BV1BN8i66Ej6/",
       "confidence": 0.75,
       "row_key": "栖凰",
       "search_name": "",
@@ -3849,7 +3849,7 @@
       "type": "J-Pop",
       "remark": "弹幕02:49:34“夏恋慕神！！！”、02:49:51/02:49:58“还有夏恋慕”；02:51:42-48日文歌词行“ぽたりぽたり通る夏の日”“僕は君に恋して いいの”。网易云核实：kobasolo feat. 春茶。",
       "identification": "",
-      "cut_link": "https://www.bilibili.com/video/BV1758h6FEmv/",
+      "cut_link": "https://www.bilibili.com/video/BV1m9886kEMZ/?p=7",
       "confidence": 0.75,
       "row_key": "夏恋慕",
       "search_name": "",
@@ -3858,45 +3858,6 @@
           "title": "弹幕点名+反应",
           "url": "https://www.bilibili.com/video/BV1758h6FEmv/",
           "snippet": "弹幕02:49:34“夏恋慕神！！！”、02:49:51/02:49:58“还有夏恋慕”；02:51:42-48日文歌词行“ぽたりぽたり通る夏の日”“僕は君に恋して いいの”。网易云核实：kobasolo feat. 春茶。"
-        }
-      ]
-    },
-    {
-      "replay_id": "BV1758h6FEmv",
-      "replay_title": "【小松绿Viridis】行道树投稿回（2）-2026年08月23日21点场",
-      "replay_url": "https://www.bilibili.com/video/BV1758h6FEmv/",
-      "replay_date": "2026-08-23",
-      "replay_date_source": "replay-title",
-      "segment_index": 8,
-      "start_time": "02:54:35",
-      "end_time": "02:54:37",
-      "lyric_excerpt": "你还会可惜夜阿",
-      "song_search_query": "可惜夜",
-      "song_resolution_method": "danmaku-name-drop + web-verify",
-      "song_name": "可惜夜",
-      "display_song_name": "可惜夜",
-      "artist": "凪",
-      "artist_search": "凪 可惜夜",
-      "feat_artist": "",
-      "language": "日文",
-      "tone": "",
-      "status_labels": [
-        "清唱",
-        "自动识别待人工复核"
-      ],
-      "display_version": "",
-      "type": "J-Pop",
-      "remark": "弹幕02:54:35“你还会可惜夜阿”（惊讶主播会唱这首）。uta-net核实：凪の「可惜夜」。歌手待复核。",
-      "identification": "",
-      "cut_link": "https://www.bilibili.com/video/BV1758h6FEmv/",
-      "confidence": 0.6,
-      "row_key": "可惜夜",
-      "search_name": "",
-      "resolution_candidates": [
-        {
-          "title": "弹幕点名+反应",
-          "url": "https://www.bilibili.com/video/BV1758h6FEmv/",
-          "snippet": "弹幕02:54:35“你还会可惜夜阿”（惊讶主播会唱这首）。uta-net核实：凪の「可惜夜」。歌手待复核。"
         }
       ]
     },
@@ -3927,7 +3888,7 @@
       "type": "J-Pop",
       "remark": "弹幕02:54:37-02:58:23密集反应：夏霞好耶/有品/好听/真不错吧（15+条），为压轴曲；02:56:07“还有desert [哇]”疑似其后又唱了 desert（未收录，待复核）。网易云核实：あたらよ《夏霞》（2022，专辑《極夜において月は語らず》）。",
       "identification": "",
-      "cut_link": "https://www.bilibili.com/video/BV1758h6FEmv/",
+      "cut_link": "https://www.bilibili.com/video/BV12o8866EsR/",
       "confidence": 0.8,
       "row_key": "夏霞",
       "search_name": "",
@@ -3936,6 +3897,84 @@
           "title": "弹幕点名+反应",
           "url": "https://www.bilibili.com/video/BV1758h6FEmv/",
           "snippet": "弹幕02:54:37-02:58:23密集反应：夏霞好耶/有品/好听/真不错吧（15+条），为压轴曲；02:56:07“还有desert [哇]”疑似其后又唱了 desert（未收录，待复核）。网易云核实：あたらよ《夏霞》（2022，专辑《極夜において月は語らず》）。"
+        }
+      ]
+    },
+    {
+      "replay_id": "BV1758h6FEmv",
+      "replay_title": "【小松绿Viridis】行道树投稿回（2）-2026年08月23日21点场",
+      "replay_url": "https://www.bilibili.com/video/BV1758h6FEmv/",
+      "replay_date": "2026-08-23",
+      "replay_date_source": "replay-title",
+      "segment_index": 2,
+      "start_time": "02:21:13",
+      "end_time": "02:25:38",
+      "lyric_excerpt": "该唱恋苦了",
+      "song_search_query": "恋苦",
+      "song_resolution_method": "song-cut-chapter + web-verify",
+      "song_name": "恋苦",
+      "display_song_name": "恋苦",
+      "artist": "月犬P / 星尘",
+      "artist_search": "恋苦 月犬P 星尘",
+      "feat_artist": "",
+      "language": "中文",
+      "tone": "",
+      "status_labels": [
+        "清唱",
+        "自动识别待人工复核"
+      ],
+      "display_version": "",
+      "type": "中V、原创",
+      "remark": "来自 2026-08-23 行道树投稿回（2）清唱加演段，歌切合集《【小松绿Viridis】20260823 歌切》分P《恋苦》（心灵火Flame）。萌百核实：月犬P 2022年投稿 Synthesizer V 中文原创，星尘（星尘Infinity）演唱。",
+      "identification": "",
+      "cut_link": "https://www.bilibili.com/video/BV1m9886kEMZ/?p=2",
+      "confidence": 0.7,
+      "row_key": "恋苦",
+      "search_name": "",
+      "resolution_candidates": [
+        {
+          "title": "歌切合集分P",
+          "url": "https://www.bilibili.com/video/BV1m9886kEMZ/?p=2",
+          "snippet": "20260823 歌切 分P2 恋苦"
+        }
+      ]
+    },
+    {
+      "replay_id": "BV1758h6FEmv",
+      "replay_title": "【小松绿Viridis】行道树投稿回（2）-2026年08月23日21点场",
+      "replay_url": "https://www.bilibili.com/video/BV1758h6FEmv/",
+      "replay_date": "2026-08-23",
+      "replay_date_source": "replay-title",
+      "segment_index": 4,
+      "start_time": "02:33:30",
+      "end_time": "02:37:40",
+      "lyric_excerpt": "还有《光》",
+      "song_search_query": "光",
+      "song_resolution_method": "song-cut-chapter + web-verify",
+      "song_name": "光",
+      "display_song_name": "光",
+      "artist": "ventus / 星尘Infinity",
+      "artist_search": "光 ventus 星尘",
+      "feat_artist": "",
+      "language": "中文",
+      "tone": "",
+      "status_labels": [
+        "清唱",
+        "自动识别待人工复核"
+      ],
+      "display_version": "",
+      "type": "中V、原创",
+      "remark": "来自 2026-08-23 行道树投稿回（2）清唱加演段，歌切合集《【小松绿Viridis】20260823 歌切》分P《光》（心灵火Flame）。VocaDB核实：ventus feat. 星尘Infinity（Cover）。弹幕\"还有《光》\"\"星尘专场吗这是\"印证。",
+      "identification": "",
+      "cut_link": "https://www.bilibili.com/video/BV1m9886kEMZ/?p=4",
+      "confidence": 0.7,
+      "row_key": "光",
+      "search_name": "",
+      "resolution_candidates": [
+        {
+          "title": "歌切合集分P",
+          "url": "https://www.bilibili.com/video/BV1m9886kEMZ/?p=4",
+          "snippet": "20260823 歌切 分P4 光"
         }
       ]
     }
