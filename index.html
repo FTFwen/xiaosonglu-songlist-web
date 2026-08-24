@@ -1754,6 +1754,17 @@
       /* 三个悬浮按钮（歌单 / 播放列表 / 睡眠定时）：整体上移避开播放器栏 */
       .mobile-fabs { bottom: 74px; }
 
+      /* 手机端：播放器栏内的月亮按钮与右下悬浮列重复，隐藏按钮本身；
+         弹窗改为 fixed 定位，从屏幕左下侧弹出（与播放列表弹窗左右对称） */
+      .player-timer-btn { display: none; }
+      .timer-popover {
+        position: fixed;
+        left: 12px;
+        right: auto;
+        bottom: 150px;
+        width: min(190px, calc(50vw - 12px));
+      }
+
       /* 点击气泡后展开为可拖动弹窗 */
       .songlist-panel.mobile-open,
       .playlist-panel.mobile-open {
@@ -1777,9 +1788,6 @@
       /* 手机端播放列表 UI 精简：隐藏左边的播放标记和复制按钮 */
       .playlist-panel .playlist-item-idx { display: none; }
       .playlist-panel [data-playlist-copy] { display: none; }
-
-      /* 手机端睡眠定时弹层：从右下角按钮上方弹出 */
-      .timer-popover { right: -70px; bottom: 52px; }
     }
     @media (min-width: 769px) {
       .mobile-fabs { display: none; }
@@ -2116,6 +2124,6 @@
   <script src="js/shared.js?v=24" defer></script>
   <script src="js/pinyin-pro.js" defer></script>
   <script src="js/data.js?v=24" defer></script>
-  <script src="js/app.js?v=31" defer></script>
+  <script src="js/app.js?v=32" defer></script>
 </body>
 </html>
