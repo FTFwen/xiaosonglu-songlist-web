@@ -619,7 +619,7 @@ player.preloadAudio.preload = 'auto';
 // 进度条拖动状态：拖动中只预览，松开后才真正跳转
 let seekDragging = false;
 
-// ===== 定时播放（沙漏）=====
+// ===== 睡眠定时（月亮图标）=====
 const timerState = {
   running: false,     // 是否在倒计时
   totalSec: 0,        // 当前设定的总秒数
@@ -634,8 +634,8 @@ const timerState = {
 function renderTimerButton() {
   dom.playerTimerBtn.classList.toggle('running', timerState.running);
   dom.playerTimerBtn.title = timerState.running
-    ? '定时停止倒计时中（点击调整）'
-    : '定时播放：设置倒计时，结束后自动暂停';
+    ? '睡眠定时倒计时中（点击调整，0:0 即关闭）'
+    : '睡眠定时：设置倒计时，结束后自动暂停';
 }
 
 function formatTimerTime(sec) {
@@ -655,10 +655,7 @@ function openTimerPopover() {
   dom.timerValM.textContent = String(timerState.pickerM);
   dom.playerTimerPopover.classList.add('show');
   dom.playerTimerBtn.classList.add('active');
-  dom.playerTimerPopTitle.textContent = timerState.running ? '调整定时（从当前剩余时间开始）' : '设置定时播放';
-  dom.playerTimerHint.textContent = timerState.running
-    ? '调整后沙漏重置重新计时；不调整直接关闭则继续倒计时'
-    : '上下拖动数字调整时间，再次点击沙漏或点"开始计时"确认';
+  dom.playerTimerPopTitle.textContent = timerState.running ? '调整定时（0:0 即关闭）' : '睡眠定时（0:0 即关闭）';
 }
 
 function closeTimerPopover() {
@@ -666,15 +663,17 @@ function closeTimerPopover() {
   dom.playerTimerBtn.classList.remove('active');
 }
 
-// 应用弹层里的 时/分 → 秒；0 时 0 分视为未设置
+// 应用弹层里的 时/分 → 秒；0 时 0 分视为关闭计时
 function pickerToSec() {
   return timerState.pickerH * 3600 + timerState.pickerM * 60;
 }
 
-// 开始倒计时（sec 秒后暂停播放）
+// 开始倒计时（sec 秒后暂停播放）；sec<=0 表示关闭计时功能
 function startTimer(sec) {
   if (sec <= 0) {
-    showToast('请先设置一个大于 0 的定时时间');
+    stopTimer(true);
+    closeTimerPopover();
+    showToast('已关闭睡眠定时');
     return;
   }
   stopTimer(true); // 重置旧计时
@@ -697,7 +696,7 @@ function startTimer(sec) {
   }, 500);
   renderTimerButton();
   closeTimerPopover();
-  showToast(`定时 ${formatTimerTime(sec)} 后自动暂停播放`);
+  showToast(`睡眠定时 ${formatTimerTime(sec)} 后自动暂停播放`);
 }
 
 // 停止计时（clear 是否清空运行状态）
@@ -2281,7 +2280,7 @@ function bindDom() {
     'favoritesExportBtn','favoritesExportFileBtn','favoritesClearBtn','favoritesMetaText','favoritesCountText','favoritesListWrap',
     'detailOverlay','detailModal','detailTitle','detailSub','detailBody','detailCloseBtn','toast',
     'playerBar','playerPrevBtn','playerToggleBtn','playerNextBtn','playerSongName','playerSongArtist','playerSeek','playerTimeCur','playerTimeDur','playerShuffleBtn','playerVolume','playAllBtn','playShuffleBtn',
-    'playerTimerWrap','playerTimerBtn','playerTimerPopover','playerTimerPopTitle','timerValH','timerValM','timerCancelBtn','timerStartBtn','playerTimerHint',
+    'playerTimerWrap','playerTimerBtn','playerTimerPopover','playerTimerPopTitle','timerValH','timerValM','timerCancelBtn','timerStartBtn',
     'playlistPanel','playlistCountText','playlistClearBtn','playlistListWrap',
     'songlistPanel','songlistNewBtn','songlistBodyWrap',
     'songlistDialogOverlay','songlistNewName','songlistDialogCancel','songlistDialogOk',
@@ -2470,7 +2469,7 @@ function bindEvents() {
     showToast(`播放模式：${mode.label}（${mode.desc}）`);
   });
 
-  // ===== 定时播放（沙漏）=====
+  // ===== 睡眠定时（月亮图标）=====
   function adjustTimerValue(part, delta) {
     if (part === 'h') {
       timerState.pickerH = Math.max(0, Math.min(23, timerState.pickerH + delta));
@@ -2482,17 +2481,10 @@ function bindEvents() {
     }
   }
 
-  // 点击沙漏：未打开则打开；已打开则按当前弹层数值确定（若为 0:0 则收起不启动）
+  // 点击月亮图标：未打开则打开；已打开则按当前弹层数值确定（0:0 即关闭计时）
   dom.playerTimerBtn.addEventListener('click', () => {
     if (dom.playerTimerPopover.classList.contains('show')) {
-      const sec = pickerToSec();
-      if (sec <= 0) {
-        // 0:0 → 收起；若正在计时则保持继续流动
-        closeTimerPopover();
-        if (!timerState.running) showToast('未设置定时时间');
-        return;
-      }
-      startTimer(sec);
+      startTimer(pickerToSec());
     } else {
       openTimerPopover();
     }
@@ -2539,9 +2531,7 @@ function bindEvents() {
   });
 
   dom.timerStartBtn.addEventListener('click', () => {
-    const sec = pickerToSec();
-    if (sec <= 0) { showToast('请先设置一个大于 0 的定时时间'); return; }
-    startTimer(sec);
+    startTimer(pickerToSec());
   });
 
   // 点击空白处关闭弹层（不影响正在进行的倒计时）
