@@ -1,10 +1,10 @@
 // 本文件由 scripts/sync_web_bundle.cjs 生成（window.XSL_DATA 内嵌数据，供 file:// 直开时使用）。
-// 生成时间：2026-08-24 16:15:45
+// 生成时间：2026-08-24 16:28:33
 window.XSL_DATA = {
   song_catalog: {
   "roomKey": "xiaosonglu",
   "roomId": "1727071052",
-  "generatedAt": "2026-08-24T16:15:34.278Z",
+  "generatedAt": "2026-08-24T16:28:24.210Z",
   "source": "local-replay-ingestion",
   "songs": [
     {
@@ -449,27 +449,6 @@ window.XSL_DATA = {
       "row_key": "風になる"
     },
     {
-      "song_id": 93,
-      "song_name": "腐草为萤",
-      "show_as_song_name": "",
-      "display_song_name": "腐草为萤",
-      "artist": "银临",
-      "artist_search": "银临 腐草为萤",
-      "feat_artist": "",
-      "remark": "弹幕02:48:36点名“腐草为萤”（忘川/古风连唱段内）。网易云核实：银临演唱。",
-      "tone": "",
-      "language": "中文",
-      "type": "古风",
-      "identification": "",
-      "display_version": "",
-      "search_name": "",
-      "cut_link": "https://www.bilibili.com/video/BV1758h6FEmv/",
-      "sing_count": 1,
-      "status_labels": "清唱、自动识别待人工复核",
-      "last_sing_at": "2026-08-23",
-      "row_key": "腐草为萤"
-    },
-    {
       "song_id": 45,
       "song_name": "故梦",
       "show_as_song_name": "",
@@ -491,7 +470,7 @@ window.XSL_DATA = {
       "row_key": "故梦"
     },
     {
-      "song_id": 97,
+      "song_id": 96,
       "song_name": "光",
       "show_as_song_name": "",
       "display_song_name": "光",
@@ -764,7 +743,7 @@ window.XSL_DATA = {
       "row_key": "恋爱困难少女"
     },
     {
-      "song_id": 96,
+      "song_id": 95,
       "song_name": "恋苦",
       "show_as_song_name": "",
       "display_song_name": "恋苦",
@@ -1499,7 +1478,7 @@ window.XSL_DATA = {
       "row_key": "下等马"
     },
     {
-      "song_id": 94,
+      "song_id": 93,
       "song_name": "夏恋慕",
       "show_as_song_name": "",
       "display_song_name": "夏恋慕",
@@ -1520,7 +1499,7 @@ window.XSL_DATA = {
       "row_key": "夏恋慕"
     },
     {
-      "song_id": 95,
+      "song_id": 94,
       "song_name": "夏霞",
       "show_as_song_name": "",
       "display_song_name": "夏霞",
@@ -2049,7 +2028,7 @@ window.XSL_DATA = {
   history_index: {
   "roomKey": "xiaosonglu",
   "roomId": "1727071052",
-  "generatedAt": "2026-08-24T16:15:34.278Z",
+  "generatedAt": "2026-08-24T16:28:24.210Z",
   "source": "local-replay-ingestion",
   "latest": {
     "year": "2026",
@@ -2065,7 +2044,7 @@ window.XSL_DATA = {
         "15": 10,
         "18": 24,
         "20": 20,
-        "23": 9,
+        "23": 8,
         "09": 17,
         "08": 3,
         "07": 1
@@ -3881,24 +3860,6 @@ window.XSL_DATA = {
         "cut_link": "https://www.bilibili.com/video/BV11F8h6BE4d/"
       },
       {
-        "song_name": "腐草为萤",
-        "sing_time": "02:48:36",
-        "statuses": [
-          "清唱",
-          "自动识别待人工复核"
-        ],
-        "artist": "银临",
-        "replay_id": "BV1758h6FEmv",
-        "replay_title": "【小松绿Viridis】行道树投稿回（2）-2026年08月23日21点场",
-        "replay_url": "https://www.bilibili.com/video/BV1758h6FEmv/",
-        "start_time": "02:48:36",
-        "end_time": "02:49:34",
-        "row_key": "腐草为萤",
-        "lyric_excerpt": "腐草为萤",
-        "song_resolution_method": "danmaku-name-drop + web-verify",
-        "cut_link": "https://www.bilibili.com/video/BV1758h6FEmv/"
-      },
-      {
         "song_name": "夏恋慕",
         "sing_time": "02:49:34",
         "statuses": [
@@ -3940,7 +3901,7 @@ window.XSL_DATA = {
   song_details: {
   "roomKey": "xiaosonglu",
   "roomId": "1727071052",
-  "generatedAt": "2026-08-24T16:15:34.278Z",
+  "generatedAt": "2026-08-24T16:28:24.210Z",
   "source": "local-replay-ingestion",
   "bySongKey": {
     "少女レイ": {
@@ -6315,31 +6276,6 @@ window.XSL_DATA = {
           "song_resolution_method": "danmaku-name-drop + web-verify",
           "replay_date_source": "replay-title",
           "cut_link": "https://www.bilibili.com/video/BV11F8h6BE4d/"
-        }
-      ]
-    },
-    "腐草为萤": {
-      "row_key": "腐草为萤",
-      "song_name": "腐草为萤",
-      "display_song_name": "腐草为萤",
-      "artist": "银临",
-      "cut_link": "https://www.bilibili.com/video/BV1758h6FEmv/",
-      "total_count": 1,
-      "entries": [
-        {
-          "date": "2026-08-23",
-          "time": "02:48:36",
-          "end_time": "02:49:34",
-          "status": "清唱、自动识别待人工复核",
-          "artist": "银临",
-          "replay_id": "BV1758h6FEmv",
-          "replay_title": "【小松绿Viridis】行道树投稿回（2）-2026年08月23日21点场",
-          "replay_url": "https://www.bilibili.com/video/BV1758h6FEmv/",
-          "remark": "弹幕02:48:36点名“腐草为萤”（忘川/古风连唱段内）。网易云核实：银临演唱。",
-          "lyric_excerpt": "腐草为萤",
-          "song_resolution_method": "danmaku-name-drop + web-verify",
-          "replay_date_source": "replay-title",
-          "cut_link": "https://www.bilibili.com/video/BV1758h6FEmv/"
         }
       ]
     },

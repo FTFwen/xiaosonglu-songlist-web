@@ -1,7 +1,7 @@
 {
   "roomKey": "xiaosonglu",
   "roomId": "1727071052",
-  "generatedAt": "2026-08-24T16:15:34.278Z",
+  "generatedAt": "2026-08-24T16:28:24.210Z",
   "source": "local-replay-ingestion",
   "latest": {
     "year": "2026",
@@ -17,7 +17,7 @@
         "15": 10,
         "18": 24,
         "20": 20,
-        "23": 9,
+        "23": 8,
         "09": 17,
         "08": 3,
         "07": 1
@@ -1831,24 +1831,6 @@
         "lyric_excerpt": "吹灭小山河有品",
         "song_resolution_method": "danmaku-name-drop + web-verify",
         "cut_link": "https://www.bilibili.com/video/BV11F8h6BE4d/"
-      },
-      {
-        "song_name": "腐草为萤",
-        "sing_time": "02:48:36",
-        "statuses": [
-          "清唱",
-          "自动识别待人工复核"
-        ],
-        "artist": "银临",
-        "replay_id": "BV1758h6FEmv",
-        "replay_title": "【小松绿Viridis】行道树投稿回（2）-2026年08月23日21点场",
-        "replay_url": "https://www.bilibili.com/video/BV1758h6FEmv/",
-        "start_time": "02:48:36",
-        "end_time": "02:49:34",
-        "row_key": "腐草为萤",
-        "lyric_excerpt": "腐草为萤",
-        "song_resolution_method": "danmaku-name-drop + web-verify",
-        "cut_link": "https://www.bilibili.com/video/BV1758h6FEmv/"
       },
       {
         "song_name": "夏恋慕",

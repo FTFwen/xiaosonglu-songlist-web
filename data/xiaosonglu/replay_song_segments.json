@@ -3,7 +3,7 @@
   "roomId": "1727071052",
   "sourceType": "bilibili-live-replay-song-segments",
   "description": "从小松绿直播回放中识别出的唱歌片段原始记录。由每日自动化或人工补录维护，随后通过 scripts/build_xiaosonglu_song_data.js 聚合成插件可直接读取的歌单与历史数据。歌名允许先根据歌词片段联网检索后再补全，回放日期允许先留空并由脚本从回放标题中解析。",
-  "updatedAt": "2026-08-24T16:15:34.278Z",
+  "updatedAt": "2026-08-24T16:28:24.210Z",
   "segments": [
     {
       "replay_id": "BV1Xiu86aEwV",
@@ -3780,45 +3780,6 @@
           "title": "弹幕点名+反应",
           "url": "https://www.bilibili.com/video/BV1758h6FEmv/",
           "snippet": "弹幕02:46:33“吹灭小山河有品”（有品=选曲品味好，指演唱中）。网易云核实：国风堂/司南《观风月·竹马篇》。"
-        }
-      ]
-    },
-    {
-      "replay_id": "BV1758h6FEmv",
-      "replay_title": "【小松绿Viridis】行道树投稿回（2）-2026年08月23日21点场",
-      "replay_url": "https://www.bilibili.com/video/BV1758h6FEmv/",
-      "replay_date": "2026-08-23",
-      "replay_date_source": "replay-title",
-      "segment_index": 6,
-      "start_time": "02:48:36",
-      "end_time": "02:49:34",
-      "lyric_excerpt": "腐草为萤",
-      "song_search_query": "腐草为萤",
-      "song_resolution_method": "danmaku-name-drop + web-verify",
-      "song_name": "腐草为萤",
-      "display_song_name": "腐草为萤",
-      "artist": "银临",
-      "artist_search": "银临 腐草为萤",
-      "feat_artist": "",
-      "language": "中文",
-      "tone": "",
-      "status_labels": [
-        "清唱",
-        "自动识别待人工复核"
-      ],
-      "display_version": "",
-      "type": "古风",
-      "remark": "弹幕02:48:36点名“腐草为萤”（忘川/古风连唱段内）。网易云核实：银临演唱。",
-      "identification": "",
-      "cut_link": "https://www.bilibili.com/video/BV1758h6FEmv/",
-      "confidence": 0.7,
-      "row_key": "腐草为萤",
-      "search_name": "",
-      "resolution_candidates": [
-        {
-          "title": "弹幕点名+反应",
-          "url": "https://www.bilibili.com/video/BV1758h6FEmv/",
-          "snippet": "弹幕02:48:36点名“腐草为萤”（忘川/古风连唱段内）。网易云核实：银临演唱。"
         }
       ]
     },

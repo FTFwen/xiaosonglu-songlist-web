@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light">
+  <title>亲密度投喂计划</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="app-shell">
+    <header class="masthead">
+      <div class="brand-lockup" aria-label="亲密度投喂计划">
+        <svg class="cat-mark" viewBox="0 0 64 64" aria-hidden="true">
+          <path d="M13 26 10 10l15 9c4-2 10-2 14 0l15-9-3 16c4 5 6 10 6 16 0 11-11 17-25 17S7 53 7 42c0-6 2-11 6-16Z"></path>
+          <path d="M22 39h.1M42 39h.1M26 48c4 3 8 3 12 0" class="face"></path>
+        </svg>
+        <div>
+          <p class="eyebrow">8.24—9.13 · CP投喂作战簿</p>
+          <h1>把预算，留给真正有倍率的那一天。</h1>
+        </div>
+      </div>
+      <div class="status-ticket">
+        <span>初始身份</span>
+        <strong>舰长</strong>
+        <small>有效至 9月4日</small>
+      </div>
+    </header>
+
+    <section class="control-deck" aria-labelledby="budget-title">
+      <div class="budget-heading">
+        <div>
+          <p class="section-kicker">预算滑块</p>
+          <h2 id="budget-title">这次活动准备多少电池？</h2>
+        </div>
+        <label class="budget-number">
+          <span class="sr-only">预算电池数</span>
+          <input id="budgetInput" type="number" min="0" max="300000" step="1" value="36121">
+          <b>电池</b>
+        </label>
+      </div>
+
+      <div class="slider-wrap">
+        <input id="budgetRange" type="range" min="0" max="300000" step="1" value="36121" aria-label="活动总预算">
+        <div class="rail-labels" aria-hidden="true">
+          <span>0</span><span>舰长 1,380</span><span>提督 19,800</span><span>300,000</span>
+        </div>
+      </div>
+
+      <div class="control-foot">
+        <div class="money-readout">
+          <span>约合人民币</span>
+          <strong id="yuanValue">¥3,000</strong>
+        </div>
+        <div class="mission-controls">
+          <label class="food-toggle">
+            <input id="augustAdmiral" type="checkbox">
+            <span class="toggle-track" aria-hidden="true"><i></i></span>
+            <span><b>追8月主播提督回礼</b><small>8/26开提督19,800；9/13提前续费15,800</small></span>
+          </label>
+          <label class="food-toggle">
+            <input id="bannerTask" type="checkbox">
+            <span class="toggle-track" aria-hidden="true"><i></i></span>
+            <span><b>每日粉丝手幅</b><small>每天1电池换1猫粮，默认推荐</small></span>
+          </label>
+          <label class="select-control">
+            <span>亲密之旅任务</span>
+            <select id="journeyMode">
+              <option value="key" selected>只在9月13日打赏1次</option>
+              <option value="max">最快循环4次（冲Lv.13）</option>
+              <option value="smart">高倍率循环3次</option>
+              <option value="none">不规划亲密之旅</option>
+            </select>
+          </label>
+          <label class="select-control">
+            <span>活动累计甜蜜契约实际投喂数</span>
+            <input id="sweetCount" type="number" min="0" max="210" step="1" value="0">
+            <small>每个+3猫粮；盲盒成本不自动计入</small>
+          </label>
+          <label class="mission-field">
+            <span><b>主力余款分配</b><small>自动模式会比较直投与羁绊宝盒冲级</small></span>
+            <select id="allocationMode">
+              <option value="auto" selected>自动选择总亲密度更高方案</option>
+              <option value="cat">优先羁绊宝盒冲猫等级</option>
+              <option value="direct">全部留给9月13日确定性礼物</option>
+            </select>
+          </label>
+          <label class="mission-field">
+            <span><b>猫粮品质</b><small>普通100 / 冻干120 / 鲜食150成长值</small></span>
+            <select id="foodQuality">
+              <option value="auto" selected>自动比较三档品质</option>
+              <option value="normal">普通猫粮（0电池）</option>
+              <option value="freeze">冻干猫粮（60电池，+20%）</option>
+              <option value="fresh">鲜食猫粮（660电池，+50%）</option>
+            </select>
+          </label>
+        </div>
+      </div>
+    </section>
+
+    <section class="strategy-grid" aria-live="polite">
+      <article class="strategy-card primary-card">
+        <div class="card-head">
+          <div>
+            <p class="section-kicker">付款结论</p>
+            <h2 id="strategyTitle">正在计算</h2>
+          </div>
+          <span id="identityBadge" class="identity-badge">—</span>
+        </div>
+        <p id="strategySummary" class="strategy-summary"></p>
+        <div id="paymentSteps" class="payment-steps"></div>
+      </article>
+
+      <aside class="return-card">
+        <p class="section-kicker">理论回报</p>
+        <div class="return-number">
+          <strong id="returnValue">0</strong>
+          <span>预计总亲密度（含喵崽馈赠中点）</span>
+        </div>
+        <div class="return-meta">
+          <div><span>综合倍率</span><b id="returnRatio">0×</b></div>
+          <div><span>预算利用</span><b id="spentValue">0</b></div>
+          <div><span>主播榜亲密值</span><b id="streamerScoreValue">0</b></div>
+          <div><span>总亲密度范围</span><b id="totalRangeValue">0</b></div>
+          <div><span>礼物产生亲密度</span><b id="paidIntimacyValue">0</b></div>
+        </div>
+        <div class="cat-metrics">
+          <div><span>预计猫粮</span><b id="catFoodValue">0份</b></div>
+          <div><span>累计成长值</span><b id="growthValue">0</b></div>
+          <div><span>喵崽馈赠范围</span><b id="catGiftValue">未达到Lv.9</b></div>
+          <div><span>馈赠期望值</span><b id="catGiftMidValue">0</b></div>
+          <div><span>等级概率</span><b id="levelProbabilityValue">—</b></div>
+          <div><span>余款分配结果</span><b id="allocationDecisionValue">—</b></div>
+        </div>
+        <p class="assumption">舰长、提督等全部在舰阶段统一按大航海+50%计算。亲密之旅资格需累计5个增长日，实际赠送仍扣500电池；每次额外+30%，主播榜按750计，并获得3份猫粮。</p>
+      </aside>
+    </section>
+
+    <section class="fanpredict-section" aria-labelledby="fanpredict-title">
+      <div class="fanpredict-head">
+        <div>
+          <p class="section-kicker">粉丝牌升级预测</p>
+          <h2 id="fanpredict-title">按这份攻略，活动后牌子能升到几级？</h2>
+        </div>
+      </div>
+      <div class="fanpredict-inputs">
+        <label class="select-control">
+          <span>当前粉丝牌等级</span>
+          <select id="fanLevel" aria-label="当前粉丝牌等级"></select>
+        </label>
+        <label class="select-control">
+          <span>当前经验值（本等级内）</span>
+          <input id="fanExp" type="number" min="0" step="1" value="0" aria-label="当前等级内已积累经验值">
+          <small>填本级从 0 开始攒的经验，例如 Lv.21 显示 300 就填 300</small>
+        </label>
+      </div>
+      <div class="fanpredict-result">
+        <div class="fan-big">
+          <strong id="fanResultLevel">—</strong>
+          <span id="fanResultNote">按上方攻略自动带入预计总亲密度</span>
+        </div>
+        <div class="fan-metrics">
+          <div><span>当前累计经验</span><b id="fanStartExp">0</b></div>
+          <div><span>活动预计新增</span><b id="fanDelta">0</b></div>
+          <div><span>活动后累计经验</span><b id="fanEndExp">0</b></div>
+          <div><span>距下一级还差</span><b id="fanToNext">—</b></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="timeline-section" aria-labelledby="timeline-title">
+      <div class="timeline-head">
+        <div>
+          <p class="section-kicker">每日行动表</p>
+          <h2 id="timeline-title">从签到到最后一笔，照着做就好</h2>
+        </div>
+        <div class="legend" aria-label="图例">
+          <span><i class="dot routine"></i>日常</span>
+          <span><i class="dot milestone"></i>猫咪节点</span>
+          <span><i class="dot payment"></i>付费</span>
+        </div>
+      </div>
+      <div id="dailyTimeline" class="daily-timeline"></div>
+    </section>
+
+    <section class="rules-strip">
+      <div><b>先领奖，后付款</b><span>指定日期必须先拿到猫咪等级奖励，再送礼。</span></div>
+      <div><b>解锁资格，不是免费礼物</b><span>累计5个增长日后获得48小时打赏资格；每次仍支付500电池，获得1.3倍用户亲密度、3份猫粮和750榜亲密值。</span></div>
+      <div><b>Lv.13有独立巨额馈赠</b><span>9月13日领取1电池包裹礼物；Lv.13随机8万～16万亲密度，和升级随机奖励、盲盒礼物分开计算。</span></div>
+      <div><b>盲盒另算娱乐金</b><span>主计划采用确定性礼物，不拿小概率期望当保底。</span></div>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
