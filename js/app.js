@@ -637,6 +637,13 @@ function renderTimerButton() {
   dom.playerTimerBtn.title = timerState.running
     ? '睡眠定时倒计时中（点击调整，0:0 即关闭）'
     : '睡眠定时：设置倒计时，结束后自动暂停';
+  // 手机端悬浮按钮同步状态
+  if (dom.mobileTimerFab) {
+    dom.mobileTimerFab.classList.toggle('timer-running', timerState.running);
+    dom.mobileTimerFab.title = timerState.running
+      ? '睡眠定时倒计时中（点击调整，0:0 即关闭）'
+      : '睡眠定时：设置倒计时，结束后自动暂停';
+  }
 }
 
 function formatTimerTime(sec) {
@@ -669,6 +676,17 @@ function closeTimerPopover() {
 // 应用弹层里的 时/分 → 秒；0 时 0 分视为关闭计时
 function pickerToSec() {
   return timerState.pickerH * 3600 + timerState.pickerM * 60;
+}
+
+// 确定弹层：倒计时中且值未变（sec === snapshotSec）→ 只收起不重置；否则按值处理
+function confirmTimerPopover() {
+  const sec = pickerToSec();
+  if (timerState.running && sec === timerState.snapshotSec) {
+    // 未做任何调整：保持当前倒计时继续流动
+    closeTimerPopover();
+    return;
+  }
+  startTimer(sec);
 }
 
 // 开始倒计时（sec 秒后暂停播放）；sec<=0 表示关闭计时功能
@@ -1046,6 +1064,15 @@ function initMobileFabs() {
   };
   dom.songlistFab.addEventListener('click', () => togglePanel(dom.songlistPanel, dom.songlistFab));
   dom.playlistFab.addEventListener('click', () => togglePanel(dom.playlistPanel, dom.playlistFab));
+  // 手机端睡眠定时：点击收起面板，再切换定时弹层
+  dom.mobileTimerFab.addEventListener('click', () => {
+    closeAll();
+    if (dom.playerTimerPopover.classList.contains('show')) {
+      confirmTimerPopover();
+    } else {
+      openTimerPopover();
+    }
+  });
 }
 
 /* ===== 歌单系统（左上角，localStorage 持久化；内置“中意歌曲”与收藏联动） ===== */
@@ -2288,7 +2315,7 @@ function bindDom() {
     'songlistPanel','songlistNewBtn','songlistBodyWrap',
     'songlistDialogOverlay','songlistNewName','songlistDialogCancel','songlistDialogOk',
     'songlistPickerOverlay','pickerSongName','pickerBody','pickerCloseBtn',
-    'mobileFabs','songlistFab','playlistFab'
+    'mobileFabs','songlistFab','playlistFab','mobileTimerFab'
   ].forEach(id => dom[id] = $(id));
 }
 
@@ -2483,17 +2510,6 @@ function bindEvents() {
       dom.timerValM.textContent = String(timerState.pickerM);
     }
   }
-
-  // 确定弹层：倒计时中且值未变（sec === snapshotSec）→ 只收起不重置；否则按值处理
-  const confirmTimerPopover = () => {
-    const sec = pickerToSec();
-    if (timerState.running && sec === timerState.snapshotSec) {
-      // 未做任何调整：保持当前倒计时继续流动
-      closeTimerPopover();
-      return;
-    }
-    startTimer(sec);
-  };
 
   // 点击月亮图标：未打开则打开；已打开则确定（0:0 即关闭计时）
   dom.playerTimerBtn.addEventListener('click', () => {

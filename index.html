@@ -1701,7 +1701,6 @@
       .player-volume { display: none; }
       .player-time .dur-only { display: none; }
       .player-timer-btn { width: 30px; height: 30px; }
-      .timer-popover { right: -70px; }
     }
 
     /* 工具栏带图标的按钮：图标与文字垂直居中对齐 */
@@ -1721,6 +1720,7 @@
       z-index: 60;
       flex-direction: column;
       gap: 10px;
+      align-items: center;
     }
     .mobile-fab {
       width: 46px;
@@ -1734,16 +1734,25 @@
       display: inline-grid;
       place-items: center;
       transition: transform 0.15s ease, background 0.15s ease;
+      flex-shrink: 0;
     }
     .mobile-fab .icon { width: 20px; height: 20px; }
     .mobile-fab:active { transform: scale(0.92); }
     .mobile-fab.active { background: var(--primary-dark); }
+    /* 睡眠定时手机端按钮：倒计时中高亮呼吸 */
+    .mobile-fab.timer-running {
+      background: var(--primary-dark);
+      animation: timerPulse 1.6s ease-in-out infinite;
+    }
 
     @media (max-width: 768px) {
       /* 手机端：面板默认收起，只显示气泡 */
       .songlist-panel,
       .playlist-panel { display: none !important; }
       .mobile-fabs { display: flex; }
+
+      /* 三个悬浮按钮（歌单 / 播放列表 / 睡眠定时）：整体上移避开播放器栏 */
+      .mobile-fabs { bottom: 74px; }
 
       /* 点击气泡后展开为可拖动弹窗 */
       .songlist-panel.mobile-open,
@@ -1768,6 +1777,9 @@
       /* 手机端播放列表 UI 精简：隐藏左边的播放标记和复制按钮 */
       .playlist-panel .playlist-item-idx { display: none; }
       .playlist-panel [data-playlist-copy] { display: none; }
+
+      /* 手机端睡眠定时弹层：从右下角按钮上方弹出 */
+      .timer-popover { right: -70px; bottom: 52px; }
     }
     @media (min-width: 769px) {
       .mobile-fabs { display: none; }
@@ -2094,15 +2106,16 @@
     </div>
   </div>
 
-  <!-- 手机端悬浮气泡（歌单 / 播放列表收起入口） -->
+  <!-- 手机端悬浮气泡（歌单 / 播放列表 / 睡眠定时 收起入口） -->
   <div class="mobile-fabs" id="mobileFabs">
     <button class="mobile-fab" id="songlistFab" title="我的歌单"><svg class="icon" aria-hidden="true"><use href="#icon-folder-add"></use></svg></button>
     <button class="mobile-fab" id="playlistFab" title="播放列表"><svg class="icon" aria-hidden="true"><use href="#icon-sound"></use></svg></button>
+    <button class="mobile-fab" id="mobileTimerFab" title="睡眠定时：设置倒计时，结束后自动暂停"><svg class="icon" aria-hidden="true"><use href="#icon-moon"></use></svg></button>
   </div>
 
   <script src="js/shared.js?v=24" defer></script>
   <script src="js/pinyin-pro.js" defer></script>
   <script src="js/data.js?v=24" defer></script>
-  <script src="js/app.js?v=30" defer></script>
+  <script src="js/app.js?v=31" defer></script>
 </body>
 </html>
