@@ -619,6 +619,134 @@ player.preloadAudio.preload = 'auto';
 // 进度条拖动状态：拖动中只预览，松开后才真正跳转
 let seekDragging = false;
 
+// ===== 定时播放（沙漏）=====
+const timerState = {
+  running: false,     // 是否在倒计时
+  totalSec: 0,        // 当前设定的总秒数
+  remainSec: 0,       // 剩余秒数
+  lastTickAt: 0,      // 上次 tick 的时间戳（ms）
+  pickerH: 0,         // 弹层里的时
+  pickerM: 0,         // 弹层里的分
+  timerId: null
+};
+
+// 沙漏"流动"动画：沙子填充比例 = 剩余时间 / 总时间（1→0），视觉上沙子逐渐漏完
+function updateTimerSand() {
+  const el = dom.playerTimerSand;
+  if (!el) return;
+  const ratio = timerState.totalSec > 0 ? timerState.remainSec / timerState.totalSec : 0;
+  el.style.height = `${Math.max(0, Math.min(100, ratio * 100))}%`;
+}
+
+function updateTimerBadge() {
+  const badge = dom.playerTimerBadge;
+  if (!badge) return;
+  if (timerState.running) {
+    const m = Math.floor(timerState.remainSec / 60);
+    const s = timerState.remainSec % 60;
+    badge.textContent = `${m}:${String(s).padStart(2, '0')}`;
+    badge.style.display = 'block';
+  } else {
+    badge.style.display = 'none';
+  }
+}
+
+function renderTimerButton() {
+  dom.playerTimerBtn.classList.toggle('running', timerState.running);
+  dom.playerTimerBtn.title = timerState.running
+    ? `定时停止（剩余 ${formatTimerTime(timerState.remainSec)}），点击调整`
+    : '定时播放：设置倒计时，结束后自动暂停';
+  updateTimerBadge();
+  updateTimerSand();
+}
+
+function formatTimerTime(sec) {
+  const h = Math.floor(sec / 3600);
+  const m = Math.floor((sec % 3600) / 60);
+  const s = sec % 60;
+  return h > 0 ? `${h}:${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}` : `${m}:${String(s).padStart(2, '0')}`;
+}
+
+function openTimerPopover() {
+  // 打开时预填：未运行时用 0:0；运行中显示当前剩余时间
+  if (timerState.running) {
+    timerState.pickerH = Math.floor(timerState.remainSec / 3600);
+    timerState.pickerM = Math.floor((timerState.remainSec % 3600) / 60);
+  }
+  dom.timerValH.textContent = String(timerState.pickerH);
+  dom.timerValM.textContent = String(timerState.pickerM);
+  dom.playerTimerPopover.classList.add('show');
+  dom.playerTimerBtn.classList.add('active');
+  dom.playerTimerPopTitle.textContent = timerState.running ? '调整定时（从当前剩余时间开始）' : '设置定时播放';
+  dom.playerTimerHint.textContent = timerState.running
+    ? '调整后沙漏重置重新计时；不调整直接关闭则继续倒计时'
+    : '上下拖动数字调整时间，再次点击沙漏或点"开始计时"确认';
+}
+
+function closeTimerPopover() {
+  dom.playerTimerPopover.classList.remove('show');
+  dom.playerTimerBtn.classList.remove('active');
+}
+
+// 应用弹层里的 时/分 → 秒；0 时 0 分视为未设置
+function pickerToSec() {
+  return timerState.pickerH * 3600 + timerState.pickerM * 60;
+}
+
+// 开始倒计时（sec 秒后暂停播放）
+function startTimer(sec) {
+  if (sec <= 0) {
+    showToast('请先设置一个大于 0 的定时时间');
+    return;
+  }
+  stopTimer(true); // 重置旧计时
+  timerState.running = true;
+  timerState.totalSec = sec;
+  timerState.remainSec = sec;
+  timerState.lastTickAt = Date.now();
+  clearInterval(timerState.timerId);
+  timerState.timerId = setInterval(() => {
+    const now = Date.now();
+    const delta = Math.floor((now - timerState.lastTickAt) / 1000);
+    if (delta > 0) {
+      timerState.lastTickAt = now;
+      timerState.remainSec = Math.max(0, timerState.remainSec - delta);
+      renderTimerButton();
+      if (timerState.remainSec <= 0) {
+        onTimerFinished();
+      }
+    }
+  }, 500);
+  renderTimerButton();
+  closeTimerPopover();
+  showToast(`定时 ${formatTimerTime(sec)} 后自动暂停播放`);
+}
+
+// 停止计时（clear 是否清空运行状态）
+function stopTimer(clear = false) {
+  if (timerState.timerId) {
+    clearInterval(timerState.timerId);
+    timerState.timerId = null;
+  }
+  if (clear) {
+    timerState.running = false;
+    timerState.totalSec = 0;
+    timerState.remainSec = 0;
+  }
+  renderTimerButton();
+}
+
+// 倒计时结束：暂停播放（保留播放进度，可继续）
+function onTimerFinished() {
+  stopTimer(true);
+  if (player.playing) {
+    player.audio.pause();
+    player.playing = false;
+    updatePlayerUI();
+  }
+  showToast('⏳ 定时结束，已暂停播放');
+}
+
 // play() 被切歌/暂停等正常中断（AbortError），不应提示用户
 function isPlayAborted(err) {
   return !!err && (err.name === 'AbortError' || /interrupted by a call to pause/i.test(err.message || ''));
@@ -2175,6 +2303,7 @@ function bindDom() {
     'favoritesExportBtn','favoritesExportFileBtn','favoritesClearBtn','favoritesMetaText','favoritesCountText','favoritesListWrap',
     'detailOverlay','detailModal','detailTitle','detailSub','detailBody','detailCloseBtn','toast',
     'playerBar','playerPrevBtn','playerToggleBtn','playerNextBtn','playerSongName','playerSongArtist','playerSeek','playerTimeCur','playerTimeDur','playerShuffleBtn','playerVolume','playAllBtn','playShuffleBtn',
+    'playerTimerWrap','playerTimerBtn','playerTimerSand','playerTimerBadge','playerTimerPopover','playerTimerPopTitle','timerValH','timerValM','timerCancelBtn','timerStartBtn','playerTimerHint',
     'playlistPanel','playlistCountText','playlistClearBtn','playlistListWrap',
     'songlistPanel','songlistNewBtn','songlistBodyWrap',
     'songlistDialogOverlay','songlistNewName','songlistDialogCancel','songlistDialogOk',
@@ -2361,6 +2490,88 @@ function bindEvents() {
     const mode = PLAY_MODE_MAP[player.playMode];
     updatePlayerUI();
     showToast(`播放模式：${mode.label}（${mode.desc}）`);
+  });
+
+  // ===== 定时播放（沙漏）=====
+  function adjustTimerValue(part, delta) {
+    if (part === 'h') {
+      timerState.pickerH = Math.max(0, Math.min(23, timerState.pickerH + delta));
+      dom.timerValH.textContent = String(timerState.pickerH);
+    } else {
+      // 分钟：0-59 循环
+      timerState.pickerM = ((timerState.pickerM + delta) % 60 + 60) % 60;
+      dom.timerValM.textContent = String(timerState.pickerM);
+    }
+  }
+
+  // 点击沙漏：未打开则打开；已打开则按当前弹层数值确定（若为 0:0 则收起不启动）
+  dom.playerTimerBtn.addEventListener('click', () => {
+    if (dom.playerTimerPopover.classList.contains('show')) {
+      const sec = pickerToSec();
+      if (sec <= 0) {
+        // 0:0 → 收起；若正在计时则保持继续流动
+        closeTimerPopover();
+        if (!timerState.running) showToast('未设置定时时间');
+        return;
+      }
+      startTimer(sec);
+    } else {
+      openTimerPopover();
+    }
+  });
+
+  // 上下箭头调整
+  document.querySelectorAll('[data-timer-arrow]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const part = btn.dataset.timerArrow;
+      const dir = Number(btn.dataset.dir);
+      adjustTimerValue(part, dir);
+    });
+  });
+
+  // 拖动数字调整（指针事件，上下拖动改值）
+  let dragTimerPart = null;
+  let dragTimerStartY = 0;
+  let dragTimerAccum = 0;
+  [dom.timerValH, dom.timerValM].forEach(el => {
+    el.addEventListener('pointerdown', e => {
+      dragTimerPart = el.dataset.timerValue;
+      dragTimerStartY = e.clientY;
+      dragTimerAccum = 0;
+      el.setPointerCapture(e.pointerId);
+    });
+    el.addEventListener('pointermove', e => {
+      if (!dragTimerPart) return;
+      const deltaY = dragTimerStartY - e.clientY;
+      dragTimerStartY = e.clientY;
+      dragTimerAccum += deltaY;
+      // 每 12px 触发一次调整，避免抖动
+      while (Math.abs(dragTimerAccum) >= 12) {
+        const step = dragTimerAccum > 0 ? 1 : -1;
+        adjustTimerValue(dragTimerPart, step);
+        dragTimerAccum -= step * 12;
+      }
+    });
+    el.addEventListener('pointerup', () => { dragTimerPart = null; });
+    el.addEventListener('pointercancel', () => { dragTimerPart = null; });
+  });
+
+  dom.timerCancelBtn.addEventListener('click', () => {
+    closeTimerPopover();
+  });
+
+  dom.timerStartBtn.addEventListener('click', () => {
+    const sec = pickerToSec();
+    if (sec <= 0) { showToast('请先设置一个大于 0 的定时时间'); return; }
+    startTimer(sec);
+  });
+
+  // 点击空白处关闭弹层（不影响正在进行的倒计时）
+  document.addEventListener('pointerdown', e => {
+    if (!dom.playerTimerPopover.classList.contains('show')) return;
+    if (!dom.playerTimerWrap.contains(e.target)) {
+      closeTimerPopover();
+    }
   });
   // 进度条：拖动中不预览也不跳转，松开（change）后直接跳到对应进度
   dom.playerSeek.addEventListener('pointerdown', () => { seekDragging = true; });

@@ -18,6 +18,7 @@ const bannerTask = document.getElementById("bannerTask");
 const journeyMode = document.getElementById("journeyMode");
 const sweetCount = document.getElementById("sweetCount");
 const augustAdmiral = document.getElementById("augustAdmiral");
+const wantAdmiral = document.getElementById("wantAdmiral");
 const allocationMode = document.getElementById("allocationMode");
 const fanLevel = document.getElementById("fanLevel");
 const fanExp = document.getElementById("fanExp");
@@ -32,7 +33,7 @@ for (let lv = 1; lv <= FAN_MAX_LEVEL; lv += 1) {
 const fmt = new Intl.NumberFormat("zh-CN", { maximumFractionDigits: 0 });
 const moneyFmt = new Intl.NumberFormat("zh-CN", { maximumFractionDigits: 0 });
 const dateOrder = ["8/24", "8/25", "8/26", "8/27", "8/28", "8/29", "8/30", "8/31", "9/1", "9/2", "9/3", "9/4", "9/5", "9/6", "9/7", "9/8", "9/9", "9/10", "9/11", "9/12", "9/13"];
-const weekdays = ["周六", "周日", "周一", "周二", "周三", "周四", "周五", "周六", "周日", "周一", "周二", "周三", "周四", "周五", "周六", "周日", "周一", "周二", "周三", "周四", "周五"];
+const weekdays = ["周一", "周二", "周三", "周四", "周五", "周六", "周日", "周一", "周二", "周三", "周四", "周五", "周六", "周日", "周一", "周二", "周三", "周四", "周五", "周六", "周日"];
 
 const milestoneData = {
   "8/24": { title: "活动开场：建立猫粮账本", tasks: ["12:00后进入活动页", "确认舰长有效至9/4", "领取猫咪后再做付费任务"] },
@@ -148,14 +149,19 @@ function chooseBoxPlan(maxBoxes, baseCatFood, growthPerFood, petGrowth, extraGif
 }
 
 function buildPlanCore(total, options) {
-  const augustRequested = Boolean(options.augustAdmiral);
+  const wantAdmiral = options.wantAdmiral !== false;
+  const augustRequested = Boolean(options.augustAdmiral) && wantAdmiral;
   const augustPlan = augustRequested && total >= AUGUST_ADMIRAL_TOTAL;
+  const augustOnly = augustRequested && !augustPlan && total >= ADMIRAL_COST;
   let membership = "none";
   let membershipCost = 0;
   if (augustPlan) {
     membership = "admiral";
     membershipCost = AUGUST_ADMIRAL_TOTAL;
-  } else if (total >= ADMIRAL_COST) {
+  } else if (augustOnly) {
+    membership = "admiral";
+    membershipCost = ADMIRAL_COST;
+  } else if (wantAdmiral && total >= ADMIRAL_COST) {
     membership = "admiral";
     membershipCost = ADMIRAL_COST;
   } else if (total >= CAPTAIN_COST) {
@@ -205,10 +211,10 @@ function buildPlanCore(total, options) {
   });
   const flexibleGift = Math.max(0, available);
 
-  const earlyMembership = augustPlan || (membership !== "none" && flexibleGift >= membershipCost);
-  const membershipDate = membership === "none" ? null : augustPlan ? "8/26" : earlyMembership ? "9/2" : "9/13";
+  const earlyMembership = augustPlan || augustOnly || (membership !== "none" && flexibleGift >= membershipCost);
+  const membershipDate = membership === "none" ? null : (augustPlan || augustOnly) ? "8/26" : earlyMembership ? "9/2" : "9/13";
   const renewalDate = augustPlan ? "9/13" : null;
-  const identityLabel = augustPlan ? "八月提督回礼计划" : membership === "admiral" ? "提督计划" : membership === "captain" ? "续舰计划" : "普通粉丝";
+  const identityLabel = (augustPlan || augustOnly) ? "八月提督回礼计划" : membership === "admiral" ? "提督计划" : membership === "captain" ? "续舰计划" : "普通粉丝";
   const transactions = [];
 
   const bannerDates = bannerCount ? dateOrder.slice(EVENT_DAYS - bannerCount) : [];
@@ -217,6 +223,8 @@ function buildPlanCore(total, options) {
   if (augustPlan) {
     transactions.push({ date: "8/26", amount: ADMIRAL_COST, group: "membership", title: "8月开通提督", membership: "admiral", activatesIdentity: true });
     transactions.push({ date: "9/13", amount: ADMIRAL_RENEW_COST, group: "membership", title: "9月续费提督", membership: "admiral", activatesIdentity: false });
+  } else if (augustOnly) {
+    transactions.push({ date: "8/26", amount: ADMIRAL_COST, group: "membership", title: "8月开通提督", membership: "admiral", activatesIdentity: true });
   } else if (membership !== "none") {
     transactions.push({ date: membershipDate, amount: membershipCost, group: "membership", title: membership === "admiral" ? "升级提督" : earlyMembership ? "续费舰长" : "重新开舰长", membership, activatesIdentity: true });
   }
@@ -227,7 +235,7 @@ function buildPlanCore(total, options) {
   const groupAmount = { banner: bannerCost, journey: journeyCost, membership: membershipCost, gift: flexibleGift };
 
   dateOrder.forEach(date => {
-    if (date === "9/5" && !augustPlan && (!membershipDate || membershipDate !== "9/2")) activeIdentity = "none";
+    if (date === "9/5" && !augustPlan && !augustOnly && (!membershipDate || membershipDate !== "9/2")) activeIdentity = "none";
     const dayTransactions = transactions.filter(item => item.date === date).sort((a, b) => {
       if (a.activatesIdentity && !b.activatesIdentity) return -1;
       if (b.activatesIdentity && !a.activatesIdentity) return 1;
@@ -266,15 +274,20 @@ function buildPlanCore(total, options) {
     const renewTx = transactions.find(tx => tx.title === "9月续费提督");
     displaySteps.push({ date: "8/26", title: "开通提督追8月主播回礼", detail: "先签到并投喂至Lv.3，确认+200%后，将19,800电池提督作为当天第一笔；同时完成大航海+10猫粮任务。", amount: ADMIRAL_COST, multiplier: augustTx.multiplier, group: "membership" });
     displaySteps.push({ date: "9/13", title: "续费提督", detail: flexibleGift > ADMIRAL_RENEW_COST ? "当天若另有超过15,800电池的大礼物，先送更大的那笔吃首赠；否则提前续费订单先付。" : "先投喂至Lv.8并确认+300%，再将15,800电池提前续费订单作为当天第一笔。", amount: ADMIRAL_RENEW_COST, multiplier: renewTx.multiplier, group: "membership" });
+  } else if (augustOnly) {
+    const augustTx = transactions.find(tx => tx.title === "8月开通提督");
+    displaySteps.push({ date: "8/26", title: "开通提督追8月主播回礼", detail: "先签到并投喂至Lv.3，确认+200%后，将19,800电池提督作为当天第一笔；同时完成大航海+10猫粮任务。预算不足以续费9月提督，故不再安排9月续费（放弃最大亲密度）；8月提督将覆盖至活动结束，9/13仍保持提督身份。", amount: ADMIRAL_COST, multiplier: augustTx.multiplier, group: "membership" });
   } else if (membership !== "none") {
     displaySteps.push({ date: membershipDate, title: membership === "admiral" ? "升级提督" : earlyMembership ? "续费舰长" : "重新开舰长", detail: `${membershipDate === "9/2" ? "先解锁Lv.5再付款，保住全程在舰。" : "先签到并投喂至Lv.8，再把身份订单作为当天第一笔。"} 此订单同时完成活动期一次的“大航海+10猫粮”任务。`, amount: membershipCost, multiplier: groupIntimacy.membership / membershipCost, group: "membership" });
   }
-  if (flexibleGift) displaySteps.push({ date: "9/13", title: "主力确定性赠礼", detail: augustPlan ? (flexibleGift > ADMIRAL_RENEW_COST ? "金额大于续费订单，先送这一笔吃每日首赠；续费随后完成。" : "续费订单先付；余款随后送出，继续享受提督与+300%日期加成。") : membershipDate === "9/13" ? "身份订单先付；余款随后送出，继续享受身份与+300%日期加成。" : "作为9月13日当天最大一笔并优先付款，吃到每日首赠。", amount: flexibleGift, multiplier: groupIntimacy.gift / flexibleGift, group: "gift" });
+  if (flexibleGift) displaySteps.push({ date: "9/13", title: "主力确定性赠礼", detail: augustPlan ? (flexibleGift > ADMIRAL_RENEW_COST ? "金额大于续费订单，先送这一笔吃每日首赠；续费随后完成。" : "续费订单先付；余款随后送出，继续享受提督与+300%日期加成。") : augustOnly ? "作为9月13日当天最大一笔并优先付款，吃到每日首赠；此时在舰的8月提督仍有效，号主已拿8月主播回礼、放弃9月续费，故9/13仍保留提督与+300%加成。" : membershipDate === "9/13" ? "身份订单先付；余款随后送出，继续享受身份与+300%日期加成。" : "作为9月13日当天最大一笔并优先付款，吃到每日首赠。", amount: flexibleGift, multiplier: groupIntimacy.gift / flexibleGift, group: "gift" });
 
   const notes = [];
   if (catGiftRange) notes.push(`按当前任务配置预计达到Lv.${catLevel}，9月13日可领取1电池喵崽馈赠，随机亲密度${fmt.format(catGiftRange[0])}～${fmt.format(catGiftRange[1])}；右侧总亲密度已按区间中点${fmt.format(catGiftMidpoint)}计入，完整范围另行列出。`);
-  if (augustRequested && !augustPlan) notes.push(`追8月提督回礼场景至少需要${fmt.format(AUGUST_ADMIRAL_TOTAL)}电池；当前预算不足，暂按普通单次身份方案计算。`);
+  if (augustRequested && !augustPlan && !augustOnly) notes.push(`追8月提督回礼至少需要${fmt.format(ADMIRAL_COST)}电池开8月提督；当前预算不足，暂按普通单次身份方案计算。`);
+  if (augustOnly) notes.push(`预算不足以同时支付8月提督与9月续费（合计${fmt.format(AUGUST_ADMIRAL_TOTAL)}电池），已只开8月提督${fmt.format(ADMIRAL_COST)}电池拿主播回礼；为回礼放弃9月续费（放弃最大亲密度），8月提督覆盖至活动结束，9/13仍保留提督身份与+300%加成。`);
   if (augustPlan) notes.push("已锁定8/26开提督19,800电池和9/13提前续费15,800电池：8月订单吃Lv.3的+200%，9月订单吃Lv.8的+300%；两次都尽量作为各自当天最大的一笔。");
+  if (!wantAdmiral) notes.push("已关闭「上提督」：即使预算充足也不再主动上提督，金额够时按舰长或普通身份处理；8月主播提督回礼需要提督身份，已随之不可用。");
   if (!options.banner) notes.push("完整签到已经按时满足Lv.3/5/7/8，默认跳过粉丝手幅猫粮任务；担心漏签时再开启21电池容错。");
   if (bannerCount < EVENT_DAYS && options.banner) notes.push(`预算只能覆盖${bannerCount}/21天粉丝手幅，已优先放到后段高倍率日期；再增加${EVENT_DAYS - bannerCount}电池即可补齐。`);
   if (requestedFoodQuality !== "normal" && !foodCost) notes.push(`身份和任务支出后不足${fmt.format(qualityCost)}电池，未安排${requestedFoodQuality === "fresh" ? "鲜食" : "冻干"}升级，按普通猫粮计算。`);
@@ -288,6 +301,7 @@ function buildPlanCore(total, options) {
 
   let title = "免费签到已经足够Lv.8";
   if (augustPlan) title = "8月26日开提督，9月13日续费提督";
+  else if (augustOnly) title = "8月26日开提督追回礼，放弃9月续费";
   else if (membership === "admiral") title = earlyMembership ? "9月2日上提督，9月13日付余款" : "9月13日先上提督，再付余款";
   else if (membership === "captain") title = earlyMembership ? "9月2日续舰，9月13日付余款" : "9月13日重新开舰";
   else if (total > 0) title = "先做高效率猫粮任务，余款留到9月13日";
@@ -551,10 +565,11 @@ function update(raw) {
   localStorage.setItem("journeyMode", journeyMode.value);
   localStorage.setItem("sweetCount", sweetCount.value);
   localStorage.setItem("augustAdmiral", augustAdmiral.checked ? "1" : "0");
+  localStorage.setItem("wantAdmiral", wantAdmiral.checked ? "1" : "0");
   localStorage.setItem("allocationMode", allocationMode.value);
   const sweet = Math.max(0, Math.min(210, Math.floor(Number(sweetCount.value) || 0)));
   sweetCount.value = sweet;
-  const plan = buildPlan(budget, { foodQuality: foodQuality.value, banner: bannerTask.checked, journey: journeyMode.value, sweet, augustAdmiral: augustAdmiral.checked, extraGrowth: 0, allocation: allocationMode.value });
+  const plan = buildPlan(budget, { foodQuality: foodQuality.value, banner: bannerTask.checked, journey: journeyMode.value, sweet, augustAdmiral: augustAdmiral.checked, wantAdmiral: wantAdmiral.checked, extraGrowth: 0, allocation: allocationMode.value });
   currentPlan = plan;
   renderPlan(plan);
   renderFanPrediction(plan);
@@ -575,6 +590,7 @@ journeyMode.addEventListener("change", () => update(budgetRange.value));
 sweetCount.addEventListener("change", () => update(budgetRange.value));
 augustAdmiral.addEventListener("change", () => update(budgetRange.value));
 allocationMode.addEventListener("change", () => update(budgetRange.value));
+wantAdmiral.addEventListener("change", () => update(budgetRange.value));
 fanLevel.addEventListener("change", () => { localStorage.setItem("fanLevel", fanLevel.value); renderFanPrediction(currentPlan); });
 fanExp.addEventListener("change", () => { localStorage.setItem("fanExp", fanExp.value); renderFanPrediction(currentPlan); });
 
@@ -587,16 +603,19 @@ if (modelVersion === "12") {
   const storedSweet = localStorage.getItem("sweetCount");
   const storedAugustAdmiral = localStorage.getItem("augustAdmiral");
   const storedAllocationMode = localStorage.getItem("allocationMode");
+  const storedWantAdmiral = localStorage.getItem("wantAdmiral");
   if (storedFoodQuality) foodQuality.value = storedFoodQuality;
   if (storedBanner !== null) bannerTask.checked = storedBanner === "1";
   if (storedJourney) journeyMode.value = storedJourney;
   if (storedSweet !== null) sweetCount.value = storedSweet;
   if (storedAugustAdmiral !== null) augustAdmiral.checked = storedAugustAdmiral === "1";
   if (storedAllocationMode) allocationMode.value = storedAllocationMode;
+  if (storedWantAdmiral !== null) wantAdmiral.checked = storedWantAdmiral === "1"; else wantAdmiral.checked = true;
 } else {
   foodQuality.value = "auto";
   bannerTask.checked = false;
   augustAdmiral.checked = true;
+  wantAdmiral.checked = true;
   journeyMode.value = "key";
   sweetCount.value = 0;
   allocationMode.value = "auto";
