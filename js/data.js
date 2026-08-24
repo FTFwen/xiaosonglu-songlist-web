@@ -1,5 +1,5 @@
 // 本文件由 scripts/sync_web_bundle.cjs 生成（window.XSL_DATA 内嵌数据，供 file:// 直开时使用）。
-// 生成时间：2026-08-24 12:42:35
+// 生成时间：2026-08-24 12:58:38
 window.XSL_DATA = {
   song_catalog: {
   "roomKey": "xiaosonglu",
@@ -113,27 +113,6 @@ window.XSL_DATA = {
       "row_key": "Virtual to LIVE"
     },
     {
-      "song_id": 90,
-      "song_name": "5:20AM",
-      "show_as_song_name": "",
-      "display_song_name": "5:20AM",
-      "artist": "刀酱",
-      "artist_search": "刀酱 5:20AM",
-      "feat_artist": "",
-      "remark": "弹幕02:15:16起“520am”连刷21条，02:21:13“520am520am520am”为演唱时点。网易云核实：5:20AM 原唱刀酱。",
-      "tone": "",
-      "language": "中文",
-      "type": "网络流行、中文流行",
-      "identification": "",
-      "display_version": "",
-      "search_name": "",
-      "cut_link": "https://www.bilibili.com/video/BV1758h6FEmv/",
-      "sing_count": 1,
-      "status_labels": "清唱、自动识别待人工复核",
-      "last_sing_at": "2026-08-23",
-      "row_key": "5:20AM"
-    },
-    {
       "song_id": 52,
       "song_name": "爱情讯息",
       "show_as_song_name": "",
@@ -232,7 +211,7 @@ window.XSL_DATA = {
       "identification": "",
       "display_version": "",
       "search_name": "",
-      "cut_link": "https://www.bilibili.com/video/BV1758h6FEmv/",
+      "cut_link": "https://www.bilibili.com/video/BV11F8h6BE4d/",
       "sing_count": 1,
       "status_labels": "清唱、自动识别待人工复核",
       "last_sing_at": "2026-08-23",
@@ -400,7 +379,7 @@ window.XSL_DATA = {
       "identification": "",
       "display_version": "",
       "search_name": "",
-      "cut_link": "https://www.bilibili.com/video/BV1758h6FEmv/",
+      "cut_link": "https://www.bilibili.com/video/BV1yw8h6TEBf/",
       "sing_count": 1,
       "status_labels": "清唱、自动识别待人工复核",
       "last_sing_at": "2026-08-23",
@@ -3791,24 +3770,6 @@ window.XSL_DATA = {
         "cut_link": "https://www.bilibili.com/video/BV1758h6FEmv/"
       },
       {
-        "song_name": "5:20AM",
-        "sing_time": "02:21:13",
-        "statuses": [
-          "清唱",
-          "自动识别待人工复核"
-        ],
-        "artist": "刀酱",
-        "replay_id": "BV1758h6FEmv",
-        "replay_title": "【小松绿Viridis】行道树投稿回（2）-2026年08月23日21点场",
-        "replay_url": "https://www.bilibili.com/video/BV1758h6FEmv/",
-        "start_time": "02:21:13",
-        "end_time": "02:23:20",
-        "row_key": "5:20AM",
-        "lyric_excerpt": "520am520am520am",
-        "song_resolution_method": "danmaku-name-drop + web-verify",
-        "cut_link": "https://www.bilibili.com/video/BV1758h6FEmv/"
-      },
-      {
         "song_name": "栖凰",
         "sing_time": "02:27:01",
         "statuses": [
@@ -6243,31 +6204,6 @@ window.XSL_DATA = {
         }
       ]
     },
-    "5:20AM": {
-      "row_key": "5:20AM",
-      "song_name": "5:20AM",
-      "display_song_name": "5:20AM",
-      "artist": "刀酱",
-      "cut_link": "https://www.bilibili.com/video/BV1758h6FEmv/",
-      "total_count": 1,
-      "entries": [
-        {
-          "date": "2026-08-23",
-          "time": "02:21:13",
-          "end_time": "02:23:20",
-          "status": "清唱、自动识别待人工复核",
-          "artist": "刀酱",
-          "replay_id": "BV1758h6FEmv",
-          "replay_title": "【小松绿Viridis】行道树投稿回（2）-2026年08月23日21点场",
-          "replay_url": "https://www.bilibili.com/video/BV1758h6FEmv/",
-          "remark": "弹幕02:15:16起“520am”连刷21条，02:21:13“520am520am520am”为演唱时点。网易云核实：5:20AM 原唱刀酱。",
-          "lyric_excerpt": "520am520am520am",
-          "song_resolution_method": "danmaku-name-drop + web-verify",
-          "replay_date_source": "replay-title",
-          "cut_link": "https://www.bilibili.com/video/BV1758h6FEmv/"
-        }
-      ]
-    },
     "栖凰": {
       "row_key": "栖凰",
       "song_name": "栖凰",
@@ -6298,7 +6234,7 @@ window.XSL_DATA = {
       "song_name": "多情岸",
       "display_song_name": "多情岸",
       "artist": "忘川风华录 / 洛天依",
-      "cut_link": "https://www.bilibili.com/video/BV1758h6FEmv/",
+      "cut_link": "https://www.bilibili.com/video/BV1yw8h6TEBf/",
       "total_count": 1,
       "entries": [
         {
@@ -6310,11 +6246,11 @@ window.XSL_DATA = {
           "replay_id": "BV1758h6FEmv",
           "replay_title": "【小松绿Viridis】行道树投稿回（2）-2026年08月23日21点场",
           "replay_url": "https://www.bilibili.com/video/BV1758h6FEmv/",
-          "remark": "弹幕02:40:26“多情岸是写曹植的吗”、02:40:36“多情岸，落泪了”；02:42:57“这是天依原唱吧”印证洛天依原唱。百度百科核实：忘川风华录曹植主题曲，洛天依演唱。",
+          "remark": "弹幕02:40:26“多情岸是写曹植的吗”、02:40:36“多情岸，落泪了”；02:42:57“这是天依原唱吧”印证洛天依原唱。百度百科核实：忘川风华录曹植主题曲，洛天依演唱。已找到专门歌切 BV1yw8h6TEBf（华丽失败酱）。",
           "lyric_excerpt": "多情岸，落泪了",
           "song_resolution_method": "danmaku-name-drop + web-verify",
           "replay_date_source": "replay-title",
-          "cut_link": "https://www.bilibili.com/video/BV1758h6FEmv/"
+          "cut_link": "https://www.bilibili.com/video/BV1yw8h6TEBf/"
         }
       ]
     },
@@ -6323,7 +6259,7 @@ window.XSL_DATA = {
       "song_name": "吹灭小山河",
       "display_song_name": "吹灭小山河",
       "artist": "国风堂 / 司南",
-      "cut_link": "https://www.bilibili.com/video/BV1758h6FEmv/",
+      "cut_link": "https://www.bilibili.com/video/BV11F8h6BE4d/",
       "total_count": 1,
       "entries": [
         {
@@ -6335,11 +6271,11 @@ window.XSL_DATA = {
           "replay_id": "BV1758h6FEmv",
           "replay_title": "【小松绿Viridis】行道树投稿回（2）-2026年08月23日21点场",
           "replay_url": "https://www.bilibili.com/video/BV1758h6FEmv/",
-          "remark": "弹幕02:46:33“吹灭小山河有品”（有品=选曲品味好，指演唱中）。网易云核实：国风堂/司南《观风月·竹马篇》。",
+          "remark": "弹幕02:46:33“吹灭小山河有品”（有品=选曲品味好，指演唱中）。网易云核实：国风堂/司南《观风月·竹马篇》。已找到专门歌切 BV11F8h6BE4d（华丽失败酱）。",
           "lyric_excerpt": "吹灭小山河有品",
           "song_resolution_method": "danmaku-name-drop + web-verify",
           "replay_date_source": "replay-title",
-          "cut_link": "https://www.bilibili.com/video/BV1758h6FEmv/"
+          "cut_link": "https://www.bilibili.com/video/BV11F8h6BE4d/"
         }
       ]
     },
@@ -6451,7 +6387,7 @@ window.XSL_DATA = {
   "generatedAt": "2026-08-22T15:36:59.183Z",
   "source": "song-cut-audio-download",
   "description": "每首歌对应的翻唱切片音频（从 B 站歌切/回放下载），供网页在线播放。",
-  "count": 87,
+  "count": 89,
   "audios": {
     "勾指起誓": "assets/audio/song_88.m4a",
     "寄明月": "assets/audio/song_02.m4a",
@@ -6540,7 +6476,9 @@ window.XSL_DATA = {
     "おともだち": "assets/audio/song_85.m4a",
     "シリウスの心臓": "assets/audio/song_86.m4a",
     "プロポーズ": "assets/audio/song_87.m4a",
-    "YOU & IDOL": "assets/audio/song_89.m4a"
+    "YOU & IDOL": "assets/audio/song_89.m4a",
+    "吹灭小山河": "assets/audio/song_90.m4a",
+    "多情岸": "assets/audio/song_91.m4a"
   }
 },
   song_cut_info: {

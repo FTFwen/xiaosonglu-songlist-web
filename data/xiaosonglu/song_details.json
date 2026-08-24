@@ -2304,31 +2304,6 @@
         }
       ]
     },
-    "5:20AM": {
-      "row_key": "5:20AM",
-      "song_name": "5:20AM",
-      "display_song_name": "5:20AM",
-      "artist": "刀酱",
-      "cut_link": "https://www.bilibili.com/video/BV1758h6FEmv/",
-      "total_count": 1,
-      "entries": [
-        {
-          "date": "2026-08-23",
-          "time": "02:21:13",
-          "end_time": "02:23:20",
-          "status": "清唱、自动识别待人工复核",
-          "artist": "刀酱",
-          "replay_id": "BV1758h6FEmv",
-          "replay_title": "【小松绿Viridis】行道树投稿回（2）-2026年08月23日21点场",
-          "replay_url": "https://www.bilibili.com/video/BV1758h6FEmv/",
-          "remark": "弹幕02:15:16起“520am”连刷21条，02:21:13“520am520am520am”为演唱时点。网易云核实：5:20AM 原唱刀酱。",
-          "lyric_excerpt": "520am520am520am",
-          "song_resolution_method": "danmaku-name-drop + web-verify",
-          "replay_date_source": "replay-title",
-          "cut_link": "https://www.bilibili.com/video/BV1758h6FEmv/"
-        }
-      ]
-    },
     "栖凰": {
       "row_key": "栖凰",
       "song_name": "栖凰",
@@ -2359,7 +2334,7 @@
       "song_name": "多情岸",
       "display_song_name": "多情岸",
       "artist": "忘川风华录 / 洛天依",
-      "cut_link": "https://www.bilibili.com/video/BV1758h6FEmv/",
+      "cut_link": "https://www.bilibili.com/video/BV1yw8h6TEBf/",
       "total_count": 1,
       "entries": [
         {
@@ -2371,11 +2346,11 @@
           "replay_id": "BV1758h6FEmv",
           "replay_title": "【小松绿Viridis】行道树投稿回（2）-2026年08月23日21点场",
           "replay_url": "https://www.bilibili.com/video/BV1758h6FEmv/",
-          "remark": "弹幕02:40:26“多情岸是写曹植的吗”、02:40:36“多情岸，落泪了”；02:42:57“这是天依原唱吧”印证洛天依原唱。百度百科核实：忘川风华录曹植主题曲，洛天依演唱。",
+          "remark": "弹幕02:40:26“多情岸是写曹植的吗”、02:40:36“多情岸，落泪了”；02:42:57“这是天依原唱吧”印证洛天依原唱。百度百科核实：忘川风华录曹植主题曲，洛天依演唱。已找到专门歌切 BV1yw8h6TEBf（华丽失败酱）。",
           "lyric_excerpt": "多情岸，落泪了",
           "song_resolution_method": "danmaku-name-drop + web-verify",
           "replay_date_source": "replay-title",
-          "cut_link": "https://www.bilibili.com/video/BV1758h6FEmv/"
+          "cut_link": "https://www.bilibili.com/video/BV1yw8h6TEBf/"
         }
       ]
     },
@@ -2384,7 +2359,7 @@
       "song_name": "吹灭小山河",
       "display_song_name": "吹灭小山河",
       "artist": "国风堂 / 司南",
-      "cut_link": "https://www.bilibili.com/video/BV1758h6FEmv/",
+      "cut_link": "https://www.bilibili.com/video/BV11F8h6BE4d/",
       "total_count": 1,
       "entries": [
         {
@@ -2396,11 +2371,11 @@
           "replay_id": "BV1758h6FEmv",
           "replay_title": "【小松绿Viridis】行道树投稿回（2）-2026年08月23日21点场",
           "replay_url": "https://www.bilibili.com/video/BV1758h6FEmv/",
-          "remark": "弹幕02:46:33“吹灭小山河有品”（有品=选曲品味好，指演唱中）。网易云核实：国风堂/司南《观风月·竹马篇》。",
+          "remark": "弹幕02:46:33“吹灭小山河有品”（有品=选曲品味好，指演唱中）。网易云核实：国风堂/司南《观风月·竹马篇》。已找到专门歌切 BV11F8h6BE4d（华丽失败酱）。",
           "lyric_excerpt": "吹灭小山河有品",
           "song_resolution_method": "danmaku-name-drop + web-verify",
           "replay_date_source": "replay-title",
-          "cut_link": "https://www.bilibili.com/video/BV1758h6FEmv/"
+          "cut_link": "https://www.bilibili.com/video/BV11F8h6BE4d/"
         }
       ]
     },
