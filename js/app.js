@@ -627,6 +627,7 @@ const timerState = {
   lastTickAt: 0,      // 上次 tick 的时间戳（ms）
   pickerH: 0,         // 弹层里的时
   pickerM: 0,         // 弹层里的分
+  snapshotSec: -1,    // 打开弹层时的值快照（秒），用于判断用户是否调整过
   timerId: null
 };
 
@@ -653,6 +654,8 @@ function openTimerPopover() {
   }
   dom.timerValH.textContent = String(timerState.pickerH);
   dom.timerValM.textContent = String(timerState.pickerM);
+  // 记录打开时的值作为快照：倒计时中若未调整，确定/取消都不应重置倒计时
+  timerState.snapshotSec = pickerToSec();
   dom.playerTimerPopover.classList.add('show');
   dom.playerTimerBtn.classList.add('active');
   dom.playerTimerPopTitle.textContent = timerState.running ? '调整定时（0:0 即关闭）' : '睡眠定时（0:0 即关闭）';
@@ -2481,10 +2484,21 @@ function bindEvents() {
     }
   }
 
-  // 点击月亮图标：未打开则打开；已打开则按当前弹层数值确定（0:0 即关闭计时）
+  // 确定弹层：倒计时中且值未变（sec === snapshotSec）→ 只收起不重置；否则按值处理
+  const confirmTimerPopover = () => {
+    const sec = pickerToSec();
+    if (timerState.running && sec === timerState.snapshotSec) {
+      // 未做任何调整：保持当前倒计时继续流动
+      closeTimerPopover();
+      return;
+    }
+    startTimer(sec);
+  };
+
+  // 点击月亮图标：未打开则打开；已打开则确定（0:0 即关闭计时）
   dom.playerTimerBtn.addEventListener('click', () => {
     if (dom.playerTimerPopover.classList.contains('show')) {
-      startTimer(pickerToSec());
+      confirmTimerPopover();
     } else {
       openTimerPopover();
     }
@@ -2531,7 +2545,7 @@ function bindEvents() {
   });
 
   dom.timerStartBtn.addEventListener('click', () => {
-    startTimer(pickerToSec());
+    confirmTimerPopover();
   });
 
   // 点击空白处关闭弹层（不影响正在进行的倒计时）
