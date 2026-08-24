@@ -1,0 +1,1 @@
+song_id=88 artist=相対性理論 lang=日文 cut=https://www.bilibili.com/video/BV1P6ud6dEkm/

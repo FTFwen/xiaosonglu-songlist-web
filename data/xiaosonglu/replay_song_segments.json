@@ -3,7 +3,7 @@
   "roomId": "1727071052",
   "sourceType": "bilibili-live-replay-song-segments",
   "description": "从小松绿直播回放中识别出的唱歌片段原始记录。由每日自动化或人工补录维护，随后通过 scripts/build_xiaosonglu_song_data.js 聚合成插件可直接读取的歌单与历史数据。歌名允许先根据歌词片段联网检索后再补全，回放日期允许先留空并由脚本从回放标题中解析。",
-  "updatedAt": "2026-08-21T19:31:27.554Z",
+  "updatedAt": "2026-08-24T12:02:18.393Z",
   "segments": [
     {
       "replay_id": "BV1Xiu86aEwV",
@@ -954,6 +954,44 @@
           "title": "【小松绿Viridis】《踊り子》（练歌）",
           "url": "https://www.bilibili.com/video/BV1NZuR6sE7m/",
           "snippet": "直链页面 meta description 明示日期 20260810；标题直接给出真实歌曲名《踊り子》，并说明为练歌片段，可作为当日 song-cut-first 增量收录。"
+        }
+      ]
+    },
+    {
+      "replay_id": "BV1P6ud6dEkm",
+      "replay_title": "【小松绿Viridis】《YOU & IDOL》（练歌小电）",
+      "replay_url": "https://www.bilibili.com/video/BV1P6ud6dEkm/",
+      "replay_date": "2026-08-10",
+      "replay_date_source": "video-desc",
+      "segment_index": 1,
+      "start_time": "",
+      "end_time": "",
+      "lyric_excerpt": "",
+      "song_search_query": "YOU & IDOL",
+      "song_resolution_method": "user-supplied",
+      "song_name": "YOU & IDOL",
+      "display_song_name": "YOU & IDOL",
+      "artist": "相対性理論",
+      "artist_search": "相対性理論 Soutaiseiriron YOU IDOL",
+      "feat_artist": "",
+      "language": "日文",
+      "tone": "",
+      "status_labels": [
+        "歌切直补"
+      ],
+      "display_version": "",
+      "type": "J-Pop",
+      "remark": "用户补充：直链页面收录《YOU & IDOL》（练歌小电），2026-08-10。2026-08-24 重建时该 segment 曾缺失导致曲目从 catalog 掉出，现按 songplg 08-21 产物恢复。",
+      "identification": "",
+      "cut_link": "https://www.bilibili.com/video/BV1P6ud6dEkm/",
+      "confidence": 0.9,
+      "row_key": "YOU & IDOL",
+      "search_name": "",
+      "resolution_candidates": [
+        {
+          "title": "【小松绿Viridis】《YOU & IDOL》（练歌小电）",
+          "url": "https://www.bilibili.com/video/BV1P6ud6dEkm/",
+          "snippet": "直链页面收录《YOU & IDOL》（练歌小电），2026-08-10，UP 主小松绿Viridis。用户补充条目（user-supplied）。"
         }
       ]
     },
@@ -2754,8 +2792,8 @@
       "song_resolution_method": "song-cut-compilation-chapter",
       "song_name": "蝴蝶",
       "display_song_name": "蝴蝶",
-      "artist": "陶喆",
-      "artist_search": "陶喆",
+      "artist": "洛天依Official",
+      "artist_search": "洛天依 蝴蝶 瞿子千",
       "feat_artist": "",
       "language": "中文",
       "tone": "",
@@ -2764,8 +2802,8 @@
         "待后续回放时间定位"
       ],
       "display_version": "",
-      "type": "流行",
-      "remark": "来自 2026-08-18 歌切合集《【663645TV】神回！我已启动！全力绿来唱完了！8月18日歌切合集【小松绿Viridis】》的分P《20-蝴蝶》。按当前 song-cut-first 策略，将合集章节名直接并入正式曲库；当前记录的是合集内顺序时间，不是原始直播回放时间。",
+      "type": "中V、流行",
+      "remark": "来自 2026-08-18 歌切合集《【663645TV】神回！我已启动！全力绿来唱完了！8月18日歌切合集【小松绿Viridis】》的分P《20-蝴蝶》。经复核为洛天依演唱的《蝴蝶》（温莨作词、瞿子千作曲，收录于洛天依十二周年纪念专辑《再生》），非陶喆同名歌曲。按当前 song-cut-first 策略，将合集章节名直接并入正式曲库；当前记录的是合集内顺序时间，不是原始直播回放时间。",
       "identification": "",
       "cut_link": "https://www.bilibili.com/video/BV1rv8V6DExk/",
       "confidence": 0.58,
@@ -3588,6 +3626,357 @@
       "row_key": "纸星瓶",
       "search_name": "",
       "resolution_candidates": []
+    },
+    {
+      "replay_id": "BV1758h6FEmv",
+      "replay_title": "【小松绿Viridis】行道树投稿回（2）-2026年08月23日21点场",
+      "replay_url": "https://www.bilibili.com/video/BV1758h6FEmv/",
+      "replay_date": "2026-08-23",
+      "replay_date_source": "replay-title",
+      "segment_index": 1,
+      "start_time": "02:16:53",
+      "end_time": "02:20:20",
+      "lyric_excerpt": "我去，流霰!",
+      "song_search_query": "流霰",
+      "song_resolution_method": "danmaku-name-drop + web-verify",
+      "song_name": "流霰",
+      "display_song_name": "流霰",
+      "artist": "旅行的蜗牛（Snapmod）/ 星尘",
+      "artist_search": "旅行的蜗牛 Snapmod 星尘",
+      "feat_artist": "",
+      "language": "中文",
+      "tone": "",
+      "status_labels": [
+        "清唱",
+        "自动识别待人工复核"
+      ],
+      "display_version": "",
+      "type": "Synthesizer V、中文Vocaloid",
+      "remark": "弹幕02:16:53“我去，流霰!”、02:17:30“特别喜欢流霰”、02:20:04“请大家去听《流霰》！超级好听”。网易云核实：旅行的蜗牛（Snapmod）2021年投稿，诗岸演唱，2022年星尘版；与弹幕“星尘连着来三首”吻合。",
+      "identification": "",
+      "cut_link": "https://www.bilibili.com/video/BV1758h6FEmv/",
+      "confidence": 0.8,
+      "row_key": "流霰",
+      "search_name": "",
+      "resolution_candidates": [
+        {
+          "title": "弹幕点名+反应",
+          "url": "https://www.bilibili.com/video/BV1758h6FEmv/",
+          "snippet": "弹幕02:16:53“我去，流霰!”、02:17:30“特别喜欢流霰”、02:20:04“请大家去听《流霰》！超级好听”。网易云核实：旅行的蜗牛（Snapmod）2021年投稿，诗岸演唱，2022年星尘版；与弹幕“星尘连着来三首”吻合。"
+        }
+      ]
+    },
+    {
+      "replay_id": "BV1758h6FEmv",
+      "replay_title": "【小松绿Viridis】行道树投稿回（2）-2026年08月23日21点场",
+      "replay_url": "https://www.bilibili.com/video/BV1758h6FEmv/",
+      "replay_date": "2026-08-23",
+      "replay_date_source": "replay-title",
+      "segment_index": 2,
+      "start_time": "02:21:13",
+      "end_time": "02:23:20",
+      "lyric_excerpt": "520am520am520am",
+      "song_search_query": "5:20AM",
+      "song_resolution_method": "danmaku-name-drop + web-verify",
+      "song_name": "5:20AM",
+      "display_song_name": "5:20AM",
+      "artist": "刀酱",
+      "artist_search": "刀酱 5:20AM",
+      "feat_artist": "",
+      "language": "中文",
+      "tone": "",
+      "status_labels": [
+        "清唱",
+        "自动识别待人工复核"
+      ],
+      "display_version": "",
+      "type": "网络流行、中文流行",
+      "remark": "弹幕02:15:16起“520am”连刷21条，02:21:13“520am520am520am”为演唱时点。网易云核实：5:20AM 原唱刀酱。",
+      "identification": "",
+      "cut_link": "https://www.bilibili.com/video/BV1758h6FEmv/",
+      "confidence": 0.7,
+      "row_key": "5:20AM",
+      "search_name": "",
+      "resolution_candidates": [
+        {
+          "title": "弹幕点名+反应",
+          "url": "https://www.bilibili.com/video/BV1758h6FEmv/",
+          "snippet": "弹幕02:15:16起“520am”连刷21条，02:21:13“520am520am520am”为演唱时点。网易云核实：5:20AM 原唱刀酱。"
+        }
+      ]
+    },
+    {
+      "replay_id": "BV1758h6FEmv",
+      "replay_title": "【小松绿Viridis】行道树投稿回（2）-2026年08月23日21点场",
+      "replay_url": "https://www.bilibili.com/video/BV1758h6FEmv/",
+      "replay_date": "2026-08-23",
+      "replay_date_source": "replay-title",
+      "segment_index": 3,
+      "start_time": "02:27:01",
+      "end_time": "02:31:42",
+      "lyric_excerpt": "栖凰好听捏",
+      "song_search_query": "栖凰",
+      "song_resolution_method": "danmaku-name-drop + web-verify",
+      "song_name": "栖凰",
+      "display_song_name": "栖凰",
+      "artist": "忘川风华录 / 星尘",
+      "artist_search": "忘川风华录 星尘 栖凰",
+      "feat_artist": "",
+      "language": "中文",
+      "tone": "",
+      "status_labels": [
+        "清唱",
+        "自动识别待人工复核"
+      ],
+      "display_version": "",
+      "type": "忘川风华录、古风",
+      "remark": "弹幕02:27:01/02:28:25点名“栖凰”，02:31:18“栖凰好听捏”，02:31:42“星尘连着来三首”。百度百科/萌百核实：栖凰为忘川风华录2018年投稿、星尘演唱。",
+      "identification": "",
+      "cut_link": "https://www.bilibili.com/video/BV1758h6FEmv/",
+      "confidence": 0.75,
+      "row_key": "栖凰",
+      "search_name": "",
+      "resolution_candidates": [
+        {
+          "title": "弹幕点名+反应",
+          "url": "https://www.bilibili.com/video/BV1758h6FEmv/",
+          "snippet": "弹幕02:27:01/02:28:25点名“栖凰”，02:31:18“栖凰好听捏”，02:31:42“星尘连着来三首”。百度百科/萌百核实：栖凰为忘川风华录2018年投稿、星尘演唱。"
+        }
+      ]
+    },
+    {
+      "replay_id": "BV1758h6FEmv",
+      "replay_title": "【小松绿Viridis】行道树投稿回（2）-2026年08月23日21点场",
+      "replay_url": "https://www.bilibili.com/video/BV1758h6FEmv/",
+      "replay_date": "2026-08-23",
+      "replay_date_source": "replay-title",
+      "segment_index": 4,
+      "start_time": "02:40:26",
+      "end_time": "02:42:57",
+      "lyric_excerpt": "多情岸，落泪了",
+      "song_search_query": "多情岸",
+      "song_resolution_method": "danmaku-name-drop + web-verify",
+      "song_name": "多情岸",
+      "display_song_name": "多情岸",
+      "artist": "忘川风华录 / 洛天依",
+      "artist_search": "忘川风华录 洛天依 多情岸",
+      "feat_artist": "",
+      "language": "中文",
+      "tone": "",
+      "status_labels": [
+        "清唱",
+        "自动识别待人工复核"
+      ],
+      "display_version": "",
+      "type": "忘川风华录、古风",
+      "remark": "弹幕02:40:26“多情岸是写曹植的吗”、02:40:36“多情岸，落泪了”；02:42:57“这是天依原唱吧”印证洛天依原唱。百度百科核实：忘川风华录曹植主题曲，洛天依演唱。",
+      "identification": "",
+      "cut_link": "https://www.bilibili.com/video/BV1758h6FEmv/",
+      "confidence": 0.75,
+      "row_key": "多情岸",
+      "search_name": "",
+      "resolution_candidates": [
+        {
+          "title": "弹幕点名+反应",
+          "url": "https://www.bilibili.com/video/BV1758h6FEmv/",
+          "snippet": "弹幕02:40:26“多情岸是写曹植的吗”、02:40:36“多情岸，落泪了”；02:42:57“这是天依原唱吧”印证洛天依原唱。百度百科核实：忘川风华录曹植主题曲，洛天依演唱。"
+        }
+      ]
+    },
+    {
+      "replay_id": "BV1758h6FEmv",
+      "replay_title": "【小松绿Viridis】行道树投稿回（2）-2026年08月23日21点场",
+      "replay_url": "https://www.bilibili.com/video/BV1758h6FEmv/",
+      "replay_date": "2026-08-23",
+      "replay_date_source": "replay-title",
+      "segment_index": 5,
+      "start_time": "02:46:33",
+      "end_time": "02:48:36",
+      "lyric_excerpt": "吹灭小山河有品",
+      "song_search_query": "吹灭小山河",
+      "song_resolution_method": "danmaku-name-drop + web-verify",
+      "song_name": "吹灭小山河",
+      "display_song_name": "吹灭小山河",
+      "artist": "国风堂 / 司南",
+      "artist_search": "国风堂 司南 吹灭小山河",
+      "feat_artist": "",
+      "language": "中文",
+      "tone": "",
+      "status_labels": [
+        "清唱",
+        "自动识别待人工复核"
+      ],
+      "display_version": "",
+      "type": "国风",
+      "remark": "弹幕02:46:33“吹灭小山河有品”（有品=选曲品味好，指演唱中）。网易云核实：国风堂/司南《观风月·竹马篇》。",
+      "identification": "",
+      "cut_link": "https://www.bilibili.com/video/BV1758h6FEmv/",
+      "confidence": 0.7,
+      "row_key": "吹灭小山河",
+      "search_name": "",
+      "resolution_candidates": [
+        {
+          "title": "弹幕点名+反应",
+          "url": "https://www.bilibili.com/video/BV1758h6FEmv/",
+          "snippet": "弹幕02:46:33“吹灭小山河有品”（有品=选曲品味好，指演唱中）。网易云核实：国风堂/司南《观风月·竹马篇》。"
+        }
+      ]
+    },
+    {
+      "replay_id": "BV1758h6FEmv",
+      "replay_title": "【小松绿Viridis】行道树投稿回（2）-2026年08月23日21点场",
+      "replay_url": "https://www.bilibili.com/video/BV1758h6FEmv/",
+      "replay_date": "2026-08-23",
+      "replay_date_source": "replay-title",
+      "segment_index": 6,
+      "start_time": "02:48:36",
+      "end_time": "02:49:34",
+      "lyric_excerpt": "腐草为萤",
+      "song_search_query": "腐草为萤",
+      "song_resolution_method": "danmaku-name-drop + web-verify",
+      "song_name": "腐草为萤",
+      "display_song_name": "腐草为萤",
+      "artist": "银临",
+      "artist_search": "银临 腐草为萤",
+      "feat_artist": "",
+      "language": "中文",
+      "tone": "",
+      "status_labels": [
+        "清唱",
+        "自动识别待人工复核"
+      ],
+      "display_version": "",
+      "type": "古风",
+      "remark": "弹幕02:48:36点名“腐草为萤”（忘川/古风连唱段内）。网易云核实：银临演唱。",
+      "identification": "",
+      "cut_link": "https://www.bilibili.com/video/BV1758h6FEmv/",
+      "confidence": 0.7,
+      "row_key": "腐草为萤",
+      "search_name": "",
+      "resolution_candidates": [
+        {
+          "title": "弹幕点名+反应",
+          "url": "https://www.bilibili.com/video/BV1758h6FEmv/",
+          "snippet": "弹幕02:48:36点名“腐草为萤”（忘川/古风连唱段内）。网易云核实：银临演唱。"
+        }
+      ]
+    },
+    {
+      "replay_id": "BV1758h6FEmv",
+      "replay_title": "【小松绿Viridis】行道树投稿回（2）-2026年08月23日21点场",
+      "replay_url": "https://www.bilibili.com/video/BV1758h6FEmv/",
+      "replay_date": "2026-08-23",
+      "replay_date_source": "replay-title",
+      "segment_index": 7,
+      "start_time": "02:49:34",
+      "end_time": "02:51:48",
+      "lyric_excerpt": "夏恋慕神！！！",
+      "song_search_query": "夏恋慕",
+      "song_resolution_method": "danmaku-name-drop + web-verify",
+      "song_name": "夏恋慕",
+      "display_song_name": "夏恋慕",
+      "artist": "kobasolo / 春茶",
+      "artist_search": "kobasolo 春茶 夏恋慕",
+      "feat_artist": "",
+      "language": "日文",
+      "tone": "",
+      "status_labels": [
+        "清唱",
+        "自动识别待人工复核"
+      ],
+      "display_version": "",
+      "type": "J-Pop",
+      "remark": "弹幕02:49:34“夏恋慕神！！！”、02:49:51/02:49:58“还有夏恋慕”；02:51:42-48日文歌词行“ぽたりぽたり通る夏の日”“僕は君に恋して いいの”。网易云核实：kobasolo feat. 春茶。",
+      "identification": "",
+      "cut_link": "https://www.bilibili.com/video/BV1758h6FEmv/",
+      "confidence": 0.75,
+      "row_key": "夏恋慕",
+      "search_name": "",
+      "resolution_candidates": [
+        {
+          "title": "弹幕点名+反应",
+          "url": "https://www.bilibili.com/video/BV1758h6FEmv/",
+          "snippet": "弹幕02:49:34“夏恋慕神！！！”、02:49:51/02:49:58“还有夏恋慕”；02:51:42-48日文歌词行“ぽたりぽたり通る夏の日”“僕は君に恋して いいの”。网易云核实：kobasolo feat. 春茶。"
+        }
+      ]
+    },
+    {
+      "replay_id": "BV1758h6FEmv",
+      "replay_title": "【小松绿Viridis】行道树投稿回（2）-2026年08月23日21点场",
+      "replay_url": "https://www.bilibili.com/video/BV1758h6FEmv/",
+      "replay_date": "2026-08-23",
+      "replay_date_source": "replay-title",
+      "segment_index": 8,
+      "start_time": "02:54:35",
+      "end_time": "02:54:37",
+      "lyric_excerpt": "你还会可惜夜阿",
+      "song_search_query": "可惜夜",
+      "song_resolution_method": "danmaku-name-drop + web-verify",
+      "song_name": "可惜夜",
+      "display_song_name": "可惜夜",
+      "artist": "凪",
+      "artist_search": "凪 可惜夜",
+      "feat_artist": "",
+      "language": "日文",
+      "tone": "",
+      "status_labels": [
+        "清唱",
+        "自动识别待人工复核"
+      ],
+      "display_version": "",
+      "type": "J-Pop",
+      "remark": "弹幕02:54:35“你还会可惜夜阿”（惊讶主播会唱这首）。uta-net核实：凪の「可惜夜」。歌手待复核。",
+      "identification": "",
+      "cut_link": "https://www.bilibili.com/video/BV1758h6FEmv/",
+      "confidence": 0.6,
+      "row_key": "可惜夜",
+      "search_name": "",
+      "resolution_candidates": [
+        {
+          "title": "弹幕点名+反应",
+          "url": "https://www.bilibili.com/video/BV1758h6FEmv/",
+          "snippet": "弹幕02:54:35“你还会可惜夜阿”（惊讶主播会唱这首）。uta-net核实：凪の「可惜夜」。歌手待复核。"
+        }
+      ]
+    },
+    {
+      "replay_id": "BV1758h6FEmv",
+      "replay_title": "【小松绿Viridis】行道树投稿回（2）-2026年08月23日21点场",
+      "replay_url": "https://www.bilibili.com/video/BV1758h6FEmv/",
+      "replay_date": "2026-08-23",
+      "replay_date_source": "replay-title",
+      "segment_index": 9,
+      "start_time": "02:54:37",
+      "end_time": "02:58:23",
+      "lyric_excerpt": "夏霞好听",
+      "song_search_query": "夏霞",
+      "song_resolution_method": "danmaku-name-drop + web-verify",
+      "song_name": "夏霞",
+      "display_song_name": "夏霞",
+      "artist": "あたらよ",
+      "artist_search": "あたらよ 夏霞",
+      "feat_artist": "",
+      "language": "日文",
+      "tone": "",
+      "status_labels": [
+        "清唱",
+        "自动识别待人工复核"
+      ],
+      "display_version": "",
+      "type": "J-Pop",
+      "remark": "弹幕02:54:37-02:58:23密集反应：夏霞好耶/有品/好听/真不错吧（15+条），为压轴曲；02:56:07“还有desert [哇]”疑似其后又唱了 desert（未收录，待复核）。网易云核实：あたらよ《夏霞》（2022，专辑《極夜において月は語らず》）。",
+      "identification": "",
+      "cut_link": "https://www.bilibili.com/video/BV1758h6FEmv/",
+      "confidence": 0.8,
+      "row_key": "夏霞",
+      "search_name": "",
+      "resolution_candidates": [
+        {
+          "title": "弹幕点名+反应",
+          "url": "https://www.bilibili.com/video/BV1758h6FEmv/",
+          "snippet": "弹幕02:54:37-02:58:23密集反应：夏霞好耶/有品/好听/真不错吧（15+条），为压轴曲；02:56:07“还有desert [哇]”疑似其后又唱了 desert（未收录，待复核）。网易云核实：あたらよ《夏霞》（2022，专辑《極夜において月は語らず》）。"
+        }
+      ]
     }
   ]
 }

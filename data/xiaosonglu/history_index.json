@@ -1,22 +1,23 @@
 {
   "roomKey": "xiaosonglu",
   "roomId": "1727071052",
-  "generatedAt": "2026-08-21T19:31:27.554Z",
+  "generatedAt": "2026-08-24T12:02:18.393Z",
   "source": "local-replay-ingestion",
   "latest": {
     "year": "2026",
     "month": "08",
-    "day": "20"
+    "day": "23"
   },
   "dateTree": {
     "2026": {
       "08": {
-        "10": 2,
+        "10": 3,
         "11": 14,
         "12": 1,
         "15": 10,
         "18": 24,
         "20": 20,
+        "23": 9,
         "09": 17,
         "08": 3,
         "07": 1
@@ -426,6 +427,23 @@
         "lyric_excerpt": "",
         "song_resolution_method": "song-cut-title",
         "cut_link": "https://www.bilibili.com/video/BV1NZuR6sE7m/"
+      },
+      {
+        "song_name": "YOU & IDOL",
+        "sing_time": "",
+        "statuses": [
+          "歌切直补"
+        ],
+        "artist": "相対性理論",
+        "replay_id": "BV1P6ud6dEkm",
+        "replay_title": "【小松绿Viridis】《YOU & IDOL》（练歌小电）",
+        "replay_url": "https://www.bilibili.com/video/BV1P6ud6dEkm/",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "YOU & IDOL",
+        "lyric_excerpt": "",
+        "song_resolution_method": "user-supplied",
+        "cut_link": "https://www.bilibili.com/video/BV1P6ud6dEkm/"
       },
       {
         "song_name": "太聪明",
@@ -1241,7 +1259,7 @@
           "歌切合集补录",
           "待后续回放时间定位"
         ],
-        "artist": "陶喆",
+        "artist": "洛天依Official",
         "replay_id": "BV1rv8V6DExk",
         "replay_title": "【663645TV】神回！我已启动！全力绿来唱完了！8月18日歌切合集【小松绿Viridis】",
         "replay_url": "https://www.bilibili.com/video/BV1rv8V6DExk/",
@@ -1703,6 +1721,170 @@
         "lyric_excerpt": "所有念与想　叠作纸星瓶装",
         "song_resolution_method": "danmaku-lyrics + cut-chapters",
         "cut_link": "https://www.bilibili.com/video/BV1EC8w62EAD/?p=19"
+      }
+    ],
+    "2026-08-23": [
+      {
+        "song_name": "流霰",
+        "sing_time": "02:16:53",
+        "statuses": [
+          "清唱",
+          "自动识别待人工复核"
+        ],
+        "artist": "旅行的蜗牛（Snapmod）/ 星尘",
+        "replay_id": "BV1758h6FEmv",
+        "replay_title": "【小松绿Viridis】行道树投稿回（2）-2026年08月23日21点场",
+        "replay_url": "https://www.bilibili.com/video/BV1758h6FEmv/",
+        "start_time": "02:16:53",
+        "end_time": "02:20:20",
+        "row_key": "流霰",
+        "lyric_excerpt": "我去，流霰!",
+        "song_resolution_method": "danmaku-name-drop + web-verify",
+        "cut_link": "https://www.bilibili.com/video/BV1758h6FEmv/"
+      },
+      {
+        "song_name": "5:20AM",
+        "sing_time": "02:21:13",
+        "statuses": [
+          "清唱",
+          "自动识别待人工复核"
+        ],
+        "artist": "刀酱",
+        "replay_id": "BV1758h6FEmv",
+        "replay_title": "【小松绿Viridis】行道树投稿回（2）-2026年08月23日21点场",
+        "replay_url": "https://www.bilibili.com/video/BV1758h6FEmv/",
+        "start_time": "02:21:13",
+        "end_time": "02:23:20",
+        "row_key": "5:20AM",
+        "lyric_excerpt": "520am520am520am",
+        "song_resolution_method": "danmaku-name-drop + web-verify",
+        "cut_link": "https://www.bilibili.com/video/BV1758h6FEmv/"
+      },
+      {
+        "song_name": "栖凰",
+        "sing_time": "02:27:01",
+        "statuses": [
+          "清唱",
+          "自动识别待人工复核"
+        ],
+        "artist": "忘川风华录 / 星尘",
+        "replay_id": "BV1758h6FEmv",
+        "replay_title": "【小松绿Viridis】行道树投稿回（2）-2026年08月23日21点场",
+        "replay_url": "https://www.bilibili.com/video/BV1758h6FEmv/",
+        "start_time": "02:27:01",
+        "end_time": "02:31:42",
+        "row_key": "栖凰",
+        "lyric_excerpt": "栖凰好听捏",
+        "song_resolution_method": "danmaku-name-drop + web-verify",
+        "cut_link": "https://www.bilibili.com/video/BV1758h6FEmv/"
+      },
+      {
+        "song_name": "多情岸",
+        "sing_time": "02:40:26",
+        "statuses": [
+          "清唱",
+          "自动识别待人工复核"
+        ],
+        "artist": "忘川风华录 / 洛天依",
+        "replay_id": "BV1758h6FEmv",
+        "replay_title": "【小松绿Viridis】行道树投稿回（2）-2026年08月23日21点场",
+        "replay_url": "https://www.bilibili.com/video/BV1758h6FEmv/",
+        "start_time": "02:40:26",
+        "end_time": "02:42:57",
+        "row_key": "多情岸",
+        "lyric_excerpt": "多情岸，落泪了",
+        "song_resolution_method": "danmaku-name-drop + web-verify",
+        "cut_link": "https://www.bilibili.com/video/BV1758h6FEmv/"
+      },
+      {
+        "song_name": "吹灭小山河",
+        "sing_time": "02:46:33",
+        "statuses": [
+          "清唱",
+          "自动识别待人工复核"
+        ],
+        "artist": "国风堂 / 司南",
+        "replay_id": "BV1758h6FEmv",
+        "replay_title": "【小松绿Viridis】行道树投稿回（2）-2026年08月23日21点场",
+        "replay_url": "https://www.bilibili.com/video/BV1758h6FEmv/",
+        "start_time": "02:46:33",
+        "end_time": "02:48:36",
+        "row_key": "吹灭小山河",
+        "lyric_excerpt": "吹灭小山河有品",
+        "song_resolution_method": "danmaku-name-drop + web-verify",
+        "cut_link": "https://www.bilibili.com/video/BV1758h6FEmv/"
+      },
+      {
+        "song_name": "腐草为萤",
+        "sing_time": "02:48:36",
+        "statuses": [
+          "清唱",
+          "自动识别待人工复核"
+        ],
+        "artist": "银临",
+        "replay_id": "BV1758h6FEmv",
+        "replay_title": "【小松绿Viridis】行道树投稿回（2）-2026年08月23日21点场",
+        "replay_url": "https://www.bilibili.com/video/BV1758h6FEmv/",
+        "start_time": "02:48:36",
+        "end_time": "02:49:34",
+        "row_key": "腐草为萤",
+        "lyric_excerpt": "腐草为萤",
+        "song_resolution_method": "danmaku-name-drop + web-verify",
+        "cut_link": "https://www.bilibili.com/video/BV1758h6FEmv/"
+      },
+      {
+        "song_name": "夏恋慕",
+        "sing_time": "02:49:34",
+        "statuses": [
+          "清唱",
+          "自动识别待人工复核"
+        ],
+        "artist": "kobasolo / 春茶",
+        "replay_id": "BV1758h6FEmv",
+        "replay_title": "【小松绿Viridis】行道树投稿回（2）-2026年08月23日21点场",
+        "replay_url": "https://www.bilibili.com/video/BV1758h6FEmv/",
+        "start_time": "02:49:34",
+        "end_time": "02:51:48",
+        "row_key": "夏恋慕",
+        "lyric_excerpt": "夏恋慕神！！！",
+        "song_resolution_method": "danmaku-name-drop + web-verify",
+        "cut_link": "https://www.bilibili.com/video/BV1758h6FEmv/"
+      },
+      {
+        "song_name": "可惜夜",
+        "sing_time": "02:54:35",
+        "statuses": [
+          "清唱",
+          "自动识别待人工复核"
+        ],
+        "artist": "凪",
+        "replay_id": "BV1758h6FEmv",
+        "replay_title": "【小松绿Viridis】行道树投稿回（2）-2026年08月23日21点场",
+        "replay_url": "https://www.bilibili.com/video/BV1758h6FEmv/",
+        "start_time": "02:54:35",
+        "end_time": "02:54:37",
+        "row_key": "可惜夜",
+        "lyric_excerpt": "你还会可惜夜阿",
+        "song_resolution_method": "danmaku-name-drop + web-verify",
+        "cut_link": "https://www.bilibili.com/video/BV1758h6FEmv/"
+      },
+      {
+        "song_name": "夏霞",
+        "sing_time": "02:54:37",
+        "statuses": [
+          "清唱",
+          "自动识别待人工复核"
+        ],
+        "artist": "あたらよ",
+        "replay_id": "BV1758h6FEmv",
+        "replay_title": "【小松绿Viridis】行道树投稿回（2）-2026年08月23日21点场",
+        "replay_url": "https://www.bilibili.com/video/BV1758h6FEmv/",
+        "start_time": "02:54:37",
+        "end_time": "02:58:23",
+        "row_key": "夏霞",
+        "lyric_excerpt": "夏霞好听",
+        "song_resolution_method": "danmaku-name-drop + web-verify",
+        "cut_link": "https://www.bilibili.com/video/BV1758h6FEmv/"
       }
     ]
   }
