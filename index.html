@@ -67,6 +67,15 @@
       background-position: center;
       box-shadow: 0 8px 24px rgba(122, 136, 70, 0.26);
     }
+    /* 小松绿主题：倒计时中的月亮按钮用深橄榄绿标识 */
+    :root.theme-xiaosonglu .player-timer-btn.running {
+      background: linear-gradient(135deg, #7c8c42, #5c6a30);
+      border-color: #5c6a30;
+    }
+    :root.theme-xiaosonglu .mobile-fab.timer-running {
+      background: linear-gradient(135deg, #7c8c42, #5c6a30);
+      box-shadow: 0 4px 18px rgba(92, 106, 48, 0.5);
+    }
 
     * { box-sizing: border-box; }
 
@@ -1195,11 +1204,11 @@
     .player-timer-btn:hover { border-color: #a9bbff; color: var(--primary-dark); background: var(--primary-soft); }
     .player-timer-btn .icon { width: 20px; height: 20px; }
     .player-timer-btn.active { background: var(--primary-soft); color: var(--primary-dark); border-color: #a9bbff; }
-    /* 倒计时进行中：高亮样式表示正在计时（不放数字、不做复杂动效） */
+    /* 倒计时进行中：深色高亮表示正在计时（不放数字、不做复杂动效） */
     .player-timer-btn.running {
-      background: linear-gradient(135deg, #eef1ff, #dbe3ff);
-      border-color: var(--primary);
-      color: var(--primary-dark);
+      background: linear-gradient(135deg, #4459d4, #2f3fae);
+      border-color: #2f3fae;
+      color: #fff;
       box-shadow: 0 0 0 3px rgba(91, 110, 225, 0.18);
       animation: timerPulse 1.6s ease-in-out infinite;
     }
@@ -1254,6 +1263,8 @@
       cursor: ns-resize;
       border-radius: 8px;
       line-height: 34px;
+      touch-action: none; /* 手机上拖动数字时禁止滚动页面 */
+      -webkit-user-select: none;
     }
     .timer-col .timer-value:active { background: var(--primary-soft); }
     .timer-col-label { font-size: 10px; color: var(--text-soft); }
@@ -1739,9 +1750,10 @@
     .mobile-fab .icon { width: 20px; height: 20px; }
     .mobile-fab:active { transform: scale(0.92); }
     .mobile-fab.active { background: var(--primary-dark); }
-    /* 睡眠定时手机端按钮：倒计时中高亮呼吸 */
+    /* 睡眠定时手机端按钮：倒计时中深色高亮 + 呼吸光圈，作为正在计时的明确标识 */
     .mobile-fab.timer-running {
-      background: var(--primary-dark);
+      background: linear-gradient(135deg, #4459d4, #2f3fae);
+      box-shadow: 0 4px 18px rgba(47, 63, 174, 0.5);
       animation: timerPulse 1.6s ease-in-out infinite;
     }
 
@@ -2124,6 +2136,6 @@
   <script src="js/shared.js?v=24" defer></script>
   <script src="js/pinyin-pro.js" defer></script>
   <script src="js/data.js?v=24" defer></script>
-  <script src="js/app.js?v=32" defer></script>
+  <script src="js/app.js?v=33" defer></script>
 </body>
 </html>

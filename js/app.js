@@ -2564,10 +2564,14 @@ function bindEvents() {
     confirmTimerPopover();
   });
 
-  // 点击空白处关闭弹层（不影响正在进行的倒计时）
+  // 点击空白处关闭弹层（不影响正在进行的倒计时）。
+  // 注意：点击月亮按钮本身（播放器栏或手机悬浮列）不算"空白处"，
+  // 否则 pointerdown 先关、click 再开，会出现"闪关再开"。
   document.addEventListener('pointerdown', e => {
     if (!dom.playerTimerPopover.classList.contains('show')) return;
-    if (!dom.playerTimerWrap.contains(e.target)) {
+    const insideTimer = dom.playerTimerWrap.contains(e.target);
+    const insideFab = dom.mobileFabs && dom.mobileFabs.contains(e.target);
+    if (!insideTimer && !insideFab) {
       closeTimerPopover();
     }
   });
