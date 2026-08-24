@@ -630,34 +630,12 @@ const timerState = {
   timerId: null
 };
 
-// 沙漏"流动"动画：沙子填充比例 = 剩余时间 / 总时间（1→0），视觉上沙子逐渐漏完
-function updateTimerSand() {
-  const el = dom.playerTimerSand;
-  if (!el) return;
-  const ratio = timerState.totalSec > 0 ? timerState.remainSec / timerState.totalSec : 0;
-  el.style.height = `${Math.max(0, Math.min(100, ratio * 100))}%`;
-}
-
-function updateTimerBadge() {
-  const badge = dom.playerTimerBadge;
-  if (!badge) return;
-  if (timerState.running) {
-    const m = Math.floor(timerState.remainSec / 60);
-    const s = timerState.remainSec % 60;
-    badge.textContent = `${m}:${String(s).padStart(2, '0')}`;
-    badge.style.display = 'block';
-  } else {
-    badge.style.display = 'none';
-  }
-}
-
+// 倒计时进行中：图标高亮样式（running），不显示数字、不做复杂动效
 function renderTimerButton() {
   dom.playerTimerBtn.classList.toggle('running', timerState.running);
   dom.playerTimerBtn.title = timerState.running
-    ? `定时停止（剩余 ${formatTimerTime(timerState.remainSec)}），点击调整`
+    ? '定时停止倒计时中（点击调整）'
     : '定时播放：设置倒计时，结束后自动暂停';
-  updateTimerBadge();
-  updateTimerSand();
 }
 
 function formatTimerTime(sec) {
@@ -2303,7 +2281,7 @@ function bindDom() {
     'favoritesExportBtn','favoritesExportFileBtn','favoritesClearBtn','favoritesMetaText','favoritesCountText','favoritesListWrap',
     'detailOverlay','detailModal','detailTitle','detailSub','detailBody','detailCloseBtn','toast',
     'playerBar','playerPrevBtn','playerToggleBtn','playerNextBtn','playerSongName','playerSongArtist','playerSeek','playerTimeCur','playerTimeDur','playerShuffleBtn','playerVolume','playAllBtn','playShuffleBtn',
-    'playerTimerWrap','playerTimerBtn','playerTimerSand','playerTimerBadge','playerTimerPopover','playerTimerPopTitle','timerValH','timerValM','timerCancelBtn','timerStartBtn','playerTimerHint',
+    'playerTimerWrap','playerTimerBtn','playerTimerPopover','playerTimerPopTitle','timerValH','timerValM','timerCancelBtn','timerStartBtn','playerTimerHint',
     'playlistPanel','playlistCountText','playlistClearBtn','playlistListWrap',
     'songlistPanel','songlistNewBtn','songlistBodyWrap',
     'songlistDialogOverlay','songlistNewName','songlistDialogCancel','songlistDialogOk',
