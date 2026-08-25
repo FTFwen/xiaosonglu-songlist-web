@@ -1,7 +1,7 @@
 {
   "roomKey": "xiaosonglu",
   "roomId": "1727071052",
-  "generatedAt": "2026-08-25T15:30:09.570Z",
+  "generatedAt": "2026-08-25T15:36:57.729Z",
   "source": "local-replay-ingestion",
   "latest": {
     "year": "2026",
@@ -12,7 +12,7 @@
     "2026": {
       "08": {
         "10": 3,
-        "11": 14,
+        "11": 15,
         "12": 2,
         "15": 10,
         "18": 24,
@@ -608,6 +608,24 @@
         "lyric_excerpt": "",
         "song_resolution_method": "song-cut-title",
         "cut_link": "https://www.bilibili.com/video/BV1QTgJ6vEdB/"
+      },
+      {
+        "song_name": "青鸟衔风",
+        "sing_time": "",
+        "statuses": [
+          "歌切直补",
+          "待原始回放定位"
+        ],
+        "artist": "海伊 / 诗岸",
+        "replay_id": "BV1mwuz62EfH",
+        "replay_title": "【小松绿Viridis】《青鸟衔风》",
+        "replay_url": "https://www.bilibili.com/video/BV1mwuz62EfH/",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "青鸟衔风",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-title",
+        "cut_link": "https://www.bilibili.com/video/BV1mwuz62EfH/"
       },
       {
         "song_name": "三月雨",

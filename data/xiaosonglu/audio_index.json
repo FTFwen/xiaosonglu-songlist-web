@@ -4,7 +4,7 @@
   "generatedAt": "2026-08-22T15:36:59.183Z",
   "source": "song-cut-audio-download",
   "description": "每首歌对应的翻唱切片音频（从 B 站歌切/回放下载），供网页在线播放。",
-  "count": 97,
+  "count": 98,
   "audios": {
     "勾指起誓": "assets/audio/song_88.m4a",
     "寄明月": "assets/audio/song_02.m4a",
@@ -102,6 +102,7 @@
     "夏恋慕": "assets/audio/song_95.m4a",
     "恋苦": "assets/audio/song_96.m4a",
     "光": "assets/audio/song_97.m4a",
-    "月巷": "assets/audio/song_98.m4a"
+    "月巷": "assets/audio/song_98.m4a",
+    "青鸟衔风": "assets/audio/song_99.m4a"
   }
 }

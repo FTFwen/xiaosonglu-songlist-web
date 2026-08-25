@@ -2125,6 +2125,27 @@
       "duplicate_of": "",
       "collected_at": "2026-08-25T15:30:09.464Z",
       "notes": "vcpedia 核实：乐正绫演唱，2024 虚拟歌手贺岁纪单品。"
+    },
+    {
+      "clip_date": "2026-08-11",
+      "date_source": "cut-title-date",
+      "date_text": "2026-08-11",
+      "song_name": "青鸟衔风",
+      "song_name_source": "title-song-name",
+      "artist": "海伊 / 诗岸",
+      "clip_kind": "single",
+      "chapter_title": "",
+      "clip_title": "【小松绿Viridis】《青鸟衔风》",
+      "clip_url": "https://www.bilibili.com/video/BV1mwuz62EfH/",
+      "clip_bvid": "BV1mwuz62EfH",
+      "uploader": "天生就喜欢笑",
+      "duration": "03:04",
+      "source_query": "用户提供歌切",
+      "duplicate_key": "2026-08-11::青鸟衔风",
+      "duplicate_status": "primary",
+      "duplicate_of": "",
+      "collected_at": "2026-08-25T15:36:57.645Z",
+      "notes": "萌百核实：忘川风华录 2019-12-14，海伊与诗岸演唱。"
     }
   ]
 }

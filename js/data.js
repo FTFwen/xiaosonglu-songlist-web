@@ -1,10 +1,10 @@
 // 本文件由 scripts/sync_web_bundle.cjs 生成（window.XSL_DATA 内嵌数据，供 file:// 直开时使用）。
-// 生成时间：2026-08-25 15:30:31
+// 生成时间：2026-08-25 15:37:15
 window.XSL_DATA = {
   song_catalog: {
   "roomKey": "xiaosonglu",
   "roomId": "1727071052",
-  "generatedAt": "2026-08-25T15:30:09.570Z",
+  "generatedAt": "2026-08-25T15:36:57.729Z",
   "source": "local-replay-ingestion",
   "songs": [
     {
@@ -951,6 +951,27 @@ window.XSL_DATA = {
       "status_labels": "清唱、自动识别待人工复核",
       "last_sing_at": "2026-08-23",
       "row_key": "栖凰"
+    },
+    {
+      "song_id": 98,
+      "song_name": "青鸟衔风",
+      "show_as_song_name": "",
+      "display_song_name": "青鸟衔风",
+      "artist": "海伊 / 诗岸",
+      "artist_search": "青鸟衔风 海伊 诗岸",
+      "feat_artist": "",
+      "remark": "歌切标题《【小松绿Viridis】《青鸟衔风》》（UP 天生就喜欢笑，简介 20260811）。萌百核实：忘川风华录 2019-12-14 投稿 Synthesizer V 中文原创，海伊与诗岸演唱（慕清明作词、PoKeR 作曲）。按 song-cut-first 规则收录。",
+      "tone": "",
+      "language": "中文",
+      "type": "忘川风华录、国风",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1mwuz62EfH/",
+      "sing_count": 1,
+      "status_labels": "歌切直补、待原始回放定位",
+      "last_sing_at": "2026-08-11",
+      "row_key": "青鸟衔风"
     },
     {
       "song_id": 16,
@@ -2049,7 +2070,7 @@ window.XSL_DATA = {
   history_index: {
   "roomKey": "xiaosonglu",
   "roomId": "1727071052",
-  "generatedAt": "2026-08-25T15:30:09.570Z",
+  "generatedAt": "2026-08-25T15:36:57.729Z",
   "source": "local-replay-ingestion",
   "latest": {
     "year": "2026",
@@ -2060,7 +2081,7 @@ window.XSL_DATA = {
     "2026": {
       "08": {
         "10": 3,
-        "11": 14,
+        "11": 15,
         "12": 2,
         "15": 10,
         "18": 24,
@@ -2656,6 +2677,24 @@ window.XSL_DATA = {
         "lyric_excerpt": "",
         "song_resolution_method": "song-cut-title",
         "cut_link": "https://www.bilibili.com/video/BV1QTgJ6vEdB/"
+      },
+      {
+        "song_name": "青鸟衔风",
+        "sing_time": "",
+        "statuses": [
+          "歌切直补",
+          "待原始回放定位"
+        ],
+        "artist": "海伊 / 诗岸",
+        "replay_id": "BV1mwuz62EfH",
+        "replay_title": "【小松绿Viridis】《青鸟衔风》",
+        "replay_url": "https://www.bilibili.com/video/BV1mwuz62EfH/",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "青鸟衔风",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-title",
+        "cut_link": "https://www.bilibili.com/video/BV1mwuz62EfH/"
       },
       {
         "song_name": "三月雨",
@@ -3941,7 +3980,7 @@ window.XSL_DATA = {
   song_details: {
   "roomKey": "xiaosonglu",
   "roomId": "1727071052",
-  "generatedAt": "2026-08-25T15:30:09.570Z",
+  "generatedAt": "2026-08-25T15:36:57.729Z",
   "source": "local-replay-ingestion",
   "bySongKey": {
     "少女レイ": {
@@ -6443,6 +6482,31 @@ window.XSL_DATA = {
           "cut_link": "https://www.bilibili.com/video/BV1Msg56SEuV/"
         }
       ]
+    },
+    "青鸟衔风": {
+      "row_key": "青鸟衔风",
+      "song_name": "青鸟衔风",
+      "display_song_name": "青鸟衔风",
+      "artist": "海伊 / 诗岸",
+      "cut_link": "https://www.bilibili.com/video/BV1mwuz62EfH/",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-08-11",
+          "time": "",
+          "end_time": "",
+          "status": "歌切直补、待原始回放定位",
+          "artist": "海伊 / 诗岸",
+          "replay_id": "BV1mwuz62EfH",
+          "replay_title": "【小松绿Viridis】《青鸟衔风》",
+          "replay_url": "https://www.bilibili.com/video/BV1mwuz62EfH/",
+          "remark": "歌切标题《【小松绿Viridis】《青鸟衔风》》（UP 天生就喜欢笑，简介 20260811）。萌百核实：忘川风华录 2019-12-14 投稿 Synthesizer V 中文原创，海伊与诗岸演唱（慕清明作词、PoKeR 作曲）。按 song-cut-first 规则收录。",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-title",
+          "replay_date_source": "cut-title-date",
+          "cut_link": "https://www.bilibili.com/video/BV1mwuz62EfH/"
+        }
+      ]
     }
   }
 },
@@ -6452,7 +6516,7 @@ window.XSL_DATA = {
   "generatedAt": "2026-08-22T15:36:59.183Z",
   "source": "song-cut-audio-download",
   "description": "每首歌对应的翻唱切片音频（从 B 站歌切/回放下载），供网页在线播放。",
-  "count": 97,
+  "count": 98,
   "audios": {
     "勾指起誓": "assets/audio/song_88.m4a",
     "寄明月": "assets/audio/song_02.m4a",
@@ -6550,7 +6614,8 @@ window.XSL_DATA = {
     "夏恋慕": "assets/audio/song_95.m4a",
     "恋苦": "assets/audio/song_96.m4a",
     "光": "assets/audio/song_97.m4a",
-    "月巷": "assets/audio/song_98.m4a"
+    "月巷": "assets/audio/song_98.m4a",
+    "青鸟衔风": "assets/audio/song_99.m4a"
   }
 },
   song_cut_info: {

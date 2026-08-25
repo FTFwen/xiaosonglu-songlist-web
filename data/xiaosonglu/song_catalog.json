@@ -1,7 +1,7 @@
 {
   "roomKey": "xiaosonglu",
   "roomId": "1727071052",
-  "generatedAt": "2026-08-25T15:30:09.570Z",
+  "generatedAt": "2026-08-25T15:36:57.729Z",
   "source": "local-replay-ingestion",
   "songs": [
     {
@@ -948,6 +948,27 @@
       "status_labels": "清唱、自动识别待人工复核",
       "last_sing_at": "2026-08-23",
       "row_key": "栖凰"
+    },
+    {
+      "song_id": 98,
+      "song_name": "青鸟衔风",
+      "show_as_song_name": "",
+      "display_song_name": "青鸟衔风",
+      "artist": "海伊 / 诗岸",
+      "artist_search": "青鸟衔风 海伊 诗岸",
+      "feat_artist": "",
+      "remark": "歌切标题《【小松绿Viridis】《青鸟衔风》》（UP 天生就喜欢笑，简介 20260811）。萌百核实：忘川风华录 2019-12-14 投稿 Synthesizer V 中文原创，海伊与诗岸演唱（慕清明作词、PoKeR 作曲）。按 song-cut-first 规则收录。",
+      "tone": "",
+      "language": "中文",
+      "type": "忘川风华录、国风",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1mwuz62EfH/",
+      "sing_count": 1,
+      "status_labels": "歌切直补、待原始回放定位",
+      "last_sing_at": "2026-08-11",
+      "row_key": "青鸟衔风"
     },
     {
       "song_id": 16,

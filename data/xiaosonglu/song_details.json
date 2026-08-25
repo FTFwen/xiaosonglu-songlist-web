@@ -1,7 +1,7 @@
 {
   "roomKey": "xiaosonglu",
   "roomId": "1727071052",
-  "generatedAt": "2026-08-25T15:30:09.570Z",
+  "generatedAt": "2026-08-25T15:36:57.729Z",
   "source": "local-replay-ingestion",
   "bySongKey": {
     "少女レイ": {
@@ -2501,6 +2501,31 @@
           "song_resolution_method": "song-cut-title",
           "replay_date_source": "cut-title-date",
           "cut_link": "https://www.bilibili.com/video/BV1Msg56SEuV/"
+        }
+      ]
+    },
+    "青鸟衔风": {
+      "row_key": "青鸟衔风",
+      "song_name": "青鸟衔风",
+      "display_song_name": "青鸟衔风",
+      "artist": "海伊 / 诗岸",
+      "cut_link": "https://www.bilibili.com/video/BV1mwuz62EfH/",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-08-11",
+          "time": "",
+          "end_time": "",
+          "status": "歌切直补、待原始回放定位",
+          "artist": "海伊 / 诗岸",
+          "replay_id": "BV1mwuz62EfH",
+          "replay_title": "【小松绿Viridis】《青鸟衔风》",
+          "replay_url": "https://www.bilibili.com/video/BV1mwuz62EfH/",
+          "remark": "歌切标题《【小松绿Viridis】《青鸟衔风》》（UP 天生就喜欢笑，简介 20260811）。萌百核实：忘川风华录 2019-12-14 投稿 Synthesizer V 中文原创，海伊与诗岸演唱（慕清明作词、PoKeR 作曲）。按 song-cut-first 规则收录。",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-title",
+          "replay_date_source": "cut-title-date",
+          "cut_link": "https://www.bilibili.com/video/BV1mwuz62EfH/"
         }
       ]
     }
