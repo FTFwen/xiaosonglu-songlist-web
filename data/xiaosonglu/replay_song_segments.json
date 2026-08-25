@@ -3,7 +3,7 @@
   "roomId": "1727071052",
   "sourceType": "bilibili-live-replay-song-segments",
   "description": "从小松绿直播回放中识别出的唱歌片段原始记录。由每日自动化或人工补录维护，随后通过 scripts/build_xiaosonglu_song_data.js 聚合成插件可直接读取的歌单与历史数据。歌名允许先根据歌词片段联网检索后再补全，回放日期允许先留空并由脚本从回放标题中解析。",
-  "updatedAt": "2026-08-24T16:28:24.210Z",
+  "updatedAt": "2026-08-25T15:30:09.570Z",
   "segments": [
     {
       "replay_id": "BV1Xiu86aEwV",
@@ -3914,28 +3914,78 @@
       "song_resolution_method": "song-cut-chapter + web-verify",
       "song_name": "光",
       "display_song_name": "光",
-      "artist": "ventus / 星尘Infinity",
-      "artist_search": "光 ventus 星尘",
+      "artist": "Kide / Ddickky / 星尘",
+      "artist_search": "光 Kide Ddickky 星尘",
       "feat_artist": "",
       "language": "中文",
       "tone": "",
       "status_labels": [
         "清唱",
+        "歌切章节验证",
         "自动识别待人工复核"
       ],
       "display_version": "",
-      "type": "中V、原创",
-      "remark": "来自 2026-08-23 行道树投稿回（2）清唱加演段，歌切合集《【小松绿Viridis】20260823 歌切》分P《光》（心灵火Flame）。VocaDB核实：ventus feat. 星尘Infinity（Cover）。弹幕\"还有《光》\"\"星尘专场吗这是\"印证。",
+      "type": "Synthesizer V、中文Vocaloid",
+      "remark": "来自 2026-08-23 行道树投稿回（2）清唱加演段，歌切合集《【小松绿Viridis】20260823 歌切》分P《光》（心灵火Flame，04:10）与忆夏追凉单切（BV1ZH8Y6wEAw，04:21）双重印证。原曲核实：星尘「光」为2021-08-12星尘诞生日5周年曲，作曲/编曲Kide、作词Ddickky（平行四界），原曲BV1K64y1z71C（04:16），歌切时长与原曲吻合；弹幕\"还有《光》\"\"星尘专场吗这是\"（流霰/栖凰/恋苦同为星尘曲）印证。此前误记为ventus/星尘Infinity，本轮修正为Kide/Ddickky/星尘。",
       "identification": "",
       "cut_link": "https://www.bilibili.com/video/BV1m9886kEMZ/?p=4",
-      "confidence": 0.7,
+      "confidence": 0.85,
       "row_key": "光",
       "search_name": "",
       "resolution_candidates": [
         {
           "title": "歌切合集分P",
           "url": "https://www.bilibili.com/video/BV1m9886kEMZ/?p=4",
-          "snippet": "20260823 歌切 分P4 光"
+          "snippet": "20260823 歌切 分P4 光（心灵火Flame，04:10）"
+        },
+        {
+          "title": "单曲歌切",
+          "url": "https://www.bilibili.com/video/BV1ZH8Y6wEAw/",
+          "snippet": "【小松绿Viridis】《光》忆夏追凉（04:21），弹幕\"还有《光》\"\"星尘专场吗这是\"印证"
+        },
+        {
+          "title": "原曲",
+          "url": "https://www.bilibili.com/video/BV1K64y1z71C/",
+          "snippet": "星尘「光」2021-08-12星尘诞生日5周年曲，作曲/编曲Kide、作词Ddickky（04:16），歌切时长吻合"
+        }
+      ]
+    },
+    {
+      "replay_id": "BV1Msg56SEuV",
+      "replay_title": "【小松绿Viridis|歌切】月巷 8.12",
+      "replay_url": "https://www.bilibili.com/video/BV1Msg56SEuV/",
+      "replay_date": "2026-08-12",
+      "replay_date_source": "cut-title-date",
+      "segment_index": 1,
+      "start_time": "",
+      "end_time": "",
+      "lyric_excerpt": "",
+      "song_search_query": "月巷",
+      "song_resolution_method": "song-cut-title",
+      "song_name": "月巷",
+      "display_song_name": "月巷",
+      "artist": "乐正绫",
+      "artist_search": "月巷 乐正绫",
+      "feat_artist": "",
+      "language": "中文",
+      "tone": "",
+      "status_labels": [
+        "歌切直补",
+        "待原始回放定位"
+      ],
+      "display_version": "",
+      "type": "中V、国风",
+      "remark": "歌切标题《【小松绿Viridis|歌切】月巷 8.12》（UP 银河的鱼，2026-08-12 发布）。vcpedia 核实：《月巷》中文原创歌曲，乐正绫演唱，2024 虚拟歌手贺岁纪单品，另有祈Inory人声本家。按 song-cut-first 规则收录。",
+      "identification": "",
+      "cut_link": "https://www.bilibili.com/video/BV1Msg56SEuV/",
+      "confidence": 0.7,
+      "row_key": "月巷",
+      "search_name": "",
+      "resolution_candidates": [
+        {
+          "title": "【小松绿Viridis|歌切】月巷 8.12",
+          "url": "https://www.bilibili.com/video/BV1Msg56SEuV/",
+          "snippet": "歌切标题含\"月巷 8.12\"，发布 2026-08-12。"
         }
       ]
     }

@@ -1,7 +1,7 @@
 {
   "roomKey": "xiaosonglu",
   "roomId": "1727071052",
-  "generatedAt": "2026-08-24T16:28:24.210Z",
+  "generatedAt": "2026-08-25T15:30:09.570Z",
   "source": "local-replay-ingestion",
   "latest": {
     "year": "2026",
@@ -13,7 +13,7 @@
       "08": {
         "10": 3,
         "11": 14,
-        "12": 1,
+        "12": 2,
         "15": 10,
         "18": 24,
         "20": 20,
@@ -743,6 +743,24 @@
         "lyric_excerpt": "",
         "song_resolution_method": "song-cut-title",
         "cut_link": "https://www.bilibili.com/video/BV1WGbk6KESs/"
+      },
+      {
+        "song_name": "月巷",
+        "sing_time": "",
+        "statuses": [
+          "歌切直补",
+          "待原始回放定位"
+        ],
+        "artist": "乐正绫",
+        "replay_id": "BV1Msg56SEuV",
+        "replay_title": "【小松绿Viridis|歌切】月巷 8.12",
+        "replay_url": "https://www.bilibili.com/video/BV1Msg56SEuV/",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "月巷",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-title",
+        "cut_link": "https://www.bilibili.com/video/BV1Msg56SEuV/"
       }
     ],
     "2026-08-15": [
@@ -1783,9 +1801,10 @@
         "sing_time": "02:33:30",
         "statuses": [
           "清唱",
+          "歌切章节验证",
           "自动识别待人工复核"
         ],
-        "artist": "ventus / 星尘Infinity",
+        "artist": "Kide / Ddickky / 星尘",
         "replay_id": "BV1758h6FEmv",
         "replay_title": "【小松绿Viridis】行道树投稿回（2）-2026年08月23日21点场",
         "replay_url": "https://www.bilibili.com/video/BV1758h6FEmv/",

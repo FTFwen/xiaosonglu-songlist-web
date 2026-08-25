@@ -47,3 +47,31 @@ liveId：`907b2835-53cf-4885-9691-2d6cbd3d41ea`（ukamnads.icu /api/v2/channel �
 1. **部署待人工重新授权**：`node E:\tool\plugin\xsl-web-tools\cloudflare_device_login.cjs` 设备流授权后重跑 `deploy_web.ps1`（web-deploy 已就绪，无需重同步）。
 2. 可惜夜 歌手"凪"待复核；拥抱你/光/desert 未收录待人工听录确认。
 3. B站搜索 API 自 8/24 起持续风控（HTML 验证页），后续检索需等待解除或换通道。
+
+---
+
+## 六、2026-08-24 晚间复查（本轮追加，19:57-20:05 UTC+8）
+
+### 检查结论
+
+1. **频道场次复核**：`/api/v2/channel?uid=1891335475` 仍为 24 场（08-07~08-23），isLiving=false，
+   lastLiveDate=2026-08-24T00:08+08。08-23 之后无新场次 → 无新弹幕可拉、无新曲目可识别。
+2. **部署复查**：重跑 `deploy_web.ps1` → **仍失败**，Cloudflare OAuth `invalid_grant`（refresh token 已被吊销，
+   工作区缓存 `.wrangler-auth.json` 有效期止于 2026-08-22T03:49Z）。遗留项 #1 仍有效，需人工设备授权。
+3. **数据回归修复（本轮发现并处理）**：对比线上（88 首）与本地重建（96 首）catalog 发现「YOU & IDOL」
+   （2026-08-10 练歌小电，用户补充条目，BV1P6ud6dEkm，相対性理論，音频 song_89.m4a 已部署）在本次重建中
+   意外掉出——其 user-supplied segment 已不在 replay_song_segments.json，但 audio_index / song_cut_info /
+   旧 song_details（songplg 08-21 产物）仍保留该曲，且线上一直展示。判定为意外丢失（无任何删除留档），
+   已按旧产物恢复 segment（scripts/restore_you_idol_segment.cjs）并重建。
+4. **数据现状（本地 + web-deploy 已同步）**：catalog **97 首**（88 线上 - 0 移除 + 9 新 + 1 恢复）、
+   segments **102 条**、cut_index 98 条、history byDate 10 天（含 08-23 ×9）、cut_table 98 数据行（无 YOU & IDOL 行，与旧版一致）、
+   song_details bySongKey 97。js\data.js 已重新生成（300777 字节）。
+5. **线上现状**：viridis.love 仍为 08-21 构建（catalog 88 首 / history 9 天），待授权后部署即更新。
+
+### 遗留项（维持）
+
+1. **部署待人工重新授权**：`node E:\tool\plugin\xsl-web-tools\cloudflare_device_login.cjs`
+   （或工作区缓存版 `cloudflare_device_login_cache.cjs`，token 写入 `.wrangler-auth.json`，deploy_pages.cjs 优先读取）
+   完成授权后重跑 `deploy_web.ps1`。web-deploy 已就绪（97 首），无需重同步。
+2. 可惜夜 歌手"凪"待复核；拥抱你/光/desert 未收录待人工听录确认。
+3. B站搜索 API 风控（HTML 验证页）持续，后续检索需等待解除或换通道。
