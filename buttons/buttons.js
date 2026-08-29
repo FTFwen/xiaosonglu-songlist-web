@@ -120,6 +120,18 @@
   let data = loadData();
   let isAdmin = sessionStorage.getItem('xsl:buttons:authed') === '1';
 
+  // ===== 分类排序 =====
+  // 「其他」默认分类永远排最后，其余保持原序
+  function orderedCats() {
+    const cats = data.cats.slice();
+    const idx = cats.findIndex(c => c.id === OTHER_CAT_ID);
+    if (idx >= 0) {
+      const [other] = cats.splice(idx, 1);
+      cats.push(other);
+    }
+    return cats;
+  }
+
   // ===== DOM =====
   const el = id => document.getElementById(id);
   const wall = el('wall');
@@ -131,7 +143,7 @@
   // ===== 渲染：垂直分组列表 =====
   function renderWall() {
     wall.innerHTML = '';
-    data.cats.forEach((cat, ci) => {
+    orderedCats().forEach((cat, ci) => {
       const list = data.buttons.filter(b => b.cat === cat.id);
       const section = document.createElement('section');
       section.className = 'cat-section';
@@ -592,18 +604,31 @@
   }
 
   // ===== 分类管理 =====
+  // 后台分类条目的拖拽排序：「其他」恒在最后且不可拖动
+  let catDragSrc = null; // 正在拖动的分类 id
+
   function renderCatAdmin() {
     const list = el('catAdminList');
     list.innerHTML = '';
-    data.cats.forEach(cat => {
+    const cats = orderedCats();
+    cats.forEach((cat, ci) => {
       const isOther = cat.id === OTHER_CAT_ID;
       const item = document.createElement('div');
-      item.className = 'admin-item';
+      item.className = 'admin-item cat-admin-item';
+      item.dataset.cat = cat.id;
+      if (isOther) item.classList.add('cat-last');
+      // 「其他」不可拖动；其余可拖
+      const dragHandle = isOther
+        ? '<span class="cat-drag-handle disabled" title="默认分类固定最后"><svg class="icon" aria-hidden="true"><use href="#icon-grip"></use></svg></span>'
+        : '<span class="cat-drag-handle" title="拖动调整分类顺序" draggable="true"><svg class="icon" aria-hidden="true"><use href="#icon-grip"></use></svg></span>';
       item.innerHTML = `
+        ${dragHandle}
         <span class="nm">${esc(cat.name)}</span>
         <span class="grow"></span>
         ${isOther ? '<span class="ds">默认</span>' : `<button class="btn-x danger" data-del-cat="${cat.id}">删除</button>`}
       `;
+
+      // 删除分类
       const delBtn = item.querySelector('[data-del-cat]');
       if (delBtn) delBtn.addEventListener('click', () => {
         // 删除分类后，其按钮自动归入"其他"
@@ -613,12 +638,54 @@
         // 确保"其他"存在
         if (!data.cats.some(c => c.id === OTHER_CAT_ID)) data.cats.push({ id: OTHER_CAT_ID, name: '其他' });
         saveData(data);
-        const msg = moved ? `分类已删除，${moved} 个按钮归入「其他」` : '分类已删除';
-        renderWall(); renderCatAdmin();  fillCatSelect();
-        toast(msg);
+        renderWall(); renderCatAdmin(); fillCatSelect();
+        toast(moved ? `分类已删除，${moved} 个按钮归入「其他」` : '分类已删除');
       });
+
+      // 拖拽排序（仅非「其他」分类）
+      const handle = item.querySelector('.cat-drag-handle');
+      if (handle && !isOther) {
+        handle.addEventListener('dragstart', e => {
+          catDragSrc = cat.id;
+          item.classList.add('dragging');
+          e.dataTransfer.effectAllowed = 'move';
+          e.dataTransfer.setData('text/plain', cat.id);
+        });
+        handle.addEventListener('dragend', () => {
+          item.classList.remove('dragging');
+          catDragSrc = null;
+        });
+      }
+
+      // 作为落点：拖到另一个分类条目上 → 重新排序
+      item.addEventListener('dragover', e => { if (catDragSrc && !isOther) { e.preventDefault(); item.classList.add('drop-over'); } });
+      item.addEventListener('dragleave', () => item.classList.remove('drop-over'));
+      item.addEventListener('drop', e => {
+        e.preventDefault();
+        item.classList.remove('drop-over');
+        if (!catDragSrc || catDragSrc === cat.id || isOther) return;
+        reorderCat(catDragSrc, cat.id);
+        catDragSrc = null;
+        saveData(data);
+        renderWall(); renderCatAdmin(); fillCatSelect();
+        toast('分类顺序已更新');
+      });
+
       list.appendChild(item);
     });
+  }
+
+  // 把 fromId 分类移动到 toId 分类的位置（toId 之前），「其他」始终固定末尾
+  function reorderCat(fromId, toId) {
+    const other = data.cats.find(c => c.id === OTHER_CAT_ID);
+    const rest = data.cats.filter(c => c.id !== OTHER_CAT_ID);
+    const from = rest.findIndex(c => c.id === fromId);
+    const to = rest.findIndex(c => c.id === toId);
+    if (from < 0 || to < 0) return;
+    const [moved] = rest.splice(from, 1);
+    const toIdx = rest.findIndex(c => c.id === toId);
+    rest.splice(toIdx, 0, moved);
+    data.cats = other ? rest.concat([other]) : rest;
   }
 
   // ===== 按钮管理（含上传 + 拖拽改分类）=====
@@ -626,7 +693,7 @@
     const sel = el('newBtnCat');
     const cur = sel.value || (data.cats[0] && data.cats[0].id);
     sel.innerHTML = '';
-    data.cats.forEach(cat => {
+    orderedCats().forEach(cat => {
       const opt = document.createElement('option');
       opt.value = cat.id;
       opt.textContent = cat.name;
