@@ -400,6 +400,31 @@
       transition: all 0.18s ease;
     }
     .player-bar .pb-close:hover { background: var(--danger-soft); color: var(--danger); }
+    .player-bar .pb-stop,
+    .player-bar .pb-mode {
+      border: 1px solid var(--line-strong);
+      background: #fff;
+      color: var(--text-soft);
+      border-radius: 999px;
+      padding: 6px 12px;
+      font-size: 12px;
+      cursor: pointer;
+      flex-shrink: 0;
+      transition: all 0.18s ease;
+    }
+    .player-bar .pb-stop:hover { border-color: var(--danger); color: var(--danger); background: var(--danger-soft); }
+    .player-bar .pb-mode:hover,
+    .player-bar .pb-mode.single { border-color: var(--primary); color: var(--primary-dark); background: var(--primary-soft); }
+    .player-bar .pb-vol {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      flex-shrink: 0;
+    }
+    .player-bar .pb-vol input[type=range] {
+      width: 70px;
+      accent-color: var(--primary);
+    }
   </style>
 </head>
 <body>
@@ -417,7 +442,13 @@
       <div class="pb-name" id="pbName">—</div>
       <div class="pb-progress-wrap"><div class="pb-progress" id="pbProgress"></div></div>
     </div>
-    <div class="pb-time" id="pbTime">0:00</div>
+    <div class="pb-time" id="pbTime">0.0 / 0.0s</div>
+    <button class="pb-stop" id="pbStopBtn" title="停止播放">⏹ 停止</button>
+    <button class="pb-mode" id="pbModeBtn" title="播放模式：顺序播放，点击切换为单曲循环">🔁 顺序</button>
+    <div class="pb-vol" title="音量">
+      <span>🔊</span>
+      <input type="range" id="pbVolume" min="0" max="100" value="100">
+    </div>
     <button class="pb-close" id="pbCloseBtn" title="关闭">✕</button>
   </div>
 
@@ -471,6 +502,6 @@
 
   <audio id="audioPlayer" preload="none"></audio>
 
-  <script src="buttons.js?v=6"></script>
+  <script src="buttons.js?v=7"></script>
 </body>
 </html>

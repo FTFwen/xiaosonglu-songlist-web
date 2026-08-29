@@ -141,18 +141,20 @@
 
   // ===== 播放音效 + 顶部播放条 =====
   let currentBtn = null; // 当前播放的按钮
+  let playMode = 'sequence'; // sequence | single
   const playerBar = el('playerBar');
   const pbName = el('pbName');
   const pbPlay = el('pbPlayBtn');
+  const pbStop = el('pbStopBtn');
+  const pbMode = el('pbModeBtn');
   const pbProgress = el('pbProgress');
   const pbTime = el('pbTime');
   const pbClose = el('pbCloseBtn');
+  const pbVolume = el('pbVolume');
 
-  function fmtTime(s) {
+  function fmtSec(s) {
     if (!Number.isFinite(s) || s < 0) s = 0;
-    const m = Math.floor(s / 60);
-    const sec = Math.floor(s % 60);
-    return `${m}:${String(sec).padStart(2, '0')}`;
+    return s.toFixed(1);
   }
 
   function updatePlayerUI() {
@@ -161,13 +163,14 @@
     const dur = audioPlayer.duration || 0;
     const cur = audioPlayer.currentTime || 0;
     pbProgress.style.width = dur > 0 ? `${(cur / dur) * 100}%` : '0%';
-    pbTime.textContent = `${fmtTime(cur)} / ${fmtTime(dur)}`;
+    pbTime.textContent = `${fmtSec(cur)} / ${fmtSec(dur)}s`;
   }
 
   function showPlayer(btn) {
     currentBtn = btn;
     pbName.textContent = btn.name + (btn.desc ? ` · ${btn.desc}` : '');
     playerBar.classList.add('show');
+    renderModeBtn();
     updatePlayerUI();
     // 控制条目高亮
     document.querySelectorAll('.sound-btn.playing').forEach(c => c.classList.remove('playing'));
@@ -182,6 +185,12 @@
     audioPlayer.load();
     playerBar.classList.remove('show');
     document.querySelectorAll('.sound-btn.playing').forEach(c => c.classList.remove('playing'));
+  }
+
+  function renderModeBtn() {
+    pbMode.textContent = playMode === 'single' ? '🔂 单曲循环' : '🔁 顺序';
+    pbMode.classList.toggle('single', playMode === 'single');
+    pbMode.title = playMode === 'single' ? '播放模式：单曲循环，点击切换为顺序播放' : '播放模式：顺序播放，点击切换为单曲循环';
   }
 
   function playSound(btn, card) {
@@ -220,6 +229,19 @@
     if (audioPlayer.paused) audioPlayer.play().catch(() => {});
     else audioPlayer.pause();
   });
+  pbStop.addEventListener('click', () => {
+    audioPlayer.pause();
+    audioPlayer.currentTime = 0;
+    updatePlayerUI();
+  });
+  pbMode.addEventListener('click', () => {
+    playMode = playMode === 'single' ? 'sequence' : 'single';
+    renderModeBtn();
+    toast(playMode === 'single' ? '已切换：单曲循环' : '已切换：顺序播放');
+  });
+  pbVolume.addEventListener('input', () => {
+    audioPlayer.volume = Number(pbVolume.value) / 100;
+  });
   pbClose.addEventListener('click', hidePlayer);
   audioPlayer.addEventListener('timeupdate', updatePlayerUI);
   audioPlayer.addEventListener('loadedmetadata', updatePlayerUI);
@@ -228,7 +250,13 @@
   audioPlayer.addEventListener('ended', () => {
     updatePlayerUI();
     document.querySelectorAll('.sound-btn.playing').forEach(c => c.classList.remove('playing'));
+    // 单曲循环时重播当前
+    if (playMode === 'single' && currentBtn) {
+      audioPlayer.currentTime = 0;
+      audioPlayer.play().catch(() => {});
+    }
   });
+  audioPlayer.volume = 1; // 默认音量
 
   // ===== 轻提示 =====
   let toastTimer = null;
