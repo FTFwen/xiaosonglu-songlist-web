@@ -116,17 +116,17 @@
     .cat-count { font-size: 12px; color: var(--text-soft); }
 
     /* 垂直按钮列表：一条一条的横向卡片 */
-    .btn-list { display: flex; flex-direction: column; gap: 10px; }
+    .btn-list { display: flex; flex-wrap: wrap; gap: 10px; }
     .sound-btn {
-      display: flex;
+      display: inline-flex;
       align-items: center;
-      justify-content: space-between;
-      gap: 14px;
-      width: 100%;
+      gap: 10px;
+      width: auto;
+      max-width: 100%;
       border: 1px solid var(--line);
       background: var(--surface);
       border-radius: 12px;
-      padding: 13px 16px;
+      padding: 10px 14px;
       cursor: pointer;
       text-align: left;
       transition: all 0.18s ease;
@@ -138,13 +138,13 @@
     .sound-btn:hover {
       border-color: var(--primary);
       box-shadow: 0 8px 20px rgba(122, 136, 70, 0.16);
-      transform: translateX(3px);
+      transform: translateY(-2px);
     }
-    .sound-btn:active { transform: scale(0.985); }
+    .sound-btn:active { transform: scale(0.97); }
     .sound-btn.playing { border-color: var(--primary); background: var(--primary-soft); }
 
-    .sb-main { flex: 1; min-width: 0; }
-    .sb-name { font-size: 15px; font-weight: 700; line-height: 1.3; }
+    .sb-main { min-width: 0; }
+    .sb-name { font-size: 15px; font-weight: 700; line-height: 1.3; white-space: nowrap; }
     /* 时长：右侧灰色小字，参考站"1s"样式 */
     .sb-dur {
       font-size: 12px;
@@ -549,6 +549,6 @@
 
   <audio id="audioPlayer" preload="none"></audio>
 
-  <script src="buttons.js?v=10"></script>
+  <script src="buttons.js?v=11"></script>
 </body>
 </html>
