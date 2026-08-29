@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>小松绿按钮墙</title>
+  <link rel="icon" href="../assets/xiaosonglu-bubble.png" type="image/png">
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f4f6e8;
+      --surface: #ffffff;
+      --surface-soft: #f7f9ec;
+      --line: #e3e8c8;
+      --line-strong: #c3cd9a;
+      --text: #3d4630;
+      --text-soft: #7d865f;
+      --primary: #8a9a4e;
+      --primary-dark: #6f7d3d;
+      --primary-soft: #eef1d6;
+      --danger: #d9536f;
+      --danger-soft: #ffe7ec;
+      --warning: #b57d1c;
+      --warning-soft: #fdf3e0;
+      --shadow: 0 12px 36px rgba(122, 136, 70, 0.16);
+      --moon: #c8c898;
+      --cream: #f8f8e8;
+      --peach: #e8b890;
+    }
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Microsoft YaHei', 'Segoe UI', sans-serif;
+      min-height: 100vh;
+    }
+
+    /* 头部横幅 */
+    .banner {
+      background: linear-gradient(135deg, #8a9a4e, #6f7d3d);
+      color: #fff;
+      padding: 26px 20px 20px;
+      text-align: center;
+      box-shadow: 0 6px 20px rgba(122, 136, 70, 0.3);
+      position: relative;
+    }
+    .banner h1 {
+      font-family: 'Microsoft YaHei', sans-serif;
+      font-size: 30px;
+      margin: 0 0 6px;
+      letter-spacing: 0.04em;
+      text-shadow: 0 2px 4px rgba(72, 82, 40, 0.4);
+    }
+    .banner .sub { font-size: 13px; opacity: 0.9; }
+
+    /* 管理员登录键 */
+    .admin-login-btn {
+      position: absolute;
+      right: 14px;
+      top: 14px;
+      border: 1px solid rgba(255,255,255,0.4);
+      background: rgba(255,255,255,0.14);
+      color: #fff;
+      border-radius: 999px;
+      padding: 6px 14px;
+      font-size: 12px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+    .admin-login-btn:hover { background: rgba(255,255,255,0.28); }
+
+    /* 分类导航 */
+    .cats-nav {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 18px 14px 6px;
+    }
+    .cat-tab {
+      border: 1px solid var(--line-strong);
+      background: #fff;
+      color: var(--text-soft);
+      border-radius: 999px;
+      padding: 8px 20px;
+      font-size: 14px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+    .cat-tab.active {
+      background: var(--primary);
+      color: #fff;
+      border-color: var(--primary);
+      box-shadow: 0 4px 14px rgba(122, 136, 70, 0.3);
+    }
+    .cat-tab:hover:not(.active) { border-color: var(--primary); color: var(--primary-dark); }
+
+    /* 按钮网格 */
+    .btn-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: 14px;
+      padding: 18px 20px 40px;
+      max-width: 1080px;
+      margin: 0 auto;
+    }
+    .sound-btn {
+      position: relative;
+      border: 1px solid var(--line);
+      background: var(--surface);
+      border-radius: 16px;
+      padding: 20px 14px;
+      cursor: pointer;
+      text-align: center;
+      transition: all 0.18s ease;
+      box-shadow: 0 6px 18px rgba(122, 136, 70, 0.1);
+      overflow: hidden;
+      color: var(--text);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+    }
+    .sound-btn:hover {
+      transform: translateY(-3px);
+      border-color: var(--primary);
+      box-shadow: 0 12px 26px rgba(122, 136, 70, 0.2);
+    }
+    .sound-btn:active { transform: scale(0.95); }
+    .sound-btn .icon {
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      background: var(--primary-soft);
+      color: var(--primary-dark);
+      display: grid;
+      place-items: center;
+      font-size: 16px;
+      transition: all 0.18s ease;
+    }
+    .sound-btn.playing .icon { background: var(--primary); color: #fff; animation: pulse 1s ease infinite; }
+    .sound-btn .name { font-size: 15px; font-weight: 700; line-height: 1.3; }
+    .sound-btn .desc { font-size: 11px; color: var(--text-soft); line-height: 1.4; }
+    .sound-btn .playing-bar {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--primary), var(--peach));
+      width: 0%;
+    }
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.15); }
+    }
+
+    /* 空状态 */
+    .empty-hint {
+      text-align: center;
+      color: var(--text-soft);
+      padding: 50px 20px;
+      font-size: 14px;
+      line-height: 1.8;
+    }
+
+    /* ===== 管理员后台 ===== */
+    .admin-panel {
+      position: fixed;
+      inset: 0;
+      background: rgba(40, 48, 24, 0.55);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 100;
+      backdrop-filter: blur(3px);
+    }
+    .admin-panel.show { display: flex; }
+    .admin-card {
+      background: #fff;
+      border-radius: 18px;
+      padding: 22px 24px;
+      width: min(480px, calc(100vw - 28px));
+      max-height: 88vh;
+      overflow-y: auto;
+      box-shadow: var(--shadow);
+    }
+    .admin-card h2 { margin: 0 0 16px; font-size: 18px; color: var(--text); }
+
+    /* 登录表单 */
+    .login-form { display: flex; flex-direction: column; gap: 10px; }
+    .login-form input {
+      border: 1px solid var(--line-strong);
+      border-radius: 10px;
+      padding: 10px 12px;
+      font-size: 14px;
+      outline: none;
+    }
+    .login-form input:focus { border-color: var(--primary); box-shadow: 0 0 0 3px rgba(138, 154, 78, 0.15); }
+    .auth-err { color: var(--danger); font-size: 12px; min-height: 16px; }
+
+    /* 后台按钮 */
+    .btn-row { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 10px; }
+    .btn-x {
+      border: 1px solid var(--line-strong);
+      background: #fff;
+      color: var(--text-soft);
+      border-radius: 10px;
+      padding: 8px 14px;
+      font-size: 13px;
+      cursor: pointer;
+      transition: all 0.18s ease;
+    }
+    .btn-x.primary { background: var(--primary); border-color: var(--primary); color: #fff; }
+    .btn-x.danger { background: var(--danger-soft); border-color: #f7b8c3; color: #bc435d; }
+    .btn-x.warn { background: var(--warning-soft); border-color: #f3d19e; color: #a76b11; }
+    .btn-x:hover { opacity: 0.88; }
+
+    /* 后台内容区域 */
+    .admin-sec-title { font-size: 14px; color: var(--text); margin: 18px 0 8px; font-weight: 700; }
+    .admin-toolbar { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 8px; }
+    .admin-input, .admin-textarea {
+      border: 1px solid var(--line-strong);
+      border-radius: 10px;
+      padding: 8px 10px;
+      font-size: 13px;
+      outline: none;
+      width: 100%;
+      margin-bottom: 6px;
+      font-family: inherit;
+    }
+    .admin-input:focus, .admin-textarea:focus { border-color: var(--primary); }
+    .admin-textarea { min-height: 60px; resize: vertical; }
+    .admin-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 10px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      margin-bottom: 6px;
+      background: var(--surface-soft);
+    }
+    .admin-item .grow { flex: 1; min-width: 0; }
+    .admin-item .nm { font-weight: 700; font-size: 13px; }
+    .admin-item .ds { font-size: 11px; color: var(--text-soft); }
+    .admin-item select, .admin-item input {
+      border: 1px solid var(--line-strong);
+      border-radius: 8px;
+      padding: 5px 7px;
+      font-size: 12px;
+      min-width: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="banner">
+    <h1>小松绿 · 按钮墙</h1>
+    <div class="sub">点一下，听听小松绿的声音～</div>
+    <button class="admin-login-btn" id="adminLoginBtn">⚙ 管理员</button>
+  </div>
+
+  <nav class="cats-nav" id="catsNav"></nav>
+
+  <main class="btn-grid" id="btnGrid"></main>
+  <div class="empty-hint" id="emptyHint" style="display:none;">这个分类还没有按钮～</div>
+
+  <!-- 管理员面板 -->
+  <div class="admin-panel" id="adminPanel">
+    <div class="admin-card">
+      <h2 id="adminCardTitle">管理员登录</h2>
+
+      <!-- 登录表单 -->
+      <div class="login-form" id="loginForm">
+        <input type="text" id="loginUser" placeholder="用户名" autocomplete="off">
+        <input type="password" id="loginPass" placeholder="密码">
+        <div class="auth-err" id="authErr"></div>
+        <div class="btn-row">
+          <button class="btn-x primary" id="loginBtn">登录</button>
+          <button class="btn-x" id="cancelLoginBtn">取消</button>
+        </div>
+      </div>
+
+      <!-- 后台管理 -->
+      <div id="adminBody" style="display:none;">
+        <div class="admin-sec-title">分类管理</div>
+        <div class="admin-toolbar">
+          <input type="text" class="admin-input" id="newCatName" placeholder="新分类名">
+          <button class="btn-x primary" id="addCatBtn">+ 添加分类</button>
+        </div>
+        <div id="catAdminList"></div>
+
+        <div class="admin-sec-title">按钮管理</div>
+        <div class="admin-toolbar">
+          <input type="text" class="admin-input" id="newBtnName" placeholder="按钮标题">
+          <input type="text" class="admin-input" id="newBtnDesc" placeholder="副文案(可选)">
+          <input type="text" class="admin-input" id="newBtnAudio" placeholder="音频文件 (assets/audio/xx.mp3)">
+          <select class="admin-input" id="newBtnCat"></select>
+          <button class="btn-x primary" id="addBtnBtn">+ 添加按钮</button>
+        </div>
+        <div id="btnAdminList"></div>
+
+        <div class="btn-row">
+          <button class="btn-x" id="logoutBtn">退出登录</button>
+          <button class="btn-x" id="closeAdminBtn">关闭</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <audio id="audioPlayer" preload="none"></audio>
+
+  <script src="buttons.js"></script>
+</body>
+</html>
