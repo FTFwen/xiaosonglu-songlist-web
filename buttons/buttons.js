@@ -335,9 +335,15 @@
         <span class="ds">${cat ? cat.name : '?'}</span>
         <span class="grow"></span>
         <span class="ds" data-btn-audio-state="${btn.id}">${btn.idb ? '✓ 已上传' : (btn.audio ? '外部音频' : '未上传')}</span>
-        <input type="file" accept="audio/*,.mp3" class="btn-x audio-upload" data-audio-upload="${btn.id}" title="上传/替换音频">
+        <button class="btn-x" data-upload-trigger="${btn.id}" title="点击选择本地音频文件">上传音频</button>
+        <input type="file" accept=".mp3,.m4a,.wav,.ogg,.flac,audio/*" data-audio-upload="${btn.id}" style="display:none;">
         <button class="btn-x danger" data-del-btn="${btn.id}">删除</button>
       `;
+      // 点击"上传音频"按钮 → 触发隐藏的 file input
+      item.querySelector('[data-upload-trigger]').addEventListener('click', () => {
+        const input = item.querySelector('[data-audio-upload]');
+        if (input) input.click();
+      });
       item.querySelector('[data-del-btn]').addEventListener('click', () => {
         if (!confirm(`删除按钮「${btn.name}」？`)) return;
         data.buttons = data.buttons.filter(b => b.id !== btn.id);
@@ -348,12 +354,20 @@
       item.querySelector('[data-audio-upload]').addEventListener('change', async e => {
         const file = e.target.files[0];
         if (!file) return;
+        // 校验：必须是音频文件（按 MIME 或扩展名）
+        const isAudio = /audio\//.test(file.type) || /\.(mp3|m4a|wav|ogg|oga|flac|aac|opus)$/i.test(file.name);
+        if (!isAudio) {
+          toast('请选择 MP3 等音频文件');
+          e.target.value = '';
+          return;
+        }
         try {
           await idbPut(btn.id, file);
           btn.idb = true;
           saveData(data);
-          toast('音频已上传');
+          toast(`音频「${file.name}」已上传`);
           paintBtnAudioState(btn.id, true);
+          e.target.value = '';
         } catch (err) {
           console.error('[按钮墙] 上传失败', err);
           toast('音频上传失败');
