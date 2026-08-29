@@ -493,6 +493,22 @@
       transition: all 0.18s ease;
     }
     .player-card .pc-stop:hover { border-color: var(--danger); color: var(--danger); background: var(--danger-soft); }
+    /* 随机播放：带文字胶囊按钮（hove 用橄榄绿） */
+    .player-card .pc-random-text {
+      border: 1px solid var(--line-strong);
+      background: #fff;
+      color: var(--text);
+      border-radius: 12px;
+      padding: 8px 18px;
+      font-size: 13px;
+      cursor: pointer;
+      transition: all 0.18s ease;
+    }
+    .player-card .pc-random-text:hover {
+      border-color: var(--primary);
+      color: var(--primary-dark);
+      background: var(--primary-soft);
+    }
     .player-card .pc-ctrls {
       display: flex;
       align-items: center;
@@ -512,8 +528,7 @@
       transition: all 0.18s ease;
     }
     .player-card .pc-play:hover { background: var(--primary-dark); }
-    .player-card .pc-mode,
-    .player-card .pc-random {
+    .player-card .pc-mode {
       border: none;
       background: transparent;
       color: var(--text-soft);
@@ -524,8 +539,7 @@
       transition: all 0.18s ease;
     }
     .player-card .pc-mode:hover,
-    .player-card .pc-mode.single,
-    .player-card .pc-random:hover { color: var(--primary-dark); }
+    .player-card .pc-mode.single { color: var(--primary-dark); }
     .player-card .pc-vol {
       display: flex;
       align-items: center;
@@ -640,9 +654,9 @@
     </div>
     <div class="pc-right">
       <button class="pc-stop" id="pbStopBtn" title="停止播放"><svg class="icon" aria-hidden="true"><use href="#icon-close"></use></svg> 停止播放</button>
+      <button class="pc-stop pc-random-text" id="pbRandomBtn" title="随机播放一个按钮"><svg class="icon" aria-hidden="true"><use href="#icon-random-shuffle"></use></svg> 随机播放</button>
       <div class="pc-ctrls">
         <button class="pc-play" id="pbPlayBtn" title="播放 / 暂停"><svg class="icon" aria-hidden="true"><use href="#icon-caret-right"></use></svg></button>
-        <button class="pc-random" id="pbRandomBtn" title="随机播放一个按钮"><svg class="icon" aria-hidden="true"><use href="#icon-random-shuffle"></use></svg></button>
         <button class="pc-mode" id="pbModeBtn" title="播放模式：顺序播放，点击切换为单曲循环"><svg class="icon" aria-hidden="true"><use href="#icon-sync"></use></svg></button>
         <div class="pc-vol" title="音量">
           <svg class="icon" aria-hidden="true"><use href="#icon-sound"></use></svg>
@@ -730,6 +744,6 @@
   <video id="audioPlayer" preload="none" playsinline style="position:fixed;left:-9999px;top:0;width:1px;height:1px;opacity:0;"></video>
 
   <script src="jszip.min.js"></script>
-  <script src="buttons.js?v=22"></script>
+  <script src="buttons.js?v=23"></script>
 </body>
 </html>
