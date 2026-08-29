@@ -9,8 +9,11 @@
   const IDB_NAME = 'xsl:buttons:audio';
   const IDB_STORE = 'audio';
 
-  // 管理员账号（用户设定：文 / 0212）
-  const DEFAULT_ADMIN = { user: '文', pass: '0212' };
+  // 管理员账号列表（离线回退用，云端登录才是主鉴权）：文/0212、咸鱼/xsl
+  const DEFAULT_ADMINS = [
+    { user: '文', pass: '0212' },
+    { user: '咸鱼', pass: 'xsl' },
+  ];
 
   // 默认"其他"分类（删分类时的归入目标）
   const OTHER_CAT_ID = 'other';
@@ -393,7 +396,10 @@
   }
 
   // ===== 管理员 =====
-  function getAdmin() { return DEFAULT_ADMIN; }
+  // 离线/回退校验：账号是否在管理员列表内
+  function isKnownAdmin(user, pass) {
+    return DEFAULT_ADMINS.some(a => a.user === user && a.pass === pass);
+  }
 
   function openAdmin() {
     adminPanel.classList.add('show');
@@ -442,8 +448,7 @@
       throw new Error('bad login response');
     } catch (e) {
       console.warn('[按钮墙] 云端登录不可用，回退本地校验:', e);
-      const admin = getAdmin();
-      if (user === admin.user && pass === admin.pass) {
+      if (isKnownAdmin(user, pass)) {
         sessionStorage.setItem('xsl:buttons:authed', '1');
         sessionStorage.removeItem(TOKEN_KEY);
         isAdmin = true;

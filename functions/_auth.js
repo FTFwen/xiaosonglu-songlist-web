@@ -1,13 +1,29 @@
 // _auth.js - Pages Functions 共享鉴权模块（`_` 前缀不会被注册为路由，可 import）
-// 管理员账号 + HMAC token：登录校验后签发，写操作带 Bearer header
-const DEFAULT_ADMIN_USER = '文';
-const DEFAULT_ADMIN_PASS = '0212';
+// 管理员账号列表 + HMAC token：登录校验后签发，写操作带 Bearer header
+// 默认账号：文/0212、咸鱼/xsl。可通过 CF Secret BUTTONS_ADMIN_ACCOUNTS(JSON数组) 覆盖。
+const DEFAULT_ADMINS = [
+  { user: '文', pass: '0212' },
+  { user: '咸鱼', pass: 'xsl' },
+];
 const DEFAULT_SECRET = 'xsl-buttons-secret-2026'; // 建议在 Pages 项目设置 Secrets 里覆盖为随机值
 const TTL_SECONDS = 7 * 24 * 3600; // token 有效 7 天
 
 function secret(env) { return env.BUTTONS_ADMIN_SECRET || DEFAULT_SECRET; }
-function adminUser(env) { return env.BUTTONS_ADMIN_USER || DEFAULT_ADMIN_USER; }
-function adminPass(env) { return env.BUTTONS_ADMIN_PASS || DEFAULT_ADMIN_PASS; }
+// 解析管理员账号列表：优先 Secret JSON 数组；否则兼容旧单账号环境变量；兜底默认列表
+function admins(env) {
+  if (env.BUTTONS_ADMIN_ACCOUNTS) {
+    try {
+      const arr = JSON.parse(env.BUTTONS_ADMIN_ACCOUNTS);
+      if (Array.isArray(arr) && arr.length) {
+        return arr.filter(a => a && a.user && a.pass);
+      }
+    } catch (e) { /* ignore malformed */ }
+  }
+  if (env.BUTTONS_ADMIN_USER && env.BUTTONS_ADMIN_PASS) {
+    return [{ user: env.BUTTONS_ADMIN_USER, pass: env.BUTTONS_ADMIN_PASS }];
+  }
+  return DEFAULT_ADMINS;
+}
 
 function b64encode(buf) {
   let bin = '';
@@ -36,7 +52,8 @@ async function hmac(env, msg) {
 
 // 校验管理员账号密码，成功返回 token（否则 null）
 export async function makeToken(env, user, pass) {
-  if (user !== adminUser(env) || pass !== adminPass(env)) return null;
+  const list = admins(env);
+  if (!list.some(a => a.user === user && a.pass === pass)) return null;
   const exp = Math.floor(Date.now() / 1000) + TTL_SECONDS;
   const payload = b64encode(new TextEncoder().encode(JSON.stringify({ u: user, exp })));
   const sig = await hmac(env, payload);
