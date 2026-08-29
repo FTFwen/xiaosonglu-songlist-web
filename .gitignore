@@ -9,3 +9,7 @@ assets/audio/
 _filetest.html
 
 .wrangler/
+
+# 音频下载临时/过程文件（非页面代码，不入库）
+data/xiaosonglu/_audio_*
+data/xiaosonglu/_tmp_bv_out.txt
