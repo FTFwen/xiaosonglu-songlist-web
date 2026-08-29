@@ -324,6 +324,48 @@
     }
     .admin-item .ds.has { color: var(--success); }
 
+    /* ===== 上传进度条 ===== */
+    .upload-progress {
+      margin-top: 8px;
+      padding: 8px 10px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: var(--surface-soft);
+    }
+    .upload-progress-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      margin-bottom: 6px;
+    }
+    .upload-progress-label { font-size: 12px; font-weight: 700; color: var(--text); }
+    .upload-progress-count { font-size: 12px; color: var(--text-soft); font-variant-numeric: tabular-nums; }
+    .upload-progress-bar {
+      height: 8px;
+      border-radius: 999px;
+      background: var(--line);
+      overflow: hidden;
+    }
+    .upload-progress-fill {
+      height: 100%;
+      width: 0%;
+      border-radius: 999px;
+      background: linear-gradient(90deg, var(--primary), #7a8848);
+      transition: width 0.2s ease;
+    }
+    .upload-progress-fill.done { background: var(--success); }
+    .upload-progress-status {
+      margin-top: 5px;
+      font-size: 11px;
+      color: var(--text-soft);
+      line-height: 1.4;
+      white-space: pre-wrap;
+      word-break: break-all;
+      max-height: 60px;
+      overflow-y: auto;
+    }
+
     .admin-tip {
       font-size: 11px;
       color: var(--text-soft);
@@ -616,6 +658,16 @@
           <button class="btn-x primary" id="uploadBtnBtn"><svg class="icon" aria-hidden="true"><use href="#icon-upload"></use></svg> 上传音频/导入压缩包</button>
         </div>
         <input type="file" accept=".mp3,.m4a,.wav,.ogg,.flac,.mp4,.m4v,.mov,.webm,.mkv,audio/*,video/*,.zip" id="newBtnFileInput" multiple style="display:none;">
+        <div class="upload-progress" id="uploadProgress" style="display:none;">
+          <div class="upload-progress-head">
+            <span class="upload-progress-label" id="uploadProgressLabel">正在上传…</span>
+            <span class="upload-progress-count" id="uploadProgressCount">0 / 0</span>
+          </div>
+          <div class="upload-progress-bar">
+            <div class="upload-progress-fill" id="uploadProgressFill"></div>
+          </div>
+          <div class="upload-progress-status" id="uploadProgressStatus"></div>
+        </div>
         <div class="admin-tip">可多选音频/视频文件，或导入 zip 压缩包（自动筛出音视频，非音视频舍去）。MP4/MOV 等导入后作为音频播放；文件名自动命名按钮；rar/7z 请先转 zip。上传后到主界面用"编辑模式"调整标题/副标题、拖拽分类。</div>
 
         <div class="btn-row">
@@ -631,6 +683,6 @@
   <video id="audioPlayer" preload="none" playsinline style="position:fixed;left:-9999px;top:0;width:1px;height:1px;opacity:0;"></video>
 
   <script src="jszip.min.js"></script>
-  <script src="buttons.js?v=20"></script>
+  <script src="buttons.js?v=21"></script>
 </body>
 </html>

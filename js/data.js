@@ -1,11 +1,11 @@
 // 本文件由 E:\tool\plugin 本地数据生成（window.XSL_DATA），供网页直接打开（file://）时使用。
-// 生成时间：2026-08-29 18:15:28
+// 生成时间：2026-08-29 21:55:05
 // 数据源：E:\tool\plugin\data\（song_catalog / history_index / song_details）
 window.XSL_DATA = {
   song_catalog: {
   "roomKey": "xiaosonglu",
   "roomId": "1727071052",
-  "generatedAt": "2026-08-29T10:14:11.011Z",
+  "generatedAt": "2026-08-29T13:05:11.280Z",
   "source": "local-replay-ingestion",
   "songs": [
     {
@@ -79,14 +79,14 @@ window.XSL_DATA = {
       "artist": "陈雪凝",
       "artist_search": "陈雪凝",
       "feat_artist": "",
-      "remark": "2026-08-26 谢礼物和神秘星露谷（22点场）尾段语音频道（游龙287）中，小松绿与四时小路Komichi、羽啾chu2u三人合唱《绿色》；切片【小松绿/四时小路/羽啾】标题佐证（BV1QG8o6xE13，103s，沉默环节）。直播间弹幕无歌词行（语音频道合唱不在本房间弹幕里），仅 23:07「你在后边唱歌」、23:32「一转歌回」等提示；另有切片标题「小路和羽啾合唱《绿色》无能的小松绿只能向枝堇妈妈哭诉」（BV1cL8Z6VE6p）提示该晚小松绿曾试图加入但未成，是否正式开唱存疑 → 待人工复核。start/end 为按弹幕时间线估算。",
+      "remark": "2026-08-26 谢礼物和神秘星露谷（22点场）尾段语音频道（游龙287）中，小松绿与四时小路Komichi、羽啾chu2u三人合唱《绿色》；切片【小松绿/四时小路/羽啾】标题佐证（BV1QG8o6xE13，103s，沉默环节）。直播间弹幕无歌词行（语音频道合唱不在本房间弹幕里），仅 23:07「你在后边唱歌」、23:32「一转歌回」等提示；另有切片标题「小路和羽啾合唱《绿色》无能的小松绿只能向枝堇妈妈哭诉」（BV1cL8Z6VE6p）提示该晚小松绿曾试图加入但未成，是否正式开唱存疑 → 待人工复核。start/end 为按弹幕时间线估算。（2026-08-29 用户确认：catalog 主 cut 采用 08-29 场 给我来打二向箔 版 BV1ZT4k6QEpC，本语音合唱段 cut_link 置空，切片仍保留于 cut_index 08-26 条目）",
       "tone": "",
       "language": "中文",
       "type": "流行",
       "identification": "",
       "display_version": "",
       "search_name": "",
-      "cut_link": "https://www.bilibili.com/video/BV1QG8o6xE13/",
+      "cut_link": "https://www.bilibili.com/video/BV1ZT4k6QEpC/",
       "sing_count": 2,
       "status_labels": "语音频道合唱、自动识别待人工复核、歌回、歌切确认",
       "last_sing_at": "2026-08-29",
@@ -280,6 +280,27 @@ window.XSL_DATA = {
       "status_labels": "歌回、自动识别待人工复核",
       "last_sing_at": "2026-08-09",
       "row_key": "虫儿飞"
+    },
+    {
+      "song_id": 114,
+      "song_name": "初恋日記",
+      "show_as_song_name": "",
+      "display_song_name": "初恋日記",
+      "artist": "香椎モイミ / 音街鳗",
+      "artist_search": "初恋日記 香椎モイミ 音街鳗",
+      "feat_artist": "",
+      "remark": "2026-08-29 心灵火Flame合集补录：【小松绿Viridis】20260829 歌切 分P5（03:10）。萌百核实：香椎モイミ 2022-09-17 投稿的 VOCALOID 日语原创曲，音街鳗（音街ウナ）演唱。",
+      "tone": "",
+      "language": "日文",
+      "type": "Vocaloid、J-Pop",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1gm4C65Ey6/?p=5",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切章节验证",
+      "last_sing_at": "2026-08-29",
+      "row_key": "初恋日記"
     },
     {
       "song_id": 92,
@@ -856,16 +877,16 @@ window.XSL_DATA = {
       "artist": "忘川风华录 / 赤羽、星尘",
       "artist_search": "忘川风华录 赤羽 星尘",
       "feat_artist": "",
-      "remark": "弹幕 01:02:30「临川浮梦」点名 + 01:03:00「xsl戏腔好绝」→ 忘川风华录 2023-01-13 投稿 Synthesizer V 中文原创（赤羽/星尘演唱，传说曲），国风戏腔与弹幕反应吻合。",
+      "remark": "弹幕 01:02:30「临川浮梦」点名 + 01:03:00「xsl戏腔好绝」→ 忘川风华录 2023-01-13 投稿 Synthesizer V 中文原创（赤羽/星尘演唱，传说曲），国风戏腔与弹幕反应吻合。 2026-08-29 2026-08-29 心灵火Flame合集补录：【小松绿Viridis】20260829 歌切 分P6（03:59）印证，置信度升至 0.9。",
       "tone": "",
       "language": "中文",
       "type": "国风、中V",
       "identification": "",
       "display_version": "",
       "search_name": "",
-      "cut_link": "",
+      "cut_link": "https://www.bilibili.com/video/BV1gm4C65Ey6/?p=6",
       "sing_count": 1,
-      "status_labels": "歌回、自动识别待人工复核",
+      "status_labels": "歌回、自动识别待人工复核、歌切章节验证",
       "last_sing_at": "2026-08-29",
       "row_key": "临川浮梦"
     },
@@ -877,16 +898,16 @@ window.XSL_DATA = {
       "artist": "银临 / 初音未来",
       "artist_search": "银临 初音未来",
       "feat_artist": "",
-      "remark": "弹幕实锤：02:00:53「有品的有品的还会唱流光记」+ 02:02:00「学不会别离」为歌词句（「长亭只在书里 把折柳听了又听 总学不会别离」）→ 演唱时段 02:00-02:03。银临 2021-04-08 投稿 VOCALOID 中文原创（初音未来/银临演唱，初音未来「ListenING计划」单曲，殿堂曲；原曲为银临 2018 纯人声单曲）。",
+      "remark": "弹幕实锤：02:00:53「有品的有品的还会唱流光记」+ 02:02:00「学不会别离」为歌词句（「长亭只在书里 把折柳听了又听 总学不会别离」）→ 演唱时段 02:00-02:03。银临 2021-04-08 投稿 VOCALOID 中文原创（初音未来/银临演唱，初音未来「ListenING计划」单曲，殿堂曲；原曲为银临 2018 纯人声单曲）。 2026-08-29 2026-08-29 心灵火Flame合集补录：【小松绿Viridis】20260829 歌切 分P15（04:41）印证，置信度升至 0.9。",
       "tone": "",
       "language": "中文",
       "type": "古风、中V",
       "identification": "",
       "display_version": "",
       "search_name": "",
-      "cut_link": "",
+      "cut_link": "https://www.bilibili.com/video/BV1gm4C65Ey6/?p=15",
       "sing_count": 1,
-      "status_labels": "歌回、自动识别待人工复核",
+      "status_labels": "歌回、自动识别待人工复核、歌切章节验证",
       "last_sing_at": "2026-08-29",
       "row_key": "流光记"
     },
@@ -1150,16 +1171,16 @@ window.XSL_DATA = {
       "artist": "玖玲 / 冥凰 / 泠鸢yousa",
       "artist_search": "玖玲 冥凰 泠鸢yousa",
       "feat_artist": "",
-      "remark": "弹幕实锤：01:31:00「泼墨漓江！」01:31:04「泼墨漓江好耶」01:31:18「我去 泼墨漓江啊，我现在是考子了」01:36:10「泼墨漓江真好听吧」→ 演唱时段 01:28-01:36。玖玲作曲、冥凰作词，泠鸢yousa 2017 演唱，收录于个人专辑《茜色诗集》（国风）。01:37 弹幕「yousa专场」「茜色诗集」印证本场为泠鸢歌曲连唱（后续曲目待复核）。",
+      "remark": "弹幕实锤：01:31:00「泼墨漓江！」01:31:04「泼墨漓江好耶」01:31:18「我去 泼墨漓江啊，我现在是考子了」01:36:10「泼墨漓江真好听吧」→ 演唱时段 01:28-01:36。玖玲作曲、冥凰作词，泠鸢yousa 2017 演唱，收录于个人专辑《茜色诗集》（国风）。01:37 弹幕「yousa专场」「茜色诗集」印证本场为泠鸢歌曲连唱（后续曲目待复核）。 2026-08-29 2026-08-29 心灵火Flame合集补录：【小松绿Viridis】20260829 歌切 分P11（04:58）印证，置信度升至 0.9。",
       "tone": "",
       "language": "中文",
       "type": "国风",
       "identification": "",
       "display_version": "",
       "search_name": "",
-      "cut_link": "",
+      "cut_link": "https://www.bilibili.com/video/BV1gm4C65Ey6/?p=11",
       "sing_count": 1,
-      "status_labels": "歌回、自动识别待人工复核",
+      "status_labels": "歌回、自动识别待人工复核、歌切章节验证",
       "last_sing_at": "2026-08-29",
       "row_key": "泼墨漓江"
     },
@@ -1183,6 +1204,27 @@ window.XSL_DATA = {
       "status_labels": "清唱、自动识别待人工复核",
       "last_sing_at": "2026-08-23",
       "row_key": "栖凰"
+    },
+    {
+      "song_id": 117,
+      "song_name": "绮凝盏",
+      "show_as_song_name": "",
+      "display_song_name": "绮凝盏",
+      "artist": "MeLo / 海伊",
+      "artist_search": "绮凝盏 MeLo 海伊",
+      "feat_artist": "",
+      "remark": "2026-08-29 心灵火Flame合集补录：【小松绿Viridis】20260829 歌切 分P10（03:24）。萌百核实：MeLo 作编曲、海伊Official 2019-02-08 投稿的 UTAU 中文原创曲（专辑《亚特兰蒂斯》收录）。",
+      "tone": "",
+      "language": "中文",
+      "type": "UTAU、中V",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1gm4C65Ey6/?p=10",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切章节验证",
+      "last_sing_at": "2026-08-29",
+      "row_key": "绮凝盏"
     },
     {
       "song_id": 98,
@@ -1393,6 +1435,27 @@ window.XSL_DATA = {
       "status_labels": "歌切合集补录、待后续回放时间定位",
       "last_sing_at": "2026-08-18",
       "row_key": "世末歌者"
+    },
+    {
+      "song_id": 115,
+      "song_name": "是风动",
+      "show_as_song_name": "",
+      "display_song_name": "是风动",
+      "artist": "银临 / 河图",
+      "artist_search": "是风动 银临 河图",
+      "feat_artist": "",
+      "remark": "2026-08-29 心灵火Flame合集补录：【小松绿Viridis】20260829 歌切 分P8（04:49）。百度百科核实：银临×河图 2017 古风单曲（银临作曲/择荇填词/灰原穷编曲，收录《蚍蜉渡海》）。",
+      "tone": "",
+      "language": "中文",
+      "type": "古风、国风",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1gm4C65Ey6/?p=8",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切章节验证",
+      "last_sing_at": "2026-08-29",
+      "row_key": "是风动"
     },
     {
       "song_id": 41,
@@ -1731,6 +1794,27 @@ window.XSL_DATA = {
       "row_key": "我多想说再见啊"
     },
     {
+      "song_id": 116,
+      "song_name": "下个夏天的烟火",
+      "show_as_song_name": "",
+      "display_song_name": "下个夏天的烟火",
+      "artist": "Cidai Jun / 海伊",
+      "artist_search": "下个夏天的烟火 海伊",
+      "feat_artist": "",
+      "remark": "2026-08-29 心灵火Flame合集补录：【小松绿Viridis】20260829 歌切 分P9（03:43）。Vocaloid Lyrics Wiki 核实：Cidai Jun 等制作、海伊演唱，2023-07-22 投稿的中文 Vocaloid 歌。",
+      "tone": "",
+      "language": "中文",
+      "type": "中V、Vocaloid",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1gm4C65Ey6/?p=9",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切章节验证",
+      "last_sing_at": "2026-08-29",
+      "row_key": "下个夏天的烟火"
+    },
+    {
       "song_id": 93,
       "song_name": "夏恋慕",
       "show_as_song_name": "",
@@ -1750,6 +1834,27 @@ window.XSL_DATA = {
       "status_labels": "清唱、自动识别待人工复核",
       "last_sing_at": "2026-08-23",
       "row_key": "夏恋慕"
+    },
+    {
+      "song_id": 118,
+      "song_name": "夏日已所剩无几",
+      "show_as_song_name": "",
+      "display_song_name": "夏日已所剩无几",
+      "artist": "泠鸢yousa",
+      "artist_search": "夏日已所剩无几 泠鸢yousa",
+      "feat_artist": "",
+      "remark": "2026-08-29 心灵火Flame合集补录：【小松绿Viridis】20260829 歌切 分P12（04:32）。萌百核实：泠鸢yousa 2016-09-15 投稿的中文原创曲（专辑《茜色诗集》收录）；对应 08-29 审计遗留的 yousa 专场段。另有小冬青Viridis 单切 BV1vc416WEqw。",
+      "tone": "",
+      "language": "中文",
+      "type": "国风、流行",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1gm4C65Ey6/?p=12",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切章节验证",
+      "last_sing_at": "2026-08-29",
+      "row_key": "夏日已所剩无几"
     },
     {
       "song_id": 94,
@@ -1960,6 +2065,27 @@ window.XSL_DATA = {
       "status_labels": "歌切直补、待原始回放定位",
       "last_sing_at": "2026-08-15",
       "row_key": "雨爱"
+    },
+    {
+      "song_id": 119,
+      "song_name": "远旅休憩中的邂逅",
+      "show_as_song_name": "",
+      "display_song_name": "远旅休憩中的邂逅",
+      "artist": "泠鸢yousa",
+      "artist_search": "远旅休憩中的邂逅 泠鸢yousa",
+      "feat_artist": "",
+      "remark": "2026-08-29 心灵火Flame合集补录：【小松绿Viridis】20260829 歌切 分P13（05:05）。核实：泠鸢yousa 歌曲（Encounters in a Long Journey's Rest）；对应 08-29 审计遗留的 yousa 专场段。",
+      "tone": "",
+      "language": "中文",
+      "type": "国风、流行",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1gm4C65Ey6/?p=13",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切章节验证",
+      "last_sing_at": "2026-08-29",
+      "row_key": "远旅休憩中的邂逅"
     },
     {
       "song_id": 111,
@@ -2340,6 +2466,27 @@ window.XSL_DATA = {
       "row_key": "おともだち"
     },
     {
+      "song_id": 120,
+      "song_name": "サリシノハラ",
+      "show_as_song_name": "",
+      "display_song_name": "サリシノハラ（离去之原）",
+      "artist": "みきとP / 初音ミク",
+      "artist_search": "サリシノハラ みきとP 初音ミク",
+      "feat_artist": "",
+      "remark": "2026-08-29 心灵火Flame合集补录：【小松绿Viridis】20260829 歌切 分P14（04:28）。みきとP 2013 年名曲（离去之原），初音ミク演唱。",
+      "tone": "",
+      "language": "日文",
+      "type": "Vocaloid、J-Pop",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1gm4C65Ey6/?p=14",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切章节验证",
+      "last_sing_at": "2026-08-29",
+      "row_key": "サリシノハラ"
+    },
+    {
       "song_id": 68,
       "song_name": "シリウスの心臓",
       "show_as_song_name": "",
@@ -2386,7 +2533,7 @@ window.XSL_DATA = {
   history_index: {
   "roomKey": "xiaosonglu",
   "roomId": "1727071052",
-  "generatedAt": "2026-08-29T10:14:11.011Z",
+  "generatedAt": "2026-08-29T13:05:11.280Z",
   "source": "local-replay-ingestion",
   "latest": {
     "year": "2026",
@@ -2404,7 +2551,7 @@ window.XSL_DATA = {
         "20": 20,
         "23": 8,
         "26": 1,
-        "29": 11,
+        "29": 18,
         "09": 17,
         "08": 3,
         "07": 1
@@ -4418,10 +4565,136 @@ window.XSL_DATA = {
         "row_key": "绿色",
         "lyric_excerpt": "",
         "song_resolution_method": "bili-clip-evidence",
-        "cut_link": "https://www.bilibili.com/video/BV1QG8o6xE13/"
+        "cut_link": "https://www.bilibili.com/video/BV1ZT4k6QEpC/"
       }
     ],
     "2026-08-29": [
+      {
+        "song_name": "初恋日記",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切章节验证"
+        ],
+        "artist": "香椎モイミ / 音街鳗",
+        "replay_id": "BV1RL4k6jEe8",
+        "replay_title": "【小松绿Viridis】突击的随便唱-2026年08月29日13点场",
+        "replay_url": "https://www.bilibili.com/video/BV1RL4k6jEe8/",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "初恋日記",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-compilation-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1gm4C65Ey6/?p=5"
+      },
+      {
+        "song_name": "是风动",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切章节验证"
+        ],
+        "artist": "银临 / 河图",
+        "replay_id": "BV1RL4k6jEe8",
+        "replay_title": "【小松绿Viridis】突击的随便唱-2026年08月29日13点场",
+        "replay_url": "https://www.bilibili.com/video/BV1RL4k6jEe8/",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "是风动",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-compilation-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1gm4C65Ey6/?p=8"
+      },
+      {
+        "song_name": "下个夏天的烟火",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切章节验证"
+        ],
+        "artist": "Cidai Jun / 海伊",
+        "replay_id": "BV1RL4k6jEe8",
+        "replay_title": "【小松绿Viridis】突击的随便唱-2026年08月29日13点场",
+        "replay_url": "https://www.bilibili.com/video/BV1RL4k6jEe8/",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "下个夏天的烟火",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-compilation-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1gm4C65Ey6/?p=9"
+      },
+      {
+        "song_name": "绮凝盏",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切章节验证"
+        ],
+        "artist": "MeLo / 海伊",
+        "replay_id": "BV1RL4k6jEe8",
+        "replay_title": "【小松绿Viridis】突击的随便唱-2026年08月29日13点场",
+        "replay_url": "https://www.bilibili.com/video/BV1RL4k6jEe8/",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "绮凝盏",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-compilation-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1gm4C65Ey6/?p=10"
+      },
+      {
+        "song_name": "夏日已所剩无几",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切章节验证"
+        ],
+        "artist": "泠鸢yousa",
+        "replay_id": "BV1RL4k6jEe8",
+        "replay_title": "【小松绿Viridis】突击的随便唱-2026年08月29日13点场",
+        "replay_url": "https://www.bilibili.com/video/BV1RL4k6jEe8/",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "夏日已所剩无几",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-compilation-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1gm4C65Ey6/?p=12"
+      },
+      {
+        "song_name": "远旅休憩中的邂逅",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切章节验证"
+        ],
+        "artist": "泠鸢yousa",
+        "replay_id": "BV1RL4k6jEe8",
+        "replay_title": "【小松绿Viridis】突击的随便唱-2026年08月29日13点场",
+        "replay_url": "https://www.bilibili.com/video/BV1RL4k6jEe8/",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "远旅休憩中的邂逅",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-compilation-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1gm4C65Ey6/?p=13"
+      },
+      {
+        "song_name": "サリシノハラ（离去之原）",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切章节验证"
+        ],
+        "artist": "みきとP / 初音ミク",
+        "replay_id": "BV1RL4k6jEe8",
+        "replay_title": "【小松绿Viridis】突击的随便唱-2026年08月29日13点场",
+        "replay_url": "https://www.bilibili.com/video/BV1RL4k6jEe8/",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "サリシノハラ",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-compilation-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1gm4C65Ey6/?p=14"
+      },
       {
         "song_name": "难过233秒",
         "sing_time": "00:13:00",
@@ -4474,7 +4747,7 @@ window.XSL_DATA = {
         "row_key": "绿色",
         "lyric_excerpt": "从此我的心里只剩绿色",
         "song_resolution_method": "song-cut-title",
-        "cut_link": "https://www.bilibili.com/video/BV1qZ4y6xE1j/"
+        "cut_link": "https://www.bilibili.com/video/BV1ZT4k6QEpC/"
       },
       {
         "song_name": "你究竟有几个好妹妹",
@@ -4535,7 +4808,8 @@ window.XSL_DATA = {
         "sing_time": "01:02:00",
         "statuses": [
           "歌回",
-          "自动识别待人工复核"
+          "自动识别待人工复核",
+          "歌切章节验证"
         ],
         "artist": "忘川风华录 / 赤羽、星尘",
         "replay_id": "BV1RL4k6jEe8",
@@ -4545,8 +4819,8 @@ window.XSL_DATA = {
         "end_time": "01:07:00",
         "row_key": "临川浮梦",
         "lyric_excerpt": "",
-        "song_resolution_method": "danmaku-evidence",
-        "cut_link": ""
+        "song_resolution_method": "danmaku-evidence + song-cut-compilation-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1gm4C65Ey6/?p=6"
       },
       {
         "song_name": "Talking to the Rain",
@@ -4571,7 +4845,8 @@ window.XSL_DATA = {
         "sing_time": "01:28:00",
         "statuses": [
           "歌回",
-          "自动识别待人工复核"
+          "自动识别待人工复核",
+          "歌切章节验证"
         ],
         "artist": "玖玲 / 冥凰 / 泠鸢yousa",
         "replay_id": "BV1RL4k6jEe8",
@@ -4581,8 +4856,8 @@ window.XSL_DATA = {
         "end_time": "01:36:00",
         "row_key": "泼墨漓江",
         "lyric_excerpt": "",
-        "song_resolution_method": "danmaku-evidence",
-        "cut_link": ""
+        "song_resolution_method": "danmaku-evidence + song-cut-compilation-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1gm4C65Ey6/?p=11"
       },
       {
         "song_name": "下等马",
@@ -4607,7 +4882,8 @@ window.XSL_DATA = {
         "sing_time": "02:00:00",
         "statuses": [
           "歌回",
-          "自动识别待人工复核"
+          "自动识别待人工复核",
+          "歌切章节验证"
         ],
         "artist": "银临 / 初音未来",
         "replay_id": "BV1RL4k6jEe8",
@@ -4617,8 +4893,8 @@ window.XSL_DATA = {
         "end_time": "02:03:30",
         "row_key": "流光记",
         "lyric_excerpt": "总学不会别离",
-        "song_resolution_method": "danmaku-evidence",
-        "cut_link": ""
+        "song_resolution_method": "danmaku-evidence + song-cut-compilation-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1gm4C65Ey6/?p=15"
       }
     ]
   }
@@ -4626,7 +4902,7 @@ window.XSL_DATA = {
   song_details: {
   "roomKey": "xiaosonglu",
   "roomId": "1727071052",
-  "generatedAt": "2026-08-29T10:14:11.011Z",
+  "generatedAt": "2026-08-29T13:05:11.280Z",
   "source": "local-replay-ingestion",
   "bySongKey": {
     "少女レイ": {
@@ -5356,7 +5632,7 @@ window.XSL_DATA = {
           "replay_id": "BV1RL4k6jEe8",
           "replay_title": "【小松绿Viridis】突击的随便唱-2026年08月29日13点场",
           "replay_url": "https://www.bilibili.com/video/BV1RL4k6jEe8/",
-          "remark": "弹幕 01:50:27「诶诶，不唱下等马嘛」+ 01:50:30「唱到下等马了」→ 演唱时段按弹幕估 01:51-01:56。ChiliChill 2025-05-30 投稿 ACE 中文原创（洛天依演唱，传说曲）。已在库（song_id 27，2026-08-11 歌切收录），本场再唱补当日 segment。（2026-08-29 补：该 cut_link 原为 08-11 场旧切，08-29 场暂无专属歌切，已置空避免场次混淆）",
+          "remark": "弹幕 01:50:27「诶诶，不唱下等马嘛」+ 01:50:30「唱到下等马了」→ 演唱时段按弹幕估 01:51-01:56。ChiliChill 2025-05-30 投稿 ACE 中文原创（洛天依演唱，传说曲）。已在库（song_id 27，2026-08-11 歌切收录），本场再唱补当日 segment。（cut_link 沿用 08-11 场主歌切 BV17Wuz6YEci 作参考引用；08-29 场暂无专属歌切，2026-08-29 用户确认环节回填）",
           "lyric_excerpt": "",
           "song_resolution_method": "danmaku-evidence",
           "replay_date_source": "replay-title",
@@ -7189,7 +7465,7 @@ window.XSL_DATA = {
       "song_name": "绿色",
       "display_song_name": "绿色",
       "artist": "陈雪凝",
-      "cut_link": "https://www.bilibili.com/video/BV1QG8o6xE13/",
+      "cut_link": "https://www.bilibili.com/video/BV1ZT4k6QEpC/",
       "total_count": 2,
       "entries": [
         {
@@ -7201,11 +7477,11 @@ window.XSL_DATA = {
           "replay_id": "BV1RL4k6jEe8",
           "replay_title": "【小松绿Viridis】突击的随便唱-2026年08月29日13点场",
           "replay_url": "https://www.bilibili.com/video/BV1RL4k6jEe8/",
-          "remark": "三重证据：①歌切《【小松绿Viridis/歌切】绿色》（BV1qZ4y6xE1j，华丽失败酱，pub 14:58，4:28）；②切片《神中神《绿色》羽啾进入直播间有人心乱了》（BV1qg4k6SEMi，超级海粼猫，pub 14:48，5:05）；③弹幕歌词实锤：00:34:31《绿色》书名号点名、00:36「小松绿 若不是你突然闯进我生活给我了一道光」（歌词）、00:37「从此我的心里只剩绿色」密集刷屏。与 08-26 语音频道合唱（待复核）不同，本场为正式独唱。",
+          "remark": "三重证据：①歌切《【小松绿Viridis/歌切】绿色》（BV1qZ4y6xE1j，华丽失败酱，pub 14:58，4:28）；②切片《神中神《绿色》羽啾进入直播间有人心乱了》（BV1qg4k6SEMi，超级海粼猫，pub 14:48，5:05）；③弹幕歌词实锤：00:34:31《绿色》书名号点名、00:36「小松绿 若不是你突然闯进我生活给我了一道光」（歌词）、00:37「从此我的心里只剩绿色」密集刷屏。与 08-26 语音频道合唱（待复核）不同，本场为正式独唱。 2026-08-29 用户确认：该场《绿色》主歌切采用 给我来打二向箔 版本（BV1ZT4k6QEpC，4:40，当场 14:34 发布）。",
           "lyric_excerpt": "从此我的心里只剩绿色",
           "song_resolution_method": "song-cut-title",
           "replay_date_source": "replay-title",
-          "cut_link": "https://www.bilibili.com/video/BV1qZ4y6xE1j/"
+          "cut_link": "https://www.bilibili.com/video/BV1ZT4k6QEpC/"
         },
         {
           "date": "2026-08-26",
@@ -7216,11 +7492,11 @@ window.XSL_DATA = {
           "replay_id": "BV1KK8Z6JEMP",
           "replay_title": "【小松绿Viridis】谢礼物和神秘星露谷-2026年08月26日22点场",
           "replay_url": "https://www.bilibili.com/video/BV1KK8Z6JEMP/",
-          "remark": "2026-08-26 谢礼物和神秘星露谷（22点场）尾段语音频道（游龙287）中，小松绿与四时小路Komichi、羽啾chu2u三人合唱《绿色》；切片【小松绿/四时小路/羽啾】标题佐证（BV1QG8o6xE13，103s，沉默环节）。直播间弹幕无歌词行（语音频道合唱不在本房间弹幕里），仅 23:07「你在后边唱歌」、23:32「一转歌回」等提示；另有切片标题「小路和羽啾合唱《绿色》无能的小松绿只能向枝堇妈妈哭诉」（BV1cL8Z6VE6p）提示该晚小松绿曾试图加入但未成，是否正式开唱存疑 → 待人工复核。start/end 为按弹幕时间线估算。",
+          "remark": "2026-08-26 谢礼物和神秘星露谷（22点场）尾段语音频道（游龙287）中，小松绿与四时小路Komichi、羽啾chu2u三人合唱《绿色》；切片【小松绿/四时小路/羽啾】标题佐证（BV1QG8o6xE13，103s，沉默环节）。直播间弹幕无歌词行（语音频道合唱不在本房间弹幕里），仅 23:07「你在后边唱歌」、23:32「一转歌回」等提示；另有切片标题「小路和羽啾合唱《绿色》无能的小松绿只能向枝堇妈妈哭诉」（BV1cL8Z6VE6p）提示该晚小松绿曾试图加入但未成，是否正式开唱存疑 → 待人工复核。start/end 为按弹幕时间线估算。（2026-08-29 用户确认：catalog 主 cut 采用 08-29 场 给我来打二向箔 版 BV1ZT4k6QEpC，本语音合唱段 cut_link 置空，切片仍保留于 cut_index 08-26 条目）",
           "lyric_excerpt": "",
           "song_resolution_method": "bili-clip-evidence",
           "replay_date_source": "replay-title",
-          "cut_link": "https://www.bilibili.com/video/BV1QG8o6xE13/"
+          "cut_link": "https://www.bilibili.com/video/BV1ZT4k6QEpC/"
         }
       ]
     },
@@ -7354,23 +7630,23 @@ window.XSL_DATA = {
       "song_name": "临川浮梦",
       "display_song_name": "临川浮梦",
       "artist": "忘川风华录 / 赤羽、星尘",
-      "cut_link": "",
+      "cut_link": "https://www.bilibili.com/video/BV1gm4C65Ey6/?p=6",
       "total_count": 1,
       "entries": [
         {
           "date": "2026-08-29",
           "time": "01:02:00",
           "end_time": "01:07:00",
-          "status": "歌回、自动识别待人工复核",
+          "status": "歌回、自动识别待人工复核、歌切章节验证",
           "artist": "忘川风华录 / 赤羽、星尘",
           "replay_id": "BV1RL4k6jEe8",
           "replay_title": "【小松绿Viridis】突击的随便唱-2026年08月29日13点场",
           "replay_url": "https://www.bilibili.com/video/BV1RL4k6jEe8/",
-          "remark": "弹幕 01:02:30「临川浮梦」点名 + 01:03:00「xsl戏腔好绝」→ 忘川风华录 2023-01-13 投稿 Synthesizer V 中文原创（赤羽/星尘演唱，传说曲），国风戏腔与弹幕反应吻合。",
+          "remark": "弹幕 01:02:30「临川浮梦」点名 + 01:03:00「xsl戏腔好绝」→ 忘川风华录 2023-01-13 投稿 Synthesizer V 中文原创（赤羽/星尘演唱，传说曲），国风戏腔与弹幕反应吻合。 2026-08-29 2026-08-29 心灵火Flame合集补录：【小松绿Viridis】20260829 歌切 分P6（03:59）印证，置信度升至 0.9。",
           "lyric_excerpt": "",
-          "song_resolution_method": "danmaku-evidence",
+          "song_resolution_method": "danmaku-evidence + song-cut-compilation-chapter",
           "replay_date_source": "replay-title",
-          "cut_link": ""
+          "cut_link": "https://www.bilibili.com/video/BV1gm4C65Ey6/?p=6"
         }
       ]
     },
@@ -7404,23 +7680,23 @@ window.XSL_DATA = {
       "song_name": "泼墨漓江",
       "display_song_name": "泼墨漓江",
       "artist": "玖玲 / 冥凰 / 泠鸢yousa",
-      "cut_link": "",
+      "cut_link": "https://www.bilibili.com/video/BV1gm4C65Ey6/?p=11",
       "total_count": 1,
       "entries": [
         {
           "date": "2026-08-29",
           "time": "01:28:00",
           "end_time": "01:36:00",
-          "status": "歌回、自动识别待人工复核",
+          "status": "歌回、自动识别待人工复核、歌切章节验证",
           "artist": "玖玲 / 冥凰 / 泠鸢yousa",
           "replay_id": "BV1RL4k6jEe8",
           "replay_title": "【小松绿Viridis】突击的随便唱-2026年08月29日13点场",
           "replay_url": "https://www.bilibili.com/video/BV1RL4k6jEe8/",
-          "remark": "弹幕实锤：01:31:00「泼墨漓江！」01:31:04「泼墨漓江好耶」01:31:18「我去 泼墨漓江啊，我现在是考子了」01:36:10「泼墨漓江真好听吧」→ 演唱时段 01:28-01:36。玖玲作曲、冥凰作词，泠鸢yousa 2017 演唱，收录于个人专辑《茜色诗集》（国风）。01:37 弹幕「yousa专场」「茜色诗集」印证本场为泠鸢歌曲连唱（后续曲目待复核）。",
+          "remark": "弹幕实锤：01:31:00「泼墨漓江！」01:31:04「泼墨漓江好耶」01:31:18「我去 泼墨漓江啊，我现在是考子了」01:36:10「泼墨漓江真好听吧」→ 演唱时段 01:28-01:36。玖玲作曲、冥凰作词，泠鸢yousa 2017 演唱，收录于个人专辑《茜色诗集》（国风）。01:37 弹幕「yousa专场」「茜色诗集」印证本场为泠鸢歌曲连唱（后续曲目待复核）。 2026-08-29 2026-08-29 心灵火Flame合集补录：【小松绿Viridis】20260829 歌切 分P11（04:58）印证，置信度升至 0.9。",
           "lyric_excerpt": "",
-          "song_resolution_method": "danmaku-evidence",
+          "song_resolution_method": "danmaku-evidence + song-cut-compilation-chapter",
           "replay_date_source": "replay-title",
-          "cut_link": ""
+          "cut_link": "https://www.bilibili.com/video/BV1gm4C65Ey6/?p=11"
         }
       ]
     },
@@ -7429,23 +7705,23 @@ window.XSL_DATA = {
       "song_name": "流光记",
       "display_song_name": "流光记",
       "artist": "银临 / 初音未来",
-      "cut_link": "",
+      "cut_link": "https://www.bilibili.com/video/BV1gm4C65Ey6/?p=15",
       "total_count": 1,
       "entries": [
         {
           "date": "2026-08-29",
           "time": "02:00:00",
           "end_time": "02:03:30",
-          "status": "歌回、自动识别待人工复核",
+          "status": "歌回、自动识别待人工复核、歌切章节验证",
           "artist": "银临 / 初音未来",
           "replay_id": "BV1RL4k6jEe8",
           "replay_title": "【小松绿Viridis】突击的随便唱-2026年08月29日13点场",
           "replay_url": "https://www.bilibili.com/video/BV1RL4k6jEe8/",
-          "remark": "弹幕实锤：02:00:53「有品的有品的还会唱流光记」+ 02:02:00「学不会别离」为歌词句（「长亭只在书里 把折柳听了又听 总学不会别离」）→ 演唱时段 02:00-02:03。银临 2021-04-08 投稿 VOCALOID 中文原创（初音未来/银临演唱，初音未来「ListenING计划」单曲，殿堂曲；原曲为银临 2018 纯人声单曲）。",
+          "remark": "弹幕实锤：02:00:53「有品的有品的还会唱流光记」+ 02:02:00「学不会别离」为歌词句（「长亭只在书里 把折柳听了又听 总学不会别离」）→ 演唱时段 02:00-02:03。银临 2021-04-08 投稿 VOCALOID 中文原创（初音未来/银临演唱，初音未来「ListenING计划」单曲，殿堂曲；原曲为银临 2018 纯人声单曲）。 2026-08-29 2026-08-29 心灵火Flame合集补录：【小松绿Viridis】20260829 歌切 分P15（04:41）印证，置信度升至 0.9。",
           "lyric_excerpt": "总学不会别离",
-          "song_resolution_method": "danmaku-evidence",
+          "song_resolution_method": "danmaku-evidence + song-cut-compilation-chapter",
           "replay_date_source": "replay-title",
-          "cut_link": ""
+          "cut_link": "https://www.bilibili.com/video/BV1gm4C65Ey6/?p=15"
         }
       ]
     },
@@ -7571,6 +7847,181 @@ window.XSL_DATA = {
           "song_resolution_method": "song-cut-compilation-chapter",
           "replay_date_source": "replay-title",
           "cut_link": "https://www.bilibili.com/video/BV1idb16YEjD/?p=10"
+        }
+      ]
+    },
+    "初恋日記": {
+      "row_key": "初恋日記",
+      "song_name": "初恋日記",
+      "display_song_name": "初恋日記",
+      "artist": "香椎モイミ / 音街鳗",
+      "cut_link": "https://www.bilibili.com/video/BV1gm4C65Ey6/?p=5",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-08-29",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切章节验证",
+          "artist": "香椎モイミ / 音街鳗",
+          "replay_id": "BV1RL4k6jEe8",
+          "replay_title": "【小松绿Viridis】突击的随便唱-2026年08月29日13点场",
+          "replay_url": "https://www.bilibili.com/video/BV1RL4k6jEe8/",
+          "remark": "2026-08-29 心灵火Flame合集补录：【小松绿Viridis】20260829 歌切 分P5（03:10）。萌百核实：香椎モイミ 2022-09-17 投稿的 VOCALOID 日语原创曲，音街鳗（音街ウナ）演唱。",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-compilation-chapter",
+          "replay_date_source": "replay-title",
+          "cut_link": "https://www.bilibili.com/video/BV1gm4C65Ey6/?p=5"
+        }
+      ]
+    },
+    "是风动": {
+      "row_key": "是风动",
+      "song_name": "是风动",
+      "display_song_name": "是风动",
+      "artist": "银临 / 河图",
+      "cut_link": "https://www.bilibili.com/video/BV1gm4C65Ey6/?p=8",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-08-29",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切章节验证",
+          "artist": "银临 / 河图",
+          "replay_id": "BV1RL4k6jEe8",
+          "replay_title": "【小松绿Viridis】突击的随便唱-2026年08月29日13点场",
+          "replay_url": "https://www.bilibili.com/video/BV1RL4k6jEe8/",
+          "remark": "2026-08-29 心灵火Flame合集补录：【小松绿Viridis】20260829 歌切 分P8（04:49）。百度百科核实：银临×河图 2017 古风单曲（银临作曲/择荇填词/灰原穷编曲，收录《蚍蜉渡海》）。",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-compilation-chapter",
+          "replay_date_source": "replay-title",
+          "cut_link": "https://www.bilibili.com/video/BV1gm4C65Ey6/?p=8"
+        }
+      ]
+    },
+    "下个夏天的烟火": {
+      "row_key": "下个夏天的烟火",
+      "song_name": "下个夏天的烟火",
+      "display_song_name": "下个夏天的烟火",
+      "artist": "Cidai Jun / 海伊",
+      "cut_link": "https://www.bilibili.com/video/BV1gm4C65Ey6/?p=9",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-08-29",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切章节验证",
+          "artist": "Cidai Jun / 海伊",
+          "replay_id": "BV1RL4k6jEe8",
+          "replay_title": "【小松绿Viridis】突击的随便唱-2026年08月29日13点场",
+          "replay_url": "https://www.bilibili.com/video/BV1RL4k6jEe8/",
+          "remark": "2026-08-29 心灵火Flame合集补录：【小松绿Viridis】20260829 歌切 分P9（03:43）。Vocaloid Lyrics Wiki 核实：Cidai Jun 等制作、海伊演唱，2023-07-22 投稿的中文 Vocaloid 歌。",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-compilation-chapter",
+          "replay_date_source": "replay-title",
+          "cut_link": "https://www.bilibili.com/video/BV1gm4C65Ey6/?p=9"
+        }
+      ]
+    },
+    "绮凝盏": {
+      "row_key": "绮凝盏",
+      "song_name": "绮凝盏",
+      "display_song_name": "绮凝盏",
+      "artist": "MeLo / 海伊",
+      "cut_link": "https://www.bilibili.com/video/BV1gm4C65Ey6/?p=10",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-08-29",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切章节验证",
+          "artist": "MeLo / 海伊",
+          "replay_id": "BV1RL4k6jEe8",
+          "replay_title": "【小松绿Viridis】突击的随便唱-2026年08月29日13点场",
+          "replay_url": "https://www.bilibili.com/video/BV1RL4k6jEe8/",
+          "remark": "2026-08-29 心灵火Flame合集补录：【小松绿Viridis】20260829 歌切 分P10（03:24）。萌百核实：MeLo 作编曲、海伊Official 2019-02-08 投稿的 UTAU 中文原创曲（专辑《亚特兰蒂斯》收录）。",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-compilation-chapter",
+          "replay_date_source": "replay-title",
+          "cut_link": "https://www.bilibili.com/video/BV1gm4C65Ey6/?p=10"
+        }
+      ]
+    },
+    "夏日已所剩无几": {
+      "row_key": "夏日已所剩无几",
+      "song_name": "夏日已所剩无几",
+      "display_song_name": "夏日已所剩无几",
+      "artist": "泠鸢yousa",
+      "cut_link": "https://www.bilibili.com/video/BV1gm4C65Ey6/?p=12",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-08-29",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切章节验证",
+          "artist": "泠鸢yousa",
+          "replay_id": "BV1RL4k6jEe8",
+          "replay_title": "【小松绿Viridis】突击的随便唱-2026年08月29日13点场",
+          "replay_url": "https://www.bilibili.com/video/BV1RL4k6jEe8/",
+          "remark": "2026-08-29 心灵火Flame合集补录：【小松绿Viridis】20260829 歌切 分P12（04:32）。萌百核实：泠鸢yousa 2016-09-15 投稿的中文原创曲（专辑《茜色诗集》收录）；对应 08-29 审计遗留的 yousa 专场段。另有小冬青Viridis 单切 BV1vc416WEqw。",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-compilation-chapter",
+          "replay_date_source": "replay-title",
+          "cut_link": "https://www.bilibili.com/video/BV1gm4C65Ey6/?p=12"
+        }
+      ]
+    },
+    "远旅休憩中的邂逅": {
+      "row_key": "远旅休憩中的邂逅",
+      "song_name": "远旅休憩中的邂逅",
+      "display_song_name": "远旅休憩中的邂逅",
+      "artist": "泠鸢yousa",
+      "cut_link": "https://www.bilibili.com/video/BV1gm4C65Ey6/?p=13",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-08-29",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切章节验证",
+          "artist": "泠鸢yousa",
+          "replay_id": "BV1RL4k6jEe8",
+          "replay_title": "【小松绿Viridis】突击的随便唱-2026年08月29日13点场",
+          "replay_url": "https://www.bilibili.com/video/BV1RL4k6jEe8/",
+          "remark": "2026-08-29 心灵火Flame合集补录：【小松绿Viridis】20260829 歌切 分P13（05:05）。核实：泠鸢yousa 歌曲（Encounters in a Long Journey's Rest）；对应 08-29 审计遗留的 yousa 专场段。",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-compilation-chapter",
+          "replay_date_source": "replay-title",
+          "cut_link": "https://www.bilibili.com/video/BV1gm4C65Ey6/?p=13"
+        }
+      ]
+    },
+    "サリシノハラ": {
+      "row_key": "サリシノハラ",
+      "song_name": "サリシノハラ",
+      "display_song_name": "サリシノハラ（离去之原）",
+      "artist": "みきとP / 初音ミク",
+      "cut_link": "https://www.bilibili.com/video/BV1gm4C65Ey6/?p=14",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-08-29",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切章节验证",
+          "artist": "みきとP / 初音ミク",
+          "replay_id": "BV1RL4k6jEe8",
+          "replay_title": "【小松绿Viridis】突击的随便唱-2026年08月29日13点场",
+          "replay_url": "https://www.bilibili.com/video/BV1RL4k6jEe8/",
+          "remark": "2026-08-29 心灵火Flame合集补录：【小松绿Viridis】20260829 歌切 分P14（04:28）。みきとP 2013 年名曲（离去之原），初音ミク演唱。",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-compilation-chapter",
+          "replay_date_source": "replay-title",
+          "cut_link": "https://www.bilibili.com/video/BV1gm4C65Ey6/?p=14"
         }
       ]
     }

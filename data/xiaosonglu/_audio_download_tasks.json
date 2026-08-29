@@ -5,7 +5,7 @@
     "index": 1,
     "artist": "洛天依Official / ilem",
     "language": "中文",
-    "out": "song_01.m4a",
+    "out": "song_88.m4a",
     "url": "https://www.bilibili.com/video/BV1WGbk6KESs/",
     "playlist_item": null,
     "kind": "single",
@@ -13,9 +13,22 @@
     "title_hint": "勾指起誓"
   },
   {
+    "key": "蝴蝶",
+    "song_name": "蝴蝶",
+    "index": 2,
+    "artist": "洛天依Official",
+    "language": "中文",
+    "out": "song_25.m4a",
+    "url": "https://www.bilibili.com/video/BV1rv8V6DExk/",
+    "playlist_item": 20,
+    "kind": "compilation",
+    "duration_hint": "03:37",
+    "title_hint": "蝴蝶"
+  },
+  {
     "key": "寄明月",
     "song_name": "寄明月",
-    "index": 2,
+    "index": 3,
     "artist": "SING女团 / 乐正绫",
     "language": "中文",
     "out": "song_02.m4a",
@@ -26,9 +39,22 @@
     "title_hint": "寄明月"
   },
   {
+    "key": "绿色",
+    "song_name": "绿色",
+    "index": 4,
+    "artist": "陈雪凝",
+    "language": "中文",
+    "out": "song_103.m4a",
+    "url": "https://www.bilibili.com/video/BV1ZT4k6QEpC/",
+    "playlist_item": null,
+    "kind": "single",
+    "duration_hint": "",
+    "title_hint": "绿色"
+  },
+  {
     "key": "三月雨",
     "song_name": "三月雨",
-    "index": 3,
+    "index": 5,
     "artist": "乐正绫",
     "language": "中文",
     "out": "song_03.m4a",
@@ -41,7 +67,7 @@
   {
     "key": "少女レイ",
     "song_name": "少女レイ",
-    "index": 4,
+    "index": 6,
     "artist": "みきとP / 初音ミク",
     "language": "日文",
     "out": "song_04.m4a",
@@ -52,9 +78,22 @@
     "title_hint": "少女レイ"
   },
   {
+    "key": "下等马",
+    "song_name": "下等马",
+    "index": 7,
+    "artist": "ChiliChill乐团 / 洛天依Official",
+    "language": "中文",
+    "out": "song_64.m4a",
+    "url": "https://www.bilibili.com/video/BV17Wuz6YEci/",
+    "playlist_item": null,
+    "kind": "single",
+    "duration_hint": "",
+    "title_hint": "下等马"
+  },
+  {
     "key": "Virtual to LIVE",
     "song_name": "Virtual to LIVE",
-    "index": 5,
+    "index": 8,
     "artist": "にじさんじ",
     "language": "中文",
     "out": "song_05.m4a",
@@ -65,9 +104,22 @@
     "title_hint": "Virtual to LIVE"
   },
   {
+    "key": "阿拉斯加海湾",
+    "song_name": "阿拉斯加海湾",
+    "index": 9,
+    "artist": "菲道尔",
+    "language": "中文",
+    "out": "song_104.m4a",
+    "url": "https://www.bilibili.com/video/BV1JX4y6fEpy/",
+    "playlist_item": null,
+    "kind": "single",
+    "duration_hint": "",
+    "title_hint": "阿拉斯加海湾"
+  },
+  {
     "key": "爱情讯息",
     "song_name": "爱情讯息",
-    "index": 6,
+    "index": 10,
     "artist": "郭静",
     "language": "中文",
     "out": "song_06.m4a",
@@ -80,7 +132,7 @@
   {
     "key": "白鸟过河滩",
     "song_name": "白鸟过河滩",
-    "index": 7,
+    "index": 11,
     "artist": "ilem / 洛天依Official",
     "language": "中文",
     "out": "song_07.m4a",
@@ -93,7 +145,7 @@
   {
     "key": "苍蝇",
     "song_name": "苍蝇",
-    "index": 8,
+    "index": 12,
     "artist": "ilem / 赤羽",
     "language": "中文",
     "out": "song_08.m4a",
@@ -106,7 +158,7 @@
   {
     "key": "虫儿飞",
     "song_name": "虫儿飞",
-    "index": 9,
+    "index": 13,
     "artist": "郑伊健",
     "language": "中文",
     "out": "song_09.m4a",
@@ -117,9 +169,35 @@
     "title_hint": "虫儿飞"
   },
   {
+    "key": "初恋日記",
+    "song_name": "初恋日記",
+    "index": 14,
+    "artist": "香椎モイミ / 音街鳗",
+    "language": "日文",
+    "out": "song_105.m4a",
+    "url": "https://www.bilibili.com/video/BV1gm4C65Ey6/",
+    "playlist_item": 5,
+    "kind": "compilation",
+    "duration_hint": "",
+    "title_hint": "初恋日記"
+  },
+  {
+    "key": "吹灭小山河",
+    "song_name": "吹灭小山河",
+    "index": 15,
+    "artist": "国风堂 / 司南",
+    "language": "中文",
+    "out": "song_90.m4a",
+    "url": "https://www.bilibili.com/video/BV11F8h6BE4d/",
+    "playlist_item": null,
+    "kind": "single",
+    "duration_hint": "",
+    "title_hint": "吹灭小山河"
+  },
+  {
     "key": "春日影",
     "song_name": "春日影",
-    "index": 10,
+    "index": 16,
     "artist": "MyGO!!!!!",
     "language": "日文",
     "out": "song_10.m4a",
@@ -132,7 +210,7 @@
   {
     "key": "词不达意",
     "song_name": "词不达意",
-    "index": 11,
+    "index": 17,
     "artist": "林忆莲",
     "language": "中文",
     "out": "song_11.m4a",
@@ -145,7 +223,7 @@
   {
     "key": "匆匆那年",
     "song_name": "匆匆那年",
-    "index": 12,
+    "index": 18,
     "artist": "王菲",
     "language": "中文",
     "out": "song_12.m4a",
@@ -158,7 +236,7 @@
   {
     "key": "大声钻石",
     "song_name": "大声钻石",
-    "index": 13,
+    "index": 19,
     "artist": "AKB48 Team SH",
     "language": "中文",
     "out": "song_13.m4a",
@@ -171,7 +249,7 @@
   {
     "key": "カタオモイ",
     "song_name": "カタオモイ",
-    "index": 14,
+    "index": 20,
     "artist": "Aimer",
     "language": "日文",
     "out": "song_14.m4a",
@@ -184,7 +262,7 @@
   {
     "key": "第一只小兔子",
     "song_name": "第一只小兔子",
-    "index": 15,
+    "index": 21,
     "artist": "SNH48 Team NII（AKB48 中文版）",
     "language": "中文",
     "out": "song_15.m4a",
@@ -197,7 +275,7 @@
   {
     "key": "都落ち",
     "song_name": "都落ち",
-    "index": 16,
+    "index": 22,
     "artist": "ヨルシカ",
     "language": "日文",
     "out": "song_16.m4a",
@@ -208,9 +286,22 @@
     "title_hint": "都落ち"
   },
   {
+    "key": "多情岸",
+    "song_name": "多情岸",
+    "index": 23,
+    "artist": "忘川风华录 / 洛天依",
+    "language": "中文",
+    "out": "song_91.m4a",
+    "url": "https://www.bilibili.com/video/BV1yw8h6TEBf/",
+    "playlist_item": null,
+    "kind": "single",
+    "duration_hint": "",
+    "title_hint": "多情岸"
+  },
+  {
     "key": "二人セゾン",
     "song_name": "二人セゾン",
-    "index": 17,
+    "index": 24,
     "artist": "乃木坂46",
     "language": "日文",
     "out": "song_17.m4a",
@@ -223,7 +314,7 @@
   {
     "key": "繁华唱遍",
     "song_name": "繁华唱遍",
-    "index": 18,
+    "index": 25,
     "artist": "乐正绫",
     "language": "中文",
     "out": "song_18.m4a",
@@ -236,7 +327,7 @@
   {
     "key": "風になる",
     "song_name": "風になる",
-    "index": 19,
+    "index": 26,
     "artist": "つじあやの",
     "language": "日文",
     "out": "song_19.m4a",
@@ -249,7 +340,7 @@
   {
     "key": "故梦",
     "song_name": "故梦",
-    "index": 20,
+    "index": 27,
     "artist": "橙翼",
     "language": "中文",
     "out": "song_20.m4a",
@@ -260,9 +351,22 @@
     "title_hint": "故梦"
   },
   {
+    "key": "光",
+    "song_name": "光",
+    "index": 28,
+    "artist": "Kide / Ddickky / 星尘",
+    "language": "中文",
+    "out": "song_97.m4a",
+    "url": "https://www.bilibili.com/video/BV1m9886kEMZ/?p=4",
+    "playlist_item": null,
+    "kind": "compilation",
+    "duration_hint": "",
+    "title_hint": "光"
+  },
+  {
     "key": "光景",
     "song_name": "光景",
-    "index": 21,
+    "index": 29,
     "artist": "篠澤広（初星学園）",
     "language": "日文",
     "out": "song_21.m4a",
@@ -275,7 +379,7 @@
   {
     "key": "航向你的海岛",
     "song_name": "航向你的海岛",
-    "index": 22,
+    "index": 30,
     "artist": "泠鸢yousa",
     "language": "中文",
     "out": "song_22.m4a",
@@ -288,7 +392,7 @@
   {
     "key": "横竖撇点折",
     "song_name": "横竖撇点折",
-    "index": 23,
+    "index": 31,
     "artist": "米白",
     "language": "中文",
     "out": "song_23.m4a",
@@ -301,33 +405,20 @@
   {
     "key": "后来",
     "song_name": "后来",
-    "index": 24,
+    "index": 32,
     "artist": "刘若英",
     "language": "中文",
     "out": "song_24.m4a",
     "url": "https://www.bilibili.com/video/BV17du269EmN",
-    "section": "00:05:00-00:07:23",
+    "playlist_item": null,
     "kind": "section",
     "duration_hint": "",
     "title_hint": "后来"
   },
   {
-    "key": "蝴蝶",
-    "song_name": "蝴蝶",
-    "index": 25,
-    "artist": "洛天依Official",
-    "language": "中文",
-    "out": "song_25.m4a",
-    "url": "https://www.bilibili.com/video/BV1rv8V6DExk/",
-    "playlist_item": 20,
-    "kind": "compilation",
-    "duration_hint": "03:37",
-    "title_hint": "蝴蝶"
-  },
-  {
     "key": "花粉症",
     "song_name": "花粉症",
-    "index": 26,
+    "index": 33,
     "artist": "诗岸 / 海伊",
     "language": "中文",
     "out": "song_26.m4a",
@@ -340,7 +431,7 @@
   {
     "key": "锦鲤抄",
     "song_name": "锦鲤抄",
-    "index": 27,
+    "index": 34,
     "artist": "银临 / 云之泣",
     "language": "中文",
     "out": "song_27.m4a",
@@ -353,7 +444,7 @@
   {
     "key": "绝不认输",
     "song_name": "绝不认输",
-    "index": 28,
+    "index": 35,
     "artist": "王绎龙",
     "language": "中文",
     "out": "song_28.m4a",
@@ -366,7 +457,7 @@
   {
     "key": "君色に染まる",
     "song_name": "君色に染まる",
-    "index": 29,
+    "index": 36,
     "artist": "TOKOTOKO（西沢さんP） / GUMI",
     "language": "日文",
     "out": "song_29.m4a",
@@ -379,7 +470,7 @@
   {
     "key": "可愛くてごめん",
     "song_name": "可愛くてごめん",
-    "index": 30,
+    "index": 37,
     "artist": "HoneyWorks / 早見沙織",
     "language": "日文",
     "out": "song_30.m4a",
@@ -392,7 +483,7 @@
   {
     "key": "涟漪",
     "song_name": "涟漪",
-    "index": 31,
+    "index": 38,
     "artist": "CMJ",
     "language": "中文",
     "out": "song_31.m4a",
@@ -403,9 +494,22 @@
     "title_hint": "涟漪"
   },
   {
+    "key": "炼金少女日志",
+    "song_name": "炼金少女日志",
+    "index": 39,
+    "artist": "时之歌Project（泛音堂）/ 言和",
+    "language": "中文",
+    "out": "song_106.m4a",
+    "url": "https://www.bilibili.com/video/BV1i8gV6xExv/",
+    "playlist_item": null,
+    "kind": "single",
+    "duration_hint": "",
+    "title_hint": "炼金少女日志"
+  },
+  {
     "key": "恋爱困难少女",
     "song_name": "恋爱困难少女",
-    "index": 32,
+    "index": 40,
     "artist": "ChiliChill乐团",
     "language": "中文",
     "out": "song_32.m4a",
@@ -416,9 +520,61 @@
     "title_hint": "恋爱困难少女"
   },
   {
+    "key": "恋苦",
+    "song_name": "恋苦",
+    "index": 41,
+    "artist": "月犬P / 星尘",
+    "language": "中文",
+    "out": "song_96.m4a",
+    "url": "https://www.bilibili.com/video/BV1m9886kEMZ/?p=2",
+    "playlist_item": null,
+    "kind": "compilation",
+    "duration_hint": "",
+    "title_hint": "恋苦"
+  },
+  {
+    "key": "临川浮梦",
+    "song_name": "临川浮梦",
+    "index": 42,
+    "artist": "忘川风华录 / 赤羽、星尘",
+    "language": "中文",
+    "out": "song_100.m4a",
+    "url": "https://www.bilibili.com/video/BV1gm4C65Ey6/",
+    "playlist_item": 6,
+    "kind": "compilation",
+    "duration_hint": "03:59",
+    "title_hint": "临川浮梦"
+  },
+  {
+    "key": "流光记",
+    "song_name": "流光记",
+    "index": 43,
+    "artist": "银临 / 初音未来",
+    "language": "中文",
+    "out": "song_102.m4a",
+    "url": "https://www.bilibili.com/video/BV1gm4C65Ey6/",
+    "playlist_item": 15,
+    "kind": "compilation",
+    "duration_hint": "04:41",
+    "title_hint": "流光记"
+  },
+  {
+    "key": "流霰",
+    "song_name": "流霰",
+    "index": 44,
+    "artist": "旅行的蜗牛（Snapmod）/ 星尘",
+    "language": "中文",
+    "out": "song_92.m4a",
+    "url": "https://www.bilibili.com/video/BV1Td886GEoN/",
+    "playlist_item": null,
+    "kind": "single",
+    "duration_hint": "",
+    "title_hint": "流霰"
+  },
+  {
     "key": "玛德琳娜电塔",
     "song_name": "玛德琳娜电塔",
-    "index": 33,
+    "index": 45,
     "artist": "Soda纯白 / 洛天依Official",
     "language": "中文",
     "out": "song_33.m4a",
@@ -431,7 +587,7 @@
   {
     "key": "蜜月アン・ドゥ・トロワ",
     "song_name": "蜜月アン・ドゥ・トロワ",
-    "index": 34,
+    "index": 47,
     "artist": "DATEKEN / 鏡音リン",
     "language": "日文",
     "out": "song_34.m4a",
@@ -444,7 +600,7 @@
   {
     "key": "木偶",
     "song_name": "木偶",
-    "index": 35,
+    "index": 48,
     "artist": "李艺彤",
     "language": "中文",
     "out": "song_35.m4a",
@@ -457,7 +613,7 @@
   {
     "key": "目的论",
     "song_name": "目的论",
-    "index": 36,
+    "index": 49,
     "artist": "JUSF周存 / 洛天依 / 言和",
     "language": "中文",
     "out": "song_36.m4a",
@@ -468,9 +624,35 @@
     "title_hint": "目的论"
   },
   {
+    "key": "你究竟有几个好妹妹",
+    "song_name": "你究竟有几个好妹妹",
+    "index": 51,
+    "artist": "孟庭苇",
+    "language": "中文",
+    "out": "song_107.m4a",
+    "url": "https://www.bilibili.com/video/BV1dd4y6oEQb/",
+    "playlist_item": null,
+    "kind": "single",
+    "duration_hint": "",
+    "title_hint": "你究竟有几个好妹妹"
+  },
+  {
+    "key": "女孩你为何踮脚尖",
+    "song_name": "女孩你为何踮脚尖",
+    "index": 52,
+    "artist": "Ddickky / 墨兰花语 / 洛天依",
+    "language": "中文",
+    "out": "song_108.m4a",
+    "url": "https://www.bilibili.com/video/BV1idb16YEjD/",
+    "playlist_item": 12,
+    "kind": "compilation",
+    "duration_hint": "",
+    "title_hint": "女孩你为何踮脚尖"
+  },
+  {
     "key": "暖暖",
     "song_name": "暖暖",
-    "index": 37,
+    "index": 53,
     "artist": "梁静茹",
     "language": "中文",
     "out": "song_37.m4a",
@@ -483,7 +665,7 @@
   {
     "key": "偏食",
     "song_name": "偏食",
-    "index": 38,
+    "index": 54,
     "artist": "香椎モイミ / 初音ミク",
     "language": "日文",
     "out": "song_38.m4a",
@@ -496,7 +678,7 @@
   {
     "key": "聘书",
     "song_name": "聘书",
-    "index": 39,
+    "index": 55,
     "artist": "洛天依Official",
     "language": "中文",
     "out": "song_39.m4a",
@@ -507,9 +689,61 @@
     "title_hint": "聘书"
   },
   {
+    "key": "泼墨漓江",
+    "song_name": "泼墨漓江",
+    "index": 56,
+    "artist": "玖玲 / 冥凰 / 泠鸢yousa",
+    "language": "中文",
+    "out": "song_101.m4a",
+    "url": "https://www.bilibili.com/video/BV1gm4C65Ey6/",
+    "playlist_item": 11,
+    "kind": "compilation",
+    "duration_hint": "04:58",
+    "title_hint": "泼墨漓江"
+  },
+  {
+    "key": "栖凰",
+    "song_name": "栖凰",
+    "index": 57,
+    "artist": "忘川风华录 / 星尘",
+    "language": "中文",
+    "out": "song_93.m4a",
+    "url": "https://www.bilibili.com/video/BV1BN8i66Ej6/",
+    "playlist_item": null,
+    "kind": "single",
+    "duration_hint": "",
+    "title_hint": "栖凰"
+  },
+  {
+    "key": "绮凝盏",
+    "song_name": "绮凝盏",
+    "index": 58,
+    "artist": "MeLo / 海伊",
+    "language": "中文",
+    "out": "song_109.m4a",
+    "url": "https://www.bilibili.com/video/BV1gm4C65Ey6/",
+    "playlist_item": 10,
+    "kind": "compilation",
+    "duration_hint": "",
+    "title_hint": "绮凝盏"
+  },
+  {
+    "key": "青鸟衔风",
+    "song_name": "青鸟衔风",
+    "index": 59,
+    "artist": "海伊 / 诗岸",
+    "language": "中文",
+    "out": "song_99.m4a",
+    "url": "https://www.bilibili.com/video/BV1mwuz62EfH/",
+    "playlist_item": null,
+    "kind": "single",
+    "duration_hint": "",
+    "title_hint": "青鸟衔风"
+  },
+  {
     "key": "青柠",
     "song_name": "青柠",
-    "index": 40,
+    "index": 60,
     "artist": "徐秉龙 / 桃十五",
     "language": "中文",
     "out": "song_40.m4a",
@@ -522,7 +756,7 @@
   {
     "key": "人间不值得",
     "song_name": "人间不值得",
-    "index": 41,
+    "index": 61,
     "artist": "黄诗扶",
     "language": "中文",
     "out": "song_41.m4a",
@@ -535,7 +769,7 @@
   {
     "key": "人间失宠",
     "song_name": "人间失宠",
-    "index": 42,
+    "index": 62,
     "artist": "闹闹丶 / 洛天依Official",
     "language": "中文",
     "out": "song_42.m4a",
@@ -548,7 +782,7 @@
   {
     "key": "人间应又雪",
     "song_name": "人间应又雪",
-    "index": 43,
+    "index": 63,
     "artist": "忘川风华录 / 洛天依Official / 言和",
     "language": "中文",
     "out": "song_43.m4a",
@@ -561,7 +795,7 @@
   {
     "key": "山遥路远",
     "song_name": "山遥路远",
-    "index": 44,
+    "index": 64,
     "artist": "ChiliChill乐团 / 乐正绫",
     "language": "中文",
     "out": "song_44.m4a",
@@ -574,7 +808,7 @@
   {
     "key": "上山岗",
     "song_name": "上山岗",
-    "index": 45,
+    "index": 65,
     "artist": "ilem / 洛天依Official",
     "language": "中文",
     "out": "song_45.m4a",
@@ -587,7 +821,7 @@
   {
     "key": "食虫植物",
     "song_name": "食虫植物",
-    "index": 46,
+    "index": 66,
     "artist": "理芽",
     "language": "日文",
     "out": "song_46.m4a",
@@ -600,7 +834,7 @@
   {
     "key": "世界は恋に落ちている",
     "song_name": "世界は恋に落ちている",
-    "index": 47,
+    "index": 67,
     "artist": "CHiCO with HoneyWorks",
     "language": "日文",
     "out": "song_47.m4a",
@@ -613,7 +847,7 @@
   {
     "key": "世末歌者",
     "song_name": "世末歌者",
-    "index": 48,
+    "index": 68,
     "artist": "乐正绫 / COP",
     "language": "中文",
     "out": "song_48.m4a",
@@ -624,9 +858,22 @@
     "title_hint": "世末歌者"
   },
   {
+    "key": "是风动",
+    "song_name": "是风动",
+    "index": 69,
+    "artist": "银临 / 河图",
+    "language": "中文",
+    "out": "song_110.m4a",
+    "url": "https://www.bilibili.com/video/BV1gm4C65Ey6/",
+    "playlist_item": 8,
+    "kind": "compilation",
+    "duration_hint": "",
+    "title_hint": "是风动"
+  },
+  {
     "key": "霜雪千年",
     "song_name": "霜雪千年",
-    "index": 49,
+    "index": 70,
     "artist": "洛天依Official / 乐正绫",
     "language": "中文",
     "out": "song_49.m4a",
@@ -639,7 +886,7 @@
   {
     "key": "私、アイドル宣言",
     "song_name": "私、アイドル宣言",
-    "index": 50,
+    "index": 71,
     "artist": "HoneyWorks（CHiCO with HoneyWorks）",
     "language": "日文",
     "out": "song_50.m4a",
@@ -652,7 +899,7 @@
   {
     "key": "私のSymphony",
     "song_name": "私のSymphony",
-    "index": 51,
+    "index": 72,
     "artist": "Liella!（澁谷かのん）",
     "language": "日文",
     "out": "song_51.m4a",
@@ -665,7 +912,7 @@
   {
     "key": "思华年",
     "song_name": "思华年",
-    "index": 52,
+    "index": 73,
     "artist": "忘川风华录 / 星尘",
     "language": "中文",
     "out": "song_52.m4a",
@@ -676,9 +923,22 @@
     "title_hint": "思华年"
   },
   {
+    "key": "四重罪孽",
+    "song_name": "四重罪孽",
+    "index": 74,
+    "artist": "DELA / 雨狸 / 洛天依、言和、乐正绫",
+    "language": "中文",
+    "out": "song_111.m4a",
+    "url": "https://www.bilibili.com/video/BV1idb16YEjD/",
+    "playlist_item": 6,
+    "kind": "compilation",
+    "duration_hint": "",
+    "title_hint": "四重罪孽"
+  },
+  {
     "key": "苏州河",
     "song_name": "苏州河",
-    "index": 53,
+    "index": 75,
     "artist": "薛凯琪",
     "language": "中文",
     "out": "song_53.m4a",
@@ -691,7 +951,7 @@
   {
     "key": "碎梦",
     "song_name": "碎梦",
-    "index": 54,
+    "index": 76,
     "artist": "COP / 乐正绫",
     "language": "中文",
     "out": "song_54.m4a",
@@ -704,7 +964,7 @@
   {
     "key": "所以我伸出了手",
     "song_name": "所以我伸出了手",
-    "index": 55,
+    "index": 77,
     "artist": "Evalia / 星尘",
     "language": "中文",
     "out": "song_55.m4a",
@@ -717,7 +977,7 @@
   {
     "key": "太聪明",
     "song_name": "太聪明",
-    "index": 56,
+    "index": 78,
     "artist": "陈绮贞",
     "language": "中文",
     "out": "song_56.m4a",
@@ -730,7 +990,7 @@
   {
     "key": "棠梨煎雪",
     "song_name": "棠梨煎雪",
-    "index": 57,
+    "index": 79,
     "artist": "银临",
     "language": "中文",
     "out": "song_57.m4a",
@@ -743,7 +1003,7 @@
   {
     "key": "跳楼机",
     "song_name": "跳楼机",
-    "index": 58,
+    "index": 80,
     "artist": "LBI利比",
     "language": "中文",
     "out": "song_58.m4a",
@@ -756,7 +1016,7 @@
   {
     "key": "外婆的澎湖湾",
     "song_name": "外婆的澎湖湾",
-    "index": 59,
+    "index": 81,
     "artist": "潘安邦",
     "language": "中文",
     "out": "song_59.m4a",
@@ -769,7 +1029,7 @@
   {
     "key": "外婆桥",
     "song_name": "外婆桥",
-    "index": 60,
+    "index": 82,
     "artist": "任然",
     "language": "中文",
     "out": "song_60.m4a",
@@ -782,7 +1042,7 @@
   {
     "key": "未来は風のように",
     "song_name": "未来は風のように",
-    "index": 61,
+    "index": 83,
     "artist": "Liella!",
     "language": "日文",
     "out": "song_61.m4a",
@@ -795,7 +1055,7 @@
   {
     "key": "我的悲伤是水做的",
     "song_name": "我的悲伤是水做的",
-    "index": 62,
+    "index": 84,
     "artist": "ChiliChill乐团 / 洛天依Official",
     "language": "中文",
     "out": "song_62.m4a",
@@ -808,7 +1068,7 @@
   {
     "key": "我多想说再见啊",
     "song_name": "我多想说再见啊",
-    "index": 63,
+    "index": 85,
     "artist": "柯立可",
     "language": "中文",
     "out": "song_63.m4a",
@@ -819,22 +1079,74 @@
     "title_hint": "我多想说再见啊"
   },
   {
-    "key": "下等马",
-    "song_name": "下等马",
-    "index": 64,
-    "artist": "ChiliChill乐团 / 洛天依Official",
+    "key": "下个夏天的烟火",
+    "song_name": "下个夏天的烟火",
+    "index": 86,
+    "artist": "Cidai Jun / 海伊",
     "language": "中文",
-    "out": "song_64.m4a",
-    "url": "https://www.bilibili.com/video/BV17Wuz6YEci/",
+    "out": "song_112.m4a",
+    "url": "https://www.bilibili.com/video/BV1gm4C65Ey6/",
+    "playlist_item": 9,
+    "kind": "compilation",
+    "duration_hint": "",
+    "title_hint": "下个夏天的烟火"
+  },
+  {
+    "key": "夏恋慕",
+    "song_name": "夏恋慕",
+    "index": 87,
+    "artist": "kobasolo / 春茶",
+    "language": "日文",
+    "out": "song_95.m4a",
+    "url": "https://www.bilibili.com/video/BV1m9886kEMZ/?p=7",
+    "playlist_item": null,
+    "kind": "compilation",
+    "duration_hint": "",
+    "title_hint": "夏恋慕"
+  },
+  {
+    "key": "夏日已所剩无几",
+    "song_name": "夏日已所剩无几",
+    "index": 88,
+    "artist": "泠鸢yousa",
+    "language": "中文",
+    "out": "song_113.m4a",
+    "url": "https://www.bilibili.com/video/BV1gm4C65Ey6/",
+    "playlist_item": 12,
+    "kind": "compilation",
+    "duration_hint": "",
+    "title_hint": "夏日已所剩无几"
+  },
+  {
+    "key": "夏霞",
+    "song_name": "夏霞",
+    "index": 89,
+    "artist": "あたらよ",
+    "language": "日文",
+    "out": "song_94.m4a",
+    "url": "https://www.bilibili.com/video/BV12o8866EsR/",
     "playlist_item": null,
     "kind": "single",
     "duration_hint": "",
-    "title_hint": "下等马"
+    "title_hint": "夏霞"
+  },
+  {
+    "key": "想和你迎着台风去看海",
+    "song_name": "想和你迎着台风去看海",
+    "index": 90,
+    "artist": "桑拿猫黑糖 / 洛天依",
+    "language": "中文",
+    "out": "song_114.m4a",
+    "url": "https://www.bilibili.com/video/BV1ta4y6VEQy/",
+    "playlist_item": null,
+    "kind": "single",
+    "duration_hint": "",
+    "title_hint": "想和你迎着台风去看海"
   },
   {
     "key": "小幸运",
     "song_name": "小幸运",
-    "index": 65,
+    "index": 91,
     "artist": "田馥甄",
     "language": "中文",
     "out": "song_65.m4a",
@@ -847,7 +1159,7 @@
   {
     "key": "心愿便利贴",
     "song_name": "心愿便利贴",
-    "index": 66,
+    "index": 92,
     "artist": "元若蓝 / 大Q秉洛",
     "language": "中文",
     "out": "song_66.m4a",
@@ -858,9 +1170,22 @@
     "title_hint": "心愿便利贴"
   },
   {
+    "key": "虚拟",
+    "song_name": "虚拟",
+    "index": 93,
+    "artist": "陈粒",
+    "language": "中文",
+    "out": "song_115.m4a",
+    "url": "https://www.bilibili.com/video/BV1idb16YEjD/",
+    "playlist_item": 10,
+    "kind": "compilation",
+    "duration_hint": "",
+    "title_hint": "虚拟"
+  },
+  {
     "key": "夜蝶",
     "song_name": "夜蝶",
-    "index": 67,
+    "index": 94,
     "artist": "SNH48（李艺彤/黄婷婷）",
     "language": "中文",
     "out": "song_67.m4a",
@@ -873,7 +1198,7 @@
   {
     "key": "一半一半",
     "song_name": "一半一半",
-    "index": 68,
+    "index": 95,
     "artist": "洛天依Official",
     "language": "中文",
     "out": "song_68.m4a",
@@ -886,7 +1211,7 @@
   {
     "key": "踊り子",
     "song_name": "踊り子",
-    "index": 69,
+    "index": 96,
     "artist": "Vaundy",
     "language": "日文",
     "out": "song_69.m4a",
@@ -899,7 +1224,7 @@
   {
     "key": "迂回步",
     "song_name": "迂回步",
-    "index": 70,
+    "index": 97,
     "artist": "星辉P / 洛天依Official / 乐正绫 / 雨狸",
     "language": "中文",
     "out": "song_70.m4a",
@@ -912,7 +1237,7 @@
   {
     "key": "雨爱",
     "song_name": "雨爱",
-    "index": 71,
+    "index": 98,
     "artist": "杨丞琳",
     "language": "中文",
     "out": "song_71.m4a",
@@ -923,9 +1248,35 @@
     "title_hint": "雨爱"
   },
   {
+    "key": "远旅休憩中的邂逅",
+    "song_name": "远旅休憩中的邂逅",
+    "index": 99,
+    "artist": "泠鸢yousa",
+    "language": "中文",
+    "out": "song_116.m4a",
+    "url": "https://www.bilibili.com/video/BV1gm4C65Ey6/",
+    "playlist_item": 13,
+    "kind": "compilation",
+    "duration_hint": "",
+    "title_hint": "远旅休憩中的邂逅"
+  },
+  {
+    "key": "月出",
+    "song_name": "月出",
+    "index": 100,
+    "artist": "双笙（词：温莨 / 曲：徐梦圆）",
+    "language": "中文",
+    "out": "song_117.m4a",
+    "url": "https://www.bilibili.com/video/BV1idb16YEjD/",
+    "playlist_item": 2,
+    "kind": "compilation",
+    "duration_hint": "",
+    "title_hint": "月出"
+  },
+  {
     "key": "月が綺麗ね",
     "song_name": "月が綺麗ね",
-    "index": 72,
+    "index": 101,
     "artist": "柿崎ユウタ",
     "language": "日文",
     "out": "song_72.m4a",
@@ -936,9 +1287,22 @@
     "title_hint": "月が綺麗ね"
   },
   {
+    "key": "月巷",
+    "song_name": "月巷",
+    "index": 102,
+    "artist": "乐正绫",
+    "language": "中文",
+    "out": "song_98.m4a",
+    "url": "https://www.bilibili.com/video/BV1Msg56SEuV/",
+    "playlist_item": null,
+    "kind": "single",
+    "duration_hint": "",
+    "title_hint": "月巷"
+  },
+  {
     "key": "纸星瓶",
     "song_name": "纸星瓶",
-    "index": 73,
+    "index": 103,
     "artist": "海蓝色 / 星尘",
     "language": "中文",
     "out": "song_73.m4a",
@@ -951,7 +1315,7 @@
   {
     "key": "CHASE!",
     "song_name": "CHASE!",
-    "index": 74,
+    "index": 104,
     "artist": "優木せつ菜（楠木灯）",
     "language": "日文",
     "out": "song_74.m4a",
@@ -964,7 +1328,7 @@
   {
     "key": "flos",
     "song_name": "flos",
-    "index": 75,
+    "index": 105,
     "artist": "R Sound Design（初音ミク）",
     "language": "日文",
     "out": "song_75.m4a",
@@ -977,7 +1341,7 @@
   {
     "key": "Fly me to the star",
     "song_name": "Fly me to the star",
-    "index": 76,
+    "index": 106,
     "artist": "九九组（少女歌剧）",
     "language": "日文",
     "out": "song_76.m4a",
@@ -990,7 +1354,7 @@
   {
     "key": "I LOVE U",
     "song_name": "I LOVE U",
-    "index": 77,
+    "index": 107,
     "artist": "洛天依（阿良良木健）",
     "language": "中文",
     "out": "song_77.m4a",
@@ -1003,7 +1367,7 @@
   {
     "key": "MORE JUMP MORE!",
     "song_name": "MORE JUMP MORE!",
-    "index": 78,
+    "index": 108,
     "artist": "MORE MORE JUMP！",
     "language": "日文",
     "out": "song_78.m4a",
@@ -1016,7 +1380,7 @@
   {
     "key": "SOS",
     "song_name": "SOS",
-    "index": 79,
+    "index": 109,
     "artist": "黛冬優子（偶像大师 闪耀色彩）",
     "language": "日文",
     "out": "song_79.m4a",
@@ -1029,7 +1393,7 @@
   {
     "key": "Starlight Prologue",
     "song_name": "Starlight Prologue",
-    "index": 80,
+    "index": 110,
     "artist": "Liella!",
     "language": "日文",
     "out": "song_80.m4a",
@@ -1042,7 +1406,7 @@
   {
     "key": "START:DASH!!!",
     "song_name": "START:DASH!!!",
-    "index": 81,
+    "index": 111,
     "artist": "μ's",
     "language": "日文",
     "out": "song_81.m4a",
@@ -1053,9 +1417,35 @@
     "title_hint": "START:DASH!!!"
   },
   {
+    "key": "Talking to the Rain",
+    "song_name": "Talking to the Rain",
+    "index": 112,
+    "artist": "芹菜猪肉大馄饨 / 星尘Official、海伊",
+    "language": "中文",
+    "out": "song_118.m4a",
+    "url": "https://www.bilibili.com/video/BV1Hm4y6AEC3/",
+    "playlist_item": null,
+    "kind": "single",
+    "duration_hint": "",
+    "title_hint": "Talking to the Rain"
+  },
+  {
+    "key": "YOU & IDOL",
+    "song_name": "YOU & IDOL",
+    "index": 113,
+    "artist": "相対性理論",
+    "language": "日文",
+    "out": "song_89.m4a",
+    "url": "https://www.bilibili.com/video/BV1P6ud6dEkm/",
+    "playlist_item": null,
+    "kind": "single",
+    "duration_hint": "",
+    "title_hint": "YOU & IDOL"
+  },
+  {
     "key": "アイドル",
     "song_name": "アイドル",
-    "index": 82,
+    "index": 114,
     "artist": "YOASOBI",
     "language": "日文",
     "out": "song_82.m4a",
@@ -1068,7 +1458,7 @@
   {
     "key": "アスノヨゾラ哨戒班",
     "song_name": "アスノヨゾラ哨戒班",
-    "index": 83,
+    "index": 115,
     "artist": "Orangestar / IA",
     "language": "日文",
     "out": "song_83.m4a",
@@ -1081,7 +1471,7 @@
   {
     "key": "アヤノの幸福理論",
     "song_name": "アヤノの幸福理論",
-    "index": 84,
+    "index": 116,
     "artist": "じん / IA",
     "language": "日文",
     "out": "song_84.m4a",
@@ -1094,7 +1484,7 @@
   {
     "key": "おともだち",
     "song_name": "おともだち",
-    "index": 85,
+    "index": 117,
     "artist": "ファントムシータ",
     "language": "日文",
     "out": "song_85.m4a",
@@ -1105,9 +1495,22 @@
     "title_hint": "おともだち"
   },
   {
+    "key": "サリシノハラ",
+    "song_name": "サリシノハラ",
+    "index": 118,
+    "artist": "みきとP / 初音ミク",
+    "language": "日文",
+    "out": "song_119.m4a",
+    "url": "https://www.bilibili.com/video/BV1gm4C65Ey6/",
+    "playlist_item": 14,
+    "kind": "compilation",
+    "duration_hint": "",
+    "title_hint": "サリシノハラ"
+  },
+  {
     "key": "シリウスの心臓",
     "song_name": "シリウスの心臓",
-    "index": 86,
+    "index": 119,
     "artist": "ヰ世界情緒",
     "language": "日文",
     "out": "song_86.m4a",
@@ -1120,7 +1523,7 @@
   {
     "key": "プロポーズ",
     "song_name": "プロポーズ",
-    "index": 87,
+    "index": 120,
     "artist": "なとり",
     "language": "日文",
     "out": "song_87.m4a",

@@ -23,6 +23,45 @@
     "cut_link": "https://www.bilibili.com/video/BV1WGbk6KESs/"
   },
   {
+    "song_name": "蝴蝶",
+    "row_key": "蝴蝶",
+    "artist": "洛天依Official",
+    "language": "中文",
+    "cut": [
+      {
+        "kind": "single",
+        "bvid": "BV1Kt8i6REvs",
+        "chapter": "",
+        "clip_title": "【小松绿Viridis】 蝴蝶",
+        "duration": "03:43",
+        "url": "https://www.bilibili.com/video/BV1Kt8i6REvs/"
+      },
+      {
+        "kind": "compilation",
+        "bvid": "BV1rv8V6DExk",
+        "chapter": "20-蝴蝶",
+        "clip_title": "【663645TV】神回！我已启动！全力绿来唱完了！8月18日歌切合集【小松绿Viridis】",
+        "duration": "03:37",
+        "url": "https://www.bilibili.com/video/BV1rv8V6DExk/"
+      },
+      {
+        "kind": "collection-chapter",
+        "bvid": "BV1idb16YEjD",
+        "chapter": "P8 蝴蝶",
+        "clip_title": "【小松绿Viridis】20260815 歌切",
+        "duration": "03:34",
+        "url": "https://www.bilibili.com/video/BV1idb16YEjD/?p=8"
+      }
+    ],
+    "replay": {
+      "replay_id": "BV1rv8V6DExk",
+      "time": "01:19:50",
+      "end_time": "01:23:27",
+      "cut_link": "https://www.bilibili.com/video/BV1rv8V6DExk/"
+    },
+    "cut_link": "https://www.bilibili.com/video/BV1rv8V6DExk/"
+  },
+  {
     "song_name": "寄明月",
     "row_key": "寄明月",
     "artist": "SING女团 / 乐正绫",
@@ -35,6 +74,14 @@
         "clip_title": "【663645TV】神回！我已启动！全力绿来唱完了！8月18日歌切合集【小松绿Viridis】",
         "duration": "03:48",
         "url": "https://www.bilibili.com/video/BV1rv8V6DExk/"
+      },
+      {
+        "kind": "single",
+        "bvid": "BV1zq836rEHD",
+        "chapter": "",
+        "clip_title": "【小松绿Viridis/歌切】寄明月",
+        "duration": "03:51",
+        "url": "https://www.bilibili.com/video/BV1zq836rEHD/"
       }
     ],
     "replay": {
@@ -46,11 +93,66 @@
     "cut_link": "https://www.bilibili.com/video/BV1rv8V6DExk/"
   },
   {
+    "song_name": "绿色",
+    "row_key": "绿色",
+    "artist": "陈雪凝",
+    "language": "中文",
+    "cut": [
+      {
+        "kind": "single",
+        "bvid": "BV1qg4k6SEMi",
+        "chapter": "",
+        "clip_title": "【小松绿Viridis】神中神《绿色》羽啾进入直播间有人心乱了",
+        "duration": "05:05",
+        "url": "https://www.bilibili.com/video/BV1qg4k6SEMi/"
+      },
+      {
+        "kind": "single",
+        "bvid": "BV1qZ4y6xE1j",
+        "chapter": "",
+        "clip_title": "【小松绿Viridis/歌切】绿色",
+        "duration": "04:28",
+        "url": "https://www.bilibili.com/video/BV1qZ4y6xE1j/"
+      },
+      {
+        "kind": "single",
+        "bvid": "BV1ZT4k6QEpC",
+        "chapter": "",
+        "clip_title": "【小松绿】《绿色》",
+        "duration": "04:40",
+        "url": "https://www.bilibili.com/video/BV1ZT4k6QEpC/"
+      },
+      {
+        "kind": "single",
+        "bvid": "BV1QG8o6xE13",
+        "chapter": "",
+        "clip_title": "『绿 色💚』【小松绿/四时小路/羽啾】",
+        "duration": "01:43",
+        "url": "https://www.bilibili.com/video/BV1QG8o6xE13/"
+      }
+    ],
+    "replay": {
+      "replay_id": "BV1RL4k6jEe8",
+      "time": "00:33:30",
+      "end_time": "00:40:30",
+      "cut_link": "https://www.bilibili.com/video/BV1ZT4k6QEpC/"
+    },
+    "cut_link": "https://www.bilibili.com/video/BV1ZT4k6QEpC/"
+  },
+  {
     "song_name": "三月雨",
     "row_key": "三月雨",
     "artist": "乐正绫",
     "language": "中文",
     "cut": [
+      {
+        "kind": "single",
+        "bvid": "BV1ky876wE69",
+        "chapter": "",
+        "clip_title": "【小松绿Viridis】 三月雨 已雪耻",
+        "duration": "04:37",
+        "url": "https://www.bilibili.com/video/BV1ky876wE69/"
+      },
       {
         "kind": "single",
         "bvid": "BV1tA856aE3R",
@@ -100,6 +202,29 @@
     "cut_link": "https://www.bilibili.com/video/BV1Xiu86aEwV/"
   },
   {
+    "song_name": "下等马",
+    "row_key": "下等马",
+    "artist": "ChiliChill乐团 / 洛天依Official",
+    "language": "中文",
+    "cut": [
+      {
+        "kind": "single",
+        "bvid": "BV17Wuz6YEci",
+        "chapter": "",
+        "clip_title": "【小松绿Viridis】《下等马》丨“一身素青纱 草柄当头花”",
+        "duration": "",
+        "url": "https://www.bilibili.com/video/BV17Wuz6YEci/"
+      }
+    ],
+    "replay": {
+      "replay_id": "BV1RL4k6jEe8",
+      "time": "01:51:00",
+      "end_time": "01:56:00",
+      "cut_link": "https://www.bilibili.com/video/BV17Wuz6YEci/"
+    },
+    "cut_link": "https://www.bilibili.com/video/BV17Wuz6YEci/"
+  },
+  {
     "song_name": "Virtual to LIVE",
     "row_key": "Virtual to LIVE",
     "artist": "にじさんじ",
@@ -129,6 +254,29 @@
       "cut_link": "https://www.bilibili.com/video/BV1WS8c6XE9w?p=16"
     },
     "cut_link": "https://www.bilibili.com/video/BV1XAu16gE7U/"
+  },
+  {
+    "song_name": "阿拉斯加海湾",
+    "row_key": "阿拉斯加海湾",
+    "artist": "菲道尔",
+    "language": "中文",
+    "cut": [
+      {
+        "kind": "single",
+        "bvid": "BV1JX4y6fEpy",
+        "chapter": "",
+        "clip_title": "上天啊 你难道不知道我很爱她【小松绿Viridis】阿拉斯加海湾",
+        "duration": "03:58",
+        "url": "https://www.bilibili.com/video/BV1JX4y6fEpy/"
+      }
+    ],
+    "replay": {
+      "replay_id": "BV1RL4k6jEe8",
+      "time": "00:48:00",
+      "end_time": "00:53:00",
+      "cut_link": "https://www.bilibili.com/video/BV1JX4y6fEpy/"
+    },
+    "cut_link": "https://www.bilibili.com/video/BV1JX4y6fEpy/"
   },
   {
     "song_name": "爱情讯息",
@@ -223,6 +371,47 @@
     "cut_link": "https://www.bilibili.com/video/BV1RZuy6CEjs/"
   },
   {
+    "song_name": "初恋日記",
+    "row_key": "初恋日記",
+    "artist": "香椎モイミ / 音街鳗",
+    "language": "日文",
+    "cut": [
+      {
+        "kind": "collection-chapter",
+        "bvid": "BV1gm4C65Ey6",
+        "chapter": "P5 初恋日記",
+        "clip_title": "【小松绿Viridis】20260829 歌切",
+        "duration": "03:10",
+        "url": "https://www.bilibili.com/video/BV1gm4C65Ey6/?p=5"
+      }
+    ],
+    "replay": null,
+    "cut_link": "https://www.bilibili.com/video/BV1gm4C65Ey6/?p=5"
+  },
+  {
+    "song_name": "吹灭小山河",
+    "row_key": "吹灭小山河",
+    "artist": "国风堂 / 司南",
+    "language": "中文",
+    "cut": [
+      {
+        "kind": "single",
+        "bvid": "BV11F8h6BE4d",
+        "chapter": "",
+        "clip_title": "【小松绿Viridis/歌切】吹灭小山河",
+        "duration": "02:35",
+        "url": "https://www.bilibili.com/video/BV11F8h6BE4d/"
+      }
+    ],
+    "replay": {
+      "replay_id": "BV1758h6FEmv",
+      "time": "02:46:33",
+      "end_time": "02:48:36",
+      "cut_link": "https://www.bilibili.com/video/BV11F8h6BE4d/"
+    },
+    "cut_link": "https://www.bilibili.com/video/BV11F8h6BE4d/"
+  },
+  {
     "song_name": "春日影",
     "row_key": "春日影",
     "artist": "MyGO!!!!!",
@@ -307,6 +496,14 @@
     "cut": [
       {
         "kind": "single",
+        "bvid": "BV1FagM6SEHT",
+        "chapter": "",
+        "clip_title": "只希望你能一直在我身边。《カタオモイ》",
+        "duration": "03:34",
+        "url": "https://www.bilibili.com/video/BV1FagM6SEHT/"
+      },
+      {
+        "kind": "single",
         "bvid": "BV1znuz6eED5",
         "chapter": "",
         "clip_title": "【小松绿Viridis】单相思",
@@ -364,6 +561,29 @@
     "cut_link": "https://www.bilibili.com/video/BV1rv8V6DExk/"
   },
   {
+    "song_name": "多情岸",
+    "row_key": "多情岸",
+    "artist": "忘川风华录 / 洛天依",
+    "language": "中文",
+    "cut": [
+      {
+        "kind": "single",
+        "bvid": "BV1yw8h6TEBf",
+        "chapter": "",
+        "clip_title": "【小松绿Viridis/歌切】多情岸",
+        "duration": "04:55",
+        "url": "https://www.bilibili.com/video/BV1yw8h6TEBf/"
+      }
+    ],
+    "replay": {
+      "replay_id": "BV1758h6FEmv",
+      "time": "02:40:26",
+      "end_time": "02:42:57",
+      "cut_link": "https://www.bilibili.com/video/BV1yw8h6TEBf/"
+    },
+    "cut_link": "https://www.bilibili.com/video/BV1yw8h6TEBf/"
+  },
+  {
     "song_name": "二人セゾン",
     "row_key": "二人セゾン",
     "artist": "乃木坂46",
@@ -399,6 +619,14 @@
         "clip_title": "【663645TV】神回！我已启动！全力绿来唱完了！8月18日歌切合集【小松绿Viridis】",
         "duration": "04:01",
         "url": "https://www.bilibili.com/video/BV1rv8V6DExk/"
+      },
+      {
+        "kind": "single",
+        "bvid": "BV1rY8365EUY",
+        "chapter": "",
+        "clip_title": "【小松绿Viridis/歌切】繁华唱遍",
+        "duration": "04:01",
+        "url": "https://www.bilibili.com/video/BV1rY8365EUY/"
       }
     ],
     "replay": {
@@ -451,11 +679,50 @@
     "cut_link": "https://www.bilibili.com/video/BV1FybC6PE5D/"
   },
   {
+    "song_name": "光",
+    "row_key": "光",
+    "artist": "Kide / Ddickky / 星尘",
+    "language": "中文",
+    "cut": [
+      {
+        "kind": "single",
+        "bvid": "BV1m9886kEMZ",
+        "chapter": "P4 光",
+        "clip_title": "【小松绿Viridis】20260823 歌切",
+        "duration": "04:10",
+        "url": "https://www.bilibili.com/video/BV1m9886kEMZ/?p=4"
+      },
+      {
+        "kind": "single",
+        "bvid": "BV1ZH8Y6wEAw",
+        "chapter": "",
+        "clip_title": "【小松绿Viridis】 《光》",
+        "duration": "04:21",
+        "url": "https://www.bilibili.com/video/BV1ZH8Y6wEAw/"
+      }
+    ],
+    "replay": {
+      "replay_id": "BV1758h6FEmv",
+      "time": "02:33:30",
+      "end_time": "02:37:40",
+      "cut_link": "https://www.bilibili.com/video/BV1m9886kEMZ/?p=4"
+    },
+    "cut_link": "https://www.bilibili.com/video/BV1m9886kEMZ/?p=4"
+  },
+  {
     "song_name": "光景",
     "row_key": "光景",
     "artist": "篠澤広（初星学園）",
     "language": "日文",
     "cut": [
+      {
+        "kind": "single",
+        "bvid": "BV1tk8c6tEFS",
+        "chapter": "",
+        "clip_title": "【小松绿Viridis/歌切】光景",
+        "duration": "04:31",
+        "url": "https://www.bilibili.com/video/BV1tk8c6tEFS/"
+      },
       {
         "kind": "single",
         "bvid": "BV1WS8c6XE9w",
@@ -479,6 +746,14 @@
     "artist": "泠鸢yousa",
     "language": "中文",
     "cut": [
+      {
+        "kind": "single",
+        "bvid": "BV1iRbC6xEBW",
+        "chapter": "",
+        "clip_title": "【小松绿Viridis/歌切】航向你的海岛",
+        "duration": "04:41",
+        "url": "https://www.bilibili.com/video/BV1iRbC6xEBW/"
+      },
       {
         "kind": "single",
         "bvid": "BV1oxbQ67EM1",
@@ -524,29 +799,6 @@
     "cut_link": ""
   },
   {
-    "song_name": "蝴蝶",
-    "row_key": "蝴蝶",
-    "artist": "洛天依Official",
-    "language": "中文",
-    "cut": [
-      {
-        "kind": "compilation",
-        "bvid": "BV1rv8V6DExk",
-        "chapter": "20-蝴蝶",
-        "clip_title": "【663645TV】神回！我已启动！全力绿来唱完了！8月18日歌切合集【小松绿Viridis】",
-        "duration": "03:37",
-        "url": "https://www.bilibili.com/video/BV1rv8V6DExk/"
-      }
-    ],
-    "replay": {
-      "replay_id": "BV1rv8V6DExk",
-      "time": "01:19:50",
-      "end_time": "01:23:27",
-      "cut_link": "https://www.bilibili.com/video/BV1rv8V6DExk/"
-    },
-    "cut_link": "https://www.bilibili.com/video/BV1rv8V6DExk/"
-  },
-  {
     "song_name": "花粉症",
     "row_key": "花粉症",
     "artist": "诗岸 / 海伊",
@@ -575,6 +827,14 @@
     "artist": "银临 / 云之泣",
     "language": "中文",
     "cut": [
+      {
+        "kind": "single",
+        "bvid": "BV16bby6AEwd",
+        "chapter": "",
+        "clip_title": "【小松绿Viridis/歌切】锦鲤抄",
+        "duration": "04:05",
+        "url": "https://www.bilibili.com/video/BV16bby6AEwd/"
+      },
       {
         "kind": "single",
         "bvid": "BV17bby6AEr6",
@@ -641,6 +901,14 @@
         "clip_title": "【663645TV】神回！我已启动！全力绿来唱完了！8月18日歌切合集【小松绿Viridis】",
         "duration": "03:42",
         "url": "https://www.bilibili.com/video/BV1rv8V6DExk/"
+      },
+      {
+        "kind": "single",
+        "bvid": "BV1Zd8g6zEbF",
+        "chapter": "",
+        "clip_title": "【小松绿Viridis】《可愛くてごめん》",
+        "duration": "03:35",
+        "url": "https://www.bilibili.com/video/BV1Zd8g6zEbF/"
       }
     ],
     "replay": {
@@ -657,6 +925,14 @@
     "artist": "CMJ",
     "language": "中文",
     "cut": [
+      {
+        "kind": "single",
+        "bvid": "BV1oy8V6yEph",
+        "chapter": "",
+        "clip_title": "【小松绿Viridis】《涟漪》",
+        "duration": "03:52",
+        "url": "https://www.bilibili.com/video/BV1oy8V6yEph/"
+      },
       {
         "kind": "compilation",
         "bvid": "BV1rv8V6DExk",
@@ -675,6 +951,32 @@
     "cut_link": "https://www.bilibili.com/video/BV1rv8V6DExk/"
   },
   {
+    "song_name": "炼金少女日志",
+    "row_key": "炼金少女日志",
+    "artist": "时之歌Project（泛音堂）/ 言和",
+    "language": "中文",
+    "cut": [
+      {
+        "kind": "single",
+        "bvid": "BV1i8gV6xExv",
+        "chapter": "",
+        "clip_title": "【小松绿Viridis/歌切】炼金少女日志",
+        "duration": "04:17",
+        "url": "https://www.bilibili.com/video/BV1i8gV6xExv/"
+      },
+      {
+        "kind": "collection-chapter",
+        "bvid": "BV1unu66WEHb",
+        "chapter": "P4 炼金少女日志",
+        "clip_title": "【小松绿Viridis】2026-08-11 部分歌切",
+        "duration": "04:17",
+        "url": "https://www.bilibili.com/video/BV1unu66WEHb/?p=4"
+      }
+    ],
+    "replay": null,
+    "cut_link": "https://www.bilibili.com/video/BV1i8gV6xExv/"
+  },
+  {
     "song_name": "恋爱困难少女",
     "row_key": "恋爱困难少女",
     "artist": "ChiliChill乐团",
@@ -691,6 +993,106 @@
     ],
     "replay": null,
     "cut_link": "https://www.bilibili.com/video/BV1QTgJ6vEdB/"
+  },
+  {
+    "song_name": "恋苦",
+    "row_key": "恋苦",
+    "artist": "月犬P / 星尘",
+    "language": "中文",
+    "cut": [
+      {
+        "kind": "single",
+        "bvid": "BV1m9886kEMZ",
+        "chapter": "P2 恋苦",
+        "clip_title": "【小松绿Viridis】20260823 歌切",
+        "duration": "04:25",
+        "url": "https://www.bilibili.com/video/BV1m9886kEMZ/?p=2"
+      },
+      {
+        "kind": "single",
+        "bvid": "BV1QAhV6iEdA",
+        "chapter": "",
+        "clip_title": "【小松绿Viridis/自存】恋苦",
+        "duration": "04:39",
+        "url": "https://www.bilibili.com/video/BV1QAhV6iEdA/"
+      }
+    ],
+    "replay": {
+      "replay_id": "BV1758h6FEmv",
+      "time": "02:21:13",
+      "end_time": "02:25:38",
+      "cut_link": "https://www.bilibili.com/video/BV1m9886kEMZ/?p=2"
+    },
+    "cut_link": "https://www.bilibili.com/video/BV1m9886kEMZ/?p=2"
+  },
+  {
+    "song_name": "临川浮梦",
+    "row_key": "临川浮梦",
+    "artist": "忘川风华录 / 赤羽、星尘",
+    "language": "中文",
+    "cut": [
+      {
+        "kind": "collection-chapter",
+        "bvid": "BV1gm4C65Ey6",
+        "chapter": "P6 临川浮梦",
+        "clip_title": "【小松绿Viridis】20260829 歌切",
+        "duration": "03:59",
+        "url": "https://www.bilibili.com/video/BV1gm4C65Ey6/?p=6"
+      }
+    ],
+    "replay": {
+      "replay_id": "BV1RL4k6jEe8",
+      "time": "01:02:00",
+      "end_time": "01:07:00",
+      "cut_link": "https://www.bilibili.com/video/BV1gm4C65Ey6/?p=6"
+    },
+    "cut_link": "https://www.bilibili.com/video/BV1gm4C65Ey6/?p=6"
+  },
+  {
+    "song_name": "流光记",
+    "row_key": "流光记",
+    "artist": "银临 / 初音未来",
+    "language": "中文",
+    "cut": [
+      {
+        "kind": "collection-chapter",
+        "bvid": "BV1gm4C65Ey6",
+        "chapter": "P15 流光记",
+        "clip_title": "【小松绿Viridis】20260829 歌切",
+        "duration": "04:41",
+        "url": "https://www.bilibili.com/video/BV1gm4C65Ey6/?p=15"
+      }
+    ],
+    "replay": {
+      "replay_id": "BV1RL4k6jEe8",
+      "time": "02:00:00",
+      "end_time": "02:03:30",
+      "cut_link": "https://www.bilibili.com/video/BV1gm4C65Ey6/?p=15"
+    },
+    "cut_link": "https://www.bilibili.com/video/BV1gm4C65Ey6/?p=15"
+  },
+  {
+    "song_name": "流霰",
+    "row_key": "流霰",
+    "artist": "旅行的蜗牛（Snapmod）/ 星尘",
+    "language": "中文",
+    "cut": [
+      {
+        "kind": "single",
+        "bvid": "BV1Td886GEoN",
+        "chapter": "",
+        "clip_title": "【小松绿Viridis/自留】流霰",
+        "duration": "03:55",
+        "url": "https://www.bilibili.com/video/BV1Td886GEoN/"
+      }
+    ],
+    "replay": {
+      "replay_id": "BV1758h6FEmv",
+      "time": "02:16:53",
+      "end_time": "02:20:20",
+      "cut_link": "https://www.bilibili.com/video/BV1Td886GEoN/"
+    },
+    "cut_link": "https://www.bilibili.com/video/BV1Td886GEoN/"
   },
   {
     "song_name": "玛德琳娜电塔",
@@ -714,6 +1116,20 @@
       "cut_link": "https://www.bilibili.com/video/BV1bCuz6UEAV/"
     },
     "cut_link": "https://www.bilibili.com/video/BV1bCuz6UEAV/"
+  },
+  {
+    "song_name": "梦良衣",
+    "row_key": "梦良衣",
+    "artist": "ilem / 赤羽",
+    "language": "中文",
+    "cut": null,
+    "replay": {
+      "replay_id": "BV1RL4k6jEe8",
+      "time": "00:57:00",
+      "end_time": "01:02:00",
+      "cut_link": ""
+    },
+    "cut_link": ""
   },
   {
     "song_name": "蜜月アン・ドゥ・トロワ",
@@ -769,6 +1185,14 @@
         "clip_title": "【小松绿Viridis】《目的论》",
         "duration": "",
         "url": "https://www.bilibili.com/video/BV1gzuz6pE4C/"
+      },
+      {
+        "kind": "single",
+        "bvid": "BV1QCuC6NESq",
+        "chapter": "",
+        "clip_title": "【小松绿Viridis/歌切】目的论",
+        "duration": "04:28",
+        "url": "https://www.bilibili.com/video/BV1QCuC6NESq/"
       }
     ],
     "replay": {
@@ -778,6 +1202,77 @@
       "cut_link": "https://www.bilibili.com/video/BV1gzuz6pE4C/"
     },
     "cut_link": "https://www.bilibili.com/video/BV1gzuz6pE4C/"
+  },
+  {
+    "song_name": "难过233秒",
+    "row_key": "难过233秒",
+    "artist": "ChiliChill",
+    "language": "中文",
+    "cut": null,
+    "replay": {
+      "replay_id": "BV1RL4k6jEe8",
+      "time": "00:13:00",
+      "end_time": "00:14:30",
+      "cut_link": ""
+    },
+    "cut_link": ""
+  },
+  {
+    "song_name": "你究竟有几个好妹妹",
+    "row_key": "你究竟有几个好妹妹",
+    "artist": "孟庭苇",
+    "language": "中文",
+    "cut": [
+      {
+        "kind": "single",
+        "bvid": "BV1Bg4k6SEeW",
+        "chapter": "",
+        "clip_title": "@羽啾：你是我最爱的妹妹 测谎仪：👎👎👎【小松绿Viridis】",
+        "duration": "05:21",
+        "url": "https://www.bilibili.com/video/BV1Bg4k6SEeW/"
+      },
+      {
+        "kind": "single",
+        "bvid": "BV1dd4y6oEQb",
+        "chapter": "",
+        "clip_title": "《你究竟有几个好妹妹》【小松绿Viridis】",
+        "duration": "05:44",
+        "url": "https://www.bilibili.com/video/BV1dd4y6oEQb/"
+      }
+    ],
+    "replay": {
+      "replay_id": "BV1RL4k6jEe8",
+      "time": "00:41:00",
+      "end_time": "00:45:00",
+      "cut_link": "https://www.bilibili.com/video/BV1dd4y6oEQb/"
+    },
+    "cut_link": "https://www.bilibili.com/video/BV1dd4y6oEQb/"
+  },
+  {
+    "song_name": "女孩你为何踮脚尖",
+    "row_key": "女孩你为何踮脚尖",
+    "artist": "Ddickky / 墨兰花语 / 洛天依",
+    "language": "中文",
+    "cut": [
+      {
+        "kind": "collection-chapter",
+        "bvid": "BV1idb16YEjD",
+        "chapter": "P12 女孩你为何踮脚尖",
+        "clip_title": "【小松绿Viridis】20260815 歌切",
+        "duration": "04:59",
+        "url": "https://www.bilibili.com/video/BV1idb16YEjD/?p=12"
+      },
+      {
+        "kind": "collection-chapter",
+        "bvid": "BV1x7b26EE8C",
+        "chapter": "P12 女孩你为何踮脚尖-1",
+        "clip_title": "【小松绿Viridis】2026-08-15 歌切",
+        "duration": "04:59",
+        "url": "https://www.bilibili.com/video/BV1x7b26EE8C/?p=12"
+      }
+    ],
+    "replay": null,
+    "cut_link": "https://www.bilibili.com/video/BV1idb16YEjD/?p=12"
   },
   {
     "song_name": "暖暖",
@@ -837,6 +1332,88 @@
       "cut_link": "https://www.bilibili.com/video/BV1rv8V6DExk/"
     },
     "cut_link": "https://www.bilibili.com/video/BV1rv8V6DExk/"
+  },
+  {
+    "song_name": "泼墨漓江",
+    "row_key": "泼墨漓江",
+    "artist": "玖玲 / 冥凰 / 泠鸢yousa",
+    "language": "中文",
+    "cut": [
+      {
+        "kind": "collection-chapter",
+        "bvid": "BV1gm4C65Ey6",
+        "chapter": "P11 泼墨漓江",
+        "clip_title": "【小松绿Viridis】20260829 歌切",
+        "duration": "04:58",
+        "url": "https://www.bilibili.com/video/BV1gm4C65Ey6/?p=11"
+      }
+    ],
+    "replay": {
+      "replay_id": "BV1RL4k6jEe8",
+      "time": "01:28:00",
+      "end_time": "01:36:00",
+      "cut_link": "https://www.bilibili.com/video/BV1gm4C65Ey6/?p=11"
+    },
+    "cut_link": "https://www.bilibili.com/video/BV1gm4C65Ey6/?p=11"
+  },
+  {
+    "song_name": "栖凰",
+    "row_key": "栖凰",
+    "artist": "忘川风华录 / 星尘",
+    "language": "中文",
+    "cut": [
+      {
+        "kind": "single",
+        "bvid": "BV1BN8i66Ej6",
+        "chapter": "",
+        "clip_title": "【小松绿Viridis】栖凰",
+        "duration": "03:49",
+        "url": "https://www.bilibili.com/video/BV1BN8i66Ej6/"
+      }
+    ],
+    "replay": {
+      "replay_id": "BV1758h6FEmv",
+      "time": "02:27:01",
+      "end_time": "02:31:42",
+      "cut_link": "https://www.bilibili.com/video/BV1BN8i66Ej6/"
+    },
+    "cut_link": "https://www.bilibili.com/video/BV1BN8i66Ej6/"
+  },
+  {
+    "song_name": "绮凝盏",
+    "row_key": "绮凝盏",
+    "artist": "MeLo / 海伊",
+    "language": "中文",
+    "cut": [
+      {
+        "kind": "collection-chapter",
+        "bvid": "BV1gm4C65Ey6",
+        "chapter": "P10 绮凝盏",
+        "clip_title": "【小松绿Viridis】20260829 歌切",
+        "duration": "03:24",
+        "url": "https://www.bilibili.com/video/BV1gm4C65Ey6/?p=10"
+      }
+    ],
+    "replay": null,
+    "cut_link": "https://www.bilibili.com/video/BV1gm4C65Ey6/?p=10"
+  },
+  {
+    "song_name": "青鸟衔风",
+    "row_key": "青鸟衔风",
+    "artist": "海伊 / 诗岸",
+    "language": "中文",
+    "cut": [
+      {
+        "kind": "single",
+        "bvid": "BV1mwuz62EfH",
+        "chapter": "",
+        "clip_title": "【小松绿Viridis】《青鸟衔风》",
+        "duration": "03:04",
+        "url": "https://www.bilibili.com/video/BV1mwuz62EfH/"
+      }
+    ],
+    "replay": null,
+    "cut_link": "https://www.bilibili.com/video/BV1mwuz62EfH/"
   },
   {
     "song_name": "青柠",
@@ -950,6 +1527,14 @@
     "language": "中文",
     "cut": [
       {
+        "kind": "single",
+        "bvid": "BV1Ca8V6XEbY",
+        "chapter": "",
+        "clip_title": "【小松绿Viridis/歌切】上山岗",
+        "duration": "03:57",
+        "url": "https://www.bilibili.com/video/BV1Ca8V6XEbY/"
+      },
+      {
         "kind": "compilation",
         "bvid": "BV1rv8V6DExk",
         "chapter": "17-上山岗",
@@ -1020,6 +1605,14 @@
         "clip_title": "【小松绿Viridis/歌切】世末歌者",
         "duration": "05:16",
         "url": "https://www.bilibili.com/video/BV1Pa8V69ECP/"
+      },
+      {
+        "kind": "single",
+        "bvid": "BV1qy8V6yESe",
+        "chapter": "",
+        "clip_title": "【小松绿Viridis/歌切】世末歌者",
+        "duration": "05:25",
+        "url": "https://www.bilibili.com/video/BV1qy8V6yESe/"
       }
     ],
     "replay": {
@@ -1029,6 +1622,24 @@
       "cut_link": "https://www.bilibili.com/video/BV1Pa8V69ECP/"
     },
     "cut_link": "https://www.bilibili.com/video/BV1Pa8V69ECP/"
+  },
+  {
+    "song_name": "是风动",
+    "row_key": "是风动",
+    "artist": "银临 / 河图",
+    "language": "中文",
+    "cut": [
+      {
+        "kind": "collection-chapter",
+        "bvid": "BV1gm4C65Ey6",
+        "chapter": "P8 是风动",
+        "clip_title": "【小松绿Viridis】20260829 歌切",
+        "duration": "04:49",
+        "url": "https://www.bilibili.com/video/BV1gm4C65Ey6/?p=8"
+      }
+    ],
+    "replay": null,
+    "cut_link": "https://www.bilibili.com/video/BV1gm4C65Ey6/?p=8"
   },
   {
     "song_name": "霜雪千年",
@@ -1101,6 +1712,14 @@
     "language": "中文",
     "cut": [
       {
+        "kind": "single",
+        "bvid": "BV19g836cEtQ",
+        "chapter": "",
+        "clip_title": "【小松绿Viridis/歌切】思华年",
+        "duration": "04:09",
+        "url": "https://www.bilibili.com/video/BV19g836cEtQ/"
+      },
+      {
         "kind": "compilation",
         "bvid": "BV1rv8V6DExk",
         "chapter": "14-思华年",
@@ -1116,6 +1735,40 @@
       "cut_link": "https://www.bilibili.com/video/BV1rv8V6DExk/"
     },
     "cut_link": "https://www.bilibili.com/video/BV1rv8V6DExk/"
+  },
+  {
+    "song_name": "四重罪孽",
+    "row_key": "四重罪孽",
+    "artist": "DELA / 雨狸 / 洛天依、言和、乐正绫",
+    "language": "中文",
+    "cut": [
+      {
+        "kind": "single",
+        "bvid": "BV1Aqba6uEF8",
+        "chapter": "",
+        "clip_title": "【松绿歌】四重罪孽",
+        "duration": "03:38",
+        "url": "https://www.bilibili.com/video/BV1Aqba6uEF8/"
+      },
+      {
+        "kind": "collection-chapter",
+        "bvid": "BV1idb16YEjD",
+        "chapter": "P6 四重罪孽",
+        "clip_title": "【小松绿Viridis】20260815 歌切",
+        "duration": "03:50",
+        "url": "https://www.bilibili.com/video/BV1idb16YEjD/?p=6"
+      },
+      {
+        "kind": "collection-chapter",
+        "bvid": "BV1x7b26EE8C",
+        "chapter": "P6 四重罪孽-1",
+        "clip_title": "【小松绿Viridis】2026-08-15 歌切",
+        "duration": "03:50",
+        "url": "https://www.bilibili.com/video/BV1x7b26EE8C/?p=6"
+      }
+    ],
+    "replay": null,
+    "cut_link": "https://www.bilibili.com/video/BV1idb16YEjD/?p=6"
   },
   {
     "song_name": "苏州河",
@@ -1146,6 +1799,22 @@
     "artist": "COP / 乐正绫",
     "language": "中文",
     "cut": [
+      {
+        "kind": "single",
+        "bvid": "BV11x8V6oE6P",
+        "chapter": "",
+        "clip_title": "【小松绿Viridis/歌切】碎梦 乐正绫",
+        "duration": "04:02",
+        "url": "https://www.bilibili.com/video/BV11x8V6oE6P/"
+      },
+      {
+        "kind": "single",
+        "bvid": "BV1f18i6GEc3",
+        "chapter": "",
+        "clip_title": "【小松绿Viridis】 碎梦",
+        "duration": "03:49",
+        "url": "https://www.bilibili.com/video/BV1f18i6GEc3/"
+      },
       {
         "kind": "compilation",
         "bvid": "BV1rv8V6DExk",
@@ -1268,6 +1937,14 @@
         "clip_title": "【663645TV】神回！我已启动！全力绿来唱完了！8月18日歌切合集【小松绿Viridis】",
         "duration": "02:58",
         "url": "https://www.bilibili.com/video/BV1rv8V6DExk/"
+      },
+      {
+        "kind": "single",
+        "bvid": "BV1TH836XEsN",
+        "chapter": "",
+        "clip_title": "【小松绿Viridis/歌切】外婆的澎湖湾",
+        "duration": "03:06",
+        "url": "https://www.bilibili.com/video/BV1TH836XEsN/"
       }
     ],
     "replay": {
@@ -1356,22 +2033,125 @@
     "cut_link": "https://www.bilibili.com/video/BV1Z8by6aEGy/"
   },
   {
-    "song_name": "下等马",
-    "row_key": "下等马",
-    "artist": "ChiliChill乐团 / 洛天依Official",
+    "song_name": "下个夏天的烟火",
+    "row_key": "下个夏天的烟火",
+    "artist": "Cidai Jun / 海伊",
+    "language": "中文",
+    "cut": [
+      {
+        "kind": "collection-chapter",
+        "bvid": "BV1gm4C65Ey6",
+        "chapter": "P9 下个夏天的烟火",
+        "clip_title": "【小松绿Viridis】20260829 歌切",
+        "duration": "03:43",
+        "url": "https://www.bilibili.com/video/BV1gm4C65Ey6/?p=9"
+      }
+    ],
+    "replay": null,
+    "cut_link": "https://www.bilibili.com/video/BV1gm4C65Ey6/?p=9"
+  },
+  {
+    "song_name": "夏恋慕",
+    "row_key": "夏恋慕",
+    "artist": "kobasolo / 春茶",
+    "language": "日文",
+    "cut": [
+      {
+        "kind": "single",
+        "bvid": "BV1m9886kEMZ",
+        "chapter": "",
+        "clip_title": "【小松绿Viridis】20260823 歌切 P7 夏恋慕",
+        "duration": "04:24",
+        "url": "https://www.bilibili.com/video/BV1m9886kEMZ/?p=7"
+      }
+    ],
+    "replay": {
+      "replay_id": "BV1758h6FEmv",
+      "time": "02:49:34",
+      "end_time": "02:51:48",
+      "cut_link": "https://www.bilibili.com/video/BV1m9886kEMZ/?p=7"
+    },
+    "cut_link": "https://www.bilibili.com/video/BV1m9886kEMZ/?p=7"
+  },
+  {
+    "song_name": "夏日已所剩无几",
+    "row_key": "夏日已所剩无几",
+    "artist": "泠鸢yousa",
+    "language": "中文",
+    "cut": [
+      {
+        "kind": "collection-chapter",
+        "bvid": "BV1gm4C65Ey6",
+        "chapter": "P12 夏日已所剩无几",
+        "clip_title": "【小松绿Viridis】20260829 歌切",
+        "duration": "04:32",
+        "url": "https://www.bilibili.com/video/BV1gm4C65Ey6/?p=12"
+      },
+      {
+        "kind": "single",
+        "bvid": "BV1vc416WEqw",
+        "chapter": "",
+        "clip_title": "【小松绿Viridis】夏日已所剩无几",
+        "duration": "04:34",
+        "url": "https://www.bilibili.com/video/BV1vc416WEqw/"
+      }
+    ],
+    "replay": null,
+    "cut_link": "https://www.bilibili.com/video/BV1gm4C65Ey6/?p=12"
+  },
+  {
+    "song_name": "夏霞",
+    "row_key": "夏霞",
+    "artist": "あたらよ",
+    "language": "日文",
+    "cut": [
+      {
+        "kind": "single",
+        "bvid": "BV12o8866EsR",
+        "chapter": "",
+        "clip_title": "【小松绿Viridis】夏霞 / あたらよ / 可惜夜",
+        "duration": "03:46",
+        "url": "https://www.bilibili.com/video/BV12o8866EsR/"
+      }
+    ],
+    "replay": {
+      "replay_id": "BV1758h6FEmv",
+      "time": "02:54:37",
+      "end_time": "02:58:23",
+      "cut_link": "https://www.bilibili.com/video/BV12o8866EsR/"
+    },
+    "cut_link": "https://www.bilibili.com/video/BV12o8866EsR/"
+  },
+  {
+    "song_name": "想和你迎着台风去看海",
+    "row_key": "想和你迎着台风去看海",
+    "artist": "桑拿猫黑糖 / 洛天依",
     "language": "中文",
     "cut": [
       {
         "kind": "single",
-        "bvid": "BV17Wuz6YEci",
+        "bvid": "BV1qT4k6QEXt",
         "chapter": "",
-        "clip_title": "【小松绿Viridis】《下等马》丨“一身素青纱 草柄当头花”",
-        "duration": "",
-        "url": "https://www.bilibili.com/video/BV17Wuz6YEci/"
+        "clip_title": "【小松绿Viridis】《想和你迎着台风去看海》“刚想开口骂 心却跳起来”",
+        "duration": "01:44",
+        "url": "https://www.bilibili.com/video/BV1qT4k6QEXt/"
+      },
+      {
+        "kind": "single",
+        "bvid": "BV1ta4y6VEQy",
+        "chapter": "",
+        "clip_title": "左摇右晃小甜歌《想和你迎着台风去看海》【小松绿Viridis】",
+        "duration": "01:43",
+        "url": "https://www.bilibili.com/video/BV1ta4y6VEQy/"
       }
     ],
-    "replay": null,
-    "cut_link": "https://www.bilibili.com/video/BV17Wuz6YEci/"
+    "replay": {
+      "replay_id": "BV1RL4k6jEe8",
+      "time": "00:32:00",
+      "end_time": "00:34:00",
+      "cut_link": "https://www.bilibili.com/video/BV1ta4y6VEQy/"
+    },
+    "cut_link": "https://www.bilibili.com/video/BV1ta4y6VEQy/"
   },
   {
     "song_name": "小幸运",
@@ -1415,6 +2195,48 @@
     "cut_link": "https://www.bilibili.com/video/BV1dRuy61Eti/"
   },
   {
+    "song_name": "虚拟",
+    "row_key": "虚拟",
+    "artist": "陈粒",
+    "language": "中文",
+    "cut": [
+      {
+        "kind": "single",
+        "bvid": "BV127bv6UEnN",
+        "chapter": "",
+        "clip_title": "【松绿歌】虚拟",
+        "duration": "03:19",
+        "url": "https://www.bilibili.com/video/BV127bv6UEnN/"
+      },
+      {
+        "kind": "single",
+        "bvid": "BV18Xb26sEYg",
+        "chapter": "",
+        "clip_title": "【小松绿Viridis】歌切 《虚拟》",
+        "duration": "03:51",
+        "url": "https://www.bilibili.com/video/BV18Xb26sEYg/"
+      },
+      {
+        "kind": "collection-chapter",
+        "bvid": "BV1idb16YEjD",
+        "chapter": "P10 虚拟",
+        "clip_title": "【小松绿Viridis】20260815 歌切",
+        "duration": "03:53",
+        "url": "https://www.bilibili.com/video/BV1idb16YEjD/?p=10"
+      },
+      {
+        "kind": "collection-chapter",
+        "bvid": "BV1x7b26EE8C",
+        "chapter": "P10 虚拟-1",
+        "clip_title": "【小松绿Viridis】2026-08-15 歌切",
+        "duration": "03:53",
+        "url": "https://www.bilibili.com/video/BV1x7b26EE8C/?p=10"
+      }
+    ],
+    "replay": null,
+    "cut_link": "https://www.bilibili.com/video/BV1idb16YEjD/?p=10"
+  },
+  {
     "song_name": "夜蝶",
     "row_key": "夜蝶",
     "artist": "SNH48（李艺彤/黄婷婷）",
@@ -1427,6 +2249,14 @@
         "clip_title": "【小松绿Viridis/歌回】20260820-偶像歌回？欸",
         "duration": "4:00",
         "url": "https://www.bilibili.com/video/BV1WS8c6XE9w/?p=8"
+      },
+      {
+        "kind": "single",
+        "bvid": "BV1yS8c6XEbe",
+        "chapter": "",
+        "clip_title": "【小松绿Viridis/歌切】夜蝶",
+        "duration": "03:59",
+        "url": "https://www.bilibili.com/video/BV1yS8c6XEbe/"
       }
     ],
     "replay": {
@@ -1450,6 +2280,14 @@
         "clip_title": "【小松绿Viridis/翻唱】《一半一半》",
         "duration": "",
         "url": "https://www.bilibili.com/video/BV1mgby6LEhy/"
+      },
+      {
+        "kind": "single",
+        "bvid": "BV1n4by6eEMW",
+        "chapter": "",
+        "clip_title": "【小松绿Viridis/歌切】一半一半",
+        "duration": "04:31",
+        "url": "https://www.bilibili.com/video/BV1n4by6eEMW/"
       }
     ],
     "replay": null,
@@ -1510,6 +2348,58 @@
     "cut_link": "https://www.bilibili.com/video/BV1YZbC6WEJJ/"
   },
   {
+    "song_name": "远旅休憩中的邂逅",
+    "row_key": "远旅休憩中的邂逅",
+    "artist": "泠鸢yousa",
+    "language": "中文",
+    "cut": [
+      {
+        "kind": "collection-chapter",
+        "bvid": "BV1gm4C65Ey6",
+        "chapter": "P13 远旅休憩中的邂逅",
+        "clip_title": "【小松绿Viridis】20260829 歌切",
+        "duration": "05:05",
+        "url": "https://www.bilibili.com/video/BV1gm4C65Ey6/?p=13"
+      }
+    ],
+    "replay": null,
+    "cut_link": "https://www.bilibili.com/video/BV1gm4C65Ey6/?p=13"
+  },
+  {
+    "song_name": "月出",
+    "row_key": "月出",
+    "artist": "双笙（词：温莨 / 曲：徐梦圆）",
+    "language": "中文",
+    "cut": [
+      {
+        "kind": "single",
+        "bvid": "BV18sba67EZa",
+        "chapter": "",
+        "clip_title": "【松绿歌】月出",
+        "duration": "04:00",
+        "url": "https://www.bilibili.com/video/BV18sba67EZa/"
+      },
+      {
+        "kind": "collection-chapter",
+        "bvid": "BV1idb16YEjD",
+        "chapter": "P2 月出",
+        "clip_title": "【小松绿Viridis】20260815 歌切",
+        "duration": "04:00",
+        "url": "https://www.bilibili.com/video/BV1idb16YEjD/?p=2"
+      },
+      {
+        "kind": "collection-chapter",
+        "bvid": "BV1x7b26EE8C",
+        "chapter": "P2 月出-1",
+        "clip_title": "【小松绿Viridis】2026-08-15 歌切",
+        "duration": "04:00",
+        "url": "https://www.bilibili.com/video/BV1x7b26EE8C/?p=2"
+      }
+    ],
+    "replay": null,
+    "cut_link": "https://www.bilibili.com/video/BV1idb16YEjD/?p=2"
+  },
+  {
     "song_name": "月が綺麗ね",
     "row_key": "月が綺麗ね",
     "artist": "柿崎ユウタ",
@@ -1522,10 +2412,36 @@
         "clip_title": "【小松绿viridis】月が綺麗ねと言われたい！丨想听你说月色真美",
         "duration": "",
         "url": "https://www.bilibili.com/video/BV1F7uz6qEKN/"
+      },
+      {
+        "kind": "single",
+        "bvid": "BV1pGgF6hEng",
+        "chapter": "",
+        "clip_title": "讨厌？讨厌？但是喜欢！《月が綺麗ねと言われたい！》",
+        "duration": "02:33",
+        "url": "https://www.bilibili.com/video/BV1pGgF6hEng/"
       }
     ],
     "replay": null,
     "cut_link": "https://www.bilibili.com/video/BV1F7uz6qEKN/"
+  },
+  {
+    "song_name": "月巷",
+    "row_key": "月巷",
+    "artist": "乐正绫",
+    "language": "中文",
+    "cut": [
+      {
+        "kind": "single",
+        "bvid": "BV1Msg56SEuV",
+        "chapter": "",
+        "clip_title": "【小松绿Viridis|歌切】月巷 8.12",
+        "duration": "03:48",
+        "url": "https://www.bilibili.com/video/BV1Msg56SEuV/"
+      }
+    ],
+    "replay": null,
+    "cut_link": "https://www.bilibili.com/video/BV1Msg56SEuV/"
   },
   {
     "song_name": "纸星瓶",
@@ -1735,6 +2651,38 @@
     "cut_link": "https://www.bilibili.com/video/BV1WS8c6XE9w?p=1"
   },
   {
+    "song_name": "Talking to the Rain",
+    "row_key": "Talking to the Rain",
+    "artist": "芹菜猪肉大馄饨 / 星尘Official、海伊",
+    "language": "中文",
+    "cut": [
+      {
+        "kind": "single",
+        "bvid": "BV1Hm4y6AEC3",
+        "chapter": "",
+        "clip_title": "【小松绿Viridis/歌切】Talking to the Rain",
+        "duration": "03:37",
+        "url": "https://www.bilibili.com/video/BV1Hm4y6AEC3/"
+      }
+    ],
+    "replay": {
+      "replay_id": "BV1RL4k6jEe8",
+      "time": "01:09:00",
+      "end_time": "01:15:00",
+      "cut_link": "https://www.bilibili.com/video/BV1Hm4y6AEC3/"
+    },
+    "cut_link": "https://www.bilibili.com/video/BV1Hm4y6AEC3/"
+  },
+  {
+    "song_name": "YOU & IDOL",
+    "row_key": "YOU & IDOL",
+    "artist": "相対性理論",
+    "language": "日文",
+    "cut": null,
+    "replay": null,
+    "cut_link": "https://www.bilibili.com/video/BV1P6ud6dEkm/"
+  },
+  {
     "song_name": "アイドル",
     "row_key": "アイドル",
     "artist": "YOASOBI",
@@ -1764,12 +2712,36 @@
     "language": "日文",
     "cut": [
       {
+        "kind": "single",
+        "bvid": "BV1Do8V6iEPw",
+        "chapter": "",
+        "clip_title": "小松绿夜半火力全开，超高机能演唱《アスノヨゾラ哨戒班》",
+        "duration": "03:55",
+        "url": "https://www.bilibili.com/video/BV1Do8V6iEPw/"
+      },
+      {
+        "kind": "single",
+        "bvid": "BV1n7826GE9K",
+        "chapter": "",
+        "clip_title": "“许下了愿望就去实现吧。”《アスノヨゾラ哨戒班》",
+        "duration": "03:52",
+        "url": "https://www.bilibili.com/video/BV1n7826GE9K/"
+      },
+      {
         "kind": "compilation",
         "bvid": "BV1rv8V6DExk",
         "chapter": "23-アスノヨゾラ哨戒班",
         "clip_title": "【663645TV】神回！我已启动！全力绿来唱完了！8月18日歌切合集【小松绿Viridis】",
         "duration": "03:55",
         "url": "https://www.bilibili.com/video/BV1rv8V6DExk/"
+      },
+      {
+        "kind": "single",
+        "bvid": "BV1uU8E67E6a",
+        "chapter": "",
+        "clip_title": "【小松绿Viridis/翻唱】《アスノヨゾラ哨戒班》（明日的夜空哨戒班）",
+        "duration": "03:54",
+        "url": "https://www.bilibili.com/video/BV1uU8E67E6a/"
       }
     ],
     "replay": {
@@ -1827,6 +2799,24 @@
     "cut_link": "https://www.bilibili.com/video/BV1WS8c6XE9w?p=5"
   },
   {
+    "song_name": "サリシノハラ",
+    "row_key": "サリシノハラ",
+    "artist": "みきとP / 初音ミク",
+    "language": "日文",
+    "cut": [
+      {
+        "kind": "collection-chapter",
+        "bvid": "BV1gm4C65Ey6",
+        "chapter": "P14 サリシノハラ",
+        "clip_title": "【小松绿Viridis】20260829 歌切",
+        "duration": "04:28",
+        "url": "https://www.bilibili.com/video/BV1gm4C65Ey6/?p=14"
+      }
+    ],
+    "replay": null,
+    "cut_link": "https://www.bilibili.com/video/BV1gm4C65Ey6/?p=14"
+  },
+  {
     "song_name": "シリウスの心臓",
     "row_key": "シリウスの心臓",
     "artist": "ヰ世界情緒",
@@ -1839,6 +2829,22 @@
         "clip_title": "【小松绿Viridis/翻唱】《シリウスの心臓》（天狼星的心脏）",
         "duration": "04:52",
         "url": "https://www.bilibili.com/video/BV1aZ8L6CE6x/"
+      },
+      {
+        "kind": "single",
+        "bvid": "BV1BC8V6LE1T",
+        "chapter": "",
+        "clip_title": "【小松绿Viridis/歌切】天狼星的心脏",
+        "duration": "04:55",
+        "url": "https://www.bilibili.com/video/BV1BC8V6LE1T/"
+      },
+      {
+        "kind": "single",
+        "bvid": "BV1U88766EkQ",
+        "chapter": "",
+        "clip_title": "【小松绿Viridis】 シリウスの心臓/天狼星的心脏",
+        "duration": "04:56",
+        "url": "https://www.bilibili.com/video/BV1U88766EkQ/"
       }
     ],
     "replay": {

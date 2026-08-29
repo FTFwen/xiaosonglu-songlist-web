@@ -744,22 +744,60 @@
     const dur = await readDuration(blob);
     const btn = { id, name: cleanName, desc: '', audio: '', cat, idb: false, duration: dur };
     data.buttons.push(btn);
-    // 上传 blob 到 R2（写操作需 token）
+    // 上传 blob 到 R2（写操作需 token）；失败则从 data 移除，避免残留空 audio 按钮
     const url = `${API_BASE}/audio/${id}`;
-    await uploadAudioBlob(url, blob, btn);
+    try {
+      await uploadAudioBlob(url, blob, btn);
+    } catch (err) {
+      data.buttons = data.buttons.filter(b => b.id !== id);
+      throw err;
+    }
     return { id, name: cleanName, duration: dur };
   }
 
   // 上传单个音频 blob 到云端，成功后把按钮指向该 URL
   async function uploadAudioBlob(url, blob, btn) {
+    const token = sessionStorage.getItem(TOKEN_KEY);
+    if (!token) {
+      // 没有管理员 token（比如离线模式登录），无法上传到云端
+      throw new Error('未获取到管理员凭证，请重新登录后再上传');
+    }
     const res = await fetch(url, {
       method: 'PUT',
       headers: authHeaders({ 'content-type': blob.type || 'audio/mpeg' }),
       body: blob,
     });
-    if (!res.ok) throw new Error('上传音频失败: ' + res.status);
+    if (res.status === 401) throw new Error('登录已过期，请重新登录');
+    if (!res.ok) throw new Error('上传失败 HTTP ' + res.status);
     btn.audio = url;
     btn.idb = false;
+  }
+
+  // ===== 上传进度条 =====
+  function showUploadProgress(total) {
+    el('uploadProgress').style.display = 'block';
+    el('uploadProgressLabel').textContent = '正在上传…';
+    el('uploadProgressCount').textContent = `0 / ${total}`;
+    el('uploadProgressFill').classList.remove('done');
+    setUploadFill(0);
+    el('uploadProgressStatus').textContent = '';
+  }
+  function setUploadFill(percent) {
+    el('uploadProgressFill').style.width = Math.max(0, Math.min(100, percent)) + '%';
+  }
+  function updateUploadProgress(done, total, statusText) {
+    el('uploadProgressCount').textContent = `${done} / ${total}`;
+    if (total > 0) setUploadFill((done / total) * 100);
+    if (statusText) el('uploadProgressStatus').textContent = statusText;
+  }
+  function finishUploadProgress(done, total, failed, text) {
+    el('uploadProgressLabel').textContent = failed > 0 ? '上传完成（部分失败）' : '上传完成';
+    el('uploadProgressCount').textContent = `${done} / ${total}`;
+    el('uploadProgressFill').classList.add('done');
+    setUploadFill(100);
+    if (text) el('uploadProgressStatus').textContent = text;
+    // 完成后 3 秒收起
+    setTimeout(() => { el('uploadProgress').style.display = 'none'; }, 3000);
   }
 
   // 处理选中的文件：普通音频直接加；zip 解压后筛出音频加
@@ -769,41 +807,68 @@
     const cat = el('newBtnCat').value;
     if (!cat) { toast('请先选分类'); return; }
 
-    let added = 0;
-    let skipped = 0;
-
-    for (const file of files) {
-      try {
+    // 预先收集"待上传"的音频项（展开 zip），得到总数用于进度条
+    // 先在内存统计：这一步只统计数量、不解压全部内容（避免大文件卡顿）
+    const jobs = []; // { kind:'file', file } | { kind:'blob', name, blob }
+    const collect = async () => {
+      for (const file of files) {
         const isZip = /\.zip$/i.test(file.name) || file.type === 'application/zip' || file.type === 'application/x-zip-compressed';
         if (isZip) {
-          // 解压 zip：遍历所有条目，筛出音频文件
           const zip = await JSZip.loadAsync(file);
           const entries = Object.values(zip.files);
           for (const entry of entries) {
             if (entry.dir) continue;
             const n = entry.name.split('/').pop();
-            if (!AUDIO_SFX.test(n)) { skipped++; continue; } // 非音频舍去
+            if (!AUDIO_SFX.test(n)) continue; // 非音频舍去
             const blob = await entry.async('blob');
-            await addAudioBtn(n, blob, cat);
-            added++;
+            jobs.push({ kind: 'blob', name: n, blob });
           }
         } else if (AUDIO_SFX.test(file.name) || /^audio\//.test(file.type)) {
-          await addAudioBtn(file.name, file, cat);
-          added++;
-        } else {
-          skipped++; // 非音频文件舍去
+          jobs.push({ kind: 'file', file });
         }
+      }
+    };
+
+    showUploadProgress(0);
+    el('uploadProgressLabel').textContent = '正在准备文件…';
+    let total = 0, done = 0, failed = 0;
+    const failedNames = [];
+    try {
+      await collect();
+      total = jobs.length;
+      updateUploadProgress(0, total, '');
+      if (total === 0) { el('uploadProgressLabel').textContent = '没有可导入的音频'; }
+    } catch (collectErr) {
+      console.error('[按钮墙] 准备文件失败:', collectErr);
+      finishUploadProgress(0, 0, 1, '准备文件出错：' + collectErr.message);
+      e.target.value = '';
+      return;
+    }
+
+    const statusLine = (txt) => el('uploadProgressStatus').textContent = txt;
+
+    for (let i = 0; i < jobs.length; i++) {
+      const job = jobs[i];
+      const label = job.kind === 'blob' ? job.name : job.file.name;
+      const blob = job.kind === 'blob' ? job.blob : job.file;
+      try {
+        await addAudioBtn(label, blob, cat);
+        done++;
+        updateUploadProgress(done, total, `「${label}」已上传`);
       } catch (err) {
-        console.error('[按钮墙] 处理失败:', file.name, err);
-        skipped++;
+        failed++;
+        failedNames.push(label);
+        console.error('[按钮墙] 上传失败:', label, err);
+        statusLine(`「${label}」失败：${err.message}`);
+        updateUploadProgress(done, total, `「${label}」失败：${err.message}`);
       }
     }
 
-    saveData(data);
-    renderWall();  
-
-    if (added) toast(`已添加 ${added} 个按钮${skipped ? `，舍去 ${skipped} 个非音频` : ''}`);
-    else toast(`没有可导入的音频（共舍去 ${skipped} 个文件）`);
+    if (done) { saveData(data); renderWall(); }
+    const failTxt = failed > 0 ? `，${failed} 个失败` : '';
+    const summary = done > 0 ? `已上传 ${done}/${total} 个${failTxt}` : `没有可导入的音频（共舍去 0 个）`;
+    finishUploadProgress(done, total, failed, summary + (failedNames.length ? '\n失败：' + failedNames.join('、') : ''));
+    toast(summary);
     e.target.value = '';
   }
 
