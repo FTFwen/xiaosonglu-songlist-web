@@ -292,35 +292,7 @@
     if (cur && data.cats.some(c => c.id === cur)) sel.value = cur;
   }
 
-  // 新增按钮的上传入口：绑定到 addBtn 区域的文件选择
-  function attachUpload(input, id) {
-    input.addEventListener('change', async () => {
-      const file = input.files[0];
-      if (!file) return;
-      if (!/audio\/(mpeg|mp3|wav|ogg|flac|x-m4a)/.test(file.type) && !/\.(mp3|m4a|wav|ogg|flac)$/i.test(file.name)) {
-        toast('请选择 MP3/音频文件');
-        return;
-      }
-      try {
-        await idbPut(id, file);
-        toast('音频已上传');
-        input.value = '';
-        // 更新按钮状态标记（如有对应编辑项）
-        paintBtnAudioState(id, true);
-      } catch (e) {
-        console.error('[按钮墙] 上传失败', e);
-        toast('音频上传失败');
-      }
-    });
-  }
-
-  function paintBtnAudioState(id, has) {
-    document.querySelectorAll(`[data-btn-audio-state="${id}"]`).forEach(elm => {
-      elm.textContent = has ? '✓ 已上传' : '未上传';
-      elm.classList.toggle('has', !!has);
-    });
-  }
-
+  // 按钮管理列表：主/副标题可点击编辑，右侧操作（删除）
   function renderBtnAdmin() {
     const list = el('btnAdminList');
     list.innerHTML = '';
@@ -331,67 +303,80 @@
       item.draggable = true;
       item.dataset.btnId = btn.id;
       item.innerHTML = `
-        <span class="nm">${esc(btn.name)}</span>
+        <div class="grow">
+          <div class="nm" data-edit-name="${btn.id}" title="点击编辑主标题">${esc(btn.name)}</div>
+          <div class="ds" data-edit-desc="${btn.id}" title="点击编辑副标题">${btn.desc ? esc(btn.desc) : '＿ 点击编辑副标题'}</div>
+        </div>
         <span class="ds">${cat ? cat.name : '?'}</span>
-        <span class="grow"></span>
         <span class="ds" data-btn-audio-state="${btn.id}">${btn.idb ? '✓ 已上传' : (btn.audio ? '外部音频' : '未上传')}</span>
-        <button class="btn-x" data-upload-trigger="${btn.id}" title="点击选择本地音频文件">上传音频</button>
-        <input type="file" accept=".mp3,.m4a,.wav,.ogg,.flac,audio/*" data-audio-upload="${btn.id}" style="display:none;">
         <button class="btn-x danger" data-del-btn="${btn.id}">删除</button>
       `;
-      // 点击"上传音频"按钮 → 触发隐藏的 file input
-      item.querySelector('[data-upload-trigger]').addEventListener('click', () => {
-        const input = item.querySelector('[data-audio-upload]');
-        if (input) input.click();
+      // 点击主标题 → 编辑
+      item.querySelector('[data-edit-name]').addEventListener('click', () => {
+        const elm = item.querySelector('[data-edit-name]');
+        const cur = btn.name;
+        const val = prompt('编辑主标题：', cur);
+        if (val == null) return;
+        const t = val.trim();
+        if (!t) { toast('主标题不能为空'); return; }
+        btn.name = t;
+        saveData(data);
+        elm.textContent = t;
+        renderWall();
+        toast('主标题已更新');
+      });
+      // 点击副标题 → 编辑
+      item.querySelector('[data-edit-desc]').addEventListener('click', () => {
+        const elm = item.querySelector('[data-edit-desc]');
+        const cur = btn.desc || '';
+        const val = prompt('编辑副标题（留空则删除）：', cur);
+        if (val == null) return;
+        btn.desc = val.trim();
+        saveData(data);
+        elm.textContent = btn.desc || '＿ 点击编辑副标题';
+        renderWall();
+        toast('副标题已更新');
       });
       item.querySelector('[data-del-btn]').addEventListener('click', () => {
         if (!confirm(`删除按钮「${btn.name}」？`)) return;
         data.buttons = data.buttons.filter(b => b.id !== btn.id);
         saveData(data);
         idbDel(btn.id);
-        renderWall(); renderBtnAdmin();
-      });
-      item.querySelector('[data-audio-upload]').addEventListener('change', async e => {
-        const file = e.target.files[0];
-        if (!file) return;
-        // 校验：必须是音频文件（按 MIME 或扩展名）
-        const isAudio = /audio\//.test(file.type) || /\.(mp3|m4a|wav|ogg|oga|flac|aac|opus)$/i.test(file.name);
-        if (!isAudio) {
-          toast('请选择 MP3 等音频文件');
-          e.target.value = '';
-          return;
-        }
-        try {
-          await idbPut(btn.id, file);
-          btn.idb = true;
-          saveData(data);
-          toast(`音频「${file.name}」已上传`);
-          paintBtnAudioState(btn.id, true);
-          e.target.value = '';
-        } catch (err) {
-          console.error('[按钮墙] 上传失败', err);
-          toast('音频上传失败');
-        }
+        renderWall(); renderBtnAdmin(); initDragZones();
       });
       list.appendChild(item);
     });
   }
 
-  function addBtn() {
-    const name = el('newBtnName').value.trim();
-    const desc = el('newBtnDesc').value.trim();
-    const audio = el('newBtnAudio').value.trim();
+  // 添加上传音频按钮：点击 → 弹文件选择 → 自动命名主标题 → 加入所选分类
+  function uploadBtnAdd() {
     const cat = el('newBtnCat').value;
-    if (!name) { toast('请输入按钮标题'); return; }
     if (!cat) { toast('请先选分类'); return; }
+    el('newBtnFileInput').click();
+  }
+  function handleFileToAdd(e) {
+    const file = e.target.files[0];
+    if (!file) return;
+    const isAudio = /audio\//.test(file.type) || /\.(mp3|m4a|wav|ogg|oga|flac|aac|opus)$/i.test(file.name);
+    if (!isAudio) { toast('请选择 MP3 等音频文件'); e.target.value = ''; return; }
+    const cat = el('newBtnCat').value;
+    if (!cat) { toast('请先选分类'); return; }
+    // 按文件名自动命名主标题（去掉扩展名）
+    const name = file.name.replace(/\.(mp3|m4a|wav|ogg|oga|flac|aac|opus)$/i, '').trim() || '未命名';
     const id = 'btn_' + Date.now();
-    data.buttons.push({ id, name, desc, audio, cat, idb: false });
-    saveData(data);
-    el('newBtnName').value = '';
-    el('newBtnDesc').value = '';
-    el('newBtnAudio').value = '';
-    renderWall(); renderBtnAdmin();
-    toast('按钮已添加（可在列表上传音频）');
+    const btn = { id, name, desc: '', audio: '', cat, idb: true };
+    data.buttons.push(btn);
+    idbPut(id, file).then(() => {
+      saveData(data);
+      renderWall(); renderBtnAdmin(); initDragZones();
+      toast(`已添加「${name}」`);
+    }).catch(err => {
+      console.error('[按钮墙] 上传失败', err);
+      // 失败了就回滚
+      data.buttons = data.buttons.filter(b => b.id !== id);
+      toast('音频上传失败');
+    });
+    e.target.value = '';
   }
 
   // ===== 拖拽改分类（拖到分类桶）=====
@@ -461,7 +446,8 @@
   el('logoutBtn').addEventListener('click', logout);
   el('closeAdminBtn').addEventListener('click', closeAdmin);
   el('addCatBtn').addEventListener('click', addCat);
-  el('addBtnBtn').addEventListener('click', addBtn);
+  el('uploadBtnBtn').addEventListener('click', uploadBtnAdd);
+  el('newBtnFileInput').addEventListener('change', handleFileToAdd);
   el('saveAdminBtn').addEventListener('click', saveAll);
   adminPanel.addEventListener('click', e => {
     if (e.target === adminPanel) closeAdmin();

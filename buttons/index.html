@@ -359,18 +359,18 @@
         </div>
         <div id="catAdminList"></div>
 
-        <div class="admin-sec-title">拖拽分类桶（把右侧按钮拖到目标分类）</div>
+        <div class="admin-sec-title">拖拽分类桶（把下方按钮拖到目标分类）</div>
         <div id="btnCatZones" class="cat-zone-wrap"></div>
 
-        <div class="admin-sec-title">按钮管理</div>
+        <div class="admin-sec-title">添加按钮（上传音频，自动命名）</div>
         <div class="admin-toolbar">
-          <input type="text" class="admin-input" id="newBtnName" placeholder="按钮标题">
-          <input type="text" class="admin-input" id="newBtnDesc" placeholder="副文案(可选)">
-          <input type="text" class="admin-input" id="newBtnAudio" placeholder="外部音频 URL(可选)">
           <select class="admin-input" id="newBtnCat"></select>
-          <button class="btn-x primary" id="addBtnBtn">+ 添加按钮</button>
+          <button class="btn-x primary" id="uploadBtnBtn">📤 上传音频添加按钮</button>
         </div>
-        <div class="admin-tip">按钮右侧的"上传音频"可上传本地 MP3；也可拖拽按钮条目到上面的分类桶改分类。</div>
+        <input type="file" accept=".mp3,.m4a,.wav,.ogg,.flac,audio/*" id="newBtnFileInput" style="display:none;">
+        <div class="admin-tip">点击"上传音频添加按钮"，选择本地音频，将按文件名自动命名按钮主标题；随后可在下方编辑标题/副标题、拖拽到分类桶改分类。</div>
+
+        <div class="admin-sec-title">按钮管理（点击标题/副标题可编辑）</div>
         <div id="btnAdminList"></div>
 
         <div class="btn-row">
@@ -384,6 +384,6 @@
 
   <audio id="audioPlayer" preload="none"></audio>
 
-  <script src="buttons.js?v=4"></script>
+  <script src="buttons.js?v=5"></script>
 </body>
 </html>
