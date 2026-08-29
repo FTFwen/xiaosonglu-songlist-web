@@ -451,7 +451,8 @@
   }
 
   // 音频扩展名判断（含 zip）
-  const AUDIO_SFX = /\.(mp3|m4a|wav|ogg|oga|flac|aac|opus)$/i;
+  // 可播放的音/视频扩展名（MP4/MOV 等视频导入后当音频播放，只出声）
+  const AUDIO_SFX = /\.(mp3|m4a|wav|ogg|oga|flac|aac|opus|mp4|m4v|mov|webm|mkv)$/i;
 
   // 把单个音频 blob 加为按钮（按文件名自动命名）
   async function addAudioBtn(name, blob, cat) {

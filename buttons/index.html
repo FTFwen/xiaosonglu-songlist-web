@@ -532,8 +532,8 @@
           <select class="admin-input" id="newBtnCat"></select>
           <button class="btn-x primary" id="uploadBtnBtn"><svg class="icon" aria-hidden="true"><use href="#icon-upload"></use></svg> 上传音频/导入压缩包</button>
         </div>
-        <input type="file" accept=".mp3,.m4a,.wav,.ogg,.flac,audio/*,.zip" id="newBtnFileInput" multiple style="display:none;">
-        <div class="admin-tip">可多选音频文件，或导入 zip 压缩包（自动筛出音频，非音频舍去）。文件名自动命名按钮；rar/7z 请先转成 zip 再上传。添加后可编辑标题/副标题、拖拽到分类桶改分类。</div>
+        <input type="file" accept=".mp3,.m4a,.wav,.ogg,.flac,.mp4,.m4v,.mov,.webm,.mkv,audio/*,video/*,.zip" id="newBtnFileInput" multiple style="display:none;">
+        <div class="admin-tip">可多选音频/视频文件，或导入 zip 压缩包（自动筛出音视频，非音视频舍去）。MP4/MOV 等视频导入后作为音频播放（只出声）；文件名自动命名按钮；rar/7z 请先转成 zip 再上传。添加后可编辑标题/副标题、拖拽到分类桶改分类。</div>
 
         <div class="admin-sec-title">按钮管理（点击标题/副标题可编辑）</div>
         <div id="btnAdminList"></div>
@@ -547,9 +547,10 @@
     </div>
   </div>
 
-  <audio id="audioPlayer" preload="none"></audio>
+  <!-- 播放器：用 video 元素以支持 MP4/MOV 等视频格式（当音频播，隐藏画面） -->
+  <video id="audioPlayer" preload="none" playsinline style="position:fixed;left:-9999px;top:0;width:1px;height:1px;opacity:0;"></video>
 
   <script src="jszip.min.js"></script>
-  <script src="buttons.js?v=13"></script>
+  <script src="buttons.js?v=14"></script>
 </body>
 </html>
