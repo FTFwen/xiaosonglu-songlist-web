@@ -482,6 +482,12 @@
       gap: 10px;
       flex-shrink: 0;
     }
+    /* 停止播放 + 随机播放：横向一排 */
+    .player-card .pc-actions {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
     .player-card .pc-stop {
       border: 1px solid var(--line-strong);
       background: #fff;
@@ -653,8 +659,10 @@
       <div class="pc-progress-wrap"><div class="pc-progress" id="pbProgress"></div></div>
     </div>
     <div class="pc-right">
-      <button class="pc-stop" id="pbStopBtn" title="停止播放"><svg class="icon" aria-hidden="true"><use href="#icon-close"></use></svg> 停止播放</button>
-      <button class="pc-stop pc-random-text" id="pbRandomBtn" title="随机播放一个按钮"><svg class="icon" aria-hidden="true"><use href="#icon-random-shuffle"></use></svg> 随机播放</button>
+      <div class="pc-actions">
+        <button class="pc-stop" id="pbStopBtn" title="停止播放"><svg class="icon" aria-hidden="true"><use href="#icon-close"></use></svg> 停止播放</button>
+        <button class="pc-stop pc-random-text" id="pbRandomBtn" title="随机播放一个按钮"><svg class="icon" aria-hidden="true"><use href="#icon-random-shuffle"></use></svg> 随机播放</button>
+      </div>
       <div class="pc-ctrls">
         <button class="pc-play" id="pbPlayBtn" title="播放 / 暂停"><svg class="icon" aria-hidden="true"><use href="#icon-caret-right"></use></svg></button>
         <button class="pc-mode" id="pbModeBtn" title="播放模式：顺序播放，点击切换为单曲循环"><svg class="icon" aria-hidden="true"><use href="#icon-sync"></use></svg></button>
