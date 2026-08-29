@@ -6,6 +6,23 @@
   <title>小松绿按钮墙</title>
   <link rel="icon" href="../assets/xiaosonglu-bubble.png" type="image/png">
   <style>
+    /* 标题可爱字体：站酷快乐体（ZCOOL KuaiLe），与主站一致 */
+    @font-face {
+      font-family: 'Xiaosonglu KuaiLe';
+      src: url('../assets/xiaosonglu-kuaile-subset.woff2') format('woff2');
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+    }
+    /* 图标（Ant Design 线性图标）：跟随文字颜色 */
+    .icon {
+      width: 1em;
+      height: 1em;
+      fill: currentColor;
+      vertical-align: -0.125em;
+      display: inline-block;
+      flex-shrink: 0;
+    }
     :root {
       color-scheme: light;
       --bg: #f4f6e8;
@@ -20,6 +37,8 @@
       --primary-soft: #eef1d6;
       --danger: #d9536f;
       --danger-soft: #ffe7ec;
+      --success: #2e9b60;
+      --success-soft: #e7f7ef;
       --warning: #b57d1c;
       --warning-soft: #fdf3e0;
       --shadow: 0 12px 36px rgba(122, 136, 70, 0.16);
@@ -35,44 +54,55 @@
       min-height: 100vh;
     }
 
-    /* 头部横幅 */
+    /* 头部横幅（参考主站小松绿主题布局） */
     .banner {
-      background: linear-gradient(135deg, #8a9a4e, #6f7d3d);
+      background-image: linear-gradient(rgba(122, 136, 70, 0.9), rgba(104, 118, 58, 0.94)), url('../assets/xiaosonglu-bg.jpg');
+      background-size: cover;
+      background-position: center;
       color: #fff;
-      padding: 26px 20px 20px;
-      text-align: center;
-      box-shadow: 0 6px 20px rgba(122, 136, 70, 0.3);
+      padding: 16px 20px 14px;
+      box-shadow: 0 8px 24px rgba(122, 136, 70, 0.26);
       position: relative;
     }
+    .banner-top {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .banner-icon {
+      width: 50px;
+      height: 50px;
+      border-radius: 14px;
+      background: rgba(255,255,255,0.18);
+      display: grid;
+      place-items: center;
+      flex-shrink: 0;
+      overflow: hidden;
+    }
+    .banner-icon img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 14px;
+      display: block;
+    }
+    .banner-main { min-width: 0; flex: 1; }
     .banner h1 {
-      font-size: 28px;
-      margin: 0 0 6px;
+      font-family: 'Xiaosonglu KuaiLe', 'Microsoft YaHei', sans-serif;
+      font-size: 30px;
+      line-height: 1.2;
+      margin: 2px 0 0;
+      font-weight: 400;
+      color: #fdf7d8; /* 奶油黄，贴合小松绿橄榄/奶油主题 */
       letter-spacing: 0.04em;
-      text-shadow: 0 2px 4px rgba(72, 82, 40, 0.4);
+      text-shadow: 0 1px 3px rgba(96, 108, 48, 0.35);
     }
-    .banner .sub { font-size: 13px; opacity: 0.9; }
-
-    /* 返回歌单 */
-    .back-home {
-      position: absolute;
-      left: 14px;
-      top: 14px;
-      border: 1px solid rgba(255,255,255,0.4);
-      background: rgba(255,255,255,0.14);
-      color: #fff;
-      border-radius: 999px;
-      padding: 6px 14px;
-      font-size: 12px;
-      text-decoration: none;
-      transition: all 0.2s ease;
-    }
-    .back-home:hover { background: rgba(255,255,255,0.28); }
+    .banner .sub { font-size: 13px; opacity: 0.92; margin-top: 2px; color: #fff; }
 
     /* 管理员登录键 */
     .admin-login-btn {
-      position: absolute;
-      right: 14px;
-      top: 14px;
+      flex-shrink: 0;
       border: 1px solid rgba(255,255,255,0.4);
       background: rgba(255,255,255,0.14);
       color: #fff;
@@ -579,10 +609,14 @@
   </svg>
 
   <div class="banner">
-    <a class="back-home" href="../"><svg class="icon" aria-hidden="true"><use href="#icon-arrow-left"></use></svg> 歌单</a>
-    <h1>小松绿 · 按钮墙</h1>
-    <div class="sub">点一下，听听小松绿的声音～</div>
-    <button class="admin-login-btn" id="adminLoginBtn"><svg class="icon" aria-hidden="true"><use href="#icon-sound"></use></svg> 管理员</button>
+    <div class="banner-top">
+      <div class="banner-icon"><img src="../assets/xiaosonglu-logo.png" alt="小松绿"></div>
+      <div class="banner-main">
+        <h1>小松绿 · 按钮墙</h1>
+        <div class="sub">点一下，听听小松绿的声音～</div>
+      </div>
+      <button class="admin-login-btn" id="adminLoginBtn"><svg class="icon" aria-hidden="true"><use href="#icon-sound"></use></svg> 管理员</button>
+    </div>
   </div>
 
   <!-- 顶部播放器：圆角方框卡片，常驻置顶（对齐参考站） -->
