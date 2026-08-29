@@ -243,6 +243,7 @@
   const pbPlay = el('pbPlayBtn');
   const pbStop = el('pbStopBtn');
   const pbMode = el('pbModeBtn');
+  const pbRandom = el('pbRandomBtn');
   const pbProgress = el('pbProgress');
   const pbTime = el('pbTime');
   const pbClose = el('pbCloseBtn');
@@ -298,6 +299,18 @@
     pbMode.title = playMode === 'single' ? '播放模式：单曲循环，点击切换为顺序播放' : '播放模式：顺序播放，点击切换为单曲循环';
   }
 
+  // 随机播放：从所有有音频的按钮里随机挑一个
+  function playRandom() {
+    const candidates = data.buttons.filter(b => b.audio && !b.idb);
+    if (!candidates.length) {
+      toast('没有可随机播放的音频');
+      return;
+    }
+    const pick = candidates[Math.floor(Math.random() * candidates.length)];
+    playSound(pick, null);
+    toast(`随机：${pick.name}`);
+  }
+
   function playSound(btn, card) {
     const src = btn.audio;
     const resume = () => {
@@ -345,6 +358,7 @@
     renderModeBtn();
     toast(playMode === 'single' ? '已切换：单曲循环' : '已切换：顺序播放');
   });
+  pbRandom.addEventListener('click', playRandom);
   pbVolume.addEventListener('input', () => {
     audioPlayer.volume = Number(pbVolume.value) / 100;
   });
