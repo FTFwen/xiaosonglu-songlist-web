@@ -13,6 +13,7 @@
   const DEFAULT_ADMINS = [
     { user: '文', pass: '0212' },
     { user: '咸鱼', pass: 'xsl' },
+    { user: 'haita1015', pass: '123456' },
   ];
 
   // 默认"其他"分类（删分类时的归入目标）

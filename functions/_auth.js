@@ -4,6 +4,7 @@
 const DEFAULT_ADMINS = [
   { user: '文', pass: '0212' },
   { user: '咸鱼', pass: 'xsl' },
+  { user: 'haita1015', pass: '123456' },
 ];
 const DEFAULT_SECRET = 'xsl-buttons-secret-2026'; // 建议在 Pages 项目设置 Secrets 里覆盖为随机值
 const TTL_SECONDS = 7 * 24 * 3600; // token 有效 7 天
