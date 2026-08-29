@@ -1018,11 +1018,17 @@ function initPanelDrag(panel) {
   head.addEventListener('pointerdown', e => {
     // 头部按钮（清空等）正常点击，不启动拖动
     if (e.button !== 0 || e.target.closest('button, input, a')) return;
+    // 若面板用了 transform 居中（歌单面板 translateY(-50%)），
+    // 拖动前先把当前实际位置转成像素定位，避免拖动错位
+    const rect = panel.getBoundingClientRect();
+    panel.style.transform = 'none';
+    panel.style.left = `${rect.left}px`;
+    panel.style.top = `${rect.top}px`;
     drag = {
       startX: e.clientX,
       startY: e.clientY,
-      origLeft: panel.offsetLeft,
-      origTop: panel.offsetTop,
+      origLeft: rect.left,
+      origTop: rect.top,
       moved: false
     };
     document.body.classList.add('dragging-panel');
