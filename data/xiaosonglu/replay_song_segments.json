@@ -3,7 +3,7 @@
   "roomId": "1727071052",
   "sourceType": "bilibili-live-replay-song-segments",
   "description": "从小松绿直播回放中识别出的唱歌片段原始记录。由每日自动化或人工补录维护，随后通过 scripts/build_xiaosonglu_song_data.js 聚合成插件可直接读取的歌单与历史数据。歌名允许先根据歌词片段联网检索后再补全，回放日期允许先留空并由脚本从回放标题中解析。",
-  "updatedAt": "2026-08-27T09:23:23.008Z",
+  "updatedAt": "2026-08-29T05:29:31.234Z",
   "segments": [
     {
       "replay_id": "BV1Xiu86aEwV",
@@ -2910,21 +2910,31 @@
       "tone": "",
       "status_labels": [
         "歌切合集补录",
-        "待后续回放时间定位"
+        "多源歌切交叉验证"
       ],
       "display_version": "",
       "type": "Vocaloid、J-Pop",
-      "remark": "来自 2026-08-18 歌切合集《【663645TV】神回！我已启动！全力绿来唱完了！8月18日歌切合集【小松绿Viridis】》的分P《23-アスノヨゾラ哨戒班》。按当前 song-cut-first 策略，将合集章节名直接并入正式曲库；当前记录的是合集内顺序时间，不是原始直播回放时间。",
+      "remark": "来自 2026-08-18 歌切合集《【663645TV】神回！我已启动！全力绿来唱完了！8月18日歌切合集【小松绿Viridis】》的分P《23-アスノヨゾラ哨戒班》。按当前 song-cut-first 策略，将合集章节名直接并入正式曲库；当前记录的是合集内顺序时间，不是原始直播回放时间。2026-08-25 补录核查：确认哨戒班仅 08-18「小唱一会儿聊」场演唱（并非 08-21 后日谈——该场 29751 条弹幕 0 提及）；另有两个独立单切——雾山_Kiriyama BV1n7826GE9K（3:52，08-22 发布）与 不要念我的名字我社恐 BV1Do8V6iEPw（3:55，08-19 00:50 发布，标题\"夜半火力全开\"对应 08-18 场尾）——时长与合集章节（3:55）高度吻合，判定为同一场演出的多源切片，已入 cut_index secondary。",
       "identification": "",
       "cut_link": "https://www.bilibili.com/video/BV1rv8V6DExk/",
-      "confidence": 0.58,
+      "confidence": 0.75,
       "row_key": "アスノヨゾラ哨戒班",
       "search_name": "",
       "resolution_candidates": [
         {
           "title": "【663645TV】神回！我已启动！全力绿来唱完了！8月18日歌切合集【小松绿Viridis】",
           "url": "https://www.bilibili.com/video/BV1rv8V6DExk/",
-          "snippet": "分P标题：23-アスノヨゾラ哨戒班"
+          "snippet": "分P标题：23-アスノヨゾラ哨戒班（3:55）"
+        },
+        {
+          "title": "小松绿夜半火力全开，超高机能演唱《アスノヨゾラ哨戒班》",
+          "url": "https://www.bilibili.com/video/BV1Do8V6iEPw/",
+          "snippet": "不要念我的名字我社恐 单切（3:55），2026-08-19 00:50 发布，夜半=08-18 场尾时段"
+        },
+        {
+          "title": "许下了愿望就去实现吧。《アスノヨゾラ哨戒班》",
+          "url": "https://www.bilibili.com/video/BV1n7826GE9K/",
+          "snippet": "霧山_Kiriyama 单切（3:52），2026-08-22 发布，同一演出另一修剪版"
         }
       ]
     },

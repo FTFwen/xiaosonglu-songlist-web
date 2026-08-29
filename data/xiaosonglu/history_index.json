@@ -1,7 +1,7 @@
 {
   "roomKey": "xiaosonglu",
   "roomId": "1727071052",
-  "generatedAt": "2026-08-27T09:23:23.008Z",
+  "generatedAt": "2026-08-29T05:29:31.234Z",
   "source": "local-replay-ingestion",
   "latest": {
     "year": "2026",
@@ -1366,7 +1366,7 @@
         "sing_time": "01:32:58",
         "statuses": [
           "歌切合集补录",
-          "待后续回放时间定位"
+          "多源歌切交叉验证"
         ],
         "artist": "Orangestar / IA",
         "replay_id": "BV1rv8V6DExk",

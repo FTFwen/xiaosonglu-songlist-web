@@ -1,11 +1,11 @@
 // 本文件由 E:\tool\plugin 本地数据生成（window.XSL_DATA），供网页直接打开（file://）时使用。
-// 生成时间：2026-08-28 17:04:46
+// 生成时间：2026-08-29 13:35:10
 // 数据源：E:\tool\plugin\data\（song_catalog / history_index / song_details）
 window.XSL_DATA = {
   song_catalog: {
   "roomKey": "xiaosonglu",
   "roomId": "1727071052",
-  "generatedAt": "2026-08-27T09:23:23.008Z",
+  "generatedAt": "2026-08-29T05:29:31.234Z",
   "source": "local-replay-ingestion",
   "songs": [
     {
@@ -1990,7 +1990,7 @@ window.XSL_DATA = {
       "artist": "Orangestar / IA",
       "artist_search": "Orangestar IA",
       "feat_artist": "",
-      "remark": "来自 2026-08-18 歌切合集《【663645TV】神回！我已启动！全力绿来唱完了！8月18日歌切合集【小松绿Viridis】》的分P《23-アスノヨゾラ哨戒班》。按当前 song-cut-first 策略，将合集章节名直接并入正式曲库；当前记录的是合集内顺序时间，不是原始直播回放时间。",
+      "remark": "来自 2026-08-18 歌切合集《【663645TV】神回！我已启动！全力绿来唱完了！8月18日歌切合集【小松绿Viridis】》的分P《23-アスノヨゾラ哨戒班》。按当前 song-cut-first 策略，将合集章节名直接并入正式曲库；当前记录的是合集内顺序时间，不是原始直播回放时间。2026-08-25 补录核查：确认哨戒班仅 08-18「小唱一会儿聊」场演唱（并非 08-21 后日谈——该场 29751 条弹幕 0 提及）；另有两个独立单切——雾山_Kiriyama BV1n7826GE9K（3:52，08-22 发布）与 不要念我的名字我社恐 BV1Do8V6iEPw（3:55，08-19 00:50 发布，标题\"夜半火力全开\"对应 08-18 场尾）——时长与合集章节（3:55）高度吻合，判定为同一场演出的多源切片，已入 cut_index secondary。",
       "tone": "",
       "language": "日文",
       "type": "Vocaloid、J-Pop",
@@ -1999,7 +1999,7 @@ window.XSL_DATA = {
       "search_name": "",
       "cut_link": "https://www.bilibili.com/video/BV1rv8V6DExk/",
       "sing_count": 1,
-      "status_labels": "歌切合集补录、待后续回放时间定位",
+      "status_labels": "歌切合集补录、多源歌切交叉验证",
       "last_sing_at": "2026-08-18",
       "row_key": "アスノヨゾラ哨戒班"
     },
@@ -2092,7 +2092,7 @@ window.XSL_DATA = {
   history_index: {
   "roomKey": "xiaosonglu",
   "roomId": "1727071052",
-  "generatedAt": "2026-08-27T09:23:23.008Z",
+  "generatedAt": "2026-08-29T05:29:31.234Z",
   "source": "local-replay-ingestion",
   "latest": {
     "year": "2026",
@@ -3457,7 +3457,7 @@ window.XSL_DATA = {
         "sing_time": "01:32:58",
         "statuses": [
           "歌切合集补录",
-          "待后续回放时间定位"
+          "多源歌切交叉验证"
         ],
         "artist": "Orangestar / IA",
         "replay_id": "BV1rv8V6DExk",
@@ -4023,7 +4023,7 @@ window.XSL_DATA = {
   song_details: {
   "roomKey": "xiaosonglu",
   "roomId": "1727071052",
-  "generatedAt": "2026-08-27T09:23:23.008Z",
+  "generatedAt": "2026-08-29T05:29:31.234Z",
   "source": "local-replay-ingestion",
   "bySongKey": {
     "少女レイ": {
@@ -5813,12 +5813,12 @@ window.XSL_DATA = {
           "date": "2026-08-18",
           "time": "01:32:58",
           "end_time": "01:36:53",
-          "status": "歌切合集补录、待后续回放时间定位",
+          "status": "歌切合集补录、多源歌切交叉验证",
           "artist": "Orangestar / IA",
           "replay_id": "BV1rv8V6DExk",
           "replay_title": "【663645TV】神回！我已启动！全力绿来唱完了！8月18日歌切合集【小松绿Viridis】",
           "replay_url": "https://www.bilibili.com/video/BV1rv8V6DExk/",
-          "remark": "来自 2026-08-18 歌切合集《【663645TV】神回！我已启动！全力绿来唱完了！8月18日歌切合集【小松绿Viridis】》的分P《23-アスノヨゾラ哨戒班》。按当前 song-cut-first 策略，将合集章节名直接并入正式曲库；当前记录的是合集内顺序时间，不是原始直播回放时间。",
+          "remark": "来自 2026-08-18 歌切合集《【663645TV】神回！我已启动！全力绿来唱完了！8月18日歌切合集【小松绿Viridis】》的分P《23-アスノヨゾラ哨戒班》。按当前 song-cut-first 策略，将合集章节名直接并入正式曲库；当前记录的是合集内顺序时间，不是原始直播回放时间。2026-08-25 补录核查：确认哨戒班仅 08-18「小唱一会儿聊」场演唱（并非 08-21 后日谈——该场 29751 条弹幕 0 提及）；另有两个独立单切——雾山_Kiriyama BV1n7826GE9K（3:52，08-22 发布）与 不要念我的名字我社恐 BV1Do8V6iEPw（3:55，08-19 00:50 发布，标题\"夜半火力全开\"对应 08-18 场尾）——时长与合集章节（3:55）高度吻合，判定为同一场演出的多源切片，已入 cut_index secondary。",
           "lyric_excerpt": "",
           "song_resolution_method": "song-cut-compilation-chapter",
           "replay_date_source": "collection-title-date",

@@ -2167,6 +2167,48 @@
       "duplicate_of": "",
       "collected_at": "2026-08-27T09:23:19.730Z",
       "notes": "语音频道三人合唱《绿色》（小松绿/四时小路/羽啾），切片页名「0826 (2)(8)」，2026-08-26 投稿。直播间弹幕无歌词佐证，仅「你在后边唱歌」「一转歌回」等提示；另有同晚切片「小路和羽啾合唱《绿色》无能的小松绿只能向枝堇妈妈哭诉」（BV1cL8Z6VE6p）提示小松绿是否正式开唱存疑，待人工复核。"
+    },
+    {
+      "clip_date": "2026-08-18",
+      "date_source": "manual-normalized",
+      "date_text": "2026-08-18（歌切内容判定）",
+      "song_name": "アスノヨゾラ哨戒班",
+      "song_name_source": "title-song-name",
+      "artist": "Orangestar / IA",
+      "clip_kind": "single",
+      "chapter_title": "",
+      "clip_title": "“许下了愿望就去实现吧。”《アスノヨゾラ哨戒班》",
+      "clip_url": "https://www.bilibili.com/video/BV1n7826GE9K/",
+      "clip_bvid": "BV1n7826GE9K",
+      "uploader": "霧山_Kiriyama",
+      "duration": "03:52",
+      "source_query": "小松绿Viridis 哨戒班（搜索定位）",
+      "duplicate_key": "2026-08-18::アスノヨゾラ哨戒班",
+      "duplicate_status": "secondary",
+      "duplicate_of": "https://www.bilibili.com/video/BV1rv8V6DExk/",
+      "collected_at": "2026-08-29T05:40:00.000Z",
+      "notes": "2026-08-22 22:55(UTC+8) 发布；时长 3:52 与 08-18 歌切合集分P《23-アスノヨゾラ哨戒班》（3:55）高度吻合，判定为同一场演出的另一修剪版，非 08-21 后日谈（该场弹幕 0 提及）。"
+    },
+    {
+      "clip_date": "2026-08-18",
+      "date_source": "manual-normalized",
+      "date_text": "2026-08-18（歌切内容判定）",
+      "song_name": "アスノヨゾラ哨戒班",
+      "song_name_source": "title-song-name",
+      "artist": "Orangestar / IA",
+      "clip_kind": "single",
+      "chapter_title": "",
+      "clip_title": "小松绿夜半火力全开，超高机能演唱《アスノヨゾラ哨戒班》",
+      "clip_url": "https://www.bilibili.com/video/BV1Do8V6iEPw/",
+      "clip_bvid": "BV1Do8V6iEPw",
+      "uploader": "不要念我的名字我社恐",
+      "duration": "03:55",
+      "source_query": "小松绿Viridis 哨戒班（搜索定位）",
+      "duplicate_key": "2026-08-18::アスノヨゾラ哨戒班",
+      "duplicate_status": "secondary",
+      "duplicate_of": "https://www.bilibili.com/video/BV1rv8V6DExk/",
+      "collected_at": "2026-08-29T05:40:00.000Z",
+      "notes": "2026-08-19 00:50(UTC+8) 发布，标题\"夜半火力全开\"对应 08-18「小唱一会儿聊」场尾（00:00-00:43）；时长 3:55 与 08-18 歌切合集分P（3:55）完全一致，同一场演出。"
     }
   ]
 }
