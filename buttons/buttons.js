@@ -34,11 +34,49 @@
   }
   function saveData(data) {
     localStorage.setItem(LS_KEY, JSON.stringify(data));
+    // 管理员已登录则同步到云端（写操作），否则仅本地缓存
+    const token = sessionStorage.getItem(TOKEN_KEY);
+    if (!token) return;
+    fetch(`${API_BASE}/data`, {
+      method: 'PUT',
+      headers: { 'content-type': 'application/json', 'authorization': `Bearer ${token}` },
+      body: JSON.stringify(data),
+    }).then(r => {
+      if (!r.ok) console.warn('[按钮墙] 云端保存失败:', r.status);
+    }).catch(err => console.warn('[按钮墙] 云端保存失败:', err));
   }
   // 用一份新数据替换当前 data，并立即持久化（编辑"保存/回退"都用这个）
   function applyData(next) {
     data = JSON.parse(JSON.stringify(next));
     saveData(data);
+  }
+
+  // ===== 网络 API（R2 后端） =====
+  const API_BASE = '/api';
+  const TOKEN_KEY = 'xsl:buttons:token';
+  function authHeaders(extra) {
+    const h = Object.assign({}, extra || {});
+    const token = sessionStorage.getItem(TOKEN_KEY);
+    if (token) h['authorization'] = `Bearer ${token}`;
+    return h;
+  }
+  // 从云端拉取元数据；失败时抛出
+  async function fetchMeta() {
+    const res = await fetch(`${API_BASE}/data`);
+    if (!res.ok) throw new Error('fetch meta failed: ' + res.status);
+    return res.json();
+  }
+  // 启动时同步：拉云端 meta，成功则替换本地 data + renderWall；失败保底用本地缓存
+  async function syncFromServer() {
+    try {
+      const meta = await fetchMeta();
+      if (meta && Array.isArray(meta.cats) && Array.isArray(meta.buttons)) {
+        applyData(meta);
+      }
+    } catch (e) {
+      console.warn('[按钮墙] 云端拉取失败，使用本地缓存:', e);
+    }
+    renderWall();
   }
 
   // ===== IndexedDB 音频存储 =====
@@ -265,6 +303,7 @@
       });
     };
     if (btn.idb) {
+      // 兼容旧本地 IndexedDB 数据（尚未迁移上云）
       idbGet(btn.id).then(blob => {
         if (blob) {
           const url = URL.createObjectURL(blob);
@@ -373,26 +412,51 @@
     el('adminCardTitle').textContent = '按钮墙管理后台';
     renderCatAdmin();
     fillCatSelect();
+    toggleMigrateBtn();
   }
 
-  function doLogin() {
+  async function doLogin() {
     const user = el('loginUser').value.trim();
     const pass = el('loginPass').value;
-    const admin = getAdmin();
-    if (user === admin.user && pass === admin.pass) {
-      isAdmin = true;
-      sessionStorage.setItem('xsl:buttons:authed', '1');
-      enterAdminMode();
-      updateAdminUI();
-      toast('登录成功');
-    } else {
-      el('authErr').textContent = '用户名或密码错误';
+    // 先尝试云端换取 token（写操作鉴权）；云端不可用时回退本地比对
+    try {
+      const res = await fetch(`${API_BASE}/login`, {
+        method: 'POST',
+        headers: { 'content-type': 'application/json' },
+        body: JSON.stringify({ user, pass }),
+      });
+      if (!res.ok) throw new Error('login failed: ' + res.status);
+      const j = await res.json();
+      if (j.ok && j.token) {
+        sessionStorage.setItem('xsl:buttons:authed', '1');
+        sessionStorage.setItem(TOKEN_KEY, j.token);
+        isAdmin = true;
+        enterAdminMode();
+        updateAdminUI();
+        toast('登录成功');
+        return;
+      }
+      throw new Error('bad login response');
+    } catch (e) {
+      console.warn('[按钮墙] 云端登录不可用，回退本地校验:', e);
+      const admin = getAdmin();
+      if (user === admin.user && pass === admin.pass) {
+        sessionStorage.setItem('xsl:buttons:authed', '1');
+        sessionStorage.removeItem(TOKEN_KEY);
+        isAdmin = true;
+        enterAdminMode();
+        updateAdminUI();
+        toast('登录成功（离线模式，改动仅本地）');
+      } else {
+        el('authErr').textContent = '用户名或密码错误';
+      }
     }
   }
 
   function logout() {
     isAdmin = false;
     sessionStorage.removeItem('xsl:buttons:authed');
+    sessionStorage.removeItem(TOKEN_KEY);
     showLogin();
     exitEditMode(false); // 退出编辑模式
     updateAdminUI();
@@ -430,15 +494,15 @@
 
   function exitEditMode(save) {
     if (save) {
-      // 保存：先清理被删除磁贴的音频 blob，只保留当前 data 里存在的
+      // 保存：先清理被删除磁贴的云端音频，只保留当前 data 里存在的
       const curIds = new Set(data.buttons.map(b => b.id));
       (editSnapshot ? editSnapshot.buttons : []).forEach(b => {
-        if (!curIds.has(b.id)) idbDel(b.id);
+        if (!curIds.has(b.id)) deleteRemoteAudio(b.id);
       });
       applyData(data);
       toast('已保存');
     } else {
-      // 不保存：回退到进编辑模式之前的状态，覆盖编辑期间写入的 localStorage
+      // 不保存：回退到进编辑模式之前的状态，覆盖编辑期间写入的数据
       applyData(editSnapshot || loadData());
       toast('已撤销修改');
     }
@@ -447,6 +511,61 @@
     document.body.classList.remove('editing');
     renderWall();
     renderEditButtons();
+  }
+
+  // 删除云端音频 blob（管理员 token）
+  function deleteRemoteAudio(id) {
+    const token = sessionStorage.getItem(TOKEN_KEY);
+    if (!token) return; // 离线模式，无云端可删
+    fetch(`${API_BASE}/audio/${id}`, {
+      method: 'DELETE',
+      headers: { 'authorization': `Bearer ${token}` },
+    }).catch(() => {});
+  }
+
+  // 是否有"仍存在本机 IndexedDB、尚未上云"的旧音频（供迁移按钮显示）
+  function hasLocalAudio() {
+    return data.buttons.some(b => b.idb);
+  }
+
+  // 把本地 IndexedDB 旧音频逐一上传 R2，并更新 meta（写操作需 token）
+  async function migrateLocalAudio() {
+    const token = sessionStorage.getItem(TOKEN_KEY);
+    if (!token) { toast('请先以管理员登录'); return; }
+    const pending = data.buttons.filter(b => b.idb && !b.audio);
+    if (!pending.length) { toast('没有需要迁移的本地音频'); return; }
+    let done = 0, fail = 0;
+    for (const b of pending) {
+      try {
+        const blob = await idbGet(b.id);
+        if (!blob) throw new Error('local blob missing');
+        const url = `${API_BASE}/audio/${b.id}`;
+        const res = await fetch(url, {
+          method: 'PUT',
+          headers: authHeaders({ 'content-type': blob.type || 'audio/mpeg' }),
+          body: blob,
+        });
+        if (!res.ok) throw new Error('upload failed: ' + res.status);
+        b.audio = url;
+        b.idb = false;
+        done++;
+      } catch (err) {
+        console.error('[按钮墙] 迁移失败:', b.name, err);
+        fail++;
+      }
+    }
+    if (done) { applyData(data); }
+    renderWall();
+    renderCatAdmin(); // 可能影响分类内条数
+    toggleMigrateBtn();
+    toast(done > 0 ? `已迁移 ${done} 个音频上云${fail ? `，失败 ${fail} 个` : ''}` : `迁移失败（${fail} 个）。请检查网络`);
+  }
+
+  // 根据当前数据 + 登录态，决定是否显示"迁移上云"按钮
+  function toggleMigrateBtn() {
+    const btn = el('migrateBtn');
+    if (!btn) return;
+    btn.style.display = (isAdmin && hasLocalAudio()) ? '' : 'none';
   }
 
   // 编辑弹窗：同时编辑标题 + 副标题
@@ -559,10 +678,24 @@
     const cleanName = name.replace(AUDIO_SFX, '').trim() || '未命名';
     const id = 'btn_' + Date.now() + '_' + Math.random().toString(36).slice(2, 6);
     const dur = await readDuration(blob);
-    const btn = { id, name: cleanName, desc: '', audio: '', cat, idb: true, duration: dur };
+    const btn = { id, name: cleanName, desc: '', audio: '', cat, idb: false, duration: dur };
     data.buttons.push(btn);
-    await idbPut(id, blob);
+    // 上传 blob 到 R2（写操作需 token）
+    const url = `${API_BASE}/audio/${id}`;
+    await uploadAudioBlob(url, blob, btn);
     return { id, name: cleanName, duration: dur };
+  }
+
+  // 上传单个音频 blob 到云端，成功后把按钮指向该 URL
+  async function uploadAudioBlob(url, blob, btn) {
+    const res = await fetch(url, {
+      method: 'PUT',
+      headers: authHeaders({ 'content-type': blob.type || 'audio/mpeg' }),
+      body: blob,
+    });
+    if (!res.ok) throw new Error('上传音频失败: ' + res.status);
+    btn.audio = url;
+    btn.idb = false;
   }
 
   // 处理选中的文件：普通音频直接加；zip 解压后筛出音频加
@@ -633,6 +766,8 @@
   el('editOkBtn').addEventListener('click', confirmEditPopup);
   el('editCancelPopupBtn').addEventListener('click', closeEditPopup);
   el('editPopup').addEventListener('click', e => { if (e.target === el('editPopup')) closeEditPopup(); });
+  // 本地音频迁移上云
+  el('migrateBtn').addEventListener('click', migrateLocalAudio);
 
   function addCat() {
     const name = el('newCatName').value.trim();
@@ -646,7 +781,8 @@
   }
 
   // ===== 初始化 =====
-  // 若已登录（会话保持），显示编辑模式入口
-  if (isAdmin) updateAdminUI();
-  renderWall();
+  // 若已登录（会话保持），显示编辑模式入口 + 迁移按钮
+  if (isAdmin) { updateAdminUI(); toggleMigrateBtn(); }
+  // 从云端同步元数据（失败回退本地缓存）；同步完成后 renderWall
+  syncFromServer();
 })();
