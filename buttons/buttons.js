@@ -449,28 +449,62 @@
     if (!cat) { toast('请先选分类'); return; }
     el('newBtnFileInput').click();
   }
-  function handleFileToAdd(e) {
-    const file = e.target.files[0];
-    if (!file) return;
-    const isAudio = /audio\//.test(file.type) || /\.(mp3|m4a|wav|ogg|oga|flac|aac|opus)$/i.test(file.name);
-    if (!isAudio) { toast('请选择 MP3 等音频文件'); e.target.value = ''; return; }
+
+  // 音频扩展名判断（含 zip）
+  const AUDIO_SFX = /\.(mp3|m4a|wav|ogg|oga|flac|aac|opus)$/i;
+
+  // 把单个音频 blob 加为按钮（按文件名自动命名）
+  async function addAudioBtn(name, blob, cat) {
+    const cleanName = name.replace(AUDIO_SFX, '').trim() || '未命名';
+    const id = 'btn_' + Date.now() + '_' + Math.random().toString(36).slice(2, 6);
+    const btn = { id, name: cleanName, desc: '', audio: '', cat, idb: true };
+    data.buttons.push(btn);
+    await idbPut(id, blob);
+    return { id, name: cleanName };
+  }
+
+  // 处理选中的文件：普通音频直接加；zip 解压后筛出音频加
+  async function handleFileToAdd(e) {
+    const files = Array.from(e.target.files || []);
+    if (!files.length) return;
     const cat = el('newBtnCat').value;
     if (!cat) { toast('请先选分类'); return; }
-    // 按文件名自动命名主标题（去掉扩展名）
-    const name = file.name.replace(/\.(mp3|m4a|wav|ogg|oga|flac|aac|opus)$/i, '').trim() || '未命名';
-    const id = 'btn_' + Date.now();
-    const btn = { id, name, desc: '', audio: '', cat, idb: true };
-    data.buttons.push(btn);
-    idbPut(id, file).then(() => {
-      saveData(data);
-      renderWall(); renderBtnAdmin(); initDragZones();
-      toast(`已添加「${name}」`);
-    }).catch(err => {
-      console.error('[按钮墙] 上传失败', err);
-      // 失败了就回滚
-      data.buttons = data.buttons.filter(b => b.id !== id);
-      toast('音频上传失败');
-    });
+
+    let added = 0;
+    let skipped = 0;
+
+    for (const file of files) {
+      try {
+        const isZip = /\.zip$/i.test(file.name) || file.type === 'application/zip' || file.type === 'application/x-zip-compressed';
+        if (isZip) {
+          // 解压 zip：遍历所有条目，筛出音频文件
+          const zip = await JSZip.loadAsync(file);
+          const entries = Object.values(zip.files);
+          for (const entry of entries) {
+            if (entry.dir) continue;
+            const n = entry.name.split('/').pop();
+            if (!AUDIO_SFX.test(n)) { skipped++; continue; } // 非音频舍去
+            const blob = await entry.async('blob');
+            await addAudioBtn(n, blob, cat);
+            added++;
+          }
+        } else if (AUDIO_SFX.test(file.name) || /^audio\//.test(file.type)) {
+          await addAudioBtn(file.name, file, cat);
+          added++;
+        } else {
+          skipped++; // 非音频文件舍去
+        }
+      } catch (err) {
+        console.error('[按钮墙] 处理失败:', file.name, err);
+        skipped++;
+      }
+    }
+
+    saveData(data);
+    renderWall(); renderBtnAdmin(); initDragZones();
+
+    if (added) toast(`已添加 ${added} 个按钮${skipped ? `，舍去 ${skipped} 个非音频` : ''}`);
+    else toast(`没有可导入的音频（共舍去 ${skipped} 个文件）`);
     e.target.value = '';
   }
 
