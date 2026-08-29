@@ -1,21 +1,26 @@
 // buttons.js - 小松绿按钮墙
-// 数据存 localStorage（简单版），管理员登录后可编辑分类/按钮
-// 布局：垂直分组列表 —— 每个分类一个区块标题，下面一条一条的按钮行
+// 数据：分类/按钮元数据存 localStorage；上传的音频字节存 IndexedDB
+// 管理员登录后可编辑分类、上传音频、拖拽按钮改分类
 (() => {
   'use strict';
 
   // ===== 存储 =====
   const LS_KEY = 'xsl:buttons:data';
-  const LS_ADMIN = 'xsl:buttons:admin';
+  const IDB_NAME = 'xsl:buttons:audio';
+  const IDB_STORE = 'audio';
 
   // 管理员账号（用户设定：文 / 0212）
   const DEFAULT_ADMIN = { user: '文', pass: '0212' };
+
+  // 默认"其他"分类（删分类时的归入目标）
+  const OTHER_CAT_ID = 'other';
 
   const DEFAULT_DATA = {
     cats: [
       { id: 'mdichang', name: '名场面' },
       { id: 'bdong', name: 'b动静' },
-      { id: 'nangyang', name: '娘养' }
+      { id: 'nangyang', name: '娘养' },
+      { id: OTHER_CAT_ID, name: '其他' }
     ],
     buttons: []
   };
@@ -29,6 +34,52 @@
   }
   function saveData(data) {
     localStorage.setItem(LS_KEY, JSON.stringify(data));
+  }
+
+  // ===== IndexedDB 音频存储 =====
+  let dbPromise = null;
+  function openDB() {
+    if (dbPromise) return dbPromise;
+    dbPromise = new Promise((resolve, reject) => {
+      const req = indexedDB.open(IDB_NAME, 1);
+      req.onupgradeneeded = e => {
+        const db = e.target.result;
+        if (!db.objectStoreNames.contains(IDB_STORE)) {
+          db.createObjectStore(IDB_STORE, { keyPath: 'id' });
+        }
+      };
+      req.onsuccess = () => resolve(req.result);
+      req.onerror = () => reject(req.error);
+    });
+    return dbPromise;
+  }
+
+  async function idbPut(id, blob) {
+    const db = await openDB();
+    return new Promise((resolve, reject) => {
+      const tx = db.transaction(IDB_STORE, 'readwrite');
+      tx.objectStore(IDB_STORE).put({ id, blob });
+      tx.oncomplete = () => resolve();
+      tx.onerror = () => reject(tx.error);
+    });
+  }
+  async function idbGet(id) {
+    const db = await openDB();
+    return new Promise((resolve, reject) => {
+      const tx = db.transaction(IDB_STORE, 'readonly');
+      const req = tx.objectStore(IDB_STORE).get(id);
+      req.onsuccess = () => resolve(req.result ? req.result.blob : null);
+      req.onerror = () => reject(req.error);
+    });
+  }
+  async function idbDel(id) {
+    const db = await openDB();
+    return new Promise((resolve, reject) => {
+      const tx = db.transaction(IDB_STORE, 'readwrite');
+      tx.objectStore(IDB_STORE).delete(id);
+      tx.oncomplete = () => resolve();
+      tx.onerror = () => reject(tx.error);
+    });
   }
 
   // ===== 状态 =====
@@ -51,7 +102,6 @@
       const section = document.createElement('section');
       section.className = 'cat-section';
 
-      // 分类标题
       const head = document.createElement('div');
       head.className = 'cat-head';
       head.innerHTML = `
@@ -61,7 +111,6 @@
       `;
       section.appendChild(head);
 
-      // 按钮列表
       const listWrap = document.createElement('div');
       listWrap.className = 'btn-list';
       if (list.length === 0) {
@@ -94,29 +143,40 @@
   // ===== 播放音效 =====
   function playSound(btn, card) {
     const src = btn.audio;
+    const resume = () => {
+      audioPlayer.currentTime = 0;
+      audioPlayer.play().then(() => {
+        card.classList.add('playing');
+        const bar = card.querySelector('.bar');
+        if (bar) bar.style.width = '100%';
+        audioPlayer.onended = () => {
+          card.classList.remove('playing');
+          if (bar) bar.style.width = '0%';
+        };
+      }).catch(err => {
+        console.warn('[按钮墙] 播放失败:', err);
+        toast('音频播放失败');
+      });
+    };
+    // 优先播放 IndexedDB 里上传的音频
+    if (btn.idb) {
+      idbGet(btn.id).then(blob => {
+        if (blob) {
+          const url = URL.createObjectURL(blob);
+          audioPlayer.src = url;
+          resume();
+        } else {
+          toast('音频文件丢失，请重新上传');
+        }
+      }).catch(() => toast('读取音频失败'));
+      return;
+    }
     if (!src) {
       toast(`「${btn.name}」还没有音频`);
       return;
     }
-    document.querySelectorAll('.sound-btn.playing').forEach(c => {
-      c.classList.remove('playing');
-      const bar = c.querySelector('.bar');
-      if (bar) bar.style.width = '0%';
-    });
     audioPlayer.src = src;
-    audioPlayer.currentTime = 0;
-    audioPlayer.play().then(() => {
-      card.classList.add('playing');
-      const bar = card.querySelector('.bar');
-      if (bar) bar.style.width = '100%';
-      audioPlayer.onended = () => {
-        card.classList.remove('playing');
-        if (bar) bar.style.width = '0%';
-      };
-    }).catch(err => {
-      console.warn('[按钮墙] 播放失败:', err);
-      toast('音频播放失败');
-    });
+    resume();
   }
 
   // ===== 轻提示 =====
@@ -141,10 +201,7 @@
   }
 
   // ===== 管理员 =====
-  // 管理员账号：以代码里的 DEFAULT_ADMIN 为准（用户设定）
-  function getAdmin() {
-    return DEFAULT_ADMIN;
-  }
+  function getAdmin() { return DEFAULT_ADMIN; }
 
   function openAdmin() {
     adminPanel.classList.add('show');
@@ -167,6 +224,7 @@
     renderCatAdmin();
     renderBtnAdmin();
     fillCatSelect();
+    initDragZones();
   }
 
   function doLogin() {
@@ -195,36 +253,32 @@
     const list = el('catAdminList');
     list.innerHTML = '';
     data.cats.forEach(cat => {
+      const isOther = cat.id === OTHER_CAT_ID;
       const item = document.createElement('div');
       item.className = 'admin-item';
       item.innerHTML = `
         <span class="nm">${esc(cat.name)}</span>
         <span class="grow"></span>
-        <button class="btn-x danger" data-del-cat="${cat.id}">删除</button>
+        ${isOther ? '<span class="ds">默认</span>' : `<button class="btn-x danger" data-del-cat="${cat.id}">删除</button>`}
       `;
-      item.querySelector('[data-del-cat]').addEventListener('click', () => {
-        if (!confirm(`删除分类「${cat.name}」及其所有按钮？`)) return;
+      const delBtn = item.querySelector('[data-del-cat]');
+      if (delBtn) delBtn.addEventListener('click', () => {
+        // 删除分类后，其按钮自动归入"其他"
+        let moved = 0;
+        data.buttons.forEach(b => { if (b.cat === cat.id) { b.cat = OTHER_CAT_ID; moved++; } });
         data.cats = data.cats.filter(c => c.id !== cat.id);
-        data.buttons = data.buttons.filter(b => b.cat !== cat.id);
+        // 确保"其他"存在
+        if (!data.cats.some(c => c.id === OTHER_CAT_ID)) data.cats.push({ id: OTHER_CAT_ID, name: '其他' });
         saveData(data);
+        const msg = moved ? `分类已删除，${moved} 个按钮归入「其他」` : '分类已删除';
         renderWall(); renderCatAdmin(); renderBtnAdmin(); fillCatSelect();
+        toast(msg);
       });
       list.appendChild(item);
     });
   }
 
-  function addCat() {
-    const name = el('newCatName').value.trim();
-    if (!name) { toast('请输入分类名'); return; }
-    const id = 'cat_' + Date.now();
-    data.cats.push({ id, name });
-    saveData(data);
-    el('newCatName').value = '';
-    renderWall(); renderCatAdmin(); fillCatSelect();
-    toast('分类已添加');
-  }
-
-  // ===== 按钮管理 =====
+  // ===== 按钮管理（含上传 + 拖拽改分类）=====
   function fillCatSelect() {
     const sel = el('newBtnCat');
     const cur = sel.value || (data.cats[0] && data.cats[0].id);
@@ -238,24 +292,72 @@
     if (cur && data.cats.some(c => c.id === cur)) sel.value = cur;
   }
 
+  // 新增按钮的上传入口：绑定到 addBtn 区域的文件选择
+  function attachUpload(input, id) {
+    input.addEventListener('change', async () => {
+      const file = input.files[0];
+      if (!file) return;
+      if (!/audio\/(mpeg|mp3|wav|ogg|flac|x-m4a)/.test(file.type) && !/\.(mp3|m4a|wav|ogg|flac)$/i.test(file.name)) {
+        toast('请选择 MP3/音频文件');
+        return;
+      }
+      try {
+        await idbPut(id, file);
+        toast('音频已上传');
+        input.value = '';
+        // 更新按钮状态标记（如有对应编辑项）
+        paintBtnAudioState(id, true);
+      } catch (e) {
+        console.error('[按钮墙] 上传失败', e);
+        toast('音频上传失败');
+      }
+    });
+  }
+
+  function paintBtnAudioState(id, has) {
+    document.querySelectorAll(`[data-btn-audio-state="${id}"]`).forEach(elm => {
+      elm.textContent = has ? '✓ 已上传' : '未上传';
+      elm.classList.toggle('has', !!has);
+    });
+  }
+
   function renderBtnAdmin() {
     const list = el('btnAdminList');
     list.innerHTML = '';
     data.buttons.forEach(btn => {
       const cat = data.cats.find(c => c.id === btn.cat);
       const item = document.createElement('div');
-      item.className = 'admin-item';
+      item.className = 'admin-item btn-admin-item';
+      item.draggable = true;
+      item.dataset.btnId = btn.id;
       item.innerHTML = `
         <span class="nm">${esc(btn.name)}</span>
-        <span class="ds">${esc(btn.audio || '无音频')} · ${cat ? cat.name : '?'}</span>
+        <span class="ds">${cat ? cat.name : '?'}</span>
         <span class="grow"></span>
+        <span class="ds" data-btn-audio-state="${btn.id}">${btn.idb ? '✓ 已上传' : (btn.audio ? '外部音频' : '未上传')}</span>
+        <input type="file" accept="audio/*,.mp3" class="btn-x audio-upload" data-audio-upload="${btn.id}" title="上传/替换音频">
         <button class="btn-x danger" data-del-btn="${btn.id}">删除</button>
       `;
       item.querySelector('[data-del-btn]').addEventListener('click', () => {
         if (!confirm(`删除按钮「${btn.name}」？`)) return;
         data.buttons = data.buttons.filter(b => b.id !== btn.id);
         saveData(data);
+        idbDel(btn.id);
         renderWall(); renderBtnAdmin();
+      });
+      item.querySelector('[data-audio-upload]').addEventListener('change', async e => {
+        const file = e.target.files[0];
+        if (!file) return;
+        try {
+          await idbPut(btn.id, file);
+          btn.idb = true;
+          saveData(data);
+          toast('音频已上传');
+          paintBtnAudioState(btn.id, true);
+        } catch (err) {
+          console.error('[按钮墙] 上传失败', err);
+          toast('音频上传失败');
+        }
       });
       list.appendChild(item);
     });
@@ -268,13 +370,74 @@
     const cat = el('newBtnCat').value;
     if (!name) { toast('请输入按钮标题'); return; }
     if (!cat) { toast('请先选分类'); return; }
-    data.buttons.push({ id: 'btn_' + Date.now(), name, desc, audio, cat });
+    const id = 'btn_' + Date.now();
+    data.buttons.push({ id, name, desc, audio, cat, idb: false });
     saveData(data);
     el('newBtnName').value = '';
     el('newBtnDesc').value = '';
     el('newBtnAudio').value = '';
     renderWall(); renderBtnAdmin();
-    toast('按钮已添加');
+    toast('按钮已添加（可在列表上传音频）');
+  }
+
+  // ===== 拖拽改分类（拖到分类桶）=====
+  // 初始化分类桶 + 绑定按钮列表拖拽事件（每次进入后台调用，可重复，用 once 避免重复监听）
+  function initDragZones() {
+    const zoneWrap = el('btnCatZones');
+    const adminList = el('btnAdminList');
+    if (!zoneWrap || !adminList) return;
+    zoneWrap.innerHTML = '';
+    let dragId = null;
+
+    const renderZones = () => {
+      zoneWrap.innerHTML = '';
+      data.cats.forEach(cat => {
+        const zone = document.createElement('div');
+        zone.className = 'cat-zone';
+        zone.dataset.cat = cat.id;
+        const cnt = data.buttons.filter(b => b.cat === cat.id).length;
+        zone.innerHTML = `<span class="zone-name">${esc(cat.name)}</span><span class="zone-count">${cnt ? cnt : ''}</span>`;
+        zone.addEventListener('dragover', e => { e.preventDefault(); zone.classList.add('over'); });
+        zone.addEventListener('dragleave', () => zone.classList.remove('over'));
+        zone.addEventListener('drop', e => {
+          e.preventDefault();
+          zone.classList.remove('over');
+          if (!dragId) return;
+          const btn = data.buttons.find(b => b.id === dragId);
+          if (btn) {
+            btn.cat = cat.id;
+            saveData(data);
+            renderWall(); renderBtnAdmin(); renderZones();
+            toast(`「${btn.name}」已移到「${cat.name}」`);
+          }
+          dragId = null;
+        });
+        zoneWrap.appendChild(zone);
+      });
+    };
+
+    // 用 once 绑定，避免重复进后台叠加监听
+    adminList.ondragstart = e => {
+      const item = e.target.closest('.btn-admin-item');
+      if (!item) return;
+      dragId = item.dataset.btnId;
+      item.classList.add('dragging');
+    };
+    adminList.ondragend = () => {
+      document.querySelectorAll('.btn-admin-item.dragging').forEach(i => i.classList.remove('dragging'));
+      zoneWrap.querySelectorAll('.cat-zone').forEach(z => z.classList.remove('over'));
+      dragId = null;
+    };
+
+    renderZones();
+  }
+
+  // 保存：把当前 data 持久化（分类/按钮/拖拽结果已即时保存，这里做完整保存提示）
+  function saveAll() {
+    saveData(data);
+    initDragZones();
+    renderWall();
+    toast('已保存');
   }
 
   // ===== 事件绑定 =====
@@ -285,11 +448,24 @@
   el('closeAdminBtn').addEventListener('click', closeAdmin);
   el('addCatBtn').addEventListener('click', addCat);
   el('addBtnBtn').addEventListener('click', addBtn);
+  el('saveAdminBtn').addEventListener('click', saveAll);
   adminPanel.addEventListener('click', e => {
     if (e.target === adminPanel) closeAdmin();
   });
   el('loginUser').addEventListener('keydown', e => { if (e.key === 'Enter') doLogin(); });
   el('loginPass').addEventListener('keydown', e => { if (e.key === 'Enter') doLogin(); });
+
+  function addCat() {
+    const name = el('newCatName').value.trim();
+    if (!name) { toast('请输入分类名'); return; }
+    const id = 'cat_' + Date.now();
+    data.cats.push({ id, name });
+    saveData(data);
+    el('newCatName').value = '';
+    renderWall(); renderCatAdmin(); fillCatSelect();
+    initDragZones();
+    toast('分类已添加');
+  }
 
   // ===== 初始化 =====
   renderWall();
