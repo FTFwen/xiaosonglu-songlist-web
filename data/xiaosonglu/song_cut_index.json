@@ -3,7 +3,7 @@
   "roomId": "1727071052",
   "sourceType": "bilibili-song-cut-index",
   "description": "从 Bilibili 直接搜索“小松绿歌切”等关键词收集的增量歌切台账。优先收录带明确日期标记的歌切；对于合集歌切，可使用视频选集/分P标题里的歌曲名；对于标题花哨但简介写明日期的单曲歌切，可用简介日期入表，但表中 song_name 只保留真实歌曲名。用同一天同一首歌做重复判定。",
-  "updatedAt": "2026-08-24T12:03:04.026Z",
+  "updatedAt": "2026-08-27T09:23:19.730Z",
   "strategy": {
     "acceptedDateMarkers": [
       "8.15",
@@ -2146,6 +2146,27 @@
       "duplicate_of": "",
       "collected_at": "2026-08-25T15:36:57.645Z",
       "notes": "萌百核实：忘川风华录 2019-12-14，海伊与诗岸演唱。"
+    },
+    {
+      "clip_date": "2026-08-26",
+      "date_source": "manual-normalized",
+      "date_text": "2026-08-26",
+      "song_name": "绿色",
+      "song_name_source": "clip-title",
+      "artist": "陈雪凝",
+      "clip_kind": "single",
+      "chapter_title": "",
+      "clip_title": "『绿 色💚』【小松绿/四时小路/羽啾】",
+      "clip_url": "https://www.bilibili.com/video/BV1QG8o6xE13/",
+      "clip_bvid": "BV1QG8o6xE13",
+      "uploader": "沉默环节",
+      "duration": "01:43",
+      "source_query": "语音频道合唱切片（游龙287）",
+      "duplicate_key": "2026-08-26::绿色",
+      "duplicate_status": "primary",
+      "duplicate_of": "",
+      "collected_at": "2026-08-27T09:23:19.730Z",
+      "notes": "语音频道三人合唱《绿色》（小松绿/四时小路/羽啾），切片页名「0826 (2)(8)」，2026-08-26 投稿。直播间弹幕无歌词佐证，仅「你在后边唱歌」「一转歌回」等提示；另有同晚切片「小路和羽啾合唱《绿色》无能的小松绿只能向枝堇妈妈哭诉」（BV1cL8Z6VE6p）提示小松绿是否正式开唱存疑，待人工复核。"
     }
   ]
 }

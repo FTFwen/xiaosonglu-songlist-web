@@ -1,7 +1,7 @@
 {
   "roomKey": "xiaosonglu",
   "roomId": "1727071052",
-  "generatedAt": "2026-08-25T15:36:57.729Z",
+  "generatedAt": "2026-08-27T09:23:23.008Z",
   "source": "local-replay-ingestion",
   "bySongKey": {
     "少女レイ": {
@@ -2526,6 +2526,31 @@
           "song_resolution_method": "song-cut-title",
           "replay_date_source": "cut-title-date",
           "cut_link": "https://www.bilibili.com/video/BV1mwuz62EfH/"
+        }
+      ]
+    },
+    "绿色": {
+      "row_key": "绿色",
+      "song_name": "绿色",
+      "display_song_name": "绿色",
+      "artist": "陈雪凝",
+      "cut_link": "https://www.bilibili.com/video/BV1QG8o6xE13/",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-08-26",
+          "time": "00:55:00",
+          "end_time": "01:01:00",
+          "status": "语音频道合唱、自动识别待人工复核",
+          "artist": "陈雪凝",
+          "replay_id": "BV1KK8Z6JEMP",
+          "replay_title": "【小松绿Viridis】谢礼物和神秘星露谷-2026年08月26日22点场",
+          "replay_url": "https://www.bilibili.com/video/BV1KK8Z6JEMP/",
+          "remark": "2026-08-26 谢礼物和神秘星露谷（22点场）尾段语音频道（游龙287）中，小松绿与四时小路Komichi、羽啾chu2u三人合唱《绿色》；切片【小松绿/四时小路/羽啾】标题佐证（BV1QG8o6xE13，103s，沉默环节）。直播间弹幕无歌词行（语音频道合唱不在本房间弹幕里），仅 23:07「你在后边唱歌」、23:32「一转歌回」等提示；另有切片标题「小路和羽啾合唱《绿色》无能的小松绿只能向枝堇妈妈哭诉」（BV1cL8Z6VE6p）提示该晚小松绿曾试图加入但未成，是否正式开唱存疑 → 待人工复核。start/end 为按弹幕时间线估算。",
+          "lyric_excerpt": "",
+          "song_resolution_method": "bili-clip-evidence",
+          "replay_date_source": "replay-title",
+          "cut_link": "https://www.bilibili.com/video/BV1QG8o6xE13/"
         }
       ]
     }

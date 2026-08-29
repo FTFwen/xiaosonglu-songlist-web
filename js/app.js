@@ -2308,7 +2308,7 @@ function bindDom() {
     'historyDaySelect','historyPrevBtn','historyNextBtn','historyPageInfo','historyMetaText','historyListWrap','favoritesRefreshBtn',
     'favoritesToggleImportBtn','favoritesImportCard','favoritesImportInput','favoritesImportApplyBtn','favoritesImportCancelBtn','favoritesImportFileBtn','favoritesImportFileInput',
     'favoritesExportBtn','favoritesExportFileBtn','favoritesClearBtn','favoritesMetaText','favoritesCountText','favoritesListWrap',
-    'detailOverlay','detailModal','detailTitle','detailSub','detailBody','detailCloseBtn','toast',
+    'detailOverlay','detailModal','detailTitle','detailSub','detailBody','detailCloseBtn','toast','backTopBtn',
     'playerBar','playerPrevBtn','playerToggleBtn','playerNextBtn','playerSongName','playerSongArtist','playerSeek','playerTimeCur','playerTimeDur','playerShuffleBtn','playerVolume','playAllBtn','playShuffleBtn',
     'playerTimerWrap','playerTimerBtn','playerTimerPopover','playerTimerPopTitle','timerValH','timerValM','timerCancelBtn','timerStartBtn',
     'playlistPanel','playlistCountText','playlistClearBtn','playlistListWrap',
@@ -2782,6 +2782,18 @@ function bindEvents() {
   dom.detailCloseBtn.addEventListener('click', closeDetailModal);
   document.addEventListener('keydown', event => {
     if (event.key === 'Escape') closeDetailModal();
+  });
+
+  // ===== 回到顶部：滚动超过一屏高度后显示，点击平滑回顶 =====
+  const BACK_TOP_THRESHOLD = 480;
+  const updateBackTop = () => {
+    const y = window.scrollY || document.documentElement.scrollTop || 0;
+    dom.backTopBtn.classList.toggle('show', y > BACK_TOP_THRESHOLD);
+  };
+  window.addEventListener('scroll', updateBackTop, { passive: true });
+  updateBackTop();
+  dom.backTopBtn.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   });
 }
 

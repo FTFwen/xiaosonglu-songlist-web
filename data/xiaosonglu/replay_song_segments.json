@@ -3,7 +3,7 @@
   "roomId": "1727071052",
   "sourceType": "bilibili-live-replay-song-segments",
   "description": "从小松绿直播回放中识别出的唱歌片段原始记录。由每日自动化或人工补录维护，随后通过 scripts/build_xiaosonglu_song_data.js 聚合成插件可直接读取的歌单与历史数据。歌名允许先根据歌词片段联网检索后再补全，回放日期允许先留空并由脚本从回放标题中解析。",
-  "updatedAt": "2026-08-25T15:36:57.729Z",
+  "updatedAt": "2026-08-27T09:23:23.008Z",
   "segments": [
     {
       "replay_id": "BV1Xiu86aEwV",
@@ -4025,6 +4025,50 @@
           "title": "【小松绿Viridis】《青鸟衔风》",
           "url": "https://www.bilibili.com/video/BV1mwuz62EfH/",
           "snippet": "歌切标题含《青鸟衔风》，简介 20260811。"
+        }
+      ]
+    },
+    {
+      "replay_id": "BV1KK8Z6JEMP",
+      "replay_title": "【小松绿Viridis】谢礼物和神秘星露谷-2026年08月26日22点场",
+      "replay_url": "https://www.bilibili.com/video/BV1KK8Z6JEMP/",
+      "replay_date": "2026-08-26",
+      "replay_date_source": "replay-title",
+      "segment_index": 1,
+      "start_time": "00:55:00",
+      "end_time": "01:01:00",
+      "lyric_excerpt": "",
+      "song_search_query": "绿色",
+      "song_resolution_method": "bili-clip-evidence",
+      "song_name": "绿色",
+      "display_song_name": "绿色",
+      "artist": "陈雪凝",
+      "artist_search": "陈雪凝",
+      "feat_artist": "",
+      "language": "中文",
+      "tone": "",
+      "status_labels": [
+        "语音频道合唱",
+        "自动识别待人工复核"
+      ],
+      "display_version": "",
+      "type": "流行",
+      "remark": "2026-08-26 谢礼物和神秘星露谷（22点场）尾段语音频道（游龙287）中，小松绿与四时小路Komichi、羽啾chu2u三人合唱《绿色》；切片【小松绿/四时小路/羽啾】标题佐证（BV1QG8o6xE13，103s，沉默环节）。直播间弹幕无歌词行（语音频道合唱不在本房间弹幕里），仅 23:07「你在后边唱歌」、23:32「一转歌回」等提示；另有切片标题「小路和羽啾合唱《绿色》无能的小松绿只能向枝堇妈妈哭诉」（BV1cL8Z6VE6p）提示该晚小松绿曾试图加入但未成，是否正式开唱存疑 → 待人工复核。start/end 为按弹幕时间线估算。",
+      "identification": "",
+      "cut_link": "https://www.bilibili.com/video/BV1QG8o6xE13/",
+      "confidence": 0.58,
+      "row_key": "绿色",
+      "search_name": "",
+      "resolution_candidates": [
+        {
+          "title": "『绿 色💚』【小松绿/四时小路/羽啾】",
+          "url": "https://www.bilibili.com/video/BV1QG8o6xE13/",
+          "snippet": "语音频道三人合唱《绿色》切片（103s，沉默环节，2026-08-26 投稿），标题含小松绿/四时小路/羽啾三人。"
+        },
+        {
+          "title": "小路和羽啾合唱《绿色》无能的小松绿只能向枝堇妈妈哭诉",
+          "url": "https://www.bilibili.com/video/BV1cL8Z6VE6p/",
+          "snippet": "同晚另一切片（77s，香芋天史）：小路与羽啾合唱《绿色》，小松绿未成功加入，仅向枝堇Sumire哭诉 → 是否正式开唱存疑。"
         }
       ]
     }
