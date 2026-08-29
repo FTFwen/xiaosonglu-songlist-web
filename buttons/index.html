@@ -454,6 +454,48 @@
       display: inline-block;
       flex-shrink: 0;
     }
+
+    /* ===== 编辑模式 ===== */
+    .edit-float {
+      position: fixed;
+      right: 16px;
+      bottom: 16px;
+      z-index: 90;
+      display: flex;
+      gap: 8px;
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 8px;
+      box-shadow: var(--shadow);
+    }
+    /* 磁贴编辑态：显示删除按钮、可拖动 */
+    body.editing .sound-btn {
+      cursor: move;
+      box-shadow: 0 0 0 2px rgba(138, 154, 78, 0.25);
+    }
+    body.editing .sound-btn .sb-del { display: grid !important; }
+    .sound-btn .sb-del {
+      position: absolute;
+      top: -8px;
+      right: -8px;
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      border: 1px solid var(--danger);
+      background: #fff;
+      color: var(--danger);
+      cursor: pointer;
+      display: grid;
+      place-items: center;
+      font-size: 11px;
+      z-index: 5;
+    }
+    .sound-btn .sb-del:hover { background: var(--danger); color: #fff; }
+    .sound-btn.drag-src { opacity: 0.6; box-shadow: 0 0 0 2px var(--primary); }
+    .cat-section.drop-target { box-shadow: 0 0 0 2px var(--primary); border-radius: 16px; padding: 6px; }
+    /* 副标题样式 */
+    .sb-desc { font-size: 12px; color: var(--text-soft); margin-top: 3px; line-height: 1.4; }
   </style>
 </head>
 <body>
@@ -501,6 +543,26 @@
 
   <main class="wall" id="wall"></main>
 
+  <!-- 右下角编辑模式入口（管理员登录后显示） -->
+  <div class="edit-float" id="editFloat" style="display:none;">
+    <button class="btn-x primary" id="editModeBtn">✏️ 编辑模式</button>
+    <button class="btn-x" id="editSaveBtn" style="display:none;">保存并退出</button>
+    <button class="btn-x" id="editCancelBtn" style="display:none;">不保存并退出</button>
+  </div>
+
+  <!-- 编辑弹窗：同时编辑标题/副标题 -->
+  <div class="admin-panel" id="editPopup" style="display:none;">
+    <div class="admin-card">
+      <h2>编辑磁贴</h2>
+      <input type="text" class="admin-input" id="editNameInput" placeholder="主标题">
+      <input type="text" class="admin-input" id="editDescInput" placeholder="副标题">
+      <div class="btn-row">
+        <button class="btn-x primary" id="editOkBtn">确定</button>
+        <button class="btn-x" id="editCancelPopupBtn">取消</button>
+      </div>
+    </div>
+  </div>
+
   <!-- 管理员面板 -->
   <div class="admin-panel" id="adminPanel">
     <div class="admin-card">
@@ -524,22 +586,15 @@
         </div>
         <div id="catAdminList"></div>
 
-        <div class="admin-sec-title">拖拽分类桶（把下方按钮拖到目标分类）</div>
-        <div id="btnCatZones" class="cat-zone-wrap"></div>
-
-        <div class="admin-sec-title">添加按钮（上传音频，自动命名）</div>
+        <div class="admin-sec-title">上传音频/导入压缩包</div>
         <div class="admin-toolbar">
           <select class="admin-input" id="newBtnCat"></select>
           <button class="btn-x primary" id="uploadBtnBtn"><svg class="icon" aria-hidden="true"><use href="#icon-upload"></use></svg> 上传音频/导入压缩包</button>
         </div>
         <input type="file" accept=".mp3,.m4a,.wav,.ogg,.flac,.mp4,.m4v,.mov,.webm,.mkv,audio/*,video/*,.zip" id="newBtnFileInput" multiple style="display:none;">
-        <div class="admin-tip">可多选音频/视频文件，或导入 zip 压缩包（自动筛出音视频，非音视频舍去）。MP4/MOV 等视频导入后作为音频播放（只出声）；文件名自动命名按钮；rar/7z 请先转成 zip 再上传。添加后可编辑标题/副标题、拖拽到分类桶改分类。</div>
-
-        <div class="admin-sec-title">按钮管理（点击标题/副标题可编辑）</div>
-        <div id="btnAdminList"></div>
+        <div class="admin-tip">可多选音频/视频文件，或导入 zip 压缩包（自动筛出音视频，非音视频舍去）。MP4/MOV 等导入后作为音频播放；文件名自动命名按钮；rar/7z 请先转 zip。上传后到主界面用"编辑模式"调整标题/副标题、拖拽分类。</div>
 
         <div class="btn-row">
-          <button class="btn-x primary" id="saveAdminBtn"><svg class="icon" aria-hidden="true"><use href="#icon-check"></use></svg> 保存</button>
           <button class="btn-x" id="logoutBtn">退出登录</button>
           <button class="btn-x" id="closeAdminBtn">关闭</button>
         </div>
@@ -551,6 +606,6 @@
   <video id="audioPlayer" preload="none" playsinline style="position:fixed;left:-9999px;top:0;width:1px;height:1px;opacity:0;"></video>
 
   <script src="jszip.min.js"></script>
-  <script src="buttons.js?v=14"></script>
+  <script src="buttons.js?v=15"></script>
 </body>
 </html>

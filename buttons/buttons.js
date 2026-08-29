@@ -101,6 +101,25 @@
       const list = data.buttons.filter(b => b.cat === cat.id);
       const section = document.createElement('section');
       section.className = 'cat-section';
+      section.dataset.cat = cat.id;
+
+      // 编辑模式下：分类区块作为拖拽目标（磁贴拖到这里改分类）
+      section.addEventListener('dragover', e => { if (editMode) { e.preventDefault(); section.classList.add('drop-target'); } });
+      section.addEventListener('dragleave', () => section.classList.remove('drop-target'));
+      section.addEventListener('drop', e => {
+        e.preventDefault();
+        section.classList.remove('drop-target');
+        if (!editMode) return;
+        const btnId = e.dataTransfer.getData('text/plain');
+        if (!btnId) return;
+        const btn = data.buttons.find(b => b.id === btnId);
+        if (btn && btn.cat !== cat.id) {
+          btn.cat = cat.id;
+          saveData(data);
+          renderWall();
+          toast(`「${btn.name}」已移到「${cat.name}」`);
+        }
+      });
 
       const head = document.createElement('div');
       head.className = 'cat-head';
@@ -122,11 +141,41 @@
         list.forEach((btn, bi) => {
           const card = document.createElement('button');
           card.className = 'sound-btn';
+          card.dataset.btnId = btn.id;
           card.innerHTML = `
-            <div class="sb-main"><div class="sb-name">${esc(btn.name)}</div></div>
-            <div class="sb-dur">${fmtDur(btn.duration)}</div>
+            <div class="sb-main">
+              <div class="sb-name">${esc(btn.name)}</div>
+              ${btn.desc ? `<div class="sb-desc">${esc(btn.desc)}</div>` : ''}
+              <div class="sb-dur">${fmtDur(btn.duration)}</div>
+            </div>
+            <span class="sb-del" data-del-item="${btn.id}" title="删除" style="display:none;"><svg class="icon" aria-hidden="true"><use href="#icon-close"></use></svg></span>
           `;
-          card.addEventListener('click', () => playSound(btn, card));
+          card.addEventListener('click', e => {
+            if (e.target.closest('.sb-del')) return; // 点删除交给删除处理
+            if (editMode) {
+              openEditPopup(btn.id); // 编辑模式下点击 → 弹窗编辑标题/副标题
+            } else {
+              playSound(btn, card);
+            }
+          });
+          // 删除按钮
+          card.querySelector('[data-del-item]').addEventListener('click', () => {
+            if (!editMode) return;
+            if (!confirm(`删除「${btn.name}」？`)) return;
+            data.buttons = data.buttons.filter(b => b.id !== btn.id);
+            idbDel(btn.id);
+            saveData(data);
+            renderWall();
+            toast('已删除');
+          });
+          // 编辑模式下磁贴可拖拽（改分类）
+          card.draggable = editMode;
+          card.addEventListener('dragstart', e => {
+            if (!editMode) return;
+            e.dataTransfer.setData('text/plain', btn.id);
+            card.classList.add('drag-src');
+          });
+          card.addEventListener('dragend', () => card.classList.remove('drag-src'));
           listWrap.appendChild(card);
         });
       }
@@ -138,6 +187,7 @@
   // ===== 播放音效 + 顶部播放条 =====
   let currentBtn = null; // 当前播放的按钮
   let playMode = 'sequence'; // sequence | single
+  let editMode = false;     // 是否编辑模式（管理员）
   const playerBar = el('playerBar');
   const pbName = el('pbName');
   const pbPlay = el('pbPlayBtn');
@@ -317,9 +367,7 @@
     adminBody.style.display = 'block';
     el('adminCardTitle').textContent = '按钮墙管理后台';
     renderCatAdmin();
-    renderBtnAdmin();
     fillCatSelect();
-    initDragZones();
   }
 
   function doLogin() {
@@ -330,6 +378,7 @@
       isAdmin = true;
       sessionStorage.setItem('xsl:buttons:authed', '1');
       enterAdminMode();
+      updateAdminUI();
       toast('登录成功');
     } else {
       el('authErr').textContent = '用户名或密码错误';
@@ -340,7 +389,77 @@
     isAdmin = false;
     sessionStorage.removeItem('xsl:buttons:authed');
     showLogin();
+    exitEditMode(false); // 退出编辑模式
+    updateAdminUI();
     toast('已退出登录');
+  }
+
+  // 登录态 UI：显示右下角编辑模式入口
+  function updateAdminUI() {
+    const float = el('editFloat');
+    if (isAdmin) float.style.display = 'flex';
+    else float.style.display = 'none';
+    renderEditButtons();
+  }
+
+  // ===== 编辑模式（管理员主界面） =====
+  function renderEditButtons() {
+    if (!isAdmin) return;
+    el('editModeBtn').style.display = editMode ? 'none' : '';
+    el('editSaveBtn').style.display = editMode ? '' : 'none';
+    el('editCancelBtn').style.display = editMode ? '' : 'none';
+    el('editModeBtn').textContent = editMode ? '' : '✏️ 编辑模式';
+  }
+
+  function enterEditMode() {
+    if (!isAdmin) return;
+    editMode = true;
+    document.body.classList.add('editing');
+    closeAdmin();
+    renderWall();
+    renderEditButtons();
+    toast('编辑模式：拖动磁贴改分类，点磁贴改标题/副标题，右上角✕删除');
+  }
+
+  function exitEditMode(save) {
+    if (save) { saveData(data); toast('已保存'); }
+    else { data = loadData(); } // 不保存 → 从存储重载
+    editMode = false;
+    document.body.classList.remove('editing');
+    renderWall();
+    renderEditButtons();
+  }
+
+  // 编辑弹窗：同时编辑标题 + 副标题
+  let editingBtnId = null;
+  function openEditPopup(btnId) {
+    const btn = data.buttons.find(b => b.id === btnId);
+    if (!btn) return;
+    editingBtnId = btnId;
+    el('editNameInput').value = btn.name || '';
+    el('editDescInput').value = btn.desc || '';
+    el('editPopup').style.display = 'flex';
+    el('editNameInput').focus();
+  }
+
+  function closeEditPopup() {
+    el('editPopup').style.display = 'none';
+    editingBtnId = null;
+  }
+
+  function confirmEditPopup() {
+    if (!editingBtnId) return;
+    const btn = data.buttons.find(b => b.id === editingBtnId);
+    if (btn) {
+      const name = el('editNameInput').value.trim();
+      if (!name) { toast('主标题不能为空'); return; }
+      btn.name = name;
+      btn.desc = el('editDescInput').value.trim();
+      saveData(data);
+      renderWall();
+    }
+    closeEditPopup();
+    toast('已更新');
   }
 
   // ===== 分类管理 =====
@@ -366,7 +485,7 @@
         if (!data.cats.some(c => c.id === OTHER_CAT_ID)) data.cats.push({ id: OTHER_CAT_ID, name: '其他' });
         saveData(data);
         const msg = moved ? `分类已删除，${moved} 个按钮归入「其他」` : '分类已删除';
-        renderWall(); renderCatAdmin(); renderBtnAdmin(); fillCatSelect();
+        renderWall(); renderCatAdmin();  fillCatSelect();
         toast(msg);
       });
       list.appendChild(item);
@@ -388,60 +507,7 @@
   }
 
   // 按钮管理列表：主/副标题可点击编辑，右侧操作（删除）
-  function renderBtnAdmin() {
-    const list = el('btnAdminList');
-    list.innerHTML = '';
-    data.buttons.forEach(btn => {
-      const cat = data.cats.find(c => c.id === btn.cat);
-      const item = document.createElement('div');
-      item.className = 'admin-item btn-admin-item';
-      item.draggable = true;
-      item.dataset.btnId = btn.id;
-      item.innerHTML = `
-        <div class="grow">
-          <div class="nm" data-edit-name="${btn.id}" title="点击编辑主标题">${esc(btn.name)}</div>
-          <div class="ds" data-edit-desc="${btn.id}" title="点击编辑副标题">${btn.desc ? esc(btn.desc) : '＿ 点击编辑副标题'}</div>
-        </div>
-        <span class="ds">${cat ? cat.name : '?'}</span>
-        <span class="ds" data-btn-audio-state="${btn.id}">${btn.idb ? '✓ 已上传' : (btn.audio ? '外部音频' : '未上传')}</span>
-        <button class="btn-x danger" data-del-btn="${btn.id}">删除</button>
-      `;
-      // 点击主标题 → 编辑
-      item.querySelector('[data-edit-name]').addEventListener('click', () => {
-        const elm = item.querySelector('[data-edit-name]');
-        const cur = btn.name;
-        const val = prompt('编辑主标题：', cur);
-        if (val == null) return;
-        const t = val.trim();
-        if (!t) { toast('主标题不能为空'); return; }
-        btn.name = t;
-        saveData(data);
-        elm.textContent = t;
-        renderWall();
-        toast('主标题已更新');
-      });
-      // 点击副标题 → 编辑
-      item.querySelector('[data-edit-desc]').addEventListener('click', () => {
-        const elm = item.querySelector('[data-edit-desc]');
-        const cur = btn.desc || '';
-        const val = prompt('编辑副标题（留空则删除）：', cur);
-        if (val == null) return;
-        btn.desc = val.trim();
-        saveData(data);
-        elm.textContent = btn.desc || '＿ 点击编辑副标题';
-        renderWall();
-        toast('副标题已更新');
-      });
-      item.querySelector('[data-del-btn]').addEventListener('click', () => {
-        if (!confirm(`删除按钮「${btn.name}」？`)) return;
-        data.buttons = data.buttons.filter(b => b.id !== btn.id);
-        saveData(data);
-        idbDel(btn.id);
-        renderWall(); renderBtnAdmin(); initDragZones();
-      });
-      list.appendChild(item);
-    });
-  }
+  
 
   // 添加上传音频按钮：点击 → 弹文件选择 → 自动命名主标题 → 加入所选分类
   function uploadBtnAdd() {
@@ -454,14 +520,30 @@
   // 可播放的音/视频扩展名（MP4/MOV 等视频导入后当音频播放，只出声）
   const AUDIO_SFX = /\.(mp3|m4a|wav|ogg|oga|flac|aac|opus|mp4|m4v|mov|webm|mkv)$/i;
 
+  // 读取音频/视频 blob 的时长（用 video 元素，兼容 mp3/mp4 等）
+  function readDuration(blob) {
+    return new Promise(resolve => {
+      const url = URL.createObjectURL(blob);
+      const v = document.createElement('video');
+      v.preload = 'metadata';
+      let done = false;
+      const finish = dur => { if (!done) { done = true; URL.revokeObjectURL(url); resolve(dur); } };
+      v.onloadedmetadata = () => finish(Number.isFinite(v.duration) && v.duration > 0 ? Math.round(v.duration * 10) / 10 : 0);
+      v.onerror = () => finish(0);
+      v.src = url;
+      setTimeout(() => finish(0), 8000); // 兜底
+    });
+  }
+
   // 把单个音频 blob 加为按钮（按文件名自动命名）
   async function addAudioBtn(name, blob, cat) {
     const cleanName = name.replace(AUDIO_SFX, '').trim() || '未命名';
     const id = 'btn_' + Date.now() + '_' + Math.random().toString(36).slice(2, 6);
-    const btn = { id, name: cleanName, desc: '', audio: '', cat, idb: true };
+    const dur = await readDuration(blob);
+    const btn = { id, name: cleanName, desc: '', audio: '', cat, idb: true, duration: dur };
     data.buttons.push(btn);
     await idbPut(id, blob);
-    return { id, name: cleanName };
+    return { id, name: cleanName, duration: dur };
   }
 
   // 处理选中的文件：普通音频直接加；zip 解压后筛出音频加
@@ -502,71 +584,11 @@
     }
 
     saveData(data);
-    renderWall(); renderBtnAdmin(); initDragZones();
+    renderWall();  
 
     if (added) toast(`已添加 ${added} 个按钮${skipped ? `，舍去 ${skipped} 个非音频` : ''}`);
     else toast(`没有可导入的音频（共舍去 ${skipped} 个文件）`);
     e.target.value = '';
-  }
-
-  // ===== 拖拽改分类（拖到分类桶）=====
-  // 初始化分类桶 + 绑定按钮列表拖拽事件（每次进入后台调用，可重复，用 once 避免重复监听）
-  function initDragZones() {
-    const zoneWrap = el('btnCatZones');
-    const adminList = el('btnAdminList');
-    if (!zoneWrap || !adminList) return;
-    zoneWrap.innerHTML = '';
-    let dragId = null;
-
-    const renderZones = () => {
-      zoneWrap.innerHTML = '';
-      data.cats.forEach(cat => {
-        const zone = document.createElement('div');
-        zone.className = 'cat-zone';
-        zone.dataset.cat = cat.id;
-        const cnt = data.buttons.filter(b => b.cat === cat.id).length;
-        zone.innerHTML = `<span class="zone-name">${esc(cat.name)}</span><span class="zone-count">${cnt ? cnt : ''}</span>`;
-        zone.addEventListener('dragover', e => { e.preventDefault(); zone.classList.add('over'); });
-        zone.addEventListener('dragleave', () => zone.classList.remove('over'));
-        zone.addEventListener('drop', e => {
-          e.preventDefault();
-          zone.classList.remove('over');
-          if (!dragId) return;
-          const btn = data.buttons.find(b => b.id === dragId);
-          if (btn) {
-            btn.cat = cat.id;
-            saveData(data);
-            renderWall(); renderBtnAdmin(); renderZones();
-            toast(`「${btn.name}」已移到「${cat.name}」`);
-          }
-          dragId = null;
-        });
-        zoneWrap.appendChild(zone);
-      });
-    };
-
-    // 用 once 绑定，避免重复进后台叠加监听
-    adminList.ondragstart = e => {
-      const item = e.target.closest('.btn-admin-item');
-      if (!item) return;
-      dragId = item.dataset.btnId;
-      item.classList.add('dragging');
-    };
-    adminList.ondragend = () => {
-      document.querySelectorAll('.btn-admin-item.dragging').forEach(i => i.classList.remove('dragging'));
-      zoneWrap.querySelectorAll('.cat-zone').forEach(z => z.classList.remove('over'));
-      dragId = null;
-    };
-
-    renderZones();
-  }
-
-  // 保存：把当前 data 持久化（分类/按钮/拖拽结果已即时保存，这里做完整保存提示）
-  function saveAll() {
-    saveData(data);
-    initDragZones();
-    renderWall();
-    toast('已保存');
   }
 
   // ===== 事件绑定 =====
@@ -578,12 +600,20 @@
   el('addCatBtn').addEventListener('click', addCat);
   el('uploadBtnBtn').addEventListener('click', uploadBtnAdd);
   el('newBtnFileInput').addEventListener('change', handleFileToAdd);
-  el('saveAdminBtn').addEventListener('click', saveAll);
   adminPanel.addEventListener('click', e => {
     if (e.target === adminPanel) closeAdmin();
   });
   el('loginUser').addEventListener('keydown', e => { if (e.key === 'Enter') doLogin(); });
   el('loginPass').addEventListener('keydown', e => { if (e.key === 'Enter') doLogin(); });
+
+  // 编辑模式：右下角按钮
+  el('editModeBtn').addEventListener('click', enterEditMode);
+  el('editSaveBtn').addEventListener('click', () => exitEditMode(true));
+  el('editCancelBtn').addEventListener('click', () => exitEditMode(false));
+  // 编辑弹窗
+  el('editOkBtn').addEventListener('click', confirmEditPopup);
+  el('editCancelPopupBtn').addEventListener('click', closeEditPopup);
+  el('editPopup').addEventListener('click', e => { if (e.target === el('editPopup')) closeEditPopup(); });
 
   function addCat() {
     const name = el('newCatName').value.trim();
@@ -593,10 +623,11 @@
     saveData(data);
     el('newCatName').value = '';
     renderWall(); renderCatAdmin(); fillCatSelect();
-    initDragZones();
     toast('分类已添加');
   }
 
   // ===== 初始化 =====
+  // 若已登录（会话保持），显示编辑模式入口
+  if (isAdmin) updateAdminUI();
   renderWall();
 })();
