@@ -35,6 +35,11 @@
   function saveData(data) {
     localStorage.setItem(LS_KEY, JSON.stringify(data));
   }
+  // 用一份新数据替换当前 data，并立即持久化（编辑"保存/回退"都用这个）
+  function applyData(next) {
+    data = JSON.parse(JSON.stringify(next));
+    saveData(data);
+  }
 
   // ===== IndexedDB 音频存储 =====
   let dbPromise = null;
@@ -163,10 +168,9 @@
             if (!editMode) return;
             if (!confirm(`删除「${btn.name}」？`)) return;
             data.buttons = data.buttons.filter(b => b.id !== btn.id);
-            idbDel(btn.id);
             saveData(data);
             renderWall();
-            toast('已删除');
+            toast('已删除'); // blob 留到"保存并退出"时统一清理，保证"不保存"能完整回退
           });
           // 编辑模式下磁贴可拖拽（改分类）
           card.draggable = editMode;
@@ -188,6 +192,7 @@
   let currentBtn = null; // 当前播放的按钮
   let playMode = 'sequence'; // sequence | single
   let editMode = false;     // 是否编辑模式（管理员）
+  let editSnapshot = null;  // 进入编辑模式时的数据快照，用于"不保存并退出"回退
   const playerBar = el('playerBar');
   const pbName = el('pbName');
   const pbPlay = el('pbPlayBtn');
@@ -414,6 +419,8 @@
   function enterEditMode() {
     if (!isAdmin) return;
     editMode = true;
+    // 深拷贝，作为"不保存并退出"的回退基线
+    editSnapshot = JSON.parse(JSON.stringify(data));
     document.body.classList.add('editing');
     closeAdmin();
     renderWall();
@@ -422,9 +429,21 @@
   }
 
   function exitEditMode(save) {
-    if (save) { saveData(data); toast('已保存'); }
-    else { data = loadData(); } // 不保存 → 从存储重载
+    if (save) {
+      // 保存：先清理被删除磁贴的音频 blob，只保留当前 data 里存在的
+      const curIds = new Set(data.buttons.map(b => b.id));
+      (editSnapshot ? editSnapshot.buttons : []).forEach(b => {
+        if (!curIds.has(b.id)) idbDel(b.id);
+      });
+      applyData(data);
+      toast('已保存');
+    } else {
+      // 不保存：回退到进编辑模式之前的状态，覆盖编辑期间写入的 localStorage
+      applyData(editSnapshot || loadData());
+      toast('已撤销修改');
+    }
     editMode = false;
+    editSnapshot = null;
     document.body.classList.remove('editing');
     renderWall();
     renderEditButtons();

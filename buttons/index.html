@@ -133,7 +133,7 @@
       box-shadow: 0 4px 14px rgba(122, 136, 70, 0.08);
       color: var(--text);
       position: relative;
-      overflow: hidden;
+      overflow: visible;
     }
     .sound-btn:hover {
       border-color: var(--primary);
@@ -143,8 +143,8 @@
     .sound-btn:active { transform: scale(0.97); }
     .sound-btn.playing { border-color: var(--primary); background: var(--primary-soft); }
 
-    .sb-main { min-width: 0; }
-    .sb-name { font-size: 15px; font-weight: 700; line-height: 1.3; white-space: nowrap; }
+    .sb-main { min-width: 0; overflow: hidden; }
+    .sb-name { font-size: 15px; font-weight: 700; line-height: 1.3; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
     /* 时长：右侧灰色小字，参考站"1s"样式 */
     .sb-dur {
       font-size: 12px;
@@ -606,6 +606,6 @@
   <video id="audioPlayer" preload="none" playsinline style="position:fixed;left:-9999px;top:0;width:1px;height:1px;opacity:0;"></video>
 
   <script src="jszip.min.js"></script>
-  <script src="buttons.js?v=15"></script>
+  <script src="buttons.js?v=16"></script>
 </body>
 </html>
