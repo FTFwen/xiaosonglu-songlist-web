@@ -6,3 +6,7 @@
 
 /data/*
   Cache-Control: public, max-age=3600
+
+/buttons/*
+  Cache-Control: public, max-age=60
+  X-Frame-Options: SAMEORIGIN
