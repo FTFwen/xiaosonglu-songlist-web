@@ -8,8 +8,8 @@
   const LS_KEY = 'xsl:buttons:data';
   const LS_ADMIN = 'xsl:buttons:admin';
 
-  // 初始管理员账号（用户提供真实账号后替换）
-  const DEFAULT_ADMIN = { user: 'admin', pass: 'xsl12345' };
+  // 管理员账号（用户设定：文 / 0212）
+  const DEFAULT_ADMIN = { user: '文', pass: '0212' };
 
   const DEFAULT_DATA = {
     cats: [
@@ -141,11 +141,8 @@
   }
 
   // ===== 管理员 =====
+  // 管理员账号：以代码里的 DEFAULT_ADMIN 为准（用户设定）
   function getAdmin() {
-    try {
-      const raw = localStorage.getItem(LS_ADMIN);
-      if (raw) return JSON.parse(raw);
-    } catch (e) { /* ignore */ }
     return DEFAULT_ADMIN;
   }
 
