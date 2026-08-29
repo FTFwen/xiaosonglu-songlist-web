@@ -1,12 +1,12 @@
 {
   "roomKey": "xiaosonglu",
   "roomId": "1727071052",
-  "generatedAt": "2026-08-29T05:29:31.234Z",
+  "generatedAt": "2026-08-29T09:21:25.666Z",
   "source": "local-replay-ingestion",
   "latest": {
     "year": "2026",
     "month": "08",
-    "day": "26"
+    "day": "29"
   },
   "dateTree": {
     "2026": {
@@ -19,6 +19,7 @@
         "20": 20,
         "23": 8,
         "26": 1,
+        "29": 11,
         "09": 17,
         "08": 3,
         "07": 1
@@ -1925,6 +1926,206 @@
         "lyric_excerpt": "",
         "song_resolution_method": "bili-clip-evidence",
         "cut_link": "https://www.bilibili.com/video/BV1QG8o6xE13/"
+      }
+    ],
+    "2026-08-29": [
+      {
+        "song_name": "难过233秒",
+        "sing_time": "00:13:00",
+        "statuses": [
+          "歌回",
+          "自动识别待人工复核"
+        ],
+        "artist": "ChiliChill",
+        "replay_id": "BV1RL4k6jEe8",
+        "replay_title": "【小松绿Viridis】突击的随便唱-2026年08月29日13点场",
+        "replay_url": "https://www.bilibili.com/video/BV1RL4k6jEe8/",
+        "start_time": "00:13:00",
+        "end_time": "00:14:30",
+        "row_key": "难过233秒",
+        "lyric_excerpt": "chilichill的难过233秒",
+        "song_resolution_method": "danmaku-evidence",
+        "cut_link": ""
+      },
+      {
+        "song_name": "想和你迎着台风去看海",
+        "sing_time": "00:32:00",
+        "statuses": [
+          "歌回",
+          "歌切确认"
+        ],
+        "artist": "桑拿猫黑糖 / 洛天依",
+        "replay_id": "BV1RL4k6jEe8",
+        "replay_title": "【小松绿Viridis】突击的随便唱-2026年08月29日13点场",
+        "replay_url": "https://www.bilibili.com/video/BV1RL4k6jEe8/",
+        "start_time": "00:32:00",
+        "end_time": "00:34:00",
+        "row_key": "想和你迎着台风去看海",
+        "lyric_excerpt": "",
+        "song_resolution_method": "bili-clip-evidence",
+        "cut_link": "https://www.bilibili.com/video/BV1ta4y6VEQy/"
+      },
+      {
+        "song_name": "绿色",
+        "sing_time": "00:33:30",
+        "statuses": [
+          "歌回",
+          "歌切确认"
+        ],
+        "artist": "陈雪凝",
+        "replay_id": "BV1RL4k6jEe8",
+        "replay_title": "【小松绿Viridis】突击的随便唱-2026年08月29日13点场",
+        "replay_url": "https://www.bilibili.com/video/BV1RL4k6jEe8/",
+        "start_time": "00:33:30",
+        "end_time": "00:40:30",
+        "row_key": "绿色",
+        "lyric_excerpt": "从此我的心里只剩绿色",
+        "song_resolution_method": "song-cut-title",
+        "cut_link": "https://www.bilibili.com/video/BV1qZ4y6xE1j/"
+      },
+      {
+        "song_name": "你究竟有几个好妹妹",
+        "sing_time": "00:41:00",
+        "statuses": [
+          "歌回",
+          "歌切确认"
+        ],
+        "artist": "孟庭苇",
+        "replay_id": "BV1RL4k6jEe8",
+        "replay_title": "【小松绿Viridis】突击的随便唱-2026年08月29日13点场",
+        "replay_url": "https://www.bilibili.com/video/BV1RL4k6jEe8/",
+        "start_time": "00:41:00",
+        "end_time": "00:45:00",
+        "row_key": "你究竟有几个好妹妹",
+        "lyric_excerpt": "羽啾你究竟有几个好妹妹",
+        "song_resolution_method": "bili-clip-evidence",
+        "cut_link": "https://www.bilibili.com/video/BV1dd4y6oEQb/"
+      },
+      {
+        "song_name": "阿拉斯加海湾",
+        "sing_time": "00:48:00",
+        "statuses": [
+          "歌回",
+          "歌切确认"
+        ],
+        "artist": "菲道尔",
+        "replay_id": "BV1RL4k6jEe8",
+        "replay_title": "【小松绿Viridis】突击的随便唱-2026年08月29日13点场",
+        "replay_url": "https://www.bilibili.com/video/BV1RL4k6jEe8/",
+        "start_time": "00:48:00",
+        "end_time": "00:53:00",
+        "row_key": "阿拉斯加海湾",
+        "lyric_excerpt": "",
+        "song_resolution_method": "bili-clip-evidence",
+        "cut_link": "https://www.bilibili.com/video/BV1JX4y6fEpy/"
+      },
+      {
+        "song_name": "梦良衣",
+        "sing_time": "00:57:00",
+        "statuses": [
+          "歌回",
+          "自动识别待人工复核"
+        ],
+        "artist": "ilem / 赤羽",
+        "replay_id": "BV1RL4k6jEe8",
+        "replay_title": "【小松绿Viridis】突击的随便唱-2026年08月29日13点场",
+        "replay_url": "https://www.bilibili.com/video/BV1RL4k6jEe8/",
+        "start_time": "00:57:00",
+        "end_time": "01:02:00",
+        "row_key": "梦良衣",
+        "lyric_excerpt": "",
+        "song_resolution_method": "danmaku-evidence",
+        "cut_link": ""
+      },
+      {
+        "song_name": "临川浮梦",
+        "sing_time": "01:02:00",
+        "statuses": [
+          "歌回",
+          "自动识别待人工复核"
+        ],
+        "artist": "忘川风华录 / 赤羽、星尘",
+        "replay_id": "BV1RL4k6jEe8",
+        "replay_title": "【小松绿Viridis】突击的随便唱-2026年08月29日13点场",
+        "replay_url": "https://www.bilibili.com/video/BV1RL4k6jEe8/",
+        "start_time": "01:02:00",
+        "end_time": "01:07:00",
+        "row_key": "临川浮梦",
+        "lyric_excerpt": "",
+        "song_resolution_method": "danmaku-evidence",
+        "cut_link": ""
+      },
+      {
+        "song_name": "Talking to the Rain",
+        "sing_time": "01:09:00",
+        "statuses": [
+          "歌回",
+          "歌切确认"
+        ],
+        "artist": "芹菜猪肉大馄饨 / 星尘Official、海伊",
+        "replay_id": "BV1RL4k6jEe8",
+        "replay_title": "【小松绿Viridis】突击的随便唱-2026年08月29日13点场",
+        "replay_url": "https://www.bilibili.com/video/BV1RL4k6jEe8/",
+        "start_time": "01:09:00",
+        "end_time": "01:15:00",
+        "row_key": "Talking to the Rain",
+        "lyric_excerpt": "孤独得像只鲸",
+        "song_resolution_method": "song-cut-title",
+        "cut_link": "https://www.bilibili.com/video/BV1Hm4y6AEC3/"
+      },
+      {
+        "song_name": "泼墨漓江",
+        "sing_time": "01:28:00",
+        "statuses": [
+          "歌回",
+          "自动识别待人工复核"
+        ],
+        "artist": "玖玲 / 冥凰 / 泠鸢yousa",
+        "replay_id": "BV1RL4k6jEe8",
+        "replay_title": "【小松绿Viridis】突击的随便唱-2026年08月29日13点场",
+        "replay_url": "https://www.bilibili.com/video/BV1RL4k6jEe8/",
+        "start_time": "01:28:00",
+        "end_time": "01:36:00",
+        "row_key": "泼墨漓江",
+        "lyric_excerpt": "",
+        "song_resolution_method": "danmaku-evidence",
+        "cut_link": ""
+      },
+      {
+        "song_name": "下等马",
+        "sing_time": "01:51:00",
+        "statuses": [
+          "歌回",
+          "自动识别待人工复核"
+        ],
+        "artist": "ChiliChill乐团 / 洛天依Official",
+        "replay_id": "BV1RL4k6jEe8",
+        "replay_title": "【小松绿Viridis】突击的随便唱-2026年08月29日13点场",
+        "replay_url": "https://www.bilibili.com/video/BV1RL4k6jEe8/",
+        "start_time": "01:51:00",
+        "end_time": "01:56:00",
+        "row_key": "下等马",
+        "lyric_excerpt": "",
+        "song_resolution_method": "danmaku-evidence",
+        "cut_link": "https://www.bilibili.com/video/BV17Wuz6YEci/"
+      },
+      {
+        "song_name": "流光记",
+        "sing_time": "02:00:00",
+        "statuses": [
+          "歌回",
+          "自动识别待人工复核"
+        ],
+        "artist": "银临 / 初音未来",
+        "replay_id": "BV1RL4k6jEe8",
+        "replay_title": "【小松绿Viridis】突击的随便唱-2026年08月29日13点场",
+        "replay_url": "https://www.bilibili.com/video/BV1RL4k6jEe8/",
+        "start_time": "02:00:00",
+        "end_time": "02:03:30",
+        "row_key": "流光记",
+        "lyric_excerpt": "总学不会别离",
+        "song_resolution_method": "danmaku-evidence",
+        "cut_link": ""
       }
     ]
   }

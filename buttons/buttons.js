@@ -159,9 +159,14 @@
     return `${d.toFixed(1)}s`;
   }
 
+  // 生成 Ant Design 线性图标（与主站一致，跟随 currentColor）
+  function ico(id) {
+    return `<svg class="icon" aria-hidden="true"><use href="#icon-${id}"></use></svg>`;
+  }
+
   function updatePlayerUI() {
     const playing = !audioPlayer.paused && !audioPlayer.ended;
-    pbPlay.textContent = playing ? '⏸' : '▶';
+    pbPlay.innerHTML = playing ? ico('pause') : ico('caret-right');
     const dur = audioPlayer.duration || 0;
     const cur = audioPlayer.currentTime || 0;
     pbProgress.style.width = dur > 0 ? `${(cur / dur) * 100}%` : '0%';
@@ -188,7 +193,7 @@
   }
 
   function renderModeBtn() {
-    pbMode.textContent = playMode === 'single' ? '🔂' : '🔁';
+    pbMode.innerHTML = playMode === 'single' ? ico('retweet') : ico('sync');
     pbMode.classList.toggle('single', playMode === 'single');
     pbMode.title = playMode === 'single' ? '播放模式：单曲循环，点击切换为顺序播放' : '播放模式：顺序播放，点击切换为单曲循环';
   }
