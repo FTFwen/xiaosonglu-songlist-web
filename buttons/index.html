@@ -54,7 +54,16 @@
       min-height: 100vh;
     }
 
-    /* 头部横幅（参考主站小松绿主题布局） */
+    /* 居中容器：与主站一致（1180px 居中、带阴影、两侧留空） */
+    .app {
+      max-width: 1180px;
+      margin: 0 auto;
+      min-height: 100vh;
+      background: var(--bg);
+      box-shadow: 0 0 40px rgba(122, 136, 70, 0.10);
+    }
+
+    /* 头部横幅（参考主站小松绿主题布局，位于 .app 内居中限宽） */
     .banner {
       background-image: linear-gradient(rgba(122, 136, 70, 0.9), rgba(104, 118, 58, 0.94)), url('../assets/xiaosonglu-bg.jpg');
       background-size: cover;
@@ -62,7 +71,6 @@
       color: #fff;
       padding: 16px 20px 14px;
       box-shadow: 0 8px 24px rgba(122, 136, 70, 0.26);
-      position: relative;
     }
     .banner-top {
       display: flex;
@@ -98,7 +106,6 @@
       letter-spacing: 0.04em;
       text-shadow: 0 1px 3px rgba(96, 108, 48, 0.35);
     }
-    .banner .sub { font-size: 13px; opacity: 0.92; margin-top: 2px; color: #fff; }
 
     /* 管理员登录键 */
     .admin-login-btn {
@@ -116,9 +123,9 @@
 
     /* 主体：垂直条目列表 */
     .wall {
-      max-width: 820px;
+      max-width: 1000px;
       margin: 0 auto;
-      padding: 24px 18px 60px;
+      padding: 26px 20px 60px;
     }
 
     /* 分类区块标题 */
@@ -155,19 +162,19 @@
       max-width: 100%;
       border: 1px solid var(--line);
       background: var(--surface);
-      border-radius: 12px;
+      border-radius: 14px;
       padding: 10px 14px;
       cursor: pointer;
       text-align: left;
-      transition: all 0.18s ease;
-      box-shadow: 0 4px 14px rgba(122, 136, 70, 0.08);
+      transition: transform 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+      box-shadow: 0 8px 20px rgba(122, 136, 70, 0.05);
       color: var(--text);
       position: relative;
       overflow: visible;
     }
     .sound-btn:hover {
       border-color: var(--primary);
-      box-shadow: 0 8px 20px rgba(122, 136, 70, 0.16);
+      box-shadow: 0 10px 24px rgba(122, 136, 70, 0.10);
       transform: translateY(-2px);
     }
     .sound-btn:active { transform: scale(0.97); }
@@ -608,12 +615,12 @@
     <symbol id="icon-grip" viewBox="64 64 896 896"><path d="M288 256h64q16 0 16-16v-128q0-16-16-16h-64q-16 0-16 16v128q0 16 16 16zm0 224h64q16 0 16-16V336q0-16-16-16h-64q-16 0-16 16v128q0 16 16 16zm0 224h64q16 0 16-16V560q0-16-16-16h-64q-16 0-16 16v128q0 16 16 16zm288-448h64q16 0 16-16v-128q0-16-16-16h-64q-16 0-16 16v128q0 16 16 16zm0 224h64q16 0 16-16V336q0-16-16-16h-64q-16 0-16 16v128q0 16 16 16zm0 224h64q16 0 16-16V560q0-16-16-16h-64q-16 0-16 16v128q0 16 16 16z"/></symbol>
   </svg>
 
+  <div class="app">
   <div class="banner">
     <div class="banner-top">
       <div class="banner-icon"><img src="../assets/xiaosonglu-logo.png" alt="小松绿"></div>
       <div class="banner-main">
         <h1>小松绿 · 按钮墙</h1>
-        <div class="sub">点一下，听听小松绿的声音～</div>
       </div>
       <button class="admin-login-btn" id="adminLoginBtn"><svg class="icon" aria-hidden="true"><use href="#icon-sound"></use></svg> 管理员</button>
     </div>
@@ -642,6 +649,7 @@
   </div>
 
   <main class="wall" id="wall"></main>
+  </div><!-- /.app -->
 
   <!-- 右下角编辑模式入口（管理员登录后显示） -->
   <div class="edit-float" id="editFloat" style="display:none;">
