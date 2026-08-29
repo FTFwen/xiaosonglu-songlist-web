@@ -1,0 +1,7 @@
+name = "xsl-songlist"
+pages_build_output_dir = "."
+compatibility_date = "2026-08-20"
+
+[[r2_buckets]]
+binding = "xsl_buttons"
+bucket_name = "xsl-buttons"

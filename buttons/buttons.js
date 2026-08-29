@@ -97,15 +97,6 @@
     return dbPromise;
   }
 
-  async function idbPut(id, blob) {
-    const db = await openDB();
-    return new Promise((resolve, reject) => {
-      const tx = db.transaction(IDB_STORE, 'readwrite');
-      tx.objectStore(IDB_STORE).put({ id, blob });
-      tx.oncomplete = () => resolve();
-      tx.onerror = () => reject(tx.error);
-    });
-  }
   async function idbGet(id) {
     const db = await openDB();
     return new Promise((resolve, reject) => {
