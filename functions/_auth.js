@@ -1,6 +1,6 @@
 // _auth.js - Pages Functions 共享鉴权模块（`_` 前缀不会被注册为路由，可 import）
 // 管理员账号列表 + HMAC token：登录校验后签发，写操作带 Bearer header
-// 默认账号：文/0212、咸鱼/xsl。可通过 CF Secret BUTTONS_ADMIN_ACCOUNTS(JSON数组) 覆盖。
+// 默认账号：文/0212、咸鱼/xsl、haita1015/123456。可通过 CF Secret BUTTONS_ADMIN_ACCOUNTS(JSON数组) 覆盖。
 const DEFAULT_ADMINS = [
   { user: '文', pass: '0212' },
   { user: '咸鱼', pass: 'xsl' },
