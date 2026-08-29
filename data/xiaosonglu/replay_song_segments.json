@@ -3,7 +3,7 @@
   "roomId": "1727071052",
   "sourceType": "bilibili-live-replay-song-segments",
   "description": "从小松绿直播回放中识别出的唱歌片段原始记录。由每日自动化或人工补录维护，随后通过 scripts/build_xiaosonglu_song_data.js 聚合成插件可直接读取的歌单与历史数据。歌名允许先根据歌词片段联网检索后再补全，回放日期允许先留空并由脚本从回放标题中解析。",
-  "updatedAt": "2026-08-29T09:21:25.666Z",
+  "updatedAt": "2026-08-29T10:14:11.011Z",
   "segments": [
     {
       "replay_id": "BV1Xiu86aEwV",
@@ -4404,7 +4404,7 @@
       ],
       "display_version": "",
       "type": "中V、流行",
-      "remark": "弹幕 01:50:27「诶诶，不唱下等马嘛」+ 01:50:30「唱到下等马了」→ 演唱时段按弹幕估 01:51-01:56。ChiliChill 2025-05-30 投稿 ACE 中文原创（洛天依演唱，传说曲）。已在库（song_id 27，2026-08-11 歌切收录），本场再唱补当日 segment。",
+      "remark": "弹幕 01:50:27「诶诶，不唱下等马嘛」+ 01:50:30「唱到下等马了」→ 演唱时段按弹幕估 01:51-01:56。ChiliChill 2025-05-30 投稿 ACE 中文原创（洛天依演唱，传说曲）。已在库（song_id 27，2026-08-11 歌切收录），本场再唱补当日 segment。（2026-08-29 补：该 cut_link 原为 08-11 场旧切，08-29 场暂无专属歌切，已置空避免场次混淆）",
       "identification": "",
       "cut_link": "https://www.bilibili.com/video/BV17Wuz6YEci/",
       "confidence": 0.7,
@@ -4444,6 +4444,285 @@
       "row_key": "流光记",
       "search_name": "",
       "resolution_candidates": []
+    },
+    {
+      "replay_id": "BV1ujuB6EE6y",
+      "replay_title": "【直播回放】中v歌回（半场 2026年08月11日18点场",
+      "replay_url": "https://www.bilibili.com/video/BV1ujuB6EE6y/",
+      "replay_date": "2026-08-11",
+      "replay_date_source": "replay-title",
+      "segment_index": 7,
+      "start_time": "",
+      "end_time": "",
+      "lyric_excerpt": "",
+      "song_search_query": "炼金少女日志",
+      "song_resolution_method": "song-cut-title + collection-chapter",
+      "song_name": "炼金少女日志",
+      "display_song_name": "炼金少女日志",
+      "artist": "时之歌Project（泛音堂）/ 言和",
+      "artist_search": "炼金少女日志 时之歌 言和",
+      "feat_artist": "",
+      "language": "中文",
+      "tone": "",
+      "status_labels": [
+        "歌切章节验证",
+        "自动识别待人工复核"
+      ],
+      "display_version": "",
+      "type": "中V、时之歌Project",
+      "remark": "2026-08-29 B站歌切搜索补充：超级绿考子晴川单切（BV1i8gV6xExv，4:17，08-12发布）与《2026-08-11 部分歌切》合集分P4（也许是因为我喜欢）双重印证。萌百核实：时之歌Project（泛音堂）2017-07-15投稿的VOCALOID中文原创曲，言和演唱；另有洛萱人声版。08-11 中v歌回（半场 场次补录。",
+      "identification": "",
+      "cut_link": "https://www.bilibili.com/video/BV1i8gV6xExv/",
+      "confidence": 0.8,
+      "row_key": "炼金少女日志",
+      "search_name": "",
+      "resolution_candidates": [
+        {
+          "title": "超级绿考子晴川单切",
+          "url": "https://www.bilibili.com/video/BV1i8gV6xExv/",
+          "snippet": "【小松绿Viridis/歌切】炼金少女日志 4:17，08-12发布"
+        },
+        {
+          "title": "2026-08-11 部分歌切 分P4",
+          "url": "https://www.bilibili.com/video/BV1unu66WEHb/?p=4",
+          "snippet": "也许是因为我喜欢 合集分P4"
+        }
+      ]
+    },
+    {
+      "replay_id": "BV1vzb26PEpJ",
+      "replay_title": "【小松绿Viridis】歌？杂？-2026年08月15日20点场",
+      "replay_url": "https://www.bilibili.com/video/BV1vzb26PEpJ/",
+      "replay_date": "2026-08-15",
+      "replay_date_source": "replay-title",
+      "segment_index": 2,
+      "start_time": "",
+      "end_time": "",
+      "lyric_excerpt": "",
+      "song_search_query": "四重罪孽",
+      "song_resolution_method": "song-cut-compilation-chapter",
+      "song_name": "四重罪孽",
+      "display_song_name": "四重罪孽",
+      "artist": "DELA / 雨狸 / 洛天依、言和、乐正绫",
+      "artist_search": "四重罪孽 DELA 雨狸 洛天依 言和 乐正绫",
+      "feat_artist": "",
+      "language": "中文",
+      "tone": "",
+      "status_labels": [
+        "歌切章节验证",
+        "自动识别待人工复核"
+      ],
+      "display_version": "",
+      "type": "中V、原创",
+      "remark": "2026-08-29 B站歌切搜索补充：心灵火Flame《20260815 歌切》分P6 与 也许是因为我喜欢《2026-08-15 歌切》分P6 双重印证，垒下浮云单切（BV1Aqba6uEF8，3:38）佐证。萌百核实：DELA与雨狸合作 2016-03-26 投稿的VOCALOID中文原创曲，洛天依（少女音）、言和（少女音/男声）、乐正绫（少女音）分别演绎泠珞/颜语/零羽。08-15 歌？杂？场次补录。",
+      "identification": "",
+      "cut_link": "https://www.bilibili.com/video/BV1idb16YEjD/?p=6",
+      "confidence": 0.8,
+      "row_key": "四重罪孽",
+      "search_name": "",
+      "resolution_candidates": [
+        {
+          "title": "心灵火Flame 20260815 歌切 分P6",
+          "url": "https://www.bilibili.com/video/BV1idb16YEjD/?p=6",
+          "snippet": "四重罪孽"
+        },
+        {
+          "title": "垒下浮云单切",
+          "url": "https://www.bilibili.com/video/BV1Aqba6uEF8/",
+          "snippet": "【松绿歌】四重罪孽 3:38，08-17发布"
+        },
+        {
+          "title": "也许是因为我喜欢 2026-08-15 歌切 分P6",
+          "url": "https://www.bilibili.com/video/BV1x7b26EE8C/?p=6",
+          "snippet": "四重罪孽-1"
+        }
+      ]
+    },
+    {
+      "replay_id": "BV1vzb26PEpJ",
+      "replay_title": "【小松绿Viridis】歌？杂？-2026年08月15日20点场",
+      "replay_url": "https://www.bilibili.com/video/BV1vzb26PEpJ/",
+      "replay_date": "2026-08-15",
+      "replay_date_source": "replay-title",
+      "segment_index": 3,
+      "start_time": "",
+      "end_time": "",
+      "lyric_excerpt": "",
+      "song_search_query": "月出",
+      "song_resolution_method": "song-cut-compilation-chapter",
+      "song_name": "月出",
+      "display_song_name": "月出",
+      "artist": "双笙（词：温莨 / 曲：徐梦圆）",
+      "artist_search": "月出 双笙 温莨 徐梦圆",
+      "feat_artist": "",
+      "language": "中文",
+      "tone": "",
+      "status_labels": [
+        "歌切章节验证",
+        "自动识别待人工复核"
+      ],
+      "display_version": "",
+      "type": "国风、流行",
+      "remark": "2026-08-29 B站歌切搜索补充：心灵火Flame《20260815 歌切》分P2 与 也许是因为我喜欢《2026-08-15 歌切》分P2 双重印证，垒下浮云单切（BV18sba67EZa，4:00，08-17发布）佐证。萌百核实：双笙演唱，作词温莨、作曲/编曲徐梦圆，2016-04-16发行。08-15 歌？杂？场次补录。",
+      "identification": "",
+      "cut_link": "https://www.bilibili.com/video/BV1idb16YEjD/?p=2",
+      "confidence": 0.85,
+      "row_key": "月出",
+      "search_name": "",
+      "resolution_candidates": [
+        {
+          "title": "心灵火Flame 20260815 歌切 分P2",
+          "url": "https://www.bilibili.com/video/BV1idb16YEjD/?p=2",
+          "snippet": "月出"
+        },
+        {
+          "title": "垒下浮云单切",
+          "url": "https://www.bilibili.com/video/BV18sba67EZa/",
+          "snippet": "【松绿歌】月出 4:00，08-17发布"
+        },
+        {
+          "title": "也许是因为我喜欢 2026-08-15 歌切 分P2",
+          "url": "https://www.bilibili.com/video/BV1x7b26EE8C/?p=2",
+          "snippet": "月出-1"
+        }
+      ]
+    },
+    {
+      "replay_id": "BV1vzb26PEpJ",
+      "replay_title": "【小松绿Viridis】歌？杂？-2026年08月15日20点场",
+      "replay_url": "https://www.bilibili.com/video/BV1vzb26PEpJ/",
+      "replay_date": "2026-08-15",
+      "replay_date_source": "replay-title",
+      "segment_index": 4,
+      "start_time": "",
+      "end_time": "",
+      "lyric_excerpt": "",
+      "song_search_query": "女孩你为何踮脚尖",
+      "song_resolution_method": "song-cut-compilation-chapter",
+      "song_name": "女孩你为何踮脚尖",
+      "display_song_name": "女孩你为何踮脚尖",
+      "artist": "Ddickky / 墨兰花语 / 洛天依",
+      "artist_search": "女孩你为何踮脚尖 Ddickky 墨兰花语 洛天依",
+      "feat_artist": "",
+      "language": "中文",
+      "tone": "",
+      "status_labels": [
+        "歌切章节验证",
+        "自动识别待人工复核"
+      ],
+      "display_version": "",
+      "type": "中V、原创（平行四界）",
+      "remark": "2026-08-29 B站歌切搜索补充：心灵火Flame《20260815 歌切》分P12 与 也许是因为我喜欢《2026-08-15 歌切》分P12 双重印证。萌百核实：秦楼凤吹制作、Ddickky/墨兰花语 2015-04 投稿的VOCALOID中文原创曲（洛天依演唱，平行四界Quadimension 2收录，Youtube传说曲/B站殿堂曲）；另有双笙人声本家。08-15 歌？杂？场次补录。",
+      "identification": "",
+      "cut_link": "https://www.bilibili.com/video/BV1idb16YEjD/?p=12",
+      "confidence": 0.8,
+      "row_key": "女孩你为何踮脚尖",
+      "search_name": "",
+      "resolution_candidates": [
+        {
+          "title": "心灵火Flame 20260815 歌切 分P12",
+          "url": "https://www.bilibili.com/video/BV1idb16YEjD/?p=12",
+          "snippet": "女孩你为何踮脚尖"
+        },
+        {
+          "title": "也许是因为我喜欢 2026-08-15 歌切 分P12",
+          "url": "https://www.bilibili.com/video/BV1x7b26EE8C/?p=12",
+          "snippet": "女孩你为何踮脚尖-1"
+        }
+      ]
+    },
+    {
+      "replay_id": "BV1vzb26PEpJ",
+      "replay_title": "【小松绿Viridis】歌？杂？-2026年08月15日20点场",
+      "replay_url": "https://www.bilibili.com/video/BV1vzb26PEpJ/",
+      "replay_date": "2026-08-15",
+      "replay_date_source": "replay-title",
+      "segment_index": 5,
+      "start_time": "",
+      "end_time": "",
+      "lyric_excerpt": "",
+      "song_search_query": "虚拟",
+      "song_resolution_method": "song-cut-compilation-chapter",
+      "song_name": "虚拟",
+      "display_song_name": "虚拟",
+      "artist": "陈粒",
+      "artist_search": "虚拟 陈粒",
+      "feat_artist": "",
+      "language": "中文",
+      "tone": "",
+      "status_labels": [
+        "歌切章节验证",
+        "自动识别待人工复核"
+      ],
+      "display_version": "",
+      "type": "流行、民谣",
+      "remark": "2026-08-29 B站歌切搜索补充：心灵火Flame《20260815 歌切》分P10、也许是因为我喜欢《2026-08-15 歌切》分P10、垒下浮云单切（BV127bv6UEnN，3:19）、祝理安_单切（BV18Xb26sEYg，3:51，08-15 23:45发布）多源印证。判定为陈粒《虚拟》（萌百无同名中V曲目；08-15 歌？杂？场含人声歌如双笙《月出》）。歌手待人工复核。08-15 场次补录。",
+      "identification": "",
+      "cut_link": "https://www.bilibili.com/video/BV1idb16YEjD/?p=10",
+      "confidence": 0.8,
+      "row_key": "虚拟",
+      "search_name": "",
+      "resolution_candidates": [
+        {
+          "title": "心灵火Flame 20260815 歌切 分P10",
+          "url": "https://www.bilibili.com/video/BV1idb16YEjD/?p=10",
+          "snippet": "虚拟"
+        },
+        {
+          "title": "祝理安_单切",
+          "url": "https://www.bilibili.com/video/BV18Xb26sEYg/",
+          "snippet": "歌切《虚拟》3:51，08-15发布"
+        },
+        {
+          "title": "垒下浮云单切",
+          "url": "https://www.bilibili.com/video/BV127bv6UEnN/",
+          "snippet": "【松绿歌】虚拟 3:19，08-17发布"
+        },
+        {
+          "title": "也许是因为我喜欢 2026-08-15 歌切 分P10",
+          "url": "https://www.bilibili.com/video/BV1x7b26EE8C/?p=10",
+          "snippet": "虚拟-1"
+        }
+      ]
+    },
+    {
+      "replay_id": "BV1vzb26PEpJ",
+      "replay_title": "【小松绿Viridis】歌？杂？-2026年08月15日20点场",
+      "replay_url": "https://www.bilibili.com/video/BV1vzb26PEpJ/",
+      "replay_date": "2026-08-15",
+      "replay_date_source": "replay-title",
+      "segment_index": 12,
+      "start_time": "",
+      "end_time": "",
+      "lyric_excerpt": "",
+      "song_search_query": "蝴蝶",
+      "song_resolution_method": "song-cut-compilation-chapter",
+      "song_name": "蝴蝶",
+      "display_song_name": "蝴蝶",
+      "artist": "洛天依Official",
+      "artist_search": "洛天依 蝴蝶 瞿子千",
+      "feat_artist": "",
+      "language": "中文",
+      "tone": "",
+      "status_labels": [
+        "歌切章节验证",
+        "自动识别待人工复核"
+      ],
+      "display_version": "",
+      "type": "中V、流行",
+      "remark": "2026-08-29 B站歌切搜索补充：心灵火Flame《20260815 歌切》分P8 印证 08-15 歌？杂？场亦唱过《蝴蝶》（已在库，08-18 场另有演唱，song_id 67 洛天依Official，温莨词/瞿子千曲，《再生》专辑）。补当日 segment，勿按歌名全局去重。",
+      "identification": "",
+      "cut_link": "https://www.bilibili.com/video/BV1idb16YEjD/?p=8",
+      "confidence": 0.8,
+      "row_key": "蝴蝶",
+      "search_name": "",
+      "resolution_candidates": [
+        {
+          "title": "心灵火Flame 20260815 歌切 分P8",
+          "url": "https://www.bilibili.com/video/BV1idb16YEjD/?p=8",
+          "snippet": "蝴蝶 3:34"
+        }
+      ]
     }
   ]
 }

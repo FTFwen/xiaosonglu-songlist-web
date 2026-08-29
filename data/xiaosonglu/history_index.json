@@ -1,7 +1,7 @@
 {
   "roomKey": "xiaosonglu",
   "roomId": "1727071052",
-  "generatedAt": "2026-08-29T09:21:25.666Z",
+  "generatedAt": "2026-08-29T10:14:11.011Z",
   "source": "local-replay-ingestion",
   "latest": {
     "year": "2026",
@@ -12,9 +12,9 @@
     "2026": {
       "08": {
         "10": 3,
-        "11": 15,
+        "11": 16,
         "12": 2,
-        "15": 10,
+        "15": 15,
         "18": 24,
         "20": 20,
         "23": 8,
@@ -630,6 +630,24 @@
         "cut_link": "https://www.bilibili.com/video/BV1mwuz62EfH/"
       },
       {
+        "song_name": "炼金少女日志",
+        "sing_time": "",
+        "statuses": [
+          "歌切章节验证",
+          "自动识别待人工复核"
+        ],
+        "artist": "时之歌Project（泛音堂）/ 言和",
+        "replay_id": "BV1ujuB6EE6y",
+        "replay_title": "【直播回放】中v歌回（半场 2026年08月11日18点场",
+        "replay_url": "https://www.bilibili.com/video/BV1ujuB6EE6y/",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "炼金少女日志",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-title + collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1i8gV6xExv/"
+      },
+      {
         "song_name": "三月雨",
         "sing_time": "00:03:51",
         "statuses": [
@@ -963,6 +981,96 @@
         "lyric_excerpt": "",
         "song_resolution_method": "song-cut-title",
         "cut_link": "https://www.bilibili.com/video/BV1YZbC6WEJJ/"
+      },
+      {
+        "song_name": "四重罪孽",
+        "sing_time": "",
+        "statuses": [
+          "歌切章节验证",
+          "自动识别待人工复核"
+        ],
+        "artist": "DELA / 雨狸 / 洛天依、言和、乐正绫",
+        "replay_id": "BV1vzb26PEpJ",
+        "replay_title": "【小松绿Viridis】歌？杂？-2026年08月15日20点场",
+        "replay_url": "https://www.bilibili.com/video/BV1vzb26PEpJ/",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "四重罪孽",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-compilation-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1idb16YEjD/?p=6"
+      },
+      {
+        "song_name": "月出",
+        "sing_time": "",
+        "statuses": [
+          "歌切章节验证",
+          "自动识别待人工复核"
+        ],
+        "artist": "双笙（词：温莨 / 曲：徐梦圆）",
+        "replay_id": "BV1vzb26PEpJ",
+        "replay_title": "【小松绿Viridis】歌？杂？-2026年08月15日20点场",
+        "replay_url": "https://www.bilibili.com/video/BV1vzb26PEpJ/",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "月出",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-compilation-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1idb16YEjD/?p=2"
+      },
+      {
+        "song_name": "女孩你为何踮脚尖",
+        "sing_time": "",
+        "statuses": [
+          "歌切章节验证",
+          "自动识别待人工复核"
+        ],
+        "artist": "Ddickky / 墨兰花语 / 洛天依",
+        "replay_id": "BV1vzb26PEpJ",
+        "replay_title": "【小松绿Viridis】歌？杂？-2026年08月15日20点场",
+        "replay_url": "https://www.bilibili.com/video/BV1vzb26PEpJ/",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "女孩你为何踮脚尖",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-compilation-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1idb16YEjD/?p=12"
+      },
+      {
+        "song_name": "虚拟",
+        "sing_time": "",
+        "statuses": [
+          "歌切章节验证",
+          "自动识别待人工复核"
+        ],
+        "artist": "陈粒",
+        "replay_id": "BV1vzb26PEpJ",
+        "replay_title": "【小松绿Viridis】歌？杂？-2026年08月15日20点场",
+        "replay_url": "https://www.bilibili.com/video/BV1vzb26PEpJ/",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "虚拟",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-compilation-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1idb16YEjD/?p=10"
+      },
+      {
+        "song_name": "蝴蝶",
+        "sing_time": "",
+        "statuses": [
+          "歌切章节验证",
+          "自动识别待人工复核"
+        ],
+        "artist": "洛天依Official",
+        "replay_id": "BV1vzb26PEpJ",
+        "replay_title": "【小松绿Viridis】歌？杂？-2026年08月15日20点场",
+        "replay_url": "https://www.bilibili.com/video/BV1vzb26PEpJ/",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "蝴蝶",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-compilation-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1idb16YEjD/?p=8"
       }
     ],
     "2026-08-18": [

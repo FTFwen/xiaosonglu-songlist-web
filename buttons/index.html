@@ -533,7 +533,7 @@
           <button class="btn-x primary" id="uploadBtnBtn"><svg class="icon" aria-hidden="true"><use href="#icon-upload"></use></svg> 上传音频/导入压缩包</button>
         </div>
         <input type="file" accept=".mp3,.m4a,.wav,.ogg,.flac,audio/*,.zip" id="newBtnFileInput" multiple style="display:none;">
-        <div class="admin-tip">点击"上传音频添加按钮"，选择本地音频，将按文件名自动命名按钮主标题；随后可在下方编辑标题/副标题、拖拽到分类桶改分类。</div>
+        <div class="admin-tip">可多选音频文件，或导入 zip 压缩包（自动筛出音频，非音频舍去）。文件名自动命名按钮；rar/7z 请先转成 zip 再上传。添加后可编辑标题/副标题、拖拽到分类桶改分类。</div>
 
         <div class="admin-sec-title">按钮管理（点击标题/副标题可编辑）</div>
         <div id="btnAdminList"></div>
@@ -550,6 +550,6 @@
   <audio id="audioPlayer" preload="none"></audio>
 
   <script src="jszip.min.js"></script>
-  <script src="buttons.js?v=12"></script>
+  <script src="buttons.js?v=13"></script>
 </body>
 </html>
