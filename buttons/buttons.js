@@ -129,7 +129,6 @@
               ${btn.desc ? `<div class="sb-desc">${esc(btn.desc)}</div>` : ''}
             </div>
             <div class="sb-play">▶</div>
-            <div class="bar"></div>
           `;
           card.addEventListener('click', () => playSound(btn, card));
           listWrap.appendChild(card);
@@ -140,25 +139,62 @@
     });
   }
 
-  // ===== 播放音效 =====
+  // ===== 播放音效 + 顶部播放条 =====
+  let currentBtn = null; // 当前播放的按钮
+  const playerBar = el('playerBar');
+  const pbName = el('pbName');
+  const pbPlay = el('pbPlayBtn');
+  const pbProgress = el('pbProgress');
+  const pbTime = el('pbTime');
+  const pbClose = el('pbCloseBtn');
+
+  function fmtTime(s) {
+    if (!Number.isFinite(s) || s < 0) s = 0;
+    const m = Math.floor(s / 60);
+    const sec = Math.floor(s % 60);
+    return `${m}:${String(sec).padStart(2, '0')}`;
+  }
+
+  function updatePlayerUI() {
+    const playing = !audioPlayer.paused && !audioPlayer.ended;
+    pbPlay.textContent = playing ? '⏸' : '▶';
+    const dur = audioPlayer.duration || 0;
+    const cur = audioPlayer.currentTime || 0;
+    pbProgress.style.width = dur > 0 ? `${(cur / dur) * 100}%` : '0%';
+    pbTime.textContent = `${fmtTime(cur)} / ${fmtTime(dur)}`;
+  }
+
+  function showPlayer(btn) {
+    currentBtn = btn;
+    pbName.textContent = btn.name + (btn.desc ? ` · ${btn.desc}` : '');
+    playerBar.classList.add('show');
+    updatePlayerUI();
+    // 控制条目高亮
+    document.querySelectorAll('.sound-btn.playing').forEach(c => c.classList.remove('playing'));
+    const activeCard = [...document.querySelectorAll('.sound-btn')].find(c => c.querySelector('.sb-name') && c.querySelector('.sb-name').textContent === btn.name);
+    if (activeCard) activeCard.classList.add('playing');
+  }
+
+  function hidePlayer() {
+    currentBtn = null;
+    audioPlayer.pause();
+    audioPlayer.removeAttribute('src');
+    audioPlayer.load();
+    playerBar.classList.remove('show');
+    document.querySelectorAll('.sound-btn.playing').forEach(c => c.classList.remove('playing'));
+  }
+
   function playSound(btn, card) {
     const src = btn.audio;
     const resume = () => {
       audioPlayer.currentTime = 0;
       audioPlayer.play().then(() => {
-        card.classList.add('playing');
-        const bar = card.querySelector('.bar');
-        if (bar) bar.style.width = '100%';
-        audioPlayer.onended = () => {
-          card.classList.remove('playing');
-          if (bar) bar.style.width = '0%';
-        };
+        showPlayer(btn);
       }).catch(err => {
         console.warn('[按钮墙] 播放失败:', err);
         toast('音频播放失败');
       });
     };
-    // 优先播放 IndexedDB 里上传的音频
     if (btn.idb) {
       idbGet(btn.id).then(blob => {
         if (blob) {
@@ -178,6 +214,21 @@
     audioPlayer.src = src;
     resume();
   }
+
+  // 播放条事件
+  pbPlay.addEventListener('click', () => {
+    if (audioPlayer.paused) audioPlayer.play().catch(() => {});
+    else audioPlayer.pause();
+  });
+  pbClose.addEventListener('click', hidePlayer);
+  audioPlayer.addEventListener('timeupdate', updatePlayerUI);
+  audioPlayer.addEventListener('loadedmetadata', updatePlayerUI);
+  audioPlayer.addEventListener('play', updatePlayerUI);
+  audioPlayer.addEventListener('pause', updatePlayerUI);
+  audioPlayer.addEventListener('ended', () => {
+    updatePlayerUI();
+    document.querySelectorAll('.sound-btn.playing').forEach(c => c.classList.remove('playing'));
+  });
 
   // ===== 轻提示 =====
   let toastTimer = null;

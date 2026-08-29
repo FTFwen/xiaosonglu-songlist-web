@@ -324,6 +324,82 @@
       margin: 2px 0 8px;
       line-height: 1.5;
     }
+
+    /* ===== 顶部播放条 ===== */
+    .player-bar {
+      position: sticky;
+      top: 0;
+      z-index: 90;
+      display: none;
+      align-items: center;
+      gap: 12px;
+      padding: 10px 16px;
+      background: #fff;
+      border-bottom: 1px solid var(--line);
+      box-shadow: 0 6px 18px rgba(122, 136, 70, 0.14);
+    }
+    .player-bar.show { display: flex; }
+    .player-bar .pb-play {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      border: none;
+      background: var(--primary);
+      color: #fff;
+      font-size: 16px;
+      cursor: pointer;
+      display: grid;
+      place-items: center;
+      flex-shrink: 0;
+      transition: all 0.18s ease;
+    }
+    .player-bar .pb-play:hover { background: var(--primary-dark); }
+    .player-bar .pb-info { flex: 1; min-width: 0; }
+    .player-bar .pb-name {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--text);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      margin-bottom: 5px;
+    }
+    .player-bar .pb-progress-wrap {
+      height: 5px;
+      background: var(--surface-soft);
+      border-radius: 999px;
+      overflow: hidden;
+    }
+    .player-bar .pb-progress {
+      height: 100%;
+      width: 0%;
+      background: linear-gradient(90deg, var(--primary), var(--peach));
+      transition: width 0.2s linear;
+      border-radius: 999px;
+    }
+    .player-bar .pb-time {
+      font-size: 12px;
+      color: var(--text-soft);
+      font-variant-numeric: tabular-nums;
+      flex-shrink: 0;
+      min-width: 40px;
+      text-align: right;
+    }
+    .player-bar .pb-close {
+      border: none;
+      background: transparent;
+      color: var(--text-soft);
+      font-size: 15px;
+      cursor: pointer;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      flex-shrink: 0;
+      transition: all 0.18s ease;
+    }
+    .player-bar .pb-close:hover { background: var(--danger-soft); color: var(--danger); }
   </style>
 </head>
 <body>
@@ -332,6 +408,17 @@
     <h1>小松绿 · 按钮墙</h1>
     <div class="sub">点一下，听听小松绿的声音～</div>
     <button class="admin-login-btn" id="adminLoginBtn">⚙ 管理员</button>
+  </div>
+
+  <!-- 顶部播放条：点击按钮后出现 -->
+  <div class="player-bar" id="playerBar">
+    <button class="pb-play" id="pbPlayBtn" title="播放 / 暂停">▶</button>
+    <div class="pb-info">
+      <div class="pb-name" id="pbName">—</div>
+      <div class="pb-progress-wrap"><div class="pb-progress" id="pbProgress"></div></div>
+    </div>
+    <div class="pb-time" id="pbTime">0:00</div>
+    <button class="pb-close" id="pbCloseBtn" title="关闭">✕</button>
   </div>
 
   <main class="wall" id="wall"></main>
@@ -384,6 +471,6 @@
 
   <audio id="audioPlayer" preload="none"></audio>
 
-  <script src="buttons.js?v=5"></script>
+  <script src="buttons.js?v=6"></script>
 </body>
 </html>
