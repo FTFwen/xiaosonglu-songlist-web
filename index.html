@@ -1039,7 +1039,8 @@
     /* ===== 回到顶部按钮：滚动后出现，半透明，点击平滑回顶 ===== */
     .back-top {
       position: fixed;
-      right: 18px;
+      left: 50%;
+      transform: translateX(-50%) translateY(8px);
       bottom: 76px;
       width: 38px;
       height: 38px;
@@ -1053,7 +1054,6 @@
       padding: 0;
       opacity: 0;
       visibility: hidden;
-      transform: translateY(8px);
       transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s, background 0.2s ease;
       z-index: 55;
       backdrop-filter: blur(4px);
@@ -1063,15 +1063,15 @@
     .back-top.show {
       opacity: 1;
       visibility: visible;
-      transform: translateY(0);
+      transform: translateX(-50%) translateY(0);
     }
     .back-top:hover { background: rgba(255, 255, 255, 0.94); color: var(--primary); }
-    .back-top:active { transform: scale(0.94); }
+    .back-top:active { transform: translateX(-50%) scale(0.94); }
     /* 有播放器时上移，避免遮挡播放器栏 */
     body.has-player .back-top { bottom: 84px; }
-    /* 手机端：避开右下角悬浮气泡（歌单/播放列表/睡眠定时），移到左侧 */
+    /* 手机端：避开右下角悬浮气泡（歌单/播放列表/睡眠定时），保持中下居中 */
     @media (max-width: 768px) {
-      .back-top { right: auto; left: 14px; bottom: 74px; }
+      .back-top { bottom: 74px; }
       body.has-player .back-top { bottom: 82px; }
     }
 
@@ -2181,6 +2181,6 @@
   <script src="js/shared.js?v=24" defer></script>
   <script src="js/pinyin-pro.js" defer></script>
   <script src="js/data.js?v=24" defer></script>
-  <script src="js/app.js?v=34" defer></script>
+  <script src="js/app.js?v=35" defer></script>
 </body>
 </html>
