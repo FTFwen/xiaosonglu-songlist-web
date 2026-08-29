@@ -123,12 +123,8 @@
           const card = document.createElement('button');
           card.className = 'sound-btn';
           card.innerHTML = `
-            <div class="sb-idx">${bi + 1}</div>
-            <div class="sb-main">
-              <div class="sb-name">${esc(btn.name)}</div>
-              ${btn.desc ? `<div class="sb-desc">${esc(btn.desc)}</div>` : ''}
-            </div>
-            <div class="sb-play">▶</div>
+            <div class="sb-main"><div class="sb-name">${esc(btn.name)}</div></div>
+            <div class="sb-dur">${fmtDur(btn.duration)}</div>
           `;
           card.addEventListener('click', () => playSound(btn, card));
           listWrap.appendChild(card);
@@ -157,6 +153,12 @@
     return s.toFixed(1);
   }
 
+  // 按钮时长显示：如 "1.0s"，无时长则空白
+  function fmtDur(d) {
+    if (d == null || !Number.isFinite(d) || d <= 0) return '';
+    return `${d.toFixed(1)}s`;
+  }
+
   function updatePlayerUI() {
     const playing = !audioPlayer.paused && !audioPlayer.ended;
     pbPlay.textContent = playing ? '⏸' : '▶';
@@ -168,8 +170,7 @@
 
   function showPlayer(btn) {
     currentBtn = btn;
-    pbName.textContent = btn.name + (btn.desc ? ` · ${btn.desc}` : '');
-    playerBar.classList.add('show');
+    pbName.textContent = btn.name; // 只显示标题（按键+时长的风格）
     renderModeBtn();
     updatePlayerUI();
     // 控制条目高亮
@@ -183,7 +184,6 @@
     audioPlayer.pause();
     audioPlayer.removeAttribute('src');
     audioPlayer.load();
-    playerBar.classList.remove('show');
     document.querySelectorAll('.sound-btn.playing').forEach(c => c.classList.remove('playing'));
   }
 
@@ -244,7 +244,18 @@
   });
   pbClose.addEventListener('click', hidePlayer);
   audioPlayer.addEventListener('timeupdate', updatePlayerUI);
-  audioPlayer.addEventListener('loadedmetadata', updatePlayerUI);
+  audioPlayer.addEventListener('loadedmetadata', () => {
+    updatePlayerUI();
+    // 记录当前按钮时长，更新列表里"按键+时长"的显示
+    const dur = audioPlayer.duration;
+    if (currentBtn && Number.isFinite(dur) && dur > 0) {
+      if (currentBtn.duration !== dur) {
+        currentBtn.duration = Math.round(dur * 10) / 10;
+        saveData(data);
+        renderWall();
+      }
+    }
+  });
   audioPlayer.addEventListener('play', updatePlayerUI);
   audioPlayer.addEventListener('pause', updatePlayerUI);
   audioPlayer.addEventListener('ended', () => {
