@@ -308,105 +308,142 @@
       line-height: 1.5;
     }
 
-    /* ===== 顶部播放条（常驻置顶） ===== */
-    .player-bar {
+    /* ===== 顶部播放器：圆角方框卡片（常驻置顶，对齐参考站） ===== */
+    .player-card {
       position: sticky;
-      top: 0;
+      top: 12px;
       z-index: 90;
+      max-width: 1080px;
+      margin: 0 auto;
       display: flex;
       align-items: center;
-      gap: 12px;
-      padding: 10px 16px;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 14px 18px;
       background: #fff;
-      border-bottom: 1px solid var(--line);
-      box-shadow: 0 6px 18px rgba(122, 136, 70, 0.14);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      box-shadow: 0 10px 30px rgba(122, 136, 70, 0.14);
     }
-    .player-bar .pb-play {
-      width: 40px;
-      height: 40px;
+    .player-card .pc-left { flex: 1; min-width: 0; }
+    .player-card .pc-label {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      color: var(--text-soft);
+      margin-bottom: 4px;
+    }
+    .player-card .pc-dot {
+      width: 8px;
+      height: 8px;
       border-radius: 50%;
-      border: none;
-      background: var(--primary);
-      color: #fff;
-      font-size: 16px;
-      cursor: pointer;
-      display: grid;
-      place-items: center;
+      background: var(--peach);
       flex-shrink: 0;
-      transition: all 0.18s ease;
     }
-    .player-bar .pb-play:hover { background: var(--primary-dark); }
-    .player-bar .pb-info { flex: 1; min-width: 0; }
-    .player-bar .pb-name {
-      font-size: 14px;
+    .player-card .pc-name {
+      font-size: 17px;
       font-weight: 700;
       color: var(--text);
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
-      margin-bottom: 5px;
+      line-height: 1.3;
     }
-    .player-bar .pb-progress-wrap {
+    .player-card .pc-time {
+      font-size: 12px;
+      color: var(--text-soft);
+      font-variant-numeric: tabular-nums;
+      margin-top: 3px;
+    }
+    .player-card .pc-progress-wrap {
       height: 5px;
       background: var(--surface-soft);
       border-radius: 999px;
       overflow: hidden;
+      margin-top: 8px;
+      max-width: 320px;
     }
-    .player-bar .pb-progress {
+    .player-card .pc-progress {
       height: 100%;
       width: 0%;
       background: linear-gradient(90deg, var(--primary), var(--peach));
       transition: width 0.2s linear;
       border-radius: 999px;
     }
-    .player-bar .pb-time {
-      font-size: 12px;
-      color: var(--text-soft);
-      font-variant-numeric: tabular-nums;
+    .player-card .pc-right {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 10px;
       flex-shrink: 0;
-      min-width: 40px;
-      text-align: right;
     }
-    .player-bar .pb-close {
+    .player-card .pc-stop {
+      border: 1px solid var(--line-strong);
+      background: #fff;
+      color: var(--text);
+      border-radius: 12px;
+      padding: 8px 18px;
+      font-size: 13px;
+      cursor: pointer;
+      transition: all 0.18s ease;
+    }
+    .player-card .pc-stop:hover { border-color: var(--danger); color: var(--danger); background: var(--danger-soft); }
+    .player-card .pc-ctrls {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .player-card .pc-play {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      border: none;
+      background: var(--primary);
+      color: #fff;
+      font-size: 14px;
+      cursor: pointer;
+      display: grid;
+      place-items: center;
+      transition: all 0.18s ease;
+    }
+    .player-card .pc-play:hover { background: var(--primary-dark); }
+    .player-card .pc-mode {
+      border: none;
+      background: transparent;
+      color: var(--text-soft);
+      font-size: 18px;
+      cursor: pointer;
+      transition: all 0.18s ease;
+    }
+    .player-card .pc-mode:hover,
+    .player-card .pc-mode.single { color: var(--primary-dark); }
+    .player-card .pc-vol {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+    .player-card .pc-vol span { font-size: 14px; }
+    .player-card .pc-vol input[type=range] {
+      width: 90px;
+      accent-color: var(--primary);
+    }
+    .player-card .pc-close {
       border: none;
       background: transparent;
       color: var(--text-soft);
       font-size: 15px;
       cursor: pointer;
-      width: 30px;
-      height: 30px;
+      width: 28px;
+      height: 28px;
       border-radius: 50%;
       display: grid;
       place-items: center;
-      flex-shrink: 0;
       transition: all 0.18s ease;
     }
-    .player-bar .pb-close:hover { background: var(--danger-soft); color: var(--danger); }
-    .player-bar .pb-stop,
-    .player-bar .pb-mode {
-      border: 1px solid var(--line-strong);
-      background: #fff;
-      color: var(--text-soft);
-      border-radius: 999px;
-      padding: 6px 12px;
-      font-size: 12px;
-      cursor: pointer;
-      flex-shrink: 0;
-      transition: all 0.18s ease;
-    }
-    .player-bar .pb-stop:hover { border-color: var(--danger); color: var(--danger); background: var(--danger-soft); }
-    .player-bar .pb-mode:hover,
-    .player-bar .pb-mode.single { border-color: var(--primary); color: var(--primary-dark); background: var(--primary-soft); }
-    .player-bar .pb-vol {
-      display: flex;
-      align-items: center;
-      gap: 5px;
-      flex-shrink: 0;
-    }
-    .player-bar .pb-vol input[type=range] {
-      width: 70px;
-      accent-color: var(--primary);
-    }
+    .player-card .pc-close:hover { background: var(--danger-soft); color: var(--danger); }
   </style>
 </head>
 <body>
@@ -417,21 +454,26 @@
     <button class="admin-login-btn" id="adminLoginBtn">⚙ 管理员</button>
   </div>
 
-  <!-- 顶部播放条：点击按钮后出现 -->
-  <div class="player-bar" id="playerBar">
-    <button class="pb-play" id="pbPlayBtn" title="播放 / 暂停">▶</button>
-    <div class="pb-info">
-      <div class="pb-name" id="pbName">—</div>
-      <div class="pb-progress-wrap"><div class="pb-progress" id="pbProgress"></div></div>
+  <!-- 顶部播放器：圆角方框卡片，常驻置顶（对齐参考站） -->
+  <div class="player-card" id="playerBar">
+    <div class="pc-left">
+      <div class="pc-label"><span class="pc-dot"></span>PLAYER</div>
+      <div class="pc-name" id="pbName">当前未播放</div>
+      <div class="pc-time" id="pbTime">0.0 / 0.0s</div>
+      <div class="pc-progress-wrap"><div class="pc-progress" id="pbProgress"></div></div>
     </div>
-    <div class="pb-time" id="pbTime">0.0 / 0.0s</div>
-    <button class="pb-stop" id="pbStopBtn" title="停止播放">⏹ 停止</button>
-    <button class="pb-mode" id="pbModeBtn" title="播放模式：顺序播放，点击切换为单曲循环">🔁 顺序</button>
-    <div class="pb-vol" title="音量">
-      <span>🔊</span>
-      <input type="range" id="pbVolume" min="0" max="100" value="100">
+    <div class="pc-right">
+      <button class="pc-stop" id="pbStopBtn" title="停止播放">停止播放</button>
+      <div class="pc-ctrls">
+        <button class="pc-play" id="pbPlayBtn" title="播放 / 暂停">▶</button>
+        <button class="pc-mode" id="pbModeBtn" title="播放模式：顺序播放，点击切换为单曲循环">🔁</button>
+        <div class="pc-vol" title="音量">
+          <span>🔊</span>
+          <input type="range" id="pbVolume" min="0" max="100" value="100">
+        </div>
+        <button class="pc-close" id="pbCloseBtn" title="关闭">✕</button>
+      </div>
     </div>
-    <button class="pb-close" id="pbCloseBtn" title="关闭">✕</button>
   </div>
 
   <main class="wall" id="wall"></main>
@@ -484,6 +526,6 @@
 
   <audio id="audioPlayer" preload="none"></audio>
 
-  <script src="buttons.js?v=8"></script>
+  <script src="buttons.js?v=9"></script>
 </body>
 </html>

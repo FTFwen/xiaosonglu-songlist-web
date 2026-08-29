@@ -188,7 +188,7 @@
   }
 
   function renderModeBtn() {
-    pbMode.textContent = playMode === 'single' ? '🔂 单曲循环' : '🔁 顺序';
+    pbMode.textContent = playMode === 'single' ? '🔂' : '🔁';
     pbMode.classList.toggle('single', playMode === 'single');
     pbMode.title = playMode === 'single' ? '播放模式：单曲循环，点击切换为顺序播放' : '播放模式：顺序播放，点击切换为单曲循环';
   }
