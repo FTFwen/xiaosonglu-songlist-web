@@ -1,16 +1,16 @@
 // buttons.js - 小松绿按钮墙
 // 数据存 localStorage（简单版），管理员登录后可编辑分类/按钮
+// 布局：垂直分组列表 —— 每个分类一个区块标题，下面一条一条的按钮行
 (() => {
   'use strict';
 
   // ===== 存储 =====
   const LS_KEY = 'xsl:buttons:data';
-  const LS_ADMIN = 'xsl:buttons:admin'; // 管理员账号（登录后存 session 标记在 sessionStorage）
+  const LS_ADMIN = 'xsl:buttons:admin';
 
   // 初始管理员账号（用户提供真实账号后替换）
   const DEFAULT_ADMIN = { user: 'admin', pass: 'xsl12345' };
 
-  // 默认数据结构
   const DEFAULT_DATA = {
     cats: [
       { id: 'mdichang', name: '名场面' },
@@ -33,51 +33,61 @@
 
   // ===== 状态 =====
   let data = loadData();
-  let activeCat = 'mdichang'; // 默认第一个分类
   let isAdmin = sessionStorage.getItem('xsl:buttons:authed') === '1';
 
   // ===== DOM =====
   const el = id => document.getElementById(id);
-  const catsNav = el('catsNav');
-  const btnGrid = el('btnGrid');
-  const emptyHint = el('emptyHint');
+  const wall = el('wall');
   const adminPanel = el('adminPanel');
   const loginForm = el('loginForm');
   const adminBody = el('adminBody');
   const audioPlayer = el('audioPlayer');
 
-  // ===== 渲染分类导航 =====
-  function renderCats() {
-    catsNav.innerHTML = '';
-    data.cats.forEach(cat => {
-      const tab = document.createElement('button');
-      tab.className = 'cat-tab' + (cat.id === activeCat ? ' active' : '');
-      tab.textContent = cat.name;
-      tab.addEventListener('click', () => {
-        activeCat = cat.id;
-        renderCats();
-        renderButtons();
-      });
-      catsNav.appendChild(tab);
-    });
-  }
+  // ===== 渲染：垂直分组列表 =====
+  function renderWall() {
+    wall.innerHTML = '';
+    data.cats.forEach((cat, ci) => {
+      const list = data.buttons.filter(b => b.cat === cat.id);
+      const section = document.createElement('section');
+      section.className = 'cat-section';
 
-  // ===== 渲染按钮网格 =====
-  function renderButtons() {
-    btnGrid.innerHTML = '';
-    const list = data.buttons.filter(b => b.cat === activeCat);
-    emptyHint.style.display = list.length ? 'none' : 'block';
-    list.forEach(btn => {
-      const card = document.createElement('button');
-      card.className = 'sound-btn';
-      card.innerHTML = `
-        <div class="icon">▶</div>
-        <div class="name">${esc(btn.name)}</div>
-        ${btn.desc ? `<div class="desc">${esc(btn.desc)}</div>` : ''}
-        <div class="playing-bar"></div>
+      // 分类标题
+      const head = document.createElement('div');
+      head.className = 'cat-head';
+      head.innerHTML = `
+        <div class="cat-badge">${ci + 1}</div>
+        <div class="cat-title">${esc(cat.name)}</div>
+        <div class="cat-count">${list.length} 条</div>
       `;
-      card.addEventListener('click', () => playSound(btn, card));
-      btnGrid.appendChild(card);
+      section.appendChild(head);
+
+      // 按钮列表
+      const listWrap = document.createElement('div');
+      listWrap.className = 'btn-list';
+      if (list.length === 0) {
+        const empty = document.createElement('div');
+        empty.className = 'empty-hint';
+        empty.textContent = '这个分类还没有按钮～';
+        listWrap.appendChild(empty);
+      } else {
+        list.forEach((btn, bi) => {
+          const card = document.createElement('button');
+          card.className = 'sound-btn';
+          card.innerHTML = `
+            <div class="sb-idx">${bi + 1}</div>
+            <div class="sb-main">
+              <div class="sb-name">${esc(btn.name)}</div>
+              ${btn.desc ? `<div class="sb-desc">${esc(btn.desc)}</div>` : ''}
+            </div>
+            <div class="sb-play">▶</div>
+            <div class="bar"></div>
+          `;
+          card.addEventListener('click', () => playSound(btn, card));
+          listWrap.appendChild(card);
+        });
+      }
+      section.appendChild(listWrap);
+      wall.appendChild(section);
     });
   }
 
@@ -85,23 +95,20 @@
   function playSound(btn, card) {
     const src = btn.audio;
     if (!src) {
-      // 没音频，先给个反馈
       toast(`「${btn.name}」还没有音频`);
       return;
     }
-    // 停止播放中的
     document.querySelectorAll('.sound-btn.playing').forEach(c => {
       c.classList.remove('playing');
-      const bar = c.querySelector('.playing-bar');
+      const bar = c.querySelector('.bar');
       if (bar) bar.style.width = '0%';
     });
     audioPlayer.src = src;
     audioPlayer.currentTime = 0;
     audioPlayer.play().then(() => {
       card.classList.add('playing');
-      const bar = card.querySelector('.playing-bar');
+      const bar = card.querySelector('.bar');
       if (bar) bar.style.width = '100%';
-      // 播放结束后重置
       audioPlayer.onended = () => {
         card.classList.remove('playing');
         if (bar) bar.style.width = '0%';
@@ -115,10 +122,6 @@
   // ===== 轻提示 =====
   let toastTimer = null;
   function toast(msg) {
-    const t = el('emptyHint');
-    // 简单用 alert 替代，或用 toast 元素；此处用临时方式
-    console.log('[按钮墙]', msg);
-    // 用一个小提示
     if (!window.__toastEl) {
       const d = document.createElement('div');
       d.id = '__toast';
@@ -148,15 +151,10 @@
 
   function openAdmin() {
     adminPanel.classList.add('show');
-    if (isAdmin) {
-      enterAdminMode();
-    } else {
-      showLogin();
-    }
+    if (isAdmin) enterAdminMode();
+    else showLogin();
   }
-  function closeAdmin() {
-    adminPanel.classList.remove('show');
-  }
+  function closeAdmin() { adminPanel.classList.remove('show'); }
   function showLogin() {
     loginForm.style.display = 'flex';
     adminBody.style.display = 'none';
@@ -212,8 +210,7 @@
         data.cats = data.cats.filter(c => c.id !== cat.id);
         data.buttons = data.buttons.filter(b => b.cat !== cat.id);
         saveData(data);
-        if (activeCat === cat.id) activeCat = data.cats[0] && data.cats[0].id;
-        renderCats(); renderButtons(); renderCatAdmin(); renderBtnAdmin(); fillCatSelect();
+        renderWall(); renderCatAdmin(); renderBtnAdmin(); fillCatSelect();
       });
       list.appendChild(item);
     });
@@ -226,7 +223,7 @@
     data.cats.push({ id, name });
     saveData(data);
     el('newCatName').value = '';
-    renderCats(); renderCatAdmin(); fillCatSelect();
+    renderWall(); renderCatAdmin(); fillCatSelect();
     toast('分类已添加');
   }
 
@@ -261,7 +258,7 @@
         if (!confirm(`删除按钮「${btn.name}」？`)) return;
         data.buttons = data.buttons.filter(b => b.id !== btn.id);
         saveData(data);
-        renderButtons(); renderBtnAdmin();
+        renderWall(); renderBtnAdmin();
       });
       list.appendChild(item);
     });
@@ -279,7 +276,7 @@
     el('newBtnName').value = '';
     el('newBtnDesc').value = '';
     el('newBtnAudio').value = '';
-    renderButtons(); renderBtnAdmin();
+    renderWall(); renderBtnAdmin();
     toast('按钮已添加');
   }
 
@@ -294,11 +291,9 @@
   adminPanel.addEventListener('click', e => {
     if (e.target === adminPanel) closeAdmin();
   });
-  // 回车登录
   el('loginUser').addEventListener('keydown', e => { if (e.key === 'Enter') doLogin(); });
   el('loginPass').addEventListener('keydown', e => { if (e.key === 'Enter') doLogin(); });
 
   // ===== 初始化 =====
-  renderCats();
-  renderButtons();
+  renderWall();
 })();
