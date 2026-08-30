@@ -2420,8 +2420,8 @@ function bindDom() {
     'languageChips','tagChips','langAllBtn','langNoneBtn','tagAllBtn','tagNoneBtn','countPresetRow','daysPresetRow','resetFiltersBtn','actionPanel','selectedSongName','selectedSongCutWrap',
     'copySongBtn','copyOrderTextBtn','clearSelectionBtn','historyYearSelect','historyMonthSelect',
     'historyDaySelect','historyPrevBtn','historyNextBtn','historyPageInfo','historyMetaText','historyListWrap','favoritesRefreshBtn',
-    'favoritesUploadBtn','favoritesUploadOverlay','favUploadName','favUploadCancel','favUploadOk',
-    'favoritesLoadBtn','favoritesLoadOverlay','favLoadName','favLoadCancel','favLoadOk',
+    'favoritesUploadBtn','favUploadOverlay','favUploadName','favUploadCancel','favUploadOk',
+    'favoritesLoadBtn','favLoadOverlay','favLoadName','favLoadCancel','favLoadOk',
     'favCurrentName',
     'favoritesClearBtn','favoritesMetaText','favoritesCountText','favoritesListWrap',
     'detailOverlay','detailModal','detailTitle','detailSub','detailBody','detailCloseBtn','toast','backTopBtn',
@@ -2861,11 +2861,11 @@ function bindEvents() {
 
   dom.favoritesRefreshBtn.addEventListener('click', refreshFavoritesFromServer);
   dom.favoritesUploadBtn.addEventListener('click', openFavUpload);
-  dom.favoritesUploadCancel.addEventListener('click', closeFavUpload);
-  dom.favoritesUploadOk.addEventListener('click', submitFavUpload);
+  dom.favUploadCancel.addEventListener('click', closeFavUpload);
+  dom.favUploadOk.addEventListener('click', submitFavUpload);
   dom.favoritesLoadBtn.addEventListener('click', openFavLoad);
-  dom.favoritesLoadCancel.addEventListener('click', closeFavLoad);
-  dom.favoritesLoadOk.addEventListener('click', submitFavLoad);
+  dom.favLoadCancel.addEventListener('click', closeFavLoad);
+  dom.favLoadOk.addEventListener('click', submitFavLoad);
   dom.favoritesClearBtn.addEventListener('click', clearFavorites);
 
   dom.favoritesListWrap.addEventListener('click', async event => {
