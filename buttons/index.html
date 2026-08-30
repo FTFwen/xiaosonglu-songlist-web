@@ -77,25 +77,35 @@
       display: inline-flex;
       align-items: center;
       gap: 9px;
-      padding: 13px 22px 13px 16px;
+      padding: 0 22px 0 16px;
       color: var(--text);
       font-size: 15px;
       font-weight: 600;
       text-decoration: none;
-      transition: all 0.18s ease;
-      background: rgba(255,255,255,0.58);
-      /* 书签造型：右侧尖角凸起（像笔记本页签） */
-      clip-path: polygon(0 0, calc(100% - 16px) 0, 100% 50%, calc(100% - 16px) 100%, 0 100%);
+      transition: color 0.18s ease;
+      position: relative;
       border: none;
+      height: 46px;
+      overflow: visible;
+      /* 书签造型通过伪元素背景裁剪，图标可超出 */
+      background: transparent;
     }
-    .site-tab img { height: 40px; width: auto; display: block; flex-shrink: 0; object-fit: contain; margin: -4px 0; }
+    .site-tab::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(255,255,255,0.58);
+      clip-path: polygon(0 0, calc(100% - 16px) 0, 100% 50%, calc(100% - 16px) 100%, 0 100%);
+      z-index: 0;
+      transition: background 0.18s ease;
+    }
+    .site-tab > * { position: relative; z-index: 1; }
+    .site-tab img { height: 52px; width: auto; display: block; flex-shrink: 0; object-fit: contain; }
     .site-tab svg.icon { width: 18px; height: 18px; display: block; flex-shrink: 0; }
-    .site-tab:hover { background: rgba(255,255,255,0.78); color: var(--text); }
-    .site-tab.active {
-      background: var(--primary-dark);
-      color: #fff;
-      font-weight: 700;
-    }
+    .site-tab:hover::before { background: rgba(255,255,255,0.78); }
+    .site-tab:hover { color: var(--text); }
+    .site-tab.active { color: #fff; font-weight: 700; }
+    .site-tab.active::before { background: var(--primary-dark); }
 
     /* 头部横幅（参考主站小松绿主题布局，位于 .app 内居中限宽） */
     .banner {

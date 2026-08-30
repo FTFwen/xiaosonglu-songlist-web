@@ -22,24 +22,34 @@
             display: inline-flex;
             align-items: center;
             gap: 9px;
-            padding: 13px 22px 13px 16px;
+            padding: 0 22px 0 16px;
             color: var(--ink);
             font-size: 15px;
             font-weight: 600;
             text-decoration: none;
-            transition: all 0.18s ease;
+            transition: color 0.18s ease;
+            position: relative;
+            border: none;
+            height: 46px;
+            overflow: visible;
+            background: transparent;
+        }
+        .site-tab::before {
+            content: '';
+            position: absolute;
+            inset: 0;
             background: rgba(255,250,240,0.66);
             clip-path: polygon(0 0, calc(100% - 16px) 0, 100% 50%, calc(100% - 16px) 100%, 0 100%);
-            border: none;
+            z-index: 0;
+            transition: background 0.18s ease;
         }
-        .site-tab img { height: 40px; width: auto; display: block; flex-shrink: 0; object-fit: contain; margin: -4px 0; }
+        .site-tab > * { position: relative; z-index: 1; }
+        .site-tab img { height: 52px; width: auto; display: block; flex-shrink: 0; object-fit: contain; }
         .site-tab svg.icon { width: 18px; height: 18px; fill: currentColor; display: block; flex-shrink: 0; }
-        .site-tab:hover { background: rgba(255,250,240,0.86); color: var(--ink); }
-        .site-tab.active {
-            background: var(--sage);
-            color: #fff;
-            font-weight: 700;
-        }
+        .site-tab:hover::before { background: rgba(255,250,240,0.86); }
+        .site-tab:hover { color: var(--ink); }
+        .site-tab.active { color: #fff; font-weight: 700; }
+        .site-tab.active::before { background: var(--sage); }
     </style>
 </head>
 <body>
