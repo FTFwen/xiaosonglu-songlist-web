@@ -16,7 +16,7 @@ const FAV_CURRENT_KEY = 'favorites:currentName';
 
 // 中意存档服务器接口
 const FAV_API_BASE = '/api/fav/';
-const favCurrentName = () => storageGet(FAV_CURRENT_KEY);
+const favCurrentName = async () => (await storageGet(FAV_CURRENT_KEY))[FAV_CURRENT_KEY] || '';
 const setFavCurrentName = name => storageSet({ [FAV_CURRENT_KEY]: name });
 function updateFavCurrentNameUi() {
   const name = (state.favCurrentNameValue || '').trim();
@@ -1655,8 +1655,8 @@ async function loadFavorites() {
   hydrateFavoriteList();
   renderFavorites();
   // 读取当前清单名，显示在中意模块
-  const curName = await storageGet(FAV_CURRENT_KEY);
-  state.favCurrentNameValue = curName || '';
+  const curNameObj = await storageGet(FAV_CURRENT_KEY);
+  state.favCurrentNameValue = curNameObj[FAV_CURRENT_KEY] || '';
   updateFavCurrentNameUi();
 }
 
