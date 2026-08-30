@@ -50,6 +50,10 @@
         .site-tab:hover { color: var(--ink); }
         .site-tab.active { color: #2e3a17; font-weight: 800; text-shadow: none; -webkit-text-stroke: 0; }
         .site-tab.active::before { background: rgba(124,140,66,0.38); }
+        /* 手机端：隐藏左侧书签页签（避免遮挡全屏游戏） */
+        @media (max-width: 768px) {
+            .site-tabs { display: none; }
+        }
     </style>
 </head>
 <body>

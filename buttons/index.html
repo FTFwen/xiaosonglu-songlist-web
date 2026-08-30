@@ -165,6 +165,39 @@
     }
     .admin-login-btn:hover { background: rgba(255,255,255,0.28); }
 
+    /* 手机端竖排导航按钮（替代左侧书签页签） */
+    .banner-nav {
+      display: none;
+      flex-direction: column;
+      gap: 6px;
+      align-items: stretch;
+    }
+    .banner-nav a {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      border: 1px solid rgba(255,255,255,0.4);
+      background: rgba(255,255,255,0.14);
+      color: #fff;
+      border-radius: 999px;
+      padding: 6px 12px;
+      font-size: 12px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.18s ease;
+      white-space: nowrap;
+    }
+    .banner-nav a:hover { background: rgba(255,255,255,0.26); }
+    .banner-nav a.active { background: var(--primary-soft); color: var(--primary-dark); border-color: var(--primary); }
+    .banner-nav a img { height: 18px; width: auto; }
+
+    /* 手机端：隐藏左侧书签、隐藏管理员、显示 bannernav */
+    @media (max-width: 768px) {
+      .site-tabs { display: none; }
+      .banner-nav { display: flex; }
+      .admin-login-btn { display: none; }
+    }
+
     /* 主体：垂直条目列表 */
     .wall {
       max-width: 1000px;
@@ -697,7 +730,12 @@
     <div class="banner-top">
       <div class="banner-icon"><img src="../assets/xiaosonglu-logo.png" alt="小松绿"></div>
       <div class="banner-main">
-        <h1>小松绿 · 按钮墙</h1>
+        <h1>按钮墙</h1>
+      </div>
+      <div class="banner-nav">
+        <a class="active" href="./"><svg class="icon" aria-hidden="true"><use href="#icon-playlist"></use></svg> 按钮墙</a>
+        <a href="../"><svg class="icon" aria-hidden="true"><use href="#icon-music"></use></svg> 歌单</a>
+        <a href="../24xsl/"><img src="../assets/24xsl-title.webp" alt="24点"></a>
       </div>
       <button class="admin-login-btn" id="adminLoginBtn"><svg class="icon" aria-hidden="true"><use href="#icon-sound"></use></svg> 管理员</button>
     </div>
