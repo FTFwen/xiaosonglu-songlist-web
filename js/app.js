@@ -11,9 +11,21 @@ const SONG_CACHE_TTL = 5 * 60 * 1000;
 const HISTORY_CACHE_TTL = 30 * 60 * 1000;
 // 中意存档（单一本地存档，浏览器 localStorage）
 const FAVORITES_KEY = 'favorites:shared';
+// 当前用的中意清单名（上传/导入存档时记录，刷新按它拉取）
+const FAV_CURRENT_KEY = 'favorites:currentName';
+
+// 中意存档服务器接口
+const FAV_API_BASE = '/api/fav/';
+const favCurrentName = () => storageGet(FAV_CURRENT_KEY);
+const setFavCurrentName = name => storageSet({ [FAV_CURRENT_KEY]: name });
+function updateFavCurrentNameUi() {
+  const name = (state.favCurrentNameValue || '').trim();
+  dom.favCurrentName.textContent = name ? `当前清单：${name}` : '当前清单：未保存';
+}
 
 const state = {
   currentRoomKey: 'xiaosonglu',
+  favCurrentNameValue: '', // 当前中意清单名（本地记录 + 刷新拉取依据）
   currentRoom: getRoomConfig('xiaosonglu'),
   settings: {
     lastRoomKey: 'xiaosonglu',
@@ -1642,6 +1654,10 @@ async function loadFavorites() {
 
   hydrateFavoriteList();
   renderFavorites();
+  // 读取当前清单名，显示在中意模块
+  const curName = await storageGet(FAV_CURRENT_KEY);
+  state.favCurrentNameValue = curName || '';
+  updateFavCurrentNameUi();
 }
 
 async function saveFavorites() {
@@ -1837,6 +1853,98 @@ async function clearFavorites() {
   hydrateFavoriteList();
   applySongFilters();
   showToast('已清空中意清单');
+}
+
+// ===== 中意清单 服务器存档（访客用清单名区分） =====
+
+// 上传存档：打开弹窗输入清单名
+function openFavUpload() {
+  const cur = (state.favCurrentNameValue || '').trim();
+  dom.favUploadName.value = cur;
+  dom.favUploadOverlay.classList.add('show');
+  setTimeout(() => dom.favUploadName.focus(), 50);
+}
+function closeFavUpload() {
+  dom.favUploadOverlay.classList.remove('show');
+  dom.favUploadName.value = '';
+}
+// 把当前 favoritesMap 上传到服务器，同名询问覆盖
+async function submitFavUpload() {
+  const name = dom.favUploadName.value.trim();
+  if (!name) { showToast('先给清单起个名字吧'); return; }
+  const url = FAV_API_BASE + encodeURIComponent(name);
+  const payload = { songs: state.favoritesMap };
+  let res;
+  try {
+    res = await fetch(url, { method: 'PUT', headers: { 'content-type': 'application/json' }, body: JSON.stringify(payload) });
+  } catch (e) { showToast('上传失败：网络错误'); return; }
+  if (!res.ok) { showToast('上传失败：' + res.status); return; }
+  const data = await res.json();
+  // 已存在同名 → 询问是否覆盖
+  if (data.exists) {
+    if (!window.confirm(`服务器已有同名清单「${name}」，是否覆盖？`)) return;
+    res = await fetch(url, { method: 'PUT', headers: { 'content-type': 'application/json' }, body: JSON.stringify(payload) });
+    if (!res.ok) { showToast('覆盖失败：' + res.status); return; }
+  }
+  setFavCurrentName(name);
+  state.favCurrentNameValue = name;
+  updateFavCurrentNameUi();
+  closeFavUpload();
+  showToast(`已上传清单「${name}」`);
+}
+
+// 导入存档：打开弹窗输入清单名
+function openFavLoad() {
+  dom.favLoadName.value = (state.favCurrentNameValue || '').trim();
+  dom.favLoadOverlay.classList.add('show');
+  setTimeout(() => dom.favLoadName.focus(), 50);
+}
+function closeFavLoad() {
+  dom.favLoadOverlay.classList.remove('show');
+  dom.favLoadName.value = '';
+}
+// 从服务器拉取清单并导入
+async function submitFavLoad() {
+  const name = dom.favLoadName.value.trim();
+  if (!name) { showToast('先输入清单名'); return; }
+  const url = FAV_API_BASE + encodeURIComponent(name);
+  let res;
+  try {
+    res = await fetch(url);
+  } catch (e) { showToast('拉取失败：网络错误'); return; }
+  if (res.status === 404) { showToast(`没有找到清单「${name}」`); dom.favLoadOverlay.classList.remove('show'); return; }
+  if (!res.ok) { showToast('拉取失败：' + res.status); return; }
+  const data = await res.json();
+  if (!data.songs || typeof data.songs !== 'object') { showToast('清单内容无效'); return; }
+  state.favoritesMap = normalizeFavoriteMap(data.songs);
+  await saveFavorites();
+  hydrateFavoriteList();
+  applySongFilters();
+  setFavCurrentName(name);
+  state.favCurrentNameValue = name;
+  updateFavCurrentNameUi();
+  closeFavLoad();
+  showToast(`已导入清单「${name}」，共 ${state.favoriteList.length} 首`);
+}
+
+// 刷新清单：按当前清单名从服务器拉取
+async function refreshFavoritesFromServer() {
+  const name = (state.favCurrentNameValue || '').trim();
+  if (!name) { showToast('还没有当前清单名，先上传或导入一个存档'); return; }
+  const url = FAV_API_BASE + encodeURIComponent(name);
+  let res;
+  try {
+    res = await fetch(url);
+  } catch (e) { showToast('刷新失败：网络错误'); return; }
+  if (res.status === 404) { showToast(`服务器没有清单「${name}」`); return; }
+  if (!res.ok) { showToast('刷新失败：' + res.status); return; }
+  const data = await res.json();
+  if (!data.songs || typeof data.songs !== 'object') { showToast('清单内容无效'); return; }
+  state.favoritesMap = normalizeFavoriteMap(data.songs);
+  await saveFavorites();
+  hydrateFavoriteList();
+  applySongFilters();
+  showToast(`已刷新清单「${name}」`);
 }
 
 // ---- 中意存档 文件导入/导出（与歌单网站导出格式一致：歌名\t歌手\t次数\t最近演唱日期） ----
@@ -2312,8 +2420,10 @@ function bindDom() {
     'languageChips','tagChips','langAllBtn','langNoneBtn','tagAllBtn','tagNoneBtn','countPresetRow','daysPresetRow','resetFiltersBtn','actionPanel','selectedSongName','selectedSongCutWrap',
     'copySongBtn','copyOrderTextBtn','clearSelectionBtn','historyYearSelect','historyMonthSelect',
     'historyDaySelect','historyPrevBtn','historyNextBtn','historyPageInfo','historyMetaText','historyListWrap','favoritesRefreshBtn',
-    'favoritesToggleImportBtn','favoritesImportCard','favoritesImportInput','favoritesImportApplyBtn','favoritesImportCancelBtn','favoritesImportFileBtn','favoritesImportFileInput',
-    'favoritesExportBtn','favoritesExportFileBtn','favoritesClearBtn','favoritesMetaText','favoritesCountText','favoritesListWrap',
+    'favoritesUploadBtn','favoritesUploadOverlay','favUploadName','favUploadCancel','favUploadOk',
+    'favoritesLoadBtn','favoritesLoadOverlay','favLoadName','favLoadCancel','favLoadOk',
+    'favCurrentName',
+    'favoritesClearBtn','favoritesMetaText','favoritesCountText','favoritesListWrap',
     'detailOverlay','detailModal','detailTitle','detailSub','detailBody','detailCloseBtn','toast','backTopBtn',
     'playerBar','playerPrevBtn','playerToggleBtn','playerNextBtn','playerSongName','playerSongArtist','playerSeek','playerTimeCur','playerTimeDur','playerShuffleBtn','playerVolume','playAllBtn','playShuffleBtn',
     'playerTimerWrap','playerTimerBtn','playerTimerPopover','playerTimerPopTitle','timerValH','timerValM','timerCancelBtn','timerStartBtn',
@@ -2749,16 +2859,13 @@ function bindEvents() {
     showToast(`已复制歌名：${entry.song_name}`);
   });
 
-  dom.favoritesRefreshBtn.addEventListener('click', renderFavorites);
-  dom.favoritesToggleImportBtn.addEventListener('click', () => {
-    setFavoritesImportVisible(!state.favoritesImportVisible);
-  });
-  dom.favoritesImportCancelBtn.addEventListener('click', () => setFavoritesImportVisible(false));
-  dom.favoritesImportApplyBtn.addEventListener('click', () => importFavoritesFromText());
-  dom.favoritesImportFileBtn.addEventListener('click', () => dom.favoritesImportFileInput.click());
-  dom.favoritesImportFileInput.addEventListener('change', handleFavoriteFileImport);
-  dom.favoritesExportBtn.addEventListener('click', exportFavorites);
-  dom.favoritesExportFileBtn.addEventListener('click', exportFavoritesToFile);
+  dom.favoritesRefreshBtn.addEventListener('click', refreshFavoritesFromServer);
+  dom.favoritesUploadBtn.addEventListener('click', openFavUpload);
+  dom.favoritesUploadCancel.addEventListener('click', closeFavUpload);
+  dom.favoritesUploadOk.addEventListener('click', submitFavUpload);
+  dom.favoritesLoadBtn.addEventListener('click', openFavLoad);
+  dom.favoritesLoadCancel.addEventListener('click', closeFavLoad);
+  dom.favoritesLoadOk.addEventListener('click', submitFavLoad);
   dom.favoritesClearBtn.addEventListener('click', clearFavorites);
 
   dom.favoritesListWrap.addEventListener('click', async event => {

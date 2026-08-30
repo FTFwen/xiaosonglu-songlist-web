@@ -1016,6 +1016,20 @@
       font-size: 13px;
       color: var(--text);
     }
+    /* 中意清单：标题 + 当前清单名 */
+    .fav-toolbar-head {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 10px;
+    }
+    .fav-toolbar-head h3 { margin: 0; }
+    .fav-current-name {
+      font-size: 12px;
+      color: var(--text-soft);
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
 
     .overlay {
       display: none;
@@ -2188,28 +2202,17 @@
       <section class="tab-panel" id="tab-favorites">
         <div class="section-scroll">
           <div class="card favorites-toolbar">
-            <h3>中意清单</h3>
+            <div class="fav-toolbar-head">
+              <h3>中意清单</h3>
+              <span class="fav-current-name" id="favCurrentName">当前清单：未保存</span>
+            </div>
             <div class="favorites-actions">
               <button class="tool-btn" id="favoritesRefreshBtn">刷新清单</button>
-              <button class="tool-btn" id="favoritesToggleImportBtn">导入清单</button>
-              <button class="tool-btn" id="favoritesImportFileBtn" title="选择导出的 txt 存档文件导入"><svg class="icon" aria-hidden="true"><use href="#icon-upload"></use></svg> 导入存档</button>
-              <button class="tool-btn primary" id="favoritesExportBtn">导出</button>
-              <button class="tool-btn primary" id="favoritesExportFileBtn" title="按网站存档格式导出 txt 文件"><svg class="icon" aria-hidden="true"><use href="#icon-download"></use></svg> 导出存档</button>
+              <button class="tool-btn primary" id="favoritesUploadBtn"><svg class="icon" aria-hidden="true"><use href="#icon-upload"></use></svg> 上传存档</button>
+              <button class="tool-btn" id="favoritesLoadBtn"><svg class="icon" aria-hidden="true"><use href="#icon-download"></use></svg> 导入存档</button>
               <button class="tool-btn danger" id="favoritesClearBtn">清空</button>
             </div>
-            <input type="file" id="favoritesImportFileInput" accept=".txt,text/plain" style="display:none">
             <div class="meta-text" id="favoritesMetaText">还没有收藏歌曲。</div>
-            <div class="fav-import-card" id="favoritesImportCard">
-              <div class="fav-import-title">导入中意清单</div>
-              <div class="fav-import-help">
-                一行一首歌就可以啦。支持填写：<b>歌名</b>、<b>歌名\t歌手</b>，或者直接粘贴导出的 TSV 文本。
-              </div>
-              <textarea class="fav-import-textarea" id="favoritesImportInput" placeholder="例如：&#10;Again&#10;青花瓷&#9;周杰伦&#10;歌名&#9;歌手&#9;次数&#9;最近演唱"></textarea>
-              <div class="fav-import-actions">
-                <button class="tool-btn primary" id="favoritesImportApplyBtn">开始导入</button>
-                <button class="tool-btn" id="favoritesImportCancelBtn">收起</button>
-              </div>
-            </div>
           </div>
           <div class="fav-shell">
             <div class="fav-list-hd">
@@ -2328,6 +2331,28 @@
       <div class="dialog-actions">
         <button class="tool-btn" id="songlistDialogCancel">取消</button>
         <button class="tool-btn primary" id="songlistDialogOk">创建</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="dialog-overlay" id="favUploadOverlay">
+    <div class="dialog">
+      <div class="dialog-title">上传中意清单存档</div>
+      <input class="dialog-input" id="favUploadName" placeholder="输入清单名…" maxlength="30">
+      <div class="dialog-actions">
+        <button class="tool-btn" id="favUploadCancel">取消</button>
+        <button class="tool-btn primary" id="favUploadOk">上传</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="dialog-overlay" id="favLoadOverlay">
+    <div class="dialog">
+      <div class="dialog-title">导入中意清单存档</div>
+      <input class="dialog-input" id="favLoadName" placeholder="输入清单名…" maxlength="30">
+      <div class="dialog-actions">
+        <button class="tool-btn" id="favLoadCancel">取消</button>
+        <button class="tool-btn primary" id="favLoadOk">导入</button>
       </div>
     </div>
   </div>
