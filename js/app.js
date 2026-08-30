@@ -2283,6 +2283,7 @@ function bindDom() {
     'favoritesUploadBtn','favUploadOverlay','favUploadName','favUploadCancel','favUploadOk',
     'favoritesLoadBtn','favLoadOverlay','favLoadName','favLoadCancel','favLoadOk',
     'favCurrentName',
+    'thanksBtn','thanksOverlay','thanksCloseBtn',
     'favoritesClearBtn','favoritesMetaText','favoritesCountText','favoritesListWrap',
     'detailOverlay','detailModal','detailTitle','detailSub','detailBody','detailCloseBtn','toast','backTopBtn',
     'playerBar','playerPrevBtn','playerToggleBtn','playerNextBtn','playerSongName','playerSongArtist','playerSeek','playerTimeCur','playerTimeDur','playerShuffleBtn','playerVolume','playAllBtn','playShuffleBtn',
@@ -2727,6 +2728,9 @@ function bindEvents() {
   dom.favLoadCancel.addEventListener('click', closeFavLoad);
   dom.favLoadOk.addEventListener('click', submitFavLoad);
   dom.favoritesClearBtn.addEventListener('click', clearFavorites);
+  dom.thanksBtn.addEventListener('click', () => dom.thanksOverlay.classList.add('show'));
+  dom.thanksCloseBtn.addEventListener('click', () => dom.thanksOverlay.classList.remove('show'));
+  dom.thanksOverlay.addEventListener('click', event => { if (event.target === dom.thanksOverlay) dom.thanksOverlay.classList.remove('show'); });
 
   dom.favoritesListWrap.addEventListener('click', async event => {
     const removeBtn = event.target.closest('[data-favorite-remove-key]');

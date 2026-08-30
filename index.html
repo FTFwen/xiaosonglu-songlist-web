@@ -256,10 +256,29 @@
 
     .header-actions {
       display: flex;
+      flex-wrap: wrap;
       align-items: center;
+      align-content: flex-end;
+      justify-content: flex-end;
       gap: 8px;
       flex-shrink: 0;
+      max-width: 130px;
     }
+    /* 致谢名单按钮（带文字，占一行在下方） */
+    .thanks-btn {
+      flex-basis: 100%;
+      border: 1px solid rgba(255,255,255,0.4);
+      background: rgba(255,255,255,0.14);
+      color: #fff;
+      border-radius: 999px;
+      padding: 6px 12px;
+      font-size: 12px;
+      cursor: pointer;
+      transition: all 0.18s ease;
+      text-align: center;
+      white-space: nowrap;
+    }
+    .thanks-btn:hover { background: rgba(255,255,255,0.28); }
 
     /* 24 点入口：图标本身就是按钮，无胶囊底 */
     .header-extra {
@@ -1736,6 +1755,8 @@
       gap: 12px;
     }
     .dialog-title { font-size: 15px; font-weight: 700; color: var(--text); }
+    .dialog-body { font-size: 13px; color: var(--text); line-height: 1.7; max-height: 60vh; overflow-y: auto; }
+    .dialog-body p { margin: 0 0 6px; }
     .dialog-input {
       border: 1.5px solid var(--line-strong);
       border-radius: 10px;
@@ -2088,6 +2109,7 @@
         <div class="header-actions">
           <button class="ghost-btn" id="refreshBtn" title="刷新歌单数据"><svg class="icon" aria-hidden="true"><use href="#icon-reload"></use></svg></button>
           <a class="ghost-btn" href="assets/downloads/songlist-assistant-v1.5.0.zip" download="直播间歌单助手-v1.5.0.zip" title="下载直播间歌单助手插件安装包（.zip）"><svg class="icon" aria-hidden="true"><use href="#icon-download"></use></svg></a>
+          <button class="thanks-btn" id="thanksBtn">致谢名单</button>
         </div>
       </div>
       <div class="status-row">
@@ -2363,6 +2385,21 @@
       <div class="dialog-actions">
         <button class="tool-btn" id="favLoadCancel">取消</button>
         <button class="tool-btn primary" id="favLoadOk">导入</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="dialog-overlay" id="thanksOverlay">
+    <div class="dialog">
+      <div class="dialog-title">致谢名单</div>
+      <div class="dialog-body">
+        <p>感谢以下朋友的大力支持：</p>
+        <p>奶糖小家家、梦晓云提供的背景图</p>
+        <p>各位枼绿素提供的功能思路</p>
+        <p>小松绿提供的精彩献唱（）</p>
+      </div>
+      <div class="dialog-actions">
+        <button class="tool-btn" id="thanksCloseBtn">关闭</button>
       </div>
     </div>
   </div>
