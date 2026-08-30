@@ -1945,11 +1945,8 @@
 
     /* ===== 主题色半透明毛玻璃（覆盖白底模块） ===== */
     html, body {
-      background: linear-gradient(160deg, #f2f5e2 0%, #e7eecd 45%, #dbe5b8 100%), url('assets/bg-person.png');
-      background-size: cover, auto 100vh;
-      background-position: center, right 200px bottom;
-      background-repeat: no-repeat, no-repeat;
-      background-attachment: fixed, fixed;
+      background: url('assets/bg-person.png') right 200px bottom/auto 100vh no-repeat fixed, linear-gradient(160deg, #f2f5e2 0%, #e7eecd 45%, #dbe5b8 100%);
+      background-color: #f2f5e2;
     }
     .app { background: transparent; box-shadow: none; position: relative; z-index: 1; }
     /* 通用毛玻璃卡片 */
