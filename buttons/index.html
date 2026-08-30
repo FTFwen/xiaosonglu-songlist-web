@@ -54,10 +54,11 @@
       font-family: 'Microsoft YaHei', 'Segoe UI', sans-serif;
       min-height: 100vh;
     }
-    /* 手机端：去掉背景人物（只保留渐变） */
+    /* 手机端：新人物背景(白底已抠掉保留签名)，半透明渐变换冲淡 */
     @media (max-width: 768px) {
       html, body {
-        background: linear-gradient(160deg, #f2f5e2 0%, #e7eecd 45%, #dbe5b8 100%);
+        background: url('../assets/bg-mobile-person.png') right bottom/auto 100vh no-repeat fixed, linear-gradient(160deg, rgba(242,245,226,0.7) 0%, rgba(231,238,205,0.7) 45%, rgba(219,229,184,0.7) 100%);
+        background-color: #f2f5e2;
       }
     }
     .app { position: relative; z-index: 1; }
