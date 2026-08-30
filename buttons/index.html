@@ -76,18 +76,20 @@
     .site-tab {
       display: inline-flex;
       align-items: center;
-      gap: 7px;
-      padding: 10px 18px 10px 14px;
+      gap: 9px;
+      padding: 13px 22px 13px 16px;
       color: var(--text);
-      font-size: 13px;
+      font-size: 15px;
       font-weight: 600;
       text-decoration: none;
       transition: all 0.18s ease;
       background: rgba(255,255,255,0.58);
       /* 书签造型：右侧尖角凸起（像笔记本页签） */
-      clip-path: polygon(0 0, calc(100% - 14px) 0, 100% 50%, calc(100% - 14px) 100%, 0 100%);
+      clip-path: polygon(0 0, calc(100% - 16px) 0, 100% 50%, calc(100% - 16px) 100%, 0 100%);
       border: none;
     }
+    .site-tab img { height: 20px; width: auto; display: block; flex-shrink: 0; }
+    .site-tab svg.icon { width: 18px; height: 18px; display: block; flex-shrink: 0; }
     .site-tab:hover { background: rgba(255,255,255,0.78); color: var(--text); }
     .site-tab.active {
       background: var(--primary-dark);
@@ -675,7 +677,7 @@
   <div class="site-tabs">
     <a class="site-tab" href="../"><svg class="icon" aria-hidden="true"><use href="#icon-sound"></use></svg> 歌单</a>
     <a class="site-tab active" href="./"><svg class="icon" aria-hidden="true"><use href="#icon-random-shuffle"></use></svg> 按钮墙</a>
-    <a class="site-tab" href="../24xsl/"><svg class="icon" aria-hidden="true"><use href="#icon-grid"></use></svg> 24点</a>
+    <a class="site-tab" href="../24xsl/"><img src="../assets/24xsl-title.webp" alt="24点"> 24点</a>
   </div>
 
   <div class="app">
