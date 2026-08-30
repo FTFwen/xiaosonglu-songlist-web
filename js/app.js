@@ -1708,13 +1708,6 @@ function findSongForImportedLine(name, artist = '') {
   }) || null;
 }
 
-function setFavoritesImportVisible(visible) {
-  state.favoritesImportVisible = !!visible;
-  dom.favoritesImportCard.classList.toggle('show', state.favoritesImportVisible);
-  dom.favoritesToggleImportBtn.classList.toggle('active', state.favoritesImportVisible);
-  dom.favoritesToggleImportBtn.textContent = state.favoritesImportVisible ? '收起导入' : '导入清单';
-}
-
 function renderFavorites() {
   hydrateFavoriteList();
   // 只显示当前歌单里存在的歌（主播唱过的）
@@ -1762,84 +1755,6 @@ function renderFavorites() {
       </div>
     `;
   }).join('');
-}
-
-async function exportFavorites() {
-  if (!state.favoriteList.length) {
-    showToast('中意清单还是空的');
-    return;
-  }
-  const lines = ['歌名\t歌手\t次数\t最近演唱\t状态'];
-  state.favoriteList.forEach(song => {
-    lines.push([
-      song.display_song_name || song.song_name || '',
-      song.artist || '',
-      song.sing_count || 0,
-      song.last_sing_at || '',
-      getVisibleStatusText(song.status_labels)
-    ].join('\t'));
-  });
-  await copyToClipboard(lines.join('\n'));
-  showToast('已复制中意清单（TSV）');
-}
-
-async function importFavoritesFromText(rawText) {
-  const raw = rawText !== undefined ? String(rawText || '') : String(dom.favoritesImportInput.value || '');
-  const lines = raw.split(/\r?\n/).map(line => line.trim()).filter(Boolean);
-  if (!lines.length) {
-    showToast('先贴一份清单内容嘛');
-    return;
-  }
-
-  let matched = 0;
-  let manual = 0;
-  let ignored = 0;
-
-  lines.forEach(line => {
-    // 注意：不能 filter(Boolean) 删空列——歌手为空时列会错位（次数被误当作歌手）
-    const parts = line.split('\t').map(item => item.trim());
-    const first = parts[0] || '';
-    if (!first || first === '歌名' || /^song\s*name$/i.test(first)) {
-      ignored += 1;
-      return;
-    }
-    const artist = parts[1] || '';
-    const found = findSongForImportedLine(first, artist);
-    if (found) {
-      state.favoritesMap[getFavoriteKey(found)] = favoriteSnapshotFromSong(found);
-      matched += 1;
-      return;
-    }
-    const key = getFavoriteImportKey(first, artist);
-    state.favoritesMap[key] = {
-      key,
-      song_id: null,
-      row_key: first,
-      song_name: first,
-      display_song_name: first,
-      artist,
-      artist_search: '',
-      feat_artist: '',
-      sing_count: 0,
-      last_sing_at: '',
-      status_labels: '',
-      language: '',
-      display_version: '',
-      tone: '',
-      remark: '',
-      type: '',
-      identification: '',
-      importedManual: true
-    };
-    manual += 1;
-  });
-
-  await saveFavorites();
-  hydrateFavoriteList();
-  applySongFilters();
-  setFavoritesImportVisible(false);
-  dom.favoritesImportInput.value = '';
-  showToast(`导入完成：匹配 ${matched} 首，手动保留 ${manual} 首${ignored ? `，忽略 ${ignored} 行` : ''}`);
 }
 
 async function clearFavorites() {
@@ -1945,59 +1860,6 @@ async function refreshFavoritesFromServer() {
   hydrateFavoriteList();
   applySongFilters();
   showToast(`已刷新清单「${name}」`);
-}
-
-// ---- 中意存档 文件导入/导出（与歌单网站导出格式一致：歌名\t歌手\t次数\t最近演唱日期） ----
-
-function getArchiveExportFileName() {
-  const d = new Date();
-  const pad = n => String(n).padStart(2, '0');
-  return `小松绿歌单 ${String(d.getFullYear()).slice(-2)}.${pad(d.getMonth() + 1)}.${pad(d.getDate())}.txt`;
-}
-
-async function exportFavoritesToFile() {
-  if (!state.favoriteList.length) {
-    showToast('中意清单还是空的');
-    return;
-  }
-  const lines = ['歌名\t歌手\t次数\t最近演唱日期'];
-  state.favoriteList.forEach(song => {
-    let artist = song.artist || '';
-    if (song.feat_artist) artist = artist ? `${artist} feat. ${song.feat_artist}` : `feat. ${song.feat_artist}`;
-    lines.push([
-      song.display_song_name || song.song_name || '',
-      artist,
-      song.sing_count || 0,
-      song.last_sing_at || ''
-    ].join('\t'));
-  });
-  const text = '\uFEFF' + lines.join('\r\n'); // BOM 便于 Excel 打开
-  const fileName = getArchiveExportFileName();
-
-  const blob = new Blob([text], { type: 'text/plain;charset=utf-8' });
-  const url = URL.createObjectURL(blob);
-  const a = document.createElement('a');
-  a.href = url;
-  a.download = fileName;
-  document.body.appendChild(a);
-  a.click();
-  document.body.removeChild(a);
-  URL.revokeObjectURL(url);
-  showToast(`已导出存档：${fileName}`);
-}
-
-function handleFavoriteFileImport() {
-  const file = dom.favoritesImportFileInput.files && dom.favoritesImportFileInput.files[0];
-  dom.favoritesImportFileInput.value = ''; // 允许重复选择同一文件
-  if (!file) return;
-  const reader = new FileReader();
-  reader.onload = () => {
-    importFavoritesFromText(String(reader.result || '')).then(() => {
-      showToast(`已从「${file.name}」导入中意清单`);
-    });
-  };
-  reader.onerror = () => showToast('读取存档文件失败');
-  reader.readAsText(file, 'utf-8');
 }
 
 // 语言 全选/全不选 = 不过滤（全选只是视觉上全勾选）
@@ -2381,8 +2243,6 @@ async function initRoom(forceRefreshSongs = false) {
   await saveGlobalSettings();
 
   renderRoomContextSummary();
-  setFavoritesImportVisible(false);
-  dom.favoritesImportInput.value = '';
   state.allSongs = [];
   state.filteredSongs = [];
   state.favoritesMap = {};
