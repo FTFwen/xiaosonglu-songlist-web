@@ -129,7 +129,7 @@
       position: fixed;
       left: 0;
       top: 76px;
-      z-index: 300;
+      z-index: 9999;
       display: flex;
       flex-direction: column;
       gap: 20px;
@@ -165,8 +165,9 @@
     .site-tab svg.icon { width: 18px; height: 18px; display: block; flex-shrink: 0; }
     .site-tab:hover::before { background: rgba(255,255,255,0.78); }
     .site-tab:hover { color: var(--text); }
-    .site-tab.active { color: #fff; font-weight: 700; text-shadow: 0 1px 2px rgba(0,0,0,0.25); }
-    .site-tab.active::before { background: var(--primary-dark); }
+    .site-tab { font-family: 'Microsoft YaHei', 'PingFang SC', sans-serif; }
+    .site-tab.active { color: #fff; font-weight: 800; text-shadow: 0 1px 2px rgba(0,0,0,0.45), 0 0 5px rgba(0,0,0,0.25); -webkit-text-stroke: 0.5px rgba(0,0,0,0.25); }
+    .site-tab.active::before { background: #4a5830; }
 
     .title-wrap {
       display: flex;
