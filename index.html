@@ -139,20 +139,20 @@
       align-items: center;
       gap: 7px;
       padding: 10px 18px 10px 14px;
-      color: #fff;
+      color: var(--text);
       font-size: 13px;
       font-weight: 600;
       text-decoration: none;
       transition: all 0.18s ease;
-      background: rgba(122, 136, 70, 0.62);
+      background: rgba(255,255,255,0.58);
       /* 书签造型：右侧尖角凸起（像笔记本页签） */
       clip-path: polygon(0 0, calc(100% - 14px) 0, 100% 50%, calc(100% - 14px) 100%, 0 100%);
       border: none;
     }
-    .site-tab:hover { background: rgba(122, 136, 70, 0.78); color: #fff; }
+    .site-tab:hover { background: rgba(255,255,255,0.78); color: var(--text); }
     .site-tab.active {
-      background: var(--primary-soft);
-      color: var(--primary-dark);
+      background: var(--primary-dark);
+      color: #fff;
       font-weight: 700;
     }
 
