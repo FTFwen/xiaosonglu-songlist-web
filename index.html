@@ -124,32 +124,36 @@
       align-items: center;
     }
 
-    /* 顶部页签：主站 / 按钮墙 切换（参考样式：圆角矩形+图标+文字，选中绿底） */
+    /* 左侧页签：主站 / 按钮墙 切换（笔记本书签样式，竖排贴最左边缘） */
     .site-tabs {
+      position: fixed;
+      left: 0;
+      top: 20px;
+      z-index: 300;
       display: flex;
+      flex-direction: column;
       gap: 8px;
-      margin-bottom: 10px;
-      flex-wrap: wrap;
     }
     .site-tab {
       display: inline-flex;
       align-items: center;
       gap: 7px;
-      padding: 7px 14px;
-      border-radius: 12px;
-      border: 1px solid rgba(255,255,255,0.4);
-      background: rgba(255,255,255,0.14);
+      padding: 10px 18px 10px 14px;
       color: #fff;
       font-size: 13px;
       font-weight: 600;
       text-decoration: none;
       transition: all 0.18s ease;
+      background: rgba(122, 136, 70, 0.62);
+      /* 书签造型：右侧尖角凸起（像笔记本页签） */
+      clip-path: polygon(0 0, calc(100% - 14px) 0, 100% 50%, calc(100% - 14px) 100%, 0 100%);
+      border: none;
     }
-    .site-tab:hover { background: rgba(255,255,255,0.26); }
+    .site-tab:hover { background: rgba(122, 136, 70, 0.78); color: #fff; }
     .site-tab.active {
       background: var(--primary-soft);
-      border-color: var(--primary);
       color: var(--primary-dark);
+      font-weight: 700;
     }
 
     .title-wrap {
@@ -1916,12 +1920,12 @@
     <symbol id="icon-upload" viewBox="64 64 896 896"><path d="M400 317.7h73.9V656c0 4.4 3.6 8 8 8h60c4.4 0 8-3.6 8-8V317.7H624c6.7 0 10.4-7.7 6.3-12.9L518.3 163a8 8 0 00-12.6 0l-112 141.7c-4.1 5.3-.4 13 6.3 13zM878 626h-60c-4.4 0-8 3.6-8 8v154H214V634c0-4.4-3.6-8-8-8h-60c-4.4 0-8 3.6-8 8v198c0 17.7 14.3 32 32 32h684c17.7 0 32-14.3 32-32V634c0-4.4-3.6-8-8-8z"/></symbol>
     <symbol id="icon-check" viewBox="64 64 896 896"><path d="M912 190h-69.9c-9.8 0-19.1 4.5-25.1 12.2L404.7 724.5 207 474a32 32 0 00-25.1-12.2H112c-6.7 0-10.4 7.7-6.3 12.9l273.9 347c12.8 16.2 37.4 16.2 50.3 0l488.4-618.9c4.1-5.1.4-12.8-6.3-12.8z"/></symbol>
   </svg>
+  <div class="site-tabs">
+    <a class="site-tab active" href="./"><svg class="icon" aria-hidden="true"><use href="#icon-sound"></use></svg> 歌单</a>
+    <a class="site-tab" href="buttons/"><svg class="icon" aria-hidden="true"><use href="#icon-random-shuffle"></use></svg> 按钮墙</a>
+  </div>
   <div class="app">
     <header class="header">
-      <div class="site-tabs">
-        <a class="site-tab active" href="./"><svg class="icon" aria-hidden="true"><use href="#icon-sound"></use></svg> 歌单</a>
-        <a class="site-tab" href="buttons/"><svg class="icon" aria-hidden="true"><use href="#icon-random-shuffle"></use></svg> 按钮墙</a>
-      </div>
       <div class="header-top">
         <div class="title-wrap">
           <div class="title-icon"><img src="assets/xiaosonglu-logo.png?v=2" alt="小松绿" class="title-logo"></div>
