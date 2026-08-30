@@ -48,23 +48,10 @@
     html, body {
       margin: 0;
       padding: 0;
-      background: linear-gradient(160deg, rgba(242,245,226,0.62) 0%, rgba(231,238,205,0.62) 45%, rgba(219,229,184,0.62) 100%);
-      background-attachment: fixed;
+      background: url('../assets/bg-full.png') center/cover no-repeat fixed;
       color: var(--text);
       font-family: 'Microsoft YaHei', 'Segoe UI', sans-serif;
       min-height: 100vh;
-    }
-    /* 园艺少女背景：固定贴视口最右、放大、只显示上3/4 */
-    body::after {
-      content: '';
-      position: fixed;
-      top: 0;
-      right: 0;
-      width: auto;
-      height: 100vh;
-      background: url('../assets/bg-garden.png') right top/auto 100vh no-repeat;
-      pointer-events: none;
-      z-index: 0;
     }
     .app { position: relative; z-index: 1; }
 
