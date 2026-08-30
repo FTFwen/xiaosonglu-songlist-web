@@ -54,6 +54,12 @@
       font-family: 'Microsoft YaHei', 'Segoe UI', sans-serif;
       min-height: 100vh;
     }
+    /* 手机端：去掉背景人物（只保留渐变） */
+    @media (max-width: 768px) {
+      html, body {
+        background: linear-gradient(160deg, #f2f5e2 0%, #e7eecd 45%, #dbe5b8 100%);
+      }
+    }
     .app { position: relative; z-index: 1; }
 
     /* 居中容器：与主站一致（1180px 居中、带阴影、两侧留空） */
