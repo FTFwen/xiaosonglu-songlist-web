@@ -206,13 +206,7 @@
     @media (max-width: 768px) {
       .site-tabs { display: none; }
       .header-nav { display: flex; }
-      .header-actions {
-        flex-direction: column;
-        align-items: stretch;
-        gap: 6px;
-        margin-left: auto;
-        order: 3;
-      }
+      .header-actions { display: none; }
     }
 
     .title-wrap {
@@ -1180,7 +1174,7 @@
       .filter-grid { grid-template-columns: 1fr; }
       /* 手机端：24点与标题同一水平线（右上角），刷新/下载放在标题正下方（左对齐） */
       .header-extra { order: 2; margin-left: auto; }
-      .header-actions { order: 3; flex-basis: 100%; justify-content: flex-start; }
+      .header-actions { order: 3; flex-basis: 100%; justify-content: flex-start; display: none; }
       /* 手机端标题稍微缩小，避免与右侧 24 点按钮拥挤 */
       .title-icon { width: 42px; height: 42px; }
       .title-main h1 { font-size: 28px; }
