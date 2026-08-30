@@ -124,6 +124,34 @@
       align-items: center;
     }
 
+    /* 顶部页签：主站 / 按钮墙 切换（参考样式：圆角矩形+图标+文字，选中绿底） */
+    .site-tabs {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 10px;
+      flex-wrap: wrap;
+    }
+    .site-tab {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 7px 14px;
+      border-radius: 12px;
+      border: 1px solid rgba(255,255,255,0.4);
+      background: rgba(255,255,255,0.14);
+      color: #fff;
+      font-size: 13px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.18s ease;
+    }
+    .site-tab:hover { background: rgba(255,255,255,0.26); }
+    .site-tab.active {
+      background: var(--primary-soft);
+      border-color: var(--primary);
+      color: var(--primary-dark);
+    }
+
     .title-wrap {
       display: flex;
       gap: 12px;
@@ -1890,6 +1918,10 @@
   </svg>
   <div class="app">
     <header class="header">
+      <div class="site-tabs">
+        <a class="site-tab active" href="./"><svg class="icon" aria-hidden="true"><use href="#icon-sound"></use></svg> 歌单</a>
+        <a class="site-tab" href="buttons/"><svg class="icon" aria-hidden="true"><use href="#icon-random-shuffle"></use></svg> 按钮墙</a>
+      </div>
       <div class="header-top">
         <div class="title-wrap">
           <div class="title-icon"><img src="assets/xiaosonglu-logo.png?v=2" alt="小松绿" class="title-logo"></div>
