@@ -194,10 +194,25 @@
     }
     .header-nav a:hover { background: rgba(255,255,255,0.26); }
     .header-nav a.active { background: var(--primary-soft); color: var(--primary-dark); border-color: var(--primary); }
-    .header-nav a img { height: 18px; width: auto; }
+    .header-nav a.icon-only {
+      border: none;
+      background: transparent;
+      padding: 0;
+      justify-content: center;
+    }
+    .header-nav a.icon-only:hover { background: transparent; }
+    .header-nav a img { height: 26px; width: auto; }
+    /* 手机端：隐藏左侧书签、竖排显示导航 + 刷新/下载 */
     @media (max-width: 768px) {
       .site-tabs { display: none; }
       .header-nav { display: flex; }
+      .header-actions {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 6px;
+        margin-left: auto;
+        order: 3;
+      }
     }
 
     .title-wrap {
@@ -1985,7 +2000,7 @@
         <div class="header-nav">
           <a class="active" href="./"><svg class="icon" aria-hidden="true"><use href="#icon-music"></use></svg> 歌单</a>
           <a href="buttons/"><svg class="icon" aria-hidden="true"><use href="#icon-playlist"></use></svg> 按钮墙</a>
-          <a href="24xsl/"><img src="assets/24xsl-title.webp" alt="24点"></a>
+          <a class="icon-only" href="24xsl/" title="24点"><img src="assets/24xsl-title.webp" alt="24点"></a>
         </div>
         <div class="header-actions">
           <button class="ghost-btn" id="refreshBtn" title="刷新歌单数据"><svg class="icon" aria-hidden="true"><use href="#icon-reload"></use></svg></button>
