@@ -1,5 +1,5 @@
 // 本文件由 E:\tool\plugin 本地数据生成（window.XSL_DATA），供网页直接打开（file://）时使用。
-// 生成时间：2026-08-29 21:55:05
+// 生成时间：2026-08-31 17:11:20
 // 数据源：E:\tool\plugin\data\（song_catalog / history_index / song_details）
 window.XSL_DATA = {
   song_catalog: {
@@ -46,7 +46,7 @@ window.XSL_DATA = {
       "search_name": "",
       "cut_link": "https://www.bilibili.com/video/BV1rv8V6DExk/",
       "sing_count": 2,
-      "status_labels": "歌切合集补录、待后续回放时间定位、歌切章节验证、自动识别待人工复核",
+      "status_labels": "歌切合集补录、待后续回放时间定位、自动识别待人工复核",
       "last_sing_at": "2026-08-18",
       "row_key": "蝴蝶"
     },
@@ -88,7 +88,7 @@ window.XSL_DATA = {
       "search_name": "",
       "cut_link": "https://www.bilibili.com/video/BV1ZT4k6QEpC/",
       "sing_count": 2,
-      "status_labels": "语音频道合唱、自动识别待人工复核、歌回、歌切确认",
+      "status_labels": "自动识别待人工复核、歌回",
       "last_sing_at": "2026-08-29",
       "row_key": "绿色"
     },
@@ -193,7 +193,7 @@ window.XSL_DATA = {
       "search_name": "",
       "cut_link": "https://www.bilibili.com/video/BV1JX4y6fEpy/",
       "sing_count": 1,
-      "status_labels": "歌回、歌切确认",
+      "status_labels": "歌回",
       "last_sing_at": "2026-08-29",
       "row_key": "阿拉斯加海湾"
     },
@@ -298,7 +298,7 @@ window.XSL_DATA = {
       "search_name": "",
       "cut_link": "https://www.bilibili.com/video/BV1gm4C65Ey6/?p=5",
       "sing_count": 1,
-      "status_labels": "歌回、歌切章节验证",
+      "status_labels": "歌回",
       "last_sing_at": "2026-08-29",
       "row_key": "初恋日記"
     },
@@ -319,7 +319,7 @@ window.XSL_DATA = {
       "search_name": "",
       "cut_link": "https://www.bilibili.com/video/BV11F8h6BE4d/",
       "sing_count": 1,
-      "status_labels": "清唱、自动识别待人工复核",
+      "status_labels": "自动识别待人工复核",
       "last_sing_at": "2026-08-23",
       "row_key": "吹灭小山河"
     },
@@ -487,7 +487,7 @@ window.XSL_DATA = {
       "search_name": "",
       "cut_link": "https://www.bilibili.com/video/BV1yw8h6TEBf/",
       "sing_count": 1,
-      "status_labels": "清唱、自动识别待人工复核",
+      "status_labels": "自动识别待人工复核",
       "last_sing_at": "2026-08-23",
       "row_key": "多情岸"
     },
@@ -592,7 +592,7 @@ window.XSL_DATA = {
       "search_name": "",
       "cut_link": "https://www.bilibili.com/video/BV1m9886kEMZ/?p=4",
       "sing_count": 1,
-      "status_labels": "清唱、歌切章节验证、自动识别待人工复核",
+      "status_labels": "自动识别待人工复核",
       "last_sing_at": "2026-08-23",
       "row_key": "光"
     },
@@ -823,7 +823,7 @@ window.XSL_DATA = {
       "search_name": "",
       "cut_link": "https://www.bilibili.com/video/BV1i8gV6xExv/",
       "sing_count": 1,
-      "status_labels": "歌切章节验证、自动识别待人工复核",
+      "status_labels": "自动识别待人工复核",
       "last_sing_at": "2026-08-11",
       "row_key": "炼金少女日志"
     },
@@ -865,7 +865,7 @@ window.XSL_DATA = {
       "search_name": "",
       "cut_link": "https://www.bilibili.com/video/BV1m9886kEMZ/?p=2",
       "sing_count": 1,
-      "status_labels": "清唱、自动识别待人工复核",
+      "status_labels": "自动识别待人工复核",
       "last_sing_at": "2026-08-23",
       "row_key": "恋苦"
     },
@@ -886,7 +886,7 @@ window.XSL_DATA = {
       "search_name": "",
       "cut_link": "https://www.bilibili.com/video/BV1gm4C65Ey6/?p=6",
       "sing_count": 1,
-      "status_labels": "歌回、自动识别待人工复核、歌切章节验证",
+      "status_labels": "歌回、自动识别待人工复核",
       "last_sing_at": "2026-08-29",
       "row_key": "临川浮梦"
     },
@@ -907,7 +907,7 @@ window.XSL_DATA = {
       "search_name": "",
       "cut_link": "https://www.bilibili.com/video/BV1gm4C65Ey6/?p=15",
       "sing_count": 1,
-      "status_labels": "歌回、自动识别待人工复核、歌切章节验证",
+      "status_labels": "歌回、自动识别待人工复核",
       "last_sing_at": "2026-08-29",
       "row_key": "流光记"
     },
@@ -928,7 +928,7 @@ window.XSL_DATA = {
       "search_name": "",
       "cut_link": "https://www.bilibili.com/video/BV1Td886GEoN/",
       "sing_count": 1,
-      "status_labels": "清唱、自动识别待人工复核",
+      "status_labels": "自动识别待人工复核",
       "last_sing_at": "2026-08-23",
       "row_key": "流霰"
     },
@@ -1075,7 +1075,7 @@ window.XSL_DATA = {
       "search_name": "",
       "cut_link": "https://www.bilibili.com/video/BV1dd4y6oEQb/",
       "sing_count": 1,
-      "status_labels": "歌回、歌切确认",
+      "status_labels": "歌回",
       "last_sing_at": "2026-08-29",
       "row_key": "你究竟有几个好妹妹"
     },
@@ -1096,7 +1096,7 @@ window.XSL_DATA = {
       "search_name": "",
       "cut_link": "https://www.bilibili.com/video/BV1idb16YEjD/?p=12",
       "sing_count": 1,
-      "status_labels": "歌切章节验证、自动识别待人工复核",
+      "status_labels": "自动识别待人工复核",
       "last_sing_at": "2026-08-15",
       "row_key": "女孩你为何踮脚尖"
     },
@@ -1180,7 +1180,7 @@ window.XSL_DATA = {
       "search_name": "",
       "cut_link": "https://www.bilibili.com/video/BV1gm4C65Ey6/?p=11",
       "sing_count": 1,
-      "status_labels": "歌回、自动识别待人工复核、歌切章节验证",
+      "status_labels": "歌回、自动识别待人工复核",
       "last_sing_at": "2026-08-29",
       "row_key": "泼墨漓江"
     },
@@ -1201,7 +1201,7 @@ window.XSL_DATA = {
       "search_name": "",
       "cut_link": "https://www.bilibili.com/video/BV1BN8i66Ej6/",
       "sing_count": 1,
-      "status_labels": "清唱、自动识别待人工复核",
+      "status_labels": "自动识别待人工复核",
       "last_sing_at": "2026-08-23",
       "row_key": "栖凰"
     },
@@ -1222,7 +1222,7 @@ window.XSL_DATA = {
       "search_name": "",
       "cut_link": "https://www.bilibili.com/video/BV1gm4C65Ey6/?p=10",
       "sing_count": 1,
-      "status_labels": "歌回、歌切章节验证",
+      "status_labels": "歌回",
       "last_sing_at": "2026-08-29",
       "row_key": "绮凝盏"
     },
@@ -1453,7 +1453,7 @@ window.XSL_DATA = {
       "search_name": "",
       "cut_link": "https://www.bilibili.com/video/BV1gm4C65Ey6/?p=8",
       "sing_count": 1,
-      "status_labels": "歌回、歌切章节验证",
+      "status_labels": "歌回",
       "last_sing_at": "2026-08-29",
       "row_key": "是风动"
     },
@@ -1558,7 +1558,7 @@ window.XSL_DATA = {
       "search_name": "",
       "cut_link": "https://www.bilibili.com/video/BV1idb16YEjD/?p=6",
       "sing_count": 1,
-      "status_labels": "歌切章节验证、自动识别待人工复核",
+      "status_labels": "自动识别待人工复核",
       "last_sing_at": "2026-08-15",
       "row_key": "四重罪孽"
     },
@@ -1810,7 +1810,7 @@ window.XSL_DATA = {
       "search_name": "",
       "cut_link": "https://www.bilibili.com/video/BV1gm4C65Ey6/?p=9",
       "sing_count": 1,
-      "status_labels": "歌回、歌切章节验证",
+      "status_labels": "歌回",
       "last_sing_at": "2026-08-29",
       "row_key": "下个夏天的烟火"
     },
@@ -1831,7 +1831,7 @@ window.XSL_DATA = {
       "search_name": "",
       "cut_link": "https://www.bilibili.com/video/BV1m9886kEMZ/?p=7",
       "sing_count": 1,
-      "status_labels": "清唱、自动识别待人工复核",
+      "status_labels": "自动识别待人工复核",
       "last_sing_at": "2026-08-23",
       "row_key": "夏恋慕"
     },
@@ -1852,7 +1852,7 @@ window.XSL_DATA = {
       "search_name": "",
       "cut_link": "https://www.bilibili.com/video/BV1gm4C65Ey6/?p=12",
       "sing_count": 1,
-      "status_labels": "歌回、歌切章节验证",
+      "status_labels": "歌回",
       "last_sing_at": "2026-08-29",
       "row_key": "夏日已所剩无几"
     },
@@ -1873,7 +1873,7 @@ window.XSL_DATA = {
       "search_name": "",
       "cut_link": "https://www.bilibili.com/video/BV12o8866EsR/",
       "sing_count": 1,
-      "status_labels": "清唱、自动识别待人工复核",
+      "status_labels": "自动识别待人工复核",
       "last_sing_at": "2026-08-23",
       "row_key": "夏霞"
     },
@@ -1894,7 +1894,7 @@ window.XSL_DATA = {
       "search_name": "",
       "cut_link": "https://www.bilibili.com/video/BV1ta4y6VEQy/",
       "sing_count": 1,
-      "status_labels": "歌回、歌切确认",
+      "status_labels": "歌回",
       "last_sing_at": "2026-08-29",
       "row_key": "想和你迎着台风去看海"
     },
@@ -1957,7 +1957,7 @@ window.XSL_DATA = {
       "search_name": "",
       "cut_link": "https://www.bilibili.com/video/BV1idb16YEjD/?p=10",
       "sing_count": 1,
-      "status_labels": "歌切章节验证、自动识别待人工复核",
+      "status_labels": "自动识别待人工复核",
       "last_sing_at": "2026-08-15",
       "row_key": "虚拟"
     },
@@ -2083,7 +2083,7 @@ window.XSL_DATA = {
       "search_name": "",
       "cut_link": "https://www.bilibili.com/video/BV1gm4C65Ey6/?p=13",
       "sing_count": 1,
-      "status_labels": "歌回、歌切章节验证",
+      "status_labels": "歌回",
       "last_sing_at": "2026-08-29",
       "row_key": "远旅休憩中的邂逅"
     },
@@ -2104,7 +2104,7 @@ window.XSL_DATA = {
       "search_name": "",
       "cut_link": "https://www.bilibili.com/video/BV1idb16YEjD/?p=2",
       "sing_count": 1,
-      "status_labels": "歌切章节验证、自动识别待人工复核",
+      "status_labels": "自动识别待人工复核",
       "last_sing_at": "2026-08-15",
       "row_key": "月出"
     },
@@ -2356,7 +2356,7 @@ window.XSL_DATA = {
       "search_name": "",
       "cut_link": "https://www.bilibili.com/video/BV1Hm4y6AEC3/",
       "sing_count": 1,
-      "status_labels": "歌回、歌切确认",
+      "status_labels": "歌回",
       "last_sing_at": "2026-08-29",
       "row_key": "Talking to the Rain"
     },
@@ -2482,7 +2482,7 @@ window.XSL_DATA = {
       "search_name": "",
       "cut_link": "https://www.bilibili.com/video/BV1gm4C65Ey6/?p=14",
       "sing_count": 1,
-      "status_labels": "歌回、歌切章节验证",
+      "status_labels": "歌回",
       "last_sing_at": "2026-08-29",
       "row_key": "サリシノハラ"
     },
