@@ -2242,8 +2242,11 @@
               <button class="tool-btn" id="favoritesRefreshBtn">刷新清单</button>
               <button class="tool-btn primary" id="favoritesUploadBtn"><svg class="icon" aria-hidden="true"><use href="#icon-upload"></use></svg> 上传存档</button>
               <button class="tool-btn" id="favoritesLoadBtn"><svg class="icon" aria-hidden="true"><use href="#icon-download"></use></svg> 导入存档</button>
+              <button class="tool-btn" id="favoritesExportFileBtn"><svg class="icon" aria-hidden="true"><use href="#icon-download"></use></svg> 下载存档</button>
+              <button class="tool-btn" id="favoritesImportFileBtn"><svg class="icon" aria-hidden="true"><use href="#icon-upload"></use></svg> 导入本地存档</button>
               <button class="tool-btn danger" id="favoritesClearBtn">清空</button>
             </div>
+            <input type="file" id="favoritesImportFileInput" accept=".txt,text/plain" style="display:none">
             <div class="meta-text" id="favoritesMetaText">还没有收藏歌曲。</div>
           </div>
           <div class="fav-shell">
@@ -2428,6 +2431,6 @@
   <script src="js/shared.js?v=24" defer></script>
   <script src="js/pinyin-pro.js" defer></script>
   <script src="js/data.js?v=24" defer></script>
-  <script src="js/app.js?v=47" defer></script>
+  <script src="js/app.js?v=48" defer></script>
 </body>
 </html>

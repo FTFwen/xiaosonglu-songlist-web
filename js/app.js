@@ -1862,6 +1862,87 @@ async function refreshFavoritesFromServer() {
   showToast(`已刷新清单「${name}」`);
 }
 
+// ===== 中意清单 本地 TXT 导入/导出 =====
+
+// 下载存档：把当前中意清单导出为 TXT 文件
+function exportFavoritesToFile() {
+  if (!state.favoriteList.length) {
+    showToast('中意清单还是空的');
+    return;
+  }
+  const lines = ['歌名\t歌手\t次数\t最近演唱日期'];
+  state.favoriteList.forEach(song => {
+    let artist = song.artist || '';
+    if (song.feat_artist) artist = artist ? `${artist} feat. ${song.feat_artist}` : `feat. ${song.feat_artist}`;
+    lines.push([
+      song.display_song_name || song.song_name || '',
+      artist,
+      song.sing_count || 0,
+      song.last_sing_at || ''
+    ].join('\t'));
+  });
+  const text = '\uFEFF' + lines.join('\r\n'); // BOM 便于 Excel 打开
+  const now = new Date();
+  const pad = n => String(n).padStart(2, '0');
+  const fileName = `小松绿歌单-中意 ${now.getFullYear()}.${pad(now.getMonth()+1)}.${pad(now.getDate())}.txt`;
+  const blob = new Blob([text], { type: 'text/plain;charset=utf-8' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = fileName;
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+  showToast(`已下载存档：${fileName}`);
+}
+
+// 导入本地存档：弹出文件选择，读取 TXT 并导入
+function handleFavoritesFileImport() {
+  const file = dom.favoritesImportFileInput.files && dom.favoritesImportFileInput.files[0];
+  dom.favoritesImportFileInput.value = ''; // 允许重复选同一文件
+  if (!file) return;
+  const reader = new FileReader();
+  reader.onload = () => {
+    importFavoritesFromTxt(String(reader.result || ''));
+  };
+  reader.onerror = () => showToast('读取存档文件失败');
+  reader.readAsText(file, 'utf-8');
+}
+
+// 解析 TXT 存档文本并导入中意清单（歌名\t歌手\t次数\t日期，每行一首）
+async function importFavoritesFromTxt(rawText) {
+  const lines = String(rawText || '').split(/\r?\n/).map(l => l.trim()).filter(Boolean);
+  if (!lines.length) { showToast('文件里没有内容'); return; }
+  let matched = 0, manual = 0;
+  lines.forEach(line => {
+    const parts = line.split('\t').map(x => x.trim());
+    const first = parts[0] || '';
+    if (!first || first === '歌名') return; // 跳过表头
+    const artist = parts[1] || '';
+    const found = findSongForImportedLine(first, artist);
+    if (found) {
+      state.favoritesMap[getFavoriteKey(found)] = favoriteSnapshotFromSong(found);
+      matched += 1;
+      return;
+    }
+    const key = getFavoriteImportKey(first, artist);
+    state.favoritesMap[key] = {
+      key, song_id: null, row_key: first, song_name: first,
+      display_song_name: first, artist, artist_search: '',
+      feat_artist: '', sing_count: 0, last_sing_at: '',
+      status_labels: '', language: '', display_version: '',
+      tone: '', remark: '', type: '', identification: '',
+      importedManual: true
+    };
+    manual += 1;
+  });
+  await saveFavorites();
+  hydrateFavoriteList();
+  applySongFilters();
+  showToast(`导入完成：匹配 ${matched} 首，手动保留 ${manual} 首`);
+}
+
 // 语言 全选/全不选 = 不过滤（全选只是视觉上全勾选）
 function setLanguageChipsAll(all) {
   state.songFilters.languages = [];
@@ -2284,6 +2365,7 @@ function bindDom() {
     'favoritesLoadBtn','favLoadOverlay','favLoadName','favLoadCancel','favLoadOk',
     'favCurrentName',
     'thanksBtn','thanksOverlay','thanksCloseBtn',
+    'favoritesExportFileBtn','favoritesImportFileBtn','favoritesImportFileInput',
     'favoritesClearBtn','favoritesMetaText','favoritesCountText','favoritesListWrap',
     'detailOverlay','detailModal','detailTitle','detailSub','detailBody','detailCloseBtn','toast','backTopBtn',
     'playerBar','playerPrevBtn','playerToggleBtn','playerNextBtn','playerSongName','playerSongArtist','playerSeek','playerTimeCur','playerTimeDur','playerShuffleBtn','playerVolume','playAllBtn','playShuffleBtn',
@@ -2727,6 +2809,9 @@ function bindEvents() {
   dom.favoritesLoadBtn.addEventListener('click', openFavLoad);
   dom.favLoadCancel.addEventListener('click', closeFavLoad);
   dom.favLoadOk.addEventListener('click', submitFavLoad);
+  dom.favoritesExportFileBtn.addEventListener('click', exportFavoritesToFile);
+  dom.favoritesImportFileBtn.addEventListener('click', () => dom.favoritesImportFileInput.click());
+  dom.favoritesImportFileInput.addEventListener('change', handleFavoritesFileImport);
   dom.favoritesClearBtn.addEventListener('click', clearFavorites);
   dom.thanksBtn.addEventListener('click', () => dom.thanksOverlay.classList.add('show'));
   dom.thanksCloseBtn.addEventListener('click', () => dom.thanksOverlay.classList.remove('show'));
