@@ -16,3 +16,8 @@ data/xiaosonglu/_tmp_bv_out.txt
 
 # 预览文件（不部署）
 _preview_glass.html
+
+# 内部临时/探测/审核文件（不部署）
+data/xiaosonglu/_*
+data/xiaosonglu/_audio_*
+_audio_download_*
