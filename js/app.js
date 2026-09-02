@@ -568,9 +568,9 @@ function applySongFilters() {
     return true;
   });
 
-  // 二创歌曲：勾选"只看二创"时才合并进列表显示（否则默认隐藏，不参与普通次数/天数过滤）
-  if (state.songFilters.derivativeOnly && state.derivativeSongs.length) {
-    rows = rows.concat(state.derivativeSongs);
+  // 二创歌曲：勾选"只看二创"时只显示二创歌（隐藏其他普通歌）；不勾选则默认隐藏二创
+  if (state.songFilters.derivativeOnly) {
+    rows = state.derivativeSongs.slice();
   }
 
   rows.sort((a, b) => compareSongs(a, b, state.songFilters.sortField, state.songFilters.sortDir));
