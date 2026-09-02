@@ -324,6 +324,7 @@
     };
     if (btn.idb) {
       // 兼容旧本地 IndexedDB 数据（尚未迁移上云）
+      currentBtn = btn; // 立即标记，loadedmetadata 时能正确记录时长
       idbGet(btn.id).then(blob => {
         if (blob) {
           const url = URL.createObjectURL(blob);
@@ -339,6 +340,8 @@
       toast(`「${btn.name}」还没有音频`);
       return;
     }
+    // 立即标记当前按钮（loadedmetadata 触发时才能正确记录本次时长，避免误改上一个按钮）
+    currentBtn = btn;
     audioPlayer.src = src;
     resume();
   }
