@@ -22,7 +22,8 @@ const BUILTIN_DERIVATIVE = [
   { song_id: -1001, song_name: 'ai小松绿爱情讯息 3', display_song_name: 'ai小松绿爱情讯息 3', artist: '' },
   { song_id: -1002, song_name: '小松绿春意红包 2', display_song_name: '小松绿春意红包 2', artist: '' },
   { song_id: -1003, song_name: '小松绿5.20am', display_song_name: '小松绿5.20am', artist: '' },
-  { song_id: -1004, song_name: 'xsl大悲咒纯享版', display_song_name: 'xsl大悲咒纯享版', artist: '' }
+  { song_id: -1004, song_name: 'xsl大悲咒纯享版', display_song_name: 'xsl大悲咒纯享版', artist: '' },
+  { song_id: -1005, song_name: 'ai小松绿虚言', display_song_name: 'ai小松绿虚言', artist: '' }
 ];
 
 // 加载二创歌曲（本地），勾选"只看二创"时合并进列表
