@@ -621,6 +621,8 @@ const player = {
   queue: [],        // 当前播放队列（song 对象数组）
   index: -1,
   playMode: 'list', // 'random' | 'single' | 'list'
+  shuffleOrder: null, // 随机播放顺序（索引数组，洗牌后不重复），null 表示未初始化
+  shufflePos: 0,      // 当前在 shuffleOrder 里的位置
   volume: 0.8,
   get current() { return this.queue[this.index] || null; }
 };
@@ -836,6 +838,14 @@ function updatePlayerUI() {
 function playSongAt(index) {
   const song = player.queue[index];
   if (!song) return;
+  // 随机模式：直接指定 index 播放时，同步 shufflePos 到该曲在洗牌顺序里的位置
+  if (player.playMode === 'random') {
+    if (!player.shuffleOrder || player.shuffleOrder.length !== player.queue.length) {
+      buildShuffleOrder();
+    }
+    const pos = player.shuffleOrder.indexOf(index);
+    if (pos >= 0) player.shufflePos = pos;
+  }
   const url = audioUrlOf(song);
   if (!url) {
     showToast('这首歌暂时没有收录音频');
@@ -864,8 +874,14 @@ function preloadNextSong() {
     if (player.playMode === 'list') {
       nextIndex = player.index + 1;
       if (nextIndex >= len) nextIndex = 0;
-    } else if (player.playMode === 'random' && len > 1) {
-      do { nextIndex = Math.floor(Math.random() * len); } while (nextIndex === player.index);
+    } else if (player.playMode === 'random') {
+      if (player.shuffleOrder && player.shuffleOrder.length > 1) {
+        let pos = player.shufflePos + 1;
+        if (pos >= player.shuffleOrder.length) pos = 0; // 到末尾回到洗牌后第一首（重新一轮）
+        nextIndex = player.shuffleOrder[pos];
+      } else {
+        nextIndex = player.index;
+      }
     } else {
       return; // 单曲循环不需要预载下一首
     }
@@ -904,9 +920,24 @@ function playShuffleAll() {
   savePlaylist();
   player.queue = state.playlist;
   player.playMode = 'random';
-  playSongAt(Math.floor(Math.random() * songs.length));
+  buildShuffleOrder(); // 洗牌一次，定下随机播放顺序（不重复）
+  playSongAt(player.shuffleOrder[0]);
   renderPlaylist();
   updatePlayerUI();
+}
+
+// 生成随机播放顺序（洗牌 0..queue.length-1，不重复）；若队列为空则置 null
+function buildShuffleOrder() {
+  const len = player.queue.length;
+  if (!len) { player.shuffleOrder = null; player.shufflePos = 0; return; }
+  const order = Array.from({ length: len }, (_, i) => i);
+  // Fisher-Yates 洗牌
+  for (let i = order.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [order[i], order[j]] = [order[j], order[i]];
+  }
+  player.shuffleOrder = order;
+  player.shufflePos = 0;
 }
 
 /* ===== 播放列表（点击歌曲加入并播放，localStorage 持久化） ===== */
@@ -1343,11 +1374,15 @@ function playNext(auto = false) {
   }
   let next;
   if (mode === 'random') {
-    if (player.queue.length > 1) {
-      do { next = Math.floor(Math.random() * player.queue.length); } while (next === player.index);
-    } else {
-      next = player.index;
+    // 按内部洗牌顺序播放（不重复）；播完一轮自动重新洗牌
+    if (!player.shuffleOrder || player.shuffleOrder.length !== player.queue.length) {
+      buildShuffleOrder();
     }
+    player.shufflePos += 1;
+    if (player.shufflePos >= player.shuffleOrder.length) {
+      buildShuffleOrder(); // 一轮播完，重新洗牌
+    }
+    next = player.shuffleOrder[player.shufflePos];
   } else {
     // 歌单循环 / 单曲循环下的手动切歌：按顺序下一首，播完回到第一首
     next = player.index + 1;
@@ -1358,8 +1393,15 @@ function playNext(auto = false) {
 
 function playPrev() {
   if (!player.queue.length) return;
-  let prev = player.index - 1;
-  if (prev < 0) prev = player.queue.length - 1;
+  let prev;
+  if (player.playMode === 'random' && player.shuffleOrder && player.shuffleOrder.length) {
+    player.shufflePos -= 1;
+    if (player.shufflePos < 0) player.shufflePos = player.shuffleOrder.length - 1; // 回到上一轮最后
+    prev = player.shuffleOrder[player.shufflePos];
+  } else {
+    prev = player.index - 1;
+    if (prev < 0) prev = player.queue.length - 1;
+  }
   playSongAt(prev);
 }
 
