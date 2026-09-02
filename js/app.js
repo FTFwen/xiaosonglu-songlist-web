@@ -13,6 +13,59 @@ const HISTORY_CACHE_TTL = 30 * 60 * 1000;
 const FAVORITES_KEY = 'favorites:shared';
 // 当前用的中意清单名（上传/导入存档时记录，刷新按它拉取）
 const FAV_CURRENT_KEY = 'favorites:currentName';
+// 二创歌曲（手动导入，本地存储；勾选"只看二创"才显示）
+const DERIVATIVE_KEY = 'songs:derivative';
+
+// 加载二创歌曲（本地），勾选"只看二创"时合并进列表
+function loadDerivativeSongs() {
+  try {
+    const raw = localStorage.getItem(DERIVATIVE_KEY);
+    const arr = raw ? JSON.parse(raw) : [];
+    state.derivativeSongs = Array.isArray(arr) ? arr.filter(s => s && (s.song_name || s.display_song_name)) : [];
+  } catch (e) {
+    state.derivativeSongs = [];
+  }
+}
+// 保存二创歌曲到本地
+function saveDerivativeSongs() {
+  try { localStorage.setItem(DERIVATIVE_KEY, JSON.stringify(state.derivativeSongs)); }
+  catch (e) { /* ignore */ }
+}
+
+// 把导入的歌曲数据加入二创歌曲（标记 custom:true），去重（按歌名），并重新渲染
+function importDerivativeSongsFromData(items) {
+  const arr = Array.isArray(items) ? items : [];
+  const existing = new Set(state.derivativeSongs.map(s => (s.display_song_name || s.song_name || '').trim()));
+  arr.forEach(item => {
+    const name = String((item.display_song_name || item.song_name || item.row_key || '').trim());
+    if (!name) return;
+    const key = name.toLowerCase();
+    if (existing.has(key)) return; // 去重
+    state.derivativeSongs.push({
+      song_id: null,
+      row_key: name,
+      song_name: name,
+      display_song_name: item.display_song_name || name,
+      artist: item.artist || '',
+      artist_search: '',
+      feat_artist: '',
+      sing_count: 0,
+      last_sing_at: '',
+      status_labels: '',
+      language: item.language || '',
+      display_version: '',
+      tone: '',
+      remark: '',
+      type: item.type || '',
+      identification: '',
+      custom: true, // 二创歌曲标记
+      derivative: true
+    });
+    existing.add(key);
+  });
+  saveDerivativeSongs();
+  applySongFilters();
+}
 
 // 中意存档服务器接口
 const FAV_API_BASE = '/api/fav/';
@@ -34,6 +87,7 @@ const state = {
   searchMode: 'mixed',
   filtersVisible: false,
   favoritesOnly: false,
+  derivativeSongs: [], // 二创歌曲（手动导入，勾选"只看二创"才显示）
   allSongs: [],
   filteredSongs: [],
   favoritesMap: {},
@@ -58,6 +112,7 @@ const state = {
     daysMax: null,
     languages: [],
     tags: [],
+    derivativeOnly: false,
     sortField: 'last_sing_at',
     sortDir: 'desc'
   },
@@ -502,6 +557,11 @@ function applySongFilters() {
     if (state.favoritesOnly && !state.favoritesMap[getFavoriteKey(song)]) return false;
     return true;
   });
+
+  // 二创歌曲：勾选"只看二创"时才合并进列表显示（否则默认隐藏，不参与普通次数/天数过滤）
+  if (state.songFilters.derivativeOnly && state.derivativeSongs.length) {
+    rows = rows.concat(state.derivativeSongs);
+  }
 
   rows.sort((a, b) => compareSongs(a, b, state.songFilters.sortField, state.songFilters.sortDir));
   state.filteredSongs = rows;
@@ -2345,9 +2405,12 @@ function resetSongFilters() {
     daysMax: null,
     languages: [],
     tags: [],
+    derivativeOnly: false,
     sortField: 'last_sing_at',
     sortDir: 'desc'
   };
+  if (dom.derivativeOnlyBtn) dom.derivativeOnlyBtn.checked = false;
+  if (dom.favoritesOnlyBtn) dom.favoritesOnlyBtn.classList.remove('active');
   state.searchMode = 'mixed';
   dom.searchInput.value = '';
   syncSearchModeButtons();
@@ -2411,7 +2474,7 @@ function bindDom() {
   [
     'refreshBtn','headerStatus','roomSubtitle','searchInput','clearSearchBtn','toggleFilterBtn','favoritesOnlyBtn',
     'songMetaText','songListWrap','filterCard','sortFieldSelect','sortDirSelect',
-    'languageChips','tagChips','langAllBtn','langNoneBtn','tagAllBtn','tagNoneBtn','countPresetRow','daysPresetRow','resetFiltersBtn','actionPanel','selectedSongName','selectedSongCutWrap',
+    'languageChips','tagChips','langAllBtn','langNoneBtn','tagAllBtn','tagNoneBtn','countPresetRow','daysPresetRow','resetFiltersBtn','derivativeOnlyBtn','actionPanel','selectedSongName','selectedSongCutWrap',
     'copySongBtn','copyOrderTextBtn','clearSelectionBtn','historyYearSelect','historyMonthSelect',
     'historyDaySelect','historyPrevBtn','historyNextBtn','historyPageInfo','historyMetaText','historyListWrap','favoritesRefreshBtn',
     'favoritesUploadBtn','favUploadOverlay','favUploadName','favUploadCancel','favUploadOk',
@@ -2474,6 +2537,11 @@ function bindEvents() {
 
   dom.favoritesOnlyBtn.addEventListener('click', () => {
     state.favoritesOnly = !state.favoritesOnly;
+    applySongFilters();
+  });
+  // 二创歌曲开关：勾选显示二创歌曲，不勾选默认隐藏
+  dom.derivativeOnlyBtn.addEventListener('change', () => {
+    state.songFilters.derivativeOnly = !!dom.derivativeOnlyBtn.checked;
     applySongFilters();
   });
 
@@ -2931,6 +2999,7 @@ async function init() {
   initMobileFabs();
 
   await loadGlobalSettings();
+  loadDerivativeSongs(); // 加载本地二创歌曲（勾选"只看二创"时显示）
   // 音频索引与歌曲/历史数据并行加载，缩短首屏等待
   const audioIndexPromise = loadAudioIndex();
   await initRoom(false);

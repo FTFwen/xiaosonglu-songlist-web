@@ -615,6 +615,9 @@
       flex-direction: column;
       gap: 6px;
     }
+    .filter-chk-row { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+    .filter-chk { display: inline-flex; align-items: center; gap: 6px; font-size: 13px; color: var(--text); cursor: pointer; }
+    .filter-chk input { accent-color: var(--primary); }
 
     .filter-label,
     .subtle-title {
@@ -2200,6 +2203,13 @@
               <button class="tool-btn preset-btn" data-days-min="90" data-days-max="">90天以上</button>
               <button class="tool-btn preset-btn" data-days-min="" data-days-max="">全部</button>
             </div>
+            <div class="subtle-title" style="margin-top:12px;">二创歌曲</div>
+            <div class="filter-chk-row" style="margin-top:6px;">
+              <label class="filter-chk">
+                <input type="checkbox" id="derivativeOnlyBtn"> 只看二创歌曲（平时隐藏，勾选显示）
+              </label>
+              <span style="color:var(--text-soft);font-size:11px;">二创歌曲由自己导入，不参与自动采集</span>
+            </div>
             <div class="song-tools-row" style="margin-top:12px;">
               <button class="tool-btn" id="resetFiltersBtn">重置筛选</button>
             </div>
@@ -2435,6 +2445,6 @@
   <script src="js/shared.js?v=24" defer></script>
   <script src="js/pinyin-pro.js" defer></script>
   <script src="js/data.js?v=24" defer></script>
-  <script src="js/app.js?v=50" defer></script>
+  <script src="js/app.js?v=51" defer></script>
 </body>
 </html>
