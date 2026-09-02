@@ -17,11 +17,12 @@ const FAV_CURRENT_KEY = 'favorites:currentName';
 const DERIVATIVE_KEY = 'songs:derivative';
 
 // 内置的二创歌曲（手动导入、勾选"只看二创"才显示；音频后补，暂不自动采集）
+// 用负数 song_id 与真实歌曲区分，保证播放点击能匹配到
 const BUILTIN_DERIVATIVE = [
-  { song_name: 'ai小松绿爱情讯息 3', display_song_name: 'ai小松绿爱情讯息 3', artist: '' },
-  { song_name: '小松绿春意红包 2', display_song_name: '小松绿春意红包 2', artist: '' },
-  { song_name: '小松绿5.20am', display_song_name: '小松绿5.20am', artist: '' },
-  { song_name: 'xsl大悲咒纯享版', display_song_name: 'xsl大悲咒纯享版', artist: '' }
+  { song_id: -1001, song_name: 'ai小松绿爱情讯息 3', display_song_name: 'ai小松绿爱情讯息 3', artist: '' },
+  { song_id: -1002, song_name: '小松绿春意红包 2', display_song_name: '小松绿春意红包 2', artist: '' },
+  { song_id: -1003, song_name: '小松绿5.20am', display_song_name: '小松绿5.20am', artist: '' },
+  { song_id: -1004, song_name: 'xsl大悲咒纯享版', display_song_name: 'xsl大悲咒纯享版', artist: '' }
 ];
 
 // 加载二创歌曲（本地），勾选"只看二创"时合并进列表
@@ -46,13 +47,16 @@ function saveDerivativeSongs() {
 function importDerivativeSongsFromData(items) {
   const arr = Array.isArray(items) ? items : [];
   const existing = new Set(state.derivativeSongs.map(s => (s.display_song_name || s.song_name || '').trim()));
+  // 为新增二创歌分配唯一负数 song_id，避免与真实歌曲冲突，保证播放点击能匹配到
+  let nextDerivId = -2000;
+  state.derivativeSongs.forEach(s => { if (s.song_id && s.song_id < nextDerivId) nextDerivId = s.song_id; });
   arr.forEach(item => {
     const name = String((item.display_song_name || item.song_name || item.row_key || '').trim());
     if (!name) return;
     const key = name.toLowerCase();
     if (existing.has(key)) return; // 去重
     state.derivativeSongs.push({
-      song_id: null,
+      song_id: nextDerivId--, // 唯一负数 id
       row_key: name,
       song_name: name,
       display_song_name: item.display_song_name || name,
