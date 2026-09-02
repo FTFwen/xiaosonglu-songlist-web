@@ -35,6 +35,13 @@ function loadDerivativeSongs() {
   } catch (e) { list = []; }
   // 没有本地导入时，回退到内置二创歌曲
   if (!list.length) list = BUILTIN_DERIVATIVE.map(s => ({ ...s, custom: true, derivative: true }));
+  // 为缺 song_id 的二创歌补唯一负数 id（保证卡片播放键能匹配到、能播放）
+  let nextId = -2000;
+  list.forEach(s => { if (typeof s.song_id === 'number' && s.song_id < nextId) nextId = s.song_id; });
+  list = list.map(s => {
+    if (typeof s.song_id === 'number' && s.song_id !== null) return s;
+    return { ...s, song_id: nextId--, custom: true, derivative: true };
+  });
   state.derivativeSongs = list;
 }
 // 保存二创歌曲到本地
