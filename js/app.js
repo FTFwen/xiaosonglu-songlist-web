@@ -831,8 +831,19 @@ function updatePlayerUI() {
   const modeShrink = (player.playMode === 'list' || player.playMode === 'single');
   dom.playerShuffleBtn.innerHTML = iconSvg(mode.icon, modeShrink ? 'icon-sm' : '');
   dom.playerShuffleBtn.title = `播放模式：${mode.label}（${mode.desc}），点击切换`;
+  updatePlayerFavState();
   syncPlayingButton();
   renderPlaylist();
+}
+
+// 更新播放栏收藏按钮：根据当前播放的歌是否已加入中意，切换爱心实/空心
+function updatePlayerFavState() {
+  const cur = player.current;
+  const active = !!cur && !!state.favoritesMap[getFavoriteKey(cur)];
+  dom.playerFavBtn.innerHTML = iconSvg(active ? 'heart-fill' : 'heart');
+  dom.playerFavBtn.classList.toggle('active', active);
+  dom.playerFavBtn.title = cur ? (active ? '取消中意' : '收藏到中意清单') : '';
+  dom.playerFavBtn.disabled = !cur;
 }
 
 function playSongAt(index) {
@@ -2410,7 +2421,7 @@ function bindDom() {
     'favoritesExportFileBtn','favoritesImportFileBtn','favoritesImportFileInput',
     'favoritesClearBtn','favoritesMetaText','favoritesCountText','favoritesListWrap',
     'detailOverlay','detailModal','detailTitle','detailSub','detailBody','detailCloseBtn','toast','backTopBtn',
-    'playerBar','playerPrevBtn','playerToggleBtn','playerNextBtn','playerSongName','playerSongArtist','playerSeek','playerTimeCur','playerTimeDur','playerShuffleBtn','playerVolume','playAllBtn','playShuffleBtn',
+    'playerBar','playerPrevBtn','playerToggleBtn','playerNextBtn','playerSongName','playerSongArtist','playerSeek','playerTimeCur','playerTimeDur','playerShuffleBtn','playerFavBtn','playerVolume','playAllBtn','playShuffleBtn',
     'playerTimerWrap','playerTimerBtn','playerTimerPopover','playerTimerPopTitle','timerValH','timerValM','timerCancelBtn','timerStartBtn',
     'playlistPanel','playlistCountText','playlistClearBtn','playlistListWrap',
     'songlistPanel','songlistNewBtn','songlistBodyWrap',
@@ -2598,6 +2609,14 @@ function bindEvents() {
     const mode = PLAY_MODE_MAP[player.playMode];
     updatePlayerUI();
     showToast(`播放模式：${mode.label}（${mode.desc}）`);
+  });
+
+  // 播放栏收藏按钮：把当前播放的歌加入/移出中意清单
+  dom.playerFavBtn.addEventListener('click', async () => {
+    const cur = player.current;
+    if (!cur) return;
+    await toggleFavoriteBySong(cur);
+    updatePlayerFavState();
   });
 
   // ===== 睡眠定时（月亮图标）=====

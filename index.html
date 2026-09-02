@@ -1265,6 +1265,9 @@
     }
     .player-btn.primary:hover { background: var(--primary-dark); }
     .player-btn.active { background: var(--primary-soft); color: var(--primary-dark); border-color: #a9bbff; }
+    /* 播放栏收藏爱心：激活（已中意）时变粉色爱心 */
+    #playerFavBtn.active { background: #ffe9ee; color: #ff5f7a; border-color: #ffb8c6; }
+    #playerFavBtn:disabled { opacity: 0.4; cursor: default; }
 
     .player-info {
       flex: 1;
@@ -2304,6 +2307,7 @@
       <span class="player-time"><span id="playerTimeDur">00:00</span></span>
     </div>
     <button class="player-btn" id="playerShuffleBtn" title="播放模式：歌单循环（按顺序播放，播完循环整个播放列表），点击切换" style="display:none;"><svg class="icon" aria-hidden="true"><use href="#icon-redo"></use></svg></button>
+    <button class="player-btn" id="playerFavBtn" title="收藏到中意清单"><svg class="icon" aria-hidden="true"><use href="#icon-heart"></use></svg></button>
     <div class="player-timer-wrap" id="playerTimerWrap">
       <button class="player-timer-btn" id="playerTimerBtn" title="睡眠定时：设置倒计时，结束后自动暂停">
         <svg class="icon" aria-hidden="true"><use href="#icon-moon"></use></svg>
@@ -2431,6 +2435,6 @@
   <script src="js/shared.js?v=24" defer></script>
   <script src="js/pinyin-pro.js" defer></script>
   <script src="js/data.js?v=24" defer></script>
-  <script src="js/app.js?v=49" defer></script>
+  <script src="js/app.js?v=50" defer></script>
 </body>
 </html>
