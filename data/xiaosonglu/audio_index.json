@@ -4,7 +4,7 @@
   "generatedAt": "2026-08-29T13:38:13.982Z",
   "source": "song-cut-audio-download",
   "description": "每首歌对应的翻唱切片音频（从 B 站歌切/回放下载），供网页在线播放。",
-  "count": 118,
+  "count": 122,
   "audios": {
     "勾指起誓": "assets/audio/song_88.m4a",
     "蝴蝶": "assets/audio/song_25.m4a",
@@ -123,6 +123,10 @@
     "おともだち": "assets/audio/song_85.m4a",
     "サリシノハラ": "assets/audio/song_119.m4a",
     "シリウスの心臓": "assets/audio/song_86.m4a",
-    "プロポーズ": "assets/audio/song_87.m4a"
+    "プロポーズ": "assets/audio/song_87.m4a",
+    "ai小松绿爱情讯息 3": "assets/audio/derivative_ai_xinxi.mp3",
+    "小松绿春意红包 2": "assets/audio/derivative_chunyi.mp3",
+    "小松绿5.20am": "assets/audio/derivative_520am.mp3",
+    "xsl大悲咒纯享版": "assets/audio/derivative_dabeizhou.mp3"
   }
 }

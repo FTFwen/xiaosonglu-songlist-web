@@ -16,15 +16,25 @@ const FAV_CURRENT_KEY = 'favorites:currentName';
 // 二创歌曲（手动导入，本地存储；勾选"只看二创"才显示）
 const DERIVATIVE_KEY = 'songs:derivative';
 
+// 内置的二创歌曲（手动导入、勾选"只看二创"才显示；音频后补，暂不自动采集）
+const BUILTIN_DERIVATIVE = [
+  { song_name: 'ai小松绿爱情讯息 3', display_song_name: 'ai小松绿爱情讯息 3', artist: '' },
+  { song_name: '小松绿春意红包 2', display_song_name: '小松绿春意红包 2', artist: '' },
+  { song_name: '小松绿5.20am', display_song_name: '小松绿5.20am', artist: '' },
+  { song_name: 'xsl大悲咒纯享版', display_song_name: 'xsl大悲咒纯享版', artist: '' }
+];
+
 // 加载二创歌曲（本地），勾选"只看二创"时合并进列表
 function loadDerivativeSongs() {
+  let list = [];
   try {
     const raw = localStorage.getItem(DERIVATIVE_KEY);
     const arr = raw ? JSON.parse(raw) : [];
-    state.derivativeSongs = Array.isArray(arr) ? arr.filter(s => s && (s.song_name || s.display_song_name)) : [];
-  } catch (e) {
-    state.derivativeSongs = [];
-  }
+    if (Array.isArray(arr)) list = arr.filter(s => s && (s.song_name || s.display_song_name));
+  } catch (e) { list = []; }
+  // 没有本地导入时，回退到内置二创歌曲
+  if (!list.length) list = BUILTIN_DERIVATIVE.map(s => ({ ...s, custom: true, derivative: true }));
+  state.derivativeSongs = list;
 }
 // 保存二创歌曲到本地
 function saveDerivativeSongs() {
