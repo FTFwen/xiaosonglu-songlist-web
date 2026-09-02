@@ -889,7 +889,7 @@
   // ===== 事件绑定 =====
   el('adminLoginBtn').addEventListener('click', openAdmin);
   el('loginBtn').addEventListener('click', doLogin);
-  el('cancelLoginBtn').addEventListener('click', showLogin);
+  el('cancelLoginBtn').addEventListener('click', closeAdmin);
   el('logoutBtn').addEventListener('click', logout);
   el('closeAdminBtn').addEventListener('click', closeAdmin);
   el('addCatBtn').addEventListener('click', addCat);
