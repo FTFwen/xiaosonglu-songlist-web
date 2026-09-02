@@ -1258,12 +1258,12 @@ function isSongInAnySonglist(song) {
 }
 
 function findSongByFavoriteKey(key) {
-  return state.allSongs.find(song => getFavoriteKey(song) === key) || null;
+  return [...state.allSongs, ...state.derivativeSongs].find(song => getFavoriteKey(song) === key) || null;
 }
 
 function getSonglistSongsWithMeta(list) {
   const keys = new Set(getSonglistKeys(list));
-  return state.allSongs
+  return [...state.allSongs, ...state.derivativeSongs]
     .filter(song => keys.has(getFavoriteKey(song)))
     .map(song => ({ key: getFavoriteKey(song), song }));
 }
@@ -1752,7 +1752,7 @@ function normalizeFavoriteMap(raw) {
 }
 
 function hydrateFavoriteList() {
-  const songsByKey = new Map(state.allSongs.map(song => [getFavoriteKey(song), song]));
+  const songsByKey = new Map([...state.allSongs, ...state.derivativeSongs].map(song => [getFavoriteKey(song), song]));
   state.favoriteList = Object.values(state.favoritesMap).map(snapshot => {
     const liveSong = snapshot.key ? songsByKey.get(snapshot.key) : null;
     if (liveSong) {
@@ -1845,7 +1845,7 @@ function findSongForImportedLine(name, artist = '') {
 function renderFavorites() {
   hydrateFavoriteList();
   // 只显示当前歌单里存在的歌（主播唱过的）
-  const roomKeys = new Set(state.allSongs.map(song => getFavoriteKey(song)));
+  const roomKeys = new Set([...state.allSongs, ...state.derivativeSongs].map(song => getFavoriteKey(song)));
   const list = state.favoriteList
     .filter(item => item.key && roomKeys.has(item.key))
     .sort((a, b) => compareSongs(a, b, 'last_sing_at', 'desc'));
