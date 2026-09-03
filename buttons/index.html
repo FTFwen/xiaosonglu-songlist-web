@@ -115,6 +115,7 @@
     .site-tab > * { position: relative; z-index: 1; }
     .site-tab img { height: 52px; width: auto; display: block; flex-shrink: 0; object-fit: contain; }
     .site-tab svg.icon { width: 18px; height: 18px; display: block; flex-shrink: 0; }
+    .site-tab .tab-emoji { font-size: 26px; line-height: 1; display: inline-block; flex-shrink: 0; }
     .site-tab:hover::before { background: rgba(255,255,255,0.78); }
     .site-tab:hover { color: var(--text); }
     .site-tab.active { color: #3c4a22; font-weight: 800; text-shadow: none; -webkit-text-stroke: 0; }
@@ -777,7 +778,7 @@
     <a class="site-tab" href="../"><svg class="icon" aria-hidden="true"><use href="#icon-music"></use></svg> 歌单</a>
     <a class="site-tab active" href="./"><svg class="icon" aria-hidden="true"><use href="#icon-playlist"></use></svg> 按钮墙</a>
     <a class="site-tab" href="../24xsl/"><img src="../assets/24xsl-title.webp" alt="24点"></a>
-    <a class="site-tab" href="https://viridis.website" target="_blank" rel="noopener">🌻 标本馆</a>
+    <a class="site-tab" href="https://viridis.website" target="_blank" rel="noopener"><span class="tab-emoji">🌻</span> 标本馆</a>
   </div>
 
   <div class="app">
