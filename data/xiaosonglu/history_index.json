@@ -1,15 +1,18 @@
 {
   "roomKey": "xiaosonglu",
   "roomId": "1727071052",
-  "generatedAt": "2026-08-29T13:05:11.280Z",
+  "generatedAt": "2026-09-04T14:52:39.131Z",
   "source": "local-replay-ingestion",
   "latest": {
     "year": "2026",
-    "month": "08",
-    "day": "29"
+    "month": "09",
+    "day": "03"
   },
   "dateTree": {
     "2026": {
+      "09": {
+        "03": 21
+      },
       "08": {
         "10": 3,
         "11": 16,
@@ -633,7 +636,6 @@
         "song_name": "炼金少女日志",
         "sing_time": "",
         "statuses": [
-          "歌切章节验证",
           "自动识别待人工复核"
         ],
         "artist": "时之歌Project（泛音堂）/ 言和",
@@ -986,7 +988,6 @@
         "song_name": "四重罪孽",
         "sing_time": "",
         "statuses": [
-          "歌切章节验证",
           "自动识别待人工复核"
         ],
         "artist": "DELA / 雨狸 / 洛天依、言和、乐正绫",
@@ -1004,7 +1005,6 @@
         "song_name": "月出",
         "sing_time": "",
         "statuses": [
-          "歌切章节验证",
           "自动识别待人工复核"
         ],
         "artist": "双笙（词：温莨 / 曲：徐梦圆）",
@@ -1022,7 +1022,6 @@
         "song_name": "女孩你为何踮脚尖",
         "sing_time": "",
         "statuses": [
-          "歌切章节验证",
           "自动识别待人工复核"
         ],
         "artist": "Ddickky / 墨兰花语 / 洛天依",
@@ -1040,7 +1039,6 @@
         "song_name": "虚拟",
         "sing_time": "",
         "statuses": [
-          "歌切章节验证",
           "自动识别待人工复核"
         ],
         "artist": "陈粒",
@@ -1058,7 +1056,6 @@
         "song_name": "蝴蝶",
         "sing_time": "",
         "statuses": [
-          "歌切章节验证",
           "自动识别待人工复核"
         ],
         "artist": "洛天依Official",
@@ -1929,7 +1926,6 @@
         "sing_time": "02:33:30",
         "statuses": [
           "清唱",
-          "歌切章节验证",
           "自动识别待人工复核"
         ],
         "artist": "Kide / Ddickky / 星尘",
@@ -2041,8 +2037,7 @@
         "song_name": "初恋日記",
         "sing_time": "",
         "statuses": [
-          "歌回",
-          "歌切章节验证"
+          "歌回"
         ],
         "artist": "香椎モイミ / 音街鳗",
         "replay_id": "BV1RL4k6jEe8",
@@ -2059,8 +2054,7 @@
         "song_name": "是风动",
         "sing_time": "",
         "statuses": [
-          "歌回",
-          "歌切章节验证"
+          "歌回"
         ],
         "artist": "银临 / 河图",
         "replay_id": "BV1RL4k6jEe8",
@@ -2077,8 +2071,7 @@
         "song_name": "下个夏天的烟火",
         "sing_time": "",
         "statuses": [
-          "歌回",
-          "歌切章节验证"
+          "歌回"
         ],
         "artist": "Cidai Jun / 海伊",
         "replay_id": "BV1RL4k6jEe8",
@@ -2095,8 +2088,7 @@
         "song_name": "绮凝盏",
         "sing_time": "",
         "statuses": [
-          "歌回",
-          "歌切章节验证"
+          "歌回"
         ],
         "artist": "MeLo / 海伊",
         "replay_id": "BV1RL4k6jEe8",
@@ -2113,8 +2105,7 @@
         "song_name": "夏日已所剩无几",
         "sing_time": "",
         "statuses": [
-          "歌回",
-          "歌切章节验证"
+          "歌回"
         ],
         "artist": "泠鸢yousa",
         "replay_id": "BV1RL4k6jEe8",
@@ -2131,8 +2122,7 @@
         "song_name": "远旅休憩中的邂逅",
         "sing_time": "",
         "statuses": [
-          "歌回",
-          "歌切章节验证"
+          "歌回"
         ],
         "artist": "泠鸢yousa",
         "replay_id": "BV1RL4k6jEe8",
@@ -2149,8 +2139,7 @@
         "song_name": "サリシノハラ（离去之原）",
         "sing_time": "",
         "statuses": [
-          "歌回",
-          "歌切章节验证"
+          "歌回"
         ],
         "artist": "みきとP / 初音ミク",
         "replay_id": "BV1RL4k6jEe8",
@@ -2276,8 +2265,7 @@
         "sing_time": "01:02:00",
         "statuses": [
           "歌回",
-          "自动识别待人工复核",
-          "歌切章节验证"
+          "自动识别待人工复核"
         ],
         "artist": "忘川风华录 / 赤羽、星尘",
         "replay_id": "BV1RL4k6jEe8",
@@ -2313,8 +2301,7 @@
         "sing_time": "01:28:00",
         "statuses": [
           "歌回",
-          "自动识别待人工复核",
-          "歌切章节验证"
+          "自动识别待人工复核"
         ],
         "artist": "玖玲 / 冥凰 / 泠鸢yousa",
         "replay_id": "BV1RL4k6jEe8",
@@ -2350,8 +2337,7 @@
         "sing_time": "02:00:00",
         "statuses": [
           "歌回",
-          "自动识别待人工复核",
-          "歌切章节验证"
+          "自动识别待人工复核"
         ],
         "artist": "银临 / 初音未来",
         "replay_id": "BV1RL4k6jEe8",
@@ -2363,6 +2349,365 @@
         "lyric_excerpt": "总学不会别离",
         "song_resolution_method": "danmaku-evidence + song-cut-compilation-chapter",
         "cut_link": "https://www.bilibili.com/video/BV1gm4C65Ey6/?p=15"
+      }
+    ],
+    "2026-09-03": [
+      {
+        "song_name": "只对你有感觉",
+        "sing_time": "",
+        "statuses": [
+          "歌回"
+        ],
+        "artist": "飞轮海 / 田馥甄",
+        "replay_id": "BV1vetf6AE5y",
+        "replay_title": "【小松绿Viridis】也许康复的随便唱唱 2026年09月03日21点场",
+        "replay_url": "https://www.bilibili.com/video/BV1vetf6AE5y/",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "只对你有感觉",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-compilation-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=1"
+      },
+      {
+        "song_name": "有点甜",
+        "sing_time": "",
+        "statuses": [
+          "歌回"
+        ],
+        "artist": "汪苏泷 / By2",
+        "replay_id": "BV1vetf6AE5y",
+        "replay_title": "【小松绿Viridis】也许康复的随便唱唱 2026年09月03日21点场",
+        "replay_url": "https://www.bilibili.com/video/BV1vetf6AE5y/",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "有点甜",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-compilation-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=2"
+      },
+      {
+        "song_name": "别找我麻烦",
+        "sing_time": "",
+        "statuses": [
+          "歌回"
+        ],
+        "artist": "蔡健雅",
+        "replay_id": "BV1vetf6AE5y",
+        "replay_title": "【小松绿Viridis】也许康复的随便唱唱 2026年09月03日21点场",
+        "replay_url": "https://www.bilibili.com/video/BV1vetf6AE5y/",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "别找我麻烦",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-compilation-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=3"
+      },
+      {
+        "song_name": "小半",
+        "sing_time": "",
+        "statuses": [
+          "歌回"
+        ],
+        "artist": "陈粒",
+        "replay_id": "BV1vetf6AE5y",
+        "replay_title": "【小松绿Viridis】也许康复的随便唱唱 2026年09月03日21点场",
+        "replay_url": "https://www.bilibili.com/video/BV1vetf6AE5y/",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "小半",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-compilation-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=4"
+      },
+      {
+        "song_name": "小丑的品格",
+        "sing_time": "",
+        "statuses": [
+          "歌回"
+        ],
+        "artist": "泠鸢yousa",
+        "replay_id": "BV1vetf6AE5y",
+        "replay_title": "【小松绿Viridis】也许康复的随便唱唱 2026年09月03日21点场",
+        "replay_url": "https://www.bilibili.com/video/BV1vetf6AE5y/",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "小丑的品格",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-compilation-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=5"
+      },
+      {
+        "song_name": "东风志",
+        "sing_time": "",
+        "statuses": [
+          "歌回"
+        ],
+        "artist": "银临",
+        "replay_id": "BV1vetf6AE5y",
+        "replay_title": "【小松绿Viridis】也许康复的随便唱唱 2026年09月03日21点场",
+        "replay_url": "https://www.bilibili.com/video/BV1vetf6AE5y/",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "东风志",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-compilation-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=6"
+      },
+      {
+        "song_name": "她追逐着月光的尽头",
+        "sing_time": "",
+        "statuses": [
+          "歌回"
+        ],
+        "artist": "石榴皮_ / 诗岸",
+        "replay_id": "BV1vetf6AE5y",
+        "replay_title": "【小松绿Viridis】也许康复的随便唱唱 2026年09月03日21点场",
+        "replay_url": "https://www.bilibili.com/video/BV1vetf6AE5y/",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "她追逐着月光的尽头",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-compilation-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=7"
+      },
+      {
+        "song_name": "焦糖星",
+        "sing_time": "",
+        "statuses": [
+          "歌回"
+        ],
+        "artist": "",
+        "replay_id": "BV1vetf6AE5y",
+        "replay_title": "【小松绿Viridis】也许康复的随便唱唱 2026年09月03日21点场",
+        "replay_url": "https://www.bilibili.com/video/BV1vetf6AE5y/",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "焦糖星",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-compilation-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=8"
+      },
+      {
+        "song_name": "腐草为萤",
+        "sing_time": "",
+        "statuses": [
+          "歌回"
+        ],
+        "artist": "银临",
+        "replay_id": "BV1vetf6AE5y",
+        "replay_title": "【小松绿Viridis】也许康复的随便唱唱 2026年09月03日21点场",
+        "replay_url": "https://www.bilibili.com/video/BV1vetf6AE5y/",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "腐草为萤",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-compilation-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=10"
+      },
+      {
+        "song_name": "深夜诗人",
+        "sing_time": "",
+        "statuses": [
+          "歌回"
+        ],
+        "artist": "洛天依 / 言和 / ilem",
+        "replay_id": "BV1vetf6AE5y",
+        "replay_title": "【小松绿Viridis】也许康复的随便唱唱 2026年09月03日21点场",
+        "replay_url": "https://www.bilibili.com/video/BV1vetf6AE5y/",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "深夜诗人",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-compilation-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=11"
+      },
+      {
+        "song_name": "铁花飞 中文版",
+        "sing_time": "",
+        "statuses": [
+          "歌回"
+        ],
+        "artist": "时光罅隙间",
+        "replay_id": "BV1vetf6AE5y",
+        "replay_title": "【小松绿Viridis】也许康复的随便唱唱 2026年09月03日21点场",
+        "replay_url": "https://www.bilibili.com/video/BV1vetf6AE5y/",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "铁花飞 中文版",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-compilation-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=12"
+      },
+      {
+        "song_name": "Fly, My Wings",
+        "sing_time": "",
+        "statuses": [
+          "歌回"
+        ],
+        "artist": "Mili",
+        "replay_id": "BV1vetf6AE5y",
+        "replay_title": "【小松绿Viridis】也许康复的随便唱唱 2026年09月03日21点场",
+        "replay_url": "https://www.bilibili.com/video/BV1vetf6AE5y/",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "Fly, My Wings",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-compilation-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=13"
+      },
+      {
+        "song_name": "偏食",
+        "sing_time": "",
+        "statuses": [
+          "歌回"
+        ],
+        "artist": "香椎モイミ / 初音ミク",
+        "replay_id": "BV1vetf6AE5y",
+        "replay_title": "【小松绿Viridis】也许康复的随便唱唱 2026年09月03日21点场",
+        "replay_url": "https://www.bilibili.com/video/BV1vetf6AE5y/",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "偏食",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-compilation-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=15"
+      },
+      {
+        "song_name": "March of Time",
+        "sing_time": "",
+        "statuses": [
+          "歌回"
+        ],
+        "artist": "Aimer",
+        "replay_id": "BV1vetf6AE5y",
+        "replay_title": "【小松绿Viridis】也许康复的随便唱唱 2026年09月03日21点场",
+        "replay_url": "https://www.bilibili.com/video/BV1vetf6AE5y/",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "March of Time",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-compilation-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=16"
+      },
+      {
+        "song_name": "花の塔",
+        "sing_time": "",
+        "statuses": [
+          "歌回"
+        ],
+        "artist": "さユり",
+        "replay_id": "BV1vetf6AE5y",
+        "replay_title": "【小松绿Viridis】也许康复的随便唱唱 2026年09月03日21点场",
+        "replay_url": "https://www.bilibili.com/video/BV1vetf6AE5y/",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "花の塔",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-compilation-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=18"
+      },
+      {
+        "song_name": "ミカヅキ",
+        "sing_time": "",
+        "statuses": [
+          "歌回"
+        ],
+        "artist": "さユり",
+        "replay_id": "BV1vetf6AE5y",
+        "replay_title": "【小松绿Viridis】也许康复的随便唱唱 2026年09月03日21点场",
+        "replay_url": "https://www.bilibili.com/video/BV1vetf6AE5y/",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "ミカヅキ",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-compilation-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=19"
+      },
+      {
+        "song_name": "食虫植物",
+        "sing_time": "",
+        "statuses": [
+          "歌回"
+        ],
+        "artist": "理芽",
+        "replay_id": "BV1vetf6AE5y",
+        "replay_title": "【小松绿Viridis】也许康复的随便唱唱 2026年09月03日21点场",
+        "replay_url": "https://www.bilibili.com/video/BV1vetf6AE5y/",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "食虫植物",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-compilation-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=20"
+      },
+      {
+        "song_name": "十万个春天",
+        "sing_time": "01:12:57",
+        "statuses": [
+          "歌回"
+        ],
+        "artist": "娅娅酱 / 洛天依",
+        "replay_id": "BV1vetf6AE5y",
+        "replay_title": "【小松绿Viridis】也许康复的随便唱唱 2026年09月03日21点场",
+        "replay_url": "https://www.bilibili.com/video/BV1vetf6AE5y/",
+        "start_time": "01:12:57",
+        "end_time": "01:14:10",
+        "row_key": "十万个春天",
+        "lyric_excerpt": "【】歌词弹幕命中窗口 01:12:57~01:14:10",
+        "song_resolution_method": "song-cut-chapter + danmaku-lyric",
+        "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=9"
+      },
+      {
+        "song_name": "浴槽とネオンテトラ",
+        "sing_time": "01:57:26",
+        "statuses": [
+          "歌回"
+        ],
+        "artist": "REISAI（feat. v flower）",
+        "replay_id": "BV1vetf6AE5y",
+        "replay_title": "【小松绿Viridis】也许康复的随便唱唱 2026年09月03日21点场",
+        "replay_url": "https://www.bilibili.com/video/BV1vetf6AE5y/",
+        "start_time": "01:57:26",
+        "end_time": "02:05:03",
+        "row_key": "浴槽とネオンテトラ",
+        "lyric_excerpt": "【】歌词弹幕命中窗口 01:57:26~02:05:03",
+        "song_resolution_method": "song-cut-chapter + danmaku-lyric",
+        "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=14"
+      },
+      {
+        "song_name": "あなたに出会わなければ~夏雪冬花~",
+        "sing_time": "02:10:56",
+        "statuses": [
+          "歌回"
+        ],
+        "artist": "Aimer",
+        "replay_id": "BV1vetf6AE5y",
+        "replay_title": "【小松绿Viridis】也许康复的随便唱唱 2026年09月03日21点场",
+        "replay_url": "https://www.bilibili.com/video/BV1vetf6AE5y/",
+        "start_time": "02:10:56",
+        "end_time": "02:13:59",
+        "row_key": "あなたに出会わなければ~夏雪冬花~",
+        "lyric_excerpt": "【】歌词弹幕命中窗口 02:10:56~02:13:59",
+        "song_resolution_method": "song-cut-chapter + danmaku-lyric",
+        "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=17"
+      },
+      {
+        "song_name": "如果有来生",
+        "sing_time": "02:53:12",
+        "statuses": [
+          "歌回"
+        ],
+        "artist": "谭维维",
+        "replay_id": "BV1vetf6AE5y",
+        "replay_title": "【小松绿Viridis】也许康复的随便唱唱 2026年09月03日21点场",
+        "replay_url": "https://www.bilibili.com/video/BV1vetf6AE5y/",
+        "start_time": "02:53:12",
+        "end_time": "02:55:02",
+        "row_key": "如果有来生",
+        "lyric_excerpt": "【】歌词弹幕命中窗口 02:53:12~02:55:02",
+        "song_resolution_method": "song-cut-chapter + danmaku-lyric",
+        "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=21"
       }
     ]
   }

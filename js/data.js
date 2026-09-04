@@ -1,11 +1,11 @@
 // 本文件由 E:\tool\plugin 本地数据生成（window.XSL_DATA），供网页直接打开（file://）时使用。
-// 生成时间：2026-08-31 17:11:20
+// 生成时间：2026-09-04 22:52:48
 // 数据源：E:\tool\plugin\data\（song_catalog / history_index / song_details）
 window.XSL_DATA = {
   song_catalog: {
   "roomKey": "xiaosonglu",
   "roomId": "1727071052",
-  "generatedAt": "2026-08-29T13:05:11.280Z",
+  "generatedAt": "2026-09-04T14:52:39.131Z",
   "source": "local-replay-ingestion",
   "songs": [
     {
@@ -88,9 +88,30 @@ window.XSL_DATA = {
       "search_name": "",
       "cut_link": "https://www.bilibili.com/video/BV1ZT4k6QEpC/",
       "sing_count": 2,
-      "status_labels": "自动识别待人工复核、歌回",
+      "status_labels": "语音频道合唱、自动识别待人工复核、歌回、歌切确认",
       "last_sing_at": "2026-08-29",
       "row_key": "绿色"
+    },
+    {
+      "song_id": 29,
+      "song_name": "偏食",
+      "show_as_song_name": "",
+      "display_song_name": "偏食",
+      "artist": "香椎モイミ / 初音ミク",
+      "artist_search": "香椎モイミ 初音ミク",
+      "feat_artist": "",
+      "remark": "视频标题直接给出真实歌曲名；日期未直写，但与同一批 2026-08-11 歌切候选同网出现，先按 2026-08-11 manual-normalized 收录。",
+      "tone": "",
+      "language": "日文",
+      "type": "Vocaloid、J-Pop",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1yJu16bETb/",
+      "sing_count": 2,
+      "status_labels": "歌切直补、待原始回放定位、歌回",
+      "last_sing_at": "2026-09-03",
+      "row_key": "偏食"
     },
     {
       "song_id": 25,
@@ -133,6 +154,27 @@ window.XSL_DATA = {
       "status_labels": "歌切直补、待原始回放定位、歌回、自动识别待人工复核",
       "last_sing_at": "2026-08-20",
       "row_key": "少女レイ"
+    },
+    {
+      "song_id": 32,
+      "song_name": "食虫植物",
+      "show_as_song_name": "",
+      "display_song_name": "食虫植物",
+      "artist": "理芽",
+      "artist_search": "理芽",
+      "feat_artist": "",
+      "remark": "视频标题直接给出真实歌曲名《食虫植物》；页面未直写日期，但该条与《偏食》《下等马》《月が綺麗ね》《春日影》《白鸟过河滩》等同属 2026-08-11 歌切候选网络，按当前 song-cut-first 流程先以 2026-08-11 manual-normalized 收录。",
+      "tone": "",
+      "language": "日文",
+      "type": "J-Pop",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1fUuy6SEYm/",
+      "sing_count": 2,
+      "status_labels": "歌切直补、待原始回放定位、歌回",
+      "last_sing_at": "2026-09-03",
+      "row_key": "食虫植物"
     },
     {
       "song_id": 27,
@@ -193,7 +235,7 @@ window.XSL_DATA = {
       "search_name": "",
       "cut_link": "https://www.bilibili.com/video/BV1JX4y6fEpy/",
       "sing_count": 1,
-      "status_labels": "歌回",
+      "status_labels": "歌回、歌切确认",
       "last_sing_at": "2026-08-29",
       "row_key": "阿拉斯加海湾"
     },
@@ -238,6 +280,27 @@ window.XSL_DATA = {
       "status_labels": "歌回、半场、自动识别待人工复核",
       "last_sing_at": "2026-08-11",
       "row_key": "白鸟过河滩"
+    },
+    {
+      "song_id": 123,
+      "song_name": "别找我麻烦",
+      "show_as_song_name": "",
+      "display_song_name": "别找我麻烦",
+      "artist": "蔡健雅",
+      "artist_search": "别找我麻烦 蔡健雅",
+      "feat_artist": "",
+      "remark": "2026-09-03「也许康复的随便唱唱」21点场；歌切合集【桐人今天睡大觉】【小松绿Viridis】随便唱唱的歌回 歌切合集 2026.09.03 分P3（04:11）。蔡健雅《说到爱》专辑经典（Bossanova 风）。",
+      "tone": "",
+      "language": "中文",
+      "type": "流行",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=3",
+      "sing_count": 1,
+      "status_labels": "歌回",
+      "last_sing_at": "2026-09-03",
+      "row_key": "别找我麻烦"
     },
     {
       "song_id": 38,
@@ -319,7 +382,7 @@ window.XSL_DATA = {
       "search_name": "",
       "cut_link": "https://www.bilibili.com/video/BV11F8h6BE4d/",
       "sing_count": 1,
-      "status_labels": "自动识别待人工复核",
+      "status_labels": "清唱、自动识别待人工复核",
       "last_sing_at": "2026-08-23",
       "row_key": "吹灭小山河"
     },
@@ -450,6 +513,27 @@ window.XSL_DATA = {
       "row_key": "第一只小兔子"
     },
     {
+      "song_id": 126,
+      "song_name": "东风志",
+      "show_as_song_name": "",
+      "display_song_name": "东风志",
+      "artist": "银临",
+      "artist_search": "东风志 银临",
+      "feat_artist": "",
+      "remark": "2026-09-03「也许康复的随便唱唱」21点场；歌切合集【桐人今天睡大觉】【小松绿Viridis】随便唱唱的歌回 歌切合集 2026.09.03 分P6（04:38）。歌切分P标注 cover Aki阿杰；Aki阿杰 2016-06-09《东风志》（银临与慕寒亦有合作版）→ 本场演唱为银临版。",
+      "tone": "",
+      "language": "中文",
+      "type": "古风、国风",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=6",
+      "sing_count": 1,
+      "status_labels": "歌回",
+      "last_sing_at": "2026-09-03",
+      "row_key": "东风志"
+    },
+    {
       "song_id": 56,
       "song_name": "都落ち",
       "show_as_song_name": "",
@@ -487,7 +571,7 @@ window.XSL_DATA = {
       "search_name": "",
       "cut_link": "https://www.bilibili.com/video/BV1yw8h6TEBf/",
       "sing_count": 1,
-      "status_labels": "自动识别待人工复核",
+      "status_labels": "清唱、自动识别待人工复核",
       "last_sing_at": "2026-08-23",
       "row_key": "多情岸"
     },
@@ -555,6 +639,27 @@ window.XSL_DATA = {
       "row_key": "風になる"
     },
     {
+      "song_id": 130,
+      "song_name": "腐草为萤",
+      "show_as_song_name": "",
+      "display_song_name": "腐草为萤",
+      "artist": "银临",
+      "artist_search": "腐草为萤 银临",
+      "feat_artist": "",
+      "remark": "2026-09-03「也许康复的随便唱唱」21点场；歌切合集【桐人今天睡大觉】【小松绿Viridis】随便唱唱的歌回 歌切合集 2026.09.03 分P10（04:38）。银临 2013 古风名曲。",
+      "tone": "",
+      "language": "中文",
+      "type": "古风、国风",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=10",
+      "sing_count": 1,
+      "status_labels": "歌回",
+      "last_sing_at": "2026-09-03",
+      "row_key": "腐草为萤"
+    },
+    {
       "song_id": 45,
       "song_name": "故梦",
       "show_as_song_name": "",
@@ -592,7 +697,7 @@ window.XSL_DATA = {
       "search_name": "",
       "cut_link": "https://www.bilibili.com/video/BV1m9886kEMZ/?p=4",
       "sing_count": 1,
-      "status_labels": "自动识别待人工复核",
+      "status_labels": "清唱、自动识别待人工复核",
       "last_sing_at": "2026-08-23",
       "row_key": "光"
     },
@@ -700,6 +805,48 @@ window.XSL_DATA = {
       "status_labels": "歌回、自动识别待人工复核",
       "last_sing_at": "2026-08-09",
       "row_key": "花粉症"
+    },
+    {
+      "song_id": 137,
+      "song_name": "花の塔",
+      "show_as_song_name": "",
+      "display_song_name": "花の塔",
+      "artist": "さユり",
+      "artist_search": "花の塔 さユり",
+      "feat_artist": "",
+      "remark": "2026-09-03「也许康复的随便唱唱」21点场；歌切合集【桐人今天睡大觉】【小松绿Viridis】随便唱唱的歌回 歌切合集 2026.09.03 分P18（04:42）。さユり《Lycoris Recoil》ED。",
+      "tone": "",
+      "language": "日文",
+      "type": "动画、J-Pop",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=18",
+      "sing_count": 1,
+      "status_labels": "歌回",
+      "last_sing_at": "2026-09-03",
+      "row_key": "花の塔"
+    },
+    {
+      "song_id": 128,
+      "song_name": "焦糖星",
+      "show_as_song_name": "",
+      "display_song_name": "焦糖星",
+      "artist": "",
+      "artist_search": "焦糖星",
+      "feat_artist": "",
+      "remark": "2026-09-03「也许康复的随便唱唱」21点场；歌切合集【桐人今天睡大觉】【小松绿Viridis】随便唱唱的歌回 歌切合集 2026.09.03 分P8（03:55）。歌切分P无歌手标注；网易云同名为「焦糖星」有 X Studio洛天依（忆零）版、warma 人声本家（作曲味素/词大九_LN，日文初音本家 av30963867、诗岸赤羽SV中文本家 av56433925）→ 版本待复核。",
+      "tone": "",
+      "language": "中文",
+      "type": "待复核",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=8",
+      "sing_count": 1,
+      "status_labels": "歌回",
+      "last_sing_at": "2026-09-03",
+      "row_key": "焦糖星"
     },
     {
       "song_id": 44,
@@ -865,7 +1012,7 @@ window.XSL_DATA = {
       "search_name": "",
       "cut_link": "https://www.bilibili.com/video/BV1m9886kEMZ/?p=2",
       "sing_count": 1,
-      "status_labels": "自动识别待人工复核",
+      "status_labels": "清唱、自动识别待人工复核",
       "last_sing_at": "2026-08-23",
       "row_key": "恋苦"
     },
@@ -928,7 +1075,7 @@ window.XSL_DATA = {
       "search_name": "",
       "cut_link": "https://www.bilibili.com/video/BV1Td886GEoN/",
       "sing_count": 1,
-      "status_labels": "自动识别待人工复核",
+      "status_labels": "清唱、自动识别待人工复核",
       "last_sing_at": "2026-08-23",
       "row_key": "流霰"
     },
@@ -1075,7 +1222,7 @@ window.XSL_DATA = {
       "search_name": "",
       "cut_link": "https://www.bilibili.com/video/BV1dd4y6oEQb/",
       "sing_count": 1,
-      "status_labels": "歌回",
+      "status_labels": "歌回、歌切确认",
       "last_sing_at": "2026-08-29",
       "row_key": "你究竟有几个好妹妹"
     },
@@ -1120,27 +1267,6 @@ window.XSL_DATA = {
       "status_labels": "歌切直补、待原始回放定位",
       "last_sing_at": "2026-08-08",
       "row_key": "暖暖"
-    },
-    {
-      "song_id": 29,
-      "song_name": "偏食",
-      "show_as_song_name": "",
-      "display_song_name": "偏食",
-      "artist": "香椎モイミ / 初音ミク",
-      "artist_search": "香椎モイミ 初音ミク",
-      "feat_artist": "",
-      "remark": "视频标题直接给出真实歌曲名；日期未直写，但与同一批 2026-08-11 歌切候选同网出现，先按 2026-08-11 manual-normalized 收录。",
-      "tone": "",
-      "language": "日文",
-      "type": "Vocaloid、J-Pop",
-      "identification": "",
-      "display_version": "",
-      "search_name": "",
-      "cut_link": "https://www.bilibili.com/video/BV1yJu16bETb/",
-      "sing_count": 1,
-      "status_labels": "歌切直补、待原始回放定位",
-      "last_sing_at": "2026-08-11",
-      "row_key": "偏食"
     },
     {
       "song_id": 66,
@@ -1201,7 +1327,7 @@ window.XSL_DATA = {
       "search_name": "",
       "cut_link": "https://www.bilibili.com/video/BV1BN8i66Ej6/",
       "sing_count": 1,
-      "status_labels": "自动识别待人工复核",
+      "status_labels": "清唱、自动识别待人工复核",
       "last_sing_at": "2026-08-23",
       "row_key": "栖凰"
     },
@@ -1332,6 +1458,27 @@ window.XSL_DATA = {
       "row_key": "人间应又雪"
     },
     {
+      "song_id": 139,
+      "song_name": "如果有来生",
+      "show_as_song_name": "",
+      "display_song_name": "如果有来生",
+      "artist": "谭维维",
+      "artist_search": "如果有来生 谭维维",
+      "feat_artist": "",
+      "remark": "2026-09-03「也许康复的随便唱唱」21点场；歌切合集【桐人今天睡大觉】【小松绿Viridis】随便唱唱的歌回 歌切合集 2026.09.03 分P21（04:05）。弹幕歌词窗 02:53:12-02:55:02（「以前人们在四月开始收获/如果有来生」）；谭维维 2010 经典。",
+      "tone": "",
+      "language": "中文",
+      "type": "流行",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=21",
+      "sing_count": 1,
+      "status_labels": "歌回",
+      "last_sing_at": "2026-09-03",
+      "row_key": "如果有来生"
+    },
+    {
       "song_id": 46,
       "song_name": "山遥路远",
       "show_as_song_name": "",
@@ -1374,25 +1521,46 @@ window.XSL_DATA = {
       "row_key": "上山岗"
     },
     {
-      "song_id": 32,
-      "song_name": "食虫植物",
+      "song_id": 131,
+      "song_name": "深夜诗人",
       "show_as_song_name": "",
-      "display_song_name": "食虫植物",
-      "artist": "理芽",
-      "artist_search": "理芽",
+      "display_song_name": "深夜诗人",
+      "artist": "洛天依 / 言和 / ilem",
+      "artist_search": "深夜诗人 洛天依 / 言和 / ilem",
       "feat_artist": "",
-      "remark": "视频标题直接给出真实歌曲名《食虫植物》；页面未直写日期，但该条与《偏食》《下等马》《月が綺麗ね》《春日影》《白鸟过河滩》等同属 2026-08-11 歌切候选网络，按当前 song-cut-first 流程先以 2026-08-11 manual-normalized 收录。",
+      "remark": "2026-09-03「也许康复的随便唱唱」21点场；歌切合集【桐人今天睡大觉】【小松绿Viridis】随便唱唱的歌回 歌切合集 2026.09.03 分P11（05:43）。ilem 2016 VOCALOID 中文原创，洛天依/言和演唱。",
       "tone": "",
-      "language": "日文",
-      "type": "J-Pop",
+      "language": "中文",
+      "type": "Vocaloid、中V",
       "identification": "",
       "display_version": "",
       "search_name": "",
-      "cut_link": "https://www.bilibili.com/video/BV1fUuy6SEYm/",
+      "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=11",
       "sing_count": 1,
-      "status_labels": "歌切直补、待原始回放定位",
-      "last_sing_at": "2026-08-11",
-      "row_key": "食虫植物"
+      "status_labels": "歌回",
+      "last_sing_at": "2026-09-03",
+      "row_key": "深夜诗人"
+    },
+    {
+      "song_id": 129,
+      "song_name": "十万个春天",
+      "show_as_song_name": "",
+      "display_song_name": "十万个春天",
+      "artist": "娅娅酱 / 洛天依",
+      "artist_search": "十万个春天 娅娅酱 / 洛天依",
+      "feat_artist": "",
+      "remark": "2026-09-03「也许康复的随便唱唱」21点场；歌切合集【桐人今天睡大觉】【小松绿Viridis】随便唱唱的歌回 歌切合集 2026.09.03 分P9（03:02）。弹幕歌词窗 01:12:57-01:14:10（「十万个春天在我心中」）；网易云：娅娅酱/洛天依《十万个春天》。",
+      "tone": "",
+      "language": "中文",
+      "type": "洛天依、Vocaloid、X Studio",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=9",
+      "sing_count": 1,
+      "status_labels": "歌回",
+      "last_sing_at": "2026-09-03",
+      "row_key": "十万个春天"
     },
     {
       "song_id": 49,
@@ -1626,6 +1794,27 @@ window.XSL_DATA = {
       "row_key": "所以我伸出了手"
     },
     {
+      "song_id": 127,
+      "song_name": "她追逐着月光的尽头",
+      "show_as_song_name": "",
+      "display_song_name": "她追逐着月光的尽头",
+      "artist": "石榴皮_ / 诗岸",
+      "artist_search": "她追逐着月光的尽头 石榴皮_ / 诗岸",
+      "feat_artist": "",
+      "remark": "2026-09-03「也许康复的随便唱唱」21点场；歌切合集【桐人今天睡大觉】【小松绿Viridis】随便唱唱的歌回 歌切合集 2026.09.03 分P7（03:48）。石榴皮_ 与诗岸（SV）2020《月光入侵计划》收录。",
+      "tone": "",
+      "language": "中文",
+      "type": "Synthesizer V、中文原创",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=7",
+      "sing_count": 1,
+      "status_labels": "歌回",
+      "last_sing_at": "2026-09-03",
+      "row_key": "她追逐着月光的尽头"
+    },
+    {
       "song_id": 22,
       "song_name": "太聪明",
       "show_as_song_name": "",
@@ -1687,6 +1876,27 @@ window.XSL_DATA = {
       "status_labels": "歌回、自动识别待人工复核",
       "last_sing_at": "2026-08-09",
       "row_key": "跳楼机"
+    },
+    {
+      "song_id": 132,
+      "song_name": "铁花飞 中文版",
+      "show_as_song_name": "",
+      "display_song_name": "铁花飞 中文版",
+      "artist": "时光罅隙间",
+      "artist_search": "铁花飞 中文版 时光罅隙间",
+      "feat_artist": "",
+      "remark": "2026-09-03「也许康复的随便唱唱」21点场；歌切合集【桐人今天睡大觉】【小松绿Viridis】随便唱唱的歌回 歌切合集 2026.09.03 分P12（04:20）。歌切分P标注「铁花飞 中文版 - 时光罅隙间」；原曲 Mili/塞壬唱片-MSR《铁花飞》（明日方舟EP，2026-02）。",
+      "tone": "",
+      "language": "中文",
+      "type": "翻唱、游戏（原曲Mili）",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=12",
+      "sing_count": 1,
+      "status_labels": "歌回",
+      "last_sing_at": "2026-09-03",
+      "row_key": "铁花飞 中文版"
     },
     {
       "song_id": 54,
@@ -1831,7 +2041,7 @@ window.XSL_DATA = {
       "search_name": "",
       "cut_link": "https://www.bilibili.com/video/BV1m9886kEMZ/?p=7",
       "sing_count": 1,
-      "status_labels": "自动识别待人工复核",
+      "status_labels": "清唱、自动识别待人工复核",
       "last_sing_at": "2026-08-23",
       "row_key": "夏恋慕"
     },
@@ -1873,7 +2083,7 @@ window.XSL_DATA = {
       "search_name": "",
       "cut_link": "https://www.bilibili.com/video/BV12o8866EsR/",
       "sing_count": 1,
-      "status_labels": "自动识别待人工复核",
+      "status_labels": "清唱、自动识别待人工复核",
       "last_sing_at": "2026-08-23",
       "row_key": "夏霞"
     },
@@ -1894,9 +2104,51 @@ window.XSL_DATA = {
       "search_name": "",
       "cut_link": "https://www.bilibili.com/video/BV1ta4y6VEQy/",
       "sing_count": 1,
-      "status_labels": "歌回",
+      "status_labels": "歌回、歌切确认",
       "last_sing_at": "2026-08-29",
       "row_key": "想和你迎着台风去看海"
+    },
+    {
+      "song_id": 124,
+      "song_name": "小半",
+      "show_as_song_name": "",
+      "display_song_name": "小半",
+      "artist": "陈粒",
+      "artist_search": "小半 陈粒",
+      "feat_artist": "",
+      "remark": "2026-09-03「也许康复的随便唱唱」21点场；歌切合集【桐人今天睡大觉】【小松绿Viridis】随便唱唱的歌回 歌切合集 2026.09.03 分P4（04:58）。陈粒《小梦大半》专辑曲。",
+      "tone": "",
+      "language": "中文",
+      "type": "民谣、流行",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=4",
+      "sing_count": 1,
+      "status_labels": "歌回",
+      "last_sing_at": "2026-09-03",
+      "row_key": "小半"
+    },
+    {
+      "song_id": 125,
+      "song_name": "小丑的品格",
+      "show_as_song_name": "",
+      "display_song_name": "小丑的品格",
+      "artist": "泠鸢yousa",
+      "artist_search": "小丑的品格 泠鸢yousa",
+      "feat_artist": "",
+      "remark": "2026-09-03「也许康复的随便唱唱」21点场；歌切合集【桐人今天睡大觉】【小松绿Viridis】随便唱唱的歌回 歌切合集 2026.09.03 分P5（04:30）。泠鸢yousa《茜色诗集》(2016) 收录曲（歌切分P标题含专辑名）。",
+      "tone": "",
+      "language": "中文",
+      "type": "原创、流行",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=5",
+      "sing_count": 1,
+      "status_labels": "歌回",
+      "last_sing_at": "2026-09-03",
+      "row_key": "小丑的品格"
     },
     {
       "song_id": 15,
@@ -2025,6 +2277,27 @@ window.XSL_DATA = {
       "row_key": "踊り子"
     },
     {
+      "song_id": 122,
+      "song_name": "有点甜",
+      "show_as_song_name": "",
+      "display_song_name": "有点甜",
+      "artist": "汪苏泷 / By2",
+      "artist_search": "有点甜 汪苏泷 / By2",
+      "feat_artist": "",
+      "remark": "2026-09-03「也许康复的随便唱唱」21点场；歌切合集【桐人今天睡大觉】【小松绿Viridis】随便唱唱的歌回 歌切合集 2026.09.03 分P2（03:52）。汪苏泷与By2对唱甜歌。",
+      "tone": "",
+      "language": "中文",
+      "type": "流行",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=2",
+      "sing_count": 1,
+      "status_labels": "歌回",
+      "last_sing_at": "2026-09-03",
+      "row_key": "有点甜"
+    },
+    {
       "song_id": 2,
       "song_name": "迂回步",
       "show_as_song_name": "",
@@ -2065,6 +2338,27 @@ window.XSL_DATA = {
       "status_labels": "歌切直补、待原始回放定位",
       "last_sing_at": "2026-08-15",
       "row_key": "雨爱"
+    },
+    {
+      "song_id": 134,
+      "song_name": "浴槽とネオンテトラ",
+      "show_as_song_name": "",
+      "display_song_name": "浴槽とネオンテトラ",
+      "artist": "REISAI（feat. v flower）",
+      "artist_search": "浴槽とネオンテトラ REISAI（feat. v flower）",
+      "feat_artist": "",
+      "remark": "2026-09-03「也许康复的随便唱唱」21点场；歌切合集【桐人今天睡大觉】【小松绿Viridis】随便唱唱的歌回 歌切合集 2026.09.03 分P14（06:27）。弹幕歌词窗 01:57:26-02:05:03（浴缸/热带鱼/Darling）；Vocaloid Lyrics Wiki：宛然サカナ/Yopi/REISAI feat. flower，2021-01-02 投稿。歌切分P标注 dongdang（Cover 名）待复核。",
+      "tone": "",
+      "language": "日文",
+      "type": "Vocaloid、日V",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=14",
+      "sing_count": 1,
+      "status_labels": "歌回",
+      "last_sing_at": "2026-09-03",
+      "row_key": "浴槽とネオンテトラ"
     },
     {
       "song_id": 119,
@@ -2151,6 +2445,27 @@ window.XSL_DATA = {
       "row_key": "月巷"
     },
     {
+      "song_id": 121,
+      "song_name": "只对你有感觉",
+      "show_as_song_name": "",
+      "display_song_name": "只对你有感觉",
+      "artist": "飞轮海 / 田馥甄",
+      "artist_search": "只对你有感觉 飞轮海 / 田馥甄",
+      "feat_artist": "",
+      "remark": "2026-09-03「也许康复的随便唱唱」21点场；歌切合集【桐人今天睡大觉】【小松绿Viridis】随便唱唱的歌回 歌切合集 2026.09.03 分P1（02:33）。飞轮海与田馥甄对唱经典（电视剧《东方茱丽叶》插曲）。",
+      "tone": "",
+      "language": "中文",
+      "type": "流行",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=1",
+      "sing_count": 1,
+      "status_labels": "歌回",
+      "last_sing_at": "2026-09-03",
+      "row_key": "只对你有感觉"
+    },
+    {
       "song_id": 88,
       "song_name": "纸星瓶",
       "show_as_song_name": "",
@@ -2235,6 +2550,27 @@ window.XSL_DATA = {
       "row_key": "Fly me to the star"
     },
     {
+      "song_id": 133,
+      "song_name": "Fly, My Wings",
+      "show_as_song_name": "",
+      "display_song_name": "Fly, My Wings",
+      "artist": "Mili",
+      "artist_search": "Fly, My Wings Mili",
+      "feat_artist": "",
+      "remark": "2026-09-03「也许康复的随便唱唱」21点场；歌切合集【桐人今天睡大觉】【小松绿Viridis】随便唱唱的歌回 歌切合集 2026.09.03 分P13（03:14）。Mili 乐团曲；原曲出处待复核（网易云单曲/八音盒版可见）。",
+      "tone": "",
+      "language": "日文/英文",
+      "type": "J-Pop、游戏（待复核出处）",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=13",
+      "sing_count": 1,
+      "status_labels": "歌回",
+      "last_sing_at": "2026-09-03",
+      "row_key": "Fly, My Wings"
+    },
+    {
       "song_id": 86,
       "song_name": "I LOVE U",
       "show_as_song_name": "",
@@ -2254,6 +2590,27 @@ window.XSL_DATA = {
       "status_labels": "歌回、自动识别待人工复核",
       "last_sing_at": "2026-08-20",
       "row_key": "I LOVE U"
+    },
+    {
+      "song_id": 135,
+      "song_name": "March of Time",
+      "show_as_song_name": "",
+      "display_song_name": "March of Time",
+      "artist": "Aimer",
+      "artist_search": "March of Time Aimer",
+      "feat_artist": "",
+      "remark": "2026-09-03「也许康复的随便唱唱」21点场；歌切合集【桐人今天睡大觉】【小松绿Viridis】随便唱唱的歌回 歌切合集 2026.09.03 分P16（01:48）。Aimer《BEST SELECTION \"blanc\"》(2017) 收录。",
+      "tone": "",
+      "language": "日文",
+      "type": "J-Pop",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=16",
+      "sing_count": 1,
+      "status_labels": "歌回",
+      "last_sing_at": "2026-09-03",
+      "row_key": "March of Time"
     },
     {
       "song_id": 73,
@@ -2356,7 +2713,7 @@ window.XSL_DATA = {
       "search_name": "",
       "cut_link": "https://www.bilibili.com/video/BV1Hm4y6AEC3/",
       "sing_count": 1,
-      "status_labels": "歌回",
+      "status_labels": "歌回、歌切确认",
       "last_sing_at": "2026-08-29",
       "row_key": "Talking to the Rain"
     },
@@ -2422,6 +2779,27 @@ window.XSL_DATA = {
       "status_labels": "歌切合集补录、多源歌切交叉验证",
       "last_sing_at": "2026-08-18",
       "row_key": "アスノヨゾラ哨戒班"
+    },
+    {
+      "song_id": 136,
+      "song_name": "あなたに出会わなければ~夏雪冬花~",
+      "show_as_song_name": "",
+      "display_song_name": "あなたに出会わなければ~夏雪冬花~",
+      "artist": "Aimer",
+      "artist_search": "あなたに出会わなければ~夏雪冬花~ Aimer",
+      "feat_artist": "",
+      "remark": "2026-09-03「也许康复的随便唱唱」21点场；歌切合集【桐人今天睡大觉】【小松绿Viridis】随便唱唱的歌回 歌切合集 2026.09.03 分P17（02:14）。弹幕歌词窗 02:10:56-02:13:59（「无可替代的季节/想在你身边一同欢笑」+「AIMER有品/老公」刷屏）；Aimer《絶園のテンペスト》ED 相关名曲。",
+      "tone": "",
+      "language": "日文",
+      "type": "动画、J-Pop",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=17",
+      "sing_count": 1,
+      "status_labels": "歌回",
+      "last_sing_at": "2026-09-03",
+      "row_key": "あなたに出会わなければ~夏雪冬花~"
     },
     {
       "song_id": 55,
@@ -2527,21 +2905,45 @@ window.XSL_DATA = {
       "status_labels": "歌切直补、待原始回放定位",
       "last_sing_at": "2026-08-09",
       "row_key": "プロポーズ"
+    },
+    {
+      "song_id": 138,
+      "song_name": "ミカヅキ",
+      "show_as_song_name": "",
+      "display_song_name": "ミカヅキ",
+      "artist": "さユり",
+      "artist_search": "ミカヅキ さユり",
+      "feat_artist": "",
+      "remark": "2026-09-03「也许康复的随便唱唱」21点场；歌切合集【桐人今天睡大觉】【小松绿Viridis】随便唱唱的歌回 歌切合集 2026.09.03 分P19（04:26）。さユり《乱步奇谭》ED。",
+      "tone": "",
+      "language": "日文",
+      "type": "动画、J-Pop",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=19",
+      "sing_count": 1,
+      "status_labels": "歌回",
+      "last_sing_at": "2026-09-03",
+      "row_key": "ミカヅキ"
     }
   ]
 },
   history_index: {
   "roomKey": "xiaosonglu",
   "roomId": "1727071052",
-  "generatedAt": "2026-08-29T13:05:11.280Z",
+  "generatedAt": "2026-09-04T14:52:39.131Z",
   "source": "local-replay-ingestion",
   "latest": {
     "year": "2026",
-    "month": "08",
-    "day": "29"
+    "month": "09",
+    "day": "03"
   },
   "dateTree": {
     "2026": {
+      "09": {
+        "03": 21
+      },
       "08": {
         "10": 3,
         "11": 16,
@@ -3165,7 +3567,6 @@ window.XSL_DATA = {
         "song_name": "炼金少女日志",
         "sing_time": "",
         "statuses": [
-          "歌切章节验证",
           "自动识别待人工复核"
         ],
         "artist": "时之歌Project（泛音堂）/ 言和",
@@ -3518,7 +3919,6 @@ window.XSL_DATA = {
         "song_name": "四重罪孽",
         "sing_time": "",
         "statuses": [
-          "歌切章节验证",
           "自动识别待人工复核"
         ],
         "artist": "DELA / 雨狸 / 洛天依、言和、乐正绫",
@@ -3536,7 +3936,6 @@ window.XSL_DATA = {
         "song_name": "月出",
         "sing_time": "",
         "statuses": [
-          "歌切章节验证",
           "自动识别待人工复核"
         ],
         "artist": "双笙（词：温莨 / 曲：徐梦圆）",
@@ -3554,7 +3953,6 @@ window.XSL_DATA = {
         "song_name": "女孩你为何踮脚尖",
         "sing_time": "",
         "statuses": [
-          "歌切章节验证",
           "自动识别待人工复核"
         ],
         "artist": "Ddickky / 墨兰花语 / 洛天依",
@@ -3572,7 +3970,6 @@ window.XSL_DATA = {
         "song_name": "虚拟",
         "sing_time": "",
         "statuses": [
-          "歌切章节验证",
           "自动识别待人工复核"
         ],
         "artist": "陈粒",
@@ -3590,7 +3987,6 @@ window.XSL_DATA = {
         "song_name": "蝴蝶",
         "sing_time": "",
         "statuses": [
-          "歌切章节验证",
           "自动识别待人工复核"
         ],
         "artist": "洛天依Official",
@@ -4461,7 +4857,6 @@ window.XSL_DATA = {
         "sing_time": "02:33:30",
         "statuses": [
           "清唱",
-          "歌切章节验证",
           "自动识别待人工复核"
         ],
         "artist": "Kide / Ddickky / 星尘",
@@ -4573,8 +4968,7 @@ window.XSL_DATA = {
         "song_name": "初恋日記",
         "sing_time": "",
         "statuses": [
-          "歌回",
-          "歌切章节验证"
+          "歌回"
         ],
         "artist": "香椎モイミ / 音街鳗",
         "replay_id": "BV1RL4k6jEe8",
@@ -4591,8 +4985,7 @@ window.XSL_DATA = {
         "song_name": "是风动",
         "sing_time": "",
         "statuses": [
-          "歌回",
-          "歌切章节验证"
+          "歌回"
         ],
         "artist": "银临 / 河图",
         "replay_id": "BV1RL4k6jEe8",
@@ -4609,8 +5002,7 @@ window.XSL_DATA = {
         "song_name": "下个夏天的烟火",
         "sing_time": "",
         "statuses": [
-          "歌回",
-          "歌切章节验证"
+          "歌回"
         ],
         "artist": "Cidai Jun / 海伊",
         "replay_id": "BV1RL4k6jEe8",
@@ -4627,8 +5019,7 @@ window.XSL_DATA = {
         "song_name": "绮凝盏",
         "sing_time": "",
         "statuses": [
-          "歌回",
-          "歌切章节验证"
+          "歌回"
         ],
         "artist": "MeLo / 海伊",
         "replay_id": "BV1RL4k6jEe8",
@@ -4645,8 +5036,7 @@ window.XSL_DATA = {
         "song_name": "夏日已所剩无几",
         "sing_time": "",
         "statuses": [
-          "歌回",
-          "歌切章节验证"
+          "歌回"
         ],
         "artist": "泠鸢yousa",
         "replay_id": "BV1RL4k6jEe8",
@@ -4663,8 +5053,7 @@ window.XSL_DATA = {
         "song_name": "远旅休憩中的邂逅",
         "sing_time": "",
         "statuses": [
-          "歌回",
-          "歌切章节验证"
+          "歌回"
         ],
         "artist": "泠鸢yousa",
         "replay_id": "BV1RL4k6jEe8",
@@ -4681,8 +5070,7 @@ window.XSL_DATA = {
         "song_name": "サリシノハラ（离去之原）",
         "sing_time": "",
         "statuses": [
-          "歌回",
-          "歌切章节验证"
+          "歌回"
         ],
         "artist": "みきとP / 初音ミク",
         "replay_id": "BV1RL4k6jEe8",
@@ -4808,8 +5196,7 @@ window.XSL_DATA = {
         "sing_time": "01:02:00",
         "statuses": [
           "歌回",
-          "自动识别待人工复核",
-          "歌切章节验证"
+          "自动识别待人工复核"
         ],
         "artist": "忘川风华录 / 赤羽、星尘",
         "replay_id": "BV1RL4k6jEe8",
@@ -4845,8 +5232,7 @@ window.XSL_DATA = {
         "sing_time": "01:28:00",
         "statuses": [
           "歌回",
-          "自动识别待人工复核",
-          "歌切章节验证"
+          "自动识别待人工复核"
         ],
         "artist": "玖玲 / 冥凰 / 泠鸢yousa",
         "replay_id": "BV1RL4k6jEe8",
@@ -4882,8 +5268,7 @@ window.XSL_DATA = {
         "sing_time": "02:00:00",
         "statuses": [
           "歌回",
-          "自动识别待人工复核",
-          "歌切章节验证"
+          "自动识别待人工复核"
         ],
         "artist": "银临 / 初音未来",
         "replay_id": "BV1RL4k6jEe8",
@@ -4896,13 +5281,372 @@ window.XSL_DATA = {
         "song_resolution_method": "danmaku-evidence + song-cut-compilation-chapter",
         "cut_link": "https://www.bilibili.com/video/BV1gm4C65Ey6/?p=15"
       }
+    ],
+    "2026-09-03": [
+      {
+        "song_name": "只对你有感觉",
+        "sing_time": "",
+        "statuses": [
+          "歌回"
+        ],
+        "artist": "飞轮海 / 田馥甄",
+        "replay_id": "BV1vetf6AE5y",
+        "replay_title": "【小松绿Viridis】也许康复的随便唱唱 2026年09月03日21点场",
+        "replay_url": "https://www.bilibili.com/video/BV1vetf6AE5y/",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "只对你有感觉",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-compilation-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=1"
+      },
+      {
+        "song_name": "有点甜",
+        "sing_time": "",
+        "statuses": [
+          "歌回"
+        ],
+        "artist": "汪苏泷 / By2",
+        "replay_id": "BV1vetf6AE5y",
+        "replay_title": "【小松绿Viridis】也许康复的随便唱唱 2026年09月03日21点场",
+        "replay_url": "https://www.bilibili.com/video/BV1vetf6AE5y/",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "有点甜",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-compilation-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=2"
+      },
+      {
+        "song_name": "别找我麻烦",
+        "sing_time": "",
+        "statuses": [
+          "歌回"
+        ],
+        "artist": "蔡健雅",
+        "replay_id": "BV1vetf6AE5y",
+        "replay_title": "【小松绿Viridis】也许康复的随便唱唱 2026年09月03日21点场",
+        "replay_url": "https://www.bilibili.com/video/BV1vetf6AE5y/",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "别找我麻烦",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-compilation-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=3"
+      },
+      {
+        "song_name": "小半",
+        "sing_time": "",
+        "statuses": [
+          "歌回"
+        ],
+        "artist": "陈粒",
+        "replay_id": "BV1vetf6AE5y",
+        "replay_title": "【小松绿Viridis】也许康复的随便唱唱 2026年09月03日21点场",
+        "replay_url": "https://www.bilibili.com/video/BV1vetf6AE5y/",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "小半",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-compilation-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=4"
+      },
+      {
+        "song_name": "小丑的品格",
+        "sing_time": "",
+        "statuses": [
+          "歌回"
+        ],
+        "artist": "泠鸢yousa",
+        "replay_id": "BV1vetf6AE5y",
+        "replay_title": "【小松绿Viridis】也许康复的随便唱唱 2026年09月03日21点场",
+        "replay_url": "https://www.bilibili.com/video/BV1vetf6AE5y/",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "小丑的品格",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-compilation-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=5"
+      },
+      {
+        "song_name": "东风志",
+        "sing_time": "",
+        "statuses": [
+          "歌回"
+        ],
+        "artist": "银临",
+        "replay_id": "BV1vetf6AE5y",
+        "replay_title": "【小松绿Viridis】也许康复的随便唱唱 2026年09月03日21点场",
+        "replay_url": "https://www.bilibili.com/video/BV1vetf6AE5y/",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "东风志",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-compilation-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=6"
+      },
+      {
+        "song_name": "她追逐着月光的尽头",
+        "sing_time": "",
+        "statuses": [
+          "歌回"
+        ],
+        "artist": "石榴皮_ / 诗岸",
+        "replay_id": "BV1vetf6AE5y",
+        "replay_title": "【小松绿Viridis】也许康复的随便唱唱 2026年09月03日21点场",
+        "replay_url": "https://www.bilibili.com/video/BV1vetf6AE5y/",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "她追逐着月光的尽头",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-compilation-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=7"
+      },
+      {
+        "song_name": "焦糖星",
+        "sing_time": "",
+        "statuses": [
+          "歌回"
+        ],
+        "artist": "",
+        "replay_id": "BV1vetf6AE5y",
+        "replay_title": "【小松绿Viridis】也许康复的随便唱唱 2026年09月03日21点场",
+        "replay_url": "https://www.bilibili.com/video/BV1vetf6AE5y/",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "焦糖星",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-compilation-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=8"
+      },
+      {
+        "song_name": "腐草为萤",
+        "sing_time": "",
+        "statuses": [
+          "歌回"
+        ],
+        "artist": "银临",
+        "replay_id": "BV1vetf6AE5y",
+        "replay_title": "【小松绿Viridis】也许康复的随便唱唱 2026年09月03日21点场",
+        "replay_url": "https://www.bilibili.com/video/BV1vetf6AE5y/",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "腐草为萤",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-compilation-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=10"
+      },
+      {
+        "song_name": "深夜诗人",
+        "sing_time": "",
+        "statuses": [
+          "歌回"
+        ],
+        "artist": "洛天依 / 言和 / ilem",
+        "replay_id": "BV1vetf6AE5y",
+        "replay_title": "【小松绿Viridis】也许康复的随便唱唱 2026年09月03日21点场",
+        "replay_url": "https://www.bilibili.com/video/BV1vetf6AE5y/",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "深夜诗人",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-compilation-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=11"
+      },
+      {
+        "song_name": "铁花飞 中文版",
+        "sing_time": "",
+        "statuses": [
+          "歌回"
+        ],
+        "artist": "时光罅隙间",
+        "replay_id": "BV1vetf6AE5y",
+        "replay_title": "【小松绿Viridis】也许康复的随便唱唱 2026年09月03日21点场",
+        "replay_url": "https://www.bilibili.com/video/BV1vetf6AE5y/",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "铁花飞 中文版",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-compilation-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=12"
+      },
+      {
+        "song_name": "Fly, My Wings",
+        "sing_time": "",
+        "statuses": [
+          "歌回"
+        ],
+        "artist": "Mili",
+        "replay_id": "BV1vetf6AE5y",
+        "replay_title": "【小松绿Viridis】也许康复的随便唱唱 2026年09月03日21点场",
+        "replay_url": "https://www.bilibili.com/video/BV1vetf6AE5y/",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "Fly, My Wings",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-compilation-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=13"
+      },
+      {
+        "song_name": "偏食",
+        "sing_time": "",
+        "statuses": [
+          "歌回"
+        ],
+        "artist": "香椎モイミ / 初音ミク",
+        "replay_id": "BV1vetf6AE5y",
+        "replay_title": "【小松绿Viridis】也许康复的随便唱唱 2026年09月03日21点场",
+        "replay_url": "https://www.bilibili.com/video/BV1vetf6AE5y/",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "偏食",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-compilation-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=15"
+      },
+      {
+        "song_name": "March of Time",
+        "sing_time": "",
+        "statuses": [
+          "歌回"
+        ],
+        "artist": "Aimer",
+        "replay_id": "BV1vetf6AE5y",
+        "replay_title": "【小松绿Viridis】也许康复的随便唱唱 2026年09月03日21点场",
+        "replay_url": "https://www.bilibili.com/video/BV1vetf6AE5y/",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "March of Time",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-compilation-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=16"
+      },
+      {
+        "song_name": "花の塔",
+        "sing_time": "",
+        "statuses": [
+          "歌回"
+        ],
+        "artist": "さユり",
+        "replay_id": "BV1vetf6AE5y",
+        "replay_title": "【小松绿Viridis】也许康复的随便唱唱 2026年09月03日21点场",
+        "replay_url": "https://www.bilibili.com/video/BV1vetf6AE5y/",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "花の塔",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-compilation-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=18"
+      },
+      {
+        "song_name": "ミカヅキ",
+        "sing_time": "",
+        "statuses": [
+          "歌回"
+        ],
+        "artist": "さユり",
+        "replay_id": "BV1vetf6AE5y",
+        "replay_title": "【小松绿Viridis】也许康复的随便唱唱 2026年09月03日21点场",
+        "replay_url": "https://www.bilibili.com/video/BV1vetf6AE5y/",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "ミカヅキ",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-compilation-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=19"
+      },
+      {
+        "song_name": "食虫植物",
+        "sing_time": "",
+        "statuses": [
+          "歌回"
+        ],
+        "artist": "理芽",
+        "replay_id": "BV1vetf6AE5y",
+        "replay_title": "【小松绿Viridis】也许康复的随便唱唱 2026年09月03日21点场",
+        "replay_url": "https://www.bilibili.com/video/BV1vetf6AE5y/",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "食虫植物",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-compilation-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=20"
+      },
+      {
+        "song_name": "十万个春天",
+        "sing_time": "01:12:57",
+        "statuses": [
+          "歌回"
+        ],
+        "artist": "娅娅酱 / 洛天依",
+        "replay_id": "BV1vetf6AE5y",
+        "replay_title": "【小松绿Viridis】也许康复的随便唱唱 2026年09月03日21点场",
+        "replay_url": "https://www.bilibili.com/video/BV1vetf6AE5y/",
+        "start_time": "01:12:57",
+        "end_time": "01:14:10",
+        "row_key": "十万个春天",
+        "lyric_excerpt": "【】歌词弹幕命中窗口 01:12:57~01:14:10",
+        "song_resolution_method": "song-cut-chapter + danmaku-lyric",
+        "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=9"
+      },
+      {
+        "song_name": "浴槽とネオンテトラ",
+        "sing_time": "01:57:26",
+        "statuses": [
+          "歌回"
+        ],
+        "artist": "REISAI（feat. v flower）",
+        "replay_id": "BV1vetf6AE5y",
+        "replay_title": "【小松绿Viridis】也许康复的随便唱唱 2026年09月03日21点场",
+        "replay_url": "https://www.bilibili.com/video/BV1vetf6AE5y/",
+        "start_time": "01:57:26",
+        "end_time": "02:05:03",
+        "row_key": "浴槽とネオンテトラ",
+        "lyric_excerpt": "【】歌词弹幕命中窗口 01:57:26~02:05:03",
+        "song_resolution_method": "song-cut-chapter + danmaku-lyric",
+        "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=14"
+      },
+      {
+        "song_name": "あなたに出会わなければ~夏雪冬花~",
+        "sing_time": "02:10:56",
+        "statuses": [
+          "歌回"
+        ],
+        "artist": "Aimer",
+        "replay_id": "BV1vetf6AE5y",
+        "replay_title": "【小松绿Viridis】也许康复的随便唱唱 2026年09月03日21点场",
+        "replay_url": "https://www.bilibili.com/video/BV1vetf6AE5y/",
+        "start_time": "02:10:56",
+        "end_time": "02:13:59",
+        "row_key": "あなたに出会わなければ~夏雪冬花~",
+        "lyric_excerpt": "【】歌词弹幕命中窗口 02:10:56~02:13:59",
+        "song_resolution_method": "song-cut-chapter + danmaku-lyric",
+        "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=17"
+      },
+      {
+        "song_name": "如果有来生",
+        "sing_time": "02:53:12",
+        "statuses": [
+          "歌回"
+        ],
+        "artist": "谭维维",
+        "replay_id": "BV1vetf6AE5y",
+        "replay_title": "【小松绿Viridis】也许康复的随便唱唱 2026年09月03日21点场",
+        "replay_url": "https://www.bilibili.com/video/BV1vetf6AE5y/",
+        "start_time": "02:53:12",
+        "end_time": "02:55:02",
+        "row_key": "如果有来生",
+        "lyric_excerpt": "【】歌词弹幕命中窗口 02:53:12~02:55:02",
+        "song_resolution_method": "song-cut-chapter + danmaku-lyric",
+        "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=21"
+      }
     ]
   }
 },
   song_details: {
   "roomKey": "xiaosonglu",
   "roomId": "1727071052",
-  "generatedAt": "2026-08-29T13:05:11.280Z",
+  "generatedAt": "2026-09-04T14:52:39.131Z",
   "source": "local-replay-ingestion",
   "bySongKey": {
     "少女レイ": {
@@ -5686,8 +6430,23 @@ window.XSL_DATA = {
       "display_song_name": "偏食",
       "artist": "香椎モイミ / 初音ミク",
       "cut_link": "https://www.bilibili.com/video/BV1yJu16bETb/",
-      "total_count": 1,
+      "total_count": 2,
       "entries": [
+        {
+          "date": "2026-09-03",
+          "time": "",
+          "end_time": "",
+          "status": "歌回",
+          "artist": "香椎モイミ / 初音ミク",
+          "replay_id": "BV1vetf6AE5y",
+          "replay_title": "【小松绿Viridis】也许康复的随便唱唱 2026年09月03日21点场",
+          "replay_url": "https://www.bilibili.com/video/BV1vetf6AE5y/",
+          "remark": "2026-09-03「也许康复的随便唱唱」21点场；歌切合集【桐人今天睡大觉】【小松绿Viridis】随便唱唱的歌回 歌切合集 2026.09.03 分P15（03:43）。已在库（song 29，2026-08-11 收录），本日复唱补 segment。",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-compilation-chapter",
+          "replay_date_source": "replay-title",
+          "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=15"
+        },
         {
           "date": "2026-08-11",
           "time": "",
@@ -5761,8 +6520,23 @@ window.XSL_DATA = {
       "display_song_name": "食虫植物",
       "artist": "理芽",
       "cut_link": "https://www.bilibili.com/video/BV1fUuy6SEYm/",
-      "total_count": 1,
+      "total_count": 2,
       "entries": [
+        {
+          "date": "2026-09-03",
+          "time": "",
+          "end_time": "",
+          "status": "歌回",
+          "artist": "理芽",
+          "replay_id": "BV1vetf6AE5y",
+          "replay_title": "【小松绿Viridis】也许康复的随便唱唱 2026年09月03日21点场",
+          "replay_url": "https://www.bilibili.com/video/BV1vetf6AE5y/",
+          "remark": "2026-09-03「也许康复的随便唱唱」21点场；歌切合集【桐人今天睡大觉】【小松绿Viridis】随便唱唱的歌回 歌切合集 2026.09.03 分P20（02:42）。已在库（song 32，2026-08-11 收录），本日复唱补 segment；理芽(KAMITSUBAKI) 2021《NEW ROMANCER》。",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-compilation-chapter",
+          "replay_date_source": "replay-title",
+          "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=20"
+        },
         {
           "date": "2026-08-11",
           "time": "",
@@ -6672,7 +7446,7 @@ window.XSL_DATA = {
           "date": "2026-08-15",
           "time": "",
           "end_time": "",
-          "status": "歌切章节验证、自动识别待人工复核",
+          "status": "自动识别待人工复核",
           "artist": "洛天依Official",
           "replay_id": "BV1vzb26PEpJ",
           "replay_title": "【小松绿Viridis】歌？杂？-2026年08月15日20点场",
@@ -7397,7 +8171,7 @@ window.XSL_DATA = {
           "date": "2026-08-23",
           "time": "02:33:30",
           "end_time": "02:37:40",
-          "status": "清唱、歌切章节验证、自动识别待人工复核",
+          "status": "清唱、自动识别待人工复核",
           "artist": "Kide / Ddickky / 星尘",
           "replay_id": "BV1758h6FEmv",
           "replay_title": "【小松绿Viridis】行道树投稿回（2）-2026年08月23日21点场",
@@ -7637,7 +8411,7 @@ window.XSL_DATA = {
           "date": "2026-08-29",
           "time": "01:02:00",
           "end_time": "01:07:00",
-          "status": "歌回、自动识别待人工复核、歌切章节验证",
+          "status": "歌回、自动识别待人工复核",
           "artist": "忘川风华录 / 赤羽、星尘",
           "replay_id": "BV1RL4k6jEe8",
           "replay_title": "【小松绿Viridis】突击的随便唱-2026年08月29日13点场",
@@ -7687,7 +8461,7 @@ window.XSL_DATA = {
           "date": "2026-08-29",
           "time": "01:28:00",
           "end_time": "01:36:00",
-          "status": "歌回、自动识别待人工复核、歌切章节验证",
+          "status": "歌回、自动识别待人工复核",
           "artist": "玖玲 / 冥凰 / 泠鸢yousa",
           "replay_id": "BV1RL4k6jEe8",
           "replay_title": "【小松绿Viridis】突击的随便唱-2026年08月29日13点场",
@@ -7712,7 +8486,7 @@ window.XSL_DATA = {
           "date": "2026-08-29",
           "time": "02:00:00",
           "end_time": "02:03:30",
-          "status": "歌回、自动识别待人工复核、歌切章节验证",
+          "status": "歌回、自动识别待人工复核",
           "artist": "银临 / 初音未来",
           "replay_id": "BV1RL4k6jEe8",
           "replay_title": "【小松绿Viridis】突击的随便唱-2026年08月29日13点场",
@@ -7737,7 +8511,7 @@ window.XSL_DATA = {
           "date": "2026-08-11",
           "time": "",
           "end_time": "",
-          "status": "歌切章节验证、自动识别待人工复核",
+          "status": "自动识别待人工复核",
           "artist": "时之歌Project（泛音堂）/ 言和",
           "replay_id": "BV1ujuB6EE6y",
           "replay_title": "【直播回放】中v歌回（半场 2026年08月11日18点场",
@@ -7762,7 +8536,7 @@ window.XSL_DATA = {
           "date": "2026-08-15",
           "time": "",
           "end_time": "",
-          "status": "歌切章节验证、自动识别待人工复核",
+          "status": "自动识别待人工复核",
           "artist": "DELA / 雨狸 / 洛天依、言和、乐正绫",
           "replay_id": "BV1vzb26PEpJ",
           "replay_title": "【小松绿Viridis】歌？杂？-2026年08月15日20点场",
@@ -7787,7 +8561,7 @@ window.XSL_DATA = {
           "date": "2026-08-15",
           "time": "",
           "end_time": "",
-          "status": "歌切章节验证、自动识别待人工复核",
+          "status": "自动识别待人工复核",
           "artist": "双笙（词：温莨 / 曲：徐梦圆）",
           "replay_id": "BV1vzb26PEpJ",
           "replay_title": "【小松绿Viridis】歌？杂？-2026年08月15日20点场",
@@ -7812,7 +8586,7 @@ window.XSL_DATA = {
           "date": "2026-08-15",
           "time": "",
           "end_time": "",
-          "status": "歌切章节验证、自动识别待人工复核",
+          "status": "自动识别待人工复核",
           "artist": "Ddickky / 墨兰花语 / 洛天依",
           "replay_id": "BV1vzb26PEpJ",
           "replay_title": "【小松绿Viridis】歌？杂？-2026年08月15日20点场",
@@ -7837,7 +8611,7 @@ window.XSL_DATA = {
           "date": "2026-08-15",
           "time": "",
           "end_time": "",
-          "status": "歌切章节验证、自动识别待人工复核",
+          "status": "自动识别待人工复核",
           "artist": "陈粒",
           "replay_id": "BV1vzb26PEpJ",
           "replay_title": "【小松绿Viridis】歌？杂？-2026年08月15日20点场",
@@ -7862,7 +8636,7 @@ window.XSL_DATA = {
           "date": "2026-08-29",
           "time": "",
           "end_time": "",
-          "status": "歌回、歌切章节验证",
+          "status": "歌回",
           "artist": "香椎モイミ / 音街鳗",
           "replay_id": "BV1RL4k6jEe8",
           "replay_title": "【小松绿Viridis】突击的随便唱-2026年08月29日13点场",
@@ -7887,7 +8661,7 @@ window.XSL_DATA = {
           "date": "2026-08-29",
           "time": "",
           "end_time": "",
-          "status": "歌回、歌切章节验证",
+          "status": "歌回",
           "artist": "银临 / 河图",
           "replay_id": "BV1RL4k6jEe8",
           "replay_title": "【小松绿Viridis】突击的随便唱-2026年08月29日13点场",
@@ -7912,7 +8686,7 @@ window.XSL_DATA = {
           "date": "2026-08-29",
           "time": "",
           "end_time": "",
-          "status": "歌回、歌切章节验证",
+          "status": "歌回",
           "artist": "Cidai Jun / 海伊",
           "replay_id": "BV1RL4k6jEe8",
           "replay_title": "【小松绿Viridis】突击的随便唱-2026年08月29日13点场",
@@ -7937,7 +8711,7 @@ window.XSL_DATA = {
           "date": "2026-08-29",
           "time": "",
           "end_time": "",
-          "status": "歌回、歌切章节验证",
+          "status": "歌回",
           "artist": "MeLo / 海伊",
           "replay_id": "BV1RL4k6jEe8",
           "replay_title": "【小松绿Viridis】突击的随便唱-2026年08月29日13点场",
@@ -7962,7 +8736,7 @@ window.XSL_DATA = {
           "date": "2026-08-29",
           "time": "",
           "end_time": "",
-          "status": "歌回、歌切章节验证",
+          "status": "歌回",
           "artist": "泠鸢yousa",
           "replay_id": "BV1RL4k6jEe8",
           "replay_title": "【小松绿Viridis】突击的随便唱-2026年08月29日13点场",
@@ -7987,7 +8761,7 @@ window.XSL_DATA = {
           "date": "2026-08-29",
           "time": "",
           "end_time": "",
-          "status": "歌回、歌切章节验证",
+          "status": "歌回",
           "artist": "泠鸢yousa",
           "replay_id": "BV1RL4k6jEe8",
           "replay_title": "【小松绿Viridis】突击的随便唱-2026年08月29日13点场",
@@ -8012,7 +8786,7 @@ window.XSL_DATA = {
           "date": "2026-08-29",
           "time": "",
           "end_time": "",
-          "status": "歌回、歌切章节验证",
+          "status": "歌回",
           "artist": "みきとP / 初音ミク",
           "replay_id": "BV1RL4k6jEe8",
           "replay_title": "【小松绿Viridis】突击的随便唱-2026年08月29日13点场",
@@ -8022,6 +8796,481 @@ window.XSL_DATA = {
           "song_resolution_method": "song-cut-compilation-chapter",
           "replay_date_source": "replay-title",
           "cut_link": "https://www.bilibili.com/video/BV1gm4C65Ey6/?p=14"
+        }
+      ]
+    },
+    "只对你有感觉": {
+      "row_key": "只对你有感觉",
+      "song_name": "只对你有感觉",
+      "display_song_name": "只对你有感觉",
+      "artist": "飞轮海 / 田馥甄",
+      "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=1",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-09-03",
+          "time": "",
+          "end_time": "",
+          "status": "歌回",
+          "artist": "飞轮海 / 田馥甄",
+          "replay_id": "BV1vetf6AE5y",
+          "replay_title": "【小松绿Viridis】也许康复的随便唱唱 2026年09月03日21点场",
+          "replay_url": "https://www.bilibili.com/video/BV1vetf6AE5y/",
+          "remark": "2026-09-03「也许康复的随便唱唱」21点场；歌切合集【桐人今天睡大觉】【小松绿Viridis】随便唱唱的歌回 歌切合集 2026.09.03 分P1（02:33）。飞轮海与田馥甄对唱经典（电视剧《东方茱丽叶》插曲）。",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-compilation-chapter",
+          "replay_date_source": "replay-title",
+          "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=1"
+        }
+      ]
+    },
+    "有点甜": {
+      "row_key": "有点甜",
+      "song_name": "有点甜",
+      "display_song_name": "有点甜",
+      "artist": "汪苏泷 / By2",
+      "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=2",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-09-03",
+          "time": "",
+          "end_time": "",
+          "status": "歌回",
+          "artist": "汪苏泷 / By2",
+          "replay_id": "BV1vetf6AE5y",
+          "replay_title": "【小松绿Viridis】也许康复的随便唱唱 2026年09月03日21点场",
+          "replay_url": "https://www.bilibili.com/video/BV1vetf6AE5y/",
+          "remark": "2026-09-03「也许康复的随便唱唱」21点场；歌切合集【桐人今天睡大觉】【小松绿Viridis】随便唱唱的歌回 歌切合集 2026.09.03 分P2（03:52）。汪苏泷与By2对唱甜歌。",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-compilation-chapter",
+          "replay_date_source": "replay-title",
+          "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=2"
+        }
+      ]
+    },
+    "别找我麻烦": {
+      "row_key": "别找我麻烦",
+      "song_name": "别找我麻烦",
+      "display_song_name": "别找我麻烦",
+      "artist": "蔡健雅",
+      "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=3",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-09-03",
+          "time": "",
+          "end_time": "",
+          "status": "歌回",
+          "artist": "蔡健雅",
+          "replay_id": "BV1vetf6AE5y",
+          "replay_title": "【小松绿Viridis】也许康复的随便唱唱 2026年09月03日21点场",
+          "replay_url": "https://www.bilibili.com/video/BV1vetf6AE5y/",
+          "remark": "2026-09-03「也许康复的随便唱唱」21点场；歌切合集【桐人今天睡大觉】【小松绿Viridis】随便唱唱的歌回 歌切合集 2026.09.03 分P3（04:11）。蔡健雅《说到爱》专辑经典（Bossanova 风）。",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-compilation-chapter",
+          "replay_date_source": "replay-title",
+          "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=3"
+        }
+      ]
+    },
+    "小半": {
+      "row_key": "小半",
+      "song_name": "小半",
+      "display_song_name": "小半",
+      "artist": "陈粒",
+      "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=4",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-09-03",
+          "time": "",
+          "end_time": "",
+          "status": "歌回",
+          "artist": "陈粒",
+          "replay_id": "BV1vetf6AE5y",
+          "replay_title": "【小松绿Viridis】也许康复的随便唱唱 2026年09月03日21点场",
+          "replay_url": "https://www.bilibili.com/video/BV1vetf6AE5y/",
+          "remark": "2026-09-03「也许康复的随便唱唱」21点场；歌切合集【桐人今天睡大觉】【小松绿Viridis】随便唱唱的歌回 歌切合集 2026.09.03 分P4（04:58）。陈粒《小梦大半》专辑曲。",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-compilation-chapter",
+          "replay_date_source": "replay-title",
+          "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=4"
+        }
+      ]
+    },
+    "小丑的品格": {
+      "row_key": "小丑的品格",
+      "song_name": "小丑的品格",
+      "display_song_name": "小丑的品格",
+      "artist": "泠鸢yousa",
+      "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=5",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-09-03",
+          "time": "",
+          "end_time": "",
+          "status": "歌回",
+          "artist": "泠鸢yousa",
+          "replay_id": "BV1vetf6AE5y",
+          "replay_title": "【小松绿Viridis】也许康复的随便唱唱 2026年09月03日21点场",
+          "replay_url": "https://www.bilibili.com/video/BV1vetf6AE5y/",
+          "remark": "2026-09-03「也许康复的随便唱唱」21点场；歌切合集【桐人今天睡大觉】【小松绿Viridis】随便唱唱的歌回 歌切合集 2026.09.03 分P5（04:30）。泠鸢yousa《茜色诗集》(2016) 收录曲（歌切分P标题含专辑名）。",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-compilation-chapter",
+          "replay_date_source": "replay-title",
+          "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=5"
+        }
+      ]
+    },
+    "东风志": {
+      "row_key": "东风志",
+      "song_name": "东风志",
+      "display_song_name": "东风志",
+      "artist": "银临",
+      "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=6",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-09-03",
+          "time": "",
+          "end_time": "",
+          "status": "歌回",
+          "artist": "银临",
+          "replay_id": "BV1vetf6AE5y",
+          "replay_title": "【小松绿Viridis】也许康复的随便唱唱 2026年09月03日21点场",
+          "replay_url": "https://www.bilibili.com/video/BV1vetf6AE5y/",
+          "remark": "2026-09-03「也许康复的随便唱唱」21点场；歌切合集【桐人今天睡大觉】【小松绿Viridis】随便唱唱的歌回 歌切合集 2026.09.03 分P6（04:38）。歌切分P标注 cover Aki阿杰；Aki阿杰 2016-06-09《东风志》（银临与慕寒亦有合作版）→ 本场演唱为银临版。",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-compilation-chapter",
+          "replay_date_source": "replay-title",
+          "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=6"
+        }
+      ]
+    },
+    "她追逐着月光的尽头": {
+      "row_key": "她追逐着月光的尽头",
+      "song_name": "她追逐着月光的尽头",
+      "display_song_name": "她追逐着月光的尽头",
+      "artist": "石榴皮_ / 诗岸",
+      "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=7",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-09-03",
+          "time": "",
+          "end_time": "",
+          "status": "歌回",
+          "artist": "石榴皮_ / 诗岸",
+          "replay_id": "BV1vetf6AE5y",
+          "replay_title": "【小松绿Viridis】也许康复的随便唱唱 2026年09月03日21点场",
+          "replay_url": "https://www.bilibili.com/video/BV1vetf6AE5y/",
+          "remark": "2026-09-03「也许康复的随便唱唱」21点场；歌切合集【桐人今天睡大觉】【小松绿Viridis】随便唱唱的歌回 歌切合集 2026.09.03 分P7（03:48）。石榴皮_ 与诗岸（SV）2020《月光入侵计划》收录。",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-compilation-chapter",
+          "replay_date_source": "replay-title",
+          "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=7"
+        }
+      ]
+    },
+    "焦糖星": {
+      "row_key": "焦糖星",
+      "song_name": "焦糖星",
+      "display_song_name": "焦糖星",
+      "artist": "",
+      "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=8",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-09-03",
+          "time": "",
+          "end_time": "",
+          "status": "歌回",
+          "artist": "",
+          "replay_id": "BV1vetf6AE5y",
+          "replay_title": "【小松绿Viridis】也许康复的随便唱唱 2026年09月03日21点场",
+          "replay_url": "https://www.bilibili.com/video/BV1vetf6AE5y/",
+          "remark": "2026-09-03「也许康复的随便唱唱」21点场；歌切合集【桐人今天睡大觉】【小松绿Viridis】随便唱唱的歌回 歌切合集 2026.09.03 分P8（03:55）。歌切分P无歌手标注；网易云同名为「焦糖星」有 X Studio洛天依（忆零）版、warma 人声本家（作曲味素/词大九_LN，日文初音本家 av30963867、诗岸赤羽SV中文本家 av56433925）→ 版本待复核。",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-compilation-chapter",
+          "replay_date_source": "replay-title",
+          "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=8"
+        }
+      ]
+    },
+    "十万个春天": {
+      "row_key": "十万个春天",
+      "song_name": "十万个春天",
+      "display_song_name": "十万个春天",
+      "artist": "娅娅酱 / 洛天依",
+      "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=9",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-09-03",
+          "time": "01:12:57",
+          "end_time": "01:14:10",
+          "status": "歌回",
+          "artist": "娅娅酱 / 洛天依",
+          "replay_id": "BV1vetf6AE5y",
+          "replay_title": "【小松绿Viridis】也许康复的随便唱唱 2026年09月03日21点场",
+          "replay_url": "https://www.bilibili.com/video/BV1vetf6AE5y/",
+          "remark": "2026-09-03「也许康复的随便唱唱」21点场；歌切合集【桐人今天睡大觉】【小松绿Viridis】随便唱唱的歌回 歌切合集 2026.09.03 分P9（03:02）。弹幕歌词窗 01:12:57-01:14:10（「十万个春天在我心中」）；网易云：娅娅酱/洛天依《十万个春天》。",
+          "lyric_excerpt": "【】歌词弹幕命中窗口 01:12:57~01:14:10",
+          "song_resolution_method": "song-cut-chapter + danmaku-lyric",
+          "replay_date_source": "replay-title",
+          "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=9"
+        }
+      ]
+    },
+    "腐草为萤": {
+      "row_key": "腐草为萤",
+      "song_name": "腐草为萤",
+      "display_song_name": "腐草为萤",
+      "artist": "银临",
+      "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=10",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-09-03",
+          "time": "",
+          "end_time": "",
+          "status": "歌回",
+          "artist": "银临",
+          "replay_id": "BV1vetf6AE5y",
+          "replay_title": "【小松绿Viridis】也许康复的随便唱唱 2026年09月03日21点场",
+          "replay_url": "https://www.bilibili.com/video/BV1vetf6AE5y/",
+          "remark": "2026-09-03「也许康复的随便唱唱」21点场；歌切合集【桐人今天睡大觉】【小松绿Viridis】随便唱唱的歌回 歌切合集 2026.09.03 分P10（04:38）。银临 2013 古风名曲。",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-compilation-chapter",
+          "replay_date_source": "replay-title",
+          "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=10"
+        }
+      ]
+    },
+    "深夜诗人": {
+      "row_key": "深夜诗人",
+      "song_name": "深夜诗人",
+      "display_song_name": "深夜诗人",
+      "artist": "洛天依 / 言和 / ilem",
+      "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=11",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-09-03",
+          "time": "",
+          "end_time": "",
+          "status": "歌回",
+          "artist": "洛天依 / 言和 / ilem",
+          "replay_id": "BV1vetf6AE5y",
+          "replay_title": "【小松绿Viridis】也许康复的随便唱唱 2026年09月03日21点场",
+          "replay_url": "https://www.bilibili.com/video/BV1vetf6AE5y/",
+          "remark": "2026-09-03「也许康复的随便唱唱」21点场；歌切合集【桐人今天睡大觉】【小松绿Viridis】随便唱唱的歌回 歌切合集 2026.09.03 分P11（05:43）。ilem 2016 VOCALOID 中文原创，洛天依/言和演唱。",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-compilation-chapter",
+          "replay_date_source": "replay-title",
+          "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=11"
+        }
+      ]
+    },
+    "铁花飞 中文版": {
+      "row_key": "铁花飞 中文版",
+      "song_name": "铁花飞 中文版",
+      "display_song_name": "铁花飞 中文版",
+      "artist": "时光罅隙间",
+      "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=12",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-09-03",
+          "time": "",
+          "end_time": "",
+          "status": "歌回",
+          "artist": "时光罅隙间",
+          "replay_id": "BV1vetf6AE5y",
+          "replay_title": "【小松绿Viridis】也许康复的随便唱唱 2026年09月03日21点场",
+          "replay_url": "https://www.bilibili.com/video/BV1vetf6AE5y/",
+          "remark": "2026-09-03「也许康复的随便唱唱」21点场；歌切合集【桐人今天睡大觉】【小松绿Viridis】随便唱唱的歌回 歌切合集 2026.09.03 分P12（04:20）。歌切分P标注「铁花飞 中文版 - 时光罅隙间」；原曲 Mili/塞壬唱片-MSR《铁花飞》（明日方舟EP，2026-02）。",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-compilation-chapter",
+          "replay_date_source": "replay-title",
+          "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=12"
+        }
+      ]
+    },
+    "Fly, My Wings": {
+      "row_key": "Fly, My Wings",
+      "song_name": "Fly, My Wings",
+      "display_song_name": "Fly, My Wings",
+      "artist": "Mili",
+      "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=13",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-09-03",
+          "time": "",
+          "end_time": "",
+          "status": "歌回",
+          "artist": "Mili",
+          "replay_id": "BV1vetf6AE5y",
+          "replay_title": "【小松绿Viridis】也许康复的随便唱唱 2026年09月03日21点场",
+          "replay_url": "https://www.bilibili.com/video/BV1vetf6AE5y/",
+          "remark": "2026-09-03「也许康复的随便唱唱」21点场；歌切合集【桐人今天睡大觉】【小松绿Viridis】随便唱唱的歌回 歌切合集 2026.09.03 分P13（03:14）。Mili 乐团曲；原曲出处待复核（网易云单曲/八音盒版可见）。",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-compilation-chapter",
+          "replay_date_source": "replay-title",
+          "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=13"
+        }
+      ]
+    },
+    "浴槽とネオンテトラ": {
+      "row_key": "浴槽とネオンテトラ",
+      "song_name": "浴槽とネオンテトラ",
+      "display_song_name": "浴槽とネオンテトラ",
+      "artist": "REISAI（feat. v flower）",
+      "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=14",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-09-03",
+          "time": "01:57:26",
+          "end_time": "02:05:03",
+          "status": "歌回",
+          "artist": "REISAI（feat. v flower）",
+          "replay_id": "BV1vetf6AE5y",
+          "replay_title": "【小松绿Viridis】也许康复的随便唱唱 2026年09月03日21点场",
+          "replay_url": "https://www.bilibili.com/video/BV1vetf6AE5y/",
+          "remark": "2026-09-03「也许康复的随便唱唱」21点场；歌切合集【桐人今天睡大觉】【小松绿Viridis】随便唱唱的歌回 歌切合集 2026.09.03 分P14（06:27）。弹幕歌词窗 01:57:26-02:05:03（浴缸/热带鱼/Darling）；Vocaloid Lyrics Wiki：宛然サカナ/Yopi/REISAI feat. flower，2021-01-02 投稿。歌切分P标注 dongdang（Cover 名）待复核。",
+          "lyric_excerpt": "【】歌词弹幕命中窗口 01:57:26~02:05:03",
+          "song_resolution_method": "song-cut-chapter + danmaku-lyric",
+          "replay_date_source": "replay-title",
+          "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=14"
+        }
+      ]
+    },
+    "March of Time": {
+      "row_key": "March of Time",
+      "song_name": "March of Time",
+      "display_song_name": "March of Time",
+      "artist": "Aimer",
+      "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=16",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-09-03",
+          "time": "",
+          "end_time": "",
+          "status": "歌回",
+          "artist": "Aimer",
+          "replay_id": "BV1vetf6AE5y",
+          "replay_title": "【小松绿Viridis】也许康复的随便唱唱 2026年09月03日21点场",
+          "replay_url": "https://www.bilibili.com/video/BV1vetf6AE5y/",
+          "remark": "2026-09-03「也许康复的随便唱唱」21点场；歌切合集【桐人今天睡大觉】【小松绿Viridis】随便唱唱的歌回 歌切合集 2026.09.03 分P16（01:48）。Aimer《BEST SELECTION \"blanc\"》(2017) 收录。",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-compilation-chapter",
+          "replay_date_source": "replay-title",
+          "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=16"
+        }
+      ]
+    },
+    "あなたに出会わなければ~夏雪冬花~": {
+      "row_key": "あなたに出会わなければ~夏雪冬花~",
+      "song_name": "あなたに出会わなければ~夏雪冬花~",
+      "display_song_name": "あなたに出会わなければ~夏雪冬花~",
+      "artist": "Aimer",
+      "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=17",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-09-03",
+          "time": "02:10:56",
+          "end_time": "02:13:59",
+          "status": "歌回",
+          "artist": "Aimer",
+          "replay_id": "BV1vetf6AE5y",
+          "replay_title": "【小松绿Viridis】也许康复的随便唱唱 2026年09月03日21点场",
+          "replay_url": "https://www.bilibili.com/video/BV1vetf6AE5y/",
+          "remark": "2026-09-03「也许康复的随便唱唱」21点场；歌切合集【桐人今天睡大觉】【小松绿Viridis】随便唱唱的歌回 歌切合集 2026.09.03 分P17（02:14）。弹幕歌词窗 02:10:56-02:13:59（「无可替代的季节/想在你身边一同欢笑」+「AIMER有品/老公」刷屏）；Aimer《絶園のテンペスト》ED 相关名曲。",
+          "lyric_excerpt": "【】歌词弹幕命中窗口 02:10:56~02:13:59",
+          "song_resolution_method": "song-cut-chapter + danmaku-lyric",
+          "replay_date_source": "replay-title",
+          "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=17"
+        }
+      ]
+    },
+    "花の塔": {
+      "row_key": "花の塔",
+      "song_name": "花の塔",
+      "display_song_name": "花の塔",
+      "artist": "さユり",
+      "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=18",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-09-03",
+          "time": "",
+          "end_time": "",
+          "status": "歌回",
+          "artist": "さユり",
+          "replay_id": "BV1vetf6AE5y",
+          "replay_title": "【小松绿Viridis】也许康复的随便唱唱 2026年09月03日21点场",
+          "replay_url": "https://www.bilibili.com/video/BV1vetf6AE5y/",
+          "remark": "2026-09-03「也许康复的随便唱唱」21点场；歌切合集【桐人今天睡大觉】【小松绿Viridis】随便唱唱的歌回 歌切合集 2026.09.03 分P18（04:42）。さユり《Lycoris Recoil》ED。",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-compilation-chapter",
+          "replay_date_source": "replay-title",
+          "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=18"
+        }
+      ]
+    },
+    "ミカヅキ": {
+      "row_key": "ミカヅキ",
+      "song_name": "ミカヅキ",
+      "display_song_name": "ミカヅキ",
+      "artist": "さユり",
+      "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=19",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-09-03",
+          "time": "",
+          "end_time": "",
+          "status": "歌回",
+          "artist": "さユり",
+          "replay_id": "BV1vetf6AE5y",
+          "replay_title": "【小松绿Viridis】也许康复的随便唱唱 2026年09月03日21点场",
+          "replay_url": "https://www.bilibili.com/video/BV1vetf6AE5y/",
+          "remark": "2026-09-03「也许康复的随便唱唱」21点场；歌切合集【桐人今天睡大觉】【小松绿Viridis】随便唱唱的歌回 歌切合集 2026.09.03 分P19（04:26）。さユり《乱步奇谭》ED。",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-compilation-chapter",
+          "replay_date_source": "replay-title",
+          "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=19"
+        }
+      ]
+    },
+    "如果有来生": {
+      "row_key": "如果有来生",
+      "song_name": "如果有来生",
+      "display_song_name": "如果有来生",
+      "artist": "谭维维",
+      "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=21",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-09-03",
+          "time": "02:53:12",
+          "end_time": "02:55:02",
+          "status": "歌回",
+          "artist": "谭维维",
+          "replay_id": "BV1vetf6AE5y",
+          "replay_title": "【小松绿Viridis】也许康复的随便唱唱 2026年09月03日21点场",
+          "replay_url": "https://www.bilibili.com/video/BV1vetf6AE5y/",
+          "remark": "2026-09-03「也许康复的随便唱唱」21点场；歌切合集【桐人今天睡大觉】【小松绿Viridis】随便唱唱的歌回 歌切合集 2026.09.03 分P21（04:05）。弹幕歌词窗 02:53:12-02:55:02（「以前人们在四月开始收获/如果有来生」）；谭维维 2010 经典。",
+          "lyric_excerpt": "【】歌词弹幕命中窗口 02:53:12~02:55:02",
+          "song_resolution_method": "song-cut-chapter + danmaku-lyric",
+          "replay_date_source": "replay-title",
+          "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=21"
         }
       ]
     }
