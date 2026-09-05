@@ -657,13 +657,12 @@
       bubble.classList.remove('show');
     });
 
-    // ===== 桌宠伴侣可拖动（拖动改位置，位移>6px 视为拖动、不触发 pet 点击） =====
+    // ===== 桌宠伴侣可拖动（整个按钮含中间图标都支持拖动，位移>6px 视为拖动、不触发点击） =====
     const petWrap = document.getElementById('companionPetWrap');
     if (petWrap) {
       petWrap.style.touchAction = 'none';
       let dragC = null;
       petWrap.addEventListener('pointerdown', function (e) {
-        if (e.target.closest('.companion-toggle-btn')) return;
         const r = companion.getBoundingClientRect();
         const vw = window.innerWidth, vh = window.innerHeight;
         dragC = { sx: e.clientX, sy: e.clientY, sr: vw - r.right, sb: vh - r.bottom, moved: false };
