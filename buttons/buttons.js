@@ -299,15 +299,16 @@
   function renderModeBtn() {
     const meta = playMode === 'single' ? { icon: 'retweet', label: '单曲循环', next: 'sequence' }
       : playMode === 'sequence' ? { icon: 'sync', label: '顺序播放', next: 'single' }
-      : { icon: 'caret-right', label: '播放一次', next: 'sequence' };
-    pbMode.innerHTML = ico(meta.icon);
+      : { icon: '', label: '播放一次', next: 'sequence' };
+    // 播放一次 图标用 →（文本箭头），其余用 svg icon
+    pbMode.innerHTML = meta.icon ? ico(meta.icon) : '<span class="mode-once">→</span>';
     pbMode.classList.toggle('single', playMode === 'single');
     pbMode.title = `播放模式：${meta.label}，点击切换`;
   }
   function renderOverlayBtn() {
     pbOverlay.classList.toggle('single', overlayOn);
-    pbOverlay.title = `重叠播放：${overlayOn ? '开' : '关'}（开=同时播放多个）`;
-    pbOverlay.innerHTML = ico('plus');
+    pbOverlay.title = `重叠播放：${overlayOn ? '开' : '关'}（开=点击磁帖可同时播放多个音频）`;
+    // 图标用 HTML 里的绿色音符 🎵，这里只切换 class/title
   }
   // 重叠播放时用于叠加播放的 Audio 实例
   function makeOverlayAudio(url, btn) {

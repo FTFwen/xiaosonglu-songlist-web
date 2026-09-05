@@ -675,6 +675,12 @@
       color: var(--primary-dark);
       background: var(--primary-soft);
     }
+    /* 重叠播放按钮里的音符图标：主题绿色 */
+    .player-card .overlay-note { font-size: 15px; color: var(--primary-dark); line-height: 1; display: inline-block; transform: translateY(-1px); }
+    .player-card #pbOverlayBtn.single { border-color: var(--primary); color: var(--primary-dark); background: var(--primary-soft); }
+    .player-card #pbOverlayBtn.single .overlay-note { color: var(--primary); }
+    /* 播放模式“播放一次”按钮里的箭头图标 */
+    .player-card .mode-once { font-size: 16px; line-height: 1; display: inline-block; color: var(--primary-dark); transform: translateY(-1px); }
     .player-card .pc-ctrls {
       display: flex;
       align-items: center;
@@ -872,11 +878,11 @@
       <div class="pc-actions">
         <button class="pc-stop" id="pbStopBtn" title="停止播放"><svg class="icon" aria-hidden="true"><use href="#icon-close"></use></svg> 停止播放</button>
         <button class="pc-stop pc-random-text" id="pbRandomBtn" title="随机播放一个按钮"><svg class="icon" aria-hidden="true"><use href="#icon-random-shuffle"></use></svg> 随机播放</button>
+        <button class="pc-stop pc-random-text" id="pbOverlayBtn" title="重叠播放：关"><span class="overlay-note">🎵</span> 重叠播放</button>
       </div>
       <div class="pc-ctrls">
         <button class="pc-play" id="pbPlayBtn" title="播放 / 暂停"><svg class="icon" aria-hidden="true"><use href="#icon-caret-right"></use></svg></button>
         <button class="pc-mode" id="pbModeBtn" title="播放模式：播放一次，点击切换"><svg class="icon" aria-hidden="true"><use href="#icon-sync"></use></svg></button>
-        <button class="pc-mode" id="pbOverlayBtn" title="重叠播放：关"><svg class="icon" aria-hidden="true"><use href="#icon-plus"></use></svg></button>
         <div class="pc-vol" title="音量">
           <svg class="icon" aria-hidden="true"><use href="#icon-sound"></use></svg>
           <input type="range" id="pbVolume" min="0" max="100" value="100">
@@ -962,7 +968,7 @@
   <video id="audioPlayer" preload="none" playsinline style="position:fixed;left:-9999px;top:0;width:1px;height:1px;opacity:0;"></video>
 
   <script src="jszip.min.js"></script>
-  <script src="buttons.js?v=26"></script>
+  <script src="buttons.js?v=27"></script>
   <script src="../js/motion.js?v=9" defer></script>
 </body>
 </html>
