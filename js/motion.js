@@ -684,9 +684,16 @@
         companion.style.top = 'auto';
       });
       petWrap.addEventListener('pointerup', function (e) {
-        if (dragC && dragC.moved) {
+        if (!dragC) return;
+        if (dragC.moved) {
+          // 拖动过：吞掉随后的 click
           const once = function (ev) { ev.preventDefault(); ev.stopPropagation(); };
           petWrap.addEventListener('click', once, { capture: true, once: true });
+        } else {
+          // 未拖动 = 点击：setPointerCapture 会吞掉 pet 的原生 click，这里手动触发桌宠点击功能（抽签/展开）
+          if (typeof pet === 'object' && pet && typeof pet.click === 'function') {
+            pet.click();
+          }
         }
         dragC = null;
         activePointer = null;
