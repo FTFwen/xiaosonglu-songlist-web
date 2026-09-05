@@ -526,6 +526,19 @@ function updateSongMetaText(dateObj, fromCache) {
 
 // 拼音检索：为歌曲生成拼音索引（全拼 + 首字母），供搜索匹配
 const pinyinCache = new Map();
+let pinyinLoadPromise = null;
+// 懒加载 pinyin-pro（仅用户使用搜索/拼音检索时才加载，首页不加载省 315KB）
+function loadPinyinPro() {
+  if (window.pinyinPro || pinyinLoadPromise) return pinyinLoadPromise;
+  pinyinLoadPromise = new Promise((resolve) => {
+    const s = document.createElement('script');
+    s.src = 'js/pinyin-pro.js';
+    s.onload = () => resolve();
+    s.onerror = () => resolve();
+    document.head.appendChild(s);
+  });
+  return pinyinLoadPromise;
+}
 function getSongPinyin(song) {
   const key = song.row_key || song.song_id;
   if (pinyinCache.has(key)) return pinyinCache.get(key);
@@ -2678,6 +2691,7 @@ function bindEvents() {
   });
 
   dom.searchInput.addEventListener('input', () => {
+    loadPinyinPro(); // 首次输入时懒加载拼音检索库（首页不加载，省 315KB）
     syncClearButton();
     applySongFilters();
   });
