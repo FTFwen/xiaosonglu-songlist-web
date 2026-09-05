@@ -657,18 +657,22 @@
       bubble.classList.remove('show');
     });
 
-    // ===== 桌宠伴侣可拖动（整个按钮含中间图标都支持拖动，位移>6px 视为拖动、不触发点击） =====
+    // ===== 桌宠伴侣可拖动（整个按钮含中间图标都支持拖动，用 pointer capture 保证快速拖动跟手） =====
     const petWrap = document.getElementById('companionPetWrap');
     if (petWrap) {
       petWrap.style.touchAction = 'none';
       let dragC = null;
+      let activePointer = null;
       petWrap.addEventListener('pointerdown', function (e) {
         const r = companion.getBoundingClientRect();
         const vw = window.innerWidth, vh = window.innerHeight;
         dragC = { sx: e.clientX, sy: e.clientY, sr: vw - r.right, sb: vh - r.bottom, moved: false };
+        activePointer = e.pointerId;
+        // 捕获指针：即使快速拖动/移出容器，pointermove 也持续派发到 petWrap，保证图标跟手
+        try { petWrap.setPointerCapture(e.pointerId); } catch (err) { /* ignore */ }
       });
       petWrap.addEventListener('pointermove', function (e) {
-        if (!dragC) return;
+        if (!dragC || e.pointerId !== activePointer) return;
         const dx = e.clientX - dragC.sx, dy = e.clientY - dragC.sy;
         if (!dragC.moved && Math.abs(dx) + Math.abs(dy) > 6) dragC.moved = true;
         if (!dragC.moved) return;
@@ -679,14 +683,15 @@
         companion.style.left = 'auto';
         companion.style.top = 'auto';
       });
-      petWrap.addEventListener('pointerup', function () {
+      petWrap.addEventListener('pointerup', function (e) {
         if (dragC && dragC.moved) {
           const once = function (ev) { ev.preventDefault(); ev.stopPropagation(); };
           petWrap.addEventListener('click', once, { capture: true, once: true });
         }
         dragC = null;
+        activePointer = null;
       });
-      petWrap.addEventListener('pointercancel', function () { dragC = null; });
+      petWrap.addEventListener('pointercancel', function () { dragC = null; activePointer = null; });
     }
 
     // 闲置 28 秒提醒（仅在未折叠且气泡未显示时触发）
