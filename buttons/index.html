@@ -875,12 +875,12 @@
       </div>
       <div class="pc-ctrls">
         <button class="pc-play" id="pbPlayBtn" title="播放 / 暂停"><svg class="icon" aria-hidden="true"><use href="#icon-caret-right"></use></svg></button>
-        <button class="pc-mode" id="pbModeBtn" title="播放模式：顺序播放，点击切换为单曲循环"><svg class="icon" aria-hidden="true"><use href="#icon-sync"></use></svg></button>
+        <button class="pc-mode" id="pbModeBtn" title="播放模式：播放一次，点击切换"><svg class="icon" aria-hidden="true"><use href="#icon-sync"></use></svg></button>
+        <button class="pc-mode" id="pbOverlayBtn" title="重叠播放：关"><svg class="icon" aria-hidden="true"><use href="#icon-plus"></use></svg></button>
         <div class="pc-vol" title="音量">
           <svg class="icon" aria-hidden="true"><use href="#icon-sound"></use></svg>
           <input type="range" id="pbVolume" min="0" max="100" value="100">
         </div>
-        <button class="pc-close" id="pbCloseBtn" title="关闭"><svg class="icon" aria-hidden="true"><use href="#icon-close"></use></svg></button>
       </div>
     </div>
   </div>
@@ -962,7 +962,7 @@
   <video id="audioPlayer" preload="none" playsinline style="position:fixed;left:-9999px;top:0;width:1px;height:1px;opacity:0;"></video>
 
   <script src="jszip.min.js"></script>
-  <script src="buttons.js?v=25"></script>
+  <script src="buttons.js?v=26"></script>
   <script src="../js/motion.js?v=9" defer></script>
 </body>
 </html>

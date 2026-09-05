@@ -234,8 +234,11 @@
   }
 
   // ===== 播放音效 + 顶部播放条 =====
-  let currentBtn = null; // 当前播放的按钮
-  let playMode = 'sequence'; // sequence | single
+  let currentBtn = null; // 当前播放的按钮（主播放条）
+  let playMode = 'once';  // once(播放一次/默认) | sequence(顺序=按分类连播) | single(单曲循环)
+  let overlayOn = false;  // 重叠播放开关（开时点击磁帖叠加播放多个音频）
+  let playQueue = [];     // 顺序播放队列（class 里按序连播）
+  let overlayAudios = []; // 重叠播放时正在叠加播放的 Audio 实例
   let editMode = false;     // 是否编辑模式（管理员）
   let editSnapshot = null;  // 进入编辑模式时的数据快照，用于"不保存并退出"回退
   const playerBar = el('playerBar');
@@ -243,10 +246,10 @@
   const pbPlay = el('pbPlayBtn');
   const pbStop = el('pbStopBtn');
   const pbMode = el('pbModeBtn');
+  const pbOverlay = el('pbOverlayBtn');
   const pbRandom = el('pbRandomBtn');
   const pbProgress = el('pbProgress');
   const pbTime = el('pbTime');
-  const pbClose = el('pbCloseBtn');
   const pbVolume = el('pbVolume');
 
   function fmtSec(s) {
@@ -294,9 +297,53 @@
   }
 
   function renderModeBtn() {
-    pbMode.innerHTML = playMode === 'single' ? ico('retweet') : ico('sync');
+    const meta = playMode === 'single' ? { icon: 'retweet', label: '单曲循环', next: 'sequence' }
+      : playMode === 'sequence' ? { icon: 'sync', label: '顺序播放', next: 'single' }
+      : { icon: 'caret-right', label: '播放一次', next: 'sequence' };
+    pbMode.innerHTML = ico(meta.icon);
     pbMode.classList.toggle('single', playMode === 'single');
-    pbMode.title = playMode === 'single' ? '播放模式：单曲循环，点击切换为顺序播放' : '播放模式：顺序播放，点击切换为单曲循环';
+    pbMode.title = `播放模式：${meta.label}，点击切换`;
+  }
+  function renderOverlayBtn() {
+    pbOverlay.classList.toggle('single', overlayOn);
+    pbOverlay.title = `重叠播放：${overlayOn ? '开' : '关'}（开=同时播放多个）`;
+    pbOverlay.innerHTML = ico('plus');
+  }
+  // 重叠播放时用于叠加播放的 Audio 实例
+  function makeOverlayAudio(url, btn) {
+    const a = new Audio(url);
+    a.volume = 1;
+    // 每个叠加音频按自己的时长播放；单曲循环时各自重播
+    a.addEventListener('ended', () => {
+      if (overlayOn && playMode === 'single') {
+        a.currentTime = 0; a.play().catch(() => {});
+      } else {
+        overlayAudios = overlayAudios.filter(x => x !== a);
+      }
+    });
+    a.play().catch(() => {});
+    overlayAudios.push(a);
+    return a;
+  }
+  // 停止所有（主播放器 + 重叠叠加的）
+  function stopAllAudio() {
+    audioPlayer.pause(); audioPlayer.currentTime = 0;
+    overlayAudios.forEach(a => { try { a.pause(); a.currentTime = 0; } catch (e) {} });
+    overlayAudios = [];
+    playQueue = [];
+    document.querySelectorAll('.sound-btn.playing').forEach(c => c.classList.remove('playing'));
+    currentBtn = null;
+  }
+
+  // 顺序播放：找当前按钮在它所属分类里的下一个有音频的磁帖
+  function getNextInCategory(btn) {
+    if (!btn) return null;
+    const cat = btn.cat;
+    const list = (data.cats || []).find(c => c.id === cat) ? data.buttons.filter(b => b.cat === cat && b.audio && !b.idb) : [];
+    if (list.length < 2) return null;
+    const idx = list.findIndex(b => b.id === btn.id);
+    if (idx < 0) return null;
+    return list[(idx + 1) % list.length];
   }
 
   // 随机播放：从所有有音频的按钮里随机挑一个
@@ -313,34 +360,45 @@
 
   function playSound(btn, card) {
     const src = btn.audio;
-    const resume = () => {
-      audioPlayer.currentTime = 0;
-      audioPlayer.play().then(() => {
-        showPlayer(btn);
-      }).catch(err => {
-        console.warn('[按钮墙] 播放失败:', err);
-        toast('音频播放失败');
-      });
-    };
+    const onFail = err => { console.warn('[按钮墙] 播放失败:', err); toast('音频播放失败'); };
+    const resumeMain = () => { audioPlayer.currentTime = 0; audioPlayer.play().then(() => showPlayer(btn)).catch(onFail); };
+    const srcUrl = btn.idb ? null : src; // idb 需先取 blob
+    // 重叠播放开：点击磁帖叠加播放（每个按钮一个独立 Audio，可同时响）
+    if (overlayOn) {
+      const playOverlay = url => {
+        if (!url) { toast(`「${btn.name}」还没有音频`); return; }
+        const a = new Audio(url); a.volume = 1;
+        a.addEventListener('ended', () => {
+          if (playMode === 'single') { a.currentTime = 0; a.play().catch(() => {}); }
+          else { overlayAudios = overlayAudios.filter(x => x !== a); }
+        });
+        a.play().then(() => {
+          currentBtn = btn;
+          // 高亮当前点击的磁帖（叠加时不互斥）
+          const activeCard = [...document.querySelectorAll('.sound-btn')].find(c => c.querySelector('.sb-name') && c.querySelector('.sb-name').textContent === btn.name);
+          if (activeCard) activeCard.classList.add('playing');
+          showPlayer(btn);
+        }).catch(onFail);
+        overlayAudios.push(a);
+      };
+      if (btn.idb) {
+        idbGet(btn.id).then(blob => { if (blob) playOverlay(URL.createObjectURL(blob)); else toast('音频文件丢失，请重新上传'); }).catch(() => toast('读取音频失败'));
+      } else {
+        playOverlay(src);
+      }
+      return;
+    }
+    // 非重叠：使用主播放器
+    const resume = () => { audioPlayer.currentTime = 0; audioPlayer.play().then(() => showPlayer(btn)).catch(onFail); };
     if (btn.idb) {
-      // 兼容旧本地 IndexedDB 数据（尚未迁移上云）
-      currentBtn = btn; // 立即标记，loadedmetadata 时能正确记录时长
+      currentBtn = btn;
       idbGet(btn.id).then(blob => {
-        if (blob) {
-          const url = URL.createObjectURL(blob);
-          audioPlayer.src = url;
-          resume();
-        } else {
-          toast('音频文件丢失，请重新上传');
-        }
+        if (blob) { const url = URL.createObjectURL(blob); audioPlayer.src = url; resume(); }
+        else toast('音频文件丢失，请重新上传');
       }).catch(() => toast('读取音频失败'));
       return;
     }
-    if (!src) {
-      toast(`「${btn.name}」还没有音频`);
-      return;
-    }
-    // 立即标记当前按钮（loadedmetadata 触发时才能正确记录本次时长，避免误改上一个按钮）
+    if (!src) { toast(`「${btn.name}」还没有音频`); return; }
     currentBtn = btn;
     audioPlayer.src = src;
     resume();
@@ -351,21 +409,24 @@
     if (audioPlayer.paused) audioPlayer.play().catch(() => {});
     else audioPlayer.pause();
   });
-  pbStop.addEventListener('click', () => {
-    audioPlayer.pause();
-    audioPlayer.currentTime = 0;
-    updatePlayerUI();
-  });
+  pbStop.addEventListener('click', stopAllAudio);
+  // 播放模式三态：播放一次 → 顺序 → 单曲循环 → 播放一次
   pbMode.addEventListener('click', () => {
-    playMode = playMode === 'single' ? 'sequence' : 'single';
+    playMode = playMode === 'once' ? 'sequence' : playMode === 'sequence' ? 'single' : 'once';
     renderModeBtn();
-    toast(playMode === 'single' ? '已切换：单曲循环' : '已切换：顺序播放');
+    const label = playMode === 'once' ? '播放一次' : playMode === 'sequence' ? '顺序播放' : '单曲循环';
+    toast(`已切换：${label}`);
+  });
+  // 重叠播放开关
+  pbOverlay.addEventListener('click', () => {
+    overlayOn = !overlayOn;
+    renderOverlayBtn();
+    toast(overlayOn ? '已开启：重叠播放（点击按钮可同时播放）' : '已关闭：重叠播放');
   });
   pbRandom.addEventListener('click', playRandom);
   pbVolume.addEventListener('input', () => {
     audioPlayer.volume = Number(pbVolume.value) / 100;
   });
-  pbClose.addEventListener('click', hidePlayer);
   audioPlayer.addEventListener('timeupdate', updatePlayerUI);
   audioPlayer.addEventListener('loadedmetadata', () => {
     updatePlayerUI();
@@ -384,13 +445,19 @@
   audioPlayer.addEventListener('ended', () => {
     updatePlayerUI();
     document.querySelectorAll('.sound-btn.playing').forEach(c => c.classList.remove('playing'));
-    // 单曲循环时重播当前
+    // 单曲循环：重播当前；顺序：播当前分类的下一个；播放一次：停止
     if (playMode === 'single' && currentBtn) {
       audioPlayer.currentTime = 0;
       audioPlayer.play().catch(() => {});
+    } else if (playMode === 'sequence' && currentBtn) {
+      const next = getNextInCategory(currentBtn);
+      if (next) playSound(next, null);
+    } else {
+      // 播放一次：停止（主播放器保持暂停，清除高亮即结束）
     }
   });
   audioPlayer.volume = 1; // 默认音量
+  renderOverlayBtn(); // 初始：重叠播放关
 
   // ===== 轻提示 =====
   let toastTimer = null;
