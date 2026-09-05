@@ -1588,7 +1588,10 @@
   .favorite-star.anim-pop,
   .song-item.now-playing,
   .vinyl-core,
-  .song-vinyl-wrap {
+  .song-vinyl-wrap,
+  /* 唱片四周扩散的波纹声波环（伪元素），手机端关闭 */
+  .song-vinyl-wrap.spinning::before,
+  .song-vinyl-wrap.spinning::after {
     animation: none !important;
   }
 

@@ -393,6 +393,8 @@
      ========================================================================== */
   function initMelodyNotesEmitter() {
     if (prefersReducedMotion()) return;
+    // 手机端：关闭播放时的音符浮空喷涌动效（降卡顿）
+    if (window.innerWidth <= 768) return;
 
     const NOTES = ['♪', '♫', '♬', '♩', '🍃', '✨'];
     const COLORS = ['#8a9a4e', '#6f7d3d', '#e8b890', '#b57d1c', '#f4ce62'];
