@@ -15,10 +15,10 @@
   --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
 
   /* 手账贴纸柔和彩色投影 */
-  --shadow-sticker: 0 6px 18px rgba(122, 136, 70, 0.1), 0 2px 5px rgba(0, 0, 0, 0.03);
-  --shadow-sticker-hover: 0 16px 36px rgba(100, 120, 50, 0.2), 0 4px 12px rgba(0, 0, 0, 0.06);
-  --shadow-sticker-active: 0 3px 10px rgba(122, 136, 70, 0.14), inset 0 2px 4px rgba(0, 0, 0, 0.04);
-  --shadow-glow-primary: 0 0 0 3px rgba(138, 154, 78, 0.35), 0 8px 24px rgba(138, 154, 78, 0.25);
+  --shadow-sticker: inset 0 1px 0 rgba(255, 255, 255, 0.75), 0 4px 14px rgba(122, 136, 70, 0.08), 0 1px 3px rgba(0, 0, 0, 0.02);
+  --shadow-sticker-hover: inset 0 1px 0 rgba(255, 255, 255, 0.9), 0 12px 28px -4px rgba(95, 115, 45, 0.16), 0 3px 8px rgba(0, 0, 0, 0.04);
+  --shadow-sticker-active: inset 0 1px 2px rgba(0, 0, 0, 0.05), 0 2px 6px rgba(95, 115, 45, 0.12);
+  --shadow-glow-primary: 0 0 0 2.5px rgba(138, 154, 78, 0.35), 0 8px 24px rgba(138, 154, 78, 0.22);
 }
 
 /* ==========================================================================
@@ -235,22 +235,23 @@
   user-select: none;
   z-index: 99999;
   border-radius: 999px;
+  contain: layout style paint;
   will-change: transform, opacity;
-  transform: translate(-50%, -50%);
+  transform: translate3d(-50%, -50%, 0);
   animation: dust-fade 0.6s cubic-bezier(0.2, 0.8, 0.35, 1) forwards;
 }
 
 @keyframes dust-fade {
   0% {
-    transform: translate(-50%, -50%) scale(0.65);
+    transform: translate3d(-50%, -50%, 0) scale(0.65);
     opacity: var(--dust-op, 0.65);
   }
   30% {
-    transform: translate(calc(-50% + var(--dx, 0px) * 0.4), calc(-50% + var(--dy, 0px) * 0.4)) scale(1);
+    transform: translate3d(calc(-50% + var(--dx, 0px) * 0.4), calc(-50% + var(--dy, 0px) * 0.4), 0) scale(1);
     opacity: calc(var(--dust-op, 0.65) * 0.9);
   }
   100% {
-    transform: translate(calc(-50% + var(--dx, 0px)), calc(-50% + calc(var(--dy, 0px) + 7px))) scale(0.2);
+    transform: translate3d(calc(-50% + var(--dx, 0px)), calc(-50% + calc(var(--dy, 0px) + 7px)), 0) scale(0.2);
     opacity: 0;
   }
 }
@@ -273,14 +274,16 @@
   --glare-opacity: 0;
   --glare-x: 50%;
   --glare-y: 50%;
+  --card-trans-dur: 0.12s;
+  --card-trans-ease: cubic-bezier(0.2, 0.8, 0.25, 1);
 
   position: relative;
   will-change: transform, box-shadow;
   transform-style: preserve-3d;
   transform-origin: center center;
 
-  /* 正常时水平端正，移入悬停时由光标驱动 3D 浮动跟随 */
-  transform: perspective(800px)
+  /* 正常时水平端正，移入悬停时由光标驱动 3D 浮动跟随，采用更优雅自然的 1000px 视距透视 */
+  transform: perspective(1000px)
              translateX(var(--tx, 0px))
              translateY(var(--ty, 0px))
              translateZ(var(--tz, 0px))
@@ -288,13 +291,13 @@
              rotateY(var(--ry, 0deg))
              scale(var(--sc, 1)) !important;
 
-  transition: transform 0.12s cubic-bezier(0.2, 0, 0.2, 1),
-              box-shadow 0.28s var(--ease-spring-sticker),
-              border-color 0.2s ease,
-              background 0.2s ease !important;
+  transition: transform var(--card-trans-dur, 0.12s) var(--card-trans-ease, cubic-bezier(0.2, 0.8, 0.25, 1)),
+              box-shadow 0.32s cubic-bezier(0.2, 0.8, 0.25, 1),
+              border-color 0.22s ease,
+              background 0.22s ease !important;
 }
 
-/* 动态鼠标跟随光斑反射层（如高级光面贴纸） */
+/* 动态鼠标跟随光斑反射层（温润的高级光面贴纸/柔光丝绸质感） */
 .song-item::after,
 .history-item::after,
 .favorite-item::after,
@@ -304,9 +307,9 @@
   inset: 0;
   border-radius: inherit;
   pointer-events: none;
-  background: radial-gradient(circle 140px at var(--glare-x, 50%) var(--glare-y, 50%), rgba(255, 255, 255, 0.45) 0%, rgba(255, 255, 255, 0) 80%);
+  background: radial-gradient(circle 190px at var(--glare-x, 50%) var(--glare-y, 50%), rgba(255, 255, 255, 0.30) 0%, rgba(255, 255, 255, 0.08) 45%, transparent 75%);
   opacity: var(--glare-opacity, 0);
-  transition: opacity 0.22s ease;
+  transition: opacity 0.24s ease;
   z-index: 5;
 }
 
@@ -319,14 +322,26 @@
   z-index: 10;
 }
 
-/* 点击按压：手账按压阻尼感 */
+/* 卡片悬停时内部子元素的温润微动协同 */
+.song-item:hover .song-play-btn,
+.favorite-item:hover .song-play-btn {
+  transform: scale(1.08) !important;
+  box-shadow: 0 4px 12px rgba(122, 136, 70, 0.22) !important;
+}
+
+.song-item:hover .song-vinyl-wrap,
+.favorite-item:hover .song-vinyl-wrap {
+  transform: scale(1.03) rotate(2deg);
+}
+
+/* 点击按压：高品质手账阻尼感 */
 .song-item:active,
 .history-item:active,
 .favorite-item:active,
 .sound-btn:active {
-  --ty: 1px !important;
-  --sc: 0.97 !important;
-  --tz: -4px !important;
+  --ty: 0.6px !important;
+  --sc: 0.988 !important;
+  --tz: -2px !important;
   box-shadow: var(--shadow-sticker-active) !important;
   transition: transform 0.08s ease !important;
 }
@@ -338,11 +353,11 @@
 /* 正在播放中的歌曲卡片：呼吸微光与律动光晕 */
 @keyframes melody-card-breath {
   0%, 100% {
-    box-shadow: 0 8px 26px rgba(138, 154, 78, 0.22), 0 0 0 1.5px rgba(138, 154, 78, 0.45);
+    box-shadow: 0 6px 20px -2px rgba(138, 154, 78, 0.22), 0 0 0 1.5px rgba(138, 154, 78, 0.45);
     border-color: rgba(138, 154, 78, 0.6) !important;
   }
   50% {
-    box-shadow: 0 14px 38px rgba(138, 154, 78, 0.36), 0 0 0 3px rgba(138, 154, 78, 0.7);
+    box-shadow: 0 12px 32px -2px rgba(138, 154, 78, 0.36), 0 0 0 2.5px rgba(175, 195, 105, 0.75), 0 0 16px rgba(244, 206, 98, 0.22);
     border-color: var(--primary) !important;
   }
 }
@@ -359,7 +374,7 @@
 /* 黑胶唱片：拟真微颤旋转 */
 @keyframes vinyl-spin-wobble {
   0% { transform: rotate(0deg); }
-  50% { transform: rotate(180deg) scale(1.03); }
+  50% { transform: rotate(180deg) scale(1.02); }
   100% { transform: rotate(360deg); }
 }
 
@@ -397,7 +412,7 @@
 
 .playing-bars .bar {
   width: 3px;
-  background: var(--primary, #8a9a4e);
+  background: linear-gradient(to top, var(--primary, #8a9a4e), #f4ce62);
   border-radius: 999px;
   display: block;
 }
@@ -431,7 +446,7 @@
 }
 
 .favorite-star:hover {
-  transform: scale(1.22) rotate(-6deg) !important;
+  transform: scale(1.2) rotate(-6deg) !important;
 }
 
 .favorite-star.active {
@@ -450,13 +465,13 @@
 
 .song-play-btn:hover,
 .player-btn:hover {
-  transform: scale(1.15) !important;
-  box-shadow: 0 4px 14px rgba(122, 136, 70, 0.25) !important;
+  transform: scale(1.1) !important;
+  box-shadow: 0 4px 14px rgba(122, 136, 70, 0.22) !important;
 }
 
 .song-play-btn:active,
 .player-btn:active {
-  transform: scale(0.9) !important;
+  transform: scale(0.92) !important;
   transition-duration: 0.08s !important;
 }
 
@@ -657,8 +672,43 @@
 
 @media (max-width: 768px) {
   .scrapbook-companion {
-    right: 12px;
-    bottom: 96px;
+    right: 8px;
+    bottom: 242px; /* 完美悬浮于右下角 .mobile-fabs 浮动按钮列 (74px ~ 232px) 之上，绝不遮挡播放和歌单 */
+  }
+  .scrapbook-companion.companion-folded {
+    transform: translateX(calc(100% - 24px));
+  }
+  .companion-pet {
+    width: 50px;
+    height: 50px;
+  }
+  .companion-pet img {
+    width: 86%;
+    height: 86%;
+  }
+  .companion-badge {
+    width: 19px;
+    height: 19px;
+    font-size: 11px;
+    top: -4px;
+    right: -2px;
+  }
+  .companion-toggle-btn {
+    width: 18px;
+    height: 18px;
+    font-size: 9px;
+    left: -10px;
+  }
+  .companion-bubble {
+    max-width: min(240px, calc(100vw - 36px));
+    font-size: 12px;
+    padding: 10px 12px 8px;
+  }
+  .companion-bubble::after {
+    right: 18px;
+  }
+  .companion-bubble::before {
+    right: 17px;
   }
 }
 
@@ -1035,6 +1085,41 @@
   box-shadow: 0 6px 18px rgba(104, 119, 53, 0.45);
 }
 
+@media (max-width: 768px) {
+  .fortune-modal-backdrop {
+    padding: 14px;
+  }
+  .fortune-card {
+    width: min(340px, 94vw);
+    max-height: 86vh;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    padding: 22px 16px 18px;
+    border-radius: 18px;
+  }
+  .fortune-song-name {
+    font-size: 19px;
+    margin: 8px 0 3px;
+  }
+  .fortune-quote-box {
+    padding: 10px 12px;
+    font-size: 12px;
+    line-height: 1.5;
+    margin-bottom: 12px;
+  }
+  .fortune-meta-row {
+    margin-bottom: 16px;
+    font-size: 11.5px;
+  }
+  .fortune-meta-item strong {
+    font-size: 14px;
+  }
+  .fortune-btn {
+    padding: 9px 12px;
+    font-size: 13px;
+  }
+}
+
 /* ==========================================================================
    15. 播放器麦浪音频律动频谱 (Fluid Music Spectrum in Player Bar)
    ========================================================================== */
@@ -1054,6 +1139,10 @@
 
 .player-audio-spectrum.active {
   opacity: 1;
+}
+
+.player-audio-spectrum.active .spectrum-bar {
+  box-shadow: 0 0 5px rgba(244, 206, 98, 0.45);
 }
 
 .spectrum-bar {
@@ -1078,6 +1167,26 @@
   0% { height: 4px; opacity: 0.55; }
   50% { height: 16px; opacity: 0.95; }
   100% { height: 20px; opacity: 1; }
+}
+
+@media (max-width: 768px) {
+  .player-audio-spectrum {
+    height: 15px;
+    gap: 2px;
+    margin-left: 6px;
+  }
+  .spectrum-bar {
+    width: 2.2px;
+    height: 3px;
+  }
+  .player-audio-spectrum.active .spectrum-bar:nth-child(n+6) {
+    display: none; /* 手机端保留 5 根核心频谱柱，紧凑不占空间 */
+  }
+  @keyframes spectrum-jump {
+    0% { height: 3px; opacity: 0.55; }
+    50% { height: 11px; opacity: 0.95; }
+    100% { height: 15px; opacity: 1; }
+  }
 }
 
 /* ==========================================================================
@@ -1270,14 +1379,14 @@
 /* 按钮点击拟真机械街机回弹形变 (Punchy Press & Spring Release) */
 @keyframes sound-btn-punch {
   0% { transform: scale(1); }
-  25% { transform: scale(0.91, 0.88) translateY(4px); }
-  55% { transform: scale(1.08, 1.05) translateY(-3px); }
-  80% { transform: scale(0.97, 0.98) translateY(1px); }
+  25% { transform: scale(0.95, 0.93) translateY(2px); }
+  55% { transform: scale(1.04, 1.03) translateY(-1.5px); }
+  80% { transform: scale(0.99, 0.99) translateY(0.5px); }
   100% { transform: scale(1); }
 }
 
 .sound-btn.btn-punched {
-  animation: sound-btn-punch 0.42s var(--ease-spring-sticker) forwards !important;
+  animation: sound-btn-punch 0.36s var(--ease-spring-sticker) forwards !important;
 }
 
 /* 按钮正在播放时的环绕流光呼吸 (Now-Playing Ambient Border Glow & Wave) */

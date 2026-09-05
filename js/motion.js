@@ -52,12 +52,14 @@
       const px = (mousePos.x - cardRect.left) / cardRect.width - 0.5; // -0.5 ~ 0.5
       const py = (mousePos.y - cardRect.top) / cardRect.height - 0.5; // -0.5 ~ 0.5
 
-      // 卡片浮动位移跟随光标方位（左右浮动 ±9px，上下微浮动 -11px ~ -1px）
-      const tx = (px * 18).toFixed(1);
-      const ty = (-6 + py * 10).toFixed(1);
+      // 卡片浮动位移跟随光标方位：
+      // 精细微调幅度（原 ±9px 缩减至 ±2.8px），既保持轻盈跟手的磁吸悬浮质感，又杜绝大幅晃动失控
+      const tx = (px * 5.6).toFixed(1);
+      // 上下微浮动：原 -11px ~ -1px 优化为 -3.8px ~ -1.4px（底数 -2.6px 优雅上浮，上下微动 ±1.2px）
+      const ty = (-2.6 + py * 2.4).toFixed(1);
 
-      // 3D 倾斜角度跟随光标方位（最大 8.5 度）
-      const maxTilt = 8.5;
+      // 3D 倾斜角度跟随光标方位：从原 8.5 度缩减至克制优雅的 3.5 度
+      const maxTilt = 3.5;
       const rx = (-py * maxTilt).toFixed(2);
       const ry = (px * maxTilt).toFixed(2);
       const glareX = ((px + 0.5) * 100).toFixed(1);
@@ -65,11 +67,11 @@
 
       activeCard.style.setProperty('--tx', `${tx}px`);
       activeCard.style.setProperty('--ty', `${ty}px`);
-      activeCard.style.setProperty('--tz', '14px');
+      activeCard.style.setProperty('--tz', '4.5px');
       activeCard.style.setProperty('--rx', `${rx}deg`);
       activeCard.style.setProperty('--ry', `${ry}deg`);
-      activeCard.style.setProperty('--sc', '1.025');
-      activeCard.style.setProperty('--glare-opacity', '1');
+      activeCard.style.setProperty('--sc', '1.012');
+      activeCard.style.setProperty('--glare-opacity', '0.85');
       activeCard.style.setProperty('--glare-x', `${glareX}%`);
       activeCard.style.setProperty('--glare-y', `${glareY}%`);
 
@@ -78,7 +80,9 @@
 
     function resetCard(card) {
       if (!card) return;
-      card.style.transition = 'transform 0.48s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s ease';
+      card.style.setProperty('--card-trans-dur', '0.38s');
+      card.style.setProperty('--card-trans-ease', 'cubic-bezier(0.22, 1, 0.36, 1)');
+      card.style.transition = 'transform 0.38s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.35s ease';
       card.style.setProperty('--tx', '0px');
       card.style.setProperty('--ty', '0px');
       card.style.setProperty('--tz', '0px');
@@ -110,7 +114,9 @@
         if (activeCard) resetCard(activeCard);
         activeCard = card;
         cardRect = card.getBoundingClientRect();
-        card.style.transition = 'transform 0.08s ease-out, box-shadow 0.2s ease-out';
+        card.style.setProperty('--card-trans-dur', '0.12s');
+        card.style.setProperty('--card-trans-ease', 'cubic-bezier(0.2, 0.8, 0.25, 1)');
+        card.style.transition = 'transform 0.12s cubic-bezier(0.2, 0.8, 0.25, 1), box-shadow 0.25s ease-out';
       }
 
       mousePos.x = e.clientX;
@@ -248,8 +254,10 @@
       { color: '#b5d58f', type: 'dewdrop', size: 4 },
       { color: '#f4ce62', type: 'firefly', size: 3.5 }
     ];
-
-    const PARTICLE_COUNT = Math.min(32, Math.max(16, Math.floor(window.innerWidth / 55)));
+    const isMobileDevice = window.innerWidth <= 768;
+    const PARTICLE_COUNT = isMobileDevice 
+      ? 10 
+      : Math.min(30, Math.max(16, Math.floor(window.innerWidth / 50)));
     const particles = [];
 
     // 全局微风扰动
@@ -326,12 +334,15 @@
           ctx.fillStyle = this.motif.color;
           ctx.fillText(this.motif.text, 0, 0);
         } else if (this.motif.type === 'firefly') {
-          const pulse = Math.sin(this.haloPhase) * 0.4 + 1;
+          const pulse = Math.sin(this.haloPhase) * 0.35 + 0.95;
+          const outerR = Math.max(1, this.size * 2.2 * pulse);
+          const grad = ctx.createRadialGradient(0, 0, this.size * 0.3, 0, 0, outerR);
+          grad.addColorStop(0, '#ffffff');
+          grad.addColorStop(0.3, this.motif.color);
+          grad.addColorStop(1, 'rgba(244, 206, 98, 0)');
           ctx.beginPath();
-          ctx.arc(0, 0, this.size * pulse, 0, Math.PI * 2);
-          ctx.fillStyle = this.motif.color;
-          ctx.shadowColor = this.motif.color;
-          ctx.shadowBlur = 10 * pulse;
+          ctx.arc(0, 0, outerR, 0, Math.PI * 2);
+          ctx.fillStyle = grad;
           ctx.fill();
         } else if (this.motif.type === 'dewdrop') {
           ctx.beginPath();
@@ -535,8 +546,10 @@
     companion.className = 'scrapbook-companion';
     companion.id = 'scrapbookCompanion';
 
-    // 记忆折叠偏好
-    const isFolded = sessionStorage.getItem('xsl_companion_folded') === 'true';
+    // 记忆折叠偏好（手机端首次访问默认折叠为贴边萌芽小标，不遮挡按钮与歌单）
+    const isMobile = window.innerWidth <= 768;
+    const storedFolded = sessionStorage.getItem('xsl_companion_folded');
+    const isFolded = storedFolded !== null ? storedFolded === 'true' : isMobile;
     if (isFolded) {
       companion.classList.add('companion-folded');
     }
@@ -599,6 +612,15 @@
 
     pet.addEventListener('click', function (e) {
       e.stopPropagation();
+
+      // 若当前处于折叠状态，点击伴侣直接丝滑展开
+      if (companion.classList.contains('companion-folded')) {
+        companion.classList.remove('companion-folded');
+        toggleBtn.textContent = '◀';
+        toggleBtn.title = '收起桌宠伴侣';
+        sessionStorage.setItem('xsl_companion_folded', 'false');
+      }
+
       // 果冻弹性跳跃
       pet.classList.remove('pet-bouncing');
       void pet.offsetWidth;

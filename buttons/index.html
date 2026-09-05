@@ -233,11 +233,53 @@
     .banner-nav a.icon-only:hover { background: transparent; }
     .banner-nav a img { height: 26px; width: auto; }
 
-    /* 手机端：隐藏左侧书签、隐藏管理员、显示 bannernav */
+    /* 手机端：隐藏左侧书签、隐藏管理员、显示 bannernav、优化播放卡片 */
     @media (max-width: 768px) {
       .site-tabs { display: none; }
       .banner-nav { display: flex; }
       .admin-login-btn { display: none; }
+      .banner {
+        margin: 10px 10px 0;
+        padding: 14px 16px;
+        border-radius: 18px;
+      }
+      .banner h1 {
+        font-size: 24px;
+      }
+      /* 顶部播放卡片手机端紧凑自适应 */
+      .player-card {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+        margin: 10px 10px 0;
+        padding: 12px 14px;
+        border-radius: 16px;
+      }
+      .player-card .pc-right {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        gap: 8px;
+      }
+      .player-card .pc-vol {
+        display: none; /* 手机端使用系统硬件音量，隐藏滑动条节省空间 */
+      }
+      .player-card .pc-stop,
+      .player-card .pc-random-text {
+        padding: 6px 12px;
+        font-size: 12px;
+      }
+      .wall {
+        padding: 18px 12px 80px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .sound-btn {
+        width: 100%;
+      }
     }
 
     /* 主体：垂直条目列表 */
@@ -775,7 +817,7 @@
       -webkit-backdrop-filter: blur(6px);
     }
   </style>
-  <link rel="stylesheet" href="../css/motion.css?v=2">
+  <link rel="stylesheet" href="../css/motion.css?v=3">
 </head>
 <body>
   <svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
@@ -921,6 +963,6 @@
 
   <script src="jszip.min.js"></script>
   <script src="buttons.js?v=25"></script>
-  <script src="../js/motion.js?v=2" defer></script>
+  <script src="../js/motion.js?v=3" defer></script>
 </body>
 </html>
