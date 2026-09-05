@@ -657,6 +657,39 @@
       bubble.classList.remove('show');
     });
 
+    // ===== 桌宠伴侣可拖动（拖动改位置，位移>6px 视为拖动、不触发 pet 点击） =====
+    const petWrap = document.getElementById('companionPetWrap');
+    if (petWrap) {
+      petWrap.style.touchAction = 'none';
+      let dragC = null;
+      petWrap.addEventListener('pointerdown', function (e) {
+        if (e.target.closest('.companion-toggle-btn')) return;
+        const r = companion.getBoundingClientRect();
+        const vw = window.innerWidth, vh = window.innerHeight;
+        dragC = { sx: e.clientX, sy: e.clientY, sr: vw - r.right, sb: vh - r.bottom, moved: false };
+      });
+      petWrap.addEventListener('pointermove', function (e) {
+        if (!dragC) return;
+        const dx = e.clientX - dragC.sx, dy = e.clientY - dragC.sy;
+        if (!dragC.moved && Math.abs(dx) + Math.abs(dy) > 6) dragC.moved = true;
+        if (!dragC.moved) return;
+        const vw = window.innerWidth, vh = window.innerHeight;
+        const w = companion.offsetWidth, h = companion.offsetHeight;
+        companion.style.right = `${Math.min(Math.max(4, dragC.sr - dx), vw - w - 4)}px`;
+        companion.style.bottom = `${Math.min(Math.max(4, dragC.sb - dy), vh - h - 4)}px`;
+        companion.style.left = 'auto';
+        companion.style.top = 'auto';
+      });
+      petWrap.addEventListener('pointerup', function () {
+        if (dragC && dragC.moved) {
+          const once = function (ev) { ev.preventDefault(); ev.stopPropagation(); };
+          petWrap.addEventListener('click', once, { capture: true, once: true });
+        }
+        dragC = null;
+      });
+      petWrap.addEventListener('pointercancel', function () { dragC = null; });
+    }
+
     // 闲置 28 秒提醒（仅在未折叠且气泡未显示时触发）
     let lastUserAction = performance.now();
     ['mousemove', 'keydown', 'scroll', 'click'].forEach(evt => {
@@ -906,21 +939,7 @@
       wave2.className = 'sound-shockwave-ring second';
       btn.appendChild(wave2);
       setTimeout(() => wave2.remove(), 600);
-
-      // 上浮趣味漫画拟声词泡泡
-      const bubble = document.createElement('span');
-      bubble.className = 'floating-sound-bubble';
-      const text = POPUP_TEXTS[Math.floor(Math.random() * POPUP_TEXTS.length)];
-      bubble.textContent = text;
-      const driftX = (Math.random() - 0.5) * 36;
-      bubble.style.setProperty('--drift-x', `${driftX.toFixed(1)}px`);
-      bubble.style.left = `${cx}px`;
-      bubble.style.top = `${rect.top}px`;
-      document.body.appendChild(bubble);
-      setTimeout(() => bubble.remove(), 850);
-
-      // 伴随微量手账微粒炸开
-      createStampBurst(cx, cy, 6);
+      // （已移除：上浮文字泡泡与散落微粒，保留按钮下压+声浪光环）
     }, { passive: true });
 
     // 3. 随机播放老虎机/轮盘快速扫光动效 (Roulette Sweep Animation)
