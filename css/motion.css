@@ -758,6 +758,9 @@
   height: 90%;
   object-fit: contain;
   transition: transform 0.3s var(--ease-spring-sticker);
+  -webkit-user-drag: none;   /* 禁用浏览器原生拖拽图片(避免拖动时图标被单独拖出) */
+  user-select: none;
+  pointer-events: none;      /* 让点击/拖动都落在 pet 容器上，而非图片层 */
 }
 
 .companion-pet:hover {
