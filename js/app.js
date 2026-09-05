@@ -649,6 +649,9 @@ function getSongCardHtml(song) {
   const cutLabel = cutTitle || '打开视频';
   const audioUrl = audioUrlOf(song);
   const isNowPlaying = !!(player.current && player.current.song_id === song.song_id && player.playing);
+  const waveHtml = isNowPlaying
+    ? '<span class="playing-bars" aria-hidden="true"><span class="bar"></span><span class="bar"></span><span class="bar"></span></span>'
+    : '';
   const playBtnHtml = audioUrl
     ? `<button class="song-play-btn${isNowPlaying ? ' playing' : ''}" data-play-song="${song.song_id}" title="${isNowPlaying ? '暂停' : '播放音频'}">${iconSvg(isNowPlaying ? 'pause' : 'caret-right')}</button>`
     : '';
@@ -656,15 +659,25 @@ function getSongCardHtml(song) {
   const songlistAddHtml = `<button class="songlist-add-btn${inSomeSonglist ? ' in-some' : ''}" data-songlist-pick="${song.song_id}" title="${inSomeSonglist ? '已在歌单中，点击管理' : '加入歌单'}">${iconSvg('folder-add')}</button>`;
 
   return `
-    <div class="song-item${state.selectedSong && state.selectedSong.song_id === song.song_id ? ' selected' : ''}" data-song-id="${song.song_id}">
+    <div class="song-item${isNowPlaying ? ' now-playing' : ''}${state.selectedSong && state.selectedSong.song_id === song.song_id ? ' selected' : ''}" data-song-id="${song.song_id}">
       <div class="song-top">
+        <div class="song-vinyl-wrap${isNowPlaying ? ' spinning' : ''}" data-play-song="${song.song_id}" title="${audioUrl ? (isNowPlaying ? '暂停' : '点击播放') : '暂无试听音频'}">
+          <div class="song-vinyl">
+            <div class="vinyl-core">${isNowPlaying ? '🌻' : '🌱'}</div>
+          </div>
+        </div>
         <div class="song-main">
-          <div class="song-name">${escHtml(song.display_song_name || song.song_name || '')}</div>
+          <div class="song-name-row">
+            <span class="song-name-text">${escHtml(song.display_song_name || song.song_name || '')}</span>
+            ${waveHtml}
+          </div>
           <div class="song-sub">${escHtml(artistLine || '歌手未填写')}</div>
         </div>
-        ${playBtnHtml}
-        ${songlistAddHtml}
-        <button class="favorite-star${favoriteActive ? ' active' : ''}" data-favorite-key="${escHtml(favoriteKey)}" ${canFavoriteSong(song) ? '' : 'disabled'} title="${favoriteActive ? '取消中意' : '加入中意'}">${iconSvg(favoriteActive ? 'heart-fill' : 'heart')}</button>
+        <div class="song-actions">
+          ${playBtnHtml}
+          ${songlistAddHtml}
+          <button class="favorite-star${favoriteActive ? ' active' : ''}" data-favorite-key="${escHtml(favoriteKey)}" ${canFavoriteSong(song) ? '' : 'disabled'} title="${favoriteActive ? '取消中意' : '加入中意'}">${iconSvg(favoriteActive ? 'heart-fill' : 'heart')}</button>
+        </div>
       </div>
       <div class="badge-wrap">
         <button class="badge count" data-detail-song="${escHtml(song.song_name || song.row_key || '')}" data-detail-label="${escHtml(song.display_song_name || song.song_name || '')}" data-detail-count="${escHtml(song.sing_count || 0)}">次数 ${escHtml(song.sing_count || 0)}</button>
@@ -873,6 +886,17 @@ function getPlayableSongs() {
 }
 
 function syncPlayingButton() {
+  document.querySelectorAll('.song-item.now-playing').forEach(item => {
+    item.classList.remove('now-playing');
+    const bars = item.querySelector('.playing-bars');
+    if (bars) bars.remove();
+    const vinylWrap = item.querySelector('.song-vinyl-wrap');
+    if (vinylWrap) {
+      vinylWrap.classList.remove('spinning');
+      const core = vinylWrap.querySelector('.vinyl-core');
+      if (core) core.textContent = '🌱';
+    }
+  });
   document.querySelectorAll('.song-item .song-play-btn.playing').forEach(b => {
     b.classList.remove('playing');
     b.innerHTML = iconSvg('caret-right');
@@ -880,11 +904,25 @@ function syncPlayingButton() {
   });
   const cur = player.current;
   if (cur && player.playing) {
-    const el = dom.songListWrap && dom.songListWrap.querySelector(`.song-item[data-song-id="${cur.song_id}"] .song-play-btn`);
-    if (el) {
-      el.classList.add('playing');
-      el.innerHTML = iconSvg('pause');
-      el.title = '暂停';
+    const card = dom.songListWrap && dom.songListWrap.querySelector(`.song-item[data-song-id="${cur.song_id}"]`);
+    if (card) {
+      card.classList.add('now-playing');
+      const songNameEl = card.querySelector('.song-name-row') || card.querySelector('.song-name');
+      if (songNameEl && !songNameEl.querySelector('.playing-bars')) {
+        songNameEl.insertAdjacentHTML('beforeend', '<span class="playing-bars" aria-hidden="true"><span class="bar"></span><span class="bar"></span><span class="bar"></span></span>');
+      }
+      const vinylWrap = card.querySelector('.song-vinyl-wrap');
+      if (vinylWrap) {
+        vinylWrap.classList.add('spinning');
+        const core = vinylWrap.querySelector('.vinyl-core');
+        if (core) core.textContent = '🌻';
+      }
+      const el = card.querySelector('.song-play-btn');
+      if (el) {
+        el.classList.add('playing');
+        el.innerHTML = iconSvg('pause');
+        el.title = '暂停';
+      }
     }
   }
 }
@@ -1549,7 +1587,8 @@ function renderSongs(errorMessage = '') {
   if (errorMessage) {
     dom.songListWrap.innerHTML = `
       <div class="card empty-card">
-        <div class="empty-title">歌曲加载失败</div>
+        <div class="empty-icon-cute">🍂</div>
+        <div class="empty-title" style="font-size:15px; font-weight:700; color:var(--text); margin-bottom:6px;">歌曲加载失败</div>
         <div>${escHtml(errorMessage)}</div>
       </div>
     `;
@@ -1560,8 +1599,9 @@ function renderSongs(errorMessage = '') {
   if (state.isSongLoading && state.allSongs.length === 0) {
     dom.songListWrap.innerHTML = `
       <div class="card empty-card">
-        <div class="empty-title">正在加载歌单…</div>
-        <div>等一下哦，我在读取歌单数据。</div>
+        <div class="empty-icon-cute">🌱</div>
+        <div class="empty-title" style="font-size:15px; font-weight:700; color:var(--text); margin-bottom:6px;">正在准备歌单…</div>
+        <div>等一下哦，正在读取小松绿的歌单数据。</div>
       </div>
     `;
     return;
@@ -1570,8 +1610,9 @@ function renderSongs(errorMessage = '') {
   if (state.filteredSongs.length === 0) {
     dom.songListWrap.innerHTML = `
       <div class="card empty-card">
-        <div class="empty-title">没有找到匹配歌曲</div>
-        <div>可以试试换个关键词，或者把高级筛选清掉一点。</div>
+        <div class="empty-icon-cute">🌻</div>
+        <div class="empty-title" style="font-size:15px; font-weight:700; color:var(--text); margin-bottom:6px;">没有找到匹配歌曲</div>
+        <div>可以试试换个关键词，或者点上方的「清空筛选」看看~</div>
       </div>
     `;
     deselectSong(true);
@@ -1597,18 +1638,113 @@ function renderSongs(errorMessage = '') {
 }
 
 function syncFilterSummary() {
-  const activeParts = [];
-  if (state.songFilters.languages.length) activeParts.push(`语言 ${state.songFilters.languages.join(' / ')}`);
-  if (state.songFilters.tags.length) activeParts.push(`标签 ${state.songFilters.tags.join(' / ')}`);
+  const chips = [];
+
+  // 1. 语言过滤
+  if (state.songFilters.languages && state.songFilters.languages.length) {
+    chips.push({
+      type: 'languages',
+      label: `语言: ${state.songFilters.languages.join('/')}`,
+      action: () => {
+        state.songFilters.languages = [];
+        renderLanguageChips();
+        applySongFilters();
+      }
+    });
+  }
+
+  // 2. 标签过滤
+  if (state.songFilters.tags && state.songFilters.tags.length) {
+    state.songFilters.tags.forEach(t => {
+      chips.push({
+        type: 'tag',
+        label: `#${t}`,
+        action: () => {
+          state.songFilters.tags = state.songFilters.tags.filter(x => x !== t);
+          renderTagChips();
+          applySongFilters();
+        }
+      });
+    });
+  }
+
+  // 3. 次数过滤
   if (state.songFilters.countMin !== null || state.songFilters.countMax !== null) {
-    activeParts.push(`次数 ${state.songFilters.countMin ?? '不限'}-${state.songFilters.countMax ?? '不限'}`);
+    const cLabel = (state.songFilters.countMin === 1 && state.songFilters.countMax === 1)
+      ? '仅1次'
+      : (state.songFilters.countMin ? `≥${state.songFilters.countMin}次` : `≤${state.songFilters.countMax}次`);
+    chips.push({
+      type: 'count',
+      label: `次数: ${cLabel}`,
+      action: () => {
+        state.songFilters.countMin = null;
+        state.songFilters.countMax = null;
+        syncPresetButtons();
+        applySongFilters();
+      }
+    });
   }
+
+  // 4. 天数过滤
   if (state.songFilters.daysMin !== null || state.songFilters.daysMax !== null) {
-    activeParts.push(`天数 ${state.songFilters.daysMin ?? '不限'}-${state.songFilters.daysMax ?? '不限'}`);
+    let dLabel = '天数筛选';
+    if (state.songFilters.daysMin === 0 && state.songFilters.daysMax === 7) dLabel = '近7天';
+    else if (state.songFilters.daysMin === 0 && state.songFilters.daysMax === 30) dLabel = '近30天';
+    else if (state.songFilters.daysMin === 0 && state.songFilters.daysMax === 90) dLabel = '近90天';
+    else if (state.songFilters.daysMin === 90 && state.songFilters.daysMax === null) dLabel = '90天以上';
+    chips.push({
+      type: 'days',
+      label: dLabel,
+      action: () => {
+        state.songFilters.daysMin = null;
+        state.songFilters.daysMax = null;
+        syncPresetButtons();
+        applySongFilters();
+      }
+    });
   }
-  dom.toggleFilterBtn.classList.toggle('active', state.filtersVisible || activeParts.length > 0);
+
+  // 5. 二创过滤
+  if (state.songFilters.derivativeOnly) {
+    chips.push({
+      type: 'derivative',
+      label: '仅二创',
+      action: () => {
+        state.songFilters.derivativeOnly = false;
+        if (dom.derivativeOnlyBtn) dom.derivativeOnlyBtn.checked = false;
+        applySongFilters();
+      }
+    });
+  }
+
+  dom.toggleFilterBtn.classList.toggle('active', state.filtersVisible || chips.length > 0);
   dom.favoritesOnlyBtn.classList.toggle('active', state.favoritesOnly);
   dom.favoritesOnlyBtn.textContent = state.favoritesOnly ? '只看中意（开）' : '仅看中意';
+
+  // 渲染活动胶囊条
+  if (dom.activeFiltersBar && dom.activeChipsList) {
+    if (chips.length > 0) {
+      dom.activeFiltersBar.style.display = 'flex';
+      dom.activeChipsList.innerHTML = chips.map((c, idx) => `
+        <span class="active-chip" data-chip-idx="${idx}" title="点击移除此条件">
+          ${escHtml(c.label)}
+          <span class="chip-x">✕</span>
+        </span>
+      `).join('');
+
+      dom.activeChipsList.querySelectorAll('.active-chip').forEach(el => {
+        el.addEventListener('click', () => {
+          const idx = parseInt(el.dataset.chipIdx, 10);
+          if (chips[idx] && typeof chips[idx].action === 'function') {
+            chips[idx].action();
+          }
+        });
+      });
+    } else {
+      dom.activeFiltersBar.style.display = 'none';
+      dom.activeChipsList.innerHTML = '';
+    }
+  }
 }
 
 function selectSong(song) {
@@ -2496,6 +2632,7 @@ async function initRoom(forceRefreshSongs = false) {
 function bindDom() {
   [
     'refreshBtn','headerStatus','roomSubtitle','searchInput','clearSearchBtn','toggleFilterBtn','favoritesOnlyBtn',
+    'activeFiltersBar','activeChipsList','clearAllFilterBtn','filterDrawerBackdrop','closeFilterDrawerBtn','confirmFilterDrawerBtn',
     'songMetaText','songListWrap','filterCard','sortFieldSelect','sortDirSelect',
     'languageChips','tagChips','langAllBtn','langNoneBtn','tagAllBtn','tagNoneBtn','countPresetRow','daysPresetRow','resetFiltersBtn','derivativeOnlyBtn','actionPanel','selectedSongName','selectedSongCutWrap',
     'copySongBtn','copyOrderTextBtn','clearSelectionBtn','historyYearSelect','historyMonthSelect',
@@ -2510,7 +2647,7 @@ function bindDom() {
     'playerBar','playerPrevBtn','playerToggleBtn','playerNextBtn','playerSongName','playerSongArtist','playerSeek','playerTimeCur','playerTimeDur','playerShuffleBtn','playerFavBtn','playerVolume','playAllBtn','playShuffleBtn',
     'playerTimerWrap','playerTimerBtn','playerTimerPopover','playerTimerPopTitle','timerValH','timerValM','timerCancelBtn','timerStartBtn',
     'playlistPanel','playlistCountText','playlistClearBtn','playlistListWrap',
-    'songlistPanel','songlistNewBtn','songlistBodyWrap',
+    'songlistPanel','songlistNewBtn','songlistBodyWrap','songlistToggleBtn','songlistCloseBtn',
     'songlistDialogOverlay','songlistNewName','songlistDialogCancel','songlistDialogOk',
     'songlistPickerOverlay','pickerSongName','pickerBody','pickerCloseBtn',
     'mobileFabs','songlistFab','playlistFab','mobileTimerFab'
@@ -2552,16 +2689,63 @@ function bindEvents() {
     dom.searchInput.focus();
   });
 
-  dom.toggleFilterBtn.addEventListener('click', () => {
-    state.filtersVisible = !state.filtersVisible;
-    dom.filterCard.style.display = state.filtersVisible ? 'block' : 'none';
+  function openFilterDrawer() {
+    state.filtersVisible = true;
+    dom.filterCard.style.display = 'flex';
+    requestAnimationFrame(() => {
+      dom.filterCard.classList.add('open');
+      if (dom.filterDrawerBackdrop) dom.filterDrawerBackdrop.classList.add('show');
+    });
     syncFilterSummary();
+  }
+
+  function closeFilterDrawer() {
+    state.filtersVisible = false;
+    dom.filterCard.classList.remove('open');
+    if (dom.filterDrawerBackdrop) dom.filterDrawerBackdrop.classList.remove('show');
+    setTimeout(() => {
+      if (!state.filtersVisible) dom.filterCard.style.display = 'none';
+    }, 240);
+    syncFilterSummary();
+  }
+
+  dom.toggleFilterBtn.addEventListener('click', () => {
+    if (state.filtersVisible) closeFilterDrawer();
+    else openFilterDrawer();
+  });
+
+  if (dom.closeFilterDrawerBtn) {
+    dom.closeFilterDrawerBtn.addEventListener('click', closeFilterDrawer);
+  }
+  if (dom.confirmFilterDrawerBtn) {
+    dom.confirmFilterDrawerBtn.addEventListener('click', closeFilterDrawer);
+  }
+  if (dom.filterDrawerBackdrop) {
+    dom.filterDrawerBackdrop.addEventListener('click', closeFilterDrawer);
+  }
+  if (dom.clearAllFilterBtn) {
+    dom.clearAllFilterBtn.addEventListener('click', resetSongFilters);
+  }
+  window.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && state.filtersVisible) {
+      closeFilterDrawer();
+    }
   });
 
   dom.favoritesOnlyBtn.addEventListener('click', () => {
     state.favoritesOnly = !state.favoritesOnly;
     applySongFilters();
   });
+  if (dom.songlistToggleBtn) {
+    dom.songlistToggleBtn.addEventListener('click', () => {
+      dom.songlistPanel.classList.toggle('show');
+    });
+  }
+  if (dom.songlistCloseBtn) {
+    dom.songlistCloseBtn.addEventListener('click', () => {
+      dom.songlistPanel.classList.remove('show');
+    });
+  }
   // 二创歌曲开关：勾选显示二创歌曲，不勾选默认隐藏
   dom.derivativeOnlyBtn.addEventListener('change', () => {
     state.songFilters.derivativeOnly = !!dom.derivativeOnlyBtn.checked;
@@ -2654,6 +2838,8 @@ function bindEvents() {
 
     const favoriteBtn = event.target.closest('[data-favorite-key]');
     if (favoriteBtn) {
+      favoriteBtn.classList.add('anim-pop');
+      setTimeout(() => favoriteBtn.classList.remove('anim-pop'), 450);
       const songEl = favoriteBtn.closest('.song-item');
       const songId = Number(songEl && songEl.dataset.songId);
       const song = state.filteredSongs.find(item => item.song_id === songId);

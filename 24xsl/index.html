@@ -12,11 +12,22 @@
         .site-tabs {
             position: fixed;
             left: 0;
-            top: 76px;
+            top: 90px;
             z-index: 9999;
             display: flex;
             flex-direction: column;
-            gap: 20px;
+            gap: 18px;
+        }
+        @media (max-width: 1440px) {
+            .site-tabs {
+                transform: translateX(-56px);
+                opacity: 0.88;
+                transition: transform 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s ease;
+            }
+            .site-tabs:hover {
+                transform: translateX(0);
+                opacity: 1;
+            }
         }
         .site-tab {
             display: inline-flex;
@@ -27,30 +38,34 @@
             font-size: 15px;
             font-weight: 600;
             text-decoration: none;
-            transition: color 0.18s ease;
+            transition: color 0.18s ease, transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
             position: relative;
             border: none;
             height: 46px;
             overflow: visible;
             background: transparent;
+            filter: drop-shadow(0 2px 6px rgba(122,136,70,0.12));
         }
         .site-tab::before {
             content: '';
             position: absolute;
             inset: 0;
-            background: rgba(255,250,240,0.66);
+            background: rgba(255,250,240,0.78);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
             clip-path: polygon(0 0, calc(100% - 16px) 0, 100% 50%, calc(100% - 16px) 100%, 0 100%);
             z-index: 0;
-            transition: background 0.18s ease;
+            transition: background 0.18s ease, border-color 0.18s ease;
         }
         .site-tab > * { position: relative; z-index: 1; }
         .site-tab img { height: 52px; width: auto; display: block; flex-shrink: 0; object-fit: contain; }
         .site-tab svg.icon { width: 18px; height: 18px; fill: currentColor; display: block; flex-shrink: 0; }
         .site-tab .tab-emoji { font-size: 26px; line-height: 1; display: inline-block; flex-shrink: 0; }
-        .site-tab:hover::before { background: rgba(255,250,240,0.86); }
-        .site-tab:hover { color: var(--ink); }
+        .site-tab:hover { color: var(--ink); transform: translateX(5px); }
+        .site-tab:hover::before { background: rgba(255,250,240,0.95); }
+        .site-tab:active { transform: translateX(2px) scale(0.97); }
         .site-tab.active { color: #2e3a17; font-weight: 800; text-shadow: none; -webkit-text-stroke: 0; }
-        .site-tab.active::before { background: rgba(124,140,66,0.38); }
+        .site-tab.active::before { background: rgba(138,154,78,0.42); }
         /* 手机端：隐藏左侧书签页签（避免遮挡全屏游戏） */
         @media (max-width: 768px) {
             .site-tabs { display: none; }
