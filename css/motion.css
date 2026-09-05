@@ -1,0 +1,1443 @@
+/* ==========================================================================
+   小松绿全站动效体系 · 手账贴纸与浮动卡片世界观 (Motion Design System)
+   - 核心隐喻：轻盈跳脱的手账贴纸与浮动卡片、灵动活泼的互动伴侣
+   - 交互响应：卡片3D随鼠标全向动态倾斜浮动、高光反射跟随、指尖星光光标拖尾
+   - 非触发式装饰微动：全站清晨极光光晕、落叶音符自然微生态、黑胶声波扩散光环、吉祥物雀跃小彩蛋
+   ========================================================================== */
+
+:root {
+  /* ===== 物理弹簧与生物缓动令牌 (Spring & Easing Tokens) ===== */
+  --ease-spring-sticker: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --ease-spring-soft: cubic-bezier(0.22, 1.25, 0.36, 1);
+  --ease-spring-press: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-breath: cubic-bezier(0.45, 0.05, 0.55, 0.95);
+  --ease-gentle-bounce: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* 手账贴纸柔和彩色投影 */
+  --shadow-sticker: 0 6px 18px rgba(122, 136, 70, 0.1), 0 2px 5px rgba(0, 0, 0, 0.03);
+  --shadow-sticker-hover: 0 16px 36px rgba(100, 120, 50, 0.2), 0 4px 12px rgba(0, 0, 0, 0.06);
+  --shadow-sticker-active: 0 3px 10px rgba(122, 136, 70, 0.14), inset 0 2px 4px rgba(0, 0, 0, 0.04);
+  --shadow-glow-primary: 0 0 0 3px rgba(138, 154, 78, 0.35), 0 8px 24px rgba(138, 154, 78, 0.25);
+}
+
+/* ==========================================================================
+   1. 非触发式常驻装饰特效：清晨极光与光晕 (Ambient Aurora Glow Orbs)
+   ========================================================================== */
+
+/* 全屏环境柔光层 */
+#ambientAuroraBg {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+  opacity: 0.75;
+}
+
+.aurora-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(85px);
+  will-change: transform;
+}
+
+.aurora-orb-1 {
+  width: min(520px, 85vw);
+  height: min(520px, 85vw);
+  background: radial-gradient(circle, rgba(138, 154, 78, 0.26) 0%, rgba(238, 241, 214, 0.12) 60%, transparent 80%);
+  top: -8%;
+  right: -5%;
+  animation: float-orb-1 20s ease-in-out infinite alternate;
+}
+
+.aurora-orb-2 {
+  width: min(480px, 80vw);
+  height: min(480px, 80vw);
+  background: radial-gradient(circle, rgba(232, 184, 144, 0.22) 0%, rgba(253, 247, 216, 0.1) 60%, transparent 80%);
+  bottom: 2%;
+  left: -8%;
+  animation: float-orb-2 24s ease-in-out infinite alternate;
+}
+
+@keyframes float-orb-1 {
+  0% { transform: translate3d(0, 0, 0) scale(1); }
+  50% { transform: translate3d(-70px, 90px, 0) scale(1.16); }
+  100% { transform: translate3d(50px, 130px, 0) scale(0.92); }
+}
+
+@keyframes float-orb-2 {
+  0% { transform: translate3d(0, 0, 0) scale(1); }
+  50% { transform: translate3d(90px, -80px, 0) scale(1.2); }
+  100% { transform: translate3d(-60px, -50px, 0) scale(0.88); }
+}
+
+/* 全屏环境微风粒子画布（常驻非触发式微动） */
+#ambientBreezeCanvas {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 1;
+  opacity: 0.82;
+}
+
+/* ==========================================================================
+   2. 非触发式常驻装饰特效：吉祥物雀跃彩蛋与流光 (Playful Mascot & Header Aura)
+   ========================================================================== */
+
+/* 闲置时被微风吹拂的极轻晃动与呼吸（吉祥物头像、气泡） */
+@keyframes ambient-breeze {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  25% {
+    transform: translateY(-3px) rotate(-1.5deg);
+  }
+  50% {
+    transform: translateY(-1px) rotate(0.8deg);
+  }
+  75% {
+    transform: translateY(-3.5px) rotate(1.6deg);
+  }
+}
+
+/* 吉祥物每隔约 11s 会来一次欢快的小跳跃与扭扭（非触发式小惊喜） */
+@keyframes mascot-joy-jump {
+  0%, 80%, 100% {
+    transform: translateY(0) scale(1) rotate(0deg);
+  }
+  84% {
+    transform: translateY(-10px) scale(1.1, 0.9) rotate(-4deg);
+  }
+  88% {
+    transform: translateY(3px) scale(0.92, 1.08) rotate(3deg);
+  }
+  92% {
+    transform: translateY(-5px) scale(1.05, 0.95) rotate(-2deg);
+  }
+  96% {
+    transform: translateY(0) scale(1) rotate(0deg);
+  }
+}
+
+.banner-icon img,
+.header-brand .logo,
+.brand-lockup .cat-mark {
+  display: inline-block;
+  transform-origin: center bottom;
+  animation: ambient-breeze 5.5s var(--ease-breath) infinite,
+             mascot-joy-jump 11s ease-in-out infinite !important;
+}
+
+/* 标题流光呼吸 */
+@keyframes header-shimmer {
+  0%, 100% {
+    filter: drop-shadow(0 2px 8px rgba(138, 154, 78, 0.15));
+  }
+  50% {
+    filter: drop-shadow(0 4px 18px rgba(138, 154, 78, 0.42));
+  }
+}
+
+.banner-main h1,
+.header-brand h1 {
+  animation: header-shimmer 4s ease-in-out infinite;
+}
+
+.tab-emoji {
+  display: inline-block;
+  transform-origin: center bottom;
+  animation: ambient-breeze 6.8s var(--ease-breath) infinite -2s;
+}
+
+/* ==========================================================================
+   3. 非触发式常驻装饰特效：黑胶同心声波光环与旋律音符 (Audio Waves & Notes)
+   ========================================================================== */
+
+/* 正在播放时，黑胶封面四周自动扩散轻柔的环形声波光晕 */
+@keyframes vinyl-sound-ring {
+  0% {
+    transform: scale(0.85);
+    opacity: 0.9;
+  }
+  60% {
+    opacity: 0.45;
+  }
+  100% {
+    transform: scale(1.65);
+    opacity: 0;
+  }
+}
+
+.song-vinyl-wrap.spinning::before {
+  content: '';
+  position: absolute;
+  inset: -6px;
+  border-radius: 16px;
+  border: 1.8px solid rgba(138, 154, 78, 0.55);
+  animation: vinyl-sound-ring 2.2s cubic-bezier(0.2, 0.8, 0.4, 1) infinite;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.song-vinyl-wrap.spinning::after {
+  content: '';
+  position: absolute;
+  inset: -6px;
+  border-radius: 16px;
+  border: 1.5px solid rgba(232, 184, 144, 0.45);
+  animation: vinyl-sound-ring 2.2s cubic-bezier(0.2, 0.8, 0.4, 1) infinite 1.1s;
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* 播放器周围非触发式浮动的音符装饰 */
+@keyframes float-note-drift {
+  0% {
+    transform: translate(-50%, 0) scale(0.5) rotate(0deg);
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.9;
+    transform: translate(calc(-50% + 12px), -18px) scale(1.1) rotate(-10deg);
+  }
+  75% {
+    opacity: 0.75;
+    transform: translate(calc(-50% - 15px), -55px) scale(1) rotate(14deg);
+  }
+  100% {
+    transform: translate(calc(-50% + 10px), -85px) scale(0.4) rotate(-6deg);
+    opacity: 0;
+  }
+}
+
+.ambient-melody-note {
+  position: absolute;
+  pointer-events: none;
+  font-size: 16px;
+  color: var(--primary, #8a9a4e);
+  animation: float-note-drift 3.2s ease-out forwards;
+  z-index: 100;
+  font-family: serif;
+}
+
+/* ==========================================================================
+   4. 交互式特效：指尖自然微尘光晕拖尾 (Subtle Natural Mote Cursor Trail)
+   ========================================================================== */
+
+.cursor-dust {
+  position: fixed;
+  pointer-events: none;
+  user-select: none;
+  z-index: 99999;
+  border-radius: 999px;
+  will-change: transform, opacity;
+  transform: translate(-50%, -50%);
+  animation: dust-fade 0.6s cubic-bezier(0.2, 0.8, 0.35, 1) forwards;
+}
+
+@keyframes dust-fade {
+  0% {
+    transform: translate(-50%, -50%) scale(0.65);
+    opacity: var(--dust-op, 0.65);
+  }
+  30% {
+    transform: translate(calc(-50% + var(--dx, 0px) * 0.4), calc(-50% + var(--dy, 0px) * 0.4)) scale(1);
+    opacity: calc(var(--dust-op, 0.65) * 0.9);
+  }
+  100% {
+    transform: translate(calc(-50% + var(--dx, 0px)), calc(-50% + calc(var(--dy, 0px) + 7px))) scale(0.2);
+    opacity: 0;
+  }
+}
+
+/* ==========================================================================
+   5. 卡片全向 3D 鼠标跟随倾斜与光泽反射 (3D Interactive Tilt & Sheen)
+   ========================================================================== */
+
+/* 默认状态：卡片端正整齐对齐，无初始歪斜；仅在鼠标移入时产生全向跟随倾斜与浮动 */
+.song-item,
+.history-item,
+.favorite-item,
+.sound-btn {
+  --rx: 0deg;
+  --ry: 0deg;
+  --tx: 0px;
+  --ty: 0px;
+  --tz: 0px;
+  --sc: 1;
+  --glare-opacity: 0;
+  --glare-x: 50%;
+  --glare-y: 50%;
+
+  position: relative;
+  will-change: transform, box-shadow;
+  transform-style: preserve-3d;
+  transform-origin: center center;
+
+  /* 正常时水平端正，移入悬停时由光标驱动 3D 浮动跟随 */
+  transform: perspective(800px)
+             translateX(var(--tx, 0px))
+             translateY(var(--ty, 0px))
+             translateZ(var(--tz, 0px))
+             rotateX(var(--rx, 0deg))
+             rotateY(var(--ry, 0deg))
+             scale(var(--sc, 1)) !important;
+
+  transition: transform 0.12s cubic-bezier(0.2, 0, 0.2, 1),
+              box-shadow 0.28s var(--ease-spring-sticker),
+              border-color 0.2s ease,
+              background 0.2s ease !important;
+}
+
+/* 动态鼠标跟随光斑反射层（如高级光面贴纸） */
+.song-item::after,
+.history-item::after,
+.favorite-item::after,
+.sound-btn::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  background: radial-gradient(circle 140px at var(--glare-x, 50%) var(--glare-y, 50%), rgba(255, 255, 255, 0.45) 0%, rgba(255, 255, 255, 0) 80%);
+  opacity: var(--glare-opacity, 0);
+  transition: opacity 0.22s ease;
+  z-index: 5;
+}
+
+/* 悬停微浮起与贴纸翘角剥离质感增强 */
+.song-item:hover,
+.history-item:hover,
+.favorite-item:hover,
+.sound-btn:hover {
+  box-shadow: var(--shadow-sticker-hover) !important;
+  z-index: 10;
+}
+
+/* 点击按压：手账按压阻尼感 */
+.song-item:active,
+.history-item:active,
+.favorite-item:active,
+.sound-btn:active {
+  --ty: 1px !important;
+  --sc: 0.97 !important;
+  --tz: -4px !important;
+  box-shadow: var(--shadow-sticker-active) !important;
+  transition: transform 0.08s ease !important;
+}
+
+/* ==========================================================================
+   6. 旋律共舞与声音呼吸 (Audio Reactive & Melody Rhythm)
+   ========================================================================== */
+
+/* 正在播放中的歌曲卡片：呼吸微光与律动光晕 */
+@keyframes melody-card-breath {
+  0%, 100% {
+    box-shadow: 0 8px 26px rgba(138, 154, 78, 0.22), 0 0 0 1.5px rgba(138, 154, 78, 0.45);
+    border-color: rgba(138, 154, 78, 0.6) !important;
+  }
+  50% {
+    box-shadow: 0 14px 38px rgba(138, 154, 78, 0.36), 0 0 0 3px rgba(138, 154, 78, 0.7);
+    border-color: var(--primary) !important;
+  }
+}
+
+.song-item.now-playing {
+  animation: melody-card-breath 2.4s var(--ease-breath) infinite !important;
+}
+
+.sound-btn.playing {
+  animation: melody-card-breath 2s var(--ease-breath) infinite !important;
+  border-color: var(--primary) !important;
+}
+
+/* 黑胶唱片：拟真微颤旋转 */
+@keyframes vinyl-spin-wobble {
+  0% { transform: rotate(0deg); }
+  50% { transform: rotate(180deg) scale(1.03); }
+  100% { transform: rotate(360deg); }
+}
+
+.song-vinyl-wrap.spinning .song-vinyl {
+  animation: vinyl-spin-wobble 3.8s linear infinite !important;
+}
+
+.song-vinyl-wrap.spinning .vinyl-core {
+  display: inline-block;
+  animation: ambient-pulse 1.8s var(--ease-breath) infinite;
+}
+
+/* 音频跳动柱 (Equalizer Bars) 拟真律动 */
+@keyframes wave-dance-1 {
+  0%, 100% { height: 4px; }
+  50% { height: 16px; }
+}
+@keyframes wave-dance-2 {
+  0%, 100% { height: 15px; }
+  50% { height: 5px; }
+}
+@keyframes wave-dance-3 {
+  0%, 100% { height: 7px; }
+  50% { height: 16px; }
+}
+
+.playing-bars {
+  display: inline-flex;
+  align-items: flex-end;
+  gap: 2.5px;
+  height: 16px;
+  margin-left: 6px;
+  vertical-align: middle;
+}
+
+.playing-bars .bar {
+  width: 3px;
+  background: var(--primary, #8a9a4e);
+  border-radius: 999px;
+  display: block;
+}
+
+.playing-bars .bar:nth-child(1) {
+  animation: wave-dance-1 0.72s ease-in-out infinite alternate;
+}
+.playing-bars .bar:nth-child(2) {
+  animation: wave-dance-2 0.88s ease-in-out infinite alternate;
+}
+.playing-bars .bar:nth-child(3) {
+  animation: wave-dance-3 0.65s ease-in-out infinite alternate;
+}
+
+/* ==========================================================================
+   7. 富有表现力的微反馈 (Expressive Micro-Feedback)
+   ========================================================================== */
+
+/* 收藏红心：手账星光盖章弹性缩放 */
+@keyframes stamp-pop {
+  0% { transform: scale(1); }
+  30% { transform: scale(1.45) rotate(-9deg); }
+  60% { transform: scale(0.85) rotate(5deg); }
+  85% { transform: scale(1.15) rotate(-2deg); }
+  100% { transform: scale(1) rotate(0deg); }
+}
+
+.favorite-star {
+  transform-origin: center center;
+  transition: transform 0.24s var(--ease-spring-sticker), color 0.2s ease !important;
+}
+
+.favorite-star:hover {
+  transform: scale(1.22) rotate(-6deg) !important;
+}
+
+.favorite-star.active {
+  animation: stamp-pop 0.5s var(--ease-spring-sticker) forwards;
+}
+
+/* 播放按钮微反馈 */
+.song-play-btn,
+.player-btn {
+  transform-origin: center center;
+  transition: transform 0.25s var(--ease-spring-sticker),
+              background 0.2s ease,
+              border-color 0.2s ease,
+              box-shadow 0.25s var(--ease-spring-sticker) !important;
+}
+
+.song-play-btn:hover,
+.player-btn:hover {
+  transform: scale(1.15) !important;
+  box-shadow: 0 4px 14px rgba(122, 136, 70, 0.25) !important;
+}
+
+.song-play-btn:active,
+.player-btn:active {
+  transform: scale(0.9) !important;
+  transition-duration: 0.08s !important;
+}
+
+.player-btn.primary:hover {
+  transform: scale(1.18) !important;
+  box-shadow: 0 6px 22px rgba(138, 154, 78, 0.4) !important;
+}
+.player-btn.primary:active {
+  transform: scale(0.88) !important;
+}
+
+/* 标签徽章 (Badges) 悬停微跳 */
+.badge {
+  display: inline-block;
+  transition: transform 0.22s var(--ease-spring-sticker), background 0.18s ease;
+}
+.badge:hover {
+  transform: translateY(-2px) scale(1.06);
+}
+
+/* ==========================================================================
+   8. 悬浮音乐舱 (Floating Dock Player Bar Transitions)
+   ========================================================================== */
+
+.player-bar {
+  will-change: transform, opacity;
+  transition: transform 0.45s var(--ease-spring-soft),
+              opacity 0.35s ease,
+              box-shadow 0.35s ease !important;
+}
+
+.player-bar.motion-hidden {
+  transform: translateX(-50%) translateY(125%) scale(0.96) !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
+.player-bar.motion-visible {
+  transform: translateX(-50%) translateY(0) scale(1) !important;
+  opacity: 1 !important;
+  pointer-events: auto !important;
+}
+
+.player-range {
+  transition: opacity 0.2s ease;
+}
+.player-range::-webkit-slider-thumb {
+  transition: transform 0.2s var(--ease-spring-sticker), box-shadow 0.2s ease;
+}
+.player-range:hover::-webkit-slider-thumb {
+  transform: scale(1.35);
+  box-shadow: 0 2px 8px rgba(138, 154, 78, 0.4);
+}
+
+/* ==========================================================================
+   9. 顶层折纸弹窗与抽屉 (Top-Layer & Popover Animations)
+   ========================================================================== */
+
+.overlay {
+  will-change: opacity, backdrop-filter;
+  transition: opacity 0.35s ease, backdrop-filter 0.35s ease !important;
+}
+
+.modal,
+.admin-card {
+  will-change: transform, opacity;
+  transform-origin: center center;
+  transition: transform 0.4s var(--ease-spring-soft),
+              opacity 0.3s ease,
+              box-shadow 0.4s var(--ease-spring-soft) !important;
+}
+
+.modal.active,
+.admin-panel:not([style*="display: none"]) .admin-card {
+  animation: modal-enter 0.42s var(--ease-spring-soft) forwards;
+}
+
+@keyframes modal-enter {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -46%) scale(0.92);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+.timer-popover {
+  will-change: transform, opacity;
+  transform-origin: center bottom;
+  transition: transform 0.3s var(--ease-spring-sticker), opacity 0.25s ease !important;
+}
+.timer-popover.active {
+  animation: popover-bounce-in 0.32s var(--ease-spring-sticker) forwards;
+}
+
+@keyframes popover-bounce-in {
+  0% {
+    opacity: 0;
+    transform: translateY(12px) scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* ==========================================================================
+   10. 左侧立体书签页签丝带微动 (Site Tab Ribbons & Cascade)
+   ========================================================================== */
+
+.site-tab {
+  will-change: transform;
+  transform-origin: left center;
+  transition: transform 0.28s var(--ease-spring-sticker),
+              color 0.2s ease,
+              filter 0.28s ease !important;
+}
+
+/* 闲置时书签丝带错开轻微呼吸 */
+@keyframes tab-ribbon-breathe {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(2px); }
+}
+
+.site-tabs .site-tab:nth-child(1) { animation: tab-ribbon-breathe 6s ease-in-out infinite; }
+.site-tabs .site-tab:nth-child(2) { animation: tab-ribbon-breathe 6s ease-in-out infinite -2s; }
+.site-tabs .site-tab:nth-child(3) { animation: tab-ribbon-breathe 6s ease-in-out infinite -4s; }
+
+.site-tab:hover {
+  transform: translateX(8px) scale(1.03) !important;
+  filter: drop-shadow(0 4px 12px rgba(122, 136, 70, 0.22)) !important;
+}
+
+.site-tab:active {
+  transform: translateX(3px) scale(0.97) !important;
+}
+
+.site-tab.active {
+  transform: translateX(4px);
+}
+
+/* ==========================================================================
+   11. 手账粒子喷涌容器 (Celebration Particles)
+   ========================================================================== */
+
+.motion-spark-particle {
+  position: fixed;
+  pointer-events: none;
+  z-index: 99999;
+  border-radius: 999px;
+  will-change: transform, opacity;
+}
+
+/* ==========================================================================
+   12. 24点游戏专属手账纸牌微动 (24.xsl Card & Operations)
+   ========================================================================== */
+
+.cards-container .card-item,
+.operator-btn,
+.action-btn {
+  will-change: transform, box-shadow;
+  transition: transform 0.3s var(--ease-spring-sticker),
+              box-shadow 0.3s var(--ease-spring-sticker),
+              filter 0.25s ease !important;
+}
+
+.operator-btn:hover,
+.action-btn:hover {
+  transform: translateY(-4px) scale(1.08) !important;
+  filter: drop-shadow(0 6px 14px rgba(122, 136, 70, 0.25));
+}
+
+.operator-btn:active,
+.action-btn:active {
+  transform: translateY(1px) scale(0.92) !important;
+  transition-duration: 0.08s !important;
+}
+
+/* ==========================================================================
+   13. 灵动手账桌宠伴侣系统 (Scrapbook Companion Pet & Chat Bubble)
+   ========================================================================== */
+
+.scrapbook-companion {
+  position: fixed;
+  right: 26px;
+  bottom: 106px;
+  z-index: 998;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  pointer-events: none;
+  user-select: none;
+  font-family: 'Xiaosonglu KuaiLe', 'Microsoft YaHei', sans-serif;
+  transition: transform 0.4s var(--ease-spring-sticker), opacity 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .scrapbook-companion {
+    right: 12px;
+    bottom: 96px;
+  }
+}
+
+/* 伴侣收起折叠状态（优雅缩入右侧边缘为小绿芽标签） */
+.scrapbook-companion.companion-folded {
+  transform: translateX(calc(100% - 32px));
+}
+
+.companion-pet-wrap {
+  position: relative;
+  pointer-events: auto;
+  cursor: pointer;
+  filter: drop-shadow(0 8px 20px rgba(100, 120, 50, 0.25));
+  will-change: transform;
+}
+
+.companion-pet {
+  width: 66px;
+  height: 66px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #ffffff 0%, #f7faeb 60%, #eef4db 100%);
+  border: 3px solid #ffffff;
+  box-shadow: 0 4px 16px rgba(122, 136, 70, 0.18), inset 0 2px 5px rgba(255, 255, 255, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  animation: companion-idle-float 4.5s ease-in-out infinite;
+  transition: transform 0.25s var(--ease-spring-sticker), box-shadow 0.25s ease;
+}
+
+@keyframes companion-idle-float {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  30% {
+    transform: translateY(-5px) rotate(-2deg);
+  }
+  70% {
+    transform: translateY(-2px) rotate(2deg);
+  }
+}
+
+.companion-pet img {
+  width: 90%;
+  height: 90%;
+  object-fit: contain;
+  transition: transform 0.3s var(--ease-spring-sticker);
+}
+
+.companion-pet:hover {
+  transform: translateY(-6px) scale(1.08) rotate(3deg);
+  box-shadow: 0 12px 28px rgba(100, 120, 50, 0.32), inset 0 2px 6px rgba(255, 255, 255, 0.9);
+}
+
+.companion-pet:hover img {
+  transform: scale(1.1);
+}
+
+/* 戳一戳果冻弹性跳跃动画 */
+@keyframes pet-jelly-bounce {
+  0% { transform: scale(1, 1); }
+  20% { transform: scale(1.28, 0.75) translateY(4px); }
+  45% { transform: scale(0.85, 1.25) translateY(-14px) rotate(-5deg); }
+  70% { transform: scale(1.1, 0.92) translateY(-2px) rotate(3deg); }
+  85% { transform: scale(0.96, 1.04) translateY(0); }
+  100% { transform: scale(1, 1); }
+}
+
+.companion-pet.pet-bouncing {
+  animation: pet-jelly-bounce 0.65s var(--ease-spring-sticker) forwards;
+}
+
+/* 伴侣头顶小松芽与向日葵微动装饰 */
+.companion-badge {
+  position: absolute;
+  top: -6px;
+  right: -3px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 1.5px solid #8a9a4e;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  z-index: 2;
+  animation: badge-sprout-sway 3s ease-in-out infinite;
+}
+
+@keyframes badge-sprout-sway {
+  0%, 100% { transform: rotate(0deg); }
+  50% { transform: rotate(14deg); }
+}
+
+/* 折叠小把手按钮 */
+.companion-toggle-btn {
+  position: absolute;
+  top: 50%;
+  left: -14px;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 1.5px solid rgba(138, 154, 78, 0.45);
+  color: #6f7d3d;
+  font-size: 11px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, background 0.2s ease;
+  z-index: 3;
+}
+
+.companion-toggle-btn:hover {
+  background: #f4f7e4;
+  transform: translateY(-50%) scale(1.15);
+}
+
+/* 漫画手账风对话气泡 (Comic Scrapbook Speech Bubble) */
+.companion-bubble {
+  position: relative;
+  max-width: 260px;
+  margin-bottom: 12px;
+  padding: 12px 14px 10px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1.5px solid rgba(138, 154, 78, 0.35);
+  border-radius: 18px 18px 4px 18px;
+  box-shadow: 0 10px 30px rgba(100, 115, 50, 0.15), 0 2px 8px rgba(0, 0, 0, 0.04);
+  color: #3d4630;
+  font-size: 13px;
+  line-height: 1.5;
+  pointer-events: auto;
+  opacity: 0;
+  transform: translateY(12px) scale(0.9);
+  transition: opacity 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  display: none;
+}
+
+.companion-bubble.show {
+  display: block;
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+/* 气泡三角小指针 */
+.companion-bubble::after {
+  content: '';
+  position: absolute;
+  bottom: -9px;
+  right: 28px;
+  border-width: 9px 8px 0 8px;
+  border-style: solid;
+  border-color: rgba(255, 255, 255, 0.95) transparent transparent transparent;
+  display: block;
+  width: 0;
+  z-index: 2;
+}
+
+.companion-bubble::before {
+  content: '';
+  position: absolute;
+  bottom: -11px;
+  right: 27px;
+  border-width: 11px 9px 0 9px;
+  border-style: solid;
+  border-color: rgba(138, 154, 78, 0.35) transparent transparent transparent;
+  display: block;
+  width: 0;
+  z-index: 1;
+}
+
+.companion-bubble-text {
+  margin: 0;
+  word-break: break-word;
+  color: #424e2c;
+}
+
+.companion-bubble-actions {
+  display: flex;
+  gap: 6px;
+  margin-top: 8px;
+  padding-top: 6px;
+  border-top: 1px dashed rgba(138, 154, 78, 0.25);
+}
+
+.companion-action-btn {
+  border: none;
+  background: rgba(138, 154, 78, 0.14);
+  color: #5c6a30;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 11.5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.companion-action-btn:hover {
+  background: #8a9a4e;
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+
+.companion-action-btn.primary {
+  background: linear-gradient(135deg, #8a9a4e, #718239);
+  color: #ffffff;
+  box-shadow: 0 2px 6px rgba(113, 130, 57, 0.25);
+}
+
+.companion-action-btn.primary:hover {
+  filter: brightness(1.08);
+  transform: translateY(-1px) scale(1.03);
+}
+
+/* ==========================================================================
+   14. 每日好运歌签 / 听歌盲盒弹窗 (Scrapbook Fortune Card Modal)
+   ========================================================================== */
+
+.fortune-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(35, 45, 20, 0.35);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.35s ease;
+}
+
+.fortune-modal-backdrop.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.fortune-card {
+  position: relative;
+  width: min(390px, 92vw);
+  background: #fdfdf9 url('data:image/svg+xml;utf8,<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><g fill="%238a9a4e" fill-opacity="0.03"><circle cx="25" cy="25" r="1.5"/><circle cx="75" cy="75" r="1.5"/></g></svg>');
+  border-radius: 20px;
+  padding: 26px 24px 22px;
+  box-shadow: 0 24px 60px rgba(70, 85, 35, 0.3), 0 4px 16px rgba(0, 0, 0, 0.08);
+  border: 2px solid rgba(138, 154, 78, 0.3);
+  transform: scale(0.85) rotate(-2deg);
+  transition: transform 0.4s var(--ease-spring-sticker);
+  font-family: 'Xiaosonglu KuaiLe', 'Microsoft YaHei', sans-serif;
+  text-align: center;
+}
+
+.fortune-modal-backdrop.active .fortune-card {
+  transform: scale(1) rotate(0deg);
+}
+
+/* 顶部固定和纸胶带装饰 */
+.fortune-tape {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%) rotate(1deg);
+  width: 110px;
+  height: 26px;
+  background: rgba(244, 206, 98, 0.65);
+  backdrop-filter: blur(4px);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  clip-path: polygon(0 0, 100% 0, 96% 100%, 4% 100%);
+  pointer-events: none;
+}
+
+.fortune-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  color: #6f7d3d;
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-bottom: 1.5px dashed rgba(138, 154, 78, 0.3);
+}
+
+.fortune-song-name {
+  font-size: 22px;
+  font-weight: 700;
+  color: #384224;
+  margin: 10px 0 4px;
+  line-height: 1.3;
+}
+
+.fortune-song-artist {
+  font-size: 13px;
+  color: #747f54;
+  margin-bottom: 14px;
+}
+
+.fortune-quote-box {
+  background: rgba(238, 241, 214, 0.45);
+  border: 1px solid rgba(138, 154, 78, 0.25);
+  border-radius: 12px;
+  padding: 12px 14px;
+  font-size: 13px;
+  color: #4b5731;
+  line-height: 1.6;
+  margin-bottom: 18px;
+  font-style: italic;
+  position: relative;
+}
+
+.fortune-meta-row {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  font-size: 12.5px;
+  color: #6f7d3d;
+}
+
+.fortune-meta-item strong {
+  display: block;
+  font-size: 16px;
+  color: #2e9b60;
+  margin-top: 2px;
+}
+
+.fortune-btn-row {
+  display: flex;
+  gap: 10px;
+}
+
+.fortune-btn {
+  flex: 1;
+  padding: 10px 14px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+  transition: all 0.2s var(--ease-spring-sticker);
+}
+
+.fortune-btn.cancel {
+  background: rgba(138, 154, 78, 0.12);
+  color: #5c6a30;
+}
+
+.fortune-btn.cancel:hover {
+  background: rgba(138, 154, 78, 0.2);
+}
+
+.fortune-btn.play {
+  background: linear-gradient(135deg, #8a9a4e, #687735);
+  color: #ffffff;
+  box-shadow: 0 4px 14px rgba(104, 119, 53, 0.35);
+}
+
+.fortune-btn.play:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(104, 119, 53, 0.45);
+}
+
+/* ==========================================================================
+   15. 播放器麦浪音频律动频谱 (Fluid Music Spectrum in Player Bar)
+   ========================================================================== */
+
+.player-audio-spectrum {
+  display: inline-flex;
+  align-items: flex-end;
+  gap: 2.5px;
+  height: 20px;
+  padding: 0 4px;
+  margin-left: 8px;
+  vertical-align: middle;
+  flex-shrink: 0;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+
+.player-audio-spectrum.active {
+  opacity: 1;
+}
+
+.spectrum-bar {
+  width: 3px;
+  height: 4px;
+  background: linear-gradient(to top, var(--primary, #8a9a4e), #f4ce62);
+  border-radius: 999px;
+  transform-origin: bottom;
+  transition: height 0.2s ease;
+}
+
+/* 音乐正在播放时触发交错律动 */
+.player-audio-spectrum.active .spectrum-bar:nth-child(1) { animation: spectrum-jump 0.55s ease-in-out infinite alternate; }
+.player-audio-spectrum.active .spectrum-bar:nth-child(2) { animation: spectrum-jump 0.72s ease-in-out infinite alternate 0.1s; }
+.player-audio-spectrum.active .spectrum-bar:nth-child(3) { animation: spectrum-jump 0.48s ease-in-out infinite alternate 0.2s; }
+.player-audio-spectrum.active .spectrum-bar:nth-child(4) { animation: spectrum-jump 0.85s ease-in-out infinite alternate 0.05s; }
+.player-audio-spectrum.active .spectrum-bar:nth-child(5) { animation: spectrum-jump 0.62s ease-in-out infinite alternate 0.25s; }
+.player-audio-spectrum.active .spectrum-bar:nth-child(6) { animation: spectrum-jump 0.50s ease-in-out infinite alternate 0.15s; }
+.player-audio-spectrum.active .spectrum-bar:nth-child(7) { animation: spectrum-jump 0.68s ease-in-out infinite alternate 0.3s; }
+
+@keyframes spectrum-jump {
+  0% { height: 4px; opacity: 0.55; }
+  50% { height: 16px; opacity: 0.95; }
+  100% { height: 20px; opacity: 1; }
+}
+
+/* ==========================================================================
+   16. 黑胶唱片全息彩虹光泽与滑出动效 (Vinyl Holographic Sheen & Sleeve Peek)
+   ========================================================================== */
+
+/* 黑胶盘旋转彩虹光泽 */
+.song-vinyl::after,
+.card-now-playing #vinylDisk::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  pointer-events: none;
+  background: conic-gradient(
+    from 0deg,
+    transparent 0deg,
+    rgba(255, 255, 255, 0.15) 45deg,
+    transparent 90deg,
+    rgba(244, 206, 98, 0.15) 180deg,
+    transparent 225deg,
+    rgba(255, 255, 255, 0.15) 270deg,
+    transparent 360deg
+  );
+  opacity: 0.75;
+}
+
+/* 正在播放的卡片：黑胶从右侧自然露出半张 */
+.song-item.now-playing {
+  position: relative;
+  overflow: visible !important;
+}
+
+.song-item.now-playing::before {
+  content: '';
+  position: absolute;
+  right: -14px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #f4ce62 18%, #1f2316 20%, #2f3422 65%, #181b10 100%);
+  border: 1.5px solid rgba(255, 255, 255, 0.6);
+  box-shadow: -2px 0 8px rgba(0, 0, 0, 0.2);
+  z-index: -1;
+  animation: vinyl-spin 4s linear infinite;
+  pointer-events: none;
+  transition: transform 0.3s ease;
+}
+
+/* ==========================================================================
+   17. 真实手账立体和纸胶带贴角 (Washi Tape Accents)
+   ========================================================================== */
+
+.washi-tape {
+  position: absolute;
+  height: 20px;
+  width: 76px;
+  pointer-events: none;
+  z-index: 15;
+  background: repeating-linear-gradient(
+    -45deg,
+    rgba(138, 154, 78, 0.35) 0 4px,
+    rgba(255, 255, 255, 0.45) 4px 8px
+  );
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+  clip-path: polygon(0 0, 100% 0, 97% 100%, 3% 100%);
+  transition: transform 0.3s var(--ease-spring-sticker);
+}
+
+.washi-tape-top-right {
+  top: -8px;
+  right: 28px;
+  transform: rotate(4deg);
+}
+
+.washi-tape-top-left {
+  top: -8px;
+  left: 28px;
+  transform: rotate(-5deg);
+  background: repeating-linear-gradient(
+    45deg,
+    rgba(232, 184, 144, 0.4) 0 4px,
+    rgba(255, 255, 255, 0.5) 4px 8px
+  );
+}
+
+/* 鼠标悬停在卡片上方时，胶带角呈现拟真的微掀浮动 */
+.header:hover .washi-tape-top-right,
+.tabs:hover .washi-tape-top-right {
+  transform: rotate(6deg) translateY(-2px);
+}
+
+.header:hover .washi-tape-top-left,
+.tabs:hover .washi-tape-top-left {
+  transform: rotate(-7deg) translateY(-2px);
+}
+
+/* ==========================================================================
+   18. 全局触感晨露水波纹 (Zen Water Ripple on Click)
+   ========================================================================== */
+
+.click-water-ripple {
+  position: fixed;
+  pointer-events: none;
+  user-select: none;
+  z-index: 99998;
+  border-radius: 50%;
+  border: 1.5px solid rgba(138, 154, 78, 0.38);
+  background: radial-gradient(circle, rgba(235, 198, 120, 0.15) 0%, rgba(138, 154, 78, 0.05) 60%, transparent 80%);
+  transform: translate(-50%, -50%) scale(0.2);
+  will-change: transform, opacity;
+  animation: water-ripple-expand 0.48s cubic-bezier(0.12, 0.8, 0.32, 1) forwards;
+}
+
+@keyframes water-ripple-expand {
+  0% {
+    transform: translate(-50%, -50%) scale(0.2);
+    opacity: 0.8;
+  }
+  60% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(4.8);
+    opacity: 0;
+  }
+}
+
+/* ==========================================================================
+   19. 语音按钮墙声波冲击波 (Soundboard Shockwave)
+   ========================================================================== */
+
+.sound-shockwave {
+  position: absolute;
+  inset: -6px;
+  border-radius: inherit;
+  border: 2px solid rgba(138, 154, 78, 0.6);
+  pointer-events: none;
+  animation: shockwave-ring 0.45s ease-out forwards;
+}
+
+@keyframes shockwave-ring {
+  0% {
+    transform: scale(0.95);
+    opacity: 0.9;
+  }
+  100% {
+    transform: scale(1.35);
+    opacity: 0;
+  }
+}
+
+/* ==========================================================================
+   20. 斑驳林间树影滤镜层 (Dappled Sunlight Caustics)
+   ========================================================================== */
+
+#dappledSunlight {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.38;
+  background: radial-gradient(circle 380px at 20% 30%, rgba(255, 255, 255, 0.35) 0%, transparent 70%),
+              radial-gradient(circle 460px at 78% 65%, rgba(254, 245, 218, 0.28) 0%, transparent 75%);
+  animation: dappled-light-sway 18s ease-in-out infinite alternate;
+}
+
+@keyframes dappled-light-sway {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(-25px, 20px) scale(1.06);
+  }
+  100% {
+    transform: translate(20px, -15px) scale(0.96);
+  }
+}
+
+/* ==========================================================================
+   22. 语音按钮墙极致互动动效 (Soundboard Enhanced FX System)
+   ========================================================================== */
+
+/* 按钮点击拟真机械街机回弹形变 (Punchy Press & Spring Release) */
+@keyframes sound-btn-punch {
+  0% { transform: scale(1); }
+  25% { transform: scale(0.91, 0.88) translateY(4px); }
+  55% { transform: scale(1.08, 1.05) translateY(-3px); }
+  80% { transform: scale(0.97, 0.98) translateY(1px); }
+  100% { transform: scale(1); }
+}
+
+.sound-btn.btn-punched {
+  animation: sound-btn-punch 0.42s var(--ease-spring-sticker) forwards !important;
+}
+
+/* 按钮正在播放时的环绕流光呼吸 (Now-Playing Ambient Border Glow & Wave) */
+.sound-btn.playing {
+  position: relative;
+  background: linear-gradient(135deg, #f7f9ea 0%, #eef4d8 100%) !important;
+  border-color: #8a9a4e !important;
+  box-shadow: 0 0 0 2.5px rgba(138, 154, 78, 0.45), 0 8px 24px rgba(138, 154, 78, 0.28) !important;
+  animation: sound-btn-playing-glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes sound-btn-playing-glow {
+  0% {
+    box-shadow: 0 0 0 2px rgba(138, 154, 78, 0.4), 0 6px 18px rgba(138, 154, 78, 0.2);
+  }
+  100% {
+    box-shadow: 0 0 0 4px rgba(244, 206, 98, 0.55), 0 10px 30px rgba(138, 154, 78, 0.35);
+  }
+}
+
+/* 播放中按钮内置的跳跃小音符徽章 */
+.sound-btn.playing::after {
+  content: '♫';
+  position: absolute;
+  top: -8px;
+  right: -6px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #8a9a4e, #6f7d3d);
+  color: #fff;
+  font-size: 11px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  animation: playing-note-bounce 0.8s ease-in-out infinite alternate;
+  z-index: 10;
+}
+
+@keyframes playing-note-bounce {
+  0% { transform: translateY(0) rotate(-10deg); }
+  100% { transform: translateY(-4px) rotate(15deg); }
+}
+
+/* 按钮点击上方飘出的趣味拟声词 / 浮动文字 (Floating Sound Popups) */
+.floating-sound-bubble {
+  position: fixed;
+  pointer-events: none;
+  user-select: none;
+  z-index: 99999;
+  font-family: 'Xiaosonglu KuaiLe', 'Microsoft YaHei', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #5c6a30;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border: 1.5px solid rgba(138, 154, 78, 0.4);
+  padding: 3px 10px;
+  border-radius: 999px;
+  box-shadow: 0 4px 14px rgba(100, 120, 50, 0.18);
+  white-space: nowrap;
+  animation: float-sound-bubble 0.85s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes float-sound-bubble {
+  0% {
+    transform: translate(-50%, 0) scale(0.6);
+    opacity: 0;
+  }
+  20% {
+    transform: translate(-50%, -12px) scale(1.15);
+    opacity: 1;
+  }
+  70% {
+    transform: translate(calc(-50% + var(--drift-x, 0px)), -36px) scale(1);
+    opacity: 0.95;
+  }
+  100% {
+    transform: translate(calc(-50% + var(--drift-x, 0px)), -54px) scale(0.7);
+    opacity: 0;
+  }
+}
+
+/* 按钮扩散双层同心声浪光环 (Concentric Sound Shockwaves) */
+.sound-shockwave-ring {
+  position: absolute;
+  inset: -4px;
+  border-radius: inherit;
+  border: 2px solid rgba(138, 154, 78, 0.65);
+  pointer-events: none;
+  animation: sound-shock-expand 0.5s cubic-bezier(0.1, 0.8, 0.25, 1) forwards;
+}
+
+.sound-shockwave-ring.second {
+  animation-delay: 0.1s;
+  border-color: rgba(244, 206, 98, 0.7);
+}
+
+@keyframes sound-shock-expand {
+  0% {
+    transform: scale(0.96);
+    opacity: 0.9;
+  }
+  100% {
+    transform: scale(1.4);
+    opacity: 0;
+  }
+}
+
+/* 轮盘快速扫描选中高亮 (Roulette Highlight) */
+.sound-btn.roulette-sweep {
+  border-color: #f4ce62 !important;
+  background: #fff8dc !important;
+  box-shadow: 0 0 0 3px #f4ce62, 0 8px 24px rgba(244, 206, 98, 0.5) !important;
+  transform: scale(1.08) !important;
+  transition: all 0.08s ease !important;
+}
+
+/* 分类徽章点击下压与印章效果 */
+.cat-badge {
+  cursor: pointer;
+  transition: transform 0.2s var(--ease-spring-sticker), box-shadow 0.2s ease !important;
+}
+
+.cat-badge:hover {
+  transform: scale(1.15) rotate(5deg);
+  box-shadow: 0 6px 16px rgba(122, 136, 70, 0.4) !important;
+}
+
+.cat-badge:active {
+  transform: scale(0.9) rotate(-3deg);
+}
+
+/* ==========================================================================
+   23. 无障碍保障 (Reduced Motion Override)
+   ========================================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  #ambientBreezeCanvas,
+  #ambientAuroraBg,
+  .aurora-orb,
+  .cursor-dust,
+  .banner-icon img,
+  .song-item.now-playing,
+  .sound-btn.playing,
+  .song-vinyl-wrap.spinning .song-vinyl,
+  .playing-bars .bar,
+  .banner-main h1 {
+    animation: none !important;
+    display: none !important;
+  }
+}

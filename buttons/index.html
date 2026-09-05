@@ -294,7 +294,6 @@
     .sound-btn:hover {
       border-color: var(--primary);
       box-shadow: 0 10px 24px rgba(122, 136, 70, 0.10);
-      transform: translateY(-2px);
     }
     .sound-btn:active { transform: scale(0.97); }
     .sound-btn.playing { border-color: var(--primary); background: var(--primary-soft); }
@@ -776,6 +775,7 @@
       -webkit-backdrop-filter: blur(6px);
     }
   </style>
+  <link rel="stylesheet" href="../css/motion.css?v=2">
 </head>
 <body>
   <svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
@@ -921,5 +921,6 @@
 
   <script src="jszip.min.js"></script>
   <script src="buttons.js?v=25"></script>
+  <script src="../js/motion.js?v=2" defer></script>
 </body>
 </html>
