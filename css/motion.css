@@ -544,9 +544,17 @@
               box-shadow 0.4s var(--ease-spring-soft) !important;
 }
 
-.modal.active,
-.admin-panel:not([style*="display: none"]) .admin-card {
+.modal.active {
   animation: modal-enter 0.42s var(--ease-spring-soft) forwards;
+}
+/* 修复：admin-card 在 .admin-panel 里是 flex 居中，不能用带 translate(-50%) 的 modal-enter（会偏移到左上）。
+   改为只淡入、不位移的入场，保持居中。 */
+.admin-panel:not([style*="display: none"]) .admin-card {
+  animation: admin-fade-in 0.3s ease forwards;
+}
+@keyframes admin-fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 @keyframes modal-enter {
