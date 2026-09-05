@@ -370,7 +370,7 @@
         if (!url) { toast(`「${btn.name}」还没有音频`); return; }
         const a = new Audio(url); a.volume = 1;
         a.addEventListener('ended', () => {
-          if (playMode === 'single') { a.currentTime = 0; a.play().catch(() => {}); }
+          if (overlayOn && playMode === 'single') { a.currentTime = 0; a.play().catch(() => {}); }
           else { overlayAudios = overlayAudios.filter(x => x !== a); }
         });
         a.play().then(() => {
