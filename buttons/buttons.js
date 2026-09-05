@@ -458,6 +458,7 @@
     }
   });
   audioPlayer.volume = 1; // 默认音量
+  renderModeBtn();  // 初始：播放模式图标（默认播放一次 →）
   renderOverlayBtn(); // 初始：重叠播放关
 
   // ===== 轻提示 =====
