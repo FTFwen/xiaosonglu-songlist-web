@@ -1582,7 +1582,13 @@
   .companion-idle-float,
   .badge-sprout-sway,
   .mascot-joy-jump,
-  .float-note-msg {
+  .float-note-msg,
+  /* 主站歌曲卡播放动效：手机端全关 */
+  .song-play-btn.playing,
+  .favorite-star.anim-pop,
+  .song-item.now-playing,
+  .vinyl-core,
+  .song-vinyl-wrap {
     animation: none !important;
   }
 
