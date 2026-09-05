@@ -932,6 +932,8 @@
       // 2. 点击语音按钮墙按钮
       const btn = e.target.closest('.sound-btn');
       if (!btn) return;
+      // 手机端：跳过点击播放的下压/声浪动效（降卡顿），按钮播放功能不受影响
+      if (window.innerWidth <= 768) return;
 
       const rect = btn.getBoundingClientRect();
       const cx = rect.left + rect.width / 2;
