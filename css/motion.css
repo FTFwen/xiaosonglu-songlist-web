@@ -1561,3 +1561,55 @@
     display: none !important;
   }
 }
+
+/* ===== 手机端：简化动效，降低卡顿 =====
+   手机 GPU 较弱，关闭高开销的无限循环动画（背景光球/微风/光斑/播放器频谱/呼吸等）
+   并显著降低 backdrop-filter 模糊，只保留必要入场与按压反馈。 */
+@media (max-width: 768px) {
+  /* 关闭背景光球 / 风吹 / 光斑 / header 微光等常驻循环动画 */
+  .aurora-orb,
+  #ambientAuroraBg,
+  #ambientBreezeCanvas,
+  .banner-icon img,
+  .banner-main h1,
+  .header-shimmer,
+  .dappled-light,
+  .sound-btn-playing-glow,
+  .sound-btn.playing,
+  .player-audio-spectrum .spectrum-bar,
+  .song-vinyl-wrap.spinning .song-vinyl,
+  .playing-bars .bar,
+  .companion-idle-float,
+  .badge-sprout-sway,
+  .mascot-joy-jump,
+  .float-note-msg {
+    animation: none !important;
+  }
+
+  /* 播放器/卡片毛玻璃模糊：手机端降低，减少 GPU 负担 */
+  .player-card,
+  .song-item,
+  .history-item,
+  .favorite-item,
+  .controls-card,
+  .filter-card,
+  .tabs,
+  .sticky-toolbar .controls-card,
+  .admin-card,
+  .modal {
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+  }
+
+  /* 过度弹性/常驻 transform 动画减弱（保留 hover/按压反馈） */
+  .song-item,
+  .history-item,
+  .favorite-item,
+  .sound-btn,
+  .pc-play,
+  .pc-mode,
+  .pc-stop {
+    transition-duration: 0.12s !important;
+  }
+}
+

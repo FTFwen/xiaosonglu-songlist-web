@@ -221,6 +221,8 @@
      ========================================================================== */
   function initAmbientBreezeCanvas() {
     if (prefersReducedMotion()) return;
+    // 手机端不启动背景粒子画布（每帧绘制开销大，是卡顿主因），简化动效
+    if (window.innerWidth <= 768) return;
 
     let canvas = document.getElementById('ambientBreezeCanvas');
     if (!canvas) {
