@@ -392,7 +392,7 @@ function dedupeSongs(rows) {
 }
 
 function getLocalResourceUrl(resourcePath) {
-  return resourcePath; // 网页版直接相对路径
+  return (window.APP_BASE_URL || '') + resourcePath;
 }
 
 // 内嵌数据映射：本地 JSON 路径 -> window.XSL_DATA 里的键（file:// 下 fetch 不可用时回退）
@@ -876,7 +876,10 @@ function isPlayAborted(err) {
 function audioUrlOf(song) {
   if (!song || !state.audioIndex || !state.audioIndex.audios) return '';
   const key = song.row_key || song.song_name || '';
-  return state.audioIndex.audios[key] || '';
+  const rel = state.audioIndex.audios[key] || '';
+  if (!rel) return '';
+  if (rel.startsWith('http://') || rel.startsWith('https://') || rel.startsWith('data:')) return rel;
+  return (window.APP_BASE_URL || '') + rel;
 }
 
 // 歌切切片标题：优先歌切台账标题（单曲视频标题 / 合集分P标题），兜底回放标题
@@ -3231,6 +3234,16 @@ async function init() {
   loadSonglists();
   renderSonglistPanel();
   await audioIndexPromise;
+  try {
+    const params = new URLSearchParams(window.location.search);
+    const q = params.get('q') || params.get('search');
+    if (q && dom.searchInput) {
+      dom.searchInput.value = q;
+      loadPinyinPro();
+      syncClearButton();
+      applySongFilters();
+    }
+  } catch (e) {}
 }
 
 init().catch(error => {

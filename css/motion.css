@@ -173,26 +173,30 @@
   }
 }
 
-.song-vinyl-wrap.spinning::before {
+.song-vinyl-wrap.spinning::before,
+.vinyl-wrapper:has(.vinyl-disc.playing)::before,
+.vinyl-wrapper.playing::before {
   content: '';
   position: absolute;
   inset: -6px;
-  border-radius: 16px;
-  border: 1.8px solid rgba(138, 154, 78, 0.55);
+  border-radius: 50%;
+  border: 1.8px solid var(--primary-glow, rgba(138, 154, 78, 0.55));
   animation: vinyl-sound-ring 2.2s cubic-bezier(0.2, 0.8, 0.4, 1) infinite;
   pointer-events: none;
-  z-index: -1;
+  z-index: 0;
 }
 
-.song-vinyl-wrap.spinning::after {
+.song-vinyl-wrap.spinning::after,
+.vinyl-wrapper:has(.vinyl-disc.playing)::after,
+.vinyl-wrapper.playing::after {
   content: '';
   position: absolute;
   inset: -6px;
-  border-radius: 16px;
+  border-radius: 50%;
   border: 1.5px solid rgba(232, 184, 144, 0.45);
   animation: vinyl-sound-ring 2.2s cubic-bezier(0.2, 0.8, 0.4, 1) infinite 1.1s;
   pointer-events: none;
-  z-index: -1;
+  z-index: 0;
 }
 
 /* 播放器周围非触发式浮动的音符装饰 */
@@ -264,7 +268,8 @@
 .song-item,
 .history-item,
 .favorite-item,
-.sound-btn {
+.sound-btn,
+.bookmark-item {
   --rx: 0deg;
   --ry: 0deg;
   --tx: 0px;
@@ -301,7 +306,8 @@
 .song-item::after,
 .history-item::after,
 .favorite-item::after,
-.sound-btn::after {
+.sound-btn::after,
+.bookmark-item::after {
   content: '';
   position: absolute;
   inset: 0;
@@ -317,9 +323,10 @@
 .song-item:hover,
 .history-item:hover,
 .favorite-item:hover,
-.sound-btn:hover {
+.sound-btn:hover,
+.bookmark-item:hover {
   box-shadow: var(--shadow-sticker-hover) !important;
-  z-index: 10;
+  z-index: 2;
 }
 
 /* 卡片悬停时内部子元素的温润微动协同 */

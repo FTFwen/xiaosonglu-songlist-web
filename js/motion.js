@@ -46,11 +46,26 @@
     let rafId = null;
     let mousePos = { x: 0, y: 0 };
 
-    function updateCardTransform() {
-      if (!activeCard || !cardRect) return;
+    function cancelPendingFrame() {
+      if (rafId) {
+        cancelAnimationFrame(rafId);
+        rafId = null;
+      }
+    }
 
-      const px = (mousePos.x - cardRect.left) / cardRect.width - 0.5; // -0.5 ~ 0.5
-      const py = (mousePos.y - cardRect.top) / cardRect.height - 0.5; // -0.5 ~ 0.5
+    function updateCardTransform() {
+      rafId = null;
+      if (!activeCard || !activeCard.isConnected) {
+        activeCard = null;
+        cardRect = null;
+        return;
+      }
+      if (!cardRect || cardRect.width <= 0 || cardRect.height <= 0) return;
+
+      const rawPx = (mousePos.x - cardRect.left) / cardRect.width - 0.5; // -0.5 ~ 0.5
+      const rawPy = (mousePos.y - cardRect.top) / cardRect.height - 0.5; // -0.5 ~ 0.5
+      const px = Math.max(-0.6, Math.min(0.6, rawPx));
+      const py = Math.max(-0.6, Math.min(0.6, rawPy));
 
       // 卡片浮动位移跟随光标方位：
       // 精细微调幅度（原 ±9px 缩减至 ±2.8px），既保持轻盈跟手的磁吸悬浮质感，又杜绝大幅晃动失控
@@ -74,8 +89,6 @@
       activeCard.style.setProperty('--glare-opacity', '0.85');
       activeCard.style.setProperty('--glare-x', `${glareX}%`);
       activeCard.style.setProperty('--glare-y', `${glareY}%`);
-
-      rafId = null;
     }
 
     function resetCard(card) {
@@ -92,26 +105,35 @@
       card.style.setProperty('--glare-opacity', '0');
     }
 
-    window.addEventListener('scroll', function () {
+    function clearActive() {
       if (activeCard) {
+        resetCard(activeCard);
+        activeCard = null;
+        cardRect = null;
+      }
+      cancelPendingFrame();
+    }
+
+    function updateActiveRect() {
+      if (activeCard && activeCard.isConnected) {
         cardRect = activeCard.getBoundingClientRect();
       }
-    }, { passive: true });
+    }
+
+    window.addEventListener('scroll', updateActiveRect, { passive: true, capture: true });
+    window.addEventListener('resize', updateActiveRect, { passive: true });
 
     document.addEventListener('mousemove', function (e) {
-      const card = e.target.closest('.song-item, .sound-btn, .history-item, .favorite-item, .operator-btn, .action-btn');
+      const card = e.target.closest('.song-item, .sound-btn, .history-item, .favorite-item, .operator-btn, .action-btn, .bookmark-item');
 
       if (!card) {
-        if (activeCard) {
-          resetCard(activeCard);
-          activeCard = null;
-          cardRect = null;
-        }
+        clearActive();
         return;
       }
 
       if (activeCard !== card) {
         if (activeCard) resetCard(activeCard);
+        cancelPendingFrame();
         activeCard = card;
         cardRect = card.getBoundingClientRect();
         card.style.setProperty('--card-trans-dur', '0.12s');
@@ -127,12 +149,10 @@
       }
     }, { passive: true });
 
-    document.addEventListener('mouseleave', function () {
-      if (activeCard) {
-        resetCard(activeCard);
-        activeCard = null;
-        cardRect = null;
-      }
+    document.addEventListener('mouseleave', clearActive, { passive: true });
+    window.addEventListener('blur', clearActive, { passive: true });
+    document.addEventListener('visibilitychange', function () {
+      if (document.hidden) clearActive();
     }, { passive: true });
   }
 
@@ -722,6 +742,29 @@
         showBubble('在森林树荫下坐一会儿吧，听首歌放松一下~ 🍃');
       }
     }, 15000);
+
+    // ===== 监听时空光影系统联动 (Weather Ambience Linkage) =====
+    window.addEventListener('xsl-ambience-changed', function (e) {
+      if (!e.detail) return;
+      const { time, weather, quote } = e.detail;
+      const badgeEl = companion.querySelector('.companion-badge');
+      if (badgeEl) {
+        if (weather === 'rain') {
+          badgeEl.textContent = '🌧️';
+        } else if (time === 'night') {
+          badgeEl.textContent = '🌙';
+        } else if (time === 'sunset') {
+          badgeEl.textContent = '🌇';
+        } else if (time === 'dawn') {
+          badgeEl.textContent = '🌅';
+        } else {
+          badgeEl.textContent = '🌱';
+        }
+      }
+      if (quote && !companion.classList.contains('companion-folded')) {
+        showBubble(quote);
+      }
+    });
   }
 
   /* ==========================================================================
