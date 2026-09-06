@@ -1,0 +1,2099 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light">
+  <title>小松绿 · 个人工作台与初始页</title>
+  <link rel="icon" href="assets/xiaosonglu-logo.png" type="image/png">
+  <link rel="stylesheet" href="css/motion.css?v=18">
+  <link rel="stylesheet" href="css/weather-ambience.css?v=10">
+  <script>
+    (function() {
+      try {
+        const raw = localStorage.getItem('xsl_ambience_pref_v1');
+        let t = 'noon', w = 'clear', dis = false;
+        if (raw) {
+          const p = JSON.parse(raw);
+          dis = !!p.disabled;
+          if (p.remember && p.mode === 'manual') {
+            t = p.time || 'noon';
+            w = p.weather || 'clear';
+          } else {
+            const h = new Date().getHours() + new Date().getMinutes() / 60;
+            t = (h >= 6 && h < 10) ? 'dawn' : (h >= 10 && h < 16.5) ? 'noon' : (h >= 16.5 && h < 19.5) ? 'sunset' : 'night';
+          }
+        } else {
+          const h = new Date().getHours() + new Date().getMinutes() / 60;
+          t = (h >= 6 && h < 10) ? 'dawn' : (h >= 10 && h < 16.5) ? 'noon' : (h >= 16.5 && h < 19.5) ? 'sunset' : 'night';
+        }
+        if (dis) {
+          document.documentElement.setAttribute('data-ambience-disabled', 'true');
+        } else {
+          document.documentElement.setAttribute('data-ambience-time', t);
+          document.documentElement.setAttribute('data-ambience-weather', w);
+          if (t === 'night') {
+            const metaCs = document.querySelector('meta[name="color-scheme"]');
+            if (metaCs) metaCs.content = 'dark';
+          }
+        }
+      } catch(e) {}
+    })();
+  </script>
+  <style>
+    @font-face {
+      font-family: 'XiaosongluKuaile';
+      src: url('assets/xiaosonglu-kuaile-subset.woff2') format('woff2');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    :root {
+      color-scheme: light;
+      --bg: #f4f6e8;
+      --surface: rgba(255, 255, 255, 0.72);
+      --surface-solid: #ffffff;
+      --surface-hover: rgba(255, 255, 255, 0.88);
+      --line: rgba(227, 232, 200, 0.8);
+      --line-strong: #c3cd9a;
+      --text: #16200d;
+      --text-soft: #2c3a1a;
+      --text-muted: #465630;
+      --primary: #8a9a4e;
+      --primary-dark: #687933;
+      --primary-soft: #eef1d6;
+      --primary-glow: rgba(138, 154, 78, 0.35);
+      --danger: #d9536f;
+      --danger-soft: #ffe7ec;
+      --card-opacity: 0.45;
+      --card-blur: 14px;
+      --card-bg: rgba(255, 255, 255, var(--card-opacity));
+      --card-border: rgba(255, 255, 255, 0.7);
+      --card-inner-bg: rgba(255, 255, 255, 0.5);
+      --card-inner-border: rgba(255, 255, 255, 0.6);
+      --wp-pos: center 18%;
+      --radius-sm: 10px;
+      --radius-md: 16px;
+      --radius-lg: 24px;
+      --shadow-sm: 0 4px 12px rgba(95, 115, 45, 0.08);
+      --shadow-md: 0 10px 28px rgba(95, 115, 45, 0.12);
+      --shadow-lg: 0 16px 40px rgba(95, 115, 45, 0.16);
+      --transition: all 0.25s cubic-bezier(0.22, 1.25, 0.36, 1);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      min-height: 100vh;
+      font-family: 'Microsoft YaHei', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      color: var(--text);
+      background-color: var(--bg);
+      overflow-x: hidden;
+      user-select: none;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ===== 全屏壁纸智能自适应系统 ===== */
+    .wallpaper-ambient {
+      position: fixed;
+      inset: -40px;
+      width: calc(100vw + 80px);
+      height: calc(100vh + 80px);
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      filter: blur(48px) brightness(0.92) saturate(115%);
+      transform: scale(1.08);
+      z-index: -3;
+      pointer-events: none;
+      transition: opacity 0.6s ease;
+      opacity: 0;
+    }
+    .wallpaper-bg {
+      position: fixed;
+      inset: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: -2;
+      pointer-events: none;
+      transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+    .wallpaper-bg.transitioning {
+      opacity: 0.3;
+    }
+    /* 全屏沉浸铺满（默认模式，智能聚焦面部上方黄金构图） */
+    .wallpaper-bg.mode-cover {
+      background-size: cover;
+      background-position: var(--wp-pos, center 18%);
+      background-repeat: no-repeat;
+    }
+    /* 完整画幅居中展示（羽化景深拓展，无任何裁切） */
+    .wallpaper-bg.mode-contain {
+      background-size: contain;
+      background-position: center center;
+      background-repeat: no-repeat;
+      filter: drop-shadow(0 0 36px rgba(0, 0, 0, 0.22));
+    }
+    /* 拉伸撑满 */
+    .wallpaper-bg.mode-fill {
+      background-size: 100% 100%;
+      background-position: center center;
+      background-repeat: no-repeat;
+    }
+
+    .wallpaper-mask {
+      position: fixed;
+      inset: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: rgba(0, 0, 0, var(--mask-opacity, 0.08));
+      z-index: -1;
+      pointer-events: none;
+      transition: background-color 0.3s ease;
+    }
+
+    /* ===== 通用毛玻璃卡片 (超高透晶莹玻璃质感 + 3D悬浮微动) ===== */
+    .glass-card {
+      background: var(--card-bg, rgba(255, 255, 255, 0.06));
+      backdrop-filter: blur(var(--card-blur, 8px)) saturate(140%);
+      -webkit-backdrop-filter: blur(var(--card-blur, 8px)) saturate(140%);
+      border: 1px solid var(--card-border, rgba(255, 255, 255, 0.35));
+      border-radius: 20px !important;
+      box-shadow: inset 0 1.5px 2px rgba(255, 255, 255, 0.65),
+                  inset 0 -1px 1px rgba(0, 0, 0, 0.02),
+                  0 8px 32px rgba(0, 0, 0, 0.1);
+      transform-style: preserve-3d;
+      will-change: transform, box-shadow;
+      position: relative;
+      isolation: isolate;
+    }
+    .glass-card:hover {
+      background: rgba(255, 255, 255, calc(var(--card-opacity, 0.06) + 0.08));
+      border-color: rgba(255, 255, 255, 0.68);
+      box-shadow: inset 0 2px 2px rgba(255, 255, 255, 0.85),
+                  0 16px 44px rgba(0, 0, 0, 0.15);
+    }
+    .glass-card::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border-radius: inherit;
+      pointer-events: none;
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.01) 45%, transparent 100%);
+      z-index: -1;
+    }
+
+    /* ===== 图标定义 ===== */
+    .icon {
+      width: 1.15em;
+      height: 1.15em;
+      fill: currentColor;
+      vertical-align: -0.15em;
+      display: inline-block;
+      flex-shrink: 0;
+    }
+
+    /* ===== 站点左侧书签页签 (对齐全站系统) ===== */
+    .site-tabs {
+      position: fixed;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 90;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      padding: 10px 8px 10px 4px;
+      transition: opacity 0.35s ease, transform 0.35s ease;
+    }
+    .site-tab {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 10px 14px 10px 10px;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text-soft);
+      text-decoration: none;
+      background: rgba(255, 255, 255, 0.18);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border: 1px solid var(--line);
+      border-left: none;
+      border-radius: 0 12px 12px 0;
+      box-shadow: 2px 4px 12px rgba(122, 136, 70, 0.12);
+      transition: var(--transition);
+      transform: translateX(-4px);
+    }
+    .site-tab:hover {
+      transform: translateX(0);
+      background: #ffffff;
+      color: var(--primary-dark);
+      box-shadow: 4px 8px 18px rgba(138, 154, 78, 0.24);
+    }
+    .site-tab.active {
+      background: var(--primary);
+      color: #ffffff;
+      transform: translateX(0);
+      border-color: var(--primary-dark);
+      box-shadow: 4px 8px 20px var(--primary-glow);
+    }
+    .site-tab img {
+      width: 18px;
+      height: 18px;
+      object-fit: contain;
+    }
+    .tab-emoji {
+      font-size: 14px;
+    }
+
+    /* ===== 顶部通栏导航 ===== */
+    .start-topbar {
+      width: 100%;
+      padding: 14px 28px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      z-index: 50;
+      transition: opacity 0.35s ease, transform 0.35s ease;
+    }
+    .brand-group {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: inherit;
+    }
+    .brand-logo {
+      width: 32px;
+      height: 32px;
+      object-fit: contain;
+      filter: drop-shadow(0 2px 6px rgba(0,0,0,0.12));
+    }
+    .brand-title {
+      font-family: 'XiaosongluKuaile', cursive, sans-serif;
+      font-size: 19px;
+      font-weight: normal;
+      color: var(--text);
+      text-shadow: var(--text-shadow-shield);
+      letter-spacing: 0.5px;
+    }
+    .brand-badge {
+      font-size: 11px;
+      padding: 2px 7px;
+      background: rgba(138, 154, 78, 0.22);
+      color: var(--primary-dark);
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      font-weight: 600;
+    }
+
+    .topbar-center {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 13px;
+      color: var(--text-soft);
+      padding: 6px 16px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.18);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid var(--line);
+    }
+    .topbar-greeting {
+      font-weight: 600;
+      color: var(--text);
+    }
+    .topbar-solar {
+      font-size: 12px;
+      color: var(--primary-dark);
+      opacity: 0.9;
+    }
+
+    .topbar-actions {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .btn-action {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      padding: 7px 13px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.26);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid var(--line);
+      color: var(--text);
+      font-size: 12px;
+      font-weight: 600;
+      cursor: pointer;
+      box-shadow: var(--shadow-sm);
+      transition: var(--transition);
+    }
+    .btn-action:hover {
+      background: #ffffff;
+      color: var(--primary-dark);
+      border-color: var(--primary);
+      transform: translateY(-1.5px);
+      box-shadow: var(--shadow-md);
+    }
+
+    /* ===== 主工作台布局 ===== */
+    .workbench {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 6px 24px 48px;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      z-index: 10;
+      position: relative;
+      transition: opacity 0.35s ease, transform 0.35s ease;
+    }
+
+    /* 1. 时钟与搜索区域 */
+    .hero-search-card {
+      padding: 20px 24px 18px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 14px;
+    }
+    .clock-time {
+      font-size: clamp(42px, 6vw, 62px);
+      font-weight: 300;
+      letter-spacing: 2px;
+      color: var(--text);
+      font-variant-numeric: tabular-nums;
+      line-height: 1;
+      text-shadow: var(--text-shadow-shield), 0 2px 8px rgba(0, 0, 0, 0.15);
+      display: flex;
+      align-items: baseline;
+      justify-content: center;
+      gap: 4px;
+    }
+    .clock-colon {
+      animation: colonPulse 2s ease-in-out infinite;
+      color: var(--primary);
+    }
+    @keyframes colonPulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.3; }
+    }
+    .clock-seconds {
+      font-size: 0.38em;
+      font-weight: 400;
+      color: var(--text-muted);
+      margin-left: 2px;
+    }
+    .clock-date-line {
+      font-size: 14px;
+      color: var(--text-soft);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    /* 搜索栏体系 */
+    .search-wrapper {
+      width: 100%;
+      max-width: 680px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .search-engines {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+    .search-engine-tab {
+      padding: 5px 13px;
+      font-size: 12px;
+      font-weight: 600;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.16);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      border: 1px solid rgba(255, 255, 255, 0.32);
+      color: var(--text);
+      cursor: pointer;
+      transition: var(--transition);
+    }
+    .search-engine-tab:hover {
+      background: rgba(255, 255, 255, 0.35);
+      color: var(--primary-dark);
+      border-color: rgba(255, 255, 255, 0.65);
+    }
+    .search-engine-tab.active {
+      background: var(--primary);
+      color: #ffffff;
+      border-color: var(--primary-dark);
+      box-shadow: 0 4px 12px var(--primary-glow);
+    }
+
+    .search-form {
+      position: relative;
+      display: flex;
+      align-items: center;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.18);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      border: 1.5px solid rgba(255, 255, 255, 0.45);
+      border-radius: 999px;
+      padding: 4px 6px 4px 18px;
+      box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.5), 0 4px 16px rgba(0, 0, 0, 0.06);
+      transition: var(--transition);
+    }
+    .search-form:focus-within {
+      border-color: rgba(255, 255, 255, 0.85);
+      box-shadow: 0 0 0 3px rgba(138, 154, 78, 0.25), inset 0 1.5px 2px rgba(255, 255, 255, 0.75);
+      background: rgba(255, 255, 255, 0.32);
+    }
+    .search-icon {
+      color: var(--text-muted);
+      font-size: 18px;
+      margin-right: 8px;
+    }
+    .search-input {
+      flex: 1;
+      border: none;
+      outline: none;
+      background: transparent;
+      font-size: 15px;
+      color: var(--text);
+      user-select: text;
+    }
+    .search-input::placeholder {
+      color: var(--text-muted);
+      opacity: 0.8;
+    }
+    .search-clear-btn {
+      display: none;
+      align-items: center;
+      justify-content: center;
+      width: 26px;
+      height: 26px;
+      border: none;
+      background: rgba(0, 0, 0, 0.06);
+      border-radius: 50%;
+      color: var(--text-soft);
+      font-size: 12px;
+      cursor: pointer;
+      margin-right: 6px;
+      transition: var(--transition);
+    }
+    .search-clear-btn:hover {
+      background: rgba(0, 0, 0, 0.12);
+      color: var(--text);
+    }
+    .search-submit-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border: none;
+      border-radius: 50%;
+      background: var(--primary);
+      color: #ffffff;
+      cursor: pointer;
+      transition: var(--transition);
+      box-shadow: 0 4px 12px var(--primary-glow);
+    }
+    .search-submit-btn:hover {
+      background: var(--primary-dark);
+      transform: scale(1.05);
+    }
+
+    /* 2. 常用网址书签网格 */
+    .bookmarks-card {
+      padding: 18px 24px;
+    }
+    .bookmarks-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 14px;
+    }
+    .section-title {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--text-soft);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .bookmarks-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(92px, 1fr));
+      gap: 12px;
+    }
+    .bookmark-item {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 8px;
+      padding: 10px 6px;
+      border-radius: var(--radius-sm);
+      transition: var(--transition);
+    }
+    .bookmark-item:hover {
+      background: rgba(255, 255, 255, 0.18); backdrop-filter: blur(10px);
+      transform: translateY(-2px);
+    }
+    .bookmark-link {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+      text-decoration: none;
+      color: inherit;
+      width: 100%;
+    }
+    .bookmark-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ffffff;
+      font-size: 18px;
+      font-weight: 700;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+      transition: var(--transition);
+    }
+    .bookmark-item:hover .bookmark-icon {
+      transform: scale(1.08);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+    }
+    
+    .bookmark-brand-svg {
+      width: 22px;
+      height: 22px;
+      fill: #ffffff;
+      flex-shrink: 0;
+    }
+    .garden-entry {
+      transform-style: preserve-3d;
+      will-change: transform;
+    }
+    .bookmark-item {
+      transform-style: preserve-3d;
+      will-change: transform;
+    }
+  
+    .bookmark-title {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--text);
+      max-width: 80px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .bookmark-del-btn {
+      position: absolute;
+      top: 4px;
+      right: 4px;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      border: none;
+      background: rgba(0, 0, 0, 0.45);
+      color: #ffffff;
+      font-size: 10px;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+    .bookmark-del-btn:hover {
+      background: var(--danger);
+      transform: scale(1.15);
+    }
+    .bookmark-item:hover .bookmark-del-btn {
+      display: flex;
+    }
+    .bookmark-add {
+      cursor: pointer;
+    }
+    .bookmark-icon.add-icon {
+      background: rgba(255, 255, 255, 0.7);
+      border: 2px dashed var(--line-strong);
+      color: var(--text-soft);
+      box-shadow: none;
+      font-size: 20px;
+    }
+    .bookmark-add:hover .bookmark-icon.add-icon {
+      border-color: var(--primary);
+      color: var(--primary);
+      background: #ffffff;
+    }
+
+    /* 3. 两栏核心组件区 */
+    .dashboard-columns {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+
+    /* 日历与天气微组件 */
+    .cal-weather-card {
+      padding: 16px 18px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      background: var(--card-bg, rgba(255, 255, 255, 0.48));
+      backdrop-filter: blur(var(--card-blur, 16px)) saturate(150%);
+      -webkit-backdrop-filter: blur(var(--card-blur, 16px)) saturate(150%);
+      border: 1px solid var(--card-border, rgba(255, 255, 255, 0.7));
+      box-shadow: var(--shadow-ambient-soft, 0 8px 30px rgba(35, 45, 20, 0.08));
+    }
+
+    /* 天气条主区 */
+    .weather-header-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+    }
+    .weather-main {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .weather-icon {
+      font-size: 32px;
+      line-height: 1;
+      filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.1));
+    }
+    .weather-temp-wrap {
+      display: flex;
+      flex-direction: column;
+      gap: 1px;
+    }
+    .weather-temp-line {
+      display: flex;
+      align-items: baseline;
+      gap: 6px;
+    }
+    .weather-temp {
+      font-size: 24px;
+      font-weight: 800;
+      color: var(--text);
+      letter-spacing: -0.5px;
+      line-height: 1.1;
+      text-shadow: var(--text-shadow-shield);
+    }
+    .weather-temp-range {
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--primary-dark);
+      background: var(--primary-soft);
+      padding: 1px 5px;
+      border-radius: 4px;
+      line-height: 1.2;
+    }
+    .weather-condition {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--text-soft);
+      line-height: 1.2;
+      text-shadow: var(--text-shadow-shield);
+    }
+    .weather-meta-actions {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .weather-location-wrap {
+      display: inline-flex;
+      align-items: center;
+      gap: 3px;
+      cursor: pointer;
+      font-size: 13px;
+      font-weight: 800;
+      color: var(--text);
+      transition: var(--transition);
+      padding: 3px 7px;
+      border-radius: 6px;
+      background: var(--chip-bg, rgba(255, 255, 255, 0.55));
+      border: 1px solid var(--chip-border, rgba(255, 255, 255, 0.75));
+    }
+    .weather-location-wrap:hover {
+      background: var(--surface-hover);
+      color: var(--primary-dark);
+      border-color: var(--primary);
+    }
+    .weather-loc-icon {
+      font-size: 12px;
+    }
+    .weather-switch-hint {
+      font-size: 10px;
+      font-weight: 700;
+      padding: 1px 5px;
+      border-radius: 4px;
+      background: var(--primary);
+      color: #ffffff;
+      margin-left: 2px;
+    }
+    .btn-icon-subtle {
+      width: 28px;
+      height: 28px;
+      border-radius: 7px;
+      border: 1px solid var(--line);
+      background: var(--chip-bg, rgba(255, 255, 255, 0.5));
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text);
+      transition: var(--transition);
+      flex-shrink: 0;
+    }
+    .btn-icon-subtle:hover {
+      background: var(--surface-hover);
+      color: var(--primary-dark);
+      border-color: var(--primary);
+      transform: rotate(45deg);
+    }
+    .btn-icon-subtle .icon {
+      width: 14px;
+      height: 14px;
+    }
+
+    /* 丰富的天气属性徽章网格 (4项紧凑横排) */
+    .weather-chips-row {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 6px;
+    }
+    .weather-chip {
+      background: var(--chip-bg, rgba(255, 255, 255, 0.58));
+      border: 1px solid var(--chip-border, rgba(111, 125, 61, 0.2));
+      border-radius: 6px;
+      padding: 3px 6px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 11px;
+      line-height: 1.2;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.02);
+    }
+    .chip-label {
+      color: var(--text-muted);
+      font-weight: 600;
+    }
+    .chip-val {
+      color: var(--text);
+      font-weight: 700;
+    }
+
+    /* 城市切换输入弹条 */
+    .weather-city-dialog {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 12px;
+      background: var(--surface);
+      border: 1px solid var(--line-strong);
+      border-radius: var(--radius-sm);
+      backdrop-filter: blur(12px);
+      box-shadow: var(--shadow-md, 0 4px 16px rgba(0, 0, 0, 0.06));
+    }
+    .weather-city-input {
+      flex: 1;
+      height: 30px;
+      padding: 0 10px;
+      border-radius: 6px;
+      border: 1px solid var(--line);
+      background: var(--surface-solid);
+      color: var(--text);
+      font-size: 12.5px;
+      font-weight: 600;
+      outline: none;
+    }
+    .weather-city-input:focus {
+      border-color: var(--primary);
+      box-shadow: 0 0 0 2px var(--primary-soft);
+    }
+    .btn-city-sm {
+      height: 30px;
+      padding: 0 12px;
+      border-radius: 6px;
+      font-size: 12px;
+      font-weight: 700;
+      border: none;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+    .btn-city-primary {
+      background: var(--primary);
+      color: #ffffff;
+    }
+    .btn-city-primary:hover {
+      background: var(--primary-dark);
+    }
+    .btn-city-cancel {
+      background: rgba(0, 0, 0, 0.08);
+      color: var(--text-soft);
+    }
+    .btn-city-cancel:hover {
+      background: rgba(0, 0, 0, 0.15);
+      color: var(--text);
+    }
+
+    /* 天气温馨提示与日出日落横条 */
+    .weather-tip-strip {
+      font-size: 11.5px;
+      font-weight: 600;
+      color: var(--text-soft);
+      background: var(--chip-bg, rgba(255, 255, 255, 0.65));
+      border: 1px solid var(--chip-border, rgba(111, 125, 61, 0.25));
+      border-radius: 7px;
+      padding: 5px 9px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      box-shadow: 0 1.5px 4px rgba(0, 0, 0, 0.02);
+    }
+    .tip-left {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      min-width: 0;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .tip-right {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      font-size: 10.5px;
+      color: var(--text-muted);
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+
+    .cal-weather-divider {
+      height: 1px;
+      background: var(--line);
+    }
+
+    /* 月历面板 */
+    .calendar-panel {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .calendar-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .cal-title-wrap {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .cal-current-label {
+      font-size: 15px;
+      font-weight: 800;
+      color: var(--text);
+    }
+    .cal-nav-btns {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+    .cal-nav-btn {
+      width: 28px;
+      height: 28px;
+      border-radius: 7px;
+      border: 1px solid var(--line);
+      background: var(--chip-bg, rgba(255, 255, 255, 0.55));
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--text);
+      transition: var(--transition);
+    }
+    .cal-nav-btn:hover {
+      background: var(--primary);
+      color: #ffffff;
+      border-color: var(--primary-dark);
+    }
+    .cal-today-btn {
+      height: 28px;
+      padding: 0 10px;
+      border-radius: 7px;
+      border: 1px solid var(--line);
+      background: var(--chip-bg, rgba(255, 255, 255, 0.55));
+      cursor: pointer;
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--text);
+      transition: var(--transition);
+    }
+    .cal-today-btn:hover {
+      background: var(--primary);
+      color: #ffffff;
+      border-color: var(--primary-dark);
+    }
+
+    /* 星期标头 */
+    .cal-weekdays {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      text-align: center;
+      font-size: 12px;
+      font-weight: 800;
+      color: var(--text-soft);
+      padding: 3px 0;
+    }
+    .cal-weekday.is-weekend {
+      color: var(--primary);
+      font-weight: 800;
+    }
+
+    /* 日历网格 */
+    .cal-days-grid {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      gap: 4px;
+    }
+    .cal-cell {
+      min-height: 42px;
+      border-radius: 8px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      padding: 4px 2px;
+      background: var(--cell-bg, rgba(255, 255, 255, 0.52));
+      border: 1px solid var(--cell-border, rgba(255, 255, 255, 0.75));
+      box-shadow: 0 1.5px 3px rgba(0, 0, 0, 0.02);
+      transition: var(--transition);
+      position: relative;
+      user-select: none;
+    }
+    .cal-cell:hover {
+      background: var(--cell-hover-bg, rgba(255, 255, 255, 0.9));
+      border-color: var(--primary);
+      transform: translateY(-1.5px);
+      box-shadow: 0 4px 10px var(--primary-glow);
+    }
+    .cal-cell.is-other-month {
+      opacity: 0.45;
+      background: transparent;
+    }
+    .cal-cell.is-other-month .cal-cell-day {
+      color: var(--text-muted);
+    }
+    .cal-cell.is-other-month .cal-cell-sub {
+      color: var(--text-muted);
+    }
+    .cal-cell.is-today {
+      background: var(--primary) !important;
+      color: #ffffff !important;
+      border-color: var(--primary-dark) !important;
+      box-shadow: 0 4px 14px var(--primary-glow);
+    }
+    .cal-cell.is-today .cal-cell-day {
+      color: #ffffff !important;
+      font-weight: 800;
+    }
+    .cal-cell.is-today .cal-cell-sub {
+      color: rgba(255, 255, 255, 0.9) !important;
+      font-weight: 700;
+    }
+    .cal-cell.is-selected:not(.is-today) {
+      background: var(--primary-soft);
+      border-color: var(--primary);
+    }
+    .cal-cell-day {
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 1.15;
+      color: var(--text);
+    }
+    .cal-cell-sub {
+      font-size: 10px;
+      line-height: 1.1;
+      margin-top: 2px;
+      color: var(--text-muted);
+      font-weight: 600;
+      max-width: 100%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .cal-cell.has-festival .cal-cell-sub {
+      color: var(--danger, #d9536f);
+      font-weight: 800;
+    }
+    .cal-cell.has-term .cal-cell-sub {
+      color: var(--primary-dark);
+      font-weight: 800;
+    }
+
+    /* 选中日期详细信息 */
+    .cal-selected-info {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 12px;
+      padding: 8px 12px;
+      background: var(--card-inner-bg, rgba(255, 255, 255, 0.6));
+      border: 1px solid var(--card-inner-border, rgba(111, 125, 61, 0.25));
+      border-radius: 8px;
+      min-height: 32px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02);
+    }
+    .cal-info-solar {
+      font-weight: 800;
+      color: var(--text);
+    }
+    .cal-info-lunar {
+      color: var(--text-soft);
+      font-weight: 600;
+    }
+    .cal-info-tag {
+      padding: 2px 8px;
+      border-radius: 5px;
+      background: var(--danger-soft, #ffe3e8);
+      color: var(--danger, #b81c3b);
+      font-size: 11px;
+      font-weight: 800;
+    }
+    .cal-info-term-tag {
+      padding: 2px 8px;
+      border-radius: 5px;
+      background: var(--primary-soft);
+      color: var(--primary-dark);
+      font-size: 11px;
+      font-weight: 800;
+    }
+
+    /* 黑胶随身听 */
+    .player-card {
+      padding: 20px 22px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    .player-body {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .vinyl-wrapper {
+      position: relative;
+      width: 72px;
+      height: 72px;
+      flex-shrink: 0;
+    }
+    .vinyl-disc {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      background: repeating-radial-gradient(circle at center, #1b2014 0px, #2a3120 1px, #1b2014 2px, #11140c 3px);
+      box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.8), 0 8px 20px rgba(0, 0, 0, 0.3);
+      border: 2.5px solid rgba(255, 255, 255, 0.85);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      animation: vinylRotate 8s linear infinite paused;
+    }
+    .vinyl-disc::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border-radius: 50%;
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.22) 0%, transparent 40%, rgba(255, 255, 255, 0.15) 100%);
+      pointer-events: none;
+    }
+    .vinyl-disc.playing {
+      animation-play-state: running;
+    }
+    @keyframes vinylRotate {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+    .vinyl-center {
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      background: #fdf7d8;
+      border: 2px solid #8a9a4e;
+    }
+    .player-track-info {
+      flex: 1;
+      min-width: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .player-song-title {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--text);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .player-song-meta {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 12px;
+      color: var(--text-soft);
+    }
+    .song-pill-tag {
+      font-size: 10px;
+      padding: 1px 6px;
+      border-radius: 999px;
+      background: var(--primary-soft);
+      color: var(--primary-dark);
+      font-weight: 600;
+    }
+    .player-controls {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-top: 4px;
+    }
+    .btn-ctrl {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.7);
+      color: var(--text);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      transition: var(--transition);
+    }
+    .btn-ctrl:hover {
+      background: #ffffff;
+      color: var(--primary-dark);
+      transform: scale(1.08);
+      border-color: var(--primary);
+    }
+    .btn-play-main {
+      width: 40px;
+      height: 40px;
+      background: var(--primary);
+      color: #ffffff;
+      border-color: var(--primary-dark);
+      font-size: 16px;
+      box-shadow: 0 4px 12px var(--primary-glow);
+    }
+    .btn-play-main:hover {
+      background: var(--primary-dark);
+      transform: scale(1.1);
+    }
+    .player-progress-wrap {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 11px;
+      color: var(--text-muted);
+    }
+    .player-seek {
+      flex: 1;
+      accent-color: var(--primary);
+      height: 4px;
+      cursor: pointer;
+    }
+
+    /* 待办与灵感便签 */
+    .memo-todo-card {
+      padding: 20px 22px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    .memo-todo-tabs {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 8px;
+    }
+    .section-title {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--text);
+      text-shadow: var(--text-shadow-shield);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .memo-todo-tab {
+      background: none;
+      border: none;
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--text-soft);
+      text-shadow: var(--text-shadow-shield);
+      padding: 4px 8px;
+      cursor: pointer;
+      transition: var(--transition);
+      position: relative;
+    }
+    .memo-todo-tab.active {
+      color: var(--primary-dark);
+    }
+    .memo-todo-tab.active::after {
+      content: '';
+      position: absolute;
+      bottom: -9px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background: var(--primary);
+      border-radius: 999px;
+    }
+
+    .todo-panel {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .todo-add-row {
+      display: flex;
+      gap: 8px;
+    }
+    .todo-input {
+      flex: 1;
+      padding: 8px 12px;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--line);
+      background: transparent;
+      font-size: 13px;
+      outline: none;
+      color: var(--text);
+      user-select: text;
+    }
+    .todo-input:focus {
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px var(--primary-glow);
+    }
+    .btn-todo-add {
+      padding: 8px 14px;
+      background: var(--primary);
+      color: #ffffff;
+      border: none;
+      border-radius: var(--radius-sm);
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+    .btn-todo-add:hover {
+      background: var(--primary-dark);
+    }
+    .todo-list {
+      list-style: none;
+      max-height: 180px;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      padding-right: 4px;
+    }
+    .todo-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 8px 10px;
+      background: transparent;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--line);
+      font-size: 13px;
+      transition: var(--transition);
+    }
+    .todo-item:hover {
+      background: rgba(255, 255, 255, 0.18);
+    }
+    .todo-item.done .todo-text {
+      text-decoration: line-through;
+      color: var(--text-muted);
+    }
+    .todo-check-label {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      cursor: pointer;
+      flex: 1;
+      user-select: none;
+    }
+    .todo-checkbox {
+      accent-color: var(--primary);
+      width: 16px;
+      height: 16px;
+      cursor: pointer;
+    }
+    .todo-del-btn {
+      background: none;
+      border: none;
+      color: var(--text-muted);
+      cursor: pointer;
+      font-size: 12px;
+      padding: 2px 6px;
+      border-radius: 4px;
+      transition: var(--transition);
+    }
+    .todo-del-btn:hover {
+      color: var(--danger);
+      background: var(--danger-soft);
+    }
+    .todo-empty {
+      text-align: center;
+      padding: 24px 0;
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+
+    .memo-panel {
+      display: none;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .memo-textarea {
+      width: 100%;
+      height: 175px;
+      padding: 10px 12px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius-sm);
+      background: rgba(255, 255, 255, 0.25);
+      font-size: 13px;
+      font-family: inherit;
+      color: var(--text);
+      outline: none;
+      resize: none;
+      line-height: 1.6;
+      user-select: text;
+    }
+    .memo-textarea:focus {
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px var(--primary-glow);
+    }
+    .memo-hint {
+      font-size: 11px;
+      color: var(--text-muted);
+      text-align: right;
+    }
+
+    /* ===== 纯享看图模式 (Zen Mode) ===== */
+    body.zen-mode .workbench,
+    body.zen-mode .start-topbar,
+    body.zen-mode .site-tabs {
+      opacity: 0 !important;
+      pointer-events: none !important;
+      transform: translateY(12px) !important;
+    }
+    body.zen-mode .wallpaper-mask {
+      background-color: rgba(0, 0, 0, 0.05) !important;
+    }
+    .zen-hint {
+      position: fixed;
+      bottom: 24px;
+      left: 50%;
+      transform: translateX(-50%) translateY(20px);
+      padding: 9px 20px;
+      border-radius: 999px;
+      background: rgba(0, 0, 0, 0.65);
+      color: #ffffff;
+      font-size: 13px;
+      font-weight: 500;
+      backdrop-filter: blur(10px);
+      opacity: 0;
+      pointer-events: none;
+      transition: all 0.35s ease;
+      z-index: 100;
+    }
+    .zen-hint.show {
+      opacity: 1;
+      transform: translateX(-50%) translateY(0);
+    }
+
+    /* ===== 全局 Toast ===== */
+    .global-toast {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      padding: 10px 18px;
+      border-radius: 999px;
+      background: rgba(61, 70, 48, 0.9);
+      color: #ffffff;
+      font-size: 13px;
+      font-weight: 600;
+      backdrop-filter: blur(12px);
+      box-shadow: var(--shadow-md);
+      opacity: 0;
+      transform: translateY(10px);
+      pointer-events: none;
+      transition: var(--transition);
+      z-index: 200;
+    }
+    .global-toast.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ===== 对话框 (原生 <dialog>) ===== */
+    dialog {
+      border: none;
+      border-radius: var(--radius-lg);
+      background: rgba(255, 255, 255, 0.94);
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.2);
+      border: 1px solid var(--line);
+      color: var(--text);
+      max-width: 480px;
+      width: 90vw;
+      padding: 0;
+      margin: auto;
+      outline: none;
+      overflow: hidden;
+    }
+    dialog::backdrop {
+      background: rgba(0, 0, 0, 0.35);
+      backdrop-filter: blur(6px);
+    }
+    .dialog-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 18px 24px;
+      border-bottom: 1px solid var(--line);
+    }
+    .dialog-title {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--text);
+    }
+    .dialog-close-btn {
+      background: none;
+      border: none;
+      font-size: 16px;
+      cursor: pointer;
+      color: var(--text-muted);
+      padding: 4px;
+      border-radius: 50%;
+      transition: var(--transition);
+    }
+    .dialog-close-btn:hover {
+      color: var(--text);
+      background: rgba(0, 0, 0, 0.06);
+    }
+    .dialog-body {
+      padding: 20px 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      max-height: 70vh;
+      overflow-y: auto;
+    }
+    .dialog-foot {
+      padding: 14px 24px;
+      border-top: 1px solid var(--line);
+      display: flex;
+      justify-content: flex-end;
+      gap: 10px;
+    }
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .form-label {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text-soft);
+    }
+    .form-input {
+      padding: 9px 14px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius-sm);
+      font-size: 14px;
+      outline: none;
+      background: #ffffff;
+      color: var(--text);
+      user-select: text;
+    }
+    .form-input:focus {
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px var(--primary-glow);
+    }
+    .btn-secondary {
+      padding: 8px 16px;
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.8);
+      border-radius: var(--radius-sm);
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text);
+      cursor: pointer;
+      transition: var(--transition);
+    }
+    .btn-secondary:hover {
+      background: #ffffff;
+      border-color: var(--text-muted);
+    }
+    .btn-primary {
+      padding: 8px 18px;
+      border: 1px solid var(--primary-dark);
+      background: var(--primary);
+      border-radius: var(--radius-sm);
+      font-size: 13px;
+      font-weight: 600;
+      color: #ffffff;
+      cursor: pointer;
+      box-shadow: 0 4px 12px var(--primary-glow);
+      transition: var(--transition);
+    }
+    .btn-primary:hover {
+      background: var(--primary-dark);
+      transform: translateY(-1px);
+    }
+
+    /* 设置抽屉内部 */
+    .settings-section-title {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--primary-dark);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-top: 4px;
+    }
+    .settings-grid-options {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+    .setting-toggle-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 13px;
+      color: var(--text);
+      cursor: pointer;
+      padding: 6px 8px;
+      border-radius: 6px;
+      transition: var(--transition);
+    }
+    .setting-toggle-item:hover {
+      background: rgba(138, 154, 78, 0.1);
+    }
+    .setting-toggle-item input {
+      accent-color: var(--primary);
+      width: 16px;
+      height: 16px;
+      cursor: pointer;
+    }
+    .slider-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      font-size: 13px;
+    }
+    .slider-row input[type="range"] {
+      flex: 1;
+      accent-color: var(--primary);
+      cursor: pointer;
+    }
+
+    /* 移动端自适应适配 */
+    @media (max-width: 768px) {
+      .site-tabs {
+        display: none;
+      }
+      .topbar-center {
+        display: none;
+      }
+      .start-topbar {
+        padding: 10px 16px;
+      }
+      .workbench {
+        padding: 6px 14px 40px;
+        gap: 16px;
+      }
+      .hero-search-card {
+        padding: 20px 16px;
+      }
+      .dashboard-columns {
+        grid-template-columns: 1fr;
+        gap: 16px;
+      }
+      .bookmarks-grid {
+        grid-template-columns: repeat(auto-fill, minmax(76px, 1fr));
+      }
+      .garden-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* 动效无障碍模式 */
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 时空光影系统环境遮罩与动态粒子画布 -->
+  <div class="ambience-overlay" id="ambienceOverlay"></div>
+  <canvas class="ambience-canvas" id="ambienceCanvas"></canvas>
+
+  <!-- SVG 图标精灵库 -->
+  <svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+    <symbol id="icon-home" viewBox="0 0 1024 1024"><path d="M946.5 505L534.6 93.4a31.93 31.93 0 0 0-45.2 0L77.5 505c-12 12-18.8 28.3-18.8 45.3 0 35.3 28.7 64 64 64h43.4V908c0 17.7 14.3 32 32 32H360c17.7 0 32-14.3 32-32V656h240v252c0 17.7 14.3 32 32 32h161.9c17.7 0 32-14.3 32-32V614.3h43.4c17 0 33.3-6.7 45.3-18.8 24.9-25 24.9-65.5-.1-90.5z"/></symbol>
+    <symbol id="icon-music" viewBox="0 0 1024 1024"><path d="M768.496 359.12L648.224 572a128 128 0 1 1-1.648-92.288l90.784-160.656A295.2 295.2 0 0 0 520 224C356.512 224 224 356.512 224 520S356.512 816 520 816C683.472 816 816 683.472 816 520c0-59.328-17.44-114.56-47.504-160.88zM600.272 562.352l-0.272-0.144 1.648-2.912a80 80 0 1 0-1.376 3.072zM864 520C864 709.984 709.984 864 520 864S176 709.984 176 520 330.016 176 520 176 864 330.016 864 520z"/></symbol>
+    <symbol id="icon-playlist" viewBox="0 0 1024 1024"><path d="M791.272727 328.610909q34.443636 0 56.785455 24.203636t22.341818 58.647273v163.84q0 67.956364-6.516364 109.847273-9.309091 53.992727-33.512727 89.367273-26.996364 40.029091-76.334545 59.578181-53.992727 22.341818-138.705455 22.341819-71.68 0-118.225454-13.963637-40.029091-13.032727-74.472728-40.96-8.378182-4.654545-14.894545-12.101818L175.941818 560.407273q-18.618182-18.618182-21.410909-43.752728-3.723636-21.410909 5.585455-43.752727 7.447273-20.48 21.876363-34.443636t35.84-20.014546q21.410909-6.050909 43.752728-0.930909t38.167272 20.014546l50.269091 50.269091V168.494545q0-33.512727 24.203637-57.716363t58.181818-24.203637Q466.385455 86.574545 489.658182 110.312727t23.272727 58.181818v83.781819q17.687273-10.24 39.098182-10.24 26.065455 0 46.545454 15.36t28.858182 40.494545q20.48-12.101818 43.752728-12.101818 26.996364 0 47.476363 15.36t28.858182 40.494545q19.549091-13.032727 41.890909-13.032727h1.861818z m35.374546 87.505455q0-13.963636-5.585455-23.272728-4.654545-7.447273-13.032727-11.170909-5.585455-2.792727-13.032727-3.723636l-5.585455-0.930909q-16.756364 0-27.461818 11.636363T751.243636 416.116364v90.298181q0 8.378182-6.050909 14.894546t-15.36 6.516364q-9.309091 0-15.36-6.516364t-6.050909-14.894546V376.087273q0-15.825455-10.24-26.065455-7.447273-7.447273-18.618182-10.24l-10.24-1.861818q-16.756364 0-26.996363 11.170909t-10.24 26.996364v99.607272h-0.930909l0.930909 4.654546q0 9.309091-6.516364 15.36t-15.36 6.050909q-8.843636 0-15.36-6.050909t-6.516364-15.36V333.265455q0-17.687273-10.24-27.927273-6.516364-7.447273-18.618181-10.24l-9.309091-0.930909q-15.825455 0-26.530909 11.170909T512.930909 333.265455v107.985454h-0.930909l0.930909 4.654546q0 8.378182-6.516364 14.894545t-15.36 6.516364q-8.843636 0-15.36-6.516364t-6.516363-14.894545V177.803636q0-16.756364-10.24-27.927272t-26.530909-11.170909Q416.116364 138.705455 404.945455 149.876364t-11.17091 27.927272v414.254546L274.618182 474.763636q-11.170909-12.101818-29.789091-11.636363t-30.72 13.032727Q202.007273 488.727273 200.610909 505.483636t12.567273 29.789091l218.763636 217.832728q31.650909 30.72 73.541818 45.614545 44.683636 14.894545 109.847273 14.894545 76.334545 0 121.949091-18.618181 41.890909-17.687273 63.301818-51.2 17.687273-28.858182 23.272727-75.403637 2.792727-28.858182 2.792728-93.090909V416.116364zM317.44 291.374545q-25.134545-23.272727-39.563636-55.38909T263.447273 167.563636q0-45.614545 22.341818-84.247272T346.763636 22.341818Q385.396364 0 431.010909 0t84.247273 22.341818q38.632727 22.341818 61.44 60.974546T599.505455 167.563636q0 22.341818-6.516364 45.614546-16.756364-16.756364-40.029091-17.687273 2.792727-13.963636 2.792727-27.927273 0-33.512727-16.756363-62.370909t-45.149091-45.614545q-28.392727-16.756364-62.370909-16.756364T368.64 59.578182q-28.858182 16.756364-45.614545 45.614545t-16.756364 62.370909q0 26.996364 11.170909 51.2v72.610909z"/></symbol>
+    <symbol id="icon-search" viewBox="64 64 896 896"><path d="M909.6 854.5L649.9 594.8C690.2 537.8 714 468.2 714 393 714 202.8 559.2 48 369 48S24 202.8 24 393s154.8 345 345 345c75.2 0 144.8-23.8 201.8-64.1l259.7 259.7c8.2 8.2 21.5 8.2 29.7 0l49.4-49.4c8.2-8.2 8.2-21.5 0-29.7zM369 660c-147.2 0-267-119.8-267-267s119.8-267 267-267 267 119.8 267 267-119.8 267-267 267z"/></symbol>
+    <symbol id="icon-setting" viewBox="64 64 896 896"><path d="M924.8 385.6l-98.2-56.7c-4.3-2.5-9.6-1.5-12.7 2.4-18.4 23.1-40.2 43.1-64.8 59.4-4 2.6-5.8 7.5-4.4 12.1 7.2 24.3 11 49.9 11 76.2s-3.8 51.9-11 76.2c-1.4 4.6.4 9.5 4.4 12.1 24.6 16.3 46.4 36.3 64.8 59.4 3.1 3.9 8.4 4.9 12.7 2.4l98.2-56.7c8.8-5.1 12.1-16.1 7.3-25.2-14.7-27.9-24.9-58.1-30.2-89.9-1.2-7.3-1.2-14.7 0-22 5.3-31.8 15.5-62 30.2-89.9 4.8-9.1 1.5-20.1-7.3-25.2zM512 682c-93.9 0-170-76.1-170-170s76.1-170 170-170 170 76.1 170 170-76.1 170-170 170z"/></symbol>
+    <symbol id="icon-play" viewBox="0 0 1024 1024"><path d="M793.6 512L281.6 192v640l512-320z"/></symbol>
+    <symbol id="icon-pause" viewBox="0 0 1024 1024"><path d="M384 192h-128v640h128V192z m384 0h-128v640h128V192z"/></symbol>
+    <symbol id="icon-step-forward" viewBox="64 64 896 896"><path d="M764 192h-56c-4.4 0-8 3.6-8 8v270.8L307.7 202.9C293.7 193 274 203.1 274 220.1v583.8c0 17 19.7 27.1 33.7 17.2L700 553.2V824c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8V200c0-4.4-3.6-8-8-8z"/></symbol>
+    <symbol id="icon-step-backward" viewBox="64 64 896 896"><path d="M716.3 202.9L324 470.8V200c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v624c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8V553.2l392.3 267.9c14 9.9 33.7-.2 33.7-17.2V220.1c0-17-19.7-27.1-33.7-17.2z"/></symbol>
+    <symbol id="icon-retweet" viewBox="0 0 1024 1024"><path d="M136 552h63.6c4.4 0 8-3.6 8-8V288.7h528.6v72.6c0 1.9.6 3.7 1.8 5.2a8.3 8.3 0 0011.7 1.4L893 255.4c4.3-5 3.6-10.3 0-13.2L749.7 129.8a8.22 8.22 0 00-5.2-1.8c-4.6 0-8.4 3.8-8.4 8.4V209H199.7c-39.5 0-71.7 32.2-71.7 71.8V544c0 4.4 3.6 8 8 8zm752-80h-63.6c-4.4 0-8 3.6-8 8v255.3H287.8v-72.6c0-1.9-.6-3.7-1.8-5.2a8.3 8.3 0 00-11.7-1.4L131 768.6c-4.3 5-3.6 10.3 0 13.2l143.3 112.4c1.5 1.2 3.3 1.8 5.2 1.8 4.6 0 8.4-3.8 8.4-8.4V815h536.6c39.5 0 71.7-32.2 71.7-71.8V480c-.2-4.4-3.8-8-8.2-8z"/></symbol>
+    <symbol id="icon-eye" viewBox="64 64 896 896"><path d="M942.2 486.2C847.4 286.5 704.1 186 512 186c-192.1 0-335.4 100.5-430.2 300.2a60.3 60.3 0 000 51.6C176.6 737.5 319.9 838 512 838c192.1 0 335.4-100.5 430.2-300.2 7.7-16.2 7.7-35.4 0-51.6zM512 766c-161.3 0-279.4-81.8-362.7-254C232.6 339.8 350.7 258 512 258c161.3 0 279.4 81.8 362.7 254-83.3 172.2-201.4 254-362.7 254zm0-418c-90.6 0-164 73.4-164 164s73.4 164 164 164 164-73.4 164-164-73.4-164-164-164z"/></symbol>
+    <symbol id="icon-picture" viewBox="64 64 896 896"><path d="M928 160H96c-17.7 0-32 14.3-32 32v640c0 17.7 14.3 32 32 32h832c17.7 0 32-14.3 32-32V192c0-17.7-14.3-32-32-32zm-40 632H136v-39.9l138.5-164.3 150.1 178L658.1 489 888 761.6V792zm0-129.8L664.2 395.8a32.3 32.3 0 00-48.4 0L396.6 654.5l-133-157.7c-6.1-7.2-15-11.4-24.5-11.6h-.7c-9.4 0-18.4 4-24.6 11.1L136 601.7V232h752v430.2zM304 280a80 80 0 100 160 80 80 0 000-160z"/></symbol>
+      <symbol id="icon-brand-bilibili" viewBox="0 0 24 24"><path d="M17.813 4.653h.854c1.51.054 2.769.578 3.773 1.574 1.004.995 1.524 2.249 1.56 3.76v7.36c-.036 1.51-.556 2.769-1.56 3.773s-2.262 1.524-3.773 1.56H5.333c-1.51-.036-2.769-.556-3.773-1.56S.036 18.858 0 17.347v-7.36c.036-1.511.556-2.765 1.56-3.76 1.004-.996 2.262-1.52 3.773-1.574h.774l-1.174-1.12a1.234 1.234 0 0 1-.373-.906c0-.356.124-.658.373-.907l.027-.027c.267-.249.573-.373.92-.373.347 0 .653.124.92.373L9.653 4.44c.071.071.134.142.187.213h4.267a.836.836 0 0 1 .16-.213l2.853-2.747c.267-.249.573-.373.92-.373.347 0 .662.151.929.4.267.249.391.551.391.907 0 .355-.124.657-.373.906zM5.333 7.24c-.746.018-1.373.276-1.88.773-.506.498-.769 1.13-.786 1.894v7.52c.017.764.28 1.395.786 1.893.507.498 1.134.756 1.88.773h13.334c.746-.017 1.373-.275 1.88-.773.506-.498.769-1.129.786-1.893v-7.52c-.017-.765-.28-1.396-.786-1.894-.507-.497-1.134-.755-1.88-.773zM8 11.107c.373 0 .684.124.933.373.25.249.383.569.4.96v1.173c-.017.391-.15.711-.4.96-.249.25-.56.374-.933.374s-.684-.125-.933-.374c-.25-.249-.383-.569-.4-.96V12.44c0-.373.129-.689.386-.947.258-.257.574-.386.947-.386zm8 0c.373 0 .684.124.933.373.25.249.383.569.4.96v1.173c-.017.391-.15.711-.4.96-.249.25-.56.374-.933.374s-.684-.125-.933-.374c-.25-.249-.383-.569-.4-.96V12.44c.017-.391.15-.711.4-.96.249-.249.56-.373.933-.373Z"/></symbol>
+    <symbol id="icon-brand-github" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></symbol>
+    <symbol id="icon-brand-youtube" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></symbol>
+    <symbol id="icon-brand-bing" viewBox="0 0 24 24"><path d="M20.176 15.406a6.48 6.48 0 01-1.736 4.414c1.338-1.47.803-3.869-1.003-4.635-.862-.305-2.488-.85-3.367-1.158a1.834 1.834 0 01-.932-.818c-.381-.975-1.163-2.968-1.548-3.948-.095-.285-.31-.625-.265-.938.046-.598.724-1.003 1.276-.754l3.682 1.888c.621.292 1.305.692 1.796 1.172a6.486 6.486 0 012.097 4.777zm-1.44 1.888c-.264-1.194-1.135-1.744-2.216-2.028-1.527.902-4.853 2.878-6.952 4.13-1.103.68-2.13 1.35-2.919 1.242a2.866 2.866 0 01-2.77-2.325c-.012-.048-.008-.03-.001.01a6.4 6.4 0 00.947 2.653 6.498 6.498 0 005.486 3.022c1.908.062 3.536-1.153 5.099-2.096.292-.188.804-.496 1.332-.831l1.423-1.51c.553-.577.764-1.426.571-2.267zm-12.04 2.97c.422 0 .822-.1 1.173-.29.355-.215.964-.579 1.7-1.018L9.57 4.502c0-.99-.497-1.864-1.257-2.382-.08-.059-2.91-1.901-2.99-1.956-.605-.432-1.523.045-1.5.797v14.887l.417 2.36a2.488 2.488 0 002.455 2.056z"/></symbol>
+    <symbol id="icon-brand-music" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 14.868c-.347 1.944-1.928 3.513-3.89 3.864-2.585.463-4.996-1.196-5.464-3.774-.287-1.579.288-3.13 1.492-4.102.398-.323.882-.55 1.396-.653v-4.19c0-.448.363-.812.812-.812h.746c.448 0 .812.364.812.812v6.634c-.237-.037-.478-.057-.723-.057-1.782 0-3.23 1.447-3.23 3.23 0 1.782 1.448 3.23 3.23 3.23 1.783 0 3.23-1.448 3.23-3.23 0-.174-.015-.345-.042-.511.455-.429.742-1.018.799-1.677.086-.984-.523-1.89-1.472-2.185-.436-.135-.783-.448-.934-.871-.237-.665.045-1.408.683-1.737 1.05-.541 2.378-.035 2.82 1.077.295.742.234 1.579-.168 2.269z"/></symbol>
+    <symbol id="icon-brand-weibo" viewBox="0 0 24 24"><path d="M10.098 20.323c-3.977.391-7.414-1.406-7.672-4.02-.259-2.609 2.759-5.047 6.74-5.441 3.979-.394 7.413 1.404 7.671 4.018.259 2.6-2.759 5.049-6.737 5.439l-.002.004zM9.05 17.219c-.384.616-1.208.884-1.829.602-.612-.279-.793-.991-.406-1.593.379-.595 1.176-.861 1.793-.601.622.263.82.972.442 1.592zm1.27-1.627c-.141.237-.449.353-.689.253-.236-.09-.313-.361-.177-.586.138-.227.436-.346.672-.24.239.09.315.36.18.601l.014-.028zm.176-2.719c-1.893-.493-4.033.45-4.857 2.118-.836 1.704-.026 3.591 1.886 4.21 1.983.64 4.318-.341 5.132-2.179.8-1.793-.201-3.642-2.161-4.149zm7.563-1.224c-.346-.105-.57-.18-.405-.615.375-.977.42-1.804 0-2.404-.781-1.112-2.915-1.053-5.364-.03 0 0-.766.331-.571-.271.376-1.217.315-2.224-.27-2.809-1.338-1.337-4.869.045-7.888 3.08C1.309 10.87 0 13.273 0 15.348c0 3.981 5.099 6.395 10.086 6.395 6.536 0 10.888-3.801 10.888-6.82 0-1.822-1.547-2.854-2.915-3.284v.01zm1.908-5.092c-.766-.856-1.908-1.187-2.96-.962-.436.09-.706.511-.616.932.09.42.511.691.932.602.511-.105 1.067.044 1.442.465.376.421.466.977.316 1.473-.136.406.089.856.51.992.405.119.857-.105.992-.512.33-1.021.12-2.178-.646-3.035l.03.045zm2.418-2.195c-1.576-1.757-3.905-2.419-6.054-1.968-.496.104-.812.587-.706 1.081.104.496.586.813 1.082.707 1.532-.331 3.185.15 4.296 1.383 1.112 1.246 1.429 2.943.947 4.416-.165.48.106 1.007.586 1.157.479.165.991-.104 1.157-.586.675-2.088.241-4.478-1.338-6.235l.03.045z"/></symbol>
+    <symbol id="icon-brand-zhihu" viewBox="0 0 24 24"><path d="M5.721 0C2.251 0 0 2.25 0 5.719V18.28C0 21.751 2.252 24 5.721 24h12.56C21.751 24 24 21.75 24 18.281V5.72C24 2.249 21.75 0 18.281 0zm1.964 4.078c-.271.73-.5 1.434-.68 2.11h4.587c.545-.006.445 1.168.445 1.171H9.384a58.104 58.104 0 01-.112 3.797h2.712c.388.023.393 1.251.393 1.266H9.183a9.223 9.223 0 01-.408 2.102l.757-.604c.452.456 1.512 1.712 1.906 2.177.473.681.063 2.081.063 2.081l-2.794-3.382c-.653 2.518-1.845 3.607-1.845 3.607-.523.468-1.58.82-2.64.516 2.218-1.73 3.44-3.917 3.667-6.497H4.491c0-.015.197-1.243.806-1.266h2.71c.024-.32.086-3.254.086-3.797H6.598c-.136.406-.158.447-.268.753-.594 1.095-1.603 1.122-1.907 1.155.906-1.821 1.416-3.6 1.591-4.064.425-1.124 1.671-1.125 1.671-1.125zM13.078 6h6.377v11.33h-2.573l-2.184 1.373-.401-1.373h-1.219zm1.313 1.219v8.86h.623l.263.937 1.455-.938h1.456v-8.86z"/></symbol>
+  </svg>
+
+  <!-- 全屏壁纸背景与遮罩 -->
+  <div class="wallpaper-ambient" id="wallpaperAmbient"></div>
+  <div class="wallpaper-bg mode-auto" id="wallpaperBg"></div>
+  <div class="wallpaper-mask" id="wallpaperMask"></div>
+
+  <!-- 左侧常驻书签栏 -->
+  <aside class="site-tabs">
+    <a class="site-tab active" href="./"><svg class="icon" aria-hidden="true"><use href="#icon-home"></use></svg> 首页</a>
+    <a class="site-tab" href="https://viridis.love/"><svg class="icon" aria-hidden="true"><use href="#icon-music"></use></svg> 歌单</a>
+    <a class="site-tab" href="https://viridis.love/buttons/"><svg class="icon" aria-hidden="true"><use href="#icon-playlist"></use></svg> 按钮墙</a>
+    <a class="site-tab" href="https://viridis.love/24xsl/"><img src="assets/24xsl-title.webp" alt="24点"> 24点</a>
+    <a class="site-tab" href="https://viridis.website" target="_blank" rel="noopener"><span class="tab-emoji">🌻</span> 标本馆</a>
+  </aside>
+
+  <!-- 顶部通栏 -->
+  <header class="start-topbar">
+    <a class="brand-group" href="./">
+      <img src="assets/xiaosonglu-logo.png" alt="小松绿" class="brand-logo">
+      <span class="brand-title">小松绿</span>
+      <span class="brand-badge">初始工作台</span>
+    </a>
+
+    <div class="topbar-center">
+      <span class="topbar-greeting" id="clockGreeting">美好的一天，从这里开始 🌻</span>
+      <span>·</span>
+      <span id="clockDate">加载日期…</span>
+      <span>·</span>
+      <span class="topbar-solar" id="clockSolar">草木有情 · 森系常青 🌿</span>
+    </div>
+
+    <div class="topbar-actions">
+      <button class="btn-action btn-ambience" id="ambienceBtn" title="时空光影系统 (点击自定义天气与时空氛围)">
+        <span class="ambience-badge-icon" id="ambienceTopbarIcon">☀️</span>
+        <span id="ambienceTopbarText">光影</span>
+        <span class="ambience-status-dot" id="ambienceStatusDot"></span>
+      </button>
+      <button class="btn-action" id="quickNextWpBtn" title="切换下一张精选壁纸"><svg class="icon"><use href="#icon-picture"></use></svg> 换壁纸</button>
+      <button class="btn-action" id="quickZenBtn" title="纯享看图 (按 ESC 或点击任意处退出)"><svg class="icon"><use href="#icon-eye"></use></svg> 纯享</button>
+      <button class="btn-action" id="openSettingsBtn" title="打开个性化设置"><svg class="icon"><use href="#icon-setting"></use></svg> 设置</button>
+    </div>
+  </header>
+
+  <!-- 主工作台 -->
+  <main class="workbench" id="workbench">
+
+    <!-- 1. 时钟与聚合搜索区域 -->
+    <section class="glass-card hero-search-card" id="widgetSearch">
+      <div class="clock-time">
+        <span id="clockHours">00</span>
+        <span class="clock-colon">:</span>
+        <span id="clockMinutes">00</span>
+        <span class="clock-seconds" id="clockSeconds">00</span>
+      </div>
+
+      <div class="search-wrapper">
+        <div class="search-engines">
+          <button type="button" class="search-engine-tab active" data-engine="bing">微软必应</button>
+          <button type="button" class="search-engine-tab" data-engine="baidu">百度一下</button>
+          <button type="button" class="search-engine-tab" data-engine="google">Google</button>
+          <button type="button" class="search-engine-tab" data-engine="bilibili">哔哩哔哩</button>
+          <button type="button" class="search-engine-tab" data-engine="github">GitHub</button>
+          <button type="button" class="search-engine-tab" data-engine="songs">🎵 站内搜歌</button>
+        </div>
+
+        <form class="search-form" id="searchForm">
+          <svg class="icon search-icon"><use href="#icon-search"></use></svg>
+          <input type="text" class="search-input" id="searchInput" placeholder="微软 Bing 搜索…" autocomplete="off" autofocus>
+          <button type="button" class="search-clear-btn" id="searchClearBtn" title="清空搜索词">✕</button>
+          <button type="submit" class="search-submit-btn" title="立即搜索"><svg class="icon"><use href="#icon-search"></use></svg></button>
+        </form>
+      </div>
+    </section>
+
+    <!-- 2. 常用网址快捷导航 -->
+    <section class="glass-card bookmarks-card" id="widgetBookmarks">
+      <div class="bookmarks-header">
+        <div class="section-title">
+          <span>🌿</span>
+          <span>常用网址快捷方式</span>
+        </div>
+      </div>
+      <div class="bookmarks-grid" id="bookmarksGrid">
+        <!-- 由 js/start.js 动态填充 -->
+      </div>
+    </section>
+
+    <!-- 3. 两栏核心功能区 -->
+    <div class="dashboard-columns">
+
+      <!-- 左列：日历与天气 + 黑胶轻量随身听 -->
+      <div style="display: flex; flex-direction: column; gap: 24px;">
+
+        <!-- 日历与天气微组件 -->
+        <section class="glass-card cal-weather-card" id="widgetCalWeather">
+          <!-- 顶部天气条主行 -->
+          <div class="weather-header-row">
+            <div class="weather-main">
+              <span class="weather-icon" id="weatherIcon" title="当前天气">☀️</span>
+              <div class="weather-temp-wrap">
+                <div class="weather-temp-line">
+                  <span class="weather-temp" id="weatherTemp">--°C</span>
+                  <span class="weather-temp-range" id="weatherRange">--° / --°</span>
+                </div>
+                <div class="weather-condition" id="weatherDesc">天气加载中…</div>
+              </div>
+            </div>
+
+            <div class="weather-meta-actions">
+              <div class="weather-location-wrap" id="weatherCityWrap" title="点击切换城市">
+                <span class="weather-loc-icon">📍</span>
+                <span class="weather-city" id="weatherCity">正在定位…</span>
+                <span class="weather-switch-hint">切换</span>
+              </div>
+              <button type="button" class="btn-icon-subtle" id="refreshWeatherBtn" title="刷新天气">
+                <svg class="icon" aria-hidden="true"><use href="#icon-retweet"></use></svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- 城市快速输入浮条（默认隐藏） -->
+          <div class="weather-city-dialog" id="weatherCityDialog" style="display: none;">
+            <input type="text" id="weatherCityInput" class="weather-city-input" placeholder="输入城市（如：北京、上海、广州）" maxlength="20">
+            <button type="button" class="btn-city-sm btn-city-primary" id="weatherCityConfirmBtn">确认</button>
+            <button type="button" class="btn-city-sm btn-city-cancel" id="weatherCityCancelBtn">取消</button>
+          </div>
+
+          <!-- 4项扩展天气属性微徽章行 (体感、湿度、风力、紫外线) -->
+          <div class="weather-chips-row">
+            <div class="weather-chip" title="体感温度">
+              <span class="chip-label">体感</span>
+              <span class="chip-val" id="weatherFeels">--°</span>
+            </div>
+            <div class="weather-chip" title="空气相对湿度">
+              <span class="chip-label">湿度</span>
+              <span class="chip-val" id="weatherHumidity">--%</span>
+            </div>
+            <div class="weather-chip" title="风向与风速">
+              <span class="chip-label">风况</span>
+              <span class="chip-val" id="weatherWind">--</span>
+            </div>
+            <div class="weather-chip" title="紫外线指数">
+              <span class="chip-label">紫外线</span>
+              <span class="chip-val" id="weatherUv">--</span>
+            </div>
+          </div>
+
+          <!-- 温馨天气问候短语与日出日落时间 -->
+          <div class="weather-tip-strip" id="weatherTip">
+            <div class="tip-left">
+              <span>🌿</span>
+              <span id="weatherTipText">草木有情，微风不燥，今天也是美好的一天 🍃</span>
+            </div>
+            <div class="tip-right">
+              <span title="日出时间">🌅 <span id="weatherSunrise">--:--</span></span>
+              <span title="日落时间">🌇 <span id="weatherSunset">--:--</span></span>
+            </div>
+          </div>
+
+          <div class="cal-weather-divider"></div>
+
+          <!-- 下部月历 -->
+          <div class="calendar-panel">
+            <div class="calendar-header">
+              <div class="cal-title-wrap">
+                <span>📅</span>
+                <span class="cal-current-label" id="calCurrentLabel">2026年 9月</span>
+              </div>
+              <div class="cal-nav-btns">
+                <button type="button" class="cal-nav-btn" id="calPrevBtn" title="上一月">‹</button>
+                <button type="button" class="cal-today-btn" id="calTodayBtn" title="返回今天">今天</button>
+                <button type="button" class="cal-nav-btn" id="calNextBtn" title="下一月">›</button>
+              </div>
+            </div>
+
+            <div class="cal-weekdays">
+              <span class="cal-weekday">一</span>
+              <span class="cal-weekday">二</span>
+              <span class="cal-weekday">三</span>
+              <span class="cal-weekday">四</span>
+              <span class="cal-weekday">五</span>
+              <span class="cal-weekday is-weekend">六</span>
+              <span class="cal-weekday is-weekend">日</span>
+            </div>
+
+            <div class="cal-days-grid" id="calDaysGrid">
+              <!-- 由 start.js 动态填充 -->
+            </div>
+
+            <div class="cal-selected-info" id="calSelectedInfo">
+              <span class="cal-info-solar" id="calInfoSolar">加载中…</span>
+              <span class="cal-info-lunar" id="calInfoLunar">农历 --</span>
+              <span class="cal-info-tag" id="calInfoTag" style="display: none;"></span>
+              <span class="cal-info-term-tag" id="calInfoTermTag" style="display: none;"></span>
+            </div>
+          </div>
+        </section>
+
+        <!-- 黑胶轻量随身听 -->
+        <section class="glass-card player-card" id="widgetPlayer">
+          <div class="section-title" style="justify-content: space-between;">
+            <div style="display: flex; align-items: center; gap: 6px;">
+              <span>🎵</span>
+              <span>今日随心听</span>
+            </div>
+            <a href="https://viridis.love/" style="font-size: 12px; color: var(--primary-dark); text-decoration: none; font-weight: 600;">去完整歌单 →</a>
+          </div>
+          <div class="player-body">
+            <div class="vinyl-wrapper">
+              <div class="vinyl-disc" id="vinylDisc">
+                <div class="vinyl-center"></div>
+              </div>
+            </div>
+            <div class="player-track-info">
+              <div class="player-song-title" id="playerSongTitle">正在载入随选曲目…</div>
+              <div class="player-song-meta">
+                <span id="playerSongArtist">小松绿</span>
+                <span class="song-pill-tag" id="playerSongTag">精选</span>
+                <a id="playerCutLinkBtn" href="#" target="_blank" rel="noopener" style="display: none; font-size: 11px; color: var(--primary-dark); text-decoration: underline;">B站切片</a>
+              </div>
+              <div class="player-controls">
+                <button class="btn-ctrl" id="playerPrevBtn" title="上一首"><svg class="icon"><use href="#icon-step-backward"></use></svg></button>
+                <button class="btn-ctrl btn-play-main" id="playerPlayBtn" title="播放 / 暂停"><svg class="icon"><use href="#icon-play"></use></svg></button>
+                <button class="btn-ctrl" id="playerNextBtn" title="下一首"><svg class="icon"><use href="#icon-step-forward"></use></svg></button>
+                <button class="btn-ctrl" id="playerShuffleBtn" title="随机换一首"><svg class="icon"><use href="#icon-retweet"></use></svg></button>
+              </div>
+            </div>
+          </div>
+          <div class="player-progress-wrap">
+            <input type="range" class="player-seek" id="playerProgress" min="0" max="100" value="0">
+            <span id="playerTime">00:00 / 00:00</span>
+          </div>
+        </section>
+
+      </div>
+
+      <!-- 右列：待办与灵感便签 -->
+      <section class="glass-card memo-todo-card" id="widgetTodo">
+        <div class="memo-todo-tabs">
+          <button class="memo-todo-tab active" data-tab="todo">待办清单</button>
+          <button class="memo-todo-tab" data-tab="memo">灵感便签</button>
+          <div style="flex: 1;"></div>
+          <button id="todoClearDoneBtn" style="background: none; border: none; font-size: 11px; color: var(--text-muted); cursor: pointer;">清理完成项</button>
+        </div>
+
+        <!-- 待办面板 -->
+        <div class="todo-panel" id="panelTodo">
+          <div class="todo-add-row">
+            <input type="text" class="todo-input" id="todoInput" placeholder="添加待办事项（按 Enter 保存）…">
+            <button class="btn-todo-add" id="todoAddBtn">添加</button>
+          </div>
+          <ul class="todo-list" id="todoList">
+            <!-- 动态渲染 -->
+          </ul>
+        </div>
+
+        <!-- 便签面板 -->
+        <div class="memo-panel" id="panelMemo">
+          <textarea class="memo-textarea" id="memoTextarea" placeholder="在这里随手记下当天的灵感、待存链接或临时备忘…（本地实时自动保存）"></textarea>
+          <div class="memo-hint">内容仅保存在当前浏览器本地</div>
+        </div>
+      </section>
+
+    </div>
+
+  </main>
+
+  <!-- 纯享模式提示条 -->
+  <div class="zen-hint" id="zenHint">已进入纯享模式 · 按 ESC 或点击任意处退出</div>
+
+  <!-- 添加书签对话框 -->
+  <dialog id="bookmarkDialog">
+    <div class="dialog-head">
+      <span class="dialog-title">添加快捷方式</span>
+      <button class="dialog-close-btn" id="bmDialogCancel">✕</button>
+    </div>
+    <form id="bookmarkForm">
+      <div class="dialog-body">
+        <div class="form-group">
+          <label class="form-label" for="bmDialogName">名称</label>
+          <input type="text" class="form-input" id="bmDialogName" placeholder="例如：Bilibili" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="bmDialogUrl">网址 (URL)</label>
+          <input type="text" class="form-input" id="bmDialogUrl" placeholder="例如：bilibili.com" required>
+        </div>
+      </div>
+      <div class="dialog-foot">
+        <button type="button" class="btn-secondary" onclick="document.getElementById('bookmarkDialog').close()">取消</button>
+        <button type="submit" class="btn-primary">保存</button>
+      </div>
+    </form>
+  </dialog>
+
+  <!-- 个性化设置抽屉对话框 -->
+  <dialog id="settingsDrawer">
+    <div class="dialog-head">
+      <span class="dialog-title">初始页个性化设置</span>
+      <button class="dialog-close-btn" id="closeSettingsBtn">✕</button>
+    </div>
+    <div class="dialog-body">
+
+      <div class="settings-section-title">壁纸与视觉控制</div>
+
+      <div class="slider-row">
+        <span>壁纸画幅适配</span>
+        <select id="wpFitSelect" style="padding: 4px 10px; border-radius: 6px; border: 1px solid rgba(255,255,255,0.4); background: rgba(255,255,255,0.85); font-size: 13px; color: var(--text);">
+          <option value="cover">全屏沉浸铺满（推荐 · 自动饱满构图）</option>
+          <option value="contain">完整画幅居中（原画完整无裁切）</option>
+          <option value="fill">拉伸撑满全屏</option>
+        </select>
+      </div>
+
+      <div class="slider-row">
+        <span>壁纸焦点重心</span>
+        <select id="wpPosSelect" style="padding: 4px 10px; border-radius: 6px; border: 1px solid rgba(255,255,255,0.4); background: rgba(255,255,255,0.85); font-size: 13px; color: var(--text);">
+          <option value="center 18%">偏上居中（面部黄金聚焦 · 推荐）</option>
+          <option value="center center">正中对称</option>
+          <option value="center 35%">偏下构图</option>
+        </select>
+      </div>
+  
+      <div class="slider-row">
+        <span>卡片透度清晰度</span>
+        <input type="range" id="cardOpacityRange" min="15" max="85" value="45">
+        <span id="cardOpacityVal" style="width: 38px; text-align: right; font-weight: 600;">45%</span>
+      </div>
+
+      <div class="slider-row">
+        <span>卡片毛玻璃柔焦</span>
+        <input type="range" id="cardBlurRange" min="4" max="30" value="14">
+        <span id="cardBlurVal" style="width: 38px; text-align: right; font-weight: 600;">14px</span>
+      </div>
+
+      <div class="slider-row">
+        <span>背景遮罩浓度</span>
+        <input type="range" id="maskDarknessRange" min="0" max="60" value="8">
+        <span id="maskDarknessVal" style="width: 38px; text-align: right; font-weight: 600;">8%</span>
+      </div>
+      <div style="display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-top: 4px;">
+        <span style="font-size: 13px;">当前壁纸：<b id="wallpaperTitle">官方精选</b></span>
+        <div style="display: flex; gap: 6px;">
+          <input type="file" id="customWpInput" accept="image/*" style="display: none;">
+          <button type="button" class="btn-secondary" id="uploadWpBtn">上传自选</button>
+          <button type="button" class="btn-secondary" id="resetWpBtn">恢复默认</button>
+        </div>
+      </div>
+
+      <hr style="border: none; border-top: 1px solid var(--line); margin: 6px 0;">
+
+      <div class="settings-section-title">桌面组件显示管理</div>
+      <div class="settings-grid-options">
+        <label class="setting-toggle-item">
+          <input type="checkbox" id="toggleSearch" checked>
+          <span>时钟与搜索框</span>
+        </label>
+        <label class="setting-toggle-item">
+          <input type="checkbox" id="toggleBookmarks" checked>
+          <span>常用网址捷径</span>
+        </label>
+        <label class="setting-toggle-item">
+          <input type="checkbox" id="toggleCalWeather" checked>
+          <span>日历与天气</span>
+        </label>
+        <label class="setting-toggle-item">
+          <input type="checkbox" id="togglePlayer" checked>
+          <span>黑胶轻量随身听</span>
+        </label>
+        <label class="setting-toggle-item">
+          <input type="checkbox" id="toggleTodo" checked>
+          <span>待办与便签</span>
+        </label>
+      </div>
+
+      <hr style="border: none; border-top: 1px solid var(--line); margin: 6px 0;">
+
+      <div class="settings-section-title">数据备份与迁移</div>
+      <div style="display: flex; gap: 10px;">
+        <button type="button" class="btn-secondary" id="exportBackupBtn" style="flex: 1;">导出备份配置 (JSON)</button>
+        <input type="file" id="importBackupInput" accept=".json" style="display: none;">
+        <button type="button" class="btn-secondary" id="importBackupBtn" style="flex: 1;">导入恢复配置 (JSON)</button>
+      </div>
+
+    </div>
+    <div class="dialog-foot">
+      <button type="button" class="btn-primary" onclick="document.getElementById('settingsDrawer').close()">完成</button>
+    </div>
+  </dialog>
+
+  <!-- 引入全站数据源与核心脚本 -->
+  <script src="js/data.js?v=25" defer></script>
+  <script src="js/start.js?v=14" defer></script>
+  <script src="js/motion.js?v=18" defer></script>
+  <script src="js/weather-ambience.js?v=4" defer></script>
+</body>
+</html>

@@ -1,0 +1,1176 @@
+/**
+ * css/weather-ambience.css
+ * 小松绿歌单首页 · 时空光影与环境感知系统 (Weather & Time Ambience System v2.0)
+ * 涵盖：
+ * 1. 物理环境光源与全景光晕架构 (Light Angles, Specular Rims & Elevation Shadows)
+ * 2. 4大艺术时段 (晨曦/午后/暮色/深夜) × 4大天气 (晴/阴/雨/雾) CSS 变量渗透引擎
+ * 3. 晶莹双层微晶倒角高光 (Specular Rim Light) 与悬停轻润流光 (Sheen Sweep)
+ * 4. 深度沉浸夜间模式 (Dark Theme) 全组件自适应与 WCAG AAA 高对比度文字可读性保障
+ * 5. 独立全新顶栏光影控制按钮与小世界弹出控制面板 (Glass Popover)
+ * 6. 纯净节能模式与 prefers-reduced-motion 优雅降级
+ */
+
+/* ==========================================================================
+   1. 全局物理光照体系与令牌定义 (Global Lighting & Elevation Tokens)
+   ========================================================================== */
+:root {
+  /* 基础定向光源向量（默认正午高天光） */
+  --light-angle: 180deg;
+  --light-source-x: 0px;
+  --light-source-y: 8px;
+
+  /* 物理倒角高光与环境反射令牌 */
+  --specular-rim: rgba(255, 255, 255, 0.95);
+  --specular-rim-bevel: rgba(255, 255, 255, 0.45);
+  --specular-bounce: rgba(0, 0, 0, 0.03);
+
+  /* 分层物理投影 (接触阴影 + 近场柔光 + 远场景深) */
+  --shadow-contact: 0 1.5px 3px rgba(45, 55, 25, 0.06);
+  --shadow-ambient-soft: 0 8px 24px rgba(45, 55, 25, 0.08);
+  --shadow-ambient-deep: 0 16px 44px rgba(45, 55, 25, 0.12);
+
+  /* 卡片内部通透折射与流光扫过 */
+  --card-surface-radiance: radial-gradient(circle at 50% 0%, rgba(255, 255, 255, 0.28) 0%, transparent 68%);
+  --card-sheen-sweep-color: rgba(255, 255, 255, 0.32);
+
+  /* 文字防眩光对比度保护微投影 */
+  --text-shadow-shield: 0 1px 2px rgba(255, 255, 255, 0.7);
+
+  /* 组件语义光影变量 */
+  --chip-bg: rgba(255, 255, 255, 0.58);
+  --chip-border: rgba(111, 125, 61, 0.22);
+  --cell-bg: rgba(255, 255, 255, 0.5);
+  --cell-border: rgba(111, 125, 61, 0.18);
+  --cell-hover-bg: rgba(255, 255, 255, 0.92);
+}
+
+/* 基础过渡与全屏图层架构 */
+html,
+body {
+  transition: background-color 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+              color 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* 全屏环境光色温遮罩层 (居于壁纸之上、卡片之下) */
+.ambience-overlay {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 1s cubic-bezier(0.16, 1, 0.3, 1),
+              background 1s cubic-bezier(0.16, 1, 0.3, 1),
+              filter 1s cubic-bezier(0.16, 1, 0.3, 1);
+  mix-blend-mode: var(--ambience-blend-mode, soft-light);
+  background: var(--ambience-overlay-bg, transparent);
+}
+
+/* 全屏动态粒子画布 (雨丝、午后浮尘、夜空萤火与星芒) */
+.ambience-canvas {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  pointer-events: none;
+  opacity: var(--ambience-canvas-opacity, 1);
+  transition: opacity 0.8s ease;
+}
+
+/* ==========================================================================
+   2. 4大艺术时段 CSS 变量矩阵 (Time Presets Matrix)
+   ========================================================================== */
+
+/* --- 2.1 晨光熹微 (Dawn: 06:00 - 09:59) ---
+   柔和浅金暖粉，东方斜射光（135deg），丁达尔微漫溢，朝露微泛光 */
+html[data-ambience-time="dawn"] {
+  --light-angle: 135deg;
+  --light-source-x: -7px;
+  --light-source-y: 6px;
+  --ambience-light-color: rgba(255, 218, 170, 0.36);
+  --ambience-overlay-bg: radial-gradient(circle at 20% 25%, rgba(255, 235, 205, 0.32) 0%, rgba(255, 200, 180, 0.14) 55%, transparent 80%);
+  --ambience-blend-mode: soft-light;
+  --primary-glow: rgba(214, 155, 78, 0.38);
+
+  --specular-rim: rgba(255, 242, 224, 0.96);
+  --specular-rim-bevel: rgba(255, 215, 180, 0.45);
+  --specular-bounce: rgba(180, 120, 80, 0.06);
+
+  --shadow-contact: 2px 2px 4px rgba(110, 80, 50, 0.07);
+  --shadow-ambient-soft: 4px 10px 28px rgba(135, 95, 60, 0.10);
+  --shadow-ambient-deep: 6px 20px 48px rgba(120, 75, 45, 0.14);
+
+  --card-surface-radiance: radial-gradient(circle at 25% 10%, rgba(255, 240, 215, 0.3) 0%, transparent 65%);
+  --card-sheen-sweep-color: rgba(255, 235, 210, 0.4);
+  --text-shadow-shield: 0 1px 2px rgba(255, 250, 240, 0.75);
+}
+
+html[data-ambience-time="dawn"] .glass-card {
+  box-shadow: inset 1.5px 2px 2.5px var(--specular-rim),
+              inset -1px -1px 2px var(--specular-bounce),
+              var(--shadow-contact),
+              var(--shadow-ambient-soft),
+              var(--shadow-ambient-deep);
+}
+
+/* --- 2.2 明朗午后 (Noon: 10:00 - 16:29) ---
+   纯正通透自然天光，正午微高光（180deg），投影短促立体，微尘轻扬 */
+html[data-ambience-time="noon"] {
+  --light-angle: 180deg;
+  --light-source-x: 0px;
+  --light-source-y: 8px;
+  --ambience-light-color: rgba(255, 255, 245, 0.42);
+  --ambience-overlay-bg: radial-gradient(circle at 50% 15%, rgba(255, 255, 255, 0.28) 0%, rgba(240, 248, 220, 0.12) 60%, transparent 85%);
+  --ambience-blend-mode: screen;
+  --primary-glow: rgba(138, 154, 78, 0.35);
+
+  --specular-rim: rgba(255, 255, 255, 0.98);
+  --specular-rim-bevel: rgba(255, 255, 255, 0.55);
+  --specular-bounce: rgba(0, 0, 0, 0.03);
+
+  --shadow-contact: 0 1.5px 3.5px rgba(55, 70, 25, 0.07);
+  --shadow-ambient-soft: 0 9px 26px rgba(55, 75, 25, 0.09);
+  --shadow-ambient-deep: 0 18px 46px rgba(50, 70, 25, 0.13);
+
+  --card-surface-radiance: radial-gradient(circle at 50% 0%, rgba(255, 255, 255, 0.32) 0%, transparent 68%);
+  --card-sheen-sweep-color: rgba(255, 255, 255, 0.36);
+  --text-shadow-shield: 0 1px 2px rgba(255, 255, 255, 0.8);
+}
+
+html[data-ambience-time="noon"] .glass-card {
+  box-shadow: inset 0 2px 2px var(--specular-rim),
+              inset 0 -1px 1px var(--specular-bounce),
+              var(--shadow-contact),
+              var(--shadow-ambient-soft),
+              var(--shadow-ambient-deep);
+}
+
+/* --- 2.3 落日融金 (Sunset: 16:30 - 19:29) ---
+   浓郁温暖橘红晚霞，西方低斜射光（225deg），卡片金边高光 (Rim Light)，柔长暖褐阴影 */
+html[data-ambience-time="sunset"] {
+  --light-angle: 225deg;
+  --light-source-x: 9px;
+  --light-source-y: 6px;
+  --ambience-light-color: rgba(255, 145, 75, 0.48);
+  --ambience-overlay-bg: linear-gradient(135deg, rgba(255, 140, 60, 0.32) 0%, rgba(245, 100, 120, 0.24) 45%, rgba(130, 80, 150, 0.18) 100%);
+  --ambience-blend-mode: color-burn;
+  --primary: #a66a38;
+  --primary-dark: #824f24;
+  --primary-soft: #faebd7;
+  --primary-glow: rgba(215, 110, 45, 0.42);
+
+  --specular-rim: rgba(255, 225, 180, 0.96);
+  --specular-rim-bevel: rgba(245, 150, 90, 0.42);
+  --specular-bounce: rgba(180, 60, 30, 0.12);
+
+  --shadow-contact: -2px 2px 5px rgba(120, 50, 25, 0.09);
+  --shadow-ambient-soft: -6px 12px 30px rgba(140, 65, 30, 0.14);
+  --shadow-ambient-deep: -10px 22px 50px rgba(120, 50, 20, 0.18);
+
+  --card-surface-radiance: radial-gradient(circle at 80% 15%, rgba(255, 190, 130, 0.28) 0%, transparent 70%);
+  --card-sheen-sweep-color: rgba(255, 210, 160, 0.38);
+  --text-shadow-shield: 0 1px 2px rgba(255, 245, 235, 0.75);
+}
+
+html[data-ambience-time="sunset"] .glass-card {
+  box-shadow: inset -2px 2px 3px var(--specular-rim),
+              inset 1px -1px 2px var(--specular-bounce),
+              var(--shadow-contact),
+              var(--shadow-ambient-soft),
+              var(--shadow-ambient-deep);
+  border-color: rgba(255, 210, 175, 0.55);
+}
+
+/* --- 2.4 静谧星夜 (Night: 19:30 - 次日 05:59) ---
+   深度沉浸夜间模式 (Dark Theme)，深邃夜空墨蓝黑，晶莹深色毛玻璃，柔白文字发光，冷月银辉微反光 */
+html[data-ambience-time="night"] {
+  color-scheme: dark;
+  --bg: #0b111a;
+  --surface: rgba(18, 26, 38, 0.88);
+  --surface-solid: #131c2a;
+  --surface-hover: rgba(28, 40, 58, 0.95);
+  --line: rgba(255, 255, 255, 0.15);
+  --line-strong: rgba(255, 255, 255, 0.3);
+  --text: #ffffff;
+  --text-soft: #e5f0fa;
+  --text-muted: #9eb8d1;
+  --primary: #a6cc6e;
+  --primary-dark: #82a84e;
+  --primary-soft: rgba(166, 204, 110, 0.24);
+  --primary-glow: rgba(166, 204, 110, 0.45);
+  --card-opacity: 0.82;
+  --card-blur: 18px;
+  --card-bg: rgba(16, 24, 36, 0.85) !important;
+  --card-border: rgba(255, 255, 255, 0.18);
+  --card-inner-bg: rgba(255, 255, 255, 0.08);
+  --card-inner-border: rgba(255, 255, 255, 0.14);
+
+  --specular-rim: rgba(215, 235, 255, 0.45);
+  --specular-rim-bevel: rgba(150, 190, 240, 0.22);
+  --specular-bounce: rgba(0, 0, 0, 0.6);
+
+  --shadow-contact: 0 2px 6px rgba(0, 0, 0, 0.55);
+  --shadow-ambient-soft: 0 10px 32px rgba(0, 0, 0, 0.7);
+  --shadow-ambient-deep: 0 22px 56px rgba(0, 0, 0, 0.88);
+
+  --ambience-light-color: rgba(150, 195, 255, 0.25);
+  --ambience-overlay-bg: radial-gradient(circle at 75% 18%, rgba(80, 130, 200, 0.25) 0%, rgba(10, 15, 25, 0.5) 75%);
+  --ambience-blend-mode: multiply;
+
+  --card-surface-radiance: radial-gradient(circle at 65% 0%, rgba(130, 185, 255, 0.16) 0%, transparent 65%);
+  --card-sheen-sweep-color: rgba(200, 225, 255, 0.2);
+  --text-shadow-shield: 0 1px 3px rgba(0, 0, 0, 0.95);
+
+  --chip-bg: rgba(255, 255, 255, 0.09);
+  --chip-border: rgba(255, 255, 255, 0.16);
+  --cell-bg: rgba(255, 255, 255, 0.07);
+  --cell-border: rgba(255, 255, 255, 0.13);
+  --cell-hover-bg: rgba(255, 255, 255, 0.18);
+}
+
+/* 核心：夜间模式全站所有毛玻璃卡片统一背景色彩与材质，杜绝颜色不一致 */
+html[data-ambience-time="night"] .glass-card {
+  background: rgba(16, 24, 36, 0.85) !important;
+  border-color: rgba(255, 255, 255, 0.18) !important;
+  box-shadow: inset 0 1.5px 2px var(--specular-rim),
+              inset 0 -1px 1px var(--specular-bounce),
+              var(--shadow-contact),
+              var(--shadow-ambient-soft),
+              var(--shadow-ambient-deep) !important;
+}
+
+/* ==========================================================================
+   3. 4类核心天气状态修正 (Weather Condition Modifiers)
+   ========================================================================== */
+
+/* --- 3.1 晴朗 (Clear) --- */
+html[data-ambience-weather="clear"] .ambience-overlay {
+  opacity: 0.68;
+}
+
+/* --- 3.2 多云 / 阴天 (Cloudy / Overcast) ---
+   柔和漫反射环境光，消解刺目强阴影，微凉清净 */
+html[data-ambience-weather="cloudy"] {
+  --ambience-overlay-bg: linear-gradient(180deg, rgba(210, 222, 230, 0.22) 0%, rgba(180, 195, 205, 0.16) 100%);
+  --ambience-blend-mode: soft-light;
+  --specular-rim: rgba(255, 255, 255, 0.8);
+  --shadow-ambient-soft: 0 6px 20px rgba(60, 75, 85, 0.08);
+}
+html[data-ambience-weather="cloudy"] .ambience-overlay {
+  opacity: 0.78;
+}
+
+/* --- 3.3 降雨 (Rain) ---
+   冷调水汽青灰泛光，卡片表面水润高光与湿润透亮折射 */
+html[data-ambience-weather="rain"] {
+  --ambience-overlay-bg: linear-gradient(180deg, rgba(45, 75, 105, 0.32) 0%, rgba(30, 55, 80, 0.4) 100%);
+  --ambience-blend-mode: multiply;
+  --specular-rim: rgba(210, 238, 255, 0.92);
+  --specular-rim-bevel: rgba(140, 190, 230, 0.4);
+}
+html[data-ambience-weather="rain"] .ambience-overlay {
+  opacity: 0.88;
+}
+html[data-ambience-weather="rain"] .glass-card {
+  box-shadow: inset 0 2px 4px rgba(220, 240, 255, 0.6),
+              inset 0 -1.5px 2px rgba(10, 30, 50, 0.18),
+              0 14px 44px rgba(20, 45, 70, 0.22);
+}
+
+/* --- 3.4 晨雾 / 薄雾 (Mist / Fog) ---
+   朦胧轻柔景深，柔焦微漫射 */
+html[data-ambience-weather="mist"] {
+  --ambience-overlay-bg: radial-gradient(circle at 50% 30%, rgba(230, 240, 245, 0.38) 0%, rgba(200, 215, 225, 0.28) 80%);
+  --ambience-blend-mode: lighten;
+  --card-blur: 20px;
+}
+html[data-ambience-weather="mist"] .ambience-overlay {
+  opacity: 0.85;
+  filter: blur(8px);
+}
+
+/* ==========================================================================
+   4. 晶莹毛玻璃卡片核心光感与悬浮流光 (Glassmorphism & Sheen Engine)
+   ========================================================================== */
+.glass-card {
+  position: relative;
+  overflow: hidden;
+  transition: background-color 0.35s ease,
+              border-color 0.35s ease,
+              box-shadow 0.35s ease,
+              transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* 卡片内部通透自然漫光层 */
+.glass-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  background: var(--card-surface-radiance);
+  opacity: 0.85;
+  transition: opacity 0.35s ease;
+  z-index: 0;
+}
+
+/* 交互悬浮掠光动画（如同自然阳光斜照滑过玻璃表面） */
+.glass-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -130%;
+  width: 90%;
+  height: 100%;
+  background: linear-gradient(
+    115deg,
+    transparent 0%,
+    transparent 35%,
+    var(--card-sheen-sweep-color, rgba(255, 255, 255, 0.3)) 50%,
+    transparent 65%,
+    transparent 100%
+  );
+  transform: skewX(-22deg);
+  pointer-events: none;
+  transition: left 0.75s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.5s ease;
+  border-radius: inherit;
+  opacity: 0;
+  z-index: 1;
+}
+
+.glass-card:hover::before {
+  left: 150%;
+  opacity: 1;
+}
+
+/* 确保卡片内部内容层级在流光层之上，保证文字锐利 */
+.glass-card > * {
+  position: relative;
+  z-index: 2;
+}
+
+/* 文字可读性微阴影保护应用 */
+.clock-time,
+.brand-title,
+.section-title,
+.weather-temp,
+.weather-condition,
+.cal-info-solar,
+.player-track-name {
+  text-shadow: var(--text-shadow-shield);
+}
+
+/* ==========================================================================
+   5. 夜间模式 (Dark Theme) 深度可读性与全组件自适应
+   ========================================================================== */
+
+/* 5.1 搜索区域夜间清晰度 */
+html[data-ambience-time="night"] .search-form {
+  background: rgba(14, 22, 34, 0.82);
+  border-color: rgba(255, 255, 255, 0.2);
+  box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.1), 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+html[data-ambience-time="night"] .search-form:focus-within {
+  background: rgba(18, 28, 44, 0.95);
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(160, 196, 108, 0.25), inset 0 1px 2px rgba(255, 255, 255, 0.15);
+}
+html[data-ambience-time="night"] .search-input {
+  color: #ffffff;
+}
+/* 5.1 搜索区域与时钟夜间清晰度 */
+html[data-ambience-time="night"] .clock-time {
+  color: #ffffff !important;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.95), 0 0 24px rgba(166, 204, 110, 0.25) !important;
+}
+html[data-ambience-time="night"] .clock-colon {
+  color: var(--primary) !important;
+  text-shadow: 0 0 12px var(--primary-glow) !important;
+}
+html[data-ambience-time="night"] .clock-seconds {
+  color: #a8bed4 !important;
+}
+html[data-ambience-time="night"] .clock-date-line {
+  color: #d6e5f4 !important;
+}
+
+html[data-ambience-time="night"] .search-form {
+  background: rgba(10, 16, 26, 0.85);
+  border-color: rgba(255, 255, 255, 0.22);
+  box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.1), 0 6px 22px rgba(0, 0, 0, 0.5);
+}
+html[data-ambience-time="night"] .search-form:focus-within {
+  background: rgba(14, 24, 38, 0.96);
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(166, 204, 110, 0.28), inset 0 1px 2px rgba(255, 255, 255, 0.15);
+}
+html[data-ambience-time="night"] .search-input {
+  color: #ffffff !important;
+}
+html[data-ambience-time="night"] .search-input::placeholder {
+  color: #8da0b6;
+}
+html[data-ambience-time="night"] .search-engine-tab {
+  color: #d6e3f0;
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.18);
+}
+html[data-ambience-time="night"] .search-engine-tab:hover {
+  background: rgba(255, 255, 255, 0.18);
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.32);
+}
+html[data-ambience-time="night"] .search-engine-tab.active {
+  background: var(--primary);
+  color: #0b111a;
+  border-color: var(--primary);
+  font-weight: 700;
+  box-shadow: 0 4px 14px var(--primary-glow);
+}
+
+/* 5.2 日历与天气卡片深色自适应 (高清晰度对比) */
+html[data-ambience-time="night"] .weather-temp {
+  color: #ffffff !important;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.95) !important;
+}
+html[data-ambience-time="night"] .weather-temp-range {
+  color: #c8ed8e;
+  background: rgba(166, 204, 110, 0.22);
+}
+html[data-ambience-time="night"] .weather-condition {
+  color: #e8f2fc !important;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.9) !important;
+}
+html[data-ambience-time="night"] .weather-location-wrap {
+  color: #ffffff !important;
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+html[data-ambience-time="night"] .weather-location-wrap:hover {
+  background: rgba(255, 255, 255, 0.18);
+  color: #ffffff;
+  border-color: var(--primary);
+}
+html[data-ambience-time="night"] .weather-chip {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.15);
+}
+html[data-ambience-time="night"] .chip-label {
+  color: #a8bed4 !important;
+}
+html[data-ambience-time="night"] .chip-val {
+  color: #ffffff !important;
+}
+html[data-ambience-time="night"] .weather-tip-strip {
+  background: transparent;
+  border-color: rgba(255, 255, 255, 0.15);
+  color: #e8f2fc !important;
+}
+html[data-ambience-time="night"] .tip-right {
+  color: #b0c4d8 !important;
+}
+html[data-ambience-time="night"] .cal-weather-divider {
+  background: rgba(255, 255, 255, 0.14);
+}
+
+/* 城市切换弹框 */
+html[data-ambience-time="night"] .weather-city-dialog {
+  background: rgba(18, 26, 38, 0.96);
+  border-color: rgba(255, 255, 255, 0.22);
+}
+html[data-ambience-time="night"] .weather-city-input {
+  background: rgba(10, 16, 24, 0.88);
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.22);
+}
+html[data-ambience-time="night"] .weather-city-input:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 2px rgba(166, 204, 110, 0.3);
+}
+html[data-ambience-time="night"] .btn-city-cancel {
+  background: rgba(255, 255, 255, 0.12);
+  color: #dce7f3;
+}
+
+/* 日历格子 */
+html[data-ambience-time="night"] .cal-current-label {
+  color: #ffffff !important;
+}
+html[data-ambience-time="night"] .cal-weekdays {
+  color: #b0c8e0 !important;
+}
+html[data-ambience-time="night"] .cal-weekday.is-weekend {
+  color: var(--primary) !important;
+}
+html[data-ambience-time="night"] .cal-cell {
+  background: transparent;
+  border-color: rgba(255, 255, 255, 0.18);
+}
+html[data-ambience-time="night"] .cal-cell:hover {
+  background: rgba(255, 255, 255, 0.16);
+  border-color: var(--primary);
+}
+html[data-ambience-time="night"] .cal-cell-day {
+  color: #ffffff !important;
+  font-weight: 800;
+}
+html[data-ambience-time="night"] .cal-cell-sub {
+  color: #a8bed4 !important;
+}
+html[data-ambience-time="night"] .cal-cell.is-other-month .cal-cell-day {
+  color: #64778c !important;
+}
+html[data-ambience-time="night"] .cal-cell.is-other-month .cal-cell-sub {
+  color: #55687d !important;
+}
+html[data-ambience-time="night"] .cal-cell.is-today {
+  background: var(--primary) !important;
+  border-color: var(--primary-dark) !important;
+  box-shadow: 0 4px 16px var(--primary-glow) !important;
+}
+html[data-ambience-time="night"] .cal-cell.is-today .cal-cell-day {
+  color: #0b111a !important;
+  font-weight: 800;
+}
+html[data-ambience-time="night"] .cal-cell.is-today .cal-cell-sub {
+  color: #17240f !important;
+  font-weight: 700;
+}
+html[data-ambience-time="night"] .cal-cell.is-selected:not(.is-today) {
+  background: rgba(166, 204, 110, 0.25);
+  border-color: var(--primary);
+}
+html[data-ambience-time="night"] .cal-cell.has-festival .cal-cell-sub {
+  color: #ff859d !important;
+}
+html[data-ambience-time="night"] .cal-cell.has-term .cal-cell-sub {
+  color: #98e872 !important;
+}
+
+/* 选中日期详情 */
+html[data-ambience-time="night"] .cal-selected-info {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.15);
+}
+html[data-ambience-time="night"] .cal-info-solar {
+  color: #ffffff !important;
+}
+html[data-ambience-time="night"] .cal-info-lunar {
+  color: #d0e2f4 !important;
+}
+html[data-ambience-time="night"] .cal-info-tag {
+  background: rgba(235, 87, 87, 0.24);
+  color: #ffa1b2;
+}
+html[data-ambience-time="night"] .cal-info-term-tag {
+  background: rgba(166, 204, 110, 0.24);
+  color: #bce37b;
+}
+
+/* 5.3 播放器与随身听深色自适应 */
+html[data-ambience-time="night"] .vinyl-disc {
+  border-color: rgba(255, 255, 255, 0.35);
+  box-shadow: inset 0 0 16px rgba(0, 0, 0, 0.9), 0 8px 24px rgba(0, 0, 0, 0.65);
+}
+html[data-ambience-time="night"] .player-song-title {
+  color: #ffffff !important;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.95);
+}
+html[data-ambience-time="night"] .player-song-meta {
+  color: #d2e4f5 !important;
+}
+html[data-ambience-time="night"] .btn-ctrl {
+  background: rgba(255, 255, 255, 0.1) !important;
+  border-color: rgba(255, 255, 255, 0.18) !important;
+  color: #ffffff !important;
+}
+html[data-ambience-time="night"] .btn-ctrl:hover {
+  background: rgba(255, 255, 255, 0.22) !important;
+  border-color: var(--primary);
+  color: #ffffff;
+}
+html[data-ambience-time="night"] .player-progress-wrap {
+  color: #9eb8d1 !important;
+}
+html[data-ambience-time="night"] .player-bar-track {
+  background: rgba(255, 255, 255, 0.14);
+}
+
+/* 5.4 便签与待办事项深色适配 */
+html[data-ambience-time="night"] .section-title {
+  color: #ffffff !important;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.95) !important;
+}
+html[data-ambience-time="night"] .memo-todo-tab {
+  color: #c4d9ed !important;
+  text-shadow: none !important;
+}
+html[data-ambience-time="night"] .memo-todo-tab.active {
+  color: var(--primary) !important;
+}
+html[data-ambience-time="night"] .memo-textarea,
+html[data-ambience-time="night"] .todo-input,
+html[data-ambience-time="night"] .nav-link,
+html[data-ambience-time="night"] .cal-nav-btn,
+html[data-ambience-time="night"] .cal-today-btn {
+  color: #ffffff !important;
+  background: transparent !important;
+  border-color: rgba(255, 255, 255, 0.18) !important;
+}
+html[data-ambience-time="night"] .memo-textarea:focus,
+html[data-ambience-time="night"] .todo-input:focus {
+  background: rgba(14, 22, 34, 0.9) !important;
+  border-color: var(--primary) !important;
+  box-shadow: 0 0 0 3px rgba(166, 204, 110, 0.28) !important;
+}
+html[data-ambience-time="night"] .todo-input::placeholder,
+html[data-ambience-time="night"] .memo-textarea::placeholder {
+  color: #7e94ab !important;
+}
+html[data-ambience-time="night"] .todo-item {
+  background: transparent !important;
+  border-color: rgba(255, 255, 255, 0.12) !important;
+  color: #ffffff !important;
+}
+html[data-ambience-time="night"] .todo-item:hover {
+  background: rgba(255, 255, 255, 0.14) !important;
+}
+html[data-ambience-time="night"] .todo-text {
+  color: #ffffff !important;
+  font-weight: 600;
+}
+html[data-ambience-time="night"] .todo-empty {
+  color: #9eb8d1 !important;
+}
+html[data-ambience-time="night"] .memo-hint {
+  color: #8da0b5 !important;
+}
+
+/* 5.5 常用网址磁贴与顶栏导航深色适配 */
+html[data-ambience-time="night"] .bookmark-item:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+html[data-ambience-time="night"] .bookmark-title {
+  color: #ffffff !important;
+  font-weight: 700 !important;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.95) !important;
+}
+html[data-ambience-time="night"] .bookmark-icon.add-icon {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.25);
+  color: #d2dde8;
+}
+html[data-ambience-time="night"] .topbar-center {
+  background: rgba(18, 26, 38, 0.8);
+  border-color: rgba(255, 255, 255, 0.16);
+}
+html[data-ambience-time="night"] .brand-title {
+  color: #ffffff !important;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.95);
+}
+html[data-ambience-time="night"] .brand-badge {
+  background: rgba(166, 204, 110, 0.2);
+  color: #bce37b;
+  border-color: rgba(166, 204, 110, 0.35);
+}
+html[data-ambience-time="night"] .btn-action {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.18);
+  color: #ffffff !important;
+}
+html[data-ambience-time="night"] .btn-action:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: #ffffff !important;
+  border-color: rgba(255, 255, 255, 0.35);
+}
+html[data-ambience-time="night"] .settings-drawer {
+  background: rgba(14, 21, 31, 0.98);
+  color: #ffffff;
+}
+
+/* ==========================================================================
+   6. 顶栏独立全新光影控制按钮 (Topbar Ambience Trigger Button)
+   ========================================================================== */
+.btn-ambience {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background: var(--surface);
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius-sm);
+  padding: 6px 13px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text);
+  cursor: pointer;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: inset 0 1px 1px var(--specular-rim),
+              0 3px 10px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+}
+.btn-ambience:hover {
+  background: var(--surface-hover);
+  border-color: var(--primary);
+  transform: translateY(-1.5px);
+  box-shadow: inset 0 1.5px 2px var(--specular-rim),
+              0 6px 18px var(--primary-glow);
+}
+.btn-ambience:active {
+  transform: translateY(0);
+}
+.btn-ambience.active {
+  background: var(--primary-soft);
+  border-color: var(--primary);
+  color: var(--primary-dark);
+}
+.ambience-badge-icon {
+  display: inline-block;
+  font-size: 15px;
+  line-height: 1;
+  transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+.btn-ambience:hover .ambience-badge-icon {
+  transform: scale(1.25) rotate(14deg);
+}
+.ambience-status-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #34c759;
+  box-shadow: 0 0 8px #34c759;
+  display: inline-block;
+}
+.ambience-status-dot.manual {
+  background: #ff9500;
+  box-shadow: 0 0 8px #ff9500;
+}
+.ambience-status-dot.disabled {
+  background: #8e8e93;
+  box-shadow: none;
+}
+
+/* ==========================================================================
+   7. 时空光影独立控制面板 (Glass Popover)
+   ========================================================================== */
+.ambience-popover-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 998;
+  background: rgba(0, 0, 0, 0.28);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+.ambience-popover-overlay.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.ambience-popover {
+  position: fixed;
+  top: 68px;
+  right: 24px;
+  width: 390px;
+  max-width: calc(100vw - 32px);
+  max-height: calc(100vh - 90px);
+  overflow-y: auto;
+  z-index: 999;
+  background: var(--surface);
+  backdrop-filter: blur(28px) saturate(160%);
+  -webkit-backdrop-filter: blur(28px) saturate(160%);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius-lg);
+  box-shadow: inset 0 1.5px 2px var(--specular-rim),
+              var(--shadow-lg),
+              0 0 0 1px rgba(255, 255, 255, 0.35);
+  padding: 22px;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-12px) scale(0.96);
+  transition: opacity 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  color: var(--text);
+  font-family: inherit;
+}
+.ambience-popover.show {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0) scale(1);
+}
+
+/* 面板头部 */
+.ambience-panel-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--line);
+}
+.ambience-panel-title-wrap {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.ambience-panel-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.ambience-panel-badge {
+  font-size: 11px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: var(--primary-soft);
+  color: var(--primary-dark);
+  font-weight: 600;
+}
+.ambience-panel-close {
+  background: transparent;
+  border: none;
+  font-size: 18px;
+  color: var(--text-muted);
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 6px;
+  line-height: 1;
+  transition: all 0.2s ease;
+}
+.ambience-panel-close:hover {
+  background: rgba(0, 0, 0, 0.08);
+  color: var(--text);
+}
+
+/* 现实天气卡片 (Sync Status Card) */
+.ambience-sync-card {
+  background: var(--card-inner-bg);
+  border: 1px solid var(--card-inner-border);
+  border-radius: var(--radius-md);
+  padding: 12px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 18px;
+  transition: all 0.25s ease;
+}
+.ambience-sync-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.ambience-sync-city-wrap {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text);
+}
+.ambience-sync-details {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+.ambience-sync-action-btn {
+  background: var(--primary);
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 6px 13px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+  box-shadow: 0 3px 8px var(--primary-glow);
+}
+.ambience-sync-action-btn:hover {
+  background: var(--primary-dark);
+  transform: translateY(-1px);
+  box-shadow: 0 5px 14px var(--primary-glow);
+}
+.ambience-sync-action-btn.synced {
+  background: var(--primary-soft);
+  color: var(--primary-dark);
+  box-shadow: none;
+}
+
+/* 分区通用标题 */
+.ambience-section-label {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--text-muted);
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* 6组情境氛围预设包 (Presets Grid) */
+.ambience-presets-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 9px;
+  margin-bottom: 20px;
+}
+.ambience-preset-card {
+  background: var(--card-inner-bg);
+  border: 1px solid var(--card-inner-border);
+  border-radius: var(--radius-sm);
+  padding: 10px 12px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-align: left;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+  overflow: hidden;
+}
+.ambience-preset-card:hover {
+  background: var(--surface-hover);
+  border-color: var(--primary);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px var(--primary-glow);
+}
+.ambience-preset-card.active {
+  background: var(--primary-soft);
+  border-color: var(--primary);
+  box-shadow: 0 0 0 2px var(--primary-glow);
+}
+.ambience-preset-icon {
+  font-size: 22px;
+  line-height: 1;
+  flex-shrink: 0;
+}
+.ambience-preset-text {
+  display: flex;
+  flex-direction: column;
+}
+.ambience-preset-name {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text);
+}
+.ambience-preset-desc {
+  font-size: 11px;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+/* 独立矩阵选择 (Time & Weather Matrix) */
+.ambience-matrix-row {
+  margin-bottom: 16px;
+}
+.ambience-matrix-btns {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 6px;
+}
+.ambience-matrix-btn {
+  background: var(--card-inner-bg);
+  border: 1px solid var(--card-inner-border);
+  border-radius: 8px;
+  padding: 8px 4px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-soft);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  transition: all 0.2s ease;
+}
+.ambience-matrix-btn span.emoji {
+  font-size: 16px;
+  line-height: 1;
+}
+.ambience-matrix-btn:hover {
+  background: var(--surface-hover);
+  border-color: var(--line-strong);
+  color: var(--text);
+}
+.ambience-matrix-btn.active {
+  background: var(--primary);
+  color: #ffffff;
+  border-color: var(--primary-dark);
+  box-shadow: 0 3px 10px var(--primary-glow);
+}
+
+/* 偏好记忆与纯净节能开关 (Bottom Options) */
+.ambience-options-wrap {
+  padding-top: 14px;
+  border-top: 1px solid var(--line);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.ambience-switch-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 13px;
+  color: var(--text);
+}
+.ambience-switch-label {
+  display: flex;
+  flex-direction: column;
+}
+.ambience-switch-sub {
+  font-size: 11px;
+  color: var(--text-muted);
+}
+/* 原生纯CSS精美Toggle Switch */
+.ambience-toggle {
+  position: relative;
+  display: inline-block;
+  width: 44px;
+  height: 24px;
+  flex-shrink: 0;
+}
+.ambience-toggle input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.ambience-toggle-slider {
+  position: absolute;
+  cursor: pointer;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.16);
+  border-radius: 24px;
+  transition: 0.3s;
+}
+.ambience-toggle-slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  transition: 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.ambience-toggle input:checked + .ambience-toggle-slider {
+  background-color: var(--primary);
+}
+.ambience-toggle input:checked + .ambience-toggle-slider:before {
+  transform: translateX(20px);
+}
+
+/* ==========================================================================
+   8. 纯净节能模式 (Disabled Ambience State)
+   ========================================================================== */
+html[data-ambience-disabled="true"] .ambience-overlay {
+  opacity: 0 !important;
+  display: none !important;
+}
+html[data-ambience-disabled="true"] .ambience-canvas {
+  opacity: 0 !important;
+  display: none !important;
+}
+
+/* ==========================================================================
+   9. 动效可访问性降级 (prefers-reduced-motion)
+   ========================================================================== */
+@media (prefers-reduced-motion: reduce) {
+  html,
+  body,
+  .ambience-overlay,
+  .ambience-popover,
+  .btn-ambience,
+  .glass-card::before,
+  .glass-card::after {
+    transition: none !important;
+    animation: none !important;
+  }
+  .glass-card::before {
+    display: none !important;
+  }
+  .ambience-canvas {
+    display: none !important;
+  }
+}
+
+/* ==========================================================================
+   night（静夜）补充：让设置抽屉 / 日历 / 待办 / 备忘 / 弹窗等浮层一并切换暗色
+   ========================================================================== */
+/* 设置抽屉/弹窗夜间保留深色底（贴合圆角边缘），日历/待办/备忘面板透明（去黑块） */
+html[data-ambience-time="night"] dialog,
+html[data-ambience-time="night"] .settings-dialog,
+html[data-ambience-time="night"] #settingsDrawer {
+  background: var(--surface) !important;
+  background-image: none !important;
+  color: var(--text);
+  border-color: var(--line) !important;
+  backdrop-filter: blur(24px) saturate(1.3);
+  -webkit-backdrop-filter: blur(24px) saturate(1.3);
+}
+html[data-ambience-time="night"] .calendar-panel,
+html[data-ambience-time="night"] .todo-panel,
+html[data-ambience-time="night"] .memo-panel,
+html[data-ambience-time="night"] .calendar-panel .panel-title,
+html[data-ambience-time="night"] .calendar-wrap,
+html[data-ambience-time="night"] .todo-panel .panel-title,
+html[data-ambience-time="night"] .memo-panel .panel-title {
+  background: transparent !important;
+  background-image: none !important;
+  color: var(--text);
+  border-color: var(--line) !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+
+/* 设置抽屉内部标题/文字、输入框同步暗色 */
+html[data-ambience-time="night"] .settings-section-title,
+html[data-ambience-time="night"] .settings-label,
+html[data-ambience-time="night"] .dialog-title {
+  color: var(--text) !important;
+}
+
+/* 夜间设置页按钮适配：浅色按钮看不清 → 深色清晰 */
+html[data-ambience-time="night"] .btn-secondary {
+  background: rgba(255, 255, 255, 0.12) !important;
+  color: #ffffff !important;
+  border-color: rgba(255, 255, 255, 0.28) !important;
+}
+html[data-ambience-time="night"] .btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.22) !important;
+  border-color: rgba(255, 255, 255, 0.45) !important;
+}
+html[data-ambience-time="night"] .btn-primary {
+  background: var(--primary) !important;
+  color: #ffffff !important;
+  border-color: var(--primary-dark) !important;
+}
+
+html[data-ambience-time="night"] #settingsDrawer .settings-card,
+html[data-ambience-time="night"] #settingsDrawer .settings-section,
+html[data-ambience-time="night"] #settingsDrawer input,
+html[data-ambience-time="night"] #settingsDrawer select,
+html[data-ambience-time="night"] #settingsDrawer textarea {
+  background: var(--surface-solid) !important;
+  color: var(--text) !important;
+  border-color: var(--line-strong) !important;
+}
+
+html[data-ambience-time="night"] dialog::backdrop {
+  background: rgba(0, 0, 0, 0.55) !important;
+}
