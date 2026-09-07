@@ -2661,6 +2661,71 @@
       0%, 100% { transform: translateY(0); }
       50% { transform: translateY(-6px); }
     }
+
+    /* 筛选抽屉打开时锁住背景滚动，并让抽屉所在层高于播放器与桌宠。 */
+    html.filter-drawer-open,
+    body.filter-drawer-open {
+      overflow: hidden;
+      overscroll-behavior: none;
+    }
+    body.filter-drawer-open .app {
+      z-index: 100000;
+    }
+
+    @media (max-width: 768px) {
+      /* iOS/Android 上单靠 overflow:hidden 仍可能滚动穿透，固定 body 才能可靠锁定。 */
+      body.filter-drawer-open {
+        position: fixed;
+        inset: 0;
+        width: 100%;
+      }
+      body.filter-drawer-open .filter-card.filter-drawer {
+        touch-action: pan-y;
+        overscroll-behavior: contain;
+        max-height: min(80dvh, calc(100dvh - 24px));
+        padding-bottom: max(28px, env(safe-area-inset-bottom));
+      }
+      body.filter-drawer-open .drawer-footer {
+        position: sticky;
+        bottom: 0;
+        z-index: 2;
+        margin-inline: -16px;
+        padding: 10px 16px max(12px, env(safe-area-inset-bottom));
+        background: rgba(244, 246, 232, 0.98);
+      }
+
+      /* 移动端避免大量毛玻璃、固定背景和预分配合成层持续拖慢滚动。 */
+      html, body {
+        background-attachment: scroll, scroll, scroll, scroll;
+      }
+      #ambientAuroraBg,
+      #dappledSunlight {
+        display: none !important;
+      }
+      .player-bar,
+      .tabs,
+      .sticky-toolbar,
+      .sticky-toolbar .controls-card {
+        backdrop-filter: none !important;
+        -webkit-backdrop-filter: none !important;
+      }
+      .tabs,
+      .sticky-toolbar .controls-card {
+        background: rgba(244, 246, 232, 0.96) !important;
+      }
+      .song-item,
+      .history-item,
+      .favorite-item {
+        backdrop-filter: none !important;
+        -webkit-backdrop-filter: none !important;
+        background: var(--surface) !important;
+        background-image: none !important;
+        box-shadow: none !important;
+        will-change: auto !important;
+        transform: none !important;
+        transform-style: flat !important;
+      }
+    }
   </style>
   <script>window.APP_BASE_URL = "./";</script>
 </head>
@@ -3062,7 +3127,7 @@
 
   <script src="js/shared.js?v=24" defer></script>
   <script src="js/data.js?v=24" defer></script>
-  <script src="js/app.js?v=68" defer></script>
+  <script src="js/app.js?v=69" defer></script>
   <script src="js/motion.js?v=17" defer></script>
 </body>
 </html>

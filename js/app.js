@@ -726,7 +726,6 @@ const PLAY_MODE_MAP = Object.fromEntries(PLAY_MODES.map(m => [m.key, m]));
 
 const player = {
   audio: new Audio(),
-  preloadAudio: new Audio(), // 预加载下一首用（不发声），提升切歌响应
   queue: [],        // 当前播放队列（song 对象数组）
   index: -1,
   playMode: 'list', // 'random' | 'single' | 'list'
@@ -737,7 +736,6 @@ const player = {
 };
 player.audio.preload = 'auto';
 player.audio.volume = player.volume;
-player.preloadAudio.preload = 'auto';
 
 // 进度条拖动状态：拖动中只预览，松开后才真正跳转
 let seekDragging = false;
@@ -1010,35 +1008,6 @@ function playSongAt(index) {
     updatePlayerUI();
   });
   updatePlayerUI();
-  preloadNextSong();
-}
-
-// 播放当前曲目后，按播放模式预加载下一首，切歌/自动下一首时秒开
-function preloadNextSong() {
-  try {
-    const len = player.queue.length;
-    if (!len || !player.preloadAudio) return;
-    let nextIndex;
-    if (player.playMode === 'list') {
-      nextIndex = player.index + 1;
-      if (nextIndex >= len) nextIndex = 0;
-    } else if (player.playMode === 'random') {
-      if (player.shuffleOrder && player.shuffleOrder.length > 1) {
-        let pos = player.shufflePos + 1;
-        if (pos >= player.shuffleOrder.length) pos = 0; // 到末尾回到洗牌后第一首（重新一轮）
-        nextIndex = player.shuffleOrder[pos];
-      } else {
-        nextIndex = player.index;
-      }
-    } else {
-      return; // 单曲循环不需要预载下一首
-    }
-    const next = player.queue[nextIndex];
-    const url = next && audioUrlOf(next);
-    if (url && player.preloadAudio.src !== url) {
-      player.preloadAudio.src = url;
-    }
-  } catch (e) { /* 预载失败不影响播放 */ }
 }
 
 function startPlaybackFrom(song) {
@@ -2706,8 +2675,28 @@ function bindEvents() {
     dom.searchInput.focus();
   });
 
+  let filterDrawerScrollY = 0;
+
+  function lockFilterDrawerScroll() {
+    filterDrawerScrollY = window.scrollY || document.documentElement.scrollTop || 0;
+    document.documentElement.classList.add('filter-drawer-open');
+    document.body.classList.add('filter-drawer-open');
+    // 手机浏览器需要固定 body 才能彻底阻止遮罩后的列表滚动穿透。
+    if (window.matchMedia('(max-width: 768px)').matches) {
+      document.body.style.top = `-${filterDrawerScrollY}px`;
+    }
+  }
+
+  function unlockFilterDrawerScroll() {
+    document.documentElement.classList.remove('filter-drawer-open');
+    document.body.classList.remove('filter-drawer-open');
+    document.body.style.top = '';
+    window.scrollTo(0, filterDrawerScrollY);
+  }
+
   function openFilterDrawer() {
     state.filtersVisible = true;
+    lockFilterDrawerScroll();
     dom.filterCard.style.display = 'flex';
     requestAnimationFrame(() => {
       dom.filterCard.classList.add('open');
@@ -2720,6 +2709,7 @@ function bindEvents() {
     state.filtersVisible = false;
     dom.filterCard.classList.remove('open');
     if (dom.filterDrawerBackdrop) dom.filterDrawerBackdrop.classList.remove('show');
+    unlockFilterDrawerScroll();
     setTimeout(() => {
       if (!state.filtersVisible) dom.filterCard.style.display = 'none';
     }, 240);
