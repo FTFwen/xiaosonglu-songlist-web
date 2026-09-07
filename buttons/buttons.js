@@ -300,8 +300,10 @@
     const meta = playMode === 'single' ? { icon: 'retweet', label: '单曲循环', next: 'sequence' }
       : playMode === 'sequence' ? { icon: 'sync', label: '顺序播放', next: 'single' }
       : { icon: '', label: '播放一次', next: 'sequence' };
-    // 播放一次 图标用 →（文本箭头），其余用 svg icon
-    pbMode.innerHTML = meta.icon ? ico(meta.icon) : '<span class="mode-once">→</span>';
+    // 播放一次图标用 →；手机端同时显示模式名称，提高控制辨识度。
+    const modeIcon = meta.icon ? ico(meta.icon) : '<span class="mode-once">→</span>';
+    const shortLabel = playMode === 'once' ? '一次' : playMode === 'sequence' ? '顺序' : '单曲';
+    pbMode.innerHTML = `${modeIcon}<span class="pc-mode-label">${shortLabel}</span>`;
     pbMode.classList.toggle('single', playMode === 'single');
     pbMode.title = `播放模式：${meta.label}，点击切换`;
   }
@@ -328,12 +330,19 @@
   }
   // 停止所有（主播放器 + 重叠叠加的）
   function stopAllAudio() {
-    audioPlayer.pause(); audioPlayer.currentTime = 0;
+    audioPlayer.pause();
+    audioPlayer.currentTime = 0;
+    audioPlayer.removeAttribute('src');
+    audioPlayer.load();
     overlayAudios.forEach(a => { try { a.pause(); a.currentTime = 0; } catch (e) {} });
     overlayAudios = [];
     playQueue = [];
     document.querySelectorAll('.sound-btn.playing').forEach(c => c.classList.remove('playing'));
     currentBtn = null;
+    pbName.textContent = '还没有播放声音';
+    pbProgress.style.width = '0%';
+    pbTime.textContent = '0.0 / 0.0s';
+    updatePlayerUI();
   }
 
   // 顺序播放：找当前按钮在它所属分类里的下一个有音频的磁帖
