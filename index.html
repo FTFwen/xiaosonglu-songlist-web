@@ -2785,26 +2785,63 @@
         will-change: auto !important;
       }
 
-      /* 手机播放器分为歌曲信息和控制区两行，避免歌名被进度条与按钮挤到零宽。 */
+      /* 手机播放器：一行歌曲信息 + 一行核心控制，去掉重复定时入口和装饰频谱。 */
       body.has-player {
-        padding-bottom: 100px;
+        padding-bottom: 88px;
       }
 
       body.has-player .back-top {
-        bottom: 102px;
+        bottom: 94px;
+      }
+
+      /* 右侧三个入口收成横向小工具条，避免与播放器相撞，也不再纵向遮住多张歌曲卡片。 */
+      body.has-player .mobile-fabs {
+        right: 10px;
+        bottom: calc(96px + env(safe-area-inset-bottom));
+        flex-direction: row;
+        gap: 5px;
+        padding: 4px;
+        border: 1px solid rgba(138,154,78,0.24);
+        border-radius: 999px;
+        background: rgba(247,249,236,0.96);
+        box-shadow: 0 3px 12px rgba(61,74,32,0.14);
+      }
+
+      body.has-player .mobile-fab {
+        width: 36px;
+        height: 36px;
+        box-shadow: none;
+      }
+
+      body.has-player .mobile-fab .icon {
+        width: 17px;
+        height: 17px;
+      }
+
+      body.has-player .mobile-fab.timer-running {
+        animation: none;
+      }
+
+      body.has-player .songlist-panel.mobile-open,
+      body.has-player .playlist-panel.mobile-open,
+      body.has-player .timer-popover {
+        bottom: calc(148px + env(safe-area-inset-bottom));
       }
 
       html body .player-bar {
         display: grid !important;
-        grid-template-columns: 30px 36px 30px minmax(40px, 1fr) 30px 30px 30px;
+        grid-template-columns: 30px 36px 30px minmax(56px, 1fr) 30px 30px;
         grid-template-areas:
-          "info info info info info info info"
-          "prev toggle next progress mode favorite timer";
+          "info info info info info info"
+          "prev toggle next progress mode favorite";
         align-items: center;
         column-gap: 6px;
-        row-gap: 6px;
-        padding: 8px 10px;
-        border-radius: 18px;
+        row-gap: 5px;
+        bottom: max(8px, env(safe-area-inset-bottom));
+        padding: 7px 10px 8px;
+        border-radius: 16px;
+        background: rgba(247,249,236,0.98) !important;
+        box-shadow: 0 5px 18px rgba(61,74,32,0.18) !important;
       }
 
       .player-bar #playerPrevBtn { grid-area: prev; }
@@ -2814,13 +2851,11 @@
       .player-bar .player-progress { grid-area: progress; }
       .player-bar #playerShuffleBtn { grid-area: mode; }
       .player-bar #playerFavBtn { grid-area: favorite; }
-      .player-bar #playerTimerWrap { grid-area: timer; }
 
       .player-bar .player-info {
         width: 100%;
         min-width: 0;
-        padding: 0 4px 5px;
-        border-bottom: 1px solid rgba(138,154,78,0.18);
+        padding: 0 2px;
       }
 
       .player-bar .player-name {
@@ -2829,16 +2864,12 @@
         line-height: 1.35;
       }
 
-      .player-bar .player-name::before {
-        content: '♫';
-        margin-right: 6px;
-        color: var(--primary);
-        font-size: 12px;
-      }
-
       .player-bar .player-artist,
-      .player-bar .player-progress .player-time {
-        display: none;
+      .player-bar .player-progress .player-time,
+      .player-bar .player-timer-wrap,
+      .player-bar .player-volume,
+      .player-bar .player-audio-spectrum {
+        display: none !important;
       }
 
       .player-bar .player-progress {
@@ -2846,15 +2877,16 @@
         gap: 0;
       }
 
-      .player-bar .player-btn,
-      .player-bar .player-timer-btn {
+      .player-bar .player-btn {
         width: 30px;
         height: 30px;
+        box-shadow: none;
       }
 
       .player-bar .player-btn.primary {
         width: 36px;
         height: 36px;
+        box-shadow: none;
       }
 
       /* 手机端高级筛选：改为独立滚动的全高面板，头部和操作区始终可见。 */
