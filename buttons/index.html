@@ -822,6 +822,97 @@
       backdrop-filter: blur(6px);
       -webkit-backdrop-filter: blur(6px);
     }
+
+    /* 手机端性能模式：避免长列表滚动时反复重绘固定背景与数十个毛玻璃磁贴 */
+    @media (max-width: 768px) {
+      html, body {
+        background-image: linear-gradient(160deg, rgba(242,245,226,0.72) 0%, rgba(231,238,205,0.72) 45%, rgba(219,229,184,0.72) 100%) !important;
+        background-attachment: scroll !important;
+      }
+
+      body::before {
+        content: '';
+        position: absolute;
+        z-index: 0;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100vh;
+        pointer-events: none;
+        background: url('../assets/bg-mobile-person.webp') right -150px bottom -350px / auto 100vh no-repeat;
+      }
+
+      #ambientAuroraBg,
+      #ambientBreezeCanvas,
+      #dappledSunlight {
+        display: none !important;
+      }
+
+      .companion-pet,
+      .companion-pet-wrap,
+      .companion-badge {
+        animation: none !important;
+        filter: none !important;
+        will-change: auto !important;
+      }
+
+      .banner,
+      .player-card,
+      .sound-btn,
+      .admin-panel,
+      .admin-panel .admin-card,
+      .admin-input,
+      .admin-item {
+        backdrop-filter: none !important;
+        -webkit-backdrop-filter: none !important;
+      }
+
+      html body .sound-btn,
+      html body .sound-btn:hover,
+      html body .sound-btn.playing {
+        background: rgba(255,255,255,0.9) !important;
+        background-image: none !important;
+        box-shadow: none !important;
+      }
+
+      html body .sound-btn {
+        will-change: auto !important;
+        transform: none !important;
+        transform-style: flat !important;
+        transition: border-color 0.12s ease, background-color 0.12s ease !important;
+      }
+
+      html body .sound-btn::after,
+      html body .sound-btn.playing::after {
+        display: none !important;
+      }
+
+      html body .sound-btn:active {
+        transform: scale(0.985) !important;
+      }
+
+      .player-card {
+        background: rgba(244,246,232,0.96) !important;
+        box-shadow: 0 4px 12px rgba(122,136,70,0.12) !important;
+      }
+
+      .player-card .pc-progress {
+        transition: none !important;
+      }
+
+      .banner {
+        box-shadow: 0 6px 18px rgba(45,55,22,0.14) !important;
+      }
+
+      .cat-badge {
+        box-shadow: none;
+      }
+
+      .cat-section {
+        content-visibility: auto;
+        contain-intrinsic-size: auto 560px;
+      }
+    }
   </style>
   <link rel="stylesheet" href="../css/motion.css?v=17">
 </head>
