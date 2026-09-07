@@ -602,14 +602,21 @@ function applySongFilters() {
 
   rows.sort((a, b) => compareSongs(a, b, state.songFilters.sortField, state.songFilters.sortDir));
   state.filteredSongs = rows;
-  hydrateFavoriteList();
 
-  renderSongs();
-  renderFavorites();
-  if (state.songDataUpdatedAt) {
-    updateSongMetaText(state.songDataUpdatedAt, state.songDataFromCache);
-  } else {
-    updateSongMetaText(null, false);
+  // 手机筛选抽屉打开期间只更新筛选状态和结果数量；关闭后再统一重绘歌曲卡片。
+  // 避免每点一次标签都在遮罩后面重建整份长列表，显著降低操作卡顿。
+  const deferVisualRender = state.filtersVisible
+    && window.matchMedia
+    && window.matchMedia('(max-width: 768px)').matches;
+  if (!deferVisualRender) {
+    hydrateFavoriteList();
+    renderSongs();
+    renderFavorites();
+    if (state.songDataUpdatedAt) {
+      updateSongMetaText(state.songDataUpdatedAt, state.songDataFromCache);
+    } else {
+      updateSongMetaText(null, false);
+    }
   }
   syncFilterSummary();
 }
@@ -2703,22 +2710,35 @@ function bindEvents() {
     state.filtersVisible = true;
     lockFilterDrawerScroll();
     dom.filterCard.style.display = 'flex';
-    requestAnimationFrame(() => {
+    if (window.matchMedia('(max-width: 768px)').matches) {
       dom.filterCard.classList.add('open');
       if (dom.filterDrawerBackdrop) dom.filterDrawerBackdrop.classList.add('show');
-    });
+    } else {
+      requestAnimationFrame(() => {
+        dom.filterCard.classList.add('open');
+        if (dom.filterDrawerBackdrop) dom.filterDrawerBackdrop.classList.add('show');
+      });
+    }
     syncFilterSummary();
   }
 
   function closeFilterDrawer() {
+    const mobileDrawer = window.matchMedia('(max-width: 768px)').matches;
     state.filtersVisible = false;
     dom.filterCard.classList.remove('open');
     if (dom.filterDrawerBackdrop) dom.filterDrawerBackdrop.classList.remove('show');
-    unlockFilterDrawerScroll();
-    setTimeout(() => {
-      if (!state.filtersVisible) dom.filterCard.style.display = 'none';
-    }, 240);
-    syncFilterSummary();
+    if (mobileDrawer) {
+      // 手机端不等待退场动画：先移除高层面板并恢复滚动，再一次性渲染筛选结果。
+      dom.filterCard.style.display = 'none';
+      unlockFilterDrawerScroll();
+      requestAnimationFrame(() => applySongFilters());
+    } else {
+      unlockFilterDrawerScroll();
+      setTimeout(() => {
+        if (!state.filtersVisible) dom.filterCard.style.display = 'none';
+      }, 240);
+      syncFilterSummary();
+    }
   }
 
   dom.toggleFilterBtn.addEventListener('click', () => {
