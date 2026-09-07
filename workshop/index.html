@@ -398,7 +398,12 @@
       font-size: 11px;
       font-weight: 700;
       line-height: 1.2;
+      text-decoration: none;
+      cursor: pointer;
+      transition: transform 0.16s ease, background 0.16s ease;
     }
+    .home-live-status .live-status-badge:hover { transform: translateY(-1px); }
+    .home-live-status .live-status-badge:focus-visible { outline: 2px solid rgba(79,119,47,0.6); outline-offset: 2px; }
     .home-live-status .live-status-dot {
       width: 7px;
       height: 7px;
@@ -1817,7 +1822,7 @@
     <!-- 1. 时钟与聚合搜索区域 -->
     <section class="glass-card hero-search-card" id="widgetSearch">
       <div class="home-live-status is-loading" data-live-status aria-live="polite">
-        <span class="live-status-badge"><span class="live-status-dot" aria-hidden="true"></span><span data-live-label>状态获取中</span></span>
+        <a class="live-status-badge" href="https://live.bilibili.com/1727071052" target="_blank" rel="noopener noreferrer" title="在新标签页打开小松绿直播间"><span class="live-status-dot" aria-hidden="true"></span><span data-live-label>状态获取中</span></a>
         <span class="live-status-title" data-live-title>正在读取直播标题…</span>
       </div>
       <div class="clock-time">

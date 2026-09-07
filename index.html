@@ -336,8 +336,14 @@
       border: 1px solid rgba(255,255,255,0.3);
       border-radius: 999px;
       background: rgba(255,255,255,0.14);
+      color: inherit;
       font-weight: 700;
+      text-decoration: none;
+      cursor: pointer;
+      transition: transform 0.16s ease, background 0.16s ease;
     }
+    .header-live-status .live-status-badge:hover { transform: translateY(-1px); }
+    .header-live-status .live-status-badge:focus-visible { outline: 2px solid rgba(255,255,255,0.8); outline-offset: 2px; }
     .header-live-status .live-status-dot {
       width: 7px;
       height: 7px;
@@ -3157,7 +3163,7 @@
           <div class="title-main">
             <h1>小松绿歌单</h1>
             <div class="header-live-status is-loading" data-live-status aria-live="polite">
-              <span class="live-status-badge"><span class="live-status-dot" aria-hidden="true"></span><span data-live-label>状态获取中</span></span>
+              <a class="live-status-badge" href="https://live.bilibili.com/1727071052" target="_blank" rel="noopener noreferrer" title="在新标签页打开小松绿直播间"><span class="live-status-dot" aria-hidden="true"></span><span data-live-label>状态获取中</span></a>
               <span class="live-status-title" data-live-title>正在读取直播标题…</span>
             </div>
           </div>
