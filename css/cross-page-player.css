@@ -1,0 +1,201 @@
+/* 全站歌曲续播条：用于按钮墙与 24 点，接续歌单页正在播放的歌曲。 */
+.cross-page-song-player[hidden] {
+  display: none !important;
+}
+
+.cross-page-song-player {
+  position: fixed;
+  z-index: 1100;
+  right: 16px;
+  bottom: max(12px, env(safe-area-inset-bottom));
+  left: 50%;
+  width: min(900px, calc(100vw - 32px));
+  min-height: 64px;
+  transform: translateX(-50%);
+  display: grid;
+  grid-template-columns: 34px 40px 34px minmax(170px, 1fr) minmax(180px, 1.4fr);
+  align-items: center;
+  gap: 8px;
+  padding: 9px 13px;
+  border: 1px solid rgba(138,154,78,0.38);
+  border-radius: 18px;
+  background: rgba(247,249,236,0.98);
+  color: #3f4928;
+  box-shadow: 0 8px 24px rgba(55,67,29,0.2);
+  font-family: "Microsoft YaHei", "PingFang SC", sans-serif;
+}
+
+.cross-page-song-player button {
+  width: 34px;
+  height: 34px;
+  padding: 0;
+  display: inline-grid;
+  place-items: center;
+  border: 1px solid rgba(138,154,78,0.34);
+  border-radius: 50%;
+  background: rgba(255,255,255,0.78);
+  color: #65713d;
+  font: inherit;
+  font-size: 17px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.cross-page-song-player button:hover {
+  border-color: #8a9a4e;
+  background: #fff;
+  color: #4f5d2e;
+}
+
+.cross-page-song-player button:focus-visible,
+.cross-page-song-player input:focus-visible {
+  outline: 2px solid rgba(111,125,61,0.62);
+  outline-offset: 2px;
+}
+
+.cross-page-song-player .xsp-toggle {
+  width: 40px;
+  height: 40px;
+  border-color: #7d8d43;
+  background: #8a9a4e;
+  color: #fff;
+  font-size: 18px;
+}
+
+.cross-page-song-player .xsp-info {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.cross-page-song-player .xsp-kicker {
+  color: #84905e;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.cross-page-song-player .xsp-name {
+  overflow: hidden;
+  color: #36401f;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.3;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.cross-page-song-player .xsp-artist {
+  overflow: hidden;
+  color: #748052;
+  font-size: 10.5px;
+  line-height: 1.2;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.cross-page-song-player .xsp-progress {
+  min-width: 0;
+  display: grid;
+  grid-template-columns: 36px minmax(60px, 1fr) 36px;
+  align-items: center;
+  gap: 7px;
+  color: #778252;
+  font-size: 10px;
+  font-variant-numeric: tabular-nums;
+}
+
+.cross-page-song-player .xsp-seek {
+  width: 100%;
+  min-width: 0;
+  height: 4px;
+  margin: 0;
+  accent-color: #839346;
+  cursor: pointer;
+}
+
+.cross-page-song-player.is-resume-blocked .xsp-kicker {
+  color: #b16d3d;
+}
+
+body.has-cross-page-song-player {
+  padding-bottom: 88px;
+}
+
+body.cross-page-host-buttons.has-cross-page-song-player .edit-float {
+  bottom: 94px;
+}
+
+@media (max-width: 768px) {
+  .cross-page-song-player {
+    right: 10px;
+    bottom: max(8px, env(safe-area-inset-bottom));
+    left: 10px;
+    width: auto;
+    min-height: 76px;
+    transform: none;
+    grid-template-columns: 30px 36px 30px minmax(0, 1fr);
+    grid-template-areas:
+      "info info info info"
+      "prev toggle next progress";
+    column-gap: 6px;
+    row-gap: 5px;
+    padding: 7px 10px 8px;
+    border-radius: 16px;
+    box-shadow: 0 5px 18px rgba(55,67,29,0.18);
+  }
+
+  .cross-page-song-player .xsp-prev { grid-area: prev; }
+  .cross-page-song-player .xsp-toggle { grid-area: toggle; }
+  .cross-page-song-player .xsp-next { grid-area: next; }
+  .cross-page-song-player .xsp-info {
+    grid-area: info;
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    align-items: baseline;
+    gap: 6px;
+  }
+  .cross-page-song-player .xsp-progress { grid-area: progress; }
+  .cross-page-song-player .xsp-artist,
+  .cross-page-song-player .xsp-progress > span {
+    display: none;
+  }
+  .cross-page-song-player .xsp-name { font-size: 12px; }
+  .cross-page-song-player button {
+    width: 30px;
+    height: 30px;
+    font-size: 15px;
+  }
+  .cross-page-song-player .xsp-toggle {
+    width: 36px;
+    height: 36px;
+  }
+
+  body.has-cross-page-song-player {
+    padding-bottom: calc(92px + env(safe-area-inset-bottom));
+  }
+
+  /* 按钮墙保留自身声匣：声匣上移，歌曲续播条固定在最下层。 */
+  body.cross-page-host-buttons.has-cross-page-song-player .app {
+    padding-bottom: calc(262px + env(safe-area-inset-bottom));
+  }
+  body.cross-page-host-buttons.has-cross-page-song-player .wall {
+    padding-bottom: 0;
+  }
+  body.cross-page-host-buttons.has-cross-page-song-player .player-card {
+    bottom: calc(94px + env(safe-area-inset-bottom)) !important;
+  }
+
+  /* 24 点竖屏布局本身可滚动：为底部续播条保留滚动余量。 */
+  body.cross-page-host-24.has-cross-page-song-player {
+    padding-bottom: calc(92px + env(safe-area-inset-bottom));
+  }
+}
+
+/* 24 点桌面横屏：缩小舞台，将最下方三个操作按钮完整留在播放器上方。 */
+@media (min-width: 721px) {
+  body.cross-page-host-24.has-cross-page-song-player .game-stage {
+    width: min(100vw, calc((86svh - 88px) * 1.7768), 1672px);
+  }
+}

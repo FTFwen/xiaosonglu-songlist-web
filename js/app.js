@@ -718,6 +718,8 @@ function getSongCardHtml(song) {
 /* ===== 音频播放器（对齐 komichi-vup.com/sings 的在线播放能力） ===== */
 const PLAYLIST_KEY = 'playlist:xiaosonglu';
 const SONGLISTS_KEY = 'songlists:xiaosonglu';
+const CROSS_PAGE_HANDOFF_KEY = 'xsl:cross-page-player:handoff:v1';
+const CROSS_PAGE_HANDOFF_MAX_AGE = 5 * 60 * 1000;
 
 // 内联图标（Ant Design 线性图标，sprite 定义在 index.html）
 function iconSvg(id, extraClass = '') {
@@ -740,6 +742,7 @@ const player = {
   shuffleOrder: null, // 随机播放顺序（索引数组，洗牌后不重复），null 表示未初始化
   shufflePos: 0,      // 当前在 shuffleOrder 里的位置
   volume: 0.8,
+  wantedPlaying: false,
   get current() { return this.queue[this.index] || null; }
 };
 player.audio.preload = 'auto';
@@ -880,7 +883,14 @@ function isPlayAborted(err) {
 }
 
 function audioUrlOf(song) {
-  if (!song || !state.audioIndex || !state.audioIndex.audios) return '';
+  if (!song) return '';
+  if (song.cross_page_src) {
+    try {
+      const restoredUrl = new URL(song.cross_page_src, window.location.origin);
+      if (restoredUrl.origin === window.location.origin) return restoredUrl.href;
+    } catch (e) { /* ignore invalid restored URL */ }
+  }
+  if (!state.audioIndex || !state.audioIndex.audios) return '';
   const key = song.row_key || song.song_name || '';
   const rel = state.audioIndex.audios[key] || '';
   if (!rel) return '';
@@ -1010,12 +1020,14 @@ function playSongAt(index) {
     return;
   }
   player.index = index;
+  player.wantedPlaying = true;
   player.audio.src = url;
   player.audio.play().catch(err => {
     // 被快速切歌/暂停等正常中断，不提示用户
     if (isPlayAborted(err)) return;
     console.warn('[播放器] 播放失败:', err);
     showToast(`音频播放失败：${err.message || err}`);
+    player.wantedPlaying = false;
     player.playing = false;
     updatePlayerUI();
   });
@@ -1078,6 +1090,149 @@ function snapshotOf(song) {
     display_song_name: song.display_song_name || song.song_name || '',
     artist: song.artist || ''
   };
+}
+
+function normalizeCrossPageDestination(urlValue) {
+  try {
+    const url = new URL(urlValue, window.location.href);
+    if (url.origin !== window.location.origin) return '';
+    const path = url.pathname.replace(/\/index\.html$/i, '/').replace(/\/{2,}/g, '/');
+    if (path === '/') return '/';
+    if (path === '/buttons' || path.startsWith('/buttons/')) return '/buttons/';
+    if (path === '/24xsl' || path.startsWith('/24xsl/')) return '/24xsl/';
+    return '';
+  } catch (e) {
+    return '';
+  }
+}
+
+function crossPageQueueItem(song) {
+  const rawUrl = audioUrlOf(song);
+  if (!rawUrl) return null;
+  try {
+    const url = new URL(rawUrl, document.baseURI);
+    if (url.origin !== window.location.origin) return null;
+    return { ...snapshotOf(song), src: url.href };
+  } catch (e) {
+    return null;
+  }
+}
+
+function writeCrossPageHandoff(destination) {
+  const current = player.current;
+  if (!current || !destination) return false;
+  const song = crossPageQueueItem(current);
+  if (!song) return false;
+  const queue = player.queue.map(crossPageQueueItem).filter(Boolean);
+  const index = Math.max(0, queue.findIndex(item =>
+    String(item.song_id) === String(song.song_id) || item.src === song.src
+  ));
+  const wantedPlaying = player.wantedPlaying || (!!player.audio.currentSrc && !player.audio.paused && !player.audio.ended);
+  const payload = {
+    version: 1,
+    source: normalizeCrossPageDestination(window.location.href) || '/',
+    destination,
+    createdAt: Date.now(),
+    nonce: (window.crypto && typeof window.crypto.randomUUID === 'function')
+      ? window.crypto.randomUUID()
+      : `${Date.now()}-${Math.random().toString(36).slice(2)}`,
+    song,
+    queue: queue.length ? queue : [song],
+    index,
+    currentTime: Number.isFinite(player.audio.currentTime) ? player.audio.currentTime : 0,
+    duration: Number.isFinite(player.audio.duration) ? player.audio.duration : 0,
+    volume: player.audio.volume,
+    wantedPlaying,
+    playMode: player.playMode,
+  };
+  try {
+    sessionStorage.setItem(CROSS_PAGE_HANDOFF_KEY, JSON.stringify(payload));
+    return true;
+  } catch (e) {
+    return false;
+  }
+}
+
+function initCrossPageNavigation() {
+  document.addEventListener('click', event => {
+    if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+    const link = event.target.closest && event.target.closest('a[href]');
+    if (!link || link.target === '_blank' || link.hasAttribute('download')) return;
+    const destination = normalizeCrossPageDestination(link.href);
+    if (destination !== '/buttons/' && destination !== '/24xsl/') return;
+    writeCrossPageHandoff(destination);
+  }, { capture: true });
+}
+
+function restoreCrossPageHandoff() {
+  let saved = null;
+  try {
+    saved = JSON.parse(sessionStorage.getItem(CROSS_PAGE_HANDOFF_KEY) || 'null');
+  } catch (e) {
+    saved = null;
+  }
+  if (!saved) return false;
+
+  const currentDestination = normalizeCrossPageDestination(window.location.href) || '/';
+  const valid = saved.version === 1 &&
+    saved.destination === currentDestination &&
+    Number.isFinite(saved.createdAt) &&
+    Date.now() - saved.createdAt <= CROSS_PAGE_HANDOFF_MAX_AGE &&
+    saved.song && saved.song.src;
+  if (!valid) {
+    try { sessionStorage.removeItem(CROSS_PAGE_HANDOFF_KEY); } catch (e) { /* ignore */ }
+    return false;
+  }
+  try { sessionStorage.removeItem(CROSS_PAGE_HANDOFF_KEY); } catch (e) { /* ignore */ }
+
+  const catalog = [...state.allSongs, ...state.derivativeSongs];
+  const restoredQueue = (Array.isArray(saved.queue) ? saved.queue : [saved.song]).map(item => {
+    if (!item || !item.src) return null;
+    let safeUrl = '';
+    try {
+      const url = new URL(item.src, window.location.origin);
+      if (url.origin !== window.location.origin) return null;
+      safeUrl = url.href;
+    } catch (e) {
+      return null;
+    }
+    const matched = catalog.find(song =>
+      String(song.song_id) === String(item.song_id) ||
+      (item.row_key && (song.row_key || song.song_name) === item.row_key)
+    );
+    return { ...(matched ? snapshotOf(matched) : snapshotOf(item)), cross_page_src: safeUrl };
+  }).filter(Boolean);
+  if (!restoredQueue.length) return false;
+
+  player.queue = restoredQueue;
+  state.playlist = restoredQueue;
+  savePlaylist();
+  player.index = Math.min(Math.max(Number(saved.index) || 0, 0), restoredQueue.length - 1);
+  player.playMode = PLAY_MODE_MAP[saved.playMode] ? saved.playMode : 'list';
+  player.volume = Number.isFinite(saved.volume) ? Math.min(1, Math.max(0, saved.volume)) : player.volume;
+  player.audio.volume = player.volume;
+
+  const item = player.current;
+  const startAt = Math.max(0, Number(saved.currentTime) || 0) +
+    (saved.wantedPlaying ? Math.max(0, (Date.now() - saved.createdAt) / 1000) : 0);
+  player.audio.src = audioUrlOf(item);
+  player.audio.addEventListener('loadedmetadata', () => {
+    const duration = Number.isFinite(player.audio.duration) ? player.audio.duration : 0;
+    player.audio.currentTime = duration > 0 ? Math.min(startAt, Math.max(0, duration - 0.15)) : startAt;
+    updatePlayerUI();
+  }, { once: true });
+  player.audio.load();
+  if (saved.wantedPlaying) {
+    player.wantedPlaying = true;
+    player.audio.play().catch(err => {
+      if (isPlayAborted(err)) return;
+      player.wantedPlaying = false;
+      showToast('歌曲已接续，请点播放继续');
+      updatePlayerUI();
+    });
+  }
+  updatePlayerUI();
+  return true;
 }
 
 function loadPlaylist() {
@@ -1554,8 +1709,8 @@ async function loadAudioIndex() {
 }
 
 player.audio.addEventListener('ended', () => playNext(true));
-player.audio.addEventListener('play', () => { player.playing = true; updatePlayerUI(); });
-player.audio.addEventListener('pause', () => { player.playing = false; updatePlayerUI(); });
+player.audio.addEventListener('play', () => { player.wantedPlaying = true; player.playing = true; updatePlayerUI(); });
+player.audio.addEventListener('pause', () => { player.wantedPlaying = false; player.playing = false; updatePlayerUI(); });
 player.audio.addEventListener('loadedmetadata', () => {
   const dur = Number.isFinite(player.audio.duration) ? player.audio.duration : 0;
   dom.playerTimeDur.textContent = formatAudioTime(dur);
@@ -3238,6 +3393,7 @@ async function init() {
   initPanelDrag(dom.playlistPanel);
   initPanelDrag(dom.songlistPanel);
   initMobileFabs();
+  initCrossPageNavigation();
 
   await loadGlobalSettings();
   loadDerivativeSongs(); // 加载本地二创歌曲（勾选"只看二创"时显示）
@@ -3249,6 +3405,7 @@ async function init() {
   loadSonglists();
   renderSonglistPanel();
   await audioIndexPromise;
+  restoreCrossPageHandoff();
   try {
     const params = new URLSearchParams(window.location.search);
     const q = params.get('q') || params.get('search');
