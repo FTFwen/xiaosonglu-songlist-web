@@ -359,6 +359,7 @@
 
     /* 1. 时钟与搜索区域 */
     .hero-search-card {
+      position: relative;
       padding: 20px 24px 18px;
       display: flex;
       flex-direction: column;
@@ -366,6 +367,63 @@
       text-align: center;
       gap: 14px;
     }
+    .home-live-status {
+      position: absolute;
+      top: 16px;
+      left: 20px;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 5px;
+      min-width: 0;
+      max-width: 245px;
+      padding: 8px 10px;
+      border: 1px solid rgba(255,255,255,0.36);
+      border-radius: 13px;
+      background: rgba(255,255,255,0.18);
+      color: var(--text);
+      text-align: left;
+      box-shadow: 0 3px 12px rgba(48,58,29,0.08);
+    }
+    .home-live-status .live-status-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 3px 8px;
+      border: 1px solid rgba(85,97,50,0.2);
+      border-radius: 999px;
+      background: rgba(255,255,255,0.34);
+      color: var(--text-soft);
+      font-size: 11px;
+      font-weight: 700;
+      line-height: 1.2;
+    }
+    .home-live-status .live-status-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: #aeb69a;
+    }
+    .home-live-status .live-status-title {
+      max-width: 100%;
+      overflow: hidden;
+      color: var(--text);
+      font-size: 12px;
+      font-weight: 600;
+      line-height: 1.35;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .home-live-status.is-live .live-status-badge {
+      border-color: rgba(202,68,88,0.3);
+      background: rgba(216,76,96,0.16);
+      color: #a3374b;
+    }
+    .home-live-status.is-live .live-status-dot { background: #dc4d64; }
+    .home-live-status.is-offline .live-status-dot { background: #879458; }
+    .home-live-status.is-error { opacity: 0.72; }
+
     .clock-time {
       font-size: clamp(42px, 6vw, 62px);
       font-weight: 300;
@@ -1649,7 +1707,16 @@
         gap: 16px;
       }
       .hero-search-card {
-        padding: 20px 16px;
+        padding: 16px;
+      }
+      .home-live-status {
+        position: static;
+        align-self: stretch;
+        max-width: none;
+        padding: 7px 9px;
+      }
+      .home-live-status .live-status-title {
+        width: 100%;
       }
       .dashboard-columns {
         grid-template-columns: 1fr;
@@ -1749,6 +1816,10 @@
 
     <!-- 1. 时钟与聚合搜索区域 -->
     <section class="glass-card hero-search-card" id="widgetSearch">
+      <div class="home-live-status is-loading" data-live-status aria-live="polite">
+        <span class="live-status-badge"><span class="live-status-dot" aria-hidden="true"></span><span data-live-label>状态获取中</span></span>
+        <span class="live-status-title" data-live-title>正在读取直播标题…</span>
+      </div>
       <div class="clock-time">
         <span id="clockHours">00</span>
         <span class="clock-colon">:</span>
@@ -2091,6 +2162,7 @@
   </dialog>
 
   <!-- 引入全站数据源与核心脚本 -->
+  <script src="https://viridis.love/js/live-status.js?v=1" defer></script>
   <script src="js/data.js?v=26" defer></script>
   <script src="js/start.js?v=14" defer></script>
   <script src="js/motion.js?v=18" defer></script>

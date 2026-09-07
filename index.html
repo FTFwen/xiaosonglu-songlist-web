@@ -243,6 +243,15 @@
         letter-spacing: 0.02em;
         white-space: nowrap;
       }
+      .header-live-status {
+        max-width: 190px;
+        gap: 5px;
+        margin-top: 4px;
+        font-size: 10.5px;
+      }
+      .header-live-status .live-status-badge {
+        padding: 2px 6px;
+      }
     }
 
     .title-wrap {
@@ -306,6 +315,48 @@
       font-weight: 600;
       letter-spacing: 0.02em;
     }
+
+    .header-live-status {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      min-width: 0;
+      max-width: min(460px, 100%);
+      margin-top: 6px;
+      color: rgba(255,255,245,0.92);
+      font-size: 11.5px;
+      line-height: 1.35;
+    }
+    .header-live-status .live-status-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      flex-shrink: 0;
+      padding: 3px 8px;
+      border: 1px solid rgba(255,255,255,0.3);
+      border-radius: 999px;
+      background: rgba(255,255,255,0.14);
+      font-weight: 700;
+    }
+    .header-live-status .live-status-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: #c8ccb7;
+    }
+    .header-live-status .live-status-title {
+      min-width: 0;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .header-live-status.is-live .live-status-badge {
+      border-color: rgba(255,209,217,0.7);
+      background: rgba(211,69,91,0.4);
+    }
+    .header-live-status.is-live .live-status-dot { background: #ff6f87; }
+    .header-live-status.is-offline .live-status-dot { background: #cdd5a4; }
+    .header-live-status.is-error { opacity: 0.72; }
 
     .header-actions {
       display: flex;
@@ -3105,6 +3156,10 @@
           <div class="title-icon"><img src="assets/xiaosonglu-logo.png?v=2" alt="小松绿" class="title-logo"></div>
           <div class="title-main">
             <h1>小松绿歌单</h1>
+            <div class="header-live-status is-loading" data-live-status aria-live="polite">
+              <span class="live-status-badge"><span class="live-status-dot" aria-hidden="true"></span><span data-live-label>状态获取中</span></span>
+              <span class="live-status-title" data-live-title>正在读取直播标题…</span>
+            </div>
           </div>
         </div>
         <div class="header-nav">
@@ -3452,6 +3507,7 @@
     <button class="mobile-fab" id="mobileTimerFab" title="睡眠定时：设置倒计时，结束后自动暂停"><svg class="icon" aria-hidden="true"><use href="#icon-moon"></use></svg></button>
   </div>
 
+  <script src="js/live-status.js?v=1" defer></script>
   <script src="js/shared.js?v=24" defer></script>
   <script src="js/data.js?v=25" defer></script>
   <script src="js/app.js?v=72" defer></script>
