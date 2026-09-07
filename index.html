@@ -2785,6 +2785,78 @@
         will-change: auto !important;
       }
 
+      /* 手机播放器分为歌曲信息和控制区两行，避免歌名被进度条与按钮挤到零宽。 */
+      body.has-player {
+        padding-bottom: 100px;
+      }
+
+      body.has-player .back-top {
+        bottom: 102px;
+      }
+
+      html body .player-bar {
+        display: grid !important;
+        grid-template-columns: 30px 36px 30px minmax(40px, 1fr) 30px 30px 30px;
+        grid-template-areas:
+          "info info info info info info info"
+          "prev toggle next progress mode favorite timer";
+        align-items: center;
+        column-gap: 6px;
+        row-gap: 6px;
+        padding: 8px 10px;
+        border-radius: 18px;
+      }
+
+      .player-bar #playerPrevBtn { grid-area: prev; }
+      .player-bar #playerToggleBtn { grid-area: toggle; }
+      .player-bar #playerNextBtn { grid-area: next; }
+      .player-bar .player-info { grid-area: info; }
+      .player-bar .player-progress { grid-area: progress; }
+      .player-bar #playerShuffleBtn { grid-area: mode; }
+      .player-bar #playerFavBtn { grid-area: favorite; }
+      .player-bar #playerTimerWrap { grid-area: timer; }
+
+      .player-bar .player-info {
+        width: 100%;
+        min-width: 0;
+        padding: 0 4px 5px;
+        border-bottom: 1px solid rgba(138,154,78,0.18);
+      }
+
+      .player-bar .player-name {
+        color: #394623;
+        font-size: 12.5px;
+        line-height: 1.35;
+      }
+
+      .player-bar .player-name::before {
+        content: '♫';
+        margin-right: 6px;
+        color: var(--primary);
+        font-size: 12px;
+      }
+
+      .player-bar .player-artist,
+      .player-bar .player-progress .player-time {
+        display: none;
+      }
+
+      .player-bar .player-progress {
+        min-width: 0;
+        gap: 0;
+      }
+
+      .player-bar .player-btn,
+      .player-bar .player-timer-btn {
+        width: 30px;
+        height: 30px;
+      }
+
+      .player-bar .player-btn.primary {
+        width: 36px;
+        height: 36px;
+      }
+
       /* 手机端高级筛选：改为独立滚动的全高面板，头部和操作区始终可见。 */
       html body .filter-drawer-backdrop,
       html body .filter-drawer-backdrop.show {
@@ -2988,7 +3060,7 @@
     <symbol id="icon-playlist" viewBox="0 0 1024 1024"><path d="M791.272727 328.610909q34.443636 0 56.785455 24.203636t22.341818 58.647273v163.84q0 67.956364-6.516364 109.847273-9.309091 53.992727-33.512727 89.367273-26.996364 40.029091-76.334545 59.578181-53.992727 22.341818-138.705455 22.341819-71.68 0-118.225454-13.963637-40.029091-13.032727-74.472728-40.96-8.378182-4.654545-14.894545-12.101818L175.941818 560.407273q-18.618182-18.618182-21.410909-43.752728-3.723636-21.410909 5.585455-43.752727 7.447273-20.48 21.876363-34.443636t35.84-20.014546q21.410909-6.050909 43.752728-0.930909t38.167272 20.014546l50.269091 50.269091V168.494545q0-33.512727 24.203637-57.716363t58.181818-24.203637Q466.385455 86.574545 489.658182 110.312727t23.272727 58.181818v83.781819q17.687273-10.24 39.098182-10.24 26.065455 0 46.545454 15.36t28.858182 40.494545q20.48-12.101818 43.752728-12.101818 26.996364 0 47.476363 15.36t28.858182 40.494545q19.549091-13.032727 41.890909-13.032727h1.861818z m35.374546 87.505455q0-13.963636-5.585455-23.272728-4.654545-7.447273-13.032727-11.170909-5.585455-2.792727-13.032727-3.723636l-5.585455-0.930909q-16.756364 0-27.461818 11.636363T751.243636 416.116364v90.298181q0 8.378182-6.050909 14.894546t-15.36 6.516364q-9.309091 0-15.36-6.516364t-6.050909-14.894546V376.087273q0-15.825455-10.24-26.065455-7.447273-7.447273-18.618182-10.24l-10.24-1.861818q-16.756364 0-26.996363 11.170909t-10.24 26.996364v99.607272h-0.930909l0.930909 4.654546q0 9.309091-6.516364 15.36t-15.36 6.050909q-8.843636 0-15.36-6.050909t-6.516364-15.36V333.265455q0-17.687273-10.24-27.927273-6.516364-7.447273-18.618181-10.24l-9.309091-0.930909q-15.825455 0-26.530909 11.170909T512.930909 333.265455v107.985454h-0.930909l0.930909 4.654546q0 8.378182-6.516364 14.894545t-15.36 6.516364q-8.843636 0-15.36-6.516364t-6.516363-14.894545V177.803636q0-16.756364-10.24-27.927272t-26.530909-11.170909Q416.116364 138.705455 404.945455 149.876364t-11.17091 27.927272v414.254546L274.618182 474.763636q-11.170909-12.101818-29.789091-11.636363t-30.72 13.032727Q202.007273 488.727273 200.610909 505.483636t12.567273 29.789091l218.763636 217.832728q31.650909 30.72 73.541818 45.614545 44.683636 14.894545 109.847273 14.894545 76.334545 0 121.949091-18.618181 41.890909-17.687273 63.301818-51.2 17.687273-28.858182 23.272727-75.403637 2.792727-28.858182 2.792728-93.090909V416.116364zM317.44 291.374545q-25.134545-23.272727-39.563636-55.38909T263.447273 167.563636q0-45.614545 22.341818-84.247272T346.763636 22.341818Q385.396364 0 431.010909 0t84.247273 22.341818q38.632727 22.341818 61.44 60.974546T599.505455 167.563636q0 22.341818-6.516364 45.614546-16.756364-16.756364-40.029091-17.687273 2.792727-13.963636 2.792727-27.927273 0-33.512727-16.756363-62.370909t-45.149091-45.614545q-28.392727-16.756364-62.370909-16.756364T368.64 59.578182q-28.858182 16.756364-45.614545 45.614545t-16.756364 62.370909q0 26.996364 11.170909 51.2v72.610909z"/></symbol>
   </svg>
   <div class="site-tabs">
-    <a class="site-tab" href="https://workshop.viridis.love" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#icon-home"></use></svg> 首页</a>
+    <a class="site-tab" href="https://workshop.viridis.love/"><svg class="icon" aria-hidden="true"><use href="#icon-home"></use></svg> 首页</a>
     <a class="site-tab active" href="./"><svg class="icon" aria-hidden="true"><use href="#icon-music"></use></svg> 歌单</a>
     <a class="site-tab" href="/buttons/"><svg class="icon" aria-hidden="true"><use href="#icon-playlist"></use></svg> 按钮墙</a>
     <a class="site-tab" href="/24xsl/"><img src="assets/24xsl-title.webp" alt="24点"></a>
