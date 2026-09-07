@@ -217,11 +217,32 @@
     }
     .header-nav a.icon-only:hover { background: transparent; }
     .header-nav a img { height: 26px; width: auto; }
-    /* 手机端：隐藏左侧书签、竖排显示导航 + 刷新/下载 */
+    /* 手机端：沿用按钮墙的紧凑标题栏尺寸，左侧品牌、右侧竖排导航 */
     @media (max-width: 768px) {
       .site-tabs { display: none; }
+      .header {
+        margin: 10px 10px 0;
+        padding: 14px 16px;
+        border-radius: 18px;
+      }
+      .header-top {
+        flex-wrap: nowrap;
+        gap: 12px;
+      }
       .header-nav { display: flex; }
       .header-actions { display: none; }
+      .title-wrap { gap: 12px; }
+      .title-icon {
+        width: 50px;
+        height: 50px;
+        border-radius: 14px;
+      }
+      .title-icon img.title-logo { border-radius: 14px; }
+      .title-main h1 {
+        font-size: 24px;
+        letter-spacing: 0.02em;
+        white-space: nowrap;
+      }
     }
 
     .title-wrap {
@@ -1574,9 +1595,6 @@
       /* 手机端：24点与标题同一水平线（右上角），刷新/下载放在标题正下方（左对齐） */
       .header-extra { order: 2; margin-left: auto; }
       .header-actions { order: 3; flex-basis: 100%; justify-content: flex-start; display: none; }
-      /* 手机端标题稍微缩小，避免与右侧 24 点按钮拥挤 */
-      .title-icon { width: 42px; height: 42px; }
-      .title-main h1 { font-size: 28px; }
       .section-scroll { padding: 10px 10px 20px; }
       .sticky-toolbar { margin: 0 -10px; padding: 8px 10px 6px; }
       .action-panel { padding: 10px; }
@@ -2776,7 +2794,6 @@
           <div class="title-icon"><img src="assets/xiaosonglu-logo.png?v=2" alt="小松绿" class="title-logo"></div>
           <div class="title-main">
             <h1>小松绿歌单</h1>
-            <div class="title-sub" id="roomSubtitle">正在加载歌单数据…</div>
           </div>
         </div>
         <div class="header-nav">
@@ -2789,9 +2806,6 @@
           <a class="ghost-btn" href="assets/downloads/songlist-assistant-v1.6.0.zip" download="直播间歌单助手-v1.6.0.zip" title="下载直播间歌单助手插件安装包（.zip）"><svg class="icon" aria-hidden="true"><use href="#icon-download"></use></svg></a>
           <button class="thanks-btn" id="thanksBtn">致谢名单</button>
         </div>
-      </div>
-      <div class="status-row">
-        <span class="status-pill" id="headerStatus">正在加载歌单…</span>
       </div>
     </header>
 
@@ -3127,7 +3141,7 @@
 
   <script src="js/shared.js?v=24" defer></script>
   <script src="js/data.js?v=25" defer></script>
-  <script src="js/app.js?v=69" defer></script>
+  <script src="js/app.js?v=70" defer></script>
   <script src="js/motion.js?v=17" defer></script>
 </body>
 </html>

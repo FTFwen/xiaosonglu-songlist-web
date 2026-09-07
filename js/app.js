@@ -179,6 +179,7 @@ function showToast(message, duration = 2200) {
 }
 
 function setHeaderStatus(text, cls = '') {
+  if (!dom.headerStatus) return;
   dom.headerStatus.textContent = text;
   dom.headerStatus.className = `status-pill${cls ? ` ${cls}` : ''}`;
 }
@@ -356,7 +357,7 @@ async function saveGlobalSettings() {
 
 function renderRoomContextSummary() {
   const current = state.currentRoom;
-  dom.roomSubtitle.textContent = current.subtitle;
+  if (dom.roomSubtitle) dom.roomSubtitle.textContent = current.subtitle;
 }
 
 function getSongSearchText(song, mode) {
