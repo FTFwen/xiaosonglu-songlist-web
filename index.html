@@ -2743,6 +2743,47 @@
         transform: none !important;
         transform-style: flat !important;
       }
+
+      /* 播放中仅显示静态暂停按钮，不再给整张卡片建立动画与合成层。 */
+      html body .song-item.now-playing,
+      html body .song-item.now-playing:hover {
+        animation: none !important;
+        background: var(--surface) !important;
+        background-image: none !important;
+        box-shadow: none !important;
+        filter: none !important;
+        transform: none !important;
+        transition: border-color 0.12s ease !important;
+        will-change: auto !important;
+      }
+      html body .song-item.now-playing::before,
+      html body .song-item.now-playing::after,
+      html body .song-vinyl-wrap.spinning::before,
+      html body .song-vinyl-wrap.spinning::after {
+        display: none !important;
+      }
+      html body .song-vinyl-wrap,
+      html body .song-vinyl-wrap.spinning,
+      html body .song-vinyl-wrap.spinning .song-vinyl,
+      html body .song-vinyl-wrap.spinning .vinyl-core {
+        animation: none !important;
+        box-shadow: none !important;
+        filter: none !important;
+        transform: none !important;
+        transition: none !important;
+        will-change: auto !important;
+      }
+      html body .playing-bars {
+        display: none !important;
+      }
+      html body .song-play-btn.playing {
+        animation: none !important;
+        box-shadow: none !important;
+        filter: none !important;
+        transform: none !important;
+        transition: background-color 0.12s ease !important;
+        will-change: auto !important;
+      }
     }
   </style>
   <script>window.APP_BASE_URL = "./";</script>
@@ -3141,7 +3182,7 @@
 
   <script src="js/shared.js?v=24" defer></script>
   <script src="js/data.js?v=25" defer></script>
-  <script src="js/app.js?v=70" defer></script>
+  <script src="js/app.js?v=71" defer></script>
   <script src="js/motion.js?v=17" defer></script>
 </body>
 </html>

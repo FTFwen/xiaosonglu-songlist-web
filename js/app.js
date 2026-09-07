@@ -901,6 +901,8 @@ function getPlayableSongs() {
 }
 
 function syncPlayingButton() {
+  // 手机端仅保留播放按钮的静态状态，避免卡片呼吸光晕、黑胶旋转和声波动画占用 GPU。
+  const mobileLiteMode = window.matchMedia && window.matchMedia('(max-width: 768px)').matches;
   document.querySelectorAll('.song-item.now-playing').forEach(item => {
     item.classList.remove('now-playing');
     const bars = item.querySelector('.playing-bars');
@@ -921,16 +923,18 @@ function syncPlayingButton() {
   if (cur && player.playing) {
     const card = dom.songListWrap && dom.songListWrap.querySelector(`.song-item[data-song-id="${cur.song_id}"]`);
     if (card) {
-      card.classList.add('now-playing');
-      const songNameEl = card.querySelector('.song-name-row') || card.querySelector('.song-name');
-      if (songNameEl && !songNameEl.querySelector('.playing-bars')) {
-        songNameEl.insertAdjacentHTML('beforeend', '<span class="playing-bars" aria-hidden="true"><span class="bar"></span><span class="bar"></span><span class="bar"></span></span>');
-      }
-      const vinylWrap = card.querySelector('.song-vinyl-wrap');
-      if (vinylWrap) {
-        vinylWrap.classList.add('spinning');
-        const core = vinylWrap.querySelector('.vinyl-core');
-        if (core) core.textContent = '🌻';
+      if (!mobileLiteMode) {
+        card.classList.add('now-playing');
+        const songNameEl = card.querySelector('.song-name-row') || card.querySelector('.song-name');
+        if (songNameEl && !songNameEl.querySelector('.playing-bars')) {
+          songNameEl.insertAdjacentHTML('beforeend', '<span class="playing-bars" aria-hidden="true"><span class="bar"></span><span class="bar"></span><span class="bar"></span></span>');
+        }
+        const vinylWrap = card.querySelector('.song-vinyl-wrap');
+        if (vinylWrap) {
+          vinylWrap.classList.add('spinning');
+          const core = vinylWrap.querySelector('.vinyl-core');
+          if (core) core.textContent = '🌻';
+        }
       }
       const el = card.querySelector('.song-play-btn');
       if (el) {
