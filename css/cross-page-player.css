@@ -61,6 +61,10 @@
   fill: currentColor;
 }
 
+.cross-page-song-player .xsp-icon.xsp-mobile-only {
+  display: none;
+}
+
 .cross-page-song-player .xsp-toggle {
   width: 40px;
   height: 40px;
@@ -94,6 +98,13 @@
   border-color: #fcccd3;
   background: #fff0f2;
   color: #e54d65;
+}
+
+@keyframes xsp-heart-pop {
+  0% { transform: scale(1); }
+  35% { transform: scale(1.38) rotate(-8deg); }
+  70% { transform: scale(0.92) rotate(4deg); }
+  100% { transform: scale(1) rotate(0); }
 }
 
 .cross-page-song-player .xsp-favorite:disabled {
@@ -184,89 +195,191 @@ body.cross-page-host-buttons.has-cross-page-song-player .edit-float {
   bottom: 94px;
 }
 
+/* 手机续播条逐项复用歌单页 .player-bar 的两行规格。 */
 @media (max-width: 768px) {
   .cross-page-song-player {
-    right: 10px;
+    right: auto;
     bottom: max(8px, env(safe-area-inset-bottom));
-    left: 10px;
-    width: auto;
-    min-height: 104px;
-    transform: none;
-    grid-template-columns: 30px 36px 30px 30px 30px minmax(0, 1fr);
+    left: 50%;
+    width: calc(100vw - 20px);
+    min-height: 0;
+    transform: translateX(-50%);
+    contain: none;
+    grid-template-columns: 30px 36px 30px minmax(56px, 1fr) 30px 30px;
     grid-template-areas:
       "info info info info info info"
-      "prev toggle next mode favorite progress"
-      "volume volume volume volume volume volume";
+      "prev toggle next progress mode favorite";
     column-gap: 6px;
     row-gap: 5px;
     padding: 7px 10px 8px;
+    border: 1.5px solid rgba(138,154,78,0.3);
     border-radius: 16px;
-    box-shadow: 0 5px 18px rgba(55,67,29,0.18);
+    background: rgba(247,249,236,0.98) !important;
+    color: #3d4630;
+    box-shadow: 0 5px 18px rgba(61,74,32,0.18) !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    font-family: "Microsoft YaHei", "Segoe UI", sans-serif;
+    font-size: 12px;
   }
 
   .cross-page-song-player .xsp-prev { grid-area: prev; }
   .cross-page-song-player .xsp-toggle { grid-area: toggle; }
   .cross-page-song-player .xsp-next { grid-area: next; }
-  .cross-page-song-player .xsp-mode { grid-area: mode; }
-  .cross-page-song-player .xsp-favorite { grid-area: favorite; }
-  .cross-page-song-player .xsp-volume {
-    grid-area: volume;
-    width: 100%;
-    grid-template-columns: 20px minmax(0, 1fr);
-    padding: 1px 2px 0;
-  }
   .cross-page-song-player .xsp-info {
     grid-area: info;
-    display: grid;
-    grid-template-columns: auto minmax(0, 1fr);
-    align-items: baseline;
-    gap: 6px;
+    width: 100%;
+    min-width: 0;
+    padding: 0 2px;
   }
-  .cross-page-song-player .xsp-progress { grid-area: progress; }
-  .cross-page-song-player .xsp-artist,
-  .cross-page-song-player .xsp-progress > span {
+  .cross-page-song-player .xsp-progress {
+    grid-area: progress;
+    display: flex;
+    min-width: 0;
+    gap: 0;
+  }
+  .cross-page-song-player .xsp-mode {
+    grid-area: mode;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .cross-page-song-player .xsp-favorite {
+    grid-area: favorite;
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  .cross-page-song-player .xsp-desktop-glyph {
     display: none;
   }
-  .cross-page-song-player .xsp-name { font-size: 12px; }
+  .cross-page-song-player .xsp-toggle .xsp-icon,
+  .cross-page-song-player .xsp-icon.xsp-mobile-only {
+    display: inline-block;
+    flex-shrink: 0;
+    vertical-align: -0.125em;
+  }
+  .cross-page-song-player .xsp-mode .xsp-icon {
+    width: 22px;
+    height: 22px;
+  }
+  .cross-page-song-player .xsp-mode .xsp-icon.icon-sm {
+    width: 18px;
+    height: 18px;
+  }
+  .cross-page-song-player .xsp-mode[data-mode="single"]::after {
+    content: none;
+  }
+
+  .cross-page-song-player .xsp-kicker {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+  .cross-page-song-player .xsp-artist,
+  .cross-page-song-player .xsp-progress > span,
+  .cross-page-song-player .xsp-volume {
+    display: none !important;
+  }
+  .cross-page-song-player .xsp-name {
+    color: #394623;
+    font-size: 12.5px;
+    line-height: 1.35;
+  }
+  .cross-page-song-player .xsp-favorite.is-active {
+    animation: xsp-heart-pop 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  .cross-page-song-player .xsp-favorite:disabled {
+    opacity: 0.4;
+  }
+  .cross-page-song-player .xsp-seek {
+    -webkit-appearance: none;
+    appearance: none;
+    width: auto;
+    height: 4px;
+    flex: 1;
+    min-width: 60px;
+    margin: revert;
+    border-radius: 999px;
+    background: #c3cd9a;
+    accent-color: auto;
+    outline: none;
+    cursor: pointer;
+  }
+  .cross-page-song-player .xsp-seek::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 13px;
+    height: 13px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    background: #8a9a4e;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+  }
+  .cross-page-song-player .xsp-seek::-moz-range-thumb {
+    width: 13px;
+    height: 13px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    background: #8a9a4e;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+  }
   .cross-page-song-player button {
     width: 30px;
     height: 30px;
-    font-size: 15px;
+    border-color: rgba(138,154,78,0.28);
+    background: rgba(255,255,255,0.9);
+    color: #747f54;
+    font-size: 14px;
+    box-shadow: none;
+    transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  .cross-page-song-player button:hover {
+    color: #6f7d3d;
+    transform: scale(1.08);
   }
   .cross-page-song-player .xsp-toggle {
     width: 36px;
     height: 36px;
+    border-color: transparent;
+    background: linear-gradient(135deg, #8a9a4e, #718239);
+    color: #fff;
+    font-size: 16px;
+    box-shadow: none;
+  }
+  .cross-page-song-player .xsp-toggle:hover {
+    background: linear-gradient(135deg, #7c8c42, #637230);
+    transform: scale(1.12);
   }
 
   body.has-cross-page-song-player {
-    padding-bottom: calc(124px + env(safe-area-inset-bottom));
+    padding-bottom: 88px;
   }
 
   /* 按钮墙保留自身声匣：声匣上移，歌曲续播条固定在最下层。 */
   body.cross-page-host-buttons.has-cross-page-song-player .app {
-    padding-bottom: calc(296px + env(safe-area-inset-bottom));
+    padding-bottom: calc(262px + env(safe-area-inset-bottom));
   }
   body.cross-page-host-buttons.has-cross-page-song-player .wall {
     padding-bottom: 0;
   }
   body.cross-page-host-buttons.has-cross-page-song-player .player-card {
-    bottom: calc(126px + env(safe-area-inset-bottom)) !important;
+    bottom: calc(94px + env(safe-area-inset-bottom)) !important;
   }
 
   /* 24 点竖屏布局本身可滚动：为底部续播条保留滚动余量。 */
   body.cross-page-host-24.has-cross-page-song-player {
-    padding-bottom: calc(124px + env(safe-area-inset-bottom));
+    padding-bottom: 88px;
   }
 }
 
-/* 24 点横屏：按续播条在当前断点的高度缩小舞台，避免底部操作区被遮住。 */
-@media (min-width: 721px) and (max-width: 768px) {
-  body.cross-page-host-24.has-cross-page-song-player .game-stage {
-    width: min(100vw, calc((86svh - 124px) * 1.7768), 1672px);
-  }
-}
-
-@media (min-width: 769px) {
+/* 24 点横屏：按两行续播条高度缩小舞台，避免底部操作区被遮住。 */
+@media (min-width: 721px) {
   body.cross-page-host-24.has-cross-page-song-player .game-stage {
     width: min(100vw, calc((86svh - 88px) * 1.7768), 1672px);
   }

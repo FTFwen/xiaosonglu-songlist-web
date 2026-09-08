@@ -19,19 +19,31 @@ function sourceBetween(source, startText, endText) {
   return source.slice(start, end);
 }
 
-function symbolPath(source, id) {
-  const match = source.match(new RegExp(`<symbol id="${id}"[^>]*><path d="([^"]+)"`));
+function symbolIcon(source, id) {
+  const match = source.match(new RegExp(`<symbol id="${id}" viewBox="([^"]+)"><path d="([^"]+)"`));
   assert.ok(match, `missing icon symbol: ${id}`);
-  return match[1];
+  return { viewBox: match[1], path: match[2] };
 }
 
-test('cross-page play and pause controls reuse the exact songlist icon paths', () => {
-  const playPath = symbolPath(mainHtml, 'icon-caret-right');
-  const pausePath = symbolPath(mainHtml, 'icon-pause');
+test('all compact-player controls reuse the exact songlist icon geometry', () => {
+  const iconSource = sourceBetween(crossPageSource, 'const PLAYER_ICONS', 'function normalizeDestination');
+  const context = {};
+  vm.runInNewContext(`${iconSource}\nthis.icons = PLAYER_ICONS;`, context);
 
-  assert.ok(crossPageSource.includes(`path: '${playPath}'`));
-  assert.ok(crossPageSource.includes(`path: '${pausePath}'`));
+  for (const id of [
+    'caret-right', 'pause', 'step-backward', 'step-forward',
+    'redo', 'random-shuffle', 'sync', 'heart', 'heart-fill', 'sound',
+  ]) {
+    const expected = symbolIcon(mainHtml, `icon-${id}`);
+    assert.equal(context.icons[id].viewBox, expected.viewBox, `${id} viewBox differs`);
+    assert.equal(context.icons[id].path, expected.path, `${id} path differs`);
+  }
+
+  assert.match(crossPageSource, /playerIcon\('step-backward', 'xsp-mobile-only'\)/);
+  assert.match(crossPageSource, /playerIcon\('step-forward', 'xsp-mobile-only'\)/);
   assert.match(crossPageSource, /setHtml\('toggleIcon', dom\.toggle, playbackIcon\(paused\)\)/);
+  assert.match(crossPageSource, /playerIcon\(mode\.icon, `xsp-mobile-only\$\{modeShrink \? ' icon-sm' : ''\}`\)/);
+  assert.match(crossPageSource, /playerIcon\(active \? 'heart-fill' : 'heart', 'xsp-mobile-only'\)/);
   assert.doesNotMatch(crossPageSource, /paused \? '▶' : 'Ⅱ'/);
 });
 
@@ -48,7 +60,7 @@ test('volume, favorite, and playback-mode controls are present and wired into ha
   assert.match(crossPageSource, /if \(playMode === 'single'\) loadAt\(index, true, 0\)/);
   assert.match(appSource, /player\.audio\.volume = player\.volume;\s*dom\.playerVolume\.value = String\(Math\.round\(player\.volume \* 100\)\);/);
 
-  const modeSource = sourceBetween(crossPageSource, 'const PLAY_MODES', 'const PLAYBACK_ICONS');
+  const modeSource = sourceBetween(crossPageSource, 'const PLAY_MODES', 'const PLAYER_ICONS');
   const context = {};
   vm.runInNewContext(`${modeSource}\nthis.modes = PLAY_MODES;`, context);
   assert.deepEqual(Array.from(context.modes, mode => mode.key), ['list', 'random', 'single']);
@@ -93,18 +105,31 @@ test('cross-page favorite snapshots use the shared songlist storage and same-pag
   assert.match(crossPageSource, /window\.addEventListener\('storage',[\s\S]*FAVORITES_KEY/);
 });
 
-test('both destination pages load the bumped shared assets and reserve mobile room for every control', () => {
+test('both destinations use the bumped assets and mobile layout matches the songlist player', () => {
   assert.match(mainHtml, /js\/app\.js\?v=87/);
   for (const source of [buttonsHtml, gameHtml]) {
-    assert.match(source, /cross-page-player\.css\?v=4/);
-    assert.match(source, /cross-page-player\.js\?v=5/);
+    assert.match(source, /cross-page-player\.css\?v=5/);
+    assert.match(source, /cross-page-player\.js\?v=6/);
   }
 
-  assert.match(crossPageCss, /grid-template-columns:[^;]*34px 34px minmax\(100px, 0\.7fr\)/);
-  assert.match(crossPageCss, /"prev toggle next mode favorite progress"/);
-  assert.match(crossPageCss, /"volume volume volume volume volume volume"/);
-  assert.match(crossPageCss, /\.xsp-favorite\.is-active/);
-  assert.match(crossPageCss, /\.xsp-volume-input/);
-  assert.match(crossPageCss, /@media \(min-width: 721px\) and \(max-width: 768px\)[\s\S]*86svh - 124px/);
-  assert.match(crossPageCss, /@media \(min-width: 769px\)[\s\S]*86svh - 88px/);
+  const mobileCss = sourceBetween(crossPageCss, '@media (max-width: 768px)', '/* 24 点横屏');
+  assert.match(crossPageCss, /grid-template-columns:[^;]*34px 34px minmax\(100px, 0\.7fr\)/, 'desktop keeps full controls');
+  assert.match(mobileCss, /contain: none;/);
+  assert.match(mobileCss, /grid-template-columns: 30px 36px 30px minmax\(56px, 1fr\) 30px 30px/);
+  assert.match(mobileCss, /"info info info info info info"\s*"prev toggle next progress mode favorite"/);
+  assert.match(crossPageSource, /class="xsp-desktop-glyph"/);
+  assert.match(crossPageSource, /xsp-mobile-only/);
+  assert.match(crossPageCss, /\.xsp-icon\.xsp-mobile-only \{\s*display: none;/);
+  assert.match(mobileCss, /\.xsp-desktop-glyph \{\s*display: none;/);
+  assert.match(mobileCss, /\.xsp-icon\.xsp-mobile-only \{[\s\S]*display: inline-block;/);
+  assert.match(mobileCss, /\.xsp-artist,[\s\S]*\.xsp-volume \{\s*display: none !important;/);
+  assert.match(mobileCss, /backdrop-filter: none !important;\s*-webkit-backdrop-filter: none !important;/);
+  assert.match(mobileCss, /\.xsp-name \{[\s\S]*color: #394623;[\s\S]*font-size: 12\.5px;[\s\S]*line-height: 1\.35;/);
+  assert.match(mobileCss, /\.xsp-progress \{[\s\S]*display: flex;[\s\S]*gap: 0;/);
+  assert.match(mobileCss, /\.xsp-seek \{[\s\S]*appearance: none;[\s\S]*margin: revert;[\s\S]*background: #c3cd9a;/);
+  assert.match(mobileCss, /\.xsp-seek::-webkit-slider-thumb \{[\s\S]*width: 13px;[\s\S]*background: #8a9a4e;/);
+  assert.match(mobileCss, /\.xsp-toggle \{[\s\S]*width: 36px;[\s\S]*height: 36px;[\s\S]*background: linear-gradient\(135deg, #8a9a4e, #718239\)/);
+  assert.match(mobileCss, /body\.has-cross-page-song-player \{\s*padding-bottom: 88px;/);
+  assert.match(crossPageCss, /@media \(min-width: 721px\)[\s\S]*86svh - 88px/);
+  assert.doesNotMatch(mobileCss, /"volume volume/);
 });
