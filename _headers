@@ -1,3 +1,6 @@
+/assets/audio/*
+  Content-Type: audio/mp4
+
 /assets/*
   Cache-Control: public, max-age=86400
 

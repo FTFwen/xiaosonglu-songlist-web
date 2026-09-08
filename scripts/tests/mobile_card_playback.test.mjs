@@ -6,6 +6,7 @@ import vm from 'node:vm';
 const root = new URL('../../', import.meta.url);
 const appSource = await readFile(new URL('js/app.js', root), 'utf8');
 const htmlSource = await readFile(new URL('index.html', root), 'utf8');
+const headersSource = await readFile(new URL('_headers', root), 'utf8');
 
 function sourceBetween(source, startText, endText) {
   const start = source.indexOf(startText);
@@ -566,6 +567,10 @@ test('mobile playing card class follows real player state without animations', (
   assert.equal(playClasses.contains('playing'), false);
   assert.equal(playButton.innerHTML, '<caret-right>');
   assert.equal(playButton.title, '播放音频');
+});
+
+test('published m4a assets force a browser-playable MIME type', () => {
+  assert.match(headersSource, /\/assets\/audio\/\*\s+Content-Type: audio\/mp4/);
 });
 
 test('mobile media-query cascade gives only the playing card a glass state and clears sticky hover', () => {
