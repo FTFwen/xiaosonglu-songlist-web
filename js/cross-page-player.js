@@ -4,6 +4,7 @@
 
   const HANDOFF_KEY = 'xsl:cross-page-player:handoff:v1';
   const MAX_HANDOFF_AGE = 5 * 60 * 1000;
+  const AUDIO_ASSET_VERSION = '3';
 
   function normalizeDestination(urlValue) {
     try {
@@ -42,6 +43,7 @@
     try {
       const url = new URL(item.src, window.location.origin);
       if (url.origin !== window.location.origin) return null;
+      if (url.pathname.startsWith('/assets/audio/')) url.searchParams.set('v', AUDIO_ASSET_VERSION);
       return {
         song_id: item.song_id,
         row_key: String(item.row_key || item.song_name || ''),

@@ -9,6 +9,7 @@
 
 const SONG_CACHE_TTL = 5 * 60 * 1000;
 const HISTORY_CACHE_TTL = 30 * 60 * 1000;
+const AUDIO_ASSET_VERSION = '3';
 // 中意存档（单一本地存档，浏览器 localStorage）
 const FAVORITES_KEY = 'favorites:shared';
 // 当前用的中意清单名（上传/导入存档时记录，刷新按它拉取）
@@ -885,20 +886,36 @@ function isPlayAborted(err) {
   return !!err && (err.name === 'AbortError' || /interrupted by a call to pause/i.test(err.message || ''));
 }
 
+function versionedAudioUrl(rawUrl) {
+  if (!rawUrl || rawUrl.startsWith('data:')) return rawUrl || '';
+  try {
+    const url = new URL(rawUrl, document.baseURI);
+    if (url.origin === window.location.origin && url.pathname.startsWith('/assets/audio/')) {
+      // Pages/CDN may retain a negative cache entry from an older deployment; a new asset
+      // revision also upgrades stale cross-page handoffs that still carry ?v=2.
+      url.searchParams.set('v', AUDIO_ASSET_VERSION);
+    }
+    return url.href;
+  } catch (e) {
+    return rawUrl;
+  }
+}
+
 function audioUrlOf(song) {
   if (!song) return '';
   if (song.cross_page_src) {
     try {
       const restoredUrl = new URL(song.cross_page_src, window.location.origin);
-      if (restoredUrl.origin === window.location.origin) return restoredUrl.href;
+      if (restoredUrl.origin === window.location.origin) return versionedAudioUrl(restoredUrl.href);
     } catch (e) { /* ignore invalid restored URL */ }
   }
   if (!state.audioIndex || !state.audioIndex.audios) return '';
   const key = song.row_key || song.song_name || '';
   const rel = state.audioIndex.audios[key] || '';
   if (!rel) return '';
-  if (rel.startsWith('http://') || rel.startsWith('https://') || rel.startsWith('data:')) return rel;
-  return (window.APP_BASE_URL || '') + rel;
+  return versionedAudioUrl(rel.startsWith('http://') || rel.startsWith('https://') || rel.startsWith('data:')
+    ? rel
+    : (window.APP_BASE_URL || '') + rel);
 }
 
 // 歌切切片标题：优先歌切台账标题（单曲视频标题 / 合集分P标题），兜底回放标题
