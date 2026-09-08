@@ -67,6 +67,16 @@ test('all local favorite mutation paths persist through the auto-sync aware save
   assert.match(saver, /void runFavoriteAutoSyncLoop\(\)/);
 });
 
+test('favorite archive ETags normalize weak edge headers to strong R2 tokens', () => {
+  const helper = sourceBetween(appSource, 'function normalizeFavoriteArchiveEtag', 'async function favoriteArchiveFetch');
+  const context = {};
+  vm.runInNewContext(`${helper}\nthis.normalize = normalizeFavoriteArchiveEtag;`, context);
+  assert.equal(context.normalize('W/"abc123"'), '"abc123"');
+  assert.equal(context.normalize('"abc123"'), '"abc123"');
+  assert.equal(context.normalize('abc123'), '"abc123"');
+  assert.equal(context.normalize(''), '');
+});
+
 test('favorite archive timeout covers response body and external cancellation', async () => {
   const helper = sourceBetween(appSource, 'async function favoriteArchiveFetch', 'async function fetchFavoriteArchive');
   const makeContext = timeout => ({
@@ -168,7 +178,7 @@ test('favorite archive API validates and round-trips R2 data', async () => {
     headers: { 'content-type': 'application/json' },
     body: JSON.stringify({
       songs: { 'name:偏食': { song_name: '偏食' } },
-      expectedEtag: '"v2"',
+      expectedEtag: 'W/"v2"',
     }),
   }));
   assert.equal(response.status, 200);

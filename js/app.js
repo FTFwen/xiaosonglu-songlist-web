@@ -2333,6 +2333,12 @@ async function persistFavoriteAutoSyncAck(name, songs) {
   state.favAutoSyncAckSignature = signature;
 }
 
+function normalizeFavoriteArchiveEtag(value) {
+  let etag = String(value || '').trim().replace(/^W\//i, '').trim();
+  etag = etag.replace(/^"|"$/g, '');
+  return etag ? `"${etag}"` : '';
+}
+
 async function favoriteArchiveFetch(url, options = {}) {
   const externalSignal = options.signal;
   const controller = new AbortController();
@@ -2381,7 +2387,7 @@ async function fetchFavoriteArchive(name, { signal } = {}) {
     exists: true,
     songs: normalizeFavoriteMap(data.songs),
     savedAt: data.savedAt || '',
-    etag: res.headers.get('etag') || data.etag || ''
+    etag: normalizeFavoriteArchiveEtag(data.etag || res.headers.get('etag'))
   };
 }
 
@@ -2403,7 +2409,7 @@ async function putFavoriteArchive(name, songs, { signal, expectedEtag } = {}) {
   if (!res.ok) throw new Error(`服务器返回 ${res.status}`);
   let data = null;
   try { data = JSON.parse(bodyText); } catch (error) { throw new Error('服务器返回了无效内容'); }
-  return { ...data, etag: res.headers.get('etag') || data.etag || '' };
+  return { ...data, etag: normalizeFavoriteArchiveEtag(data.etag || res.headers.get('etag')) };
 }
 
 function favoriteSyncErrorText(error) {

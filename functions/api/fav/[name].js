@@ -31,6 +31,11 @@ function etagOf(object) {
   return object.etag ? `"${object.etag}"` : '';
 }
 
+function bareEtag(value) {
+  let etag = String(value || '').trim().replace(/^W\//i, '').trim();
+  return etag.replace(/^"|"$/g, '');
+}
+
 function jsonWithObjectEtag(data, object, status = 200) {
   const etag = etagOf(object);
   return json({ ...data, etag }, status, etag ? { etag } : {});
@@ -71,7 +76,8 @@ export async function onRequestPut(context) {
   }
 
   const hasExpectedEtag = Object.prototype.hasOwnProperty.call(data, 'expectedEtag');
-  const expectedEtag = data.expectedEtag == null ? '' : String(data.expectedEtag);
+  const expectedEtag = data.expectedEtag == null ? '' : bareEtag(data.expectedEtag);
+  if (data.expectedEtag != null && !expectedEtag) return json({ error: 'invalid etag' }, 400);
   let existing = null;
   let stored = null;
 
@@ -92,13 +98,13 @@ export async function onRequestPut(context) {
   } else {
     stored = await env.xsl_buttons.put(PREFIX + name, body, {
       httpMetadata: { contentType: 'application/json' },
-      onlyIf: { etagMatches: expectedEtag.replace(/^"|"$/g, '') },
+      onlyIf: { etagMatches: expectedEtag },
     });
     if (!stored) {
       const latest = await env.xsl_buttons.head(PREFIX + name);
       return jsonWithObjectEtag({ error: 'archive changed' }, latest, 409);
     }
-    existing = { etag: expectedEtag.replace(/^"|"$/g, '') };
+    existing = { etag: expectedEtag };
   }
 
   return jsonWithObjectEtag({
