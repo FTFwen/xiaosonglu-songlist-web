@@ -14,9 +14,65 @@ $configPath = Join-Path $rootPath 'wrangler.toml'
 $functionsPath = Join-Path $rootPath 'functions'
 if (-not (Test-Path -LiteralPath $configPath -PathType Leaf)) { throw 'wrangler.toml is required; refusing static-only deployment.' }
 if (-not (Test-Path -LiteralPath $functionsPath -PathType Container)) { throw 'functions/ is required; refusing static-only deployment.' }
-$configText = Get-Content -LiteralPath $configPath -Raw
+$configText = Get-Content -LiteralPath $configPath -Raw -Encoding UTF8
 if ($configText -notmatch '(?m)^\s*pages_build_output_dir\s*=') { throw 'wrangler.toml has no pages_build_output_dir.' }
 if ($configText -notmatch '(?m)^\s*\[\[r2_buckets\]\]') { throw 'wrangler.toml has no R2 binding; refusing deployment.' }
+
+# Song audio is intentionally ignored by Git, but every Pages deployment must still carry it.
+$audioIndexPath = Join-Path $rootPath 'data\xiaosonglu\audio_index.json'
+$audioBaselinePath = Join-Path $rootPath 'data\xiaosonglu\audio_asset_baseline.json'
+if (-not (Test-Path -LiteralPath $audioIndexPath -PathType Leaf)) { throw 'audio_index.json is required.' }
+if (-not (Test-Path -LiteralPath $audioBaselinePath -PathType Leaf)) { throw 'The durable audio asset baseline is missing; refusing deployment.' }
+$audioIndex = Get-Content -LiteralPath $audioIndexPath -Raw -Encoding UTF8 | ConvertFrom-Json
+$audioProperties = @($audioIndex.audios.PSObject.Properties)
+if ($audioProperties.Count -eq 0) { throw 'audio_index.json must contain a non-empty audios object.' }
+if ([int]$audioIndex.count -ne $audioProperties.Count) { throw 'audio_index.json count does not match its audios entries.' }
+$audioRelativePaths = @()
+foreach ($property in $audioProperties) {
+    $rawPath = [string]$property.Value
+    if ($rawPath -notmatch '^assets/audio/[A-Za-z0-9][A-Za-z0-9._-]*\.m4a(?:\?[^#]*)?$') { throw "Unsafe audio path in audio_index.json: $rawPath" }
+    $audioRelativePaths += $rawPath.Split('?')[0].Replace('/', '\')
+}
+$audioRelativePaths = @($audioRelativePaths | Sort-Object -Unique)
+if ($audioRelativePaths.Count -ne $audioProperties.Count) { throw 'audio_index.json contains duplicate or colliding audio targets.' }
+$audioBaseline = Get-Content -LiteralPath $audioBaselinePath -Raw -Encoding UTF8 | ConvertFrom-Json
+$baselineProperties = @($audioBaseline.files.PSObject.Properties)
+if ($baselineProperties.Count -eq 0 -or [int]$audioBaseline.count -ne $baselineProperties.Count) { throw 'Durable audio baseline is empty or has an invalid count.' }
+$baselineHashes = @{}
+$baselineSizes = @{}
+foreach ($property in $baselineProperties) {
+    $rawPath = [string]$property.Name
+    if ($rawPath -notmatch '^assets/audio/[A-Za-z0-9][A-Za-z0-9._-]*\.m4a$') { throw "Unsafe path in durable audio baseline: $rawPath" }
+    $relative = $rawPath.Replace('/', '\')
+    if ($baselineHashes.ContainsKey($relative)) { throw "Duplicate path in durable audio baseline: $rawPath" }
+    $baselineHashes[$relative] = [string]$property.Value.sha256
+    $baselineSizes[$relative] = [long]$property.Value.bytes
+}
+$baselineDifference = @(Compare-Object -ReferenceObject @($audioRelativePaths) -DifferenceObject @($baselineHashes.Keys))
+if ($baselineDifference.Count -gt 0) { throw 'audio_index.json differs from the durable audio baseline; explicitly review and adopt the new set first.' }
+$audioRootPath = Join-Path $rootPath 'assets\audio'
+if (-not (Test-Path -LiteralPath $audioRootPath -PathType Container)) { throw 'assets/audio is missing; run tools/sync_song_audio_assets.py before deploying.' }
+$audioRootItem = Get-Item -LiteralPath $audioRootPath
+if (($audioRootItem.Attributes -band [System.IO.FileAttributes]::ReparsePoint) -ne 0) { throw 'assets/audio must not be a link or reparse point.' }
+$audioSourceHashes = @{}
+foreach ($relative in $audioRelativePaths) {
+    $source = Join-Path $rootPath $relative
+    if (-not (Test-Path -LiteralPath $source -PathType Leaf)) {
+        throw "Missing song audio asset $relative; run tools/sync_song_audio_assets.py against a known-good deployment before deploying."
+    }
+    $item = Get-Item -LiteralPath $source
+    if (($item.Attributes -band [System.IO.FileAttributes]::ReparsePoint) -ne 0) { throw "Song audio asset must not be a link or reparse point: $relative" }
+    if ($item.Length -le 0 -or $item.Length -ne $baselineSizes[$relative]) { throw "Song audio asset size mismatch: $relative" }
+    $header = @(Get-Content -LiteralPath $source -Encoding Byte -TotalCount 12)
+    if ($header.Count -lt 12 -or $header[4] -ne 102 -or $header[5] -ne 116 -or $header[6] -ne 121 -or $header[7] -ne 112) {
+        throw "Song audio asset is not an M4A container: $relative"
+    }
+    $expectedHash = $baselineHashes[$relative]
+    if ([string]::IsNullOrWhiteSpace($expectedHash)) { throw "Durable audio baseline has no hash for $relative" }
+    $actualHash = (Get-FileHash -LiteralPath $source -Algorithm SHA256).Hash.ToLowerInvariant()
+    if ($actualHash -ne $expectedHash.ToLowerInvariant()) { throw "Song audio hash mismatch: $relative" }
+    $audioSourceHashes[$relative] = $actualHash
+}
 
 $git = Get-Command git -ErrorAction Stop
 $head = (& $git.Source -C $rootPath rev-parse HEAD).Trim()
@@ -57,7 +113,15 @@ $overlayRelativePaths = @(
 $overlayed = @()
 foreach ($relative in $overlayRelativePaths) {
     $source = Join-Path $rootPath $relative
-    if (-not (Test-Path -LiteralPath $source -PathType Leaf)) { continue }
+    if (-not (Test-Path -LiteralPath $source -PathType Leaf)) { throw "Required deployment overlay is missing: $relative" }
+    $destination = Join-Path $stagePath $relative
+    $parent = Split-Path -Parent $destination
+    if (-not (Test-Path -LiteralPath $parent)) { New-Item -ItemType Directory -Path $parent -Force | Out-Null }
+    Copy-Item -LiteralPath $source -Destination $destination -Force
+    $overlayed += $relative.Replace('\', '/')
+}
+foreach ($relative in $audioRelativePaths) {
+    $source = Join-Path $rootPath $relative
     $destination = Join-Path $stagePath $relative
     $parent = Split-Path -Parent $destination
     if (-not (Test-Path -LiteralPath $parent)) { New-Item -ItemType Directory -Path $parent -Force | Out-Null }
@@ -75,6 +139,7 @@ foreach ($relative in $blockedDirectories) {
     if (Test-Path -LiteralPath $candidate) { Remove-Item -LiteralPath $candidate -Recurse -Force }
 }
 $blockedFiles = @(
+    'data\xiaosonglu\audio_asset_baseline.json',
     'data\xiaosonglu\ingestion_state.json',
     'data\xiaosonglu\remote_baseline_manifest.json'
 )
@@ -87,6 +152,34 @@ Get-ChildItem -LiteralPath $stagePath -Recurse -File | Where-Object {
     $_.Extension -in @('.mp4', '.webm', '.mkv', '.mov', '.flv')
 } | Remove-Item -Force
 
+# Verify the final stage, not merely the working tree examined before archive/copy.
+$stageConfigPath = Join-Path $stagePath 'wrangler.toml'
+$stageFunctionsPath = Join-Path $stagePath 'functions'
+if (-not (Test-Path -LiteralPath $stageConfigPath -PathType Leaf) -or -not (Test-Path -LiteralPath $stageFunctionsPath -PathType Container)) {
+    throw 'Final stage lost wrangler.toml or functions/; refusing deployment.'
+}
+$stageFunctionFiles = @(Get-ChildItem -LiteralPath $stageFunctionsPath -Recurse -File)
+if ($stageFunctionFiles.Count -eq 0) { throw 'Final stage has no Pages Function files; refusing static-only deployment.' }
+$stageConfigText = Get-Content -LiteralPath $stageConfigPath -Raw -Encoding UTF8
+if ($stageConfigText -notmatch '(?m)^\s*pages_build_output_dir\s*=' -or $stageConfigText -notmatch '(?m)^\s*\[\[r2_buckets\]\]') {
+    throw 'Final stage lost its Pages output or R2 binding configuration.'
+}
+$stageAudioRoot = Join-Path $stagePath 'assets\audio'
+$stageAudioFiles = @(Get-ChildItem -LiteralPath $stageAudioRoot -Recurse -File -ErrorAction Stop)
+if ($stageAudioFiles.Count -ne $audioRelativePaths.Count) { throw "Final stage audio count mismatch: expected $($audioRelativePaths.Count), got $($stageAudioFiles.Count)." }
+$stagedAudioCount = 0
+foreach ($relative in $audioRelativePaths) {
+    $staged = Join-Path $stagePath $relative
+    if (-not (Test-Path -LiteralPath $staged -PathType Leaf)) { throw "Final stage is missing song audio: $relative" }
+    $item = Get-Item -LiteralPath $staged
+    if (($item.Attributes -band [System.IO.FileAttributes]::ReparsePoint) -ne 0 -or $item.Length -ne $baselineSizes[$relative]) {
+        throw "Final staged song audio is invalid: $relative"
+    }
+    $stagedHash = (Get-FileHash -LiteralPath $staged -Algorithm SHA256).Hash.ToLowerInvariant()
+    if ($stagedHash -ne $audioSourceHashes[$relative]) { throw "Final staged song audio hash mismatch: $relative" }
+    $stagedAudioCount++
+}
+
 $manifestLines = @()
 $stageFiles = @(Get-ChildItem -LiteralPath $stagePath -Recurse -File | Sort-Object FullName)
 foreach ($file in $stageFiles) {
@@ -98,9 +191,13 @@ $manifestPath = Join-Path $wranglerRoot 'deploy-manifest.txt'
 [System.IO.File]::WriteAllLines($manifestPath, $manifestLines, (New-Object System.Text.UTF8Encoding($false)))
 $contentHash = (Get-FileHash -LiteralPath $manifestPath -Algorithm SHA256).Hash.ToLowerInvariant()
 $statePath = Join-Path $rootPath 'data\xiaosonglu\_deploy_state.json'
+$accountScope = if ([string]::IsNullOrWhiteSpace($env:CLOUDFLARE_ACCOUNT_ID)) { 'wrangler-oauth-default' } else { $env:CLOUDFLARE_ACCOUNT_ID }
 $previousHash = $null
 if (Test-Path -LiteralPath $statePath -PathType Leaf) {
-    try { $previousHash = (Get-Content -LiteralPath $statePath -Raw | ConvertFrom-Json).contentHash } catch { $previousHash = $null }
+    try {
+        $previousState = Get-Content -LiteralPath $statePath -Raw -Encoding UTF8 | ConvertFrom-Json
+        if ($previousState.accountScope -eq $accountScope -and $previousState.projectName -eq $ProjectName -and $previousState.branch -eq $Branch) { $previousHash = $previousState.contentHash }
+    } catch { $previousHash = $null }
 }
 $contentChanged = $Force -or ($contentHash -ne $previousHash)
 $hasExplicitCredentials = -not [string]::IsNullOrWhiteSpace($env:CLOUDFLARE_API_TOKEN) -and -not [string]::IsNullOrWhiteSpace($env:CLOUDFLARE_ACCOUNT_ID)
@@ -141,19 +238,23 @@ if ($Deploy) {
             $state = [ordered]@{
                 schemaVersion = 1
                 deployedAt = [DateTime]::UtcNow.ToString('o')
+                accountScope = $accountScope
                 projectName = $ProjectName
                 branch = $Branch
                 commitHash = $head
                 contentHash = $contentHash
                 fileCount = $stageFiles.Count
             }
-            [System.IO.File]::WriteAllText($statePath, (($state | ConvertTo-Json -Depth 4) + "`n"), (New-Object System.Text.UTF8Encoding($false)))
+            $stateTempPath = "$statePath.$PID.tmp"
+            [System.IO.File]::WriteAllText($stateTempPath, (($state | ConvertTo-Json -Depth 4) + "`n"), (New-Object System.Text.UTF8Encoding($false)))
+            Move-Item -LiteralPath $stateTempPath -Destination $statePath -Force
         }
     }
 }
 
+$operationFailed = $status -in @('deployment-failed', 'skipped-missing-credentials', 'skipped-missing-wrangler')
 $result = [ordered]@{
-    ok = $status -ne 'deployment-failed'
+    ok = -not $operationFailed
     status = $status
     projectName = $ProjectName
     branch = $Branch
@@ -166,11 +267,12 @@ $result = [ordered]@{
     wranglerRoute = if ($wranglerCommand) { $wranglerCommand.Source } else { $null }
     stagePath = $stagePath
     stageFileCount = $stageFiles.Count
-    functionsFileCount = @(Get-ChildItem -LiteralPath (Join-Path $stagePath 'functions') -Recurse -File).Count
+    functionsFileCount = $stageFunctionFiles.Count
+    songAudioFileCount = $stagedAudioCount
     r2BindingPreserved = $true
     overlayedFiles = $overlayed
     excludedWorkingTreeChangeCount = $workingTreeStatus.Count
     deploymentOutput = $deploymentOutput
 }
 $result | ConvertTo-Json -Depth 6
-if ($status -eq 'deployment-failed') { exit 1 }
+if ($operationFailed) { exit 1 }

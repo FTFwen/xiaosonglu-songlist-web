@@ -47,6 +47,23 @@ const emptyCuts = {
   roomKey: 'xiaosonglu', roomId: '1727071052', sourceType: 'bilibili-song-cut-index', updatedAt: '2026-01-01T00:00:00.000Z', items: [],
 };
 
+test('durable audio baseline exactly matches the published audio index', async () => {
+  const dataDir = new URL('../../data/xiaosonglu/', import.meta.url);
+  const audioIndex = JSON.parse(await readFile(new URL('audio_index.json', dataDir), 'utf8'));
+  const baseline = JSON.parse(await readFile(new URL('audio_asset_baseline.json', dataDir), 'utf8'));
+  const indexedPaths = [...new Set(Object.values(audioIndex.audios).map((value) => String(value).split('?', 1)[0]))].sort();
+  const baselinePaths = Object.keys(baseline.files).sort();
+  assert.equal(Object.keys(audioIndex.audios).length, audioIndex.count);
+  assert.equal(indexedPaths.length, audioIndex.count);
+  assert.equal(baselinePaths.length, baseline.count);
+  assert.deepEqual(indexedPaths, baselinePaths);
+  for (const [path, expected] of Object.entries(baseline.files)) {
+    assert.match(path, /^assets\/audio\/[A-Za-z0-9][A-Za-z0-9._-]*\.m4a$/);
+    assert.ok(Number.isSafeInteger(expected.bytes) && expected.bytes > 0);
+    assert.match(expected.sha256, /^[a-f0-9]{64}$/);
+  }
+});
+
 test('lyric detector accepts only full-width lyric brackets', () => {
   assert.equal(lyricBody('【这是足够长的一句歌词】'), '这是足够长的一句歌词');
   assert.equal(lyricBody('［这是另一句足够长的歌词］'), '这是另一句足够长的歌词');

@@ -17,11 +17,15 @@ function Assert-ExitCode {
 
 function Get-PipelineHashes {
     $relativePaths = @(
-        'data\xiaosonglu\song_catalog.json',
+        'data\xiaosonglu\audio_index.json',
         'data\xiaosonglu\history_index.json',
-        'data\xiaosonglu\song_details.json',
+        'data\xiaosonglu\replay_song_segments.json',
+        'data\xiaosonglu\song_catalog.json',
+        'data\xiaosonglu\song_cut_index.json',
         'data\xiaosonglu\song_cut_info.json',
         'data\xiaosonglu\song_cut_table.csv',
+        'data\xiaosonglu\song_details.json',
+        'data\xiaosonglu\song_metadata_overrides.json',
         'js\data.js',
         'workshop\data\xiaosonglu\song_catalog.json',
         'workshop\data\xiaosonglu\history_index.json',
@@ -37,6 +41,19 @@ function Get-PipelineHashes {
             (Get-FileHash -LiteralPath $path -Algorithm SHA256).Hash.ToLowerInvariant()
         } else { $null }
     }
+    $audioIndexPath = Join-Path $rootPath 'data\xiaosonglu\audio_index.json'
+    if (Test-Path -LiteralPath $audioIndexPath -PathType Leaf) {
+        $audioIndex = Get-Content -LiteralPath $audioIndexPath -Raw -Encoding UTF8 | ConvertFrom-Json
+        foreach ($value in @($audioIndex.audios.PSObject.Properties.Value | Sort-Object -Unique)) {
+            $rawPath = [string]$value
+            if ($rawPath -notmatch '^assets/audio/[A-Za-z0-9][A-Za-z0-9._-]*\.m4a(?:\?[^#]*)?$') { throw "Unsafe audio path in audio_index.json: $rawPath" }
+            $relative = $rawPath.Split('?')[0].Replace('/', '\')
+            $path = Join-Path $rootPath $relative
+            $hashes[$relative.Replace('\', '/')] = if (Test-Path -LiteralPath $path -PathType Leaf) {
+                (Get-FileHash -LiteralPath $path -Algorithm SHA256).Hash.ToLowerInvariant()
+            } else { $null }
+        }
+    }
     return $hashes
 }
 
@@ -50,12 +67,16 @@ try {
     Assert-ExitCode $LASTEXITCODE @(0) 'tracked-video audit'
     if ($trackedVideos.Count -gt 0) { throw "Tracked video assets detected: $($trackedVideos -join ', ')" }
 
+    $before = Get-PipelineHashes
+
+    $audioSourceBase = if ([string]::IsNullOrWhiteSpace($env:XSL_AUDIO_BASE_URL)) { 'https://viridis.love/' } else { $env:XSL_AUDIO_BASE_URL }
+    & $python 'tools/sync_song_audio_assets.py' '--source-base' $audioSourceBase '--quiet'
+    Assert-ExitCode $LASTEXITCODE @(0) 'song audio baseline sync'
+
     & $python 'tools/sync_viridis_baseline.py'
     $baselineExit = $LASTEXITCODE
     # Exit 2 means a local, content-hash divergence was preserved; it must never trigger a remote overwrite.
     Assert-ExitCode $baselineExit @(0, 2) 'remote baseline conditional sync'
-
-    $before = Get-PipelineHashes
 
     & $node 'scripts/scan_unrecorded_lives.mjs' '--write'
     $scanExit = $LASTEXITCODE
@@ -78,12 +99,13 @@ try {
 
     $after = Get-PipelineHashes
     $changedFiles = @()
-    foreach ($key in $after.Keys) {
+    $allHashKeys = @(@($before.Keys) + @($after.Keys) | Sort-Object -Unique)
+    foreach ($key in $allHashKeys) {
         if ($before[$key] -ne $after[$key]) { $changedFiles += $key }
     }
 
     $deployArguments = @()
-    if ($Deploy -and -not $pendingReview -and $changedFiles.Count -gt 0) { $deployArguments += '-Deploy' }
+    if ($Deploy -and -not $pendingReview) { $deployArguments += '-Deploy' }
     $deployText = (& (Join-Path $PSScriptRoot 'deploy_web.ps1') @deployArguments | Out-String).Trim()
     Assert-ExitCode $LASTEXITCODE @(0) 'deployment preflight/operation'
     $deployResult = $deployText | ConvertFrom-Json
