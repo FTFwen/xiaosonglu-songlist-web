@@ -34,8 +34,11 @@
 # 只做安全预检和隔离部署目录，不联网部署
 .\xsl-web-tools\deploy_web.ps1
 
-# 条件满足时部署；无凭证或内容哈希未变化会安全跳过
+# 自动化：条件满足时使用环境变量凭据部署
 .\xsl-web-tools\deploy_web.ps1 -Deploy
+
+# 人工已执行 wrangler login 时，显式允许使用本机 OAuth
+.\xsl-web-tools\deploy_web.ps1 -Deploy -AllowOAuth
 ```
 
 部署器具有以下保护：
@@ -45,7 +48,7 @@
 3. 以当前 Git `HEAD` 创建隔离 staging，再只覆盖歌单管线拥有的数据文件；工作区里其他未提交的 UI 修改不会被顺带部署。
 4. staging 中会再次删除视频目录、视频扩展名、弹幕/候选缓存、内部脚本目录、`ingestion_state.json` 与远端基线清单。
 5. 使用 staging 全内容 SHA-256 与 `data/xiaosonglu/_deploy_state.json`（本地忽略文件）比较；无变化不部署。
-6. 只有显式传入 `-Deploy` 且同时存在 `CLOUDFLARE_API_TOKEN`、`CLOUDFLARE_ACCOUNT_ID` 时才调用 Wrangler。
+6. 自动化只有显式传入 `-Deploy` 且同时存在 `CLOUDFLARE_API_TOKEN`、`CLOUDFLARE_ACCOUNT_ID` 时才调用 Wrangler；人工会话可在确认 `wrangler login` 成功后显式传入 `-AllowOAuth`，不会静默借用登录态。
 7. 实际命令仍是 `wrangler pages deploy`，并从 staging 根读取完整 Pages Functions 与 R2 配置。
 
 状态值：

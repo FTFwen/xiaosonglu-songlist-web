@@ -2,6 +2,7 @@
 param(
     [switch]$Deploy,
     [switch]$Force,
+    [switch]$AllowOAuth,
     [string]$ProjectName = 'xsl-songlist',
     [string]$Branch = 'main',
     [string]$Root = (Split-Path -Parent $PSScriptRoot)
@@ -102,7 +103,8 @@ if (Test-Path -LiteralPath $statePath -PathType Leaf) {
     try { $previousHash = (Get-Content -LiteralPath $statePath -Raw | ConvertFrom-Json).contentHash } catch { $previousHash = $null }
 }
 $contentChanged = $Force -or ($contentHash -ne $previousHash)
-$hasCredentials = -not [string]::IsNullOrWhiteSpace($env:CLOUDFLARE_API_TOKEN) -and -not [string]::IsNullOrWhiteSpace($env:CLOUDFLARE_ACCOUNT_ID)
+$hasExplicitCredentials = -not [string]::IsNullOrWhiteSpace($env:CLOUDFLARE_API_TOKEN) -and -not [string]::IsNullOrWhiteSpace($env:CLOUDFLARE_ACCOUNT_ID)
+$hasCredentials = $hasExplicitCredentials -or $AllowOAuth
 
 $wranglerCommand = Get-Command wrangler.cmd -ErrorAction SilentlyContinue
 $wranglerPrefix = @()
@@ -159,7 +161,8 @@ $result = [ordered]@{
     contentHash = $contentHash
     previousContentHash = $previousHash
     contentChanged = [bool]$contentChanged
-    hasCloudflareCredentials = [bool]$hasCredentials
+    hasCloudflareCredentials = [bool]$hasExplicitCredentials
+    cloudflareAuthMode = if ($hasExplicitCredentials) { 'environment' } elseif ($AllowOAuth) { 'wrangler-oauth' } else { 'none' }
     wranglerRoute = if ($wranglerCommand) { $wranglerCommand.Source } else { $null }
     stagePath = $stagePath
     stageFileCount = $stageFiles.Count
