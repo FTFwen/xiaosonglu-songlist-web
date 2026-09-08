@@ -590,5 +590,5 @@ test('mobile media-query cascade gives only the playing card a glass state and c
     assert.match(css, /\.song-item\.now-playing,[\s\S]*?background: rgba\(244, 246, 232, 0\.38\) !important;[\s\S]*?backdrop-filter: blur\(10px\) saturate\(1\.18\) !important;/);
     assert.match(css, /\.playing-bars[\s\S]*?display: none !important;/);
   }
-  assert.match(htmlSource, /js\/app\.js\?v=86/);
+  assert.match(htmlSource, /js\/app\.js\?v=87/);
 });

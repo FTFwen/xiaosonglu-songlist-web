@@ -1314,6 +1314,7 @@ function restoreCrossPageHandoff() {
   player.playMode = PLAY_MODE_MAP[saved.playMode] ? saved.playMode : 'list';
   player.volume = Number.isFinite(saved.volume) ? Math.min(1, Math.max(0, saved.volume)) : player.volume;
   player.audio.volume = player.volume;
+  dom.playerVolume.value = String(Math.round(player.volume * 100));
 
   const item = player.current;
   const startAt = Math.max(0, Number(saved.currentTime) || 0) +

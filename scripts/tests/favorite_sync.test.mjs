@@ -33,7 +33,7 @@ test('favorite auto-sync UI and persistence wiring are present', () => {
     assert.match(htmlSource, new RegExp(`id=["']${id}["']`));
     assert.match(appSource, new RegExp(`['"]${id}['"]`));
   }
-  assert.match(htmlSource, /js\/app\.js\?v=86/);
+  assert.match(htmlSource, /js\/app\.js\?v=87/);
   assert.match(appSource, /const FAV_AUTO_SYNC_KEY = 'favorites:autoSyncEnabled'/);
   assert.match(appSource, /const FAV_LAST_ACK_KEY = 'favorites:autoSyncLastAck'/);
   assert.match(appSource, /const FAV_REQUEST_TIMEOUT_MS = 15000/);
