@@ -1,6 +1,6 @@
-// 本文件由 E:\tool\plugin 本地数据生成（window.XSL_DATA），供网页直接打开（file://）时使用。
-// 生成时间：2026-09-04 22:52:48
-// 数据源：E:\tool\plugin\data\（song_catalog / history_index / song_details）
+// 本文件由 scripts/build_xiaosonglu_song_data.mjs 从 data/xiaosonglu/ 生成，供 file:// 离线回退使用。
+// 生成时间：2026-09-04 22:52:39
+// 数据源：data/xiaosonglu/（song_catalog / history_index / song_details / audio_index / song_cut_info）
 window.XSL_DATA = {
   song_catalog: {
   "roomKey": "xiaosonglu",
@@ -9276,4 +9276,856 @@ window.XSL_DATA = {
     }
   }
 },
+  audio_index: {
+  "roomKey": "xiaosonglu",
+  "roomId": "1727071052",
+  "generatedAt": "2026-09-04T13:37:32.800Z",
+  "source": "song-cut-audio-download",
+  "description": "每首歌对应的翻唱切片音频（从 B 站歌切/回放下载），供网页在线播放。",
+  "count": 137,
+  "audios": {
+    "勾指起誓": "assets/audio/song_88.m4a",
+    "蝴蝶": "assets/audio/song_25.m4a",
+    "寄明月": "assets/audio/song_02.m4a",
+    "绿色": "assets/audio/song_103.m4a",
+    "偏食": "assets/audio/song_38.m4a",
+    "三月雨": "assets/audio/song_03.m4a",
+    "少女レイ": "assets/audio/song_04.m4a",
+    "食虫植物": "assets/audio/song_46.m4a",
+    "下等马": "assets/audio/song_64.m4a",
+    "Virtual to LIVE": "assets/audio/song_05.m4a",
+    "阿拉斯加海湾": "assets/audio/song_104.m4a",
+    "爱情讯息": "assets/audio/song_06.m4a",
+    "白鸟过河滩": "assets/audio/song_07.m4a",
+    "别找我麻烦": "assets/audio/song_122.m4a",
+    "苍蝇": "assets/audio/song_08.m4a",
+    "虫儿飞": "assets/audio/song_09.m4a",
+    "初恋日記": "assets/audio/song_105.m4a",
+    "吹灭小山河": "assets/audio/song_90.m4a",
+    "春日影": "assets/audio/song_10.m4a",
+    "词不达意": "assets/audio/song_11.m4a",
+    "匆匆那年": "assets/audio/song_12.m4a",
+    "大声钻石": "assets/audio/song_13.m4a",
+    "カタオモイ": "assets/audio/song_14.m4a",
+    "第一只小兔子": "assets/audio/song_15.m4a",
+    "东风志": "assets/audio/song_125.m4a",
+    "都落ち": "assets/audio/song_16.m4a",
+    "多情岸": "assets/audio/song_91.m4a",
+    "二人セゾン": "assets/audio/song_17.m4a",
+    "繁华唱遍": "assets/audio/song_18.m4a",
+    "風になる": "assets/audio/song_19.m4a",
+    "腐草为萤": "assets/audio/song_129.m4a",
+    "故梦": "assets/audio/song_20.m4a",
+    "光": "assets/audio/song_97.m4a",
+    "光景": "assets/audio/song_21.m4a",
+    "航向你的海岛": "assets/audio/song_22.m4a",
+    "横竖撇点折": "assets/audio/song_23.m4a",
+    "后来": "assets/audio/song_24.m4a",
+    "花粉症": "assets/audio/song_26.m4a",
+    "花の塔": "assets/audio/song_136.m4a",
+    "焦糖星": "assets/audio/song_127.m4a",
+    "锦鲤抄": "assets/audio/song_27.m4a",
+    "绝不认输": "assets/audio/song_28.m4a",
+    "君色に染まる": "assets/audio/song_29.m4a",
+    "可愛くてごめん": "assets/audio/song_30.m4a",
+    "涟漪": "assets/audio/song_31.m4a",
+    "炼金少女日志": "assets/audio/song_106.m4a",
+    "恋爱困难少女": "assets/audio/song_32.m4a",
+    "恋苦": "assets/audio/song_96.m4a",
+    "临川浮梦": "assets/audio/song_100.m4a",
+    "流光记": "assets/audio/song_102.m4a",
+    "流霰": "assets/audio/song_92.m4a",
+    "玛德琳娜电塔": "assets/audio/song_33.m4a",
+    "蜜月アン・ドゥ・トロワ": "assets/audio/song_34.m4a",
+    "木偶": "assets/audio/song_35.m4a",
+    "目的论": "assets/audio/song_36.m4a",
+    "你究竟有几个好妹妹": "assets/audio/song_107.m4a",
+    "女孩你为何踮脚尖": "assets/audio/song_108.m4a",
+    "暖暖": "assets/audio/song_37.m4a",
+    "聘书": "assets/audio/song_39.m4a",
+    "泼墨漓江": "assets/audio/song_101.m4a",
+    "栖凰": "assets/audio/song_93.m4a",
+    "绮凝盏": "assets/audio/song_109.m4a",
+    "青鸟衔风": "assets/audio/song_99.m4a",
+    "青柠": "assets/audio/song_40.m4a",
+    "人间不值得": "assets/audio/song_41.m4a",
+    "人间失宠": "assets/audio/song_42.m4a",
+    "人间应又雪": "assets/audio/song_43.m4a",
+    "如果有来生": "assets/audio/song_138.m4a",
+    "山遥路远": "assets/audio/song_44.m4a",
+    "上山岗": "assets/audio/song_45.m4a",
+    "深夜诗人": "assets/audio/song_130.m4a",
+    "十万个春天": "assets/audio/song_128.m4a",
+    "世界は恋に落ちている": "assets/audio/song_47.m4a",
+    "世末歌者": "assets/audio/song_48.m4a",
+    "是风动": "assets/audio/song_110.m4a",
+    "霜雪千年": "assets/audio/song_49.m4a",
+    "私、アイドル宣言": "assets/audio/song_50.m4a",
+    "私のSymphony": "assets/audio/song_51.m4a",
+    "思华年": "assets/audio/song_52.m4a",
+    "四重罪孽": "assets/audio/song_111.m4a",
+    "苏州河": "assets/audio/song_53.m4a",
+    "碎梦": "assets/audio/song_54.m4a",
+    "所以我伸出了手": "assets/audio/song_55.m4a",
+    "她追逐着月光的尽头": "assets/audio/song_126.m4a",
+    "太聪明": "assets/audio/song_56.m4a",
+    "棠梨煎雪": "assets/audio/song_57.m4a",
+    "跳楼机": "assets/audio/song_58.m4a",
+    "铁花飞 中文版": "assets/audio/song_131.m4a",
+    "外婆的澎湖湾": "assets/audio/song_59.m4a",
+    "外婆桥": "assets/audio/song_60.m4a",
+    "未来は風のように": "assets/audio/song_61.m4a",
+    "我的悲伤是水做的": "assets/audio/song_62.m4a",
+    "我多想说再见啊": "assets/audio/song_63.m4a",
+    "下个夏天的烟火": "assets/audio/song_112.m4a",
+    "夏恋慕": "assets/audio/song_95.m4a",
+    "夏日已所剩无几": "assets/audio/song_113.m4a",
+    "夏霞": "assets/audio/song_94.m4a",
+    "想和你迎着台风去看海": "assets/audio/song_114.m4a",
+    "小半": "assets/audio/song_123.m4a",
+    "小丑的品格": "assets/audio/song_124.m4a",
+    "小幸运": "assets/audio/song_65.m4a",
+    "心愿便利贴": "assets/audio/song_66.m4a",
+    "虚拟": "assets/audio/song_115.m4a",
+    "夜蝶": "assets/audio/song_67.m4a",
+    "一半一半": "assets/audio/song_68.m4a",
+    "踊り子": "assets/audio/song_69.m4a",
+    "有点甜": "assets/audio/song_121.m4a",
+    "迂回步": "assets/audio/song_70.m4a",
+    "雨爱": "assets/audio/song_71.m4a",
+    "浴槽とネオンテトラ": "assets/audio/song_133.m4a",
+    "远旅休憩中的邂逅": "assets/audio/song_116.m4a",
+    "月出": "assets/audio/song_117.m4a",
+    "月が綺麗ね": "assets/audio/song_72.m4a",
+    "月巷": "assets/audio/song_98.m4a",
+    "只对你有感觉": "assets/audio/song_120.m4a",
+    "纸星瓶": "assets/audio/song_73.m4a",
+    "CHASE!": "assets/audio/song_74.m4a",
+    "flos": "assets/audio/song_75.m4a",
+    "Fly me to the star": "assets/audio/song_76.m4a",
+    "Fly, My Wings": "assets/audio/song_132.m4a",
+    "I LOVE U": "assets/audio/song_77.m4a",
+    "March of Time": "assets/audio/song_134.m4a",
+    "MORE JUMP MORE!": "assets/audio/song_78.m4a",
+    "SOS": "assets/audio/song_79.m4a",
+    "Starlight Prologue": "assets/audio/song_80.m4a",
+    "START:DASH!!!": "assets/audio/song_81.m4a",
+    "Talking to the Rain": "assets/audio/song_118.m4a",
+    "YOU & IDOL": "assets/audio/song_89.m4a",
+    "アイドル": "assets/audio/song_82.m4a",
+    "アスノヨゾラ哨戒班": "assets/audio/song_83.m4a",
+    "あなたに出会わなければ~夏雪冬花~": "assets/audio/song_135.m4a",
+    "アヤノの幸福理論": "assets/audio/song_84.m4a",
+    "おともだち": "assets/audio/song_85.m4a",
+    "サリシノハラ": "assets/audio/song_119.m4a",
+    "シリウスの心臓": "assets/audio/song_86.m4a",
+    "プロポーズ": "assets/audio/song_87.m4a",
+    "ミカヅキ": "assets/audio/song_137.m4a"
+  }
+},
+  song_cut_info: {
+  "roomKey": "xiaosonglu",
+  "roomId": "1727071052",
+  "generatedAt": "2026-09-04T00:00:00.000Z",
+  "source": "song-cut-title-index",
+  "description": "每首歌对应的歌切切片标题（单曲歌切视频标题 / 合集分P标题），供前端歌切链接显示。",
+  "count": 139,
+  "cuts": {
+    "勾指起誓": {
+      "title": "【小松绿|羽啾】“说好从今以后都牵着手 因为要走很远”《勾指起誓》【虚空合唱】",
+      "kind": "single",
+      "url": "https://www.bilibili.com/video/BV1WGbk6KESs/"
+    },
+    "蝴蝶": {
+      "title": "【小松绿Viridis】 蝴蝶",
+      "kind": "single",
+      "url": "https://www.bilibili.com/video/BV1Kt8i6REvs/"
+    },
+    "寄明月": {
+      "title": "4-寄明月",
+      "kind": "compilation",
+      "url": "https://www.bilibili.com/video/BV1rv8V6DExk/"
+    },
+    "绿色": {
+      "title": "【小松绿Viridis】神中神《绿色》羽啾进入直播间有人心乱了",
+      "kind": "single",
+      "url": "https://www.bilibili.com/video/BV1qg4k6SEMi/"
+    },
+    "三月雨": {
+      "title": "【小松绿Viridis】 三月雨 已雪耻",
+      "kind": "single",
+      "url": "https://www.bilibili.com/video/BV1ky876wE69/"
+    },
+    "少女レイ": {
+      "title": "19，《少女レイ》",
+      "kind": "single",
+      "url": "https://www.bilibili.com/video/BV1WS8c6XE9w/?p=19"
+    },
+    "下等马": {
+      "title": "【小松绿Viridis】《下等马》丨“一身素青纱 草柄当头花”",
+      "kind": "single",
+      "url": "https://www.bilibili.com/video/BV17Wuz6YEci/"
+    },
+    "Virtual to LIVE": {
+      "title": "16，《Virtual to LIVE》",
+      "kind": "single",
+      "url": "https://www.bilibili.com/video/BV1WS8c6XE9w/?p=16"
+    },
+    "阿拉斯加海湾": {
+      "title": "上天啊 你难道不知道我很爱她【小松绿Viridis】阿拉斯加海湾",
+      "kind": "single",
+      "url": "https://www.bilibili.com/video/BV1JX4y6fEpy/"
+    },
+    "爱情讯息": {
+      "title": "6-爱情讯息",
+      "kind": "compilation",
+      "url": "https://www.bilibili.com/video/BV1rv8V6DExk/"
+    },
+    "白鸟过河滩": {
+      "title": "【小松绿Viridis】《白鸟过河滩》丨“我摘下我的翅膀 它变成白鸟”",
+      "kind": "single",
+      "url": "https://www.bilibili.com/video/BV1etuz6fEaa/"
+    },
+    "苍蝇": {
+      "title": "【小松绿Viridis/歌切】苍蝇",
+      "kind": "single",
+      "url": "https://www.bilibili.com/video/BV1SKuC68Eaj/"
+    },
+    "虫儿飞": {
+      "title": "【小松绿Viridis/翻唱】《虫儿飞》",
+      "kind": "single",
+      "url": "https://www.bilibili.com/video/BV1RZuy6CEjs/"
+    },
+    "初恋日記": {
+      "title": "P5 初恋日記",
+      "kind": "collection-chapter",
+      "url": "https://www.bilibili.com/video/BV1gm4C65Ey6/?p=5"
+    },
+    "吹灭小山河": {
+      "title": "【小松绿Viridis/歌切】吹灭小山河",
+      "kind": "single",
+      "url": "https://www.bilibili.com/video/BV11F8h6BE4d/"
+    },
+    "春日影": {
+      "title": "【小松绿Viridis】《春日影》丨VR自研羊宫妃那",
+      "kind": "single",
+      "url": "https://www.bilibili.com/video/BV19Cum6DERH/"
+    },
+    "词不达意": {
+      "title": "【小松绿Viridis/翻唱】《词不达意》",
+      "kind": "single",
+      "url": "https://www.bilibili.com/video/BV1qqum6REJB/"
+    },
+    "匆匆那年": {
+      "title": "【小松绿viridis】《匆匆那年》丨“我们要互相亏欠，我们要藕断丝连”",
+      "kind": "single",
+      "url": "https://www.bilibili.com/video/BV1BUbC68EP6/"
+    },
+    "大声钻石": {
+      "title": "7，《大声钻石》",
+      "kind": "single",
+      "url": "https://www.bilibili.com/video/BV1WS8c6XE9w/?p=7"
+    },
+    "カタオモイ": {
+      "title": "只希望你能一直在我身边。《カタオモイ》",
+      "kind": "single",
+      "url": "https://www.bilibili.com/video/BV1FagM6SEHT/"
+    },
+    "第一只小兔子": {
+      "title": "6，《第一只小兔子》",
+      "kind": "single",
+      "url": "https://www.bilibili.com/video/BV1WS8c6XE9w/?p=6"
+    },
+    "都落ち": {
+      "title": "9-都落ち",
+      "kind": "compilation",
+      "url": "https://www.bilibili.com/video/BV1rv8V6DExk/"
+    },
+    "多情岸": {
+      "title": "【小松绿Viridis/歌切】多情岸",
+      "kind": "single",
+      "url": "https://www.bilibili.com/video/BV1yw8h6TEBf/"
+    },
+    "二人セゾン": {
+      "title": "14，《二人セゾン》",
+      "kind": "single",
+      "url": "https://www.bilibili.com/video/BV1WS8c6XE9w/?p=14"
+    },
+    "繁华唱遍": {
+      "title": "7-繁华唱遍",
+      "kind": "compilation",
+      "url": "https://www.bilibili.com/video/BV1rv8V6DExk/"
+    },
+    "風になる": {
+      "title": "11-風になる",
+      "kind": "compilation",
+      "url": "https://www.bilibili.com/video/BV1rv8V6DExk/"
+    },
+    "故梦": {
+      "title": "【小松绿Viridis/翻唱】《故梦》",
+      "kind": "single",
+      "url": "https://www.bilibili.com/video/BV1FybC6PE5D/"
+    },
+    "光": {
+      "title": "P4 光",
+      "kind": "single",
+      "url": "https://www.bilibili.com/video/BV1m9886kEMZ/?p=4"
+    },
+    "光景": {
+      "title": "【小松绿Viridis/歌切】光景",
+      "kind": "single",
+      "url": "https://www.bilibili.com/video/BV1tk8c6tEFS/"
+    },
+    "航向你的海岛": {
+      "title": "【小松绿Viridis/歌切】航向你的海岛",
+      "kind": "single",
+      "url": "https://www.bilibili.com/video/BV1iRbC6xEBW/"
+    },
+    "横竖撇点折": {
+      "title": "【小松绿】《横竖撇点折》",
+      "kind": "single",
+      "url": "https://www.bilibili.com/video/BV1aUum67E7g/"
+    },
+    "后来": {
+      "title": "【直播回放】第一次的歌回！ 2026年08月09日13点场",
+      "kind": "replay",
+      "url": "https://www.bilibili.com/video/BV17du269EmN"
+    },
+    "花粉症": {
+      "title": "【小松绿Viridis/翻唱】《花粉症》",
+      "kind": "single",
+      "url": "https://www.bilibili.com/video/BV11ju16hExN/"
+    },
+    "锦鲤抄": {
+      "title": "【小松绿Viridis/歌切】锦鲤抄",
+      "kind": "single",
+      "url": "https://www.bilibili.com/video/BV16bby6AEwd/"
+    },
+    "绝不认输": {
+      "title": "【小松绿Viridis】老鼠蟑螂陪我过夜！小声跟唱《绝不认输》",
+      "kind": "single",
+      "url": "https://www.bilibili.com/video/BV1A1uy69EPP/"
+    },
+    "君色に染まる": {
+      "title": "3-君色に染まる",
+      "kind": "compilation",
+      "url": "https://www.bilibili.com/video/BV1rv8V6DExk/"
+    },
+    "可愛くてごめん": {
+      "title": "10-可愛くてごめん",
+      "kind": "compilation",
+      "url": "https://www.bilibili.com/video/BV1rv8V6DExk/"
+    },
+    "涟漪": {
+      "title": "【小松绿Viridis】《涟漪》",
+      "kind": "single",
+      "url": "https://www.bilibili.com/video/BV1oy8V6yEph/"
+    },
+    "炼金少女日志": {
+      "title": "【小松绿Viridis/歌切】炼金少女日志",
+      "kind": "single",
+      "url": "https://www.bilibili.com/video/BV1i8gV6xExv/"
+    },
+    "恋爱困难少女": {
+      "title": "“你喜欢怎样的女孩？”《恋爱困难少女》【小松绿Viridis｜歌切】",
+      "kind": "single",
+      "url": "https://www.bilibili.com/video/BV1QTgJ6vEdB/"
+    },
+    "恋苦": {
+      "title": "P2 恋苦",
+      "kind": "single",
+      "url": "https://www.bilibili.com/video/BV1m9886kEMZ/?p=2"
+    },
+    "临川浮梦": {
+      "title": "P6 临川浮梦",
+      "kind": "collection-chapter",
+      "url": "https://www.bilibili.com/video/BV1gm4C65Ey6/?p=6"
+    },
+    "流光记": {
+      "title": "P15 流光记",
+      "kind": "collection-chapter",
+      "url": "https://www.bilibili.com/video/BV1gm4C65Ey6/?p=15"
+    },
+    "流霰": {
+      "title": "【小松绿Viridis/自留】流霰",
+      "kind": "single",
+      "url": "https://www.bilibili.com/video/BV1Td886GEoN/"
+    },
+    "玛德琳娜电塔": {
+      "title": "【小松绿Viridis】《玛德琳娜电塔(Mardayline Tower)》",
+      "kind": "single",
+      "url": "https://www.bilibili.com/video/BV1bCuz6UEAV/"
+    },
+    "梦良衣": {
+      "title": "【小松绿Viridis】突击的随便唱-2026年08月29日13点场",
+      "kind": "replay",
+      "url": "https://www.bilibili.com/video/BV1RL4k6jEe8/"
+    },
+    "蜜月アン・ドゥ・トロワ": {
+      "title": "2-蜜月アン・ドゥ・トロワ",
+      "kind": "compilation",
+      "url": "https://www.bilibili.com/video/BV1rv8V6DExk/"
+    },
+    "木偶": {
+      "title": "【小松绿Viridis/翻唱】《木偶》",
+      "kind": "single",
+      "url": "https://www.bilibili.com/video/BV1ppu16tE99/"
+    },
+    "目的论": {
+      "title": "【小松绿Viridis】《目的论》",
+      "kind": "single",
+      "url": "https://www.bilibili.com/video/BV1gzuz6pE4C/"
+    },
+    "难过233秒": {
+      "title": "【小松绿Viridis】突击的随便唱-2026年08月29日13点场",
+      "kind": "replay",
+      "url": "https://www.bilibili.com/video/BV1RL4k6jEe8/"
+    },
+    "你究竟有几个好妹妹": {
+      "title": "@羽啾：你是我最爱的妹妹 测谎仪：👎👎👎【小松绿Viridis】",
+      "kind": "single",
+      "url": "https://www.bilibili.com/video/BV1Bg4k6SEeW/"
+    },
+    "女孩你为何踮脚尖": {
+      "title": "P12 女孩你为何踮脚尖",
+      "kind": "collection-chapter",
+      "url": "https://www.bilibili.com/video/BV1idb16YEjD/?p=12"
+    },
+    "暖暖": {
+      "title": "【小松绿Viridis/翻唱】《暖暖》",
+      "kind": "single",
+      "url": "https://www.bilibili.com/video/BV1KVu36iE1z/"
+    },
+    "偏食": {
+      "title": "【小松绿Viridis】《偏食》丨“亲爱的，干脆将我吃掉吧❤”",
+      "kind": "single",
+      "url": "https://www.bilibili.com/video/BV1yJu16bETb/"
+    },
+    "聘书": {
+      "title": "19-聘书",
+      "kind": "compilation",
+      "url": "https://www.bilibili.com/video/BV1rv8V6DExk/"
+    },
+    "泼墨漓江": {
+      "title": "P11 泼墨漓江",
+      "kind": "collection-chapter",
+      "url": "https://www.bilibili.com/video/BV1gm4C65Ey6/?p=11"
+    },
+    "栖凰": {
+      "title": "【小松绿Viridis】栖凰",
+      "kind": "single",
+      "url": "https://www.bilibili.com/video/BV1BN8i66Ej6/"
+    },
+    "绮凝盏": {
+      "title": "P10 绮凝盏",
+      "kind": "collection-chapter",
+      "url": "https://www.bilibili.com/video/BV1gm4C65Ey6/?p=10"
+    },
+    "青鸟衔风": {
+      "title": "【小松绿Viridis】《青鸟衔风》",
+      "kind": "single",
+      "url": "https://www.bilibili.com/video/BV1mwuz62EfH/"
+    },
+    "青柠": {
+      "title": "【小松绿】《青柠》",
+      "kind": "single",
+      "url": "https://www.bilibili.com/video/BV1gTu16BEjy/"
+    },
+    "人间不值得": {
+      "title": "13-人间不值得",
+      "kind": "compilation",
+      "url": "https://www.bilibili.com/video/BV1rv8V6DExk/"
+    },
+    "人间失宠": {
+      "title": "【小松绿Viridis/翻唱】《人间失宠》",
+      "kind": "single",
+      "url": "https://www.bilibili.com/video/BV1yEu16FEQe/"
+    },
+    "人间应又雪": {
+      "title": "【小松绿Viridis/翻唱】《人间应又雪》",
+      "kind": "single",
+      "url": "https://www.bilibili.com/video/BV1QAu36GEbM/"
+    },
+    "山遥路远": {
+      "title": "【小松绿Viridis/翻唱】《山遥路远》",
+      "kind": "single",
+      "url": "https://www.bilibili.com/video/BV1F7bQ69EGv/"
+    },
+    "上山岗": {
+      "title": "【小松绿Viridis/歌切】上山岗",
+      "kind": "single",
+      "url": "https://www.bilibili.com/video/BV1Ca8V6XEbY/"
+    },
+    "食虫植物": {
+      "title": "【小松绿Viridis】《食虫植物》丨“请不要离开好吗？”",
+      "kind": "single",
+      "url": "https://www.bilibili.com/video/BV1fUuy6SEYm/"
+    },
+    "世界は恋に落ちている": {
+      "title": "1-世界は恋に落ちている",
+      "kind": "compilation",
+      "url": "https://www.bilibili.com/video/BV1rv8V6DExk/"
+    },
+    "世末歌者": {
+      "title": "【小松绿Viridis/歌切】世末歌者",
+      "kind": "single",
+      "url": "https://www.bilibili.com/video/BV1Pa8V69ECP/"
+    },
+    "是风动": {
+      "title": "P8 是风动",
+      "kind": "collection-chapter",
+      "url": "https://www.bilibili.com/video/BV1gm4C65Ey6/?p=8"
+    },
+    "霜雪千年": {
+      "title": "【小松绿Viridis/翻唱】《霜雪千年》",
+      "kind": "single",
+      "url": "https://www.bilibili.com/video/BV1BmbC6cEAs/"
+    },
+    "私、アイドル宣言": {
+      "title": "4，《私、アイドル宣言》",
+      "kind": "single",
+      "url": "https://www.bilibili.com/video/BV1WS8c6XE9w/?p=4"
+    },
+    "私のSymphony": {
+      "title": "11，《私のSymphony》",
+      "kind": "single",
+      "url": "https://www.bilibili.com/video/BV1WS8c6XE9w/?p=11"
+    },
+    "思华年": {
+      "title": "【小松绿Viridis/歌切】思华年",
+      "kind": "single",
+      "url": "https://www.bilibili.com/video/BV19g836cEtQ/"
+    },
+    "四重罪孽": {
+      "title": "【松绿歌】四重罪孽",
+      "kind": "single",
+      "url": "https://www.bilibili.com/video/BV1Aqba6uEF8/"
+    },
+    "苏州河": {
+      "title": "【绿的歌】苏州河",
+      "kind": "single",
+      "url": "https://www.bilibili.com/video/BV1qqum6REvu/"
+    },
+    "碎梦": {
+      "title": "【小松绿Viridis/歌切】碎梦 乐正绫",
+      "kind": "single",
+      "url": "https://www.bilibili.com/video/BV11x8V6oE6P/"
+    },
+    "所以我伸出了手": {
+      "title": "15-所以我伸出了手",
+      "kind": "compilation",
+      "url": "https://www.bilibili.com/video/BV1rv8V6DExk/"
+    },
+    "太聪明": {
+      "title": "【小松绿Viridis】《太聪明》",
+      "kind": "single",
+      "url": "https://www.bilibili.com/video/BV1FMud6mEuh/"
+    },
+    "棠梨煎雪": {
+      "title": "棠梨煎雪 歌切【小松绿】",
+      "kind": "single",
+      "url": "https://www.bilibili.com/video/BV1Lcum6nEva/"
+    },
+    "跳楼机": {
+      "title": "【小松绿Viridis】跳楼机",
+      "kind": "single",
+      "url": "https://www.bilibili.com/video/BV1izum6WEZf/"
+    },
+    "外婆的澎湖湾": {
+      "title": "5-外婆的澎湖湾",
+      "kind": "compilation",
+      "url": "https://www.bilibili.com/video/BV1rv8V6DExk/"
+    },
+    "外婆桥": {
+      "title": "【小松绿Viridis/翻唱】《外婆桥》",
+      "kind": "single",
+      "url": "https://www.bilibili.com/video/BV1PubQ6FEh6/"
+    },
+    "未来は風のように": {
+      "title": "12-未来は風のように",
+      "kind": "compilation",
+      "url": "https://www.bilibili.com/video/BV1rv8V6DExk/"
+    },
+    "我的悲伤是水做的": {
+      "title": "【小松绿Viridis/翻唱】《我的悲伤是水做的》",
+      "kind": "single",
+      "url": "https://www.bilibili.com/video/BV1AJby6gECN/"
+    },
+    "我多想说再见啊": {
+      "title": "【小松绿Viridis/翻唱】《我多想说再见啊》",
+      "kind": "single",
+      "url": "https://www.bilibili.com/video/BV1Z8by6aEGy/"
+    },
+    "下个夏天的烟火": {
+      "title": "P9 下个夏天的烟火",
+      "kind": "collection-chapter",
+      "url": "https://www.bilibili.com/video/BV1gm4C65Ey6/?p=9"
+    },
+    "夏恋慕": {
+      "title": "【小松绿Viridis】20260823 歌切 P7 夏恋慕",
+      "kind": "single",
+      "url": "https://www.bilibili.com/video/BV1m9886kEMZ/?p=7"
+    },
+    "夏日已所剩无几": {
+      "title": "P12 夏日已所剩无几",
+      "kind": "collection-chapter",
+      "url": "https://www.bilibili.com/video/BV1gm4C65Ey6/?p=12"
+    },
+    "夏霞": {
+      "title": "【小松绿Viridis】夏霞 / あたらよ / 可惜夜",
+      "kind": "single",
+      "url": "https://www.bilibili.com/video/BV12o8866EsR/"
+    },
+    "想和你迎着台风去看海": {
+      "title": "【小松绿Viridis】《想和你迎着台风去看海》“刚想开口骂 心却跳起来”",
+      "kind": "single",
+      "url": "https://www.bilibili.com/video/BV1qT4k6QEXt/"
+    },
+    "小幸运": {
+      "title": "【小松绿Viridis/翻唱】《小幸运》",
+      "kind": "single",
+      "url": "https://www.bilibili.com/video/BV1nbu16WEA6/"
+    },
+    "心愿便利贴": {
+      "title": "【小松绿Viridis/翻唱】《心愿便利贴》",
+      "kind": "single",
+      "url": "https://www.bilibili.com/video/BV1dRuy61Eti/"
+    },
+    "虚拟": {
+      "title": "【松绿歌】虚拟",
+      "kind": "single",
+      "url": "https://www.bilibili.com/video/BV127bv6UEnN/"
+    },
+    "夜蝶": {
+      "title": "8，《夜蝶》",
+      "kind": "single",
+      "url": "https://www.bilibili.com/video/BV1WS8c6XE9w/?p=8"
+    },
+    "一半一半": {
+      "title": "【小松绿Viridis/翻唱】《一半一半》",
+      "kind": "single",
+      "url": "https://www.bilibili.com/video/BV1mgby6LEhy/"
+    },
+    "踊り子": {
+      "title": "【小松绿Viridis】《踊り子》（练歌）",
+      "kind": "single",
+      "url": "https://www.bilibili.com/video/BV1NZuR6sE7m/"
+    },
+    "迂回步": {
+      "title": "【小松绿Viridis/翻唱】《迂回步》",
+      "kind": "single",
+      "url": "https://www.bilibili.com/video/BV1Uuu36ME6g/"
+    },
+    "雨爱": {
+      "title": "【小松绿】《雨爱》",
+      "kind": "single",
+      "url": "https://www.bilibili.com/video/BV1YZbC6WEJJ/"
+    },
+    "远旅休憩中的邂逅": {
+      "title": "P13 远旅休憩中的邂逅",
+      "kind": "collection-chapter",
+      "url": "https://www.bilibili.com/video/BV1gm4C65Ey6/?p=13"
+    },
+    "月出": {
+      "title": "【松绿歌】月出",
+      "kind": "single",
+      "url": "https://www.bilibili.com/video/BV18sba67EZa/"
+    },
+    "月が綺麗ね": {
+      "title": "【小松绿viridis】月が綺麗ねと言われたい！丨想听你说月色真美",
+      "kind": "single",
+      "url": "https://www.bilibili.com/video/BV1F7uz6qEKN/"
+    },
+    "月巷": {
+      "title": "【小松绿Viridis|歌切】月巷 8.12",
+      "kind": "single",
+      "url": "https://www.bilibili.com/video/BV1Msg56SEuV/"
+    },
+    "纸星瓶": {
+      "title": "sp1-纸星瓶",
+      "kind": "single",
+      "url": "https://www.bilibili.com/video/BV1EC8w62EAD/?p=19"
+    },
+    "CHASE!": {
+      "title": "2，《CHASE!》",
+      "kind": "single",
+      "url": "https://www.bilibili.com/video/BV1WS8c6XE9w/?p=2"
+    },
+    "flos": {
+      "title": "18，《flos》",
+      "kind": "single",
+      "url": "https://www.bilibili.com/video/BV1WS8c6XE9w/?p=18"
+    },
+    "Fly me to the star": {
+      "title": "15，《Fly me to the star》",
+      "kind": "single",
+      "url": "https://www.bilibili.com/video/BV1WS8c6XE9w/?p=15"
+    },
+    "I LOVE U": {
+      "title": "17，《I LOVE U》",
+      "kind": "single",
+      "url": "https://www.bilibili.com/video/BV1WS8c6XE9w/?p=17"
+    },
+    "MORE JUMP MORE!": {
+      "title": "3，《MORE JUMP MORE!》",
+      "kind": "single",
+      "url": "https://www.bilibili.com/video/BV1WS8c6XE9w/?p=3"
+    },
+    "SOS": {
+      "title": "10，《SOS》",
+      "kind": "single",
+      "url": "https://www.bilibili.com/video/BV1WS8c6XE9w/?p=10"
+    },
+    "Starlight Prologue": {
+      "title": "12，《Starlight Prologue》",
+      "kind": "single",
+      "url": "https://www.bilibili.com/video/BV1WS8c6XE9w/?p=12"
+    },
+    "START:DASH!!!": {
+      "title": "1，《START:DASH!!!》",
+      "kind": "single",
+      "url": "https://www.bilibili.com/video/BV1WS8c6XE9w/?p=1"
+    },
+    "Talking to the Rain": {
+      "title": "【小松绿Viridis/歌切】Talking to the Rain",
+      "kind": "single",
+      "url": "https://www.bilibili.com/video/BV1Hm4y6AEC3/"
+    },
+    "YOU & IDOL": {
+      "title": "【小松绿Viridis】《YOU & IDOL》（练歌小电）",
+      "kind": "replay",
+      "url": "https://www.bilibili.com/video/BV1P6ud6dEkm/"
+    },
+    "アイドル": {
+      "title": "13，《アイドル》",
+      "kind": "single",
+      "url": "https://www.bilibili.com/video/BV1WS8c6XE9w/?p=13"
+    },
+    "アスノヨゾラ哨戒班": {
+      "title": "小松绿夜半火力全开，超高机能演唱《アスノヨゾラ哨戒班》",
+      "kind": "single",
+      "url": "https://www.bilibili.com/video/BV1Do8V6iEPw/"
+    },
+    "アヤノの幸福理論": {
+      "title": "8-アヤノの幸福理論",
+      "kind": "compilation",
+      "url": "https://www.bilibili.com/video/BV1rv8V6DExk/"
+    },
+    "おともだち": {
+      "title": "5，《おともだち》",
+      "kind": "single",
+      "url": "https://www.bilibili.com/video/BV1WS8c6XE9w/?p=5"
+    },
+    "サリシノハラ": {
+      "title": "P14 サリシノハラ",
+      "kind": "collection-chapter",
+      "url": "https://www.bilibili.com/video/BV1gm4C65Ey6/?p=14"
+    },
+    "シリウスの心臓": {
+      "title": "【小松绿Viridis/翻唱】《シリウスの心臓》（天狼星的心脏）",
+      "kind": "single",
+      "url": "https://www.bilibili.com/video/BV1aZ8L6CE6x/"
+    },
+    "プロポーズ": {
+      "title": "【小松绿Viridis/翻唱】《プロポーズ》（Propose）",
+      "kind": "single",
+      "url": "https://www.bilibili.com/video/BV19Fu16GEdc/"
+    },
+    "只对你有感觉": {
+      "title": "P1 只对你有感觉",
+      "kind": "collection-chapter",
+      "url": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=1"
+    },
+    "有点甜": {
+      "title": "P2 有点甜",
+      "kind": "collection-chapter",
+      "url": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=2"
+    },
+    "别找我麻烦": {
+      "title": "P3 别找我麻烦",
+      "kind": "collection-chapter",
+      "url": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=3"
+    },
+    "小半": {
+      "title": "P4 小半",
+      "kind": "collection-chapter",
+      "url": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=4"
+    },
+    "小丑的品格": {
+      "title": "P5 小丑的品格",
+      "kind": "collection-chapter",
+      "url": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=5"
+    },
+    "东风志": {
+      "title": "P6 东风志",
+      "kind": "collection-chapter",
+      "url": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=6"
+    },
+    "她追逐着月光的尽头": {
+      "title": "P7 她追逐着月光的尽头",
+      "kind": "collection-chapter",
+      "url": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=7"
+    },
+    "焦糖星": {
+      "title": "P8 焦糖星",
+      "kind": "collection-chapter",
+      "url": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=8"
+    },
+    "十万个春天": {
+      "title": "P9 十万个春天",
+      "kind": "collection-chapter",
+      "url": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=9"
+    },
+    "腐草为萤": {
+      "title": "P10 腐草为萤",
+      "kind": "collection-chapter",
+      "url": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=10"
+    },
+    "深夜诗人": {
+      "title": "P11 深夜诗人",
+      "kind": "collection-chapter",
+      "url": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=11"
+    },
+    "铁花飞 中文版": {
+      "title": "P12 铁花飞 中文版",
+      "kind": "collection-chapter",
+      "url": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=12"
+    },
+    "Fly, My Wings": {
+      "title": "P13 Fly, My Wings",
+      "kind": "collection-chapter",
+      "url": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=13"
+    },
+    "浴槽とネオンテトラ": {
+      "title": "P14 浴槽とネオンテトラ",
+      "kind": "collection-chapter",
+      "url": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=14"
+    },
+    "March of Time": {
+      "title": "P16 March of Time",
+      "kind": "collection-chapter",
+      "url": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=16"
+    },
+    "あなたに出会わなければ~夏雪冬花~": {
+      "title": "P17 あなたに出会わなければ~夏雪冬花~",
+      "kind": "collection-chapter",
+      "url": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=17"
+    },
+    "花の塔": {
+      "title": "P18 花の塔",
+      "kind": "collection-chapter",
+      "url": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=18"
+    },
+    "ミカヅキ": {
+      "title": "P19 ミカヅキ",
+      "kind": "collection-chapter",
+      "url": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=19"
+    },
+    "如果有来生": {
+      "title": "P21 如果有来生",
+      "kind": "collection-chapter",
+      "url": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=21"
+    }
+  }
+}
 };

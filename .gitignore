@@ -21,3 +21,18 @@ _preview_glass.html
 data/xiaosonglu/_*
 data/xiaosonglu/_audio_*
 _audio_download_*
+
+# Automation-downloaded video assets are local-only; never add, commit, or merge them.
+assets/video/
+assets/videos/
+data/xiaosonglu/videos/
+data/xiaosonglu/_video_*
+*.mp4
+*.webm
+*.mkv
+*.mov
+*.flv
+assets/video/**/*.ts
+assets/videos/**/*.ts
+data/xiaosonglu/videos/**/*.ts
+data/xiaosonglu/_video_*.ts
