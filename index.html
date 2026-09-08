@@ -1575,6 +1575,48 @@
     }
     .fav-sync-retry[hidden] { display: none; }
 
+    /* 顶部标题栏里的紧凑同步开关；与中意页使用同一状态。 */
+    .header-fav-auto-sync {
+      width: max-content;
+      margin-top: 6px;
+      padding: 3px 7px 3px 9px;
+      border: 1px solid rgba(255,255,255,0.34);
+      border-radius: 999px;
+      background: rgba(255,255,255,0.13);
+      color: #fffef2;
+      font-size: 11px;
+      line-height: 1;
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      transition: background 0.18s ease, border-color 0.18s ease;
+    }
+    .header-fav-auto-sync:hover { background: rgba(255,255,255,0.2); }
+    .header-fav-auto-sync[data-state="error"] { border-color: rgba(255,190,190,0.88); }
+    .header-fav-auto-sync .fav-switch-track {
+      width: 32px;
+      height: 18px;
+      border-color: rgba(255,255,255,0.42);
+      background: rgba(36,48,27,0.32);
+      box-shadow: inset 0 1px 2px rgba(20,30,14,0.22);
+    }
+    .header-fav-auto-sync .fav-switch-thumb {
+      top: 2px;
+      left: 2px;
+      width: 12px;
+      height: 12px;
+    }
+    .header-fav-auto-sync input:checked + .fav-switch-track {
+      border-color: rgba(255,255,238,0.92);
+      background: #f5efb7;
+    }
+    .header-fav-auto-sync input:checked + .fav-switch-track .fav-switch-thumb {
+      background: var(--primary-dark);
+      transform: translateX(14px);
+    }
+    .header-fav-auto-sync input:focus-visible + .fav-switch-track {
+      outline-color: rgba(255,255,255,0.92);
+    }
+
     .overlay {
       display: none;
       position: fixed;
@@ -3351,6 +3393,11 @@
               <a class="live-status-badge" href="https://live.bilibili.com/1727071052" target="_blank" rel="noopener noreferrer" title="在新标签页打开小松绿直播间"><span class="live-status-dot" aria-hidden="true"></span><span data-live-label>状态获取中</span></a>
               <span class="live-status-title" data-live-title>正在读取直播标题…</span>
             </div>
+            <label class="fav-auto-sync header-fav-auto-sync" id="headerFavAutoSyncControl" for="headerFavAutoSyncToggle" data-state="off" title="中意存档自动同步：已关闭">
+              <span>自动同步</span>
+              <input id="headerFavAutoSyncToggle" type="checkbox" role="switch" aria-label="中意存档自动同步">
+              <span class="fav-switch-track" aria-hidden="true"><span class="fav-switch-thumb"></span></span>
+            </label>
           </div>
         </div>
         <div class="header-nav">
@@ -3739,7 +3786,7 @@
   <script src="js/live-status.js?v=1" defer></script>
   <script src="js/shared.js?v=24" defer></script>
   <script src="js/data.js?v=25" defer></script>
-  <script src="js/app.js?v=78" defer></script>
+  <script src="js/app.js?v=79" defer></script>
   <script src="js/motion.js?v=18" defer></script>
 </body>
 </html>

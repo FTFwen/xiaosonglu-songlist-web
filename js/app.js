@@ -121,6 +121,7 @@ const state = {
   favAutoSyncAbortController: null,
   favAutoSyncOperationController: null,
   favAutoSyncConflict: null,
+  favAutoSyncTriggerId: 'headerFavAutoSyncToggle',
   favArchiveOperationEpoch: 0,
   favArchiveOperationController: null,
   currentRoom: getRoomConfig('xiaosonglu'),
@@ -2419,8 +2420,8 @@ function favoriteSyncErrorText(error) {
 }
 
 function updateFavoriteAutoSyncUi() {
-  if (!dom.favAutoSyncToggle) return;
-  dom.favAutoSyncToggle.checked = state.favAutoSyncEnabled;
+  const toggles = [dom.headerFavAutoSyncToggle, dom.favAutoSyncToggle].filter(Boolean);
+  toggles.forEach(toggle => { toggle.checked = state.favAutoSyncEnabled; });
   const phase = state.favAutoSyncEnabled ? state.favAutoSyncPhase : 'off';
   const labels = {
     off: '已关闭',
@@ -2432,10 +2433,25 @@ function updateFavoriteAutoSyncUi() {
     dirty: '有未同步修改',
     error: '同步失败'
   };
-  dom.favAutoSyncStatus.textContent = labels[phase] || labels.off;
-  dom.favAutoSyncStatus.dataset.state = phase;
-  dom.favAutoSyncStatus.title = phase === 'error' ? state.favAutoSyncError : '';
-  dom.favAutoSyncRetry.hidden = phase !== 'error';
+  const label = labels[phase] || labels.off;
+  if (dom.favAutoSyncStatus) {
+    dom.favAutoSyncStatus.textContent = label;
+    dom.favAutoSyncStatus.dataset.state = phase;
+    dom.favAutoSyncStatus.title = phase === 'error' ? state.favAutoSyncError : '';
+  }
+  if (dom.favAutoSyncRetry) dom.favAutoSyncRetry.hidden = phase !== 'error';
+  if (dom.headerFavAutoSyncControl) {
+    dom.headerFavAutoSyncControl.dataset.state = phase;
+    dom.headerFavAutoSyncControl.title = `中意存档自动同步：${label}`;
+  }
+  if (dom.headerFavAutoSyncToggle) {
+    dom.headerFavAutoSyncToggle.setAttribute('aria-label', `中意存档自动同步：${label}`);
+  }
+}
+
+function focusFavoriteAutoSyncTrigger() {
+  const toggle = dom[state.favAutoSyncTriggerId] || dom.headerFavAutoSyncToggle || dom.favAutoSyncToggle;
+  if (toggle) toggle.focus({ preventScroll: true });
 }
 
 function setFavoriteAutoSyncPhase(phase, error = '') {
@@ -2482,7 +2498,7 @@ function openFavoriteAutoSyncSetup() {
 function closeFavoriteAutoSyncSetup() {
   dom.favAutoSyncSetupOverlay.classList.remove('show');
   setFavoriteAutoSyncSetupBusy(false, '');
-  if (dom.favAutoSyncToggle) dom.favAutoSyncToggle.focus({ preventScroll: true });
+  focusFavoriteAutoSyncTrigger();
 }
 
 function setFavoriteConflictBusy(busy, hint = '', isError = false) {
@@ -2523,7 +2539,7 @@ function closeFavoriteAutoSyncConflict() {
   dom.favAutoSyncConflictOverlay.classList.remove('show');
   setFavoriteConflictBusy(false, '');
   state.favAutoSyncConflict = null;
-  if (dom.favAutoSyncToggle) dom.favAutoSyncToggle.focus({ preventScroll: true });
+  focusFavoriteAutoSyncTrigger();
 }
 
 async function disableFavoriteAutoSync({ notify = false, persist = true } = {}) {
@@ -3581,7 +3597,7 @@ async function initRoom(forceRefreshSongs = false) {
 
 function bindDom() {
   [
-    'refreshBtn','headerStatus','roomSubtitle','searchInput','clearSearchBtn','toggleFilterBtn','favoritesOnlyBtn',
+    'refreshBtn','headerStatus','roomSubtitle','headerFavAutoSyncControl','headerFavAutoSyncToggle','searchInput','clearSearchBtn','toggleFilterBtn','favoritesOnlyBtn',
     'activeFiltersBar','activeChipsList','clearAllFilterBtn','filterDrawerBackdrop','closeFilterDrawerBtn','confirmFilterDrawerBtn',
     'songMetaText','songListWrap','filterCard','sortFieldSelect','sortDirSelect',
     'languageChips','tagChips','langAllBtn','langNoneBtn','tagAllBtn','tagNoneBtn','countPresetRow','daysPresetRow','resetFiltersBtn','derivativeOnlyBtn','actionPanel','selectedSongName','selectedSongCutWrap',
@@ -4150,9 +4166,12 @@ function bindEvents() {
     closeFavLoad();
   });
   dom.favLoadOk.addEventListener('click', submitFavLoad);
-  dom.favAutoSyncToggle.addEventListener('change', () => {
-    if (dom.favAutoSyncToggle.checked) void enableFavoriteAutoSync({ persist: true, announce: true });
-    else void disableFavoriteAutoSync({ notify: true });
+  [dom.headerFavAutoSyncToggle, dom.favAutoSyncToggle].forEach(toggle => {
+    toggle.addEventListener('change', () => {
+      state.favAutoSyncTriggerId = toggle.id;
+      if (toggle.checked) void enableFavoriteAutoSync({ persist: true, announce: true });
+      else void disableFavoriteAutoSync({ notify: true });
+    });
   });
   dom.favAutoSyncRetry.addEventListener('click', () => { void retryFavoriteAutoSync(); });
   dom.favAutoSyncSetupCancel.addEventListener('click', () => { void disableFavoriteAutoSync(); });

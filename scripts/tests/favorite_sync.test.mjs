@@ -18,6 +18,8 @@ function sourceBetween(source, startText, endText) {
 
 test('favorite auto-sync UI and persistence wiring are present', () => {
   for (const id of [
+    'headerFavAutoSyncControl',
+    'headerFavAutoSyncToggle',
     'favAutoSyncToggle',
     'favAutoSyncStatus',
     'favAutoSyncRetry',
@@ -31,13 +33,49 @@ test('favorite auto-sync UI and persistence wiring are present', () => {
     assert.match(htmlSource, new RegExp(`id=["']${id}["']`));
     assert.match(appSource, new RegExp(`['"]${id}['"]`));
   }
-  assert.match(htmlSource, /js\/app\.js\?v=78/);
+  assert.match(htmlSource, /js\/app\.js\?v=79/);
   assert.match(appSource, /const FAV_AUTO_SYNC_KEY = 'favorites:autoSyncEnabled'/);
   assert.match(appSource, /const FAV_LAST_ACK_KEY = 'favorites:autoSyncLastAck'/);
   assert.match(appSource, /const FAV_REQUEST_TIMEOUT_MS = 15000/);
   assert.match(appSource, /storageSet\(\{ \[FAV_AUTO_SYNC_KEY\]: true \}, \{ throwOnError: true \}\)/);
   assert.match(appSource, /storageSet\(\{ \[FAV_AUTO_SYNC_KEY\]: false \}, \{ throwOnError: true \}\)/);
   assert.match(appSource, /expectedEtag: conflict\.remoteExists \? conflict\.remoteEtag : null/);
+  assert.match(appSource, /\[dom\.headerFavAutoSyncToggle, dom\.favAutoSyncToggle\]\.forEach/);
+});
+
+test('header and favorites auto-sync switches render the same state', () => {
+  const updater = sourceBetween(appSource, 'function updateFavoriteAutoSyncUi', 'function focusFavoriteAutoSyncTrigger');
+  const headerToggle = {
+    checked: false,
+    setAttribute(name, value) { this[name] = value; },
+  };
+  const favoriteToggle = { checked: false };
+  const context = {
+    dom: {
+      headerFavAutoSyncToggle: headerToggle,
+      favAutoSyncToggle: favoriteToggle,
+      headerFavAutoSyncControl: { dataset: {}, title: '' },
+      favAutoSyncStatus: { textContent: '', dataset: {}, title: '' },
+      favAutoSyncRetry: { hidden: true },
+    },
+    state: {
+      favAutoSyncEnabled: true,
+      favAutoSyncPhase: 'ready',
+      favAutoSyncError: '',
+    },
+  };
+  vm.runInNewContext(`${updater}\nthis.update = updateFavoriteAutoSyncUi;`, context);
+  context.update();
+  assert.equal(headerToggle.checked, true);
+  assert.equal(favoriteToggle.checked, true);
+  assert.equal(context.dom.headerFavAutoSyncControl.dataset.state, 'ready');
+  assert.match(context.dom.headerFavAutoSyncControl.title, /已同步/);
+
+  context.state.favAutoSyncEnabled = false;
+  context.update();
+  assert.equal(headerToggle.checked, false);
+  assert.equal(favoriteToggle.checked, false);
+  assert.equal(context.dom.favAutoSyncStatus.textContent, '已关闭');
 });
 
 test('favorite map comparison is stable across object insertion order', () => {
