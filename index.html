@@ -6,7 +6,7 @@
   <link rel="icon" href="assets/xiaosonglu-bubble.png" type="image/png">
   <link rel="preload" href="assets/xiaosonglu-kuaile-subset.woff2?v=4" as="font" type="font/woff2" crossorigin>
   <title>小松绿歌单</title>
-  <link rel="stylesheet" href="css/motion.css?v=17">
+  <link rel="stylesheet" href="css/motion.css?v=18">
   <style>
     /* 标题可爱字体：站酷快乐体（ZCOOL KuaiLe），仅子集化保留标题所需字形 */
     @font-face {
@@ -2769,9 +2769,24 @@
         background: rgba(244, 246, 232, 0.98);
       }
 
-      /* 移动端避免大量毛玻璃、固定背景和预分配合成层持续拖慢滚动。 */
-      html, body {
-        background-attachment: scroll, scroll, scroll, scroll;
+      /* 移动端将超长页面背景简化成纯渐变，人物图拆到单独的固定层。
+         避免四层背景跟随 2 万多像素的列表反复参与绘制与提交。 */
+      html {
+        background: #edf2d8 !important;
+      }
+      body {
+        background: linear-gradient(160deg, #f2f5e2 0%, #e7eecd 48%, #dbe5b8 100%) !important;
+        background-attachment: scroll !important;
+      }
+      body::before {
+        content: '';
+        position: fixed;
+        z-index: 0;
+        inset: 0;
+        pointer-events: none;
+        background: url('assets/bg-mobile-person.webp') right -150px bottom -350px / auto 100vh no-repeat;
+        transform: translateZ(0);
+        contain: strict;
       }
       #ambientAuroraBg,
       #dappledSunlight {
@@ -2791,6 +2806,10 @@
       .song-item,
       .history-item,
       .favorite-item {
+        content-visibility: auto;
+        contain-intrinsic-size: 152px;
+        contain-intrinsic-size: auto 152px;
+        contain: layout paint style;
         backdrop-filter: none !important;
         -webkit-backdrop-filter: none !important;
         background: var(--surface) !important;
@@ -2799,6 +2818,12 @@
         will-change: auto !important;
         transform: none !important;
         transform-style: flat !important;
+      }
+
+      /* 一张歌曲卡通常含有多枚徽章；逐枚模糊会制造数百个额外滤镜表面。 */
+      .badge {
+        backdrop-filter: none !important;
+        -webkit-backdrop-filter: none !important;
       }
 
       /* 播放中仅显示静态暂停按钮，不再给整张卡片建立动画与合成层。 */
@@ -3110,6 +3135,79 @@
         border-color: var(--primary) !important;
         background: var(--primary) !important;
         color: #fff !important;
+      }
+    }
+
+    /* 手机横屏 / 粗指针平板只继承性能降级，不改变原有桌面布局。 */
+    @media (min-width: 769px) and (hover: none) and (pointer: coarse) {
+      html {
+        background: #edf2d8 !important;
+      }
+      body {
+        background: linear-gradient(160deg, #f2f5e2 0%, #e7eecd 48%, #dbe5b8 100%) !important;
+        background-attachment: scroll !important;
+      }
+      body::before {
+        content: '';
+        position: fixed;
+        z-index: 0;
+        inset: 0;
+        pointer-events: none;
+        background: url('assets/bg-mobile-person.webp') right -150px bottom -350px / auto 100vh no-repeat;
+        transform: translateZ(0);
+        contain: strict;
+      }
+      #ambientAuroraBg,
+      #dappledSunlight {
+        display: none !important;
+      }
+      .player-bar,
+      .tabs,
+      .sticky-toolbar,
+      .sticky-toolbar .controls-card,
+      .badge {
+        backdrop-filter: none !important;
+        -webkit-backdrop-filter: none !important;
+      }
+      .tabs,
+      .sticky-toolbar .controls-card {
+        background: rgba(244, 246, 232, 0.96) !important;
+      }
+      .song-item,
+      .history-item,
+      .favorite-item {
+        content-visibility: auto;
+        contain-intrinsic-size: 152px;
+        contain-intrinsic-size: auto 152px;
+        contain: layout paint style;
+        backdrop-filter: none !important;
+        -webkit-backdrop-filter: none !important;
+        background: var(--surface) !important;
+        background-image: none !important;
+        box-shadow: none !important;
+        will-change: auto !important;
+        transform: none !important;
+        transform-style: flat !important;
+      }
+      html body .song-item.now-playing,
+      html body .song-item.now-playing:hover,
+      html body .song-vinyl-wrap,
+      html body .song-vinyl-wrap.spinning,
+      html body .song-vinyl-wrap.spinning .song-vinyl,
+      html body .song-vinyl-wrap.spinning .vinyl-core,
+      html body .song-play-btn.playing {
+        animation: none !important;
+        box-shadow: none !important;
+        filter: none !important;
+        transform: none !important;
+        will-change: auto !important;
+      }
+      html body .song-item.now-playing::before,
+      html body .song-item.now-playing::after,
+      html body .song-vinyl-wrap.spinning::before,
+      html body .song-vinyl-wrap.spinning::after,
+      html body .playing-bars {
+        display: none !important;
       }
     }
   </style>
@@ -3516,7 +3614,7 @@
   <script src="js/live-status.js?v=1" defer></script>
   <script src="js/shared.js?v=24" defer></script>
   <script src="js/data.js?v=25" defer></script>
-  <script src="js/app.js?v=74" defer></script>
-  <script src="js/motion.js?v=17" defer></script>
+  <script src="js/app.js?v=75" defer></script>
+  <script src="js/motion.js?v=18" defer></script>
 </body>
 </html>

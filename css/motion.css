@@ -283,11 +283,25 @@
   --card-trans-ease: cubic-bezier(0.2, 0.8, 0.25, 1);
 
   position: relative;
-  will-change: transform, box-shadow;
-  transform-style: preserve-3d;
+  /* 静止卡片不预占合成层；只给当前鼠标交互卡片临时提升。 */
+  will-change: auto;
+  transform-style: flat;
   transform-origin: center center;
+  transform: none !important;
 
-  /* 正常时水平端正，移入悬停时由光标驱动 3D 浮动跟随，采用更优雅自然的 1000px 视距透视 */
+  transition: transform var(--card-trans-dur, 0.12s) var(--card-trans-ease, cubic-bezier(0.2, 0.8, 0.25, 1)),
+              box-shadow 0.32s cubic-bezier(0.2, 0.8, 0.25, 1),
+              border-color 0.22s ease,
+              background 0.22s ease !important;
+}
+
+.song-item.motion-tilt-active,
+.history-item.motion-tilt-active,
+.favorite-item.motion-tilt-active,
+.sound-btn.motion-tilt-active,
+.bookmark-item.motion-tilt-active {
+  will-change: transform;
+  transform-style: preserve-3d;
   transform: perspective(1000px)
              translateX(var(--tx, 0px))
              translateY(var(--ty, 0px))
@@ -295,11 +309,6 @@
              rotateX(var(--rx, 0deg))
              rotateY(var(--ry, 0deg))
              scale(var(--sc, 1)) !important;
-
-  transition: transform var(--card-trans-dur, 0.12s) var(--card-trans-ease, cubic-bezier(0.2, 0.8, 0.25, 1)),
-              box-shadow 0.32s cubic-bezier(0.2, 0.8, 0.25, 1),
-              border-color 0.22s ease,
-              background 0.22s ease !important;
 }
 
 /* 动态鼠标跟随光斑反射层（温润的高级光面贴纸/柔光丝绸质感） */

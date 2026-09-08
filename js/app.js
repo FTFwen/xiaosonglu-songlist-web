@@ -750,6 +750,9 @@ player.audio.volume = player.volume;
 
 // 进度条拖动状态：拖动中只预览，松开后才真正跳转
 let seekDragging = false;
+let renderedPlayerTime = '';
+let renderedPlayerDuration = '';
+let renderedPlayerSeekMax = '';
 
 // ===== 睡眠定时（月亮图标）=====
 const timerState = {
@@ -841,7 +844,7 @@ function startTimer(sec) {
     if (delta > 0) {
       timerState.lastTickAt = now;
       timerState.remainSec = Math.max(0, timerState.remainSec - delta);
-      renderTimerButton();
+      // 按钮不显示剩余秒数，倒计时期间无需每秒重复改 class/title。
       if (timerState.remainSec <= 0) {
         onTimerFinished();
       }
@@ -919,7 +922,7 @@ function getPlayableSongs() {
 
 function syncPlayingButton() {
   // 手机端仅保留播放按钮的静态状态，避免卡片呼吸光晕、黑胶旋转和声波动画占用 GPU。
-  const mobileLiteMode = window.matchMedia && window.matchMedia('(max-width: 768px)').matches;
+  const mobileLiteMode = window.matchMedia && window.matchMedia('(max-width: 768px), (hover: none) and (pointer: coarse)').matches;
   document.querySelectorAll('.song-item.now-playing').forEach(item => {
     item.classList.remove('now-playing');
     const bars = item.querySelector('.playing-bars');
@@ -966,13 +969,13 @@ function syncPlayingButton() {
 function updatePlayerUI() {
   const hasAudio = !!(state.audioIndex && state.audioIndex.audios && Object.keys(state.audioIndex.audios).length);
   if (hasAudio) {
-    dom.playerBar.style.display = 'flex';
+    if (dom.playerBar.style.display !== 'flex') dom.playerBar.style.display = 'flex';
     document.body.classList.add('has-player');
     dom.playAllBtn.style.display = '';
     dom.playShuffleBtn.style.display = '';
     dom.playerShuffleBtn.style.display = '';
   } else {
-    dom.playerBar.style.display = 'none';
+    if (dom.playerBar.style.display !== 'none') dom.playerBar.style.display = 'none';
     document.body.classList.remove('has-player');
     dom.playAllBtn.style.display = 'none';
     dom.playShuffleBtn.style.display = 'none';
@@ -1312,8 +1315,18 @@ function clearPlaylist() {
   updatePlayerUI();
 }
 
-function renderPlaylist() {
+let playlistRenderSignature = '';
+
+function renderPlaylist(force = false) {
   const wrap = dom.playlistListWrap;
+  const playlistFingerprint = JSON.stringify(state.playlist.map(item => [
+    item && item.song_id,
+    item && (item.display_song_name || item.song_name || ''),
+    item && (item.artist || ''),
+  ]));
+  const signature = `${player.queue === state.playlist ? 'playlist' : 'queue'}|${player.index}|${playlistFingerprint}`;
+  if (!force && playlistRenderSignature === signature) return;
+  playlistRenderSignature = signature;
   // 自动开合：有歌曲时展开播放列表，没有歌曲时收起
   dom.playlistPanel.classList.toggle('show', state.playlist.length > 0);
   dom.playlistCountText.textContent = `${state.playlist.length} 首`;
@@ -1711,21 +1724,34 @@ async function loadAudioIndex() {
 player.audio.addEventListener('ended', () => playNext(true));
 player.audio.addEventListener('play', () => { player.wantedPlaying = true; player.playing = true; updatePlayerUI(); });
 player.audio.addEventListener('pause', () => { player.wantedPlaying = false; player.playing = false; updatePlayerUI(); });
-player.audio.addEventListener('loadedmetadata', () => {
+function updatePlayerDurationUI() {
   const dur = Number.isFinite(player.audio.duration) ? player.audio.duration : 0;
-  dom.playerTimeDur.textContent = formatAudioTime(dur);
-  dom.playerSeek.max = Math.max(1, Math.floor(dur));
+  const durationLabel = formatAudioTime(dur);
+  const seekMax = String(Math.max(1, Math.floor(dur)));
+  if (renderedPlayerDuration !== durationLabel) {
+    renderedPlayerDuration = durationLabel;
+    dom.playerTimeDur.textContent = durationLabel;
+  }
+  if (renderedPlayerSeekMax !== seekMax) {
+    renderedPlayerSeekMax = seekMax;
+    dom.playerSeek.max = seekMax;
+  }
+}
+
+player.audio.addEventListener('loadedmetadata', () => {
+  updatePlayerDurationUI();
   dom.playerSeek.value = player.audio.currentTime || 0;
 });
+player.audio.addEventListener('durationchange', updatePlayerDurationUI);
 player.audio.addEventListener('timeupdate', () => {
   const cur = player.audio.currentTime || 0;
-  const dur = player.audio.duration || 0;
-  dom.playerTimeCur.textContent = formatAudioTime(cur);
-  if (dur) {
-    dom.playerSeek.max = Math.max(1, Math.floor(dur));
-    // 拖动进度条时不要覆盖滑块位置，松开后再同步
-    if (!seekDragging) dom.playerSeek.value = cur;
+  const currentLabel = formatAudioTime(cur);
+  if (renderedPlayerTime !== currentLabel) {
+    renderedPlayerTime = currentLabel;
+    dom.playerTimeCur.textContent = currentLabel;
   }
+  // 拖动进度条时不要覆盖滑块位置，松开后再同步。
+  if (!seekDragging && player.audio.duration) dom.playerSeek.value = cur;
 });
 player.audio.addEventListener('error', () => {
   showToast('音频加载失败，可能暂时没有收录');

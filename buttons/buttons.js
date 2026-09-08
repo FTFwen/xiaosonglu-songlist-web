@@ -268,13 +268,36 @@
     return `<svg class="icon" aria-hidden="true"><use href="#icon-${id}"></use></svg>`;
   }
 
-  function updatePlayerUI() {
+  let renderedPlaying = null;
+  let renderedProgress = '';
+  let renderedTime = '';
+
+  function updatePlayerStateUI(force = false) {
     const playing = !audioPlayer.paused && !audioPlayer.ended;
+    if (!force && renderedPlaying === playing) return;
+    renderedPlaying = playing;
     pbPlay.innerHTML = playing ? ico('pause') : ico('caret-right');
+  }
+
+  function updatePlayerProgressUI(force = false) {
     const dur = audioPlayer.duration || 0;
     const cur = audioPlayer.currentTime || 0;
-    pbProgress.style.width = dur > 0 ? `${(cur / dur) * 100}%` : '0%';
-    pbTime.textContent = `${fmtSec(cur)} / ${fmtSec(dur)}s`;
+    const ratio = dur > 0 ? Math.max(0, Math.min(1, cur / dur)) : 0;
+    const progress = ratio.toFixed(4);
+    const time = `${fmtSec(cur)} / ${fmtSec(dur)}s`;
+    if (force || renderedProgress !== progress) {
+      renderedProgress = progress;
+      pbProgress.style.transform = `scaleX(${progress})`;
+    }
+    if (force || renderedTime !== time) {
+      renderedTime = time;
+      pbTime.textContent = time;
+    }
+  }
+
+  function updatePlayerUI(force = false) {
+    updatePlayerStateUI(force);
+    updatePlayerProgressUI(force);
   }
 
   function showPlayer(btn) {
@@ -340,9 +363,11 @@
     document.querySelectorAll('.sound-btn.playing').forEach(c => c.classList.remove('playing'));
     currentBtn = null;
     pbName.textContent = '还没有播放声音';
-    pbProgress.style.width = '0%';
+    renderedProgress = '';
+    renderedTime = '';
+    pbProgress.style.transform = 'scaleX(0)';
     pbTime.textContent = '0.0 / 0.0s';
-    updatePlayerUI();
+    updatePlayerUI(true);
   }
 
   // 顺序播放：找当前按钮在它所属分类里的下一个有音频的磁帖
@@ -437,23 +462,27 @@
   pbVolume.addEventListener('input', () => {
     audioPlayer.volume = Number(pbVolume.value) / 100;
   });
-  audioPlayer.addEventListener('timeupdate', updatePlayerUI);
+  audioPlayer.addEventListener('timeupdate', () => updatePlayerProgressUI());
   audioPlayer.addEventListener('loadedmetadata', () => {
-    updatePlayerUI();
-    // 记录当前按钮时长，更新列表里"按键+时长"的显示
+    updatePlayerProgressUI(true);
+    // 记录当前按钮时长，只更新对应磁贴，避免播放途中重建整面按钮墙。
     const dur = audioPlayer.duration;
     if (currentBtn && Number.isFinite(dur) && dur > 0) {
-      if (currentBtn.duration !== dur) {
-        currentBtn.duration = Math.round(dur * 10) / 10;
+      const rounded = Math.round(dur * 10) / 10;
+      if (currentBtn.duration !== rounded) {
+        currentBtn.duration = rounded;
         saveData(data);
-        renderWall();
+        const card = [...wall.querySelectorAll('.sound-btn')]
+          .find(node => node.dataset.btnId === String(currentBtn.id));
+        const durationEl = card && card.querySelector('.sb-dur');
+        if (durationEl) durationEl.textContent = fmtDur(rounded);
       }
     }
   });
-  audioPlayer.addEventListener('play', updatePlayerUI);
-  audioPlayer.addEventListener('pause', updatePlayerUI);
+  audioPlayer.addEventListener('play', () => updatePlayerStateUI());
+  audioPlayer.addEventListener('pause', () => updatePlayerStateUI());
   audioPlayer.addEventListener('ended', () => {
-    updatePlayerUI();
+    updatePlayerUI(true);
     document.querySelectorAll('.sound-btn.playing').forEach(c => c.classList.remove('playing'));
     // 单曲循环：重播当前；顺序：播当前分类的下一个；播放一次：停止
     if (playMode === 'single' && currentBtn) {

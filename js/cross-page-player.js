@@ -126,22 +126,57 @@
     return audio.readyState >= 1 && Number.isFinite(audio.currentTime) ? audio.currentTime : fallbackTime;
   }
 
-  function render() {
+  const rendered = Object.create(null);
+
+  function setText(key, element, value) {
+    if (rendered[key] === value) return;
+    rendered[key] = value;
+    element.textContent = value;
+  }
+
+  function renderState() {
     const item = currentItem();
     if (!item) return;
+    const paused = audio.paused;
+    const controlLabel = paused ? '播放' : '暂停';
+    const blocked = resumeBlocked || loadFailed;
+    setText('name', dom.name, item.display_song_name || item.song_name || '未命名');
+    setText('artist', dom.artist, item.artist || '');
+    setText('toggleText', dom.toggle, paused ? '▶' : 'Ⅱ');
+    if (rendered.toggleLabel !== controlLabel) {
+      rendered.toggleLabel = controlLabel;
+      dom.toggle.title = controlLabel;
+      dom.toggle.setAttribute('aria-label', controlLabel);
+    }
+    setText('kicker', dom.kicker, loadFailed ? '音频加载失败' : (resumeBlocked ? '点播放继续' : (paused ? '已暂停' : '跨页续播')));
+    if (rendered.blocked !== blocked) {
+      rendered.blocked = blocked;
+      player.classList.toggle('is-resume-blocked', blocked);
+    }
+  }
+
+  function renderProgress() {
     const time = currentTime();
     const duration = Number.isFinite(audio.duration) ? audio.duration : (Number(saved.duration) || 0);
-    dom.name.textContent = item.display_song_name || item.song_name || '未命名';
-    dom.artist.textContent = item.artist || '';
-    dom.toggle.textContent = audio.paused ? '▶' : 'Ⅱ';
-    dom.toggle.title = audio.paused ? '播放' : '暂停';
-    dom.toggle.setAttribute('aria-label', audio.paused ? '播放' : '暂停');
-    dom.kicker.textContent = loadFailed ? '音频加载失败' : (resumeBlocked ? '点播放继续' : (audio.paused ? '已暂停' : '跨页续播'));
-    player.classList.toggle('is-resume-blocked', resumeBlocked || loadFailed);
-    dom.current.textContent = formatTime(time);
-    dom.duration.textContent = formatTime(duration);
-    dom.seek.max = String(Math.max(1, duration));
-    dom.seek.value = String(Math.min(time, Math.max(1, duration)));
+    const currentLabel = formatTime(time);
+    const durationLabel = formatTime(duration);
+    const max = String(Math.max(1, duration));
+    const value = String(Math.min(time, Math.max(1, duration)));
+    setText('currentLabel', dom.current, currentLabel);
+    setText('durationLabel', dom.duration, durationLabel);
+    if (rendered.seekMax !== max) {
+      rendered.seekMax = max;
+      dom.seek.max = max;
+    }
+    if (rendered.seekValue !== value) {
+      rendered.seekValue = value;
+      dom.seek.value = value;
+    }
+  }
+
+  function render() {
+    renderState();
+    renderProgress();
   }
 
   function buildHandoff(destination) {
@@ -234,20 +269,20 @@
       audio.currentTime = nextTime;
       fallbackTime = nextTime;
     }
-    render();
+    renderProgress();
   });
 
   audio.addEventListener('play', () => {
     desiredPlaying = true;
     resumeBlocked = false;
-    render();
+    renderState();
   });
-  audio.addEventListener('pause', render);
+  audio.addEventListener('pause', renderState);
   audio.addEventListener('timeupdate', () => {
     fallbackTime = audio.currentTime;
-    render();
+    renderProgress();
   });
-  audio.addEventListener('durationchange', render);
+  audio.addEventListener('durationchange', renderProgress);
   audio.addEventListener('ended', () => {
     desiredPlaying = false;
     if (playMode === 'single') loadAt(index, true, 0);

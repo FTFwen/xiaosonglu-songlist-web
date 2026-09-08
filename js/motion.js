@@ -21,11 +21,14 @@
   const isFinePointer = () =>
     window.matchMedia && window.matchMedia('(hover: hover) and (pointer: fine)').matches;
 
+  // 长列表页与触屏设备优先保证滚动帧率：窄屏或粗指针不启动常驻逐帧环境动效。
+  const useLiteMotion = () => window.innerWidth <= 768 || !isFinePointer();
+
   /* ==========================================================================
      1. 清晨极光柔光呼吸背景注入 (Ambient Aurora Glow Layer)
      ========================================================================== */
   function initAmbientAurora() {
-    if (prefersReducedMotion() || document.getElementById('ambientAuroraBg')) return;
+    if (prefersReducedMotion() || useLiteMotion() || document.getElementById('ambientAuroraBg')) return;
     const auroraWrap = document.createElement('div');
     auroraWrap.id = 'ambientAuroraBg';
     auroraWrap.innerHTML = `
@@ -39,7 +42,7 @@
      2. 卡片全向 3D 鼠标跟随倾斜与光斑流动 (Interactive 3D Tilt & Light Sheen)
      ========================================================================== */
   function initCard3DTilt() {
-    if (!isFinePointer() || prefersReducedMotion()) return;
+    if (useLiteMotion() || prefersReducedMotion()) return;
 
     let activeCard = null;
     let cardRect = null;
@@ -93,6 +96,7 @@
 
     function resetCard(card) {
       if (!card) return;
+      card.classList.remove('motion-tilt-active');
       card.style.setProperty('--card-trans-dur', '0.38s');
       card.style.setProperty('--card-trans-ease', 'cubic-bezier(0.22, 1, 0.36, 1)');
       card.style.transition = 'transform 0.38s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.35s ease';
@@ -120,7 +124,8 @@
       }
     }
 
-    window.addEventListener('scroll', updateActiveRect, { passive: true, capture: true });
+    // 滚轮经过卡片时不要同步读取布局；先清除倾斜，下一次 mousemove 再重新测量。
+    window.addEventListener('scroll', clearActive, { passive: true });
     window.addEventListener('resize', updateActiveRect, { passive: true });
 
     document.addEventListener('mousemove', function (e) {
@@ -135,6 +140,7 @@
         if (activeCard) resetCard(activeCard);
         cancelPendingFrame();
         activeCard = card;
+        card.classList.add('motion-tilt-active');
         cardRect = card.getBoundingClientRect();
         card.style.setProperty('--card-trans-dur', '0.12s');
         card.style.setProperty('--card-trans-ease', 'cubic-bezier(0.2, 0.8, 0.25, 1)');
@@ -160,7 +166,7 @@
      3. 指尖星光光标拖尾特效 (Sparkle Cursor Dust Trail)
      ========================================================================== */
   function initCursorDust() {
-    if (!isFinePointer() || prefersReducedMotion()) return;
+    if (useLiteMotion() || prefersReducedMotion()) return;
 
     let lastTime = 0;
     let lastX = 0;
@@ -240,9 +246,8 @@
      4. 非触发式全站自然微生态背景画布 (Ambient Flora & Melody Breeze Canvas)
      ========================================================================== */
   function initAmbientBreezeCanvas() {
-    if (prefersReducedMotion()) return;
-    // 手机端不启动背景粒子画布（每帧绘制开销大，是卡顿主因），简化动效
-    if (window.innerWidth <= 768) return;
+    // 常驻 canvas 每帧运行；窄屏与触屏设备直接使用轻量模式。
+    if (prefersReducedMotion() || useLiteMotion()) return;
 
     let canvas = document.getElementById('ambientBreezeCanvas');
     if (!canvas) {
@@ -412,9 +417,8 @@
      5. 正在播放时的旋律音符浮空喷涌 (Playing Melody Ambient Notes)
      ========================================================================== */
   function initMelodyNotesEmitter() {
-    if (prefersReducedMotion()) return;
-    // 手机端：关闭播放时的音符浮空喷涌动效（降卡顿）
-    if (window.innerWidth <= 768) return;
+    // 播放期间会定时查询并创建 DOM；轻量模式不启动。
+    if (prefersReducedMotion() || useLiteMotion()) return;
 
     const NOTES = ['♪', '♫', '♬', '♩', '🍃', '✨'];
     const COLORS = ['#8a9a4e', '#6f7d3d', '#e8b890', '#b57d1c', '#f4ce62'];
@@ -895,6 +899,8 @@
      11. 播放器麦浪音频律动频谱 (Fluid Music Spectrum in Player Bar)
      ========================================================================== */
   function initPlayerSpectrum() {
+    // 手机端频谱本就隐藏，避免仍每 400ms 查询播放状态。
+    if (useLiteMotion()) return;
     const playerBar = document.getElementById('playerBar');
     if (!playerBar) return;
 
@@ -954,7 +960,8 @@
      13. 全局触感晨露水波纹 (Zen Water Ripple on Click)
      ========================================================================== */
   function initClickRipple() {
-    if (prefersReducedMotion()) return;
+    // 触摸滚动也会先触发 pointerdown，轻量模式禁用全局 fixed 水波 DOM。
+    if (prefersReducedMotion() || useLiteMotion()) return;
 
     let lastRippleTime = 0;
     document.addEventListener('pointerdown', function (e) {
@@ -998,8 +1005,8 @@
       // 2. 点击语音按钮墙按钮
       const btn = e.target.closest('.sound-btn');
       if (!btn) return;
-      // 手机端：跳过点击播放的下压/声浪动效（降卡顿），按钮播放功能不受影响
-      if (window.innerWidth <= 768) return;
+      // 轻量模式：跳过点击播放的下压/声浪动效，按钮播放功能不受影响。
+      if (useLiteMotion()) return;
 
       const rect = btn.getBoundingClientRect();
       const cx = rect.left + rect.width / 2;
@@ -1058,7 +1065,7 @@
      15. 斑驳林间树影滤镜层 (Dappled Sunlight Caustics)
      ========================================================================== */
   function initDappledSunlight() {
-    if (prefersReducedMotion()) return;
+    if (prefersReducedMotion() || useLiteMotion()) return;
     if (document.getElementById('dappledSunlight')) return;
 
     const layer = document.createElement('div');

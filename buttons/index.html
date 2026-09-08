@@ -642,6 +642,7 @@
       border: 1px solid var(--line);
       border-radius: 18px;
       box-shadow: 0 10px 30px rgba(122, 136, 70, 0.14);
+      contain: layout style;
     }
     .player-card .pc-left { flex: 1; min-width: 0; }
     .player-card .pc-label {
@@ -686,9 +687,11 @@
     }
     .player-card .pc-progress {
       height: 100%;
-      width: 0%;
+      width: 100%;
       background: linear-gradient(90deg, var(--primary), var(--peach));
-      transition: width 0.2s linear;
+      transform: scaleX(0);
+      transform-origin: left center;
+      transition: transform 0.2s linear;
       border-radius: 999px;
     }
     .player-card .pc-right {
@@ -1133,12 +1136,74 @@
 
       .cat-section {
         content-visibility: auto;
+        contain-intrinsic-size: 560px;
+        contain-intrinsic-size: auto 560px;
+      }
+    }
+
+    /* 手机横屏只继承性能降级，不套用竖屏播放器布局。 */
+    @media (min-width: 769px) and (hover: none) and (pointer: coarse) {
+      html, body {
+        background-image: linear-gradient(160deg, rgba(242,245,226,0.72) 0%, rgba(231,238,205,0.72) 45%, rgba(219,229,184,0.72) 100%) !important;
+        background-attachment: scroll !important;
+      }
+      body::before {
+        content: '';
+        position: fixed;
+        z-index: 0;
+        inset: 0;
+        pointer-events: none;
+        background: url('../assets/bg-mobile-person.webp') right -150px bottom -350px / auto 100vh no-repeat;
+        transform: translateZ(0);
+      }
+      #ambientAuroraBg,
+      #ambientBreezeCanvas,
+      #dappledSunlight {
+        display: none !important;
+      }
+      .companion-pet,
+      .companion-pet-wrap,
+      .companion-badge {
+        animation: none !important;
+        filter: none !important;
+        will-change: auto !important;
+      }
+      .banner,
+      .player-card,
+      .sound-btn,
+      .admin-panel,
+      .admin-panel .admin-card,
+      .admin-input,
+      .admin-item {
+        backdrop-filter: none !important;
+        -webkit-backdrop-filter: none !important;
+      }
+      html body .sound-btn,
+      html body .sound-btn:hover,
+      html body .sound-btn.playing {
+        background: rgba(255,255,255,0.9) !important;
+        background-image: none !important;
+        box-shadow: none !important;
+        will-change: auto !important;
+        transform: none !important;
+        transform-style: flat !important;
+      }
+      html body .sound-btn::after,
+      html body .sound-btn.playing::after {
+        display: none !important;
+      }
+      html body .sound-btn:active {
+        transform: scale(0.985) !important;
+      }
+      .cat-section {
+        content-visibility: auto;
+        contain-intrinsic-size: 560px;
         contain-intrinsic-size: auto 560px;
       }
     }
   </style>
-  <link rel="stylesheet" href="../css/motion.css?v=17">
-  <link rel="stylesheet" href="../css/cross-page-player.css?v=2">
+  <link rel="stylesheet" href="../css/motion.css?v=18">
+  <link rel="stylesheet" href="../css/cross-page-player.css?v=3">
 </head>
 <body>
   <svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
@@ -1290,8 +1355,8 @@
 
   <script src="../js/live-status.js?v=1" defer></script>
   <script src="jszip.min.js"></script>
-  <script src="buttons.js?v=31"></script>
-  <script src="../js/cross-page-player.js?v=2" defer></script>
-  <script src="../js/motion.js?v=17" defer></script>
+  <script src="buttons.js?v=32"></script>
+  <script src="../js/cross-page-player.js?v=3" defer></script>
+  <script src="../js/motion.js?v=18" defer></script>
 </body>
 </html>
