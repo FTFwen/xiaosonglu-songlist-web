@@ -76,8 +76,9 @@ export async function onRequestPut(context) {
   }
 
   const hasExpectedEtag = Object.prototype.hasOwnProperty.call(data, 'expectedEtag');
-  const expectedEtag = data.expectedEtag == null ? '' : bareEtag(data.expectedEtag);
-  if (data.expectedEtag != null && !expectedEtag) return json({ error: 'invalid etag' }, 400);
+  const rawExpectedEtag = data.expectedEtag == null ? '' : String(data.expectedEtag).trim();
+  const expectedEtag = bareEtag(rawExpectedEtag);
+  if (rawExpectedEtag && !expectedEtag) return json({ error: 'invalid etag' }, 400);
   let existing = null;
   let stored = null;
 

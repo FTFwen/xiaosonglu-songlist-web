@@ -37,6 +37,7 @@ test('favorite auto-sync UI and persistence wiring are present', () => {
   assert.match(appSource, /const FAV_REQUEST_TIMEOUT_MS = 15000/);
   assert.match(appSource, /storageSet\(\{ \[FAV_AUTO_SYNC_KEY\]: true \}, \{ throwOnError: true \}\)/);
   assert.match(appSource, /storageSet\(\{ \[FAV_AUTO_SYNC_KEY\]: false \}, \{ throwOnError: true \}\)/);
+  assert.match(appSource, /expectedEtag: conflict\.remoteExists \? conflict\.remoteEtag : null/);
 });
 
 test('favorite map comparison is stable across object insertion order', () => {
@@ -194,9 +195,16 @@ test('favorite archive API validates and round-trips R2 data', async () => {
   response = await api.onRequestPut(context('测试存档', {
     method: 'PUT',
     headers: { 'content-type': 'application/json' },
-    body: JSON.stringify({ songs: {}, expectedEtag: null }),
+    body: JSON.stringify({ songs: {}, expectedEtag: '' }),
   }));
   assert.equal(response.status, 409);
+
+  response = await api.onRequestPut(context('bad-etag', {
+    method: 'PUT',
+    headers: { 'content-type': 'application/json' },
+    body: JSON.stringify({ songs: {}, expectedEtag: 'W/""' }),
+  }));
+  assert.equal(response.status, 400);
 
   response = await api.onRequestPut(context('bad-data', {
     method: 'PUT',
@@ -213,6 +221,14 @@ test('favorite archive API validates and round-trips R2 data', async () => {
   }));
   assert.equal(response.status, 200);
   assert.equal(bucket.rows.has('fav/自动同步中文名'), true);
+
+  response = await api.onRequestPut(context('空标签重建', {
+    method: 'PUT',
+    headers: { 'content-type': 'application/json' },
+    body: JSON.stringify({ songs: {}, expectedEtag: '' }),
+  }));
+  assert.equal(response.status, 200);
+
   response = await api.onRequestGet(context('%2F'));
   assert.equal(response.status, 400);
 });

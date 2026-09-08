@@ -2726,7 +2726,7 @@ async function resolveFavoriteAutoSyncConflict(choice) {
       state.favAutoSyncOperationController = controller;
       const saved = await putFavoriteArchive(conflict.name, snapshot, {
         signal: controller.signal,
-        expectedEtag: conflict.remoteEtag || ''
+        expectedEtag: conflict.remoteExists ? conflict.remoteEtag : null
       });
       syncedEtag = saved.etag;
     }
