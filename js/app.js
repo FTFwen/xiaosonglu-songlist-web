@@ -14,6 +14,10 @@ const AUDIO_ASSET_VERSION = '3';
 const FAVORITES_KEY = 'favorites:shared';
 // 当前用的中意清单名（上传/导入存档时记录，刷新按它拉取）
 const FAV_CURRENT_KEY = 'favorites:currentName';
+const FAV_AUTO_SYNC_KEY = 'favorites:autoSyncEnabled';
+const FAV_LAST_ACK_KEY = 'favorites:autoSyncLastAck';
+const FAV_NAME_MAX_LENGTH = 30;
+const FAV_REQUEST_TIMEOUT_MS = 15000;
 // 二创歌曲（手动导入，本地存储；勾选"只看二创"才显示）
 const DERIVATIVE_KEY = 'songs:derivative';
 
@@ -94,7 +98,7 @@ function importDerivativeSongsFromData(items) {
 // 中意存档服务器接口
 const FAV_API_BASE = '/api/fav/';
 const favCurrentName = async () => (await storageGet(FAV_CURRENT_KEY))[FAV_CURRENT_KEY] || '';
-const setFavCurrentName = name => storageSet({ [FAV_CURRENT_KEY]: name });
+const setFavCurrentName = name => storageSet({ [FAV_CURRENT_KEY]: name }, { throwOnError: true });
 function updateFavCurrentNameUi() {
   const name = (state.favCurrentNameValue || '').trim();
   dom.favCurrentName.textContent = name ? `当前清单：${name}` : '当前清单：未保存';
@@ -103,6 +107,22 @@ function updateFavCurrentNameUi() {
 const state = {
   currentRoomKey: 'xiaosonglu',
   favCurrentNameValue: '', // 当前中意清单名（本地记录 + 刷新拉取依据）
+  favAutoSyncEnabled: false,
+  favAutoSyncReady: false,
+  favAutoSyncPhase: 'off',
+  favAutoSyncError: '',
+  favAutoSyncEtag: '',
+  favAutoSyncAckSignature: '',
+  favAutoSyncGeneration: 0,
+  favAutoSyncRevision: 0,
+  favAutoSyncAckRevision: 0,
+  favAutoSyncPending: false,
+  favAutoSyncLoop: null,
+  favAutoSyncAbortController: null,
+  favAutoSyncOperationController: null,
+  favAutoSyncConflict: null,
+  favArchiveOperationEpoch: 0,
+  favArchiveOperationController: null,
   currentRoom: getRoomConfig('xiaosonglu'),
   settings: {
     lastRoomKey: 'xiaosonglu',
@@ -315,8 +335,9 @@ function storageGet(keys) {
   });
 }
 
-function storageSet(obj) {
+function storageSet(obj, { throwOnError = false } = {}) {
   return Promise.resolve().then(() => {
+    let firstError = null;
     Object.keys(obj).forEach(key => {
       try {
         localStorage.setItem(key, JSON.stringify(obj[key]));
@@ -328,9 +349,15 @@ function storageSet(obj) {
           } catch (e) { /* 忽略 */ }
         }
       } catch (err) {
+        if (!firstError) firstError = err;
         console.warn('[歌单网页] 保存失败（localStorage 可能已满或不可用）:', key, err);
       }
     });
+    if (throwOnError && firstError) {
+      const error = new Error('本地存档保存失败，请检查浏览器存储权限或先导出备份');
+      error.cause = firstError;
+      throw error;
+    }
   });
 }
 
@@ -2055,11 +2082,12 @@ function favoriteSnapshotFromSong(song, overrides = {}) {
 }
 
 function normalizeFavoriteMap(raw) {
-  if (!raw || typeof raw !== 'object') return {};
+  if (!raw || typeof raw !== 'object' || Array.isArray(raw)) return {};
   const out = {};
   Object.keys(raw).forEach(key => {
+    if (key === '__proto__' || key === 'prototype' || key === 'constructor') return;
     const item = raw[key];
-    if (!item || typeof item !== 'object') return;
+    if (!item || typeof item !== 'object' || Array.isArray(item)) return;
     out[key] = {
       key,
       song_id: item.song_id ?? null,
@@ -2096,7 +2124,14 @@ function hydrateFavoriteList() {
 }
 
 async function loadFavorites() {
-  const result = await storageGet([FAVORITES_KEY, 'favorites:miting', 'favorites:xiaosonglu']);
+  const result = await storageGet([
+    FAVORITES_KEY,
+    FAV_CURRENT_KEY,
+    FAV_AUTO_SYNC_KEY,
+    FAV_LAST_ACK_KEY,
+    'favorites:miting',
+    'favorites:xiaosonglu'
+  ]);
   state.favoritesMap = normalizeFavoriteMap(result[FAVORITES_KEY]);
 
   // 迁移旧版「按房间分存」的收藏 → 全局共享存档（改为歌名键）
@@ -2115,20 +2150,41 @@ async function loadFavorites() {
     });
   });
   if (migrated) {
-    await saveFavorites();
+    await saveFavorites({ autoSync: false });
     await storageRemove(['favorites:miting', 'favorites:xiaosonglu']);
   }
 
   hydrateFavoriteList();
   renderFavorites();
-  // 读取当前清单名，显示在中意模块
-  const curNameObj = await storageGet(FAV_CURRENT_KEY);
-  state.favCurrentNameValue = curNameObj[FAV_CURRENT_KEY] || '';
+  state.favCurrentNameValue = String(result[FAV_CURRENT_KEY] || '').trim();
+  state.favAutoSyncEnabled = result[FAV_AUTO_SYNC_KEY] === true;
+  const savedAck = result[FAV_LAST_ACK_KEY];
+  state.favAutoSyncAckSignature = savedAck && savedAck.name === state.favCurrentNameValue
+    ? String(savedAck.signature || '')
+    : '';
+  state.favAutoSyncAckRevision = state.favAutoSyncRevision;
+  state.favAutoSyncPending = state.favAutoSyncEnabled &&
+    favoriteMapSignature(state.favoritesMap) !== state.favAutoSyncAckSignature;
+  state.favAutoSyncReady = false;
+  state.favAutoSyncPhase = state.favAutoSyncEnabled ? 'connecting' : 'off';
   updateFavCurrentNameUi();
+  updateFavoriteAutoSyncUi();
 }
 
-async function saveFavorites() {
-  await storageSet({ [FAVORITES_KEY]: state.favoritesMap });
+async function saveFavorites({ autoSync = true } = {}) {
+  let localSaved = true;
+  try {
+    await storageSet({ [FAVORITES_KEY]: state.favoritesMap }, { throwOnError: true });
+  } catch (error) {
+    localSaved = false;
+    showToast('本地中意清单保存失败，请先下载存档备份；本页修改仍会保留');
+  }
+  if (autoSync) {
+    state.favAutoSyncRevision += 1;
+    state.favAutoSyncPending = true;
+    void runFavoriteAutoSyncLoop();
+  }
+  return localSaved;
 }
 
 async function toggleFavoriteBySong(song) {
@@ -2237,7 +2293,639 @@ async function clearFavorites() {
   showToast('已清空中意清单');
 }
 
+function validateFavoriteArchiveName(value) {
+  const name = String(value || '').trim();
+  if (!name) return { name: '', error: '先输入存档名吧' };
+  if ([...name].length > FAV_NAME_MAX_LENGTH) {
+    return { name, error: `存档名最多 ${FAV_NAME_MAX_LENGTH} 个字` };
+  }
+  if (/[\\/\u0000-\u001f\u007f]/.test(name)) {
+    return { name, error: '存档名不能包含斜杠或控制字符' };
+  }
+  return { name, error: '' };
+}
+
+function favoriteMapSignature(raw) {
+  const normalized = normalizeFavoriteMap(raw);
+  const rows = Object.keys(normalized).sort().map(key => {
+    const item = normalized[key];
+    return [key, Object.keys(item).sort().map(field => [field, item[field]])];
+  });
+  return JSON.stringify(rows);
+}
+
+function favoriteMapCount(raw) {
+  return Object.keys(normalizeFavoriteMap(raw)).length;
+}
+
+function hasUnsyncedFavoriteChanges() {
+  return state.favAutoSyncPending ||
+    state.favAutoSyncRevision !== state.favAutoSyncAckRevision ||
+    favoriteMapSignature(state.favoritesMap) !== state.favAutoSyncAckSignature;
+}
+
+async function persistFavoriteAutoSyncAck(name, songs) {
+  const signature = favoriteMapSignature(songs);
+  await storageSet(
+    { [FAV_LAST_ACK_KEY]: { name: String(name || '').trim(), signature } },
+    { throwOnError: true }
+  );
+  state.favAutoSyncAckSignature = signature;
+}
+
+async function favoriteArchiveFetch(url, options = {}) {
+  const externalSignal = options.signal;
+  const controller = new AbortController();
+  let timedOut = false;
+  const abortFromExternal = () => controller.abort(externalSignal && externalSignal.reason);
+  if (externalSignal) {
+    if (externalSignal.aborted) abortFromExternal();
+    else externalSignal.addEventListener('abort', abortFromExternal, { once: true });
+  }
+  const timeoutId = setTimeout(() => {
+    timedOut = true;
+    controller.abort();
+  }, FAV_REQUEST_TIMEOUT_MS);
+  try {
+    const response = await fetch(url, { ...options, signal: controller.signal });
+    const bodyText = await response.text();
+    return { response, bodyText };
+  } catch (error) {
+    if (timedOut) {
+      const timeoutError = new Error('请求超时，请稍后重试');
+      timeoutError.name = 'TimeoutError';
+      throw timeoutError;
+    }
+    throw error;
+  } finally {
+    clearTimeout(timeoutId);
+    if (externalSignal) externalSignal.removeEventListener('abort', abortFromExternal);
+  }
+}
+
+async function fetchFavoriteArchive(name, { signal } = {}) {
+  const { response: res, bodyText } = await favoriteArchiveFetch(FAV_API_BASE + encodeURIComponent(name), {
+    method: 'GET',
+    headers: { accept: 'application/json' },
+    cache: 'no-store',
+    signal
+  });
+  if (res.status === 404) return { exists: false, songs: {}, etag: '' };
+  if (!res.ok) throw new Error(`服务器返回 ${res.status}`);
+  let data = null;
+  try { data = JSON.parse(bodyText); } catch (error) { throw new Error('线上存档内容无效'); }
+  if (!data || !data.songs || typeof data.songs !== 'object' || Array.isArray(data.songs)) {
+    throw new Error('线上存档内容无效');
+  }
+  return {
+    exists: true,
+    songs: normalizeFavoriteMap(data.songs),
+    savedAt: data.savedAt || '',
+    etag: res.headers.get('etag') || data.etag || ''
+  };
+}
+
+async function putFavoriteArchive(name, songs, { signal, expectedEtag } = {}) {
+  const payload = { songs: normalizeFavoriteMap(songs) };
+  if (expectedEtag !== undefined) payload.expectedEtag = expectedEtag;
+  const { response: res, bodyText } = await favoriteArchiveFetch(FAV_API_BASE + encodeURIComponent(name), {
+    method: 'PUT',
+    headers: { 'content-type': 'application/json', accept: 'application/json' },
+    body: JSON.stringify(payload),
+    cache: 'no-store',
+    signal
+  });
+  if (res.status === 409) {
+    const error = new Error('线上存档刚被其他页面或设备更新，请重新确认');
+    error.code = 'FAVORITE_ARCHIVE_CONFLICT';
+    throw error;
+  }
+  if (!res.ok) throw new Error(`服务器返回 ${res.status}`);
+  let data = null;
+  try { data = JSON.parse(bodyText); } catch (error) { throw new Error('服务器返回了无效内容'); }
+  return { ...data, etag: res.headers.get('etag') || data.etag || '' };
+}
+
+function favoriteSyncErrorText(error) {
+  if (!error) return '未知错误';
+  if (error.name === 'AbortError') return '';
+  return error.message || '网络错误';
+}
+
+function updateFavoriteAutoSyncUi() {
+  if (!dom.favAutoSyncToggle) return;
+  dom.favAutoSyncToggle.checked = state.favAutoSyncEnabled;
+  const phase = state.favAutoSyncEnabled ? state.favAutoSyncPhase : 'off';
+  const labels = {
+    off: '已关闭',
+    setup: '等待选择存档',
+    connecting: '正在读取…',
+    conflict: '等待处理冲突',
+    syncing: '同步中…',
+    ready: '已同步',
+    dirty: '有未同步修改',
+    error: '同步失败'
+  };
+  dom.favAutoSyncStatus.textContent = labels[phase] || labels.off;
+  dom.favAutoSyncStatus.dataset.state = phase;
+  dom.favAutoSyncStatus.title = phase === 'error' ? state.favAutoSyncError : '';
+  dom.favAutoSyncRetry.hidden = phase !== 'error';
+}
+
+function setFavoriteAutoSyncPhase(phase, error = '') {
+  state.favAutoSyncPhase = phase;
+  state.favAutoSyncError = error;
+  updateFavoriteAutoSyncUi();
+}
+
+async function setActiveFavoriteArchiveName(name) {
+  const normalized = String(name || '').trim();
+  await setFavCurrentName(normalized);
+  state.favCurrentNameValue = normalized;
+  updateFavCurrentNameUi();
+}
+
+function abortFavoriteAutoSyncRequests() {
+  [state.favAutoSyncAbortController, state.favAutoSyncOperationController].forEach(controller => {
+    if (controller) controller.abort();
+  });
+  state.favAutoSyncAbortController = null;
+  state.favAutoSyncOperationController = null;
+}
+
+function setFavoriteAutoSyncSetupBusy(busy, hint = '', isError = false) {
+  [dom.favAutoSyncSetupCancel, dom.favAutoSyncSetupLoad, dom.favAutoSyncSetupCreate].forEach(button => {
+    if (button) button.disabled = !!busy;
+  });
+  if (dom.favAutoSyncSetupName) dom.favAutoSyncSetupName.disabled = !!busy;
+  if (dom.favAutoSyncSetupHint) {
+    dom.favAutoSyncSetupHint.textContent = hint;
+    dom.favAutoSyncSetupHint.classList.toggle('error', !!isError);
+  }
+}
+
+function openFavoriteAutoSyncSetup() {
+  state.favAutoSyncReady = false;
+  setFavoriteAutoSyncPhase('setup');
+  dom.favAutoSyncSetupName.value = '';
+  setFavoriteAutoSyncSetupBusy(false, '');
+  dom.favAutoSyncSetupOverlay.classList.add('show');
+  setTimeout(() => dom.favAutoSyncSetupName.focus(), 50);
+}
+
+function closeFavoriteAutoSyncSetup() {
+  dom.favAutoSyncSetupOverlay.classList.remove('show');
+  setFavoriteAutoSyncSetupBusy(false, '');
+  if (dom.favAutoSyncToggle) dom.favAutoSyncToggle.focus({ preventScroll: true });
+}
+
+function setFavoriteConflictBusy(busy, hint = '', isError = false) {
+  [dom.favAutoSyncConflictCancel, dom.favAutoSyncUseRemote, dom.favAutoSyncKeepLocal].forEach(button => {
+    if (button) button.disabled = !!busy;
+  });
+  if (dom.favAutoSyncConflictHint) {
+    dom.favAutoSyncConflictHint.textContent = hint;
+    dom.favAutoSyncConflictHint.classList.toggle('error', !!isError);
+  }
+}
+
+function openFavoriteAutoSyncConflict(name, remoteSongs, generation, remoteEtag = '', remoteExists = true) {
+  state.favAutoSyncConflict = {
+    name,
+    remoteSongs: normalizeFavoriteMap(remoteSongs),
+    remoteEtag,
+    remoteExists,
+    generation
+  };
+  const localCount = favoriteMapCount(state.favoritesMap);
+  const remoteCount = favoriteMapCount(remoteSongs);
+  dom.favAutoSyncConflictText.textContent = remoteExists
+    ? `存档「${name}」的本地内容（${localCount} 首）与线上内容（${remoteCount} 首）不同，请选择要保留的版本。`
+    : `存档「${name}」刚刚被其他页面或设备删除了。本地仍有 ${localCount} 首，可以用本地内容重新建立线上存档。`;
+  setFavoriteConflictBusy(false, remoteExists
+    ? '选择线上会覆盖本地；保留本地会覆盖线上。'
+    : '线上版本已不存在，请保留本地并重新建立，或关闭自动同步。');
+  dom.favAutoSyncUseRemote.disabled = !remoteExists;
+  closeFavoriteAutoSyncSetup();
+  dom.favAutoSyncConflictOverlay.classList.add('show');
+  state.favAutoSyncReady = false;
+  setFavoriteAutoSyncPhase('conflict');
+  setTimeout(() => (remoteExists ? dom.favAutoSyncUseRemote : dom.favAutoSyncKeepLocal).focus(), 50);
+}
+
+function closeFavoriteAutoSyncConflict() {
+  dom.favAutoSyncConflictOverlay.classList.remove('show');
+  setFavoriteConflictBusy(false, '');
+  state.favAutoSyncConflict = null;
+  if (dom.favAutoSyncToggle) dom.favAutoSyncToggle.focus({ preventScroll: true });
+}
+
+async function disableFavoriteAutoSync({ notify = false, persist = true } = {}) {
+  state.favAutoSyncGeneration += 1;
+  state.favAutoSyncEnabled = false;
+  state.favAutoSyncReady = false;
+  state.favAutoSyncEtag = '';
+  state.favAutoSyncPending = false;
+  abortFavoriteAutoSyncRequests();
+  closeFavoriteAutoSyncSetup();
+  closeFavoriteAutoSyncConflict();
+  setFavoriteAutoSyncPhase('off');
+  try {
+    if (persist) await storageSet({ [FAV_AUTO_SYNC_KEY]: false }, { throwOnError: true });
+    if (notify) showToast('中意存档自动同步已关闭');
+  } catch (error) {
+    showToast('当前页已关闭同步，但开关状态保存失败；刷新后请再确认一次');
+  }
+}
+
+async function markFavoriteAutoSyncReady(name, generation, message = '', syncedRevision = null, etag = '', acknowledgedSongs = null) {
+  if (!state.favAutoSyncEnabled || generation !== state.favAutoSyncGeneration) return false;
+  await setActiveFavoriteArchiveName(name);
+  if (!state.favAutoSyncEnabled || generation !== state.favAutoSyncGeneration) return false;
+  await persistFavoriteAutoSyncAck(name, acknowledgedSongs || state.favoritesMap);
+  closeFavoriteAutoSyncSetup();
+  closeFavoriteAutoSyncConflict();
+  if (syncedRevision !== null) {
+    state.favAutoSyncAckRevision = syncedRevision;
+    if (syncedRevision === state.favAutoSyncRevision) state.favAutoSyncPending = false;
+  }
+  state.favAutoSyncEtag = etag || '';
+  state.favAutoSyncReady = true;
+  setFavoriteAutoSyncPhase('ready');
+  if (message) showToast(message);
+  if (state.favAutoSyncPending) void runFavoriteAutoSyncLoop();
+  return true;
+}
+
+async function reconcileFavoriteAutoSync(name, generation, { createIfMissing = true, announce = true } = {}) {
+  if (!state.favAutoSyncEnabled || generation !== state.favAutoSyncGeneration) return;
+  if (state.favAutoSyncOperationController) state.favAutoSyncOperationController.abort();
+  const controller = new AbortController();
+  state.favAutoSyncOperationController = controller;
+  setFavoriteAutoSyncPhase('connecting');
+  try {
+    const remote = await fetchFavoriteArchive(name, { signal: controller.signal });
+    if (!state.favAutoSyncEnabled || generation !== state.favAutoSyncGeneration) return;
+    if (!remote.exists) {
+      if (!createIfMissing) {
+        openFavoriteAutoSyncSetup();
+        setFavoriteAutoSyncSetupBusy(false, `没有找到线上存档「${name}」`, true);
+        return;
+      }
+      const syncedRevision = state.favAutoSyncRevision;
+      const snapshot = normalizeFavoriteMap(state.favoritesMap);
+      setFavoriteAutoSyncPhase('syncing');
+      const saved = await putFavoriteArchive(name, snapshot, { signal: controller.signal, expectedEtag: null });
+      await markFavoriteAutoSyncReady(name, generation, announce ? `已新建并同步存档「${name}」` : '', syncedRevision, saved.etag, snapshot);
+      return;
+    }
+    if (favoriteMapSignature(remote.songs) === favoriteMapSignature(state.favoritesMap)) {
+      const syncedRevision = state.favAutoSyncRevision;
+      await markFavoriteAutoSyncReady(name, generation, announce ? `存档「${name}」已同步` : '', syncedRevision, remote.etag, remote.songs);
+      return;
+    }
+    openFavoriteAutoSyncConflict(name, remote.songs, generation, remote.etag);
+  } catch (error) {
+    if (error.name === 'AbortError' || !state.favAutoSyncEnabled || generation !== state.favAutoSyncGeneration) return;
+    state.favAutoSyncReady = false;
+    setFavoriteAutoSyncPhase('error', favoriteSyncErrorText(error));
+    showToast(`自动同步连接失败：${favoriteSyncErrorText(error)}`);
+  } finally {
+    if (state.favAutoSyncOperationController === controller) state.favAutoSyncOperationController = null;
+  }
+}
+
+async function enableFavoriteAutoSync({ persist = true, announce = true } = {}) {
+  const generation = state.favAutoSyncGeneration + 1;
+  state.favAutoSyncGeneration = generation;
+  state.favAutoSyncEnabled = true;
+  state.favAutoSyncReady = false;
+  state.favAutoSyncEtag = '';
+  state.favAutoSyncPending = favoriteMapSignature(state.favoritesMap) !== state.favAutoSyncAckSignature;
+  abortFavoriteAutoSyncRequests();
+  setFavoriteAutoSyncPhase('connecting');
+  try {
+    if (persist) await storageSet({ [FAV_AUTO_SYNC_KEY]: true }, { throwOnError: true });
+  } catch (error) {
+    state.favAutoSyncEnabled = false;
+    state.favAutoSyncReady = false;
+    setFavoriteAutoSyncPhase('off');
+    showToast('自动同步开关保存失败，请检查浏览器存储权限');
+    return;
+  }
+  if (!state.favAutoSyncEnabled || generation !== state.favAutoSyncGeneration) return;
+  const name = String(state.favCurrentNameValue || '').trim();
+  if (!name) {
+    openFavoriteAutoSyncSetup();
+    return;
+  }
+  await reconcileFavoriteAutoSync(name, generation, { createIfMissing: true, announce });
+}
+
+async function handleFavoriteAutoSyncSetup(mode) {
+  const checked = validateFavoriteArchiveName(dom.favAutoSyncSetupName.value);
+  if (checked.error) {
+    setFavoriteAutoSyncSetupBusy(false, checked.error, true);
+    return;
+  }
+  const generation = state.favAutoSyncGeneration;
+  if (!state.favAutoSyncEnabled) return;
+  if (state.favAutoSyncOperationController) state.favAutoSyncOperationController.abort();
+  const controller = new AbortController();
+  state.favAutoSyncOperationController = controller;
+  setFavoriteAutoSyncSetupBusy(true, mode === 'load' ? '正在读取线上存档…' : '正在检查存档名…');
+  try {
+    const remote = await fetchFavoriteArchive(checked.name, { signal: controller.signal });
+    if (!state.favAutoSyncEnabled || generation !== state.favAutoSyncGeneration) return;
+    if (!remote.exists) {
+      if (mode === 'load') {
+        setFavoriteAutoSyncSetupBusy(false, `没有找到线上存档「${checked.name}」`, true);
+        return;
+      }
+      const syncedRevision = state.favAutoSyncRevision;
+      const snapshot = normalizeFavoriteMap(state.favoritesMap);
+      setFavoriteAutoSyncSetupBusy(true, '正在新建并上传本地中意清单…');
+      const saved = await putFavoriteArchive(checked.name, snapshot, { signal: controller.signal, expectedEtag: null });
+      await markFavoriteAutoSyncReady(checked.name, generation, `已新建并开启「${checked.name}」自动同步`, syncedRevision, saved.etag, snapshot);
+      return;
+    }
+    if (favoriteMapSignature(remote.songs) === favoriteMapSignature(state.favoritesMap)) {
+      const syncedRevision = state.favAutoSyncRevision;
+      await markFavoriteAutoSyncReady(checked.name, generation, `已开启「${checked.name}」自动同步`, syncedRevision, remote.etag, remote.songs);
+      return;
+    }
+    openFavoriteAutoSyncConflict(checked.name, remote.songs, generation, remote.etag);
+  } catch (error) {
+    if (error.name === 'AbortError' || !state.favAutoSyncEnabled || generation !== state.favAutoSyncGeneration) return;
+    setFavoriteAutoSyncSetupBusy(false, `连接失败：${favoriteSyncErrorText(error)}`, true);
+  } finally {
+    if (state.favAutoSyncOperationController === controller) state.favAutoSyncOperationController = null;
+    if (dom.favAutoSyncSetupOverlay.classList.contains('show') && !dom.favAutoSyncSetupHint.classList.contains('error')) {
+      setFavoriteAutoSyncSetupBusy(false, dom.favAutoSyncSetupHint.textContent || '');
+    }
+  }
+}
+
+async function resolveFavoriteAutoSyncConflict(choice) {
+  const conflict = state.favAutoSyncConflict;
+  if (!conflict || !state.favAutoSyncEnabled || conflict.generation !== state.favAutoSyncGeneration) return;
+  if (choice === 'remote' && !conflict.remoteExists) return;
+  let controller = null;
+  const startedRevision = state.favAutoSyncRevision;
+  let syncedRevision = startedRevision;
+  let syncedEtag = conflict.remoteEtag || '';
+  let acknowledgedSongs = normalizeFavoriteMap(conflict.remoteSongs);
+  setFavoriteConflictBusy(true, choice === 'remote' ? '正在使用线上存档…' : '正在更新线上存档…');
+  try {
+    if (choice === 'remote') {
+      controller = new AbortController();
+      state.favAutoSyncOperationController = controller;
+      const latest = await fetchFavoriteArchive(conflict.name, { signal: controller.signal });
+      if (startedRevision !== state.favAutoSyncRevision) {
+        openFavoriteAutoSyncConflict(
+          conflict.name,
+          latest.songs,
+          conflict.generation,
+          latest.etag,
+          latest.exists
+        );
+        showToast('选择期间本地中意清单有变化，请重新确认');
+        return;
+      }
+      if (!latest.exists || latest.etag !== conflict.remoteEtag) {
+        openFavoriteAutoSyncConflict(
+          conflict.name,
+          latest.songs,
+          conflict.generation,
+          latest.etag,
+          latest.exists
+        );
+        showToast('线上存档刚有变化，请按最新内容重新选择');
+        return;
+      }
+      state.favoritesMap = normalizeFavoriteMap(latest.songs);
+      acknowledgedSongs = normalizeFavoriteMap(latest.songs);
+      syncedEtag = latest.etag;
+      syncedRevision = startedRevision;
+      await saveFavorites({ autoSync: false });
+      hydrateFavoriteList();
+      applySongFilters();
+      renderSonglistPanel();
+      updatePlayerFavState();
+    } else {
+      syncedRevision = state.favAutoSyncRevision;
+      const snapshot = normalizeFavoriteMap(state.favoritesMap);
+      acknowledgedSongs = snapshot;
+      controller = new AbortController();
+      state.favAutoSyncOperationController = controller;
+      const saved = await putFavoriteArchive(conflict.name, snapshot, {
+        signal: controller.signal,
+        expectedEtag: conflict.remoteEtag || ''
+      });
+      syncedEtag = saved.etag;
+    }
+    await markFavoriteAutoSyncReady(
+      conflict.name,
+      conflict.generation,
+      choice === 'remote' ? `已使用线上存档「${conflict.name}」` : `已用本地内容更新存档「${conflict.name}」`,
+      syncedRevision,
+      syncedEtag,
+      acknowledgedSongs
+    );
+  } catch (error) {
+    if (error.name === 'AbortError') return;
+    if (error.code === 'FAVORITE_ARCHIVE_CONFLICT' && state.favAutoSyncEnabled && conflict.generation === state.favAutoSyncGeneration) {
+      try {
+        setFavoriteConflictBusy(true, '线上存档又有更新，正在重新读取…');
+        const latest = await fetchFavoriteArchive(conflict.name, { signal: controller ? controller.signal : undefined });
+        if (favoriteMapSignature(latest.songs) === favoriteMapSignature(state.favoritesMap) && latest.exists) {
+          await markFavoriteAutoSyncReady(
+            conflict.name,
+            conflict.generation,
+            `存档「${conflict.name}」已经同步到最新版本`,
+            state.favAutoSyncRevision,
+            latest.etag,
+            latest.songs
+          );
+        } else {
+          openFavoriteAutoSyncConflict(
+            conflict.name,
+            latest.songs,
+            conflict.generation,
+            latest.etag,
+            latest.exists
+          );
+          showToast('线上存档刚有变化，请按最新内容重新选择');
+        }
+      } catch (refreshError) {
+        if (refreshError.name !== 'AbortError') {
+          setFavoriteConflictBusy(false, `重新读取失败：${favoriteSyncErrorText(refreshError)}`, true);
+        }
+      }
+      return;
+    }
+    setFavoriteConflictBusy(false, `处理失败：${favoriteSyncErrorText(error)}`, true);
+  } finally {
+    if (controller && state.favAutoSyncOperationController === controller) state.favAutoSyncOperationController = null;
+  }
+}
+
+async function retryFavoriteAutoSync() {
+  if (!state.favAutoSyncEnabled) return;
+  if (state.favAutoSyncReady && state.favCurrentNameValue) {
+    state.favAutoSyncPending = true;
+    await runFavoriteAutoSyncLoop();
+    return;
+  }
+  const name = String(state.favCurrentNameValue || '').trim();
+  if (!name) {
+    openFavoriteAutoSyncSetup();
+    return;
+  }
+  await reconcileFavoriteAutoSync(name, state.favAutoSyncGeneration, { createIfMissing: true, announce: true });
+}
+
+async function runFavoriteAutoSyncLoop() {
+  if (!state.favAutoSyncEnabled || !state.favAutoSyncReady || !state.favAutoSyncPending) return false;
+  if (state.favAutoSyncLoop) return state.favAutoSyncLoop;
+  const generation = state.favAutoSyncGeneration;
+  const loop = (async () => {
+    while (state.favAutoSyncEnabled && state.favAutoSyncReady && state.favAutoSyncPending && generation === state.favAutoSyncGeneration) {
+      state.favAutoSyncPending = false;
+      const revision = state.favAutoSyncRevision;
+      const name = String(state.favCurrentNameValue || '').trim();
+      if (!name) {
+        state.favAutoSyncReady = false;
+        openFavoriteAutoSyncSetup();
+        return false;
+      }
+      const snapshot = normalizeFavoriteMap(state.favoritesMap);
+      const controller = new AbortController();
+      state.favAutoSyncAbortController = controller;
+      setFavoriteAutoSyncPhase('syncing');
+      try {
+        const saved = await putFavoriteArchive(name, snapshot, {
+          signal: controller.signal,
+          expectedEtag: state.favAutoSyncEtag || ''
+        });
+        if (generation !== state.favAutoSyncGeneration) return false;
+        state.favAutoSyncEtag = saved.etag || '';
+        state.favAutoSyncAckRevision = revision;
+        await persistFavoriteAutoSyncAck(name, snapshot);
+      } catch (error) {
+        if (error.name === 'AbortError' || !state.favAutoSyncEnabled || generation !== state.favAutoSyncGeneration) return false;
+        state.favAutoSyncPending = state.favAutoSyncRevision !== state.favAutoSyncAckRevision ||
+          favoriteMapSignature(state.favoritesMap) !== state.favAutoSyncAckSignature;
+        if (error.code === 'FAVORITE_ARCHIVE_CONFLICT') state.favAutoSyncReady = false;
+        setFavoriteAutoSyncPhase('error', favoriteSyncErrorText(error));
+        showToast(`中意存档同步失败：${favoriteSyncErrorText(error)}`);
+        return false;
+      } finally {
+        if (state.favAutoSyncAbortController === controller) state.favAutoSyncAbortController = null;
+      }
+      if (revision !== state.favAutoSyncRevision) state.favAutoSyncPending = true;
+    }
+    if (state.favAutoSyncEnabled && state.favAutoSyncReady && generation === state.favAutoSyncGeneration) {
+      setFavoriteAutoSyncPhase('ready');
+    }
+    return true;
+  })();
+  state.favAutoSyncLoop = loop;
+  try {
+    return await loop;
+  } finally {
+    if (state.favAutoSyncLoop === loop) state.favAutoSyncLoop = null;
+    if (state.favAutoSyncEnabled && state.favAutoSyncReady && state.favAutoSyncPending && state.favAutoSyncPhase !== 'error') {
+      queueMicrotask(() => { void runFavoriteAutoSyncLoop(); });
+    }
+  }
+}
+
+async function adoptManualFavoriteArchive(name, { syncedRevision = null, etag = '', acknowledgedSongs = null } = {}) {
+  state.favAutoSyncGeneration += 1;
+  abortFavoriteAutoSyncRequests();
+  closeFavoriteAutoSyncSetup();
+  closeFavoriteAutoSyncConflict();
+  if (state.favAutoSyncEnabled) {
+    state.favAutoSyncReady = false;
+    setFavoriteAutoSyncPhase('connecting');
+  }
+  try {
+    await setActiveFavoriteArchiveName(name);
+    await persistFavoriteAutoSyncAck(name, acknowledgedSongs || state.favoritesMap);
+  } catch (error) {
+    if (state.favAutoSyncEnabled) setFavoriteAutoSyncPhase('error', favoriteSyncErrorText(error));
+    throw error;
+  }
+  if (syncedRevision !== null) state.favAutoSyncAckRevision = syncedRevision;
+  state.favAutoSyncPending = syncedRevision !== null && syncedRevision !== state.favAutoSyncRevision;
+  state.favAutoSyncEtag = etag || '';
+  if (state.favAutoSyncEnabled) {
+    state.favAutoSyncReady = true;
+    setFavoriteAutoSyncPhase('ready');
+    if (state.favAutoSyncPending) void runFavoriteAutoSyncLoop();
+  } else {
+    setFavoriteAutoSyncPhase('off');
+  }
+}
+
 // ===== 中意清单 服务器存档（访客用清单名区分） =====
+
+function setFavoriteArchiveButtonsDisabled(disabled) {
+  [dom.refreshBtn, dom.favoritesRefreshBtn, dom.favoritesUploadBtn, dom.favoritesLoadBtn].forEach(button => {
+    if (button) button.disabled = !!disabled;
+  });
+}
+
+function beginFavoriteArchiveOperation() {
+  if (state.favArchiveOperationController) state.favArchiveOperationController.abort();
+  state.favArchiveOperationEpoch += 1;
+  state.favArchiveOperationController = new AbortController();
+  setFavoriteArchiveButtonsDisabled(true);
+  return state.favArchiveOperationEpoch;
+}
+
+function favoriteArchiveOperationSignal(epoch) {
+  return isCurrentFavoriteArchiveOperation(epoch) && state.favArchiveOperationController
+    ? state.favArchiveOperationController.signal
+    : undefined;
+}
+
+function waitForFavoriteAutoSyncLoop(epoch) {
+  if (!state.favAutoSyncLoop) return Promise.resolve();
+  const signal = favoriteArchiveOperationSignal(epoch);
+  if (!signal) return Promise.reject(new DOMException('Cancelled', 'AbortError'));
+  return Promise.race([
+    state.favAutoSyncLoop,
+    new Promise((resolve, reject) => {
+      if (signal.aborted) {
+        reject(new DOMException('Cancelled', 'AbortError'));
+        return;
+      }
+      signal.addEventListener('abort', () => reject(new DOMException('Cancelled', 'AbortError')), { once: true });
+    })
+  ]);
+}
+
+function isCurrentFavoriteArchiveOperation(epoch) {
+  return epoch === state.favArchiveOperationEpoch;
+}
+
+function finishFavoriteArchiveOperation(epoch) {
+  if (!isCurrentFavoriteArchiveOperation(epoch)) return;
+  state.favArchiveOperationController = null;
+  setFavoriteArchiveButtonsDisabled(false);
+}
+
+function cancelFavoriteArchiveOperation() {
+  state.favArchiveOperationEpoch += 1;
+  if (state.favArchiveOperationController) state.favArchiveOperationController.abort();
+  state.favArchiveOperationController = null;
+  setFavoriteArchiveButtonsDisabled(false);
+  [dom.favUploadOk, dom.favUploadName, dom.favLoadOk, dom.favLoadName].forEach(element => {
+    if (element) element.disabled = false;
+  });
+}
 
 // 上传存档：打开弹窗输入清单名
 function openFavUpload() {
@@ -2250,29 +2938,43 @@ function closeFavUpload() {
   dom.favUploadOverlay.classList.remove('show');
   dom.favUploadName.value = '';
 }
-// 把当前 favoritesMap 上传到服务器，同名询问覆盖
+// 把当前 favoritesMap 上传到服务器；先读取再询问，避免“询问前已经覆盖”。
 async function submitFavUpload() {
-  const name = dom.favUploadName.value.trim();
-  if (!name) { showToast('先给清单起个名字吧'); return; }
-  const url = FAV_API_BASE + encodeURIComponent(name);
-  const payload = { songs: state.favoritesMap };
-  let res;
+  const checked = validateFavoriteArchiveName(dom.favUploadName.value);
+  if (checked.error) { showToast(checked.error); return; }
+  const operationEpoch = beginFavoriteArchiveOperation();
+  [dom.favUploadOk, dom.favUploadName].forEach(element => { element.disabled = true; });
   try {
-    res = await fetch(url, { method: 'PUT', headers: { 'content-type': 'application/json' }, body: JSON.stringify(payload) });
-  } catch (e) { showToast('上传失败：网络错误'); return; }
-  if (!res.ok) { showToast('上传失败：' + res.status); return; }
-  const data = await res.json();
-  // 已存在同名 → 询问是否覆盖
-  if (data.exists) {
-    if (!window.confirm(`服务器已有同名清单「${name}」，是否覆盖？`)) return;
-    res = await fetch(url, { method: 'PUT', headers: { 'content-type': 'application/json' }, body: JSON.stringify(payload) });
-    if (!res.ok) { showToast('覆盖失败：' + res.status); return; }
+    await waitForFavoriteAutoSyncLoop(operationEpoch);
+    if (!isCurrentFavoriteArchiveOperation(operationEpoch)) return;
+    const syncedRevision = state.favAutoSyncRevision;
+    const snapshot = normalizeFavoriteMap(state.favoritesMap);
+    const remote = await fetchFavoriteArchive(checked.name, { signal: favoriteArchiveOperationSignal(operationEpoch) });
+    if (!isCurrentFavoriteArchiveOperation(operationEpoch)) return;
+    if (syncedRevision !== state.favAutoSyncRevision) {
+      showToast('上传期间本地中意清单有变化，请再点一次上传');
+      return;
+    }
+    const differs = remote.exists && favoriteMapSignature(remote.songs) !== favoriteMapSignature(snapshot);
+    if (differs && !window.confirm(`服务器已有同名清单「${checked.name}」，是否用当前本地内容覆盖？`)) return;
+    let etag = remote.etag;
+    if (!remote.exists || differs) {
+      const saved = await putFavoriteArchive(checked.name, snapshot, {
+        expectedEtag: remote.exists ? remote.etag : null,
+        signal: favoriteArchiveOperationSignal(operationEpoch)
+      });
+      etag = saved.etag;
+    }
+    if (!isCurrentFavoriteArchiveOperation(operationEpoch)) return;
+    await adoptManualFavoriteArchive(checked.name, { syncedRevision, etag, acknowledgedSongs: snapshot });
+    closeFavUpload();
+    showToast(remote.exists && !differs ? `存档「${checked.name}」内容已经一致` : `已上传清单「${checked.name}」`);
+  } catch (error) {
+    if (error.name !== 'AbortError') showToast(`上传失败：${favoriteSyncErrorText(error)}`);
+  } finally {
+    [dom.favUploadOk, dom.favUploadName].forEach(element => { element.disabled = false; });
+    finishFavoriteArchiveOperation(operationEpoch);
   }
-  setFavCurrentName(name);
-  state.favCurrentNameValue = name;
-  updateFavCurrentNameUi();
-  closeFavUpload();
-  showToast(`已上传清单「${name}」`);
 }
 
 // 导入存档：打开弹窗输入清单名
@@ -2285,48 +2987,94 @@ function closeFavLoad() {
   dom.favLoadOverlay.classList.remove('show');
   dom.favLoadName.value = '';
 }
-// 从服务器拉取清单并导入
+// 从服务器拉取清单并导入（这是显式操作，因此直接以线上内容覆盖本地）。
 async function submitFavLoad() {
-  const name = dom.favLoadName.value.trim();
-  if (!name) { showToast('先输入清单名'); return; }
-  const url = FAV_API_BASE + encodeURIComponent(name);
-  let res;
+  const checked = validateFavoriteArchiveName(dom.favLoadName.value);
+  if (checked.error) { showToast(checked.error); return; }
+  const operationEpoch = beginFavoriteArchiveOperation();
+  [dom.favLoadOk, dom.favLoadName].forEach(element => { element.disabled = true; });
   try {
-    res = await fetch(url);
-  } catch (e) { showToast('拉取失败：网络错误'); return; }
-  if (res.status === 404) { showToast(`没有找到清单「${name}」`); dom.favLoadOverlay.classList.remove('show'); return; }
-  if (!res.ok) { showToast('拉取失败：' + res.status); return; }
-  const data = await res.json();
-  if (!data.songs || typeof data.songs !== 'object') { showToast('清单内容无效'); return; }
-  state.favoritesMap = normalizeFavoriteMap(data.songs);
-  await saveFavorites();
-  hydrateFavoriteList();
-  applySongFilters();
-  setFavCurrentName(name);
-  state.favCurrentNameValue = name;
-  updateFavCurrentNameUi();
-  closeFavLoad();
-  showToast(`已导入清单「${name}」，共 ${state.favoriteList.length} 首`);
+    await waitForFavoriteAutoSyncLoop(operationEpoch);
+    if (!isCurrentFavoriteArchiveOperation(operationEpoch)) return;
+    const startedRevision = state.favAutoSyncRevision;
+    const startedGeneration = state.favAutoSyncGeneration;
+    const remote = await fetchFavoriteArchive(checked.name, { signal: favoriteArchiveOperationSignal(operationEpoch) });
+    if (!isCurrentFavoriteArchiveOperation(operationEpoch)) return;
+    if (startedGeneration !== state.favAutoSyncGeneration) return;
+    if (!remote.exists) {
+      showToast(`没有找到清单「${checked.name}」`);
+      return;
+    }
+    if (startedRevision !== state.favAutoSyncRevision) {
+      showToast('读取期间本地中意清单有变化，已保留本地，请重试');
+      return;
+    }
+    if (state.favAutoSyncEnabled && checked.name === state.favCurrentNameValue && hasUnsyncedFavoriteChanges()) {
+      closeFavLoad();
+      openFavoriteAutoSyncConflict(checked.name, remote.songs, startedGeneration, remote.etag, true);
+      return;
+    }
+    state.favoritesMap = normalizeFavoriteMap(remote.songs);
+    await saveFavorites({ autoSync: false });
+    if (!isCurrentFavoriteArchiveOperation(operationEpoch)) return;
+    hydrateFavoriteList();
+    applySongFilters();
+    renderSonglistPanel();
+    updatePlayerFavState();
+    await adoptManualFavoriteArchive(checked.name, { syncedRevision: startedRevision, etag: remote.etag, acknowledgedSongs: remote.songs });
+    closeFavLoad();
+    showToast(`已导入清单「${checked.name}」，共 ${state.favoriteList.length} 首`);
+  } catch (error) {
+    if (error.name !== 'AbortError') showToast(`拉取失败：${favoriteSyncErrorText(error)}`);
+  } finally {
+    [dom.favLoadOk, dom.favLoadName].forEach(element => { element.disabled = false; });
+    finishFavoriteArchiveOperation(operationEpoch);
+  }
 }
 
-// 刷新清单：按当前清单名从服务器拉取
+// 刷新清单：按当前清单名从服务器拉取。
 async function refreshFavoritesFromServer() {
-  const name = (state.favCurrentNameValue || '').trim();
+  const name = String(state.favCurrentNameValue || '').trim();
   if (!name) { showToast('还没有当前清单名，先上传或导入一个存档'); return; }
-  const url = FAV_API_BASE + encodeURIComponent(name);
-  let res;
+  const operationEpoch = beginFavoriteArchiveOperation();
   try {
-    res = await fetch(url);
-  } catch (e) { showToast('刷新失败：网络错误'); return; }
-  if (res.status === 404) { showToast(`服务器没有清单「${name}」`); return; }
-  if (!res.ok) { showToast('刷新失败：' + res.status); return; }
-  const data = await res.json();
-  if (!data.songs || typeof data.songs !== 'object') { showToast('清单内容无效'); return; }
-  state.favoritesMap = normalizeFavoriteMap(data.songs);
-  await saveFavorites();
-  hydrateFavoriteList();
-  applySongFilters();
-  showToast(`已刷新清单「${name}」`);
+    await waitForFavoriteAutoSyncLoop(operationEpoch);
+    if (!isCurrentFavoriteArchiveOperation(operationEpoch)) return;
+    const startedRevision = state.favAutoSyncRevision;
+    const startedGeneration = state.favAutoSyncGeneration;
+    const remote = await fetchFavoriteArchive(name, { signal: favoriteArchiveOperationSignal(operationEpoch) });
+    if (!isCurrentFavoriteArchiveOperation(operationEpoch)) return;
+    if (startedGeneration !== state.favAutoSyncGeneration) return;
+    if (startedRevision !== state.favAutoSyncRevision) {
+      showToast('刷新期间本地中意清单有变化，已保留本地，请重试');
+      return;
+    }
+    if (!remote.exists) {
+      if (state.favAutoSyncEnabled) {
+        openFavoriteAutoSyncConflict(name, {}, startedGeneration, '', false);
+      }
+      showToast(`服务器没有清单「${name}」`);
+      return;
+    }
+    if (state.favAutoSyncEnabled &&
+        favoriteMapSignature(remote.songs) !== favoriteMapSignature(state.favoritesMap)) {
+      openFavoriteAutoSyncConflict(name, remote.songs, startedGeneration, remote.etag, true);
+      return;
+    }
+    state.favoritesMap = normalizeFavoriteMap(remote.songs);
+    await saveFavorites({ autoSync: false });
+    if (!isCurrentFavoriteArchiveOperation(operationEpoch)) return;
+    hydrateFavoriteList();
+    applySongFilters();
+    renderSonglistPanel();
+    updatePlayerFavState();
+    await adoptManualFavoriteArchive(name, { syncedRevision: startedRevision, etag: remote.etag, acknowledgedSongs: remote.songs });
+    showToast(`已刷新清单「${name}」`);
+  } catch (error) {
+    if (error.name !== 'AbortError') showToast(`刷新失败：${favoriteSyncErrorText(error)}`);
+  } finally {
+    finishFavoriteArchiveOperation(operationEpoch);
+  }
 }
 
 // ===== 中意清单 本地 TXT 导入/导出 =====
@@ -2822,6 +3570,7 @@ async function initRoom(forceRefreshSongs = false) {
   syncFilterInputs();
   syncPresetButtons();
   applySongFilters();
+  if (state.favAutoSyncEnabled) await enableFavoriteAutoSync({ persist: false, announce: false });
 }
 
 function bindDom() {
@@ -2834,7 +3583,9 @@ function bindDom() {
     'historyDaySelect','historyPrevBtn','historyNextBtn','historyPageInfo','historyMetaText','historyListWrap','favoritesRefreshBtn',
     'favoritesUploadBtn','favUploadOverlay','favUploadName','favUploadCancel','favUploadOk',
     'favoritesLoadBtn','favLoadOverlay','favLoadName','favLoadCancel','favLoadOk',
-    'favCurrentName',
+    'favCurrentName','favAutoSyncToggle','favAutoSyncStatus','favAutoSyncRetry',
+    'favAutoSyncSetupOverlay','favAutoSyncSetupName','favAutoSyncSetupHint','favAutoSyncSetupCancel','favAutoSyncSetupLoad','favAutoSyncSetupCreate',
+    'favAutoSyncConflictOverlay','favAutoSyncConflictText','favAutoSyncConflictHint','favAutoSyncConflictCancel','favAutoSyncUseRemote','favAutoSyncKeepLocal',
     'thanksBtn','thanksOverlay','thanksCloseBtn',
     'favoritesExportFileBtn','favoritesImportFileBtn','favoritesImportFileInput',
     'favoritesClearBtn','favoritesMetaText','favoritesCountText','favoritesListWrap',
@@ -2860,8 +3611,18 @@ function bindEvents() {
   });
 
   dom.refreshBtn.addEventListener('click', async () => {
-    await initRoom(true);
-    showToast('已经重新刷新歌单数据');
+    const operationEpoch = beginFavoriteArchiveOperation();
+    state.favAutoSyncGeneration += 1;
+    state.favAutoSyncReady = false;
+    abortFavoriteAutoSyncRequests();
+    try {
+      await initRoom(true);
+      if (isCurrentFavoriteArchiveOperation(operationEpoch)) showToast('已经重新刷新歌单数据');
+    } catch (error) {
+      if (isCurrentFavoriteArchiveOperation(operationEpoch)) showToast(`刷新失败：${error.message || '请稍后重试'}`);
+    } finally {
+      finishFavoriteArchiveOperation(operationEpoch);
+    }
   });
 
   document.querySelectorAll('.search-mode-btn').forEach(btn => {
@@ -3372,11 +4133,37 @@ function bindEvents() {
 
   dom.favoritesRefreshBtn.addEventListener('click', refreshFavoritesFromServer);
   dom.favoritesUploadBtn.addEventListener('click', openFavUpload);
-  dom.favUploadCancel.addEventListener('click', closeFavUpload);
+  dom.favUploadCancel.addEventListener('click', () => {
+    cancelFavoriteArchiveOperation();
+    closeFavUpload();
+  });
   dom.favUploadOk.addEventListener('click', submitFavUpload);
   dom.favoritesLoadBtn.addEventListener('click', openFavLoad);
-  dom.favLoadCancel.addEventListener('click', closeFavLoad);
+  dom.favLoadCancel.addEventListener('click', () => {
+    cancelFavoriteArchiveOperation();
+    closeFavLoad();
+  });
   dom.favLoadOk.addEventListener('click', submitFavLoad);
+  dom.favAutoSyncToggle.addEventListener('change', () => {
+    if (dom.favAutoSyncToggle.checked) void enableFavoriteAutoSync({ persist: true, announce: true });
+    else void disableFavoriteAutoSync({ notify: true });
+  });
+  dom.favAutoSyncRetry.addEventListener('click', () => { void retryFavoriteAutoSync(); });
+  dom.favAutoSyncSetupCancel.addEventListener('click', () => { void disableFavoriteAutoSync(); });
+  dom.favAutoSyncSetupLoad.addEventListener('click', () => { void handleFavoriteAutoSyncSetup('load'); });
+  dom.favAutoSyncSetupCreate.addEventListener('click', () => { void handleFavoriteAutoSyncSetup('create'); });
+  dom.favAutoSyncSetupName.addEventListener('keydown', event => {
+    if (event.key === 'Enter') void handleFavoriteAutoSyncSetup('load');
+  });
+  dom.favAutoSyncSetupOverlay.addEventListener('click', event => {
+    if (event.target === dom.favAutoSyncSetupOverlay) void disableFavoriteAutoSync();
+  });
+  dom.favAutoSyncConflictCancel.addEventListener('click', () => { void disableFavoriteAutoSync(); });
+  dom.favAutoSyncUseRemote.addEventListener('click', () => { void resolveFavoriteAutoSyncConflict('remote'); });
+  dom.favAutoSyncKeepLocal.addEventListener('click', () => { void resolveFavoriteAutoSyncConflict('local'); });
+  dom.favAutoSyncConflictOverlay.addEventListener('click', event => {
+    if (event.target === dom.favAutoSyncConflictOverlay) void disableFavoriteAutoSync();
+  });
   dom.favoritesExportFileBtn.addEventListener('click', exportFavoritesToFile);
   dom.favoritesImportFileBtn.addEventListener('click', () => dom.favoritesImportFileInput.click());
   dom.favoritesImportFileInput.addEventListener('change', handleFavoritesFileImport);
@@ -3411,7 +4198,12 @@ function bindEvents() {
   dom.detailOverlay.addEventListener('click', closeDetailModal);
   dom.detailCloseBtn.addEventListener('click', closeDetailModal);
   document.addEventListener('keydown', event => {
-    if (event.key === 'Escape') closeDetailModal();
+    if (event.key !== 'Escape') return;
+    if (dom.favAutoSyncSetupOverlay.classList.contains('show') || dom.favAutoSyncConflictOverlay.classList.contains('show')) {
+      void disableFavoriteAutoSync();
+      return;
+    }
+    closeDetailModal();
   });
 
   // ===== 回到顶部：滚动超过一屏高度后显示，点击平滑回顶 =====

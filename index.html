@@ -1478,20 +1478,102 @@
       font-size: 13px;
       color: var(--text);
     }
-    /* 中意清单：标题 + 当前清单名 */
+    /* 中意清单：标题、当前清单名与自动同步 */
     .fav-toolbar-head {
       display: flex;
-      align-items: baseline;
+      align-items: flex-start;
       justify-content: space-between;
-      gap: 10px;
+      flex-wrap: wrap;
+      gap: 10px 16px;
     }
     .fav-toolbar-head h3 { margin: 0; }
+    .fav-toolbar-meta {
+      min-width: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 5px;
+      margin-bottom: 10px;
+    }
     .fav-current-name {
+      max-width: min(360px, 72vw);
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
       font-size: 12px;
       color: var(--text-soft);
       font-weight: 600;
-      margin-bottom: 10px;
     }
+    .fav-sync-control {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      flex-wrap: wrap;
+      gap: 5px 8px;
+      font-size: 11px;
+      color: var(--text-soft);
+    }
+    .fav-auto-sync {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      color: var(--text);
+      font-size: 12px;
+      font-weight: 700;
+      cursor: pointer;
+      user-select: none;
+    }
+    .fav-auto-sync input {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      opacity: 0;
+      pointer-events: none;
+    }
+    .fav-switch-track {
+      position: relative;
+      width: 38px;
+      height: 21px;
+      flex: 0 0 auto;
+      border: 1px solid var(--line-strong);
+      border-radius: 999px;
+      background: #d8ddcf;
+      box-shadow: inset 0 1px 2px rgba(38, 51, 26, 0.12);
+      transition: background 0.18s ease, border-color 0.18s ease;
+    }
+    .fav-switch-thumb {
+      position: absolute;
+      top: 2px;
+      left: 2px;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background: #fff;
+      box-shadow: 0 1px 4px rgba(26, 42, 19, 0.28);
+      transition: transform 0.18s ease;
+    }
+    .fav-auto-sync input:checked + .fav-switch-track {
+      background: var(--primary);
+      border-color: var(--primary-dark);
+    }
+    .fav-auto-sync input:checked + .fav-switch-track .fav-switch-thumb { transform: translateX(17px); }
+    .fav-auto-sync input:focus-visible + .fav-switch-track { outline: 3px solid rgba(91, 110, 225, 0.24); outline-offset: 2px; }
+    .fav-sync-status { color: var(--text-soft); }
+    .fav-sync-status[data-state="ready"] { color: #53752e; }
+    .fav-sync-status[data-state="syncing"] { color: var(--primary-dark); }
+    .fav-sync-status[data-state="error"] { color: var(--danger); font-weight: 700; }
+    .fav-sync-retry {
+      border: 0;
+      padding: 2px 5px;
+      border-radius: 6px;
+      background: var(--danger-soft);
+      color: var(--danger);
+      font: inherit;
+      font-weight: 700;
+      cursor: pointer;
+    }
+    .fav-sync-retry[hidden] { display: none; }
 
     .overlay {
       display: none;
@@ -2253,7 +2335,12 @@
       font-family: inherit;
     }
     .dialog-input:focus { border-color: var(--primary); box-shadow: 0 0 0 3px rgba(91,110,225,0.14); }
+    .dialog-help { margin: 0; color: var(--text-soft); font-size: 12px; line-height: 1.65; }
+    .dialog-hint { min-height: 18px; color: var(--text-soft); font-size: 12px; line-height: 1.5; }
+    .dialog-hint.error { color: var(--danger); font-weight: 600; }
     .dialog-actions { display: flex; gap: 8px; justify-content: flex-end; }
+    .dialog-actions.wrap { flex-wrap: wrap; }
+    .dialog-actions .tool-btn:disabled { cursor: wait; opacity: 0.58; }
 
     /* 歌曲卡片“加入歌单”按钮 */
     .songlist-add-btn {
@@ -3417,7 +3504,18 @@
           <div class="card favorites-toolbar">
             <div class="fav-toolbar-head">
               <h3>中意清单</h3>
-              <span class="fav-current-name" id="favCurrentName">当前清单：未保存</span>
+              <div class="fav-toolbar-meta">
+                <span class="fav-current-name" id="favCurrentName">当前清单：未保存</span>
+                <div class="fav-sync-control">
+                  <label class="fav-auto-sync" for="favAutoSyncToggle">
+                    <span>自动同步</span>
+                    <input id="favAutoSyncToggle" type="checkbox" role="switch" aria-describedby="favAutoSyncStatus">
+                    <span class="fav-switch-track" aria-hidden="true"><span class="fav-switch-thumb"></span></span>
+                  </label>
+                  <span class="fav-sync-status" id="favAutoSyncStatus" data-state="off" aria-live="polite">已关闭</span>
+                  <button class="fav-sync-retry" id="favAutoSyncRetry" type="button" hidden>重试</button>
+                </div>
+              </div>
             </div>
             <div class="favorites-actions">
               <button class="tool-btn" id="favoritesRefreshBtn">刷新清单</button>
@@ -3575,6 +3673,33 @@
     </div>
   </div>
 
+  <div class="dialog-overlay" id="favAutoSyncSetupOverlay">
+    <div class="dialog" role="dialog" aria-modal="true" aria-labelledby="favAutoSyncSetupTitle">
+      <div class="dialog-title" id="favAutoSyncSetupTitle">开启中意存档自动同步</div>
+      <p class="dialog-help">还没有正在使用的线上存档。输入存档名后，可以读取已有存档，也可以用当前本地中意清单新建一份。</p>
+      <input class="dialog-input" id="favAutoSyncSetupName" placeholder="输入存档名…" maxlength="30" autocomplete="off">
+      <div class="dialog-hint" id="favAutoSyncSetupHint" aria-live="polite"></div>
+      <div class="dialog-actions wrap">
+        <button class="tool-btn" id="favAutoSyncSetupCancel">取消</button>
+        <button class="tool-btn" id="favAutoSyncSetupLoad">读取已有</button>
+        <button class="tool-btn primary" id="favAutoSyncSetupCreate">新建并同步</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="dialog-overlay" id="favAutoSyncConflictOverlay">
+    <div class="dialog" role="dialog" aria-modal="true" aria-labelledby="favAutoSyncConflictTitle">
+      <div class="dialog-title" id="favAutoSyncConflictTitle">中意存档内容不一致</div>
+      <p class="dialog-help" id="favAutoSyncConflictText">本地存档与线上存档内容不同，请选择要保留的版本。</p>
+      <div class="dialog-hint" id="favAutoSyncConflictHint" aria-live="polite"></div>
+      <div class="dialog-actions wrap">
+        <button class="tool-btn" id="favAutoSyncConflictCancel">取消同步</button>
+        <button class="tool-btn" id="favAutoSyncUseRemote">使用线上存档</button>
+        <button class="tool-btn primary" id="favAutoSyncKeepLocal">保留本地并更新线上</button>
+      </div>
+    </div>
+  </div>
+
   <div class="dialog-overlay" id="thanksOverlay">
     <div class="dialog">
       <div class="dialog-title">致谢名单</div>
@@ -3614,7 +3739,7 @@
   <script src="js/live-status.js?v=1" defer></script>
   <script src="js/shared.js?v=24" defer></script>
   <script src="js/data.js?v=25" defer></script>
-  <script src="js/app.js?v=76" defer></script>
+  <script src="js/app.js?v=77" defer></script>
   <script src="js/motion.js?v=18" defer></script>
 </body>
 </html>
