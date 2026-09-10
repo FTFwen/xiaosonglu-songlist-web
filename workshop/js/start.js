@@ -8,6 +8,7 @@
   'use strict';
 
   // ===== 1. 常量与预置数据 =====
+  const AUDIO_ASSET_VERSION = '4';
   const STORAGE_KEYS = {
     BOOKMARKS_VER: 'start_bm_v2',
     WALLPAPER: 'start_wallpaper_v1',
@@ -84,8 +85,17 @@
   // 音频相对路径（如 assets/audio/x.m4a）拼上 viridis.love 绝对地址，供 workshop 跨域加载播放
   function audioAbs(audioRel) {
     if (!audioRel) return '';
-    if (audioRel.startsWith('http')) return audioRel;
-    return 'https://viridis.love/' + audioRel.replace(/^\.?\//, '');
+    const rawUrl = audioRel.startsWith('http') ? audioRel : ('https://viridis.love/' + audioRel.replace(/^\.?\//, ''));
+    try {
+      const url = new URL(rawUrl);
+      if (url.pathname.startsWith('/assets/audio/')) {
+        const suppliedVersion = url.searchParams.get('v') || '';
+        if (!/^[0-9a-f]{12,64}$/i.test(suppliedVersion)) url.searchParams.set('v', AUDIO_ASSET_VERSION);
+      }
+      return url.href;
+    } catch (e) {
+      return '';
+    }
   }
 
   // ===== 3. IndexedDB 用于本地大图壁纸存储 =====
@@ -473,10 +483,14 @@
         }
       }
 
-      const audioRes = await fetch('data/xiaosonglu/audio_index.json');
-      if (audioRes.ok) {
-        const audioJson = await audioRes.json();
-        playerState.audioMap = audioJson.audios || {};
+      if (window.XSL_DATA && window.XSL_DATA.audio_index && window.XSL_DATA.audio_index.audios) {
+        playerState.audioMap = window.XSL_DATA.audio_index.audios;
+      } else {
+        const audioRes = await fetch(`data/xiaosonglu/audio_index.json?v=${AUDIO_ASSET_VERSION}`);
+        if (audioRes.ok) {
+          const audioJson = await audioRes.json();
+          playerState.audioMap = audioJson.audios || {};
+        }
       }
     } catch (e) {
       console.warn('[StartPage] 歌曲数据加载异常:', e);
@@ -569,8 +583,7 @@
       // 需拼上 viridis.love 的绝对地址跨域加载，与插件一致。
       const audioRel = playerState.audioMap[song.row_key || song.song_name];
       if (audioRel) {
-        const absUrl = audioRel.startsWith('http') ? audioRel : ('https://viridis.love/' + audioRel.replace(/^\.?\//, ''));
-        playerState.audio.src = absUrl;
+        playerState.audio.src = audioAbs(audioRel);
         playerState.audio.play().catch(err => {
           console.warn('[MiniPlayer] 播放拦截:', err);
           showToast(`音频切片暂不可用，请稍后再试 🎵`);

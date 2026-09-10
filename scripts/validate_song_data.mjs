@@ -3,30 +3,40 @@ import { readFile } from 'node:fs/promises';
 import { resolve } from 'node:path';
 import { pathToFileURL } from 'node:url';
 import vm from 'node:vm';
-import { buildDerivedData, normalizeSongName, validateCuts, validateSegments } from './lib/song-data.mjs';
+import { buildDerivedData, normalizeLanguageTag, normalizeSongName, typeTagPolicyFromRegistry, validateCuts, validateSegments } from './lib/song-data.mjs';
 import { parseArgs, readJson } from './lib/io.mjs';
 
 async function main() {
   const args = parseArgs(process.argv.slice(2));
   const root = resolve(String(args.root ?? '.'));
   const path = name => resolve(root, 'data/xiaosonglu', name);
-  const [segmentsDocument, cutsDocument, overridesDocument, catalog, history, details, cutInfo, audio, state] = await Promise.all([
+  const [segmentsDocument, cutsDocument, overridesDocument, typeTagRegistryDocument, catalog, history, details, cutInfo, audio, audioBaseline, state] = await Promise.all([
     readJson(path('replay_song_segments.json')),
     readJson(path('song_cut_index.json')),
     readJson(path('song_metadata_overrides.json')),
+    readJson(path('type_tag_registry.json')),
     readJson(path('song_catalog.json')),
     readJson(path('history_index.json')),
     readJson(path('song_details.json')),
     readJson(path('song_cut_info.json')),
     readJson(path('audio_index.json')),
+    readJson(path('audio_asset_baseline.json')),
     readJson(path('ingestion_state.json')),
   ]);
-  const errors = [...validateSegments(segmentsDocument.segments), ...validateCuts(cutsDocument.items)];
+  const typeTagPolicy = typeTagPolicyFromRegistry(typeTagRegistryDocument);
+  const errors = [...validateSegments(segmentsDocument.segments, typeTagPolicy), ...validateCuts(cutsDocument.items)];
+  Object.entries(overridesDocument.bySongName ?? {}).forEach(([songName, override]) => {
+    const rawLanguage = String(override?.language ?? '').trim();
+    if (rawLanguage && normalizeLanguageTag(rawLanguage) !== rawLanguage) {
+      errors.push(`song_metadata_overrides.json language for ${songName} is noncanonical: ${rawLanguage}`);
+    }
+  });
   const warnings = [];
   const derived = buildDerivedData({
     segmentsDocument,
     cutsDocument,
     overridesDocument,
+    typeTagRegistryDocument,
     currentCatalog: catalog,
     currentCutInfo: cutInfo,
   });
@@ -54,6 +64,33 @@ async function main() {
   const audioNames = new Set(Object.keys(audio.audios ?? {}).map(normalizeSongName));
   const missingAudio = catalog.songs.filter(song => !audioNames.has(normalizeSongName(song.song_name))).map(song => song.song_name);
   if (missingAudio.length) warnings.push(`songs without local audio: ${missingAudio.join('、')}`);
+  const baselineFiles = audioBaseline.files ?? {};
+  Object.entries(audio.audios ?? {}).forEach(([songName, rawValue]) => {
+    const value = String(rawValue ?? '').replaceAll('\\', '/');
+    const match = value.match(/^(assets\/audio\/[A-Za-z0-9][A-Za-z0-9._-]*\.m4a)\?v=([0-9a-f]{12,64})$/u);
+    if (!match) {
+      errors.push(`audio_index.json has unsafe or non-hash-versioned mapping for ${songName}: ${value}`);
+      return;
+    }
+    const baseline = baselineFiles[match[1]];
+    if (!baseline) {
+      errors.push(`audio_index.json mapping for ${songName} is absent from audio_asset_baseline.json`);
+      return;
+    }
+    if (match[2] && !String(baseline.sha256 ?? '').toLowerCase().startsWith(match[2].toLowerCase())) {
+      errors.push(`audio_index.json cache version for ${songName} does not match adopted SHA-256`);
+    }
+  });
+  const verificationTargets = audio.verificationTargets;
+  if (!Array.isArray(verificationTargets) || verificationTargets.length === 0
+    || verificationTargets.some(name => typeof name !== 'string' || !name.trim())
+    || new Set(verificationTargets).size !== verificationTargets.length) {
+    errors.push('audio_index.json verificationTargets must be a non-empty unique string list');
+  } else {
+    verificationTargets.forEach(name => {
+      if (!Object.hasOwn(audio.audios ?? {}, name)) errors.push(`audio verification target is not mapped: ${name}`);
+    });
+  }
 
   const liveIds = (state.processedLives ?? []).map(item => item.liveId);
   if (new Set(liveIds).size !== liveIds.length) errors.push('ingestion_state.json contains duplicate liveId values');

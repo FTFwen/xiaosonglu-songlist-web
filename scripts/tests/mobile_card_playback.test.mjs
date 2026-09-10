@@ -7,6 +7,8 @@ const root = new URL('../../', import.meta.url);
 const appSource = await readFile(new URL('js/app.js', root), 'utf8');
 const htmlSource = await readFile(new URL('index.html', root), 'utf8');
 const headersSource = await readFile(new URL('_headers', root), 'utf8');
+const workshopSource = await readFile(new URL('workshop/js/start.js', root), 'utf8');
+const workshopHtmlSource = await readFile(new URL('workshop/index.html', root), 'utf8');
 
 function sourceBetween(source, startText, endText) {
   const start = source.indexOf(startText);
@@ -569,8 +571,16 @@ test('mobile playing card class follows real player state without animations', (
   assert.equal(playButton.title, '播放音频');
 });
 
-test('published m4a assets force a browser-playable MIME type', () => {
+test('published m4a assets force a browser-playable MIME type and corrected assets bypass stale caches', () => {
   assert.match(headersSource, /\/assets\/audio\/\*\s+Content-Type: audio\/mp4/);
+  assert.match(appSource, /const AUDIO_ASSET_VERSION = '4';/);
+assert.match(appSource, /\^\[0-9a-f\]\{12,64\}\$\/i\.test\(suppliedVersion\)/);
+  assert.match(workshopSource, /const AUDIO_ASSET_VERSION = '4';/);
+assert.match(workshopSource, /\^\[0-9a-f\]\{12,64\}\$\/i\.test\(suppliedVersion\)/);
+  assert.match(workshopSource, /audio_index\.json\?v=\$\{AUDIO_ASSET_VERSION\}/);
+  assert.match(workshopSource, /url\.searchParams\.set\('v', AUDIO_ASSET_VERSION\)/);
+  assert.equal((workshopSource.match(/playerState\.audio\.src = audioAbs\(/g) || []).length, 4);
+  assert.match(workshopHtmlSource, /js\/start\.js\?v=17/);
 });
 
 test('mobile media-query cascade gives only the playing card a glass state and clears sticky hover', () => {
@@ -590,5 +600,8 @@ test('mobile media-query cascade gives only the playing card a glass state and c
     assert.match(css, /\.song-item\.now-playing,[\s\S]*?background: rgba\(244, 246, 232, 0\.38\) !important;[\s\S]*?backdrop-filter: blur\(10px\) saturate\(1\.18\) !important;/);
     assert.match(css, /\.playing-bars[\s\S]*?display: none !important;/);
   }
-  assert.match(htmlSource, /js\/app\.js\?v=87/);
+  assert.match(htmlSource, /js\/data\.js\?v=30/);
+  assert.match(htmlSource, /js\/app\.js\?v=93/);
+  assert.match(workshopHtmlSource, /js\/data\.js\?v=31/);
+  assert.match(workshopHtmlSource, /js\/start\.js\?v=17/);
 });

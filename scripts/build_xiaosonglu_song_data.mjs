@@ -32,6 +32,7 @@ export async function buildSongData(options = {}) {
     segments: resolve(dataDirectory, 'replay_song_segments.json'),
     cuts: resolve(dataDirectory, 'song_cut_index.json'),
     overrides: resolve(dataDirectory, 'song_metadata_overrides.json'),
+    typeTagRegistry: resolve(dataDirectory, 'type_tag_registry.json'),
     audio: resolve(dataDirectory, 'audio_index.json'),
     catalog: resolve(dataDirectory, 'song_catalog.json'),
     history: resolve(dataDirectory, 'history_index.json'),
@@ -40,15 +41,16 @@ export async function buildSongData(options = {}) {
     cutCsv: resolve(dataDirectory, 'song_cut_table.csv'),
     embedded: resolve(root, 'js/data.js'),
   };
-  const [segmentsDocument, cutsDocument, overridesDocument, audioIndex, currentCatalog, currentCutInfo] = await Promise.all([
+  const [segmentsDocument, cutsDocument, overridesDocument, typeTagRegistryDocument, audioIndex, currentCatalog, currentCutInfo] = await Promise.all([
     readJson(paths.segments),
     readJson(paths.cuts),
     readOptionalJson(paths.overrides, { bySongName: {} }),
+    readJson(paths.typeTagRegistry),
     readOptionalJson(paths.audio, { roomKey: 'xiaosonglu', roomId: '1727071052', audios: {} }),
     readOptionalJson(paths.catalog, { songs: [] }),
     readOptionalJson(paths.cutInfo, { cuts: {} }),
   ]);
-  const derived = buildDerivedData({ segmentsDocument, cutsDocument, overridesDocument, currentCatalog, currentCutInfo });
+  const derived = buildDerivedData({ segmentsDocument, cutsDocument, overridesDocument, typeTagRegistryDocument, currentCatalog, currentCutInfo });
   const currentCutCsv = await textOrNull(paths.cutCsv);
   const outputs = new Map([
     [paths.catalog, jsonText(derived.song_catalog)],

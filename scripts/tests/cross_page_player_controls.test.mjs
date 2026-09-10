@@ -9,6 +9,7 @@ const crossPageCss = await readFile(new URL('css/cross-page-player.css', root), 
 const appSource = await readFile(new URL('js/app.js', root), 'utf8');
 const mainHtml = await readFile(new URL('index.html', root), 'utf8');
 const buttonsHtml = await readFile(new URL('buttons/index.html', root), 'utf8');
+const buttonsSource = await readFile(new URL('buttons/buttons.js', root), 'utf8');
 const gameHtml = await readFile(new URL('24xsl/index.html', root), 'utf8');
 
 function sourceBetween(source, startText, endText) {
@@ -106,10 +107,14 @@ test('cross-page favorite snapshots use the shared songlist storage and same-pag
 });
 
 test('both destinations use the bumped assets and mobile layout matches the songlist player', () => {
-  assert.match(mainHtml, /js\/app\.js\?v=87/);
+  assert.match(mainHtml, /js\/app\.js\?v=93/);
+  assert.match(crossPageSource, /const AUDIO_ASSET_VERSION = '4';/);
+  assert.match(buttonsHtml, /buttons\.js\?v=33/);
+  assert.doesNotMatch(buttonsSource, /DEFAULT_ADMINS|isKnownAdmin|登录成功（离线模式/);
+  assert.match(gameHtml, /\.\.\/js\/data\.js\?v=30/);
   for (const source of [buttonsHtml, gameHtml]) {
     assert.match(source, /cross-page-player\.css\?v=5/);
-    assert.match(source, /cross-page-player\.js\?v=6/);
+    assert.match(source, /cross-page-player\.js\?v=7/);
   }
 
   const mobileCss = sourceBetween(crossPageCss, '@media (max-width: 768px)', '/* 24 点横屏');

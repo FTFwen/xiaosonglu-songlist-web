@@ -218,7 +218,7 @@ def main() -> int:
         "dedupePolicy": {
             "transport": "Use ETag/Last-Modified conditional GET; HTTP 304 skips payload download.",
             "content": "Compare canonical JSON SHA-256 before writing; formatting and line-ending changes do not trigger rewrites.",
-            "records": "Replay segments use replay_date + song_name; song cuts use clip_date + song_name; retain repeat performances on different dates.",
+            "records": "Replay segments use replay_date + song_name and song cuts use clip_date + song_name, but same-name chapters in one live require independent evidence before dedupe; retain repeat performances on different dates.",
             "conflicts": "Preserve locally changed files unless --adopt-remote is explicitly supplied.",
         },
         "files": next_files,

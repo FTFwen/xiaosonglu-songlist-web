@@ -41,8 +41,13 @@ function loadDerivativeSongs() {
   let nextId = -2000;
   list.forEach(s => { if (typeof s.song_id === 'number' && s.song_id < nextId) nextId = s.song_id; });
   list = list.map(s => {
-    if (typeof s.song_id === 'number' && s.song_id !== null) return s;
-    return { ...s, song_id: nextId--, custom: true, derivative: true };
+    const normalized = {
+      ...s,
+      language: normalizeLanguageTag(s.language || ''),
+      type: normalizeTypeTags(s.type || '')
+    };
+    if (typeof s.song_id === 'number' && s.song_id !== null) return normalized;
+    return { ...normalized, song_id: nextId--, custom: true, derivative: true };
   });
   state.derivativeSongs = list;
 }
@@ -75,11 +80,11 @@ function importDerivativeSongsFromData(items) {
       sing_count: 0,
       last_sing_at: '',
       status_labels: '',
-      language: item.language || '',
+      language: normalizeLanguageTag(item.language || ''),
       display_version: '',
       tone: '',
       remark: '',
-      type: item.type || '',
+      type: normalizeTypeTags(item.type || ''),
       identification: '',
       custom: true, // 二创歌曲标记
       derivative: true
@@ -255,7 +260,7 @@ function getVisibleStatusLabels(value) {
 }
 
 function getVisibleTypeLabels(value) {
-  return splitTypeLabels(value)
+  return splitTypeLabels(normalizeTypeTags(value))
     .filter(label => !INTERNAL_TYPE_LABELS.has(label))
     .slice(0, 5);
 }
@@ -266,7 +271,7 @@ function getVisibleStatusText(value) {
 
 function getLanguageBadgeClass(lang) {
   if (lang === '中文') return 'lang-zh';
-  if (lang === '日语') return 'lang-ja';
+  if (normalizeLanguageTag(lang) === '日文') return 'lang-ja';
   if (lang === '英语') return 'lang-en';
   if (lang === '粤语') return 'lang-cantonese';
   return 'lang-other';
@@ -477,7 +482,13 @@ async function loadSongData(forceRefresh = false) {
   // 只保留主播唱过的歌（sing_count > 0）；未唱过的不出现在歌单/中意里
   const keepSungSongs = songs => {
     const raw = Array.isArray(songs) ? songs : [];
-    return raw.filter(song => (Number(song.sing_count) || 0) > 0);
+    return raw
+      .map(song => ({
+        ...song,
+        language: normalizeLanguageTag(song.language || ''),
+        type: canonicalTypeForCachedSong(song)
+      }))
+      .filter(song => (Number(song.sing_count) || 0) > 0);
   };
 
   try {
@@ -524,6 +535,24 @@ function updateSongMetaText(dateObj, fromCache) {
   dom.songMetaText.textContent = `共 ${total} 首歌曲 · 当前显示 ${count} 首`;
 }
 
+function normalizeSongIdentity(song) {
+  return String(song?.song_name || song?.display_song_name || song?.row_key || '')
+    .normalize('NFKC').trim().replace(/\s+/gu, ' ').toLocaleLowerCase('und');
+}
+
+// A pre-update local cache may still contain the broad “虚拟歌手” label. When
+// the embedded canonical catalog has the same song, use its reviewed type;
+// this avoids guessing whether an arbitrary virtual singer is 中V, 日V, etc.
+function canonicalTypeForCachedSong(song) {
+  const catalog = window.XSL_DATA?.song_catalog?.songs;
+  if (Array.isArray(catalog)) {
+    const identity = normalizeSongIdentity(song);
+    const canonical = catalog.find(item => normalizeSongIdentity(item) === identity);
+    if (canonical) return normalizeTypeTags(canonical.type || '');
+  }
+  return normalizeTypeTags(song?.type || '');
+}
+
 // 拼音检索：为歌曲生成拼音索引（全拼 + 首字母），供搜索匹配
 const pinyinCache = new Map();
 let pinyinLoadPromise = null;
@@ -559,6 +588,9 @@ function getSongPinyin(song) {
 function applySongFilters() {
   const query = (dom.searchInput.value || '').trim().toLowerCase();
   state.songFilters.query = query;
+  state.songFilters.tags = Array.from(new Set(
+    state.songFilters.tags.flatMap(tag => splitTypeLabels(normalizeTypeTags(tag))),
+  ));
 
   let rows = state.allSongs.slice();
   if (query) {
@@ -584,10 +616,12 @@ function applySongFilters() {
       if (days === null || days > state.songFilters.daysMax) return false;
     }
 
-    if (state.songFilters.languages.length > 0 && !state.songFilters.languages.includes(song.language || '')) return false;
+    const selectedLanguages = state.songFilters.languages.map(normalizeLanguageTag);
+    if (selectedLanguages.length > 0 && !selectedLanguages.includes(normalizeLanguageTag(song.language || ''))) return false;
     if (state.songFilters.tags.length > 0) {
-      const songTags = new Set(String(song.type || '').split(/[、,，/／|｜\s]+/).map(t => t.trim()).filter(Boolean));
-      const hit = state.songFilters.tags.some(tag => songTags.has(tag));
+      const songTags = new Set(splitTypeLabels(normalizeTypeTags(song.type || '')));
+      const selectedTags = state.songFilters.tags.flatMap(tag => splitTypeLabels(normalizeTypeTags(tag)));
+      const hit = selectedTags.some(tag => songTags.has(tag));
       if (!hit) return false;
     }
     if (state.favoritesOnly && !state.favoritesMap[getFavoriteKey(song)]) return false;
@@ -1812,7 +1846,7 @@ async function doCopyOrderText() {
 }
 
 function renderLanguageChips() {
-  const langs = Array.from(new Set(state.allSongs.map(song => song.language || '').filter(Boolean))).sort((a, b) => a.localeCompare(b, 'zh-CN'));
+  const langs = Array.from(new Set(state.allSongs.map(song => normalizeLanguageTag(song.language || '')).filter(Boolean))).sort((a, b) => a.localeCompare(b, 'zh-CN'));
   if (langs.length === 0) {
     dom.languageChips.innerHTML = '<span class="muted">暂无语言标签</span>';
     return;
@@ -1829,7 +1863,7 @@ const TAG_FILTER_LIMIT = 10;
 function getTopTags(limit = TAG_FILTER_LIMIT) {
   const count = new Map();
   state.allSongs.forEach(song => {
-    String(song.type || '').split(/[、,，/／|｜\s]+/).map(t => t.trim()).filter(Boolean).forEach(tag => {
+    splitTypeLabels(normalizeTypeTags(song.type || '')).forEach(tag => {
       count.set(tag, (count.get(tag) || 0) + 1);
     });
   });
@@ -1846,7 +1880,7 @@ function renderTagChips() {
     return;
   }
   dom.tagChips.innerHTML = topTags.map(tag => {
-    const active = state.songFilters.tags.includes(tag);
+    const active = state.songFilters.tags.includes(normalizeTypeTags(tag));
     return `<button class="filter-chip${active ? ' active' : ''}" data-tag-chip="${escHtml(tag)}">${escHtml(tag)}</button>`;
   }).join('');
 }
@@ -1864,19 +1898,31 @@ function favoriteSnapshotFromSong(song, overrides = {}) {
     sing_count: song.sing_count || 0,
     last_sing_at: song.last_sing_at || '',
     status_labels: song.status_labels || '',
-    language: song.language || '',
     display_version: song.display_version || '',
     tone: song.tone ?? '',
     remark: song.remark || '',
-    type: song.type || '',
     identification: song.identification || '',
     importedManual: false,
-    ...overrides
+    ...overrides,
+    language: normalizeLanguageTag(overrides.language ?? song.language ?? ''),
+    type: normalizeTypeTags(overrides.type ?? song.type ?? '')
   };
 }
 
 function normalizeFavoriteMap(raw) {
   if (!raw || typeof raw !== 'object') return {};
+  const canonicalLanguage = value => {
+    if (typeof normalizeLanguageTag === 'function') return normalizeLanguageTag(value);
+    return String(value ?? '').trim().replace(/(^|[、,，/／|｜])\s*日语(?=\s*(?:$|[、,，/／|｜]))/gu, '$1日文');
+  };
+  const canonicalType = value => {
+    if (typeof normalizeTypeTags === 'function') return normalizeTypeTags(value);
+    const seen = new Set();
+    return String(value ?? '').split(/[、,，/／|｜]/u)
+      .map(item => item.trim())
+      .filter(item => item && !seen.has(item) && seen.add(item))
+      .join('、');
+  };
   const out = {};
   Object.keys(raw).forEach(key => {
     const item = raw[key];
@@ -1893,11 +1939,11 @@ function normalizeFavoriteMap(raw) {
       sing_count: Number(item.sing_count || 0),
       last_sing_at: item.last_sing_at || '',
       status_labels: item.status_labels || '',
-      language: item.language || '',
+      language: canonicalLanguage(item.language || ''),
       display_version: item.display_version || '',
       tone: item.tone ?? '',
       remark: item.remark || '',
-      type: item.type || '',
+      type: canonicalType(item.type || ''),
       identification: item.identification || '',
       importedManual: !!item.importedManual
     };
@@ -2789,7 +2835,7 @@ function bindEvents() {
   dom.tagChips.addEventListener('click', event => {
     const btn = event.target.closest('[data-tag-chip]');
     if (!btn) return;
-    const tag = btn.dataset.tagChip;
+    const tag = normalizeTypeTags(btn.dataset.tagChip);
     if (state.songFilters.tags.includes(tag)) {
       state.songFilters.tags = state.songFilters.tags.filter(item => item !== tag);
     } else {

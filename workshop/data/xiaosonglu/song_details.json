@@ -1,7 +1,7 @@
 {
   "roomKey": "xiaosonglu",
   "roomId": "1727071052",
-  "generatedAt": "2026-09-04T14:52:39.131Z",
+  "generatedAt": "2026-09-09T17:16:46.949Z",
   "source": "local-replay-ingestion",
   "bySongKey": {
     "少女レイ": {
@@ -3626,6 +3626,731 @@
           "song_resolution_method": "song-cut-chapter + danmaku-lyric",
           "replay_date_source": "replay-title",
           "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=21"
+        }
+      ]
+    },
+    "泸沽寻梦": {
+      "row_key": "泸沽寻梦",
+      "song_name": "泸沽寻梦",
+      "display_song_name": "泸沽寻梦",
+      "artist": "银临",
+      "cut_link": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=1",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-09-08",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "银临",
+          "replay_id": "live:55931362-aac3-4f89-af6b-b7cdc8419791",
+          "replay_title": "【小松绿Viridis】小唱多聊应该是 歌切合集 2026.09.08",
+          "replay_url": "https://www.bilibili.com/video/BV1qfYJ6gEm8/",
+          "remark": "桐人今天睡大觉歌切合集章节 01；页面简介亦列出《泸沽寻梦》",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-collection-chapter",
+          "replay_date_source": "song-cut-title",
+          "cut_link": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=1"
+        }
+      ]
+    },
+    "夜宴风波": {
+      "row_key": "夜宴风波",
+      "song_name": "夜宴风波",
+      "display_song_name": "夜宴风波",
+      "artist": "音阙诗听、王梓钰",
+      "cut_link": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=2",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-09-08",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "音阙诗听、王梓钰",
+          "replay_id": "live:55931362-aac3-4f89-af6b-b7cdc8419791",
+          "replay_title": "【小松绿Viridis】小唱多聊应该是 歌切合集 2026.09.08",
+          "replay_url": "https://www.bilibili.com/video/BV1qfYJ6gEm8/",
+          "remark": "",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-collection-chapter",
+          "replay_date_source": "song-cut-title",
+          "cut_link": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=2"
+        }
+      ]
+    },
+    "牵丝戏": {
+      "row_key": "牵丝戏",
+      "song_name": "牵丝戏",
+      "display_song_name": "牵丝戏",
+      "artist": "银临、Aki阿杰",
+      "cut_link": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=3",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-09-08",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "银临、Aki阿杰",
+          "replay_id": "live:55931362-aac3-4f89-af6b-b7cdc8419791",
+          "replay_title": "【小松绿Viridis】小唱多聊应该是 歌切合集 2026.09.08",
+          "replay_url": "https://www.bilibili.com/video/BV1qfYJ6gEm8/",
+          "remark": "",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-collection-chapter",
+          "replay_date_source": "song-cut-title",
+          "cut_link": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=3"
+        }
+      ]
+    },
+    "一花依世界": {
+      "row_key": "一花依世界",
+      "song_name": "一花依世界",
+      "display_song_name": "一花依世界",
+      "artist": "洛天依Official",
+      "cut_link": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=4",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-09-08",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "洛天依Official",
+          "replay_id": "live:55931362-aac3-4f89-af6b-b7cdc8419791",
+          "replay_title": "【小松绿Viridis】小唱多聊应该是 歌切合集 2026.09.08",
+          "replay_url": "https://www.bilibili.com/video/BV1qfYJ6gEm8/",
+          "remark": "",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-collection-chapter",
+          "replay_date_source": "song-cut-title",
+          "cut_link": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=4"
+        }
+      ]
+    },
+    "绝体绝命": {
+      "row_key": "绝体绝命",
+      "song_name": "绝体绝命",
+      "display_song_name": "绝体绝命",
+      "artist": "阿良良木健、洛天依Official",
+      "cut_link": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=5",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-09-08",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "阿良良木健、洛天依Official",
+          "replay_id": "live:55931362-aac3-4f89-af6b-b7cdc8419791",
+          "replay_title": "【小松绿Viridis】小唱多聊应该是 歌切合集 2026.09.08",
+          "replay_url": "https://www.bilibili.com/video/BV1qfYJ6gEm8/",
+          "remark": "",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-collection-chapter",
+          "replay_date_source": "song-cut-title",
+          "cut_link": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=5"
+        }
+      ]
+    },
+    "告别曲（Love Elegia Ver.）": {
+      "row_key": "告别曲（Love Elegia Ver.）",
+      "song_name": "告别曲（Love Elegia Ver.）",
+      "display_song_name": "告别曲（Love Elegia Ver.）",
+      "artist": "阿良良木健、洛天依",
+      "cut_link": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=6",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-09-08",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "阿良良木健、洛天依",
+          "replay_id": "live:55931362-aac3-4f89-af6b-b7cdc8419791",
+          "replay_title": "【小松绿Viridis】小唱多聊应该是 歌切合集 2026.09.08",
+          "replay_url": "https://www.bilibili.com/video/BV1qfYJ6gEm8/",
+          "remark": "",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-collection-chapter",
+          "replay_date_source": "song-cut-title",
+          "cut_link": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=6"
+        }
+      ]
+    },
+    "（区）最终祈愿": {
+      "row_key": "（区）最终祈愿",
+      "song_name": "（区）最终祈愿",
+      "display_song_name": "（区）最终祈愿",
+      "artist": "平行四界Quadimension、星尘",
+      "cut_link": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=7",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-09-08",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "平行四界Quadimension、星尘",
+          "replay_id": "live:55931362-aac3-4f89-af6b-b7cdc8419791",
+          "replay_title": "【小松绿Viridis】小唱多聊应该是 歌切合集 2026.09.08",
+          "replay_url": "https://www.bilibili.com/video/BV1qfYJ6gEm8/",
+          "remark": "",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-collection-chapter",
+          "replay_date_source": "song-cut-title",
+          "cut_link": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=7"
+        }
+      ]
+    },
+    "小雨": {
+      "row_key": "小雨",
+      "song_name": "小雨",
+      "display_song_name": "小雨",
+      "artist": "黄龄",
+      "cut_link": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=8",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-09-08",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "黄龄",
+          "replay_id": "live:55931362-aac3-4f89-af6b-b7cdc8419791",
+          "replay_title": "【小松绿Viridis】小唱多聊应该是 歌切合集 2026.09.08",
+          "replay_url": "https://www.bilibili.com/video/BV1qfYJ6gEm8/",
+          "remark": "",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-collection-chapter",
+          "replay_date_source": "song-cut-title",
+          "cut_link": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=8"
+        }
+      ]
+    },
+    "给自己的情书": {
+      "row_key": "给自己的情书",
+      "song_name": "给自己的情书",
+      "display_song_name": "给自己的情书",
+      "artist": "王菲",
+      "cut_link": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=9",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-09-08",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "王菲",
+          "replay_id": "live:55931362-aac3-4f89-af6b-b7cdc8419791",
+          "replay_title": "【小松绿Viridis】小唱多聊应该是 歌切合集 2026.09.08",
+          "replay_url": "https://www.bilibili.com/video/BV1qfYJ6gEm8/",
+          "remark": "",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-collection-chapter",
+          "replay_date_source": "song-cut-title",
+          "cut_link": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=9"
+        }
+      ]
+    },
+    "灼之花": {
+      "row_key": "灼之花",
+      "song_name": "灼之花",
+      "display_song_name": "灼之花",
+      "artist": "洛天依Official、乐正绫",
+      "cut_link": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=10",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-09-08",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "洛天依Official、乐正绫",
+          "replay_id": "live:55931362-aac3-4f89-af6b-b7cdc8419791",
+          "replay_title": "【小松绿Viridis】小唱多聊应该是 歌切合集 2026.09.08",
+          "replay_url": "https://www.bilibili.com/video/BV1qfYJ6gEm8/",
+          "remark": "",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-collection-chapter",
+          "replay_date_source": "song-cut-title",
+          "cut_link": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=10"
+        }
+      ]
+    },
+    "樱花草": {
+      "row_key": "樱花草",
+      "song_name": "樱花草",
+      "display_song_name": "樱花草",
+      "artist": "Sweety",
+      "cut_link": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=11",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-09-08",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "Sweety",
+          "replay_id": "live:55931362-aac3-4f89-af6b-b7cdc8419791",
+          "replay_title": "【小松绿Viridis】小唱多聊应该是 歌切合集 2026.09.08",
+          "replay_url": "https://www.bilibili.com/video/BV1qfYJ6gEm8/",
+          "remark": "",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-collection-chapter",
+          "replay_date_source": "song-cut-title",
+          "cut_link": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=11"
+        }
+      ]
+    },
+    "世末积雨云": {
+      "row_key": "世末积雨云",
+      "song_name": "世末积雨云",
+      "display_song_name": "世末积雨云",
+      "artist": "洛天依Official",
+      "cut_link": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=12",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-09-08",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "洛天依Official",
+          "replay_id": "live:55931362-aac3-4f89-af6b-b7cdc8419791",
+          "replay_title": "【小松绿Viridis】小唱多聊应该是 歌切合集 2026.09.08",
+          "replay_url": "https://www.bilibili.com/video/BV1qfYJ6gEm8/",
+          "remark": "",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-collection-chapter",
+          "replay_date_source": "song-cut-title",
+          "cut_link": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=12"
+        }
+      ]
+    },
+    "純白の花～Under Divine Gaze": {
+      "row_key": "純白の花～Under Divine Gaze",
+      "song_name": "純白の花～Under Divine Gaze",
+      "display_song_name": "純白の花～Under Divine Gaze",
+      "artist": "不凋花project",
+      "cut_link": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=13",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-09-08",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "不凋花project",
+          "replay_id": "live:55931362-aac3-4f89-af6b-b7cdc8419791",
+          "replay_title": "【小松绿Viridis】小唱多聊应该是 歌切合集 2026.09.08",
+          "replay_url": "https://www.bilibili.com/video/BV1qfYJ6gEm8/",
+          "remark": "",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-collection-chapter",
+          "replay_date_source": "song-cut-title",
+          "cut_link": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=13"
+        }
+      ]
+    },
+    "悬捱": {
+      "row_key": "悬捱",
+      "song_name": "悬捱",
+      "display_song_name": "悬捱",
+      "artist": "星尘",
+      "cut_link": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=14",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-09-08",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "星尘",
+          "replay_id": "live:55931362-aac3-4f89-af6b-b7cdc8419791",
+          "replay_title": "【小松绿Viridis】小唱多聊应该是 歌切合集 2026.09.08",
+          "replay_url": "https://www.bilibili.com/video/BV1qfYJ6gEm8/",
+          "remark": "",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-collection-chapter",
+          "replay_date_source": "song-cut-title",
+          "cut_link": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=14"
+        }
+      ]
+    },
+    "奶水": {
+      "row_key": "奶水",
+      "song_name": "奶水",
+      "display_song_name": "奶水",
+      "artist": "Mili",
+      "cut_link": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=15",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-09-08",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "Mili",
+          "replay_id": "live:55931362-aac3-4f89-af6b-b7cdc8419791",
+          "replay_title": "【小松绿Viridis】小唱多聊应该是 歌切合集 2026.09.08",
+          "replay_url": "https://www.bilibili.com/video/BV1qfYJ6gEm8/",
+          "remark": "",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-collection-chapter",
+          "replay_date_source": "song-cut-title",
+          "cut_link": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=15"
+        }
+      ]
+    },
+    "兔子先生": {
+      "row_key": "兔子先生",
+      "song_name": "兔子先生",
+      "display_song_name": "兔子先生",
+      "artist": "陈秋桦、洛天依",
+      "cut_link": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=16",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-09-08",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "陈秋桦、洛天依",
+          "replay_id": "live:55931362-aac3-4f89-af6b-b7cdc8419791",
+          "replay_title": "【小松绿Viridis】小唱多聊应该是 歌切合集 2026.09.08",
+          "replay_url": "https://www.bilibili.com/video/BV1qfYJ6gEm8/",
+          "remark": "",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-collection-chapter",
+          "replay_date_source": "song-cut-title",
+          "cut_link": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=16"
+        }
+      ]
+    },
+    "溺水金鱼": {
+      "row_key": "溺水金鱼",
+      "song_name": "溺水金鱼",
+      "display_song_name": "溺水金鱼",
+      "artist": "漆柚",
+      "cut_link": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=17",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-09-08",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "漆柚",
+          "replay_id": "live:55931362-aac3-4f89-af6b-b7cdc8419791",
+          "replay_title": "【小松绿Viridis】小唱多聊应该是 歌切合集 2026.09.08",
+          "replay_url": "https://www.bilibili.com/video/BV1qfYJ6gEm8/",
+          "remark": "",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-collection-chapter",
+          "replay_date_source": "song-cut-title",
+          "cut_link": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=17"
+        }
+      ]
+    },
+    "中华墨水娘": {
+      "row_key": "中华墨水娘",
+      "song_name": "中华墨水娘",
+      "display_song_name": "中华墨水娘",
+      "artist": "洛天依Official、Soda纯白",
+      "cut_link": "https://www.bilibili.com/video/BV165YJ6gEUy/",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-09-08",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、独立歌切复核",
+          "artist": "洛天依Official、Soda纯白",
+          "replay_id": "live:55931362-aac3-4f89-af6b-b7cdc8419791",
+          "replay_title": "【小松绿Viridis】小唱多聊应该是 歌切合集 2026.09.08",
+          "replay_url": "https://www.bilibili.com/video/BV1qfYJ6gEm8/",
+          "remark": "桐人今天睡大觉合集第18章误标为《中华铄金娘》；经用户提供的独立B站歌切 BV165YJ6gEUy 复核，实际为《中华墨水娘》",
+          "lyric_excerpt": "",
+          "song_resolution_method": "standalone-song-cut-title-cross-check",
+          "replay_date_source": "song-cut-title",
+          "cut_link": "https://www.bilibili.com/video/BV165YJ6gEUy/"
+        }
+      ]
+    },
+    "中华烛火娘 (原版)": {
+      "row_key": "中华烛火娘 (原版)",
+      "song_name": "中华烛火娘 (原版)",
+      "display_song_name": "中华烛火娘 (原版)",
+      "artist": "洛天依Official、Soda纯白",
+      "cut_link": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=19",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-09-08",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "洛天依Official、Soda纯白",
+          "replay_id": "live:55931362-aac3-4f89-af6b-b7cdc8419791",
+          "replay_title": "【小松绿Viridis】小唱多聊应该是 歌切合集 2026.09.08",
+          "replay_url": "https://www.bilibili.com/video/BV1qfYJ6gEm8/",
+          "remark": "",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-collection-chapter",
+          "replay_date_source": "song-cut-title",
+          "cut_link": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=19"
+        }
+      ]
+    },
+    "中华缘木娘": {
+      "row_key": "中华缘木娘",
+      "song_name": "中华缘木娘",
+      "display_song_name": "中华缘木娘",
+      "artist": "洛天依Official",
+      "cut_link": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=20",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-09-08",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "洛天依Official",
+          "replay_id": "live:55931362-aac3-4f89-af6b-b7cdc8419791",
+          "replay_title": "【小松绿Viridis】小唱多聊应该是 歌切合集 2026.09.08",
+          "replay_url": "https://www.bilibili.com/video/BV1qfYJ6gEm8/",
+          "remark": "",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-collection-chapter",
+          "replay_date_source": "song-cut-title",
+          "cut_link": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=20"
+        }
+      ]
+    },
+    "中华粘土娘 (Album Version)": {
+      "row_key": "中华粘土娘 (Album Version)",
+      "song_name": "中华粘土娘 (Album Version)",
+      "display_song_name": "中华粘土娘 (Album Version)",
+      "artist": "洛天依Official、Soda纯白",
+      "cut_link": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=21",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-09-08",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "洛天依Official、Soda纯白",
+          "replay_id": "live:55931362-aac3-4f89-af6b-b7cdc8419791",
+          "replay_title": "【小松绿Viridis】小唱多聊应该是 歌切合集 2026.09.08",
+          "replay_url": "https://www.bilibili.com/video/BV1qfYJ6gEm8/",
+          "remark": "",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-collection-chapter",
+          "replay_date_source": "song-cut-title",
+          "cut_link": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=21"
+        }
+      ]
+    },
+    "阳山绝": {
+      "row_key": "阳山绝",
+      "song_name": "阳山绝",
+      "display_song_name": "阳山绝",
+      "artist": "平行四界Quadimension、洛天依Official、乐正绫、Soda纯白",
+      "cut_link": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=23",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-09-08",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "平行四界Quadimension、洛天依Official、乐正绫、Soda纯白",
+          "replay_id": "live:55931362-aac3-4f89-af6b-b7cdc8419791",
+          "replay_title": "【小松绿Viridis】小唱多聊应该是 歌切合集 2026.09.08",
+          "replay_url": "https://www.bilibili.com/video/BV1qfYJ6gEm8/",
+          "remark": "",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-collection-chapter",
+          "replay_date_source": "song-cut-title",
+          "cut_link": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=23"
+        }
+      ]
+    },
+    "花头台": {
+      "row_key": "花头台",
+      "song_name": "花头台",
+      "display_song_name": "花头台",
+      "artist": "洛天依",
+      "cut_link": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=24",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-09-08",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "洛天依",
+          "replay_id": "live:55931362-aac3-4f89-af6b-b7cdc8419791",
+          "replay_title": "【小松绿Viridis】小唱多聊应该是 歌切合集 2026.09.08",
+          "replay_url": "https://www.bilibili.com/video/BV1qfYJ6gEm8/",
+          "remark": "",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-collection-chapter",
+          "replay_date_source": "song-cut-title",
+          "cut_link": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=24"
+        }
+      ]
+    },
+    "三千世界鸦杀尽": {
+      "row_key": "三千世界鸦杀尽",
+      "song_name": "三千世界鸦杀尽",
+      "display_song_name": "三千世界鸦杀尽",
+      "artist": "洛天依Official",
+      "cut_link": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=25",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-09-08",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "洛天依Official",
+          "replay_id": "live:55931362-aac3-4f89-af6b-b7cdc8419791",
+          "replay_title": "【小松绿Viridis】小唱多聊应该是 歌切合集 2026.09.08",
+          "replay_url": "https://www.bilibili.com/video/BV1qfYJ6gEm8/",
+          "remark": "",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-collection-chapter",
+          "replay_date_source": "song-cut-title",
+          "cut_link": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=25"
+        }
+      ]
+    },
+    "生死一舞的爱语": {
+      "row_key": "生死一舞的爱语",
+      "song_name": "生死一舞的爱语",
+      "display_song_name": "生死一舞的爱语",
+      "artist": "平行四界Quadimension、星尘",
+      "cut_link": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=26",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-09-08",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "平行四界Quadimension、星尘",
+          "replay_id": "live:55931362-aac3-4f89-af6b-b7cdc8419791",
+          "replay_title": "【小松绿Viridis】小唱多聊应该是 歌切合集 2026.09.08",
+          "replay_url": "https://www.bilibili.com/video/BV1qfYJ6gEm8/",
+          "remark": "",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-collection-chapter",
+          "replay_date_source": "song-cut-title",
+          "cut_link": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=26"
+        }
+      ]
+    },
+    "凉雨": {
+      "row_key": "凉雨",
+      "song_name": "凉雨",
+      "display_song_name": "凉雨",
+      "artist": "COP、洛天依Official",
+      "cut_link": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=27",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-09-08",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "COP、洛天依Official",
+          "replay_id": "live:55931362-aac3-4f89-af6b-b7cdc8419791",
+          "replay_title": "【小松绿Viridis】小唱多聊应该是 歌切合集 2026.09.08",
+          "replay_url": "https://www.bilibili.com/video/BV1qfYJ6gEm8/",
+          "remark": "",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-collection-chapter",
+          "replay_date_source": "song-cut-title",
+          "cut_link": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=27"
+        }
+      ]
+    },
+    "若梦境来袭": {
+      "row_key": "若梦境来袭",
+      "song_name": "若梦境来袭",
+      "display_song_name": "若梦境来袭",
+      "artist": "Kevinz、Creuzer、言和",
+      "cut_link": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=28",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-09-08",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "Kevinz、Creuzer、言和",
+          "replay_id": "live:55931362-aac3-4f89-af6b-b7cdc8419791",
+          "replay_title": "【小松绿Viridis】小唱多聊应该是 歌切合集 2026.09.08",
+          "replay_url": "https://www.bilibili.com/video/BV1qfYJ6gEm8/",
+          "remark": "",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-collection-chapter",
+          "replay_date_source": "song-cut-title",
+          "cut_link": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=28"
+        }
+      ]
+    },
+    "Say a Good Bye": {
+      "row_key": "Say a Good Bye",
+      "song_name": "Say a Good Bye",
+      "display_song_name": "Say a Good Bye",
+      "artist": "Kevinz、星尘、言和、洛天依",
+      "cut_link": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=29",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-09-08",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "Kevinz、星尘、言和、洛天依",
+          "replay_id": "live:55931362-aac3-4f89-af6b-b7cdc8419791",
+          "replay_title": "【小松绿Viridis】小唱多聊应该是 歌切合集 2026.09.08",
+          "replay_url": "https://www.bilibili.com/video/BV1qfYJ6gEm8/",
+          "remark": "章节标题带有（卡了）前缀，已排除前缀后录入歌曲名",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-collection-chapter",
+          "replay_date_source": "song-cut-title",
+          "cut_link": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=29"
+        }
+      ]
+    },
+    "中华铄金娘": {
+      "row_key": "中华铄金娘",
+      "song_name": "中华铄金娘",
+      "display_song_name": "中华铄金娘",
+      "artist": "洛天依Official、Soda纯白",
+      "cut_link": "https://www.bilibili.com/video/BV1ceYE6BEPo/",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-09-08",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、独立歌切复核",
+          "artist": "洛天依Official、Soda纯白",
+          "replay_id": "live:55931362-aac3-4f89-af6b-b7cdc8419791",
+          "replay_title": "【小松绿Viridis】小唱多聊应该是 歌切合集 2026.09.08",
+          "replay_url": "https://www.bilibili.com/video/BV1qfYJ6gEm8/",
+          "remark": "桐人合集第18与第22章同名后重新核对；第22章才是《中华铄金娘》，不属于同日复唱",
+          "lyric_excerpt": "",
+          "song_resolution_method": "standalone-song-cut-title-cross-check",
+          "replay_date_source": "song-cut-title",
+          "cut_link": "https://www.bilibili.com/video/BV1ceYE6BEPo/"
         }
       ]
     }

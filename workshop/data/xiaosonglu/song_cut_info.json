@@ -1,10 +1,10 @@
 {
   "roomKey": "xiaosonglu",
   "roomId": "1727071052",
-  "generatedAt": "2026-09-04T00:00:00.000Z",
+  "generatedAt": "2026-09-09T17:16:46.949Z",
   "source": "song-cut-title-index",
   "description": "每首歌对应的歌切切片标题（单曲歌切视频标题 / 合集分P标题），供前端歌切链接显示。",
-  "count": 139,
+  "count": 168,
   "cuts": {
     "勾指起誓": {
       "title": "【小松绿|羽啾】“说好从今以后都牵着手 因为要走很远”《勾指起誓》【虚空合唱】",
@@ -33,7 +33,7 @@
     },
     "少女レイ": {
       "title": "19，《少女レイ》",
-      "kind": "single",
+      "kind": "collection-chapter",
       "url": "https://www.bilibili.com/video/BV1WS8c6XE9w/?p=19"
     },
     "下等马": {
@@ -43,7 +43,7 @@
     },
     "Virtual to LIVE": {
       "title": "16，《Virtual to LIVE》",
-      "kind": "single",
+      "kind": "collection-chapter",
       "url": "https://www.bilibili.com/video/BV1WS8c6XE9w/?p=16"
     },
     "阿拉斯加海湾": {
@@ -98,7 +98,7 @@
     },
     "大声钻石": {
       "title": "7，《大声钻石》",
-      "kind": "single",
+      "kind": "collection-chapter",
       "url": "https://www.bilibili.com/video/BV1WS8c6XE9w/?p=7"
     },
     "カタオモイ": {
@@ -108,7 +108,7 @@
     },
     "第一只小兔子": {
       "title": "6，《第一只小兔子》",
-      "kind": "single",
+      "kind": "collection-chapter",
       "url": "https://www.bilibili.com/video/BV1WS8c6XE9w/?p=6"
     },
     "都落ち": {
@@ -123,7 +123,7 @@
     },
     "二人セゾン": {
       "title": "14，《二人セゾン》",
-      "kind": "single",
+      "kind": "collection-chapter",
       "url": "https://www.bilibili.com/video/BV1WS8c6XE9w/?p=14"
     },
     "繁华唱遍": {
@@ -143,7 +143,7 @@
     },
     "光": {
       "title": "P4 光",
-      "kind": "single",
+      "kind": "collection-chapter",
       "url": "https://www.bilibili.com/video/BV1m9886kEMZ/?p=4"
     },
     "光景": {
@@ -208,7 +208,7 @@
     },
     "恋苦": {
       "title": "P2 恋苦",
-      "kind": "single",
+      "kind": "collection-chapter",
       "url": "https://www.bilibili.com/video/BV1m9886kEMZ/?p=2"
     },
     "临川浮梦": {
@@ -358,12 +358,12 @@
     },
     "私、アイドル宣言": {
       "title": "4，《私、アイドル宣言》",
-      "kind": "single",
+      "kind": "collection-chapter",
       "url": "https://www.bilibili.com/video/BV1WS8c6XE9w/?p=4"
     },
     "私のSymphony": {
       "title": "11，《私のSymphony》",
-      "kind": "single",
+      "kind": "collection-chapter",
       "url": "https://www.bilibili.com/video/BV1WS8c6XE9w/?p=11"
     },
     "思华年": {
@@ -438,7 +438,7 @@
     },
     "夏恋慕": {
       "title": "【小松绿Viridis】20260823 歌切 P7 夏恋慕",
-      "kind": "single",
+      "kind": "collection-chapter",
       "url": "https://www.bilibili.com/video/BV1m9886kEMZ/?p=7"
     },
     "夏日已所剩无几": {
@@ -473,7 +473,7 @@
     },
     "夜蝶": {
       "title": "8，《夜蝶》",
-      "kind": "single",
+      "kind": "collection-chapter",
       "url": "https://www.bilibili.com/video/BV1WS8c6XE9w/?p=8"
     },
     "一半一半": {
@@ -518,47 +518,47 @@
     },
     "纸星瓶": {
       "title": "sp1-纸星瓶",
-      "kind": "single",
+      "kind": "collection-chapter",
       "url": "https://www.bilibili.com/video/BV1EC8w62EAD/?p=19"
     },
     "CHASE!": {
       "title": "2，《CHASE!》",
-      "kind": "single",
+      "kind": "collection-chapter",
       "url": "https://www.bilibili.com/video/BV1WS8c6XE9w/?p=2"
     },
     "flos": {
       "title": "18，《flos》",
-      "kind": "single",
+      "kind": "collection-chapter",
       "url": "https://www.bilibili.com/video/BV1WS8c6XE9w/?p=18"
     },
     "Fly me to the star": {
       "title": "15，《Fly me to the star》",
-      "kind": "single",
+      "kind": "collection-chapter",
       "url": "https://www.bilibili.com/video/BV1WS8c6XE9w/?p=15"
     },
     "I LOVE U": {
       "title": "17，《I LOVE U》",
-      "kind": "single",
+      "kind": "collection-chapter",
       "url": "https://www.bilibili.com/video/BV1WS8c6XE9w/?p=17"
     },
     "MORE JUMP MORE!": {
       "title": "3，《MORE JUMP MORE!》",
-      "kind": "single",
+      "kind": "collection-chapter",
       "url": "https://www.bilibili.com/video/BV1WS8c6XE9w/?p=3"
     },
     "SOS": {
       "title": "10，《SOS》",
-      "kind": "single",
+      "kind": "collection-chapter",
       "url": "https://www.bilibili.com/video/BV1WS8c6XE9w/?p=10"
     },
     "Starlight Prologue": {
       "title": "12，《Starlight Prologue》",
-      "kind": "single",
+      "kind": "collection-chapter",
       "url": "https://www.bilibili.com/video/BV1WS8c6XE9w/?p=12"
     },
     "START:DASH!!!": {
       "title": "1，《START:DASH!!!》",
-      "kind": "single",
+      "kind": "collection-chapter",
       "url": "https://www.bilibili.com/video/BV1WS8c6XE9w/?p=1"
     },
     "Talking to the Rain": {
@@ -573,7 +573,7 @@
     },
     "アイドル": {
       "title": "13，《アイドル》",
-      "kind": "single",
+      "kind": "collection-chapter",
       "url": "https://www.bilibili.com/video/BV1WS8c6XE9w/?p=13"
     },
     "アスノヨゾラ哨戒班": {
@@ -588,7 +588,7 @@
     },
     "おともだち": {
       "title": "5，《おともだち》",
-      "kind": "single",
+      "kind": "collection-chapter",
       "url": "https://www.bilibili.com/video/BV1WS8c6XE9w/?p=5"
     },
     "サリシノハラ": {
@@ -700,6 +700,151 @@
       "title": "P21 如果有来生",
       "kind": "collection-chapter",
       "url": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=21"
+    },
+    "泸沽寻梦": {
+      "title": "01_瀘沽寻梦 - 银临",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=1"
+    },
+    "夜宴风波": {
+      "title": "02_夜宴风波 - 音阙诗听, 王梓钰",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=2"
+    },
+    "牵丝戏": {
+      "title": "03_牵丝戏 - 银临, Aki阿杰",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=3"
+    },
+    "一花依世界": {
+      "title": "04_一花依世界 - 洛天依Official",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=4"
+    },
+    "绝体绝命": {
+      "title": "05_绝体绝命 - 阿良良木健, 洛天依Official",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=5"
+    },
+    "告别曲（Love Elegia Ver.）": {
+      "title": "06_告别曲（Love Elegia Ver.） - 阿良良木健, 洛天依",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=6"
+    },
+    "（区）最终祈愿": {
+      "title": "07_（区）最终祈愿 - 平行四界Quadimension, 星尘",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=7"
+    },
+    "小雨": {
+      "title": "08_小雨 - 黄龄",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=8"
+    },
+    "给自己的情书": {
+      "title": "09_给自己的情书 - 王菲",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=9"
+    },
+    "灼之花": {
+      "title": "10_灼之花 - 洛天依Official, 乐正绫",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=10"
+    },
+    "樱花草": {
+      "title": "11_樱花草 - Sweety",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=11"
+    },
+    "世末积雨云": {
+      "title": "12_世末积雨云 - 洛天依Official",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=12"
+    },
+    "純白の花～Under Divine Gaze": {
+      "title": "13_純白の花～Under Divine Gaze - 不凋花project",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=13"
+    },
+    "悬捱": {
+      "title": "14_悬捱 - 星尘",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=14"
+    },
+    "奶水": {
+      "title": "15_奶水 - Mili",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=15"
+    },
+    "兔子先生": {
+      "title": "16_兔子先生 - 陈秋桦, 洛天依",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=16"
+    },
+    "溺水金鱼": {
+      "title": "17_溺水金鱼 - 漆柚",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=17"
+    },
+    "中华铄金娘": {
+      "title": "『中华铄金娘』！中华少女系列连唱之五！【小松绿Viridis】",
+      "kind": "single",
+      "url": "https://www.bilibili.com/video/BV1ceYE6BEPo/"
+    },
+    "中华烛火娘 (原版)": {
+      "title": "19_中华烛火娘 (原版) - 洛天依Official, Soda纯白",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=19"
+    },
+    "中华缘木娘": {
+      "title": "20_中华缘木娘 - 洛天依Official - 洛天依Official",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=20"
+    },
+    "中华粘土娘 (Album Version)": {
+      "title": "21_中华粘土娘 (Album Version) - 洛天依Official, Soda纯白",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=21"
+    },
+    "阳山绝": {
+      "title": "23_阳山绝 - 平行四界Quadimension,乐正绫,Soda纯白",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=23"
+    },
+    "花头台": {
+      "title": "24_花头台 - 洛天依",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=24"
+    },
+    "三千世界鸦杀尽": {
+      "title": "25_三千世界鸦杀尽 - 洛天依Official",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=25"
+    },
+    "生死一舞的爱语": {
+      "title": "26_生死一舞的爱语 - 平行四界Quadimension, 星尘",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=26"
+    },
+    "凉雨": {
+      "title": "27_凉雨 - COP, 洛天依Official",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=27"
+    },
+    "若梦境来袭": {
+      "title": "28_若梦境来袭 - Kevinz, Creuzer, 言和",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=28"
+    },
+    "Say a Good Bye": {
+      "title": "29_（卡了）Say a Good Bye - Kevinz, 星尘, 言和,洛天依",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=29"
+    },
+    "中华墨水娘": {
+      "title": "『中华墨水娘』！中华少女系列连唱之一！【小松绿Viridis】",
+      "kind": "single",
+      "url": "https://www.bilibili.com/video/BV165YJ6gEUy/"
     }
   }
 }

@@ -5,7 +5,7 @@
   const HANDOFF_KEY = 'xsl:cross-page-player:handoff:v1';
   const FAVORITES_KEY = 'favorites:shared';
   const MAX_HANDOFF_AGE = 5 * 60 * 1000;
-  const AUDIO_ASSET_VERSION = '3';
+  const AUDIO_ASSET_VERSION = '4';
   const PLAY_MODES = [
     { key: 'list', glyph: '↻', icon: 'redo', label: '歌单循环', desc: '按顺序播放，播完循环整个播放列表' },
     { key: 'random', glyph: '⇄', icon: 'random-shuffle', label: '随机播放', desc: '播完随机切换下一首' },
@@ -101,7 +101,10 @@
     try {
       const url = new URL(item.src, window.location.origin);
       if (url.origin !== window.location.origin) return null;
-      if (url.pathname.startsWith('/assets/audio/')) url.searchParams.set('v', AUDIO_ASSET_VERSION);
+      if (url.pathname.startsWith('/assets/audio/')) {
+        const suppliedVersion = url.searchParams.get('v') || '';
+        if (!/^[0-9a-f]{12,64}$/i.test(suppliedVersion)) url.searchParams.set('v', AUDIO_ASSET_VERSION);
+      }
       return {
         song_id: item.song_id,
         row_key: String(item.row_key || item.song_name || ''),

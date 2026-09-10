@@ -9,13 +9,6 @@
   const IDB_NAME = 'xsl:buttons:audio';
   const IDB_STORE = 'audio';
 
-  // 管理员账号列表（离线回退用，云端登录才是主鉴权）：文/0212、咸鱼/xsl
-  const DEFAULT_ADMINS = [
-    { user: '文', pass: '0212' },
-    { user: '咸鱼', pass: 'xsl' },
-    { user: 'haita1015', pass: '123456' },
-  ];
-
   // 默认"其他"分类（删分类时的归入目标）
   const OTHER_CAT_ID = 'other';
 
@@ -521,11 +514,6 @@
   }
 
   // ===== 管理员 =====
-  // 离线/回退校验：账号是否在管理员列表内
-  function isKnownAdmin(user, pass) {
-    return DEFAULT_ADMINS.some(a => a.user === user && a.pass === pass);
-  }
-
   function openAdmin() {
     adminPanel.classList.add('show');
     if (isAdmin) enterAdminMode();
@@ -572,17 +560,10 @@
       }
       throw new Error('bad login response');
     } catch (e) {
-      console.warn('[按钮墙] 云端登录不可用，回退本地校验:', e);
-      if (isKnownAdmin(user, pass)) {
-        sessionStorage.setItem('xsl:buttons:authed', '1');
-        sessionStorage.removeItem(TOKEN_KEY);
-        isAdmin = true;
-        enterAdminMode();
-        updateAdminUI();
-        toast('登录成功（离线模式，改动仅本地）');
-      } else {
-        el('authErr').textContent = '用户名或密码错误';
-      }
+      // Never fall back to a client-side password list: it would expose write access
+      // to anyone who can read the static bundle. Configure Pages Secrets instead.
+      console.warn('[按钮墙] 云端登录不可用:', e);
+      el('authErr').textContent = '云端登录暂不可用，请稍后重试';
     }
   }
 

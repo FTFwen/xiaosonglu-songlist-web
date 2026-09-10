@@ -44,6 +44,34 @@ const ROOM_ORDER = ['miting', 'xiaosonglu'];
 const SUPPORTED_ROOM_IDS = ROOM_ORDER.map(key => ROOM_CONFIGS[key].roomId);
 const BILIBILI_ROOM_RE = /^https:\/\/live\.bilibili\.com\/(\d+)/i;
 
+// Keep legacy/localStorage data on the same language tag vocabulary as the
+// generated ledger. Delimiters are preserved for composite labels.
+const LANGUAGE_TAG_ALIASES = Object.freeze({ '日语': '日文' });
+const LANGUAGE_SEPARATOR_RE = /([、,，/／|｜])/u;
+function normalizeLanguageTag(value) {
+  const text = String(value ?? '').trim();
+  if (!text) return '';
+  return text.split(LANGUAGE_SEPARATOR_RE).map(part => {
+    if (LANGUAGE_SEPARATOR_RE.test(part)) return part;
+    const token = part.trim();
+    return LANGUAGE_TAG_ALIASES[token] || token;
+  }).join('');
+}
+
+// Keep legacy/localStorage type labels deduplicated without guessing broad
+// categories. Ambiguous labels such as “虚拟歌手” must be resolved during review.
+const TYPE_TAG_ALIASES = Object.freeze({});
+const TYPE_TAG_SEPARATOR_RE = /[、,，/／|｜]/u;
+function normalizeTypeTags(value) {
+  const values = Array.isArray(value) ? value : [value];
+  const seen = new Set();
+  return values
+    .flatMap(item => String(item ?? '').split(TYPE_TAG_SEPARATOR_RE))
+    .map(item => TYPE_TAG_ALIASES[item.trim()] || item.trim())
+    .filter(item => item && !seen.has(item) && seen.add(item))
+    .join('、');
+}
+
 function getRoomConfig(roomKey) {
   return ROOM_CONFIGS[roomKey] || ROOM_CONFIGS.miting;
 }
@@ -93,8 +121,8 @@ function normalizeRoomSong(raw, index) {
     feat_artist: raw.feat_artist || '',
     remark: raw.remark || '',
     tone: raw.tone === undefined ? '' : raw.tone,
-    language: raw.language || '',
-    type: raw.type || '',
+    language: normalizeLanguageTag(raw.language || ''),
+    type: normalizeTypeTags(raw.type || ''),
     identification: raw.identification || '',
     display_version: raw.display_version || '',
     search_name: raw.search_name || '',

@@ -306,7 +306,8 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--lock", default="data/xiaosonglu/_audio_sync.lock")
     parser.add_argument("--workers", type=int, default=6)
     parser.add_argument("--quiet", action="store_true", help="Hide per-file existing messages")
-    parser.add_argument("--adopt-baseline", action="store_true", help="Explicitly replace the durable expected size/hash set")
+    parser.add_argument("--adopt-baseline", action="store_true", help="Explicitly update the durable expected size/hash set")
+    parser.add_argument("--adopt-spec", action="append", default=[], metavar="PATH|BYTES|SHA256", help="Reviewed audio path, size, and hash allowed during baseline adoption (repeatable)")
     return parser.parse_args()
 
 
@@ -338,6 +339,31 @@ def main() -> int:
             raise ValueError("audio_index.json contains colliding targets: {} and {}".format(canonical_targets[identity], relative))
         canonical_targets[identity] = relative
     paths = sorted(raw_paths)
+    adopt_expectations: Dict[str, Dict[str, Any]] = {}
+    for raw_spec in args.adopt_spec:
+        pieces = str(raw_spec).split("|")
+        if len(pieces) != 3:
+            raise ValueError("--adopt-spec must be PATH|BYTES|SHA256")
+        relative = pieces[0].replace("\\", "/").split("?", 1)[0]
+        try:
+            expected_bytes = int(pieces[1])
+        except ValueError as error:
+            raise ValueError("--adopt-spec BYTES must be a positive integer") from error
+        expected_hash = pieces[2].strip().casefold()
+        if expected_bytes <= 0 or not re.fullmatch(r"[0-9a-f]{64}", expected_hash):
+            raise ValueError("--adopt-spec requires positive BYTES and a full SHA256")
+        expectation = {"bytes": expected_bytes, "sha256": expected_hash}
+        if relative in adopt_expectations and adopt_expectations[relative] != expectation:
+            raise ValueError("Conflicting --adopt-spec values for {}".format(relative))
+        adopt_expectations[relative] = expectation
+    adopt_paths = set(adopt_expectations)
+    if args.adopt_baseline and not adopt_paths:
+        raise ValueError("--adopt-baseline requires at least one reviewed --adopt-spec")
+    if not args.adopt_baseline and adopt_paths:
+        raise ValueError("--adopt-spec requires --adopt-baseline")
+    unknown_adopt_paths = adopt_paths.difference(paths)
+    if unknown_adopt_paths:
+        raise ValueError("--adopt-spec is not present in audio_index.json: {}".format(", ".join(sorted(unknown_adopt_paths))))
 
     baseline = load_manifest(baseline_path)
     baseline_files = baseline.get("files", {}) if baseline_path.is_file() else {}
@@ -351,14 +377,26 @@ def main() -> int:
         for relative in paths:
             if not baseline_files[relative].get("bytes") or not baseline_files[relative].get("sha256"):
                 raise ValueError("Durable audio baseline lacks size/hash for {}".format(relative))
+    else:
+        if baseline_files:
+            if baseline.get("schemaVersion") != 1 or int(baseline.get("count") or 0) != len(baseline_files):
+                raise ValueError("Existing durable audio baseline is invalid")
+            removed_paths = set(baseline_files).difference(paths)
+            if removed_paths:
+                raise ValueError("Selective baseline adoption cannot remove existing assets: {}".format(", ".join(sorted(removed_paths))))
+            unreviewed_new_paths = set(paths).difference(baseline_files).difference(adopt_paths)
+            if unreviewed_new_paths:
+                raise ValueError("New audio paths require explicit --adopt-spec: {}".format(", ".join(sorted(unreviewed_new_paths))))
+        elif adopt_paths != set(paths):
+            raise ValueError("Creating the first baseline requires every indexed path as --adopt-spec")
 
     manifest = load_manifest(manifest_path)
     old_files = manifest.get("files", {})
     sync_entries: Dict[str, Dict[str, Any]] = {}
     for relative in paths:
-        if args.adopt_baseline:
-            # Adoption explicitly trusts the reviewed local/remote bytes and replaces old expectations.
-            sync_entries[relative] = {}
+        if args.adopt_baseline and relative in adopt_paths:
+            # Only explicitly reviewed bytes may replace old expectations.
+            sync_entries[relative] = dict(adopt_expectations[relative])
             continue
         entry = dict(baseline_files[relative])
         local_entry = old_files.get(relative, {})
@@ -411,12 +449,17 @@ def main() -> int:
             "fetchedAt": result.get("fetchedAt"),
         }
     downloaded_count = sum(result["status"] in ("downloaded", "resumed") for result in results)
-    old_manifest_complete = (
+    old_manifest_matches_results = (
         manifest.get("schemaVersion") == 1
         and set(old_files) == set(paths)
-        and all(old_files[path].get("bytes") and old_files[path].get("mtimeNs") and old_files[path].get("sha256") for path in paths)
+        and all(
+            old_files[path].get("bytes") == files[path].get("bytes")
+            and old_files[path].get("mtimeNs") == files[path].get("mtimeNs")
+            and old_files[path].get("sha256") == files[path].get("sha256")
+            for path in paths
+        )
     )
-    if downloaded_count == 0 and not failures and old_manifest_complete:
+    if downloaded_count == 0 and not failures and old_manifest_matches_results:
         print("MANIFEST unchanged")
     else:
         next_manifest = {
