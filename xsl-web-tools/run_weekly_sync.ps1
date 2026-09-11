@@ -1,4 +1,4 @@
-﻿# 周表定时同步 runner：抓 B 站置顶周表 → 有更新则提交、推送、双部署、验证、通知
+# 周表定时同步 runner：抓 B 站置顶周表 → 有更新则提交、推送、双部署、验证、通知
 # 由 install_weekly_sync.ps1 注册的 Windows 计划任务调用，也可手动运行。
 [CmdletBinding()]
 param(
@@ -33,14 +33,25 @@ function Send-SyncToast([string]$Title, [string]$Message) {
     }
 }
 
+# 用 cmd /c 文件重定向运行外部命令：stderr 不经 PowerShell 流（避免 Stop 偏好
+# 把 console.error 当终止性错误杀掉子进程），退出码经 cmd 如实传回 $LASTEXITCODE。
+function Invoke-Captured {
+    param([string]$CommandLine)
+    $outFile = Join-Path $env:TEMP ("xsl-sync-{0}.out" -f ([guid]::NewGuid().ToString('N')))
+    & cmd.exe /c "$CommandLine > `"$outFile`" 2>&1"
+    $text = if (Test-Path $outFile) { Get-Content $outFile -Raw -Encoding UTF8 } else { '' }
+    Remove-Item $outFile -ErrorAction SilentlyContinue
+    return [pscustomobject]@{ ExitCode = $LASTEXITCODE; Text = $text }
+}
+
 try {
     Write-SyncLog '=== 周表同步开始 ==='
-    $fetchOutput = & node (Join-Path $rootPath 'tools\weekly\fetch-weekly.mjs') 2>&1 | ForEach-Object { "$_" }
-    $fetchText = $fetchOutput -join "`n"
-    Write-SyncLog ($fetchText.Trim())
+    $fetch = Invoke-Captured -CommandLine ('node "{0}"' -f (Join-Path $rootPath 'tools\weekly\fetch-weekly.mjs'))
+    $fetchText = $fetch.Text
+    Write-SyncLog (($fetchText | Out-String).Trim())
 
-    if ($LASTEXITCODE -ne 0) {
-        Write-SyncLog "抓取失败 exit=$LASTEXITCODE，本次结束"
+    if ($fetch.ExitCode -ne 0) {
+        Write-SyncLog "抓取失败 exit=$($fetch.ExitCode)，本次结束"
         Send-SyncToast '小松绿周表同步' '周表抓取失败，详见 tools/weekly/sync.log'
         exit 2
     }
@@ -61,16 +72,15 @@ try {
     Write-SyncLog "已提交推送：周表自动更新：$title"
 
     # 部署主站
-    $deployMain = & powershell.exe -NoLogo -NoProfile -ExecutionPolicy Bypass -File (Join-Path $rootPath 'xsl-web-tools\deploy_web.ps1') -Deploy -AllowOAuth 2>&1 | ForEach-Object { "$_" }
-    $mainTail = ($deployMain | Select-Object -Last 5) -join ' '
-    Write-SyncLog "主站部署输出（尾部）: $mainTail"
-    if ($deployMain -join "`n" -notmatch '"ok":\s*true|"status":\s*"deployed"') { throw "主站部署未确认成功" }
+    $main = Invoke-Captured -CommandLine ('powershell.exe -NoLogo -NoProfile -ExecutionPolicy Bypass -File "{0}" -Deploy -AllowOAuth' -f (Join-Path $rootPath 'xsl-web-tools\deploy_web.ps1'))
+    Write-SyncLog ("主站部署输出（尾部）: " + (($main.Text -split "`r?`n" | Select-Object -Last 5) -join ' '))
+    if ($main.Text -notmatch '"ok":\s*true|"status":\s*"deployed"') { throw "主站部署未确认成功 exit=$($main.ExitCode)" }
 
     # 部署 workshop 独立项目
     Remove-Item Env:CLOUDFLARE_ACCOUNT_ID -ErrorAction SilentlyContinue
-    $deployWorkshop = & npx wrangler pages deploy workshop --project-name=xsl-workshop --commit-dirty=true 2>&1 | ForEach-Object { "$_" }
-    Write-SyncLog ("workshop 部署输出（尾部）: " + (($deployWorkshop | Select-Object -Last 3) -join ' '))
-    if ($deployWorkshop -join "`n" -notmatch 'Deployment complete') { throw 'workshop 项目部署未确认成功' }
+    $ws = Invoke-Captured -CommandLine 'npx wrangler pages deploy workshop --project-name=xsl-workshop --commit-dirty=true'
+    Write-SyncLog ("workshop 部署输出（尾部）: " + (($ws.Text -split "`r?`n" | Select-Object -Last 3) -join ' '))
+    if ($ws.Text -notmatch 'Deployment complete') { throw "workshop 项目部署未确认成功 exit=$($ws.ExitCode)" }
 
     # 线上验证
     Start-Sleep -Seconds 5

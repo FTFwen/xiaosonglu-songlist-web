@@ -49,12 +49,13 @@ function signedQuery(params, img, sub) {
   return `${q}&w_rid=${crypto.createHash('md5').update(q + key).digest('hex')}`;
 }
 
-// 带重试拉置顶动态（接口对裸指纹有抖动，重试 + 间隔可稳定拿到）
+// 带重试拉置顶动态（接口对裸指纹有抖动/软风控：拉长重试间隔并复用 WBI 密钥减少请求量）
 async function fetchTopDynamic() {
+  let keys = null;
   for (let attempt = 1; attempt <= 4; attempt += 1) {
     try {
-      const { img, sub } = await wbiKeys();
-      const q = signedQuery({ host_mid: UID, offset: '', timezone_offset: -480, platform: 'web', features: 'itemOpusStyle' }, img, sub);
+      if (!keys) keys = await wbiKeys();
+      const q = signedQuery({ host_mid: UID, offset: '', timezone_offset: -480, platform: 'web', features: 'itemOpusStyle' }, keys.img, keys.sub);
       const data = await getJson(`https://api.bilibili.com/x/polymer/web-dynamic/v1/feed/space?${q}`, `https://space.bilibili.com/${UID}/dynamic`);
       if (data.code !== 0) throw new Error(`feed/space ${data.code} ${data.message}`);
       const items = data.data.items || [];
@@ -73,7 +74,10 @@ async function fetchTopDynamic() {
     } catch (e) {
       console.error(`  尝试 ${attempt}/4 失败: ${e.message}`);
       if (attempt === 4) throw e;
-      await sleep(4000 * attempt);
+      // 软风控（items=0）需要更长冷却；指数拉长：20s → 45s → 90s
+      await sleep([20000, 45000, 90000][attempt - 1]);
+      // 风控怀疑 WBI 密钥也被拒时，下一轮强制重取
+      if (/无置顶\/带图动态|HTTP 4/.test(e.message)) keys = null;
     }
   }
 }
