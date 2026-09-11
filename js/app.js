@@ -1542,6 +1542,8 @@ function initPanelDrag(panel) {
   head.addEventListener('pointerdown', e => {
     // 头部按钮（清空等）正常点击，不启动拖动
     if (e.button !== 0 || e.target.closest('button, input, a')) return;
+    // 手机端抽屉展开时不拖动，保持底部吸附定位
+    if (panel.classList.contains('mobile-open')) return;
     // 若面板用了 transform 居中（歌单面板 translateY(-50%)），
     // 拖动前先把当前实际位置转成像素定位，避免拖动错位
     const rect = panel.getBoundingClientRect();
@@ -1602,6 +1604,14 @@ function initMobileFabs() {
     } else {
       openTimerPopover();
     }
+  });
+  // 手机端：点抽屉外空白处收起歌单 / 播放列表
+  document.addEventListener('pointerdown', e => {
+    if (!dom.songlistPanel.classList.contains('mobile-open') &&
+        !dom.playlistPanel.classList.contains('mobile-open')) return;
+    if (dom.songlistPanel.contains(e.target) || dom.playlistPanel.contains(e.target)) return;
+    if (dom.mobileFabs && dom.mobileFabs.contains(e.target)) return;
+    closeAll();
   });
 }
 
@@ -3808,7 +3818,7 @@ function bindDom() {
     'detailOverlay','detailModal','detailTitle','detailSub','detailBody','detailCloseBtn','toast','backTopBtn',
     'playerBar','playerPrevBtn','playerToggleBtn','playerNextBtn','playerSongName','playerSongArtist','playerSeek','playerTimeCur','playerTimeDur','playerShuffleBtn','playerFavBtn','playerVolume','playAllBtn','playShuffleBtn',
     'playerTimerWrap','playerTimerBtn','playerTimerPopover','playerTimerPopTitle','timerValH','timerValM','timerCancelBtn','timerStartBtn',
-    'playlistPanel','playlistCountText','playlistClearBtn','playlistListWrap',
+    'playlistPanel','playlistCountText','playlistClearBtn','playlistCloseBtn','playlistListWrap',
     'songlistPanel','songlistNewBtn','songlistBodyWrap','songlistToggleBtn','songlistCloseBtn',
     'songlistDialogOverlay','songlistNewName','songlistDialogCancel','songlistDialogOk',
     'songlistPickerOverlay','pickerSongName','pickerBody','pickerCloseBtn',
@@ -4000,7 +4010,17 @@ function bindEvents() {
   }
   if (dom.songlistCloseBtn) {
     dom.songlistCloseBtn.addEventListener('click', () => {
+      // 同时收起桌面（show）与手机（mobile-open）两种展开状态
       dom.songlistPanel.classList.remove('show');
+      dom.songlistPanel.classList.remove('mobile-open');
+      if (dom.songlistFab) dom.songlistFab.classList.remove('active');
+    });
+  }
+  if (dom.playlistCloseBtn) {
+    dom.playlistCloseBtn.addEventListener('click', () => {
+      dom.playlistPanel.classList.remove('show');
+      dom.playlistPanel.classList.remove('mobile-open');
+      if (dom.playlistFab) dom.playlistFab.classList.remove('active');
     });
   }
   // 二创歌曲开关：勾选显示二创歌曲，不勾选默认隐藏

@@ -9,6 +9,8 @@
 @media (max-width: 768px) {
   .listen-together-launch { display: none; }
 }
+/* 手机端悬浮按钮列入口：显式保持可见，跟随列内排列（纵向列的最下方 / 横向工具条的最右侧） */
+.mobile-fabs .listen-fab { display: inline-grid; }
 
 /* 桌面端还没播放时：右下角悬浮入口（播放栏出现后自动让位给栏内图标） */
 .listen-fab-desktop {

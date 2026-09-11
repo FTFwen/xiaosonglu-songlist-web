@@ -601,7 +601,7 @@ test('mobile media-query cascade gives only the playing card a glass state and c
     assert.match(css, /\.playing-bars[\s\S]*?display: none !important;/);
   }
   assert.match(htmlSource, /js\/data\.js\?v=30/);
-  assert.match(htmlSource, /js\/app\.js\?v=93/);
+  assert.match(htmlSource, /js\/app\.js\?v=94/);
   assert.match(workshopHtmlSource, /js\/data\.js\?v=31/);
   assert.match(workshopHtmlSource, /js\/start\.js\?v=17/);
 });
