@@ -808,6 +808,7 @@ const player = {
   wantedPlaying: false,
   playing: false,
   playRequestId: 0,
+  audioRetryAttempted: false, // 本曲是否已因加载失败自动换版本参数重试过
   get current() { return this.queue[this.index] || null; }
 };
 player.audio.preload = 'auto';
@@ -1987,6 +1988,7 @@ player.audio.addEventListener('playing', () => {
   if (player.audio.paused || player.audio.ended) return;
   player.wantedPlaying = true;
   player.playing = true;
+  player.audioRetryAttempted = false;
   updatePlayerUI();
 });
 player.audio.addEventListener('pause', () => {
@@ -2027,6 +2029,24 @@ player.audio.addEventListener('timeupdate', () => {
   if (!seekDragging && player.audio.duration) dom.playerSeek.value = cur;
 });
 player.audio.addEventListener('error', () => {
+  // 边缘 CDN 偶发负缓存（404 被短暂缓存）：同一 URL 会持续失败，
+  // 换一个全新的版本参数重试一次即可绕开（真实缺源的歌重试后仍会失败并提示）。
+  const failedSrc = player.audio.src || '';
+  if (!player.audioRetryAttempted && failedSrc.includes('/assets/audio/')) {
+    player.audioRetryAttempted = true;
+    const url = audioUrlOf(player.current);
+    if (url) {
+      try {
+        const retryUrl = new URL(url);
+        retryUrl.searchParams.set('v', `${AUDIO_ASSET_VERSION}.${Date.now()}`);
+        player.audio.src = retryUrl.href;
+        player.audio.load();
+        requestAudioPlayback({ failurePrefix: '音频播放失败' });
+        showToast('音频拉取受阻，正在换线路重试…');
+        return;
+      } catch (e) { /* fall through */ }
+    }
+  }
   player.playRequestId += 1;
   player.wantedPlaying = false;
   player.playing = false;
