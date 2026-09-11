@@ -5,9 +5,10 @@
   background: rgba(185, 205, 108, .42);
   border-color: rgba(101, 119, 49, .45);
 }
-/* 手机端播放栏是固定 6 列网格，塞不下额外按钮；入口改走右下角悬浮按钮列 */
+/* 手机端播放栏是固定 6 列网格，不放一起听入口；入口只在右下角悬浮按钮列。
+   加 !important 防止内联样式表里 .player-btn 的 display 同优先级反超。 */
 @media (max-width: 768px) {
-  .listen-together-launch { display: none; }
+  .listen-together-launch { display: none !important; }
 }
 /* 手机端悬浮按钮列入口：显式保持可见，跟随列内排列（纵向列的最下方 / 横向工具条的最右侧） */
 .mobile-fabs .listen-fab { display: inline-grid; }
