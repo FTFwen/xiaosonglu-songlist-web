@@ -163,6 +163,73 @@ test('same-song activation alternates through shared request and pause helpers, 
   assert.match(toasts.at(-1), /暂时没有收录音频/);
 });
 
+test('tapping a song builds the filtered queue, jumps in place, or inserts as the next track', () => {
+  const playSongAtSource = sourceBetween(appSource, 'function playSongAt', 'function startPlaybackFrom');
+  const addSource = sourceBetween(appSource, 'function toggleSongPlayback', 'function removeFromPlaylist');
+  const snapSource = sourceBetween(appSource, 'function snapshotOf', 'function normalizeCrossPageDestination');
+  const songs = [
+    { song_id: 1, song_name: 'A' },
+    { song_id: 2, song_name: 'B' },
+    { song_id: 3, song_name: 'C' },
+  ];
+  const player = {
+    queue: [],
+    index: -1,
+    playMode: 'list',
+    shuffleOrder: null,
+    shufflePos: 0,
+    audio: { src: '', load() {}, pause() {} },
+    get current() { return this.queue[this.index] || null; },
+  };
+  const context = {
+    window: {},
+    state: { filteredSongs: songs, playlist: [] },
+    player,
+    audioUrlOf: song => `a${song.song_id}.m4a`,
+    getPlayableSongs: () => context.state.filteredSongs,
+    showToast: () => {},
+    savePlaylist: () => {},
+    renderPlaylist: () => {},
+    updatePlayerUI: () => {},
+    requestAudioPlayback: () => {},
+    pauseAudioPlayback: () => {},
+    buildShuffleOrder: () => {},
+  };
+  vm.runInNewContext(`${snapSource}\n${playSongAtSource}\n${addSource}\nthis.add = addToPlaylist;`, context);
+
+  // 规则一：播放列表为空时，按当前筛选结果整体建表，从点击的歌开始播
+  assert.equal(context.add(songs[1]), true);
+  assert.deepEqual(context.state.playlist.map(item => item.song_id), [1, 2, 3], 'empty playlist should be rebuilt from the current filter');
+  assert.equal(player.index, 1, 'playback should start at the tapped song');
+  assert.equal(player.queue, context.state.playlist);
+
+  // 规则二：点击列表中已有的歌 = 原位跳播，不改变顺序
+  context.add(songs[2]);
+  assert.deepEqual(context.state.playlist.map(item => item.song_id), [1, 2, 3], 'tapping an existing song must not reorder the playlist');
+  assert.equal(player.index, 2, 'existing song should play from its own position');
+
+  // 规则三：点击列表外的新歌 = 插到当前播放的下一首并播放
+  player.index = 0;
+  context.add({ song_id: 9, song_name: 'D' });
+  assert.deepEqual(context.state.playlist.map(item => item.song_id), [1, 9, 2, 3], 'fresh song should be inserted right after the current track');
+  assert.equal(player.index, 1, 'fresh song should play at its insertion index');
+  assert.equal(context.state.playlist[2].song_id, 2, 'the original next track should follow the insertion');
+
+  // 随机模式：插入新歌后洗牌序列同步，播完新歌接着放原本的随机下一首
+  context.state.playlist = songs.map(item => ({ ...item }));
+  player.queue = context.state.playlist;
+  player.index = 0;
+  player.playMode = 'random';
+  player.shuffleOrder = [2, 0, 1]; // 随机顺序 C A B，当前停在位置 1（A）
+  player.shufflePos = 1;
+  context.add({ song_id: 9, song_name: 'D' });
+  assert.deepEqual(context.state.playlist.map(item => item.song_id), [1, 9, 2, 3]);
+  assert.deepEqual(player.shuffleOrder, [3, 0, 1, 2], 'shuffle order should keep its tail and slot the new track right after the current one');
+  assert.equal(player.index, 1);
+  assert.equal(player.shufflePos, 2, 'playSongAt should align shufflePos with the inserted track');
+  assert.equal(player.shuffleOrder[player.shufflePos + 1], 2, 'the original next random track should still follow the insertion');
+});
+
 test('songlist playback and restored persistent queue exclude unavailable audio', () => {
   const playSonglistSource = sourceBetween(appSource, 'function playSonglist', 'function renderSonglistDetail');
   const pruneSource = sourceBetween(appSource, 'function pruneUnplayablePlaylist', 'function savePlaylist');
@@ -601,7 +668,7 @@ test('mobile media-query cascade gives only the playing card a glass state and c
     assert.match(css, /\.playing-bars[\s\S]*?display: none !important;/);
   }
   assert.match(htmlSource, /js\/data\.js\?v=30/);
-  assert.match(htmlSource, /js\/app\.js\?v=94/);
+  assert.match(htmlSource, /js\/app\.js\?v=95/);
   assert.match(workshopHtmlSource, /js\/data\.js\?v=31/);
   assert.match(workshopHtmlSource, /js\/start\.js\?v=17/);
 });

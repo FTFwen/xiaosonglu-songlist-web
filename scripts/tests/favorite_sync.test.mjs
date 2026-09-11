@@ -33,7 +33,7 @@ test('favorite auto-sync UI and persistence wiring are present', () => {
     assert.match(htmlSource, new RegExp(`id=["']${id}["']`));
     assert.match(appSource, new RegExp(`['"]${id}['"]`));
   }
-  assert.match(htmlSource, /js\/app\.js\?v=94/);
+  assert.match(htmlSource, /js\/app\.js\?v=95/);
   assert.doesNotMatch(appSource, /['"]虚拟歌手['"]\s*:\s*['"]中V['"]/u);
   assert.match(appSource, /canonicalTypeForCachedSong/);
   assert.match(appSource, /const FAV_AUTO_SYNC_KEY = 'favorites:autoSyncEnabled'/);

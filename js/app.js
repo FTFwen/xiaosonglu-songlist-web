@@ -1435,7 +1435,10 @@ function savePlaylist() {
   try { localStorage.setItem(PLAYLIST_KEY, JSON.stringify(state.playlist)); } catch (e) { /* ignore */ }
 }
 
-// 点击歌曲：加入播放列表并播放；正在播的这首再次点击 = 暂停/恢复
+// 点击歌曲：加入播放列表并播放；正在播的这首再次点击 = 暂停/恢复。
+// 播放列表为空时，按当前筛选结果整体建表并从点击的歌开始；
+// 点击列表中已有的歌 = 原位跳播，不改变列表顺序；
+// 点击列表外的新歌 = 插到“当前播放的下一首”，播完后接着放原本的下一首。
 function toggleSongPlayback(song) {
   return addToPlaylist(song, true);
 }
@@ -1454,14 +1457,49 @@ function addToPlaylist(song, autoplay = true) {
     else pauseAudioPlayback();
     return true;
   }
-  const existing = state.playlist.findIndex(p => p.song_id === snap.song_id);
-  if (existing >= 0) state.playlist.splice(existing, 1);
-  state.playlist.push(snap);
+
+  if (!state.playlist.length) {
+    // 规则一：还没有播放列表时，用当前筛选结果整体建表，从点击的歌开始播
+    const songs = getPlayableSongs();
+    if (!songs.length) { showToast('当前列表没有可播放的音频'); return false; }
+    state.playlist = songs.map(snapshotOf);
+    let idx = state.playlist.findIndex(p => String(p.song_id) === String(song.song_id));
+    if (idx < 0) { state.playlist.push(snap); idx = state.playlist.length - 1; }
+    savePlaylist();
+    player.queue = state.playlist;
+    if (autoplay) playSongAt(idx);
+    renderPlaylist();
+    updatePlayerUI();
+    return true;
+  }
+
+  const existing = state.playlist.findIndex(p => String(p.song_id) === String(song.song_id));
+  if (existing >= 0) {
+    // 规则二：已在列表中 → 原位跳播，不改变列表顺序
+    player.queue = state.playlist;
+    if (autoplay) playSongAt(existing);
+    renderPlaylist();
+    updatePlayerUI();
+    return true;
+  }
+
+  // 规则三：新歌插到“当前播放的下一首”，播完后接着放原本的下一首
+  const insertAt = player.queue === state.playlist && player.index >= 0
+    ? player.index + 1
+    : state.playlist.length;
+  state.playlist.splice(insertAt, 0, snap);
   savePlaylist();
   player.queue = state.playlist;
-  if (autoplay) {
-    playSongAt(state.playlist.length - 1);
+  if (player.playMode === 'random' && player.shuffleOrder &&
+      player.shuffleOrder.length === state.playlist.length - 1 && player.shufflePos >= 0) {
+    // 随机模式：已有索引整体后移，再把新歌插进洗牌序列的当前曲之后；
+    // playSongAt 会把 shufflePos 对准新歌，后续随机顺序保持原样
+    for (let i = 0; i < player.shuffleOrder.length; i++) {
+      if (player.shuffleOrder[i] >= insertAt) player.shuffleOrder[i] += 1;
+    }
+    player.shuffleOrder.splice(Math.min(player.shufflePos + 1, player.shuffleOrder.length), 0, insertAt);
   }
+  if (autoplay) playSongAt(insertAt);
   renderPlaylist();
   updatePlayerUI();
   return true;
