@@ -947,15 +947,25 @@ function isPlayAborted(err) {
 }
 
 function pauseAudioPlayback() {
+  if (!!(typeof window !== 'undefined' && window.XSLListenTogether && window.XSLListenTogether.isMember && window.XSLListenTogether.isMember() && !(window.XSLListenTogether.isApplyingRemote && window.XSLListenTogether.isApplyingRemote()))) {
+    showToast('你现在是成员，播放由房主控制');
+    return false;
+  }
   // 让所有尚未落定的旧 play() Promise 失效，避免它们稍后覆盖当前曲目的状态。
   player.playRequestId += 1;
   player.wantedPlaying = false;
   player.playing = false;
   player.audio.pause();
   updatePlayerUI();
+  if (typeof listenRoomPublish === 'function') listenRoomPublish('state');
+  return true;
 }
 
 function requestAudioPlayback({ failurePrefix = '播放失败', failureMessage = '' } = {}) {
+  if (!!(typeof window !== 'undefined' && window.XSLListenTogether && window.XSLListenTogether.isMember && window.XSLListenTogether.isMember() && !(window.XSLListenTogether.isApplyingRemote && window.XSLListenTogether.isApplyingRemote()))) {
+    showToast('你现在是成员，播放由房主控制');
+    return false;
+  }
   const requestId = ++player.playRequestId;
   const requestedSrc = player.audio.src;
   player.wantedPlaying = true;
@@ -985,6 +995,7 @@ function requestAudioPlayback({ failurePrefix = '播放失败', failureMessage =
   } catch (err) {
     markFailed(err);
   }
+  if (typeof listenRoomPublish === 'function') listenRoomPublish('state');
   return requestId;
 }
 
@@ -1136,7 +1147,22 @@ function updatePlayerFavState() {
   dom.playerFavBtn.disabled = !cur;
 }
 
+function listenRoomIsMember() {
+  return !!(window.XSLListenTogether && window.XSLListenTogether.isMember && window.XSLListenTogether.isMember() &&
+    !(window.XSLListenTogether.isApplyingRemote && window.XSLListenTogether.isApplyingRemote()));
+}
+
+function listenRoomPublish(reason = 'control') {
+  if (window.XSLListenTogether && typeof window.XSLListenTogether.publish === 'function') {
+    window.XSLListenTogether.publish(reason);
+  }
+}
+
 function playSongAt(index) {
+  if (!!(typeof window !== 'undefined' && window.XSLListenTogether && window.XSLListenTogether.isMember && window.XSLListenTogether.isMember() && !(window.XSLListenTogether.isApplyingRemote && window.XSLListenTogether.isApplyingRemote()))) {
+    showToast('你现在是成员，播放由房主控制');
+    return false;
+  }
   const song = player.queue[index];
   if (!song) return false;
   const url = audioUrlOf(song);
@@ -1807,6 +1833,10 @@ function confirmCreateSonglist() {
 }
 
 function togglePlay() {
+  if (!!(typeof window !== 'undefined' && window.XSLListenTogether && window.XSLListenTogether.isMember && window.XSLListenTogether.isMember() && !(window.XSLListenTogether.isApplyingRemote && window.XSLListenTogether.isApplyingRemote()))) {
+    showToast('你现在是成员，播放由房主控制');
+    return;
+  }
   if (player.queue.length === 0 || player.index < 0) {
     playAllSongs();
     return;
@@ -1816,7 +1846,11 @@ function togglePlay() {
 }
 
 function playNext(auto = false) {
-  if (!player.queue.length) return;
+  if (!!(typeof window !== 'undefined' && window.XSLListenTogether && window.XSLListenTogether.isMember && window.XSLListenTogether.isMember() && !(window.XSLListenTogether.isApplyingRemote && window.XSLListenTogether.isApplyingRemote()))) {
+    showToast('你现在是成员，播放由房主控制');
+    return false;
+  }
+  if (!player.queue.length) return false;
   const mode = player.playMode;
   // 单曲循环：自动播完时重播当前曲目
   if (mode === 'single' && auto) {
@@ -1840,11 +1874,17 @@ function playNext(auto = false) {
     next = player.index + 1;
     if (next >= player.queue.length) next = 0;
   }
-  playSongAt(next);
+  const changed = playSongAt(next);
+  if (changed) listenRoomPublish('state');
+  return changed;
 }
 
 function playPrev() {
-  if (!player.queue.length) return;
+  if (!!(typeof window !== 'undefined' && window.XSLListenTogether && window.XSLListenTogether.isMember && window.XSLListenTogether.isMember() && !(window.XSLListenTogether.isApplyingRemote && window.XSLListenTogether.isApplyingRemote()))) {
+    showToast('你现在是成员，播放由房主控制');
+    return false;
+  }
+  if (!player.queue.length) return false;
   let prev;
   if (player.playMode === 'random' && player.shuffleOrder && player.shuffleOrder.length) {
     player.shufflePos -= 1;
@@ -1854,7 +1894,9 @@ function playPrev() {
     prev = player.index - 1;
     if (prev < 0) prev = player.queue.length - 1;
   }
-  playSongAt(prev);
+  const changed = playSongAt(prev);
+  if (changed) listenRoomPublish('state');
+  return changed;
 }
 
 async function loadAudioIndex() {
@@ -4059,6 +4101,7 @@ function bindEvents() {
     const mode = PLAY_MODE_MAP[player.playMode];
     updatePlayerUI();
     showToast(`播放模式：${mode.label}（${mode.desc}）`);
+    listenRoomPublish('state');
   });
 
   // 播放栏收藏按钮：把当前播放的歌加入/移出中意清单
@@ -4154,6 +4197,7 @@ function bindEvents() {
     const t = Number(dom.playerSeek.value);
     if (Number.isFinite(t) && t >= 0) {
       player.audio.currentTime = Math.min(t, dur);
+      listenRoomPublish('state');
     }
   });
   // 在滑块外松开时也重置拖动状态，避免 timeupdate 一直不更新滑块
@@ -4400,6 +4444,138 @@ function bindEvents() {
   });
 }
 
+function listenRoomTrackSnapshot(song) {
+  if (!song || !song.song_id || song.song_id < 0) return null;
+  const src = audioUrlOf(song);
+  if (!src) return null;
+  let assetVersion = '';
+  try { assetVersion = new URL(src, document.baseURI).searchParams.get('v') || ''; } catch (_) { /* ignore */ }
+  if (!/^[0-9a-f]{12,64}$/i.test(assetVersion)) return null;
+  return {
+    songId: Number(song.song_id),
+    rowKey: String(song.row_key || song.song_name || ''),
+    name: String(song.display_song_name || song.song_name || song.row_key || ''),
+    artist: String(song.artist || ''),
+    assetVersion: assetVersion.toLowerCase(),
+  };
+}
+
+function findSongForListenRoom(track) {
+  if (!track || !Number.isSafeInteger(Number(track.songId))) return null;
+  const catalog = [...state.allSongs, ...state.derivativeSongs];
+  return catalog.find(song => Number(song.song_id) === Number(track.songId) &&
+    String(song.row_key || song.song_name || '') === String(track.rowKey || '')) ||
+    catalog.find(song => Number(song.song_id) === Number(track.songId)) || null;
+}
+
+function loadListenRoomTrack(track, targetPositionSeconds, shouldPlay, playMode = 'list') {
+  const song = findSongForListenRoom(track);
+  if (!song || !audioUrlOf(song)) throw new Error('这首歌在当前歌单中不可播放');
+  const queue = [snapshotOf(song)];
+  player.queue = queue;
+  state.playlist = queue;
+  player.index = 0;
+  player.playMode = PLAY_MODE_MAP[playMode] ? playMode : player.playMode;
+  player.playRequestId += 1;
+  player.audio['pause']();
+  player.audio.src = audioUrlOf(song);
+  const source = player.audio.src;
+  const bounded = Math.max(0, Number(targetPositionSeconds) || 0);
+  player.wantedPlaying = !!shouldPlay;
+  player.playing = false;
+  return new Promise((resolve, reject) => {
+    const onMetadata = () => {
+      if (player.audio.src !== source || player.current !== queue[0]) return;
+      const duration = Number.isFinite(player.audio.duration) ? player.audio.duration : 0;
+      player.audio.currentTime = duration > 0 ? Math.min(bounded, Math.max(0, duration - 0.15)) : bounded;
+      updatePlayerUI();
+      if (!shouldPlay) { resolve({ autoplayBlocked: false }); return; }
+      let result;
+      try { result = player.audio.play(); } catch (error) { player.wantedPlaying = false; resolve({ autoplayBlocked: true, error }); return; }
+      if (result && typeof result.then === 'function') {
+        result.then(() => resolve({ autoplayBlocked: false })).catch(error => {
+          if (error && error.name === 'NotAllowedError') resolve({ autoplayBlocked: true });
+          else reject(error);
+        });
+      } else resolve({ autoplayBlocked: false });
+    };
+    player.audio.addEventListener('loadedmetadata', onMetadata, { once: true });
+    player.audio.addEventListener('error', () => reject(new Error('音频加载失败')), { once: true });
+    player.audio.load();
+  });
+}
+
+function initListenTogether() {
+  if (!window.XSLListenTogether || typeof window.XSLListenTogether.init !== 'function') return;
+  window.XSLListenTogether.init({
+    endpoint: window.XSL_LISTEN_ENDPOINT,
+    showMessage: showToast,
+    adapter: {
+      getSnapshot() {
+        const song = listenRoomTrackSnapshot(player.current);
+        if (!song) return null;
+        return {
+          track: song,
+          playing: !!player.wantedPlaying && !player.audio.paused && !player.audio.ended,
+          positionSeconds: Number.isFinite(player.audio.currentTime) ? Math.max(0, player.audio.currentTime) : 0,
+          playMode: player.playMode,
+        };
+      },
+      async applyRemoteSnapshot(snapshot) {
+        if (!snapshot.track) {
+          player.audio.pause();
+          player.wantedPlaying = false;
+          player.playing = false;
+          updatePlayerUI();
+          return { autoplayBlocked: false };
+        }
+        const current = listenRoomTrackSnapshot(player.current);
+        const target = Math.max(0, Number(snapshot.targetPositionSeconds) || 0);
+        const sameTrack = current && current.songId === snapshot.track.songId && current.rowKey === snapshot.track.rowKey &&
+          current.assetVersion === snapshot.track.assetVersion;
+        if (!sameTrack) return loadListenRoomTrack(snapshot.track, target, !!snapshot.playing, snapshot.playMode);
+        if (Number.isFinite(player.audio.duration) && player.audio.duration > 0) {
+          player.audio.currentTime = Math.min(target, Math.max(0, player.audio.duration - 0.15));
+        } else player.audio.currentTime = target;
+        player.playMode = PLAY_MODE_MAP[snapshot.playMode] ? snapshot.playMode : player.playMode;
+        if (snapshot.playing) {
+          try {
+            const result = player.audio.play();
+            if (result && typeof result.then === 'function') await result;
+            player.wantedPlaying = true;
+            player.playing = true;
+            updatePlayerUI();
+            return { autoplayBlocked: false };
+          } catch (error) {
+            player.wantedPlaying = true;
+            player.playing = false;
+            updatePlayerUI();
+            return { autoplayBlocked: error && error.name === 'NotAllowedError' };
+          }
+        }
+        player.audio.pause();
+        player.wantedPlaying = false;
+        player.playing = false;
+        updatePlayerUI();
+        return { autoplayBlocked: false };
+      },
+      async unlockPlayback() {
+        if (!player.current) return { autoplayBlocked: false };
+        try {
+          const result = player.audio.play();
+          if (result && typeof result.then === 'function') await result;
+          player.wantedPlaying = true;
+          player.playing = true;
+          updatePlayerUI();
+          return { autoplayBlocked: false };
+        } catch (error) {
+          return { autoplayBlocked: error && error.name === 'NotAllowedError' };
+        }
+      },
+    },
+  });
+}
+
 async function init() {
   bindDom();
   bindEvents();
@@ -4423,6 +4599,7 @@ async function init() {
   await audioIndexPromise;
   if (pruneUnplayablePlaylist() > 0) renderPlaylist(true);
   restoreCrossPageHandoff();
+  initListenTogether();
   try {
     const params = new URLSearchParams(window.location.search);
     const q = params.get('q') || params.get('search');

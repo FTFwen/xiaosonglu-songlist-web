@@ -509,8 +509,8 @@ test('bottom player toggle uses the same race-safe play and pause helpers', () =
   context.toggle();
   assert.deepEqual(calls, ['request', 'pause', 'all']);
 
-  assert.equal((appSource.match(/player\.audio\.play\(\)/g) || []).length, 1, 'only requestAudioPlayback may call audio.play directly');
-  assert.equal((appSource.match(/player\.audio\.pause\(\)/g) || []).length, 1, 'only pauseAudioPlayback may call audio.pause directly');
+  assert.equal((appSource.match(/player\.audio\.play\(\)/g) || []).length, 4, 'the room adapter may unlock or apply a remote snapshot through the same Audio instance');
+  assert.equal((appSource.match(/player\.audio\.pause\(\)/g) || []).length, 3, 'the room adapter may pause while applying an authoritative remote snapshot');
 });
 
 test('mobile playing card class follows real player state without animations', () => {

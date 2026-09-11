@@ -388,6 +388,8 @@ $overlayRelativePaths = @(
     'js\app.js',
     'js\cross-page-player.js',
     'js\shared.js',
+    'js\listen-together.js',
+    'css\listen-together.css',
     'workshop\js\app.js',
     'workshop\js\shared.js',
     'workshop\js\start.js',
@@ -449,7 +451,7 @@ if ($LASTEXITCODE -ne 0) { throw 'Final staged workshop mirror check failed; ref
 # Defense in depth: downloaded videos and transient review files can never enter the stage.
 $blockedDirectories = @(
     'assets\video', 'assets\videos', 'data\xiaosonglu\videos',
-    'scripts', 'xsl-web-tools', 'tools'
+    'scripts', 'xsl-web-tools', 'tools', 'workers'
 )
 foreach ($relative in $blockedDirectories) {
     $candidate = Join-Path $stagePath $relative
@@ -506,6 +508,8 @@ foreach ($relative in @(
     'js/app.js',
     'js/cross-page-player.js',
     'js/shared.js',
+    'js/listen-together.js',
+    'css/listen-together.css',
     'js/data.js',
     'workshop/index.html',
     'workshop/js/app.js',
