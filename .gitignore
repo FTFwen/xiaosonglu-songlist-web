@@ -36,3 +36,11 @@ assets/video/**/*.ts
 assets/videos/**/*.ts
 data/xiaosonglu/videos/**/*.ts
 data/xiaosonglu/_video_*.ts
+
+# Local binary tools and caches (never commit)
+tools/ffmpeg/
+tools/yt-dlp/
+__pycache__/
+
+# Large local audio archive (690MB, exceeds GitHub 100MB limit)
+assets/audio.zip

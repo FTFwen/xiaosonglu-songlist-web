@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "source": "https://viridis.love/data/xiaosonglu/",
-  "capturedAt": "2026-09-09T14:09:31Z",
+  "capturedAt": "2026-09-11T04:30:24Z",
   "dedupePolicy": {
     "transport": "Use ETag/Last-Modified conditional GET; HTTP 304 skips payload download.",
     "content": "Compare canonical JSON SHA-256 before writing; formatting and line-ending changes do not trigger rewrites.",
@@ -11,62 +11,62 @@
   "files": {
     "song_catalog.json": {
       "url": "https://viridis.love/data/xiaosonglu/song_catalog.json",
-      "etag": "\"606c30769bab0b3f45254979a233970c\"",
+      "etag": "\"140076e4af6ead10bcb0167663079388\"",
       "lastModified": "",
-      "contentSha256": "71cffc464b28911fd83a2544eb08d9f62c9e3ea43f0aa08c14e53afc0921a337",
-      "remoteByteSha256": "57b38502e9ab41877f380c72dce6ca7f2fac5bf14fd931aa8ddd375a472bd393",
-      "bytes": 152226,
-      "versionTimestamp": "2026-09-09T00:25:18.027Z",
-      "recordCount": 167
+      "contentSha256": "02c5a89a3c77dc4ab15469b1e41f3da3c775071686802236043b566fb8523dd9",
+      "remoteByteSha256": "a3df3375e5cde3243ab9a944d0a5e123af5dfc558c962d9979c68f425eb88383",
+      "bytes": 153306,
+      "versionTimestamp": "2026-09-09T17:16:46.949Z",
+      "recordCount": 168
     },
     "history_index.json": {
       "url": "https://viridis.love/data/xiaosonglu/history_index.json",
-      "etag": "\"a602df76e118e6e4827f1788eeb39e64\"",
+      "etag": "\"955731dfedb5b7de57fcc28576f7bf96\"",
       "lastModified": "",
-      "contentSha256": "90370617af42f667e3d7a9a5adeedd51ff0f0dff781b55c4d46c225dbaeca300",
-      "remoteByteSha256": "c8b34b3d41524a50e8fb2b54ef38cff63048ca37ea6e0c6a84fc4daf5d7caf54",
-      "bytes": 127347,
-      "versionTimestamp": "2026-09-09T00:25:18.027Z",
-      "recordCount": 177
+      "contentSha256": "e85f5bd010ca95e36f9bdbf5dd9701d4efd3824eea2f9e40f12143edae03122a",
+      "remoteByteSha256": "44e05519fcc661eec404326bfaebee7d0403e62f77b7a13519577b6eda83e475",
+      "bytes": 128202,
+      "versionTimestamp": "2026-09-09T17:16:46.949Z",
+      "recordCount": 178
     },
     "song_details.json": {
       "url": "https://viridis.love/data/xiaosonglu/song_details.json",
-      "etag": "\"1efa2faa954f8b782fb6f124185c318c\"",
+      "etag": "\"e004bdb05554a9340bc1ed3e4080724e\"",
       "lastModified": "",
-      "contentSha256": "6b1340e2f9c8b8ac2132a6d7fc02056ddd23b7f6a2452d2be13927617a97580b",
-      "remoteByteSha256": "e4ca46353229ebb617e0a133f18413b201fb9af71dd1eaf95387f31907f8ecb4",
-      "bytes": 220669,
-      "versionTimestamp": "2026-09-09T00:25:18.027Z"
+      "contentSha256": "d55cdb7481590bc6d773d192573cd0b22f1d834f99bffdcd8c90f172ee84d236",
+      "remoteByteSha256": "cf87bdaa85b32d6c479bdb07e6dccf4eaa1301b84021f9ca444b7a0d704db8ea",
+      "bytes": 222231,
+      "versionTimestamp": "2026-09-09T17:16:46.949Z"
     },
     "replay_song_segments.json": {
       "url": "https://viridis.love/data/xiaosonglu/replay_song_segments.json",
-      "etag": "\"a862b220039f36f90ffbe48bac777597\"",
+      "etag": "\"21b3837aac85058ca10123d2020466b1\"",
       "lastModified": "",
-      "contentSha256": "e4580f8df71200f87bc7514a3ce920f528a7a457acd3fef7218fba9aa6fc96b8",
-      "remoteByteSha256": "d4e2e9a9e6d039e9392f131c4c74cb697ad7916617383cf4ae85ddfe959c6363",
-      "bytes": 302368,
-      "versionTimestamp": "2026-09-09T00:25:18.027Z",
-      "recordCount": 177
+      "contentSha256": "22a8b928a60502d8703620238780a081b231814016118c4adfb9a6c4900b1b3a",
+      "remoteByteSha256": "a2583f605912ecb9d97f7844d6fb84287ef25d4b25b93dbf6eb12f82f4e3a4ac",
+      "bytes": 303953,
+      "versionTimestamp": "2026-09-09T17:16:46.949Z",
+      "recordCount": 178
     },
     "song_cut_index.json": {
       "url": "https://viridis.love/data/xiaosonglu/song_cut_index.json",
-      "etag": "\"45e7277309137edaa04a087019e920ab\"",
+      "etag": "\"deff5c848d19d8a9208f9b796a75bb34\"",
       "lastModified": "",
-      "contentSha256": "d5bd22e9f767527a39d9d41d28c0e7c672c8ca36a35907885faaf9f5d5c1427c",
-      "remoteByteSha256": "91f3ce2624bc4487cebea8cc9ba0502e7ee5f56fc8bf509b6d6e564f3046e326",
-      "bytes": 202594,
-      "versionTimestamp": "2026-09-09T00:25:18.027Z",
-      "recordCount": 211
+      "contentSha256": "afa23ac797b1eae87b2b5884a67b60fbedddaa6853b581283d4bdd22fb0ab7f7",
+      "remoteByteSha256": "d4a3dcaef133f95d63818845991ddbee4e2d893db168474f6958e34097edc0cb",
+      "bytes": 204138,
+      "versionTimestamp": "2026-09-09T17:16:46.949Z",
+      "recordCount": 212
     },
     "song_cut_info.json": {
       "url": "https://viridis.love/data/xiaosonglu/song_cut_info.json",
-      "etag": "\"576698a83c5e7d155fc58e58ca144a6e\"",
+      "etag": "\"3060fc49124eb773dc64f73bfb6a5d42\"",
       "lastModified": "",
-      "contentSha256": "9fa370f8bc18b8e8b16112fa7dc0e0fea316c57e62843d2eefe346fb8bacd9be",
-      "remoteByteSha256": "1e7bfe9c7333ab880c4e899ad9042487b42a902296a7b5c4f59ea5ab0b5f00b5",
-      "bytes": 29642,
-      "versionTimestamp": "2026-09-09T00:25:18.027Z",
-      "recordCount": 167
+      "contentSha256": "61828e17e8e0daf16350d52219d8c6673763de51ae8cf95dd27276c16b9f9492",
+      "remoteByteSha256": "d0f4fc020d17ad716ea5a5799bd13100f81323ebca70e974ab118614045411f5",
+      "bytes": 30282,
+      "versionTimestamp": "2026-09-09T17:16:46.949Z",
+      "recordCount": 168
     },
     "song_metadata_overrides.json": {
       "url": "https://viridis.love/data/xiaosonglu/song_metadata_overrides.json",
@@ -78,13 +78,13 @@
     },
     "audio_index.json": {
       "url": "https://viridis.love/data/xiaosonglu/audio_index.json",
-      "etag": "\"72008816b98e57f9271dfd978c1432ae\"",
+      "etag": "\"8b432ab22ee10b9e2047de582c73d92a\"",
       "lastModified": "",
-      "contentSha256": "51d90209f2a6badc0b1feb565e617b9ec35c045c2560b49a2566e9777e2def94",
-      "remoteByteSha256": "d7ccbafd965c0cbe4b6d9a8fd7409c95f6d76af8df41fbe2851d487c14626f51",
-      "bytes": 8520,
-      "versionTimestamp": "2026-09-09T02:47:42.376Z",
-      "recordCount": 165
+      "contentSha256": "a24ff9b4014de3a73b030996f398ebe06de3a70372e0386c43bd7fad2963d7ae",
+      "remoteByteSha256": "d1c78d37be6f8e3a71e8a74981e4c82ad8c1b4a21ddbba47047b2bd61b84c365",
+      "bytes": 11139,
+      "versionTimestamp": "2026-09-09T18:12:45.672Z",
+      "recordCount": 166
     }
   }
 }
