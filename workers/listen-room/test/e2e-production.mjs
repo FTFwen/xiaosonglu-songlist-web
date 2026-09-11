@@ -63,6 +63,13 @@ const main = async () => {
   if (hostReady.role !== 'host') fail('host auth', hostReady);
   console.log('PASS host authenticated via hello');
 
+  // 修复后的客户端时序：认证完成（ready）之后才发 ping / state，服务端应正常响应。
+  host.socket.send(JSON.stringify({ type: 'ping', clientSentAtMs: Date.now() }));
+  await new Promise(resolve => setTimeout(resolve, 180));
+  const hostPong = await host.next('pong');
+  if (!Number.isFinite(Number(hostPong.serverNowMs))) fail('host ping after ready', hostPong);
+  console.log('PASS host ping accepted after authentication');
+
   const state = {
     track: { songId: 1, rowKey: '端到端测试歌', name: '端到端测试歌', artist: '', assetVersion: 'abcdef123456' },
     playing: true,

@@ -31,6 +31,7 @@
     heartbeatTimer: null,
     pingTimer: null,
     publishTimer: null,
+    hostPublishTimer: null,
     lastPublishedSignature: '',
     initialized: false,
     ui: {},
@@ -70,6 +71,16 @@
       state.ui.launch.title = active ? `一起听歌 · ${state.roomCode}` : '一起听歌';
       state.ui.launch.setAttribute('aria-label', state.ui.launch.title);
     }
+    if (state.ui.fab) {
+      state.ui.fab.classList.toggle('active', active);
+      state.ui.fab.title = active ? `一起听歌 · ${state.roomCode}` : '一起听歌';
+      state.ui.fab.setAttribute('aria-label', state.ui.fab.title);
+    }
+    if (state.ui.fabDesktop) {
+      state.ui.fabDesktop.classList.toggle('active', active);
+      state.ui.fabDesktop.title = active ? `一起听歌 · ${state.roomCode}` : '一起听歌';
+      state.ui.fabDesktop.setAttribute('aria-label', state.ui.fabDesktop.title);
+    }
     if (!state.ui.roomView) return;
     state.ui.lobbyView.hidden = active;
     state.ui.roomView.hidden = !active;
@@ -96,11 +107,34 @@
     launch.className = 'player-btn listen-together-launch';
     launch.title = '一起听歌';
     launch.setAttribute('aria-label', '一起听歌');
-    launch.textContent = '一起';
+    launch.innerHTML = '<svg class="icon" aria-hidden="true"><use href="#icon-phone"></use></svg>';
     const playerBar = document.getElementById('playerBar');
     const timerWrap = document.getElementById('playerTimerWrap');
     if (playerBar) playerBar.insertBefore(launch, timerWrap || null);
     else document.body.appendChild(launch);
+
+    // 手机端：播放栏是固定 6 列网格，塞不进新按钮；入口改为右下角悬浮按钮列。
+    const fab = document.createElement('button');
+    fab.type = 'button';
+    fab.id = 'listenTogetherFab';
+    fab.className = 'mobile-fab listen-fab';
+    fab.title = '一起听歌';
+    fab.setAttribute('aria-label', '一起听歌');
+    fab.innerHTML = '<svg class="icon" aria-hidden="true"><use href="#icon-phone"></use></svg>';
+    const fabs = document.getElementById('mobileFabs');
+    if (fabs) fabs.appendChild(fab);
+    else document.body.appendChild(fab);
+
+    // 桌面端还没播放时播放栏是隐藏的，补一个右下角悬浮入口；
+    // 播放开始（body.has-player）后自动隐藏，让位给播放栏里的图标按钮。
+    const fabDesktop = document.createElement('button');
+    fabDesktop.type = 'button';
+    fabDesktop.id = 'listenTogetherFabDesktop';
+    fabDesktop.className = 'listen-fab-desktop';
+    fabDesktop.title = '一起听歌';
+    fabDesktop.setAttribute('aria-label', '一起听歌');
+    fabDesktop.innerHTML = '<svg class="icon" aria-hidden="true"><use href="#icon-phone"></use></svg>';
+    document.body.appendChild(fabDesktop);
 
     const overlay = document.createElement('div');
     overlay.id = 'listenTogetherOverlay';
@@ -138,6 +172,8 @@
     document.body.appendChild(overlay);
     state.ui = {
       launch,
+      fab,
+      fabDesktop,
       overlay,
       close: overlay.querySelector('.listen-together-close'),
       lobbyView: overlay.querySelector('.listen-together-lobby'),
@@ -155,6 +191,8 @@
       closeRoom: overlay.querySelector('.listen-close-room'),
     };
     launch.addEventListener('click', openPanel);
+    fab.addEventListener('click', openPanel);
+    fabDesktop.addEventListener('click', openPanel);
     state.ui.close.addEventListener('click', closePanel);
     overlay.addEventListener('pointerdown', event => { if (event.target === overlay) closePanel(); });
     state.ui.create.addEventListener('click', createRoom);
@@ -197,7 +235,8 @@
     clearInterval(state.heartbeatTimer);
     clearInterval(state.pingTimer);
     clearTimeout(state.publishTimer);
-    state.reconnectTimer = state.heartbeatTimer = state.pingTimer = state.publishTimer = null;
+    clearTimeout(state.hostPublishTimer);
+    state.reconnectTimer = state.heartbeatTimer = state.pingTimer = state.publishTimer = state.hostPublishTimer = null;
   }
 
   async function createRoom() {
@@ -253,9 +292,12 @@
       state.connecting = false;
       state.connected = true;
       state.reconnectAttempt = 0;
-      startTimers();
-      sendPing();
-      if (state.role === 'host') publishNow('connected', true);
+      // 房主的第一条消息必须是 hello 认证；提前发 ping 会被服务端以
+      // 「缺少房主凭证」断开（4003）并陷入重连循环，所以房主等 ready 再发消息。
+      if (state.role !== 'host') {
+        startTimers();
+        sendPing();
+      }
       render();
     });
     socket.addEventListener('message', event => { if (state.socket === socket) handleMessage(event.data); });
@@ -320,6 +362,15 @@
     if (message.type === 'ready') {
       state.role = message.role === 'host' ? 'host' : 'member';
       state.hostConnected = state.role === 'host';
+      if (message.role === 'host') {
+        startTimers();
+        sendPing();
+        // 稍等一下再广播状态，避开服务端 100ms 的消息频率限制。
+        state.hostPublishTimer = setTimeout(() => {
+          state.hostPublishTimer = null;
+          if (state.connected && state.role === 'host') publishNow('connected', true);
+        }, 180);
+      }
       render();
       return;
     }
