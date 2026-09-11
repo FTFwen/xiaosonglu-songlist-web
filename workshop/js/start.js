@@ -1501,6 +1501,86 @@
     }
   }
 
+  // ===== 直播周表与日程（data/weekly/，由 tools/weekly/fetch-weekly.mjs 定期同步 B 站置顶动态） =====
+  const weeklyState = { events: [], byDate: new Map(), loaded: false };
+
+  function liveEventsForDate(date) {
+    if (!weeklyState.loaded) return [];
+    const key = `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
+    return weeklyState.byDate.get(key) || [];
+  }
+
+  async function loadWeeklyData() {
+    if (weeklyState.loaded) return;
+    try {
+      const res = await fetch('data/weekly/calendar.json', { cache: 'no-cache' });
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      const data = await res.json();
+      const events = Array.isArray(data.events) ? data.events : [];
+      weeklyState.events = events;
+      weeklyState.byDate = new Map();
+      for (const ev of events) {
+        if (!ev || !ev.date) continue;
+        const key = String(ev.date);
+        if (!weeklyState.byDate.has(key)) weeklyState.byDate.set(key, []);
+        weeklyState.byDate.get(key).push({ time: String(ev.time || ''), title: String(ev.title || ''), note: String(ev.note || '') });
+      }
+      weeklyState.loaded = true;
+    } catch (e) {
+      // 数据文件缺失或网络问题都不阻塞日历本身
+      weeklyState.loaded = true;
+    }
+  }
+
+  function initWeeklySchedule() {
+    const wrap = document.getElementById('weeklyImages');
+    if (!wrap) return;
+    fetch('data/weekly/manifest.json', { cache: 'no-cache' })
+      .then(res => (res.ok ? res.json() : Promise.reject(new Error(`HTTP ${res.status}`))))
+      .then(manifest => {
+        const images = Array.isArray(manifest.images) ? manifest.images : [];
+        if (!images.length) {
+          wrap.innerHTML = '<span class="weekly-updated-at">置顶动态里还没有周表图</span>';
+          return;
+        }
+        wrap.innerHTML = '';
+        for (const img of images) {
+          const el = document.createElement('img');
+          el.src = `assets/weekly/${img.file}`;
+          el.alt = '小松绿本周周表';
+          el.loading = 'lazy';
+          el.addEventListener('click', () => openWeeklyLightbox(el.src));
+          wrap.appendChild(el);
+        }
+        const updated = document.getElementById('weeklyUpdatedAt');
+        if (updated && manifest.updatedAt) {
+          const d = new Date(manifest.updatedAt);
+          if (!Number.isNaN(d.getTime())) updated.textContent = `更新于 ${d.getMonth() + 1}月${d.getDate()}日`;
+        }
+        const link = document.getElementById('weeklySourceLink');
+        if (link && manifest.dynamicUrl) {
+          link.href = manifest.dynamicUrl;
+          link.style.display = '';
+        }
+      })
+      .catch(() => {
+        wrap.innerHTML = '<span class="weekly-updated-at">周表数据暂不可用</span>';
+      });
+  }
+
+  function openWeeklyLightbox(src) {
+    let box = document.querySelector('.weekly-lightbox');
+    if (!box) {
+      box = document.createElement('div');
+      box.className = 'weekly-lightbox';
+      box.innerHTML = '<img alt="小松绿本周周表（放大）">';
+      box.addEventListener('click', () => box.classList.remove('show'));
+      document.body.appendChild(box);
+    }
+    box.querySelector('img').src = src;
+    box.classList.add('show');
+  }
+
   function updateSelectedDayInfo(date) {
     const infoSolar = document.getElementById('calInfoSolar');
     const infoLunar = document.getElementById('calInfoLunar');
@@ -1543,6 +1623,18 @@
       } else {
         infoTermTag.style.display = 'none';
       }
+    }
+
+    // 当日直播安排（周表数据）
+    const eventsWrap = document.getElementById('calDayEvents');
+    if (eventsWrap) {
+      const events = liveEventsForDate(date);
+      eventsWrap.innerHTML = events.map(ev => `
+        <div class="cal-day-event">
+          <span class="cal-day-event-time">${ev.time ? `开播 ${ev.time}` : '待定'}</span>
+          <span class="cal-day-event-title">${ev.title}${ev.note ? ` <span style="color:var(--text-muted);font-weight:500;">· ${ev.note}</span>` : ''}</span>
+        </div>
+      `).join('');
     }
   }
 
@@ -1621,7 +1713,7 @@
       }
 
       const cell = document.createElement('div');
-      cell.className = `cal-cell ${isToday ? 'is-today' : ''} ${isSelected ? 'is-selected' : ''} ${badgeClass}`;
+      cell.className = `cal-cell ${isToday ? 'is-today' : ''} ${isSelected ? 'is-selected' : ''} ${badgeClass} ${liveEventsForDate(cellDate).length ? 'has-live-event' : ''}`;
       cell.innerHTML = `
         <span class="cal-cell-day">${d}</span>
         <span class="cal-cell-sub">${subText}</span>
@@ -1670,6 +1762,9 @@
 
   function initCalendar() {
     renderCalendarGrid();
+    // 周表与直播安排数据异步加载，到达后重绘（失败静默：数据文件可能尚未建立）
+    loadWeeklyData().then(() => renderCalendarGrid()).catch(() => {});
+    initWeeklySchedule();
 
     const prevBtn = document.getElementById('calPrevBtn');
     const nextBtn = document.getElementById('calNextBtn');

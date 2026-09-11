@@ -1128,6 +1128,110 @@
       font-weight: 800;
     }
 
+    /* 直播安排标记：角标绿点 */
+    .cal-cell.has-live-event::after {
+      content: '';
+      position: absolute;
+      top: 4px;
+      right: 4px;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--primary);
+      box-shadow: 0 0 5px var(--primary-glow, rgba(142, 176, 86, 0.6));
+    }
+    .cal-cell.is-today.has-live-event::after {
+      background: #ffffff;
+    }
+
+    /* 选中日期的当日直播安排条目 */
+    .cal-day-events {
+      margin-top: 8px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .cal-day-event {
+      display: flex;
+      align-items: baseline;
+      gap: 8px;
+      padding: 7px 12px;
+      background: linear-gradient(135deg, rgba(142, 176, 86, 0.16), rgba(142, 176, 86, 0.05));
+      border: 1px solid rgba(111, 125, 61, 0.28);
+      border-radius: 8px;
+      font-size: 12.5px;
+    }
+    .cal-day-event-time {
+      font-weight: 800;
+      color: var(--primary-dark);
+      white-space: nowrap;
+    }
+    .cal-day-event-title {
+      color: var(--text);
+      font-weight: 600;
+    }
+
+    /* 本周周表（B站置顶动态图片） */
+    .weekly-schedule-panel {
+      margin-top: 14px;
+    }
+    .weekly-schedule-head {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 13px;
+      font-weight: 800;
+      color: var(--text);
+      margin-bottom: 8px;
+    }
+    .weekly-updated-at {
+      font-size: 10.5px;
+      color: var(--text-muted);
+      font-weight: 600;
+      margin-left: auto;
+    }
+    .weekly-source-link {
+      font-size: 11px;
+      color: var(--primary-dark);
+      text-decoration: none;
+      font-weight: 700;
+    }
+    .weekly-schedule-scroll {
+      display: flex;
+      gap: 10px;
+      overflow-x: auto;
+      padding-bottom: 6px;
+      scrollbar-width: thin;
+    }
+    .weekly-schedule-scroll img {
+      height: 300px;
+      width: auto;
+      border-radius: 10px;
+      cursor: zoom-in;
+      flex-shrink: 0;
+      border: 1px solid rgba(111, 125, 61, 0.22);
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+      background: #fff;
+    }
+    .weekly-lightbox {
+      position: fixed;
+      inset: 0;
+      background: rgba(30, 36, 18, 0.88);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+      cursor: zoom-out;
+    }
+    .weekly-lightbox.show {
+      display: flex;
+    }
+    .weekly-lightbox img {
+      max-width: 94vw;
+      max-height: 94vh;
+      border-radius: 12px;
+    }
+
     /* 选中日期详细信息 */
     .cal-selected-info {
       display: flex;
@@ -1979,6 +2083,23 @@
               <span class="cal-info-tag" id="calInfoTag" style="display: none;"></span>
               <span class="cal-info-term-tag" id="calInfoTermTag" style="display: none;"></span>
             </div>
+
+            <!-- 当日直播安排（data/weekly/calendar.json） -->
+            <div class="cal-day-events" id="calDayEvents"></div>
+          </div>
+
+          <!-- 本周周表：B站置顶动态图片（tools/weekly/fetch-weekly.mjs 定期同步） -->
+          <div class="cal-weather-divider"></div>
+          <div class="weekly-schedule-panel" id="weeklySchedulePanel">
+            <div class="weekly-schedule-head">
+              <span>📋</span>
+              <span>本周周表</span>
+              <a class="weekly-source-link" id="weeklySourceLink" href="#" target="_blank" rel="noopener" style="display: none;">B站动态 →</a>
+              <span class="weekly-updated-at" id="weeklyUpdatedAt"></span>
+            </div>
+            <div class="weekly-schedule-scroll" id="weeklyImages">
+              <span class="weekly-updated-at" id="weeklyLoadingHint">周表加载中…</span>
+            </div>
           </div>
         </section>
 
@@ -2176,7 +2297,7 @@
   <!-- 引入全站数据源与核心脚本 -->
   <script src="https://viridis.love/js/live-status.js?v=1" defer></script>
   <script src="js/data.js?v=31" defer></script>
-  <script src="js/start.js?v=17" defer></script>
+  <script src="js/start.js?v=18" defer></script>
   <script src="js/motion.js?v=18" defer></script>
   <script src="js/weather-ambience.js?v=4" defer></script>
 </body>

@@ -647,7 +647,7 @@ assert.match(workshopSource, /\^\[0-9a-f\]\{12,64\}\$\/i\.test\(suppliedVersion\
   assert.match(workshopSource, /audio_index\.json\?v=\$\{AUDIO_ASSET_VERSION\}/);
   assert.match(workshopSource, /url\.searchParams\.set\('v', AUDIO_ASSET_VERSION\)/);
   assert.equal((workshopSource.match(/playerState\.audio\.src = audioAbs\(/g) || []).length, 4);
-  assert.match(workshopHtmlSource, /js\/start\.js\?v=17/);
+  assert.match(workshopHtmlSource, /js\/start\.js\?v=18/);
 });
 
 test('mobile media-query cascade gives only the playing card a glass state and clears sticky hover', () => {
@@ -670,5 +670,5 @@ test('mobile media-query cascade gives only the playing card a glass state and c
   assert.match(htmlSource, /js\/data\.js\?v=30/);
   assert.match(htmlSource, /js\/app\.js\?v=97/);
   assert.match(workshopHtmlSource, /js\/data\.js\?v=31/);
-  assert.match(workshopHtmlSource, /js\/start\.js\?v=17/);
+  assert.match(workshopHtmlSource, /js\/start\.js\?v=18/);
 });

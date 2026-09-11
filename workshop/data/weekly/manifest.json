@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-09-11T07:25:27.008Z",
+  "fingerprint": "08622e6bd398d2ab",
+  "title": "9.8置顶更新（休息日随机掉落电台）",
+  "pubTime": "8月17日",
+  "dynamicId": "1237406371777871896",
+  "dynamicUrl": "//www.bilibili.com/opus/1237406371777871896",
+  "images": [
+    {
+      "file": "current-0.jpg",
+      "width": 1650,
+      "height": 2640,
+      "bytes": 209307,
+      "sourceUrl": "http://i0.hdslb.com/bfs/new_dyn/46452d209033030eef57c16ec4f3dd221891335475.png"
+    },
+    {
+      "file": "current-1.jpg",
+      "width": 1650,
+      "height": 2640,
+      "bytes": 209714,
+      "sourceUrl": "http://i0.hdslb.com/bfs/new_dyn/199a8734ac276bffe8fb17300a8a10591891335475.png"
+    },
+    {
+      "file": "current-2.jpg",
+      "width": 1650,
+      "height": 2640,
+      "bytes": 208593,
+      "sourceUrl": "http://i0.hdslb.com/bfs/new_dyn/cc625993c3250099017863d5074c88d41891335475.png"
+    }
+  ]
+}
