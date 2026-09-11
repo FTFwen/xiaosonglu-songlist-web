@@ -4612,6 +4612,13 @@ function initListenTogether() {
         const sameTrack = current && current.songId === snapshot.track.songId && current.rowKey === snapshot.track.rowKey &&
           current.assetVersion === snapshot.track.assetVersion;
         if (!sameTrack) return loadListenRoomTrack(snapshot.track, target, !!snapshot.playing, snapshot.playMode);
+        // 已经对齐（播放状态一致且位置偏差 < 2 秒）时不要 seek，
+        // 避免成员的 resync 自动恢复把顺畅中的播放打断。
+        const playingNow = !player.audio.paused && !player.audio.ended;
+        if (playingNow === !!snapshot.playing && Math.abs((player.audio.currentTime || 0) - target) < 2) {
+          player.playMode = PLAY_MODE_MAP[snapshot.playMode] ? snapshot.playMode : player.playMode;
+          return { autoplayBlocked: false };
+        }
         if (Number.isFinite(player.audio.duration) && player.audio.duration > 0) {
           player.audio.currentTime = Math.min(target, Math.max(0, player.audio.duration - 0.15));
         } else player.audio.currentTime = target;

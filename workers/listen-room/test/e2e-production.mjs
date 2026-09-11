@@ -92,6 +92,13 @@ const main = async () => {
   if (beat.state.revision !== 2 || beat.state.positionSeconds !== 30) fail('heartbeat', beat);
   console.log(`PASS host heartbeat broadcast (revision ${beat.state.revision})`);
 
+  // 成员主动 resync：服务器应单独回一份带 force 标记的当前快照（用于同步失败后的自动恢复）
+  await new Promise(resolve => setTimeout(resolve, 180));
+  member.socket.send(JSON.stringify({ type: 'resync' }));
+  const resynced = await member.next('snapshot');
+  if (resynced.force !== true || resynced.state.revision !== 2 || resynced.state.positionSeconds !== 30) fail('member resync', resynced);
+  console.log(`PASS member resync returns forced snapshot (revision ${resynced.state.revision})`);
+
   host.socket.send(JSON.stringify({ type: 'close' }));
   const closed = await member.next('room_closed');
   if (closed.reason !== 'host_closed') fail('close room', closed);

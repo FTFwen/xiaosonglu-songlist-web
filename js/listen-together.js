@@ -32,6 +32,8 @@
     pingTimer: null,
     publishTimer: null,
     hostPublishTimer: null,
+    resyncTimer: null,
+    resyncAttempts: 0,
     lastPublishedSignature: '',
     initialized: false,
     ui: {},
@@ -236,7 +238,27 @@
     clearInterval(state.pingTimer);
     clearTimeout(state.publishTimer);
     clearTimeout(state.hostPublishTimer);
-    state.reconnectTimer = state.heartbeatTimer = state.pingTimer = state.publishTimer = state.hostPublishTimer = null;
+    clearTimeout(state.resyncTimer);
+    state.reconnectTimer = state.heartbeatTimer = state.pingTimer = state.publishTimer = state.hostPublishTimer = state.resyncTimer = null;
+  }
+
+  // 成员同步失败后主动向服务器请求最新播放状态，指数退避（2s → 30s 封顶）
+  function scheduleResync() {
+    if (state.role !== 'member' || state.resyncTimer) return;
+    state.resyncAttempts = Math.min((state.resyncAttempts || 0) + 1, 6);
+    const delay = Math.min(30000, 2000 * (2 ** (state.resyncAttempts - 1)));
+    state.resyncTimer = setTimeout(() => {
+      state.resyncTimer = null;
+      if (state.role !== 'member' || !state.connected || state.applyingRemote) return;
+      // 发送失败说明连接已断，交给重连路径（重连成功时服务器会主动下发快照）
+      send({ type: 'resync' });
+    }, delay);
+  }
+
+  function clearResync() {
+    clearTimeout(state.resyncTimer);
+    state.resyncTimer = null;
+    state.resyncAttempts = 0;
   }
 
   async function createRoom() {
@@ -391,7 +413,7 @@
       return;
     }
     if (message.type === 'snapshot' && message.state) {
-      await applySnapshot(message.state);
+      await applySnapshot(message.state, !!message.force);
       return;
     }
     if (message.type === 'room_closed') {
@@ -406,9 +428,10 @@
     }
   }
 
-  async function applySnapshot(snapshot) {
+  async function applySnapshot(snapshot, force = false) {
     const revision = Number(snapshot.revision);
-    if (!Number.isSafeInteger(revision) || revision <= state.revision) return;
+    // force 快照来自成员的 resync 请求：revision 可能已被消费过，仍需重新应用
+    if (!Number.isSafeInteger(revision) || (!force && revision <= state.revision)) return;
     state.revision = revision;
     if (state.role === 'host') return;
     const serverNow = Date.now() + state.clockOffsetMs;
@@ -421,9 +444,11 @@
     try {
       const result = await state.adapter.applyRemoteSnapshot({ ...snapshot, targetPositionSeconds });
       state.autoplayBlocked = !!(result && result.autoplayBlocked);
+      clearResync();
     } catch (error) {
       state.autoplayBlocked = false;
-      setStatus(`暂时没同步上：${friendlyError(error)}`, 'error');
+      setStatus(`暂时没同步上，正在自动恢复…（${friendlyError(error)}）`, 'error');
+      scheduleResync();
     } finally {
       state.applyingRemote = false;
       render();
@@ -489,6 +514,7 @@
     state.hostConnected = false;
     state.autoplayBlocked = false;
     state.lastPublishedSignature = '';
+    state.resyncAttempts = 0;
     persistSession();
     render();
   }

@@ -243,6 +243,18 @@ export class ListenRoom {
       try { socket.close(1000, 'left room'); } catch (_) { /* ignore */ }
       return;
     }
+    if (message.type === 'resync') {
+      // 成员同步失败（如加载音频出错）后的主动恢复请求：单独下发当前快照。
+      // force 标记让客户端绕过已消费的 revision 重新应用同一份状态。
+      const room = await this.ctx.storage.get(ROOM_KEY);
+      if (!room || this.expired(room, now)) {
+        safeSend(socket, { type: 'room_closed', reason: 'expired' });
+        try { socket.close(4004, 'room expired'); } catch (_) { /* ignore */ }
+        return;
+      }
+      safeSend(socket, { type: 'snapshot', state: publicSnapshot(room, now), force: true });
+      return;
+    }
     if (attachment.role !== 'host' || !['state', 'heartbeat', 'close'].includes(message.type)) {
       safeSend(socket, { type: 'error', code: 'host_only', message: '只有房主可以控制播放。' });
       return;
