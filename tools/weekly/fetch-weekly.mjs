@@ -89,9 +89,9 @@ async function download(url, dest) {
 const main = async () => {
   await ensureCookie();
   const top = await fetchTopDynamic();
-  // 周表是竖版长图（宽 < 高）；横版多为横幅/海报
-  const weekly = top.pics.filter(p => p.width && p.height && p.height > p.width);
-  if (!weekly.length) { console.error('置顶动态中没有竖版图片，周表缺失'); process.exit(2); }
+  // 周表固定是动态图片的最后一张（前面的图是其他内容，不要）
+  if (!top.pics.length) { console.error('置顶动态中没有图片'); process.exit(2); }
+  const weekly = [top.pics[top.pics.length - 1]];
   const fingerprint = crypto.createHash('sha256').update(weekly.map(p => p.url).join('|')).digest('hex').slice(0, 16);
 
   const prev = readJson(MANIFEST);
@@ -120,7 +120,7 @@ const main = async () => {
 
   const images = [];
   for (const [i, p] of weekly.entries()) {
-    const file = `current-${i}.jpg`;
+    const file = i === 0 ? 'current.jpg' : `current-${i}.jpg`;
     const bytes = await download(p.url, path.join(ASSET_DIR, file));
     images.push({ file, width: p.width, height: p.height, bytes, sourceUrl: p.url });
     console.log(`  下载 ${file} ${p.width}x${p.height} ${bytes}B`);
