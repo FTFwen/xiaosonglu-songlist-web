@@ -562,7 +562,12 @@ function loadPinyinPro() {
   pinyinLoadPromise = new Promise((resolve) => {
     const s = document.createElement('script');
     s.src = 'js/pinyin-pro.js';
-    s.onload = () => resolve();
+    s.onload = () => {
+      resolve();
+      // 库就绪前若已经搜过，那些歌曲当时算不出拼音（不会被缓存，见 getSongPinyin），
+      // 这里补一次重算，否则用户要再动一下输入框才能出结果。
+      if ((dom.searchInput.value || '').trim()) applySongFilters();
+    };
     s.onerror = () => resolve();
     document.head.appendChild(s);
   });
@@ -571,18 +576,26 @@ function loadPinyinPro() {
 function getSongPinyin(song) {
   const key = song.row_key || song.song_id;
   if (pinyinCache.has(key)) return pinyinCache.get(key);
+  // 库还没就绪时不要落缓存也不要以空结果为准：早期版本把这里的空结果写进了缓存，
+  // 结果冷启动后第一次输入就把所有歌的拼音索引固定成空串，拼音检索从此整个失效。
+  if (!window.pinyinPro) return { full: '', initials: '' };
   let result = { full: '', initials: '' };
   try {
-    if (window.pinyinPro) {
-      const name = `${song.display_song_name || song.song_name || ''} ${song.artist || ''}`;
-      const arr = window.pinyinPro.pinyin(String(name), { toneType: 'none', type: 'array', nonZh: 'consecutive', v: true });
-      const full = arr.join('').toLowerCase().replace(/\s+/g, '');
-      const initials = arr.map(p => (p || '').charAt(0)).join('').toLowerCase();
-      result = { full, initials };
-    }
+    const name = `${song.display_song_name || song.song_name || ''} ${song.artist || ''}`;
+    const arr = window.pinyinPro.pinyin(String(name), { toneType: 'none', type: 'array', nonZh: 'consecutive', v: true });
+    const full = arr.join('').toLowerCase().replace(/\s+/g, '');
+    const initials = arr.map(p => (p || '').charAt(0)).join('').toLowerCase();
+    result = { full, initials };
   } catch (e) { /* 拼音生成失败不影响普通搜索 */ }
   pinyinCache.set(key, result);
   return result;
+}
+
+// 匹配前统一去掉非字母数字：pinyin-pro 遇到日文假名会原样保留，
+// 于是「少女レイ」的 full 变成 "shaonvレイみきとp/chuyinミク"，里面混着假名和斜杠，
+// 用户敲 "shaonv" 之后的任何字母都匹配不上。去掉噪声后至少能匹配到假名之前的汉字部分。
+function normalizePinyinForMatch(value) {
+  return String(value || '').toLowerCase().replace(/[^a-z0-9]/g, '');
 }
 
 function applySongFilters() {
@@ -594,13 +607,14 @@ function applySongFilters() {
 
   let rows = state.allSongs.slice();
   if (query) {
-    const q = query.replace(/\s+/g, '');
+    const q = normalizePinyinForMatch(query);
     rows = rows.filter(song => {
       if (getSongSearchText(song, state.searchMode).includes(query)) return true;
       // 拼音检索：全拼或首字母包含（如 "shaonvlei" / "snl"）
       if (!q) return false;
       const pi = getSongPinyin(song);
-      return (pi.full && pi.full.includes(q)) || (pi.initials && pi.initials.includes(q));
+      return (pi.full && normalizePinyinForMatch(pi.full).includes(q))
+        || (pi.initials && normalizePinyinForMatch(pi.initials).includes(q));
     });
   }
 
