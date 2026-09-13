@@ -24,7 +24,12 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..', '.
 const width = Number(process.argv[2] || 390);
 const height = Number(process.argv[3] || 844);
 
-const html = fs.readFileSync(path.join(ROOT, 'index.html'), 'utf8');
+const html = process.env.HTML_URL
+  ? await fetch(process.env.HTML_URL).then(response => {
+      if (!response.ok) throw new Error(`拉取 ${process.env.HTML_URL} 失败: ${response.status}`);
+      return response.text();
+    })
+  : fs.readFileSync(path.join(ROOT, 'index.html'), 'utf8');
 const styleMatch = /<style[^>]*>([\s\S]*?)<\/style>/.exec(html);
 if (!styleMatch) throw new Error('index.html 里找不到 <style> 块');
 const css = styleMatch[1];
