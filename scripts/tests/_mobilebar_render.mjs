@@ -107,7 +107,14 @@ let page = `<!doctype html><html lang="zh-CN"><head><meta charset="utf-8">
   body { margin: 0; padding: 0; background: #dfe4d0; }
   .diag-stack { display: flex; flex-direction: column; gap: 18px; padding: 14px 0 22px; }
   .diag-label { font: 12px/1.4 sans-serif; color: #3d4630; padding: 0 12px; }
-  .player-bar { position: static !important; transform: none !important; margin: 0 auto !important; }
+  /* 真实手机端播放栏宽度是 calc(100vw - 20px)。无头窗口的视口宽不等于 --window-size，
+     所以这里把宽度钉死成命令行传入的那个值，量到的列宽才和真机一致。 */
+  .player-bar {
+    position: static !important;
+    transform: none !important;
+    margin: 0 auto !important;
+    width: ${Math.max(240, width - 20)}px !important;
+  }
 </style>
 </head><body><div class="diag-stack">`;
 

@@ -1577,11 +1577,9 @@
 
       .song-rating .rating-line { gap: 3px; }
 
-      /* 卡片上空间紧张，窄屏收起「均分 / 我的」文字；
-         播放栏里评分独走一行，文字由 .player-bar .player-rating-host 单独恢复 */
+      /* 窄屏空间紧张，卡片和播放栏都收起「均分 / 我的」文字，
+         只保留星级与分值；完整信息在点击后的弹窗里。 */
       .song-rating .rating-label { display: none; }
-
-      .player-bar .player-rating-host .rating-label { display: inline; }
 
       .song-rating .rating-avg-text,
       .song-rating .rating-own-text { font-size: 10px; }
@@ -3508,14 +3506,13 @@
         /* 列宽按真实可用宽度算：手机端播放栏宽 = 100vw - 20px，
            自身左右内边距交给网格轨道承担，避免列里放不下按钮。
            390px 视口：28+34+28+minmax(0,1fr)+28×4 + 7×4px 间距 = 370px，正好铺满。
-           行：1 信息 / 2 控制按钮 / 3 评分（整行居中）/ 4 进度条。
-           注意：这里**不能用 grid-template-areas** —— 评分的第二行要横跨整行，
-           若让同一个名字同时出现在第 4 列和第 3 行，命名区域就拼成了 L 形，
-           浏览器会判定整条 grid-template-areas 非法并静默丢弃（areas 变 none），
-           控件会全部掉进隐式列挤成一团。所以改用显式行列定位。 */
+           行：1 信息 / 2 控制按钮 + 进度条 + 评分。
+           注意：这里**不能用 grid-template-areas** —— 命名区域必须是矩形，
+           一旦拼成 L 形，浏览器会判定整条声明非法并静默丢弃（areas 变 none），
+           控件会全部掉进隐式列挤成一团。所以全程用显式行列定位。 */
         padding: 7px 0 8px;
-        /* 8 条轨道对应 8 个落位：prev toggle next | 评分跨 3 列 | mode favorite */
-        grid-template-columns: 28px 34px 28px minmax(0, 1fr) 28px 28px 28px 28px;
+        /* 8 条轨道对应 8 个落位：prev toggle next | 进度条 | 评分跨 2 列 | mode favorite */
+        grid-template-columns: 28px 34px 28px minmax(0, 1fr) 56px 48px 28px 28px;
         width: calc(100vw - 20px);
         align-items: center;
         column-gap: 4px;
@@ -3529,18 +3526,16 @@
       /* 第 1 行：歌曲信息整行 */
       .player-bar .player-info { grid-row: 1; grid-column: 1 / -1; }
 
-      /* 第 2 行：上一首 / 播放 / 下一首 / 播放模式 / 收藏 */
+      /* 第 2 行：上一首 / 播放 / 下一首 / 进度条 / 评分（与图标同一行）/ 播放模式 / 收藏。
+         第 4 列给进度条（1fr 约 162px），第 5-6 列合并 96px 给评分，
+         两行「均分星级 / 我的星级」上下堆叠。总宽与改动前一致：370px。 */
       .player-bar #playerPrevBtn { grid-row: 2; grid-column: 1; }
       .player-bar #playerToggleBtn { grid-row: 2; grid-column: 2; }
       .player-bar #playerNextBtn { grid-row: 2; grid-column: 3; }
+      .player-bar .player-progress { grid-row: 2; grid-column: 4; }
+      .player-bar .player-rating-host { grid-row: 2; grid-column: 5 / 7; }
       .player-bar #playerShuffleBtn { grid-row: 2; grid-column: 7; }
       .player-bar #playerFavBtn { grid-row: 2; grid-column: 8; }
-
-      /* 第 3 行：评分整行居中，星星才有放大空间 */
-      .player-bar .player-rating-host { grid-row: 3; grid-column: 1 / -1; }
-
-      /* 第 4 行：进度条整行 */
-      .player-bar .player-progress { grid-row: 4; grid-column: 1 / -1; }
 
       .player-bar .player-info {
         width: 100%;
@@ -3570,58 +3565,49 @@
         padding: 0 10px;
       }
 
-      /* 手机端评分独走一行：整行居中，星星放大到卡片同级（14px），两行「均分 / 我的」都带文字。
-         两行改用两列网格：第一列文字（自动宽，取两者较宽者），第二列星星，这样上下行星级起点对齐。 */
+      /* 手机端评分：和播放 / 上一首 / 下一首 同处第 2 行，占第 5-6 列（56+48=104px），
+         块内上下两行是「均分星级 / 我的星级」。
+         宽度是按内容算出来的：星级 5×11 + 4×1 = 59px，分值（如 7.0 / 10 分）约 16px，
+         间距 4px，星右边距 2px → 约 85px < 104px，留了余量不裁切。
+         窄屏（≤560px，手机上基本都命中）隐藏「均分 / 我的」文字，否则两行都放不下。 */
       .player-bar .player-rating-host {
         margin-right: 0;
         min-width: 0;
-        /* 收成内容宽再靠 justify-self 居中，避免横跨整行时被拉满 */
-        width: auto;
-        justify-content: center;
-        justify-self: center;
-        padding: 1px 0 0;
+        /* 撑满所在网格区域；align-items:center 会把它收缩成内容宽，那样分值会被裁掉 */
+        width: 100%;
+        align-self: stretch;
+        justify-content: flex-start;
+        padding-left: 2px;
         overflow: hidden;
       }
 
       .player-bar .player-rating-host .song-rating {
-        --rating-star-size: 14px;
-        gap: 5px;
-        align-items: center;
-        width: auto;
+        --rating-star-size: 11px;
+        gap: 3px;
+        align-items: flex-start;
+        width: 100%;
       }
 
-      /* 两行都用「文字 | 星级 | 分值」三列网格：文字列固定 33px 让两行等宽、右缘对齐，
-         上下行的文字与星级都落在同一竖线上；分值并进第三列，避免被挤到第二行 */
+      /* 每行「星级 | 分值」两列，两行等宽、星级上下对齐，分值并到星星同一行 */
       .player-bar .player-rating-host .rating-line,
       .player-bar .player-rating-host .rating-open {
         display: grid;
-        grid-template-columns: 33px auto auto;
+        grid-template-columns: auto auto;
         align-items: center;
-        justify-content: center;
-        column-gap: 6px;
-        min-height: 16px;
+        justify-content: start;
+        column-gap: 4px;
+        min-height: 14px;
       }
 
-      .player-bar .player-rating-host .rating-label {
+      .player-bar .player-rating-host .rating-stars {
         grid-column: 1;
         grid-row: 1;
       }
 
-      .player-bar .player-rating-host .rating-stars {
+      .player-bar .player-rating-host .rating-line > .rating-avg-text,
+      .player-bar .player-rating-host .rating-open > .rating-own-text {
         grid-column: 2;
         grid-row: 1;
-      }
-
-      .player-bar .player-rating-host .rating-line > .rating-avg-text {
-        grid-column: 3;
-        grid-row: 1;
-        margin-left: 1px;
-      }
-
-      .player-bar .player-rating-host .rating-open > .rating-own-text {
-        grid-column: 3;
-        grid-row: 1;
-        margin-left: 1px;
       }
 
       .player-bar .player-rating-host .rating-open {
@@ -3634,7 +3620,8 @@
       }
 
       .player-bar .player-rating-host .rating-label {
-        font-size: 10.5px;
+        font-size: 10px;
+        display: none;
       }
 
       .player-bar .player-rating-host .rating-avg-text,
@@ -4363,7 +4350,7 @@
   <script src="js/data.js?v=30" defer></script>
   <script src="js/listen-together.js?v=4" defer></script>
   <script src="js/rating.js?v=7" defer></script>
-  <script src="js/app.js?v=100" defer></script>
+  <script src="js/app.js?v=101" defer></script>
   <script src="js/motion.js?v=18" defer></script>
 </body>
 </html>
