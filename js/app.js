@@ -741,9 +741,12 @@ function getSongCardHtml(song) {
     : '';
   const inSomeSonglist = isSongInAnySonglist(song);
   const songlistAddHtml = `<button class="songlist-add-btn${inSomeSonglist ? ' in-some' : ''}" data-songlist-pick="${song.song_id}" title="${inSomeSonglist ? '已在歌单中，点击管理' : '加入歌单'}">${iconSvg('folder-add')}</button>`;
+  // 评分键用歌名：跨房间、跨数据重建都稳定（song_id 会随收录顺序浮动）；
+  // 具体星级与交互由 js/rating.js 挂载，这里只留一个锚点。
+  const ratingKey = String(song.display_song_name || song.song_name || song.row_key || '').trim();
 
   return `
-    <div class="song-item${isNowPlaying ? ' now-playing' : ''}${state.selectedSong && state.selectedSong.song_id === song.song_id ? ' selected' : ''}" data-song-id="${song.song_id}">
+    <div class="song-item${isNowPlaying ? ' now-playing' : ''}${state.selectedSong && state.selectedSong.song_id === song.song_id ? ' selected' : ''}" data-song-id="${song.song_id}"${ratingKey ? ` data-rating-key="${escHtml(ratingKey)}" data-rating-name="${escHtml(song.display_song_name || song.song_name || ratingKey)}"` : ''}>
       <div class="song-top">
         <div class="song-vinyl-wrap${isNowPlaying ? ' spinning' : ''}" data-play-song="${song.song_id}" title="${audioUrl ? (isNowPlaying ? '暂停' : '点击播放') : '暂无试听音频'}">
           <div class="song-vinyl">
@@ -772,6 +775,7 @@ function getSongCardHtml(song) {
         <div class="song-bottom-left">
           <span>${escHtml(bottomLine)}</span>
         </div>
+        <div class="song-rating-host" data-rating-host></div>
       </div>
       ${cutUrl ? `<div class="song-sub song-cut-row">歌切：<a href="${escHtml(cutUrl)}" target="_blank" rel="noreferrer" data-song-cut-link="${escHtml(cutUrl)}" title="${escHtml(cutTitle || cutUrl)}">${escHtml(cutLabel)}</a></div>` : ''}
     </div>

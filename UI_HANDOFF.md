@@ -46,6 +46,7 @@ wrangler pages deploy . --project-name xsl-songlist --branch main --commit-dirty
 | `index.html` | 主站「小松绿歌单」（歌曲列表/筛选/播放器/中意/历史/歌单） | `<style>` 内联 CSS |
 | `js/app.js` | 主站逻辑（播放器/收藏/筛选/存档/二创歌） | — |
 | `js/shared.js` | 共享工具 | — |
+| `js/rating.js` | 歌曲评分（卡片右下角两行星级，按 IP 区分访客） | `index.html` 内 `.song-rating*` |
 | `js/data.js` | 歌单数据（生成产物，勿手改） | — |
 | `buttons/index.html` | 按钮墙（磁帖/播放器/后台管理/编辑模式） | `<style>` |
 | `buttons/buttons.js` | 按钮墙逻辑 | — |
@@ -121,6 +122,7 @@ wrangler pages deploy . --project-name xsl-songlist --branch main --commit-dirty
 ### 不动的东西（红线）
 - 功能逻辑、数据结构、控件**位置**基本不变（只改观感/动效）
 - `functions/`、R2、按钮墙上传/播放逻辑、存档接口**不动**
+- 歌曲评分（`js/rating.js` + `/api/rating/song`）的接口契约与 `.song-rating*` 结构不动，只可调样式观感
 - 生成的数据 JSON / `js/data.js` 不手改
 - 别把快乐体字子集外的生僻字加进快乐体文本（会回退）
 

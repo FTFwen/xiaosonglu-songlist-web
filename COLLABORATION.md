@@ -52,6 +52,14 @@ npm install -g wrangler
 
 ---
 
+## 三之二、歌曲评分（卡片右下角两行星级）
+
+主站歌曲卡片右下角有 5+5 颗星：第一行是服务器上的平均分，第二行是自己打的分（按访客 IP 区分，一星 2 分、半星 1 分）。后端是 `functions/api/rating/song.js` + `functions/_rating.js`，数据存在 R2 的 `rating/v1/*` 前缀下；前端是 `js/rating.js`。
+
+完整说明（接口、存储、并发约束、验证命令、部署注意事项、IP 粒度局限）见 `docs/rating-feature.md`。
+
+---
+
 ## 四、部署（重要）
 
 部署用 **wrangler**，每次**必须先删除 `.wrangler` 缓存**，否则 `functions/` 可能不编译，`/api/*` 会返回 HTML（而非接口），按钮墙音频/存档全挂。

@@ -1248,6 +1248,348 @@
       align-items: center;
     }
 
+    /* ===== 歌曲评分（js/rating.js 挂载）：卡片右下角只显示两行，打分走点击弹窗 ===== */
+    .song-rating-host {
+      flex: 0 1 auto;
+      min-width: 0;
+      display: flex;
+      justify-content: flex-end;
+      margin-left: auto;
+    }
+
+    .song-rating {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 2px;
+      cursor: default;
+    }
+
+    .song-rating .rating-line {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 4px;
+      white-space: nowrap;
+    }
+
+    .song-rating .rating-label {
+      font-size: 10px;
+      color: var(--text-soft);
+      opacity: 0.85;
+    }
+
+    /* 卡片上的星星统一 13px 基准，弹窗里单独放大 */
+    .song-rating .rating-stars,
+    .rating-pop .rating-stars {
+      display: inline-flex;
+      align-items: center;
+      gap: 1px;
+    }
+
+    .song-rating .rating-star,
+    .rating-pop .rating-star {
+      position: relative;
+      display: inline-block;
+      width: var(--rating-star-size, 13px);
+      height: var(--rating-star-size, 13px);
+      padding: 0;
+      border: 0;
+      background: none;
+      line-height: 0;
+    }
+
+    /* ===== 星级图标：空星 / 半星 / 满星三张配套图，橄榄绿主题 ===== */
+    .song-rating .rating-star-shape,
+    .rating-pop .rating-star-shape {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      stroke-linejoin: round;
+    }
+
+    /* 空星：只剩描边，颜色与卡片分隔线同一族 */
+    .song-rating .rating-star-shape.is-empty,
+    .rating-pop .rating-star-shape.is-empty {
+      fill: none;
+      stroke: var(--line-strong, #c3cd9a);
+    }
+
+    /* 满星：橄榄绿实心 + 同色描边，边缘更饱满 */
+    .song-rating .rating-star-shape.is-full,
+    .rating-pop .rating-star-shape.is-full {
+      fill: var(--primary, #8a9a4e);
+      stroke: var(--primary, #8a9a4e);
+    }
+
+    /* 半星：左半边实心、右半边只描边，两个半边各自闭合、互不重叠 */
+    .song-rating .rating-star-shape.is-half path:first-child,
+    .rating-pop .rating-star-shape.is-half path:first-child {
+      fill: var(--primary, #8a9a4e);
+      stroke: var(--primary, #8a9a4e);
+    }
+
+    .song-rating .rating-star-shape.is-half path:last-child,
+    .rating-pop .rating-star-shape.is-half path:last-child {
+      fill: none;
+      stroke: var(--line-strong, #c3cd9a);
+    }
+
+    /* 描边按星星档位换算：1 像素左右的视觉线宽 */
+    .song-rating { --rating-stroke: 1.9; }
+    .rating-pop { --rating-stroke: 0.89; }
+    .song-rating .rating-star-shape,
+    .rating-pop .rating-star-shape { stroke-width: var(--rating-stroke, 1.9); }
+
+    .song-rating .rating-avg-text,
+    .song-rating .rating-own-text {
+      font-size: 11px;
+      color: var(--text-soft);
+      font-variant-numeric: tabular-nums;
+    }
+
+    /* 第二行是打开打分面板的按钮：给足点击面积，但不要溢出卡片 */
+    .song-rating .rating-open {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      max-width: 100%;
+      padding: 1px 6px 1px 5px;
+      border: 1px dashed var(--line-strong);
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.5);
+      color: var(--text-soft);
+      font: inherit;
+      line-height: 1.35;
+      cursor: pointer;
+      transition: border-color 0.16s ease, background 0.16s ease, color 0.16s ease;
+    }
+
+    .song-rating .rating-open:hover {
+      border-color: var(--warning, #e59d38);
+      background: var(--warning-soft, #fdf3e0);
+      color: var(--text);
+    }
+
+    .song-rating .rating-open:focus-visible {
+      outline: 2px solid var(--primary);
+      outline-offset: 2px;
+    }
+
+    /* 已评分时按钮镶一圈橄榄绿边，和星星同一个色系 */
+    .song-rating .rating-open.is-scored {
+      border-style: solid;
+      border-color: rgba(138, 154, 78, 0.5);
+      background: var(--primary-soft, #eef1d6);
+    }
+
+    .song-rating .rating-open.is-scored .rating-own-text {
+      color: var(--primary-dark, #6f7d3d);
+      font-weight: 700;
+    }
+
+    .song-rating .rating-open.is-busy { opacity: 0.7; }
+
+    .song-rating .rating-open.is-locked {
+      cursor: not-allowed;
+      opacity: 0.72;
+      border-style: dotted;
+    }
+
+    /* ===== 打分面板（弹窗，fixed 层挂在 body 上） ===== */
+    .rating-pop-layer {
+      position: fixed;
+      z-index: 9500;
+      opacity: 0;
+      transform: translateY(-4px);
+      transition: opacity 0.17s ease, transform 0.17s var(--ease-elastic, ease);
+      animation: ratingPopIn 0.17s ease forwards;
+    }
+
+    @keyframes ratingPopIn {
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .rating-pop-layer { animation: none; opacity: 1; transform: none; }
+    }
+
+    .rating-pop {
+      width: 250px;
+      max-width: calc(100vw - 24px);
+      padding: 11px 13px 10px;
+      border-radius: var(--radius-md, 12px);
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.97);
+      backdrop-filter: blur(12px) saturate(1.2);
+      -webkit-backdrop-filter: blur(12px) saturate(1.2);
+      box-shadow: var(--shadow, 0 10px 30px rgba(122, 136, 70, 0.12));
+      color: var(--text);
+    }
+
+    .rating-pop-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      margin-bottom: 6px;
+    }
+
+    .rating-pop-name {
+      min-width: 0;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--text);
+    }
+
+    .rating-pop-close {
+      flex-shrink: 0;
+      width: 20px;
+      height: 20px;
+      padding: 0;
+      border: 0;
+      border-radius: 50%;
+      background: transparent;
+      color: var(--text-soft);
+      font-size: 15px;
+      line-height: 1;
+      cursor: pointer;
+    }
+
+    .rating-pop-close:hover { background: var(--danger-soft); color: var(--danger); }
+
+    .rating-pop-stars {
+      --rating-star-size: 27px;
+      display: flex;
+      justify-content: center;
+      gap: 5px;
+      padding: 4px 0 6px;
+    }
+
+    /* 弹窗里的星星才可点：左半边 = 半颗星（1 分），右半边 = 整颗星（2 分） */
+    .rating-pop .rating-star.is-pick {
+      cursor: pointer;
+      transition: transform 0.14s ease, color 0.14s ease;
+    }
+
+    .rating-pop .rating-star.is-pick.is-on { color: var(--warning, #e59d38); }
+    .rating-pop .rating-star.is-pick:hover { transform: scale(1.1); }
+    .rating-pop .rating-star.is-pick:focus-visible {
+      outline: 2px solid var(--primary);
+      outline-offset: 2px;
+      border-radius: 4px;
+    }
+
+    .rating-pop-stars.is-busy,
+    .rating-pop .rating-star.is-pick:disabled { cursor: default; }
+
+    .rating-pop .rating-star-hit {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      z-index: 2;
+    }
+
+    .rating-pop .rating-star-hit.half { left: 0; right: 50%; }
+    .rating-pop .rating-star-hit.full { left: 50%; right: 0; }
+
+    .rating-pop-row {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 8px;
+    }
+
+    .rating-pop-value {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--text);
+      font-variant-numeric: tabular-nums;
+    }
+
+    .rating-pop-avg {
+      font-size: 11px;
+      color: var(--text-soft);
+      font-variant-numeric: tabular-nums;
+    }
+
+    .rating-pop-foot {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      margin-top: 7px;
+      padding-top: 7px;
+      border-top: 1px dashed var(--line);
+    }
+
+    .rating-pop-hint {
+      font-size: 10.5px;
+      color: var(--text-soft);
+    }
+
+    .rating-pop-clear {
+      padding: 3px 9px;
+      border: 1px solid var(--line-strong);
+      border-radius: 999px;
+      background: transparent;
+      color: var(--text-soft);
+      font-size: 11px;
+      cursor: pointer;
+    }
+
+    .rating-pop-clear:hover { border-color: var(--danger); background: var(--danger-soft); color: var(--danger); }
+    .rating-pop-clear[hidden] { display: none; }
+
+    .rating-toast {
+      position: fixed;
+      left: 50%;
+      bottom: 28px;
+      z-index: 9999;
+      transform: translate(-50%, 10px);
+      padding: 9px 16px;
+      border-radius: var(--radius-md, 12px);
+      background: rgba(61, 70, 48, 0.92);
+      color: #fff;
+      font-size: 12px;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.2s ease, transform 0.2s ease;
+    }
+
+    .rating-toast.is-show {
+      opacity: 1;
+      transform: translate(-50%, 0);
+    }
+
+    /* 窄屏：压缩评分显示，避免把「最近/距今」挤换行 */
+    @media (max-width: 560px) {
+      .song-rating {
+        --rating-star-size: 11px;
+      }
+
+      .song-rating .rating-line { gap: 3px; }
+
+      .song-rating .rating-label { display: none; }
+
+      .song-rating .rating-avg-text,
+      .song-rating .rating-own-text { font-size: 10px; }
+
+      .song-rating .rating-open {
+        padding: 0 5px;
+        gap: 3px;
+      }
+
+      .rating-pop-stars { --rating-star-size: 30px; }
+    }
+
     .fav-shell {
       display: flex;
       flex-direction: column;
@@ -1890,6 +2232,67 @@
       overflow: hidden;
       text-overflow: ellipsis;
       font-size: 11px;
+    }
+
+    /* ===== 播放栏里的评分：和卡片同一套控件，按「均分 / 我的」两行显示 ===== */
+    .player-rating-host {
+      flex: 0 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      margin-right: 10px;
+      min-width: 106px;
+    }
+
+    .player-rating-host .song-rating {
+      --rating-star-size: 11px;
+      gap: 2px;
+      align-items: flex-start;
+      width: 100%;
+    }
+
+    .player-rating-host .rating-line {
+      gap: 5px;
+      justify-content: flex-start;
+      line-height: 1.2;
+      min-height: 12px;
+    }
+
+    .player-rating-host .rating-label {
+      font-size: 10px;
+      opacity: 0.75;
+      flex-shrink: 0;
+    }
+
+    .player-rating-host .rating-avg-text,
+    .player-rating-host .rating-own-text {
+      font-size: 10px;
+      font-variant-numeric: tabular-nums;
+      min-width: 22px;
+    }
+
+    /* 没分数时文案是空的，但别让行高塌掉 */
+    .player-rating-host .rating-avg-text:empty,
+    .player-rating-host .rating-own-text:empty { display: none; }
+
+    .player-rating-host .rating-open {
+      padding: 0;
+      border: 0;
+      background: none;
+      border-radius: 0;
+      gap: 5px;
+      max-width: 100%;
+    }
+
+    .player-rating-host .rating-open:hover {
+      background: none;
+      border: 0;
+    }
+
+    .player-rating-host .rating-open:focus-visible {
+      outline: 2px solid var(--primary);
+      outline-offset: 1px;
+      border-radius: 4px;
     }
 
     .player-progress {
@@ -3098,15 +3501,21 @@
 
       html body .player-bar {
         display: grid !important;
-        grid-template-columns: 30px 36px 30px minmax(56px, 1fr) 30px 30px;
+        /* 列宽按真实可用宽度算：手机端播放栏宽 = 100vw - 20px，
+           自身 padding 8px 14px 会吃掉 28px 净宽（网格轨道按 border-box 内的内容盒布局），
+           所以这里把左右内边距交给网格轨道自己承担，避免 30px 列里只剩 20px 放不下按钮。
+           390px 视口：30+36+30+6*5+minmax(0,1fr)+78+30+30 = 370px，正好铺满。
+           第三行单独放进度条 + 评分，评分拿到 78px，星星与数字都放得下。 */
+        padding: 7px 0 8px;
+        grid-template-columns: 30px 36px 30px minmax(0, 1fr) 78px 30px 30px;
         grid-template-areas:
-          "info info info info info info"
-          "prev toggle next progress mode favorite";
+          "info info info info info info info"
+          "prev toggle next rating rating mode favorite"
+          "progress progress progress progress progress progress progress";
         align-items: center;
         column-gap: 6px;
         row-gap: 5px;
         bottom: max(8px, env(safe-area-inset-bottom));
-        padding: 7px 10px 8px;
         border-radius: 16px;
         background: rgba(247,249,236,0.98) !important;
         box-shadow: 0 5px 18px rgba(61,74,32,0.18) !important;
@@ -3117,13 +3526,15 @@
       .player-bar #playerNextBtn { grid-area: next; }
       .player-bar .player-info { grid-area: info; }
       .player-bar .player-progress { grid-area: progress; }
+      .player-bar .player-rating-host { grid-area: rating; }
       .player-bar #playerShuffleBtn { grid-area: mode; }
       .player-bar #playerFavBtn { grid-area: favorite; }
 
       .player-bar .player-info {
         width: 100%;
         min-width: 0;
-        padding: 0 2px;
+        /* 网格内边距已交给轨道，信息行自己补回左右留白 */
+        padding: 0 10px;
       }
 
       .player-bar .player-name {
@@ -3144,6 +3555,33 @@
       .player-bar .player-progress {
         min-width: 0;
         gap: 0;
+        padding: 0 10px;
+      }
+
+      /* 手机端评分列 78px：星星 5px、文字 9px，两行「均分 / 我的」都放得下 */
+      .player-bar .player-rating-host {
+        margin-right: 0;
+        min-width: 0;
+        justify-content: flex-start;
+        padding-left: 2px;
+        overflow: hidden;
+      }
+
+      .player-bar .player-rating-host .song-rating {
+        --rating-star-size: 5px;
+        gap: 1px;
+      }
+
+      .player-bar .player-rating-host .rating-line {
+        gap: 2px;
+        min-height: 9px;
+      }
+
+      .player-bar .player-rating-host .rating-label,
+      .player-bar .player-rating-host .rating-avg-text,
+      .player-bar .player-rating-host .rating-own-text {
+        font-size: 9px;
+        min-width: 0;
       }
 
       .player-bar .player-btn {
@@ -3700,6 +4138,7 @@
       <div class="player-name" id="playerSongName">未选择歌曲</div>
       <div class="player-artist" id="playerSongArtist"></div>
     </div>
+    <div class="player-rating-host" id="playerRatingHost" data-rating-host></div>
     <div class="player-progress">
       <span class="player-time" id="playerTimeCur">00:00</span>
       <input type="range" class="player-range" id="playerSeek" min="0" max="1000" value="0" step="1">
@@ -3864,7 +4303,8 @@
   <script src="js/shared.js?v=27" defer></script>
   <script src="js/data.js?v=30" defer></script>
   <script src="js/listen-together.js?v=4" defer></script>
-  <script src="js/app.js?v=97" defer></script>
+  <script src="js/rating.js?v=7" defer></script>
+  <script src="js/app.js?v=98" defer></script>
   <script src="js/motion.js?v=18" defer></script>
 </body>
 </html>

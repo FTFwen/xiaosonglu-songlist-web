@@ -390,6 +390,7 @@ $overlayRelativePaths = @(
     'js\shared.js',
     'js\listen-together.js',
     'css\listen-together.css',
+    'js\rating.js',
     'workshop\js\app.js',
     'workshop\js\shared.js',
     'workshop\js\start.js',
@@ -411,6 +412,8 @@ $overlayRelativePaths = @(
     'workshop\data\xiaosonglu\song_details.json',
     'workshop\js\data.js',
     'functions\_auth.js',
+    'functions\_rating.js',
+    'functions\api\rating\song.js',
     'buttons\buttons.js'
 )
 $overlayed = @()
@@ -510,6 +513,7 @@ foreach ($relative in @(
     'js/shared.js',
     'js/listen-together.js',
     'css/listen-together.css',
+    'js/rating.js',
     'js/data.js',
     'workshop/index.html',
     'workshop/js/app.js',
