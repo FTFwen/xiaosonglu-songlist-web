@@ -44,3 +44,7 @@ __pycache__/
 
 # Large local audio archive (690MB, exceeds GitHub 100MB limit)
 assets/audio.zip
+
+# 手机端布局诊断的渲染产物（脚本 scripts/tests/_mobilebar_render.mjs 生成）
+_render_mobilebar_*.html
+_shot_*.png
