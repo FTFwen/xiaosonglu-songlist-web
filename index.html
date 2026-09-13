@@ -1577,7 +1577,11 @@
 
       .song-rating .rating-line { gap: 3px; }
 
+      /* 卡片上空间紧张，窄屏收起「均分 / 我的」文字；
+         播放栏里评分独走一行，文字由 .player-bar .player-rating-host 单独恢复 */
       .song-rating .rating-label { display: none; }
+
+      .player-bar .player-rating-host .rating-label { display: inline; }
 
       .song-rating .rating-avg-text,
       .song-rating .rating-own-text { font-size: 10px; }
@@ -3502,18 +3506,18 @@
       html body .player-bar {
         display: grid !important;
         /* 列宽按真实可用宽度算：手机端播放栏宽 = 100vw - 20px，
-           自身 padding 8px 14px 会吃掉 28px 净宽（网格轨道按 border-box 内的内容盒布局），
-           所以这里把左右内边距交给网格轨道自己承担，避免 30px 列里只剩 20px 放不下按钮。
-           390px 视口：30+36+30+6*5+minmax(0,1fr)+78+30+30 = 370px，正好铺满。
-           第三行单独放进度条 + 评分，评分拿到 78px，星星与数字都放得下。 */
+           自身左右内边距交给网格轨道承担，避免列里放不下按钮。
+           390px 视口：28+34+28+minmax(0,1fr)+28+28 + 5×4px 间距 = 370px，正好铺满。
+           第三行整行给评分（均分 / 我的 两行、星星 13px），进度条独走第四行。 */
         padding: 7px 0 8px;
-        grid-template-columns: 30px 36px 30px minmax(0, 1fr) 78px 30px 30px;
+        grid-template-columns: 28px 34px 28px minmax(0, 1fr) 28px 28px;
         grid-template-areas:
-          "info info info info info info info"
-          "prev toggle next rating rating mode favorite"
-          "progress progress progress progress progress progress progress";
+          "info info info info info info"
+          "prev toggle next rating mode favorite"
+          "rating rating rating rating rating rating"
+          "progress progress progress progress progress progress";
         align-items: center;
-        column-gap: 6px;
+        column-gap: 4px;
         row-gap: 5px;
         bottom: max(8px, env(safe-area-inset-bottom));
         border-radius: 16px;
@@ -3558,41 +3562,50 @@
         padding: 0 10px;
       }
 
-      /* 手机端评分列 78px：星星 5px、文字 9px，两行「均分 / 我的」都放得下 */
+      /* 手机端评分独走一行：整行居中，星星放大到卡片同级，两行「均分 / 我的」都带文字 */
       .player-bar .player-rating-host {
         margin-right: 0;
         min-width: 0;
-        justify-content: flex-start;
-        padding-left: 2px;
+        /* 收成内容宽再靠 justify-self 居中，避免横跨整行时被拉满 */
+        width: auto;
+        justify-content: center;
+        justify-self: center;
+        padding: 1px 0 0;
         overflow: hidden;
       }
 
       .player-bar .player-rating-host .song-rating {
-        --rating-star-size: 5px;
+        --rating-star-size: 13px;
         gap: 1px;
+        align-items: center;
+        width: auto;
       }
 
       .player-bar .player-rating-host .rating-line {
-        gap: 2px;
-        min-height: 9px;
+        gap: 5px;
+        min-height: 15px;
+        justify-content: center;
       }
 
-      .player-bar .player-rating-host .rating-label,
+      .player-bar .player-rating-host .rating-label {
+        font-size: 10.5px;
+      }
+
       .player-bar .player-rating-host .rating-avg-text,
       .player-bar .player-rating-host .rating-own-text {
-        font-size: 9px;
+        font-size: 10.5px;
         min-width: 0;
       }
 
       .player-bar .player-btn {
-        width: 30px;
-        height: 30px;
+        width: 28px;
+        height: 28px;
         box-shadow: none;
       }
 
       .player-bar .player-btn.primary {
-        width: 36px;
-        height: 36px;
+        width: 34px;
+        height: 34px;
         box-shadow: none;
       }
 
@@ -4304,7 +4317,7 @@
   <script src="js/data.js?v=30" defer></script>
   <script src="js/listen-together.js?v=4" defer></script>
   <script src="js/rating.js?v=7" defer></script>
-  <script src="js/app.js?v=98" defer></script>
+  <script src="js/app.js?v=99" defer></script>
   <script src="js/motion.js?v=18" defer></script>
 </body>
 </html>
