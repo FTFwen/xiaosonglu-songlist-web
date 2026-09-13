@@ -171,7 +171,10 @@ const state = {
   cutInfo: null,
   playlist: [],
   songlists: [],
-  songlistView: { type: 'list' }
+  songlistView: { type: 'list' },
+  // 「按评分排序」需要先批量拉回全量评分再重排，这个标记防止重复触发
+  ratingSortLoading: false,
+  ratingSortRetries: 0
 };
 
 const dom = {};
@@ -682,11 +685,49 @@ function applySongFilters() {
     }
   }
   syncFilterSummary();
+
+  // 「按评分排序」的均分存在服务端，卡片又是懒加载的，所以排序前要先把全量评分批量取回来，
+  // 取完再重排一次。放在函数末尾触发，避免和上面的渲染流程互相递归。
+  // 取不到时保持当前（按 0 分）的顺序，不影响其它功能。
+  // 另有 ratingSortRetries 兜底：即使 loadAll 那边出了意外，也不会在这里形成无限重排。
+  if (state.songFilters.sortField === 'rating' && !state.ratingSortLoading) {
+    if (state.ratingSortRetries >= 2) return;
+    state.ratingSortLoading = true;
+    state.ratingSortRetries = (state.ratingSortRetries || 0) + 1;
+    const expected = state.songFilters;
+    Promise.resolve()
+      .then(() => (window.__XSL_RATING && window.__XSL_RATING.loadAll
+        ? window.__XSL_RATING.loadAll()
+        : null))
+      .catch(() => null)
+      .then(() => {
+        state.ratingSortLoading = false;
+        // 期间用户若换了筛选条件或换了排序方式，就别用旧结果覆盖
+        if (state.songFilters !== expected || state.songFilters.sortField !== 'rating') return;
+        applySongFilters();
+      });
+  }
 }
 
 function compareSongs(a, b, field, dir) {
   let va;
   let vb;
+  if (field === 'rating') {
+    // 均分来自服务端。没评分的歌无论升序降序都排在最后（否则一堆 0 分会把降序结果淹掉）；
+    // 两边都没评分时退回按热度排，保证顺序稳定不随机。
+    const ratingApi = window.__XSL_RATING || null;
+    const keyOf = song => String(song && (song.display_song_name || song.song_name || song.row_key) || '').trim();
+    const ra = ratingApi && ratingApi.averageOf ? ratingApi.averageOf(keyOf(a)) : 0;
+    const rb = ratingApi && ratingApi.averageOf ? ratingApi.averageOf(keyOf(b)) : 0;
+    const ca = ratingApi && ratingApi.countOf ? ratingApi.countOf(keyOf(a)) : 0;
+    const cb = ratingApi && ratingApi.countOf ? ratingApi.countOf(keyOf(b)) : 0;
+    if (!ca && !cb) return Number(b.sing_count || 0) - Number(a.sing_count || 0);
+    if (!ca) return 1;
+    if (!cb) return -1;
+    if (ra < rb) return dir === 'asc' ? -1 : 1;
+    if (ra > rb) return dir === 'asc' ? 1 : -1;
+    return 0;
+  }
   if (field === 'sing_count') {
     va = Number(a.sing_count || 0);
     vb = Number(b.sing_count || 0);
@@ -3782,6 +3823,9 @@ function parseNullableNumber(value) {
 function applyFilterInputs() {
   state.songFilters.sortField = dom.sortFieldSelect.value;
   state.songFilters.sortDir = dom.sortDirSelect.value;
+  // 换了排序方式就重置计数，用户下次再选「评分」时还能正常触发一次批量加载
+  state.ratingSortRetries = 0;
+  state.ratingSortLoading = false;
   syncPresetButtons();
   applySongFilters();
 }

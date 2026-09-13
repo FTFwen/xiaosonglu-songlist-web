@@ -193,3 +193,66 @@ test('冲突始终无法解决时明确失败，不留半截计数', async () =>
   const ratings = await readRatings(makeContext(bucket), ['测试歌曲'], '');
   assert.equal(ratings['测试歌曲'].average.count, 0, '失败的评分不应计入平均分');
 });
+
+/* ===== 前端「按评分排序」的接线检查 =====
+   均分在服务端、卡片又是懒加载，所以这个排序必须先把全量评分批量取回来才准。
+   接线一旦断了（漏了选项、忘了暴露 loadAll、比较函数不看 rating）排序会静默失效，故在此守住。 */
+
+test('筛选面板提供「评分」排序选项，且走的是 rating 字段', async () => {
+  const { readFile } = await import('node:fs/promises');
+  const root = new URL('../../', import.meta.url);
+  const html = await readFile(new URL('index.html', root), 'utf8');
+  const app = await readFile(new URL('js/app.js', root), 'utf8');
+  const rating = await readFile(new URL('js/rating.js', root), 'utf8');
+
+  assert.match(html, /<option value="rating">评分<\/option>/, '排序下拉里应有「评分」选项');
+  assert.match(app, /field === 'rating'/, 'compareSongs 应处理 rating 字段');
+  assert.match(app, /sortField === 'rating'/, 'applySongFilters 应触发全量评分加载');
+  assert.match(rating, /loadAll: loadAll/, 'rating.js 应对外暴露 loadAll');
+  assert.match(rating, /averageOf: averageOf/, 'rating.js 应对外暴露 averageOf');
+  assert.match(rating, /countOf: countOf/, 'rating.js 应对外暴露 countOf');
+});
+
+test('按评分排序：没评分的歌始终排在最后，全部未评分时退化为热度序', async () => {
+  const { readFile } = await import('node:fs/promises');
+  const vm = await import('node:vm');
+  const root = new URL('../../', import.meta.url);
+  const app = await readFile(new URL('js/app.js', root), 'utf8');
+
+  const start = app.indexOf('function compareSongs');
+  const end = app.indexOf('function getSongCardHtml', start);
+  assert.ok(start !== -1 && end > start, '找不到 compareSongs');
+
+  const songs = [
+    { display_song_name: '高分歌', sing_count: 5 },
+    { display_song_name: '低分歌', sing_count: 50 },
+    { display_song_name: '没评分的歌', sing_count: 99 },
+    { display_song_name: '中间分歌', sing_count: 10 },
+  ];
+  const ratings = {
+    高分歌: { average: 9.5, count: 4 },
+    低分歌: { average: 3, count: 2 },
+    中间分歌: { average: 6.5, count: 7 },
+  };
+  const context = {
+    window: {
+      __XSL_RATING: {
+        averageOf: key => (ratings[key] ? ratings[key].average : 0),
+        countOf: key => (ratings[key] ? ratings[key].count : 0),
+      },
+    },
+  };
+  vm.createContext(context);
+  vm.runInContext(`${app.slice(start, end)}\nthis.compare = compareSongs;`, context);
+
+  const order = dir => songs.slice()
+    .sort((a, b) => context.compare(a, b, 'rating', dir))
+    .map(song => song.display_song_name);
+
+  assert.deepEqual(order('desc'), ['高分歌', '中间分歌', '低分歌', '没评分的歌']);
+  assert.deepEqual(order('asc'), ['低分歌', '中间分歌', '高分歌', '没评分的歌'], '升序时未评分也要垫底');
+
+  // 接口不可用时不能抛错，退回按热度
+  context.window.__XSL_RATING = null;
+  assert.deepEqual(order('desc'), ['没评分的歌', '低分歌', '中间分歌', '高分歌']);
+});

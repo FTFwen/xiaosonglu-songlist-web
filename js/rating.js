@@ -279,6 +279,7 @@
 
   // 同一分片的歌曲合并成一次 GET，避免卡片多了以后请求爆炸。
   function fetchKeys(keys) {
+    if (!keys.length) return Promise.resolve(null);
     const requestKey = keys.slice().sort().join('\u0000');
     if (inflight.has(requestKey)) return inflight.get(requestKey);
     const url = new URL(API_BASE, location.href);
@@ -293,6 +294,88 @@
     inflight.set(requestKey, promise);
     promise.catch(function () {}).then(function () { inflight.delete(requestKey); });
     return promise;
+  }
+
+  /* ---------- 全量读取（「按评分排序」用） ----------
+     卡片是懒加载的，entries 里只有可见歌曲的评分；按评分排序需要先把整份歌单的
+     评分批量取回来。按分片分组、每个分片一次 GET（上限 64 个 key），
+     分片之间限制并发，避免一瞬间打出十几个请求。 */
+  const ALL_BUCKET_CONCURRENCY = 3;
+  let allLoadPromise = null;
+
+  function allRatingKeys() {
+    const keys = [];
+    document.querySelectorAll('.song-item[data-rating-key]').forEach(function (el) {
+      const songKey = songKeyOfCard(el);
+      if (songKey) keys.push(songKey);
+    });
+    return keys;
+  }
+
+  // force=true 时重新拉取（例如用户改完分想重新按评分排序）。
+  // 成功后必须**保住**这个 Promise 的缓存：调用方（按评分排序）会在数据到齐后重排，
+  // 重排又会调用 loadAll，如果此时缓存被清空就会「拉取 → 重排 → 又拉取」无限循环。
+  function loadAll(force) {
+    if (!force && allLoadPromise) return allLoadPromise;
+    if (offline) { allLoadPromise = Promise.resolve(0); return allLoadPromise; }
+
+    const keys = allRatingKeys();
+    const byBucket = new Map();
+    keys.forEach(function (songKey) {
+      const bucket = ratingBucketOf(songKey);
+      if (!byBucket.has(bucket)) byBucket.set(bucket, []);
+      byBucket.get(bucket).push(songKey);
+    });
+
+    const tasks = [];
+    byBucket.forEach(function (bucketKeys) {
+      for (let i = 0; i < bucketKeys.length; i += MAX_KEYS_PER_REQUEST) {
+        tasks.push(bucketKeys.slice(i, i + MAX_KEYS_PER_REQUEST));
+      }
+    });
+
+    const promise = (async function () {
+      let index = 0;
+      let loaded = 0;
+      async function worker() {
+        while (index < tasks.length) {
+          const chunk = tasks[index];
+          index += 1;
+          try {
+            await fetchKeys(chunk);
+            loaded += chunk.length;
+          } catch (error) {
+            // 单块失败不阻断整体：这一批按 0 分处理，排序会把它放到最后
+            chunk.forEach(function (songKey) {
+              cacheEntry(songKey, { loaded: true, error: '评分暂时读不到' });
+            });
+          }
+        }
+      }
+      const workers = [];
+      for (let i = 0; i < Math.min(ALL_BUCKET_CONCURRENCY, tasks.length); i += 1) workers.push(worker());
+      await Promise.all(workers);
+      return loaded;
+    })();
+
+    allLoadPromise = promise;
+    // 只在失败时放开重试；成功的结果一直留着复用
+    promise.catch(function () {
+      if (allLoadPromise === promise) allLoadPromise = null;
+    });
+    return promise;
+  }
+
+  // 同步读取某首歌的均分（必须先 await loadAll()，否则可能拿到 0）
+  function averageOf(songKey) {
+    const entry = entryCache.get(String(songKey || '').trim());
+    if (!entry || !entry.loaded || !Number(entry.count)) return 0;
+    return Number(entry.average) || 0;
+  }
+
+  function countOf(songKey) {
+    const entry = entryCache.get(String(songKey || '').trim());
+    return entry && entry.loaded ? Number(entry.count) || 0 : 0;
   }
 
   function flush() {
@@ -833,6 +916,9 @@
       starIconMarkup: starIconMarkup,
       ratingBucketOf: ratingBucketOf,
       syncPlayerRating: syncPlayerRating,
+      loadAll: loadAll,
+      averageOf: averageOf,
+      countOf: countOf,
     };
   }
 
