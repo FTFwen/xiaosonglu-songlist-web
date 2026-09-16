@@ -3898,6 +3898,24 @@
         display: none !important;
       }
     }
+    /* 桌面滚动性能：列表行使用静态通透底色，避免逐卡实时采样背景。
+       保留原有边框、阴影、渐变和播放/选中反馈；弹层与顶部仍保留毛玻璃。 */
+    @media (min-width: 769px) {
+      .song-item, .history-item, .favorite-item,
+      .songlist-item, .songlist-song, .playlist-item {
+        backdrop-filter: none !important;
+        -webkit-backdrop-filter: none !important;
+      }
+      .song-item, .history-item, .favorite-item {
+        background: linear-gradient(135deg, rgba(255,255,255,.72), rgba(238,245,228,.64)) !important;
+      }
+      .song-item:hover, .history-item:hover, .favorite-item:hover {
+        background: linear-gradient(135deg, rgba(255,255,255,.82), rgba(242,248,233,.74)) !important;
+      }
+      .song-item.now-playing {
+        background: linear-gradient(135deg, rgba(230,244,210,.88), rgba(240,248,224,.80)) !important;
+      }
+    }
   </style>
   <script>window.APP_BASE_URL = "./";</script>
 </head>
