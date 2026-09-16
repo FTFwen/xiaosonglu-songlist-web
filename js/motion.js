@@ -24,6 +24,23 @@
   // 长列表页与触屏设备优先保证滚动帧率：窄屏或粗指针不启动常驻逐帧环境动效。
   const useLiteMotion = () => window.innerWidth <= 768 || !isFinePointer();
 
+  // 桌面长列表滚动时冻结装饰层，停下来后恢复；不改变卡片样式。
+  let scrolling = false;
+  let scrollIdleTimer = null;
+  window.addEventListener('scroll', () => {
+    if (useLiteMotion()) return;
+    if (!scrolling) {
+      scrolling = true;
+      document.documentElement.classList.add('motion-scrolling');
+    }
+    clearTimeout(scrollIdleTimer);
+    scrollIdleTimer = setTimeout(() => {
+      scrolling = false;
+      document.documentElement.classList.remove('motion-scrolling');
+      document.dispatchEvent(new Event('motion-scroll-idle'));
+    }, 160);
+  }, { passive: true });
+
   /* ==========================================================================
      1. 清晨极光柔光呼吸背景注入 (Ambient Aurora Glow Layer)
      ========================================================================== */
@@ -129,6 +146,7 @@
     window.addEventListener('resize', updateActiveRect, { passive: true });
 
     document.addEventListener('mousemove', function (e) {
+      if (scrolling) return;
       const card = e.target.closest('.song-item, .sound-btn, .history-item, .favorite-item, .operator-btn, .action-btn, .bookmark-item');
 
       if (!card) {
@@ -185,6 +203,7 @@
     const MICRO_SPARKLES = ['✦', '⋆', '·'];
 
     document.addEventListener('mousemove', function (e) {
+      if (scrolling) return;
       const now = performance.now();
       if (now - lastTime < 32) return; // 约 30fps，保持连贯柔和而不产生视觉堆叠
 
@@ -388,7 +407,8 @@
 
     let time = 0;
     function render() {
-      if (isPaused) return;
+      animId = null;
+      if (isPaused || scrolling) return;
       ctx.clearRect(0, 0, width, height);
       time++;
 
@@ -399,6 +419,10 @@
 
       animId = requestAnimationFrame(render);
     }
+
+    document.addEventListener('motion-scroll-idle', () => {
+      if (!isPaused && !document.hidden && animId === null) render();
+    });
 
     document.addEventListener('visibilitychange', () => {
       if (document.hidden) {

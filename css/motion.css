@@ -1578,6 +1578,19 @@
   }
 }
 
+/* 桌面长列表：只跳过离屏内容，保留原有渐变、边框、阴影和毛玻璃。
+   不加 paint containment，避免裁掉卡片浮动的阴影。 */
+@media (min-width: 769px) {
+  .song-item, .history-item, .favorite-item {
+    content-visibility: auto;
+    contain-intrinsic-size: auto 152px;
+  }
+  .motion-scrolling .aurora-orb,
+  .motion-scrolling #dappledSunlight {
+    animation-play-state: paused !important;
+  }
+}
+
 /* ===== 手机端：简化动效，降低卡顿 =====
    手机 GPU 较弱，关闭高开销的无限循环动画（背景光球/微风/光斑/播放器频谱/呼吸等）
    并显著降低 backdrop-filter 模糊，只保留必要入场与按压反馈。 */
