@@ -12,6 +12,8 @@
 .\xsl-web-tools\run_daily_song_pipeline.ps1 -Deploy
 ```
 
+每日链路的第一步是 `git-sync`：先 `git fetch origin`（对 GitHub 的出站流量走整机 Clash TUN/fake-ip 路由，当前节点可能抖动，失败会自动重试；配置了 `ClashController` 时还会像部署一样临时把代理组切到请求节点再试一次，用完恢复原选择），若本地落后且无本地领先提交，则以 `--ff-only` 快进到 `origin/main`，让本轮数据工作与部署始终基于 GitHub 最新内容。同步只做快进：本地未提交的数据改动永远优先，离线、远端分支缺失、脏树与远端改动重叠或历史分叉等情况一律降级为 JSON 报告中的 `gitSync` 警告字段并继续执行，绝不 stash、reset 或产生合并提交，也不会因此阻断每日部署。
+
 每日链路先调用 `tools/sync_song_audio_assets.py`。它用受版本管理的 `data/xiaosonglu/audio_asset_baseline.json` 逐项校验当前权威音频集合（目前 166 个文件）的路径、字节数、M4A 文件头与 SHA-256；只有本机缺失或损坏时才联网补齐，正常复跑不会请求音频，也不会重写本地清单。`.part` 续传会校验 Range 起点、最终长度和权威哈希；来源默认是当前生产站，也可用 `XSL_AUDIO_BASE_URL` 指向已验证的历史部署。
 
 音频集合确实发生人工审核过的增删时，优先通过下文带 curated 的下载/入库流水线完成，它会把本次 `copied` / `replaced` / 安全恢复项作为唯一允许变更的集合。若必须单独维护 baseline，每个获准目标都要显式传入 `--adopt-spec "PATH|BYTES|SHA256"`；仅给路径或裸 `--adopt-baseline` 会被拒绝，未列出的旧资产仍按旧 baseline 强校验，防止顺带采纳无关文件变化。日常自动化不会静默接受集合变化。

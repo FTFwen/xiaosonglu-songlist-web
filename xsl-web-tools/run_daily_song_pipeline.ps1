@@ -35,6 +35,14 @@ $node = (Get-Command node -ErrorAction Stop).Source
 $python = (Get-Command python -ErrorAction Stop).Source
 $git = (Get-Command git -ErrorAction Stop).Source
 
+# yt-dlp (Python) localizes its console output to the ANSI codepage on Chinese
+# Windows while tools/download_song_cut_audio.py decodes child output as UTF-8;
+# pin both sides to UTF-8 so non-ASCII filenames cannot crash the reader thread.
+$savedPythonIoEncoding = $env:PYTHONIOENCODING
+$savedPythonUtf8 = $env:PYTHONUTF8
+$env:PYTHONIOENCODING = 'utf-8'
+$env:PYTHONUTF8 = '1'
+
 # Prevent overlapping scheduled/manual daily runs from mutating fact and derived files
 # concurrently. The nested deployment uses its own independent staging/upload lock.
 $dailyLockPath = Join-Path $rootPath 'data\xiaosonglu\_daily_pipeline.lock'
@@ -362,8 +370,114 @@ function Get-PipelineHashes {
     return $hashes
 }
 
+function Set-GitSyncClashChoice {
+    param([string]$Controller, [string]$Group, [string]$Choice)
+    # Mirror deploy_web.ps1's Set-LocalClashProxyChoice: validate a loopback
+    # controller base URI, switch the selector group, and return the previous
+    # choice so the caller can restore it in a finally block.
+    $base = $Controller.TrimEnd('/')
+    if ($base -notmatch '^http://(127\.0\.0\.1|localhost|\[::1\])(:\d+)?$') { return $null }
+    $groupUri = "$base/proxies/$([Uri]::EscapeDataString($Group))"
+    $client = New-Object System.Net.WebClient
+    try {
+        $raw = $client.DownloadData($groupUri)
+        $proxy = ([Text.Encoding]::UTF8.GetString($raw) | ConvertFrom-Json)
+        if (-not $proxy -or [string]::IsNullOrWhiteSpace([string]$proxy.now)) { return $null }
+        $previous = [string]$proxy.now
+        # __AUTO__ resolves to Clash's standard automatic selector name, keeping
+        # the Task Scheduler command line ASCII-safe (same trick as deploy_web.ps1).
+        $resolvedChoice = if ($Choice -eq '__AUTO__') { -join @([char]0x81EA, [char]0x52A8, [char]0x9009, [char]0x62E9) } else { $Choice }
+        if (@($proxy.all) -notcontains $resolvedChoice) { return $null }
+        if ($previous -ne $resolvedChoice) {
+            $client.Headers[[System.Net.HttpRequestHeader]::ContentType] = 'application/json; charset=utf-8'
+            $body = [Text.Encoding]::UTF8.GetBytes((@{ name = $resolvedChoice } | ConvertTo-Json -Compress))
+            [void]$client.UploadData($groupUri, 'PUT', $body)
+        }
+        return @{ previous = $previous; groupUri = $groupUri }
+    } catch {
+        return $null
+    } finally {
+        $client.Dispose()
+    }
+}
+
+function Restore-GitSyncClashChoice {
+    param([hashtable]$State)
+    if ($null -eq $State) { return }
+    try {
+        $client = New-Object System.Net.WebClient
+        try {
+            $client.Headers[[System.Net.HttpRequestHeader]::ContentType] = 'application/json; charset=utf-8'
+            $body = [Text.Encoding]::UTF8.GetBytes((@{ name = $State.previous } | ConvertTo-Json -Compress))
+            [void]$client.UploadData($State.groupUri, 'PUT', $body)
+        } finally { $client.Dispose() }
+    } catch { }
+}
+
 Push-Location $rootPath
 try {
+    # Sync upstream GitHub updates before any local data work so the run and its
+    # deployment always start from the newest repository content. Fast-forward
+    # only: local uncommitted data always wins, and any failure (offline host,
+    # flaky proxy node, dirty-tree overlap, diverged history) degrades to a
+    # logged warning instead of blocking the daily pipeline. Never stash, reset,
+    # or merge-commit here. Outbound access to GitHub rides the machine-wide
+    # Clash TUN/fake-ip route whose currently selected node can flap, so the
+    # fetch is retried and, when a controller is configured, the proxy group is
+    # temporarily switched to the requested choice (same pattern as deploy_web.ps1).
+    $gitSync = [ordered]@{
+        attempted = $true; fetchOk = $false; ahead = 0; behind = 0
+        pulled = $false; commits = @(); status = 'fetch-failed'
+    }
+    $clashSwitchState = $null
+    try {
+        foreach ($attempt in @(1, 2)) {
+            $null = & $git 'fetch' 'origin'
+            if ($LASTEXITCODE -eq 0) { break }
+            Start-Sleep -Seconds (5 * $attempt)
+        }
+        if ($LASTEXITCODE -ne 0 -and
+            -not [string]::IsNullOrWhiteSpace($ClashController) -and
+            -not [string]::IsNullOrWhiteSpace($ClashProxyGroup) -and
+            -not [string]::IsNullOrWhiteSpace($ClashProxyChoice)) {
+            $clashSwitchState = Set-GitSyncClashChoice -Controller $ClashController -Group $ClashProxyGroup -Choice $ClashProxyChoice
+            if ($null -ne $clashSwitchState) { Start-Sleep -Seconds 2 }
+            $null = & $git 'fetch' 'origin'
+        }
+        if ($LASTEXITCODE -eq 0) {
+            $gitSync.fetchOk = $true
+            & $git 'rev-parse' '--verify' '--quiet' 'origin/main'
+            if ($LASTEXITCODE -ne 0) {
+                $gitSync.status = 'missing-origin-main'
+            } else {
+                $divergence = ((& $git 'rev-list' '--left-right' '--count' 'HEAD...origin/main') -join '').Trim()
+                if ($divergence -match '^(\d+)\s+(\d+)$') {
+                    $gitSync.ahead = [int]$Matches[1]
+                    $gitSync.behind = [int]$Matches[2]
+                }
+                if ($gitSync.behind -gt 0 -and $gitSync.ahead -eq 0) {
+                    $gitSync.commits = @(& $git 'log' '--format=%h %s' 'HEAD..origin/main' | Select-Object -First 10)
+                    $null = & $git 'merge' '--ff-only' 'origin/main'
+                    if ($LASTEXITCODE -eq 0) {
+                        $gitSync.pulled = $true
+                        $gitSync.status = 'fast-forwarded'
+                    } else {
+                        $gitSync.status = 'fast-forward-failed-local-changes-win'
+                    }
+                } elseif ($gitSync.ahead -gt 0) {
+                    $gitSync.status = 'local-ahead-not-pulled'
+                } else {
+                    $gitSync.status = 'up-to-date'
+                }
+            }
+        }
+    } catch {
+        $gitSync.status = 'error: ' + $_.Exception.Message
+    } finally {
+        Restore-GitSyncClashChoice -State $clashSwitchState
+    }
+    Write-Host ("[git-sync] {0} (ahead={1}, behind={2}, pulled={3})" -f $gitSync.status, $gitSync.ahead, $gitSync.behind, $gitSync.pulled)
+
     $startingStatus = @(& $git status --short)
     Assert-ExitCode $LASTEXITCODE @(0) 'initial git status'
     $trackedVideos = @(& $git ls-files | Where-Object {
@@ -587,6 +701,7 @@ try {
     [ordered]@{
         ok = $true
         status = if ($pendingReview) { 'review-needed' } else { 'complete' }
+        gitSync = $gitSync
         baselineExitCode = $baselineExit
         baselineStatus = if ($baselineExit -eq 2) { 'local-divergence-preserved' } else { 'in-sync' }
         scanExitCode = $scanExit
@@ -606,5 +721,7 @@ try {
     } | ConvertTo-Json -Depth 5
 } finally {
     Pop-Location
+    if ($null -eq $savedPythonIoEncoding) { Remove-Item Env:PYTHONIOENCODING -ErrorAction SilentlyContinue } else { $env:PYTHONIOENCODING = $savedPythonIoEncoding }
+    if ($null -eq $savedPythonUtf8) { Remove-Item Env:PYTHONUTF8 -ErrorAction SilentlyContinue } else { $env:PYTHONUTF8 = $savedPythonUtf8 }
     if ($dailyLockStream) { $dailyLockStream.Dispose() }
 }

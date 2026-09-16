@@ -1,7 +1,7 @@
 {
   "roomKey": "xiaosonglu",
   "roomId": "1727071052",
-  "generatedAt": "2026-09-09T17:16:46.949Z",
+  "generatedAt": "2026-09-14T02:42:02.943Z",
   "source": "local-replay-ingestion",
   "bySongKey": {
     "少女レイ": {
@@ -630,8 +630,23 @@
       "display_song_name": "YOU & IDOL",
       "artist": "相対性理論",
       "cut_link": "https://www.bilibili.com/video/BV1P6ud6dEkm/",
-      "total_count": 1,
+      "total_count": 2,
       "entries": [
+        {
+          "date": "2026-09-13",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "相対性理論",
+          "replay_id": "live:477e9075-4472-49f2-87c5-a1f925fefdb8",
+          "replay_title": "【小松绿Viridis】安静唱唱歌 歌切合集 2026.09.13",
+          "replay_url": "https://www.bilibili.com/video/BV1q9YB6xErK/",
+          "remark": "曲名与歌手已对照歌ネット/うたてん收录的相対性理論《YOU & IDOL》核实",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-collection-chapter",
+          "replay_date_source": "song-cut-title",
+          "cut_link": "https://www.bilibili.com/video/BV1q9YB6xErK/?p=6"
+        },
         {
           "date": "2026-08-10",
           "time": "",
@@ -2960,8 +2975,23 @@
       "display_song_name": "虚拟",
       "artist": "陈粒",
       "cut_link": "https://www.bilibili.com/video/BV1idb16YEjD/?p=10",
-      "total_count": 1,
+      "total_count": 2,
       "entries": [
+        {
+          "date": "2026-09-13",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "陈粒",
+          "replay_id": "live:477e9075-4472-49f2-87c5-a1f925fefdb8",
+          "replay_title": "【小松绿Viridis】安静唱唱歌 歌切合集 2026.09.13",
+          "replay_url": "https://www.bilibili.com/video/BV1q9YB6xErK/",
+          "remark": "弹幕 03:15「刚刚唱虚拟的牛劲呢」印证；与 2026-09-03 陈粒《小半》同标注惯例（民谣、流行）",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-collection-chapter",
+          "replay_date_source": "song-cut-title",
+          "cut_link": "https://www.bilibili.com/video/BV1q9YB6xErK/?p=19"
+        },
         {
           "date": "2026-08-15",
           "time": "",
@@ -4351,6 +4381,481 @@
           "song_resolution_method": "standalone-song-cut-title-cross-check",
           "replay_date_source": "song-cut-title",
           "cut_link": "https://www.bilibili.com/video/BV1ceYE6BEPo/"
+        }
+      ]
+    },
+    "遇见你的时候所有星星都落到我头上": {
+      "row_key": "遇见你的时候所有星星都落到我头上",
+      "song_name": "遇见你的时候所有星星都落到我头上",
+      "display_song_name": "遇见你的时候所有星星都落到我头上",
+      "artist": "高姗",
+      "cut_link": "https://www.bilibili.com/video/BV1q9YB6xErK/?p=1",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-09-13",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "高姗",
+          "replay_id": "live:477e9075-4472-49f2-87c5-a1f925fefdb8",
+          "replay_title": "【小松绿Viridis】安静唱唱歌 歌切合集 2026.09.13",
+          "replay_url": "https://www.bilibili.com/video/BV1q9YB6xErK/",
+          "remark": "",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-collection-chapter",
+          "replay_date_source": "song-cut-title",
+          "cut_link": "https://www.bilibili.com/video/BV1q9YB6xErK/?p=1"
+        }
+      ]
+    },
+    "月光食堂": {
+      "row_key": "月光食堂",
+      "song_name": "月光食堂",
+      "display_song_name": "月光食堂",
+      "artist": "古川本舗、ちびた",
+      "cut_link": "https://www.bilibili.com/video/BV1q9YB6xErK/?p=2",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-09-13",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "古川本舗、ちびた",
+          "replay_id": "live:477e9075-4472-49f2-87c5-a1f925fefdb8",
+          "replay_title": "【小松绿Viridis】安静唱唱歌 歌切合集 2026.09.13",
+          "replay_url": "https://www.bilibili.com/video/BV1q9YB6xErK/",
+          "remark": "弹幕 00:03~00:10 多次提及「月光食堂」（「竟然有月光食堂」「月光食堂好听」），位置与本章节吻合",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-collection-chapter",
+          "replay_date_source": "song-cut-title",
+          "cut_link": "https://www.bilibili.com/video/BV1q9YB6xErK/?p=2"
+        }
+      ]
+    },
+    "大小姐和大少爷的反派生涯": {
+      "row_key": "大小姐和大少爷的反派生涯",
+      "song_name": "大小姐和大少爷的反派生涯",
+      "display_song_name": "大小姐和大少爷的反派生涯",
+      "artist": "JUSF周存、洛天依Official",
+      "cut_link": "https://www.bilibili.com/video/BV1q9YB6xErK/?p=3",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-09-13",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "JUSF周存、洛天依Official",
+          "replay_id": "live:477e9075-4472-49f2-87c5-a1f925fefdb8",
+          "replay_title": "【小松绿Viridis】安静唱唱歌 歌切合集 2026.09.13",
+          "replay_url": "https://www.bilibili.com/video/BV1q9YB6xErK/",
+          "remark": "",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-collection-chapter",
+          "replay_date_source": "song-cut-title",
+          "cut_link": "https://www.bilibili.com/video/BV1q9YB6xErK/?p=3"
+        }
+      ]
+    },
+    "下雨天": {
+      "row_key": "下雨天",
+      "song_name": "下雨天",
+      "display_song_name": "下雨天",
+      "artist": "南拳妈妈",
+      "cut_link": "https://www.bilibili.com/video/BV1q9YB6xErK/?p=4",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-09-13",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "南拳妈妈",
+          "replay_id": "live:477e9075-4472-49f2-87c5-a1f925fefdb8",
+          "replay_title": "【小松绿Viridis】安静唱唱歌 歌切合集 2026.09.13",
+          "replay_url": "https://www.bilibili.com/video/BV1q9YB6xErK/",
+          "remark": "",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-collection-chapter",
+          "replay_date_source": "song-cut-title",
+          "cut_link": "https://www.bilibili.com/video/BV1q9YB6xErK/?p=4"
+        }
+      ]
+    },
+    "夏天的风": {
+      "row_key": "夏天的风",
+      "song_name": "夏天的风",
+      "display_song_name": "夏天的风",
+      "artist": "温岚",
+      "cut_link": "https://www.bilibili.com/video/BV1q9YB6xErK/?p=5",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-09-13",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "温岚",
+          "replay_id": "live:477e9075-4472-49f2-87c5-a1f925fefdb8",
+          "replay_title": "【小松绿Viridis】安静唱唱歌 歌切合集 2026.09.13",
+          "replay_url": "https://www.bilibili.com/video/BV1q9YB6xErK/",
+          "remark": "",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-collection-chapter",
+          "replay_date_source": "song-cut-title",
+          "cut_link": "https://www.bilibili.com/video/BV1q9YB6xErK/?p=5"
+        }
+      ]
+    },
+    "小小": {
+      "row_key": "小小",
+      "song_name": "小小",
+      "display_song_name": "小小",
+      "artist": "容祖儿",
+      "cut_link": "https://www.bilibili.com/video/BV1q9YB6xErK/?p=7",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-09-13",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "容祖儿",
+          "replay_id": "live:477e9075-4472-49f2-87c5-a1f925fefdb8",
+          "replay_title": "【小松绿Viridis】安静唱唱歌 歌切合集 2026.09.13",
+          "replay_url": "https://www.bilibili.com/video/BV1q9YB6xErK/",
+          "remark": "",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-collection-chapter",
+          "replay_date_source": "song-cut-title",
+          "cut_link": "https://www.bilibili.com/video/BV1q9YB6xErK/?p=7"
+        }
+      ]
+    },
+    "たばこ": {
+      "row_key": "たばこ",
+      "song_name": "たばこ",
+      "display_song_name": "たばこ",
+      "artist": "Sawako碎花",
+      "cut_link": "https://www.bilibili.com/video/BV1q9YB6xErK/?p=8",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-09-13",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "Sawako碎花",
+          "replay_id": "live:477e9075-4472-49f2-87c5-a1f925fefdb8",
+          "replay_title": "【小松绿Viridis】安静唱唱歌 歌切合集 2026.09.13",
+          "replay_url": "https://www.bilibili.com/video/BV1q9YB6xErK/",
+          "remark": "碎花翻唱版本；原唱为日本创作歌手コレサワ（Koresawa）",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-collection-chapter",
+          "replay_date_source": "song-cut-title",
+          "cut_link": "https://www.bilibili.com/video/BV1q9YB6xErK/?p=8"
+        }
+      ]
+    },
+    "我愛你-上海蟹-": {
+      "row_key": "我愛你-上海蟹-",
+      "song_name": "我愛你-上海蟹-",
+      "display_song_name": "我愛你-上海蟹-",
+      "artist": "カニ研究会",
+      "cut_link": "https://www.bilibili.com/video/BV1q9YB6xErK/?p=9",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-09-13",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "カニ研究会",
+          "replay_id": "live:477e9075-4472-49f2-87c5-a1f925fefdb8",
+          "replay_title": "【小松绿Viridis】安静唱唱歌 歌切合集 2026.09.13",
+          "replay_url": "https://www.bilibili.com/video/BV1q9YB6xErK/",
+          "remark": "中日混合歌词的网络热门曲（KKBOX/YouTube 收录核实）；弹幕 01:36「哦哦哦上海蟹」印证",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-collection-chapter",
+          "replay_date_source": "song-cut-title",
+          "cut_link": "https://www.bilibili.com/video/BV1q9YB6xErK/?p=9"
+        }
+      ]
+    },
+    "情歌": {
+      "row_key": "情歌",
+      "song_name": "情歌",
+      "display_song_name": "情歌",
+      "artist": "梁静茹",
+      "cut_link": "https://www.bilibili.com/video/BV1q9YB6xErK/?p=10",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-09-13",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "梁静茹",
+          "replay_id": "live:477e9075-4472-49f2-87c5-a1f925fefdb8",
+          "replay_title": "【小松绿Viridis】安静唱唱歌 歌切合集 2026.09.13",
+          "replay_url": "https://www.bilibili.com/video/BV1q9YB6xErK/",
+          "remark": "",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-collection-chapter",
+          "replay_date_source": "song-cut-title",
+          "cut_link": "https://www.bilibili.com/video/BV1q9YB6xErK/?p=10"
+        }
+      ]
+    },
+    "Melody（半首）": {
+      "row_key": "Melody（半首）",
+      "song_name": "Melody（半首）",
+      "display_song_name": "Melody（半首）",
+      "artist": "陶喆",
+      "cut_link": "https://www.bilibili.com/video/BV1q9YB6xErK/?p=11",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-09-13",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "陶喆",
+          "replay_id": "live:477e9075-4472-49f2-87c5-a1f925fefdb8",
+          "replay_title": "【小松绿Viridis】安静唱唱歌 歌切合集 2026.09.13",
+          "replay_url": "https://www.bilibili.com/video/BV1q9YB6xErK/",
+          "remark": "合集章节标注（半首），仅演唱半首，歌名保留标注以区别完整版",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-collection-chapter",
+          "replay_date_source": "song-cut-title",
+          "cut_link": "https://www.bilibili.com/video/BV1q9YB6xErK/?p=11"
+        }
+      ]
+    },
+    "普通朋友（半首）": {
+      "row_key": "普通朋友（半首）",
+      "song_name": "普通朋友（半首）",
+      "display_song_name": "普通朋友（半首）",
+      "artist": "陶喆",
+      "cut_link": "https://www.bilibili.com/video/BV1q9YB6xErK/?p=12",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-09-13",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "陶喆",
+          "replay_id": "live:477e9075-4472-49f2-87c5-a1f925fefdb8",
+          "replay_title": "【小松绿Viridis】安静唱唱歌 歌切合集 2026.09.13",
+          "replay_url": "https://www.bilibili.com/video/BV1q9YB6xErK/",
+          "remark": "合集章节标注（半首）；弹幕 01:53 多次提及「普通朋友」印证",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-collection-chapter",
+          "replay_date_source": "song-cut-title",
+          "cut_link": "https://www.bilibili.com/video/BV1q9YB6xErK/?p=12"
+        }
+      ]
+    },
+    "年轮": {
+      "row_key": "年轮",
+      "song_name": "年轮",
+      "display_song_name": "年轮",
+      "artist": "张碧晨",
+      "cut_link": "https://www.bilibili.com/video/BV1q9YB6xErK/?p=13",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-09-13",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "张碧晨",
+          "replay_id": "live:477e9075-4472-49f2-87c5-a1f925fefdb8",
+          "replay_title": "【小松绿Viridis】安静唱唱歌 歌切合集 2026.09.13",
+          "replay_url": "https://www.bilibili.com/video/BV1q9YB6xErK/",
+          "remark": "电视剧《花千骨》插曲，故加影视标签",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-collection-chapter",
+          "replay_date_source": "song-cut-title",
+          "cut_link": "https://www.bilibili.com/video/BV1q9YB6xErK/?p=13"
+        }
+      ]
+    },
+    "たぶん": {
+      "row_key": "たぶん",
+      "song_name": "たぶん",
+      "display_song_name": "たぶん",
+      "artist": "YOASOBI",
+      "cut_link": "https://www.bilibili.com/video/BV1q9YB6xErK/?p=14",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-09-13",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "YOASOBI",
+          "replay_id": "live:477e9075-4472-49f2-87c5-a1f925fefdb8",
+          "replay_title": "【小松绿Viridis】安静唱唱歌 歌切合集 2026.09.13",
+          "replay_url": "https://www.bilibili.com/video/BV1q9YB6xErK/",
+          "remark": "",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-collection-chapter",
+          "replay_date_source": "song-cut-title",
+          "cut_link": "https://www.bilibili.com/video/BV1q9YB6xErK/?p=14"
+        }
+      ]
+    },
+    "老人と海": {
+      "row_key": "老人と海",
+      "song_name": "老人と海",
+      "display_song_name": "老人と海",
+      "artist": "ヨルシカ",
+      "cut_link": "https://www.bilibili.com/video/BV1q9YB6xErK/?p=15",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-09-13",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "ヨルシカ",
+          "replay_id": "live:477e9075-4472-49f2-87c5-a1f925fefdb8",
+          "replay_title": "【小松绿Viridis】安静唱唱歌 歌切合集 2026.09.13",
+          "replay_url": "https://www.bilibili.com/video/BV1q9YB6xErK/",
+          "remark": "弹幕 02:15 点歌「有没有ヨルシカ」后连续演唱的三首ヨルシカ曲目之一",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-collection-chapter",
+          "replay_date_source": "song-cut-title",
+          "cut_link": "https://www.bilibili.com/video/BV1q9YB6xErK/?p=15"
+        }
+      ]
+    },
+    "言って。": {
+      "row_key": "言って。",
+      "song_name": "言って。",
+      "display_song_name": "言って。",
+      "artist": "ヨルシカ",
+      "cut_link": "https://www.bilibili.com/video/BV1q9YB6xErK/?p=16",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-09-13",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "ヨルシカ",
+          "replay_id": "live:477e9075-4472-49f2-87c5-a1f925fefdb8",
+          "replay_title": "【小松绿Viridis】安静唱唱歌 歌切合集 2026.09.13",
+          "replay_url": "https://www.bilibili.com/video/BV1q9YB6xErK/",
+          "remark": "弹幕 02:15 点歌「有没有ヨルシカ」后连续演唱的三首ヨルシカ曲目之二",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-collection-chapter",
+          "replay_date_source": "song-cut-title",
+          "cut_link": "https://www.bilibili.com/video/BV1q9YB6xErK/?p=16"
+        }
+      ]
+    },
+    "啄木鳥（半首）": {
+      "row_key": "啄木鳥（半首）",
+      "song_name": "啄木鳥（半首）",
+      "display_song_name": "啄木鳥（半首）",
+      "artist": "ヨルシカ",
+      "cut_link": "https://www.bilibili.com/video/BV1q9YB6xErK/?p=17",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-09-13",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "ヨルシカ",
+          "replay_id": "live:477e9075-4472-49f2-87c5-a1f925fefdb8",
+          "replay_title": "【小松绿Viridis】安静唱唱歌 歌切合集 2026.09.13",
+          "replay_url": "https://www.bilibili.com/video/BV1q9YB6xErK/",
+          "remark": "ヨルシカ官方歌词页核实曲名；合集章节标注（半首）；点歌ヨルシカ系列之三",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-collection-chapter",
+          "replay_date_source": "song-cut-title",
+          "cut_link": "https://www.bilibili.com/video/BV1q9YB6xErK/?p=17"
+        }
+      ]
+    },
+    "云烟成雨": {
+      "row_key": "云烟成雨",
+      "song_name": "云烟成雨",
+      "display_song_name": "云烟成雨",
+      "artist": "房东的猫",
+      "cut_link": "https://www.bilibili.com/video/BV1q9YB6xErK/?p=18",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-09-13",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "房东的猫",
+          "replay_id": "live:477e9075-4472-49f2-87c5-a1f925fefdb8",
+          "replay_title": "【小松绿Viridis】安静唱唱歌 歌切合集 2026.09.13",
+          "replay_url": "https://www.bilibili.com/video/BV1q9YB6xErK/",
+          "remark": "动画《我是江小白》片尾曲，故加动画标签",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-collection-chapter",
+          "replay_date_source": "song-cut-title",
+          "cut_link": "https://www.bilibili.com/video/BV1q9YB6xErK/?p=18"
+        }
+      ]
+    },
+    "死別": {
+      "row_key": "死別",
+      "song_name": "死別",
+      "display_song_name": "死別",
+      "artist": "シャノン、GUMI",
+      "cut_link": "https://www.bilibili.com/video/BV1q9YB6xErK/?p=20",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-09-13",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "シャノン、GUMI",
+          "replay_id": "live:477e9075-4472-49f2-87c5-a1f925fefdb8",
+          "replay_title": "【小松绿Viridis】安静唱唱歌 歌切合集 2026.09.13",
+          "replay_url": "https://www.bilibili.com/video/BV1q9YB6xErK/",
+          "remark": "弹幕 02:59~03:00 多次提及「死别」印证；シャノン feat. GUMI",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-collection-chapter",
+          "replay_date_source": "song-cut-title",
+          "cut_link": "https://www.bilibili.com/video/BV1q9YB6xErK/?p=20"
+        }
+      ]
+    },
+    "给电影人的情书": {
+      "row_key": "给电影人的情书",
+      "song_name": "给电影人的情书",
+      "display_song_name": "给电影人的情书",
+      "artist": "蔡琴",
+      "cut_link": "https://www.bilibili.com/video/BV1q9YB6xErK/?p=21",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-09-13",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "蔡琴",
+          "replay_id": "live:477e9075-4472-49f2-87c5-a1f925fefdb8",
+          "replay_title": "【小松绿Viridis】安静唱唱歌 歌切合集 2026.09.13",
+          "replay_url": "https://www.bilibili.com/video/BV1q9YB6xErK/",
+          "remark": "弹幕 03:13「给电影人的情书吗」印证；蔡琴经典曲目，沿用「华语经典」标签先例（孟庭苇条目）",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-collection-chapter",
+          "replay_date_source": "song-cut-title",
+          "cut_link": "https://www.bilibili.com/video/BV1q9YB6xErK/?p=21"
         }
       ]
     }

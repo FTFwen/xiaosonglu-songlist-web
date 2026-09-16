@@ -334,7 +334,7 @@ def probe_audio(ffprobe: Path, path: Path) -> None:
         "-show_entries", "stream=codec_type,duration", "-of", "json", str(path),
     ]
     try:
-        result = subprocess.run(command, capture_output=True, text=True, timeout=60, check=False)
+        result = subprocess.run(command, capture_output=True, text=True, encoding="utf-8", errors="replace", timeout=60, check=False)
     except (OSError, subprocess.TimeoutExpired) as error:
         raise ValueError(f"ffprobe failed for {path.name}") from error
     if result.returncode != 0:
@@ -374,7 +374,11 @@ def run_download(
         "--fragment-retries", str(retries), "--newline", download_page_url(url, part, kind),
     ]
     try:
-        result = subprocess.run(command, capture_output=True, text=True, timeout=timeout_seconds, check=False)
+        # yt-dlp relays ffmpeg log lines that native ffmpeg encodes with the
+        # system ANSI codepage (GBK on Chinese Windows); decoding with
+        # errors="replace" keeps the reader thread alive while only the exit
+        # code of yt-dlp is consumed from this capture.
+        result = subprocess.run(command, capture_output=True, text=True, encoding="utf-8", errors="replace", timeout=timeout_seconds, check=False)
     except subprocess.TimeoutExpired:
         return 124
     except OSError as error:

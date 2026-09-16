@@ -1,10 +1,10 @@
 {
   "roomKey": "xiaosonglu",
   "roomId": "1727071052",
-  "generatedAt": "2026-09-09T17:16:46.949Z",
+  "generatedAt": "2026-09-14T02:45:08.359Z",
   "source": "song-cut-title-index",
   "description": "每首歌对应的歌切切片标题（单曲歌切视频标题 / 合集分P标题），供前端歌切链接显示。",
-  "count": 168,
+  "count": 187,
   "cuts": {
     "勾指起誓": {
       "title": "【小松绿|羽啾】“说好从今以后都牵着手 因为要走很远”《勾指起誓》【虚空合唱】",
@@ -845,6 +845,101 @@
       "title": "『中华墨水娘』！中华少女系列连唱之一！【小松绿Viridis】",
       "kind": "single",
       "url": "https://www.bilibili.com/video/BV165YJ6gEUy/"
+    },
+    "遇见你的时候所有星星都落到我头上": {
+      "title": "01_遇见你的时候所有星星都落到我头上 - 高姗",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1q9YB6xErK/?p=1"
+    },
+    "月光食堂": {
+      "title": "02_月光食堂 - 古川本舗, ちびた",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1q9YB6xErK/?p=2"
+    },
+    "大小姐和大少爷的反派生涯": {
+      "title": "03_大小姐和大少爷的反派生涯 - JUSF周存, 洛天依Official",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1q9YB6xErK/?p=3"
+    },
+    "下雨天": {
+      "title": "04_下雨天 - 南拳妈妈",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1q9YB6xErK/?p=4"
+    },
+    "夏天的风": {
+      "title": "05_夏天的风 - 温岚",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1q9YB6xErK/?p=5"
+    },
+    "小小": {
+      "title": "07_小小 - 容祖儿",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1q9YB6xErK/?p=7"
+    },
+    "たばこ": {
+      "title": "08_たばこ - Sawako碎花",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1q9YB6xErK/?p=8"
+    },
+    "我愛你-上海蟹-": {
+      "title": "09_我愛你-上海蟹- - カニ研究会",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1q9YB6xErK/?p=9"
+    },
+    "情歌": {
+      "title": "10_情歌 - 梁静茹",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1q9YB6xErK/?p=10"
+    },
+    "Melody（半首）": {
+      "title": "11_Melody（半首） - 陶喆",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1q9YB6xErK/?p=11"
+    },
+    "普通朋友（半首）": {
+      "title": "12_普通朋友（半首） - 陶喆",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1q9YB6xErK/?p=12"
+    },
+    "年轮": {
+      "title": "13_年轮 - 张碧晨",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1q9YB6xErK/?p=13"
+    },
+    "たぶん": {
+      "title": "14_たぶん - YOASOBI",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1q9YB6xErK/?p=14"
+    },
+    "老人と海": {
+      "title": "15_老人と海 - ヨルシカ",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1q9YB6xErK/?p=15"
+    },
+    "言って。": {
+      "title": "16_言って。 - ヨルシカ",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1q9YB6xErK/?p=16"
+    },
+    "啄木鳥（半首）": {
+      "title": "17_啄木鳥（半首） - ヨルシカ",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1q9YB6xErK/?p=17"
+    },
+    "云烟成雨": {
+      "title": "18_云烟成雨 - 房东的猫",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1q9YB6xErK/?p=18"
+    },
+    "死別": {
+      "title": "20_死別 - シャノン, GUMI",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1q9YB6xErK/?p=20"
+    },
+    "给电影人的情书": {
+      "title": "21_给电影人的情书 - 蔡琴",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1q9YB6xErK/?p=21"
     }
   }
 }
