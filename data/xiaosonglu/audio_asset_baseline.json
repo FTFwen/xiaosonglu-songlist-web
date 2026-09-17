@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "count": 185,
+  "count": 186,
   "sourceBase": "https://viridis.love/",
-  "capturedAt": "2026-09-14T05:58:05.533787Z",
+  "capturedAt": "2026-09-17T16:15:15.120441Z",
   "files": {
     "assets/audio/song_02.m4a": {
       "bytes": 5176731,
@@ -419,6 +419,10 @@
     "assets/audio/song_186.m4a": {
       "bytes": 3882672,
       "sha256": "d793f5987aeadcb713c908a4b7651a4a48366d6089457bc4df5ad6ba7fb1959e"
+    },
+    "assets/audio/song_187.m4a": {
+      "bytes": 6138232,
+      "sha256": "f04a9cdb72082a478ba9a6c4bfba089fb8c272d336a463a5f39d40a9bdfd0df7"
     },
     "assets/audio/song_19.m4a": {
       "bytes": 6029182,

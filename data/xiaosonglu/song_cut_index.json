@@ -3,7 +3,7 @@
   "roomId": "1727071052",
   "sourceType": "bilibili-song-cut-index",
   "description": "从 Bilibili 直接搜索“小松绿歌切”等关键词收集的增量歌切台账。优先收录带明确日期标记的歌切；对于合集歌切，可使用视频选集/分P标题里的歌曲名；对于标题花哨但简介写明日期的单曲歌切，可用简介日期入表，但表中 song_name 只保留真实歌曲名。用同一天同一首歌做重复判定。",
-  "updatedAt": "2026-09-14T02:45:08.359Z",
+  "updatedAt": "2026-09-17T02:13:30.383Z",
   "strategy": {
     "acceptedDateMarkers": [
       "8.15",
@@ -4918,6 +4918,27 @@
       "duplicate_of": "",
       "collected_at": "2026-09-14T02:45:08.359Z",
       "notes": "UP主 57249810 的 2026.09.13 歌切合集章节"
+    },
+    {
+      "clip_date": "2026-09-16",
+      "date_source": "description-date",
+      "date_text": "2026-09-16",
+      "song_name": "住在天狼星的那个人",
+      "song_name_source": "title-song-name",
+      "artist": "OHMYMEITING（黄美婷）",
+      "clip_kind": "single",
+      "chapter_title": "",
+      "clip_title": "【小松绿】“明明你就是对的人”《住在天狼星的那个人》",
+      "clip_url": "https://www.bilibili.com/video/BV1PQeN6kETG/",
+      "clip_bvid": "BV1PQeN6kETG",
+      "uploader": "黄鱼鼠条",
+      "duration": "",
+      "source_query": "",
+      "duplicate_key": "2026-09-16::住在天狼星的那个人",
+      "duplicate_status": "primary",
+      "duplicate_of": "",
+      "collected_at": "2026-09-17T02:13:30.383Z",
+      "notes": "UP 137700370 单独歌切，时长 4:42；简介含主播空间链接与「2026年9月16日杂谈」；发布时间 2026-09-16T16:35:29Z"
     }
   ]
 }

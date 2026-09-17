@@ -1,11 +1,11 @@
 // 本文件由 scripts/build_xiaosonglu_song_data.mjs 从 data/xiaosonglu/ 生成，供 file:// 离线回退使用。
-// 生成时间：2026-09-14 13:58:05
+// 生成时间：2026-09-17 16:36:19
 // 数据源：data/xiaosonglu/（song_catalog / history_index / song_details / audio_index / song_cut_info）
 window.XSL_DATA = {
   song_catalog: {
   "roomKey": "xiaosonglu",
   "roomId": "1727071052",
-  "generatedAt": "2026-09-14T02:42:02.943Z",
+  "generatedAt": "2026-09-17T02:10:31.549Z",
   "source": "local-replay-ingestion",
   "songs": [
     {
@@ -3934,23 +3934,45 @@ window.XSL_DATA = {
       "status_labels": "歌回、歌切合集复核",
       "last_sing_at": "2026-09-13",
       "row_key": "たぶん"
+    },
+    {
+      "song_id": 188,
+      "song_name": "住在天狼星的那个人",
+      "show_as_song_name": "",
+      "display_song_name": "住在天狼星的那个人",
+      "artist": "OHMYMEITING（黄美婷）",
+      "artist_search": "OHMYMEITING",
+      "feat_artist": "",
+      "remark": "初扫因无【】括号歌词弹幕自动判为 no-songs，经用户提供歌切 BV1PQeN6kETG 人工翻案。UP 黄鱼鼠条（mid=137700370）独立歌切，简介注明「2026年9月16日杂谈」，发布于直播结束后（2026-09-17 00:35 UTC+8）；曲名《住在天狼星的那个人》与原唱 OHMYMEITING（黄美婷）经 Apple Music／Musixmatch／Shazam 交叉核实，标题歌词「明明你就是对的人」及原词「让我们一起私奔」与直播弹幕玩梗内容吻合。弹幕中的「现场写歌」「原创领域大神」为观众调侃唱功咬字，非即兴原创曲。用户已人工确认无误。startTime/endTime 为弹幕反应窗估计值。",
+      "tone": "",
+      "language": "中文",
+      "type": "流行",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1PQeN6kETG/",
+      "sing_count": 1,
+      "status_labels": "歌回、独立歌切复核",
+      "last_sing_at": "2026-09-16",
+      "row_key": "住在天狼星的那个人"
     }
   ]
 },
   history_index: {
   "roomKey": "xiaosonglu",
   "roomId": "1727071052",
-  "generatedAt": "2026-09-14T02:42:02.943Z",
+  "generatedAt": "2026-09-17T02:10:31.549Z",
   "source": "local-replay-ingestion",
   "latest": {
     "year": "2026",
     "month": "09",
-    "day": "13"
+    "day": "16"
   },
   "dateTree": {
     "2026": {
       "09": {
         "13": 21,
+        "16": 1,
         "08": 29,
         "03": 21
       },
@@ -7554,13 +7576,33 @@ window.XSL_DATA = {
         "song_resolution_method": "song-cut-collection-chapter",
         "cut_link": "https://www.bilibili.com/video/BV1q9YB6xErK/?p=21"
       }
+    ],
+    "2026-09-16": [
+      {
+        "song_name": "住在天狼星的那个人",
+        "sing_time": "00:52:30",
+        "statuses": [
+          "歌回",
+          "独立歌切复核"
+        ],
+        "artist": "OHMYMEITING（黄美婷）",
+        "replay_id": "live:4be8b076-c445-4aa5-8161-48f23a4b37b3",
+        "replay_title": "【小松绿】“明明你就是对的人”《住在天狼星的那个人》",
+        "replay_url": "https://www.bilibili.com/video/BV1PQeN6kETG/",
+        "start_time": "00:52:30",
+        "end_time": "00:57:12",
+        "row_key": "住在天狼星的那个人",
+        "lyric_excerpt": "观众反应窗口 00:52:30~00:57:12（00:52:31 起刷「好仙」「绿神唱歌了，真的假的」，00:53:31~00:56:18 刷屏「小松绿唱歌好听」，00:57:05~00:57:12「唱的不像中文」收尾）；歌切时长 4:42（282 秒）与该窗口吻合。原曲歌词「明明你就是对的人／你要不要认真／给我一个温柔的吻／让我们一起私奔」对应弹幕玩梗「到底是对的人还是错的人」「一起私奔吧」「在唱你的那个」。",
+        "song_resolution_method": "standalone-song-cut-title-cross-check",
+        "cut_link": "https://www.bilibili.com/video/BV1PQeN6kETG/"
+      }
     ]
   }
 },
   song_details: {
   "roomKey": "xiaosonglu",
   "roomId": "1727071052",
-  "generatedAt": "2026-09-14T02:42:02.943Z",
+  "generatedAt": "2026-09-17T02:10:31.549Z",
   "source": "local-replay-ingestion",
   "bySongKey": {
     "少女レイ": {
@@ -12417,16 +12459,41 @@ window.XSL_DATA = {
           "cut_link": "https://www.bilibili.com/video/BV1q9YB6xErK/?p=21"
         }
       ]
+    },
+    "住在天狼星的那个人": {
+      "row_key": "住在天狼星的那个人",
+      "song_name": "住在天狼星的那个人",
+      "display_song_name": "住在天狼星的那个人",
+      "artist": "OHMYMEITING（黄美婷）",
+      "cut_link": "https://www.bilibili.com/video/BV1PQeN6kETG/",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-09-16",
+          "time": "00:52:30",
+          "end_time": "00:57:12",
+          "status": "歌回、独立歌切复核",
+          "artist": "OHMYMEITING（黄美婷）",
+          "replay_id": "live:4be8b076-c445-4aa5-8161-48f23a4b37b3",
+          "replay_title": "【小松绿】“明明你就是对的人”《住在天狼星的那个人》",
+          "replay_url": "https://www.bilibili.com/video/BV1PQeN6kETG/",
+          "remark": "初扫因无【】括号歌词弹幕自动判为 no-songs，经用户提供歌切 BV1PQeN6kETG 人工翻案。UP 黄鱼鼠条（mid=137700370）独立歌切，简介注明「2026年9月16日杂谈」，发布于直播结束后（2026-09-17 00:35 UTC+8）；曲名《住在天狼星的那个人》与原唱 OHMYMEITING（黄美婷）经 Apple Music／Musixmatch／Shazam 交叉核实，标题歌词「明明你就是对的人」及原词「让我们一起私奔」与直播弹幕玩梗内容吻合。弹幕中的「现场写歌」「原创领域大神」为观众调侃唱功咬字，非即兴原创曲。用户已人工确认无误。startTime/endTime 为弹幕反应窗估计值。",
+          "lyric_excerpt": "观众反应窗口 00:52:30~00:57:12（00:52:31 起刷「好仙」「绿神唱歌了，真的假的」，00:53:31~00:56:18 刷屏「小松绿唱歌好听」，00:57:05~00:57:12「唱的不像中文」收尾）；歌切时长 4:42（282 秒）与该窗口吻合。原曲歌词「明明你就是对的人／你要不要认真／给我一个温柔的吻／让我们一起私奔」对应弹幕玩梗「到底是对的人还是错的人」「一起私奔吧」「在唱你的那个」。",
+          "song_resolution_method": "standalone-song-cut-title-cross-check",
+          "replay_date_source": "description-date",
+          "cut_link": "https://www.bilibili.com/video/BV1PQeN6kETG/"
+        }
+      ]
     }
   }
 },
   audio_index: {
   "roomKey": "xiaosonglu",
   "roomId": "1727071052",
-  "generatedAt": "2026-09-14T05:58:05.204Z",
+  "generatedAt": "2026-09-17T08:36:19.672Z",
   "source": "song-cut-audio-download",
   "description": "每首歌对应的翻唱切片音频（从 B 站歌切/回放下载），供网页在线播放。",
-  "count": 185,
+  "count": 186,
   "audios": {
     "勾指起誓": "assets/audio/song_88.m4a?v=1d344dfde754",
     "蝴蝶": "assets/audio/song_25.m4a?v=d8fb99252c26",
@@ -12612,7 +12679,8 @@ window.XSL_DATA = {
     "啄木鳥（半首）": "assets/audio/song_183.m4a?v=bfbb60262c19",
     "云烟成雨": "assets/audio/song_184.m4a?v=8e2c3b7c9c17",
     "死別": "assets/audio/song_185.m4a?v=a1796bbdcbb6",
-    "给电影人的情书": "assets/audio/song_186.m4a?v=d793f5987aea"
+    "给电影人的情书": "assets/audio/song_186.m4a?v=d793f5987aea",
+    "住在天狼星的那个人": "assets/audio/song_187.m4a?v=f04a9cdb7208"
   },
   "verificationTargets": [
     "中华墨水娘",
@@ -12622,10 +12690,10 @@ window.XSL_DATA = {
   song_cut_info: {
   "roomKey": "xiaosonglu",
   "roomId": "1727071052",
-  "generatedAt": "2026-09-14T02:45:08.359Z",
+  "generatedAt": "2026-09-17T02:13:30.383Z",
   "source": "song-cut-title-index",
   "description": "每首歌对应的歌切切片标题（单曲歌切视频标题 / 合集分P标题），供前端歌切链接显示。",
-  "count": 187,
+  "count": 188,
   "cuts": {
     "勾指起誓": {
       "title": "【小松绿|羽啾】“说好从今以后都牵着手 因为要走很远”《勾指起誓》【虚空合唱】",
@@ -13561,6 +13629,11 @@ window.XSL_DATA = {
       "title": "21_给电影人的情书 - 蔡琴",
       "kind": "collection",
       "url": "https://www.bilibili.com/video/BV1q9YB6xErK/?p=21"
+    },
+    "住在天狼星的那个人": {
+      "title": "【小松绿】“明明你就是对的人”《住在天狼星的那个人》",
+      "kind": "single",
+      "url": "https://www.bilibili.com/video/BV1PQeN6kETG/"
     }
   }
 }

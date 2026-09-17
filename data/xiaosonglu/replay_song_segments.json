@@ -3,7 +3,7 @@
   "roomId": "1727071052",
   "sourceType": "bilibili-live-replay-song-segments",
   "description": "从小松绿直播回放中识别出的唱歌片段原始记录。由每日自动化或人工补录维护，随后通过 scripts/build_xiaosonglu_song_data.js 聚合成插件可直接读取的歌单与历史数据。歌名允许先根据歌词片段联网检索后再补全，回放日期允许先留空并由脚本从回放标题中解析。",
-  "updatedAt": "2026-09-14T02:42:02.943Z",
+  "updatedAt": "2026-09-17T02:10:31.549Z",
   "segments": [
     {
       "replay_id": "BV1Xiu86aEwV",
@@ -7448,6 +7448,55 @@
       "row_key": "给电影人的情书",
       "search_name": "",
       "resolution_candidates": []
+    },
+    {
+      "replay_id": "live:4be8b076-c445-4aa5-8161-48f23a4b37b3",
+      "replay_title": "【小松绿】“明明你就是对的人”《住在天狼星的那个人》",
+      "replay_url": "https://www.bilibili.com/video/BV1PQeN6kETG/",
+      "replay_date": "2026-09-16",
+      "replay_date_source": "description-date",
+      "segment_index": 1,
+      "start_time": "00:52:30",
+      "end_time": "00:57:12",
+      "lyric_excerpt": "观众反应窗口 00:52:30~00:57:12（00:52:31 起刷「好仙」「绿神唱歌了，真的假的」，00:53:31~00:56:18 刷屏「小松绿唱歌好听」，00:57:05~00:57:12「唱的不像中文」收尾）；歌切时长 4:42（282 秒）与该窗口吻合。原曲歌词「明明你就是对的人／你要不要认真／给我一个温柔的吻／让我们一起私奔」对应弹幕玩梗「到底是对的人还是错的人」「一起私奔吧」「在唱你的那个」。",
+      "song_search_query": "住在天狼星的那个人",
+      "song_resolution_method": "standalone-song-cut-title-cross-check",
+      "song_name": "住在天狼星的那个人",
+      "display_song_name": "住在天狼星的那个人",
+      "artist": "OHMYMEITING（黄美婷）",
+      "artist_search": "OHMYMEITING",
+      "feat_artist": "",
+      "language": "中文",
+      "tone": "",
+      "status_labels": [
+        "歌回",
+        "独立歌切复核"
+      ],
+      "display_version": "",
+      "type": "流行",
+      "remark": "初扫因无【】括号歌词弹幕自动判为 no-songs，经用户提供歌切 BV1PQeN6kETG 人工翻案。UP 黄鱼鼠条（mid=137700370）独立歌切，简介注明「2026年9月16日杂谈」，发布于直播结束后（2026-09-17 00:35 UTC+8）；曲名《住在天狼星的那个人》与原唱 OHMYMEITING（黄美婷）经 Apple Music／Musixmatch／Shazam 交叉核实，标题歌词「明明你就是对的人」及原词「让我们一起私奔」与直播弹幕玩梗内容吻合。弹幕中的「现场写歌」「原创领域大神」为观众调侃唱功咬字，非即兴原创曲。用户已人工确认无误。startTime/endTime 为弹幕反应窗估计值。",
+      "identification": "",
+      "cut_link": "https://www.bilibili.com/video/BV1PQeN6kETG/",
+      "confidence": 0.95,
+      "row_key": "住在天狼星的那个人",
+      "search_name": "",
+      "resolution_candidates": [
+        {
+          "title": "黃美婷Meiting《 住在天狼星的那個人》Lyric Video - YouTube",
+          "url": "https://www.youtube.com/watch?v=3Cl_kAngXhI",
+          "snippet": "歌曲名稱：住在天狼星的那個人 收錄專輯：別擔心！我不是壞人EP"
+        },
+        {
+          "title": "住在天狼星的那个人 - OHMYMEITING - Apple Music",
+          "url": "https://music.apple.com/cn/song/%E4%BD%8F%E5%9C%A8%E5%A4%A9%E7%8B%BC%E6%98%9F%E7%9A%84%E9%82%A3%E4%B8%AA%E4%BA%BA/1780952713",
+          "snippet": "出演艺人 OHMYMEITING；作曲和作词 Jeryl Lim"
+        },
+        {
+          "title": "OHMYMEITING - 住在天狼星的那個人 Lyrics - Musixmatch",
+          "url": "https://www.musixmatch.com/lyrics/%E9%BB%83%E7%BE%8E%E5%A9%B7/%E4%BD%8F%E5%9C%A8%E5%A4%A9%E7%8B%BC%E6%98%9F%E7%9A%84%E9%82%A3%E5%80%8B%E4%BA%BA/translation/english",
+          "snippet": "明明你就是對的人／你要不要認真／給我一個溫柔的吻（…私奔）"
+        }
+      ]
     }
   ]
 }
