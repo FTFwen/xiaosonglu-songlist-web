@@ -8,7 +8,7 @@
   <link rel="icon" href="assets/xiaosonglu-logo.png" type="image/png">
   <link rel="stylesheet" href="css/motion.css?v=18">
   <link rel="stylesheet" href="css/weather-ambience.css?v=11">
-  <link rel="stylesheet" href="css/midautumn-skin.css?v=3">
+  <link rel="stylesheet" href="css/midautumn-skin.css?v=4">
   <script>
     (function() {
       try {
@@ -76,6 +76,7 @@
           }
         }
         if (isMid && midPref !== 'off') {
+          document.documentElement.setAttribute('data-skin', 'midautumn');
           document.documentElement.setAttribute('data-midautumn-skin', 'true');
           document.documentElement.setAttribute('data-ambience-time', 'night');
           const metaCs = document.querySelector('meta[name="color-scheme"]');
@@ -2344,6 +2345,6 @@
   <script src="js/start.js?v=18" defer></script>
   <script src="js/motion.js?v=18" defer></script>
   <script src="js/weather-ambience.js?v=6" defer></script>
-  <script src="js/midautumn-skin.js?v=3" defer></script>
+  <script src="js/midautumn-skin.js?v=4" defer></script>
 </body>
 </html>

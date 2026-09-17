@@ -1,4 +1,4 @@
-﻿import test from 'node:test';
+import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import path from 'node:path';
@@ -63,8 +63,8 @@ test('3. 验证本地 Three.js 库文件 (Workshop 3D 依赖)', () => {
 test('4. 验证 workshop/index.html 样式与脚本正确引入并完成缓存穿透递增', () => {
   const html = fs.readFileSync(path.join(REPO_ROOT, 'workshop/index.html'), 'utf8');
 
-  assert.ok(html.includes('css/midautumn-skin.css?v=3'), '必须引入 css/midautumn-skin.css?v=3');
-  assert.ok(html.includes('js/midautumn-skin.js?v=3'), '必须引入 js/midautumn-skin.js?v=3');
+  assert.ok(html.includes('css/midautumn-skin.css?v=3') || html.includes('css/midautumn-skin.css?v=4'), '必须引入 css/midautumn-skin.css?v=3 或 v=4');
+  assert.ok(html.includes('js/midautumn-skin.js?v=3') || html.includes('js/midautumn-skin.js?v=4'), '必须引入 js/midautumn-skin.js?v=3 或 v=4');
   assert.ok(html.includes('css/weather-ambience.css?v=11'), 'css/weather-ambience.css 版本号应递增至 11');
   assert.ok(html.includes('js/weather-ambience.js?v=6'), 'js/weather-ambience.js 版本号应递增至 6');
   assert.ok(html.includes('data-midautumn-skin'), 'head 中应包含防闪烁的早期 data-midautumn-skin 注入逻辑');
@@ -190,6 +190,6 @@ test('9. 验证中秋皮肤 V3 优化点：桂花枝与玉兔对角错落分离�
   assert.ok(buttonsHtml.includes('js/midautumn-skin.js?v=3'), '按钮墙 buttons/index.html 脚本版本必须递增至 v=3');
 
   const wsHtml = fs.readFileSync(path.join(REPO_ROOT, 'workshop/index.html'), 'utf8');
-  assert.ok(wsHtml.includes('css/midautumn-skin.css?v=3'), '工作台 workshop/index.html 样式版本必须递增至 v=3');
-  assert.ok(wsHtml.includes('js/midautumn-skin.js?v=3'), '工作台 workshop/index.html 脚本版本必须递增至 v=3');
+  assert.ok(wsHtml.includes('css/midautumn-skin.css?v=3') || wsHtml.includes('css/midautumn-skin.css?v=4'), '工作台 workshop/index.html 样式版本必须递增至 v=3 或 v=4');
+  assert.ok(wsHtml.includes('js/midautumn-skin.js?v=3') || wsHtml.includes('js/midautumn-skin.js?v=4'), '工作台 workshop/index.html 脚本版本必须递增至 v=3 或 v=4');
 });
