@@ -7,7 +7,8 @@
   <title>小松绿 · 个人工作台与初始页</title>
   <link rel="icon" href="assets/xiaosonglu-logo.png" type="image/png">
   <link rel="stylesheet" href="css/motion.css?v=18">
-  <link rel="stylesheet" href="css/weather-ambience.css?v=10">
+  <link rel="stylesheet" href="css/weather-ambience.css?v=11">
+  <link rel="stylesheet" href="css/midautumn-skin.css?v=3">
   <script>
     (function() {
       try {
@@ -36,6 +37,49 @@
             const metaCs = document.querySelector('meta[name="color-scheme"]');
             if (metaCs) metaCs.content = 'dark';
           }
+        }
+
+        // 中秋 3D 皮肤早期注入防闪烁
+        const midPref = localStorage.getItem('xsl_midautumn_skin_pref');
+        let isMid = (midPref === 'on');
+        if (!midPref) {
+          try {
+            const fmt = new Intl.DateTimeFormat('zh-CN-u-ca-chinese', { month: 'numeric', day: 'numeric' });
+            const parts = fmt.formatToParts(new Date());
+            const mp = parts.find(p => p.type === 'month');
+            const dp = parts.find(p => p.type === 'day');
+            if (mp && dp) {
+              const lm = parseInt(mp.value, 10), ld = parseInt(dp.value, 10);
+              if (lm === 8 && ld >= 1 && ld <= 20) isMid = true;
+            }
+          } catch(e) {}
+          if (!isMid) {
+            try {
+              const now = new Date();
+              const y = now.getFullYear();
+              const intervals = {
+                2024: [[9, 10], [9, 23]],
+                2025: [[9, 28], [10, 12]],
+                2026: [[9, 15], [9, 30]],
+                2027: [[9, 8], [9, 22]],
+                2028: [[9, 25], [10, 8]],
+                2029: [[9, 15], [9, 28]],
+                2030: [[9, 5], [9, 18]]
+              };
+              if (intervals[y]) {
+                const [[m1, d1], [m2, d2]] = intervals[y];
+                const start = new Date(y, m1 - 1, d1);
+                const end = new Date(y, m2 - 1, d2, 23, 59, 59);
+                if (now >= start && now <= end) isMid = true;
+              }
+            } catch(e) {}
+          }
+        }
+        if (isMid && midPref !== 'off') {
+          document.documentElement.setAttribute('data-midautumn-skin', 'true');
+          document.documentElement.setAttribute('data-ambience-time', 'night');
+          const metaCs = document.querySelector('meta[name="color-scheme"]');
+          if (metaCs) metaCs.content = 'dark';
         }
       } catch(e) {}
     })();
@@ -2299,6 +2343,7 @@
   <script src="js/data.js?v=31" defer></script>
   <script src="js/start.js?v=18" defer></script>
   <script src="js/motion.js?v=18" defer></script>
-  <script src="js/weather-ambience.js?v=4" defer></script>
+  <script src="js/weather-ambience.js?v=6" defer></script>
+  <script src="js/midautumn-skin.js?v=3" defer></script>
 </body>
 </html>

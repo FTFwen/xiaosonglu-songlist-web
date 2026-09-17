@@ -1024,10 +1024,9 @@
         top: 1px;
         right: 0;
         margin: 0;
-        padding: 3px 7px;
-        border: 1px solid rgba(138,154,78,0.2);
-        border-radius: 999px;
-        background: rgba(255,255,255,0.72);
+        padding: 0;
+        border: none;
+        background: transparent;
         color: #68754b;
         font-size: 10px;
       }
@@ -1204,6 +1203,17 @@
   </style>
   <link rel="stylesheet" href="../css/motion.css?v=18">
   <link rel="stylesheet" href="../css/cross-page-player.css?v=5">
+  <link rel="stylesheet" href="../css/midautumn-skin.css?v=3">
+  <script>
+    (function () {
+      try {
+        var skin = localStorage.getItem('xsl_festival_skin');
+        if (skin === 'midautumn' || skin === null) {
+          document.documentElement.setAttribute('data-skin', 'midautumn');
+        }
+      } catch (e) {}
+    })();
+  </script>
 </head>
 <body>
   <svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
@@ -1247,7 +1257,9 @@
         <a href="../"><svg class="icon" aria-hidden="true"><use href="#icon-music"></use></svg> 歌单</a>
         <a class="active" href="./"><svg class="icon" aria-hidden="true"><use href="#icon-playlist"></use></svg> 按钮墙</a>
         <a class="icon-only" href="../24xsl/" title="24点"><img src="../assets/24xsl-title.webp" alt="24点"></a>
+        <button class="skin-switch-btn mobile-skin-btn" id="mobileFestivalSkinBtn" type="button" title="节日皮肤切换"><span class="skin-switch-icon" aria-hidden="true">🥮</span><span class="skin-switch-label">中秋</span></button>
       </div>
+      <button class="skin-switch-btn" id="festivalSkinBtn" type="button" title="节日皮肤切换"><span class="skin-switch-icon" aria-hidden="true">🥮</span><span class="skin-switch-label">中秋</span><span class="skin-switch-badge">限定</span></button>
       <button class="admin-login-btn" id="adminLoginBtn"><svg class="icon" aria-hidden="true"><use href="#icon-sound"></use></svg> 管理员</button>
     </div>
   </div>
@@ -1358,5 +1370,6 @@
   <script src="buttons.js?v=33"></script>
   <script src="../js/cross-page-player.js?v=7" defer></script>
   <script src="../js/motion.js?v=18" defer></script>
+  <script src="../js/midautumn-skin.js?v=3" defer></script>
 </body>
 </html>

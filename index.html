@@ -6,6 +6,51 @@
   <link rel="icon" href="assets/xiaosonglu-bubble.png" type="image/png">
   <link rel="preload" href="assets/xiaosonglu-kuaile-subset.woff2?v=4" as="font" type="font/woff2" crossorigin>
   <title>小松绿歌单</title>
+  <link rel="stylesheet" href="css/midautumn-skin.css?v=3">
+  <script>
+    (function() {
+      try {
+        const pref = localStorage.getItem('xsl_festival_skin_pref') || localStorage.getItem('xsl_midautumn_skin_pref');
+        let isMid = (pref === 'midautumn' || pref === 'on');
+        if (!pref || pref === 'auto') {
+          try {
+            const fmt = new Intl.DateTimeFormat('zh-CN-u-ca-chinese', { month: 'numeric', day: 'numeric' });
+            const parts = fmt.formatToParts(new Date());
+            const mp = parts.find(p => p.type === 'month');
+            const dp = parts.find(p => p.type === 'day');
+            if (mp && dp) {
+              const lm = parseInt(mp.value, 10), ld = parseInt(dp.value, 10);
+              if (lm === 8 && ld >= 1 && ld <= 20) isMid = true;
+            }
+          } catch(e) {}
+          if (!isMid) {
+            try {
+              const now = new Date();
+              const y = now.getFullYear();
+              const intervals = {
+                2024: [[9, 10], [9, 23]],
+                2025: [[9, 28], [10, 12]],
+                2026: [[9, 15], [9, 30]],
+                2027: [[9, 8], [9, 22]],
+                2028: [[9, 25], [10, 8]],
+                2029: [[9, 15], [9, 28]],
+                2030: [[9, 5], [9, 18]]
+              };
+              if (intervals[y]) {
+                const [[m1, d1], [m2, d2]] = intervals[y];
+                const start = new Date(y, m1 - 1, d1);
+                const end = new Date(y, m2 - 1, d2, 23, 59, 59);
+                if (now >= start && now <= end) isMid = true;
+              }
+            } catch(e) {}
+          }
+        }
+        if (isMid && pref !== 'default' && pref !== 'off') {
+          document.documentElement.setAttribute('data-skin', 'midautumn');
+        }
+      } catch(e) {}
+    })();
+  </script>
   <link rel="stylesheet" href="css/motion.css?v=19">
   <link rel="stylesheet" href="css/listen-together.css?v=4">
   <style>
@@ -3982,8 +4027,10 @@
           <a class="active" href="./"><svg class="icon" aria-hidden="true"><use href="#icon-music"></use></svg> 歌单</a>
           <a href="/buttons/"><svg class="icon" aria-hidden="true"><use href="#icon-playlist"></use></svg> 按钮墙</a>
           <a class="icon-only" href="/24xsl/" title="24点"><img src="assets/24xsl-title.webp" alt="24点"></a>
+          <button class="skin-switch-btn mobile-skin-btn" id="mobileFestivalSkinBtn" type="button" title="节日皮肤切换"><span class="skin-switch-icon" aria-hidden="true">🥮</span><span class="skin-switch-label">中秋</span></button>
         </div>
         <div class="header-actions">
+          <button class="skin-switch-btn" id="festivalSkinBtn" type="button" title="节日皮肤切换"><span class="skin-switch-icon" aria-hidden="true">🥮</span><span class="skin-switch-label">中秋</span><span class="skin-switch-badge">限定</span></button>
           <button class="ghost-btn" id="refreshBtn" title="刷新歌单数据"><svg class="icon" aria-hidden="true"><use href="#icon-reload"></use></svg></button>
           <a class="ghost-btn" href="assets/downloads/songlist-assistant-v1.6.0.zip" download="直播间歌单助手-v1.6.0.zip" title="下载直播间歌单助手插件安装包（.zip）"><svg class="icon" aria-hidden="true"><use href="#icon-download"></use></svg></a>
           <button class="thanks-btn" id="thanksBtn">致谢名单</button>
@@ -4371,5 +4418,6 @@
   <script src="js/rating.js?v=8" defer></script>
   <script src="js/app.js?v=104" defer></script>
   <script src="js/motion.js?v=19" defer></script>
+  <script src="js/midautumn-skin.js?v=3" defer></script>
 </body>
 </html>

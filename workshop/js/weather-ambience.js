@@ -557,6 +557,25 @@
       return;
     }
 
+    if (window.MidAutumnSkin && window.MidAutumnSkin.isEnabled()) {
+      // 中秋皮肤激活时保持恒定满月静夜，关闭 2D 杂乱天气粒子
+      root.removeAttribute('data-ambience-disabled');
+      root.setAttribute('data-ambience-time', 'night');
+      root.setAttribute('data-ambience-weather', weather);
+      if (particleEngine) particleEngine.stop();
+      if (typeof window.applyStartSettings === 'function') {
+        window.applyStartSettings();
+      } else {
+        const rawOpacity = root.style.getPropertyValue('--card-opacity') || '0.45';
+        const op = parseFloat(rawOpacity) || 0.45;
+        root.style.setProperty('--card-bg', `rgba(16, 24, 36, ${Math.max(0.78, op)})`);
+      }
+      updateTopbarUI();
+      updatePanelUI();
+      broadcastToCompanion('night', weather, isUserTriggered);
+      return;
+    }
+
     root.removeAttribute('data-ambience-disabled');
     root.setAttribute('data-ambience-time', time);
     root.setAttribute('data-ambience-weather', weather);
@@ -588,6 +607,13 @@
     const dotEl = document.getElementById('ambienceStatusDot');
 
     if (!iconEl || !textEl) return;
+
+    if (window.MidAutumnSkin && window.MidAutumnSkin.isEnabled()) {
+      iconEl.textContent = '🥮';
+      textEl.textContent = '中秋';
+      if (dotEl) dotEl.className = 'ambience-status-dot midautumn';
+      return;
+    }
 
     if (state.disabled) {
       iconEl.textContent = '🌿';
@@ -639,6 +665,18 @@
     }
     if (disabledToggle) {
       disabledToggle.checked = !state.disabled;
+    }
+
+    const midautumnToggle = document.getElementById('midautumnSkinToggle');
+    const midautumnTag = document.getElementById('midautumnStatusTag');
+    if (midautumnToggle && window.MidAutumnSkin) {
+      const active = window.MidAutumnSkin.isEnabled();
+      midautumnToggle.checked = active;
+      if (midautumnTag) {
+        midautumnTag.textContent = active
+          ? '已开启'
+          : (window.MidAutumnSkin.isMidAutumnPeriod() ? '佳节开启' : '已停用');
+      }
     }
 
     // 氛围包激活态
@@ -813,6 +851,17 @@
 
       <!-- 偏好记忆与节能模式 -->
       <div class="ambience-options-wrap">
+        <!-- 中秋 3D 沉浸皮肤专属开关 -->
+        <div class="ambience-switch-item ambience-midautumn-toggle-item">
+          <div class="ambience-switch-label">
+            <span>🥮 中秋 3D 沉浸皮肤 <span class="ambience-tag-gold" id="midautumnStatusTag">佳节限定</span></span>
+            <span class="ambience-switch-sub">月满水乡 · 桂雨玉兔 · 3D 空间交互</span>
+          </div>
+          <label class="ambience-toggle">
+            <input type="checkbox" id="midautumnSkinToggle">
+            <span class="ambience-toggle-slider"></span>
+          </label>
+        </div>
         <div class="ambience-switch-item">
           <div class="ambience-switch-label">
             <span>✨ 启用时空光影与粒子</span>
@@ -932,6 +981,23 @@
         applyAmbience(state.time, state.weather, state.disabled, true);
       });
     }
+
+    // 中秋 3D 沉浸皮肤开关
+    const midautumnToggle = document.getElementById('midautumnSkinToggle');
+    if (midautumnToggle) {
+      midautumnToggle.addEventListener('change', (e) => {
+        if (window.MidAutumnSkin) {
+          window.MidAutumnSkin.setEnabled(e.target.checked);
+        }
+        updateTopbarUI();
+        updatePanelUI();
+      });
+    }
+
+    window.addEventListener('xsl-midautumn-skin-changed', () => {
+      updateTopbarUI();
+      updatePanelUI();
+    });
   }
 
   function setManualAmbience(time, weather) {
@@ -1019,6 +1085,8 @@
     getState: () => ({ ...state }),
     setManual: setManualAmbience,
     resetToAuto,
+    applyAmbience: (t, w, dis, u) => applyAmbience(t || state.time, w || state.weather, dis !== undefined ? dis : state.disabled, !!u),
+    stopParticles: () => { if (particleEngine) particleEngine.stop(); },
     setDisabled: (val) => {
       state.disabled = !!val;
       saveState();
