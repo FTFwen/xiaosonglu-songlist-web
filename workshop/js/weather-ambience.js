@@ -855,7 +855,7 @@
         <div class="ambience-switch-item ambience-midautumn-toggle-item">
           <div class="ambience-switch-label">
             <span>🥮 中秋 3D 沉浸皮肤 <span class="ambience-tag-gold" id="midautumnStatusTag">佳节限定</span></span>
-            <span class="ambience-switch-sub">月满水乡 · 桂雨玉兔 · 3D 空间交互</span>
+            <span class="ambience-switch-sub">月满水乡 · 金桂流光 · 3D 空间交互</span>
           </div>
           <label class="ambience-toggle">
             <input type="checkbox" id="midautumnSkinToggle">

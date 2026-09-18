@@ -1,8 +1,13 @@
 /* ==========================================================================
    Mid-Autumn Festival Skin Stylesheet (中秋·月满桂香 · 工作台专属节日皮肤)
    适用范围：个人工作台与初始页 (/workshop)
-   设计灵感：ThreeUI Sakura Sunset (Sylva)
-   设计理念：月满冰轮、金桂覆穹、多层景深、琉璃透光与流光夜色
+   设计灵感：ThreeUI Sakura Sunset (Sylva) · 江天一色无纤尘，皎皎空中孤月轮
+   核心特性：
+   1. 沉浸式水乡秋夜山水底纹 (消除背景死黑空洞，楼台灯影与碧波相映)
+   2. 苍劲古桂天幕枝干（超宽安全出血层与物理限幅，杜绝边缘穿模露底）
+   3. 流光金晕天幕、璀璨星野、划空流星、浮空祈福天灯与多层月夜薄雾
+   4. 夜光流萤闪耀氛围与全屏金桂雨微粒
+   5. 工作台全卡片琉璃透光毛玻璃 (Glassmorphism 极致一体化美化)
    ========================================================================== */
 
 :root {
@@ -10,45 +15,45 @@
   --midautumn-gold-light: #fff3c4;
   --midautumn-gold-deep: #faad14;
   --midautumn-gold-glow: rgba(255, 214, 102, 0.45);
-  --midautumn-night-bg: #060a14;
-  --midautumn-glass-bg: rgba(13, 20, 36, 0.48);
-  --midautumn-glass-border: rgba(255, 215, 120, 0.28);
+  --midautumn-night-bg: #050813;
+  --midautumn-glass-bg: rgba(13, 20, 36, 0.58);
+  --midautumn-glass-border: rgba(255, 215, 120, 0.32);
 }
 
 /* ===== 核心变量覆写 (在工作台中秋皮肤启用时生效) ===== */
 html[data-skin="midautumn"],
 html[data-midautumn-skin="true"] {
   color-scheme: dark;
-  --bg: #060a14;
-  --surface: rgba(14, 22, 38, 0.52);
-  --surface-soft: rgba(18, 28, 48, 0.45);
-  --surface-hover: rgba(25, 38, 65, 0.75);
-  --line: rgba(255, 215, 120, 0.22);
-  --line-strong: rgba(255, 215, 120, 0.42);
+  --bg: #050813;
+  --surface: rgba(14, 22, 38, 0.62);
+  --surface-soft: rgba(18, 28, 48, 0.52);
+  --surface-hover: rgba(26, 40, 70, 0.82);
+  --line: rgba(255, 215, 120, 0.25);
+  --line-strong: rgba(255, 215, 120, 0.48);
   --text: #fffdf5;
-  --text-soft: #d8dfeb;
+  --text-soft: #dce3f0;
   --text-muted: #94a3b8;
   --primary: #ffd666;
   --primary-dark: #d4a338;
-  --primary-soft: rgba(229, 184, 92, 0.18);
-  --primary-light: rgba(245, 218, 145, 0.12);
-  --primary-glow: rgba(255, 214, 102, 0.45);
+  --primary-soft: rgba(229, 184, 92, 0.2);
+  --primary-light: rgba(245, 218, 145, 0.14);
+  --primary-glow: rgba(255, 214, 102, 0.5);
   --cream: #fff4d0;
   --peach: #f5c49f;
-  --shadow-xs: 0 1px 4px rgba(0, 5, 15, 0.35);
-  --shadow-sm: 0 4px 14px rgba(0, 5, 15, 0.42);
-  --shadow: 0 14px 40px rgba(0, 5, 15, 0.58);
-  --shadow-lg: 0 24px 60px rgba(0, 5, 15, 0.75);
+  --shadow-xs: 0 1px 4px rgba(0, 5, 15, 0.4);
+  --shadow-sm: 0 4px 14px rgba(0, 5, 15, 0.48);
+  --shadow: 0 16px 44px rgba(0, 5, 15, 0.65);
+  --shadow-lg: 0 24px 64px rgba(0, 5, 15, 0.8);
 }
 
 /* 全局背景夜色基调 */
 html[data-skin="midautumn"] body,
 html[data-midautumn-skin="true"] body {
   background:
-    radial-gradient(circle at 82% 16%, rgba(255, 235, 160, 0.18) 0%, rgba(212, 163, 56, 0.06) 35%, transparent 65%),
-    radial-gradient(circle at 18% 45%, rgba(45, 75, 130, 0.16) 0%, transparent 60%),
-    linear-gradient(175deg, #060a14 0%, #0b1224 38%, #070c18 75%, #04070f 100%) !important;
-  background-color: #060a14 !important;
+    radial-gradient(ellipse 90% 60% at 80% 20%, rgba(255, 230, 150, 0.18) 0%, rgba(212, 163, 56, 0.08) 35%, transparent 70%),
+    radial-gradient(ellipse 70% 50% at 20% 50%, rgba(40, 70, 130, 0.22) 0%, transparent 65%),
+    linear-gradient(175deg, #050813 0%, #091122 35%, #080d1a 70%, #04070e 100%) !important;
+  background-color: #050813 !important;
   color: var(--text) !important;
   background-attachment: fixed !important;
 }
@@ -94,65 +99,169 @@ html[data-midautumn-skin="true"] .wallpaper-mask {
   perspective: 1000px;
 }
 
-/* 1. 远景：深邃天穹与星芒星尘 */
+/* 1. 远景：深邃天穹与广袤夜色基底 */
 .midautumn-nightsky {
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(circle at 82% 18%, rgba(255, 235, 160, 0.16) 0%, rgba(212, 163, 56, 0.06) 35%, transparent 65%),
-    radial-gradient(circle at 18% 45%, rgba(45, 75, 130, 0.18) 0%, transparent 60%),
-    linear-gradient(175deg, #060a14 0%, #0b1224 40%, #070c18 75%, #04070f 100%);
-  background-color: #060a14;
+    radial-gradient(ellipse 95% 65% at 82% 18%, rgba(255, 235, 160, 0.2) 0%, rgba(212, 163, 56, 0.08) 35%, transparent 68%),
+    radial-gradient(circle at 18% 45%, rgba(45, 75, 130, 0.22) 0%, transparent 60%),
+    linear-gradient(175deg, #050813 0%, #091224 38%, #070c18 72%, #03060d 100%);
+  background-color: #050813;
 }
 
+/* 2. 远景天幕光晕与星云暖芒 (消除空洞暗淡，带来流光溢彩的深邃夜空) */
+.midautumn-sky-glow {
+  position: absolute;
+  top: -12vh;
+  right: -6vw;
+  width: clamp(500px, 75vw, 1200px);
+  height: clamp(500px, 75vh, 1000px);
+  border-radius: 50%;
+  background: radial-gradient(circle at 65% 35%,
+    rgba(255, 220, 120, 0.18) 0%,
+    rgba(229, 184, 92, 0.1) 32%,
+    rgba(68, 108, 179, 0.08) 58%,
+    transparent 78%
+  );
+  filter: blur(48px);
+  pointer-events: none;
+  animation: midautumnSkyGlowBreathe 11s ease-in-out infinite alternate;
+}
+
+@keyframes midautumnSkyGlowBreathe {
+  0% { transform: scale(0.96) translate3d(0, 0, 0); opacity: 0.8; }
+  50% { transform: scale(1.05) translate3d(-10px, 12px, 0); opacity: 1; }
+  100% { transform: scale(1.01) translate3d(8px, -6px, 0); opacity: 0.88; }
+}
+
+/* 3. 璀璨繁星星野与星尘光芒 */
 .midautumn-starfield {
   position: absolute;
   inset: 0;
   background-image:
-    radial-gradient(1.5px 1.5px at 120px 80px, #fffef0, rgba(255, 255, 255, 0)),
-    radial-gradient(2px 2px at 280px 140px, #ffd666, rgba(255, 214, 102, 0)),
-    radial-gradient(1.5px 1.5px at 450px 60px, #fff, rgba(255, 255, 255, 0)),
-    radial-gradient(2px 2px at 620px 190px, #ffeaa7, rgba(255, 234, 167, 0)),
-    radial-gradient(1.5px 1.5px at 780px 90px, #fff, rgba(255, 255, 255, 0)),
-    radial-gradient(2px 2px at 950px 150px, #ffd666, rgba(255, 214, 102, 0)),
-    radial-gradient(1.5px 1.5px at 1100px 70px, #fffef0, rgba(255, 255, 255, 0)),
-    radial-gradient(2px 2px at 1260px 180px, #ffd666, rgba(255, 214, 102, 0)),
-    radial-gradient(1.5px 1.5px at 1380px 100px, #fff, rgba(255, 255, 255, 0)),
-    radial-gradient(1.5px 1.5px at 320px 280px, #ffeaa7, rgba(255, 234, 167, 0)),
-    radial-gradient(2px 2px at 740px 320px, #ffd666, rgba(255, 214, 102, 0)),
-    radial-gradient(1.5px 1.5px at 1150px 290px, #fff, rgba(255, 255, 255, 0)),
-    radial-gradient(1px 1px at 35px 45px, rgba(255, 255, 255, 0.75), transparent),
-    radial-gradient(1px 1px at 110px 195px, rgba(255, 214, 102, 0.7), transparent),
-    radial-gradient(1px 1px at 185px 85px, rgba(255, 255, 255, 0.65), transparent),
-    radial-gradient(1px 1px at 240px 290px, rgba(255, 240, 180, 0.75), transparent),
-    radial-gradient(1px 1px at 310px 130px, rgba(255, 214, 102, 0.6), transparent),
-    radial-gradient(1px 1px at 370px 340px, rgba(255, 255, 255, 0.7), transparent);
+    radial-gradient(1.8px 1.8px at 120px 80px, #fffef0, rgba(255, 255, 255, 0)),
+    radial-gradient(2.2px 2.2px at 280px 140px, #ffd666, rgba(255, 214, 102, 0)),
+    radial-gradient(1.6px 1.6px at 450px 60px, #fff, rgba(255, 255, 255, 0)),
+    radial-gradient(2.2px 2.2px at 620px 190px, #ffeaa7, rgba(255, 234, 167, 0)),
+    radial-gradient(1.8px 1.8px at 780px 90px, #fff, rgba(255, 255, 255, 0)),
+    radial-gradient(2.4px 2.4px at 950px 150px, #ffd666, rgba(255, 214, 102, 0)),
+    radial-gradient(1.8px 1.8px at 1100px 70px, #fffef0, rgba(255, 255, 255, 0)),
+    radial-gradient(2.2px 2.2px at 1260px 180px, #ffd666, rgba(255, 214, 102, 0)),
+    radial-gradient(1.6px 1.6px at 1380px 100px, #fff, rgba(255, 255, 255, 0)),
+    radial-gradient(1.8px 1.8px at 320px 280px, #ffeaa7, rgba(255, 234, 167, 0)),
+    radial-gradient(2.2px 2.2px at 740px 320px, #ffd666, rgba(255, 214, 102, 0)),
+    radial-gradient(1.6px 1.6px at 1150px 290px, #fff, rgba(255, 255, 255, 0)),
+    radial-gradient(1.2px 1.2px at 35px 45px, rgba(255, 255, 255, 0.85), transparent),
+    radial-gradient(1.2px 1.2px at 110px 195px, rgba(255, 214, 102, 0.8), transparent),
+    radial-gradient(1.2px 1.2px at 185px 85px, rgba(255, 255, 255, 0.75), transparent),
+    radial-gradient(1.2px 1.2px at 240px 290px, rgba(255, 240, 180, 0.85), transparent),
+    radial-gradient(1.2px 1.2px at 310px 130px, rgba(255, 214, 102, 0.7), transparent),
+    radial-gradient(1.2px 1.2px at 370px 340px, rgba(255, 255, 255, 0.8), transparent),
+    radial-gradient(1.4px 1.4px at 520px 110px, rgba(255, 245, 210, 0.8), transparent),
+    radial-gradient(1.2px 1.2px at 860px 240px, rgba(255, 214, 102, 0.75), transparent),
+    radial-gradient(1.5px 1.5px at 1040px 160px, rgba(255, 255, 255, 0.8), transparent);
   background-size:
     1440px 600px, 1440px 600px, 1440px 600px, 1440px 600px, 1440px 600px, 1440px 600px,
     1440px 600px, 1440px 600px, 1440px 600px, 1440px 600px, 1440px 600px, 1440px 600px,
-    400px 400px, 400px 400px, 400px 400px, 400px 400px, 400px 400px, 400px 400px;
-  opacity: 0.88;
-  animation: midautumnStarShimmer 8s ease-in-out infinite alternate;
+    400px 400px, 400px 400px, 400px 400px, 400px 400px, 400px 400px, 400px 400px,
+    600px 500px, 600px 500px, 600px 500px;
+  opacity: 0.92;
+  animation: midautumnStarShimmer 7s ease-in-out infinite alternate;
 }
 
 @keyframes midautumnStarShimmer {
-  0% { opacity: 0.72; filter: drop-shadow(0 0 1px rgba(255, 214, 102, 0.3)); }
-  50% { opacity: 0.98; filter: drop-shadow(0 0 3px rgba(255, 214, 102, 0.6)); }
-  100% { opacity: 0.78; filter: drop-shadow(0 0 1.5px rgba(255, 214, 102, 0.4)); }
+  0% { opacity: 0.75; filter: drop-shadow(0 0 1px rgba(255, 214, 102, 0.35)); }
+  50% { opacity: 1; filter: drop-shadow(0 0 3px rgba(255, 214, 102, 0.7)); }
+  100% { opacity: 0.82; filter: drop-shadow(0 0 1.5px rgba(255, 214, 102, 0.45)); }
 }
 
-/* 2. 远景：月影薄雾与轻云流光 */
+/* 4. 天幕划空浪漫流星特效 (Meteors) */
+.midautumn-meteors {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.midautumn-meteors .meteor {
+  position: absolute;
+  width: 140px;
+  height: 2px;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 214, 102, 0.75) 45%, transparent 100%);
+  border-radius: 999px;
+  filter: drop-shadow(0 0 6px rgba(255, 214, 102, 0.85));
+  opacity: 0;
+  transform: rotate(-35deg);
+}
+
+.midautumn-meteors .m1 {
+  top: 14%;
+  left: 45%;
+  animation: meteorShoot 10s ease-in-out infinite;
+  animation-delay: 2.5s;
+}
+
+.midautumn-meteors .m2 {
+  top: 22%;
+  left: 68%;
+  animation: meteorShoot 14s ease-in-out infinite;
+  animation-delay: 7s;
+}
+
+.midautumn-meteors .m3 {
+  top: 9%;
+  left: 80%;
+  animation: meteorShoot 12s ease-in-out infinite;
+  animation-delay: 11s;
+}
+
+@keyframes meteorShoot {
+  0% {
+    transform: translate3d(0, 0, 0) rotate(-35deg) scaleX(0.4);
+    opacity: 0;
+  }
+  8% {
+    opacity: 0.95;
+  }
+  24% {
+    transform: translate3d(-260px, 180px, 0) rotate(-35deg) scaleX(1.3);
+    opacity: 0;
+  }
+  100% {
+    transform: translate3d(-260px, 180px, 0) rotate(-35deg) scaleX(1.3);
+    opacity: 0;
+  }
+}
+
+/* 5. 水乡月夜山水沉浸原画底纹 (消除单调死黑与太空旷感，显映水乡亭台、远山与秋水倒影) */
+.midautumn-scenic-art {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background: url('../assets/midautumn/bg.webp') center bottom / cover no-repeat;
+  opacity: 0.44;
+  filter: saturate(1.22) brightness(0.96) contrast(1.05);
+  mask-image: radial-gradient(ellipse 95% 85% at 50% 50%, rgba(0, 0, 0, 0.85) 42%, rgba(0, 0, 0, 0.45) 75%, transparent 100%);
+  -webkit-mask-image: radial-gradient(ellipse 95% 85% at 50% 50%, rgba(0, 0, 0, 0.85) 42%, rgba(0, 0, 0, 0.45) 75%, transparent 100%);
+  transform: translate3d(var(--scenic-px, 0px), var(--scenic-py, 0px), 0) scale(1.02);
+  will-change: transform;
+  transition: transform 0.1s ease-out;
+}
+
+/* 6. 月影薄雾与轻云流光 */
 .midautumn-clouds {
   position: absolute;
   top: 0;
   left: 0;
   width: 200%;
-  height: 65%;
+  height: 68%;
   background:
-    radial-gradient(ellipse 65% 22% at 30% 25%, rgba(130, 175, 235, 0.08) 0%, transparent 65%),
-    radial-gradient(ellipse 55% 26% at 75% 35%, rgba(255, 225, 140, 0.1) 0%, transparent 60%),
-    radial-gradient(ellipse 80% 18% at 45% 45%, rgba(147, 197, 253, 0.06) 0%, transparent 70%);
-  opacity: 0.9;
+    radial-gradient(ellipse 65% 24% at 30% 25%, rgba(130, 175, 235, 0.1) 0%, transparent 65%),
+    radial-gradient(ellipse 55% 28% at 75% 35%, rgba(255, 225, 140, 0.12) 0%, transparent 60%),
+    radial-gradient(ellipse 80% 20% at 45% 45%, rgba(147, 197, 253, 0.08) 0%, transparent 70%);
+  opacity: 0.92;
   transform: translate3d(var(--clouds-px, 0px), 0, 0);
   animation: midautumnCloudDrift 45s ease-in-out infinite alternate;
   will-change: transform;
@@ -163,7 +272,152 @@ html[data-midautumn-skin="true"] .wallpaper-mask {
   100% { transform: translate3d(-15%, 0, 0); }
 }
 
-/* 3. 远景视差层：高清立体清辉满月 (Moon Layer) */
+/* 7. 江南秋水水雾流光 (River Mist) */
+.midautumn-river-mist {
+  position: absolute;
+  bottom: 60px;
+  left: 0;
+  right: 0;
+  height: 160px;
+  background:
+    radial-gradient(ellipse 75% 40% at 35% 60%, rgba(160, 200, 245, 0.1) 0%, transparent 65%),
+    radial-gradient(ellipse 65% 35% at 70% 50%, rgba(255, 230, 160, 0.08) 0%, transparent 60%);
+  filter: blur(14px);
+  animation: riverMistFlow 18s ease-in-out infinite alternate;
+  pointer-events: none;
+}
+
+@keyframes riverMistFlow {
+  0% { transform: translateX(0) scaleY(0.95); opacity: 0.75; }
+  100% { transform: translateX(25px) scaleY(1.05); opacity: 1; }
+}
+
+/* 8. 远山水波暗纹与水乡金波倒影 */
+.midautumn-water-waves {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 340px;
+  background:
+    radial-gradient(ellipse 90% 48% at 50% 100%, rgba(12, 20, 38, 0.78) 0%, transparent 75%),
+    linear-gradient(180deg, transparent 0%, rgba(255, 225, 140, 0.05) 30%, rgba(212, 163, 56, 0.08) 65%, rgba(181, 131, 32, 0.16) 100%),
+    repeating-linear-gradient(0deg,
+      transparent 0px,
+      transparent 18px,
+      rgba(255, 214, 102, 0.06) 19px,
+      rgba(147, 197, 253, 0.04) 20px,
+      transparent 21px,
+      transparent 38px
+    );
+  mask-image: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.45) 32%, black 100%);
+  -webkit-mask-image: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.45) 32%, black 100%);
+  opacity: 0.95;
+  animation: midautumnWaterGlimmer 8.5s ease-in-out infinite alternate;
+}
+
+.midautumn-water-reflections {
+  position: absolute;
+  bottom: 0;
+  right: clamp(20px, 10vw, 220px);
+  width: clamp(160px, 20vw, 300px);
+  height: 280px;
+  background: radial-gradient(ellipse 60% 40% at 50% 30%,
+    rgba(255, 230, 150, 0.18) 0%,
+    rgba(212, 163, 56, 0.08) 45%,
+    transparent 75%
+  );
+  filter: blur(8px);
+  animation: moonWaterReflection 7s ease-in-out infinite alternate;
+  pointer-events: none;
+}
+
+@keyframes midautumnWaterGlimmer {
+  0% { opacity: 0.8; transform: scaleY(0.97); }
+  100% { opacity: 1; transform: scaleY(1.03); }
+}
+
+@keyframes moonWaterReflection {
+  0% { transform: scaleX(0.95) translateX(-8px); opacity: 0.7; }
+  100% { transform: scaleX(1.06) translateX(10px); opacity: 1; }
+}
+
+/* 9. 祈福天灯微景 (Sky Lanterns) */
+.midautumn-lanterns {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.midautumn-lantern {
+  position: absolute;
+  width: 18px;
+  height: 24px;
+  border-radius: 4px 4px 6px 6px;
+  background: linear-gradient(180deg, rgba(255, 235, 170, 0.95) 0%, rgba(255, 170, 60, 0.85) 65%, rgba(210, 85, 25, 0.75) 100%);
+  box-shadow:
+    0 0 12px rgba(255, 180, 60, 0.85),
+    0 0 28px rgba(255, 150, 30, 0.45);
+  transform-origin: bottom center;
+}
+
+.midautumn-lantern .lantern-flame {
+  position: absolute;
+  bottom: 3px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 6px;
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow: 0 0 6px #ffd666;
+}
+
+.lantern-1 {
+  top: 48%;
+  left: 15%;
+  width: 16px;
+  height: 22px;
+  animation: lanternFloat1 18s ease-in-out infinite;
+}
+
+.lantern-2 {
+  top: 36%;
+  left: 45%;
+  width: 14px;
+  height: 19px;
+  opacity: 0.88;
+  animation: lanternFloat2 24s ease-in-out infinite;
+}
+
+.lantern-3 {
+  top: 54%;
+  right: 26%;
+  width: 18px;
+  height: 25px;
+  opacity: 0.92;
+  animation: lanternFloat3 21s ease-in-out infinite;
+}
+
+@keyframes lanternFloat1 {
+  0% { transform: translate3d(0, 0, 0) rotate(0deg); }
+  50% { transform: translate3d(14px, -35px, 0) rotate(2deg); }
+  100% { transform: translate3d(-8px, -70px, 0) rotate(-2deg); }
+}
+
+@keyframes lanternFloat2 {
+  0% { transform: translate3d(0, 0, 0) rotate(-1deg); }
+  50% { transform: translate3d(-16px, -45px, 0) rotate(2.5deg); }
+  100% { transform: translate3d(12px, -90px, 0) rotate(-1.5deg); }
+}
+
+@keyframes lanternFloat3 {
+  0% { transform: translate3d(0, 0, 0) rotate(1deg); }
+  50% { transform: translate3d(18px, -40px, 0) rotate(-2deg); }
+  100% { transform: translate3d(-10px, -80px, 0) rotate(1.5deg); }
+}
+
+/* 10. 远景视差层：高清立体清辉满月 (Moon Layer) */
 .midautumn-celestial-moon {
   position: absolute;
   top: clamp(15px, 4vh, 50px);
@@ -183,16 +437,34 @@ html[data-midautumn-skin="true"] .wallpaper-mask {
   width: 100%;
   height: 100%;
   object-fit: contain;
-  filter: drop-shadow(0 0 28px rgba(255, 225, 130, 0.65)) drop-shadow(0 0 70px rgba(229, 184, 92, 0.35));
+  filter: drop-shadow(0 0 32px rgba(255, 225, 130, 0.72)) drop-shadow(0 0 80px rgba(229, 184, 92, 0.4));
   animation: midautumnMoonAura 6.5s ease-in-out infinite alternate;
+}
+
+.midautumn-celestial-moon .moon-halo-outer {
+  position: absolute;
+  inset: -60%;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 235, 160, 0.16) 0%, rgba(229, 184, 92, 0.06) 50%, transparent 75%);
+  animation: midautumnHaloBreathe 9s ease-in-out infinite alternate;
+  pointer-events: none;
 }
 
 .midautumn-celestial-moon .moon-halo {
   position: absolute;
   inset: -35%;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(255, 240, 180, 0.28) 0%, rgba(229, 184, 92, 0.12) 45%, rgba(13, 20, 36, 0) 72%);
-  animation: midautumnHaloBreathe 8s ease-in-out infinite alternate;
+  background: radial-gradient(circle, rgba(255, 240, 180, 0.32) 0%, rgba(229, 184, 92, 0.14) 45%, rgba(13, 20, 36, 0) 72%);
+  animation: midautumnHaloBreathe 7.5s ease-in-out infinite alternate;
+  pointer-events: none;
+}
+
+.midautumn-celestial-moon .moon-corona {
+  position: absolute;
+  inset: -15%;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 255, 240, 0.35) 0%, rgba(255, 214, 102, 0.2) 40%, transparent 70%);
+  filter: blur(6px);
   pointer-events: none;
 }
 
@@ -202,87 +474,83 @@ html[data-midautumn-skin="true"] .wallpaper-mask {
   left: -25%;
   width: 150%;
   height: 32%;
-  background: radial-gradient(ellipse at center, rgba(180, 215, 255, 0.32) 0%, rgba(160, 195, 245, 0.12) 55%, transparent 80%);
+  background: radial-gradient(ellipse at center, rgba(180, 215, 255, 0.35) 0%, rgba(160, 195, 245, 0.14) 55%, transparent 80%);
   border-radius: 50%;
   filter: blur(5px);
   animation: midautumnWispDrift 16s ease-in-out infinite alternate;
   pointer-events: none;
 }
 
+.midautumn-celestial-moon .wisp-2 {
+  top: 15%;
+  right: -20%;
+  left: auto;
+  width: 130%;
+  height: 24%;
+  background: radial-gradient(ellipse at center, rgba(255, 230, 180, 0.25) 0%, rgba(210, 180, 120, 0.1) 50%, transparent 80%);
+  filter: blur(4px);
+  animation: midautumnWispDrift2 20s ease-in-out infinite alternate;
+}
+
 @keyframes midautumnMoonAura {
-  0% { transform: scale(1); filter: drop-shadow(0 0 22px rgba(255, 214, 102, 0.5)) drop-shadow(0 0 50px rgba(229, 184, 92, 0.3)); }
-  100% { transform: scale(1.03); filter: drop-shadow(0 0 35px rgba(255, 225, 130, 0.75)) drop-shadow(0 0 85px rgba(229, 184, 92, 0.45)); }
+  0% { transform: scale(1); filter: drop-shadow(0 0 25px rgba(255, 214, 102, 0.55)) drop-shadow(0 0 60px rgba(229, 184, 92, 0.35)); }
+  100% { transform: scale(1.03); filter: drop-shadow(0 0 40px rgba(255, 225, 130, 0.85)) drop-shadow(0 0 95px rgba(229, 184, 92, 0.5)); }
 }
 
 @keyframes midautumnHaloBreathe {
-  0% { opacity: 0.65; transform: scale(0.96); }
-  100% { opacity: 1; transform: scale(1.06); }
+  0% { opacity: 0.7; transform: scale(0.96); }
+  100% { opacity: 1; transform: scale(1.07); }
 }
 
 @keyframes midautumnWispDrift {
-  0% { transform: translateX(-10px) scaleY(0.9); }
-  100% { transform: translateX(14px) scaleY(1.1); }
+  0% { transform: translateX(-12px) scaleY(0.9); }
+  100% { transform: translateX(16px) scaleY(1.1); }
 }
 
-/* 4. 近景视差层：苍劲古桂天幕枝干 (Canopy Bough) */
+@keyframes midautumnWispDrift2 {
+  0% { transform: translateX(14px) scaleY(1.05); }
+  100% { transform: translateX(-10px) scaleY(0.92); }
+}
+
+/* 11. 近景视差层：苍劲古桂天幕枝干 (Canopy Bough)
+   【核心穿模修复】：
+   1. 树根裁切边缘位于图片左侧与顶侧。原版 left: -10px, top: -10px，当鼠标移到最左端时
+      视差计算 canopyX 为正数（向右位移达 +36px~+40px），导致左边硬切面暴露于屏幕内穿模！
+   2. 现将容器锚定在 left: -85px, top: -55px 超宽安全出血层，配合宽度 clamp(620px, 72vw, 1300px)
+   3. JS 端视差限幅最大右移 28px，使得 left + canopyX 永远 <= -57px（永不脱出左侧界外）
+   4. 图片应用 scale(1.03) 与 transform-origin: 0% 0%，彻底根除穿模与露底问题！
+*/
 .midautumn-canopy-wrap {
   position: absolute;
-  top: -10px;
-  left: -10px;
-  width: clamp(520px, 68vw, 1150px);
-  max-height: 85vh;
+  top: -55px;
+  left: -85px;
+  width: clamp(620px, 72vw, 1300px);
+  max-height: 90vh;
   pointer-events: none;
   z-index: 3;
   transform: translate3d(var(--canopy-px, 0px), var(--canopy-py, 0px), 0) rotate(var(--canopy-rot, 0deg));
   will-change: transform;
   transition: transform 0.08s ease-out;
+  transform-origin: 0% 0%;
 }
 
 .midautumn-canopy-wrap .canopy-img {
   width: 100%;
   height: auto;
   display: block;
-  filter: drop-shadow(0 15px 35px rgba(0, 0, 0, 0.85)) drop-shadow(0 0 20px rgba(255, 214, 102, 0.18));
+  filter: drop-shadow(0 15px 35px rgba(0, 0, 0, 0.9)) drop-shadow(0 0 25px rgba(255, 214, 102, 0.22));
   animation: midautumnCanopySway 12s ease-in-out infinite alternate;
-  transform-origin: top left;
+  transform-origin: 0% 0%;
+  transform: scale(1.03);
 }
 
 @keyframes midautumnCanopySway {
-  0% { transform: rotate(0deg) scale(1); }
-  50% { transform: rotate(-0.8deg) scale(1.008); }
-  100% { transform: rotate(-1.5deg) scale(1.015); }
+  0% { transform: scale(1.03) rotate(0deg); }
+  50% { transform: scale(1.035) rotate(-0.6deg); }
+  100% { transform: scale(1.04) rotate(-1.2deg); }
 }
 
-/* 5. 远山水波暗纹与水乡倒影 */
-.midautumn-water-waves {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 320px;
-  background:
-    radial-gradient(ellipse 90% 45% at 50% 100%, rgba(16, 26, 46, 0.7) 0%, transparent 70%),
-    linear-gradient(180deg, transparent 0%, rgba(255, 225, 140, 0.04) 30%, rgba(212, 163, 56, 0.06) 65%, rgba(181, 131, 32, 0.12) 100%),
-    repeating-linear-gradient(0deg,
-      transparent 0px,
-      transparent 18px,
-      rgba(255, 214, 102, 0.04) 19px,
-      rgba(147, 197, 253, 0.03) 20px,
-      transparent 21px,
-      transparent 38px
-    );
-  mask-image: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.4) 35%, black 100%);
-  -webkit-mask-image: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.4) 35%, black 100%);
-  opacity: 0.9;
-  animation: midautumnWaterGlimmer 9s ease-in-out infinite alternate;
-}
-
-@keyframes midautumnWaterGlimmer {
-  0% { opacity: 0.75; transform: scaleY(0.98); }
-  100% { opacity: 1; transform: scaleY(1.02); }
-}
-
-/* 6. 夜光流萤闪耀 */
+/* 12. 夜光流萤闪耀 (10 粒温润灵动粒子) */
 .midautumn-fireflies {
   position: absolute;
   inset: 0;
@@ -295,7 +563,7 @@ html[data-midautumn-skin="true"] .wallpaper-mask {
   height: 4px;
   border-radius: 50%;
   background: #ffd666;
-  box-shadow: 0 0 8px #ffd666, 0 0 16px rgba(255, 214, 102, 0.6);
+  box-shadow: 0 0 8px #ffd666, 0 0 16px rgba(255, 214, 102, 0.65);
   animation: fireflyFloat 12s ease-in-out infinite;
 }
 
@@ -305,16 +573,20 @@ html[data-midautumn-skin="true"] .wallpaper-mask {
 .midautumn-fireflies .f4 { right: 12%; top: 70%; animation-delay: 4s; animation-duration: 13s; width: 5px; height: 5px; }
 .midautumn-fireflies .f5 { right: 22%; top: 40%; animation-delay: 2s; animation-duration: 15s; }
 .midautumn-fireflies .f6 { right: 6%; top: 55%; animation-delay: 5s; animation-duration: 12s; width: 3px; height: 3px; }
+.midautumn-fireflies .f7 { left: 38%; top: 62%; animation-delay: 6s; animation-duration: 17s; width: 3.5px; height: 3.5px; }
+.midautumn-fireflies .f8 { right: 40%; top: 78%; animation-delay: 1s; animation-duration: 14s; width: 4.5px; height: 4.5px; }
+.midautumn-fireflies .f9 { left: 5%; top: 30%; animation-delay: 7s; animation-duration: 13s; width: 3px; height: 3px; }
+.midautumn-fireflies .f10 { right: 18%; top: 25%; animation-delay: 4.5s; animation-duration: 15s; width: 4px; height: 4px; }
 
 @keyframes fireflyFloat {
   0% { transform: translateY(0) translateX(0); opacity: 0; }
-  20% { opacity: 0.9; }
-  50% { transform: translateY(-120px) translateX(25px); opacity: 0.4; }
-  80% { opacity: 0.85; }
-  100% { transform: translateY(-240px) translateX(-15px); opacity: 0; }
+  20% { opacity: 0.95; }
+  50% { transform: translateY(-130px) translateX(28px); opacity: 0.45; }
+  80% { opacity: 0.9; }
+  100% { transform: translateY(-260px) translateX(-18px); opacity: 0; }
 }
 
-/* 7. 金桂雨全屏 Canvas */
+/* 13. 金桂雨与星尘微光全屏 Canvas */
 #festivalSkinCanvas {
   position: fixed;
   inset: 0;
@@ -325,38 +597,55 @@ html[data-midautumn-skin="true"] .wallpaper-mask {
   display: block;
 }
 
-/* ===== 工作台琉璃透光毛玻璃 (Glassmorphism 极致一体) ===== */
+/* ===== 工作台琉璃透光毛玻璃 (Glassmorphism 极致一体化全面美化) ===== */
 html[data-skin="midautumn"] .glass-card,
 html[data-midautumn-skin="true"] .glass-card {
-  background: rgba(13, 20, 36, 0.48) !important;
-  backdrop-filter: blur(16px) saturate(145%) !important;
-  -webkit-backdrop-filter: blur(16px) saturate(145%) !important;
-  border: 1px solid rgba(255, 215, 120, 0.28) !important;
+  background: rgba(13, 20, 36, 0.58) !important;
+  backdrop-filter: blur(18px) saturate(155%) !important;
+  -webkit-backdrop-filter: blur(18px) saturate(155%) !important;
+  border: 1px solid rgba(255, 215, 120, 0.32) !important;
   border-radius: 22px !important;
   box-shadow:
-    inset 0 1.5px 2px rgba(255, 235, 160, 0.28),
-    inset 0 -1px 1px rgba(0, 0, 0, 0.3),
-    0 14px 40px rgba(0, 5, 15, 0.55) !important;
+    inset 0 1.5px 2px rgba(255, 240, 180, 0.32),
+    inset 0 -1px 1px rgba(0, 0, 0, 0.35),
+    0 16px 44px rgba(0, 5, 15, 0.62) !important;
+  transition: transform 0.22s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.22s ease, border-color 0.22s ease !important;
 }
 
 html[data-skin="midautumn"] .glass-card:hover,
 html[data-midautumn-skin="true"] .glass-card:hover {
-  background: rgba(18, 28, 50, 0.62) !important;
-  border-color: rgba(255, 220, 130, 0.55) !important;
+  background: rgba(18, 28, 52, 0.68) !important;
+  border-color: rgba(255, 220, 130, 0.58) !important;
   box-shadow:
-    inset 0 2px 3px rgba(255, 240, 180, 0.45),
-    0 18px 52px rgba(0, 5, 15, 0.68),
-    0 0 20px rgba(255, 214, 102, 0.18) !important;
+    inset 0 2px 3px rgba(255, 245, 200, 0.45),
+    0 20px 56px rgba(0, 5, 15, 0.72),
+    0 0 24px rgba(255, 214, 102, 0.22) !important;
 }
 
-/* 搜索框与输入卡片 */
+/* 1. 搜索框与输入卡片美化 */
 html[data-skin="midautumn"] .search-card,
 html[data-midautumn-skin="true"] .search-card,
 html[data-skin="midautumn"] .search-input-box,
 html[data-midautumn-skin="true"] .search-input-box {
-  background: rgba(10, 16, 30, 0.55) !important;
-  border: 1.5px solid rgba(255, 215, 120, 0.35) !important;
-  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.45), inset 0 1px 1px rgba(255, 240, 180, 0.25) !important;
+  background: rgba(10, 16, 30, 0.62) !important;
+  border: 1.5px solid rgba(255, 215, 120, 0.38) !important;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.48), inset 0 1px 1px rgba(255, 240, 180, 0.28) !important;
+}
+
+html[data-skin="midautumn"] .search-form,
+html[data-midautumn-skin="true"] .search-form {
+  background: rgba(10, 16, 30, 0.62) !important;
+  border: 1.5px solid rgba(255, 215, 120, 0.38) !important;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.48), inset 0 1px 1px rgba(255, 240, 180, 0.28) !important;
+}
+
+html[data-skin="midautumn"] .search-form:focus-within,
+html[data-midautumn-skin="true"] .search-form:focus-within {
+  border-color: #ffd666 !important;
+  box-shadow:
+    0 0 0 3px rgba(255, 214, 102, 0.28),
+    0 10px 32px rgba(0, 0, 0, 0.55),
+    0 0 20px rgba(255, 214, 102, 0.25) !important;
 }
 
 html[data-skin="midautumn"] .search-input,
@@ -369,56 +658,215 @@ html[data-midautumn-skin="true"] .search-input::placeholder {
   color: #94a3b8 !important;
 }
 
-/* 常用网址捷径卡片 */
+html[data-skin="midautumn"] .search-engine-tab,
+html[data-midautumn-skin="true"] .search-engine-tab {
+  color: #dce3f0 !important;
+  background: rgba(255, 255, 255, 0.06) !important;
+  border: 1px solid rgba(255, 215, 120, 0.18) !important;
+}
+
+html[data-skin="midautumn"] .search-engine-tab:hover,
+html[data-midautumn-skin="true"] .search-engine-tab:hover {
+  background: rgba(255, 214, 102, 0.16) !important;
+  border-color: rgba(255, 214, 102, 0.42) !important;
+  color: #ffd666 !important;
+}
+
+html[data-skin="midautumn"] .search-engine-tab.active,
+html[data-midautumn-skin="true"] .search-engine-tab.active {
+  background: linear-gradient(135deg, rgba(255, 214, 102, 0.95) 0%, rgba(250, 173, 20, 0.95) 100%) !important;
+  color: #060a14 !important;
+  border-color: #ffd666 !important;
+  font-weight: 700 !important;
+  box-shadow: 0 4px 14px rgba(255, 214, 102, 0.45) !important;
+}
+
+html[data-skin="midautumn"] .search-submit-btn,
+html[data-midautumn-skin="true"] .search-submit-btn {
+  background: linear-gradient(135deg, #ffd666 0%, #faad14 100%) !important;
+  color: #060a14 !important;
+}
+
+/* 直播小挂件高雅金夜定制 */
+html[data-skin="midautumn"] .home-live-status,
+html[data-midautumn-skin="true"] .home-live-status {
+  background: rgba(14, 22, 40, 0.7) !important;
+  border: 1px solid rgba(255, 215, 120, 0.35) !important;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.45) !important;
+}
+
+html[data-skin="midautumn"] .home-live-status:hover,
+html[data-midautumn-skin="true"] .home-live-status:hover {
+  background: rgba(22, 34, 60, 0.85) !important;
+  border-color: rgba(255, 214, 102, 0.65) !important;
+  box-shadow: 0 6px 20px rgba(255, 214, 102, 0.25) !important;
+}
+
+html[data-skin="midautumn"] .home-live-status .live-status-badge,
+html[data-midautumn-skin="true"] .home-live-status .live-status-badge {
+  background: rgba(255, 214, 102, 0.18) !important;
+  border: 1px solid rgba(255, 214, 102, 0.45) !important;
+  color: #ffd666 !important;
+}
+
+html[data-skin="midautumn"] .home-live-status .live-status-dot,
+html[data-midautumn-skin="true"] .home-live-status .live-status-dot {
+  background: #ffd666 !important;
+  box-shadow: 0 0 8px #ffd666 !important;
+}
+
+/* 时钟数字微光 */
+html[data-skin="midautumn"] .clock-time,
+html[data-midautumn-skin="true"] .clock-time {
+  text-shadow: 0 4px 24px rgba(255, 214, 102, 0.35) !important;
+}
+
+/* 2. 常用网址捷径卡片 */
 html[data-skin="midautumn"] .bookmark-item,
 html[data-midautumn-skin="true"] .bookmark-item {
-  background: rgba(16, 25, 45, 0.42) !important;
-  border: 1px solid rgba(255, 215, 120, 0.2) !important;
+  background: rgba(16, 25, 45, 0.48) !important;
+  border: 1px solid rgba(255, 215, 120, 0.22) !important;
   color: #fffdf5 !important;
   transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1) !important;
 }
 
 html[data-skin="midautumn"] .bookmark-item:hover,
 html[data-midautumn-skin="true"] .bookmark-item:hover {
-  background: rgba(26, 40, 72, 0.72) !important;
-  border-color: rgba(255, 215, 120, 0.58) !important;
-  box-shadow: 0 8px 24px rgba(255, 214, 102, 0.22) !important;
+  background: rgba(26, 40, 72, 0.78) !important;
+  border-color: rgba(255, 215, 120, 0.65) !important;
+  box-shadow: 0 8px 26px rgba(255, 214, 102, 0.26) !important;
   transform: translateY(-2px) !important;
 }
 
-/* 黑胶轻量随身听夜色定制 */
+/* 3. 日历与天气组件美化 */
+html[data-skin="midautumn"] .weather-chip,
+html[data-midautumn-skin="true"] .weather-chip {
+  background: rgba(16, 26, 46, 0.5) !important;
+  border: 1px solid rgba(255, 215, 120, 0.2) !important;
+}
+
+html[data-skin="midautumn"] .weather-chip .chip-label,
+html[data-midautumn-skin="true"] .weather-chip .chip-label {
+  color: #94a3b8 !important;
+}
+
+html[data-skin="midautumn"] .weather-chip .chip-val,
+html[data-midautumn-skin="true"] .weather-chip .chip-val {
+  color: #ffd666 !important;
+}
+
+html[data-skin="midautumn"] .weather-tip-strip,
+html[data-midautumn-skin="true"] .weather-tip-strip {
+  background: rgba(16, 26, 46, 0.4) !important;
+  border: 1px solid rgba(255, 215, 120, 0.18) !important;
+  color: #dce3f0 !important;
+}
+
+html[data-skin="midautumn"] .cal-today-btn,
+html[data-midautumn-skin="true"] .cal-today-btn {
+  background: rgba(255, 214, 102, 0.18) !important;
+  border: 1px solid rgba(255, 214, 102, 0.45) !important;
+  color: #ffd666 !important;
+}
+
+html[data-skin="midautumn"] .cal-day-cell.is-today,
+html[data-midautumn-skin="true"] .cal-day-cell.is-today {
+  background: linear-gradient(135deg, #ffd666 0%, #faad14 100%) !important;
+  color: #060a14 !important;
+  font-weight: 700 !important;
+  box-shadow: 0 0 14px rgba(255, 214, 102, 0.65) !important;
+}
+
+html[data-skin="midautumn"] .cal-day-cell.is-selected,
+html[data-midautumn-skin="true"] .cal-day-cell.is-selected {
+  outline: 2px solid #ffd666 !important;
+  outline-offset: 1px !important;
+}
+
+html[data-skin="midautumn"] .cal-info-solar,
+html[data-midautumn-skin="true"] .cal-info-solar {
+  color: #ffd666 !important;
+  font-weight: 700 !important;
+}
+
+/* 4. 黑胶轻量随身听夜色定制 */
 html[data-skin="midautumn"] .vinyl-wrap,
 html[data-midautumn-skin="true"] .vinyl-wrap,
 html[data-skin="midautumn"] .mini-player-card,
 html[data-midautumn-skin="true"] .mini-player-card {
-  background: rgba(14, 22, 38, 0.55) !important;
-  border: 1.5px solid rgba(255, 215, 120, 0.32) !important;
-  box-shadow: 0 12px 36px rgba(0, 5, 15, 0.5) !important;
+  background: rgba(14, 22, 38, 0.58) !important;
+  border: 1.5px solid rgba(255, 215, 120, 0.35) !important;
+  box-shadow: 0 14px 40px rgba(0, 5, 15, 0.55) !important;
 }
 
 html[data-skin="midautumn"] .vinyl-disc,
 html[data-midautumn-skin="true"] .vinyl-disc {
-  box-shadow: 0 0 20px rgba(255, 214, 102, 0.4) !important;
+  box-shadow: 0 0 24px rgba(255, 214, 102, 0.45) !important;
 }
 
-/* 顶栏操作按钮与光影中枢联动按钮 */
+html[data-skin="midautumn"] .player-seek::-webkit-slider-thumb,
+html[data-midautumn-skin="true"] .player-seek::-webkit-slider-thumb {
+  background: #ffd666 !important;
+  box-shadow: 0 0 10px #ffd666 !important;
+}
+
+html[data-skin="midautumn"] .btn-play-main,
+html[data-midautumn-skin="true"] .btn-play-main {
+  background: linear-gradient(135deg, #ffd666 0%, #faad14 100%) !important;
+  color: #060a14 !important;
+  box-shadow: 0 0 14px rgba(255, 214, 102, 0.5) !important;
+}
+
+/* 5. 待办与灵感便签组件美化 */
+html[data-skin="midautumn"] .memo-todo-tab.active,
+html[data-midautumn-skin="true"] .memo-todo-tab.active {
+  color: #ffd666 !important;
+  border-bottom-color: #ffd666 !important;
+  text-shadow: 0 0 10px rgba(255, 214, 102, 0.4) !important;
+}
+
+html[data-skin="midautumn"] .todo-input,
+html[data-midautumn-skin="true"] .todo-input,
+html[data-skin="midautumn"] .memo-textarea,
+html[data-midautumn-skin="true"] .memo-textarea {
+  background: rgba(10, 16, 30, 0.5) !important;
+  border: 1px solid rgba(255, 215, 120, 0.25) !important;
+  color: #fffdf5 !important;
+}
+
+html[data-skin="midautumn"] .todo-input:focus,
+html[data-midautumn-skin="true"] .todo-input:focus,
+html[data-skin="midautumn"] .memo-textarea:focus,
+html[data-midautumn-skin="true"] .memo-textarea:focus {
+  border-color: #ffd666 !important;
+  box-shadow: 0 0 0 2px rgba(255, 214, 102, 0.25) !important;
+}
+
+html[data-skin="midautumn"] .btn-todo-add,
+html[data-midautumn-skin="true"] .btn-todo-add {
+  background: linear-gradient(135deg, #ffd666 0%, #faad14 100%) !important;
+  color: #060a14 !important;
+  font-weight: 600 !important;
+}
+
+/* 6. 顶栏操作按钮与光影中枢联动按钮 */
 html[data-skin="midautumn"] .btn-ambience,
 html[data-midautumn-skin="true"] .btn-ambience {
-  background: linear-gradient(135deg, rgba(212, 163, 56, 0.32) 0%, rgba(181, 131, 32, 0.42) 100%) !important;
-  border: 1px solid rgba(255, 214, 102, 0.5) !important;
+  background: linear-gradient(135deg, rgba(212, 163, 56, 0.35) 0%, rgba(181, 131, 32, 0.45) 100%) !important;
+  border: 1px solid rgba(255, 214, 102, 0.55) !important;
   color: #ffeaa7 !important;
-  box-shadow: 0 0 14px rgba(255, 214, 102, 0.35) !important;
+  box-shadow: 0 0 16px rgba(255, 214, 102, 0.38) !important;
 }
 
 .ambience-status-dot.midautumn {
   background: #ffd666 !important;
-  box-shadow: 0 0 8px #ffd666, 0 0 14px rgba(255, 214, 102, 0.8) !important;
+  box-shadow: 0 0 8px #ffd666, 0 0 16px rgba(255, 214, 102, 0.85) !important;
 }
 
 /* Popover 中的中秋专属开关高亮 */
 .ambience-midautumn-toggle-item {
-  background: linear-gradient(135deg, rgba(229, 184, 92, 0.12) 0%, rgba(255, 214, 102, 0.05) 100%);
-  border: 1px solid rgba(255, 214, 102, 0.32) !important;
+  background: linear-gradient(135deg, rgba(229, 184, 92, 0.14) 0%, rgba(255, 214, 102, 0.06) 100%);
+  border: 1px solid rgba(255, 214, 102, 0.36) !important;
   border-radius: 14px !important;
   padding: 10px 12px !important;
   margin-bottom: 8px !important;
@@ -430,10 +878,19 @@ html[data-midautumn-skin="true"] .btn-ambience {
   font-weight: 700;
   padding: 1px 6px;
   border-radius: 999px;
-  background: rgba(255, 214, 102, 0.22);
-  border: 1px solid rgba(255, 214, 102, 0.5);
+  background: rgba(255, 214, 102, 0.24);
+  border: 1px solid rgba(255, 214, 102, 0.55);
   color: #ffd666;
   margin-left: 4px;
+}
+
+/* 纯享看图模式提示条夜色定制 */
+html[data-skin="midautumn"] .zen-hint,
+html[data-midautumn-skin="true"] .zen-hint {
+  background: rgba(13, 20, 36, 0.85) !important;
+  border: 1px solid rgba(255, 215, 120, 0.45) !important;
+  color: #fffdf5 !important;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6), 0 0 15px rgba(255, 214, 102, 0.35) !important;
 }
 
 /* 动效与无障碍降级 */
@@ -441,14 +898,20 @@ html[data-midautumn-skin="true"] .btn-ambience {
   #festivalSkinCanvas,
   .midautumn-clouds,
   .midautumn-starfield,
+  .midautumn-sky-glow,
+  .midautumn-meteors,
+  .midautumn-river-mist,
   .midautumn-water-waves,
+  .midautumn-water-reflections,
+  .midautumn-lanterns,
   .midautumn-fireflies {
     display: none !important;
   }
   .midautumn-celestial-moon,
   .midautumn-celestial-moon .moon-img,
   .midautumn-canopy-wrap,
-  .midautumn-canopy-wrap .canopy-img {
+  .midautumn-canopy-wrap .canopy-img,
+  .midautumn-scenic-art {
     animation: none !important;
     transform: none !important;
   }

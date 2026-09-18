@@ -4,9 +4,11 @@
  * 设计灵感：ThreeUI Sakura Sunset (Sylva)
  * 核心特性：
  * 1. 苍劲古桂覆穹与清辉满月多层景深微视差 (Multi-plane Mouse Parallax)
- * 2. 伪 3D 翻滚与流体气流扰动金桂雨粒子引擎 (3D Tumbling & Cursor Wind Physics)
- * 3. 节气智能感知与“时空光影中枢”控制面板无缝联动
- * 4. 视口隐藏 0% GPU 损耗挂起与 prefers-reduced-motion 无障碍平滑降级
+ * 2. 古桂枝桠防穿模安全限幅引擎（彻底根治鼠标移到最左边时树根切边露底穿模 Bug）
+ * 3. 水乡月夜山水原画沉浸层、划空浪漫流星与星云流光天幕 (消除背景死黑空洞)
+ * 4. 伪 3D 翻滚、流体风力扰动与点击繁花迸发金桂雨粒子引擎 (3D Tumbling & Interactive Blossom Physics)
+ * 5. 时空光影中枢联动与全卡片琉璃夜景定制
+ * 6. 视口隐藏 0% GPU 损耗挂起与 prefers-reduced-motion 无障碍平滑降级
  */
 
 (function () {
@@ -119,21 +121,40 @@
 
       // 静止时的微妙正弦微呼吸
       const elapsed = (now - this.startTime) * 0.001;
-      const idleX = Math.sin(elapsed * 0.6) * 3.5;
-      const idleY = Math.cos(elapsed * 0.8) * 2.2;
+      const idleX = Math.sin(elapsed * 0.6) * 3.0;
+      const idleY = Math.cos(elapsed * 0.8) * 2.0;
 
       // 各图层不同深度位移
       const moonX = this.currentX * 12 + idleX * 0.4;
       const moonY = this.currentY * 8 + idleY * 0.4;
-      const cloudsX = this.currentX * 24;
-      const canopyX = this.currentX * -36 + idleX;
-      const canopyY = this.currentY * -18 + idleY;
-      const canopyRot = this.currentX * -0.9;
+      const cloudsX = this.currentX * 22;
+      const scenicX = this.currentX * -10 + idleX * 0.25;
+      const scenicY = this.currentY * -6 + idleY * 0.25;
+
+      /* ========================================================================
+         【关键修复：左上角桂花树鼠标移到最左边时穿模露底问题】
+         原因剖析：
+         原代码中 canopyX = this.currentX * -36 + idleX。当鼠标移到最左端时（currentX -> -1），
+         canopyX 计算为正数（+36px ~ +40px），即向右平移！
+         原 CSS left 仅为 -10px，向右位移 +38px 后，图片左侧硬切边被推到屏幕内 +28px 处，
+         悬空露底穿模！
+         防护加固策略：
+         1. CSS 容器已设置 left: -85px，预留高达 85px 的出血容错区
+         2. 此处对 canopyX 严格限幅在 [-45px, 28px] 区间内
+         3. 无论鼠标如何极速甩动，left + canopyX 最大仅为 -57px，树根截面永远严密隐藏在屏幕外侧！
+         ======================================================================== */
+      const rawCanopyX = this.currentX * -24 + idleX * 0.8;
+      const canopyX = Math.max(-45, Math.min(28, rawCanopyX));
+      const rawCanopyY = this.currentY * -12 + idleY * 0.8;
+      const canopyY = Math.max(-25, Math.min(16, rawCanopyY));
+      const canopyRot = Math.max(-0.6, Math.min(0.6, this.currentX * -0.5));
 
       if (this.el) {
         this.el.style.setProperty('--moon-px', `${moonX.toFixed(2)}px`);
         this.el.style.setProperty('--moon-py', `${moonY.toFixed(2)}px`);
         this.el.style.setProperty('--clouds-px', `${cloudsX.toFixed(2)}px`);
+        this.el.style.setProperty('--scenic-px', `${scenicX.toFixed(2)}px`);
+        this.el.style.setProperty('--scenic-py', `${scenicY.toFixed(2)}px`);
         this.el.style.setProperty('--canopy-px', `${canopyX.toFixed(2)}px`);
         this.el.style.setProperty('--canopy-py', `${canopyY.toFixed(2)}px`);
         this.el.style.setProperty('--canopy-rot', `${canopyRot.toFixed(2)}deg`);
@@ -143,12 +164,13 @@
     }
   }
 
-  // ===== 3. 伪 3D 翻滚与气流扰动金桂雨粒子引擎 =====
+  // ===== 3. 伪 3D 翻滚、流体气流扰动与点击绽放金桂雨粒子引擎 =====
   class OsmanthusPetalEngine {
     constructor() {
       this.canvas = null;
       this.ctx = null;
       this.petals = [];
+      this.sparkles = [];
       this.images = [];
       this.animId = null;
       this.isRunning = false;
@@ -165,6 +187,7 @@
       this.initCanvas();
       this.loadPetalImages();
       this.createPetals();
+      this.createSparkles();
       this.bindEvents();
 
       this.isRunning = true;
@@ -187,6 +210,7 @@
       this.canvas = null;
       this.ctx = null;
       this.petals = [];
+      this.sparkles = [];
     }
 
     initCanvas() {
@@ -230,7 +254,7 @@
 
     createPetals() {
       const isMobile = window.innerWidth <= 768;
-      const count = isMobile ? 26 : 48;
+      const count = isMobile ? 28 : 52;
       const w = window.innerWidth;
       const h = window.innerHeight;
       this.petals = [];
@@ -242,9 +266,9 @@
           y: Math.random() * h,
           z: z,
           imgIdx: i % 4,
-          baseSize: 11 + Math.random() * 14,
-          vx: (0.35 + Math.random() * 0.6) * z,
-          vy: (0.7 + Math.random() * 1.1) * z,
+          baseSize: 12 + Math.random() * 14,
+          vx: (0.35 + Math.random() * 0.65) * z,
+          vy: (0.75 + Math.random() * 1.15) * z,
           rotZ: Math.random() * Math.PI * 2,
           vRotZ: (Math.random() - 0.5) * 0.035,
           rotX: Math.random() * Math.PI * 2,
@@ -253,9 +277,79 @@
           vRotY: 0.012 + Math.random() * 0.025,
           swayPhase: Math.random() * Math.PI * 2,
           swaySpeed: 0.012 + Math.random() * 0.018,
-          opacity: (0.55 + Math.random() * 0.4) * (0.6 + z * 0.4),
+          opacity: (0.6 + Math.random() * 0.38) * (0.65 + z * 0.35),
           pushX: 0,
           pushY: 0
+        });
+      }
+    }
+
+    createSparkles() {
+      const count = window.innerWidth <= 768 ? 20 : 36;
+      const w = window.innerWidth;
+      const h = window.innerHeight;
+      this.sparkles = [];
+
+      for (let i = 0; i < count; i++) {
+        this.sparkles.push({
+          x: Math.random() * w,
+          y: Math.random() * h,
+          radius: 1.0 + Math.random() * 1.8,
+          alpha: 0.2 + Math.random() * 0.7,
+          pulseSpeed: 0.015 + Math.random() * 0.025,
+          vy: 0.3 + Math.random() * 0.5,
+          vx: (Math.random() - 0.4) * 0.3,
+          color: Math.random() > 0.3 ? '#ffd666' : '#fff'
+        });
+      }
+    }
+
+    // 交互特效：点击迸发金色花瓣与微光尘埃
+    spawnClickBurst(clientX, clientY) {
+      if (!this.isRunning) return;
+      if (this.petals.length > 120 || this.sparkles.length > 150) return;
+      const count = 14;
+      for (let i = 0; i < count; i++) {
+        const angle = (Math.PI * 2 / count) * i + (Math.random() - 0.5) * 0.4;
+        const speed = 2.5 + Math.random() * 5.0;
+        const z = 0.6 + Math.random() * 0.5;
+
+        this.petals.push({
+          x: clientX,
+          y: clientY,
+          z: z,
+          imgIdx: Math.floor(Math.random() * 4),
+          baseSize: 13 + Math.random() * 13,
+          vx: Math.cos(angle) * speed,
+          vy: Math.sin(angle) * speed,
+          rotZ: Math.random() * Math.PI * 2,
+          vRotZ: (Math.random() - 0.5) * 0.08,
+          rotX: Math.random() * Math.PI * 2,
+          vRotX: 0.03 + Math.random() * 0.04,
+          rotY: Math.random() * Math.PI * 2,
+          vRotY: 0.03 + Math.random() * 0.04,
+          swayPhase: Math.random() * Math.PI * 2,
+          swaySpeed: 0.02,
+          opacity: 0.95,
+          pushX: 0,
+          pushY: 0,
+          isBurst: true
+        });
+      }
+
+      for (let j = 0; j < 20; j++) {
+        const a = Math.random() * Math.PI * 2;
+        const s = 1.5 + Math.random() * 4.5;
+        this.sparkles.push({
+          x: clientX,
+          y: clientY,
+          radius: 1.5 + Math.random() * 2.0,
+          alpha: 1.0,
+          pulseSpeed: 0.03,
+          vy: Math.sin(a) * s,
+          vx: Math.cos(a) * s,
+          color: '#ffd666',
+          isBurst: true
         });
       }
     }
@@ -280,6 +374,13 @@
       };
       window.addEventListener('mousemove', onMouseMove, { passive: true });
       this.cleanupFns.push(() => window.removeEventListener('mousemove', onMouseMove));
+
+      const onClick = (e) => {
+        // 点击任意位置触发桂花微光绽放涟漪
+        this.spawnClickBurst(e.clientX, e.clientY);
+      };
+      window.addEventListener('pointerdown', onClick, { passive: true });
+      this.cleanupFns.push(() => window.removeEventListener('pointerdown', onClick));
     }
 
     animate() {
@@ -296,47 +397,95 @@
       const mx = this.mouse.x;
       const my = this.mouse.y;
 
-      for (let i = 0; i < this.petals.length; i++) {
+      // 1. 绘制星尘微光
+      for (let sIdx = this.sparkles.length - 1; sIdx >= 0; sIdx--) {
+        const s = this.sparkles[sIdx];
+        s.alpha += Math.sin(performance.now() * 0.003 + sIdx) * s.pulseSpeed;
+        s.y += s.vy;
+        s.x += s.vx;
+
+        if (s.isBurst) {
+          s.vx *= 0.94;
+          s.vy *= 0.94;
+          s.vy += 0.08; // 微重力
+          s.alpha -= 0.015;
+          if (s.alpha <= 0) {
+            this.sparkles.splice(sIdx, 1);
+            continue;
+          }
+        } else {
+          if (s.y > h + 10) {
+            s.y = -10;
+            s.x = Math.random() * w;
+          }
+        }
+
+        const clampedAlpha = Math.max(0, Math.min(1, s.alpha));
+        this.ctx.save();
+        this.ctx.fillStyle = s.color;
+        this.ctx.globalAlpha = clampedAlpha;
+        this.ctx.beginPath();
+        this.ctx.arc(s.x, s.y, s.radius, 0, Math.PI * 2);
+        this.ctx.fill();
+        this.ctx.restore();
+      }
+
+      // 2. 绘制 3D 翻转花瓣
+      for (let i = this.petals.length - 1; i >= 0; i--) {
         const p = this.petals[i];
 
-        // 3D 翻滚姿态更新
+        // 3D 姿态更新
         p.rotZ += p.vRotZ;
         p.rotX += p.vRotX;
         p.rotY += p.vRotY;
         p.swayPhase += p.swaySpeed;
 
-        // 鼠标微风扰动 (Cursor Wind & Repulsion)
-        if (mx > -9000) {
-          const dx = p.x - mx;
-          const dy = p.y - my;
-          const dist = Math.hypot(dx, dy);
-          if (dist < 140 && dist > 1) {
-            const force = (1 - dist / 140) * 4.5;
-            p.pushX += (dx / dist) * force + this.mouse.vx * 0.25;
-            p.pushY += (dy / dist) * force + this.mouse.vy * 0.25;
-            p.vRotX += (Math.random() - 0.5) * 0.04;
-            p.vRotY += (Math.random() - 0.5) * 0.04;
+        if (p.isBurst) {
+          p.vx *= 0.95;
+          p.vy *= 0.95;
+          p.vy += 0.06;
+          p.opacity -= 0.008;
+          p.x += p.vx;
+          p.y += p.vy;
+
+          if (p.opacity <= 0.05) {
+            this.petals.splice(i, 1);
+            continue;
           }
-        }
+        } else {
+          // 鼠标微风扰动 (Cursor Wind & Repulsion)
+          if (mx > -9000) {
+            const dx = p.x - mx;
+            const dy = p.y - my;
+            const dist = Math.hypot(dx, dy);
+            if (dist < 140 && dist > 1) {
+              const force = (1 - dist / 140) * 4.5;
+              p.pushX += (dx / dist) * force + this.mouse.vx * 0.25;
+              p.pushY += (dy / dist) * force + this.mouse.vy * 0.25;
+              p.vRotX += (Math.random() - 0.5) * 0.04;
+              p.vRotY += (Math.random() - 0.5) * 0.04;
+            }
+          }
 
-        // 阻尼回弹与重力飘移
-        p.pushX *= 0.93;
-        p.pushY *= 0.93;
+          // 阻尼回弹与重力飘移
+          p.pushX *= 0.93;
+          p.pushY *= 0.93;
 
-        p.x += p.vx + Math.sin(p.swayPhase) * 0.75 + p.pushX;
-        p.y += p.vy + p.pushY;
+          p.x += p.vx + Math.sin(p.swayPhase) * 0.75 + p.pushX;
+          p.y += p.vy + p.pushY;
 
-        // 越界平滑回环
-        if (p.y > h + 35) {
-          p.y = -30;
-          p.x = Math.random() * w;
-          p.pushX = 0;
-          p.pushY = 0;
-        }
-        if (p.x > w + 35) {
-          p.x = -30;
-        } else if (p.x < -35) {
-          p.x = w + 35;
+          // 越界平滑回环
+          if (p.y > h + 35) {
+            p.y = -30;
+            p.x = Math.random() * w;
+            p.pushX = 0;
+            p.pushY = 0;
+          }
+          if (p.x > w + 35) {
+            p.x = -35;
+          } else if (p.x < -35) {
+            p.x = w + 35;
+          }
         }
 
         // 3D 透视缩放与翻转绘制 (Sakura Sunset 风格)
@@ -348,7 +497,7 @@
         this.ctx.translate(p.x, p.y);
         this.ctx.scale(scaleX, scaleY);
         this.ctx.rotate(p.rotZ);
-        this.ctx.globalAlpha = p.opacity;
+        this.ctx.globalAlpha = Math.max(0, Math.min(1, p.opacity));
 
         const img = this.images[p.imgIdx];
         if (img && img.complete && img.naturalWidth > 0) {
@@ -383,17 +532,40 @@
       backdropEl.setAttribute('aria-hidden', 'true');
       backdropEl.innerHTML = `
         <div class="midautumn-nightsky"></div>
+        <div class="midautumn-sky-glow"></div>
         <div class="midautumn-starfield"></div>
+        <div class="midautumn-meteors">
+          <span class="meteor m1"></span>
+          <span class="meteor m2"></span>
+          <span class="meteor m3"></span>
+        </div>
+        <div class="midautumn-scenic-art" id="midautumnScenic"></div>
         <div class="midautumn-clouds" id="midautumnClouds"></div>
+        <div class="midautumn-river-mist"></div>
+        <div class="midautumn-water-waves"></div>
+        <div class="midautumn-water-reflections"></div>
+        <div class="midautumn-lanterns">
+          <div class="midautumn-lantern lantern-1">
+            <span class="lantern-flame"></span>
+          </div>
+          <div class="midautumn-lantern lantern-2">
+            <span class="lantern-flame"></span>
+          </div>
+          <div class="midautumn-lantern lantern-3">
+            <span class="lantern-flame"></span>
+          </div>
+        </div>
         <div class="midautumn-celestial-moon" id="midautumnMoon">
+          <div class="moon-halo-outer"></div>
           <div class="moon-halo"></div>
+          <div class="moon-corona"></div>
           <img class="moon-img" src="${ASSET_BASE}/moon_luminous.webp" alt="满月">
           <div class="moon-wisp"></div>
+          <div class="moon-wisp wisp-2"></div>
         </div>
         <div class="midautumn-canopy-wrap" id="midautumnCanopy">
           <img class="canopy-img" src="${ASSET_BASE}/bough_canopy.webp" alt="古桂天幕枝桠">
         </div>
-        <div class="midautumn-water-waves"></div>
         <div class="midautumn-fireflies">
           <span class="firefly f1"></span>
           <span class="firefly f2"></span>
@@ -401,6 +573,10 @@
           <span class="firefly f4"></span>
           <span class="firefly f5"></span>
           <span class="firefly f6"></span>
+          <span class="firefly f7"></span>
+          <span class="firefly f8"></span>
+          <span class="firefly f9"></span>
+          <span class="firefly f10"></span>
         </div>
       `;
       if (document.body && document.body.prepend) {
