@@ -1207,8 +1207,42 @@
   <script>
     (function () {
       try {
-        var skin = localStorage.getItem('xsl_festival_skin');
-        if (skin === 'midautumn' || skin === null) {
+        const pref = localStorage.getItem('xsl_festival_skin_pref') || localStorage.getItem('xsl_midautumn_skin_pref');
+        let isMid = (pref === 'midautumn' || pref === 'on' || localStorage.getItem('xsl_festival_skin') === 'midautumn');
+        if (!pref || pref === 'auto') {
+          try {
+            const fmt = new Intl.DateTimeFormat('zh-CN-u-ca-chinese', { month: 'numeric', day: 'numeric' });
+            const parts = fmt.formatToParts(new Date());
+            const mp = parts.find(p => p.type === 'month');
+            const dp = parts.find(p => p.type === 'day');
+            if (mp && dp) {
+              const lm = parseInt(mp.value, 10), ld = parseInt(dp.value, 10);
+              if (lm === 8 && ld >= 13 && ld <= 18) isMid = true;
+            }
+          } catch (e) {}
+          if (!isMid) {
+            try {
+              const now = new Date();
+              const y = now.getFullYear();
+              const intervals = {
+                2024: [[9, 15], [9, 20]],
+                2025: [[10, 4], [10, 9]],
+                2026: [[9, 23], [9, 28]],
+                2027: [[9, 13], [9, 18]],
+                2028: [[10, 1], [10, 6]],
+                2029: [[9, 20], [9, 25]],
+                2030: [[9, 10], [9, 15]]
+              };
+              if (intervals[y]) {
+                const [[m1, d1], [m2, d2]] = intervals[y];
+                const start = new Date(y, m1 - 1, d1);
+                const end = new Date(y, m2 - 1, d2, 23, 59, 59);
+                if (now >= start && now <= end) isMid = true;
+              }
+            } catch (e) {}
+          }
+        }
+        if (isMid && pref !== 'default' && pref !== 'off') {
           document.documentElement.setAttribute('data-skin', 'midautumn');
         }
       } catch (e) {}
@@ -1370,6 +1404,6 @@
   <script src="buttons.js?v=33"></script>
   <script src="../js/cross-page-player.js?v=7" defer></script>
   <script src="../js/motion.js?v=18" defer></script>
-  <script src="../js/midautumn-skin.js?v=3" defer></script>
+  <script src="../js/midautumn-skin.js?v=4" defer></script>
 </body>
 </html>

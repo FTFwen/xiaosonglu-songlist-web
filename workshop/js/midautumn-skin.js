@@ -20,7 +20,7 @@
   const STORAGE_KEY = 'xsl_midautumn_skin_pref';
   const ASSET_BASE = 'assets/midautumn';
 
-  // ===== 1. 农历节气智能判定 (八月初一至二十) =====
+  // ===== 1. 农历节气智能判定 (八月十三至十八，中秋前后共六天) =====
   function isMidAutumnPeriod(now = new Date()) {
     try {
       const fmt = new Intl.DateTimeFormat('zh-CN-u-ca-chinese', { month: 'numeric', day: 'numeric' });
@@ -30,23 +30,23 @@
       if (mp && dp) {
         const lm = parseInt(mp.value, 10);
         const ld = parseInt(dp.value, 10);
-        if (!isNaN(lm) && !isNaN(ld) && lm === 8 && ld >= 1 && ld <= 20) {
+        if (!isNaN(lm) && !isNaN(ld) && lm === 8 && ld >= 13 && ld <= 18) {
           return true;
         }
       }
     } catch (e) {}
 
-    // 公历对应中秋区间兜底 (2024-2030)
+    // 公历对应中秋前后六天区间兜底 (2024-2030)
     try {
       const y = now.getFullYear();
       const intervals = {
-        2024: [[9, 10], [9, 23]],
-        2025: [[9, 28], [10, 12]],
-        2026: [[9, 15], [9, 30]],
-        2027: [[9, 8], [9, 22]],
-        2028: [[9, 25], [10, 8]],
-        2029: [[9, 15], [9, 28]],
-        2030: [[9, 5], [9, 18]]
+        2024: [[9, 15], [9, 20]],
+        2025: [[10, 4], [10, 9]],
+        2026: [[9, 23], [9, 28]],
+        2027: [[9, 13], [9, 18]],
+        2028: [[10, 1], [10, 6]],
+        2029: [[9, 20], [9, 25]],
+        2030: [[9, 10], [9, 15]]
       };
       if (intervals[y]) {
         const [[m1, d1], [m2, d2]] = intervals[y];

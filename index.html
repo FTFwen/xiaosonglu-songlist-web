@@ -20,7 +20,7 @@
             const dp = parts.find(p => p.type === 'day');
             if (mp && dp) {
               const lm = parseInt(mp.value, 10), ld = parseInt(dp.value, 10);
-              if (lm === 8 && ld >= 1 && ld <= 20) isMid = true;
+              if (lm === 8 && ld >= 13 && ld <= 18) isMid = true;
             }
           } catch(e) {}
           if (!isMid) {
@@ -28,13 +28,13 @@
               const now = new Date();
               const y = now.getFullYear();
               const intervals = {
-                2024: [[9, 10], [9, 23]],
-                2025: [[9, 28], [10, 12]],
-                2026: [[9, 15], [9, 30]],
-                2027: [[9, 8], [9, 22]],
-                2028: [[9, 25], [10, 8]],
-                2029: [[9, 15], [9, 28]],
-                2030: [[9, 5], [9, 18]]
+                2024: [[9, 15], [9, 20]],
+                2025: [[10, 4], [10, 9]],
+                2026: [[9, 23], [9, 28]],
+                2027: [[9, 13], [9, 18]],
+                2028: [[10, 1], [10, 6]],
+                2029: [[9, 20], [9, 25]],
+                2030: [[9, 10], [9, 15]]
               };
               if (intervals[y]) {
                 const [[m1, d1], [m2, d2]] = intervals[y];
@@ -4418,6 +4418,6 @@
   <script src="js/rating.js?v=8" defer></script>
   <script src="js/app.js?v=104" defer></script>
   <script src="js/motion.js?v=19" defer></script>
-  <script src="js/midautumn-skin.js?v=3" defer></script>
+  <script src="js/midautumn-skin.js?v=4" defer></script>
 </body>
 </html>

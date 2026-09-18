@@ -3,7 +3,7 @@
  * 小松绿节日皮肤系统 · 中秋·月满桂香 (Universal Festival Skin System)
  * 适配：主站歌单 (index.html)、按钮墙 (/buttons)、个人工作台 (/workshop)
  * 功能特性：
- * 1. 节气智能双轨控制：农历八月（初一至二十）自动点亮满月中秋氛围，亦支持用户随时自由切换；
+ * 1. 节气智能双轨控制：农历八月（十三至十八，中秋前后共六天）自动点亮满月中秋氛围，亦支持用户随时自由切换；
  * 2. 跨页面轻巧开关小按钮：顶栏/横幅常驻轻量胶囊按钮，弹出通透琉璃皮肤选择器，面向未来节日多皮肤平滑扩展；
  * 3. 沉浸光影与动效：全屏金桂雨飘落粒子系统、鼠标微风扰动、满月流光呼吸、玉兔桂枝装饰；
  * 4. 极致性能与无障碍：离开视口/切换标签页 GPU 零占用暂停、严格遵循 prefers-reduced-motion 降级；
@@ -66,24 +66,24 @@
       if (mp && dp) {
         const lunarMonth = parseInt(mp.value, 10);
         const lunarDay = parseInt(dp.value, 10);
-        // 农历八月（初一至二十，迎月、中秋正日、追月黄金赏月期）
-        if (!isNaN(lunarMonth) && !isNaN(lunarDay) && lunarMonth === 8 && lunarDay >= 1 && lunarDay <= 20) {
+        // 农历八月（十三至十八，中秋前后共六天：迎月、中秋正日、追月与观潮黄金期）
+        if (!isNaN(lunarMonth) && !isNaN(lunarDay) && lunarMonth === 8 && lunarDay >= 13 && lunarDay <= 18) {
           return true;
         }
       }
     } catch (e) {}
 
-    // 算法兜底：公历对应中秋节气前后区间 (2024-2030)
+    // 算法兜底：公历对应中秋节气前后共六天区间 (2024-2030)
     try {
       const y = now.getFullYear();
       const intervals = {
-        2024: [[9, 10], [9, 23]],
-        2025: [[9, 28], [10, 12]],
-        2026: [[9, 15], [9, 30]],
-        2027: [[9, 8], [9, 22]],
-        2028: [[9, 25], [10, 8]],
-        2029: [[9, 15], [9, 28]],
-        2030: [[9, 5], [9, 18]]
+        2024: [[9, 15], [9, 20]],
+        2025: [[10, 4], [10, 9]],
+        2026: [[9, 23], [9, 28]],
+        2027: [[9, 13], [9, 18]],
+        2028: [[10, 1], [10, 6]],
+        2029: [[9, 20], [9, 25]],
+        2030: [[9, 10], [9, 15]]
       };
       if (intervals[y]) {
         const [[m1, d1], [m2, d2]] = intervals[y];
@@ -613,7 +613,7 @@
               <span>随节气自然启用</span>
               <span class="skin-option-badge">${inPeriod ? '中秋期生效' : '日常保持常态'}</span>
             </div>
-            <div class="skin-option-desc">农历八月自动满月中秋，平日经典森林</div>
+            <div class="skin-option-desc">中秋前后共六天自动满月中秋，平日经典森林</div>
           </div>
         </button>
       </div>

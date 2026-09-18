@@ -64,7 +64,7 @@ test('4. 验证 workshop/index.html 样式与脚本正确引入并完成缓存�
   const html = fs.readFileSync(path.join(REPO_ROOT, 'workshop/index.html'), 'utf8');
 
   assert.ok(html.includes('css/midautumn-skin.css?v=3') || html.includes('css/midautumn-skin.css?v=4') || html.includes('css/midautumn-skin.css?v=5'), '必须引入 css/midautumn-skin.css?v=3 或更高版本');
-  assert.ok(html.includes('js/midautumn-skin.js?v=3') || html.includes('js/midautumn-skin.js?v=4') || html.includes('js/midautumn-skin.js?v=5'), '必须引入 js/midautumn-skin.js?v=3 或更高版本');
+  assert.ok(html.includes('js/midautumn-skin.js?v=3') || html.includes('js/midautumn-skin.js?v=4') || html.includes('js/midautumn-skin.js?v=5') || html.includes('js/midautumn-skin.js?v=6'), '必须引入 js/midautumn-skin.js?v=3 或更高版本');
   assert.ok(html.includes('css/weather-ambience.css?v=11'), 'css/weather-ambience.css 版本号应递增至 11');
   assert.ok(html.includes('js/weather-ambience.js?v=6') || html.includes('js/weather-ambience.js?v=7'), 'js/weather-ambience.js 版本号应递增至 6 或 7');
   assert.ok(html.includes('data-midautumn-skin'), 'head 中应包含防闪烁的早期 data-midautumn-skin 注入逻辑');
@@ -73,6 +73,10 @@ test('4. 验证 workshop/index.html 样式与脚本正确引入并完成缓存�
 test('5. 验证中秋农历节气判定与双轨控制逻辑', () => {
   const code = fs.readFileSync(path.join(REPO_ROOT, 'js/midautumn-skin.js'), 'utf8');
   assert.ok(code.includes('formatToParts'), '必须使用 formatToParts 稳妥解析农历月日');
+  assert.ok(code.includes('lunarDay >= 13 && lunarDay <= 18'), '主站脚本必须判定农历八月十三至十八 (前后共六天)');
+
+  const wsCode = fs.readFileSync(path.join(REPO_ROOT, 'workshop/js/midautumn-skin.js'), 'utf8');
+  assert.ok(wsCode.includes('ld >= 13 && ld <= 18'), '工作台脚本必须判定农历八月十三至十八 (前后共六天)');
 
   function isMidAutumnPeriod(now = new Date()) {
     try {
@@ -83,7 +87,7 @@ test('5. 验证中秋农历节气判定与双轨控制逻辑', () => {
       if (mp && dp) {
         const lunarMonth = parseInt(mp.value, 10);
         const lunarDay = parseInt(dp.value, 10);
-        if (!isNaN(lunarMonth) && !isNaN(lunarDay) && lunarMonth === 8 && lunarDay >= 1 && lunarDay <= 20) {
+        if (!isNaN(lunarMonth) && !isNaN(lunarDay) && lunarMonth === 8 && lunarDay >= 13 && lunarDay <= 18) {
           return true;
         }
       }
@@ -91,13 +95,13 @@ test('5. 验证中秋农历节气判定与双轨控制逻辑', () => {
 
     const y = now.getFullYear();
     const intervals = {
-      2024: [[9, 10], [9, 23]],
-      2025: [[9, 28], [10, 12]],
-      2026: [[9, 15], [9, 30]],
-      2027: [[9, 8], [9, 22]],
-      2028: [[9, 25], [10, 8]],
-      2029: [[9, 15], [9, 28]],
-      2030: [[9, 5], [9, 18]]
+      2024: [[9, 15], [9, 20]],
+      2025: [[10, 4], [10, 9]],
+      2026: [[9, 23], [9, 28]],
+      2027: [[9, 13], [9, 18]],
+      2028: [[10, 1], [10, 6]],
+      2029: [[9, 20], [9, 25]],
+      2030: [[9, 10], [9, 15]]
     };
     if (intervals[y]) {
       const [[m1, d1], [m2, d2]] = intervals[y];
@@ -108,10 +112,19 @@ test('5. 验证中秋农历节气判定与双轨控制逻辑', () => {
     return false;
   }
 
-  // 2026 年中秋节当天 (公历 2026-09-25)
+  // 2026 年中秋节当天 (公历 2026-09-25，农历八月十五)
   assert.equal(isMidAutumnPeriod(new Date('2026-09-25')), true, '2026年中秋节当天必须判定为节气激活');
-  // 2026 年农历八月初七 (公历 2026-09-17)
-  assert.equal(isMidAutumnPeriod(new Date('2026-09-17')), true, '2026年农历八月初七中秋当月应判定为节气激活');
+  // 2026 年中秋前后共六天首日 (公历 2026-09-23，农历八月十三)
+  assert.equal(isMidAutumnPeriod(new Date('2026-09-23')), true, '2026年中秋6天首日必须判定为节气激活');
+  // 2026 年中秋前后共六天末日 (公历 2026-09-28，农历八月十八)
+  assert.equal(isMidAutumnPeriod(new Date('2026-09-28')), true, '2026年中秋6天末日必须判定为节气激活');
+
+  // 边界外测试：2026-09-22 (公历农历八月十二，中秋6天前一日)
+  assert.equal(isMidAutumnPeriod(new Date('2026-09-22')), false, '2026年八月十二不得误激活');
+  // 边界外测试：2026-09-29 (公历农历八月十九，中秋6天后一日)
+  assert.equal(isMidAutumnPeriod(new Date('2026-09-29')), false, '2026年八月十九不得误激活');
+  // 2026 年农历八月初七 (公历 2026-09-17，原20天配置生效但新6天配置不生效)
+  assert.equal(isMidAutumnPeriod(new Date('2026-09-17')), false, '2026年农历八月初七不在前后6天范围内');
   // 2026 年冬至 (公历 2026-12-21)
   assert.equal(isMidAutumnPeriod(new Date('2026-12-21')), false, '非中秋节气不得误激活');
 
@@ -126,6 +139,7 @@ test('5. 验证中秋农历节气判定与双轨控制逻辑', () => {
   assert.equal(resolveSkinState('default', new Date('2026-09-25')), false, '用户手动关闭时中秋节当天亦保持关闭');
   assert.equal(resolveSkinState('auto', new Date('2026-09-25')), true, 'auto模式中秋节自动激活');
   assert.equal(resolveSkinState('auto', new Date('2026-03-01')), false, 'auto模式春季不激活');
+  assert.equal(resolveSkinState('auto', new Date('2026-09-17')), false, 'auto模式八月初七不激活');
 });
 
 test('6. 验证 weather-ambience.js 光影面板集成中秋开关', () => {
@@ -183,13 +197,43 @@ test('9. 验证中秋皮肤 V3 优化点：桂花枝与玉兔对角错落分离�
   // 验证各页面均已完成静态资源版本递增至 v=3
   const indexHtml = fs.readFileSync(path.join(REPO_ROOT, 'index.html'), 'utf8');
   assert.ok(indexHtml.includes('css/midautumn-skin.css?v=3'), '主站 index.html 样式版本必须递增至 v=3');
-  assert.ok(indexHtml.includes('js/midautumn-skin.js?v=3'), '主站 index.html 脚本版本必须递增至 v=3');
+  assert.ok(indexHtml.includes('js/midautumn-skin.js?v=3') || indexHtml.includes('js/midautumn-skin.js?v=4'), '主站 index.html 脚本版本必须递增至 v=4');
 
   const buttonsHtml = fs.readFileSync(path.join(REPO_ROOT, 'buttons/index.html'), 'utf8');
   assert.ok(buttonsHtml.includes('css/midautumn-skin.css?v=3'), '按钮墙 buttons/index.html 样式版本必须递增至 v=3');
-  assert.ok(buttonsHtml.includes('js/midautumn-skin.js?v=3'), '按钮墙 buttons/index.html 脚本版本必须递增至 v=3');
+  assert.ok(buttonsHtml.includes('js/midautumn-skin.js?v=3') || buttonsHtml.includes('js/midautumn-skin.js?v=4'), '按钮墙 buttons/index.html 脚本版本必须递增至 v=4');
 
   const wsHtml = fs.readFileSync(path.join(REPO_ROOT, 'workshop/index.html'), 'utf8');
   assert.ok(wsHtml.includes('css/midautumn-skin.css?v=3') || wsHtml.includes('css/midautumn-skin.css?v=4') || wsHtml.includes('css/midautumn-skin.css?v=5'), '工作台 workshop/index.html 样式版本必须递增至 v=3 或更高版本');
-  assert.ok(wsHtml.includes('js/midautumn-skin.js?v=3') || wsHtml.includes('js/midautumn-skin.js?v=4') || wsHtml.includes('js/midautumn-skin.js?v=5'), '工作台 workshop/index.html 脚本版本必须递增至 v=3 或更高版本');
+  assert.ok(wsHtml.includes('js/midautumn-skin.js?v=3') || wsHtml.includes('js/midautumn-skin.js?v=4') || wsHtml.includes('js/midautumn-skin.js?v=5') || wsHtml.includes('js/midautumn-skin.js?v=6'), '工作台 workshop/index.html 脚本版本必须递增至 v=3 或更高版本');
+});
+
+test('10. 验证全站中秋前后六天节气配置与兜底区间一致性', () => {
+  const files = [
+    'js/midautumn-skin.js',
+    'workshop/js/midautumn-skin.js',
+    'index.html',
+    'workshop/index.html',
+    'buttons/index.html'
+  ];
+
+  for (const f of files) {
+    const content = fs.readFileSync(path.join(REPO_ROOT, f), 'utf8');
+    assert.ok(
+      content.includes('13') && content.includes('18'),
+      `${f} 必须包含农历八月十三至十八 (中秋前后共六天) 的判定条件`
+    );
+    assert.ok(
+      content.includes('2024: [[9, 15], [9, 20]]'),
+      `${f} 必须包含 2024 年中秋前后六天兜底区间`
+    );
+    assert.ok(
+      content.includes('2026: [[9, 23], [9, 28]]'),
+      `${f} 必须包含 2026 年中秋前后六天兜底区间`
+    );
+    assert.ok(
+      content.includes('2030: [[9, 10], [9, 15]]'),
+      `${f} 必须包含 2030 年中秋前后六天兜底区间`
+    );
+  }
 });
