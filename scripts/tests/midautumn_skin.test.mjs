@@ -10,20 +10,56 @@ test('1. 验证歌单与按钮墙正确集成中秋节日皮肤与切换小按�
   assert.ok(rootIndex.includes('css/midautumn-skin.css?v='), '歌单 index.html 必须引入 css/midautumn-skin.css 且带有版本号');
   assert.ok(rootIndex.includes('js/midautumn-skin.js?v='), '歌单 index.html 必须引入 js/midautumn-skin.js 且带有版本号');
   assert.ok(rootIndex.includes('id="festivalSkinBtn"'), '歌单 index.html 必须包含桌面端节日皮肤切换按钮 festivalSkinBtn');
-  assert.ok(rootIndex.includes('id="mobileFestivalSkinBtn"'), '歌单 index.html 必须包含移动端节日皮肤切换按钮 mobileFestivalSkinBtn');
   assert.ok(rootIndex.includes('data-skin'), '歌单 index.html 头部必须包含早期防闪烁感知脚本');
 
   const buttonsIndex = fs.readFileSync(path.join(REPO_ROOT, 'buttons/index.html'), 'utf8');
   assert.ok(buttonsIndex.includes('css/midautumn-skin.css?v='), '按钮墙 buttons/index.html 必须引入 css/midautumn-skin.css 且带有版本号');
   assert.ok(buttonsIndex.includes('js/midautumn-skin.js?v='), '按钮墙 buttons/index.html 必须引入 js/midautumn-skin.js 且带有版本号');
   assert.ok(buttonsIndex.includes('id="festivalSkinBtn"'), '按钮墙 buttons/index.html 必须包含桌面端节日皮肤切换按钮 festivalSkinBtn');
-  assert.ok(buttonsIndex.includes('id="mobileFestivalSkinBtn"'), '按钮墙 buttons/index.html 必须包含移动端节日皮肤切换按钮 mobileFestivalSkinBtn');
-  assert.ok(buttonsIndex.includes('data-skin'), '按钮墙 buttons/index.html 头部必须包含早期防闪烁感知脚本');
 
   // 严格资产隔离校验：确保没有把临时草稿遗留在根目录 assets/
   const rootAssets = fs.readdirSync(path.join(REPO_ROOT, 'assets'));
   const dirtyFiles = rootAssets.filter(f => f.includes('mid-autumn') || f.includes('osmanthus'));
   assert.equal(dirtyFiles.length, 0, `根目录 assets/ 严禁遗留草稿碎片: ${dirtyFiles.join(', ')}`);
+});
+
+// 手机端整站不启用节日皮肤：不自动开启、不显示入口、手动改偏好也不生效。
+// 这三处入口任一漏掉，手机端就会露出皮肤或按钮，所以逐个守住。
+test('1b. 手机端整站不启用中秋皮肤（三处入口都已屏蔽）', () => {
+  for (const page of ['index.html', 'buttons/index.html']) {
+    const html = fs.readFileSync(path.join(REPO_ROOT, page), 'utf8');
+    assert.ok(
+      !html.includes('id="mobileFestivalSkinBtn"'),
+      `${page} 不应再硬编码手机端入口按钮 mobileFestivalSkinBtn`,
+    );
+    assert.match(
+      html,
+      /matchMedia\('\(max-width: 768px\)'\)\.matches\)\s*return;/,
+      `${page} 的防闪烁脚本必须在最前面拦住手机端（否则首屏会闪出皮肤）`,
+    );
+  }
+
+  const skinJs = fs.readFileSync(path.join(REPO_ROOT, 'js/midautumn-skin.js'), 'utf8');
+  assert.match(skinJs, /function isMobileViewport\(\)/, 'midautumn-skin.js 需要 isMobileViewport 判断');
+  assert.match(
+    skinJs,
+    /function getActiveSkinId\(\)\s*\{\s*if \(isMobileViewport\(\)\) return 'default';/,
+    'getActiveSkinId 必须在手机端直接返回 default（手动偏好也不生效）',
+  );
+  assert.ok(
+    !/mobileNav\.appendChild\(mBtn\)/.test(skinJs),
+    'midautumn-skin.js 不应再向手机端导航注入入口按钮',
+  );
+
+  const css = fs.readFileSync(path.join(REPO_ROOT, 'css/midautumn-skin.css'), 'utf8');
+  const mobileBlock = /@media \(max-width: 768px\) \{[\s\S]*?\n\}/.exec(css);
+  assert.ok(mobileBlock, '找不到 midautumn-skin.css 的手机端媒体查询');
+  assert.match(mobileBlock[0], /#festivalSkinBtn/, '手机端应隐藏桌面入口，避免露出');
+  assert.match(mobileBlock[0], /\.mobile-skin-btn/, '手机端也应隐藏手机入口（兜底）');
+  assert.ok(
+    !/\.mobile-skin-btn \{[^}]*display: inline-flex/.test(css),
+    '手机端不应再把 .mobile-skin-btn 显示出来',
+  );
 });
 
 test('2. 验证全站中秋美术素材完整性与有效性', () => {
@@ -194,18 +230,20 @@ test('9. 验证中秋皮肤 V3 优化点：桂花枝与玉兔对角错落分离�
   assert.ok(js.includes('ensureBackdrop'), 'JS 必须包含全站沉浸背景层管理函数 ensureBackdrop');
   assert.ok(js.includes('sparkles'), '金桂粒子引擎中必须扩充星尘微光粒子 sparkles');
 
-  // 验证各页面均已完成静态资源版本递增至 v=3
-  const indexHtml = fs.readFileSync(path.join(REPO_ROOT, 'index.html'), 'utf8');
-  assert.ok(indexHtml.includes('css/midautumn-skin.css?v=3'), '主站 index.html 样式版本必须递增至 v=3');
-  assert.ok(indexHtml.includes('js/midautumn-skin.js?v=3') || indexHtml.includes('js/midautumn-skin.js?v=4'), '主站 index.html 脚本版本必须递增至 v=4');
-
-  const buttonsHtml = fs.readFileSync(path.join(REPO_ROOT, 'buttons/index.html'), 'utf8');
-  assert.ok(buttonsHtml.includes('css/midautumn-skin.css?v=3'), '按钮墙 buttons/index.html 样式版本必须递增至 v=3');
-  assert.ok(buttonsHtml.includes('js/midautumn-skin.js?v=3') || buttonsHtml.includes('js/midautumn-skin.js?v=4'), '按钮墙 buttons/index.html 脚本版本必须递增至 v=4');
-
-  const wsHtml = fs.readFileSync(path.join(REPO_ROOT, 'workshop/index.html'), 'utf8');
-  assert.ok(wsHtml.includes('css/midautumn-skin.css?v=3') || wsHtml.includes('css/midautumn-skin.css?v=4') || wsHtml.includes('css/midautumn-skin.css?v=5'), '工作台 workshop/index.html 样式版本必须递增至 v=3 或更高版本');
-  assert.ok(wsHtml.includes('js/midautumn-skin.js?v=3') || wsHtml.includes('js/midautumn-skin.js?v=4') || wsHtml.includes('js/midautumn-skin.js?v=5') || wsHtml.includes('js/midautumn-skin.js?v=6'), '工作台 workshop/index.html 脚本版本必须递增至 v=3 或更高版本');
+  // 验证各页面均已完成静态资源版本递增。v=3 是当初的最低要求，
+  // 之后每次改皮肤都会继续往后 bump，所以这里只判断「不小于 3」而不是写死具体值。
+  const versionAtLeast = (html, asset, minimum) => {
+    const match = new RegExp(`${asset.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\?v=(\\d+)`).exec(html);
+    return match ? Number(match[1]) >= minimum : false;
+  };
+  for (const [name, html] of [
+    ['主站 index.html', fs.readFileSync(path.join(REPO_ROOT, 'index.html'), 'utf8')],
+    ['按钮墙 buttons/index.html', fs.readFileSync(path.join(REPO_ROOT, 'buttons/index.html'), 'utf8')],
+    ['工作台 workshop/index.html', fs.readFileSync(path.join(REPO_ROOT, 'workshop/index.html'), 'utf8')],
+  ]) {
+    assert.ok(versionAtLeast(html, 'css/midautumn-skin.css', 3), `${name} 样式版本必须不低于 v=3`);
+    assert.ok(versionAtLeast(html, 'js/midautumn-skin.js', 3), `${name} 脚本版本必须不低于 v=3`);
+  }
 });
 
 test('10. 验证全站中秋前后六天节气配置与兜底区间一致性', () => {

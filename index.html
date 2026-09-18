@@ -6,10 +6,13 @@
   <link rel="icon" href="assets/xiaosonglu-bubble.png" type="image/png">
   <link rel="preload" href="assets/xiaosonglu-kuaile-subset.woff2?v=4" as="font" type="font/woff2" crossorigin>
   <title>小松绿歌单</title>
-  <link rel="stylesheet" href="css/midautumn-skin.css?v=3">
+  <link rel="stylesheet" href="css/midautumn-skin.css?v=4">
   <script>
     (function() {
       try {
+        // 手机端整站不启用节日皮肤：不设 data-skin，也不加载皮肤效果。
+        // 这段在 <head> 里最先执行，决定首屏是否已经带上皮肤，所以判断必须放在最前面。
+        if (window.matchMedia && window.matchMedia('(max-width: 768px)').matches) return;
         const pref = localStorage.getItem('xsl_festival_skin_pref') || localStorage.getItem('xsl_midautumn_skin_pref');
         let isMid = (pref === 'midautumn' || pref === 'on');
         if (!pref || pref === 'auto') {
@@ -4027,7 +4030,6 @@
           <a class="active" href="./"><svg class="icon" aria-hidden="true"><use href="#icon-music"></use></svg> 歌单</a>
           <a href="/buttons/"><svg class="icon" aria-hidden="true"><use href="#icon-playlist"></use></svg> 按钮墙</a>
           <a class="icon-only" href="/24xsl/" title="24点"><img src="assets/24xsl-title.webp" alt="24点"></a>
-          <button class="skin-switch-btn mobile-skin-btn" id="mobileFestivalSkinBtn" type="button" title="节日皮肤切换"><span class="skin-switch-icon" aria-hidden="true">🥮</span><span class="skin-switch-label">中秋</span></button>
         </div>
         <div class="header-actions">
           <button class="skin-switch-btn" id="festivalSkinBtn" type="button" title="节日皮肤切换"><span class="skin-switch-icon" aria-hidden="true">🥮</span><span class="skin-switch-label">中秋</span><span class="skin-switch-badge">限定</span></button>
@@ -4418,6 +4420,6 @@
   <script src="js/rating.js?v=8" defer></script>
   <script src="js/app.js?v=104" defer></script>
   <script src="js/motion.js?v=19" defer></script>
-  <script src="js/midautumn-skin.js?v=4" defer></script>
+  <script src="js/midautumn-skin.js?v=5" defer></script>
 </body>
 </html>

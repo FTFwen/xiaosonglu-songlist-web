@@ -97,6 +97,17 @@
   }
 
   // ===== 3. 用户偏好与激活态读取 =====
+  // 手机端整站不启用节日皮肤：不自动开启、不注入入口、也不响应手动切换。
+  // （桌面端与按钮墙的默认桌面布局不受影响；将来要放开手机端，把这里和
+  //   index.html / buttons/index.html 里同名的 isMobileViewport() 判断去掉即可。）
+  function isMobileViewport() {
+    try {
+      return !!(window.matchMedia && window.matchMedia('(max-width: 768px)').matches);
+    } catch (e) {
+      return false;
+    }
+  }
+
   function getPreference() {
     try {
       const pref = localStorage.getItem(STORAGE_KEY);
@@ -109,6 +120,7 @@
   }
 
   function getActiveSkinId() {
+    if (isMobileViewport()) return 'default';
     const pref = getPreference();
     if (pref === 'midautumn') return 'midautumn';
     if (pref === 'default') return 'default';
@@ -479,28 +491,10 @@
       });
     }
 
-    // 2. 手机端入口定位：主站 .header-nav 或 按钮墙 .banner-nav
-    const mobileNav = document.querySelector('.header-nav') || document.querySelector('.banner-nav');
-    let mBtn = document.getElementById('mobileFestivalSkinBtn');
-    if (!mBtn && mobileNav) {
-      mBtn = document.createElement('button');
-      mBtn.id = 'mobileFestivalSkinBtn';
-      mBtn.className = 'skin-switch-btn mobile-skin-btn';
-      mBtn.type = 'button';
-      mBtn.title = '节日皮肤切换';
-      mBtn.innerHTML = `
-        <span class="skin-switch-icon" aria-hidden="true">🥮</span>
-        <span class="skin-switch-label">中秋</span>
-      `;
-      mobileNav.appendChild(mBtn);
-    }
-    if (mBtn && !mBtn.dataset.bound) {
-      mBtn.dataset.bound = '1';
-      mBtn.addEventListener('click', (e) => {
-        e.stopPropagation();
-        toggleSkinPopover(mBtn);
-      });
-    }
+    // 2. 手机端整站不启用皮肤，因此不注入手机端入口；
+    //    若页面上残留了硬编码的手机端按钮，这里一并移除。
+    const staleMobileBtn = document.getElementById('mobileFestivalSkinBtn');
+    if (staleMobileBtn) staleMobileBtn.remove();
 
     updateSkinButtonsUI();
   }
@@ -510,9 +504,9 @@
     const pref = getPreference();
     const isMid = (activeSkin === 'midautumn');
 
+    // 只更新桌面端入口（手机端不启用皮肤，也没有入口）
     const btns = [
-      document.getElementById('festivalSkinBtn'),
-      document.getElementById('mobileFestivalSkinBtn')
+      document.getElementById('festivalSkinBtn')
     ].filter(Boolean);
 
     btns.forEach(btn => {

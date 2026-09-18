@@ -859,16 +859,13 @@ html[data-skin="midautumn"] .skin-switch-btn {
 }
 
 /* 响应式按钮显隐与布局隔离 */
+/* 手机端整站不启用节日皮肤：桌面入口与手机入口都不显示。
+   （JS 侧也已整体屏蔽，这里是对残留按钮或手动写入偏好的兜底。） */
 @media (max-width: 768px) {
-  #festivalSkinBtn {
+  #festivalSkinBtn,
+  .mobile-skin-btn,
+  #mobileFestivalSkinBtn {
     display: none !important;
-  }
-  .mobile-skin-btn {
-    display: inline-flex !important;
-    justify-content: center;
-    min-height: 28px;
-    padding: 4px 10px;
-    font-size: 11.5px;
   }
 }
 
