@@ -1,18 +1,19 @@
 {
   "roomKey": "xiaosonglu",
   "roomId": "1727071052",
-  "generatedAt": "2026-09-17T02:10:31.549Z",
+  "generatedAt": "2026-09-19T03:17:13.779Z",
   "source": "local-replay-ingestion",
   "latest": {
     "year": "2026",
     "month": "09",
-    "day": "16"
+    "day": "17"
   },
   "dateTree": {
     "2026": {
       "09": {
         "13": 21,
         "16": 1,
+        "17": 14,
         "08": 29,
         "03": 21
       },
@@ -3635,6 +3636,246 @@
         "lyric_excerpt": "观众反应窗口 00:52:30~00:57:12（00:52:31 起刷「好仙」「绿神唱歌了，真的假的」，00:53:31~00:56:18 刷屏「小松绿唱歌好听」，00:57:05~00:57:12「唱的不像中文」收尾）；歌切时长 4:42（282 秒）与该窗口吻合。原曲歌词「明明你就是对的人／你要不要认真／给我一个温柔的吻／让我们一起私奔」对应弹幕玩梗「到底是对的人还是错的人」「一起私奔吧」「在唱你的那个」。",
         "song_resolution_method": "standalone-song-cut-title-cross-check",
         "cut_link": "https://www.bilibili.com/video/BV1PQeN6kETG/"
+      }
+    ],
+    "2026-09-17": [
+      {
+        "song_name": "单相思",
+        "sing_time": "",
+        "statuses": [
+          "自动识别待人工复核"
+        ],
+        "artist": "",
+        "replay_id": "live:1a3cdbe0-3ead-410e-90df-f4c8d2cfee81",
+        "replay_title": "【小松绿Viridis】MIMIC PARPY来袭！ 2026-09-17",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "カタオモイ",
+        "lyric_excerpt": "",
+        "song_resolution_method": "danmaku-lyrics",
+        "cut_link": "https://www.bilibili.com/video/BV1xger6jEYS/?p=1"
+      },
+      {
+        "song_name": "心做し",
+        "sing_time": "",
+        "statuses": [
+          "自动识别待人工复核"
+        ],
+        "artist": "",
+        "replay_id": "live:1a3cdbe0-3ead-410e-90df-f4c8d2cfee81",
+        "replay_title": "【小松绿Viridis】MIMIC PARPY来袭！ 2026-09-17",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "心做し",
+        "lyric_excerpt": "",
+        "song_resolution_method": "danmaku-lyrics",
+        "cut_link": "https://www.bilibili.com/video/BV1xger6jEYS/?p=2"
+      },
+      {
+        "song_name": "小夜子",
+        "sing_time": "",
+        "statuses": [
+          "自动识别待人工复核"
+        ],
+        "artist": "",
+        "replay_id": "live:1a3cdbe0-3ead-410e-90df-f4c8d2cfee81",
+        "replay_title": "【小松绿Viridis】MIMIC PARPY来袭！ 2026-09-17",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "小夜子（中文填词）",
+        "lyric_excerpt": "",
+        "song_resolution_method": "danmaku-lyrics",
+        "cut_link": "https://www.bilibili.com/video/BV1xger6jEYS/?p=3"
+      },
+      {
+        "song_name": "小夜子",
+        "sing_time": "",
+        "statuses": [
+          "自动识别待人工复核"
+        ],
+        "artist": "",
+        "replay_id": "live:1a3cdbe0-3ead-410e-90df-f4c8d2cfee81",
+        "replay_title": "【小松绿Viridis】MIMIC PARPY来袭！ 2026-09-17",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "小夜子",
+        "lyric_excerpt": "",
+        "song_resolution_method": "danmaku-lyrics",
+        "cut_link": "https://www.bilibili.com/video/BV1xger6jEYS/?p=4"
+      },
+      {
+        "song_name": "天ノ弱",
+        "sing_time": "",
+        "statuses": [
+          "自动识别待人工复核"
+        ],
+        "artist": "",
+        "replay_id": "live:1a3cdbe0-3ead-410e-90df-f4c8d2cfee81",
+        "replay_title": "【小松绿Viridis】MIMIC PARPY来袭！ 2026-09-17",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "天ノ弱",
+        "lyric_excerpt": "",
+        "song_resolution_method": "danmaku-lyrics",
+        "cut_link": "https://www.bilibili.com/video/BV1xger6jEYS/?p=5"
+      },
+      {
+        "song_name": "又三郎",
+        "sing_time": "",
+        "statuses": [
+          "自动识别待人工复核"
+        ],
+        "artist": "",
+        "replay_id": "live:1a3cdbe0-3ead-410e-90df-f4c8d2cfee81",
+        "replay_title": "【小松绿Viridis】MIMIC PARPY来袭！ 2026-09-17",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "又三郎",
+        "lyric_excerpt": "",
+        "song_resolution_method": "danmaku-lyrics",
+        "cut_link": "https://www.bilibili.com/video/BV1xger6jEYS/?p=6"
+      },
+      {
+        "song_name": "少女レイ",
+        "sing_time": "",
+        "statuses": [
+          "自动识别待人工复核"
+        ],
+        "artist": "",
+        "replay_id": "live:1a3cdbe0-3ead-410e-90df-f4c8d2cfee81",
+        "replay_title": "【小松绿Viridis】MIMIC PARPY来袭！ 2026-09-17",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "少女レイ",
+        "lyric_excerpt": "",
+        "song_resolution_method": "danmaku-lyrics",
+        "cut_link": "https://www.bilibili.com/video/BV1xger6jEYS/?p=7"
+      },
+      {
+        "song_name": "秒针を噛む",
+        "sing_time": "",
+        "statuses": [
+          "自动识别待人工复核"
+        ],
+        "artist": "",
+        "replay_id": "live:1a3cdbe0-3ead-410e-90df-f4c8d2cfee81",
+        "replay_title": "【小松绿Viridis】MIMIC PARPY来袭！ 2026-09-17",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "秒针を噛む",
+        "lyric_excerpt": "",
+        "song_resolution_method": "danmaku-lyrics",
+        "cut_link": "https://www.bilibili.com/video/BV1xger6jEYS/?p=8"
+      },
+      {
+        "song_name": "シリウスの心臓",
+        "sing_time": "",
+        "statuses": [
+          "自动识别待人工复核"
+        ],
+        "artist": "",
+        "replay_id": "live:1a3cdbe0-3ead-410e-90df-f4c8d2cfee81",
+        "replay_title": "【小松绿Viridis】MIMIC PARPY来袭！ 2026-09-17",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "シリウスの心臓",
+        "lyric_excerpt": "",
+        "song_resolution_method": "danmaku-lyrics",
+        "cut_link": "https://www.bilibili.com/video/BV1xger6jEYS/?p=9"
+      },
+      {
+        "song_name": "ラピスのお人形",
+        "sing_time": "",
+        "statuses": [
+          "自动识别待人工复核"
+        ],
+        "artist": "",
+        "replay_id": "live:1a3cdbe0-3ead-410e-90df-f4c8d2cfee81",
+        "replay_title": "【小松绿Viridis】MIMIC PARPY来袭！ 2026-09-17",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "ラピスのお人形",
+        "lyric_excerpt": "",
+        "song_resolution_method": "danmaku-lyrics",
+        "cut_link": "https://www.bilibili.com/video/BV1xger6jEYS/?p=10"
+      },
+      {
+        "song_name": "白鸟过河滩",
+        "sing_time": "",
+        "statuses": [
+          "自动识别待人工复核"
+        ],
+        "artist": "",
+        "replay_id": "live:1a3cdbe0-3ead-410e-90df-f4c8d2cfee81",
+        "replay_title": "【小松绿Viridis】MIMIC PARPY来袭！ 2026-09-17",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "白鸟过河滩",
+        "lyric_excerpt": "",
+        "song_resolution_method": "danmaku-lyrics",
+        "cut_link": "https://www.bilibili.com/video/BV1xger6jEYS/?p=11"
+      },
+      {
+        "song_name": "探窗",
+        "sing_time": "",
+        "statuses": [
+          "自动识别待人工复核"
+        ],
+        "artist": "",
+        "replay_id": "live:1a3cdbe0-3ead-410e-90df-f4c8d2cfee81",
+        "replay_title": "【小松绿Viridis】MIMIC PARPY来袭！ 2026-09-17",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "探窗",
+        "lyric_excerpt": "",
+        "song_resolution_method": "danmaku-lyrics",
+        "cut_link": "https://www.bilibili.com/video/BV1xger6jEYS/?p=12"
+      },
+      {
+        "song_name": "在夜里跳舞",
+        "sing_time": "",
+        "statuses": [
+          "自动识别待人工复核"
+        ],
+        "artist": "",
+        "replay_id": "live:1a3cdbe0-3ead-410e-90df-f4c8d2cfee81",
+        "replay_title": "【小松绿Viridis】MIMIC PARPY来袭！ 2026-09-17",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "在夜里跳舞",
+        "lyric_excerpt": "",
+        "song_resolution_method": "danmaku-lyrics",
+        "cut_link": "https://www.bilibili.com/video/BV1xger6jEYS/?p=13"
+      },
+      {
+        "song_name": "珠玉",
+        "sing_time": "",
+        "statuses": [
+          "自动识别待人工复核"
+        ],
+        "artist": "",
+        "replay_id": "live:1a3cdbe0-3ead-410e-90df-f4c8d2cfee81",
+        "replay_title": "【小松绿Viridis】MIMIC PARPY来袭！ 2026-09-17",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "珠玉",
+        "lyric_excerpt": "",
+        "song_resolution_method": "danmaku-lyrics",
+        "cut_link": "https://www.bilibili.com/video/BV1xger6jEYS/?p=14"
       }
     ]
   }

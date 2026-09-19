@@ -964,6 +964,10 @@ export function importCuratedBatch({
       } else if (cut.duplicate_status === 'primary') primaryCutKeys.add(cutKey);
       cuts.push(cut);
       insertedCuts.push(cut);
+      // 必须标记：调用方按 cutsChanged 决定是否把台账写回磁盘。
+      // 只 push 不置位的话，下面 nextCutsDocument 会原样返回传入的同一个对象引用，
+      // 调用方判断为「无变化」→ 歌切台账永远不落盘（insertedCuts 看着有值，实际白插）。
+      cutsChanged = true;
     }
   });
 

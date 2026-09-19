@@ -116,8 +116,30 @@ test('lyric clustering starts a new segment after 150 seconds', () => {
   assert.equal(result.clusters[1].lineCount, 1);
 });
 
-test('language tags use 日文 as the canonical Japanese label', () => {
-  assert.equal(normalizeLanguageTag('日语'), '日文');
+// 回归：新插入歌切时必须把 cutsChanged 置位。
+// 曾经漏了这一行，导致 nextCutsDocument 原样返回传入的同一个对象引用，
+// 调用方按 cutsChanged 判断为「无变化」→ 台账永不落盘。
+// 症状极具欺骗性：insertedCuts 看着有内容、state 也更新了，但歌切一条都没写进磁盘。
+test('new cut facts must mark cutsChanged so the ledger is actually persisted', () => {
+  const result = importCuratedBatch({
+    segmentsDocument: { segments: [] },
+    cutsDocument: emptyCuts,
+    now: '2026-09-17T00:00:00.000Z',
+    batch: {
+      live: { date: '2026-09-17', liveId: 'cuts-changed-test', title: 'test' },
+      songs: [
+        { songName: '落盘测试甲', statusLabels: ['歌回'], cut: curatedCut('BV1persistA') },
+        { songName: '落盘测试乙', statusLabels: ['歌回'], cut: curatedCut('BV1persistB') },
+      ],
+    },
+  });
+  assert.equal(result.insertedCuts.length, 2);
+  assert.equal(result.cutsChanged, true, '插入歌切必须置位 cutsChanged，否则调用方不会写盘');
+  assert.notEqual(result.cutsDocument, emptyCuts, 'cutsDocument 必须是新对象，不能原样返回传入引用');
+  assert.equal(result.cutsDocument.items.length, 2);
+});
+
+test('language tags use 日文 as the canonical Japanese label', () => {  assert.equal(normalizeLanguageTag('日语'), '日文');
   assert.equal(normalizeLanguageTag(' 日语 / 英文 '), '日文/英文');
   assert.equal(normalizeLanguageTag('日文'), '日文');
   assert.match(validateSegments([segment('2026-09-09', '旧标签', { language: '日语' })])[0], /noncanonical language tag 日语/u);

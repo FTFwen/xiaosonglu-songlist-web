@@ -1,10 +1,10 @@
 {
   "roomKey": "xiaosonglu",
   "roomId": "1727071052",
-  "generatedAt": "2026-09-17T08:36:19.672Z",
+  "generatedAt": "2026-09-19T03:17:01.144Z",
   "source": "song-cut-audio-download",
   "description": "每首歌对应的翻唱切片音频（从 B 站歌切/回放下载），供网页在线播放。",
-  "count": 186,
+  "count": 196,
   "audios": {
     "勾指起誓": "assets/audio/song_88.m4a?v=1d344dfde754",
     "蝴蝶": "assets/audio/song_25.m4a?v=d8fb99252c26",
@@ -191,7 +191,17 @@
     "云烟成雨": "assets/audio/song_184.m4a?v=8e2c3b7c9c17",
     "死別": "assets/audio/song_185.m4a?v=a1796bbdcbb6",
     "给电影人的情书": "assets/audio/song_186.m4a?v=d793f5987aea",
-    "住在天狼星的那个人": "assets/audio/song_187.m4a?v=f04a9cdb7208"
+    "住在天狼星的那个人": "assets/audio/song_187.m4a?v=f04a9cdb7208",
+    "心做し": "assets/audio/song_188.m4a?v=485ee6badfc6",
+    "小夜子（中文填词）": "assets/audio/song_189.m4a?v=6bdfe18f66bb",
+    "小夜子": "assets/audio/song_190.m4a?v=749b35640ea1",
+    "天ノ弱": "assets/audio/song_191.m4a?v=56bd33db6190",
+    "又三郎": "assets/audio/song_192.m4a?v=ebf5d8faf2c3",
+    "秒针を噛む": "assets/audio/song_193.m4a?v=31ac9e9ef3ad",
+    "ラピスのお人形": "assets/audio/song_194.m4a?v=df3628ed5aa8",
+    "探窗": "assets/audio/song_195.m4a?v=bd507c4dd7b1",
+    "在夜里跳舞": "assets/audio/song_196.m4a?v=1cc72080a733",
+    "珠玉": "assets/audio/song_197.m4a?v=3f15cf85d82e"
   },
   "verificationTargets": [
     "中华墨水娘",

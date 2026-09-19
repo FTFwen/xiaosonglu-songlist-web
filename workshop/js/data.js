@@ -1,13 +1,34 @@
 // 本文件由 scripts/build_xiaosonglu_song_data.mjs 从 data/xiaosonglu/ 生成，供 file:// 离线回退使用。
-// 生成时间：2026-09-17 16:36:19
+// 生成时间：2026-09-19 11:19:33
 // 数据源：data/xiaosonglu/（song_catalog / history_index / song_details / audio_index / song_cut_info）
 window.XSL_DATA = {
   song_catalog: {
   "roomKey": "xiaosonglu",
   "roomId": "1727071052",
-  "generatedAt": "2026-09-17T02:10:31.549Z",
+  "generatedAt": "2026-09-19T03:17:13.779Z",
   "source": "local-replay-ingestion",
   "songs": [
+    {
+      "song_id": 1,
+      "song_name": "少女レイ",
+      "show_as_song_name": "",
+      "display_song_name": "少女レイ",
+      "artist": "みきとP / 初音ミク",
+      "artist_search": "みきとP 初音ミク",
+      "feat_artist": "",
+      "remark": "直链页面 title 为【小松绿Viridis/翻唱】《少女レイ》，meta description 明示日期 2026.08.07（首播）与 UP 主小鸡奇遇記。song_name 归一化为真实曲名“少女レイ”。",
+      "tone": "",
+      "language": "日文",
+      "type": "Vocaloid、J-Pop",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1Xiu86aEwV/",
+      "sing_count": 3,
+      "status_labels": "歌切直补、待原始回放定位、歌回、自动识别待人工复核",
+      "last_sing_at": "2026-09-17",
+      "row_key": "少女レイ"
+    },
     {
       "song_id": 35,
       "song_name": "勾指起誓",
@@ -135,27 +156,6 @@ window.XSL_DATA = {
       "row_key": "三月雨"
     },
     {
-      "song_id": 1,
-      "song_name": "少女レイ",
-      "show_as_song_name": "",
-      "display_song_name": "少女レイ",
-      "artist": "みきとP / 初音ミク",
-      "artist_search": "みきとP 初音ミク",
-      "feat_artist": "",
-      "remark": "直链页面 title 为【小松绿Viridis/翻唱】《少女レイ》，meta description 明示日期 2026.08.07（首播）与 UP 主小鸡奇遇記。song_name 归一化为真实曲名“少女レイ”。",
-      "tone": "",
-      "language": "日文",
-      "type": "Vocaloid、J-Pop",
-      "identification": "",
-      "display_version": "",
-      "search_name": "",
-      "cut_link": "https://www.bilibili.com/video/BV1Xiu86aEwV/",
-      "sing_count": 2,
-      "status_labels": "歌切直补、待原始回放定位、歌回、自动识别待人工复核",
-      "last_sing_at": "2026-08-20",
-      "row_key": "少女レイ"
-    },
-    {
       "song_id": 32,
       "song_name": "食虫植物",
       "show_as_song_name": "",
@@ -261,6 +261,69 @@ window.XSL_DATA = {
       "row_key": "YOU & IDOL"
     },
     {
+      "song_id": 34,
+      "song_name": "白鸟过河滩",
+      "show_as_song_name": "",
+      "display_song_name": "白鸟过河滩",
+      "artist": "ilem / 洛天依Official",
+      "artist_search": "ilem 洛天依",
+      "feat_artist": "",
+      "remark": "根据 00:15 附近音频切片的歌词片段联网检索，命中 ilem《白鸟过河滩》。该段前后有设备问题和谢礼物插话，时间为近似切段。",
+      "tone": "",
+      "language": "中文",
+      "type": "中V、流行",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1etuz6fEaa/",
+      "sing_count": 2,
+      "status_labels": "歌回、半场、自动识别待人工复核",
+      "last_sing_at": "2026-09-17",
+      "row_key": "白鸟过河滩"
+    },
+    {
+      "song_id": 26,
+      "song_name": "カタオモイ",
+      "show_as_song_name": "",
+      "display_song_name": "单相思",
+      "artist": "Aimer",
+      "artist_search": "Aimer",
+      "feat_artist": "",
+      "remark": "直链页面 meta description 明示 20260811；视频标题使用中文译名“单相思”，按真实曲名归一化为 Aimer《カタオモイ》，display_song_name 保留为“单相思”。",
+      "tone": "",
+      "language": "日文",
+      "type": "J-Pop、抒情",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1znuz6eED5/",
+      "sing_count": 2,
+      "status_labels": "歌切直补、待原始回放定位、自动识别待人工复核",
+      "last_sing_at": "2026-09-17",
+      "row_key": "カタオモイ"
+    },
+    {
+      "song_id": 68,
+      "song_name": "シリウスの心臓",
+      "show_as_song_name": "",
+      "display_song_name": "シリウスの心臓",
+      "artist": "ヰ世界情緒",
+      "artist_search": "ヰ世界情緒",
+      "feat_artist": "",
+      "remark": "来自 2026-08-18 歌切合集《【663645TV】神回！我已启动！全力绿来唱完了！8月18日歌切合集【小松绿Viridis】》的分P《22-天狼星的心脏》。按当前 song-cut-first 策略，将合集章节名直接并入正式曲库；当前记录的是合集内顺序时间，不是原始直播回放时间。",
+      "tone": "",
+      "language": "日文",
+      "type": "J-Pop",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1aZ8L6CE6x/",
+      "sing_count": 2,
+      "status_labels": "歌切合集补录、待后续回放时间定位、自动识别待人工复核",
+      "last_sing_at": "2026-09-17",
+      "row_key": "シリウスの心臓"
+    },
+    {
       "song_id": 103,
       "song_name": "阿拉斯加海湾",
       "show_as_song_name": "",
@@ -301,27 +364,6 @@ window.XSL_DATA = {
       "status_labels": "歌回、自动识别待人工复核",
       "last_sing_at": "2026-08-18",
       "row_key": "爱情讯息"
-    },
-    {
-      "song_id": 34,
-      "song_name": "白鸟过河滩",
-      "show_as_song_name": "",
-      "display_song_name": "白鸟过河滩",
-      "artist": "ilem / 洛天依Official",
-      "artist_search": "ilem 洛天依",
-      "feat_artist": "",
-      "remark": "根据 00:15 附近音频切片的歌词片段联网检索，命中 ilem《白鸟过河滩》。该段前后有设备问题和谢礼物插话，时间为近似切段。",
-      "tone": "",
-      "language": "中文",
-      "type": "中V、流行",
-      "identification": "",
-      "display_version": "",
-      "search_name": "",
-      "cut_link": "https://www.bilibili.com/video/BV1etuz6fEaa/",
-      "sing_count": 1,
-      "status_labels": "歌回、半场、自动识别待人工复核",
-      "last_sing_at": "2026-08-11",
-      "row_key": "白鸟过河滩"
     },
     {
       "song_id": 123,
@@ -511,27 +553,6 @@ window.XSL_DATA = {
       "status_labels": "歌回、自动识别待人工复核",
       "last_sing_at": "2026-08-20",
       "row_key": "大声钻石"
-    },
-    {
-      "song_id": 26,
-      "song_name": "カタオモイ",
-      "show_as_song_name": "",
-      "display_song_name": "单相思",
-      "artist": "Aimer",
-      "artist_search": "Aimer",
-      "feat_artist": "",
-      "remark": "直链页面 meta description 明示 20260811；视频标题使用中文译名“单相思”，按真实曲名归一化为 Aimer《カタオモイ》，display_song_name 保留为“单相思”。",
-      "tone": "",
-      "language": "日文",
-      "type": "J-Pop、抒情",
-      "identification": "",
-      "display_version": "",
-      "search_name": "",
-      "cut_link": "https://www.bilibili.com/video/BV1znuz6eED5/",
-      "sing_count": 1,
-      "status_labels": "歌切直补、待原始回放定位",
-      "last_sing_at": "2026-08-11",
-      "row_key": "カタオモイ"
     },
     {
       "song_id": 76,
@@ -2865,27 +2886,6 @@ window.XSL_DATA = {
       "row_key": "サリシノハラ"
     },
     {
-      "song_id": 68,
-      "song_name": "シリウスの心臓",
-      "show_as_song_name": "",
-      "display_song_name": "シリウスの心臓",
-      "artist": "ヰ世界情緒",
-      "artist_search": "ヰ世界情緒",
-      "feat_artist": "",
-      "remark": "来自 2026-08-18 歌切合集《【663645TV】神回！我已启动！全力绿来唱完了！8月18日歌切合集【小松绿Viridis】》的分P《22-天狼星的心脏》。按当前 song-cut-first 策略，将合集章节名直接并入正式曲库；当前记录的是合集内顺序时间，不是原始直播回放时间。",
-      "tone": "",
-      "language": "日文",
-      "type": "J-Pop",
-      "identification": "",
-      "display_version": "",
-      "search_name": "",
-      "cut_link": "https://www.bilibili.com/video/BV1aZ8L6CE6x/",
-      "sing_count": 1,
-      "status_labels": "歌切合集补录、待后续回放时间定位",
-      "last_sing_at": "2026-08-18",
-      "row_key": "シリウスの心臓"
-    },
-    {
       "song_id": 6,
       "song_name": "プロポーズ",
       "show_as_song_name": "",
@@ -3955,24 +3955,235 @@ window.XSL_DATA = {
       "status_labels": "歌回、独立歌切复核",
       "last_sing_at": "2026-09-16",
       "row_key": "住在天狼星的那个人"
+    },
+    {
+      "song_id": 194,
+      "song_name": "秒针を噛む",
+      "show_as_song_name": "",
+      "display_song_name": "秒针を噛む",
+      "artist": "R Sound Design / 初音ミク",
+      "artist_search": "R Sound Design 初音ミク",
+      "feat_artist": "",
+      "remark": "",
+      "tone": "",
+      "language": "日文",
+      "type": "Vocaloid、J-Pop",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1xger6jEYS/?p=8",
+      "sing_count": 1,
+      "status_labels": "自动识别待人工复核",
+      "last_sing_at": "2026-09-17",
+      "row_key": "秒针を噛む"
+    },
+    {
+      "song_id": 196,
+      "song_name": "探窗",
+      "show_as_song_name": "",
+      "display_song_name": "探窗",
+      "artist": "浮生梦",
+      "artist_search": "浮生梦",
+      "feat_artist": "",
+      "remark": "",
+      "tone": "",
+      "language": "中文",
+      "type": "古风、翻唱",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1xger6jEYS/?p=12",
+      "sing_count": 1,
+      "status_labels": "自动识别待人工复核",
+      "last_sing_at": "2026-09-17",
+      "row_key": "探窗"
+    },
+    {
+      "song_id": 192,
+      "song_name": "天ノ弱",
+      "show_as_song_name": "",
+      "display_song_name": "天ノ弱",
+      "artist": "164 / GUMI",
+      "artist_search": "164 GUMI",
+      "feat_artist": "",
+      "remark": "",
+      "tone": "",
+      "language": "日文",
+      "type": "Vocaloid、J-Pop",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1xger6jEYS/?p=5",
+      "sing_count": 1,
+      "status_labels": "自动识别待人工复核",
+      "last_sing_at": "2026-09-17",
+      "row_key": "天ノ弱"
+    },
+    {
+      "song_id": 191,
+      "song_name": "小夜子",
+      "show_as_song_name": "",
+      "display_song_name": "小夜子",
+      "artist": "みきとP / 初音ミク",
+      "artist_search": "みきとP 初音ミク",
+      "feat_artist": "",
+      "remark": "",
+      "tone": "",
+      "language": "日文",
+      "type": "Vocaloid、J-Pop",
+      "identification": "",
+      "display_version": "中文填词/日文原版",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1xger6jEYS/?p=4",
+      "sing_count": 1,
+      "status_labels": "自动识别待人工复核",
+      "last_sing_at": "2026-09-17",
+      "row_key": "小夜子"
+    },
+    {
+      "song_id": 190,
+      "song_name": "小夜子（中文填词）",
+      "show_as_song_name": "",
+      "display_song_name": "小夜子",
+      "artist": "みきとP / 初音ミク",
+      "artist_search": "みきとP 初音ミク",
+      "feat_artist": "",
+      "remark": "",
+      "tone": "",
+      "language": "中文",
+      "type": "中文填词、Vocaloid",
+      "identification": "",
+      "display_version": "中文填词",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1xger6jEYS/?p=3",
+      "sing_count": 1,
+      "status_labels": "自动识别待人工复核",
+      "last_sing_at": "2026-09-17",
+      "row_key": "小夜子（中文填词）"
+    },
+    {
+      "song_id": 189,
+      "song_name": "心做し",
+      "show_as_song_name": "",
+      "display_song_name": "心做し",
+      "artist": "蝶々P / GUMI",
+      "artist_search": "蝶々P GUMI",
+      "feat_artist": "",
+      "remark": "",
+      "tone": "",
+      "language": "日文",
+      "type": "Vocaloid、J-Pop",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1xger6jEYS/?p=2",
+      "sing_count": 1,
+      "status_labels": "自动识别待人工复核",
+      "last_sing_at": "2026-09-17",
+      "row_key": "心做し"
+    },
+    {
+      "song_id": 193,
+      "song_name": "又三郎",
+      "show_as_song_name": "",
+      "display_song_name": "又三郎",
+      "artist": "ヨルシカ",
+      "artist_search": "ヨルシカ",
+      "feat_artist": "",
+      "remark": "",
+      "tone": "",
+      "language": "日文",
+      "type": "J-Pop",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1xger6jEYS/?p=6",
+      "sing_count": 1,
+      "status_labels": "自动识别待人工复核",
+      "last_sing_at": "2026-09-17",
+      "row_key": "又三郎"
+    },
+    {
+      "song_id": 197,
+      "song_name": "在夜里跳舞",
+      "show_as_song_name": "",
+      "display_song_name": "在夜里跳舞",
+      "artist": "单依纯",
+      "artist_search": "单依纯",
+      "feat_artist": "",
+      "remark": "",
+      "tone": "",
+      "language": "中文",
+      "type": "流行",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1xger6jEYS/?p=13",
+      "sing_count": 1,
+      "status_labels": "自动识别待人工复核",
+      "last_sing_at": "2026-09-17",
+      "row_key": "在夜里跳舞"
+    },
+    {
+      "song_id": 198,
+      "song_name": "珠玉",
+      "show_as_song_name": "",
+      "display_song_name": "珠玉",
+      "artist": "单依纯",
+      "artist_search": "单依纯",
+      "feat_artist": "",
+      "remark": "",
+      "tone": "",
+      "language": "中文",
+      "type": "流行",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1xger6jEYS/?p=14",
+      "sing_count": 1,
+      "status_labels": "自动识别待人工复核",
+      "last_sing_at": "2026-09-17",
+      "row_key": "珠玉"
+    },
+    {
+      "song_id": 195,
+      "song_name": "ラピスのお人形",
+      "show_as_song_name": "",
+      "display_song_name": "ラピスのお人形",
+      "artist": "ヰ世界情緒",
+      "artist_search": "ヰ世界情緒",
+      "feat_artist": "",
+      "remark": "",
+      "tone": "",
+      "language": "日文",
+      "type": "J-Pop",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1xger6jEYS/?p=10",
+      "sing_count": 1,
+      "status_labels": "自动识别待人工复核",
+      "last_sing_at": "2026-09-17",
+      "row_key": "ラピスのお人形"
     }
   ]
 },
   history_index: {
   "roomKey": "xiaosonglu",
   "roomId": "1727071052",
-  "generatedAt": "2026-09-17T02:10:31.549Z",
+  "generatedAt": "2026-09-19T03:17:13.779Z",
   "source": "local-replay-ingestion",
   "latest": {
     "year": "2026",
     "month": "09",
-    "day": "16"
+    "day": "17"
   },
   "dateTree": {
     "2026": {
       "09": {
         "13": 21,
         "16": 1,
+        "17": 14,
         "08": 29,
         "03": 21
       },
@@ -7596,13 +7807,253 @@ window.XSL_DATA = {
         "song_resolution_method": "standalone-song-cut-title-cross-check",
         "cut_link": "https://www.bilibili.com/video/BV1PQeN6kETG/"
       }
+    ],
+    "2026-09-17": [
+      {
+        "song_name": "单相思",
+        "sing_time": "",
+        "statuses": [
+          "自动识别待人工复核"
+        ],
+        "artist": "",
+        "replay_id": "live:1a3cdbe0-3ead-410e-90df-f4c8d2cfee81",
+        "replay_title": "【小松绿Viridis】MIMIC PARPY来袭！ 2026-09-17",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "カタオモイ",
+        "lyric_excerpt": "",
+        "song_resolution_method": "danmaku-lyrics",
+        "cut_link": "https://www.bilibili.com/video/BV1xger6jEYS/?p=1"
+      },
+      {
+        "song_name": "心做し",
+        "sing_time": "",
+        "statuses": [
+          "自动识别待人工复核"
+        ],
+        "artist": "",
+        "replay_id": "live:1a3cdbe0-3ead-410e-90df-f4c8d2cfee81",
+        "replay_title": "【小松绿Viridis】MIMIC PARPY来袭！ 2026-09-17",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "心做し",
+        "lyric_excerpt": "",
+        "song_resolution_method": "danmaku-lyrics",
+        "cut_link": "https://www.bilibili.com/video/BV1xger6jEYS/?p=2"
+      },
+      {
+        "song_name": "小夜子",
+        "sing_time": "",
+        "statuses": [
+          "自动识别待人工复核"
+        ],
+        "artist": "",
+        "replay_id": "live:1a3cdbe0-3ead-410e-90df-f4c8d2cfee81",
+        "replay_title": "【小松绿Viridis】MIMIC PARPY来袭！ 2026-09-17",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "小夜子（中文填词）",
+        "lyric_excerpt": "",
+        "song_resolution_method": "danmaku-lyrics",
+        "cut_link": "https://www.bilibili.com/video/BV1xger6jEYS/?p=3"
+      },
+      {
+        "song_name": "小夜子",
+        "sing_time": "",
+        "statuses": [
+          "自动识别待人工复核"
+        ],
+        "artist": "",
+        "replay_id": "live:1a3cdbe0-3ead-410e-90df-f4c8d2cfee81",
+        "replay_title": "【小松绿Viridis】MIMIC PARPY来袭！ 2026-09-17",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "小夜子",
+        "lyric_excerpt": "",
+        "song_resolution_method": "danmaku-lyrics",
+        "cut_link": "https://www.bilibili.com/video/BV1xger6jEYS/?p=4"
+      },
+      {
+        "song_name": "天ノ弱",
+        "sing_time": "",
+        "statuses": [
+          "自动识别待人工复核"
+        ],
+        "artist": "",
+        "replay_id": "live:1a3cdbe0-3ead-410e-90df-f4c8d2cfee81",
+        "replay_title": "【小松绿Viridis】MIMIC PARPY来袭！ 2026-09-17",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "天ノ弱",
+        "lyric_excerpt": "",
+        "song_resolution_method": "danmaku-lyrics",
+        "cut_link": "https://www.bilibili.com/video/BV1xger6jEYS/?p=5"
+      },
+      {
+        "song_name": "又三郎",
+        "sing_time": "",
+        "statuses": [
+          "自动识别待人工复核"
+        ],
+        "artist": "",
+        "replay_id": "live:1a3cdbe0-3ead-410e-90df-f4c8d2cfee81",
+        "replay_title": "【小松绿Viridis】MIMIC PARPY来袭！ 2026-09-17",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "又三郎",
+        "lyric_excerpt": "",
+        "song_resolution_method": "danmaku-lyrics",
+        "cut_link": "https://www.bilibili.com/video/BV1xger6jEYS/?p=6"
+      },
+      {
+        "song_name": "少女レイ",
+        "sing_time": "",
+        "statuses": [
+          "自动识别待人工复核"
+        ],
+        "artist": "",
+        "replay_id": "live:1a3cdbe0-3ead-410e-90df-f4c8d2cfee81",
+        "replay_title": "【小松绿Viridis】MIMIC PARPY来袭！ 2026-09-17",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "少女レイ",
+        "lyric_excerpt": "",
+        "song_resolution_method": "danmaku-lyrics",
+        "cut_link": "https://www.bilibili.com/video/BV1xger6jEYS/?p=7"
+      },
+      {
+        "song_name": "秒针を噛む",
+        "sing_time": "",
+        "statuses": [
+          "自动识别待人工复核"
+        ],
+        "artist": "",
+        "replay_id": "live:1a3cdbe0-3ead-410e-90df-f4c8d2cfee81",
+        "replay_title": "【小松绿Viridis】MIMIC PARPY来袭！ 2026-09-17",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "秒针を噛む",
+        "lyric_excerpt": "",
+        "song_resolution_method": "danmaku-lyrics",
+        "cut_link": "https://www.bilibili.com/video/BV1xger6jEYS/?p=8"
+      },
+      {
+        "song_name": "シリウスの心臓",
+        "sing_time": "",
+        "statuses": [
+          "自动识别待人工复核"
+        ],
+        "artist": "",
+        "replay_id": "live:1a3cdbe0-3ead-410e-90df-f4c8d2cfee81",
+        "replay_title": "【小松绿Viridis】MIMIC PARPY来袭！ 2026-09-17",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "シリウスの心臓",
+        "lyric_excerpt": "",
+        "song_resolution_method": "danmaku-lyrics",
+        "cut_link": "https://www.bilibili.com/video/BV1xger6jEYS/?p=9"
+      },
+      {
+        "song_name": "ラピスのお人形",
+        "sing_time": "",
+        "statuses": [
+          "自动识别待人工复核"
+        ],
+        "artist": "",
+        "replay_id": "live:1a3cdbe0-3ead-410e-90df-f4c8d2cfee81",
+        "replay_title": "【小松绿Viridis】MIMIC PARPY来袭！ 2026-09-17",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "ラピスのお人形",
+        "lyric_excerpt": "",
+        "song_resolution_method": "danmaku-lyrics",
+        "cut_link": "https://www.bilibili.com/video/BV1xger6jEYS/?p=10"
+      },
+      {
+        "song_name": "白鸟过河滩",
+        "sing_time": "",
+        "statuses": [
+          "自动识别待人工复核"
+        ],
+        "artist": "",
+        "replay_id": "live:1a3cdbe0-3ead-410e-90df-f4c8d2cfee81",
+        "replay_title": "【小松绿Viridis】MIMIC PARPY来袭！ 2026-09-17",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "白鸟过河滩",
+        "lyric_excerpt": "",
+        "song_resolution_method": "danmaku-lyrics",
+        "cut_link": "https://www.bilibili.com/video/BV1xger6jEYS/?p=11"
+      },
+      {
+        "song_name": "探窗",
+        "sing_time": "",
+        "statuses": [
+          "自动识别待人工复核"
+        ],
+        "artist": "",
+        "replay_id": "live:1a3cdbe0-3ead-410e-90df-f4c8d2cfee81",
+        "replay_title": "【小松绿Viridis】MIMIC PARPY来袭！ 2026-09-17",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "探窗",
+        "lyric_excerpt": "",
+        "song_resolution_method": "danmaku-lyrics",
+        "cut_link": "https://www.bilibili.com/video/BV1xger6jEYS/?p=12"
+      },
+      {
+        "song_name": "在夜里跳舞",
+        "sing_time": "",
+        "statuses": [
+          "自动识别待人工复核"
+        ],
+        "artist": "",
+        "replay_id": "live:1a3cdbe0-3ead-410e-90df-f4c8d2cfee81",
+        "replay_title": "【小松绿Viridis】MIMIC PARPY来袭！ 2026-09-17",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "在夜里跳舞",
+        "lyric_excerpt": "",
+        "song_resolution_method": "danmaku-lyrics",
+        "cut_link": "https://www.bilibili.com/video/BV1xger6jEYS/?p=13"
+      },
+      {
+        "song_name": "珠玉",
+        "sing_time": "",
+        "statuses": [
+          "自动识别待人工复核"
+        ],
+        "artist": "",
+        "replay_id": "live:1a3cdbe0-3ead-410e-90df-f4c8d2cfee81",
+        "replay_title": "【小松绿Viridis】MIMIC PARPY来袭！ 2026-09-17",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "珠玉",
+        "lyric_excerpt": "",
+        "song_resolution_method": "danmaku-lyrics",
+        "cut_link": "https://www.bilibili.com/video/BV1xger6jEYS/?p=14"
+      }
     ]
   }
 },
   song_details: {
   "roomKey": "xiaosonglu",
   "roomId": "1727071052",
-  "generatedAt": "2026-09-17T02:10:31.549Z",
+  "generatedAt": "2026-09-19T03:17:13.779Z",
   "source": "local-replay-ingestion",
   "bySongKey": {
     "少女レイ": {
@@ -7611,8 +8062,23 @@ window.XSL_DATA = {
       "display_song_name": "少女レイ",
       "artist": "みきとP / 初音ミク",
       "cut_link": "https://www.bilibili.com/video/BV1Xiu86aEwV/",
-      "total_count": 2,
+      "total_count": 3,
       "entries": [
+        {
+          "date": "2026-09-17",
+          "time": "",
+          "end_time": "",
+          "status": "自动识别待人工复核",
+          "artist": "",
+          "replay_id": "live:1a3cdbe0-3ead-410e-90df-f4c8d2cfee81",
+          "replay_title": "【小松绿Viridis】MIMIC PARPY来袭！ 2026-09-17",
+          "replay_url": "",
+          "remark": "",
+          "lyric_excerpt": "",
+          "song_resolution_method": "danmaku-lyrics",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1xger6jEYS/?p=7"
+        },
         {
           "date": "2026-08-20",
           "time": "01:10:40",
@@ -8311,8 +8777,23 @@ window.XSL_DATA = {
       "display_song_name": "单相思",
       "artist": "Aimer",
       "cut_link": "https://www.bilibili.com/video/BV1znuz6eED5/",
-      "total_count": 1,
+      "total_count": 2,
       "entries": [
+        {
+          "date": "2026-09-17",
+          "time": "",
+          "end_time": "",
+          "status": "自动识别待人工复核",
+          "artist": "",
+          "replay_id": "live:1a3cdbe0-3ead-410e-90df-f4c8d2cfee81",
+          "replay_title": "【小松绿Viridis】MIMIC PARPY来袭！ 2026-09-17",
+          "replay_url": "",
+          "remark": "",
+          "lyric_excerpt": "",
+          "song_resolution_method": "danmaku-lyrics",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1xger6jEYS/?p=1"
+        },
         {
           "date": "2026-08-11",
           "time": "",
@@ -8556,8 +9037,23 @@ window.XSL_DATA = {
       "display_song_name": "白鸟过河滩",
       "artist": "ilem / 洛天依Official",
       "cut_link": "https://www.bilibili.com/video/BV1etuz6fEaa/",
-      "total_count": 1,
+      "total_count": 2,
       "entries": [
+        {
+          "date": "2026-09-17",
+          "time": "",
+          "end_time": "",
+          "status": "自动识别待人工复核",
+          "artist": "",
+          "replay_id": "live:1a3cdbe0-3ead-410e-90df-f4c8d2cfee81",
+          "replay_title": "【小松绿Viridis】MIMIC PARPY来袭！ 2026-09-17",
+          "replay_url": "",
+          "remark": "",
+          "lyric_excerpt": "",
+          "song_resolution_method": "danmaku-lyrics",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1xger6jEYS/?p=11"
+        },
         {
           "date": "2026-08-11",
           "time": "00:15:28",
@@ -9436,8 +9932,23 @@ window.XSL_DATA = {
       "display_song_name": "シリウスの心臓",
       "artist": "ヰ世界情緒",
       "cut_link": "https://www.bilibili.com/video/BV1aZ8L6CE6x/",
-      "total_count": 1,
+      "total_count": 2,
       "entries": [
+        {
+          "date": "2026-09-17",
+          "time": "",
+          "end_time": "",
+          "status": "自动识别待人工复核",
+          "artist": "",
+          "replay_id": "live:1a3cdbe0-3ead-410e-90df-f4c8d2cfee81",
+          "replay_title": "【小松绿Viridis】MIMIC PARPY来袭！ 2026-09-17",
+          "replay_url": "",
+          "remark": "",
+          "lyric_excerpt": "",
+          "song_resolution_method": "danmaku-lyrics",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1xger6jEYS/?p=9"
+        },
         {
           "date": "2026-08-18",
           "time": "01:28:04",
@@ -12484,16 +12995,266 @@ window.XSL_DATA = {
           "cut_link": "https://www.bilibili.com/video/BV1PQeN6kETG/"
         }
       ]
+    },
+    "心做し": {
+      "row_key": "心做し",
+      "song_name": "心做し",
+      "display_song_name": "心做し",
+      "artist": "蝶々P / GUMI",
+      "cut_link": "https://www.bilibili.com/video/BV1xger6jEYS/?p=2",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-09-17",
+          "time": "",
+          "end_time": "",
+          "status": "自动识别待人工复核",
+          "artist": "",
+          "replay_id": "live:1a3cdbe0-3ead-410e-90df-f4c8d2cfee81",
+          "replay_title": "【小松绿Viridis】MIMIC PARPY来袭！ 2026-09-17",
+          "replay_url": "",
+          "remark": "",
+          "lyric_excerpt": "",
+          "song_resolution_method": "danmaku-lyrics",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1xger6jEYS/?p=2"
+        }
+      ]
+    },
+    "小夜子（中文填词）": {
+      "row_key": "小夜子（中文填词）",
+      "song_name": "小夜子（中文填词）",
+      "display_song_name": "小夜子",
+      "artist": "みきとP / 初音ミク",
+      "cut_link": "https://www.bilibili.com/video/BV1xger6jEYS/?p=3",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-09-17",
+          "time": "",
+          "end_time": "",
+          "status": "自动识别待人工复核",
+          "artist": "",
+          "replay_id": "live:1a3cdbe0-3ead-410e-90df-f4c8d2cfee81",
+          "replay_title": "【小松绿Viridis】MIMIC PARPY来袭！ 2026-09-17",
+          "replay_url": "",
+          "remark": "",
+          "lyric_excerpt": "",
+          "song_resolution_method": "danmaku-lyrics",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1xger6jEYS/?p=3"
+        }
+      ]
+    },
+    "小夜子": {
+      "row_key": "小夜子",
+      "song_name": "小夜子",
+      "display_song_name": "小夜子",
+      "artist": "みきとP / 初音ミク",
+      "cut_link": "https://www.bilibili.com/video/BV1xger6jEYS/?p=4",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-09-17",
+          "time": "",
+          "end_time": "",
+          "status": "自动识别待人工复核",
+          "artist": "",
+          "replay_id": "live:1a3cdbe0-3ead-410e-90df-f4c8d2cfee81",
+          "replay_title": "【小松绿Viridis】MIMIC PARPY来袭！ 2026-09-17",
+          "replay_url": "",
+          "remark": "",
+          "lyric_excerpt": "",
+          "song_resolution_method": "danmaku-lyrics",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1xger6jEYS/?p=4"
+        }
+      ]
+    },
+    "天ノ弱": {
+      "row_key": "天ノ弱",
+      "song_name": "天ノ弱",
+      "display_song_name": "天ノ弱",
+      "artist": "164 / GUMI",
+      "cut_link": "https://www.bilibili.com/video/BV1xger6jEYS/?p=5",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-09-17",
+          "time": "",
+          "end_time": "",
+          "status": "自动识别待人工复核",
+          "artist": "",
+          "replay_id": "live:1a3cdbe0-3ead-410e-90df-f4c8d2cfee81",
+          "replay_title": "【小松绿Viridis】MIMIC PARPY来袭！ 2026-09-17",
+          "replay_url": "",
+          "remark": "",
+          "lyric_excerpt": "",
+          "song_resolution_method": "danmaku-lyrics",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1xger6jEYS/?p=5"
+        }
+      ]
+    },
+    "又三郎": {
+      "row_key": "又三郎",
+      "song_name": "又三郎",
+      "display_song_name": "又三郎",
+      "artist": "ヨルシカ",
+      "cut_link": "https://www.bilibili.com/video/BV1xger6jEYS/?p=6",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-09-17",
+          "time": "",
+          "end_time": "",
+          "status": "自动识别待人工复核",
+          "artist": "",
+          "replay_id": "live:1a3cdbe0-3ead-410e-90df-f4c8d2cfee81",
+          "replay_title": "【小松绿Viridis】MIMIC PARPY来袭！ 2026-09-17",
+          "replay_url": "",
+          "remark": "",
+          "lyric_excerpt": "",
+          "song_resolution_method": "danmaku-lyrics",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1xger6jEYS/?p=6"
+        }
+      ]
+    },
+    "秒针を噛む": {
+      "row_key": "秒针を噛む",
+      "song_name": "秒针を噛む",
+      "display_song_name": "秒针を噛む",
+      "artist": "R Sound Design / 初音ミク",
+      "cut_link": "https://www.bilibili.com/video/BV1xger6jEYS/?p=8",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-09-17",
+          "time": "",
+          "end_time": "",
+          "status": "自动识别待人工复核",
+          "artist": "",
+          "replay_id": "live:1a3cdbe0-3ead-410e-90df-f4c8d2cfee81",
+          "replay_title": "【小松绿Viridis】MIMIC PARPY来袭！ 2026-09-17",
+          "replay_url": "",
+          "remark": "",
+          "lyric_excerpt": "",
+          "song_resolution_method": "danmaku-lyrics",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1xger6jEYS/?p=8"
+        }
+      ]
+    },
+    "ラピスのお人形": {
+      "row_key": "ラピスのお人形",
+      "song_name": "ラピスのお人形",
+      "display_song_name": "ラピスのお人形",
+      "artist": "ヰ世界情緒",
+      "cut_link": "https://www.bilibili.com/video/BV1xger6jEYS/?p=10",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-09-17",
+          "time": "",
+          "end_time": "",
+          "status": "自动识别待人工复核",
+          "artist": "",
+          "replay_id": "live:1a3cdbe0-3ead-410e-90df-f4c8d2cfee81",
+          "replay_title": "【小松绿Viridis】MIMIC PARPY来袭！ 2026-09-17",
+          "replay_url": "",
+          "remark": "",
+          "lyric_excerpt": "",
+          "song_resolution_method": "danmaku-lyrics",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1xger6jEYS/?p=10"
+        }
+      ]
+    },
+    "探窗": {
+      "row_key": "探窗",
+      "song_name": "探窗",
+      "display_song_name": "探窗",
+      "artist": "浮生梦",
+      "cut_link": "https://www.bilibili.com/video/BV1xger6jEYS/?p=12",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-09-17",
+          "time": "",
+          "end_time": "",
+          "status": "自动识别待人工复核",
+          "artist": "",
+          "replay_id": "live:1a3cdbe0-3ead-410e-90df-f4c8d2cfee81",
+          "replay_title": "【小松绿Viridis】MIMIC PARPY来袭！ 2026-09-17",
+          "replay_url": "",
+          "remark": "",
+          "lyric_excerpt": "",
+          "song_resolution_method": "danmaku-lyrics",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1xger6jEYS/?p=12"
+        }
+      ]
+    },
+    "在夜里跳舞": {
+      "row_key": "在夜里跳舞",
+      "song_name": "在夜里跳舞",
+      "display_song_name": "在夜里跳舞",
+      "artist": "单依纯",
+      "cut_link": "https://www.bilibili.com/video/BV1xger6jEYS/?p=13",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-09-17",
+          "time": "",
+          "end_time": "",
+          "status": "自动识别待人工复核",
+          "artist": "",
+          "replay_id": "live:1a3cdbe0-3ead-410e-90df-f4c8d2cfee81",
+          "replay_title": "【小松绿Viridis】MIMIC PARPY来袭！ 2026-09-17",
+          "replay_url": "",
+          "remark": "",
+          "lyric_excerpt": "",
+          "song_resolution_method": "danmaku-lyrics",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1xger6jEYS/?p=13"
+        }
+      ]
+    },
+    "珠玉": {
+      "row_key": "珠玉",
+      "song_name": "珠玉",
+      "display_song_name": "珠玉",
+      "artist": "单依纯",
+      "cut_link": "https://www.bilibili.com/video/BV1xger6jEYS/?p=14",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-09-17",
+          "time": "",
+          "end_time": "",
+          "status": "自动识别待人工复核",
+          "artist": "",
+          "replay_id": "live:1a3cdbe0-3ead-410e-90df-f4c8d2cfee81",
+          "replay_title": "【小松绿Viridis】MIMIC PARPY来袭！ 2026-09-17",
+          "replay_url": "",
+          "remark": "",
+          "lyric_excerpt": "",
+          "song_resolution_method": "danmaku-lyrics",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1xger6jEYS/?p=14"
+        }
+      ]
     }
   }
 },
   audio_index: {
   "roomKey": "xiaosonglu",
   "roomId": "1727071052",
-  "generatedAt": "2026-09-17T08:36:19.672Z",
+  "generatedAt": "2026-09-19T03:17:01.144Z",
   "source": "song-cut-audio-download",
   "description": "每首歌对应的翻唱切片音频（从 B 站歌切/回放下载），供网页在线播放。",
-  "count": 186,
+  "count": 196,
   "audios": {
     "勾指起誓": "assets/audio/song_88.m4a?v=1d344dfde754",
     "蝴蝶": "assets/audio/song_25.m4a?v=d8fb99252c26",
@@ -12680,7 +13441,17 @@ window.XSL_DATA = {
     "云烟成雨": "assets/audio/song_184.m4a?v=8e2c3b7c9c17",
     "死別": "assets/audio/song_185.m4a?v=a1796bbdcbb6",
     "给电影人的情书": "assets/audio/song_186.m4a?v=d793f5987aea",
-    "住在天狼星的那个人": "assets/audio/song_187.m4a?v=f04a9cdb7208"
+    "住在天狼星的那个人": "assets/audio/song_187.m4a?v=f04a9cdb7208",
+    "心做し": "assets/audio/song_188.m4a?v=485ee6badfc6",
+    "小夜子（中文填词）": "assets/audio/song_189.m4a?v=6bdfe18f66bb",
+    "小夜子": "assets/audio/song_190.m4a?v=749b35640ea1",
+    "天ノ弱": "assets/audio/song_191.m4a?v=56bd33db6190",
+    "又三郎": "assets/audio/song_192.m4a?v=ebf5d8faf2c3",
+    "秒针を噛む": "assets/audio/song_193.m4a?v=31ac9e9ef3ad",
+    "ラピスのお人形": "assets/audio/song_194.m4a?v=df3628ed5aa8",
+    "探窗": "assets/audio/song_195.m4a?v=bd507c4dd7b1",
+    "在夜里跳舞": "assets/audio/song_196.m4a?v=1cc72080a733",
+    "珠玉": "assets/audio/song_197.m4a?v=3f15cf85d82e"
   },
   "verificationTargets": [
     "中华墨水娘",
@@ -12690,50 +13461,15 @@ window.XSL_DATA = {
   song_cut_info: {
   "roomKey": "xiaosonglu",
   "roomId": "1727071052",
-  "generatedAt": "2026-09-17T02:13:30.383Z",
+  "generatedAt": "2026-09-19T03:19:33.000Z",
   "source": "song-cut-title-index",
   "description": "每首歌对应的歌切切片标题（单曲歌切视频标题 / 合集分P标题），供前端歌切链接显示。",
-  "count": 188,
+  "count": 198,
   "cuts": {
-    "勾指起誓": {
-      "title": "【小松绿|羽啾】“说好从今以后都牵着手 因为要走很远”《勾指起誓》【虚空合唱】",
-      "kind": "single",
-      "url": "https://www.bilibili.com/video/BV1WGbk6KESs/"
-    },
-    "蝴蝶": {
-      "title": "【小松绿Viridis】 蝴蝶",
-      "kind": "single",
-      "url": "https://www.bilibili.com/video/BV1Kt8i6REvs/"
-    },
-    "寄明月": {
-      "title": "4-寄明月",
-      "kind": "compilation",
-      "url": "https://www.bilibili.com/video/BV1rv8V6DExk/"
-    },
-    "绿色": {
-      "title": "【小松绿Viridis】神中神《绿色》羽啾进入直播间有人心乱了",
-      "kind": "single",
-      "url": "https://www.bilibili.com/video/BV1qg4k6SEMi/"
-    },
-    "三月雨": {
-      "title": "【小松绿Viridis】 三月雨 已雪耻",
-      "kind": "single",
-      "url": "https://www.bilibili.com/video/BV1ky876wE69/"
-    },
-    "少女レイ": {
-      "title": "19，《少女レイ》",
-      "kind": "collection-chapter",
-      "url": "https://www.bilibili.com/video/BV1WS8c6XE9w/?p=19"
-    },
-    "下等马": {
-      "title": "【小松绿Viridis】《下等马》丨“一身素青纱 草柄当头花”",
-      "kind": "single",
-      "url": "https://www.bilibili.com/video/BV17Wuz6YEci/"
-    },
-    "Virtual to LIVE": {
-      "title": "16，《Virtual to LIVE》",
-      "kind": "collection-chapter",
-      "url": "https://www.bilibili.com/video/BV1WS8c6XE9w/?p=16"
+    "（区）最终祈愿": {
+      "title": "07_（区）最终祈愿 - 平行四界Quadimension, 星尘",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=7"
     },
     "阿拉斯加海湾": {
       "title": "上天啊 你难道不知道我很爱她【小松绿Viridis】阿拉斯加海湾",
@@ -12749,6 +13485,11 @@ window.XSL_DATA = {
       "title": "【小松绿Viridis】《白鸟过河滩》丨“我摘下我的翅膀 它变成白鸟”",
       "kind": "single",
       "url": "https://www.bilibili.com/video/BV1etuz6fEaa/"
+    },
+    "别找我麻烦": {
+      "title": "P3 别找我麻烦",
+      "kind": "collection-chapter",
+      "url": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=3"
     },
     "苍蝇": {
       "title": "【小松绿Viridis/歌切】苍蝇",
@@ -12775,6 +13516,11 @@ window.XSL_DATA = {
       "kind": "single",
       "url": "https://www.bilibili.com/video/BV19Cum6DERH/"
     },
+    "純白の花～Under Divine Gaze": {
+      "title": "13_純白の花～Under Divine Gaze - 不凋花project",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=13"
+    },
     "词不达意": {
       "title": "【小松绿Viridis/翻唱】《词不达意》",
       "kind": "single",
@@ -12790,15 +13536,20 @@ window.XSL_DATA = {
       "kind": "collection-chapter",
       "url": "https://www.bilibili.com/video/BV1WS8c6XE9w/?p=7"
     },
-    "カタオモイ": {
-      "title": "只希望你能一直在我身边。《カタオモイ》",
-      "kind": "single",
-      "url": "https://www.bilibili.com/video/BV1FagM6SEHT/"
+    "大小姐和大少爷的反派生涯": {
+      "title": "03_大小姐和大少爷的反派生涯 - JUSF周存, 洛天依Official",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1q9YB6xErK/?p=3"
     },
     "第一只小兔子": {
       "title": "6，《第一只小兔子》",
       "kind": "collection-chapter",
       "url": "https://www.bilibili.com/video/BV1WS8c6XE9w/?p=6"
+    },
+    "东风志": {
+      "title": "P6 东风志",
+      "kind": "collection-chapter",
+      "url": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=6"
     },
     "都落ち": {
       "title": "9-都落ち",
@@ -12824,6 +13575,31 @@ window.XSL_DATA = {
       "title": "11-風になる",
       "kind": "compilation",
       "url": "https://www.bilibili.com/video/BV1rv8V6DExk/"
+    },
+    "腐草为萤": {
+      "title": "P10 腐草为萤",
+      "kind": "collection-chapter",
+      "url": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=10"
+    },
+    "告别曲（Love Elegia Ver.）": {
+      "title": "06_告别曲（Love Elegia Ver.） - 阿良良木健, 洛天依",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=6"
+    },
+    "给电影人的情书": {
+      "title": "21_给电影人的情书 - 蔡琴",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1q9YB6xErK/?p=21"
+    },
+    "给自己的情书": {
+      "title": "09_给自己的情书 - 王菲",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=9"
+    },
+    "勾指起誓": {
+      "title": "【小松绿|羽啾】“说好从今以后都牵着手 因为要走很远”《勾指起誓》【虚空合唱】",
+      "kind": "single",
+      "url": "https://www.bilibili.com/video/BV1WGbk6KESs/"
     },
     "故梦": {
       "title": "【小松绿Viridis/翻唱】《故梦》",
@@ -12855,10 +13631,35 @@ window.XSL_DATA = {
       "kind": "replay",
       "url": "https://www.bilibili.com/video/BV17du269EmN"
     },
+    "蝴蝶": {
+      "title": "【小松绿Viridis】 蝴蝶",
+      "kind": "single",
+      "url": "https://www.bilibili.com/video/BV1Kt8i6REvs/"
+    },
     "花粉症": {
       "title": "【小松绿Viridis/翻唱】《花粉症》",
       "kind": "single",
       "url": "https://www.bilibili.com/video/BV11ju16hExN/"
+    },
+    "花头台": {
+      "title": "24_花头台 - 洛天依",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=24"
+    },
+    "花の塔": {
+      "title": "P18 花の塔",
+      "kind": "collection-chapter",
+      "url": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=18"
+    },
+    "寄明月": {
+      "title": "4-寄明月",
+      "kind": "compilation",
+      "url": "https://www.bilibili.com/video/BV1rv8V6DExk/"
+    },
+    "焦糖星": {
+      "title": "P8 焦糖星",
+      "kind": "collection-chapter",
+      "url": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=8"
     },
     "锦鲤抄": {
       "title": "【小松绿Viridis/歌切】锦鲤抄",
@@ -12870,6 +13671,11 @@ window.XSL_DATA = {
       "kind": "single",
       "url": "https://www.bilibili.com/video/BV1A1uy69EPP/"
     },
+    "绝体绝命": {
+      "title": "05_绝体绝命 - 阿良良木健, 洛天依Official",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=5"
+    },
     "君色に染まる": {
       "title": "3-君色に染まる",
       "kind": "compilation",
@@ -12879,6 +13685,11 @@ window.XSL_DATA = {
       "title": "10-可愛くてごめん",
       "kind": "compilation",
       "url": "https://www.bilibili.com/video/BV1rv8V6DExk/"
+    },
+    "老人と海": {
+      "title": "15_老人と海 - ヨルシカ",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1q9YB6xErK/?p=15"
     },
     "涟漪": {
       "title": "【小松绿Viridis】《涟漪》",
@@ -12900,6 +13711,11 @@ window.XSL_DATA = {
       "kind": "collection-chapter",
       "url": "https://www.bilibili.com/video/BV1m9886kEMZ/?p=2"
     },
+    "凉雨": {
+      "title": "27_凉雨 - COP, 洛天依Official",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=27"
+    },
     "临川浮梦": {
       "title": "P6 临川浮梦",
       "kind": "collection-chapter",
@@ -12914,6 +13730,16 @@ window.XSL_DATA = {
       "title": "【小松绿Viridis/自留】流霰",
       "kind": "single",
       "url": "https://www.bilibili.com/video/BV1Td886GEoN/"
+    },
+    "泸沽寻梦": {
+      "title": "01_瀘沽寻梦 - 银临",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=1"
+    },
+    "绿色": {
+      "title": "【小松绿Viridis】神中神《绿色》羽啾进入直播间有人心乱了",
+      "kind": "single",
+      "url": "https://www.bilibili.com/video/BV1qg4k6SEMi/"
     },
     "玛德琳娜电塔": {
       "title": "【小松绿Viridis】《玛德琳娜电塔(Mardayline Tower)》",
@@ -12930,6 +13756,11 @@ window.XSL_DATA = {
       "kind": "compilation",
       "url": "https://www.bilibili.com/video/BV1rv8V6DExk/"
     },
+    "秒针を噛む": {
+      "title": "秒针を噛む",
+      "kind": "collection-chapter",
+      "url": "https://www.bilibili.com/video/BV1xger6jEYS/?p=8"
+    },
     "木偶": {
       "title": "【小松绿Viridis/翻唱】《木偶》",
       "kind": "single",
@@ -12940,6 +13771,11 @@ window.XSL_DATA = {
       "kind": "single",
       "url": "https://www.bilibili.com/video/BV1gzuz6pE4C/"
     },
+    "奶水": {
+      "title": "15_奶水 - Mili",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=15"
+    },
     "难过233秒": {
       "title": "【小松绿Viridis】突击的随便唱-2026年08月29日13点场",
       "kind": "replay",
@@ -12949,6 +13785,16 @@ window.XSL_DATA = {
       "title": "@羽啾：你是我最爱的妹妹 测谎仪：👎👎👎【小松绿Viridis】",
       "kind": "single",
       "url": "https://www.bilibili.com/video/BV1Bg4k6SEeW/"
+    },
+    "溺水金鱼": {
+      "title": "17_溺水金鱼 - 漆柚",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=17"
+    },
+    "年轮": {
+      "title": "13_年轮 - 张碧晨",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1q9YB6xErK/?p=13"
     },
     "女孩你为何踮脚尖": {
       "title": "P12 女孩你为何踮脚尖",
@@ -12975,6 +13821,11 @@ window.XSL_DATA = {
       "kind": "collection-chapter",
       "url": "https://www.bilibili.com/video/BV1gm4C65Ey6/?p=11"
     },
+    "普通朋友（半首）": {
+      "title": "12_普通朋友（半首） - 陶喆",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1q9YB6xErK/?p=12"
+    },
     "栖凰": {
       "title": "【小松绿Viridis】栖凰",
       "kind": "single",
@@ -12985,6 +13836,11 @@ window.XSL_DATA = {
       "kind": "collection-chapter",
       "url": "https://www.bilibili.com/video/BV1gm4C65Ey6/?p=10"
     },
+    "牵丝戏": {
+      "title": "03_牵丝戏 - 银临, Aki阿杰",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=3"
+    },
     "青鸟衔风": {
       "title": "【小松绿Viridis】《青鸟衔风》",
       "kind": "single",
@@ -12994,6 +13850,11 @@ window.XSL_DATA = {
       "title": "【小松绿】《青柠》",
       "kind": "single",
       "url": "https://www.bilibili.com/video/BV1gTu16BEjy/"
+    },
+    "情歌": {
+      "title": "10_情歌 - 梁静茹",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1q9YB6xErK/?p=10"
     },
     "人间不值得": {
       "title": "13-人间不值得",
@@ -13010,6 +13871,26 @@ window.XSL_DATA = {
       "kind": "single",
       "url": "https://www.bilibili.com/video/BV1QAu36GEbM/"
     },
+    "如果有来生": {
+      "title": "P21 如果有来生",
+      "kind": "collection-chapter",
+      "url": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=21"
+    },
+    "若梦境来袭": {
+      "title": "28_若梦境来袭 - Kevinz, Creuzer, 言和",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=28"
+    },
+    "三千世界鸦杀尽": {
+      "title": "25_三千世界鸦杀尽 - 洛天依Official",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=25"
+    },
+    "三月雨": {
+      "title": "【小松绿Viridis】 三月雨 已雪耻",
+      "kind": "single",
+      "url": "https://www.bilibili.com/video/BV1ky876wE69/"
+    },
     "山遥路远": {
       "title": "【小松绿Viridis/翻唱】《山遥路远》",
       "kind": "single",
@@ -13019,6 +13900,26 @@ window.XSL_DATA = {
       "title": "【小松绿Viridis/歌切】上山岗",
       "kind": "single",
       "url": "https://www.bilibili.com/video/BV1Ca8V6XEbY/"
+    },
+    "少女レイ": {
+      "title": "19，《少女レイ》",
+      "kind": "collection-chapter",
+      "url": "https://www.bilibili.com/video/BV1WS8c6XE9w/?p=19"
+    },
+    "深夜诗人": {
+      "title": "P11 深夜诗人",
+      "kind": "collection-chapter",
+      "url": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=11"
+    },
+    "生死一舞的爱语": {
+      "title": "26_生死一舞的爱语 - 平行四界Quadimension, 星尘",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=26"
+    },
+    "十万个春天": {
+      "title": "P9 十万个春天",
+      "kind": "collection-chapter",
+      "url": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=9"
     },
     "食虫植物": {
       "title": "【小松绿Viridis】《食虫植物》丨“请不要离开好吗？”",
@@ -13034,6 +13935,11 @@ window.XSL_DATA = {
       "title": "【小松绿Viridis/歌切】世末歌者",
       "kind": "single",
       "url": "https://www.bilibili.com/video/BV1Pa8V69ECP/"
+    },
+    "世末积雨云": {
+      "title": "12_世末积雨云 - 洛天依Official",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=12"
     },
     "是风动": {
       "title": "P8 是风动",
@@ -13060,6 +13966,11 @@ window.XSL_DATA = {
       "kind": "single",
       "url": "https://www.bilibili.com/video/BV19g836cEtQ/"
     },
+    "死別": {
+      "title": "20_死別 - シャノン, GUMI",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1q9YB6xErK/?p=20"
+    },
     "四重罪孽": {
       "title": "【松绿歌】四重罪孽",
       "kind": "single",
@@ -13080,20 +13991,45 @@ window.XSL_DATA = {
       "kind": "compilation",
       "url": "https://www.bilibili.com/video/BV1rv8V6DExk/"
     },
+    "她追逐着月光的尽头": {
+      "title": "P7 她追逐着月光的尽头",
+      "kind": "collection-chapter",
+      "url": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=7"
+    },
     "太聪明": {
       "title": "【小松绿Viridis】《太聪明》",
       "kind": "single",
       "url": "https://www.bilibili.com/video/BV1FMud6mEuh/"
+    },
+    "探窗": {
+      "title": "探窗",
+      "kind": "collection-chapter",
+      "url": "https://www.bilibili.com/video/BV1xger6jEYS/?p=12"
     },
     "棠梨煎雪": {
       "title": "棠梨煎雪 歌切【小松绿】",
       "kind": "single",
       "url": "https://www.bilibili.com/video/BV1Lcum6nEva/"
     },
+    "天ノ弱": {
+      "title": "天ノ弱",
+      "kind": "collection-chapter",
+      "url": "https://www.bilibili.com/video/BV1xger6jEYS/?p=5"
+    },
     "跳楼机": {
       "title": "【小松绿Viridis】跳楼机",
       "kind": "single",
       "url": "https://www.bilibili.com/video/BV1izum6WEZf/"
+    },
+    "铁花飞 中文版": {
+      "title": "P12 铁花飞 中文版",
+      "kind": "collection-chapter",
+      "url": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=12"
+    },
+    "兔子先生": {
+      "title": "16_兔子先生 - 陈秋桦, 洛天依",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=16"
     },
     "外婆的澎湖湾": {
       "title": "5-外婆的澎湖湾",
@@ -13110,6 +14046,11 @@ window.XSL_DATA = {
       "kind": "compilation",
       "url": "https://www.bilibili.com/video/BV1rv8V6DExk/"
     },
+    "我愛你-上海蟹-": {
+      "title": "09_我愛你-上海蟹- - カニ研究会",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1q9YB6xErK/?p=9"
+    },
     "我的悲伤是水做的": {
       "title": "【小松绿Viridis/翻唱】《我的悲伤是水做的》",
       "kind": "single",
@@ -13120,10 +14061,20 @@ window.XSL_DATA = {
       "kind": "single",
       "url": "https://www.bilibili.com/video/BV1Z8by6aEGy/"
     },
+    "下等马": {
+      "title": "【小松绿Viridis】《下等马》丨“一身素青纱 草柄当头花”",
+      "kind": "single",
+      "url": "https://www.bilibili.com/video/BV17Wuz6YEci/"
+    },
     "下个夏天的烟火": {
       "title": "P9 下个夏天的烟火",
       "kind": "collection-chapter",
       "url": "https://www.bilibili.com/video/BV1gm4C65Ey6/?p=9"
+    },
+    "下雨天": {
+      "title": "04_下雨天 - 南拳妈妈",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1q9YB6xErK/?p=4"
     },
     "夏恋慕": {
       "title": "【小松绿Viridis】20260823 歌切 P7 夏恋慕",
@@ -13135,6 +14086,11 @@ window.XSL_DATA = {
       "kind": "collection-chapter",
       "url": "https://www.bilibili.com/video/BV1gm4C65Ey6/?p=12"
     },
+    "夏天的风": {
+      "title": "05_夏天的风 - 温岚",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1q9YB6xErK/?p=5"
+    },
     "夏霞": {
       "title": "【小松绿Viridis】夏霞 / あたらよ / 可惜夜",
       "kind": "single",
@@ -13145,35 +14101,110 @@ window.XSL_DATA = {
       "kind": "single",
       "url": "https://www.bilibili.com/video/BV1qT4k6QEXt/"
     },
+    "小半": {
+      "title": "P4 小半",
+      "kind": "collection-chapter",
+      "url": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=4"
+    },
+    "小丑的品格": {
+      "title": "P5 小丑的品格",
+      "kind": "collection-chapter",
+      "url": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=5"
+    },
+    "小小": {
+      "title": "07_小小 - 容祖儿",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1q9YB6xErK/?p=7"
+    },
     "小幸运": {
       "title": "【小松绿Viridis/翻唱】《小幸运》",
       "kind": "single",
       "url": "https://www.bilibili.com/video/BV1nbu16WEA6/"
+    },
+    "小夜子": {
+      "title": "小夜子",
+      "kind": "collection-chapter",
+      "url": "https://www.bilibili.com/video/BV1xger6jEYS/?p=4"
+    },
+    "小夜子（中文填词）": {
+      "title": "小夜子（中文填词）",
+      "kind": "collection-chapter",
+      "url": "https://www.bilibili.com/video/BV1xger6jEYS/?p=3"
+    },
+    "小雨": {
+      "title": "08_小雨 - 黄龄",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=8"
     },
     "心愿便利贴": {
       "title": "【小松绿Viridis/翻唱】《心愿便利贴》",
       "kind": "single",
       "url": "https://www.bilibili.com/video/BV1dRuy61Eti/"
     },
+    "心做し": {
+      "title": "心做し",
+      "kind": "collection-chapter",
+      "url": "https://www.bilibili.com/video/BV1xger6jEYS/?p=2"
+    },
     "虚拟": {
       "title": "【松绿歌】虚拟",
       "kind": "single",
       "url": "https://www.bilibili.com/video/BV127bv6UEnN/"
+    },
+    "悬捱": {
+      "title": "14_悬捱 - 星尘",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=14"
+    },
+    "言って。": {
+      "title": "16_言って。 - ヨルシカ",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1q9YB6xErK/?p=16"
+    },
+    "阳山绝": {
+      "title": "23_阳山绝 - 平行四界Quadimension,乐正绫,Soda纯白",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=23"
     },
     "夜蝶": {
       "title": "8，《夜蝶》",
       "kind": "collection-chapter",
       "url": "https://www.bilibili.com/video/BV1WS8c6XE9w/?p=8"
     },
+    "夜宴风波": {
+      "title": "02_夜宴风波 - 音阙诗听, 王梓钰",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=2"
+    },
     "一半一半": {
       "title": "【小松绿Viridis/翻唱】《一半一半》",
       "kind": "single",
       "url": "https://www.bilibili.com/video/BV1mgby6LEhy/"
     },
+    "一花依世界": {
+      "title": "04_一花依世界 - 洛天依Official",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=4"
+    },
+    "樱花草": {
+      "title": "11_樱花草 - Sweety",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=11"
+    },
     "踊り子": {
       "title": "【小松绿Viridis】《踊り子》（练歌）",
       "kind": "single",
       "url": "https://www.bilibili.com/video/BV1NZuR6sE7m/"
+    },
+    "有点甜": {
+      "title": "P2 有点甜",
+      "kind": "collection-chapter",
+      "url": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=2"
+    },
+    "又三郎": {
+      "title": "又三郎",
+      "kind": "collection-chapter",
+      "url": "https://www.bilibili.com/video/BV1xger6jEYS/?p=6"
     },
     "迂回步": {
       "title": "【小松绿Viridis/翻唱】《迂回步》",
@@ -13185,6 +14216,16 @@ window.XSL_DATA = {
       "kind": "single",
       "url": "https://www.bilibili.com/video/BV1YZbC6WEJJ/"
     },
+    "浴槽とネオンテトラ": {
+      "title": "P14 浴槽とネオンテトラ",
+      "kind": "collection-chapter",
+      "url": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=14"
+    },
+    "遇见你的时候所有星星都落到我头上": {
+      "title": "01_遇见你的时候所有星星都落到我头上 - 高姗",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1q9YB6xErK/?p=1"
+    },
     "远旅休憩中的邂逅": {
       "title": "P13 远旅休憩中的邂逅",
       "kind": "collection-chapter",
@@ -13195,20 +14236,85 @@ window.XSL_DATA = {
       "kind": "single",
       "url": "https://www.bilibili.com/video/BV18sba67EZa/"
     },
-    "月が綺麗ね": {
-      "title": "【小松绿viridis】月が綺麗ねと言われたい！丨想听你说月色真美",
-      "kind": "single",
-      "url": "https://www.bilibili.com/video/BV1F7uz6qEKN/"
+    "月光食堂": {
+      "title": "02_月光食堂 - 古川本舗, ちびた",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1q9YB6xErK/?p=2"
     },
     "月巷": {
       "title": "【小松绿Viridis|歌切】月巷 8.12",
       "kind": "single",
       "url": "https://www.bilibili.com/video/BV1Msg56SEuV/"
     },
+    "月が綺麗ね": {
+      "title": "【小松绿viridis】月が綺麗ねと言われたい！丨想听你说月色真美",
+      "kind": "single",
+      "url": "https://www.bilibili.com/video/BV1F7uz6qEKN/"
+    },
+    "云烟成雨": {
+      "title": "18_云烟成雨 - 房东的猫",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1q9YB6xErK/?p=18"
+    },
+    "在夜里跳舞": {
+      "title": "在夜里跳舞",
+      "kind": "collection-chapter",
+      "url": "https://www.bilibili.com/video/BV1xger6jEYS/?p=13"
+    },
+    "只对你有感觉": {
+      "title": "P1 只对你有感觉",
+      "kind": "collection-chapter",
+      "url": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=1"
+    },
     "纸星瓶": {
       "title": "sp1-纸星瓶",
       "kind": "collection-chapter",
       "url": "https://www.bilibili.com/video/BV1EC8w62EAD/?p=19"
+    },
+    "中华墨水娘": {
+      "title": "『中华墨水娘』！中华少女系列连唱之一！【小松绿Viridis】",
+      "kind": "single",
+      "url": "https://www.bilibili.com/video/BV165YJ6gEUy/"
+    },
+    "中华铄金娘": {
+      "title": "『中华铄金娘』！中华少女系列连唱之五！【小松绿Viridis】",
+      "kind": "single",
+      "url": "https://www.bilibili.com/video/BV1ceYE6BEPo/"
+    },
+    "中华缘木娘": {
+      "title": "20_中华缘木娘 - 洛天依Official - 洛天依Official",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=20"
+    },
+    "中华粘土娘 (Album Version)": {
+      "title": "21_中华粘土娘 (Album Version) - 洛天依Official, Soda纯白",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=21"
+    },
+    "中华烛火娘 (原版)": {
+      "title": "19_中华烛火娘 (原版) - 洛天依Official, Soda纯白",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=19"
+    },
+    "珠玉": {
+      "title": "珠玉",
+      "kind": "collection-chapter",
+      "url": "https://www.bilibili.com/video/BV1xger6jEYS/?p=14"
+    },
+    "住在天狼星的那个人": {
+      "title": "【小松绿】“明明你就是对的人”《住在天狼星的那个人》",
+      "kind": "single",
+      "url": "https://www.bilibili.com/video/BV1PQeN6kETG/"
+    },
+    "灼之花": {
+      "title": "10_灼之花 - 洛天依Official, 乐正绫",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=10"
+    },
+    "啄木鳥（半首）": {
+      "title": "17_啄木鳥（半首） - ヨルシカ",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1q9YB6xErK/?p=17"
     },
     "CHASE!": {
       "title": "2，《CHASE!》",
@@ -13225,15 +14331,35 @@ window.XSL_DATA = {
       "kind": "collection-chapter",
       "url": "https://www.bilibili.com/video/BV1WS8c6XE9w/?p=15"
     },
+    "Fly, My Wings": {
+      "title": "P13 Fly, My Wings",
+      "kind": "collection-chapter",
+      "url": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=13"
+    },
     "I LOVE U": {
       "title": "17，《I LOVE U》",
       "kind": "collection-chapter",
       "url": "https://www.bilibili.com/video/BV1WS8c6XE9w/?p=17"
     },
+    "March of Time": {
+      "title": "P16 March of Time",
+      "kind": "collection-chapter",
+      "url": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=16"
+    },
+    "Melody（半首）": {
+      "title": "11_Melody（半首） - 陶喆",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1q9YB6xErK/?p=11"
+    },
     "MORE JUMP MORE!": {
       "title": "3，《MORE JUMP MORE!》",
       "kind": "collection-chapter",
       "url": "https://www.bilibili.com/video/BV1WS8c6XE9w/?p=3"
+    },
+    "Say a Good Bye": {
+      "title": "29_（卡了）Say a Good Bye - Kevinz, 星尘, 言和,洛天依",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=29"
     },
     "SOS": {
       "title": "10，《SOS》",
@@ -13255,6 +14381,11 @@ window.XSL_DATA = {
       "kind": "single",
       "url": "https://www.bilibili.com/video/BV1Hm4y6AEC3/"
     },
+    "Virtual to LIVE": {
+      "title": "16，《Virtual to LIVE》",
+      "kind": "collection-chapter",
+      "url": "https://www.bilibili.com/video/BV1WS8c6XE9w/?p=16"
+    },
     "YOU & IDOL": {
       "title": "【小松绿Viridis】《YOU & IDOL》（练歌小电）",
       "kind": "replay",
@@ -13270,6 +14401,11 @@ window.XSL_DATA = {
       "kind": "single",
       "url": "https://www.bilibili.com/video/BV1Do8V6iEPw/"
     },
+    "あなたに出会わなければ~夏雪冬花~": {
+      "title": "P17 あなたに出会わなければ~夏雪冬花~",
+      "kind": "collection-chapter",
+      "url": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=17"
+    },
     "アヤノの幸福理論": {
       "title": "8-アヤノの幸福理論",
       "kind": "compilation",
@@ -13279,6 +14415,11 @@ window.XSL_DATA = {
       "title": "5，《おともだち》",
       "kind": "collection-chapter",
       "url": "https://www.bilibili.com/video/BV1WS8c6XE9w/?p=5"
+    },
+    "カタオモイ": {
+      "title": "只希望你能一直在我身边。《カタオモイ》",
+      "kind": "single",
+      "url": "https://www.bilibili.com/video/BV1FagM6SEHT/"
     },
     "サリシノハラ": {
       "title": "P14 サリシノハラ",
@@ -13290,350 +14431,30 @@ window.XSL_DATA = {
       "kind": "single",
       "url": "https://www.bilibili.com/video/BV1aZ8L6CE6x/"
     },
-    "プロポーズ": {
-      "title": "【小松绿Viridis/翻唱】《プロポーズ》（Propose）",
-      "kind": "single",
-      "url": "https://www.bilibili.com/video/BV19Fu16GEdc/"
-    },
-    "只对你有感觉": {
-      "title": "P1 只对你有感觉",
-      "kind": "collection-chapter",
-      "url": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=1"
-    },
-    "有点甜": {
-      "title": "P2 有点甜",
-      "kind": "collection-chapter",
-      "url": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=2"
-    },
-    "别找我麻烦": {
-      "title": "P3 别找我麻烦",
-      "kind": "collection-chapter",
-      "url": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=3"
-    },
-    "小半": {
-      "title": "P4 小半",
-      "kind": "collection-chapter",
-      "url": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=4"
-    },
-    "小丑的品格": {
-      "title": "P5 小丑的品格",
-      "kind": "collection-chapter",
-      "url": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=5"
-    },
-    "东风志": {
-      "title": "P6 东风志",
-      "kind": "collection-chapter",
-      "url": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=6"
-    },
-    "她追逐着月光的尽头": {
-      "title": "P7 她追逐着月光的尽头",
-      "kind": "collection-chapter",
-      "url": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=7"
-    },
-    "焦糖星": {
-      "title": "P8 焦糖星",
-      "kind": "collection-chapter",
-      "url": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=8"
-    },
-    "十万个春天": {
-      "title": "P9 十万个春天",
-      "kind": "collection-chapter",
-      "url": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=9"
-    },
-    "腐草为萤": {
-      "title": "P10 腐草为萤",
-      "kind": "collection-chapter",
-      "url": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=10"
-    },
-    "深夜诗人": {
-      "title": "P11 深夜诗人",
-      "kind": "collection-chapter",
-      "url": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=11"
-    },
-    "铁花飞 中文版": {
-      "title": "P12 铁花飞 中文版",
-      "kind": "collection-chapter",
-      "url": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=12"
-    },
-    "Fly, My Wings": {
-      "title": "P13 Fly, My Wings",
-      "kind": "collection-chapter",
-      "url": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=13"
-    },
-    "浴槽とネオンテトラ": {
-      "title": "P14 浴槽とネオンテトラ",
-      "kind": "collection-chapter",
-      "url": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=14"
-    },
-    "March of Time": {
-      "title": "P16 March of Time",
-      "kind": "collection-chapter",
-      "url": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=16"
-    },
-    "あなたに出会わなければ~夏雪冬花~": {
-      "title": "P17 あなたに出会わなければ~夏雪冬花~",
-      "kind": "collection-chapter",
-      "url": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=17"
-    },
-    "花の塔": {
-      "title": "P18 花の塔",
-      "kind": "collection-chapter",
-      "url": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=18"
-    },
-    "ミカヅキ": {
-      "title": "P19 ミカヅキ",
-      "kind": "collection-chapter",
-      "url": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=19"
-    },
-    "如果有来生": {
-      "title": "P21 如果有来生",
-      "kind": "collection-chapter",
-      "url": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=21"
-    },
-    "泸沽寻梦": {
-      "title": "01_瀘沽寻梦 - 银临",
-      "kind": "collection",
-      "url": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=1"
-    },
-    "夜宴风波": {
-      "title": "02_夜宴风波 - 音阙诗听, 王梓钰",
-      "kind": "collection",
-      "url": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=2"
-    },
-    "牵丝戏": {
-      "title": "03_牵丝戏 - 银临, Aki阿杰",
-      "kind": "collection",
-      "url": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=3"
-    },
-    "一花依世界": {
-      "title": "04_一花依世界 - 洛天依Official",
-      "kind": "collection",
-      "url": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=4"
-    },
-    "绝体绝命": {
-      "title": "05_绝体绝命 - 阿良良木健, 洛天依Official",
-      "kind": "collection",
-      "url": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=5"
-    },
-    "告别曲（Love Elegia Ver.）": {
-      "title": "06_告别曲（Love Elegia Ver.） - 阿良良木健, 洛天依",
-      "kind": "collection",
-      "url": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=6"
-    },
-    "（区）最终祈愿": {
-      "title": "07_（区）最终祈愿 - 平行四界Quadimension, 星尘",
-      "kind": "collection",
-      "url": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=7"
-    },
-    "小雨": {
-      "title": "08_小雨 - 黄龄",
-      "kind": "collection",
-      "url": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=8"
-    },
-    "给自己的情书": {
-      "title": "09_给自己的情书 - 王菲",
-      "kind": "collection",
-      "url": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=9"
-    },
-    "灼之花": {
-      "title": "10_灼之花 - 洛天依Official, 乐正绫",
-      "kind": "collection",
-      "url": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=10"
-    },
-    "樱花草": {
-      "title": "11_樱花草 - Sweety",
-      "kind": "collection",
-      "url": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=11"
-    },
-    "世末积雨云": {
-      "title": "12_世末积雨云 - 洛天依Official",
-      "kind": "collection",
-      "url": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=12"
-    },
-    "純白の花～Under Divine Gaze": {
-      "title": "13_純白の花～Under Divine Gaze - 不凋花project",
-      "kind": "collection",
-      "url": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=13"
-    },
-    "悬捱": {
-      "title": "14_悬捱 - 星尘",
-      "kind": "collection",
-      "url": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=14"
-    },
-    "奶水": {
-      "title": "15_奶水 - Mili",
-      "kind": "collection",
-      "url": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=15"
-    },
-    "兔子先生": {
-      "title": "16_兔子先生 - 陈秋桦, 洛天依",
-      "kind": "collection",
-      "url": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=16"
-    },
-    "溺水金鱼": {
-      "title": "17_溺水金鱼 - 漆柚",
-      "kind": "collection",
-      "url": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=17"
-    },
-    "中华铄金娘": {
-      "title": "『中华铄金娘』！中华少女系列连唱之五！【小松绿Viridis】",
-      "kind": "single",
-      "url": "https://www.bilibili.com/video/BV1ceYE6BEPo/"
-    },
-    "中华烛火娘 (原版)": {
-      "title": "19_中华烛火娘 (原版) - 洛天依Official, Soda纯白",
-      "kind": "collection",
-      "url": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=19"
-    },
-    "中华缘木娘": {
-      "title": "20_中华缘木娘 - 洛天依Official - 洛天依Official",
-      "kind": "collection",
-      "url": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=20"
-    },
-    "中华粘土娘 (Album Version)": {
-      "title": "21_中华粘土娘 (Album Version) - 洛天依Official, Soda纯白",
-      "kind": "collection",
-      "url": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=21"
-    },
-    "阳山绝": {
-      "title": "23_阳山绝 - 平行四界Quadimension,乐正绫,Soda纯白",
-      "kind": "collection",
-      "url": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=23"
-    },
-    "花头台": {
-      "title": "24_花头台 - 洛天依",
-      "kind": "collection",
-      "url": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=24"
-    },
-    "三千世界鸦杀尽": {
-      "title": "25_三千世界鸦杀尽 - 洛天依Official",
-      "kind": "collection",
-      "url": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=25"
-    },
-    "生死一舞的爱语": {
-      "title": "26_生死一舞的爱语 - 平行四界Quadimension, 星尘",
-      "kind": "collection",
-      "url": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=26"
-    },
-    "凉雨": {
-      "title": "27_凉雨 - COP, 洛天依Official",
-      "kind": "collection",
-      "url": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=27"
-    },
-    "若梦境来袭": {
-      "title": "28_若梦境来袭 - Kevinz, Creuzer, 言和",
-      "kind": "collection",
-      "url": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=28"
-    },
-    "Say a Good Bye": {
-      "title": "29_（卡了）Say a Good Bye - Kevinz, 星尘, 言和,洛天依",
-      "kind": "collection",
-      "url": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=29"
-    },
-    "中华墨水娘": {
-      "title": "『中华墨水娘』！中华少女系列连唱之一！【小松绿Viridis】",
-      "kind": "single",
-      "url": "https://www.bilibili.com/video/BV165YJ6gEUy/"
-    },
-    "遇见你的时候所有星星都落到我头上": {
-      "title": "01_遇见你的时候所有星星都落到我头上 - 高姗",
-      "kind": "collection",
-      "url": "https://www.bilibili.com/video/BV1q9YB6xErK/?p=1"
-    },
-    "月光食堂": {
-      "title": "02_月光食堂 - 古川本舗, ちびた",
-      "kind": "collection",
-      "url": "https://www.bilibili.com/video/BV1q9YB6xErK/?p=2"
-    },
-    "大小姐和大少爷的反派生涯": {
-      "title": "03_大小姐和大少爷的反派生涯 - JUSF周存, 洛天依Official",
-      "kind": "collection",
-      "url": "https://www.bilibili.com/video/BV1q9YB6xErK/?p=3"
-    },
-    "下雨天": {
-      "title": "04_下雨天 - 南拳妈妈",
-      "kind": "collection",
-      "url": "https://www.bilibili.com/video/BV1q9YB6xErK/?p=4"
-    },
-    "夏天的风": {
-      "title": "05_夏天的风 - 温岚",
-      "kind": "collection",
-      "url": "https://www.bilibili.com/video/BV1q9YB6xErK/?p=5"
-    },
-    "小小": {
-      "title": "07_小小 - 容祖儿",
-      "kind": "collection",
-      "url": "https://www.bilibili.com/video/BV1q9YB6xErK/?p=7"
-    },
     "たばこ": {
       "title": "08_たばこ - Sawako碎花",
       "kind": "collection",
       "url": "https://www.bilibili.com/video/BV1q9YB6xErK/?p=8"
-    },
-    "我愛你-上海蟹-": {
-      "title": "09_我愛你-上海蟹- - カニ研究会",
-      "kind": "collection",
-      "url": "https://www.bilibili.com/video/BV1q9YB6xErK/?p=9"
-    },
-    "情歌": {
-      "title": "10_情歌 - 梁静茹",
-      "kind": "collection",
-      "url": "https://www.bilibili.com/video/BV1q9YB6xErK/?p=10"
-    },
-    "Melody（半首）": {
-      "title": "11_Melody（半首） - 陶喆",
-      "kind": "collection",
-      "url": "https://www.bilibili.com/video/BV1q9YB6xErK/?p=11"
-    },
-    "普通朋友（半首）": {
-      "title": "12_普通朋友（半首） - 陶喆",
-      "kind": "collection",
-      "url": "https://www.bilibili.com/video/BV1q9YB6xErK/?p=12"
-    },
-    "年轮": {
-      "title": "13_年轮 - 张碧晨",
-      "kind": "collection",
-      "url": "https://www.bilibili.com/video/BV1q9YB6xErK/?p=13"
     },
     "たぶん": {
       "title": "14_たぶん - YOASOBI",
       "kind": "collection",
       "url": "https://www.bilibili.com/video/BV1q9YB6xErK/?p=14"
     },
-    "老人と海": {
-      "title": "15_老人と海 - ヨルシカ",
-      "kind": "collection",
-      "url": "https://www.bilibili.com/video/BV1q9YB6xErK/?p=15"
-    },
-    "言って。": {
-      "title": "16_言って。 - ヨルシカ",
-      "kind": "collection",
-      "url": "https://www.bilibili.com/video/BV1q9YB6xErK/?p=16"
-    },
-    "啄木鳥（半首）": {
-      "title": "17_啄木鳥（半首） - ヨルシカ",
-      "kind": "collection",
-      "url": "https://www.bilibili.com/video/BV1q9YB6xErK/?p=17"
-    },
-    "云烟成雨": {
-      "title": "18_云烟成雨 - 房东的猫",
-      "kind": "collection",
-      "url": "https://www.bilibili.com/video/BV1q9YB6xErK/?p=18"
-    },
-    "死別": {
-      "title": "20_死別 - シャノン, GUMI",
-      "kind": "collection",
-      "url": "https://www.bilibili.com/video/BV1q9YB6xErK/?p=20"
-    },
-    "给电影人的情书": {
-      "title": "21_给电影人的情书 - 蔡琴",
-      "kind": "collection",
-      "url": "https://www.bilibili.com/video/BV1q9YB6xErK/?p=21"
-    },
-    "住在天狼星的那个人": {
-      "title": "【小松绿】“明明你就是对的人”《住在天狼星的那个人》",
+    "プロポーズ": {
+      "title": "【小松绿Viridis/翻唱】《プロポーズ》（Propose）",
       "kind": "single",
-      "url": "https://www.bilibili.com/video/BV1PQeN6kETG/"
+      "url": "https://www.bilibili.com/video/BV19Fu16GEdc/"
+    },
+    "ミカヅキ": {
+      "title": "P19 ミカヅキ",
+      "kind": "collection-chapter",
+      "url": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=19"
+    },
+    "ラピスのお人形": {
+      "title": "ラピスのお人形",
+      "kind": "collection-chapter",
+      "url": "https://www.bilibili.com/video/BV1xger6jEYS/?p=10"
     }
   }
 }

@@ -1,21 +1,5 @@
 {
   "bySongName": {
-    "勾指起誓": {
-      "artist": "洛天依Official / ilem",
-      "artist_search": "洛天依 ilem",
-      "type_tags": [
-        "中V",
-        "流行"
-      ]
-    },
-    "寄明月": {
-      "artist": "SING女团 / 乐正绫",
-      "artist_search": "SING女团 乐正绫",
-      "type_tags": [
-        "国风",
-        "中V"
-      ]
-    },
     "爱情讯息": {
       "artist": "郭静",
       "artist_search": "郭静",
@@ -67,12 +51,6 @@
         "影视"
       ]
     },
-    "カタオモイ": {
-      "type_tags": [
-        "J-Pop",
-        "抒情"
-      ]
-    },
     "都落ち": {
       "artist": "ヨルシカ",
       "artist_search": "ヨルシカ",
@@ -95,6 +73,14 @@
       "type_tags": [
         "动漫",
         "J-Pop"
+      ]
+    },
+    "勾指起誓": {
+      "artist": "洛天依Official / ilem",
+      "artist_search": "洛天依 ilem",
+      "type_tags": [
+        "中V",
+        "流行"
       ]
     },
     "故梦": {
@@ -139,6 +125,14 @@
       "type_tags": [
         "中V",
         "流行"
+      ]
+    },
+    "寄明月": {
+      "artist": "SING女团 / 乐正绫",
+      "artist_search": "SING女团 乐正绫",
+      "type_tags": [
+        "国风",
+        "中V"
       ]
     },
     "锦鲤抄": {
@@ -199,6 +193,15 @@
     "蜜月アン・ドゥ・トロワ": {
       "artist": "DATEKEN / 鏡音リン",
       "artist_search": "DATEKEN 镜音铃",
+      "type_tags": [
+        "Vocaloid",
+        "J-Pop"
+      ]
+    },
+    "秒针を噛む": {
+      "artist": "R Sound Design / 初音ミク",
+      "artist_search": "R Sound Design 初音ミク",
+      "language": "日文",
       "type_tags": [
         "Vocaloid",
         "J-Pop"
@@ -374,10 +377,28 @@
         "民谣"
       ]
     },
+    "探窗": {
+      "artist": "浮生梦",
+      "artist_search": "浮生梦",
+      "language": "中文",
+      "type_tags": [
+        "古风",
+        "翻唱"
+      ]
+    },
     "棠梨煎雪": {
       "type_tags": [
         "国风",
         "古风"
+      ]
+    },
+    "天ノ弱": {
+      "artist": "164 / GUMI",
+      "artist_search": "164 GUMI",
+      "language": "日文",
+      "type_tags": [
+        "Vocaloid",
+        "J-Pop"
       ]
     },
     "跳楼机": {
@@ -441,6 +462,27 @@
         "影视"
       ]
     },
+    "小夜子": {
+      "artist": "みきとP / 初音ミク",
+      "artist_search": "みきとP 初音ミク",
+      "language": "日文",
+      "type_tags": [
+        "Vocaloid",
+        "J-Pop"
+      ],
+      "display_version": "中文填词/日文原版"
+    },
+    "小夜子（中文填词）": {
+      "display_song_name": "小夜子",
+      "artist": "みきとP / 初音ミク",
+      "artist_search": "みきとP 初音ミク",
+      "language": "中文",
+      "type_tags": [
+        "中文填词",
+        "Vocaloid"
+      ],
+      "display_version": "中文填词"
+    },
     "心愿便利贴": {
       "artist": "元若蓝 / 大Q秉洛",
       "artist_search": "元若蓝 大Q秉洛",
@@ -448,6 +490,15 @@
         "流行",
         "影视",
         "对唱"
+      ]
+    },
+    "心做し": {
+      "artist": "蝶々P / GUMI",
+      "artist_search": "蝶々P GUMI",
+      "language": "日文",
+      "type_tags": [
+        "Vocaloid",
+        "J-Pop"
       ]
     },
     "一半一半": {
@@ -459,6 +510,14 @@
       ]
     },
     "踊り子": {
+      "type_tags": [
+        "J-Pop"
+      ]
+    },
+    "又三郎": {
+      "artist": "ヨルシカ",
+      "artist_search": "ヨルシカ",
+      "language": "日文",
       "type_tags": [
         "J-Pop"
       ]
@@ -483,6 +542,22 @@
       "artist_search": "柿崎ユウタ",
       "type_tags": [
         "J-Pop"
+      ]
+    },
+    "在夜里跳舞": {
+      "artist": "单依纯",
+      "artist_search": "单依纯",
+      "language": "中文",
+      "type_tags": [
+        "流行"
+      ]
+    },
+    "珠玉": {
+      "artist": "单依纯",
+      "artist_search": "单依纯",
+      "language": "中文",
+      "type_tags": [
+        "流行"
       ]
     },
     "Virtual to LIVE": {
@@ -510,6 +585,13 @@
         "J-Pop"
       ]
     },
+    "カタオモイ": {
+      "type_tags": [
+        "J-Pop",
+        "抒情"
+      ],
+      "display_song_name": "单相思"
+    },
     "シリウスの心臓": {
       "artist": "ヰ世界情緒",
       "artist_search": "ヰ世界情緒",
@@ -523,6 +605,15 @@
       "type_tags": [
         "J-Pop"
       ]
+    },
+    "ラピスのお人形": {
+      "artist": "ヰ世界情緒",
+      "artist_search": "ヰ世界情緒",
+      "language": "日文",
+      "type_tags": [
+        "J-Pop"
+      ]
     }
-  }
+  },
+  "updatedAt": "2026-09-19"
 }
