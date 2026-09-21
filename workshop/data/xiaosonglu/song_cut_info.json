@@ -1,10 +1,10 @@
 {
   "roomKey": "xiaosonglu",
   "roomId": "1727071052",
-  "generatedAt": "2026-09-19T03:19:33.000Z",
+  "generatedAt": "2026-09-20T04:42:37.579Z",
   "source": "song-cut-title-index",
   "description": "每首歌对应的歌切切片标题（单曲歌切视频标题 / 合集分P标题），供前端歌切链接显示。",
-  "count": 198,
+  "count": 209,
   "cuts": {
     "（区）最终祈愿": {
       "title": "07_（区）最终祈愿 - 平行四界Quadimension, 星尘",
@@ -995,6 +995,61 @@
       "title": "ラピスのお人形",
       "kind": "collection-chapter",
       "url": "https://www.bilibili.com/video/BV1xger6jEYS/?p=10"
+    },
+    "千里邀月": {
+      "title": "千里邀月",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1rZe86yE49/?p=1"
+    },
+    "惬意的事": {
+      "title": "惬意的事",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1rZe86yE49/?p=2"
+    },
+    "大喜": {
+      "title": "大喜",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1rZe86yE49/?p=3"
+    },
+    "告死鸟": {
+      "title": "告死鸟",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1rZe86yE49/?p=4"
+    },
+    "木兰行": {
+      "title": "木兰行",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1rZe86yE49/?p=5"
+    },
+    "春意红包": {
+      "title": "春意红包",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1rZe86yE49/?p=6"
+    },
+    "遥相逢": {
+      "title": "遥相逢",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1rZe86yE49/?p=7"
+    },
+    "百里芭蕉百里花": {
+      "title": "百里芭蕉百里花（半首）",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1rZe86yE49/?p=8"
+    },
+    "权御天下": {
+      "title": "权御天下",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1rZe86yE49/?p=10"
+    },
+    "404 Not Found": {
+      "title": "404 Not Found",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1rZe86yE49/?p=11"
+    },
+    "Lemon": {
+      "title": "Lemon",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1rZe86yE49/?p=12"
     }
   }
 }

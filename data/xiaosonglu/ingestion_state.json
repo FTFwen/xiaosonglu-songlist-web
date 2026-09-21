@@ -4,93 +4,8 @@
   "roomId": "1727071052",
   "channelUid": "1891335475",
   "baselineDate": "2026-09-03",
-  "updatedAt": "2026-09-19T03:17:13.871Z",
+  "updatedAt": "2026-09-20T04:42:37.649Z",
   "processedLives": [
-    {
-      "liveId": "1a3cdbe0-3ead-410e-90df-f4c8d2cfee81",
-      "date": "2026-09-17",
-      "title": "MIMIC PARPY来袭！",
-      "fetchComplete": true,
-      "decision": "imported",
-      "importedSongKeys": [
-        "2026-09-17::白鸟过河滩",
-        "2026-09-17::秒针を噛む",
-        "2026-09-17::少女レイ",
-        "2026-09-17::探窗",
-        "2026-09-17::天ノ弱",
-        "2026-09-17::小夜子",
-        "2026-09-17::小夜子(中文填词)",
-        "2026-09-17::心做し",
-        "2026-09-17::又三郎",
-        "2026-09-17::在夜里跳舞",
-        "2026-09-17::珠玉",
-        "2026-09-17::カタオモイ",
-        "2026-09-17::シリウスの心臓",
-        "2026-09-17::ラピスのお人形"
-      ],
-      "sameNameReviews": [
-        {
-          "songName": "カタオモイ",
-          "segmentIndex": 1,
-          "decision": "confirmed-repeat",
-          "evidenceUrls": [
-            "https://www.bilibili.com/video/BV19Eey6qEaj/"
-          ],
-          "notes": "同一首歌此前已在库（2026-08-11，单切 BV1znuz6eED5）。本次为 09-17 场次同曲再唱，独立证据：同场次另一份歌切合集 BV19Eey6qEaj。"
-        },
-        {
-          "songName": "小夜子（中文填词）",
-          "segmentIndex": 3,
-          "decision": "confirmed-repeat",
-          "evidenceUrls": [
-            "https://www.bilibili.com/video/BV1eUtg6tEAe/",
-            "https://www.bilibili.com/video/BV19Eey6qEaj/"
-          ],
-          "notes": "与同场 P4 为同一首 みきとP《小夜子》的两个语言版本（P3 中文填词 4:09、P4 日文原版 4:11），因此不能用同一 songName 入库（否则第二段音频会被按重名丢弃）。独立证据：hanser 中文填词版翻唱 BV1eUtg6tEAe（4:13）。"
-        },
-        {
-          "songName": "小夜子",
-          "segmentIndex": 4,
-          "decision": "confirmed-repeat",
-          "evidenceUrls": [
-            "https://www.bilibili.com/video/BV1BCeS6dEL1/",
-            "https://www.bilibili.com/video/BV1pv411Y7Cx/"
-          ],
-          "notes": "与同场 P3 同名：确认为同一首 みきとP《小夜子》的日文原版。独立证据：BV1BCeS6dEL1（4:19）、BV1pv411Y7Cx（4:50）。"
-        },
-        {
-          "songName": "少女レイ",
-          "segmentIndex": 7,
-          "decision": "confirmed-repeat",
-          "evidenceUrls": [
-            "https://www.bilibili.com/video/BV19Eey6qEaj/"
-          ],
-          "notes": "同一首歌此前已在库两次（2026-08-07 单切 BV1Xiu86aEwV、2026-08-20）。本次为 09-17 同曲再唱。独立证据：同场次另一份歌切合集 BV19Eey6qEaj。"
-        },
-        {
-          "songName": "シリウスの心臓",
-          "segmentIndex": 9,
-          "decision": "confirmed-repeat",
-          "evidenceUrls": [
-            "https://www.bilibili.com/video/BV1MPer6HE5Q/",
-            "https://www.bilibili.com/video/BV19Eey6qEaj/"
-          ],
-          "notes": "同一首歌此前已在库（2026-08-18）。本次为 09-17 同曲再唱。独立证据：同场次单切 BV1MPer6HE5Q（野翎鸢，4:52）。"
-        },
-        {
-          "songName": "白鸟过河滩",
-          "segmentIndex": 11,
-          "decision": "confirmed-repeat",
-          "evidenceUrls": [
-            "https://www.bilibili.com/video/BV1YRe664ENb/",
-            "https://www.bilibili.com/video/BV19Eey6qEaj/"
-          ],
-          "notes": "同一首歌此前已在库（2026-08-11，半场）。本次为 09-17 同曲再唱。独立证据：同场次单切 BV1YRe664ENb（3:35）。"
-        }
-      ],
-      "notes": "已验证 14 个日期+歌曲键存在于事实源。",
-      "reviewedAt": "2026-09-19T03:17:13.871Z"
-    },
     {
       "liveId": "1a81282d-5c84-4d0c-b98e-492b870f5b19",
       "date": "2026-09-03",
@@ -359,6 +274,97 @@
       "lyricLineCount": 0,
       "candidateClusterCount": 0,
       "reviewedAt": "2026-09-15T21:01:24.835Z"
+    },
+    {
+      "liveId": "4be8b076-c445-4aa5-8161-48f23a4b37b3",
+      "date": "2026-09-16",
+      "title": "撞树导致智力下降",
+      "startDate": 1789565315000,
+      "stopDate": 1789574352647,
+      "decision": "imported",
+      "importedSongKeys": [
+        "2026-09-16::住在天狼星的那个人"
+      ],
+      "notes": "用户提供歌切 BV1PQeN6kETG（UP 黄鱼鼠条，简介注明 2026年9月16日杂谈），曲名与原唱 OHMYMEITING 经 Apple Music/Musixmatch/Shazam 交叉核实，歌词『明明你就是对的人/让我们一起私奔』与弹幕玩梗吻合；用户人工确认无误，翻案初扫 no-songs",
+      "scannedAt": "2026-09-16T21:01:00.730Z",
+      "sourceFile": "_danmaku_2026-09-16_4be8b076.json",
+      "nextOffset": 31533,
+      "apiTotal": 31533,
+      "fetchComplete": true,
+      "candidateFile": "_candidate_2026-09-16_4be8b076.json",
+      "reusedArtifact": false,
+      "lyricLineCount": 0,
+      "candidateClusterCount": 0,
+      "reviewedAt": "2026-09-17T02:13:46.506Z"
+    },
+    {
+      "liveId": "1a3cdbe0-3ead-410e-90df-f4c8d2cfee81",
+      "date": "2026-09-17",
+      "title": "MIMIC PARPY来袭！",
+      "startDate": 1789650086000,
+      "stopDate": 1789662564200,
+      "decision": "imported",
+      "importedSongKeys": [
+        "2026-09-17::白鸟过河滩",
+        "2026-09-17::秒針を噛む",
+        "2026-09-17::少女レイ",
+        "2026-09-17::探窗",
+        "2026-09-17::天ノ弱",
+        "2026-09-17::小夜子",
+        "2026-09-17::小夜子(中文填词)",
+        "2026-09-17::心做し",
+        "2026-09-17::又三郎",
+        "2026-09-17::在夜里跳舞",
+        "2026-09-17::珠玉",
+        "2026-09-17::カタオモイ",
+        "2026-09-17::シリウスの心臓",
+        "2026-09-17::ラピスのお人形"
+      ],
+      "notes": "已验证 14 个日期+歌曲键存在于事实源。",
+      "scannedAt": "2026-09-17T21:05:47.645Z",
+      "sourceFile": "_danmaku_2026-09-17_1a3cdbe0.json",
+      "nextOffset": 55130,
+      "apiTotal": 55130,
+      "fetchComplete": true,
+      "candidateFile": "_candidate_2026-09-17_1a3cdbe0.json",
+      "reusedArtifact": false,
+      "lyricLineCount": 0,
+      "candidateClusterCount": 0,
+      "reviewedAt": "2026-09-18T02:25:45.731Z"
+    },
+    {
+      "liveId": "df3b07fc-a5b7-4167-9b59-7071e08a0140",
+      "date": "2026-09-19",
+      "title": "慢启动唱唱歌",
+      "startDate": 1789822755000,
+      "stopDate": 1789831291219,
+      "decision": "imported",
+      "importedSongKeys": [
+        "2026-09-19::404 not found",
+        "2026-09-19::百里芭蕉百里花",
+        "2026-09-19::春意红包",
+        "2026-09-19::大喜",
+        "2026-09-19::告死鸟",
+        "2026-09-19::木兰行",
+        "2026-09-19::千里邀月",
+        "2026-09-19::惬意的事",
+        "2026-09-19::权御天下",
+        "2026-09-19::小雨",
+        "2026-09-19::遥相逢",
+        "2026-09-19::lemon",
+        "2026-09-19::sos"
+      ],
+      "notes": "已验证 13 个日期+歌曲键存在于事实源。",
+      "scannedAt": "2026-09-20T04:31:23.288Z",
+      "sourceFile": "_danmaku_2026-09-19_df3b07fc.json",
+      "nextOffset": 30253,
+      "apiTotal": 30253,
+      "fetchComplete": true,
+      "candidateFile": "_candidate_2026-09-19_df3b07fc.json",
+      "reusedArtifact": false,
+      "lyricLineCount": 370,
+      "candidateClusterCount": 15,
+      "reviewedAt": "2026-09-20T04:42:37.649Z"
     }
   ]
 }

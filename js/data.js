@@ -1,11 +1,11 @@
 // 本文件由 scripts/build_xiaosonglu_song_data.mjs 从 data/xiaosonglu/ 生成，供 file:// 离线回退使用。
-// 生成时间：2026-09-19 11:19:33
+// 生成时间：2026-09-20 12:43:27
 // 数据源：data/xiaosonglu/（song_catalog / history_index / song_details / audio_index / song_cut_info）
 window.XSL_DATA = {
   song_catalog: {
   "roomKey": "xiaosonglu",
   "roomId": "1727071052",
-  "generatedAt": "2026-09-19T03:17:13.779Z",
+  "generatedAt": "2026-09-20T04:42:37.579Z",
   "source": "local-replay-ingestion",
   "songs": [
     {
@@ -322,6 +322,48 @@ window.XSL_DATA = {
       "status_labels": "歌切合集补录、待后续回放时间定位、自动识别待人工复核",
       "last_sing_at": "2026-09-17",
       "row_key": "シリウスの心臓"
+    },
+    {
+      "song_id": 80,
+      "song_name": "SOS",
+      "show_as_song_name": "",
+      "display_song_name": "SOS",
+      "artist": "黛冬優子（偶像大师 闪耀色彩）",
+      "artist_search": "SOS 黛冬優子 シャイニーカラーズ",
+      "feat_artist": "",
+      "remark": "来自 2026-08-20 偶像歌回。经弹幕歌词交叉验证 + 歌切视频《【小松绿Viridis/歌回】20260820-偶像歌回？欸》分P第10章节确认曲目；时间按歌切分P累计估算，待回放复核。歌手信息来自网易云音乐/萌娘百科检索。",
+      "tone": "",
+      "language": "日文",
+      "type": "偶像、游戏",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1WS8c6XE9w?p=10",
+      "sing_count": 2,
+      "status_labels": "歌回、自动识别待人工复核、歌切合集复核",
+      "last_sing_at": "2026-09-19",
+      "row_key": "SOS"
+    },
+    {
+      "song_id": 147,
+      "song_name": "小雨",
+      "show_as_song_name": "",
+      "display_song_name": "小雨",
+      "artist": "黄龄",
+      "artist_search": "黄龄",
+      "feat_artist": "",
+      "remark": "",
+      "tone": "",
+      "language": "中文",
+      "type": "流行",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=8",
+      "sing_count": 2,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-09-19",
+      "row_key": "小雨"
     },
     {
       "song_id": 103,
@@ -2676,27 +2718,6 @@ window.XSL_DATA = {
       "row_key": "MORE JUMP MORE!"
     },
     {
-      "song_id": 80,
-      "song_name": "SOS",
-      "show_as_song_name": "",
-      "display_song_name": "SOS",
-      "artist": "黛冬優子（偶像大师 闪耀色彩）",
-      "artist_search": "SOS 黛冬優子 シャイニーカラーズ",
-      "feat_artist": "",
-      "remark": "来自 2026-08-20 偶像歌回。经弹幕歌词交叉验证 + 歌切视频《【小松绿Viridis/歌回】20260820-偶像歌回？欸》分P第10章节确认曲目；时间按歌切分P累计估算，待回放复核。歌手信息来自网易云音乐/萌娘百科检索。",
-      "tone": "",
-      "language": "日文",
-      "type": "偶像、游戏",
-      "identification": "",
-      "display_version": "",
-      "search_name": "",
-      "cut_link": "https://www.bilibili.com/video/BV1WS8c6XE9w?p=10",
-      "sing_count": 1,
-      "status_labels": "歌回、自动识别待人工复核",
-      "last_sing_at": "2026-08-20",
-      "row_key": "SOS"
-    },
-    {
       "song_id": 82,
       "song_name": "Starlight Prologue",
       "show_as_song_name": "",
@@ -3262,27 +3283,6 @@ window.XSL_DATA = {
       "status_labels": "歌回、歌切合集复核",
       "last_sing_at": "2026-09-08",
       "row_key": "兔子先生"
-    },
-    {
-      "song_id": 147,
-      "song_name": "小雨",
-      "show_as_song_name": "",
-      "display_song_name": "小雨",
-      "artist": "黄龄",
-      "artist_search": "黄龄",
-      "feat_artist": "",
-      "remark": "",
-      "tone": "",
-      "language": "中文",
-      "type": "流行",
-      "identification": "",
-      "display_version": "",
-      "search_name": "",
-      "cut_link": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=8",
-      "sing_count": 1,
-      "status_labels": "歌回、歌切合集复核",
-      "last_sing_at": "2026-09-08",
-      "row_key": "小雨"
     },
     {
       "song_id": 153,
@@ -4165,18 +4165,249 @@ window.XSL_DATA = {
       "status_labels": "自动识别待人工复核",
       "last_sing_at": "2026-09-17",
       "row_key": "ラピスのお人形"
+    },
+    {
+      "song_id": 208,
+      "song_name": "404 Not Found",
+      "show_as_song_name": "",
+      "display_song_name": "404 Not Found",
+      "artist": "赤羽",
+      "artist_search": "404 Not Found 赤羽 kide",
+      "feat_artist": "",
+      "remark": "UP 心灵火Flame《20260919 歌切》P11；星尘Official投稿、赤羽演唱，kide作编曲、浓缩排骨&kide作词（专辑《天马行空Fairytale》）",
+      "tone": "",
+      "language": "中文",
+      "type": "Synthesizer V",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1rZe86yE49/?p=11",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-09-19",
+      "row_key": "404 Not Found"
+    },
+    {
+      "song_id": 206,
+      "song_name": "百里芭蕉百里花",
+      "show_as_song_name": "",
+      "display_song_name": "百里芭蕉百里花（半首）",
+      "artist": "MeLo（诗岸 / 海伊）",
+      "artist_search": "百里芭蕉百里花 诗岸 海伊 MeLo",
+      "feat_artist": "",
+      "remark": "UP 心灵火Flame《20260919 歌切》P8，分P名自带「半首」标注，直播中只唱了部分（词窗 01:02:37~01:05:36 约3分钟，原曲更长）；MeLo作编曲、诗岸与海伊演唱（五维介质专辑《海纳百川Storybook》，2021-07-16 投稿）",
+      "tone": "",
+      "language": "中文",
+      "type": "Synthesizer V",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1rZe86yE49/?p=8",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-09-19",
+      "row_key": "百里芭蕉百里花"
+    },
+    {
+      "song_id": 204,
+      "song_name": "春意红包",
+      "show_as_song_name": "",
+      "display_song_name": "春意红包",
+      "artist": "乐正绫 / 洛天依 / 心华",
+      "artist_search": "春意红包 乐正绫 洛天依 心华",
+      "feat_artist": "",
+      "remark": "UP 心灵火Flame《20260919 歌切》P6；原唱为2017拜年祭单品 Vocaloid Ver.（乐正绫/洛天依/心华，Wing翼作曲），分P时长 4:43 与原曲 4:44 吻合；2025 央视春晚翻唱版同曲",
+      "tone": "",
+      "language": "中文",
+      "type": "中文Vocaloid、Vocaloid",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1rZe86yE49/?p=6",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-09-19",
+      "row_key": "春意红包"
+    },
+    {
+      "song_id": 201,
+      "song_name": "大喜",
+      "show_as_song_name": "",
+      "display_song_name": "大喜",
+      "artist": "泠鸢yousa / 音阙诗听",
+      "artist_search": "泠鸢yousa 音阙诗听 大喜",
+      "feat_artist": "",
+      "remark": "UP 心灵火Flame《20260919 歌切》P3；原唱泠鸢yousa联合音阙诗听创作的国风电音单曲；本曲无直接歌词弹幕，按分P章节名+前后曲时间轴推定，置信度酌减",
+      "tone": "",
+      "language": "中文",
+      "type": "国风",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1rZe86yE49/?p=3",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-09-19",
+      "row_key": "大喜"
+    },
+    {
+      "song_id": 202,
+      "song_name": "告死鸟",
+      "show_as_song_name": "",
+      "display_song_name": "告死鸟",
+      "artist": "ilem / 洛天依",
+      "artist_search": "ilem 告死鸟 洛天依",
+      "feat_artist": "",
+      "remark": "UP 心灵火Flame《20260919 歌切》P4；ilem 作曲、洛天依演唱（2024 投稿，两小时殿堂）",
+      "tone": "",
+      "language": "中文",
+      "type": "中文Vocaloid、Vocaloid",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1rZe86yE49/?p=4",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-09-19",
+      "row_key": "告死鸟"
+    },
+    {
+      "song_id": 203,
+      "song_name": "木兰行",
+      "show_as_song_name": "",
+      "display_song_name": "木兰行",
+      "artist": "忘川风华录 / 苍穹",
+      "artist_search": "忘川风华录 木兰行 苍穹",
+      "feat_artist": "",
+      "remark": "UP 心灵火Flame《20260919 歌切》P5；忘川风华录企划、苍穹演唱（骆栖淮作词、塔库作曲，2020-04-01 投稿，神话曲）",
+      "tone": "",
+      "language": "中文",
+      "type": "忘川风华录、Synthesizer V",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1rZe86yE49/?p=5",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-09-19",
+      "row_key": "木兰行"
+    },
+    {
+      "song_id": 199,
+      "song_name": "千里邀月",
+      "show_as_song_name": "",
+      "display_song_name": "千里邀月",
+      "artist": "纯白 / 乐正绫",
+      "artist_search": "纯白 千里邀月 乐正绫",
+      "feat_artist": "",
+      "remark": "UP 心灵火Flame《20260919 歌切》P1；原唱为纯白投稿的乐正绫版（2018-11-30），另有泠鸢yousa/hanser/三无Marblue/茶理理人声本家，弹幕以「hanser：/泠鸢：」标注本家合唱分段",
+      "tone": "",
+      "language": "中文",
+      "type": "中文Vocaloid、古风",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1rZe86yE49/?p=1",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-09-19",
+      "row_key": "千里邀月"
+    },
+    {
+      "song_id": 200,
+      "song_name": "惬意的事",
+      "show_as_song_name": "",
+      "display_song_name": "惬意的事",
+      "artist": "泠鸢yousa（玖玲 曲）",
+      "artist_search": "泠鸢yousa 惬意的事 玖玲",
+      "feat_artist": "",
+      "remark": "UP 心灵火Flame《20260919 歌切》P2；泠鸢yousa 作词演唱、玖玲作编曲（专辑《折纸信笺》）",
+      "tone": "",
+      "language": "中文",
+      "type": "流行",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1rZe86yE49/?p=2",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-09-19",
+      "row_key": "惬意的事"
+    },
+    {
+      "song_id": 207,
+      "song_name": "权御天下",
+      "show_as_song_name": "",
+      "display_song_name": "权御天下",
+      "artist": "乌龟Sui / 洛天依",
+      "artist_search": "乌龟Sui 权御天下 洛天依",
+      "feat_artist": "",
+      "remark": "UP 心灵火Flame《20260919 歌切》P10；乌龟Sui 作曲、洛天依演唱的中V传说曲；本曲无歌词弹幕，按 reaction 弹幕+前后曲时间轴（01:32:08~01:36:21，分P时长 4:13）推定",
+      "tone": "",
+      "language": "中文",
+      "type": "中文Vocaloid、洛天依",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1rZe86yE49/?p=10",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-09-19",
+      "row_key": "权御天下"
+    },
+    {
+      "song_id": 205,
+      "song_name": "遥相逢",
+      "show_as_song_name": "",
+      "display_song_name": "遥相逢",
+      "artist": "ono / GrogTony / cumin_cike（星尘）",
+      "artist_search": "遥相逢 星尘 ono GrogTony",
+      "feat_artist": "",
+      "remark": "UP 心灵火Flame《20260919 歌切》P7；ono/GrogTony/cumin_cike 创作、星尘演唱（Vocaloid Lyrics Wiki 歌词逐句核对）",
+      "tone": "",
+      "language": "中文",
+      "type": "中文Vocaloid、Vocaloid",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1rZe86yE49/?p=7",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-09-19",
+      "row_key": "遥相逢"
+    },
+    {
+      "song_id": 209,
+      "song_name": "Lemon",
+      "show_as_song_name": "",
+      "display_song_name": "Lemon",
+      "artist": "米津玄師",
+      "artist_search": "米津玄師 Lemon",
+      "feat_artist": "",
+      "remark": "UP 心灵火Flame《20260919 歌切》P12；原唱米津玄師（2018）",
+      "tone": "",
+      "language": "日文",
+      "type": "J-Pop",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1rZe86yE49/?p=12",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-09-19",
+      "row_key": "Lemon"
     }
   ]
 },
   history_index: {
   "roomKey": "xiaosonglu",
   "roomId": "1727071052",
-  "generatedAt": "2026-09-19T03:17:13.779Z",
+  "generatedAt": "2026-09-20T04:42:37.579Z",
   "source": "local-replay-ingestion",
   "latest": {
     "year": "2026",
     "month": "09",
-    "day": "17"
+    "day": "19"
   },
   "dateTree": {
     "2026": {
@@ -4184,6 +4415,7 @@ window.XSL_DATA = {
         "13": 21,
         "16": 1,
         "17": 14,
+        "19": 13,
         "08": 29,
         "03": 21
       },
@@ -8047,13 +8279,249 @@ window.XSL_DATA = {
         "song_resolution_method": "danmaku-lyrics",
         "cut_link": "https://www.bilibili.com/video/BV1xger6jEYS/?p=14"
       }
+    ],
+    "2026-09-19": [
+      {
+        "song_name": "千里邀月",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "纯白 / 乐正绫",
+        "replay_id": "live:df3b07fc-a5b7-4167-9b59-7071e08a0140",
+        "replay_title": "【小松绿Viridis】慢启动唱唱歌 2026-09-19",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "千里邀月",
+        "lyric_excerpt": "点歌弹幕 00:10:53~00:10:57「千里邀月/可以唱千里邀月吗」；歌词窗口 00:19:32~00:23:29（lyric cluster #3）「hanser：一声锣惊得我睁大双眼 茶楼酒肆铺满闹市长街」「泠鸢：食客翘首等一碗阳春面 墨客满腹才情廊下邀月」——观众按人声本家分工标注",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1rZe86yE49/?p=1"
+      },
+      {
+        "song_name": "惬意的事",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "泠鸢yousa（玖玲 曲）",
+        "replay_id": "live:df3b07fc-a5b7-4167-9b59-7071e08a0140",
+        "replay_title": "【小松绿Viridis】慢启动唱唱歌 2026-09-19",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "惬意的事",
+        "lyric_excerpt": "歌词弹幕 00:25:39~00:28:14「【喜欢是惬意的事情　只要一些心电感应】」×3（lyric cluster #3 窗口内）",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1rZe86yE49/?p=2"
+      },
+      {
+        "song_name": "大喜",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "泠鸢yousa / 音阙诗听",
+        "replay_id": "live:df3b07fc-a5b7-4167-9b59-7071e08a0140",
+        "replay_title": "【小松绿Viridis】慢启动唱唱歌 2026-09-19",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "大喜",
+        "lyric_excerpt": "落位于惬意的事（00:28 歌词结束）与告死鸟（00:36:35 歌词起始）之间；reaction cluster #2（00:19:17~00:29:16）「简直就是天籁/好听好听」覆盖本曲段",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1rZe86yE49/?p=3"
+      },
+      {
+        "song_name": "木兰行",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "忘川风华录 / 苍穹",
+        "replay_id": "live:df3b07fc-a5b7-4167-9b59-7071e08a0140",
+        "replay_title": "【小松绿Viridis】慢启动唱唱歌 2026-09-19",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "木兰行",
+        "lyric_excerpt": "00:40:48 弹幕「木兰行不行」点歌；歌词窗口 00:44:26~00:46:58（lyric cluster #5）「豪气力挽山湖，春风代渡」「游丝投机杼，木兰当户，为拆解歧途」",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1rZe86yE49/?p=5"
+      },
+      {
+        "song_name": "春意红包",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "乐正绫 / 洛天依 / 心华",
+        "replay_id": "live:df3b07fc-a5b7-4167-9b59-7071e08a0140",
+        "replay_title": "【小松绿Viridis】慢启动唱唱歌 2026-09-19",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "春意红包",
+        "lyric_excerpt": "歌词弹幕 00:52:22~00:58:33「【找旧样铜板穿一串吉兆　把春意装满红包】」「【红绳绕 来封一个大红包】」「【侃八卦 讲小道 等杯中茶酒减少　将手上红包 塞进你棉袄】」",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1rZe86yE49/?p=6"
+      },
+      {
+        "song_name": "遥相逢",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "ono / GrogTony / cumin_cike（星尘）",
+        "replay_id": "live:df3b07fc-a5b7-4167-9b59-7071e08a0140",
+        "replay_title": "【小松绿Viridis】慢启动唱唱歌 2026-09-19",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "遥相逢",
+        "lyric_excerpt": "歌词窗口起点 00:51:31（lyric cluster #7）「望着瓦上的碎嘴家雀 问它们春日的鸟儿何时才能到」「穿街搜巷沿路找」「看邻家的老人摘下毡帽 虽是脱去冬衣还尚早」",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1rZe86yE49/?p=7"
+      },
+      {
+        "song_name": "百里芭蕉百里花（半首）",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "MeLo（诗岸 / 海伊）",
+        "replay_id": "live:df3b07fc-a5b7-4167-9b59-7071e08a0140",
+        "replay_title": "【小松绿Viridis】慢启动唱唱歌 2026-09-19",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "百里芭蕉百里花",
+        "lyric_excerpt": "歌词弹幕 01:02:37~01:05:36「【她手呀撩起那芭蕉　微敛了眉目难掩下少年沉醉的模样】」「【墨黑的芭蕉墨白的她　唇上一抹绛朱砂】」+「百里芭蕉百里花 ﻿」",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1rZe86yE49/?p=8"
+      },
+      {
+        "song_name": "权御天下",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "乌龟Sui / 洛天依",
+        "replay_id": "live:df3b07fc-a5b7-4167-9b59-7071e08a0140",
+        "replay_title": "【小松绿Viridis】慢启动唱唱歌 2026-09-19",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "权御天下",
+        "lyric_excerpt": "01:32:20 弹幕「权御天下真的很快」（reaction cluster #9 窗口 01:16:48~01:45:20 内）；时间轴上位次：小雨（01:29+2:55=01:32:08）之后、404 Not Found（01:41:57 词窗）之前",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1rZe86yE49/?p=10"
+      },
+      {
+        "song_name": "告死鸟",
+        "sing_time": "00:36:35",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "ilem / 洛天依",
+        "replay_id": "live:df3b07fc-a5b7-4167-9b59-7071e08a0140",
+        "replay_title": "【小松绿Viridis】慢启动唱唱歌 2026-09-19",
+        "replay_url": "",
+        "start_time": "00:36:35",
+        "end_time": "00:40:35",
+        "row_key": "告死鸟",
+        "lyric_excerpt": "歌词窗口 00:36:35~00:39:28（lyric cluster #4）「不要等到 它 又回来」「等到 悠悠天边看见那匆匆划过的告死 鸟啊」「请你再 慢 一点 那人还有愿未了啊」；时间窗起点+分P时长 4:00 推得结束 00:40:35",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1rZe86yE49/?p=4"
+      },
+      {
+        "song_name": "小雨",
+        "sing_time": "01:29:13",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "黄龄",
+        "replay_id": "live:df3b07fc-a5b7-4167-9b59-7071e08a0140",
+        "replay_title": "【小松绿Viridis】慢启动唱唱歌 2026-09-19",
+        "replay_url": "",
+        "start_time": "01:29:13",
+        "end_time": "01:32:08",
+        "row_key": "小雨",
+        "lyric_excerpt": "歌词窗口 01:29:13 起（lyric cluster #11）「夏夜低沉的云雾里 往事更迭一季 闷不吭声的浮萍 摇曳着欲说还静」「窗帘它揉碎了灯影 揉不灭的心意」；另有 01:08:23 弹幕「小雨唱过了」提示本场的点歌单；词窗起点+分P时长 2:55 推得结束 01:32:08",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1rZe86yE49/?p=9"
+      },
+      {
+        "song_name": "404 Not Found",
+        "sing_time": "01:41:57",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "赤羽",
+        "replay_id": "live:df3b07fc-a5b7-4167-9b59-7071e08a0140",
+        "replay_title": "【小松绿Viridis】慢启动唱唱歌 2026-09-19",
+        "replay_url": "",
+        "start_time": "01:41:57",
+        "end_time": "01:47:07",
+        "row_key": "404 Not Found",
+        "lyric_excerpt": "歌词窗口 01:41:57~01:46:02（lyric cluster #12）「当万木俱焚别走近我」「就让所有的梦境不坠落」「层叠的冰依偎着我」「湍流涌动月将落」；词窗起点+分P时长 5:10 推得结束 01:47:07，与 Lemon 词窗起点 01:51:44 之间留有谈话间隙",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1rZe86yE49/?p=11"
+      },
+      {
+        "song_name": "Lemon",
+        "sing_time": "01:51:44",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "米津玄師",
+        "replay_id": "live:df3b07fc-a5b7-4167-9b59-7071e08a0140",
+        "replay_title": "【小松绿Viridis】慢启动唱唱歌 2026-09-19",
+        "replay_url": "",
+        "start_time": "01:51:44",
+        "end_time": "01:55:54",
+        "row_key": "Lemon",
+        "lyric_excerpt": "01:51:28 弹幕「lemon！」即时识别；歌词窗口 01:51:44~01:55:27（lyric cluster #13）「如同取回遗忘之物一般」「细细拂去将回忆覆盖的尘埃」「有着无法挽回的幸福」；词窗起点+分P时长 4:10 推得结束 01:55:54",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1rZe86yE49/?p=12"
+      },
+      {
+        "song_name": "SOS",
+        "sing_time": "02:00:01",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "黛冬優子（CV 幸村恵理）",
+        "replay_id": "live:df3b07fc-a5b7-4167-9b59-7071e08a0140",
+        "replay_title": "【小松绿Viridis】慢启动唱唱歌 2026-09-19",
+        "replay_url": "",
+        "start_time": "02:00:01",
+        "end_time": "02:04:01",
+        "row_key": "SOS",
+        "lyric_excerpt": "歌词窗口 02:00:01~02:01:36（lyric cluster #14）「你喜欢的音乐和 电影都去搜索」「每一次看社交软件时 都会给你点赞 （想吸引你的注意）」「无时无刻都在思考你的事情 一边妄想着一边紧紧地抱住枕头」；安可段 reaction cluster #15（02:02:18~02:09:15）；词窗起点+分P时长 4:01 推得结束 02:04:01",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1rZe86yE49/?p=13"
+      }
     ]
   }
 },
   song_details: {
   "roomKey": "xiaosonglu",
   "roomId": "1727071052",
-  "generatedAt": "2026-09-19T03:17:13.779Z",
+  "generatedAt": "2026-09-20T04:42:37.579Z",
   "source": "local-replay-ingestion",
   "bySongKey": {
     "少女レイ": {
@@ -10247,8 +10715,23 @@ window.XSL_DATA = {
       "display_song_name": "SOS",
       "artist": "黛冬優子（偶像大师 闪耀色彩）",
       "cut_link": "https://www.bilibili.com/video/BV1WS8c6XE9w?p=10",
-      "total_count": 1,
+      "total_count": 2,
       "entries": [
+        {
+          "date": "2026-09-19",
+          "time": "02:00:01",
+          "end_time": "02:04:01",
+          "status": "歌回、歌切合集复核",
+          "artist": "黛冬優子（CV 幸村恵理）",
+          "replay_id": "live:df3b07fc-a5b7-4167-9b59-7071e08a0140",
+          "replay_title": "【小松绿Viridis】慢启动唱唱歌 2026-09-19",
+          "replay_url": "",
+          "remark": "UP 心灵火Flame《20260919 歌切》P13，安可末曲；原唱为《偶像大师闪耀色彩》曲目（黛冬優子 CV 幸村恵理，专辑 COLORFUL FEET），弹幕歌词与日文原词逐句对应（妄想しながら枕ギュってした 等）",
+          "lyric_excerpt": "歌词窗口 02:00:01~02:01:36（lyric cluster #14）「你喜欢的音乐和 电影都去搜索」「每一次看社交软件时 都会给你点赞 （想吸引你的注意）」「无时无刻都在思考你的事情 一边妄想着一边紧紧地抱住枕头」；安可段 reaction cluster #15（02:02:18~02:09:15）；词窗起点+分P时长 4:01 推得结束 02:04:01",
+          "song_resolution_method": "song-cut-collection-chapter",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1rZe86yE49/?p=13"
+        },
         {
           "date": "2026-08-20",
           "time": "00:35:28",
@@ -11952,8 +12435,23 @@ window.XSL_DATA = {
       "display_song_name": "小雨",
       "artist": "黄龄",
       "cut_link": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=8",
-      "total_count": 1,
+      "total_count": 2,
       "entries": [
+        {
+          "date": "2026-09-19",
+          "time": "01:29:13",
+          "end_time": "01:32:08",
+          "status": "歌回、歌切合集复核",
+          "artist": "黄龄",
+          "replay_id": "live:df3b07fc-a5b7-4167-9b59-7071e08a0140",
+          "replay_title": "【小松绿Viridis】慢启动唱唱歌 2026-09-19",
+          "replay_url": "",
+          "remark": "UP 心灵火Flame《20260919 歌切》P9；原唱黄龄，收录于专辑《Flower To Be》（2023），词窗+时长与下一曲权御天下（01:32:20 reaction）无缝衔接",
+          "lyric_excerpt": "歌词窗口 01:29:13 起（lyric cluster #11）「夏夜低沉的云雾里 往事更迭一季 闷不吭声的浮萍 摇曳着欲说还静」「窗帘它揉碎了灯影 揉不灭的心意」；另有 01:08:23 弹幕「小雨唱过了」提示本场的点歌单；词窗起点+分P时长 2:55 推得结束 01:32:08",
+          "song_resolution_method": "song-cut-collection-chapter",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1rZe86yE49/?p=9"
+        },
         {
           "date": "2026-09-08",
           "time": "",
@@ -13245,16 +13743,291 @@ window.XSL_DATA = {
           "cut_link": "https://www.bilibili.com/video/BV1xger6jEYS/?p=14"
         }
       ]
+    },
+    "千里邀月": {
+      "row_key": "千里邀月",
+      "song_name": "千里邀月",
+      "display_song_name": "千里邀月",
+      "artist": "纯白 / 乐正绫",
+      "cut_link": "https://www.bilibili.com/video/BV1rZe86yE49/?p=1",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-09-19",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "纯白 / 乐正绫",
+          "replay_id": "live:df3b07fc-a5b7-4167-9b59-7071e08a0140",
+          "replay_title": "【小松绿Viridis】慢启动唱唱歌 2026-09-19",
+          "replay_url": "",
+          "remark": "UP 心灵火Flame《20260919 歌切》P1；原唱为纯白投稿的乐正绫版（2018-11-30），另有泠鸢yousa/hanser/三无Marblue/茶理理人声本家，弹幕以「hanser：/泠鸢：」标注本家合唱分段",
+          "lyric_excerpt": "点歌弹幕 00:10:53~00:10:57「千里邀月/可以唱千里邀月吗」；歌词窗口 00:19:32~00:23:29（lyric cluster #3）「hanser：一声锣惊得我睁大双眼 茶楼酒肆铺满闹市长街」「泠鸢：食客翘首等一碗阳春面 墨客满腹才情廊下邀月」——观众按人声本家分工标注",
+          "song_resolution_method": "song-cut-collection-chapter",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1rZe86yE49/?p=1"
+        }
+      ]
+    },
+    "惬意的事": {
+      "row_key": "惬意的事",
+      "song_name": "惬意的事",
+      "display_song_name": "惬意的事",
+      "artist": "泠鸢yousa（玖玲 曲）",
+      "cut_link": "https://www.bilibili.com/video/BV1rZe86yE49/?p=2",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-09-19",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "泠鸢yousa（玖玲 曲）",
+          "replay_id": "live:df3b07fc-a5b7-4167-9b59-7071e08a0140",
+          "replay_title": "【小松绿Viridis】慢启动唱唱歌 2026-09-19",
+          "replay_url": "",
+          "remark": "UP 心灵火Flame《20260919 歌切》P2；泠鸢yousa 作词演唱、玖玲作编曲（专辑《折纸信笺》）",
+          "lyric_excerpt": "歌词弹幕 00:25:39~00:28:14「【喜欢是惬意的事情　只要一些心电感应】」×3（lyric cluster #3 窗口内）",
+          "song_resolution_method": "song-cut-collection-chapter",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1rZe86yE49/?p=2"
+        }
+      ]
+    },
+    "大喜": {
+      "row_key": "大喜",
+      "song_name": "大喜",
+      "display_song_name": "大喜",
+      "artist": "泠鸢yousa / 音阙诗听",
+      "cut_link": "https://www.bilibili.com/video/BV1rZe86yE49/?p=3",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-09-19",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "泠鸢yousa / 音阙诗听",
+          "replay_id": "live:df3b07fc-a5b7-4167-9b59-7071e08a0140",
+          "replay_title": "【小松绿Viridis】慢启动唱唱歌 2026-09-19",
+          "replay_url": "",
+          "remark": "UP 心灵火Flame《20260919 歌切》P3；原唱泠鸢yousa联合音阙诗听创作的国风电音单曲；本曲无直接歌词弹幕，按分P章节名+前后曲时间轴推定，置信度酌减",
+          "lyric_excerpt": "落位于惬意的事（00:28 歌词结束）与告死鸟（00:36:35 歌词起始）之间；reaction cluster #2（00:19:17~00:29:16）「简直就是天籁/好听好听」覆盖本曲段",
+          "song_resolution_method": "song-cut-collection-chapter",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1rZe86yE49/?p=3"
+        }
+      ]
+    },
+    "告死鸟": {
+      "row_key": "告死鸟",
+      "song_name": "告死鸟",
+      "display_song_name": "告死鸟",
+      "artist": "ilem / 洛天依",
+      "cut_link": "https://www.bilibili.com/video/BV1rZe86yE49/?p=4",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-09-19",
+          "time": "00:36:35",
+          "end_time": "00:40:35",
+          "status": "歌回、歌切合集复核",
+          "artist": "ilem / 洛天依",
+          "replay_id": "live:df3b07fc-a5b7-4167-9b59-7071e08a0140",
+          "replay_title": "【小松绿Viridis】慢启动唱唱歌 2026-09-19",
+          "replay_url": "",
+          "remark": "UP 心灵火Flame《20260919 歌切》P4；ilem 作曲、洛天依演唱（2024 投稿，两小时殿堂）",
+          "lyric_excerpt": "歌词窗口 00:36:35~00:39:28（lyric cluster #4）「不要等到 它 又回来」「等到 悠悠天边看见那匆匆划过的告死 鸟啊」「请你再 慢 一点 那人还有愿未了啊」；时间窗起点+分P时长 4:00 推得结束 00:40:35",
+          "song_resolution_method": "song-cut-collection-chapter",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1rZe86yE49/?p=4"
+        }
+      ]
+    },
+    "木兰行": {
+      "row_key": "木兰行",
+      "song_name": "木兰行",
+      "display_song_name": "木兰行",
+      "artist": "忘川风华录 / 苍穹",
+      "cut_link": "https://www.bilibili.com/video/BV1rZe86yE49/?p=5",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-09-19",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "忘川风华录 / 苍穹",
+          "replay_id": "live:df3b07fc-a5b7-4167-9b59-7071e08a0140",
+          "replay_title": "【小松绿Viridis】慢启动唱唱歌 2026-09-19",
+          "replay_url": "",
+          "remark": "UP 心灵火Flame《20260919 歌切》P5；忘川风华录企划、苍穹演唱（骆栖淮作词、塔库作曲，2020-04-01 投稿，神话曲）",
+          "lyric_excerpt": "00:40:48 弹幕「木兰行不行」点歌；歌词窗口 00:44:26~00:46:58（lyric cluster #5）「豪气力挽山湖，春风代渡」「游丝投机杼，木兰当户，为拆解歧途」",
+          "song_resolution_method": "song-cut-collection-chapter",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1rZe86yE49/?p=5"
+        }
+      ]
+    },
+    "春意红包": {
+      "row_key": "春意红包",
+      "song_name": "春意红包",
+      "display_song_name": "春意红包",
+      "artist": "乐正绫 / 洛天依 / 心华",
+      "cut_link": "https://www.bilibili.com/video/BV1rZe86yE49/?p=6",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-09-19",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "乐正绫 / 洛天依 / 心华",
+          "replay_id": "live:df3b07fc-a5b7-4167-9b59-7071e08a0140",
+          "replay_title": "【小松绿Viridis】慢启动唱唱歌 2026-09-19",
+          "replay_url": "",
+          "remark": "UP 心灵火Flame《20260919 歌切》P6；原唱为2017拜年祭单品 Vocaloid Ver.（乐正绫/洛天依/心华，Wing翼作曲），分P时长 4:43 与原曲 4:44 吻合；2025 央视春晚翻唱版同曲",
+          "lyric_excerpt": "歌词弹幕 00:52:22~00:58:33「【找旧样铜板穿一串吉兆　把春意装满红包】」「【红绳绕 来封一个大红包】」「【侃八卦 讲小道 等杯中茶酒减少　将手上红包 塞进你棉袄】」",
+          "song_resolution_method": "song-cut-collection-chapter",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1rZe86yE49/?p=6"
+        }
+      ]
+    },
+    "遥相逢": {
+      "row_key": "遥相逢",
+      "song_name": "遥相逢",
+      "display_song_name": "遥相逢",
+      "artist": "ono / GrogTony / cumin_cike（星尘）",
+      "cut_link": "https://www.bilibili.com/video/BV1rZe86yE49/?p=7",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-09-19",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "ono / GrogTony / cumin_cike（星尘）",
+          "replay_id": "live:df3b07fc-a5b7-4167-9b59-7071e08a0140",
+          "replay_title": "【小松绿Viridis】慢启动唱唱歌 2026-09-19",
+          "replay_url": "",
+          "remark": "UP 心灵火Flame《20260919 歌切》P7；ono/GrogTony/cumin_cike 创作、星尘演唱（Vocaloid Lyrics Wiki 歌词逐句核对）",
+          "lyric_excerpt": "歌词窗口起点 00:51:31（lyric cluster #7）「望着瓦上的碎嘴家雀 问它们春日的鸟儿何时才能到」「穿街搜巷沿路找」「看邻家的老人摘下毡帽 虽是脱去冬衣还尚早」",
+          "song_resolution_method": "song-cut-collection-chapter",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1rZe86yE49/?p=7"
+        }
+      ]
+    },
+    "百里芭蕉百里花": {
+      "row_key": "百里芭蕉百里花",
+      "song_name": "百里芭蕉百里花",
+      "display_song_name": "百里芭蕉百里花（半首）",
+      "artist": "MeLo（诗岸 / 海伊）",
+      "cut_link": "https://www.bilibili.com/video/BV1rZe86yE49/?p=8",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-09-19",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "MeLo（诗岸 / 海伊）",
+          "replay_id": "live:df3b07fc-a5b7-4167-9b59-7071e08a0140",
+          "replay_title": "【小松绿Viridis】慢启动唱唱歌 2026-09-19",
+          "replay_url": "",
+          "remark": "UP 心灵火Flame《20260919 歌切》P8，分P名自带「半首」标注，直播中只唱了部分（词窗 01:02:37~01:05:36 约3分钟，原曲更长）；MeLo作编曲、诗岸与海伊演唱（五维介质专辑《海纳百川Storybook》，2021-07-16 投稿）",
+          "lyric_excerpt": "歌词弹幕 01:02:37~01:05:36「【她手呀撩起那芭蕉　微敛了眉目难掩下少年沉醉的模样】」「【墨黑的芭蕉墨白的她　唇上一抹绛朱砂】」+「百里芭蕉百里花 ﻿」",
+          "song_resolution_method": "song-cut-collection-chapter",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1rZe86yE49/?p=8"
+        }
+      ]
+    },
+    "权御天下": {
+      "row_key": "权御天下",
+      "song_name": "权御天下",
+      "display_song_name": "权御天下",
+      "artist": "乌龟Sui / 洛天依",
+      "cut_link": "https://www.bilibili.com/video/BV1rZe86yE49/?p=10",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-09-19",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "乌龟Sui / 洛天依",
+          "replay_id": "live:df3b07fc-a5b7-4167-9b59-7071e08a0140",
+          "replay_title": "【小松绿Viridis】慢启动唱唱歌 2026-09-19",
+          "replay_url": "",
+          "remark": "UP 心灵火Flame《20260919 歌切》P10；乌龟Sui 作曲、洛天依演唱的中V传说曲；本曲无歌词弹幕，按 reaction 弹幕+前后曲时间轴（01:32:08~01:36:21，分P时长 4:13）推定",
+          "lyric_excerpt": "01:32:20 弹幕「权御天下真的很快」（reaction cluster #9 窗口 01:16:48~01:45:20 内）；时间轴上位次：小雨（01:29+2:55=01:32:08）之后、404 Not Found（01:41:57 词窗）之前",
+          "song_resolution_method": "song-cut-collection-chapter",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1rZe86yE49/?p=10"
+        }
+      ]
+    },
+    "404 Not Found": {
+      "row_key": "404 Not Found",
+      "song_name": "404 Not Found",
+      "display_song_name": "404 Not Found",
+      "artist": "赤羽",
+      "cut_link": "https://www.bilibili.com/video/BV1rZe86yE49/?p=11",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-09-19",
+          "time": "01:41:57",
+          "end_time": "01:47:07",
+          "status": "歌回、歌切合集复核",
+          "artist": "赤羽",
+          "replay_id": "live:df3b07fc-a5b7-4167-9b59-7071e08a0140",
+          "replay_title": "【小松绿Viridis】慢启动唱唱歌 2026-09-19",
+          "replay_url": "",
+          "remark": "UP 心灵火Flame《20260919 歌切》P11；星尘Official投稿、赤羽演唱，kide作编曲、浓缩排骨&kide作词（专辑《天马行空Fairytale》）",
+          "lyric_excerpt": "歌词窗口 01:41:57~01:46:02（lyric cluster #12）「当万木俱焚别走近我」「就让所有的梦境不坠落」「层叠的冰依偎着我」「湍流涌动月将落」；词窗起点+分P时长 5:10 推得结束 01:47:07，与 Lemon 词窗起点 01:51:44 之间留有谈话间隙",
+          "song_resolution_method": "song-cut-collection-chapter",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1rZe86yE49/?p=11"
+        }
+      ]
+    },
+    "Lemon": {
+      "row_key": "Lemon",
+      "song_name": "Lemon",
+      "display_song_name": "Lemon",
+      "artist": "米津玄師",
+      "cut_link": "https://www.bilibili.com/video/BV1rZe86yE49/?p=12",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-09-19",
+          "time": "01:51:44",
+          "end_time": "01:55:54",
+          "status": "歌回、歌切合集复核",
+          "artist": "米津玄師",
+          "replay_id": "live:df3b07fc-a5b7-4167-9b59-7071e08a0140",
+          "replay_title": "【小松绿Viridis】慢启动唱唱歌 2026-09-19",
+          "replay_url": "",
+          "remark": "UP 心灵火Flame《20260919 歌切》P12；原唱米津玄師（2018）",
+          "lyric_excerpt": "01:51:28 弹幕「lemon！」即时识别；歌词窗口 01:51:44~01:55:27（lyric cluster #13）「如同取回遗忘之物一般」「细细拂去将回忆覆盖的尘埃」「有着无法挽回的幸福」；词窗起点+分P时长 4:10 推得结束 01:55:54",
+          "song_resolution_method": "song-cut-collection-chapter",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1rZe86yE49/?p=12"
+        }
+      ]
     }
   }
 },
   audio_index: {
   "roomKey": "xiaosonglu",
   "roomId": "1727071052",
-  "generatedAt": "2026-09-19T03:17:01.144Z",
+  "generatedAt": "2026-09-20T04:43:27.800Z",
   "source": "song-cut-audio-download",
   "description": "每首歌对应的翻唱切片音频（从 B 站歌切/回放下载），供网页在线播放。",
-  "count": 196,
+  "count": 207,
   "audios": {
     "勾指起誓": "assets/audio/song_88.m4a?v=1d344dfde754",
     "蝴蝶": "assets/audio/song_25.m4a?v=d8fb99252c26",
@@ -13451,7 +14224,18 @@ window.XSL_DATA = {
     "ラピスのお人形": "assets/audio/song_194.m4a?v=df3628ed5aa8",
     "探窗": "assets/audio/song_195.m4a?v=bd507c4dd7b1",
     "在夜里跳舞": "assets/audio/song_196.m4a?v=1cc72080a733",
-    "珠玉": "assets/audio/song_197.m4a?v=3f15cf85d82e"
+    "珠玉": "assets/audio/song_197.m4a?v=3f15cf85d82e",
+    "千里邀月": "assets/audio/song_198.m4a?v=592076841dda",
+    "惬意的事": "assets/audio/song_199.m4a?v=3a7acd159ec9",
+    "大喜": "assets/audio/song_200.m4a?v=123d563d4792",
+    "告死鸟": "assets/audio/song_201.m4a?v=cc934d1cfe7f",
+    "木兰行": "assets/audio/song_202.m4a?v=8ca8d4a1e7ef",
+    "春意红包": "assets/audio/song_203.m4a?v=9d092c174616",
+    "遥相逢": "assets/audio/song_204.m4a?v=bbff5fe5159f",
+    "百里芭蕉百里花": "assets/audio/song_205.m4a?v=1d19bf53ef35",
+    "权御天下": "assets/audio/song_206.m4a?v=05198474e144",
+    "404 Not Found": "assets/audio/song_207.m4a?v=ae5804240b75",
+    "Lemon": "assets/audio/song_208.m4a?v=46e1bb97a662"
   },
   "verificationTargets": [
     "中华墨水娘",
@@ -13461,10 +14245,10 @@ window.XSL_DATA = {
   song_cut_info: {
   "roomKey": "xiaosonglu",
   "roomId": "1727071052",
-  "generatedAt": "2026-09-19T03:19:33.000Z",
+  "generatedAt": "2026-09-20T04:42:37.579Z",
   "source": "song-cut-title-index",
   "description": "每首歌对应的歌切切片标题（单曲歌切视频标题 / 合集分P标题），供前端歌切链接显示。",
-  "count": 198,
+  "count": 209,
   "cuts": {
     "（区）最终祈愿": {
       "title": "07_（区）最终祈愿 - 平行四界Quadimension, 星尘",
@@ -14455,6 +15239,61 @@ window.XSL_DATA = {
       "title": "ラピスのお人形",
       "kind": "collection-chapter",
       "url": "https://www.bilibili.com/video/BV1xger6jEYS/?p=10"
+    },
+    "千里邀月": {
+      "title": "千里邀月",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1rZe86yE49/?p=1"
+    },
+    "惬意的事": {
+      "title": "惬意的事",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1rZe86yE49/?p=2"
+    },
+    "大喜": {
+      "title": "大喜",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1rZe86yE49/?p=3"
+    },
+    "告死鸟": {
+      "title": "告死鸟",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1rZe86yE49/?p=4"
+    },
+    "木兰行": {
+      "title": "木兰行",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1rZe86yE49/?p=5"
+    },
+    "春意红包": {
+      "title": "春意红包",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1rZe86yE49/?p=6"
+    },
+    "遥相逢": {
+      "title": "遥相逢",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1rZe86yE49/?p=7"
+    },
+    "百里芭蕉百里花": {
+      "title": "百里芭蕉百里花（半首）",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1rZe86yE49/?p=8"
+    },
+    "权御天下": {
+      "title": "权御天下",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1rZe86yE49/?p=10"
+    },
+    "404 Not Found": {
+      "title": "404 Not Found",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1rZe86yE49/?p=11"
+    },
+    "Lemon": {
+      "title": "Lemon",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1rZe86yE49/?p=12"
     }
   }
 }

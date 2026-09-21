@@ -1,10 +1,10 @@
 {
   "roomKey": "xiaosonglu",
   "roomId": "1727071052",
-  "generatedAt": "2026-09-19T03:17:01.144Z",
+  "generatedAt": "2026-09-20T04:43:27.800Z",
   "source": "song-cut-audio-download",
   "description": "每首歌对应的翻唱切片音频（从 B 站歌切/回放下载），供网页在线播放。",
-  "count": 196,
+  "count": 207,
   "audios": {
     "勾指起誓": "assets/audio/song_88.m4a?v=1d344dfde754",
     "蝴蝶": "assets/audio/song_25.m4a?v=d8fb99252c26",
@@ -201,7 +201,18 @@
     "ラピスのお人形": "assets/audio/song_194.m4a?v=df3628ed5aa8",
     "探窗": "assets/audio/song_195.m4a?v=bd507c4dd7b1",
     "在夜里跳舞": "assets/audio/song_196.m4a?v=1cc72080a733",
-    "珠玉": "assets/audio/song_197.m4a?v=3f15cf85d82e"
+    "珠玉": "assets/audio/song_197.m4a?v=3f15cf85d82e",
+    "千里邀月": "assets/audio/song_198.m4a?v=592076841dda",
+    "惬意的事": "assets/audio/song_199.m4a?v=3a7acd159ec9",
+    "大喜": "assets/audio/song_200.m4a?v=123d563d4792",
+    "告死鸟": "assets/audio/song_201.m4a?v=cc934d1cfe7f",
+    "木兰行": "assets/audio/song_202.m4a?v=8ca8d4a1e7ef",
+    "春意红包": "assets/audio/song_203.m4a?v=9d092c174616",
+    "遥相逢": "assets/audio/song_204.m4a?v=bbff5fe5159f",
+    "百里芭蕉百里花": "assets/audio/song_205.m4a?v=1d19bf53ef35",
+    "权御天下": "assets/audio/song_206.m4a?v=05198474e144",
+    "404 Not Found": "assets/audio/song_207.m4a?v=ae5804240b75",
+    "Lemon": "assets/audio/song_208.m4a?v=46e1bb97a662"
   },
   "verificationTargets": [
     "中华墨水娘",
