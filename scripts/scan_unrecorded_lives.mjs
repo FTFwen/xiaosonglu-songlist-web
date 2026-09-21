@@ -82,9 +82,12 @@ async function runScan({ args, root, statePath, segmentsPath }) {
         });
         const candidate = clusterLyrics(fetched.result, {
           gapSeconds: args['gap-seconds'] ?? 150,
-          minimumLength: args['minimum-length'] ?? 6,
+          minimumLength: args['minimum-length'] ?? 4,
           minimumLines: args['minimum-lines'] ?? 1,
           contextSeconds: args['context-seconds'] ?? 45,
+          reaction: args['no-reaction'] === true ? false : undefined,
+          reactionWindowSeconds: args['reaction-window-seconds'],
+          reactionMinPatterns: args['reaction-min-patterns'],
         });
         const candidatePath = fetched.target.replace(/_danmaku_/, '_candidate_');
         await writeJsonAtomic(candidatePath, candidate);
@@ -101,7 +104,11 @@ async function runScan({ args, root, statePath, segmentsPath }) {
           candidateClusterCount: candidate.stats.candidateClusters,
           decision: hasCandidates ? 'review-needed' : 'no-songs',
           importedSongKeys: [],
-          notes: hasCandidates ? '存在括号歌词候选，需结合上下文与歌切人工复核。' : '未发现符合规则的括号歌词弹幕，自动标记为无歌。',
+          notes: hasCandidates
+            ? (candidate.stats.lyricClusters > 0
+              ? '存在括号歌词候选，需结合上下文与歌切人工复核。'
+              : '未发现括号歌词弹幕，但检测到唱歌反应窗口（观众动作+好评关键词共现），需人工复核。')
+            : '未发现括号歌词弹幕，也未检测到唱歌反应窗口，自动标记为无歌。',
         };
         updated = await upsertLiveState(statePath, state, entry, { write: true });
         state = updated.state;

@@ -65,9 +65,9 @@ async function main() {
     blockedTypeTags: typeTagPolicy.blockedTypeTags,
     blockedTypeTagDetails: registryDocument.blockedTags,
   });
-  if (args.write === true && (imported.insertedSegments.length || imported.cutsChanged)) {
+  if (args.write === true && (imported.insertedSegments.length || imported.cutsChanged || imported.insertedCuts.length)) {
     if (imported.insertedSegments.length) await writeJsonAtomic(segmentsPath, imported.segmentsDocument);
-    if (imported.cutsChanged) await writeJsonAtomic(cutsPath, imported.cutsDocument);
+    if (imported.cutsChanged || imported.insertedCuts.length) await writeJsonAtomic(cutsPath, imported.cutsDocument);
   }
   const build = args.write === true
     ? await buildSongData({ root, write: true })

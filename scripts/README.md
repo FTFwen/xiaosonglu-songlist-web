@@ -24,7 +24,11 @@ node scripts/scan_unrecorded_lives.mjs
 node scripts/scan_unrecorded_lives.mjs --write
 ```
 
-扫描时频道列表每轮只请求一次；基线当天仍会纳入候选，再按 liveId 判断是否已经完成，避免漏掉同日多场。写入模式持有本地锁，同一时刻只有一个扫描器；分页状态先写 evidence artifact、再写 ingestion state。扫描规则固定为：只取 `payloadKind === 1` 的 `payload.rawText`；只将 `【】` 或 `［］` 包围、去标点后长度至少 6 的弹幕作为歌词证据；相邻歌词弹幕间隔超过 150 秒时开启新候选段。ASCII `[表情]` 不会被误判为歌词。
+扫描时频道列表每轮只请求一次；基线当天仍会纳入候选，再按 liveId 判断是否已经完成，避免漏掉同日多场。写入模式持有本地锁，同一时刻只有一个扫描器；分页状态先写 evidence artifact、再写 ingestion state。扫描规则：只取 `payloadKind === 1` 的 `payload.rawText`；歌词证据为 `【】［］「」『』` 包围、去标点后长度至少 4 的弹幕；相邻歌词弹幕间隔超过 150 秒时开启新候选段。ASCII `[表情]` 不会被误判为歌词。
+
+此外还有第二条证据通道「唱歌反应窗口」（2026-09-17 直播实际唱歌但观众未刷括号歌词后引入）：在 420 秒滑动窗口内，若出现至少 1 个唱歌动作关键词（唱歌了/开口/跟唱/安可/点歌等）且去重后动作+好评关键词合计至少 3 种（好听/天籁/原唱/声线等），则生成 `kind: "reaction"` 的候选段供人工复核。单纯的好评刷屏没有动作词不会触发。两个通道都可以用参数收紧或关闭：`--minimum-length`（恢复旧严格长度）、`--reaction-min-patterns`、`--reaction-window-seconds`、`--no-reaction`。
+
+对已扫描但仍在 `review-needed` 的场次，可在其弹幕 artifact 完整时用 `scripts/cluster_lyrics.mjs --input data/xiaosonglu/_danmaku_*.json` 以当前规则重新生成候选文件（artifact 会被直接复用，不会请求弹幕接口），再用 `record_live_review.mjs` 更新复核记录。
 
 零候选场次会自动记为 `no-songs`。有候选的场次记为 `review-needed`，必须结合上下文、可信歌切标题和必要的歌词检索复核；不要仅凭单条歌词臆测歌名。
 
