@@ -1,10 +1,10 @@
 {
   "roomKey": "xiaosonglu",
   "roomId": "1727071052",
-  "generatedAt": "2026-09-20T04:42:37.579Z",
+  "generatedAt": "2026-09-24T02:04:57.970Z",
   "source": "song-cut-title-index",
   "description": "每首歌对应的歌切切片标题（单曲歌切视频标题 / 合集分P标题），供前端歌切链接显示。",
-  "count": 209,
+  "count": 228,
   "cuts": {
     "（区）最终祈愿": {
       "title": "07_（区）最终祈愿 - 平行四界Quadimension, 星尘",
@@ -1050,6 +1050,101 @@
       "title": "Lemon",
       "kind": "collection",
       "url": "https://www.bilibili.com/video/BV1rZe86yE49/?p=12"
+    },
+    "嘘月": {
+      "title": "01_嘘月 - ヨルシカ",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1ouhW6GEoD/?p=1"
+    },
+    "花に亡霊": {
+      "title": "02_花に亡霊 - ヨルシカ",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1ouhW6GEoD/?p=2"
+    },
+    "啄木鳥": {
+      "title": "03_啄木鳥 - ヨルシカ",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1ouhW6GEoD/?p=3"
+    },
+    "花と水飴、最終電車": {
+      "title": "04_花と水飴、最終電車 - n-buna, 初音ミク",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1ouhW6GEoD/?p=4"
+    },
+    "打上花火": {
+      "title": "05_打上花火 - Daoko, 米津玄師",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1ouhW6GEoD/?p=5"
+    },
+    "妄想感傷代償連盟": {
+      "title": "06_妄想感傷代償連盟 - 25時、ナイトコードで。, 初音ミク",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1ouhW6GEoD/?p=6"
+    },
+    "愛して愛して愛して": {
+      "title": "07_愛して愛して愛して - きくお, 初音ミク",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1ouhW6GEoD/?p=7"
+    },
+    "愛言葉": {
+      "title": "08_愛言葉 - DECO_27, 初音ミク",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1ouhW6GEoD/?p=8"
+    },
+    "ゴーストルール": {
+      "title": "09_ゴーストルール - mafumafu",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1ouhW6GEoD/?p=9"
+    },
+    "独りんぼエンヴィー": {
+      "title": "10_独りんぼエンヴィー - koyori, 初音ミク",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1ouhW6GEoD/?p=10"
+    },
+    "恋愛裁判": {
+      "title": "11_恋愛裁判 - 40mP, 初音ミク",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1ouhW6GEoD/?p=11"
+    },
+    "歌鳥風月": {
+      "title": "12_歌鳥風月 - Aimer",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1ouhW6GEoD/?p=12"
+    },
+    "ECHO": {
+      "title": "13_ECHO (歌ってみた) - +α_あるふぁきゅん。",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1ouhW6GEoD/?p=13"
+    },
+    "からくりピエロ": {
+      "title": "14_からくりピエロ - 40mP, 初音ミク",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1ouhW6GEoD/?p=14"
+    },
+    "桜の季節": {
+      "title": "15_桜の季節 - ゆうゆ",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1ouhW6GEoD/?p=15"
+    },
+    "Sincerely": {
+      "title": "16_Sincerely - TRUE",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1ouhW6GEoD/?p=16"
+    },
+    "少女未遂": {
+      "title": "17_少女未遂 - 巡音ルカ, 初音ミク, 古墳P",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1ouhW6GEoD/?p=17"
+    },
+    "しかばねの踊り": {
+      "title": "18_しかばねの踊り - きくお, 初音ミク",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1ouhW6GEoD/?p=18"
+    },
+    "月灯りと氷晶核": {
+      "title": "19_月灯りと氷晶核 - 一二三, 初音ミク",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1ouhW6GEoD/?p=19"
     }
   }
 }

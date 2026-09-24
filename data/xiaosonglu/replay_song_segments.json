@@ -3,7 +3,7 @@
   "roomId": "1727071052",
   "sourceType": "bilibili-live-replay-song-segments",
   "description": "从小松绿直播回放中识别出的唱歌片段原始记录。由每日自动化或人工补录维护，随后通过 scripts/build_xiaosonglu_song_data.js 聚合成插件可直接读取的歌单与历史数据。歌名允许先根据歌词片段联网检索后再补全，回放日期允许先留空并由脚本从回放标题中解析。",
-  "updatedAt": "2026-09-20T04:42:37.579Z",
+  "updatedAt": "2026-09-24T02:04:57.970Z",
   "segments": [
     {
       "replay_id": "BV1Xiu86aEwV",
@@ -8505,6 +8505,747 @@
           "title": "SOS - 黛冬優子(幸村恵理) 中文歌詞Lyrics",
           "url": "https://www.marumaru-x.com/japanese-song/play-wdr6q5d9n3",
           "snippet": "偶像大师闪耀色彩曲，歌词逐句吻合"
+        }
+      ]
+    },
+    {
+      "replay_id": "live:d385a7ed-2688-46d9-996f-de676c2f8ddd",
+      "replay_title": "【小松绿Viridis】嘘 2026-09-23",
+      "replay_url": "",
+      "replay_date": "2026-09-23",
+      "replay_date_source": "live-api-date",
+      "segment_index": 1,
+      "start_time": "00:01:00",
+      "end_time": "",
+      "lyric_excerpt": "00:00:53 弹幕「嘘月好耶」即时识别开场第一曲（reaction cluster #1 窗口 00:00:53-01:05:52）",
+      "song_search_query": "嘘月",
+      "song_resolution_method": "song-cut-collection-chapter",
+      "song_name": "嘘月",
+      "display_song_name": "嘘月",
+      "artist": "ヨルシカ",
+      "artist_search": "ヨルシカ 嘘月",
+      "feat_artist": "",
+      "language": "日文",
+      "tone": "",
+      "status_labels": [
+        "歌回",
+        "歌切合集复核"
+      ],
+      "display_version": "",
+      "type": "J-Pop",
+      "remark": "UP 桐人今天睡大觉《2026.09.23练歌歌切合集》P1；凌晨练歌场（北京时间 00:48 开播）开场曲",
+      "identification": "",
+      "cut_link": "https://www.bilibili.com/video/BV1ouhW6GEoD/?p=1",
+      "confidence": 0.94,
+      "row_key": "嘘月",
+      "search_name": "",
+      "resolution_candidates": [
+        {
+          "title": "【小松绿Viridis】wqndyd小松绿凌晨开播练歌你做植物真的可以 2026.09.23练歌歌切合集 P1",
+          "url": "https://www.bilibili.com/video/BV1ouhW6GEoD/?p=1",
+          "snippet": "桐人今天睡大觉(mid 57249810) 2026-09-23T14:30:09Z 上传，19 章共 85 分钟"
+        }
+      ]
+    },
+    {
+      "replay_id": "live:d385a7ed-2688-46d9-996f-de676c2f8ddd",
+      "replay_title": "【小松绿Viridis】嘘 2026-09-23",
+      "replay_url": "",
+      "replay_date": "2026-09-23",
+      "replay_date_source": "live-api-date",
+      "segment_index": 2,
+      "start_time": "",
+      "end_time": "",
+      "lyric_excerpt": "reaction cluster #1 窗口（00:00:53-01:05:52）内；分P 累计时长轴：P1 结束于约 00:04:53",
+      "song_search_query": "花に亡霊",
+      "song_resolution_method": "song-cut-collection-chapter",
+      "song_name": "花に亡霊",
+      "display_song_name": "花に亡霊",
+      "artist": "ヨルシカ",
+      "artist_search": "ヨルシカ 花に亡霊",
+      "feat_artist": "",
+      "language": "日文",
+      "tone": "",
+      "status_labels": [
+        "歌回",
+        "歌切合集复核"
+      ],
+      "display_version": "",
+      "type": "J-Pop",
+      "remark": "UP 桐人今天睡大觉《2026.09.23练歌歌切合集》P2；ヨルシカ连续曲段第一首",
+      "identification": "",
+      "cut_link": "https://www.bilibili.com/video/BV1ouhW6GEoD/?p=2",
+      "confidence": 0.9,
+      "row_key": "花に亡霊",
+      "search_name": "",
+      "resolution_candidates": [
+        {
+          "title": "2026.09.23练歌歌切合集 P2 花に亡霊",
+          "url": "https://www.bilibili.com/video/BV1ouhW6GEoD/?p=2",
+          "snippet": "合集 P2，时长 4:01"
+        }
+      ]
+    },
+    {
+      "replay_id": "live:d385a7ed-2688-46d9-996f-de676c2f8ddd",
+      "replay_title": "【小松绿Viridis】嘘 2026-09-23",
+      "replay_url": "",
+      "replay_date": "2026-09-23",
+      "replay_date_source": "live-api-date",
+      "segment_index": 3,
+      "start_time": "",
+      "end_time": "",
+      "lyric_excerpt": "reaction cluster #1 窗口内；分P 累计时长轴推定",
+      "song_search_query": "啄木鳥",
+      "song_resolution_method": "song-cut-collection-chapter",
+      "song_name": "啄木鳥",
+      "display_song_name": "啄木鳥",
+      "artist": "ヨルシカ",
+      "artist_search": "ヨルシカ 啄木鳥",
+      "feat_artist": "",
+      "language": "日文",
+      "tone": "",
+      "status_labels": [
+        "歌回",
+        "歌切合集复核"
+      ],
+      "display_version": "",
+      "type": "J-Pop",
+      "remark": "UP 桐人今天睡大觉《2026.09.23练歌歌切合集》P3",
+      "identification": "",
+      "cut_link": "https://www.bilibili.com/video/BV1ouhW6GEoD/?p=3",
+      "confidence": 0.9,
+      "row_key": "啄木鳥",
+      "search_name": "",
+      "resolution_candidates": [
+        {
+          "title": "2026.09.23练歌歌切合集 P3 啄木鳥",
+          "url": "https://www.bilibili.com/video/BV1ouhW6GEoD/?p=3",
+          "snippet": "合集 P3，时长 2:47"
+        }
+      ]
+    },
+    {
+      "replay_id": "live:d385a7ed-2688-46d9-996f-de676c2f8ddd",
+      "replay_title": "【小松绿Viridis】嘘 2026-09-23",
+      "replay_url": "",
+      "replay_date": "2026-09-23",
+      "replay_date_source": "live-api-date",
+      "segment_index": 4,
+      "start_time": "",
+      "end_time": "",
+      "lyric_excerpt": "reaction cluster #1 窗口内；分P 累计时长轴推定",
+      "song_search_query": "花と水飴、最終電車",
+      "song_resolution_method": "song-cut-collection-chapter",
+      "song_name": "花と水飴、最終電車",
+      "display_song_name": "花と水飴、最終電車",
+      "artist": "n-buna / 初音ミク",
+      "artist_search": "n-buna 花と水飴、最終電車 初音ミク",
+      "feat_artist": "",
+      "language": "日文",
+      "tone": "",
+      "status_labels": [
+        "歌回",
+        "歌切合集复核"
+      ],
+      "display_version": "",
+      "type": "Vocaloid、J-Pop",
+      "remark": "UP 桐人今天睡大觉《2026.09.23练歌歌切合集》P4；n-buna（ヨルシカ作曲者）的 VOCALOID 名曲",
+      "identification": "",
+      "cut_link": "https://www.bilibili.com/video/BV1ouhW6GEoD/?p=4",
+      "confidence": 0.9,
+      "row_key": "花と水飴、最終電車",
+      "search_name": "",
+      "resolution_candidates": [
+        {
+          "title": "2026.09.23练歌歌切合集 P4 花と水飴、最終電車",
+          "url": "https://www.bilibili.com/video/BV1ouhW6GEoD/?p=4",
+          "snippet": "合集 P4，时长 4:57"
+        }
+      ]
+    },
+    {
+      "replay_id": "live:d385a7ed-2688-46d9-996f-de676c2f8ddd",
+      "replay_title": "【小松绿Viridis】嘘 2026-09-23",
+      "replay_url": "",
+      "replay_date": "2026-09-23",
+      "replay_date_source": "live-api-date",
+      "segment_index": 5,
+      "start_time": "00:22:03",
+      "end_time": "",
+      "lyric_excerpt": "00:22:03 弹幕「你还会打上花火」即时识别；P1-P5 累计时长 21:12，弹幕时间与累计轴吻合（时间轴连续性验证通过）",
+      "song_search_query": "打上花火",
+      "song_resolution_method": "song-cut-collection-chapter",
+      "song_name": "打上花火",
+      "display_song_name": "打上花火",
+      "artist": "Daoko / 米津玄師",
+      "artist_search": "Daoko 米津玄師 打上花火",
+      "feat_artist": "",
+      "language": "日文",
+      "tone": "",
+      "status_labels": [
+        "歌回",
+        "歌切合集复核"
+      ],
+      "display_version": "",
+      "type": "J-Pop",
+      "remark": "UP 桐人今天睡大觉《2026.09.23练歌歌切合集》P5；《烟花》主题曲",
+      "identification": "",
+      "cut_link": "https://www.bilibili.com/video/BV1ouhW6GEoD/?p=5",
+      "confidence": 0.94,
+      "row_key": "打上花火",
+      "search_name": "",
+      "resolution_candidates": [
+        {
+          "title": "2026.09.23练歌歌切合集 P5 打上花火",
+          "url": "https://www.bilibili.com/video/BV1ouhW6GEoD/?p=5",
+          "snippet": "合集 P5，时长 4:34"
+        }
+      ]
+    },
+    {
+      "replay_id": "live:d385a7ed-2688-46d9-996f-de676c2f8ddd",
+      "replay_title": "【小松绿Viridis】嘘 2026-09-23",
+      "replay_url": "",
+      "replay_date": "2026-09-23",
+      "replay_date_source": "live-api-date",
+      "segment_index": 6,
+      "start_time": "",
+      "end_time": "",
+      "lyric_excerpt": "01:14:59 弹幕「绿神，这首pjsk里ln的翻唱特别好听」——观众以 Project SEKAI 视角讨论本曲（Leo/need 翻唱版本）；reaction cluster #4 窗口（01:08:08-01:40:47）",
+      "song_search_query": "妄想感傷代償連盟",
+      "song_resolution_method": "song-cut-collection-chapter",
+      "song_name": "妄想感傷代償連盟",
+      "display_song_name": "妄想感傷代償連盟",
+      "artist": "25時、ナイトコードで。 / 初音ミク",
+      "artist_search": "妄想感傷代償連盟 25時、ナイトコードで。",
+      "feat_artist": "",
+      "language": "日文",
+      "tone": "",
+      "status_labels": [
+        "歌回",
+        "歌切合集复核"
+      ],
+      "display_version": "",
+      "type": "Project SEKAI、Vocaloid",
+      "remark": "UP 桐人今天睡大觉《2026.09.23练歌歌切合集》P6；原曲为《プロジェクトセカイ》25時、ナイトコードで。团体曲（ feat. 初音ミク），弹幕以 pjsk 语境佐证",
+      "identification": "",
+      "cut_link": "https://www.bilibili.com/video/BV1ouhW6GEoD/?p=6",
+      "confidence": 0.9,
+      "row_key": "妄想感傷代償連盟",
+      "search_name": "",
+      "resolution_candidates": [
+        {
+          "title": "2026.09.23练歌歌切合集 P6 妄想感傷代償連盟",
+          "url": "https://www.bilibili.com/video/BV1ouhW6GEoD/?p=6",
+          "snippet": "合集 P6，时长 4:27"
+        }
+      ]
+    },
+    {
+      "replay_id": "live:d385a7ed-2688-46d9-996f-de676c2f8ddd",
+      "replay_title": "【小松绿Viridis】嘘 2026-09-23",
+      "replay_url": "",
+      "replay_date": "2026-09-23",
+      "replay_date_source": "live-api-date",
+      "segment_index": 7,
+      "start_time": "",
+      "end_time": "",
+      "lyric_excerpt": "reaction cluster #1 窗口内；分P 累计时长轴推定",
+      "song_search_query": "愛して愛して愛して",
+      "song_resolution_method": "song-cut-collection-chapter",
+      "song_name": "愛して愛して愛して",
+      "display_song_name": "愛して愛して愛して",
+      "artist": "きくお / 初音ミク",
+      "artist_search": "きくお 愛して愛して愛して 初音ミク",
+      "feat_artist": "",
+      "language": "日文",
+      "tone": "",
+      "status_labels": [
+        "歌回",
+        "歌切合集复核"
+      ],
+      "display_version": "",
+      "type": "Vocaloid、J-Pop",
+      "remark": "UP 桐人今天睡大觉《2026.09.23练歌歌切合集》P7",
+      "identification": "",
+      "cut_link": "https://www.bilibili.com/video/BV1ouhW6GEoD/?p=7",
+      "confidence": 0.9,
+      "row_key": "愛して愛して愛して",
+      "search_name": "",
+      "resolution_candidates": [
+        {
+          "title": "2026.09.23练歌歌切合集 P7 愛して愛して愛して",
+          "url": "https://www.bilibili.com/video/BV1ouhW6GEoD/?p=7",
+          "snippet": "合集 P7，时长 4:10"
+        }
+      ]
+    },
+    {
+      "replay_id": "live:d385a7ed-2688-46d9-996f-de676c2f8ddd",
+      "replay_title": "【小松绿Viridis】嘘 2026-09-23",
+      "replay_url": "",
+      "replay_date": "2026-09-23",
+      "replay_date_source": "live-api-date",
+      "segment_index": 8,
+      "start_time": "00:36:07",
+      "end_time": "",
+      "lyric_excerpt": "00:36:07 弹幕「愛言葉来了」即时识别；P1-P8 累计 34:17，锚点时间吻合",
+      "song_search_query": "愛言葉",
+      "song_resolution_method": "song-cut-collection-chapter",
+      "song_name": "愛言葉",
+      "display_song_name": "愛言葉",
+      "artist": "DECO*27 / 初音ミク",
+      "artist_search": "DECO*27 愛言葉 初音ミク",
+      "feat_artist": "",
+      "language": "日文",
+      "tone": "",
+      "status_labels": [
+        "歌回",
+        "歌切合集复核"
+      ],
+      "display_version": "",
+      "type": "Vocaloid、J-Pop",
+      "remark": "UP 桐人今天睡大觉《2026.09.23练歌歌切合集》P8；DECO*27 名曲",
+      "identification": "",
+      "cut_link": "https://www.bilibili.com/video/BV1ouhW6GEoD/?p=8",
+      "confidence": 0.94,
+      "row_key": "愛言葉",
+      "search_name": "",
+      "resolution_candidates": [
+        {
+          "title": "2026.09.23练歌歌切合集 P8 愛言葉",
+          "url": "https://www.bilibili.com/video/BV1ouhW6GEoD/?p=8",
+          "snippet": "合集 P8，时长 4:28"
+        }
+      ]
+    },
+    {
+      "replay_id": "live:d385a7ed-2688-46d9-996f-de676c2f8ddd",
+      "replay_title": "【小松绿Viridis】嘘 2026-09-23",
+      "replay_url": "",
+      "replay_date": "2026-09-23",
+      "replay_date_source": "live-api-date",
+      "segment_index": 9,
+      "start_time": "",
+      "end_time": "",
+      "lyric_excerpt": "reaction cluster #1 窗口内；分P 累计时长轴推定",
+      "song_search_query": "ゴーストルール",
+      "song_resolution_method": "song-cut-collection-chapter",
+      "song_name": "ゴーストルール",
+      "display_song_name": "ゴーストルール",
+      "artist": "mafumafu（原曲 DECO*27 / 初音ミク）",
+      "artist_search": "ゴーストルール DECO*27 初音ミク",
+      "feat_artist": "",
+      "language": "日文",
+      "tone": "",
+      "status_labels": [
+        "歌回",
+        "歌切合集复核"
+      ],
+      "display_version": "",
+      "type": "Vocaloid、翻唱",
+      "remark": "UP 桐人今天睡大觉《2026.09.23练歌歌切合集》P9；原曲为 DECO*27 feat. 初音ミク 的 VOCALOID 曲，分P 标注 mafumafu 翻唱版本参照",
+      "identification": "",
+      "cut_link": "https://www.bilibili.com/video/BV1ouhW6GEoD/?p=9",
+      "confidence": 0.9,
+      "row_key": "ゴーストルール",
+      "search_name": "",
+      "resolution_candidates": [
+        {
+          "title": "2026.09.23练歌歌切合集 P9 ゴーストルール",
+          "url": "https://www.bilibili.com/video/BV1ouhW6GEoD/?p=9",
+          "snippet": "合集 P9，时长 2:11"
+        }
+      ]
+    },
+    {
+      "replay_id": "live:d385a7ed-2688-46d9-996f-de676c2f8ddd",
+      "replay_title": "【小松绿Viridis】嘘 2026-09-23",
+      "replay_url": "",
+      "replay_date": "2026-09-23",
+      "replay_date_source": "live-api-date",
+      "segment_index": 10,
+      "start_time": "",
+      "end_time": "",
+      "lyric_excerpt": "reaction cluster #1 窗口内；分P 累计时长轴推定",
+      "song_search_query": "独りんぼエンヴィー",
+      "song_resolution_method": "song-cut-collection-chapter",
+      "song_name": "独りんぼエンヴィー",
+      "display_song_name": "独りんぼエンヴィー",
+      "artist": "koyori / 初音ミク",
+      "artist_search": "koyori 独りんぼエンヴィー 初音ミク",
+      "feat_artist": "",
+      "language": "日文",
+      "tone": "",
+      "status_labels": [
+        "歌回",
+        "歌切合集复核"
+      ],
+      "display_version": "",
+      "type": "Vocaloid、J-Pop",
+      "remark": "UP 桐人今天睡大觉《2026.09.23练歌歌切合集》P10",
+      "identification": "",
+      "cut_link": "https://www.bilibili.com/video/BV1ouhW6GEoD/?p=10",
+      "confidence": 0.9,
+      "row_key": "独りんぼエンヴィー",
+      "search_name": "",
+      "resolution_candidates": [
+        {
+          "title": "2026.09.23练歌歌切合集 P10 独りんぼエンヴィー",
+          "url": "https://www.bilibili.com/video/BV1ouhW6GEoD/?p=10",
+          "snippet": "合集 P10，时长 3:24"
+        }
+      ]
+    },
+    {
+      "replay_id": "live:d385a7ed-2688-46d9-996f-de676c2f8ddd",
+      "replay_title": "【小松绿Viridis】嘘 2026-09-23",
+      "replay_url": "",
+      "replay_date": "2026-09-23",
+      "replay_date_source": "live-api-date",
+      "segment_index": 11,
+      "start_time": "",
+      "end_time": "",
+      "lyric_excerpt": "reaction cluster #1 窗口内；分P 累计时长轴推定",
+      "song_search_query": "恋愛裁判",
+      "song_resolution_method": "song-cut-collection-chapter",
+      "song_name": "恋愛裁判",
+      "display_song_name": "恋愛裁判",
+      "artist": "40mP / 初音ミク",
+      "artist_search": "40mP 恋愛裁判 初音ミク",
+      "feat_artist": "",
+      "language": "日文",
+      "tone": "",
+      "status_labels": [
+        "歌回",
+        "歌切合集复核"
+      ],
+      "display_version": "",
+      "type": "Vocaloid、J-Pop",
+      "remark": "UP 桐人今天睡大觉《2026.09.23练歌歌切合集》P11",
+      "identification": "",
+      "cut_link": "https://www.bilibili.com/video/BV1ouhW6GEoD/?p=11",
+      "confidence": 0.9,
+      "row_key": "恋愛裁判",
+      "search_name": "",
+      "resolution_candidates": [
+        {
+          "title": "2026.09.23练歌歌切合集 P11 恋愛裁判",
+          "url": "https://www.bilibili.com/video/BV1ouhW6GEoD/?p=11",
+          "snippet": "合集 P11，时长 3:46"
+        }
+      ]
+    },
+    {
+      "replay_id": "live:d385a7ed-2688-46d9-996f-de676c2f8ddd",
+      "replay_title": "【小松绿Viridis】嘘 2026-09-23",
+      "replay_url": "",
+      "replay_date": "2026-09-23",
+      "replay_date_source": "live-api-date",
+      "segment_index": 12,
+      "start_time": "",
+      "end_time": "",
+      "lyric_excerpt": "reaction cluster #1 窗口内；分P 累计时长轴推定",
+      "song_search_query": "歌鳥風月",
+      "song_resolution_method": "song-cut-collection-chapter",
+      "song_name": "歌鳥風月",
+      "display_song_name": "歌鳥風月",
+      "artist": "Aimer",
+      "artist_search": "Aimer 歌鳥風月",
+      "feat_artist": "",
+      "language": "日文",
+      "tone": "",
+      "status_labels": [
+        "歌回",
+        "歌切合集复核"
+      ],
+      "display_version": "",
+      "type": "J-Pop、抒情",
+      "remark": "UP 桐人今天睡大觉《2026.09.23练歌歌切合集》P12；分P 时长 8:50 显著长于原曲单曲版（~4:48），可能含完整/加长演绎",
+      "identification": "",
+      "cut_link": "https://www.bilibili.com/video/BV1ouhW6GEoD/?p=12",
+      "confidence": 0.9,
+      "row_key": "歌鳥風月",
+      "search_name": "",
+      "resolution_candidates": [
+        {
+          "title": "2026.09.23练歌歌切合集 P12 歌鳥風月",
+          "url": "https://www.bilibili.com/video/BV1ouhW6GEoD/?p=12",
+          "snippet": "合集 P12，时长 8:50"
+        }
+      ]
+    },
+    {
+      "replay_id": "live:d385a7ed-2688-46d9-996f-de676c2f8ddd",
+      "replay_title": "【小松绿Viridis】嘘 2026-09-23",
+      "replay_url": "",
+      "replay_date": "2026-09-23",
+      "replay_date_source": "live-api-date",
+      "segment_index": 13,
+      "start_time": "",
+      "end_time": "",
+      "lyric_excerpt": "reaction cluster #1 窗口内；分P 累计时长轴推定",
+      "song_search_query": "ECHO",
+      "song_resolution_method": "song-cut-collection-chapter",
+      "song_name": "ECHO",
+      "display_song_name": "ECHO（歌ってみた）",
+      "artist": "+α/あるふぁきゅん。（原曲 Crusher-P）",
+      "artist_search": "ECHO Crusher-P VOCALOID",
+      "feat_artist": "",
+      "language": "英文",
+      "tone": "",
+      "status_labels": [
+        "歌回",
+        "歌切合集复核"
+      ],
+      "display_version": "",
+      "type": "Vocaloid、翻唱",
+      "remark": "UP 桐人今天睡大觉《2026.09.23练歌歌切合集》P13；原曲为 Crusher-P 创作的英文 VOCALOID 曲（GUMI 演唱），分P 标注 +α/あるふぁきゅん。翻唱版本参照",
+      "identification": "",
+      "cut_link": "https://www.bilibili.com/video/BV1ouhW6GEoD/?p=13",
+      "confidence": 0.9,
+      "row_key": "ECHO",
+      "search_name": "",
+      "resolution_candidates": [
+        {
+          "title": "2026.09.23练歌歌切合集 P13 ECHO",
+          "url": "https://www.bilibili.com/video/BV1ouhW6GEoD/?p=13",
+          "snippet": "合集 P13，时长 1:59"
+        }
+      ]
+    },
+    {
+      "replay_id": "live:d385a7ed-2688-46d9-996f-de676c2f8ddd",
+      "replay_title": "【小松绿Viridis】嘘 2026-09-23",
+      "replay_url": "",
+      "replay_date": "2026-09-23",
+      "replay_date_source": "live-api-date",
+      "segment_index": 14,
+      "start_time": "",
+      "end_time": "",
+      "lyric_excerpt": "reaction cluster #1 窗口内；分P 累计时长轴推定",
+      "song_search_query": "からくりピエロ",
+      "song_resolution_method": "song-cut-collection-chapter",
+      "song_name": "からくりピエロ",
+      "display_song_name": "からくりピエロ",
+      "artist": "40mP / 初音ミク",
+      "artist_search": "40mP からくりピエロ 初音ミク",
+      "feat_artist": "",
+      "language": "日文",
+      "tone": "",
+      "status_labels": [
+        "歌回",
+        "歌切合集复核"
+      ],
+      "display_version": "",
+      "type": "Vocaloid、J-Pop",
+      "remark": "UP 桐人今天睡大觉《2026.09.23练歌歌切合集》P14",
+      "identification": "",
+      "cut_link": "https://www.bilibili.com/video/BV1ouhW6GEoD/?p=14",
+      "confidence": 0.9,
+      "row_key": "からくりピエロ",
+      "search_name": "",
+      "resolution_candidates": [
+        {
+          "title": "2026.09.23练歌歌切合集 P14 からくりピエロ",
+          "url": "https://www.bilibili.com/video/BV1ouhW6GEoD/?p=14",
+          "snippet": "合集 P14，时长 1:57"
+        }
+      ]
+    },
+    {
+      "replay_id": "live:d385a7ed-2688-46d9-996f-de676c2f8ddd",
+      "replay_title": "【小松绿Viridis】嘘 2026-09-23",
+      "replay_url": "",
+      "replay_date": "2026-09-23",
+      "replay_date_source": "live-api-date",
+      "segment_index": 15,
+      "start_time": "",
+      "end_time": "",
+      "lyric_excerpt": "reaction cluster #1 窗口内；分P 累计时长轴推定",
+      "song_search_query": "桜の季節",
+      "song_resolution_method": "song-cut-collection-chapter",
+      "song_name": "桜の季節",
+      "display_song_name": "桜の季節",
+      "artist": "ゆうゆ / 初音ミク",
+      "artist_search": "ゆうゆ 桜の季節 初音ミク",
+      "feat_artist": "",
+      "language": "日文",
+      "tone": "",
+      "status_labels": [
+        "歌回",
+        "歌切合集复核"
+      ],
+      "display_version": "",
+      "type": "Vocaloid、J-Pop",
+      "remark": "UP 桐人今天睡大觉《2026.09.23练歌歌切合集》P15",
+      "identification": "",
+      "cut_link": "https://www.bilibili.com/video/BV1ouhW6GEoD/?p=15",
+      "confidence": 0.9,
+      "row_key": "桜の季節",
+      "search_name": "",
+      "resolution_candidates": [
+        {
+          "title": "2026.09.23练歌歌切合集 P15 桜の季節",
+          "url": "https://www.bilibili.com/video/BV1ouhW6GEoD/?p=15",
+          "snippet": "合集 P15，时长 4:31"
+        }
+      ]
+    },
+    {
+      "replay_id": "live:d385a7ed-2688-46d9-996f-de676c2f8ddd",
+      "replay_title": "【小松绿Viridis】嘘 2026-09-23",
+      "replay_url": "",
+      "replay_date": "2026-09-23",
+      "replay_date_source": "live-api-date",
+      "segment_index": 16,
+      "start_time": "",
+      "end_time": "",
+      "lyric_excerpt": "reaction cluster #1 窗口内；分P 累计时长轴推定",
+      "song_search_query": "Sincerely",
+      "song_resolution_method": "song-cut-collection-chapter",
+      "song_name": "Sincerely",
+      "display_song_name": "Sincerely",
+      "artist": "TRUE",
+      "artist_search": "TRUE Sincerely ヴァイオレット・エヴァーガーデン",
+      "feat_artist": "",
+      "language": "日文",
+      "tone": "",
+      "status_labels": [
+        "歌回",
+        "歌切合集复核"
+      ],
+      "display_version": "",
+      "type": "动漫、J-Pop",
+      "remark": "UP 桐人今天睡大觉《2026.09.23练歌歌切合集》P16；《紫罗兰永恒花园》TV 动画 OP（TRUE 演唱）",
+      "identification": "",
+      "cut_link": "https://www.bilibili.com/video/BV1ouhW6GEoD/?p=16",
+      "confidence": 0.9,
+      "row_key": "Sincerely",
+      "search_name": "",
+      "resolution_candidates": [
+        {
+          "title": "2026.09.23练歌歌切合集 P16 Sincerely",
+          "url": "https://www.bilibili.com/video/BV1ouhW6GEoD/?p=16",
+          "snippet": "合集 P16，时长 4:35"
+        }
+      ]
+    },
+    {
+      "replay_id": "live:d385a7ed-2688-46d9-996f-de676c2f8ddd",
+      "replay_title": "【小松绿Viridis】嘘 2026-09-23",
+      "replay_url": "",
+      "replay_date": "2026-09-23",
+      "replay_date_source": "live-api-date",
+      "segment_index": 17,
+      "start_time": "01:25:13",
+      "end_time": "",
+      "lyric_excerpt": "01:25:13 弹幕「少女未遂」即时识别；reaction cluster #4 窗口（01:08:08-01:40:47）",
+      "song_search_query": "少女未遂",
+      "song_resolution_method": "song-cut-collection-chapter",
+      "song_name": "少女未遂",
+      "display_song_name": "少女未遂",
+      "artist": "古墳P / 巡音ルカ・初音ミク",
+      "artist_search": "古墳P 少女未遂 巡音ルカ",
+      "feat_artist": "",
+      "language": "日文",
+      "tone": "",
+      "status_labels": [
+        "歌回",
+        "歌切合集复核"
+      ],
+      "display_version": "",
+      "type": "Vocaloid、J-Pop",
+      "remark": "UP 桐人今天睡大觉《2026.09.23练歌歌切合集》P17；古墳P 创作的双声道名曲",
+      "identification": "",
+      "cut_link": "https://www.bilibili.com/video/BV1ouhW6GEoD/?p=17",
+      "confidence": 0.94,
+      "row_key": "少女未遂",
+      "search_name": "",
+      "resolution_candidates": [
+        {
+          "title": "2026.09.23练歌歌切合集 P17 少女未遂",
+          "url": "https://www.bilibili.com/video/BV1ouhW6GEoD/?p=17",
+          "snippet": "合集 P17，时长 6:53"
+        }
+      ]
+    },
+    {
+      "replay_id": "live:d385a7ed-2688-46d9-996f-de676c2f8ddd",
+      "replay_title": "【小松绿Viridis】嘘 2026-09-23",
+      "replay_url": "",
+      "replay_date": "2026-09-23",
+      "replay_date_source": "live-api-date",
+      "segment_index": 18,
+      "start_time": "",
+      "end_time": "",
+      "lyric_excerpt": "reaction cluster #4 窗口（01:08:08-01:40:47）内；分P 累计时长轴推定",
+      "song_search_query": "しかばねの踊り",
+      "song_resolution_method": "song-cut-collection-chapter",
+      "song_name": "しかばねの踊り",
+      "display_song_name": "しかばねの踊り",
+      "artist": "きくお / 初音ミク",
+      "artist_search": "きくお しかばねの踊り 初音ミク",
+      "feat_artist": "",
+      "language": "日文",
+      "tone": "",
+      "status_labels": [
+        "歌回",
+        "歌切合集复核"
+      ],
+      "display_version": "",
+      "type": "Vocaloid、J-Pop",
+      "remark": "UP 桐人今天睡大觉《2026.09.23练歌歌切合集》P18",
+      "identification": "",
+      "cut_link": "https://www.bilibili.com/video/BV1ouhW6GEoD/?p=18",
+      "confidence": 0.9,
+      "row_key": "しかばねの踊り",
+      "search_name": "",
+      "resolution_candidates": [
+        {
+          "title": "2026.09.23练歌歌切合集 P18 しかばねの踊り",
+          "url": "https://www.bilibili.com/video/BV1ouhW6GEoD/?p=18",
+          "snippet": "合集 P18，时长 7:36"
+        }
+      ]
+    },
+    {
+      "replay_id": "live:d385a7ed-2688-46d9-996f-de676c2f8ddd",
+      "replay_title": "【小松绿Viridis】嘘 2026-09-23",
+      "replay_url": "",
+      "replay_date": "2026-09-23",
+      "replay_date_source": "live-api-date",
+      "segment_index": 19,
+      "start_time": "",
+      "end_time": "",
+      "lyric_excerpt": "reaction cluster #4 窗口（01:08:08-01:40:47）内；练歌场末曲",
+      "song_search_query": "月灯りと氷晶核",
+      "song_resolution_method": "song-cut-collection-chapter",
+      "song_name": "月灯りと氷晶核",
+      "display_song_name": "月灯りと氷晶核",
+      "artist": "一二三 / 初音ミク",
+      "artist_search": "一二三 月灯りと氷晶核 初音ミク",
+      "feat_artist": "",
+      "language": "日文",
+      "tone": "",
+      "status_labels": [
+        "歌回",
+        "歌切合集复核"
+      ],
+      "display_version": "",
+      "type": "Vocaloid、J-Pop",
+      "remark": "UP 桐人今天睡大觉《2026.09.23练歌歌切合集》P19，练歌收尾曲",
+      "identification": "",
+      "cut_link": "https://www.bilibili.com/video/BV1ouhW6GEoD/?p=19",
+      "confidence": 0.9,
+      "row_key": "月灯りと氷晶核",
+      "search_name": "",
+      "resolution_candidates": [
+        {
+          "title": "2026.09.23练歌歌切合集 P19 月灯りと氷晶核",
+          "url": "https://www.bilibili.com/video/BV1ouhW6GEoD/?p=19",
+          "snippet": "合集 P19，时长 5:28"
         }
       ]
     }

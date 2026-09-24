@@ -1,12 +1,12 @@
 {
   "roomKey": "xiaosonglu",
   "roomId": "1727071052",
-  "generatedAt": "2026-09-20T04:42:37.579Z",
+  "generatedAt": "2026-09-24T02:04:57.970Z",
   "source": "local-replay-ingestion",
   "latest": {
     "year": "2026",
     "month": "09",
-    "day": "19"
+    "day": "23"
   },
   "dateTree": {
     "2026": {
@@ -15,6 +15,7 @@
         "16": 1,
         "17": 14,
         "19": 13,
+        "23": 19,
         "08": 29,
         "03": 21
       },
@@ -4113,6 +4114,350 @@
         "lyric_excerpt": "歌词窗口 02:00:01~02:01:36（lyric cluster #14）「你喜欢的音乐和 电影都去搜索」「每一次看社交软件时 都会给你点赞 （想吸引你的注意）」「无时无刻都在思考你的事情 一边妄想着一边紧紧地抱住枕头」；安可段 reaction cluster #15（02:02:18~02:09:15）；词窗起点+分P时长 4:01 推得结束 02:04:01",
         "song_resolution_method": "song-cut-collection-chapter",
         "cut_link": "https://www.bilibili.com/video/BV1rZe86yE49/?p=13"
+      }
+    ],
+    "2026-09-23": [
+      {
+        "song_name": "花に亡霊",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "ヨルシカ",
+        "replay_id": "live:d385a7ed-2688-46d9-996f-de676c2f8ddd",
+        "replay_title": "【小松绿Viridis】嘘 2026-09-23",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "花に亡霊",
+        "lyric_excerpt": "reaction cluster #1 窗口（00:00:53-01:05:52）内；分P 累计时长轴：P1 结束于约 00:04:53",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1ouhW6GEoD/?p=2"
+      },
+      {
+        "song_name": "啄木鳥",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "ヨルシカ",
+        "replay_id": "live:d385a7ed-2688-46d9-996f-de676c2f8ddd",
+        "replay_title": "【小松绿Viridis】嘘 2026-09-23",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "啄木鳥",
+        "lyric_excerpt": "reaction cluster #1 窗口内；分P 累计时长轴推定",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1ouhW6GEoD/?p=3"
+      },
+      {
+        "song_name": "花と水飴、最終電車",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "n-buna / 初音ミク",
+        "replay_id": "live:d385a7ed-2688-46d9-996f-de676c2f8ddd",
+        "replay_title": "【小松绿Viridis】嘘 2026-09-23",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "花と水飴、最終電車",
+        "lyric_excerpt": "reaction cluster #1 窗口内；分P 累计时长轴推定",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1ouhW6GEoD/?p=4"
+      },
+      {
+        "song_name": "妄想感傷代償連盟",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "25時、ナイトコードで。 / 初音ミク",
+        "replay_id": "live:d385a7ed-2688-46d9-996f-de676c2f8ddd",
+        "replay_title": "【小松绿Viridis】嘘 2026-09-23",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "妄想感傷代償連盟",
+        "lyric_excerpt": "01:14:59 弹幕「绿神，这首pjsk里ln的翻唱特别好听」——观众以 Project SEKAI 视角讨论本曲（Leo/need 翻唱版本）；reaction cluster #4 窗口（01:08:08-01:40:47）",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1ouhW6GEoD/?p=6"
+      },
+      {
+        "song_name": "愛して愛して愛して",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "きくお / 初音ミク",
+        "replay_id": "live:d385a7ed-2688-46d9-996f-de676c2f8ddd",
+        "replay_title": "【小松绿Viridis】嘘 2026-09-23",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "愛して愛して愛して",
+        "lyric_excerpt": "reaction cluster #1 窗口内；分P 累计时长轴推定",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1ouhW6GEoD/?p=7"
+      },
+      {
+        "song_name": "ゴーストルール",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "mafumafu（原曲 DECO*27 / 初音ミク）",
+        "replay_id": "live:d385a7ed-2688-46d9-996f-de676c2f8ddd",
+        "replay_title": "【小松绿Viridis】嘘 2026-09-23",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "ゴーストルール",
+        "lyric_excerpt": "reaction cluster #1 窗口内；分P 累计时长轴推定",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1ouhW6GEoD/?p=9"
+      },
+      {
+        "song_name": "独りんぼエンヴィー",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "koyori / 初音ミク",
+        "replay_id": "live:d385a7ed-2688-46d9-996f-de676c2f8ddd",
+        "replay_title": "【小松绿Viridis】嘘 2026-09-23",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "独りんぼエンヴィー",
+        "lyric_excerpt": "reaction cluster #1 窗口内；分P 累计时长轴推定",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1ouhW6GEoD/?p=10"
+      },
+      {
+        "song_name": "恋愛裁判",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "40mP / 初音ミク",
+        "replay_id": "live:d385a7ed-2688-46d9-996f-de676c2f8ddd",
+        "replay_title": "【小松绿Viridis】嘘 2026-09-23",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "恋愛裁判",
+        "lyric_excerpt": "reaction cluster #1 窗口内；分P 累计时长轴推定",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1ouhW6GEoD/?p=11"
+      },
+      {
+        "song_name": "歌鳥風月",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "Aimer",
+        "replay_id": "live:d385a7ed-2688-46d9-996f-de676c2f8ddd",
+        "replay_title": "【小松绿Viridis】嘘 2026-09-23",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "歌鳥風月",
+        "lyric_excerpt": "reaction cluster #1 窗口内；分P 累计时长轴推定",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1ouhW6GEoD/?p=12"
+      },
+      {
+        "song_name": "ECHO（歌ってみた）",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "+α/あるふぁきゅん。（原曲 Crusher-P）",
+        "replay_id": "live:d385a7ed-2688-46d9-996f-de676c2f8ddd",
+        "replay_title": "【小松绿Viridis】嘘 2026-09-23",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "ECHO",
+        "lyric_excerpt": "reaction cluster #1 窗口内；分P 累计时长轴推定",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1ouhW6GEoD/?p=13"
+      },
+      {
+        "song_name": "からくりピエロ",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "40mP / 初音ミク",
+        "replay_id": "live:d385a7ed-2688-46d9-996f-de676c2f8ddd",
+        "replay_title": "【小松绿Viridis】嘘 2026-09-23",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "からくりピエロ",
+        "lyric_excerpt": "reaction cluster #1 窗口内；分P 累计时长轴推定",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1ouhW6GEoD/?p=14"
+      },
+      {
+        "song_name": "桜の季節",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "ゆうゆ / 初音ミク",
+        "replay_id": "live:d385a7ed-2688-46d9-996f-de676c2f8ddd",
+        "replay_title": "【小松绿Viridis】嘘 2026-09-23",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "桜の季節",
+        "lyric_excerpt": "reaction cluster #1 窗口内；分P 累计时长轴推定",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1ouhW6GEoD/?p=15"
+      },
+      {
+        "song_name": "Sincerely",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "TRUE",
+        "replay_id": "live:d385a7ed-2688-46d9-996f-de676c2f8ddd",
+        "replay_title": "【小松绿Viridis】嘘 2026-09-23",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "Sincerely",
+        "lyric_excerpt": "reaction cluster #1 窗口内；分P 累计时长轴推定",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1ouhW6GEoD/?p=16"
+      },
+      {
+        "song_name": "しかばねの踊り",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "きくお / 初音ミク",
+        "replay_id": "live:d385a7ed-2688-46d9-996f-de676c2f8ddd",
+        "replay_title": "【小松绿Viridis】嘘 2026-09-23",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "しかばねの踊り",
+        "lyric_excerpt": "reaction cluster #4 窗口（01:08:08-01:40:47）内；分P 累计时长轴推定",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1ouhW6GEoD/?p=18"
+      },
+      {
+        "song_name": "月灯りと氷晶核",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "一二三 / 初音ミク",
+        "replay_id": "live:d385a7ed-2688-46d9-996f-de676c2f8ddd",
+        "replay_title": "【小松绿Viridis】嘘 2026-09-23",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "月灯りと氷晶核",
+        "lyric_excerpt": "reaction cluster #4 窗口（01:08:08-01:40:47）内；练歌场末曲",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1ouhW6GEoD/?p=19"
+      },
+      {
+        "song_name": "嘘月",
+        "sing_time": "00:01:00",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "ヨルシカ",
+        "replay_id": "live:d385a7ed-2688-46d9-996f-de676c2f8ddd",
+        "replay_title": "【小松绿Viridis】嘘 2026-09-23",
+        "replay_url": "",
+        "start_time": "00:01:00",
+        "end_time": "",
+        "row_key": "嘘月",
+        "lyric_excerpt": "00:00:53 弹幕「嘘月好耶」即时识别开场第一曲（reaction cluster #1 窗口 00:00:53-01:05:52）",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1ouhW6GEoD/?p=1"
+      },
+      {
+        "song_name": "打上花火",
+        "sing_time": "00:22:03",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "Daoko / 米津玄師",
+        "replay_id": "live:d385a7ed-2688-46d9-996f-de676c2f8ddd",
+        "replay_title": "【小松绿Viridis】嘘 2026-09-23",
+        "replay_url": "",
+        "start_time": "00:22:03",
+        "end_time": "",
+        "row_key": "打上花火",
+        "lyric_excerpt": "00:22:03 弹幕「你还会打上花火」即时识别；P1-P5 累计时长 21:12，弹幕时间与累计轴吻合（时间轴连续性验证通过）",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1ouhW6GEoD/?p=5"
+      },
+      {
+        "song_name": "愛言葉",
+        "sing_time": "00:36:07",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "DECO*27 / 初音ミク",
+        "replay_id": "live:d385a7ed-2688-46d9-996f-de676c2f8ddd",
+        "replay_title": "【小松绿Viridis】嘘 2026-09-23",
+        "replay_url": "",
+        "start_time": "00:36:07",
+        "end_time": "",
+        "row_key": "愛言葉",
+        "lyric_excerpt": "00:36:07 弹幕「愛言葉来了」即时识别；P1-P8 累计 34:17，锚点时间吻合",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1ouhW6GEoD/?p=8"
+      },
+      {
+        "song_name": "少女未遂",
+        "sing_time": "01:25:13",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "古墳P / 巡音ルカ・初音ミク",
+        "replay_id": "live:d385a7ed-2688-46d9-996f-de676c2f8ddd",
+        "replay_title": "【小松绿Viridis】嘘 2026-09-23",
+        "replay_url": "",
+        "start_time": "01:25:13",
+        "end_time": "",
+        "row_key": "少女未遂",
+        "lyric_excerpt": "01:25:13 弹幕「少女未遂」即时识别；reaction cluster #4 窗口（01:08:08-01:40:47）",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1ouhW6GEoD/?p=17"
       }
     ]
   }
