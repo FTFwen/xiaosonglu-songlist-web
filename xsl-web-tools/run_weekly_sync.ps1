@@ -1,4 +1,4 @@
-﻿# 周表定时同步 runner：抓 B 站置顶周表 → 有更新则提交、推送、双部署、验证、通知
+# 周表定时同步 runner：抓 B 站置顶周表 → 有更新则提交、推送、双部署、验证、通知
 # 由 install_weekly_sync.ps1 注册的 Windows 计划任务调用，也可手动运行。
 [CmdletBinding()]
 param(
@@ -62,7 +62,10 @@ try {
     }
 
     # 有更新：提交推送
-    $manifest = Get-Content (Join-Path $rootPath 'workshop\data\weekly\manifest.json') -Raw | ConvertFrom-Json
+    # -Encoding UTF8 必需：manifest.json 由 node 以 UTF-8 无 BOM 写出，而 Windows PowerShell 5.1
+    # 的 Get-Content 默认按 ANSI 解码，会把中文标题读成乱码并让 ConvertFrom-Json 直接抛错，
+    # 导致周表同步在“提交推送”这一步中止（周表图片/清单已落盘但既没提交也没部署）。
+    $manifest = Get-Content (Join-Path $rootPath 'workshop\data\weekly\manifest.json') -Raw -Encoding UTF8 | ConvertFrom-Json
     $title = if ($manifest.title) { $manifest.title } else { '置顶更新' }
     git add -- workshop/assets/weekly workshop/data/weekly
     if ($LASTEXITCODE -ne 0) { throw "git add 失败 exit=$LASTEXITCODE" }

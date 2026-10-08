@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-11T09:18:37.608Z",
-  "fingerprint": "790d66e26201a731",
-  "title": "9.8置顶更新（休息日随机掉落电台）",
+  "updatedAt": "2026-10-08T02:00:19.546Z",
+  "fingerprint": "0ea778f3b2bb5df2",
+  "title": "10.6置顶更新（休息日随机掉落电台）",
   "pubTime": "8月17日",
   "dynamicId": "1237406371777871896",
   "dynamicUrl": "//www.bilibili.com/opus/1237406371777871896",
@@ -11,8 +11,8 @@
       "file": "current.jpg",
       "width": 1920,
       "height": 1080,
-      "bytes": 545151,
-      "sourceUrl": "http://i0.hdslb.com/bfs/new_dyn/f33ea718e539b1eecc8ba98f1462021e1891335475.jpg"
+      "bytes": 893698,
+      "sourceUrl": "http://i0.hdslb.com/bfs/new_dyn/feff3f11ee12fde85cabc01a016c6edf1891335475.jpg"
     }
   ]
 }
