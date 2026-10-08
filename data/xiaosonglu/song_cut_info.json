@@ -1,10 +1,10 @@
 {
   "roomKey": "xiaosonglu",
   "roomId": "1727071052",
-  "generatedAt": "2026-09-24T02:04:57.970Z",
+  "generatedAt": "2026-10-08T03:17:38.837Z",
   "source": "song-cut-title-index",
   "description": "每首歌对应的歌切切片标题（单曲歌切视频标题 / 合集分P标题），供前端歌切链接显示。",
-  "count": 228,
+  "count": 289,
   "cuts": {
     "（区）最终祈愿": {
       "title": "07_（区）最终祈愿 - 平行四界Quadimension, 星尘",
@@ -1145,6 +1145,311 @@
       "title": "19_月灯りと氷晶核 - 一二三, 初音ミク",
       "kind": "collection",
       "url": "https://www.bilibili.com/video/BV1ouhW6GEoD/?p=19"
+    },
+    "为谁而为": {
+      "title": "02_为谁而为 - COP, 洛天依Official",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1g1ah6REpb/?p=2"
+    },
+    "凉凉": {
+      "title": "03_凉凉 - 杨宗纬, 张碧晨",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1g1ah6REpb/?p=3"
+    },
+    "大鱼": {
+      "title": "04_大鱼 - 周深",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1g1ah6REpb/?p=4"
+    },
+    "∞ TIMEs": {
+      "title": "05_∞ TIMEs - 洛天依Official, 星葵77",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1g1ah6REpb/?p=5"
+    },
+    "白石溪": {
+      "title": "07_白石溪 - 乐正绫, Soda纯白, 洛天依Official",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1g1ah6REpb/?p=7"
+    },
+    "我可能放了假寒假": {
+      "title": "08_我可能放了假寒假 - PoKeR, 洛天依Official",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1g1ah6REpb/?p=8"
+    },
+    "干物女": {
+      "title": "09_干物女 - 三无Marblue",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1g1ah6REpb/?p=9"
+    },
+    "情深深雨蒙蒙": {
+      "title": "10_情深深雨蒙蒙 - 夏歆依",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1g1ah6REpb/?p=10"
+    },
+    "但愿人长久": {
+      "title": "11_但愿人长久 - 王菲",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1g1ah6REpb/?p=11"
+    },
+    "洛天依投食歌": {
+      "title": "12_洛天依投食歌 - 洛天依Official",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1g1ah6REpb/?p=12"
+    },
+    "千年食谱颂": {
+      "title": "13_千年食谱颂 - 洛天依Official",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1g1ah6REpb/?p=13"
+    },
+    "我的一个道姑朋友（第一遍）": {
+      "title": "14_我的一个道姑朋友1",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1g1ah6REpb/?p=14"
+    },
+    "我的一个道姑朋友（第二遍）": {
+      "title": "15_我的一个道姑朋友2",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1g1ah6REpb/?p=15"
+    },
+    "神的随波逐流": {
+      "title": "18_神的随波逐流 - 泠鸢yousa",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1g1ah6REpb/?p=18"
+    },
+    "红昭愿": {
+      "title": "19_红昭愿 - 音阙诗听",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1g1ah6REpb/?p=19"
+    },
+    "叹云兮": {
+      "title": "20_叹云兮 - 鞠婧祎",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1g1ah6REpb/?p=20"
+    },
+    "ローリンガール": {
+      "title": "21_ローリンガール",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1g1ah6REpb/?p=21"
+    },
+    "承天": {
+      "title": "23_承天 - 忘川风华录",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1g1ah6REpb/?p=23"
+    },
+    "沸雪煮相思": {
+      "title": "24_沸雪煮相思 - Newbiao好梦一场, 洛天依Official, 星尘infinity",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1g1ah6REpb/?p=24"
+    },
+    "我的心是不夜城": {
+      "title": "25_我的心是不夜城 - 泠鸢yousa",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1g1ah6REpb/?p=25"
+    },
+    "我的故事未写完": {
+      "title": "26_我的故事未写完 - 泠鸢Yousa",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1g1ah6REpb/?p=26"
+    },
+    "巡恋風": {
+      "title": "27_巡恋風 - Luna Safari",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1g1ah6REpb/?p=27"
+    },
+    "月下蝉": {
+      "title": "30_月下蝉 - 洛天依Official, 言和, PoKeR",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1g1ah6REpb/?p=30"
+    },
+    "Misty Memory (Night Version)": {
+      "title": "31_Misty Memory (Night Version) - 塞壬唱片-MSR, Elvin Shen, ZT, Erik Castro, David L",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1g1ah6REpb/?p=31"
+    },
+    "south wind": {
+      "title": "32_south wind - 三都",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1g1ah6REpb/?p=32"
+    },
+    "あの夢をなぞって": {
+      "title": "01_あの夢をなぞって - YOASOBI",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1UkaS6zEk3/?p=1"
+    },
+    "ダーリン": {
+      "title": "02_ダーリン - 須田景凪",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1UkaS6zEk3/?p=2"
+    },
+    "Grown-up's Paradise": {
+      "title": "06_Grown-up's Paradise - Mili, 塞壬唱片-MSR",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1UkaS6zEk3/?p=6"
+    },
+    "交织together": {
+      "title": "07_交织together - OriginGirls, 迟色, 舞雪, 饼饼Causa, 沈音音",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1UkaS6zEk3/?p=7"
+    },
+    "丑马": {
+      "title": "09_丑马 - ChiliChill乐团",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1UkaS6zEk3/?p=9"
+    },
+    "桃花诺": {
+      "title": "12_桃花诺  - G.M.E邓紫棋",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1UkaS6zEk3/?p=12"
+    },
+    "贝加尔湖畔": {
+      "title": "14_贝加尔湖畔 - 李健",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1UkaS6zEk3/?p=14"
+    },
+    "社畜烧酒": {
+      "title": "17_社畜烧酒 - ChiliChill乐团, 洛天依Official",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1UkaS6zEk3/?p=17"
+    },
+    "衡山路宛平路": {
+      "title": "18_衡山路宛平路 - ChiliChill乐团",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1UkaS6zEk3/?p=18"
+    },
+    "霞光": {
+      "title": "21_霞光 - 曲锦楠",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1UkaS6zEk3/?p=21"
+    },
+    "Melody": {
+      "title": "22_melody  - 陶喆",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1UkaS6zEk3/?p=22"
+    },
+    "好了现在可以哭了": {
+      "title": "24_好了现在可以哭了 - 停電前夜, 洛天依",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1UkaS6zEk3/?p=24"
+    },
+    "春天没有落花。": {
+      "title": "25_春天没有落花。 - raynodon",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1UkaS6zEk3/?p=25"
+    },
+    "达拉崩吧": {
+      "title": "27_达拉崩吧 - ilem, 洛天依Official, 言和",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1UkaS6zEk3/?p=27"
+    },
+    "冬日": {
+      "title": "冬日",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV18Jpw6mE82/?p=1"
+    },
+    "花园舞曲": {
+      "title": "花园舞曲",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV18Jpw6mE82/?p=2"
+    },
+    "永恒曲": {
+      "title": "永恒曲",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV18Jpw6mE82/?p=3"
+    },
+    "梦乡": {
+      "title": "梦乡",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV18Jpw6mE82/?p=4"
+    },
+    "春夏秋冬": {
+      "title": "春夏秋冬",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV18Jpw6mE82/?p=5"
+    },
+    "夏之回忆": {
+      "title": "夏之回忆",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV18Jpw6mE82/?p=6"
+    },
+    "双生花": {
+      "title": "双生花",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV18Jpw6mE82/?p=7"
+    },
+    "渊（Deep Down）": {
+      "title": "渊（Deep Down）",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV18Jpw6mE82/?p=8"
+    },
+    "恋爱告急": {
+      "title": "恋爱告急",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV18Jpw6mE82/?p=9"
+    },
+    "Little Wish": {
+      "title": "Little Wish",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV18Jpw6mE82/?p=10"
+    },
+    "Mystic Light Quest": {
+      "title": "‌Mystic Light Ques",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV18Jpw6mE82/?p=11"
+    },
+    "天文馆的猫": {
+      "title": "天文馆的猫",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV18Jpw6mE82/?p=12"
+    },
+    "朝汐": {
+      "title": "朝汐",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV18Jpw6mE82/?p=13"
+    },
+    "花月成双": {
+      "title": "花月成双",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV18Jpw6mE82/?p=14"
+    },
+    "小兔子乖乖": {
+      "title": "小兔子乖乖(半首）",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV18Jpw6mE82/?p=15"
+    },
+    "蜗牛与黄鹂鸟": {
+      "title": "蜗牛与黄鹂鸟（半首）",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV18Jpw6mE82/?p=16"
+    },
+    "小螺号": {
+      "title": "小螺号（半首）",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV18Jpw6mE82/?p=17"
+    },
+    "农夫渔夫": {
+      "title": "【绿の学歌|农夫渔夫】请给我一个周末的问候【小松绿viridis】",
+      "kind": "single",
+      "url": "https://www.bilibili.com/video/BV1suhR6CEpJ/"
+    },
+    "ハッピーエンド": {
+      "title": "【小松绿Viridis/自用】学歌回三战痛亲王金曲happy end，区了但是好舒服",
+      "kind": "single",
+      "url": "https://www.bilibili.com/video/BV1VahR6ZEay/"
+    },
+    "萤萤微光": {
+      "title": "萤萤微光",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1Pxa269EiF/?p=4"
+    },
+    "月が綺麗ねと言われたい!（第一遍）": {
+      "title": "月が綺麗ねと言われたい!",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1Pxa269EiF/?p=5"
+    },
+    "月が綺麗ねと言われたい!（第二遍）": {
+      "title": "月が綺麗ねと言われたい!2",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1Pxa269EiF/?p=7"
     }
   }
 }

@@ -1,21 +1,28 @@
 {
   "roomKey": "xiaosonglu",
   "roomId": "1727071052",
-  "generatedAt": "2026-09-24T02:04:57.970Z",
+  "generatedAt": "2026-10-08T03:17:38.837Z",
   "source": "local-replay-ingestion",
   "latest": {
     "year": "2026",
-    "month": "09",
-    "day": "23"
+    "month": "10",
+    "day": "06"
   },
   "dateTree": {
     "2026": {
+      "10": {
+        "06": 17,
+        "02": 33
+      },
       "09": {
         "13": 21,
         "16": 1,
         "17": 14,
         "19": 13,
+        "21": 1,
         "23": 19,
+        "26": 2,
+        "27": 34,
         "08": 29,
         "03": 21
       },
@@ -4116,6 +4123,26 @@
         "cut_link": "https://www.bilibili.com/video/BV1rZe86yE49/?p=13"
       }
     ],
+    "2026-09-21": [
+      {
+        "song_name": "あの夢をなぞって",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切复核"
+        ],
+        "artist": "YOASOBI",
+        "replay_id": "live:a9f69644-3410-48e4-b8e3-2cde99150275",
+        "replay_title": "【小松绿Viridis】半小时电话 2026-09-21",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "あの夢をなぞって",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1xqhq6hEYX/?p=2"
+      }
+    ],
     "2026-09-23": [
       {
         "song_name": "花に亡霊",
@@ -4458,6 +4485,1562 @@
         "lyric_excerpt": "01:25:13 弹幕「少女未遂」即时识别；reaction cluster #4 窗口（01:08:08-01:40:47）",
         "song_resolution_method": "song-cut-collection-chapter",
         "cut_link": "https://www.bilibili.com/video/BV1ouhW6GEoD/?p=17"
+      }
+    ],
+    "2026-09-26": [
+      {
+        "song_name": "农夫渔夫",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切复核"
+        ],
+        "artist": "大乔小乔",
+        "replay_id": "live:7cf1f23c-88cf-4334-9c55-a434d299ec2a",
+        "replay_title": "【小松绿Viridis】学歌来袭！ 2026-09-26",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "农夫渔夫",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-title",
+        "cut_link": "https://www.bilibili.com/video/BV1suhR6CEpJ/"
+      },
+      {
+        "song_name": "ハッピーエンド",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切复核"
+        ],
+        "artist": "back number",
+        "replay_id": "live:7cf1f23c-88cf-4334-9c55-a434d299ec2a",
+        "replay_title": "【小松绿Viridis】学歌来袭！ 2026-09-26",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "ハッピーエンド",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-title",
+        "cut_link": "https://www.bilibili.com/video/BV1VahR6ZEay/"
+      }
+    ],
+    "2026-09-27": [
+      {
+        "song_name": "霜雪千年",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "银临",
+        "replay_id": "live:80412b54-3b2e-45b6-b0fc-039908d74e13",
+        "replay_title": "【小松绿Viridis】歌杂吧好像是 2026-09-27",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "霜雪千年",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1g1ah6REpb/?p=1"
+      },
+      {
+        "song_name": "为谁而为",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "COP, 洛天依Official",
+        "replay_id": "live:80412b54-3b2e-45b6-b0fc-039908d74e13",
+        "replay_title": "【小松绿Viridis】歌杂吧好像是 2026-09-27",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "为谁而为",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1g1ah6REpb/?p=2"
+      },
+      {
+        "song_name": "凉凉",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "杨宗纬, 张碧晨",
+        "replay_id": "live:80412b54-3b2e-45b6-b0fc-039908d74e13",
+        "replay_title": "【小松绿Viridis】歌杂吧好像是 2026-09-27",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "凉凉",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1g1ah6REpb/?p=3"
+      },
+      {
+        "song_name": "大鱼",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "周深",
+        "replay_id": "live:80412b54-3b2e-45b6-b0fc-039908d74e13",
+        "replay_title": "【小松绿Viridis】歌杂吧好像是 2026-09-27",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "大鱼",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1g1ah6REpb/?p=4"
+      },
+      {
+        "song_name": "∞ TIMEs",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "洛天依Official, 星葵77",
+        "replay_id": "live:80412b54-3b2e-45b6-b0fc-039908d74e13",
+        "replay_title": "【小松绿Viridis】歌杂吧好像是 2026-09-27",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "∞ TIMEs",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1g1ah6REpb/?p=5"
+      },
+      {
+        "song_name": "月巷",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "星葵77, 乐正绫",
+        "replay_id": "live:80412b54-3b2e-45b6-b0fc-039908d74e13",
+        "replay_title": "【小松绿Viridis】歌杂吧好像是 2026-09-27",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "月巷",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1g1ah6REpb/?p=6"
+      },
+      {
+        "song_name": "白石溪",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "乐正绫, Soda纯白, 洛天依Official",
+        "replay_id": "live:80412b54-3b2e-45b6-b0fc-039908d74e13",
+        "replay_title": "【小松绿Viridis】歌杂吧好像是 2026-09-27",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "白石溪",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1g1ah6REpb/?p=7"
+      },
+      {
+        "song_name": "我可能放了假寒假",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "PoKeR, 洛天依Official",
+        "replay_id": "live:80412b54-3b2e-45b6-b0fc-039908d74e13",
+        "replay_title": "【小松绿Viridis】歌杂吧好像是 2026-09-27",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "我可能放了假寒假",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1g1ah6REpb/?p=8"
+      },
+      {
+        "song_name": "干物女",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "三无Marblue",
+        "replay_id": "live:80412b54-3b2e-45b6-b0fc-039908d74e13",
+        "replay_title": "【小松绿Viridis】歌杂吧好像是 2026-09-27",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "干物女",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1g1ah6REpb/?p=9"
+      },
+      {
+        "song_name": "情深深雨蒙蒙",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "夏歆依",
+        "replay_id": "live:80412b54-3b2e-45b6-b0fc-039908d74e13",
+        "replay_title": "【小松绿Viridis】歌杂吧好像是 2026-09-27",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "情深深雨蒙蒙",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1g1ah6REpb/?p=10"
+      },
+      {
+        "song_name": "但愿人长久",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "王菲",
+        "replay_id": "live:80412b54-3b2e-45b6-b0fc-039908d74e13",
+        "replay_title": "【小松绿Viridis】歌杂吧好像是 2026-09-27",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "但愿人长久",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1g1ah6REpb/?p=11"
+      },
+      {
+        "song_name": "洛天依投食歌",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "洛天依Official",
+        "replay_id": "live:80412b54-3b2e-45b6-b0fc-039908d74e13",
+        "replay_title": "【小松绿Viridis】歌杂吧好像是 2026-09-27",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "洛天依投食歌",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1g1ah6REpb/?p=12"
+      },
+      {
+        "song_name": "千年食谱颂",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "洛天依Official",
+        "replay_id": "live:80412b54-3b2e-45b6-b0fc-039908d74e13",
+        "replay_title": "【小松绿Viridis】歌杂吧好像是 2026-09-27",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "千年食谱颂",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1g1ah6REpb/?p=13"
+      },
+      {
+        "song_name": "我的一个道姑朋友",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "",
+        "replay_id": "live:80412b54-3b2e-45b6-b0fc-039908d74e13",
+        "replay_title": "【小松绿Viridis】歌杂吧好像是 2026-09-27",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "我的一个道姑朋友（第一遍）",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1g1ah6REpb/?p=14"
+      },
+      {
+        "song_name": "我的一个道姑朋友",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "",
+        "replay_id": "live:80412b54-3b2e-45b6-b0fc-039908d74e13",
+        "replay_title": "【小松绿Viridis】歌杂吧好像是 2026-09-27",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "我的一个道姑朋友（第二遍）",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1g1ah6REpb/?p=15"
+      },
+      {
+        "song_name": "遥相逢",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "小野道ono, 星尘",
+        "replay_id": "live:80412b54-3b2e-45b6-b0fc-039908d74e13",
+        "replay_title": "【小松绿Viridis】歌杂吧好像是 2026-09-27",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "遥相逢",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1g1ah6REpb/?p=16"
+      },
+      {
+        "song_name": "I LOVE U",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "阿良良木健, 洛天依Official",
+        "replay_id": "live:80412b54-3b2e-45b6-b0fc-039908d74e13",
+        "replay_title": "【小松绿Viridis】歌杂吧好像是 2026-09-27",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "I LOVE U",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1g1ah6REpb/?p=17"
+      },
+      {
+        "song_name": "神的随波逐流",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "泠鸢yousa",
+        "replay_id": "live:80412b54-3b2e-45b6-b0fc-039908d74e13",
+        "replay_title": "【小松绿Viridis】歌杂吧好像是 2026-09-27",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "神的随波逐流",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1g1ah6REpb/?p=18"
+      },
+      {
+        "song_name": "红昭愿",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "音阙诗听",
+        "replay_id": "live:80412b54-3b2e-45b6-b0fc-039908d74e13",
+        "replay_title": "【小松绿Viridis】歌杂吧好像是 2026-09-27",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "红昭愿",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1g1ah6REpb/?p=19"
+      },
+      {
+        "song_name": "叹云兮",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "鞠婧祎",
+        "replay_id": "live:80412b54-3b2e-45b6-b0fc-039908d74e13",
+        "replay_title": "【小松绿Viridis】歌杂吧好像是 2026-09-27",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "叹云兮",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1g1ah6REpb/?p=20"
+      },
+      {
+        "song_name": "ローリンガール",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "",
+        "replay_id": "live:80412b54-3b2e-45b6-b0fc-039908d74e13",
+        "replay_title": "【小松绿Viridis】歌杂吧好像是 2026-09-27",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "ローリンガール",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1g1ah6REpb/?p=21"
+      },
+      {
+        "song_name": "泼墨漓江",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "泠鸢Yousa",
+        "replay_id": "live:80412b54-3b2e-45b6-b0fc-039908d74e13",
+        "replay_title": "【小松绿Viridis】歌杂吧好像是 2026-09-27",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "泼墨漓江",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1g1ah6REpb/?p=22"
+      },
+      {
+        "song_name": "承天",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "忘川风华录",
+        "replay_id": "live:80412b54-3b2e-45b6-b0fc-039908d74e13",
+        "replay_title": "【小松绿Viridis】歌杂吧好像是 2026-09-27",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "承天",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1g1ah6REpb/?p=23"
+      },
+      {
+        "song_name": "沸雪煮相思",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "Newbiao好梦一场, 洛天依Official, 星尘infinity",
+        "replay_id": "live:80412b54-3b2e-45b6-b0fc-039908d74e13",
+        "replay_title": "【小松绿Viridis】歌杂吧好像是 2026-09-27",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "沸雪煮相思",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1g1ah6REpb/?p=24"
+      },
+      {
+        "song_name": "我的心是不夜城",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "泠鸢yousa",
+        "replay_id": "live:80412b54-3b2e-45b6-b0fc-039908d74e13",
+        "replay_title": "【小松绿Viridis】歌杂吧好像是 2026-09-27",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "我的心是不夜城",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1g1ah6REpb/?p=25"
+      },
+      {
+        "song_name": "我的故事未写完",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "泠鸢Yousa",
+        "replay_id": "live:80412b54-3b2e-45b6-b0fc-039908d74e13",
+        "replay_title": "【小松绿Viridis】歌杂吧好像是 2026-09-27",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "我的故事未写完",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1g1ah6REpb/?p=26"
+      },
+      {
+        "song_name": "巡恋風",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "Luna Safari",
+        "replay_id": "live:80412b54-3b2e-45b6-b0fc-039908d74e13",
+        "replay_title": "【小松绿Viridis】歌杂吧好像是 2026-09-27",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "巡恋風",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1g1ah6REpb/?p=27"
+      },
+      {
+        "song_name": "下等马",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "洛天依Official, ChiliChill乐团",
+        "replay_id": "live:80412b54-3b2e-45b6-b0fc-039908d74e13",
+        "replay_title": "【小松绿Viridis】歌杂吧好像是 2026-09-27",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "下等马",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1g1ah6REpb/?p=28"
+      },
+      {
+        "song_name": "プロポーズ",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "内緒のピアス, 可不",
+        "replay_id": "live:80412b54-3b2e-45b6-b0fc-039908d74e13",
+        "replay_title": "【小松绿Viridis】歌杂吧好像是 2026-09-27",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "プロポーズ",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1g1ah6REpb/?p=29"
+      },
+      {
+        "song_name": "月下蝉",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "洛天依Official, 言和, PoKeR",
+        "replay_id": "live:80412b54-3b2e-45b6-b0fc-039908d74e13",
+        "replay_title": "【小松绿Viridis】歌杂吧好像是 2026-09-27",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "月下蝉",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1g1ah6REpb/?p=30"
+      },
+      {
+        "song_name": "Misty Memory (Night Version)",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "塞壬唱片-MSR, Elvin Shen, ZT, Erik Castro, David L",
+        "replay_id": "live:80412b54-3b2e-45b6-b0fc-039908d74e13",
+        "replay_title": "【小松绿Viridis】歌杂吧好像是 2026-09-27",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "Misty Memory (Night Version)",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1g1ah6REpb/?p=31"
+      },
+      {
+        "song_name": "south wind",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "三都",
+        "replay_id": "live:80412b54-3b2e-45b6-b0fc-039908d74e13",
+        "replay_title": "【小松绿Viridis】歌杂吧好像是 2026-09-27",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "south wind",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1g1ah6REpb/?p=32"
+      },
+      {
+        "song_name": "世末积雨云",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "洛天依Official",
+        "replay_id": "live:80412b54-3b2e-45b6-b0fc-039908d74e13",
+        "replay_title": "【小松绿Viridis】歌杂吧好像是 2026-09-27",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "世末积雨云",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1g1ah6REpb/?p=33"
+      },
+      {
+        "song_name": "百里芭蕉百里花",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "平行四界Quadimension",
+        "replay_id": "live:80412b54-3b2e-45b6-b0fc-039908d74e13",
+        "replay_title": "【小松绿Viridis】歌杂吧好像是 2026-09-27",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "百里芭蕉百里花",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1g1ah6REpb/?p=34"
+      }
+    ],
+    "2026-10-02": [
+      {
+        "song_name": "あの夢をなぞって",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "YOASOBI",
+        "replay_id": "live:dc67a9ea-6da7-48f4-bd73-349976e92859",
+        "replay_title": "【小松绿Viridis】久违的唱唱歌 2026-10-02",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "あの夢をなぞって",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1UkaS6zEk3/?p=1"
+      },
+      {
+        "song_name": "恋爱困难少女",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切复核"
+        ],
+        "artist": "ChiliChill乐团",
+        "replay_id": "live:f640adb0-fc83-4e93-8088-dec72c50db14",
+        "replay_title": "【小松绿Viridis】这是一个测试2.0 2026-10-02",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "恋爱困难少女",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1Pxa269EiF/?p=1"
+      },
+      {
+        "song_name": "ダーリン",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "須田景凪",
+        "replay_id": "live:dc67a9ea-6da7-48f4-bd73-349976e92859",
+        "replay_title": "【小松绿Viridis】久违的唱唱歌 2026-10-02",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "ダーリン",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1UkaS6zEk3/?p=2"
+      },
+      {
+        "song_name": "君色に染まる",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切复核"
+        ],
+        "artist": "TOKOTOKO（西沢さんP） / GUMI",
+        "replay_id": "live:f640adb0-fc83-4e93-8088-dec72c50db14",
+        "replay_title": "【小松绿Viridis】这是一个测试2.0 2026-10-02",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "君色に染まる",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1Pxa269EiF/?p=2"
+      },
+      {
+        "song_name": "少女レイ",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "みきとP, 初音ミク",
+        "replay_id": "live:dc67a9ea-6da7-48f4-bd73-349976e92859",
+        "replay_title": "【小松绿Viridis】久违的唱唱歌 2026-10-02",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "少女レイ",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1UkaS6zEk3/?p=3"
+      },
+      {
+        "song_name": "初恋日記",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切复核"
+        ],
+        "artist": "香椎モイミ / 音街鳗",
+        "replay_id": "live:f640adb0-fc83-4e93-8088-dec72c50db14",
+        "replay_title": "【小松绿Viridis】这是一个测试2.0 2026-10-02",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "初恋日記",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1Pxa269EiF/?p=3"
+      },
+      {
+        "song_name": "人间应又雪",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "忘川风华录, 洛天依Official, 言和",
+        "replay_id": "live:dc67a9ea-6da7-48f4-bd73-349976e92859",
+        "replay_title": "【小松绿Viridis】久违的唱唱歌 2026-10-02",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "人间应又雪",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1UkaS6zEk3/?p=4"
+      },
+      {
+        "song_name": "萤萤微光",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切复核"
+        ],
+        "artist": "泠鸢yousa",
+        "replay_id": "live:f640adb0-fc83-4e93-8088-dec72c50db14",
+        "replay_title": "【小松绿Viridis】这是一个测试2.0 2026-10-02",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "萤萤微光",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1Pxa269EiF/?p=4"
+      },
+      {
+        "song_name": "情歌",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "梁静茹",
+        "replay_id": "live:dc67a9ea-6da7-48f4-bd73-349976e92859",
+        "replay_title": "【小松绿Viridis】久违的唱唱歌 2026-10-02",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "情歌",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1UkaS6zEk3/?p=5"
+      },
+      {
+        "song_name": "月が綺麗ねと言われたい!",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切复核"
+        ],
+        "artist": "柿崎ユウタ",
+        "replay_id": "live:f640adb0-fc83-4e93-8088-dec72c50db14",
+        "replay_title": "【小松绿Viridis】这是一个测试2.0 2026-10-02",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "月が綺麗ねと言われたい!（第一遍）",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1Pxa269EiF/?p=5"
+      },
+      {
+        "song_name": "Grown-up's Paradise",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "Mili, 塞壬唱片-MSR",
+        "replay_id": "live:dc67a9ea-6da7-48f4-bd73-349976e92859",
+        "replay_title": "【小松绿Viridis】久违的唱唱歌 2026-10-02",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "Grown-up's Paradise",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1UkaS6zEk3/?p=6"
+      },
+      {
+        "song_name": "交织together",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "OriginGirls, 迟色, 舞雪, 饼饼Causa, 沈音音",
+        "replay_id": "live:dc67a9ea-6da7-48f4-bd73-349976e92859",
+        "replay_title": "【小松绿Viridis】久违的唱唱歌 2026-10-02",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "交织together",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1UkaS6zEk3/?p=7"
+      },
+      {
+        "song_name": "月が綺麗ねと言われたい!",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切复核"
+        ],
+        "artist": "柿崎ユウタ",
+        "replay_id": "live:f640adb0-fc83-4e93-8088-dec72c50db14",
+        "replay_title": "【小松绿Viridis】这是一个测试2.0 2026-10-02",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "月が綺麗ねと言われたい!（第二遍）",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1Pxa269EiF/?p=7"
+      },
+      {
+        "song_name": "青鸟衔风",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "忘川风华录, 海伊, 诗岸",
+        "replay_id": "live:dc67a9ea-6da7-48f4-bd73-349976e92859",
+        "replay_title": "【小松绿Viridis】久违的唱唱歌 2026-10-02",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "青鸟衔风",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1UkaS6zEk3/?p=8"
+      },
+      {
+        "song_name": "丑马",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "ChiliChill乐团",
+        "replay_id": "live:dc67a9ea-6da7-48f4-bd73-349976e92859",
+        "replay_title": "【小松绿Viridis】久违的唱唱歌 2026-10-02",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "丑马",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1UkaS6zEk3/?p=9"
+      },
+      {
+        "song_name": "太聪明",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "陈绮贞",
+        "replay_id": "live:dc67a9ea-6da7-48f4-bd73-349976e92859",
+        "replay_title": "【小松绿Viridis】久违的唱唱歌 2026-10-02",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "太聪明",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1UkaS6zEk3/?p=10"
+      },
+      {
+        "song_name": "给电影人的情书",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "蔡琴",
+        "replay_id": "live:dc67a9ea-6da7-48f4-bd73-349976e92859",
+        "replay_title": "【小松绿Viridis】久违的唱唱歌 2026-10-02",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "给电影人的情书",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1UkaS6zEk3/?p=11"
+      },
+      {
+        "song_name": "桃花诺",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "G.M.E邓紫棋",
+        "replay_id": "live:dc67a9ea-6da7-48f4-bd73-349976e92859",
+        "replay_title": "【小松绿Viridis】久违的唱唱歌 2026-10-02",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "桃花诺",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1UkaS6zEk3/?p=12"
+      },
+      {
+        "song_name": "如果有来生",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "谭维维",
+        "replay_id": "live:dc67a9ea-6da7-48f4-bd73-349976e92859",
+        "replay_title": "【小松绿Viridis】久违的唱唱歌 2026-10-02",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "如果有来生",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1UkaS6zEk3/?p=13"
+      },
+      {
+        "song_name": "贝加尔湖畔",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "李健",
+        "replay_id": "live:dc67a9ea-6da7-48f4-bd73-349976e92859",
+        "replay_title": "【小松绿Viridis】久违的唱唱歌 2026-10-02",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "贝加尔湖畔",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1UkaS6zEk3/?p=14"
+      },
+      {
+        "song_name": "踊り子",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "轟はじめ",
+        "replay_id": "live:dc67a9ea-6da7-48f4-bd73-349976e92859",
+        "replay_title": "【小松绿Viridis】久违的唱唱歌 2026-10-02",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "踊り子",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1UkaS6zEk3/?p=15"
+      },
+      {
+        "song_name": "玛德琳娜电塔",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "Soda纯白, 洛天依Official",
+        "replay_id": "live:dc67a9ea-6da7-48f4-bd73-349976e92859",
+        "replay_title": "【小松绿Viridis】久违的唱唱歌 2026-10-02",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "玛德琳娜电塔",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1UkaS6zEk3/?p=16"
+      },
+      {
+        "song_name": "社畜烧酒",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "ChiliChill乐团, 洛天依Official",
+        "replay_id": "live:dc67a9ea-6da7-48f4-bd73-349976e92859",
+        "replay_title": "【小松绿Viridis】久违的唱唱歌 2026-10-02",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "社畜烧酒",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1UkaS6zEk3/?p=17"
+      },
+      {
+        "song_name": "衡山路宛平路",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "ChiliChill乐团",
+        "replay_id": "live:dc67a9ea-6da7-48f4-bd73-349976e92859",
+        "replay_title": "【小松绿Viridis】久违的唱唱歌 2026-10-02",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "衡山路宛平路",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1UkaS6zEk3/?p=18"
+      },
+      {
+        "song_name": "苏州河",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "薛凯琪",
+        "replay_id": "live:dc67a9ea-6da7-48f4-bd73-349976e92859",
+        "replay_title": "【小松绿Viridis】久违的唱唱歌 2026-10-02",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "苏州河",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1UkaS6zEk3/?p=19"
+      },
+      {
+        "song_name": "夏霞",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "あたらよ",
+        "replay_id": "live:dc67a9ea-6da7-48f4-bd73-349976e92859",
+        "replay_title": "【小松绿Viridis】久违的唱唱歌 2026-10-02",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "夏霞",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1UkaS6zEk3/?p=20"
+      },
+      {
+        "song_name": "霞光",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "曲锦楠",
+        "replay_id": "live:dc67a9ea-6da7-48f4-bd73-349976e92859",
+        "replay_title": "【小松绿Viridis】久违的唱唱歌 2026-10-02",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "霞光",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1UkaS6zEk3/?p=21"
+      },
+      {
+        "song_name": "Melody",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "陶喆",
+        "replay_id": "live:dc67a9ea-6da7-48f4-bd73-349976e92859",
+        "replay_title": "【小松绿Viridis】久违的唱唱歌 2026-10-02",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "Melody",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1UkaS6zEk3/?p=22"
+      },
+      {
+        "song_name": "SOS",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "命依Mei",
+        "replay_id": "live:dc67a9ea-6da7-48f4-bd73-349976e92859",
+        "replay_title": "【小松绿Viridis】久违的唱唱歌 2026-10-02",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "SOS",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1UkaS6zEk3/?p=23"
+      },
+      {
+        "song_name": "好了现在可以哭了",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "停電前夜, 洛天依",
+        "replay_id": "live:dc67a9ea-6da7-48f4-bd73-349976e92859",
+        "replay_title": "【小松绿Viridis】久违的唱唱歌 2026-10-02",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "好了现在可以哭了",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1UkaS6zEk3/?p=24"
+      },
+      {
+        "song_name": "春天没有落花。",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "raynodon",
+        "replay_id": "live:dc67a9ea-6da7-48f4-bd73-349976e92859",
+        "replay_title": "【小松绿Viridis】久违的唱唱歌 2026-10-02",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "春天没有落花。",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1UkaS6zEk3/?p=25"
+      },
+      {
+        "song_name": "食虫植物",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "理芽",
+        "replay_id": "live:dc67a9ea-6da7-48f4-bd73-349976e92859",
+        "replay_title": "【小松绿Viridis】久违的唱唱歌 2026-10-02",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "食虫植物",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1UkaS6zEk3/?p=26"
+      },
+      {
+        "song_name": "达拉崩吧",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "ilem, 洛天依Official, 言和",
+        "replay_id": "live:dc67a9ea-6da7-48f4-bd73-349976e92859",
+        "replay_title": "【小松绿Viridis】久违的唱唱歌 2026-10-02",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "达拉崩吧",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1UkaS6zEk3/?p=27"
+      }
+    ],
+    "2026-10-06": [
+      {
+        "song_name": "冬日",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "鞠橘络",
+        "replay_id": "live:bf948f7e-c517-4594-9c1a-5c0c4cf23d6c",
+        "replay_title": "【小松绿Viridis】随便小唱之 2026-10-06",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "冬日",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV18Jpw6mE82/?p=1"
+      },
+      {
+        "song_name": "花园舞曲",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "SNH48",
+        "replay_id": "live:bf948f7e-c517-4594-9c1a-5c0c4cf23d6c",
+        "replay_title": "【小松绿Viridis】随便小唱之 2026-10-06",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "花园舞曲",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV18Jpw6mE82/?p=2"
+      },
+      {
+        "song_name": "永恒曲",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "太痕, 阿宣七二",
+        "replay_id": "live:bf948f7e-c517-4594-9c1a-5c0c4cf23d6c",
+        "replay_title": "【小松绿Viridis】随便小唱之 2026-10-06",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "永恒曲",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV18Jpw6mE82/?p=3"
+      },
+      {
+        "song_name": "梦乡",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "黄恩茹",
+        "replay_id": "live:bf948f7e-c517-4594-9c1a-5c0c4cf23d6c",
+        "replay_title": "【小松绿Viridis】随便小唱之 2026-10-06",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "梦乡",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV18Jpw6mE82/?p=4"
+      },
+      {
+        "song_name": "春夏秋冬",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "万丽娜",
+        "replay_id": "live:bf948f7e-c517-4594-9c1a-5c0c4cf23d6c",
+        "replay_title": "【小松绿Viridis】随便小唱之 2026-10-06",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "春夏秋冬",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV18Jpw6mE82/?p=5"
+      },
+      {
+        "song_name": "夏之回忆",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "李艺彤",
+        "replay_id": "live:bf948f7e-c517-4594-9c1a-5c0c4cf23d6c",
+        "replay_title": "【小松绿Viridis】随便小唱之 2026-10-06",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "夏之回忆",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV18Jpw6mE82/?p=6"
+      },
+      {
+        "song_name": "双生花",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "SNH48",
+        "replay_id": "live:bf948f7e-c517-4594-9c1a-5c0c4cf23d6c",
+        "replay_title": "【小松绿Viridis】随便小唱之 2026-10-06",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "双生花",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV18Jpw6mE82/?p=7"
+      },
+      {
+        "song_name": "渊（Deep Down）",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "SNH48",
+        "replay_id": "live:bf948f7e-c517-4594-9c1a-5c0c4cf23d6c",
+        "replay_title": "【小松绿Viridis】随便小唱之 2026-10-06",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "渊（Deep Down）",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV18Jpw6mE82/?p=8"
+      },
+      {
+        "song_name": "恋爱告急",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "鞠婧祎",
+        "replay_id": "live:bf948f7e-c517-4594-9c1a-5c0c4cf23d6c",
+        "replay_title": "【小松绿Viridis】随便小唱之 2026-10-06",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "恋爱告急",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV18Jpw6mE82/?p=9"
+      },
+      {
+        "song_name": "Little Wish",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "塞壬唱片-MSR, WS MUSIC",
+        "replay_id": "live:bf948f7e-c517-4594-9c1a-5c0c4cf23d6c",
+        "replay_title": "【小松绿Viridis】随便小唱之 2026-10-06",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "Little Wish",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV18Jpw6mE82/?p=10"
+      },
+      {
+        "song_name": "Mystic Light Quest",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "塞壬唱片-MSR, 宋柏, 十音, 解伟苓",
+        "replay_id": "live:bf948f7e-c517-4594-9c1a-5c0c4cf23d6c",
+        "replay_title": "【小松绿Viridis】随便小唱之 2026-10-06",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "Mystic Light Quest",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV18Jpw6mE82/?p=11"
+      },
+      {
+        "song_name": "天文馆的猫",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "泠鸢yousa",
+        "replay_id": "live:bf948f7e-c517-4594-9c1a-5c0c4cf23d6c",
+        "replay_title": "【小松绿Viridis】随便小唱之 2026-10-06",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "天文馆的猫",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV18Jpw6mE82/?p=12"
+      },
+      {
+        "song_name": "朝汐",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "双笙（陈元汐）, 泠鸢yousa",
+        "replay_id": "live:bf948f7e-c517-4594-9c1a-5c0c4cf23d6c",
+        "replay_title": "【小松绿Viridis】随便小唱之 2026-10-06",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "朝汐",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV18Jpw6mE82/?p=13"
+      },
+      {
+        "song_name": "花月成双",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "泠鸢yousa_朽木素_魂喵喵",
+        "replay_id": "live:bf948f7e-c517-4594-9c1a-5c0c4cf23d6c",
+        "replay_title": "【小松绿Viridis】随便小唱之 2026-10-06",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "花月成双",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV18Jpw6mE82/?p=14"
+      },
+      {
+        "song_name": "小兔子乖乖",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "儿歌多多",
+        "replay_id": "live:bf948f7e-c517-4594-9c1a-5c0c4cf23d6c",
+        "replay_title": "【小松绿Viridis】随便小唱之 2026-10-06",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "小兔子乖乖",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV18Jpw6mE82/?p=15"
+      },
+      {
+        "song_name": "蜗牛与黄鹂鸟",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "儿歌多多",
+        "replay_id": "live:bf948f7e-c517-4594-9c1a-5c0c4cf23d6c",
+        "replay_title": "【小松绿Viridis】随便小唱之 2026-10-06",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "蜗牛与黄鹂鸟",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV18Jpw6mE82/?p=16"
+      },
+      {
+        "song_name": "小螺号",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "儿歌多多",
+        "replay_id": "live:bf948f7e-c517-4594-9c1a-5c0c4cf23d6c",
+        "replay_title": "【小松绿Viridis】随便小唱之 2026-10-06",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "小螺号",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV18Jpw6mE82/?p=17"
       }
     ]
   }
