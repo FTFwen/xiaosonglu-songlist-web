@@ -16,16 +16,22 @@ const FAV_CURRENT_KEY = 'favorites:currentName';
 // 二创歌曲（手动导入，本地存储；勾选"只看二创"才显示）
 const DERIVATIVE_KEY = 'songs:derivative';
 
-// 内置的二创歌曲（手动导入、勾选"只看二创"才显示；音频后补，暂不自动采集）
-// 用负数 song_id 与真实歌曲区分，保证播放点击能匹配到
-const BUILTIN_DERIVATIVE = [
-  { song_id: -1001, song_name: 'ai小松绿爱情讯息 3', display_song_name: 'ai小松绿爱情讯息 3', artist: '' },
-  { song_id: -1002, song_name: '小松绿春意红包 2', display_song_name: '小松绿春意红包 2', artist: '' },
-  { song_id: -1003, song_name: '小松绿5.20am', display_song_name: '小松绿5.20am', artist: '' },
-  { song_id: -1004, song_name: 'xsl大悲咒纯享版', display_song_name: 'xsl大悲咒纯享版', artist: '' },
-  { song_id: -1005, song_name: 'ai小松绿虚言', display_song_name: 'ai小松绿虚言', artist: '' },
-  { song_id: -1006, song_name: 'ai小松绿千金胧梦', display_song_name: 'ai小松绿千金胧梦', artist: '' }
-];
+// 内置的二创歌曲（勾选"只看二创"才显示）
+//
+// 这里原先登记了 6 首（ai小松绿爱情讯息 3 / 小松绿春意红包 2 / 小松绿5.20am / xsl大悲咒纯享版 /
+// ai小松绿虚言 / ai小松绿千金胧梦），但它们在本机已经没有音频文件，点播放只会提示"暂时没有收录音频"，
+// 因此已从列表里移除。以后要加内置二创歌，必须同时带上能播放的音频地址。
+const BUILTIN_DERIVATIVE = [];
+
+// 已下线（本机没有音频文件）的老内置二创歌：localStorage 里可能还留着副本，加载时按名字剔除
+const LEGACY_DERIVATIVE_WITHOUT_AUDIO = new Set([
+  'ai小松绿爱情讯息 3',
+  '小松绿春意红包 2',
+  '小松绿5.20am',
+  'xsl大悲咒纯享版',
+  'ai小松绿虚言',
+  'ai小松绿千金胧梦'
+].map(name => name.toLowerCase()));
 
 // 加载二创歌曲（本地），勾选"只看二创"时合并进列表
 function loadDerivativeSongs() {
@@ -35,6 +41,10 @@ function loadDerivativeSongs() {
     const arr = raw ? JSON.parse(raw) : [];
     if (Array.isArray(arr)) list = arr.filter(s => s && (s.song_name || s.display_song_name));
   } catch (e) { list = []; }
+  // 已经下线、没有音频文件的老内置二创歌不再显示
+  list = list.filter(s => !LEGACY_DERIVATIVE_WITHOUT_AUDIO.has(
+    String(s.song_name || s.display_song_name || '').trim().toLowerCase()
+  ));
   // 没有本地导入时，回退到内置二创歌曲
   if (!list.length) list = BUILTIN_DERIVATIVE.map(s => ({ ...s, custom: true, derivative: true }));
   // 为缺 song_id 的二创歌补唯一负数 id（保证卡片播放键能匹配到、能播放）

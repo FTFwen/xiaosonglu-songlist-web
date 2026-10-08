@@ -21,7 +21,13 @@ const FAV_REQUEST_TIMEOUT_MS = 15000;
 // 二创歌曲（手动导入，本地存储；勾选"只看二创"才显示）
 const DERIVATIVE_KEY = 'songs:derivative';
 
-// 小松绿 AI 翻唱（二创）音频：曲名 / 模型版本 / assets/derivative 下的文件名 / 文件 SHA-256 前 12 位
+// 人工精修（不是模型直接合成）的二创曲目：演唱者标注写成"精修"而不是合成器名字。
+// 其余二创曲目统一标注为 DiffSinger（合成所用的歌声合成模型），不要笼统写成"AI"。
+const DERIVATIVE_REFINED_SONGS = new Set(['天狼星的心脏']);
+const DERIVATIVE_ARTIST_SYNTH = '小松绿DiffSinger';
+const DERIVATIVE_ARTIST_REFINED = '小松绿精修';
+
+// 小松绿翻唱（二创）音频：曲名 / 模型版本 / assets/derivative 下的文件名 / 文件 SHA-256 前 12 位
 // 音频随 Git 一起发布（assets/derivative/ 不入 assets/audio/，后者是歌切管线独占的本机目录）。
 // ?v= 用内容哈希，替换文件后同步改这里就能绕过 CDN 缓存；新增一首只需在表里加一行。
 const DERIVATIVE_TRACKS = [
@@ -45,20 +51,26 @@ const DERIVATIVE_TRACKS = [
   song_name: `小松绿-${songName}`,
   display_song_name: `小松绿-${songName}`,
   display_version: modelVersion,
-  artist: '小松绿AI',
+  artist: DERIVATIVE_REFINED_SONGS.has(songName) ? DERIVATIVE_ARTIST_REFINED : DERIVATIVE_ARTIST_SYNTH,
   type: '',
   language: '',
   audio: `assets/derivative/${fileName}?v=${contentHash}`
 }));
 
-// 内置的二创歌曲（随站点版本发布，勾选"只看二创"才显示）
+// 曾经内置、但本地已经没有音频文件（点播放只会提示"暂时没有收录音频"）的二创歌。
+// 旧浏览器里可能还留着一份 localStorage 副本，加载时按名字剔除，免得它们又被顶回列表。
+const LEGACY_DERIVATIVE_WITHOUT_AUDIO = new Set([
+  'ai小松绿爱情讯息 3',
+  '小松绿春意红包 2',
+  '小松绿5.20am',
+  'xsl大悲咒纯享版',
+  'ai小松绿虚言',
+  'ai小松绿千金胧梦'
+].map(name => name.toLowerCase()));
+
+// 内置的二创歌曲（随站点版本发布，勾选"只看二创"才显示）。
+// 这里的每一首都必须带 assets/derivative/ 下的音频文件；没有音频的不要登记，否则列表里会出现点不响的歌。
 const BUILTIN_DERIVATIVE = [
-  { song_id: -1001, song_name: 'ai小松绿爱情讯息 3', display_song_name: 'ai小松绿爱情讯息 3', artist: '' },
-  { song_id: -1002, song_name: '小松绿春意红包 2', display_song_name: '小松绿春意红包 2', artist: '' },
-  { song_id: -1003, song_name: '小松绿5.20am', display_song_name: '小松绿5.20am', artist: '' },
-  { song_id: -1004, song_name: 'xsl大悲咒纯享版', display_song_name: 'xsl大悲咒纯享版', artist: '' },
-  { song_id: -1005, song_name: 'ai小松绿虚言', display_song_name: 'ai小松绿虚言', artist: '' },
-  { song_id: -1006, song_name: 'ai小松绿千金胧梦', display_song_name: 'ai小松绿千金胧梦', artist: '' },
   ...DERIVATIVE_TRACKS
 ];
 
@@ -73,9 +85,14 @@ function loadDerivativeSongs() {
   // 内置二创歌（含 assets/derivative 音频）始终可见，本地导入只作为补充，
   // 否则老浏览器里残留的 localStorage 会把新上线的二创歌整批顶掉。
   const builtinNames = new Set(BUILTIN_DERIVATIVE.map(s => String(s.song_name || '').trim().toLowerCase()));
+  // 已下线（本地没有音频文件）的老内置二创歌：即使 localStorage 里还留着也不再显示
+  const isDropped = s => LEGACY_DERIVATIVE_WITHOUT_AUDIO.has(
+    String(s.song_name || s.display_song_name || '').trim().toLowerCase()
+  );
   const list = [
     ...BUILTIN_DERIVATIVE.map(s => ({ ...s, custom: true, derivative: true })),
     ...local.filter(s => !builtinNames.has(String(s.song_name || s.display_song_name || '').trim().toLowerCase()))
+      .filter(s => !isDropped(s))
       .map(s => ({ ...s, custom: true, derivative: true }))
   ];
   // 为缺 song_id 的二创歌补唯一负数 id（保证卡片播放键能匹配到、能播放）

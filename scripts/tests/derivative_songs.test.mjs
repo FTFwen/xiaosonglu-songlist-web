@@ -33,7 +33,7 @@ function evaluate(code, globals = {}) {
 
 // 从 js/app.js 里取真实的 DERIVATIVE_TRACKS（而不是在测试里重复一份名单）
 function readDerivativeTracks() {
-  const table = sourceBetween(appSource, 'const DERIVATIVE_TRACKS', '// 内置的二创歌曲');
+  const table = sourceBetween(appSource, 'const DERIVATIVE_REFINED_SONGS', '// 内置的二创歌曲');
   const context = evaluate(`${table}\nglobalThis.__tracks = DERIVATIVE_TRACKS;`);
   assert.ok(Array.isArray(context.__tracks) && context.__tracks.length > 0, 'DERIVATIVE_TRACKS is empty');
   return context.__tracks;
@@ -57,7 +57,7 @@ test('每个二创音频文件都存在，且 URL 上的 ?v= 等于文件内容�
 
 test('内置二创歌身份唯一：song_id 不重复、song_name 不重复、音频歌带前缀', () => {
   const tracks = readDerivativeTracks();
-  const block = sourceBetween(appSource, 'const DERIVATIVE_TRACKS', 'function loadDerivativeSongs');
+  const block = sourceBetween(appSource, 'const DERIVATIVE_REFINED_SONGS', 'function loadDerivativeSongs');
   const context = evaluate(`${block}\nglobalThis.__builtin = BUILTIN_DERIVATIVE;`);
   const builtin = context.__builtin;
 
@@ -67,7 +67,10 @@ test('内置二创歌身份唯一：song_id 不重复、song_name 不重复、�
     const found = builtin.find(song => song.song_name === track.song_name);
     assert.ok(found, `missing builtin derivative song: ${track.song_name}`);
     assert.equal(found.audio, track.audio);
-    assert.equal(found.artist, '小松绿AI');
+    // 演唱者标注：天狼星的心脏是人工精修，其余是 DiffSinger 合成；一律不写"AI"
+    const expectedArtist = track.song_name === '小松绿-天狼星的心脏' ? '小松绿精修' : '小松绿DiffSinger';
+    assert.equal(found.artist, expectedArtist, `${track.song_name} 的演唱者标注不对`);
+    assert.doesNotMatch(String(found.artist), /AI/i, '二创歌不再标注为 AI，合成曲目标 DiffSinger');
     assert.match(found.display_version, /^$|^1\.[01]$/);
     assert.equal(found.song_name, found.display_song_name);
     // 带前缀，避免和同名直播歌共用收藏/评分身份（normalizeSongIdentity 先取 song_name）
@@ -79,6 +82,46 @@ test('内置二创歌身份唯一：song_id 不重复、song_name 不重复、�
   assert.ok(ids.every(id => Number.isInteger(id) && id < 0), '二创歌需要负数 song_id 才不会和真实歌曲撞 id');
   const names = builtin.map(song => String(song.song_name).trim().toLowerCase());
   assert.equal(new Set(names).size, names.length, 'song_name 有重复');
+});
+
+test('没有音频文件的旧内置二创歌不再出现在列表里（含 localStorage 残留副本）', () => {
+  const dropped = [
+    'ai小松绿爱情讯息 3',
+    '小松绿春意红包 2',
+    '小松绿5.20am',
+    'xsl大悲咒纯享版',
+    'ai小松绿虚言',
+    'ai小松绿千金胧梦'
+  ];
+  const block = sourceBetween(appSource, 'const DERIVATIVE_KEY', '// 保存二创歌曲到本地');
+  // 内置列表里不能有它们
+  const builtinContext = evaluate(`${sourceBetween(appSource, 'const DERIVATIVE_REFINED_SONGS', 'function loadDerivativeSongs')}\nglobalThis.__builtin = BUILTIN_DERIVATIVE;`);
+  for (const name of dropped) {
+    assert.equal(
+      builtinContext.__builtin.some(song => String(song.song_name).trim() === name),
+      false,
+      `没有音频文件的二创歌还在内置列表里: ${name}`
+    );
+  }
+  // 旧浏览器里 localStorage 可能还留着这些名字，加载时必须剔除（否则又被顶回列表、点了没声音）
+  const stored = JSON.stringify([
+    ...dropped.map(name => ({ song_name: name, display_song_name: name })),
+    { song_name: '本地导入的歌', display_song_name: '本地导入的歌' }
+  ]);
+  const context = evaluate(
+    `${block}\nloadDerivativeSongs();\nglobalThis.__songs = state.derivativeSongs;`,
+    {
+      localStorage: { getItem: key => (key === 'songs:derivative' ? stored : null), setItem: () => {} },
+      state: { derivativeSongs: [] },
+      normalizeLanguageTag: value => String(value || ''),
+      normalizeTypeTags: value => String(value || ''),
+    }
+  );
+  const names = context.__songs.map(song => String(song.song_name).trim());
+  for (const name of dropped) {
+    assert.equal(names.includes(name), false, `localStorage 里残留的无音频二创歌又出现了: ${name}`);
+  }
+  assert.ok(names.includes('本地导入的歌'), '正常导入的二创歌不该被误删');
 });
 
 test('loadDerivativeSongs 保留内置二创歌，localStorage 只作补充', () => {
