@@ -107,6 +107,103 @@ test('loadDerivativeSongs 保留内置二创歌，localStorage 只作补充', ()
   }
 });
 
+test('点二创歌 → 建播放队列 → 真正能播（复现「二创歌曲没法播放」）', () => {
+  const versionLine = /^const AUDIO_ASSET_VERSION = '[^']+';$/m.exec(appSource)?.[0];
+  const derivativeBlock = sourceBetween(appSource, 'const DERIVATIVE_KEY', '// 保存二创歌曲到本地');
+  const urlBlock = sourceBetween(appSource, 'function versionedAudioUrl', '// 歌切切片标题');
+  const snapBlock = sourceBetween(appSource, 'function snapshotOf', 'function normalizeCrossPageDestination');
+  const playableBlock = sourceBetween(appSource, 'function getPlayableSongs', 'function usesMobilePlaybackVisuals');
+  const playAtSource = sourceBetween(appSource, 'function playSongAt', 'function startPlaybackFrom');
+  const addSource = sourceBetween(appSource, 'function toggleSongPlayback', 'function removeFromPlaylist');
+
+  const origin = 'https://viridis.love';
+  const player = {
+    queue: [],
+    index: -1,
+    playMode: 'list',
+    shuffleOrder: null,
+    shufflePos: 0,
+    audio: { src: '', load() {}, pause() {}, paused: true },
+    get current() { return this.queue[this.index] || null; },
+  };
+  const toasts = [];
+  const context = {
+    URL,
+    document: { baseURI: `${origin}/` },
+    window: { location: { origin }, APP_BASE_URL: '' },
+    localStorage: { getItem: () => null, setItem: () => {} },
+    normalizeLanguageTag: value => String(value || ''),
+    normalizeTypeTags: value => String(value || ''),
+    state: { derivativeSongs: [], playlist: [], audioIndex: { audios: {} } },
+    player,
+    showToast: message => toasts.push(message),
+    savePlaylist: () => {},
+    renderPlaylist: () => {},
+    updatePlayerUI: () => {},
+    requestAudioPlayback: () => true,
+    pauseAudioPlayback: () => true,
+    buildShuffleOrder: () => {},
+  };
+  vm.runInNewContext(
+    `${versionLine}\n${derivativeBlock}\n${urlBlock}\n${snapBlock}\n${playableBlock}\n${playAtSource}\n${addSource}\n`
+    + 'this.state = state; this.player = player; this.load = loadDerivativeSongs; this.add = addToPlaylist; this.urlOf = audioUrlOf;',
+    context
+  );
+
+  context.load();
+  // 过滤到「只看二创」（和工具栏按钮同一条路径）
+  context.state.filteredSongs = context.state.derivativeSongs;
+  const track = context.state.derivativeSongs.find(song => song.song_name === '小松绿-云烟成雨');
+  assert.ok(track, '内置二创歌没加载出来');
+
+  const played = context.add(track, true);
+  assert.equal(played, true, '点二创歌没进播放路径');
+  assert.equal(toasts.length, 0, `点二创歌弹了提示：${toasts.join(' / ')}`);
+  assert.equal(
+    player.audio.src,
+    `${origin}/assets/derivative/yunyan-chengyu.mp3?v=a57ebeff7a64`,
+    '播放器拿到的音频地址不对（用户听到的「没法播放」就是这里）'
+  );
+  // 队列里存的快照也必须还能定位到音频，否则切歌/刷新后就播不了
+  const queued = player.queue.find(item => String(item.song_id) === String(track.song_id));
+  assert.ok(queued, '播放队列里没有这首歌');
+  assert.equal(context.urlOf(queued), `${origin}/assets/derivative/yunyan-chengyu.mp3?v=a57ebeff7a64`);
+});
+
+test('二创歌在播放队列/中意快照里也能播（快照丢了 audio 就按身份回查）', () => {
+  const versionLine = /^const AUDIO_ASSET_VERSION = '[^']+';$/m.exec(appSource)?.[0];
+  const block = sourceBetween(appSource, 'function versionedAudioUrl', '// 歌切切片标题');
+  const snapBlock = sourceBetween(appSource, 'function snapshotOf', 'function normalizeCrossPageDestination');
+  const origin = 'https://viridis.love';
+  const context = evaluate(
+    `${versionLine}\n${block}\n${snapBlock}\nglobalThis.__urlOf = audioUrlOf;\nglobalThis.__snap = snapshotOf;`,
+    {
+      URL,
+      document: { baseURI: `${origin}/` },
+      window: { location: { origin }, APP_BASE_URL: '' },
+      state: {
+        audioIndex: { audios: {} },
+        derivativeSongs: [{
+          song_id: -1101,
+          row_key: '小松绿-云烟成雨',
+          song_name: '小松绿-云烟成雨',
+          display_song_name: '小松绿-云烟成雨',
+          audio: 'assets/derivative/yunyan-chengyu.mp3?v=a57ebeff7a64',
+        }],
+      },
+    }
+  );
+  const expected = `${origin}/assets/derivative/yunyan-chengyu.mp3?v=a57ebeff7a64`;
+  // 播放队列里存的是快照（没有 audio 字段），必须还能解析出音频
+  const snapshot = context.__snap({ song_id: -1101, row_key: '小松绿-云烟成雨', song_name: '小松绿-云烟成雨' });
+  assert.equal(snapshot.audio, '', '快照本身不带 audio 时应该是空字符串');
+  assert.equal(context.__urlOf(snapshot), expected, '队列快照丢音频 → 点播放会提示「暂时没有收录音频」');
+  assert.equal(context.__urlOf({ row_key: '小松绿-云烟成雨' }), expected);
+  assert.equal(context.__urlOf({ song_name: '小松绿-云烟成雨' }), expected);
+  // 歌切歌不因为回查而拿到二创音频
+  assert.equal(context.__urlOf({ song_name: '普通歌切' }), '');
+});
+
 test('audioUrlOf 优先用歌曲自带的二创音频，不去音频索引里抢同名歌', () => {
   const versionLine = /^const AUDIO_ASSET_VERSION = '[^']+';$/m.exec(appSource)?.[0];
   assert.ok(versionLine, 'missing AUDIO_ASSET_VERSION');

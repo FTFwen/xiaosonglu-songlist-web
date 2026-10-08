@@ -1127,13 +1127,33 @@ function versionedAudioUrl(rawUrl) {
   }
 }
 
+// 播放队列、中意清单里存的是快照（只留身份字段），二创音频不在歌切音频索引里，
+// 所以快照丢了 audio 字段后必须按身份回查内置二创表，否则点播放会报「这首歌暂时没有收录音频」。
+function derivativeAudioOf(song) {
+  if (!song) return '';
+  const list = Array.isArray(state.derivativeSongs) ? state.derivativeSongs : [];
+  if (!list.length) return '';
+  const keys = [song.row_key, song.song_name, song.display_song_name]
+    .map(value => String(value || '').trim())
+    .filter(Boolean);
+  if (!keys.length) return '';
+  const hit = list.find(item => {
+    if (!item || !item.audio) return false;
+    return keys.some(key => key === String(item.row_key || '').trim()
+      || key === String(item.song_name || '').trim()
+      || key === String(item.display_song_name || '').trim());
+  });
+  return hit ? hit.audio : '';
+}
+
 function audioUrlOf(song) {
   if (!song) return '';
   // 二创歌曲自带音频（assets/derivative/ 下、随 Git 发布的独立文件），不进歌切音频索引
-  if (song.audio) {
-    const own = song.audio.startsWith('http://') || song.audio.startsWith('https://') || song.audio.startsWith('data:')
-      ? song.audio
-      : (window.APP_BASE_URL || '') + song.audio;
+  const ownAudio = song.audio || derivativeAudioOf(song);
+  if (ownAudio) {
+    const own = ownAudio.startsWith('http://') || ownAudio.startsWith('https://') || ownAudio.startsWith('data:')
+      ? ownAudio
+      : (window.APP_BASE_URL || '') + ownAudio;
     return versionedAudioUrl(own);
   }
   const key = song.row_key || song.song_name || '';
@@ -1364,7 +1384,9 @@ function snapshotOf(song) {
     row_key: song.row_key || song.song_name || '',
     song_name: song.song_name || '',
     display_song_name: song.display_song_name || song.song_name || '',
-    artist: song.artist || ''
+    artist: song.artist || '',
+    // 二创歌的音频地址随快照一起带走；歌切歌留空，仍然按歌名走 audio_index.json
+    audio: song.audio || ''
   };
 }
 
