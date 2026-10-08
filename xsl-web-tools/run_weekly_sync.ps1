@@ -1,4 +1,4 @@
-# 周表定时同步 runner：抓 B 站置顶周表 → 有更新则提交、推送、双部署、验证、通知
+﻿# 周表定时同步 runner：抓 B 站置顶周表 → 有更新则提交、推送、双部署、验证、通知
 # 由 install_weekly_sync.ps1 注册的 Windows 计划任务调用，也可手动运行。
 [CmdletBinding()]
 param(
