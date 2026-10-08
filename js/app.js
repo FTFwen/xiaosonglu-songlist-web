@@ -21,31 +21,67 @@ const FAV_REQUEST_TIMEOUT_MS = 15000;
 // 二创歌曲（手动导入，本地存储；勾选"只看二创"才显示）
 const DERIVATIVE_KEY = 'songs:derivative';
 
-// 内置的二创歌曲（手动导入、勾选"只看二创"才显示；音频后补，暂不自动采集）
-// 用负数 song_id 与真实歌曲区分，保证播放点击能匹配到
+// 小松绿 AI 翻唱（二创）音频：曲名 / 模型版本 / assets/derivative 下的文件名 / 文件 SHA-256 前 12 位
+// 音频随 Git 一起发布（assets/derivative/ 不入 assets/audio/，后者是歌切管线独占的本机目录）。
+// ?v= 用内容哈希，替换文件后同步改这里就能绕过 CDN 缓存；新增一首只需在表里加一行。
+const DERIVATIVE_TRACKS = [
+  ['云烟成雨', '1.0', 'yunyan-chengyu.mp3', 'a57ebeff7a64'],
+  ['单相思', '1.0', 'danxiangsi.mp3', 'f645a1e4bb90'],
+  ['江南', '1.0', 'jiangnan.mp3', '6836f1989035'],
+  ['群青', '1.0', 'qunqing.mp3', '4a57d94b4ea6'],
+  ['雨爱', '1.0', 'yuai.mp3', '8428a5a9df1e'],
+  ['不问天', '1.1', 'buwentian.mp3', 'ba84af9fedbd'],
+  ['世末积雨云', '1.1', 'shimo-jiyuyun.mp3', 'c44ecef8ded1'],
+  ['失落沙洲', '1.1', 'shiluo-shazhou.mp3', '8c1ca0c5f934'],
+  ['春天的芭蕾', '1.1', 'chuntian-de-balei.mp3', 'd15453441f50'],
+  ['梦境与魔女', '1.1', 'mengjing-yu-monv.mp3', 'd0a5868fbab7'],
+  ['神曼波', '1.1', 'shenmanbo.mp3', '37a67e350cbf'],
+  ['心墙', '', 'xinqiang.mp3', '4d9823892608'],
+  ['天狼星的心脏', '', 'tianlangxing-de-xinzang.mp3', 'b986e4c72837']
+].map(([songName, modelVersion, fileName, contentHash], index) => ({
+  song_id: -1101 - index, // 负数 id 与真实歌曲区分，保证卡片播放键能匹配到
+  row_key: `小松绿-${songName}`,
+  // song_name 也带前缀，避免和同名的直播歌共用收藏/评分身份
+  song_name: `小松绿-${songName}`,
+  display_song_name: `小松绿-${songName}`,
+  display_version: modelVersion,
+  artist: '小松绿AI',
+  type: '',
+  language: '',
+  audio: `assets/derivative/${fileName}?v=${contentHash}`
+}));
+
+// 内置的二创歌曲（随站点版本发布，勾选"只看二创"才显示）
 const BUILTIN_DERIVATIVE = [
   { song_id: -1001, song_name: 'ai小松绿爱情讯息 3', display_song_name: 'ai小松绿爱情讯息 3', artist: '' },
   { song_id: -1002, song_name: '小松绿春意红包 2', display_song_name: '小松绿春意红包 2', artist: '' },
   { song_id: -1003, song_name: '小松绿5.20am', display_song_name: '小松绿5.20am', artist: '' },
   { song_id: -1004, song_name: 'xsl大悲咒纯享版', display_song_name: 'xsl大悲咒纯享版', artist: '' },
   { song_id: -1005, song_name: 'ai小松绿虚言', display_song_name: 'ai小松绿虚言', artist: '' },
-  { song_id: -1006, song_name: 'ai小松绿千金胧梦', display_song_name: 'ai小松绿千金胧梦', artist: '' }
+  { song_id: -1006, song_name: 'ai小松绿千金胧梦', display_song_name: 'ai小松绿千金胧梦', artist: '' },
+  ...DERIVATIVE_TRACKS
 ];
 
-// 加载二创歌曲（本地），勾选"只看二创"时合并进列表
+// 加载二创歌曲（内置 + 本地导入），勾选"只看二创"时合并进列表
 function loadDerivativeSongs() {
-  let list = [];
+  let local = [];
   try {
     const raw = localStorage.getItem(DERIVATIVE_KEY);
     const arr = raw ? JSON.parse(raw) : [];
-    if (Array.isArray(arr)) list = arr.filter(s => s && (s.song_name || s.display_song_name));
-  } catch (e) { list = []; }
-  // 没有本地导入时，回退到内置二创歌曲
-  if (!list.length) list = BUILTIN_DERIVATIVE.map(s => ({ ...s, custom: true, derivative: true }));
+    if (Array.isArray(arr)) local = arr.filter(s => s && (s.song_name || s.display_song_name));
+  } catch (e) { local = []; }
+  // 内置二创歌（含 assets/derivative 音频）始终可见，本地导入只作为补充，
+  // 否则老浏览器里残留的 localStorage 会把新上线的二创歌整批顶掉。
+  const builtinNames = new Set(BUILTIN_DERIVATIVE.map(s => String(s.song_name || '').trim().toLowerCase()));
+  const list = [
+    ...BUILTIN_DERIVATIVE.map(s => ({ ...s, custom: true, derivative: true })),
+    ...local.filter(s => !builtinNames.has(String(s.song_name || s.display_song_name || '').trim().toLowerCase()))
+      .map(s => ({ ...s, custom: true, derivative: true }))
+  ];
   // 为缺 song_id 的二创歌补唯一负数 id（保证卡片播放键能匹配到、能播放）
   let nextId = -2000;
   list.forEach(s => { if (typeof s.song_id === 'number' && s.song_id < nextId) nextId = s.song_id; });
-  list = list.map(s => {
+  state.derivativeSongs = list.map(s => {
     const normalized = {
       ...s,
       language: normalizeLanguageTag(s.language || ''),
@@ -54,12 +90,28 @@ function loadDerivativeSongs() {
     if (typeof s.song_id === 'number' && s.song_id !== null) return normalized;
     return { ...normalized, song_id: nextId--, custom: true, derivative: true };
   });
-  state.derivativeSongs = list;
 }
 // 保存二创歌曲到本地
 function saveDerivativeSongs() {
   try { localStorage.setItem(DERIVATIVE_KEY, JSON.stringify(state.derivativeSongs)); }
   catch (e) { /* ignore */ }
+}
+
+// 「二创歌曲」开关（工具栏按钮）与 state.songFilters.derivativeOnly 保持同步
+function syncDerivativeOnlyButton() {
+  const btn = dom.derivativeOnlyBtn;
+  if (!btn) return;
+  const on = !!state.songFilters.derivativeOnly;
+  btn.classList.toggle('active', on);
+  btn.setAttribute('aria-pressed', on ? 'true' : 'false');
+  const label = btn.querySelector('.derivative-label');
+  if (label) label.textContent = on ? '二创歌曲（开）' : '二创歌曲';
+}
+
+function setDerivativeOnly(on) {
+  state.songFilters.derivativeOnly = !!on;
+  syncDerivativeOnlyButton();
+  applySongFilters();
 }
 
 // 把导入的歌曲数据加入二创歌曲（标记 custom:true），去重（按歌名），并重新渲染
@@ -1077,6 +1129,13 @@ function versionedAudioUrl(rawUrl) {
 
 function audioUrlOf(song) {
   if (!song) return '';
+  // 二创歌曲自带音频（assets/derivative/ 下、随 Git 发布的独立文件），不进歌切音频索引
+  if (song.audio) {
+    const own = song.audio.startsWith('http://') || song.audio.startsWith('https://') || song.audio.startsWith('data:')
+      ? song.audio
+      : (window.APP_BASE_URL || '') + song.audio;
+    return versionedAudioUrl(own);
+  }
   const key = song.row_key || song.song_name || '';
   const rel = state.audioIndex && state.audioIndex.audios ? (state.audioIndex.audios[key] || '') : '';
   if (rel) {
@@ -2241,17 +2300,14 @@ function syncFilterSummary() {
     chips.push({
       type: 'derivative',
       label: '仅二创',
-      action: () => {
-        state.songFilters.derivativeOnly = false;
-        if (dom.derivativeOnlyBtn) dom.derivativeOnlyBtn.checked = false;
-        applySongFilters();
-      }
+      action: () => setDerivativeOnly(false)
     });
   }
 
   dom.toggleFilterBtn.classList.toggle('active', state.filtersVisible || chips.length > 0);
   dom.favoritesOnlyBtn.classList.toggle('active', state.favoritesOnly);
   dom.favoritesOnlyBtn.textContent = state.favoritesOnly ? '只看中意（开）' : '仅看中意';
+  syncDerivativeOnlyButton();
 
   // 渲染活动胶囊条
   if (dom.activeFiltersBar && dom.activeChipsList) {
@@ -3857,7 +3913,7 @@ function resetSongFilters() {
     sortField: 'last_sing_at',
     sortDir: 'desc'
   };
-  if (dom.derivativeOnlyBtn) dom.derivativeOnlyBtn.checked = false;
+  syncDerivativeOnlyButton();
   if (dom.favoritesOnlyBtn) dom.favoritesOnlyBtn.classList.remove('active');
   state.searchMode = 'mixed';
   dom.searchInput.value = '';
@@ -4143,10 +4199,9 @@ function bindEvents() {
       if (dom.playlistFab) dom.playlistFab.classList.remove('active');
     });
   }
-  // 二创歌曲开关：勾选显示二创歌曲，不勾选默认隐藏
-  dom.derivativeOnlyBtn.addEventListener('change', () => {
-    state.songFilters.derivativeOnly = !!dom.derivativeOnlyBtn.checked;
-    applySongFilters();
+  // 二创歌曲开关（工具栏按钮）：点开只看二创歌，再点关闭恢复普通歌单
+  dom.derivativeOnlyBtn.addEventListener('click', () => {
+    setDerivativeOnly(!state.songFilters.derivativeOnly);
   });
 
   [dom.sortFieldSelect, dom.sortDirSelect].forEach(el => {

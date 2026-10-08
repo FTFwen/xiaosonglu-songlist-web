@@ -4068,6 +4068,7 @@
               <button class="tool-btn" id="songlistToggleBtn"><svg class="icon" aria-hidden="true"><use href="#icon-folder-add"></use></svg> 我的歌单</button>
               <button class="tool-btn primary" id="playAllBtn" style="display:none;"><svg class="icon" aria-hidden="true"><use href="#icon-caret-right"></use></svg> 播放全部</button>
               <button class="tool-btn" id="playShuffleBtn" style="display:none;"><svg class="icon" aria-hidden="true"><use href="#icon-random-shuffle"></use></svg> 随机播放</button>
+              <button class="tool-btn" id="derivativeOnlyBtn" aria-pressed="false" title="只看小松绿 AI 二创翻唱（平时隐藏，点开显示）"><svg class="icon" aria-hidden="true"><use href="#icon-music"></use></svg> <span class="derivative-label">二创歌曲</span></button>
             </div>
             <div class="meta-text" id="songMetaText">还没有加载歌曲数据。</div>
             <div class="active-filters-bar" id="activeFiltersBar" style="display:none;">
@@ -4132,12 +4133,6 @@
               <button class="tool-btn preset-btn" data-days-min="0" data-days-max="90">近90天</button>
               <button class="tool-btn preset-btn" data-days-min="90" data-days-max="">90天以上</button>
               <button class="tool-btn preset-btn" data-days-min="" data-days-max="">全部</button>
-            </div>
-            <div class="subtle-title" style="margin-top:12px;">二创歌曲</div>
-            <div class="filter-chk-row" style="margin-top:6px;">
-              <label class="filter-chk">
-                <input type="checkbox" id="derivativeOnlyBtn"> 只看二创歌曲（平时隐藏，勾选显示）
-              </label>
             </div>
             </div>
             <div class="drawer-footer">
@@ -4418,7 +4413,7 @@
   <script src="js/data.js?v=30" defer></script>
   <script src="js/listen-together.js?v=4" defer></script>
   <script src="js/rating.js?v=8" defer></script>
-  <script src="js/app.js?v=104" defer></script>
+  <script src="js/app.js?v=105" defer></script>
   <script src="js/motion.js?v=19" defer></script>
   <script src="js/midautumn-skin.js?v=5" defer></script>
 </body>
