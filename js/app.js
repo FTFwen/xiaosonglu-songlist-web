@@ -21,11 +21,9 @@ const FAV_REQUEST_TIMEOUT_MS = 15000;
 // 二创歌曲（手动导入，本地存储；勾选"只看二创"才显示）
 const DERIVATIVE_KEY = 'songs:derivative';
 
-// 人工精修（不是模型直接合成）的二创曲目：演唱者标注写成"精修"而不是合成器名字。
-// 其余二创曲目统一标注为 DiffSinger（合成所用的歌声合成模型），不要笼统写成"AI"。
-const DERIVATIVE_REFINED_SONGS = new Set(['天狼星的心脏']);
-const DERIVATIVE_ARTIST_SYNTH = '小松绿DiffSinger';
-const DERIVATIVE_ARTIST_REFINED = '小松绿精修';
+// 二创曲目的演唱者 / 制作人标注：这些翻唱都是「白烁」制作的。
+// 不要写成"AI"，也不要写成合成器名字（DiffSinger 只是工具，做这些歌的人是白烁）。
+const DERIVATIVE_ARTIST = '白烁';
 
 // 小松绿翻唱（二创）音频：曲名 / 模型版本 / assets/derivative 下的文件名 / 文件 SHA-256 前 12 位
 // 音频随 Git 一起发布（assets/derivative/ 不入 assets/audio/，后者是歌切管线独占的本机目录）。
@@ -51,7 +49,7 @@ const DERIVATIVE_TRACKS = [
   song_name: `小松绿-${songName}`,
   display_song_name: `小松绿-${songName}`,
   display_version: modelVersion,
-  artist: DERIVATIVE_REFINED_SONGS.has(songName) ? DERIVATIVE_ARTIST_REFINED : DERIVATIVE_ARTIST_SYNTH,
+  artist: DERIVATIVE_ARTIST,
   type: '',
   language: '',
   audio: `assets/derivative/${fileName}?v=${contentHash}`

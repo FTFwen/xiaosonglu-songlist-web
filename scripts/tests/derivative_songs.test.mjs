@@ -33,7 +33,7 @@ function evaluate(code, globals = {}) {
 
 // 从 js/app.js 里取真实的 DERIVATIVE_TRACKS（而不是在测试里重复一份名单）
 function readDerivativeTracks() {
-  const table = sourceBetween(appSource, 'const DERIVATIVE_REFINED_SONGS', '// 内置的二创歌曲');
+  const table = sourceBetween(appSource, 'const DERIVATIVE_ARTIST', '// 内置的二创歌曲');
   const context = evaluate(`${table}\nglobalThis.__tracks = DERIVATIVE_TRACKS;`);
   assert.ok(Array.isArray(context.__tracks) && context.__tracks.length > 0, 'DERIVATIVE_TRACKS is empty');
   return context.__tracks;
@@ -57,7 +57,7 @@ test('每个二创音频文件都存在，且 URL 上的 ?v= 等于文件内容�
 
 test('内置二创歌身份唯一：song_id 不重复、song_name 不重复、音频歌带前缀', () => {
   const tracks = readDerivativeTracks();
-  const block = sourceBetween(appSource, 'const DERIVATIVE_REFINED_SONGS', 'function loadDerivativeSongs');
+  const block = sourceBetween(appSource, 'const DERIVATIVE_ARTIST', 'function loadDerivativeSongs');
   const context = evaluate(`${block}\nglobalThis.__builtin = BUILTIN_DERIVATIVE;`);
   const builtin = context.__builtin;
 
@@ -67,10 +67,9 @@ test('内置二创歌身份唯一：song_id 不重复、song_name 不重复、�
     const found = builtin.find(song => song.song_name === track.song_name);
     assert.ok(found, `missing builtin derivative song: ${track.song_name}`);
     assert.equal(found.audio, track.audio);
-    // 演唱者标注：天狼星的心脏是人工精修，其余是 DiffSinger 合成；一律不写"AI"
-    const expectedArtist = track.song_name === '小松绿-天狼星的心脏' ? '小松绿精修' : '小松绿DiffSinger';
-    assert.equal(found.artist, expectedArtist, `${track.song_name} 的演唱者标注不对`);
-    assert.doesNotMatch(String(found.artist), /AI/i, '二创歌不再标注为 AI，合成曲目标 DiffSinger');
+    // 演唱者 / 制作人统一标注为「白烁」：不写"AI"，也不写合成器名字
+    assert.equal(found.artist, '白烁', `${track.song_name} 的演唱者标注应为 白烁`);
+    assert.doesNotMatch(String(found.artist), /AI|DiffSinger|精修/i, '二创歌的标注应为制作人白烁');
     assert.match(found.display_version, /^$|^1\.[01]$/);
     assert.equal(found.song_name, found.display_song_name);
     // 带前缀，避免和同名直播歌共用收藏/评分身份（normalizeSongIdentity 先取 song_name）
@@ -95,7 +94,7 @@ test('没有音频文件的旧内置二创歌不再出现在列表里（含 loca
   ];
   const block = sourceBetween(appSource, 'const DERIVATIVE_KEY', '// 保存二创歌曲到本地');
   // 内置列表里不能有它们
-  const builtinContext = evaluate(`${sourceBetween(appSource, 'const DERIVATIVE_REFINED_SONGS', 'function loadDerivativeSongs')}\nglobalThis.__builtin = BUILTIN_DERIVATIVE;`);
+  const builtinContext = evaluate(`${sourceBetween(appSource, 'const DERIVATIVE_ARTIST', 'function loadDerivativeSongs')}\nglobalThis.__builtin = BUILTIN_DERIVATIVE;`);
   for (const name of dropped) {
     assert.equal(
       builtinContext.__builtin.some(song => String(song.song_name).trim() === name),
