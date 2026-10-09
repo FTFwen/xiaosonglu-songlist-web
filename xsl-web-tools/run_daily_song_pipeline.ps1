@@ -26,10 +26,13 @@ param(
     [string]$ClashController = '',
     [string]$ClashProxyGroup = '',
     [string]$ClashProxyChoice = '',
-    [string]$Root = (Split-Path -Parent $PSScriptRoot)
+    [string]$Root = ''
 )
 
 $ErrorActionPreference = 'Stop'
+# Windows PowerShell 5.1 resolves $PSScriptRoot to an empty string inside a param()
+# default expression, so the root has to be resolved here in the script body.
+if (-not $Root) { $Root = Split-Path -Parent $PSScriptRoot }
 $rootPath = (Resolve-Path $Root).Path
 $node = (Get-Command node -ErrorAction Stop).Source
 $python = (Get-Command python -ErrorAction Stop).Source

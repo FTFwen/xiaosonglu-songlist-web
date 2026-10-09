@@ -2,10 +2,13 @@
 param(
     [switch]$Apply,
     [switch]$Check,
-    [string]$Root = (Split-Path -Parent $PSScriptRoot)
+    [string]$Root = ''
 )
 
 $ErrorActionPreference = 'Stop'
+# Windows PowerShell 5.1 resolves $PSScriptRoot to an empty string inside a param()
+# default expression, so the root has to be resolved here in the script body.
+if (-not $Root) { $Root = Split-Path -Parent $PSScriptRoot }
 if ($Apply -and $Check) { throw 'Choose either -Apply or -Check.' }
 $mode = if ($Apply) { 'apply' } else { 'check' }
 $rootPath = (Resolve-Path $Root).Path

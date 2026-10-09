@@ -1,6 +1,6 @@
 [CmdletBinding()]
 param(
-    [string]$Root = (Split-Path -Parent $PSScriptRoot),
+    [string]$Root = '',
     [string]$TaskName = 'XSL Viridis Daily Song Pipeline',
     [string]$DailyAt = '12:30',
     [ValidateSet('S4U', 'Interactive')]
@@ -16,6 +16,9 @@ param(
 )
 
 $ErrorActionPreference = 'Stop'
+# Windows PowerShell 5.1 resolves $PSScriptRoot to an empty string inside a param()
+# default expression, so the root has to be resolved here in the script body.
+if (-not $Root) { $Root = Split-Path -Parent $PSScriptRoot }
 $rootPath = (Resolve-Path $Root).Path
 $runnerPath = Join-Path $PSScriptRoot 'run_scheduled_song_pipeline.ps1'
 if (-not (Test-Path -LiteralPath $runnerPath -PathType Leaf)) { throw 'The scheduled pipeline runner is missing.' }

@@ -22,10 +22,13 @@ param(
     [string]$ClashProxyChoice = '',
     [string]$ProjectName = 'xsl-songlist',
     [string]$Branch = 'main',
-    [string]$Root = (Split-Path -Parent $PSScriptRoot)
+    [string]$Root = ''
 )
 
 $ErrorActionPreference = 'Stop'
+# Windows PowerShell 5.1 resolves $PSScriptRoot to an empty string inside a param()
+# default expression, so the root has to be resolved here in the script body.
+if (-not $Root) { $Root = Split-Path -Parent $PSScriptRoot }
 $rootPath = (Resolve-Path $Root).Path
 $verificationHelpersPath = Join-Path $PSScriptRoot 'deploy_verification_helpers.ps1'
 if (-not (Test-Path -LiteralPath $verificationHelpersPath -PathType Leaf)) { throw 'Deployment verification helpers are missing.' }

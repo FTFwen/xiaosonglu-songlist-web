@@ -11,10 +11,12 @@ from __future__ import annotations
 
 import argparse
 import hashlib
+import http.client
 import json
 import os
 import sys
 import tempfile
+import time
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
@@ -34,6 +36,13 @@ FILES = (
 )
 MANIFEST_NAME = "remote_baseline_manifest.json"
 USER_AGENT = "xiaosonglu-songlist-baseline-sync/1.0"
+
+# The deployed origin is served through a CDN path that intermittently truncates
+# large responses mid-body, which surfaces as http.client.IncompleteRead rather
+# than a clean URLError. A single flaky transfer must not abort the whole
+# pipeline step, so each file gets its own bounded retry budget.
+FETCH_ATTEMPTS = 4
+FETCH_RETRY_DELAY_SECONDS = 5.0
 
 
 def sha256_bytes(content: bytes) -> str:
@@ -125,6 +134,8 @@ def main() -> int:
     parser.add_argument("--data-dir", default="data/xiaosonglu", help="Local song data directory")
     parser.add_argument("--manifest", default="", help="Manifest path (defaults inside data directory)")
     parser.add_argument("--timeout", type=float, default=30.0, help="Per-request timeout in seconds")
+    parser.add_argument("--attempts", type=int, default=FETCH_ATTEMPTS, help="Attempts per file before giving up on transient transport errors")
+    parser.add_argument("--retry-delay", type=float, default=FETCH_RETRY_DELAY_SECONDS, help="Base seconds between attempts, multiplied by the attempt number")
     parser.add_argument("--adopt-remote", action="store_true", help="Explicitly replace locally diverged files with deployed content")
     parser.add_argument("--force-download", action="store_true", help="Ignore cached validators and request every payload")
     args = parser.parse_args()
@@ -139,6 +150,7 @@ def main() -> int:
     updated_local = 0
     skipped_remote = 0
     conflicts: list[str] = []
+    attempts = max(1, args.attempts)
 
     for name in FILES:
         local_path = data_dir / name
@@ -151,10 +163,29 @@ def main() -> int:
         conditional = not (args.force_download or args.adopt_remote) and bool(previous) and local_path.exists()
         url = args.base_url.rstrip("/") + "/" + name
 
-        try:
-            status, content, response_headers = fetch(url, previous, args.timeout, conditional)
-        except (HTTPError, URLError, TimeoutError, OSError) as error:
-            print(f"ERROR {name}: {error}", file=sys.stderr)
+        last_error = None
+        for attempt in range(1, attempts + 1):
+            try:
+                status, content, response_headers = fetch(url, previous, args.timeout, conditional)
+                last_error = None
+                break
+            except HTTPError as error:
+                # A deterministic client error will not fix itself; only server-side
+                # failures are worth another transfer.
+                if error.code < 500:
+                    print(f"ERROR {name}: {error}", file=sys.stderr)
+                    return 1
+                last_error = error
+            except (URLError, TimeoutError, OSError, http.client.IncompleteRead) as error:
+                last_error = error
+            if attempt < attempts:
+                print(
+                    f"RETRY {name}: {type(last_error).__name__}: {last_error} (attempt {attempt}/{attempts})",
+                    file=sys.stderr,
+                )
+                time.sleep(args.retry_delay * attempt)
+        if last_error is not None:
+            print(f"ERROR {name}: {last_error}", file=sys.stderr)
             return 1
 
         if status == 304:

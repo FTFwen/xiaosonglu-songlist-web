@@ -1,11 +1,14 @@
 param(
     [switch]$Deploy,
     [switch]$AllowOAuth,
-    [string]$Root = (Split-Path -Parent $PSScriptRoot),
+    [string]$Root = '',
     [string]$WranglerVersion = '4.130.0'
 )
 
 $ErrorActionPreference = 'Stop'
+# Windows PowerShell 5.1 resolves $PSScriptRoot to an empty string inside a param()
+# default expression, so the root has to be resolved here in the script body.
+if (-not $Root) { $Root = Split-Path -Parent $PSScriptRoot }
 $rootPath = (Resolve-Path $Root).Path
 $configPath = Join-Path $rootPath 'workers\listen-room\wrangler.toml'
 if (-not (Test-Path -LiteralPath $configPath -PathType Leaf)) { throw 'listen-room wrangler.toml is missing.' }
