@@ -1,7 +1,7 @@
 {
   "roomKey": "xiaosonglu",
   "roomId": "1727071052",
-  "generatedAt": "2026-10-08T03:17:38.837Z",
+  "generatedAt": "2026-10-09T02:13:31.178Z",
   "source": "local-replay-ingestion",
   "bySongKey": {
     "少女レイ": {
@@ -10,8 +10,23 @@
       "display_song_name": "少女レイ",
       "artist": "みきとP / 初音ミク",
       "cut_link": "https://www.bilibili.com/video/BV1Xiu86aEwV/",
-      "total_count": 4,
+      "total_count": 5,
       "entries": [
+        {
+          "date": "2026-10-08",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切复核",
+          "artist": "みきとP / 初音ミク",
+          "replay_id": "live:01c3a6cc-c64f-43d4-83fa-9330a18be127",
+          "replay_title": "【小松绿Viridis】竟然是潜水员戴夫！ 2026-10-08",
+          "replay_url": "",
+          "remark": "回放 01:55:59 与 01:58:26 的弹幕歌词「君は友達」即本曲歌词，02:01:09 弹幕「少女就得唱少女」收束。歌切分P名为「02_少女レイ - みきとP, 初音ミク」，描述含「2026.10.08」与全自动歌切说明；同场另有超级海粼猫 BV1GjHX6ZE1y（285s，23:10 上传，标题即含「2026.10.8」）与桐人今天睡大觉 BV1ckHR6UEZu（287s 歌词文字PV版）可交叉复核，三者时长一致（4:45-4:47）。",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-title",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1DPHd6YEUX/"
+        },
         {
           "date": "2026-10-02",
           "time": "",
@@ -460,8 +475,23 @@
       "display_song_name": "青柠",
       "artist": "徐秉龙 / 桃十五",
       "cut_link": "https://www.bilibili.com/video/BV1gTu16BEjy/",
-      "total_count": 1,
+      "total_count": 2,
       "entries": [
+        {
+          "date": "2026-10-08",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切复核",
+          "artist": "徐秉龙 / 桃十五",
+          "replay_id": "live:01c3a6cc-c64f-43d4-83fa-9330a18be127",
+          "replay_title": "【小松绿Viridis】竟然是潜水员戴夫！ 2026-10-08",
+          "replay_url": "",
+          "remark": "回放 02:30:42 起弹幕反复点「青柠」（02:31:59「青柠你唱过的呀」、02:35:46「叫青柠」），02:34 出现「好听」刷屏与 02:34:10「这首歌叫什么名字呀唱的好好」，02:37 起转入感谢/下播话题，故演唱窗口约 02:31-02:36。歌切描述含「2026年10月8日歌回 最伟大的重置」，与标题「时隔两个月最伟大的重置」及 2026-08-09 本站同曲记录（徐秉龙 / 桃十五）吻合，故沿用原歌手与标签。",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-title",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1AWHd6DEee/"
+        },
         {
           "date": "2026-08-09",
           "time": "00:06:00",
@@ -2940,8 +2970,23 @@
       "display_song_name": "绿色",
       "artist": "陈雪凝",
       "cut_link": "https://www.bilibili.com/video/BV1ZT4k6QEpC/",
-      "total_count": 2,
+      "total_count": 3,
       "entries": [
+        {
+          "date": "2026-10-08",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切复核",
+          "artist": "陈雪凝",
+          "replay_id": "live:01c3a6cc-c64f-43d4-83fa-9330a18be127",
+          "replay_title": "【小松绿Viridis】竟然是潜水员戴夫！ 2026-10-08",
+          "replay_url": "",
+          "remark": "回放 02:15:36 弹幕「xsl会唱绿色吗」起，02:16-02:21 被「绿色/只剩绿色/绿色唱绿色」刷屏，02:22:03 出现「两个绿色都没在调上」（当场唱了两遍）。歌切分P名即「绿色」，描述含「2026.10.08」与全自动歌切说明。旁证：花亦痕逝 BV1XcHd6vEBr（273s，分P名 VID_20261008_232045 即 23:20:45 录屏）、黄鱼鼠条 BV1XAHd6PEyN（271s，描述「2026年10月8日」）——三个来源时长一致。",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-title",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1GAHd6NEg4/"
+        },
         {
           "date": "2026-08-29",
           "time": "00:33:30",
@@ -5300,8 +5345,23 @@
       "display_song_name": "住在天狼星的那个人",
       "artist": "OHMYMEITING（黄美婷）",
       "cut_link": "https://www.bilibili.com/video/BV1PQeN6kETG/",
-      "total_count": 1,
+      "total_count": 2,
       "entries": [
+        {
+          "date": "2026-10-08",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切复核",
+          "artist": "OHMYMEITING（黄美婷）",
+          "replay_id": "live:01c3a6cc-c64f-43d4-83fa-9330a18be127",
+          "replay_title": "【小松绿Viridis】竟然是潜水员戴夫！ 2026-10-08",
+          "replay_url": "",
+          "remark": "回放 01:45-01:53 弹幕被「🌲🌲🌲\\ 天狼星上小松绿/（5070ti版）\\心里有你小松绿/🌲🌲🌲」刷屏，与歌切标题一致。该歌切描述含「2026.10.08」并注明「本合集使用全自动歌切项目生成」，即当晚直播原声；同场另有黄鱼鼠条 BV1mVHd64ERA（265s，「新麦重置版」）可交叉复核。曲目与歌手沿用本站 2026-09-16 的同曲记录。",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-title",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1m3Hd6ZE97/"
+        },
         {
           "date": "2026-09-16",
           "time": "00:52:30",
@@ -7886,6 +7946,31 @@
           "song_resolution_method": "song-cut-collection-chapter",
           "replay_date_source": "live-api-date",
           "cut_link": "https://www.bilibili.com/video/BV1Pxa269EiF/?p=7"
+        }
+      ]
+    },
+    "宇宙冷漠": {
+      "row_key": "宇宙冷漠",
+      "song_name": "宇宙冷漠",
+      "display_song_name": "宇宙冷漠",
+      "artist": "幻琉HL",
+      "cut_link": "https://www.bilibili.com/video/BV1v5HX6FEAz/",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-10-08",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切复核",
+          "artist": "幻琉HL",
+          "replay_id": "live:01c3a6cc-c64f-43d4-83fa-9330a18be127",
+          "replay_title": "【小松绿Viridis】竟然是潜水员戴夫！ 2026-10-08",
+          "replay_url": "",
+          "remark": "回放 02:26-02:32 弹幕「宇宙冷漠」刷屏（含 02:27 起的「宇宙冷漠小松绿」应援词）。歌切分P名为 Screenrecorder-2026-10-08-23-25-30-552，即 23:25:30 现场录屏；描述写明「20261008@小松绿Viridis」「原曲来自：@幻琉HL」，歌手即依此归属。同场小松绿天生就喜欢笑 BV1v5HX6FEGm（180s，标题「辅助轮跟唱」，描述「20261008」）可交叉复核，两者均显示为跟唱原曲（辅助轮），非纯伴奏演唱；弹幕 02:23:14「？你开原唱了？」即针对此。该曲为《杀戮尖塔2》社区曲（弹幕称「塔二」），故标 typeTags=游戏。",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-title",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1v5HX6FEAz/"
         }
       ]
     }

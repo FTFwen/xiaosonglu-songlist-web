@@ -4,7 +4,7 @@
   "roomId": "1727071052",
   "channelUid": "1891335475",
   "baselineDate": "2026-09-03",
-  "updatedAt": "2026-10-08T03:17:49.312Z",
+  "updatedAt": "2026-10-09T02:13:31.273Z",
   "processedLives": [
     {
       "liveId": "dc67a9ea-6da7-48f4-bd73-349976e92859",
@@ -828,6 +828,32 @@
       "lyricLineCount": 0,
       "candidateClusterCount": 3,
       "reviewedAt": "2026-10-08T03:17:49.311Z"
+    },
+    {
+      "liveId": "01c3a6cc-c64f-43d4-83fa-9330a18be127",
+      "date": "2026-10-08",
+      "title": "竟然是潜水员戴夫！",
+      "startDate": 1791464343000,
+      "stopDate": 1791474854764,
+      "decision": "imported",
+      "importedSongKeys": [
+        "2026-10-08::绿色",
+        "2026-10-08::青柠",
+        "2026-10-08::少女レイ",
+        "2026-10-08::宇宙冷漠",
+        "2026-10-08::住在天狼星的那个人"
+      ],
+      "notes": "已验证 5 个日期+歌曲键存在于事实源。",
+      "scannedAt": "2026-10-09T02:07:59.708Z",
+      "sourceFile": "_danmaku_2026-10-08_01c3a6cc.json",
+      "nextOffset": 74892,
+      "apiTotal": 74892,
+      "fetchComplete": true,
+      "candidateFile": "_candidate_2026-10-08_01c3a6cc.json",
+      "reusedArtifact": false,
+      "lyricLineCount": 5,
+      "candidateClusterCount": 5,
+      "reviewedAt": "2026-10-09T02:13:31.273Z"
     }
   ]
 }

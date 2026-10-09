@@ -1,16 +1,17 @@
 {
   "roomKey": "xiaosonglu",
   "roomId": "1727071052",
-  "generatedAt": "2026-10-08T03:17:38.837Z",
+  "generatedAt": "2026-10-09T02:13:31.178Z",
   "source": "local-replay-ingestion",
   "latest": {
     "year": "2026",
     "month": "10",
-    "day": "06"
+    "day": "08"
   },
   "dateTree": {
     "2026": {
       "10": {
+        "08": 5,
         "06": 17,
         "02": 33
       },
@@ -6041,6 +6042,98 @@
         "lyric_excerpt": "",
         "song_resolution_method": "song-cut-collection-chapter",
         "cut_link": "https://www.bilibili.com/video/BV18Jpw6mE82/?p=17"
+      }
+    ],
+    "2026-10-08": [
+      {
+        "song_name": "住在天狼星的那个人",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切复核"
+        ],
+        "artist": "OHMYMEITING（黄美婷）",
+        "replay_id": "live:01c3a6cc-c64f-43d4-83fa-9330a18be127",
+        "replay_title": "【小松绿Viridis】竟然是潜水员戴夫！ 2026-10-08",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "住在天狼星的那个人",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-title",
+        "cut_link": "https://www.bilibili.com/video/BV1m3Hd6ZE97/"
+      },
+      {
+        "song_name": "少女レイ",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切复核"
+        ],
+        "artist": "みきとP / 初音ミク",
+        "replay_id": "live:01c3a6cc-c64f-43d4-83fa-9330a18be127",
+        "replay_title": "【小松绿Viridis】竟然是潜水员戴夫！ 2026-10-08",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "少女レイ",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-title",
+        "cut_link": "https://www.bilibili.com/video/BV1DPHd6YEUX/"
+      },
+      {
+        "song_name": "绿色",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切复核"
+        ],
+        "artist": "陈雪凝",
+        "replay_id": "live:01c3a6cc-c64f-43d4-83fa-9330a18be127",
+        "replay_title": "【小松绿Viridis】竟然是潜水员戴夫！ 2026-10-08",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "绿色",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-title",
+        "cut_link": "https://www.bilibili.com/video/BV1GAHd6NEg4/"
+      },
+      {
+        "song_name": "宇宙冷漠",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切复核"
+        ],
+        "artist": "幻琉HL",
+        "replay_id": "live:01c3a6cc-c64f-43d4-83fa-9330a18be127",
+        "replay_title": "【小松绿Viridis】竟然是潜水员戴夫！ 2026-10-08",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "宇宙冷漠",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-title",
+        "cut_link": "https://www.bilibili.com/video/BV1v5HX6FEAz/"
+      },
+      {
+        "song_name": "青柠",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切复核"
+        ],
+        "artist": "徐秉龙 / 桃十五",
+        "replay_id": "live:01c3a6cc-c64f-43d4-83fa-9330a18be127",
+        "replay_title": "【小松绿Viridis】竟然是潜水员戴夫！ 2026-10-08",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "青柠",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-title",
+        "cut_link": "https://www.bilibili.com/video/BV1AWHd6DEee/"
       }
     ]
   }

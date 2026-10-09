@@ -1,10 +1,10 @@
 {
   "roomKey": "xiaosonglu",
   "roomId": "1727071052",
-  "generatedAt": "2026-10-08T03:23:42.590Z",
+  "generatedAt": "2026-10-09T02:17:11.894Z",
   "source": "song-cut-audio-download",
   "description": "每首歌对应的翻唱切片音频（从 B 站歌切/回放下载），供网页在线播放。",
-  "count": 287,
+  "count": 288,
   "audios": {
     "勾指起誓": "assets/audio/song_88.m4a?v=1d344dfde754",
     "蝴蝶": "assets/audio/song_25.m4a?v=d8fb99252c26",
@@ -292,7 +292,8 @@
     "月が綺麗ねと言われたい!（第一遍）": "assets/audio/song_285.m4a?v=961cf7cc3a6a",
     "月が綺麗ねと言われたい!（第二遍）": "assets/audio/song_286.m4a?v=0f5dae858673",
     "农夫渔夫": "assets/audio/song_287.m4a?v=a28fd1cacf4a",
-    "ハッピーエンド": "assets/audio/song_288.m4a?v=27a01a4b5d03"
+    "ハッピーエンド": "assets/audio/song_288.m4a?v=27a01a4b5d03",
+    "宇宙冷漠": "assets/audio/song_289.m4a?v=66fdecbb21d6"
   },
   "verificationTargets": [
     "中华墨水娘",

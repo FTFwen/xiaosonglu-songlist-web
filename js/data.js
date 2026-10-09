@@ -1,11 +1,11 @@
 // 本文件由 scripts/build_xiaosonglu_song_data.mjs 从 data/xiaosonglu/ 生成，供 file:// 离线回退使用。
-// 生成时间：2026-10-08 11:23:42
+// 生成时间：2026-10-09 10:17:11
 // 数据源：data/xiaosonglu/（song_catalog / history_index / song_details / audio_index / song_cut_info）
 window.XSL_DATA = {
   song_catalog: {
   "roomKey": "xiaosonglu",
   "roomId": "1727071052",
-  "generatedAt": "2026-10-08T03:17:38.837Z",
+  "generatedAt": "2026-10-09T02:13:31.178Z",
   "source": "local-replay-ingestion",
   "songs": [
     {
@@ -24,9 +24,9 @@ window.XSL_DATA = {
       "display_version": "",
       "search_name": "",
       "cut_link": "https://www.bilibili.com/video/BV1Xiu86aEwV/",
-      "sing_count": 4,
-      "status_labels": "歌切直补、待原始回放定位、歌回、自动识别待人工复核、歌切合集复核",
-      "last_sing_at": "2026-10-02",
+      "sing_count": 5,
+      "status_labels": "歌切直补、待原始回放定位、歌回、自动识别待人工复核、歌切合集复核、歌切复核",
+      "last_sing_at": "2026-10-08",
       "row_key": "少女レイ"
     },
     {
@@ -93,6 +93,27 @@ window.XSL_DATA = {
       "row_key": "SOS"
     },
     {
+      "song_id": 99,
+      "song_name": "绿色",
+      "show_as_song_name": "",
+      "display_song_name": "绿色",
+      "artist": "陈雪凝",
+      "artist_search": "陈雪凝",
+      "feat_artist": "",
+      "remark": "2026-08-26 谢礼物和神秘星露谷（22点场）尾段语音频道（游龙287）中，小松绿与四时小路Komichi、羽啾chu2u三人合唱《绿色》；切片【小松绿/四时小路/羽啾】标题佐证（BV1QG8o6xE13，103s，沉默环节）。直播间弹幕无歌词行（语音频道合唱不在本房间弹幕里），仅 23:07「你在后边唱歌」、23:32「一转歌回」等提示；另有切片标题「小路和羽啾合唱《绿色》无能的小松绿只能向枝堇妈妈哭诉」（BV1cL8Z6VE6p）提示该晚小松绿曾试图加入但未成，是否正式开唱存疑 → 待人工复核。start/end 为按弹幕时间线估算。（2026-08-29 用户确认：catalog 主 cut 采用 08-29 场 给我来打二向箔 版 BV1ZT4k6QEpC，本语音合唱段 cut_link 置空，切片仍保留于 cut_index 08-26 条目）",
+      "tone": "",
+      "language": "中文",
+      "type": "流行",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1ZT4k6QEpC/",
+      "sing_count": 3,
+      "status_labels": "语音频道合唱、自动识别待人工复核、歌回、歌切确认、歌切复核",
+      "last_sing_at": "2026-10-08",
+      "row_key": "绿色"
+    },
+    {
       "song_id": 35,
       "song_name": "勾指起誓",
       "show_as_song_name": "",
@@ -154,27 +175,6 @@ window.XSL_DATA = {
       "status_labels": "歌回、自动识别待人工复核",
       "last_sing_at": "2026-08-18",
       "row_key": "寄明月"
-    },
-    {
-      "song_id": 99,
-      "song_name": "绿色",
-      "show_as_song_name": "",
-      "display_song_name": "绿色",
-      "artist": "陈雪凝",
-      "artist_search": "陈雪凝",
-      "feat_artist": "",
-      "remark": "2026-08-26 谢礼物和神秘星露谷（22点场）尾段语音频道（游龙287）中，小松绿与四时小路Komichi、羽啾chu2u三人合唱《绿色》；切片【小松绿/四时小路/羽啾】标题佐证（BV1QG8o6xE13，103s，沉默环节）。直播间弹幕无歌词行（语音频道合唱不在本房间弹幕里），仅 23:07「你在后边唱歌」、23:32「一转歌回」等提示；另有切片标题「小路和羽啾合唱《绿色》无能的小松绿只能向枝堇妈妈哭诉」（BV1cL8Z6VE6p）提示该晚小松绿曾试图加入但未成，是否正式开唱存疑 → 待人工复核。start/end 为按弹幕时间线估算。（2026-08-29 用户确认：catalog 主 cut 采用 08-29 场 给我来打二向箔 版 BV1ZT4k6QEpC，本语音合唱段 cut_link 置空，切片仍保留于 cut_index 08-26 条目）",
-      "tone": "",
-      "language": "中文",
-      "type": "流行",
-      "identification": "",
-      "display_version": "",
-      "search_name": "",
-      "cut_link": "https://www.bilibili.com/video/BV1ZT4k6QEpC/",
-      "sing_count": 2,
-      "status_labels": "语音频道合唱、自动识别待人工复核、歌回、歌切确认",
-      "last_sing_at": "2026-08-29",
-      "row_key": "绿色"
     },
     {
       "song_id": 29,
@@ -826,6 +826,48 @@ window.XSL_DATA = {
       "status_labels": "歌切直补、待原始回放定位、歌回、歌切复核",
       "last_sing_at": "2026-10-02",
       "row_key": "恋爱困难少女"
+    },
+    {
+      "song_id": 16,
+      "song_name": "青柠",
+      "show_as_song_name": "",
+      "display_song_name": "青柠",
+      "artist": "徐秉龙 / 桃十五",
+      "artist_search": "徐秉龙 桃十五",
+      "feat_artist": "",
+      "remark": "来自 2026-08-09 第一次歌回回放 p2 前段。p2 的 06-09 分钟切片里虽然仍有听写噪声，但“冰镇可乐甜甜的芒果”“金色的柠檬味道”“仿若青柠的悠扬”“到达直通你心门的方向”等关键词与徐秉龙 / 桃十五《青柠》高度重合，可先入库并保留人工复核标签。",
+      "tone": "",
+      "language": "中文",
+      "type": "流行、民谣",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1gTu16BEjy/",
+      "sing_count": 2,
+      "status_labels": "歌回、自动识别待人工复核、歌切复核",
+      "last_sing_at": "2026-10-08",
+      "row_key": "青柠"
+    },
+    {
+      "song_id": 188,
+      "song_name": "住在天狼星的那个人",
+      "show_as_song_name": "",
+      "display_song_name": "住在天狼星的那个人",
+      "artist": "OHMYMEITING（黄美婷）",
+      "artist_search": "OHMYMEITING",
+      "feat_artist": "",
+      "remark": "初扫因无【】括号歌词弹幕自动判为 no-songs，经用户提供歌切 BV1PQeN6kETG 人工翻案。UP 黄鱼鼠条（mid=137700370）独立歌切，简介注明「2026年9月16日杂谈」，发布于直播结束后（2026-09-17 00:35 UTC+8）；曲名《住在天狼星的那个人》与原唱 OHMYMEITING（黄美婷）经 Apple Music／Musixmatch／Shazam 交叉核实，标题歌词「明明你就是对的人」及原词「让我们一起私奔」与直播弹幕玩梗内容吻合。弹幕中的「现场写歌」「原创领域大神」为观众调侃唱功咬字，非即兴原创曲。用户已人工确认无误。startTime/endTime 为弹幕反应窗估计值。",
+      "tone": "",
+      "language": "中文",
+      "type": "流行",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1PQeN6kETG/",
+      "sing_count": 2,
+      "status_labels": "歌回、独立歌切复核、歌切复核",
+      "last_sing_at": "2026-10-08",
+      "row_key": "住在天狼星的那个人"
     },
     {
       "song_id": 103,
@@ -1813,27 +1855,6 @@ window.XSL_DATA = {
       "status_labels": "歌回",
       "last_sing_at": "2026-08-29",
       "row_key": "绮凝盏"
-    },
-    {
-      "song_id": 16,
-      "song_name": "青柠",
-      "show_as_song_name": "",
-      "display_song_name": "青柠",
-      "artist": "徐秉龙 / 桃十五",
-      "artist_search": "徐秉龙 桃十五",
-      "feat_artist": "",
-      "remark": "来自 2026-08-09 第一次歌回回放 p2 前段。p2 的 06-09 分钟切片里虽然仍有听写噪声，但“冰镇可乐甜甜的芒果”“金色的柠檬味道”“仿若青柠的悠扬”“到达直通你心门的方向”等关键词与徐秉龙 / 桃十五《青柠》高度重合，可先入库并保留人工复核标签。",
-      "tone": "",
-      "language": "中文",
-      "type": "流行、民谣",
-      "identification": "",
-      "display_version": "",
-      "search_name": "",
-      "cut_link": "https://www.bilibili.com/video/BV1gTu16BEjy/",
-      "sing_count": 1,
-      "status_labels": "歌回、自动识别待人工复核",
-      "last_sing_at": "2026-08-09",
-      "row_key": "青柠"
     },
     {
       "song_id": 60,
@@ -3999,27 +4020,6 @@ window.XSL_DATA = {
       "row_key": "たぶん"
     },
     {
-      "song_id": 188,
-      "song_name": "住在天狼星的那个人",
-      "show_as_song_name": "",
-      "display_song_name": "住在天狼星的那个人",
-      "artist": "OHMYMEITING（黄美婷）",
-      "artist_search": "OHMYMEITING",
-      "feat_artist": "",
-      "remark": "初扫因无【】括号歌词弹幕自动判为 no-songs，经用户提供歌切 BV1PQeN6kETG 人工翻案。UP 黄鱼鼠条（mid=137700370）独立歌切，简介注明「2026年9月16日杂谈」，发布于直播结束后（2026-09-17 00:35 UTC+8）；曲名《住在天狼星的那个人》与原唱 OHMYMEITING（黄美婷）经 Apple Music／Musixmatch／Shazam 交叉核实，标题歌词「明明你就是对的人」及原词「让我们一起私奔」与直播弹幕玩梗内容吻合。弹幕中的「现场写歌」「原创领域大神」为观众调侃唱功咬字，非即兴原创曲。用户已人工确认无误。startTime/endTime 为弹幕反应窗估计值。",
-      "tone": "",
-      "language": "中文",
-      "type": "流行",
-      "identification": "",
-      "display_version": "",
-      "search_name": "",
-      "cut_link": "https://www.bilibili.com/video/BV1PQeN6kETG/",
-      "sing_count": 1,
-      "status_labels": "歌回、独立歌切复核",
-      "last_sing_at": "2026-09-16",
-      "row_key": "住在天狼星的那个人"
-    },
-    {
       "song_id": 194,
       "song_name": "秒针を噛む",
       "show_as_song_name": "",
@@ -6076,22 +6076,44 @@ window.XSL_DATA = {
       "status_labels": "歌回、歌切复核",
       "last_sing_at": "2026-10-02",
       "row_key": "月が綺麗ねと言われたい!（第一遍）"
+    },
+    {
+      "song_id": 290,
+      "song_name": "宇宙冷漠",
+      "show_as_song_name": "",
+      "display_song_name": "宇宙冷漠",
+      "artist": "幻琉HL",
+      "artist_search": "幻琉HL",
+      "feat_artist": "",
+      "remark": "回放 02:26-02:32 弹幕「宇宙冷漠」刷屏（含 02:27 起的「宇宙冷漠小松绿」应援词）。歌切分P名为 Screenrecorder-2026-10-08-23-25-30-552，即 23:25:30 现场录屏；描述写明「20261008@小松绿Viridis」「原曲来自：@幻琉HL」，歌手即依此归属。同场小松绿天生就喜欢笑 BV1v5HX6FEGm（180s，标题「辅助轮跟唱」，描述「20261008」）可交叉复核，两者均显示为跟唱原曲（辅助轮），非纯伴奏演唱；弹幕 02:23:14「？你开原唱了？」即针对此。该曲为《杀戮尖塔2》社区曲（弹幕称「塔二」），故标 typeTags=游戏。",
+      "tone": "",
+      "language": "中文",
+      "type": "游戏",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1v5HX6FEAz/",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切复核",
+      "last_sing_at": "2026-10-08",
+      "row_key": "宇宙冷漠"
     }
   ]
 },
   history_index: {
   "roomKey": "xiaosonglu",
   "roomId": "1727071052",
-  "generatedAt": "2026-10-08T03:17:38.837Z",
+  "generatedAt": "2026-10-09T02:13:31.178Z",
   "source": "local-replay-ingestion",
   "latest": {
     "year": "2026",
     "month": "10",
-    "day": "06"
+    "day": "08"
   },
   "dateTree": {
     "2026": {
       "10": {
+        "08": 5,
         "06": 17,
         "02": 33
       },
@@ -12123,13 +12145,105 @@ window.XSL_DATA = {
         "song_resolution_method": "song-cut-collection-chapter",
         "cut_link": "https://www.bilibili.com/video/BV18Jpw6mE82/?p=17"
       }
+    ],
+    "2026-10-08": [
+      {
+        "song_name": "住在天狼星的那个人",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切复核"
+        ],
+        "artist": "OHMYMEITING（黄美婷）",
+        "replay_id": "live:01c3a6cc-c64f-43d4-83fa-9330a18be127",
+        "replay_title": "【小松绿Viridis】竟然是潜水员戴夫！ 2026-10-08",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "住在天狼星的那个人",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-title",
+        "cut_link": "https://www.bilibili.com/video/BV1m3Hd6ZE97/"
+      },
+      {
+        "song_name": "少女レイ",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切复核"
+        ],
+        "artist": "みきとP / 初音ミク",
+        "replay_id": "live:01c3a6cc-c64f-43d4-83fa-9330a18be127",
+        "replay_title": "【小松绿Viridis】竟然是潜水员戴夫！ 2026-10-08",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "少女レイ",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-title",
+        "cut_link": "https://www.bilibili.com/video/BV1DPHd6YEUX/"
+      },
+      {
+        "song_name": "绿色",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切复核"
+        ],
+        "artist": "陈雪凝",
+        "replay_id": "live:01c3a6cc-c64f-43d4-83fa-9330a18be127",
+        "replay_title": "【小松绿Viridis】竟然是潜水员戴夫！ 2026-10-08",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "绿色",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-title",
+        "cut_link": "https://www.bilibili.com/video/BV1GAHd6NEg4/"
+      },
+      {
+        "song_name": "宇宙冷漠",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切复核"
+        ],
+        "artist": "幻琉HL",
+        "replay_id": "live:01c3a6cc-c64f-43d4-83fa-9330a18be127",
+        "replay_title": "【小松绿Viridis】竟然是潜水员戴夫！ 2026-10-08",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "宇宙冷漠",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-title",
+        "cut_link": "https://www.bilibili.com/video/BV1v5HX6FEAz/"
+      },
+      {
+        "song_name": "青柠",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切复核"
+        ],
+        "artist": "徐秉龙 / 桃十五",
+        "replay_id": "live:01c3a6cc-c64f-43d4-83fa-9330a18be127",
+        "replay_title": "【小松绿Viridis】竟然是潜水员戴夫！ 2026-10-08",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "青柠",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-title",
+        "cut_link": "https://www.bilibili.com/video/BV1AWHd6DEee/"
+      }
     ]
   }
 },
   song_details: {
   "roomKey": "xiaosonglu",
   "roomId": "1727071052",
-  "generatedAt": "2026-10-08T03:17:38.837Z",
+  "generatedAt": "2026-10-09T02:13:31.178Z",
   "source": "local-replay-ingestion",
   "bySongKey": {
     "少女レイ": {
@@ -12138,8 +12252,23 @@ window.XSL_DATA = {
       "display_song_name": "少女レイ",
       "artist": "みきとP / 初音ミク",
       "cut_link": "https://www.bilibili.com/video/BV1Xiu86aEwV/",
-      "total_count": 4,
+      "total_count": 5,
       "entries": [
+        {
+          "date": "2026-10-08",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切复核",
+          "artist": "みきとP / 初音ミク",
+          "replay_id": "live:01c3a6cc-c64f-43d4-83fa-9330a18be127",
+          "replay_title": "【小松绿Viridis】竟然是潜水员戴夫！ 2026-10-08",
+          "replay_url": "",
+          "remark": "回放 01:55:59 与 01:58:26 的弹幕歌词「君は友達」即本曲歌词，02:01:09 弹幕「少女就得唱少女」收束。歌切分P名为「02_少女レイ - みきとP, 初音ミク」，描述含「2026.10.08」与全自动歌切说明；同场另有超级海粼猫 BV1GjHX6ZE1y（285s，23:10 上传，标题即含「2026.10.8」）与桐人今天睡大觉 BV1ckHR6UEZu（287s 歌词文字PV版）可交叉复核，三者时长一致（4:45-4:47）。",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-title",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1DPHd6YEUX/"
+        },
         {
           "date": "2026-10-02",
           "time": "",
@@ -12588,8 +12717,23 @@ window.XSL_DATA = {
       "display_song_name": "青柠",
       "artist": "徐秉龙 / 桃十五",
       "cut_link": "https://www.bilibili.com/video/BV1gTu16BEjy/",
-      "total_count": 1,
+      "total_count": 2,
       "entries": [
+        {
+          "date": "2026-10-08",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切复核",
+          "artist": "徐秉龙 / 桃十五",
+          "replay_id": "live:01c3a6cc-c64f-43d4-83fa-9330a18be127",
+          "replay_title": "【小松绿Viridis】竟然是潜水员戴夫！ 2026-10-08",
+          "replay_url": "",
+          "remark": "回放 02:30:42 起弹幕反复点「青柠」（02:31:59「青柠你唱过的呀」、02:35:46「叫青柠」），02:34 出现「好听」刷屏与 02:34:10「这首歌叫什么名字呀唱的好好」，02:37 起转入感谢/下播话题，故演唱窗口约 02:31-02:36。歌切描述含「2026年10月8日歌回 最伟大的重置」，与标题「时隔两个月最伟大的重置」及 2026-08-09 本站同曲记录（徐秉龙 / 桃十五）吻合，故沿用原歌手与标签。",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-title",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1AWHd6DEee/"
+        },
         {
           "date": "2026-08-09",
           "time": "00:06:00",
@@ -15068,8 +15212,23 @@ window.XSL_DATA = {
       "display_song_name": "绿色",
       "artist": "陈雪凝",
       "cut_link": "https://www.bilibili.com/video/BV1ZT4k6QEpC/",
-      "total_count": 2,
+      "total_count": 3,
       "entries": [
+        {
+          "date": "2026-10-08",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切复核",
+          "artist": "陈雪凝",
+          "replay_id": "live:01c3a6cc-c64f-43d4-83fa-9330a18be127",
+          "replay_title": "【小松绿Viridis】竟然是潜水员戴夫！ 2026-10-08",
+          "replay_url": "",
+          "remark": "回放 02:15:36 弹幕「xsl会唱绿色吗」起，02:16-02:21 被「绿色/只剩绿色/绿色唱绿色」刷屏，02:22:03 出现「两个绿色都没在调上」（当场唱了两遍）。歌切分P名即「绿色」，描述含「2026.10.08」与全自动歌切说明。旁证：花亦痕逝 BV1XcHd6vEBr（273s，分P名 VID_20261008_232045 即 23:20:45 录屏）、黄鱼鼠条 BV1XAHd6PEyN（271s，描述「2026年10月8日」）——三个来源时长一致。",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-title",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1GAHd6NEg4/"
+        },
         {
           "date": "2026-08-29",
           "time": "00:33:30",
@@ -17428,8 +17587,23 @@ window.XSL_DATA = {
       "display_song_name": "住在天狼星的那个人",
       "artist": "OHMYMEITING（黄美婷）",
       "cut_link": "https://www.bilibili.com/video/BV1PQeN6kETG/",
-      "total_count": 1,
+      "total_count": 2,
       "entries": [
+        {
+          "date": "2026-10-08",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切复核",
+          "artist": "OHMYMEITING（黄美婷）",
+          "replay_id": "live:01c3a6cc-c64f-43d4-83fa-9330a18be127",
+          "replay_title": "【小松绿Viridis】竟然是潜水员戴夫！ 2026-10-08",
+          "replay_url": "",
+          "remark": "回放 01:45-01:53 弹幕被「🌲🌲🌲\\ 天狼星上小松绿/（5070ti版）\\心里有你小松绿/🌲🌲🌲」刷屏，与歌切标题一致。该歌切描述含「2026.10.08」并注明「本合集使用全自动歌切项目生成」，即当晚直播原声；同场另有黄鱼鼠条 BV1mVHd64ERA（265s，「新麦重置版」）可交叉复核。曲目与歌手沿用本站 2026-09-16 的同曲记录。",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-title",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1m3Hd6ZE97/"
+        },
         {
           "date": "2026-09-16",
           "time": "00:52:30",
@@ -20016,16 +20190,41 @@ window.XSL_DATA = {
           "cut_link": "https://www.bilibili.com/video/BV1Pxa269EiF/?p=7"
         }
       ]
+    },
+    "宇宙冷漠": {
+      "row_key": "宇宙冷漠",
+      "song_name": "宇宙冷漠",
+      "display_song_name": "宇宙冷漠",
+      "artist": "幻琉HL",
+      "cut_link": "https://www.bilibili.com/video/BV1v5HX6FEAz/",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-10-08",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切复核",
+          "artist": "幻琉HL",
+          "replay_id": "live:01c3a6cc-c64f-43d4-83fa-9330a18be127",
+          "replay_title": "【小松绿Viridis】竟然是潜水员戴夫！ 2026-10-08",
+          "replay_url": "",
+          "remark": "回放 02:26-02:32 弹幕「宇宙冷漠」刷屏（含 02:27 起的「宇宙冷漠小松绿」应援词）。歌切分P名为 Screenrecorder-2026-10-08-23-25-30-552，即 23:25:30 现场录屏；描述写明「20261008@小松绿Viridis」「原曲来自：@幻琉HL」，歌手即依此归属。同场小松绿天生就喜欢笑 BV1v5HX6FEGm（180s，标题「辅助轮跟唱」，描述「20261008」）可交叉复核，两者均显示为跟唱原曲（辅助轮），非纯伴奏演唱；弹幕 02:23:14「？你开原唱了？」即针对此。该曲为《杀戮尖塔2》社区曲（弹幕称「塔二」），故标 typeTags=游戏。",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-title",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1v5HX6FEAz/"
+        }
+      ]
     }
   }
 },
   audio_index: {
   "roomKey": "xiaosonglu",
   "roomId": "1727071052",
-  "generatedAt": "2026-10-08T03:23:42.590Z",
+  "generatedAt": "2026-10-09T02:17:11.894Z",
   "source": "song-cut-audio-download",
   "description": "每首歌对应的翻唱切片音频（从 B 站歌切/回放下载），供网页在线播放。",
-  "count": 287,
+  "count": 288,
   "audios": {
     "勾指起誓": "assets/audio/song_88.m4a?v=1d344dfde754",
     "蝴蝶": "assets/audio/song_25.m4a?v=d8fb99252c26",
@@ -20313,7 +20512,8 @@ window.XSL_DATA = {
     "月が綺麗ねと言われたい!（第一遍）": "assets/audio/song_285.m4a?v=961cf7cc3a6a",
     "月が綺麗ねと言われたい!（第二遍）": "assets/audio/song_286.m4a?v=0f5dae858673",
     "农夫渔夫": "assets/audio/song_287.m4a?v=a28fd1cacf4a",
-    "ハッピーエンド": "assets/audio/song_288.m4a?v=27a01a4b5d03"
+    "ハッピーエンド": "assets/audio/song_288.m4a?v=27a01a4b5d03",
+    "宇宙冷漠": "assets/audio/song_289.m4a?v=66fdecbb21d6"
   },
   "verificationTargets": [
     "中华墨水娘",
@@ -20323,10 +20523,10 @@ window.XSL_DATA = {
   song_cut_info: {
   "roomKey": "xiaosonglu",
   "roomId": "1727071052",
-  "generatedAt": "2026-10-08T03:17:38.837Z",
+  "generatedAt": "2026-10-09T02:13:31.178Z",
   "source": "song-cut-title-index",
   "description": "每首歌对应的歌切切片标题（单曲歌切视频标题 / 合集分P标题），供前端歌切链接显示。",
-  "count": 289,
+  "count": 290,
   "cuts": {
     "（区）最终祈愿": {
       "title": "07_（区）最终祈愿 - 平行四界Quadimension, 星尘",
@@ -21772,6 +21972,11 @@ window.XSL_DATA = {
       "title": "月が綺麗ねと言われたい!2",
       "kind": "collection",
       "url": "https://www.bilibili.com/video/BV1Pxa269EiF/?p=7"
+    },
+    "宇宙冷漠": {
+      "title": "【小松绿】倾情献唱(存疑)塔二巨作《宇宙冷漠》，听完的都变成了裸子植物",
+      "kind": "single",
+      "url": "https://www.bilibili.com/video/BV1v5HX6FEAz/"
     }
   }
 }
