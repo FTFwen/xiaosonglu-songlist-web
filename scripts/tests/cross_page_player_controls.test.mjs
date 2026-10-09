@@ -107,14 +107,16 @@ test('cross-page favorite snapshots use the shared songlist storage and same-pag
 });
 
 test('both destinations use the bumped assets and mobile layout matches the songlist player', () => {
-  assert.match(mainHtml, /js\/app\.js\?v=108/);
+  assert.match(mainHtml, /js\/app\.js\?v=109/);
+  assert.match(buttonsHtml, /cross-page-player\.js\?v=8/);
+  assert.match(gameHtml, /cross-page-player\.js\?v=8/);
   assert.match(crossPageSource, /const AUDIO_ASSET_VERSION = '4';/);
   assert.match(buttonsHtml, /buttons\.js\?v=33/);
   assert.doesNotMatch(buttonsSource, /DEFAULT_ADMINS|isKnownAdmin|登录成功（离线模式/);
   assert.match(gameHtml, /\.\.\/js\/data\.js\?v=30/);
   for (const source of [buttonsHtml, gameHtml]) {
     assert.match(source, /cross-page-player\.css\?v=5/);
-    assert.match(source, /cross-page-player\.js\?v=7/);
+    assert.match(source, /cross-page-player\.js\?v=8/);
   }
 
   const mobileCss = sourceBetween(crossPageCss, '@media (max-width: 768px)', '/* 24 点横屏');

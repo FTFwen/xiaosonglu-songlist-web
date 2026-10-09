@@ -934,7 +934,7 @@ const player = {
   wantedPlaying: false,
   playing: false,
   playRequestId: 0,
-  audioRetryAttempted: false, // 本曲是否已因加载失败自动换版本参数重试过
+  audioRetryAttempted: false, // 本曲是否已因网络错误用同一内容哈希 URL 重试过
   get current() { return this.queue[this.index] || null; }
 };
 player.audio.preload = 'auto';
@@ -1339,8 +1339,10 @@ function playSongAt(index) {
     if (pos >= 0) player.shufflePos = pos;
   }
   player.index = index;
+  player.audioRetryAttempted = false;
   player.audio.src = url;
-  player.audio.load();
+  // Setting src already starts resource selection; an immediate load() can abort and
+  // restart the same request on slow mobile/CDN paths.
   requestAudioPlayback({ failurePrefix: '音频播放失败' });
   return true;
 }
@@ -2184,23 +2186,24 @@ player.audio.addEventListener('timeupdate', () => {
   if (!seekDragging && player.audio.duration) dom.playerSeek.value = cur;
 });
 player.audio.addEventListener('error', () => {
-  // 边缘 CDN 偶发负缓存（404 被短暂缓存）：同一 URL 会持续失败，
-  // 换一个全新的版本参数重试一次即可绕开（真实缺源的歌重试后仍会失败并提示）。
+  const mediaError = player.audio.error;
   const failedSrc = player.audio.src || '';
-  if (!player.audioRetryAttempted && failedSrc.includes('/assets/audio/')) {
+  // Only retry transport failures. Keep the content-hash URL stable so a partial
+  // response and CDN/browser cache remain reusable; decode/source errors need a fix,
+  // not another full download under a timestamp cache key.
+  const isOnline = typeof navigator === 'undefined' || navigator.onLine !== false;
+  const networkErrorCode = typeof MediaError === 'undefined' ? 2 : MediaError.MEDIA_ERR_NETWORK;
+  if (!player.audioRetryAttempted && isOnline && mediaError &&
+      mediaError.code === networkErrorCode && failedSrc.includes('/assets/audio/')) {
     player.audioRetryAttempted = true;
-    const url = audioUrlOf(player.current);
-    if (url) {
-      try {
-        const retryUrl = new URL(url);
-        retryUrl.searchParams.set('v', `${AUDIO_ASSET_VERSION}.${Date.now()}`);
-        player.audio.src = retryUrl.href;
-        player.audio.load();
-        requestAudioPlayback({ failurePrefix: '音频播放失败' });
-        showToast('音频拉取受阻，正在换线路重试…');
-        return;
-      } catch (e) { /* fall through */ }
-    }
+    const retrySrc = failedSrc;
+    showToast('音频网络波动，正在重试…');
+    window.setTimeout(() => {
+      if (player.audio.src !== retrySrc || player.audio.error !== mediaError) return;
+      player.audio.src = retrySrc;
+      requestAudioPlayback({ failurePrefix: '音频播放失败' });
+    }, 800);
+    return;
   }
   player.playRequestId += 1;
   player.wantedPlaying = false;

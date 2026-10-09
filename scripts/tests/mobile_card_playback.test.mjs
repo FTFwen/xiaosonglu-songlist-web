@@ -472,7 +472,7 @@ test('song switch clears old visual state before new audio resolves and invalid 
   assert.equal(context.playAt(0), true);
   assert.equal(player.playing, false);
   assert.equal(player.audio.src, 'https://example.test/b.m4a');
-  assert.deepEqual(calls.slice(0, 3), ['pause', 'load', 'request']);
+  assert.deepEqual(calls.slice(0, 2), ['pause', 'request']);
 
   hasAudio = false;
   player.playing = true;
@@ -668,7 +668,7 @@ test('mobile media-query cascade gives only the playing card a glass state and c
     assert.match(css, /\.playing-bars[\s\S]*?display: none !important;/);
   }
   assert.match(htmlSource, /js\/data\.js\?v=30/);
-  assert.match(htmlSource, /js\/app\.js\?v=108/);
+  assert.match(htmlSource, /js\/app\.js\?v=109/);
   assert.match(workshopHtmlSource, /js\/data\.js\?v=31/);
   assert.match(workshopHtmlSource, /js\/start\.js\?v=18/);
 });

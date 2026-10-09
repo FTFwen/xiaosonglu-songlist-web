@@ -145,11 +145,13 @@ function Invoke-PublicCurl {
         [string]$Uri,
         [string]$OutputPath,
         [int]$MaxTimeSeconds = 45,
-        [string]$Range = ''
+        [string]$Range = '',
+        [string]$HeaderPath = ''
     )
     $curl = Get-Command curl.exe -ErrorAction SilentlyContinue
     if (-not $curl) { throw 'curl.exe is required for bounded online deployment verification.' }
     $curlArgs = @('--fail', '--silent', '--show-error', '--location', '--connect-timeout', '15', '--max-time', [string]$MaxTimeSeconds, '-H', 'Cache-Control: no-cache', '--output', $OutputPath, '--write-out', '%{http_code}')
+    if (-not [string]::IsNullOrWhiteSpace($HeaderPath)) { $curlArgs += @('--dump-header', $HeaderPath) }
     if (-not [string]::IsNullOrWhiteSpace($Range)) { $curlArgs += @('--range', $Range) }
     $statusText = (& $curl.Source @curlArgs $Uri 2>$null | Out-String).Trim()
     $code = $LASTEXITCODE
@@ -165,13 +167,15 @@ function Test-PublicDeployment {
         [hashtable]$ExpectedAudio,
         [int]$ExpectedSongCount,
         [hashtable]$ExpectedStaticHashes,
-        [hashtable]$ExpectedVersionedAudio
+        [hashtable]$ExpectedVersionedAudio,
+        [bool]$RequireByteRanges = $true
     )
     $base = $BaseUrl.TrimEnd('/')
     $stamp = [DateTime]::UtcNow.Ticks
     $audioTemp = [IO.Path]::GetTempFileName()
     $catalogTemp = [IO.Path]::GetTempFileName()
     $sampleTemp = [IO.Path]::GetTempFileName()
+    $sampleHeaderTemp = [IO.Path]::GetTempFileName()
     $buttonsTemp = [IO.Path]::GetTempFileName()
     $staticTemps = @()
     $versionedAudioTemps = @()
@@ -196,12 +200,23 @@ function Test-PublicDeployment {
         $onlineSongCount = @($catalog.songs).Count
         if ($onlineSongCount -ne $ExpectedSongCount) { throw "online song count mismatch: expected $ExpectedSongCount, got $onlineSongCount" }
 
-        $sampleEntry = @($ExpectedAudio.GetEnumerator() | Select-Object -First 1)[0]
-        $samplePath = [string]$sampleEntry.Value
+        # Exercise Range on the largest fully specified audio; a 200/full-file response
+        # must never satisfy this streaming check.
+        $sampleEntry = @($ExpectedVersionedAudio.GetEnumerator() | Sort-Object { [long]$_.Value.bytes } -Descending | Select-Object -First 1)[0]
+        $samplePath = [string]$sampleEntry.Value.publicPath
         if ([string]::IsNullOrWhiteSpace($samplePath)) { throw 'local expected audio map has no sample path' }
         $sampleSeparator = if ($samplePath.Contains('?')) { '&' } else { '?' }
-        $sampleStatus = Invoke-PublicCurl -Uri "${base}/${samplePath}${sampleSeparator}xsl_verify=$stamp" -OutputPath $sampleTemp -MaxTimeSeconds 90 -Range '0-31'
+        $sampleStatus = Invoke-PublicCurl -Uri "${base}/${samplePath}${sampleSeparator}xsl_verify=$stamp" -OutputPath $sampleTemp -MaxTimeSeconds 90 -Range '0-31' -HeaderPath $sampleHeaderTemp
         $sampleBytes = [IO.File]::ReadAllBytes($sampleTemp)
+        $sampleHeaders = Get-Content -LiteralPath $sampleHeaderTemp -Raw -Encoding ASCII
+        $expectedSampleLength = [long]$sampleEntry.Value.bytes
+        if ($RequireByteRanges) {
+            if ($sampleStatus -ne 206 -or $sampleBytes.Length -ne 32) { throw "online sample audio range mismatch: expected HTTP 206 and 32 bytes, got HTTP $sampleStatus and $($sampleBytes.Length) bytes" }
+            if ($sampleHeaders -notmatch "(?im)^Content-Range:\s*bytes\s+0-31/$expectedSampleLength\s*$") { throw 'online sample audio returned an invalid Content-Range header' }
+            if ($sampleHeaders -notmatch '(?im)^Accept-Ranges:\s*bytes\s*$') { throw 'online sample audio does not advertise byte ranges' }
+        } elseif ($sampleStatus -eq 206 -and $sampleBytes.Length -ne 32) {
+            throw "online sample audio returned an inconsistent partial response: $($sampleBytes.Length) bytes"
+        }
         if ($sampleBytes.Length -lt 12 -or $sampleBytes[4] -ne 0x66 -or $sampleBytes[5] -ne 0x74 -or $sampleBytes[6] -ne 0x79 -or $sampleBytes[7] -ne 0x70) { throw 'online sample audio is not a valid M4A response' }
 
         foreach ($entry in $ExpectedStaticHashes.GetEnumerator()) {
@@ -249,7 +264,7 @@ function Test-PublicDeployment {
         $reason = ([string]$_.Exception.Message) -replace 'https?://[^\s"'']+', '[url]'
         return [ordered]@{ ok = $false; baseUrl = $base; reason = $reason }
     } finally {
-        foreach ($temp in @($audioTemp, $catalogTemp, $sampleTemp, $buttonsTemp) + $staticTemps + $versionedAudioTemps) { Remove-Item -LiteralPath $temp -Force -ErrorAction SilentlyContinue }
+        foreach ($temp in @($audioTemp, $catalogTemp, $sampleTemp, $sampleHeaderTemp, $buttonsTemp) + $staticTemps + $versionedAudioTemps) { Remove-Item -LiteralPath $temp -Force -ErrorAction SilentlyContinue }
     }
 }
 
@@ -271,7 +286,13 @@ function Wait-PublicDeployment {
     }
     $lastChecks = @()
     for ($checkAttempt = 1; $checkAttempt -le $Attempts; $checkAttempt++) {
-        $lastChecks = @($bases | ForEach-Object { Test-PublicDeployment -BaseUrl $_ -ExpectedAudio $ExpectedAudio -ExpectedSongCount $ExpectedSongCount -ExpectedStaticHashes $ExpectedStaticHashes -ExpectedVersionedAudio $ExpectedVersionedAudio })
+        $lastChecks = @($bases | ForEach-Object {
+            # The custom production domain must support seeking. Cloudflare's pages.dev
+            # alias currently ignores Range, so validate its content without making that
+            # provider limitation block an otherwise healthy custom-domain deployment.
+            $requireByteRanges = ([string]$_).TrimEnd('/') -eq $PrimaryBaseUrl.TrimEnd('/')
+            Test-PublicDeployment -BaseUrl $_ -ExpectedAudio $ExpectedAudio -ExpectedSongCount $ExpectedSongCount -ExpectedStaticHashes $ExpectedStaticHashes -ExpectedVersionedAudio $ExpectedVersionedAudio -RequireByteRanges $requireByteRanges
+        })
         if (@($lastChecks | Where-Object { -not $_.ok }).Count -eq 0) {
             return [ordered]@{ ok = $true; attempts = $checkAttempt; checks = $lastChecks }
         }

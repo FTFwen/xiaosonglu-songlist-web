@@ -191,6 +191,7 @@
   let fallbackTime = Math.max(0, Number(saved.currentTime) || 0);
   let playRequestId = 0;
   let loadRequestId = 0;
+  let networkRetryAttempted = false;
   let noticeText = '';
   let noticeTimer = null;
 
@@ -413,6 +414,7 @@
     loadFailed = false;
     desiredPlaying = shouldPlay;
     fallbackTime = Math.max(0, Number(startAt) || 0);
+    networkRetryAttempted = false;
     audio.src = item.src;
     const requestedSrc = audio.src;
     audio.addEventListener('loadedmetadata', () => {
@@ -422,7 +424,7 @@
       fallbackTime = audio.currentTime;
       render();
     }, { once: true });
-    audio.load();
+    // Assigning src already initiates loading; calling load() here can restart it.
     if (shouldPlay) attemptPlay();
     render();
   }
@@ -501,6 +503,21 @@
     else playAdjacent(1);
   });
   audio.addEventListener('error', () => {
+    const mediaError = audio.error;
+    const failedSrc = audio.src;
+    const isOnline = typeof navigator === 'undefined' || navigator.onLine !== false;
+    const networkErrorCode = typeof MediaError === 'undefined' ? 2 : MediaError.MEDIA_ERR_NETWORK;
+    if (!networkRetryAttempted && isOnline && mediaError &&
+        mediaError.code === networkErrorCode && failedSrc.includes('/assets/audio/')) {
+      networkRetryAttempted = true;
+      window.setTimeout(() => {
+        if (audio.src !== failedSrc || audio.error !== mediaError) return;
+        audio.src = failedSrc;
+        if (desiredPlaying) attemptPlay();
+        else render();
+      }, 800);
+      return;
+    }
     playRequestId += 1;
     desiredPlaying = false;
     resumeBlocked = false;

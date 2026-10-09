@@ -69,7 +69,7 @@ test('durable audio baseline exactly matches the published audio index', async (
     assert.match(expected.sha256, /^[a-f0-9]{64}$/);
     assert.ok(indexedValues.has(`${path}?v=${expected.sha256.slice(0, 12)}`), `missing SHA-versioned mapping for ${path}`);
   }
-  assert.deepEqual(audioIndex.verificationTargets, ['中华墨水娘', '中华铄金娘']);
+  assert.deepEqual(audioIndex.verificationTargets, ['中华墨水娘', '中华铄金娘', 'ハッピーエンド', '宇宙冷漠']);
 });
 
 test('same-name collection correction preserves both 中华墨水娘 and 中华铄金娘', async () => {

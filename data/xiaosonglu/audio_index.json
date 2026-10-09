@@ -292,11 +292,13 @@
     "月が綺麗ねと言われたい!（第一遍）": "assets/audio/song_285.m4a?v=961cf7cc3a6a",
     "月が綺麗ねと言われたい!（第二遍）": "assets/audio/song_286.m4a?v=0f5dae858673",
     "农夫渔夫": "assets/audio/song_287.m4a?v=a28fd1cacf4a",
-    "ハッピーエンド": "assets/audio/song_288.m4a?v=27a01a4b5d03",
+    "ハッピーエンド": "assets/audio/song_288.m4a?v=8723b7c8a37c",
     "宇宙冷漠": "assets/audio/song_289.m4a?v=66fdecbb21d6"
   },
   "verificationTargets": [
     "中华墨水娘",
-    "中华铄金娘"
+    "中华铄金娘",
+    "ハッピーエンド",
+    "宇宙冷漠"
   ]
 }
