@@ -53,6 +53,19 @@ $env:XSL_BILIBILI_COOKIE_FILE = '<工作区外的 Netscape Cookie 文件路径>'
 
 同步范围只有前端实际读取的 JSON 与 `js/data.js`，不会复制弹幕缓存、候选文件或视频。
 
+## workshop 镜像的独立自动化
+
+`workshop.viridis.love` 是独立的 Cloudflare Pages 项目（`xsl-workshop`），由它自己的无人值守入口维护，不依赖每日歌单主站的部署结果：
+
+```powershell
+# 同步镜像、按内容哈希判断是否需要上传，需要时部署并做线上字节验证
+.\xsl-web-tools\run_scheduled_workshop_pipeline.ps1 -Root D:\tool\webdeploy -AllowOAuth
+```
+
+它先调用 `sync_workspace_data.ps1 -Apply` 与 `-Check`，要求 `driftCount=0`，再对整个 `workshop/` 目录（跳过点目录）计算按相对路径排序后的内容哈希：与 `data/xiaosonglu/_workshop_deploy_state.json` 记录一致时只复验线上字节、不上传；不一致或复验失败才执行 `wrangler pages deploy workshop --project-name=xsl-workshop --commit-dirty=true`（Wrangler 固定 `4.130.0`，上传未确认成功时按指数退避重试同一份完整快照）。随后逐文件比对 `data/xiaosonglu/` 六个镜像文件与 `js/data.js` 的 SHA-256（`song_catalog.json`、`history_index.json`、`song_details.json`、`audio_index.json`、`song_cut_info.json`、`js/data.js`），并确认站点根可访问。
+
+它与主站部署共用 `data\xiaosonglu\_pages_deploy.lock`：先在锁上等待（`-LockWaitSeconds`，默认 1800 秒），超时则本轮以 `skipped-lock-held` 结束并返回 0，绝不并行上传。日志写入 `data/xiaosonglu/_automation_logs/workshop-<UTC>.log`（保留 30 天），原子状态文件是 `data/xiaosonglu/_workshop_status.json`。状态值：`deployed`、`verified-no-content-change`、`skipped-lock-held`、`skipped-missing-credentials`、`skipped-missing-wrangler`、`deployment-failed`。开头与结尾都会拒绝任何被追踪或暂存的视频资源。
+
 ## Windows 每日计划任务
 
 `run_scheduled_song_pipeline.ps1` 是无人值守入口：固定请求完整静态 Pages 部署，写入忽略目录中的逐次日志和原子状态文件，保留 30 天日志；失败返回非零，任务计划程序会按设置重试。`install_scheduled_song_pipeline.ps1` 幂等创建当前用户的每日任务（默认本地时间 12:30、错过后补跑、忽略并发实例、失败后重试两次）。在当前非管理员账户下任务使用 `Interactive` 登录类型，因此系统会在该用户已登录时自动执行；切勿把 Cloudflare token 或密码写进任务。任务使用当前用户已有的 Wrangler OAuth；Bilibili 只保存工作区外 Cookie **路径**，不复制或输出内容。若以后以管理员身份部署并需要锁屏状态仍运行，可把安装器的 principal 改为受机器策略允许的 S4U/服务账户模式。
