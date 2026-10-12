@@ -201,7 +201,12 @@ function Test-PublicDeployment {
         if ($onlineSongCount -ne $ExpectedSongCount) { throw "online song count mismatch: expected $ExpectedSongCount, got $onlineSongCount" }
 
         # Exercise Range on the largest fully specified audio; a 200/full-file response
-        # must never satisfy this streaming check.
+        # must never satisfy this streaming check. A 206 that carries the exact requested
+        # slice plus an exact Content-Range total is itself direct proof that byte ranges
+        # are honoured, and it is stronger evidence than the advisory Accept-Ranges header:
+        # the production domain answers a ranged GET with 206 + Content-Range while
+        # advertising Accept-Ranges only on the full 200/HEAD response, so requiring that
+        # header on the 206 response would reject a correctly ranged deployment.
         $sampleEntry = @($ExpectedVersionedAudio.GetEnumerator() | Sort-Object { [long]$_.Value.bytes } -Descending | Select-Object -First 1)[0]
         $samplePath = [string]$sampleEntry.Value.publicPath
         if ([string]::IsNullOrWhiteSpace($samplePath)) { throw 'local expected audio map has no sample path' }
@@ -213,7 +218,6 @@ function Test-PublicDeployment {
         if ($RequireByteRanges) {
             if ($sampleStatus -ne 206 -or $sampleBytes.Length -ne 32) { throw "online sample audio range mismatch: expected HTTP 206 and 32 bytes, got HTTP $sampleStatus and $($sampleBytes.Length) bytes" }
             if ($sampleHeaders -notmatch "(?im)^Content-Range:\s*bytes\s+0-31/$expectedSampleLength\s*$") { throw 'online sample audio returned an invalid Content-Range header' }
-            if ($sampleHeaders -notmatch '(?im)^Accept-Ranges:\s*bytes\s*$') { throw 'online sample audio does not advertise byte ranges' }
         } elseif ($sampleStatus -eq 206 -and $sampleBytes.Length -ne 32) {
             throw "online sample audio returned an inconsistent partial response: $($sampleBytes.Length) bytes"
         }
