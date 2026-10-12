@@ -1,10 +1,10 @@
 {
   "roomKey": "xiaosonglu",
   "roomId": "1727071052",
-  "generatedAt": "2026-10-09T02:17:11.894Z",
+  "generatedAt": "2026-10-12T02:35:44.236Z",
   "source": "song-cut-audio-download",
   "description": "每首歌对应的翻唱切片音频（从 B 站歌切/回放下载），供网页在线播放。",
-  "count": 288,
+  "count": 300,
   "audios": {
     "勾指起誓": "assets/audio/song_88.m4a?v=1d344dfde754",
     "蝴蝶": "assets/audio/song_25.m4a?v=d8fb99252c26",
@@ -293,7 +293,19 @@
     "月が綺麗ねと言われたい!（第二遍）": "assets/audio/song_286.m4a?v=0f5dae858673",
     "农夫渔夫": "assets/audio/song_287.m4a?v=a28fd1cacf4a",
     "ハッピーエンド": "assets/audio/song_288.m4a?v=8723b7c8a37c",
-    "宇宙冷漠": "assets/audio/song_289.m4a?v=66fdecbb21d6"
+    "宇宙冷漠": "assets/audio/song_289.m4a?v=66fdecbb21d6",
+    "惊鹊": "assets/audio/song_290.m4a?v=6bbd293e5480",
+    "水叙湖风": "assets/audio/song_291.m4a?v=d9f5c153041d",
+    "梦境与魔女": "assets/audio/song_292.m4a?v=7991c67cd8ec",
+    "易燃易爆炸": "assets/audio/song_293.m4a?v=a5eb2c3eaf6d",
+    "奇妙能力歌": "assets/audio/song_294.m4a?v=3365f04049a7",
+    "走马": "assets/audio/song_295.m4a?v=1cc2a35f0be0",
+    "余命3日少女": "assets/audio/song_296.m4a?v=a77a872b39a5",
+    "ドライフラワー": "assets/audio/song_297.m4a?v=92830123b706",
+    "采茶纪": "assets/audio/song_298.m4a?v=864cf8ff968f",
+    "XY&Z": "assets/audio/song_299.m4a?v=a47024e254b3",
+    "秘宝": "assets/audio/song_300.m4a?v=4ec6ae2f804d",
+    "流年如歌": "assets/audio/song_301.m4a?v=7383d302f7db"
   },
   "verificationTargets": [
     "中华墨水娘",

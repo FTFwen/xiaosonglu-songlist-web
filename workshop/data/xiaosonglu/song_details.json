@@ -1,7 +1,7 @@
 {
   "roomKey": "xiaosonglu",
   "roomId": "1727071052",
-  "generatedAt": "2026-10-09T02:13:31.178Z",
+  "generatedAt": "2026-10-12T02:33:59.411Z",
   "source": "local-replay-ingestion",
   "bySongKey": {
     "少女レイ": {
@@ -210,8 +210,23 @@
       "display_song_name": "プロポーズ",
       "artist": "なとり",
       "cut_link": "https://www.bilibili.com/video/BV19Fu16GEdc/",
-      "total_count": 2,
+      "total_count": 3,
       "entries": [
+        {
+          "date": "2026-10-10",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "内緒のピアス / 可不",
+          "replay_id": "live:f2b6d1fe-4426-4669-b761-d4d5823974a0",
+          "replay_title": "【小松绿Viridis】随机的一个唱 2026-10-10",
+          "replay_url": "",
+          "remark": "两份合集（BV1TApG6uEPX 分P17、BV1Qrpj6ZELm 分P17）同曲同序，原唱字段均为「内緒のピアス, 可不」；弹幕 02:21:12「怎么最近都在唱这首求婚」。曲目与歌手沿用本站 2026-09-27 的同曲记录（内緒のピアス / 可不，日V）。",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-compilation-chapter",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1TApG6uEPX/?p=17"
+        },
         {
           "date": "2026-09-27",
           "time": "",
@@ -1485,8 +1500,23 @@
       "display_song_name": "故梦",
       "artist": "橙翼",
       "cut_link": "https://www.bilibili.com/video/BV1FybC6PE5D/",
-      "total_count": 1,
+      "total_count": 2,
       "entries": [
+        {
+          "date": "2026-10-10",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "橙翼",
+          "replay_id": "live:f2b6d1fe-4426-4669-b761-d4d5823974a0",
+          "replay_title": "【小松绿Viridis】随机的一个唱 2026-10-10",
+          "replay_url": "",
+          "remark": "两份合集（BV1TApG6uEPX 分P15、BV1Qrpj6ZELm 分P15）同曲同序，分P原唱字段写「双笙」；本站 2026-08-15 的同曲记录原唱为橙翼，按「同曲沿用本站既有记录」处理，保持 artist 为橙翼（双笙版本为翻唱）。",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-compilation-chapter",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1TApG6uEPX/?p=15"
+        },
         {
           "date": "2026-08-15",
           "time": "",
@@ -1900,8 +1930,23 @@
       "display_song_name": "思华年",
       "artist": "忘川风华录 / 星尘",
       "cut_link": "https://www.bilibili.com/video/BV1rv8V6DExk/",
-      "total_count": 1,
+      "total_count": 2,
       "entries": [
+        {
+          "date": "2026-10-10",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "忘川风华录 / 星尘",
+          "replay_id": "live:f2b6d1fe-4426-4669-b761-d4d5823974a0",
+          "replay_title": "【小松绿Viridis】随机的一个唱 2026-10-10",
+          "replay_url": "",
+          "remark": "两份合集（BV1TApG6uEPX 分P05、BV1Qrpj6ZELm 分P05）同曲同序；弹幕无直接点名，但与 P01 惊鹊、P02 水叙湖风构成忘川风华录三连。曲目与歌手沿用本站 2026-08-18 的同曲记录（忘川风华录 / 星尘，中V、国风、古风）。",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-compilation-chapter",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1TApG6uEPX/?p=5"
+        },
         {
           "date": "2026-08-18",
           "time": "00:54:51",
@@ -3340,8 +3385,23 @@
       "display_song_name": "女孩你为何踮脚尖",
       "artist": "Ddickky / 墨兰花语 / 洛天依",
       "cut_link": "https://www.bilibili.com/video/BV1idb16YEjD/?p=12",
-      "total_count": 1,
+      "total_count": 2,
       "entries": [
+        {
+          "date": "2026-10-10",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "Ddickky / 墨兰花语 / 洛天依",
+          "replay_id": "live:f2b6d1fe-4426-4669-b761-d4d5823974a0",
+          "replay_title": "【小松绿Viridis】随机的一个唱 2026-10-10",
+          "replay_url": "",
+          "remark": "两份合集（BV1TApG6uEPX 分P04、BV1Qrpj6ZELm 分P04）同曲同序；弹幕 00:38:40 与 00:39:24 两次「绿神来首女孩你为何踮脚尖」。曲目与歌手沿用本站 2026-08-15 的同曲记录（Ddickky / 墨兰花语 / 洛天依，中V、原创（平行四界））。",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-compilation-chapter",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1TApG6uEPX/?p=4"
+        },
         {
           "date": "2026-08-15",
           "time": "",
@@ -3670,8 +3730,23 @@
       "display_song_name": "小半",
       "artist": "陈粒",
       "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=4",
-      "total_count": 1,
+      "total_count": 2,
       "entries": [
+        {
+          "date": "2026-10-10",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "陈粒",
+          "replay_id": "live:f2b6d1fe-4426-4669-b761-d4d5823974a0",
+          "replay_title": "【小松绿Viridis】随机的一个唱 2026-10-10",
+          "replay_url": "",
+          "remark": "两份合集（BV1TApG6uEPX 分P06、BV1Qrpj6ZELm 分P06）同曲同序；弹幕 00:38:12「宝宝我想听小半！」、00:38:43、00:39:52 三次点歌，01:01:57「陈粒专场来了」对应 P06-P09 陈粒四连。曲目与歌手沿用本站 2026-09-03 的同曲记录（陈粒，民谣、流行）。",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-compilation-chapter",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1TApG6uEPX/?p=6"
+        },
         {
           "date": "2026-09-03",
           "time": "",
@@ -4990,8 +5065,23 @@
       "display_song_name": "たばこ",
       "artist": "Sawako碎花",
       "cut_link": "https://www.bilibili.com/video/BV1q9YB6xErK/?p=8",
-      "total_count": 1,
+      "total_count": 2,
       "entries": [
+        {
+          "date": "2026-10-10",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "Sawako碎花",
+          "replay_id": "live:f2b6d1fe-4426-4669-b761-d4d5823974a0",
+          "replay_title": "【小松绿Viridis】随机的一个唱 2026-10-10",
+          "replay_url": "",
+          "remark": "两份合集（BV1TApG6uEPX 分P11、BV1Qrpj6ZELm 分P11）同曲同序；弹幕 01:23:58「たばこ有机会吗」。曲目与歌手沿用本站 2026-09-13 的同曲记录（Sawako碎花，翻唱、J-Pop）。",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-compilation-chapter",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1TApG6uEPX/?p=11"
+        },
         {
           "date": "2026-09-13",
           "time": "",
@@ -6115,8 +6205,23 @@
       "display_song_name": "愛言葉",
       "artist": "DECO*27 / 初音ミク",
       "cut_link": "https://www.bilibili.com/video/BV1ouhW6GEoD/?p=8",
-      "total_count": 1,
+      "total_count": 2,
       "entries": [
+        {
+          "date": "2026-10-10",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "DECO*27 / 初音ミク",
+          "replay_id": "live:f2b6d1fe-4426-4669-b761-d4d5823974a0",
+          "replay_title": "【小松绿Viridis】随机的一个唱 2026-10-10",
+          "replay_url": "",
+          "remark": "两份合集（BV1TApG6uEPX 分P14、BV1Qrpj6ZELm 分P14）同曲同序；弹幕 01:50:46「爱言叶不赖」、01:57:57「她的爱言叶我很怕」。分P的 DECO_27 为下划线转写，还原为 DECO*27；曲目与歌手沿用本站 2026-09-23 的同曲记录。",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-compilation-chapter",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1TApG6uEPX/?p=14"
+        },
         {
           "date": "2026-09-23",
           "time": "00:36:07",
@@ -7305,8 +7410,23 @@
       "display_song_name": "Melody",
       "artist": "陶喆",
       "cut_link": "https://www.bilibili.com/video/BV1UkaS6zEk3/?p=22",
-      "total_count": 1,
+      "total_count": 2,
       "entries": [
+        {
+          "date": "2026-10-10",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "陶喆",
+          "replay_id": "live:f2b6d1fe-4426-4669-b761-d4d5823974a0",
+          "replay_title": "【小松绿Viridis】随机的一个唱 2026-10-10",
+          "replay_url": "",
+          "remark": "两份合集（BV1TApG6uEPX 分P13、BV1Qrpj6ZELm 分P13）同曲同序；弹幕 01:42:42「melody」、01:43:08「melody我循环了好久」、01:44:11「电音melody」。曲目与歌手沿用本站 2026-10-02 的同曲记录（陶喆，华语经典）。",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-compilation-chapter",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1TApG6uEPX/?p=13"
+        },
         {
           "date": "2026-10-02",
           "time": "",
@@ -7971,6 +8091,306 @@
           "song_resolution_method": "song-cut-title",
           "replay_date_source": "live-api-date",
           "cut_link": "https://www.bilibili.com/video/BV1v5HX6FEAz/"
+        }
+      ]
+    },
+    "惊鹊": {
+      "row_key": "惊鹊",
+      "song_name": "惊鹊",
+      "display_song_name": "惊鹊",
+      "artist": "忘川风华录 / 海伊 / 星尘Minus",
+      "cut_link": "https://www.bilibili.com/video/BV1TApG6uEPX/?p=1",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-10-10",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "忘川风华录 / 海伊 / 星尘Minus",
+          "replay_id": "live:f2b6d1fe-4426-4669-b761-d4d5823974a0",
+          "replay_title": "【小松绿Viridis】随机的一个唱 2026-10-10",
+          "replay_url": "",
+          "remark": "桐人今天睡大觉 BV1TApG6uEPX 分P01（218s），心灵火Flame BV1Qrpj6ZELm 分P01 同曲同序。弹幕 00:18:06「惊鹊神了」直接点名。分P标题的原唱字段被写坏（夹入颜文字 ₍˄·͈༝·͈˄_₎◞ ̑̑），据百度百科《惊鹊》词条：忘川风华录音乐企划国风原创曲，作曲塔库、作词冉语优、编曲Fsy小诺，虚拟歌手星尘Minus 与海伊演唱。",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-compilation-chapter",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1TApG6uEPX/?p=1"
+        }
+      ]
+    },
+    "水叙湖风": {
+      "row_key": "水叙湖风",
+      "song_name": "水叙湖风",
+      "display_song_name": "水叙湖风",
+      "artist": "忘川风华录 / 星尘Minus",
+      "cut_link": "https://www.bilibili.com/video/BV1TApG6uEPX/?p=2",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-10-10",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "忘川风华录 / 星尘Minus",
+          "replay_id": "live:f2b6d1fe-4426-4669-b761-d4d5823974a0",
+          "replay_title": "【小松绿Viridis】随机的一个唱 2026-10-10",
+          "replay_url": "",
+          "remark": "两份 20261010 合集（BV1TApG6uEPX 分P02、BV1Qrpj6ZELm 分P02）同曲同序；弹幕无直接点名。原唱字段沿用分P标题「忘川风华录, 星尘minus」，与本站忘川风华录系列（思华年、栖凰）标注风格一致。",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-compilation-chapter",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1TApG6uEPX/?p=2"
+        }
+      ]
+    },
+    "梦境与魔女": {
+      "row_key": "梦境与魔女",
+      "song_name": "梦境与魔女",
+      "display_song_name": "梦境与魔女",
+      "artist": "时之歌Project（泛音堂）/ 喵☆酱",
+      "cut_link": "https://www.bilibili.com/video/BV1TApG6uEPX/?p=3",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-10-10",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "时之歌Project（泛音堂）/ 喵☆酱",
+          "replay_id": "live:f2b6d1fe-4426-4669-b761-d4d5823974a0",
+          "replay_title": "【小松绿Viridis】随机的一个唱 2026-10-10",
+          "replay_url": "",
+          "remark": "两份合集（BV1TApG6uEPX 分P03、BV1Qrpj6ZELm 分P03）同曲同序；弹幕 00:34:40「梦境与魔女」直接点名。据百度百科：原唱弥幽·格雷文（Vocal：喵☆酱），出自时之歌Project 专辑，中文流行。标注沿用本站 炼金少女日志「时之歌Project（泛音堂）」的写法。",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-compilation-chapter",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1TApG6uEPX/?p=3"
+        }
+      ]
+    },
+    "易燃易爆炸": {
+      "row_key": "易燃易爆炸",
+      "song_name": "易燃易爆炸",
+      "display_song_name": "易燃易爆炸",
+      "artist": "陈粒",
+      "cut_link": "https://www.bilibili.com/video/BV1TApG6uEPX/?p=7",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-10-10",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "陈粒",
+          "replay_id": "live:f2b6d1fe-4426-4669-b761-d4d5823974a0",
+          "replay_title": "【小松绿Viridis】随机的一个唱 2026-10-10",
+          "replay_url": "",
+          "remark": "两份合集（BV1TApG6uEPX 分P07、BV1Qrpj6ZELm 分P07）同曲同序，原唱字段均为陈粒；弹幕 01:01:57「陈粒专场来了」、01:02:14「真就v圈陈粒」佐证该段为陈粒作品连唱。类型标签沿用本站陈粒曲目的既有组合。",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-compilation-chapter",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1TApG6uEPX/?p=7"
+        }
+      ]
+    },
+    "奇妙能力歌": {
+      "row_key": "奇妙能力歌",
+      "song_name": "奇妙能力歌",
+      "display_song_name": "奇妙能力歌",
+      "artist": "陈粒",
+      "cut_link": "https://www.bilibili.com/video/BV1TApG6uEPX/?p=8",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-10-10",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "陈粒",
+          "replay_id": "live:f2b6d1fe-4426-4669-b761-d4d5823974a0",
+          "replay_title": "【小松绿Viridis】随机的一个唱 2026-10-10",
+          "replay_url": "",
+          "remark": "两份合集（BV1TApG6uEPX 分P08、BV1Qrpj6ZELm 分P08）同曲同序，原唱字段均为陈粒；属 01:01 起的陈粒连唱段。类型标签沿用本站陈粒曲目的既有组合。",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-compilation-chapter",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1TApG6uEPX/?p=8"
+        }
+      ]
+    },
+    "走马": {
+      "row_key": "走马",
+      "song_name": "走马",
+      "display_song_name": "走马",
+      "artist": "陈粒",
+      "cut_link": "https://www.bilibili.com/video/BV1TApG6uEPX/?p=9",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-10-10",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "陈粒",
+          "replay_id": "live:f2b6d1fe-4426-4669-b761-d4d5823974a0",
+          "replay_title": "【小松绿Viridis】随机的一个唱 2026-10-10",
+          "replay_url": "",
+          "remark": "两份合集（BV1TApG6uEPX 分P09、BV1Qrpj6ZELm 分P09）同曲同序；弹幕 00:51:43「小半都唱了，什么时候唱走马[哇]」、00:57:42「走马唱过」、00:57:57「走马是对的」直接点名。类型标签沿用本站陈粒曲目的既有组合。",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-compilation-chapter",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1TApG6uEPX/?p=9"
+        }
+      ]
+    },
+    "余命3日少女": {
+      "row_key": "余命3日少女",
+      "song_name": "余命3日少女",
+      "display_song_name": "余命3日少女",
+      "artist": "プロペリン / VY1",
+      "cut_link": "https://www.bilibili.com/video/BV1TApG6uEPX/?p=10",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-10-10",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "プロペリン / VY1",
+          "replay_id": "live:f2b6d1fe-4426-4669-b761-d4d5823974a0",
+          "replay_title": "【小松绿Viridis】随机的一个唱 2026-10-10",
+          "replay_url": "",
+          "remark": "两份合集（BV1TApG6uEPX 分P10、BV1Qrpj6ZELm 分P10）同曲同序；弹幕 01:18:06「余命三日少女」直接点名。分P标题写作「（翻自 プロペリン） - 米白」，即原曲为 プロペリン 作品（据初音ミク Wiki 与 Vocaloid Lyrics Wiki：プロペリン氏第 7 作，VY1 演唱），故原唱字段记 プロペリン / VY1。",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-compilation-chapter",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1TApG6uEPX/?p=10"
+        }
+      ]
+    },
+    "ドライフラワー": {
+      "row_key": "ドライフラワー",
+      "song_name": "ドライフラワー",
+      "display_song_name": "ドライフラワー",
+      "artist": "優里",
+      "cut_link": "https://www.bilibili.com/video/BV1TApG6uEPX/?p=12",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-10-10",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "優里",
+          "replay_id": "live:f2b6d1fe-4426-4669-b761-d4d5823974a0",
+          "replay_title": "【小松绿Viridis】随机的一个唱 2026-10-10",
+          "replay_url": "",
+          "remark": "两份合集同曲同序（BV1TApG6uEPX 分P12 时长 2:23；BV1Qrpj6ZELm 分P12 标为「ドライフラワ（半首）」1:49），应为半首。弹幕 01:31:43-01:34:05 连续 7 条「干花」佐证。分P的原唱字段写的是 Ado（Ado 在《Adoの歌ってみたアルバム》中翻唱过此曲），本曲原唱为優里（作词/作曲：優里），故按本站「artist 记原唱」的惯例记優里。",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-compilation-chapter",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1TApG6uEPX/?p=12"
+        }
+      ]
+    },
+    "采茶纪": {
+      "row_key": "采茶纪",
+      "song_name": "采茶纪",
+      "display_song_name": "采茶纪",
+      "artist": "双笙",
+      "cut_link": "https://www.bilibili.com/video/BV1TApG6uEPX/?p=16",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-10-10",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "双笙",
+          "replay_id": "live:f2b6d1fe-4426-4669-b761-d4d5823974a0",
+          "replay_title": "【小松绿Viridis】随机的一个唱 2026-10-10",
+          "replay_url": "",
+          "remark": "两份合集（BV1TApG6uEPX 分P16、BV1Qrpj6ZELm 分P16）同曲同序；弹幕 02:10:21「采茶纪好好好」、02:12:21「采茶纪」、02:12:31「采茶纪吗」连续点名。据百度百科：双笙演唱的中国风古风歌曲，作词温莨、作曲/编曲徐梦圆，2015-12-02 发行，故记双笙。",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-compilation-chapter",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1TApG6uEPX/?p=16"
+        }
+      ]
+    },
+    "XY&Z": {
+      "row_key": "XY&Z",
+      "song_name": "XY&Z",
+      "display_song_name": "XY&Z",
+      "artist": "松本梨香",
+      "cut_link": "https://www.bilibili.com/video/BV1TApG6uEPX/?p=18",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-10-10",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "松本梨香",
+          "replay_id": "live:f2b6d1fe-4426-4669-b761-d4d5823974a0",
+          "replay_title": "【小松绿Viridis】随机的一个唱 2026-10-10",
+          "replay_url": "",
+          "remark": "仅出现在桐人今天睡大觉 BV1TApG6uEPX 分P18（心灵火Flame 的 BV1Qrpj6ZELm 少此曲，其余 19 首完全一致），以优先 UP 的合集为准。弹幕 02:28:07「竟然是宝可梦」与该曲为《宝可梦 XY&Z》片头曲相符。",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-compilation-chapter",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1TApG6uEPX/?p=18"
+        }
+      ]
+    },
+    "秘宝": {
+      "row_key": "秘宝",
+      "song_name": "秘宝",
+      "display_song_name": "秘宝",
+      "artist": "litterzy / 洛天依",
+      "cut_link": "https://www.bilibili.com/video/BV1TApG6uEPX/?p=19",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-10-10",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "litterzy / 洛天依",
+          "replay_id": "live:f2b6d1fe-4426-4669-b761-d4d5823974a0",
+          "replay_title": "【小松绿Viridis】随机的一个唱 2026-10-10",
+          "replay_url": "",
+          "remark": "两份合集均有此曲（BV1TApG6uEPX 分P19「秘宝」、BV1Qrpj6ZELm 分P18 写作「密保」，属同音错字，以优先 UP 的「秘宝」为准）。据百度百科：litterzy 作曲、冥凰作词、虚拟歌手洛天依演唱的原创 Vocaloid 中文歌曲，凯尔特风。",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-compilation-chapter",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1TApG6uEPX/?p=19"
+        }
+      ]
+    },
+    "流年如歌": {
+      "row_key": "流年如歌",
+      "song_name": "流年如歌",
+      "display_song_name": "流年如歌",
+      "artist": "苍穹",
+      "cut_link": "https://www.bilibili.com/video/BV1TApG6uEPX/?p=20",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-10-10",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "苍穹",
+          "replay_id": "live:f2b6d1fe-4426-4669-b761-d4d5823974a0",
+          "replay_title": "【小松绿Viridis】随机的一个唱 2026-10-10",
+          "replay_url": "",
+          "remark": "两份合集（BV1TApG6uEPX 分P20、BV1Qrpj6ZELm 分P19）同曲同序；弹幕 02:38:34「流年如歌」直接点名。分P原唱字段写「泠鸢yousa」，但据萌娘百科/百度百科：本曲是纳兰寻风 2020-01-24 投稿的 Synthesizer V 中文原创曲（哔哩哔哩 2020 拜年祭单品），作曲西门振、作词纳兰寻风，由苍穹演唱，泠鸢yousa 的版本是翻唱，故按「artist 记原唱」记苍穹。另注：同日的锦芸_official BV1ydpj6EE66《流年如歌-精修》描述自称素材来自「20261008晚间直播」，与本场两份合集及本场弹幕 02:38:34 的点名冲突，以本场证据为准。",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-compilation-chapter",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1TApG6uEPX/?p=20"
         }
       ]
     }

@@ -1,16 +1,17 @@
 {
   "roomKey": "xiaosonglu",
   "roomId": "1727071052",
-  "generatedAt": "2026-10-09T02:13:31.178Z",
+  "generatedAt": "2026-10-12T02:33:59.411Z",
   "source": "local-replay-ingestion",
   "latest": {
     "year": "2026",
     "month": "10",
-    "day": "08"
+    "day": "10"
   },
   "dateTree": {
     "2026": {
       "10": {
+        "10": 20,
         "08": 5,
         "06": 17,
         "02": 33
@@ -6134,6 +6135,368 @@
         "lyric_excerpt": "",
         "song_resolution_method": "song-cut-title",
         "cut_link": "https://www.bilibili.com/video/BV1AWHd6DEee/"
+      }
+    ],
+    "2026-10-10": [
+      {
+        "song_name": "惊鹊",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "忘川风华录 / 海伊 / 星尘Minus",
+        "replay_id": "live:f2b6d1fe-4426-4669-b761-d4d5823974a0",
+        "replay_title": "【小松绿Viridis】随机的一个唱 2026-10-10",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "惊鹊",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-compilation-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1TApG6uEPX/?p=1"
+      },
+      {
+        "song_name": "水叙湖风",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "忘川风华录 / 星尘Minus",
+        "replay_id": "live:f2b6d1fe-4426-4669-b761-d4d5823974a0",
+        "replay_title": "【小松绿Viridis】随机的一个唱 2026-10-10",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "水叙湖风",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-compilation-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1TApG6uEPX/?p=2"
+      },
+      {
+        "song_name": "梦境与魔女",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "时之歌Project（泛音堂）/ 喵☆酱",
+        "replay_id": "live:f2b6d1fe-4426-4669-b761-d4d5823974a0",
+        "replay_title": "【小松绿Viridis】随机的一个唱 2026-10-10",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "梦境与魔女",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-compilation-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1TApG6uEPX/?p=3"
+      },
+      {
+        "song_name": "女孩你为何踮脚尖",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "Ddickky / 墨兰花语 / 洛天依",
+        "replay_id": "live:f2b6d1fe-4426-4669-b761-d4d5823974a0",
+        "replay_title": "【小松绿Viridis】随机的一个唱 2026-10-10",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "女孩你为何踮脚尖",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-compilation-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1TApG6uEPX/?p=4"
+      },
+      {
+        "song_name": "思华年",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "忘川风华录 / 星尘",
+        "replay_id": "live:f2b6d1fe-4426-4669-b761-d4d5823974a0",
+        "replay_title": "【小松绿Viridis】随机的一个唱 2026-10-10",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "思华年",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-compilation-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1TApG6uEPX/?p=5"
+      },
+      {
+        "song_name": "小半",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "陈粒",
+        "replay_id": "live:f2b6d1fe-4426-4669-b761-d4d5823974a0",
+        "replay_title": "【小松绿Viridis】随机的一个唱 2026-10-10",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "小半",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-compilation-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1TApG6uEPX/?p=6"
+      },
+      {
+        "song_name": "易燃易爆炸",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "陈粒",
+        "replay_id": "live:f2b6d1fe-4426-4669-b761-d4d5823974a0",
+        "replay_title": "【小松绿Viridis】随机的一个唱 2026-10-10",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "易燃易爆炸",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-compilation-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1TApG6uEPX/?p=7"
+      },
+      {
+        "song_name": "奇妙能力歌",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "陈粒",
+        "replay_id": "live:f2b6d1fe-4426-4669-b761-d4d5823974a0",
+        "replay_title": "【小松绿Viridis】随机的一个唱 2026-10-10",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "奇妙能力歌",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-compilation-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1TApG6uEPX/?p=8"
+      },
+      {
+        "song_name": "走马",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "陈粒",
+        "replay_id": "live:f2b6d1fe-4426-4669-b761-d4d5823974a0",
+        "replay_title": "【小松绿Viridis】随机的一个唱 2026-10-10",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "走马",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-compilation-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1TApG6uEPX/?p=9"
+      },
+      {
+        "song_name": "余命3日少女",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "プロペリン / VY1",
+        "replay_id": "live:f2b6d1fe-4426-4669-b761-d4d5823974a0",
+        "replay_title": "【小松绿Viridis】随机的一个唱 2026-10-10",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "余命3日少女",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-compilation-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1TApG6uEPX/?p=10"
+      },
+      {
+        "song_name": "たばこ",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "Sawako碎花",
+        "replay_id": "live:f2b6d1fe-4426-4669-b761-d4d5823974a0",
+        "replay_title": "【小松绿Viridis】随机的一个唱 2026-10-10",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "たばこ",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-compilation-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1TApG6uEPX/?p=11"
+      },
+      {
+        "song_name": "ドライフラワー",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "優里",
+        "replay_id": "live:f2b6d1fe-4426-4669-b761-d4d5823974a0",
+        "replay_title": "【小松绿Viridis】随机的一个唱 2026-10-10",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "ドライフラワー",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-compilation-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1TApG6uEPX/?p=12"
+      },
+      {
+        "song_name": "Melody",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "陶喆",
+        "replay_id": "live:f2b6d1fe-4426-4669-b761-d4d5823974a0",
+        "replay_title": "【小松绿Viridis】随机的一个唱 2026-10-10",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "Melody",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-compilation-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1TApG6uEPX/?p=13"
+      },
+      {
+        "song_name": "愛言葉",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "DECO*27 / 初音ミク",
+        "replay_id": "live:f2b6d1fe-4426-4669-b761-d4d5823974a0",
+        "replay_title": "【小松绿Viridis】随机的一个唱 2026-10-10",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "愛言葉",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-compilation-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1TApG6uEPX/?p=14"
+      },
+      {
+        "song_name": "故梦",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "橙翼",
+        "replay_id": "live:f2b6d1fe-4426-4669-b761-d4d5823974a0",
+        "replay_title": "【小松绿Viridis】随机的一个唱 2026-10-10",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "故梦",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-compilation-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1TApG6uEPX/?p=15"
+      },
+      {
+        "song_name": "采茶纪",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "双笙",
+        "replay_id": "live:f2b6d1fe-4426-4669-b761-d4d5823974a0",
+        "replay_title": "【小松绿Viridis】随机的一个唱 2026-10-10",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "采茶纪",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-compilation-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1TApG6uEPX/?p=16"
+      },
+      {
+        "song_name": "プロポーズ",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "内緒のピアス / 可不",
+        "replay_id": "live:f2b6d1fe-4426-4669-b761-d4d5823974a0",
+        "replay_title": "【小松绿Viridis】随机的一个唱 2026-10-10",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "プロポーズ",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-compilation-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1TApG6uEPX/?p=17"
+      },
+      {
+        "song_name": "XY&Z",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "松本梨香",
+        "replay_id": "live:f2b6d1fe-4426-4669-b761-d4d5823974a0",
+        "replay_title": "【小松绿Viridis】随机的一个唱 2026-10-10",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "XY&Z",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-compilation-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1TApG6uEPX/?p=18"
+      },
+      {
+        "song_name": "秘宝",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "litterzy / 洛天依",
+        "replay_id": "live:f2b6d1fe-4426-4669-b761-d4d5823974a0",
+        "replay_title": "【小松绿Viridis】随机的一个唱 2026-10-10",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "秘宝",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-compilation-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1TApG6uEPX/?p=19"
+      },
+      {
+        "song_name": "流年如歌",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "苍穹",
+        "replay_id": "live:f2b6d1fe-4426-4669-b761-d4d5823974a0",
+        "replay_title": "【小松绿Viridis】随机的一个唱 2026-10-10",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "流年如歌",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-compilation-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1TApG6uEPX/?p=20"
       }
     ]
   }
