@@ -863,6 +863,13 @@ function getSongCardHtml(song) {
     : '';
   const inSomeSonglist = isSongInAnySonglist(song);
   const songlistAddHtml = `<button class="songlist-add-btn${inSomeSonglist ? ' in-some' : ''}" data-songlist-pick="${song.song_id}" title="${inSomeSonglist ? '已在歌单中，点击管理' : '加入歌单'}">${iconSvg('folder-add')}</button>`;
+  // 「下一首播放」锚点：歌词条右侧图标行下面的一枚小按钮，点击后这首歌会被插到
+  // 播放列表里当前播放曲目的下一位。只有“已经在下一首”的那张卡片会点亮。
+  const nextUpSong = player.queue === state.playlist && player.index >= 0 ? state.playlist[player.index + 1] : null;
+  const isNextUp = !!(audioUrl && nextUpSong && String(nextUpSong.song_id) === String(song.song_id));
+  const playNextHtml = audioUrl
+    ? `<button class="song-next-btn${isNextUp ? ' next-up' : ''}" data-play-next="${song.song_id}" title="${isNextUp ? '已经在播放列表的下一首' : '下一首播放：插到当前播放歌曲的下一位'}">${iconSvg('step-forward')}<span>下一首播放</span></button>`
+    : '';
   // 评分键用歌名：跨房间、跨数据重建都稳定（song_id 会随收录顺序浮动）；
   // 具体星级与交互由 js/rating.js 挂载，这里只留一个锚点。
   const ratingKey = String(song.display_song_name || song.song_name || song.row_key || '').trim();
@@ -882,10 +889,13 @@ function getSongCardHtml(song) {
           </div>
           <div class="song-sub">${escHtml(artistLine || '歌手未填写')}</div>
         </div>
-        <div class="song-actions">
-          ${playBtnHtml}
-          ${songlistAddHtml}
-          <button class="favorite-star${favoriteActive ? ' active' : ''}" data-favorite-key="${escHtml(favoriteKey)}" ${canFavoriteSong(song) ? '' : 'disabled'} title="${favoriteActive ? '取消中意' : '加入中意'}">${iconSvg(favoriteActive ? 'heart-fill' : 'heart')}</button>
+        <div class="song-action-stack">
+          <div class="song-actions">
+            ${playBtnHtml}
+            ${songlistAddHtml}
+            <button class="favorite-star${favoriteActive ? ' active' : ''}" data-favorite-key="${escHtml(favoriteKey)}" ${canFavoriteSong(song) ? '' : 'disabled'} title="${favoriteActive ? '取消中意' : '加入中意'}">${iconSvg(favoriteActive ? 'heart-fill' : 'heart')}</button>
+          </div>
+          ${playNextHtml}
         </div>
       </div>
       <div class="badge-wrap">
@@ -1259,6 +1269,12 @@ function syncPlayingButton() {
       }
     }
   }
+  // 「下一首播放」高亮：只有排在当前播放曲目之后的那首歌的按钮会点亮
+  const nextUpSong = player.queue === state.playlist && player.index >= 0 ? state.playlist[player.index + 1] : null;
+  const nextUpId = nextUpSong ? String(nextUpSong.song_id) : '';
+  document.querySelectorAll('.song-item .song-next-btn').forEach(btn => {
+    btn.classList.toggle('next-up', !!nextUpId && String(btn.dataset.playNext) === nextUpId);
+  });
 }
 
 function updatePlayerUI() {
@@ -1661,6 +1677,72 @@ function addToPlaylist(song, autoplay = true) {
   renderPlaylist();
   updatePlayerUI();
   return true;
+}
+
+// 「下一首播放」：把这首歌插到播放列表里**当前播放曲目的下一位**，并且不打断当前播放。
+// 已在列表里的歌会从原位置挪过来（不产生重复条目），列表为空或尚未开始播放时插到最前面。
+function playNextInPlaylist(song) {
+  if (!song) return false;
+  if (!audioUrlOf(song)) {
+    showToast('这首歌暂时没有收录音频');
+    return false;
+  }
+  const songId = String(song.song_id);
+  const isPlaylistQueue = player.queue === state.playlist;
+  const current = isPlaylistQueue && player.index >= 0 && player.index < state.playlist.length ? player.index : -1;
+  const existing = state.playlist.findIndex(item => item && String(item.song_id) === songId);
+
+  if (existing >= 0 && existing === current) {
+    showToast('这首歌正在播放');
+    return false;
+  }
+  if (current >= 0 && existing === current + 1) {
+    showToast('这首歌已经是播放列表的下一首');
+    return false;
+  }
+
+  // 先按“摘掉旧位置”修正当前播放曲目的索引，再算插入点，插到当前曲之后。
+  let newCurrent = current;
+  if (existing >= 0 && existing < current) newCurrent -= 1;
+  const insertAt = newCurrent >= 0 ? newCurrent + 1 : 0;
+  const previousLength = state.playlist.length;
+  if (existing >= 0) state.playlist.splice(existing, 1);
+  state.playlist.splice(insertAt, 0, snapshotOf(song));
+  savePlaylist();
+  player.queue = state.playlist;
+  if (newCurrent >= 0) player.index = newCurrent;
+  syncShuffleOrderAfterPlaylistEdit(previousLength, existing, insertAt, newCurrent);
+  renderPlaylist();
+  updatePlayerUI();
+  showToast(`已设为下一首播放：${song.display_song_name || song.song_name || ''}`);
+  return true;
+}
+
+// 手动挪动播放列表（下一首播放）之后同步随机播放顺序：
+// 把被摘掉的索引从洗牌序列里删除、其余索引平移，再把新插入的索引补在**当前曲之后**，
+// 这样随机模式下点“下一首”也会先播这首；序列不可信时干脆重新洗牌。
+function syncShuffleOrderAfterPlaylistEdit(previousLength, removedIndex, insertAt, currentIndex) {
+  if (player.playMode !== 'random') return;
+  if (!Array.isArray(player.shuffleOrder) || player.shuffleOrder.length !== previousLength) {
+    buildShuffleOrder();
+    return;
+  }
+  const mapOldIndex = oldIndex => {
+    if (oldIndex === removedIndex) return -1;
+    let next = oldIndex;
+    if (removedIndex >= 0 && oldIndex > removedIndex) next -= 1;
+    if (next >= insertAt) next += 1;
+    return next;
+  };
+  const order = [];
+  for (const oldIndex of player.shuffleOrder) {
+    const mapped = mapOldIndex(oldIndex);
+    if (mapped >= 0) order.push(mapped);
+  }
+  const currentPos = currentIndex >= 0 ? order.indexOf(currentIndex) : -1;
+  order.splice(currentPos >= 0 ? currentPos + 1 : order.length, 0, insertAt);
+  player.shuffleOrder = order;
+  player.shufflePos = currentPos >= 0 ? currentPos : 0;
 }
 
 function removeFromPlaylist(index) {
@@ -4050,6 +4132,17 @@ async function handleSongListClick(event) {
   if (songlistPickBtn) {
     const song = state.filteredSongs.find(item => item.song_id === Number(songlistPickBtn.dataset.songlistPick));
     if (song) openSonglistPicker(song);
+    return;
+  }
+
+  // 「下一首播放」：只把歌插进播放列表的下一位，不改变当前正在播放的曲目。
+  const playNextBtn = target.closest('[data-play-next]');
+  if (playNextBtn) {
+    const song = state.filteredSongs.find(item => String(item.song_id) === String(playNextBtn.dataset.playNext));
+    if (song && playNextInPlaylist(song)) {
+      playNextBtn.classList.add('anim-pop');
+      setTimeout(() => playNextBtn.classList.remove('anim-pop'), 450);
+    }
     return;
   }
 

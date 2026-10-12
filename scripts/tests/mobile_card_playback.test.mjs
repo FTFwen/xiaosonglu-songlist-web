@@ -24,6 +24,11 @@ function fakeClassList(initial = []) {
     add: (...names) => names.forEach(name => values.add(name)),
     remove: (...names) => names.forEach(name => values.delete(name)),
     contains: name => values.has(name),
+    toggle: (name, force) => {
+      const on = force === undefined ? !values.has(name) : !!force;
+      if (on) values.add(name); else values.delete(name);
+      return on;
+    },
   };
 }
 
@@ -70,6 +75,7 @@ test('delegated song-card clicks execute mobile-device, desktop, play-button, an
     copyOrderTextOf: async item => calls.push(['copy', item.song_id]),
     openSonglistPicker: () => calls.push(['songlist']),
     toggleFavoriteBySong: async () => calls.push(['favorite']),
+    playNextInPlaylist: item => { calls.push(['next', item.song_id]); return true; },
     loadSongDetail: async () => calls.push(['detail']),
     setTimeout,
   };
@@ -109,7 +115,20 @@ test('delegated song-card clicks execute mobile-device, desktop, play-button, an
   await context.handle({ target: guardedTarget, pointerType: 'touch' });
   assert.equal(calls.length, 0, 'unrelated controls inside a card must not trigger playback or copy');
 
+  const nextButton = { dataset: { playNext: '7' }, classList: fakeClassList() };
+  const nextTarget = makeTarget({
+    '[data-play-next]': nextButton,
+    [interactiveSelector]: nextButton,
+    '.song-item': card,
+  });
+  await context.handle({ target: nextTarget, pointerType: 'mouse' });
+  assert.deepEqual(calls.pop(), ['next', 7], 'the next-up button must queue the song instead of starting playback');
+  assert.equal(nextButton.classList.contains('anim-pop'), true, 'the next-up button should replay its pop animation');
+
   assert.match(appSource, /songListWrap\.addEventListener\('click', handleSongListClick\)/);
+  assert.match(appSource, /closest\('\[data-play-next\]'\)/);
+  assert.match(appSource, /data-play-next="\$\{song\.song_id\}"/);
+  assert.match(appSource, /class="song-action-stack"/);
 });
 
 test('same-song activation alternates through shared request and pause helpers, while no-audio is inert', () => {
@@ -228,6 +247,102 @@ test('tapping a song builds the filtered queue, jumps in place, or inserts as th
   assert.equal(player.index, 1);
   assert.equal(player.shufflePos, 2, 'playSongAt should align shufflePos with the inserted track');
   assert.equal(player.shuffleOrder[player.shufflePos + 1], 2, 'the original next random track should still follow the insertion');
+});
+
+test('the next-up button reorders the playlist without interrupting the current track', () => {
+  const source = sourceBetween(appSource, 'function playNextInPlaylist', 'function removeFromPlaylist');
+  const songs = [
+    { song_id: 1, song_name: 'A' },
+    { song_id: 2, song_name: 'B' },
+    { song_id: 3, song_name: 'C' },
+  ];
+  const unavailable = { song_id: 8, song_name: '暂无音频' };
+  const state = { playlist: songs.map(item => ({ ...item })) };
+  let hasAudio = true;
+  const player = {
+    queue: state.playlist,
+    index: 0,
+    playMode: 'list',
+    shuffleOrder: null,
+    shufflePos: 0,
+    audio: { src: '', load() {}, pause() {} },
+    get current() { return this.queue[this.index] || null; },
+  };
+  const toasts = [];
+  let saved = 0;
+  let rendered = 0;
+  let uiUpdates = 0;
+  let rebuilds = 0;
+  const context = {
+    state,
+    player,
+    audioUrlOf: song => (hasAudio && song.song_id !== 8) ? `a${song.song_id}.m4a` : '',
+    snapshotOf: item => ({ ...item }),
+    savePlaylist: () => { saved += 1; },
+    renderPlaylist: () => { rendered += 1; },
+    updatePlayerUI: () => { uiUpdates += 1; },
+    buildShuffleOrder: () => { rebuilds += 1; },
+    showToast: message => toasts.push(message),
+  };
+  vm.runInNewContext(`${source}\nthis.playNext = playNextInPlaylist;`, context);
+  const ids = () => state.playlist.map(item => item.song_id);
+
+  // 规则一：把列表里的靠后歌曲提到「当前播放」的下一位
+  assert.equal(context.playNext(songs[2]), true);
+  assert.deepEqual(ids(), [1, 3, 2], 'the requested song must move right after the current track');
+  assert.equal(player.index, 0, 'the currently playing track must keep its position');
+  assert.equal(player.queue, state.playlist);
+  assert.deepEqual(state.playlist[player.index], songs[0], 'playback must not switch to the queued song');
+  assert.equal(saved, 1);
+  assert.equal(rendered, 1);
+  assert.equal(uiUpdates, 1);
+  assert.match(toasts.at(-1), /已设为下一首播放/);
+
+  // 规则二：把更靠前的歌曲移到当前曲之后（先摘掉再插入，当前索引要相应左移）
+  player.index = 2;
+  assert.equal(context.playNext(songs[0]), true);
+  assert.deepEqual(ids(), [3, 2, 1], 'an earlier song must be pulled out and re-inserted after the current one');
+  assert.equal(player.index, 1, 'the current track index must shift left with the removal');
+  assert.deepEqual(state.playlist[player.index], songs[1], 'the same song must stay current after the reorder');
+
+  // 规则三：已经在下一首 / 正在播放 / 无音频都是空操作
+  const before = [...state.playlist];
+  assert.equal(context.playNext(songs[0]), false);
+  assert.match(toasts.at(-1), /已经是播放列表的下一首/);
+  assert.equal(context.playNext(songs[1]), false);
+  assert.match(toasts.at(-1), /这首歌正在播放/);
+  hasAudio = false;
+  assert.equal(context.playNext(unavailable), false);
+  assert.match(toasts.at(-1), /暂时没有收录音频/);
+  assert.deepEqual(state.playlist, before, 'rejected requests must leave the playlist untouched');
+  assert.equal(player.index, 1);
+  assert.equal(saved, 2, 'rejected requests must not persist anything');
+
+  // 规则四：列表外的新歌插到最前面（没有当前曲时也不会改动播放索引）
+  hasAudio = true;
+  player.index = -1;
+  assert.equal(context.playNext({ song_id: 9, song_name: 'D' }), true);
+  assert.deepEqual(ids(), [9, 3, 2, 1], 'with nothing playing the song should land at the head of the list');
+  assert.equal(player.index, -1, 'an idle player must stay idle until the user presses play');
+
+  // 规则五：随机模式下洗牌序列同步，点「下一首」就能先播这首
+  state.playlist = songs.map(item => ({ ...item }));
+  player.queue = state.playlist;
+  player.index = 0;
+  player.playMode = 'random';
+  player.shuffleOrder = [2, 0, 1]; // 随机顺序 C A B，当前停在位置 1（A）
+  player.shufflePos = 1;
+  assert.equal(context.playNext({ song_id: 9, song_name: 'D' }), true);
+  assert.deepEqual(ids(), [1, 9, 2, 3]);
+  assert.deepEqual(Array.from(player.shuffleOrder), [3, 0, 1, 2], 'shuffle order should slot the new track right after the current one');
+  assert.equal(player.shuffleOrder[player.shufflePos + 1], 1, 'the queued song must be the next random track');
+  assert.equal(player.index, 0);
+  assert.equal(rebuilds, 0, 'a trustworthy shuffle order must be remapped, not rebuilt');
+
+  // 洗牌序列长度与播放列表不一致时重新洗牌，避免索引错位
+  player.shuffleOrder = [0, 1];
+  context.playNext({ song_id: 10, song_name: 'E' });
+  assert.equal(rebuilds, 1, 'an out-of-sync shuffle order must be rebuilt');
 });
 
 test('songlist playback and restored persistent queue exclude unavailable audio', () => {
@@ -606,13 +721,18 @@ test('mobile playing card class follows real player state without animations', (
       return null;
     },
   };
-  const player = { current: { song_id: 7 }, playing: true };
+  const playlist = [{ song_id: 1 }, { song_id: 7 }, { song_id: 9 }];
+  const player = { current: { song_id: 7 }, playing: true, queue: playlist, index: 0 };
+  const nextUpButton = { classList: fakeClassList(), dataset: { playNext: '7' } };
+  const otherNextButton = { classList: fakeClassList(), dataset: { playNext: '9' } };
   const context = {
     window: { matchMedia: () => ({ matches: true }) },
+    state: { playlist },
     document: {
       querySelectorAll(selector) {
         if (selector === '.song-item.now-playing') return cardClasses.contains('now-playing') ? [card] : [];
         if (selector === '.song-item .song-play-btn.playing') return playClasses.contains('playing') ? [playButton] : [];
+        if (selector === '.song-item .song-next-btn') return [nextUpButton, otherNextButton];
         return [];
       },
     },
@@ -629,6 +749,13 @@ test('mobile playing card class follows real player state without animations', (
   assert.equal(playButton.title, '暂停');
   assert.equal(vinylClasses.contains('spinning'), false);
   assert.equal(insertedWave, false);
+  assert.equal(nextUpButton.classList.contains('next-up'), true, 'the song right after the current one must light up its next-up button');
+  assert.equal(otherNextButton.classList.contains('next-up'), false);
+
+  player.index = 1;
+  context.sync();
+  assert.equal(nextUpButton.classList.contains('next-up'), false);
+  assert.equal(otherNextButton.classList.contains('next-up'), true, 'the highlight must follow the current track');
 
   player.playing = false;
   context.sync();
@@ -668,7 +795,7 @@ test('mobile media-query cascade gives only the playing card a glass state and c
     assert.match(css, /\.playing-bars[\s\S]*?display: none !important;/);
   }
   assert.match(htmlSource, /js\/data\.js\?v=30/);
-  assert.match(htmlSource, /js\/app\.js\?v=109/);
+  assert.match(htmlSource, /js\/app\.js\?v=110/);
   assert.match(workshopHtmlSource, /js\/data\.js\?v=31/);
   assert.match(workshopHtmlSource, /js\/start\.js\?v=18/);
 });
