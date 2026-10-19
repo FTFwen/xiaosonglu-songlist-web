@@ -124,3 +124,29 @@ $env:XSL_BILIBILI_COOKIE_FILE = '<工作区外的 Netscape Cookie 文件路径>'
 - `deployment-failed`：Wrangler 返回错误，脚本以非零退出；结构化结果中的 `deploymentAttempts` 会记录每次尝试、是否可重试以及下一次等待时间。
 
 `-Force` 只会绕过内容哈希判断，不会绕过凭证、Functions 或 R2 安全检查。`-DeployAttempts`、`-RetryBaseSeconds` 与 `-RetryMaxSeconds` 可由自动化任务调整，但每次仍必须发布同一完整 staging 快照。
+
+## ECS 本地镜像（viridis.love 的实际服务端）
+
+`viridis.love` 解析到阿里云 ECS（39.105.177.43），由 nginx 直接读 `/var/www/viridis-site` 对外服务；`workshop.viridis.love` 仍走 Cloudflare。
+
+之所以不再反代回 Cloudflare：ECS → Cloudflare Pages 这一段实测只有约 3 KB/s，1 MB 的 `js/data.js` 要跑几分钟，而且大文件会被截断（`js/app.js` 的 208557 字节经常只到达 8–19 万）。改成回源 3 KB/s 加截断之后，站点基本不可用。现在只有缓存未命中的页面/接口才回源，正常请求全部命中本地磁盘。
+
+因此**每次部署要发布两处**：Cloudflare Pages（源站，workshop 与 pages.dev 域名用）和这台 ECS 的镜像。`deploy_web.ps1` 在上传成功后会自动调用镜像刷新；`-SkipEcsMirror` 可跳过。
+
+| 脚本 | 作用 |
+| --- | --- |
+| `sync_site_to_ecs.ps1` | 从 `.wrangler/deploy-stage` 打包 HTML/JS/CSS/JSON（约 118 文件 20 MB），原子切换到 `/var/www/viridis-site`，抽样 SHA-256 校验；`/assets` 不参与打包，切换时用硬链接从上一次目录搬过去 |
+| `push_assets_to_ecs.ps1` | 增量推送 `/assets`（音频、图片，约 408 文件 1.3 GB），分片 + 并行（4 路约 5 MB/s、6 路约 7.5 MB/s），默认 `-SkipExisting` 只补缺失文件 |
+| `sync_ecs_mirror.ps1` | 编排上面两个：文本 → `/assets` → `/workshop/assets`，供 `deploy_web.ps1` 调用 |
+
+```powershell
+# 手动刷新镜像（部署之外）
+.\xsl-web-tools\sync_ecs_mirror.ps1 -Root D:\tool\webdeploy
+
+# 只刷文本，不动 1.3 GB 音频
+.\xsl-web-tools\sync_ecs_mirror.ps1 -Root D:\tool\webdeploy -SkipAssets
+```
+
+注意：`sync_site_to_ecs.ps1` 的原子切换会整体替换站点目录，`/assets` 必须在切换前用硬链接带入，否则站点会在下一次资源推送前没有音频和图片。这一点已经写进远程脚本里，修改时不要删掉。
+
+SSH 密钥默认 `~/.ssh/viridis_aliyun`，可用 `-SshKey` / `-Target`（或 `-Server` + `-SshUser`）覆盖。

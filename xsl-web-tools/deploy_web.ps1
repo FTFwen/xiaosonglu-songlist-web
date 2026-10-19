@@ -22,7 +22,11 @@ param(
     [string]$ClashProxyChoice = '',
     [string]$ProjectName = 'xsl-songlist',
     [string]$Branch = 'main',
-    [string]$Root = ''
+    [string]$Root = '',
+    # viridis.love is served by nginx on the Aliyun ECS from a local mirror, because
+    # the ECS -> Cloudflare hop is far too slow for large files. Refresh that mirror
+    # after every successful upload so the site never lags a deployment.
+    [switch]$SkipEcsMirror
 )
 
 $ErrorActionPreference = 'Stop'
@@ -52,6 +56,9 @@ if ($LASTEXITCODE -ne 0) { throw 'Song-data validation failed; refusing deployme
 $powershellCommand = (Get-Command powershell.exe -ErrorAction Stop).Source
 & $powershellCommand '-NoProfile' '-ExecutionPolicy' 'Bypass' '-File' (Join-Path $rootPath 'xsl-web-tools\sync_workspace_data.ps1') '-Check' '-Root' $rootPath | Out-Host
 if ($LASTEXITCODE -ne 0) { throw 'Workshop data mirror check failed; synchronize before deployment.' }
+
+# Populated after a successful upload when the ECS mirror is refreshed.
+$ecsMirror = $null
 
 # Serialize preparation and remote publication. The stage directory is intentionally reused
 # across retries, so two invocations must never delete/rebuild it concurrently.
@@ -732,6 +739,36 @@ if ($Deploy) {
                 if ($exitCode -eq 0 -or -not $retryable -or $attempt -eq $DeployAttempts) { break }
                 Start-Sleep -Seconds $delaySeconds
             }
+
+            # Cloudflare Pages now holds the snapshot, but viridis.love is served by nginx
+            # on the ECS from a local mirror (the ECS -> Cloudflare hop is too slow to
+            # stream from). Refresh it with the same stage we just uploaded, otherwise the
+            # public site keeps serving the previous data set until someone syncs by hand.
+            if ($exitCode -eq 0 -and -not $SkipEcsMirror) {
+                $deploymentOutput += "--- ECS mirror refresh ---"
+                $mirrorScript = Join-Path $PSScriptRoot 'sync_ecs_mirror.ps1'
+                if (-not (Test-Path -LiteralPath $mirrorScript -PathType Leaf)) {
+                    $ecsMirror = [ordered]@{ ok = $false; error = 'sync_ecs_mirror.ps1 is missing' }
+                    $deploymentOutput += 'WARNING: ECS mirror helper missing; viridis.love may serve stale bytes.'
+                } else {
+                    try {
+                        $mirrorOutput = @(& $powershellCommand '-NoProfile' '-NonInteractive' '-ExecutionPolicy' 'Bypass' '-File' $mirrorScript '-Root' $rootPath 2>&1 | ForEach-Object { $_.ToString() })
+                        $mirrorExit = $LASTEXITCODE
+                        $deploymentOutput += $mirrorOutput
+                        $ecsMirror = [ordered]@{
+                            ok = $mirrorExit -eq 0
+                            exitCode = $mirrorExit
+                            output = $mirrorOutput
+                        }
+                        if ($mirrorExit -ne 0) {
+                            $deploymentOutput += 'WARNING: ECS mirror refresh failed; viridis.love may serve stale bytes until it succeeds.'
+                        }
+                    } catch {
+                        $ecsMirror = [ordered]@{ ok = $false; exitCode = $null; error = $_.Exception.Message }
+                        $deploymentOutput += "WARNING: ECS mirror refresh threw: $($_.Exception.Message)"
+                    }
+                }
+            }
         } finally {
             if ($manageClashRoute -and $clashRouteChanged) {
                 try {
@@ -810,6 +847,8 @@ $result = [ordered]@{
     deploymentAttemptCount = $deploymentAttemptSummaries.Count
     deploymentAttempts = $deploymentAttemptSummaries
     onlineVerification = $onlineVerification
+    ecsMirrorRequested = -not $SkipEcsMirror
+    ecsMirror = $ecsMirror
     deploymentOutput = $deploymentOutput
 }
 $resultJson = $result | ConvertTo-Json -Depth 6
