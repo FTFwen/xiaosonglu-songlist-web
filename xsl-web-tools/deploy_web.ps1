@@ -739,36 +739,6 @@ if ($Deploy) {
                 if ($exitCode -eq 0 -or -not $retryable -or $attempt -eq $DeployAttempts) { break }
                 Start-Sleep -Seconds $delaySeconds
             }
-
-            # Cloudflare Pages now holds the snapshot, but viridis.love is served by nginx
-            # on the ECS from a local mirror (the ECS -> Cloudflare hop is too slow to
-            # stream from). Refresh it with the same stage we just uploaded, otherwise the
-            # public site keeps serving the previous data set until someone syncs by hand.
-            if ($exitCode -eq 0 -and -not $SkipEcsMirror) {
-                $deploymentOutput += "--- ECS mirror refresh ---"
-                $mirrorScript = Join-Path $PSScriptRoot 'sync_ecs_mirror.ps1'
-                if (-not (Test-Path -LiteralPath $mirrorScript -PathType Leaf)) {
-                    $ecsMirror = [ordered]@{ ok = $false; error = 'sync_ecs_mirror.ps1 is missing' }
-                    $deploymentOutput += 'WARNING: ECS mirror helper missing; viridis.love may serve stale bytes.'
-                } else {
-                    try {
-                        $mirrorOutput = @(& $powershellCommand '-NoProfile' '-NonInteractive' '-ExecutionPolicy' 'Bypass' '-File' $mirrorScript '-Root' $rootPath 2>&1 | ForEach-Object { $_.ToString() })
-                        $mirrorExit = $LASTEXITCODE
-                        $deploymentOutput += $mirrorOutput
-                        $ecsMirror = [ordered]@{
-                            ok = $mirrorExit -eq 0
-                            exitCode = $mirrorExit
-                            output = $mirrorOutput
-                        }
-                        if ($mirrorExit -ne 0) {
-                            $deploymentOutput += 'WARNING: ECS mirror refresh failed; viridis.love may serve stale bytes until it succeeds.'
-                        }
-                    } catch {
-                        $ecsMirror = [ordered]@{ ok = $false; exitCode = $null; error = $_.Exception.Message }
-                        $deploymentOutput += "WARNING: ECS mirror refresh threw: $($_.Exception.Message)"
-                    }
-                }
-            }
         } finally {
             if ($manageClashRoute -and $clashRouteChanged) {
                 try {
@@ -818,6 +788,38 @@ if ($Deploy) {
 }
 
 $operationFailed = $status -in @('deployment-failed', 'skipped-missing-credentials', 'skipped-missing-wrangler')
+
+# viridis.love is served by nginx on the Aliyun ECS from a local mirror, because the
+# ECS -> Cloudflare hop measures about 3 KB/s and truncates large files. That mirror
+# can drift independently of Pages, so reconcile it whenever a deployment ends in a
+# state where Pages is known good -- including "verified-no-content-change", which is
+# exactly what a manual mirror repair looks like.
+if (-not $SkipEcsMirror -and $status -in @('deployed', 'verified-no-content-change')) {
+    $deploymentOutput += '--- ECS mirror refresh ---'
+    $mirrorScript = Join-Path $PSScriptRoot 'sync_ecs_mirror.ps1'
+    if (-not (Test-Path -LiteralPath $mirrorScript -PathType Leaf)) {
+        $ecsMirror = [ordered]@{ ok = $false; error = 'sync_ecs_mirror.ps1 is missing' }
+        $deploymentOutput += 'WARNING: ECS mirror helper missing; viridis.love may serve stale bytes.'
+    } else {
+        try {
+            $mirrorOutput = @(& $powershellCommand '-NoProfile' '-NonInteractive' '-ExecutionPolicy' 'Bypass' '-File' $mirrorScript '-Root' $rootPath 2>&1 | ForEach-Object { $_.ToString() })
+            $mirrorExit = $LASTEXITCODE
+            $deploymentOutput += $mirrorOutput
+            $ecsMirror = [ordered]@{
+                ok = $mirrorExit -eq 0
+                exitCode = $mirrorExit
+                output = $mirrorOutput
+            }
+            if ($mirrorExit -ne 0) {
+                $deploymentOutput += 'WARNING: ECS mirror refresh failed; viridis.love may serve stale bytes until it succeeds.'
+            }
+        } catch {
+            $ecsMirror = [ordered]@{ ok = $false; exitCode = $null; error = $_.Exception.Message }
+            $deploymentOutput += "WARNING: ECS mirror refresh threw: $($_.Exception.Message)"
+        }
+    }
+}
+
 $result = [ordered]@{
     ok = -not $operationFailed
     status = $status
