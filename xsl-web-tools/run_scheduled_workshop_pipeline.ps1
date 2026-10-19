@@ -339,6 +339,24 @@ try {
                             $status = 'deployed'
                             $exitCode = 0
                             Write-RunLog "online verification passed after $($verification.attempts) attempt(s); pagesUrl=$pagesUrl"
+                            # viridis.love/workshop serves the same mirror files from the ECS, so refresh
+                            # its text copy too; otherwise the main domain keeps yesterday's workshop data.
+                            # The workspace deploy lock is still held here, so this cannot race a main deploy.
+                            $mirrorScript = Join-Path $PSScriptRoot 'sync_ecs_mirror.ps1'
+                            if (Test-Path -LiteralPath $mirrorScript -PathType Leaf) {
+                                Write-RunLog '--- ECS mirror text refresh ---'
+                                try {
+                                    $mirrorResult = Invoke-Captured -CommandLine (('powershell.exe -NoLogo -NoProfile -NonInteractive -ExecutionPolicy Bypass -File {0} -Root "{1}" -SkipAssets' -f (Quote-Executable $mirrorScript), $rootPath))
+                                    foreach ($line in ($mirrorResult.Text -split "`r?`n")) {
+                                        if ($line.Trim()) { Write-RunLog $line.Trim() }
+                                    }
+                                    if ($mirrorResult.ExitCode -ne 0) {
+                                        Write-RunLog "WARNING: ECS mirror refresh failed with exit code $($mirrorResult.ExitCode)"
+                                    }
+                                } catch {
+                                    Write-RunLog "WARNING: ECS mirror refresh threw: $($_.Exception.Message)"
+                                }
+                            }
                         } else {
                             $errorSummary = "online verification failed: $($verification.reason)"
                             Write-RunLog "ERROR: $errorSummary"

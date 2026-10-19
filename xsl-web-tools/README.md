@@ -131,7 +131,7 @@ $env:XSL_BILIBILI_COOKIE_FILE = '<工作区外的 Netscape Cookie 文件路径>'
 
 之所以不再反代回 Cloudflare：ECS → Cloudflare Pages 这一段实测只有约 3 KB/s，1 MB 的 `js/data.js` 要跑几分钟，而且大文件会被截断（`js/app.js` 的 208557 字节经常只到达 8–19 万）。改成回源 3 KB/s 加截断之后，站点基本不可用。现在只有缓存未命中的页面/接口才回源，正常请求全部命中本地磁盘。
 
-因此**每次部署要发布两处**：Cloudflare Pages（源站，workshop 与 pages.dev 域名用）和这台 ECS 的镜像。`deploy_web.ps1` 在上传成功后会自动调用镜像刷新；`-SkipEcsMirror` 可跳过。
+因此**每次部署要发布两处**：Cloudflare Pages（源站，workshop 与 pages.dev 域名用）和这台 ECS 的镜像。`deploy_web.ps1` 在 `deployed` 与 `verified-no-content-change` 两种结局下都会刷新镜像（内容没变时也刷，用来修漂移），`run_scheduled_workshop_pipeline.ps1` 在 workshop 部署成功后会只刷文本部分（`-SkipAssets`），避免 `viridis.love/workshop/` 落后一天；`-SkipEcsMirror` 可跳过。
 
 | 脚本 | 作用 |
 | --- | --- |
