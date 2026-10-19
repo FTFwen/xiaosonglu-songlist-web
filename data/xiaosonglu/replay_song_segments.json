@@ -3,7 +3,7 @@
   "roomId": "1727071052",
   "sourceType": "bilibili-live-replay-song-segments",
   "description": "从小松绿直播回放中识别出的唱歌片段原始记录。由每日自动化或人工补录维护，随后通过 scripts/build_xiaosonglu_song_data.js 聚合成插件可直接读取的歌单与历史数据。歌名允许先根据歌词片段联网检索后再补全，回放日期允许先留空并由脚本从回放标题中解析。",
-  "updatedAt": "2026-10-19T02:38:23.712Z",
+  "updatedAt": "2026-10-19T03:19:00.711Z",
   "segments": [
     {
       "replay_id": "BV1Xiu86aEwV",
@@ -13840,6 +13840,591 @@
           "title": "【初音未來Dark】心拍数♯0822【蝶蝶P】",
           "url": "https://www.bilibili.com/video/BV1Mx411c7BF/",
           "snippet": "原曲归属证据：蝶々P feat.初音ミク"
+        }
+      ]
+    },
+    {
+      "replay_id": "live:d46e5e86-4ef8-4407-8b9b-83e793fae681",
+      "replay_title": "【小松绿Viridis】脑袋空空的。。。 2026-10-18",
+      "replay_url": "",
+      "replay_date": "2026-10-18",
+      "replay_date_source": "live-api-date",
+      "segment_index": 2,
+      "start_time": "",
+      "end_time": "",
+      "lyric_excerpt": "",
+      "song_search_query": "阿拉斯加海湾",
+      "song_resolution_method": "song-cut-compilation-chapter",
+      "song_name": "阿拉斯加海湾",
+      "display_song_name": "阿拉斯加海湾",
+      "artist": "蓝心羽",
+      "artist_search": "蓝心羽 阿拉斯加海湾",
+      "feat_artist": "",
+      "language": "中文",
+      "tone": "",
+      "status_labels": [
+        "歌回",
+        "歌切合集复核"
+      ],
+      "display_version": "",
+      "type": "流行",
+      "remark": "桐人今天睡大觉「全自动歌切项目」2026.10.18 歌切合集第 2 分P（章节「02_阿拉斯加海湾 - 蓝心羽」）。弹幕未直接出现歌名，仅以合集章节 + 日期确认。未定位回放时间点。",
+      "identification": "",
+      "cut_link": "https://www.bilibili.com/video/BV1UPnV6zEs4/?p=2",
+      "confidence": 0.85,
+      "row_key": "阿拉斯加海湾",
+      "search_name": "",
+      "resolution_candidates": [
+        {
+          "title": "【小松绿Viridis】我去！宝宝原来你唱歌这么好听，我们来重新认识一下吧！ 2026.10.18歌切合集",
+          "url": "https://www.bilibili.com/video/BV1UPnV6zEs4/",
+          "snippet": "UP 桐人今天睡大觉，章节「02_阿拉斯加海湾 - 蓝心羽」"
+        }
+      ]
+    },
+    {
+      "replay_id": "live:d46e5e86-4ef8-4407-8b9b-83e793fae681",
+      "replay_title": "【小松绿Viridis】脑袋空空的。。。 2026-10-18",
+      "replay_url": "",
+      "replay_date": "2026-10-18",
+      "replay_date_source": "live-api-date",
+      "segment_index": 3,
+      "start_time": "",
+      "end_time": "",
+      "lyric_excerpt": "",
+      "song_search_query": "爱情转移",
+      "song_resolution_method": "song-cut-compilation-chapter",
+      "song_name": "爱情转移",
+      "display_song_name": "爱情转移",
+      "artist": "陈奕迅",
+      "artist_search": "陈奕迅 爱情转移",
+      "feat_artist": "",
+      "language": "中文",
+      "tone": "",
+      "status_labels": [
+        "歌回",
+        "歌切合集复核"
+      ],
+      "display_version": "",
+      "type": "华语经典、流行",
+      "remark": "桐人今天睡大觉「全自动歌切项目」2026.10.18 歌切合集第 3 分P（章节「03_爱情转移 - 陈奕迅」）。弹幕共 19 条直接出现该歌名。未定位回放时间点。",
+      "identification": "",
+      "cut_link": "https://www.bilibili.com/video/BV1UPnV6zEs4/?p=3",
+      "confidence": 0.9,
+      "row_key": "爱情转移",
+      "search_name": "",
+      "resolution_candidates": [
+        {
+          "title": "【小松绿Viridis】我去！宝宝原来你唱歌这么好听，我们来重新认识一下吧！ 2026.10.18歌切合集",
+          "url": "https://www.bilibili.com/video/BV1UPnV6zEs4/",
+          "snippet": "UP 桐人今天睡大觉，章节「03_爱情转移 - 陈奕迅」"
+        }
+      ]
+    },
+    {
+      "replay_id": "live:d46e5e86-4ef8-4407-8b9b-83e793fae681",
+      "replay_title": "【小松绿Viridis】脑袋空空的。。。 2026-10-18",
+      "replay_url": "",
+      "replay_date": "2026-10-18",
+      "replay_date_source": "live-api-date",
+      "segment_index": 4,
+      "start_time": "",
+      "end_time": "",
+      "lyric_excerpt": "",
+      "song_search_query": "世末积雨云",
+      "song_resolution_method": "song-cut-compilation-chapter",
+      "song_name": "世末积雨云",
+      "display_song_name": "世末积雨云",
+      "artist": "洛天依Official",
+      "artist_search": "洛天依Official 世末积雨云",
+      "feat_artist": "",
+      "language": "中文",
+      "tone": "",
+      "status_labels": [
+        "歌回",
+        "歌切合集复核"
+      ],
+      "display_version": "",
+      "type": "中V、流行",
+      "remark": "桐人今天睡大觉「全自动歌切项目」2026.10.18 歌切合集第 4 分P（章节「05_世末积雨云 - 洛天依Official」）。弹幕未直接出现歌名，仅以合集章节 + 日期确认。未定位回放时间点。",
+      "identification": "",
+      "cut_link": "https://www.bilibili.com/video/BV1UPnV6zEs4/?p=4",
+      "confidence": 0.85,
+      "row_key": "世末积雨云",
+      "search_name": "",
+      "resolution_candidates": [
+        {
+          "title": "【小松绿Viridis】我去！宝宝原来你唱歌这么好听，我们来重新认识一下吧！ 2026.10.18歌切合集",
+          "url": "https://www.bilibili.com/video/BV1UPnV6zEs4/",
+          "snippet": "UP 桐人今天睡大觉，章节「05_世末积雨云 - 洛天依Official」"
+        }
+      ]
+    },
+    {
+      "replay_id": "live:d46e5e86-4ef8-4407-8b9b-83e793fae681",
+      "replay_title": "【小松绿Viridis】脑袋空空的。。。 2026-10-18",
+      "replay_url": "",
+      "replay_date": "2026-10-18",
+      "replay_date_source": "live-api-date",
+      "segment_index": 5,
+      "start_time": "",
+      "end_time": "",
+      "lyric_excerpt": "",
+      "song_search_query": "给自己的情书",
+      "song_resolution_method": "song-cut-compilation-chapter",
+      "song_name": "给自己的情书",
+      "display_song_name": "给自己的情书",
+      "artist": "王菲",
+      "artist_search": "王菲 给自己的情书",
+      "feat_artist": "",
+      "language": "中文",
+      "tone": "",
+      "status_labels": [
+        "歌回",
+        "歌切合集复核"
+      ],
+      "display_version": "",
+      "type": "流行、影视",
+      "remark": "桐人今天睡大觉「全自动歌切项目」2026.10.18 歌切合集第 5 分P（章节「06_给自己的情书 - 王菲」）。弹幕未直接出现歌名，仅以合集章节 + 日期确认。未定位回放时间点。",
+      "identification": "",
+      "cut_link": "https://www.bilibili.com/video/BV1UPnV6zEs4/?p=5",
+      "confidence": 0.85,
+      "row_key": "给自己的情书",
+      "search_name": "",
+      "resolution_candidates": [
+        {
+          "title": "【小松绿Viridis】我去！宝宝原来你唱歌这么好听，我们来重新认识一下吧！ 2026.10.18歌切合集",
+          "url": "https://www.bilibili.com/video/BV1UPnV6zEs4/",
+          "snippet": "UP 桐人今天睡大觉，章节「06_给自己的情书 - 王菲」"
+        }
+      ]
+    },
+    {
+      "replay_id": "live:d46e5e86-4ef8-4407-8b9b-83e793fae681",
+      "replay_title": "【小松绿Viridis】脑袋空空的。。。 2026-10-18",
+      "replay_url": "",
+      "replay_date": "2026-10-18",
+      "replay_date_source": "live-api-date",
+      "segment_index": 8,
+      "start_time": "",
+      "end_time": "",
+      "lyric_excerpt": "",
+      "song_search_query": "传奇",
+      "song_resolution_method": "song-cut-compilation-chapter",
+      "song_name": "传奇",
+      "display_song_name": "传奇",
+      "artist": "王菲",
+      "artist_search": "王菲 传奇",
+      "feat_artist": "",
+      "language": "中文",
+      "tone": "",
+      "status_labels": [
+        "歌回",
+        "歌切合集复核"
+      ],
+      "display_version": "",
+      "type": "华语经典、流行",
+      "remark": "桐人今天睡大觉「全自动歌切项目」2026.10.18 歌切合集第 8 分P（章节「09_传奇 - 王菲」）。弹幕共 17 条直接出现该歌名。未定位回放时间点。",
+      "identification": "",
+      "cut_link": "https://www.bilibili.com/video/BV1UPnV6zEs4/?p=8",
+      "confidence": 0.9,
+      "row_key": "传奇",
+      "search_name": "",
+      "resolution_candidates": [
+        {
+          "title": "【小松绿Viridis】我去！宝宝原来你唱歌这么好听，我们来重新认识一下吧！ 2026.10.18歌切合集",
+          "url": "https://www.bilibili.com/video/BV1UPnV6zEs4/",
+          "snippet": "UP 桐人今天睡大觉，章节「09_传奇 - 王菲」"
+        }
+      ]
+    },
+    {
+      "replay_id": "live:d46e5e86-4ef8-4407-8b9b-83e793fae681",
+      "replay_title": "【小松绿Viridis】脑袋空空的。。。 2026-10-18",
+      "replay_url": "",
+      "replay_date": "2026-10-18",
+      "replay_date_source": "live-api-date",
+      "segment_index": 9,
+      "start_time": "",
+      "end_time": "",
+      "lyric_excerpt": "",
+      "song_search_query": "为谁而为",
+      "song_resolution_method": "song-cut-compilation-chapter",
+      "song_name": "为谁而为",
+      "display_song_name": "为谁而为",
+      "artist": "COP、洛天依Official",
+      "artist_search": "COP、洛天依Official 为谁而为",
+      "feat_artist": "",
+      "language": "中文",
+      "tone": "",
+      "status_labels": [
+        "歌回",
+        "歌切合集复核"
+      ],
+      "display_version": "",
+      "type": "中V、流行",
+      "remark": "桐人今天睡大觉「全自动歌切项目」2026.10.18 歌切合集第 9 分P（章节「10_为谁而为 - COP, 洛天依Official」）。弹幕共 7 条直接出现该歌名。未定位回放时间点。",
+      "identification": "",
+      "cut_link": "https://www.bilibili.com/video/BV1UPnV6zEs4/?p=9",
+      "confidence": 0.9,
+      "row_key": "为谁而为",
+      "search_name": "",
+      "resolution_candidates": [
+        {
+          "title": "【小松绿Viridis】我去！宝宝原来你唱歌这么好听，我们来重新认识一下吧！ 2026.10.18歌切合集",
+          "url": "https://www.bilibili.com/video/BV1UPnV6zEs4/",
+          "snippet": "UP 桐人今天睡大觉，章节「10_为谁而为 - COP, 洛天依Official」"
+        }
+      ]
+    },
+    {
+      "replay_id": "live:d46e5e86-4ef8-4407-8b9b-83e793fae681",
+      "replay_title": "【小松绿Viridis】脑袋空空的。。。 2026-10-18",
+      "replay_url": "",
+      "replay_date": "2026-10-18",
+      "replay_date_source": "live-api-date",
+      "segment_index": 11,
+      "start_time": "",
+      "end_time": "",
+      "lyric_excerpt": "",
+      "song_search_query": "牵丝戏",
+      "song_resolution_method": "song-cut-compilation-chapter",
+      "song_name": "牵丝戏",
+      "display_song_name": "牵丝戏",
+      "artist": "银临、Aki阿杰",
+      "artist_search": "银临、Aki阿杰 牵丝戏",
+      "feat_artist": "",
+      "language": "中文",
+      "tone": "",
+      "status_labels": [
+        "歌回",
+        "歌切合集复核"
+      ],
+      "display_version": "",
+      "type": "国风、古风",
+      "remark": "桐人今天睡大觉「全自动歌切项目」2026.10.18 歌切合集第 11 分P（章节「12_牵丝戏 - 银临, Aki阿杰」）。弹幕共 9 条直接出现该歌名。未定位回放时间点。",
+      "identification": "",
+      "cut_link": "https://www.bilibili.com/video/BV1UPnV6zEs4/?p=11",
+      "confidence": 0.9,
+      "row_key": "牵丝戏",
+      "search_name": "",
+      "resolution_candidates": [
+        {
+          "title": "【小松绿Viridis】我去！宝宝原来你唱歌这么好听，我们来重新认识一下吧！ 2026.10.18歌切合集",
+          "url": "https://www.bilibili.com/video/BV1UPnV6zEs4/",
+          "snippet": "UP 桐人今天睡大觉，章节「12_牵丝戏 - 银临, Aki阿杰」"
+        }
+      ]
+    },
+    {
+      "replay_id": "live:d46e5e86-4ef8-4407-8b9b-83e793fae681",
+      "replay_title": "【小松绿Viridis】脑袋空空的。。。 2026-10-18",
+      "replay_url": "",
+      "replay_date": "2026-10-18",
+      "replay_date_source": "live-api-date",
+      "segment_index": 12,
+      "start_time": "",
+      "end_time": "",
+      "lyric_excerpt": "",
+      "song_search_query": "泡沫",
+      "song_resolution_method": "song-cut-compilation-chapter",
+      "song_name": "泡沫",
+      "display_song_name": "泡沫",
+      "artist": "G.M.E邓紫棋",
+      "artist_search": "G.M.E邓紫棋 泡沫",
+      "feat_artist": "",
+      "language": "中文",
+      "tone": "",
+      "status_labels": [
+        "歌回",
+        "歌切合集复核"
+      ],
+      "display_version": "",
+      "type": "影视、流行",
+      "remark": "桐人今天睡大觉「全自动歌切项目」2026.10.18 歌切合集第 12 分P（章节「13_泡沫 - 邓紫棋」）。弹幕共 4 条直接出现该歌名。未定位回放时间点。",
+      "identification": "",
+      "cut_link": "https://www.bilibili.com/video/BV1UPnV6zEs4/?p=12",
+      "confidence": 0.9,
+      "row_key": "泡沫",
+      "search_name": "",
+      "resolution_candidates": [
+        {
+          "title": "【小松绿Viridis】我去！宝宝原来你唱歌这么好听，我们来重新认识一下吧！ 2026.10.18歌切合集",
+          "url": "https://www.bilibili.com/video/BV1UPnV6zEs4/",
+          "snippet": "UP 桐人今天睡大觉，章节「13_泡沫 - 邓紫棋」"
+        }
+      ]
+    },
+    {
+      "replay_id": "live:d46e5e86-4ef8-4407-8b9b-83e793fae681",
+      "replay_title": "【小松绿Viridis】脑袋空空的。。。 2026-10-18",
+      "replay_url": "",
+      "replay_date": "2026-10-18",
+      "replay_date_source": "live-api-date",
+      "segment_index": 13,
+      "start_time": "",
+      "end_time": "",
+      "lyric_excerpt": "",
+      "song_search_query": "血腥爱情故事",
+      "song_resolution_method": "song-cut-compilation-chapter",
+      "song_name": "血腥爱情故事",
+      "display_song_name": "血腥爱情故事",
+      "artist": "张惠妹",
+      "artist_search": "张惠妹 血腥爱情故事",
+      "feat_artist": "",
+      "language": "中文",
+      "tone": "",
+      "status_labels": [
+        "歌回",
+        "歌切合集复核"
+      ],
+      "display_version": "",
+      "type": "华语经典、流行",
+      "remark": "桐人今天睡大觉「全自动歌切项目」2026.10.18 歌切合集第 13 分P（章节「14_血腥爱情故事 - 张惠妹」）。弹幕共 1 条直接出现该歌名。未定位回放时间点。",
+      "identification": "",
+      "cut_link": "https://www.bilibili.com/video/BV1UPnV6zEs4/?p=13",
+      "confidence": 0.9,
+      "row_key": "血腥爱情故事",
+      "search_name": "",
+      "resolution_candidates": [
+        {
+          "title": "【小松绿Viridis】我去！宝宝原来你唱歌这么好听，我们来重新认识一下吧！ 2026.10.18歌切合集",
+          "url": "https://www.bilibili.com/video/BV1UPnV6zEs4/",
+          "snippet": "UP 桐人今天睡大觉，章节「14_血腥爱情故事 - 张惠妹」"
+        }
+      ]
+    },
+    {
+      "replay_id": "live:d46e5e86-4ef8-4407-8b9b-83e793fae681",
+      "replay_title": "【小松绿Viridis】脑袋空空的。。。 2026-10-18",
+      "replay_url": "",
+      "replay_date": "2026-10-18",
+      "replay_date_source": "live-api-date",
+      "segment_index": 14,
+      "start_time": "",
+      "end_time": "",
+      "lyric_excerpt": "",
+      "song_search_query": "RTRT",
+      "song_resolution_method": "song-cut-compilation-chapter",
+      "song_name": "RTRT",
+      "display_song_name": "RTRT",
+      "artist": "Mili",
+      "artist_search": "Mili RTRT",
+      "feat_artist": "",
+      "language": "日文/英文",
+      "tone": "",
+      "status_labels": [
+        "歌回",
+        "歌切合集复核"
+      ],
+      "display_version": "",
+      "type": "J-Pop、游戏（原曲Mili）",
+      "remark": "桐人今天睡大觉「全自动歌切项目」2026.10.18 歌切合集第 14 分P（章节「15_RTRT - Mili」）。弹幕未直接出现歌名，仅以合集章节 + 日期确认。未定位回放时间点。",
+      "identification": "",
+      "cut_link": "https://www.bilibili.com/video/BV1UPnV6zEs4/?p=14",
+      "confidence": 0.85,
+      "row_key": "RTRT",
+      "search_name": "",
+      "resolution_candidates": [
+        {
+          "title": "【小松绿Viridis】我去！宝宝原来你唱歌这么好听，我们来重新认识一下吧！ 2026.10.18歌切合集",
+          "url": "https://www.bilibili.com/video/BV1UPnV6zEs4/",
+          "snippet": "UP 桐人今天睡大觉，章节「15_RTRT - Mili」"
+        }
+      ]
+    },
+    {
+      "replay_id": "live:d46e5e86-4ef8-4407-8b9b-83e793fae681",
+      "replay_title": "【小松绿Viridis】脑袋空空的。。。 2026-10-18",
+      "replay_url": "",
+      "replay_date": "2026-10-18",
+      "replay_date_source": "live-api-date",
+      "segment_index": 15,
+      "start_time": "",
+      "end_time": "",
+      "lyric_excerpt": "",
+      "song_search_query": "海底",
+      "song_resolution_method": "song-cut-compilation-chapter",
+      "song_name": "海底",
+      "display_song_name": "海底",
+      "artist": "小陈陈",
+      "artist_search": "小陈陈 海底",
+      "feat_artist": "",
+      "language": "中文",
+      "tone": "",
+      "status_labels": [
+        "歌回",
+        "歌切合集复核"
+      ],
+      "display_version": "",
+      "type": "流行、翻唱",
+      "remark": "桐人今天睡大觉「全自动歌切项目」2026.10.18 歌切合集第 15 分P（章节「16_海底 - 小陈陈」）。弹幕共 1 条直接出现该歌名。未定位回放时间点。",
+      "identification": "",
+      "cut_link": "https://www.bilibili.com/video/BV1UPnV6zEs4/?p=15",
+      "confidence": 0.9,
+      "row_key": "海底",
+      "search_name": "",
+      "resolution_candidates": [
+        {
+          "title": "【小松绿Viridis】我去！宝宝原来你唱歌这么好听，我们来重新认识一下吧！ 2026.10.18歌切合集",
+          "url": "https://www.bilibili.com/video/BV1UPnV6zEs4/",
+          "snippet": "UP 桐人今天睡大觉，章节「16_海底 - 小陈陈」"
+        }
+      ]
+    },
+    {
+      "replay_id": "live:d46e5e86-4ef8-4407-8b9b-83e793fae681",
+      "replay_title": "【小松绿Viridis】脑袋空空的。。。 2026-10-18",
+      "replay_url": "",
+      "replay_date": "2026-10-18",
+      "replay_date_source": "live-api-date",
+      "segment_index": 16,
+      "start_time": "",
+      "end_time": "",
+      "lyric_excerpt": "",
+      "song_search_query": "红豆",
+      "song_resolution_method": "song-cut-compilation-chapter",
+      "song_name": "红豆",
+      "display_song_name": "红豆",
+      "artist": "王菲",
+      "artist_search": "王菲 红豆",
+      "feat_artist": "",
+      "language": "中文",
+      "tone": "",
+      "status_labels": [
+        "歌回",
+        "歌切合集复核"
+      ],
+      "display_version": "",
+      "type": "华语经典、流行",
+      "remark": "桐人今天睡大觉「全自动歌切项目」2026.10.18 歌切合集第 16 分P（章节「17_红豆 - 王菲」）。弹幕共 61 条直接出现该歌名。未定位回放时间点。",
+      "identification": "",
+      "cut_link": "https://www.bilibili.com/video/BV1UPnV6zEs4/?p=16",
+      "confidence": 0.9,
+      "row_key": "红豆",
+      "search_name": "",
+      "resolution_candidates": [
+        {
+          "title": "【小松绿Viridis】我去！宝宝原来你唱歌这么好听，我们来重新认识一下吧！ 2026.10.18歌切合集",
+          "url": "https://www.bilibili.com/video/BV1UPnV6zEs4/",
+          "snippet": "UP 桐人今天睡大觉，章节「17_红豆 - 王菲」"
+        }
+      ]
+    },
+    {
+      "replay_id": "live:d46e5e86-4ef8-4407-8b9b-83e793fae681",
+      "replay_title": "【小松绿Viridis】脑袋空空的。。。 2026-10-18",
+      "replay_url": "",
+      "replay_date": "2026-10-18",
+      "replay_date_source": "live-api-date",
+      "segment_index": 17,
+      "start_time": "",
+      "end_time": "",
+      "lyric_excerpt": "",
+      "song_search_query": "拜云台",
+      "song_resolution_method": "song-cut-compilation-chapter",
+      "song_name": "拜云台",
+      "display_song_name": "拜云台",
+      "artist": "忘川风华录",
+      "artist_search": "忘川风华录 拜云台",
+      "feat_artist": "",
+      "language": "中文",
+      "tone": "",
+      "status_labels": [
+        "歌回",
+        "歌切合集复核"
+      ],
+      "display_version": "",
+      "type": "中V、国风、古风",
+      "remark": "桐人今天睡大觉「全自动歌切项目」2026.10.18 歌切合集第 17 分P（章节「18_拜云台 - 忘川风华录」）。弹幕未直接出现歌名，仅以合集章节 + 日期确认。未定位回放时间点。",
+      "identification": "",
+      "cut_link": "https://www.bilibili.com/video/BV1UPnV6zEs4/?p=17",
+      "confidence": 0.85,
+      "row_key": "拜云台",
+      "search_name": "",
+      "resolution_candidates": [
+        {
+          "title": "【小松绿Viridis】我去！宝宝原来你唱歌这么好听，我们来重新认识一下吧！ 2026.10.18歌切合集",
+          "url": "https://www.bilibili.com/video/BV1UPnV6zEs4/",
+          "snippet": "UP 桐人今天睡大觉，章节「18_拜云台 - 忘川风华录」"
+        }
+      ]
+    },
+    {
+      "replay_id": "live:d46e5e86-4ef8-4407-8b9b-83e793fae681",
+      "replay_title": "【小松绿Viridis】脑袋空空的。。。 2026-10-18",
+      "replay_url": "",
+      "replay_date": "2026-10-18",
+      "replay_date_source": "live-api-date",
+      "segment_index": 21,
+      "start_time": "",
+      "end_time": "",
+      "lyric_excerpt": "",
+      "song_search_query": "鳥の詩",
+      "song_resolution_method": "song-cut-compilation-chapter",
+      "song_name": "鳥の詩",
+      "display_song_name": "鳥の詩",
+      "artist": "Lia",
+      "artist_search": "Lia 鳥の詩",
+      "feat_artist": "",
+      "language": "日文",
+      "tone": "",
+      "status_labels": [
+        "歌回",
+        "歌切合集复核"
+      ],
+      "display_version": "",
+      "type": "动漫、经典",
+      "remark": "桐人今天睡大觉「全自动歌切项目」2026.10.18 歌切合集第 21 分P（章节「22_鳥の詩 - Lia」）。弹幕未直接出现歌名，仅以合集章节 + 日期确认。未定位回放时间点。",
+      "identification": "",
+      "cut_link": "https://www.bilibili.com/video/BV1UPnV6zEs4/?p=21",
+      "confidence": 0.85,
+      "row_key": "鳥の詩",
+      "search_name": "",
+      "resolution_candidates": [
+        {
+          "title": "【小松绿Viridis】我去！宝宝原来你唱歌这么好听，我们来重新认识一下吧！ 2026.10.18歌切合集",
+          "url": "https://www.bilibili.com/video/BV1UPnV6zEs4/",
+          "snippet": "UP 桐人今天睡大觉，章节「22_鳥の詩 - Lia」"
+        }
+      ]
+    },
+    {
+      "replay_id": "live:d46e5e86-4ef8-4407-8b9b-83e793fae681",
+      "replay_title": "【小松绿Viridis】脑袋空空的。。。 2026-10-18",
+      "replay_url": "",
+      "replay_date": "2026-10-18",
+      "replay_date_source": "live-api-date",
+      "segment_index": 22,
+      "start_time": "",
+      "end_time": "",
+      "lyric_excerpt": "",
+      "song_search_query": "扉をあけて",
+      "song_resolution_method": "song-cut-compilation-chapter",
+      "song_name": "扉をあけて",
+      "display_song_name": "扉をあけて",
+      "artist": "ANZA",
+      "artist_search": "ANZA 扉をあけて",
+      "feat_artist": "",
+      "language": "日文",
+      "tone": "",
+      "status_labels": [
+        "歌回",
+        "歌切合集复核"
+      ],
+      "display_version": "",
+      "type": "动漫、经典",
+      "remark": "桐人今天睡大觉「全自动歌切项目」2026.10.18 歌切合集第 22 分P（章节「23_扉をあけて - ANZA」）。弹幕未直接出现歌名，仅以合集章节 + 日期确认。未定位回放时间点。",
+      "identification": "",
+      "cut_link": "https://www.bilibili.com/video/BV1UPnV6zEs4/?p=22",
+      "confidence": 0.85,
+      "row_key": "扉をあけて",
+      "search_name": "",
+      "resolution_candidates": [
+        {
+          "title": "【小松绿Viridis】我去！宝宝原来你唱歌这么好听，我们来重新认识一下吧！ 2026.10.18歌切合集",
+          "url": "https://www.bilibili.com/video/BV1UPnV6zEs4/",
+          "snippet": "UP 桐人今天睡大觉，章节「23_扉をあけて - ANZA」"
         }
       ]
     }

@@ -1,11 +1,11 @@
 // 本文件由 scripts/build_xiaosonglu_song_data.mjs 从 data/xiaosonglu/ 生成，供 file:// 离线回退使用。
-// 生成时间：2026-10-19 10:39:28
+// 生成时间：2026-10-19 11:20:52
 // 数据源：data/xiaosonglu/（song_catalog / history_index / song_details / audio_index / song_cut_info）
 window.XSL_DATA = {
   song_catalog: {
   "roomKey": "xiaosonglu",
   "roomId": "1727071052",
-  "generatedAt": "2026-10-19T02:38:23.712Z",
+  "generatedAt": "2026-10-19T03:19:00.711Z",
   "source": "local-replay-ingestion",
   "songs": [
     {
@@ -175,6 +175,27 @@ window.XSL_DATA = {
       "status_labels": "歌回、自动识别待人工复核、歌切合集复核",
       "last_sing_at": "2026-10-16",
       "row_key": "Virtual to LIVE"
+    },
+    {
+      "song_id": 151,
+      "song_name": "世末积雨云",
+      "show_as_song_name": "",
+      "display_song_name": "世末积雨云",
+      "artist": "洛天依Official",
+      "artist_search": "洛天依Official",
+      "feat_artist": "",
+      "remark": "",
+      "tone": "",
+      "language": "中文",
+      "type": "中V",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=12",
+      "sing_count": 3,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-18",
+      "row_key": "世末积雨云"
     },
     {
       "song_id": 35,
@@ -469,27 +490,6 @@ window.XSL_DATA = {
       "status_labels": "歌回、自动识别待人工复核、歌切合集复核",
       "last_sing_at": "2026-09-27",
       "row_key": "I LOVE U"
-    },
-    {
-      "song_id": 151,
-      "song_name": "世末积雨云",
-      "show_as_song_name": "",
-      "display_song_name": "世末积雨云",
-      "artist": "洛天依Official",
-      "artist_search": "洛天依Official",
-      "feat_artist": "",
-      "remark": "",
-      "tone": "",
-      "language": "中文",
-      "type": "中V",
-      "identification": "",
-      "display_version": "",
-      "search_name": "",
-      "cut_link": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=12",
-      "sing_count": 2,
-      "status_labels": "歌回、歌切合集复核",
-      "last_sing_at": "2026-09-27",
-      "row_key": "世末积雨云"
     },
     {
       "song_id": 206,
@@ -1221,10 +1221,73 @@ window.XSL_DATA = {
       "display_version": "",
       "search_name": "",
       "cut_link": "https://www.bilibili.com/video/BV1JX4y6fEpy/",
-      "sing_count": 1,
-      "status_labels": "歌回、歌切确认",
-      "last_sing_at": "2026-08-29",
+      "sing_count": 2,
+      "status_labels": "歌回、歌切确认、歌切合集复核",
+      "last_sing_at": "2026-10-18",
       "row_key": "阿拉斯加海湾"
+    },
+    {
+      "song_id": 148,
+      "song_name": "给自己的情书",
+      "show_as_song_name": "",
+      "display_song_name": "给自己的情书",
+      "artist": "王菲",
+      "artist_search": "王菲",
+      "feat_artist": "",
+      "remark": "",
+      "tone": "",
+      "language": "中文",
+      "type": "流行",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=9",
+      "sing_count": 2,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-18",
+      "row_key": "给自己的情书"
+    },
+    {
+      "song_id": 142,
+      "song_name": "牵丝戏",
+      "show_as_song_name": "",
+      "display_song_name": "牵丝戏",
+      "artist": "银临、Aki阿杰",
+      "artist_search": "银临、Aki阿杰",
+      "feat_artist": "",
+      "remark": "",
+      "tone": "",
+      "language": "中文",
+      "type": "古风",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=3",
+      "sing_count": 2,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-18",
+      "row_key": "牵丝戏"
+    },
+    {
+      "song_id": 229,
+      "song_name": "为谁而为",
+      "show_as_song_name": "",
+      "display_song_name": "为谁而为",
+      "artist": "COP, 洛天依Official",
+      "artist_search": "COP, 洛天依Official",
+      "feat_artist": "",
+      "remark": "",
+      "tone": "",
+      "language": "中文",
+      "type": "中V",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1g1ah6REpb/?p=2",
+      "sing_count": 2,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-18",
+      "row_key": "为谁而为"
     },
     {
       "song_id": 52,
@@ -3264,27 +3327,6 @@ window.XSL_DATA = {
       "row_key": "告别曲（Love Elegia Ver.）"
     },
     {
-      "song_id": 148,
-      "song_name": "给自己的情书",
-      "show_as_song_name": "",
-      "display_song_name": "给自己的情书",
-      "artist": "王菲",
-      "artist_search": "王菲",
-      "feat_artist": "",
-      "remark": "",
-      "tone": "",
-      "language": "中文",
-      "type": "流行",
-      "identification": "",
-      "display_version": "",
-      "search_name": "",
-      "cut_link": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=9",
-      "sing_count": 1,
-      "status_labels": "歌回、歌切合集复核",
-      "last_sing_at": "2026-09-08",
-      "row_key": "给自己的情书"
-    },
-    {
       "song_id": 162,
       "song_name": "花头台",
       "show_as_song_name": "",
@@ -3409,27 +3451,6 @@ window.XSL_DATA = {
       "status_labels": "歌回、歌切合集复核",
       "last_sing_at": "2026-09-08",
       "row_key": "溺水金鱼"
-    },
-    {
-      "song_id": 142,
-      "song_name": "牵丝戏",
-      "show_as_song_name": "",
-      "display_song_name": "牵丝戏",
-      "artist": "银临、Aki阿杰",
-      "artist_search": "银临、Aki阿杰",
-      "feat_artist": "",
-      "remark": "",
-      "tone": "",
-      "language": "中文",
-      "type": "古风",
-      "identification": "",
-      "display_version": "",
-      "search_name": "",
-      "cut_link": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=3",
-      "sing_count": 1,
-      "status_labels": "歌回、歌切合集复核",
-      "last_sing_at": "2026-09-08",
-      "row_key": "牵丝戏"
     },
     {
       "song_id": 166,
@@ -5154,27 +5175,6 @@ window.XSL_DATA = {
       "row_key": "叹云兮"
     },
     {
-      "song_id": 229,
-      "song_name": "为谁而为",
-      "show_as_song_name": "",
-      "display_song_name": "为谁而为",
-      "artist": "COP, 洛天依Official",
-      "artist_search": "COP, 洛天依Official",
-      "feat_artist": "",
-      "remark": "",
-      "tone": "",
-      "language": "中文",
-      "type": "中V",
-      "identification": "",
-      "display_version": "",
-      "search_name": "",
-      "cut_link": "https://www.bilibili.com/video/BV1g1ah6REpb/?p=2",
-      "sing_count": 1,
-      "status_labels": "歌回、歌切合集复核",
-      "last_sing_at": "2026-09-27",
-      "row_key": "为谁而为"
-    },
-    {
       "song_id": 249,
       "song_name": "我的故事未写完",
       "show_as_song_name": "",
@@ -6643,13 +6643,223 @@ window.XSL_DATA = {
       "status_labels": "歌回、歌切直补",
       "last_sing_at": "2026-10-18",
       "row_key": "心拍数♯0822"
+    },
+    {
+      "song_id": 317,
+      "song_name": "爱情转移",
+      "show_as_song_name": "",
+      "display_song_name": "爱情转移",
+      "artist": "陈奕迅",
+      "artist_search": "陈奕迅 爱情转移",
+      "feat_artist": "",
+      "remark": "桐人今天睡大觉「全自动歌切项目」2026.10.18 歌切合集第 3 分P（章节「03_爱情转移 - 陈奕迅」）。弹幕共 19 条直接出现该歌名。未定位回放时间点。",
+      "tone": "",
+      "language": "中文",
+      "type": "华语经典、流行",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1UPnV6zEs4/?p=3",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-18",
+      "row_key": "爱情转移"
+    },
+    {
+      "song_id": 324,
+      "song_name": "拜云台",
+      "show_as_song_name": "",
+      "display_song_name": "拜云台",
+      "artist": "忘川风华录",
+      "artist_search": "忘川风华录 拜云台",
+      "feat_artist": "",
+      "remark": "桐人今天睡大觉「全自动歌切项目」2026.10.18 歌切合集第 17 分P（章节「18_拜云台 - 忘川风华录」）。弹幕未直接出现歌名，仅以合集章节 + 日期确认。未定位回放时间点。",
+      "tone": "",
+      "language": "中文",
+      "type": "中V、国风、古风",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1UPnV6zEs4/?p=17",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-18",
+      "row_key": "拜云台"
+    },
+    {
+      "song_id": 318,
+      "song_name": "传奇",
+      "show_as_song_name": "",
+      "display_song_name": "传奇",
+      "artist": "王菲",
+      "artist_search": "王菲 传奇",
+      "feat_artist": "",
+      "remark": "桐人今天睡大觉「全自动歌切项目」2026.10.18 歌切合集第 8 分P（章节「09_传奇 - 王菲」）。弹幕共 17 条直接出现该歌名。未定位回放时间点。",
+      "tone": "",
+      "language": "中文",
+      "type": "华语经典、流行",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1UPnV6zEs4/?p=8",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-18",
+      "row_key": "传奇"
+    },
+    {
+      "song_id": 326,
+      "song_name": "扉をあけて",
+      "show_as_song_name": "",
+      "display_song_name": "扉をあけて",
+      "artist": "ANZA",
+      "artist_search": "ANZA 扉をあけて",
+      "feat_artist": "",
+      "remark": "桐人今天睡大觉「全自动歌切项目」2026.10.18 歌切合集第 22 分P（章节「23_扉をあけて - ANZA」）。弹幕未直接出现歌名，仅以合集章节 + 日期确认。未定位回放时间点。",
+      "tone": "",
+      "language": "日文",
+      "type": "动漫、经典",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1UPnV6zEs4/?p=22",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-18",
+      "row_key": "扉をあけて"
+    },
+    {
+      "song_id": 322,
+      "song_name": "海底",
+      "show_as_song_name": "",
+      "display_song_name": "海底",
+      "artist": "小陈陈",
+      "artist_search": "小陈陈 海底",
+      "feat_artist": "",
+      "remark": "桐人今天睡大觉「全自动歌切项目」2026.10.18 歌切合集第 15 分P（章节「16_海底 - 小陈陈」）。弹幕共 1 条直接出现该歌名。未定位回放时间点。",
+      "tone": "",
+      "language": "中文",
+      "type": "流行、翻唱",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1UPnV6zEs4/?p=15",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-18",
+      "row_key": "海底"
+    },
+    {
+      "song_id": 323,
+      "song_name": "红豆",
+      "show_as_song_name": "",
+      "display_song_name": "红豆",
+      "artist": "王菲",
+      "artist_search": "王菲 红豆",
+      "feat_artist": "",
+      "remark": "桐人今天睡大觉「全自动歌切项目」2026.10.18 歌切合集第 16 分P（章节「17_红豆 - 王菲」）。弹幕共 61 条直接出现该歌名。未定位回放时间点。",
+      "tone": "",
+      "language": "中文",
+      "type": "华语经典、流行",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1UPnV6zEs4/?p=16",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-18",
+      "row_key": "红豆"
+    },
+    {
+      "song_id": 325,
+      "song_name": "鳥の詩",
+      "show_as_song_name": "",
+      "display_song_name": "鳥の詩",
+      "artist": "Lia",
+      "artist_search": "Lia 鳥の詩",
+      "feat_artist": "",
+      "remark": "桐人今天睡大觉「全自动歌切项目」2026.10.18 歌切合集第 21 分P（章节「22_鳥の詩 - Lia」）。弹幕未直接出现歌名，仅以合集章节 + 日期确认。未定位回放时间点。",
+      "tone": "",
+      "language": "日文",
+      "type": "动漫、经典",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1UPnV6zEs4/?p=21",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-18",
+      "row_key": "鳥の詩"
+    },
+    {
+      "song_id": 319,
+      "song_name": "泡沫",
+      "show_as_song_name": "",
+      "display_song_name": "泡沫",
+      "artist": "G.M.E邓紫棋",
+      "artist_search": "G.M.E邓紫棋 泡沫",
+      "feat_artist": "",
+      "remark": "桐人今天睡大觉「全自动歌切项目」2026.10.18 歌切合集第 12 分P（章节「13_泡沫 - 邓紫棋」）。弹幕共 4 条直接出现该歌名。未定位回放时间点。",
+      "tone": "",
+      "language": "中文",
+      "type": "影视、流行",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1UPnV6zEs4/?p=12",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-18",
+      "row_key": "泡沫"
+    },
+    {
+      "song_id": 320,
+      "song_name": "血腥爱情故事",
+      "show_as_song_name": "",
+      "display_song_name": "血腥爱情故事",
+      "artist": "张惠妹",
+      "artist_search": "张惠妹 血腥爱情故事",
+      "feat_artist": "",
+      "remark": "桐人今天睡大觉「全自动歌切项目」2026.10.18 歌切合集第 13 分P（章节「14_血腥爱情故事 - 张惠妹」）。弹幕共 1 条直接出现该歌名。未定位回放时间点。",
+      "tone": "",
+      "language": "中文",
+      "type": "华语经典、流行",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1UPnV6zEs4/?p=13",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-18",
+      "row_key": "血腥爱情故事"
+    },
+    {
+      "song_id": 321,
+      "song_name": "RTRT",
+      "show_as_song_name": "",
+      "display_song_name": "RTRT",
+      "artist": "Mili",
+      "artist_search": "Mili RTRT",
+      "feat_artist": "",
+      "remark": "桐人今天睡大觉「全自动歌切项目」2026.10.18 歌切合集第 14 分P（章节「15_RTRT - Mili」）。弹幕未直接出现歌名，仅以合集章节 + 日期确认。未定位回放时间点。",
+      "tone": "",
+      "language": "日文/英文",
+      "type": "J-Pop、游戏（原曲Mili）",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1UPnV6zEs4/?p=14",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-18",
+      "row_key": "RTRT"
     }
   ]
 },
   history_index: {
   "roomKey": "xiaosonglu",
   "roomId": "1727071052",
-  "generatedAt": "2026-10-19T02:38:23.712Z",
+  "generatedAt": "2026-10-19T03:19:00.711Z",
   "source": "local-replay-ingestion",
   "latest": {
     "year": "2026",
@@ -6661,7 +6871,7 @@ window.XSL_DATA = {
       "10": {
         "10": 20,
         "16": 17,
-        "18": 8,
+        "18": 23,
         "08": 5,
         "06": 17,
         "02": 33
@@ -13495,6 +13705,24 @@ window.XSL_DATA = {
         "cut_link": "https://www.bilibili.com/video/BV14RnL6VEoV/"
       },
       {
+        "song_name": "阿拉斯加海湾",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "蓝心羽",
+        "replay_id": "live:d46e5e86-4ef8-4407-8b9b-83e793fae681",
+        "replay_title": "【小松绿Viridis】脑袋空空的。。。 2026-10-18",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "阿拉斯加海湾",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-compilation-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1UPnV6zEs4/?p=2"
+      },
+      {
         "song_name": "匆匆那年",
         "sing_time": "",
         "statuses": [
@@ -13511,6 +13739,24 @@ window.XSL_DATA = {
         "lyric_excerpt": "",
         "song_resolution_method": "song-cut-title + danmaku",
         "cut_link": "https://www.bilibili.com/video/BV1hUnL67EEN/"
+      },
+      {
+        "song_name": "爱情转移",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "陈奕迅",
+        "replay_id": "live:d46e5e86-4ef8-4407-8b9b-83e793fae681",
+        "replay_title": "【小松绿Viridis】脑袋空空的。。。 2026-10-18",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "爱情转移",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-compilation-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1UPnV6zEs4/?p=3"
       },
       {
         "song_name": "如愿",
@@ -13531,6 +13777,24 @@ window.XSL_DATA = {
         "cut_link": "https://www.bilibili.com/video/BV12jnL6uEHb/"
       },
       {
+        "song_name": "世末积雨云",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "洛天依Official",
+        "replay_id": "live:d46e5e86-4ef8-4407-8b9b-83e793fae681",
+        "replay_title": "【小松绿Viridis】脑袋空空的。。。 2026-10-18",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "世末积雨云",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-compilation-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1UPnV6zEs4/?p=4"
+      },
+      {
         "song_name": "是风动",
         "sing_time": "",
         "statuses": [
@@ -13547,6 +13811,24 @@ window.XSL_DATA = {
         "lyric_excerpt": "",
         "song_resolution_method": "song-cut-title + danmaku",
         "cut_link": "https://www.bilibili.com/video/BV1M3nL6CEbP/"
+      },
+      {
+        "song_name": "给自己的情书",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "王菲",
+        "replay_id": "live:d46e5e86-4ef8-4407-8b9b-83e793fae681",
+        "replay_title": "【小松绿Viridis】脑袋空空的。。。 2026-10-18",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "给自己的情书",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-compilation-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1UPnV6zEs4/?p=5"
       },
       {
         "song_name": "回る空うさぎ",
@@ -13601,6 +13883,204 @@ window.XSL_DATA = {
         "lyric_excerpt": "",
         "song_resolution_method": "song-cut-title + danmaku",
         "cut_link": "https://www.bilibili.com/video/BV1XonG65EA6/"
+      },
+      {
+        "song_name": "传奇",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "王菲",
+        "replay_id": "live:d46e5e86-4ef8-4407-8b9b-83e793fae681",
+        "replay_title": "【小松绿Viridis】脑袋空空的。。。 2026-10-18",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "传奇",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-compilation-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1UPnV6zEs4/?p=8"
+      },
+      {
+        "song_name": "为谁而为",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "COP、洛天依Official",
+        "replay_id": "live:d46e5e86-4ef8-4407-8b9b-83e793fae681",
+        "replay_title": "【小松绿Viridis】脑袋空空的。。。 2026-10-18",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "为谁而为",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-compilation-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1UPnV6zEs4/?p=9"
+      },
+      {
+        "song_name": "牵丝戏",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "银临、Aki阿杰",
+        "replay_id": "live:d46e5e86-4ef8-4407-8b9b-83e793fae681",
+        "replay_title": "【小松绿Viridis】脑袋空空的。。。 2026-10-18",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "牵丝戏",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-compilation-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1UPnV6zEs4/?p=11"
+      },
+      {
+        "song_name": "泡沫",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "G.M.E邓紫棋",
+        "replay_id": "live:d46e5e86-4ef8-4407-8b9b-83e793fae681",
+        "replay_title": "【小松绿Viridis】脑袋空空的。。。 2026-10-18",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "泡沫",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-compilation-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1UPnV6zEs4/?p=12"
+      },
+      {
+        "song_name": "血腥爱情故事",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "张惠妹",
+        "replay_id": "live:d46e5e86-4ef8-4407-8b9b-83e793fae681",
+        "replay_title": "【小松绿Viridis】脑袋空空的。。。 2026-10-18",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "血腥爱情故事",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-compilation-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1UPnV6zEs4/?p=13"
+      },
+      {
+        "song_name": "RTRT",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "Mili",
+        "replay_id": "live:d46e5e86-4ef8-4407-8b9b-83e793fae681",
+        "replay_title": "【小松绿Viridis】脑袋空空的。。。 2026-10-18",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "RTRT",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-compilation-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1UPnV6zEs4/?p=14"
+      },
+      {
+        "song_name": "海底",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "小陈陈",
+        "replay_id": "live:d46e5e86-4ef8-4407-8b9b-83e793fae681",
+        "replay_title": "【小松绿Viridis】脑袋空空的。。。 2026-10-18",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "海底",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-compilation-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1UPnV6zEs4/?p=15"
+      },
+      {
+        "song_name": "红豆",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "王菲",
+        "replay_id": "live:d46e5e86-4ef8-4407-8b9b-83e793fae681",
+        "replay_title": "【小松绿Viridis】脑袋空空的。。。 2026-10-18",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "红豆",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-compilation-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1UPnV6zEs4/?p=16"
+      },
+      {
+        "song_name": "拜云台",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "忘川风华录",
+        "replay_id": "live:d46e5e86-4ef8-4407-8b9b-83e793fae681",
+        "replay_title": "【小松绿Viridis】脑袋空空的。。。 2026-10-18",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "拜云台",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-compilation-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1UPnV6zEs4/?p=17"
+      },
+      {
+        "song_name": "鳥の詩",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "Lia",
+        "replay_id": "live:d46e5e86-4ef8-4407-8b9b-83e793fae681",
+        "replay_title": "【小松绿Viridis】脑袋空空的。。。 2026-10-18",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "鳥の詩",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-compilation-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1UPnV6zEs4/?p=21"
+      },
+      {
+        "song_name": "扉をあけて",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "ANZA",
+        "replay_id": "live:d46e5e86-4ef8-4407-8b9b-83e793fae681",
+        "replay_title": "【小松绿Viridis】脑袋空空的。。。 2026-10-18",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "扉をあけて",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-compilation-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1UPnV6zEs4/?p=22"
       }
     ]
   }
@@ -13608,7 +14088,7 @@ window.XSL_DATA = {
   song_details: {
   "roomKey": "xiaosonglu",
   "roomId": "1727071052",
-  "generatedAt": "2026-10-19T02:38:23.712Z",
+  "generatedAt": "2026-10-19T03:19:00.711Z",
   "source": "local-replay-ingestion",
   "bySongKey": {
     "少女レイ": {
@@ -16872,8 +17352,23 @@ window.XSL_DATA = {
       "display_song_name": "阿拉斯加海湾",
       "artist": "菲道尔",
       "cut_link": "https://www.bilibili.com/video/BV1JX4y6fEpy/",
-      "total_count": 1,
+      "total_count": 2,
       "entries": [
+        {
+          "date": "2026-10-18",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "蓝心羽",
+          "replay_id": "live:d46e5e86-4ef8-4407-8b9b-83e793fae681",
+          "replay_title": "【小松绿Viridis】脑袋空空的。。。 2026-10-18",
+          "replay_url": "",
+          "remark": "桐人今天睡大觉「全自动歌切项目」2026.10.18 歌切合集第 2 分P（章节「02_阿拉斯加海湾 - 蓝心羽」）。弹幕未直接出现歌名，仅以合集章节 + 日期确认。未定位回放时间点。",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-compilation-chapter",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1UPnV6zEs4/?p=2"
+        },
         {
           "date": "2026-08-29",
           "time": "00:48:00",
@@ -17952,8 +18447,23 @@ window.XSL_DATA = {
       "display_song_name": "牵丝戏",
       "artist": "银临、Aki阿杰",
       "cut_link": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=3",
-      "total_count": 1,
+      "total_count": 2,
       "entries": [
+        {
+          "date": "2026-10-18",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "银临、Aki阿杰",
+          "replay_id": "live:d46e5e86-4ef8-4407-8b9b-83e793fae681",
+          "replay_title": "【小松绿Viridis】脑袋空空的。。。 2026-10-18",
+          "replay_url": "",
+          "remark": "桐人今天睡大觉「全自动歌切项目」2026.10.18 歌切合集第 11 分P（章节「12_牵丝戏 - 银临, Aki阿杰」）。弹幕共 9 条直接出现该歌名。未定位回放时间点。",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-compilation-chapter",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1UPnV6zEs4/?p=11"
+        },
         {
           "date": "2026-09-08",
           "time": "",
@@ -18117,8 +18627,23 @@ window.XSL_DATA = {
       "display_song_name": "给自己的情书",
       "artist": "王菲",
       "cut_link": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=9",
-      "total_count": 1,
+      "total_count": 2,
       "entries": [
+        {
+          "date": "2026-10-18",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "王菲",
+          "replay_id": "live:d46e5e86-4ef8-4407-8b9b-83e793fae681",
+          "replay_title": "【小松绿Viridis】脑袋空空的。。。 2026-10-18",
+          "replay_url": "",
+          "remark": "桐人今天睡大觉「全自动歌切项目」2026.10.18 歌切合集第 5 分P（章节「06_给自己的情书 - 王菲」）。弹幕未直接出现歌名，仅以合集章节 + 日期确认。未定位回放时间点。",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-compilation-chapter",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1UPnV6zEs4/?p=5"
+        },
         {
           "date": "2026-09-08",
           "time": "",
@@ -18192,8 +18717,23 @@ window.XSL_DATA = {
       "display_song_name": "世末积雨云",
       "artist": "洛天依Official",
       "cut_link": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=12",
-      "total_count": 2,
+      "total_count": 3,
       "entries": [
+        {
+          "date": "2026-10-18",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "洛天依Official",
+          "replay_id": "live:d46e5e86-4ef8-4407-8b9b-83e793fae681",
+          "replay_title": "【小松绿Viridis】脑袋空空的。。。 2026-10-18",
+          "replay_url": "",
+          "remark": "桐人今天睡大觉「全自动歌切项目」2026.10.18 歌切合集第 4 分P（章节「05_世末积雨云 - 洛天依Official」）。弹幕未直接出现歌名，仅以合集章节 + 日期确认。未定位回放时间点。",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-compilation-chapter",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1UPnV6zEs4/?p=4"
+        },
         {
           "date": "2026-09-27",
           "time": "",
@@ -20277,8 +20817,23 @@ window.XSL_DATA = {
       "display_song_name": "为谁而为",
       "artist": "COP, 洛天依Official",
       "cut_link": "https://www.bilibili.com/video/BV1g1ah6REpb/?p=2",
-      "total_count": 1,
+      "total_count": 2,
       "entries": [
+        {
+          "date": "2026-10-18",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "COP、洛天依Official",
+          "replay_id": "live:d46e5e86-4ef8-4407-8b9b-83e793fae681",
+          "replay_title": "【小松绿Viridis】脑袋空空的。。。 2026-10-18",
+          "replay_url": "",
+          "remark": "桐人今天睡大觉「全自动歌切项目」2026.10.18 歌切合集第 9 分P（章节「10_为谁而为 - COP, 洛天依Official」）。弹幕共 7 条直接出现该歌名。未定位回放时间点。",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-compilation-chapter",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1UPnV6zEs4/?p=9"
+        },
         {
           "date": "2026-09-27",
           "time": "",
@@ -22515,16 +23070,266 @@ window.XSL_DATA = {
           "cut_link": "https://www.bilibili.com/video/BV1XonG65EA6/"
         }
       ]
+    },
+    "爱情转移": {
+      "row_key": "爱情转移",
+      "song_name": "爱情转移",
+      "display_song_name": "爱情转移",
+      "artist": "陈奕迅",
+      "cut_link": "https://www.bilibili.com/video/BV1UPnV6zEs4/?p=3",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-10-18",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "陈奕迅",
+          "replay_id": "live:d46e5e86-4ef8-4407-8b9b-83e793fae681",
+          "replay_title": "【小松绿Viridis】脑袋空空的。。。 2026-10-18",
+          "replay_url": "",
+          "remark": "桐人今天睡大觉「全自动歌切项目」2026.10.18 歌切合集第 3 分P（章节「03_爱情转移 - 陈奕迅」）。弹幕共 19 条直接出现该歌名。未定位回放时间点。",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-compilation-chapter",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1UPnV6zEs4/?p=3"
+        }
+      ]
+    },
+    "传奇": {
+      "row_key": "传奇",
+      "song_name": "传奇",
+      "display_song_name": "传奇",
+      "artist": "王菲",
+      "cut_link": "https://www.bilibili.com/video/BV1UPnV6zEs4/?p=8",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-10-18",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "王菲",
+          "replay_id": "live:d46e5e86-4ef8-4407-8b9b-83e793fae681",
+          "replay_title": "【小松绿Viridis】脑袋空空的。。。 2026-10-18",
+          "replay_url": "",
+          "remark": "桐人今天睡大觉「全自动歌切项目」2026.10.18 歌切合集第 8 分P（章节「09_传奇 - 王菲」）。弹幕共 17 条直接出现该歌名。未定位回放时间点。",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-compilation-chapter",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1UPnV6zEs4/?p=8"
+        }
+      ]
+    },
+    "泡沫": {
+      "row_key": "泡沫",
+      "song_name": "泡沫",
+      "display_song_name": "泡沫",
+      "artist": "G.M.E邓紫棋",
+      "cut_link": "https://www.bilibili.com/video/BV1UPnV6zEs4/?p=12",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-10-18",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "G.M.E邓紫棋",
+          "replay_id": "live:d46e5e86-4ef8-4407-8b9b-83e793fae681",
+          "replay_title": "【小松绿Viridis】脑袋空空的。。。 2026-10-18",
+          "replay_url": "",
+          "remark": "桐人今天睡大觉「全自动歌切项目」2026.10.18 歌切合集第 12 分P（章节「13_泡沫 - 邓紫棋」）。弹幕共 4 条直接出现该歌名。未定位回放时间点。",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-compilation-chapter",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1UPnV6zEs4/?p=12"
+        }
+      ]
+    },
+    "血腥爱情故事": {
+      "row_key": "血腥爱情故事",
+      "song_name": "血腥爱情故事",
+      "display_song_name": "血腥爱情故事",
+      "artist": "张惠妹",
+      "cut_link": "https://www.bilibili.com/video/BV1UPnV6zEs4/?p=13",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-10-18",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "张惠妹",
+          "replay_id": "live:d46e5e86-4ef8-4407-8b9b-83e793fae681",
+          "replay_title": "【小松绿Viridis】脑袋空空的。。。 2026-10-18",
+          "replay_url": "",
+          "remark": "桐人今天睡大觉「全自动歌切项目」2026.10.18 歌切合集第 13 分P（章节「14_血腥爱情故事 - 张惠妹」）。弹幕共 1 条直接出现该歌名。未定位回放时间点。",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-compilation-chapter",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1UPnV6zEs4/?p=13"
+        }
+      ]
+    },
+    "RTRT": {
+      "row_key": "RTRT",
+      "song_name": "RTRT",
+      "display_song_name": "RTRT",
+      "artist": "Mili",
+      "cut_link": "https://www.bilibili.com/video/BV1UPnV6zEs4/?p=14",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-10-18",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "Mili",
+          "replay_id": "live:d46e5e86-4ef8-4407-8b9b-83e793fae681",
+          "replay_title": "【小松绿Viridis】脑袋空空的。。。 2026-10-18",
+          "replay_url": "",
+          "remark": "桐人今天睡大觉「全自动歌切项目」2026.10.18 歌切合集第 14 分P（章节「15_RTRT - Mili」）。弹幕未直接出现歌名，仅以合集章节 + 日期确认。未定位回放时间点。",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-compilation-chapter",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1UPnV6zEs4/?p=14"
+        }
+      ]
+    },
+    "海底": {
+      "row_key": "海底",
+      "song_name": "海底",
+      "display_song_name": "海底",
+      "artist": "小陈陈",
+      "cut_link": "https://www.bilibili.com/video/BV1UPnV6zEs4/?p=15",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-10-18",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "小陈陈",
+          "replay_id": "live:d46e5e86-4ef8-4407-8b9b-83e793fae681",
+          "replay_title": "【小松绿Viridis】脑袋空空的。。。 2026-10-18",
+          "replay_url": "",
+          "remark": "桐人今天睡大觉「全自动歌切项目」2026.10.18 歌切合集第 15 分P（章节「16_海底 - 小陈陈」）。弹幕共 1 条直接出现该歌名。未定位回放时间点。",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-compilation-chapter",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1UPnV6zEs4/?p=15"
+        }
+      ]
+    },
+    "红豆": {
+      "row_key": "红豆",
+      "song_name": "红豆",
+      "display_song_name": "红豆",
+      "artist": "王菲",
+      "cut_link": "https://www.bilibili.com/video/BV1UPnV6zEs4/?p=16",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-10-18",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "王菲",
+          "replay_id": "live:d46e5e86-4ef8-4407-8b9b-83e793fae681",
+          "replay_title": "【小松绿Viridis】脑袋空空的。。。 2026-10-18",
+          "replay_url": "",
+          "remark": "桐人今天睡大觉「全自动歌切项目」2026.10.18 歌切合集第 16 分P（章节「17_红豆 - 王菲」）。弹幕共 61 条直接出现该歌名。未定位回放时间点。",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-compilation-chapter",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1UPnV6zEs4/?p=16"
+        }
+      ]
+    },
+    "拜云台": {
+      "row_key": "拜云台",
+      "song_name": "拜云台",
+      "display_song_name": "拜云台",
+      "artist": "忘川风华录",
+      "cut_link": "https://www.bilibili.com/video/BV1UPnV6zEs4/?p=17",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-10-18",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "忘川风华录",
+          "replay_id": "live:d46e5e86-4ef8-4407-8b9b-83e793fae681",
+          "replay_title": "【小松绿Viridis】脑袋空空的。。。 2026-10-18",
+          "replay_url": "",
+          "remark": "桐人今天睡大觉「全自动歌切项目」2026.10.18 歌切合集第 17 分P（章节「18_拜云台 - 忘川风华录」）。弹幕未直接出现歌名，仅以合集章节 + 日期确认。未定位回放时间点。",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-compilation-chapter",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1UPnV6zEs4/?p=17"
+        }
+      ]
+    },
+    "鳥の詩": {
+      "row_key": "鳥の詩",
+      "song_name": "鳥の詩",
+      "display_song_name": "鳥の詩",
+      "artist": "Lia",
+      "cut_link": "https://www.bilibili.com/video/BV1UPnV6zEs4/?p=21",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-10-18",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "Lia",
+          "replay_id": "live:d46e5e86-4ef8-4407-8b9b-83e793fae681",
+          "replay_title": "【小松绿Viridis】脑袋空空的。。。 2026-10-18",
+          "replay_url": "",
+          "remark": "桐人今天睡大觉「全自动歌切项目」2026.10.18 歌切合集第 21 分P（章节「22_鳥の詩 - Lia」）。弹幕未直接出现歌名，仅以合集章节 + 日期确认。未定位回放时间点。",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-compilation-chapter",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1UPnV6zEs4/?p=21"
+        }
+      ]
+    },
+    "扉をあけて": {
+      "row_key": "扉をあけて",
+      "song_name": "扉をあけて",
+      "display_song_name": "扉をあけて",
+      "artist": "ANZA",
+      "cut_link": "https://www.bilibili.com/video/BV1UPnV6zEs4/?p=22",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-10-18",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "ANZA",
+          "replay_id": "live:d46e5e86-4ef8-4407-8b9b-83e793fae681",
+          "replay_title": "【小松绿Viridis】脑袋空空的。。。 2026-10-18",
+          "replay_url": "",
+          "remark": "桐人今天睡大觉「全自动歌切项目」2026.10.18 歌切合集第 22 分P（章节「23_扉をあけて - ANZA」）。弹幕未直接出现歌名，仅以合集章节 + 日期确认。未定位回放时间点。",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-compilation-chapter",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1UPnV6zEs4/?p=22"
+        }
+      ]
     }
   }
 },
   audio_index: {
   "roomKey": "xiaosonglu",
   "roomId": "1727071052",
-  "generatedAt": "2026-10-19T02:39:28.705Z",
+  "generatedAt": "2026-10-19T03:20:52.692Z",
   "source": "song-cut-audio-download",
   "description": "每首歌对应的翻唱切片音频（从 B 站歌切/回放下载），供网页在线播放。",
-  "count": 314,
+  "count": 324,
   "audios": {
     "勾指起誓": "assets/audio/song_88.m4a?v=1d344dfde754",
     "蝴蝶": "assets/audio/song_25.m4a?v=d8fb99252c26",
@@ -22839,7 +23644,17 @@ window.XSL_DATA = {
     "笑忘书": "assets/audio/song_312.m4a?v=47f107015279",
     "如愿": "assets/audio/song_313.m4a?v=c1b0f0230053",
     "回る空うさぎ": "assets/audio/song_314.m4a?v=ca09a89c581f",
-    "心拍数♯0822": "assets/audio/song_315.m4a?v=16d85e39d379"
+    "心拍数♯0822": "assets/audio/song_315.m4a?v=16d85e39d379",
+    "爱情转移": "assets/audio/song_316.m4a?v=628399e0ee81",
+    "传奇": "assets/audio/song_317.m4a?v=b827359c6830",
+    "泡沫": "assets/audio/song_318.m4a?v=7438246d350a",
+    "血腥爱情故事": "assets/audio/song_319.m4a?v=366c54c076f3",
+    "RTRT": "assets/audio/song_320.m4a?v=ba1d3bae9c5f",
+    "海底": "assets/audio/song_321.m4a?v=e06f0add1c10",
+    "红豆": "assets/audio/song_322.m4a?v=16d532fc76be",
+    "拜云台": "assets/audio/song_323.m4a?v=d33a3db28a36",
+    "鳥の詩": "assets/audio/song_324.m4a?v=70d03e3b1d97",
+    "扉をあけて": "assets/audio/song_325.m4a?v=3e7650e0f53f"
   },
   "verificationTargets": [
     "中华墨水娘",
@@ -22851,10 +23666,10 @@ window.XSL_DATA = {
   song_cut_info: {
   "roomKey": "xiaosonglu",
   "roomId": "1727071052",
-  "generatedAt": "2026-10-19T02:38:23.712Z",
+  "generatedAt": "2026-10-19T03:19:00.711Z",
   "source": "song-cut-title-index",
   "description": "每首歌对应的歌切切片标题（单曲歌切视频标题 / 合集分P标题），供前端歌切链接显示。",
-  "count": 316,
+  "count": 326,
   "cuts": {
     "（区）最终祈愿": {
       "title": "07_（区）最终祈愿 - 平行四界Quadimension, 星尘",
@@ -24435,6 +25250,56 @@ window.XSL_DATA = {
       "title": "【小松绿Viridis】《心拍数♯0822》丨“约定一直相爱下去吧 直到心跳停止为止”",
       "kind": "single",
       "url": "https://www.bilibili.com/video/BV1XonG65EA6/"
+    },
+    "爱情转移": {
+      "title": "03_爱情转移 - 陈奕迅",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1UPnV6zEs4/?p=3"
+    },
+    "传奇": {
+      "title": "09_传奇 - 王菲",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1UPnV6zEs4/?p=8"
+    },
+    "泡沫": {
+      "title": "13_泡沫 - 邓紫棋",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1UPnV6zEs4/?p=12"
+    },
+    "血腥爱情故事": {
+      "title": "14_血腥爱情故事 - 张惠妹",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1UPnV6zEs4/?p=13"
+    },
+    "RTRT": {
+      "title": "15_RTRT - Mili",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1UPnV6zEs4/?p=14"
+    },
+    "海底": {
+      "title": "16_海底 - 小陈陈",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1UPnV6zEs4/?p=15"
+    },
+    "红豆": {
+      "title": "17_红豆 - 王菲",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1UPnV6zEs4/?p=16"
+    },
+    "拜云台": {
+      "title": "18_拜云台 - 忘川风华录",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1UPnV6zEs4/?p=17"
+    },
+    "鳥の詩": {
+      "title": "22_鳥の詩 - Lia",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1UPnV6zEs4/?p=21"
+    },
+    "扉をあけて": {
+      "title": "23_扉をあけて - ANZA",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1UPnV6zEs4/?p=22"
     }
   }
 }

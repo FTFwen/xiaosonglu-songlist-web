@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "count": 314,
+  "count": 324,
   "sourceBase": "https://viridis.love/",
-  "capturedAt": "2026-10-19T02:39:52.458576Z",
+  "capturedAt": "2026-10-19T03:21:04.253030Z",
   "files": {
     "assets/audio/song_02.m4a": {
       "bytes": 5176731,
@@ -988,9 +988,49 @@
       "bytes": 6590614,
       "sha256": "16d85e39d3793f721e9888a1290e4fa7377bfe85c5578d5adf220f2c576e3287"
     },
+    "assets/audio/song_316.m4a": {
+      "bytes": 3750008,
+      "sha256": "628399e0ee81c3b1795149accd5dea382dfdf6302687772b239c5d39474765ca"
+    },
+    "assets/audio/song_317.m4a": {
+      "bytes": 4894934,
+      "sha256": "b827359c68307817dc3619e4ffedbc6bd9f6587b35bf37fbe87bcb6f46631b86"
+    },
+    "assets/audio/song_318.m4a": {
+      "bytes": 4205963,
+      "sha256": "7438246d350ad3f4ee79e39ffb82c9da2cdfb462cfa3da4ddfe6f6d525dd8d9d"
+    },
+    "assets/audio/song_319.m4a": {
+      "bytes": 4508384,
+      "sha256": "366c54c076f3962dcb3fbc15288d793885b7045b1840ee93b765eec6270a02c9"
+    },
     "assets/audio/song_32.m4a": {
       "bytes": 5017406,
       "sha256": "5edd54764224ff3e9cd4cb60622559d6c548b33db07783f5ba28e3fdd7ebb6fb"
+    },
+    "assets/audio/song_320.m4a": {
+      "bytes": 3956541,
+      "sha256": "ba1d3bae9c5f9f0f6c461e4897a25251aca740c9425b4fbb3400393a124b6b26"
+    },
+    "assets/audio/song_321.m4a": {
+      "bytes": 4298892,
+      "sha256": "e06f0add1c10087ae7ec63d4f37477d4e5193c1fd66c911bc864e29dfb870773"
+    },
+    "assets/audio/song_322.m4a": {
+      "bytes": 4357896,
+      "sha256": "16d532fc76bebea27b3caab177d2071b7dabb24b37cbac42fcdd0991c0dfe36f"
+    },
+    "assets/audio/song_323.m4a": {
+      "bytes": 4118628,
+      "sha256": "d33a3db28a361d5d2774e3e2d3478cd67f361076d43820d0613975dadf73baad"
+    },
+    "assets/audio/song_324.m4a": {
+      "bytes": 6434208,
+      "sha256": "70d03e3b1d97e1148e9f28fbf09440e915966989ebe17caf55adb948c624a7ef"
+    },
+    "assets/audio/song_325.m4a": {
+      "bytes": 5673964,
+      "sha256": "3e7650e0f53f0688b52a7ee6ac55f593bf0282c72f3ab56d9eb2904ab72c4904"
     },
     "assets/audio/song_33.m4a": {
       "bytes": 5179312,
