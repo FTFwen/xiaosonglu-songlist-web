@@ -1,10 +1,10 @@
 {
   "roomKey": "xiaosonglu",
   "roomId": "1727071052",
-  "generatedAt": "2026-10-12T02:33:59.411Z",
+  "generatedAt": "2026-10-19T02:38:23.712Z",
   "source": "song-cut-title-index",
   "description": "每首歌对应的歌切切片标题（单曲歌切视频标题 / 合集分P标题），供前端歌切链接显示。",
-  "count": 302,
+  "count": 316,
   "cuts": {
     "（区）最终祈愿": {
       "title": "07_（区）最终祈愿 - 平行四界Quadimension, 星尘",
@@ -1515,6 +1515,76 @@
       "title": "20_流年如歌 - 泠鸢yousa",
       "kind": "collection",
       "url": "https://www.bilibili.com/video/BV1TApG6uEPX/?p=20"
+    },
+    "种族假象": {
+      "title": "01_种族假象(人声本家) - 漆柚, 绾绾Akari, 纸马, 柚子茶",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1uPJ86DE95/?p=1"
+    },
+    "星愿": {
+      "title": "02_星愿 - 茶理理",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1uPJ86DE95/?p=2"
+    },
+    "绮云泽": {
+      "title": "03_绮云泽 - 妖橙Yumo, 星尘",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1uPJ86DE95/?p=3"
+    },
+    "永不失联的爱": {
+      "title": "06_永不失联的爱 - 周兴哲",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1uPJ86DE95/?p=6"
+    },
+    "梦语": {
+      "title": "09_梦语 - 乐正绫",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1uPJ86DE95/?p=9"
+    },
+    "不染": {
+      "title": "10_不染 - 萨顶顶",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1uPJ86DE95/?p=10"
+    },
+    "路过人间": {
+      "title": "11_路过人间 - 郁可唯",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1uPJ86DE95/?p=11"
+    },
+    "冻夏": {
+      "title": "12_冻夏 - Soda纯白, 心华",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1uPJ86DE95/?p=12"
+    },
+    "フォニイ": {
+      "title": "15_フォニイ - 可不, ツミキ",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1uPJ86DE95/?p=15"
+    },
+    "なでなで": {
+      "title": "16_なでなで - 莉犬",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1uPJ86DE95/?p=16"
+    },
+    "笑忘书": {
+      "title": "【小松绿】王菲三连唱之《笑忘书》",
+      "kind": "single",
+      "url": "https://www.bilibili.com/video/BV14RnL6VEoV/"
+    },
+    "如愿": {
+      "title": "【小松绿】王菲三连唱之《如愿》",
+      "kind": "single",
+      "url": "https://www.bilibili.com/video/BV12jnL6uEHb/"
+    },
+    "回る空うさぎ": {
+      "title": "【小松绿】“月兔回旋于空中”《回る空うさぎ》",
+      "kind": "single",
+      "url": "https://www.bilibili.com/video/BV1fSn56oEen/"
+    },
+    "心拍数♯0822": {
+      "title": "【小松绿Viridis】《心拍数♯0822》丨“约定一直相爱下去吧 直到心跳停止为止”",
+      "kind": "single",
+      "url": "https://www.bilibili.com/video/BV1XonG65EA6/"
     }
   }
 }

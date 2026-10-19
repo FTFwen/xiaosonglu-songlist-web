@@ -1,11 +1,11 @@
 // 本文件由 scripts/build_xiaosonglu_song_data.mjs 从 data/xiaosonglu/ 生成，供 file:// 离线回退使用。
-// 生成时间：2026-10-12 10:35:44
+// 生成时间：2026-10-19 10:39:28
 // 数据源：data/xiaosonglu/（song_catalog / history_index / song_details / audio_index / song_cut_info）
 window.XSL_DATA = {
   song_catalog: {
   "roomKey": "xiaosonglu",
   "roomId": "1727071052",
-  "generatedAt": "2026-10-12T02:33:59.411Z",
+  "generatedAt": "2026-10-19T02:38:23.712Z",
   "source": "local-replay-ingestion",
   "songs": [
     {
@@ -135,6 +135,48 @@ window.XSL_DATA = {
       "row_key": "プロポーズ"
     },
     {
+      "song_id": 67,
+      "song_name": "蝴蝶",
+      "show_as_song_name": "",
+      "display_song_name": "蝴蝶",
+      "artist": "洛天依Official",
+      "artist_search": "洛天依 蝴蝶 瞿子千",
+      "feat_artist": "",
+      "remark": "来自 2026-08-18 歌切合集《【663645TV】神回！我已启动！全力绿来唱完了！8月18日歌切合集【小松绿Viridis】》的分P《20-蝴蝶》。经复核为洛天依演唱的《蝴蝶》（温莨作词、瞿子千作曲，收录于洛天依十二周年纪念专辑《再生》），非陶喆同名歌曲。按当前 song-cut-first 策略，将合集章节名直接并入正式曲库；当前记录的是合集内顺序时间，不是原始直播回放时间。",
+      "tone": "",
+      "language": "中文",
+      "type": "中V、流行",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1rv8V6DExk/",
+      "sing_count": 3,
+      "status_labels": "歌切合集补录、待后续回放时间定位、自动识别待人工复核、歌回、歌切合集复核",
+      "last_sing_at": "2026-10-16",
+      "row_key": "蝴蝶"
+    },
+    {
+      "song_id": 17,
+      "song_name": "Virtual to LIVE",
+      "show_as_song_name": "",
+      "display_song_name": "Virtual to LIVE",
+      "artist": "にじさんじ",
+      "artist_search": "にじさんじ Virtual to LIVE",
+      "feat_artist": "",
+      "remark": "来自 2026-08-09 第一次歌回回放 p2 中段。主播口头直接提到“该唱 VTL 了”，随后切片转写又命中“总是过度紧张，在镜头前红了脸”“现实总是面对太多无奈和辛酸”“虽然在世界两端，用我的歌声将你胸腔填满”等高辨识度句群，与《Virtual to LIVE》中文版歌词高度重合，可先入库并保留人工复核标签。",
+      "tone": "",
+      "language": "中文",
+      "type": "V圈、应援",
+      "identification": "",
+      "display_version": "中文版",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1XAu16gE7U/",
+      "sing_count": 3,
+      "status_labels": "歌回、自动识别待人工复核、歌切合集复核",
+      "last_sing_at": "2026-10-16",
+      "row_key": "Virtual to LIVE"
+    },
+    {
       "song_id": 35,
       "song_name": "勾指起誓",
       "show_as_song_name": "",
@@ -154,27 +196,6 @@ window.XSL_DATA = {
       "status_labels": "歌回、半场、自动识别待人工复核、歌切直补、虚空合唱、待原始回放定位",
       "last_sing_at": "2026-08-12",
       "row_key": "勾指起誓"
-    },
-    {
-      "song_id": 67,
-      "song_name": "蝴蝶",
-      "show_as_song_name": "",
-      "display_song_name": "蝴蝶",
-      "artist": "洛天依Official",
-      "artist_search": "洛天依 蝴蝶 瞿子千",
-      "feat_artist": "",
-      "remark": "来自 2026-08-18 歌切合集《【663645TV】神回！我已启动！全力绿来唱完了！8月18日歌切合集【小松绿Viridis】》的分P《20-蝴蝶》。经复核为洛天依演唱的《蝴蝶》（温莨作词、瞿子千作曲，收录于洛天依十二周年纪念专辑《再生》），非陶喆同名歌曲。按当前 song-cut-first 策略，将合集章节名直接并入正式曲库；当前记录的是合集内顺序时间，不是原始直播回放时间。",
-      "tone": "",
-      "language": "中文",
-      "type": "中V、流行",
-      "identification": "",
-      "display_version": "",
-      "search_name": "",
-      "cut_link": "https://www.bilibili.com/video/BV1rv8V6DExk/",
-      "sing_count": 2,
-      "status_labels": "歌切合集补录、待后续回放时间定位、自动识别待人工复核",
-      "last_sing_at": "2026-08-18",
-      "row_key": "蝴蝶"
     },
     {
       "song_id": 19,
@@ -238,27 +259,6 @@ window.XSL_DATA = {
       "status_labels": "歌回、半场、自动识别待人工复核、歌切合集补录、待后续回放时间定位",
       "last_sing_at": "2026-08-18",
       "row_key": "三月雨"
-    },
-    {
-      "song_id": 17,
-      "song_name": "Virtual to LIVE",
-      "show_as_song_name": "",
-      "display_song_name": "Virtual to LIVE",
-      "artist": "にじさんじ",
-      "artist_search": "にじさんじ Virtual to LIVE",
-      "feat_artist": "",
-      "remark": "来自 2026-08-09 第一次歌回回放 p2 中段。主播口头直接提到“该唱 VTL 了”，随后切片转写又命中“总是过度紧张，在镜头前红了脸”“现实总是面对太多无奈和辛酸”“虽然在世界两端，用我的歌声将你胸腔填满”等高辨识度句群，与《Virtual to LIVE》中文版歌词高度重合，可先入库并保留人工复核标签。",
-      "tone": "",
-      "language": "中文",
-      "type": "V圈、应援",
-      "identification": "",
-      "display_version": "中文版",
-      "search_name": "",
-      "cut_link": "https://www.bilibili.com/video/BV1XAu16gE7U/",
-      "sing_count": 2,
-      "status_labels": "歌回、自动识别待人工复核",
-      "last_sing_at": "2026-08-20",
-      "row_key": "Virtual to LIVE"
     },
     {
       "song_id": 113,
@@ -1017,6 +1017,195 @@ window.XSL_DATA = {
       "row_key": "Melody"
     },
     {
+      "song_id": 44,
+      "song_name": "锦鲤抄",
+      "show_as_song_name": "",
+      "display_song_name": "锦鲤抄",
+      "artist": "银临 / 云之泣",
+      "artist_search": "银临 云之泣",
+      "feat_artist": "",
+      "remark": "直链页面 title 为【小松绿Viridis/翻唱】《锦鲤抄》，meta description 明示日期 2026.08.15 与 UP 主小鸡奇遇記。song_name 归一化为真实曲名“锦鲤抄”。",
+      "tone": "",
+      "language": "中文",
+      "type": "国风、古风",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV17bby6AEr6/",
+      "sing_count": 2,
+      "status_labels": "歌切直补、待原始回放定位、歌回、歌切合集复核",
+      "last_sing_at": "2026-10-16",
+      "row_key": "锦鲤抄"
+    },
+    {
+      "song_id": 64,
+      "song_name": "上山岗",
+      "show_as_song_name": "",
+      "display_song_name": "上山岗",
+      "artist": "ilem / 洛天依Official",
+      "artist_search": "ilem 洛天依",
+      "feat_artist": "",
+      "remark": "来自 2026-08-18 歌切合集《【663645TV】神回！我已启动！全力绿来唱完了！8月18日歌切合集【小松绿Viridis】》的分P《17-上山岗》。按当前 song-cut-first 策略，将合集章节名直接并入正式曲库；当前记录的是合集内顺序时间，不是原始直播回放时间。",
+      "tone": "",
+      "language": "中文",
+      "type": "中V、民谣",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1rv8V6DExk/",
+      "sing_count": 2,
+      "status_labels": "歌切合集补录、待后续回放时间定位、歌回、歌切合集复核",
+      "last_sing_at": "2026-10-16",
+      "row_key": "上山岗"
+    },
+    {
+      "song_id": 47,
+      "song_name": "我的悲伤是水做的",
+      "show_as_song_name": "",
+      "display_song_name": "我的悲伤是水做的",
+      "artist": "ChiliChill乐团 / 洛天依Official",
+      "artist_search": "ChiliChill 洛天依",
+      "feat_artist": "",
+      "remark": "直链页面 title 为【小松绿Viridis/翻唱】《我的悲伤是水做的》，meta description 明示日期 2026.08.15 与 UP 主小鸡奇遇記。song_name 归一化为真实曲名“我的悲伤是水做的”。",
+      "tone": "",
+      "language": "中文",
+      "type": "中V、流行",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1AJby6gECN/",
+      "sing_count": 2,
+      "status_labels": "歌切直补、待原始回放定位、歌回、歌切合集复核",
+      "last_sing_at": "2026-10-16",
+      "row_key": "我的悲伤是水做的"
+    },
+    {
+      "song_id": 201,
+      "song_name": "大喜",
+      "show_as_song_name": "",
+      "display_song_name": "大喜",
+      "artist": "泠鸢yousa / 音阙诗听",
+      "artist_search": "泠鸢yousa 音阙诗听 大喜",
+      "feat_artist": "",
+      "remark": "UP 心灵火Flame《20260919 歌切》P3；原唱泠鸢yousa联合音阙诗听创作的国风电音单曲；本曲无直接歌词弹幕，按分P章节名+前后曲时间轴推定，置信度酌减",
+      "tone": "",
+      "language": "中文",
+      "type": "国风",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1rZe86yE49/?p=3",
+      "sing_count": 2,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-16",
+      "row_key": "大喜"
+    },
+    {
+      "song_id": 281,
+      "song_name": "花月成双",
+      "show_as_song_name": "",
+      "display_song_name": "花月成双",
+      "artist": "泠鸢yousa_朽木素_魂喵喵",
+      "artist_search": "泠鸢yousa_朽木素_魂喵喵",
+      "feat_artist": "",
+      "remark": "",
+      "tone": "",
+      "language": "中文",
+      "type": "V圈",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV18Jpw6mE82/?p=14",
+      "sing_count": 2,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-16",
+      "row_key": "花月成双"
+    },
+    {
+      "song_id": 31,
+      "song_name": "匆匆那年",
+      "show_as_song_name": "",
+      "display_song_name": "匆匆那年",
+      "artist": "王菲",
+      "artist_search": "王菲",
+      "feat_artist": "",
+      "remark": "视频标题直接给出真实歌曲名《匆匆那年》；页面未直写日期，但该条与《偏食》《下等马》《月が綺麗ね》《春日影》《白鸟过河滩》等同属 2026-08-11 歌切候选网络，按当前 song-cut-first 流程先以 2026-08-11 manual-normalized 收录。",
+      "tone": "",
+      "language": "中文",
+      "type": "流行、影视",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1BUbC68EP6/",
+      "sing_count": 2,
+      "status_labels": "歌切直补、待原始回放定位、歌回",
+      "last_sing_at": "2026-10-18",
+      "row_key": "匆匆那年"
+    },
+    {
+      "song_id": 4,
+      "song_name": "暖暖",
+      "show_as_song_name": "",
+      "display_song_name": "暖暖",
+      "artist": "梁静茹",
+      "artist_search": "梁静茹",
+      "feat_artist": "",
+      "remark": "直链页面 title 为【小松绿Viridis/翻唱】《暖暖》，meta description 明示日期 2026.08.08 与 UP 主小鸡奇遇記。song_name 归一化为真实曲名“暖暖”。",
+      "tone": "",
+      "language": "中文",
+      "type": "流行",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1KVu36iE1z/",
+      "sing_count": 2,
+      "status_labels": "歌切直补、待原始回放定位、歌回",
+      "last_sing_at": "2026-10-18",
+      "row_key": "暖暖"
+    },
+    {
+      "song_id": 63,
+      "song_name": "世末歌者",
+      "show_as_song_name": "",
+      "display_song_name": "世末歌者",
+      "artist": "乐正绫 / COP",
+      "artist_search": "乐正绫 COP",
+      "feat_artist": "",
+      "remark": "来自 2026-08-18 歌切合集《【663645TV】神回！我已启动！全力绿来唱完了！8月18日歌切合集【小松绿Viridis】》的分P《16-世末歌者》。按当前 song-cut-first 策略，将合集章节名直接并入正式曲库；当前记录的是合集内顺序时间，不是原始直播回放时间。",
+      "tone": "",
+      "language": "中文",
+      "type": "中V、流行",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1Pa8V69ECP/",
+      "sing_count": 2,
+      "status_labels": "歌切合集补录、待后续回放时间定位、歌回、歌切直补",
+      "last_sing_at": "2026-10-18",
+      "row_key": "世末歌者"
+    },
+    {
+      "song_id": 115,
+      "song_name": "是风动",
+      "show_as_song_name": "",
+      "display_song_name": "是风动",
+      "artist": "银临 / 河图",
+      "artist_search": "是风动 银临 河图",
+      "feat_artist": "",
+      "remark": "2026-08-29 心灵火Flame合集补录：【小松绿Viridis】20260829 歌切 分P8（04:49）。百度百科核实：银临×河图 2017 古风单曲（银临作曲/择荇填词/灰原穷编曲，收录《蚍蜉渡海》）。",
+      "tone": "",
+      "language": "中文",
+      "type": "古风、国风",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1gm4C65Ey6/?p=8",
+      "sing_count": 2,
+      "status_labels": "歌回、歌切直补",
+      "last_sing_at": "2026-10-18",
+      "row_key": "是风动"
+    },
+    {
       "song_id": 103,
       "song_name": "阿拉斯加海湾",
       "show_as_song_name": "",
@@ -1183,27 +1372,6 @@ window.XSL_DATA = {
       "status_labels": "歌切直补、待原始回放定位",
       "last_sing_at": "2026-08-09",
       "row_key": "词不达意"
-    },
-    {
-      "song_id": 31,
-      "song_name": "匆匆那年",
-      "show_as_song_name": "",
-      "display_song_name": "匆匆那年",
-      "artist": "王菲",
-      "artist_search": "王菲",
-      "feat_artist": "",
-      "remark": "视频标题直接给出真实歌曲名《匆匆那年》；页面未直写日期，但该条与《偏食》《下等马》《月が綺麗ね》《春日影》《白鸟过河滩》等同属 2026-08-11 歌切候选网络，按当前 song-cut-first 流程先以 2026-08-11 manual-normalized 收录。",
-      "tone": "",
-      "language": "中文",
-      "type": "流行、影视",
-      "identification": "",
-      "display_version": "",
-      "search_name": "",
-      "cut_link": "https://www.bilibili.com/video/BV1BUbC68EP6/",
-      "sing_count": 1,
-      "status_labels": "歌切直补、待原始回放定位",
-      "last_sing_at": "2026-08-11",
-      "row_key": "匆匆那年"
     },
     {
       "song_id": 77,
@@ -1563,27 +1731,6 @@ window.XSL_DATA = {
       "row_key": "焦糖星"
     },
     {
-      "song_id": 44,
-      "song_name": "锦鲤抄",
-      "show_as_song_name": "",
-      "display_song_name": "锦鲤抄",
-      "artist": "银临 / 云之泣",
-      "artist_search": "银临 云之泣",
-      "feat_artist": "",
-      "remark": "直链页面 title 为【小松绿Viridis/翻唱】《锦鲤抄》，meta description 明示日期 2026.08.15 与 UP 主小鸡奇遇記。song_name 归一化为真实曲名“锦鲤抄”。",
-      "tone": "",
-      "language": "中文",
-      "type": "国风、古风",
-      "identification": "",
-      "display_version": "",
-      "search_name": "",
-      "cut_link": "https://www.bilibili.com/video/BV17bby6AEr6/",
-      "sing_count": 1,
-      "status_labels": "歌切直补、待原始回放定位",
-      "last_sing_at": "2026-08-15",
-      "row_key": "锦鲤抄"
-    },
-    {
       "song_id": 8,
       "song_name": "绝不认输",
       "show_as_song_name": "",
@@ -1878,27 +2025,6 @@ window.XSL_DATA = {
       "row_key": "你究竟有几个好妹妹"
     },
     {
-      "song_id": 4,
-      "song_name": "暖暖",
-      "show_as_song_name": "",
-      "display_song_name": "暖暖",
-      "artist": "梁静茹",
-      "artist_search": "梁静茹",
-      "feat_artist": "",
-      "remark": "直链页面 title 为【小松绿Viridis/翻唱】《暖暖》，meta description 明示日期 2026.08.08 与 UP 主小鸡奇遇記。song_name 归一化为真实曲名“暖暖”。",
-      "tone": "",
-      "language": "中文",
-      "type": "流行",
-      "identification": "",
-      "display_version": "",
-      "search_name": "",
-      "cut_link": "https://www.bilibili.com/video/BV1KVu36iE1z/",
-      "sing_count": 1,
-      "status_labels": "歌切直补、待原始回放定位",
-      "last_sing_at": "2026-08-08",
-      "row_key": "暖暖"
-    },
-    {
       "song_id": 66,
       "song_name": "聘书",
       "show_as_song_name": "",
@@ -2025,27 +2151,6 @@ window.XSL_DATA = {
       "row_key": "山遥路远"
     },
     {
-      "song_id": 64,
-      "song_name": "上山岗",
-      "show_as_song_name": "",
-      "display_song_name": "上山岗",
-      "artist": "ilem / 洛天依Official",
-      "artist_search": "ilem 洛天依",
-      "feat_artist": "",
-      "remark": "来自 2026-08-18 歌切合集《【663645TV】神回！我已启动！全力绿来唱完了！8月18日歌切合集【小松绿Viridis】》的分P《17-上山岗》。按当前 song-cut-first 策略，将合集章节名直接并入正式曲库；当前记录的是合集内顺序时间，不是原始直播回放时间。",
-      "tone": "",
-      "language": "中文",
-      "type": "中V、民谣",
-      "identification": "",
-      "display_version": "",
-      "search_name": "",
-      "cut_link": "https://www.bilibili.com/video/BV1rv8V6DExk/",
-      "sing_count": 1,
-      "status_labels": "歌切合集补录、待后续回放时间定位",
-      "last_sing_at": "2026-08-18",
-      "row_key": "上山岗"
-    },
-    {
       "song_id": 131,
       "song_name": "深夜诗人",
       "show_as_song_name": "",
@@ -2107,48 +2212,6 @@ window.XSL_DATA = {
       "status_labels": "歌回、自动识别待人工复核",
       "last_sing_at": "2026-08-18",
       "row_key": "世界は恋に落ちている"
-    },
-    {
-      "song_id": 63,
-      "song_name": "世末歌者",
-      "show_as_song_name": "",
-      "display_song_name": "世末歌者",
-      "artist": "乐正绫 / COP",
-      "artist_search": "乐正绫 COP",
-      "feat_artist": "",
-      "remark": "来自 2026-08-18 歌切合集《【663645TV】神回！我已启动！全力绿来唱完了！8月18日歌切合集【小松绿Viridis】》的分P《16-世末歌者》。按当前 song-cut-first 策略，将合集章节名直接并入正式曲库；当前记录的是合集内顺序时间，不是原始直播回放时间。",
-      "tone": "",
-      "language": "中文",
-      "type": "中V、流行",
-      "identification": "",
-      "display_version": "",
-      "search_name": "",
-      "cut_link": "https://www.bilibili.com/video/BV1Pa8V69ECP/",
-      "sing_count": 1,
-      "status_labels": "歌切合集补录、待后续回放时间定位",
-      "last_sing_at": "2026-08-18",
-      "row_key": "世末歌者"
-    },
-    {
-      "song_id": 115,
-      "song_name": "是风动",
-      "show_as_song_name": "",
-      "display_song_name": "是风动",
-      "artist": "银临 / 河图",
-      "artist_search": "是风动 银临 河图",
-      "feat_artist": "",
-      "remark": "2026-08-29 心灵火Flame合集补录：【小松绿Viridis】20260829 歌切 分P8（04:49）。百度百科核实：银临×河图 2017 古风单曲（银临作曲/择荇填词/灰原穷编曲，收录《蚍蜉渡海》）。",
-      "tone": "",
-      "language": "中文",
-      "type": "古风、国风",
-      "identification": "",
-      "display_version": "",
-      "search_name": "",
-      "cut_link": "https://www.bilibili.com/video/BV1gm4C65Ey6/?p=8",
-      "sing_count": 1,
-      "status_labels": "歌回",
-      "last_sing_at": "2026-08-29",
-      "row_key": "是风动"
     },
     {
       "song_id": 74,
@@ -2401,27 +2464,6 @@ window.XSL_DATA = {
       "status_labels": "歌切合集补录、待后续回放时间定位",
       "last_sing_at": "2026-08-18",
       "row_key": "未来は風のように"
-    },
-    {
-      "song_id": 47,
-      "song_name": "我的悲伤是水做的",
-      "show_as_song_name": "",
-      "display_song_name": "我的悲伤是水做的",
-      "artist": "ChiliChill乐团 / 洛天依Official",
-      "artist_search": "ChiliChill 洛天依",
-      "feat_artist": "",
-      "remark": "直链页面 title 为【小松绿Viridis/翻唱】《我的悲伤是水做的》，meta description 明示日期 2026.08.15 与 UP 主小鸡奇遇記。song_name 归一化为真实曲名“我的悲伤是水做的”。",
-      "tone": "",
-      "language": "中文",
-      "type": "中V、流行",
-      "identification": "",
-      "display_version": "",
-      "search_name": "",
-      "cut_link": "https://www.bilibili.com/video/BV1AJby6gECN/",
-      "sing_count": 1,
-      "status_labels": "歌切直补、待原始回放定位",
-      "last_sing_at": "2026-08-15",
-      "row_key": "我的悲伤是水做的"
     },
     {
       "song_id": 40,
@@ -4314,27 +4356,6 @@ window.XSL_DATA = {
       "row_key": "春意红包"
     },
     {
-      "song_id": 201,
-      "song_name": "大喜",
-      "show_as_song_name": "",
-      "display_song_name": "大喜",
-      "artist": "泠鸢yousa / 音阙诗听",
-      "artist_search": "泠鸢yousa 音阙诗听 大喜",
-      "feat_artist": "",
-      "remark": "UP 心灵火Flame《20260919 歌切》P3；原唱泠鸢yousa联合音阙诗听创作的国风电音单曲；本曲无直接歌词弹幕，按分P章节名+前后曲时间轴推定，置信度酌减",
-      "tone": "",
-      "language": "中文",
-      "type": "国风",
-      "identification": "",
-      "display_version": "",
-      "search_name": "",
-      "cut_link": "https://www.bilibili.com/video/BV1rZe86yE49/?p=3",
-      "sing_count": 1,
-      "status_labels": "歌回、歌切合集复核",
-      "last_sing_at": "2026-09-19",
-      "row_key": "大喜"
-    },
-    {
       "song_id": 202,
       "song_name": "告死鸟",
       "show_as_song_name": "",
@@ -5700,27 +5721,6 @@ window.XSL_DATA = {
       "row_key": "花园舞曲"
     },
     {
-      "song_id": 281,
-      "song_name": "花月成双",
-      "show_as_song_name": "",
-      "display_song_name": "花月成双",
-      "artist": "泠鸢yousa_朽木素_魂喵喵",
-      "artist_search": "泠鸢yousa_朽木素_魂喵喵",
-      "feat_artist": "",
-      "remark": "",
-      "tone": "",
-      "language": "中文",
-      "type": "V圈",
-      "identification": "",
-      "display_version": "",
-      "search_name": "",
-      "cut_link": "https://www.bilibili.com/video/BV18Jpw6mE82/?p=14",
-      "sing_count": 1,
-      "status_labels": "歌回、歌切合集复核",
-      "last_sing_at": "2026-10-06",
-      "row_key": "花月成双"
-    },
-    {
       "song_id": 276,
       "song_name": "恋爱告急",
       "show_as_song_name": "",
@@ -6349,23 +6349,319 @@ window.XSL_DATA = {
       "status_labels": "歌回、歌切合集复核",
       "last_sing_at": "2026-10-10",
       "row_key": "ドライフラワー"
+    },
+    {
+      "song_id": 308,
+      "song_name": "不染",
+      "show_as_song_name": "",
+      "display_song_name": "不染",
+      "artist": "萨顶顶",
+      "artist_search": "萨顶顶",
+      "feat_artist": "",
+      "remark": "分P标题 10_不染 - 萨顶顶；心灵火 P10 同名同序；弹幕无直接点名，按两份合集章节锁定。",
+      "tone": "",
+      "language": "中文",
+      "type": "影视",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1uPJ86DE95/?p=10",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-16",
+      "row_key": "不染"
+    },
+    {
+      "song_id": 310,
+      "song_name": "冻夏",
+      "show_as_song_name": "",
+      "display_song_name": "冻夏",
+      "artist": "Soda纯白, 心华",
+      "artist_search": "Soda纯白, 心华",
+      "feat_artist": "",
+      "remark": "弹幕 04:14:01「来首冻夏」、04:14:49「冻夏是极好的」；两份合集 P12 同名同序。",
+      "tone": "",
+      "language": "中文",
+      "type": "中文Vocaloid",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1uPJ86DE95/?p=12",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-16",
+      "row_key": "冻夏"
+    },
+    {
+      "song_id": 309,
+      "song_name": "路过人间",
+      "show_as_song_name": "",
+      "display_song_name": "路过人间",
+      "artist": "郁可唯",
+      "artist_search": "郁可唯",
+      "feat_artist": "",
+      "remark": "弹幕 04:04:50「路过人间」直接点名；两份合集 P11 同名同序。",
+      "tone": "",
+      "language": "中文",
+      "type": "流行",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1uPJ86DE95/?p=11",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-16",
+      "row_key": "路过人间"
+    },
+    {
+      "song_id": 307,
+      "song_name": "梦语",
+      "show_as_song_name": "",
+      "display_song_name": "梦语",
+      "artist": "乐正绫",
+      "artist_search": "乐正绫",
+      "feat_artist": "",
+      "remark": "弹幕 03:51:51「还有梦语」、03:53:56「现在是梦语，上一首是大喜」；两份合集 P9 同名同序。",
+      "tone": "",
+      "language": "中文",
+      "type": "中文Vocaloid",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1uPJ86DE95/?p=9",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-16",
+      "row_key": "梦语"
+    },
+    {
+      "song_id": 305,
+      "song_name": "绮云泽",
+      "show_as_song_name": "",
+      "display_song_name": "绮云泽",
+      "artist": "妖橙Yumo, 星尘",
+      "artist_search": "妖橙Yumo, 星尘",
+      "feat_artist": "",
+      "remark": "分P标题 03_绮云泽 - 妖橙Yumo, 星尘；心灵火 P3 同名同序；星尘为五维介质声库。",
+      "tone": "",
+      "language": "中文",
+      "type": "中文Vocaloid",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1uPJ86DE95/?p=3",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-16",
+      "row_key": "绮云泽"
+    },
+    {
+      "song_id": 304,
+      "song_name": "星愿",
+      "show_as_song_name": "",
+      "display_song_name": "星愿",
+      "artist": "茶理理",
+      "artist_search": "茶理理",
+      "feat_artist": "",
+      "remark": "分P标题 02_星愿 - 茶理理；心灵火 P2 同名同序；弹幕 03:11-03:19 讨论五维介质/星之海专辑，与该曲来路一致。",
+      "tone": "",
+      "language": "中文",
+      "type": "中文原创",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1uPJ86DE95/?p=2",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-16",
+      "row_key": "星愿"
+    },
+    {
+      "song_id": 306,
+      "song_name": "永不失联的爱",
+      "show_as_song_name": "",
+      "display_song_name": "永不失联的爱",
+      "artist": "周兴哲",
+      "artist_search": "周兴哲",
+      "feat_artist": "",
+      "remark": "存在同场独立单曲歌切 BV1wsJ86MEG9（华丽失败酱，「来一起看！！！20261016 20-03_PART000--1」）；两份合集 P6 同名同序。",
+      "tone": "",
+      "language": "中文",
+      "type": "流行",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1uPJ86DE95/?p=6",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-16",
+      "row_key": "永不失联的爱"
+    },
+    {
+      "song_id": 303,
+      "song_name": "种族假象",
+      "show_as_song_name": "",
+      "display_song_name": "种族假象",
+      "artist": "漆柚, 绾绾Akari, 纸马, 柚子茶",
+      "artist_search": "漆柚, 绾绾Akari, 纸马, 柚子茶",
+      "feat_artist": "",
+      "remark": "分P标题 01_种族假象(人声本家)；心灵火 BV1e4Jv6gEKz P1 同名同序；弹幕无直接点名。",
+      "tone": "",
+      "language": "中文",
+      "type": "中文原创",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1uPJ86DE95/?p=1",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-16",
+      "row_key": "种族假象"
+    },
+    {
+      "song_id": 312,
+      "song_name": "なでなで",
+      "show_as_song_name": "",
+      "display_song_name": "なでなで",
+      "artist": "莉犬",
+      "artist_search": "莉犬",
+      "feat_artist": "",
+      "remark": "弹幕 04:45:07「好萌好萌的抚摸抚摸」正是曲名意译；两份合集 P16 同名同序。",
+      "tone": "",
+      "language": "日文",
+      "type": "J-Pop",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1uPJ86DE95/?p=16",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-16",
+      "row_key": "なでなで"
+    },
+    {
+      "song_id": 311,
+      "song_name": "フォニイ",
+      "show_as_song_name": "",
+      "display_song_name": "フォニイ",
+      "artist": "可不, ツミキ",
+      "artist_search": "可不, ツミキ",
+      "feat_artist": "",
+      "remark": "弹幕 04:35:31「phony」直接点名；两份合集 P15 同名同序。",
+      "tone": "",
+      "language": "日文",
+      "type": "日V",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1uPJ86DE95/?p=15",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-16",
+      "row_key": "フォニイ"
+    },
+    {
+      "song_id": 315,
+      "song_name": "回る空うさぎ",
+      "show_as_song_name": "",
+      "display_song_name": "回る空うさぎ",
+      "artist": "Orangestar / 初音ミク",
+      "artist_search": "Orangestar 初音ミク 回る空うさぎ",
+      "feat_artist": "",
+      "remark": "黄鱼鼠条 单曲歌切，标题含中文译名“月兔回旋于空中”。弹幕 03:02:11-03:47:42 出现 10 条“月兔”（含“月兔回旋于空中”）。原唱证据为 Orangestar feat.初音ミク。未定位回放时间点。",
+      "tone": "",
+      "language": "日文",
+      "type": "Vocaloid、J-Pop",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1fSn56oEen/",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切直补",
+      "last_sing_at": "2026-10-18",
+      "row_key": "回る空うさぎ"
+    },
+    {
+      "song_id": 314,
+      "song_name": "如愿",
+      "show_as_song_name": "",
+      "display_song_name": "如愿",
+      "artist": "王菲",
+      "artist_search": "王菲 如愿",
+      "feat_artist": "",
+      "remark": "黄鱼鼠条“王菲三连唱之《如愿》”。弹幕 02:05:53-02:10:16 出现 15 条“如愿”。未定位回放时间点。",
+      "tone": "",
+      "language": "中文",
+      "type": "华语经典",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV12jnL6uEHb/",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切直补",
+      "last_sing_at": "2026-10-18",
+      "row_key": "如愿"
+    },
+    {
+      "song_id": 313,
+      "song_name": "笑忘书",
+      "show_as_song_name": "",
+      "display_song_name": "笑忘书",
+      "artist": "王菲",
+      "artist_search": "王菲 笑忘书",
+      "feat_artist": "",
+      "remark": "黄鱼鼠条“王菲三连唱之《笑忘书》”。弹幕 02:01:46-03:31:55 共 277 条“王菲”，02:02:00-02:13:00 窗口内“vr王菲小松绿”152 条。三连唱内部次序按投稿先后（笑忘书 00:30、匆匆那年 00:45、如愿 01:00 UTC）推定。未定位回放时间点。",
+      "tone": "",
+      "language": "中文",
+      "type": "华语经典",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV14RnL6VEoV/",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切直补",
+      "last_sing_at": "2026-10-18",
+      "row_key": "笑忘书"
+    },
+    {
+      "song_id": 316,
+      "song_name": "心拍数♯0822",
+      "show_as_song_name": "",
+      "display_song_name": "心拍数♯0822",
+      "artist": "蝶々P / 初音ミク",
+      "artist_search": "蝶々P 初音ミク 心拍数 0822",
+      "feat_artist": "",
+      "remark": "秋月遥zuki 单曲歌切，标题含“约定一直相爱下去吧 直到心跳停止为止”。弹幕 03:40:41-03:40:42 出现 2 条“心拍数”。原唱证据为 蝶々P feat.初音ミク。未定位回放时间点。",
+      "tone": "",
+      "language": "日文",
+      "type": "Vocaloid、J-Pop",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1XonG65EA6/",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切直补",
+      "last_sing_at": "2026-10-18",
+      "row_key": "心拍数♯0822"
     }
   ]
 },
   history_index: {
   "roomKey": "xiaosonglu",
   "roomId": "1727071052",
-  "generatedAt": "2026-10-12T02:33:59.411Z",
+  "generatedAt": "2026-10-19T02:38:23.712Z",
   "source": "local-replay-ingestion",
   "latest": {
     "year": "2026",
     "month": "10",
-    "day": "10"
+    "day": "18"
   },
   "dateTree": {
     "2026": {
       "10": {
         "10": 20,
+        "16": 17,
+        "18": 8,
         "08": 5,
         "06": 17,
         "02": 33
@@ -12852,13 +13148,467 @@ window.XSL_DATA = {
         "song_resolution_method": "song-cut-compilation-chapter",
         "cut_link": "https://www.bilibili.com/video/BV1TApG6uEPX/?p=20"
       }
+    ],
+    "2026-10-16": [
+      {
+        "song_name": "种族假象",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "漆柚, 绾绾Akari, 纸马, 柚子茶",
+        "replay_id": "live:a64bea65-edb2-4044-a43c-b34e601d9d2e",
+        "replay_title": "【小松绿Viridis】来一起看！！！ 2026-10-16",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "种族假象",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-compilation-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1uPJ86DE95/?p=1"
+      },
+      {
+        "song_name": "星愿",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "茶理理",
+        "replay_id": "live:a64bea65-edb2-4044-a43c-b34e601d9d2e",
+        "replay_title": "【小松绿Viridis】来一起看！！！ 2026-10-16",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "星愿",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-compilation-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1uPJ86DE95/?p=2"
+      },
+      {
+        "song_name": "绮云泽",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "妖橙Yumo, 星尘",
+        "replay_id": "live:a64bea65-edb2-4044-a43c-b34e601d9d2e",
+        "replay_title": "【小松绿Viridis】来一起看！！！ 2026-10-16",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "绮云泽",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-compilation-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1uPJ86DE95/?p=3"
+      },
+      {
+        "song_name": "花月成双",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "三无Marblue",
+        "replay_id": "live:a64bea65-edb2-4044-a43c-b34e601d9d2e",
+        "replay_title": "【小松绿Viridis】来一起看！！！ 2026-10-16",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "花月成双",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-compilation-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1uPJ86DE95/?p=4"
+      },
+      {
+        "song_name": "蝴蝶",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "洛天依",
+        "replay_id": "live:a64bea65-edb2-4044-a43c-b34e601d9d2e",
+        "replay_title": "【小松绿Viridis】来一起看！！！ 2026-10-16",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "蝴蝶",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-compilation-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1uPJ86DE95/?p=5"
+      },
+      {
+        "song_name": "永不失联的爱",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "周兴哲",
+        "replay_id": "live:a64bea65-edb2-4044-a43c-b34e601d9d2e",
+        "replay_title": "【小松绿Viridis】来一起看！！！ 2026-10-16",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "永不失联的爱",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-compilation-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1uPJ86DE95/?p=6"
+      },
+      {
+        "song_name": "我的悲伤是水做的",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "ChiliChill乐团, 洛天依",
+        "replay_id": "live:a64bea65-edb2-4044-a43c-b34e601d9d2e",
+        "replay_title": "【小松绿Viridis】来一起看！！！ 2026-10-16",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "我的悲伤是水做的",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-compilation-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1uPJ86DE95/?p=7"
+      },
+      {
+        "song_name": "大喜",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "泠鸢yousa, 音阙诗听",
+        "replay_id": "live:a64bea65-edb2-4044-a43c-b34e601d9d2e",
+        "replay_title": "【小松绿Viridis】来一起看！！！ 2026-10-16",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "大喜",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-compilation-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1uPJ86DE95/?p=8"
+      },
+      {
+        "song_name": "梦语",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "乐正绫",
+        "replay_id": "live:a64bea65-edb2-4044-a43c-b34e601d9d2e",
+        "replay_title": "【小松绿Viridis】来一起看！！！ 2026-10-16",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "梦语",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-compilation-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1uPJ86DE95/?p=9"
+      },
+      {
+        "song_name": "不染",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "萨顶顶",
+        "replay_id": "live:a64bea65-edb2-4044-a43c-b34e601d9d2e",
+        "replay_title": "【小松绿Viridis】来一起看！！！ 2026-10-16",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "不染",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-compilation-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1uPJ86DE95/?p=10"
+      },
+      {
+        "song_name": "路过人间",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "郁可唯",
+        "replay_id": "live:a64bea65-edb2-4044-a43c-b34e601d9d2e",
+        "replay_title": "【小松绿Viridis】来一起看！！！ 2026-10-16",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "路过人间",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-compilation-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1uPJ86DE95/?p=11"
+      },
+      {
+        "song_name": "冻夏",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "Soda纯白, 心华",
+        "replay_id": "live:a64bea65-edb2-4044-a43c-b34e601d9d2e",
+        "replay_title": "【小松绿Viridis】来一起看！！！ 2026-10-16",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "冻夏",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-compilation-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1uPJ86DE95/?p=12"
+      },
+      {
+        "song_name": "锦鲤抄",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "银临, 云之泣",
+        "replay_id": "live:a64bea65-edb2-4044-a43c-b34e601d9d2e",
+        "replay_title": "【小松绿Viridis】来一起看！！！ 2026-10-16",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "锦鲤抄",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-compilation-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1uPJ86DE95/?p=13"
+      },
+      {
+        "song_name": "上山岗",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "ilem, 洛天依",
+        "replay_id": "live:a64bea65-edb2-4044-a43c-b34e601d9d2e",
+        "replay_title": "【小松绿Viridis】来一起看！！！ 2026-10-16",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "上山岗",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-compilation-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1uPJ86DE95/?p=14"
+      },
+      {
+        "song_name": "フォニイ",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "可不, ツミキ",
+        "replay_id": "live:a64bea65-edb2-4044-a43c-b34e601d9d2e",
+        "replay_title": "【小松绿Viridis】来一起看！！！ 2026-10-16",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "フォニイ",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-compilation-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1uPJ86DE95/?p=15"
+      },
+      {
+        "song_name": "なでなで",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "莉犬",
+        "replay_id": "live:a64bea65-edb2-4044-a43c-b34e601d9d2e",
+        "replay_title": "【小松绿Viridis】来一起看！！！ 2026-10-16",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "なでなで",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-compilation-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1uPJ86DE95/?p=16"
+      },
+      {
+        "song_name": "Virtual to LIVE",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "にじさんじ",
+        "replay_id": "live:a64bea65-edb2-4044-a43c-b34e601d9d2e",
+        "replay_title": "【小松绿Viridis】来一起看！！！ 2026-10-16",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "Virtual to LIVE",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-compilation-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1uPJ86DE95/?p=17"
+      }
+    ],
+    "2026-10-18": [
+      {
+        "song_name": "暖暖",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切直补"
+        ],
+        "artist": "梁静茹",
+        "replay_id": "live:d46e5e86-4ef8-4407-8b9b-83e793fae681",
+        "replay_title": "【小松绿Viridis】脑袋空空的。。。 2026-10-18",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "暖暖",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-title + danmaku",
+        "cut_link": "https://www.bilibili.com/video/BV1BYnL6tETR/"
+      },
+      {
+        "song_name": "笑忘书",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切直补"
+        ],
+        "artist": "王菲",
+        "replay_id": "live:d46e5e86-4ef8-4407-8b9b-83e793fae681",
+        "replay_title": "【小松绿Viridis】脑袋空空的。。。 2026-10-18",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "笑忘书",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-title + danmaku",
+        "cut_link": "https://www.bilibili.com/video/BV14RnL6VEoV/"
+      },
+      {
+        "song_name": "匆匆那年",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切直补"
+        ],
+        "artist": "王菲",
+        "replay_id": "live:d46e5e86-4ef8-4407-8b9b-83e793fae681",
+        "replay_title": "【小松绿Viridis】脑袋空空的。。。 2026-10-18",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "匆匆那年",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-title + danmaku",
+        "cut_link": "https://www.bilibili.com/video/BV1hUnL67EEN/"
+      },
+      {
+        "song_name": "如愿",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切直补"
+        ],
+        "artist": "王菲",
+        "replay_id": "live:d46e5e86-4ef8-4407-8b9b-83e793fae681",
+        "replay_title": "【小松绿Viridis】脑袋空空的。。。 2026-10-18",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "如愿",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-title + danmaku",
+        "cut_link": "https://www.bilibili.com/video/BV12jnL6uEHb/"
+      },
+      {
+        "song_name": "是风动",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切直补"
+        ],
+        "artist": "银临 / 河图",
+        "replay_id": "live:d46e5e86-4ef8-4407-8b9b-83e793fae681",
+        "replay_title": "【小松绿Viridis】脑袋空空的。。。 2026-10-18",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "是风动",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-title + danmaku",
+        "cut_link": "https://www.bilibili.com/video/BV1M3nL6CEbP/"
+      },
+      {
+        "song_name": "回る空うさぎ",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切直补"
+        ],
+        "artist": "Orangestar / 初音ミク",
+        "replay_id": "live:d46e5e86-4ef8-4407-8b9b-83e793fae681",
+        "replay_title": "【小松绿Viridis】脑袋空空的。。。 2026-10-18",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "回る空うさぎ",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-title + danmaku",
+        "cut_link": "https://www.bilibili.com/video/BV1fSn56oEen/"
+      },
+      {
+        "song_name": "世末歌者",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切直补"
+        ],
+        "artist": "COP、乐正绫",
+        "replay_id": "live:d46e5e86-4ef8-4407-8b9b-83e793fae681",
+        "replay_title": "【小松绿Viridis】脑袋空空的。。。 2026-10-18",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "世末歌者",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-title + danmaku",
+        "cut_link": "https://www.bilibili.com/video/BV1z8nL68Esy/"
+      },
+      {
+        "song_name": "心拍数♯0822",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切直补"
+        ],
+        "artist": "蝶々P / 初音ミク",
+        "replay_id": "live:d46e5e86-4ef8-4407-8b9b-83e793fae681",
+        "replay_title": "【小松绿Viridis】脑袋空空的。。。 2026-10-18",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "心拍数♯0822",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-title + danmaku",
+        "cut_link": "https://www.bilibili.com/video/BV1XonG65EA6/"
+      }
     ]
   }
 },
   song_details: {
   "roomKey": "xiaosonglu",
   "roomId": "1727071052",
-  "generatedAt": "2026-10-12T02:33:59.411Z",
+  "generatedAt": "2026-10-19T02:38:23.712Z",
   "source": "local-replay-ingestion",
   "bySongKey": {
     "少女レイ": {
@@ -13017,8 +13767,23 @@ window.XSL_DATA = {
       "display_song_name": "暖暖",
       "artist": "梁静茹",
       "cut_link": "https://www.bilibili.com/video/BV1KVu36iE1z/",
-      "total_count": 1,
+      "total_count": 2,
       "entries": [
+        {
+          "date": "2026-10-18",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切直补",
+          "artist": "梁静茹",
+          "replay_id": "live:d46e5e86-4ef8-4407-8b9b-83e793fae681",
+          "replay_title": "【小松绿Viridis】脑袋空空的。。。 2026-10-18",
+          "replay_url": "",
+          "remark": "黄鱼鼠条 单曲歌切（简介“2026年10月18日”，标题含歌词“我想说其实你很好”）。弹幕 01:16:39-01:41:46 反应簇内出现「vr自研梁静茹」62 条、「谁在唱歌」94 条，与本场演唱吻合。未定位回放时间点。",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-title + danmaku",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1BYnL6tETR/"
+        },
         {
           "date": "2026-08-08",
           "time": "",
@@ -13387,8 +14152,23 @@ window.XSL_DATA = {
       "display_song_name": "Virtual to LIVE",
       "artist": "にじさんじ",
       "cut_link": "https://www.bilibili.com/video/BV1XAu16gE7U/",
-      "total_count": 2,
+      "total_count": 3,
       "entries": [
+        {
+          "date": "2026-10-16",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "にじさんじ",
+          "replay_id": "live:a64bea65-edb2-4044-a43c-b34e601d9d2e",
+          "replay_title": "【小松绿Viridis】来一起看！！！ 2026-10-16",
+          "replay_url": "",
+          "remark": "弹幕 05:00:11「带着手机闯荡virtualreal」；两份合集 P17 同名同序。P18 为同一首歌的半首版本（心灵火标注「（半首）」），按「日期+归一化歌名」去重规则不单独收为新歌。",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-compilation-chapter",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1uPJ86DE95/?p=17"
+        },
         {
           "date": "2026-08-20",
           "time": "00:58:40",
@@ -13902,8 +14682,23 @@ window.XSL_DATA = {
       "display_song_name": "匆匆那年",
       "artist": "王菲",
       "cut_link": "https://www.bilibili.com/video/BV1BUbC68EP6/",
-      "total_count": 1,
+      "total_count": 2,
       "entries": [
+        {
+          "date": "2026-10-18",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切直补",
+          "artist": "王菲",
+          "replay_id": "live:d46e5e86-4ef8-4407-8b9b-83e793fae681",
+          "replay_title": "【小松绿Viridis】脑袋空空的。。。 2026-10-18",
+          "replay_url": "",
+          "remark": "黄鱼鼠条“王菲三连唱之《匆匆那年》”。弹幕 02:09:18-02:09:19 出现 2 条“匆匆那年”。未定位回放时间点。",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-title + danmaku",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1hUnL67EEN/"
+        },
         {
           "date": "2026-08-11",
           "time": "",
@@ -14332,8 +15127,23 @@ window.XSL_DATA = {
       "display_song_name": "锦鲤抄",
       "artist": "银临 / 云之泣",
       "cut_link": "https://www.bilibili.com/video/BV17bby6AEr6/",
-      "total_count": 1,
+      "total_count": 2,
       "entries": [
+        {
+          "date": "2026-10-16",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "银临, 云之泣",
+          "replay_id": "live:a64bea65-edb2-4044-a43c-b34e601d9d2e",
+          "replay_title": "【小松绿Viridis】来一起看！！！ 2026-10-16",
+          "replay_url": "",
+          "remark": "弹幕 04:18:24「锦鲤抄（chao）」直接点名；两份合集 P13 同名同序。",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-compilation-chapter",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1uPJ86DE95/?p=13"
+        },
         {
           "date": "2026-08-15",
           "time": "",
@@ -14422,8 +15232,23 @@ window.XSL_DATA = {
       "display_song_name": "我的悲伤是水做的",
       "artist": "ChiliChill乐团 / 洛天依Official",
       "cut_link": "https://www.bilibili.com/video/BV1AJby6gECN/",
-      "total_count": 1,
+      "total_count": 2,
       "entries": [
+        {
+          "date": "2026-10-16",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "ChiliChill乐团, 洛天依",
+          "replay_id": "live:a64bea65-edb2-4044-a43c-b34e601d9d2e",
+          "replay_title": "【小松绿Viridis】来一起看！！！ 2026-10-16",
+          "replay_url": "",
+          "remark": "弹幕 03:39:16「我的悲伤是水做的」直接点名；两份合集 P7 同名同序。",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-compilation-chapter",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1uPJ86DE95/?p=7"
+        },
         {
           "date": "2026-08-15",
           "time": "",
@@ -14852,8 +15677,23 @@ window.XSL_DATA = {
       "display_song_name": "世末歌者",
       "artist": "乐正绫 / COP",
       "cut_link": "https://www.bilibili.com/video/BV1Pa8V69ECP/",
-      "total_count": 1,
+      "total_count": 2,
       "entries": [
+        {
+          "date": "2026-10-18",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切直补",
+          "artist": "COP、乐正绫",
+          "replay_id": "live:d46e5e86-4ef8-4407-8b9b-83e793fae681",
+          "replay_title": "【小松绿Viridis】脑袋空空的。。。 2026-10-18",
+          "replay_url": "",
+          "remark": "黄鱼鼠条 单曲歌切，标题引歌词“哪怕只一瞬的奇迹”。弹幕 03:34:28-03:34:42 出现 4 条“世末歌者”。原唱证据为【乐正绫原创】世末歌者（UP COPY）。未定位回放时间点。",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-title + danmaku",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1z8nL68Esy/"
+        },
         {
           "date": "2026-08-18",
           "time": "01:02:19",
@@ -14877,8 +15717,23 @@ window.XSL_DATA = {
       "display_song_name": "上山岗",
       "artist": "ilem / 洛天依Official",
       "cut_link": "https://www.bilibili.com/video/BV1rv8V6DExk/",
-      "total_count": 1,
+      "total_count": 2,
       "entries": [
+        {
+          "date": "2026-10-16",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "ilem, 洛天依",
+          "replay_id": "live:a64bea65-edb2-4044-a43c-b34e601d9d2e",
+          "replay_title": "【小松绿Viridis】来一起看！！！ 2026-10-16",
+          "replay_url": "",
+          "remark": "弹幕 04:27:52「还以为上山岗被下放了。」；两份合集 P14 同名同序。",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-compilation-chapter",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1uPJ86DE95/?p=14"
+        },
         {
           "date": "2026-08-18",
           "time": "01:07:42",
@@ -14952,8 +15807,23 @@ window.XSL_DATA = {
       "display_song_name": "蝴蝶",
       "artist": "洛天依Official",
       "cut_link": "https://www.bilibili.com/video/BV1rv8V6DExk/",
-      "total_count": 2,
+      "total_count": 3,
       "entries": [
+        {
+          "date": "2026-10-16",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "洛天依",
+          "replay_id": "live:a64bea65-edb2-4044-a43c-b34e601d9d2e",
+          "replay_title": "【小松绿Viridis】来一起看！！！ 2026-10-16",
+          "replay_url": "",
+          "remark": "弹幕 03:12:30「绿神蝴蝶练熟了吗，想听蝴蝶了」与 03:31:01「这首蝴蝶真好听」；两份合集 P5 同名同序。",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-compilation-chapter",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1uPJ86DE95/?p=5"
+        },
         {
           "date": "2026-08-18",
           "time": "01:19:50",
@@ -16362,8 +17232,23 @@ window.XSL_DATA = {
       "display_song_name": "是风动",
       "artist": "银临 / 河图",
       "cut_link": "https://www.bilibili.com/video/BV1gm4C65Ey6/?p=8",
-      "total_count": 1,
+      "total_count": 2,
       "entries": [
+        {
+          "date": "2026-10-18",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切直补",
+          "artist": "银临 / 河图",
+          "replay_id": "live:d46e5e86-4ef8-4407-8b9b-83e793fae681",
+          "replay_title": "【小松绿Viridis】脑袋空空的。。。 2026-10-18",
+          "replay_url": "",
+          "remark": "黄鱼鼠条 单曲歌切，标题引歌词“是风动 还是幡动”。弹幕 02:24:18-02:32:26 出现 4 条“是风动”（含“是风动，还是帆动！”）。原唱证据为银临官方投稿【银临X河图】是风动。未定位回放时间点。",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-title + danmaku",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1M3nL6CEbP/"
+        },
         {
           "date": "2026-08-29",
           "time": "",
@@ -18632,8 +19517,23 @@ window.XSL_DATA = {
       "display_song_name": "大喜",
       "artist": "泠鸢yousa / 音阙诗听",
       "cut_link": "https://www.bilibili.com/video/BV1rZe86yE49/?p=3",
-      "total_count": 1,
+      "total_count": 2,
       "entries": [
+        {
+          "date": "2026-10-16",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "泠鸢yousa, 音阙诗听",
+          "replay_id": "live:a64bea65-edb2-4044-a43c-b34e601d9d2e",
+          "replay_title": "【小松绿Viridis】来一起看！！！ 2026-10-16",
+          "replay_url": "",
+          "remark": "弹幕 03:43:12「之前大喜超级好听」；03:53:56「现在是梦语，上一首是大喜」确认 P8→P9 顺序。",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-compilation-chapter",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1uPJ86DE95/?p=8"
+        },
         {
           "date": "2026-09-19",
           "time": "",
@@ -20707,8 +21607,23 @@ window.XSL_DATA = {
       "display_song_name": "花月成双",
       "artist": "泠鸢yousa_朽木素_魂喵喵",
       "cut_link": "https://www.bilibili.com/video/BV18Jpw6mE82/?p=14",
-      "total_count": 1,
+      "total_count": 2,
       "entries": [
+        {
+          "date": "2026-10-16",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "三无Marblue",
+          "replay_id": "live:a64bea65-edb2-4044-a43c-b34e601d9d2e",
+          "replay_title": "【小松绿Viridis】来一起看！！！ 2026-10-16",
+          "replay_url": "",
+          "remark": "弹幕 03:24:22「花月成双！」直接点名；两份合集 P4 同名同序。",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-compilation-chapter",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1uPJ86DE95/?p=4"
+        },
         {
           "date": "2026-10-06",
           "time": "",
@@ -21250,16 +22165,366 @@ window.XSL_DATA = {
           "cut_link": "https://www.bilibili.com/video/BV1TApG6uEPX/?p=20"
         }
       ]
+    },
+    "种族假象": {
+      "row_key": "种族假象",
+      "song_name": "种族假象",
+      "display_song_name": "种族假象",
+      "artist": "漆柚, 绾绾Akari, 纸马, 柚子茶",
+      "cut_link": "https://www.bilibili.com/video/BV1uPJ86DE95/?p=1",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-10-16",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "漆柚, 绾绾Akari, 纸马, 柚子茶",
+          "replay_id": "live:a64bea65-edb2-4044-a43c-b34e601d9d2e",
+          "replay_title": "【小松绿Viridis】来一起看！！！ 2026-10-16",
+          "replay_url": "",
+          "remark": "分P标题 01_种族假象(人声本家)；心灵火 BV1e4Jv6gEKz P1 同名同序；弹幕无直接点名。",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-compilation-chapter",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1uPJ86DE95/?p=1"
+        }
+      ]
+    },
+    "星愿": {
+      "row_key": "星愿",
+      "song_name": "星愿",
+      "display_song_name": "星愿",
+      "artist": "茶理理",
+      "cut_link": "https://www.bilibili.com/video/BV1uPJ86DE95/?p=2",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-10-16",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "茶理理",
+          "replay_id": "live:a64bea65-edb2-4044-a43c-b34e601d9d2e",
+          "replay_title": "【小松绿Viridis】来一起看！！！ 2026-10-16",
+          "replay_url": "",
+          "remark": "分P标题 02_星愿 - 茶理理；心灵火 P2 同名同序；弹幕 03:11-03:19 讨论五维介质/星之海专辑，与该曲来路一致。",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-compilation-chapter",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1uPJ86DE95/?p=2"
+        }
+      ]
+    },
+    "绮云泽": {
+      "row_key": "绮云泽",
+      "song_name": "绮云泽",
+      "display_song_name": "绮云泽",
+      "artist": "妖橙Yumo, 星尘",
+      "cut_link": "https://www.bilibili.com/video/BV1uPJ86DE95/?p=3",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-10-16",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "妖橙Yumo, 星尘",
+          "replay_id": "live:a64bea65-edb2-4044-a43c-b34e601d9d2e",
+          "replay_title": "【小松绿Viridis】来一起看！！！ 2026-10-16",
+          "replay_url": "",
+          "remark": "分P标题 03_绮云泽 - 妖橙Yumo, 星尘；心灵火 P3 同名同序；星尘为五维介质声库。",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-compilation-chapter",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1uPJ86DE95/?p=3"
+        }
+      ]
+    },
+    "永不失联的爱": {
+      "row_key": "永不失联的爱",
+      "song_name": "永不失联的爱",
+      "display_song_name": "永不失联的爱",
+      "artist": "周兴哲",
+      "cut_link": "https://www.bilibili.com/video/BV1uPJ86DE95/?p=6",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-10-16",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "周兴哲",
+          "replay_id": "live:a64bea65-edb2-4044-a43c-b34e601d9d2e",
+          "replay_title": "【小松绿Viridis】来一起看！！！ 2026-10-16",
+          "replay_url": "",
+          "remark": "存在同场独立单曲歌切 BV1wsJ86MEG9（华丽失败酱，「来一起看！！！20261016 20-03_PART000--1」）；两份合集 P6 同名同序。",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-compilation-chapter",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1uPJ86DE95/?p=6"
+        }
+      ]
+    },
+    "梦语": {
+      "row_key": "梦语",
+      "song_name": "梦语",
+      "display_song_name": "梦语",
+      "artist": "乐正绫",
+      "cut_link": "https://www.bilibili.com/video/BV1uPJ86DE95/?p=9",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-10-16",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "乐正绫",
+          "replay_id": "live:a64bea65-edb2-4044-a43c-b34e601d9d2e",
+          "replay_title": "【小松绿Viridis】来一起看！！！ 2026-10-16",
+          "replay_url": "",
+          "remark": "弹幕 03:51:51「还有梦语」、03:53:56「现在是梦语，上一首是大喜」；两份合集 P9 同名同序。",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-compilation-chapter",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1uPJ86DE95/?p=9"
+        }
+      ]
+    },
+    "不染": {
+      "row_key": "不染",
+      "song_name": "不染",
+      "display_song_name": "不染",
+      "artist": "萨顶顶",
+      "cut_link": "https://www.bilibili.com/video/BV1uPJ86DE95/?p=10",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-10-16",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "萨顶顶",
+          "replay_id": "live:a64bea65-edb2-4044-a43c-b34e601d9d2e",
+          "replay_title": "【小松绿Viridis】来一起看！！！ 2026-10-16",
+          "replay_url": "",
+          "remark": "分P标题 10_不染 - 萨顶顶；心灵火 P10 同名同序；弹幕无直接点名，按两份合集章节锁定。",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-compilation-chapter",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1uPJ86DE95/?p=10"
+        }
+      ]
+    },
+    "路过人间": {
+      "row_key": "路过人间",
+      "song_name": "路过人间",
+      "display_song_name": "路过人间",
+      "artist": "郁可唯",
+      "cut_link": "https://www.bilibili.com/video/BV1uPJ86DE95/?p=11",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-10-16",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "郁可唯",
+          "replay_id": "live:a64bea65-edb2-4044-a43c-b34e601d9d2e",
+          "replay_title": "【小松绿Viridis】来一起看！！！ 2026-10-16",
+          "replay_url": "",
+          "remark": "弹幕 04:04:50「路过人间」直接点名；两份合集 P11 同名同序。",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-compilation-chapter",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1uPJ86DE95/?p=11"
+        }
+      ]
+    },
+    "冻夏": {
+      "row_key": "冻夏",
+      "song_name": "冻夏",
+      "display_song_name": "冻夏",
+      "artist": "Soda纯白, 心华",
+      "cut_link": "https://www.bilibili.com/video/BV1uPJ86DE95/?p=12",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-10-16",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "Soda纯白, 心华",
+          "replay_id": "live:a64bea65-edb2-4044-a43c-b34e601d9d2e",
+          "replay_title": "【小松绿Viridis】来一起看！！！ 2026-10-16",
+          "replay_url": "",
+          "remark": "弹幕 04:14:01「来首冻夏」、04:14:49「冻夏是极好的」；两份合集 P12 同名同序。",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-compilation-chapter",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1uPJ86DE95/?p=12"
+        }
+      ]
+    },
+    "フォニイ": {
+      "row_key": "フォニイ",
+      "song_name": "フォニイ",
+      "display_song_name": "フォニイ",
+      "artist": "可不, ツミキ",
+      "cut_link": "https://www.bilibili.com/video/BV1uPJ86DE95/?p=15",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-10-16",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "可不, ツミキ",
+          "replay_id": "live:a64bea65-edb2-4044-a43c-b34e601d9d2e",
+          "replay_title": "【小松绿Viridis】来一起看！！！ 2026-10-16",
+          "replay_url": "",
+          "remark": "弹幕 04:35:31「phony」直接点名；两份合集 P15 同名同序。",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-compilation-chapter",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1uPJ86DE95/?p=15"
+        }
+      ]
+    },
+    "なでなで": {
+      "row_key": "なでなで",
+      "song_name": "なでなで",
+      "display_song_name": "なでなで",
+      "artist": "莉犬",
+      "cut_link": "https://www.bilibili.com/video/BV1uPJ86DE95/?p=16",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-10-16",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "莉犬",
+          "replay_id": "live:a64bea65-edb2-4044-a43c-b34e601d9d2e",
+          "replay_title": "【小松绿Viridis】来一起看！！！ 2026-10-16",
+          "replay_url": "",
+          "remark": "弹幕 04:45:07「好萌好萌的抚摸抚摸」正是曲名意译；两份合集 P16 同名同序。",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-compilation-chapter",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1uPJ86DE95/?p=16"
+        }
+      ]
+    },
+    "笑忘书": {
+      "row_key": "笑忘书",
+      "song_name": "笑忘书",
+      "display_song_name": "笑忘书",
+      "artist": "王菲",
+      "cut_link": "https://www.bilibili.com/video/BV14RnL6VEoV/",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-10-18",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切直补",
+          "artist": "王菲",
+          "replay_id": "live:d46e5e86-4ef8-4407-8b9b-83e793fae681",
+          "replay_title": "【小松绿Viridis】脑袋空空的。。。 2026-10-18",
+          "replay_url": "",
+          "remark": "黄鱼鼠条“王菲三连唱之《笑忘书》”。弹幕 02:01:46-03:31:55 共 277 条“王菲”，02:02:00-02:13:00 窗口内“vr王菲小松绿”152 条。三连唱内部次序按投稿先后（笑忘书 00:30、匆匆那年 00:45、如愿 01:00 UTC）推定。未定位回放时间点。",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-title + danmaku",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV14RnL6VEoV/"
+        }
+      ]
+    },
+    "如愿": {
+      "row_key": "如愿",
+      "song_name": "如愿",
+      "display_song_name": "如愿",
+      "artist": "王菲",
+      "cut_link": "https://www.bilibili.com/video/BV12jnL6uEHb/",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-10-18",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切直补",
+          "artist": "王菲",
+          "replay_id": "live:d46e5e86-4ef8-4407-8b9b-83e793fae681",
+          "replay_title": "【小松绿Viridis】脑袋空空的。。。 2026-10-18",
+          "replay_url": "",
+          "remark": "黄鱼鼠条“王菲三连唱之《如愿》”。弹幕 02:05:53-02:10:16 出现 15 条“如愿”。未定位回放时间点。",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-title + danmaku",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV12jnL6uEHb/"
+        }
+      ]
+    },
+    "回る空うさぎ": {
+      "row_key": "回る空うさぎ",
+      "song_name": "回る空うさぎ",
+      "display_song_name": "回る空うさぎ",
+      "artist": "Orangestar / 初音ミク",
+      "cut_link": "https://www.bilibili.com/video/BV1fSn56oEen/",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-10-18",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切直补",
+          "artist": "Orangestar / 初音ミク",
+          "replay_id": "live:d46e5e86-4ef8-4407-8b9b-83e793fae681",
+          "replay_title": "【小松绿Viridis】脑袋空空的。。。 2026-10-18",
+          "replay_url": "",
+          "remark": "黄鱼鼠条 单曲歌切，标题含中文译名“月兔回旋于空中”。弹幕 03:02:11-03:47:42 出现 10 条“月兔”（含“月兔回旋于空中”）。原唱证据为 Orangestar feat.初音ミク。未定位回放时间点。",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-title + danmaku",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1fSn56oEen/"
+        }
+      ]
+    },
+    "心拍数♯0822": {
+      "row_key": "心拍数♯0822",
+      "song_name": "心拍数♯0822",
+      "display_song_name": "心拍数♯0822",
+      "artist": "蝶々P / 初音ミク",
+      "cut_link": "https://www.bilibili.com/video/BV1XonG65EA6/",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-10-18",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切直补",
+          "artist": "蝶々P / 初音ミク",
+          "replay_id": "live:d46e5e86-4ef8-4407-8b9b-83e793fae681",
+          "replay_title": "【小松绿Viridis】脑袋空空的。。。 2026-10-18",
+          "replay_url": "",
+          "remark": "秋月遥zuki 单曲歌切，标题含“约定一直相爱下去吧 直到心跳停止为止”。弹幕 03:40:41-03:40:42 出现 2 条“心拍数”。原唱证据为 蝶々P feat.初音ミク。未定位回放时间点。",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-title + danmaku",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1XonG65EA6/"
+        }
+      ]
     }
   }
 },
   audio_index: {
   "roomKey": "xiaosonglu",
   "roomId": "1727071052",
-  "generatedAt": "2026-10-12T02:35:44.236Z",
+  "generatedAt": "2026-10-19T02:39:28.705Z",
   "source": "song-cut-audio-download",
   "description": "每首歌对应的翻唱切片音频（从 B 站歌切/回放下载），供网页在线播放。",
-  "count": 300,
+  "count": 314,
   "audios": {
     "勾指起誓": "assets/audio/song_88.m4a?v=1d344dfde754",
     "蝴蝶": "assets/audio/song_25.m4a?v=d8fb99252c26",
@@ -21560,7 +22825,21 @@ window.XSL_DATA = {
     "采茶纪": "assets/audio/song_298.m4a?v=864cf8ff968f",
     "XY&Z": "assets/audio/song_299.m4a?v=a47024e254b3",
     "秘宝": "assets/audio/song_300.m4a?v=4ec6ae2f804d",
-    "流年如歌": "assets/audio/song_301.m4a?v=7383d302f7db"
+    "流年如歌": "assets/audio/song_301.m4a?v=7383d302f7db",
+    "种族假象": "assets/audio/song_302.m4a?v=8089534f0aee",
+    "星愿": "assets/audio/song_303.m4a?v=08ea3864bd14",
+    "绮云泽": "assets/audio/song_304.m4a?v=7e14bec18d89",
+    "永不失联的爱": "assets/audio/song_305.m4a?v=ffd47cfb26ee",
+    "梦语": "assets/audio/song_306.m4a?v=00d4b1fa188c",
+    "不染": "assets/audio/song_307.m4a?v=c62f01e6fe22",
+    "路过人间": "assets/audio/song_308.m4a?v=b25cffe0616e",
+    "冻夏": "assets/audio/song_309.m4a?v=73280dcc415b",
+    "フォニイ": "assets/audio/song_310.m4a?v=1eacff282ea1",
+    "なでなで": "assets/audio/song_311.m4a?v=6fed59e137e5",
+    "笑忘书": "assets/audio/song_312.m4a?v=47f107015279",
+    "如愿": "assets/audio/song_313.m4a?v=c1b0f0230053",
+    "回る空うさぎ": "assets/audio/song_314.m4a?v=ca09a89c581f",
+    "心拍数♯0822": "assets/audio/song_315.m4a?v=16d85e39d379"
   },
   "verificationTargets": [
     "中华墨水娘",
@@ -21572,10 +22851,10 @@ window.XSL_DATA = {
   song_cut_info: {
   "roomKey": "xiaosonglu",
   "roomId": "1727071052",
-  "generatedAt": "2026-10-12T02:33:59.411Z",
+  "generatedAt": "2026-10-19T02:38:23.712Z",
   "source": "song-cut-title-index",
   "description": "每首歌对应的歌切切片标题（单曲歌切视频标题 / 合集分P标题），供前端歌切链接显示。",
-  "count": 302,
+  "count": 316,
   "cuts": {
     "（区）最终祈愿": {
       "title": "07_（区）最终祈愿 - 平行四界Quadimension, 星尘",
@@ -23086,6 +24365,76 @@ window.XSL_DATA = {
       "title": "20_流年如歌 - 泠鸢yousa",
       "kind": "collection",
       "url": "https://www.bilibili.com/video/BV1TApG6uEPX/?p=20"
+    },
+    "种族假象": {
+      "title": "01_种族假象(人声本家) - 漆柚, 绾绾Akari, 纸马, 柚子茶",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1uPJ86DE95/?p=1"
+    },
+    "星愿": {
+      "title": "02_星愿 - 茶理理",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1uPJ86DE95/?p=2"
+    },
+    "绮云泽": {
+      "title": "03_绮云泽 - 妖橙Yumo, 星尘",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1uPJ86DE95/?p=3"
+    },
+    "永不失联的爱": {
+      "title": "06_永不失联的爱 - 周兴哲",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1uPJ86DE95/?p=6"
+    },
+    "梦语": {
+      "title": "09_梦语 - 乐正绫",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1uPJ86DE95/?p=9"
+    },
+    "不染": {
+      "title": "10_不染 - 萨顶顶",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1uPJ86DE95/?p=10"
+    },
+    "路过人间": {
+      "title": "11_路过人间 - 郁可唯",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1uPJ86DE95/?p=11"
+    },
+    "冻夏": {
+      "title": "12_冻夏 - Soda纯白, 心华",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1uPJ86DE95/?p=12"
+    },
+    "フォニイ": {
+      "title": "15_フォニイ - 可不, ツミキ",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1uPJ86DE95/?p=15"
+    },
+    "なでなで": {
+      "title": "16_なでなで - 莉犬",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1uPJ86DE95/?p=16"
+    },
+    "笑忘书": {
+      "title": "【小松绿】王菲三连唱之《笑忘书》",
+      "kind": "single",
+      "url": "https://www.bilibili.com/video/BV14RnL6VEoV/"
+    },
+    "如愿": {
+      "title": "【小松绿】王菲三连唱之《如愿》",
+      "kind": "single",
+      "url": "https://www.bilibili.com/video/BV12jnL6uEHb/"
+    },
+    "回る空うさぎ": {
+      "title": "【小松绿】“月兔回旋于空中”《回る空うさぎ》",
+      "kind": "single",
+      "url": "https://www.bilibili.com/video/BV1fSn56oEen/"
+    },
+    "心拍数♯0822": {
+      "title": "【小松绿Viridis】《心拍数♯0822》丨“约定一直相爱下去吧 直到心跳停止为止”",
+      "kind": "single",
+      "url": "https://www.bilibili.com/video/BV1XonG65EA6/"
     }
   }
 }
