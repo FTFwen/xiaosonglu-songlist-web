@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "source": "https://viridis.love/data/xiaosonglu/",
-  "capturedAt": "2026-10-12T04:35:37Z",
+  "capturedAt": "2026-10-19T06:40:13Z",
   "dedupePolicy": {
     "transport": "Use ETag/Last-Modified conditional GET; HTTP 304 skips payload download.",
     "content": "Compare canonical JSON SHA-256 before writing; formatting and line-ending changes do not trigger rewrites.",
@@ -11,67 +11,67 @@
   "files": {
     "song_catalog.json": {
       "url": "https://viridis.love/data/xiaosonglu/song_catalog.json",
-      "etag": "\"1a37fb09179e27c68a18f8e8a581f884\"",
-      "lastModified": "",
-      "contentSha256": "c68e0c7dd3562ea2664bce05bdaf9e954f25e1868ea43f6f1b81d2318fb20417",
-      "remoteByteSha256": "2969c9eca0b04a272ed372e283a4e9ba0263cd1bff892eb23125b05305741389",
-      "bytes": 253050,
-      "versionTimestamp": "2026-10-12T02:33:59.411Z",
-      "recordCount": 302
+      "etag": "\"6ad58c24-4287b\"",
+      "lastModified": "Mon, 19 Oct 2026 03:19:00 GMT",
+      "contentSha256": "0d7c7d7330505f3f7a924ae1a21dd241377387709eed3b7424bd66b9024880f5",
+      "remoteByteSha256": "ee270117ad0c0fbd079b36093808d0c8aeacdd746ef87156d15a0e3cef38f26a",
+      "bytes": 272507,
+      "versionTimestamp": "2026-10-19T03:19:00.711Z",
+      "recordCount": 326
     },
     "history_index.json": {
       "url": "https://viridis.love/data/xiaosonglu/history_index.json",
-      "etag": "\"bd3eefcc574db8f70b885c152237e740\"",
-      "lastModified": "",
-      "contentSha256": "24fe1503116f1899592c90aebe44880966fdce75f82ce326867beae98c863251",
-      "remoteByteSha256": "965ce6ade17b943534dc842d3a98a88ce53614120c4a04e52603eb116513c900",
-      "bytes": 247292,
-      "versionTimestamp": "2026-10-12T02:33:59.411Z",
-      "recordCount": 358
+      "etag": "\"6ad58c24-4272f\"",
+      "lastModified": "Mon, 19 Oct 2026 03:19:00 GMT",
+      "contentSha256": "8bab88d4c432e8df94e354948499baefff43c6b8f8f9f88acc4a34c555471dad",
+      "remoteByteSha256": "e8e2ecff8a2e138a20f5eb093ee73d0288f29f6ac1b5f9f9b9a77995bd738080",
+      "bytes": 272175,
+      "versionTimestamp": "2026-10-19T03:19:00.711Z",
+      "recordCount": 398
     },
     "song_details.json": {
       "url": "https://viridis.love/data/xiaosonglu/song_details.json",
-      "etag": "\"5e1d920daae322d69ed56a5491762f37\"",
-      "lastModified": "",
-      "contentSha256": "d09641e15c71b4f4764d347825941e65ad0d902084b34ed874c944abec4e00fc",
-      "remoteByteSha256": "674b8ce5abfd27f03592e03c118f9e3063e696cdee42e3b7656369afb2436ccd",
-      "bytes": 396344,
-      "versionTimestamp": "2026-10-12T02:33:59.411Z"
+      "etag": "\"6ad58c24-6a15d\"",
+      "lastModified": "Mon, 19 Oct 2026 03:19:00 GMT",
+      "contentSha256": "2aae228e80028f341e71b6b1775fa90ece7df8ced76b27dee4d16f47b06a273f",
+      "remoteByteSha256": "e85c4d0350a64e5fe50b75654a735587f20e77fd5da7a99b04c57009902b6502",
+      "bytes": 434525,
+      "versionTimestamp": "2026-10-19T03:19:00.711Z"
     },
     "replay_song_segments.json": {
       "url": "https://viridis.love/data/xiaosonglu/replay_song_segments.json",
-      "etag": "\"040fa205be533c64cd0e769beaea8114\"",
-      "lastModified": "",
-      "contentSha256": "cb0ed29d9cfcc7ff62943ec00b18792b00e4d740c23d049780382b981013096e",
-      "remoteByteSha256": "e262d752f4193d9effcd1007972990987d091709f5490391cfa9f5528c8411fe",
-      "bytes": 530587,
-      "versionTimestamp": "2026-10-12T02:33:59.411Z",
-      "recordCount": 358
+      "etag": "\"6ad58c24-8fa80\"",
+      "lastModified": "Mon, 19 Oct 2026 03:19:00 GMT",
+      "contentSha256": "95dd3a59ce4f6b2a59279111d729a9437d461c67772c26a7b9e7690ef727bb59",
+      "remoteByteSha256": "132bac5b8104ef2698eacad383667cfc1610b7018cdef37a80a60f7061512b8a",
+      "bytes": 588416,
+      "versionTimestamp": "2026-10-19T03:19:00.711Z",
+      "recordCount": 398
     },
     "song_cut_index.json": {
       "url": "https://viridis.love/data/xiaosonglu/song_cut_index.json",
-      "etag": "\"9920c39d7a168bea22558a186fc3c3d2\"",
-      "lastModified": "",
-      "contentSha256": "f3559c0eb9f75f11c69b5c1fc6d4a3b835b89ea6b5fa0589e3efa20cb45e506b",
-      "remoteByteSha256": "18c190057c8cba493d1e0afc42b9a4b28b4d3a7950ff936fc09967500e94a0ca",
-      "bytes": 343154,
-      "versionTimestamp": "2026-10-12T02:33:59.411Z",
-      "recordCount": 392
+      "etag": "\"6ad58c24-5bce0\"",
+      "lastModified": "Mon, 19 Oct 2026 03:19:00 GMT",
+      "contentSha256": "73ea58eb14d15761fd0cf6cb8c8892ef847ed9312d88b4711a04f2c15eda1b49",
+      "remoteByteSha256": "4e4da25bae7038e9d683edc9d914112affbc401f974ffaf26cecd8f3d8286e3f",
+      "bytes": 376032,
+      "versionTimestamp": "2026-10-19T03:19:00.711Z",
+      "recordCount": 432
     },
     "song_cut_info.json": {
       "url": "https://viridis.love/data/xiaosonglu/song_cut_info.json",
-      "etag": "\"541c811dabce0a29cbff53919df2a0aa\"",
-      "lastModified": "",
-      "contentSha256": "025b2cb31ee45e27af69088c86beca2a5536ebdbce43cad7456d3a981e2ea512",
-      "remoteByteSha256": "c1af2e16b00f8fd230749d6dbab7ce04a02a2afd7f696c0d95dc6f994e3287a3",
-      "bytes": 53760,
-      "versionTimestamp": "2026-10-12T02:33:59.411Z",
-      "recordCount": 302
+      "etag": "\"6ad58c24-e200\"",
+      "lastModified": "Mon, 19 Oct 2026 03:19:00 GMT",
+      "contentSha256": "77b26f37b75cca24dcadd14b3b23f40cb56ea45a93fa671c0ed4531a3128d310",
+      "remoteByteSha256": "f0c9529de607869cdb41d73216ca066dd2e9cba1942621aec43579a5caca05a3",
+      "bytes": 57856,
+      "versionTimestamp": "2026-10-19T03:19:00.711Z",
+      "recordCount": 326
     },
     "song_metadata_overrides.json": {
       "url": "https://viridis.love/data/xiaosonglu/song_metadata_overrides.json",
-      "etag": "\"cd1162370cfeda322cc231b4400fe426\"",
-      "lastModified": "",
+      "etag": "\"6aae0fe8-32d9\"",
+      "lastModified": "Sat, 19 Sep 2026 04:30:32 GMT",
       "contentSha256": "ac5a5ba82e3c94203f8494a16e3f935c9f91e52f71570665ffe7c42fbecb0540",
       "remoteByteSha256": "a96958bacd843c2692db8bd54c33912310ac99fcda92d1f692a886afc92bd899",
       "bytes": 13017,
@@ -79,13 +79,13 @@
     },
     "audio_index.json": {
       "url": "https://viridis.love/data/xiaosonglu/audio_index.json",
-      "etag": "\"273359de72ca39eb9c98abd0e95ca37f\"",
-      "lastModified": "",
-      "contentSha256": "96c1c8b420e913615ddeeacca0b331ea5d092dea631f8936bf75de028565ec6f",
-      "remoteByteSha256": "c619cd05949748fdd50b175654be92d0c0bdb580267f77abac6873d838d66a31",
-      "bytes": 20111,
-      "versionTimestamp": "2026-10-12T02:35:44.236Z",
-      "recordCount": 300
+      "etag": "\"6ad58c94-545e\"",
+      "lastModified": "Mon, 19 Oct 2026 03:20:52 GMT",
+      "contentSha256": "36e4ba85c45ebb8d0ca7bbdce17b83cb84c4533939662f43eeeaab9eb6f5fc9a",
+      "remoteByteSha256": "d1dcc2cd4aa0ea4b456f79c54fa191c0966f61f272e7f7b9ab4cce303a5a1d96",
+      "bytes": 21598,
+      "versionTimestamp": "2026-10-19T03:20:52.692Z",
+      "recordCount": 324
     }
   }
 }
