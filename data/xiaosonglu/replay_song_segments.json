@@ -3,7 +3,7 @@
   "roomId": "1727071052",
   "sourceType": "bilibili-live-replay-song-segments",
   "description": "从小松绿直播回放中识别出的唱歌片段原始记录。由每日自动化或人工补录维护，随后通过 scripts/build_xiaosonglu_song_data.js 聚合成插件可直接读取的歌单与历史数据。歌名允许先根据歌词片段联网检索后再补全，回放日期允许先留空并由脚本从回放标题中解析。",
-  "updatedAt": "2026-10-19T03:19:00.711Z",
+  "updatedAt": "2026-10-21T03:10:46.871Z",
   "segments": [
     {
       "replay_id": "BV1Xiu86aEwV",
@@ -14425,6 +14425,45 @@
           "title": "【小松绿Viridis】我去！宝宝原来你唱歌这么好听，我们来重新认识一下吧！ 2026.10.18歌切合集",
           "url": "https://www.bilibili.com/video/BV1UPnV6zEs4/",
           "snippet": "UP 桐人今天睡大觉，章节「23_扉をあけて - ANZA」"
+        }
+      ]
+    },
+    {
+      "replay_id": "live:3b053c7f-51dc-4c1a-8cac-33e721f6221b",
+      "replay_title": "【小松绿Viridis】竟然是看视频！ 2026-10-19",
+      "replay_url": "",
+      "replay_date": "2026-10-19",
+      "replay_date_source": "live-api-date",
+      "segment_index": 1,
+      "start_time": "",
+      "end_time": "",
+      "lyric_excerpt": "",
+      "song_search_query": "世末歌者",
+      "song_resolution_method": "song-cut-single",
+      "song_name": "世末歌者",
+      "display_song_name": "世末歌者",
+      "artist": "乐正绫 / COP",
+      "artist_search": "乐正绫 世末歌者",
+      "feat_artist": "",
+      "language": "中文",
+      "tone": "",
+      "status_labels": [
+        "歌回",
+        "歌切直补"
+      ],
+      "display_version": "",
+      "type": "中V",
+      "remark": "用户确认「这个世末歌者是正确的，就是这首」。歌切 BV16mnN6MEUS 标题「「曲终之时 你是否便会回应我的心音」《世末歌者》【小松绿Viridis 歌切】」，up dioneni，5:24，发布 2026-10-20T22:00Z。简介标注素材来源 2026.10.18，按用户确认归入 2026-10-19。弹幕演唱窗口 03:02:45–03:08:10。",
+      "identification": "",
+      "cut_link": "https://www.bilibili.com/video/BV16mnN6MEUS/",
+      "confidence": 0.9,
+      "row_key": "世末歌者",
+      "search_name": "",
+      "resolution_candidates": [
+        {
+          "title": "「曲终之时 你是否便会回应我的心音」《世末歌者》【小松绿Viridis 歌切】",
+          "url": "https://www.bilibili.com/video/BV16mnN6MEUS/",
+          "snippet": "up dioneni，时长 5:24，标题直接给出歌名"
         }
       ]
     }

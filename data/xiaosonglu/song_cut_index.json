@@ -3,7 +3,7 @@
   "roomId": "1727071052",
   "sourceType": "bilibili-song-cut-index",
   "description": "从 Bilibili 直接搜索“小松绿歌切”等关键词收集的增量歌切台账。优先收录带明确日期标记的歌切；对于合集歌切，可使用视频选集/分P标题里的歌曲名；对于标题花哨但简介写明日期的单曲歌切，可用简介日期入表，但表中 song_name 只保留真实歌曲名。用同一天同一首歌做重复判定。",
-  "updatedAt": "2026-10-19T03:19:00.711Z",
+  "updatedAt": "2026-10-21T03:10:46.871Z",
   "strategy": {
     "acceptedDateMarkers": [
       "8.15",
@@ -9096,6 +9096,27 @@
       "duplicate_status": "primary",
       "duplicate_of": "",
       "collected_at": "2026-10-19T03:19:00.711Z",
+      "notes": ""
+    },
+    {
+      "clip_date": "2026-10-19",
+      "date_source": "user-confirmed-live-date",
+      "date_text": "2026-10-19",
+      "song_name": "世末歌者",
+      "song_name_source": "cut-title",
+      "artist": "乐正绫 / COP",
+      "clip_kind": "single",
+      "chapter_title": "",
+      "clip_title": "「曲终之时 你是否便会回应我的心音」《世末歌者》【小松绿Viridis 歌切】",
+      "clip_url": "https://www.bilibili.com/video/BV16mnN6MEUS/",
+      "clip_bvid": "BV16mnN6MEUS",
+      "uploader": "dioneni",
+      "duration": "5:24",
+      "source_query": "",
+      "duplicate_key": "2026-10-19::世末歌者",
+      "duplicate_status": "primary",
+      "duplicate_of": "",
+      "collected_at": "2026-10-21T03:10:46.871Z",
       "notes": ""
     }
   ]

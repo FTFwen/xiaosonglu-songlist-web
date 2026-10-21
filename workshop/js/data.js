@@ -1,11 +1,11 @@
 // 本文件由 scripts/build_xiaosonglu_song_data.mjs 从 data/xiaosonglu/ 生成，供 file:// 离线回退使用。
-// 生成时间：2026-10-19 11:20:52
+// 生成时间：2026-10-21 11:10:46
 // 数据源：data/xiaosonglu/（song_catalog / history_index / song_details / audio_index / song_cut_info）
 window.XSL_DATA = {
   song_catalog: {
   "roomKey": "xiaosonglu",
   "roomId": "1727071052",
-  "generatedAt": "2026-10-19T03:19:00.711Z",
+  "generatedAt": "2026-10-21T03:10:46.871Z",
   "source": "local-replay-ingestion",
   "songs": [
     {
@@ -196,6 +196,27 @@ window.XSL_DATA = {
       "status_labels": "歌回、歌切合集复核",
       "last_sing_at": "2026-10-18",
       "row_key": "世末积雨云"
+    },
+    {
+      "song_id": 63,
+      "song_name": "世末歌者",
+      "show_as_song_name": "",
+      "display_song_name": "世末歌者",
+      "artist": "乐正绫 / COP",
+      "artist_search": "乐正绫 COP",
+      "feat_artist": "",
+      "remark": "来自 2026-08-18 歌切合集《【663645TV】神回！我已启动！全力绿来唱完了！8月18日歌切合集【小松绿Viridis】》的分P《16-世末歌者》。按当前 song-cut-first 策略，将合集章节名直接并入正式曲库；当前记录的是合集内顺序时间，不是原始直播回放时间。",
+      "tone": "",
+      "language": "中文",
+      "type": "中V、流行",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1Pa8V69ECP/",
+      "sing_count": 3,
+      "status_labels": "歌切合集补录、待后续回放时间定位、歌回、歌切直补",
+      "last_sing_at": "2026-10-19",
+      "row_key": "世末歌者"
     },
     {
       "song_id": 35,
@@ -1162,27 +1183,6 @@ window.XSL_DATA = {
       "status_labels": "歌切直补、待原始回放定位、歌回",
       "last_sing_at": "2026-10-18",
       "row_key": "暖暖"
-    },
-    {
-      "song_id": 63,
-      "song_name": "世末歌者",
-      "show_as_song_name": "",
-      "display_song_name": "世末歌者",
-      "artist": "乐正绫 / COP",
-      "artist_search": "乐正绫 COP",
-      "feat_artist": "",
-      "remark": "来自 2026-08-18 歌切合集《【663645TV】神回！我已启动！全力绿来唱完了！8月18日歌切合集【小松绿Viridis】》的分P《16-世末歌者》。按当前 song-cut-first 策略，将合集章节名直接并入正式曲库；当前记录的是合集内顺序时间，不是原始直播回放时间。",
-      "tone": "",
-      "language": "中文",
-      "type": "中V、流行",
-      "identification": "",
-      "display_version": "",
-      "search_name": "",
-      "cut_link": "https://www.bilibili.com/video/BV1Pa8V69ECP/",
-      "sing_count": 2,
-      "status_labels": "歌切合集补录、待后续回放时间定位、歌回、歌切直补",
-      "last_sing_at": "2026-10-18",
-      "row_key": "世末歌者"
     },
     {
       "song_id": 115,
@@ -6859,12 +6859,12 @@ window.XSL_DATA = {
   history_index: {
   "roomKey": "xiaosonglu",
   "roomId": "1727071052",
-  "generatedAt": "2026-10-19T03:19:00.711Z",
+  "generatedAt": "2026-10-21T03:10:46.871Z",
   "source": "local-replay-ingestion",
   "latest": {
     "year": "2026",
     "month": "10",
-    "day": "18"
+    "day": "19"
   },
   "dateTree": {
     "2026": {
@@ -6872,6 +6872,7 @@ window.XSL_DATA = {
         "10": 20,
         "16": 17,
         "18": 23,
+        "19": 1,
         "08": 5,
         "06": 17,
         "02": 33
@@ -14082,13 +14083,33 @@ window.XSL_DATA = {
         "song_resolution_method": "song-cut-compilation-chapter",
         "cut_link": "https://www.bilibili.com/video/BV1UPnV6zEs4/?p=22"
       }
+    ],
+    "2026-10-19": [
+      {
+        "song_name": "世末歌者",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切直补"
+        ],
+        "artist": "乐正绫 / COP",
+        "replay_id": "live:3b053c7f-51dc-4c1a-8cac-33e721f6221b",
+        "replay_title": "【小松绿Viridis】竟然是看视频！ 2026-10-19",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "世末歌者",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-single",
+        "cut_link": "https://www.bilibili.com/video/BV16mnN6MEUS/"
+      }
     ]
   }
 },
   song_details: {
   "roomKey": "xiaosonglu",
   "roomId": "1727071052",
-  "generatedAt": "2026-10-19T03:19:00.711Z",
+  "generatedAt": "2026-10-21T03:10:46.871Z",
   "source": "local-replay-ingestion",
   "bySongKey": {
     "少女レイ": {
@@ -16157,8 +16178,23 @@ window.XSL_DATA = {
       "display_song_name": "世末歌者",
       "artist": "乐正绫 / COP",
       "cut_link": "https://www.bilibili.com/video/BV1Pa8V69ECP/",
-      "total_count": 2,
+      "total_count": 3,
       "entries": [
+        {
+          "date": "2026-10-19",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切直补",
+          "artist": "乐正绫 / COP",
+          "replay_id": "live:3b053c7f-51dc-4c1a-8cac-33e721f6221b",
+          "replay_title": "【小松绿Viridis】竟然是看视频！ 2026-10-19",
+          "replay_url": "",
+          "remark": "用户确认「这个世末歌者是正确的，就是这首」。歌切 BV16mnN6MEUS 标题「「曲终之时 你是否便会回应我的心音」《世末歌者》【小松绿Viridis 歌切】」，up dioneni，5:24，发布 2026-10-20T22:00Z。简介标注素材来源 2026.10.18，按用户确认归入 2026-10-19。弹幕演唱窗口 03:02:45–03:08:10。",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-single",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV16mnN6MEUS/"
+        },
         {
           "date": "2026-10-18",
           "time": "",
@@ -23666,7 +23702,7 @@ window.XSL_DATA = {
   song_cut_info: {
   "roomKey": "xiaosonglu",
   "roomId": "1727071052",
-  "generatedAt": "2026-10-19T03:19:00.711Z",
+  "generatedAt": "2026-10-21T03:10:46.871Z",
   "source": "song-cut-title-index",
   "description": "每首歌对应的歌切切片标题（单曲歌切视频标题 / 合集分P标题），供前端歌切链接显示。",
   "count": 326,

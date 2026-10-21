@@ -1,12 +1,12 @@
 {
   "roomKey": "xiaosonglu",
   "roomId": "1727071052",
-  "generatedAt": "2026-10-19T03:19:00.711Z",
+  "generatedAt": "2026-10-21T03:10:46.871Z",
   "source": "local-replay-ingestion",
   "latest": {
     "year": "2026",
     "month": "10",
-    "day": "18"
+    "day": "19"
   },
   "dateTree": {
     "2026": {
@@ -14,6 +14,7 @@
         "10": 20,
         "16": 17,
         "18": 23,
+        "19": 1,
         "08": 5,
         "06": 17,
         "02": 33
@@ -7223,6 +7224,26 @@
         "lyric_excerpt": "",
         "song_resolution_method": "song-cut-compilation-chapter",
         "cut_link": "https://www.bilibili.com/video/BV1UPnV6zEs4/?p=22"
+      }
+    ],
+    "2026-10-19": [
+      {
+        "song_name": "世末歌者",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切直补"
+        ],
+        "artist": "乐正绫 / COP",
+        "replay_id": "live:3b053c7f-51dc-4c1a-8cac-33e721f6221b",
+        "replay_title": "【小松绿Viridis】竟然是看视频！ 2026-10-19",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "世末歌者",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-single",
+        "cut_link": "https://www.bilibili.com/video/BV16mnN6MEUS/"
       }
     ]
   }

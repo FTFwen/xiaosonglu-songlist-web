@@ -1,7 +1,7 @@
 {
   "roomKey": "xiaosonglu",
   "roomId": "1727071052",
-  "generatedAt": "2026-10-19T03:19:00.711Z",
+  "generatedAt": "2026-10-21T03:10:46.871Z",
   "source": "local-replay-ingestion",
   "bySongKey": {
     "少女レイ": {
@@ -2070,8 +2070,23 @@
       "display_song_name": "世末歌者",
       "artist": "乐正绫 / COP",
       "cut_link": "https://www.bilibili.com/video/BV1Pa8V69ECP/",
-      "total_count": 2,
+      "total_count": 3,
       "entries": [
+        {
+          "date": "2026-10-19",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切直补",
+          "artist": "乐正绫 / COP",
+          "replay_id": "live:3b053c7f-51dc-4c1a-8cac-33e721f6221b",
+          "replay_title": "【小松绿Viridis】竟然是看视频！ 2026-10-19",
+          "replay_url": "",
+          "remark": "用户确认「这个世末歌者是正确的，就是这首」。歌切 BV16mnN6MEUS 标题「「曲终之时 你是否便会回应我的心音」《世末歌者》【小松绿Viridis 歌切】」，up dioneni，5:24，发布 2026-10-20T22:00Z。简介标注素材来源 2026.10.18，按用户确认归入 2026-10-19。弹幕演唱窗口 03:02:45–03:08:10。",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-single",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV16mnN6MEUS/"
+        },
         {
           "date": "2026-10-18",
           "time": "",
