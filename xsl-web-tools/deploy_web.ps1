@@ -59,6 +59,9 @@ if ($LASTEXITCODE -ne 0) { throw 'Workshop data mirror check failed; synchronize
 
 # Populated after a successful upload when the ECS mirror is refreshed.
 $ecsMirror = $null
+# True once wrangler has published a snapshot, even if the post-deploy gate then
+# fails (that gate re-downloads from Cloudflare and can trip on a truncated body).
+$uploadPublished = $false
 
 # Serialize preparation and remote publication. The stage directory is intentionally reused
 # across retries, so two invocations must never delete/rebuild it concurrently.
@@ -709,6 +712,7 @@ if ($Deploy) {
                 $exitCode = if ($processExitCode -ne 0 -or $reportedFailure) { 1 } else { 0 }
                 $retryable = $exitCode -ne 0 -and (Test-RetryableWranglerFailure -Lines $attemptOutput)
                 if ($exitCode -eq 0) {
+                    $uploadPublished = $true
                     $pagesMatches = [regex]::Matches(($attemptOutput -join "`n"), 'https://[a-z0-9-]+\.xsl-songlist\.pages\.dev')
                     $additionalPagesUrl = if ($pagesMatches.Count -gt 0) { $pagesMatches[$pagesMatches.Count - 1].Value } else { $null }
                     $onlineVerification = Wait-PublicDeployment -PrimaryBaseUrl $VerifyBaseUrl -AdditionalBaseUrl $additionalPagesUrl -ExpectedAudio $expectedAudioMap -ExpectedSongCount $expectedSongCount -ExpectedStaticHashes $expectedStaticHashes -ExpectedVersionedAudio $expectedVersionedAudio -Attempts $VerifyAttempts -DelaySeconds $VerifyDelaySeconds
@@ -794,7 +798,15 @@ $operationFailed = $status -in @('deployment-failed', 'skipped-missing-credentia
 # can drift independently of Pages, so reconcile it whenever a deployment ends in a
 # state where Pages is known good -- including "verified-no-content-change", which is
 # exactly what a manual mirror repair looks like.
-if (-not $SkipEcsMirror -and $status -in @('deployed', 'verified-no-content-change')) {
+# A failed gate does not always mean a failed publish: the gate re-downloads every
+# payload from Cloudflare, and those reads occasionally truncate. When wrangler did
+# publish the snapshot, still reconcile the mirror -- otherwise visitors keep the old
+# data while Pages already holds the new one.
+$mirrorWorthwhile = $status -in @('deployed', 'verified-no-content-change') -or ($uploadPublished -and $status -eq 'deployment-failed')
+if (-not $SkipEcsMirror -and $mirrorWorthwhile) {
+    if ($status -eq 'deployment-failed') {
+        $deploymentOutput += 'NOTE: the post-deploy gate failed, but the upload itself published a snapshot; refreshing the ECS mirror anyway.'
+    }
     $deploymentOutput += '--- ECS mirror refresh ---'
     $mirrorScript = Join-Path $PSScriptRoot 'sync_ecs_mirror.ps1'
     if (-not (Test-Path -LiteralPath $mirrorScript -PathType Leaf)) {
