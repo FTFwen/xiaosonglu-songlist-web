@@ -107,7 +107,7 @@ test('cross-page favorite snapshots use the shared songlist storage and same-pag
 });
 
 test('both destinations use the bumped assets and mobile layout matches the songlist player', () => {
-  assert.match(mainHtml, /js\/app\.js\?v=110/);
+  assert.match(mainHtml, /js\/app\.js\?v=111/);
   assert.match(buttonsHtml, /cross-page-player\.js\?v=8/);
   assert.match(gameHtml, /cross-page-player\.js\?v=8/);
   assert.match(crossPageSource, /const AUDIO_ASSET_VERSION = '4';/);

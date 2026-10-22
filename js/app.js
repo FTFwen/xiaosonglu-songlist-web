@@ -41,7 +41,11 @@ const DERIVATIVE_TRACKS = [
   ['梦境与魔女', '1.1', 'mengjing-yu-monv.mp3', 'd0a5868fbab7'],
   ['神曼波', '1.1', 'shenmanbo.mp3', '37a67e350cbf'],
   ['心墙', '', 'xinqiang.mp3', '4d9823892608'],
-  ['天狼星的心脏', '', 'tianlangxing-de-xinzang.mp3', 'b986e4c72837']
+  ['天狼星的心脏', '', 'tianlangxing-de-xinzang.mp3', 'b986e4c72837'],
+  // Diffsinger 二创：BV1ohpj6vEVo《茉莉雨》（原曲 林俊杰）、BV1a7pm61EVt《マリーの架空世界》（原曲 じん）
+  // 两首都是 UP 主自制翻调，简介未标注声库版本，故 modelVersion 留空
+  ['茉莉雨', '', 'moli-yu.mp3', '905eb3aabe7b'],
+  ['マリーの架空世界', '', 'mary-no-kakuu-sekai.mp3', '7f8f5c4ec906']
 ].map(([songName, modelVersion, fileName, contentHash], index) => ({
   song_id: -1101 - index, // 负数 id 与真实歌曲区分，保证卡片播放键能匹配到
   row_key: `小松绿-${songName}`,
