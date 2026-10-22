@@ -59,6 +59,35 @@ if ($LASTEXITCODE -ne 0) { throw 'Workshop data mirror check failed; synchronize
 
 # Populated after a successful upload when the ECS mirror is refreshed.
 $ecsMirror = $null
+
+# viridis.love is served by nginx on the ECS from a local mirror, so the bytes the public
+# gate sees only match the stage AFTER that mirror is refreshed. The refresh therefore has
+# to run before the gate; otherwise the gate compares the new stage against the previous
+# mirror generation and fails no matter how healthy the upload was.
+function Invoke-EcsMirrorRefresh {
+    param(
+        [Parameter(Mandatory = $true)][string]$Root,
+        [Parameter(Mandatory = $true)][string]$PowershellPath
+    )
+    $lines = New-Object System.Collections.Generic.List[string]
+    $mirrorScript = Join-Path $PSScriptRoot 'sync_ecs_mirror.ps1'
+    if (-not (Test-Path -LiteralPath $mirrorScript -PathType Leaf)) {
+        $lines.Add('WARNING: ECS mirror helper missing; viridis.love may serve stale bytes.')
+        return [ordered]@{ ok = $false; exitCode = $null; error = 'sync_ecs_mirror.ps1 is missing'; output = $lines.ToArray() }
+    }
+    try {
+        $mirrorOutput = @(& $PowershellPath '-NoProfile' '-NonInteractive' '-ExecutionPolicy' 'Bypass' '-File' $mirrorScript '-Root' $Root 2>&1 | ForEach-Object { $_.ToString() })
+        $mirrorExit = $LASTEXITCODE
+        foreach ($line in $mirrorOutput) { $lines.Add($line) }
+        if ($mirrorExit -ne 0) {
+            $lines.Add('WARNING: ECS mirror refresh failed; viridis.love may serve stale bytes until it succeeds.')
+        }
+        return [ordered]@{ ok = $mirrorExit -eq 0; exitCode = $mirrorExit; output = $lines.ToArray() }
+    } catch {
+        $lines.Add("WARNING: ECS mirror refresh threw: $($_.Exception.Message)")
+        return [ordered]@{ ok = $false; exitCode = $null; error = $_.Exception.Message; output = $lines.ToArray() }
+    }
+}
 # True once wrangler has published a snapshot, even if the post-deploy gate then
 # fails (that gate re-downloads from Cloudflare and can trip on a truncated body).
 $uploadPublished = $false
@@ -715,6 +744,14 @@ if ($Deploy) {
                     $uploadPublished = $true
                     $pagesMatches = [regex]::Matches(($attemptOutput -join "`n"), 'https://[a-z0-9-]+\.xsl-songlist\.pages\.dev')
                     $additionalPagesUrl = if ($pagesMatches.Count -gt 0) { $pagesMatches[$pagesMatches.Count - 1].Value } else { $null }
+                    # Publish to the ECS mirror first: the custom domain is served from it,
+                    # so verifying before the refresh would compare the stage against the
+                    # previous mirror generation.
+                    if (-not $SkipEcsMirror -and $ecsMirror -eq $null) {
+                        $deploymentOutput += '--- ECS mirror refresh (before online verification) ---'
+                        $ecsMirror = Invoke-EcsMirrorRefresh -Root $rootPath -PowershellPath $powershellCommand
+                        $deploymentOutput += $ecsMirror.output
+                    }
                     $onlineVerification = Wait-PublicDeployment -PrimaryBaseUrl $VerifyBaseUrl -AdditionalBaseUrl $additionalPagesUrl -ExpectedAudio $expectedAudioMap -ExpectedSongCount $expectedSongCount -ExpectedStaticHashes $expectedStaticHashes -ExpectedVersionedAudio $expectedVersionedAudio -Attempts $VerifyAttempts -DelaySeconds $VerifyDelaySeconds
                     if (-not $onlineVerification.ok) {
                         $attemptOutput += 'PUBLIC DEPLOYMENT VERIFICATION FAILED: the published snapshot did not match local data.'
@@ -803,7 +840,7 @@ $operationFailed = $status -in @('deployment-failed', 'skipped-missing-credentia
 # publish the snapshot, still reconcile the mirror -- otherwise visitors keep the old
 # data while Pages already holds the new one.
 $mirrorWorthwhile = $status -in @('deployed', 'verified-no-content-change') -or ($uploadPublished -and $status -eq 'deployment-failed')
-if (-not $SkipEcsMirror -and $mirrorWorthwhile) {
+if (-not $SkipEcsMirror -and $mirrorWorthwhile -and $ecsMirror -eq $null) {
     if ($status -eq 'deployment-failed') {
         $deploymentOutput += 'NOTE: the post-deploy gate failed, but the upload itself published a snapshot; refreshing the ECS mirror anyway.'
     }
