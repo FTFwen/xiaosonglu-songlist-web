@@ -1,11 +1,11 @@
 // 本文件由 scripts/build_xiaosonglu_song_data.mjs 从 data/xiaosonglu/ 生成，供 file:// 离线回退使用。
-// 生成时间：2026-10-21 11:10:46
+// 生成时间：2026-10-22 11:56:24
 // 数据源：data/xiaosonglu/（song_catalog / history_index / song_details / audio_index / song_cut_info）
 window.XSL_DATA = {
   song_catalog: {
   "roomKey": "xiaosonglu",
   "roomId": "1727071052",
-  "generatedAt": "2026-10-21T03:10:46.871Z",
+  "generatedAt": "2026-10-22T03:55:55.214Z",
   "source": "local-replay-ingestion",
   "songs": [
     {
@@ -1288,6 +1288,27 @@ window.XSL_DATA = {
       "status_labels": "歌回、歌切合集复核",
       "last_sing_at": "2026-10-18",
       "row_key": "为谁而为"
+    },
+    {
+      "song_id": 87,
+      "song_name": "flos",
+      "show_as_song_name": "",
+      "display_song_name": "flos",
+      "artist": "R Sound Design（初音ミク）",
+      "artist_search": "R Sound Design flos 初音ミク",
+      "feat_artist": "",
+      "remark": "来自 2026-08-20 偶像歌回。经弹幕歌词交叉验证 + 歌切视频《【小松绿Viridis/歌回】20260820-偶像歌回？欸》分P第18章节确认曲目；时间按歌切分P累计估算，待回放复核。歌手信息来自网易云音乐/萌娘百科检索。",
+      "tone": "",
+      "language": "日文",
+      "type": "Vocaloid",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1WS8c6XE9w?p=18",
+      "sing_count": 2,
+      "status_labels": "歌回、自动识别待人工复核、歌切合集复核",
+      "last_sing_at": "2026-10-21",
+      "row_key": "flos"
     },
     {
       "song_id": 52,
@@ -2947,27 +2968,6 @@ window.XSL_DATA = {
       "status_labels": "歌回、自动识别待人工复核",
       "last_sing_at": "2026-08-20",
       "row_key": "CHASE!"
-    },
-    {
-      "song_id": 87,
-      "song_name": "flos",
-      "show_as_song_name": "",
-      "display_song_name": "flos",
-      "artist": "R Sound Design（初音ミク）",
-      "artist_search": "R Sound Design flos 初音ミク",
-      "feat_artist": "",
-      "remark": "来自 2026-08-20 偶像歌回。经弹幕歌词交叉验证 + 歌切视频《【小松绿Viridis/歌回】20260820-偶像歌回？欸》分P第18章节确认曲目；时间按歌切分P累计估算，待回放复核。歌手信息来自网易云音乐/萌娘百科检索。",
-      "tone": "",
-      "language": "日文",
-      "type": "Vocaloid",
-      "identification": "",
-      "display_version": "",
-      "search_name": "",
-      "cut_link": "https://www.bilibili.com/video/BV1WS8c6XE9w?p=18",
-      "sing_count": 1,
-      "status_labels": "歌回、自动识别待人工复核",
-      "last_sing_at": "2026-08-20",
-      "row_key": "flos"
     },
     {
       "song_id": 85,
@@ -5815,7 +5815,7 @@ window.XSL_DATA = {
       "remark": "心灵火 P16 标注「蜗牛与黄鹂鸟（半首）」97s（桐人 P16 为 105s）。",
       "tone": "",
       "language": "中文",
-      "type": "民谣",
+      "type": "民谣、儿歌",
       "identification": "",
       "display_version": "半首",
       "search_name": "",
@@ -5857,7 +5857,7 @@ window.XSL_DATA = {
       "remark": "心灵火 P17 标注「小螺号（半首）」76s（桐人 P17 为 87s）。",
       "tone": "",
       "language": "中文",
-      "type": "民谣",
+      "type": "民谣、儿歌",
       "identification": "",
       "display_version": "半首",
       "search_name": "",
@@ -5878,7 +5878,7 @@ window.XSL_DATA = {
       "remark": "心灵火 P15 标注「小兔子乖乖(半首)」87s（桐人 P15 为 110s 完整版）。",
       "tone": "",
       "language": "中文",
-      "type": "民谣",
+      "type": "民谣、儿歌",
       "identification": "",
       "display_version": "半首",
       "search_name": "",
@@ -6853,18 +6853,165 @@ window.XSL_DATA = {
       "status_labels": "歌回、歌切合集复核",
       "last_sing_at": "2026-10-18",
       "row_key": "RTRT"
+    },
+    {
+      "song_id": 327,
+      "song_name": "茶汤",
+      "show_as_song_name": "",
+      "display_song_name": "茶汤",
+      "artist": "郁可唯",
+      "artist_search": "郁可唯 茶汤",
+      "feat_artist": "",
+      "remark": "桐人今天睡大觉「全自动歌切项目」2026.10.21 歌切合集第 1 分P（章节「01_茶汤 - 郁可唯」）。弹幕00:32–00:41 开嗓簇位置与之吻合。本场括号歌词弹幕为 0，仅以合集章节 + 简介日期确认；未定位回放时间点。",
+      "tone": "",
+      "language": "中文",
+      "type": "流行",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1d6n66fEgy/?p=1",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-21",
+      "row_key": "茶汤"
+    },
+    {
+      "song_id": 332,
+      "song_name": "蓝精灵",
+      "show_as_song_name": "",
+      "display_song_name": "蓝精灵",
+      "artist": "儿歌多多",
+      "artist_search": "儿歌多多 蓝精灵",
+      "feat_artist": "",
+      "remark": "桐人今天睡大觉「全自动歌切项目」2026.10.21 歌切合集第 7 分P（章节「07_蓝精灵 - 儿歌多多」）。弹幕02:18–02:22 儿歌回簇位置与之吻合。本场括号歌词弹幕为 0，仅以合集章节 + 简介日期确认；未定位回放时间点。",
+      "tone": "",
+      "language": "中文",
+      "type": "翻唱、流行、儿歌",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1d6n66fEgy/?p=7",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-21",
+      "row_key": "蓝精灵"
+    },
+    {
+      "song_id": 330,
+      "song_name": "束花线",
+      "show_as_song_name": "",
+      "display_song_name": "束花线",
+      "artist": "COP、洛天依Official",
+      "artist_search": "COP、洛天依Official 束花线",
+      "feat_artist": "",
+      "remark": "桐人今天睡大觉「全自动歌切项目」2026.10.21 歌切合集第 5 分P（章节「05_束花线 - COP, 洛天依」）。弹幕未直接出现歌名。本场括号歌词弹幕为 0，仅以合集章节 + 简介日期确认；未定位回放时间点。",
+      "tone": "",
+      "language": "中文",
+      "type": "中V、流行",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1d6n66fEgy/?p=5",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-21",
+      "row_key": "束花线"
+    },
+    {
+      "song_id": 331,
+      "song_name": "数鸭子",
+      "show_as_song_name": "",
+      "display_song_name": "数鸭子",
+      "artist": "儿歌多多",
+      "artist_search": "儿歌多多 数鸭子",
+      "feat_artist": "",
+      "remark": "桐人今天睡大觉「全自动歌切项目」2026.10.21 歌切合集第 6 分P（章节「06_数鸭子 - 儿歌多多」）。弹幕02:18–02:22 儿歌回簇位置与之吻合。本场括号歌词弹幕为 0，仅以合集章节 + 简介日期确认；未定位回放时间点。",
+      "tone": "",
+      "language": "中文",
+      "type": "翻唱、流行、儿歌",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1d6n66fEgy/?p=6",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-21",
+      "row_key": "数鸭子"
+    },
+    {
+      "song_id": 333,
+      "song_name": "我是一个粉刷匠",
+      "show_as_song_name": "",
+      "display_song_name": "我是一个粉刷匠",
+      "artist": "儿歌多多",
+      "artist_search": "儿歌多多 我是一个粉刷匠",
+      "feat_artist": "",
+      "remark": "桐人今天睡大觉「全自动歌切项目」2026.10.21 歌切合集第 8 分P（章节「08_我是一个粉刷匠 - 儿歌多多」）。弹幕02:18–02:22 儿歌回簇位置与之吻合。本场括号歌词弹幕为 0，仅以合集章节 + 简介日期确认；未定位回放时间点。",
+      "tone": "",
+      "language": "中文",
+      "type": "翻唱、流行、儿歌",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1d6n66fEgy/?p=8",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-21",
+      "row_key": "我是一个粉刷匠"
+    },
+    {
+      "song_id": 328,
+      "song_name": "知否知否",
+      "show_as_song_name": "",
+      "display_song_name": "知否知否",
+      "artist": "胡夏、郁可唯",
+      "artist_search": "胡夏、郁可唯 知否知否",
+      "feat_artist": "",
+      "remark": "桐人今天睡大觉「全自动歌切项目」2026.10.21 歌切合集第 2 分P（章节「02_知否知否 - 胡夏, 郁可唯」）。弹幕00:52–01:05 清唱簇位置与之吻合。本场括号歌词弹幕为 0，仅以合集章节 + 简介日期确认；未定位回放时间点。",
+      "tone": "",
+      "language": "中文",
+      "type": "影视、流行",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1d6n66fEgy/?p=2",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-21",
+      "row_key": "知否知否"
+    },
+    {
+      "song_id": 329,
+      "song_name": "猪之歌",
+      "show_as_song_name": "",
+      "display_song_name": "猪之歌",
+      "artist": "香香",
+      "artist_search": "香香 猪之歌",
+      "feat_artist": "",
+      "remark": "桐人今天睡大觉「全自动歌切项目」2026.10.21 歌切合集第 4 分P（章节「04_猪之歌 - 香香」）。弹幕未直接出现歌名。本场括号歌词弹幕为 0，仅以合集章节 + 简介日期确认；未定位回放时间点。",
+      "tone": "",
+      "language": "中文",
+      "type": "流行",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1d6n66fEgy/?p=4",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-21",
+      "row_key": "猪之歌"
     }
   ]
 },
   history_index: {
   "roomKey": "xiaosonglu",
   "roomId": "1727071052",
-  "generatedAt": "2026-10-21T03:10:46.871Z",
+  "generatedAt": "2026-10-22T03:55:55.214Z",
   "source": "local-replay-ingestion",
   "latest": {
     "year": "2026",
     "month": "10",
-    "day": "19"
+    "day": "21"
   },
   "dateTree": {
     "2026": {
@@ -6873,6 +7020,7 @@ window.XSL_DATA = {
         "16": 17,
         "18": 23,
         "19": 1,
+        "21": 8,
         "08": 5,
         "06": 17,
         "02": 33
@@ -14103,13 +14251,159 @@ window.XSL_DATA = {
         "song_resolution_method": "song-cut-single",
         "cut_link": "https://www.bilibili.com/video/BV16mnN6MEUS/"
       }
+    ],
+    "2026-10-21": [
+      {
+        "song_name": "茶汤",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "郁可唯",
+        "replay_id": "live:d2e6c93a-1de7-4091-a934-ad67fcbaeb60",
+        "replay_title": "【小松绿Viridis】小小的唱多多的聊 2026-10-21",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "茶汤",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-compilation-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1d6n66fEgy/?p=1"
+      },
+      {
+        "song_name": "知否知否",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "胡夏、郁可唯",
+        "replay_id": "live:d2e6c93a-1de7-4091-a934-ad67fcbaeb60",
+        "replay_title": "【小松绿Viridis】小小的唱多多的聊 2026-10-21",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "知否知否",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-compilation-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1d6n66fEgy/?p=2"
+      },
+      {
+        "song_name": "flos",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "R Sound Design（初音ミク）",
+        "replay_id": "live:d2e6c93a-1de7-4091-a934-ad67fcbaeb60",
+        "replay_title": "【小松绿Viridis】小小的唱多多的聊 2026-10-21",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "flos",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-compilation-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1d6n66fEgy/?p=3"
+      },
+      {
+        "song_name": "猪之歌",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "香香",
+        "replay_id": "live:d2e6c93a-1de7-4091-a934-ad67fcbaeb60",
+        "replay_title": "【小松绿Viridis】小小的唱多多的聊 2026-10-21",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "猪之歌",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-compilation-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1d6n66fEgy/?p=4"
+      },
+      {
+        "song_name": "束花线",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "COP、洛天依Official",
+        "replay_id": "live:d2e6c93a-1de7-4091-a934-ad67fcbaeb60",
+        "replay_title": "【小松绿Viridis】小小的唱多多的聊 2026-10-21",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "束花线",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-compilation-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1d6n66fEgy/?p=5"
+      },
+      {
+        "song_name": "数鸭子",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "儿歌多多",
+        "replay_id": "live:d2e6c93a-1de7-4091-a934-ad67fcbaeb60",
+        "replay_title": "【小松绿Viridis】小小的唱多多的聊 2026-10-21",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "数鸭子",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-compilation-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1d6n66fEgy/?p=6"
+      },
+      {
+        "song_name": "蓝精灵",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "儿歌多多",
+        "replay_id": "live:d2e6c93a-1de7-4091-a934-ad67fcbaeb60",
+        "replay_title": "【小松绿Viridis】小小的唱多多的聊 2026-10-21",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "蓝精灵",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-compilation-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1d6n66fEgy/?p=7"
+      },
+      {
+        "song_name": "我是一个粉刷匠",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "儿歌多多",
+        "replay_id": "live:d2e6c93a-1de7-4091-a934-ad67fcbaeb60",
+        "replay_title": "【小松绿Viridis】小小的唱多多的聊 2026-10-21",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "我是一个粉刷匠",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-compilation-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1d6n66fEgy/?p=8"
+      }
     ]
   }
 },
   song_details: {
   "roomKey": "xiaosonglu",
   "roomId": "1727071052",
-  "generatedAt": "2026-10-21T03:10:46.871Z",
+  "generatedAt": "2026-10-22T03:55:55.214Z",
   "source": "local-replay-ingestion",
   "bySongKey": {
     "少女レイ": {
@@ -16913,8 +17207,23 @@ window.XSL_DATA = {
       "display_song_name": "flos",
       "artist": "R Sound Design（初音ミク）",
       "cut_link": "https://www.bilibili.com/video/BV1WS8c6XE9w?p=18",
-      "total_count": 1,
+      "total_count": 2,
       "entries": [
+        {
+          "date": "2026-10-21",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "R Sound Design（初音ミク）",
+          "replay_id": "live:d2e6c93a-1de7-4091-a934-ad67fcbaeb60",
+          "replay_title": "【小松绿Viridis】小小的唱多多的聊 2026-10-21",
+          "replay_url": "",
+          "remark": "桐人今天睡大觉「全自动歌切项目」2026.10.21 歌切合集第 3 分P（章节「03_flos - 初音ミク, R Sound Design」）。弹幕未直接出现歌名。本场括号歌词弹幕为 0，仅以合集章节 + 简介日期确认；未定位回放时间点。",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-compilation-chapter",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1d6n66fEgy/?p=3"
+        },
         {
           "date": "2026-08-20",
           "time": "01:06:40",
@@ -23356,16 +23665,191 @@ window.XSL_DATA = {
           "cut_link": "https://www.bilibili.com/video/BV1UPnV6zEs4/?p=22"
         }
       ]
+    },
+    "茶汤": {
+      "row_key": "茶汤",
+      "song_name": "茶汤",
+      "display_song_name": "茶汤",
+      "artist": "郁可唯",
+      "cut_link": "https://www.bilibili.com/video/BV1d6n66fEgy/?p=1",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-10-21",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "郁可唯",
+          "replay_id": "live:d2e6c93a-1de7-4091-a934-ad67fcbaeb60",
+          "replay_title": "【小松绿Viridis】小小的唱多多的聊 2026-10-21",
+          "replay_url": "",
+          "remark": "桐人今天睡大觉「全自动歌切项目」2026.10.21 歌切合集第 1 分P（章节「01_茶汤 - 郁可唯」）。弹幕00:32–00:41 开嗓簇位置与之吻合。本场括号歌词弹幕为 0，仅以合集章节 + 简介日期确认；未定位回放时间点。",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-compilation-chapter",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1d6n66fEgy/?p=1"
+        }
+      ]
+    },
+    "知否知否": {
+      "row_key": "知否知否",
+      "song_name": "知否知否",
+      "display_song_name": "知否知否",
+      "artist": "胡夏、郁可唯",
+      "cut_link": "https://www.bilibili.com/video/BV1d6n66fEgy/?p=2",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-10-21",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "胡夏、郁可唯",
+          "replay_id": "live:d2e6c93a-1de7-4091-a934-ad67fcbaeb60",
+          "replay_title": "【小松绿Viridis】小小的唱多多的聊 2026-10-21",
+          "replay_url": "",
+          "remark": "桐人今天睡大觉「全自动歌切项目」2026.10.21 歌切合集第 2 分P（章节「02_知否知否 - 胡夏, 郁可唯」）。弹幕00:52–01:05 清唱簇位置与之吻合。本场括号歌词弹幕为 0，仅以合集章节 + 简介日期确认；未定位回放时间点。",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-compilation-chapter",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1d6n66fEgy/?p=2"
+        }
+      ]
+    },
+    "猪之歌": {
+      "row_key": "猪之歌",
+      "song_name": "猪之歌",
+      "display_song_name": "猪之歌",
+      "artist": "香香",
+      "cut_link": "https://www.bilibili.com/video/BV1d6n66fEgy/?p=4",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-10-21",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "香香",
+          "replay_id": "live:d2e6c93a-1de7-4091-a934-ad67fcbaeb60",
+          "replay_title": "【小松绿Viridis】小小的唱多多的聊 2026-10-21",
+          "replay_url": "",
+          "remark": "桐人今天睡大觉「全自动歌切项目」2026.10.21 歌切合集第 4 分P（章节「04_猪之歌 - 香香」）。弹幕未直接出现歌名。本场括号歌词弹幕为 0，仅以合集章节 + 简介日期确认；未定位回放时间点。",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-compilation-chapter",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1d6n66fEgy/?p=4"
+        }
+      ]
+    },
+    "束花线": {
+      "row_key": "束花线",
+      "song_name": "束花线",
+      "display_song_name": "束花线",
+      "artist": "COP、洛天依Official",
+      "cut_link": "https://www.bilibili.com/video/BV1d6n66fEgy/?p=5",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-10-21",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "COP、洛天依Official",
+          "replay_id": "live:d2e6c93a-1de7-4091-a934-ad67fcbaeb60",
+          "replay_title": "【小松绿Viridis】小小的唱多多的聊 2026-10-21",
+          "replay_url": "",
+          "remark": "桐人今天睡大觉「全自动歌切项目」2026.10.21 歌切合集第 5 分P（章节「05_束花线 - COP, 洛天依」）。弹幕未直接出现歌名。本场括号歌词弹幕为 0，仅以合集章节 + 简介日期确认；未定位回放时间点。",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-compilation-chapter",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1d6n66fEgy/?p=5"
+        }
+      ]
+    },
+    "数鸭子": {
+      "row_key": "数鸭子",
+      "song_name": "数鸭子",
+      "display_song_name": "数鸭子",
+      "artist": "儿歌多多",
+      "cut_link": "https://www.bilibili.com/video/BV1d6n66fEgy/?p=6",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-10-21",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "儿歌多多",
+          "replay_id": "live:d2e6c93a-1de7-4091-a934-ad67fcbaeb60",
+          "replay_title": "【小松绿Viridis】小小的唱多多的聊 2026-10-21",
+          "replay_url": "",
+          "remark": "桐人今天睡大觉「全自动歌切项目」2026.10.21 歌切合集第 6 分P（章节「06_数鸭子 - 儿歌多多」）。弹幕02:18–02:22 儿歌回簇位置与之吻合。本场括号歌词弹幕为 0，仅以合集章节 + 简介日期确认；未定位回放时间点。",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-compilation-chapter",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1d6n66fEgy/?p=6"
+        }
+      ]
+    },
+    "蓝精灵": {
+      "row_key": "蓝精灵",
+      "song_name": "蓝精灵",
+      "display_song_name": "蓝精灵",
+      "artist": "儿歌多多",
+      "cut_link": "https://www.bilibili.com/video/BV1d6n66fEgy/?p=7",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-10-21",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "儿歌多多",
+          "replay_id": "live:d2e6c93a-1de7-4091-a934-ad67fcbaeb60",
+          "replay_title": "【小松绿Viridis】小小的唱多多的聊 2026-10-21",
+          "replay_url": "",
+          "remark": "桐人今天睡大觉「全自动歌切项目」2026.10.21 歌切合集第 7 分P（章节「07_蓝精灵 - 儿歌多多」）。弹幕02:18–02:22 儿歌回簇位置与之吻合。本场括号歌词弹幕为 0，仅以合集章节 + 简介日期确认；未定位回放时间点。",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-compilation-chapter",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1d6n66fEgy/?p=7"
+        }
+      ]
+    },
+    "我是一个粉刷匠": {
+      "row_key": "我是一个粉刷匠",
+      "song_name": "我是一个粉刷匠",
+      "display_song_name": "我是一个粉刷匠",
+      "artist": "儿歌多多",
+      "cut_link": "https://www.bilibili.com/video/BV1d6n66fEgy/?p=8",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-10-21",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "儿歌多多",
+          "replay_id": "live:d2e6c93a-1de7-4091-a934-ad67fcbaeb60",
+          "replay_title": "【小松绿Viridis】小小的唱多多的聊 2026-10-21",
+          "replay_url": "",
+          "remark": "桐人今天睡大觉「全自动歌切项目」2026.10.21 歌切合集第 8 分P（章节「08_我是一个粉刷匠 - 儿歌多多」）。弹幕02:18–02:22 儿歌回簇位置与之吻合。本场括号歌词弹幕为 0，仅以合集章节 + 简介日期确认；未定位回放时间点。",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-compilation-chapter",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1d6n66fEgy/?p=8"
+        }
+      ]
     }
   }
 },
   audio_index: {
   "roomKey": "xiaosonglu",
   "roomId": "1727071052",
-  "generatedAt": "2026-10-19T03:20:52.692Z",
+  "generatedAt": "2026-10-22T03:56:24.080Z",
   "source": "song-cut-audio-download",
   "description": "每首歌对应的翻唱切片音频（从 B 站歌切/回放下载），供网页在线播放。",
-  "count": 324,
+  "count": 331,
   "audios": {
     "勾指起誓": "assets/audio/song_88.m4a?v=1d344dfde754",
     "蝴蝶": "assets/audio/song_25.m4a?v=d8fb99252c26",
@@ -23690,7 +24174,14 @@ window.XSL_DATA = {
     "红豆": "assets/audio/song_322.m4a?v=16d532fc76be",
     "拜云台": "assets/audio/song_323.m4a?v=d33a3db28a36",
     "鳥の詩": "assets/audio/song_324.m4a?v=70d03e3b1d97",
-    "扉をあけて": "assets/audio/song_325.m4a?v=3e7650e0f53f"
+    "扉をあけて": "assets/audio/song_325.m4a?v=3e7650e0f53f",
+    "茶汤": "assets/audio/song_326.m4a?v=45cd0a9518a2",
+    "知否知否": "assets/audio/song_327.m4a?v=60f0432b5ec3",
+    "猪之歌": "assets/audio/song_328.m4a?v=21ab6b14062e",
+    "束花线": "assets/audio/song_329.m4a?v=1e9278c6faae",
+    "数鸭子": "assets/audio/song_330.m4a?v=ca8b1e86302e",
+    "蓝精灵": "assets/audio/song_331.m4a?v=4214a2eec7a7",
+    "我是一个粉刷匠": "assets/audio/song_332.m4a?v=ecbc1b5d7627"
   },
   "verificationTargets": [
     "中华墨水娘",
@@ -23702,10 +24193,10 @@ window.XSL_DATA = {
   song_cut_info: {
   "roomKey": "xiaosonglu",
   "roomId": "1727071052",
-  "generatedAt": "2026-10-21T03:10:46.871Z",
+  "generatedAt": "2026-10-22T03:55:55.214Z",
   "source": "song-cut-title-index",
   "description": "每首歌对应的歌切切片标题（单曲歌切视频标题 / 合集分P标题），供前端歌切链接显示。",
-  "count": 326,
+  "count": 333,
   "cuts": {
     "（区）最终祈愿": {
       "title": "07_（区）最终祈愿 - 平行四界Quadimension, 星尘",
@@ -25336,6 +25827,41 @@ window.XSL_DATA = {
       "title": "23_扉をあけて - ANZA",
       "kind": "collection",
       "url": "https://www.bilibili.com/video/BV1UPnV6zEs4/?p=22"
+    },
+    "茶汤": {
+      "title": "01_茶汤 - 郁可唯",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1d6n66fEgy/?p=1"
+    },
+    "知否知否": {
+      "title": "02_知否知否 - 胡夏, 郁可唯",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1d6n66fEgy/?p=2"
+    },
+    "猪之歌": {
+      "title": "04_猪之歌 - 香香",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1d6n66fEgy/?p=4"
+    },
+    "束花线": {
+      "title": "05_束花线 - COP, 洛天依",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1d6n66fEgy/?p=5"
+    },
+    "数鸭子": {
+      "title": "06_数鸭子 - 儿歌多多",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1d6n66fEgy/?p=6"
+    },
+    "蓝精灵": {
+      "title": "07_蓝精灵 - 儿歌多多",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1d6n66fEgy/?p=7"
+    },
+    "我是一个粉刷匠": {
+      "title": "08_我是一个粉刷匠 - 儿歌多多",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1d6n66fEgy/?p=8"
     }
   }
 }

@@ -1,10 +1,10 @@
 {
   "roomKey": "xiaosonglu",
   "roomId": "1727071052",
-  "generatedAt": "2026-10-19T03:20:52.692Z",
+  "generatedAt": "2026-10-22T03:56:24.080Z",
   "source": "song-cut-audio-download",
   "description": "每首歌对应的翻唱切片音频（从 B 站歌切/回放下载），供网页在线播放。",
-  "count": 324,
+  "count": 331,
   "audios": {
     "勾指起誓": "assets/audio/song_88.m4a?v=1d344dfde754",
     "蝴蝶": "assets/audio/song_25.m4a?v=d8fb99252c26",
@@ -329,7 +329,14 @@
     "红豆": "assets/audio/song_322.m4a?v=16d532fc76be",
     "拜云台": "assets/audio/song_323.m4a?v=d33a3db28a36",
     "鳥の詩": "assets/audio/song_324.m4a?v=70d03e3b1d97",
-    "扉をあけて": "assets/audio/song_325.m4a?v=3e7650e0f53f"
+    "扉をあけて": "assets/audio/song_325.m4a?v=3e7650e0f53f",
+    "茶汤": "assets/audio/song_326.m4a?v=45cd0a9518a2",
+    "知否知否": "assets/audio/song_327.m4a?v=60f0432b5ec3",
+    "猪之歌": "assets/audio/song_328.m4a?v=21ab6b14062e",
+    "束花线": "assets/audio/song_329.m4a?v=1e9278c6faae",
+    "数鸭子": "assets/audio/song_330.m4a?v=ca8b1e86302e",
+    "蓝精灵": "assets/audio/song_331.m4a?v=4214a2eec7a7",
+    "我是一个粉刷匠": "assets/audio/song_332.m4a?v=ecbc1b5d7627"
   },
   "verificationTargets": [
     "中华墨水娘",

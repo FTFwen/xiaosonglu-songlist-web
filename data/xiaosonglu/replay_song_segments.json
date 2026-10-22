@@ -3,7 +3,7 @@
   "roomId": "1727071052",
   "sourceType": "bilibili-live-replay-song-segments",
   "description": "从小松绿直播回放中识别出的唱歌片段原始记录。由每日自动化或人工补录维护，随后通过 scripts/build_xiaosonglu_song_data.js 聚合成插件可直接读取的歌单与历史数据。歌名允许先根据歌词片段联网检索后再补全，回放日期允许先留空并由脚本从回放标题中解析。",
-  "updatedAt": "2026-10-21T03:10:46.871Z",
+  "updatedAt": "2026-10-22T03:55:55.214Z",
   "segments": [
     {
       "replay_id": "BV1Xiu86aEwV",
@@ -14464,6 +14464,318 @@
           "title": "「曲终之时 你是否便会回应我的心音」《世末歌者》【小松绿Viridis 歌切】",
           "url": "https://www.bilibili.com/video/BV16mnN6MEUS/",
           "snippet": "up dioneni，时长 5:24，标题直接给出歌名"
+        }
+      ]
+    },
+    {
+      "replay_id": "live:d2e6c93a-1de7-4091-a934-ad67fcbaeb60",
+      "replay_title": "【小松绿Viridis】小小的唱多多的聊 2026-10-21",
+      "replay_url": "",
+      "replay_date": "2026-10-21",
+      "replay_date_source": "live-api-date",
+      "segment_index": 1,
+      "start_time": "",
+      "end_time": "",
+      "lyric_excerpt": "",
+      "song_search_query": "茶汤",
+      "song_resolution_method": "song-cut-compilation-chapter",
+      "song_name": "茶汤",
+      "display_song_name": "茶汤",
+      "artist": "郁可唯",
+      "artist_search": "郁可唯 茶汤",
+      "feat_artist": "",
+      "language": "中文",
+      "tone": "",
+      "status_labels": [
+        "歌回",
+        "歌切合集复核"
+      ],
+      "display_version": "",
+      "type": "流行",
+      "remark": "桐人今天睡大觉「全自动歌切项目」2026.10.21 歌切合集第 1 分P（章节「01_茶汤 - 郁可唯」）。弹幕00:32–00:41 开嗓簇位置与之吻合。本场括号歌词弹幕为 0，仅以合集章节 + 简介日期确认；未定位回放时间点。",
+      "identification": "",
+      "cut_link": "https://www.bilibili.com/video/BV1d6n66fEgy/?p=1",
+      "confidence": 0.9,
+      "row_key": "茶汤",
+      "search_name": "",
+      "resolution_candidates": [
+        {
+          "title": "【小松绿Viridis】小松绿不当植物了！马上成为一枚甜筒 2026.10.21歌切合集",
+          "url": "https://www.bilibili.com/video/BV1d6n66fEgy/",
+          "snippet": "UP 桐人今天睡大觉，章节「01_茶汤 - 郁可唯」"
+        }
+      ]
+    },
+    {
+      "replay_id": "live:d2e6c93a-1de7-4091-a934-ad67fcbaeb60",
+      "replay_title": "【小松绿Viridis】小小的唱多多的聊 2026-10-21",
+      "replay_url": "",
+      "replay_date": "2026-10-21",
+      "replay_date_source": "live-api-date",
+      "segment_index": 2,
+      "start_time": "",
+      "end_time": "",
+      "lyric_excerpt": "",
+      "song_search_query": "知否知否",
+      "song_resolution_method": "song-cut-compilation-chapter",
+      "song_name": "知否知否",
+      "display_song_name": "知否知否",
+      "artist": "胡夏、郁可唯",
+      "artist_search": "胡夏、郁可唯 知否知否",
+      "feat_artist": "",
+      "language": "中文",
+      "tone": "",
+      "status_labels": [
+        "歌回",
+        "歌切合集复核"
+      ],
+      "display_version": "",
+      "type": "影视、流行",
+      "remark": "桐人今天睡大觉「全自动歌切项目」2026.10.21 歌切合集第 2 分P（章节「02_知否知否 - 胡夏, 郁可唯」）。弹幕00:52–01:05 清唱簇位置与之吻合。本场括号歌词弹幕为 0，仅以合集章节 + 简介日期确认；未定位回放时间点。",
+      "identification": "",
+      "cut_link": "https://www.bilibili.com/video/BV1d6n66fEgy/?p=2",
+      "confidence": 0.9,
+      "row_key": "知否知否",
+      "search_name": "",
+      "resolution_candidates": [
+        {
+          "title": "【小松绿Viridis】小松绿不当植物了！马上成为一枚甜筒 2026.10.21歌切合集",
+          "url": "https://www.bilibili.com/video/BV1d6n66fEgy/",
+          "snippet": "UP 桐人今天睡大觉，章节「02_知否知否 - 胡夏, 郁可唯」"
+        }
+      ]
+    },
+    {
+      "replay_id": "live:d2e6c93a-1de7-4091-a934-ad67fcbaeb60",
+      "replay_title": "【小松绿Viridis】小小的唱多多的聊 2026-10-21",
+      "replay_url": "",
+      "replay_date": "2026-10-21",
+      "replay_date_source": "live-api-date",
+      "segment_index": 3,
+      "start_time": "",
+      "end_time": "",
+      "lyric_excerpt": "",
+      "song_search_query": "flos",
+      "song_resolution_method": "song-cut-compilation-chapter",
+      "song_name": "flos",
+      "display_song_name": "flos",
+      "artist": "R Sound Design（初音ミク）",
+      "artist_search": "R Sound Design（初音ミク） flos",
+      "feat_artist": "",
+      "language": "日文",
+      "tone": "",
+      "status_labels": [
+        "歌回",
+        "歌切合集复核"
+      ],
+      "display_version": "",
+      "type": "Vocaloid、J-Pop",
+      "remark": "桐人今天睡大觉「全自动歌切项目」2026.10.21 歌切合集第 3 分P（章节「03_flos - 初音ミク, R Sound Design」）。弹幕未直接出现歌名。本场括号歌词弹幕为 0，仅以合集章节 + 简介日期确认；未定位回放时间点。",
+      "identification": "",
+      "cut_link": "https://www.bilibili.com/video/BV1d6n66fEgy/?p=3",
+      "confidence": 0.85,
+      "row_key": "flos",
+      "search_name": "",
+      "resolution_candidates": [
+        {
+          "title": "【小松绿Viridis】小松绿不当植物了！马上成为一枚甜筒 2026.10.21歌切合集",
+          "url": "https://www.bilibili.com/video/BV1d6n66fEgy/",
+          "snippet": "UP 桐人今天睡大觉，章节「03_flos - 初音ミク, R Sound Design」"
+        }
+      ]
+    },
+    {
+      "replay_id": "live:d2e6c93a-1de7-4091-a934-ad67fcbaeb60",
+      "replay_title": "【小松绿Viridis】小小的唱多多的聊 2026-10-21",
+      "replay_url": "",
+      "replay_date": "2026-10-21",
+      "replay_date_source": "live-api-date",
+      "segment_index": 4,
+      "start_time": "",
+      "end_time": "",
+      "lyric_excerpt": "",
+      "song_search_query": "猪之歌",
+      "song_resolution_method": "song-cut-compilation-chapter",
+      "song_name": "猪之歌",
+      "display_song_name": "猪之歌",
+      "artist": "香香",
+      "artist_search": "香香 猪之歌",
+      "feat_artist": "",
+      "language": "中文",
+      "tone": "",
+      "status_labels": [
+        "歌回",
+        "歌切合集复核"
+      ],
+      "display_version": "",
+      "type": "流行",
+      "remark": "桐人今天睡大觉「全自动歌切项目」2026.10.21 歌切合集第 4 分P（章节「04_猪之歌 - 香香」）。弹幕未直接出现歌名。本场括号歌词弹幕为 0，仅以合集章节 + 简介日期确认；未定位回放时间点。",
+      "identification": "",
+      "cut_link": "https://www.bilibili.com/video/BV1d6n66fEgy/?p=4",
+      "confidence": 0.85,
+      "row_key": "猪之歌",
+      "search_name": "",
+      "resolution_candidates": [
+        {
+          "title": "【小松绿Viridis】小松绿不当植物了！马上成为一枚甜筒 2026.10.21歌切合集",
+          "url": "https://www.bilibili.com/video/BV1d6n66fEgy/",
+          "snippet": "UP 桐人今天睡大觉，章节「04_猪之歌 - 香香」"
+        }
+      ]
+    },
+    {
+      "replay_id": "live:d2e6c93a-1de7-4091-a934-ad67fcbaeb60",
+      "replay_title": "【小松绿Viridis】小小的唱多多的聊 2026-10-21",
+      "replay_url": "",
+      "replay_date": "2026-10-21",
+      "replay_date_source": "live-api-date",
+      "segment_index": 5,
+      "start_time": "",
+      "end_time": "",
+      "lyric_excerpt": "",
+      "song_search_query": "束花线",
+      "song_resolution_method": "song-cut-compilation-chapter",
+      "song_name": "束花线",
+      "display_song_name": "束花线",
+      "artist": "COP、洛天依Official",
+      "artist_search": "COP、洛天依Official 束花线",
+      "feat_artist": "",
+      "language": "中文",
+      "tone": "",
+      "status_labels": [
+        "歌回",
+        "歌切合集复核"
+      ],
+      "display_version": "",
+      "type": "中V、流行",
+      "remark": "桐人今天睡大觉「全自动歌切项目」2026.10.21 歌切合集第 5 分P（章节「05_束花线 - COP, 洛天依」）。弹幕未直接出现歌名。本场括号歌词弹幕为 0，仅以合集章节 + 简介日期确认；未定位回放时间点。",
+      "identification": "",
+      "cut_link": "https://www.bilibili.com/video/BV1d6n66fEgy/?p=5",
+      "confidence": 0.85,
+      "row_key": "束花线",
+      "search_name": "",
+      "resolution_candidates": [
+        {
+          "title": "【小松绿Viridis】小松绿不当植物了！马上成为一枚甜筒 2026.10.21歌切合集",
+          "url": "https://www.bilibili.com/video/BV1d6n66fEgy/",
+          "snippet": "UP 桐人今天睡大觉，章节「05_束花线 - COP, 洛天依」"
+        }
+      ]
+    },
+    {
+      "replay_id": "live:d2e6c93a-1de7-4091-a934-ad67fcbaeb60",
+      "replay_title": "【小松绿Viridis】小小的唱多多的聊 2026-10-21",
+      "replay_url": "",
+      "replay_date": "2026-10-21",
+      "replay_date_source": "live-api-date",
+      "segment_index": 6,
+      "start_time": "",
+      "end_time": "",
+      "lyric_excerpt": "",
+      "song_search_query": "数鸭子",
+      "song_resolution_method": "song-cut-compilation-chapter",
+      "song_name": "数鸭子",
+      "display_song_name": "数鸭子",
+      "artist": "儿歌多多",
+      "artist_search": "儿歌多多 数鸭子",
+      "feat_artist": "",
+      "language": "中文",
+      "tone": "",
+      "status_labels": [
+        "歌回",
+        "歌切合集复核"
+      ],
+      "display_version": "",
+      "type": "翻唱、流行",
+      "remark": "桐人今天睡大觉「全自动歌切项目」2026.10.21 歌切合集第 6 分P（章节「06_数鸭子 - 儿歌多多」）。弹幕02:18–02:22 儿歌回簇位置与之吻合。本场括号歌词弹幕为 0，仅以合集章节 + 简介日期确认；未定位回放时间点。",
+      "identification": "",
+      "cut_link": "https://www.bilibili.com/video/BV1d6n66fEgy/?p=6",
+      "confidence": 0.9,
+      "row_key": "数鸭子",
+      "search_name": "",
+      "resolution_candidates": [
+        {
+          "title": "【小松绿Viridis】小松绿不当植物了！马上成为一枚甜筒 2026.10.21歌切合集",
+          "url": "https://www.bilibili.com/video/BV1d6n66fEgy/",
+          "snippet": "UP 桐人今天睡大觉，章节「06_数鸭子 - 儿歌多多」"
+        }
+      ]
+    },
+    {
+      "replay_id": "live:d2e6c93a-1de7-4091-a934-ad67fcbaeb60",
+      "replay_title": "【小松绿Viridis】小小的唱多多的聊 2026-10-21",
+      "replay_url": "",
+      "replay_date": "2026-10-21",
+      "replay_date_source": "live-api-date",
+      "segment_index": 7,
+      "start_time": "",
+      "end_time": "",
+      "lyric_excerpt": "",
+      "song_search_query": "蓝精灵",
+      "song_resolution_method": "song-cut-compilation-chapter",
+      "song_name": "蓝精灵",
+      "display_song_name": "蓝精灵",
+      "artist": "儿歌多多",
+      "artist_search": "儿歌多多 蓝精灵",
+      "feat_artist": "",
+      "language": "中文",
+      "tone": "",
+      "status_labels": [
+        "歌回",
+        "歌切合集复核"
+      ],
+      "display_version": "",
+      "type": "翻唱、流行",
+      "remark": "桐人今天睡大觉「全自动歌切项目」2026.10.21 歌切合集第 7 分P（章节「07_蓝精灵 - 儿歌多多」）。弹幕02:18–02:22 儿歌回簇位置与之吻合。本场括号歌词弹幕为 0，仅以合集章节 + 简介日期确认；未定位回放时间点。",
+      "identification": "",
+      "cut_link": "https://www.bilibili.com/video/BV1d6n66fEgy/?p=7",
+      "confidence": 0.9,
+      "row_key": "蓝精灵",
+      "search_name": "",
+      "resolution_candidates": [
+        {
+          "title": "【小松绿Viridis】小松绿不当植物了！马上成为一枚甜筒 2026.10.21歌切合集",
+          "url": "https://www.bilibili.com/video/BV1d6n66fEgy/",
+          "snippet": "UP 桐人今天睡大觉，章节「07_蓝精灵 - 儿歌多多」"
+        }
+      ]
+    },
+    {
+      "replay_id": "live:d2e6c93a-1de7-4091-a934-ad67fcbaeb60",
+      "replay_title": "【小松绿Viridis】小小的唱多多的聊 2026-10-21",
+      "replay_url": "",
+      "replay_date": "2026-10-21",
+      "replay_date_source": "live-api-date",
+      "segment_index": 8,
+      "start_time": "",
+      "end_time": "",
+      "lyric_excerpt": "",
+      "song_search_query": "我是一个粉刷匠",
+      "song_resolution_method": "song-cut-compilation-chapter",
+      "song_name": "我是一个粉刷匠",
+      "display_song_name": "我是一个粉刷匠",
+      "artist": "儿歌多多",
+      "artist_search": "儿歌多多 我是一个粉刷匠",
+      "feat_artist": "",
+      "language": "中文",
+      "tone": "",
+      "status_labels": [
+        "歌回",
+        "歌切合集复核"
+      ],
+      "display_version": "",
+      "type": "翻唱、流行",
+      "remark": "桐人今天睡大觉「全自动歌切项目」2026.10.21 歌切合集第 8 分P（章节「08_我是一个粉刷匠 - 儿歌多多」）。弹幕02:18–02:22 儿歌回簇位置与之吻合。本场括号歌词弹幕为 0，仅以合集章节 + 简介日期确认；未定位回放时间点。",
+      "identification": "",
+      "cut_link": "https://www.bilibili.com/video/BV1d6n66fEgy/?p=8",
+      "confidence": 0.9,
+      "row_key": "我是一个粉刷匠",
+      "search_name": "",
+      "resolution_candidates": [
+        {
+          "title": "【小松绿Viridis】小松绿不当植物了！马上成为一枚甜筒 2026.10.21歌切合集",
+          "url": "https://www.bilibili.com/video/BV1d6n66fEgy/",
+          "snippet": "UP 桐人今天睡大觉，章节「08_我是一个粉刷匠 - 儿歌多多」"
         }
       ]
     }
