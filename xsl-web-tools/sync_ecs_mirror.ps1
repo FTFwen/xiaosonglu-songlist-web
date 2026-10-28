@@ -55,12 +55,25 @@ if (-not (Test-Path -LiteralPath $stage)) {
 function Write-Step { param([string]$Message) Write-Host "[ecs-mirror] $Message" }
 
 function Invoke-Phase {
-    param([string]$Name, [string]$Script, [string[]]$Arguments)
+    param([string]$Name, [string]$Script, [string[]]$Arguments, [int]$Attempts = 3)
     Write-Step "--- $Name ---"
     $callArgs = @('-NoProfile', '-NonInteractive', '-ExecutionPolicy', 'Bypass', '-File', $Script) + $Arguments
-    & $powershellPath @callArgs | Out-Host
-    if ($LASTEXITCODE -ne 0) { throw "$Name failed with exit code $LASTEXITCODE" }
-    Write-Step "$Name ok"
+    for ($attempt = 1; $attempt -le $Attempts; $attempt++) {
+        & $powershellPath @callArgs | Out-Host
+        if ($LASTEXITCODE -eq 0) {
+            Write-Step "$Name ok"
+            return
+        }
+        # A dropped ssh/scp connection must not be mistaken for a bad deploy: the
+        # sequential verification gate compares against this mirror, so retry the
+        # transport before giving up.
+        if ($attempt -lt $Attempts) {
+            $delay = [Math]::Min(30, 5 * $attempt)
+            Write-Step "$Name failed with exit code $LASTEXITCODE; retrying in $delay seconds (attempt $attempt/$Attempts)"
+            Start-Sleep -Seconds $delay
+        }
+    }
+    throw "$Name failed after $Attempts attempts"
 }
 
 $stopwatch = [System.Diagnostics.Stopwatch]::StartNew()

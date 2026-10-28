@@ -61,6 +61,39 @@ $childStderrPath = Join-Path $env:TEMP "xsl-daily-$PID.err"
 try {
     $output.Add("startedAt=$($startedAt.ToString('o'))")
     $output.Add('mode=scheduled-daily-static-pages')
+    # Newest-performance audio: an indexed track whose song was sung again gets
+    # the newest cut audio before the build, so one deployed snapshot always
+    # carries the latest performance (no archive copy of the old cut is kept).
+    # Failure here is reported but never blocks the data pipeline: the build and
+    # validation steps that follow reject any half-applied audio change.
+    $audioSyncScript = Join-Path $rootPath 'tools\sync_latest_performance_audio.py'
+    if (Test-Path -LiteralPath $audioSyncScript) {
+        $syncStdout = Join-Path $env:TEMP "xsl-audio-sync-$PID.out"
+        $syncStderr = Join-Path $env:TEMP "xsl-audio-sync-$PID.err"
+        try {
+            $syncArgs = @($audioSyncScript, '--root', $rootPath)
+            # Cookie file only feeds the audio download; keeping it out of the
+            # child pipeline arguments avoids tripping the "song-cut paths
+            # require an ingest/download switch" guard inside run_daily.
+            $syncCookie = $BilibiliCookieFile
+            if ([string]::IsNullOrWhiteSpace($syncCookie)) { $syncCookie = $env:XSL_BILIBILI_COOKIE_FILE }
+            if (-not [string]::IsNullOrWhiteSpace($syncCookie)) { $syncArgs += @('--cookies-file', $syncCookie) }
+            $syncChild = Start-Process -FilePath 'python.exe' `
+                -ArgumentList (($syncArgs | ForEach-Object { Quote-ChildArgument ([string]$_) }) -join ' ') `
+                -WorkingDirectory $rootPath -RedirectStandardOutput $syncStdout -RedirectStandardError $syncStderr -Wait -PassThru
+            $syncLines = if (Test-Path -LiteralPath $syncStdout) { [IO.File]::ReadAllLines($syncStdout, [Text.Encoding]::UTF8) } else { @() }
+            $syncErrLines = if (Test-Path -LiteralPath $syncStderr) { [IO.File]::ReadAllLines($syncStderr, [Text.Encoding]::UTF8) } else { @() }
+            foreach ($line in $syncLines) { if (-not [string]::IsNullOrWhiteSpace($line)) { $output.Add("[audio-sync] $line") } }
+            foreach ($line in $syncErrLines) { if (-not [string]::IsNullOrWhiteSpace($line)) { $output.Add("[audio-sync] [stderr] $line") } }
+            if ([int]$syncChild.ExitCode -ne 0) { $output.Add("[audio-sync] WARNING: audio replacement exited with code $($syncChild.ExitCode)") }
+        } catch {
+            $output.Add("[audio-sync] WARNING: could not run audio replacement: $($_.Exception.Message)")
+        } finally {
+            foreach ($path in @($syncStdout, $syncStderr)) { if (Test-Path -LiteralPath $path) { Remove-Item -LiteralPath $path -Force -ErrorAction SilentlyContinue } }
+        }
+    } else {
+        $output.Add('[audio-sync] skipped: tools/sync_latest_performance_audio.py is missing')
+    }
     # Run the pipeline in a separate PowerShell process and keep stdout/stderr
     # separate. The pipeline intentionally emits native Node checkpoint messages
     # on stderr; merging that stream inside Windows PowerShell with ErrorAction=Stop

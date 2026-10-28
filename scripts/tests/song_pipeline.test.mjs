@@ -69,7 +69,17 @@ test('durable audio baseline exactly matches the published audio index', async (
     assert.match(expected.sha256, /^[a-f0-9]{64}$/);
     assert.ok(indexedValues.has(`${path}?v=${expected.sha256.slice(0, 12)}`), `missing SHA-versioned mapping for ${path}`);
   }
-  assert.deepEqual(audioIndex.verificationTargets, ['中华墨水娘', '中华铄金娘', 'ハッピーエンド', '宇宙冷漠']);
+  // Verification targets only grow: the original same-name pair plus every
+  // replaced audio, so a deployment downloads the newest bytes instead of
+  // trusting a hash that belongs to an older performance.
+  assert.ok(audioIndex.verificationTargets.length >= 4);
+  for (const required of ['中华墨水娘', '中华铄金娘', 'ハッピーエンド', '宇宙冷漠']) {
+    assert.ok(audioIndex.verificationTargets.includes(required), `missing verification target ${required}`);
+  }
+  for (const target of audioIndex.verificationTargets) {
+    assert.ok(Object.hasOwn(audioIndex.audios, target), `verification target ${target} has no audio mapping`);
+  }
+  assert.deepEqual([...new Set(audioIndex.verificationTargets)], audioIndex.verificationTargets);
 });
 
 test('same-name collection correction preserves both 中华墨水娘 and 中华铄金娘', async () => {

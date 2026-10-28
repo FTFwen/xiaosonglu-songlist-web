@@ -691,8 +691,18 @@ try {
     # '-Root', value pairs is treated positionally by Windows PowerShell and can
     # accidentally bind '-Root' to DeployAttempts.
     $deployText = (& (Join-Path $PSScriptRoot 'deploy_web.ps1') @deployParameters | Out-String).Trim()
-    Assert-ExitCode $LASTEXITCODE @(0) 'deployment preflight/operation'
-    $deployResult = $deployText | ConvertFrom-Json
+    # deploy_web.ps1 runs in-process here, so $LASTEXITCODE still carries the exit
+    # code of the last native command it ran. The ECS mirror refresh ends on curl
+    # and can exit 28 on a slow link even after the upload and gate succeeded, so
+    # judge the run by deploy_web.ps1's own JSON verdict (it throws on failure).
+    try {
+        $deployResult = $deployText | ConvertFrom-Json
+    } catch {
+        Assert-ExitCode $LASTEXITCODE @(0) 'deployment preflight/operation'
+        throw
+    }
+    if (-not $deployResult.ok) { throw "Pages deployment reported failure with status '$($deployResult.status)'." }
+    $LASTEXITCODE = 0
 
     $endingStatus = @(& $git status --short)
     Assert-ExitCode $LASTEXITCODE @(0) 'final git status'

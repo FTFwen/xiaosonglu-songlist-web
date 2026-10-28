@@ -120,6 +120,8 @@ curated 的每个条目都必须使用带规范 `kind` 与 B 站视频 URL 的�
 
 音频替换是显式危险操作：普通条目省略 `audioAction`（等价于 `keep-existing`）；只有人工核验后才可写 `audioAction: "replace-existing"`，并同时提供非空 `audioReplacementReason`、完整 `audioSha256`、`audioBytes` 与固定 `audioTarget`。若目标当前属于另一首误标歌曲，还必须用 `audioPreviousSongName` 确认重分配。下载器以 URL 绑定的 `_source_manifest.json` 拦截陈旧分P文件，入库器校验哈希/大小并使用事务备份，计划任务随后同步权威 baseline；所有音频索引都使用与 baseline 一致的 `?v=<SHA-256 前缀>`，播放器会保留这个不可变缓存键；替换目标还会进入 `verificationTargets`，部署后逐字节在线核验。一次成功后，文件、索引版本和 baseline 全部一致，后续计划任务会幂等跳过。
 
+**同一首歌反复演唱时，音轨默认跟随最新一次演唱**（2026-10-28 起的约定）：`audio_index.json` 仍是“一首歌一个代表音轨”，但被复唱的歌应当用最新那一场的歌切音轨覆盖旧音轨，而不是永久停在首次收录的版本。执行时仍走上面的 `replace-existing` 流程，并满足两个护栏：①`cut` 必须来自该次演唱当天的歌切（`dateSource` 可核验），不得跨日期复用；②歌切时长与该次演唱窗口相差不超过 5%，明显偏短/偏长（半首、拼接、多首连录）时保持原音轨并在汇报里说明。替换成功后旧音轨字节会被覆盖，因此需要保留历史版本时应先把旧文件备份到 `assets/audio/backups/`（该目录被 `.gitignore` 忽略，不影响部署）。
+
 语言标签约定：日语统一使用唯一规范值 `日文`；历史别名 `日语`（包括复合标签中的分段）会在导入、构建和前端缓存读取时归一化为 `日文`。校验器会拒绝事实台账或元数据覆盖中的非规范值，避免筛选器再次生成两个等价标签。
 
 类型标签约定：先查 `data/xiaosonglu/type_tag_registry.json` 和事实台账，优先复用已有且更精准的类别；只有确认没有合适的既有标签时才创建新标签。当前批次中的 `虚拟歌手` 已人工改为已有的 `中V`，但 `虚拟歌手` 本身过于宽泛（也可能对应 `Vocaloid`、`日V`、`UTAU`、`Synthesizer V`、`ACE`），后续输入不会被全局静默映射，必须先选定精准类别。`import_curated_songs.mjs` 默认按注册表拦截未审批的新标签；要新增类别，先在注册表的 `approvedTags` 与 `approvalLog` 中登记标签和理由，再导入。构建器和校验器也会检查注册表，防止直接编辑事实台账绕过规则。

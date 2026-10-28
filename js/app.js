@@ -734,8 +734,7 @@ function applySongFilters() {
       if (days === null || days > state.songFilters.daysMax) return false;
     }
 
-    const selectedLanguages = state.songFilters.languages.map(normalizeLanguageTag);
-    if (selectedLanguages.length > 0 && !selectedLanguages.includes(normalizeLanguageTag(song.language || ''))) return false;
+    if (!songMatchesLanguageFilter(song.language || '', state.songFilters.languages)) return false;
     if (state.songFilters.tags.length > 0) {
       const songTags = new Set(splitTypeLabels(normalizeTypeTags(song.type || '')));
       const selectedTags = state.songFilters.tags.flatMap(tag => splitTypeLabels(normalizeTypeTags(tag)));
@@ -2510,13 +2509,16 @@ async function doCopyOrderText() {
 }
 
 function renderLanguageChips() {
-  const langs = Array.from(new Set(state.allSongs.map(song => normalizeLanguageTag(song.language || '')).filter(Boolean))).sort((a, b) => a.localeCompare(b, 'zh-CN'));
+  // One chip per atomic language: a song labelled “日文/英文” contributes to both
+  // the 日文 and 英文 chips instead of creating a separate composite chip.
+  const langs = Array.from(new Set(state.allSongs.flatMap(song => splitLanguageTags(song.language || '')))).sort((a, b) => a.localeCompare(b, 'zh-CN'));
   if (langs.length === 0) {
     dom.languageChips.innerHTML = '<span class="muted">暂无语言标签</span>';
     return;
   }
+  const selectedLanguages = new Set(state.songFilters.languages.flatMap(splitLanguageTags));
   dom.languageChips.innerHTML = langs.map(lang => {
-    const active = state.songFilters.languages.includes(lang);
+    const active = selectedLanguages.has(lang);
     return `<button class="filter-chip${active ? ' active' : ''}" data-lang-chip="${escHtml(lang)}">${escHtml(lang)}</button>`;
   }).join('');
 }

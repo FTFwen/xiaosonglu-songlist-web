@@ -58,6 +58,27 @@ function normalizeLanguageTag(value) {
   }).join('');
 }
 
+// A composite label such as “日文/英文” still describes a single song, but the
+// filter must treat each component as its own tag: choosing 日文 has to surface
+// the songs labelled “日文/英文” and “中文/日文” alike.
+function splitLanguageTags(value) {
+  const normalized = normalizeLanguageTag(value);
+  if (!normalized) return [];
+  const seen = new Set();
+  return normalized
+    .split(LANGUAGE_SEPARATOR_RE)
+    .map(part => part.trim())
+    .filter(part => part && !LANGUAGE_SEPARATOR_RE.test(part) && !seen.has(part) && seen.add(part));
+}
+
+// Filter helper: a song matches when any of its language components is selected,
+// so picking 日文 also keeps songs labelled “日文/英文”.
+function songMatchesLanguageFilter(songLanguage, selectedLanguages) {
+  const wanted = new Set((selectedLanguages || []).flatMap(value => splitLanguageTags(value)));
+  if (wanted.size === 0) return true;
+  return splitLanguageTags(songLanguage).some(lang => wanted.has(lang));
+}
+
 // Keep legacy/localStorage type labels deduplicated without guessing broad
 // categories. Ambiguous labels such as “虚拟歌手” must be resolved during review.
 const TYPE_TAG_ALIASES = Object.freeze({});

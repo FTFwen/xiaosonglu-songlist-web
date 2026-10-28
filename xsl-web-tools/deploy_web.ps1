@@ -336,8 +336,18 @@ function Wait-PublicDeployment {
             $requireByteRanges = ([string]$_).TrimEnd('/') -eq $PrimaryBaseUrl.TrimEnd('/')
             Test-PublicDeployment -BaseUrl $_ -ExpectedAudio $ExpectedAudio -ExpectedSongCount $ExpectedSongCount -ExpectedStaticHashes $ExpectedStaticHashes -ExpectedVersionedAudio $ExpectedVersionedAudio -RequireByteRanges $requireByteRanges
         })
-        if (@($lastChecks | Where-Object { -not $_.ok }).Count -eq 0) {
-            return [ordered]@{ ok = $true; attempts = $checkAttempt; checks = $lastChecks }
+        $failing = @($lastChecks | Where-Object { -not $_.ok })
+        # The pages.dev alias serves the same asset set as the custom domain, and the
+        # alias sometimes times out on large files (curl 28 / http 200 truncated). A
+        # transport failure there says nothing about content, so only a content
+        # mismatch on the alias may block the deployment.
+        $blocking = @($failing | Where-Object {
+            $isAlias = ([string]$_.baseUrl).TrimEnd('/') -ne $PrimaryBaseUrl.TrimEnd('/')
+            if (-not $isAlias) { return $true }
+            return ([string]$_.reason) -notmatch 'public request failed'
+        })
+        if ($blocking.Count -eq 0) {
+            return [ordered]@{ ok = $true; attempts = $checkAttempt; checks = $lastChecks; advisory = $failing }
         }
         if ($checkAttempt -lt $Attempts) { Start-Sleep -Seconds $DelaySeconds }
     }

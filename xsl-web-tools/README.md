@@ -78,6 +78,40 @@ $env:XSL_BILIBILI_COOKIE_FILE = '<工作区外的 Netscape Cookie 文件路径>'
 
 任务会临时把本机 `Pluto` 代理组选到“自动选择”（计划任务参数使用 ASCII 安全别名 `__AUTO__`），仅 Wrangler 上传走 `127.0.0.1:17890`，结束后恢复原代理组选项。歌曲音频仍全部作为 Pages 静态资产，既不上传到 R2，也不会拆成多个替换彼此的 Pages 快照。
 
+### 复唱歌曲的音轨跟随最新演唱
+
+`data/xiaosonglu/audio_index.json` 保持“一首歌一个代表音轨”，但同一首歌被再次演唱后，代表音轨应当换成**最新那一场**的歌切音轨（2026-10-28 起的约定），而不是长期停在首次收录的版本。操作方式与普通入库相同，只是条目要声明替换意图：
+
+```powershell
+$spec = '2|3182364|<完整 SHA-256>|https://bilibili.com/video/bv1t4x36yews'
+powershell.exe -NoLogo -NoProfile -NonInteractive -ExecutionPolicy Bypass `
+  -File D:\tool\webdeploy\xsl-web-tools\run_daily_song_pipeline.ps1 -Root D:\tool\webdeploy `
+  -IngestSongCutAudio -CuratedSongBatch data\xiaosonglu\_curated_<date>_replace_audio.json `
+  -ReviewedSongCutSourceSpec $spec -Deploy -AllowOAuth
+```
+
+curated 条目需带 `audioAction: "replace-existing"`、`audioReplacementReason`、`audioSha256`、`audioBytes`、`audioTarget`（被替换的 `assets/audio/song_NNN.m4a`）。两条护栏：歌切必须来自该次演唱当天，且歌切时长与该次演唱窗口相差不超过 5%，否则保持原音轨并说明原因。入库前若来源目录里还留着上一批的文件，先把它们移出目录（导入器要求来源编号与批次条目严格一一对应，多一个 `01_*.m4a` 就会整批失败）。替换目标会被自动加进 `verificationTargets`，部署后逐字节在线核验新音轨。
+
+#### 日线自动完成这件事
+
+上面的手工流程已经接进无人值守日线：`run_scheduled_song_pipeline.ps1` 在调用日线之前先跑
+
+```powershell
+python tools/sync_latest_performance_audio.py --root D:\tool\webdeploy [--cookies-file <path>] [--dry-run]
+```
+
+它把 `data/xiaosonglu/replay_song_segments.json` 与 `data/xiaosonglu/song_cut_index.json` 对齐，找出“同一首歌在更晚的场次又被唱过”的歌，下载那场歌切、核对时长窗（±5%）与“歌切必须来自当天”，再以 `audioAction: replace-existing` 覆盖 `assets/audio/song_NNN.m4a` 并采信新基线。
+
+- 状态文件 `data/xiaosonglu/_audio_performance_state.json` 记录每首歌当前音轨对应的演唱日期与歌切；首次运行只 bootstrap 到当前台账，不回溯替换历史音轨。
+- 旧字节被直接覆盖丢弃，**不保留归档**（2026-10-28 约定），所以替换后无法回滚到上一版音轨。
+- 批量结果写在日线日志的 `[audio-sync]` 一行；这一步失败只告警，不会阻断后续构建与部署。
+
+首次使用前把 Cookie 路径写进用户环境变量，之后可省略 `-BilibiliCookieFile`：
+
+```powershell
+[Environment]::SetEnvironmentVariable('XSL_BILIBILI_COOKIE_FILE', '<cookie 文件绝对路径>', 'User')
+```
+
 ## 条件化 Wrangler 部署
 
 ```powershell

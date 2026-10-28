@@ -1,10 +1,10 @@
 {
   "roomKey": "xiaosonglu",
   "roomId": "1727071052",
-  "generatedAt": "2026-10-22T03:56:24.080Z",
+  "generatedAt": "2026-10-28T07:57:40.826Z",
   "source": "song-cut-audio-download",
   "description": "每首歌对应的翻唱切片音频（从 B 站歌切/回放下载），供网页在线播放。",
-  "count": 331,
+  "count": 352,
   "audios": {
     "勾指起誓": "assets/audio/song_88.m4a?v=1d344dfde754",
     "蝴蝶": "assets/audio/song_25.m4a?v=d8fb99252c26",
@@ -12,7 +12,7 @@
     "绿色": "assets/audio/song_103.m4a?v=d264ad8acdc6",
     "偏食": "assets/audio/song_38.m4a?v=f7c7ec22d592",
     "三月雨": "assets/audio/song_03.m4a?v=6d6afb1988c8",
-    "少女レイ": "assets/audio/song_04.m4a?v=403d63cb1909",
+    "少女レイ": "assets/audio/song_04.m4a?v=4b153fac38db",
     "食虫植物": "assets/audio/song_46.m4a?v=a15cb9a1e43f",
     "下等马": "assets/audio/song_64.m4a?v=76685d4492c6",
     "Virtual to LIVE": "assets/audio/song_05.m4a?v=afa0296658c6",
@@ -125,7 +125,7 @@
     "CHASE!": "assets/audio/song_74.m4a?v=7bec97dcd834",
     "flos": "assets/audio/song_75.m4a?v=25c48adec33d",
     "Fly me to the star": "assets/audio/song_76.m4a?v=131633c96931",
-    "Fly, My Wings": "assets/audio/song_132.m4a?v=2f53877e2f8c",
+    "Fly, My Wings": "assets/audio/song_132.m4a?v=67342f6f9431",
     "I LOVE U": "assets/audio/song_77.m4a?v=264436f98d12",
     "March of Time": "assets/audio/song_134.m4a?v=e98c942e7e57",
     "MORE JUMP MORE!": "assets/audio/song_78.m4a?v=97565984b932",
@@ -336,12 +336,35 @@
     "束花线": "assets/audio/song_329.m4a?v=1e9278c6faae",
     "数鸭子": "assets/audio/song_330.m4a?v=ca8b1e86302e",
     "蓝精灵": "assets/audio/song_331.m4a?v=4214a2eec7a7",
-    "我是一个粉刷匠": "assets/audio/song_332.m4a?v=ecbc1b5d7627"
+    "我是一个粉刷匠": "assets/audio/song_332.m4a?v=ecbc1b5d7627",
+    "TIAN TIAN": "assets/audio/song_333.m4a?v=d8d05a6e8f5b",
+    "甲乙丙丁": "assets/audio/song_334.m4a?v=c9207e1dd995",
+    "天生反骨的鸵鸟": "assets/audio/song_335.m4a?v=6ec1950b17be",
+    "入秋的第一场雨真让人矫情": "assets/audio/song_336.m4a?v=3451ef1b073f",
+    "光与影的对白": "assets/audio/song_337.m4a?v=e478a10095ab",
+    "星降る海": "assets/audio/song_338.m4a?v=edc4e13dfeb3",
+    "地球最後の告白を": "assets/audio/song_339.m4a?v=be2d302df528",
+    "ぼくのかみさま": "assets/audio/song_340.m4a?v=39b87b3fa021",
+    "オノマトペ": "assets/audio/song_341.m4a?v=e5538db14b24",
+    "Ditto": "assets/audio/song_342.m4a?v=67c6821f8634",
+    "SaIN": "assets/audio/song_343.m4a?v=3b88d7594175",
+    "一人行者": "assets/audio/song_344.m4a?v=7adfbd03ded6",
+    "哀温ノ詩": "assets/audio/song_345.m4a?v=727b7e964c81",
+    "月夜見海月": "assets/audio/song_346.m4a?v=5e8eff921141",
+    "Fighting My Way": "assets/audio/song_347.m4a?v=e2b16d249829",
+    "CQCQ": "assets/audio/song_348.m4a?v=21461e3688c7",
+    "群青": "assets/audio/song_349.m4a?v=598fe7412dcd",
+    "祝福": "assets/audio/song_350.m4a?v=ac17c955841d",
+    "恋愛脳": "assets/audio/song_351.m4a?v=23da350396a8",
+    "一梦千宵": "assets/audio/song_352.m4a?v=ca400566d35d",
+    "メルト": "assets/audio/song_353.m4a?v=0fd231ce3191"
   },
   "verificationTargets": [
     "中华墨水娘",
     "中华铄金娘",
     "ハッピーエンド",
-    "宇宙冷漠"
+    "宇宙冷漠",
+    "Fly, My Wings",
+    "少女レイ"
   ]
 }

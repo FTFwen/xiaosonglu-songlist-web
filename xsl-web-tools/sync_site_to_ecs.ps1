@@ -58,6 +58,25 @@ $ErrorActionPreference = 'Stop'
 
 function Write-Step { param([string]$Message) Write-Host "[sync-site] $Message" }
 
+function Invoke-Native {
+    # Windows PowerShell 5.1 turns native stderr into a terminating error under
+    # $ErrorActionPreference = 'Stop', and ssh/scp write progress/warnings to stderr
+    # even when they succeed. Merge the child streams through cmd.exe (the same
+    # pattern run_weekly_sync.ps1 uses) so a benign warning cannot abort the sync.
+    param([string]$FilePath, [string[]]$Arguments)
+    $outFile = Join-Path $env:TEMP ("xsl-native-{0}.log" -f ([guid]::NewGuid().ToString('N').Substring(0, 8)))
+    $quoted = ($Arguments | ForEach-Object { '"' + ($_ -replace '"', '\"') + '"' }) -join ' '
+    $commandLine = '"' + $FilePath + '" ' + $quoted + ' > "' + $outFile + '" 2>&1'
+    & cmd.exe /c $commandLine | Out-Null
+    $exitCode = $LASTEXITCODE
+    $text = ''
+    if (Test-Path -LiteralPath $outFile) {
+        $text = Get-Content -LiteralPath $outFile -Raw
+        Remove-Item -LiteralPath $outFile -ErrorAction SilentlyContinue
+    }
+    return [pscustomobject]@{ ExitCode = $exitCode; Output = [string]$text }
+}
+
 if (-not $Root) { $Root = Split-Path -Parent $PSScriptRoot }
 if (-not (Test-Path (Join-Path $Root 'index.html'))) { throw "Root does not look like the site workspace: $Root" }
 if (-not (Test-Path $KeyPath)) { throw "SSH key not found: $KeyPath" }
@@ -120,8 +139,10 @@ try {
     $copied = $false
     for ($attempt = 1; $attempt -le $CopyAttempts; $attempt++) {
         Write-Step "scp attempt $attempt/$CopyAttempts"
-        & $scpExe @sshArgs $archive "${sshTarget}:$remoteArchive" 2>&1 | Out-Null
-        if ($LASTEXITCODE -eq 0) { $copied = $true; break }
+        $copyResult = Invoke-Native -FilePath $scpExe -Arguments (@($sshArgs) + @($archive, "${sshTarget}:$remoteArchive"))
+        if ($copyResult.ExitCode -eq 0) { $copied = $true; break }
+        $copyMessage = ($copyResult.Output -split "`n" | Where-Object { $_.Trim() } | Select-Object -First 1)
+        if ($copyMessage) { Write-Step "scp attempt $attempt said: $copyMessage" }
         Start-Sleep -Seconds ([Math]::Min(30, 5 * $attempt))
     }
     if (-not $copied) { Write-Step 'scp failed for every attempt'; exit 3 }
@@ -160,12 +181,16 @@ echo "swapped $FILE_COUNT files into $DEST"
 
     $burst = Get-Content -LiteralPath $remoteScriptPath -Raw
     $burstRemote = "/tmp/xsl-site-remote-$([guid]::NewGuid().ToString('N').Substring(0,8)).sh"
-    & $scpExe @sshArgs $remoteScriptPath "${sshTarget}:$burstRemote" 2>&1 | Out-Null
-    if ($LASTEXITCODE -ne 0) { Write-Step 'failed to upload the remote swap script'; exit 3 }
+    $burstResult = Invoke-Native -FilePath $scpExe -Arguments (@($sshArgs) + @($remoteScriptPath, "${sshTarget}:$burstRemote"))
+    if ($burstResult.ExitCode -ne 0) {
+        $burstMessage = ($burstResult.Output -split "`n" | Where-Object { $_.Trim() } | Select-Object -First 1)
+        Write-Step "failed to upload the remote swap script (exit $($burstResult.ExitCode)): $burstMessage"
+        exit 3
+    }
 
-    $swapOutput = & $sshExe @sshArgs $sshTarget "sed -i 's/\r$//' $burstRemote; bash $burstRemote '$remoteArchive' '$RemoteRoot'" 2>&1
-    $swapExit = $LASTEXITCODE
-    $swapOutput | ForEach-Object { Write-Step "remote: $_" }
+    $swapResult = Invoke-Native -FilePath $sshExe -Arguments (@($sshArgs) + @($sshTarget, "sed -i 's/\r$//' $burstRemote; bash $burstRemote '$remoteArchive' '$RemoteRoot'"))
+    $swapExit = $swapResult.ExitCode
+    ($swapResult.Output -split "`r?`n") | Where-Object { $_ -ne '' } | ForEach-Object { Write-Step "remote: $_" }
     if ($swapExit -ne 0) { Write-Step "remote swap failed (exit $swapExit)"; exit 3 }
 
     if ($SkipVerify) { Write-Step 'verification skipped'; exit 0 }
@@ -180,7 +205,7 @@ echo "swapped $FILE_COUNT files into $DEST"
         $localPath = Join-Path $harvest ($rel -replace '/', '\')
         if (-not (Test-Path $localPath)) { continue }
         $localHash = (Get-FileHash -LiteralPath $localPath -Algorithm SHA256).Hash.ToLower()
-        $remoteHash = (& $sshExe @sshArgs $sshTarget "sha256sum '$RemoteRoot/$rel' 2>/dev/null | cut -d' ' -f1") -join ''
+        $remoteHash = ((Invoke-Native -FilePath $sshExe -Arguments (@($sshArgs) + @($sshTarget, "sha256sum '$RemoteRoot/$rel' 2>/dev/null | cut -d' ' -f1"))).Output) -join ''
         $remoteHash = $remoteHash.Trim().ToLower()
         if ($localHash -ne $remoteHash) {
             $mismatches += "$rel local=$localHash remote=$remoteHash"

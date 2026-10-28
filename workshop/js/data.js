@@ -1,11 +1,11 @@
 // 本文件由 scripts/build_xiaosonglu_song_data.mjs 从 data/xiaosonglu/ 生成，供 file:// 离线回退使用。
-// 生成时间：2026-10-22 11:56:24
+// 生成时间：2026-10-28 15:57:40
 // 数据源：data/xiaosonglu/（song_catalog / history_index / song_details / audio_index / song_cut_info）
 window.XSL_DATA = {
   song_catalog: {
   "roomKey": "xiaosonglu",
   "roomId": "1727071052",
-  "generatedAt": "2026-10-22T03:55:55.214Z",
+  "generatedAt": "2026-10-28T07:56:07.237Z",
   "source": "local-replay-ingestion",
   "songs": [
     {
@@ -1311,6 +1311,153 @@ window.XSL_DATA = {
       "row_key": "flos"
     },
     {
+      "song_id": 133,
+      "song_name": "Fly, My Wings",
+      "show_as_song_name": "",
+      "display_song_name": "Fly, My Wings",
+      "artist": "Mili",
+      "artist_search": "Fly, My Wings Mili",
+      "feat_artist": "",
+      "remark": "2026-09-03「也许康复的随便唱唱」21点场；歌切合集【桐人今天睡大觉】【小松绿Viridis】随便唱唱的歌回 歌切合集 2026.09.03 分P13（03:14）。Mili 乐团曲；原曲出处待复核（网易云单曲/八音盒版可见）。",
+      "tone": "",
+      "language": "日文/英文",
+      "type": "J-Pop、游戏（待复核出处）",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=13",
+      "sing_count": 2,
+      "status_labels": "歌回、歌切直补",
+      "last_sing_at": "2026-10-27",
+      "row_key": "Fly, My Wings"
+    },
+    {
+      "song_id": 96,
+      "song_name": "光",
+      "show_as_song_name": "",
+      "display_song_name": "光",
+      "artist": "Kide / Ddickky / 星尘",
+      "artist_search": "光 Kide Ddickky 星尘",
+      "feat_artist": "",
+      "remark": "来自 2026-08-23 行道树投稿回（2）清唱加演段，歌切合集《【小松绿Viridis】20260823 歌切》分P《光》（心灵火Flame，04:10）与忆夏追凉单切（BV1ZH8Y6wEAw，04:21）双重印证。原曲核实：星尘「光」为2021-08-12星尘诞生日5周年曲，作曲/编曲Kide、作词Ddickky（平行四界），原曲BV1K64y1z71C（04:16），歌切时长与原曲吻合；弹幕\"还有《光》\"\"星尘专场吗这是\"（流霰/栖凰/恋苦同为星尘曲）印证。此前误记为ventus/星尘Infinity，本轮修正为Kide/Ddickky/星尘。",
+      "tone": "",
+      "language": "中文",
+      "type": "Synthesizer V、中文Vocaloid",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1m9886kEMZ/?p=4",
+      "sing_count": 2,
+      "status_labels": "清唱、自动识别待人工复核、歌回、歌切合集复核",
+      "last_sing_at": "2026-10-27",
+      "row_key": "光"
+    },
+    {
+      "song_id": 137,
+      "song_name": "花の塔",
+      "show_as_song_name": "",
+      "display_song_name": "花の塔",
+      "artist": "さユり",
+      "artist_search": "花の塔 さユり",
+      "feat_artist": "",
+      "remark": "2026-09-03「也许康复的随便唱唱」21点场；歌切合集【桐人今天睡大觉】【小松绿Viridis】随便唱唱的歌回 歌切合集 2026.09.03 分P18（04:42）。さユり《Lycoris Recoil》ED。",
+      "tone": "",
+      "language": "日文",
+      "type": "动画、J-Pop",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=18",
+      "sing_count": 2,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-27",
+      "row_key": "花の塔"
+    },
+    {
+      "song_id": 95,
+      "song_name": "恋苦",
+      "show_as_song_name": "",
+      "display_song_name": "恋苦",
+      "artist": "月犬P / 星尘",
+      "artist_search": "恋苦 月犬P 星尘",
+      "feat_artist": "",
+      "remark": "来自 2026-08-23 行道树投稿回（2）清唱加演段，歌切合集《【小松绿Viridis】20260823 歌切》分P《恋苦》（心灵火Flame）。萌百核实：月犬P 2022年投稿 Synthesizer V 中文原创，星尘（星尘Infinity）演唱。",
+      "tone": "",
+      "language": "中文",
+      "type": "中V、原创",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1m9886kEMZ/?p=2",
+      "sing_count": 2,
+      "status_labels": "清唱、自动识别待人工复核、歌回、歌切合集复核",
+      "last_sing_at": "2026-10-27",
+      "row_key": "恋苦"
+    },
+    {
+      "song_id": 48,
+      "song_name": "雨爱",
+      "show_as_song_name": "",
+      "display_song_name": "雨爱",
+      "artist": "杨丞琳",
+      "artist_search": "杨丞琳",
+      "feat_artist": "",
+      "remark": "直链页面 meta description 明示日期 2026.8.15 晚，标题直接给出真实歌曲名《雨爱》，可作为当日 song-cut-first 增量收录。",
+      "tone": "",
+      "language": "中文",
+      "type": "流行、影视",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1YZbC6WEJJ/",
+      "sing_count": 2,
+      "status_labels": "歌切直补、待原始回放定位、歌回、歌切合集复核",
+      "last_sing_at": "2026-10-27",
+      "row_key": "雨爱"
+    },
+    {
+      "song_id": 223,
+      "song_name": "からくりピエロ",
+      "show_as_song_name": "",
+      "display_song_name": "からくりピエロ",
+      "artist": "40mP / 初音ミク",
+      "artist_search": "40mP からくりピエロ 初音ミク",
+      "feat_artist": "",
+      "remark": "UP 桐人今天睡大觉《2026.09.23练歌歌切合集》P14",
+      "tone": "",
+      "language": "日文",
+      "type": "Vocaloid、J-Pop",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1ouhW6GEoD/?p=14",
+      "sing_count": 2,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-27",
+      "row_key": "からくりピエロ"
+    },
+    {
+      "song_id": 277,
+      "song_name": "Little Wish",
+      "show_as_song_name": "",
+      "display_song_name": "Little Wish",
+      "artist": "塞壬唱片-MSR, WS MUSIC",
+      "artist_search": "塞壬唱片-MSR, WS MUSIC",
+      "feat_artist": "",
+      "remark": "",
+      "tone": "",
+      "language": "中文",
+      "type": "游戏",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV18Jpw6mE82/?p=10",
+      "sing_count": 2,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-27",
+      "row_key": "Little Wish"
+    },
+    {
       "song_id": 52,
       "song_name": "爱情讯息",
       "show_as_song_name": "",
@@ -1647,27 +1794,6 @@ window.XSL_DATA = {
       "row_key": "腐草为萤"
     },
     {
-      "song_id": 96,
-      "song_name": "光",
-      "show_as_song_name": "",
-      "display_song_name": "光",
-      "artist": "Kide / Ddickky / 星尘",
-      "artist_search": "光 Kide Ddickky 星尘",
-      "feat_artist": "",
-      "remark": "来自 2026-08-23 行道树投稿回（2）清唱加演段，歌切合集《【小松绿Viridis】20260823 歌切》分P《光》（心灵火Flame，04:10）与忆夏追凉单切（BV1ZH8Y6wEAw，04:21）双重印证。原曲核实：星尘「光」为2021-08-12星尘诞生日5周年曲，作曲/编曲Kide、作词Ddickky（平行四界），原曲BV1K64y1z71C（04:16），歌切时长与原曲吻合；弹幕\"还有《光》\"\"星尘专场吗这是\"（流霰/栖凰/恋苦同为星尘曲）印证。此前误记为ventus/星尘Infinity，本轮修正为Kide/Ddickky/星尘。",
-      "tone": "",
-      "language": "中文",
-      "type": "Synthesizer V、中文Vocaloid",
-      "identification": "",
-      "display_version": "",
-      "search_name": "",
-      "cut_link": "https://www.bilibili.com/video/BV1m9886kEMZ/?p=4",
-      "sing_count": 1,
-      "status_labels": "清唱、自动识别待人工复核",
-      "last_sing_at": "2026-08-23",
-      "row_key": "光"
-    },
-    {
       "song_id": 79,
       "song_name": "光景",
       "show_as_song_name": "",
@@ -1773,27 +1899,6 @@ window.XSL_DATA = {
       "row_key": "花粉症"
     },
     {
-      "song_id": 137,
-      "song_name": "花の塔",
-      "show_as_song_name": "",
-      "display_song_name": "花の塔",
-      "artist": "さユり",
-      "artist_search": "花の塔 さユり",
-      "feat_artist": "",
-      "remark": "2026-09-03「也许康复的随便唱唱」21点场；歌切合集【桐人今天睡大觉】【小松绿Viridis】随便唱唱的歌回 歌切合集 2026.09.03 分P18（04:42）。さユり《Lycoris Recoil》ED。",
-      "tone": "",
-      "language": "日文",
-      "type": "动画、J-Pop",
-      "identification": "",
-      "display_version": "",
-      "search_name": "",
-      "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=18",
-      "sing_count": 1,
-      "status_labels": "歌回",
-      "last_sing_at": "2026-09-03",
-      "row_key": "花の塔"
-    },
-    {
       "song_id": 128,
       "song_name": "焦糖星",
       "show_as_song_name": "",
@@ -1897,27 +2002,6 @@ window.XSL_DATA = {
       "status_labels": "自动识别待人工复核",
       "last_sing_at": "2026-08-11",
       "row_key": "炼金少女日志"
-    },
-    {
-      "song_id": 95,
-      "song_name": "恋苦",
-      "show_as_song_name": "",
-      "display_song_name": "恋苦",
-      "artist": "月犬P / 星尘",
-      "artist_search": "恋苦 月犬P 星尘",
-      "feat_artist": "",
-      "remark": "来自 2026-08-23 行道树投稿回（2）清唱加演段，歌切合集《【小松绿Viridis】20260823 歌切》分P《恋苦》（心灵火Flame）。萌百核实：月犬P 2022年投稿 Synthesizer V 中文原创，星尘（星尘Infinity）演唱。",
-      "tone": "",
-      "language": "中文",
-      "type": "中V、原创",
-      "identification": "",
-      "display_version": "",
-      "search_name": "",
-      "cut_link": "https://www.bilibili.com/video/BV1m9886kEMZ/?p=2",
-      "sing_count": 1,
-      "status_labels": "清唱、自动识别待人工复核",
-      "last_sing_at": "2026-08-23",
-      "row_key": "恋苦"
     },
     {
       "song_id": 105,
@@ -2802,27 +2886,6 @@ window.XSL_DATA = {
       "row_key": "迂回步"
     },
     {
-      "song_id": 48,
-      "song_name": "雨爱",
-      "show_as_song_name": "",
-      "display_song_name": "雨爱",
-      "artist": "杨丞琳",
-      "artist_search": "杨丞琳",
-      "feat_artist": "",
-      "remark": "直链页面 meta description 明示日期 2026.8.15 晚，标题直接给出真实歌曲名《雨爱》，可作为当日 song-cut-first 增量收录。",
-      "tone": "",
-      "language": "中文",
-      "type": "流行、影视",
-      "identification": "",
-      "display_version": "",
-      "search_name": "",
-      "cut_link": "https://www.bilibili.com/video/BV1YZbC6WEJJ/",
-      "sing_count": 1,
-      "status_labels": "歌切直补、待原始回放定位",
-      "last_sing_at": "2026-08-15",
-      "row_key": "雨爱"
-    },
-    {
       "song_id": 134,
       "song_name": "浴槽とネオンテトラ",
       "show_as_song_name": "",
@@ -2989,27 +3052,6 @@ window.XSL_DATA = {
       "status_labels": "歌回、自动识别待人工复核",
       "last_sing_at": "2026-08-20",
       "row_key": "Fly me to the star"
-    },
-    {
-      "song_id": 133,
-      "song_name": "Fly, My Wings",
-      "show_as_song_name": "",
-      "display_song_name": "Fly, My Wings",
-      "artist": "Mili",
-      "artist_search": "Fly, My Wings Mili",
-      "feat_artist": "",
-      "remark": "2026-09-03「也许康复的随便唱唱」21点场；歌切合集【桐人今天睡大觉】【小松绿Viridis】随便唱唱的歌回 歌切合集 2026.09.03 分P13（03:14）。Mili 乐团曲；原曲出处待复核（网易云单曲/八音盒版可见）。",
-      "tone": "",
-      "language": "日文/英文",
-      "type": "J-Pop、游戏（待复核出处）",
-      "identification": "",
-      "display_version": "",
-      "search_name": "",
-      "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=13",
-      "sing_count": 1,
-      "status_labels": "歌回",
-      "last_sing_at": "2026-09-03",
-      "row_key": "Fly, My Wings"
     },
     {
       "song_id": 135,
@@ -4818,27 +4860,6 @@ window.XSL_DATA = {
       "row_key": "Sincerely"
     },
     {
-      "song_id": 223,
-      "song_name": "からくりピエロ",
-      "show_as_song_name": "",
-      "display_song_name": "からくりピエロ",
-      "artist": "40mP / 初音ミク",
-      "artist_search": "40mP からくりピエロ 初音ミク",
-      "feat_artist": "",
-      "remark": "UP 桐人今天睡大觉《2026.09.23练歌歌切合集》P14",
-      "tone": "",
-      "language": "日文",
-      "type": "Vocaloid、J-Pop",
-      "identification": "",
-      "display_version": "",
-      "search_name": "",
-      "cut_link": "https://www.bilibili.com/video/BV1ouhW6GEoD/?p=14",
-      "sing_count": 1,
-      "status_labels": "歌回、歌切合集复核",
-      "last_sing_at": "2026-09-23",
-      "row_key": "からくりピエロ"
-    },
-    {
       "song_id": 218,
       "song_name": "ゴーストルール",
       "show_as_song_name": "",
@@ -5931,27 +5952,6 @@ window.XSL_DATA = {
       "row_key": "渊（Deep Down）"
     },
     {
-      "song_id": 277,
-      "song_name": "Little Wish",
-      "show_as_song_name": "",
-      "display_song_name": "Little Wish",
-      "artist": "塞壬唱片-MSR, WS MUSIC",
-      "artist_search": "塞壬唱片-MSR, WS MUSIC",
-      "feat_artist": "",
-      "remark": "",
-      "tone": "",
-      "language": "中文",
-      "type": "游戏",
-      "identification": "",
-      "display_version": "",
-      "search_name": "",
-      "cut_link": "https://www.bilibili.com/video/BV18Jpw6mE82/?p=10",
-      "sing_count": 1,
-      "status_labels": "歌回、歌切合集复核",
-      "last_sing_at": "2026-10-06",
-      "row_key": "Little Wish"
-    },
-    {
       "song_id": 278,
       "song_name": "Mystic Light Quest",
       "show_as_song_name": "",
@@ -7000,18 +7000,459 @@ window.XSL_DATA = {
       "status_labels": "歌回、歌切合集复核",
       "last_sing_at": "2026-10-21",
       "row_key": "猪之歌"
+    },
+    {
+      "song_id": 334,
+      "song_name": "TIAN TIAN",
+      "show_as_song_name": "",
+      "display_song_name": "TIAN TIAN",
+      "artist": "Mili",
+      "artist_search": "Mili",
+      "feat_artist": "",
+      "remark": "Mintolu 单曲歌切 BV1Kbx36VExF，desc 标注「绿神藏了手绿式英语 20261027 混乱水果小杂谈」。曲目为 Mili 2025-06-02 发行的《边狱巴士公司》（Limbus Company）第八章主题曲，中英混唱（音乐平台歌词含「今天明天期待每天」与英文主歌）。顺序按歌切上传顺序推定。",
+      "tone": "",
+      "language": "中文/英文",
+      "type": "游戏（原曲Mili）、J-Pop",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1Kbx36VExF/",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切直补",
+      "last_sing_at": "2026-10-27",
+      "row_key": "TIAN TIAN"
+    },
+    {
+      "song_id": 346,
+      "song_name": "哀温ノ詩",
+      "show_as_song_name": "",
+      "display_song_name": "哀温ノ詩",
+      "artist": "指出毬亜",
+      "artist_search": "指出毬亜",
+      "feat_artist": "",
+      "remark": "",
+      "tone": "",
+      "language": "日文",
+      "type": "LoveLive虹咲、偶像、J-Pop",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1naxj62Epw/?p=18",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-27",
+      "row_key": "哀温ノ詩"
+    },
+    {
+      "song_id": 340,
+      "song_name": "地球最後の告白を",
+      "show_as_song_name": "",
+      "display_song_name": "地球最後の告白を",
+      "artist": "kemu / GUMI",
+      "artist_search": "kemu / GUMI",
+      "feat_artist": "",
+      "remark": "",
+      "tone": "",
+      "language": "日文",
+      "type": "Vocaloid、J-Pop",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1naxj62Epw/?p=8",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-27",
+      "row_key": "地球最後の告白を"
+    },
+    {
+      "song_id": 338,
+      "song_name": "光与影的对白",
+      "show_as_song_name": "",
+      "display_song_name": "光与影的对白",
+      "artist": "洛天依",
+      "artist_search": "洛天依",
+      "feat_artist": "",
+      "remark": "",
+      "tone": "",
+      "language": "中文",
+      "type": "中V、流行",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1naxj62Epw/?p=6",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-27",
+      "row_key": "光与影的对白"
+    },
+    {
+      "song_id": 335,
+      "song_name": "甲乙丙丁",
+      "show_as_song_name": "",
+      "display_song_name": "甲乙丙丁",
+      "artist": "李佳薇",
+      "artist_search": "李佳薇",
+      "feat_artist": "",
+      "remark": "",
+      "tone": "",
+      "language": "中文",
+      "type": "流行",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1naxj62Epw/?p=1",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-27",
+      "row_key": "甲乙丙丁"
+    },
+    {
+      "song_id": 352,
+      "song_name": "恋愛脳",
+      "show_as_song_name": "",
+      "display_song_name": "恋愛脳",
+      "artist": "なきそ / 可不",
+      "artist_search": "なきそ / 可不",
+      "feat_artist": "",
+      "remark": "",
+      "tone": "",
+      "language": "日文",
+      "type": "日V、动画",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1naxj62Epw/?p=24",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-27",
+      "row_key": "恋愛脳"
+    },
+    {
+      "song_id": 350,
+      "song_name": "群青",
+      "show_as_song_name": "",
+      "display_song_name": "群青",
+      "artist": "YOASOBI",
+      "artist_search": "YOASOBI",
+      "feat_artist": "",
+      "remark": "",
+      "tone": "",
+      "language": "日文",
+      "type": "J-Pop、动画",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1naxj62Epw/?p=22",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-27",
+      "row_key": "群青"
+    },
+    {
+      "song_id": 337,
+      "song_name": "入秋的第一场雨真让人矫情",
+      "show_as_song_name": "",
+      "display_song_name": "入秋的第一场雨真让人矫情",
+      "artist": "",
+      "artist_search": "",
+      "feat_artist": "",
+      "remark": "合集分P只给出曲名，原唱/出处未核实，标记待复核。",
+      "tone": "",
+      "language": "中文",
+      "type": "待复核",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1naxj62Epw/?p=4",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-27",
+      "row_key": "入秋的第一场雨真让人矫情"
+    },
+    {
+      "song_id": 336,
+      "song_name": "天生反骨的鸵鸟",
+      "show_as_song_name": "",
+      "display_song_name": "天生反骨的鸵鸟",
+      "artist": "",
+      "artist_search": "",
+      "feat_artist": "",
+      "remark": "合集分P只给出曲名，原唱/出处未核实，标记待复核。",
+      "tone": "",
+      "language": "中文",
+      "type": "待复核",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1naxj62Epw/?p=2",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-27",
+      "row_key": "天生反骨的鸵鸟"
+    },
+    {
+      "song_id": 339,
+      "song_name": "星降る海",
+      "show_as_song_name": "",
+      "display_song_name": "星降る海",
+      "artist": "",
+      "artist_search": "",
+      "feat_artist": "",
+      "remark": "合集分P只给出曲名，原唱/出处未核实，标记待复核。",
+      "tone": "",
+      "language": "日文",
+      "type": "待复核",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1naxj62Epw/?p=7",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-27",
+      "row_key": "星降る海"
+    },
+    {
+      "song_id": 353,
+      "song_name": "一梦千宵",
+      "show_as_song_name": "",
+      "display_song_name": "一梦千宵",
+      "artist": "洛天依",
+      "artist_search": "洛天依",
+      "feat_artist": "",
+      "remark": "",
+      "tone": "",
+      "language": "中文",
+      "type": "中V、国风",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1naxj62Epw/?p=26",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-27",
+      "row_key": "一梦千宵"
+    },
+    {
+      "song_id": 345,
+      "song_name": "一人行者",
+      "show_as_song_name": "",
+      "display_song_name": "一人行者",
+      "artist": "",
+      "artist_search": "",
+      "feat_artist": "",
+      "remark": "合集分P只给出曲名，原唱/出处未核实，标记待复核。",
+      "tone": "",
+      "language": "中文",
+      "type": "待复核",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1naxj62Epw/?p=17",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-27",
+      "row_key": "一人行者"
+    },
+    {
+      "song_id": 347,
+      "song_name": "月夜見海月",
+      "show_as_song_name": "",
+      "display_song_name": "月夜見海月",
+      "artist": "乙宗梢",
+      "artist_search": "乙宗梢",
+      "feat_artist": "",
+      "remark": "",
+      "tone": "",
+      "language": "日文",
+      "type": "偶像、LoveLive",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1naxj62Epw/?p=19",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-27",
+      "row_key": "月夜見海月"
+    },
+    {
+      "song_id": 351,
+      "song_name": "祝福",
+      "show_as_song_name": "",
+      "display_song_name": "祝福",
+      "artist": "YOASOBI",
+      "artist_search": "YOASOBI",
+      "feat_artist": "",
+      "remark": "",
+      "tone": "",
+      "language": "日文",
+      "type": "J-Pop、动画",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1naxj62Epw/?p=23",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-27",
+      "row_key": "祝福"
+    },
+    {
+      "song_id": 349,
+      "song_name": "CQCQ",
+      "show_as_song_name": "",
+      "display_song_name": "CQCQ",
+      "artist": "",
+      "artist_search": "",
+      "feat_artist": "",
+      "remark": "合集分P只给出曲名，原唱/出处未核实，标记待复核。",
+      "tone": "",
+      "language": "日文",
+      "type": "待复核",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1naxj62Epw/?p=21",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-27",
+      "row_key": "CQCQ"
+    },
+    {
+      "song_id": 343,
+      "song_name": "Ditto",
+      "show_as_song_name": "",
+      "display_song_name": "Ditto",
+      "artist": "NewJeans",
+      "artist_search": "NewJeans",
+      "feat_artist": "",
+      "remark": "",
+      "tone": "",
+      "language": "韩文",
+      "type": "流行",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1naxj62Epw/?p=13",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-27",
+      "row_key": "Ditto"
+    },
+    {
+      "song_id": 348,
+      "song_name": "Fighting My Way",
+      "show_as_song_name": "",
+      "display_song_name": "Fighting My Way",
+      "artist": "",
+      "artist_search": "",
+      "feat_artist": "",
+      "remark": "合集分P只给出曲名，原唱/出处未核实，标记待复核。",
+      "tone": "",
+      "language": "日文",
+      "type": "待复核",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1naxj62Epw/?p=20",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-27",
+      "row_key": "Fighting My Way"
+    },
+    {
+      "song_id": 344,
+      "song_name": "SaIN",
+      "show_as_song_name": "",
+      "display_song_name": "SaIN",
+      "artist": "",
+      "artist_search": "",
+      "feat_artist": "",
+      "remark": "合集分P只给出曲名，原唱/出处未核实，标记待复核。",
+      "tone": "",
+      "language": "日文",
+      "type": "待复核",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1naxj62Epw/?p=14",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-27",
+      "row_key": "SaIN"
+    },
+    {
+      "song_id": 342,
+      "song_name": "オノマトペ",
+      "show_as_song_name": "",
+      "display_song_name": "オノマトペ",
+      "artist": "",
+      "artist_search": "",
+      "feat_artist": "",
+      "remark": "合集分P只给出曲名，原唱/出处未核实，标记待复核。",
+      "tone": "",
+      "language": "日文",
+      "type": "待复核",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1naxj62Epw/?p=10",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-27",
+      "row_key": "オノマトペ"
+    },
+    {
+      "song_id": 341,
+      "song_name": "ぼくのかみさま",
+      "show_as_song_name": "",
+      "display_song_name": "ぼくのかみさま",
+      "artist": "",
+      "artist_search": "",
+      "feat_artist": "",
+      "remark": "合集分P只给出曲名，原唱/出处未核实，标记待复核。",
+      "tone": "",
+      "language": "日文",
+      "type": "待复核",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1naxj62Epw/?p=9",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-27",
+      "row_key": "ぼくのかみさま"
+    },
+    {
+      "song_id": 354,
+      "song_name": "メルト",
+      "show_as_song_name": "",
+      "display_song_name": "メルト",
+      "artist": "ryo / 初音ミク",
+      "artist_search": "ryo / 初音ミク",
+      "feat_artist": "",
+      "remark": "",
+      "tone": "",
+      "language": "日文",
+      "type": "Vocaloid、J-Pop",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1naxj62Epw/?p=28",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-27",
+      "row_key": "メルト"
     }
   ]
 },
   history_index: {
   "roomKey": "xiaosonglu",
   "roomId": "1727071052",
-  "generatedAt": "2026-10-22T03:55:55.214Z",
+  "generatedAt": "2026-10-28T07:56:07.237Z",
   "source": "local-replay-ingestion",
   "latest": {
     "year": "2026",
     "month": "10",
-    "day": "21"
+    "day": "27"
   },
   "dateTree": {
     "2026": {
@@ -7021,6 +7462,7 @@ window.XSL_DATA = {
         "18": 23,
         "19": 1,
         "21": 8,
+        "27": 28,
         "08": 5,
         "06": 17,
         "02": 33
@@ -14397,13 +14839,519 @@ window.XSL_DATA = {
         "song_resolution_method": "song-cut-compilation-chapter",
         "cut_link": "https://www.bilibili.com/video/BV1d6n66fEgy/?p=8"
       }
+    ],
+    "2026-10-27": [
+      {
+        "song_name": "TIAN TIAN",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切直补"
+        ],
+        "artist": "Mili",
+        "replay_id": "live:3823cdb9-0609-4496-a75a-330e5f5e01a3",
+        "replay_title": "【小松绿Viridis】混乱水果小杂谈 2026-10-27",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "TIAN TIAN",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-title",
+        "cut_link": "https://www.bilibili.com/video/BV1Kbx36VExF/"
+      },
+      {
+        "song_name": "甲乙丙丁",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "李佳薇",
+        "replay_id": "live:3823cdb9-0609-4496-a75a-330e5f5e01a3",
+        "replay_title": "【小松绿Viridis】混乱水果小杂谈 2026-10-27",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "甲乙丙丁",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1naxj62Epw/?p=1"
+      },
+      {
+        "song_name": "Fly, My Wings",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切直补"
+        ],
+        "artist": "Mili",
+        "replay_id": "live:3823cdb9-0609-4496-a75a-330e5f5e01a3",
+        "replay_title": "【小松绿Viridis】混乱水果小杂谈 2026-10-27",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "Fly, My Wings",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-title",
+        "cut_link": "https://www.bilibili.com/video/BV1T4x36yEws/"
+      },
+      {
+        "song_name": "天生反骨的鸵鸟",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "",
+        "replay_id": "live:3823cdb9-0609-4496-a75a-330e5f5e01a3",
+        "replay_title": "【小松绿Viridis】混乱水果小杂谈 2026-10-27",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "天生反骨的鸵鸟",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1naxj62Epw/?p=2"
+      },
+      {
+        "song_name": "Little Wish",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "塞壬唱片-MSR, WS MUSIC",
+        "replay_id": "live:3823cdb9-0609-4496-a75a-330e5f5e01a3",
+        "replay_title": "【小松绿Viridis】混乱水果小杂谈 2026-10-27",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "Little Wish",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1naxj62Epw/?p=3"
+      },
+      {
+        "song_name": "入秋的第一场雨真让人矫情",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "",
+        "replay_id": "live:3823cdb9-0609-4496-a75a-330e5f5e01a3",
+        "replay_title": "【小松绿Viridis】混乱水果小杂谈 2026-10-27",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "入秋的第一场雨真让人矫情",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1naxj62Epw/?p=4"
+      },
+      {
+        "song_name": "雨爱",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "杨丞琳",
+        "replay_id": "live:3823cdb9-0609-4496-a75a-330e5f5e01a3",
+        "replay_title": "【小松绿Viridis】混乱水果小杂谈 2026-10-27",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "雨爱",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1naxj62Epw/?p=5"
+      },
+      {
+        "song_name": "光与影的对白",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "洛天依",
+        "replay_id": "live:3823cdb9-0609-4496-a75a-330e5f5e01a3",
+        "replay_title": "【小松绿Viridis】混乱水果小杂谈 2026-10-27",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "光与影的对白",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1naxj62Epw/?p=6"
+      },
+      {
+        "song_name": "星降る海",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "",
+        "replay_id": "live:3823cdb9-0609-4496-a75a-330e5f5e01a3",
+        "replay_title": "【小松绿Viridis】混乱水果小杂谈 2026-10-27",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "星降る海",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1naxj62Epw/?p=7"
+      },
+      {
+        "song_name": "地球最後の告白を",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "kemu / GUMI",
+        "replay_id": "live:3823cdb9-0609-4496-a75a-330e5f5e01a3",
+        "replay_title": "【小松绿Viridis】混乱水果小杂谈 2026-10-27",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "地球最後の告白を",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1naxj62Epw/?p=8"
+      },
+      {
+        "song_name": "ぼくのかみさま",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "",
+        "replay_id": "live:3823cdb9-0609-4496-a75a-330e5f5e01a3",
+        "replay_title": "【小松绿Viridis】混乱水果小杂谈 2026-10-27",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "ぼくのかみさま",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1naxj62Epw/?p=9"
+      },
+      {
+        "song_name": "オノマトペ",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "",
+        "replay_id": "live:3823cdb9-0609-4496-a75a-330e5f5e01a3",
+        "replay_title": "【小松绿Viridis】混乱水果小杂谈 2026-10-27",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "オノマトペ",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1naxj62Epw/?p=10"
+      },
+      {
+        "song_name": "Ditto",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "NewJeans",
+        "replay_id": "live:3823cdb9-0609-4496-a75a-330e5f5e01a3",
+        "replay_title": "【小松绿Viridis】混乱水果小杂谈 2026-10-27",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "Ditto",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1naxj62Epw/?p=13"
+      },
+      {
+        "song_name": "SaIN",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "",
+        "replay_id": "live:3823cdb9-0609-4496-a75a-330e5f5e01a3",
+        "replay_title": "【小松绿Viridis】混乱水果小杂谈 2026-10-27",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "SaIN",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1naxj62Epw/?p=14"
+      },
+      {
+        "song_name": "恋苦",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "红磷P / 洛天依",
+        "replay_id": "live:3823cdb9-0609-4496-a75a-330e5f5e01a3",
+        "replay_title": "【小松绿Viridis】混乱水果小杂谈 2026-10-27",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "恋苦",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1naxj62Epw/?p=15"
+      },
+      {
+        "song_name": "光",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "牧心",
+        "replay_id": "live:3823cdb9-0609-4496-a75a-330e5f5e01a3",
+        "replay_title": "【小松绿Viridis】混乱水果小杂谈 2026-10-27",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "光",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1naxj62Epw/?p=16"
+      },
+      {
+        "song_name": "一人行者",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "",
+        "replay_id": "live:3823cdb9-0609-4496-a75a-330e5f5e01a3",
+        "replay_title": "【小松绿Viridis】混乱水果小杂谈 2026-10-27",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "一人行者",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1naxj62Epw/?p=17"
+      },
+      {
+        "song_name": "哀温ノ詩",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "指出毬亜",
+        "replay_id": "live:3823cdb9-0609-4496-a75a-330e5f5e01a3",
+        "replay_title": "【小松绿Viridis】混乱水果小杂谈 2026-10-27",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "哀温ノ詩",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1naxj62Epw/?p=18"
+      },
+      {
+        "song_name": "月夜見海月",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "乙宗梢",
+        "replay_id": "live:3823cdb9-0609-4496-a75a-330e5f5e01a3",
+        "replay_title": "【小松绿Viridis】混乱水果小杂谈 2026-10-27",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "月夜見海月",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1naxj62Epw/?p=19"
+      },
+      {
+        "song_name": "Fighting My Way",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "",
+        "replay_id": "live:3823cdb9-0609-4496-a75a-330e5f5e01a3",
+        "replay_title": "【小松绿Viridis】混乱水果小杂谈 2026-10-27",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "Fighting My Way",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1naxj62Epw/?p=20"
+      },
+      {
+        "song_name": "CQCQ",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "",
+        "replay_id": "live:3823cdb9-0609-4496-a75a-330e5f5e01a3",
+        "replay_title": "【小松绿Viridis】混乱水果小杂谈 2026-10-27",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "CQCQ",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1naxj62Epw/?p=21"
+      },
+      {
+        "song_name": "群青",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "YOASOBI",
+        "replay_id": "live:3823cdb9-0609-4496-a75a-330e5f5e01a3",
+        "replay_title": "【小松绿Viridis】混乱水果小杂谈 2026-10-27",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "群青",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1naxj62Epw/?p=22"
+      },
+      {
+        "song_name": "祝福",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "YOASOBI",
+        "replay_id": "live:3823cdb9-0609-4496-a75a-330e5f5e01a3",
+        "replay_title": "【小松绿Viridis】混乱水果小杂谈 2026-10-27",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "祝福",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1naxj62Epw/?p=23"
+      },
+      {
+        "song_name": "恋愛脳",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "なきそ / 可不",
+        "replay_id": "live:3823cdb9-0609-4496-a75a-330e5f5e01a3",
+        "replay_title": "【小松绿Viridis】混乱水果小杂谈 2026-10-27",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "恋愛脳",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1naxj62Epw/?p=24"
+      },
+      {
+        "song_name": "花の塔",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "さユり",
+        "replay_id": "live:3823cdb9-0609-4496-a75a-330e5f5e01a3",
+        "replay_title": "【小松绿Viridis】混乱水果小杂谈 2026-10-27",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "花の塔",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1naxj62Epw/?p=25"
+      },
+      {
+        "song_name": "一梦千宵",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "洛天依",
+        "replay_id": "live:3823cdb9-0609-4496-a75a-330e5f5e01a3",
+        "replay_title": "【小松绿Viridis】混乱水果小杂谈 2026-10-27",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "一梦千宵",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1naxj62Epw/?p=26"
+      },
+      {
+        "song_name": "からくりピエロ",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "40mP / 初音ミク",
+        "replay_id": "live:3823cdb9-0609-4496-a75a-330e5f5e01a3",
+        "replay_title": "【小松绿Viridis】混乱水果小杂谈 2026-10-27",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "からくりピエロ",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1naxj62Epw/?p=27"
+      },
+      {
+        "song_name": "メルト",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "ryo / 初音ミク",
+        "replay_id": "live:3823cdb9-0609-4496-a75a-330e5f5e01a3",
+        "replay_title": "【小松绿Viridis】混乱水果小杂谈 2026-10-27",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "メルト",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1naxj62Epw/?p=28"
+      }
     ]
   }
 },
   song_details: {
   "roomKey": "xiaosonglu",
   "roomId": "1727071052",
-  "generatedAt": "2026-10-22T03:55:55.214Z",
+  "generatedAt": "2026-10-28T07:56:07.237Z",
   "source": "local-replay-ingestion",
   "bySongKey": {
     "少女レイ": {
@@ -16067,8 +17015,23 @@ window.XSL_DATA = {
       "display_song_name": "雨爱",
       "artist": "杨丞琳",
       "cut_link": "https://www.bilibili.com/video/BV1YZbC6WEJJ/",
-      "total_count": 1,
+      "total_count": 2,
       "entries": [
+        {
+          "date": "2026-10-27",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "杨丞琳",
+          "replay_id": "live:3823cdb9-0609-4496-a75a-330e5f5e01a3",
+          "replay_title": "【小松绿Viridis】混乱水果小杂谈 2026-10-27",
+          "replay_url": "",
+          "remark": "",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-collection-chapter",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1naxj62Epw/?p=5"
+        },
         {
           "date": "2026-08-15",
           "time": "",
@@ -17437,8 +18400,23 @@ window.XSL_DATA = {
       "display_song_name": "恋苦",
       "artist": "月犬P / 星尘",
       "cut_link": "https://www.bilibili.com/video/BV1m9886kEMZ/?p=2",
-      "total_count": 1,
+      "total_count": 2,
       "entries": [
+        {
+          "date": "2026-10-27",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "红磷P / 洛天依",
+          "replay_id": "live:3823cdb9-0609-4496-a75a-330e5f5e01a3",
+          "replay_title": "【小松绿Viridis】混乱水果小杂谈 2026-10-27",
+          "replay_url": "",
+          "remark": "",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-collection-chapter",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1naxj62Epw/?p=15"
+        },
         {
           "date": "2026-08-23",
           "time": "02:21:13",
@@ -17462,8 +18440,23 @@ window.XSL_DATA = {
       "display_song_name": "光",
       "artist": "Kide / Ddickky / 星尘",
       "cut_link": "https://www.bilibili.com/video/BV1m9886kEMZ/?p=4",
-      "total_count": 1,
+      "total_count": 2,
       "entries": [
+        {
+          "date": "2026-10-27",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "牧心",
+          "replay_id": "live:3823cdb9-0609-4496-a75a-330e5f5e01a3",
+          "replay_title": "【小松绿Viridis】混乱水果小杂谈 2026-10-27",
+          "replay_url": "",
+          "remark": "",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-collection-chapter",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1naxj62Epw/?p=16"
+        },
         {
           "date": "2026-08-23",
           "time": "02:33:30",
@@ -18552,8 +19545,23 @@ window.XSL_DATA = {
       "display_song_name": "Fly, My Wings",
       "artist": "Mili",
       "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=13",
-      "total_count": 1,
+      "total_count": 2,
       "entries": [
+        {
+          "date": "2026-10-27",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切直补",
+          "artist": "Mili",
+          "replay_id": "live:3823cdb9-0609-4496-a75a-330e5f5e01a3",
+          "replay_title": "【小松绿Viridis】混乱水果小杂谈 2026-10-27",
+          "replay_url": "",
+          "remark": "Mintolu 单曲歌切 BV1T4x36yEws，desc 标注「20261027 混乱水果小杂谈」。弹幕 03:12:30「wings也干了」、03:12:58「fly my yls」与曲名对应。artist/type 沿用站内 2026-09-03 既有记录。",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-title",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1T4x36yEws/"
+        },
         {
           "date": "2026-09-03",
           "time": "",
@@ -18652,8 +19660,23 @@ window.XSL_DATA = {
       "display_song_name": "花の塔",
       "artist": "さユり",
       "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=18",
-      "total_count": 1,
+      "total_count": 2,
       "entries": [
+        {
+          "date": "2026-10-27",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "さユり",
+          "replay_id": "live:3823cdb9-0609-4496-a75a-330e5f5e01a3",
+          "replay_title": "【小松绿Viridis】混乱水果小杂谈 2026-10-27",
+          "replay_url": "",
+          "remark": "",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-collection-chapter",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1naxj62Epw/?p=25"
+        },
         {
           "date": "2026-09-03",
           "time": "",
@@ -21012,8 +22035,23 @@ window.XSL_DATA = {
       "display_song_name": "からくりピエロ",
       "artist": "40mP / 初音ミク",
       "cut_link": "https://www.bilibili.com/video/BV1ouhW6GEoD/?p=14",
-      "total_count": 1,
+      "total_count": 2,
       "entries": [
+        {
+          "date": "2026-10-27",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "40mP / 初音ミク",
+          "replay_id": "live:3823cdb9-0609-4496-a75a-330e5f5e01a3",
+          "replay_title": "【小松绿Viridis】混乱水果小杂谈 2026-10-27",
+          "replay_url": "",
+          "remark": "",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-collection-chapter",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1naxj62Epw/?p=27"
+        },
         {
           "date": "2026-09-23",
           "time": "",
@@ -22407,8 +23445,23 @@ window.XSL_DATA = {
       "display_song_name": "Little Wish",
       "artist": "塞壬唱片-MSR, WS MUSIC",
       "cut_link": "https://www.bilibili.com/video/BV18Jpw6mE82/?p=10",
-      "total_count": 1,
+      "total_count": 2,
       "entries": [
+        {
+          "date": "2026-10-27",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "塞壬唱片-MSR, WS MUSIC",
+          "replay_id": "live:3823cdb9-0609-4496-a75a-330e5f5e01a3",
+          "replay_title": "【小松绿Viridis】混乱水果小杂谈 2026-10-27",
+          "replay_url": "",
+          "remark": "",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-collection-chapter",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1naxj62Epw/?p=3"
+        },
         {
           "date": "2026-10-06",
           "time": "",
@@ -23840,16 +24893,541 @@ window.XSL_DATA = {
           "cut_link": "https://www.bilibili.com/video/BV1d6n66fEgy/?p=8"
         }
       ]
+    },
+    "TIAN TIAN": {
+      "row_key": "TIAN TIAN",
+      "song_name": "TIAN TIAN",
+      "display_song_name": "TIAN TIAN",
+      "artist": "Mili",
+      "cut_link": "https://www.bilibili.com/video/BV1Kbx36VExF/",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-10-27",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切直补",
+          "artist": "Mili",
+          "replay_id": "live:3823cdb9-0609-4496-a75a-330e5f5e01a3",
+          "replay_title": "【小松绿Viridis】混乱水果小杂谈 2026-10-27",
+          "replay_url": "",
+          "remark": "Mintolu 单曲歌切 BV1Kbx36VExF，desc 标注「绿神藏了手绿式英语 20261027 混乱水果小杂谈」。曲目为 Mili 2025-06-02 发行的《边狱巴士公司》（Limbus Company）第八章主题曲，中英混唱（音乐平台歌词含「今天明天期待每天」与英文主歌）。顺序按歌切上传顺序推定。",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-title",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1Kbx36VExF/"
+        }
+      ]
+    },
+    "甲乙丙丁": {
+      "row_key": "甲乙丙丁",
+      "song_name": "甲乙丙丁",
+      "display_song_name": "甲乙丙丁",
+      "artist": "李佳薇",
+      "cut_link": "https://www.bilibili.com/video/BV1naxj62Epw/?p=1",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-10-27",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "李佳薇",
+          "replay_id": "live:3823cdb9-0609-4496-a75a-330e5f5e01a3",
+          "replay_title": "【小松绿Viridis】混乱水果小杂谈 2026-10-27",
+          "replay_url": "",
+          "remark": "",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-collection-chapter",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1naxj62Epw/?p=1"
+        }
+      ]
+    },
+    "天生反骨的鸵鸟": {
+      "row_key": "天生反骨的鸵鸟",
+      "song_name": "天生反骨的鸵鸟",
+      "display_song_name": "天生反骨的鸵鸟",
+      "artist": "",
+      "cut_link": "https://www.bilibili.com/video/BV1naxj62Epw/?p=2",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-10-27",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "",
+          "replay_id": "live:3823cdb9-0609-4496-a75a-330e5f5e01a3",
+          "replay_title": "【小松绿Viridis】混乱水果小杂谈 2026-10-27",
+          "replay_url": "",
+          "remark": "合集分P只给出曲名，原唱/出处未核实，标记待复核。",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-collection-chapter",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1naxj62Epw/?p=2"
+        }
+      ]
+    },
+    "入秋的第一场雨真让人矫情": {
+      "row_key": "入秋的第一场雨真让人矫情",
+      "song_name": "入秋的第一场雨真让人矫情",
+      "display_song_name": "入秋的第一场雨真让人矫情",
+      "artist": "",
+      "cut_link": "https://www.bilibili.com/video/BV1naxj62Epw/?p=4",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-10-27",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "",
+          "replay_id": "live:3823cdb9-0609-4496-a75a-330e5f5e01a3",
+          "replay_title": "【小松绿Viridis】混乱水果小杂谈 2026-10-27",
+          "replay_url": "",
+          "remark": "合集分P只给出曲名，原唱/出处未核实，标记待复核。",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-collection-chapter",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1naxj62Epw/?p=4"
+        }
+      ]
+    },
+    "光与影的对白": {
+      "row_key": "光与影的对白",
+      "song_name": "光与影的对白",
+      "display_song_name": "光与影的对白",
+      "artist": "洛天依",
+      "cut_link": "https://www.bilibili.com/video/BV1naxj62Epw/?p=6",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-10-27",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "洛天依",
+          "replay_id": "live:3823cdb9-0609-4496-a75a-330e5f5e01a3",
+          "replay_title": "【小松绿Viridis】混乱水果小杂谈 2026-10-27",
+          "replay_url": "",
+          "remark": "",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-collection-chapter",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1naxj62Epw/?p=6"
+        }
+      ]
+    },
+    "星降る海": {
+      "row_key": "星降る海",
+      "song_name": "星降る海",
+      "display_song_name": "星降る海",
+      "artist": "",
+      "cut_link": "https://www.bilibili.com/video/BV1naxj62Epw/?p=7",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-10-27",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "",
+          "replay_id": "live:3823cdb9-0609-4496-a75a-330e5f5e01a3",
+          "replay_title": "【小松绿Viridis】混乱水果小杂谈 2026-10-27",
+          "replay_url": "",
+          "remark": "合集分P只给出曲名，原唱/出处未核实，标记待复核。",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-collection-chapter",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1naxj62Epw/?p=7"
+        }
+      ]
+    },
+    "地球最後の告白を": {
+      "row_key": "地球最後の告白を",
+      "song_name": "地球最後の告白を",
+      "display_song_name": "地球最後の告白を",
+      "artist": "kemu / GUMI",
+      "cut_link": "https://www.bilibili.com/video/BV1naxj62Epw/?p=8",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-10-27",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "kemu / GUMI",
+          "replay_id": "live:3823cdb9-0609-4496-a75a-330e5f5e01a3",
+          "replay_title": "【小松绿Viridis】混乱水果小杂谈 2026-10-27",
+          "replay_url": "",
+          "remark": "",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-collection-chapter",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1naxj62Epw/?p=8"
+        }
+      ]
+    },
+    "ぼくのかみさま": {
+      "row_key": "ぼくのかみさま",
+      "song_name": "ぼくのかみさま",
+      "display_song_name": "ぼくのかみさま",
+      "artist": "",
+      "cut_link": "https://www.bilibili.com/video/BV1naxj62Epw/?p=9",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-10-27",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "",
+          "replay_id": "live:3823cdb9-0609-4496-a75a-330e5f5e01a3",
+          "replay_title": "【小松绿Viridis】混乱水果小杂谈 2026-10-27",
+          "replay_url": "",
+          "remark": "合集分P只给出曲名，原唱/出处未核实，标记待复核。",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-collection-chapter",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1naxj62Epw/?p=9"
+        }
+      ]
+    },
+    "オノマトペ": {
+      "row_key": "オノマトペ",
+      "song_name": "オノマトペ",
+      "display_song_name": "オノマトペ",
+      "artist": "",
+      "cut_link": "https://www.bilibili.com/video/BV1naxj62Epw/?p=10",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-10-27",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "",
+          "replay_id": "live:3823cdb9-0609-4496-a75a-330e5f5e01a3",
+          "replay_title": "【小松绿Viridis】混乱水果小杂谈 2026-10-27",
+          "replay_url": "",
+          "remark": "合集分P只给出曲名，原唱/出处未核实，标记待复核。",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-collection-chapter",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1naxj62Epw/?p=10"
+        }
+      ]
+    },
+    "Ditto": {
+      "row_key": "Ditto",
+      "song_name": "Ditto",
+      "display_song_name": "Ditto",
+      "artist": "NewJeans",
+      "cut_link": "https://www.bilibili.com/video/BV1naxj62Epw/?p=13",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-10-27",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "NewJeans",
+          "replay_id": "live:3823cdb9-0609-4496-a75a-330e5f5e01a3",
+          "replay_title": "【小松绿Viridis】混乱水果小杂谈 2026-10-27",
+          "replay_url": "",
+          "remark": "",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-collection-chapter",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1naxj62Epw/?p=13"
+        }
+      ]
+    },
+    "SaIN": {
+      "row_key": "SaIN",
+      "song_name": "SaIN",
+      "display_song_name": "SaIN",
+      "artist": "",
+      "cut_link": "https://www.bilibili.com/video/BV1naxj62Epw/?p=14",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-10-27",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "",
+          "replay_id": "live:3823cdb9-0609-4496-a75a-330e5f5e01a3",
+          "replay_title": "【小松绿Viridis】混乱水果小杂谈 2026-10-27",
+          "replay_url": "",
+          "remark": "合集分P只给出曲名，原唱/出处未核实，标记待复核。",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-collection-chapter",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1naxj62Epw/?p=14"
+        }
+      ]
+    },
+    "一人行者": {
+      "row_key": "一人行者",
+      "song_name": "一人行者",
+      "display_song_name": "一人行者",
+      "artist": "",
+      "cut_link": "https://www.bilibili.com/video/BV1naxj62Epw/?p=17",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-10-27",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "",
+          "replay_id": "live:3823cdb9-0609-4496-a75a-330e5f5e01a3",
+          "replay_title": "【小松绿Viridis】混乱水果小杂谈 2026-10-27",
+          "replay_url": "",
+          "remark": "合集分P只给出曲名，原唱/出处未核实，标记待复核。",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-collection-chapter",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1naxj62Epw/?p=17"
+        }
+      ]
+    },
+    "哀温ノ詩": {
+      "row_key": "哀温ノ詩",
+      "song_name": "哀温ノ詩",
+      "display_song_name": "哀温ノ詩",
+      "artist": "指出毬亜",
+      "cut_link": "https://www.bilibili.com/video/BV1naxj62Epw/?p=18",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-10-27",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "指出毬亜",
+          "replay_id": "live:3823cdb9-0609-4496-a75a-330e5f5e01a3",
+          "replay_title": "【小松绿Viridis】混乱水果小杂谈 2026-10-27",
+          "replay_url": "",
+          "remark": "",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-collection-chapter",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1naxj62Epw/?p=18"
+        }
+      ]
+    },
+    "月夜見海月": {
+      "row_key": "月夜見海月",
+      "song_name": "月夜見海月",
+      "display_song_name": "月夜見海月",
+      "artist": "乙宗梢",
+      "cut_link": "https://www.bilibili.com/video/BV1naxj62Epw/?p=19",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-10-27",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "乙宗梢",
+          "replay_id": "live:3823cdb9-0609-4496-a75a-330e5f5e01a3",
+          "replay_title": "【小松绿Viridis】混乱水果小杂谈 2026-10-27",
+          "replay_url": "",
+          "remark": "",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-collection-chapter",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1naxj62Epw/?p=19"
+        }
+      ]
+    },
+    "Fighting My Way": {
+      "row_key": "Fighting My Way",
+      "song_name": "Fighting My Way",
+      "display_song_name": "Fighting My Way",
+      "artist": "",
+      "cut_link": "https://www.bilibili.com/video/BV1naxj62Epw/?p=20",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-10-27",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "",
+          "replay_id": "live:3823cdb9-0609-4496-a75a-330e5f5e01a3",
+          "replay_title": "【小松绿Viridis】混乱水果小杂谈 2026-10-27",
+          "replay_url": "",
+          "remark": "合集分P只给出曲名，原唱/出处未核实，标记待复核。",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-collection-chapter",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1naxj62Epw/?p=20"
+        }
+      ]
+    },
+    "CQCQ": {
+      "row_key": "CQCQ",
+      "song_name": "CQCQ",
+      "display_song_name": "CQCQ",
+      "artist": "",
+      "cut_link": "https://www.bilibili.com/video/BV1naxj62Epw/?p=21",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-10-27",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "",
+          "replay_id": "live:3823cdb9-0609-4496-a75a-330e5f5e01a3",
+          "replay_title": "【小松绿Viridis】混乱水果小杂谈 2026-10-27",
+          "replay_url": "",
+          "remark": "合集分P只给出曲名，原唱/出处未核实，标记待复核。",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-collection-chapter",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1naxj62Epw/?p=21"
+        }
+      ]
+    },
+    "群青": {
+      "row_key": "群青",
+      "song_name": "群青",
+      "display_song_name": "群青",
+      "artist": "YOASOBI",
+      "cut_link": "https://www.bilibili.com/video/BV1naxj62Epw/?p=22",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-10-27",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "YOASOBI",
+          "replay_id": "live:3823cdb9-0609-4496-a75a-330e5f5e01a3",
+          "replay_title": "【小松绿Viridis】混乱水果小杂谈 2026-10-27",
+          "replay_url": "",
+          "remark": "",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-collection-chapter",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1naxj62Epw/?p=22"
+        }
+      ]
+    },
+    "祝福": {
+      "row_key": "祝福",
+      "song_name": "祝福",
+      "display_song_name": "祝福",
+      "artist": "YOASOBI",
+      "cut_link": "https://www.bilibili.com/video/BV1naxj62Epw/?p=23",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-10-27",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "YOASOBI",
+          "replay_id": "live:3823cdb9-0609-4496-a75a-330e5f5e01a3",
+          "replay_title": "【小松绿Viridis】混乱水果小杂谈 2026-10-27",
+          "replay_url": "",
+          "remark": "",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-collection-chapter",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1naxj62Epw/?p=23"
+        }
+      ]
+    },
+    "恋愛脳": {
+      "row_key": "恋愛脳",
+      "song_name": "恋愛脳",
+      "display_song_name": "恋愛脳",
+      "artist": "なきそ / 可不",
+      "cut_link": "https://www.bilibili.com/video/BV1naxj62Epw/?p=24",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-10-27",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "なきそ / 可不",
+          "replay_id": "live:3823cdb9-0609-4496-a75a-330e5f5e01a3",
+          "replay_title": "【小松绿Viridis】混乱水果小杂谈 2026-10-27",
+          "replay_url": "",
+          "remark": "",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-collection-chapter",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1naxj62Epw/?p=24"
+        }
+      ]
+    },
+    "一梦千宵": {
+      "row_key": "一梦千宵",
+      "song_name": "一梦千宵",
+      "display_song_name": "一梦千宵",
+      "artist": "洛天依",
+      "cut_link": "https://www.bilibili.com/video/BV1naxj62Epw/?p=26",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-10-27",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "洛天依",
+          "replay_id": "live:3823cdb9-0609-4496-a75a-330e5f5e01a3",
+          "replay_title": "【小松绿Viridis】混乱水果小杂谈 2026-10-27",
+          "replay_url": "",
+          "remark": "",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-collection-chapter",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1naxj62Epw/?p=26"
+        }
+      ]
+    },
+    "メルト": {
+      "row_key": "メルト",
+      "song_name": "メルト",
+      "display_song_name": "メルト",
+      "artist": "ryo / 初音ミク",
+      "cut_link": "https://www.bilibili.com/video/BV1naxj62Epw/?p=28",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-10-27",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "ryo / 初音ミク",
+          "replay_id": "live:3823cdb9-0609-4496-a75a-330e5f5e01a3",
+          "replay_title": "【小松绿Viridis】混乱水果小杂谈 2026-10-27",
+          "replay_url": "",
+          "remark": "",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-collection-chapter",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1naxj62Epw/?p=28"
+        }
+      ]
     }
   }
 },
   audio_index: {
   "roomKey": "xiaosonglu",
   "roomId": "1727071052",
-  "generatedAt": "2026-10-22T03:56:24.080Z",
+  "generatedAt": "2026-10-28T07:57:40.826Z",
   "source": "song-cut-audio-download",
   "description": "每首歌对应的翻唱切片音频（从 B 站歌切/回放下载），供网页在线播放。",
-  "count": 331,
+  "count": 352,
   "audios": {
     "勾指起誓": "assets/audio/song_88.m4a?v=1d344dfde754",
     "蝴蝶": "assets/audio/song_25.m4a?v=d8fb99252c26",
@@ -23857,7 +25435,7 @@ window.XSL_DATA = {
     "绿色": "assets/audio/song_103.m4a?v=d264ad8acdc6",
     "偏食": "assets/audio/song_38.m4a?v=f7c7ec22d592",
     "三月雨": "assets/audio/song_03.m4a?v=6d6afb1988c8",
-    "少女レイ": "assets/audio/song_04.m4a?v=403d63cb1909",
+    "少女レイ": "assets/audio/song_04.m4a?v=4b153fac38db",
     "食虫植物": "assets/audio/song_46.m4a?v=a15cb9a1e43f",
     "下等马": "assets/audio/song_64.m4a?v=76685d4492c6",
     "Virtual to LIVE": "assets/audio/song_05.m4a?v=afa0296658c6",
@@ -23970,7 +25548,7 @@ window.XSL_DATA = {
     "CHASE!": "assets/audio/song_74.m4a?v=7bec97dcd834",
     "flos": "assets/audio/song_75.m4a?v=25c48adec33d",
     "Fly me to the star": "assets/audio/song_76.m4a?v=131633c96931",
-    "Fly, My Wings": "assets/audio/song_132.m4a?v=2f53877e2f8c",
+    "Fly, My Wings": "assets/audio/song_132.m4a?v=67342f6f9431",
     "I LOVE U": "assets/audio/song_77.m4a?v=264436f98d12",
     "March of Time": "assets/audio/song_134.m4a?v=e98c942e7e57",
     "MORE JUMP MORE!": "assets/audio/song_78.m4a?v=97565984b932",
@@ -24181,22 +25759,45 @@ window.XSL_DATA = {
     "束花线": "assets/audio/song_329.m4a?v=1e9278c6faae",
     "数鸭子": "assets/audio/song_330.m4a?v=ca8b1e86302e",
     "蓝精灵": "assets/audio/song_331.m4a?v=4214a2eec7a7",
-    "我是一个粉刷匠": "assets/audio/song_332.m4a?v=ecbc1b5d7627"
+    "我是一个粉刷匠": "assets/audio/song_332.m4a?v=ecbc1b5d7627",
+    "TIAN TIAN": "assets/audio/song_333.m4a?v=d8d05a6e8f5b",
+    "甲乙丙丁": "assets/audio/song_334.m4a?v=c9207e1dd995",
+    "天生反骨的鸵鸟": "assets/audio/song_335.m4a?v=6ec1950b17be",
+    "入秋的第一场雨真让人矫情": "assets/audio/song_336.m4a?v=3451ef1b073f",
+    "光与影的对白": "assets/audio/song_337.m4a?v=e478a10095ab",
+    "星降る海": "assets/audio/song_338.m4a?v=edc4e13dfeb3",
+    "地球最後の告白を": "assets/audio/song_339.m4a?v=be2d302df528",
+    "ぼくのかみさま": "assets/audio/song_340.m4a?v=39b87b3fa021",
+    "オノマトペ": "assets/audio/song_341.m4a?v=e5538db14b24",
+    "Ditto": "assets/audio/song_342.m4a?v=67c6821f8634",
+    "SaIN": "assets/audio/song_343.m4a?v=3b88d7594175",
+    "一人行者": "assets/audio/song_344.m4a?v=7adfbd03ded6",
+    "哀温ノ詩": "assets/audio/song_345.m4a?v=727b7e964c81",
+    "月夜見海月": "assets/audio/song_346.m4a?v=5e8eff921141",
+    "Fighting My Way": "assets/audio/song_347.m4a?v=e2b16d249829",
+    "CQCQ": "assets/audio/song_348.m4a?v=21461e3688c7",
+    "群青": "assets/audio/song_349.m4a?v=598fe7412dcd",
+    "祝福": "assets/audio/song_350.m4a?v=ac17c955841d",
+    "恋愛脳": "assets/audio/song_351.m4a?v=23da350396a8",
+    "一梦千宵": "assets/audio/song_352.m4a?v=ca400566d35d",
+    "メルト": "assets/audio/song_353.m4a?v=0fd231ce3191"
   },
   "verificationTargets": [
     "中华墨水娘",
     "中华铄金娘",
     "ハッピーエンド",
-    "宇宙冷漠"
+    "宇宙冷漠",
+    "Fly, My Wings",
+    "少女レイ"
   ]
 },
   song_cut_info: {
   "roomKey": "xiaosonglu",
   "roomId": "1727071052",
-  "generatedAt": "2026-10-22T03:55:55.214Z",
+  "generatedAt": "2026-10-28T07:56:07.237Z",
   "source": "song-cut-title-index",
   "description": "每首歌对应的歌切切片标题（单曲歌切视频标题 / 合集分P标题），供前端歌切链接显示。",
-  "count": 333,
+  "count": 354,
   "cuts": {
     "（区）最终祈愿": {
       "title": "07_（区）最终祈愿 - 平行四界Quadimension, 星尘",
@@ -25862,6 +27463,111 @@ window.XSL_DATA = {
       "title": "08_我是一个粉刷匠 - 儿歌多多",
       "kind": "collection",
       "url": "https://www.bilibili.com/video/BV1d6n66fEgy/?p=8"
+    },
+    "TIAN TIAN": {
+      "title": "【小松绿Viridis/歌切】TIAN TIAN",
+      "kind": "single",
+      "url": "https://www.bilibili.com/video/BV1Kbx36VExF/"
+    },
+    "甲乙丙丁": {
+      "title": "甲乙丙丁",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1naxj62Epw/?p=1"
+    },
+    "天生反骨的鸵鸟": {
+      "title": "天生反骨的鸵鸟",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1naxj62Epw/?p=2"
+    },
+    "入秋的第一场雨真让人矫情": {
+      "title": "入秋的第一场雨真让人矫情",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1naxj62Epw/?p=4"
+    },
+    "光与影的对白": {
+      "title": "光与影的对白",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1naxj62Epw/?p=6"
+    },
+    "星降る海": {
+      "title": "星降る海",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1naxj62Epw/?p=7"
+    },
+    "地球最後の告白を": {
+      "title": "地球最後の告白を",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1naxj62Epw/?p=8"
+    },
+    "ぼくのかみさま": {
+      "title": "ぼくのかみさま",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1naxj62Epw/?p=9"
+    },
+    "オノマトペ": {
+      "title": "オノマトペ",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1naxj62Epw/?p=10"
+    },
+    "Ditto": {
+      "title": "Ditto",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1naxj62Epw/?p=13"
+    },
+    "SaIN": {
+      "title": "SaIN",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1naxj62Epw/?p=14"
+    },
+    "一人行者": {
+      "title": "一人行者",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1naxj62Epw/?p=17"
+    },
+    "哀温ノ詩": {
+      "title": "哀温ノ詩",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1naxj62Epw/?p=18"
+    },
+    "月夜見海月": {
+      "title": "月夜見海月",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1naxj62Epw/?p=19"
+    },
+    "Fighting My Way": {
+      "title": "Fighting My Way",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1naxj62Epw/?p=20"
+    },
+    "CQCQ": {
+      "title": "CQCQ",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1naxj62Epw/?p=21"
+    },
+    "群青": {
+      "title": "群青",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1naxj62Epw/?p=22"
+    },
+    "祝福": {
+      "title": "祝福",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1naxj62Epw/?p=23"
+    },
+    "恋愛脳": {
+      "title": "恋愛脳",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1naxj62Epw/?p=24"
+    },
+    "一梦千宵": {
+      "title": "一梦千宵",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1naxj62Epw/?p=26"
+    },
+    "メルト": {
+      "title": "メルト",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1naxj62Epw/?p=28"
     }
   }
 }
