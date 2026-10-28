@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-20T02:30:25.616Z",
-  "fingerprint": "cc2383138163fbf7",
+  "updatedAt": "2026-10-28T02:32:45.930Z",
+  "fingerprint": "2b9c1a0b79f655f0",
   "title": "10.19置顶更新（休息日随机掉落电台）",
   "pubTime": "8月17日",
   "dynamicId": "1237406371777871896",
@@ -11,8 +11,8 @@
       "file": "current.jpg",
       "width": 1920,
       "height": 1080,
-      "bytes": 2961677,
-      "sourceUrl": "http://i0.hdslb.com/bfs/new_dyn/6afda6bc3c1bc6082ed9ac45b9b154e51891335475.png"
+      "bytes": 901611,
+      "sourceUrl": "http://i0.hdslb.com/bfs/new_dyn/db0d5c4934ff8d0e90a62c04e166bf171891335475.jpg"
     }
   ]
 }
