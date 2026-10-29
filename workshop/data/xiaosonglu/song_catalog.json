@@ -1,7 +1,7 @@
 {
   "roomKey": "xiaosonglu",
   "roomId": "1727071052",
-  "generatedAt": "2026-10-28T07:56:07.237Z",
+  "generatedAt": "2026-10-29T02:11:50.201Z",
   "source": "local-replay-ingestion",
   "songs": [
     {
@@ -1452,6 +1452,27 @@
       "status_labels": "歌回、歌切合集复核",
       "last_sing_at": "2026-10-27",
       "row_key": "Little Wish"
+    },
+    {
+      "song_id": 138,
+      "song_name": "ミカヅキ",
+      "show_as_song_name": "",
+      "display_song_name": "ミカヅキ",
+      "artist": "さユり",
+      "artist_search": "ミカヅキ さユり",
+      "feat_artist": "",
+      "remark": "2026-09-03「也许康复的随便唱唱」21点场；歌切合集【桐人今天睡大觉】【小松绿Viridis】随便唱唱的歌回 歌切合集 2026.09.03 分P19（04:26）。さユり《乱步奇谭》ED。",
+      "tone": "",
+      "language": "日文",
+      "type": "动画、J-Pop",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=19",
+      "sing_count": 2,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-27",
+      "row_key": "ミカヅキ"
     },
     {
       "song_id": 52,
@@ -3279,27 +3300,6 @@
       "status_labels": "歌回",
       "last_sing_at": "2026-08-29",
       "row_key": "サリシノハラ"
-    },
-    {
-      "song_id": 138,
-      "song_name": "ミカヅキ",
-      "show_as_song_name": "",
-      "display_song_name": "ミカヅキ",
-      "artist": "さユり",
-      "artist_search": "ミカヅキ さユり",
-      "feat_artist": "",
-      "remark": "2026-09-03「也许康复的随便唱唱」21点场；歌切合集【桐人今天睡大觉】【小松绿Viridis】随便唱唱的歌回 歌切合集 2026.09.03 分P19（04:26）。さユり《乱步奇谭》ED。",
-      "tone": "",
-      "language": "日文",
-      "type": "动画、J-Pop",
-      "identification": "",
-      "display_version": "",
-      "search_name": "",
-      "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=19",
-      "sing_count": 1,
-      "status_labels": "歌回",
-      "last_sing_at": "2026-09-03",
-      "row_key": "ミカヅキ"
     },
     {
       "song_id": 146,
@@ -7437,6 +7437,27 @@
       "status_labels": "歌回、歌切合集复核",
       "last_sing_at": "2026-10-27",
       "row_key": "メルト"
+    },
+    {
+      "song_id": 355,
+      "song_name": "EMOTION",
+      "show_as_song_name": "",
+      "display_song_name": "EMOTION",
+      "artist": "三船栞子（小泉萌香）",
+      "artist_search": "三船栞子（小泉萌香）",
+      "feat_artist": "",
+      "remark": "出处核实：LoveLive！虹ヶ咲学園スクールアイドル同好会 2期第7话挿入歌，作词/作曲/编曲 tofubeats，TV size 1:40；桐人版分P时长 3:58。",
+      "tone": "",
+      "language": "日文",
+      "type": "LoveLive虹咲、偶像、J-Pop",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1HUx769Ejg/?p=17",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-27",
+      "row_key": "EMOTION"
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "roomKey": "xiaosonglu",
   "roomId": "1727071052",
-  "generatedAt": "2026-10-28T07:56:07.237Z",
+  "generatedAt": "2026-10-29T02:11:50.201Z",
   "source": "local-replay-ingestion",
   "latest": {
     "year": "2026",
@@ -16,7 +16,7 @@
         "18": 23,
         "19": 1,
         "21": 8,
-        "27": 28,
+        "27": 30,
         "08": 5,
         "06": 17,
         "02": 33
@@ -7702,6 +7702,24 @@
         "cut_link": "https://www.bilibili.com/video/BV1naxj62Epw/?p=17"
       },
       {
+        "song_name": "EMOTION",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "三船栞子（小泉萌香）",
+        "replay_id": "live:3823cdb9-0609-4496-a75a-330e5f5e01a3",
+        "replay_title": "【小松绿Viridis】混乱水果小杂谈 2026-10-27",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "EMOTION",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1HUx769Ejg/?p=17"
+      },
+      {
         "song_name": "哀温ノ詩",
         "sing_time": "",
         "statuses": [
@@ -7808,6 +7826,24 @@
         "lyric_excerpt": "",
         "song_resolution_method": "song-cut-collection-chapter",
         "cut_link": "https://www.bilibili.com/video/BV1naxj62Epw/?p=23"
+      },
+      {
+        "song_name": "ミカヅキ",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "さユり",
+        "replay_id": "live:3823cdb9-0609-4496-a75a-330e5f5e01a3",
+        "replay_title": "【小松绿Viridis】混乱水果小杂谈 2026-10-27",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "ミカヅキ",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1HUx769Ejg/?p=23"
       },
       {
         "song_name": "恋愛脳",

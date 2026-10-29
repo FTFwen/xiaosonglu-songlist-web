@@ -3,7 +3,7 @@
   "roomId": "1727071052",
   "sourceType": "bilibili-song-cut-index",
   "description": "从 Bilibili 直接搜索“小松绿歌切”等关键词收集的增量歌切台账。优先收录带明确日期标记的歌切；对于合集歌切，可使用视频选集/分P标题里的歌曲名；对于标题花哨但简介写明日期的单曲歌切，可用简介日期入表，但表中 song_name 只保留真实歌曲名。用同一天同一首歌做重复判定。",
-  "updatedAt": "2026-10-28T07:56:07.237Z",
+  "updatedAt": "2026-10-29T02:11:50.201Z",
   "strategy": {
     "acceptedDateMarkers": [
       "8.15",
@@ -9874,6 +9874,48 @@
       "duplicate_of": "",
       "collected_at": "2026-10-28T07:56:07.237Z",
       "notes": "分P P28"
+    },
+    {
+      "clip_date": "2026-10-27",
+      "date_source": "description-date",
+      "date_text": "2026-10-27",
+      "song_name": "EMOTION",
+      "song_name_source": "chapter-title",
+      "artist": "三船栞子（小泉萌香）",
+      "clip_kind": "collection",
+      "chapter_title": "EMOTION",
+      "clip_title": "【小松绿Viridis】老实上学，很枯燥吧？导师你怎么知道小松绿昨天唱歌播到凌晨2点的？2026.10.27歌切合集",
+      "clip_url": "https://www.bilibili.com/video/BV1HUx769Ejg/?p=17",
+      "clip_bvid": "BV1HUx769Ejg",
+      "uploader": "桐人今天睡大觉",
+      "duration": "3:58",
+      "source_query": "",
+      "duplicate_key": "2026-10-27::EMOTION",
+      "duplicate_status": "primary",
+      "duplicate_of": "",
+      "collected_at": "2026-10-29T02:11:50.201Z",
+      "notes": "分P P17（桐人版合集，与小松绿天生就喜欢笑版互补）"
+    },
+    {
+      "clip_date": "2026-10-27",
+      "date_source": "description-date",
+      "date_text": "2026-10-27",
+      "song_name": "ミカヅキ",
+      "song_name_source": "chapter-title",
+      "artist": "さユり",
+      "clip_kind": "collection",
+      "chapter_title": "ミカヅキ",
+      "clip_title": "【小松绿Viridis】老实上学，很枯燥吧？导师你怎么知道小松绿昨天唱歌播到凌晨2点的？2026.10.27歌切合集",
+      "clip_url": "https://www.bilibili.com/video/BV1HUx769Ejg/?p=23",
+      "clip_bvid": "BV1HUx769Ejg",
+      "uploader": "桐人今天睡大觉",
+      "duration": "2:27",
+      "source_query": "",
+      "duplicate_key": "2026-10-27::ミカヅキ",
+      "duplicate_status": "primary",
+      "duplicate_of": "",
+      "collected_at": "2026-10-29T02:11:50.201Z",
+      "notes": "分P P23（桐人版合集，与小松绿天生就喜欢笑版互补）"
     }
   ]
 }

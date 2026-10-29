@@ -1,11 +1,11 @@
 // 本文件由 scripts/build_xiaosonglu_song_data.mjs 从 data/xiaosonglu/ 生成，供 file:// 离线回退使用。
-// 生成时间：2026-10-28 15:57:40
+// 生成时间：2026-10-29 10:14:27
 // 数据源：data/xiaosonglu/（song_catalog / history_index / song_details / audio_index / song_cut_info）
 window.XSL_DATA = {
   song_catalog: {
   "roomKey": "xiaosonglu",
   "roomId": "1727071052",
-  "generatedAt": "2026-10-28T07:56:07.237Z",
+  "generatedAt": "2026-10-29T02:11:50.201Z",
   "source": "local-replay-ingestion",
   "songs": [
     {
@@ -1456,6 +1456,27 @@ window.XSL_DATA = {
       "status_labels": "歌回、歌切合集复核",
       "last_sing_at": "2026-10-27",
       "row_key": "Little Wish"
+    },
+    {
+      "song_id": 138,
+      "song_name": "ミカヅキ",
+      "show_as_song_name": "",
+      "display_song_name": "ミカヅキ",
+      "artist": "さユり",
+      "artist_search": "ミカヅキ さユり",
+      "feat_artist": "",
+      "remark": "2026-09-03「也许康复的随便唱唱」21点场；歌切合集【桐人今天睡大觉】【小松绿Viridis】随便唱唱的歌回 歌切合集 2026.09.03 分P19（04:26）。さユり《乱步奇谭》ED。",
+      "tone": "",
+      "language": "日文",
+      "type": "动画、J-Pop",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=19",
+      "sing_count": 2,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-27",
+      "row_key": "ミカヅキ"
     },
     {
       "song_id": 52,
@@ -3283,27 +3304,6 @@ window.XSL_DATA = {
       "status_labels": "歌回",
       "last_sing_at": "2026-08-29",
       "row_key": "サリシノハラ"
-    },
-    {
-      "song_id": 138,
-      "song_name": "ミカヅキ",
-      "show_as_song_name": "",
-      "display_song_name": "ミカヅキ",
-      "artist": "さユり",
-      "artist_search": "ミカヅキ さユり",
-      "feat_artist": "",
-      "remark": "2026-09-03「也许康复的随便唱唱」21点场；歌切合集【桐人今天睡大觉】【小松绿Viridis】随便唱唱的歌回 歌切合集 2026.09.03 分P19（04:26）。さユり《乱步奇谭》ED。",
-      "tone": "",
-      "language": "日文",
-      "type": "动画、J-Pop",
-      "identification": "",
-      "display_version": "",
-      "search_name": "",
-      "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=19",
-      "sing_count": 1,
-      "status_labels": "歌回",
-      "last_sing_at": "2026-09-03",
-      "row_key": "ミカヅキ"
     },
     {
       "song_id": 146,
@@ -7441,13 +7441,34 @@ window.XSL_DATA = {
       "status_labels": "歌回、歌切合集复核",
       "last_sing_at": "2026-10-27",
       "row_key": "メルト"
+    },
+    {
+      "song_id": 355,
+      "song_name": "EMOTION",
+      "show_as_song_name": "",
+      "display_song_name": "EMOTION",
+      "artist": "三船栞子（小泉萌香）",
+      "artist_search": "三船栞子（小泉萌香）",
+      "feat_artist": "",
+      "remark": "出处核实：LoveLive！虹ヶ咲学園スクールアイドル同好会 2期第7话挿入歌，作词/作曲/编曲 tofubeats，TV size 1:40；桐人版分P时长 3:58。",
+      "tone": "",
+      "language": "日文",
+      "type": "LoveLive虹咲、偶像、J-Pop",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1HUx769Ejg/?p=17",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-27",
+      "row_key": "EMOTION"
     }
   ]
 },
   history_index: {
   "roomKey": "xiaosonglu",
   "roomId": "1727071052",
-  "generatedAt": "2026-10-28T07:56:07.237Z",
+  "generatedAt": "2026-10-29T02:11:50.201Z",
   "source": "local-replay-ingestion",
   "latest": {
     "year": "2026",
@@ -7462,7 +7483,7 @@ window.XSL_DATA = {
         "18": 23,
         "19": 1,
         "21": 8,
-        "27": 28,
+        "27": 30,
         "08": 5,
         "06": 17,
         "02": 33
@@ -15148,6 +15169,24 @@ window.XSL_DATA = {
         "cut_link": "https://www.bilibili.com/video/BV1naxj62Epw/?p=17"
       },
       {
+        "song_name": "EMOTION",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "三船栞子（小泉萌香）",
+        "replay_id": "live:3823cdb9-0609-4496-a75a-330e5f5e01a3",
+        "replay_title": "【小松绿Viridis】混乱水果小杂谈 2026-10-27",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "EMOTION",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1HUx769Ejg/?p=17"
+      },
+      {
         "song_name": "哀温ノ詩",
         "sing_time": "",
         "statuses": [
@@ -15256,6 +15295,24 @@ window.XSL_DATA = {
         "cut_link": "https://www.bilibili.com/video/BV1naxj62Epw/?p=23"
       },
       {
+        "song_name": "ミカヅキ",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切合集复核"
+        ],
+        "artist": "さユり",
+        "replay_id": "live:3823cdb9-0609-4496-a75a-330e5f5e01a3",
+        "replay_title": "【小松绿Viridis】混乱水果小杂谈 2026-10-27",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "ミカヅキ",
+        "lyric_excerpt": "",
+        "song_resolution_method": "song-cut-collection-chapter",
+        "cut_link": "https://www.bilibili.com/video/BV1HUx769Ejg/?p=23"
+      },
+      {
         "song_name": "恋愛脳",
         "sing_time": "",
         "statuses": [
@@ -15351,7 +15408,7 @@ window.XSL_DATA = {
   song_details: {
   "roomKey": "xiaosonglu",
   "roomId": "1727071052",
-  "generatedAt": "2026-10-28T07:56:07.237Z",
+  "generatedAt": "2026-10-29T02:11:50.201Z",
   "source": "local-replay-ingestion",
   "bySongKey": {
     "少女レイ": {
@@ -19700,8 +19757,23 @@ window.XSL_DATA = {
       "display_song_name": "ミカヅキ",
       "artist": "さユり",
       "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=19",
-      "total_count": 1,
+      "total_count": 2,
       "entries": [
+        {
+          "date": "2026-10-27",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "さユり",
+          "replay_id": "live:3823cdb9-0609-4496-a75a-330e5f5e01a3",
+          "replay_title": "【小松绿Viridis】混乱水果小杂谈 2026-10-27",
+          "replay_url": "",
+          "remark": "已在库（2026-09-03 唱过，音轨 song_137）；本次为 10-27 复唱，按「同曲用最新演唱版」规则替换音轨。桐人版分P时长 2:27，疑似半段，已标注。",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-collection-chapter",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1HUx769Ejg/?p=23"
+        },
         {
           "date": "2026-09-03",
           "time": "",
@@ -25418,16 +25490,41 @@ window.XSL_DATA = {
           "cut_link": "https://www.bilibili.com/video/BV1naxj62Epw/?p=28"
         }
       ]
+    },
+    "EMOTION": {
+      "row_key": "EMOTION",
+      "song_name": "EMOTION",
+      "display_song_name": "EMOTION",
+      "artist": "三船栞子（小泉萌香）",
+      "cut_link": "https://www.bilibili.com/video/BV1HUx769Ejg/?p=17",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-10-27",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切合集复核",
+          "artist": "三船栞子（小泉萌香）",
+          "replay_id": "live:3823cdb9-0609-4496-a75a-330e5f5e01a3",
+          "replay_title": "【小松绿Viridis】混乱水果小杂谈 2026-10-27",
+          "replay_url": "",
+          "remark": "出处核实：LoveLive！虹ヶ咲学園スクールアイドル同好会 2期第7话挿入歌，作词/作曲/编曲 tofubeats，TV size 1:40；桐人版分P时长 3:58。",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-collection-chapter",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1HUx769Ejg/?p=17"
+        }
+      ]
     }
   }
 },
   audio_index: {
   "roomKey": "xiaosonglu",
   "roomId": "1727071052",
-  "generatedAt": "2026-10-28T07:57:40.826Z",
+  "generatedAt": "2026-10-29T02:14:27.377Z",
   "source": "song-cut-audio-download",
   "description": "每首歌对应的翻唱切片音频（从 B 站歌切/回放下载），供网页在线播放。",
-  "count": 352,
+  "count": 353,
   "audios": {
     "勾指起誓": "assets/audio/song_88.m4a?v=1d344dfde754",
     "蝴蝶": "assets/audio/song_25.m4a?v=d8fb99252c26",
@@ -25461,13 +25558,13 @@ window.XSL_DATA = {
     "風になる": "assets/audio/song_19.m4a?v=91f460e56d82",
     "腐草为萤": "assets/audio/song_129.m4a?v=b60324175f6d",
     "故梦": "assets/audio/song_20.m4a?v=7efa99913cc9",
-    "光": "assets/audio/song_97.m4a?v=e49548b0ec38",
+    "光": "assets/audio/song_97.m4a?v=c9207e1dd995",
     "光景": "assets/audio/song_21.m4a?v=3b0d21feed5a",
     "航向你的海岛": "assets/audio/song_22.m4a?v=89f9d09fc2b2",
     "横竖撇点折": "assets/audio/song_23.m4a?v=7e50ad2889fd",
     "后来": "assets/audio/song_24.m4a?v=9bd274b4a2fd",
     "花粉症": "assets/audio/song_26.m4a?v=9c673395e93b",
-    "花の塔": "assets/audio/song_136.m4a?v=e587558407c8",
+    "花の塔": "assets/audio/song_136.m4a?v=c9207e1dd995",
     "焦糖星": "assets/audio/song_127.m4a?v=4ab296b906e2",
     "锦鲤抄": "assets/audio/song_27.m4a?v=9a19053c7e67",
     "绝不认输": "assets/audio/song_28.m4a?v=65113a179ce7",
@@ -25476,7 +25573,7 @@ window.XSL_DATA = {
     "涟漪": "assets/audio/song_31.m4a?v=d443844445be",
     "炼金少女日志": "assets/audio/song_106.m4a?v=775173f6b955",
     "恋爱困难少女": "assets/audio/song_32.m4a?v=5edd54764224",
-    "恋苦": "assets/audio/song_96.m4a?v=46a5962b68d7",
+    "恋苦": "assets/audio/song_96.m4a?v=c9207e1dd995",
     "临川浮梦": "assets/audio/song_100.m4a?v=c1b6abdfba52",
     "流光记": "assets/audio/song_102.m4a?v=dc6d087dc39e",
     "流霰": "assets/audio/song_92.m4a?v=a8a43744d467",
@@ -25537,7 +25634,7 @@ window.XSL_DATA = {
     "踊り子": "assets/audio/song_69.m4a?v=671f73d3f842",
     "有点甜": "assets/audio/song_121.m4a?v=f182f0428c6f",
     "迂回步": "assets/audio/song_70.m4a?v=9ac6037dd71d",
-    "雨爱": "assets/audio/song_71.m4a?v=e4c09aa11298",
+    "雨爱": "assets/audio/song_71.m4a?v=c9207e1dd995",
     "浴槽とネオンテトラ": "assets/audio/song_133.m4a?v=0cf75f1d7cce",
     "远旅休憩中的邂逅": "assets/audio/song_116.m4a?v=a30287f013ea",
     "月出": "assets/audio/song_117.m4a?v=74c4ad45dc95",
@@ -25565,7 +25662,7 @@ window.XSL_DATA = {
     "サリシノハラ": "assets/audio/song_119.m4a?v=6adb10e42176",
     "シリウスの心臓": "assets/audio/song_86.m4a?v=1784f854b8f3",
     "プロポーズ": "assets/audio/song_87.m4a?v=1f425c4cc7db",
-    "ミカヅキ": "assets/audio/song_137.m4a?v=166e00a41be5",
+    "ミカヅキ": "assets/audio/song_137.m4a?v=decfa0e04379",
     "泸沽寻梦": "assets/audio/song_139.m4a?v=c09694dacb9d",
     "夜宴风波": "assets/audio/song_140.m4a?v=2a412ab546a0",
     "牵丝戏": "assets/audio/song_141.m4a?v=13549dc38c8b",
@@ -25649,7 +25746,7 @@ window.XSL_DATA = {
     "恋愛裁判": "assets/audio/song_219.m4a?v=9226b343126d",
     "歌鳥風月": "assets/audio/song_220.m4a?v=a9bb1409c8fe",
     "ECHO": "assets/audio/song_221.m4a?v=d9ce00f9dc10",
-    "からくりピエロ": "assets/audio/song_222.m4a?v=b9855e1e503f",
+    "からくりピエロ": "assets/audio/song_222.m4a?v=c9207e1dd995",
     "桜の季節": "assets/audio/song_223.m4a?v=737a16514d6b",
     "Sincerely": "assets/audio/song_224.m4a?v=e6b4f23a9848",
     "少女未遂": "assets/audio/song_225.m4a?v=db05c262bade",
@@ -25703,7 +25800,7 @@ window.XSL_DATA = {
     "双生花": "assets/audio/song_273.m4a?v=fd8bc0a2748b",
     "渊（Deep Down）": "assets/audio/song_274.m4a?v=13fdd8139890",
     "恋爱告急": "assets/audio/song_275.m4a?v=e305d1984d91",
-    "Little Wish": "assets/audio/song_276.m4a?v=96a2248da3be",
+    "Little Wish": "assets/audio/song_276.m4a?v=c9207e1dd995",
     "Mystic Light Quest": "assets/audio/song_277.m4a?v=f39f817c4f71",
     "天文馆的猫": "assets/audio/song_278.m4a?v=4ac11d1e8a65",
     "朝汐": "assets/audio/song_279.m4a?v=93789a64ceac",
@@ -25780,7 +25877,8 @@ window.XSL_DATA = {
     "祝福": "assets/audio/song_350.m4a?v=ac17c955841d",
     "恋愛脳": "assets/audio/song_351.m4a?v=23da350396a8",
     "一梦千宵": "assets/audio/song_352.m4a?v=ca400566d35d",
-    "メルト": "assets/audio/song_353.m4a?v=0fd231ce3191"
+    "メルト": "assets/audio/song_353.m4a?v=0fd231ce3191",
+    "EMOTION": "assets/audio/song_354.m4a?v=720e146a70c4"
   },
   "verificationTargets": [
     "中华墨水娘",
@@ -25788,16 +25886,23 @@ window.XSL_DATA = {
     "ハッピーエンド",
     "宇宙冷漠",
     "Fly, My Wings",
-    "少女レイ"
+    "少女レイ",
+    "Little Wish",
+    "雨爱",
+    "恋苦",
+    "光",
+    "ミカヅキ",
+    "花の塔",
+    "からくりピエロ"
   ]
 },
   song_cut_info: {
   "roomKey": "xiaosonglu",
   "roomId": "1727071052",
-  "generatedAt": "2026-10-28T07:56:07.237Z",
+  "generatedAt": "2026-10-29T02:11:50.201Z",
   "source": "song-cut-title-index",
   "description": "每首歌对应的歌切切片标题（单曲歌切视频标题 / 合集分P标题），供前端歌切链接显示。",
-  "count": 354,
+  "count": 355,
   "cuts": {
     "（区）最终祈愿": {
       "title": "07_（区）最终祈愿 - 平行四界Quadimension, 星尘",
@@ -27568,6 +27673,11 @@ window.XSL_DATA = {
       "title": "メルト",
       "kind": "collection",
       "url": "https://www.bilibili.com/video/BV1naxj62Epw/?p=28"
+    },
+    "EMOTION": {
+      "title": "EMOTION",
+      "kind": "collection",
+      "url": "https://www.bilibili.com/video/BV1HUx769Ejg/?p=17"
     }
   }
 }
