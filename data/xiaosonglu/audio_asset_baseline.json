@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "count": 353,
+  "count": 372,
   "sourceBase": "https://viridis.love/",
-  "capturedAt": "2026-10-29T02:16:09.262558Z",
+  "capturedAt": "2026-11-03T02:12:49.478548Z",
   "files": {
     "assets/audio/song_02.m4a": {
       "bytes": 5176731,
@@ -29,8 +29,8 @@
       "sha256": "9da03ac3ca816fce3507d57af2d5e8c053a714db209cc0d288fdcde2c2a3f102"
     },
     "assets/audio/song_08.m4a": {
-      "bytes": 4209782,
-      "sha256": "a409caf60cf301d8ba3cbe44bb212750084ce6832d099305371562fa3ec4987f"
+      "bytes": 3347000,
+      "sha256": "86bf4d083c4e2908abf2f79b1fa1d4bca2bd30bfddc0e16eef60ce77bc01af6a"
     },
     "assets/audio/song_09.m4a": {
       "bytes": 2246781,
@@ -153,12 +153,12 @@
       "sha256": "b0553d8660f4b4f2f70a6de62a432fa6e31a9a5219f3c5c3159c3eb23823e072"
     },
     "assets/audio/song_126.m4a": {
-      "bytes": 4806214,
-      "sha256": "5837c7ba5bd271c69166d8777e41f1dabb5545705bee13703db99f3e0c131966"
+      "bytes": 3649620,
+      "sha256": "91d505caf3ef070f3bcc04ace61405a09bbc2a9cb1548816bb11bc349552d40c"
     },
     "assets/audio/song_127.m4a": {
-      "bytes": 5331096,
-      "sha256": "4ab296b906e208f5953f228df757cc74f690225443afab516f199e8ceaf29dc5"
+      "bytes": 4099475,
+      "sha256": "4ac25ecb90063f09de01c62f3c4c9958e1d10ef4be44dfbc07bdc5017191d23c"
     },
     "assets/audio/song_128.m4a": {
       "bytes": 3924969,
@@ -197,12 +197,12 @@
       "sha256": "d0f4a234ae1c120e8659b535b8cae97b373ef3116b1b87df2376450379e3d2bb"
     },
     "assets/audio/song_136.m4a": {
-      "bytes": 3455929,
-      "sha256": "c9207e1dd995136f71f1fc52e822380db6a2748cca6902c9c474e3ffbd2d0103"
+      "bytes": 3138826,
+      "sha256": "adf5c41747c3ebca0926a7e3bbab19c86cc4cbd527b8c62d409c04c1e305bd19"
     },
     "assets/audio/song_137.m4a": {
-      "bytes": 3532029,
-      "sha256": "decfa0e043796714ae1ec2f2b664ab316489cc9297d4a906b4ed5d49ab566d5b"
+      "bytes": 2288827,
+      "sha256": "1771b5797f66c9d62c591475f228b3ebb93cf026ae073a89e7ef72d49009f1be"
     },
     "assets/audio/song_138.m4a": {
       "bytes": 5504483,
@@ -357,8 +357,8 @@
       "sha256": "e5f65104c52a99b600efb9e2ca70fb98db434855eac8ec23eb45b328f8044214"
     },
     "assets/audio/song_172.m4a": {
-      "bytes": 3440043,
-      "sha256": "cbcf614fe835371fe6ab723d8b703dea9dc514c19bb5c35ff9483a97937bd9f6"
+      "bytes": 4326927,
+      "sha256": "89f3e2ca87af718253cfb35f705e640158594936777f2eebb35b2cf481774a81"
     },
     "assets/audio/song_173.m4a": {
       "bytes": 3321884,
@@ -489,8 +489,8 @@
       "sha256": "cc934d1cfe7f350b99412cbdb1ebff2f28bc710503915e101c549dc9ef25608e"
     },
     "assets/audio/song_202.m4a": {
-      "bytes": 2872694,
-      "sha256": "8ca8d4a1e7ef4e6e181acf05def1af46360de4d9c1c0eae7344d5f55e946db1d"
+      "bytes": 3677547,
+      "sha256": "3a3d6dbc17d910c2a6c51593b98b3a6ab7ffae9fdd314c75c776f9e04556525d"
     },
     "assets/audio/song_203.m4a": {
       "bytes": 3786552,
@@ -533,8 +533,8 @@
       "sha256": "3a605e305a2d6e7dd57e189ae9059c0f24d6f011a433fcc546509af04e160ff5"
     },
     "assets/audio/song_212.m4a": {
-      "bytes": 3899738,
-      "sha256": "75f23f405420ae9cc722b9447c3d26336340ef3212584f0d7af532758f25f4d7"
+      "bytes": 4883708,
+      "sha256": "420683a0298319ebec277b7316db2b796bfe40e4857b793899a135e61b0ba08c"
     },
     "assets/audio/song_213.m4a": {
       "bytes": 3605964,
@@ -577,8 +577,8 @@
       "sha256": "d9ce00f9dc103b0dfe2ec8a2373d55875f1fac452ed80448e65a531cd5d46642"
     },
     "assets/audio/song_222.m4a": {
-      "bytes": 3455929,
-      "sha256": "c9207e1dd995136f71f1fc52e822380db6a2748cca6902c9c474e3ffbd2d0103"
+      "bytes": 4008683,
+      "sha256": "809f8dd3d237ad521557dc00f9fbe92cb0a3c7d411d07ca3d548c4093440ce43"
     },
     "assets/audio/song_223.m4a": {
       "bytes": 3778692,
@@ -813,8 +813,8 @@
       "sha256": "e305d1984d912c31c76124a9809109f188773c777701d5c06c51dcd3444da01d"
     },
     "assets/audio/song_276.m4a": {
-      "bytes": 3455929,
-      "sha256": "c9207e1dd995136f71f1fc52e822380db6a2748cca6902c9c474e3ffbd2d0103"
+      "bytes": 3659382,
+      "sha256": "2e88e5ba5e125fc4938855f41ef3728f1b965abc35fe6a8b7b781274a523e68c"
     },
     "assets/audio/song_277.m4a": {
       "bytes": 3750824,
@@ -825,8 +825,8 @@
       "sha256": "4ac11d1e8a65984c2a1a17a2902139580330240506ced5fe7627661081cf9283"
     },
     "assets/audio/song_279.m4a": {
-      "bytes": 5014626,
-      "sha256": "93789a64ceac348c5e8e3649cfe2451b8f0acdf806a3c8a514cf2f8d2da4f7af"
+      "bytes": 5023357,
+      "sha256": "b1cff9511c8623b4cc2420358cbad53ce1d3281082c887f6b61d4f1000532ee0"
     },
     "assets/audio/song_28.m4a": {
       "bytes": 5268380,
@@ -1049,8 +1049,8 @@
       "sha256": "1e9278c6faaec83d1c2559f59020940e340b13a9b50734740fbffa68a5e16652"
     },
     "assets/audio/song_33.m4a": {
-      "bytes": 5179312,
-      "sha256": "d0112fd6e8acb5c6594b2afed37b8a69b2fe5e1865bf56c02d1b30958915af6e"
+      "bytes": 3834103,
+      "sha256": "bf514482617f20698abcd7c8784b900f43810a14746773787397e8aa69898b30"
     },
     "assets/audio/song_330.m4a": {
       "bytes": 1775486,
@@ -1160,13 +1160,89 @@
       "bytes": 4209556,
       "sha256": "720e146a70c4fc2b26f7e45dda9ce874c15c5663b9cd707a81cf0de891383027"
     },
+    "assets/audio/song_355.m4a": {
+      "bytes": 4351473,
+      "sha256": "f8b653cb5aa20bdd77527fe8914a07a4cf9ebe87ba3e1b22eda00476438f5fa6"
+    },
+    "assets/audio/song_356.m4a": {
+      "bytes": 2668728,
+      "sha256": "c0c89cda5bb5ea51f0ea3b46a81403ee08f4a6c3f0414e2d4f46720d86bb73d7"
+    },
+    "assets/audio/song_357.m4a": {
+      "bytes": 4035472,
+      "sha256": "2aa78023aca6c3873c49eccefda5613171a95275ded05455e98d3928f782caeb"
+    },
+    "assets/audio/song_358.m4a": {
+      "bytes": 4038911,
+      "sha256": "24a1f96734be23d6a0fb9dc332bafed7fbfff20c88d4b748c3810f81c0f7517f"
+    },
+    "assets/audio/song_359.m4a": {
+      "bytes": 4495223,
+      "sha256": "4996377cfd97f80ab4b03c5a64dce658a097cc2472ef07d1f2818bc4bab9956b"
+    },
     "assets/audio/song_36.m4a": {
       "bytes": 6262840,
       "sha256": "8bac8ac98a62667846a65a62f5d76ecea90e459613afdca3fe26ed6ec2b6fa2b"
     },
+    "assets/audio/song_360.m4a": {
+      "bytes": 3944981,
+      "sha256": "812c8f8f1121d6ecf2f0c2f4807b6606427012306b0c0c620491702282368a5a"
+    },
+    "assets/audio/song_361.m4a": {
+      "bytes": 4274117,
+      "sha256": "ca0069b8c448832de48677894925719f266e62e71271b1e2f18477327de4c5d0"
+    },
+    "assets/audio/song_362.m4a": {
+      "bytes": 4153996,
+      "sha256": "4e2b00932753b553d76e6e8d3015a129cf996e423a8c5f17f8735bc65cb979c7"
+    },
+    "assets/audio/song_363.m4a": {
+      "bytes": 4426850,
+      "sha256": "d0d580f62d6d6a2531ae27e266620223dd951751096bafafccd05aefe2d4ffc4"
+    },
+    "assets/audio/song_364.m4a": {
+      "bytes": 3839845,
+      "sha256": "1094507ed4cd9c7f36d94d9d5400046c8375ddca79a5e4ecb6ccf6926f3d0afb"
+    },
+    "assets/audio/song_365.m4a": {
+      "bytes": 2490515,
+      "sha256": "4b44bccf3f103d9c40a254fa74b0d0014c017930ed4dee01ebbd67b0c348c2b3"
+    },
+    "assets/audio/song_366.m4a": {
+      "bytes": 4127998,
+      "sha256": "fa547a4bd0573a2b726eff6121f6a49a0f42bb9a734bd2855b8856b2cc16c680"
+    },
+    "assets/audio/song_367.m4a": {
+      "bytes": 4212480,
+      "sha256": "0619731527a77686c6db7f929800d1e54ea5287f2601a2ad6364e0736ad95695"
+    },
+    "assets/audio/song_368.m4a": {
+      "bytes": 5451763,
+      "sha256": "c311511e8789dc4cd792c454d3bbedfcba522512bd6fbb5f303498ef165eef06"
+    },
+    "assets/audio/song_369.m4a": {
+      "bytes": 4473653,
+      "sha256": "7fd55a01caf14513352c40a0e2de714e80448cfb3cc5c847fccc11b2af562d56"
+    },
     "assets/audio/song_37.m4a": {
       "bytes": 5320677,
       "sha256": "56b8c5407847dbe236309cc8157c344bad230482f1607fbca289ec3c6a74713a"
+    },
+    "assets/audio/song_370.m4a": {
+      "bytes": 4361810,
+      "sha256": "dfeca662b9dc35a8c697a918c950aa4ad623eb6c7ec718f2b5063a7e25187b07"
+    },
+    "assets/audio/song_371.m4a": {
+      "bytes": 5320293,
+      "sha256": "589469ea48eb25b309494d0b118caeb724798a24b361255ef4202ed40e3edbf7"
+    },
+    "assets/audio/song_372.m4a": {
+      "bytes": 4232390,
+      "sha256": "2d810422592f0e829311f5d38cf555bfa2dc1a25337087efd83be7aabb8237e4"
+    },
+    "assets/audio/song_373.m4a": {
+      "bytes": 3730025,
+      "sha256": "b7215dd97448e06670840734a11f1b2ae2ab6007863660bb7dc145a6615a54a3"
     },
     "assets/audio/song_38.m4a": {
       "bytes": 5315276,
@@ -1301,8 +1377,8 @@
       "sha256": "9ac6037dd71d23dcdf88ed99d43c4cfe9f4b36345c01567ecfdc2a611b8142c7"
     },
     "assets/audio/song_71.m4a": {
-      "bytes": 3455929,
-      "sha256": "c9207e1dd995136f71f1fc52e822380db6a2748cca6902c9c474e3ffbd2d0103"
+      "bytes": 4278187,
+      "sha256": "6c66d333ed556181e79daccb4b317c9bde95835e5b3cf7f1be463269fd9e9a99"
     },
     "assets/audio/song_72.m4a": {
       "bytes": 3552514,
@@ -1361,16 +1437,16 @@
       "sha256": "8b759386e63f14f5f59f85b2f7dff788a654865ed15dcdf69cf3e5eaa02b87f5"
     },
     "assets/audio/song_86.m4a": {
-      "bytes": 5261397,
-      "sha256": "1784f854b8f35285740e011b3a25ebaa7dc6df8c9704bea69df9127b95e43b46"
+      "bytes": 4826670,
+      "sha256": "fa121436747929e3994c78891c7157c07a6219f733ea8653d87beceed869217a"
     },
     "assets/audio/song_87.m4a": {
       "bytes": 5574473,
       "sha256": "1f425c4cc7db2effdc6414d234624db1c942f89dbe76deb87f1a96a5d4776024"
     },
     "assets/audio/song_88.m4a": {
-      "bytes": 3905592,
-      "sha256": "1d344dfde7548b28cea3b11b4161477779aaa933e3dcc522438f7eff36988d93"
+      "bytes": 3172785,
+      "sha256": "82fb0051bfb211f3b698454a2fe51d8c844e86e7d5b2880149026fcfed85a613"
     },
     "assets/audio/song_89.m4a": {
       "bytes": 5934830,
@@ -1401,12 +1477,12 @@
       "sha256": "df46b044f308fdb0666881139312fbf33ec8015661d60cdfdea45ed76be9cf7e"
     },
     "assets/audio/song_96.m4a": {
-      "bytes": 3455929,
-      "sha256": "c9207e1dd995136f71f1fc52e822380db6a2748cca6902c9c474e3ffbd2d0103"
+      "bytes": 4165523,
+      "sha256": "19fb240b9f63f4cfa4979639a6f8d427df7edf8e614921b5bdf9c86ce05a33b1"
     },
     "assets/audio/song_97.m4a": {
-      "bytes": 3455929,
-      "sha256": "c9207e1dd995136f71f1fc52e822380db6a2748cca6902c9c474e3ffbd2d0103"
+      "bytes": 4118102,
+      "sha256": "e5f52ab1446fb962327186b375aef8a6f9e34b670b58161fcd40c03026865c04"
     },
     "assets/audio/song_98.m4a": {
       "bytes": 5140782,

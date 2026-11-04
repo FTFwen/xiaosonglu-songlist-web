@@ -507,7 +507,17 @@ try {
         } else {
             $cookiePath = if ([string]::IsNullOrWhiteSpace($BilibiliCookieFile)) { $env:XSL_BILIBILI_COOKIE_FILE } else { $BilibiliCookieFile }
             if ([string]::IsNullOrWhiteSpace($cookiePath)) { throw 'DownloadSongCutAudio requires BilibiliCookieFile or XSL_BILIBILI_COOKIE_FILE.' }
-            $downloadText = (& $python 'tools/download_song_cut_audio.py' '--root' $rootPath '--curated' $curatedPath '--source-dir' $sourcePath '--cookies-file' $cookiePath '--yt-dlp' $YtDlpPath '--ffmpeg-dir' $FfmpegDir | Out-String).Trim()
+            # Python writes UTF-8; PS 5.1 decodes native output with the console
+            # codepage (GB2312 here), which can swallow a closing JSON quote when
+            # a song title ends with a byte sequence that decodes as a DBCS lead.
+            # Decode this capture as UTF-8 explicitly.
+            $previousConsoleEncoding = [Console]::OutputEncoding
+            [Console]::OutputEncoding = [System.Text.UTF8Encoding]::new($false)
+            try {
+                $downloadText = (& $python 'tools/download_song_cut_audio.py' '--root' $rootPath '--curated' $curatedPath '--source-dir' $sourcePath '--cookies-file' $cookiePath '--yt-dlp' $YtDlpPath '--ffmpeg-dir' $FfmpegDir | Out-String).Trim()
+            } finally {
+                [Console]::OutputEncoding = $previousConsoleEncoding
+            }
             Assert-ExitCode $LASTEXITCODE @(0) 'song-cut audio download'
             $downloadResult = $downloadText | ConvertFrom-Json
         }
@@ -557,7 +567,15 @@ try {
         try {
             $ingestArguments = @('tools/ingest_song_cut_audio.py', '--root', $rootPath, '--curated', $curatedPath, '--source-dir', $sourcePath)
             foreach ($spec in $ReviewedSongCutSourceSpec) { $ingestArguments += @('--reviewed-source-spec', $spec) }
-            $ingestionText = (& $python @ingestArguments | Out-String).Trim()
+            # Same UTF-8 capture fix as the download step: the report embeds song
+            # titles, and a console-codepage decode can swallow JSON quotes.
+            $previousConsoleEncoding = [Console]::OutputEncoding
+            [Console]::OutputEncoding = [System.Text.UTF8Encoding]::new($false)
+            try {
+                $ingestionText = (& $python @ingestArguments | Out-String).Trim()
+            } finally {
+                [Console]::OutputEncoding = $previousConsoleEncoding
+            }
             Assert-ExitCode $LASTEXITCODE @(0) 'curated song-cut audio ingestion'
             $ingestionResult = $ingestionText | ConvertFrom-Json
             if ($ingestionResult.changed -eq $true -or $hasReplacementActions -or @($ingestionResult.recovered).Count -gt 0) {
