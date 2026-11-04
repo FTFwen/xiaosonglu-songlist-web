@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-28T02:32:45.930Z",
-  "fingerprint": "2b9c1a0b79f655f0",
-  "title": "10.19置顶更新（休息日随机掉落电台）",
+  "updatedAt": "2026-11-04T02:30:17.657Z",
+  "fingerprint": "d3cd5cf9efef8b84",
+  "title": "11.3置顶更新（休息日随机掉落宝可梦）",
   "pubTime": "8月17日",
   "dynamicId": "1237406371777871896",
   "dynamicUrl": "//www.bilibili.com/opus/1237406371777871896",
@@ -11,8 +11,8 @@
       "file": "current.jpg",
       "width": 1920,
       "height": 1080,
-      "bytes": 901611,
-      "sourceUrl": "http://i0.hdslb.com/bfs/new_dyn/db0d5c4934ff8d0e90a62c04e166bf171891335475.jpg"
+      "bytes": 1829443,
+      "sourceUrl": "http://i0.hdslb.com/bfs/new_dyn/d0d4d7d27f54594ecd22043c002cf1f21891335475.jpg"
     }
   ]
 }
