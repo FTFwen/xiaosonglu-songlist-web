@@ -111,7 +111,7 @@ test('both destinations use the bumped assets and mobile layout matches the song
   assert.match(buttonsHtml, /cross-page-player\.js\?v=8/);
   assert.match(gameHtml, /cross-page-player\.js\?v=8/);
   assert.match(crossPageSource, /const AUDIO_ASSET_VERSION = '4';/);
-  assert.match(buttonsHtml, /buttons\.js\?v=33/);
+  assert.match(buttonsHtml, /buttons\.js\?v=34/);
   assert.doesNotMatch(buttonsSource, /DEFAULT_ADMINS|isKnownAdmin|登录成功（离线模式/);
   assert.match(gameHtml, /\.\.\/js\/data\.js\?v=31/);
   for (const source of [buttonsHtml, gameHtml]) {

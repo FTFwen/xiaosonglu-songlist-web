@@ -5,7 +5,7 @@ import { isAdmin, unauth } from '../../_auth.js';
 const AUDIO_PREFIX = 'audio/';
 
 export async function onRequestGet(context) {
-  const { env, params } = context;
+  const { request, env, params } = context;
   const id = params.id;
   if (!id) return new Response('not found', { status: 404 });
   const obj = await env.xsl_buttons.get(AUDIO_PREFIX + id);
@@ -19,6 +19,13 @@ export async function onRequestGet(context) {
   // 允许跨域读取 + 支持音频范围请求
   headers.set('accept-ranges', 'bytes');
   headers.set('access-control-allow-origin', '*');
+  // 浏览器缓存 5 分钟，之后用 If-None-Match 再验证；重新上传后 R2 etag 变化会拿到新内容
+  const etag = obj.httpEtag || `"${obj.etag || 'unknown'}"`;
+  headers.set('etag', etag);
+  headers.set('cache-control', 'public, max-age=300');
+  if (request.headers.get('if-none-match') === etag) {
+    return new Response(null, { status: 304, headers });
+  }
   return new Response(obj.body, { status: 200, headers });
 }
 

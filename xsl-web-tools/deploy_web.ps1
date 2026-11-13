@@ -490,6 +490,11 @@ $overlayRelativePaths = @(
     'workshop\js\data.js',
     'functions\_auth.js',
     'functions\_rating.js',
+    'functions\api\data.js',
+    'functions\api\live-status.js',
+    'functions\api\login.js',
+    'functions\api\audio\[id].js',
+    'functions\api\fav\[name].js',
     'functions\api\rating\song.js',
     'buttons\buttons.js'
 )
