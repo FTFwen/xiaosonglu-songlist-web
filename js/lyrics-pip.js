@@ -282,8 +282,8 @@
         await verifyAudio(record, selected, signal);
         if (!current(token)) return;
         const match = record.match || {};
-        if (match.status !== 'matched') {
-          loadState = /candidate|version/.test(match.status || '') ? '歌词来源 / 版本待确认' : '暂无已确认歌词';
+        if (!['matched', 'candidate', 'candidate_review_required', 'version_review_required'].includes(match.status)) {
+          loadState = '暂无歌词';
           message(loadState); updateStatus(); return;
         }
         const sourceId = match.sourceId;

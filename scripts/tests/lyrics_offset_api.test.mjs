@@ -99,6 +99,16 @@ function assertRecord(record, overrides = {}) {
   assert.equal(new Date(record.updatedAt).toISOString(), record.updatedAt);
 }
 
+for (const status of ['candidate', 'candidate_review_required', 'version_review_required']) test(`${status} supports shared offset upload and readback`, async () => {
+  const f = fixture({ track: canonical('song-7', { match: { status, sourceId: 1323302995 } }) });
+  assert.equal((await f.call('GET')).status, 200);
+  const put = await f.call('PUT');
+  assert.equal(put.status, 200);
+  assertRecord(put.result.record);
+  const get = await f.call('GET');
+  assert.deepEqual(get.result.record, put.result.record);
+});
+
 test('GET empty returns the success contract and uses the root canonical asset path', async () => {
   const f = fixture();
   const got = await f.call();

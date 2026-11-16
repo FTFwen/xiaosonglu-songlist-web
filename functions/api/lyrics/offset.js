@@ -100,7 +100,7 @@ async function canonicalOf(context, key) {
   const expectedId = Number(id) * (kind === 'derivative' ? -1 : 1);
   if (!object(data) || data.key !== key || data.songId !== expectedId || !validRowKey(data.rowKey) ||
       !object(data.match) || typeof data.match.status !== 'string') throw new ApiError(503, 'catalog_invalid');
-  if (data.match.status !== 'matched') throw new ApiError(409, 'lyrics_unavailable');
+  if (!['matched', 'candidate', 'candidate_review_required', 'version_review_required'].includes(data.match.status)) throw new ApiError(409, 'lyrics_unavailable');
   if (!object(data.audio) || typeof data.audio.sha256 !== 'string' || !HASH_PATTERN.test(data.audio.sha256) || !validSource(data.match.sourceId)) {
     throw new ApiError(503, 'catalog_invalid');
   }

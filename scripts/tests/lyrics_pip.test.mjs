@@ -365,13 +365,23 @@ for (const [name, config, reason] of [
   assert.equal(h.fetches.some(call => call.url.pathname.includes('/sources/')), false);
 });
 
-for (const status of ['candidate', 'version_review_required', 'not_found']) test(`${status} never exposes unconfirmed source lyrics`, async t => {
+for (const status of ['candidate', 'candidate_review_required', 'version_review_required']) test(`${status} displays existing lyrics and enables scrolling and calibration`, async t => {
   const data = fixture(); data.record.match.status = status;
   const h = harness(t, { data }), pip = await h.open();
+  assert.ok(lyricTexts(pip).length > 0);
+  assert.equal(byClass(pip, 'lp-status')[0].hidden, true);
+  h.audio.currentTime = 15; h.audio.emit('timeupdate'); pip.runFrame();
+  assert.deepEqual(activeTexts(pip), ['middle line']);
+  assert.equal(byClass(pip, 'lp-timing')[0].hidden, false);
+  assert.equal(control(pip, '上传偏移').disabled, false);
+});
+
+test('not_found shows no lyrics rather than a review placeholder', async t => {
+  const data = fixture(); data.record.match.status = 'not_found';
+  const h = harness(t, { data }), pip = await h.open();
   assert.deepEqual(lyricTexts(pip), []);
-  assert.equal(h.fetches.length, 1, 'must not fetch the source for an unconfirmed match');
-  assert.equal(text(pip, 'lp-status'), status === 'not_found' ? '暂无已确认歌词' : '歌词来源 / 版本待确认');
-  assert.equal(control(pip, '重新加载歌词').hidden, true);
+  assert.equal(h.fetches.length, 1);
+  assert.equal(text(pip, 'lp-status'), '暂无歌词');
   assert.equal(byClass(pip, 'lp-timing')[0].hidden, true);
 });
 
