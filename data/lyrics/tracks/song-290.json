@@ -1,0 +1,168 @@
+{
+  "schemaVersion": 1,
+  "key": "song-290",
+  "songId": 290,
+  "songName": "宇宙冷漠",
+  "rowKey": "宇宙冷漠",
+  "displaySongName": "宇宙冷漠",
+  "artist": "幻琉HL",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "回放 02:26-02:32 弹幕「宇宙冷漠」刷屏（含 02:27 起的「宇宙冷漠小松绿」应援词）。歌切分P名为 Screenrecorder-2026-10-08-23-25-30-552，即 23:25:30 现场录屏；描述写明「20261008@小松绿Viridis」「原曲来自：@幻琉HL」，歌手即依此归属。同场小松绿天生就喜欢笑 BV1v5HX6FEGm（180s，标题「辅助轮跟唱」，描述「20261008」）可交叉复核，两者均显示为跟唱原曲（辅助轮），非纯伴奏演唱；弹幕 02:23:14「？你开原唱了？」即针对此。该曲为《杀戮尖塔2》社区曲（弹幕称「塔二」），故标 typeTags=游戏。",
+  "audio": {
+    "url": "assets/audio/song_289.m4a?v=66fdecbb21d6",
+    "sha256": "66fdecbb21d69d23416554151fb1ffb6c88b81d7cc7e61eb46c9ff193be17266"
+  },
+  "retrievedAt": "2026-11-16T04:13:15.832Z",
+  "match": {
+    "status": "no_timed_lyrics",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E5%AE%87%E5%AE%99%E5%86%B7%E6%BC%A0&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E5%AE%87%E5%AE%99%E5%86%B7%E6%BC%A0%20%E5%B9%BB%E7%90%89HL&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 3376649653,
+        "name": "宇宙冷漠",
+        "artists": [
+          "幻琉"
+        ],
+        "album": "宇宙冷漠",
+        "durationMs": 192180,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 3458280938,
+        "name": "宇宙冷漠",
+        "artists": [
+          "我王小桃要上一档"
+        ],
+        "album": "",
+        "durationMs": 216874,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3391172595,
+        "name": "宇宙冷漠",
+        "artists": [
+          "用户476857926"
+        ],
+        "album": "宇宙冷漠",
+        "durationMs": 153302,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3391670983,
+        "name": "宇宙冷漠",
+        "artists": [
+          "用户8510213803"
+        ],
+        "album": "宇宙冷漠",
+        "durationMs": 84919,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3391667774,
+        "name": "宇宙冷漠",
+        "artists": [
+          "用户8510213803"
+        ],
+        "album": "宇宙冷漠",
+        "durationMs": 67599,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3448512659,
+        "name": "宇宙冷漠",
+        "artists": [
+          "用户316453526"
+        ],
+        "album": "宇宙冷漠",
+        "durationMs": 134413,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3385820593,
+        "name": "宇宙冷漠（62人大合唱）",
+        "artists": [
+          "幻琉",
+          "群星"
+        ],
+        "album": "宇宙冷漠",
+        "durationMs": 192229,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      },
+      {
+        "id": 3411170664,
+        "name": "宇宙冷漠 (夢ノ結唱 AVER Cover)",
+        "artists": [
+          "幻琉",
+          "炸裂小拉沢",
+          "夢ノ結唱 AVER"
+        ],
+        "album": "宇宙冷漠 (夢ノ結唱 AVER Cover)",
+        "durationMs": 192469,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      }
+    ],
+    "workQuery": {
+      "song_id": 290,
+      "song_name": "宇宙冷漠",
+      "show_as_song_name": "",
+      "display_song_name": "宇宙冷漠",
+      "artist": "幻琉HL",
+      "artist_search": "幻琉HL",
+      "feat_artist": "",
+      "remark": "回放 02:26-02:32 弹幕「宇宙冷漠」刷屏（含 02:27 起的「宇宙冷漠小松绿」应援词）。歌切分P名为 Screenrecorder-2026-10-08-23-25-30-552，即 23:25:30 现场录屏；描述写明「20261008@小松绿Viridis」「原曲来自：@幻琉HL」，歌手即依此归属。同场小松绿天生就喜欢笑 BV1v5HX6FEGm（180s，标题「辅助轮跟唱」，描述「20261008」）可交叉复核，两者均显示为跟唱原曲（辅助轮），非纯伴奏演唱；弹幕 02:23:14「？你开原唱了？」即针对此。该曲为《杀戮尖塔2》社区曲（弹幕称「塔二」），故标 typeTags=游戏。",
+      "tone": "",
+      "language": "中文",
+      "type": "游戏",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1v5HX6FEAz/",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切复核",
+      "last_sing_at": "2026-10-08",
+      "row_key": "宇宙冷漠"
+    },
+    "sourceId": 3376649653,
+    "sourcePath": "sources/3376649653.json",
+    "sourceUrl": "https://music.163.com/#/song?id=3376649653",
+    "selected": {
+      "id": 3376649653,
+      "name": "宇宙冷漠",
+      "artists": [
+        "幻琉"
+      ],
+      "album": "宇宙冷漠",
+      "durationMs": 192180,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 0
+  },
+  "alignment": {
+    "status": "unavailable",
+    "offsetSeconds": null,
+    "humanVerified": false
+  }
+}

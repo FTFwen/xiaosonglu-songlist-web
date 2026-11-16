@@ -1,0 +1,85 @@
+{
+  "audioSha256": "ebb7b090d44940c6b3edadeba4cb66c4ba35fb11090631ee9d61aebdb9b1febd",
+  "model": "whisper-base",
+  "start": 0,
+  "end": 35,
+  "result": {
+    "text": "次回の曲をやってみましょう",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 0.0,
+        "end": 18.9,
+        "text": "次回の曲をやってみましょう",
+        "tokens": [
+          50364,
+          9487,
+          8350,
+          2972,
+          30753,
+          5998,
+          31497,
+          11362,
+          26513,
+          50464
+        ],
+        "temperature": 0,
+        "avg_logprob": -1.4412214972756126,
+        "compression_ratio": 0.78,
+        "no_speech_prob": 0.009339426644146442,
+        "words": [
+          {
+            "word": "次",
+            "start": 0.0,
+            "end": 0.22,
+            "probability": 0.0713651105761528
+          },
+          {
+            "word": "回",
+            "start": 0.22,
+            "end": 0.34,
+            "probability": 0.44656041264533997
+          },
+          {
+            "word": "の",
+            "start": 0.34,
+            "end": 0.8,
+            "probability": 0.2347673922777176
+          },
+          {
+            "word": "曲",
+            "start": 0.8,
+            "end": 1.0,
+            "probability": 0.06278356164693832
+          },
+          {
+            "word": "を",
+            "start": 1.0,
+            "end": 3.56,
+            "probability": 0.3836725652217865
+          },
+          {
+            "word": "やって",
+            "start": 3.56,
+            "end": 3.56,
+            "probability": 0.038223717361688614
+          },
+          {
+            "word": "み",
+            "start": 3.56,
+            "end": 4.02,
+            "probability": 0.4260094463825226
+          },
+          {
+            "word": "ましょう",
+            "start": 4.02,
+            "end": 18.9,
+            "probability": 0.4346665143966675
+          }
+        ]
+      }
+    ],
+    "language": "ja"
+  }
+}

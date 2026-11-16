@@ -1,0 +1,193 @@
+{
+  "schemaVersion": 1,
+  "key": "song-270",
+  "songId": 270,
+  "songName": "永恒曲",
+  "rowKey": "永恒曲",
+  "displaySongName": "永恒曲",
+  "artist": "太痕, 阿宣七二",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "",
+  "audio": {
+    "url": "assets/audio/song_269.m4a?v=1bbcf49b77d8",
+    "sha256": "1bbcf49b77d89d5d4be0850dc5daaf2b8b3a1d449b13f9dd9bcb9a7a61354189"
+  },
+  "retrievedAt": "2026-11-16T04:13:14.040Z",
+  "match": {
+    "status": "candidate_review_required",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E6%B0%B8%E6%81%92%E6%9B%B2&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E6%B0%B8%E6%81%92%E6%9B%B2%20%E5%A4%AA%E7%97%95&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 2676258459,
+        "name": "永恒曲",
+        "artists": [
+          "太痕",
+          "阿宣七二"
+        ],
+        "album": "永恒曲",
+        "durationMs": 253512,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 41653009,
+        "name": "永恒曲",
+        "artists": [
+          "希尔鲍"
+        ],
+        "album": "永恒曲",
+        "durationMs": 280685,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2627122909,
+        "name": "永恒曲",
+        "artists": [
+          "怼怼"
+        ],
+        "album": "已知",
+        "durationMs": 131016,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2080102713,
+        "name": "永恒曲（cover：SNH48）",
+        "artists": [
+          "一柒"
+        ],
+        "album": "塞纳河（cover）",
+        "durationMs": 251664,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 494330737,
+        "name": "永恒",
+        "artists": [
+          "刘惜君"
+        ],
+        "album": "永恒",
+        "durationMs": 279166,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 1912648708,
+        "name": "永恒",
+        "artists": [
+          "裂天"
+        ],
+        "album": "《永生》动画原声带",
+        "durationMs": 169411,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 2746215302,
+        "name": "止痛（我将在今夜吻你原著《石榴》）",
+        "artists": [
+          "摆渡渡渡丶",
+          "榴莲火",
+          "太痕"
+        ],
+        "album": "《止痛》（我将在今夜吻你原著《石榴》宣传曲）",
+        "durationMs": 287910,
+        "titleScore": 0,
+        "artistMatch": true,
+        "score": 0.2
+      },
+      {
+        "id": 1819939719,
+        "name": "故事里的追光者",
+        "artists": [
+          "太痕",
+          "叶平新",
+          "沐轻",
+          "电池猫Dc_cat",
+          "砚丞",
+          "玖月歌",
+          "风影",
+          "阿宣七二"
+        ],
+        "album": "故事里的追光者",
+        "durationMs": 229903,
+        "titleScore": 0,
+        "artistMatch": true,
+        "score": 0.2
+      }
+    ],
+    "workQuery": {
+      "song_id": 270,
+      "song_name": "永恒曲",
+      "show_as_song_name": "",
+      "display_song_name": "永恒曲",
+      "artist": "太痕, 阿宣七二",
+      "artist_search": "太痕, 阿宣七二",
+      "feat_artist": "",
+      "remark": "",
+      "tone": "",
+      "language": "中文",
+      "type": "流行",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV18Jpw6mE82/?p=3",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-06",
+      "row_key": "永恒曲"
+    },
+    "sourceId": 41653009,
+    "sourcePath": "sources/41653009.json",
+    "sourceUrl": "https://music.163.com/#/song?id=41653009",
+    "selected": {
+      "id": 41653009,
+      "name": "永恒曲",
+      "artists": [
+        "希尔鲍"
+      ],
+      "album": "永恒曲",
+      "durationMs": 280685,
+      "titleScore": 1,
+      "artistMatch": false,
+      "score": 0.8
+    },
+    "timedLineCount": 13
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-270-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 251.968,
+    "sourceFirstLine": {
+      "t": 8.27,
+      "text": "གཞས་པ།   ཞེད་པོ།"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 30.0,
+      "endSeconds": 30.36,
+      "similarity": 0.0,
+      "recognizedText": "自",
+      "meanProbability": 0.079,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

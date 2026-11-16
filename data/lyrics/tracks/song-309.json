@@ -1,0 +1,183 @@
+{
+  "schemaVersion": 1,
+  "key": "song-309",
+  "songId": 309,
+  "songName": "路过人间",
+  "rowKey": "路过人间",
+  "displaySongName": "路过人间",
+  "artist": "郁可唯",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "弹幕 04:04:50「路过人间」直接点名；两份合集 P11 同名同序。",
+  "audio": {
+    "url": "assets/audio/song_308.m4a?v=b25cffe0616e",
+    "sha256": "b25cffe0616ed3475a301a7ebd993f55363a0e4fd9e7fe9fa302d6337666fd76"
+  },
+  "retrievedAt": "2026-11-16T04:06:35.486Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E8%B7%AF%E8%BF%87%E4%BA%BA%E9%97%B4&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E8%B7%AF%E8%BF%87%E4%BA%BA%E9%97%B4%20%E9%83%81%E5%8F%AF%E5%94%AF&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1888915574,
+        "name": "路过人间",
+        "artists": [
+          "郁可唯"
+        ],
+        "album": "时光音乐会 第1期",
+        "durationMs": 288546,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 3399951042,
+        "name": "路过人间",
+        "artists": [
+          "拾音先生"
+        ],
+        "album": "路过人间",
+        "durationMs": 268260,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3436333986,
+        "name": "路过人间",
+        "artists": [
+          "林可期"
+        ],
+        "album": "路过人间",
+        "durationMs": 149424,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3427640534,
+        "name": "路过人间",
+        "artists": [
+          "山野"
+        ],
+        "album": "路过人间",
+        "durationMs": 244482,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3375559016,
+        "name": "路过人间 (Cover 郁可唯)",
+        "artists": [
+          "秋玥"
+        ],
+        "album": "",
+        "durationMs": 253530,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 2048602714,
+        "name": "路过人间 (粤语版)",
+        "artists": [
+          "谭咏麟"
+        ],
+        "album": "倾听好时光",
+        "durationMs": 271872,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 2053802963,
+        "name": "路过人间 cover 郁可唯",
+        "artists": [
+          "Vanilla"
+        ],
+        "album": "路过人间",
+        "durationMs": 245315,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 2143635387,
+        "name": "路过人间（cover郁可唯）",
+        "artists": [
+          "李雪儿"
+        ],
+        "album": "路过人间",
+        "durationMs": 81461,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      }
+    ],
+    "workQuery": {
+      "song_id": 309,
+      "song_name": "路过人间",
+      "show_as_song_name": "",
+      "display_song_name": "路过人间",
+      "artist": "郁可唯",
+      "artist_search": "郁可唯",
+      "feat_artist": "",
+      "remark": "弹幕 04:04:50「路过人间」直接点名；两份合集 P11 同名同序。",
+      "tone": "",
+      "language": "中文",
+      "type": "流行",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1uPJ86DE95/?p=11",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-16",
+      "row_key": "路过人间"
+    },
+    "sourceId": 1888915574,
+    "sourcePath": "sources/1888915574.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1888915574",
+    "selected": {
+      "id": 1888915574,
+      "name": "路过人间",
+      "artists": [
+        "郁可唯"
+      ],
+      "album": "时光音乐会 第1期",
+      "durationMs": 288546,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 47
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-309-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 249.493,
+    "sourceFirstLine": {
+      "t": 4,
+      "text": "和声编写 : 鱼椒盐"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 0.0,
+      "endSeconds": 0.08,
+      "similarity": 0.0,
+      "recognizedText": "我",
+      "meanProbability": 0.334,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

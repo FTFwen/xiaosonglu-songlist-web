@@ -1,0 +1,196 @@
+{
+  "schemaVersion": 1,
+  "key": "song-94",
+  "songId": 94,
+  "songName": "夏霞",
+  "displaySongName": "夏霞",
+  "artist": "あたらよ",
+  "language": "日文",
+  "derivative": false,
+  "audio": {
+    "url": "assets/audio/song_94.m4a?v=fb7ac1dd68dc",
+    "sha256": "fb7ac1dd68dc3a5b28a9cc42dbf47221ce9f6c0bf59b60c3bbdd406b282ed508"
+  },
+  "retrievedAt": "2026-11-16T03:58:09.426Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E5%A4%8F%E9%9C%9E&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1867150097,
+        "name": "夏霞",
+        "artists": [
+          "あたらよ"
+        ],
+        "album": "夏霞",
+        "durationMs": 228792,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1882029899,
+        "name": "夏霞",
+        "artists": [
+          "あたらよ"
+        ],
+        "album": "夜明け前",
+        "durationMs": 228792,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1929062240,
+        "name": "夏霞",
+        "artists": [
+          "あたらよ"
+        ],
+        "album": "極夜において月は語らず",
+        "durationMs": 227081,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1879078853,
+        "name": "夏霞",
+        "artists": [
+          "TOMOKO"
+        ],
+        "album": "夏霞",
+        "durationMs": 224976,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1960384346,
+        "name": "夏霞 (Acoustic ver.)",
+        "artists": [
+          "あたらよ"
+        ],
+        "album": "Acoustic Session",
+        "durationMs": 228253,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      },
+      {
+        "id": 1885183363,
+        "name": "夏霞 - From THE FIRST TAKE",
+        "artists": [
+          "あたらよ"
+        ],
+        "album": "夏霞 - From THE FIRST TAKE",
+        "durationMs": 217698,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      },
+      {
+        "id": 1978511848,
+        "name": "夏霞(中文填词 ver.)",
+        "artists": [
+          "朝菌",
+          "洛天依",
+          "云灏"
+        ],
+        "album": "夏霞（中文填词 ver.）",
+        "durationMs": 227367,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 1973608593,
+        "name": "また夏を追う",
+        "artists": [
+          "あたらよ"
+        ],
+        "album": "また夏を追う",
+        "durationMs": 287545,
+        "titleScore": 0,
+        "artistMatch": true,
+        "score": 0.2
+      }
+    ],
+    "sourceId": 1867150097,
+    "sourcePath": "sources/1867150097.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1867150097",
+    "selected": {
+      "id": 1867150097,
+      "name": "夏霞",
+      "artists": [
+        "あたらよ"
+      ],
+      "album": "夏霞",
+      "durationMs": 228792,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 29
+  },
+  "alignment": {
+    "status": "spotcheck_review_required",
+    "evidencePath": "evidence/song-94-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 226.371,
+    "sourceFirstLine": {
+      "t": 19.938,
+      "text": "空の青さに目を奪われて"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 19.6,
+      "endSeconds": 27.7,
+      "similarity": 0.8571428571428571,
+      "recognizedText": "空の青さに 目を張れて",
+      "meanProbability": 0.772,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": -0.338,
+    "checks": [
+      {
+        "sourceLine": {
+          "t": 104.65,
+          "text": "今更、思い出すなよ"
+        },
+        "evidencePath": "evidence/song-94-check0.json",
+        "candidate": {
+          "audioSeconds": 105.312,
+          "endSeconds": 111.132,
+          "similarity": 0.4,
+          "recognizedText": "今さら 想い合ったせないよ",
+          "meanProbability": 0.64,
+          "tokenPrefixOnly": false
+        },
+        "residualSeconds": 1.0
+      },
+      {
+        "sourceLine": {
+          "t": 210.09,
+          "text": "愛おしい 愛おしい日々"
+        },
+        "evidencePath": "evidence/song-94-check1.json",
+        "candidate": {
+          "audioSeconds": 210.072,
+          "endSeconds": 215.132,
+          "similarity": 0.75,
+          "recognizedText": "愛しい 愛しい",
+          "meanProbability": 0.861,
+          "tokenPrefixOnly": false
+        },
+        "residualSeconds": 0.32
+      }
+    ],
+    "asrLanguage": "ja",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  },
+  "rowKey": "夏霞",
+  "edition": "",
+  "remark": "弹幕02:54:37-02:58:23密集反应：夏霞好耶/有品/好听/真不错吧（15+条），为压轴曲；02:56:07“还有desert [哇]”疑似其后又唱了 desert（未收录，待复核）。网易云核实：あたらよ《夏霞》（2022，专辑《極夜において月は語らず》）。"
+}

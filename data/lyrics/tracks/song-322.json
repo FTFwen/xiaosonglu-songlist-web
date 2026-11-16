@@ -1,0 +1,183 @@
+{
+  "schemaVersion": 1,
+  "key": "song-322",
+  "songId": 322,
+  "songName": "海底",
+  "rowKey": "海底",
+  "displaySongName": "海底",
+  "artist": "小陈陈",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "桐人今天睡大觉「全自动歌切项目」2026.10.18 歌切合集第 15 分P（章节「16_海底 - 小陈陈」）。弹幕共 1 条直接出现该歌名。未定位回放时间点。",
+  "audio": {
+    "url": "assets/audio/song_321.m4a?v=e06f0add1c10",
+    "sha256": "e06f0add1c10087ae7ec63d4f37477d4e5193c1fd66c911bc864e29dfb870773"
+  },
+  "retrievedAt": "2026-11-16T04:13:17.501Z",
+  "match": {
+    "status": "candidate_review_required",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E6%B5%B7%E5%BA%95&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E6%B5%B7%E5%BA%95%20%E5%B0%8F%E9%99%88%E9%99%88&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1430583016,
+        "name": "海底",
+        "artists": [
+          "一支榴莲"
+        ],
+        "album": "海底",
+        "durationMs": 256111,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1426649237,
+        "name": "海底",
+        "artists": [
+          "一支榴莲"
+        ],
+        "album": "《独》",
+        "durationMs": 104544,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 411236726,
+        "name": "海底",
+        "artists": [
+          "鹿晗"
+        ],
+        "album": "Reloaded II",
+        "durationMs": 237259,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3408933267,
+        "name": "海底",
+        "artists": [
+          "陆锦舟"
+        ],
+        "album": "海底",
+        "durationMs": 98150,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 41663353,
+        "name": "海底",
+        "artists": [
+          "龚子婕JessieG"
+        ],
+        "album": "第二人称",
+        "durationMs": 245185,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1445670554,
+        "name": "海底",
+        "artists": [
+          "李君成（三块木头）"
+        ],
+        "album": "海底",
+        "durationMs": 267144,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1449990499,
+        "name": "海底",
+        "artists": [
+          "吴炳文"
+        ],
+        "album": "翻唱作品",
+        "durationMs": 19748,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1449213110,
+        "name": "海底",
+        "artists": [
+          "cococola"
+        ],
+        "album": "海底",
+        "durationMs": 184106,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 322,
+      "song_name": "海底",
+      "show_as_song_name": "",
+      "display_song_name": "海底",
+      "artist": "小陈陈",
+      "artist_search": "小陈陈 海底",
+      "feat_artist": "",
+      "remark": "桐人今天睡大觉「全自动歌切项目」2026.10.18 歌切合集第 15 分P（章节「16_海底 - 小陈陈」）。弹幕共 1 条直接出现该歌名。未定位回放时间点。",
+      "tone": "",
+      "language": "中文",
+      "type": "流行、翻唱",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1UPnV6zEs4/?p=15",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-18",
+      "row_key": "海底"
+    },
+    "sourceId": 1430583016,
+    "sourcePath": "sources/1430583016.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1430583016",
+    "selected": {
+      "id": 1430583016,
+      "name": "海底",
+      "artists": [
+        "一支榴莲"
+      ],
+      "album": "海底",
+      "durationMs": 256111,
+      "titleScore": 1,
+      "artistMatch": false,
+      "score": 0.8
+    },
+    "timedLineCount": 46
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-322-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 256.341,
+    "sourceFirstLine": {
+      "t": 24.104,
+      "text": "散落的月光穿过了云"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 29.98,
+      "endSeconds": 32.2,
+      "similarity": 0.5,
+      "recognizedText": " 穿過了",
+      "meanProbability": 0.748,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

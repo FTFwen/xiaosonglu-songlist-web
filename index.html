@@ -2331,6 +2331,16 @@
       font-size: 11px;
     }
 
+    /* 画中画歌词入口：歌名右侧、评分左侧。 */
+    .player-lyrics-pip-btn { flex-shrink: 0; width: 30px; height: 30px; border-color: transparent; background: transparent; }
+    .player-lyrics-pip-btn .icon { width: 21px; height: 21px; fill: none; }
+    .player-lyrics-pip-btn[aria-pressed="true"] { color: var(--primary-dark); background: var(--primary-soft); border-color: var(--primary); }
+    .player-lyrics-pip-btn:focus-visible { outline: 2px solid var(--primary); outline-offset: 3px; }
+    @media (max-width: 768px), (hover: none) and (pointer: coarse) {
+      .player-bar .player-lyrics-pip-btn { grid-row: 1; grid-column: 8; justify-self: end; }
+      .player-bar .player-info { padding-right: 38px; }
+    }
+
     /* ===== 播放栏里的评分：和卡片同一套控件，按「均分 / 我的」两行显示 ===== */
     .player-rating-host {
       flex: 0 0 auto;
@@ -4294,6 +4304,7 @@
       <div class="player-name" id="playerSongName">未选择歌曲</div>
       <div class="player-artist" id="playerSongArtist"></div>
     </div>
+    <button class="player-btn player-lyrics-pip-btn" id="playerLyricsPipBtn" type="button" title="画中画歌词" aria-label="打开画中画歌词" aria-pressed="false"><svg viewBox="0 0 24 24" class="icon" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4.5" width="18" height="15" rx="2.5"/><path d="M6.5 8.5h9M6.5 11.5h5"/><rect x="12" y="12.5" width="7" height="5" rx="1" fill="currentColor" stroke="none"/></svg></button>
     <div class="player-rating-host" id="playerRatingHost" data-rating-host></div>
     <div class="player-progress">
       <span class="player-time" id="playerTimeCur">00:00</span>
@@ -4460,7 +4471,8 @@
   <script src="js/data.js?v=31" defer></script>
   <script src="js/listen-together.js?v=4" defer></script>
   <script src="js/rating.js?v=8" defer></script>
-  <script src="js/app.js?v=112" defer></script>
+  <script src="js/lyrics-pip.js?v=2" defer></script>
+  <script src="js/app.js?v=113" defer></script>
   <script src="js/motion.js?v=19" defer></script>
   <script src="js/midautumn-skin.js?v=5" defer></script>
 </body>

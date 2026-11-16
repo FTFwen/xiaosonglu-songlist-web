@@ -1,0 +1,184 @@
+{
+  "schemaVersion": 1,
+  "key": "song-118",
+  "songId": 118,
+  "songName": "夏日已所剩无几",
+  "rowKey": "夏日已所剩无几",
+  "displaySongName": "夏日已所剩无几",
+  "artist": "泠鸢yousa",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "2026-08-29 心灵火Flame合集补录：【小松绿Viridis】20260829 歌切 分P12（04:32）。萌百核实：泠鸢yousa 2016-09-15 投稿的中文原创曲（专辑《茜色诗集》收录）；对应 08-29 审计遗留的 yousa 专场段。另有小冬青Viridis 单切 BV1vc416WEqw。",
+  "audio": {
+    "url": "assets/audio/song_113.m4a?v=d8679b890995",
+    "sha256": "d8679b890995f0b60b55224cb366d3b9142b053eb86ca296784808002a693c3c"
+  },
+  "retrievedAt": "2026-11-16T04:12:54.974Z",
+  "match": {
+    "status": "candidate_review_required",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E5%A4%8F%E6%97%A5%E5%B7%B2%E6%89%80%E5%89%A9%E6%97%A0%E5%87%A0&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E5%A4%8F%E6%97%A5%E5%B7%B2%E6%89%80%E5%89%A9%E6%97%A0%E5%87%A0%20%E6%B3%A0%E9%B8%A2yousa&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1483145968,
+        "name": "夏日已所剩无几",
+        "artists": [
+          "东京塔子"
+        ],
+        "album": "夏日已所剩无几",
+        "durationMs": 278177,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2148017430,
+        "name": "夏日已所剩无几",
+        "artists": [
+          "Rainton桐"
+        ],
+        "album": "夏日已所剩无几",
+        "durationMs": 277080,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1390822547,
+        "name": "夏日已所剩无几",
+        "artists": [
+          "杳杳"
+        ],
+        "album": "未竟之事",
+        "durationMs": 279000,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1396210934,
+        "name": "夏日已所剩无几",
+        "artists": [
+          "夜染"
+        ],
+        "album": "夏日椰凌",
+        "durationMs": 280320,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2642887089,
+        "name": "夏日已所剩无几",
+        "artists": [
+          "劳尔Blawn",
+          "洛天依"
+        ],
+        "album": "其他翻调",
+        "durationMs": 270883,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3433873943,
+        "name": "夏日已所剩无几",
+        "artists": [
+          "兔豆尼Doki"
+        ],
+        "album": "兔学豆唱",
+        "durationMs": 280119,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1897613721,
+        "name": "夏日已所剩无几",
+        "artists": [
+          "芷菡"
+        ],
+        "album": "泠泠之音-茜色信笺",
+        "durationMs": 278204,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1318126131,
+        "name": "夏日已所剩无几",
+        "artists": [
+          "T-n-T甲苯"
+        ],
+        "album": "受潮的甲苯",
+        "durationMs": 278617,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 118,
+      "song_name": "夏日已所剩无几",
+      "show_as_song_name": "",
+      "display_song_name": "夏日已所剩无几",
+      "artist": "泠鸢yousa",
+      "artist_search": "夏日已所剩无几 泠鸢yousa",
+      "feat_artist": "",
+      "remark": "2026-08-29 心灵火Flame合集补录：【小松绿Viridis】20260829 歌切 分P12（04:32）。萌百核实：泠鸢yousa 2016-09-15 投稿的中文原创曲（专辑《茜色诗集》收录）；对应 08-29 审计遗留的 yousa 专场段。另有小冬青Viridis 单切 BV1vc416WEqw。",
+      "tone": "",
+      "language": "中文",
+      "type": "国风、流行",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1gm4C65Ey6/?p=12",
+      "sing_count": 1,
+      "status_labels": "歌回",
+      "last_sing_at": "2026-08-29",
+      "row_key": "夏日已所剩无几"
+    },
+    "sourceId": 1483145968,
+    "sourcePath": "sources/1483145968.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1483145968",
+    "selected": {
+      "id": 1483145968,
+      "name": "夏日已所剩无几",
+      "artists": [
+        "东京塔子"
+      ],
+      "album": "夏日已所剩无几",
+      "durationMs": 278177,
+      "titleScore": 1,
+      "artistMatch": false,
+      "score": 0.8
+    },
+    "timedLineCount": 31
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-118-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 271.047,
+    "sourceFirstLine": {
+      "t": 21.569,
+      "text": "失手扑空蓝色的蜻蛉"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 28.66,
+      "endSeconds": 28.86,
+      "similarity": 0.0,
+      "recognizedText": "作",
+      "meanProbability": 0.002,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

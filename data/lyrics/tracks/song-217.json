@@ -1,0 +1,199 @@
+{
+  "schemaVersion": 1,
+  "key": "song-217",
+  "songId": 217,
+  "songName": "愛言葉",
+  "displaySongName": "愛言葉",
+  "artist": "DECO*27 / 初音ミク",
+  "language": "日文",
+  "derivative": false,
+  "audio": {
+    "url": "assets/audio/song_216.m4a?v=f5b512afc6af",
+    "sha256": "f5b512afc6af59db9986298ef960c7fcb55cc9e90ec25dfb7092ec4448e50398"
+  },
+  "retrievedAt": "2026-11-16T03:58:19.059Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E6%84%9B%E8%A8%80%E8%91%89&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 28152549,
+        "name": "愛言葉",
+        "artists": [
+          "DECO*27",
+          "初音ミク"
+        ],
+        "album": "DECO*27 VOCALOID COLLECTION 2008～2012",
+        "durationMs": 264933,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 22811619,
+        "name": "愛言葉",
+        "artists": [
+          "DECO*27",
+          "初音ミク"
+        ],
+        "album": "相愛性理論",
+        "durationMs": 264400,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 26217605,
+        "name": "愛言葉",
+        "artists": [
+          "DECO*27"
+        ],
+        "album": "DECOUSTIC",
+        "durationMs": 251146,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 532517,
+        "name": "愛言葉",
+        "artists": [
+          "少年T-佐香智久"
+        ],
+        "album": "愛言葉",
+        "durationMs": 327888,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 22690769,
+        "name": "愛言葉",
+        "artists": [
+          "いきものがかり"
+        ],
+        "album": "NEWTRAL",
+        "durationMs": 394878,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1897342676,
+        "name": "愛言葉",
+        "artists": [
+          "Tani Yuuki"
+        ],
+        "album": "Memories",
+        "durationMs": 286546,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3345623512,
+        "name": "愛言葉V",
+        "artists": [
+          "DECO*27",
+          "初音ミク"
+        ],
+        "album": "愛言葉V",
+        "durationMs": 219026,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      },
+      {
+        "id": 1385117201,
+        "name": "愛言葉III",
+        "artists": [
+          "DECO*27",
+          "初音ミク"
+        ],
+        "album": "アンドロイドガール",
+        "durationMs": 246333,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      }
+    ],
+    "sourceId": 28152549,
+    "sourcePath": "sources/28152549.json",
+    "sourceUrl": "https://music.163.com/#/song?id=28152549",
+    "selected": {
+      "id": 28152549,
+      "name": "愛言葉",
+      "artists": [
+        "DECO*27",
+        "初音ミク"
+      ],
+      "album": "DECO*27 VOCALOID COLLECTION 2008～2012",
+      "durationMs": 264933,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 54
+  },
+  "alignment": {
+    "status": "spotcheck_review_required",
+    "evidencePath": "evidence/song-217-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 267.285,
+    "sourceFirstLine": {
+      "t": 28.35,
+      "text": "いつも僕の子供が"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 30.0,
+      "endSeconds": 32.82,
+      "similarity": 0.8,
+      "recognizedText": "いつか僕の子供",
+      "meanProbability": 0.822,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": 1.65,
+    "checks": [
+      {
+        "sourceLine": {
+          "t": 130.84,
+          "text": "生まれる曲と詩に乗せて"
+        },
+        "evidencePath": "evidence/song-217-check0.json",
+        "candidate": {
+          "audioSeconds": 135.21,
+          "endSeconds": 135.63,
+          "similarity": 0.16666666666666666,
+          "recognizedText": "と",
+          "meanProbability": 0.473,
+          "tokenPrefixOnly": false
+        },
+        "residualSeconds": 2.72
+      },
+      {
+        "sourceLine": {
+          "t": 240.23,
+          "text": "好きだよと言う度に"
+        },
+        "evidencePath": "evidence/song-217-check1.json",
+        "candidate": {
+          "audioSeconds": 254.26,
+          "endSeconds": 255.22,
+          "similarity": 0.36363636363636365,
+          "recognizedText": "と言",
+          "meanProbability": 0.137,
+          "tokenPrefixOnly": false
+        },
+        "residualSeconds": 12.38
+      }
+    ],
+    "asrLanguage": "ja",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  },
+  "rowKey": "愛言葉",
+  "edition": "",
+  "remark": "UP 桐人今天睡大觉《2026.09.23练歌歌切合集》P8；DECO*27 名曲"
+}

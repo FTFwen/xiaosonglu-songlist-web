@@ -1,0 +1,190 @@
+{
+  "schemaVersion": 1,
+  "key": "song-208",
+  "songId": 208,
+  "songName": "404 Not Found",
+  "rowKey": "404 Not Found",
+  "displaySongName": "404 Not Found",
+  "artist": "赤羽",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "UP 心灵火Flame《20260919 歌切》P11；星尘Official投稿、赤羽演唱，kide作编曲、浓缩排骨&kide作词（专辑《天马行空Fairytale》）",
+  "audio": {
+    "url": "assets/audio/song_207.m4a?v=ae5804240b75",
+    "sha256": "ae5804240b75214b814d340e63d1886ce057ec88fa0d79b149a3192d8729bdf4"
+  },
+  "retrievedAt": "2026-11-16T04:13:06.569Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=404%20Not%20Found&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=404%20Not%20Found%20%E8%B5%A4%E7%BE%BD&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 2750825426,
+        "name": "404 not found",
+        "artists": [
+          "赤羽",
+          "W & J"
+        ],
+        "album": "404not found",
+        "durationMs": 321024,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 436016480,
+        "name": "404 not found",
+        "artists": [
+          "REOL"
+        ],
+        "album": "Σ",
+        "durationMs": 244906,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1957493200,
+        "name": "404 Not Found",
+        "artists": [
+          "平行四界Quadimension"
+        ],
+        "album": "404 Not Found",
+        "durationMs": 322233,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1398108420,
+        "name": "404 Not Found",
+        "artists": [
+          "TIAB"
+        ],
+        "album": "404 Not Found",
+        "durationMs": 230000,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3442744792,
+        "name": "404 Not Found",
+        "artists": [
+          "雾江月"
+        ],
+        "album": "404 Not Found",
+        "durationMs": 131186,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1846568220,
+        "name": "404 NOT FOUND",
+        "artists": [
+          "楽七俱乐部"
+        ],
+        "album": "酒醉的舞曲王",
+        "durationMs": 227410,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2747892022,
+        "name": "404: Not Found",
+        "artists": [
+          "KickFlip"
+        ],
+        "album": "My First Flip",
+        "durationMs": 154000,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1484629384,
+        "name": "404 Not Found",
+        "artists": [
+          "明澈澈",
+          "琪亚娜"
+        ],
+        "album": "摸鱼",
+        "durationMs": 312215,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 208,
+      "song_name": "404 Not Found",
+      "show_as_song_name": "",
+      "display_song_name": "404 Not Found",
+      "artist": "赤羽",
+      "artist_search": "404 Not Found 赤羽 kide",
+      "feat_artist": "",
+      "remark": "UP 心灵火Flame《20260919 歌切》P11；星尘Official投稿、赤羽演唱，kide作编曲、浓缩排骨&kide作词（专辑《天马行空Fairytale》）",
+      "tone": "",
+      "language": "中文",
+      "type": "Synthesizer V",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1rZe86yE49/?p=11",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-09-19",
+      "row_key": "404 Not Found"
+    },
+    "sourceId": 1957493200,
+    "sourcePath": "sources/1957493200.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1957493200",
+    "selected": {
+      "id": 1957493200,
+      "name": "404 Not Found",
+      "artists": [
+        "平行四界Quadimension"
+      ],
+      "album": "404 Not Found",
+      "durationMs": 322233,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 39,
+    "review": {
+      "reason": "Current REOL 404 not found is a different work. Public search confirms 平行四界Quadimension 404 Not Found (322233ms), consistent with 赤羽 catalog work; live lyric API returns 39 timestamped rows, beginning 当万木俱焚别走近我. Treat as original-work source requiring recording alignment.",
+      "evidenceUrl": "https://music.163.com/api/search/get?s=404%20Not%20Found%20%E5%B9%B3%E8%A1%8C%E5%9B%9B%E7%95%8C&type=1&limit=10",
+      "previousSourceId": 436016480
+    }
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-208-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 309.267,
+    "sourceFirstLine": {
+      "t": 28.44,
+      "text": "当万木俱焚别走近我"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 29.22,
+      "endSeconds": 29.66,
+      "similarity": 0.2,
+      "recognizedText": "别",
+      "meanProbability": 0.767,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

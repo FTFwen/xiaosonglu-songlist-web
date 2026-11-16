@@ -1,0 +1,181 @@
+{
+  "platform": "netease",
+  "id": 2058124989,
+  "url": "https://music.163.com/#/song?id=2058124989",
+  "apiUrl": "https://music.163.com/api/song/lyric?id=2058124989&lv=1&kv=1&tv=-1",
+  "retrievedAt": "2026-11-16T03:58:32.439Z",
+  "track": {
+    "id": 2058124989,
+    "name": "Fly, My Wings",
+    "artists": [
+      "Mili"
+    ],
+    "album": "Fly, My Wings",
+    "durationMs": 194653,
+    "titleScore": 1,
+    "artistMatch": true,
+    "score": 1
+  },
+  "lrc": "[00:00.000] 作词 : Cassie Wei\n[00:01.000] 作曲 : Cassie Wei/Yamato Kasai\n[00:02.000] 编曲 : Yamato Kasai\n[00:13.535] Fly, broken wings\n[00:16.009] I know you are still with me\n[00:21.355] All I need is a nudge to get me started\n[00:26.760] Fly, broken wings\n[00:29.261]To somewhere we can be free\n[00:33.404] Closer to our \"IDEAL\"\n[00:37.750]\n[00:43.535] Teary eyed\n[00:46.330] Once-gentle soul\n[00:49.759] I watched as you rotted away\n[00:54.828] The mirror says\n[00:58.081] That I still remember hope\n[01:03.426] Mmm\n[01:07.650]\n[01:09.216] You're doing what you love\n[01:12.167] Isn't that enough? Isn't that enough?\n[01:14.907] A genius, perfect job\n[01:17.232] Isn't that enough? Isn't that enough?\n[01:19.995] Again and again\n[01:21.192] You locked me down, I locked me down\n[01:23.675] We staked me to the ground\n[01:26.323]\n[01:31.698] The soil gave me warmth\n[01:39.221]\n[01:42.562] Please die, little dreams\n[01:45.927] Kill the camellias in me\n[01:51.495] Wouldn't it be easier to give in?\n[01:56.826] Why are these hands chasing dreams out of my reach?\n[02:03.334] Is my thirst for normalcy \"ODD\"?\n[02:09.434]\n[02:10.029] Fly, perfect wings\n[02:10.954] (Goodbye, goodbye, goodbye)\n[02:12.638] Where have you been hiding?\n[02:13.914] (Goodbye, goodbye, goodbye)\n[02:16.604] Bring me to the mind that got us started\n[02:23.375] Fly, perfect wings\n[02:23.971] (Goodbye, goodbye, goodbye)\n[02:25.874] Show them who I can be\n[02:27.397] (Goodbye, goodbye, goodbye)\n[02:29.972] For the one last time, if you will\n[02:36.408] \"THAT'S ALL\"\n",
+  "translationLrc": "[by:已过期i]\n[00:13.535]飞呀，破碎的翅膀\n[00:16.009]我知道你仍在我身旁\n[00:21.355]只需你轻轻一推，我就能再次起飞\n[00:26.760]飞呀，破碎的翅膀\n[00:29.261]带我前往自由之地\n[00:33.404]接近我们的“理想”\n[00:37.750]\n[00:43.535]湿润的双眼\n[00:46.330]曾经温柔的某人\n[00:49.759]我旁观逐渐腐朽不见的你\n[00:54.828]镜子说\n[00:58.081]我并未忘记希望\n[01:09.216]能做你喜欢做的事\n[01:07.650]\n[01:12.167]难道还不够吗？难道还不够吗？\n[01:14.907]拥有天生的才能，完美的职位\n[01:17.232]难道还不够吗？难道还不够吗？\n[01:19.995]一次又一次\n[01:21.192]你束缚了我，我束缚了我\n[01:23.675]我们一同把我钉在地上\n[01:31.698]土壤温暖我的身体\n[01:26.323]\n[01:42.562]永眠吧，渺小的梦想\n[01:39.221]\n[01:45.927]来杀尽我心中那朵朵山茶花呀\n[01:51.495]若能放弃，有多容易？\n[01:56.826]为何这双不听话的手非要伸向那些过于遥远的梦？\n[02:03.334]憧憬普通的我这份饥渴是否“异常”？\n[02:10.029]飞呀，完美的翅膀\n[02:09.434]\n[02:10.954]（再见，再见，再见）\n[02:12.638]你至今为止到底藏在哪里？\n[02:13.914]（再见，再见，再见）\n[02:16.604]带我回到我们最初始的那个心境\n[02:23.375]飞呀，完美的翅膀\n[02:23.971]（再见，再见，再见）\n[02:25.874]为大家展现我的实力\n[02:27.397]（再见，再见，再见）\n[02:29.972]一次就够，还请帮我实现\n[02:36.408]“以上”就是我最后的愿望",
+  "romanizationLrc": "",
+  "instrumental": false,
+  "lines": [
+    {
+      "t": 0,
+      "text": "作词 : Cassie Wei"
+    },
+    {
+      "t": 1,
+      "text": "作曲 : Cassie Wei/Yamato Kasai"
+    },
+    {
+      "t": 2,
+      "text": "编曲 : Yamato Kasai"
+    },
+    {
+      "t": 13.535,
+      "text": "Fly, broken wings"
+    },
+    {
+      "t": 16.009,
+      "text": "I know you are still with me"
+    },
+    {
+      "t": 21.355,
+      "text": "All I need is a nudge to get me started"
+    },
+    {
+      "t": 26.76,
+      "text": "Fly, broken wings"
+    },
+    {
+      "t": 29.261,
+      "text": "To somewhere we can be free"
+    },
+    {
+      "t": 33.404,
+      "text": "Closer to our \"IDEAL\""
+    },
+    {
+      "t": 43.535,
+      "text": "Teary eyed"
+    },
+    {
+      "t": 46.33,
+      "text": "Once-gentle soul"
+    },
+    {
+      "t": 49.759,
+      "text": "I watched as you rotted away"
+    },
+    {
+      "t": 54.828,
+      "text": "The mirror says"
+    },
+    {
+      "t": 58.081,
+      "text": "That I still remember hope"
+    },
+    {
+      "t": 63.426,
+      "text": "Mmm"
+    },
+    {
+      "t": 69.216,
+      "text": "You're doing what you love"
+    },
+    {
+      "t": 72.167,
+      "text": "Isn't that enough? Isn't that enough?"
+    },
+    {
+      "t": 74.907,
+      "text": "A genius, perfect job"
+    },
+    {
+      "t": 77.232,
+      "text": "Isn't that enough? Isn't that enough?"
+    },
+    {
+      "t": 79.995,
+      "text": "Again and again"
+    },
+    {
+      "t": 81.192,
+      "text": "You locked me down, I locked me down"
+    },
+    {
+      "t": 83.675,
+      "text": "We staked me to the ground"
+    },
+    {
+      "t": 91.698,
+      "text": "The soil gave me warmth"
+    },
+    {
+      "t": 102.562,
+      "text": "Please die, little dreams"
+    },
+    {
+      "t": 105.927,
+      "text": "Kill the camellias in me"
+    },
+    {
+      "t": 111.495,
+      "text": "Wouldn't it be easier to give in?"
+    },
+    {
+      "t": 116.826,
+      "text": "Why are these hands chasing dreams out of my reach?"
+    },
+    {
+      "t": 123.334,
+      "text": "Is my thirst for normalcy \"ODD\"?"
+    },
+    {
+      "t": 130.029,
+      "text": "Fly, perfect wings"
+    },
+    {
+      "t": 130.954,
+      "text": "(Goodbye, goodbye, goodbye)"
+    },
+    {
+      "t": 132.638,
+      "text": "Where have you been hiding?"
+    },
+    {
+      "t": 133.914,
+      "text": "(Goodbye, goodbye, goodbye)"
+    },
+    {
+      "t": 136.604,
+      "text": "Bring me to the mind that got us started"
+    },
+    {
+      "t": 143.375,
+      "text": "Fly, perfect wings"
+    },
+    {
+      "t": 143.971,
+      "text": "(Goodbye, goodbye, goodbye)"
+    },
+    {
+      "t": 145.874,
+      "text": "Show them who I can be"
+    },
+    {
+      "t": 147.397,
+      "text": "(Goodbye, goodbye, goodbye)"
+    },
+    {
+      "t": 149.972,
+      "text": "For the one last time, if you will"
+    },
+    {
+      "t": 156.408,
+      "text": "\"THAT'S ALL\""
+    }
+  ]
+}

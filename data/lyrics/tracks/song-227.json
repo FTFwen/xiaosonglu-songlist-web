@@ -1,0 +1,186 @@
+{
+  "schemaVersion": 1,
+  "key": "song-227",
+  "songId": 227,
+  "songName": "しかばねの踊り",
+  "rowKey": "しかばねの踊り",
+  "displaySongName": "しかばねの踊り",
+  "artist": "きくお / 初音ミク",
+  "language": "日文",
+  "derivative": false,
+  "edition": "",
+  "remark": "UP 桐人今天睡大觉《2026.09.23练歌歌切合集》P18",
+  "audio": {
+    "url": "assets/audio/song_226.m4a?v=56d530739388",
+    "sha256": "56d530739388aadf4b9a32b81f6ecdd10ede11cf7d107ddd86de8eacf4ce4e35"
+  },
+  "retrievedAt": "2026-11-16T04:05:20.260Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E3%81%97%E3%81%8B%E3%81%B0%E3%81%AD%E3%81%AE%E8%B8%8A%E3%82%8A&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E3%81%97%E3%81%8B%E3%81%B0%E3%81%AD%E3%81%AE%E8%B8%8A%E3%82%8A%20%E3%81%8D%E3%81%8F%E3%81%8A%20%2F%20%E5%88%9D%E9%9F%B3%E3%83%9F%E3%82%AF&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 29185031,
+        "name": "しかばねの踊り",
+        "artists": [
+          "きくお",
+          "初音ミク"
+        ],
+        "album": "きくおミク3",
+        "durationMs": 229333,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 440411367,
+        "name": "しかばねの踊り",
+        "artists": [
+          "宮下遊"
+        ],
+        "album": "最新热歌慢摇120",
+        "durationMs": 224917,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2755199849,
+        "name": "しかばねの踊り",
+        "artists": [
+          "白鸽P",
+          "诗岸"
+        ],
+        "album": "日落组③",
+        "durationMs": 233067,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2054943959,
+        "name": "しかばねの踊り",
+        "artists": [
+          "Mey"
+        ],
+        "album": "しかばねの踊り",
+        "durationMs": 222928,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 447935761,
+        "name": "しかばねの踊り（尸骸之舞）（Cover kikuo）",
+        "artists": [
+          "水山"
+        ],
+        "album": "水山翻唱",
+        "durationMs": 221823,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 3368871859,
+        "name": "しかばねの踊り（尸骸之舞）（重音テト）",
+        "artists": [
+          "人玉金金酱"
+        ],
+        "album": "しかばねの踊り（尸骸之舞）重音テト",
+        "durationMs": 219456,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 1915220158,
+        "name": "しかばねの踊り (尸骸之舞）",
+        "artists": [
+          "头孢"
+        ],
+        "album": "しかばねの踊り",
+        "durationMs": 228339,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 1387951926,
+        "name": "しかばねの踊り（尸骸之舞）",
+        "artists": [
+          "御神"
+        ],
+        "album": "半成品集合地",
+        "durationMs": 75833,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      }
+    ],
+    "workQuery": {
+      "song_id": 227,
+      "song_name": "しかばねの踊り",
+      "show_as_song_name": "",
+      "display_song_name": "しかばねの踊り",
+      "artist": "きくお / 初音ミク",
+      "artist_search": "きくお しかばねの踊り 初音ミク",
+      "feat_artist": "",
+      "remark": "UP 桐人今天睡大觉《2026.09.23练歌歌切合集》P18",
+      "tone": "",
+      "language": "日文",
+      "type": "Vocaloid、J-Pop",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1ouhW6GEoD/?p=18",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-09-23",
+      "row_key": "しかばねの踊り"
+    },
+    "sourceId": 29185031,
+    "sourcePath": "sources/29185031.json",
+    "sourceUrl": "https://music.163.com/#/song?id=29185031",
+    "selected": {
+      "id": 29185031,
+      "name": "しかばねの踊り",
+      "artists": [
+        "きくお",
+        "初音ミク"
+      ],
+      "album": "きくおミク3",
+      "durationMs": 229333,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 58
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-227-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 455.436,
+    "sourceFirstLine": {
+      "t": 0.4,
+      "text": "しかばね音頭で踊りましょう"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 20.78,
+      "endSeconds": 20.86,
+      "similarity": 0.5555555555555556,
+      "recognizedText": "りましょう",
+      "meanProbability": 0.718,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "ja",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

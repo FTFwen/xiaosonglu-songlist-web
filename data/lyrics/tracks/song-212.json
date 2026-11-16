@@ -1,0 +1,184 @@
+{
+  "schemaVersion": 1,
+  "key": "song-212",
+  "songId": 212,
+  "songName": "啄木鳥",
+  "rowKey": "啄木鳥",
+  "displaySongName": "啄木鳥",
+  "artist": "ヨルシカ",
+  "language": "日文",
+  "derivative": false,
+  "edition": "",
+  "remark": "UP 桐人今天睡大觉《2026.09.23练歌歌切合集》P3",
+  "audio": {
+    "url": "assets/audio/song_211.m4a?v=3a605e305a2d",
+    "sha256": "3a605e305a2d6e7dd57e189ae9059c0f24d6f011a433fcc546509af04e160ff5"
+  },
+  "retrievedAt": "2026-11-16T04:05:14.572Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E5%95%84%E6%9C%A8%E9%B3%A5&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E5%95%84%E6%9C%A8%E9%B3%A5%20%E3%83%A8%E3%83%AB%E3%82%B7%E3%82%AB&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 3355479295,
+        "name": "啄木鳥",
+        "artists": [
+          "ヨルシカ"
+        ],
+        "album": "二人称",
+        "durationMs": 215782,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 3366134935,
+        "name": "啄木鳥",
+        "artists": [
+          "Matt"
+        ],
+        "album": "ヨルシカ - 二人称（Instrumental Cover）",
+        "durationMs": 230021,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3354894733,
+        "name": "啄木鸟",
+        "artists": [
+          "宝宝儿歌屋"
+        ],
+        "album": "啄木鸟",
+        "durationMs": 60312,
+        "titleScore": 0,
+        "artistMatch": false,
+        "score": 0
+      },
+      {
+        "id": 1915261594,
+        "name": "啄木鸟",
+        "artists": [
+          "小荧星合唱团"
+        ],
+        "album": "大母鸡——儿童歌曲八音盒",
+        "durationMs": 168826,
+        "titleScore": 0,
+        "artistMatch": false,
+        "score": 0
+      },
+      {
+        "id": 1486131968,
+        "name": "啄木鸟",
+        "artists": [
+          "火火兔"
+        ],
+        "album": "百科知识",
+        "durationMs": 77672,
+        "titleScore": 0,
+        "artistMatch": false,
+        "score": 0
+      },
+      {
+        "id": 22267064,
+        "name": "Woody Woodpecker (Remastered 2005)",
+        "artists": [
+          "Mel Blanc"
+        ],
+        "album": "Greatest Hits",
+        "durationMs": 138762,
+        "titleScore": 0,
+        "artistMatch": false,
+        "score": 0
+      },
+      {
+        "id": 1806806077,
+        "name": "啄木鸟",
+        "artists": [
+          "黑优优"
+        ],
+        "album": "欢乐儿歌: 天上的朋友欢乐飞",
+        "durationMs": 80000,
+        "titleScore": 0,
+        "artistMatch": false,
+        "score": 0
+      },
+      {
+        "id": 5217061,
+        "name": "The Woody Woodpecker Song",
+        "artists": [
+          "Danny Kaye",
+          "The Andrews Sisters"
+        ],
+        "album": "Vintage Children's Favorites (1926 - 1950)",
+        "durationMs": 132133,
+        "titleScore": 0,
+        "artistMatch": false,
+        "score": 0
+      }
+    ],
+    "workQuery": {
+      "song_id": 212,
+      "song_name": "啄木鳥",
+      "show_as_song_name": "",
+      "display_song_name": "啄木鳥",
+      "artist": "ヨルシカ",
+      "artist_search": "ヨルシカ 啄木鳥",
+      "feat_artist": "",
+      "remark": "UP 桐人今天睡大觉《2026.09.23练歌歌切合集》P3",
+      "tone": "",
+      "language": "日文",
+      "type": "J-Pop",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1ouhW6GEoD/?p=3",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-09-23",
+      "row_key": "啄木鳥"
+    },
+    "sourceId": 3355479295,
+    "sourcePath": "sources/3355479295.json",
+    "sourceUrl": "https://music.163.com/#/song?id=3355479295",
+    "selected": {
+      "id": 3355479295,
+      "name": "啄木鳥",
+      "artists": [
+        "ヨルシカ"
+      ],
+      "album": "二人称",
+      "durationMs": 215782,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 28
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-212-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 165.999,
+    "sourceFirstLine": {
+      "t": 2.082,
+      "text": "私の心　がらんどう"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 6.16,
+      "endSeconds": 7.44,
+      "similarity": 0.4,
+      "recognizedText": "私の",
+      "meanProbability": 0.813,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "ja",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

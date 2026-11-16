@@ -1,0 +1,430 @@
+{
+  "audioSha256": "cc20351c09924d623cfa05b596a8c72c7fea3ea8e336dae84f88bcaadd4c980a",
+  "model": "whisper-base",
+  "start": 134.61,
+  "end": 154.61,
+  "result": {
+    "text": "打打打打打完了完了完了完了哈哈哈哈哈哈哈哈哈哈嗯打出来的想念变成空气在探谁懂了想要躺在你块",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 1.2400000000000002,
+        "end": 4.1,
+        "text": "打打打打打完了完了",
+        "tokens": [
+          50364,
+          12467,
+          12467,
+          12467,
+          12467,
+          12467,
+          41665,
+          41665,
+          50564
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.6733931848558329,
+        "compression_ratio": 1.4835164835164836,
+        "no_speech_prob": 0.0877796858549118,
+        "words": [
+          {
+            "word": "打",
+            "start": 1.2400000000000002,
+            "end": 2.0,
+            "probability": 0.04475536569952965
+          },
+          {
+            "word": "打",
+            "start": 2.0,
+            "end": 2.38,
+            "probability": 0.4957551956176758
+          },
+          {
+            "word": "打",
+            "start": 2.38,
+            "end": 3.0,
+            "probability": 0.7889741063117981
+          },
+          {
+            "word": "打",
+            "start": 3.0,
+            "end": 3.36,
+            "probability": 0.28677695989608765
+          },
+          {
+            "word": "打",
+            "start": 3.36,
+            "end": 3.62,
+            "probability": 0.06857579201459885
+          },
+          {
+            "word": "完了",
+            "start": 3.62,
+            "end": 3.8,
+            "probability": 0.8809434771537781
+          },
+          {
+            "word": "完了",
+            "start": 3.8,
+            "end": 4.1,
+            "probability": 0.8164682388305664
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "seek": 0,
+        "start": 4.1,
+        "end": 5.0,
+        "text": "完了完了",
+        "tokens": [
+          50564,
+          41665,
+          41665,
+          50614
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.6733931848558329,
+        "compression_ratio": 1.4835164835164836,
+        "no_speech_prob": 0.0877796858549118,
+        "words": [
+          {
+            "word": "完了",
+            "start": 4.1,
+            "end": 4.52,
+            "probability": 0.36496832966804504
+          },
+          {
+            "word": "完了",
+            "start": 4.52,
+            "end": 5.0,
+            "probability": 0.11563184857368469
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "seek": 0,
+        "start": 5.0,
+        "end": 6.0,
+        "text": "哈哈哈哈",
+        "tokens": [
+          50614,
+          15964,
+          15964,
+          50664
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.6733931848558329,
+        "compression_ratio": 1.4835164835164836,
+        "no_speech_prob": 0.0877796858549118,
+        "words": [
+          {
+            "word": "哈哈",
+            "start": 5.0,
+            "end": 5.78,
+            "probability": 0.011005631648004055
+          },
+          {
+            "word": "哈哈",
+            "start": 5.78,
+            "end": 6.16,
+            "probability": 0.4831525683403015
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "seek": 0,
+        "start": 7.04,
+        "end": 7.42,
+        "text": "哈哈",
+        "tokens": [
+          50664,
+          15964,
+          50714
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.6733931848558329,
+        "compression_ratio": 1.4835164835164836,
+        "no_speech_prob": 0.0877796858549118,
+        "words": [
+          {
+            "word": "哈哈",
+            "start": 7.04,
+            "end": 7.42,
+            "probability": 0.29952144622802734
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "seek": 0,
+        "start": 7.42,
+        "end": 7.58,
+        "text": "哈哈",
+        "tokens": [
+          50714,
+          15964,
+          50764
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.6733931848558329,
+        "compression_ratio": 1.4835164835164836,
+        "no_speech_prob": 0.0877796858549118,
+        "words": [
+          {
+            "word": "哈哈",
+            "start": 7.42,
+            "end": 7.58,
+            "probability": 0.19577251374721527
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "seek": 0,
+        "start": 7.58,
+        "end": 7.6,
+        "text": "哈哈",
+        "tokens": [
+          50764,
+          15964,
+          50814
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.6733931848558329,
+        "compression_ratio": 1.4835164835164836,
+        "no_speech_prob": 0.0877796858549118,
+        "words": [
+          {
+            "word": "哈哈",
+            "start": 7.58,
+            "end": 7.6,
+            "probability": 0.17700403928756714
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "seek": 0,
+        "start": 8.52,
+        "end": 9.28,
+        "text": "嗯",
+        "tokens": [
+          50814,
+          21206,
+          50864
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.6733931848558329,
+        "compression_ratio": 1.4835164835164836,
+        "no_speech_prob": 0.0877796858549118,
+        "words": [
+          {
+            "word": "嗯",
+            "start": 8.52,
+            "end": 9.28,
+            "probability": 0.01028286013752222
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "seek": 0,
+        "start": 10.0,
+        "end": 10.86,
+        "text": "打出来的",
+        "tokens": [
+          50864,
+          12467,
+          44561,
+          1546,
+          50914
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.6733931848558329,
+        "compression_ratio": 1.4835164835164836,
+        "no_speech_prob": 0.0877796858549118,
+        "words": [
+          {
+            "word": "打",
+            "start": 10.0,
+            "end": 10.38,
+            "probability": 0.4125526547431946
+          },
+          {
+            "word": "出来",
+            "start": 10.38,
+            "end": 10.62,
+            "probability": 0.38775259256362915
+          },
+          {
+            "word": "的",
+            "start": 10.62,
+            "end": 10.86,
+            "probability": 0.8923755884170532
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "seek": 0,
+        "start": 13.64,
+        "end": 17.08,
+        "text": "想念变成空气在探谁",
+        "tokens": [
+          51064,
+          7093,
+          33679,
+          2129,
+          246,
+          11336,
+          23322,
+          42204,
+          3581,
+          6900,
+          95,
+          33556,
+          51214
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.6733931848558329,
+        "compression_ratio": 1.4835164835164836,
+        "no_speech_prob": 0.0877796858549118,
+        "words": [
+          {
+            "word": "想",
+            "start": 13.64,
+            "end": 14.4,
+            "probability": 0.7146353721618652
+          },
+          {
+            "word": "念",
+            "start": 14.4,
+            "end": 14.6,
+            "probability": 0.9926510453224182
+          },
+          {
+            "word": "变",
+            "start": 14.6,
+            "end": 14.82,
+            "probability": 0.8582330644130707
+          },
+          {
+            "word": "成",
+            "start": 14.82,
+            "end": 15.1,
+            "probability": 0.9932657480239868
+          },
+          {
+            "word": "空",
+            "start": 15.1,
+            "end": 15.64,
+            "probability": 0.9771044850349426
+          },
+          {
+            "word": "气",
+            "start": 15.64,
+            "end": 15.86,
+            "probability": 0.5818046927452087
+          },
+          {
+            "word": "在",
+            "start": 15.86,
+            "end": 16.28,
+            "probability": 0.6231853365898132
+          },
+          {
+            "word": "探",
+            "start": 16.28,
+            "end": 16.68,
+            "probability": 0.5398566611111164
+          },
+          {
+            "word": "谁",
+            "start": 16.68,
+            "end": 17.08,
+            "probability": 0.2208474576473236
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "seek": 0,
+        "start": 17.08,
+        "end": 19.86,
+        "text": "懂了想要躺在你块",
+        "tokens": [
+          51214,
+          29624,
+          2289,
+          7093,
+          4275,
+          17514,
+          118,
+          3581,
+          2166,
+          47734,
+          51364
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.6733931848558329,
+        "compression_ratio": 1.4835164835164836,
+        "no_speech_prob": 0.0877796858549118,
+        "words": [
+          {
+            "word": "懂",
+            "start": 17.08,
+            "end": 17.6,
+            "probability": 0.8781058192253113
+          },
+          {
+            "word": "了",
+            "start": 17.6,
+            "end": 17.78,
+            "probability": 0.5786291360855103
+          },
+          {
+            "word": "想",
+            "start": 17.78,
+            "end": 18.0,
+            "probability": 0.5372561812400818
+          },
+          {
+            "word": "要",
+            "start": 18.0,
+            "end": 18.32,
+            "probability": 0.9543722867965698
+          },
+          {
+            "word": "躺",
+            "start": 18.32,
+            "end": 18.8,
+            "probability": 0.6203308403491974
+          },
+          {
+            "word": "在",
+            "start": 18.8,
+            "end": 19.08,
+            "probability": 0.9985474944114685
+          },
+          {
+            "word": "你",
+            "start": 19.08,
+            "end": 19.46,
+            "probability": 0.8606835007667542
+          },
+          {
+            "word": "块",
+            "start": 19.46,
+            "end": 19.86,
+            "probability": 0.12058226019144058
+          }
+        ]
+      }
+    ],
+    "language": "zh"
+  }
+}

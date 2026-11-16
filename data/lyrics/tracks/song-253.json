@@ -1,0 +1,185 @@
+{
+  "schemaVersion": 1,
+  "key": "song-253",
+  "songId": 253,
+  "songName": "south wind",
+  "rowKey": "south wind",
+  "displaySongName": "south wind",
+  "artist": "三都",
+  "language": "",
+  "derivative": false,
+  "edition": "",
+  "remark": "",
+  "audio": {
+    "url": "assets/audio/song_252.m4a?v=8bb68dea9b3e",
+    "sha256": "8bb68dea9b3eefd0d132acd2547dcc67edc01138534f8a637339f81f1563d439"
+  },
+  "retrievedAt": "2026-11-16T04:05:44.272Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=south%20wind&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=south%20wind%20%E4%B8%89%E9%83%BD&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1961354219,
+        "name": "south wind",
+        "artists": [
+          "三都"
+        ],
+        "album": "幻想诗",
+        "durationMs": 210102,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 416554193,
+        "name": "South Wind",
+        "artists": [
+          "小瀬村晶",
+          "NIKIIE"
+        ],
+        "album": "MOMENTARY: Memories of the Beginning",
+        "durationMs": 216548,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2049501440,
+        "name": "South Wind",
+        "artists": [
+          "Himawari"
+        ],
+        "album": "花ウタ その弐",
+        "durationMs": 216640,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1217433,
+        "name": "Southwind",
+        "artists": [
+          "Dan Gibson"
+        ],
+        "album": "Celtic Seashore",
+        "durationMs": 346650,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1329571055,
+        "name": "South wind",
+        "artists": [
+          "Cafe Music BGM channel"
+        ],
+        "album": "Sea Side CAFE Bossa Nova",
+        "durationMs": 265795,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1923142845,
+        "name": "South Wind",
+        "artists": [
+          "陈仪桐"
+        ],
+        "album": "South Wind",
+        "durationMs": 211855,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2146435826,
+        "name": "South Wind",
+        "artists": [
+          "Mingxi Yuan"
+        ],
+        "album": "Strange Dreams",
+        "durationMs": 156225,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3363468374,
+        "name": "South Wind",
+        "artists": [
+          "Satoko Fujii Orchestra East",
+          "藤井郷子"
+        ],
+        "album": "Double Take",
+        "durationMs": 774400,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 253,
+      "song_name": "south wind",
+      "show_as_song_name": "",
+      "display_song_name": "south wind",
+      "artist": "三都",
+      "artist_search": "三都",
+      "feat_artist": "",
+      "remark": "",
+      "tone": "",
+      "language": "",
+      "type": "流行",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1g1ah6REpb/?p=32",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-09-27",
+      "row_key": "south wind"
+    },
+    "sourceId": 1961354219,
+    "sourcePath": "sources/1961354219.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1961354219",
+    "selected": {
+      "id": 1961354219,
+      "name": "south wind",
+      "artists": [
+        "三都"
+      ],
+      "album": "幻想诗",
+      "durationMs": 210102,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 47
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-253-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 211.209,
+    "sourceFirstLine": {
+      "t": 19.75,
+      "text": "Find a way to leave here without any noise"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 22.3,
+      "endSeconds": 23.94,
+      "similarity": 0.3793103448275862,
+      "recognizedText": " going to go to the bathroom. I'm",
+      "meanProbability": 0.351,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "en",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

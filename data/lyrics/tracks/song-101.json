@@ -1,0 +1,220 @@
+{
+  "schemaVersion": 1,
+  "key": "song-101",
+  "songId": 101,
+  "songName": "想和你迎着台风去看海",
+  "rowKey": "想和你迎着台风去看海",
+  "displaySongName": "想和你迎着台风去看海",
+  "artist": "桑拿猫黑糖 / 洛天依",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "双切片佐证 08-29 突击歌回演唱：《左摇右晃小甜歌《想和你迎着台风去看海》》（BV1ta4y6VEQy，赫洛二号机，pub 16:10，1:43）与《\"刚想开口骂 心却跳起来\"》（BV1qT4k6QEXt，正逢夏末秋凉，pub 14:34，1:44）；弹幕 00:32:30-00:34:00「可爱的歌」「好可爱...」对应\"清新可爱的小情歌\"。桑拿猫黑糖 2022-08-29 投稿 ACE 中文原创（洛天依演唱，殿堂曲），投稿日恰为本场直播日（周年）。start/end 按弹幕时段估算。",
+  "audio": {
+    "url": "assets/audio/song_114.m4a?v=9bd41e2a8c17",
+    "sha256": "9bd41e2a8c179302aee34e9186a6184a934a7ec0d04fa8b5e8c8c0cafbd0c2ce"
+  },
+  "retrievedAt": "2026-11-16T04:03:27.984Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E6%83%B3%E5%92%8C%E4%BD%A0%E8%BF%8E%E7%9D%80%E5%8F%B0%E9%A3%8E%E5%8E%BB%E7%9C%8B%E6%B5%B7&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E6%83%B3%E5%92%8C%E4%BD%A0%E8%BF%8E%E7%9D%80%E5%8F%B0%E9%A3%8E%E5%8E%BB%E7%9C%8B%E6%B5%B7%20%E6%A1%91%E6%8B%BF%E7%8C%AB%E9%BB%91%E7%B3%96%20%2F%20%E6%B4%9B%E5%A4%A9%E4%BE%9D&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1979042819,
+        "name": "想和你迎着台风去看海",
+        "artists": [
+          "桑拿猫黑糖",
+          "洛天依"
+        ],
+        "album": "想和你迎着台风去看海",
+        "durationMs": 101745,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2028032807,
+        "name": "想和你迎着台风去看海",
+        "artists": [
+          "玖肆仟"
+        ],
+        "album": "仟の夏 [翻唱辑]",
+        "durationMs": 102250,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1982646970,
+        "name": "想和你迎着台风去看海",
+        "artists": [
+          "某某惠"
+        ],
+        "album": "想和你迎着台风去看海",
+        "durationMs": 106935,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2610982544,
+        "name": "想和你迎着台风去看海",
+        "artists": [
+          "泠七弦琴",
+          "星尘infinity"
+        ],
+        "album": "平行四界",
+        "durationMs": 102074,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2009428083,
+        "name": "想和你迎着台风去看海",
+        "artists": [
+          "刷牙"
+        ],
+        "album": "想和你迎着台风去看海",
+        "durationMs": 203467,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2620917790,
+        "name": "想和你迎着台风去看海",
+        "artists": [
+          "俞佳乐",
+          "丁嘉昱"
+        ],
+        "album": "想和你迎着台风去看海",
+        "durationMs": 102000,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2008043728,
+        "name": "想和你迎着台风去看海",
+        "artists": [
+          "野"
+        ],
+        "album": "想和你迎着台风去看海",
+        "durationMs": 101407,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2139781196,
+        "name": "想和你迎着台风去看海",
+        "artists": [
+          "栖苑"
+        ],
+        "album": "想和你迎着台风去看海",
+        "durationMs": 101792,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 101,
+      "song_name": "想和你迎着台风去看海",
+      "show_as_song_name": "",
+      "display_song_name": "想和你迎着台风去看海",
+      "artist": "桑拿猫黑糖 / 洛天依",
+      "artist_search": "桑拿猫黑糖 洛天依",
+      "feat_artist": "",
+      "remark": "双切片佐证 08-29 突击歌回演唱：《左摇右晃小甜歌《想和你迎着台风去看海》》（BV1ta4y6VEQy，赫洛二号机，pub 16:10，1:43）与《\"刚想开口骂 心却跳起来\"》（BV1qT4k6QEXt，正逢夏末秋凉，pub 14:34，1:44）；弹幕 00:32:30-00:34:00「可爱的歌」「好可爱...」对应\"清新可爱的小情歌\"。桑拿猫黑糖 2022-08-29 投稿 ACE 中文原创（洛天依演唱，殿堂曲），投稿日恰为本场直播日（周年）。start/end 按弹幕时段估算。",
+      "tone": "",
+      "language": "中文",
+      "type": "ACE、中V",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1ta4y6VEQy/",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切确认",
+      "last_sing_at": "2026-08-29",
+      "row_key": "想和你迎着台风去看海"
+    },
+    "sourceId": 1979042819,
+    "sourcePath": "sources/1979042819.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1979042819",
+    "selected": {
+      "id": 1979042819,
+      "name": "想和你迎着台风去看海",
+      "artists": [
+        "桑拿猫黑糖",
+        "洛天依"
+      ],
+      "album": "想和你迎着台风去看海",
+      "durationMs": 101745,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 18
+  },
+  "alignment": {
+    "status": "spotcheck_review_required",
+    "evidencePath": "evidence/song-101-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 102.037,
+    "sourceFirstLine": {
+      "t": 15.06,
+      "text": "一个不小心，和你撞满怀"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 16.3,
+      "endSeconds": 19.54,
+      "similarity": 0.9,
+      "recognizedText": "》一個不小心和你裝滿懷",
+      "meanProbability": 0.736,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": 1.24,
+    "checks": [
+      {
+        "sourceLine": {
+          "t": 47.44,
+          "text": "哎呀哎呀什么样的约会才能算足够的浪漫"
+        },
+        "evidencePath": "evidence/song-101-check0.json",
+        "candidate": {
+          "audioSeconds": 47.94,
+          "endSeconds": 53.48,
+          "similarity": 0.8823529411764706,
+          "recognizedText": "哎呀哎呀什麼樣的月會才能算足夠的",
+          "meanProbability": 0.82,
+          "tokenPrefixOnly": false
+        },
+        "residualSeconds": -0.74
+      },
+      {
+        "sourceLine": {
+          "t": 85.059,
+          "text": "一起唱呐呐呐"
+        },
+        "evidencePath": "evidence/song-101-check1.json",
+        "candidate": {
+          "audioSeconds": 85.499,
+          "endSeconds": 87.039,
+          "similarity": 0.6666666666666666,
+          "recognizedText": "一起唱",
+          "meanProbability": 0.857,
+          "tokenPrefixOnly": false
+        },
+        "residualSeconds": -0.8
+      }
+    ],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

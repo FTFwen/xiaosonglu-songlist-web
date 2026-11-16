@@ -1,0 +1,187 @@
+{
+  "schemaVersion": 1,
+  "key": "song-389",
+  "songId": 389,
+  "songName": "套马杆",
+  "rowKey": "套马杆",
+  "displaySongName": "套马杆",
+  "artist": "乌兰图雅",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "回放 03:03-04:05 被高频点歌（弹幕「套马杆」×14、「套马杆李在癞痢」），最终演唱；乌兰图雅原唱。",
+  "audio": {
+    "url": "assets/audio/song_388.m4a?v=a331da4b8ed1",
+    "sha256": "a331da4b8ed1e3b2353e8ef140b929107cfaac0c8dc0223f072edb2cd8eb9998"
+  },
+  "retrievedAt": "2026-11-16T04:08:09.855Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E5%A5%97%E9%A9%AC%E6%9D%86&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E5%A5%97%E9%A9%AC%E6%9D%86%20%E4%B9%8C%E5%85%B0%E5%9B%BE%E9%9B%85&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 3349052584,
+        "name": "套马杆",
+        "artists": [
+          "乌兰图雅",
+          "彰武小兵",
+          "韩帅"
+        ],
+        "album": "套马杆",
+        "durationMs": 134884,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 305800,
+        "name": "套马杆",
+        "artists": [
+          "乌兰图雅"
+        ],
+        "album": "金色的草原",
+        "durationMs": 282372,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 305809,
+        "name": "套马杆",
+        "artists": [
+          "乌兰图雅"
+        ],
+        "album": "火辣辣的情歌",
+        "durationMs": 282985,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2144047133,
+        "name": "套马杆",
+        "artists": [
+          "乌兰图雅"
+        ],
+        "album": "",
+        "durationMs": 280533,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2153879014,
+        "name": "套马杆",
+        "artists": [
+          "乌兰图雅"
+        ],
+        "album": "",
+        "durationMs": 253971,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 402070161,
+        "name": "套马杆",
+        "artists": [
+          "乌兰图雅"
+        ],
+        "album": "梦想公益盛典原声",
+        "durationMs": 212000,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1883829929,
+        "name": "套马杆",
+        "artists": [
+          "乐栖谷"
+        ],
+        "album": "套马杆",
+        "durationMs": 279648,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1449219599,
+        "name": "套马杆",
+        "artists": [
+          "慢悠悠"
+        ],
+        "album": "悠尤有呦",
+        "durationMs": 277292,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 389,
+      "song_name": "套马杆",
+      "show_as_song_name": "",
+      "display_song_name": "套马杆",
+      "artist": "乌兰图雅",
+      "artist_search": "乌兰图雅",
+      "feat_artist": "",
+      "remark": "回放 03:03-04:05 被高频点歌（弹幕「套马杆」×14、「套马杆李在癞痢」），最终演唱；乌兰图雅原唱。",
+      "tone": "",
+      "language": "中文",
+      "type": "流行、经典",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1x7WV6rEkh/",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切复核",
+      "last_sing_at": "2026-11-10",
+      "row_key": "套马杆"
+    },
+    "sourceId": 3349052584,
+    "sourcePath": "sources/3349052584.json",
+    "sourceUrl": "https://music.163.com/#/song?id=3349052584",
+    "selected": {
+      "id": 3349052584,
+      "name": "套马杆",
+      "artists": [
+        "乌兰图雅",
+        "彰武小兵",
+        "韩帅"
+      ],
+      "album": "套马杆",
+      "durationMs": 134884,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 33
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-389-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 146.475,
+    "sourceFirstLine": {
+      "t": 3.03,
+      "text": "乌兰图雅-套马杆"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 2.06,
+      "endSeconds": 3.42,
+      "similarity": 0.0,
+      "recognizedText": "我觉得",
+      "meanProbability": 0.872,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

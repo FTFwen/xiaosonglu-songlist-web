@@ -1,0 +1,162 @@
+{
+  "schemaVersion": 1,
+  "key": "song-99",
+  "songId": 99,
+  "songName": "绿色",
+  "displaySongName": "绿色",
+  "artist": "陈雪凝",
+  "language": "中文",
+  "derivative": false,
+  "audio": {
+    "url": "assets/audio/song_103.m4a?v=d264ad8acdc6",
+    "sha256": "d264ad8acdc65eec567632a39444a4134351f1cd97b32d903da2bcc6bdb86fd7"
+  },
+  "retrievedAt": "2026-11-16T03:57:38.701Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E7%BB%BF%E8%89%B2&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1345848098,
+        "name": "绿色",
+        "artists": [
+          "陈雪凝"
+        ],
+        "album": "绿色",
+        "durationMs": 269590,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1363304329,
+        "name": "绿色",
+        "artists": [
+          "第六只刺猬"
+        ],
+        "album": "【绿色】",
+        "durationMs": 269430,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3346368608,
+        "name": "绿色",
+        "artists": [
+          "DJ冷冰冰",
+          "池澜"
+        ],
+        "album": "绿色",
+        "durationMs": 122950,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3451115121,
+        "name": "绿色",
+        "artists": [
+          "百合园小咲"
+        ],
+        "album": "AI司凤音乐",
+        "durationMs": 227080,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1360282420,
+        "name": "绿色",
+        "artists": [
+          "喵太补眠ing"
+        ],
+        "album": "绿色",
+        "durationMs": 269975,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3423556813,
+        "name": "绿色 夏天 DJ",
+        "artists": [
+          "阿岩"
+        ],
+        "album": "把心事藏进网易云的歌单",
+        "durationMs": 221982,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 3442255260,
+        "name": "绿色 (DJ版)",
+        "artists": [
+          "Xu Yuan"
+        ],
+        "album": "",
+        "durationMs": 132923,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 3445479537,
+        "name": "绿色（撕裂破碎版）",
+        "artists": [
+          "天泠泠"
+        ],
+        "album": "绿色（撕裂破碎版）",
+        "durationMs": 216000,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      }
+    ],
+    "sourceId": 1345848098,
+    "sourcePath": "sources/1345848098.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1345848098",
+    "selected": {
+      "id": 1345848098,
+      "name": "绿色",
+      "artists": [
+        "陈雪凝"
+      ],
+      "album": "绿色",
+      "durationMs": 269590,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 54
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-99-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 279.15,
+    "sourceFirstLine": {
+      "t": 0.88,
+      "text": "若不是你突然闯进我生活"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 2.98,
+      "endSeconds": 3.44,
+      "similarity": 0.0,
+      "recognizedText": "先",
+      "meanProbability": 0.718,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  },
+  "rowKey": "绿色",
+  "edition": "",
+  "remark": "2026-08-26 谢礼物和神秘星露谷（22点场）尾段语音频道（游龙287）中，小松绿与四时小路Komichi、羽啾chu2u三人合唱《绿色》；切片【小松绿/四时小路/羽啾】标题佐证（BV1QG8o6xE13，103s，沉默环节）。直播间弹幕无歌词行（语音频道合唱不在本房间弹幕里），仅 23:07「你在后边唱歌」、23:32「一转歌回」等提示；另有切片标题「小路和羽啾合唱《绿色》无能的小松绿只能向枝堇妈妈哭诉」（BV1cL8Z6VE6p）提示该晚小松绿曾试图加入但未成，是否正式开唱存疑 → 待人工复核。start/end 为按弹幕时间线估算。（2026-08-29 用户确认：catalog 主 cut 采用 08-29 场 给我来打二向箔 版 BV1ZT4k6QEpC，本语音合唱段 cut_link 置空，切片仍保留于 cut_index 08-26 条目）"
+}

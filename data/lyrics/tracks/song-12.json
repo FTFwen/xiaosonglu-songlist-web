@@ -1,0 +1,190 @@
+{
+  "schemaVersion": 1,
+  "key": "song-12",
+  "songId": 12,
+  "songName": "花粉症",
+  "rowKey": "花粉症",
+  "displaySongName": "花粉症",
+  "artist": "诗岸 / 海伊",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "来自 2026-08-09 第一次歌回回放中段。22-25 分钟切片里可稳定听出“花海间徜徉”“那是每个少女的梦想”“别幻想 美好景象”等关键词，联网检索与《花粉症》歌词高度对应；歌手字段暂按常见收录写为诗岸 / 海伊，后续仍建议人工复核。",
+  "audio": {
+    "url": "assets/audio/song_26.m4a?v=9c673395e93b",
+    "sha256": "9c673395e93b1e1d6f8f914e71fadaf55ed46f3a0c3d9d8b3cfff62b71eeede1"
+  },
+  "retrievedAt": "2026-11-16T04:12:46.349Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E8%8A%B1%E7%B2%89%E7%97%87&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E8%8A%B1%E7%B2%89%E7%97%87%20%E8%AF%97%E5%B2%B8%20%2F%20%E6%B5%B7%E4%BC%8A&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1310023030,
+        "name": "花粉症",
+        "artists": [
+          "许茹芸"
+        ],
+        "album": "绽放的绽放的绽放",
+        "durationMs": 318229,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3419838162,
+        "name": "花粉症",
+        "artists": [
+          "洛天依",
+          "Kiryu啊啊啊"
+        ],
+        "album": "翻调练习",
+        "durationMs": 187944,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2035744776,
+        "name": "花粉症",
+        "artists": [
+          "少年霜"
+        ],
+        "album": "花粉症",
+        "durationMs": 193577,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1873107377,
+        "name": "花粉症",
+        "artists": [
+          "麻辣松鼠"
+        ],
+        "album": "花粉症",
+        "durationMs": 206376,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1891801520,
+        "name": "花粉症",
+        "artists": [
+          "暴躁老尤"
+        ],
+        "album": "花粉症",
+        "durationMs": 199999,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1872095578,
+        "name": "花粉症",
+        "artists": [
+          "花甲Maika"
+        ],
+        "album": "花粉症",
+        "durationMs": 196290,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1496602931,
+        "name": "花粉症",
+        "artists": [
+          "药匙墨KITORA"
+        ],
+        "album": "疑难杂症",
+        "durationMs": 194684,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1479763548,
+        "name": "花粉症",
+        "artists": [
+          "樱庭落"
+        ],
+        "album": "那是对谁过敏的症状【花粉症-翻唱】",
+        "durationMs": 189669,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 12,
+      "song_name": "花粉症",
+      "show_as_song_name": "",
+      "display_song_name": "花粉症",
+      "artist": "诗岸 / 海伊",
+      "artist_search": "诗岸 海伊 清风疾行",
+      "feat_artist": "",
+      "remark": "来自 2026-08-09 第一次歌回回放中段。22-25 分钟切片里可稳定听出“花海间徜徉”“那是每个少女的梦想”“别幻想 美好景象”等关键词，联网检索与《花粉症》歌词高度对应；歌手字段暂按常见收录写为诗岸 / 海伊，后续仍建议人工复核。",
+      "tone": "",
+      "language": "中文",
+      "type": "中V、流行",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV11ju16hExN/",
+      "sing_count": 1,
+      "status_labels": "歌回、自动识别待人工复核",
+      "last_sing_at": "2026-08-09",
+      "row_key": "花粉症"
+    },
+    "sourceId": 1833149333,
+    "sourcePath": "sources/1833149333.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1833149333",
+    "selected": {
+      "id": 1833149333,
+      "name": "【诗岸/海伊】花粉症",
+      "artists": [
+        "清风疾行_"
+      ],
+      "album": "花粉症",
+      "durationMs": 193897,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1,
+      "reviewedWorkIdentity": true
+    },
+    "timedLineCount": 47,
+    "review": {
+      "reason": "Verified song/detail: title 【诗岸/海伊】花粉症, artist/uploader 清风疾行_, album 花粉症, 193897ms. Verified api/song/lyric?id=1833149333&lv=1&kv=1&tv=-1: 作词 格林子, 作曲 清风疾行_; begins 紧闭的玻璃窗／被季节遗忘的地方 and includes 花海间徜徉／那是每个少女的梦想／别幻想／美好景象, matching catalog evidence. Reject current 1310023030 许茹芸, whose first line 为什么 我眼泪流不停 belongs to a different work. Also distinguished 1441569227 【诗岸】花粉症 from the requested duet.",
+      "evidenceUrl": "https://music.163.com/api/song/detail/?id=1833149333&ids=[1833149333]",
+      "previousSourceId": 1310023030
+    }
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-12-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 189.939,
+    "sourceFirstLine": {
+      "t": 0.59,
+      "text": "紧闭的玻璃窗"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 5.7,
+      "endSeconds": 11.22,
+      "similarity": 0.2857142857142857,
+      "recognizedText": "的",
+      "meanProbability": 0.168,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

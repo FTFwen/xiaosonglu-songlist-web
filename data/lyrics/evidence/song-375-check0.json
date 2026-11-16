@@ -1,0 +1,64 @@
+{
+  "audioSha256": "cb3ab9500c250b25d3de4701d36b89cf648d33628e16ed404825ab873ce82f1d",
+  "model": "whisper-base",
+  "start": 95.744,
+  "end": 115.744,
+  "result": {
+    "text": "應該要就沒有什麼",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 0.0,
+        "end": 1.94,
+        "text": "應該要就沒有什麼",
+        "tokens": [
+          50364,
+          26087,
+          4275,
+          3111,
+          6963,
+          7598,
+          50464
+        ],
+        "temperature": 0,
+        "avg_logprob": -1.013546109199524,
+        "compression_ratio": 0.6857142857142857,
+        "no_speech_prob": 0.2630539834499359,
+        "words": [
+          {
+            "word": "應該",
+            "start": 0.0,
+            "end": 1.0,
+            "probability": 0.8232660293579102
+          },
+          {
+            "word": "要",
+            "start": 1.0,
+            "end": 1.14,
+            "probability": 0.5330641269683838
+          },
+          {
+            "word": "就",
+            "start": 1.14,
+            "end": 1.24,
+            "probability": 0.6859585642814636
+          },
+          {
+            "word": "沒有",
+            "start": 1.24,
+            "end": 1.5,
+            "probability": 0.18027235567569733
+          },
+          {
+            "word": "什麼",
+            "start": 1.5,
+            "end": 1.94,
+            "probability": 0.7847325205802917
+          }
+        ]
+      }
+    ],
+    "language": "zh"
+  }
+}

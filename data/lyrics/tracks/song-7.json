@@ -1,0 +1,185 @@
+{
+  "schemaVersion": 1,
+  "key": "song-7",
+  "songId": 7,
+  "songName": "木偶",
+  "rowKey": "木偶",
+  "displaySongName": "木偶",
+  "artist": "李艺彤",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "直链页面 meta description 明示日期 2026.08.09，标题直接给出真实歌曲名《木偶》，可作为当日 song-cut-first 增量收录。",
+  "audio": {
+    "url": "assets/audio/song_35.m4a?v=1770ae7d1845",
+    "sha256": "1770ae7d1845022472454f23c91a414e51c397d4d8d361cd96c8ad33583663bd"
+  },
+  "retrievedAt": "2026-11-16T04:02:55.417Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E6%9C%A8%E5%81%B6&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E6%9C%A8%E5%81%B6%20%E6%9D%8E%E8%89%BA%E5%BD%A4&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1323302995,
+        "name": "木偶",
+        "artists": [
+          "李艺彤"
+        ],
+        "album": "那好吧",
+        "durationMs": 190355,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1303027237,
+        "name": "木偶",
+        "artists": [
+          "李艺彤"
+        ],
+        "album": "专属派对 (上)",
+        "durationMs": 190355,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 472437196,
+        "name": "木偶",
+        "artists": [
+          "许飞"
+        ],
+        "album": "恰许同学年少",
+        "durationMs": 254893,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3408266337,
+        "name": "木偶",
+        "artists": [
+          "向小羊"
+        ],
+        "album": "木偶",
+        "durationMs": 225024,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3364503364,
+        "name": "木偶",
+        "artists": [
+          "藤竹京",
+          "笙笙"
+        ],
+        "album": "木偶",
+        "durationMs": 80020,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1323301934,
+        "name": "木偶",
+        "artists": [
+          "郑乔羽"
+        ],
+        "album": "木偶",
+        "durationMs": 242294,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2008949459,
+        "name": "木偶",
+        "artists": [
+          "李昂星"
+        ],
+        "album": "良心",
+        "durationMs": 244580,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2003338329,
+        "name": "木偶",
+        "artists": [
+          "蒋小呢",
+          "-艾兜"
+        ],
+        "album": "木偶",
+        "durationMs": 164787,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 7,
+      "song_name": "木偶",
+      "show_as_song_name": "",
+      "display_song_name": "木偶",
+      "artist": "李艺彤",
+      "artist_search": "李艺彤",
+      "feat_artist": "",
+      "remark": "直链页面 meta description 明示日期 2026.08.09，标题直接给出真实歌曲名《木偶》，可作为当日 song-cut-first 增量收录。",
+      "tone": "",
+      "language": "中文",
+      "type": "流行",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1ppu16tE99/",
+      "sing_count": 1,
+      "status_labels": "歌切直补、待原始回放定位",
+      "last_sing_at": "2026-08-09",
+      "row_key": "木偶"
+    },
+    "sourceId": 1323302995,
+    "sourcePath": "sources/1323302995.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1323302995",
+    "selected": {
+      "id": 1323302995,
+      "name": "木偶",
+      "artists": [
+        "李艺彤"
+      ],
+      "album": "那好吧",
+      "durationMs": 190355,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 37
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-7-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 189.08,
+    "sourceFirstLine": {
+      "t": 16.78,
+      "text": "划过夜空的焰火"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 36.38,
+      "endSeconds": 36.7,
+      "similarity": 0.25,
+      "recognizedText": "的",
+      "meanProbability": 0.807,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

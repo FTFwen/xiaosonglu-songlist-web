@@ -1,0 +1,185 @@
+{
+  "schemaVersion": 1,
+  "key": "song-116",
+  "songId": 116,
+  "songName": "下个夏天的烟火",
+  "rowKey": "下个夏天的烟火",
+  "displaySongName": "下个夏天的烟火",
+  "artist": "Cidai Jun / 海伊",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "2026-08-29 心灵火Flame合集补录：【小松绿Viridis】20260829 歌切 分P9（03:43）。Vocaloid Lyrics Wiki 核实：Cidai Jun 等制作、海伊演唱，2023-07-22 投稿的中文 Vocaloid 歌。",
+  "audio": {
+    "url": "assets/audio/song_112.m4a?v=7222c957d7fc",
+    "sha256": "7222c957d7fcca77b586d3eca8ca76d71fba1f1bf28b0fb66c545336d7eaee04"
+  },
+  "retrievedAt": "2026-11-16T04:12:54.075Z",
+  "match": {
+    "status": "candidate_review_required",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E4%B8%8B%E4%B8%AA%E5%A4%8F%E5%A4%A9%E7%9A%84%E7%83%9F%E7%81%AB&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E4%B8%8B%E4%B8%AA%E5%A4%8F%E5%A4%A9%E7%9A%84%E7%83%9F%E7%81%AB%20Cidai%20Jun%20%2F%20%E6%B5%B7%E4%BC%8A&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 2075632186,
+        "name": "下个夏天的烟火(remix vers.)",
+        "artists": [
+          "余切p",
+          "诗岸"
+        ],
+        "album": "杂七杂八的翻调and翻唱",
+        "durationMs": 225241,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 2092924374,
+        "name": "颜人中-剩下最后的烟火",
+        "artists": [
+          "七尘"
+        ],
+        "album": "我所期待的是下个夏天.",
+        "durationMs": 179886,
+        "titleScore": 0,
+        "artistMatch": false,
+        "score": 0
+      },
+      {
+        "id": 3404499399,
+        "name": "【夏语遥翻唱】下个夏天的烟火",
+        "artists": [
+          "尘萤宇P"
+        ],
+        "album": "夏语遥",
+        "durationMs": 220200,
+        "titleScore": 0,
+        "artistMatch": false,
+        "score": 0
+      },
+      {
+        "id": 3450846573,
+        "name": "【AI乐正绫cover】下个夏天的烟火",
+        "artists": [
+          "休比ドーラ"
+        ],
+        "album": "",
+        "durationMs": 227694,
+        "titleScore": 0,
+        "artistMatch": false,
+        "score": 0
+      },
+      {
+        "id": 3461065355,
+        "name": "多想回到那个夏天",
+        "artists": [
+          "李砚哲"
+        ],
+        "album": "无处可逃",
+        "durationMs": 138170,
+        "titleScore": 0,
+        "artistMatch": false,
+        "score": 0
+      },
+      {
+        "id": 1436709403,
+        "name": "夏天的风",
+        "artists": [
+          "火羊瞌睡了"
+        ],
+        "album": "夏天的风",
+        "durationMs": 221750,
+        "titleScore": 0,
+        "artistMatch": false,
+        "score": 0
+      },
+      {
+        "id": 1465302208,
+        "name": "那个夏天",
+        "artists": [
+          "袁小朵"
+        ],
+        "album": "那个夏天",
+        "durationMs": 212865,
+        "titleScore": 0,
+        "artistMatch": false,
+        "score": 0
+      },
+      {
+        "id": 3461755639,
+        "name": "与其说你",
+        "artists": [
+          "整個夏天"
+        ],
+        "album": "願與你",
+        "durationMs": 262013,
+        "titleScore": 0,
+        "artistMatch": false,
+        "score": 0
+      }
+    ],
+    "workQuery": {
+      "song_id": 116,
+      "song_name": "下个夏天的烟火",
+      "show_as_song_name": "",
+      "display_song_name": "下个夏天的烟火",
+      "artist": "Cidai Jun / 海伊",
+      "artist_search": "下个夏天的烟火 海伊",
+      "feat_artist": "",
+      "remark": "2026-08-29 心灵火Flame合集补录：【小松绿Viridis】20260829 歌切 分P9（03:43）。Vocaloid Lyrics Wiki 核实：Cidai Jun 等制作、海伊演唱，2023-07-22 投稿的中文 Vocaloid 歌。",
+      "tone": "",
+      "language": "中文",
+      "type": "中V、Vocaloid",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1gm4C65Ey6/?p=9",
+      "sing_count": 1,
+      "status_labels": "歌回",
+      "last_sing_at": "2026-08-29",
+      "row_key": "下个夏天的烟火"
+    },
+    "sourceId": 2075632186,
+    "sourcePath": "sources/2075632186.json",
+    "sourceUrl": "https://music.163.com/#/song?id=2075632186",
+    "selected": {
+      "id": 2075632186,
+      "name": "下个夏天的烟火(remix vers.)",
+      "artists": [
+        "余切p",
+        "诗岸"
+      ],
+      "album": "杂七杂八的翻调and翻唱",
+      "durationMs": 225241,
+      "titleScore": 0.7,
+      "artistMatch": false,
+      "score": 0.5599999999999999
+    },
+    "timedLineCount": 62
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-116-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 222.029,
+    "sourceFirstLine": {
+      "t": 1.32,
+      "text": "作曲＆编曲：磁带君"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 34.98,
+      "endSeconds": 34.98,
+      "similarity": 0.5454545454545454,
+      "recognizedText": " 作曲 作曲",
+      "meanProbability": 0.619,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

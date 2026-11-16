@@ -1,0 +1,163 @@
+{
+  "schemaVersion": 1,
+  "key": "song-36",
+  "songId": 36,
+  "songName": "玛德琳娜电塔",
+  "displaySongName": "玛德琳娜电塔",
+  "artist": "Soda纯白 / 洛天依Official",
+  "language": "中文",
+  "derivative": false,
+  "audio": {
+    "url": "assets/audio/song_33.m4a?v=bf514482617f",
+    "sha256": "bf514482617f20698abcd7c8784b900f43810a14746773787397e8aa69898b30"
+  },
+  "retrievedAt": "2026-11-16T03:57:46.088Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E7%8E%9B%E5%BE%B7%E7%90%B3%E5%A8%9C%E7%94%B5%E5%A1%94&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1412991631,
+        "name": "玛德琳娜电塔",
+        "artists": [
+          "Soda纯白",
+          "warma"
+        ],
+        "album": "玛德琳娜电塔",
+        "durationMs": 229799,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 3367621395,
+        "name": "玛德琳娜电塔",
+        "artists": [
+          "星浅"
+        ],
+        "album": "星浅Astro翻调·玛德琳娜电塔",
+        "durationMs": 238881,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1432784886,
+        "name": "玛德琳娜电塔",
+        "artists": [
+          "白藏蜜雨"
+        ],
+        "album": "甜点森林",
+        "durationMs": 229746,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1871016949,
+        "name": "玛德琳娜电塔",
+        "artists": [
+          "Yokila"
+        ],
+        "album": "玛德琳娜电塔",
+        "durationMs": 231629,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1891108959,
+        "name": "玛德琳娜电塔",
+        "artists": [
+          "虫虫"
+        ],
+        "album": "我最喜欢warma啦！",
+        "durationMs": 229642,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2061298883,
+        "name": "玛德琳娜电塔",
+        "artists": [
+          "滋滋是滋滋"
+        ],
+        "album": "2023",
+        "durationMs": 229851,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2721025205,
+        "name": "玛德琳娜电塔",
+        "artists": [
+          "干干酪酪捞捞捞"
+        ],
+        "album": "啊啊啊啊啊啊啊啊啊啊啊",
+        "durationMs": 230690,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1452594150,
+        "name": "玛德琳娜电塔",
+        "artists": [
+          "川时"
+        ],
+        "album": "玛 德 琳 娜 电 塔",
+        "durationMs": 230624,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "sourceId": 1412991631,
+    "sourcePath": "sources/1412991631.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1412991631",
+    "selected": {
+      "id": 1412991631,
+      "name": "玛德琳娜电塔",
+      "artists": [
+        "Soda纯白",
+        "warma"
+      ],
+      "album": "玛德琳娜电塔",
+      "durationMs": 229799,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 44
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-36-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 239.68,
+    "sourceFirstLine": {
+      "t": 30.9,
+      "text": "放学后的街坊 早已华灯初上"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 44.56,
+      "endSeconds": 44.78,
+      "similarity": 0.15384615384615385,
+      "recognizedText": "的",
+      "meanProbability": 0.844,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  },
+  "rowKey": "玛德琳娜电塔",
+  "edition": "",
+  "remark": "根据 00:34 附近音频切片的副歌歌词联网检索，命中《玛德琳娜电塔》。转写质量一般，但关键句与搜索结果一致。 按用户放宽后的匹配规则，已补入对应公开歌切：【小松绿Viridis】《玛德琳娜电塔(Mardayline Tower)》（BV1bCuz6UEAV）。"
+}

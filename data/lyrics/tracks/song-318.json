@@ -1,0 +1,183 @@
+{
+  "schemaVersion": 1,
+  "key": "song-318",
+  "songId": 318,
+  "songName": "传奇",
+  "rowKey": "传奇",
+  "displaySongName": "传奇",
+  "artist": "王菲",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "桐人今天睡大觉「全自动歌切项目」2026.10.18 歌切合集第 8 分P（章节「09_传奇 - 王菲」）。弹幕共 17 条直接出现该歌名。未定位回放时间点。",
+  "audio": {
+    "url": "assets/audio/song_317.m4a?v=b827359c6830",
+    "sha256": "b827359c68307817dc3619e4ffedbc6bd9f6587b35bf37fbe87bcb6f46631b86"
+  },
+  "retrievedAt": "2026-11-16T04:06:50.946Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E4%BC%A0%E5%A5%87&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E4%BC%A0%E5%A5%87%20%E7%8E%8B%E8%8F%B2&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 298838,
+        "name": "传奇",
+        "artists": [
+          "王菲"
+        ],
+        "album": "传奇",
+        "durationMs": 296124,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 27731343,
+        "name": "传奇",
+        "artists": [
+          "王菲"
+        ],
+        "album": "我们的爱我不放手",
+        "durationMs": 296124,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 110411,
+        "name": "传奇",
+        "artists": [
+          "李健"
+        ],
+        "album": "似水流年",
+        "durationMs": 294649,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1816099246,
+        "name": "传奇",
+        "artists": [
+          "李佳隆"
+        ],
+        "album": "传奇",
+        "durationMs": 189473,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 29729140,
+        "name": "传奇",
+        "artists": [
+          "李健"
+        ],
+        "album": "传奇",
+        "durationMs": 294706,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3411245259,
+        "name": "传奇",
+        "artists": [
+          "顿珠拉姆"
+        ],
+        "album": "",
+        "durationMs": 187139,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2086697789,
+        "name": "传奇",
+        "artists": [
+          "夜"
+        ],
+        "album": "淘米小花仙合集",
+        "durationMs": 267096,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1985757151,
+        "name": "传奇",
+        "artists": [
+          "完玛三智"
+        ],
+        "album": "传奇 (藏语版)",
+        "durationMs": 305624,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 318,
+      "song_name": "传奇",
+      "show_as_song_name": "",
+      "display_song_name": "传奇",
+      "artist": "王菲",
+      "artist_search": "王菲 传奇",
+      "feat_artist": "",
+      "remark": "桐人今天睡大觉「全自动歌切项目」2026.10.18 歌切合集第 8 分P（章节「09_传奇 - 王菲」）。弹幕共 17 条直接出现该歌名。未定位回放时间点。",
+      "tone": "",
+      "language": "中文",
+      "type": "华语经典、流行",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1UPnV6zEs4/?p=8",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-18",
+      "row_key": "传奇"
+    },
+    "sourceId": 298838,
+    "sourcePath": "sources/298838.json",
+    "sourceUrl": "https://music.163.com/#/song?id=298838",
+    "selected": {
+      "id": 298838,
+      "name": "传奇",
+      "artists": [
+        "王菲"
+      ],
+      "album": "传奇",
+      "durationMs": 296124,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 29
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-318-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 290.965,
+    "sourceFirstLine": {
+      "t": 36.357,
+      "text": "只是因为在人群中 多看了你一眼"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 50.28,
+      "endSeconds": 52.9,
+      "similarity": 0.2222222222222222,
+      "recognizedText": "人能有一",
+      "meanProbability": 0.844,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

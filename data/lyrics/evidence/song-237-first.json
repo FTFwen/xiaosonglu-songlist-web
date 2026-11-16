@@ -1,0 +1,104 @@
+{
+  "audioSha256": "d8c3963274f301548acf675c2809af7f9ab4f3bd312ca87df6d86d759cb6f2c5",
+  "model": "whisper-base",
+  "start": 0,
+  "end": 35,
+  "result": {
+    "text": "对了我遇見風歸去",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 24.12,
+        "end": 25.7,
+        "text": "对了",
+        "tokens": [
+          50364,
+          8713,
+          2289,
+          50414
+        ],
+        "temperature": 0,
+        "avg_logprob": -1.3470102310180665,
+        "compression_ratio": 0.42857142857142855,
+        "no_speech_prob": 0.03211931511759758,
+        "words": [
+          {
+            "word": "对",
+            "start": 24.12,
+            "end": 25.52,
+            "probability": 0.3708112835884094
+          },
+          {
+            "word": "了",
+            "start": 25.52,
+            "end": 25.7,
+            "probability": 0.9615755081176758
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "seek": 3000,
+        "start": 31.019999999999996,
+        "end": 34.6,
+        "text": "我遇見風歸去",
+        "tokens": [
+          50364,
+          1654,
+          3330,
+          229,
+          10470,
+          22713,
+          4287,
+          116,
+          6734,
+          50614
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.7658890810879794,
+        "compression_ratio": 0.6666666666666666,
+        "no_speech_prob": 0.7360166311264038,
+        "words": [
+          {
+            "word": "我",
+            "start": 31.019999999999996,
+            "end": 32.12,
+            "probability": 0.5035409927368164
+          },
+          {
+            "word": "遇",
+            "start": 32.12,
+            "end": 32.72,
+            "probability": 0.722560465335846
+          },
+          {
+            "word": "見",
+            "start": 32.72,
+            "end": 33.02,
+            "probability": 0.49563392996788025
+          },
+          {
+            "word": "風",
+            "start": 33.02,
+            "end": 33.6,
+            "probability": 0.30436986684799194
+          },
+          {
+            "word": "歸",
+            "start": 33.6,
+            "end": 34.12,
+            "probability": 0.7655003666877747
+          },
+          {
+            "word": "去",
+            "start": 34.12,
+            "end": 34.6,
+            "probability": 0.5867871046066284
+          }
+        ]
+      }
+    ],
+    "language": "zh"
+  }
+}

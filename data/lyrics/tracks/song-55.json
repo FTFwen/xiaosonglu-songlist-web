@@ -1,0 +1,221 @@
+{
+  "schemaVersion": 1,
+  "key": "song-55",
+  "songId": 55,
+  "songName": "アヤノの幸福理論",
+  "rowKey": "アヤノの幸福理論",
+  "displaySongName": "アヤノの幸福理論",
+  "artist": "じん / IA",
+  "language": "日文",
+  "derivative": false,
+  "edition": "",
+  "remark": "来自 2026-08-18 歌切合集《【663645TV】神回！我已启动！全力绿来唱完了！8月18日歌切合集【小松绿Viridis】》的分P《8-アヤノの幸福理論》。按当前 song-cut-first 策略，将合集章节名直接并入正式曲库；当前记录的是合集内顺序时间，不是原始直播回放时间。",
+  "audio": {
+    "url": "assets/audio/song_84.m4a?v=6c14d68d2d08",
+    "sha256": "6c14d68d2d0868aef46608072d13ab8f7e24db14dd02b9b6b5dc9629659bafc7"
+  },
+  "retrievedAt": "2026-11-16T04:03:58.118Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E3%82%A2%E3%83%A4%E3%83%8E%E3%81%AE%E5%B9%B8%E7%A6%8F%E7%90%86%E8%AB%96&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E3%82%A2%E3%83%A4%E3%83%8E%E3%81%AE%E5%B9%B8%E7%A6%8F%E7%90%86%E8%AB%96%20%E3%81%98%E3%82%93%20%2F%20IA&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 26440340,
+        "name": "アヤノの幸福理論",
+        "artists": [
+          "じん",
+          "IA"
+        ],
+        "album": "メカクシティレコーズ",
+        "durationMs": 337734,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2740168502,
+        "name": "アヤノの幸福理論",
+        "artists": [
+          "じん",
+          "奥井亜紀"
+        ],
+        "album": "MEKAKUCITY M’s 1 ～メカクシティアクターズ・ヴォーカル＆サウンド　コレクション～",
+        "durationMs": 337337,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 29764219,
+        "name": "アヤノの幸福理論",
+        "artists": [
+          "じん",
+          "奥井亜紀"
+        ],
+        "album": "メカクシティアクターズ 9「アヤノの幸福理論」",
+        "durationMs": 337337,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 31260689,
+        "name": "アヤノの幸福理論",
+        "artists": [
+          "じん",
+          "奥井亜紀"
+        ],
+        "album": "MEKAKUCITY M's MEKAKUCITY ACTORS VOCAL & SOUND COLLECTION",
+        "durationMs": 337337,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 28695643,
+        "name": "アヤノの幸福理論",
+        "artists": [
+          "ゆめこ"
+        ],
+        "album": "最新热歌慢摇66",
+        "durationMs": 334628,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 28528386,
+        "name": "アヤノの幸福理論　",
+        "artists": [
+          "歌ってみた"
+        ],
+        "album": "最新热歌慢摇13",
+        "durationMs": 345000,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 34280078,
+        "name": "アヤノの幸福理論",
+        "artists": [
+          "赤ティン"
+        ],
+        "album": "最新热歌慢摇110",
+        "durationMs": 333818,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 28613599,
+        "name": "アヤノの幸福理論",
+        "artists": [
+          "佑可猫"
+        ],
+        "album": "最新热歌慢摇66",
+        "durationMs": 333000,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 55,
+      "song_name": "アヤノの幸福理論",
+      "show_as_song_name": "",
+      "display_song_name": "アヤノの幸福理論",
+      "artist": "じん / IA",
+      "artist_search": "じん IA",
+      "feat_artist": "",
+      "remark": "来自 2026-08-18 歌切合集《【663645TV】神回！我已启动！全力绿来唱完了！8月18日歌切合集【小松绿Viridis】》的分P《8-アヤノの幸福理論》。按当前 song-cut-first 策略，将合集章节名直接并入正式曲库；当前记录的是合集内顺序时间，不是原始直播回放时间。",
+      "tone": "",
+      "language": "日文",
+      "type": "Vocaloid、动漫、J-Pop",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1rv8V6DExk/",
+      "sing_count": 1,
+      "status_labels": "歌切合集补录、待后续回放时间定位",
+      "last_sing_at": "2026-08-18",
+      "row_key": "アヤノの幸福理論"
+    },
+    "sourceId": 26440340,
+    "sourcePath": "sources/26440340.json",
+    "sourceUrl": "https://music.163.com/#/song?id=26440340",
+    "selected": {
+      "id": 26440340,
+      "name": "アヤノの幸福理論",
+      "artists": [
+        "じん",
+        "IA"
+      ],
+      "album": "メカクシティレコーズ",
+      "durationMs": 337734,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 49
+  },
+  "alignment": {
+    "status": "spotcheck_review_required",
+    "evidencePath": "evidence/song-55-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 332.974,
+    "sourceFirstLine": {
+      "t": 1.02,
+      "text": "思い出していたのは"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 0.0,
+      "endSeconds": 4.34,
+      "similarity": 0.875,
+      "recognizedText": "思い出してのは",
+      "meanProbability": 0.828,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": -1.02,
+    "checks": [
+      {
+        "sourceLine": {
+          "t": 168.04,
+          "text": "理不尽に曲がる 誰かの陰謀みたいに"
+        },
+        "evidencePath": "evidence/song-55-check0.json",
+        "candidate": {
+          "audioSeconds": 171.02,
+          "endSeconds": 173.1,
+          "similarity": 0.47619047619047616,
+          "recognizedText": "のみたいに",
+          "meanProbability": 0.899,
+          "tokenPrefixOnly": false
+        },
+        "residualSeconds": 4.0
+      },
+      {
+        "sourceLine": {
+          "t": 299.24,
+          "text": "幸せってなんだか不思議"
+        },
+        "evidencePath": "evidence/song-55-check1.json",
+        "candidate": {
+          "audioSeconds": 298.58,
+          "endSeconds": 303.32,
+          "similarity": 0.8571428571428571,
+          "recognizedText": "幸せでなんだか不思議",
+          "meanProbability": 0.867,
+          "tokenPrefixOnly": false
+        },
+        "residualSeconds": 0.36
+      }
+    ],
+    "asrLanguage": "ja",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

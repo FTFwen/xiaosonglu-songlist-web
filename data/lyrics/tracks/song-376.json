@@ -1,0 +1,188 @@
+{
+  "schemaVersion": 1,
+  "key": "song-376",
+  "songId": 376,
+  "songName": "暗恋人类日记",
+  "rowKey": "暗恋人类日记",
+  "displaySongName": "暗恋人类日记",
+  "artist": "Bo Peep / 洛天依Official",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "章节标注 Bo Peep, 洛天依Official；Apple Music 单曲核实（2022 Pop mandarine）",
+  "audio": {
+    "url": "assets/audio/song_375.m4a?v=72f3ef287d9e",
+    "sha256": "72f3ef287d9ee963805808ba160420ec84630c0b9a32d7c10224be13111e6d52"
+  },
+  "retrievedAt": "2026-11-16T04:07:56.169Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E6%9A%97%E6%81%8B%E4%BA%BA%E7%B1%BB%E6%97%A5%E8%AE%B0&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E6%9A%97%E6%81%8B%E4%BA%BA%E7%B1%BB%E6%97%A5%E8%AE%B0%20Bo%20Peep%20%2F%20%E6%B4%9B%E5%A4%A9%E4%BE%9DOfficial&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1962946869,
+        "name": "暗恋人类日记",
+        "artists": [
+          "Bo Peep",
+          "洛天依Official"
+        ],
+        "album": "暗恋人类日记",
+        "durationMs": 137022,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 3426557145,
+        "name": "暗恋人类日记",
+        "artists": [
+          "Bo Peep",
+          "洛天依Official"
+        ],
+        "album": "暗恋人类日记",
+        "durationMs": 137067,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2114455358,
+        "name": "暗恋人类日记",
+        "artists": [
+          "洛少爷"
+        ],
+        "album": "《暗恋人类日记》",
+        "durationMs": 136906,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2134341488,
+        "name": "暗恋人类日记",
+        "artists": [
+          "Pers!m²on",
+          "猹猹子的续命深"
+        ],
+        "album": "*暗恋人类日记*",
+        "durationMs": 137022,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3389353975,
+        "name": "暗恋人类日记",
+        "artists": [
+          "小优"
+        ],
+        "album": "暗恋人类日记",
+        "durationMs": 136922,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3399296534,
+        "name": "暗恋人类日记",
+        "artists": [
+          "星浅"
+        ],
+        "album": "星浅Astro翻调·暗恋人类日记",
+        "durationMs": 137128,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2000827938,
+        "name": "暗恋人类日记",
+        "artists": [
+          "璇珠",
+          "星汉p"
+        ],
+        "album": "暗恋人类日记",
+        "durationMs": 136962,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3396661994,
+        "name": "暗恋人类日记",
+        "artists": [
+          "YukiMeow"
+        ],
+        "album": "暗恋人类日记",
+        "durationMs": 139000,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 376,
+      "song_name": "暗恋人类日记",
+      "show_as_song_name": "",
+      "display_song_name": "暗恋人类日记",
+      "artist": "Bo Peep / 洛天依Official",
+      "artist_search": "Bo Peep / 洛天依Official",
+      "feat_artist": "",
+      "remark": "章节标注 Bo Peep, 洛天依Official；Apple Music 单曲核实（2022 Pop mandarine）",
+      "tone": "",
+      "language": "中文",
+      "type": "中文Vocaloid、Vocaloid",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV18pWH6gEzr/?p=5",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-11-08",
+      "row_key": "暗恋人类日记"
+    },
+    "sourceId": 1962946869,
+    "sourcePath": "sources/1962946869.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1962946869",
+    "selected": {
+      "id": 1962946869,
+      "name": "暗恋人类日记",
+      "artists": [
+        "Bo Peep",
+        "洛天依Official"
+      ],
+      "album": "暗恋人类日记",
+      "durationMs": 137022,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 42
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-376-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 154.475,
+    "sourceFirstLine": {
+      "t": 7.5600000000000005,
+      "text": "后期：沈逸丹"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 0.0,
+      "endSeconds": 0.18,
+      "similarity": 0.0,
+      "recognizedText": "不",
+      "meanProbability": 0.545,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

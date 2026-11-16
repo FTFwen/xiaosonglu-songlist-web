@@ -1,0 +1,81 @@
+{
+  "audioSha256": "1bbcf49b77d89d5d4be0850dc5daaf2b8b3a1d449b13f9dd9bcb9a7a61354189",
+  "model": "whisper-base",
+  "start": 0,
+  "end": 35,
+  "result": {
+    "text": "自灭风 耳边和你",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 3000,
+        "start": 30.0,
+        "end": 34.8,
+        "text": "自灭风 耳边和你",
+        "tokens": [
+          50364,
+          9722,
+          13290,
+          255,
+          47209,
+          220,
+          4450,
+          111,
+          40503,
+          12565,
+          2166,
+          50614
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.8602046966552734,
+        "compression_ratio": 0.6666666666666666,
+        "no_speech_prob": 0.7677340507507324,
+        "words": [
+          {
+            "word": "自",
+            "start": 30.0,
+            "end": 30.36,
+            "probability": 0.07914850860834122
+          },
+          {
+            "word": "灭",
+            "start": 30.36,
+            "end": 31.08,
+            "probability": 0.5451188944280148
+          },
+          {
+            "word": "风",
+            "start": 31.08,
+            "end": 32.42,
+            "probability": 0.7844414114952087
+          },
+          {
+            "word": " 耳",
+            "start": 33.1,
+            "end": 33.44,
+            "probability": 0.7339898496866226
+          },
+          {
+            "word": "边",
+            "start": 33.44,
+            "end": 33.92,
+            "probability": 0.8702360987663269
+          },
+          {
+            "word": "和",
+            "start": 33.92,
+            "end": 34.38,
+            "probability": 0.37494125962257385
+          },
+          {
+            "word": "你",
+            "start": 34.38,
+            "end": 34.8,
+            "probability": 0.3571315109729767
+          }
+        ]
+      }
+    ],
+    "language": "zh"
+  }
+}

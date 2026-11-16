@@ -1,0 +1,163 @@
+{
+  "schemaVersion": 1,
+  "key": "song-315",
+  "songId": 315,
+  "songName": "回る空うさぎ",
+  "displaySongName": "回る空うさぎ",
+  "artist": "Orangestar / 初音ミク",
+  "language": "日文",
+  "derivative": false,
+  "audio": {
+    "url": "assets/audio/song_314.m4a?v=df2e509be126",
+    "sha256": "df2e509be126d0eca1de7b207c50b3d7277906e83f0dc8116467750cdd2f7481"
+  },
+  "retrievedAt": "2026-11-16T03:58:51.705Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E5%9B%9E%E3%82%8B%E7%A9%BA%E3%81%86%E3%81%95%E3%81%8E&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 458231455,
+        "name": "回る空うさぎ",
+        "artists": [
+          "Orangestar",
+          "初音ミク"
+        ],
+        "album": "SEASIDE SOLILOQUIES",
+        "durationMs": 173960,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 448917224,
+        "name": "回る空うさぎ",
+        "artists": [
+          "めありー"
+        ],
+        "album": "最新热歌慢摇95",
+        "durationMs": 175203,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1979461987,
+        "name": "回る空うさぎ",
+        "artists": [
+          "Akie秋绘"
+        ],
+        "album": "月兔回旋于空中",
+        "durationMs": 177098,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2609063742,
+        "name": "回る空うさぎ",
+        "artists": [
+          "Kotoha"
+        ],
+        "album": "回る空うさぎ",
+        "durationMs": 182622,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1915092289,
+        "name": "回る空うさぎ",
+        "artists": [
+          "DAZBEE"
+        ],
+        "album": "Remindful.One",
+        "durationMs": 172753,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1926202689,
+        "name": "回る空うさぎ",
+        "artists": [
+          "DAZBEE"
+        ],
+        "album": "TOKYO - DIVAS -",
+        "durationMs": 172753,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1987280767,
+        "name": "回る空うさぎ",
+        "artists": [
+          "早凉"
+        ],
+        "album": "月兔回旋于空中",
+        "durationMs": 175072,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 448916232,
+        "name": "回る空うさぎ",
+        "artists": [
+          "となりの坂田。"
+        ],
+        "album": "最新热歌慢摇95",
+        "durationMs": 174419,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "sourceId": 458231455,
+    "sourcePath": "sources/458231455.json",
+    "sourceUrl": "https://music.163.com/#/song?id=458231455",
+    "selected": {
+      "id": 458231455,
+      "name": "回る空うさぎ",
+      "artists": [
+        "Orangestar",
+        "初音ミク"
+      ],
+      "album": "SEASIDE SOLILOQUIES",
+      "durationMs": 173960,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 20
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-315-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 310.955,
+    "sourceFirstLine": {
+      "t": 0.85,
+      "text": "また月が昇る 今日が終わりだす"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 30.64,
+      "endSeconds": 31.1,
+      "similarity": 0.13333333333333333,
+      "recognizedText": "日",
+      "meanProbability": 0.982,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "ja",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  },
+  "rowKey": "回る空うさぎ",
+  "edition": "",
+  "remark": "黄鱼鼠条 单曲歌切，标题含中文译名“月兔回旋于空中”。弹幕 03:02:11-03:47:42 出现 10 条“月兔”（含“月兔回旋于空中”）。原唱证据为 Orangestar feat.初音ミク。未定位回放时间点。"
+}

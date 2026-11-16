@@ -1,0 +1,189 @@
+{
+  "schemaVersion": 1,
+  "key": "song-67",
+  "songId": 67,
+  "songName": "蝴蝶",
+  "displaySongName": "蝴蝶",
+  "artist": "洛天依Official",
+  "language": "中文",
+  "derivative": false,
+  "audio": {
+    "url": "assets/audio/song_25.m4a?v=d8fb99252c26",
+    "sha256": "d8fb99252c2684bbf403614cdbfe2e213f33cc5f13533e4d4ebefc9cb6acd398"
+  },
+  "retrievedAt": "2026-11-16T03:57:40.786Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E8%9D%B4%E8%9D%B6&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 2750754678,
+        "name": "蝴蝶",
+        "artists": [
+          "洛天依",
+          "小v"
+        ],
+        "album": "蝴蝶",
+        "durationMs": 219669,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2604527599,
+        "name": "蝴蝶",
+        "artists": [
+          "洛天依Official"
+        ],
+        "album": "再生",
+        "durationMs": 216104,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 150561,
+        "name": "蝴蝶",
+        "artists": [
+          "陶喆"
+        ],
+        "album": "黑色柳丁",
+        "durationMs": 283200,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 299652,
+        "name": "蝴蝶",
+        "artists": [
+          "王菲"
+        ],
+        "album": "只爱陌生人",
+        "durationMs": 237000,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 407444040,
+        "name": "蝴蝶",
+        "artists": [
+          "魏诗莹"
+        ],
+        "album": "Demo2015",
+        "durationMs": 190511,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 28768728,
+        "name": "蝴蝶",
+        "artists": [
+          "f(x)"
+        ],
+        "album": "The 3rd Album 'Red Light'",
+        "durationMs": 177183,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2684491242,
+        "name": "蝴蝶",
+        "artists": [
+          "龙道一Dragon One"
+        ],
+        "album": "已前",
+        "durationMs": 195245,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2053969777,
+        "name": "蝴蝶",
+        "artists": [
+          "儿歌, 童谣, 兒歌"
+        ],
+        "album": "儿歌",
+        "durationMs": 109492,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "sourceId": 2750754678,
+    "sourcePath": "sources/2750754678.json",
+    "sourceUrl": "https://music.163.com/#/song?id=2750754678",
+    "selected": {
+      "id": 2750754678,
+      "name": "蝴蝶",
+      "artists": [
+        "洛天依",
+        "小v"
+      ],
+      "album": "蝴蝶",
+      "durationMs": 219669,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 37
+  },
+  "alignment": {
+    "status": "spotcheck_review_required",
+    "evidencePath": "evidence/song-67-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 216.944,
+    "sourceFirstLine": {
+      "t": 14.31,
+      "text": "你说你来到这世界的那天"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 13.22,
+      "endSeconds": 15.7,
+      "similarity": 0.9090909090909091,
+      "recognizedText": "》你说你来到像世界的那天",
+      "meanProbability": 0.622,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": -1.09,
+    "checks": [
+      {
+        "sourceLine": {
+          "t": 109.65,
+          "text": "那一只蝴蝶拼了命破茧"
+        },
+        "evidencePath": "evidence/song-67-check0.json",
+        "candidate": null,
+        "residualSeconds": null
+      },
+      {
+        "sourceLine": {
+          "t": 195.72,
+          "text": "神给了每个人快乐入场券"
+        },
+        "evidencePath": "evidence/song-67-check1.json",
+        "candidate": {
+          "audioSeconds": 194.65,
+          "endSeconds": 196.33,
+          "similarity": 0.7777777777777778,
+          "recognizedText": "给了每个人快乐",
+          "meanProbability": 0.918,
+          "tokenPrefixOnly": false
+        },
+        "residualSeconds": 0.02
+      }
+    ],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  },
+  "rowKey": "蝴蝶",
+  "edition": "",
+  "remark": "来自 2026-08-18 歌切合集《【663645TV】神回！我已启动！全力绿来唱完了！8月18日歌切合集【小松绿Viridis】》的分P《20-蝴蝶》。经复核为洛天依演唱的《蝴蝶》（温莨作词、瞿子千作曲，收录于洛天依十二周年纪念专辑《再生》），非陶喆同名歌曲。按当前 song-cut-first 策略，将合集章节名直接并入正式曲库；当前记录的是合集内顺序时间，不是原始直播回放时间。"
+}

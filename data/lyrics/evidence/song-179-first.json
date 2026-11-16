@@ -1,0 +1,170 @@
+{
+  "audioSha256": "8e0aaf65e0d5199b2273974494edfdf09f41699aae637a874bfd688eef952604",
+  "model": "whisper-base",
+  "start": 0,
+  "end": 39,
+  "result": {
+    "text": "女人探低了不願意改變重新再來一遍",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 0.0,
+        "end": 1.46,
+        "text": "女人探低了",
+        "tokens": [
+          50364,
+          17015,
+          4035,
+          6900,
+          95,
+          41377,
+          2289,
+          50464
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.8246712154812283,
+        "compression_ratio": 0.625,
+        "no_speech_prob": 0.048177946358919144,
+        "words": [
+          {
+            "word": "女",
+            "start": 0.0,
+            "end": 0.6,
+            "probability": 0.1314990073442459
+          },
+          {
+            "word": "人",
+            "start": 0.6,
+            "end": 0.7,
+            "probability": 0.9778153896331787
+          },
+          {
+            "word": "探",
+            "start": 0.7,
+            "end": 0.94,
+            "probability": 0.7304806709289551
+          },
+          {
+            "word": "低",
+            "start": 0.94,
+            "end": 1.22,
+            "probability": 0.6955623030662537
+          },
+          {
+            "word": "了",
+            "start": 1.22,
+            "end": 1.46,
+            "probability": 0.9762979745864868
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "seek": 3000,
+        "start": 30.0,
+        "end": 34.46,
+        "text": "不願意改變",
+        "tokens": [
+          50364,
+          1960,
+          20692,
+          9042,
+          34490,
+          26327,
+          50614
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.5056818127632141,
+        "compression_ratio": 0.75,
+        "no_speech_prob": 0.5912556648254395,
+        "words": [
+          {
+            "word": "不",
+            "start": 30.0,
+            "end": 31.02,
+            "probability": 0.3282887935638428
+          },
+          {
+            "word": "願",
+            "start": 31.02,
+            "end": 31.4,
+            "probability": 0.7154378890991211
+          },
+          {
+            "word": "意",
+            "start": 31.4,
+            "end": 32.56,
+            "probability": 0.923401951789856
+          },
+          {
+            "word": "改",
+            "start": 32.56,
+            "end": 33.14,
+            "probability": 0.9020317196846008
+          },
+          {
+            "word": "變",
+            "start": 33.14,
+            "end": 34.46,
+            "probability": 0.9876911640167236
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "seek": 3000,
+        "start": 35.0,
+        "end": 38.98,
+        "text": "重新再來一遍",
+        "tokens": [
+          50614,
+          12624,
+          12560,
+          35961,
+          2257,
+          3330,
+          235,
+          50814
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.5056818127632141,
+        "compression_ratio": 0.75,
+        "no_speech_prob": 0.5912556648254395,
+        "words": [
+          {
+            "word": "重",
+            "start": 35.0,
+            "end": 36.36,
+            "probability": 0.35778936743736267
+          },
+          {
+            "word": "新",
+            "start": 36.36,
+            "end": 36.82,
+            "probability": 0.9635405540466309
+          },
+          {
+            "word": "再來",
+            "start": 36.82,
+            "end": 37.7,
+            "probability": 0.9330213069915771
+          },
+          {
+            "word": "一",
+            "start": 37.7,
+            "end": 38.88,
+            "probability": 0.6013821959495544
+          },
+          {
+            "word": "遍",
+            "start": 38.88,
+            "end": 38.98,
+            "probability": 0.8350189328193665
+          }
+        ]
+      }
+    ],
+    "language": "zh"
+  }
+}

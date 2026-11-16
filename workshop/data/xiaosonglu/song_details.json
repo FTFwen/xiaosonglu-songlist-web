@@ -1,7 +1,7 @@
 {
   "roomKey": "xiaosonglu",
   "roomId": "1727071052",
-  "generatedAt": "2026-11-13T03:10:03.293Z",
+  "generatedAt": "2026-11-16T03:01:32.994Z",
   "source": "local-replay-ingestion",
   "bySongKey": {
     "少女レイ": {
@@ -12106,6 +12106,31 @@
           "song_resolution_method": "song-cut-collection-chapter",
           "replay_date_source": "live-api-date",
           "cut_link": "https://www.bilibili.com/video/BV1LRWd6jEqp/?p=31"
+        }
+      ]
+    },
+    "蝴蝶泉边": {
+      "row_key": "蝴蝶泉边",
+      "song_name": "蝴蝶泉边",
+      "display_song_name": "蝴蝶泉边",
+      "artist": "黄雅莉",
+      "cut_link": "https://www.bilibili.com/video/BV1pxWV6TETx/",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-11-10",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切复核",
+          "artist": "黄雅莉",
+          "replay_id": "live:9fc7c749-a2c9-4b63-a63e-e75ea8200f22",
+          "replay_title": "【小松绿Viridis】对棉花糖进行一个了结 2026-11-10",
+          "replay_url": "",
+          "remark": "1959 年电影《五朵金花》插曲（季康词、雷振邦曲，原唱李世荣 / 赵履珠）；本场为黄雅莉传唱版演绎。弹幕全程未点名，靠直播期间发布的三支歌切锚定（另两支：BV11hWg6NERq、BV1vfWG69EES）。",
+          "lyric_excerpt": "我唱着妈妈唱着的歌谣 牡丹儿绣在金匾上",
+          "song_resolution_method": "song-cut-title",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1pxWV6TETx/"
         }
       ]
     }

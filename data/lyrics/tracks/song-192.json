@@ -1,0 +1,192 @@
+{
+  "schemaVersion": 1,
+  "key": "song-192",
+  "songId": 192,
+  "songName": "天ノ弱",
+  "rowKey": "天ノ弱",
+  "displaySongName": "天ノ弱",
+  "artist": "164 / GUMI",
+  "language": "日文",
+  "derivative": false,
+  "edition": "",
+  "remark": "",
+  "audio": {
+    "url": "assets/audio/song_191.m4a?v=56bd33db6190",
+    "sha256": "56bd33db61903a7ee365ccf892b3e3c21128ebf0266b6ab6f99756503488a91f"
+  },
+  "retrievedAt": "2026-11-16T04:04:42.921Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E5%A4%A9%E3%83%8E%E5%BC%B1&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E5%A4%A9%E3%83%8E%E5%BC%B1%20164%20%2F%20GUMI&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 4885597,
+        "name": "天ノ弱",
+        "artists": [
+          "164",
+          "GUMI"
+        ],
+        "album": "EXIT TUNES PRESENTS GUMitive from Megpoid",
+        "durationMs": 188300,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 28863124,
+        "name": "天ノ弱",
+        "artists": [
+          "164",
+          "GUMI"
+        ],
+        "album": "THIS IS VOCAROCK",
+        "durationMs": 185388,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 30830838,
+        "name": "天ノ弱",
+        "artists": [
+          "GUMI",
+          "164"
+        ],
+        "album": "EXIT TUNES PRESENTS THE BEST OF GUMI from Megpoid",
+        "durationMs": 186300,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 27791348,
+        "name": "天ノ弱",
+        "artists": [
+          "164",
+          "GUMI"
+        ],
+        "album": "EXIT TUNES PRESENTS Vocaloextra feat. GUMI、IA、MAYU",
+        "durationMs": 188300,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 22716941,
+        "name": "天ノ弱",
+        "artists": [
+          "ぐるたみん",
+          "164"
+        ],
+        "album": "EXIT TUNES PRESENTS ぐ ～そんなふいんきで歌ってみた～",
+        "durationMs": 188000,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 622462,
+        "name": "天ノ弱",
+        "artists": [
+          "164",
+          "GUMI"
+        ],
+        "album": "天ノ弱",
+        "durationMs": 186500,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 22801203,
+        "name": "天ノ弱",
+        "artists": [
+          "164",
+          "GUMI"
+        ],
+        "album": "THEORY",
+        "durationMs": 187900,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 35345606,
+        "name": "天ノ弱",
+        "artists": [
+          "164",
+          "GUMI"
+        ],
+        "album": "EXIT TUNES PRESENTS NUMBERS",
+        "durationMs": 187663,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      }
+    ],
+    "workQuery": {
+      "song_id": 192,
+      "song_name": "天ノ弱",
+      "show_as_song_name": "",
+      "display_song_name": "天ノ弱",
+      "artist": "164 / GUMI",
+      "artist_search": "164 GUMI",
+      "feat_artist": "",
+      "remark": "",
+      "tone": "",
+      "language": "日文",
+      "type": "Vocaloid、J-Pop",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1xger6jEYS/?p=5",
+      "sing_count": 1,
+      "status_labels": "自动识别待人工复核",
+      "last_sing_at": "2026-09-17",
+      "row_key": "天ノ弱"
+    },
+    "sourceId": 4885597,
+    "sourcePath": "sources/4885597.json",
+    "sourceUrl": "https://music.163.com/#/song?id=4885597",
+    "selected": {
+      "id": 4885597,
+      "name": "天ノ弱",
+      "artists": [
+        "164",
+        "GUMI"
+      ],
+      "album": "EXIT TUNES PRESENTS GUMitive from Megpoid",
+      "durationMs": 188300,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 30
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-192-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 271.557,
+    "sourceFirstLine": {
+      "t": 1.46,
+      "text": "僕がずっと前から思ってる事を話そうか"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 30.9,
+      "endSeconds": 33.38,
+      "similarity": 0.3333333333333333,
+      "recognizedText": "が奥立てそう",
+      "meanProbability": 0.589,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "ja",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

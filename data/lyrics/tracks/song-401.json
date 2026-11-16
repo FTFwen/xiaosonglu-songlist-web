@@ -1,0 +1,191 @@
+{
+  "schemaVersion": 1,
+  "key": "song-401",
+  "songId": 401,
+  "songName": "万神纪",
+  "rowKey": "万神纪",
+  "displaySongName": "万神纪",
+  "artist": "肥皂菌丨珉珉的猫咪丨",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "中V传说曲《万神纪》人声本家版，肥皂菌丨珉珉的猫咪丨演唱；分P明确标注（人声本家）。",
+  "audio": {
+    "url": "assets/audio/song_400.m4a?v=db7c29fc27e5",
+    "sha256": "db7c29fc27e533c059b3ce8977132ccbcae2437b88578d87af4b77926c20d6e6"
+  },
+  "retrievedAt": "2026-11-16T04:13:34.411Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E4%B8%87%E7%A5%9E%E7%BA%AA&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E4%B8%87%E7%A5%9E%E7%BA%AA%20%E8%82%A5%E7%9A%82%E8%8F%8C%E4%B8%A8%E7%8F%89%E7%8F%89%E7%9A%84%E7%8C%AB%E5%92%AA%E4%B8%A8&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1915256320,
+        "name": "万神纪",
+        "artists": [
+          "凤凰传奇"
+        ],
+        "album": "2021最美的夜bilibili晚会",
+        "durationMs": 250025,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 459555084,
+        "name": "万神纪(人声本家·)",
+        "artists": [
+          "肥皂菌丨珉珉的猫咪丨"
+        ],
+        "album": "万神纪（官方正式版·人声本家）",
+        "durationMs": 306965,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      },
+      {
+        "id": 459557064,
+        "name": "万神纪（人声本家·Remix版）",
+        "artists": [
+          "肥皂菌丨珉珉的猫咪丨"
+        ],
+        "album": "万神纪（官方正式版·人声本家）",
+        "durationMs": 302250,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      },
+      {
+        "id": 459554803,
+        "name": "万神纪（人声本家·初定高燃版）",
+        "artists": [
+          "肥皂菌丨珉珉的猫咪丨"
+        ],
+        "album": "万神纪（官方正式版·人声本家）",
+        "durationMs": 306965,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      },
+      {
+        "id": 460075883,
+        "name": "万神纪（Cover 星尘 / 肥皂菌|海鲜面）",
+        "artists": [
+          "三无Marblue",
+          "双笙（陈元汐）",
+          "易世樊花"
+        ],
+        "album": "三无Marblue（170509更新）",
+        "durationMs": 301217,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 459831628,
+        "name": "万神纪（VOCALOID）",
+        "artists": [
+          "海鲜面",
+          "星尘"
+        ],
+        "album": "万神纪",
+        "durationMs": 308082,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 462602523,
+        "name": "万神纪【祖娅·泠鸢·洛萱】（Cover 星尘）",
+        "artists": [
+          "泠鸢yousa"
+        ],
+        "album": "泠鸢yousa【翻唱第二辑】",
+        "durationMs": 299787,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 461115097,
+        "name": "万神纪  翻自 肥皂菌",
+        "artists": [
+          "白止"
+        ],
+        "album": "【白止】万神纪",
+        "durationMs": 308140,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      }
+    ],
+    "workQuery": {
+      "song_id": 401,
+      "song_name": "万神纪",
+      "show_as_song_name": "",
+      "display_song_name": "万神纪",
+      "artist": "肥皂菌丨珉珉的猫咪丨",
+      "artist_search": "肥皂菌丨珉珉的猫咪丨",
+      "feat_artist": "",
+      "remark": "中V传说曲《万神纪》人声本家版，肥皂菌丨珉珉的猫咪丨演唱；分P明确标注（人声本家）。",
+      "tone": "",
+      "language": "中文",
+      "type": "中V",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1LRWd6jEqp/?p=26",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-11-12",
+      "row_key": "万神纪"
+    },
+    "sourceId": 459555084,
+    "sourcePath": "sources/459555084.json",
+    "sourceUrl": "https://music.163.com/#/song?id=459555084",
+    "selected": {
+      "id": 459555084,
+      "name": "万神纪(人声本家·)",
+      "artists": [
+        "肥皂菌丨珉珉的猫咪丨"
+      ],
+      "album": "万神纪（官方正式版·人声本家）",
+      "durationMs": 306965,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 72,
+    "review": {
+      "reason": "Existing search candidates identify 万神纪(人声本家·) by requested 肥皂菌丨珉珉的猫咪丨, rather than current 凤凰传奇 version. Live lyric API returns 77 timestamped rows with 邪叫教主 / 海鲜面 credits. Audio alignment remains unverified.",
+      "evidenceUrl": "https://music.163.com/song?id=459555084",
+      "previousSourceId": 1915256320
+    }
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-401-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 300.523,
+    "sourceFirstLine": {
+      "t": 28.86,
+      "text": "音乐总监、中国鼓、架子鼓：@司鼓君"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 0,
+      "endSeconds": 0.62,
+      "similarity": 0,
+      "recognizedText": "放",
+      "meanProbability": 0.843,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

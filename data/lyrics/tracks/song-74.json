@@ -1,0 +1,184 @@
+{
+  "schemaVersion": 1,
+  "key": "song-74",
+  "songId": 74,
+  "songName": "私、アイドル宣言",
+  "rowKey": "私、アイドル宣言",
+  "displaySongName": "私、アイドル宣言",
+  "artist": "HoneyWorks（CHiCO with HoneyWorks）",
+  "language": "日文",
+  "derivative": false,
+  "edition": "",
+  "remark": "来自 2026-08-20 偶像歌回。经弹幕歌词交叉验证 + 歌切视频《【小松绿Viridis/歌回】20260820-偶像歌回？欸》分P第4章节确认曲目；时间按歌切分P累计估算，待回放复核。歌手信息来自网易云音乐/萌娘百科检索。",
+  "audio": {
+    "url": "assets/audio/song_50.m4a?v=fe01759312a4",
+    "sha256": "fe01759312a44de180e25ca59d2b721e23fb08a46c8b5e857c1fe1cb8862a086"
+  },
+  "retrievedAt": "2026-11-16T04:03:10.287Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E7%A7%81%E3%80%81%E3%82%A2%E3%82%A4%E3%83%89%E3%83%AB%E5%AE%A3%E8%A8%80&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E7%A7%81%E3%80%81%E3%82%A2%E3%82%A4%E3%83%89%E3%83%AB%E5%AE%A3%E8%A8%80%20HoneyWorks&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 541511317,
+        "name": "私、アイドル宣言",
+        "artists": [
+          "CHiCO with HoneyWorks"
+        ],
+        "album": "私を染めるiの歌",
+        "durationMs": 267238,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1868541536,
+        "name": "私、アイドル宣言",
+        "artists": [
+          "夏川椎菜",
+          "HoneyWorks"
+        ],
+        "album": "#名前だけでも覚えてって下さい",
+        "durationMs": 266054,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2742174989,
+        "name": "私、アイドル宣言",
+        "artists": [
+          "CHiCO with HoneyWorks"
+        ],
+        "album": "CHiCO with HoneyWorks 2018.03.16 \"i contact\" at 日本武道館",
+        "durationMs": 267238,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2742175779,
+        "name": "私、アイドル宣言",
+        "artists": [
+          "CHiCO with HoneyWorks"
+        ],
+        "album": "CHiCO with HoneyWorks 2019.08.06 \"LiVE 5's ON !!-0806-\" at Zepp Tokyo",
+        "durationMs": 267238,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1416875885,
+        "name": "私、アイドル宣言",
+        "artists": [
+          "夏川椎菜"
+        ],
+        "album": "好きすぎてやばい。〜告白実行委員会キャラクターソング集〜",
+        "durationMs": 268160,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1323303329,
+        "name": "私、アイドル宣言",
+        "artists": [
+          "莉犬"
+        ],
+        "album": "「R」ealize",
+        "durationMs": 265266,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1422560772,
+        "name": "私、アイドル宣言",
+        "artists": [
+          "kinsen"
+        ],
+        "album": "kinsen翻唱集",
+        "durationMs": 265769,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 545649481,
+        "name": "私、アイドル宣言",
+        "artists": [
+          "ばら"
+        ],
+        "album": "我的偶像宣言",
+        "durationMs": 276819,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 74,
+      "song_name": "私、アイドル宣言",
+      "show_as_song_name": "",
+      "display_song_name": "私、アイドル宣言",
+      "artist": "HoneyWorks（CHiCO with HoneyWorks）",
+      "artist_search": "HoneyWorks 私アイドル宣言 告白实行委员会",
+      "feat_artist": "",
+      "remark": "来自 2026-08-20 偶像歌回。经弹幕歌词交叉验证 + 歌切视频《【小松绿Viridis/歌回】20260820-偶像歌回？欸》分P第4章节确认曲目；时间按歌切分P累计估算，待回放复核。歌手信息来自网易云音乐/萌娘百科检索。",
+      "tone": "",
+      "language": "日文",
+      "type": "J-Pop、HoneyWorks",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1WS8c6XE9w?p=4",
+      "sing_count": 1,
+      "status_labels": "歌回、自动识别待人工复核",
+      "last_sing_at": "2026-08-20",
+      "row_key": "私、アイドル宣言"
+    },
+    "sourceId": 541511317,
+    "sourcePath": "sources/541511317.json",
+    "sourceUrl": "https://music.163.com/#/song?id=541511317",
+    "selected": {
+      "id": 541511317,
+      "name": "私、アイドル宣言",
+      "artists": [
+        "CHiCO with HoneyWorks"
+      ],
+      "album": "私を染めるiの歌",
+      "durationMs": 267238,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 42
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-74-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 263.337,
+    "sourceFirstLine": {
+      "t": 16.285,
+      "text": "可愛くね▽とびきりの愛よ届け!"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 16.14,
+      "endSeconds": 19.94,
+      "similarity": 0.56,
+      "recognizedText": "いくね取り切りの愛を届け",
+      "meanProbability": 0.779,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "ja",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

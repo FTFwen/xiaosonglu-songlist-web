@@ -1,0 +1,165 @@
+{
+  "schemaVersion": 1,
+  "key": "song-64",
+  "songId": 64,
+  "songName": "上山岗",
+  "displaySongName": "上山岗",
+  "artist": "ilem / 洛天依Official",
+  "language": "中文",
+  "derivative": false,
+  "audio": {
+    "url": "assets/audio/song_45.m4a?v=e198bb619d11",
+    "sha256": "e198bb619d117be66c1b2fb1a3fbfda6196b2456c0389fcb35fc58260435487b"
+  },
+  "retrievedAt": "2026-11-16T03:58:22.072Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E4%B8%8A%E5%B1%B1%E5%B2%97&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 3392513818,
+        "name": "上山岗",
+        "artists": [
+          "ilem",
+          "洛天依Official"
+        ],
+        "album": "ilem2019-2023年作品合集",
+        "durationMs": 239386,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2079091006,
+        "name": "上山岗",
+        "artists": [
+          "洛天依"
+        ],
+        "album": "ACE乐园",
+        "durationMs": 239349,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2134327111,
+        "name": "上山岗",
+        "artists": [
+          "莫默OwO",
+          "洛天依"
+        ],
+        "album": "上山岗",
+        "durationMs": 239294,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1418766731,
+        "name": "上山岗",
+        "artists": [
+          "Akie秋绘"
+        ],
+        "album": "上山岗",
+        "durationMs": 237173,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1416172351,
+        "name": "上山岗",
+        "artists": [
+          "朵芊"
+        ],
+        "album": "上山岗",
+        "durationMs": 239349,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2146461713,
+        "name": "上山岗",
+        "artists": [
+          "5个包子",
+          "东雪莲"
+        ],
+        "album": "爱莲说",
+        "durationMs": 237173,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2751162174,
+        "name": "上山岗",
+        "artists": [
+          "黄美诗"
+        ],
+        "album": "山地风",
+        "durationMs": 217053,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1986719440,
+        "name": "上山岗",
+        "artists": [
+          "朱仪玲"
+        ],
+        "album": "朱仪玲 柔情小调 2",
+        "durationMs": 155960,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "sourceId": 3392513818,
+    "sourcePath": "sources/3392513818.json",
+    "sourceUrl": "https://music.163.com/#/song?id=3392513818",
+    "selected": {
+      "id": 3392513818,
+      "name": "上山岗",
+      "artists": [
+        "ilem",
+        "洛天依Official"
+      ],
+      "album": "ilem2019-2023年作品合集",
+      "durationMs": 239386,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 63
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-64-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 233.871,
+    "sourceFirstLine": {
+      "t": 24.85,
+      "text": "平凡城市"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 21.08,
+      "endSeconds": 22.86,
+      "similarity": 0.6666666666666666,
+      "recognizedText": "《平凡",
+      "meanProbability": 0.47,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  },
+  "rowKey": "上山岗",
+  "edition": "",
+  "remark": "来自 2026-08-18 歌切合集《【663645TV】神回！我已启动！全力绿来唱完了！8月18日歌切合集【小松绿Viridis】》的分P《17-上山岗》。按当前 song-cut-first 策略，将合集章节名直接并入正式曲库；当前记录的是合集内顺序时间，不是原始直播回放时间。"
+}

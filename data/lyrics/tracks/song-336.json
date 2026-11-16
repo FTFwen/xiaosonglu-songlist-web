@@ -1,0 +1,183 @@
+{
+  "schemaVersion": 1,
+  "key": "song-336",
+  "songId": 336,
+  "songName": "天生反骨的鸵鸟",
+  "rowKey": "天生反骨的鸵鸟",
+  "displaySongName": "天生反骨的鸵鸟",
+  "artist": "",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "合集分P只给出曲名，原唱/出处未核实，标记待复核。",
+  "audio": {
+    "url": "assets/audio/song_335.m4a?v=6ec1950b17be",
+    "sha256": "6ec1950b17bee04f606ae2738ee7bddf09675919f2d04f240aef5995f94bdd0f"
+  },
+  "retrievedAt": "2026-11-16T04:13:23.347Z",
+  "match": {
+    "status": "candidate_review_required",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E5%A4%A9%E7%94%9F%E5%8F%8D%E9%AA%A8%E7%9A%84%E9%B8%B5%E9%B8%9F&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 2010607045,
+        "name": "天生反骨的鸵鸟",
+        "artists": [
+          "毛毛不插电"
+        ],
+        "album": "天生反骨的鸵鸟毛毛不插电，天生反骨的鸵鸟DJ江，天生反骨的鸵鸟西凉若若",
+        "durationMs": 176878,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2605064796,
+        "name": "天生反骨的鸵鸟",
+        "artists": [
+          "Didi"
+        ],
+        "album": "天生反骨的鸵鸟",
+        "durationMs": 203900,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2000415101,
+        "name": "天生反骨的鸵鸟",
+        "artists": [
+          "猫辣椒"
+        ],
+        "album": "天生反骨的鸵鸟",
+        "durationMs": 210453,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2009471455,
+        "name": "天生反骨的鸵鸟",
+        "artists": [
+          "西凉若若"
+        ],
+        "album": "唱歌的向日葵",
+        "durationMs": 222792,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1908150875,
+        "name": "天生反骨的鸵鸟",
+        "artists": [
+          "Echo叁槿"
+        ],
+        "album": "天生反骨的鸵鸟",
+        "durationMs": 210751,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1958118475,
+        "name": "天生反骨的鸵鸟",
+        "artists": [
+          "Min"
+        ],
+        "album": "Min",
+        "durationMs": 213627,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2064378744,
+        "name": "天生反骨的鸵鸟",
+        "artists": [
+          "柰",
+          "野"
+        ],
+        "album": "柰歌",
+        "durationMs": 201816,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2016539450,
+        "name": "天生反骨的鸵鸟",
+        "artists": [
+          "阿颜"
+        ],
+        "album": "天生反骨的鸵鸟",
+        "durationMs": 203555,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 336,
+      "song_name": "天生反骨的鸵鸟",
+      "show_as_song_name": "",
+      "display_song_name": "天生反骨的鸵鸟",
+      "artist": "",
+      "artist_search": "",
+      "feat_artist": "",
+      "remark": "合集分P只给出曲名，原唱/出处未核实，标记待复核。",
+      "tone": "",
+      "language": "中文",
+      "type": "待复核",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1naxj62Epw/?p=2",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-27",
+      "row_key": "天生反骨的鸵鸟"
+    },
+    "sourceId": 2010607045,
+    "sourcePath": "sources/2010607045.json",
+    "sourceUrl": "https://music.163.com/#/song?id=2010607045",
+    "selected": {
+      "id": 2010607045,
+      "name": "天生反骨的鸵鸟",
+      "artists": [
+        "毛毛不插电"
+      ],
+      "album": "天生反骨的鸵鸟毛毛不插电，天生反骨的鸵鸟DJ江，天生反骨的鸵鸟西凉若若",
+      "durationMs": 176878,
+      "titleScore": 1,
+      "artistMatch": false,
+      "score": 0.8
+    },
+    "timedLineCount": 24
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-336-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 182.037,
+    "sourceFirstLine": {
+      "t": 0.17,
+      "text": "我是天生反骨的鸵鸟"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 0.0,
+      "endSeconds": 3.76,
+      "similarity": 0.6666666666666666,
+      "recognizedText": "我是天生翻顾的脱鸟",
+      "meanProbability": 0.602,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

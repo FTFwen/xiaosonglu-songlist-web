@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "key": "song-265",
+  "songId": 265,
+  "songName": "好了现在可以哭了",
+  "rowKey": "好了现在可以哭了",
+  "displaySongName": "好了现在可以哭了",
+  "artist": "停電前夜, 洛天依",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "",
+  "audio": {
+    "url": "assets/audio/song_264.m4a?v=351ef22e158d",
+    "sha256": "351ef22e158d540241c466c54076999b1412a9196dc920930bd70d688aa5b657"
+  },
+  "retrievedAt": "2026-11-16T04:05:50.120Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E5%A5%BD%E4%BA%86%E7%8E%B0%E5%9C%A8%E5%8F%AF%E4%BB%A5%E5%93%AD%E4%BA%86&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E5%A5%BD%E4%BA%86%E7%8E%B0%E5%9C%A8%E5%8F%AF%E4%BB%A5%E5%93%AD%E4%BA%86%20%E5%81%9C%E9%9B%BB%E5%89%8D%E5%A4%9C&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 2075674757,
+        "name": "好了现在可以哭了",
+        "artists": [
+          "停電前夜",
+          "洛天依"
+        ],
+        "album": "Badroom Music",
+        "durationMs": 180631,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 3421011296,
+        "name": "好了现在可以哭了",
+        "artists": [
+          "星瑶"
+        ],
+        "album": "",
+        "durationMs": 193306,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2075682916,
+        "name": "好了现在可以哭了 伴奏",
+        "artists": [
+          "停電前夜",
+          "洛天依"
+        ],
+        "album": "Badroom Music",
+        "durationMs": 180631,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      },
+      {
+        "id": 3395388922,
+        "name": "好了现在可以哭了(牧心)",
+        "artists": [
+          "泰坦凌云"
+        ],
+        "album": "好了现在可以哭了(牧心)",
+        "durationMs": 180744,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 3336208738,
+        "name": "好了现在可以哭了 (Cover 停電前夜/洛天依)",
+        "artists": [
+          "8081062ff",
+          "重音テト"
+        ],
+        "album": "好了现在可以哭了 feat. 重音テト SV, V4 (Cover 停電前夜)",
+        "durationMs": 183168,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      }
+    ],
+    "workQuery": {
+      "song_id": 265,
+      "song_name": "好了现在可以哭了",
+      "show_as_song_name": "",
+      "display_song_name": "好了现在可以哭了",
+      "artist": "停電前夜, 洛天依",
+      "artist_search": "停電前夜, 洛天依",
+      "feat_artist": "",
+      "remark": "",
+      "tone": "",
+      "language": "中文",
+      "type": "中V",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1UkaS6zEk3/?p=24",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-02",
+      "row_key": "好了现在可以哭了"
+    },
+    "sourceId": 2075674757,
+    "sourcePath": "sources/2075674757.json",
+    "sourceUrl": "https://music.163.com/#/song?id=2075674757",
+    "selected": {
+      "id": 2075674757,
+      "name": "好了现在可以哭了",
+      "artists": [
+        "停電前夜",
+        "洛天依"
+      ],
+      "album": "Badroom Music",
+      "durationMs": 180631,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 93
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-265-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 184.469,
+    "sourceFirstLine": {
+      "t": 0.12,
+      "text": "词曲停电前夜"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 0.0,
+      "endSeconds": 0.08,
+      "similarity": 0.0,
+      "recognizedText": "心",
+      "meanProbability": 0.036,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

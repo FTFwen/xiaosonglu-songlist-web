@@ -1,0 +1,234 @@
+{
+  "schemaVersion": 1,
+  "key": "song-73",
+  "songId": 73,
+  "songName": "MORE JUMP MORE!",
+  "rowKey": "MORE JUMP MORE!",
+  "displaySongName": "MORE JUMP MORE!",
+  "artist": "MORE MORE JUMP！",
+  "language": "日文",
+  "derivative": false,
+  "edition": "",
+  "remark": "来自 2026-08-20 偶像歌回。经弹幕歌词交叉验证 + 歌切视频《【小松绿Viridis/歌回】20260820-偶像歌回？欸》分P第3章节确认曲目；时间按歌切分P累计估算，待回放复核。歌手信息来自网易云音乐/萌娘百科检索。",
+  "audio": {
+    "url": "assets/audio/song_78.m4a?v=97565984b932",
+    "sha256": "97565984b932b56d3b9a437f95730135ace3a9a235fed067f7a3714d01f68d99"
+  },
+  "retrievedAt": "2026-11-16T04:13:00.963Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E3%83%A2%E3%82%A2%EF%BC%81%E3%82%B8%E3%83%A3%E3%83%B3%E3%83%97%EF%BC%81%E3%83%A2%E3%82%A2%EF%BC%81&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E3%83%A2%E3%82%A2%EF%BC%81%E3%82%B8%E3%83%A3%E3%83%B3%E3%83%97%EF%BC%81%E3%83%A2%E3%82%A2%EF%BC%81%20MORE%20MORE%20JUMP%EF%BC%81&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=MORE%20JUMP%20MORE!&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 2069614110,
+        "name": "モア！ジャンプ！モア！",
+        "artists": [
+          "ナユタン星人",
+          "初音ミク"
+        ],
+        "album": "モア！ジャンプ！モア！",
+        "durationMs": 183564,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2723402040,
+        "name": "モア！ジャンプ！モア！",
+        "artists": [
+          "ナユタン星人"
+        ],
+        "album": "ナユタン星からの物体V",
+        "durationMs": 183564,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2623131344,
+        "name": "モア！ジャンプ！モア！",
+        "artists": [
+          "ナユタン星人",
+          "初音ミク"
+        ],
+        "album": "バーチャル・シンガーボーカルアルバム",
+        "durationMs": 183240,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1854231422,
+        "name": "モア！ジャンプ！モア！ (feat. 花里みのり&桐谷遥&桃井愛莉&日野森雫&初音ミク)",
+        "artists": [
+          "ナユタン星人",
+          "MORE MORE JUMP！",
+          "初音ミク"
+        ],
+        "album": "アイドル新鋭隊/モア！ジャンプ！モア！",
+        "durationMs": 182183,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      },
+      {
+        "id": 1933521097,
+        "name": "モア!ジャンプ!モア! (Live)",
+        "artists": [
+          "東京フィルハーモニー交響楽団"
+        ],
+        "album": "セカイシンフォニー Sekai Symphony 2021 Live",
+        "durationMs": 187560,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 2006746476,
+        "name": "モア!ジャンプ!モア! (2022 Live)",
+        "artists": [
+          "東京フィルハーモニー交響楽団"
+        ],
+        "album": "セカイシンフォニー Sekai Symphony 2022 Live CD",
+        "durationMs": 183745,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 3382955660,
+        "name": "モア！ジャンプ！モア！ 中文版",
+        "artists": [
+          "姥姥鼠",
+          "直角Rt_t",
+          "鱼粥",
+          "水無月あめ",
+          "Priz_樱井明日奈"
+        ],
+        "album": "モア！ジャンプ！モア！（ MORE！JUMP！MORE！） 中文填词版",
+        "durationMs": 181930,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 1854236014,
+        "name": "アイドル新鋭隊 (feat. 花里みのり&桐谷遥&桃井愛莉&日野森雫&初音ミク)",
+        "artists": [
+          "Mitchie M",
+          "MORE MORE JUMP！",
+          "初音ミク"
+        ],
+        "album": "アイドル新鋭隊/モア！ジャンプ！モア！",
+        "durationMs": 229090,
+        "titleScore": 0,
+        "artistMatch": true,
+        "score": 0.2
+      }
+    ],
+    "workQuery": {
+      "song_id": 73,
+      "song_name": "モア！ジャンプ！モア！",
+      "show_as_song_name": "",
+      "display_song_name": "MORE JUMP MORE!",
+      "artist": "MORE MORE JUMP！",
+      "artist_search": "MORE MORE JUMP 世界计划 初音未来",
+      "feat_artist": "",
+      "remark": "来自 2026-08-20 偶像歌回。经弹幕歌词交叉验证 + 歌切视频《【小松绿Viridis/歌回】20260820-偶像歌回？欸》分P第3章节确认曲目；时间按歌切分P累计估算，待回放复核。歌手信息来自网易云音乐/萌娘百科检索。",
+      "tone": "",
+      "language": "日文",
+      "type": "Vocaloid、Project SEKAI",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1WS8c6XE9w?p=3",
+      "sing_count": 1,
+      "status_labels": "歌回、自动识别待人工复核",
+      "last_sing_at": "2026-08-20",
+      "row_key": "MORE JUMP MORE!"
+    },
+    "sourceId": 1854231422,
+    "sourcePath": "sources/1854231422.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1854231422",
+    "selected": {
+      "id": 1854231422,
+      "name": "モア！ジャンプ！モア！ (feat. 花里みのり&桐谷遥&桃井愛莉&日野森雫&初音ミク)",
+      "artists": [
+        "ナユタン星人",
+        "MORE MORE JUMP！",
+        "初音ミク"
+      ],
+      "album": "アイドル新鋭隊/モア！ジャンプ！モア！",
+      "durationMs": 182183,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 70,
+    "review": {
+      "reason": "Public search/get maps translated MORE JUMP MORE! to モア！ジャンプ！モア！ (feat. 花里みのり&桐谷遥&桃井愛莉&日野森雫&初音ミク), artists ナユタン星人 / MORE MORE JUMP！ / 初音ミク, duration 182183ms. Live lyric API returns 83 timestamped rows. Alias correction only; recording alignment unverified.",
+      "evidenceUrl": "https://music.163.com/api/song/lyric?id=1854231422&lv=1&kv=1&tv=-1",
+      "previousSourceId": 2069614110
+    }
+  },
+  "alignment": {
+    "status": "spotcheck_review_required",
+    "evidencePath": "evidence/song-73-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 180.605,
+    "sourceFirstLine": {
+      "t": 0.54,
+      "text": "だからもっと近づきたいから"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 1.08,
+      "endSeconds": 3.66,
+      "similarity": 0.96,
+      "recognizedText": "からもっと 近づきたいから",
+      "meanProbability": 0.741,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": 0.54,
+    "checks": [
+      {
+        "sourceLine": {
+          "t": 90.93,
+          "text": "まだ小さく微かだった声も"
+        },
+        "evidencePath": "evidence/song-73-check0.json",
+        "candidate": {
+          "audioSeconds": 91.26,
+          "endSeconds": 94.79,
+          "similarity": 0.6666666666666666,
+          "recognizedText": "また小さくかすからた声も",
+          "meanProbability": 0.73,
+          "tokenPrefixOnly": false
+        },
+        "residualSeconds": -0.21
+      },
+      {
+        "sourceLine": {
+          "t": 162.44,
+          "text": "(モア＆モア！)愛をもっと！"
+        },
+        "evidencePath": "evidence/song-73-check1.json",
+        "candidate": {
+          "audioSeconds": 162.84,
+          "endSeconds": 165.08,
+          "similarity": 0.7142857142857143,
+          "recognizedText": "愛をもっと",
+          "meanProbability": 0.786,
+          "tokenPrefixOnly": false
+        },
+        "residualSeconds": -0.14
+      }
+    ],
+    "asrLanguage": "ja",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

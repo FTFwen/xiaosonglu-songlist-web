@@ -1,0 +1,197 @@
+{
+  "schemaVersion": 1,
+  "key": "song-86",
+  "songId": 86,
+  "songName": "I LOVE U",
+  "displaySongName": "I LOVE U",
+  "artist": "洛天依（阿良良木健）",
+  "language": "中文",
+  "derivative": false,
+  "audio": {
+    "url": "assets/audio/song_77.m4a?v=264436f98d12",
+    "sha256": "264436f98d123f57ac174b6abb02368fd368aba3797abe8152c9227bfcd11219"
+  },
+  "retrievedAt": "2026-11-16T03:58:02.568Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=I%20LOVE%20U&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 28830337,
+        "name": "I LOVE U",
+        "artists": [
+          "阿良良木健",
+          "洛天依Official"
+        ],
+        "album": "末日DISCO",
+        "durationMs": 276000,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1979009858,
+        "name": "I LOVE U",
+        "artists": [
+          "洛天依Official"
+        ],
+        "album": "依如初见",
+        "durationMs": 278112,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1946051350,
+        "name": "I Love U",
+        "artists": [
+          "The Chainsmokers"
+        ],
+        "album": "So Far So Good",
+        "durationMs": 185573,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 453291393,
+        "name": "i love u.",
+        "artists": [
+          "Panthurr"
+        ],
+        "album": "i love u.",
+        "durationMs": 85000,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1979009651,
+        "name": "i love u",
+        "artists": [
+          "moon tang"
+        ],
+        "album": "i love u",
+        "durationMs": 214003,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2689243158,
+        "name": "i love u.",
+        "artists": [
+          "WIV"
+        ],
+        "album": "i love u.",
+        "durationMs": 122086,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1851501233,
+        "name": "I Love U",
+        "artists": [
+          "Kevin Rater"
+        ],
+        "album": "I Love U",
+        "durationMs": 300486,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 427016438,
+        "name": "I LOVE U (Love Theory Ver.)",
+        "artists": [
+          "阿良良木健",
+          "洛天依"
+        ],
+        "album": "恋爱理论",
+        "durationMs": 278709,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      }
+    ],
+    "sourceId": 28830337,
+    "sourcePath": "sources/28830337.json",
+    "sourceUrl": "https://music.163.com/#/song?id=28830337",
+    "selected": {
+      "id": 28830337,
+      "name": "I LOVE U",
+      "artists": [
+        "阿良良木健",
+        "洛天依Official"
+      ],
+      "album": "末日DISCO",
+      "durationMs": 276000,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 60
+  },
+  "alignment": {
+    "status": "spotcheck_review_required",
+    "evidencePath": "evidence/song-86-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 292.014,
+    "sourceFirstLine": {
+      "t": 0.67,
+      "text": "如果你可以肯定 我的一片心意"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 1.64,
+      "endSeconds": 5.38,
+      "similarity": 0.8,
+      "recognizedText": "如果你可以看定我的一品心",
+      "meanProbability": 0.604,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": 0.97,
+    "checks": [
+      {
+        "sourceLine": {
+          "t": 144.68,
+          "text": "你的烦心事 也只有我知道"
+        },
+        "evidencePath": "evidence/song-86-check0.json",
+        "candidate": {
+          "audioSeconds": 146.23,
+          "endSeconds": 147.99,
+          "similarity": 0.25,
+          "recognizedText": "也不少不知",
+          "meanProbability": 0.932,
+          "tokenPrefixOnly": false
+        },
+        "residualSeconds": 0.58
+      },
+      {
+        "sourceLine": {
+          "t": 252.09,
+          "text": "I I I LOVE U~o(≧v≦)o~~"
+        },
+        "evidencePath": "evidence/song-86-check1.json",
+        "candidate": {
+          "audioSeconds": 247.06,
+          "endSeconds": 247.52,
+          "similarity": 0.0,
+          "recognizedText": "你",
+          "meanProbability": 0.037,
+          "tokenPrefixOnly": false
+        },
+        "residualSeconds": -6.0
+      }
+    ],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  },
+  "rowKey": "I LOVE U",
+  "edition": "",
+  "remark": "来自 2026-08-20 偶像歌回。经弹幕歌词交叉验证 + 歌切视频《【小松绿Viridis/歌回】20260820-偶像歌回？欸》分P第17章节确认曲目；时间按歌切分P累计估算，待回放复核。歌手信息来自网易云音乐/萌娘百科检索。"
+}

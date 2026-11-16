@@ -1,0 +1,187 @@
+{
+  "schemaVersion": 1,
+  "key": "song-71",
+  "songId": 71,
+  "songName": "START:DASH!!!",
+  "rowKey": "START:DASH!!!",
+  "displaySongName": "START:DASH!!!",
+  "artist": "μ's",
+  "language": "日文",
+  "derivative": false,
+  "edition": "",
+  "remark": "来自 2026-08-20 偶像歌回。经弹幕歌词交叉验证 + 歌切视频《【小松绿Viridis/歌回】20260820-偶像歌回？欸》分P第1章节确认曲目；时间按歌切分P累计估算，待回放复核。歌手信息来自网易云音乐/萌娘百科检索。",
+  "audio": {
+    "url": "assets/audio/song_81.m4a?v=afbb8ec71ec9",
+    "sha256": "afbb8ec71ec94c1410d4eef7b6999ccb25f6b48abf4c507a7e1054b81d100f33"
+  },
+  "retrievedAt": "2026-11-16T04:03:51.391Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=START%3ADASH!!!&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=START%3ADASH!!!%20%CE%BC's&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 32235941,
+        "name": "START:DASH!!",
+        "artists": [
+          "μ's"
+        ],
+        "album": "μ's Best Album Best Live! Collection Ⅱ",
+        "durationMs": 257093,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2080172576,
+        "name": "START:DASH!!",
+        "artists": [
+          "μ's"
+        ],
+        "album": "μ's Complete BEST BOX Chapter.02",
+        "durationMs": 255360,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 26218887,
+        "name": "START:DASH!!",
+        "artists": [
+          "V.A."
+        ],
+        "album": "Susume→Tomorrow/START:DASH!!",
+        "durationMs": 259000,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 32235937,
+        "name": "START:DASH!!",
+        "artists": [
+          "新田恵海",
+          "内田彩",
+          "三森すずこ"
+        ],
+        "album": "μ's Best Album Best Live! Collection Ⅱ",
+        "durationMs": 255666,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 34084584,
+        "name": "START:DASH!!",
+        "artists": [
+          "RCVO粤语配音组"
+        ],
+        "album": "Love Live!粤语翻唱系列",
+        "durationMs": 254014,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2080172574,
+        "name": "START:DASH!!",
+        "artists": [
+          "新田恵海",
+          "内田彩",
+          "三森すずこ"
+        ],
+        "album": "μ's Complete BEST BOX Chapter.02",
+        "durationMs": 253946,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 26319023,
+        "name": "START:DASH!!",
+        "artists": [
+          "iemitsu"
+        ],
+        "album": "EXIT TRANCE PRESENTS SPEED アニメトランス BEST 18",
+        "durationMs": 324000,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 26260699,
+        "name": "START:DASH!! (TVサイズ)",
+        "artists": [
+          "μ's"
+        ],
+        "album": "TVアニメ『ラブライブ！』オリジナルサウンドトラック「Notes of School idol days」",
+        "durationMs": 185173,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      }
+    ],
+    "workQuery": {
+      "song_id": 71,
+      "song_name": "START:DASH!!!",
+      "show_as_song_name": "",
+      "display_song_name": "START:DASH!!!",
+      "artist": "μ's",
+      "artist_search": "μ's LoveLive",
+      "feat_artist": "",
+      "remark": "来自 2026-08-20 偶像歌回。经弹幕歌词交叉验证 + 歌切视频《【小松绿Viridis/歌回】20260820-偶像歌回？欸》分P第1章节确认曲目；时间按歌切分P累计估算，待回放复核。歌手信息来自网易云音乐/萌娘百科检索。",
+      "tone": "",
+      "language": "日文",
+      "type": "动画、偶像、LoveLive",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1WS8c6XE9w?p=1",
+      "sing_count": 1,
+      "status_labels": "歌回、自动识别待人工复核",
+      "last_sing_at": "2026-08-20",
+      "row_key": "START:DASH!!!"
+    },
+    "sourceId": 32235941,
+    "sourcePath": "sources/32235941.json",
+    "sourceUrl": "https://music.163.com/#/song?id=32235941",
+    "selected": {
+      "id": 32235941,
+      "name": "START:DASH!!",
+      "artists": [
+        "μ's"
+      ],
+      "album": "μ's Best Album Best Live! Collection Ⅱ",
+      "durationMs": 257093,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 54
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-71-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 250.683,
+    "sourceFirstLine": {
+      "t": 6.21,
+      "text": "I say…"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 12.38,
+      "endSeconds": 12.74,
+      "similarity": 0.6666666666666666,
+      "recognizedText": "ay",
+      "meanProbability": 0.661,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "ja",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

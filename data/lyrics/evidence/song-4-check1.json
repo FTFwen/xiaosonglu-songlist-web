@@ -1,0 +1,37 @@
+{
+  "audioSha256": "56b8c5407847dbe236309cc8157c344bad230482f1607fbca289ec3c6a74713a",
+  "model": "whisper-base",
+  "start": 216.37,
+  "end": 236.37,
+  "result": {
+    "text": "噢",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 0.0,
+        "end": 0.56,
+        "text": "噢",
+        "tokens": [
+          50364,
+          21250,
+          95,
+          50464
+        ],
+        "temperature": 0,
+        "avg_logprob": -1.2011523246765137,
+        "compression_ratio": 0.2727272727272727,
+        "no_speech_prob": 0.3920154571533203,
+        "words": [
+          {
+            "word": "噢",
+            "start": 0.0,
+            "end": 0.56,
+            "probability": 0.30665844306349754
+          }
+        ]
+      }
+    ],
+    "language": "zh"
+  }
+}

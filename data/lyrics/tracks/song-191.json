@@ -1,0 +1,169 @@
+{
+  "schemaVersion": 1,
+  "key": "song-191",
+  "songId": 191,
+  "songName": "小夜子",
+  "rowKey": "小夜子",
+  "displaySongName": "小夜子",
+  "artist": "みきとP / 初音ミク",
+  "language": "日文",
+  "derivative": false,
+  "edition": "中文填词/日文原版",
+  "remark": "",
+  "audio": {
+    "url": "assets/audio/song_190.m4a?v=749b35640ea1",
+    "sha256": "749b35640ea1fbe326bfc15125a850116433f80ddc1fa6f8294a3f5eff8f23de"
+  },
+  "retrievedAt": "2026-11-16T04:04:44.152Z",
+  "match": {
+    "status": "version_review_required",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E5%B0%8F%E5%A4%9C%E5%AD%90&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E5%B0%8F%E5%A4%9C%E5%AD%90%20%E3%81%BF%E3%81%8D%E3%81%A8P%20%2F%20%E5%88%9D%E9%9F%B3%E3%83%9F%E3%82%AF&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 26219268,
+        "name": "小夜子",
+        "artists": [
+          "初音ミク",
+          "みきとP"
+        ],
+        "album": "僕は初音ミクとキスをした",
+        "durationMs": 255931,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 28936445,
+        "name": "小夜子",
+        "artists": [
+          "みきとP"
+        ],
+        "album": "moji moji",
+        "durationMs": 255931,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 623112,
+        "name": "小夜子",
+        "artists": [
+          "みきとP",
+          "初音ミク"
+        ],
+        "album": "刹那プラス+",
+        "durationMs": 255931,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 22705500,
+        "name": "小夜子",
+        "artists": [
+          "鹿乃"
+        ],
+        "album": "Sweet Ices Cream",
+        "durationMs": 253653,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 28466066,
+        "name": "小夜子",
+        "artists": [
+          "伊東歌詞太郎"
+        ],
+        "album": "my little white cat",
+        "durationMs": 252735,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 33682743,
+        "name": "小夜子",
+        "artists": [
+          "泠鸢yousa"
+        ],
+        "album": "填词作品集",
+        "durationMs": 254693,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 28467019,
+        "name": "小夜子",
+        "artists": [
+          "すぃ"
+        ],
+        "album": "みきうた",
+        "durationMs": 256069,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 34200176,
+        "name": "小夜子",
+        "artists": [
+          "luz",
+          "くろくん"
+        ],
+        "album": "最新热歌慢摇110",
+        "durationMs": 252708,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 191,
+      "song_name": "小夜子",
+      "show_as_song_name": "",
+      "display_song_name": "小夜子",
+      "artist": "みきとP / 初音ミク",
+      "artist_search": "みきとP 初音ミク",
+      "feat_artist": "",
+      "remark": "",
+      "tone": "",
+      "language": "日文",
+      "type": "Vocaloid、J-Pop",
+      "identification": "",
+      "display_version": "中文填词/日文原版",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1xger6jEYS/?p=4",
+      "sing_count": 1,
+      "status_labels": "自动识别待人工复核",
+      "last_sing_at": "2026-09-17",
+      "row_key": "小夜子"
+    },
+    "sourceId": 26219268,
+    "sourcePath": "sources/26219268.json",
+    "sourceUrl": "https://music.163.com/#/song?id=26219268",
+    "selected": {
+      "id": 26219268,
+      "name": "小夜子",
+      "artists": [
+        "初音ミク",
+        "みきとP"
+      ],
+      "album": "僕は初音ミクとキスをした",
+      "durationMs": 255931,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 34
+  },
+  "alignment": {
+    "status": "version_review_required",
+    "offsetSeconds": null,
+    "humanVerified": false
+  }
+}

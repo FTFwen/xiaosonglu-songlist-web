@@ -1,0 +1,165 @@
+{
+  "schemaVersion": 1,
+  "key": "song-9",
+  "songId": 9,
+  "songName": "横竖撇点折",
+  "displaySongName": "横竖撇点折",
+  "artist": "米白",
+  "language": "中文",
+  "derivative": false,
+  "audio": {
+    "url": "assets/audio/song_23.m4a?v=e14a7e62285d",
+    "sha256": "e14a7e62285db3e56126b43c30a62a1ef24df806c8e7bead007cd239c9e09d44"
+  },
+  "retrievedAt": "2026-11-16T03:58:58.011Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E6%A8%AA%E7%AB%96%E6%92%87%E7%82%B9%E6%8A%98&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1831476071,
+        "name": "横竖撇点折",
+        "artists": [
+          "米白"
+        ],
+        "album": "哔哩哔哩拜年纪金曲回顾",
+        "durationMs": 228679,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2010578602,
+        "name": "横竖撇点折",
+        "artists": [
+          "赖美云"
+        ],
+        "album": "2022最美的夜",
+        "durationMs": 213177,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1854243026,
+        "name": "横竖撇点折",
+        "artists": [
+          "说说Crystal"
+        ],
+        "album": "横竖撇点折",
+        "durationMs": 228875,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1418877516,
+        "name": "横竖撇点折",
+        "artists": [
+          "茶了了"
+        ],
+        "album": "横竖撇点折",
+        "durationMs": 230059,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1418588748,
+        "name": "横竖撇点折",
+        "artists": [
+          "漆柚",
+          "大暴",
+          "不举萌栗",
+          "凯玟桑"
+        ],
+        "album": "语文测试来啦！横竖撇点折（四人合唱）【漆柚/赤leopard/不举萌栗/凯玟桑】",
+        "durationMs": 228573,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1814412390,
+        "name": "横竖撇点折",
+        "artists": [
+          "雨田",
+          "心华"
+        ],
+        "album": "横竖撇点折",
+        "durationMs": 229176,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1420437371,
+        "name": "横竖撇点折",
+        "artists": [
+          "穆小泠"
+        ],
+        "album": "2020拜年祭",
+        "durationMs": 229092,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1420746677,
+        "name": "横竖撇点折",
+        "artists": [
+          "萧忆情Alex"
+        ],
+        "album": "横竖撇点折",
+        "durationMs": 228679,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "sourceId": 1831476071,
+    "sourcePath": "sources/1831476071.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1831476071",
+    "selected": {
+      "id": 1831476071,
+      "name": "横竖撇点折",
+      "artists": [
+        "米白"
+      ],
+      "album": "哔哩哔哩拜年纪金曲回顾",
+      "durationMs": 228679,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 36
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-9-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 232.96,
+    "sourceFirstLine": {
+      "t": 21.53,
+      "text": "长牙四足 破门而开只见黔须半部"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 24.12,
+      "endSeconds": 24.54,
+      "similarity": 0.13333333333333333,
+      "recognizedText": "长",
+      "meanProbability": 0.202,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  },
+  "rowKey": "横竖撇点折",
+  "edition": "",
+  "remark": "直链页面 meta description 明示日期 2026.8.9 下午，标题直接给出真实歌曲名《横竖撇点折》，可作为当日 song-cut-first 增量收录。"
+}

@@ -1,0 +1,168 @@
+{
+  "schemaVersion": 1,
+  "key": "song-242",
+  "songId": 242,
+  "songName": "神的随波逐流",
+  "rowKey": "神的随波逐流",
+  "displaySongName": "神的随波逐流",
+  "artist": "泠鸢yousa",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "",
+  "audio": {
+    "url": "assets/audio/song_241.m4a?v=b0189f435650",
+    "sha256": "b0189f435650b4a27d136bde76440f786734df54a12f5c6e53c52373d15662a3"
+  },
+  "retrievedAt": "2026-11-16T04:05:33.355Z",
+  "match": {
+    "status": "version_review_required",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E7%A5%9E%E7%9A%84%E9%9A%8F%E6%B3%A2%E9%80%90%E6%B5%81%20%E6%B3%A0%E9%B8%A2&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E7%A5%9E%E7%9A%84%E9%9A%8F%E6%B3%A2%E9%80%90%E6%B5%81%20%E6%B3%A0%E9%B8%A2%20%E6%B3%A0%E9%B8%A2yousa&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E7%A5%9E%E7%9A%84%E9%9A%8F%E6%B3%A2%E9%80%90%E6%B5%81&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 33682739,
+        "name": "神的随波逐流",
+        "artists": [
+          "泠鸢yousa"
+        ],
+        "album": "填词作品集",
+        "durationMs": 256417,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 29753702,
+        "name": "神的随波逐流",
+        "artists": [
+          "泠鸢yousa"
+        ],
+        "album": "热门华语251",
+        "durationMs": 256000,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1326054900,
+        "name": "神的随波逐流",
+        "artists": [
+          "ねこdesu",
+          "幻晓伊"
+        ],
+        "album": "神的随波逐流（Cover 泠鸢yousa）",
+        "durationMs": 251667,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1396610934,
+        "name": "神的随波逐流",
+        "artists": [
+          "亭淼",
+          "纸笠"
+        ],
+        "album": "神的随波逐流",
+        "durationMs": 253859,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1925539798,
+        "name": "神的随波逐流",
+        "artists": [
+          "法樱Fay"
+        ],
+        "album": "鴥彼晨风",
+        "durationMs": 256470,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 430053187,
+        "name": "神的随波逐流",
+        "artists": [
+          "易世樊花"
+        ],
+        "album": "易世樊花2016翻唱集合",
+        "durationMs": 254791,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2159558575,
+        "name": "神的随波逐流 (双声道版)",
+        "artists": [
+          "小缘、泠鸢yousa"
+        ],
+        "album": "",
+        "durationMs": 252813,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      },
+      {
+        "id": 453858519,
+        "name": "神的随波逐流（翻自 泠鸢yousa）",
+        "artists": [
+          "林小暗"
+        ],
+        "album": "中文翻唱集",
+        "durationMs": 255913,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      }
+    ],
+    "workQuery": {
+      "song_id": 242,
+      "song_name": "神的随波逐流",
+      "show_as_song_name": "",
+      "display_song_name": "神的随波逐流",
+      "artist": "泠鸢yousa",
+      "artist_search": "泠鸢yousa",
+      "feat_artist": "",
+      "remark": "",
+      "tone": "",
+      "language": "中文",
+      "type": "翻唱",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1g1ah6REpb/?p=18",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-09-27",
+      "row_key": "神的随波逐流"
+    },
+    "sourceId": 33682739,
+    "sourcePath": "sources/33682739.json",
+    "sourceUrl": "https://music.163.com/#/song?id=33682739",
+    "selected": {
+      "id": 33682739,
+      "name": "神的随波逐流",
+      "artists": [
+        "泠鸢yousa"
+      ],
+      "album": "填词作品集",
+      "durationMs": 256417,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 55
+  },
+  "alignment": {
+    "status": "version_review_required",
+    "offsetSeconds": null,
+    "humanVerified": false
+  }
+}

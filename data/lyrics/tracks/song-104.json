@@ -1,0 +1,171 @@
+{
+  "schemaVersion": 1,
+  "key": "song-104",
+  "songId": 104,
+  "songName": "梦良衣",
+  "rowKey": "梦良衣",
+  "displaySongName": "梦良衣",
+  "artist": "ilem / 赤羽",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "弹幕 00:56:11「梦良衣」+ 01:00:30「ilem的梦良衣」+ 01:00:30「少唱了i love u」（观众调侃漏唱）→ 观众点出歌手与曲名，判定为演唱中报歌名。ilem 2021-05-11 投稿 Synthesizer V 中文原创（赤羽演唱），殿堂曲。",
+  "audio": {
+    "url": "",
+    "sha256": null
+  },
+  "retrievedAt": "2026-11-16T04:02:52.951Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E6%A2%A6%E8%89%AF%E8%A1%A3&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E6%A2%A6%E8%89%AF%E8%A1%A3%20ilem%20%2F%20%E8%B5%A4%E7%BE%BD&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 3392512961,
+        "name": "梦良衣",
+        "artists": [
+          "ilem",
+          "赤羽"
+        ],
+        "album": "ilem2019-2023年作品合集",
+        "durationMs": 187408,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2160541782,
+        "name": "梦良衣",
+        "artists": [
+          "ilem",
+          "赤羽"
+        ],
+        "album": "",
+        "durationMs": 187408,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 3389063124,
+        "name": "梦良衣",
+        "artists": [
+          "洛天依",
+          "十樱刀"
+        ],
+        "album": "梦良衣 洛天依xs翻调",
+        "durationMs": 188009,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3417155047,
+        "name": "梦良衣",
+        "artists": [
+          "耳机分你一半"
+        ],
+        "album": "梦良衣",
+        "durationMs": 143307,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3416668894,
+        "name": "梦良衣",
+        "artists": [
+          "天冷冷"
+        ],
+        "album": "梦良衣",
+        "durationMs": 140721,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3432856786,
+        "name": "梦良衣（cover by：乌鱼P）",
+        "artists": [
+          "不称职的乌鱼禅师P",
+          "洛天依"
+        ],
+        "album": "依曲入人心",
+        "durationMs": 182880,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 1345872140,
+        "name": "勾指起誓",
+        "artists": [
+          "洛天依Official",
+          "ilem"
+        ],
+        "album": "2:3",
+        "durationMs": 183536,
+        "titleScore": 0,
+        "artistMatch": true,
+        "score": 0.2
+      },
+      {
+        "id": 3372975275,
+        "name": "告死鸟",
+        "artists": [
+          "ilem"
+        ],
+        "album": "告死鸟",
+        "durationMs": 241286,
+        "titleScore": 0,
+        "artistMatch": true,
+        "score": 0.2
+      }
+    ],
+    "workQuery": {
+      "song_id": 104,
+      "song_name": "梦良衣",
+      "show_as_song_name": "",
+      "display_song_name": "梦良衣",
+      "artist": "ilem / 赤羽",
+      "artist_search": "ilem 赤羽",
+      "feat_artist": "",
+      "remark": "弹幕 00:56:11「梦良衣」+ 01:00:30「ilem的梦良衣」+ 01:00:30「少唱了i love u」（观众调侃漏唱）→ 观众点出歌手与曲名，判定为演唱中报歌名。ilem 2021-05-11 投稿 Synthesizer V 中文原创（赤羽演唱），殿堂曲。",
+      "tone": "",
+      "language": "中文",
+      "type": "中V、流行",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "",
+      "sing_count": 1,
+      "status_labels": "歌回、自动识别待人工复核",
+      "last_sing_at": "2026-08-29",
+      "row_key": "梦良衣"
+    },
+    "sourceId": 3392512961,
+    "sourcePath": "sources/3392512961.json",
+    "sourceUrl": "https://music.163.com/#/song?id=3392512961",
+    "selected": {
+      "id": 3392512961,
+      "name": "梦良衣",
+      "artists": [
+        "ilem",
+        "赤羽"
+      ],
+      "album": "ilem2019-2023年作品合集",
+      "durationMs": 187408,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 22
+  },
+  "alignment": {
+    "status": "unavailable",
+    "offsetSeconds": null,
+    "humanVerified": false
+  }
+}

@@ -1,0 +1,583 @@
+{
+  "audioSha256": "1e9278c6faaec83d1c2559f59020940e340b13a9b50734740fbffa68a5e16652",
+  "model": "whisper-base",
+  "start": 0,
+  "end": 35,
+  "result": {
+    "text": "《時花人》 怎麼想浮現帶你去風聲開火推鞋我心里的心间请回忧话数为节唱演你忘滩身嘴闻闲我心里的心里",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 0.9199999999999997,
+        "end": 4.66,
+        "text": "《時花人》 怎麼想浮現",
+        "tokens": [
+          50364,
+          9806,
+          6611,
+          20127,
+          4035,
+          9782,
+          220,
+          11614,
+          7093,
+          11038,
+          106,
+          9581,
+          50614
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.8173268863133022,
+        "compression_ratio": 0.8405797101449275,
+        "no_speech_prob": 0.9468586444854736,
+        "words": [
+          {
+            "word": "《",
+            "start": 0.9199999999999997,
+            "end": 1.68,
+            "probability": 0.01862175762653351
+          },
+          {
+            "word": "時",
+            "start": 1.68,
+            "end": 1.68,
+            "probability": 0.015528692863881588
+          },
+          {
+            "word": "花",
+            "start": 1.68,
+            "end": 2.06,
+            "probability": 0.5807698369026184
+          },
+          {
+            "word": "人",
+            "start": 2.06,
+            "end": 2.32,
+            "probability": 0.5737529397010803
+          },
+          {
+            "word": "》",
+            "start": 2.32,
+            "end": 2.32,
+            "probability": 0.7443814277648926
+          },
+          {
+            "word": " 怎麼",
+            "start": 2.56,
+            "end": 2.8,
+            "probability": 0.6553604602813721
+          },
+          {
+            "word": "想",
+            "start": 2.8,
+            "end": 3.7,
+            "probability": 0.653281033039093
+          },
+          {
+            "word": "浮",
+            "start": 3.7,
+            "end": 4.3,
+            "probability": 0.5858830586075783
+          },
+          {
+            "word": "現",
+            "start": 4.3,
+            "end": 4.66,
+            "probability": 0.8536608219146729
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "seek": 0,
+        "start": 4.66,
+        "end": 8.64,
+        "text": "帶你去風聲開火推鞋",
+        "tokens": [
+          50614,
+          32379,
+          2166,
+          6734,
+          22713,
+          29454,
+          8949,
+          26171,
+          33597,
+          165,
+          252,
+          233,
+          50864
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.8173268863133022,
+        "compression_ratio": 0.8405797101449275,
+        "no_speech_prob": 0.9468586444854736,
+        "words": [
+          {
+            "word": "帶",
+            "start": 4.66,
+            "end": 5.3,
+            "probability": 0.6024397015571594
+          },
+          {
+            "word": "你",
+            "start": 5.3,
+            "end": 5.56,
+            "probability": 0.9173222184181213
+          },
+          {
+            "word": "去",
+            "start": 5.56,
+            "end": 5.82,
+            "probability": 0.8553177118301392
+          },
+          {
+            "word": "風",
+            "start": 5.82,
+            "end": 6.18,
+            "probability": 0.8692217469215393
+          },
+          {
+            "word": "聲",
+            "start": 6.18,
+            "end": 6.48,
+            "probability": 0.3277367651462555
+          },
+          {
+            "word": "開",
+            "start": 6.48,
+            "end": 7.14,
+            "probability": 0.8083083033561707
+          },
+          {
+            "word": "火",
+            "start": 7.14,
+            "end": 7.54,
+            "probability": 0.7399538159370422
+          },
+          {
+            "word": "推",
+            "start": 7.54,
+            "end": 8.06,
+            "probability": 0.7113783955574036
+          },
+          {
+            "word": "鞋",
+            "start": 8.06,
+            "end": 8.64,
+            "probability": 0.6143399377663931
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "seek": 864,
+        "start": 23.839999999999996,
+        "end": 27.74,
+        "text": "我心里的心间",
+        "tokens": [
+          50364,
+          1654,
+          7945,
+          15759,
+          1546,
+          7945,
+          31685,
+          50464
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.4736493772214597,
+        "compression_ratio": 2.6511627906976742,
+        "no_speech_prob": 0.9446001052856445,
+        "words": [
+          {
+            "word": "我",
+            "start": 23.839999999999996,
+            "end": 24.759999999999998,
+            "probability": 0.029832011088728905
+          },
+          {
+            "word": "心",
+            "start": 24.759999999999998,
+            "end": 25.68,
+            "probability": 0.01950274035334587
+          },
+          {
+            "word": "里",
+            "start": 25.68,
+            "end": 26.18,
+            "probability": 0.12728537619113922
+          },
+          {
+            "word": "的",
+            "start": 26.18,
+            "end": 26.66,
+            "probability": 0.10100684314966202
+          },
+          {
+            "word": "心",
+            "start": 26.66,
+            "end": 27.18,
+            "probability": 0.788918673992157
+          },
+          {
+            "word": "间",
+            "start": 27.18,
+            "end": 27.74,
+            "probability": 0.2565580904483795
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "seek": 864,
+        "start": 27.74,
+        "end": 29.62,
+        "text": "请回忧话数",
+        "tokens": [
+          50464,
+          27908,
+          8350,
+          4263,
+          100,
+          21596,
+          33188,
+          50564
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.4736493772214597,
+        "compression_ratio": 2.6511627906976742,
+        "no_speech_prob": 0.9446001052856445,
+        "words": [
+          {
+            "word": "请",
+            "start": 27.74,
+            "end": 28.18,
+            "probability": 0.039251845329999924
+          },
+          {
+            "word": "回",
+            "start": 28.18,
+            "end": 28.54,
+            "probability": 0.5608657598495483
+          },
+          {
+            "word": "忧",
+            "start": 28.54,
+            "end": 28.86,
+            "probability": 0.5413983166217804
+          },
+          {
+            "word": "话",
+            "start": 28.86,
+            "end": 29.16,
+            "probability": 0.630036473274231
+          },
+          {
+            "word": "数",
+            "start": 29.16,
+            "end": 29.62,
+            "probability": 0.3670370578765869
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "seek": 864,
+        "start": 29.62,
+        "end": 31.52,
+        "text": "为节唱演",
+        "tokens": [
+          50564,
+          13992,
+          45161,
+          39861,
+          31382,
+          50664
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.4736493772214597,
+        "compression_ratio": 2.6511627906976742,
+        "no_speech_prob": 0.9446001052856445,
+        "words": [
+          {
+            "word": "为",
+            "start": 29.62,
+            "end": 30.1,
+            "probability": 0.3803289234638214
+          },
+          {
+            "word": "节",
+            "start": 30.1,
+            "end": 30.48,
+            "probability": 0.13186271488666534
+          },
+          {
+            "word": "唱",
+            "start": 30.48,
+            "end": 31.06,
+            "probability": 0.42057308554649353
+          },
+          {
+            "word": "演",
+            "start": 31.06,
+            "end": 31.52,
+            "probability": 0.5277949571609497
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "seek": 864,
+        "start": 31.52,
+        "end": 33.34,
+        "text": "你忘滩身嘴",
+        "tokens": [
+          50664,
+          2166,
+          26677,
+          15868,
+          102,
+          19847,
+          10756,
+          112,
+          50764
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.4736493772214597,
+        "compression_ratio": 2.6511627906976742,
+        "no_speech_prob": 0.9446001052856445,
+        "words": [
+          {
+            "word": "你",
+            "start": 31.52,
+            "end": 32.12,
+            "probability": 0.7164550423622131
+          },
+          {
+            "word": "忘",
+            "start": 32.12,
+            "end": 32.36,
+            "probability": 0.41006600856781006
+          },
+          {
+            "word": "滩",
+            "start": 32.36,
+            "end": 32.64,
+            "probability": 0.5288527831435204
+          },
+          {
+            "word": "身",
+            "start": 32.64,
+            "end": 32.98,
+            "probability": 0.35307228565216064
+          },
+          {
+            "word": "嘴",
+            "start": 32.98,
+            "end": 33.34,
+            "probability": 0.6146223843097687
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "seek": 864,
+        "start": 33.34,
+        "end": 34.32,
+        "text": "闻闲",
+        "tokens": [
+          50764,
+          8259,
+          119,
+          8259,
+          110,
+          50864
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.4736493772214597,
+        "compression_ratio": 2.6511627906976742,
+        "no_speech_prob": 0.9446001052856445,
+        "words": [
+          {
+            "word": "闻",
+            "start": 33.34,
+            "end": 33.94,
+            "probability": 0.7018126994371414
+          },
+          {
+            "word": "闲",
+            "start": 33.94,
+            "end": 34.32,
+            "probability": 0.4217904731631279
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "seek": 864,
+        "start": 34.32,
+        "end": 34.98,
+        "text": "我心里的心里",
+        "tokens": [
+          50864,
+          1654,
+          7945,
+          15759,
+          1546,
+          7945,
+          15759,
+          50964
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.4736493772214597,
+        "compression_ratio": 2.6511627906976742,
+        "no_speech_prob": 0.9446001052856445,
+        "words": [
+          {
+            "word": "我",
+            "start": 34.32,
+            "end": 34.98,
+            "probability": 0.003338680835440755
+          },
+          {
+            "word": "心",
+            "start": 34.98,
+            "end": 34.98,
+            "probability": 0.2563765347003937
+          },
+          {
+            "word": "里",
+            "start": 34.98,
+            "end": 34.98,
+            "probability": 0.8120458126068115
+          },
+          {
+            "word": "的",
+            "start": 34.98,
+            "end": 34.98,
+            "probability": 0.4254589378833771
+          },
+          {
+            "word": "心",
+            "start": 34.98,
+            "end": 34.98,
+            "probability": 0.5107723474502563
+          },
+          {
+            "word": "里",
+            "start": 34.98,
+            "end": 34.98,
+            "probability": 0.29521217942237854
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "seek": 864,
+        "start": 34.98,
+        "end": 34.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.4736493772214597,
+        "compression_ratio": 2.6511627906976742,
+        "no_speech_prob": 0.9446001052856445,
+        "words": []
+      },
+      {
+        "id": 9,
+        "seek": 864,
+        "start": 34.98,
+        "end": 34.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.4736493772214597,
+        "compression_ratio": 2.6511627906976742,
+        "no_speech_prob": 0.9446001052856445,
+        "words": []
+      },
+      {
+        "id": 10,
+        "seek": 864,
+        "start": 34.98,
+        "end": 34.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.4736493772214597,
+        "compression_ratio": 2.6511627906976742,
+        "no_speech_prob": 0.9446001052856445,
+        "words": []
+      },
+      {
+        "id": 11,
+        "seek": 864,
+        "start": 34.98,
+        "end": 34.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.4736493772214597,
+        "compression_ratio": 2.6511627906976742,
+        "no_speech_prob": 0.9446001052856445,
+        "words": []
+      },
+      {
+        "id": 12,
+        "seek": 864,
+        "start": 34.98,
+        "end": 34.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.4736493772214597,
+        "compression_ratio": 2.6511627906976742,
+        "no_speech_prob": 0.9446001052856445,
+        "words": []
+      },
+      {
+        "id": 13,
+        "seek": 864,
+        "start": 34.98,
+        "end": 34.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.4736493772214597,
+        "compression_ratio": 2.6511627906976742,
+        "no_speech_prob": 0.9446001052856445,
+        "words": []
+      },
+      {
+        "id": 14,
+        "seek": 864,
+        "start": 34.98,
+        "end": 34.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.4736493772214597,
+        "compression_ratio": 2.6511627906976742,
+        "no_speech_prob": 0.9446001052856445,
+        "words": []
+      },
+      {
+        "id": 15,
+        "seek": 864,
+        "start": 34.98,
+        "end": 34.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.4736493772214597,
+        "compression_ratio": 2.6511627906976742,
+        "no_speech_prob": 0.9446001052856445,
+        "words": []
+      }
+    ],
+    "language": "zh"
+  }
+}

@@ -1,0 +1,613 @@
+{
+  "audioSha256": "b1cff9511c8623b4cc2420358cbad53ce1d3281082c887f6b61d4f1000532ee0",
+  "model": "whisper-base",
+  "start": 0,
+  "end": 50.275,
+  "result": {
+    "text": "我去找你我去找你我去找你我去找你我去找你我去找你我去找你",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 22.719999999999995,
+        "end": 23.12,
+        "text": "我去找你",
+        "tokens": [
+          50364,
+          1654,
+          6734,
+          25085,
+          2166,
+          50414
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.18038764866915616,
+        "compression_ratio": 11.225806451612904,
+        "no_speech_prob": 0.6308940649032593,
+        "words": [
+          {
+            "word": "我",
+            "start": 22.719999999999995,
+            "end": 23.12,
+            "probability": 0.036317434161901474
+          },
+          {
+            "word": "去",
+            "start": 23.12,
+            "end": 23.12,
+            "probability": 0.03646000847220421
+          },
+          {
+            "word": "找",
+            "start": 23.12,
+            "end": 23.12,
+            "probability": 0.13746093213558197
+          },
+          {
+            "word": "你",
+            "start": 23.12,
+            "end": 23.12,
+            "probability": 0.358963280916214
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "seek": 0,
+        "start": 23.12,
+        "end": 23.12,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.18038764866915616,
+        "compression_ratio": 11.225806451612904,
+        "no_speech_prob": 0.6308940649032593,
+        "words": []
+      },
+      {
+        "id": 2,
+        "seek": 0,
+        "start": 23.12,
+        "end": 23.12,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.18038764866915616,
+        "compression_ratio": 11.225806451612904,
+        "no_speech_prob": 0.6308940649032593,
+        "words": []
+      },
+      {
+        "id": 3,
+        "seek": 0,
+        "start": 23.12,
+        "end": 23.12,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.18038764866915616,
+        "compression_ratio": 11.225806451612904,
+        "no_speech_prob": 0.6308940649032593,
+        "words": []
+      },
+      {
+        "id": 4,
+        "seek": 0,
+        "start": 23.12,
+        "end": 23.12,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.18038764866915616,
+        "compression_ratio": 11.225806451612904,
+        "no_speech_prob": 0.6308940649032593,
+        "words": []
+      },
+      {
+        "id": 5,
+        "seek": 0,
+        "start": 23.12,
+        "end": 23.12,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.18038764866915616,
+        "compression_ratio": 11.225806451612904,
+        "no_speech_prob": 0.6308940649032593,
+        "words": []
+      },
+      {
+        "id": 6,
+        "seek": 0,
+        "start": 23.12,
+        "end": 23.12,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.18038764866915616,
+        "compression_ratio": 11.225806451612904,
+        "no_speech_prob": 0.6308940649032593,
+        "words": []
+      },
+      {
+        "id": 7,
+        "seek": 0,
+        "start": 23.12,
+        "end": 23.12,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.18038764866915616,
+        "compression_ratio": 11.225806451612904,
+        "no_speech_prob": 0.6308940649032593,
+        "words": []
+      },
+      {
+        "id": 8,
+        "seek": 0,
+        "start": 23.12,
+        "end": 23.12,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.18038764866915616,
+        "compression_ratio": 11.225806451612904,
+        "no_speech_prob": 0.6308940649032593,
+        "words": []
+      },
+      {
+        "id": 9,
+        "seek": 0,
+        "start": 23.12,
+        "end": 23.12,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.18038764866915616,
+        "compression_ratio": 11.225806451612904,
+        "no_speech_prob": 0.6308940649032593,
+        "words": []
+      },
+      {
+        "id": 10,
+        "seek": 0,
+        "start": 23.12,
+        "end": 23.12,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.18038764866915616,
+        "compression_ratio": 11.225806451612904,
+        "no_speech_prob": 0.6308940649032593,
+        "words": []
+      },
+      {
+        "id": 11,
+        "seek": 0,
+        "start": 23.12,
+        "end": 23.12,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.18038764866915616,
+        "compression_ratio": 11.225806451612904,
+        "no_speech_prob": 0.6308940649032593,
+        "words": []
+      },
+      {
+        "id": 12,
+        "seek": 0,
+        "start": 23.12,
+        "end": 23.12,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.18038764866915616,
+        "compression_ratio": 11.225806451612904,
+        "no_speech_prob": 0.6308940649032593,
+        "words": []
+      },
+      {
+        "id": 13,
+        "seek": 0,
+        "start": 23.12,
+        "end": 23.12,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.18038764866915616,
+        "compression_ratio": 11.225806451612904,
+        "no_speech_prob": 0.6308940649032593,
+        "words": []
+      },
+      {
+        "id": 14,
+        "seek": 0,
+        "start": 23.12,
+        "end": 23.12,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.18038764866915616,
+        "compression_ratio": 11.225806451612904,
+        "no_speech_prob": 0.6308940649032593,
+        "words": []
+      },
+      {
+        "id": 15,
+        "seek": 0,
+        "start": 23.12,
+        "end": 23.12,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.18038764866915616,
+        "compression_ratio": 11.225806451612904,
+        "no_speech_prob": 0.6308940649032593,
+        "words": []
+      },
+      {
+        "id": 16,
+        "seek": 0,
+        "start": 23.12,
+        "end": 23.14,
+        "text": "我去找你",
+        "tokens": [
+          51164,
+          1654,
+          6734,
+          25085,
+          2166,
+          51214
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.18038764866915616,
+        "compression_ratio": 11.225806451612904,
+        "no_speech_prob": 0.6308940649032593,
+        "words": [
+          {
+            "word": "我",
+            "start": 23.12,
+            "end": 23.12,
+            "probability": 0.8500375151634216
+          },
+          {
+            "word": "去",
+            "start": 23.12,
+            "end": 23.12,
+            "probability": 0.9736832976341248
+          },
+          {
+            "word": "找",
+            "start": 23.12,
+            "end": 23.12,
+            "probability": 0.9765665531158447
+          },
+          {
+            "word": "你",
+            "start": 23.12,
+            "end": 23.14,
+            "probability": 0.9804514050483704
+          }
+        ]
+      },
+      {
+        "id": 17,
+        "seek": 0,
+        "start": 23.14,
+        "end": 23.14,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.18038764866915616,
+        "compression_ratio": 11.225806451612904,
+        "no_speech_prob": 0.6308940649032593,
+        "words": []
+      },
+      {
+        "id": 18,
+        "seek": 0,
+        "start": 23.14,
+        "end": 23.14,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.18038764866915616,
+        "compression_ratio": 11.225806451612904,
+        "no_speech_prob": 0.6308940649032593,
+        "words": []
+      },
+      {
+        "id": 19,
+        "seek": 0,
+        "start": 23.14,
+        "end": 23.18,
+        "text": "我去找你",
+        "tokens": [
+          51314,
+          1654,
+          6734,
+          25085,
+          2166,
+          51364
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.18038764866915616,
+        "compression_ratio": 11.225806451612904,
+        "no_speech_prob": 0.6308940649032593,
+        "words": [
+          {
+            "word": "我",
+            "start": 23.14,
+            "end": 23.14,
+            "probability": 0.8653087615966797
+          },
+          {
+            "word": "去",
+            "start": 23.14,
+            "end": 23.14,
+            "probability": 0.9780839085578918
+          },
+          {
+            "word": "找",
+            "start": 23.14,
+            "end": 23.14,
+            "probability": 0.9816411137580872
+          },
+          {
+            "word": "你",
+            "start": 23.14,
+            "end": 23.18,
+            "probability": 0.9816583395004272
+          }
+        ]
+      },
+      {
+        "id": 20,
+        "seek": 0,
+        "start": 23.18,
+        "end": 23.18,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.18038764866915616,
+        "compression_ratio": 11.225806451612904,
+        "no_speech_prob": 0.6308940649032593,
+        "words": []
+      },
+      {
+        "id": 21,
+        "seek": 0,
+        "start": 23.18,
+        "end": 23.18,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.18038764866915616,
+        "compression_ratio": 11.225806451612904,
+        "no_speech_prob": 0.6308940649032593,
+        "words": []
+      },
+      {
+        "id": 22,
+        "seek": 0,
+        "start": 23.18,
+        "end": 23.18,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.18038764866915616,
+        "compression_ratio": 11.225806451612904,
+        "no_speech_prob": 0.6308940649032593,
+        "words": []
+      },
+      {
+        "id": 23,
+        "seek": 0,
+        "start": 23.18,
+        "end": 23.18,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.18038764866915616,
+        "compression_ratio": 11.225806451612904,
+        "no_speech_prob": 0.6308940649032593,
+        "words": []
+      },
+      {
+        "id": 24,
+        "seek": 0,
+        "start": 23.18,
+        "end": 23.18,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.18038764866915616,
+        "compression_ratio": 11.225806451612904,
+        "no_speech_prob": 0.6308940649032593,
+        "words": []
+      },
+      {
+        "id": 25,
+        "seek": 0,
+        "start": 24.339999999999993,
+        "end": 24.94,
+        "text": "我去找你",
+        "tokens": [
+          51614,
+          1654,
+          6734,
+          25085,
+          2166,
+          51664
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.18038764866915616,
+        "compression_ratio": 11.225806451612904,
+        "no_speech_prob": 0.6308940649032593,
+        "words": [
+          {
+            "word": "我",
+            "start": 24.339999999999993,
+            "end": 24.74,
+            "probability": 0.8864040374755859
+          },
+          {
+            "word": "去",
+            "start": 24.74,
+            "end": 24.94,
+            "probability": 0.9816445112228394
+          },
+          {
+            "word": "找",
+            "start": 24.94,
+            "end": 24.94,
+            "probability": 0.9876977801322937
+          },
+          {
+            "word": "你",
+            "start": 24.94,
+            "end": 24.94,
+            "probability": 0.9818680286407471
+          }
+        ]
+      },
+      {
+        "id": 26,
+        "seek": 0,
+        "start": 24.94,
+        "end": 25.36,
+        "text": "我去找你",
+        "tokens": [
+          51664,
+          1654,
+          6734,
+          25085,
+          2166,
+          51714
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.18038764866915616,
+        "compression_ratio": 11.225806451612904,
+        "no_speech_prob": 0.6308940649032593,
+        "words": [
+          {
+            "word": "我",
+            "start": 24.94,
+            "end": 25.16,
+            "probability": 0.8921938538551331
+          },
+          {
+            "word": "去",
+            "start": 25.16,
+            "end": 25.32,
+            "probability": 0.9825406670570374
+          },
+          {
+            "word": "找",
+            "start": 25.32,
+            "end": 25.32,
+            "probability": 0.9876593947410583
+          },
+          {
+            "word": "你",
+            "start": 25.32,
+            "end": 25.36,
+            "probability": 0.9803053140640259
+          }
+        ]
+      },
+      {
+        "id": 27,
+        "seek": 0,
+        "start": 25.36,
+        "end": 28.0,
+        "text": "我去找你",
+        "tokens": [
+          51714,
+          1654,
+          6734,
+          25085,
+          2166,
+          51764
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.18038764866915616,
+        "compression_ratio": 11.225806451612904,
+        "no_speech_prob": 0.6308940649032593,
+        "words": [
+          {
+            "word": "我",
+            "start": 25.36,
+            "end": 25.62,
+            "probability": 0.8870540261268616
+          },
+          {
+            "word": "去",
+            "start": 25.62,
+            "end": 25.76,
+            "probability": 0.9806236624717712
+          },
+          {
+            "word": "找",
+            "start": 25.76,
+            "end": 26.04,
+            "probability": 0.9871222376823425
+          },
+          {
+            "word": "你",
+            "start": 26.04,
+            "end": 28.0,
+            "probability": 0.9789971113204956
+          }
+        ]
+      },
+      {
+        "id": 28,
+        "seek": 0,
+        "start": 29.86,
+        "end": 29.98,
+        "text": "我去找你",
+        "tokens": [
+          51764,
+          1654,
+          6734,
+          25085,
+          2166,
+          51814
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.18038764866915616,
+        "compression_ratio": 11.225806451612904,
+        "no_speech_prob": 0.6308940649032593,
+        "words": [
+          {
+            "word": "我",
+            "start": 29.86,
+            "end": 29.98,
+            "probability": 0.8924710154533386
+          },
+          {
+            "word": "去",
+            "start": 29.98,
+            "end": 29.98,
+            "probability": 0.9809076189994812
+          },
+          {
+            "word": "找",
+            "start": 29.98,
+            "end": 29.98,
+            "probability": 0.9879868626594543
+          },
+          {
+            "word": "你",
+            "start": 29.98,
+            "end": 29.98,
+            "probability": 0.9804501533508301
+          }
+        ]
+      }
+    ],
+    "language": "zh"
+  }
+}

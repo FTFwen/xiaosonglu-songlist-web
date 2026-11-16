@@ -1,0 +1,217 @@
+{
+  "audioSha256": "58ee1c39de53db5998e1f986a1b25744f089ac760db63afea1800cbb09a95a59",
+  "model": "whisper-base",
+  "start": 0,
+  "end": 35,
+  "result": {
+    "text": "あなた それはYou You You You You You夢ちなのは私 それはI Know La Plants",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 4.860000000000001,
+        "end": 11.14,
+        "text": "あなた それはYou You You You You You",
+        "tokens": [
+          50364,
+          3590,
+          42847,
+          47765,
+          3065,
+          3223,
+          509,
+          509,
+          509,
+          509,
+          509,
+          50900
+        ],
+        "temperature": 0,
+        "avg_logprob": -1.0775694353827114,
+        "compression_ratio": 1.2835820895522387,
+        "no_speech_prob": 0.40036889910697937,
+        "words": [
+          {
+            "word": "あ",
+            "start": 4.860000000000001,
+            "end": 5.720000000000001,
+            "probability": 0.06518399715423584
+          },
+          {
+            "word": "なた",
+            "start": 5.720000000000001,
+            "end": 6.58,
+            "probability": 0.9176271557807922
+          },
+          {
+            "word": " それ",
+            "start": 6.58,
+            "end": 8.26,
+            "probability": 0.4405936896800995
+          },
+          {
+            "word": "は",
+            "start": 8.26,
+            "end": 8.6,
+            "probability": 0.966974675655365
+          },
+          {
+            "word": "You",
+            "start": 8.6,
+            "end": 8.98,
+            "probability": 0.2803477942943573
+          },
+          {
+            "word": " You",
+            "start": 8.98,
+            "end": 9.92,
+            "probability": 0.46360719203948975
+          },
+          {
+            "word": " You",
+            "start": 9.92,
+            "end": 10.34,
+            "probability": 0.8751711249351501
+          },
+          {
+            "word": " You",
+            "start": 10.34,
+            "end": 10.7,
+            "probability": 0.720653772354126
+          },
+          {
+            "word": " You",
+            "start": 10.7,
+            "end": 10.98,
+            "probability": 0.377055823802948
+          },
+          {
+            "word": " You",
+            "start": 10.98,
+            "end": 11.14,
+            "probability": 0.012158541940152645
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "seek": 0,
+        "start": 11.14,
+        "end": 16.38,
+        "text": "夢ちなのは私 それは",
+        "tokens": [
+          50900,
+          35165,
+          6574,
+          3203,
+          35662,
+          20083,
+          47765,
+          3065,
+          51221
+        ],
+        "temperature": 0,
+        "avg_logprob": -1.0775694353827114,
+        "compression_ratio": 1.2835820895522387,
+        "no_speech_prob": 0.40036889910697937,
+        "words": [
+          {
+            "word": "夢",
+            "start": 11.14,
+            "end": 11.32,
+            "probability": 0.0011908862506970763
+          },
+          {
+            "word": "ち",
+            "start": 11.32,
+            "end": 11.76,
+            "probability": 0.7635204195976257
+          },
+          {
+            "word": "な",
+            "start": 11.76,
+            "end": 12.24,
+            "probability": 0.9306881427764893
+          },
+          {
+            "word": "のは",
+            "start": 12.24,
+            "end": 12.64,
+            "probability": 0.5588542819023132
+          },
+          {
+            "word": "私",
+            "start": 12.64,
+            "end": 14.52,
+            "probability": 0.40393123030662537
+          },
+          {
+            "word": " それ",
+            "start": 14.52,
+            "end": 16.0,
+            "probability": 0.8976744413375854
+          },
+          {
+            "word": "は",
+            "start": 16.0,
+            "end": 16.38,
+            "probability": 0.9873728156089783
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "seek": 0,
+        "start": 17.14,
+        "end": 20.14,
+        "text": "I Know La Plants",
+        "tokens": [
+          51221,
+          40,
+          10265,
+          2369,
+          2149,
+          1719,
+          51452
+        ],
+        "temperature": 0,
+        "avg_logprob": -1.0775694353827114,
+        "compression_ratio": 1.2835820895522387,
+        "no_speech_prob": 0.40036889910697937,
+        "words": [
+          {
+            "word": "I",
+            "start": 16.75,
+            "end": 17.18,
+            "probability": 0.15501385927200317
+          },
+          {
+            "word": " Know",
+            "start": 17.18,
+            "end": 19.2,
+            "probability": 0.29232868552207947
+          },
+          {
+            "word": " La",
+            "start": 19.2,
+            "end": 19.52,
+            "probability": 0.20391647517681122
+          },
+          {
+            "word": " Pl",
+            "start": 19.52,
+            "end": 19.7,
+            "probability": 0.12952004373073578
+          },
+          {
+            "word": "ants",
+            "start": 19.7,
+            "end": 20.14,
+            "probability": 0.1628781259059906
+          }
+        ]
+      }
+    ],
+    "language": "ja"
+  }
+}

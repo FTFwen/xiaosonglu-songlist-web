@@ -1,0 +1,188 @@
+{
+  "schemaVersion": 1,
+  "key": "song-122",
+  "songId": 122,
+  "songName": "有点甜",
+  "rowKey": "有点甜",
+  "displaySongName": "有点甜",
+  "artist": "汪苏泷 / By2",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "2026-09-03「也许康复的随便唱唱」21点场；歌切合集【桐人今天睡大觉】【小松绿Viridis】随便唱唱的歌回 歌切合集 2026.09.03 分P2（03:52）。汪苏泷与By2对唱甜歌。",
+  "audio": {
+    "url": "assets/audio/song_121.m4a?v=f182f0428c6f",
+    "sha256": "f182f0428c6fce80981532a2c95f5aa0faa052b0a48e8dad79dcb96dbf7be8d1"
+  },
+  "retrievedAt": "2026-11-16T04:03:36.096Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E6%9C%89%E7%82%B9%E7%94%9C&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E6%9C%89%E7%82%B9%E7%94%9C%20%E6%B1%AA%E8%8B%8F%E6%B3%B7%20%2F%20By2&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 165340,
+        "name": "有点甜",
+        "artists": [
+          "汪苏泷",
+          "By2"
+        ],
+        "album": "万有引力",
+        "durationMs": 235200,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 486194121,
+        "name": "有点甜",
+        "artists": [
+          "汪苏泷",
+          "陈墨一"
+        ],
+        "album": "我想和你唱 第二季 第9期",
+        "durationMs": 171871,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 3368842882,
+        "name": "有点甜",
+        "artists": [
+          "DJ冷冰冰"
+        ],
+        "album": "有点甜",
+        "durationMs": 232320,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1453973750,
+        "name": "有点甜（伴奏）",
+        "artists": [
+          "汪苏泷",
+          "By2"
+        ],
+        "album": "有点甜（伴奏）",
+        "durationMs": 235441,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      },
+      {
+        "id": 2076795744,
+        "name": "有点甜(超甜版)",
+        "artists": [
+          "Coisini小辰"
+        ],
+        "album": "恋爱脑",
+        "durationMs": 231185,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 558817006,
+        "name": "有点甜（Cover 汪苏泷）",
+        "artists": [
+          "赵世聪",
+          "尹柳丫"
+        ],
+        "album": "有点甜",
+        "durationMs": 228310,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 3401895155,
+        "name": "有点甜（R&B版）",
+        "artists": [
+          "一颗星球"
+        ],
+        "album": "R&B改编",
+        "durationMs": 218480,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 3362157056,
+        "name": "有点甜（DJ抖音热播）",
+        "artists": [
+          "DJ阿念"
+        ],
+        "album": "有点甜（DJ抖音热播）",
+        "durationMs": 205923,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      }
+    ],
+    "workQuery": {
+      "song_id": 122,
+      "song_name": "有点甜",
+      "show_as_song_name": "",
+      "display_song_name": "有点甜",
+      "artist": "汪苏泷 / By2",
+      "artist_search": "有点甜 汪苏泷 / By2",
+      "feat_artist": "",
+      "remark": "2026-09-03「也许康复的随便唱唱」21点场；歌切合集【桐人今天睡大觉】【小松绿Viridis】随便唱唱的歌回 歌切合集 2026.09.03 分P2（03:52）。汪苏泷与By2对唱甜歌。",
+      "tone": "",
+      "language": "中文",
+      "type": "流行",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=2",
+      "sing_count": 1,
+      "status_labels": "歌回",
+      "last_sing_at": "2026-09-03",
+      "row_key": "有点甜"
+    },
+    "sourceId": 165340,
+    "sourcePath": "sources/165340.json",
+    "sourceUrl": "https://music.163.com/#/song?id=165340",
+    "selected": {
+      "id": 165340,
+      "name": "有点甜",
+      "artists": [
+        "汪苏泷",
+        "By2"
+      ],
+      "album": "万有引力",
+      "durationMs": 235200,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 55
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-122-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 228.523,
+    "sourceFirstLine": {
+      "t": 4,
+      "text": "和声编写 : 胡皓 汪苏泷"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 30.0,
+      "endSeconds": 30.24,
+      "similarity": 0.0,
+      "recognizedText": "冬",
+      "meanProbability": 0.725,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

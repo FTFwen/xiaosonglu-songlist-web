@@ -1,0 +1,170 @@
+{
+  "schemaVersion": 1,
+  "key": "derivative-1111",
+  "songId": -1111,
+  "songName": "小松绿-神曼波",
+  "rowKey": "小松绿-神曼波",
+  "displaySongName": "神曼波",
+  "artist": "白烁",
+  "language": "",
+  "derivative": true,
+  "edition": "",
+  "remark": "",
+  "audio": {
+    "url": "assets/derivative/shenmanbo.mp3?v=37a67e350cbf",
+    "sha256": "37a67e350cbf2317e729b0390d6c9fdf7c67d3a14e59ac7a9e54f483e5459086"
+  },
+  "retrievedAt": "2026-11-16T04:13:39.414Z",
+  "match": {
+    "status": "candidate_review_required",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E7%A5%9E%E6%9B%BC%E6%B3%A2&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 2757593727,
+        "name": "神曼波",
+        "artists": [
+          "鱼青辞"
+        ],
+        "album": "神曼波【哈基米音乐】",
+        "durationMs": 151669,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2754602855,
+        "name": "神曼波",
+        "artists": [
+          "骑骑一跃"
+        ],
+        "album": "哈基米音乐",
+        "durationMs": 152016,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2754844092,
+        "name": "神曼波",
+        "artists": [
+          "是个潘呀"
+        ],
+        "album": "神曼波",
+        "durationMs": 150899,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3312044332,
+        "name": "神曼波",
+        "artists": [
+          "皮卡"
+        ],
+        "album": "列车开往春天",
+        "durationMs": 244992,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2759227387,
+        "name": "神曼波",
+        "artists": [
+          "碳氢氧人声乐团"
+        ],
+        "album": "短作品精选集2",
+        "durationMs": 31022,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2758294216,
+        "name": "神曼波",
+        "artists": [
+          "喵酱nya"
+        ],
+        "album": "喵酱nya",
+        "durationMs": 141335,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3324899005,
+        "name": "神曼波",
+        "artists": [
+          "这就是天幻呀"
+        ],
+        "album": "幻酱的作品集（4）",
+        "durationMs": 152985,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2752588182,
+        "name": "神曼波【哈基米音乐】",
+        "artists": [
+          "月底没钱君"
+        ],
+        "album": "神曼波【哈基米音乐】",
+        "durationMs": 151959,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      }
+    ],
+    "workQuery": {
+      "song_id": -1111,
+      "song_name": "神曼波",
+      "display_song_name": "神曼波",
+      "artist": "",
+      "language": "",
+      "audio": "assets/derivative/shenmanbo.mp3?v=37a67e350cbf",
+      "derivative": true
+    },
+    "sourceId": 2754602855,
+    "sourcePath": "sources/2754602855.json",
+    "sourceUrl": "https://music.163.com/#/song?id=2754602855",
+    "selected": {
+      "id": 2754602855,
+      "name": "神曼波",
+      "artists": [
+        "骑骑一跃"
+      ],
+      "album": "哈基米音乐",
+      "durationMs": 152016,
+      "titleScore": 1,
+      "artistMatch": false,
+      "score": 0.8
+    },
+    "timedLineCount": 39
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/derivative-1111-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 150.073,
+    "sourceFirstLine": {
+      "t": 7.332,
+      "text": "哈基米 哈基米 哈基米"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 0.0,
+      "endSeconds": 1.3,
+      "similarity": 0.0,
+      "recognizedText": "は",
+      "meanProbability": 0.073,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "ja",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

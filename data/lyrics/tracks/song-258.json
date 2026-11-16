@@ -1,0 +1,188 @@
+{
+  "schemaVersion": 1,
+  "key": "song-258",
+  "songId": 258,
+  "songName": "丑马",
+  "rowKey": "丑马",
+  "displaySongName": "丑马",
+  "artist": "ChiliChill乐团",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "",
+  "audio": {
+    "url": "assets/audio/song_257.m4a?v=06a64da85d45",
+    "sha256": "06a64da85d4501fcebf346d19e9ea75ee202ef36fec2614db3369b6535bc77c5"
+  },
+  "retrievedAt": "2026-11-16T04:12:37.380Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E4%B8%91%E9%A9%AC&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E4%B8%91%E9%A9%AC%20ChiliChill%E4%B9%90%E5%9B%A2&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1932320908,
+        "name": "丑马",
+        "artists": [
+          "cloud米米"
+        ],
+        "album": "HBD to Meters",
+        "durationMs": 207863,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1966384359,
+        "name": "丑马",
+        "artists": [
+          "米林还没睡够"
+        ],
+        "album": "丑马",
+        "durationMs": 208176,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2019077323,
+        "name": "丑马",
+        "artists": [
+          "如释鸟Birdiee"
+        ],
+        "album": "丑马 / Birdiee翻唱",
+        "durationMs": 207800,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2093263633,
+        "name": "丑马",
+        "artists": [
+          "反吅"
+        ],
+        "album": "ChiliChill",
+        "durationMs": 207971,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1914024459,
+        "name": "丑马",
+        "artists": [
+          "sakakosmos"
+        ],
+        "album": "朝霧碼頭 - 中文COVER合集 -",
+        "durationMs": 207864,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3358497336,
+        "name": "丑马",
+        "artists": [
+          "酥莓"
+        ],
+        "album": "丑马",
+        "durationMs": 208781,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1945693556,
+        "name": "丑马",
+        "artists": [
+          "阿谁_MAY"
+        ],
+        "album": "2022",
+        "durationMs": 207888,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1950999143,
+        "name": "丑马",
+        "artists": [
+          "圆脸巨齿鲨"
+        ],
+        "album": "丑马【HB to 猫玖】",
+        "durationMs": 208613,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 258,
+      "song_name": "丑马",
+      "show_as_song_name": "",
+      "display_song_name": "丑马",
+      "artist": "ChiliChill乐团",
+      "artist_search": "ChiliChill乐团",
+      "feat_artist": "",
+      "remark": "",
+      "tone": "",
+      "language": "中文",
+      "type": "流行",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1UkaS6zEk3/?p=9",
+      "sing_count": 2,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-11-08",
+      "row_key": "丑马"
+    },
+    "sourceId": 1837575277,
+    "sourcePath": "sources/1837575277.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1837575277",
+    "selected": {
+      "id": 1837575277,
+      "name": "丑马（翻自 乐正绫）",
+      "artists": [
+        "ChiliChill乐团"
+      ],
+      "album": "丑马",
+      "durationMs": 207807,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 47,
+    "review": {
+      "reason": "Public search identifies requested ChiliChill乐团 丑马（翻自 乐正绫）, 207807ms. Current source is cloud米米 cover. Live lyric API returns 55 timestamped rows with ChiliChill writing credits. Parenthetical cover suffix currently loses to exact-title covers. Recording alignment unverified.",
+      "evidenceUrl": "https://music.163.com/api/search/get?s=%E4%B8%91%E9%A9%AC%20ChiliChill&type=1&limit=5",
+      "previousSourceId": 1932320908
+    }
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-258-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 229.141,
+    "sourceFirstLine": {
+      "t": 9.689,
+      "text": "游乐园的所有彩色木马里"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 33.72,
+      "endSeconds": 33.96,
+      "similarity": 0.16666666666666666,
+      "recognizedText": "的",
+      "meanProbability": 0.373,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

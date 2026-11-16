@@ -1,0 +1,187 @@
+{
+  "schemaVersion": 1,
+  "key": "song-48",
+  "songId": 48,
+  "songName": "雨爱",
+  "displaySongName": "雨爱",
+  "artist": "杨丞琳",
+  "language": "中文",
+  "derivative": false,
+  "audio": {
+    "url": "assets/audio/song_71.m4a?v=6c66d333ed55",
+    "sha256": "6c66d333ed556181e79daccb4b317c9bde95835e5b3cf7f1be463269fd9e9a99"
+  },
+  "retrievedAt": "2026-11-16T03:58:34.787Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E9%9B%A8%E7%88%B1&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 316100,
+        "name": "雨爱",
+        "artists": [
+          "杨丞琳"
+        ],
+        "album": "雨爱",
+        "durationMs": 260480,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 5235487,
+        "name": "雨爱",
+        "artists": [
+          "杨丞琳"
+        ],
+        "album": "为日本加油",
+        "durationMs": 260480,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 400162850,
+        "name": "雨爱",
+        "artists": [
+          "杨丞琳"
+        ],
+        "album": "雨爱(缤纷庆功版)",
+        "durationMs": 260480,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 3442281398,
+        "name": "雨爱",
+        "artists": [
+          "DJ冷冰冰"
+        ],
+        "album": "雨爱",
+        "durationMs": 94204,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1467444619,
+        "name": "雨爱",
+        "artists": [
+          "不是花火呀"
+        ],
+        "album": "雨爱",
+        "durationMs": 234000,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2693371705,
+        "name": "雨爱",
+        "artists": [
+          "戴羽彤"
+        ],
+        "album": "雨爱",
+        "durationMs": 212618,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1445761206,
+        "name": "雨爱",
+        "artists": [
+          "周星星"
+        ],
+        "album": "雨爱",
+        "durationMs": 251428,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2677343873,
+        "name": "雨爱",
+        "artists": [
+          "en（王翊恩）"
+        ],
+        "album": "雨爱",
+        "durationMs": 223500,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "sourceId": 316100,
+    "sourcePath": "sources/316100.json",
+    "sourceUrl": "https://music.163.com/#/song?id=316100",
+    "selected": {
+      "id": 316100,
+      "name": "雨爱",
+      "artists": [
+        "杨丞琳"
+      ],
+      "album": "雨爱",
+      "durationMs": 260480,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 57
+  },
+  "alignment": {
+    "status": "spotcheck_review_required",
+    "evidencePath": "evidence/song-48-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 265.92,
+    "sourceFirstLine": {
+      "t": 16.286,
+      "text": "窗外的天气"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 15.4,
+      "endSeconds": 17.92,
+      "similarity": 0.8888888888888888,
+      "recognizedText": "外的天氣",
+      "meanProbability": 0.946,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": -0.886,
+    "checks": [
+      {
+        "sourceLine": {
+          "t": 134.289,
+          "text": "一万颗雨滴的距离"
+        },
+        "evidencePath": "evidence/song-48-check0.json",
+        "candidate": {
+          "audioSeconds": 133.063,
+          "endSeconds": 138.683,
+          "similarity": 0.75,
+          "recognizedText": "一万颗 预定的距离",
+          "meanProbability": 0.752,
+          "tokenPrefixOnly": false
+        },
+        "residualSeconds": -0.34
+      },
+      {
+        "sourceLine": {
+          "t": 241.854,
+          "text": "和声编写 : 马毓芬/薛忠铭"
+        },
+        "evidencePath": "evidence/song-48-check1.json",
+        "candidate": null,
+        "residualSeconds": null
+      }
+    ],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  },
+  "rowKey": "雨爱",
+  "edition": "",
+  "remark": "直链页面 meta description 明示日期 2026.8.15 晚，标题直接给出真实歌曲名《雨爱》，可作为当日 song-cut-first 增量收录。"
+}

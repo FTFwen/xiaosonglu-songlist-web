@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 1,
+  "key": "song-162",
+  "songId": 162,
+  "songName": "花头台",
+  "displaySongName": "花头台",
+  "artist": "洛天依",
+  "language": "中文",
+  "derivative": false,
+  "audio": {
+    "url": "assets/audio/song_161.m4a?v=7dd49027df86",
+    "sha256": "7dd49027df86ba8d5fcdc06d2603b2e46c8698a655f9e21b23b659fdb19d0efb"
+  },
+  "retrievedAt": "2026-11-16T03:58:44.253Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E8%8A%B1%E5%A4%B4%E5%8F%B0&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 31421299,
+        "name": "花头台",
+        "artists": [
+          "洛天依"
+        ],
+        "album": "花洛兮Ⅱ",
+        "durationMs": 190000,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 465043450,
+        "name": "花头台",
+        "artists": [
+          "东京塔子",
+          "泠鸢yousa"
+        ],
+        "album": "花头台 with 泠鸢yousa",
+        "durationMs": 175551,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 423849352,
+        "name": "花头台",
+        "artists": [
+          "乌拉喵",
+          "海妖"
+        ],
+        "album": "花头台",
+        "durationMs": 177920,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3418897966,
+        "name": "花头台",
+        "artists": [
+          "心然"
+        ],
+        "album": "花间集",
+        "durationMs": 176559,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 434070542,
+        "name": "花头台",
+        "artists": [
+          "真栗"
+        ],
+        "album": "真栗翻唱集",
+        "durationMs": 174328,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1423067813,
+        "name": "花头台",
+        "artists": [
+          "饭团团团团桑",
+          "小五沉沉沉"
+        ],
+        "album": "有爱的合唱集",
+        "durationMs": 176274,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 445464763,
+        "name": "花头台",
+        "artists": [
+          "CZT_吃枕头"
+        ],
+        "album": "满意值2/3的作品集",
+        "durationMs": 178736,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1343846065,
+        "name": "花头台",
+        "artists": [
+          "噗嗵咚咚"
+        ],
+        "album": "花头台",
+        "durationMs": 178184,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "sourceId": 31421299,
+    "sourcePath": "sources/31421299.json",
+    "sourceUrl": "https://music.163.com/#/song?id=31421299",
+    "selected": {
+      "id": 31421299,
+      "name": "花头台",
+      "artists": [
+        "洛天依"
+      ],
+      "album": "花洛兮Ⅱ",
+      "durationMs": 190000,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 25
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-162-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 195.776,
+    "sourceFirstLine": {
+      "t": 8.66,
+      "text": "点绛抿唇 画浅眉 朱履翠裙袄"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 12.24,
+      "endSeconds": 12.42,
+      "similarity": 0.15384615384615385,
+      "recognizedText": "点",
+      "meanProbability": 0.991,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  },
+  "rowKey": "花头台",
+  "edition": "",
+  "remark": ""
+}

@@ -1,0 +1,57 @@
+{
+  "audioSha256": "288d18a1d4ab5d47e439783fb844b6d3e668b4c18a4cc9f16ddd94976ee3e5d3",
+  "model": "whisper-base",
+  "start": 0,
+  "end": 35,
+  "result": {
+    "text": "我回答吧",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 22.5,
+        "end": 23.9,
+        "text": "我回答吧",
+        "tokens": [
+          50364,
+          1654,
+          8350,
+          28223,
+          6062,
+          50414
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.8363032937049866,
+        "compression_ratio": 0.5714285714285714,
+        "no_speech_prob": 0.014834290370345116,
+        "words": [
+          {
+            "word": "我",
+            "start": 22.5,
+            "end": 23.9,
+            "probability": 0.11292972415685654
+          },
+          {
+            "word": "回",
+            "start": 23.9,
+            "end": 23.9,
+            "probability": 0.5884588360786438
+          },
+          {
+            "word": "答",
+            "start": 23.9,
+            "end": 23.9,
+            "probability": 0.5150083303451538
+          },
+          {
+            "word": "吧",
+            "start": 23.9,
+            "end": 23.9,
+            "probability": 0.9965052604675293
+          }
+        ]
+      }
+    ],
+    "language": "zh"
+  }
+}

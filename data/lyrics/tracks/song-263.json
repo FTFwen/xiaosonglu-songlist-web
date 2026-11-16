@@ -1,0 +1,216 @@
+{
+  "schemaVersion": 1,
+  "key": "song-263",
+  "songId": 263,
+  "songName": "霞光",
+  "rowKey": "霞光",
+  "displaySongName": "霞光",
+  "artist": "曲锦楠",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "桐人合集 P21 标注《霞光 - 曲锦楠》（157s）；另有小冬青 BV1J1aD64EYP 标注同一位置为《暗黑天国》（266s，ALI PROJECT 曲）。两份资料在同一演唱位置给出不同曲名，此处沿用所选 canonical 合集的写法并保留该分歧。",
+  "audio": {
+    "url": "assets/audio/song_262.m4a?v=f1a07b05e27d",
+    "sha256": "f1a07b05e27d020f035120c150ab46bfd191aea55657149f4d933e309ed36a4d"
+  },
+  "retrievedAt": "2026-11-16T04:05:55.796Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E9%9C%9E%E5%85%89&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E9%9C%9E%E5%85%89%20%E6%9B%B2%E9%94%A6%E6%A5%A0&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 2027067479,
+        "name": "霞光",
+        "artists": [
+          "曲锦楠"
+        ],
+        "album": "霞光 (《精灵世纪》动画片片尾曲)",
+        "durationMs": 157911,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 409646753,
+        "name": "霞光",
+        "artists": [
+          "龙神道乐队"
+        ],
+        "album": "自由",
+        "durationMs": 297520,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2678944937,
+        "name": "霞光",
+        "artists": [
+          "兰音Reine"
+        ],
+        "album": "霞光",
+        "durationMs": 156124,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1965022023,
+        "name": "霞光",
+        "artists": [
+          "Akie秋绘"
+        ],
+        "album": "霞光 《精灵世纪》",
+        "durationMs": 157907,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2156783568,
+        "name": "霞光",
+        "artists": [
+          "江嘎组合"
+        ],
+        "album": "霞光",
+        "durationMs": 266488,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 570152489,
+        "name": "霞光",
+        "artists": [
+          "提糯Tino"
+        ],
+        "album": "霞光",
+        "durationMs": 158711,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3439883192,
+        "name": "霞光",
+        "artists": [
+          "杨来Leon"
+        ],
+        "album": "霞光",
+        "durationMs": 267133,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 29719974,
+        "name": "霞光",
+        "artists": [
+          "龙神道乐队"
+        ],
+        "album": "点亮爱",
+        "durationMs": 297520,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 263,
+      "song_name": "霞光",
+      "show_as_song_name": "",
+      "display_song_name": "霞光",
+      "artist": "曲锦楠",
+      "artist_search": "曲锦楠",
+      "feat_artist": "",
+      "remark": "桐人合集 P21 标注《霞光 - 曲锦楠》（157s）；另有小冬青 BV1J1aD64EYP 标注同一位置为《暗黑天国》（266s，ALI PROJECT 曲）。两份资料在同一演唱位置给出不同曲名，此处沿用所选 canonical 合集的写法并保留该分歧。",
+      "tone": "",
+      "language": "中文",
+      "type": "流行",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1UkaS6zEk3/?p=21",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-02",
+      "row_key": "霞光"
+    },
+    "sourceId": 2027067479,
+    "sourcePath": "sources/2027067479.json",
+    "sourceUrl": "https://music.163.com/#/song?id=2027067479",
+    "selected": {
+      "id": 2027067479,
+      "name": "霞光",
+      "artists": [
+        "曲锦楠"
+      ],
+      "album": "霞光 (《精灵世纪》动画片片尾曲)",
+      "durationMs": 157911,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 16
+  },
+  "alignment": {
+    "status": "spotcheck_review_required",
+    "evidencePath": "evidence/song-263-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 156.693,
+    "sourceFirstLine": {
+      "t": 28.96,
+      "text": "月光 把天空照亮"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 31.5,
+      "endSeconds": 36.52,
+      "similarity": 0.8571428571428571,
+      "recognizedText": "月光八天空照亮",
+      "meanProbability": 0.708,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": 2.54,
+    "checks": [
+      {
+        "sourceLine": {
+          "t": 79.51,
+          "text": "月光 把天空照亮"
+        },
+        "evidencePath": "evidence/song-263-check0.json",
+        "candidate": {
+          "audioSeconds": 78.23,
+          "endSeconds": 78.67,
+          "similarity": 0.0,
+          "recognizedText": "没",
+          "meanProbability": 0.553,
+          "tokenPrefixOnly": false
+        },
+        "residualSeconds": -3.82
+      },
+      {
+        "sourceLine": {
+          "t": 119.01,
+          "text": "带着回忆和幻想一起飞翔"
+        },
+        "evidencePath": "evidence/song-263-check1.json",
+        "candidate": {
+          "audioSeconds": 122.75,
+          "endSeconds": 123.99,
+          "similarity": 0.3076923076923077,
+          "recognizedText": "回憶",
+          "meanProbability": 0.672,
+          "tokenPrefixOnly": false
+        },
+        "residualSeconds": 1.2
+      }
+    ],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

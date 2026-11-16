@@ -1,0 +1,190 @@
+{
+  "schemaVersion": 1,
+  "key": "song-121",
+  "songId": 121,
+  "songName": "只对你有感觉",
+  "rowKey": "只对你有感觉",
+  "displaySongName": "只对你有感觉",
+  "artist": "飞轮海 / 田馥甄",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "2026-09-03「也许康复的随便唱唱」21点场；歌切合集【桐人今天睡大觉】【小松绿Viridis】随便唱唱的歌回 歌切合集 2026.09.03 分P1（02:33）。飞轮海与田馥甄对唱经典（电视剧《东方茱丽叶》插曲）。",
+  "audio": {
+    "url": "assets/audio/song_120.m4a?v=485253cfee11",
+    "sha256": "485253cfee11bb93a2e224c589bc06fef1ab3b42f645eacb017bb1eb06f4f18f"
+  },
+  "retrievedAt": "2026-11-16T04:12:58.263Z",
+  "match": {
+    "status": "candidate_review_required",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E5%8F%AA%E5%AF%B9%E4%BD%A0%E6%9C%89%E6%84%9F%E8%A7%89&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E5%8F%AA%E5%AF%B9%E4%BD%A0%E6%9C%89%E6%84%9F%E8%A7%89%20%E9%A3%9E%E8%BD%AE%E6%B5%B7%20%2F%20%E7%94%B0%E9%A6%A5%E7%94%84&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 3355672045,
+        "name": "只对你有感觉",
+        "artists": [
+          "秋秋",
+          "于奕"
+        ],
+        "album": "只对你有感觉",
+        "durationMs": 214434,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 108248,
+        "name": "只对你有感觉",
+        "artists": [
+          "林俊杰"
+        ],
+        "album": "她说 概念自选辑",
+        "durationMs": 266997,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3355615640,
+        "name": "只对你有感觉",
+        "artists": [
+          "秋秋",
+          "于奕"
+        ],
+        "album": "只对你有感觉",
+        "durationMs": 236064,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2631239591,
+        "name": "只对你有感觉",
+        "artists": [
+          "TF家族-左奇函",
+          "TF家族-杨博文"
+        ],
+        "album": "",
+        "durationMs": 238628,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1454732243,
+        "name": "只对你有感觉",
+        "artists": [
+          "徐泽（要不要买菜）"
+        ],
+        "album": "只对你有感觉",
+        "durationMs": 211978,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2146192847,
+        "name": "只对你有感觉",
+        "artists": [
+          "点子",
+          "尤其YoChee",
+          "是悲伤鸭QwQ"
+        ],
+        "album": "只对你有感觉",
+        "durationMs": 249855,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3419488227,
+        "name": "只对你有感觉",
+        "artists": [
+          "小黑"
+        ],
+        "album": "只对你有感觉",
+        "durationMs": 55072,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3356023287,
+        "name": "只对你有感觉",
+        "artists": [
+          "温栗",
+          "秋秋"
+        ],
+        "album": "只对你有感觉",
+        "durationMs": 224880,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 121,
+      "song_name": "只对你有感觉",
+      "show_as_song_name": "",
+      "display_song_name": "只对你有感觉",
+      "artist": "飞轮海 / 田馥甄",
+      "artist_search": "只对你有感觉 飞轮海 / 田馥甄",
+      "feat_artist": "",
+      "remark": "2026-09-03「也许康复的随便唱唱」21点场；歌切合集【桐人今天睡大觉】【小松绿Viridis】随便唱唱的歌回 歌切合集 2026.09.03 分P1（02:33）。飞轮海与田馥甄对唱经典（电视剧《东方茱丽叶》插曲）。",
+      "tone": "",
+      "language": "中文",
+      "type": "流行",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=1",
+      "sing_count": 1,
+      "status_labels": "歌回",
+      "last_sing_at": "2026-09-03",
+      "row_key": "只对你有感觉"
+    },
+    "sourceId": 3355672045,
+    "sourcePath": "sources/3355672045.json",
+    "sourceUrl": "https://music.163.com/#/song?id=3355672045",
+    "selected": {
+      "id": 3355672045,
+      "name": "只对你有感觉",
+      "artists": [
+        "秋秋",
+        "于奕"
+      ],
+      "album": "只对你有感觉",
+      "durationMs": 214434,
+      "titleScore": 1,
+      "artistMatch": false,
+      "score": 0.8
+    },
+    "timedLineCount": 36
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-121-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 147.669,
+    "sourceFirstLine": {
+      "t": 2.225,
+      "text": "无解的眼神 心像海底针"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 24.86,
+      "endSeconds": 25.94,
+      "similarity": 0.18181818181818182,
+      "recognizedText": "的",
+      "meanProbability": 0.27,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

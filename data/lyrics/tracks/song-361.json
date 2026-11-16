@@ -1,0 +1,187 @@
+{
+  "schemaVersion": 1,
+  "key": "song-361",
+  "songId": 361,
+  "songName": "东京不太热",
+  "rowKey": "东京不太热",
+  "displaySongName": "东京不太热",
+  "artist": "洛天依Official",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "",
+  "audio": {
+    "url": "assets/audio/song_360.m4a?v=812c8f8f1121",
+    "sha256": "812c8f8f1121d6ecf2f0c2f4807b6606427012306b0c0c620491702282368a5a"
+  },
+  "retrievedAt": "2026-11-16T04:07:38.227Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E4%B8%9C%E4%BA%AC%E4%B8%8D%E5%A4%AA%E7%83%AD&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E4%B8%9C%E4%BA%AC%E4%B8%8D%E5%A4%AA%E7%83%AD%20%E6%B4%9B%E5%A4%A9%E4%BE%9DOfficial&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1478965386,
+        "name": "东京不太热",
+        "artists": [
+          "Z新豪",
+          "洛天依Official"
+        ],
+        "album": "Vocaloid作品集",
+        "durationMs": 245015,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2657106104,
+        "name": "东京不太热",
+        "artists": [
+          "鬼面P",
+          "洛天依"
+        ],
+        "album": "东京不太热",
+        "durationMs": 229175,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2683248738,
+        "name": "东京不太热",
+        "artists": [
+          "洛天依"
+        ],
+        "album": "秋刀鱼",
+        "durationMs": 83591,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2108809531,
+        "name": "东京不太热",
+        "artists": [
+          "洛天依",
+          "無藏"
+        ],
+        "album": "ACE翻调",
+        "durationMs": 228284,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 34723470,
+        "name": "东京不太热",
+        "artists": [
+          "封茗囧菌"
+        ],
+        "album": "东京不太热",
+        "durationMs": 224992,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2743585406,
+        "name": "东京不太热",
+        "artists": [
+          "迷绪"
+        ],
+        "album": "DJ会哭的泉",
+        "durationMs": 177634,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 31789295,
+        "name": "东京不太热",
+        "artists": [
+          "哦漏"
+        ],
+        "album": "热门华语262",
+        "durationMs": 246000,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 32944162,
+        "name": "东京不太热",
+        "artists": [
+          "火火月木"
+        ],
+        "album": "热门华语266",
+        "durationMs": 229250,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 361,
+      "song_name": "东京不太热",
+      "show_as_song_name": "",
+      "display_song_name": "东京不太热",
+      "artist": "洛天依Official",
+      "artist_search": "洛天依Official",
+      "feat_artist": "",
+      "remark": "",
+      "tone": "",
+      "language": "中文",
+      "type": "中V",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1nRxJ6tEPC/?p=10",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-31",
+      "row_key": "东京不太热"
+    },
+    "sourceId": 1478965386,
+    "sourcePath": "sources/1478965386.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1478965386",
+    "selected": {
+      "id": 1478965386,
+      "name": "东京不太热",
+      "artists": [
+        "Z新豪",
+        "洛天依Official"
+      ],
+      "album": "Vocaloid作品集",
+      "durationMs": 245015,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 65
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-361-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 232.32,
+    "sourceFirstLine": {
+      "t": 20.61,
+      "text": "硬盘里的女神下了又删"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 30.14,
+      "endSeconds": 30.36,
+      "similarity": 0.18181818181818182,
+      "recognizedText": "了",
+      "meanProbability": 0.957,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

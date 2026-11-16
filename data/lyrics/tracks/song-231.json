@@ -1,0 +1,217 @@
+{
+  "schemaVersion": 1,
+  "key": "song-231",
+  "songId": 231,
+  "songName": "大鱼",
+  "rowKey": "大鱼",
+  "displaySongName": "大鱼",
+  "artist": "周深",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "",
+  "audio": {
+    "url": "assets/audio/song_230.m4a?v=2268d5c57291",
+    "sha256": "2268d5c572915693ac5c2294b995b15c8229e7744e377d937c9c17ad52c808be"
+  },
+  "retrievedAt": "2026-11-16T04:05:23.912Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E5%A4%A7%E9%B1%BC&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E5%A4%A7%E9%B1%BC%20%E5%91%A8%E6%B7%B1&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 3361256119,
+        "name": "大鱼",
+        "artists": [
+          "周深"
+        ],
+        "album": "",
+        "durationMs": 59953,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 3445805626,
+        "name": "大鱼",
+        "artists": [
+          "为霜u",
+          "周深-"
+        ],
+        "album": "半壶纱",
+        "durationMs": 38720,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 3422975811,
+        "name": "大鱼",
+        "artists": [
+          "DJ大大怪"
+        ],
+        "album": "大鱼",
+        "durationMs": 268852,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 516823132,
+        "name": "大鱼 (唱片版)",
+        "artists": [
+          "周深"
+        ],
+        "album": "深的深",
+        "durationMs": 317597,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      },
+      {
+        "id": 416385506,
+        "name": "大鱼 （Cover 周深）",
+        "artists": [
+          "双笙（陈元汐）"
+        ],
+        "album": "大鱼（翻唱）",
+        "durationMs": 319348,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 1935363210,
+        "name": "大鱼-原唱:周深",
+        "artists": [
+          "Peng丶"
+        ],
+        "album": "林深时见鹿 海深时见鲸",
+        "durationMs": 126595,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 1468259255,
+        "name": "大鱼（纯音乐版）",
+        "artists": [
+          "笑白Ermy"
+        ],
+        "album": "大鱼海棠",
+        "durationMs": 314067,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 1893321422,
+        "name": "大鱼 (钢琴)",
+        "artists": [
+          "轻音乐馆"
+        ],
+        "album": "背景音乐纯音乐/钢琴曲纯音乐经典/放松心情的音乐",
+        "durationMs": 140000,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      }
+    ],
+    "workQuery": {
+      "song_id": 231,
+      "song_name": "大鱼",
+      "show_as_song_name": "",
+      "display_song_name": "大鱼",
+      "artist": "周深",
+      "artist_search": "周深",
+      "feat_artist": "",
+      "remark": "",
+      "tone": "",
+      "language": "中文",
+      "type": "影视、流行",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1g1ah6REpb/?p=4",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-09-27",
+      "row_key": "大鱼"
+    },
+    "sourceId": 3361256119,
+    "sourcePath": "sources/3361256119.json",
+    "sourceUrl": "https://music.163.com/#/song?id=3361256119",
+    "selected": {
+      "id": 3361256119,
+      "name": "大鱼",
+      "artists": [
+        "周深"
+      ],
+      "album": "",
+      "durationMs": 59953,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 24
+  },
+  "alignment": {
+    "status": "spotcheck_review_required",
+    "evidencePath": "evidence/song-231-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 300.257,
+    "sourceFirstLine": {
+      "t": 4.26,
+      "text": "海浪无声将夜幕深深淹没"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 29.2,
+      "endSeconds": 32.42,
+      "similarity": 0.7777777777777778,
+      "recognizedText": "海浪无声将夜幕",
+      "meanProbability": 0.531,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": 24.94,
+    "checks": [
+      {
+        "sourceLine": {
+          "t": 59.4,
+          "text": "倒流回最初的相遇"
+        },
+        "evidencePath": "evidence/song-231-check0.json",
+        "candidate": {
+          "audioSeconds": 79.86,
+          "endSeconds": 80.48,
+          "similarity": 0.2222222222222222,
+          "recognizedText": "的",
+          "meanProbability": 0.961,
+          "tokenPrefixOnly": false
+        },
+        "residualSeconds": -4.48
+      },
+      {
+        "sourceLine": {
+          "t": 43.29,
+          "text": "海浪无声将夜幕深深淹没"
+        },
+        "evidencePath": "evidence/song-231-check1.json",
+        "candidate": {
+          "audioSeconds": 80.47,
+          "endSeconds": 80.87,
+          "similarity": 0.16666666666666666,
+          "recognizedText": "声",
+          "meanProbability": 0.172,
+          "tokenPrefixOnly": false
+        },
+        "residualSeconds": 12.24
+      }
+    ],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

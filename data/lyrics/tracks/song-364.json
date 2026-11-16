@@ -1,0 +1,187 @@
+{
+  "schemaVersion": 1,
+  "key": "song-364",
+  "songId": 364,
+  "songName": "敢归云间宿",
+  "rowKey": "敢归云间宿",
+  "displaySongName": "敢归云间宿",
+  "artist": "茶了了",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "",
+  "audio": {
+    "url": "assets/audio/song_363.m4a?v=d0d580f62d6d",
+    "sha256": "d0d580f62d6d6a2531ae27e266620223dd951751096bafafccd05aefe2d4ffc4"
+  },
+  "retrievedAt": "2026-11-16T04:07:40.939Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E6%95%A2%E5%BD%92%E4%BA%91%E9%97%B4%E5%AE%BF&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E6%95%A2%E5%BD%92%E4%BA%91%E9%97%B4%E5%AE%BF%20%E8%8C%B6%E4%BA%86%E4%BA%86&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 2024651780,
+        "name": "敢归云间宿",
+        "artists": [
+          "茶了了"
+        ],
+        "album": "敢归云间宿",
+        "durationMs": 255000,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2015414467,
+        "name": "敢归云间宿",
+        "artists": [
+          "三无Marblue"
+        ],
+        "album": "敢归云间宿",
+        "durationMs": 254999,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2015634559,
+        "name": "敢归云间宿",
+        "artists": [
+          "绛曲"
+        ],
+        "album": "【明日方舟新春会/令原创曲】敢归云间宿",
+        "durationMs": 255000,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2691510486,
+        "name": "敢归云间宿",
+        "artists": [
+          "伊水_Uryan",
+          "万敌",
+          "白厄"
+        ],
+        "album": "DEAR",
+        "durationMs": 256634,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2029354410,
+        "name": "敢归云间宿",
+        "artists": [
+          "离离离盏"
+        ],
+        "album": "敢归云间宿（男声翻唱）",
+        "durationMs": 255000,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2098132970,
+        "name": "敢归云间宿",
+        "artists": [
+          "琲鸢Sayaka",
+          "星尘infinity",
+          "雩风Haruka"
+        ],
+        "album": "令同人曲",
+        "durationMs": 256348,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2026393826,
+        "name": "敢归云间宿",
+        "artists": [
+          "应钟Clochette"
+        ],
+        "album": "敢归云间宿",
+        "durationMs": 255000,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2023725359,
+        "name": "敢归云间宿",
+        "artists": [
+          "无鲤Rance"
+        ],
+        "album": "敢归云间宿",
+        "durationMs": 254696,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 364,
+      "song_name": "敢归云间宿",
+      "show_as_song_name": "",
+      "display_song_name": "敢归云间宿",
+      "artist": "茶了了",
+      "artist_search": "茶了了",
+      "feat_artist": "",
+      "remark": "",
+      "tone": "",
+      "language": "中文",
+      "type": "国风、古风",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1nRxJ6tEPC/?p=14",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-31",
+      "row_key": "敢归云间宿"
+    },
+    "sourceId": 2024651780,
+    "sourcePath": "sources/2024651780.json",
+    "sourceUrl": "https://music.163.com/#/song?id=2024651780",
+    "selected": {
+      "id": 2024651780,
+      "name": "敢归云间宿",
+      "artists": [
+        "茶了了"
+      ],
+      "album": "敢归云间宿",
+      "durationMs": 255000,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 71
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-364-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 258.261,
+    "sourceFirstLine": {
+      "t": 7.912,
+      "text": "-"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 24.68,
+      "endSeconds": 27.58,
+      "similarity": 0.6,
+      "recognizedText": "我去找你去找你",
+      "meanProbability": 0.491,
+      "tokenPrefixOnly": true
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

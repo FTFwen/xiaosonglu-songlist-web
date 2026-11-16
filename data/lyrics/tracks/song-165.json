@@ -1,0 +1,187 @@
+{
+  "schemaVersion": 1,
+  "key": "song-165",
+  "songId": 165,
+  "songName": "凉雨",
+  "rowKey": "凉雨",
+  "displaySongName": "凉雨",
+  "artist": "COP、洛天依Official",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "",
+  "audio": {
+    "url": "assets/audio/song_164.m4a?v=1ab5f8d53916",
+    "sha256": "1ab5f8d539169e041d651d68d978eb0806a6b8d0bea7fa5cd14047f115dad524"
+  },
+  "retrievedAt": "2026-11-16T04:04:07.850Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E5%87%89%E9%9B%A8&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E5%87%89%E9%9B%A8%20COP&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 477137425,
+        "name": "凉雨",
+        "artists": [
+          "COP",
+          "洛天依Official"
+        ],
+        "album": "凉雨",
+        "durationMs": 215173,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1467201725,
+        "name": "凉雨",
+        "artists": [
+          "天天梦游",
+          "诗岸"
+        ],
+        "album": "各种翻唱合集",
+        "durationMs": 215875,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1971383175,
+        "name": "凉雨",
+        "artists": [
+          "狐狸座"
+        ],
+        "album": "各种翻唱",
+        "durationMs": 213278,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1383153005,
+        "name": "凉雨",
+        "artists": [
+          "花隐w"
+        ],
+        "album": "花隐2019",
+        "durationMs": 213237,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 428387656,
+        "name": "凉雨",
+        "artists": [
+          "凡以三"
+        ],
+        "album": "說好了要寫一百首溫柔的吉他曲",
+        "durationMs": 171912,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1454736169,
+        "name": "凉雨",
+        "artists": [
+          "摸之鱼"
+        ],
+        "album": "摸之鱼",
+        "durationMs": 213665,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1308402542,
+        "name": "凉雨",
+        "artists": [
+          "紫苏",
+          "虞云歌"
+        ],
+        "album": "流年成诗【零碎翻唱合辑】",
+        "durationMs": 213263,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2088779591,
+        "name": "凉雨",
+        "artists": [
+          "‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎"
+        ],
+        "album": "凉雨念秋",
+        "durationMs": 246672,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 165,
+      "song_name": "凉雨",
+      "show_as_song_name": "",
+      "display_song_name": "凉雨",
+      "artist": "COP、洛天依Official",
+      "artist_search": "COP、洛天依Official",
+      "feat_artist": "",
+      "remark": "",
+      "tone": "",
+      "language": "中文",
+      "type": "中V",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=27",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-09-08",
+      "row_key": "凉雨"
+    },
+    "sourceId": 477137425,
+    "sourcePath": "sources/477137425.json",
+    "sourceUrl": "https://music.163.com/#/song?id=477137425",
+    "selected": {
+      "id": 477137425,
+      "name": "凉雨",
+      "artists": [
+        "COP",
+        "洛天依Official"
+      ],
+      "album": "凉雨",
+      "durationMs": 215173,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 53
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-165-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 215.876,
+    "sourceFirstLine": {
+      "t": 0,
+      "text": "风透过人潮渐渐停歇的下雨天"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 1.12,
+      "endSeconds": 4.0,
+      "similarity": 0.3076923076923077,
+      "recognizedText": "《風頭過遠》 朝鮮天天天的夏日天",
+      "meanProbability": 0.464,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

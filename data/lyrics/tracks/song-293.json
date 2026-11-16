@@ -1,0 +1,189 @@
+{
+  "schemaVersion": 1,
+  "key": "song-293",
+  "songId": 293,
+  "songName": "梦境与魔女",
+  "rowKey": "梦境与魔女",
+  "displaySongName": "梦境与魔女",
+  "artist": "时之歌Project（泛音堂）/ 喵☆酱",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "两份合集（BV1TApG6uEPX 分P03、BV1Qrpj6ZELm 分P03）同曲同序；弹幕 00:34:40「梦境与魔女」直接点名。据百度百科：原唱弥幽·格雷文（Vocal：喵☆酱），出自时之歌Project 专辑，中文流行。标注沿用本站 炼金少女日志「时之歌Project（泛音堂）」的写法。",
+  "audio": {
+    "url": "assets/audio/song_292.m4a?v=7991c67cd8ec",
+    "sha256": "7991c67cd8ecc440b021b05f82c655595496d206a6f2d91bfbe646d0b028b590"
+  },
+  "retrievedAt": "2026-11-16T04:06:24.811Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E6%A2%A6%E5%A2%83%E4%B8%8E%E9%AD%94%E5%A5%B3&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E6%A2%A6%E5%A2%83%E4%B8%8E%E9%AD%94%E5%A5%B3%20%E6%97%B6%E4%B9%8B%E6%AD%8CProject&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 452093215,
+        "name": "梦境与魔女",
+        "artists": [
+          "汤汤",
+          "喵☆酱"
+        ],
+        "album": "时之歌Project",
+        "durationMs": 248058,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 455106628,
+        "name": "梦境与魔女",
+        "artists": [
+          "URUUT",
+          "洛天依Official"
+        ],
+        "album": "梦境与魔女",
+        "durationMs": 248190,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2607812647,
+        "name": "梦境与魔女",
+        "artists": [
+          "吕慧桢"
+        ],
+        "album": "恐怖歌曲",
+        "durationMs": 248346,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1321450298,
+        "name": "梦境与魔女",
+        "artists": [
+          "桃子在发芽",
+          "戎六",
+          "仙人不吃土",
+          "安妮"
+        ],
+        "album": "梦境与魔女",
+        "durationMs": 247245,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1810578960,
+        "name": "梦境与魔女",
+        "artists": [
+          "轩辕彼岸咕咕咕"
+        ],
+        "album": "【明日方舟】梦境与魔女",
+        "durationMs": 248194,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2139060049,
+        "name": "梦境与魔女",
+        "artists": [
+          "潋妤"
+        ],
+        "album": "梦境与魔女",
+        "durationMs": 256000,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1419248358,
+        "name": "梦境与魔女",
+        "artists": [
+          "棠华"
+        ],
+        "album": "梦境与魔女",
+        "durationMs": 249085,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3452059715,
+        "name": "梦境与魔女",
+        "artists": [
+          "Anan"
+        ],
+        "album": "anan翻唱合集",
+        "durationMs": 252923,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 293,
+      "song_name": "梦境与魔女",
+      "show_as_song_name": "",
+      "display_song_name": "梦境与魔女",
+      "artist": "时之歌Project（泛音堂）/ 喵☆酱",
+      "artist_search": "时之歌Project（泛音堂）/ 喵☆酱",
+      "feat_artist": "",
+      "remark": "两份合集（BV1TApG6uEPX 分P03、BV1Qrpj6ZELm 分P03）同曲同序；弹幕 00:34:40「梦境与魔女」直接点名。据百度百科：原唱弥幽·格雷文（Vocal：喵☆酱），出自时之歌Project 专辑，中文流行。标注沿用本站 炼金少女日志「时之歌Project（泛音堂）」的写法。",
+      "tone": "",
+      "language": "中文",
+      "type": "时之歌Project、流行",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1TApG6uEPX/?p=3",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-10",
+      "row_key": "梦境与魔女"
+    },
+    "sourceId": 452093215,
+    "sourcePath": "sources/452093215.json",
+    "sourceUrl": "https://music.163.com/#/song?id=452093215",
+    "selected": {
+      "id": 452093215,
+      "name": "梦境与魔女",
+      "artists": [
+        "汤汤",
+        "喵☆酱"
+      ],
+      "album": "时之歌Project",
+      "durationMs": 248058,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 73
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-293-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 195.563,
+    "sourceFirstLine": {
+      "t": 1.51,
+      "text": "「从前，有一个失去了记忆的小女孩」"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 30.0,
+      "endSeconds": 30.32,
+      "similarity": 0.0,
+      "recognizedText": "只",
+      "meanProbability": 0.031,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

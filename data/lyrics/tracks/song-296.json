@@ -1,0 +1,183 @@
+{
+  "schemaVersion": 1,
+  "key": "song-296",
+  "songId": 296,
+  "songName": "走马",
+  "rowKey": "走马",
+  "displaySongName": "走马",
+  "artist": "陈粒",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "两份合集（BV1TApG6uEPX 分P09、BV1Qrpj6ZELm 分P09）同曲同序；弹幕 00:51:43「小半都唱了，什么时候唱走马[哇]」、00:57:42「走马唱过」、00:57:57「走马是对的」直接点名。类型标签沿用本站陈粒曲目的既有组合。",
+  "audio": {
+    "url": "assets/audio/song_295.m4a?v=1cc2a35f0be0",
+    "sha256": "1cc2a35f0be04c21374845d81279defe3dbff03e2395854ff05bde31a12f1848"
+  },
+  "retrievedAt": "2026-11-16T04:06:30.842Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E8%B5%B0%E9%A9%AC&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E8%B5%B0%E9%A9%AC%20%E9%99%88%E7%B2%92&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 30431367,
+        "name": "走马",
+        "artists": [
+          "陈粒"
+        ],
+        "album": "如也",
+        "durationMs": 235555,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2749430417,
+        "name": "走马",
+        "artists": [
+          "陈粒"
+        ],
+        "album": "十年自选",
+        "durationMs": 281255,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 29431068,
+        "name": "走马",
+        "artists": [
+          "陈粒"
+        ],
+        "album": "未收录的单曲",
+        "durationMs": 236693,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 29414037,
+        "name": "走马",
+        "artists": [
+          "陈粒"
+        ],
+        "album": "热门华语241",
+        "durationMs": 236000,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 404459284,
+        "name": "走马",
+        "artists": [
+          "奈热乐队"
+        ],
+        "album": "Nair",
+        "durationMs": 183332,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3422642516,
+        "name": "走马",
+        "artists": [
+          "小雪"
+        ],
+        "album": "走马",
+        "durationMs": 126400,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2105152234,
+        "name": "走马",
+        "artists": [
+          "刘亦宁"
+        ],
+        "album": "翻唱合集",
+        "durationMs": 255601,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1318505916,
+        "name": "走马",
+        "artists": [
+          "Babystop_山竹"
+        ],
+        "album": "走马",
+        "durationMs": 210392,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 296,
+      "song_name": "走马",
+      "show_as_song_name": "",
+      "display_song_name": "走马",
+      "artist": "陈粒",
+      "artist_search": "陈粒",
+      "feat_artist": "",
+      "remark": "两份合集（BV1TApG6uEPX 分P09、BV1Qrpj6ZELm 分P09）同曲同序；弹幕 00:51:43「小半都唱了，什么时候唱走马[哇]」、00:57:42「走马唱过」、00:57:57「走马是对的」直接点名。类型标签沿用本站陈粒曲目的既有组合。",
+      "tone": "",
+      "language": "中文",
+      "type": "民谣、流行",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1TApG6uEPX/?p=9",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-10",
+      "row_key": "走马"
+    },
+    "sourceId": 30431367,
+    "sourcePath": "sources/30431367.json",
+    "sourceUrl": "https://music.163.com/#/song?id=30431367",
+    "selected": {
+      "id": 30431367,
+      "name": "走马",
+      "artists": [
+        "陈粒"
+      ],
+      "album": "如也",
+      "durationMs": 235555,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 68
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-296-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 237.547,
+    "sourceFirstLine": {
+      "t": 13.725999999999999,
+      "text": "窗外雨都停了"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 24.66,
+      "endSeconds": 25.8,
+      "similarity": 0.0,
+      "recognizedText": "作",
+      "meanProbability": 0.007,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

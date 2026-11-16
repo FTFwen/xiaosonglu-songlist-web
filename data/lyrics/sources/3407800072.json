@@ -1,0 +1,24 @@
+{
+  "platform": "netease",
+  "id": 3407800072,
+  "url": "https://music.163.com/#/song?id=3407800072",
+  "apiUrl": "https://music.163.com/api/song/lyric?id=3407800072&lv=1&kv=1&tv=-1",
+  "retrievedAt": "2026-11-16T04:04:17.561Z",
+  "track": {
+    "id": 3407800072,
+    "name": "悬捱",
+    "artists": [
+      "星尘"
+    ],
+    "album": "璃物语",
+    "durationMs": 271233,
+    "titleScore": 1,
+    "artistMatch": true,
+    "score": 1
+  },
+  "lrc": "",
+  "translationLrc": "",
+  "romanizationLrc": "",
+  "instrumental": false,
+  "lines": []
+}

@@ -1,0 +1,191 @@
+{
+  "schemaVersion": 1,
+  "key": "song-219",
+  "songId": 219,
+  "songName": "独りんぼエンヴィー",
+  "rowKey": "独りんぼエンヴィー",
+  "displaySongName": "独りんぼエンヴィー",
+  "artist": "koyori / 初音ミク",
+  "language": "日文",
+  "derivative": false,
+  "edition": "",
+  "remark": "UP 桐人今天睡大觉《2026.09.23练歌歌切合集》P10",
+  "audio": {
+    "url": "assets/audio/song_218.m4a?v=65f06525d662",
+    "sha256": "65f06525d662d7ab7c12bc0ef23ee96ab4973a8fc68071f6e51e683dd4931004"
+  },
+  "retrievedAt": "2026-11-16T04:05:03.714Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E7%8B%AC%E3%82%8A%E3%82%93%E3%81%BC%E3%82%A8%E3%83%B3%E3%83%B4%E3%82%A3%E3%83%BC&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E7%8B%AC%E3%82%8A%E3%82%93%E3%81%BC%E3%82%A8%E3%83%B3%E3%83%B4%E3%82%A3%E3%83%BC%20koyori%20%2F%20%E5%88%9D%E9%9F%B3%E3%83%9F%E3%82%AF&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 27515069,
+        "name": "独りんぼエンヴィー",
+        "artists": [
+          "koyori",
+          "初音ミク"
+        ],
+        "album": "World on Color",
+        "durationMs": 204506,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 26213897,
+        "name": "独りんぼエンヴィー",
+        "artists": [
+          "灯油",
+          "koyori"
+        ],
+        "album": "トーキョープレジャーグラウンド",
+        "durationMs": 204300,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 416552648,
+        "name": "独りんぼエンヴィー",
+        "artists": [
+          "koyori",
+          "初音ミク"
+        ],
+        "album": "初音ミク -Project DIVA- X Complete Collection",
+        "durationMs": 202360,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 502455398,
+        "name": "独りんぼエンヴィー",
+        "artists": [
+          "koyori",
+          "初音ミク"
+        ],
+        "album": "Re:Start",
+        "durationMs": 206000,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 478686057,
+        "name": "独りんぼエンヴィー",
+        "artists": [
+          "koyori",
+          "初音ミク"
+        ],
+        "album": "EVERGREEN SONGS 2012",
+        "durationMs": 204506,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1927199092,
+        "name": "独りんぼエンヴィー",
+        "artists": [
+          "koyori",
+          "初音ミク"
+        ],
+        "album": "初音ミク「マジカルミライ 2015」LIVE",
+        "durationMs": 204093,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 566435363,
+        "name": "独りんぼエンヴィー",
+        "artists": [
+          "初音ミク",
+          "koyori"
+        ],
+        "album": "初音ミク「マジカルミライ 2016」LIVE",
+        "durationMs": 204706,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 28564197,
+        "name": "独りんぼエンヴィー",
+        "artists": [
+          "koyori"
+        ],
+        "album": "Youthfull",
+        "durationMs": 202000,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      }
+    ],
+    "workQuery": {
+      "song_id": 219,
+      "song_name": "独りんぼエンヴィー",
+      "show_as_song_name": "",
+      "display_song_name": "独りんぼエンヴィー",
+      "artist": "koyori / 初音ミク",
+      "artist_search": "koyori 独りんぼエンヴィー 初音ミク",
+      "feat_artist": "",
+      "remark": "UP 桐人今天睡大觉《2026.09.23练歌歌切合集》P10",
+      "tone": "",
+      "language": "日文",
+      "type": "Vocaloid、J-Pop",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1ouhW6GEoD/?p=10",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-09-23",
+      "row_key": "独りんぼエンヴィー"
+    },
+    "sourceId": 27515069,
+    "sourcePath": "sources/27515069.json",
+    "sourceUrl": "https://music.163.com/#/song?id=27515069",
+    "selected": {
+      "id": 27515069,
+      "name": "独りんぼエンヴィー",
+      "artists": [
+        "koyori",
+        "初音ミク"
+      ],
+      "album": "World on Color",
+      "durationMs": 204506,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 33
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-219-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 203.871,
+    "sourceFirstLine": {
+      "t": 21.75,
+      "text": "悪戯(いたずら)は　知らん顔で"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 25.14,
+      "endSeconds": 27.98,
+      "similarity": 0.5263157894736842,
+      "recognizedText": "いた空は白顔で",
+      "meanProbability": 0.623,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "ja",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

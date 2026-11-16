@@ -1,0 +1,163 @@
+{
+  "schemaVersion": 1,
+  "key": "song-6",
+  "songId": 6,
+  "songName": "プロポーズ",
+  "displaySongName": "プロポーズ",
+  "artist": "なとり",
+  "language": "日文",
+  "derivative": false,
+  "audio": {
+    "url": "assets/audio/song_87.m4a?v=1f425c4cc7db",
+    "sha256": "1f425c4cc7db2effdc6414d234624db1c942f89dbe76deb87f1a96a5d4776024"
+  },
+  "retrievedAt": "2026-11-16T03:57:39.874Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E3%83%97%E3%83%AD%E3%83%9D%E3%83%BC%E3%82%BA&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 2707202386,
+        "name": "プロポーズ",
+        "artists": [
+          "なとり"
+        ],
+        "album": "プロポーズ",
+        "durationMs": 178445,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2071866065,
+        "name": "プロポーズ",
+        "artists": [
+          "内緒のピアス",
+          "可不"
+        ],
+        "album": "",
+        "durationMs": 232106,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2073827439,
+        "name": "プロポーズ",
+        "artists": [
+          "内緒のピアス"
+        ],
+        "album": "プロポーズ",
+        "durationMs": 232106,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2615170973,
+        "name": "プロポーズ",
+        "artists": [
+          "9Lana"
+        ],
+        "album": "プロポーズ",
+        "durationMs": 234451,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3361303550,
+        "name": "プロポーズ",
+        "artists": [
+          "电鸟个灯泡"
+        ],
+        "album": "プロポーズ",
+        "durationMs": 179999,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2707723236,
+        "name": "プロポーズ",
+        "artists": [
+          "ふぉるて"
+        ],
+        "album": "♛歌ってみた（2023）",
+        "durationMs": 233256,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3417300682,
+        "name": "プロポーズ（求婚）",
+        "artists": [
+          "Suika"
+        ],
+        "album": "Propose",
+        "durationMs": 178380,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 3383546676,
+        "name": "プロポーズ (feat. 初音ミク) [Cover]",
+        "artists": [
+          "TakoyakiKZY",
+          "初音ミク"
+        ],
+        "album": "プロポーズ (feat. 初音ミク) [Cover]",
+        "durationMs": 180000,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      }
+    ],
+    "sourceId": 2707202386,
+    "sourcePath": "sources/2707202386.json",
+    "sourceUrl": "https://music.163.com/#/song?id=2707202386",
+    "selected": {
+      "id": 2707202386,
+      "name": "プロポーズ",
+      "artists": [
+        "なとり"
+      ],
+      "album": "プロポーズ",
+      "durationMs": 178445,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 54
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-6-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 234.754,
+    "sourceFirstLine": {
+      "t": 9.873,
+      "text": "そこに愛、集った"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 15.18,
+      "endSeconds": 19.58,
+      "similarity": 0.26666666666666666,
+      "recognizedText": "愛の時間のもっと",
+      "meanProbability": 0.722,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "ja",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  },
+  "rowKey": "プロポーズ",
+  "edition": "",
+  "remark": "直链页面 meta description 明示 2026.08.09；标题直接给出真实歌曲名，可作为当日 song-cut-first 增量收录。"
+}

@@ -1,0 +1,154 @@
+{
+  "audioSha256": "a331da4b8ed1e3b2353e8ef140b929107cfaac0c8dc0223f072edb2cd8eb9998",
+  "model": "whisper-base",
+  "start": 0,
+  "end": 35,
+  "result": {
+    "text": "我觉得这种特别难就是唱然后回应一下哦",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 2.0600000000000005,
+        "end": 7.1,
+        "text": "我觉得这种特别难就是唱",
+        "tokens": [
+          50364,
+          45681,
+          5562,
+          39810,
+          17682,
+          18453,
+          46531,
+          5620,
+          39861,
+          50732
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.7603002997005687,
+        "compression_ratio": 0.8225806451612904,
+        "no_speech_prob": 0.005750168114900589,
+        "words": [
+          {
+            "word": "我觉得",
+            "start": 2.0600000000000005,
+            "end": 3.42,
+            "probability": 0.8723785281181335
+          },
+          {
+            "word": "这",
+            "start": 3.42,
+            "end": 3.56,
+            "probability": 0.810804545879364
+          },
+          {
+            "word": "种",
+            "start": 3.56,
+            "end": 3.68,
+            "probability": 0.9211820363998413
+          },
+          {
+            "word": "特",
+            "start": 3.68,
+            "end": 3.92,
+            "probability": 0.9970061182975769
+          },
+          {
+            "word": "别",
+            "start": 3.92,
+            "end": 4.12,
+            "probability": 0.9941284656524658
+          },
+          {
+            "word": "难",
+            "start": 4.12,
+            "end": 4.92,
+            "probability": 0.7271419763565063
+          },
+          {
+            "word": "就是",
+            "start": 4.92,
+            "end": 5.6,
+            "probability": 0.5597282648086548
+          },
+          {
+            "word": "唱",
+            "start": 5.6,
+            "end": 7.1,
+            "probability": 0.7626023888587952
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "seek": 0,
+        "start": 16.12,
+        "end": 19.8,
+        "text": "然后回应一下",
+        "tokens": [
+          51276,
+          26636,
+          8350,
+          44297,
+          8861,
+          51352
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.7603002997005687,
+        "compression_ratio": 0.8225806451612904,
+        "no_speech_prob": 0.005750168114900589,
+        "words": [
+          {
+            "word": "然后",
+            "start": 16.12,
+            "end": 17.48,
+            "probability": 0.455538809299469
+          },
+          {
+            "word": "回",
+            "start": 17.48,
+            "end": 18.84,
+            "probability": 0.9671228528022766
+          },
+          {
+            "word": "应",
+            "start": 18.84,
+            "end": 19.12,
+            "probability": 0.6630818247795105
+          },
+          {
+            "word": "一下",
+            "start": 19.12,
+            "end": 19.8,
+            "probability": 0.9994788765907288
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "seek": 3000,
+        "start": 30.0,
+        "end": 30.32,
+        "text": "哦",
+        "tokens": [
+          50364,
+          14659,
+          50389
+        ],
+        "temperature": 0,
+        "avg_logprob": -1.5105317831039429,
+        "compression_ratio": 0.2727272727272727,
+        "no_speech_prob": 0.5976334810256958,
+        "words": [
+          {
+            "word": "哦",
+            "start": 30.0,
+            "end": 30.32,
+            "probability": 0.014822343364357948
+          }
+        ]
+      }
+    ],
+    "language": "zh"
+  }
+}

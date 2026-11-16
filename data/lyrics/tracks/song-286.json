@@ -1,0 +1,218 @@
+{
+  "schemaVersion": 1,
+  "key": "song-286",
+  "songId": 286,
+  "songName": "ハッピーエンド",
+  "rowKey": "ハッピーエンド",
+  "displaySongName": "ハッピーエンド",
+  "artist": "back number",
+  "language": "日文",
+  "derivative": false,
+  "edition": "",
+  "remark": "UP 主自用练歌记录（17:05，含多次尝试，非精剪歌切）。标题中的「痛亲王」是 back number 的中文昵称，「happy end」即《ハッピーエンド》；描述含「20260926 学歌来袭！」。",
+  "audio": {
+    "url": "assets/audio/song_288.m4a?v=8723b7c8a37c",
+    "sha256": "8723b7c8a37cfd81f201e2d89cf4372a31b408226ff7bcb8b18a96ab0f71c35f"
+  },
+  "retrievedAt": "2026-11-16T04:06:15.309Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E3%83%8F%E3%83%83%E3%83%94%E3%83%BC%E3%82%A8%E3%83%B3%E3%83%89&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E3%83%8F%E3%83%83%E3%83%94%E3%83%BC%E3%82%A8%E3%83%B3%E3%83%89%20back%20number&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 441116300,
+        "name": "ハッピーエンド",
+        "artists": [
+          "back number"
+        ],
+        "album": "ハッピーエンド",
+        "durationMs": 314280,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2142609559,
+        "name": "ハッピーエンド",
+        "artists": [
+          "back number"
+        ],
+        "album": "春の夜に聴きたくなるJ-POP",
+        "durationMs": 314280,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 28850453,
+        "name": "ハッピーエンド",
+        "artists": [
+          "有澤孝紀"
+        ],
+        "album": "デジモンアドベンチャー 歌と音楽集 Ver.1",
+        "durationMs": 76000,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 22716507,
+        "name": "ハッピーエンド",
+        "artists": [
+          "ハイスイノナサ"
+        ],
+        "album": "街について",
+        "durationMs": 180662,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1356657942,
+        "name": "ハッピーエンド",
+        "artists": [
+          "上白石萌音",
+          "内澤崇仁"
+        ],
+        "album": "ハッピーエンド",
+        "durationMs": 290560,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3443675786,
+        "name": "ハッピーエンド (Live at NISSAN STADIUM, 2026)",
+        "artists": [
+          "back number"
+        ],
+        "album": "back number \"Grateful Yesterdays Tour 2026\" Live at NISSAN STADIUM",
+        "durationMs": 324671,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      },
+      {
+        "id": 441120257,
+        "name": "ハッピーエンド (instrumental)",
+        "artists": [
+          "back number"
+        ],
+        "album": "ハッピーエンド",
+        "durationMs": 314328,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      },
+      {
+        "id": 1897310526,
+        "name": "ハッピーエンドじゃ愛せない (feat. むト)",
+        "artists": [
+          "吐息.",
+          "むﾄ"
+        ],
+        "album": "天使も悪魔もいないから 1",
+        "durationMs": 128196,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      }
+    ],
+    "workQuery": {
+      "song_id": 286,
+      "song_name": "ハッピーエンド",
+      "show_as_song_name": "",
+      "display_song_name": "ハッピーエンド",
+      "artist": "back number",
+      "artist_search": "back number",
+      "feat_artist": "",
+      "remark": "UP 主自用练歌记录（17:05，含多次尝试，非精剪歌切）。标题中的「痛亲王」是 back number 的中文昵称，「happy end」即《ハッピーエンド》；描述含「20260926 学歌来袭！」。",
+      "tone": "",
+      "language": "日文",
+      "type": "J-Pop",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1VahR6ZEay/",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切复核",
+      "last_sing_at": "2026-09-26",
+      "row_key": "ハッピーエンド"
+    },
+    "sourceId": 441116300,
+    "sourcePath": "sources/441116300.json",
+    "sourceUrl": "https://music.163.com/#/song?id=441116300",
+    "selected": {
+      "id": 441116300,
+      "name": "ハッピーエンド",
+      "artists": [
+        "back number"
+      ],
+      "album": "ハッピーエンド",
+      "durationMs": 314280,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 41
+  },
+  "alignment": {
+    "status": "spotcheck_review_required",
+    "evidencePath": "evidence/song-286-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 1024.302,
+    "sourceFirstLine": {
+      "t": 20.58,
+      "text": "さよならが喉の奥につっかえてしまって"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 29.48,
+      "endSeconds": 36.38,
+      "similarity": 0.8,
+      "recognizedText": "さよならがのどの奥に 使えてしまって",
+      "meanProbability": 0.818,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": 8.9,
+    "checks": [
+      {
+        "sourceLine": {
+          "t": 263.89,
+          "text": "なんてね 嘘だよ さよなら"
+        },
+        "evidencePath": "evidence/song-286-check0.json",
+        "candidate": {
+          "audioSeconds": 273.85,
+          "endSeconds": 279.09,
+          "similarity": 0.6666666666666666,
+          "recognizedText": "んがね 嘘だよ 咲くなら",
+          "meanProbability": 0.489,
+          "tokenPrefixOnly": false
+        },
+        "residualSeconds": 1.06
+      },
+      {
+        "sourceLine": {
+          "t": 244.36,
+          "text": "大丈夫 大丈夫"
+        },
+        "evidencePath": "evidence/song-286-check1.json",
+        "candidate": {
+          "audioSeconds": 253.56,
+          "endSeconds": 256.76,
+          "similarity": 0.6666666666666666,
+          "recognizedText": "大丈夫",
+          "meanProbability": 0.965,
+          "tokenPrefixOnly": false
+        },
+        "residualSeconds": 0.3
+      }
+    ],
+    "asrLanguage": "ja",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

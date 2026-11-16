@@ -1,0 +1,183 @@
+{
+  "schemaVersion": 1,
+  "key": "song-276",
+  "songId": 276,
+  "songName": "恋爱告急",
+  "rowKey": "恋爱告急",
+  "displaySongName": "恋爱告急",
+  "artist": "鞠婧祎",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "",
+  "audio": {
+    "url": "assets/audio/song_275.m4a?v=e305d1984d91",
+    "sha256": "e305d1984d912c31c76124a9809109f188773c777701d5c06c51dcd3444da01d"
+  },
+  "retrievedAt": "2026-11-16T04:06:01.791Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E6%81%8B%E7%88%B1%E5%91%8A%E6%80%A5&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E6%81%8B%E7%88%B1%E5%91%8A%E6%80%A5%20%E9%9E%A0%E5%A9%A7%E7%A5%8E&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1401226842,
+        "name": "恋爱告急",
+        "artists": [
+          "鞠婧祎"
+        ],
+        "album": "恋爱告急",
+        "durationMs": 253079,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2077781487,
+        "name": "恋爱告急",
+        "artists": [
+          "鞠婧祎"
+        ],
+        "album": "",
+        "durationMs": 188040,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 3357663364,
+        "name": "恋爱告急",
+        "artists": [
+          "SNH48宋昕冉"
+        ],
+        "album": "恋爱告急",
+        "durationMs": 253335,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1959235131,
+        "name": "恋爱告急",
+        "artists": [
+          "牛佳钰"
+        ],
+        "album": "恋爱告急",
+        "durationMs": 232800,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1995565616,
+        "name": "恋爱告急",
+        "artists": [
+          "JASM!NE"
+        ],
+        "album": "不完整翻唱",
+        "durationMs": 156630,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2711899992,
+        "name": "恋爱告急",
+        "artists": [
+          "沈雲"
+        ],
+        "album": "翻唱",
+        "durationMs": 20529,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1401268476,
+        "name": "恋爱告急 (伴奏)",
+        "artists": [
+          "鞠婧祎"
+        ],
+        "album": "恋爱告急",
+        "durationMs": 253097,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      },
+      {
+        "id": 2672502858,
+        "name": "恋爱告急（Cover鞠婧祎）",
+        "artists": [
+          "王芯爱"
+        ],
+        "album": "恋爱告急",
+        "durationMs": 252702,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      }
+    ],
+    "workQuery": {
+      "song_id": 276,
+      "song_name": "恋爱告急",
+      "show_as_song_name": "",
+      "display_song_name": "恋爱告急",
+      "artist": "鞠婧祎",
+      "artist_search": "鞠婧祎",
+      "feat_artist": "",
+      "remark": "",
+      "tone": "",
+      "language": "中文",
+      "type": "SNH48、偶像",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV18Jpw6mE82/?p=9",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-06",
+      "row_key": "恋爱告急"
+    },
+    "sourceId": 1401226842,
+    "sourcePath": "sources/1401226842.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1401226842",
+    "selected": {
+      "id": 1401226842,
+      "name": "恋爱告急",
+      "artists": [
+        "鞠婧祎"
+      ],
+      "album": "恋爱告急",
+      "durationMs": 253079,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 51
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-276-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 246.784,
+    "sourceFirstLine": {
+      "t": 15.468,
+      "text": "忽然之间的换季"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 34.52,
+      "endSeconds": 34.94,
+      "similarity": 0.25,
+      "recognizedText": "的",
+      "meanProbability": 0.974,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

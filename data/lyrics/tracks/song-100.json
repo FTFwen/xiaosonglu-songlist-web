@@ -1,0 +1,168 @@
+{
+  "schemaVersion": 1,
+  "key": "song-100",
+  "songId": 100,
+  "songName": "难过233秒",
+  "rowKey": "难过233秒",
+  "displaySongName": "难过233秒",
+  "artist": "ChiliChill",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "弹幕 00:13:53「chilichill的难过233秒」点名报歌（演唱中），另 00:09「chilichill的歌」、00:17:09「好多chilichill 真不赖」→ 突击歌回开场连唱 ChiliChill 歌曲，《难过233秒》为被点名确认的一首（ChiliChill 2021-06-30 数字单曲，人声乐队，中文流行）。其余未点名曲目待人工复核。",
+  "audio": {
+    "url": "",
+    "sha256": null
+  },
+  "retrievedAt": "2026-11-16T04:02:58.169Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E9%9A%BE%E8%BF%87233%E7%A7%92&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E9%9A%BE%E8%BF%87233%E7%A7%92%20ChiliChill&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1857014541,
+        "name": "难过233秒",
+        "artists": [
+          "ChiliChill乐团"
+        ],
+        "album": "每到夜里我就很饿",
+        "durationMs": 232171,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1863477523,
+        "name": "难过233秒",
+        "artists": [
+          "Sawako碎花"
+        ],
+        "album": "难过233秒",
+        "durationMs": 233038,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1864974811,
+        "name": "难过233秒",
+        "artists": [
+          "初月"
+        ],
+        "album": "难过233秒",
+        "durationMs": 234097,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1898221190,
+        "name": "难过233秒",
+        "artists": [
+          "见风kaze",
+          "春下れいな"
+        ],
+        "album": "难过233秒",
+        "durationMs": 234838,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1901036800,
+        "name": "难过233秒",
+        "artists": [
+          "青溯"
+        ],
+        "album": "难过233秒",
+        "durationMs": 233605,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1861215294,
+        "name": "难过233秒",
+        "artists": [
+          "Minus",
+          "世羽繊莫",
+          "星尘"
+        ],
+        "album": "难过233秒",
+        "durationMs": 233727,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1909440598,
+        "name": "难过233秒",
+        "artists": [
+          "江壹纯"
+        ],
+        "album": "enen",
+        "durationMs": 233600,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2013944820,
+        "name": "难过233秒",
+        "artists": [
+          "橘小只"
+        ],
+        "album": "小橘の音乐电台",
+        "durationMs": 234626,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 100,
+      "song_name": "难过233秒",
+      "show_as_song_name": "",
+      "display_song_name": "难过233秒",
+      "artist": "ChiliChill",
+      "artist_search": "ChiliChill",
+      "feat_artist": "",
+      "remark": "弹幕 00:13:53「chilichill的难过233秒」点名报歌（演唱中），另 00:09「chilichill的歌」、00:17:09「好多chilichill 真不赖」→ 突击歌回开场连唱 ChiliChill 歌曲，《难过233秒》为被点名确认的一首（ChiliChill 2021-06-30 数字单曲，人声乐队，中文流行）。其余未点名曲目待人工复核。",
+      "tone": "",
+      "language": "中文",
+      "type": "流行",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "",
+      "sing_count": 1,
+      "status_labels": "歌回、自动识别待人工复核",
+      "last_sing_at": "2026-08-29",
+      "row_key": "难过233秒"
+    },
+    "sourceId": 1857014541,
+    "sourcePath": "sources/1857014541.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1857014541",
+    "selected": {
+      "id": 1857014541,
+      "name": "难过233秒",
+      "artists": [
+        "ChiliChill乐团"
+      ],
+      "album": "每到夜里我就很饿",
+      "durationMs": 232171,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 61
+  },
+  "alignment": {
+    "status": "unavailable",
+    "offsetSeconds": null,
+    "humanVerified": false
+  }
+}

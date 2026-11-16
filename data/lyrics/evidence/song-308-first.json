@@ -1,0 +1,1256 @@
+{
+  "audioSha256": "c62f01e6fe220b8e056ebb852c24536ba6a4fb26bb5e5682a4f54bedb46a2511",
+  "model": "whisper-base",
+  "start": 0,
+  "end": 48.09,
+  "result": {
+    "text": "我都想到你你都想到你你都想到你你都想到你你都想到你你都想到你你都想到你你都想到你你都想到你你都想到你你都想到你你都想到你你都想到你你都想到你你都想到你你都想到你你都想到你那人是玉妃 怎料是玉燕尾心中的花口 微是光他却无悔",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 13.240000000000002,
+        "end": 14.04,
+        "text": "我都想到你",
+        "tokens": [
+          50364,
+          1654,
+          7182,
+          7093,
+          4511,
+          2166,
+          50414
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.205292827327077,
+        "compression_ratio": 14.5,
+        "no_speech_prob": 0.6710559129714966,
+        "words": [
+          {
+            "word": "我",
+            "start": 13.240000000000002,
+            "end": 14.04,
+            "probability": 0.013654342852532864
+          },
+          {
+            "word": "都",
+            "start": 14.04,
+            "end": 14.04,
+            "probability": 0.015310307964682579
+          },
+          {
+            "word": "想",
+            "start": 14.04,
+            "end": 14.04,
+            "probability": 0.10288728773593903
+          },
+          {
+            "word": "到",
+            "start": 14.04,
+            "end": 14.04,
+            "probability": 0.08858708292245865
+          },
+          {
+            "word": "你",
+            "start": 14.04,
+            "end": 14.04,
+            "probability": 0.2176455557346344
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "seek": 0,
+        "start": 14.04,
+        "end": 14.04,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.205292827327077,
+        "compression_ratio": 14.5,
+        "no_speech_prob": 0.6710559129714966,
+        "words": []
+      },
+      {
+        "id": 2,
+        "seek": 0,
+        "start": 14.04,
+        "end": 14.04,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.205292827327077,
+        "compression_ratio": 14.5,
+        "no_speech_prob": 0.6710559129714966,
+        "words": []
+      },
+      {
+        "id": 3,
+        "seek": 0,
+        "start": 14.04,
+        "end": 14.04,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.205292827327077,
+        "compression_ratio": 14.5,
+        "no_speech_prob": 0.6710559129714966,
+        "words": []
+      },
+      {
+        "id": 4,
+        "seek": 0,
+        "start": 14.04,
+        "end": 14.04,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.205292827327077,
+        "compression_ratio": 14.5,
+        "no_speech_prob": 0.6710559129714966,
+        "words": []
+      },
+      {
+        "id": 5,
+        "seek": 0,
+        "start": 14.04,
+        "end": 14.04,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.205292827327077,
+        "compression_ratio": 14.5,
+        "no_speech_prob": 0.6710559129714966,
+        "words": []
+      },
+      {
+        "id": 6,
+        "seek": 0,
+        "start": 14.04,
+        "end": 14.04,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.205292827327077,
+        "compression_ratio": 14.5,
+        "no_speech_prob": 0.6710559129714966,
+        "words": []
+      },
+      {
+        "id": 7,
+        "seek": 0,
+        "start": 14.04,
+        "end": 14.04,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.205292827327077,
+        "compression_ratio": 14.5,
+        "no_speech_prob": 0.6710559129714966,
+        "words": []
+      },
+      {
+        "id": 8,
+        "seek": 0,
+        "start": 14.04,
+        "end": 15.86,
+        "text": "你都想到你",
+        "tokens": [
+          50764,
+          2166,
+          7182,
+          7093,
+          4511,
+          2166,
+          50814
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.205292827327077,
+        "compression_ratio": 14.5,
+        "no_speech_prob": 0.6710559129714966,
+        "words": [
+          {
+            "word": "你",
+            "start": 14.04,
+            "end": 14.04,
+            "probability": 0.49293696880340576
+          },
+          {
+            "word": "都",
+            "start": 14.04,
+            "end": 15.86,
+            "probability": 0.8424352407455444
+          },
+          {
+            "word": "想",
+            "start": 15.86,
+            "end": 15.86,
+            "probability": 0.99880051612854
+          },
+          {
+            "word": "到",
+            "start": 15.86,
+            "end": 15.86,
+            "probability": 0.8506592512130737
+          },
+          {
+            "word": "你",
+            "start": 15.86,
+            "end": 15.86,
+            "probability": 0.8940922617912292
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "seek": 0,
+        "start": 17.240000000000002,
+        "end": 18.04,
+        "text": "你都想到你",
+        "tokens": [
+          50814,
+          2166,
+          7182,
+          7093,
+          4511,
+          2166,
+          50864
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.205292827327077,
+        "compression_ratio": 14.5,
+        "no_speech_prob": 0.6710559129714966,
+        "words": [
+          {
+            "word": "你",
+            "start": 17.240000000000002,
+            "end": 18.04,
+            "probability": 0.5566262602806091
+          },
+          {
+            "word": "都",
+            "start": 18.04,
+            "end": 18.04,
+            "probability": 0.8715977668762207
+          },
+          {
+            "word": "想",
+            "start": 18.04,
+            "end": 18.04,
+            "probability": 0.9988698363304138
+          },
+          {
+            "word": "到",
+            "start": 18.04,
+            "end": 18.04,
+            "probability": 0.8587779998779297
+          },
+          {
+            "word": "你",
+            "start": 18.04,
+            "end": 18.04,
+            "probability": 0.9176015853881836
+          }
+        ]
+      },
+      {
+        "id": 10,
+        "seek": 0,
+        "start": 18.04,
+        "end": 18.04,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.205292827327077,
+        "compression_ratio": 14.5,
+        "no_speech_prob": 0.6710559129714966,
+        "words": []
+      },
+      {
+        "id": 11,
+        "seek": 0,
+        "start": 18.04,
+        "end": 18.24,
+        "text": "你都想到你",
+        "tokens": [
+          50914,
+          2166,
+          7182,
+          7093,
+          4511,
+          2166,
+          50964
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.205292827327077,
+        "compression_ratio": 14.5,
+        "no_speech_prob": 0.6710559129714966,
+        "words": [
+          {
+            "word": "你",
+            "start": 18.04,
+            "end": 18.04,
+            "probability": 0.4388558268547058
+          },
+          {
+            "word": "都",
+            "start": 18.04,
+            "end": 18.24,
+            "probability": 0.9008876085281372
+          },
+          {
+            "word": "想",
+            "start": 18.24,
+            "end": 18.24,
+            "probability": 0.9989058971405029
+          },
+          {
+            "word": "到",
+            "start": 18.24,
+            "end": 18.24,
+            "probability": 0.86610347032547
+          },
+          {
+            "word": "你",
+            "start": 18.24,
+            "end": 18.24,
+            "probability": 0.9205389022827148
+          }
+        ]
+      },
+      {
+        "id": 12,
+        "seek": 0,
+        "start": 18.24,
+        "end": 19.24,
+        "text": "你都想到你",
+        "tokens": [
+          50964,
+          2166,
+          7182,
+          7093,
+          4511,
+          2166,
+          51014
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.205292827327077,
+        "compression_ratio": 14.5,
+        "no_speech_prob": 0.6710559129714966,
+        "words": [
+          {
+            "word": "你",
+            "start": 18.24,
+            "end": 19.24,
+            "probability": 0.49057793617248535
+          },
+          {
+            "word": "都",
+            "start": 19.24,
+            "end": 19.24,
+            "probability": 0.9161635637283325
+          },
+          {
+            "word": "想",
+            "start": 19.24,
+            "end": 19.24,
+            "probability": 0.9989498257637024
+          },
+          {
+            "word": "到",
+            "start": 19.24,
+            "end": 19.24,
+            "probability": 0.8709069490432739
+          },
+          {
+            "word": "你",
+            "start": 19.24,
+            "end": 19.24,
+            "probability": 0.9273532032966614
+          }
+        ]
+      },
+      {
+        "id": 13,
+        "seek": 0,
+        "start": 19.24,
+        "end": 19.24,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.205292827327077,
+        "compression_ratio": 14.5,
+        "no_speech_prob": 0.6710559129714966,
+        "words": []
+      },
+      {
+        "id": 14,
+        "seek": 0,
+        "start": 19.24,
+        "end": 19.74,
+        "text": "你都想到你",
+        "tokens": [
+          51064,
+          2166,
+          7182,
+          7093,
+          4511,
+          2166,
+          51114
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.205292827327077,
+        "compression_ratio": 14.5,
+        "no_speech_prob": 0.6710559129714966,
+        "words": [
+          {
+            "word": "你",
+            "start": 19.24,
+            "end": 19.34,
+            "probability": 0.46737566590309143
+          },
+          {
+            "word": "都",
+            "start": 19.34,
+            "end": 19.34,
+            "probability": 0.9279552698135376
+          },
+          {
+            "word": "想",
+            "start": 19.34,
+            "end": 19.34,
+            "probability": 0.9990699887275696
+          },
+          {
+            "word": "到",
+            "start": 19.34,
+            "end": 19.34,
+            "probability": 0.8815839290618896
+          },
+          {
+            "word": "你",
+            "start": 19.34,
+            "end": 19.74,
+            "probability": 0.9389693737030029
+          }
+        ]
+      },
+      {
+        "id": 15,
+        "seek": 0,
+        "start": 19.74,
+        "end": 21.34,
+        "text": "你都想到你",
+        "tokens": [
+          51114,
+          2166,
+          7182,
+          7093,
+          4511,
+          2166,
+          51164
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.205292827327077,
+        "compression_ratio": 14.5,
+        "no_speech_prob": 0.6710559129714966,
+        "words": [
+          {
+            "word": "你",
+            "start": 19.74,
+            "end": 19.92,
+            "probability": 0.36841925978660583
+          },
+          {
+            "word": "都",
+            "start": 19.92,
+            "end": 20.4,
+            "probability": 0.9320497512817383
+          },
+          {
+            "word": "想",
+            "start": 20.4,
+            "end": 20.4,
+            "probability": 0.9990986585617065
+          },
+          {
+            "word": "到",
+            "start": 20.4,
+            "end": 20.4,
+            "probability": 0.8844870924949646
+          },
+          {
+            "word": "你",
+            "start": 20.4,
+            "end": 21.34,
+            "probability": 0.9394723773002625
+          }
+        ]
+      },
+      {
+        "id": 16,
+        "seek": 0,
+        "start": 21.34,
+        "end": 21.46,
+        "text": "你都想到你",
+        "tokens": [
+          51164,
+          2166,
+          7182,
+          7093,
+          4511,
+          2166,
+          51214
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.205292827327077,
+        "compression_ratio": 14.5,
+        "no_speech_prob": 0.6710559129714966,
+        "words": [
+          {
+            "word": "你",
+            "start": 21.34,
+            "end": 21.36,
+            "probability": 0.4464862644672394
+          },
+          {
+            "word": "都",
+            "start": 21.36,
+            "end": 21.46,
+            "probability": 0.9375500082969666
+          },
+          {
+            "word": "想",
+            "start": 21.46,
+            "end": 21.46,
+            "probability": 0.9991432428359985
+          },
+          {
+            "word": "到",
+            "start": 21.46,
+            "end": 21.46,
+            "probability": 0.8887377381324768
+          },
+          {
+            "word": "你",
+            "start": 21.46,
+            "end": 21.46,
+            "probability": 0.9433449506759644
+          }
+        ]
+      },
+      {
+        "id": 17,
+        "seek": 0,
+        "start": 21.46,
+        "end": 21.46,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.205292827327077,
+        "compression_ratio": 14.5,
+        "no_speech_prob": 0.6710559129714966,
+        "words": []
+      },
+      {
+        "id": 18,
+        "seek": 0,
+        "start": 21.46,
+        "end": 21.46,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.205292827327077,
+        "compression_ratio": 14.5,
+        "no_speech_prob": 0.6710559129714966,
+        "words": []
+      },
+      {
+        "id": 19,
+        "seek": 0,
+        "start": 21.46,
+        "end": 21.46,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.205292827327077,
+        "compression_ratio": 14.5,
+        "no_speech_prob": 0.6710559129714966,
+        "words": []
+      },
+      {
+        "id": 20,
+        "seek": 0,
+        "start": 21.46,
+        "end": 21.88,
+        "text": "你都想到你",
+        "tokens": [
+          51364,
+          2166,
+          7182,
+          7093,
+          4511,
+          2166,
+          51414
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.205292827327077,
+        "compression_ratio": 14.5,
+        "no_speech_prob": 0.6710559129714966,
+        "words": [
+          {
+            "word": "你",
+            "start": 21.46,
+            "end": 21.46,
+            "probability": 0.41050997376441956
+          },
+          {
+            "word": "都",
+            "start": 21.46,
+            "end": 21.88,
+            "probability": 0.9491340517997742
+          },
+          {
+            "word": "想",
+            "start": 21.88,
+            "end": 21.88,
+            "probability": 0.9992119073867798
+          },
+          {
+            "word": "到",
+            "start": 21.88,
+            "end": 21.88,
+            "probability": 0.9061750173568726
+          },
+          {
+            "word": "你",
+            "start": 21.88,
+            "end": 21.88,
+            "probability": 0.9509917497634888
+          }
+        ]
+      },
+      {
+        "id": 21,
+        "seek": 0,
+        "start": 21.88,
+        "end": 22.0,
+        "text": "你都想到你",
+        "tokens": [
+          51414,
+          2166,
+          7182,
+          7093,
+          4511,
+          2166,
+          51464
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.205292827327077,
+        "compression_ratio": 14.5,
+        "no_speech_prob": 0.6710559129714966,
+        "words": [
+          {
+            "word": "你",
+            "start": 21.88,
+            "end": 21.88,
+            "probability": 0.38148996233940125
+          },
+          {
+            "word": "都",
+            "start": 21.88,
+            "end": 21.88,
+            "probability": 0.9449676275253296
+          },
+          {
+            "word": "想",
+            "start": 21.88,
+            "end": 21.88,
+            "probability": 0.9991745352745056
+          },
+          {
+            "word": "到",
+            "start": 21.88,
+            "end": 21.88,
+            "probability": 0.9022237062454224
+          },
+          {
+            "word": "你",
+            "start": 21.88,
+            "end": 22.279999999999998,
+            "probability": 0.9529164433479309
+          }
+        ]
+      },
+      {
+        "id": 22,
+        "seek": 0,
+        "start": 23.02,
+        "end": 24.68,
+        "text": "你都想到你",
+        "tokens": [
+          51464,
+          2166,
+          7182,
+          7093,
+          4511,
+          2166,
+          51514
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.205292827327077,
+        "compression_ratio": 14.5,
+        "no_speech_prob": 0.6710559129714966,
+        "words": [
+          {
+            "word": "你",
+            "start": 23.02,
+            "end": 23.2,
+            "probability": 0.29758286476135254
+          },
+          {
+            "word": "都",
+            "start": 23.2,
+            "end": 23.26,
+            "probability": 0.9538490176200867
+          },
+          {
+            "word": "想",
+            "start": 23.26,
+            "end": 23.26,
+            "probability": 0.9992490410804749
+          },
+          {
+            "word": "到",
+            "start": 23.26,
+            "end": 23.26,
+            "probability": 0.9026697278022766
+          },
+          {
+            "word": "你",
+            "start": 23.26,
+            "end": 24.68,
+            "probability": 0.95421302318573
+          }
+        ]
+      },
+      {
+        "id": 23,
+        "seek": 0,
+        "start": 24.68,
+        "end": 26.78,
+        "text": "你都想到你",
+        "tokens": [
+          51514,
+          2166,
+          7182,
+          7093,
+          4511,
+          2166,
+          51564
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.205292827327077,
+        "compression_ratio": 14.5,
+        "no_speech_prob": 0.6710559129714966,
+        "words": [
+          {
+            "word": "你",
+            "start": 24.68,
+            "end": 25.4,
+            "probability": 0.43705111742019653
+          },
+          {
+            "word": "都",
+            "start": 25.4,
+            "end": 25.4,
+            "probability": 0.953453540802002
+          },
+          {
+            "word": "想",
+            "start": 25.4,
+            "end": 25.4,
+            "probability": 0.9993019104003906
+          },
+          {
+            "word": "到",
+            "start": 25.4,
+            "end": 25.4,
+            "probability": 0.911823570728302
+          },
+          {
+            "word": "你",
+            "start": 25.4,
+            "end": 26.78,
+            "probability": 0.9558794498443604
+          }
+        ]
+      },
+      {
+        "id": 24,
+        "seek": 0,
+        "start": 26.78,
+        "end": 26.82,
+        "text": "你都想到你",
+        "tokens": [
+          51564,
+          2166,
+          7182,
+          7093,
+          4511,
+          2166,
+          51614
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.205292827327077,
+        "compression_ratio": 14.5,
+        "no_speech_prob": 0.6710559129714966,
+        "words": [
+          {
+            "word": "你",
+            "start": 26.78,
+            "end": 26.82,
+            "probability": 0.33654889464378357
+          },
+          {
+            "word": "都",
+            "start": 26.82,
+            "end": 26.82,
+            "probability": 0.9596331119537354
+          },
+          {
+            "word": "想",
+            "start": 26.82,
+            "end": 26.82,
+            "probability": 0.999279797077179
+          },
+          {
+            "word": "到",
+            "start": 26.82,
+            "end": 26.82,
+            "probability": 0.913235604763031
+          },
+          {
+            "word": "你",
+            "start": 26.82,
+            "end": 26.82,
+            "probability": 0.958238422870636
+          }
+        ]
+      },
+      {
+        "id": 25,
+        "seek": 0,
+        "start": 26.82,
+        "end": 26.98,
+        "text": "你都想到你",
+        "tokens": [
+          51614,
+          2166,
+          7182,
+          7093,
+          4511,
+          2166,
+          51664
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.205292827327077,
+        "compression_ratio": 14.5,
+        "no_speech_prob": 0.6710559129714966,
+        "words": [
+          {
+            "word": "你",
+            "start": 26.82,
+            "end": 26.82,
+            "probability": 0.3656519949436188
+          },
+          {
+            "word": "都",
+            "start": 26.82,
+            "end": 26.82,
+            "probability": 0.9604328870773315
+          },
+          {
+            "word": "想",
+            "start": 26.82,
+            "end": 26.82,
+            "probability": 0.9992924928665161
+          },
+          {
+            "word": "到",
+            "start": 26.82,
+            "end": 26.82,
+            "probability": 0.9145537614822388
+          },
+          {
+            "word": "你",
+            "start": 26.82,
+            "end": 26.98,
+            "probability": 0.959808349609375
+          }
+        ]
+      },
+      {
+        "id": 26,
+        "seek": 0,
+        "start": 26.98,
+        "end": 29.06,
+        "text": "你都想到你",
+        "tokens": [
+          51664,
+          2166,
+          7182,
+          7093,
+          4511,
+          2166,
+          51714
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.205292827327077,
+        "compression_ratio": 14.5,
+        "no_speech_prob": 0.6710559129714966,
+        "words": [
+          {
+            "word": "你",
+            "start": 26.98,
+            "end": 27.02,
+            "probability": 0.3754931390285492
+          },
+          {
+            "word": "都",
+            "start": 27.02,
+            "end": 27.32,
+            "probability": 0.962068498134613
+          },
+          {
+            "word": "想",
+            "start": 27.32,
+            "end": 27.32,
+            "probability": 0.9992770552635193
+          },
+          {
+            "word": "到",
+            "start": 27.32,
+            "end": 27.32,
+            "probability": 0.9138842225074768
+          },
+          {
+            "word": "你",
+            "start": 27.32,
+            "end": 29.06,
+            "probability": 0.9604439735412598
+          }
+        ]
+      },
+      {
+        "id": 27,
+        "seek": 0,
+        "start": 29.06,
+        "end": 29.5,
+        "text": "你都想到你",
+        "tokens": [
+          51714,
+          2166,
+          7182,
+          7093,
+          4511,
+          2166,
+          51764
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.205292827327077,
+        "compression_ratio": 14.5,
+        "no_speech_prob": 0.6710559129714966,
+        "words": [
+          {
+            "word": "你",
+            "start": 29.06,
+            "end": 29.06,
+            "probability": 0.3590008318424225
+          },
+          {
+            "word": "都",
+            "start": 29.06,
+            "end": 29.06,
+            "probability": 0.9628684520721436
+          },
+          {
+            "word": "想",
+            "start": 29.06,
+            "end": 29.06,
+            "probability": 0.9993425011634827
+          },
+          {
+            "word": "到",
+            "start": 29.06,
+            "end": 29.16,
+            "probability": 0.9221391081809998
+          },
+          {
+            "word": "你",
+            "start": 29.16,
+            "end": 29.5,
+            "probability": 0.962559163570404
+          }
+        ]
+      },
+      {
+        "id": 28,
+        "seek": 0,
+        "start": 29.5,
+        "end": 29.98,
+        "text": "你都想到你",
+        "tokens": [
+          51764,
+          2166,
+          7182,
+          7093,
+          4511,
+          2166,
+          51814
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.205292827327077,
+        "compression_ratio": 14.5,
+        "no_speech_prob": 0.6710559129714966,
+        "words": [
+          {
+            "word": "你",
+            "start": 29.5,
+            "end": 29.5,
+            "probability": 0.39759960770606995
+          },
+          {
+            "word": "都",
+            "start": 29.5,
+            "end": 29.98,
+            "probability": 0.9625170230865479
+          },
+          {
+            "word": "想",
+            "start": 29.98,
+            "end": 29.98,
+            "probability": 0.9993656277656555
+          },
+          {
+            "word": "到",
+            "start": 29.98,
+            "end": 29.98,
+            "probability": 0.9155750274658203
+          },
+          {
+            "word": "你",
+            "start": 29.98,
+            "end": 29.98,
+            "probability": 0.964935302734375
+          }
+        ]
+      },
+      {
+        "id": 29,
+        "seek": 2998,
+        "start": 30.92,
+        "end": 37.0,
+        "text": "那人是玉妃 怎料是玉燕尾",
+        "tokens": [
+          50364,
+          4184,
+          4035,
+          1541,
+          8051,
+          231,
+          5648,
+          225,
+          220,
+          7627,
+          33404,
+          1541,
+          8051,
+          231,
+          24184,
+          243,
+          1530,
+          122,
+          50744
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.8397801047877261,
+        "compression_ratio": 0.8987341772151899,
+        "no_speech_prob": 0.8504830002784729,
+        "words": [
+          {
+            "word": "那",
+            "start": 30.92,
+            "end": 31.8,
+            "probability": 0.06569995731115341
+          },
+          {
+            "word": "人",
+            "start": 31.8,
+            "end": 32.14,
+            "probability": 0.40074294805526733
+          },
+          {
+            "word": "是",
+            "start": 32.14,
+            "end": 32.66,
+            "probability": 0.7664569616317749
+          },
+          {
+            "word": "玉",
+            "start": 32.66,
+            "end": 33.1,
+            "probability": 0.5957203507423401
+          },
+          {
+            "word": "妃",
+            "start": 33.1,
+            "end": 33.56,
+            "probability": 0.6349838525056839
+          },
+          {
+            "word": " 怎",
+            "start": 34.62,
+            "end": 34.8,
+            "probability": 0.8606537580490112
+          },
+          {
+            "word": "料",
+            "start": 34.8,
+            "end": 35.22,
+            "probability": 0.540755569934845
+          },
+          {
+            "word": "是",
+            "start": 35.22,
+            "end": 35.8,
+            "probability": 0.9054729342460632
+          },
+          {
+            "word": "玉",
+            "start": 35.8,
+            "end": 36.18,
+            "probability": 0.5720997303724289
+          },
+          {
+            "word": "燕",
+            "start": 36.18,
+            "end": 36.52,
+            "probability": 0.5450828969478607
+          },
+          {
+            "word": "尾",
+            "start": 36.52,
+            "end": 37.0,
+            "probability": 0.32751015573740005
+          }
+        ]
+      },
+      {
+        "id": 30,
+        "seek": 2998,
+        "start": 37.58,
+        "end": 44.1,
+        "text": "心中的花口 微是光他却无悔",
+        "tokens": [
+          50744,
+          7945,
+          5975,
+          1546,
+          20127,
+          18144,
+          220,
+          39152,
+          1541,
+          20690,
+          5000,
+          5322,
+          112,
+          31364,
+          14696,
+          242,
+          51114
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.8397801047877261,
+        "compression_ratio": 0.8987341772151899,
+        "no_speech_prob": 0.8504830002784729,
+        "words": [
+          {
+            "word": "心",
+            "start": 37.58,
+            "end": 38.36,
+            "probability": 0.7808263301849365
+          },
+          {
+            "word": "中",
+            "start": 38.36,
+            "end": 38.76,
+            "probability": 0.9891218543052673
+          },
+          {
+            "word": "的",
+            "start": 38.76,
+            "end": 39.18,
+            "probability": 0.9742461442947388
+          },
+          {
+            "word": "花",
+            "start": 39.18,
+            "end": 39.66,
+            "probability": 0.8626329898834229
+          },
+          {
+            "word": "口",
+            "start": 39.66,
+            "end": 40.1,
+            "probability": 0.38685545325279236
+          },
+          {
+            "word": " 微",
+            "start": 40.42,
+            "end": 40.56,
+            "probability": 0.29477834701538086
+          },
+          {
+            "word": "是",
+            "start": 40.56,
+            "end": 40.98,
+            "probability": 0.1968778818845749
+          },
+          {
+            "word": "光",
+            "start": 40.98,
+            "end": 41.4,
+            "probability": 0.9411689639091492
+          },
+          {
+            "word": "他",
+            "start": 41.4,
+            "end": 41.88,
+            "probability": 0.33809247612953186
+          },
+          {
+            "word": "却",
+            "start": 41.88,
+            "end": 42.36,
+            "probability": 0.5607655942440033
+          },
+          {
+            "word": "无",
+            "start": 42.36,
+            "end": 43.26,
+            "probability": 0.36399373412132263
+          },
+          {
+            "word": "悔",
+            "start": 43.26,
+            "end": 44.1,
+            "probability": 0.840404212474823
+          }
+        ]
+      }
+    ],
+    "language": "zh"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "audioSha256": "f21e043c65ddf704775b548e1e6502461bcba005e1d720299aaa523884e9d8f2",
+  "model": "whisper-base",
+  "start": 0,
+  "end": 35.06,
+  "result": {
+    "text": "走",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 16.060000000000002,
+        "end": 17.46,
+        "text": "走",
+        "tokens": [
+          50364,
+          9575,
+          50389
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.9607852101325989,
+        "compression_ratio": 0.2727272727272727,
+        "no_speech_prob": 0.23594388365745544,
+        "words": [
+          {
+            "word": "走",
+            "start": 16.060000000000002,
+            "end": 17.46,
+            "probability": 0.11282683163881302
+          }
+        ]
+      }
+    ],
+    "language": "zh"
+  }
+}

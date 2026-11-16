@@ -1,0 +1,188 @@
+{
+  "schemaVersion": 1,
+  "key": "song-232",
+  "songId": 232,
+  "songName": "∞ TIMEs",
+  "rowKey": "∞ TIMEs",
+  "displaySongName": "∞ TIMEs",
+  "artist": "洛天依Official, 星葵77",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "",
+  "audio": {
+    "url": "assets/audio/song_231.m4a?v=83d0647ab3b9",
+    "sha256": "83d0647ab3b99db1e700a39b96fd84a002f826af3677ad47d6cc406f6bee5e3a"
+  },
+  "retrievedAt": "2026-11-16T04:05:21.451Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E2%88%9E%20TIMEs&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E2%88%9E%20TIMEs%20%E6%B4%9B%E5%A4%A9%E4%BE%9DOfficial&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1986743401,
+        "name": "∞ TIMEs",
+        "artists": [
+          "洛天依Official",
+          "星葵77"
+        ],
+        "album": "∞ TIMEs",
+        "durationMs": 182857,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 3453078672,
+        "name": "∞ TIMEs",
+        "artists": [
+          "魂儿哒P",
+          "洛天依",
+          "乐正绫"
+        ],
+        "album": "翻调",
+        "durationMs": 185173,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2000405641,
+        "name": "∞ TIMEs",
+        "artists": [
+          "多少多半"
+        ],
+        "album": "∞ TIMEs",
+        "durationMs": 185142,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2022312572,
+        "name": "∞ TIMEs",
+        "artists": [
+          "羯微Jevvy"
+        ],
+        "album": "羯微Jevvy2023翻唱集",
+        "durationMs": 182857,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3345158899,
+        "name": "∞ TIMEs",
+        "artists": [
+          "尘萤宇P"
+        ],
+        "album": "诗因你起，海以岸结，诗云海海，山山寻岸",
+        "durationMs": 183221,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2016433676,
+        "name": "∞ TIMEs",
+        "artists": [
+          "樱井瑶",
+          "Kara织夢"
+        ],
+        "album": "∞ TIMEs",
+        "durationMs": 185142,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3325851262,
+        "name": "∞ TIMEs",
+        "artists": [
+          "白炀Zby"
+        ],
+        "album": "翻唱们！",
+        "durationMs": 183111,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3424022306,
+        "name": "∞TIMEs",
+        "artists": [
+          "天宸Official"
+        ],
+        "album": "千言万予",
+        "durationMs": 182874,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 232,
+      "song_name": "∞ TIMEs",
+      "show_as_song_name": "",
+      "display_song_name": "∞ TIMEs",
+      "artist": "洛天依Official, 星葵77",
+      "artist_search": "洛天依Official, 星葵77",
+      "feat_artist": "",
+      "remark": "",
+      "tone": "",
+      "language": "中文",
+      "type": "中V",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1g1ah6REpb/?p=5",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-09-27",
+      "row_key": "∞ TIMEs"
+    },
+    "sourceId": 1986743401,
+    "sourcePath": "sources/1986743401.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1986743401",
+    "selected": {
+      "id": 1986743401,
+      "name": "∞ TIMEs",
+      "artists": [
+        "洛天依Official",
+        "星葵77"
+      ],
+      "album": "∞ TIMEs",
+      "durationMs": 182857,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 54
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-232-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 205.706,
+    "sourceFirstLine": {
+      "t": 18.48,
+      "text": "偶然间说起的那一段眷恋"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 34.08,
+      "endSeconds": 35.0,
+      "similarity": 0.42857142857142855,
+      "recognizedText": "那一段",
+      "meanProbability": 0.961,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

@@ -1,0 +1,217 @@
+{
+  "audioSha256": "7c5d8f7ba884b25419cc1b294bbe39570ce2e7a95f06573e852ad7502808ac75",
+  "model": "whisper-base",
+  "start": 195.67,
+  "end": 215.67,
+  "result": {
+    "text": "重ね合ってSee you soonせっさ二人の愛を叶ってる",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 0.0,
+        "end": 2.2,
+        "text": "重ね合って",
+        "tokens": [
+          50364,
+          12624,
+          5555,
+          14245,
+          6102,
+          50482
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.8837958368761786,
+        "compression_ratio": 0.9402985074626866,
+        "no_speech_prob": 0.28340184688568115,
+        "words": [
+          {
+            "word": "重",
+            "start": 0.0,
+            "end": 0.72,
+            "probability": 0.5228121280670166
+          },
+          {
+            "word": "ね",
+            "start": 0.72,
+            "end": 1.4,
+            "probability": 0.9878957271575928
+          },
+          {
+            "word": "合",
+            "start": 1.4,
+            "end": 1.56,
+            "probability": 0.5210900902748108
+          },
+          {
+            "word": "って",
+            "start": 1.56,
+            "end": 2.2,
+            "probability": 0.886746346950531
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "seek": 0,
+        "start": 2.2,
+        "end": 3.96,
+        "text": "See you soon",
+        "tokens": [
+          50482,
+          26869,
+          291,
+          2321,
+          50606
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.8837958368761786,
+        "compression_ratio": 0.9402985074626866,
+        "no_speech_prob": 0.28340184688568115,
+        "words": [
+          {
+            "word": "See",
+            "start": 2.2,
+            "end": 2.88,
+            "probability": 0.10135018825531006
+          },
+          {
+            "word": " you",
+            "start": 2.88,
+            "end": 3.38,
+            "probability": 0.194295272231102
+          },
+          {
+            "word": " soon",
+            "start": 3.38,
+            "end": 3.96,
+            "probability": 0.6629917025566101
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "seek": 0,
+        "start": 4.84,
+        "end": 5.74,
+        "text": "せっさ",
+        "tokens": [
+          50606,
+          13702,
+          2970,
+          6722,
+          50664
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.8837958368761786,
+        "compression_ratio": 0.9402985074626866,
+        "no_speech_prob": 0.28340184688568115,
+        "words": [
+          {
+            "word": "せ",
+            "start": 4.220000000000001,
+            "end": 4.86,
+            "probability": 0.003156008431687951
+          },
+          {
+            "word": "っ",
+            "start": 4.86,
+            "end": 5.14,
+            "probability": 0.2229689359664917
+          },
+          {
+            "word": "さ",
+            "start": 5.14,
+            "end": 5.74,
+            "probability": 0.06729838252067566
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "seek": 0,
+        "start": 5.74,
+        "end": 7.88,
+        "text": "二人の愛を",
+        "tokens": [
+          50664,
+          11217,
+          4035,
+          2972,
+          15157,
+          5998,
+          50764
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.8837958368761786,
+        "compression_ratio": 0.9402985074626866,
+        "no_speech_prob": 0.28340184688568115,
+        "words": [
+          {
+            "word": "二",
+            "start": 5.74,
+            "end": 6.12,
+            "probability": 0.14648839831352234
+          },
+          {
+            "word": "人",
+            "start": 6.12,
+            "end": 6.36,
+            "probability": 0.9465631246566772
+          },
+          {
+            "word": "の",
+            "start": 6.36,
+            "end": 6.54,
+            "probability": 0.9984784722328186
+          },
+          {
+            "word": "愛",
+            "start": 6.54,
+            "end": 7.2,
+            "probability": 0.4412679076194763
+          },
+          {
+            "word": "を",
+            "start": 7.2,
+            "end": 7.88,
+            "probability": 0.9923803806304932
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "seek": 0,
+        "start": 7.88,
+        "end": 9.68,
+        "text": "叶ってる",
+        "tokens": [
+          50764,
+          2129,
+          114,
+          45350,
+          50914
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.8837958368761786,
+        "compression_ratio": 0.9402985074626866,
+        "no_speech_prob": 0.28340184688568115,
+        "words": [
+          {
+            "word": "叶",
+            "start": 7.88,
+            "end": 8.6,
+            "probability": 0.6686663627624512
+          },
+          {
+            "word": "ってる",
+            "start": 8.6,
+            "end": 9.68,
+            "probability": 0.6767029166221619
+          }
+        ]
+      }
+    ],
+    "language": "ja"
+  }
+}

@@ -1,0 +1,183 @@
+{
+  "schemaVersion": 1,
+  "key": "song-390",
+  "songId": 390,
+  "songName": "山外小楼夜听雨",
+  "rowKey": "山外小楼夜听雨",
+  "displaySongName": "山外小楼夜听雨",
+  "artist": "洛天依Official",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "VOCALOID 古风曲，耕耕作词、Xun 作曲、洛天依演唱（Apple Music 2016 单曲）。",
+  "audio": {
+    "url": "assets/audio/song_389.m4a?v=0c9806ba6f71",
+    "sha256": "0c9806ba6f7119e819ea5982c0de1c17aae240de4fd7fd9f9fc0108ec9e53e10"
+  },
+  "retrievedAt": "2026-11-16T04:13:33.188Z",
+  "match": {
+    "status": "candidate_review_required",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E5%B1%B1%E5%A4%96%E5%B0%8F%E6%A5%BC%E5%A4%9C%E5%90%AC%E9%9B%A8&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E5%B1%B1%E5%A4%96%E5%B0%8F%E6%A5%BC%E5%A4%9C%E5%90%AC%E9%9B%A8%20%E6%B4%9B%E5%A4%A9%E4%BE%9DOfficial&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 405597568,
+        "name": "山外小楼夜听雨",
+        "artists": [
+          "任然"
+        ],
+        "album": "从小到大",
+        "durationMs": 249875,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2155254800,
+        "name": "山外小楼夜听雨",
+        "artists": [
+          "思小"
+        ],
+        "album": "思小爱自己",
+        "durationMs": 77319,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2077796676,
+        "name": "山外小楼夜听雨",
+        "artists": [
+          "徐龙拥"
+        ],
+        "album": "山水画意",
+        "durationMs": 75993,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2729652261,
+        "name": "山外小楼夜听雨",
+        "artists": [
+          "LYLF"
+        ],
+        "album": "生命尽头的模样",
+        "durationMs": 155036,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3334254047,
+        "name": "山外小楼夜听雨",
+        "artists": [
+          "音甜符"
+        ],
+        "album": "新创Ai音符P8",
+        "durationMs": 99984,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3371330014,
+        "name": "山外小楼夜听雨",
+        "artists": [
+          "黄辉"
+        ],
+        "album": "",
+        "durationMs": 237354,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2158244586,
+        "name": "山外小楼夜听雨",
+        "artists": [
+          "晚风吹过回忆"
+        ],
+        "album": "停留",
+        "durationMs": 91994,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3401131528,
+        "name": "山外小楼夜听雨",
+        "artists": [
+          "Alya llhsm"
+        ],
+        "album": "洛希极限",
+        "durationMs": 257639,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 390,
+      "song_name": "山外小楼夜听雨",
+      "show_as_song_name": "",
+      "display_song_name": "山外小楼夜听雨",
+      "artist": "洛天依Official",
+      "artist_search": "洛天依Official",
+      "feat_artist": "",
+      "remark": "VOCALOID 古风曲，耕耕作词、Xun 作曲、洛天依演唱（Apple Music 2016 单曲）。",
+      "tone": "",
+      "language": "中文",
+      "type": "中V、国风",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1LRWd6jEqp/?p=2",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-11-12",
+      "row_key": "山外小楼夜听雨"
+    },
+    "sourceId": 405597568,
+    "sourcePath": "sources/405597568.json",
+    "sourceUrl": "https://music.163.com/#/song?id=405597568",
+    "selected": {
+      "id": 405597568,
+      "name": "山外小楼夜听雨",
+      "artists": [
+        "任然"
+      ],
+      "album": "从小到大",
+      "durationMs": 249875,
+      "titleScore": 1,
+      "artistMatch": false,
+      "score": 0.8
+    },
+    "timedLineCount": 26
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-390-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 252.203,
+    "sourceFirstLine": {
+      "t": 31.86,
+      "text": "数着春去熟透的红豆 无人黄昏后"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 29.84,
+      "endSeconds": 35.14,
+      "similarity": 0.19047619047619047,
+      "recognizedText": "去找你我心里的",
+      "meanProbability": 0.454,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

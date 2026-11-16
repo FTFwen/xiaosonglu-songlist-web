@@ -1,0 +1,166 @@
+{
+  "schemaVersion": 1,
+  "key": "song-213",
+  "songId": 213,
+  "songName": "花と水飴、最終電車",
+  "displaySongName": "花と水飴、最終電車",
+  "artist": "n-buna / 初音ミク",
+  "language": "日文",
+  "derivative": false,
+  "audio": {
+    "url": "assets/audio/song_212.m4a?v=420683a02983",
+    "sha256": "420683a0298319ebec277b7316db2b796bfe40e4857b793899a135e61b0ba08c"
+  },
+  "retrievedAt": "2026-11-16T03:58:42.030Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E8%8A%B1%E3%81%A8%E6%B0%B4%E9%A3%B4%E3%80%81%E6%9C%80%E7%B5%82%E9%9B%BB%E8%BB%8A&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 33367346,
+        "name": "花と水飴、最終電車",
+        "artists": [
+          "n-buna",
+          "初音ミク"
+        ],
+        "album": "花と水飴、最終電車",
+        "durationMs": 308080,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 3336206631,
+        "name": "花と水飴、最終電車",
+        "artists": [
+          "狐狸ox"
+        ],
+        "album": "STUDY WITH YOURUSHIKA - Part 3 -",
+        "durationMs": 153907,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3345810880,
+        "name": "花と水飴、最終電車",
+        "artists": [
+          "永夜minus",
+          "风早p"
+        ],
+        "album": "花と水飴、最終電車（永夜minus ver）",
+        "durationMs": 308115,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2757251981,
+        "name": "花と水飴、最終電車",
+        "artists": [
+          "Bloom-pn"
+        ],
+        "album": "Bloom-pn的术拿翻弹",
+        "durationMs": 330553,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2084035315,
+        "name": "花と水飴、最終電車 (Piano Ver.)",
+        "artists": [
+          "Piano Echoes"
+        ],
+        "album": "The Works : n-buna〜ピアノで聴く神曲",
+        "durationMs": 272331,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 2739103639,
+        "name": "花と水飴、最終電車 (花与麦芽糖、末班电车)",
+        "artists": [
+          "Hanasaki"
+        ],
+        "album": "花と水飴、最終電車 (花与麦芽糖、末班电车)",
+        "durationMs": 78010,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 33367334,
+        "name": "始発とカフカ",
+        "artists": [
+          "n-buna",
+          "初音ミク"
+        ],
+        "album": "花と水飴、最終電車",
+        "durationMs": 313293,
+        "titleScore": 0,
+        "artistMatch": true,
+        "score": 0.2
+      },
+      {
+        "id": 33367341,
+        "name": "メリュー",
+        "artists": [
+          "n-buna",
+          "初音ミク"
+        ],
+        "album": "花と水飴、最終電車",
+        "durationMs": 212586,
+        "titleScore": 0,
+        "artistMatch": true,
+        "score": 0.2
+      }
+    ],
+    "sourceId": 33367346,
+    "sourcePath": "sources/33367346.json",
+    "sourceUrl": "https://music.163.com/#/song?id=33367346",
+    "selected": {
+      "id": 33367346,
+      "name": "花と水飴、最終電車",
+      "artists": [
+        "n-buna",
+        "初音ミク"
+      ],
+      "album": "花と水飴、最終電車",
+      "durationMs": 308080,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 34
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-213-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 295.211,
+    "sourceFirstLine": {
+      "t": 0.58,
+      "text": "晴れた雲を見ていた"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 0.0,
+      "endSeconds": 6.14,
+      "similarity": 0.5555555555555556,
+      "recognizedText": "晴れたくのりでいた",
+      "meanProbability": 0.658,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "ja",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  },
+  "rowKey": "花と水飴、最終電車",
+  "edition": "",
+  "remark": "UP 桐人今天睡大觉《2026.09.23练歌歌切合集》P4；n-buna（ヨルシカ作曲者）的 VOCALOID 名曲"
+}

@@ -1,0 +1,133 @@
+{
+  "audioSha256": "8c25643010edc5978ec7d8d0209053287ab23de74d3d76e8049eb9f007f4e955",
+  "model": "whisper-base",
+  "start": 0,
+  "end": 35,
+  "result": {
+    "text": "穿如香菊有石充在地的地下",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 3000,
+        "start": 30.0,
+        "end": 33.2,
+        "text": "穿如香菊有石充",
+        "tokens": [
+          50364,
+          13740,
+          123,
+          8238,
+          16017,
+          16616,
+          232,
+          2412,
+          36783,
+          2347,
+          227,
+          50534
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.8575691223144531,
+        "compression_ratio": 0.8,
+        "no_speech_prob": 0.7213887572288513,
+        "words": [
+          {
+            "word": "穿",
+            "start": 30.0,
+            "end": 30.5,
+            "probability": 0.6364959180355072
+          },
+          {
+            "word": "如",
+            "start": 30.5,
+            "end": 30.78,
+            "probability": 0.47879812121391296
+          },
+          {
+            "word": "香",
+            "start": 30.78,
+            "end": 31.22,
+            "probability": 0.17992688715457916
+          },
+          {
+            "word": "菊",
+            "start": 31.22,
+            "end": 31.66,
+            "probability": 0.5716267973184586
+          },
+          {
+            "word": "有",
+            "start": 31.66,
+            "end": 32.22,
+            "probability": 0.4345465898513794
+          },
+          {
+            "word": "石",
+            "start": 32.22,
+            "end": 32.6,
+            "probability": 0.35738956928253174
+          },
+          {
+            "word": "充",
+            "start": 32.6,
+            "end": 33.2,
+            "probability": 0.5614811182022095
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "seek": 3000,
+        "start": 33.2,
+        "end": 34.98,
+        "text": "在地的地下",
+        "tokens": [
+          50534,
+          3581,
+          10928,
+          1546,
+          10928,
+          4438,
+          50614
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.8575691223144531,
+        "compression_ratio": 0.8,
+        "no_speech_prob": 0.7213887572288513,
+        "words": [
+          {
+            "word": "在",
+            "start": 33.2,
+            "end": 33.88,
+            "probability": 0.5332725048065186
+          },
+          {
+            "word": "地",
+            "start": 33.88,
+            "end": 34.14,
+            "probability": 0.5142808556556702
+          },
+          {
+            "word": "的",
+            "start": 34.14,
+            "end": 34.28,
+            "probability": 0.15683002769947052
+          },
+          {
+            "word": "地",
+            "start": 34.28,
+            "end": 34.66,
+            "probability": 0.8126162886619568
+          },
+          {
+            "word": "下",
+            "start": 34.66,
+            "end": 34.98,
+            "probability": 0.5456045866012573
+          }
+        ]
+      }
+    ],
+    "language": "zh"
+  }
+}

@@ -1,0 +1,190 @@
+{
+  "schemaVersion": 1,
+  "key": "song-78",
+  "songId": 78,
+  "songName": "夜蝶",
+  "rowKey": "夜蝶",
+  "displaySongName": "夜蝶",
+  "artist": "SNH48（李艺彤/黄婷婷）",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "来自 2026-08-20 偶像歌回。经弹幕歌词交叉验证 + 歌切视频《【小松绿Viridis/歌回】20260820-偶像歌回？欸》分P第8章节确认曲目；时间按歌切分P累计估算，待回放复核。歌手信息来自网易云音乐/萌娘百科检索。",
+  "audio": {
+    "url": "assets/audio/song_67.m4a?v=5bf38fe5c826",
+    "sha256": "5bf38fe5c826b92d74a62c3f725610788bb729945dc1dd3df096a2b296e268c2"
+  },
+  "retrievedAt": "2026-11-16T04:03:33.551Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E5%A4%9C%E8%9D%B6&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E5%A4%9C%E8%9D%B6%20SNH48&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1342571624,
+        "name": "夜蝶",
+        "artists": [
+          "SNH48青钰雯",
+          "BEJ48陈美君"
+        ],
+        "album": "SNH48 GROUP第五届年度金曲大赏演唱会LIVE版(中)",
+        "durationMs": 169639,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1847318306,
+        "name": "夜蝶",
+        "artists": [
+          "王允宸",
+          "蒋芸"
+        ],
+        "album": "浮光",
+        "durationMs": 239330,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 33737547,
+        "name": "夜蝶 (Live)",
+        "artists": [
+          "李艺彤",
+          "黄婷婷"
+        ],
+        "album": "SNH48年度金曲大赏演唱会",
+        "durationMs": 164231,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      },
+      {
+        "id": 32897861,
+        "name": "夜蝶 (SNH48 Live)",
+        "artists": [
+          "SNH48陆婷",
+          "SNH48万丽娜"
+        ],
+        "album": "热门华语266",
+        "durationMs": 232000,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      },
+      {
+        "id": 33579213,
+        "name": "夜蝶 (Live)",
+        "artists": [
+          "鞠婧祎"
+        ],
+        "album": "热门华语271",
+        "durationMs": 154776,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 531597522,
+        "name": "夜蝶（Cover 黄婷婷&李艺彤））",
+        "artists": [
+          "丁译林"
+        ],
+        "album": "Don't touch(48公演金曲集）",
+        "durationMs": 239049,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 1336169350,
+        "name": "夜蝶(洛天依、初音ミク)",
+        "artists": [
+          "A型君",
+          "洛天依",
+          "初音ミク"
+        ],
+        "album": "夜蝶",
+        "durationMs": 239333,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 1448583271,
+        "name": "夜蝶 伴奏版",
+        "artists": [
+          "星離"
+        ],
+        "album": "夜蝶",
+        "durationMs": 239360,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      }
+    ],
+    "workQuery": {
+      "song_id": 78,
+      "song_name": "夜蝶",
+      "show_as_song_name": "",
+      "display_song_name": "夜蝶",
+      "artist": "SNH48（李艺彤/黄婷婷）",
+      "artist_search": "SNH48 夜蝶 李艺彤 黄婷婷",
+      "feat_artist": "",
+      "remark": "来自 2026-08-20 偶像歌回。经弹幕歌词交叉验证 + 歌切视频《【小松绿Viridis/歌回】20260820-偶像歌回？欸》分P第8章节确认曲目；时间按歌切分P累计估算，待回放复核。歌手信息来自网易云音乐/萌娘百科检索。",
+      "tone": "",
+      "language": "中文",
+      "type": "偶像、SNH48",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1WS8c6XE9w?p=8",
+      "sing_count": 1,
+      "status_labels": "歌回、自动识别待人工复核",
+      "last_sing_at": "2026-08-20",
+      "row_key": "夜蝶"
+    },
+    "sourceId": 1342571624,
+    "sourcePath": "sources/1342571624.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1342571624",
+    "selected": {
+      "id": 1342571624,
+      "name": "夜蝶",
+      "artists": [
+        "SNH48青钰雯",
+        "BEJ48陈美君"
+      ],
+      "album": "SNH48 GROUP第五届年度金曲大赏演唱会LIVE版(中)",
+      "durationMs": 169639,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 28
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-78-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 236.704,
+    "sourceFirstLine": {
+      "t": 17.65,
+      "text": "悄悄的 今晚相遇这里"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 22.72,
+      "endSeconds": 23.76,
+      "similarity": 0.0,
+      "recognizedText": "【 詞",
+      "meanProbability": 0.189,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

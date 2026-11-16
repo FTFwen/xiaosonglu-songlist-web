@@ -1,0 +1,173 @@
+{
+  "schemaVersion": 1,
+  "key": "song-161",
+  "songId": 161,
+  "songName": "阳山绝",
+  "displaySongName": "阳山绝",
+  "artist": "平行四界Quadimension、洛天依Official、乐正绫、Soda纯白",
+  "language": "中文",
+  "derivative": false,
+  "audio": {
+    "url": "assets/audio/song_160.m4a?v=6656bc220b43",
+    "sha256": "6656bc220b43381d269b177bc80177d0f0c8d42350a8df082c0da70b4cbaef4d"
+  },
+  "retrievedAt": "2026-11-16T03:59:02.013Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E9%98%B3%E5%B1%B1%E7%BB%9D&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 458012938,
+        "name": "阳山绝",
+        "artists": [
+          "洛天依Official",
+          "乐正绫",
+          "Soda纯白",
+          "litterzy"
+        ],
+        "album": "大司徒",
+        "durationMs": 277211,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1364902701,
+        "name": "阳山绝",
+        "artists": [
+          "腿腿Jo_Asen",
+          "盐酸"
+        ],
+        "album": "阳山绝",
+        "durationMs": 260440,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3445810252,
+        "name": "阳山绝",
+        "artists": [
+          "春晓",
+          "困困"
+        ],
+        "album": "阳山绝",
+        "durationMs": 277640,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1365194085,
+        "name": "阳山绝",
+        "artists": [
+          "清也",
+          "-足音-",
+          "沈风无"
+        ],
+        "album": "阳山绝",
+        "durationMs": 263915,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2753329287,
+        "name": "阳山绝",
+        "artists": [
+          "米兔",
+          "黑芝烧"
+        ],
+        "album": "阳山绝",
+        "durationMs": 268288,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1395743775,
+        "name": "阳山绝",
+        "artists": [
+          "一枝梅",
+          "兔子ST"
+        ],
+        "album": "阳山绝",
+        "durationMs": 263862,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1426881051,
+        "name": "阳山绝",
+        "artists": [
+          "南洵"
+        ],
+        "album": "阳山绝",
+        "durationMs": 264902,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1379958226,
+        "name": "阳山绝",
+        "artists": [
+          "雪雪雪"
+        ],
+        "album": "『2017-2018』",
+        "durationMs": 264202,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "sourceId": 458012938,
+    "sourcePath": "sources/458012938.json",
+    "sourceUrl": "https://music.163.com/#/song?id=458012938",
+    "selected": {
+      "id": 458012938,
+      "name": "阳山绝",
+      "artists": [
+        "洛天依Official",
+        "乐正绫",
+        "Soda纯白",
+        "litterzy"
+      ],
+      "album": "大司徒",
+      "durationMs": 277211,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 41
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-161-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 266.197,
+    "sourceFirstLine": {
+      "t": 3.49,
+      "text": "【依】 瓦砾难寻 迫得众庶离散"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 25.58,
+      "endSeconds": 25.66,
+      "similarity": 0.0,
+      "recognizedText": "将",
+      "meanProbability": 0.002,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  },
+  "rowKey": "阳山绝",
+  "edition": "",
+  "remark": ""
+}

@@ -1,0 +1,163 @@
+{
+  "schemaVersion": 1,
+  "key": "song-187",
+  "songId": 187,
+  "songName": "给电影人的情书",
+  "displaySongName": "给电影人的情书",
+  "artist": "蔡琴",
+  "language": "中文",
+  "derivative": false,
+  "audio": {
+    "url": "assets/audio/song_186.m4a?v=d793f5987aea",
+    "sha256": "d793f5987aeadcb713c908a4b7651a4a48366d6089457bc4df5ad6ba7fb1959e"
+  },
+  "retrievedAt": "2026-11-16T03:58:10.807Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E7%BB%99%E7%94%B5%E5%BD%B1%E4%BA%BA%E7%9A%84%E6%83%85%E4%B9%A6&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 209835,
+        "name": "给电影人的情书",
+        "artists": [
+          "蔡琴"
+        ],
+        "album": "不悔",
+        "durationMs": 292466,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1888598027,
+        "name": "给电影人的情书",
+        "artists": [
+          "张智霖",
+          "尹正",
+          "张晋"
+        ],
+        "album": "披荆斩棘的哥哥 第11期",
+        "durationMs": 321802,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1865517065,
+        "name": "给电影人的情书",
+        "artists": [
+          "钢琴先森"
+        ],
+        "album": "当下流行",
+        "durationMs": 281534,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1497071430,
+        "name": "给电影人的情书",
+        "artists": [
+          "张栩凤（小半同学）"
+        ],
+        "album": "给电影人的情书",
+        "durationMs": 286628,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1893576624,
+        "name": "给电影人的情书",
+        "artists": [
+          "许一鸣"
+        ],
+        "album": "许一鸣的翻唱作品",
+        "durationMs": 277995,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2655626571,
+        "name": "给电影人的情书",
+        "artists": [
+          "武汉星河室内合唱团"
+        ],
+        "album": "给电影人的情书（Live 2024）",
+        "durationMs": 320796,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1495109916,
+        "name": "给电影人的情书",
+        "artists": [
+          "林俊宇Ayu"
+        ],
+        "album": "给电影人的情书",
+        "durationMs": 288398,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2642529192,
+        "name": "给电影人的情书",
+        "artists": [
+          "苏曼"
+        ],
+        "album": "给电影人的情书",
+        "durationMs": 292560,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "sourceId": 209835,
+    "sourcePath": "sources/209835.json",
+    "sourceUrl": "https://music.163.com/#/song?id=209835",
+    "selected": {
+      "id": 209835,
+      "name": "给电影人的情书",
+      "artists": [
+        "蔡琴"
+      ],
+      "album": "不悔",
+      "durationMs": 292466,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 36
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-187-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 290.598,
+    "sourceFirstLine": {
+      "t": 33.79,
+      "text": "多少人爱你遗留银幕的风采"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 34.68,
+      "endSeconds": 38.88,
+      "similarity": 0.5714285714285714,
+      "recognizedText": "人爱你用一朦的风采",
+      "meanProbability": 0.675,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  },
+  "rowKey": "给电影人的情书",
+  "edition": "",
+  "remark": "弹幕 03:13「给电影人的情书吗」印证；蔡琴经典曲目，沿用「华语经典」标签先例（孟庭苇条目）"
+}

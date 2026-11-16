@@ -1,0 +1,184 @@
+{
+  "schemaVersion": 1,
+  "key": "song-371",
+  "songId": 371,
+  "songName": "赤伶",
+  "rowKey": "赤伶",
+  "displaySongName": "赤伶",
+  "artist": "HITA",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "HITA 2018 原唱，古风戏腔",
+  "audio": {
+    "url": "assets/audio/song_370.m4a?v=dfeca662b9dc",
+    "sha256": "dfeca662b9dc35a8c697a918c950aa4ad623eb6c7ec718f2b5063a7e25187b07"
+  },
+  "retrievedAt": "2026-11-16T04:13:28.594Z",
+  "match": {
+    "status": "candidate_review_required",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E8%B5%A4%E4%BC%B6&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E8%B5%A4%E4%BC%B6%20HITA&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 2137661995,
+        "name": "赤伶",
+        "artists": [
+          "谭晶"
+        ],
+        "album": "赤伶",
+        "durationMs": 270888,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1454730043,
+        "name": "赤伶",
+        "artists": [
+          "李玉刚"
+        ],
+        "album": "赤伶",
+        "durationMs": 300000,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3422608964,
+        "name": "赤伶",
+        "artists": [
+          "温栗"
+        ],
+        "album": "赤伶",
+        "durationMs": 303925,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3444494634,
+        "name": "赤伶",
+        "artists": [
+          "难于现状"
+        ],
+        "album": "错拍心事",
+        "durationMs": 16046,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3445411687,
+        "name": "赤伶",
+        "artists": [
+          "妹宝",
+          "郭琳琳"
+        ],
+        "album": "磨合",
+        "durationMs": 27576,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1377748865,
+        "name": "赤伶",
+        "artists": [
+          "是二智呀"
+        ],
+        "album": "赤伶（民谣版）",
+        "durationMs": 265588,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3332977207,
+        "name": "赤伶",
+        "artists": [
+          "张含韵"
+        ],
+        "album": "赤伶",
+        "durationMs": 269189,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1379717545,
+        "name": "赤伶",
+        "artists": [
+          "魏子傲"
+        ],
+        "album": "赤伶",
+        "durationMs": 231257,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 371,
+      "song_name": "赤伶",
+      "show_as_song_name": "",
+      "display_song_name": "赤伶",
+      "artist": "HITA",
+      "artist_search": "HITA",
+      "feat_artist": "",
+      "remark": "HITA 2018 原唱，古风戏腔",
+      "tone": "",
+      "language": "中文",
+      "type": "国风、古风",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1nRxJ6tEPC/?p=24",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-31",
+      "row_key": "赤伶"
+    },
+    "sourceId": 2137661995,
+    "sourcePath": "sources/2137661995.json",
+    "sourceUrl": "https://music.163.com/#/song?id=2137661995",
+    "selected": {
+      "id": 2137661995,
+      "name": "赤伶",
+      "artists": [
+        "谭晶"
+      ],
+      "album": "赤伶",
+      "durationMs": 270888,
+      "titleScore": 1,
+      "artistMatch": false,
+      "score": 0.8
+    },
+    "timedLineCount": 51
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-371-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 265.835,
+    "sourceFirstLine": {
+      "t": 0,
+      "text": "原唱 : HITA"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 22.18,
+      "endSeconds": 23.54,
+      "similarity": 0.0,
+      "recognizedText": "我",
+      "meanProbability": 0.027,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

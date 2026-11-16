@@ -1,0 +1,195 @@
+{
+  "schemaVersion": 1,
+  "key": "song-2",
+  "songId": 2,
+  "songName": "迂回步",
+  "rowKey": "迂回步",
+  "displaySongName": "迂回步",
+  "artist": "星辉P / 洛天依Official / 乐正绫 / 雨狸",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "直链页面 title 为【小松绿Viridis/翻唱】《迂回步》，meta description 明示日期 2026.08.08 与 UP 主小鸡奇遇記。song_name 归一化为真实曲名“迂回步”。",
+  "audio": {
+    "url": "assets/audio/song_70.m4a?v=9ac6037dd71d",
+    "sha256": "9ac6037dd71d23dcdf88ed99d43c4cfe9f4b36345c01567ecfdc2a611b8142c7"
+  },
+  "retrievedAt": "2026-11-16T04:03:37.230Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E8%BF%82%E5%9B%9E%E6%AD%A5&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E8%BF%82%E5%9B%9E%E6%AD%A5%20%E6%98%9F%E8%BE%89P%20%2F%20%E6%B4%9B%E5%A4%A9%E4%BE%9DOfficial%20%2F%20%E4%B9%90%E6%AD%A3%E7%BB%AB%20%2F%20%E9%9B%A8%E7%8B%B8&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 2000770578,
+        "name": "迂回步",
+        "artists": [
+          "洛天依",
+          "火涟",
+          "NGC6302星云"
+        ],
+        "album": "ACE Studio翻调作品1",
+        "durationMs": 243304,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1987408870,
+        "name": "迂回步",
+        "artists": [
+          "加藤惠赢",
+          "洛天依",
+          "ACE然糊糊"
+        ],
+        "album": "ace studio 翻唱",
+        "durationMs": 246000,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1411864177,
+        "name": "迂回步",
+        "artists": [
+          "梵夜九",
+          "艾莉Anicca"
+        ],
+        "album": "迂回步",
+        "durationMs": 243591,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1939041065,
+        "name": "迂回步",
+        "artists": [
+          "伊水_Uryan",
+          "流绪",
+          "言和",
+          "乐正龙牙"
+        ],
+        "album": "龙言集",
+        "durationMs": 245133,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1897038157,
+        "name": "迂回步",
+        "artists": [
+          "无聊到底",
+          "SCLLZI"
+        ],
+        "album": "迂回步",
+        "durationMs": 243487,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1487076431,
+        "name": "迂回步",
+        "artists": [
+          "徵徵徵Apr"
+        ],
+        "album": "迂回步",
+        "durationMs": 243539,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3443052361,
+        "name": "迂回步",
+        "artists": [
+          "昏惩-Twilight",
+          "尤金基德"
+        ],
+        "album": "迂回步【尤金基德&西利乌斯 Cover】",
+        "durationMs": 244666,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1433329145,
+        "name": "迂回步",
+        "artists": [
+          "夕木霜__TEKI"
+        ],
+        "album": "夕木霜__TEKI的cover补档",
+        "durationMs": 243552,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 2,
+      "song_name": "迂回步",
+      "show_as_song_name": "",
+      "display_song_name": "迂回步",
+      "artist": "星辉P / 洛天依Official / 乐正绫 / 雨狸",
+      "artist_search": "星辉P 洛天依 乐正绫 雨狸",
+      "feat_artist": "",
+      "remark": "直链页面 title 为【小松绿Viridis/翻唱】《迂回步》，meta description 明示日期 2026.08.08 与 UP 主小鸡奇遇記。song_name 归一化为真实曲名“迂回步”。",
+      "tone": "",
+      "language": "中文",
+      "type": "中V、流行",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1Uuu36ME6g/",
+      "sing_count": 1,
+      "status_labels": "歌切直补、待原始回放定位",
+      "last_sing_at": "2026-08-08",
+      "row_key": "迂回步"
+    },
+    "sourceId": 2000770578,
+    "sourcePath": "sources/2000770578.json",
+    "sourceUrl": "https://music.163.com/#/song?id=2000770578",
+    "selected": {
+      "id": 2000770578,
+      "name": "迂回步",
+      "artists": [
+        "洛天依",
+        "火涟",
+        "NGC6302星云"
+      ],
+      "album": "ACE Studio翻调作品1",
+      "durationMs": 243304,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 26
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-2-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 242.904,
+    "sourceFirstLine": {
+      "t": 6,
+      "text": "调校 : OQQ"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 28.58,
+      "endSeconds": 29.98,
+      "similarity": 0.0,
+      "recognizedText": "《大",
+      "meanProbability": 0.009,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

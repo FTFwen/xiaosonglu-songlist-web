@@ -1,0 +1,26 @@
+{
+  "platform": "netease",
+  "id": 2108811699,
+  "url": "https://music.163.com/#/song?id=2108811699",
+  "apiUrl": "https://music.163.com/api/song/lyric?id=2108811699&lv=1&kv=1&tv=-1",
+  "retrievedAt": "2026-11-16T04:04:24.107Z",
+  "track": {
+    "id": 2108811699,
+    "name": "灼之花",
+    "artists": [
+      "洛天依",
+      "乐正绫",
+      "無藏"
+    ],
+    "album": "ACE翻调",
+    "durationMs": 249861,
+    "titleScore": 1,
+    "artistMatch": true,
+    "score": 1
+  },
+  "lrc": "",
+  "translationLrc": "",
+  "romanizationLrc": "",
+  "instrumental": false,
+  "lines": []
+}

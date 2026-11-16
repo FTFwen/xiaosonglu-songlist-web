@@ -1,0 +1,172 @@
+{
+  "schemaVersion": 1,
+  "key": "derivative-1112",
+  "songId": -1112,
+  "songName": "小松绿-心墙",
+  "rowKey": "小松绿-心墙",
+  "displaySongName": "心墙",
+  "artist": "白烁",
+  "language": "",
+  "derivative": true,
+  "edition": "",
+  "remark": "",
+  "audio": {
+    "url": "assets/derivative/xinqiang.mp3?v=4d9823892608",
+    "sha256": "4d98238926089dbf5931f2007ec449b476aaf64e6d023375d1f1616ae3e69058"
+  },
+  "retrievedAt": "2026-11-16T04:13:40.121Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E5%BF%83%E5%A2%99&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E5%BF%83%E5%A2%99%20%E9%83%AD%E9%9D%99&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 27671269,
+        "name": "心墙",
+        "artists": [
+          "郭静"
+        ],
+        "album": "致纯静",
+        "durationMs": 227013,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 233866,
+        "name": "心墙",
+        "artists": [
+          "郭静"
+        ],
+        "album": "在树上唱歌",
+        "durationMs": 226920,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 3446681839,
+        "name": "心墙",
+        "artists": [
+          "郭静",
+          "圣轩"
+        ],
+        "album": "下一个天亮",
+        "durationMs": 41920,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 108263,
+        "name": "心墙",
+        "artists": [
+          "林俊杰"
+        ],
+        "album": "她说 概念自选辑",
+        "durationMs": 225645,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3359736123,
+        "name": "心墙",
+        "artists": [
+          "林可期"
+        ],
+        "album": "心墙",
+        "durationMs": 235032,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3389805925,
+        "name": "心墙",
+        "artists": [
+          "Ericcc"
+        ],
+        "album": "心墙",
+        "durationMs": 223555,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3444833146,
+        "name": "心墙",
+        "artists": [
+          "DJ阿福"
+        ],
+        "album": "心墙",
+        "durationMs": 203937,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1417465846,
+        "name": "心墙",
+        "artists": [
+          "想吃空心菜"
+        ],
+        "album": "《锦衣之下》电视剧OST丶",
+        "durationMs": 284877,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": -1112,
+      "song_name": "心墙",
+      "display_song_name": "心墙",
+      "artist": "郭静",
+      "language": "",
+      "audio": "assets/derivative/xinqiang.mp3?v=4d9823892608",
+      "derivative": true
+    },
+    "sourceId": 27671269,
+    "sourcePath": "sources/27671269.json",
+    "sourceUrl": "https://music.163.com/#/song?id=27671269",
+    "selected": {
+      "id": 27671269,
+      "name": "心墙",
+      "artists": [
+        "郭静"
+      ],
+      "album": "致纯静",
+      "durationMs": 227013,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 30
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/derivative-1112-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 96.2,
+    "sourceFirstLine": {
+      "t": 0.4,
+      "text": "一个人 眺望碧海和蓝天"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 4.36,
+      "endSeconds": 8.88,
+      "similarity": 0.6,
+      "recognizedText": "一个人 调望病还好蓝天",
+      "meanProbability": 0.695,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

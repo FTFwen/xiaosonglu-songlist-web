@@ -1,0 +1,790 @@
+{
+  "audioSha256": "c30bff5691630cb237119c9a527444cd85aa763d28a9c928f2f8e9dd4b4693fc",
+  "model": "whisper-base",
+  "start": 0,
+  "end": 35,
+  "result": {
+    "text": "我怎么没什么印象啊前面这两句话我怎么没印象啊前面这两句话前面这两句话前面这两句话也不是我的等怕爽沒有我們快就消遇著",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 25.019999999999996,
+        "end": 26.62,
+        "text": "我怎么没什么印象啊",
+        "tokens": [
+          50364,
+          1654,
+          15282,
+          10062,
+          10440,
+          35825,
+          45007,
+          4905,
+          50464
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.15728246053059897,
+        "compression_ratio": 8.815384615384616,
+        "no_speech_prob": 0.0719529315829277,
+        "words": [
+          {
+            "word": "我",
+            "start": 25.019999999999996,
+            "end": 25.42,
+            "probability": 0.8626833558082581
+          },
+          {
+            "word": "怎么",
+            "start": 25.42,
+            "end": 25.58,
+            "probability": 0.9575244188308716
+          },
+          {
+            "word": "没",
+            "start": 25.58,
+            "end": 25.76,
+            "probability": 0.9927688837051392
+          },
+          {
+            "word": "什么",
+            "start": 25.76,
+            "end": 26.02,
+            "probability": 0.9923127293586731
+          },
+          {
+            "word": "印",
+            "start": 26.02,
+            "end": 26.18,
+            "probability": 0.6671580672264099
+          },
+          {
+            "word": "象",
+            "start": 26.18,
+            "end": 26.4,
+            "probability": 0.9659160375595093
+          },
+          {
+            "word": "啊",
+            "start": 26.4,
+            "end": 26.62,
+            "probability": 0.2947371006011963
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "seek": 0,
+        "start": 26.62,
+        "end": 27.44,
+        "text": "前面这两句话",
+        "tokens": [
+          50464,
+          8945,
+          8833,
+          5562,
+          36257,
+          34592,
+          21596,
+          50514
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.15728246053059897,
+        "compression_ratio": 8.815384615384616,
+        "no_speech_prob": 0.0719529315829277,
+        "words": [
+          {
+            "word": "前",
+            "start": 26.62,
+            "end": 26.74,
+            "probability": 0.20557765662670135
+          },
+          {
+            "word": "面",
+            "start": 26.74,
+            "end": 26.82,
+            "probability": 0.6450586318969727
+          },
+          {
+            "word": "这",
+            "start": 26.82,
+            "end": 26.94,
+            "probability": 0.8415559530258179
+          },
+          {
+            "word": "两",
+            "start": 26.94,
+            "end": 27.06,
+            "probability": 0.798493504524231
+          },
+          {
+            "word": "句",
+            "start": 27.06,
+            "end": 27.26,
+            "probability": 0.927668035030365
+          },
+          {
+            "word": "话",
+            "start": 27.26,
+            "end": 27.44,
+            "probability": 0.0850161537528038
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "seek": 0,
+        "start": 27.44,
+        "end": 29.12,
+        "text": "我怎么没印象啊",
+        "tokens": [
+          50514,
+          1654,
+          15282,
+          10062,
+          35825,
+          45007,
+          4905,
+          50564
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.15728246053059897,
+        "compression_ratio": 8.815384615384616,
+        "no_speech_prob": 0.0719529315829277,
+        "words": [
+          {
+            "word": "我",
+            "start": 27.44,
+            "end": 27.66,
+            "probability": 0.8355226516723633
+          },
+          {
+            "word": "怎么",
+            "start": 27.66,
+            "end": 27.92,
+            "probability": 0.9768379926681519
+          },
+          {
+            "word": "没",
+            "start": 27.92,
+            "end": 28.36,
+            "probability": 0.9577187895774841
+          },
+          {
+            "word": "印",
+            "start": 28.36,
+            "end": 28.36,
+            "probability": 0.039537463337183
+          },
+          {
+            "word": "象",
+            "start": 28.36,
+            "end": 29.12,
+            "probability": 0.9987645149230957
+          },
+          {
+            "word": "啊",
+            "start": 29.12,
+            "end": 29.12,
+            "probability": 0.8483392000198364
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "seek": 0,
+        "start": 29.12,
+        "end": 29.22,
+        "text": "前面这两句话",
+        "tokens": [
+          50564,
+          8945,
+          8833,
+          5562,
+          36257,
+          34592,
+          21596,
+          50614
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.15728246053059897,
+        "compression_ratio": 8.815384615384616,
+        "no_speech_prob": 0.0719529315829277,
+        "words": [
+          {
+            "word": "前",
+            "start": 29.12,
+            "end": 29.22,
+            "probability": 0.8503735661506653
+          },
+          {
+            "word": "面",
+            "start": 29.22,
+            "end": 29.22,
+            "probability": 0.9404500126838684
+          },
+          {
+            "word": "这",
+            "start": 29.22,
+            "end": 29.22,
+            "probability": 0.9870855212211609
+          },
+          {
+            "word": "两",
+            "start": 29.22,
+            "end": 29.22,
+            "probability": 0.9939659237861633
+          },
+          {
+            "word": "句",
+            "start": 29.22,
+            "end": 29.22,
+            "probability": 0.9999475479125977
+          },
+          {
+            "word": "话",
+            "start": 29.22,
+            "end": 29.22,
+            "probability": 0.48178577423095703
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "seek": 0,
+        "start": 29.22,
+        "end": 29.22,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.15728246053059897,
+        "compression_ratio": 8.815384615384616,
+        "no_speech_prob": 0.0719529315829277,
+        "words": []
+      },
+      {
+        "id": 5,
+        "seek": 0,
+        "start": 29.22,
+        "end": 29.22,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.15728246053059897,
+        "compression_ratio": 8.815384615384616,
+        "no_speech_prob": 0.0719529315829277,
+        "words": []
+      },
+      {
+        "id": 6,
+        "seek": 0,
+        "start": 29.22,
+        "end": 29.22,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.15728246053059897,
+        "compression_ratio": 8.815384615384616,
+        "no_speech_prob": 0.0719529315829277,
+        "words": []
+      },
+      {
+        "id": 7,
+        "seek": 0,
+        "start": 29.22,
+        "end": 29.22,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.15728246053059897,
+        "compression_ratio": 8.815384615384616,
+        "no_speech_prob": 0.0719529315829277,
+        "words": []
+      },
+      {
+        "id": 8,
+        "seek": 0,
+        "start": 29.22,
+        "end": 29.22,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.15728246053059897,
+        "compression_ratio": 8.815384615384616,
+        "no_speech_prob": 0.0719529315829277,
+        "words": []
+      },
+      {
+        "id": 9,
+        "seek": 0,
+        "start": 29.22,
+        "end": 29.22,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.15728246053059897,
+        "compression_ratio": 8.815384615384616,
+        "no_speech_prob": 0.0719529315829277,
+        "words": []
+      },
+      {
+        "id": 10,
+        "seek": 0,
+        "start": 29.22,
+        "end": 29.22,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.15728246053059897,
+        "compression_ratio": 8.815384615384616,
+        "no_speech_prob": 0.0719529315829277,
+        "words": []
+      },
+      {
+        "id": 11,
+        "seek": 0,
+        "start": 29.22,
+        "end": 29.5,
+        "text": "前面这两句话",
+        "tokens": [
+          50964,
+          8945,
+          8833,
+          5562,
+          36257,
+          34592,
+          21596,
+          51014
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.15728246053059897,
+        "compression_ratio": 8.815384615384616,
+        "no_speech_prob": 0.0719529315829277,
+        "words": [
+          {
+            "word": "前",
+            "start": 29.22,
+            "end": 29.22,
+            "probability": 0.8721147775650024
+          },
+          {
+            "word": "面",
+            "start": 29.22,
+            "end": 29.22,
+            "probability": 0.9955400824546814
+          },
+          {
+            "word": "这",
+            "start": 29.22,
+            "end": 29.22,
+            "probability": 0.9931839108467102
+          },
+          {
+            "word": "两",
+            "start": 29.22,
+            "end": 29.22,
+            "probability": 0.9940208792686462
+          },
+          {
+            "word": "句",
+            "start": 29.22,
+            "end": 29.42,
+            "probability": 0.9999778270721436
+          },
+          {
+            "word": "话",
+            "start": 29.42,
+            "end": 29.5,
+            "probability": 0.9598540663719177
+          }
+        ]
+      },
+      {
+        "id": 12,
+        "seek": 0,
+        "start": 29.5,
+        "end": 29.5,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.15728246053059897,
+        "compression_ratio": 8.815384615384616,
+        "no_speech_prob": 0.0719529315829277,
+        "words": []
+      },
+      {
+        "id": 13,
+        "seek": 0,
+        "start": 29.5,
+        "end": 29.98,
+        "text": "前面这两句话",
+        "tokens": [
+          51064,
+          8945,
+          8833,
+          5562,
+          36257,
+          34592,
+          21596,
+          51114
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.15728246053059897,
+        "compression_ratio": 8.815384615384616,
+        "no_speech_prob": 0.0719529315829277,
+        "words": [
+          {
+            "word": "前",
+            "start": 29.5,
+            "end": 29.5,
+            "probability": 0.8628725409507751
+          },
+          {
+            "word": "面",
+            "start": 29.5,
+            "end": 29.5,
+            "probability": 0.9944777488708496
+          },
+          {
+            "word": "这",
+            "start": 29.5,
+            "end": 29.5,
+            "probability": 0.9925204515457153
+          },
+          {
+            "word": "两",
+            "start": 29.5,
+            "end": 29.5,
+            "probability": 0.9929239749908447
+          },
+          {
+            "word": "句",
+            "start": 29.5,
+            "end": 29.5,
+            "probability": 0.9999773502349854
+          },
+          {
+            "word": "话",
+            "start": 29.5,
+            "end": 29.98,
+            "probability": 0.9700239300727844
+          }
+        ]
+      },
+      {
+        "id": 14,
+        "seek": 0,
+        "start": 29.98,
+        "end": 29.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.15728246053059897,
+        "compression_ratio": 8.815384615384616,
+        "no_speech_prob": 0.0719529315829277,
+        "words": []
+      },
+      {
+        "id": 15,
+        "seek": 0,
+        "start": 29.98,
+        "end": 29.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.15728246053059897,
+        "compression_ratio": 8.815384615384616,
+        "no_speech_prob": 0.0719529315829277,
+        "words": []
+      },
+      {
+        "id": 16,
+        "seek": 0,
+        "start": 29.98,
+        "end": 29.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.15728246053059897,
+        "compression_ratio": 8.815384615384616,
+        "no_speech_prob": 0.0719529315829277,
+        "words": []
+      },
+      {
+        "id": 17,
+        "seek": 0,
+        "start": 29.98,
+        "end": 29.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.15728246053059897,
+        "compression_ratio": 8.815384615384616,
+        "no_speech_prob": 0.0719529315829277,
+        "words": []
+      },
+      {
+        "id": 18,
+        "seek": 0,
+        "start": 29.98,
+        "end": 29.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.15728246053059897,
+        "compression_ratio": 8.815384615384616,
+        "no_speech_prob": 0.0719529315829277,
+        "words": []
+      },
+      {
+        "id": 19,
+        "seek": 0,
+        "start": 29.98,
+        "end": 29.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.15728246053059897,
+        "compression_ratio": 8.815384615384616,
+        "no_speech_prob": 0.0719529315829277,
+        "words": []
+      },
+      {
+        "id": 20,
+        "seek": 0,
+        "start": 29.98,
+        "end": 29.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.15728246053059897,
+        "compression_ratio": 8.815384615384616,
+        "no_speech_prob": 0.0719529315829277,
+        "words": []
+      },
+      {
+        "id": 21,
+        "seek": 0,
+        "start": 29.98,
+        "end": 29.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.15728246053059897,
+        "compression_ratio": 8.815384615384616,
+        "no_speech_prob": 0.0719529315829277,
+        "words": []
+      },
+      {
+        "id": 22,
+        "seek": 0,
+        "start": 29.98,
+        "end": 29.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.15728246053059897,
+        "compression_ratio": 8.815384615384616,
+        "no_speech_prob": 0.0719529315829277,
+        "words": []
+      },
+      {
+        "id": 23,
+        "seek": 0,
+        "start": 29.98,
+        "end": 29.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.15728246053059897,
+        "compression_ratio": 8.815384615384616,
+        "no_speech_prob": 0.0719529315829277,
+        "words": []
+      },
+      {
+        "id": 24,
+        "seek": 0,
+        "start": 29.98,
+        "end": 29.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.15728246053059897,
+        "compression_ratio": 8.815384615384616,
+        "no_speech_prob": 0.0719529315829277,
+        "words": []
+      },
+      {
+        "id": 25,
+        "seek": 0,
+        "start": 29.98,
+        "end": 29.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.15728246053059897,
+        "compression_ratio": 8.815384615384616,
+        "no_speech_prob": 0.0719529315829277,
+        "words": []
+      },
+      {
+        "id": 26,
+        "seek": 0,
+        "start": 29.98,
+        "end": 29.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.15728246053059897,
+        "compression_ratio": 8.815384615384616,
+        "no_speech_prob": 0.0719529315829277,
+        "words": []
+      },
+      {
+        "id": 27,
+        "seek": 2998,
+        "start": 29.98,
+        "end": 31.56,
+        "text": "也不是我的等",
+        "tokens": [
+          50364,
+          6404,
+          7296,
+          14200,
+          10187,
+          50454
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.8349190625277433,
+        "compression_ratio": 0.8225806451612904,
+        "no_speech_prob": 0.7316334843635559,
+        "words": [
+          {
+            "word": "也",
+            "start": 29.98,
+            "end": 30.34,
+            "probability": 0.09317578375339508
+          },
+          {
+            "word": "不是",
+            "start": 30.34,
+            "end": 30.64,
+            "probability": 0.6899939775466919
+          },
+          {
+            "word": "我的",
+            "start": 30.64,
+            "end": 31.12,
+            "probability": 0.9101488590240479
+          },
+          {
+            "word": "等",
+            "start": 31.12,
+            "end": 31.56,
+            "probability": 0.3684723973274231
+          }
+        ]
+      },
+      {
+        "id": 28,
+        "seek": 2998,
+        "start": 31.56,
+        "end": 32.96,
+        "text": "怕爽沒有",
+        "tokens": [
+          50454,
+          21164,
+          8164,
+          121,
+          6963,
+          50514
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.8349190625277433,
+        "compression_ratio": 0.8225806451612904,
+        "no_speech_prob": 0.7316334843635559,
+        "words": [
+          {
+            "word": "怕",
+            "start": 31.56,
+            "end": 32.08,
+            "probability": 0.14291925728321075
+          },
+          {
+            "word": "爽",
+            "start": 32.08,
+            "end": 32.44,
+            "probability": 0.793951541185379
+          },
+          {
+            "word": "沒有",
+            "start": 32.44,
+            "end": 32.96,
+            "probability": 0.6288148760795593
+          }
+        ]
+      },
+      {
+        "id": 29,
+        "seek": 2998,
+        "start": 32.96,
+        "end": 34.76,
+        "text": "我們快就消遇著",
+        "tokens": [
+          50514,
+          5884,
+          10251,
+          3111,
+          28837,
+          3330,
+          229,
+          19382,
+          50614
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.8349190625277433,
+        "compression_ratio": 0.8225806451612904,
+        "no_speech_prob": 0.7316334843635559,
+        "words": [
+          {
+            "word": "我們",
+            "start": 32.96,
+            "end": 33.42,
+            "probability": 0.012451373040676117
+          },
+          {
+            "word": "快",
+            "start": 33.42,
+            "end": 33.68,
+            "probability": 0.6705450415611267
+          },
+          {
+            "word": "就",
+            "start": 33.68,
+            "end": 33.88,
+            "probability": 0.32666364312171936
+          },
+          {
+            "word": "消",
+            "start": 33.88,
+            "end": 34.14,
+            "probability": 0.35227853059768677
+          },
+          {
+            "word": "遇",
+            "start": 34.14,
+            "end": 34.38,
+            "probability": 0.6628298163414001
+          },
+          {
+            "word": "著",
+            "start": 34.38,
+            "end": 34.76,
+            "probability": 0.36848434805870056
+          }
+        ]
+      }
+    ],
+    "language": "zh"
+  }
+}

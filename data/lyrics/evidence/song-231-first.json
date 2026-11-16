@@ -1,0 +1,480 @@
+{
+  "audioSha256": "2268d5c572915693ac5c2294b995b15c8229e7744e377d937c9c17ad52c808be",
+  "model": "whisper-base",
+  "start": 0,
+  "end": 35,
+  "result": {
+    "text": "我会不会有什么好事我会不会有什么好事我会不会有什么好事海浪无声将夜幕伤伤夜幕",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 23.1,
+        "end": 25.34,
+        "text": "我会不会有什么好事",
+        "tokens": [
+          50364,
+          1654,
+          12949,
+          47928,
+          2412,
+          10440,
+          2131,
+          6973,
+          50464
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.31184738047801663,
+        "compression_ratio": 9.878048780487806,
+        "no_speech_prob": 0.7109630703926086,
+        "words": [
+          {
+            "word": "我",
+            "start": 23.1,
+            "end": 24.5,
+            "probability": 0.10649391263723373
+          },
+          {
+            "word": "会",
+            "start": 24.5,
+            "end": 25.34,
+            "probability": 0.022468259558081627
+          },
+          {
+            "word": "不会",
+            "start": 25.34,
+            "end": 25.34,
+            "probability": 0.06093654781579971
+          },
+          {
+            "word": "有",
+            "start": 25.34,
+            "end": 25.34,
+            "probability": 0.0326039083302021
+          },
+          {
+            "word": "什么",
+            "start": 25.34,
+            "end": 25.34,
+            "probability": 0.04474803805351257
+          },
+          {
+            "word": "好",
+            "start": 25.34,
+            "end": 25.34,
+            "probability": 0.13088437914848328
+          },
+          {
+            "word": "事",
+            "start": 25.34,
+            "end": 25.34,
+            "probability": 0.05532652512192726
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "seek": 0,
+        "start": 25.34,
+        "end": 25.34,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.31184738047801663,
+        "compression_ratio": 9.878048780487806,
+        "no_speech_prob": 0.7109630703926086,
+        "words": []
+      },
+      {
+        "id": 2,
+        "seek": 0,
+        "start": 25.34,
+        "end": 25.34,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.31184738047801663,
+        "compression_ratio": 9.878048780487806,
+        "no_speech_prob": 0.7109630703926086,
+        "words": []
+      },
+      {
+        "id": 3,
+        "seek": 0,
+        "start": 25.34,
+        "end": 25.34,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.31184738047801663,
+        "compression_ratio": 9.878048780487806,
+        "no_speech_prob": 0.7109630703926086,
+        "words": []
+      },
+      {
+        "id": 4,
+        "seek": 0,
+        "start": 25.34,
+        "end": 25.34,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.31184738047801663,
+        "compression_ratio": 9.878048780487806,
+        "no_speech_prob": 0.7109630703926086,
+        "words": []
+      },
+      {
+        "id": 5,
+        "seek": 0,
+        "start": 25.34,
+        "end": 25.34,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.31184738047801663,
+        "compression_ratio": 9.878048780487806,
+        "no_speech_prob": 0.7109630703926086,
+        "words": []
+      },
+      {
+        "id": 6,
+        "seek": 0,
+        "start": 25.34,
+        "end": 25.34,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.31184738047801663,
+        "compression_ratio": 9.878048780487806,
+        "no_speech_prob": 0.7109630703926086,
+        "words": []
+      },
+      {
+        "id": 7,
+        "seek": 0,
+        "start": 25.34,
+        "end": 25.34,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.31184738047801663,
+        "compression_ratio": 9.878048780487806,
+        "no_speech_prob": 0.7109630703926086,
+        "words": []
+      },
+      {
+        "id": 8,
+        "seek": 0,
+        "start": 25.34,
+        "end": 25.34,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.31184738047801663,
+        "compression_ratio": 9.878048780487806,
+        "no_speech_prob": 0.7109630703926086,
+        "words": []
+      },
+      {
+        "id": 9,
+        "seek": 0,
+        "start": 25.34,
+        "end": 25.34,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.31184738047801663,
+        "compression_ratio": 9.878048780487806,
+        "no_speech_prob": 0.7109630703926086,
+        "words": []
+      },
+      {
+        "id": 10,
+        "seek": 0,
+        "start": 25.34,
+        "end": 25.34,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.31184738047801663,
+        "compression_ratio": 9.878048780487806,
+        "no_speech_prob": 0.7109630703926086,
+        "words": []
+      },
+      {
+        "id": 11,
+        "seek": 0,
+        "start": 25.34,
+        "end": 25.34,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.31184738047801663,
+        "compression_ratio": 9.878048780487806,
+        "no_speech_prob": 0.7109630703926086,
+        "words": []
+      },
+      {
+        "id": 12,
+        "seek": 0,
+        "start": 25.34,
+        "end": 25.34,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.31184738047801663,
+        "compression_ratio": 9.878048780487806,
+        "no_speech_prob": 0.7109630703926086,
+        "words": []
+      },
+      {
+        "id": 13,
+        "seek": 0,
+        "start": 25.34,
+        "end": 25.9,
+        "text": "我会不会有什么好事",
+        "tokens": [
+          51664,
+          1654,
+          12949,
+          47928,
+          2412,
+          10440,
+          2131,
+          6973,
+          51764
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.31184738047801663,
+        "compression_ratio": 9.878048780487806,
+        "no_speech_prob": 0.7109630703926086,
+        "words": [
+          {
+            "word": "我",
+            "start": 25.34,
+            "end": 25.34,
+            "probability": 0.9274284839630127
+          },
+          {
+            "word": "会",
+            "start": 25.34,
+            "end": 25.9,
+            "probability": 0.97296541929245
+          },
+          {
+            "word": "不会",
+            "start": 25.9,
+            "end": 25.9,
+            "probability": 0.9876899719238281
+          },
+          {
+            "word": "有",
+            "start": 25.9,
+            "end": 25.9,
+            "probability": 0.9643099904060364
+          },
+          {
+            "word": "什么",
+            "start": 25.9,
+            "end": 25.9,
+            "probability": 0.9731999635696411
+          },
+          {
+            "word": "好",
+            "start": 25.9,
+            "end": 25.9,
+            "probability": 0.9805213212966919
+          },
+          {
+            "word": "事",
+            "start": 25.9,
+            "end": 25.9,
+            "probability": 0.9704393744468689
+          }
+        ]
+      },
+      {
+        "id": 14,
+        "seek": 0,
+        "start": 25.9,
+        "end": 29.2,
+        "text": "我会不会有什么好事",
+        "tokens": [
+          51764,
+          1654,
+          12949,
+          47928,
+          2412,
+          10440,
+          2131,
+          6973,
+          51814
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.31184738047801663,
+        "compression_ratio": 9.878048780487806,
+        "no_speech_prob": 0.7109630703926086,
+        "words": [
+          {
+            "word": "我",
+            "start": 25.9,
+            "end": 25.9,
+            "probability": 0.9274140000343323
+          },
+          {
+            "word": "会",
+            "start": 25.9,
+            "end": 29.2,
+            "probability": 0.9742310643196106
+          },
+          {
+            "word": "不会",
+            "start": 29.2,
+            "end": 29.2,
+            "probability": 0.9860500693321228
+          },
+          {
+            "word": "有",
+            "start": 29.2,
+            "end": 29.2,
+            "probability": 0.9742208123207092
+          },
+          {
+            "word": "什么",
+            "start": 29.2,
+            "end": 29.2,
+            "probability": 0.9755486249923706
+          },
+          {
+            "word": "好",
+            "start": 29.2,
+            "end": 29.2,
+            "probability": 0.9835143089294434
+          },
+          {
+            "word": "事",
+            "start": 29.2,
+            "end": 29.2,
+            "probability": 0.9733537435531616
+          }
+        ]
+      },
+      {
+        "id": 15,
+        "seek": 2920,
+        "start": 29.2,
+        "end": 33.48,
+        "text": "海浪无声将夜幕伤伤",
+        "tokens": [
+          50364,
+          20078,
+          11038,
+          103,
+          31364,
+          32045,
+          45456,
+          30124,
+          40211,
+          7384,
+          97,
+          7384,
+          97,
+          50594
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.9105622140984786,
+        "compression_ratio": 0.868421052631579,
+        "no_speech_prob": 0.6228459477424622,
+        "words": [
+          {
+            "word": "海",
+            "start": 29.2,
+            "end": 30.04,
+            "probability": 0.2615654468536377
+          },
+          {
+            "word": "浪",
+            "start": 30.04,
+            "end": 30.32,
+            "probability": 0.5864884853363037
+          },
+          {
+            "word": "无",
+            "start": 30.32,
+            "end": 30.78,
+            "probability": 0.6091464161872864
+          },
+          {
+            "word": "声",
+            "start": 30.78,
+            "end": 31.1,
+            "probability": 0.758621871471405
+          },
+          {
+            "word": "将",
+            "start": 31.1,
+            "end": 31.6,
+            "probability": 0.2491220235824585
+          },
+          {
+            "word": "夜",
+            "start": 31.6,
+            "end": 32.08,
+            "probability": 0.7318183183670044
+          },
+          {
+            "word": "幕",
+            "start": 32.08,
+            "end": 32.42,
+            "probability": 0.5169321298599243
+          },
+          {
+            "word": "伤",
+            "start": 32.42,
+            "end": 32.9,
+            "probability": 0.46477290242910385
+          },
+          {
+            "word": "伤",
+            "start": 32.9,
+            "end": 33.48,
+            "probability": 0.5654783397912979
+          }
+        ]
+      },
+      {
+        "id": 16,
+        "seek": 2920,
+        "start": 33.48,
+        "end": 34.92,
+        "text": "夜幕",
+        "tokens": [
+          50594,
+          30124,
+          40211,
+          50656
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.9105622140984786,
+        "compression_ratio": 0.868421052631579,
+        "no_speech_prob": 0.6228459477424622,
+        "words": [
+          {
+            "word": "夜",
+            "start": 33.48,
+            "end": 34.52,
+            "probability": 0.24737027287483215
+          },
+          {
+            "word": "幕",
+            "start": 34.52,
+            "end": 34.92,
+            "probability": 0.979316771030426
+          }
+        ]
+      }
+    ],
+    "language": "zh"
+  }
+}

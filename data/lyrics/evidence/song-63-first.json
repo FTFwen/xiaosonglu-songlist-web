@@ -1,0 +1,127 @@
+{
+  "audioSha256": "b9919408483491a44a30aff3ddec7381288069ae96a66d4f4c4cb354cfe22cb0",
+  "model": "whisper-base",
+  "start": 0,
+  "end": 35,
+  "result": {
+    "text": "我的水晴包含隔着床通常是",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 3000,
+        "start": 30.0,
+        "end": 33.72,
+        "text": "我的水晴包含隔着床",
+        "tokens": [
+          50364,
+          14200,
+          15590,
+          5094,
+          112,
+          23305,
+          2392,
+          104,
+          165,
+          1206,
+          20708,
+          6346,
+          232,
+          50572
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.8077717781066894,
+        "compression_ratio": 0.7659574468085106,
+        "no_speech_prob": 0.7988037467002869,
+        "words": [
+          {
+            "word": "我的",
+            "start": 30.0,
+            "end": 30.22,
+            "probability": 0.04116155207157135
+          },
+          {
+            "word": "水",
+            "start": 30.22,
+            "end": 30.5,
+            "probability": 0.5713170170783997
+          },
+          {
+            "word": "晴",
+            "start": 30.5,
+            "end": 30.86,
+            "probability": 0.3916248753666878
+          },
+          {
+            "word": "包",
+            "start": 30.86,
+            "end": 31.2,
+            "probability": 0.4133238196372986
+          },
+          {
+            "word": "含",
+            "start": 31.2,
+            "end": 31.82,
+            "probability": 0.7160394638776779
+          },
+          {
+            "word": "隔",
+            "start": 31.82,
+            "end": 32.22,
+            "probability": 0.6836681216955185
+          },
+          {
+            "word": "着",
+            "start": 32.22,
+            "end": 32.76,
+            "probability": 0.6167265772819519
+          },
+          {
+            "word": "床",
+            "start": 32.76,
+            "end": 33.72,
+            "probability": 0.7531516253948212
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "seek": 3000,
+        "start": 33.72,
+        "end": 34.98,
+        "text": "通常是",
+        "tokens": [
+          50572,
+          19550,
+          11279,
+          1541,
+          50614
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.8077717781066894,
+        "compression_ratio": 0.7659574468085106,
+        "no_speech_prob": 0.7988037467002869,
+        "words": [
+          {
+            "word": "通",
+            "start": 33.72,
+            "end": 34.36,
+            "probability": 0.09199340641498566
+          },
+          {
+            "word": "常",
+            "start": 34.36,
+            "end": 34.66,
+            "probability": 0.9733371734619141
+          },
+          {
+            "word": "是",
+            "start": 34.66,
+            "end": 34.98,
+            "probability": 0.8706083297729492
+          }
+        ]
+      }
+    ],
+    "language": "zh"
+  }
+}

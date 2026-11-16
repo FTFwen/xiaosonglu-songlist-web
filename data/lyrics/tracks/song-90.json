@@ -1,0 +1,185 @@
+{
+  "schemaVersion": 1,
+  "key": "song-90",
+  "songId": 90,
+  "songName": "栖凰",
+  "rowKey": "栖凰",
+  "displaySongName": "栖凰",
+  "artist": "忘川风华录 / 星尘",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "弹幕02:27:01/02:28:25点名“栖凰”，02:31:18“栖凰好听捏”，02:31:42“星尘连着来三首”。百度百科/萌百核实：栖凰为忘川风华录2018年投稿、星尘演唱。",
+  "audio": {
+    "url": "assets/audio/song_93.m4a?v=ab7e271727a5",
+    "sha256": "ab7e271727a53b3aed3b4772d34480a5c102863ad7d4a7782f365b1cd2d3fbf7"
+  },
+  "retrievedAt": "2026-11-16T04:03:01.678Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E6%A0%96%E5%87%B0&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E6%A0%96%E5%87%B0%20%E5%BF%98%E5%B7%9D%E9%A3%8E%E5%8D%8E%E5%BD%95%20%2F%20%E6%98%9F%E5%B0%98&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1319596898,
+        "name": "栖凰",
+        "artists": [
+          "忘川风华录",
+          "星尘"
+        ],
+        "album": "栖凰",
+        "durationMs": 216546,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1321874925,
+        "name": "栖凰",
+        "artists": [
+          "三无Marblue"
+        ],
+        "album": "栖凰（Cover 忘川风华录）",
+        "durationMs": 216562,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1323837008,
+        "name": "栖凰",
+        "artists": [
+          "哦漏"
+        ],
+        "album": "栖凰",
+        "durationMs": 216607,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1319803557,
+        "name": "栖凰",
+        "artists": [
+          "祖娅纳惜"
+        ],
+        "album": "栖凰",
+        "durationMs": 209920,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1320109301,
+        "name": "栖凰",
+        "artists": [
+          "漆柚"
+        ],
+        "album": "栖凰（忘川风华录/原key）",
+        "durationMs": 211704,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2043967855,
+        "name": "栖凰",
+        "artists": [
+          "洛少爷"
+        ],
+        "album": "栖凰",
+        "durationMs": 216606,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1977298970,
+        "name": "栖凰",
+        "artists": [
+          "祥嘞嘞"
+        ],
+        "album": "祥嘞嘞翻唱2",
+        "durationMs": 33186,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2113784263,
+        "name": "栖凰",
+        "artists": [
+          "三五Marlboro"
+        ],
+        "album": "栖凰",
+        "durationMs": 216562,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 90,
+      "song_name": "栖凰",
+      "show_as_song_name": "",
+      "display_song_name": "栖凰",
+      "artist": "忘川风华录 / 星尘",
+      "artist_search": "忘川风华录 星尘 栖凰",
+      "feat_artist": "",
+      "remark": "弹幕02:27:01/02:28:25点名“栖凰”，02:31:18“栖凰好听捏”，02:31:42“星尘连着来三首”。百度百科/萌百核实：栖凰为忘川风华录2018年投稿、星尘演唱。",
+      "tone": "",
+      "language": "中文",
+      "type": "忘川风华录、古风",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1BN8i66Ej6/",
+      "sing_count": 1,
+      "status_labels": "清唱、自动识别待人工复核",
+      "last_sing_at": "2026-08-23",
+      "row_key": "栖凰"
+    },
+    "sourceId": 1319596898,
+    "sourcePath": "sources/1319596898.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1319596898",
+    "selected": {
+      "id": 1319596898,
+      "name": "栖凰",
+      "artists": [
+        "忘川风华录",
+        "星尘"
+      ],
+      "album": "栖凰",
+      "durationMs": 216546,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 93
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-90-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 229.204,
+    "sourceFirstLine": {
+      "t": 3.8,
+      "text": "曲绘：白鄔東"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 3.74,
+      "endSeconds": 4.22,
+      "similarity": 0.0,
+      "recognizedText": "七",
+      "meanProbability": 0.464,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

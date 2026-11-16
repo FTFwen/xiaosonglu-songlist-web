@@ -1,0 +1,172 @@
+{
+  "schemaVersion": 1,
+  "key": "derivative-1108",
+  "songId": -1108,
+  "songName": "小松绿-失落沙洲",
+  "rowKey": "小松绿-失落沙洲",
+  "displaySongName": "失落沙洲",
+  "artist": "白烁",
+  "language": "",
+  "derivative": true,
+  "edition": "",
+  "remark": "",
+  "audio": {
+    "url": "assets/derivative/shiluo-shazhou.mp3?v=8c1ca0c5f934",
+    "sha256": "8c1ca0c5f93469685df35ee7bda1f8921ea5c50ab7c5939c37e13ee6f5fdc02d"
+  },
+  "retrievedAt": "2026-11-16T04:13:37.349Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E5%A4%B1%E8%90%BD%E6%B2%99%E6%B4%B2&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E5%A4%B1%E8%90%BD%E6%B2%99%E6%B4%B2%20%E5%BE%90%E4%BD%B3%E8%8E%B9&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 306662,
+        "name": "失落沙洲",
+        "artists": [
+          "徐佳莹"
+        ],
+        "album": "LaLa首张创作专辑",
+        "durationMs": 299346,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 411315510,
+        "name": "失落沙洲",
+        "artists": [
+          "徐佳莹"
+        ],
+        "album": "日全蚀 演唱会现场实录",
+        "durationMs": 313562,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 26211152,
+        "name": "失落沙洲",
+        "artists": [
+          "徐佳莹"
+        ],
+        "album": "继续 理想人生演唱会实况录音",
+        "durationMs": 311800,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1910319997,
+        "name": "失落沙洲",
+        "artists": [
+          "Nunu王子尹",
+          "翻自徐佳莹"
+        ],
+        "album": "失落沙洲",
+        "durationMs": 296124,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1948817707,
+        "name": "失落沙洲",
+        "artists": [
+          "高睿"
+        ],
+        "album": "失落沙洲",
+        "durationMs": 218228,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1460158239,
+        "name": "失落沙洲",
+        "artists": [
+          "Rosalind兔兔"
+        ],
+        "album": "在那以后",
+        "durationMs": 329616,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1463412080,
+        "name": "失落沙洲",
+        "artists": [
+          "桃德李Todd Li"
+        ],
+        "album": "Bitter Sweet",
+        "durationMs": 297897,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1437055350,
+        "name": "失落沙洲",
+        "artists": [
+          "火羊瞌睡了"
+        ],
+        "album": "失落沙洲（抖音弹唱版）",
+        "durationMs": 26357,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": -1108,
+      "song_name": "失落沙洲",
+      "display_song_name": "失落沙洲",
+      "artist": "徐佳莹",
+      "language": "",
+      "audio": "assets/derivative/shiluo-shazhou.mp3?v=8c1ca0c5f934",
+      "derivative": true
+    },
+    "sourceId": 306662,
+    "sourcePath": "sources/306662.json",
+    "sourceUrl": "https://music.163.com/#/song?id=306662",
+    "selected": {
+      "id": 306662,
+      "name": "失落沙洲",
+      "artists": [
+        "徐佳莹"
+      ],
+      "album": "LaLa首张创作专辑",
+      "durationMs": 299346,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 41
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/derivative-1108-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 323.709,
+    "sourceFirstLine": {
+      "t": 2.32,
+      "text": "失落沙洲"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 7.68,
+      "endSeconds": 9.08,
+      "similarity": 0.0,
+      "recognizedText": "詞",
+      "meanProbability": 0.497,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

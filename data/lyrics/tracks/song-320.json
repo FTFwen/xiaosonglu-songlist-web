@@ -1,0 +1,186 @@
+{
+  "schemaVersion": 1,
+  "key": "song-320",
+  "songId": 320,
+  "songName": "血腥爱情故事",
+  "rowKey": "血腥爱情故事",
+  "displaySongName": "血腥爱情故事",
+  "artist": "张惠妹",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "桐人今天睡大觉「全自动歌切项目」2026.10.18 歌切合集第 13 分P（章节「14_血腥爱情故事 - 张惠妹」）。弹幕共 1 条直接出现该歌名。未定位回放时间点。",
+  "audio": {
+    "url": "assets/audio/song_319.m4a?v=366c54c076f3",
+    "sha256": "366c54c076f3962dcb3fbc15288d793885b7045b1840ee93b765eec6270a02c9"
+  },
+  "retrievedAt": "2026-11-16T04:13:18.356Z",
+  "match": {
+    "status": "candidate_review_required",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E8%A1%80%E8%85%A5%E7%88%B1%E6%83%85%E6%95%85%E4%BA%8B&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E8%A1%80%E8%85%A5%E7%88%B1%E6%83%85%E6%95%85%E4%BA%8B%20%E5%BC%A0%E6%83%A0%E5%A6%B9&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 430053207,
+        "name": "血腥爱情故事",
+        "artists": [
+          "易世樊花"
+        ],
+        "album": "易世樊花2016翻唱集合",
+        "durationMs": 259918,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3454649597,
+        "name": "血腥爱情故事",
+        "artists": [
+          "黑胶放映厅"
+        ],
+        "album": "血腥爱情故事",
+        "durationMs": 241972,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1809843615,
+        "name": "血腥爱情故事",
+        "artists": [
+          "Dipper music"
+        ],
+        "album": "《少年on fire》系列",
+        "durationMs": 254376,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1830932211,
+        "name": "血腥爱情故事",
+        "artists": [
+          "青橙"
+        ],
+        "album": "血腥爱情故事",
+        "durationMs": 254584,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1388010872,
+        "name": "血腥爱情故事",
+        "artists": [
+          "江镜Lea"
+        ],
+        "album": "血腥爱情故事",
+        "durationMs": 262400,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 518895843,
+        "name": "血腥爱情故事 (Live)",
+        "artists": [
+          "林忆莲"
+        ],
+        "album": "梦想的声音第二季 第3期",
+        "durationMs": 233865,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 465161337,
+        "name": "血腥爱情故事（翻自 张惠妹）",
+        "artists": [
+          "凯瑟喵"
+        ],
+        "album": "血腥爱情故事",
+        "durationMs": 262957,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 2626423615,
+        "name": "血腥爱情故事 (live)",
+        "artists": [
+          "付辛博",
+          "胡夏",
+          "早安",
+          "宁桓宇"
+        ],
+        "album": "披荆斩棘4 第6期",
+        "durationMs": 353498,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      }
+    ],
+    "workQuery": {
+      "song_id": 320,
+      "song_name": "血腥爱情故事",
+      "show_as_song_name": "",
+      "display_song_name": "血腥爱情故事",
+      "artist": "张惠妹",
+      "artist_search": "张惠妹 血腥爱情故事",
+      "feat_artist": "",
+      "remark": "桐人今天睡大觉「全自动歌切项目」2026.10.18 歌切合集第 13 分P（章节「14_血腥爱情故事 - 张惠妹」）。弹幕共 1 条直接出现该歌名。未定位回放时间点。",
+      "tone": "",
+      "language": "中文",
+      "type": "华语经典、流行",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1UPnV6zEs4/?p=13",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-18",
+      "row_key": "血腥爱情故事"
+    },
+    "sourceId": 430053207,
+    "sourcePath": "sources/430053207.json",
+    "sourceUrl": "https://music.163.com/#/song?id=430053207",
+    "selected": {
+      "id": 430053207,
+      "name": "血腥爱情故事",
+      "artists": [
+        "易世樊花"
+      ],
+      "album": "易世樊花2016翻唱集合",
+      "durationMs": 259918,
+      "titleScore": 1,
+      "artistMatch": false,
+      "score": 0.8
+    },
+    "timedLineCount": 61
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-320-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 263.659,
+    "sourceFirstLine": {
+      "t": 10.73,
+      "text": "易世樊花"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 22.62,
+      "endSeconds": 23.82,
+      "similarity": 0.0,
+      "recognizedText": "作",
+      "meanProbability": 0.0,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

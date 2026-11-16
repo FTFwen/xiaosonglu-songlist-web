@@ -1,0 +1,183 @@
+{
+  "schemaVersion": 1,
+  "key": "song-329",
+  "songId": 329,
+  "songName": "猪之歌",
+  "rowKey": "猪之歌",
+  "displaySongName": "猪之歌",
+  "artist": "香香",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "桐人今天睡大觉「全自动歌切项目」2026.10.21 歌切合集第 4 分P（章节「04_猪之歌 - 香香」）。弹幕未直接出现歌名。本场括号歌词弹幕为 0，仅以合集章节 + 简介日期确认；未定位回放时间点。",
+  "audio": {
+    "url": "assets/audio/song_328.m4a?v=21ab6b14062e",
+    "sha256": "21ab6b14062efa824dd5e49cd179d15e891d4bf52c8d3c46d4f53c6b2aa85f8b"
+  },
+  "retrievedAt": "2026-11-16T04:07:07.366Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E7%8C%AA%E4%B9%8B%E6%AD%8C&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E7%8C%AA%E4%B9%8B%E6%AD%8C%20%E9%A6%99%E9%A6%99&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 308780,
+        "name": "猪之歌",
+        "artists": [
+          "香香"
+        ],
+        "album": "猪之歌",
+        "durationMs": 201469,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 308755,
+        "name": "猪之歌",
+        "artists": [
+          "香香"
+        ],
+        "album": "哎呦哎呦对不起",
+        "durationMs": 201467,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 308768,
+        "name": "猪之歌",
+        "artists": [
+          "香香"
+        ],
+        "album": "猪之歌(香港特别版)",
+        "durationMs": 201469,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2636773135,
+        "name": "猪之歌",
+        "artists": [
+          "香香"
+        ],
+        "album": "阿正 你是我的心你是我的肝",
+        "durationMs": 204560,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2082151357,
+        "name": "猪之歌",
+        "artists": [
+          "儿歌多多"
+        ],
+        "album": "儿歌多多经典儿歌2",
+        "durationMs": 114312,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3368842885,
+        "name": "猪之歌",
+        "artists": [
+          "DJ冷冰冰"
+        ],
+        "album": "猪之歌",
+        "durationMs": 199920,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 407759071,
+        "name": "猪之歌",
+        "artists": [
+          "文儿"
+        ],
+        "album": "文儿精选集",
+        "durationMs": 199283,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2737536356,
+        "name": "猪之歌(DJCandy版)",
+        "artists": [
+          "香香"
+        ],
+        "album": "香香经典歌曲DJ合辑",
+        "durationMs": 193124,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      }
+    ],
+    "workQuery": {
+      "song_id": 329,
+      "song_name": "猪之歌",
+      "show_as_song_name": "",
+      "display_song_name": "猪之歌",
+      "artist": "香香",
+      "artist_search": "香香 猪之歌",
+      "feat_artist": "",
+      "remark": "桐人今天睡大觉「全自动歌切项目」2026.10.21 歌切合集第 4 分P（章节「04_猪之歌 - 香香」）。弹幕未直接出现歌名。本场括号歌词弹幕为 0，仅以合集章节 + 简介日期确认；未定位回放时间点。",
+      "tone": "",
+      "language": "中文",
+      "type": "流行",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1d6n66fEgy/?p=4",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-21",
+      "row_key": "猪之歌"
+    },
+    "sourceId": 308780,
+    "sourcePath": "sources/308780.json",
+    "sourceUrl": "https://music.163.com/#/song?id=308780",
+    "selected": {
+      "id": 308780,
+      "name": "猪之歌",
+      "artists": [
+        "香香"
+      ],
+      "album": "猪之歌",
+      "durationMs": 201469,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 29
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-329-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 202.027,
+    "sourceFirstLine": {
+      "t": 27.749,
+      "text": "猪！你的鼻子有两个孔"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 30.4,
+      "endSeconds": 32.82,
+      "similarity": 0.5,
+      "recognizedText": "你得彼此有两个",
+      "meanProbability": 0.653,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

@@ -1,0 +1,183 @@
+{
+  "schemaVersion": 1,
+  "key": "song-8",
+  "songId": 8,
+  "songName": "绝不认输",
+  "rowKey": "绝不认输",
+  "displaySongName": "绝不认输",
+  "artist": "王绎龙",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "直链页面 meta description 明示日期 20260809；标题明确写出“小声跟唱《绝不认输》”，属于较短的明确演唱片段，按当前 song-cut-first 流程先收录并保留轻声跟唱说明。",
+  "audio": {
+    "url": "assets/audio/song_28.m4a?v=65113a179ce7",
+    "sha256": "65113a179ce71cf29fe2e00041ab0141dfe2e2398499479cd3cfd3408e8c2a1d"
+  },
+  "retrievedAt": "2026-11-16T04:02:44.879Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E7%BB%9D%E4%B8%8D%E8%AE%A4%E8%BE%93&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E7%BB%9D%E4%B8%8D%E8%AE%A4%E8%BE%93%20%E7%8E%8B%E7%BB%8E%E9%BE%99&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 163180,
+        "name": "绝不认输",
+        "artists": [
+          "王绎龙"
+        ],
+        "album": "绝不认输",
+        "durationMs": 199200,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 25713004,
+        "name": "绝不认输",
+        "artists": [
+          "王绎龙"
+        ],
+        "album": "DJ万万岁",
+        "durationMs": 199200,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2671674355,
+        "name": "绝不认输",
+        "artists": [
+          "RU1N2"
+        ],
+        "album": "【夢ノ結唱 ROSE】AI友希娜翻唱合辑",
+        "durationMs": 201472,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2731594280,
+        "name": "绝不认输 (DJ版)",
+        "artists": [
+          "王绎龙"
+        ],
+        "album": "",
+        "durationMs": 384705,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      },
+      {
+        "id": 3315178991,
+        "name": "绝不认输(AI白夕)",
+        "artists": [
+          "幻琉"
+        ],
+        "album": "AI白夕豹豹翻唱",
+        "durationMs": 199262,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 3315042421,
+        "name": "绝不认输(哈基米版)",
+        "artists": [
+          "幻琉"
+        ],
+        "album": "哈基米の音乐",
+        "durationMs": 199317,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 3445022953,
+        "name": "绝不认输（国语版）",
+        "artists": [
+          "重庆阿举粤语音乐"
+        ],
+        "album": "粤语：第1专辑 经典传承，再创辉煌！",
+        "durationMs": 176813,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 2731594356,
+        "name": "Dj (绝不认输 十三 Rimix 7 月3日新歌)",
+        "artists": [
+          "王绎龙"
+        ],
+        "album": "",
+        "durationMs": 384888,
+        "titleScore": 0,
+        "artistMatch": true,
+        "score": 0.2
+      }
+    ],
+    "workQuery": {
+      "song_id": 8,
+      "song_name": "绝不认输",
+      "show_as_song_name": "",
+      "display_song_name": "绝不认输",
+      "artist": "王绎龙",
+      "artist_search": "王绎龙",
+      "feat_artist": "",
+      "remark": "直链页面 meta description 明示日期 20260809；标题明确写出“小声跟唱《绝不认输》”，属于较短的明确演唱片段，按当前 song-cut-first 流程先收录并保留轻声跟唱说明。",
+      "tone": "",
+      "language": "中文",
+      "type": "流行",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1A1uy69EPP/",
+      "sing_count": 1,
+      "status_labels": "歌切直补、待原始回放定位",
+      "last_sing_at": "2026-08-09",
+      "row_key": "绝不认输"
+    },
+    "sourceId": 163180,
+    "sourcePath": "sources/163180.json",
+    "sourceUrl": "https://music.163.com/#/song?id=163180",
+    "selected": {
+      "id": 163180,
+      "name": "绝不认输",
+      "artists": [
+        "王绎龙"
+      ],
+      "album": "绝不认输",
+      "durationMs": 199200,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 64
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-8-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 225.187,
+    "sourceFirstLine": {
+      "t": 2.81,
+      "text": "我不停走在一条不回头的路"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 0.0,
+      "endSeconds": 1.0,
+      "similarity": 0.23529411764705882,
+      "recognizedText": "我要听一下",
+      "meanProbability": 0.923,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

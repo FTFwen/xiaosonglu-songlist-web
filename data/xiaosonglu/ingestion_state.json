@@ -4,7 +4,7 @@
   "roomId": "1727071052",
   "channelUid": "1891335475",
   "baselineDate": "2026-09-03",
-  "updatedAt": "2026-11-13T03:10:03.429Z",
+  "updatedAt": "2026-11-16T03:01:33.118Z",
   "processedLives": [
     {
       "liveId": "dc67a9ea-6da7-48f4-bd73-349976e92859",
@@ -43,6 +43,18 @@
       ],
       "notes": "已验证 27 个日期+歌曲键存在于事实源。",
       "reviewedAt": "2026-10-08T03:07:40.869Z"
+    },
+    {
+      "liveId": "9fc7c749-a2c9-4b63-a63e-e75ea8200f22",
+      "date": "2026-11-10",
+      "title": "对棉花糖进行一个了结",
+      "fetchComplete": true,
+      "decision": "imported",
+      "importedSongKeys": [
+        "2026-11-10::蝴蝶泉边"
+      ],
+      "notes": "已验证 1 个日期+歌曲键存在于事实源。",
+      "reviewedAt": "2026-11-16T03:01:33.118Z"
     },
     {
       "liveId": "1a81282d-5c84-4d0c-b98e-492b870f5b19",
@@ -1630,6 +1642,46 @@
       "lyricLineCount": 1,
       "candidateClusterCount": 9,
       "reviewedAt": "2026-11-13T03:10:03.429Z"
+    },
+    {
+      "liveId": "c1e996cb-ef72-41d4-b993-087794640571",
+      "date": "2026-11-13",
+      "title": "试试这个塔2",
+      "startDate": 1794579611000,
+      "stopDate": 1794587965215,
+      "decision": "no-songs",
+      "importedSongKeys": [],
+      "notes": "未发现括号歌词弹幕，也未检测到唱歌反应窗口，自动标记为无歌。",
+      "scannedAt": "2026-11-14T04:31:07.298Z",
+      "sourceFile": "_danmaku_2026-11-13_c1e996cb.json",
+      "nextOffset": 22725,
+      "apiTotal": 22725,
+      "fetchComplete": true,
+      "candidateFile": "_candidate_2026-11-13_c1e996cb.json",
+      "reusedArtifact": false,
+      "lyricLineCount": 0,
+      "candidateClusterCount": 0,
+      "reviewedAt": "2026-11-14T04:31:07.310Z"
+    },
+    {
+      "liveId": "26b7bc31-525e-4cf8-9736-a90d7c2b7255",
+      "date": "2026-11-14",
+      "title": "和小啾we were here forever （2）",
+      "startDate": 1794664586000,
+      "stopDate": 1794682882687,
+      "decision": "no-songs",
+      "importedSongKeys": [],
+      "notes": "双人合作游戏联动场（We Were Here Forever 与小啾第2次），lyricLines 0；两个 reaction 簇共16行全是游戏闲聊（战地/Apex/考试梗），patterns 命中词为零星弹幕凑巧，无好听刷屏；B站仅有3个整场录像（BV1q1s56NEzJ/BV1j2s56vEuP/BV1q1s56NE6k）无歌切。",
+      "scannedAt": "2026-11-15T04:31:16.149Z",
+      "sourceFile": "_danmaku_2026-11-14_26b7bc31.json",
+      "nextOffset": 39248,
+      "apiTotal": 39248,
+      "fetchComplete": true,
+      "candidateFile": "_candidate_2026-11-14_26b7bc31.json",
+      "reusedArtifact": false,
+      "lyricLineCount": 0,
+      "candidateClusterCount": 2,
+      "reviewedAt": "2026-11-15T04:32:44.780Z"
     }
   ]
 }

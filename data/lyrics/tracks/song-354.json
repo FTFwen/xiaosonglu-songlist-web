@@ -1,0 +1,224 @@
+{
+  "schemaVersion": 1,
+  "key": "song-354",
+  "songId": 354,
+  "songName": "メルト",
+  "rowKey": "メルト",
+  "displaySongName": "メルト",
+  "artist": "ryo / 初音ミク",
+  "language": "日文",
+  "derivative": false,
+  "edition": "",
+  "remark": "",
+  "audio": {
+    "url": "assets/audio/song_353.m4a?v=0fd231ce3191",
+    "sha256": "0fd231ce319193f706e09fc1077be864dbd4e8f76f2aecf98aadb4528a891f9c"
+  },
+  "retrievedAt": "2026-11-16T04:07:28.935Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E3%83%A1%E3%83%AB%E3%83%88&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E3%83%A1%E3%83%AB%E3%83%88%20ryo%20%2F%20%E5%88%9D%E9%9F%B3%E3%83%9F%E3%82%AF&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 825736,
+        "name": "メルト",
+        "artists": [
+          "supercell",
+          "初音ミク"
+        ],
+        "album": "メルト",
+        "durationMs": 258799,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 22677573,
+        "name": "メルト",
+        "artists": [
+          "初音ミク",
+          "ryo (supercell)"
+        ],
+        "album": "初音ミクベスト ～memories～",
+        "durationMs": 257400,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 566435258,
+        "name": "メルト",
+        "artists": [
+          "初音ミク",
+          "ryo (supercell)"
+        ],
+        "album": "初音ミク「マジカルミライ 2017」LIVE",
+        "durationMs": 375216,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 858528,
+        "name": "メルト",
+        "artists": [
+          "supercell",
+          "初音ミク"
+        ],
+        "album": "初音ミク 5thバースデー ベスト ~memories~",
+        "durationMs": 258440,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 22677415,
+        "name": "メルト",
+        "artists": [
+          "初音ミク"
+        ],
+        "album": "初音ミク ミクの日大感謝祭 2DaysコンプリートBOX",
+        "durationMs": 296133,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 22677377,
+        "name": "メルト",
+        "artists": [
+          "初音ミク"
+        ],
+        "album": "初音ミク ミクの日大感謝祭 2DaysコンプリートBOX",
+        "durationMs": 277916,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 439915632,
+        "name": "メルト",
+        "artists": [
+          "初音ミク",
+          "ryo (supercell)",
+          "東京フィルハーモニー交響楽団"
+        ],
+        "album": "初音ミクシンフォニー Miku Symphony 2016 オーケストラ ライブ CD",
+        "durationMs": 308880,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1824719186,
+        "name": "メルト",
+        "artists": [
+          "ryo (supercell)",
+          "初音ミク"
+        ],
+        "album": "初音ミク Project DIVA MEGA39’s 10th アニバーサリーコレクション",
+        "durationMs": 183120,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      }
+    ],
+    "workQuery": {
+      "song_id": 354,
+      "song_name": "メルト",
+      "show_as_song_name": "",
+      "display_song_name": "メルト",
+      "artist": "ryo / 初音ミク",
+      "artist_search": "ryo / 初音ミク",
+      "feat_artist": "",
+      "remark": "",
+      "tone": "",
+      "language": "日文",
+      "type": "Vocaloid、J-Pop",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1naxj62Epw/?p=28",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-27",
+      "row_key": "メルト"
+    },
+    "sourceId": 825736,
+    "sourcePath": "sources/825736.json",
+    "sourceUrl": "https://music.163.com/#/song?id=825736",
+    "selected": {
+      "id": 825736,
+      "name": "メルト",
+      "artists": [
+        "supercell",
+        "初音ミク"
+      ],
+      "album": "メルト",
+      "durationMs": 258799,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 49
+  },
+  "alignment": {
+    "status": "spotcheck_review_required",
+    "evidencePath": "evidence/song-354-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 261.995,
+    "sourceFirstLine": {
+      "t": 23.81,
+      "text": "朝 目が覚めて"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 24.7,
+      "endSeconds": 25.48,
+      "similarity": 0.8,
+      "recognizedText": "が覚めて",
+      "meanProbability": 0.887,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": 0.89,
+    "checks": [
+      {
+        "sourceLine": {
+          "t": 127.93,
+          "text": "隣にいる きみが笑う"
+        },
+        "evidencePath": "evidence/song-354-check0.json",
+        "candidate": {
+          "audioSeconds": 127.04,
+          "endSeconds": 128.9,
+          "similarity": 0.6153846153846154,
+          "recognizedText": "隣にいる",
+          "meanProbability": 0.746,
+          "tokenPrefixOnly": false
+        },
+        "residualSeconds": -1.78
+      },
+      {
+        "sourceLine": {
+          "t": 235.04,
+          "text": "抱きしめて"
+        },
+        "evidencePath": "evidence/song-354-check1.json",
+        "candidate": {
+          "audioSeconds": 233.21,
+          "endSeconds": 233.83,
+          "similarity": 0.2857142857142857,
+          "recognizedText": "えて",
+          "meanProbability": 0.692,
+          "tokenPrefixOnly": false
+        },
+        "residualSeconds": -2.72
+      }
+    ],
+    "asrLanguage": "ja",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

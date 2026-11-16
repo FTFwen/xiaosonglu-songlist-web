@@ -1,0 +1,183 @@
+{
+  "schemaVersion": 1,
+  "key": "song-331",
+  "songId": 331,
+  "songName": "数鸭子",
+  "rowKey": "数鸭子",
+  "displaySongName": "数鸭子",
+  "artist": "儿歌多多",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "桐人今天睡大觉「全自动歌切项目」2026.10.21 歌切合集第 6 分P（章节「06_数鸭子 - 儿歌多多」）。弹幕02:18–02:22 儿歌回簇位置与之吻合。本场括号歌词弹幕为 0，仅以合集章节 + 简介日期确认；未定位回放时间点。",
+  "audio": {
+    "url": "assets/audio/song_330.m4a?v=ca8b1e86302e",
+    "sha256": "ca8b1e86302e55f1c48ed5284bad21e9a5874dd78aa5d8a41820b2f2f3d920bf"
+  },
+  "retrievedAt": "2026-11-16T04:07:03.012Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E6%95%B0%E9%B8%AD%E5%AD%90&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E6%95%B0%E9%B8%AD%E5%AD%90%20%E5%84%BF%E6%AD%8C%E5%A4%9A%E5%A4%9A&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 2081793137,
+        "name": "数鸭子",
+        "artists": [
+          "儿歌多多"
+        ],
+        "album": "儿歌多多经典儿歌2",
+        "durationMs": 106231,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1417885730,
+        "name": "数鸭子",
+        "artists": [
+          "贝乐虎儿歌"
+        ],
+        "album": "贝乐虎儿歌",
+        "durationMs": 108500,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 5242631,
+        "name": "数鸭子",
+        "artists": [
+          "群星"
+        ],
+        "album": "如歌童年",
+        "durationMs": 90120,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 28700274,
+        "name": "数鸭子",
+        "artists": [
+          "贝瓦儿歌"
+        ],
+        "album": "贝瓦儿歌",
+        "durationMs": 79000,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2758095981,
+        "name": "数鸭子",
+        "artists": [
+          "宝宝巴士儿童故事"
+        ],
+        "album": "儿歌三百 合辑片",
+        "durationMs": 118932,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1811400601,
+        "name": "数鸭子",
+        "artists": [
+          "安安"
+        ],
+        "album": "数鸭子",
+        "durationMs": 102474,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3356371489,
+        "name": "数鸭子",
+        "artists": [
+          "儿歌大全"
+        ],
+        "album": "数鸭子",
+        "durationMs": 127959,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1485805176,
+        "name": "数鸭子",
+        "artists": [
+          "火火兔"
+        ],
+        "album": "火火兔儿歌",
+        "durationMs": 82888,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 331,
+      "song_name": "数鸭子",
+      "show_as_song_name": "",
+      "display_song_name": "数鸭子",
+      "artist": "儿歌多多",
+      "artist_search": "儿歌多多 数鸭子",
+      "feat_artist": "",
+      "remark": "桐人今天睡大觉「全自动歌切项目」2026.10.21 歌切合集第 6 分P（章节「06_数鸭子 - 儿歌多多」）。弹幕02:18–02:22 儿歌回簇位置与之吻合。本场括号歌词弹幕为 0，仅以合集章节 + 简介日期确认；未定位回放时间点。",
+      "tone": "",
+      "language": "中文",
+      "type": "翻唱、流行、儿歌",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1d6n66fEgy/?p=6",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-21",
+      "row_key": "数鸭子"
+    },
+    "sourceId": 2081793137,
+    "sourcePath": "sources/2081793137.json",
+    "sourceUrl": "https://music.163.com/#/song?id=2081793137",
+    "selected": {
+      "id": 2081793137,
+      "name": "数鸭子",
+      "artists": [
+        "儿歌多多"
+      ],
+      "album": "儿歌多多经典儿歌2",
+      "durationMs": 106231,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 36
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-331-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 112.917,
+    "sourceFirstLine": {
+      "t": 11.67,
+      "text": "门前大桥下"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 11.9,
+      "endSeconds": 12.16,
+      "similarity": 0.3333333333333333,
+      "recognizedText": "下",
+      "meanProbability": 0.702,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

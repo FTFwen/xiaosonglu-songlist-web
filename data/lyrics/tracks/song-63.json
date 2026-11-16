@@ -1,0 +1,167 @@
+{
+  "schemaVersion": 1,
+  "key": "song-63",
+  "songId": 63,
+  "songName": "世末歌者",
+  "displaySongName": "世末歌者",
+  "artist": "乐正绫 / COP",
+  "language": "中文",
+  "derivative": false,
+  "audio": {
+    "url": "assets/audio/song_48.m4a?v=b99194084834",
+    "sha256": "b9919408483491a44a30aff3ddec7381288069ae96a66d4f4c4cb354cfe22cb0"
+  },
+  "retrievedAt": "2026-11-16T03:57:35.588Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E4%B8%96%E6%9C%AB%E6%AD%8C%E8%80%85&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 429460239,
+        "name": "世末歌者",
+        "artists": [
+          "乐正绫",
+          "COP"
+        ],
+        "album": "世末歌者-COSMOSⅡ",
+        "durationMs": 321802,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2673400221,
+        "name": "世末歌者",
+        "artists": [
+          "兰音Reine"
+        ],
+        "album": "世末歌者",
+        "durationMs": 321465,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 432430040,
+        "name": "世末歌者",
+        "artists": [
+          "洛天依Official",
+          "URUUT"
+        ],
+        "album": "世末歌者",
+        "durationMs": 320880,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 455941061,
+        "name": "世末歌者",
+        "artists": [
+          "白止"
+        ],
+        "album": "【白止】世末歌者",
+        "durationMs": 319870,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 428390381,
+        "name": "世末歌者",
+        "artists": [
+          "雪霏岚岚"
+        ],
+        "album": "【雪霏岚岚】世末歌者",
+        "durationMs": 320313,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1452196049,
+        "name": "世末歌者",
+        "artists": [
+          "简尔林",
+          "星尘"
+        ],
+        "album": "简尔林的V+日记",
+        "durationMs": 322783,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 501547466,
+        "name": "世末歌者（日语ver.）",
+        "artists": [
+          "COP",
+          "AKINO",
+          "初音ミク"
+        ],
+        "album": "世末歌者（日语ver.）",
+        "durationMs": 321671,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      },
+      {
+        "id": 429460241,
+        "name": "世末歌者（inst.）",
+        "artists": [
+          "COP"
+        ],
+        "album": "世末歌者-COSMOSⅡ",
+        "durationMs": 321802,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      }
+    ],
+    "sourceId": 429460239,
+    "sourcePath": "sources/429460239.json",
+    "sourceUrl": "https://music.163.com/#/song?id=429460239",
+    "selected": {
+      "id": 429460239,
+      "name": "世末歌者",
+      "artists": [
+        "乐正绫",
+        "COP"
+      ],
+      "album": "世末歌者-COSMOSⅡ",
+      "durationMs": 321802,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 51
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-63-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 328.341,
+    "sourceFirstLine": {
+      "t": 0,
+      "text": "编调：COP"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 30.0,
+      "endSeconds": 30.22,
+      "similarity": 0.0,
+      "recognizedText": "我的",
+      "meanProbability": 0.041,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  },
+  "rowKey": "世末歌者",
+  "edition": "",
+  "remark": "来自 2026-08-18 歌切合集《【663645TV】神回！我已启动！全力绿来唱完了！8月18日歌切合集【小松绿Viridis】》的分P《16-世末歌者》。按当前 song-cut-first 策略，将合集章节名直接并入正式曲库；当前记录的是合集内顺序时间，不是原始直播回放时间。"
+}

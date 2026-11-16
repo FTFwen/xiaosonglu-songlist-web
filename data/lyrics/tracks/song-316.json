@@ -1,0 +1,187 @@
+{
+  "schemaVersion": 1,
+  "key": "song-316",
+  "songId": 316,
+  "songName": "心拍数♯0822",
+  "rowKey": "心拍数♯0822",
+  "displaySongName": "心拍数♯0822",
+  "artist": "蝶々P / 初音ミク",
+  "language": "日文",
+  "derivative": false,
+  "edition": "",
+  "remark": "秋月遥zuki 单曲歌切，标题含“约定一直相爱下去吧 直到心跳停止为止”。弹幕 03:40:41-03:40:42 出现 2 条“心拍数”。原唱证据为 蝶々P feat.初音ミク。未定位回放时间点。",
+  "audio": {
+    "url": "assets/audio/song_315.m4a?v=16d85e39d379",
+    "sha256": "16d85e39d3793f721e9888a1290e4fa7377bfe85c5578d5adf220f2c576e3287"
+  },
+  "retrievedAt": "2026-11-16T04:06:47.289Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E5%BF%83%E6%8B%8D%E6%95%B0%E2%99%AF0822&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E5%BF%83%E6%8B%8D%E6%95%B0%E2%99%AF0822%20%E8%9D%B6%E3%80%85P%20%2F%20%E5%88%9D%E9%9F%B3%E3%83%9F%E3%82%AF&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 22677419,
+        "name": "心拍数♯0822",
+        "artists": [
+          "一之瀬ユウ",
+          "初音ミク"
+        ],
+        "album": "初音ミク 5thバースデーベスト ～impacts～",
+        "durationMs": 318906,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 4884774,
+        "name": "心拍数♯0822",
+        "artists": [
+          "一之瀬ユウ",
+          "初音ミク"
+        ],
+        "album": "VOCALO TEARS",
+        "durationMs": 319786,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 33035520,
+        "name": "心拍数♯0822",
+        "artists": [
+          "H△G"
+        ],
+        "album": "最新热歌慢摇104",
+        "durationMs": 303177,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 28387253,
+        "name": "心拍数♯0822",
+        "artists": [
+          "一之瀬ユウ",
+          "置鮎龍太郎"
+        ],
+        "album": "EXIT TUNES PRESENTS ACTORS",
+        "durationMs": 319600,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 504733891,
+        "name": "心拍数#0822",
+        "artists": [
+          "H△G"
+        ],
+        "album": "声 ~VOCALOID Cover Album~",
+        "durationMs": 296866,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 28458074,
+        "name": "心拍数♯0822",
+        "artists": [
+          "りょーくん"
+        ],
+        "album": "Re:alize",
+        "durationMs": 317213,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 495690,
+        "name": "心拍数♯0822",
+        "artists": [
+          "一之瀬ユウ"
+        ],
+        "album": "pianythm",
+        "durationMs": 319786,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 26108450,
+        "name": "心拍数♯0822",
+        "artists": [
+          "染香"
+        ],
+        "album": "Time for Heroes",
+        "durationMs": 318320,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 316,
+      "song_name": "心拍数♯0822",
+      "show_as_song_name": "",
+      "display_song_name": "心拍数♯0822",
+      "artist": "蝶々P / 初音ミク",
+      "artist_search": "蝶々P 初音ミク 心拍数 0822",
+      "feat_artist": "",
+      "remark": "秋月遥zuki 单曲歌切，标题含“约定一直相爱下去吧 直到心跳停止为止”。弹幕 03:40:41-03:40:42 出现 2 条“心拍数”。原唱证据为 蝶々P feat.初音ミク。未定位回放时间点。",
+      "tone": "",
+      "language": "日文",
+      "type": "Vocaloid、J-Pop",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1XonG65EA6/",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切直补",
+      "last_sing_at": "2026-10-18",
+      "row_key": "心拍数♯0822"
+    },
+    "sourceId": 22677419,
+    "sourcePath": "sources/22677419.json",
+    "sourceUrl": "https://music.163.com/#/song?id=22677419",
+    "selected": {
+      "id": 22677419,
+      "name": "心拍数♯0822",
+      "artists": [
+        "一之瀬ユウ",
+        "初音ミク"
+      ],
+      "album": "初音ミク 5thバースデーベスト ～impacts～",
+      "durationMs": 318906,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 33
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-316-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 316.949,
+    "sourceFirstLine": {
+      "t": 23.35,
+      "text": "僕の心臓がね、止まる頃にはね"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 31.98,
+      "endSeconds": 32.46,
+      "similarity": 0.13333333333333333,
+      "recognizedText": "この",
+      "meanProbability": 0.686,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "ja",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

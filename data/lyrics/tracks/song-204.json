@@ -1,0 +1,211 @@
+{
+  "schemaVersion": 1,
+  "key": "song-204",
+  "songId": 204,
+  "songName": "春意红包",
+  "rowKey": "春意红包",
+  "displaySongName": "春意红包",
+  "artist": "乐正绫 / 洛天依 / 心华",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "UP 心灵火Flame《20260919 歌切》P6；原唱为2017拜年祭单品 Vocaloid Ver.（乐正绫/洛天依/心华，Wing翼作曲），分P时长 4:43 与原曲 4:44 吻合；2025 央视春晚翻唱版同曲",
+  "audio": {
+    "url": "assets/audio/song_203.m4a?v=9d092c174616",
+    "sha256": "9d092c1746167fdc4d5f22abcda726a5272d3ee1a0831337b9dde72e32398caa"
+  },
+  "retrievedAt": "2026-11-16T04:13:07.734Z",
+  "match": {
+    "status": "candidate_review_required",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E6%98%A5%E6%84%8F%E7%BA%A2%E5%8C%85&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E6%98%A5%E6%84%8F%E7%BA%A2%E5%8C%85%20%E4%B9%90%E6%AD%A3%E7%BB%AB%20%2F%20%E6%B4%9B%E5%A4%A9%E4%BE%9D%20%2F%20%E5%BF%83%E5%8D%8E&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 459004290,
+        "name": "春意红包",
+        "artists": [
+          "祖娅纳惜",
+          "小缘",
+          "洛萱",
+          "蔡明希（不才）",
+          "三无Marblue",
+          "泠鸢yousa"
+        ],
+        "album": "春意红包",
+        "durationMs": 284751,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 461631250,
+        "name": "春意红包",
+        "artists": [
+          "三无Marblue",
+          "祖娅纳惜",
+          "泠鸢yousa",
+          "洛萱",
+          "蔡明希（不才）",
+          "小缘"
+        ],
+        "album": "暂时先这么集合放着哈",
+        "durationMs": 284751,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2635582553,
+        "name": "春意红包",
+        "artists": [
+          "杰尔斯泰"
+        ],
+        "album": "卡拉永远ok10.11",
+        "durationMs": 218302,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2668756234,
+        "name": "春意红包",
+        "artists": [
+          "海一蓝蓝"
+        ],
+        "album": "逆行",
+        "durationMs": 113812,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2125303173,
+        "name": "春意红包",
+        "artists": [
+          "骑单车の茂茂",
+          "茉宁Yukina",
+          "世隐OuO",
+          "纪夫Junly",
+          "高八度Wise",
+          "叶娴好耶"
+        ],
+        "album": "2024年翻唱！",
+        "durationMs": 284751,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1916634415,
+        "name": "春意红包",
+        "artists": [
+          "又降乌云啦",
+          "宇宙级小狗",
+          "不爻再气啦"
+        ],
+        "album": "新春快乐",
+        "durationMs": 284784,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2662170797,
+        "name": "春意红包",
+        "artists": [
+          "w.鹤川"
+        ],
+        "album": "最新抖腿热门歌曲.152",
+        "durationMs": 167376,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1345166536,
+        "name": "春意红包",
+        "artists": [
+          "不要杀我！",
+          "今似似",
+          "商陆",
+          "兔斯夫斯基",
+          "YSCQG",
+          "Ice Queen白雪",
+          "栗子"
+        ],
+        "album": "恭喜发财红包拿来",
+        "durationMs": 289332,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 204,
+      "song_name": "春意红包",
+      "show_as_song_name": "",
+      "display_song_name": "春意红包",
+      "artist": "乐正绫 / 洛天依 / 心华",
+      "artist_search": "春意红包 乐正绫 洛天依 心华",
+      "feat_artist": "",
+      "remark": "UP 心灵火Flame《20260919 歌切》P6；原唱为2017拜年祭单品 Vocaloid Ver.（乐正绫/洛天依/心华，Wing翼作曲），分P时长 4:43 与原曲 4:44 吻合；2025 央视春晚翻唱版同曲",
+      "tone": "",
+      "language": "中文",
+      "type": "中文Vocaloid、Vocaloid",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1rZe86yE49/?p=6",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-09-19",
+      "row_key": "春意红包"
+    },
+    "sourceId": 459004290,
+    "sourcePath": "sources/459004290.json",
+    "sourceUrl": "https://music.163.com/#/song?id=459004290",
+    "selected": {
+      "id": 459004290,
+      "name": "春意红包",
+      "artists": [
+        "祖娅纳惜",
+        "小缘",
+        "洛萱",
+        "蔡明希（不才）",
+        "三无Marblue",
+        "泠鸢yousa"
+      ],
+      "album": "春意红包",
+      "durationMs": 284751,
+      "titleScore": 1,
+      "artistMatch": false,
+      "score": 0.8
+    },
+    "timedLineCount": 66
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-204-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 282.842,
+    "sourceFirstLine": {
+      "t": 0.3,
+      "text": "吉他录制：Ray雷"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 30.62,
+      "endSeconds": 32.02,
+      "similarity": 0.0,
+      "recognizedText": "我",
+      "meanProbability": 0.025,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

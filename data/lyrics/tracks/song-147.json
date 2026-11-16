@@ -1,0 +1,162 @@
+{
+  "schemaVersion": 1,
+  "key": "song-147",
+  "songId": 147,
+  "songName": "小雨",
+  "displaySongName": "小雨",
+  "artist": "黄龄",
+  "language": "中文",
+  "derivative": false,
+  "audio": {
+    "url": "assets/audio/song_146.m4a?v=2f7fe46c79c9",
+    "sha256": "2f7fe46c79c9da9c58c9043c1ab5eee6c110b4390e7b72a43459c6aadcf03be5"
+  },
+  "retrievedAt": "2026-11-16T03:57:59.389Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E5%B0%8F%E9%9B%A8&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1997435585,
+        "name": "小雨",
+        "artists": [
+          "黄龄"
+        ],
+        "album": "花&色",
+        "durationMs": 165624,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 3383921497,
+        "name": "小雨",
+        "artists": [
+          "队长",
+          "黄礼格"
+        ],
+        "album": "I AM WHAT I AM",
+        "durationMs": 208500,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1323165834,
+        "name": "小雨",
+        "artists": [
+          "林玉英"
+        ],
+        "album": "林玉英台语点歌2",
+        "durationMs": 236538,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 267806,
+        "name": "小雨",
+        "artists": [
+          "林玉英"
+        ],
+        "album": "林玉英 非常精选",
+        "durationMs": 234452,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 378604,
+        "name": "小雨",
+        "artists": [
+          "孙建平 & Sweet Style"
+        ],
+        "album": "音乐磁场13",
+        "durationMs": 229333,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 242682,
+        "name": "小雨",
+        "artists": [
+          "韩宝仪"
+        ],
+        "album": "台语点歌集1",
+        "durationMs": 208906,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2633242499,
+        "name": "小雨",
+        "artists": [
+          "方续Cuz"
+        ],
+        "album": "小雨",
+        "durationMs": 238757,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2055776337,
+        "name": "小雨",
+        "artists": [
+          "王琦"
+        ],
+        "album": "闽南语流行金曲 34",
+        "durationMs": 241152,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "sourceId": 1997435585,
+    "sourcePath": "sources/1997435585.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1997435585",
+    "selected": {
+      "id": 1997435585,
+      "name": "小雨",
+      "artists": [
+        "黄龄"
+      ],
+      "album": "花&色",
+      "durationMs": 165624,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 46
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-147-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 167.323,
+    "sourceFirstLine": {
+      "t": 1.75,
+      "text": "配唱制作人 : 闫骁男@骁Studio"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 0.3,
+      "endSeconds": 0.48,
+      "similarity": 0.125,
+      "recognizedText": "唱",
+      "meanProbability": 0.729,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  },
+  "rowKey": "小雨",
+  "edition": "",
+  "remark": ""
+}

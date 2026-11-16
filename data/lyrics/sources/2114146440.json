@@ -1,0 +1,24 @@
+{
+  "platform": "netease",
+  "id": 2114146440,
+  "url": "https://music.163.com/#/song?id=2114146440",
+  "apiUrl": "https://music.163.com/api/song/lyric?id=2114146440&lv=1&kv=1&tv=-1",
+  "retrievedAt": "2026-11-16T04:07:01.643Z",
+  "track": {
+    "id": 2114146440,
+    "name": "蓝精灵",
+    "artists": [
+      "儿歌多多"
+    ],
+    "album": "蓝精灵",
+    "durationMs": 124042,
+    "titleScore": 1,
+    "artistMatch": true,
+    "score": 1
+  },
+  "lrc": "",
+  "translationLrc": "",
+  "romanizationLrc": "",
+  "instrumental": false,
+  "lines": []
+}

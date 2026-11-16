@@ -1,0 +1,194 @@
+{
+  "schemaVersion": 1,
+  "key": "song-291",
+  "songId": 291,
+  "songName": "惊鹊",
+  "rowKey": "惊鹊",
+  "displaySongName": "惊鹊",
+  "artist": "忘川风华录 / 海伊 / 星尘Minus",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "桐人今天睡大觉 BV1TApG6uEPX 分P01（218s），心灵火Flame BV1Qrpj6ZELm 分P01 同曲同序。弹幕 00:18:06「惊鹊神了」直接点名。分P标题的原唱字段被写坏（夹入颜文字 ₍˄·͈༝·͈˄_₎◞ ̑̑），据百度百科《惊鹊》词条：忘川风华录音乐企划国风原创曲，作曲塔库、作词冉语优、编曲Fsy小诺，虚拟歌手星尘Minus 与海伊演唱。",
+  "audio": {
+    "url": "assets/audio/song_290.m4a?v=6bbd293e5480",
+    "sha256": "6bbd293e548068485f7a801696c9a8e77373268a5c83296afd81eb294353a207"
+  },
+  "retrievedAt": "2026-11-16T04:06:22.470Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E6%83%8A%E9%B9%8A&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E6%83%8A%E9%B9%8A%20%E5%BF%98%E5%B7%9D%E9%A3%8E%E5%8D%8E%E5%BD%95%20%2F%20%E6%B5%B7%E4%BC%8A%20%2F%20%E6%98%9F%E5%B0%98Minus&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1840749937,
+        "name": "惊鹊",
+        "artists": [
+          "忘川风华录",
+          "₍˄·͈༝·͈˄*₎◞ ̑̑",
+          "海伊"
+        ],
+        "album": "惊鹊",
+        "durationMs": 216000,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1842060397,
+        "name": "惊鹊",
+        "artists": [
+          "三无Marblue",
+          "Hanser"
+        ],
+        "album": "惊鹊（翻唱）",
+        "durationMs": 214226,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2013279944,
+        "name": "惊鹊",
+        "artists": [
+          "李蚊香",
+          "云雀Cream"
+        ],
+        "album": "惊鹊",
+        "durationMs": 216624,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1860208021,
+        "name": "惊鹊",
+        "artists": [
+          "兰音Reine",
+          "扇宝"
+        ],
+        "album": "惊鹊【忘川风华录】",
+        "durationMs": 215797,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2016182203,
+        "name": "惊鹊",
+        "artists": [
+          "Yvan叶子",
+          "不闲"
+        ],
+        "album": "忘川风华录",
+        "durationMs": 215999,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1869562596,
+        "name": "惊鹊",
+        "artists": [
+          "邹秋实",
+          "周柃Kapito"
+        ],
+        "album": "惊鹊",
+        "durationMs": 214698,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1848689201,
+        "name": "惊鹊",
+        "artists": [
+          "青潋",
+          "墨绛"
+        ],
+        "album": "惊鹊",
+        "durationMs": 216000,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1961729808,
+        "name": "惊鹊",
+        "artists": [
+          "木筏",
+          "颜欢celia"
+        ],
+        "album": "惊鹊",
+        "durationMs": 214733,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 291,
+      "song_name": "惊鹊",
+      "show_as_song_name": "",
+      "display_song_name": "惊鹊",
+      "artist": "忘川风华录 / 海伊 / 星尘Minus",
+      "artist_search": "忘川风华录 / 海伊 / 星尘Minus",
+      "feat_artist": "",
+      "remark": "桐人今天睡大觉 BV1TApG6uEPX 分P01（218s），心灵火Flame BV1Qrpj6ZELm 分P01 同曲同序。弹幕 00:18:06「惊鹊神了」直接点名。分P标题的原唱字段被写坏（夹入颜文字 ₍˄·͈༝·͈˄_₎◞ ̑̑），据百度百科《惊鹊》词条：忘川风华录音乐企划国风原创曲，作曲塔库、作词冉语优、编曲Fsy小诺，虚拟歌手星尘Minus 与海伊演唱。",
+      "tone": "",
+      "language": "中文",
+      "type": "忘川风华录、国风",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1TApG6uEPX/?p=1",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-10",
+      "row_key": "惊鹊"
+    },
+    "sourceId": 1840749937,
+    "sourcePath": "sources/1840749937.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1840749937",
+    "selected": {
+      "id": 1840749937,
+      "name": "惊鹊",
+      "artists": [
+        "忘川风华录",
+        "₍˄·͈༝·͈˄*₎◞ ̑̑",
+        "海伊"
+      ],
+      "album": "惊鹊",
+      "durationMs": 216000,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 52
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-291-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 217.387,
+    "sourceFirstLine": {
+      "t": 2.352,
+      "text": "调教：瑞安Ryan"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 0.0,
+      "endSeconds": 0.24,
+      "similarity": 0.0,
+      "recognizedText": "好",
+      "meanProbability": 0.184,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

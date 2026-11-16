@@ -1,0 +1,187 @@
+{
+  "schemaVersion": 1,
+  "key": "song-152",
+  "songId": 152,
+  "songName": "純白の花～Under Divine Gaze",
+  "rowKey": "純白の花～Under Divine Gaze",
+  "displaySongName": "純白の花～Under Divine Gaze",
+  "artist": "不凋花project",
+  "language": "日文",
+  "derivative": false,
+  "edition": "",
+  "remark": "",
+  "audio": {
+    "url": "assets/audio/song_151.m4a?v=329623d1a866",
+    "sha256": "329623d1a86674a0831e07a0d9008c26152066f769637ea727c0f6e3286116dd"
+  },
+  "retrievedAt": "2026-11-16T04:04:04.277Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E7%B4%94%E7%99%BD%E3%81%AE%E8%8A%B1%EF%BD%9EUnder%20Divine%20Gaze&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E7%B4%94%E7%99%BD%E3%81%AE%E8%8A%B1%EF%BD%9EUnder%20Divine%20Gaze%20%E4%B8%8D%E5%87%8B%E8%8A%B1project&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 3333272225,
+        "name": "純白の花～Under Divine Gaze",
+        "artists": [
+          "不凋花project"
+        ],
+        "album": "弗洛物语",
+        "durationMs": 216000,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 3333273668,
+        "name": "純白の花～Under Divine Gaze 伴奏",
+        "artists": [
+          "星尘"
+        ],
+        "album": "弗洛物语",
+        "durationMs": 216000,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 3395404834,
+        "name": "归处",
+        "artists": [
+          "不凋花project"
+        ],
+        "album": "璃物语",
+        "durationMs": 249000,
+        "titleScore": 0,
+        "artistMatch": true,
+        "score": 0.2
+      },
+      {
+        "id": 3323692572,
+        "name": "残像",
+        "artists": [
+          "不凋花project",
+          "星尘"
+        ],
+        "album": "弗洛物语",
+        "durationMs": 223098,
+        "titleScore": 0,
+        "artistMatch": true,
+        "score": 0.2
+      },
+      {
+        "id": 3320705438,
+        "name": "弗洛莉卡",
+        "artists": [
+          "不凋花project"
+        ],
+        "album": "弗洛莉卡",
+        "durationMs": 180530,
+        "titleScore": 0,
+        "artistMatch": true,
+        "score": 0.2
+      },
+      {
+        "id": 3442698051,
+        "name": "弗洛莉卡Ⅱ",
+        "artists": [
+          "不凋花project",
+          "星尘"
+        ],
+        "album": "弗洛莉卡",
+        "durationMs": 212250,
+        "titleScore": 0,
+        "artistMatch": true,
+        "score": 0.2
+      },
+      {
+        "id": 3441573158,
+        "name": "双翼",
+        "artists": [
+          "不凋花project",
+          "苍穹"
+        ],
+        "album": "煌物语其一 - 双翼",
+        "durationMs": 232544,
+        "titleScore": 0,
+        "artistMatch": true,
+        "score": 0.2
+      },
+      {
+        "id": 3395404259,
+        "name": "归处 伴奏",
+        "artists": [
+          "不凋花project",
+          "诗岸"
+        ],
+        "album": "璃物语",
+        "durationMs": 249000,
+        "titleScore": 0,
+        "artistMatch": true,
+        "score": 0.2
+      }
+    ],
+    "workQuery": {
+      "song_id": 152,
+      "song_name": "純白の花～Under Divine Gaze",
+      "show_as_song_name": "",
+      "display_song_name": "純白の花～Under Divine Gaze",
+      "artist": "不凋花project",
+      "artist_search": "不凋花project",
+      "feat_artist": "",
+      "remark": "",
+      "tone": "",
+      "language": "日文",
+      "type": "流行",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=13",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-09-08",
+      "row_key": "純白の花～Under Divine Gaze"
+    },
+    "sourceId": 3333272225,
+    "sourcePath": "sources/3333272225.json",
+    "sourceUrl": "https://music.163.com/#/song?id=3333272225",
+    "selected": {
+      "id": 3333272225,
+      "name": "純白の花～Under Divine Gaze",
+      "artists": [
+        "不凋花project"
+      ],
+      "album": "弗洛物语",
+      "durationMs": 216000,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 26
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-152-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 222.424,
+    "sourceFirstLine": {
+      "t": 30.538,
+      "text": "神々の目が燃える"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 18.74,
+      "endSeconds": 20.14,
+      "similarity": 0.0,
+      "recognizedText": "ん",
+      "meanProbability": 0.01,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "ja",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

@@ -1,0 +1,173 @@
+{
+  "schemaVersion": 1,
+  "key": "derivative-1102",
+  "songId": -1102,
+  "songName": "小松绿-单相思",
+  "rowKey": "小松绿-单相思",
+  "displaySongName": "单相思",
+  "artist": "白烁",
+  "language": "",
+  "derivative": true,
+  "edition": "",
+  "remark": "",
+  "audio": {
+    "url": "assets/derivative/danxiangsi.mp3?v=f645a1e4bb90",
+    "sha256": "f645a1e4bb90cecb267ad4eb36d76a126bdab7532697cb0c1041f59f9ce508fd"
+  },
+  "retrievedAt": "2026-11-16T04:08:36.569Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E3%82%AB%E3%82%BF%E3%82%AA%E3%83%A2%E3%82%A4&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E3%82%AB%E3%82%BF%E3%82%AA%E3%83%A2%E3%82%A4%20Aimer&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E5%8D%95%E7%9B%B8%E6%80%9D&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 431259256,
+        "name": "カタオモイ",
+        "artists": [
+          "Aimer"
+        ],
+        "album": "daydream",
+        "durationMs": 207934,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 476081901,
+        "name": "カタオモイ",
+        "artists": [
+          "Aimer"
+        ],
+        "album": "BEST SELECTION \"blanc\"",
+        "durationMs": 207423,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2004802893,
+        "name": "カタオモイ",
+        "artists": [
+          "AIMER"
+        ],
+        "album": "0-9",
+        "durationMs": 207933,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2646849427,
+        "name": "カタオモイ",
+        "artists": [
+          "Hanon"
+        ],
+        "album": "カタオモイ",
+        "durationMs": 207934,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1952087295,
+        "name": "カタオモイ",
+        "artists": [
+          "DAZBEE",
+          "ゐづ"
+        ],
+        "album": "Remindful.Two",
+        "durationMs": 202848,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1402892511,
+        "name": "カタオモイ",
+        "artists": [
+          "赤夕"
+        ],
+        "album": "赤夕翻唱合辑",
+        "durationMs": 207027,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 524148291,
+        "name": "カタオモイ (Live Ver.)",
+        "artists": [
+          "Aimer"
+        ],
+        "album": "Aimer Live in 武道館 \"blanc et noir\" 音源収録特典CD",
+        "durationMs": 230146,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      },
+      {
+        "id": 2003298514,
+        "name": "カタオモイ - From THE FIRST TAKE",
+        "artists": [
+          "Aimer"
+        ],
+        "album": "カタオモイ - From THE FIRST TAKE",
+        "durationMs": 222865,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      }
+    ],
+    "workQuery": {
+      "song_id": -1102,
+      "song_name": "カタオモイ",
+      "display_song_name": "单相思",
+      "artist": "Aimer",
+      "language": "",
+      "audio": "assets/derivative/danxiangsi.mp3?v=f645a1e4bb90",
+      "derivative": true
+    },
+    "sourceId": 431259256,
+    "sourcePath": "sources/431259256.json",
+    "sourceUrl": "https://music.163.com/#/song?id=431259256",
+    "selected": {
+      "id": 431259256,
+      "name": "カタオモイ",
+      "artists": [
+        "Aimer"
+      ],
+      "album": "daydream",
+      "durationMs": 207934,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 38
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/derivative-1102-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 202.188,
+    "sourceFirstLine": {
+      "t": 1.7,
+      "text": "例えば君の顔に昔よりシワが増えても"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 0.0,
+      "endSeconds": 4.14,
+      "similarity": 0.64,
+      "recognizedText": "例えば君の顔に昔",
+      "meanProbability": 0.685,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "ja",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

@@ -1,0 +1,183 @@
+{
+  "schemaVersion": 1,
+  "key": "song-43",
+  "songId": 43,
+  "songName": "外婆桥",
+  "rowKey": "外婆桥",
+  "displaySongName": "外婆桥",
+  "artist": "任然",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "直链页面 title 为【小松绿Viridis/翻唱】《外婆桥》，meta description 明示日期 2026.08.15 与 UP 主小鸡奇遇記。song_name 归一化为真实曲名“外婆桥”。",
+  "audio": {
+    "url": "assets/audio/song_60.m4a?v=0fd994607b50",
+    "sha256": "0fd994607b509548a699afa47ac445596977d3d88f0942fbf1b99f762b03e408"
+  },
+  "retrievedAt": "2026-11-16T04:03:20.235Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E5%A4%96%E5%A9%86%E6%A1%A5&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E5%A4%96%E5%A9%86%E6%A1%A5%20%E4%BB%BB%E7%84%B6&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1393659632,
+        "name": "外婆桥",
+        "artists": [
+          "任然"
+        ],
+        "album": "外婆桥",
+        "durationMs": 261538,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 864100603,
+        "name": "外婆桥",
+        "artists": [
+          "贝瓦儿歌"
+        ],
+        "album": "贝瓦儿歌合集",
+        "durationMs": 175116,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 28837292,
+        "name": "外婆桥",
+        "artists": [
+          "张悬"
+        ],
+        "album": "热门华语230",
+        "durationMs": 208000,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1416916789,
+        "name": "外婆桥",
+        "artists": [
+          "安溥"
+        ],
+        "album": "外婆桥",
+        "durationMs": 365599,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 27928006,
+        "name": "外婆桥",
+        "artists": [
+          "洛天依Official"
+        ],
+        "album": "热门华语160",
+        "durationMs": 251559,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1930936411,
+        "name": "外婆桥",
+        "artists": [
+          "小二丫合唱团"
+        ],
+        "album": "中国经典儿歌-中国宝宝最爱(七)",
+        "durationMs": 91146,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1393659634,
+        "name": "外婆桥(伴奏）",
+        "artists": [
+          "任然"
+        ],
+        "album": "外婆桥",
+        "durationMs": 261538,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      },
+      {
+        "id": 1962039430,
+        "name": "外婆桥 (旺仔小乔版)",
+        "artists": [
+          "旺仔小乔"
+        ],
+        "album": "外婆桥",
+        "durationMs": 242496,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      }
+    ],
+    "workQuery": {
+      "song_id": 43,
+      "song_name": "外婆桥",
+      "show_as_song_name": "",
+      "display_song_name": "外婆桥",
+      "artist": "任然",
+      "artist_search": "任然",
+      "feat_artist": "",
+      "remark": "直链页面 title 为【小松绿Viridis/翻唱】《外婆桥》，meta description 明示日期 2026.08.15 与 UP 主小鸡奇遇記。song_name 归一化为真实曲名“外婆桥”。",
+      "tone": "",
+      "language": "中文",
+      "type": "流行、民谣",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1PubQ6FEh6/",
+      "sing_count": 1,
+      "status_labels": "歌切直补、待原始回放定位",
+      "last_sing_at": "2026-08-15",
+      "row_key": "外婆桥"
+    },
+    "sourceId": 1393659632,
+    "sourcePath": "sources/1393659632.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1393659632",
+    "selected": {
+      "id": 1393659632,
+      "name": "外婆桥",
+      "artists": [
+        "任然"
+      ],
+      "album": "外婆桥",
+      "durationMs": 261538,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 42
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-43-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 249.614,
+    "sourceFirstLine": {
+      "t": 15.45,
+      "text": "日本原曲：夢と葉桜"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 28.58,
+      "endSeconds": 29.98,
+      "similarity": 0.0,
+      "recognizedText": "《大",
+      "meanProbability": 0.006,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

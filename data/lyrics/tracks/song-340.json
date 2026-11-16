@@ -1,0 +1,218 @@
+{
+  "schemaVersion": 1,
+  "key": "song-340",
+  "songId": 340,
+  "songName": "地球最後の告白を",
+  "rowKey": "地球最後の告白を",
+  "displaySongName": "地球最後の告白を",
+  "artist": "kemu / GUMI",
+  "language": "日文",
+  "derivative": false,
+  "edition": "",
+  "remark": "",
+  "audio": {
+    "url": "assets/audio/song_339.m4a?v=be2d302df528",
+    "sha256": "be2d302df528c69bb3ac86f8c2a0a10e9d31ddeff4c7ada9a4a90a6e6500a498"
+  },
+  "retrievedAt": "2026-11-16T04:07:11.761Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E5%9C%B0%E7%90%83%E6%9C%80%E5%BE%8C%E3%81%AE%E5%91%8A%E7%99%BD%E3%82%92&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E5%9C%B0%E7%90%83%E6%9C%80%E5%BE%8C%E3%81%AE%E5%91%8A%E7%99%BD%E3%82%92%20kemu%20%2F%20GUMI&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 26212270,
+        "name": "地球最後の告白を",
+        "artists": [
+          "KEMU VOXX",
+          "GUMI"
+        ],
+        "album": "PANDORA VOXX complete",
+        "durationMs": 264480,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 29728225,
+        "name": "地球最後の告白を",
+        "artists": [
+          "GUMI"
+        ],
+        "album": "最新热歌慢摇13",
+        "durationMs": 272222,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1384286544,
+        "name": "地球最後の告白を",
+        "artists": [
+          "鹿乃"
+        ],
+        "album": "three",
+        "durationMs": 273533,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 504733893,
+        "name": "地球最後の告白を",
+        "artists": [
+          "H△G"
+        ],
+        "album": "声 ~VOCALOID Cover Album~",
+        "durationMs": 263973,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1433194653,
+        "name": "地球最後の告白を",
+        "artists": [
+          "和楽器バンド"
+        ],
+        "album": "軌跡 BEST COLLECTION Ⅱ",
+        "durationMs": 276080,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1342361100,
+        "name": "地球最後の告白を",
+        "artists": [
+          "島爺"
+        ],
+        "album": "三途ノ川",
+        "durationMs": 269120,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 27588354,
+        "name": "地球最後の告白を",
+        "artists": [
+          "りぶ"
+        ],
+        "album": "Rib on",
+        "durationMs": 272200,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 29844579,
+        "name": "地球最後の告白を",
+        "artists": [
+          "ゆいこんぬ"
+        ],
+        "album": "最新热歌慢摇89",
+        "durationMs": 272230,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 340,
+      "song_name": "地球最後の告白を",
+      "show_as_song_name": "",
+      "display_song_name": "地球最後の告白を",
+      "artist": "kemu / GUMI",
+      "artist_search": "kemu / GUMI",
+      "feat_artist": "",
+      "remark": "",
+      "tone": "",
+      "language": "日文",
+      "type": "Vocaloid、J-Pop",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1naxj62Epw/?p=8",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-27",
+      "row_key": "地球最後の告白を"
+    },
+    "sourceId": 26212270,
+    "sourcePath": "sources/26212270.json",
+    "sourceUrl": "https://music.163.com/#/song?id=26212270",
+    "selected": {
+      "id": 26212270,
+      "name": "地球最後の告白を",
+      "artists": [
+        "KEMU VOXX",
+        "GUMI"
+      ],
+      "album": "PANDORA VOXX complete",
+      "durationMs": 264480,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 35
+  },
+  "alignment": {
+    "status": "spotcheck_review_required",
+    "evidencePath": "evidence/song-340-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 265.771,
+    "sourceFirstLine": {
+      "t": 1,
+      "text": "そして君が知らずに 幸せな灰になった後で"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 0.0,
+      "endSeconds": 7.78,
+      "similarity": 0.7428571428571429,
+      "recognizedText": "そして君が一つに幸せな愛になった",
+      "meanProbability": 0.775,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": -1.0,
+    "checks": [
+      {
+        "sourceLine": {
+          "t": 134.67,
+          "text": "移ろってく メトロポリスと"
+        },
+        "evidencePath": "evidence/song-340-check0.json",
+        "candidate": {
+          "audioSeconds": 139.29,
+          "endSeconds": 142.51,
+          "similarity": 0.6363636363636364,
+          "recognizedText": "いてくメトロポロンス",
+          "meanProbability": 0.591,
+          "tokenPrefixOnly": false
+        },
+        "residualSeconds": 5.62
+      },
+      {
+        "sourceLine": {
+          "t": 234.46,
+          "text": "君が好きだった って言えたよ"
+        },
+        "evidencePath": "evidence/song-340-check1.json",
+        "candidate": {
+          "audioSeconds": 237.5,
+          "endSeconds": 240.02,
+          "similarity": 0.7,
+          "recognizedText": " 君が好きだった",
+          "meanProbability": 0.961,
+          "tokenPrefixOnly": false
+        },
+        "residualSeconds": 4.04
+      }
+    ],
+    "asrLanguage": "ja",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

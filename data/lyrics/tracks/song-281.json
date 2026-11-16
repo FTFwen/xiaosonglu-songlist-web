@@ -1,0 +1,188 @@
+{
+  "schemaVersion": 1,
+  "key": "song-281",
+  "songId": 281,
+  "songName": "花月成双",
+  "rowKey": "花月成双",
+  "displaySongName": "花月成双",
+  "artist": "泠鸢yousa_朽木素_魂喵喵",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "",
+  "audio": {
+    "url": "assets/audio/song_280.m4a?v=d5bfca0023cc",
+    "sha256": "d5bfca0023cc2dee3666d92414c02d964abed83ab5bcaeeb02763925c35a16b9"
+  },
+  "retrievedAt": "2026-11-16T04:12:29.753Z",
+  "match": {
+    "status": "candidate_review_required",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E8%8A%B1%E6%9C%88%E6%88%90%E5%8F%8C&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E8%8A%B1%E6%9C%88%E6%88%90%E5%8F%8C%20%E6%B3%A0%E9%B8%A2yousa_%E6%9C%BD%E6%9C%A8%E7%B4%A0_%E9%AD%82%E5%96%B5%E5%96%B5&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1831829639,
+        "name": "花月成双",
+        "artists": [
+          "三无Marblue"
+        ],
+        "album": "bilibili Dancing Festival2021",
+        "durationMs": 198666,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1902474985,
+        "name": "花月成双",
+        "artists": [
+          "兰音Reine"
+        ],
+        "album": "花月成双",
+        "durationMs": 199572,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1848866976,
+        "name": "花月成双",
+        "artists": [
+          "柒月July"
+        ],
+        "album": "柒月的小盒子",
+        "durationMs": 76168,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1964850583,
+        "name": "花月成双",
+        "artists": [
+          "流仙"
+        ],
+        "album": "花月成双",
+        "durationMs": 198721,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1981652289,
+        "name": "花月成双",
+        "artists": [
+          "花里胡哨菜小叽",
+          "biu"
+        ],
+        "album": "花月成双",
+        "durationMs": 197937,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1918893299,
+        "name": "花月成双",
+        "artists": [
+          "玖肆仟"
+        ],
+        "album": "仟の歲 [翻唱辑]",
+        "durationMs": 198713,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1919918927,
+        "name": "花月成双",
+        "artists": [
+          "TU_兔斯基"
+        ],
+        "album": "花月成双",
+        "durationMs": 198479,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1920590880,
+        "name": "花月成双",
+        "artists": [
+          "戒网瘾游击队",
+          "锦弈",
+          "杜蘅",
+          "Lorien",
+          "咕咕栎！"
+        ],
+        "album": "花月成双",
+        "durationMs": 198734,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 281,
+      "song_name": "花月成双",
+      "show_as_song_name": "",
+      "display_song_name": "花月成双",
+      "artist": "泠鸢yousa_朽木素_魂喵喵",
+      "artist_search": "泠鸢yousa_朽木素_魂喵喵",
+      "feat_artist": "",
+      "remark": "",
+      "tone": "",
+      "language": "中文",
+      "type": "V圈",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV18Jpw6mE82/?p=14",
+      "sing_count": 2,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-16",
+      "row_key": "花月成双"
+    },
+    "sourceId": 1831829639,
+    "sourcePath": "sources/1831829639.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1831829639",
+    "selected": {
+      "id": 1831829639,
+      "name": "花月成双",
+      "artists": [
+        "三无Marblue"
+      ],
+      "album": "bilibili Dancing Festival2021",
+      "durationMs": 198666,
+      "titleScore": 1,
+      "artistMatch": false,
+      "score": 0.8
+    },
+    "timedLineCount": 30
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-281-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 197.376,
+    "sourceFirstLine": {
+      "t": 24.2,
+      "text": "早春忙 闹市攘 人来往 看 家家喜洋洋   模样"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 31.4,
+      "endSeconds": 31.72,
+      "similarity": 0.1111111111111111,
+      "recognizedText": "往",
+      "meanProbability": 0.48,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

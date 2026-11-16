@@ -1,0 +1,372 @@
+{
+  "audioSha256": "41d5ec7d9bff80ec6bd9c3a328424dd2c3e827c90ec021f4605eaf7751dfe814",
+  "model": "whisper-base",
+  "start": 220.25,
+  "end": 240.25,
+  "result": {
+    "text": "我的希望比你更貼心裡面手機更多給以後懷念一天一天貼心你的心一天一比我都能感應",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 0.0,
+        "end": 3.64,
+        "text": "我的希望比你更貼心裡面",
+        "tokens": [
+          50364,
+          14200,
+          29955,
+          11706,
+          2166,
+          19002,
+          11561,
+          120,
+          7945,
+          32399,
+          50564
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.5549940696129432,
+        "compression_ratio": 1.0857142857142856,
+        "no_speech_prob": 0.7333258986473083,
+        "words": [
+          {
+            "word": "我的",
+            "start": 0.0,
+            "end": 0.18,
+            "probability": 0.6095729470252991
+          },
+          {
+            "word": "希望",
+            "start": 0.18,
+            "end": 0.84,
+            "probability": 0.7636697888374329
+          },
+          {
+            "word": "比",
+            "start": 0.84,
+            "end": 1.46,
+            "probability": 0.19576290249824524
+          },
+          {
+            "word": "你",
+            "start": 1.46,
+            "end": 1.84,
+            "probability": 0.27125588059425354
+          },
+          {
+            "word": "更",
+            "start": 1.84,
+            "end": 2.14,
+            "probability": 0.10439483076334
+          },
+          {
+            "word": "貼",
+            "start": 2.14,
+            "end": 2.7,
+            "probability": 0.5463378503918648
+          },
+          {
+            "word": "心",
+            "start": 2.7,
+            "end": 3.04,
+            "probability": 0.9910934567451477
+          },
+          {
+            "word": "裡面",
+            "start": 3.04,
+            "end": 3.64,
+            "probability": 0.5338717103004456
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "seek": 0,
+        "start": 3.64,
+        "end": 5.5,
+        "text": "手機更多",
+        "tokens": [
+          50564,
+          11389,
+          17543,
+          19002,
+          6392,
+          50664
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.5549940696129432,
+        "compression_ratio": 1.0857142857142856,
+        "no_speech_prob": 0.7333258986473083,
+        "words": [
+          {
+            "word": "手",
+            "start": 3.64,
+            "end": 4.28,
+            "probability": 0.42249172925949097
+          },
+          {
+            "word": "機",
+            "start": 4.28,
+            "end": 4.6,
+            "probability": 0.6933977603912354
+          },
+          {
+            "word": "更",
+            "start": 4.6,
+            "end": 4.96,
+            "probability": 0.9849125742912292
+          },
+          {
+            "word": "多",
+            "start": 4.96,
+            "end": 5.5,
+            "probability": 0.9909718036651611
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "seek": 0,
+        "start": 5.5,
+        "end": 8.82,
+        "text": "給以後懷念",
+        "tokens": [
+          50664,
+          17798,
+          3588,
+          5661,
+          13183,
+          115,
+          33679,
+          50814
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.5549940696129432,
+        "compression_ratio": 1.0857142857142856,
+        "no_speech_prob": 0.7333258986473083,
+        "words": [
+          {
+            "word": "給",
+            "start": 5.5,
+            "end": 6.2,
+            "probability": 0.5935937166213989
+          },
+          {
+            "word": "以",
+            "start": 6.2,
+            "end": 6.6,
+            "probability": 0.7317177653312683
+          },
+          {
+            "word": "後",
+            "start": 6.6,
+            "end": 6.82,
+            "probability": 0.9753526449203491
+          },
+          {
+            "word": "懷",
+            "start": 6.82,
+            "end": 7.26,
+            "probability": 0.6344517171382904
+          },
+          {
+            "word": "念",
+            "start": 7.26,
+            "end": 8.82,
+            "probability": 0.47467002272605896
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "seek": 0,
+        "start": 10.0,
+        "end": 12.2,
+        "text": "一天一天",
+        "tokens": [
+          50864,
+          2257,
+          6135,
+          2257,
+          6135,
+          50994
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.5549940696129432,
+        "compression_ratio": 1.0857142857142856,
+        "no_speech_prob": 0.7333258986473083,
+        "words": [
+          {
+            "word": "一",
+            "start": 9.71,
+            "end": 10.3,
+            "probability": 0.7350853681564331
+          },
+          {
+            "word": "天",
+            "start": 10.3,
+            "end": 10.92,
+            "probability": 0.7005614042282104
+          },
+          {
+            "word": "一",
+            "start": 10.92,
+            "end": 11.62,
+            "probability": 0.8345507383346558
+          },
+          {
+            "word": "天",
+            "start": 11.62,
+            "end": 12.2,
+            "probability": 0.9951855540275574
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "seek": 0,
+        "start": 12.2,
+        "end": 14.3,
+        "text": "貼心你的心",
+        "tokens": [
+          50994,
+          11561,
+          120,
+          7945,
+          18961,
+          7945,
+          51114
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.5549940696129432,
+        "compression_ratio": 1.0857142857142856,
+        "no_speech_prob": 0.7333258986473083,
+        "words": [
+          {
+            "word": "貼",
+            "start": 12.2,
+            "end": 12.84,
+            "probability": 0.7825846970081329
+          },
+          {
+            "word": "心",
+            "start": 12.84,
+            "end": 13.1,
+            "probability": 0.4976467192173004
+          },
+          {
+            "word": "你的",
+            "start": 13.1,
+            "end": 13.7,
+            "probability": 0.9675007462501526
+          },
+          {
+            "word": "心",
+            "start": 13.7,
+            "end": 14.3,
+            "probability": 0.9745396375656128
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "seek": 0,
+        "start": 15.0,
+        "end": 17.2,
+        "text": "一天一比",
+        "tokens": [
+          51114,
+          2257,
+          6135,
+          2257,
+          11706,
+          51244
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.5549940696129432,
+        "compression_ratio": 1.0857142857142856,
+        "no_speech_prob": 0.7333258986473083,
+        "words": [
+          {
+            "word": "一",
+            "start": 14.81,
+            "end": 15.4,
+            "probability": 0.9263651371002197
+          },
+          {
+            "word": "天",
+            "start": 15.4,
+            "end": 16.0,
+            "probability": 0.9778363704681396
+          },
+          {
+            "word": "一",
+            "start": 16.0,
+            "end": 16.64,
+            "probability": 0.9573743343353271
+          },
+          {
+            "word": "比",
+            "start": 16.64,
+            "end": 17.2,
+            "probability": 0.2383645474910736
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "seek": 0,
+        "start": 17.2,
+        "end": 19.54,
+        "text": "我都能感應",
+        "tokens": [
+          51244,
+          1654,
+          7182,
+          8225,
+          9709,
+          20481,
+          51364
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.5549940696129432,
+        "compression_ratio": 1.0857142857142856,
+        "no_speech_prob": 0.7333258986473083,
+        "words": [
+          {
+            "word": "我",
+            "start": 17.2,
+            "end": 17.86,
+            "probability": 0.7628114819526672
+          },
+          {
+            "word": "都",
+            "start": 17.86,
+            "end": 18.22,
+            "probability": 0.9251154065132141
+          },
+          {
+            "word": "能",
+            "start": 18.22,
+            "end": 18.58,
+            "probability": 0.9901183247566223
+          },
+          {
+            "word": "感",
+            "start": 18.58,
+            "end": 18.9,
+            "probability": 0.25010424852371216
+          },
+          {
+            "word": "應",
+            "start": 18.9,
+            "end": 19.54,
+            "probability": 0.9683442115783691
+          }
+        ]
+      }
+    ],
+    "language": "zh"
+  }
+}

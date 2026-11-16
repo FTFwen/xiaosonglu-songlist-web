@@ -1,0 +1,187 @@
+{
+  "schemaVersion": 1,
+  "key": "song-312",
+  "songId": 312,
+  "songName": "なでなで",
+  "rowKey": "なでなで",
+  "displaySongName": "なでなで",
+  "artist": "莉犬",
+  "language": "日文",
+  "derivative": false,
+  "edition": "",
+  "remark": "弹幕 04:45:07「好萌好萌的抚摸抚摸」正是曲名意译；两份合集 P16 同名同序。",
+  "audio": {
+    "url": "assets/audio/song_311.m4a?v=6fed59e137e5",
+    "sha256": "6fed59e137e54fdddd9638fa164a1e0f91a2f800ba3c9346fda34f82b41b323b"
+  },
+  "retrievedAt": "2026-11-16T04:06:42.527Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E3%81%AA%E3%81%A7%E3%81%AA%E3%81%A7&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E3%81%AA%E3%81%A7%E3%81%AA%E3%81%A7%20%E8%8E%89%E7%8A%AC&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1912898097,
+        "name": "なでなで",
+        "artists": [
+          "莉犬"
+        ],
+        "album": "恋より甘いDolceはいかが？",
+        "durationMs": 259226,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1323304363,
+        "name": "なでなで",
+        "artists": [
+          "莉犬"
+        ],
+        "album": "「R」ealize",
+        "durationMs": 259120,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 3361264227,
+        "name": "なでなで",
+        "artists": [
+          "莉犬"
+        ],
+        "album": "",
+        "durationMs": 259120,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1872884936,
+        "name": "なでなで",
+        "artists": [
+          "雨雨子_Ameko"
+        ],
+        "album": "抚摸抚摸",
+        "durationMs": 259186,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1356248403,
+        "name": "なでなで",
+        "artists": [
+          "筱翼はね"
+        ],
+        "album": "映えラヴ",
+        "durationMs": 177819,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2045185673,
+        "name": "なでなで",
+        "artists": [
+          "CBUAD",
+          "穗月椛"
+        ],
+        "album": "なでなで",
+        "durationMs": 259196,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 435872401,
+        "name": "なでなで",
+        "artists": [
+          "小缘"
+        ],
+        "album": "小缘和小小缘",
+        "durationMs": 29104,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3321712861,
+        "name": "なでなで",
+        "artists": [
+          "卓球少年",
+          "はみ",
+          "えへへP",
+          "初音ミク"
+        ],
+        "album": "*´∀｀*",
+        "durationMs": 30000,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 312,
+      "song_name": "なでなで",
+      "show_as_song_name": "",
+      "display_song_name": "なでなで",
+      "artist": "莉犬",
+      "artist_search": "莉犬",
+      "feat_artist": "",
+      "remark": "弹幕 04:45:07「好萌好萌的抚摸抚摸」正是曲名意译；两份合集 P16 同名同序。",
+      "tone": "",
+      "language": "日文",
+      "type": "J-Pop",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1uPJ86DE95/?p=16",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-16",
+      "row_key": "なでなで"
+    },
+    "sourceId": 1912898097,
+    "sourcePath": "sources/1912898097.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1912898097",
+    "selected": {
+      "id": 1912898097,
+      "name": "なでなで",
+      "artists": [
+        "莉犬"
+      ],
+      "album": "恋より甘いDolceはいかが？",
+      "durationMs": 259226,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 60
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-312-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 269.227,
+    "sourceFirstLine": {
+      "t": 0,
+      "text": "白雪風真(莉犬)「なでなで」"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 33.12,
+      "endSeconds": 33.52,
+      "similarity": 0.16666666666666666,
+      "recognizedText": "んな",
+      "meanProbability": 0.525,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "ja",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

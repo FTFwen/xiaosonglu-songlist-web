@@ -1,0 +1,162 @@
+{
+  "schemaVersion": 1,
+  "key": "song-279",
+  "songId": 279,
+  "songName": "天文馆的猫",
+  "displaySongName": "天文馆的猫",
+  "artist": "泠鸢yousa",
+  "language": "中文",
+  "derivative": false,
+  "audio": {
+    "url": "assets/audio/song_278.m4a?v=e1726acb9297",
+    "sha256": "e1726acb9297df86b4a8bbd77d2518bdeaf36e22f12f56f95ef44a6069d9efc7"
+  },
+  "retrievedAt": "2026-11-16T03:58:50.004Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E5%A4%A9%E6%96%87%E9%A6%86%E7%9A%84%E7%8C%AB&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1804555743,
+        "name": "天文馆的猫",
+        "artists": [
+          "泠鸢yousa"
+        ],
+        "album": "折纸信笺",
+        "durationMs": 271354,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1884803446,
+        "name": "天文馆的猫",
+        "artists": [
+          "穆小泠"
+        ],
+        "album": "天文馆的猫",
+        "durationMs": 274053,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1887906475,
+        "name": "天文馆的猫",
+        "artists": [
+          "茶了了"
+        ],
+        "album": "天文馆的猫",
+        "durationMs": 285625,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1873839657,
+        "name": "天文馆的猫",
+        "artists": [
+          "芷菡"
+        ],
+        "album": "泠泠之音-茜色信笺",
+        "durationMs": 271908,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1879671713,
+        "name": "天文馆的猫",
+        "artists": [
+          "大咩"
+        ],
+        "album": "翻唱",
+        "durationMs": 288648,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1887826745,
+        "name": "天文馆的猫",
+        "artists": [
+          "袁乘风"
+        ],
+        "album": "翻唱天文馆的猫（八音盒版）",
+        "durationMs": 197119,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1887548740,
+        "name": "天文馆的猫",
+        "artists": [
+          "夜染"
+        ],
+        "album": "天文馆的猫",
+        "durationMs": 292205,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1999642605,
+        "name": "天文馆的猫",
+        "artists": [
+          "Wathet",
+          "星尘"
+        ],
+        "album": "天文馆的猫",
+        "durationMs": 288479,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "sourceId": 1804555743,
+    "sourcePath": "sources/1804555743.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1804555743",
+    "selected": {
+      "id": 1804555743,
+      "name": "天文馆的猫",
+      "artists": [
+        "泠鸢yousa"
+      ],
+      "album": "折纸信笺",
+      "durationMs": 271354,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 42
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-279-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 274.645,
+    "sourceFirstLine": {
+      "t": 13.48,
+      "text": "老迈而陈旧的天文馆"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 16.7,
+      "endSeconds": 20.48,
+      "similarity": 0.375,
+      "recognizedText": "老闆二成就的天",
+      "meanProbability": 0.554,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  },
+  "rowKey": "天文馆的猫",
+  "edition": "",
+  "remark": ""
+}

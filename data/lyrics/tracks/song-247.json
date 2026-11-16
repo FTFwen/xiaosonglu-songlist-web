@@ -1,0 +1,189 @@
+{
+  "schemaVersion": 1,
+  "key": "song-247",
+  "songId": 247,
+  "songName": "沸雪煮相思",
+  "rowKey": "沸雪煮相思",
+  "displaySongName": "沸雪煮相思",
+  "artist": "Newbiao好梦一场, 洛天依Official, 星尘infinity",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "",
+  "audio": {
+    "url": "assets/audio/song_246.m4a?v=5e59ff04c858",
+    "sha256": "5e59ff04c8585f1884b9ab6f1095e5f15a556b94fb0bf992251dfb44c423fdb7"
+  },
+  "retrievedAt": "2026-11-16T04:05:26.196Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E6%B2%B8%E9%9B%AA%E7%85%AE%E7%9B%B8%E6%80%9D&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E6%B2%B8%E9%9B%AA%E7%85%AE%E7%9B%B8%E6%80%9D%20Newbiao%E5%A5%BD%E6%A2%A6%E4%B8%80%E5%9C%BA&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 2648538864,
+        "name": "沸雪煮相思",
+        "artists": [
+          "Newbiao好梦一场",
+          "洛天依Official",
+          "星尘infinity"
+        ],
+        "album": "沸雪煮相思",
+        "durationMs": 200869,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 3384482161,
+        "name": "沸雪煮相思",
+        "artists": [
+          "聪明伶俐的小糊糊"
+        ],
+        "album": "糊糊唱歌歌",
+        "durationMs": 200859,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2740333456,
+        "name": "沸雪煮相思",
+        "artists": [
+          "亦水Akra"
+        ],
+        "album": "沸雪煮相思",
+        "durationMs": 200010,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3459775702,
+        "name": "沸雪煮相思",
+        "artists": [
+          "江南雪"
+        ],
+        "album": "网易云热门音乐",
+        "durationMs": 149933,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2716140596,
+        "name": "沸雪煮相思",
+        "artists": [
+          "吾乃斑榴是也"
+        ],
+        "album": "翻唱合集_2",
+        "durationMs": 29178,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3361334142,
+        "name": "沸雪煮相思",
+        "artists": [
+          "小贝儿"
+        ],
+        "album": "御剑行",
+        "durationMs": 191217,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2660536911,
+        "name": "这世界的浪漫还有很多",
+        "artists": [
+          "Newbiao好梦一场",
+          "洛天依Official"
+        ],
+        "album": "这世界的浪漫还有很多",
+        "durationMs": 195500,
+        "titleScore": 0,
+        "artistMatch": true,
+        "score": 0.2
+      },
+      {
+        "id": 2008048808,
+        "name": "岁末码头",
+        "artists": [
+          "Newbiao好梦一场",
+          "星尘infinity"
+        ],
+        "album": "岁末码头",
+        "durationMs": 139500,
+        "titleScore": 0,
+        "artistMatch": true,
+        "score": 0.2
+      }
+    ],
+    "workQuery": {
+      "song_id": 247,
+      "song_name": "沸雪煮相思",
+      "show_as_song_name": "",
+      "display_song_name": "沸雪煮相思",
+      "artist": "Newbiao好梦一场, 洛天依Official, 星尘infinity",
+      "artist_search": "Newbiao好梦一场, 洛天依Official, 星尘infinity",
+      "feat_artist": "",
+      "remark": "",
+      "tone": "",
+      "language": "中文",
+      "type": "中V",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1g1ah6REpb/?p=24",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-09-27",
+      "row_key": "沸雪煮相思"
+    },
+    "sourceId": 2648538864,
+    "sourcePath": "sources/2648538864.json",
+    "sourceUrl": "https://music.163.com/#/song?id=2648538864",
+    "selected": {
+      "id": 2648538864,
+      "name": "沸雪煮相思",
+      "artists": [
+        "Newbiao好梦一场",
+        "洛天依Official",
+        "星尘infinity"
+      ],
+      "album": "沸雪煮相思",
+      "durationMs": 200869,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 53
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-247-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 168.321,
+    "sourceFirstLine": {
+      "t": 14.53,
+      "text": "眉头皱 才让沿途烟波也皱"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 1.5,
+      "endSeconds": 1.64,
+      "similarity": 0.16666666666666666,
+      "recognizedText": "让",
+      "meanProbability": 0.976,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

@@ -1,0 +1,194 @@
+{
+  "schemaVersion": 1,
+  "key": "song-251",
+  "songId": 251,
+  "songName": "月下蝉",
+  "rowKey": "月下蝉",
+  "displaySongName": "月下蝉",
+  "artist": "洛天依Official, 言和, PoKeR",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "",
+  "audio": {
+    "url": "assets/audio/song_250.m4a?v=5bbb8a747d04",
+    "sha256": "5bbb8a747d04fdf192ed7fc1a1f64a52b9e3730dc9a4d15454a148c64f063da2"
+  },
+  "retrievedAt": "2026-11-16T04:05:41.706Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E6%9C%88%E4%B8%8B%E8%9D%89&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E6%9C%88%E4%B8%8B%E8%9D%89%20%E6%B4%9B%E5%A4%A9%E4%BE%9DOfficial&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 31421298,
+        "name": "月下蝉",
+        "artists": [
+          "洛天依Official",
+          "言和",
+          "PoKeR"
+        ],
+        "album": "花洛兮Ⅱ",
+        "durationMs": 323647,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 28920021,
+        "name": "月下蝉",
+        "artists": [
+          "洛天依Official",
+          "言和"
+        ],
+        "album": "热门华语214",
+        "durationMs": 323647,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2052531901,
+        "name": "月下蝉",
+        "artists": [
+          "洛天依",
+          "言和",
+          "盐水是言和水",
+          "莫米兔"
+        ],
+        "album": "莫米兔的翻调作品",
+        "durationMs": 315983,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 432430697,
+        "name": "月下蝉",
+        "artists": [
+          "小语",
+          "东京塔"
+        ],
+        "album": "小语中V翻唱",
+        "durationMs": 318002,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 444803575,
+        "name": "月下蝉",
+        "artists": [
+          "倪莫问"
+        ],
+        "album": "翻唱",
+        "durationMs": 318249,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 34899125,
+        "name": "月下蝉",
+        "artists": [
+          "连殇"
+        ],
+        "album": "热门华语276",
+        "durationMs": 317441,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1433781005,
+        "name": "月下蝉",
+        "artists": [
+          "林笑笑笑笑笑",
+          "秋里子"
+        ],
+        "album": "和基友的合唱记录~",
+        "durationMs": 320040,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1412012823,
+        "name": "月下蝉",
+        "artists": [
+          "Flc_溯洄",
+          "大家D朋友"
+        ],
+        "album": "【古风‖合唱】月下蝉Ft.D",
+        "durationMs": 318020,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 251,
+      "song_name": "月下蝉",
+      "show_as_song_name": "",
+      "display_song_name": "月下蝉",
+      "artist": "洛天依Official, 言和, PoKeR",
+      "artist_search": "洛天依Official, 言和, PoKeR",
+      "feat_artist": "",
+      "remark": "",
+      "tone": "",
+      "language": "中文",
+      "type": "中V",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1g1ah6REpb/?p=30",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-09-27",
+      "row_key": "月下蝉"
+    },
+    "sourceId": 31421298,
+    "sourcePath": "sources/31421298.json",
+    "sourceUrl": "https://music.163.com/#/song?id=31421298",
+    "selected": {
+      "id": 31421298,
+      "name": "月下蝉",
+      "artists": [
+        "洛天依Official",
+        "言和",
+        "PoKeR"
+      ],
+      "album": "花洛兮Ⅱ",
+      "durationMs": 323647,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 39
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-251-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 317.695,
+    "sourceFirstLine": {
+      "t": 44.35,
+      "text": "薄纱锦袍 飘啊飘 春来花枝招"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 27.7,
+      "endSeconds": 28.1,
+      "similarity": 0.0,
+      "recognizedText": "《大",
+      "meanProbability": 0.012,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

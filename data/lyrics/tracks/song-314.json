@@ -1,0 +1,184 @@
+{
+  "schemaVersion": 1,
+  "key": "song-314",
+  "songId": 314,
+  "songName": "如愿",
+  "rowKey": "如愿",
+  "displaySongName": "如愿",
+  "artist": "王菲",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "黄鱼鼠条“王菲三连唱之《如愿》”。弹幕 02:05:53-02:10:16 出现 15 条“如愿”。未定位回放时间点。",
+  "audio": {
+    "url": "assets/audio/song_313.m4a?v=c1b0f0230053",
+    "sha256": "c1b0f023005338777b29cb0dc82ab3f1f91060ce0fcf38f0466e5d97c32bcdd1"
+  },
+  "retrievedAt": "2026-11-16T04:06:44.982Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E5%A6%82%E6%84%BF&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E5%A6%82%E6%84%BF%20%E7%8E%8B%E8%8F%B2&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1888381008,
+        "name": "如愿",
+        "artists": [
+          "王菲"
+        ],
+        "album": "如愿",
+        "durationMs": 265383,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2040551128,
+        "name": "如愿",
+        "artists": [
+          "王菲菲"
+        ],
+        "album": "那些年",
+        "durationMs": 267885,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2162740667,
+        "name": "如愿",
+        "artists": [
+          "张天宇",
+          "王菲儿"
+        ],
+        "album": "如愿",
+        "durationMs": 265240,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1921316934,
+        "name": "如愿",
+        "artists": [
+          "雾都少儿合唱团"
+        ],
+        "album": "如愿",
+        "durationMs": 264734,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2125882703,
+        "name": "如愿",
+        "artists": [
+          "肖战"
+        ],
+        "album": "",
+        "durationMs": 256300,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1922701695,
+        "name": "如愿",
+        "artists": [
+          "葱香科学家（王悠然）"
+        ],
+        "album": "王菲",
+        "durationMs": 263458,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1937110718,
+        "name": "如愿",
+        "artists": [
+          "王梓琪"
+        ],
+        "album": "如愿",
+        "durationMs": 264369,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2024644031,
+        "name": "如愿",
+        "artists": [
+          "那只猫"
+        ],
+        "album": "Bingo!",
+        "durationMs": 261526,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 314,
+      "song_name": "如愿",
+      "show_as_song_name": "",
+      "display_song_name": "如愿",
+      "artist": "王菲",
+      "artist_search": "王菲 如愿",
+      "feat_artist": "",
+      "remark": "黄鱼鼠条“王菲三连唱之《如愿》”。弹幕 02:05:53-02:10:16 出现 15 条“如愿”。未定位回放时间点。",
+      "tone": "",
+      "language": "中文",
+      "type": "华语经典",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV12jnL6uEHb/",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切直补",
+      "last_sing_at": "2026-10-18",
+      "row_key": "如愿"
+    },
+    "sourceId": 1888381008,
+    "sourcePath": "sources/1888381008.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1888381008",
+    "selected": {
+      "id": 1888381008,
+      "name": "如愿",
+      "artists": [
+        "王菲"
+      ],
+      "album": "如愿",
+      "durationMs": 265383,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 63
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-314-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 296.844,
+    "sourceFirstLine": {
+      "t": 0,
+      "text": "配唱编写 : 窦颖/林灵"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 22.56,
+      "endSeconds": 23.96,
+      "similarity": 0.0,
+      "recognizedText": "作",
+      "meanProbability": 0.007,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

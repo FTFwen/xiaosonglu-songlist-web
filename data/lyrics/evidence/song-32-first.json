@@ -1,0 +1,148 @@
+{
+  "audioSha256": "a15cb9a1e43f9c9e7a543ffe115fc7de0fe091e03b47e797b3d6fe668a9007e3",
+  "model": "whisper-base",
+  "start": 0,
+  "end": 35,
+  "result": {
+    "text": "【音楽】とんの心臓はいはいはい",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 26.94,
+        "end": 29.78,
+        "text": "【音楽】",
+        "tokens": [
+          50364,
+          15588,
+          18034,
+          35479,
+          15623,
+          50764
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.09864341735839843,
+        "compression_ratio": 15.310344827586206,
+        "no_speech_prob": 0.2424878627061844,
+        "words": [
+          {
+            "word": "【",
+            "start": 26.94,
+            "end": 28.34,
+            "probability": 0.002512352541089058
+          },
+          {
+            "word": "音",
+            "start": 28.34,
+            "end": 29.74,
+            "probability": 0.02460065297782421
+          },
+          {
+            "word": "楽",
+            "start": 29.74,
+            "end": 29.76,
+            "probability": 0.7681049704551697
+          },
+          {
+            "word": "】",
+            "start": 29.76,
+            "end": 29.78,
+            "probability": 0.8651362657546997
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "seek": 2978,
+        "start": 29.78,
+        "end": 31.86,
+        "text": "とんの心臓",
+        "tokens": [
+          50364,
+          3193,
+          3225,
+          2972,
+          7945,
+          6784,
+          241,
+          50489
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.9858216558183942,
+        "compression_ratio": 1.064516129032258,
+        "no_speech_prob": 0.45567694306373596,
+        "words": [
+          {
+            "word": "と",
+            "start": 29.78,
+            "end": 30.12,
+            "probability": 0.12515789270401
+          },
+          {
+            "word": "ん",
+            "start": 30.12,
+            "end": 30.4,
+            "probability": 0.46191367506980896
+          },
+          {
+            "word": "の",
+            "start": 30.4,
+            "end": 30.54,
+            "probability": 0.8360431790351868
+          },
+          {
+            "word": "心",
+            "start": 30.54,
+            "end": 31.16,
+            "probability": 0.43081074953079224
+          },
+          {
+            "word": "臓",
+            "start": 31.16,
+            "end": 31.86,
+            "probability": 0.9545333683490753
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "seek": 2978,
+        "start": 31.86,
+        "end": 34.82,
+        "text": "はいはいはい",
+        "tokens": [
+          50489,
+          11050,
+          11050,
+          11050,
+          50628
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.9858216558183942,
+        "compression_ratio": 1.064516129032258,
+        "no_speech_prob": 0.45567694306373596,
+        "words": [
+          {
+            "word": "はい",
+            "start": 31.86,
+            "end": 33.08,
+            "probability": 0.06928566843271255
+          },
+          {
+            "word": "はい",
+            "start": 33.08,
+            "end": 34.1,
+            "probability": 0.6869344115257263
+          },
+          {
+            "word": "はい",
+            "start": 34.1,
+            "end": 34.82,
+            "probability": 0.8423763513565063
+          }
+        ]
+      }
+    ],
+    "language": "ja"
+  }
+}

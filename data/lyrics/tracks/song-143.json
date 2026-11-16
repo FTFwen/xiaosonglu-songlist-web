@@ -1,0 +1,165 @@
+{
+  "schemaVersion": 1,
+  "key": "song-143",
+  "songId": 143,
+  "songName": "一花依世界",
+  "displaySongName": "一花依世界",
+  "artist": "洛天依Official",
+  "language": "中文",
+  "derivative": false,
+  "audio": {
+    "url": "assets/audio/song_142.m4a?v=7680abc60396",
+    "sha256": "7680abc6039652cd69a8db0a718d6fa71b83d8d23dc46f53cea1d31fd86f01ba"
+  },
+  "retrievedAt": "2026-11-16T03:58:44.975Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E4%B8%80%E8%8A%B1%E4%BE%9D%E4%B8%96%E7%95%8C&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1979009860,
+        "name": "一花依世界",
+        "artists": [
+          "洛天依Official"
+        ],
+        "album": "依如初见",
+        "durationMs": 287640,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1951112567,
+        "name": "一花依世界",
+        "artists": [
+          "花汐玖.Alive",
+          "翼雪兰心"
+        ],
+        "album": "翼雪兰心翻调",
+        "durationMs": 287755,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1343602963,
+        "name": "一花依世界",
+        "artists": [
+          "紫格哈哈"
+        ],
+        "album": "【合奏】一花依世界",
+        "durationMs": 112080,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1897870020,
+        "name": "一花依世界",
+        "artists": [
+          "段长昭"
+        ],
+        "album": "2021结束了",
+        "durationMs": 284348,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2020265925,
+        "name": "一花依世界",
+        "artists": [
+          "早凉"
+        ],
+        "album": "一花依世界",
+        "durationMs": 110392,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1873107325,
+        "name": "一花依世界 (SoraeRuno Colour Remix)",
+        "artists": [
+          "芭万莉音",
+          "洛天依",
+          "LS",
+          "OCRASIA MUSIC"
+        ],
+        "album": "一花依世界 (SoraeRuno Colour Remix)",
+        "durationMs": 315074,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      },
+      {
+        "id": 1302140281,
+        "name": "一花依世界（Cover 洛天依）",
+        "artists": [
+          "YUKIri"
+        ],
+        "album": "YKR",
+        "durationMs": 287346,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 1310490091,
+        "name": "一花依世界（翻自 洛天依）",
+        "artists": [
+          "鹤尤yurii"
+        ],
+        "album": "一花依世界",
+        "durationMs": 289006,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      }
+    ],
+    "sourceId": 1979009860,
+    "sourcePath": "sources/1979009860.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1979009860",
+    "selected": {
+      "id": 1979009860,
+      "name": "一花依世界",
+      "artists": [
+        "洛天依Official"
+      ],
+      "album": "依如初见",
+      "durationMs": 287640,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 56
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-143-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 287.04,
+    "sourceFirstLine": {
+      "t": 11.51,
+      "text": "飞红遮艳阳"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 11.56,
+      "endSeconds": 12.16,
+      "similarity": 0.0,
+      "recognizedText": "《非",
+      "meanProbability": 0.039,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  },
+  "rowKey": "一花依世界",
+  "edition": "",
+  "remark": ""
+}

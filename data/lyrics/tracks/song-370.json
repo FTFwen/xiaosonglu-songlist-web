@@ -1,0 +1,183 @@
+{
+  "schemaVersion": 1,
+  "key": "song-370",
+  "songId": 370,
+  "songName": "海海海",
+  "rowKey": "海海海",
+  "displaySongName": "海海海",
+  "artist": "阿悄",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "",
+  "audio": {
+    "url": "assets/audio/song_369.m4a?v=7fd55a01caf1",
+    "sha256": "7fd55a01caf14513352c40a0e2de714e80448cfb3cc5c847fccc11b2af562d56"
+  },
+  "retrievedAt": "2026-11-16T04:13:29.455Z",
+  "match": {
+    "status": "candidate_review_required",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E6%B5%B7%E6%B5%B7%E6%B5%B7&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E6%B5%B7%E6%B5%B7%E6%B5%B7%20%E9%98%BF%E6%82%84&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 3346074369,
+        "name": "海海海",
+        "artists": [
+          "小雪"
+        ],
+        "album": "海海海",
+        "durationMs": 246732,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3354931679,
+        "name": "海海海",
+        "artists": [
+          "冰心"
+        ],
+        "album": "海海海",
+        "durationMs": 101849,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3393068780,
+        "name": "海海海",
+        "artists": [
+          "Cosmo"
+        ],
+        "album": "海海海",
+        "durationMs": 128000,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3346073753,
+        "name": "海海海",
+        "artists": [
+          "蛋饺Danjo"
+        ],
+        "album": "海海海",
+        "durationMs": 143522,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3345981477,
+        "name": "海海海",
+        "artists": [
+          "恻隐"
+        ],
+        "album": "全网超燃合集403",
+        "durationMs": 143203,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3376831076,
+        "name": "海海海",
+        "artists": [
+          "CK"
+        ],
+        "album": "忧郁钢琴",
+        "durationMs": 180813,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3386698976,
+        "name": "海海海",
+        "artists": [
+          "DVA"
+        ],
+        "album": "海海海",
+        "durationMs": 156473,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3345982207,
+        "name": "海海海",
+        "artists": [
+          "宅"
+        ],
+        "album": "抖音推荐的歌曲 329",
+        "durationMs": 154651,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 370,
+      "song_name": "海海海",
+      "show_as_song_name": "",
+      "display_song_name": "海海海",
+      "artist": "阿悄",
+      "artist_search": "阿悄",
+      "feat_artist": "",
+      "remark": "",
+      "tone": "",
+      "language": "中文",
+      "type": "流行",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1nRxJ6tEPC/?p=23",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-31",
+      "row_key": "海海海"
+    },
+    "sourceId": 3346074369,
+    "sourcePath": "sources/3346074369.json",
+    "sourceUrl": "https://music.163.com/#/song?id=3346074369",
+    "selected": {
+      "id": 3346074369,
+      "name": "海海海",
+      "artists": [
+        "小雪"
+      ],
+      "album": "海海海",
+      "durationMs": 246732,
+      "titleScore": 1,
+      "artistMatch": false,
+      "score": 0.8
+    },
+    "timedLineCount": 67
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-370-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 246.848,
+    "sourceFirstLine": {
+      "t": 24.3,
+      "text": "不能停止我对你的爱"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 30.08,
+      "endSeconds": 33.16,
+      "similarity": 0.5263157894736842,
+      "recognizedText": "停止下来我在没有你的",
+      "meanProbability": 0.803,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

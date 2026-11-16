@@ -1,0 +1,24 @@
+{
+  "platform": "netease",
+  "id": 3376649653,
+  "url": "https://music.163.com/#/song?id=3376649653",
+  "apiUrl": "https://music.163.com/api/song/lyric?id=3376649653&lv=1&kv=1&tv=-1",
+  "retrievedAt": "2026-11-16T04:06:20.495Z",
+  "track": {
+    "id": 3376649653,
+    "name": "宇宙冷漠",
+    "artists": [
+      "幻琉"
+    ],
+    "album": "宇宙冷漠",
+    "durationMs": 192180,
+    "titleScore": 1,
+    "artistMatch": true,
+    "score": 1
+  },
+  "lrc": "",
+  "translationLrc": "",
+  "romanizationLrc": "",
+  "instrumental": false,
+  "lines": []
+}

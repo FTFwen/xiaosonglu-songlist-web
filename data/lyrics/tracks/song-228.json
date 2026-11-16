@@ -1,0 +1,190 @@
+{
+  "schemaVersion": 1,
+  "key": "song-228",
+  "songId": 228,
+  "songName": "月灯りと氷晶核",
+  "rowKey": "月灯りと氷晶核",
+  "displaySongName": "月灯りと氷晶核",
+  "artist": "一二三 / 初音ミク",
+  "language": "日文",
+  "derivative": false,
+  "edition": "",
+  "remark": "UP 桐人今天睡大觉《2026.09.23练歌歌切合集》P19，练歌收尾曲",
+  "audio": {
+    "url": "assets/audio/song_227.m4a?v=2e84b49cef6b",
+    "sha256": "2e84b49cef6b052401ba283244dff0c9d29bee9ead4f8f0c02051ca82f980c8a"
+  },
+  "retrievedAt": "2026-11-16T04:05:13.491Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E6%9C%88%E7%81%AF%E3%82%8A%E3%81%A8%E6%B0%B7%E6%99%B6%E6%A0%B8&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E6%9C%88%E7%81%AF%E3%82%8A%E3%81%A8%E6%B0%B7%E6%99%B6%E6%A0%B8%20%E4%B8%80%E4%BA%8C%E4%B8%89%20%2F%20%E5%88%9D%E9%9F%B3%E3%83%9F%E3%82%AF&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1375960068,
+        "name": "月灯りと氷晶核",
+        "artists": [
+          "一二三",
+          "初音ミク"
+        ],
+        "album": "独りに花を添え",
+        "durationMs": 324093,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1372315637,
+        "name": "猛独が襲う",
+        "artists": [
+          "一二三",
+          "初音ミク"
+        ],
+        "album": "猛独が襲う",
+        "durationMs": 252307,
+        "titleScore": 0,
+        "artistMatch": true,
+        "score": 0.2
+      },
+      {
+        "id": 3343137235,
+        "name": "ちょこれいと",
+        "artists": [
+          "一二三"
+        ],
+        "album": "ちょこれいと",
+        "durationMs": 204000,
+        "titleScore": 0,
+        "artistMatch": true,
+        "score": 0.2
+      },
+      {
+        "id": 2026660742,
+        "name": "あんたにあっかんべ",
+        "artists": [
+          "一二三",
+          "初音ミク"
+        ],
+        "album": "あんたにあっかんべ",
+        "durationMs": 216557,
+        "titleScore": 0,
+        "artistMatch": true,
+        "score": 0.2
+      },
+      {
+        "id": 1375960065,
+        "name": "憂、安堵、藍。",
+        "artists": [
+          "一二三",
+          "初音ミク"
+        ],
+        "album": "独りに花を添え",
+        "durationMs": 305093,
+        "titleScore": 0,
+        "artistMatch": true,
+        "score": 0.2
+      },
+      {
+        "id": 1461917322,
+        "name": "毒々",
+        "artists": [
+          "一二三",
+          "音街ウナ"
+        ],
+        "album": "毒々",
+        "durationMs": 236333,
+        "titleScore": 0,
+        "artistMatch": true,
+        "score": 0.2
+      },
+      {
+        "id": 1375958749,
+        "name": "結い傷な",
+        "artists": [
+          "一二三",
+          "音街ウナ"
+        ],
+        "album": "独りに花を添え",
+        "durationMs": 208093,
+        "titleScore": 0,
+        "artistMatch": true,
+        "score": 0.2
+      },
+      {
+        "id": 1910835837,
+        "name": "ヨイヤミ",
+        "artists": [
+          "一二三"
+        ],
+        "album": "ヨイヤミ",
+        "durationMs": 223000,
+        "titleScore": 0,
+        "artistMatch": true,
+        "score": 0.2
+      }
+    ],
+    "workQuery": {
+      "song_id": 228,
+      "song_name": "月灯りと氷晶核",
+      "show_as_song_name": "",
+      "display_song_name": "月灯りと氷晶核",
+      "artist": "一二三 / 初音ミク",
+      "artist_search": "一二三 月灯りと氷晶核 初音ミク",
+      "feat_artist": "",
+      "remark": "UP 桐人今天睡大觉《2026.09.23练歌歌切合集》P19，练歌收尾曲",
+      "tone": "",
+      "language": "日文",
+      "type": "Vocaloid、J-Pop",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1ouhW6GEoD/?p=19",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-09-23",
+      "row_key": "月灯りと氷晶核"
+    },
+    "sourceId": 1375960068,
+    "sourcePath": "sources/1375960068.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1375960068",
+    "selected": {
+      "id": 1375960068,
+      "name": "月灯りと氷晶核",
+      "artists": [
+        "一二三",
+        "初音ミク"
+      ],
+      "album": "独りに花を添え",
+      "durationMs": 324093,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 48
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-228-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 327.471,
+    "sourceFirstLine": {
+      "t": 1.881,
+      "text": "唄：初音ミク"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 28.4,
+      "endSeconds": 28.98,
+      "similarity": 0.3333333333333333,
+      "recognizedText": "音",
+      "meanProbability": 0.313,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "ja",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

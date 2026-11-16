@@ -1,0 +1,185 @@
+{
+  "schemaVersion": 1,
+  "key": "song-381",
+  "songId": 381,
+  "songName": "好字唯之",
+  "rowKey": "好字唯之",
+  "displaySongName": "好字唯之",
+  "artist": "忘川风华录 / 海伊",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "章节标注 忘川风华录, 海伊，同青鸟衔风系列写法",
+  "audio": {
+    "url": "assets/audio/song_380.m4a?v=ba343034e39a",
+    "sha256": "ba343034e39adab58ef2e0ecdb5bab04d5ccb13bc3ee6b2ab4fe6fc735929863"
+  },
+  "retrievedAt": "2026-11-16T04:07:58.499Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E5%A5%BD%E5%AD%97%E5%94%AF%E4%B9%8B&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E5%A5%BD%E5%AD%97%E5%94%AF%E4%B9%8B%20%E5%BF%98%E5%B7%9D%E9%A3%8E%E5%8D%8E%E5%BD%95%20%2F%20%E6%B5%B7%E4%BC%8A&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1455047532,
+        "name": "好字唯之",
+        "artists": [
+          "忘川风华录",
+          "海伊"
+        ],
+        "album": "好字唯之",
+        "durationMs": 205831,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1455462931,
+        "name": "好字唯之",
+        "artists": [
+          "KBShinya"
+        ],
+        "album": "好字唯之",
+        "durationMs": 206079,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1456671715,
+        "name": "好字唯之",
+        "artists": [
+          "荔枝odihs"
+        ],
+        "album": "好字唯之",
+        "durationMs": 206557,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1457628502,
+        "name": "好字唯之",
+        "artists": [
+          "Hanser"
+        ],
+        "album": "hanser唱的歌(181016开始的",
+        "durationMs": 206158,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1466893162,
+        "name": "好字唯之",
+        "artists": [
+          "冽冽"
+        ],
+        "album": "好字唯之",
+        "durationMs": 205980,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2066869662,
+        "name": "好字唯之",
+        "artists": [
+          "一颗飘"
+        ],
+        "album": "原神二创歌曲",
+        "durationMs": 205869,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1455119752,
+        "name": "好字唯之",
+        "artists": [
+          "茶了了"
+        ],
+        "album": "好字唯之",
+        "durationMs": 205888,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1455757785,
+        "name": "好字唯之",
+        "artists": [
+          "墨绛"
+        ],
+        "album": "好字唯之",
+        "durationMs": 206956,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 381,
+      "song_name": "好字唯之",
+      "show_as_song_name": "",
+      "display_song_name": "好字唯之",
+      "artist": "忘川风华录 / 海伊",
+      "artist_search": "忘川风华录 / 海伊",
+      "feat_artist": "",
+      "remark": "章节标注 忘川风华录, 海伊，同青鸟衔风系列写法",
+      "tone": "",
+      "language": "中文",
+      "type": "忘川风华录、国风",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV18pWH6gEzr/?p=17",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-11-08",
+      "row_key": "好字唯之"
+    },
+    "sourceId": 1455047532,
+    "sourcePath": "sources/1455047532.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1455047532",
+    "selected": {
+      "id": 1455047532,
+      "name": "好字唯之",
+      "artists": [
+        "忘川风华录",
+        "海伊"
+      ],
+      "album": "好字唯之",
+      "durationMs": 205831,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 50
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-381-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 202.112,
+    "sourceFirstLine": {
+      "t": 5.966,
+      "text": "和声编写：雾敛/KBShinya"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 23.44,
+      "endSeconds": 24.16,
+      "similarity": 0.0,
+      "recognizedText": "作",
+      "meanProbability": 0.002,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

@@ -1,0 +1,188 @@
+{
+  "schemaVersion": 1,
+  "key": "song-363",
+  "songId": 363,
+  "songName": "何日重到苏澜桥",
+  "rowKey": "何日重到苏澜桥",
+  "displaySongName": "何日重到苏澜桥",
+  "artist": "泠鸢yousa",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "",
+  "audio": {
+    "url": "assets/audio/song_362.m4a?v=4e2b00932753",
+    "sha256": "4e2b00932753b553d76e6e8d3015a129cf996e423a8c5f17f8735bc65cb979c7"
+  },
+  "retrievedAt": "2026-11-16T04:07:43.450Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E4%BD%95%E6%97%A5%E9%87%8D%E5%88%B0%E8%8B%8F%E6%BE%9C%E6%A1%A5&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E4%BD%95%E6%97%A5%E9%87%8D%E5%88%B0%E8%8B%8F%E6%BE%9C%E6%A1%A5%20%E6%B3%A0%E9%B8%A2yousa&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 550137051,
+        "name": "何日重到苏澜桥",
+        "artists": [
+          "泠鸢yousa"
+        ],
+        "album": "何日重到苏澜桥",
+        "durationMs": 258947,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1307591820,
+        "name": "何日重到苏澜桥",
+        "artists": [
+          "伊水_Uryan",
+          "洛天依",
+          "言和"
+        ],
+        "album": "何日重到苏澜桥（洛天依 ft.言和）",
+        "durationMs": 257297,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1300778715,
+        "name": "何日重到苏澜桥",
+        "artists": [
+          "萤失",
+          "洛天依",
+          "言和",
+          "East海阳"
+        ],
+        "album": "「何日重到苏澜桥」",
+        "durationMs": 259275,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1452329956,
+        "name": "何日重到苏澜桥",
+        "artists": [
+          "早凉"
+        ],
+        "album": "何日重到苏澜桥",
+        "durationMs": 260352,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 573832856,
+        "name": "何日重到苏澜桥",
+        "artists": [
+          "翎艾"
+        ],
+        "album": "【翎艾】何日重到苏澜桥",
+        "durationMs": 257356,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 864065269,
+        "name": "何日重到苏澜桥",
+        "artists": [
+          "檀卿卿_"
+        ],
+        "album": "【檀卿卿】何日重到苏澜桥",
+        "durationMs": 264150,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1943384620,
+        "name": "何日重到苏澜桥",
+        "artists": [
+          "凌楪xyn"
+        ],
+        "album": "清凌翻唱",
+        "durationMs": 258840,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 550124058,
+        "name": "何日重到苏澜桥 (伴奏)",
+        "artists": [
+          "泠鸢yousa"
+        ],
+        "album": "何日重到苏澜桥",
+        "durationMs": 259000,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      }
+    ],
+    "workQuery": {
+      "song_id": 363,
+      "song_name": "何日重到苏澜桥",
+      "show_as_song_name": "",
+      "display_song_name": "何日重到苏澜桥",
+      "artist": "泠鸢yousa",
+      "artist_search": "泠鸢yousa",
+      "feat_artist": "",
+      "remark": "",
+      "tone": "",
+      "language": "中文",
+      "type": "国风、古风",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1nRxJ6tEPC/?p=12",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-31",
+      "row_key": "何日重到苏澜桥"
+    },
+    "sourceId": 550137051,
+    "sourcePath": "sources/550137051.json",
+    "sourceUrl": "https://music.163.com/#/song?id=550137051",
+    "selected": {
+      "id": 550137051,
+      "name": "何日重到苏澜桥",
+      "artists": [
+        "泠鸢yousa"
+      ],
+      "album": "何日重到苏澜桥",
+      "durationMs": 258947,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 40
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-363-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 253.397,
+    "sourceFirstLine": {
+      "t": 1.8,
+      "text": "故人依稀天边去，十年孤襟迎秋风"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 31.18,
+      "endSeconds": 31.52,
+      "similarity": 0.13333333333333333,
+      "recognizedText": "天",
+      "meanProbability": 0.823,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

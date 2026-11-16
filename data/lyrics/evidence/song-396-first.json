@@ -1,0 +1,198 @@
+{
+  "audioSha256": "42f8ea9df47c7261ca90578064091fd69c0a959f4325dddd9c9af5ab1889cb23",
+  "model": "whisper-base",
+  "start": 0,
+  "end": 35,
+  "result": {
+    "text": "《大年成结》《一人能够成为一人》",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 26.08,
+        "end": 28.34,
+        "text": "《大年成结》",
+        "tokens": [
+          50364,
+          9806,
+          3582,
+          5157,
+          11336,
+          45641,
+          9782,
+          50614
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.9609381602360652,
+        "compression_ratio": 2.0727272727272728,
+        "no_speech_prob": 0.6730183959007263,
+        "words": [
+          {
+            "word": "《",
+            "start": 26.08,
+            "end": 26.92,
+            "probability": 0.004326653201133013
+          },
+          {
+            "word": "大",
+            "start": 26.92,
+            "end": 26.92,
+            "probability": 0.029954709112644196
+          },
+          {
+            "word": "年",
+            "start": 26.92,
+            "end": 27.12,
+            "probability": 0.4459127187728882
+          },
+          {
+            "word": "成",
+            "start": 27.12,
+            "end": 27.6,
+            "probability": 0.1906592696905136
+          },
+          {
+            "word": "结",
+            "start": 27.6,
+            "end": 28.06,
+            "probability": 0.06746219098567963
+          },
+          {
+            "word": "》",
+            "start": 28.06,
+            "end": 28.34,
+            "probability": 0.7901878952980042
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "seek": 0,
+        "start": 28.34,
+        "end": 29.98,
+        "text": "《一人能够成为一人》",
+        "tokens": [
+          50614,
+          9806,
+          2257,
+          4035,
+          8225,
+          1787,
+          253,
+          11336,
+          13992,
+          2257,
+          4035,
+          9782,
+          50864
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.9609381602360652,
+        "compression_ratio": 2.0727272727272728,
+        "no_speech_prob": 0.6730183959007263,
+        "words": [
+          {
+            "word": "《",
+            "start": 28.34,
+            "end": 28.44,
+            "probability": 0.009260330349206924
+          },
+          {
+            "word": "一",
+            "start": 28.44,
+            "end": 28.84,
+            "probability": 0.1455790251493454
+          },
+          {
+            "word": "人",
+            "start": 28.84,
+            "end": 29.26,
+            "probability": 0.03916482627391815
+          },
+          {
+            "word": "能",
+            "start": 29.26,
+            "end": 29.98,
+            "probability": 0.11126502603292465
+          },
+          {
+            "word": "够",
+            "start": 29.98,
+            "end": 29.98,
+            "probability": 0.5173497870564461
+          },
+          {
+            "word": "成",
+            "start": 29.98,
+            "end": 29.98,
+            "probability": 0.0594245009124279
+          },
+          {
+            "word": "为",
+            "start": 29.98,
+            "end": 29.98,
+            "probability": 0.07047250866889954
+          },
+          {
+            "word": "一",
+            "start": 29.98,
+            "end": 29.98,
+            "probability": 0.0836748257279396
+          },
+          {
+            "word": "人",
+            "start": 29.98,
+            "end": 29.98,
+            "probability": 0.251167893409729
+          },
+          {
+            "word": "》",
+            "start": 29.98,
+            "end": 29.98,
+            "probability": 0.7690908908843994
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "seek": 0,
+        "start": 29.98,
+        "end": 29.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.9609381602360652,
+        "compression_ratio": 2.0727272727272728,
+        "no_speech_prob": 0.6730183959007263,
+        "words": []
+      },
+      {
+        "id": 3,
+        "seek": 0,
+        "start": 29.98,
+        "end": 29.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.9609381602360652,
+        "compression_ratio": 2.0727272727272728,
+        "no_speech_prob": 0.6730183959007263,
+        "words": []
+      },
+      {
+        "id": 4,
+        "seek": 0,
+        "start": 29.98,
+        "end": 29.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.9609381602360652,
+        "compression_ratio": 2.0727272727272728,
+        "no_speech_prob": 0.6730183959007263,
+        "words": []
+      }
+    ],
+    "language": "zh"
+  }
+}

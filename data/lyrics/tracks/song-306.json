@@ -1,0 +1,177 @@
+{
+  "schemaVersion": 1,
+  "key": "song-306",
+  "songId": 306,
+  "songName": "永不失联的爱",
+  "rowKey": "永不失联的爱",
+  "displaySongName": "永不失联的爱",
+  "artist": "周兴哲",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "存在同场独立单曲歌切 BV1wsJ86MEG9（华丽失败酱，「来一起看！！！20261016 20-03_PART000--1」）；两份合集 P6 同名同序。",
+  "audio": {
+    "url": "assets/audio/song_305.m4a?v=ffd47cfb26ee",
+    "sha256": "ffd47cfb26ee34e8f65a5334edb57fc428e86fd1c9109cd7fc5458a9c499ae67"
+  },
+  "retrievedAt": "2026-11-16T04:06:40.091Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E6%B0%B8%E4%B8%8D%E5%A4%B1%E8%81%94%E7%9A%84%E7%88%B1&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E6%B0%B8%E4%B8%8D%E5%A4%B1%E8%81%94%E7%9A%84%E7%88%B1%20%E5%91%A8%E5%85%B4%E5%93%B2&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 523250334,
+        "name": "永不失联的爱",
+        "artists": [
+          "周兴哲"
+        ],
+        "album": "如果雨之后",
+        "durationMs": 259600,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 3353904533,
+        "name": "永不失联的爱",
+        "artists": [
+          "音乐的入门到改行"
+        ],
+        "album": "永不失联的爱",
+        "durationMs": 269184,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1878900797,
+        "name": "永不失联的爱",
+        "artists": [
+          "轶"
+        ],
+        "album": "永不失联的爱",
+        "durationMs": 246370,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2736317868,
+        "name": "永不失联的爱",
+        "artists": [
+          "虎二"
+        ],
+        "album": "永不失联的爱",
+        "durationMs": 285750,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3317930497,
+        "name": "永不失联的爱",
+        "artists": [
+          "大头针"
+        ],
+        "album": "大头针",
+        "durationMs": 189081,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3452889346,
+        "name": "永不失联的爱",
+        "artists": [
+          "陈予恩"
+        ],
+        "album": "永不失联的爱",
+        "durationMs": 158014,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3425553528,
+        "name": "永不失联的爱",
+        "artists": [
+          "雷米克斯",
+          "夭冷冷"
+        ],
+        "album": "永不失联的爱",
+        "durationMs": 103471,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2620315093,
+        "name": "永不失联的爱",
+        "artists": [
+          "洋洋"
+        ],
+        "album": "意滋",
+        "durationMs": 69730,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 306,
+      "song_name": "永不失联的爱",
+      "show_as_song_name": "",
+      "display_song_name": "永不失联的爱",
+      "artist": "周兴哲",
+      "artist_search": "周兴哲",
+      "feat_artist": "",
+      "remark": "存在同场独立单曲歌切 BV1wsJ86MEG9（华丽失败酱，「来一起看！！！20261016 20-03_PART000--1」）；两份合集 P6 同名同序。",
+      "tone": "",
+      "language": "中文",
+      "type": "流行",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1uPJ86DE95/?p=6",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-16",
+      "row_key": "永不失联的爱"
+    },
+    "sourceId": 523250334,
+    "sourcePath": "sources/523250334.json",
+    "sourceUrl": "https://music.163.com/#/song?id=523250334",
+    "selected": {
+      "id": 523250334,
+      "name": "永不失联的爱",
+      "artists": [
+        "周兴哲"
+      ],
+      "album": "如果雨之后",
+      "durationMs": 259600,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 37
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-306-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 261.781,
+    "sourceFirstLine": {
+      "t": 5,
+      "text": "OP : Global Famous Entertainment"
+    },
+    "anchorCandidate": null,
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

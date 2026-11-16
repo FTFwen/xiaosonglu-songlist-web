@@ -1,0 +1,166 @@
+{
+  "schemaVersion": 1,
+  "key": "song-153",
+  "songId": 153,
+  "songName": "悬捱",
+  "rowKey": "悬捱",
+  "displaySongName": "悬捱",
+  "artist": "星尘",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "",
+  "audio": {
+    "url": "assets/audio/song_152.m4a?v=ae27f95253b6",
+    "sha256": "ae27f95253b617bdcc124702428657ec83dd237e78b90fd0b359f3da4dedbf50"
+  },
+  "retrievedAt": "2026-11-16T04:13:03.923Z",
+  "match": {
+    "status": "no_timed_lyrics",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E6%82%AC%E6%8D%B1&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E6%82%AC%E6%8D%B1%20%E6%98%9F%E5%B0%98&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 3407800072,
+        "name": "悬捱",
+        "artists": [
+          "星尘"
+        ],
+        "album": "璃物语",
+        "durationMs": 271233,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 3407802163,
+        "name": "悬捱 伴奏",
+        "artists": [
+          "星尘"
+        ],
+        "album": "璃物语",
+        "durationMs": 269383,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      },
+      {
+        "id": 1416387774,
+        "name": "悬日",
+        "artists": [
+          "田馥甄"
+        ],
+        "album": "无人知晓",
+        "durationMs": 271374,
+        "titleScore": 0,
+        "artistMatch": false,
+        "score": 0
+      },
+      {
+        "id": 1458246116,
+        "name": "悬日",
+        "artists": [
+          "SpriteSoft"
+        ],
+        "album": "悬日",
+        "durationMs": 270132,
+        "titleScore": 0,
+        "artistMatch": false,
+        "score": 0
+      },
+      {
+        "id": 1417754144,
+        "name": "悬日",
+        "artists": [
+          "Hattie海婷"
+        ],
+        "album": "悬日",
+        "durationMs": 271542,
+        "titleScore": 0,
+        "artistMatch": false,
+        "score": 0
+      },
+      {
+        "id": 1417198195,
+        "name": "悬日（男版）",
+        "artists": [
+          "黑皮阿黎"
+        ],
+        "album": "悬日",
+        "durationMs": 271416,
+        "titleScore": 0,
+        "artistMatch": false,
+        "score": 0
+      },
+      {
+        "id": 1893067419,
+        "name": "悬日",
+        "artists": [
+          "Frank"
+        ],
+        "album": "悬日",
+        "durationMs": 269743,
+        "titleScore": 0,
+        "artistMatch": false,
+        "score": 0
+      },
+      {
+        "id": 2058806016,
+        "name": "悬日",
+        "artists": [
+          "徐胃痛",
+          "阿屈"
+        ],
+        "album": "「悬 日」",
+        "durationMs": 270053,
+        "titleScore": 0,
+        "artistMatch": false,
+        "score": 0
+      }
+    ],
+    "workQuery": {
+      "song_id": 153,
+      "song_name": "悬捱",
+      "show_as_song_name": "",
+      "display_song_name": "悬捱",
+      "artist": "星尘",
+      "artist_search": "星尘",
+      "feat_artist": "",
+      "remark": "",
+      "tone": "",
+      "language": "中文",
+      "type": "中V",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=14",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-09-08",
+      "row_key": "悬捱"
+    },
+    "sourceId": 3407800072,
+    "sourcePath": "sources/3407800072.json",
+    "sourceUrl": "https://music.163.com/#/song?id=3407800072",
+    "selected": {
+      "id": 3407800072,
+      "name": "悬捱",
+      "artists": [
+        "星尘"
+      ],
+      "album": "璃物语",
+      "durationMs": 271233,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 0
+  },
+  "alignment": {
+    "status": "unavailable",
+    "offsetSeconds": null,
+    "humanVerified": false
+  }
+}

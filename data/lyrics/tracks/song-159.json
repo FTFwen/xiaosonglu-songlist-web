@@ -1,0 +1,187 @@
+{
+  "schemaVersion": 1,
+  "key": "song-159",
+  "songId": 159,
+  "songName": "中华缘木娘",
+  "rowKey": "中华缘木娘",
+  "displaySongName": "中华缘木娘",
+  "artist": "洛天依Official",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "",
+  "audio": {
+    "url": "assets/audio/song_158.m4a?v=33a5fba40e6b",
+    "sha256": "33a5fba40e6bbbf89ee4849e7dad75c511a778474f42280ff5efecde27e2f8ea"
+  },
+  "retrievedAt": "2026-11-16T04:04:18.822Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E4%B8%AD%E5%8D%8E%E7%BC%98%E6%9C%A8%E5%A8%98&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E4%B8%AD%E5%8D%8E%E7%BC%98%E6%9C%A8%E5%A8%98%20%E6%B4%9B%E5%A4%A9%E4%BE%9DOfficial&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 409302032,
+        "name": "中华缘木娘",
+        "artists": [
+          "洛天依Official"
+        ],
+        "album": "洛天依作品集",
+        "durationMs": 258740,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1404798063,
+        "name": "中华缘木娘",
+        "artists": [
+          "洛天依Official"
+        ],
+        "album": "Vsinger作品集-2",
+        "durationMs": 258740,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 423058847,
+        "name": "中华缘木娘",
+        "artists": [
+          "肥皂菌丨珉珉的猫咪丨"
+        ],
+        "album": "中华缘木娘",
+        "durationMs": 258755,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 435307369,
+        "name": "中华缘木娘 (Album Version)",
+        "artists": [
+          "洛天依Official",
+          "Soda纯白"
+        ],
+        "album": "中华少女Project (Deluxe Edition)",
+        "durationMs": 258951,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      },
+      {
+        "id": 2617663708,
+        "name": "中华缘木娘·改",
+        "artists": [
+          "Soda纯白",
+          "洛天依"
+        ],
+        "album": "中华少女·改",
+        "durationMs": 236843,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      },
+      {
+        "id": 2125243600,
+        "name": "中华缘木娘 cover: 洛天依 纯白",
+        "artists": [
+          "Sedz",
+          "言和"
+        ],
+        "album": "Seeds",
+        "durationMs": 260829,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 452744229,
+        "name": "中华缘木娘(喵九翻唱)(翻自 洛天依)",
+        "artists": [
+          "喵九"
+        ],
+        "album": "喵九的翻唱合辑",
+        "durationMs": 259840,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 494096619,
+        "name": "中华缘木娘（Cover 洛天依）",
+        "artists": [
+          "流绪",
+          "乐正绫"
+        ],
+        "album": "中华缘木娘",
+        "durationMs": 260000,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      }
+    ],
+    "workQuery": {
+      "song_id": 159,
+      "song_name": "中华缘木娘",
+      "show_as_song_name": "",
+      "display_song_name": "中华缘木娘",
+      "artist": "洛天依Official",
+      "artist_search": "洛天依Official",
+      "feat_artist": "",
+      "remark": "",
+      "tone": "",
+      "language": "中文",
+      "type": "中V",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=20",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-09-08",
+      "row_key": "中华缘木娘"
+    },
+    "sourceId": 409302032,
+    "sourcePath": "sources/409302032.json",
+    "sourceUrl": "https://music.163.com/#/song?id=409302032",
+    "selected": {
+      "id": 409302032,
+      "name": "中华缘木娘",
+      "artists": [
+        "洛天依Official"
+      ],
+      "album": "洛天依作品集",
+      "durationMs": 258740,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 42
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-159-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 260.017,
+    "sourceFirstLine": {
+      "t": 0.4,
+      "text": "看着你的背影渐行渐远"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 23.96,
+      "endSeconds": 24.0,
+      "similarity": 0.18181818181818182,
+      "recognizedText": "看",
+      "meanProbability": 0.045,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

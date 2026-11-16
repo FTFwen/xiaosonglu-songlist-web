@@ -1,0 +1,229 @@
+{
+  "audioSha256": "fc6eeb614ac0a77949f81bf0b312d3f081ceec5fa8729261e2fc859f417d17ed",
+  "model": "whisper-base",
+  "start": 0,
+  "end": 35,
+  "result": {
+    "text": "感谢的我去我办做呢在悄伤三照天那音色最動人",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 0.0,
+        "end": 0.38,
+        "text": "感谢的",
+        "tokens": [
+          50364,
+          9709,
+          11340,
+          1546,
+          50396
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.9976434707641602,
+        "compression_ratio": 0.7941176470588235,
+        "no_speech_prob": 0.022517703473567963,
+        "words": [
+          {
+            "word": "感",
+            "start": 0.0,
+            "end": 0.08,
+            "probability": 0.23197470605373383
+          },
+          {
+            "word": "谢",
+            "start": 0.08,
+            "end": 0.24,
+            "probability": 0.8605962991714478
+          },
+          {
+            "word": "的",
+            "start": 0.24,
+            "end": 0.38,
+            "probability": 0.0921652615070343
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "seek": 0,
+        "start": 7.26,
+        "end": 8.9,
+        "text": "我去我办做呢",
+        "tokens": [
+          50744,
+          1654,
+          6734,
+          1654,
+          39453,
+          10907,
+          6240,
+          50810
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.9976434707641602,
+        "compression_ratio": 0.7941176470588235,
+        "no_speech_prob": 0.022517703473567963,
+        "words": [
+          {
+            "word": "我",
+            "start": 7.26,
+            "end": 7.58,
+            "probability": 0.3178095817565918
+          },
+          {
+            "word": "去",
+            "start": 7.58,
+            "end": 7.9,
+            "probability": 0.8953995704650879
+          },
+          {
+            "word": "我",
+            "start": 7.9,
+            "end": 8.04,
+            "probability": 0.9724432826042175
+          },
+          {
+            "word": "办",
+            "start": 8.04,
+            "end": 8.18,
+            "probability": 0.8495362997055054
+          },
+          {
+            "word": "做",
+            "start": 8.18,
+            "end": 8.42,
+            "probability": 0.2414637804031372
+          },
+          {
+            "word": "呢",
+            "start": 8.42,
+            "end": 8.9,
+            "probability": 0.4967164993286133
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "seek": 3000,
+        "start": 30.0,
+        "end": 32.62,
+        "text": "在悄伤三照天",
+        "tokens": [
+          50364,
+          3581,
+          14696,
+          226,
+          7384,
+          97,
+          10960,
+          32150,
+          6135,
+          50514
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.6684020694933439,
+        "compression_ratio": 0.7659574468085106,
+        "no_speech_prob": 0.860566258430481,
+        "words": [
+          {
+            "word": "在",
+            "start": 30.0,
+            "end": 30.18,
+            "probability": 0.03474525734782219
+          },
+          {
+            "word": "悄",
+            "start": 30.18,
+            "end": 30.62,
+            "probability": 0.6905104070901871
+          },
+          {
+            "word": "伤",
+            "start": 30.62,
+            "end": 31.38,
+            "probability": 0.8017584681510925
+          },
+          {
+            "word": "三",
+            "start": 31.38,
+            "end": 31.84,
+            "probability": 0.6359924674034119
+          },
+          {
+            "word": "照",
+            "start": 31.84,
+            "end": 32.26,
+            "probability": 0.3381723463535309
+          },
+          {
+            "word": "天",
+            "start": 32.26,
+            "end": 32.62,
+            "probability": 0.7403153777122498
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "seek": 3000,
+        "start": 32.62,
+        "end": 34.52,
+        "text": "那音色最動人",
+        "tokens": [
+          50514,
+          4184,
+          18034,
+          17673,
+          8661,
+          12572,
+          4035,
+          50614
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.6684020694933439,
+        "compression_ratio": 0.7659574468085106,
+        "no_speech_prob": 0.860566258430481,
+        "words": [
+          {
+            "word": "那",
+            "start": 32.62,
+            "end": 33.06,
+            "probability": 0.3522126078605652
+          },
+          {
+            "word": "音",
+            "start": 33.06,
+            "end": 33.3,
+            "probability": 0.4091469347476959
+          },
+          {
+            "word": "色",
+            "start": 33.3,
+            "end": 33.52,
+            "probability": 0.9943776726722717
+          },
+          {
+            "word": "最",
+            "start": 33.52,
+            "end": 33.82,
+            "probability": 0.9793983697891235
+          },
+          {
+            "word": "動",
+            "start": 33.82,
+            "end": 34.16,
+            "probability": 0.24315789341926575
+          },
+          {
+            "word": "人",
+            "start": 34.16,
+            "end": 34.52,
+            "probability": 0.8370875716209412
+          }
+        ]
+      }
+    ],
+    "language": "zh"
+  }
+}

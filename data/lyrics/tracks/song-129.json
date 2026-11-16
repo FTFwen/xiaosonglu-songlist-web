@@ -1,0 +1,127 @@
+{
+  "schemaVersion": 1,
+  "key": "song-129",
+  "songId": 129,
+  "songName": "十万个春天",
+  "rowKey": "十万个春天",
+  "displaySongName": "十万个春天",
+  "artist": "娅娅酱 / 洛天依",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "2026-09-03「也许康复的随便唱唱」21点场；歌切合集【桐人今天睡大觉】【小松绿Viridis】随便唱唱的歌回 歌切合集 2026.09.03 分P9（03:02）。弹幕歌词窗 01:12:57-01:14:10（「十万个春天在我心中」）；网易云：娅娅酱/洛天依《十万个春天》。",
+  "audio": {
+    "url": "assets/audio/song_128.m4a?v=8c25643010ed",
+    "sha256": "8c25643010edc5978ec7d8d0209053287ab23de74d3d76e8049eb9f007f4e955"
+  },
+  "retrievedAt": "2026-11-16T04:03:07.691Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E5%8D%81%E4%B8%87%E4%B8%AA%E6%98%A5%E5%A4%A9&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E5%8D%81%E4%B8%87%E4%B8%AA%E6%98%A5%E5%A4%A9%20%E5%A8%85%E5%A8%85%E9%85%B1%20%2F%20%E6%B4%9B%E5%A4%A9%E4%BE%9D&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 2683699962,
+        "name": "十万个春天",
+        "artists": [
+          "娅娅酱",
+          "洛天依"
+        ],
+        "album": "十万个春天",
+        "durationMs": 176645,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2683701840,
+        "name": "十万个春天 伴奏",
+        "artists": [
+          "娅娅酱",
+          "洛天依"
+        ],
+        "album": "十万个春天",
+        "durationMs": 176645,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      },
+      {
+        "id": 3427795050,
+        "name": "[重音テト SV 1.Cover]十万个春天",
+        "artists": [
+          "LHRadofaiCR",
+          "teto"
+        ],
+        "album": "Kasane Teto 1 Cover.",
+        "durationMs": 174762,
+        "titleScore": 0,
+        "artistMatch": false,
+        "score": 0
+      }
+    ],
+    "workQuery": {
+      "song_id": 129,
+      "song_name": "十万个春天",
+      "show_as_song_name": "",
+      "display_song_name": "十万个春天",
+      "artist": "娅娅酱 / 洛天依",
+      "artist_search": "十万个春天 娅娅酱 / 洛天依",
+      "feat_artist": "",
+      "remark": "2026-09-03「也许康复的随便唱唱」21点场；歌切合集【桐人今天睡大觉】【小松绿Viridis】随便唱唱的歌回 歌切合集 2026.09.03 分P9（03:02）。弹幕歌词窗 01:12:57-01:14:10（「十万个春天在我心中」）；网易云：娅娅酱/洛天依《十万个春天》。",
+      "tone": "",
+      "language": "中文",
+      "type": "洛天依、Vocaloid、X Studio",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=9",
+      "sing_count": 1,
+      "status_labels": "歌回",
+      "last_sing_at": "2026-09-03",
+      "row_key": "十万个春天"
+    },
+    "sourceId": 2683699962,
+    "sourcePath": "sources/2683699962.json",
+    "sourceUrl": "https://music.163.com/#/song?id=2683699962",
+    "selected": {
+      "id": 2683699962,
+      "name": "十万个春天",
+      "artists": [
+        "娅娅酱",
+        "洛天依"
+      ],
+      "album": "十万个春天",
+      "durationMs": 176645,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 54
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-129-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 179.243,
+    "sourceFirstLine": {
+      "t": 1.83,
+      "text": "春天呐春天啊太美妙"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 30.0,
+      "endSeconds": 30.5,
+      "similarity": 0.0,
+      "recognizedText": "穿",
+      "meanProbability": 0.636,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

@@ -1,0 +1,186 @@
+{
+  "schemaVersion": 1,
+  "key": "song-348",
+  "songId": 348,
+  "songName": "Fighting My Way",
+  "rowKey": "Fighting My Way",
+  "displaySongName": "Fighting My Way",
+  "artist": "",
+  "language": "日文",
+  "derivative": false,
+  "edition": "",
+  "remark": "合集分P只给出曲名，原唱/出处未核实，标记待复核。",
+  "audio": {
+    "url": "assets/audio/song_347.m4a?v=e2b16d249829",
+    "sha256": "e2b16d249829b7188e3654d035710e55ba67d7029c6c450def8962a15ff6e7ea"
+  },
+  "retrievedAt": "2026-11-16T04:13:26.404Z",
+  "match": {
+    "status": "candidate_review_required",
+    "queries": [
+      "https://music.163.com/api/search/get?s=Fighting%20My%20Way&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 2156579528,
+        "name": "Fighting My Way",
+        "artists": [
+          "初星学園",
+          "Giga",
+          "長月あおい"
+        ],
+        "album": "Fighting My Way",
+        "durationMs": 199906,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2707430461,
+        "name": "Fighting My Way",
+        "artists": [
+          "ヰ世界情緒"
+        ],
+        "album": "Fighting My Way（covered by ヰ世界情緒 ）",
+        "durationMs": 208042,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3423332202,
+        "name": "Fighting My Way",
+        "artists": [
+          "MiaplaK"
+        ],
+        "album": "Fighting My Way (MiaplaK DUBSTEP Remix)",
+        "durationMs": 188200,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2080120727,
+        "name": "FIGHTING MY WAY",
+        "artists": [
+          "CATMANE"
+        ],
+        "album": "FIGHTING MY WAY",
+        "durationMs": 131801,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3436542953,
+        "name": "Fighting My Way",
+        "artists": [
+          "神人小小阳"
+        ],
+        "album": "Fighting My Way",
+        "durationMs": 194813,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2600202798,
+        "name": "Fighting my way",
+        "artists": [
+          "白阳大怪兽"
+        ],
+        "album": "Fighting my way",
+        "durationMs": 197450,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1836708179,
+        "name": "Fighting My Way",
+        "artists": [
+          "Ryan Fonda"
+        ],
+        "album": "Fighting My Way",
+        "durationMs": 229800,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2667467341,
+        "name": "Fighting my way",
+        "artists": [
+          "兰斯超级王"
+        ],
+        "album": "bangdream 偶像大师 泛Acg翻唱",
+        "durationMs": 200915,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 348,
+      "song_name": "Fighting My Way",
+      "show_as_song_name": "",
+      "display_song_name": "Fighting My Way",
+      "artist": "",
+      "artist_search": "",
+      "feat_artist": "",
+      "remark": "合集分P只给出曲名，原唱/出处未核实，标记待复核。",
+      "tone": "",
+      "language": "日文",
+      "type": "待复核",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1naxj62Epw/?p=20",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-27",
+      "row_key": "Fighting My Way"
+    },
+    "sourceId": 2156579528,
+    "sourcePath": "sources/2156579528.json",
+    "sourceUrl": "https://music.163.com/#/song?id=2156579528",
+    "selected": {
+      "id": 2156579528,
+      "name": "Fighting My Way",
+      "artists": [
+        "初星学園",
+        "Giga",
+        "長月あおい"
+      ],
+      "album": "Fighting My Way",
+      "durationMs": 199906,
+      "titleScore": 1,
+      "artistMatch": false,
+      "score": 0.8
+    },
+    "timedLineCount": 79
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-348-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 232.768,
+    "sourceFirstLine": {
+      "t": 2.044,
+      "text": "Now I’m ready, I’m ready to go"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 0.0,
+      "endSeconds": 0.1,
+      "similarity": 0.0,
+      "recognizedText": "ス",
+      "meanProbability": 0.029,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "ja",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

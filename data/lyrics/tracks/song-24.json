@@ -1,0 +1,197 @@
+{
+  "schemaVersion": 1,
+  "key": "song-24",
+  "songId": 24,
+  "songName": "YOU & IDOL",
+  "displaySongName": "YOU & IDOL",
+  "artist": "相対性理論",
+  "language": "日文",
+  "derivative": false,
+  "audio": {
+    "url": "assets/audio/song_89.m4a?v=58ee1c39de53",
+    "sha256": "58ee1c39de53db5998e1f986a1b25744f089ac760db63afea1800cbb09a95a59"
+  },
+  "retrievedAt": "2026-11-16T03:57:57.655Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=YOU%20%26%20IDOL&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 27501693,
+        "name": "YOU & IDOL",
+        "artists": [
+          "相対性理論"
+        ],
+        "album": "TOWN AGE",
+        "durationMs": 226053,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 32544510,
+        "name": "YOU & IDOL (single ver.)",
+        "artists": [
+          "相対性理論"
+        ],
+        "album": "YOU & IDOL / キッズ・ノーリターン",
+        "durationMs": 263973,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      },
+      {
+        "id": 3451606745,
+        "name": "YOU & IDOL (feat.花隈千冬)",
+        "artists": [
+          "桃",
+          "花隈千冬"
+        ],
+        "album": "花隈千冬",
+        "durationMs": 227498,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 1434001531,
+        "name": "K.K. Idol",
+        "artists": [
+          "朝日温子",
+          "戸高一生"
+        ],
+        "album": "あつまれ どうぶつの森 K.K. Slider Complete Songs Collection",
+        "durationMs": 139585,
+        "titleScore": 0,
+        "artistMatch": false,
+        "score": 0
+      },
+      {
+        "id": 5346672,
+        "name": "너랑 나",
+        "artists": [
+          "IU"
+        ],
+        "album": "Last Fantasy",
+        "durationMs": 241840,
+        "titleScore": 0,
+        "artistMatch": false,
+        "score": 0
+      },
+      {
+        "id": 1439459693,
+        "name": "K.K. Idol (しずえ Ver.)",
+        "artists": [
+          "朝日温子",
+          "戸高一生"
+        ],
+        "album": "あつまれ どうぶつの森 K.K. Slider Complete Songs Collection",
+        "durationMs": 98382,
+        "titleScore": 0,
+        "artistMatch": false,
+        "score": 0
+      },
+      {
+        "id": 2048982668,
+        "name": "Idol",
+        "artists": [
+          "YOASOBI"
+        ],
+        "album": "Idol",
+        "durationMs": 213233,
+        "titleScore": 0,
+        "artistMatch": false,
+        "score": 0
+      },
+      {
+        "id": 3360835405,
+        "name": "完美偶像 Perfect Idol",
+        "artists": [
+          "HOYO-MiX"
+        ],
+        "album": "崩坏星穹铁道-神说要有笑（上篇） Let There Be Laughter (Part 1)",
+        "durationMs": 119585,
+        "titleScore": 0,
+        "artistMatch": false,
+        "score": 0
+      }
+    ],
+    "sourceId": 27501693,
+    "sourcePath": "sources/27501693.json",
+    "sourceUrl": "https://music.163.com/#/song?id=27501693",
+    "selected": {
+      "id": 27501693,
+      "name": "YOU & IDOL",
+      "artists": [
+        "相対性理論"
+      ],
+      "album": "TOWN AGE",
+      "durationMs": 226053,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 27
+  },
+  "alignment": {
+    "status": "spotcheck_review_required",
+    "evidencePath": "evidence/song-24-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 225.396,
+    "sourceFirstLine": {
+      "t": 0.56,
+      "text": "あなたそれはyou you you you有名人なの"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 4.86,
+      "endSeconds": 10.7,
+      "similarity": 0.8780487804878049,
+      "recognizedText": "あなた それはYou You You You",
+      "meanProbability": 0.591,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": 4.3,
+    "checks": [
+      {
+        "sourceLine": {
+          "t": 102.56,
+          "text": "わたしそれは I I I I 愛のラビリンス"
+        },
+        "evidencePath": "evidence/song-24-check0.json",
+        "candidate": {
+          "audioSeconds": 106.5,
+          "endSeconds": 114.42,
+          "similarity": 0.6666666666666666,
+          "recognizedText": "またしそれは愛のラフレンス",
+          "meanProbability": 0.636,
+          "tokenPrefixOnly": false
+        },
+        "residualSeconds": -0.36
+      },
+      {
+        "sourceLine": {
+          "t": 194.6,
+          "text": "わたしそれは I I I I 愛のラビリンス"
+        },
+        "evidencePath": "evidence/song-24-check1.json",
+        "candidate": {
+          "audioSeconds": 197.92,
+          "endSeconds": 206.72,
+          "similarity": 0.6,
+          "recognizedText": "れた私それは愛のラブルンス",
+          "meanProbability": 0.708,
+          "tokenPrefixOnly": false
+        },
+        "residualSeconds": -0.98
+      }
+    ],
+    "asrLanguage": "ja",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  },
+  "rowKey": "YOU & IDOL",
+  "edition": "",
+  "remark": "用户补充：直链页面收录《YOU & IDOL》（练歌小电），2026-08-10。2026-08-24 重建时该 segment 曾缺失导致曲目从 catalog 掉出，现按 songplg 08-21 产物恢复。"
+}

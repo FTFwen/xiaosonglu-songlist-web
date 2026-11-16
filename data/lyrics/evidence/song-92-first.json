@@ -1,0 +1,99 @@
+{
+  "audioSha256": "3e3a5d4cc7a878b548e9cab687218cce5523148475ef482c6a3fae5f20b1660d",
+  "model": "whisper-base",
+  "start": 0,
+  "end": 35,
+  "result": {
+    "text": "把头也当你也往来生存",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 3000,
+        "start": 30.56,
+        "end": 34.92,
+        "text": "把头也当你也往来生存",
+        "tokens": [
+          50364,
+          16075,
+          39862,
+          6404,
+          16233,
+          2166,
+          6404,
+          29510,
+          6912,
+          8244,
+          39781,
+          50614
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.9943178617037259,
+        "compression_ratio": 0.7894736842105263,
+        "no_speech_prob": 0.8617527484893799,
+        "words": [
+          {
+            "word": "把",
+            "start": 30.56,
+            "end": 31.24,
+            "probability": 0.02426876127719879
+          },
+          {
+            "word": "头",
+            "start": 31.24,
+            "end": 31.54,
+            "probability": 0.598292887210846
+          },
+          {
+            "word": "也",
+            "start": 31.54,
+            "end": 31.86,
+            "probability": 0.10407435894012451
+          },
+          {
+            "word": "当",
+            "start": 31.86,
+            "end": 33.08,
+            "probability": 0.5819711089134216
+          },
+          {
+            "word": "你",
+            "start": 33.08,
+            "end": 33.36,
+            "probability": 0.5307020545005798
+          },
+          {
+            "word": "也",
+            "start": 33.36,
+            "end": 33.5,
+            "probability": 0.4570367634296417
+          },
+          {
+            "word": "往",
+            "start": 33.5,
+            "end": 33.72,
+            "probability": 0.8494765162467957
+          },
+          {
+            "word": "来",
+            "start": 33.72,
+            "end": 34.2,
+            "probability": 0.9694890975952148
+          },
+          {
+            "word": "生",
+            "start": 34.2,
+            "end": 34.56,
+            "probability": 0.37207314372062683
+          },
+          {
+            "word": "存",
+            "start": 34.56,
+            "end": 34.92,
+            "probability": 0.823294997215271
+          }
+        ]
+      }
+    ],
+    "language": "zh"
+  }
+}

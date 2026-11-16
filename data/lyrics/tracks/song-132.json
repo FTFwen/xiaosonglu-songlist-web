@@ -1,0 +1,167 @@
+{
+  "schemaVersion": 1,
+  "key": "song-132",
+  "songId": 132,
+  "songName": "铁花飞 中文版",
+  "rowKey": "铁花飞 中文版",
+  "displaySongName": "铁花飞 中文版",
+  "artist": "时光罅隙间",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "2026-09-03「也许康复的随便唱唱」21点场；歌切合集【桐人今天睡大觉】【小松绿Viridis】随便唱唱的歌回 歌切合集 2026.09.03 分P12（04:20）。歌切分P标注「铁花飞 中文版 - 时光罅隙间」；原曲 Mili/塞壬唱片-MSR《铁花飞》（明日方舟EP，2026-02）。",
+  "audio": {
+    "url": "assets/audio/song_131.m4a?v=f17fccdeb174",
+    "sha256": "f17fccdeb1746509381ed702acbad4de764a152bafc452bbbe10f3d888059959"
+  },
+  "retrievedAt": "2026-11-16T04:03:17.860Z",
+  "match": {
+    "status": "version_review_required",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E9%93%81%E8%8A%B1%E9%A3%9E%20%E4%B8%AD%E6%96%87%E7%89%88&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E9%93%81%E8%8A%B1%E9%A3%9E%20%E4%B8%AD%E6%96%87%E7%89%88%20%E6%97%B6%E5%85%89%E7%BD%85%E9%9A%99%E9%97%B4&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 3386571322,
+        "name": "铁花飞 中文版",
+        "artists": [
+          "时光罅隙间"
+        ],
+        "album": "铁花飞 中文版",
+        "durationMs": 242602,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 3342981041,
+        "name": "铁花飞",
+        "artists": [
+          "Mili",
+          "塞壬唱片-MSR"
+        ],
+        "album": "铁花飞",
+        "durationMs": 242613,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 3354299120,
+        "name": "铁花飞",
+        "artists": [
+          "叶临戈"
+        ],
+        "album": "铁花飞",
+        "durationMs": 242066,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 3373795340,
+        "name": "铁花飞",
+        "artists": [
+          "薄荷Miint"
+        ],
+        "album": "铁花飞",
+        "durationMs": 242613,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 3351403777,
+        "name": "铁花飞",
+        "artists": [
+          "ShizukaYY",
+          "乐正绫"
+        ],
+        "album": "铁花飞（ACE Cover）",
+        "durationMs": 242608,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 3357036514,
+        "name": "铁花飞",
+        "artists": [
+          "艾莉Anicca"
+        ],
+        "album": "《铁花飞》-【明日方舟】辞岁行EP",
+        "durationMs": 242613,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 3353045422,
+        "name": "铁花飞",
+        "artists": [
+          "百蕙Kiru"
+        ],
+        "album": "铁花飞",
+        "durationMs": 243333,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 3350336362,
+        "name": "铁花飞",
+        "artists": [
+          "莱妮娅Rynia"
+        ],
+        "album": "铁花飞",
+        "durationMs": 243505,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      }
+    ],
+    "workQuery": {
+      "song_id": 132,
+      "song_name": "铁花飞 中文版",
+      "show_as_song_name": "",
+      "display_song_name": "铁花飞 中文版",
+      "artist": "时光罅隙间",
+      "artist_search": "铁花飞 中文版 时光罅隙间",
+      "feat_artist": "",
+      "remark": "2026-09-03「也许康复的随便唱唱」21点场；歌切合集【桐人今天睡大觉】【小松绿Viridis】随便唱唱的歌回 歌切合集 2026.09.03 分P12（04:20）。歌切分P标注「铁花飞 中文版 - 时光罅隙间」；原曲 Mili/塞壬唱片-MSR《铁花飞》（明日方舟EP，2026-02）。",
+      "tone": "",
+      "language": "中文",
+      "type": "翻唱、游戏（原曲Mili）",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=12",
+      "sing_count": 1,
+      "status_labels": "歌回",
+      "last_sing_at": "2026-09-03",
+      "row_key": "铁花飞 中文版"
+    },
+    "sourceId": 3386571322,
+    "sourcePath": "sources/3386571322.json",
+    "sourceUrl": "https://music.163.com/#/song?id=3386571322",
+    "selected": {
+      "id": 3386571322,
+      "name": "铁花飞 中文版",
+      "artists": [
+        "时光罅隙间"
+      ],
+      "album": "铁花飞 中文版",
+      "durationMs": 242602,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 70
+  },
+  "alignment": {
+    "status": "version_review_required",
+    "offsetSeconds": null,
+    "humanVerified": false
+  }
+}

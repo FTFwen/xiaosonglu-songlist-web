@@ -1,0 +1,188 @@
+{
+  "schemaVersion": 1,
+  "key": "song-207",
+  "songId": 207,
+  "songName": "权御天下",
+  "rowKey": "权御天下",
+  "displaySongName": "权御天下",
+  "artist": "乌龟Sui / 洛天依",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "UP 心灵火Flame《20260919 歌切》P10；乌龟Sui 作曲、洛天依演唱的中V传说曲；本曲无歌词弹幕，按 reaction 弹幕+前后曲时间轴（01:32:08~01:36:21，分P时长 4:13）推定",
+  "audio": {
+    "url": "assets/audio/song_206.m4a?v=05198474e144",
+    "sha256": "05198474e1445bf0929bdcc7aef696cc75b78bfa72b85ec4e30aa67439e6ef45"
+  },
+  "retrievedAt": "2026-11-16T04:04:58.458Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E6%9D%83%E5%BE%A1%E5%A4%A9%E4%B8%8B&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E6%9D%83%E5%BE%A1%E5%A4%A9%E4%B8%8B%20%E4%B9%8C%E9%BE%9FSui%20%2F%20%E6%B4%9B%E5%A4%A9%E4%BE%9D&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1404797306,
+        "name": "权御天下",
+        "artists": [
+          "洛天依Official"
+        ],
+        "album": "Vsinger作品集-2",
+        "durationMs": 250078,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2653076403,
+        "name": "权御天下",
+        "artists": [
+          "伦桑",
+          "裂天",
+          "张承煜（小魂）",
+          "萧忆情Alex"
+        ],
+        "album": "",
+        "durationMs": 250028,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1350658358,
+        "name": "权御天下",
+        "artists": [
+          "西彬"
+        ],
+        "album": "权御天下",
+        "durationMs": 241285,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3457362204,
+        "name": "权御天下",
+        "artists": [
+          "潇芜蕈茵",
+          "放肆呐"
+        ],
+        "album": "潇芜蕈茵翻唱集",
+        "durationMs": 244166,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2136297311,
+        "name": "权御天下",
+        "artists": [
+          "烂尾.",
+          "江徹"
+        ],
+        "album": "权御天下",
+        "durationMs": 121678,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2123569605,
+        "name": "权御天下",
+        "artists": [
+          "叶之敏"
+        ],
+        "album": "屋檐下",
+        "durationMs": 19416,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2718407866,
+        "name": "权御天下",
+        "artists": [
+          "余川"
+        ],
+        "album": "权御天下",
+        "durationMs": 119875,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2725662545,
+        "name": "权御天下 (2025官方重置版)",
+        "artists": [
+          "洛天依Official"
+        ],
+        "album": "权御天下 (2025官方重置版)",
+        "durationMs": 244113,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      }
+    ],
+    "workQuery": {
+      "song_id": 207,
+      "song_name": "权御天下",
+      "show_as_song_name": "",
+      "display_song_name": "权御天下",
+      "artist": "乌龟Sui / 洛天依",
+      "artist_search": "乌龟Sui 权御天下 洛天依",
+      "feat_artist": "",
+      "remark": "UP 心灵火Flame《20260919 歌切》P10；乌龟Sui 作曲、洛天依演唱的中V传说曲；本曲无歌词弹幕，按 reaction 弹幕+前后曲时间轴（01:32:08~01:36:21，分P时长 4:13）推定",
+      "tone": "",
+      "language": "中文",
+      "type": "中文Vocaloid、洛天依",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1rZe86yE49/?p=10",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-09-19",
+      "row_key": "权御天下"
+    },
+    "sourceId": 1404797306,
+    "sourcePath": "sources/1404797306.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1404797306",
+    "selected": {
+      "id": 1404797306,
+      "name": "权御天下",
+      "artists": [
+        "洛天依Official"
+      ],
+      "album": "Vsinger作品集-2",
+      "durationMs": 250078,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 66
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-207-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 252.494,
+    "sourceFirstLine": {
+      "t": 22.23,
+      "text": "东汉末狼烟不休"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 30.78,
+      "endSeconds": 30.96,
+      "similarity": 0.25,
+      "recognizedText": "不",
+      "meanProbability": 0.126,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

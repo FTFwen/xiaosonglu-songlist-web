@@ -1,0 +1,188 @@
+{
+  "schemaVersion": 1,
+  "key": "song-266",
+  "songId": 266,
+  "songName": "春天没有落花。",
+  "rowKey": "春天没有落花。",
+  "displaySongName": "春天没有落花。",
+  "artist": "raynodon",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "",
+  "audio": {
+    "url": "assets/audio/song_265.m4a?v=cbcc1ba27045",
+    "sha256": "cbcc1ba270458fe2ab54d2680fcc92a51ffdf64e2e95ab837198a189a8ab53f2"
+  },
+  "retrievedAt": "2026-11-16T04:05:47.755Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E6%98%A5%E5%A4%A9%E6%B2%A1%E6%9C%89%E8%90%BD%E8%8A%B1%E3%80%82&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E6%98%A5%E5%A4%A9%E6%B2%A1%E6%9C%89%E8%90%BD%E8%8A%B1%E3%80%82%20raynodon&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 2035797254,
+        "name": "春天没有落花。",
+        "artists": [
+          "raynodon"
+        ],
+        "album": "梦境茶宴Vol.-3",
+        "durationMs": 207363,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2690218682,
+        "name": "春天没有落花。",
+        "artists": [
+          "raynodon",
+          "诗岸"
+        ],
+        "album": "透明小说",
+        "durationMs": 207415,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 3445137106,
+        "name": "春天没有落花",
+        "artists": [
+          "千万别熬"
+        ],
+        "album": "《春天没有落花》X S洛天依",
+        "durationMs": 207440,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2690219218,
+        "name": "春天没有……",
+        "artists": [
+          "raynodon",
+          "诗岸"
+        ],
+        "album": "透明小说",
+        "durationMs": 123214,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      },
+      {
+        "id": 3333652459,
+        "name": "春天没有落花。【洛天依 乐正绫AI】",
+        "artists": [
+          "洛天依",
+          "乐正绫",
+          "镜星Himawari_咕咕p"
+        ],
+        "album": "【洛天依 乐正绫AI】春天没有落花。",
+        "durationMs": 209380,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 1849271145,
+        "name": "Last Promise",
+        "artists": [
+          "raynodon"
+        ],
+        "album": "Angel or Demon",
+        "durationMs": 160992,
+        "titleScore": 0,
+        "artistMatch": true,
+        "score": 0.2
+      },
+      {
+        "id": 2690218679,
+        "name": "逃出春天的循环吧",
+        "artists": [
+          "raynodon",
+          "诗岸"
+        ],
+        "album": "透明小说",
+        "durationMs": 207857,
+        "titleScore": 0,
+        "artistMatch": true,
+        "score": 0.2
+      },
+      {
+        "id": 2741690686,
+        "name": "唱片磁带随身听无所谓",
+        "artists": [
+          "raynodon"
+        ],
+        "album": "《纸房子》OST",
+        "durationMs": 46896,
+        "titleScore": 0,
+        "artistMatch": true,
+        "score": 0.2
+      }
+    ],
+    "workQuery": {
+      "song_id": 266,
+      "song_name": "春天没有落花。",
+      "show_as_song_name": "",
+      "display_song_name": "春天没有落花。",
+      "artist": "raynodon",
+      "artist_search": "raynodon",
+      "feat_artist": "",
+      "remark": "",
+      "tone": "",
+      "language": "中文",
+      "type": "流行",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1UkaS6zEk3/?p=25",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-02",
+      "row_key": "春天没有落花。"
+    },
+    "sourceId": 2035797254,
+    "sourcePath": "sources/2035797254.json",
+    "sourceUrl": "https://music.163.com/#/song?id=2035797254",
+    "selected": {
+      "id": 2035797254,
+      "name": "春天没有落花。",
+      "artists": [
+        "raynodon"
+      ],
+      "album": "梦境茶宴Vol.-3",
+      "durationMs": 207363,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 39
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-266-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 156.864,
+    "sourceFirstLine": {
+      "t": 0,
+      "text": "行将就木的人生"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 11.6,
+      "endSeconds": 12.0,
+      "similarity": 0.0,
+      "recognizedText": "我",
+      "meanProbability": 0.011,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

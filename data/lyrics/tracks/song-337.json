@@ -1,0 +1,175 @@
+{
+  "schemaVersion": 1,
+  "key": "song-337",
+  "songId": 337,
+  "songName": "入秋的第一场雨真让人矫情",
+  "rowKey": "入秋的第一场雨真让人矫情",
+  "displaySongName": "入秋的第一场雨真让人矫情",
+  "artist": "",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "合集分P只给出曲名，原唱/出处未核实，标记待复核。",
+  "audio": {
+    "url": "assets/audio/song_336.m4a?v=3451ef1b073f",
+    "sha256": "3451ef1b073f078ae744dc6666349df8f57bd98b34a7d0108a608dda85885fd5"
+  },
+  "retrievedAt": "2026-11-16T04:13:22.962Z",
+  "match": {
+    "status": "candidate_review_required",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E5%85%A5%E7%A7%8B%E7%9A%84%E7%AC%AC%E4%B8%80%E5%9C%BA%E9%9B%A8%E7%9C%9F%E8%AE%A9%E4%BA%BA%E7%9F%AB%E6%83%85&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1909424935,
+        "name": "入秋的第一场雨真让人矫情",
+        "artists": [
+          "ChiliChill乐团"
+        ],
+        "album": "每到夜里我就很饿",
+        "durationMs": 253947,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2149955747,
+        "name": "入秋的第一场雨真让人矫情",
+        "artists": [
+          "早雪"
+        ],
+        "album": "₊⁺ 中文翻唱 ⁺₊",
+        "durationMs": 254454,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2087856578,
+        "name": "入秋的第一场雨真让人矫情",
+        "artists": [
+          "兔子ST"
+        ],
+        "album": "兔子ST.2023翻唱合集",
+        "durationMs": 253933,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2096903979,
+        "name": "入秋的第一场雨真让人矫情",
+        "artists": [
+          "橘小只"
+        ],
+        "album": "入秋的第一场雨真让人矫情",
+        "durationMs": 256316,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1934212487,
+        "name": "入秋的第一场雨真让人矫情",
+        "artists": [
+          "夕沢yuusawa"
+        ],
+        "album": "入秋的第一场雨真让人矫情（HB to 面包包）",
+        "durationMs": 253947,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1952589127,
+        "name": "入秋的第一场雨真让人矫情",
+        "artists": [
+          "某某惠"
+        ],
+        "album": "入秋的第一场雨真让人矫情",
+        "durationMs": 253947,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1986310430,
+        "name": "入秋的第一场雨真让人矫情",
+        "artists": [
+          "酥莓"
+        ],
+        "album": "每到夜里我就很饿",
+        "durationMs": 252656,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2644924851,
+        "name": "入秋的第一场雨真让人矫情",
+        "artists": [
+          "微笑子"
+        ],
+        "album": "入秋的第一场雨真让人矫情",
+        "durationMs": 255214,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 337,
+      "song_name": "入秋的第一场雨真让人矫情",
+      "show_as_song_name": "",
+      "display_song_name": "入秋的第一场雨真让人矫情",
+      "artist": "",
+      "artist_search": "",
+      "feat_artist": "",
+      "remark": "合集分P只给出曲名，原唱/出处未核实，标记待复核。",
+      "tone": "",
+      "language": "中文",
+      "type": "待复核",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1naxj62Epw/?p=4",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-27",
+      "row_key": "入秋的第一场雨真让人矫情"
+    },
+    "sourceId": 1909424935,
+    "sourcePath": "sources/1909424935.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1909424935",
+    "selected": {
+      "id": 1909424935,
+      "name": "入秋的第一场雨真让人矫情",
+      "artists": [
+        "ChiliChill乐团"
+      ],
+      "album": "每到夜里我就很饿",
+      "durationMs": 253947,
+      "titleScore": 1,
+      "artistMatch": false,
+      "score": 0.8
+    },
+    "timedLineCount": 56
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-337-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 268.245,
+    "sourceFirstLine": {
+      "t": 0.896,
+      "text": "夏末秋初 第一场雨"
+    },
+    "anchorCandidate": null,
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

@@ -1,0 +1,184 @@
+{
+  "schemaVersion": 1,
+  "key": "song-325",
+  "songId": 325,
+  "songName": "鳥の詩",
+  "rowKey": "鳥の詩",
+  "displaySongName": "鳥の詩",
+  "artist": "Lia",
+  "language": "日文",
+  "derivative": false,
+  "edition": "",
+  "remark": "桐人今天睡大觉「全自动歌切项目」2026.10.18 歌切合集第 21 分P（章节「22_鳥の詩 - Lia」）。弹幕未直接出现歌名，仅以合集章节 + 日期确认。未定位回放时间点。",
+  "audio": {
+    "url": "assets/audio/song_324.m4a?v=70d03e3b1d97",
+    "sha256": "70d03e3b1d97e1148e9f28fbf09440e915966989ebe17caf55adb948c624a7ef"
+  },
+  "retrievedAt": "2026-11-16T04:06:55.756Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E9%B3%A5%E3%81%AE%E8%A9%A9&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E9%B3%A5%E3%81%AE%E8%A9%A9%20Lia&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 28151022,
+        "name": "鳥の詩",
+        "artists": [
+          "Lia"
+        ],
+        "album": "AIR ORIGINAL SOUNDTRACK",
+        "durationMs": 368000,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 761594,
+        "name": "鳥の詩",
+        "artists": [
+          "Lia"
+        ],
+        "album": "Ornithopter -AIR Original Compilation-",
+        "durationMs": 367040,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 488144,
+        "name": "鳥の詩",
+        "artists": [
+          "Lia"
+        ],
+        "album": "circle of fifth",
+        "durationMs": 372680,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1841257887,
+        "name": "鳥の詩",
+        "artists": [
+          "Roselia"
+        ],
+        "album": "バンドリ！ガールズバンドパーティ！",
+        "durationMs": 159384,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 760208,
+        "name": "鳥の詩",
+        "artists": [
+          "Lia"
+        ],
+        "album": "KSL Live World 2008",
+        "durationMs": 380386,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 25841803,
+        "name": "鳥の詩",
+        "artists": [
+          "Lia"
+        ],
+        "album": "Lia & LIA COLLECTION ALBUM",
+        "durationMs": 366506,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2645517071,
+        "name": "鳥の詩",
+        "artists": [
+          "Lia",
+          "VISUAL ARTS / Key"
+        ],
+        "album": "KSL Live World 2010 ~way to the Kud-Wafter~",
+        "durationMs": 401213,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 22809900,
+        "name": "鳥の詩",
+        "artists": [
+          "Lia"
+        ],
+        "album": "Collection Album [Diamond Days]",
+        "durationMs": 366506,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      }
+    ],
+    "workQuery": {
+      "song_id": 325,
+      "song_name": "鳥の詩",
+      "show_as_song_name": "",
+      "display_song_name": "鳥の詩",
+      "artist": "Lia",
+      "artist_search": "Lia 鳥の詩",
+      "feat_artist": "",
+      "remark": "桐人今天睡大觉「全自动歌切项目」2026.10.18 歌切合集第 21 分P（章节「22_鳥の詩 - Lia」）。弹幕未直接出现歌名，仅以合集章节 + 日期确认。未定位回放时间点。",
+      "tone": "",
+      "language": "日文",
+      "type": "动漫、经典",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1UPnV6zEs4/?p=21",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-18",
+      "row_key": "鳥の詩"
+    },
+    "sourceId": 28151022,
+    "sourcePath": "sources/28151022.json",
+    "sourceUrl": "https://music.163.com/#/song?id=28151022",
+    "selected": {
+      "id": 28151022,
+      "name": "鳥の詩",
+      "artists": [
+        "Lia"
+      ],
+      "album": "AIR ORIGINAL SOUNDTRACK",
+      "durationMs": 368000,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 36
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-325-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 364.181,
+    "sourceFirstLine": {
+      "t": 15.97,
+      "text": "消える飛行機雲  僕たちは見送った"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 22.0,
+      "endSeconds": 23.28,
+      "similarity": 0.42105263157894735,
+      "recognizedText": "僕たちは",
+      "meanProbability": 0.595,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "ja",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

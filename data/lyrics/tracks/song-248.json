@@ -1,0 +1,184 @@
+{
+  "schemaVersion": 1,
+  "key": "song-248",
+  "songId": 248,
+  "songName": "我的心是不夜城",
+  "rowKey": "我的心是不夜城",
+  "displaySongName": "我的心是不夜城",
+  "artist": "泠鸢yousa",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "",
+  "audio": {
+    "url": "assets/audio/song_247.m4a?v=60ddbc839b2f",
+    "sha256": "60ddbc839b2f06a4682d04d5eb2e56784c8f489c59469fda20e6eb19cb0bc0f3"
+  },
+  "retrievedAt": "2026-11-16T04:05:36.606Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E6%88%91%E7%9A%84%E5%BF%83%E6%98%AF%E4%B8%8D%E5%A4%9C%E5%9F%8E&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E6%88%91%E7%9A%84%E5%BF%83%E6%98%AF%E4%B8%8D%E5%A4%9C%E5%9F%8E%20%E6%B3%A0%E9%B8%A2yousa&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 2664421401,
+        "name": "我的心是不夜城",
+        "artists": [
+          "泠鸢yousa"
+        ],
+        "album": "自下而向上生",
+        "durationMs": 276894,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2665705587,
+        "name": "我的心是不夜城",
+        "artists": [
+          "月上逸影"
+        ],
+        "album": "与鸟有关",
+        "durationMs": 276894,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2658840062,
+        "name": "我的心是不夜城",
+        "artists": [
+          "杨正欣"
+        ],
+        "album": "杨正欣 同名专辑",
+        "durationMs": 388346,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2686379258,
+        "name": "我的心是不夜城(洛天依ver.)",
+        "artists": [
+          "洛天依"
+        ],
+        "album": "VOCALOID翻调/调教",
+        "durationMs": 276891,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 33682739,
+        "name": "神的随波逐流",
+        "artists": [
+          "泠鸢yousa"
+        ],
+        "album": "填词作品集",
+        "durationMs": 256417,
+        "titleScore": 0,
+        "artistMatch": true,
+        "score": 0.2
+      },
+      {
+        "id": 1350160463,
+        "name": "勾指起誓",
+        "artists": [
+          "泠鸢yousa"
+        ],
+        "album": "【泠鸢翻唱2019】",
+        "durationMs": 183500,
+        "titleScore": 0,
+        "artistMatch": true,
+        "score": 0.2
+      },
+      {
+        "id": 1418163109,
+        "name": "桃花笑-泠鸢",
+        "artists": [
+          "泠鸢yousa"
+        ],
+        "album": "泠鸢yousa.2020年翻唱合集",
+        "durationMs": 194862,
+        "titleScore": 0,
+        "artistMatch": true,
+        "score": 0.2
+      },
+      {
+        "id": 1824222230,
+        "name": "大喜",
+        "artists": [
+          "泠鸢yousa",
+          "音阙诗听"
+        ],
+        "album": "大喜",
+        "durationMs": 181237,
+        "titleScore": 0,
+        "artistMatch": true,
+        "score": 0.2
+      }
+    ],
+    "workQuery": {
+      "song_id": 248,
+      "song_name": "我的心是不夜城",
+      "show_as_song_name": "",
+      "display_song_name": "我的心是不夜城",
+      "artist": "泠鸢yousa",
+      "artist_search": "泠鸢yousa",
+      "feat_artist": "",
+      "remark": "",
+      "tone": "",
+      "language": "中文",
+      "type": "V圈",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1g1ah6REpb/?p=25",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-09-27",
+      "row_key": "我的心是不夜城"
+    },
+    "sourceId": 2664421401,
+    "sourcePath": "sources/2664421401.json",
+    "sourceUrl": "https://music.163.com/#/song?id=2664421401",
+    "selected": {
+      "id": 2664421401,
+      "name": "我的心是不夜城",
+      "artists": [
+        "泠鸢yousa"
+      ],
+      "album": "自下而向上生",
+      "durationMs": 276894,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 37
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-248-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 275.412,
+    "sourceFirstLine": {
+      "t": 5.08,
+      "text": "词\\曲\\唱：泠鸢yousa"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 11.0,
+      "endSeconds": 11.86,
+      "similarity": 0.0,
+      "recognizedText": "我",
+      "meanProbability": 0.129,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

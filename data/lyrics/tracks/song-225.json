@@ -1,0 +1,215 @@
+{
+  "schemaVersion": 1,
+  "key": "song-225",
+  "songId": 225,
+  "songName": "Sincerely",
+  "rowKey": "Sincerely",
+  "displaySongName": "Sincerely",
+  "artist": "TRUE",
+  "language": "日文",
+  "derivative": false,
+  "edition": "",
+  "remark": "UP 桐人今天睡大觉《2026.09.23练歌歌切合集》P16；《紫罗兰永恒花园》TV 动画 OP（TRUE 演唱）",
+  "audio": {
+    "url": "assets/audio/song_224.m4a?v=e6b4f23a9848",
+    "sha256": "e6b4f23a98489155a6950f68ef62d65fea17a063a891f1f37680c5be6a178f39"
+  },
+  "retrievedAt": "2026-11-16T04:05:17.351Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=Sincerely&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=Sincerely%20TRUE&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 534065323,
+        "name": "Sincerely",
+        "artists": [
+          "TRUE"
+        ],
+        "album": "Sincerely",
+        "durationMs": 275080,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2668592477,
+        "name": "Sincerely",
+        "artists": [
+          "TRUE"
+        ],
+        "album": "TRUE the BEST",
+        "durationMs": 275200,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 29539330,
+        "name": "Sincerely",
+        "artists": [
+          "浜田朱里"
+        ],
+        "album": "瞳・センチメンタル",
+        "durationMs": 216133,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2652870680,
+        "name": "Sincerely",
+        "artists": [
+          "明透",
+          "化步"
+        ],
+        "album": "Sincerely",
+        "durationMs": 279040,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1882252879,
+        "name": "Sincerely",
+        "artists": [
+          "Youngboy Never Broke Again"
+        ],
+        "album": "Sincerely, Kentrell",
+        "durationMs": 174545,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1968044286,
+        "name": "Sincerely (osirasekita Remix)",
+        "artists": [
+          "TRUE",
+          "osirasekita"
+        ],
+        "album": "CLUB Lantis presents Remix the Future",
+        "durationMs": 224585,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      },
+      {
+        "id": 1957279659,
+        "name": "Sincerely（钢琴版）",
+        "artists": [
+          "Noriチャ"
+        ],
+        "album": "紫罗兰永恒花园",
+        "durationMs": 293326,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 1475456270,
+        "name": "Sincerely Yours",
+        "artists": [
+          "Dennis Kuo"
+        ],
+        "album": "Music for Studying, Work, and Focus",
+        "durationMs": 310595,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      }
+    ],
+    "workQuery": {
+      "song_id": 225,
+      "song_name": "Sincerely",
+      "show_as_song_name": "",
+      "display_song_name": "Sincerely",
+      "artist": "TRUE",
+      "artist_search": "TRUE Sincerely ヴァイオレット・エヴァーガーデン",
+      "feat_artist": "",
+      "remark": "UP 桐人今天睡大觉《2026.09.23练歌歌切合集》P16；《紫罗兰永恒花园》TV 动画 OP（TRUE 演唱）",
+      "tone": "",
+      "language": "日文",
+      "type": "动漫、J-Pop",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1ouhW6GEoD/?p=16",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-09-23",
+      "row_key": "Sincerely"
+    },
+    "sourceId": 534065323,
+    "sourcePath": "sources/534065323.json",
+    "sourceUrl": "https://music.163.com/#/song?id=534065323",
+    "selected": {
+      "id": 534065323,
+      "name": "Sincerely",
+      "artists": [
+        "TRUE"
+      ],
+      "album": "Sincerely",
+      "durationMs": 275080,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 33
+  },
+  "alignment": {
+    "status": "asr_consistent_draft",
+    "evidencePath": "evidence/song-225-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 274.437,
+    "sourceFirstLine": {
+      "t": 0.5,
+      "text": "知らない言葉を 覚えていくたび"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 3.54,
+      "endSeconds": 9.8,
+      "similarity": 1,
+      "recognizedText": "知らない言葉を覚えていくたび",
+      "meanProbability": 0.85
+    },
+    "offsetSeconds": 3.04,
+    "checks": [
+      {
+        "sourceLine": {
+          "t": 132.07,
+          "text": "形のないもの 触れるたびに"
+        },
+        "evidencePath": "evidence/song-225-check0.json",
+        "candidate": {
+          "audioSeconds": 134.75,
+          "endSeconds": 141.57,
+          "similarity": 0.9166666666666666,
+          "recognizedText": "形のないもの 揺れるたびに",
+          "meanProbability": 0.732
+        },
+        "residualSeconds": -0.36
+      },
+      {
+        "sourceLine": {
+          "t": 240.11,
+          "text": "わたしは あなたに 会いたくなるよ"
+        },
+        "evidencePath": "evidence/song-225-check1.json",
+        "candidate": {
+          "audioSeconds": 243.91,
+          "endSeconds": 250.81,
+          "similarity": 0.8888888888888888,
+          "recognizedText": "はあなたに会いたくなるよ",
+          "meanProbability": 0.89
+        },
+        "residualSeconds": 0.76
+      }
+    ],
+    "asrLanguage": "ja",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

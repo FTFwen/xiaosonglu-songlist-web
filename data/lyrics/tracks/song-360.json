@@ -1,0 +1,189 @@
+{
+  "schemaVersion": 1,
+  "key": "song-360",
+  "songId": 360,
+  "songName": "また あした",
+  "rowKey": "また あした",
+  "displaySongName": "また あした",
+  "artist": "悠木碧",
+  "language": "日文",
+  "derivative": false,
+  "edition": "",
+  "remark": "鹿目まどか（CV 悠木碧），《魔法少女まどか☆マギカ》ED",
+  "audio": {
+    "url": "assets/audio/song_359.m4a?v=4996377cfd97",
+    "sha256": "4996377cfd97f80ab4b03c5a64dce658a097cc2472ef07d1f2818bc4bab9956b"
+  },
+  "retrievedAt": "2026-11-16T04:07:54.702Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E3%81%BE%E3%81%9F%20%E3%81%82%E3%81%97%E3%81%9F&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E3%81%BE%E3%81%9F%20%E3%81%82%E3%81%97%E3%81%9F%20%E6%82%A0%E6%9C%A8%E7%A2%A7&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 28138666,
+        "name": "また あした",
+        "artists": [
+          "悠木碧"
+        ],
+        "album": "魔法少女まどか☆マギカ Music Collection",
+        "durationMs": 264426,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 675919,
+        "name": "また あした",
+        "artists": [
+          "悠木碧"
+        ],
+        "album": "TVアニメ 魔法少女まどか☆マギカ 角色歌“また あした”(TV未放映第1话、第2话ED)",
+        "durationMs": 264426,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 496902070,
+        "name": "また　あした",
+        "artists": [
+          "悠木碧"
+        ],
+        "album": "「魔法少女まどか☆マギカ」 Ultimate Best",
+        "durationMs": 264475,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 409020556,
+        "name": "またあした",
+        "artists": [
+          "なゆごろう",
+          "000",
+          "鎖那",
+          "いかさん"
+        ],
+        "album": "君は夢の続きを歌う",
+        "durationMs": 336360,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 28914343,
+        "name": "またあした",
+        "artists": [
+          "想太",
+          "歌愛ユキ"
+        ],
+        "album": "少年少女のコトバ",
+        "durationMs": 194666,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1316582986,
+        "name": "またあした",
+        "artists": [
+          "Sawako碎花"
+        ],
+        "album": "またあした",
+        "durationMs": 330084,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 469065447,
+        "name": "またあした",
+        "artists": [
+          "ふわりP",
+          "初音ミク"
+        ],
+        "album": "EXIT TUNES PRESENTS Vocalohistory",
+        "durationMs": 333624,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 29356668,
+        "name": "またあした",
+        "artists": [
+          "ふわりP",
+          "初音ミク"
+        ],
+        "album": "ふわりPだよっ☆～ゆめのかたち～",
+        "durationMs": 333000,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 360,
+      "song_name": "また あした",
+      "show_as_song_name": "",
+      "display_song_name": "また あした",
+      "artist": "悠木碧",
+      "artist_search": "悠木碧",
+      "feat_artist": "",
+      "remark": "鹿目まどか（CV 悠木碧），《魔法少女まどか☆マギカ》ED",
+      "tone": "",
+      "language": "日文",
+      "type": "动画、J-Pop",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1nRxJ6tEPC/?p=9",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-31",
+      "row_key": "また あした"
+    },
+    "sourceId": 28138666,
+    "sourcePath": "sources/28138666.json",
+    "sourceUrl": "https://music.163.com/#/song?id=28138666",
+    "selected": {
+      "id": 28138666,
+      "name": "また あした",
+      "artists": [
+        "悠木碧"
+      ],
+      "album": "魔法少女まどか☆マギカ Music Collection",
+      "durationMs": 264426,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 34
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-360-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 261.845,
+    "sourceFirstLine": {
+      "t": 3.06,
+      "text": "「それじゃ またね」って手を振って"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 4.84,
+      "endSeconds": 7.98,
+      "similarity": 0.6956521739130435,
+      "recognizedText": "】それじゃまた寝てて",
+      "meanProbability": 0.692,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "ja",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

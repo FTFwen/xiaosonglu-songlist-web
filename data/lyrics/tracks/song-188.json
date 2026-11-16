@@ -1,0 +1,183 @@
+{
+  "schemaVersion": 1,
+  "key": "song-188",
+  "songId": 188,
+  "songName": "住在天狼星的那个人",
+  "rowKey": "住在天狼星的那个人",
+  "displaySongName": "住在天狼星的那个人",
+  "artist": "OHMYMEITING（黄美婷）",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "初扫因无【】括号歌词弹幕自动判为 no-songs，经用户提供歌切 BV1PQeN6kETG 人工翻案。UP 黄鱼鼠条（mid=137700370）独立歌切，简介注明「2026年9月16日杂谈」，发布于直播结束后（2026-09-17 00:35 UTC+8）；曲名《住在天狼星的那个人》与原唱 OHMYMEITING（黄美婷）经 Apple Music／Musixmatch／Shazam 交叉核实，标题歌词「明明你就是对的人」及原词「让我们一起私奔」与直播弹幕玩梗内容吻合。弹幕中的「现场写歌」「原创领域大神」为观众调侃唱功咬字，非即兴原创曲。用户已人工确认无误。startTime/endTime 为弹幕反应窗估计值。",
+  "audio": {
+    "url": "assets/audio/song_187.m4a?v=f04a9cdb7208",
+    "sha256": "f04a9cdb72082a478ba9a6c4bfba089fb8c272d336a463a5f39d40a9bdfd0df7"
+  },
+  "retrievedAt": "2026-11-16T04:12:27.646Z",
+  "match": {
+    "status": "candidate_review_required",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E4%BD%8F%E5%9C%A8%E5%A4%A9%E7%8B%BC%E6%98%9F%E7%9A%84%E9%82%A3%E4%B8%AA%E4%BA%BA&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E4%BD%8F%E5%9C%A8%E5%A4%A9%E7%8B%BC%E6%98%9F%E7%9A%84%E9%82%A3%E4%B8%AA%E4%BA%BA%20OHMYMEITING&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 2002473823,
+        "name": "住在天狼星的那个人",
+        "artists": [
+          "卿卿Yoke"
+        ],
+        "album": "来自天狼星的人",
+        "durationMs": 265610,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1870516374,
+        "name": "住在天狼星的那个人",
+        "artists": [
+          "小蜗"
+        ],
+        "album": "爱立刻有",
+        "durationMs": 268434,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1854230964,
+        "name": "住在天狼星的那个人",
+        "artists": [
+          "肥鹤"
+        ],
+        "album": "住在天狼星的那个人",
+        "durationMs": 31264,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1983558524,
+        "name": "住在天狼星的那个人",
+        "artists": [
+          "絨_Antler"
+        ],
+        "album": "绒の翻唱集",
+        "durationMs": 265488,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1905421839,
+        "name": "住在天狼星的那个人",
+        "artists": [
+          "墨言川"
+        ],
+        "album": "fan",
+        "durationMs": 87118,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1896340529,
+        "name": "住在天狼星的那个人",
+        "artists": [
+          "小菲汁"
+        ],
+        "album": "住在天狼星",
+        "durationMs": 87954,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2135970427,
+        "name": "住在天狼星的那个人",
+        "artists": [
+          "_MIss圈"
+        ],
+        "album": "圈圈cover情歌",
+        "durationMs": 265495,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2008869453,
+        "name": "住在天狼星的那个人",
+        "artists": [
+          "赵彦锴"
+        ],
+        "album": "杂忆集",
+        "durationMs": 265351,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 188,
+      "song_name": "住在天狼星的那个人",
+      "show_as_song_name": "",
+      "display_song_name": "住在天狼星的那个人",
+      "artist": "OHMYMEITING（黄美婷）",
+      "artist_search": "OHMYMEITING",
+      "feat_artist": "",
+      "remark": "初扫因无【】括号歌词弹幕自动判为 no-songs，经用户提供歌切 BV1PQeN6kETG 人工翻案。UP 黄鱼鼠条（mid=137700370）独立歌切，简介注明「2026年9月16日杂谈」，发布于直播结束后（2026-09-17 00:35 UTC+8）；曲名《住在天狼星的那个人》与原唱 OHMYMEITING（黄美婷）经 Apple Music／Musixmatch／Shazam 交叉核实，标题歌词「明明你就是对的人」及原词「让我们一起私奔」与直播弹幕玩梗内容吻合。弹幕中的「现场写歌」「原创领域大神」为观众调侃唱功咬字，非即兴原创曲。用户已人工确认无误。startTime/endTime 为弹幕反应窗估计值。",
+      "tone": "",
+      "language": "中文",
+      "type": "流行",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1PQeN6kETG/",
+      "sing_count": 2,
+      "status_labels": "歌回、独立歌切复核、歌切复核",
+      "last_sing_at": "2026-10-08",
+      "row_key": "住在天狼星的那个人"
+    },
+    "sourceId": 2002473823,
+    "sourcePath": "sources/2002473823.json",
+    "sourceUrl": "https://music.163.com/#/song?id=2002473823",
+    "selected": {
+      "id": 2002473823,
+      "name": "住在天狼星的那个人",
+      "artists": [
+        "卿卿Yoke"
+      ],
+      "album": "来自天狼星的人",
+      "durationMs": 265610,
+      "titleScore": 1,
+      "artistMatch": false,
+      "score": 0.8
+    },
+    "timedLineCount": 54
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-188-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 281.472,
+    "sourceFirstLine": {
+      "t": 1.8900000000000001,
+      "text": "在望无边际的天空上面"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 3.2,
+      "endSeconds": 3.38,
+      "similarity": 0.18181818181818182,
+      "recognizedText": "的",
+      "meanProbability": 0.621,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

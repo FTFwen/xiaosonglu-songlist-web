@@ -1,0 +1,187 @@
+{
+  "schemaVersion": 1,
+  "key": "song-324",
+  "songId": 324,
+  "songName": "拜云台",
+  "rowKey": "拜云台",
+  "displaySongName": "拜云台",
+  "artist": "忘川风华录",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "桐人今天睡大觉「全自动歌切项目」2026.10.18 歌切合集第 17 分P（章节「18_拜云台 - 忘川风华录」）。弹幕未直接出现歌名，仅以合集章节 + 日期确认。未定位回放时间点。",
+  "audio": {
+    "url": "assets/audio/song_323.m4a?v=d33a3db28a36",
+    "sha256": "d33a3db28a361d5d2774e3e2d3478cd67f361076d43820d0613975dadf73baad"
+  },
+  "retrievedAt": "2026-11-16T04:06:49.877Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E6%8B%9C%E4%BA%91%E5%8F%B0&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E6%8B%9C%E4%BA%91%E5%8F%B0%20%E5%BF%98%E5%B7%9D%E9%A3%8E%E5%8D%8E%E5%BD%95&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 2617247700,
+        "name": "拜云台",
+        "artists": [
+          "忘川风华录"
+        ],
+        "album": "拜云台",
+        "durationMs": 232533,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2639828214,
+        "name": "拜云台",
+        "artists": [
+          "茶了了"
+        ],
+        "album": "拜云台",
+        "durationMs": 232482,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2622981059,
+        "name": "拜云台",
+        "artists": [
+          "墨绛"
+        ],
+        "album": "拜云台",
+        "durationMs": 232533,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2603647195,
+        "name": "拜云台",
+        "artists": [
+          "礼弥Hisashi"
+        ],
+        "album": "拜云台",
+        "durationMs": 232533,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2618375322,
+        "name": "拜云台",
+        "artists": [
+          "陌玖XG",
+          "星尘",
+          "永夜minus",
+          "琲鸢Sayaka",
+          "寒商P"
+        ],
+        "album": "原神填词",
+        "durationMs": 239786,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2164604269,
+        "name": "拜云台",
+        "artists": [
+          "郁千"
+        ],
+        "album": "拜云台",
+        "durationMs": 235378,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2754790872,
+        "name": "拜云台",
+        "artists": [
+          "汞灯"
+        ],
+        "album": "拜云台",
+        "durationMs": 232533,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3431667077,
+        "name": "拜云台",
+        "artists": [
+          "艾丽西亚Elysia"
+        ],
+        "album": "忘川风华录",
+        "durationMs": 232493,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 324,
+      "song_name": "拜云台",
+      "show_as_song_name": "",
+      "display_song_name": "拜云台",
+      "artist": "忘川风华录",
+      "artist_search": "忘川风华录 拜云台",
+      "feat_artist": "",
+      "remark": "桐人今天睡大觉「全自动歌切项目」2026.10.18 歌切合集第 17 分P（章节「18_拜云台 - 忘川风华录」）。弹幕未直接出现歌名，仅以合集章节 + 日期确认。未定位回放时间点。",
+      "tone": "",
+      "language": "中文",
+      "type": "中V、国风、古风",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1UPnV6zEs4/?p=17",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-18",
+      "row_key": "拜云台"
+    },
+    "sourceId": 2617247700,
+    "sourcePath": "sources/2617247700.json",
+    "sourceUrl": "https://music.163.com/#/song?id=2617247700",
+    "selected": {
+      "id": 2617247700,
+      "name": "拜云台",
+      "artists": [
+        "忘川风华录"
+      ],
+      "album": "拜云台",
+      "durationMs": 232533,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 49
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-324-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 233.301,
+    "sourceFirstLine": {
+      "t": 8.55,
+      "text": "调校： Creuzer"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 0.0,
+      "endSeconds": 1.22,
+      "similarity": 0.0,
+      "recognizedText": "中",
+      "meanProbability": 0.156,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

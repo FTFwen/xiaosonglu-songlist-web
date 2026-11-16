@@ -1,0 +1,140 @@
+{
+  "audioSha256": "a77a872b39a55a767d61aa0afd550067ec476bce1aec1373813e4acad39277f0",
+  "model": "whisper-base",
+  "start": 0,
+  "end": 36.254999999999995,
+  "result": {
+    "text": "【音楽】何に言ってく今にな",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 27.140000000000004,
+        "end": 29.98,
+        "text": "【音楽】",
+        "tokens": [
+          50364,
+          15588,
+          18034,
+          35479,
+          15623,
+          51314
+        ],
+        "temperature": 0,
+        "avg_logprob": -1.5592851638793945,
+        "compression_ratio": 0.5714285714285714,
+        "no_speech_prob": 0.30692651867866516,
+        "words": [
+          {
+            "word": "【",
+            "start": 27.140000000000004,
+            "end": 28.540000000000003,
+            "probability": 0.009607960470020771
+          },
+          {
+            "word": "音",
+            "start": 28.540000000000003,
+            "end": 29.94,
+            "probability": 0.02480071783065796
+          },
+          {
+            "word": "楽",
+            "start": 29.94,
+            "end": 29.96,
+            "probability": 0.7323832511901855
+          },
+          {
+            "word": "】",
+            "start": 29.96,
+            "end": 29.98,
+            "probability": 0.7830209136009216
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "seek": 2998,
+        "start": 29.98,
+        "end": 34.08,
+        "text": "何に言ってく",
+        "tokens": [
+          50364,
+          11906,
+          4108,
+          12009,
+          6102,
+          6134,
+          50564
+        ],
+        "temperature": 0,
+        "avg_logprob": -1.0425384839375813,
+        "compression_ratio": 0.75,
+        "no_speech_prob": 0.4497120678424835,
+        "words": [
+          {
+            "word": "何",
+            "start": 29.98,
+            "end": 31.24,
+            "probability": 0.03391628339886665
+          },
+          {
+            "word": "に",
+            "start": 31.24,
+            "end": 31.66,
+            "probability": 0.5757555365562439
+          },
+          {
+            "word": "言",
+            "start": 31.66,
+            "end": 32.28,
+            "probability": 0.2664352059364319
+          },
+          {
+            "word": "って",
+            "start": 32.28,
+            "end": 32.92,
+            "probability": 0.4780745506286621
+          },
+          {
+            "word": "く",
+            "start": 32.92,
+            "end": 34.08,
+            "probability": 0.7312625646591187
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "seek": 2998,
+        "start": 34.08,
+        "end": 35.98,
+        "text": "今にな",
+        "tokens": [
+          50564,
+          6480,
+          22615,
+          50664
+        ],
+        "temperature": 0,
+        "avg_logprob": -1.0425384839375813,
+        "compression_ratio": 0.75,
+        "no_speech_prob": 0.4497120678424835,
+        "words": [
+          {
+            "word": "今",
+            "start": 34.08,
+            "end": 35.4,
+            "probability": 0.1635635495185852
+          },
+          {
+            "word": "にな",
+            "start": 35.4,
+            "end": 35.98,
+            "probability": 0.4234551787376404
+          }
+        ]
+      }
+    ],
+    "language": "ja"
+  }
+}

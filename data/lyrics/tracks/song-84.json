@@ -1,0 +1,187 @@
+{
+  "schemaVersion": 1,
+  "key": "song-84",
+  "songId": 84,
+  "songName": "二人セゾン",
+  "rowKey": "二人セゾン",
+  "displaySongName": "二人セゾン",
+  "artist": "乃木坂46",
+  "language": "日文",
+  "derivative": false,
+  "edition": "",
+  "remark": "来自 2026-08-20 偶像歌回。经弹幕歌词交叉验证 + 歌切视频《【小松绿Viridis/歌回】20260820-偶像歌回？欸》分P第14章节确认曲目；时间按歌切分P累计估算，待回放复核。歌手信息来自网易云音乐/萌娘百科检索。",
+  "audio": {
+    "url": "assets/audio/song_17.m4a?v=142302705807",
+    "sha256": "142302705807ffe6c4c9432c5aafb7352bcf1540aa8d393a431771c6eedef6d9"
+  },
+  "retrievedAt": "2026-11-16T04:12:45.491Z",
+  "match": {
+    "status": "candidate_review_required",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E4%BA%8C%E4%BA%BA%E3%82%BB%E3%82%BE%E3%83%B3&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E4%BA%8C%E4%BA%BA%E3%82%BB%E3%82%BE%E3%83%B3%20%E4%B9%83%E6%9C%A8%E5%9D%8246&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 443882735,
+        "name": "二人セゾン",
+        "artists": [
+          "欅坂46"
+        ],
+        "album": "二人セゾン(Special Edition)",
+        "durationMs": 288880,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 491294357,
+        "name": "二人セゾン",
+        "artists": [
+          "欅坂46"
+        ],
+        "album": "二人セゾン",
+        "durationMs": 288880,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1438208903,
+        "name": "二人セゾン",
+        "artists": [
+          "樱木",
+          "本墨置子"
+        ],
+        "album": "二人セゾン/二人的季节",
+        "durationMs": 288992,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1368450393,
+        "name": "二人セゾン",
+        "artists": [
+          "MEON",
+          "祈言喵"
+        ],
+        "album": "二人セゾン／二人的季节",
+        "durationMs": 288733,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 491294443,
+        "name": "二人セゾン",
+        "artists": [
+          "欅坂46"
+        ],
+        "album": "真っ白なものは汚したくなる (Complete Edition)",
+        "durationMs": 288880,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1442632344,
+        "name": "二人セゾン",
+        "artists": [
+          "Mnita",
+          "芣苡"
+        ],
+        "album": "二人的季节",
+        "durationMs": 289436,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1363034908,
+        "name": "二人セゾン",
+        "artists": [
+          "寒砧",
+          "阑夜阑"
+        ],
+        "album": "赏味期限",
+        "durationMs": 290664,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1482290065,
+        "name": "二人セゾン",
+        "artists": [
+          "欅坂46"
+        ],
+        "album": "永遠より長い一瞬 ～あの頃、確かに存在した私たち～(Complete Edition)",
+        "durationMs": 288949,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 84,
+      "song_name": "二人セゾン",
+      "show_as_song_name": "",
+      "display_song_name": "二人セゾン",
+      "artist": "乃木坂46",
+      "artist_search": "乃木坂46 二人セゾン",
+      "feat_artist": "",
+      "remark": "来自 2026-08-20 偶像歌回。经弹幕歌词交叉验证 + 歌切视频《【小松绿Viridis/歌回】20260820-偶像歌回？欸》分P第14章节确认曲目；时间按歌切分P累计估算，待回放复核。歌手信息来自网易云音乐/萌娘百科检索。",
+      "tone": "",
+      "language": "日文",
+      "type": "J-Pop、偶像",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1WS8c6XE9w?p=14",
+      "sing_count": 1,
+      "status_labels": "歌回、自动识别待人工复核",
+      "last_sing_at": "2026-08-20",
+      "row_key": "二人セゾン"
+    },
+    "sourceId": 443882735,
+    "sourcePath": "sources/443882735.json",
+    "sourceUrl": "https://music.163.com/#/song?id=443882735",
+    "selected": {
+      "id": 443882735,
+      "name": "二人セゾン",
+      "artists": [
+        "欅坂46"
+      ],
+      "album": "二人セゾン(Special Edition)",
+      "durationMs": 288880,
+      "titleScore": 1,
+      "artistMatch": false,
+      "score": 0.8
+    },
+    "timedLineCount": 63
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-84-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 286.999,
+    "sourceFirstLine": {
+      "t": 0.33,
+      "text": "二人セゾン二人セゾン"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 2.98,
+      "endSeconds": 5.14,
+      "similarity": 0.26666666666666666,
+      "recognizedText": "人せぞ 2人",
+      "meanProbability": 0.496,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "ja",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

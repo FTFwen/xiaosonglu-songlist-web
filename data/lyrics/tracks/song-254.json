@@ -1,0 +1,161 @@
+{
+  "schemaVersion": 1,
+  "key": "song-254",
+  "songId": 254,
+  "songName": "あの夢をなぞって",
+  "displaySongName": "あの夢をなぞって",
+  "artist": "YOASOBI",
+  "language": "日文",
+  "derivative": false,
+  "audio": {
+    "url": "assets/audio/song_253.m4a?v=56556b50e63f",
+    "sha256": "56556b50e63f4ab627b5ed5d90d75e27d7bb4e776903938631f298138cd13cdd"
+  },
+  "retrievedAt": "2026-11-16T03:58:12.414Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E3%81%82%E3%81%AE%E5%A4%A2%E3%82%92%E3%81%AA%E3%81%9E%E3%81%A3%E3%81%A6&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1417236632,
+        "name": "あの夢をなぞって",
+        "artists": [
+          "YOASOBI"
+        ],
+        "album": "あの夢をなぞって",
+        "durationMs": 242666,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1500152659,
+        "name": "あの夢をなぞって",
+        "artists": [
+          "YOASOBI"
+        ],
+        "album": "THE BOOK",
+        "durationMs": 240746,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1948689636,
+        "name": "あの夢をなぞって",
+        "artists": [
+          "kashiko雨儿"
+        ],
+        "album": "あの夢をなぞって",
+        "durationMs": 240875,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1977159645,
+        "name": "あの夢をなぞって",
+        "artists": [
+          "蓝耳朵不蓝"
+        ],
+        "album": "日系翻唱",
+        "durationMs": 240966,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2736227934,
+        "name": "あの夢をなぞって",
+        "artists": [
+          "二宮和也"
+        ],
+        "album": "あの夢をなぞって",
+        "durationMs": 255396,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1929242801,
+        "name": "あの夢をなぞって (Ballade Ver.)",
+        "artists": [
+          "YOASOBI"
+        ],
+        "album": "あの夢をなぞって (Ballade Ver.)",
+        "durationMs": 224800,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      },
+      {
+        "id": 3453846401,
+        "name": "あの夢をなぞって (YOASOBI 5th ANNIVERSARY DOME LIVE 2024 “超現実”)",
+        "artists": [
+          "YOASOBI"
+        ],
+        "album": "YOASOBI 5th ANNIVERSARY DOME LIVE 2024 “超現実” at TOKYO DOME",
+        "durationMs": 294573,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      },
+      {
+        "id": 2068137124,
+        "name": "あの夢をなぞって (Piano Ver.)",
+        "artists": [
+          "Piano Echoes"
+        ],
+        "album": "YOASOBIに癒される〜リラクシング・ピアノ",
+        "durationMs": 394824,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      }
+    ],
+    "sourceId": 1417236632,
+    "sourcePath": "sources/1417236632.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1417236632",
+    "selected": {
+      "id": 1417236632,
+      "name": "あの夢をなぞって",
+      "artists": [
+        "YOASOBI"
+      ],
+      "album": "あの夢をなぞって",
+      "durationMs": 242666,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 46
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-254-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 241.664,
+    "sourceFirstLine": {
+      "t": 1.097,
+      "text": "夜の空を飾る綺麗な花"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 3.22,
+      "endSeconds": 4.88,
+      "similarity": 0.4,
+      "recognizedText": "る嫌いな花",
+      "meanProbability": 0.761,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "ja",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  },
+  "rowKey": "あの夢をなぞって",
+  "edition": "",
+  "remark": ""
+}

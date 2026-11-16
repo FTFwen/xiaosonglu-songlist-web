@@ -1,0 +1,183 @@
+{
+  "schemaVersion": 1,
+  "key": "song-394",
+  "songId": 394,
+  "songName": "半壶纱",
+  "rowKey": "半壶纱",
+  "displaySongName": "半壶纱",
+  "artist": "刘珂矣",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "",
+  "audio": {
+    "url": "assets/audio/song_393.m4a?v=9769aabbb279",
+    "sha256": "9769aabbb279ec1bf4153f207ffcc44dad95bf445fbc00c7e9ee1a7b242aa78a"
+  },
+  "retrievedAt": "2026-11-16T04:08:15.018Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E5%8D%8A%E5%A3%B6%E7%BA%B1&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E5%8D%8A%E5%A3%B6%E7%BA%B1%20%E5%88%98%E7%8F%82%E7%9F%A3&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 28793140,
+        "name": "半壶纱",
+        "artists": [
+          "刘珂矣"
+        ],
+        "album": "半壶纱",
+        "durationMs": 221994,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1341621836,
+        "name": "半壶纱",
+        "artists": [
+          "刘珂矣"
+        ],
+        "album": "半壶纱",
+        "durationMs": 267008,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 3379231104,
+        "name": "半壶纱",
+        "artists": [
+          "刘珂矣"
+        ],
+        "album": "遥远的回声",
+        "durationMs": 114002,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 3380918142,
+        "name": "半壶纱",
+        "artists": [
+          "祺夜"
+        ],
+        "album": "半壶纱",
+        "durationMs": 96874,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2122932453,
+        "name": "半壶纱(DJ名龙版)",
+        "artists": [
+          "刘珂矣"
+        ],
+        "album": "半壶纱（DJ版）",
+        "durationMs": 330000,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      },
+      {
+        "id": 29713132,
+        "name": "半壶纱 (纯音乐)",
+        "artists": [
+          "刘珂矣"
+        ],
+        "album": "半壶纱",
+        "durationMs": 244273,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      },
+      {
+        "id": 1382357649,
+        "name": "半壶纱 (伴奏)",
+        "artists": [
+          "刘珂矣"
+        ],
+        "album": "半壶纱",
+        "durationMs": 222000,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      },
+      {
+        "id": 2122898481,
+        "name": "半壶纱(清风版)",
+        "artists": [
+          "刘珂矣"
+        ],
+        "album": "半壶纱（清风版）",
+        "durationMs": 219194,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      }
+    ],
+    "workQuery": {
+      "song_id": 394,
+      "song_name": "半壶纱",
+      "show_as_song_name": "",
+      "display_song_name": "半壶纱",
+      "artist": "刘珂矣",
+      "artist_search": "刘珂矣",
+      "feat_artist": "",
+      "remark": "",
+      "tone": "",
+      "language": "中文",
+      "type": "国风、经典",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1LRWd6jEqp/?p=8",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-11-12",
+      "row_key": "半壶纱"
+    },
+    "sourceId": 28793140,
+    "sourcePath": "sources/28793140.json",
+    "sourceUrl": "https://music.163.com/#/song?id=28793140",
+    "selected": {
+      "id": 28793140,
+      "name": "半壶纱",
+      "artists": [
+        "刘珂矣"
+      ],
+      "album": "半壶纱",
+      "durationMs": 221994,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 26
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-394-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 221.141,
+    "sourceFirstLine": {
+      "t": 25.97,
+      "text": "墨已入水     渡一池青花"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 29.4,
+      "endSeconds": 30.76,
+      "similarity": 0.36363636363636365,
+      "recognizedText": " 青花",
+      "meanProbability": 0.454,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

@@ -1,0 +1,789 @@
+{
+  "audioSha256": "f8b653cb5aa20bdd77527fe8914a07a4cf9ebe87ba3e1b22eda00476438f5fa6",
+  "model": "whisper-base",
+  "start": 0,
+  "end": 46.879999999999995,
+  "result": {
+    "text": "我跟上一项那句像我这句想拿去海边风里想了几下悲伤的城市中放进信心会从哪一刻哪一刻哪一片天空生气",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 26.200000000000006,
+        "end": 29.12,
+        "text": "我跟上一项那句像",
+        "tokens": [
+          50364,
+          1654,
+          9678,
+          5708,
+          2257,
+          10178,
+          117,
+          4184,
+          34592,
+          12760,
+          50534
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.5405789355298022,
+        "compression_ratio": 6.0,
+        "no_speech_prob": 0.3852443993091583,
+        "words": [
+          {
+            "word": "我",
+            "start": 26.200000000000006,
+            "end": 26.76,
+            "probability": 0.4319426119327545
+          },
+          {
+            "word": "跟",
+            "start": 26.76,
+            "end": 27.0,
+            "probability": 0.6414669752120972
+          },
+          {
+            "word": "上",
+            "start": 27.0,
+            "end": 27.26,
+            "probability": 0.59051114320755
+          },
+          {
+            "word": "一",
+            "start": 27.26,
+            "end": 27.46,
+            "probability": 0.8215261101722717
+          },
+          {
+            "word": "项",
+            "start": 27.46,
+            "end": 27.72,
+            "probability": 0.8383133411407471
+          },
+          {
+            "word": "那",
+            "start": 27.72,
+            "end": 28.22,
+            "probability": 0.32530298829078674
+          },
+          {
+            "word": "句",
+            "start": 28.22,
+            "end": 28.56,
+            "probability": 0.3938535749912262
+          },
+          {
+            "word": "像",
+            "start": 28.56,
+            "end": 29.12,
+            "probability": 0.2809831500053406
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "seek": 0,
+        "start": 29.12,
+        "end": 29.98,
+        "text": "我这句",
+        "tokens": [
+          50534,
+          1654,
+          5562,
+          34592,
+          50578
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.5405789355298022,
+        "compression_ratio": 6.0,
+        "no_speech_prob": 0.3852443993091583,
+        "words": [
+          {
+            "word": "我",
+            "start": 29.12,
+            "end": 29.6,
+            "probability": 0.055062372237443924
+          },
+          {
+            "word": "这",
+            "start": 29.6,
+            "end": 29.88,
+            "probability": 0.04828765243291855
+          },
+          {
+            "word": "句",
+            "start": 29.88,
+            "end": 29.98,
+            "probability": 0.1357734203338623
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "seek": 0,
+        "start": 29.98,
+        "end": 29.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.5405789355298022,
+        "compression_ratio": 6.0,
+        "no_speech_prob": 0.3852443993091583,
+        "words": []
+      },
+      {
+        "id": 3,
+        "seek": 0,
+        "start": 29.98,
+        "end": 29.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.5405789355298022,
+        "compression_ratio": 6.0,
+        "no_speech_prob": 0.3852443993091583,
+        "words": []
+      },
+      {
+        "id": 4,
+        "seek": 0,
+        "start": 29.98,
+        "end": 29.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.5405789355298022,
+        "compression_ratio": 6.0,
+        "no_speech_prob": 0.3852443993091583,
+        "words": []
+      },
+      {
+        "id": 5,
+        "seek": 0,
+        "start": 29.98,
+        "end": 29.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.5405789355298022,
+        "compression_ratio": 6.0,
+        "no_speech_prob": 0.3852443993091583,
+        "words": []
+      },
+      {
+        "id": 6,
+        "seek": 0,
+        "start": 29.98,
+        "end": 29.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.5405789355298022,
+        "compression_ratio": 6.0,
+        "no_speech_prob": 0.3852443993091583,
+        "words": []
+      },
+      {
+        "id": 7,
+        "seek": 0,
+        "start": 29.98,
+        "end": 29.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.5405789355298022,
+        "compression_ratio": 6.0,
+        "no_speech_prob": 0.3852443993091583,
+        "words": []
+      },
+      {
+        "id": 8,
+        "seek": 0,
+        "start": 29.98,
+        "end": 29.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.5405789355298022,
+        "compression_ratio": 6.0,
+        "no_speech_prob": 0.3852443993091583,
+        "words": []
+      },
+      {
+        "id": 9,
+        "seek": 0,
+        "start": 29.98,
+        "end": 29.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.5405789355298022,
+        "compression_ratio": 6.0,
+        "no_speech_prob": 0.3852443993091583,
+        "words": []
+      },
+      {
+        "id": 10,
+        "seek": 0,
+        "start": 29.98,
+        "end": 29.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.5405789355298022,
+        "compression_ratio": 6.0,
+        "no_speech_prob": 0.3852443993091583,
+        "words": []
+      },
+      {
+        "id": 11,
+        "seek": 0,
+        "start": 29.98,
+        "end": 29.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.5405789355298022,
+        "compression_ratio": 6.0,
+        "no_speech_prob": 0.3852443993091583,
+        "words": []
+      },
+      {
+        "id": 12,
+        "seek": 0,
+        "start": 29.98,
+        "end": 29.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.5405789355298022,
+        "compression_ratio": 6.0,
+        "no_speech_prob": 0.3852443993091583,
+        "words": []
+      },
+      {
+        "id": 13,
+        "seek": 0,
+        "start": 29.98,
+        "end": 29.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.5405789355298022,
+        "compression_ratio": 6.0,
+        "no_speech_prob": 0.3852443993091583,
+        "words": []
+      },
+      {
+        "id": 14,
+        "seek": 0,
+        "start": 29.98,
+        "end": 29.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.5405789355298022,
+        "compression_ratio": 6.0,
+        "no_speech_prob": 0.3852443993091583,
+        "words": []
+      },
+      {
+        "id": 15,
+        "seek": 0,
+        "start": 29.98,
+        "end": 29.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.5405789355298022,
+        "compression_ratio": 6.0,
+        "no_speech_prob": 0.3852443993091583,
+        "words": []
+      },
+      {
+        "id": 16,
+        "seek": 0,
+        "start": 29.98,
+        "end": 29.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.5405789355298022,
+        "compression_ratio": 6.0,
+        "no_speech_prob": 0.3852443993091583,
+        "words": []
+      },
+      {
+        "id": 17,
+        "seek": 0,
+        "start": 29.98,
+        "end": 29.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.5405789355298022,
+        "compression_ratio": 6.0,
+        "no_speech_prob": 0.3852443993091583,
+        "words": []
+      },
+      {
+        "id": 18,
+        "seek": 0,
+        "start": 29.98,
+        "end": 29.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.5405789355298022,
+        "compression_ratio": 6.0,
+        "no_speech_prob": 0.3852443993091583,
+        "words": []
+      },
+      {
+        "id": 19,
+        "seek": 0,
+        "start": 29.98,
+        "end": 29.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.5405789355298022,
+        "compression_ratio": 6.0,
+        "no_speech_prob": 0.3852443993091583,
+        "words": []
+      },
+      {
+        "id": 20,
+        "seek": 0,
+        "start": 29.98,
+        "end": 29.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.5405789355298022,
+        "compression_ratio": 6.0,
+        "no_speech_prob": 0.3852443993091583,
+        "words": []
+      },
+      {
+        "id": 21,
+        "seek": 0,
+        "start": 29.98,
+        "end": 29.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.5405789355298022,
+        "compression_ratio": 6.0,
+        "no_speech_prob": 0.3852443993091583,
+        "words": []
+      },
+      {
+        "id": 22,
+        "seek": 0,
+        "start": 29.98,
+        "end": 29.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.5405789355298022,
+        "compression_ratio": 6.0,
+        "no_speech_prob": 0.3852443993091583,
+        "words": []
+      },
+      {
+        "id": 23,
+        "seek": 0,
+        "start": 29.98,
+        "end": 29.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.5405789355298022,
+        "compression_ratio": 6.0,
+        "no_speech_prob": 0.3852443993091583,
+        "words": []
+      },
+      {
+        "id": 24,
+        "seek": 0,
+        "start": 29.98,
+        "end": 29.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.5405789355298022,
+        "compression_ratio": 6.0,
+        "no_speech_prob": 0.3852443993091583,
+        "words": []
+      },
+      {
+        "id": 25,
+        "seek": 0,
+        "start": 29.98,
+        "end": 29.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.5405789355298022,
+        "compression_ratio": 6.0,
+        "no_speech_prob": 0.3852443993091583,
+        "words": []
+      },
+      {
+        "id": 26,
+        "seek": 0,
+        "start": 29.98,
+        "end": 29.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.5405789355298022,
+        "compression_ratio": 6.0,
+        "no_speech_prob": 0.3852443993091583,
+        "words": []
+      },
+      {
+        "id": 27,
+        "seek": 2998,
+        "start": 29.98,
+        "end": 33.12,
+        "text": "想拿去海边风里",
+        "tokens": [
+          50364,
+          7093,
+          24351,
+          6734,
+          20078,
+          40503,
+          47209,
+          15759,
+          50543
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.5186555480957031,
+        "compression_ratio": 1.0693069306930694,
+        "no_speech_prob": 0.6337812542915344,
+        "words": [
+          {
+            "word": "想",
+            "start": 29.98,
+            "end": 30.36,
+            "probability": 0.5394574999809265
+          },
+          {
+            "word": "拿",
+            "start": 30.36,
+            "end": 30.84,
+            "probability": 0.5229215025901794
+          },
+          {
+            "word": "去",
+            "start": 30.84,
+            "end": 31.26,
+            "probability": 0.9923496246337891
+          },
+          {
+            "word": "海",
+            "start": 31.26,
+            "end": 31.74,
+            "probability": 0.8649517297744751
+          },
+          {
+            "word": "边",
+            "start": 31.74,
+            "end": 32.08,
+            "probability": 0.8339827656745911
+          },
+          {
+            "word": "风",
+            "start": 32.08,
+            "end": 32.56,
+            "probability": 0.19201312959194183
+          },
+          {
+            "word": "里",
+            "start": 32.56,
+            "end": 33.12,
+            "probability": 0.4376715421676636
+          }
+        ]
+      },
+      {
+        "id": 28,
+        "seek": 2998,
+        "start": 33.12,
+        "end": 38.02,
+        "text": "想了几下悲伤的城市中放进",
+        "tokens": [
+          50543,
+          7093,
+          2289,
+          6336,
+          254,
+          4438,
+          14696,
+          110,
+          7384,
+          97,
+          1546,
+          45277,
+          27261,
+          5975,
+          12744,
+          36700,
+          50891
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.5186555480957031,
+        "compression_ratio": 1.0693069306930694,
+        "no_speech_prob": 0.6337812542915344,
+        "words": [
+          {
+            "word": "想",
+            "start": 33.12,
+            "end": 33.78,
+            "probability": 0.6199117302894592
+          },
+          {
+            "word": "了",
+            "start": 33.78,
+            "end": 33.98,
+            "probability": 0.7899989485740662
+          },
+          {
+            "word": "几",
+            "start": 33.98,
+            "end": 34.2,
+            "probability": 0.79100501537323
+          },
+          {
+            "word": "下",
+            "start": 34.2,
+            "end": 34.4,
+            "probability": 0.9242276549339294
+          },
+          {
+            "word": "悲",
+            "start": 34.4,
+            "end": 34.68,
+            "probability": 0.7343161553144455
+          },
+          {
+            "word": "伤",
+            "start": 34.68,
+            "end": 35.24,
+            "probability": 0.9585376381874084
+          },
+          {
+            "word": "的",
+            "start": 35.24,
+            "end": 35.58,
+            "probability": 0.9044694900512695
+          },
+          {
+            "word": "城",
+            "start": 35.58,
+            "end": 35.98,
+            "probability": 0.9917324781417847
+          },
+          {
+            "word": "市",
+            "start": 35.98,
+            "end": 36.38,
+            "probability": 0.9892413020133972
+          },
+          {
+            "word": "中",
+            "start": 36.38,
+            "end": 36.96,
+            "probability": 0.9538188576698303
+          },
+          {
+            "word": "放",
+            "start": 36.96,
+            "end": 37.4,
+            "probability": 0.6047626733779907
+          },
+          {
+            "word": "进",
+            "start": 37.4,
+            "end": 38.02,
+            "probability": 0.2528626322746277
+          }
+        ]
+      },
+      {
+        "id": 29,
+        "seek": 2998,
+        "start": 40.52,
+        "end": 42.44,
+        "text": "信心会从哪一刻",
+        "tokens": [
+          50891,
+          17665,
+          7945,
+          12949,
+          35630,
+          17028,
+          2257,
+          45500,
+          50995
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.5186555480957031,
+        "compression_ratio": 1.0693069306930694,
+        "no_speech_prob": 0.6337812542915344,
+        "words": [
+          {
+            "word": "信",
+            "start": 40.3,
+            "end": 40.72,
+            "probability": 0.053699642419815063
+          },
+          {
+            "word": "心",
+            "start": 40.72,
+            "end": 40.96,
+            "probability": 0.9533330202102661
+          },
+          {
+            "word": "会",
+            "start": 40.96,
+            "end": 41.12,
+            "probability": 0.8929086327552795
+          },
+          {
+            "word": "从",
+            "start": 41.12,
+            "end": 41.36,
+            "probability": 0.7618792057037354
+          },
+          {
+            "word": "哪",
+            "start": 41.36,
+            "end": 41.74,
+            "probability": 0.572097659111023
+          },
+          {
+            "word": "一",
+            "start": 41.74,
+            "end": 42.2,
+            "probability": 0.8947456479072571
+          },
+          {
+            "word": "刻",
+            "start": 42.2,
+            "end": 42.44,
+            "probability": 0.7924658060073853
+          }
+        ]
+      },
+      {
+        "id": 30,
+        "seek": 2998,
+        "start": 42.44,
+        "end": 43.8,
+        "text": "哪一刻",
+        "tokens": [
+          50995,
+          17028,
+          2257,
+          45500,
+          51064
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.5186555480957031,
+        "compression_ratio": 1.0693069306930694,
+        "no_speech_prob": 0.6337812542915344,
+        "words": [
+          {
+            "word": "哪",
+            "start": 42.44,
+            "end": 42.92,
+            "probability": 0.4571061432361603
+          },
+          {
+            "word": "一",
+            "start": 42.92,
+            "end": 43.48,
+            "probability": 0.9935300946235657
+          },
+          {
+            "word": "刻",
+            "start": 43.48,
+            "end": 43.8,
+            "probability": 0.9905434250831604
+          }
+        ]
+      },
+      {
+        "id": 31,
+        "seek": 2998,
+        "start": 43.8,
+        "end": 46.84,
+        "text": "哪一片天空生气",
+        "tokens": [
+          51064,
+          17028,
+          2257,
+          16668,
+          6135,
+          23322,
+          8244,
+          42204,
+          51209
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.5186555480957031,
+        "compression_ratio": 1.0693069306930694,
+        "no_speech_prob": 0.6337812542915344,
+        "words": [
+          {
+            "word": "哪",
+            "start": 43.8,
+            "end": 44.28,
+            "probability": 0.8548464179039001
+          },
+          {
+            "word": "一",
+            "start": 44.28,
+            "end": 44.82,
+            "probability": 0.9942114949226379
+          },
+          {
+            "word": "片",
+            "start": 44.82,
+            "end": 45.08,
+            "probability": 0.8499589562416077
+          },
+          {
+            "word": "天",
+            "start": 45.08,
+            "end": 45.52,
+            "probability": 0.951439380645752
+          },
+          {
+            "word": "空",
+            "start": 45.52,
+            "end": 45.94,
+            "probability": 0.998033344745636
+          },
+          {
+            "word": "生",
+            "start": 45.94,
+            "end": 46.44,
+            "probability": 0.40526098012924194
+          },
+          {
+            "word": "气",
+            "start": 46.44,
+            "end": 46.84,
+            "probability": 0.4521944522857666
+          }
+        ]
+      }
+    ],
+    "language": "zh"
+  }
+}

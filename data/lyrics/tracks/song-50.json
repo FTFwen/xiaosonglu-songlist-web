@@ -1,0 +1,212 @@
+{
+  "schemaVersion": 1,
+  "key": "song-50",
+  "songId": 50,
+  "songName": "蜜月アン・ドゥ・トロワ",
+  "rowKey": "蜜月アン・ドゥ・トロワ",
+  "displaySongName": "蜜月アン・ドゥ・トロワ",
+  "artist": "DATEKEN / 鏡音リン",
+  "language": "日文",
+  "derivative": false,
+  "edition": "",
+  "remark": "来自 2026-08-18 小唱一会儿聊回放中段。对 42:30-45:00 做更细切后，连续命中“誰も居なくなった”“二人だけの街に”“夕闇が空をワイン色に染めて”等句群，DuckDuckGo 检索结果又明确指向 DATEKEN feat. 鏡音リン《蜜月アン・ドゥ・トロワ》，可先入库并保留人工复核标签。",
+  "audio": {
+    "url": "assets/audio/song_34.m4a?v=7c5d8f7ba884",
+    "sha256": "7c5d8f7ba884b25419cc1b294bbe39570ce2e7a95f06573e852ad7502808ac75"
+  },
+  "retrievedAt": "2026-11-16T04:02:54.261Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E8%9C%9C%E6%9C%88%E3%82%A2%E3%83%B3%E3%83%BB%E3%83%89%E3%82%A5%E3%83%BB%E3%83%88%E3%83%AD%E3%83%AF&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E8%9C%9C%E6%9C%88%E3%82%A2%E3%83%B3%E3%83%BB%E3%83%89%E3%82%A5%E3%83%BB%E3%83%88%E3%83%AD%E3%83%AF%20DATEKEN%20%2F%20%E9%8F%A1%E9%9F%B3%E3%83%AA%E3%83%B3&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 29133426,
+        "name": "蜜月アン・ドゥ・トロワ",
+        "artists": [
+          "DATEKEN",
+          "鏡音リン"
+        ],
+        "album": "かがみね★ふぇすた 2013 starring 鏡音リン・レン",
+        "durationMs": 250409,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 526473134,
+        "name": "蜜月アン・ドゥ・トロワ",
+        "artists": [
+          "DATEKEN",
+          "下田麻美"
+        ],
+        "album": "EXIT TUNES PRESENTS Kagaminext feat. 鏡音リン、鏡音レン ―10th ANNIVERSARY BEST―",
+        "durationMs": 252973,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 453176048,
+        "name": "蜜月アン・ドゥ・トロワ",
+        "artists": [
+          "DATEKEN"
+        ],
+        "album": "D.A. Telegraph",
+        "durationMs": 255104,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1313104026,
+        "name": "蜜月アン・ドゥ・トロワ",
+        "artists": [
+          "向日葵"
+        ],
+        "album": "プラチナ",
+        "durationMs": 251977,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 574921789,
+        "name": "蜜月アン・ドゥ・トロワ",
+        "artists": [
+          "しゅーず"
+        ],
+        "album": "Pastel",
+        "durationMs": 253962,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2133270778,
+        "name": "蜜月アン・ドゥ・トロワ",
+        "artists": [
+          "Luca Kaneshiro"
+        ],
+        "album": "蜜月アン・ドゥ・トロワ",
+        "durationMs": 252081,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1987994781,
+        "name": "蜜月アン・ドゥ・トロワ",
+        "artists": [
+          "ヰ世界情緒"
+        ],
+        "album": "CANDY LIVE",
+        "durationMs": 242960,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3330884979,
+        "name": "蜜月アン・ドゥ・トロワ",
+        "artists": [
+          "明石缪"
+        ],
+        "album": "蜜月アン・ドゥ・トロワ",
+        "durationMs": 256304,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 50,
+      "song_name": "蜜月アン・ドゥ・トロワ",
+      "show_as_song_name": "",
+      "display_song_name": "蜜月アン・ドゥ・トロワ",
+      "artist": "DATEKEN / 鏡音リン",
+      "artist_search": "DATEKEN 镜音铃",
+      "feat_artist": "",
+      "remark": "来自 2026-08-18 小唱一会儿聊回放中段。对 42:30-45:00 做更细切后，连续命中“誰も居なくなった”“二人だけの街に”“夕闇が空をワイン色に染めて”等句群，DuckDuckGo 检索结果又明确指向 DATEKEN feat. 鏡音リン《蜜月アン・ドゥ・トロワ》，可先入库并保留人工复核标签。",
+      "tone": "",
+      "language": "日文",
+      "type": "Vocaloid、J-Pop",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1rv8V6DExk/",
+      "sing_count": 1,
+      "status_labels": "歌回、自动识别待人工复核",
+      "last_sing_at": "2026-08-18",
+      "row_key": "蜜月アン・ドゥ・トロワ"
+    },
+    "sourceId": 29133426,
+    "sourcePath": "sources/29133426.json",
+    "sourceUrl": "https://music.163.com/#/song?id=29133426",
+    "selected": {
+      "id": 29133426,
+      "name": "蜜月アン・ドゥ・トロワ",
+      "artists": [
+        "DATEKEN",
+        "鏡音リン"
+      ],
+      "album": "かがみね★ふぇすた 2013 starring 鏡音リン・レン",
+      "durationMs": 250409,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 36
+  },
+  "alignment": {
+    "status": "spotcheck_review_required",
+    "evidencePath": "evidence/song-50-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 246.851,
+    "sourceFirstLine": {
+      "t": 33.78,
+      "text": "誰も居なくなった"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 33.98,
+      "endSeconds": 37.42,
+      "similarity": 0.875,
+      "recognizedText": "誰もいなくなった",
+      "meanProbability": 0.737,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": 0.2,
+    "checks": [
+      {
+        "sourceLine": {
+          "t": 127.68,
+          "text": "Chasse 'n' Whisk 'n' Natural-Turn"
+        },
+        "evidencePath": "evidence/song-50-check0.json",
+        "candidate": null,
+        "residualSeconds": null
+      },
+      {
+        "sourceLine": {
+          "t": 201.47,
+          "text": "二人の愛を奏でる"
+        },
+        "evidencePath": "evidence/song-50-check1.json",
+        "candidate": {
+          "audioSeconds": 201.41,
+          "endSeconds": 203.55,
+          "similarity": 0.7692307692307693,
+          "recognizedText": "二人の愛を",
+          "meanProbability": 0.705,
+          "tokenPrefixOnly": false
+        },
+        "residualSeconds": -0.26
+      }
+    ],
+    "asrLanguage": "ja",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

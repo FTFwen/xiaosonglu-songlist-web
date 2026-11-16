@@ -1,0 +1,183 @@
+{
+  "schemaVersion": 1,
+  "key": "song-18",
+  "songId": 18,
+  "songName": "虫儿飞",
+  "rowKey": "虫儿飞",
+  "displaySongName": "虫儿飞",
+  "artist": "郑伊健",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "来自 2026-08-09 第一次歌回回放 p2 中后段。主播在前一段口头说“我们来唱虫儿飞吧”，随后 24-27 分钟切片稳定命中“天上的星星流泪”“地上的玫瑰枯萎”“不怕天黑 只怕心碎”等副歌关键词，与郑伊健《虫儿飞》高度重合，可先入库并保留人工复核标签。",
+  "audio": {
+    "url": "assets/audio/song_09.m4a?v=ba59281faf20",
+    "sha256": "ba59281faf209a2a2798830cfe2323730c0c38e702e09c147f460717758e41c8"
+  },
+  "retrievedAt": "2026-11-16T04:02:28.001Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E8%99%AB%E5%84%BF%E9%A3%9E&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E8%99%AB%E5%84%BF%E9%A3%9E%20%E9%83%91%E4%BC%8A%E5%81%A5&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 192994,
+        "name": "虫儿飞",
+        "artists": [
+          "郑伊健"
+        ],
+        "album": "珍重伊健十年精选",
+        "durationMs": 100173,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1417892376,
+        "name": "虫儿飞",
+        "artists": [
+          "贝乐虎儿歌"
+        ],
+        "album": "贝乐虎儿歌",
+        "durationMs": 102346,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2081793140,
+        "name": "虫儿飞",
+        "artists": [
+          "儿歌多多"
+        ],
+        "album": "儿歌多多经典儿歌2",
+        "durationMs": 100225,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 400161656,
+        "name": "虫儿飞",
+        "artists": [
+          "屯门儿童合唱团"
+        ],
+        "album": "The Best Show",
+        "durationMs": 101186,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2620353504,
+        "name": "虫儿飞",
+        "artists": [
+          "三妹"
+        ],
+        "album": "虫儿飞",
+        "durationMs": 201332,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 30474375,
+        "name": "虫儿飞",
+        "artists": [
+          "陈光荣"
+        ],
+        "album": "武侠音乐精装贰",
+        "durationMs": 99826,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1293904905,
+        "name": "虫儿飞",
+        "artists": [
+          "屯门儿童合唱团"
+        ],
+        "album": "童年的歌谣",
+        "durationMs": 101826,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 193168,
+        "name": "虫儿飞 (儿童合唱版)",
+        "artists": [
+          "屯门儿童合唱团"
+        ],
+        "album": "风云-雄霸天下(电影原声大碟)",
+        "durationMs": 97320,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      }
+    ],
+    "workQuery": {
+      "song_id": 18,
+      "song_name": "虫儿飞",
+      "show_as_song_name": "",
+      "display_song_name": "虫儿飞",
+      "artist": "郑伊健",
+      "artist_search": "郑伊健",
+      "feat_artist": "",
+      "remark": "来自 2026-08-09 第一次歌回回放 p2 中后段。主播在前一段口头说“我们来唱虫儿飞吧”，随后 24-27 分钟切片稳定命中“天上的星星流泪”“地上的玫瑰枯萎”“不怕天黑 只怕心碎”等副歌关键词，与郑伊健《虫儿飞》高度重合，可先入库并保留人工复核标签。",
+      "tone": "",
+      "language": "中文",
+      "type": "流行、影视",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1RZuy6CEjs/",
+      "sing_count": 1,
+      "status_labels": "歌回、自动识别待人工复核",
+      "last_sing_at": "2026-08-09",
+      "row_key": "虫儿飞"
+    },
+    "sourceId": 192994,
+    "sourcePath": "sources/192994.json",
+    "sourceUrl": "https://music.163.com/#/song?id=192994",
+    "selected": {
+      "id": 192994,
+      "name": "虫儿飞",
+      "artists": [
+        "郑伊健"
+      ],
+      "album": "珍重伊健十年精选",
+      "durationMs": 100173,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 13
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-18-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 104.35,
+    "sourceFirstLine": {
+      "t": 10.92,
+      "text": "黑黑的天空低垂"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 28.68,
+      "endSeconds": 28.76,
+      "similarity": 0.0,
+      "recognizedText": "白",
+      "meanProbability": 0.098,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

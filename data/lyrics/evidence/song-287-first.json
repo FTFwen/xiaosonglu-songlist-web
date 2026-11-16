@@ -1,0 +1,284 @@
+{
+  "audioSha256": "54bcbc926fc31f16bc86c45f669304fb6e870fecdf77f69bd1a6c8773597d235",
+  "model": "whisper-base",
+  "start": 0,
+  "end": 35,
+  "result": {
+    "text": "就是你 你面前哪一段啊我是建議的曾经见你哈哈跟夏姆莫了大家",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 4.180000000000001,
+        "end": 4.54,
+        "text": "就是",
+        "tokens": [
+          50364,
+          5620,
+          50389
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.16167293972439237,
+        "compression_ratio": 5.67741935483871,
+        "no_speech_prob": 0.022946489974856377,
+        "words": [
+          {
+            "word": "就是",
+            "start": 4.180000000000001,
+            "end": 4.54,
+            "probability": 0.7453605532646179
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "seek": 0,
+        "start": 5.36,
+        "end": 6.84,
+        "text": "你 你面前哪一段啊",
+        "tokens": [
+          50389,
+          2166,
+          10930,
+          8833,
+          8945,
+          17028,
+          2257,
+          28427,
+          4905,
+          50464
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.16167293972439237,
+        "compression_ratio": 5.67741935483871,
+        "no_speech_prob": 0.022946489974856377,
+        "words": [
+          {
+            "word": "你",
+            "start": 5.36,
+            "end": 5.72,
+            "probability": 0.373923122882843
+          },
+          {
+            "word": " 你",
+            "start": 5.72,
+            "end": 6.06,
+            "probability": 0.09549292176961899
+          },
+          {
+            "word": "面",
+            "start": 6.06,
+            "end": 6.16,
+            "probability": 0.06364639848470688
+          },
+          {
+            "word": "前",
+            "start": 6.16,
+            "end": 6.3,
+            "probability": 0.324582040309906
+          },
+          {
+            "word": "哪",
+            "start": 6.3,
+            "end": 6.52,
+            "probability": 0.27216896414756775
+          },
+          {
+            "word": "一",
+            "start": 6.52,
+            "end": 6.68,
+            "probability": 0.5181917548179626
+          },
+          {
+            "word": "段",
+            "start": 6.68,
+            "end": 6.7,
+            "probability": 0.28599944710731506
+          },
+          {
+            "word": "啊",
+            "start": 6.7,
+            "end": 6.84,
+            "probability": 0.02810818888247013
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "seek": 0,
+        "start": 6.84,
+        "end": 8.32,
+        "text": "我是建議的",
+        "tokens": [
+          50464,
+          15914,
+          34157,
+          24686,
+          1546,
+          50514
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.16167293972439237,
+        "compression_ratio": 5.67741935483871,
+        "no_speech_prob": 0.022946489974856377,
+        "words": [
+          {
+            "word": "我是",
+            "start": 6.84,
+            "end": 7.08,
+            "probability": 0.23603692650794983
+          },
+          {
+            "word": "建",
+            "start": 7.08,
+            "end": 7.26,
+            "probability": 0.3581056594848633
+          },
+          {
+            "word": "議",
+            "start": 7.26,
+            "end": 7.34,
+            "probability": 0.2685796618461609
+          },
+          {
+            "word": "的",
+            "start": 7.34,
+            "end": 8.32,
+            "probability": 0.4915820062160492
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "seek": 832,
+        "start": 8.32,
+        "end": 9.56,
+        "text": "曾经见你",
+        "tokens": [
+          50364,
+          43801,
+          30276,
+          23813,
+          2166,
+          50424
+        ],
+        "temperature": 0,
+        "avg_logprob": -1.346662712097168,
+        "compression_ratio": 0.78,
+        "no_speech_prob": 0.040453020483255386,
+        "words": [
+          {
+            "word": "曾",
+            "start": 8.32,
+            "end": 8.48,
+            "probability": 0.000565551919862628
+          },
+          {
+            "word": "经",
+            "start": 8.48,
+            "end": 8.72,
+            "probability": 0.5654768347740173
+          },
+          {
+            "word": "见",
+            "start": 8.72,
+            "end": 8.98,
+            "probability": 0.73519366979599
+          },
+          {
+            "word": "你",
+            "start": 8.98,
+            "end": 9.56,
+            "probability": 0.09303870052099228
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "seek": 832,
+        "start": 10.68,
+        "end": 11.16,
+        "text": "哈哈",
+        "tokens": [
+          50424,
+          15964,
+          50464
+        ],
+        "temperature": 0,
+        "avg_logprob": -1.346662712097168,
+        "compression_ratio": 0.78,
+        "no_speech_prob": 0.040453020483255386,
+        "words": [
+          {
+            "word": "哈哈",
+            "start": 10.68,
+            "end": 11.16,
+            "probability": 0.0017857638886198401
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "seek": 832,
+        "start": 11.16,
+        "end": 12.38,
+        "text": "跟夏姆莫了大家",
+        "tokens": [
+          50514,
+          9678,
+          42708,
+          7795,
+          228,
+          31127,
+          104,
+          2289,
+          6868,
+          50594
+        ],
+        "temperature": 0,
+        "avg_logprob": -1.346662712097168,
+        "compression_ratio": 0.78,
+        "no_speech_prob": 0.040453020483255386,
+        "words": [
+          {
+            "word": "跟",
+            "start": 11.16,
+            "end": 11.52,
+            "probability": 0.08117333799600601
+          },
+          {
+            "word": "夏",
+            "start": 11.52,
+            "end": 11.74,
+            "probability": 0.4421662390232086
+          },
+          {
+            "word": "姆",
+            "start": 11.74,
+            "end": 11.88,
+            "probability": 0.6711220443248749
+          },
+          {
+            "word": "莫",
+            "start": 11.88,
+            "end": 12.04,
+            "probability": 0.44848544150590897
+          },
+          {
+            "word": "了",
+            "start": 12.04,
+            "end": 12.12,
+            "probability": 0.5518667101860046
+          },
+          {
+            "word": "大家",
+            "start": 12.12,
+            "end": 12.38,
+            "probability": 0.9131786823272705
+          }
+        ]
+      }
+    ],
+    "language": "zh"
+  }
+}

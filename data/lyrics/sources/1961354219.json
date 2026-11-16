@@ -1,0 +1,213 @@
+{
+  "platform": "netease",
+  "id": 1961354219,
+  "url": "https://music.163.com/#/song?id=1961354219",
+  "apiUrl": "https://music.163.com/api/song/lyric?id=1961354219&lv=1&kv=1&tv=-1",
+  "retrievedAt": "2026-11-16T04:05:45.714Z",
+  "track": {
+    "id": 1961354219,
+    "name": "south wind",
+    "artists": [
+      "三都"
+    ],
+    "album": "幻想诗",
+    "durationMs": 210102,
+    "titleScore": 1,
+    "artistMatch": true,
+    "score": 1
+  },
+  "lrc": "[00:19.75]Find a way to leave here without any noise\n[00:24.83]We can’t see any stars but it’s a beautiful night\n[00:29.77]The sky is so high The sky is so deep\n[00:35.03]You and I stand holding hands\n[00:39.94]\n[00:40.10]Feeling feeling feeling\n[00:43.75]Where would a south wind take us\n[00:47.37]In the blink of an eye?\n[00:50.14]Calling calling\n[00:52.46]In spite of everything\n[00:55.14]No one can listen, no one can understand\n[01:00.02]Dreaming dreaming\n[01:02.42]Dreaming of a dreamy place\n[01:05.02]Full of flowers, blooming and dying and\n[01:09.94]Blowing blowing\n[01:12.39]Where would a south wind take us\n[01:16.94]Today is the day\n[01:20.12]\n[01:22.25]The rest of your days are the rest of my days\n[01:26.93]‘Cause I could not breathe\n[01:29.36]Until you with me\n[01:32.12]You’re my air You’re my life\n[01:37.00]I’ve just decided to believe in this way\n[01:41.91]\n[01:42.10]Feeling feeling feeling\n[01:45.94]Where would a south wind take us\n[01:49.46]In the blink of an eye?\n[01:52.14]Calling calling\n[01:54.58]In spite of everything\n[01:57.15]No one can listen, no one can understand\n[02:02.02]Dreaming dreaming\n[02:04.54]Dreaming of a dreamy place\n[02:07.11]Full of flowers, blooming and dying and\n[02:11.98]Blowing blowing\n[02:14.54]Where would a south wind take us\n[02:18.96]Today is the day\n[02:22.17]\n[02:23.54]Walking through windy night\n[02:26.48]We are more than before\n[02:28.99]Lighting up our way\n[02:31.44]Here we are together\n[02:34.05]Step by step Little by little\n[02:39.24]Feeling, Feeling\n[02:41.74]Where we should go\n[02:43.85]Walking through windy night\n[02:46.33]We are more than before\n[02:48.86]Lighting up our way\n[02:51.32]Here we are together\n[02:54.21]Step by step Little by little\n[02:59.11]Feeling, Feeling\n[03:01.61]Where we should go\n",
+  "translationLrc": "[00:19.75]找寻一种安静的方式离开此地\n[00:24.83]我们无法看到群星璀璨 但仍旧是美好的夜晚\n[00:29.77]夜空如此高也那样深邃\n[00:35.03]你我静静矗立 紧握双手\n[00:39.94]\n[00:40.10]（闭眼）倾听 感受 聆听\n[00:43.75]南风吹我们去向何方\n[00:47.37]在那眨眼的瞬间吗？\n[00:50.14]大声呼喊 嘶吼\n[00:52.46]尽管这一切\n[00:55.14]不会有人听见 也无人理解\n[01:00.02]梦想 幻境\n[01:02.42]梦境幻想的境地\n[01:05.02]那里百花齐放 最终凋零枯萎\n[01:09.94]微风徐徐吹过\n[01:12.39]南风吹我们去向何方\n[01:16.94]是时候着手想做的事了\n[01:20.12]\n[01:22.25]你剩下的时光，我会与你相守\n[01:26.93]只因我快要窒息\n[01:29.36]直到你伴我身旁\n[01:32.12]你是我的氧气 我的生命\n[01:37.00]最终我决定相信这种方式\n[01:41.91]\n[01:42.10]（闭眼）倾听 感受 聆听\n[01:45.94]南风吹我们去向何方\n[01:49.46]在那眨眼的瞬间？\n[01:52.14]声嘶力竭\n[01:54.58]尽管这一切\n[01:57.15]不会有人听见 也无人理解\n[02:02.02]梦想 幻境\n[02:04.54]那是梦境幻想着的地方\n[02:07.11]百花齐放 最终凋零枯萎\n[02:11.98]微风徐徐吹过\n[02:14.54]南风吹我们去向何方\n[02:18.96]是时候着手想做的事了\n[02:22.17]\n[02:23.54]在刮风的夜晚 徒步穿行\n[02:26.48]比从前感悟了更多\n[02:28.99]照亮了前行的路\n[02:31.44]我们肩并肩\n[02:34.05]一步一个脚印\n[02:39.24]（闭眼）倾听 感触\n[02:41.74]我们该去何方\n[02:43.85]在刮风的夜晚 徒步穿行\n[02:46.33]比从前领悟了更多\n[02:48.86]照亮了前行的路\n[02:51.32]我们肩并肩\n[02:54.21]一步一个脚印\n[02:59.11]（闭眼）倾听 感受 触摸\n[03:01.61]我们该去何方\n",
+  "romanizationLrc": "",
+  "instrumental": false,
+  "lines": [
+    {
+      "t": 19.75,
+      "text": "Find a way to leave here without any noise"
+    },
+    {
+      "t": 24.83,
+      "text": "We can’t see any stars but it’s a beautiful night"
+    },
+    {
+      "t": 29.77,
+      "text": "The sky is so high The sky is so deep"
+    },
+    {
+      "t": 35.03,
+      "text": "You and I stand holding hands"
+    },
+    {
+      "t": 40.1,
+      "text": "Feeling feeling feeling"
+    },
+    {
+      "t": 43.75,
+      "text": "Where would a south wind take us"
+    },
+    {
+      "t": 47.37,
+      "text": "In the blink of an eye?"
+    },
+    {
+      "t": 50.14,
+      "text": "Calling calling"
+    },
+    {
+      "t": 52.46,
+      "text": "In spite of everything"
+    },
+    {
+      "t": 55.14,
+      "text": "No one can listen, no one can understand"
+    },
+    {
+      "t": 60.02,
+      "text": "Dreaming dreaming"
+    },
+    {
+      "t": 62.42,
+      "text": "Dreaming of a dreamy place"
+    },
+    {
+      "t": 65.02,
+      "text": "Full of flowers, blooming and dying and"
+    },
+    {
+      "t": 69.94,
+      "text": "Blowing blowing"
+    },
+    {
+      "t": 72.39,
+      "text": "Where would a south wind take us"
+    },
+    {
+      "t": 76.94,
+      "text": "Today is the day"
+    },
+    {
+      "t": 82.25,
+      "text": "The rest of your days are the rest of my days"
+    },
+    {
+      "t": 86.93,
+      "text": "‘Cause I could not breathe"
+    },
+    {
+      "t": 89.36,
+      "text": "Until you with me"
+    },
+    {
+      "t": 92.12,
+      "text": "You’re my air You’re my life"
+    },
+    {
+      "t": 97,
+      "text": "I’ve just decided to believe in this way"
+    },
+    {
+      "t": 102.1,
+      "text": "Feeling feeling feeling"
+    },
+    {
+      "t": 105.94,
+      "text": "Where would a south wind take us"
+    },
+    {
+      "t": 109.46,
+      "text": "In the blink of an eye?"
+    },
+    {
+      "t": 112.14,
+      "text": "Calling calling"
+    },
+    {
+      "t": 114.58,
+      "text": "In spite of everything"
+    },
+    {
+      "t": 117.15,
+      "text": "No one can listen, no one can understand"
+    },
+    {
+      "t": 122.02,
+      "text": "Dreaming dreaming"
+    },
+    {
+      "t": 124.54,
+      "text": "Dreaming of a dreamy place"
+    },
+    {
+      "t": 127.11,
+      "text": "Full of flowers, blooming and dying and"
+    },
+    {
+      "t": 131.98,
+      "text": "Blowing blowing"
+    },
+    {
+      "t": 134.54,
+      "text": "Where would a south wind take us"
+    },
+    {
+      "t": 138.96,
+      "text": "Today is the day"
+    },
+    {
+      "t": 143.54,
+      "text": "Walking through windy night"
+    },
+    {
+      "t": 146.48,
+      "text": "We are more than before"
+    },
+    {
+      "t": 148.99,
+      "text": "Lighting up our way"
+    },
+    {
+      "t": 151.44,
+      "text": "Here we are together"
+    },
+    {
+      "t": 154.05,
+      "text": "Step by step Little by little"
+    },
+    {
+      "t": 159.24,
+      "text": "Feeling, Feeling"
+    },
+    {
+      "t": 161.74,
+      "text": "Where we should go"
+    },
+    {
+      "t": 163.85,
+      "text": "Walking through windy night"
+    },
+    {
+      "t": 166.33,
+      "text": "We are more than before"
+    },
+    {
+      "t": 168.86,
+      "text": "Lighting up our way"
+    },
+    {
+      "t": 171.32,
+      "text": "Here we are together"
+    },
+    {
+      "t": 174.21,
+      "text": "Step by step Little by little"
+    },
+    {
+      "t": 179.11,
+      "text": "Feeling, Feeling"
+    },
+    {
+      "t": 181.61,
+      "text": "Where we should go"
+    }
+  ]
+}

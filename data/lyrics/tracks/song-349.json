@@ -1,0 +1,182 @@
+{
+  "schemaVersion": 1,
+  "key": "song-349",
+  "songId": 349,
+  "songName": "CQCQ",
+  "rowKey": "CQCQ",
+  "displaySongName": "CQCQ",
+  "artist": "",
+  "language": "日文",
+  "derivative": false,
+  "edition": "",
+  "remark": "合集分P只给出曲名，原唱/出处未核实，标记待复核。",
+  "audio": {
+    "url": "assets/audio/song_348.m4a?v=21461e3688c7",
+    "sha256": "21461e3688c7df77bd4872060a9668d14f67f56a1d567b7ff9e2e4c58b42d9f1"
+  },
+  "retrievedAt": "2026-11-16T04:13:25.920Z",
+  "match": {
+    "status": "candidate_review_required",
+    "queries": [
+      "https://music.163.com/api/search/get?s=CQCQ&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 472287534,
+        "name": "CQCQ",
+        "artists": [
+          "神様、僕は気づいてしまった"
+        ],
+        "album": "CQCQ",
+        "durationMs": 219753,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1814076554,
+        "name": "CQCQ",
+        "artists": [
+          "Morfonica"
+        ],
+        "album": "バンドリ！ガールズバンドパーティ！",
+        "durationMs": 115032,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1342661928,
+        "name": "CQCQ",
+        "artists": [
+          "神様、僕は気づいてしまった"
+        ],
+        "album": "CQCQ",
+        "durationMs": 219753,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 492879368,
+        "name": "CQCQ",
+        "artists": [
+          "神様、僕は気づいてしまった"
+        ],
+        "album": "神様、僕は気づいてしまった",
+        "durationMs": 219753,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1460143078,
+        "name": "CQCQ",
+        "artists": [
+          "然倉桃果"
+        ],
+        "album": "神様、僕は気づいてしまった - CQCQ",
+        "durationMs": 229722,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3366400936,
+        "name": "CQCQ",
+        "artists": [
+          "DOGO"
+        ],
+        "album": "THE GRAFFITI MARKET (Deluxe)",
+        "durationMs": 216625,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2753890779,
+        "name": "CQCQ",
+        "artists": [
+          "DOGO"
+        ],
+        "album": "THE GRAFFITI MARKET",
+        "durationMs": 216625,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2739209685,
+        "name": "CQCQ",
+        "artists": [
+          "DOGO"
+        ],
+        "album": "Back to the Future!",
+        "durationMs": 215658,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 349,
+      "song_name": "CQCQ",
+      "show_as_song_name": "",
+      "display_song_name": "CQCQ",
+      "artist": "",
+      "artist_search": "",
+      "feat_artist": "",
+      "remark": "合集分P只给出曲名，原唱/出处未核实，标记待复核。",
+      "tone": "",
+      "language": "日文",
+      "type": "待复核",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1naxj62Epw/?p=21",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-27",
+      "row_key": "CQCQ"
+    },
+    "sourceId": 472287534,
+    "sourcePath": "sources/472287534.json",
+    "sourceUrl": "https://music.163.com/#/song?id=472287534",
+    "selected": {
+      "id": 472287534,
+      "name": "CQCQ",
+      "artists": [
+        "神様、僕は気づいてしまった"
+      ],
+      "album": "CQCQ",
+      "durationMs": 219753,
+      "titleScore": 1,
+      "artistMatch": false,
+      "score": 0.8
+    },
+    "timedLineCount": 49
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-349-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 115.669,
+    "sourceFirstLine": {
+      "t": 19.54,
+      "text": "むずかしい感情だった"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 0.0,
+      "endSeconds": 1.6,
+      "similarity": 0.0,
+      "recognizedText": "ん",
+      "meanProbability": 0.002,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "ja",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

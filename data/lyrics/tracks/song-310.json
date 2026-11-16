@@ -1,0 +1,191 @@
+{
+  "schemaVersion": 1,
+  "key": "song-310",
+  "songId": 310,
+  "songName": "冻夏",
+  "rowKey": "冻夏",
+  "displaySongName": "冻夏",
+  "artist": "Soda纯白, 心华",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "弹幕 04:14:01「来首冻夏」、04:14:49「冻夏是极好的」；两份合集 P12 同名同序。",
+  "audio": {
+    "url": "assets/audio/song_309.m4a?v=73280dcc415b",
+    "sha256": "73280dcc415bd54437a017d5c982b5d3024b72c77be5b3b407ef8b5ac917fff6"
+  },
+  "retrievedAt": "2026-11-16T04:06:34.293Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E5%86%BB%E5%A4%8F&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E5%86%BB%E5%A4%8F%20Soda%E7%BA%AF%E7%99%BD&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1877233190,
+        "name": "冻夏",
+        "artists": [
+          "Soda纯白",
+          "心华"
+        ],
+        "album": "冻夏",
+        "durationMs": 233064,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1945496423,
+        "name": "冻夏",
+        "artists": [
+          "柚沐P"
+        ],
+        "album": "冻夏",
+        "durationMs": 233116,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2007471800,
+        "name": "冻夏",
+        "artists": [
+          "思亦SYi"
+        ],
+        "album": "冻夏【幻塔手游一周年庆】",
+        "durationMs": 233106,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1877237919,
+        "name": "冻夏 伴奏",
+        "artists": [
+          "Soda纯白",
+          "心华"
+        ],
+        "album": "冻夏",
+        "durationMs": 233064,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      },
+      {
+        "id": 2062405693,
+        "name": "冻夏(乐正绫AI)(cover.木糖醇Xylose)",
+        "artists": [
+          "乐正绫",
+          "汐木泽"
+        ],
+        "album": "【乐正绫AI】冻夏【cover.木糖醇Xylose】",
+        "durationMs": 229716,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 415086297,
+        "name": "白石溪",
+        "artists": [
+          "乐正绫",
+          "Soda纯白",
+          "洛天依Official"
+        ],
+        "album": "中华少女Project (Deluxe Edition)",
+        "durationMs": 333800,
+        "titleScore": 0,
+        "artistMatch": true,
+        "score": 0.2
+      },
+      {
+        "id": 2608553980,
+        "name": "夏日未应答",
+        "artists": [
+          "Soda纯白",
+          "洛天依"
+        ],
+        "album": "夏日未应答",
+        "durationMs": 238285,
+        "titleScore": 0,
+        "artistMatch": true,
+        "score": 0.2
+      },
+      {
+        "id": 1335319032,
+        "name": "玛德琳娜电塔(Mardayline Tower)",
+        "artists": [
+          "Soda纯白",
+          "洛天依Official"
+        ],
+        "album": "玛德琳娜电塔",
+        "durationMs": 229825,
+        "titleScore": 0,
+        "artistMatch": true,
+        "score": 0.2
+      }
+    ],
+    "workQuery": {
+      "song_id": 310,
+      "song_name": "冻夏",
+      "show_as_song_name": "",
+      "display_song_name": "冻夏",
+      "artist": "Soda纯白, 心华",
+      "artist_search": "Soda纯白, 心华",
+      "feat_artist": "",
+      "remark": "弹幕 04:14:01「来首冻夏」、04:14:49「冻夏是极好的」；两份合集 P12 同名同序。",
+      "tone": "",
+      "language": "中文",
+      "type": "中文Vocaloid",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1uPJ86DE95/?p=12",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-16",
+      "row_key": "冻夏"
+    },
+    "sourceId": 1877233190,
+    "sourcePath": "sources/1877233190.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1877233190",
+    "selected": {
+      "id": 1877233190,
+      "name": "冻夏",
+      "artists": [
+        "Soda纯白",
+        "心华"
+      ],
+      "album": "冻夏",
+      "durationMs": 233064,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 44
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-310-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 235.883,
+    "sourceFirstLine": {
+      "t": 12.674,
+      "text": "视野之中 傍晚晴空 墨蓝色街灯"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 16.04,
+      "endSeconds": 17.86,
+      "similarity": 0.2222222222222222,
+      "recognizedText": "中棒萬情空",
+      "meanProbability": 0.526,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

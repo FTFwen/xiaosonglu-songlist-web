@@ -1,0 +1,327 @@
+{
+  "audioSha256": "60f0432b5ec30cdd0c413edd1f122de4994ff835c1d88cd27dba6f99611ef8e0",
+  "model": "whisper-base",
+  "start": 0,
+  "end": 51.9,
+  "result": {
+    "text": "从他寻笑我明天后从你找下半日回风雨车不透依然共成小手你有点难留",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 22.64,
+        "end": 24.08,
+        "text": "从他",
+        "tokens": [
+          50364,
+          35630,
+          5000,
+          50414
+        ],
+        "temperature": 0,
+        "avg_logprob": -1.134650993347168,
+        "compression_ratio": 0.42857142857142855,
+        "no_speech_prob": 0.008567124605178833,
+        "words": [
+          {
+            "word": "从",
+            "start": 22.64,
+            "end": 24.04,
+            "probability": 0.5538405179977417
+          },
+          {
+            "word": "他",
+            "start": 24.04,
+            "end": 24.08,
+            "probability": 0.6042829155921936
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "seek": 3000,
+        "start": 30.0,
+        "end": 34.72,
+        "text": "寻笑我明天后",
+        "tokens": [
+          50364,
+          4510,
+          119,
+          11600,
+          1654,
+          11100,
+          6135,
+          13547,
+          50596
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.947513671148391,
+        "compression_ratio": 0.90625,
+        "no_speech_prob": 0.8011680245399475,
+        "words": [
+          {
+            "word": "寻",
+            "start": 30.0,
+            "end": 30.84,
+            "probability": 0.30409343261271715
+          },
+          {
+            "word": "笑",
+            "start": 30.84,
+            "end": 31.5,
+            "probability": 0.3270433247089386
+          },
+          {
+            "word": "我",
+            "start": 31.5,
+            "end": 32.0,
+            "probability": 0.6113367080688477
+          },
+          {
+            "word": "明",
+            "start": 32.0,
+            "end": 32.34,
+            "probability": 0.24676606059074402
+          },
+          {
+            "word": "天",
+            "start": 32.34,
+            "end": 32.94,
+            "probability": 0.9326385259628296
+          },
+          {
+            "word": "后",
+            "start": 32.94,
+            "end": 34.72,
+            "probability": 0.289458692073822
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "seek": 3000,
+        "start": 36.96,
+        "end": 39.98,
+        "text": "从你找下半日回",
+        "tokens": [
+          50712,
+          35630,
+          2166,
+          25085,
+          4438,
+          30018,
+          6890,
+          8350,
+          50900
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.947513671148391,
+        "compression_ratio": 0.90625,
+        "no_speech_prob": 0.8011680245399475,
+        "words": [
+          {
+            "word": "从",
+            "start": 36.65,
+            "end": 37.26,
+            "probability": 0.44750431180000305
+          },
+          {
+            "word": "你",
+            "start": 37.26,
+            "end": 37.54,
+            "probability": 0.521726131439209
+          },
+          {
+            "word": "找",
+            "start": 37.54,
+            "end": 37.9,
+            "probability": 0.45382773876190186
+          },
+          {
+            "word": "下",
+            "start": 37.9,
+            "end": 38.36,
+            "probability": 0.9360263347625732
+          },
+          {
+            "word": "半",
+            "start": 38.36,
+            "end": 38.8,
+            "probability": 0.6462466716766357
+          },
+          {
+            "word": "日",
+            "start": 38.8,
+            "end": 39.36,
+            "probability": 0.9065250754356384
+          },
+          {
+            "word": "回",
+            "start": 39.36,
+            "end": 39.98,
+            "probability": 0.45764410495758057
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "seek": 3000,
+        "start": 40.72,
+        "end": 43.84,
+        "text": "风雨车不透",
+        "tokens": [
+          50900,
+          47209,
+          35339,
+          17819,
+          99,
+          1960,
+          45808,
+          51130
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.947513671148391,
+        "compression_ratio": 0.90625,
+        "no_speech_prob": 0.8011680245399475,
+        "words": [
+          {
+            "word": "风",
+            "start": 40.72,
+            "end": 41.42,
+            "probability": 0.7614708542823792
+          },
+          {
+            "word": "雨",
+            "start": 41.42,
+            "end": 41.92,
+            "probability": 0.6589727997779846
+          },
+          {
+            "word": "车",
+            "start": 41.92,
+            "end": 42.56,
+            "probability": 0.4849001131951809
+          },
+          {
+            "word": "不",
+            "start": 42.56,
+            "end": 43.06,
+            "probability": 0.8492742776870728
+          },
+          {
+            "word": "透",
+            "start": 43.06,
+            "end": 43.84,
+            "probability": 0.7444896101951599
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "seek": 3000,
+        "start": 45.32,
+        "end": 48.76,
+        "text": "依然共成小手",
+        "tokens": [
+          51130,
+          3254,
+          251,
+          5823,
+          15408,
+          11336,
+          7322,
+          11389,
+          51312
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.947513671148391,
+        "compression_ratio": 0.90625,
+        "no_speech_prob": 0.8011680245399475,
+        "words": [
+          {
+            "word": "依",
+            "start": 45.31,
+            "end": 45.92,
+            "probability": 0.6263251006603241
+          },
+          {
+            "word": "然",
+            "start": 45.92,
+            "end": 46.54,
+            "probability": 0.9853510856628418
+          },
+          {
+            "word": "共",
+            "start": 46.54,
+            "end": 47.12,
+            "probability": 0.7411678433418274
+          },
+          {
+            "word": "成",
+            "start": 47.12,
+            "end": 47.6,
+            "probability": 0.5925343036651611
+          },
+          {
+            "word": "小",
+            "start": 47.6,
+            "end": 48.06,
+            "probability": 0.5568068027496338
+          },
+          {
+            "word": "手",
+            "start": 48.06,
+            "end": 48.76,
+            "probability": 0.48380109667778015
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "seek": 3000,
+        "start": 48.76,
+        "end": 51.38,
+        "text": "你有点难留",
+        "tokens": [
+          51312,
+          43320,
+          12579,
+          46531,
+          24456,
+          51464
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.947513671148391,
+        "compression_ratio": 0.90625,
+        "no_speech_prob": 0.8011680245399475,
+        "words": [
+          {
+            "word": "你有",
+            "start": 48.76,
+            "end": 49.58,
+            "probability": 0.24459122121334076
+          },
+          {
+            "word": "点",
+            "start": 49.58,
+            "end": 49.9,
+            "probability": 0.1814785897731781
+          },
+          {
+            "word": "难",
+            "start": 49.9,
+            "end": 50.72,
+            "probability": 0.3366577625274658
+          },
+          {
+            "word": "留",
+            "start": 50.72,
+            "end": 51.38,
+            "probability": 0.7733309268951416
+          }
+        ]
+      }
+    ],
+    "language": "zh"
+  }
+}

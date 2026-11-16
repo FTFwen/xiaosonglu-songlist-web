@@ -1,0 +1,190 @@
+{
+  "schemaVersion": 1,
+  "key": "song-367",
+  "songId": 367,
+  "songName": "CLEAR",
+  "rowKey": "CLEAR",
+  "displaySongName": "CLEAR",
+  "artist": "坂本真綾",
+  "language": "日文",
+  "derivative": false,
+  "edition": "",
+  "remark": "《カードキャプターさくら クリアカード編》OP",
+  "audio": {
+    "url": "assets/audio/song_366.m4a?v=fa547a4bd057",
+    "sha256": "fa547a4bd0573a2b726eff6121f6a49a0f42bb9a734bd2855b8856b2cc16c680"
+  },
+  "retrievedAt": "2026-11-16T04:07:52.186Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=CLEAR&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=CLEAR%20%E5%9D%82%E6%9C%AC%E7%9C%9F%E7%B6%BE&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 534066224,
+        "name": "CLEAR",
+        "artists": [
+          "坂本真綾"
+        ],
+        "album": "CLEAR",
+        "durationMs": 255933,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1463351694,
+        "name": "CLEAR",
+        "artists": [
+          "坂本真綾"
+        ],
+        "album": "シングルコレクション+ アチコチ",
+        "durationMs": 255933,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 431080637,
+        "name": "Clear",
+        "artists": [
+          "Pusher",
+          "Mothica"
+        ],
+        "album": "New Laces",
+        "durationMs": 236638,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3437336908,
+        "name": "Clear",
+        "artists": [
+          "霓虹兔",
+          "苏也莉"
+        ],
+        "album": "Clear",
+        "durationMs": 106791,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2012415493,
+        "name": "Clear",
+        "artists": [
+          "Youngboy Never Broke Again"
+        ],
+        "album": "I Rest My Case",
+        "durationMs": 150857,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1412645363,
+        "name": "Clear",
+        "artists": [
+          "Pusher",
+          "Mothica"
+        ],
+        "album": "Clear",
+        "durationMs": 236638,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3427532139,
+        "name": "clear",
+        "artists": [
+          "悲",
+          "baby",
+          "风流",
+          "关我啥事",
+          "惯坏"
+        ],
+        "album": "ㅤ￰⁠⁠⁠⁠⁠ㅤㅤ",
+        "durationMs": 60055,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3417981860,
+        "name": "clear",
+        "artists": [
+          "霓虹兔"
+        ],
+        "album": "clear",
+        "durationMs": 200086,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 367,
+      "song_name": "CLEAR",
+      "show_as_song_name": "",
+      "display_song_name": "CLEAR",
+      "artist": "坂本真綾",
+      "artist_search": "坂本真綾",
+      "feat_artist": "",
+      "remark": "《カードキャプターさくら クリアカード編》OP",
+      "tone": "",
+      "language": "日文",
+      "type": "动画、J-Pop",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1nRxJ6tEPC/?p=19",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-31",
+      "row_key": "CLEAR"
+    },
+    "sourceId": 534066224,
+    "sourcePath": "sources/534066224.json",
+    "sourceUrl": "https://music.163.com/#/song?id=534066224",
+    "selected": {
+      "id": 534066224,
+      "name": "CLEAR",
+      "artists": [
+        "坂本真綾"
+      ],
+      "album": "CLEAR",
+      "durationMs": 255933,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 39
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-367-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 254.677,
+    "sourceFirstLine": {
+      "t": 2.77,
+      "text": "風って 鳥って 私より自由かな"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 0.0,
+      "endSeconds": 0.22,
+      "similarity": 0.0,
+      "recognizedText": "ん",
+      "meanProbability": 0.002,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "ja",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

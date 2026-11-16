@@ -1,0 +1,204 @@
+{
+  "schemaVersion": 1,
+  "key": "song-199",
+  "songId": 199,
+  "songName": "千里邀月",
+  "rowKey": "千里邀月",
+  "displaySongName": "千里邀月",
+  "artist": "纯白 / 乐正绫",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "UP 心灵火Flame《20260919 歌切》P1；原唱为纯白投稿的乐正绫版（2018-11-30），另有泠鸢yousa/hanser/三无Marblue/茶理理人声本家，弹幕以「hanser：/泠鸢：」标注本家合唱分段",
+  "audio": {
+    "url": "assets/audio/song_198.m4a?v=592076841dda",
+    "sha256": "592076841dda90b812772e80ef65ec9a1c763a06347608fa092bd4a4b54b1bdc"
+  },
+  "retrievedAt": "2026-11-16T04:04:56.066Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E5%8D%83%E9%87%8C%E9%82%80%E6%9C%88&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E5%8D%83%E9%87%8C%E9%82%80%E6%9C%88%20%E7%BA%AF%E7%99%BD%20%2F%20%E4%B9%90%E6%AD%A3%E7%BB%AB&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1391419936,
+        "name": "千里邀月",
+        "artists": [
+          "乐正绫",
+          "泠鸢yousa",
+          "茶理理",
+          "Hanser",
+          "三无Marblue"
+        ],
+        "album": "超梦计划",
+        "durationMs": 242000,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1332491711,
+        "name": "千里邀月",
+        "artists": [
+          "Soda纯白",
+          "乐正绫"
+        ],
+        "album": "千里邀月",
+        "durationMs": 245010,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1390592883,
+        "name": "千里邀月",
+        "artists": [
+          "沐轻",
+          "花娆",
+          "姬七汐",
+          "鹿鸣"
+        ],
+        "album": "千里邀月",
+        "durationMs": 238236,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1471794219,
+        "name": "千里邀月",
+        "artists": [
+          "肥皂菌丨珉珉的猫咪丨"
+        ],
+        "album": "千里邀月",
+        "durationMs": 168333,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2143938127,
+        "name": "千里邀月",
+        "artists": [
+          "离真_lizhen",
+          "洛天依"
+        ],
+        "album": "离真_lizhen的翻调作品",
+        "durationMs": 250319,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1916717159,
+        "name": "千里邀月",
+        "artists": [
+          "音域灵羽",
+          "青溯"
+        ],
+        "album": "原神填词向",
+        "durationMs": 240219,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1394963308,
+        "name": "千里邀月",
+        "artists": [
+          "不问春秋小仙女",
+          "倾谙谙谙哥",
+          "池惑",
+          "卿小福",
+          "栗儿晞Lzi"
+        ],
+        "album": "不问春秋✿0323",
+        "durationMs": 245480,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1344511436,
+        "name": "千里邀月",
+        "artists": [
+          "绰月",
+          "维尼",
+          "花鲤SYF",
+          "呆呆大魔王w"
+        ],
+        "album": "千里邀月",
+        "durationMs": 245315,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 199,
+      "song_name": "千里邀月",
+      "show_as_song_name": "",
+      "display_song_name": "千里邀月",
+      "artist": "纯白 / 乐正绫",
+      "artist_search": "纯白 千里邀月 乐正绫",
+      "feat_artist": "",
+      "remark": "UP 心灵火Flame《20260919 歌切》P1；原唱为纯白投稿的乐正绫版（2018-11-30），另有泠鸢yousa/hanser/三无Marblue/茶理理人声本家，弹幕以「hanser：/泠鸢：」标注本家合唱分段",
+      "tone": "",
+      "language": "中文",
+      "type": "中文Vocaloid、古风",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1rZe86yE49/?p=1",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-09-19",
+      "row_key": "千里邀月"
+    },
+    "sourceId": 1391419936,
+    "sourcePath": "sources/1391419936.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1391419936",
+    "selected": {
+      "id": 1391419936,
+      "name": "千里邀月",
+      "artists": [
+        "乐正绫",
+        "泠鸢yousa",
+        "茶理理",
+        "Hanser",
+        "三无Marblue"
+      ],
+      "album": "超梦计划",
+      "durationMs": 242000,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 95
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-199-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 236.472,
+    "sourceFirstLine": {
+      "t": 2.86,
+      "text": "茶理理："
+    },
+    "anchorCandidate": {
+      "audioSeconds": 2.68,
+      "endSeconds": 3.34,
+      "similarity": 0.0,
+      "recognizedText": "《天",
+      "meanProbability": 0.031,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

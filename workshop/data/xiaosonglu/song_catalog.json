@@ -1,7 +1,7 @@
 {
   "roomKey": "xiaosonglu",
   "roomId": "1727071052",
-  "generatedAt": "2026-11-13T03:10:03.293Z",
+  "generatedAt": "2026-11-16T03:01:32.994Z",
   "source": "local-replay-ingestion",
   "songs": [
     {
@@ -8508,6 +8508,27 @@
       "status_labels": "歌回、歌切合集复核",
       "last_sing_at": "2026-11-12",
       "row_key": "烟雨行舟"
+    },
+    {
+      "song_id": 406,
+      "song_name": "蝴蝶泉边",
+      "show_as_song_name": "",
+      "display_song_name": "蝴蝶泉边",
+      "artist": "黄雅莉",
+      "artist_search": "黄雅莉",
+      "feat_artist": "",
+      "remark": "1959 年电影《五朵金花》插曲（季康词、雷振邦曲，原唱李世荣 / 赵履珠）；本场为黄雅莉传唱版演绎。弹幕全程未点名，靠直播期间发布的三支歌切锚定（另两支：BV11hWg6NERq、BV1vfWG69EES）。",
+      "tone": "",
+      "language": "中文",
+      "type": "影视、经典",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1pxWV6TETx/",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切复核",
+      "last_sing_at": "2026-11-10",
+      "row_key": "蝴蝶泉边"
     }
   ]
 }

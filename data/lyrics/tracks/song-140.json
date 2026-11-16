@@ -1,0 +1,185 @@
+{
+  "schemaVersion": 1,
+  "key": "song-140",
+  "songId": 140,
+  "songName": "泸沽寻梦",
+  "rowKey": "泸沽寻梦",
+  "displaySongName": "泸沽寻梦",
+  "artist": "银临",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "桐人今天睡大觉歌切合集章节 01；页面简介亦列出《泸沽寻梦》",
+  "audio": {
+    "url": "assets/audio/song_139.m4a?v=c09694dacb9d",
+    "sha256": "c09694dacb9d427a1f13fb9226a3a34a98b81d2431352ec9bc0bf8a1c32632f1"
+  },
+  "retrievedAt": "2026-11-16T04:13:02.711Z",
+  "match": {
+    "status": "candidate_review_required",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E6%B3%B8%E6%B2%BD%E5%AF%BB%E6%A2%A6&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E6%B3%B8%E6%B2%BD%E5%AF%BB%E6%A2%A6%20%E9%93%B6%E4%B8%B4&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1306166816,
+        "name": "泸沽寻梦",
+        "artists": [
+          "花千树"
+        ],
+        "album": "东风夜放花千树",
+        "durationMs": 222766,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2138831467,
+        "name": "泸沽寻梦",
+        "artists": [
+          "慵狐"
+        ],
+        "album": "泸沽寻梦",
+        "durationMs": 223748,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 864777220,
+        "name": "泸沽寻梦",
+        "artists": [
+          "冰封前夕",
+          "洛天依"
+        ],
+        "album": "泸沽寻梦",
+        "durationMs": 222807,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1430844561,
+        "name": "泸沽寻梦",
+        "artists": [
+          "百里妤浅"
+        ],
+        "album": "泸沽寻梦",
+        "durationMs": 222475,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 449390875,
+        "name": "泸沽寻梦 （演唱：银临 词：小鱼萝莉）",
+        "artists": [
+          "小鱼萝莉",
+          "银临"
+        ],
+        "album": "小鱼萝莉作词",
+        "durationMs": 224920,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      },
+      {
+        "id": 409649820,
+        "name": "泸沽寻梦 （Cover 银临）",
+        "artists": [
+          "双笙（陈元汐）"
+        ],
+        "album": "泸沽寻梦(翻唱）",
+        "durationMs": 222249,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 456415785,
+        "name": "泸沽寻梦（Cover 银临）",
+        "artists": [
+          "十八薰"
+        ],
+        "album": "泸沽寻梦——二零一七新春贺",
+        "durationMs": 222636,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 1426907284,
+        "name": "泸沽寻梦-钢琴版",
+        "artists": [
+          "镜鲲"
+        ],
+        "album": "泸沽寻梦",
+        "durationMs": 202000,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      }
+    ],
+    "workQuery": {
+      "song_id": 140,
+      "song_name": "泸沽寻梦",
+      "show_as_song_name": "",
+      "display_song_name": "泸沽寻梦",
+      "artist": "银临",
+      "artist_search": "银临",
+      "feat_artist": "",
+      "remark": "桐人今天睡大觉歌切合集章节 01；页面简介亦列出《泸沽寻梦》",
+      "tone": "",
+      "language": "中文",
+      "type": "古风",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=1",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-09-08",
+      "row_key": "泸沽寻梦"
+    },
+    "sourceId": 1306166816,
+    "sourcePath": "sources/1306166816.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1306166816",
+    "selected": {
+      "id": 1306166816,
+      "name": "泸沽寻梦",
+      "artists": [
+        "花千树"
+      ],
+      "album": "东风夜放花千树",
+      "durationMs": 222766,
+      "titleScore": 1,
+      "artistMatch": false,
+      "score": 0.8
+    },
+    "timedLineCount": 36
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-140-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 224.189,
+    "sourceFirstLine": {
+      "t": 19.28,
+      "text": "翻唱/后期：花千树"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 30.0,
+      "endSeconds": 30.2,
+      "similarity": 0.0,
+      "recognizedText": "如",
+      "meanProbability": 0.105,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

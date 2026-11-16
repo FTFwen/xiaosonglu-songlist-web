@@ -1,0 +1,186 @@
+{
+  "schemaVersion": 1,
+  "key": "song-134",
+  "songId": 134,
+  "songName": "浴槽とネオンテトラ",
+  "rowKey": "浴槽とネオンテトラ",
+  "displaySongName": "浴槽とネオンテトラ",
+  "artist": "REISAI（feat. v flower）",
+  "language": "日文",
+  "derivative": false,
+  "edition": "",
+  "remark": "2026-09-03「也许康复的随便唱唱」21点场；歌切合集【桐人今天睡大觉】【小松绿Viridis】随便唱唱的歌回 歌切合集 2026.09.03 分P14（06:27）。弹幕歌词窗 01:57:26-02:05:03（浴缸/热带鱼/Darling）；Vocaloid Lyrics Wiki：宛然サカナ/Yopi/REISAI feat. flower，2021-01-02 投稿。歌切分P标注 dongdang（Cover 名）待复核。",
+  "audio": {
+    "url": "assets/audio/song_133.m4a?v=0cf75f1d7cce",
+    "sha256": "0cf75f1d7ccea7b3d2280009eca12112ac5981eb8682a65a5b286f93e9c68bca"
+  },
+  "retrievedAt": "2026-11-16T04:03:38.419Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E6%B5%B4%E6%A7%BD%E3%81%A8%E3%83%8D%E3%82%AA%E3%83%B3%E3%83%86%E3%83%88%E3%83%A9&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E6%B5%B4%E6%A7%BD%E3%81%A8%E3%83%8D%E3%82%AA%E3%83%B3%E3%83%86%E3%83%88%E3%83%A9%20REISAI&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 2139032030,
+        "name": "浴槽とネオンテトラ",
+        "artists": [
+          "健屋花那",
+          "REISAI"
+        ],
+        "album": "浴槽とネオンテトラ",
+        "durationMs": 263149,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 3338465747,
+        "name": "浴槽とネオンテトラ",
+        "artists": [
+          "ふぉるて"
+        ],
+        "album": "浴槽とネオンテトラ",
+        "durationMs": 262217,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2156819428,
+        "name": "浴槽とネオンテトラ",
+        "artists": [
+          "叶"
+        ],
+        "album": "浴槽とネオンテトラ",
+        "durationMs": 265848,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2683804670,
+        "name": "浴槽とネオンテトラ",
+        "artists": [
+          "LOLUET"
+        ],
+        "album": "stream",
+        "durationMs": 263962,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2635815739,
+        "name": "浴槽とネオンテトラ",
+        "artists": [
+          "常闇トワ",
+          "猫又おかゆ"
+        ],
+        "album": "浴槽とネオンテトラ",
+        "durationMs": 267807,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2636673598,
+        "name": "浴槽とネオンテトラ",
+        "artists": [
+          "夕陽リリ"
+        ],
+        "album": "浴槽とネオンテトラ",
+        "durationMs": 262478,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2636686368,
+        "name": "浴槽とネオンテトラ",
+        "artists": [
+          "青妃らめ"
+        ],
+        "album": "浴槽とネオンテトラ",
+        "durationMs": 263366,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1908316149,
+        "name": "浴槽とネオンテトラ",
+        "artists": [
+          "御崎晓川"
+        ],
+        "album": "浴槽与霓虹灯与鱼/浴槽とネオンテトラ",
+        "durationMs": 265846,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 134,
+      "song_name": "浴槽とネオンテトラ",
+      "show_as_song_name": "",
+      "display_song_name": "浴槽とネオンテトラ",
+      "artist": "REISAI（feat. v flower）",
+      "artist_search": "浴槽とネオンテトラ REISAI（feat. v flower）",
+      "feat_artist": "",
+      "remark": "2026-09-03「也许康复的随便唱唱」21点场；歌切合集【桐人今天睡大觉】【小松绿Viridis】随便唱唱的歌回 歌切合集 2026.09.03 分P14（06:27）。弹幕歌词窗 01:57:26-02:05:03（浴缸/热带鱼/Darling）；Vocaloid Lyrics Wiki：宛然サカナ/Yopi/REISAI feat. flower，2021-01-02 投稿。歌切分P标注 dongdang（Cover 名）待复核。",
+      "tone": "",
+      "language": "日文",
+      "type": "Vocaloid、日V",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=14",
+      "sing_count": 1,
+      "status_labels": "歌回",
+      "last_sing_at": "2026-09-03",
+      "row_key": "浴槽とネオンテトラ"
+    },
+    "sourceId": 2139032030,
+    "sourcePath": "sources/2139032030.json",
+    "sourceUrl": "https://music.163.com/#/song?id=2139032030",
+    "selected": {
+      "id": 2139032030,
+      "name": "浴槽とネオンテトラ",
+      "artists": [
+        "健屋花那",
+        "REISAI"
+      ],
+      "album": "浴槽とネオンテトラ",
+      "durationMs": 263149,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 45
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-134-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 385.323,
+    "sourceFirstLine": {
+      "t": 16.656,
+      "text": "たとえばきみはさ"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 28.04,
+      "endSeconds": 31.46,
+      "similarity": 0.36363636363636365,
+      "recognizedText": "なたは",
+      "meanProbability": 0.16,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "ja",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

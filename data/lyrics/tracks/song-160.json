@@ -1,0 +1,169 @@
+{
+  "schemaVersion": 1,
+  "key": "song-160",
+  "songId": 160,
+  "songName": "中华粘土娘 (Album Version)",
+  "rowKey": "中华粘土娘 (Album Version)",
+  "displaySongName": "中华粘土娘 (Album Version)",
+  "artist": "洛天依Official、Soda纯白",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "",
+  "audio": {
+    "url": "assets/audio/song_159.m4a?v=5363f8ee83c9",
+    "sha256": "5363f8ee83c9c799d794eecf04487777e41871ed4a141cddf1d5d8ffc3cbbfac"
+  },
+  "retrievedAt": "2026-11-16T04:04:20.173Z",
+  "match": {
+    "status": "version_review_required",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E4%B8%AD%E5%8D%8E%E7%B2%98%E5%9C%9F%E5%A8%98%20(Album%20Version)&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E4%B8%AD%E5%8D%8E%E7%B2%98%E5%9C%9F%E5%A8%98%20(Album%20Version)%20%E6%B4%9B%E5%A4%A9%E4%BE%9DOfficial&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 435307372,
+        "name": "中华粘土娘 (Album Version)",
+        "artists": [
+          "Soda纯白",
+          "洛天依Official"
+        ],
+        "album": "中华少女Project (Deluxe Edition)",
+        "durationMs": 262556,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1370905033,
+        "name": "中华粘土娘",
+        "artists": [
+          "TM丶桑桑",
+          "洛天依"
+        ],
+        "album": "中华粘土娘三无版翻",
+        "durationMs": 261922,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      },
+      {
+        "id": 1410159916,
+        "name": "中华粘土娘",
+        "artists": [
+          "归舟",
+          "熙兮兮兮"
+        ],
+        "album": "中华粘土娘",
+        "durationMs": 263309,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 1884734752,
+        "name": "中华粘土娘",
+        "artists": [
+          "小雅☆嘤嘤嘤嘤嘤嘤嘤嘤嘤嘤嘤嘤嘤嘤嘤嘤嘤嘤嘤嘤嘤嘤嘤嘤嘤嘤✨"
+        ],
+        "album": "快乐童年",
+        "durationMs": 261694,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 2057494429,
+        "name": "中华粘土娘",
+        "artists": [
+          "木梓mokuzai"
+        ],
+        "album": "中华粘土娘",
+        "durationMs": 262955,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 33497436,
+        "name": "中华粘土娘",
+        "artists": [
+          "三无Marblue"
+        ],
+        "album": "热门华语269",
+        "durationMs": 261000,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 1884901431,
+        "name": "中华粘土娘",
+        "artists": [
+          "小雅☆嘤嘤嘤嘤嘤嘤嘤嘤嘤嘤嘤嘤嘤嘤嘤嘤嘤嘤嘤嘤嘤嘤嘤嘤嘤嘤✨"
+        ],
+        "album": "中华少女",
+        "durationMs": 261694,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 33525347,
+        "name": "中华粘土娘",
+        "artists": [
+          "三无Marblue"
+        ],
+        "album": "热门华语271",
+        "durationMs": 261694,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      }
+    ],
+    "workQuery": {
+      "song_id": 160,
+      "song_name": "中华粘土娘 (Album Version)",
+      "show_as_song_name": "",
+      "display_song_name": "中华粘土娘 (Album Version)",
+      "artist": "洛天依Official、Soda纯白",
+      "artist_search": "洛天依Official、Soda纯白",
+      "feat_artist": "",
+      "remark": "",
+      "tone": "",
+      "language": "中文",
+      "type": "中V",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=21",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-09-08",
+      "row_key": "中华粘土娘 (Album Version)"
+    },
+    "sourceId": 435307372,
+    "sourcePath": "sources/435307372.json",
+    "sourceUrl": "https://music.163.com/#/song?id=435307372",
+    "selected": {
+      "id": 435307372,
+      "name": "中华粘土娘 (Album Version)",
+      "artists": [
+        "Soda纯白",
+        "洛天依Official"
+      ],
+      "album": "中华少女Project (Deluxe Edition)",
+      "durationMs": 262556,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 40
+  },
+  "alignment": {
+    "status": "version_review_required",
+    "offsetSeconds": null,
+    "humanVerified": false
+  }
+}

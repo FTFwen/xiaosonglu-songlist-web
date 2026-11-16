@@ -1,0 +1,190 @@
+{
+  "schemaVersion": 1,
+  "key": "song-216",
+  "songId": 216,
+  "songName": "愛して愛して愛して",
+  "rowKey": "愛して愛して愛して",
+  "displaySongName": "愛して愛して愛して",
+  "artist": "きくお / 初音ミク",
+  "language": "日文",
+  "derivative": false,
+  "edition": "",
+  "remark": "UP 桐人今天睡大觉《2026.09.23练歌歌切合集》P7",
+  "audio": {
+    "url": "assets/audio/song_215.m4a?v=427f0a8d8daf",
+    "sha256": "427f0a8d8daf2cc41e5c02da13bca34d6827564be1a4481a9dbf19992035250b"
+  },
+  "retrievedAt": "2026-11-16T04:05:01.133Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E6%84%9B%E3%81%97%E3%81%A6%E6%84%9B%E3%81%97%E3%81%A6%E6%84%9B%E3%81%97%E3%81%A6&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E6%84%9B%E3%81%97%E3%81%A6%E6%84%9B%E3%81%97%E3%81%A6%E6%84%9B%E3%81%97%E3%81%A6%20%E3%81%8D%E3%81%8F%E3%81%8A%20%2F%20%E5%88%9D%E9%9F%B3%E3%83%9F%E3%82%AF&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 29185030,
+        "name": "愛して愛して愛して",
+        "artists": [
+          "きくお",
+          "初音ミク"
+        ],
+        "album": "きくおミク3",
+        "durationMs": 253000,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1831484638,
+        "name": "愛して愛して愛して",
+        "artists": [
+          "きくお",
+          "初音ミク"
+        ],
+        "album": "MIKU-Pack 01 Song Collection \"SCHOOL DAYS\"",
+        "durationMs": 253831,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1831506705,
+        "name": "愛して愛して愛して",
+        "artists": [
+          "きくお",
+          "初音ミク"
+        ],
+        "album": "MIKU-Pack 17 Song Collection \"Early Masterpiece Collection\"",
+        "durationMs": 252000,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2108142021,
+        "name": "愛して愛して愛して",
+        "artists": [
+          "Ado"
+        ],
+        "album": "Adoの歌ってみたアルバム",
+        "durationMs": 258034,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3404918381,
+        "name": "愛して愛して愛して",
+        "artists": [
+          "宮下遊"
+        ],
+        "album": "無疆の灯",
+        "durationMs": 257286,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2111988589,
+        "name": "愛して愛して愛して (feat. 朝比奈まふゆ&東雲絵名&初音ミク)",
+        "artists": [
+          "25時、ナイトコードで。",
+          "初音ミク"
+        ],
+        "album": "25時、ナイトコードで。 SEKAI ALBUM vol.2",
+        "durationMs": 255600,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      },
+      {
+        "id": 2077766520,
+        "name": "愛して愛して愛して/ 鬱P Remix (feat. 初音ミク)",
+        "artists": [
+          "鬱P",
+          "初音ミク",
+          "きくお"
+        ],
+        "album": "HAPPYPILLS",
+        "durationMs": 234786,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      },
+      {
+        "id": 3413774236,
+        "name": "愛して愛して愛して (Live At さいたまスーパーアリーナ, 2025)",
+        "artists": [
+          "Ado"
+        ],
+        "album": "Ado WORLD TOUR “Hibana” (Live At さいたまスーパーアリーナ, 2025)",
+        "durationMs": 255550,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      }
+    ],
+    "workQuery": {
+      "song_id": 216,
+      "song_name": "愛して愛して愛して",
+      "show_as_song_name": "",
+      "display_song_name": "愛して愛して愛して",
+      "artist": "きくお / 初音ミク",
+      "artist_search": "きくお 愛して愛して愛して 初音ミク",
+      "feat_artist": "",
+      "remark": "UP 桐人今天睡大觉《2026.09.23练歌歌切合集》P7",
+      "tone": "",
+      "language": "日文",
+      "type": "Vocaloid、J-Pop",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1ouhW6GEoD/?p=7",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-09-23",
+      "row_key": "愛して愛して愛して"
+    },
+    "sourceId": 29185030,
+    "sourcePath": "sources/29185030.json",
+    "sourceUrl": "https://music.163.com/#/song?id=29185030",
+    "selected": {
+      "id": 29185030,
+      "name": "愛して愛して愛して",
+      "artists": [
+        "きくお",
+        "初音ミク"
+      ],
+      "album": "きくおミク3",
+      "durationMs": 253000,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 70
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-216-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 249.8,
+    "sourceFirstLine": {
+      "t": 22.22,
+      "text": "はるか遠い遠い昔"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 5.76,
+      "endSeconds": 7.16,
+      "similarity": 0.0,
+      "recognizedText": "あ",
+      "meanProbability": 0.043,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "ja",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

@@ -1,0 +1,161 @@
+{
+  "schemaVersion": 1,
+  "key": "song-111",
+  "songId": 111,
+  "songName": "月出",
+  "displaySongName": "月出",
+  "artist": "双笙（词：温莨 / 曲：徐梦圆）",
+  "language": "中文",
+  "derivative": false,
+  "audio": {
+    "url": "assets/audio/song_117.m4a?v=af4eb9cff2b7",
+    "sha256": "af4eb9cff2b79424a650344007b400b4dba8c60f0d1edcfce5a0848c8d5bf0f4"
+  },
+  "retrievedAt": "2026-11-16T03:59:00.523Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E6%9C%88%E5%87%BA&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 36117196,
+        "name": "月出",
+        "artists": [
+          "双笙（陈元汐）"
+        ],
+        "album": "月圆，笙起",
+        "durationMs": 239086,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 410042090,
+        "name": "月出",
+        "artists": [
+          "双笙（陈元汐）"
+        ],
+        "album": "月出",
+        "durationMs": 239086,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 3409325542,
+        "name": "月出",
+        "artists": [
+          "SHarK"
+        ],
+        "album": "让我看到你",
+        "durationMs": 169438,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1299292938,
+        "name": "月出",
+        "artists": [
+          "少年霜"
+        ],
+        "album": "月出",
+        "durationMs": 242688,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 27955410,
+        "name": "月出",
+        "artists": [
+          "朱哲琴"
+        ],
+        "album": "月出",
+        "durationMs": 301000,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 41634008,
+        "name": "月出",
+        "artists": [
+          "曾静"
+        ],
+        "album": "诗经·月出",
+        "durationMs": 151719,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 41646269,
+        "name": "月出（乐器版）",
+        "artists": [
+          "徐梦圆"
+        ],
+        "album": "月圆，笙起（Ins）",
+        "durationMs": 237636,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      },
+      {
+        "id": 3360108600,
+        "name": "月出2.0",
+        "artists": [
+          "徐梦圆"
+        ],
+        "album": "月出2.0",
+        "durationMs": 240042,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      }
+    ],
+    "sourceId": 36117196,
+    "sourcePath": "sources/36117196.json",
+    "sourceUrl": "https://music.163.com/#/song?id=36117196",
+    "selected": {
+      "id": 36117196,
+      "name": "月出",
+      "artists": [
+        "双笙（陈元汐）"
+      ],
+      "album": "月圆，笙起",
+      "durationMs": 239086,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 49
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-111-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 239.787,
+    "sourceFirstLine": {
+      "t": 7.55,
+      "text": "穿旧巷 过回廊"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 33.14,
+      "endSeconds": 33.76,
+      "similarity": 0.2857142857142857,
+      "recognizedText": "穿",
+      "meanProbability": 0.809,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  },
+  "rowKey": "月出",
+  "edition": "",
+  "remark": "2026-08-29 B站歌切搜索补充：心灵火Flame《20260815 歌切》分P2 与 也许是因为我喜欢《2026-08-15 歌切》分P2 双重印证，垒下浮云单切（BV18sba67EZa，4:00，08-17发布）佐证。萌百核实：双笙演唱，作词温莨、作曲/编曲徐梦圆，2016-04-16发行。08-15 歌？杂？场次补录。"
+}

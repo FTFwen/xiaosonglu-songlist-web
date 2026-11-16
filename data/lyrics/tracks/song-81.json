@@ -1,0 +1,195 @@
+{
+  "schemaVersion": 1,
+  "key": "song-81",
+  "songId": 81,
+  "songName": "私のSymphony",
+  "rowKey": "私のSymphony",
+  "displaySongName": "私のSymphony",
+  "artist": "Liella!（澁谷かのん）",
+  "language": "日文",
+  "derivative": false,
+  "edition": "",
+  "remark": "来自 2026-08-20 偶像歌回。经弹幕歌词交叉验证 + 歌切视频《【小松绿Viridis/歌回】20260820-偶像歌回？欸》分P第11章节确认曲目；时间按歌切分P累计估算，待回放复核。歌手信息来自网易云音乐/萌娘百科检索。",
+  "audio": {
+    "url": "assets/audio/song_51.m4a?v=2f4b5315d95c",
+    "sha256": "2f4b5315d95c84c56184a2cdecf7a88952096c5aa23f266ef5341887a0396709"
+  },
+  "retrievedAt": "2026-11-16T04:03:11.574Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E7%A7%81%E3%81%AESymphony&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E7%A7%81%E3%81%AESymphony%20Liella!&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 2103448203,
+        "name": "私のSymphony",
+        "artists": [
+          "Liella!"
+        ],
+        "album": "始まりは君の空 [私を叶える物語盤]",
+        "durationMs": 237941,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2134098739,
+        "name": "私のSymphony",
+        "artists": [
+          "三月兔",
+          "千里Senri"
+        ],
+        "album": "私のSymphony",
+        "durationMs": 164571,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1955196445,
+        "name": "私のSymphony",
+        "artists": [
+          "Haruki千攸",
+          "直角Rt_t",
+          "拾星",
+          "凌汐儿"
+        ],
+        "album": "私のSymphony",
+        "durationMs": 238392,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1903329580,
+        "name": "私のSymphony",
+        "artists": [
+          "Eimyon"
+        ],
+        "album": "私のSymphony",
+        "durationMs": 239136,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1892446368,
+        "name": "私のSymphony",
+        "artists": [
+          "Fuki",
+          "日巡",
+          "牧野咲良",
+          "牧野冰",
+          "小鱼干"
+        ],
+        "album": "Meteor cover.Liella!",
+        "durationMs": 234463,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1861901227,
+        "name": "私のSymphony",
+        "artists": [
+          "龙泠宇"
+        ],
+        "album": "私のSymphony",
+        "durationMs": 238970,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1970088673,
+        "name": "私のSymphony",
+        "artists": [
+          "Ardour-group"
+        ],
+        "album": "Liella翻唱",
+        "durationMs": 234893,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2106524970,
+        "name": "私のSymphony",
+        "artists": [
+          "芋年年",
+          "一只音速起子",
+          "酸酸Noka",
+          "AMU",
+          "懒懒"
+        ],
+        "album": "私のSymphony",
+        "durationMs": 235000,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 81,
+      "song_name": "私のSymphony",
+      "show_as_song_name": "",
+      "display_song_name": "私のSymphony",
+      "artist": "Liella!（澁谷かのん）",
+      "artist_search": "Liella 澁谷かのん 私のSymphony LoveLive Superstar",
+      "feat_artist": "",
+      "remark": "来自 2026-08-20 偶像歌回。经弹幕歌词交叉验证 + 歌切视频《【小松绿Viridis/歌回】20260820-偶像歌回？欸》分P第11章节确认曲目；时间按歌切分P累计估算，待回放复核。歌手信息来自网易云音乐/萌娘百科检索。",
+      "tone": "",
+      "language": "日文",
+      "type": "动画、偶像、LoveLiveSuperstar",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1WS8c6XE9w?p=11",
+      "sing_count": 1,
+      "status_labels": "歌回、自动识别待人工复核",
+      "last_sing_at": "2026-08-20",
+      "row_key": "私のSymphony"
+    },
+    "sourceId": 2103448203,
+    "sourcePath": "sources/2103448203.json",
+    "sourceUrl": "https://music.163.com/#/song?id=2103448203",
+    "selected": {
+      "id": 2103448203,
+      "name": "私のSymphony",
+      "artists": [
+        "Liella!"
+      ],
+      "album": "始まりは君の空 [私を叶える物語盤]",
+      "durationMs": 237941,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 57
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-81-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 234.638,
+    "sourceFirstLine": {
+      "t": 1.15,
+      "text": "澁谷かのん：宝物を見つけた子どものように"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 29.68,
+      "endSeconds": 30.16,
+      "similarity": 0.19047619047619047,
+      "recognizedText": "どう",
+      "meanProbability": 0.623,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "ja",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

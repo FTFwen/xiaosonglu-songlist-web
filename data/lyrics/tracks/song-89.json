@@ -1,0 +1,196 @@
+{
+  "schemaVersion": 1,
+  "key": "song-89",
+  "songId": 89,
+  "songName": "流霰",
+  "rowKey": "流霰",
+  "displaySongName": "流霰",
+  "artist": "旅行的蜗牛（Snapmod）/ 星尘",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "弹幕02:16:53“我去，流霰!”、02:17:30“特别喜欢流霰”、02:20:04“请大家去听《流霰》！超级好听”。网易云核实：旅行的蜗牛（Snapmod）2021年投稿，诗岸演唱，2022年星尘版；与弹幕“星尘连着来三首”吻合。",
+  "audio": {
+    "url": "assets/audio/song_92.m4a?v=a8a43744d467",
+    "sha256": "a8a43744d4670af054f2333dc843bde38a110f18eb96052427682ae7d389ae4c"
+  },
+  "retrievedAt": "2026-11-16T04:12:49.162Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E6%B5%81%E9%9C%B0&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E6%B5%81%E9%9C%B0%20%E6%97%85%E8%A1%8C%E7%9A%84%E8%9C%97%E7%89%9B&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1906608497,
+        "name": "流霰",
+        "artists": [
+          "旅行の蜗牛",
+          "诗岸"
+        ],
+        "album": "流霰",
+        "durationMs": 240544,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2141887601,
+        "name": "流霰",
+        "artists": [
+          "补雾曳筝の雏楚"
+        ],
+        "album": "一些翻唱~",
+        "durationMs": 240288,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2709587741,
+        "name": "流霰",
+        "artists": [
+          "林雨一直走"
+        ],
+        "album": "紌挽",
+        "durationMs": 68468,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1925101032,
+        "name": "流霰 (星尘Infinity Version)",
+        "artists": [
+          "旅行の蜗牛",
+          "星尘"
+        ],
+        "album": "流霰 (星尘Infinity Version)",
+        "durationMs": 240544,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      },
+      {
+        "id": 2640843364,
+        "name": "流霰漱玉",
+        "artists": [
+          "陈致逸",
+          "逆水长琴",
+          "逆水寒",
+          "雷火音频"
+        ],
+        "album": "逆水寒之九光寒林",
+        "durationMs": 70850,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 1918590577,
+        "name": "流霰 (青溯 Version)",
+        "artists": [
+          "旅行の蜗牛"
+        ],
+        "album": "流霰 (青溯 Version)",
+        "durationMs": 240264,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 1918590625,
+        "name": "流霰 (青溯 Version) 伴奏版",
+        "artists": [
+          "旅行の蜗牛",
+          "青溯"
+        ],
+        "album": "流霰 (青溯 Version)",
+        "durationMs": 240264,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 1906623867,
+        "name": "流霰 伴奏",
+        "artists": [
+          "旅行の蜗牛",
+          "诗岸"
+        ],
+        "album": "流霰",
+        "durationMs": 240544,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      }
+    ],
+    "workQuery": {
+      "song_id": 89,
+      "song_name": "流霰",
+      "show_as_song_name": "",
+      "display_song_name": "流霰",
+      "artist": "旅行的蜗牛（Snapmod）/ 星尘",
+      "artist_search": "旅行的蜗牛 Snapmod 星尘",
+      "feat_artist": "",
+      "remark": "弹幕02:16:53“我去，流霰!”、02:17:30“特别喜欢流霰”、02:20:04“请大家去听《流霰》！超级好听”。网易云核实：旅行的蜗牛（Snapmod）2021年投稿，诗岸演唱，2022年星尘版；与弹幕“星尘连着来三首”吻合。",
+      "tone": "",
+      "language": "中文",
+      "type": "Synthesizer V、中文Vocaloid",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1Td886GEoN/",
+      "sing_count": 1,
+      "status_labels": "清唱、自动识别待人工复核",
+      "last_sing_at": "2026-08-23",
+      "row_key": "流霰"
+    },
+    "sourceId": 1925101032,
+    "sourcePath": "sources/1925101032.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1925101032",
+    "selected": {
+      "id": 1925101032,
+      "name": "流霰 (星尘Infinity Version)",
+      "artists": [
+        "旅行の蜗牛",
+        "星尘"
+      ],
+      "album": "流霰 (星尘Infinity Version)",
+      "durationMs": 240544,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 73,
+    "review": {
+      "reason": "Existing search candidates identify 流霰 (星尘Infinity Version), 旅行の蜗牛 / 星尘, 240544ms, matching catalog artist/version notes. Current source is 诗岸 version. Live lyric API returns 74 timestamped rows. Replace work-version source and realign separately.",
+      "evidenceUrl": "https://music.163.com/song?id=1925101032",
+      "previousSourceId": 1906608497
+    }
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-89-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 235.009,
+    "sourceFirstLine": {
+      "t": 14.651,
+      "text": "窗外云忧郁着阴天"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 31.84,
+      "endSeconds": 32.16,
+      "similarity": 0.2222222222222222,
+      "recognizedText": "着",
+      "meanProbability": 0.831,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

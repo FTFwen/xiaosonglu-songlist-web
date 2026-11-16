@@ -1,0 +1,188 @@
+{
+  "schemaVersion": 1,
+  "key": "song-106",
+  "songId": 106,
+  "songName": "Talking to the Rain",
+  "rowKey": "Talking to the Rain",
+  "displaySongName": "Talking to the Rain",
+  "artist": "芹菜猪肉大馄饨 / 星尘Official、海伊",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "①歌切《【小松绿Viridis/歌切】Talking to the Rain》（BV1Hm4y6AEC3，华丽失败酱，pub 15:09，3:37）；②弹幕歌词梗实锤：01:12:30「孤独的像枝堇」「绿纸合好主题曲」为歌词「孤独得像只鲸」（\"思绪跃出海面只为看见启明星...孤独得像只鲸\"）的谐音玩梗 → 演唱时段 01:09-01:15。芹菜猪肉大馄饨作编曲、浓缩排骨作词，星尘Official 2020-01-29 投稿 VOCALOID&Synthesizer V 中文原创（星尘/海伊演唱，五维介质《森罗万象Kaleido》收录，中文传说曲）。",
+  "audio": {
+    "url": "assets/audio/song_118.m4a?v=e5766b63b7e3",
+    "sha256": "e5766b63b7e333d5f372f20d7fcc50671bc31e80a0dc91cc410730f26e968967"
+  },
+  "retrievedAt": "2026-11-16T04:03:52.665Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=Talking%20to%20the%20Rain&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=Talking%20to%20the%20Rain%20%E8%8A%B9%E8%8F%9C%E7%8C%AA%E8%82%89%E5%A4%A7%E9%A6%84%E9%A5%A8%20%2F%20%E6%98%9F%E5%B0%98Official&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1921953354,
+        "name": "Talking to The Rain",
+        "artists": [
+          "妖橙Yumo",
+          "星尘"
+        ],
+        "album": "我和茶叔（划掉）星尘合唱了！",
+        "durationMs": 217011,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1973335123,
+        "name": "Talking to the Rain",
+        "artists": [
+          "茗山岐月",
+          "星尘infinity"
+        ],
+        "album": "翻唱堆",
+        "durationMs": 213994,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1981504252,
+        "name": "Talking to the Rain",
+        "artists": [
+          "The Wet"
+        ],
+        "album": "Talking to the Rain",
+        "durationMs": 204042,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1472125500,
+        "name": "Talking to the Rain",
+        "artists": [
+          "E-larex",
+          "洛天依",
+          "乐正绫"
+        ],
+        "album": "E-larex的调教合集",
+        "durationMs": 210634,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1936945382,
+        "name": "Talking to the rain",
+        "artists": [
+          "Sherry"
+        ],
+        "album": "Talking to the rain",
+        "durationMs": 217142,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1893292016,
+        "name": "Talking to the Rain",
+        "artists": [
+          "洛泠羽official"
+        ],
+        "album": "翻唱",
+        "durationMs": 224809,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1885909662,
+        "name": "Talking to the Rain",
+        "artists": [
+          "茶颜余雪"
+        ],
+        "album": "翻自一些温柔",
+        "durationMs": 222408,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2033614755,
+        "name": "Talking to the rain",
+        "artists": [
+          "奕然Versa"
+        ],
+        "album": "Talking to the rain",
+        "durationMs": 214846,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 106,
+      "song_name": "Talking to the Rain",
+      "show_as_song_name": "",
+      "display_song_name": "Talking to the Rain",
+      "artist": "芹菜猪肉大馄饨 / 星尘Official、海伊",
+      "artist_search": "芹菜猪肉大馄饨 星尘 海伊",
+      "feat_artist": "",
+      "remark": "①歌切《【小松绿Viridis/歌切】Talking to the Rain》（BV1Hm4y6AEC3，华丽失败酱，pub 15:09，3:37）；②弹幕歌词梗实锤：01:12:30「孤独的像枝堇」「绿纸合好主题曲」为歌词「孤独得像只鲸」（\"思绪跃出海面只为看见启明星...孤独得像只鲸\"）的谐音玩梗 → 演唱时段 01:09-01:15。芹菜猪肉大馄饨作编曲、浓缩排骨作词，星尘Official 2020-01-29 投稿 VOCALOID&Synthesizer V 中文原创（星尘/海伊演唱，五维介质《森罗万象Kaleido》收录，中文传说曲）。",
+      "tone": "",
+      "language": "中文",
+      "type": "中V",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1Hm4y6AEC3/",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切确认",
+      "last_sing_at": "2026-08-29",
+      "row_key": "Talking to the Rain"
+    },
+    "sourceId": 1921953354,
+    "sourcePath": "sources/1921953354.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1921953354",
+    "selected": {
+      "id": 1921953354,
+      "name": "Talking to The Rain",
+      "artists": [
+        "妖橙Yumo",
+        "星尘"
+      ],
+      "album": "我和茶叔（划掉）星尘合唱了！",
+      "durationMs": 217011,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 53
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-106-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 216.712,
+    "sourceFirstLine": {
+      "t": 2.532,
+      "text": "◎原唱：星尘 & 海伊"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 23.1,
+      "endSeconds": 23.42,
+      "similarity": 0.0,
+      "recognizedText": "作",
+      "meanProbability": 0.004,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

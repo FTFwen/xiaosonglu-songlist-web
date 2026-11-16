@@ -1,0 +1,189 @@
+{
+  "schemaVersion": 1,
+  "key": "song-117",
+  "songId": 117,
+  "songName": "绮凝盏",
+  "rowKey": "绮凝盏",
+  "displaySongName": "绮凝盏",
+  "artist": "MeLo / 海伊",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "2026-08-29 心灵火Flame合集补录：【小松绿Viridis】20260829 歌切 分P10（03:24）。萌百核实：MeLo 作编曲、海伊Official 2019-02-08 投稿的 UTAU 中文原创曲（专辑《亚特兰蒂斯》收录）。",
+  "audio": {
+    "url": "assets/audio/song_109.m4a?v=4ae9e3761808",
+    "sha256": "4ae9e3761808aa08f61bb44074a865b4a02e10cd21575c8ff9061a8cbce571ea"
+  },
+  "retrievedAt": "2026-11-16T04:12:50.303Z",
+  "match": {
+    "status": "candidate_review_required",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E7%BB%AE%E5%87%9D%E7%9B%8F&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E7%BB%AE%E5%87%9D%E7%9B%8F%20MeLo%20%2F%20%E6%B5%B7%E4%BC%8A&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1405420941,
+        "name": "绮凝盏",
+        "artists": [
+          "Hanser",
+          "双笙（陈元汐）"
+        ],
+        "album": "hanser唱的歌(181016开始的",
+        "durationMs": 204312,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2653606569,
+        "name": "绮凝盏",
+        "artists": [
+          "兰笙Coki（杨茜）",
+          "橘枝"
+        ],
+        "album": "绮凝盏",
+        "durationMs": 204273,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3339796745,
+        "name": "绮凝盏",
+        "artists": [
+          "开开开心哈",
+          "澪缈MU"
+        ],
+        "album": "绮凝盏（翻自：海伊）",
+        "durationMs": 204368,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1429217451,
+        "name": "绮凝盏",
+        "artists": [
+          "银子",
+          "厌钰"
+        ],
+        "album": "绮凝盏",
+        "durationMs": 205322,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1429757755,
+        "name": "绮凝盏",
+        "artists": [
+          "AYAN"
+        ],
+        "album": "绮凝盏",
+        "durationMs": 205897,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1448322170,
+        "name": "绮凝盏",
+        "artists": [
+          "一团树懒",
+          "长铃c"
+        ],
+        "album": "绮凝盏",
+        "durationMs": 204840,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2723712299,
+        "name": "绮凝盏",
+        "artists": [
+          "故巡"
+        ],
+        "album": "绮凝盏",
+        "durationMs": 205750,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2634039991,
+        "name": "绮凝盏",
+        "artists": [
+          "林淡"
+        ],
+        "album": "万仞隐音",
+        "durationMs": 204713,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 117,
+      "song_name": "绮凝盏",
+      "show_as_song_name": "",
+      "display_song_name": "绮凝盏",
+      "artist": "MeLo / 海伊",
+      "artist_search": "绮凝盏 MeLo 海伊",
+      "feat_artist": "",
+      "remark": "2026-08-29 心灵火Flame合集补录：【小松绿Viridis】20260829 歌切 分P10（03:24）。萌百核实：MeLo 作编曲、海伊Official 2019-02-08 投稿的 UTAU 中文原创曲（专辑《亚特兰蒂斯》收录）。",
+      "tone": "",
+      "language": "中文",
+      "type": "UTAU、中V",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1gm4C65Ey6/?p=10",
+      "sing_count": 1,
+      "status_labels": "歌回",
+      "last_sing_at": "2026-08-29",
+      "row_key": "绮凝盏"
+    },
+    "sourceId": 1405420941,
+    "sourcePath": "sources/1405420941.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1405420941",
+    "selected": {
+      "id": 1405420941,
+      "name": "绮凝盏",
+      "artists": [
+        "Hanser",
+        "双笙（陈元汐）"
+      ],
+      "album": "hanser唱的歌(181016开始的",
+      "durationMs": 204312,
+      "titleScore": 1,
+      "artistMatch": false,
+      "score": 0.8
+    },
+    "timedLineCount": 35
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-117-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 203.407,
+    "sourceFirstLine": {
+      "t": 18.647,
+      "text": "「潇湘有物，似杯似碗。晶莹剔透，暗香明盏。盛酒三钱，一梦千载。」"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 27.16,
+      "endSeconds": 28.56,
+      "similarity": 0.0,
+      "recognizedText": "我",
+      "meanProbability": 0.012,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

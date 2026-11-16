@@ -1,0 +1,154 @@
+{
+  "audioSha256": "df3628ed5aa857f96b0f6140fdba5655d32aaebb5d72073243fd09618ef7832f",
+  "model": "whisper-base",
+  "start": 0,
+  "end": 35,
+  "result": {
+    "text": "ここを割れるまで 抱きしめて眠りにつくまで",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 0.0,
+        "end": 6.08,
+        "text": "ここを割れるまで 抱きしめて",
+        "tokens": [
+          50364,
+          23509,
+          5998,
+          5935,
+          110,
+          35367,
+          28176,
+          220,
+          38382,
+          7016,
+          2849,
+          38975,
+          50706
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.7332011858622233,
+        "compression_ratio": 0.9104477611940298,
+        "no_speech_prob": 0.7436719536781311,
+        "words": [
+          {
+            "word": "ここ",
+            "start": 0.0,
+            "end": 1.6,
+            "probability": 0.03470645844936371
+          },
+          {
+            "word": "を",
+            "start": 1.6,
+            "end": 2.3,
+            "probability": 0.22256404161453247
+          },
+          {
+            "word": "割",
+            "start": 2.3,
+            "end": 2.88,
+            "probability": 0.6686297506093979
+          },
+          {
+            "word": "れる",
+            "start": 2.88,
+            "end": 3.46,
+            "probability": 0.9670844078063965
+          },
+          {
+            "word": "まで",
+            "start": 3.46,
+            "end": 4.04,
+            "probability": 0.9000939130783081
+          },
+          {
+            "word": " 抱",
+            "start": 4.62,
+            "end": 4.78,
+            "probability": 0.722736120223999
+          },
+          {
+            "word": "き",
+            "start": 4.78,
+            "end": 5.06,
+            "probability": 0.9958789348602295
+          },
+          {
+            "word": "し",
+            "start": 5.06,
+            "end": 5.32,
+            "probability": 0.9210611581802368
+          },
+          {
+            "word": "めて",
+            "start": 5.32,
+            "end": 6.08,
+            "probability": 0.9974676370620728
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "seek": 0,
+        "start": 6.84,
+        "end": 10.44,
+        "text": "眠りにつくまで",
+        "tokens": [
+          50706,
+          2862,
+          254,
+          5095,
+          4108,
+          9335,
+          6134,
+          28176,
+          50964
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.7332011858622233,
+        "compression_ratio": 0.9104477611940298,
+        "no_speech_prob": 0.7436719536781311,
+        "words": [
+          {
+            "word": "眠",
+            "start": 6.84,
+            "end": 7.48,
+            "probability": 0.9085662066936493
+          },
+          {
+            "word": "り",
+            "start": 7.48,
+            "end": 7.9,
+            "probability": 0.9771926999092102
+          },
+          {
+            "word": "に",
+            "start": 7.9,
+            "end": 8.3,
+            "probability": 0.996549129486084
+          },
+          {
+            "word": "つ",
+            "start": 8.3,
+            "end": 8.82,
+            "probability": 0.3312418758869171
+          },
+          {
+            "word": "く",
+            "start": 8.82,
+            "end": 9.22,
+            "probability": 0.897219717502594
+          },
+          {
+            "word": "まで",
+            "start": 9.22,
+            "end": 10.44,
+            "probability": 0.7880144715309143
+          }
+        ]
+      }
+    ],
+    "language": "ja"
+  }
+}

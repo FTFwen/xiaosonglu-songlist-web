@@ -1,0 +1,183 @@
+{
+  "schemaVersion": 1,
+  "key": "song-368",
+  "songId": 368,
+  "songName": "Catch You Catch Me",
+  "rowKey": "Catch You Catch Me",
+  "displaySongName": "Catch You Catch Me",
+  "artist": "日向めぐみ",
+  "language": "日文",
+  "derivative": false,
+  "edition": "",
+  "remark": "《魔卡少女樱》OP1；单曲歌切(小冬青Virid1s)佐证",
+  "audio": {
+    "url": "assets/audio/song_367.m4a?v=0619731527a7",
+    "sha256": "0619731527a77686c6db7f929800d1e54ea5287f2601a2ad6364e0736ad95695"
+  },
+  "retrievedAt": "2026-11-16T04:07:50.868Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=Catch%20You%20Catch%20Me&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=Catch%20You%20Catch%20Me%20%E6%97%A5%E5%90%91%E3%82%81%E3%81%90%E3%81%BF&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 28762528,
+        "name": "Catch You Catch Me",
+        "artists": [
+          "日向めぐみ"
+        ],
+        "album": "Catch You Catch Me / ヒトリジメ",
+        "durationMs": 227266,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1847210389,
+        "name": "Catch You Catch Me",
+        "artists": [
+          "日向めぐみ"
+        ],
+        "album": "カードキャプターさくら　ソングコレクション 1998.4～1999.2",
+        "durationMs": 225333,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 29583246,
+        "name": "Catch You Catch Me",
+        "artists": [
+          "日向めぐみ"
+        ],
+        "album": "カードキャプターさくら オリジナル・サウンドトラック",
+        "durationMs": 227266,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 4995152,
+        "name": "Catch You Catch Me",
+        "artists": [
+          "日向めぐみ"
+        ],
+        "album": "カードキャプターさくら 主题歌コレクション",
+        "durationMs": 225333,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 4996900,
+        "name": "Catch You Catch Me",
+        "artists": [
+          "日向めぐみ"
+        ],
+        "album": "「カードキャプターさくら」コンプリート・ヴォーカル・コレクション",
+        "durationMs": 225760,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 660830,
+        "name": "Catch you Catch me",
+        "artists": [
+          "丹下桜"
+        ],
+        "album": "Musees de Sakura",
+        "durationMs": 223000,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 32405224,
+        "name": "Catch You Catch Me",
+        "artists": [
+          "長谷川明子"
+        ],
+        "album": "THE IDOLM@STER MASTER ARTIST 3 04星井美希",
+        "durationMs": 224000,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2155954000,
+        "name": "Catch You Catch Me",
+        "artists": [
+          "DAZBEE"
+        ],
+        "album": "Catch You Catch Me",
+        "durationMs": 221440,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 368,
+      "song_name": "Catch You Catch Me",
+      "show_as_song_name": "",
+      "display_song_name": "Catch You Catch Me",
+      "artist": "日向めぐみ",
+      "artist_search": "日向めぐみ",
+      "feat_artist": "",
+      "remark": "《魔卡少女樱》OP1；单曲歌切(小冬青Virid1s)佐证",
+      "tone": "",
+      "language": "日文",
+      "type": "动画、J-Pop",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1nRxJ6tEPC/?p=20",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-31",
+      "row_key": "Catch You Catch Me"
+    },
+    "sourceId": 28762528,
+    "sourcePath": "sources/28762528.json",
+    "sourceUrl": "https://music.163.com/#/song?id=28762528",
+    "selected": {
+      "id": 28762528,
+      "name": "Catch You Catch Me",
+      "artists": [
+        "日向めぐみ"
+      ],
+      "album": "Catch You Catch Me / ヒトリジメ",
+      "durationMs": 227266,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 33
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-368-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 227.221,
+    "sourceFirstLine": {
+      "t": 23.51,
+      "text": "会いたいな 会えないな"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 30.0,
+      "endSeconds": 32.18,
+      "similarity": 0.5,
+      "recognizedText": "なせつないな",
+      "meanProbability": 0.656,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "ja",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

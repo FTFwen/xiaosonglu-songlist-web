@@ -1,0 +1,163 @@
+{
+  "schemaVersion": 1,
+  "key": "song-92",
+  "songId": 92,
+  "songName": "吹灭小山河",
+  "displaySongName": "吹灭小山河",
+  "artist": "国风堂 / 司南",
+  "language": "中文",
+  "derivative": false,
+  "audio": {
+    "url": "assets/audio/song_90.m4a?v=3e3a5d4cc7a8",
+    "sha256": "3e3a5d4cc7a878b548e9cab687218cce5523148475ef482c6a3fae5f20b1660d"
+  },
+  "retrievedAt": "2026-11-16T03:58:57.219Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E5%90%B9%E7%81%AD%E5%B0%8F%E5%B1%B1%E6%B2%B3&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1412559986,
+        "name": "吹灭小山河",
+        "artists": [
+          "国风堂",
+          "司南"
+        ],
+        "album": "观风月·竹马篇",
+        "durationMs": 186198,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1497897144,
+        "name": "吹灭小山河",
+        "artists": [
+          "仙道"
+        ],
+        "album": "吹灭小山河",
+        "durationMs": 192313,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1989056202,
+        "name": "吹灭小山河",
+        "artists": [
+          "苍梧谣"
+        ],
+        "album": "吹灭小山河",
+        "durationMs": 192407,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1425850732,
+        "name": "吹灭小山河",
+        "artists": [
+          "初月miki"
+        ],
+        "album": "翻唱合集",
+        "durationMs": 191660,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2110979160,
+        "name": "吹灭小山河",
+        "artists": [
+          "沈千泷"
+        ],
+        "album": "古风翻唱",
+        "durationMs": 192453,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1434080650,
+        "name": "吹灭小山河",
+        "artists": [
+          "晚云落"
+        ],
+        "album": "何人相伴无人相伴",
+        "durationMs": 184224,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3424357691,
+        "name": "吹灭小山河",
+        "artists": [
+          "雷米克斯"
+        ],
+        "album": "吹灭小山河",
+        "durationMs": 134817,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1423823110,
+        "name": "吹灭小山河",
+        "artists": [
+          "萌小猫"
+        ],
+        "album": "吹灭小山河",
+        "durationMs": 191489,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "sourceId": 1412559986,
+    "sourcePath": "sources/1412559986.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1412559986",
+    "selected": {
+      "id": 1412559986,
+      "name": "吹灭小山河",
+      "artists": [
+        "国风堂",
+        "司南"
+      ],
+      "album": "观风月·竹马篇",
+      "durationMs": 186198,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 67
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-92-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 191.253,
+    "sourceFirstLine": {
+      "t": 5.78,
+      "text": "幼年时，贺今朝和黎复照约法三章，逢春便到云深处，夏聚秋游，冬令则整日不出。如今已是第十四个年头。"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 31.24,
+      "endSeconds": 31.54,
+      "similarity": 0.046511627906976744,
+      "recognizedText": "头",
+      "meanProbability": 0.598,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  },
+  "rowKey": "吹灭小山河",
+  "edition": "",
+  "remark": "弹幕02:46:33“吹灭小山河有品”（有品=选曲品味好，指演唱中）。网易云核实：国风堂/司南《观风月·竹马篇》。已找到专门歌切 BV11F8h6BE4d（华丽失败酱）。"
+}

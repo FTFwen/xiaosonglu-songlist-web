@@ -1,0 +1,184 @@
+{
+  "schemaVersion": 1,
+  "key": "song-382",
+  "songId": 382,
+  "songName": "一片柳叶响山坳",
+  "rowKey": "一片柳叶响山坳",
+  "displaySongName": "一片柳叶响山坳",
+  "artist": "泠鸢yousa",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "章节标注 泠鸢yousa，山歌民谣风原创",
+  "audio": {
+    "url": "assets/audio/song_381.m4a?v=bce41ceac0bf",
+    "sha256": "bce41ceac0bfab417e0e6323a2daaa325b18e067e8f80cbe6be844090d060490"
+  },
+  "retrievedAt": "2026-11-16T04:08:03.483Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E4%B8%80%E7%89%87%E6%9F%B3%E5%8F%B6%E5%93%8D%E5%B1%B1%E5%9D%B3&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E4%B8%80%E7%89%87%E6%9F%B3%E5%8F%B6%E5%93%8D%E5%B1%B1%E5%9D%B3%20%E6%B3%A0%E9%B8%A2yousa&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1804555737,
+        "name": "一片柳叶响山坳",
+        "artists": [
+          "泠鸢yousa"
+        ],
+        "album": "折纸信笺",
+        "durationMs": 242580,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2093223910,
+        "name": "一片柳叶响山坳",
+        "artists": [
+          "ㅤ"
+        ],
+        "album": "滢滢Aris2023翻唱集",
+        "durationMs": 239616,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2081306146,
+        "name": "一片柳叶响山坳",
+        "artists": [
+          "滋滋是滋滋"
+        ],
+        "album": "2023",
+        "durationMs": 243517,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1821457614,
+        "name": "一片柳叶响山坳",
+        "artists": [
+          "若比"
+        ],
+        "album": "一片柳叶响山坳",
+        "durationMs": 242991,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2087093965,
+        "name": "一片柳叶响山坳",
+        "artists": [
+          "烟枝南"
+        ],
+        "album": "一片柳叶响山坳",
+        "durationMs": 243491,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2626709400,
+        "name": "一片柳叶响山坳",
+        "artists": [
+          "枫茵kaala"
+        ],
+        "album": "一片柳叶响山坳",
+        "durationMs": 244305,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1975546933,
+        "name": "一片柳叶响山坳 (伴奏)",
+        "artists": [
+          "泠鸢yousa"
+        ],
+        "album": "折纸信笺",
+        "durationMs": 243404,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      },
+      {
+        "id": 3432175977,
+        "name": "一片柳叶响山坳（奕夕）",
+        "artists": [
+          "堇川·克莱夫",
+          "奕夕"
+        ],
+        "album": "奕夕",
+        "durationMs": 243995,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      }
+    ],
+    "workQuery": {
+      "song_id": 382,
+      "song_name": "一片柳叶响山坳",
+      "show_as_song_name": "",
+      "display_song_name": "一片柳叶响山坳",
+      "artist": "泠鸢yousa",
+      "artist_search": "泠鸢yousa",
+      "feat_artist": "",
+      "remark": "章节标注 泠鸢yousa，山歌民谣风原创",
+      "tone": "",
+      "language": "中文",
+      "type": "民谣",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV18pWH6gEzr/?p=23",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-11-08",
+      "row_key": "一片柳叶响山坳"
+    },
+    "sourceId": 1804555737,
+    "sourcePath": "sources/1804555737.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1804555737",
+    "selected": {
+      "id": 1804555737,
+      "name": "一片柳叶响山坳",
+      "artists": [
+        "泠鸢yousa"
+      ],
+      "album": "折纸信笺",
+      "durationMs": 242580,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 48
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-382-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 325.312,
+    "sourceFirstLine": {
+      "t": 28.23,
+      "text": "娇俏女儿家是青衣黛发"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 6.24,
+      "endSeconds": 6.4,
+      "similarity": 0.18181818181818182,
+      "recognizedText": "是",
+      "meanProbability": 0.38,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

@@ -1,0 +1,187 @@
+{
+  "schemaVersion": 1,
+  "key": "song-386",
+  "songId": 386,
+  "songName": "纸花",
+  "rowKey": "纸花",
+  "displaySongName": "纸花",
+  "artist": "COP / 乐正绫",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "歌切 desc 注明「原唱 乐正绫 BV1hK4y1r7eE」；原唱 PV（av882693407）词曲 COP、演唱乐正绫，为 Vsinger 原创曲。本场弹幕无曲名点名（发布时间 23:31 落在老人と海与山遥路远之间的演唱窗口），置信度略降。",
+  "audio": {
+    "url": "assets/audio/song_385.m4a?v=de3e66670d97",
+    "sha256": "de3e66670d9783a5c0f92eaf3dfaf0adff88c6ec260334f089cfb23c367009c5"
+  },
+  "retrievedAt": "2026-11-16T04:08:11.252Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E7%BA%B8%E8%8A%B1&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E7%BA%B8%E8%8A%B1%20COP%20%2F%20%E4%B9%90%E6%AD%A3%E7%BB%AB&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1450516489,
+        "name": "纸花",
+        "artists": [
+          "COP"
+        ],
+        "album": "纸花",
+        "durationMs": 216000,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1965047740,
+        "name": "纸花",
+        "artists": [
+          "甲鸟饼",
+          "LINKJ"
+        ],
+        "album": "纸花",
+        "durationMs": 199504,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1464630650,
+        "name": "纸花",
+        "artists": [
+          "老田"
+        ],
+        "album": "不见",
+        "durationMs": 275320,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2128676244,
+        "name": "纸花",
+        "artists": [
+          "255p"
+        ],
+        "album": "2024 互联网人类 Karaoke 合集",
+        "durationMs": 217826,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2138592911,
+        "name": "纸花",
+        "artists": [
+          "Chill.张宇浩"
+        ],
+        "album": "彩",
+        "durationMs": 280764,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2083181932,
+        "name": "纸花",
+        "artists": [
+          "Helen Tao",
+          "加点小柚"
+        ],
+        "album": "纸花（尤长靖应援曲）",
+        "durationMs": 240000,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3396317196,
+        "name": "纸花",
+        "artists": [
+          "ACey_p",
+          "夢ノ結唱 ROSE"
+        ],
+        "album": "纸花",
+        "durationMs": 265922,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2719626996,
+        "name": "纸花",
+        "artists": [
+          "李奕宣",
+          "方玮童"
+        ],
+        "album": "纸花",
+        "durationMs": 244591,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 386,
+      "song_name": "纸花",
+      "show_as_song_name": "",
+      "display_song_name": "纸花",
+      "artist": "COP / 乐正绫",
+      "artist_search": "COP / 乐正绫",
+      "feat_artist": "",
+      "remark": "歌切 desc 注明「原唱 乐正绫 BV1hK4y1r7eE」；原唱 PV（av882693407）词曲 COP、演唱乐正绫，为 Vsinger 原创曲。本场弹幕无曲名点名（发布时间 23:31 落在老人と海与山遥路远之间的演唱窗口），置信度略降。",
+      "tone": "",
+      "language": "中文",
+      "type": "中V、中文原创",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1z1Wg6RErs/",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切复核",
+      "last_sing_at": "2026-11-10",
+      "row_key": "纸花"
+    },
+    "sourceId": 1450516489,
+    "sourcePath": "sources/1450516489.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1450516489",
+    "selected": {
+      "id": 1450516489,
+      "name": "纸花",
+      "artists": [
+        "COP"
+      ],
+      "album": "纸花",
+      "durationMs": 216000,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 41
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-386-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 213.013,
+    "sourceFirstLine": {
+      "t": 14.79,
+      "text": "蒙住双眼所见的无色世界"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 14.92,
+      "endSeconds": 15.98,
+      "similarity": 0.5333333333333333,
+      "recognizedText": " 所见的无",
+      "meanProbability": 0.786,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

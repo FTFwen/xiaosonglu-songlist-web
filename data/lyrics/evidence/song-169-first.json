@@ -1,0 +1,221 @@
+{
+  "audioSha256": "6e5c76a58cadad57cee57c4e272c4b574ba6f50b7113bf39476da38a126a7fcf",
+  "model": "whisper-base",
+  "start": 0,
+  "end": 35,
+  "result": {
+    "text": "怎么有人说啊甜错你的眼睛在笑我往着就中我都要走",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 0.0,
+        "end": 1.16,
+        "text": "怎么有人说啊",
+        "tokens": [
+          50364,
+          15282,
+          45820,
+          8090,
+          4905,
+          50422
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.7070109193975275,
+        "compression_ratio": 0.6857142857142857,
+        "no_speech_prob": 0.009724418632686138,
+        "words": [
+          {
+            "word": "怎么",
+            "start": 0.0,
+            "end": 0.14,
+            "probability": 0.9197699427604675
+          },
+          {
+            "word": "有人",
+            "start": 0.14,
+            "end": 0.44,
+            "probability": 0.8176842331886292
+          },
+          {
+            "word": "说",
+            "start": 0.44,
+            "end": 0.78,
+            "probability": 0.30364927649497986
+          },
+          {
+            "word": "啊",
+            "start": 0.78,
+            "end": 1.16,
+            "probability": 0.6791327595710754
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "seek": 0,
+        "start": 3.4,
+        "end": 3.86,
+        "text": "甜错",
+        "tokens": [
+          50534,
+          40536,
+          29900,
+          50564
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.7070109193975275,
+        "compression_ratio": 0.6857142857142857,
+        "no_speech_prob": 0.009724418632686138,
+        "words": [
+          {
+            "word": "甜",
+            "start": 3.21,
+            "end": 3.54,
+            "probability": 0.5922220945358276
+          },
+          {
+            "word": "错",
+            "start": 3.54,
+            "end": 3.86,
+            "probability": 0.7982412576675415
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "seek": 3000,
+        "start": 31.0,
+        "end": 32.86,
+        "text": "你的眼睛在笑我",
+        "tokens": [
+          50364,
+          18961,
+          25281,
+          14221,
+          249,
+          3581,
+          11600,
+          1654,
+          50508
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.8136452674865723,
+        "compression_ratio": 0.8035714285714286,
+        "no_speech_prob": 0.6673959493637085,
+        "words": [
+          {
+            "word": "你的",
+            "start": 31.0,
+            "end": 31.52,
+            "probability": 0.8736583590507507
+          },
+          {
+            "word": "眼",
+            "start": 31.52,
+            "end": 31.8,
+            "probability": 0.8013268709182739
+          },
+          {
+            "word": "睛",
+            "start": 31.8,
+            "end": 32.06,
+            "probability": 0.9851501882076263
+          },
+          {
+            "word": "在",
+            "start": 32.06,
+            "end": 32.3,
+            "probability": 0.9161725640296936
+          },
+          {
+            "word": "笑",
+            "start": 32.3,
+            "end": 32.6,
+            "probability": 0.3860796093940735
+          },
+          {
+            "word": "我",
+            "start": 32.6,
+            "end": 32.86,
+            "probability": 0.5039950609207153
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "seek": 3000,
+        "start": 32.86,
+        "end": 34.86,
+        "text": "往着就中我都要走",
+        "tokens": [
+          50508,
+          29510,
+          20708,
+          3111,
+          5975,
+          1654,
+          7182,
+          4275,
+          9575,
+          50616
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.8136452674865723,
+        "compression_ratio": 0.8035714285714286,
+        "no_speech_prob": 0.6673959493637085,
+        "words": [
+          {
+            "word": "往",
+            "start": 32.86,
+            "end": 33.12,
+            "probability": 0.08426252752542496
+          },
+          {
+            "word": "着",
+            "start": 33.12,
+            "end": 33.32,
+            "probability": 0.16863808035850525
+          },
+          {
+            "word": "就",
+            "start": 33.32,
+            "end": 33.62,
+            "probability": 0.14692160487174988
+          },
+          {
+            "word": "中",
+            "start": 33.62,
+            "end": 33.9,
+            "probability": 0.3118179142475128
+          },
+          {
+            "word": "我",
+            "start": 33.9,
+            "end": 34.14,
+            "probability": 0.6920815706253052
+          },
+          {
+            "word": "都",
+            "start": 34.14,
+            "end": 34.38,
+            "probability": 0.8060014247894287
+          },
+          {
+            "word": "要",
+            "start": 34.38,
+            "end": 34.66,
+            "probability": 0.9633985757827759
+          },
+          {
+            "word": "走",
+            "start": 34.66,
+            "end": 34.86,
+            "probability": 0.5193798542022705
+          }
+        ]
+      }
+    ],
+    "language": "zh"
+  }
+}

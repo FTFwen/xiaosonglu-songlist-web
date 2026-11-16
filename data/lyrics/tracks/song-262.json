@@ -1,0 +1,184 @@
+{
+  "schemaVersion": 1,
+  "key": "song-262",
+  "songId": 262,
+  "songName": "衡山路宛平路",
+  "rowKey": "衡山路宛平路",
+  "displaySongName": "衡山路宛平路",
+  "artist": "ChiliChill乐团",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "",
+  "audio": {
+    "url": "assets/audio/song_261.m4a?v=f64b2d60d7a0",
+    "sha256": "f64b2d60d7a08da26307b41d3249ddfa5f3f7e2192b185717d4a350362194fe2"
+  },
+  "retrievedAt": "2026-11-16T04:05:51.246Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E8%A1%A1%E5%B1%B1%E8%B7%AF%E5%AE%9B%E5%B9%B3%E8%B7%AF&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E8%A1%A1%E5%B1%B1%E8%B7%AF%E5%AE%9B%E5%B9%B3%E8%B7%AF%20ChiliChill%E4%B9%90%E5%9B%A2&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 2617356789,
+        "name": "衡山路宛平路",
+        "artists": [
+          "ChiliChill乐团"
+        ],
+        "album": "衡山路宛平路",
+        "durationMs": 236829,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2619645817,
+        "name": "衡山路宛平路",
+        "artists": [
+          "ChiliChill乐团"
+        ],
+        "album": "混入人类计划",
+        "durationMs": 236306,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2653657973,
+        "name": "衡山路宛平路",
+        "artists": [
+          "Akie秋绘"
+        ],
+        "album": "衡山路宛平路",
+        "durationMs": 237551,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2624539695,
+        "name": "衡山路宛平路",
+        "artists": [
+          "凯凯KaKai"
+        ],
+        "album": "衡山路宛平路",
+        "durationMs": 234348,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2618581617,
+        "name": "衡山路宛平路",
+        "artists": [
+          "ZANE"
+        ],
+        "album": "衡山路宛平路",
+        "durationMs": 236833,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2642975479,
+        "name": "衡山路宛平路",
+        "artists": [
+          "江壹纯"
+        ],
+        "album": "好不甜",
+        "durationMs": 236000,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2743179731,
+        "name": "衡山路宛平路",
+        "artists": [
+          "是摩柯啊~",
+          "洛天依"
+        ],
+        "album": "中V翻唱（Vsinger）",
+        "durationMs": 240999,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2645958745,
+        "name": "衡山路宛平路",
+        "artists": [
+          "夏洛时舞"
+        ],
+        "album": "我也曾经离家出走",
+        "durationMs": 236170,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 262,
+      "song_name": "衡山路宛平路",
+      "show_as_song_name": "",
+      "display_song_name": "衡山路宛平路",
+      "artist": "ChiliChill乐团",
+      "artist_search": "ChiliChill乐团",
+      "feat_artist": "",
+      "remark": "",
+      "tone": "",
+      "language": "中文",
+      "type": "流行",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1UkaS6zEk3/?p=18",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-02",
+      "row_key": "衡山路宛平路"
+    },
+    "sourceId": 2617356789,
+    "sourcePath": "sources/2617356789.json",
+    "sourceUrl": "https://music.163.com/#/song?id=2617356789",
+    "selected": {
+      "id": 2617356789,
+      "name": "衡山路宛平路",
+      "artists": [
+        "ChiliChill乐团"
+      ],
+      "album": "衡山路宛平路",
+      "durationMs": 236829,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 43
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-262-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 236.117,
+    "sourceFirstLine": {
+      "t": 21.561,
+      "text": "还年着轻 还在数梦的年纪"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 36.92,
+      "endSeconds": 37.18,
+      "similarity": 0.16666666666666666,
+      "recognizedText": "的",
+      "meanProbability": 0.398,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

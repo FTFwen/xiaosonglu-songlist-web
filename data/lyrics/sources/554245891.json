@@ -1,0 +1,318 @@
+{
+  "platform": "netease",
+  "id": 554245891,
+  "url": "https://music.163.com/#/song?id=554245891",
+  "apiUrl": "https://music.163.com/api/song/lyric?id=554245891&lv=1&kv=1&tv=-1",
+  "retrievedAt": "2026-11-16T04:08:07.415Z",
+  "track": {
+    "id": 554245891,
+    "name": "Vitamins",
+    "artists": [
+      "Mili",
+      "world's end girlfriend"
+    ],
+    "album": "Millennium Mother",
+    "durationMs": 302386,
+    "titleScore": 1,
+    "artistMatch": true,
+    "score": 1
+  },
+  "lrc": "[00:12.71]\n[00:19.80]If you think we take too much then you can sacrifice yourself\n[00:24.79]Don't push your values\n[00:26.28]Push your values\n[00:27.55]Onto the crowd\n[00:32.72]\n[00:38.64]The world runs on its kings\n[00:41.09]Its slaves\n[00:42.37]Leaving some with no choice\n[00:44.81]The hypocrites\n[00:46.20]They justify their very sense of justice\n[00:49.92]I tell myself\n[00:52.19]I'm not like everyone else\n[00:54.94]Believing without doubt\n[01:00.12]\n[01:00.95]Mix it in\n[01:03.49]My vitamins\n[01:05.39]Oh mix it in\n[01:08.46]Ah\n[01:09.93]\n[01:09.96]If you think we eat too much then you can sacrifice yourself\n[01:15.07]Don't mix your garbage\n[01:16.67]Mix your garbage\n[01:17.83]Into my cup\n[01:20.09]\n[01:20.03]So many resources keep me alive\n[01:24.99]Yet I don't even step outside\n[01:30.15]So many sacrifices keep me alive\n[01:35.05]Yet I don't even bother to survive\n[01:45.67]\n[01:50.63]Once and for all\n[01:52.75]Blend up my thought\n[01:55.48]Into slush\n[01:58.04]Into slush\n[02:00.47]Once and for all\n[02:02.79]Return my cells\n[02:05.33]Into slush\n[02:08.07]Into slush\n[02:18.19]\n[02:25.41]If you think we waste too much then you can sacrifice yourself\n[02:30.44]Don't push your values\n[02:31.91]Push your values\n[02:33.29]Onto the crowd\n[02:35.37]\n[02:36.41]Mix it in\n[02:39.01]My vitamins\n[02:40.92]Oh mix it in\n[02:42.81]\n[02:43.94]The world runs on its king\n[02:46.72]Its slaves\n[02:47.99]Leaving some with no choice\n[02:50.53]The hypocrites\n[02:51.94]They justify their very sense of justice\n[02:55.55]I tell myself\n[02:57.73]I'm not like everyone else\n[03:00.56]Believing without doubt\n[03:06.02]\n[03:06.63]Mix it in\n[03:09.10]My vitamins\n[03:10.95]Oh mix it in\n[03:14.13]Ah\n[03:15.60]\n[03:15.69]If you think we live too much then you can sacrifice yourself\n[03:20.64]Don't mix your garbage\n[03:22.37]Mix your garbage\n[03:23.50]Into my cup\n[03:25.67]\n[03:25.68]So many resources keep me alive\n[03:30.67]Yet I don't even step outside\n[03:35.83]So many sacrifices keep me alive\n[03:40.61]So many sacrifices keep me alive\n[03:45.73]So many sacrifices keep me alive\n[03:50.70]Yet I don't even bother to survive\n[04:02.51]\n[04:06.34]Once and for all\n[04:08.49]Blend up my thought\n[04:11.37]Into slush\n[04:13.89]Into slush\n[04:16.22]Once and for all\n[04:18.56]Return my cells\n[04:21.25]Into slush\n[04:23.85]Into slush\n[04:27.74]\n[04:46.49]Once and for all\n[04:48.74]Return my cells\n[04:51.49]Into slush\n[04:54.01]Into slush\n[04:57.64]\n",
+  "translationLrc": "[by:kichioni]\n[00:19.80]如果你觉得我们索求太多，那你大可牺牲自己\n[00:24.79]别把你的价值观\n[00:26.28]把你们的价值观\n[00:27.55]强加给旁人\n[00:38.64]运转这个世界的\n[00:41.09]是其国王与奴隶\n[00:42.37]其他人无从选择\n[00:44.81]那些伪善者\n[00:46.20]他们正当化自以为的正义\n[00:49.92]而我告诫自己\n[00:52.19]我和他们都不一样\n[00:54.94]并对此深信不疑\n[01:00.95]将其混进\n[01:03.49]我的维他命\n[01:05.39]将其混合\n[01:08.46]啊\n[01:09.96]如果你觉得我们吞食太多，那你大可牺牲自己\n[01:15.07]别把你的渣滓\n[01:16.67]把你们的渣滓\n[01:17.83]混进我的杯里\n[01:20.03]有那么多资源维持着我的生命\n[01:24.99]但我根本无意外出\n[01:30.15]有那么多牺牲维持着我的生命\n[01:35.05]但我根本无意生存\n[01:50.63]一劳永逸\n[01:52.75]将我所有的念头\n[01:55.48]榨成泥浆\n[01:58.04]榨成泥浆\n[02:00.47]一劳永逸\n[02:02.79]让我的细胞\n[02:05.33]回归到泥浆\n[02:08.07]回归到泥浆\n[02:25.41]如果你觉得我们浪费太多，那你大可牺牲自己\n[02:30.44]别把你的价值观\n[02:31.91]把你们的价值观\n[02:33.29]强加给旁人\n[02:36.41]将其混进\n[02:39.01]我的维他命\n[02:40.92]将其混合\n[02:43.94]运转这个世界的\n[02:46.72]是其国王与奴隶\n[02:47.99]其他人无从选择\n[02:50.53]那些伪善者\n[02:51.94]他们正当化自以为的正义\n[02:55.55]而我告诫自己\n[02:57.73]我和他们都不一样\n[03:00.56]并对此深信不疑\n[03:06.63]将其混进\n[03:09.10]我的维他命\n[03:10.95]将它们混合\n[03:14.13]啊\n[03:15.69]如果你觉得我们活得太长，那你大可牺牲自己\n[03:20.64]别把你的渣滓\n[03:22.37]把你们的渣滓\n[03:23.50]混进我的杯里\n[03:25.68]有那么多资源维持着我的生命\n[03:30.67]但我根本无意外出\n[03:35.83]有那么多资源维持着我的生命\n[03:40.61]有那么多资源维持着我的生命\n[03:45.73]有那么多资源维持着我的生命\n[03:50.70]但我根本无意生存\n[04:06.34]一劳永逸\n[04:08.49]将我所有的念头\n[04:11.37]榨成泥浆\n[04:13.89]榨成泥浆\n[04:16.22]一劳永逸\n[04:18.56]将我的细胞\n[04:21.25]回归到泥浆\n[04:23.85]回归到泥浆\n[04:46.49]一劳永逸\n[04:48.74]将我的细胞\n[04:51.49]回归到泥浆\n[04:54.01]回归到泥浆\n",
+  "romanizationLrc": "",
+  "instrumental": false,
+  "lines": [
+    {
+      "t": 19.8,
+      "text": "If you think we take too much then you can sacrifice yourself"
+    },
+    {
+      "t": 24.79,
+      "text": "Don't push your values"
+    },
+    {
+      "t": 26.28,
+      "text": "Push your values"
+    },
+    {
+      "t": 27.55,
+      "text": "Onto the crowd"
+    },
+    {
+      "t": 38.64,
+      "text": "The world runs on its kings"
+    },
+    {
+      "t": 41.09,
+      "text": "Its slaves"
+    },
+    {
+      "t": 42.37,
+      "text": "Leaving some with no choice"
+    },
+    {
+      "t": 44.81,
+      "text": "The hypocrites"
+    },
+    {
+      "t": 46.2,
+      "text": "They justify their very sense of justice"
+    },
+    {
+      "t": 49.92,
+      "text": "I tell myself"
+    },
+    {
+      "t": 52.19,
+      "text": "I'm not like everyone else"
+    },
+    {
+      "t": 54.94,
+      "text": "Believing without doubt"
+    },
+    {
+      "t": 60.95,
+      "text": "Mix it in"
+    },
+    {
+      "t": 63.49,
+      "text": "My vitamins"
+    },
+    {
+      "t": 65.39,
+      "text": "Oh mix it in"
+    },
+    {
+      "t": 68.46,
+      "text": "Ah"
+    },
+    {
+      "t": 69.96,
+      "text": "If you think we eat too much then you can sacrifice yourself"
+    },
+    {
+      "t": 75.07,
+      "text": "Don't mix your garbage"
+    },
+    {
+      "t": 76.67,
+      "text": "Mix your garbage"
+    },
+    {
+      "t": 77.83,
+      "text": "Into my cup"
+    },
+    {
+      "t": 80.03,
+      "text": "So many resources keep me alive"
+    },
+    {
+      "t": 84.99,
+      "text": "Yet I don't even step outside"
+    },
+    {
+      "t": 90.15,
+      "text": "So many sacrifices keep me alive"
+    },
+    {
+      "t": 95.05,
+      "text": "Yet I don't even bother to survive"
+    },
+    {
+      "t": 110.63,
+      "text": "Once and for all"
+    },
+    {
+      "t": 112.75,
+      "text": "Blend up my thought"
+    },
+    {
+      "t": 115.48,
+      "text": "Into slush"
+    },
+    {
+      "t": 118.04,
+      "text": "Into slush"
+    },
+    {
+      "t": 120.47,
+      "text": "Once and for all"
+    },
+    {
+      "t": 122.79,
+      "text": "Return my cells"
+    },
+    {
+      "t": 125.33,
+      "text": "Into slush"
+    },
+    {
+      "t": 128.07,
+      "text": "Into slush"
+    },
+    {
+      "t": 145.41,
+      "text": "If you think we waste too much then you can sacrifice yourself"
+    },
+    {
+      "t": 150.44,
+      "text": "Don't push your values"
+    },
+    {
+      "t": 151.91,
+      "text": "Push your values"
+    },
+    {
+      "t": 153.29,
+      "text": "Onto the crowd"
+    },
+    {
+      "t": 156.41,
+      "text": "Mix it in"
+    },
+    {
+      "t": 159.01,
+      "text": "My vitamins"
+    },
+    {
+      "t": 160.92,
+      "text": "Oh mix it in"
+    },
+    {
+      "t": 163.94,
+      "text": "The world runs on its king"
+    },
+    {
+      "t": 166.72,
+      "text": "Its slaves"
+    },
+    {
+      "t": 167.99,
+      "text": "Leaving some with no choice"
+    },
+    {
+      "t": 170.53,
+      "text": "The hypocrites"
+    },
+    {
+      "t": 171.94,
+      "text": "They justify their very sense of justice"
+    },
+    {
+      "t": 175.55,
+      "text": "I tell myself"
+    },
+    {
+      "t": 177.73,
+      "text": "I'm not like everyone else"
+    },
+    {
+      "t": 180.56,
+      "text": "Believing without doubt"
+    },
+    {
+      "t": 186.63,
+      "text": "Mix it in"
+    },
+    {
+      "t": 189.1,
+      "text": "My vitamins"
+    },
+    {
+      "t": 190.95,
+      "text": "Oh mix it in"
+    },
+    {
+      "t": 194.13,
+      "text": "Ah"
+    },
+    {
+      "t": 195.69,
+      "text": "If you think we live too much then you can sacrifice yourself"
+    },
+    {
+      "t": 200.64,
+      "text": "Don't mix your garbage"
+    },
+    {
+      "t": 202.37,
+      "text": "Mix your garbage"
+    },
+    {
+      "t": 203.5,
+      "text": "Into my cup"
+    },
+    {
+      "t": 205.68,
+      "text": "So many resources keep me alive"
+    },
+    {
+      "t": 210.67,
+      "text": "Yet I don't even step outside"
+    },
+    {
+      "t": 215.83,
+      "text": "So many sacrifices keep me alive"
+    },
+    {
+      "t": 220.61,
+      "text": "So many sacrifices keep me alive"
+    },
+    {
+      "t": 225.73,
+      "text": "So many sacrifices keep me alive"
+    },
+    {
+      "t": 230.7,
+      "text": "Yet I don't even bother to survive"
+    },
+    {
+      "t": 246.34,
+      "text": "Once and for all"
+    },
+    {
+      "t": 248.49,
+      "text": "Blend up my thought"
+    },
+    {
+      "t": 251.37,
+      "text": "Into slush"
+    },
+    {
+      "t": 253.89,
+      "text": "Into slush"
+    },
+    {
+      "t": 256.22,
+      "text": "Once and for all"
+    },
+    {
+      "t": 258.56,
+      "text": "Return my cells"
+    },
+    {
+      "t": 261.25,
+      "text": "Into slush"
+    },
+    {
+      "t": 263.85,
+      "text": "Into slush"
+    },
+    {
+      "t": 286.49,
+      "text": "Once and for all"
+    },
+    {
+      "t": 288.74,
+      "text": "Return my cells"
+    },
+    {
+      "t": 291.49,
+      "text": "Into slush"
+    },
+    {
+      "t": 294.01,
+      "text": "Into slush"
+    }
+  ]
+}

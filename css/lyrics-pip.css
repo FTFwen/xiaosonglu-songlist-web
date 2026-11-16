@@ -1,0 +1,58 @@
+/* Loaded only inside the native Document Picture-in-Picture window. */
+:root {
+  color-scheme: light;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  color: #244334;
+  background: #f2f8ee;
+  font-synthesis: none;
+}
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+html, body { width: 100%; height: 100%; margin: 0; overflow: hidden; }
+button { font: inherit; -webkit-tap-highlight-color: transparent; }
+.lyrics-pip {
+  display: flex;
+  flex-direction: column;
+  height: 100dvh;
+  min-height: 230px;
+  overflow: hidden;
+  background: radial-gradient(ellipse at 8% 0, #e0eed5 0, transparent 58%), linear-gradient(155deg, #f6faef, #edf6ef);
+}
+.lp-header { flex: none; text-align: center; padding: 22px 24px 8px; }
+.lp-eyebrow { color: #78917b; font-size: 10px; font-weight: 600; letter-spacing: .2em; margin-bottom: 11px; }
+.lp-title { margin: 0; font-size: clamp(19px, 5vw, 26px); line-height: 1.35; font-weight: 650; overflow-wrap: anywhere; }
+.lp-artist { color: #748775; font-size: 12px; margin: 7px 0 10px; overflow-wrap: anywhere; }
+.lp-status { color: #55795d; font-size: 11px; line-height: 1.6; margin: 0; min-height: 18px; }
+.lp-hint { color: #829380; font-size: 10px; line-height: 1.6; margin: 5px 0 0; }
+.lp-timing { display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 6px; padding: 6px 10px; flex: none; }
+.lp-timing .lp-button { min-height: 28px; padding: 4px 9px; border-radius: 15px; font-size: 11px; background: #ffffff8f; }
+.lp-offset { font-size: 10px; color: #708373; min-width: 68px; text-align: center; font-variant-numeric: tabular-nums; }
+.lp-viewport { flex: 1; min-height: 0; overflow-y: auto; overscroll-behavior: contain; scrollbar-width: thin; scrollbar-color: #a9bea2 transparent; position: relative; mask-image: linear-gradient(transparent, #000 10%, #000 90%, transparent); }
+.lp-lines { padding: 38% 24px 42%; text-align: center; }
+.lp-line { margin: 0; padding: 13px 2px; color: #91a18b; font-size: 16px; line-height: 1.75; font-weight: 500; overflow-wrap: anywhere; transition: color .24s ease, transform .24s ease; }
+.lp-line.is-active { color: #2e6946; font-weight: 750; transform: scale(1.045); }
+.lp-empty { margin: 0; color: #7d927b; font-size: 14px; line-height: 1.9; overflow-wrap: anywhere; }
+.lp-button { display: inline-flex; align-items: center; justify-content: center; border: 1px solid transparent; color: #426f4d; background: transparent; cursor: pointer; transition: background .18s ease, transform .18s ease; }
+.lp-button:hover { background: #dcebd5; }
+.lp-button:active { transform: scale(.95); }
+.lp-button:focus-visible, .lp-viewport:focus-visible { outline: 2px solid #598d57; outline-offset: -2px; }
+.lp-button:disabled { opacity: .35; cursor: default; }
+.lp-button svg { width: 23px; height: 23px; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+.lp-footer { flex: none; display: flex; align-items: center; justify-content: center; gap: clamp(13px, 6vw, 32px); padding: 15px 16px 21px; border-top: 1px solid #b4c9aa45; background: #f6faefaa; }
+.lp-footer .lp-button { width: 43px; height: 43px; border-radius: 50%; }
+.lp-footer .lp-toggle { width: 53px; height: 53px; background: #56845c; color: #fff; box-shadow: 0 5px 15px #426c4326; }
+.lp-toggle:hover { background: #446f4b; }
+.lp-toggle svg { stroke-width: 2; }
+.lp-button.is-favorite { color: #a0575b; }
+.lp-button.is-favorite svg { fill: #a0575b; }
+.lp-retry { flex: none; align-self: center; border: 1px solid #bacbb1; padding: 7px 15px; border-radius: 20px; margin-bottom: 12px; font-size: 12px; }
+@media (max-height: 420px) {
+  .lp-header { padding-top: 10px; }
+  .lp-eyebrow { display: none; }
+  .lp-artist { margin: 3px 0; }
+  .lp-footer { padding: 8px 12px; }
+  .lp-lines { padding-top: 24%; padding-bottom: 27%; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; }
+}

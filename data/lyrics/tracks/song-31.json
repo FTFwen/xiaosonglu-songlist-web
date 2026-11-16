@@ -1,0 +1,194 @@
+{
+  "schemaVersion": 1,
+  "key": "song-31",
+  "songId": 31,
+  "songName": "匆匆那年",
+  "displaySongName": "匆匆那年",
+  "artist": "王菲",
+  "language": "中文",
+  "derivative": false,
+  "audio": {
+    "url": "assets/audio/song_12.m4a?v=c544552cfda9",
+    "sha256": "c544552cfda987751583e281baacca3dbea3fcf880464c84b926b75677c07b6c"
+  },
+  "retrievedAt": "2026-11-16T03:58:25.528Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E5%8C%86%E5%8C%86%E9%82%A3%E5%B9%B4&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 29713754,
+        "name": "匆匆那年",
+        "artists": [
+          "王菲"
+        ],
+        "album": "匆匆那年",
+        "durationMs": 240991,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 31514406,
+        "name": "匆匆那年",
+        "artists": [
+          "王菲"
+        ],
+        "album": "匆匆那年 电影原声带",
+        "durationMs": 240991,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2116475562,
+        "name": "匆匆那年",
+        "artists": [
+          "王飞"
+        ],
+        "album": "匆匆那年",
+        "durationMs": 245304,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 33781092,
+        "name": "匆匆那年",
+        "artists": [
+          "二珂"
+        ],
+        "album": "热门华语273",
+        "durationMs": 239329,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1927373022,
+        "name": "匆匆那年",
+        "artists": [
+          "葱香科学家（王悠然）"
+        ],
+        "album": "王菲",
+        "durationMs": 238593,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 31460311,
+        "name": "匆匆那年",
+        "artists": [
+          "西瓜瓜瓜"
+        ],
+        "album": "热门华语262",
+        "durationMs": 239000,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 31877481,
+        "name": "匆匆那年 (Live)",
+        "artists": [
+          "古巨基"
+        ],
+        "album": "我是歌手第三季 第6期",
+        "durationMs": 258508,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 31514407,
+        "name": "匆匆那年 (纯音乐)",
+        "artists": [
+          "梁翘柏"
+        ],
+        "album": "匆匆那年 电影原声带",
+        "durationMs": 241000,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      }
+    ],
+    "sourceId": 29713754,
+    "sourcePath": "sources/29713754.json",
+    "sourceUrl": "https://music.163.com/#/song?id=29713754",
+    "selected": {
+      "id": 29713754,
+      "name": "匆匆那年",
+      "artists": [
+        "王菲"
+      ],
+      "album": "匆匆那年",
+      "durationMs": 240991,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 88
+  },
+  "alignment": {
+    "status": "spotcheck_review_required",
+    "evidencePath": "evidence/song-31-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 235.605,
+    "sourceFirstLine": {
+      "t": 28.48,
+      "text": "匆匆那年我们"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 39.88,
+      "endSeconds": 40.74,
+      "similarity": 0.8,
+      "recognizedText": "那年我们",
+      "meanProbability": 0.832,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": 11.4,
+    "checks": [
+      {
+        "sourceLine": {
+          "t": 106.97,
+          "text": "要不然凭何怀缅"
+        },
+        "evidencePath": "evidence/song-31-check0.json",
+        "candidate": {
+          "audioSeconds": 130.95,
+          "endSeconds": 132.35,
+          "similarity": 0.0,
+          "recognizedText": "作",
+          "meanProbability": 0.003,
+          "tokenPrefixOnly": false
+        },
+        "residualSeconds": 12.58
+      },
+      {
+        "sourceLine": {
+          "t": 199.48,
+          "text": "那样美丽的谣言"
+        },
+        "evidencePath": "evidence/song-31-check1.json",
+        "candidate": {
+          "audioSeconds": 222.5,
+          "endSeconds": 223.08,
+          "similarity": 0.25,
+          "recognizedText": "言",
+          "meanProbability": 0.144,
+          "tokenPrefixOnly": false
+        },
+        "residualSeconds": 11.62
+      }
+    ],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  },
+  "rowKey": "匆匆那年",
+  "edition": "",
+  "remark": "视频标题直接给出真实歌曲名《匆匆那年》；页面未直写日期，但该条与《偏食》《下等马》《月が綺麗ね》《春日影》《白鸟过河滩》等同属 2026-08-11 歌切候选网络，按当前 song-cut-first 流程先以 2026-08-11 manual-normalized 收录。"
+}

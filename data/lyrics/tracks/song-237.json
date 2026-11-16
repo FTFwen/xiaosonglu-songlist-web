@@ -1,0 +1,183 @@
+{
+  "schemaVersion": 1,
+  "key": "song-237",
+  "songId": 237,
+  "songName": "但愿人长久",
+  "rowKey": "但愿人长久",
+  "displaySongName": "但愿人长久",
+  "artist": "王菲",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "",
+  "audio": {
+    "url": "assets/audio/song_236.m4a?v=d8c3963274f3",
+    "sha256": "d8c3963274f301548acf675c2809af7f9ab4f3bd312ca87df6d86d759cb6f2c5"
+  },
+  "retrievedAt": "2026-11-16T04:05:25.049Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E4%BD%86%E6%84%BF%E4%BA%BA%E9%95%BF%E4%B9%85&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E4%BD%86%E6%84%BF%E4%BA%BA%E9%95%BF%E4%B9%85%20%E7%8E%8B%E8%8F%B2&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 299714,
+        "name": "但愿人长久",
+        "artists": [
+          "王菲"
+        ],
+        "album": "但愿人长久",
+        "durationMs": 260773,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2128123018,
+        "name": "但愿人长久",
+        "artists": [
+          "王菲"
+        ],
+        "album": "畅听华语经典",
+        "durationMs": 260173,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 473277182,
+        "name": "但愿人长久",
+        "artists": [
+          "王菲"
+        ],
+        "album": "我的王菲时代",
+        "durationMs": 258000,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 299867,
+        "name": "但愿人长久",
+        "artists": [
+          "王菲"
+        ],
+        "album": "MIX & MATCH",
+        "durationMs": 90000,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 473279985,
+        "name": "但愿人长久",
+        "artists": [
+          "王菲"
+        ],
+        "album": "王菲2CD精选",
+        "durationMs": 261506,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 409872655,
+        "name": "但愿人长久",
+        "artists": [
+          "王菲"
+        ],
+        "album": "国语真经典: 王菲",
+        "durationMs": 261506,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 300216,
+        "name": "但愿人长久",
+        "artists": [
+          "王菲"
+        ],
+        "album": "菲靡靡之音",
+        "durationMs": 260173,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 299296,
+        "name": "但愿人长久",
+        "artists": [
+          "王菲"
+        ],
+        "album": "Faye Best",
+        "durationMs": 261506,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      }
+    ],
+    "workQuery": {
+      "song_id": 237,
+      "song_name": "但愿人长久",
+      "show_as_song_name": "",
+      "display_song_name": "但愿人长久",
+      "artist": "王菲",
+      "artist_search": "王菲",
+      "feat_artist": "",
+      "remark": "",
+      "tone": "",
+      "language": "中文",
+      "type": "华语经典",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1g1ah6REpb/?p=11",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-09-27",
+      "row_key": "但愿人长久"
+    },
+    "sourceId": 299714,
+    "sourcePath": "sources/299714.json",
+    "sourceUrl": "https://music.163.com/#/song?id=299714",
+    "selected": {
+      "id": 299714,
+      "name": "但愿人长久",
+      "artists": [
+        "王菲"
+      ],
+      "album": "但愿人长久",
+      "durationMs": 260773,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 17
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-237-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 258.508,
+    "sourceFirstLine": {
+      "t": 0.3,
+      "text": "原唱 : 邓丽君"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 24.12,
+      "endSeconds": 25.52,
+      "similarity": 0.0,
+      "recognizedText": "对",
+      "meanProbability": 0.371,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

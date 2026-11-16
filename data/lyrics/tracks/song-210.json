@@ -1,0 +1,217 @@
+{
+  "schemaVersion": 1,
+  "key": "song-210",
+  "songId": 210,
+  "songName": "嘘月",
+  "rowKey": "嘘月",
+  "displaySongName": "嘘月",
+  "artist": "ヨルシカ",
+  "language": "日文",
+  "derivative": false,
+  "edition": "",
+  "remark": "UP 桐人今天睡大觉《2026.09.23练歌歌切合集》P1；凌晨练歌场（北京时间 00:48 开播）开场曲",
+  "audio": {
+    "url": "assets/audio/song_209.m4a?v=c8ce06e692bf",
+    "sha256": "c8ce06e692bf18fd1aafcfdcf7b1f81d6b6a745668d65c5e18aa8154362bc188"
+  },
+  "retrievedAt": "2026-11-16T04:05:10.993Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E5%98%98%E6%9C%88&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E5%98%98%E6%9C%88%20%E3%83%A8%E3%83%AB%E3%82%B7%E3%82%AB&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1815109509,
+        "name": "嘘月",
+        "artists": [
+          "ヨルシカ"
+        ],
+        "album": "創作",
+        "durationMs": 290445,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2062546671,
+        "name": "嘘月",
+        "artists": [
+          "ヨルシカ"
+        ],
+        "album": "夏夜のドライブソング",
+        "durationMs": 290466,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2007247117,
+        "name": "嘘月",
+        "artists": [
+          "ヨルシカ"
+        ],
+        "album": "Tokyo Moon",
+        "durationMs": 290466,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2062133697,
+        "name": "嘘月",
+        "artists": [
+          "ヨルシカ"
+        ],
+        "album": "Anime Movie Hits",
+        "durationMs": 290466,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1972588361,
+        "name": "嘘月",
+        "artists": [
+          "ヨルシカ"
+        ],
+        "album": "TOKYO - NIGHT DIVE -",
+        "durationMs": 290466,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1321385330,
+        "name": "嘘月",
+        "artists": [
+          "CorLeonis"
+        ],
+        "album": "小夜すがら",
+        "durationMs": 182230,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3429140924,
+        "name": "嘘月",
+        "artists": [
+          "初音ミク",
+          "seigenkouso"
+        ],
+        "album": "盗作 & 創作 | VOCALOID Cover",
+        "durationMs": 290581,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 409430018,
+        "name": "嘘月",
+        "artists": [
+          "天宮みや"
+        ],
+        "album": "ポーカーフェイス",
+        "durationMs": 249706,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 210,
+      "song_name": "嘘月",
+      "show_as_song_name": "",
+      "display_song_name": "嘘月",
+      "artist": "ヨルシカ",
+      "artist_search": "ヨルシカ 嘘月",
+      "feat_artist": "",
+      "remark": "UP 桐人今天睡大觉《2026.09.23练歌歌切合集》P1；凌晨练歌场（北京时间 00:48 开播）开场曲",
+      "tone": "",
+      "language": "日文",
+      "type": "J-Pop",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1ouhW6GEoD/?p=1",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-09-23",
+      "row_key": "嘘月"
+    },
+    "sourceId": 1815109509,
+    "sourcePath": "sources/1815109509.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1815109509",
+    "selected": {
+      "id": 1815109509,
+      "name": "嘘月",
+      "artists": [
+        "ヨルシカ"
+      ],
+      "album": "創作",
+      "durationMs": 290445,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 39
+  },
+  "alignment": {
+    "status": "spotcheck_review_required",
+    "evidencePath": "evidence/song-210-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 292.711,
+    "sourceFirstLine": {
+      "t": 0.502,
+      "text": "雨が降った　花が散った"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 4.4,
+      "endSeconds": 7.86,
+      "similarity": 0.8571428571428571,
+      "recognizedText": "雨が降った 花がちだった",
+      "meanProbability": 0.645,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": 3.898,
+    "checks": [
+      {
+        "sourceLine": {
+          "t": 142.584,
+          "text": "そうなんだって笑ってもいいけど"
+        },
+        "evidencePath": "evidence/song-210-check0.json",
+        "candidate": {
+          "audioSeconds": 146.822,
+          "endSeconds": 151.082,
+          "similarity": 1.0,
+          "recognizedText": "そうなんだって 笑ってもいいけど",
+          "meanProbability": 0.877,
+          "tokenPrefixOnly": false
+        },
+        "residualSeconds": 0.34
+      },
+      {
+        "sourceLine": {
+          "t": 247.364,
+          "text": "君は夜になって行く"
+        },
+        "evidencePath": "evidence/song-210-check1.json",
+        "candidate": {
+          "audioSeconds": 252.322,
+          "endSeconds": 255.122,
+          "similarity": 0.5,
+          "recognizedText": "には夜に泣いて",
+          "meanProbability": 0.777,
+          "tokenPrefixOnly": false
+        },
+        "residualSeconds": 1.06
+      }
+    ],
+    "asrLanguage": "ja",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

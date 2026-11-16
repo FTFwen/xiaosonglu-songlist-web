@@ -1,0 +1,162 @@
+{
+  "schemaVersion": 1,
+  "key": "song-124",
+  "songId": 124,
+  "songName": "小半",
+  "displaySongName": "小半",
+  "artist": "陈粒",
+  "language": "中文",
+  "derivative": false,
+  "audio": {
+    "url": "assets/audio/song_123.m4a?v=d9bb7dfddaf1",
+    "sha256": "d9bb7dfddaf1012fda0509723bdc501fd49efd2def3ac086c8abd2c10969826d"
+  },
+  "retrievedAt": "2026-11-16T03:58:17.486Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E5%B0%8F%E5%8D%8A&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 421423806,
+        "name": "小半",
+        "artists": [
+          "陈粒"
+        ],
+        "album": "小梦大半",
+        "durationMs": 297240,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 3382306418,
+        "name": "小半",
+        "artists": [
+          "黄初夏"
+        ],
+        "album": "无声的告别",
+        "durationMs": 297261,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3342264884,
+        "name": "小半",
+        "artists": [
+          "DJ冷冰冰"
+        ],
+        "album": "小半",
+        "durationMs": 297270,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3344406064,
+        "name": "小半",
+        "artists": [
+          "李涵野"
+        ],
+        "album": "小半",
+        "durationMs": 299708,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3344417019,
+        "name": "小半",
+        "artists": [
+          "DJ冷冰冰"
+        ],
+        "album": "小半",
+        "durationMs": 200750,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2045474112,
+        "name": "小半",
+        "artists": [
+          "方沁"
+        ],
+        "album": "方沁的短视频翻唱合集",
+        "durationMs": 30240,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3339905393,
+        "name": "小半",
+        "artists": [
+          "备忘录"
+        ],
+        "album": "小半",
+        "durationMs": 275181,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2689865174,
+        "name": "小半 (Live)",
+        "artists": [
+          "陈粒",
+          "蒋先贵（Giogio）"
+        ],
+        "album": "明日创作计划 第九期 (Live)",
+        "durationMs": 285738,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      }
+    ],
+    "sourceId": 421423806,
+    "sourcePath": "sources/421423806.json",
+    "sourceUrl": "https://music.163.com/#/song?id=421423806",
+    "selected": {
+      "id": 421423806,
+      "name": "小半",
+      "artists": [
+        "陈粒"
+      ],
+      "album": "小梦大半",
+      "durationMs": 297240,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 53
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-124-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 295.467,
+    "sourceFirstLine": {
+      "t": 0.36,
+      "text": "不敢回看"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 30.7,
+      "endSeconds": 31.12,
+      "similarity": 0.4,
+      "recognizedText": "不",
+      "meanProbability": 0.556,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  },
+  "rowKey": "小半",
+  "edition": "",
+  "remark": "2026-09-03「也许康复的随便唱唱」21点场；歌切合集【桐人今天睡大觉】【小松绿Viridis】随便唱唱的歌回 歌切合集 2026.09.03 分P4（04:58）。陈粒《小梦大半》专辑曲。"
+}

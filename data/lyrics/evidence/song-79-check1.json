@@ -1,0 +1,81 @@
+{
+  "audioSha256": "3b0d21feed5a9e484a55bc3a48c601b0166b5fc1838177b2792511f9d9396d6d",
+  "model": "whisper-base",
+  "start": 232.499,
+  "end": 252.499,
+  "result": {
+    "text": "We love you私が",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 0.0,
+        "end": 8.1,
+        "text": "We love you",
+        "tokens": [
+          50364,
+          4360,
+          959,
+          291,
+          50864
+        ],
+        "temperature": 0,
+        "avg_logprob": -1.1670198440551758,
+        "compression_ratio": 0.68,
+        "no_speech_prob": 0.38112321496009827,
+        "words": [
+          {
+            "word": "We",
+            "start": 0.0,
+            "end": 0.3,
+            "probability": 0.04214651510119438
+          },
+          {
+            "word": " love",
+            "start": 0.3,
+            "end": 5.9,
+            "probability": 0.7839024662971497
+          },
+          {
+            "word": " you",
+            "start": 5.9,
+            "end": 8.1,
+            "probability": 0.39687588810920715
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "seek": 0,
+        "start": 9.92,
+        "end": 12.1,
+        "text": "私が",
+        "tokens": [
+          50864,
+          20083,
+          5142,
+          50964
+        ],
+        "temperature": 0,
+        "avg_logprob": -1.1670198440551758,
+        "compression_ratio": 0.68,
+        "no_speech_prob": 0.38112321496009827,
+        "words": [
+          {
+            "word": "私",
+            "start": 9.92,
+            "end": 11.32,
+            "probability": 0.03238788619637489
+          },
+          {
+            "word": "が",
+            "start": 11.32,
+            "end": 12.1,
+            "probability": 0.7156674861907959
+          }
+        ]
+      }
+    ],
+    "language": "ja"
+  }
+}

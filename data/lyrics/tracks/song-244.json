@@ -1,0 +1,183 @@
+{
+  "schemaVersion": 1,
+  "key": "song-244",
+  "songId": 244,
+  "songName": "叹云兮",
+  "rowKey": "叹云兮",
+  "displaySongName": "叹云兮",
+  "artist": "鞠婧祎",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "",
+  "audio": {
+    "url": "assets/audio/song_243.m4a?v=4cdc8c2ea4cc",
+    "sha256": "4cdc8c2ea4cc97bc34727738b913a423b708d3c547ac9277b70408c6df12466c"
+  },
+  "retrievedAt": "2026-11-16T04:12:40.915Z",
+  "match": {
+    "status": "candidate_review_required",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E5%8F%B9%E4%BA%91%E5%85%AE&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E5%8F%B9%E4%BA%91%E5%85%AE%20%E9%9E%A0%E5%A9%A7%E7%A5%8E&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 2745061701,
+        "name": "叹云兮",
+        "artists": [
+          "赵方婧"
+        ],
+        "album": "叹云兮",
+        "durationMs": 235439,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2742795247,
+        "name": "叹云兮",
+        "artists": [
+          "卢卢快闭嘴"
+        ],
+        "album": "叹云兮",
+        "durationMs": 234715,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1431669476,
+        "name": "叹云兮",
+        "artists": [
+          "yyyyyyoy"
+        ],
+        "album": "叹云兮（翻自 鞠婧祎）",
+        "durationMs": 282853,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3424289847,
+        "name": "叹云兮",
+        "artists": [
+          "小阿枫"
+        ],
+        "album": "叹云兮（陪你看日升月潜）",
+        "durationMs": 294000,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1862318419,
+        "name": "叹云兮",
+        "artists": [
+          "蛋糕"
+        ],
+        "album": "叹云兮",
+        "durationMs": 282749,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 863481092,
+        "name": "叹云兮 (电视剧《芸汐传》片尾曲)",
+        "artists": [
+          "鞠婧祎"
+        ],
+        "album": "叹云兮 (电视剧《芸汐传》片尾曲)",
+        "durationMs": 283058,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      },
+      {
+        "id": 1325711746,
+        "name": "叹云兮 (Live)",
+        "artists": [
+          "鞠婧祎"
+        ],
+        "album": "国风美少年 先导解锁",
+        "durationMs": 146693,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      },
+      {
+        "id": 3395287432,
+        "name": "叹云兮（DJ热播版）",
+        "artists": [
+          "郑赛珂"
+        ],
+        "album": "叹云兮（DJ热播版）",
+        "durationMs": 205488,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      }
+    ],
+    "workQuery": {
+      "song_id": 244,
+      "song_name": "叹云兮",
+      "show_as_song_name": "",
+      "display_song_name": "叹云兮",
+      "artist": "鞠婧祎",
+      "artist_search": "鞠婧祎",
+      "feat_artist": "",
+      "remark": "",
+      "tone": "",
+      "language": "中文",
+      "type": "影视、流行",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1g1ah6REpb/?p=20",
+      "sing_count": 2,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-11-12",
+      "row_key": "叹云兮"
+    },
+    "sourceId": 2745061701,
+    "sourcePath": "sources/2745061701.json",
+    "sourceUrl": "https://music.163.com/#/song?id=2745061701",
+    "selected": {
+      "id": 2745061701,
+      "name": "叹云兮",
+      "artists": [
+        "赵方婧"
+      ],
+      "album": "叹云兮",
+      "durationMs": 235439,
+      "titleScore": 1,
+      "artistMatch": false,
+      "score": 0.8
+    },
+    "timedLineCount": 58
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-244-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 280.832,
+    "sourceFirstLine": {
+      "t": 2,
+      "text": "原唱 : 鞠婧祎"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 30.0,
+      "endSeconds": 30.38,
+      "similarity": 0.0,
+      "recognizedText": "这",
+      "meanProbability": 0.226,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

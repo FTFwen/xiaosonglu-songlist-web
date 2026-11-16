@@ -1,0 +1,191 @@
+{
+  "schemaVersion": 1,
+  "key": "song-383",
+  "songId": 383,
+  "songName": "咸咸的",
+  "rowKey": "咸咸的",
+  "displaySongName": "咸咸的",
+  "artist": "Soda纯白 / 洛天依Official",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "章节标注（洛天依 ver.）；本家 Soda纯白 × 洛天依Official",
+  "audio": {
+    "url": "assets/audio/song_382.m4a?v=1aa953194609",
+    "sha256": "1aa953194609efe0c1bee06659dcae0fbf3a417e6d2a1591a0cd9684f87d77b3"
+  },
+  "retrievedAt": "2026-11-16T04:08:02.132Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E5%92%B8%E5%92%B8%E7%9A%84&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E5%92%B8%E5%92%B8%E7%9A%84%20Soda%E7%BA%AF%E7%99%BD%20%2F%20%E6%B4%9B%E5%A4%A9%E4%BE%9DOfficial&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 484708741,
+        "name": "咸咸的",
+        "artists": [
+          "uzakin",
+          "Soda纯白"
+        ],
+        "album": "蔚蓝色",
+        "durationMs": 249913,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 484710046,
+        "name": "咸咸的(洛天依 ver.)",
+        "artists": [
+          "洛天依Official",
+          "Soda纯白"
+        ],
+        "album": "蔚蓝色",
+        "durationMs": 249816,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      },
+      {
+        "id": 484709394,
+        "name": "咸咸的(inst.)",
+        "artists": [
+          "Soda纯白"
+        ],
+        "album": "蔚蓝色",
+        "durationMs": 249816,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      },
+      {
+        "id": 3416358396,
+        "name": "咸咸的海风",
+        "artists": [
+          "真的"
+        ],
+        "album": "咸咸的海风",
+        "durationMs": 184434,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 486765498,
+        "name": "純白P - 咸咸的-双声道",
+        "artists": [
+          "洛天依",
+          "uzakin",
+          "空城"
+        ],
+        "album": "【蓝】",
+        "durationMs": 249593,
+        "titleScore": 0,
+        "artistMatch": true,
+        "score": 0.2
+      },
+      {
+        "id": 1821065178,
+        "name": "积雪",
+        "artists": [
+          "Soda纯白",
+          "洛天依Official"
+        ],
+        "album": "再见，碳酸海 Deluxe",
+        "durationMs": 220029,
+        "titleScore": 0,
+        "artistMatch": true,
+        "score": 0.2
+      },
+      {
+        "id": 1494001389,
+        "name": "所以我选择被人讨厌",
+        "artists": [
+          "Soda纯白",
+          "洛天依Official"
+        ],
+        "album": "现实逃避Project",
+        "durationMs": 248200,
+        "titleScore": 0,
+        "artistMatch": true,
+        "score": 0.2
+      },
+      {
+        "id": 2608553980,
+        "name": "夏日未应答",
+        "artists": [
+          "Soda纯白",
+          "洛天依"
+        ],
+        "album": "夏日未应答",
+        "durationMs": 238285,
+        "titleScore": 0,
+        "artistMatch": true,
+        "score": 0.2
+      }
+    ],
+    "workQuery": {
+      "song_id": 383,
+      "song_name": "咸咸的",
+      "show_as_song_name": "",
+      "display_song_name": "咸咸的",
+      "artist": "Soda纯白 / 洛天依Official",
+      "artist_search": "Soda纯白 / 洛天依Official",
+      "feat_artist": "",
+      "remark": "章节标注（洛天依 ver.）；本家 Soda纯白 × 洛天依Official",
+      "tone": "",
+      "language": "中文",
+      "type": "中V",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV18pWH6gEzr/?p=24",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-11-08",
+      "row_key": "咸咸的"
+    },
+    "sourceId": 484708741,
+    "sourcePath": "sources/484708741.json",
+    "sourceUrl": "https://music.163.com/#/song?id=484708741",
+    "selected": {
+      "id": 484708741,
+      "name": "咸咸的",
+      "artists": [
+        "uzakin",
+        "Soda纯白"
+      ],
+      "album": "蔚蓝色",
+      "durationMs": 249913,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 64
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-383-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 239.595,
+    "sourceFirstLine": {
+      "t": 31.72,
+      "text": "相遇的夏天"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 49.22,
+      "endSeconds": 50.56,
+      "similarity": 0.36363636363636365,
+      "recognizedText": "的身力穿到天",
+      "meanProbability": 0.651,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

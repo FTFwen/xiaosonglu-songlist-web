@@ -1,0 +1,172 @@
+{
+  "schemaVersion": 1,
+  "key": "derivative-1109",
+  "songId": -1109,
+  "songName": "小松绿-春天的芭蕾",
+  "rowKey": "小松绿-春天的芭蕾",
+  "displaySongName": "春天的芭蕾",
+  "artist": "白烁",
+  "language": "",
+  "derivative": true,
+  "edition": "",
+  "remark": "",
+  "audio": {
+    "url": "assets/derivative/chuntian-de-balei.mp3?v=d15453441f50",
+    "sha256": "d15453441f508f30194285e36083721c63de69b792dba50583d035fd3c94afb1"
+  },
+  "retrievedAt": "2026-11-16T04:13:38.468Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E6%98%A5%E5%A4%A9%E7%9A%84%E8%8A%AD%E8%95%BE&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E6%98%A5%E5%A4%A9%E7%9A%84%E8%8A%AD%E8%95%BE%20%E5%B8%B8%E6%80%9D%E6%80%9D&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 222799,
+        "name": "春天的芭蕾",
+        "artists": [
+          "常思思"
+        ],
+        "album": "春天的芭蕾",
+        "durationMs": 247510,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 5235743,
+        "name": "春天的芭蕾",
+        "artists": [
+          "常思思"
+        ],
+        "album": "唱响中国",
+        "durationMs": 247510,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1407594804,
+        "name": "春天的芭蕾",
+        "artists": [
+          "常思思"
+        ],
+        "album": "Sing (常思思哈尔滨独唱音乐会live全纪录)",
+        "durationMs": 294641,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1437846762,
+        "name": "春天的芭蕾",
+        "artists": [
+          "信阳音乐制作人魏老师",
+          "常思思"
+        ],
+        "album": "民谣集",
+        "durationMs": 179539,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1908049825,
+        "name": "春天的芭蕾",
+        "artists": [
+          "说说Crystal"
+        ],
+        "album": "春天的芭蕾",
+        "durationMs": 242500,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 26584323,
+        "name": "春天的芭蕾",
+        "artists": [
+          "李炳楠"
+        ],
+        "album": "中国新声代 第六期",
+        "durationMs": 176000,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2641277714,
+        "name": "春天的芭蕾",
+        "artists": [
+          "王梦珠"
+        ],
+        "album": "女高音王梦珠独唱专辑",
+        "durationMs": 243843,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1325900942,
+        "name": "春天的芭蕾",
+        "artists": [
+          "李雨桐"
+        ],
+        "album": "生如夏花",
+        "durationMs": 173202,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": -1109,
+      "song_name": "春天的芭蕾",
+      "display_song_name": "春天的芭蕾",
+      "artist": "常思思",
+      "language": "",
+      "audio": "assets/derivative/chuntian-de-balei.mp3?v=d15453441f50",
+      "derivative": true
+    },
+    "sourceId": 222799,
+    "sourcePath": "sources/222799.json",
+    "sourceUrl": "https://music.163.com/#/song?id=222799",
+    "selected": {
+      "id": 222799,
+      "name": "春天的芭蕾",
+      "artists": [
+        "常思思"
+      ],
+      "album": "春天的芭蕾",
+      "durationMs": 247510,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 34
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/derivative-1109-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 240.562,
+    "sourceFirstLine": {
+      "t": 19.82,
+      "text": "随着脚步起舞纷飞"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 23.26,
+      "endSeconds": 24.66,
+      "similarity": 0.0,
+      "recognizedText": "作",
+      "meanProbability": 0.014,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

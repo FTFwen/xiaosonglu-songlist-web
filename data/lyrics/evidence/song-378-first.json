@@ -1,0 +1,163 @@
+{
+  "audioSha256": "293cbe4288a491b8eb8e9545be7efaa817700ade07a8170deeb94dd2f85bc3f8",
+  "model": "whisper-base",
+  "start": 0,
+  "end": 35,
+  "result": {
+    "text": "我想要看能不能进的其实让在天涯压不",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 2.1400000000000006,
+        "end": 5.02,
+        "text": "我想要看能不能进的",
+        "tokens": [
+          50364,
+          25246,
+          4275,
+          4200,
+          8225,
+          28590,
+          36700,
+          1546,
+          50464
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.8947373390197754,
+        "compression_ratio": 0.7714285714285715,
+        "no_speech_prob": 0.08895859867334366,
+        "words": [
+          {
+            "word": "我想",
+            "start": 2.1400000000000006,
+            "end": 2.7,
+            "probability": 0.8262211084365845
+          },
+          {
+            "word": "要",
+            "start": 2.7,
+            "end": 2.98,
+            "probability": 0.8517930507659912
+          },
+          {
+            "word": "看",
+            "start": 2.98,
+            "end": 3.12,
+            "probability": 0.46213099360466003
+          },
+          {
+            "word": "能",
+            "start": 3.12,
+            "end": 3.32,
+            "probability": 0.8981418609619141
+          },
+          {
+            "word": "不能",
+            "start": 3.32,
+            "end": 3.72,
+            "probability": 0.9695125222206116
+          },
+          {
+            "word": "进",
+            "start": 3.72,
+            "end": 3.9,
+            "probability": 0.5223438143730164
+          },
+          {
+            "word": "的",
+            "start": 3.9,
+            "end": 5.02,
+            "probability": 0.46949195861816406
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "seek": 3000,
+        "start": 30.46,
+        "end": 33.64,
+        "text": "其实让在天涯",
+        "tokens": [
+          50364,
+          41646,
+          33650,
+          3581,
+          6135,
+          35681,
+          107,
+          50534
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.8269459179469517,
+        "compression_ratio": 0.6857142857142857,
+        "no_speech_prob": 0.7737997174263,
+        "words": [
+          {
+            "word": "其实",
+            "start": 30.46,
+            "end": 31.54,
+            "probability": 0.15537618100643158
+          },
+          {
+            "word": "让",
+            "start": 31.54,
+            "end": 31.94,
+            "probability": 0.587890625
+          },
+          {
+            "word": "在",
+            "start": 31.94,
+            "end": 32.28,
+            "probability": 0.7677963972091675
+          },
+          {
+            "word": "天",
+            "start": 32.28,
+            "end": 32.62,
+            "probability": 0.9871740341186523
+          },
+          {
+            "word": "涯",
+            "start": 32.62,
+            "end": 33.64,
+            "probability": 0.6795749217271805
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "seek": 3000,
+        "start": 33.64,
+        "end": 34.84,
+        "text": "压不",
+        "tokens": [
+          50534,
+          5014,
+          233,
+          1960,
+          50614
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.8269459179469517,
+        "compression_ratio": 0.6857142857142857,
+        "no_speech_prob": 0.7737997174263,
+        "words": [
+          {
+            "word": "压",
+            "start": 33.64,
+            "end": 34.3,
+            "probability": 0.6253994703292847
+          },
+          {
+            "word": "不",
+            "start": 34.3,
+            "end": 34.84,
+            "probability": 0.5094318389892578
+          }
+        ]
+      }
+    ],
+    "language": "zh"
+  }
+}

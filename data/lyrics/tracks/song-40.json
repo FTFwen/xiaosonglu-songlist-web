@@ -1,0 +1,188 @@
+{
+  "schemaVersion": 1,
+  "key": "song-40",
+  "songId": 40,
+  "songName": "我多想说再见啊",
+  "rowKey": "我多想说再见啊",
+  "displaySongName": "我多想说再见啊",
+  "artist": "柯立可",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "直链页面 meta description 明示日期 2026.08.15，标题直接给出真实歌曲名《我多想说再见啊》，可作为当日 song-cut-first 增量收录。",
+  "audio": {
+    "url": "assets/audio/song_63.m4a?v=7b1585231208",
+    "sha256": "7b15852312082ce73e9e7ea4da5ab949ce230cf455639cfda03e796216e04156"
+  },
+  "retrievedAt": "2026-11-16T04:12:53.141Z",
+  "match": {
+    "status": "candidate_review_required",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E6%88%91%E5%A4%9A%E6%83%B3%E8%AF%B4%E5%86%8D%E8%A7%81%E5%95%8A&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E6%88%91%E5%A4%9A%E6%83%B3%E8%AF%B4%E5%86%8D%E8%A7%81%E5%95%8A%20%E6%9F%AF%E7%AB%8B%E5%8F%AF&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 2138287436,
+        "name": "我多想说再见啊",
+        "artists": [
+          "柯立可"
+        ],
+        "album": "我多想说再见啊",
+        "durationMs": 290400,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2052910904,
+        "name": "我多想说再见啊",
+        "artists": [
+          "绫月汐"
+        ],
+        "album": "翻唱·2023",
+        "durationMs": 290448,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2129565701,
+        "name": "我多想说再见啊",
+        "artists": [
+          "星尘",
+          "理智律者"
+        ],
+        "album": "翻调",
+        "durationMs": 290562,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1969023372,
+        "name": "我多想说再见啊",
+        "artists": [
+          "长谣谣子"
+        ],
+        "album": "2022的翻唱也要cool !",
+        "durationMs": 291343,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2036216607,
+        "name": "我多想说再见啊",
+        "artists": [
+          "伊水_Uryan",
+          "瑞琪"
+        ],
+        "album": "暴风雨的圆舞曲",
+        "durationMs": 291915,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2145403570,
+        "name": "我多想说再见啊",
+        "artists": [
+          "不睡了"
+        ],
+        "album": "翻弹",
+        "durationMs": 291558,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2012390589,
+        "name": "我多想说再见啊",
+        "artists": [
+          "小钱同学STudio",
+          "心华",
+          "WWateRZ",
+          "橘子JZ"
+        ],
+        "album": "心华翻唱精选集",
+        "durationMs": 290403,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1935119653,
+        "name": "我多想说再见啊",
+        "artists": [
+          "秦思"
+        ],
+        "album": "我多想说再见啊",
+        "durationMs": 290586,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 40,
+      "song_name": "我多想说再见啊",
+      "show_as_song_name": "",
+      "display_song_name": "我多想说再见啊",
+      "artist": "柯立可",
+      "artist_search": "柯立可",
+      "feat_artist": "",
+      "remark": "直链页面 meta description 明示日期 2026.08.15，标题直接给出真实歌曲名《我多想说再见啊》，可作为当日 song-cut-first 增量收录。",
+      "tone": "",
+      "language": "中文",
+      "type": "中V、流行",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1Z8by6aEGy/",
+      "sing_count": 1,
+      "status_labels": "歌切直补、待原始回放定位",
+      "last_sing_at": "2026-08-15",
+      "row_key": "我多想说再见啊"
+    },
+    "sourceId": 2052910904,
+    "sourcePath": "sources/2052910904.json",
+    "sourceUrl": "https://music.163.com/#/song?id=2052910904",
+    "selected": {
+      "id": 2052910904,
+      "name": "我多想说再见啊",
+      "artists": [
+        "绫月汐"
+      ],
+      "album": "翻唱·2023",
+      "durationMs": 290448,
+      "titleScore": 1,
+      "artistMatch": false,
+      "score": 0.8
+    },
+    "timedLineCount": 56
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-40-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 288.02,
+    "sourceFirstLine": {
+      "t": 1.9340000000000002,
+      "text": "原唱/词/曲/编曲：柯立可"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 28.68,
+      "endSeconds": 28.68,
+      "similarity": 0.42857142857142855,
+      "recognizedText": "词 作曲 作曲",
+      "meanProbability": 0.597,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

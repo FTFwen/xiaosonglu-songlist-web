@@ -1,0 +1,175 @@
+{
+  "schemaVersion": 1,
+  "key": "song-142",
+  "songId": 142,
+  "songName": "牵丝戏",
+  "displaySongName": "牵丝戏",
+  "artist": "银临、Aki阿杰",
+  "language": "中文",
+  "derivative": false,
+  "audio": {
+    "url": "assets/audio/song_141.m4a?v=13549dc38c8b",
+    "sha256": "13549dc38c8b2d99c71942d2fda8391896c5d55c54c2fb6dd8c75ecc7ffb601e"
+  },
+  "retrievedAt": "2026-11-16T03:58:29.313Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E7%89%B5%E4%B8%9D%E6%88%8F&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 30352891,
+        "name": "牵丝戏",
+        "artists": [
+          "银临",
+          "Aki阿杰"
+        ],
+        "album": "牵丝戏",
+        "durationMs": 239302,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 428387758,
+        "name": "牵丝戏",
+        "artists": [
+          "Aki阿杰",
+          "银临"
+        ],
+        "album": "牵丝戏 With. 银临",
+        "durationMs": 239302,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2146525179,
+        "name": "牵丝戏",
+        "artists": [
+          "女儿",
+          "17岁",
+          "于斐雯-",
+          "爱笑的晴天",
+          "失眠的不眠猫",
+          "Pristine(余量)",
+          "粥粥姐",
+          "77Q",
+          "苏熠鸣(退网中)",
+          "icai"
+        ],
+        "album": "城家文化",
+        "durationMs": 244117,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3403402315,
+        "name": "牵丝戏",
+        "artists": [
+          "DJ大大怪"
+        ],
+        "album": "牵丝戏",
+        "durationMs": 236586,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3425671384,
+        "name": "牵丝戏",
+        "artists": [
+          "无人区",
+          "吉泽树"
+        ],
+        "album": "牵丝戏",
+        "durationMs": 122687,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3413310866,
+        "name": "牵丝戏",
+        "artists": [
+          "凌晨四点半",
+          "krs"
+        ],
+        "album": "牵丝戏",
+        "durationMs": 152833,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3418057811,
+        "name": "牵丝戏",
+        "artists": [
+          "凡不凡"
+        ],
+        "album": "人间小惬意",
+        "durationMs": 101819,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3396679092,
+        "name": "牵丝戏",
+        "artists": [
+          "雷米克斯"
+        ],
+        "album": "牵丝戏",
+        "durationMs": 120853,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "sourceId": 30352891,
+    "sourcePath": "sources/30352891.json",
+    "sourceUrl": "https://music.163.com/#/song?id=30352891",
+    "selected": {
+      "id": 30352891,
+      "name": "牵丝戏",
+      "artists": [
+        "银临",
+        "Aki阿杰"
+      ],
+      "album": "牵丝戏",
+      "durationMs": 239302,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 31
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-142-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 244.181,
+    "sourceFirstLine": {
+      "t": 23.65,
+      "text": "嘲笑谁恃美扬威"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 27.0,
+      "endSeconds": 28.4,
+      "similarity": 0.0,
+      "recognizedText": "《大",
+      "meanProbability": 0.013,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  },
+  "rowKey": "牵丝戏",
+  "edition": "",
+  "remark": ""
+}

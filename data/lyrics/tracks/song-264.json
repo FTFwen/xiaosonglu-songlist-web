@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 1,
+  "key": "song-264",
+  "songId": 264,
+  "songName": "Melody",
+  "displaySongName": "Melody",
+  "artist": "陶喆",
+  "language": "中文",
+  "derivative": false,
+  "audio": {
+    "url": "assets/audio/song_263.m4a?v=11ece0f55923",
+    "sha256": "11ece0f55923ca21cd92c79ca78bbc358184bddaf1a52f7038d2c66e38343ced"
+  },
+  "retrievedAt": "2026-11-16T03:58:19.935Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=Melody&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 150520,
+        "name": "Melody",
+        "artists": [
+          "陶喆"
+        ],
+        "album": "Ultrasound 乐之路 1997-2003",
+        "durationMs": 269026,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 150563,
+        "name": "Melody",
+        "artists": [
+          "陶喆"
+        ],
+        "album": "黑色柳丁",
+        "durationMs": 269000,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2143230383,
+        "name": "Melody",
+        "artists": [
+          "刘大拿"
+        ],
+        "album": "Melody",
+        "durationMs": 221250,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1430000692,
+        "name": "Melody",
+        "artists": [
+          "ZIV",
+          "KIPES"
+        ],
+        "album": "倒叙爱情",
+        "durationMs": 237473,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2736303762,
+        "name": "Melody",
+        "artists": [
+          "半吨兄弟"
+        ],
+        "album": "Melody",
+        "durationMs": 280609,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3411938792,
+        "name": "Melody",
+        "artists": [
+          "Dimitri Vegas & Like Mike",
+          "Steve Aoki",
+          "Ummet Ozcan"
+        ],
+        "album": "Melody",
+        "durationMs": 223384,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 591371,
+        "name": "Melody",
+        "artists": [
+          "梶浦由記"
+        ],
+        "album": "TBSアニメーション“PandoraHearts”オリジナルサウンドトラック1",
+        "durationMs": 94066,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 604862,
+        "name": "Melody",
+        "artists": [
+          "具島直子"
+        ],
+        "album": "miss. G",
+        "durationMs": 285226,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "sourceId": 150520,
+    "sourcePath": "sources/150520.json",
+    "sourceUrl": "https://music.163.com/#/song?id=150520",
+    "selected": {
+      "id": 150520,
+      "name": "Melody",
+      "artists": [
+        "陶喆"
+      ],
+      "album": "Ultrasound 乐之路 1997-2003",
+      "durationMs": 269026,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 64
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-264-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 266.432,
+    "sourceFirstLine": {
+      "t": 20.15,
+      "text": "终于明白你已变成回忆"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 0.0,
+      "endSeconds": 0.2,
+      "similarity": 0.0,
+      "recognizedText": "这",
+      "meanProbability": 0.343,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  },
+  "rowKey": "Melody",
+  "edition": "",
+  "remark": ""
+}

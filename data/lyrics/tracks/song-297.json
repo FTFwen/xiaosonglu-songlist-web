@@ -1,0 +1,187 @@
+{
+  "schemaVersion": 1,
+  "key": "song-297",
+  "songId": 297,
+  "songName": "余命3日少女",
+  "rowKey": "余命3日少女",
+  "displaySongName": "余命3日少女",
+  "artist": "プロペリン / VY1",
+  "language": "日文",
+  "derivative": false,
+  "edition": "",
+  "remark": "两份合集（BV1TApG6uEPX 分P10、BV1Qrpj6ZELm 分P10）同曲同序；弹幕 01:18:06「余命三日少女」直接点名。分P标题写作「（翻自 プロペリン） - 米白」，即原曲为 プロペリン 作品（据初音ミク Wiki 与 Vocaloid Lyrics Wiki：プロペリン氏第 7 作，VY1 演唱），故原唱字段记 プロペリン / VY1。",
+  "audio": {
+    "url": "assets/audio/song_296.m4a?v=a77a872b39a5",
+    "sha256": "a77a872b39a55a767d61aa0afd550067ec476bce1aec1373813e4acad39277f0"
+  },
+  "retrievedAt": "2026-11-16T04:06:29.476Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E4%BD%99%E5%91%BD3%E6%97%A5%E5%B0%91%E5%A5%B3&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E4%BD%99%E5%91%BD3%E6%97%A5%E5%B0%91%E5%A5%B3%20%E3%83%97%E3%83%AD%E3%83%9A%E3%83%AA%E3%83%B3%20%2F%20VY1&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 3339196338,
+        "name": "余命3日少女",
+        "artists": [
+          "VY1V4",
+          "プロペリン"
+        ],
+        "album": "余命3日少女",
+        "durationMs": 234631,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1361165212,
+        "name": "余命3日少女",
+        "artists": [
+          "くろくも"
+        ],
+        "album": "最新热歌慢摇112",
+        "durationMs": 234511,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 39227516,
+        "name": "余命3日少女",
+        "artists": [
+          "ぼとる"
+        ],
+        "album": "最新热歌慢摇112",
+        "durationMs": 234576,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1372899113,
+        "name": "余命3日少女",
+        "artists": [
+          "冰镇豆沙君"
+        ],
+        "album": "余命3日少女",
+        "durationMs": 239893,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1910473237,
+        "name": "余命3日少女",
+        "artists": [
+          "宫园凛",
+          "艾可echo"
+        ],
+        "album": "余命三日少女",
+        "durationMs": 233308,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1333804290,
+        "name": "余命3日少女",
+        "artists": [
+          "MEON"
+        ],
+        "album": "余命3日少女",
+        "durationMs": 234694,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1297243210,
+        "name": "余命3日少女",
+        "artists": [
+          "Nini_Nebula",
+          "野鹿Noka"
+        ],
+        "album": "余命3日少女",
+        "durationMs": 236486,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2129778957,
+        "name": "余命3日少女",
+        "artists": [
+          "青詞"
+        ],
+        "album": "25岁♡",
+        "durationMs": 234813,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 297,
+      "song_name": "余命3日少女",
+      "show_as_song_name": "",
+      "display_song_name": "余命3日少女",
+      "artist": "プロペリン / VY1",
+      "artist_search": "プロペリン / VY1",
+      "feat_artist": "",
+      "remark": "两份合集（BV1TApG6uEPX 分P10、BV1Qrpj6ZELm 分P10）同曲同序；弹幕 01:18:06「余命三日少女」直接点名。分P标题写作「（翻自 プロペリン） - 米白」，即原曲为 プロペリン 作品（据初音ミク Wiki 与 Vocaloid Lyrics Wiki：プロペリン氏第 7 作，VY1 演唱），故原唱字段记 プロペリン / VY1。",
+      "tone": "",
+      "language": "日文",
+      "type": "Vocaloid、J-Pop",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1TApG6uEPX/?p=10",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-10",
+      "row_key": "余命3日少女"
+    },
+    "sourceId": 3339196338,
+    "sourcePath": "sources/3339196338.json",
+    "sourceUrl": "https://music.163.com/#/song?id=3339196338",
+    "selected": {
+      "id": 3339196338,
+      "name": "余命3日少女",
+      "artists": [
+        "VY1V4",
+        "プロペリン"
+      ],
+      "album": "余命3日少女",
+      "durationMs": 234631,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 33
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-297-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 237.525,
+    "sourceFirstLine": {
+      "t": 16.255,
+      "text": "白く脆く崩れる 思いを繋ぐの"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 32.92,
+      "endSeconds": 34.08,
+      "similarity": 0.14285714285714285,
+      "recognizedText": "く",
+      "meanProbability": 0.731,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "ja",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

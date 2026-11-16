@@ -1,0 +1,183 @@
+{
+  "schemaVersion": 1,
+  "key": "song-250",
+  "songId": 250,
+  "songName": "巡恋風",
+  "rowKey": "巡恋風",
+  "displaySongName": "巡恋風",
+  "artist": "Luna Safari",
+  "language": "日文",
+  "derivative": false,
+  "edition": "",
+  "remark": "",
+  "audio": {
+    "url": "assets/audio/song_249.m4a?v=6dca7ffe3373",
+    "sha256": "6dca7ffe33738ef3abc350ad843423581673db0ae1b5108fe56ba72f79596c97"
+  },
+  "retrievedAt": "2026-11-16T04:05:40.511Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E5%B7%A1%E6%81%8B%E9%A2%A8&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E5%B7%A1%E6%81%8B%E9%A2%A8%20Luna%20Safari&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 29103528,
+        "name": "巡恋風",
+        "artists": [
+          "Luna Safari"
+        ],
+        "album": "巡恋風",
+        "durationMs": 265952,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 29163138,
+        "name": "巡恋風",
+        "artists": [
+          "Luna Safari"
+        ],
+        "album": "Miles;Smile",
+        "durationMs": 265952,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1390371394,
+        "name": "巡恋風",
+        "artists": [
+          "Rinana"
+        ],
+        "album": "巡恋風",
+        "durationMs": 273345,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1385091068,
+        "name": "巡恋風",
+        "artists": [
+          "莓子"
+        ],
+        "album": "巡恋風",
+        "durationMs": 271464,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1458113106,
+        "name": "巡恋風",
+        "artists": [
+          "橙沁Asa"
+        ],
+        "album": "巡恋風",
+        "durationMs": 273658,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1330875861,
+        "name": "巡恋風",
+        "artists": [
+          "葡萄没自信"
+        ],
+        "album": "巡恋風",
+        "durationMs": 272666,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1451140007,
+        "name": "巡恋風",
+        "artists": [
+          "弥生"
+        ],
+        "album": "巡恋风",
+        "durationMs": 271931,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2715288883,
+        "name": "巡恋風",
+        "artists": [
+          "青詞"
+        ],
+        "album": "巡恋风",
+        "durationMs": 270222,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 250,
+      "song_name": "巡恋風",
+      "show_as_song_name": "",
+      "display_song_name": "巡恋風",
+      "artist": "Luna Safari",
+      "artist_search": "Luna Safari",
+      "feat_artist": "",
+      "remark": "",
+      "tone": "",
+      "language": "日文",
+      "type": "日V",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1g1ah6REpb/?p=27",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-09-27",
+      "row_key": "巡恋風"
+    },
+    "sourceId": 29103528,
+    "sourcePath": "sources/29103528.json",
+    "sourceUrl": "https://music.163.com/#/song?id=29103528",
+    "selected": {
+      "id": 29103528,
+      "name": "巡恋風",
+      "artists": [
+        "Luna Safari"
+      ],
+      "album": "巡恋風",
+      "durationMs": 265952,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 30
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-250-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 272.068,
+    "sourceFirstLine": {
+      "t": 15.732,
+      "text": "風向きがまた"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 8.54,
+      "endSeconds": 9.94,
+      "similarity": 0.0,
+      "recognizedText": "ん",
+      "meanProbability": 0.015,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "ja",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

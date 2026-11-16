@@ -1,0 +1,202 @@
+{
+  "schemaVersion": 1,
+  "key": "song-267",
+  "songId": 267,
+  "songName": "达拉崩吧",
+  "rowKey": "达拉崩吧",
+  "displaySongName": "达拉崩吧",
+  "artist": "ilem, 洛天依Official, 言和",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "",
+  "audio": {
+    "url": "assets/audio/song_266.m4a?v=31689acc95aa",
+    "sha256": "31689acc95aaf0bd561144d80d04bbd8beaaccdb7d67a9ab073238e69bc4c75a"
+  },
+  "retrievedAt": "2026-11-16T04:05:48.955Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E8%BE%BE%E6%8B%89%E5%B4%A9%E5%90%A7&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E8%BE%BE%E6%8B%89%E5%B4%A9%E5%90%A7%20ilem&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 521493845,
+        "name": "达拉崩吧",
+        "artists": [
+          "ilem",
+          "洛天依Official",
+          "言和"
+        ],
+        "album": "达拉崩吧",
+        "durationMs": 208065,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 3392512852,
+        "name": "达拉崩吧",
+        "artists": [
+          "ilem",
+          "洛天依Official",
+          "言和"
+        ],
+        "album": "ilem2017-2018年作品合集",
+        "durationMs": 208065,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 476114873,
+        "name": "达拉崩吧",
+        "artists": [
+          "三无Marblue"
+        ],
+        "album": "达拉崩吧",
+        "durationMs": 208282,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1442387317,
+        "name": "达拉崩吧",
+        "artists": [
+          "Hanser",
+          "电鸟个灯泡",
+          "尤超白",
+          "西瓜Kune"
+        ],
+        "album": "达拉崩吧",
+        "durationMs": 213750,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1954484839,
+        "name": "达拉崩吧",
+        "artists": [
+          "苏打岚Soda",
+          "沉香kama",
+          "沧音Kirarin",
+          "云汜"
+        ],
+        "album": "达拉崩吧",
+        "durationMs": 215316,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1884939199,
+        "name": "达拉崩吧",
+        "artists": [
+          "张淇",
+          "欧阳靖",
+          "黄贯中",
+          "李铢衔James",
+          "Ricky",
+          "李承铉",
+          "刘迦"
+        ],
+        "album": "披荆斩棘的哥哥 第9期",
+        "durationMs": 284122,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1439209792,
+        "name": "达拉崩吧",
+        "artists": [
+          "于梓贝"
+        ],
+        "album": "达拉崩吧",
+        "durationMs": 28543,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1465991600,
+        "name": "达拉崩吧",
+        "artists": [
+          "飙尘",
+          "__六月剧木头__"
+        ],
+        "album": "达拉崩吧巴拉巴拉",
+        "durationMs": 207790,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 267,
+      "song_name": "达拉崩吧",
+      "show_as_song_name": "",
+      "display_song_name": "达拉崩吧",
+      "artist": "ilem, 洛天依Official, 言和",
+      "artist_search": "ilem, 洛天依Official, 言和",
+      "feat_artist": "",
+      "remark": "",
+      "tone": "",
+      "language": "中文",
+      "type": "中V",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1UkaS6zEk3/?p=27",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-02",
+      "row_key": "达拉崩吧"
+    },
+    "sourceId": 521493845,
+    "sourcePath": "sources/521493845.json",
+    "sourceUrl": "https://music.163.com/#/song?id=521493845",
+    "selected": {
+      "id": 521493845,
+      "name": "达拉崩吧",
+      "artists": [
+        "ilem",
+        "洛天依Official",
+        "言和"
+      ],
+      "album": "达拉崩吧",
+      "durationMs": 208065,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 91
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-267-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 210.261,
+    "sourceFirstLine": {
+      "t": 10.39,
+      "text": "很久很久以前"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 25.16,
+      "endSeconds": 26.28,
+      "similarity": 0.0,
+      "recognizedText": "作",
+      "meanProbability": 0.008,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

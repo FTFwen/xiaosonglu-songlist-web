@@ -1,0 +1,182 @@
+{
+  "schemaVersion": 1,
+  "key": "song-240",
+  "songId": 240,
+  "songName": "我的一个道姑朋友（第一遍）",
+  "rowKey": "我的一个道姑朋友（第一遍）",
+  "displaySongName": "我的一个道姑朋友",
+  "artist": "",
+  "language": "中文",
+  "derivative": false,
+  "edition": "第一遍",
+  "remark": "",
+  "audio": {
+    "url": "assets/audio/song_239.m4a?v=b7528d2d63a2",
+    "sha256": "b7528d2d63a2ed9b941fd77a2c617551a35471dd354efe22c1d84eec42299439"
+  },
+  "retrievedAt": "2026-11-16T04:13:11.144Z",
+  "match": {
+    "status": "candidate_review_required",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E6%88%91%E7%9A%84%E4%B8%80%E4%B8%AA%E9%81%93%E5%A7%91%E6%9C%8B%E5%8F%8B&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1367452194,
+        "name": "我的一个道姑朋友",
+        "artists": [
+          "双笙（陈元汐）"
+        ],
+        "album": "我的一个道姑朋友",
+        "durationMs": 284096,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3452515485,
+        "name": "我的一个道姑朋友",
+        "artists": [
+          "天天開心"
+        ],
+        "album": "专辑先叫这个名（有推荐的发我）",
+        "durationMs": 15336,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2744139465,
+        "name": "我的一个道姑朋友",
+        "artists": [
+          "云栖处"
+        ],
+        "album": "Cover",
+        "durationMs": 280836,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3440612155,
+        "name": "我的一个道姑朋友",
+        "artists": [
+          "凌晨三点半"
+        ],
+        "album": "我的一个道姑朋友",
+        "durationMs": 205531,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3458312426,
+        "name": "我的一个道姑朋友",
+        "artists": [
+          "Nassir"
+        ],
+        "album": "我的一个道姑朋友",
+        "durationMs": 286339,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3438043442,
+        "name": "我的一个道姑朋友",
+        "artists": [
+          "DJ阿驴"
+        ],
+        "album": "我的一个道姑朋友",
+        "durationMs": 264777,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3448789932,
+        "name": "我的一个道姑朋友",
+        "artists": [
+          "李嘉嘉"
+        ],
+        "album": "古旧人间",
+        "durationMs": 290328,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3437306649,
+        "name": "我的一个道姑朋友",
+        "artists": [
+          "Lie."
+        ],
+        "album": "我的一个道姑朋友",
+        "durationMs": 280764,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 240,
+      "song_name": "我的一个道姑朋友",
+      "show_as_song_name": "",
+      "display_song_name": "我的一个道姑朋友",
+      "artist": "",
+      "artist_search": "",
+      "feat_artist": "",
+      "remark": "",
+      "tone": "",
+      "language": "中文",
+      "type": "古风",
+      "identification": "",
+      "display_version": "第一遍",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1g1ah6REpb/?p=14",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-09-27",
+      "row_key": "我的一个道姑朋友（第一遍）"
+    },
+    "sourceId": 1367452194,
+    "sourcePath": "sources/1367452194.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1367452194",
+    "selected": {
+      "id": 1367452194,
+      "name": "我的一个道姑朋友",
+      "artists": [
+        "双笙（陈元汐）"
+      ],
+      "album": "我的一个道姑朋友",
+      "durationMs": 284096,
+      "titleScore": 1,
+      "artistMatch": false,
+      "score": 0.8
+    },
+    "timedLineCount": 70
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-240-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 286.906,
+    "sourceFirstLine": {
+      "t": 4,
+      "text": "原唱 : 田井中彩智"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 22.3,
+      "endSeconds": 23.7,
+      "similarity": 0.0,
+      "recognizedText": "我",
+      "meanProbability": 0.05,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

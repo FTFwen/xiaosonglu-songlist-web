@@ -1,0 +1,177 @@
+{
+  "schemaVersion": 1,
+  "key": "derivative-1110",
+  "songId": -1110,
+  "songName": "小松绿-梦境与魔女",
+  "rowKey": "小松绿-梦境与魔女",
+  "displaySongName": "梦境与魔女",
+  "artist": "白烁",
+  "language": "",
+  "derivative": true,
+  "edition": "",
+  "remark": "",
+  "audio": {
+    "url": "assets/derivative/mengjing-yu-monv.mp3?v=d0a5868fbab7",
+    "sha256": "d0a5868fbab755249bdceedd08e683fc2dc3331e8401baa05660d53a11bd48d4"
+  },
+  "retrievedAt": "2026-11-16T04:08:44.052Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E6%A2%A6%E5%A2%83%E4%B8%8E%E9%AD%94%E5%A5%B3&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E6%A2%A6%E5%A2%83%E4%B8%8E%E9%AD%94%E5%A5%B3%20%E6%97%B6%E4%B9%8B%E6%AD%8CProject&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 452093215,
+        "name": "梦境与魔女",
+        "artists": [
+          "汤汤",
+          "喵☆酱"
+        ],
+        "album": "时之歌Project",
+        "durationMs": 248058,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 455106628,
+        "name": "梦境与魔女",
+        "artists": [
+          "URUUT",
+          "洛天依Official"
+        ],
+        "album": "梦境与魔女",
+        "durationMs": 248190,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2607812647,
+        "name": "梦境与魔女",
+        "artists": [
+          "吕慧桢"
+        ],
+        "album": "恐怖歌曲",
+        "durationMs": 248346,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1321450298,
+        "name": "梦境与魔女",
+        "artists": [
+          "桃子在发芽",
+          "戎六",
+          "仙人不吃土",
+          "安妮"
+        ],
+        "album": "梦境与魔女",
+        "durationMs": 247245,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1810578960,
+        "name": "梦境与魔女",
+        "artists": [
+          "轩辕彼岸咕咕咕"
+        ],
+        "album": "【明日方舟】梦境与魔女",
+        "durationMs": 248194,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2139060049,
+        "name": "梦境与魔女",
+        "artists": [
+          "潋妤"
+        ],
+        "album": "梦境与魔女",
+        "durationMs": 256000,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1419248358,
+        "name": "梦境与魔女",
+        "artists": [
+          "棠华"
+        ],
+        "album": "梦境与魔女",
+        "durationMs": 249085,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3452059715,
+        "name": "梦境与魔女",
+        "artists": [
+          "Anan"
+        ],
+        "album": "anan翻唱合集",
+        "durationMs": 252923,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": -1110,
+      "song_name": "梦境与魔女",
+      "display_song_name": "梦境与魔女",
+      "artist": "时之歌Project（泛音堂）/ 喵☆酱",
+      "language": "",
+      "audio": "assets/derivative/mengjing-yu-monv.mp3?v=d0a5868fbab7",
+      "derivative": true
+    },
+    "sourceId": 452093215,
+    "sourcePath": "sources/452093215.json",
+    "sourceUrl": "https://music.163.com/#/song?id=452093215",
+    "selected": {
+      "id": 452093215,
+      "name": "梦境与魔女",
+      "artists": [
+        "汤汤",
+        "喵☆酱"
+      ],
+      "album": "时之歌Project",
+      "durationMs": 248058,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 73
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/derivative-1110-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 198.034,
+    "sourceFirstLine": {
+      "t": 1.51,
+      "text": "「从前，有一个失去了记忆的小女孩」"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 21.58,
+      "endSeconds": 23.9,
+      "similarity": 0.19047619047619047,
+      "recognizedText": "以前无法逃避的",
+      "meanProbability": 0.782,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

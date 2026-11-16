@@ -1,0 +1,649 @@
+{
+  "audioSha256": "d264ad8acdc65eec567632a39444a4134351f1cd97b32d903da2bcc6bdb86fd7",
+  "model": "whisper-base",
+  "start": 0,
+  "end": 35,
+  "result": {
+    "text": "先搶那个先搶那个先搶那个先搶那个先搶那个先搶那个先搶那个先搶那个先搶那个先搶那个",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 2.98,
+        "end": 3.9,
+        "text": "先搶那个",
+        "tokens": [
+          50364,
+          10108,
+          22220,
+          114,
+          43083,
+          50414
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.20722020756114612,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.04640033096075058,
+        "words": [
+          {
+            "word": "先",
+            "start": 2.98,
+            "end": 3.44,
+            "probability": 0.7177056074142456
+          },
+          {
+            "word": "搶",
+            "start": 3.44,
+            "end": 3.64,
+            "probability": 0.6164953112602234
+          },
+          {
+            "word": "那个",
+            "start": 3.64,
+            "end": 3.9,
+            "probability": 0.5616686940193176
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "seek": 0,
+        "start": 3.9,
+        "end": 4.44,
+        "text": "先搶那个",
+        "tokens": [
+          50414,
+          10108,
+          22220,
+          114,
+          43083,
+          50464
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.20722020756114612,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.04640033096075058,
+        "words": [
+          {
+            "word": "先",
+            "start": 3.9,
+            "end": 4.44,
+            "probability": 0.000789725745562464
+          },
+          {
+            "word": "搶",
+            "start": 4.44,
+            "end": 4.44,
+            "probability": 0.9625652432441711
+          },
+          {
+            "word": "那个",
+            "start": 4.44,
+            "end": 4.44,
+            "probability": 0.9608418941497803
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "seek": 0,
+        "start": 18.06,
+        "end": 19.0,
+        "text": "先搶那个",
+        "tokens": [
+          50464,
+          10108,
+          22220,
+          114,
+          43083,
+          50514
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.20722020756114612,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.04640033096075058,
+        "words": [
+          {
+            "word": "先",
+            "start": 18.06,
+            "end": 18.52,
+            "probability": 0.053833745419979095
+          },
+          {
+            "word": "搶",
+            "start": 18.52,
+            "end": 18.98,
+            "probability": 0.9902709126472473
+          },
+          {
+            "word": "那个",
+            "start": 18.98,
+            "end": 19.0,
+            "probability": 0.9719255566596985
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "seek": 0,
+        "start": 19.0,
+        "end": 19.0,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.20722020756114612,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.04640033096075058,
+        "words": []
+      },
+      {
+        "id": 4,
+        "seek": 0,
+        "start": 19.0,
+        "end": 19.0,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.20722020756114612,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.04640033096075058,
+        "words": []
+      },
+      {
+        "id": 5,
+        "seek": 0,
+        "start": 19.0,
+        "end": 19.0,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.20722020756114612,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.04640033096075058,
+        "words": []
+      },
+      {
+        "id": 6,
+        "seek": 0,
+        "start": 19.0,
+        "end": 19.0,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.20722020756114612,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.04640033096075058,
+        "words": []
+      },
+      {
+        "id": 7,
+        "seek": 0,
+        "start": 19.0,
+        "end": 19.0,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.20722020756114612,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.04640033096075058,
+        "words": []
+      },
+      {
+        "id": 8,
+        "seek": 0,
+        "start": 19.0,
+        "end": 19.0,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.20722020756114612,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.04640033096075058,
+        "words": []
+      },
+      {
+        "id": 9,
+        "seek": 0,
+        "start": 19.0,
+        "end": 19.0,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.20722020756114612,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.04640033096075058,
+        "words": []
+      },
+      {
+        "id": 10,
+        "seek": 0,
+        "start": 19.0,
+        "end": 19.0,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.20722020756114612,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.04640033096075058,
+        "words": []
+      },
+      {
+        "id": 11,
+        "seek": 0,
+        "start": 19.0,
+        "end": 19.0,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.20722020756114612,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.04640033096075058,
+        "words": []
+      },
+      {
+        "id": 12,
+        "seek": 0,
+        "start": 19.0,
+        "end": 19.0,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.20722020756114612,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.04640033096075058,
+        "words": []
+      },
+      {
+        "id": 13,
+        "seek": 0,
+        "start": 19.0,
+        "end": 19.0,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.20722020756114612,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.04640033096075058,
+        "words": []
+      },
+      {
+        "id": 14,
+        "seek": 0,
+        "start": 19.0,
+        "end": 19.0,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.20722020756114612,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.04640033096075058,
+        "words": []
+      },
+      {
+        "id": 15,
+        "seek": 0,
+        "start": 19.0,
+        "end": 19.02,
+        "text": "先搶那个",
+        "tokens": [
+          51114,
+          10108,
+          22220,
+          114,
+          43083,
+          51164
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.20722020756114612,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.04640033096075058,
+        "words": [
+          {
+            "word": "先",
+            "start": 19.0,
+            "end": 19.02,
+            "probability": 0.951956033706665
+          },
+          {
+            "word": "搶",
+            "start": 19.02,
+            "end": 19.02,
+            "probability": 0.9863555729389191
+          },
+          {
+            "word": "那个",
+            "start": 19.02,
+            "end": 19.02,
+            "probability": 0.9801599979400635
+          }
+        ]
+      },
+      {
+        "id": 16,
+        "seek": 0,
+        "start": 19.02,
+        "end": 19.14,
+        "text": "先搶那个",
+        "tokens": [
+          51164,
+          10108,
+          22220,
+          114,
+          43083,
+          51214
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.20722020756114612,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.04640033096075058,
+        "words": [
+          {
+            "word": "先",
+            "start": 19.02,
+            "end": 19.02,
+            "probability": 0.9554973244667053
+          },
+          {
+            "word": "搶",
+            "start": 19.02,
+            "end": 19.14,
+            "probability": 0.9902946650981903
+          },
+          {
+            "word": "那个",
+            "start": 19.14,
+            "end": 19.14,
+            "probability": 0.9788631796836853
+          }
+        ]
+      },
+      {
+        "id": 17,
+        "seek": 0,
+        "start": 19.14,
+        "end": 19.14,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.20722020756114612,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.04640033096075058,
+        "words": []
+      },
+      {
+        "id": 18,
+        "seek": 0,
+        "start": 19.14,
+        "end": 19.14,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.20722020756114612,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.04640033096075058,
+        "words": []
+      },
+      {
+        "id": 19,
+        "seek": 0,
+        "start": 19.14,
+        "end": 19.14,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.20722020756114612,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.04640033096075058,
+        "words": []
+      },
+      {
+        "id": 20,
+        "seek": 0,
+        "start": 19.14,
+        "end": 19.14,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.20722020756114612,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.04640033096075058,
+        "words": []
+      },
+      {
+        "id": 21,
+        "seek": 0,
+        "start": 19.14,
+        "end": 19.2,
+        "text": "先搶那个",
+        "tokens": [
+          51414,
+          10108,
+          22220,
+          114,
+          43083,
+          51464
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.20722020756114612,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.04640033096075058,
+        "words": [
+          {
+            "word": "先",
+            "start": 19.14,
+            "end": 19.14,
+            "probability": 0.9740350246429443
+          },
+          {
+            "word": "搶",
+            "start": 19.14,
+            "end": 19.2,
+            "probability": 0.9895969331264496
+          },
+          {
+            "word": "那个",
+            "start": 19.2,
+            "end": 19.2,
+            "probability": 0.9748057723045349
+          }
+        ]
+      },
+      {
+        "id": 22,
+        "seek": 0,
+        "start": 19.2,
+        "end": 19.22,
+        "text": "先搶那个",
+        "tokens": [
+          51464,
+          10108,
+          22220,
+          114,
+          43083,
+          51514
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.20722020756114612,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.04640033096075058,
+        "words": [
+          {
+            "word": "先",
+            "start": 19.2,
+            "end": 19.2,
+            "probability": 0.9764492511749268
+          },
+          {
+            "word": "搶",
+            "start": 19.2,
+            "end": 19.22,
+            "probability": 0.9907437264919281
+          },
+          {
+            "word": "那个",
+            "start": 19.22,
+            "end": 19.22,
+            "probability": 0.973924994468689
+          }
+        ]
+      },
+      {
+        "id": 23,
+        "seek": 0,
+        "start": 19.22,
+        "end": 19.22,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.20722020756114612,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.04640033096075058,
+        "words": []
+      },
+      {
+        "id": 24,
+        "seek": 0,
+        "start": 19.22,
+        "end": 21.26,
+        "text": "先搶那个",
+        "tokens": [
+          51564,
+          10108,
+          22220,
+          114,
+          43083,
+          51614
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.20722020756114612,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.04640033096075058,
+        "words": [
+          {
+            "word": "先",
+            "start": 19.22,
+            "end": 19.22,
+            "probability": 0.9758719801902771
+          },
+          {
+            "word": "搶",
+            "start": 19.22,
+            "end": 21.26,
+            "probability": 0.992067277431488
+          },
+          {
+            "word": "那个",
+            "start": 21.26,
+            "end": 21.26,
+            "probability": 0.9742158055305481
+          }
+        ]
+      },
+      {
+        "id": 25,
+        "seek": 0,
+        "start": 21.26,
+        "end": 21.26,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.20722020756114612,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.04640033096075058,
+        "words": []
+      },
+      {
+        "id": 26,
+        "seek": 0,
+        "start": 21.26,
+        "end": 21.28,
+        "text": "先搶那个",
+        "tokens": [
+          51664,
+          10108,
+          22220,
+          114,
+          43083,
+          51714
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.20722020756114612,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.04640033096075058,
+        "words": [
+          {
+            "word": "先",
+            "start": 21.26,
+            "end": 21.26,
+            "probability": 0.975475549697876
+          },
+          {
+            "word": "搶",
+            "start": 21.26,
+            "end": 21.28,
+            "probability": 0.9919289946556091
+          },
+          {
+            "word": "那个",
+            "start": 21.28,
+            "end": 21.28,
+            "probability": 0.9746466279029846
+          }
+        ]
+      },
+      {
+        "id": 27,
+        "seek": 0,
+        "start": 21.28,
+        "end": 21.28,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.20722020756114612,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.04640033096075058,
+        "words": []
+      },
+      {
+        "id": 28,
+        "seek": 0,
+        "start": 21.28,
+        "end": 29.98,
+        "text": "先搶那个",
+        "tokens": [
+          51764,
+          10108,
+          22220,
+          114,
+          43083,
+          51814
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.20722020756114612,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.04640033096075058,
+        "words": [
+          {
+            "word": "先",
+            "start": 21.28,
+            "end": 21.28,
+            "probability": 0.9717140197753906
+          },
+          {
+            "word": "搶",
+            "start": 21.28,
+            "end": 29.98,
+            "probability": 0.9941022992134094
+          },
+          {
+            "word": "那个",
+            "start": 29.98,
+            "end": 29.98,
+            "probability": 0.9732210636138916
+          }
+        ]
+      }
+    ],
+    "language": "zh"
+  }
+}

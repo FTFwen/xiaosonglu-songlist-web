@@ -1,0 +1,295 @@
+{
+  "audioSha256": "67342f6f9431dae16a41e66efef0ffd92642fcb23b874d38cdeb2b02ddf6bf03",
+  "model": "whisper-base",
+  "start": 0,
+  "end": 35,
+  "result": {
+    "text": "んんんんんんんん",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 0.0,
+        "end": 1.98,
+        "text": "ん",
+        "tokens": [
+          50364,
+          3225,
+          50464
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.5338961824457696,
+        "compression_ratio": 3.2142857142857144,
+        "no_speech_prob": 0.5307395458221436,
+        "words": [
+          {
+            "word": "ん",
+            "start": 0.0,
+            "end": 1.98,
+            "probability": 0.007715694606304169
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "seek": 0,
+        "start": 1.98,
+        "end": 1.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.5338961824457696,
+        "compression_ratio": 3.2142857142857144,
+        "no_speech_prob": 0.5307395458221436,
+        "words": []
+      },
+      {
+        "id": 2,
+        "seek": 0,
+        "start": 1.98,
+        "end": 1.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.5338961824457696,
+        "compression_ratio": 3.2142857142857144,
+        "no_speech_prob": 0.5307395458221436,
+        "words": []
+      },
+      {
+        "id": 3,
+        "seek": 0,
+        "start": 1.98,
+        "end": 1.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.5338961824457696,
+        "compression_ratio": 3.2142857142857144,
+        "no_speech_prob": 0.5307395458221436,
+        "words": []
+      },
+      {
+        "id": 4,
+        "seek": 0,
+        "start": 1.98,
+        "end": 2.0,
+        "text": "ん",
+        "tokens": [
+          50764,
+          3225,
+          50864
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.5338961824457696,
+        "compression_ratio": 3.2142857142857144,
+        "no_speech_prob": 0.5307395458221436,
+        "words": [
+          {
+            "word": "ん",
+            "start": 1.98,
+            "end": 2.0,
+            "probability": 0.704149067401886
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "seek": 0,
+        "start": 2.0,
+        "end": 3.32,
+        "text": "ん",
+        "tokens": [
+          50864,
+          3225,
+          50964
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.5338961824457696,
+        "compression_ratio": 3.2142857142857144,
+        "no_speech_prob": 0.5307395458221436,
+        "words": [
+          {
+            "word": "ん",
+            "start": 2.0,
+            "end": 3.32,
+            "probability": 0.7016313672065735
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "seek": 0,
+        "start": 3.32,
+        "end": 4.38,
+        "text": "ん",
+        "tokens": [
+          50964,
+          3225,
+          51064
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.5338961824457696,
+        "compression_ratio": 3.2142857142857144,
+        "no_speech_prob": 0.5307395458221436,
+        "words": [
+          {
+            "word": "ん",
+            "start": 3.32,
+            "end": 4.38,
+            "probability": 0.7253653407096863
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "seek": 0,
+        "start": 4.38,
+        "end": 4.38,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.5338961824457696,
+        "compression_ratio": 3.2142857142857144,
+        "no_speech_prob": 0.5307395458221436,
+        "words": []
+      },
+      {
+        "id": 8,
+        "seek": 0,
+        "start": 4.38,
+        "end": 5.16,
+        "text": "ん",
+        "tokens": [
+          51164,
+          3225,
+          51264
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.5338961824457696,
+        "compression_ratio": 3.2142857142857144,
+        "no_speech_prob": 0.5307395458221436,
+        "words": [
+          {
+            "word": "ん",
+            "start": 4.38,
+            "end": 5.16,
+            "probability": 0.7545000910758972
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "seek": 0,
+        "start": 5.16,
+        "end": 6.04,
+        "text": "ん",
+        "tokens": [
+          51264,
+          3225,
+          51364
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.5338961824457696,
+        "compression_ratio": 3.2142857142857144,
+        "no_speech_prob": 0.5307395458221436,
+        "words": [
+          {
+            "word": "ん",
+            "start": 5.16,
+            "end": 6.04,
+            "probability": 0.7690943479537964
+          }
+        ]
+      },
+      {
+        "id": 10,
+        "seek": 0,
+        "start": 6.04,
+        "end": 6.58,
+        "text": "ん",
+        "tokens": [
+          51364,
+          3225,
+          51464
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.5338961824457696,
+        "compression_ratio": 3.2142857142857144,
+        "no_speech_prob": 0.5307395458221436,
+        "words": [
+          {
+            "word": "ん",
+            "start": 6.04,
+            "end": 6.58,
+            "probability": 0.7991264462471008
+          }
+        ]
+      },
+      {
+        "id": 11,
+        "seek": 0,
+        "start": 6.58,
+        "end": 6.58,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.5338961824457696,
+        "compression_ratio": 3.2142857142857144,
+        "no_speech_prob": 0.5307395458221436,
+        "words": []
+      },
+      {
+        "id": 12,
+        "seek": 0,
+        "start": 6.58,
+        "end": 6.58,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.5338961824457696,
+        "compression_ratio": 3.2142857142857144,
+        "no_speech_prob": 0.5307395458221436,
+        "words": []
+      },
+      {
+        "id": 13,
+        "seek": 0,
+        "start": 6.58,
+        "end": 6.64,
+        "text": "ん",
+        "tokens": [
+          51664,
+          3225,
+          51764
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.5338961824457696,
+        "compression_ratio": 3.2142857142857144,
+        "no_speech_prob": 0.5307395458221436,
+        "words": [
+          {
+            "word": "ん",
+            "start": 6.58,
+            "end": 6.64,
+            "probability": 0.8476934432983398
+          }
+        ]
+      },
+      {
+        "id": 14,
+        "seek": 0,
+        "start": 6.64,
+        "end": 6.64,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.5338961824457696,
+        "compression_ratio": 3.2142857142857144,
+        "no_speech_prob": 0.5307395458221436,
+        "words": []
+      }
+    ],
+    "language": "ja"
+  }
+}

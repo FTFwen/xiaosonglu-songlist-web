@@ -1,0 +1,188 @@
+{
+  "schemaVersion": 1,
+  "key": "song-335",
+  "songId": 335,
+  "songName": "甲乙丙丁",
+  "rowKey": "甲乙丙丁",
+  "displaySongName": "甲乙丙丁",
+  "artist": "李佳薇",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "",
+  "audio": {
+    "url": "assets/audio/song_334.m4a?v=c9207e1dd995",
+    "sha256": "c9207e1dd995136f71f1fc52e822380db6a2748cca6902c9c474e3ffbd2d0103"
+  },
+  "retrievedAt": "2026-11-16T04:12:38.199Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E7%94%B2%E4%B9%99%E4%B8%99%E4%B8%81&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E7%94%B2%E4%B9%99%E4%B8%99%E4%B8%81%20%E6%9D%8E%E4%BD%B3%E8%96%87&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 189000,
+        "name": "甲乙丙丁",
+        "artists": [
+          "张学友",
+          "郑中基",
+          "许志安"
+        ],
+        "album": "不后悔",
+        "durationMs": 241373,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 191311,
+        "name": "甲乙丙丁",
+        "artists": [
+          "郑中基",
+          "张学友",
+          "许志安"
+        ],
+        "album": "正宗K 新曲+精选",
+        "durationMs": 244666,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 191636,
+        "name": "甲乙丙丁",
+        "artists": [
+          "郑中基",
+          "张学友",
+          "许志安"
+        ],
+        "album": "敌人",
+        "durationMs": 244666,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3399839173,
+        "name": "甲乙丙丁 (你我怎么两清)",
+        "artists": [
+          "李佳薇"
+        ],
+        "album": "甲乙丙丁",
+        "durationMs": 210461,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      },
+      {
+        "id": 3440203536,
+        "name": "甲乙丙丁 (合唱版)",
+        "artists": [
+          "李佳薇",
+          "张新成"
+        ],
+        "album": "甲乙丙丁 (合唱版)",
+        "durationMs": 210461,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      },
+      {
+        "id": 3426685199,
+        "name": "甲乙丙丁 (粤语版)",
+        "artists": [
+          "李佳薇"
+        ],
+        "album": "甲乙丙丁 (粤语版)",
+        "durationMs": 209538,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      },
+      {
+        "id": 3399839174,
+        "name": "甲乙丙丁 (你我怎么两清伴奏)",
+        "artists": [
+          "李佳薇"
+        ],
+        "album": "甲乙丙丁",
+        "durationMs": 210512,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      },
+      {
+        "id": 3426684232,
+        "name": "甲乙丙丁 (粤语版伴奏)",
+        "artists": [
+          "李佳薇"
+        ],
+        "album": "甲乙丙丁 (粤语版)",
+        "durationMs": 209538,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      }
+    ],
+    "workQuery": {
+      "song_id": 335,
+      "song_name": "甲乙丙丁",
+      "show_as_song_name": "",
+      "display_song_name": "甲乙丙丁",
+      "artist": "李佳薇",
+      "artist_search": "李佳薇",
+      "feat_artist": "",
+      "remark": "",
+      "tone": "",
+      "language": "中文",
+      "type": "流行",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1naxj62Epw/?p=1",
+      "sing_count": 2,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-11-08",
+      "row_key": "甲乙丙丁"
+    },
+    "sourceId": 3399839173,
+    "sourcePath": "sources/3399839173.json",
+    "sourceUrl": "https://music.163.com/#/song?id=3399839173",
+    "selected": {
+      "id": 3399839173,
+      "name": "甲乙丙丁 (你我怎么两清)",
+      "artists": [
+        "李佳薇"
+      ],
+      "album": "甲乙丙丁",
+      "durationMs": 210461,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 62,
+    "review": {
+      "reason": "Existing search candidates identify 李佳薇 甲乙丙丁 (你我怎么两清), matching catalog artist; current 张学友 / 郑中基 / 许志安 song is unrelated. Live lyric API returns 70 timestamped rows, credits 应晓璃@SoundJoin词曲. Recording alignment remains unverified.",
+      "evidenceUrl": "https://music.163.com/song?id=3399839173",
+      "previousSourceId": 189000
+    }
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-335-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 209.429,
+    "sourceFirstLine": {
+      "t": 5,
+      "text": "Bass : 苏虹文"
+    },
+    "anchorCandidate": null,
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

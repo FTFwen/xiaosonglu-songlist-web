@@ -1,0 +1,267 @@
+{
+  "audioSha256": "b60324175f6ddd2ee9b21c7fa88a2233515e2900b2dbe99c04188b0d259bf360",
+  "model": "whisper-base",
+  "start": 0,
+  "end": 49.492999999999995,
+  "result": {
+    "text": "我会不会有这种感觉",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 28.580000000000002,
+        "end": 29.98,
+        "text": "我会不会有这种感觉",
+        "tokens": [
+          50364,
+          1654,
+          12949,
+          47928,
+          2412,
+          5562,
+          39810,
+          9709,
+          24447,
+          50464
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.28593198876631887,
+        "compression_ratio": 9.878048780487806,
+        "no_speech_prob": 0.6037000417709351,
+        "words": [
+          {
+            "word": "我",
+            "start": 28.580000000000002,
+            "end": 29.98,
+            "probability": 0.01666605845093727
+          },
+          {
+            "word": "会",
+            "start": 29.98,
+            "end": 29.98,
+            "probability": 0.017813093960285187
+          },
+          {
+            "word": "不会",
+            "start": 29.98,
+            "end": 29.98,
+            "probability": 0.05301963910460472
+          },
+          {
+            "word": "有",
+            "start": 29.98,
+            "end": 29.98,
+            "probability": 0.030716776847839355
+          },
+          {
+            "word": "这",
+            "start": 29.98,
+            "end": 29.98,
+            "probability": 0.03052600659430027
+          },
+          {
+            "word": "种",
+            "start": 29.98,
+            "end": 29.98,
+            "probability": 0.3368043601512909
+          },
+          {
+            "word": "感",
+            "start": 29.98,
+            "end": 29.98,
+            "probability": 0.05377830192446709
+          },
+          {
+            "word": "觉",
+            "start": 29.98,
+            "end": 29.98,
+            "probability": 0.46996691823005676
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "seek": 0,
+        "start": 29.98,
+        "end": 29.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.28593198876631887,
+        "compression_ratio": 9.878048780487806,
+        "no_speech_prob": 0.6037000417709351,
+        "words": []
+      },
+      {
+        "id": 2,
+        "seek": 0,
+        "start": 29.98,
+        "end": 29.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.28593198876631887,
+        "compression_ratio": 9.878048780487806,
+        "no_speech_prob": 0.6037000417709351,
+        "words": []
+      },
+      {
+        "id": 3,
+        "seek": 0,
+        "start": 29.98,
+        "end": 29.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.28593198876631887,
+        "compression_ratio": 9.878048780487806,
+        "no_speech_prob": 0.6037000417709351,
+        "words": []
+      },
+      {
+        "id": 4,
+        "seek": 0,
+        "start": 29.98,
+        "end": 29.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.28593198876631887,
+        "compression_ratio": 9.878048780487806,
+        "no_speech_prob": 0.6037000417709351,
+        "words": []
+      },
+      {
+        "id": 5,
+        "seek": 0,
+        "start": 29.98,
+        "end": 29.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.28593198876631887,
+        "compression_ratio": 9.878048780487806,
+        "no_speech_prob": 0.6037000417709351,
+        "words": []
+      },
+      {
+        "id": 6,
+        "seek": 0,
+        "start": 29.98,
+        "end": 29.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.28593198876631887,
+        "compression_ratio": 9.878048780487806,
+        "no_speech_prob": 0.6037000417709351,
+        "words": []
+      },
+      {
+        "id": 7,
+        "seek": 0,
+        "start": 29.98,
+        "end": 29.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.28593198876631887,
+        "compression_ratio": 9.878048780487806,
+        "no_speech_prob": 0.6037000417709351,
+        "words": []
+      },
+      {
+        "id": 8,
+        "seek": 0,
+        "start": 29.98,
+        "end": 29.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.28593198876631887,
+        "compression_ratio": 9.878048780487806,
+        "no_speech_prob": 0.6037000417709351,
+        "words": []
+      },
+      {
+        "id": 9,
+        "seek": 0,
+        "start": 29.98,
+        "end": 29.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.28593198876631887,
+        "compression_ratio": 9.878048780487806,
+        "no_speech_prob": 0.6037000417709351,
+        "words": []
+      },
+      {
+        "id": 10,
+        "seek": 0,
+        "start": 29.98,
+        "end": 29.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.28593198876631887,
+        "compression_ratio": 9.878048780487806,
+        "no_speech_prob": 0.6037000417709351,
+        "words": []
+      },
+      {
+        "id": 11,
+        "seek": 0,
+        "start": 29.98,
+        "end": 29.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.28593198876631887,
+        "compression_ratio": 9.878048780487806,
+        "no_speech_prob": 0.6037000417709351,
+        "words": []
+      },
+      {
+        "id": 12,
+        "seek": 0,
+        "start": 29.98,
+        "end": 29.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.28593198876631887,
+        "compression_ratio": 9.878048780487806,
+        "no_speech_prob": 0.6037000417709351,
+        "words": []
+      },
+      {
+        "id": 13,
+        "seek": 0,
+        "start": 29.98,
+        "end": 29.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.28593198876631887,
+        "compression_ratio": 9.878048780487806,
+        "no_speech_prob": 0.6037000417709351,
+        "words": []
+      },
+      {
+        "id": 14,
+        "seek": 0,
+        "start": 29.98,
+        "end": 29.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.28593198876631887,
+        "compression_ratio": 9.878048780487806,
+        "no_speech_prob": 0.6037000417709351,
+        "words": []
+      }
+    ],
+    "language": "zh"
+  }
+}

@@ -1,0 +1,165 @@
+{
+  "schemaVersion": 1,
+  "key": "song-34",
+  "songId": 34,
+  "songName": "白鸟过河滩",
+  "displaySongName": "白鸟过河滩",
+  "artist": "ilem / 洛天依Official",
+  "language": "中文",
+  "derivative": false,
+  "audio": {
+    "url": "assets/audio/song_07.m4a?v=9da03ac3ca81",
+    "sha256": "9da03ac3ca816fce3507d57af2d5e8c053a714db209cc0d288fdcde2c2a3f102"
+  },
+  "retrievedAt": "2026-11-16T03:57:58.599Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E7%99%BD%E9%B8%9F%E8%BF%87%E6%B2%B3%E6%BB%A9&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 3392512962,
+        "name": "白鸟过河滩",
+        "artists": [
+          "ilem",
+          "洛天依Official"
+        ],
+        "album": "ilem2019-2023年作品合集",
+        "durationMs": 216189,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2115520005,
+        "name": "白鸟过河滩",
+        "artists": [
+          "ilem"
+        ],
+        "album": "白鸟过河滩",
+        "durationMs": 216224,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2744457638,
+        "name": "白鸟过河滩",
+        "artists": [
+          "SURPRISEDFD",
+          "洛天依"
+        ],
+        "album": "惊讶Pの翻调",
+        "durationMs": 216108,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2016320723,
+        "name": "白鸟过河滩",
+        "artists": [
+          "透明P",
+          "洛天依"
+        ],
+        "album": "破自行车",
+        "durationMs": 218113,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2043453615,
+        "name": "白鸟过河滩",
+        "artists": [
+          "三无Marblue"
+        ],
+        "album": "白鸟过河滩",
+        "durationMs": 216526,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1956596116,
+        "name": "白鸟过河滩",
+        "artists": [
+          "VIOMEAT"
+        ],
+        "album": "白鸟过河滩",
+        "durationMs": 218000,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1951494490,
+        "name": "白鸟过河滩",
+        "artists": [
+          "西瓜Kune"
+        ],
+        "album": "白鸟过河滩 / 老鼠窜沟渠",
+        "durationMs": 216137,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1945387370,
+        "name": "白鸟过河滩",
+        "artists": [
+          "妥妥"
+        ],
+        "album": "2022杂七杂八的唱",
+        "durationMs": 215078,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "sourceId": 3392512962,
+    "sourcePath": "sources/3392512962.json",
+    "sourceUrl": "https://music.163.com/#/song?id=3392512962",
+    "selected": {
+      "id": 3392512962,
+      "name": "白鸟过河滩",
+      "artists": [
+        "ilem",
+        "洛天依Official"
+      ],
+      "album": "ilem2019-2023年作品合集",
+      "durationMs": 216189,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 42
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-34-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 212.075,
+    "sourceFirstLine": {
+      "t": 19.65,
+      "text": "风把我不想知道的事情告诉我"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 36.54,
+      "endSeconds": 37.04,
+      "similarity": 0.26666666666666666,
+      "recognizedText": "我的",
+      "meanProbability": 0.948,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  },
+  "rowKey": "白鸟过河滩",
+  "edition": "",
+  "remark": "根据 00:15 附近音频切片的歌词片段联网检索，命中 ilem《白鸟过河滩》。该段前后有设备问题和谢礼物插话，时间为近似切段。"
+}

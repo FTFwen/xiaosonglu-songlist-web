@@ -1,0 +1,166 @@
+{
+  "schemaVersion": 1,
+  "key": "song-27",
+  "songId": 27,
+  "songName": "下等马",
+  "displaySongName": "下等马",
+  "artist": "ChiliChill乐团 / 洛天依Official",
+  "language": "中文",
+  "derivative": false,
+  "audio": {
+    "url": "assets/audio/song_64.m4a?v=76685d4492c6",
+    "sha256": "76685d4492c61418c951eef0571982bde11793cbf6ae0a8619f5705183ffe41e"
+  },
+  "retrievedAt": "2026-11-16T03:57:36.287Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E4%B8%8B%E7%AD%89%E9%A9%AC&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 2709782550,
+        "name": "下等马",
+        "artists": [
+          "洛天依Official",
+          "ChiliChill乐团"
+        ],
+        "album": "闪耀",
+        "durationMs": 186944,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2709782062,
+        "name": "下等马",
+        "artists": [
+          "ChiliChill乐团"
+        ],
+        "album": "下等马",
+        "durationMs": 186944,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2715271724,
+        "name": "下等马",
+        "artists": [
+          "祖娅纳惜"
+        ],
+        "album": "下等马",
+        "durationMs": 177423,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2737441544,
+        "name": "下等马",
+        "artists": [
+          "阿久_Aku"
+        ],
+        "album": "下等马",
+        "durationMs": 187684,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2712228734,
+        "name": "下等马",
+        "artists": [
+          "封茗囧菌"
+        ],
+        "album": "下等马",
+        "durationMs": 189086,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2718775074,
+        "name": "下等马",
+        "artists": [
+          "Akie秋绘"
+        ],
+        "album": "下等马",
+        "durationMs": 187679,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2727515580,
+        "name": "下等马",
+        "artists": [
+          "西瓜Kune"
+        ],
+        "album": "下等马",
+        "durationMs": 187115,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3453848285,
+        "name": "下等马",
+        "artists": [
+          "流光Hesh",
+          "萧清明",
+          "阿黎Yuri",
+          "鲜榨西爪"
+        ],
+        "album": "各唱各的（四重象限）",
+        "durationMs": 187964,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "sourceId": 2709782550,
+    "sourcePath": "sources/2709782550.json",
+    "sourceUrl": "https://music.163.com/#/song?id=2709782550",
+    "selected": {
+      "id": 2709782550,
+      "name": "下等马",
+      "artists": [
+        "洛天依Official",
+        "ChiliChill乐团"
+      ],
+      "album": "闪耀",
+      "durationMs": 186944,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 63
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-27-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 193.237,
+    "sourceFirstLine": {
+      "t": 19.286,
+      "text": "头抬起来"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 24.78,
+      "endSeconds": 26.24,
+      "similarity": 0.0,
+      "recognizedText": "【 詞",
+      "meanProbability": 0.22,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  },
+  "rowKey": "下等马",
+  "edition": "",
+  "remark": "视频标题直接给出真实歌曲名；日期未在简介中直写，但该条与 BV1znuz6eED5《单相思》、BV1etuz6fEaa《白鸟过河滩》同属 2026-08-11 歌切候选网络，按当前 song-cut-first 流程先以 2026-08-11 manual-normalized 收录。"
+}

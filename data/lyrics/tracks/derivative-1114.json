@@ -1,0 +1,171 @@
+{
+  "schemaVersion": 1,
+  "key": "derivative-1114",
+  "songId": -1114,
+  "songName": "小松绿-茉莉雨",
+  "rowKey": "小松绿-茉莉雨",
+  "displaySongName": "茉莉雨",
+  "artist": "白烁",
+  "language": "",
+  "derivative": true,
+  "edition": "",
+  "remark": "",
+  "audio": {
+    "url": "assets/derivative/moli-yu.mp3?v=905eb3aabe7b",
+    "sha256": "905eb3aabe7b97f97e8c09a0c9a6eb6ffb443853b1405bfb820f8fd32edd84a8"
+  },
+  "retrievedAt": "2026-11-16T04:08:47.995Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E8%8C%89%E8%8E%89%E9%9B%A8&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E8%8C%89%E8%8E%89%E9%9B%A8%20%E6%9E%97%E4%BF%8A%E6%9D%B0&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1366053680,
+        "name": "茉莉雨",
+        "artists": [
+          "林俊杰"
+        ],
+        "album": "新地球",
+        "durationMs": 256546,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 29850681,
+        "name": "茉莉雨",
+        "artists": [
+          "林俊杰"
+        ],
+        "album": "新地球 - 人 (Special Edition)",
+        "durationMs": 256546,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2119464325,
+        "name": "茉莉雨",
+        "artists": [
+          "PHASELESS"
+        ],
+        "album": "耿",
+        "durationMs": 256968,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2117088097,
+        "name": "茉莉雨",
+        "artists": [
+          "橘子听海"
+        ],
+        "album": "爱雨",
+        "durationMs": 236006,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3362487903,
+        "name": "茉莉雨",
+        "artists": [
+          "橘子来吖"
+        ],
+        "album": "茉莉雨",
+        "durationMs": 242416,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2748182056,
+        "name": "茉莉雨",
+        "artists": [
+          "Natsu团长"
+        ],
+        "album": "茉莉雨",
+        "durationMs": 256546,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2039095324,
+        "name": "茉莉雨",
+        "artists": [
+          "球形海豹"
+        ],
+        "album": "翻唱",
+        "durationMs": 262610,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2000887365,
+        "name": "茉莉雨",
+        "artists": [
+          "Fan_lz"
+        ],
+        "album": "夜深人静时",
+        "durationMs": 256705,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": -1114,
+      "song_name": "茉莉雨",
+      "display_song_name": "茉莉雨",
+      "artist": "林俊杰",
+      "language": "",
+      "audio": "assets/derivative/moli-yu.mp3?v=905eb3aabe7b",
+      "derivative": true
+    },
+    "sourceId": 1366053680,
+    "sourcePath": "sources/1366053680.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1366053680",
+    "selected": {
+      "id": 1366053680,
+      "name": "茉莉雨",
+      "artists": [
+        "林俊杰"
+      ],
+      "album": "新地球",
+      "durationMs": 256546,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 43
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/derivative-1114-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 82.966,
+    "sourceFirstLine": {
+      "t": 21.95,
+      "text": "垂柳斜向茉莉 雨"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 8.62,
+      "endSeconds": 9.86,
+      "similarity": 0.25,
+      "recognizedText": "雨",
+      "meanProbability": 0.299,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

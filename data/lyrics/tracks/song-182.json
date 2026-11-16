@@ -1,0 +1,161 @@
+{
+  "schemaVersion": 1,
+  "key": "song-182",
+  "songId": 182,
+  "songName": "老人と海",
+  "displaySongName": "老人と海",
+  "artist": "ヨルシカ",
+  "language": "日文",
+  "derivative": false,
+  "audio": {
+    "url": "assets/audio/song_181.m4a?v=2184a412bca0",
+    "sha256": "2184a412bca0d69114adf2f68a89ca1ceabf1ac8c00cf2a2d1736e8670e11116"
+  },
+  "retrievedAt": "2026-11-16T03:58:55.677Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E8%80%81%E4%BA%BA%E3%81%A8%E6%B5%B7&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1870469768,
+        "name": "老人と海",
+        "artists": [
+          "ヨルシカ"
+        ],
+        "album": "老人と海",
+        "durationMs": 255468,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2074023563,
+        "name": "老人と海",
+        "artists": [
+          "ヨルシカ"
+        ],
+        "album": "City Pop Mix 2023",
+        "durationMs": 255468,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 3400022207,
+        "name": "老人と海",
+        "artists": [
+          "ヨルシカ"
+        ],
+        "album": "幻燈",
+        "durationMs": 255312,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2097484853,
+        "name": "老人と海",
+        "artists": [
+          "ヨルシカ"
+        ],
+        "album": "J-POP Viral Hits 2023 in China",
+        "durationMs": 255468,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1356026456,
+        "name": "老人と海",
+        "artists": [
+          "THE MOVIELAND ORCHESTRA"
+        ],
+        "album": "オーケストラによる映画音楽大全集 〜想い出の映画・テーマ曲〜",
+        "durationMs": 165720,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2626073259,
+        "name": "老人と海",
+        "artists": [
+          "榛葉nami"
+        ],
+        "album": "老人と海",
+        "durationMs": 258000,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2112843978,
+        "name": "老人と海（jasonss Bootleg Remix）",
+        "artists": [
+          "JM."
+        ],
+        "album": "老人と海",
+        "durationMs": 186663,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 3382015509,
+        "name": "老人と海（老人与海）",
+        "artists": [
+          "八時八分"
+        ],
+        "album": "老人と海",
+        "durationMs": 255637,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      }
+    ],
+    "sourceId": 1870469768,
+    "sourcePath": "sources/1870469768.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1870469768",
+    "selected": {
+      "id": 1870469768,
+      "name": "老人と海",
+      "artists": [
+        "ヨルシカ"
+      ],
+      "album": "老人と海",
+      "durationMs": 255468,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 34
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-182-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 155.157,
+    "sourceFirstLine": {
+      "t": 14.14,
+      "text": "靴紐が解けてる 木漏れ日は足を舐む"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 23.86,
+      "endSeconds": 24.62,
+      "similarity": 0.21052631578947367,
+      "recognizedText": "がある。",
+      "meanProbability": 0.669,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "ja",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  },
+  "rowKey": "老人と海",
+  "edition": "",
+  "remark": "弹幕 02:15 点歌「有没有ヨルシカ」后连续演唱的三首ヨルシカ曲目之一"
+}

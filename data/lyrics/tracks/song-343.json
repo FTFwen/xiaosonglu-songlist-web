@@ -1,0 +1,189 @@
+{
+  "schemaVersion": 1,
+  "key": "song-343",
+  "songId": 343,
+  "songName": "Ditto",
+  "rowKey": "Ditto",
+  "displaySongName": "Ditto",
+  "artist": "NewJeans",
+  "language": "韩文",
+  "derivative": false,
+  "edition": "",
+  "remark": "",
+  "audio": {
+    "url": "assets/audio/song_342.m4a?v=67c6821f8634",
+    "sha256": "67c6821f863408f4a941f7923687362285c4b4deddd1ce34ba0444df78127684"
+  },
+  "retrievedAt": "2026-11-16T04:07:24.338Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=Ditto&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=Ditto%20NewJeans&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 2758025627,
+        "name": "Ditto",
+        "artists": [
+          "NewJeans",
+          "DanielleMarsh"
+        ],
+        "album": "NewJeans",
+        "durationMs": 185572,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2032606821,
+        "name": "Ditto",
+        "artists": [
+          "裴梨"
+        ],
+        "album": "Ditto",
+        "durationMs": 186716,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2017945760,
+        "name": "Ditto",
+        "artists": [
+          "江陵",
+          "Femaleslag翻唱团",
+          "樱黎",
+          "Liii_Yan.",
+          "INS"
+        ],
+        "album": "Ditto",
+        "durationMs": 185653,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1346961405,
+        "name": "Ｄｉｔｔｏ.",
+        "artists": [
+          "go missing"
+        ],
+        "album": "i really love u",
+        "durationMs": 150937,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2059374421,
+        "name": "Ditto",
+        "artists": [
+          "DooPiano"
+        ],
+        "album": "Ditto",
+        "durationMs": 211464,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2663570938,
+        "name": "Ditto",
+        "artists": [
+          "Will Stetson"
+        ],
+        "album": "lost (Deleted)",
+        "durationMs": 188352,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3373501035,
+        "name": "Ditto",
+        "artists": [
+          "DanielleMarsh"
+        ],
+        "album": "NewJeans",
+        "durationMs": 105184,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3390147278,
+        "name": "Ditto",
+        "artists": [
+          "CBA"
+        ],
+        "album": "Ditto",
+        "durationMs": 166000,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 343,
+      "song_name": "Ditto",
+      "show_as_song_name": "",
+      "display_song_name": "Ditto",
+      "artist": "NewJeans",
+      "artist_search": "NewJeans",
+      "feat_artist": "",
+      "remark": "",
+      "tone": "",
+      "language": "韩文",
+      "type": "流行",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1naxj62Epw/?p=13",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-27",
+      "row_key": "Ditto"
+    },
+    "sourceId": 2758025627,
+    "sourcePath": "sources/2758025627.json",
+    "sourceUrl": "https://music.163.com/#/song?id=2758025627",
+    "selected": {
+      "id": 2758025627,
+      "name": "Ditto",
+      "artists": [
+        "NewJeans",
+        "DanielleMarsh"
+      ],
+      "album": "NewJeans",
+      "durationMs": 185572,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 70
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-343-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 189.888,
+    "sourceFirstLine": {
+      "t": 0.1,
+      "text": "Ditto - NewJeans (뉴진스)"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 23.44,
+      "endSeconds": 23.88,
+      "similarity": 0.0,
+      "recognizedText": "我",
+      "meanProbability": 0.668,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

@@ -1,0 +1,185 @@
+{
+  "schemaVersion": 1,
+  "key": "song-273",
+  "songId": 273,
+  "songName": "夏之回忆",
+  "rowKey": "夏之回忆",
+  "displaySongName": "夏之回忆",
+  "artist": "李艺彤",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "",
+  "audio": {
+    "url": "assets/audio/song_272.m4a?v=bffbfed5004e",
+    "sha256": "bffbfed5004edca62c51a34c89f6d021ff0e4d99ee630959c5ef4853bb42de51"
+  },
+  "retrievedAt": "2026-11-16T04:06:06.478Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E5%A4%8F%E4%B9%8B%E5%9B%9E%E5%BF%86&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E5%A4%8F%E4%B9%8B%E5%9B%9E%E5%BF%86%20%E6%9D%8E%E8%89%BA%E5%BD%A4&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1406257924,
+        "name": "夏之回忆",
+        "artists": [
+          "李艺彤"
+        ],
+        "album": "下次旅行",
+        "durationMs": 232618,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1962216782,
+        "name": "夏之回忆",
+        "artists": [
+          "Alice Perry"
+        ],
+        "album": "图书馆背景音乐 阅读音乐 专注学习音乐",
+        "durationMs": 106000,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1409357935,
+        "name": "夏之回忆",
+        "artists": [
+          "一颗飘"
+        ],
+        "album": "夏之回忆",
+        "durationMs": 232097,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3450610212,
+        "name": "夏之回忆",
+        "artists": [
+          "一张大白饼",
+          "RUN48",
+          "姗姗"
+        ],
+        "album": "一张白饼翻唱集",
+        "durationMs": 232479,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2142401795,
+        "name": "夏之回忆",
+        "artists": [
+          "sl_ng"
+        ],
+        "album": "塞纳河钢琴COVER",
+        "durationMs": 179164,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3360289836,
+        "name": "夏之回忆",
+        "artists": [
+          "钟予芊"
+        ],
+        "album": "爱过一场空",
+        "durationMs": 161999,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1406266172,
+        "name": "夏之回忆 (伴奏)",
+        "artists": [
+          "李艺彤"
+        ],
+        "album": "下次旅行",
+        "durationMs": 232618,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      },
+      {
+        "id": 3354902602,
+        "name": "夏之回忆(柏朱金曲版)",
+        "artists": [
+          "blazoned_k"
+        ],
+        "album": "snowfield",
+        "durationMs": 222333,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      }
+    ],
+    "workQuery": {
+      "song_id": 273,
+      "song_name": "夏之回忆",
+      "show_as_song_name": "",
+      "display_song_name": "夏之回忆",
+      "artist": "李艺彤",
+      "artist_search": "李艺彤",
+      "feat_artist": "",
+      "remark": "",
+      "tone": "",
+      "language": "中文",
+      "type": "SNH48、偶像",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV18Jpw6mE82/?p=6",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-06",
+      "row_key": "夏之回忆"
+    },
+    "sourceId": 1406257924,
+    "sourcePath": "sources/1406257924.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1406257924",
+    "selected": {
+      "id": 1406257924,
+      "name": "夏之回忆",
+      "artists": [
+        "李艺彤"
+      ],
+      "album": "下次旅行",
+      "durationMs": 232618,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 55
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-273-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 231.936,
+    "sourceFirstLine": {
+      "t": 14.613,
+      "text": "八月的风在低吟"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 9.74,
+      "endSeconds": 9.88,
+      "similarity": 0.25,
+      "recognizedText": "的",
+      "meanProbability": 0.383,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

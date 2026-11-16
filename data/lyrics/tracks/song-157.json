@@ -1,0 +1,195 @@
+{
+  "schemaVersion": 1,
+  "key": "song-157",
+  "songId": 157,
+  "songName": "中华铄金娘",
+  "rowKey": "中华铄金娘",
+  "displaySongName": "中华铄金娘",
+  "artist": "洛天依Official、Soda纯白",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "桐人合集第18与第22章同名后重新核对；第22章才是《中华铄金娘》，不属于同日复唱",
+  "audio": {
+    "url": "assets/audio/song_167.m4a?v=384bfce6d87d",
+    "sha256": "384bfce6d87d78175178c09f13ee5e70d8c8618911e313bbed5601567bf611b0"
+  },
+  "retrievedAt": "2026-11-16T04:04:17.573Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E4%B8%AD%E5%8D%8E%E9%93%84%E9%87%91%E5%A8%98&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E4%B8%AD%E5%8D%8E%E9%93%84%E9%87%91%E5%A8%98%20%E6%B4%9B%E5%A4%A9%E4%BE%9DOfficial&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 420401134,
+        "name": "中华铄金娘",
+        "artists": [
+          "洛天依Official",
+          "Soda纯白"
+        ],
+        "album": "中华少女Project (Deluxe Edition)",
+        "durationMs": 309666,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 435307041,
+        "name": "中华铄金娘",
+        "artists": [
+          "雨期"
+        ],
+        "album": "中华铄金娘",
+        "durationMs": 297639,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2153223828,
+        "name": "中华铄金娘",
+        "artists": [
+          "邶葵Nasaki"
+        ],
+        "album": "中华少女Project",
+        "durationMs": 293112,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1420491303,
+        "name": "中华铄金娘",
+        "artists": [
+          "十三酱吖",
+          "白露未晞合唱组"
+        ],
+        "album": "和白露未晞的那些故事",
+        "durationMs": 297717,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1317945107,
+        "name": "中华铄金娘",
+        "artists": [
+          "Evelyn-艺惟",
+          "竹庭"
+        ],
+        "album": "中华铄金娘",
+        "durationMs": 302525,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1321406138,
+        "name": "中华铄金娘",
+        "artists": [
+          "霜酒",
+          "阿阮",
+          "菀颜",
+          "佛系少女浅浅瞳",
+          "苏怿安",
+          "鹿七七Ashley",
+          "厝君",
+          "念安"
+        ],
+        "album": "中华铄金娘",
+        "durationMs": 298971,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1448537495,
+        "name": "中华铄金娘",
+        "artists": [
+          "夜九凰"
+        ],
+        "album": "中华铄金娘",
+        "durationMs": 296166,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2617663709,
+        "name": "中华铄金娘·改",
+        "artists": [
+          "Soda纯白",
+          "洛天依"
+        ],
+        "album": "中华少女·改",
+        "durationMs": 309099,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      }
+    ],
+    "workQuery": {
+      "song_id": 157,
+      "song_name": "中华铄金娘",
+      "show_as_song_name": "",
+      "display_song_name": "中华铄金娘",
+      "artist": "洛天依Official、Soda纯白",
+      "artist_search": "洛天依Official、Soda纯白",
+      "feat_artist": "",
+      "remark": "桐人合集第18与第22章同名后重新核对；第22章才是《中华铄金娘》，不属于同日复唱",
+      "tone": "",
+      "language": "中文",
+      "type": "中V",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1ceYE6BEPo/",
+      "sing_count": 1,
+      "status_labels": "歌回、独立歌切复核",
+      "last_sing_at": "2026-09-08",
+      "row_key": "中华铄金娘"
+    },
+    "sourceId": 420401134,
+    "sourcePath": "sources/420401134.json",
+    "sourceUrl": "https://music.163.com/#/song?id=420401134",
+    "selected": {
+      "id": 420401134,
+      "name": "中华铄金娘",
+      "artists": [
+        "洛天依Official",
+        "Soda纯白"
+      ],
+      "album": "中华少女Project (Deluxe Edition)",
+      "durationMs": 309666,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 64
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-157-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 293.918,
+    "sourceFirstLine": {
+      "t": 60.77,
+      "text": "踟躇而过路边街头"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 2.5,
+      "endSeconds": 3.7,
+      "similarity": 0.0,
+      "recognizedText": "我",
+      "meanProbability": 0.053,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

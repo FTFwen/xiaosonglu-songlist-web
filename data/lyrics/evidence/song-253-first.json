@@ -1,0 +1,609 @@
+{
+  "audioSha256": "8bb68dea9b3eefd0d132acd2547dcc67edc01138534f8a637339f81f1563d439",
+  "model": "whisper-base",
+  "start": 0,
+  "end": 39.75,
+  "result": {
+    "text": " I'm going to go to the bathroom. I'm going to go to the bathroom. I'm going to go to the bathroom. I'm going to go to the bathroom. But it's a beautiful night The sky is so high The sky is so deep You and I",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 21.66,
+        "end": 23.94,
+        "text": " I'm going to go to the bathroom.",
+        "tokens": [
+          50364,
+          286,
+          478,
+          516,
+          281,
+          352,
+          281,
+          264,
+          8687,
+          13,
+          50464
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.24902832813752004,
+        "compression_ratio": 10.720930232558139,
+        "no_speech_prob": 0.5244216322898865,
+        "words": [
+          {
+            "word": " I'm",
+            "start": 21.66,
+            "end": 22.3,
+            "probability": 0.11653070710599422
+          },
+          {
+            "word": " going",
+            "start": 22.3,
+            "end": 22.94,
+            "probability": 0.09928512573242188
+          },
+          {
+            "word": " to",
+            "start": 22.94,
+            "end": 23.24,
+            "probability": 0.8512815237045288
+          },
+          {
+            "word": " go",
+            "start": 23.24,
+            "end": 23.94,
+            "probability": 0.07113379240036011
+          },
+          {
+            "word": " to",
+            "start": 23.94,
+            "end": 23.94,
+            "probability": 0.14331211149692535
+          },
+          {
+            "word": " the",
+            "start": 23.94,
+            "end": 23.94,
+            "probability": 0.30556342005729675
+          },
+          {
+            "word": " bathroom.",
+            "start": 23.94,
+            "end": 23.94,
+            "probability": 0.07575603574514389
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "seek": 0,
+        "start": 23.94,
+        "end": 23.94,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.24902832813752004,
+        "compression_ratio": 10.720930232558139,
+        "no_speech_prob": 0.5244216322898865,
+        "words": []
+      },
+      {
+        "id": 2,
+        "seek": 0,
+        "start": 23.94,
+        "end": 23.94,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.24902832813752004,
+        "compression_ratio": 10.720930232558139,
+        "no_speech_prob": 0.5244216322898865,
+        "words": []
+      },
+      {
+        "id": 3,
+        "seek": 0,
+        "start": 23.94,
+        "end": 23.94,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.24902832813752004,
+        "compression_ratio": 10.720930232558139,
+        "no_speech_prob": 0.5244216322898865,
+        "words": []
+      },
+      {
+        "id": 4,
+        "seek": 0,
+        "start": 23.94,
+        "end": 23.94,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.24902832813752004,
+        "compression_ratio": 10.720930232558139,
+        "no_speech_prob": 0.5244216322898865,
+        "words": []
+      },
+      {
+        "id": 5,
+        "seek": 0,
+        "start": 23.94,
+        "end": 23.94,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.24902832813752004,
+        "compression_ratio": 10.720930232558139,
+        "no_speech_prob": 0.5244216322898865,
+        "words": []
+      },
+      {
+        "id": 6,
+        "seek": 0,
+        "start": 23.94,
+        "end": 23.94,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.24902832813752004,
+        "compression_ratio": 10.720930232558139,
+        "no_speech_prob": 0.5244216322898865,
+        "words": []
+      },
+      {
+        "id": 7,
+        "seek": 0,
+        "start": 23.94,
+        "end": 23.94,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.24902832813752004,
+        "compression_ratio": 10.720930232558139,
+        "no_speech_prob": 0.5244216322898865,
+        "words": []
+      },
+      {
+        "id": 8,
+        "seek": 0,
+        "start": 23.94,
+        "end": 23.94,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.24902832813752004,
+        "compression_ratio": 10.720930232558139,
+        "no_speech_prob": 0.5244216322898865,
+        "words": []
+      },
+      {
+        "id": 9,
+        "seek": 0,
+        "start": 23.94,
+        "end": 23.94,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.24902832813752004,
+        "compression_ratio": 10.720930232558139,
+        "no_speech_prob": 0.5244216322898865,
+        "words": []
+      },
+      {
+        "id": 10,
+        "seek": 0,
+        "start": 23.94,
+        "end": 23.94,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.24902832813752004,
+        "compression_ratio": 10.720930232558139,
+        "no_speech_prob": 0.5244216322898865,
+        "words": []
+      },
+      {
+        "id": 11,
+        "seek": 0,
+        "start": 23.94,
+        "end": 24.14,
+        "text": " I'm going to go to the bathroom.",
+        "tokens": [
+          51464,
+          286,
+          478,
+          516,
+          281,
+          352,
+          281,
+          264,
+          8687,
+          13,
+          51564
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.24902832813752004,
+        "compression_ratio": 10.720930232558139,
+        "no_speech_prob": 0.5244216322898865,
+        "words": [
+          {
+            "word": " I'm",
+            "start": 23.94,
+            "end": 23.94,
+            "probability": 0.9121330380439758
+          },
+          {
+            "word": " going",
+            "start": 23.94,
+            "end": 23.94,
+            "probability": 0.9857017993927002
+          },
+          {
+            "word": " to",
+            "start": 23.94,
+            "end": 23.94,
+            "probability": 0.9902613759040833
+          },
+          {
+            "word": " go",
+            "start": 23.94,
+            "end": 23.94,
+            "probability": 0.8907683491706848
+          },
+          {
+            "word": " to",
+            "start": 23.94,
+            "end": 23.94,
+            "probability": 0.9329033493995667
+          },
+          {
+            "word": " the",
+            "start": 23.94,
+            "end": 24.06,
+            "probability": 0.9821972846984863
+          },
+          {
+            "word": " bathroom.",
+            "start": 24.06,
+            "end": 24.14,
+            "probability": 0.9545800685882568
+          }
+        ]
+      },
+      {
+        "id": 12,
+        "seek": 0,
+        "start": 24.86,
+        "end": 26.9,
+        "text": " I'm going to go to the bathroom.",
+        "tokens": [
+          51564,
+          286,
+          478,
+          516,
+          281,
+          352,
+          281,
+          264,
+          8687,
+          13,
+          51664
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.24902832813752004,
+        "compression_ratio": 10.720930232558139,
+        "no_speech_prob": 0.5244216322898865,
+        "words": [
+          {
+            "word": " I'm",
+            "start": 24.86,
+            "end": 25.5,
+            "probability": 0.9191118478775024
+          },
+          {
+            "word": " going",
+            "start": 25.5,
+            "end": 25.56,
+            "probability": 0.9876855611801147
+          },
+          {
+            "word": " to",
+            "start": 25.56,
+            "end": 26.54,
+            "probability": 0.9923717975616455
+          },
+          {
+            "word": " go",
+            "start": 26.54,
+            "end": 26.54,
+            "probability": 0.9157946705818176
+          },
+          {
+            "word": " to",
+            "start": 26.54,
+            "end": 26.84,
+            "probability": 0.942818820476532
+          },
+          {
+            "word": " the",
+            "start": 26.84,
+            "end": 26.9,
+            "probability": 0.9843900799751282
+          },
+          {
+            "word": " bathroom.",
+            "start": 26.9,
+            "end": 26.9,
+            "probability": 0.9547461867332458
+          }
+        ]
+      },
+      {
+        "id": 13,
+        "seek": 0,
+        "start": 26.9,
+        "end": 29.32,
+        "text": " I'm going to go to the bathroom.",
+        "tokens": [
+          51664,
+          286,
+          478,
+          516,
+          281,
+          352,
+          281,
+          264,
+          8687,
+          13,
+          51764
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.24902832813752004,
+        "compression_ratio": 10.720930232558139,
+        "no_speech_prob": 0.5244216322898865,
+        "words": [
+          {
+            "word": " I'm",
+            "start": 26.9,
+            "end": 27.54,
+            "probability": 0.9235318899154663
+          },
+          {
+            "word": " going",
+            "start": 27.54,
+            "end": 27.54,
+            "probability": 0.9884039163589478
+          },
+          {
+            "word": " to",
+            "start": 27.54,
+            "end": 27.66,
+            "probability": 0.9918885827064514
+          },
+          {
+            "word": " go",
+            "start": 27.66,
+            "end": 28.0,
+            "probability": 0.9188288450241089
+          },
+          {
+            "word": " to",
+            "start": 28.0,
+            "end": 28.0,
+            "probability": 0.9419763088226318
+          },
+          {
+            "word": " the",
+            "start": 28.0,
+            "end": 28.1,
+            "probability": 0.9847317934036255
+          },
+          {
+            "word": " bathroom.",
+            "start": 28.1,
+            "end": 29.32,
+            "probability": 0.9557986259460449
+          }
+        ]
+      },
+      {
+        "id": 14,
+        "seek": 2932,
+        "start": 29.32,
+        "end": 31.82,
+        "text": " But it's a beautiful night",
+        "tokens": [
+          50364,
+          583,
+          309,
+          311,
+          257,
+          2238,
+          1818,
+          50464
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.6748623847961426,
+        "compression_ratio": 1.088235294117647,
+        "no_speech_prob": 0.7601598501205444,
+        "words": [
+          {
+            "word": " But",
+            "start": 29.32,
+            "end": 29.68,
+            "probability": 0.049109313637018204
+          },
+          {
+            "word": " it's",
+            "start": 29.68,
+            "end": 29.98,
+            "probability": 0.7519729733467102
+          },
+          {
+            "word": " a",
+            "start": 29.98,
+            "end": 30.08,
+            "probability": 0.9425118565559387
+          },
+          {
+            "word": " beautiful",
+            "start": 30.08,
+            "end": 30.62,
+            "probability": 0.9651625752449036
+          },
+          {
+            "word": " night",
+            "start": 30.62,
+            "end": 31.82,
+            "probability": 0.758236825466156
+          }
+        ]
+      },
+      {
+        "id": 15,
+        "seek": 2932,
+        "start": 31.82,
+        "end": 34.6,
+        "text": " The sky is so high",
+        "tokens": [
+          50504,
+          440,
+          5443,
+          307,
+          370,
+          1090,
+          50604
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.6748623847961426,
+        "compression_ratio": 1.088235294117647,
+        "no_speech_prob": 0.7601598501205444,
+        "words": [
+          {
+            "word": " The",
+            "start": 31.82,
+            "end": 32.52,
+            "probability": 0.29450082778930664
+          },
+          {
+            "word": " sky",
+            "start": 32.52,
+            "end": 32.92,
+            "probability": 0.9966269731521606
+          },
+          {
+            "word": " is",
+            "start": 32.92,
+            "end": 33.42,
+            "probability": 0.9543906450271606
+          },
+          {
+            "word": " so",
+            "start": 33.42,
+            "end": 33.64,
+            "probability": 0.9953846335411072
+          },
+          {
+            "word": " high",
+            "start": 33.64,
+            "end": 34.6,
+            "probability": 0.9844574332237244
+          }
+        ]
+      },
+      {
+        "id": 16,
+        "seek": 2932,
+        "start": 34.6,
+        "end": 36.76,
+        "text": " The sky is so deep",
+        "tokens": [
+          50622,
+          440,
+          5443,
+          307,
+          370,
+          2452,
+          50722
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.6748623847961426,
+        "compression_ratio": 1.088235294117647,
+        "no_speech_prob": 0.7601598501205444,
+        "words": [
+          {
+            "word": " The",
+            "start": 34.6,
+            "end": 34.96,
+            "probability": 0.6957983374595642
+          },
+          {
+            "word": " sky",
+            "start": 34.96,
+            "end": 35.42,
+            "probability": 0.9950062036514282
+          },
+          {
+            "word": " is",
+            "start": 35.42,
+            "end": 35.88,
+            "probability": 0.9673205018043518
+          },
+          {
+            "word": " so",
+            "start": 35.88,
+            "end": 36.14,
+            "probability": 0.9860607385635376
+          },
+          {
+            "word": " deep",
+            "start": 36.14,
+            "end": 36.76,
+            "probability": 0.9592306017875671
+          }
+        ]
+      },
+      {
+        "id": 17,
+        "seek": 2932,
+        "start": 36.76,
+        "end": 39.04,
+        "text": " You and I",
+        "tokens": [
+          50756,
+          509,
+          293,
+          286,
+          50856
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.6748623847961426,
+        "compression_ratio": 1.088235294117647,
+        "no_speech_prob": 0.7601598501205444,
+        "words": [
+          {
+            "word": " You",
+            "start": 36.76,
+            "end": 37.78,
+            "probability": 0.7294912338256836
+          },
+          {
+            "word": " and",
+            "start": 37.78,
+            "end": 38.4,
+            "probability": 0.44583427906036377
+          },
+          {
+            "word": " I",
+            "start": 38.4,
+            "end": 39.04,
+            "probability": 0.9471306204795837
+          }
+        ]
+      }
+    ],
+    "language": "en"
+  }
+}

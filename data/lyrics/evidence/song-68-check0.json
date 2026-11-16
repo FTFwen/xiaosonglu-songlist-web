@@ -1,0 +1,138 @@
+{
+  "audioSha256": "fa121436747929e3994c78891c7157c07a6219f733ea8653d87beceed869217a",
+  "model": "whisper-base",
+  "start": 157.48,
+  "end": 177.48,
+  "result": {
+    "text": "I'm in love with youあかりに泣かない",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 0.0,
+        "end": 16.0,
+        "text": "I'm in love with you",
+        "tokens": [
+          50364,
+          40,
+          478,
+          294,
+          959,
+          365,
+          291,
+          50464
+        ],
+        "temperature": 0,
+        "avg_logprob": -1.270996696070621,
+        "compression_ratio": 0.8627450980392157,
+        "no_speech_prob": 0.15051677823066711,
+        "words": [
+          {
+            "word": "I",
+            "start": 0.0,
+            "end": 0.0,
+            "probability": 0.00034858458093367517
+          },
+          {
+            "word": "'m",
+            "start": 0.0,
+            "end": 0.0,
+            "probability": 0.15828444063663483
+          },
+          {
+            "word": " in",
+            "start": 0.0,
+            "end": 11.04,
+            "probability": 0.04132883623242378
+          },
+          {
+            "word": " love",
+            "start": 11.04,
+            "end": 16.0,
+            "probability": 0.02741481177508831
+          },
+          {
+            "word": " with",
+            "start": 16.0,
+            "end": 16.0,
+            "probability": 0.5720935463905334
+          },
+          {
+            "word": " you",
+            "start": 16.0,
+            "end": 16.0,
+            "probability": 0.7910804152488708
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "seek": 0,
+        "start": 16.0,
+        "end": 19.98,
+        "text": "あかりに泣かない",
+        "tokens": [
+          51164,
+          3590,
+          3703,
+          5095,
+          4108,
+          6847,
+          96,
+          3703,
+          9311,
+          51364
+        ],
+        "temperature": 0,
+        "avg_logprob": -1.270996696070621,
+        "compression_ratio": 0.8627450980392157,
+        "no_speech_prob": 0.15051677823066711,
+        "words": [
+          {
+            "word": "あ",
+            "start": 16.0,
+            "end": 16.28,
+            "probability": 0.001483773230575025
+          },
+          {
+            "word": "か",
+            "start": 16.28,
+            "end": 16.52,
+            "probability": 0.7509016990661621
+          },
+          {
+            "word": "り",
+            "start": 16.52,
+            "end": 16.86,
+            "probability": 0.9963955283164978
+          },
+          {
+            "word": "に",
+            "start": 16.86,
+            "end": 17.2,
+            "probability": 0.6063212156295776
+          },
+          {
+            "word": "泣",
+            "start": 17.2,
+            "end": 18.22,
+            "probability": 0.5455163866281509
+          },
+          {
+            "word": "か",
+            "start": 18.22,
+            "end": 18.68,
+            "probability": 0.8322350382804871
+          },
+          {
+            "word": "ない",
+            "start": 18.68,
+            "end": 19.98,
+            "probability": 0.3234586715698242
+          }
+        ]
+      }
+    ],
+    "language": "ja"
+  }
+}

@@ -1,0 +1,183 @@
+{
+  "schemaVersion": 1,
+  "key": "song-321",
+  "songId": 321,
+  "songName": "RTRT",
+  "rowKey": "RTRT",
+  "displaySongName": "RTRT",
+  "artist": "Mili",
+  "language": "日文/英文",
+  "derivative": false,
+  "edition": "",
+  "remark": "桐人今天睡大觉「全自动歌切项目」2026.10.18 歌切合集第 14 分P（章节「15_RTRT - Mili」）。弹幕未直接出现歌名，仅以合集章节 + 日期确认。未定位回放时间点。",
+  "audio": {
+    "url": "assets/audio/song_320.m4a?v=ba1d3bae9c5f",
+    "sha256": "ba1d3bae9c5f9f0f6c461e4897a25251aca740c9425b4fbb3400393a124b6b26"
+  },
+  "retrievedAt": "2026-11-16T04:06:59.406Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=RTRT&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=RTRT%20Mili&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 435005006,
+        "name": "RTRT",
+        "artists": [
+          "Mili"
+        ],
+        "album": "Miracle Milk",
+        "durationMs": 215026,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2025473878,
+        "name": "RTRT",
+        "artists": [
+          "萍卡尤娜"
+        ],
+        "album": "0607",
+        "durationMs": 216363,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1378861338,
+        "name": "RTRT",
+        "artists": [
+          "akimi"
+        ],
+        "album": "RTRT",
+        "durationMs": 216607,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2603443902,
+        "name": "RTRT",
+        "artists": [
+          "在线翻船"
+        ],
+        "album": "RTRT",
+        "durationMs": 212088,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2638713332,
+        "name": "RTRT",
+        "artists": [
+          "-白榆-"
+        ],
+        "album": "RTRT",
+        "durationMs": 215380,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3389035889,
+        "name": "Rtrt",
+        "artists": [
+          "Wiliam Medical"
+        ],
+        "album": "Gaby Volando",
+        "durationMs": 164110,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3386786533,
+        "name": "rtrt",
+        "artists": [
+          "Ghost duet"
+        ],
+        "album": "9YG",
+        "durationMs": 291317,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2147541451,
+        "name": "Rtrt",
+        "artists": [
+          "Vitor Teddy"
+        ],
+        "album": "Pbldt",
+        "durationMs": 185447,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 321,
+      "song_name": "RTRT",
+      "show_as_song_name": "",
+      "display_song_name": "RTRT",
+      "artist": "Mili",
+      "artist_search": "Mili RTRT",
+      "feat_artist": "",
+      "remark": "桐人今天睡大觉「全自动歌切项目」2026.10.18 歌切合集第 14 分P（章节「15_RTRT - Mili」）。弹幕未直接出现歌名，仅以合集章节 + 日期确认。未定位回放时间点。",
+      "tone": "",
+      "language": "日文/英文",
+      "type": "J-Pop、游戏（原曲Mili）",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1UPnV6zEs4/?p=14",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-18",
+      "row_key": "RTRT"
+    },
+    "sourceId": 435005006,
+    "sourcePath": "sources/435005006.json",
+    "sourceUrl": "https://music.163.com/#/song?id=435005006",
+    "selected": {
+      "id": 435005006,
+      "name": "RTRT",
+      "artists": [
+        "Mili"
+      ],
+      "album": "Miracle Milk",
+      "durationMs": 215026,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 57
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-321-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 216.704,
+    "sourceFirstLine": {
+      "t": 29.33,
+      "text": "Hop hop"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 0.0,
+      "endSeconds": 0.48,
+      "similarity": 0.0,
+      "recognizedText": "一",
+      "meanProbability": 0.094,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "ja",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

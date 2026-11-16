@@ -1,0 +1,162 @@
+{
+  "schemaVersion": 1,
+  "key": "song-133",
+  "songId": 133,
+  "songName": "Fly, My Wings",
+  "displaySongName": "Fly, My Wings",
+  "artist": "Mili",
+  "language": "日文/英文",
+  "derivative": false,
+  "audio": {
+    "url": "assets/audio/song_132.m4a?v=67342f6f9431",
+    "sha256": "67342f6f9431dae16a41e66efef0ffd92642fcb23b874d38cdeb2b02ddf6bf03"
+  },
+  "retrievedAt": "2026-11-16T03:58:31.653Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=Fly%2C%20My%20Wings&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 2058124989,
+        "name": "Fly, My Wings",
+        "artists": [
+          "Mili"
+        ],
+        "album": "Fly, My Wings",
+        "durationMs": 194653,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2017002679,
+        "name": "Fly My Wings",
+        "artists": [
+          "GLXY DMND"
+        ],
+        "album": "New Worlds",
+        "durationMs": 90044,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2077530856,
+        "name": "Fly, My Wings",
+        "artists": [
+          "奇西",
+          "Oliver"
+        ],
+        "album": "Fly, My Wings",
+        "durationMs": 197500,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2602263304,
+        "name": "Fly My Wings",
+        "artists": [
+          "Reinharpdt"
+        ],
+        "album": "Fly My Wings",
+        "durationMs": 201456,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2669079543,
+        "name": "Fly, My Wings-mili-30音手摇纸带八音盒",
+        "artists": [
+          "汪的八音盒"
+        ],
+        "album": "30音纸带八音盒-1",
+        "durationMs": 175448,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 2615088009,
+        "name": "Fly，My Wings（Haover）",
+        "artists": [
+          "Coer丶皓子"
+        ],
+        "album": "Fly，My Wings（Haover）",
+        "durationMs": 204524,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 2665172495,
+        "name": "Fly,My Wings (边狱巴士第四章）",
+        "artists": [
+          "Pai!nroo%m"
+        ],
+        "album": "FlY MY WINGS",
+        "durationMs": 194703,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 2100805401,
+        "name": "Fly, My Wings【HB to 方方】",
+        "artists": [
+          "剑灵"
+        ],
+        "album": "Fly, My Wings【HB to 方方】",
+        "durationMs": 196876,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      }
+    ],
+    "sourceId": 2058124989,
+    "sourcePath": "sources/2058124989.json",
+    "sourceUrl": "https://music.163.com/#/song?id=2058124989",
+    "selected": {
+      "id": 2058124989,
+      "name": "Fly, My Wings",
+      "artists": [
+        "Mili"
+      ],
+      "album": "Fly, My Wings",
+      "durationMs": 194653,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 36
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-133-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 197.611,
+    "sourceFirstLine": {
+      "t": 13.535,
+      "text": "Fly, broken wings"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 0.0,
+      "endSeconds": 1.98,
+      "similarity": 0.0,
+      "recognizedText": "ん",
+      "meanProbability": 0.008,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "ja",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  },
+  "rowKey": "Fly, My Wings",
+  "edition": "",
+  "remark": "2026-09-03「也许康复的随便唱唱」21点场；歌切合集【桐人今天睡大觉】【小松绿Viridis】随便唱唱的歌回 歌切合集 2026.09.03 分P13（03:14）。Mili 乐团曲；原曲出处待复核（网易云单曲/八音盒版可见）。"
+}

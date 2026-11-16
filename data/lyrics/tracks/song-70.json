@@ -1,0 +1,179 @@
+{
+  "schemaVersion": 1,
+  "key": "song-70",
+  "songId": 70,
+  "songName": "碎梦",
+  "rowKey": "碎梦",
+  "displaySongName": "碎梦",
+  "artist": "COP / 乐正绫",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "来自 2026-08-18 歌切合集《【663645TV】神回！我已启动！全力绿来唱完了！8月18日歌切合集【小松绿Viridis】》的分P《24-碎梦》。按当前 song-cut-first 策略，将合集章节名直接并入正式曲库；当前记录的是合集内顺序时间，不是原始直播回放时间。",
+  "audio": {
+    "url": "assets/audio/song_54.m4a?v=7f816c36fdd2",
+    "sha256": "7f816c36fdd20be41c0b784dffe7b5fc95b42b64a59ec05fecf0115c55cd45b2"
+  },
+  "retrievedAt": "2026-11-16T04:12:51.067Z",
+  "match": {
+    "status": "version_review_required",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E7%A2%8E%E6%A2%A6&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E7%A2%8E%E6%A2%A6%20COP%20%2F%20%E4%B9%90%E6%AD%A3%E7%BB%AB&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 2058711050,
+        "name": "碎梦",
+        "artists": [
+          "胡彦斌",
+          "逆水长琴"
+        ],
+        "album": "碎梦",
+        "durationMs": 206448,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 155916,
+        "name": "碎梦",
+        "artists": [
+          "汪峰"
+        ],
+        "album": "怒放的生命",
+        "durationMs": 274960,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3428627147,
+        "name": "碎梦",
+        "artists": [
+          "花烬_Phoenix",
+          "星尘"
+        ],
+        "album": "碎梦",
+        "durationMs": 65732,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 515964379,
+        "name": "碎梦（short ver.）",
+        "artists": [
+          "COP",
+          "乐正绫"
+        ],
+        "album": "碎梦（short ver.）",
+        "durationMs": 97959,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      },
+      {
+        "id": 3367295182,
+        "name": "碎梦 【洛天依ACE COVER】",
+        "artists": [
+          "洛天依",
+          "镜星Himawari_咕咕p"
+        ],
+        "album": "【洛天依ACE COVER】碎梦",
+        "durationMs": 229599,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 2716134531,
+        "name": "碎梦一场",
+        "artists": [
+          "张德伊玲"
+        ],
+        "album": "碎梦一场",
+        "durationMs": 242984,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 3369523164,
+        "name": "【乐正绫v3翻调】碎梦",
+        "artists": [
+          "繁星P",
+          "乐正绫",
+          "COP"
+        ],
+        "album": "翻调 第二辑（2026）",
+        "durationMs": 227384,
+        "titleScore": 0,
+        "artistMatch": true,
+        "score": 0.2
+      },
+      {
+        "id": 429460239,
+        "name": "世末歌者",
+        "artists": [
+          "乐正绫",
+          "COP"
+        ],
+        "album": "世末歌者-COSMOSⅡ",
+        "durationMs": 321802,
+        "titleScore": 0,
+        "artistMatch": true,
+        "score": 0.2
+      }
+    ],
+    "workQuery": {
+      "song_id": 70,
+      "song_name": "碎梦",
+      "show_as_song_name": "",
+      "display_song_name": "碎梦",
+      "artist": "COP / 乐正绫",
+      "artist_search": "COP 乐正绫",
+      "feat_artist": "",
+      "remark": "来自 2026-08-18 歌切合集《【663645TV】神回！我已启动！全力绿来唱完了！8月18日歌切合集【小松绿Viridis】》的分P《24-碎梦》。按当前 song-cut-first 策略，将合集章节名直接并入正式曲库；当前记录的是合集内顺序时间，不是原始直播回放时间。",
+      "tone": "",
+      "language": "中文",
+      "type": "中V、流行",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1rv8V6DExk/",
+      "sing_count": 1,
+      "status_labels": "歌切合集补录、待后续回放时间定位",
+      "last_sing_at": "2026-08-18",
+      "row_key": "碎梦"
+    },
+    "sourceId": 515964379,
+    "sourcePath": "sources/515964379.json",
+    "sourceUrl": "https://music.163.com/#/song?id=515964379",
+    "selected": {
+      "id": 515964379,
+      "name": "碎梦（short ver.）",
+      "artists": [
+        "COP",
+        "乐正绫"
+      ],
+      "album": "碎梦（short ver.）",
+      "durationMs": 97959,
+      "titleScore": 1,
+      "artistMatch": false,
+      "score": 0.8,
+      "reviewedWorkIdentity": true
+    },
+    "timedLineCount": 18,
+    "review": {
+      "reason": "Verified song/detail: 碎梦（short ver.）, artists COP / 乐正绫, album 碎梦（short ver.）, 97959ms. Verified lyric endpoint credits 作词/作曲 COP and begins 事到如今 懒得想什么明天; chorus 从我又小又拥挤的房间／从我堆满了贪念的床边／飞向总有容身处的世界／却碎裂 却碎裂. Reject current 2058711050 胡彦斌/逆水长琴, a different composition. This is an exact verified original short edition ONLY: do not claim complete-song lyrics or align a full performance against it. No original full-version ID was verified.",
+      "evidenceUrl": "https://music.163.com/api/song/detail/?id=515964379&ids=[515964379]",
+      "previousSourceId": 2058711050
+    }
+  },
+  "alignment": {
+    "status": "version_review_required",
+    "offsetSeconds": null,
+    "humanVerified": false
+  }
+}

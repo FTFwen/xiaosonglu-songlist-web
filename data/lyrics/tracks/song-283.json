@@ -1,0 +1,183 @@
+{
+  "schemaVersion": 1,
+  "key": "song-283",
+  "songId": 283,
+  "songName": "蜗牛与黄鹂鸟",
+  "rowKey": "蜗牛与黄鹂鸟",
+  "displaySongName": "蜗牛与黄鹂鸟",
+  "artist": "儿歌多多",
+  "language": "中文",
+  "derivative": false,
+  "edition": "半首",
+  "remark": "心灵火 P16 标注「蜗牛与黄鹂鸟（半首）」97s（桐人 P16 为 105s）。",
+  "audio": {
+    "url": "assets/audio/song_282.m4a?v=d3c4c7aa08b3",
+    "sha256": "d3c4c7aa08b3c98061c39a3f973d53c5df6d199b70ae530d0b13d9c2c7b749a6"
+  },
+  "retrievedAt": "2026-11-16T04:06:05.357Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E8%9C%97%E7%89%9B%E4%B8%8E%E9%BB%84%E9%B9%82%E9%B8%9F&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E8%9C%97%E7%89%9B%E4%B8%8E%E9%BB%84%E9%B9%82%E9%B8%9F%20%E5%84%BF%E6%AD%8C%E5%A4%9A%E5%A4%9A&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1451396964,
+        "name": "蜗牛与黄鹂鸟",
+        "artists": [
+          "儿歌多多"
+        ],
+        "album": "儿歌多多经典儿歌",
+        "durationMs": 155989,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1417892372,
+        "name": "蜗牛与黄鹂鸟",
+        "artists": [
+          "贝乐虎儿歌"
+        ],
+        "album": "贝乐虎儿歌",
+        "durationMs": 104800,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1849013043,
+        "name": "蜗牛与黄鹂鸟",
+        "artists": [
+          "卓依婷"
+        ],
+        "album": "校园民谣",
+        "durationMs": 163505,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 28700254,
+        "name": "蜗牛与黄鹂鸟",
+        "artists": [
+          "贝瓦儿歌"
+        ],
+        "album": "贝瓦儿歌",
+        "durationMs": 117000,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 303141,
+        "name": "蜗牛与黄鹂鸟",
+        "artists": [
+          "吴淑敏"
+        ],
+        "album": "百万金曲38",
+        "durationMs": 150600,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3400332571,
+        "name": "蜗牛与黄鹂鸟",
+        "artists": [
+          "DJ金木"
+        ],
+        "album": "蜗牛与黄鹂鸟",
+        "durationMs": 172721,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 321335,
+        "name": "蜗牛与黄鹂鸟",
+        "artists": [
+          "银霞"
+        ],
+        "album": "回答",
+        "durationMs": 103784,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 324761,
+        "name": "蜗牛与黄鹂鸟",
+        "artists": [
+          "杨沛宜"
+        ],
+        "album": "歌唱祖国",
+        "durationMs": 140826,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 283,
+      "song_name": "蜗牛与黄鹂鸟",
+      "show_as_song_name": "",
+      "display_song_name": "蜗牛与黄鹂鸟",
+      "artist": "儿歌多多",
+      "artist_search": "儿歌多多",
+      "feat_artist": "",
+      "remark": "心灵火 P16 标注「蜗牛与黄鹂鸟（半首）」97s（桐人 P16 为 105s）。",
+      "tone": "",
+      "language": "中文",
+      "type": "民谣、儿歌",
+      "identification": "",
+      "display_version": "半首",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV18Jpw6mE82/?p=16",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-06",
+      "row_key": "蜗牛与黄鹂鸟"
+    },
+    "sourceId": 1451396964,
+    "sourcePath": "sources/1451396964.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1451396964",
+    "selected": {
+      "id": 1451396964,
+      "name": "蜗牛与黄鹂鸟",
+      "artists": [
+        "儿歌多多"
+      ],
+      "album": "儿歌多多经典儿歌",
+      "durationMs": 155989,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 31
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-283-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 96.683,
+    "sourceFirstLine": {
+      "t": 2,
+      "text": "（未经许可,不得翻唱或使用）"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 4.96,
+      "endSeconds": 6.36,
+      "similarity": 0.0,
+      "recognizedText": "二",
+      "meanProbability": 0.097,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

@@ -1,0 +1,169 @@
+{
+  "audioSha256": "cb3ab9500c250b25d3de4701d36b89cf648d33628e16ed404825ab873ce82f1d",
+  "model": "whisper-base",
+  "start": 173.06,
+  "end": 193.06,
+  "result": {
+    "text": "還是心願下可是我的船的飛機不受愛分手",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 0.0,
+        "end": 2.68,
+        "text": "還是心願下",
+        "tokens": [
+          50364,
+          25583,
+          7945,
+          20692,
+          4438,
+          50504
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.9826942941416865,
+        "compression_ratio": 0.8571428571428571,
+        "no_speech_prob": 0.5869372487068176,
+        "words": [
+          {
+            "word": "還是",
+            "start": 0.0,
+            "end": 0.84,
+            "probability": 0.38071101903915405
+          },
+          {
+            "word": "心",
+            "start": 0.84,
+            "end": 1.64,
+            "probability": 0.2034258097410202
+          },
+          {
+            "word": "願",
+            "start": 1.64,
+            "end": 2.18,
+            "probability": 0.49235865473747253
+          },
+          {
+            "word": "下",
+            "start": 2.18,
+            "end": 2.68,
+            "probability": 0.2788286805152893
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "seek": 0,
+        "start": 2.68,
+        "end": 5.46,
+        "text": "可是我的船的飛機",
+        "tokens": [
+          50504,
+          23359,
+          14200,
+          10256,
+          117,
+          1546,
+          34629,
+          17543,
+          50636
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.9826942941416865,
+        "compression_ratio": 0.8571428571428571,
+        "no_speech_prob": 0.5869372487068176,
+        "words": [
+          {
+            "word": "可是",
+            "start": 2.68,
+            "end": 3.26,
+            "probability": 0.7796072959899902
+          },
+          {
+            "word": "我的",
+            "start": 3.26,
+            "end": 4.16,
+            "probability": 0.8745455741882324
+          },
+          {
+            "word": "船",
+            "start": 4.16,
+            "end": 4.5,
+            "probability": 0.49853090941905975
+          },
+          {
+            "word": "的",
+            "start": 4.5,
+            "end": 4.8,
+            "probability": 0.4546471834182739
+          },
+          {
+            "word": "飛",
+            "start": 4.8,
+            "end": 5.1,
+            "probability": 0.967628002166748
+          },
+          {
+            "word": "機",
+            "start": 5.1,
+            "end": 5.46,
+            "probability": 0.9592057466506958
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "seek": 0,
+        "start": 5.46,
+        "end": 8.14,
+        "text": "不受愛分手",
+        "tokens": [
+          50636,
+          1960,
+          23151,
+          15157,
+          6627,
+          11389,
+          50808
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.9826942941416865,
+        "compression_ratio": 0.8571428571428571,
+        "no_speech_prob": 0.5869372487068176,
+        "words": [
+          {
+            "word": "不",
+            "start": 5.46,
+            "end": 6.02,
+            "probability": 0.4001820683479309
+          },
+          {
+            "word": "受",
+            "start": 6.02,
+            "end": 6.42,
+            "probability": 0.15315450727939606
+          },
+          {
+            "word": "愛",
+            "start": 6.42,
+            "end": 7.1,
+            "probability": 0.22712847590446472
+          },
+          {
+            "word": "分",
+            "start": 7.1,
+            "end": 7.66,
+            "probability": 0.28398406505584717
+          },
+          {
+            "word": "手",
+            "start": 7.66,
+            "end": 8.14,
+            "probability": 0.3394177258014679
+          }
+        ]
+      }
+    ],
+    "language": "zh"
+  }
+}

@@ -1,0 +1,168 @@
+{
+  "schemaVersion": 1,
+  "key": "song-1",
+  "songId": 1,
+  "songName": "少女レイ",
+  "displaySongName": "少女レイ",
+  "artist": "みきとP / 初音ミク",
+  "language": "日文",
+  "derivative": false,
+  "audio": {
+    "url": "assets/audio/song_04.m4a?v=4b153fac38db",
+    "sha256": "4b153fac38dbf4b130a8fd4386a6cc1b5082ba65fad2660aa64511d076e59dbd"
+  },
+  "retrievedAt": "2026-11-16T03:57:34.786Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E5%B0%91%E5%A5%B3%E3%83%AC%E3%82%A4&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 2068956580,
+        "name": "少女レイ",
+        "artists": [
+          "みきとP",
+          "初音ミク"
+        ],
+        "album": "少女レイ",
+        "durationMs": 289616,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1334077117,
+        "name": "少女レイ",
+        "artists": [
+          "初音ミク",
+          "みきとP"
+        ],
+        "album": "EXIT TUNES PRESENTS Vocaloseasons feat.初音ミク～Summer～",
+        "durationMs": 288507,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1334264536,
+        "name": "少女レイ",
+        "artists": [
+          "宮下遊",
+          "みきとP"
+        ],
+        "album": "青に歩く",
+        "durationMs": 288613,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2618701762,
+        "name": "少女レイ",
+        "artists": [
+          "星街すいせい"
+        ],
+        "album": "少女レイ",
+        "durationMs": 291240,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3423853407,
+        "name": "少女レイ",
+        "artists": [
+          "まふまふ"
+        ],
+        "album": "少女レイ",
+        "durationMs": 289365,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2118154008,
+        "name": "少女レイ (いよわRemix)",
+        "artists": [
+          "いよわ",
+          "みきとP",
+          "初音ミク"
+        ],
+        "album": "",
+        "durationMs": 244715,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      },
+      {
+        "id": 2122286004,
+        "name": "少女レイ (feat. 桐谷遥&日野森雫&初音ミク)",
+        "artists": [
+          "MORE MORE JUMP！"
+        ],
+        "album": "MORE MORE JUMP！ SEKAI ALBUM vol.2",
+        "durationMs": 291066,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 3324066773,
+        "name": "少女レイ(feat. 日野森雫)",
+        "artists": [
+          "日野森雫",
+          "アヤメミク"
+        ],
+        "album": "少女レイ",
+        "durationMs": 157738,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      }
+    ],
+    "sourceId": 2068956580,
+    "sourcePath": "sources/2068956580.json",
+    "sourceUrl": "https://music.163.com/#/song?id=2068956580",
+    "selected": {
+      "id": 2068956580,
+      "name": "少女レイ",
+      "artists": [
+        "みきとP",
+        "初音ミク"
+      ],
+      "album": "少女レイ",
+      "durationMs": 289616,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 29
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-1-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 284.032,
+    "sourceFirstLine": {
+      "t": 24.784,
+      "text": "本能が狂い始める 追い詰められたハツカネズミ"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 40.32,
+      "endSeconds": 40.64,
+      "similarity": 0.09090909090909091,
+      "recognizedText": "め",
+      "meanProbability": 0.977,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "ja",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  },
+  "rowKey": "少女レイ",
+  "edition": "",
+  "remark": "直链页面 title 为【小松绿Viridis/翻唱】《少女レイ》，meta description 明示日期 2026.08.07（首播）与 UP 主小鸡奇遇記。song_name 归一化为真实曲名“少女レイ”。"
+}

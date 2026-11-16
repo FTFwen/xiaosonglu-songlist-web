@@ -1,0 +1,472 @@
+{
+  "audioSha256": "a28fd1cacf4ac7b2a63d2f7ae0d7a9c817d782f7e436b7a566ca76ae131fd8f3",
+  "model": "whisper-base",
+  "start": 166.24099999999999,
+  "end": 186.24099999999999,
+  "result": {
+    "text": "我一眼前的拍照我會心裡的說話萬萬的心痛我會心裡的說話我會心裡的說話萬萬的心痛我會心裡的說話",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 0.0,
+        "end": 2.34,
+        "text": "我一眼前的拍照",
+        "tokens": [
+          50364,
+          1654,
+          2257,
+          25281,
+          8945,
+          1546,
+          31113,
+          32150,
+          50484
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.8578632609049479,
+        "compression_ratio": 2.5,
+        "no_speech_prob": 0.28860971331596375,
+        "words": [
+          {
+            "word": "我",
+            "start": 0.0,
+            "end": 0.34,
+            "probability": 0.4554726779460907
+          },
+          {
+            "word": "一",
+            "start": 0.34,
+            "end": 0.88,
+            "probability": 0.41479408740997314
+          },
+          {
+            "word": "眼",
+            "start": 0.88,
+            "end": 1.14,
+            "probability": 0.9249092936515808
+          },
+          {
+            "word": "前",
+            "start": 1.14,
+            "end": 1.42,
+            "probability": 0.5375829935073853
+          },
+          {
+            "word": "的",
+            "start": 1.42,
+            "end": 1.72,
+            "probability": 0.8104982376098633
+          },
+          {
+            "word": "拍",
+            "start": 1.72,
+            "end": 2.0,
+            "probability": 0.3246335983276367
+          },
+          {
+            "word": "照",
+            "start": 2.0,
+            "end": 2.34,
+            "probability": 0.13795863091945648
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "seek": 0,
+        "start": 2.34,
+        "end": 5.78,
+        "text": "我會心裡的說話",
+        "tokens": [
+          50484,
+          1654,
+          6236,
+          7945,
+          11066,
+          1546,
+          4622,
+          11103,
+          50652
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.8578632609049479,
+        "compression_ratio": 2.5,
+        "no_speech_prob": 0.28860971331596375,
+        "words": [
+          {
+            "word": "我",
+            "start": 2.34,
+            "end": 3.4,
+            "probability": 0.4379492998123169
+          },
+          {
+            "word": "會",
+            "start": 3.4,
+            "end": 3.74,
+            "probability": 0.1345060020685196
+          },
+          {
+            "word": "心",
+            "start": 3.74,
+            "end": 4.3,
+            "probability": 0.637265145778656
+          },
+          {
+            "word": "裡",
+            "start": 4.3,
+            "end": 4.66,
+            "probability": 0.0649716854095459
+          },
+          {
+            "word": "的",
+            "start": 4.66,
+            "end": 5.04,
+            "probability": 0.21443656086921692
+          },
+          {
+            "word": "說",
+            "start": 5.04,
+            "end": 5.34,
+            "probability": 0.04693162441253662
+          },
+          {
+            "word": "話",
+            "start": 5.34,
+            "end": 5.78,
+            "probability": 0.5047719478607178
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "seek": 0,
+        "start": 5.78,
+        "end": 8.1,
+        "text": "萬萬的心痛",
+        "tokens": [
+          50652,
+          14099,
+          14099,
+          1546,
+          7945,
+          28737,
+          50772
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.8578632609049479,
+        "compression_ratio": 2.5,
+        "no_speech_prob": 0.28860971331596375,
+        "words": [
+          {
+            "word": "萬",
+            "start": 5.78,
+            "end": 6.14,
+            "probability": 0.3341311812400818
+          },
+          {
+            "word": "萬",
+            "start": 6.14,
+            "end": 6.5,
+            "probability": 0.9894320964813232
+          },
+          {
+            "word": "的",
+            "start": 6.5,
+            "end": 6.9,
+            "probability": 0.21262669563293457
+          },
+          {
+            "word": "心",
+            "start": 6.9,
+            "end": 7.3,
+            "probability": 0.14581850171089172
+          },
+          {
+            "word": "痛",
+            "start": 7.3,
+            "end": 8.1,
+            "probability": 0.47835007309913635
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "seek": 0,
+        "start": 9.42,
+        "end": 11.68,
+        "text": "我會心裡的說話",
+        "tokens": [
+          50772,
+          1654,
+          6236,
+          7945,
+          11066,
+          1546,
+          4622,
+          11103,
+          50952
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.8578632609049479,
+        "compression_ratio": 2.5,
+        "no_speech_prob": 0.28860971331596375,
+        "words": [
+          {
+            "word": "我",
+            "start": 9.42,
+            "end": 10.18,
+            "probability": 0.7562662363052368
+          },
+          {
+            "word": "會",
+            "start": 10.18,
+            "end": 10.74,
+            "probability": 0.9680385589599609
+          },
+          {
+            "word": "心",
+            "start": 10.74,
+            "end": 11.2,
+            "probability": 0.13581521809101105
+          },
+          {
+            "word": "裡",
+            "start": 11.2,
+            "end": 11.56,
+            "probability": 0.3338142931461334
+          },
+          {
+            "word": "的",
+            "start": 11.56,
+            "end": 11.68,
+            "probability": 0.5933165550231934
+          },
+          {
+            "word": "說",
+            "start": 11.68,
+            "end": 11.68,
+            "probability": 0.0391729474067688
+          },
+          {
+            "word": "話",
+            "start": 11.68,
+            "end": 11.68,
+            "probability": 0.9875068664550781
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "seek": 0,
+        "start": 11.68,
+        "end": 11.68,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.8578632609049479,
+        "compression_ratio": 2.5,
+        "no_speech_prob": 0.28860971331596375,
+        "words": []
+      },
+      {
+        "id": 5,
+        "seek": 0,
+        "start": 11.68,
+        "end": 12.48,
+        "text": "我會心裡的說話",
+        "tokens": [
+          51196,
+          1654,
+          6236,
+          7945,
+          11066,
+          1546,
+          4622,
+          11103,
+          51376
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.8578632609049479,
+        "compression_ratio": 2.5,
+        "no_speech_prob": 0.28860971331596375,
+        "words": [
+          {
+            "word": "我",
+            "start": 11.68,
+            "end": 11.68,
+            "probability": 0.8675616383552551
+          },
+          {
+            "word": "會",
+            "start": 11.68,
+            "end": 11.68,
+            "probability": 0.9804331064224243
+          },
+          {
+            "word": "心",
+            "start": 11.68,
+            "end": 11.68,
+            "probability": 0.9593237638473511
+          },
+          {
+            "word": "裡",
+            "start": 11.68,
+            "end": 11.8,
+            "probability": 0.8481454253196716
+          },
+          {
+            "word": "的",
+            "start": 11.8,
+            "end": 11.8,
+            "probability": 0.9295544624328613
+          },
+          {
+            "word": "說",
+            "start": 11.8,
+            "end": 11.8,
+            "probability": 0.6918082237243652
+          },
+          {
+            "word": "話",
+            "start": 11.8,
+            "end": 12.48,
+            "probability": 0.9899375438690186
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "seek": 0,
+        "start": 12.48,
+        "end": 13.16,
+        "text": "萬萬的心痛",
+        "tokens": [
+          51376,
+          14099,
+          14099,
+          1546,
+          7945,
+          28737,
+          51556
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.8578632609049479,
+        "compression_ratio": 2.5,
+        "no_speech_prob": 0.28860971331596375,
+        "words": [
+          {
+            "word": "萬",
+            "start": 12.48,
+            "end": 13.16,
+            "probability": 0.9120848774909973
+          },
+          {
+            "word": "萬",
+            "start": 13.16,
+            "end": 13.16,
+            "probability": 0.997694194316864
+          },
+          {
+            "word": "的",
+            "start": 13.16,
+            "end": 13.16,
+            "probability": 0.9505332708358765
+          },
+          {
+            "word": "心",
+            "start": 13.16,
+            "end": 13.16,
+            "probability": 0.9810684323310852
+          },
+          {
+            "word": "痛",
+            "start": 13.16,
+            "end": 13.16,
+            "probability": 0.9972571730613708
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "seek": 0,
+        "start": 13.16,
+        "end": 19.98,
+        "text": "我會心裡的說話",
+        "tokens": [
+          51556,
+          1654,
+          6236,
+          7945,
+          11066,
+          1546,
+          4622,
+          11103,
+          51652
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.8578632609049479,
+        "compression_ratio": 2.5,
+        "no_speech_prob": 0.28860971331596375,
+        "words": [
+          {
+            "word": "我",
+            "start": 13.16,
+            "end": 13.16,
+            "probability": 0.9024802446365356
+          },
+          {
+            "word": "會",
+            "start": 13.16,
+            "end": 13.16,
+            "probability": 0.9808453321456909
+          },
+          {
+            "word": "心",
+            "start": 13.16,
+            "end": 13.16,
+            "probability": 0.9918708801269531
+          },
+          {
+            "word": "裡",
+            "start": 13.16,
+            "end": 13.16,
+            "probability": 0.9185162782669067
+          },
+          {
+            "word": "的",
+            "start": 13.16,
+            "end": 13.16,
+            "probability": 0.9744840264320374
+          },
+          {
+            "word": "說",
+            "start": 13.16,
+            "end": 15.72,
+            "probability": 0.856878936290741
+          },
+          {
+            "word": "話",
+            "start": 15.72,
+            "end": 19.98,
+            "probability": 0.9931486248970032
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "seek": 0,
+        "start": 19.98,
+        "end": 19.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.8578632609049479,
+        "compression_ratio": 2.5,
+        "no_speech_prob": 0.28860971331596375,
+        "words": []
+      }
+    ],
+    "language": "zh"
+  }
+}

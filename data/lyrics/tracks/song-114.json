@@ -1,0 +1,163 @@
+{
+  "schemaVersion": 1,
+  "key": "song-114",
+  "songId": 114,
+  "songName": "初恋日記",
+  "displaySongName": "初恋日記",
+  "artist": "香椎モイミ / 音街鳗",
+  "language": "日文",
+  "derivative": false,
+  "audio": {
+    "url": "assets/audio/song_105.m4a?v=ce86ed4fd539",
+    "sha256": "ce86ed4fd539d0b43a08052780da607f46362a060b7ce1f3687a826de8b90eeb"
+  },
+  "retrievedAt": "2026-11-16T03:57:50.228Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E5%88%9D%E6%81%8B%E6%97%A5%E8%A8%98&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1997514875,
+        "name": "初恋日記",
+        "artists": [
+          "香椎モイミ",
+          "音街ウナ"
+        ],
+        "album": "Una-Chance！2 (ft.音街ウナ)",
+        "durationMs": 191383,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 3318936413,
+        "name": "初恋日記",
+        "artists": [
+          "Kotoha"
+        ],
+        "album": "初恋日記",
+        "durationMs": 195395,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2094428954,
+        "name": "初恋日記",
+        "artists": [
+          "PICCY"
+        ],
+        "album": "初恋日记",
+        "durationMs": 191561,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1995418334,
+        "name": "初恋日記",
+        "artists": [
+          "森島Melon"
+        ],
+        "album": "初恋日記",
+        "durationMs": 189264,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2018798203,
+        "name": "初恋日記",
+        "artists": [
+          "MIROL"
+        ],
+        "album": "初恋日記",
+        "durationMs": 201610,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2139087586,
+        "name": "初恋日記",
+        "artists": [
+          "本墨置子"
+        ],
+        "album": "初恋日記/初恋日记",
+        "durationMs": 188821,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2008988824,
+        "name": "初恋日記 /covered by ヰ世界情緒",
+        "artists": [
+          "ヰ世界情緒"
+        ],
+        "album": "",
+        "durationMs": 201621,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 2009396170,
+        "name": "初恋日記(Vo.歌愛ユキ）",
+        "artists": [
+          "歌愛ユキ"
+        ],
+        "album": "自调合集",
+        "durationMs": 195174,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      }
+    ],
+    "sourceId": 1997514875,
+    "sourcePath": "sources/1997514875.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1997514875",
+    "selected": {
+      "id": 1997514875,
+      "name": "初恋日記",
+      "artists": [
+        "香椎モイミ",
+        "音街ウナ"
+      ],
+      "album": "Una-Chance！2 (ft.音街ウナ)",
+      "durationMs": 191383,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 46
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-114-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 200.192,
+    "sourceFirstLine": {
+      "t": 0.481,
+      "text": "君をきっと嫌いになれっこない"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 31.34,
+      "endSeconds": 33.8,
+      "similarity": 0.2727272727272727,
+      "recognizedText": "かったの一人とに",
+      "meanProbability": 0.735,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "ja",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  },
+  "rowKey": "初恋日記",
+  "edition": "",
+  "remark": "2026-08-29 心灵火Flame合集补录：【小松绿Viridis】20260829 歌切 分P5（03:10）。萌百核实：香椎モイミ 2022-09-17 投稿的 VOCALOID 日语原创曲，音街鳗（音街ウナ）演唱。"
+}

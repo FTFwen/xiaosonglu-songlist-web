@@ -1,0 +1,180 @@
+{
+  "audioSha256": "58ee1c39de53db5998e1f986a1b25744f089ac760db63afea1800cbb09a95a59",
+  "model": "whisper-base",
+  "start": 192.9,
+  "end": 212.9,
+  "result": {
+    "text": "それはYou You You You 日にかれた私それは愛のラブルンス",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 0.0,
+        "end": 7.84,
+        "text": "それはYou You You You 日にかれた私",
+        "tokens": [
+          50364,
+          13873,
+          3065,
+          3223,
+          509,
+          509,
+          509,
+          220,
+          6890,
+          4108,
+          3703,
+          35478,
+          20083,
+          50797
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.9385558319091797,
+        "compression_ratio": 1.123076923076923,
+        "no_speech_prob": 0.7008816599845886,
+        "words": [
+          {
+            "word": "それ",
+            "start": 0.0,
+            "end": 1.52,
+            "probability": 0.06942125409841537
+          },
+          {
+            "word": "は",
+            "start": 1.52,
+            "end": 1.92,
+            "probability": 0.5231905579566956
+          },
+          {
+            "word": "You",
+            "start": 1.92,
+            "end": 2.24,
+            "probability": 0.12138919532299042
+          },
+          {
+            "word": " You",
+            "start": 2.24,
+            "end": 3.04,
+            "probability": 0.5991635918617249
+          },
+          {
+            "word": " You",
+            "start": 3.04,
+            "end": 3.56,
+            "probability": 0.8362399339675903
+          },
+          {
+            "word": " You",
+            "start": 3.56,
+            "end": 3.96,
+            "probability": 0.23966526985168457
+          },
+          {
+            "word": " 日",
+            "start": 3.96,
+            "end": 4.24,
+            "probability": 0.6281636357307434
+          },
+          {
+            "word": "に",
+            "start": 4.24,
+            "end": 4.68,
+            "probability": 0.7647714018821716
+          },
+          {
+            "word": "か",
+            "start": 4.68,
+            "end": 5.02,
+            "probability": 0.17425201833248138
+          },
+          {
+            "word": "れた",
+            "start": 5.02,
+            "end": 5.68,
+            "probability": 0.9681559801101685
+          },
+          {
+            "word": "私",
+            "start": 5.68,
+            "end": 7.84,
+            "probability": 0.6073347330093384
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "seek": 0,
+        "start": 9.819999999999999,
+        "end": 13.82,
+        "text": "それは愛のラブルンス",
+        "tokens": [
+          50797,
+          48846,
+          15157,
+          2972,
+          11353,
+          28889,
+          9405,
+          4824,
+          9550,
+          51134
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.9385558319091797,
+        "compression_ratio": 1.123076923076923,
+        "no_speech_prob": 0.7008816599845886,
+        "words": [
+          {
+            "word": "それは",
+            "start": 9.819999999999999,
+            "end": 10.62,
+            "probability": 0.4057666063308716
+          },
+          {
+            "word": "愛",
+            "start": 10.62,
+            "end": 11.42,
+            "probability": 0.20034074783325195
+          },
+          {
+            "word": "の",
+            "start": 11.42,
+            "end": 12.52,
+            "probability": 0.9747673273086548
+          },
+          {
+            "word": "ラ",
+            "start": 12.52,
+            "end": 12.78,
+            "probability": 0.74799644947052
+          },
+          {
+            "word": "ブ",
+            "start": 12.78,
+            "end": 13.0,
+            "probability": 0.8073477745056152
+          },
+          {
+            "word": "ル",
+            "start": 13.0,
+            "end": 13.16,
+            "probability": 0.5725087523460388
+          },
+          {
+            "word": "ン",
+            "start": 13.16,
+            "end": 13.42,
+            "probability": 0.91765958070755
+          },
+          {
+            "word": "ス",
+            "start": 13.42,
+            "end": 13.82,
+            "probability": 0.8762705326080322
+          }
+        ]
+      }
+    ],
+    "language": "ja"
+  }
+}

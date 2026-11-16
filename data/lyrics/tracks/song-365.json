@@ -1,0 +1,183 @@
+{
+  "schemaVersion": 1,
+  "key": "song-365",
+  "songId": 365,
+  "songName": "得了吧张小姐",
+  "rowKey": "得了吧张小姐",
+  "displaySongName": "得了吧张小姐",
+  "artist": "李想Evelyn",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "单曲歌切(华丽失败酱)佐证",
+  "audio": {
+    "url": "assets/audio/song_364.m4a?v=1094507ed4cd",
+    "sha256": "1094507ed4cd9c7f36d94d9d5400046c8375ddca79a5e4ecb6ccf6926f3d0afb"
+  },
+  "retrievedAt": "2026-11-16T04:07:36.981Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E5%BE%97%E4%BA%86%E5%90%A7%E5%BC%A0%E5%B0%8F%E5%A7%90&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E5%BE%97%E4%BA%86%E5%90%A7%E5%BC%A0%E5%B0%8F%E5%A7%90%20%E6%9D%8E%E6%83%B3Evelyn&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1329820228,
+        "name": "得了吧张小姐",
+        "artists": [
+          "李想Evelyn"
+        ],
+        "album": "星星开始坠跌",
+        "durationMs": 197261,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1338049322,
+        "name": "得了吧张小姐",
+        "artists": [
+          "吕自雯"
+        ],
+        "album": "小雯快乐翻唱一月",
+        "durationMs": 198321,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1350553178,
+        "name": "得了吧张小姐",
+        "artists": [
+          "Echo叁槿"
+        ],
+        "album": "得了吧张小姐",
+        "durationMs": 197162,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1886266980,
+        "name": "得了吧张小姐",
+        "artists": [
+          "四七"
+        ],
+        "album": "得了吧张小姐",
+        "durationMs": 197485,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2008225685,
+        "name": "得了吧张小姐",
+        "artists": [
+          "起司猫"
+        ],
+        "album": "王晓佳",
+        "durationMs": 171672,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1939578657,
+        "name": "得了吧张小姐",
+        "artists": [
+          "苏刘"
+        ],
+        "album": "危险派对",
+        "durationMs": 197088,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3426137059,
+        "name": "得了吧张小姐",
+        "artists": [
+          "祈楽Akilo"
+        ],
+        "album": "得了吧张小姐",
+        "durationMs": 201725,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1374998555,
+        "name": "得了吧张小姐",
+        "artists": [
+          "杜福康"
+        ],
+        "album": "小宝练习曲（一）",
+        "durationMs": 197381,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 365,
+      "song_name": "得了吧张小姐",
+      "show_as_song_name": "",
+      "display_song_name": "得了吧张小姐",
+      "artist": "李想Evelyn",
+      "artist_search": "李想Evelyn",
+      "feat_artist": "",
+      "remark": "单曲歌切(华丽失败酱)佐证",
+      "tone": "",
+      "language": "中文",
+      "type": "流行",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1nRxJ6tEPC/?p=17",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-31",
+      "row_key": "得了吧张小姐"
+    },
+    "sourceId": 1329820228,
+    "sourcePath": "sources/1329820228.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1329820228",
+    "selected": {
+      "id": 1329820228,
+      "name": "得了吧张小姐",
+      "artists": [
+        "李想Evelyn"
+      ],
+      "album": "星星开始坠跌",
+      "durationMs": 197261,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 47
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-365-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 207.317,
+    "sourceFirstLine": {
+      "t": 7.448,
+      "text": "编曲/合声编写：胡晨HUX"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 20.46,
+      "endSeconds": 20.46,
+      "similarity": 0.16666666666666666,
+      "recognizedText": "曲",
+      "meanProbability": 0.927,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

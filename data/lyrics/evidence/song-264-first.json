@@ -1,0 +1,57 @@
+{
+  "audioSha256": "11ece0f55923ca21cd92c79ca78bbc358184bddaf1a52f7038d2c66e38343ced",
+  "model": "whisper-base",
+  "start": 0,
+  "end": 40.15,
+  "result": {
+    "text": "这就对了",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 0.0,
+        "end": 0.74,
+        "text": "这就对了",
+        "tokens": [
+          50364,
+          5562,
+          3111,
+          8713,
+          2289,
+          50414
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.6459277016775948,
+        "compression_ratio": 0.5714285714285714,
+        "no_speech_prob": 0.010681938380002975,
+        "words": [
+          {
+            "word": "这",
+            "start": 0.0,
+            "end": 0.2,
+            "probability": 0.3434802293777466
+          },
+          {
+            "word": "就",
+            "start": 0.2,
+            "end": 0.32,
+            "probability": 0.45015549659729004
+          },
+          {
+            "word": "对",
+            "start": 0.32,
+            "end": 0.5,
+            "probability": 0.9100511074066162
+          },
+          {
+            "word": "了",
+            "start": 0.5,
+            "end": 0.74,
+            "probability": 0.9688374996185303
+          }
+        ]
+      }
+    ],
+    "language": "zh"
+  }
+}

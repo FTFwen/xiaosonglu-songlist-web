@@ -1,0 +1,184 @@
+{
+  "schemaVersion": 1,
+  "key": "song-11",
+  "songId": 11,
+  "songName": "词不达意",
+  "rowKey": "词不达意",
+  "displaySongName": "词不达意",
+  "artist": "林忆莲",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "直链页面 meta description 明示日期 2026.08.09，标题直接给出真实歌曲名《词不达意》，可作为当日 song-cut-first 增量收录。",
+  "audio": {
+    "url": "assets/audio/song_11.m4a?v=faa89f567573",
+    "sha256": "faa89f567573b84f8e97c42519e8828edbb58d0f66633679e078107618ab73cc"
+  },
+  "retrievedAt": "2026-11-16T04:02:30.280Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E8%AF%8D%E4%B8%8D%E8%BE%BE%E6%84%8F&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E8%AF%8D%E4%B8%8D%E8%BE%BE%E6%84%8F%20%E6%9E%97%E5%BF%86%E8%8E%B2&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 255858,
+        "name": "词不达意",
+        "artists": [
+          "林忆莲"
+        ],
+        "album": "呼吸",
+        "durationMs": 266466,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1388410609,
+        "name": "词不达意",
+        "artists": [
+          "林忆莲"
+        ],
+        "album": "超级女声 3",
+        "durationMs": 266466,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 3355559700,
+        "name": "词不达意",
+        "artists": [
+          "小黑"
+        ],
+        "album": "词不达意",
+        "durationMs": 258745,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3386679981,
+        "name": "词不达意",
+        "artists": [
+          "DJ阿布"
+        ],
+        "album": "词不达意",
+        "durationMs": 275591,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2729473649,
+        "name": "词不达意",
+        "artists": [
+          "万能日记"
+        ],
+        "album": "词不达意",
+        "durationMs": 131632,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2096138766,
+        "name": "词不达意",
+        "artists": [
+          "落落"
+        ],
+        "album": "风月都好看人间也浪漫22",
+        "durationMs": 124675,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3388536177,
+        "name": "词不达意",
+        "artists": [
+          "DJ大大怪"
+        ],
+        "album": "词不达意",
+        "durationMs": 253231,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3387767747,
+        "name": "词不达意",
+        "artists": [
+          "汐儿Xier",
+          "DY"
+        ],
+        "album": "词不达意",
+        "durationMs": 126000,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 11,
+      "song_name": "词不达意",
+      "show_as_song_name": "",
+      "display_song_name": "词不达意",
+      "artist": "林忆莲",
+      "artist_search": "林忆莲",
+      "feat_artist": "",
+      "remark": "直链页面 meta description 明示日期 2026.08.09，标题直接给出真实歌曲名《词不达意》，可作为当日 song-cut-first 增量收录。",
+      "tone": "",
+      "language": "中文",
+      "type": "流行、抒情",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1qqum6REJB/",
+      "sing_count": 1,
+      "status_labels": "歌切直补、待原始回放定位",
+      "last_sing_at": "2026-08-09",
+      "row_key": "词不达意"
+    },
+    "sourceId": 255858,
+    "sourcePath": "sources/255858.json",
+    "sourceUrl": "https://music.163.com/#/song?id=255858",
+    "selected": {
+      "id": 255858,
+      "name": "词不达意",
+      "artists": [
+        "林忆莲"
+      ],
+      "album": "呼吸",
+      "durationMs": 266466,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 58
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-11-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 362.51,
+    "sourceFirstLine": {
+      "t": 12.64,
+      "text": "有些人用一辈子去学习"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 34.98,
+      "endSeconds": 34.98,
+      "similarity": 0.18181818181818182,
+      "recognizedText": "有",
+      "meanProbability": 0.041,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

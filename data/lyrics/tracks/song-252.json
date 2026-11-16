@@ -1,0 +1,192 @@
+{
+  "schemaVersion": 1,
+  "key": "song-252",
+  "songId": 252,
+  "songName": "Misty Memory (Night Version)",
+  "rowKey": "Misty Memory (Night Version)",
+  "displaySongName": "Misty Memory (Night Version)",
+  "artist": "塞壬唱片-MSR, Elvin Shen, ZT, Erik Castro, David L",
+  "language": "日文",
+  "derivative": false,
+  "edition": "",
+  "remark": "",
+  "audio": {
+    "url": "assets/audio/song_251.m4a?v=2d507474b451",
+    "sha256": "2d507474b4519523251b15b9997d654f629ffea1365d88004d68af70e63819f6"
+  },
+  "retrievedAt": "2026-11-16T04:05:43.105Z",
+  "match": {
+    "status": "version_review_required",
+    "queries": [
+      "https://music.163.com/api/search/get?s=Misty%20Memory%20(Night%20Version)&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=Misty%20Memory%20(Night%20Version)%20%E5%A1%9E%E5%A3%AC%E5%94%B1%E7%89%87-MSR&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 2070351310,
+        "name": "Misty Memory (Night Version)",
+        "artists": [
+          "塞壬唱片-MSR",
+          "Elvin Shen",
+          "ZT",
+          "Erik Castro",
+          "David Lin",
+          "左乙"
+        ],
+        "album": "火山旅梦OST",
+        "durationMs": 242086,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2070352215,
+        "name": "Misty Memory (Day Version)",
+        "artists": [
+          "塞壬唱片-MSR",
+          "Erik Castro",
+          "Elvin Shen",
+          "David Lin",
+          "左乙"
+        ],
+        "album": "火山旅梦OST",
+        "durationMs": 283428,
+        "titleScore": 0,
+        "artistMatch": true,
+        "score": 0.2
+      },
+      {
+        "id": 2070352211,
+        "name": "Misty Memory (Acoustic Version)",
+        "artists": [
+          "塞壬唱片-MSR",
+          "Erik Castro",
+          "Obadiah Brown-Beach",
+          "David Lin"
+        ],
+        "album": "火山旅梦OST",
+        "durationMs": 234621,
+        "titleScore": 0,
+        "artistMatch": true,
+        "score": 0.2
+      },
+      {
+        "id": 1403774122,
+        "name": "Speed of Light",
+        "artists": [
+          "塞壬唱片-MSR",
+          "DJ OKAWARI",
+          "二宮愛"
+        ],
+        "album": "Speed of Light",
+        "durationMs": 245817,
+        "titleScore": 0,
+        "artistMatch": true,
+        "score": 0.2
+      },
+      {
+        "id": 2612747239,
+        "name": "Mystic Light Quest",
+        "artists": [
+          "塞壬唱片-MSR",
+          "RANASOL",
+          "KOTONOHOUSE",
+          "Machico"
+        ],
+        "album": "Mystic Light Quest",
+        "durationMs": 207000,
+        "titleScore": 0,
+        "artistMatch": true,
+        "score": 0.2
+      },
+      {
+        "id": 3459345834,
+        "name": "Kernel Overflow",
+        "artists": [
+          "塞壬唱片-MSR",
+          "Remi Gallego"
+        ],
+        "album": "卫戍协议：规程OST",
+        "durationMs": 158550,
+        "titleScore": 0,
+        "artistMatch": true,
+        "score": 0.2
+      },
+      {
+        "id": 2731325796,
+        "name": "Little Wish",
+        "artists": [
+          "塞壬唱片-MSR",
+          "WS MUSIC"
+        ],
+        "album": "Little Wish",
+        "durationMs": 240000,
+        "titleScore": 0,
+        "artistMatch": true,
+        "score": 0.2
+      },
+      {
+        "id": 3454742114,
+        "name": "A Necessary Message",
+        "artists": [
+          "塞壬唱片-MSR",
+          "Chapters",
+          "Ben Hicks",
+          "Sofia Silvestri"
+        ],
+        "album": "A Necessary Message",
+        "durationMs": 275595,
+        "titleScore": 0,
+        "artistMatch": true,
+        "score": 0.2
+      }
+    ],
+    "workQuery": {
+      "song_id": 252,
+      "song_name": "Misty Memory (Night Version)",
+      "show_as_song_name": "",
+      "display_song_name": "Misty Memory (Night Version)",
+      "artist": "塞壬唱片-MSR, Elvin Shen, ZT, Erik Castro, David L",
+      "artist_search": "塞壬唱片-MSR, Elvin Shen, ZT, Erik Castro, David L",
+      "feat_artist": "",
+      "remark": "",
+      "tone": "",
+      "language": "日文",
+      "type": "游戏",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1g1ah6REpb/?p=31",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-09-27",
+      "row_key": "Misty Memory (Night Version)"
+    },
+    "sourceId": 2070351310,
+    "sourcePath": "sources/2070351310.json",
+    "sourceUrl": "https://music.163.com/#/song?id=2070351310",
+    "selected": {
+      "id": 2070351310,
+      "name": "Misty Memory (Night Version)",
+      "artists": [
+        "塞壬唱片-MSR",
+        "Elvin Shen",
+        "ZT",
+        "Erik Castro",
+        "David Lin",
+        "左乙"
+      ],
+      "album": "火山旅梦OST",
+      "durationMs": 242086,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 58
+  },
+  "alignment": {
+    "status": "version_review_required",
+    "offsetSeconds": null,
+    "humanVerified": false
+  }
+}

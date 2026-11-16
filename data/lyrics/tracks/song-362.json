@@ -1,0 +1,188 @@
+{
+  "schemaVersion": 1,
+  "key": "song-362",
+  "songId": 362,
+  "songName": "普通朋友",
+  "rowKey": "普通朋友",
+  "displaySongName": "普通朋友",
+  "artist": "零度甜",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "单曲歌切《明明心里很喜欢却保持着距离》(能吃2只小毛线的脆鲨)佐证",
+  "audio": {
+    "url": "assets/audio/song_361.m4a?v=ca0069b8c448",
+    "sha256": "ca0069b8c448832de48677894925719f266e62e71271b1e2f18477327de4c5d0"
+  },
+  "retrievedAt": "2026-11-16T04:13:30.322Z",
+  "match": {
+    "status": "candidate_review_required",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E6%99%AE%E9%80%9A%E6%9C%8B%E5%8F%8B&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E6%99%AE%E9%80%9A%E6%9C%8B%E5%8F%8B%20%E9%9B%B6%E5%BA%A6%E7%94%9C&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 150623,
+        "name": "普通朋友",
+        "artists": [
+          "陶喆"
+        ],
+        "album": "I'm OK",
+        "durationMs": 255133,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2110023759,
+        "name": "普通朋友",
+        "artists": [
+          "宋雨琦"
+        ],
+        "album": "普通朋友",
+        "durationMs": 251813,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2117608396,
+        "name": "普通朋友",
+        "artists": [
+          "WiFi歪歪"
+        ],
+        "album": "普通朋友",
+        "durationMs": 216404,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1323301262,
+        "name": "普通朋友",
+        "artists": [
+          "张叶蕾"
+        ],
+        "album": "你回头看",
+        "durationMs": 234703,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1452979629,
+        "name": "普通朋友",
+        "artists": [
+          "PIggy"
+        ],
+        "album": "普通朋友",
+        "durationMs": 191580,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1808085682,
+        "name": "普通朋友",
+        "artists": [
+          "蔡依林"
+        ],
+        "album": "CUXI 蔡依林特务J庆功演唱会现场实录盘",
+        "durationMs": 139853,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1411971034,
+        "name": "普通朋友",
+        "artists": [
+          "菜籽油"
+        ],
+        "album": "翻唱part1.",
+        "durationMs": 254484,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 150506,
+        "name": "普通朋友",
+        "artists": [
+          "陶喆"
+        ],
+        "album": "Ultrasound 乐之路 1997-2003",
+        "durationMs": 255000,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 362,
+      "song_name": "普通朋友",
+      "show_as_song_name": "",
+      "display_song_name": "普通朋友",
+      "artist": "零度甜",
+      "artist_search": "零度甜",
+      "feat_artist": "",
+      "remark": "单曲歌切《明明心里很喜欢却保持着距离》(能吃2只小毛线的脆鲨)佐证",
+      "tone": "",
+      "language": "中文",
+      "type": "流行",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1nRxJ6tEPC/?p=11",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-31",
+      "row_key": "普通朋友"
+    },
+    "sourceId": 150623,
+    "sourcePath": "sources/150623.json",
+    "sourceUrl": "https://music.163.com/#/song?id=150623",
+    "selected": {
+      "id": 150623,
+      "name": "普通朋友",
+      "artists": [
+        "陶喆"
+      ],
+      "album": "I'm OK",
+      "durationMs": 255133,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 66,
+    "review": {
+      "reason": "Verified exact title+artist search and song/detail: 普通朋友（翻唱正式版）, artist 零度甜, album 高能翻唱热播系列13, 251812ms. Current 150623 is 陶喆, not the requested performer. Crucial limitation: lyric endpoint api/song/lyric?id=2157482420&lv=1&kv=1&tv=-1 returns empty lyric; source identity verified but no timed lyrics recovered. Title explicitly says 翻唱: research does not establish that this is a different composition from 陶喆, only that current source performer is not 零度甜. Do not infer a different work solely from artist mismatch. Retain Tao source as composition candidate; cover title is not sufficient alone to certify identical lyrics or timing.",
+      "evidenceUrl": "https://music.163.com/api/song/detail/?id=2157482420&ids=[2157482420]",
+      "previousSourceId": 150623
+    }
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-362-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 254.976,
+    "sourceFirstLine": {
+      "t": 19,
+      "text": "等待"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 0,
+      "endSeconds": 0.14,
+      "similarity": 0,
+      "recognizedText": "放",
+      "meanProbability": 0.831,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

@@ -1,0 +1,213 @@
+{
+  "platform": "netease",
+  "id": 2722023883,
+  "url": "https://music.163.com/#/song?id=2722023883",
+  "apiUrl": "https://music.163.com/api/song/lyric?id=2722023883&lv=1&kv=1&tv=-1",
+  "retrievedAt": "2026-11-16T04:07:50.859Z",
+  "track": {
+    "id": 2722023883,
+    "name": "追憶",
+    "artists": [
+      "V.W.P"
+    ],
+    "album": "追憶",
+    "durationMs": 207777,
+    "titleScore": 1,
+    "artistMatch": false,
+    "score": 0.8
+  },
+  "lrc": "[00:00.000] 作词 : Kanata Okajima, Shao Hao, Nay Shalom\n[00:01.000] 作曲 : Kanata Okajima, Shao Hao, Nay Shalom\n[00:09.200]Hello, hello\n[00:11.710]The streets getting colder here at night\n[00:18.000]Now no ones home\n[00:20.420]Am I gonna give my last goodbye\n[00:25.160]\n[00:25.920]My mind is questioning still\n[00:29.820]Somehow, I'm stuck on rewind and\n[00:34.500]I try to reason and live\n[00:38.720]But I just can't seem to find home\n[00:43.940]\n[00:44.150]Watch the day\n[00:46.290]Kiss the night\n[00:48.550]Now my heart remains empty and I can't fight\n[00:52.820]Feel the ache\n[00:54.820]Behind my eyes\n[00:57.290]Now the world changed forever and we can't hide\n[01:01.570]Can't escape\n[01:04.340]Everything they just erased\n[01:10.280]Chase the day\n[01:12.270]Go save the night\n[01:14.510]Still I'll be here forever right by your side\n[01:20.350]I'll be right by your side\n[01:24.920]\n[01:31.920]So long, so long\n[01:34.640]We'll hold up our heads and meet again\n[01:40.800]Till we belong\n[01:43.330]And have all the answers in our hands\n[01:48.010]\n[01:48.810]In time, I'm hoping to heal\n[01:52.920]One day, I'll give you this song and\n[01:57.530]As long as you want to hear\n[02:01.600]We will find our own way back home\n[02:07.090]Watch the day\n[02:09.200]Kiss the night\n[02:11.420]Now my heart's filled with you and I'll face the fight\n[02:15.690]Feel the fire\n[02:17.700]Behind my eyes\n[02:20.160]Now the world changed forever and we won't hide\n[02:24.470]Can't escape\n[02:27.200]Everything they just erased\n[02:33.170]Chase the day\n[02:35.150]Go save the night\n[02:37.450]Still I'll be here forever right by your side\n[02:44.320]\n[02:59.380]たとえ　これが\n[03:03.630]すべて　夢だったとしても\n[03:08.040]Chase the day\n[03:10.170]Save the night\n[03:12.290]Still I'll be here forever right by your side\n[03:18.250]I'll be right by your side\n[03:23.990]\n",
+  "translationLrc": "[by:gurantouw]\n[00:09.200]你好 你好\n[00:11.710]夜幕下的街道 愈发寒冷\n[00:18.000]此刻家园之中 已是空无一人\n[00:20.420]或许我该轻声道出 那句最后的道别\n[00:25.160]\n[00:25.920]心中却仍尚存疑问\n[00:29.820]不知为何 我依然困在过往牢笼中\n[00:34.500]我也曾寻过答案 也曾竭力去活\n[00:38.720]却似乎再也寻不到归宿\n[00:43.940]\n[00:44.150]目送白昼\n[00:46.290]亲吻长夜\n[00:48.550]此刻我心空荡 无力抵抗\n[00:52.820]只任痛楚蔓延\n[00:54.820]在眼眸深处\n[00:57.290]世界天翻地覆 我们无处可藏\n[01:01.570]也无从逃离\n[01:04.340]这被尽数抹去的一切\n[01:10.280]追赶白昼\n[01:12.270]拯救长夜\n[01:14.510]我会永远守护在你身侧 为你守护\n[01:20.350]永远在你身侧 为你守护\n[01:24.920]\n[01:31.920]再会 再会\n[01:34.640]我们将昂首挺胸 迎来下一次重逢\n[01:40.800]直至我们找到归属\n[01:43.330]将一切答案握于掌中\n[01:48.010]\n[01:48.810]假以时日 我心盼伤痛愈合\n[01:52.920]终有一日 我会将此歌献给你\n[01:57.530]只要你仍愿倾听\n[02:01.600]我们定会找到独属于你我的归路\n[02:07.090]目送白昼\n[02:09.200]亲吻长夜\n[02:11.420]此刻你已占据我的心间 而我将毅然迎战\n[02:15.690]感受那烈焰\n[02:17.700]在眼眸深处灼烧\n[02:20.160]世界天翻地覆 而我们不再躲藏\n[02:24.470]你我无法逃离\n[02:27.200]这被尽数抹去的一切\n[02:33.170]追赶白昼\n[02:35.150]拯救长夜\n[02:37.450]我会永远守护在你身侧 为你守护\n[02:44.320]\n[02:59.380]纵使这一切\n[03:03.630]不过是幻梦一场\n[03:08.040]追赶白昼\n[03:10.170]拯救长夜\n[03:12.290]我会永远守护在你身侧 为你守护\n[03:18.250]永远在你身侧 为你守护\n[03:23.990]",
+  "romanizationLrc": "",
+  "instrumental": false,
+  "lines": [
+    {
+      "t": 0,
+      "text": "作词 : Kanata Okajima, Shao Hao, Nay Shalom"
+    },
+    {
+      "t": 1,
+      "text": "作曲 : Kanata Okajima, Shao Hao, Nay Shalom"
+    },
+    {
+      "t": 9.2,
+      "text": "Hello, hello"
+    },
+    {
+      "t": 11.71,
+      "text": "The streets getting colder here at night"
+    },
+    {
+      "t": 18,
+      "text": "Now no ones home"
+    },
+    {
+      "t": 20.42,
+      "text": "Am I gonna give my last goodbye"
+    },
+    {
+      "t": 25.92,
+      "text": "My mind is questioning still"
+    },
+    {
+      "t": 29.82,
+      "text": "Somehow, I'm stuck on rewind and"
+    },
+    {
+      "t": 34.5,
+      "text": "I try to reason and live"
+    },
+    {
+      "t": 38.72,
+      "text": "But I just can't seem to find home"
+    },
+    {
+      "t": 44.15,
+      "text": "Watch the day"
+    },
+    {
+      "t": 46.29,
+      "text": "Kiss the night"
+    },
+    {
+      "t": 48.55,
+      "text": "Now my heart remains empty and I can't fight"
+    },
+    {
+      "t": 52.82,
+      "text": "Feel the ache"
+    },
+    {
+      "t": 54.82,
+      "text": "Behind my eyes"
+    },
+    {
+      "t": 57.29,
+      "text": "Now the world changed forever and we can't hide"
+    },
+    {
+      "t": 61.57,
+      "text": "Can't escape"
+    },
+    {
+      "t": 64.34,
+      "text": "Everything they just erased"
+    },
+    {
+      "t": 70.28,
+      "text": "Chase the day"
+    },
+    {
+      "t": 72.27,
+      "text": "Go save the night"
+    },
+    {
+      "t": 74.51,
+      "text": "Still I'll be here forever right by your side"
+    },
+    {
+      "t": 80.35,
+      "text": "I'll be right by your side"
+    },
+    {
+      "t": 91.92,
+      "text": "So long, so long"
+    },
+    {
+      "t": 94.64,
+      "text": "We'll hold up our heads and meet again"
+    },
+    {
+      "t": 100.8,
+      "text": "Till we belong"
+    },
+    {
+      "t": 103.33,
+      "text": "And have all the answers in our hands"
+    },
+    {
+      "t": 108.81,
+      "text": "In time, I'm hoping to heal"
+    },
+    {
+      "t": 112.92,
+      "text": "One day, I'll give you this song and"
+    },
+    {
+      "t": 117.53,
+      "text": "As long as you want to hear"
+    },
+    {
+      "t": 121.6,
+      "text": "We will find our own way back home"
+    },
+    {
+      "t": 127.09,
+      "text": "Watch the day"
+    },
+    {
+      "t": 129.2,
+      "text": "Kiss the night"
+    },
+    {
+      "t": 131.42,
+      "text": "Now my heart's filled with you and I'll face the fight"
+    },
+    {
+      "t": 135.69,
+      "text": "Feel the fire"
+    },
+    {
+      "t": 137.7,
+      "text": "Behind my eyes"
+    },
+    {
+      "t": 140.16,
+      "text": "Now the world changed forever and we won't hide"
+    },
+    {
+      "t": 144.47,
+      "text": "Can't escape"
+    },
+    {
+      "t": 147.2,
+      "text": "Everything they just erased"
+    },
+    {
+      "t": 153.17,
+      "text": "Chase the day"
+    },
+    {
+      "t": 155.15,
+      "text": "Go save the night"
+    },
+    {
+      "t": 157.45,
+      "text": "Still I'll be here forever right by your side"
+    },
+    {
+      "t": 179.38,
+      "text": "たとえ　これが"
+    },
+    {
+      "t": 183.63,
+      "text": "すべて　夢だったとしても"
+    },
+    {
+      "t": 188.04,
+      "text": "Chase the day"
+    },
+    {
+      "t": 190.17,
+      "text": "Save the night"
+    },
+    {
+      "t": 192.29,
+      "text": "Still I'll be here forever right by your side"
+    },
+    {
+      "t": 198.25,
+      "text": "I'll be right by your side"
+    }
+  ]
+}

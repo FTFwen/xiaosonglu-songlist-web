@@ -1,0 +1,160 @@
+{
+  "schemaVersion": 1,
+  "key": "song-95",
+  "songId": 95,
+  "songName": "恋苦",
+  "rowKey": "恋苦",
+  "displaySongName": "恋苦",
+  "artist": "月犬P / 星尘",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "来自 2026-08-23 行道树投稿回（2）清唱加演段，歌切合集《【小松绿Viridis】20260823 歌切》分P《恋苦》（心灵火Flame）。萌百核实：月犬P 2022年投稿 Synthesizer V 中文原创，星尘（星尘Infinity）演唱。",
+  "audio": {
+    "url": "assets/audio/song_96.m4a?v=19fb240b9f63",
+    "sha256": "19fb240b9f63f4cfa4979639a6f8d427df7edf8e614921b5bdf9c86ce05a33b1"
+  },
+  "retrievedAt": "2026-11-16T04:12:32.140Z",
+  "match": {
+    "status": "not_found",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E6%81%8B%E8%8B%A6&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E6%81%8B%E8%8B%A6%20%E6%9C%88%E7%8A%ACP%20%2F%20%E6%98%9F%E5%B0%98&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1974146645,
+        "name": "恋苦",
+        "artists": [
+          "斌"
+        ],
+        "album": "爱意",
+        "durationMs": 45302,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3445020104,
+        "name": "恋苦",
+        "artists": [
+          "誓愿"
+        ],
+        "album": "誓愿的专辑",
+        "durationMs": 203213,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3376798770,
+        "name": "恋苦",
+        "artists": [
+          "哈哈V"
+        ],
+        "album": "《青春微电影》",
+        "durationMs": 209839,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2687336160,
+        "name": "奇迹从来没出现",
+        "artists": [
+          "乌托邦P",
+          "星尘"
+        ],
+        "album": "科学幻想",
+        "durationMs": 262000,
+        "titleScore": 0,
+        "artistMatch": true,
+        "score": 0.2
+      },
+      {
+        "id": 3423906582,
+        "name": "秋凉",
+        "artists": [
+          "花烬_Phoenix",
+          "Kascout",
+          "星尘"
+        ],
+        "album": "秋凉",
+        "durationMs": 190078,
+        "titleScore": 0,
+        "artistMatch": true,
+        "score": 0.2
+      },
+      {
+        "id": 3400865034,
+        "name": "雨",
+        "artists": [
+          "抹茶冰P",
+          "星尘"
+        ],
+        "album": "雨",
+        "durationMs": 324522,
+        "titleScore": 0,
+        "artistMatch": true,
+        "score": 0.2
+      },
+      {
+        "id": 2710849639,
+        "name": "童年的终结",
+        "artists": [
+          "乌托邦P",
+          "星尘"
+        ],
+        "album": "科学幻想",
+        "durationMs": 211250,
+        "titleScore": 0,
+        "artistMatch": true,
+        "score": 0.2
+      },
+      {
+        "id": 3392925679,
+        "name": "月下荒野谣",
+        "artists": [
+          "Calia-林焰",
+          "星尘"
+        ],
+        "album": "月下荒野谣",
+        "durationMs": 179999,
+        "titleScore": 0,
+        "artistMatch": true,
+        "score": 0.2
+      }
+    ],
+    "workQuery": {
+      "song_id": 95,
+      "song_name": "恋苦",
+      "show_as_song_name": "",
+      "display_song_name": "恋苦",
+      "artist": "月犬P / 星尘",
+      "artist_search": "恋苦 月犬P 星尘",
+      "feat_artist": "",
+      "remark": "来自 2026-08-23 行道树投稿回（2）清唱加演段，歌切合集《【小松绿Viridis】20260823 歌切》分P《恋苦》（心灵火Flame）。萌百核实：月犬P 2022年投稿 Synthesizer V 中文原创，星尘（星尘Infinity）演唱。",
+      "tone": "",
+      "language": "中文",
+      "type": "中V、原创",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1m9886kEMZ/?p=2",
+      "sing_count": 2,
+      "status_labels": "清唱、自动识别待人工复核、歌回、歌切合集复核",
+      "last_sing_at": "2026-10-27",
+      "row_key": "恋苦"
+    },
+    "review": {
+      "reason": "Reject current ID: local cached and live search metadata show unrelated 45.302s 恋苦 by 斌, empty LRC. Public original upload and https://vocadb.net/S/409522 identify 戀苦 by 月犬P / 坐标P / 踏云社 feat. 星尘Infinity (4:52). Searches for 恋苦/戀苦 plus 月犬/星尘/踏云社 yielded no verified matching Netease ID. Null explicitly means remove wrong match and retain unresolved; do not invent replacement ID.",
+      "evidenceUrl": "https://www.bilibili.com/video/BV1kg411d7gK/",
+      "previousSourceId": 3376798770
+    }
+  },
+  "alignment": {
+    "status": "unavailable",
+    "offsetSeconds": null,
+    "humanVerified": false
+  }
+}

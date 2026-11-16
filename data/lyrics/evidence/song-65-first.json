@@ -1,0 +1,239 @@
+{
+  "audioSha256": "d443844445becd96e45df8a3396ce4e43838a8c4ffa1cc623531b3b74695b2a7",
+  "model": "whisper-base",
+  "start": 0,
+  "end": 35,
+  "result": {
+    "text": "《愛情》我都想要你你都想要你你都想要你",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 24.44,
+        "end": 28.3,
+        "text": "《愛情》",
+        "tokens": [
+          50364,
+          9806,
+          15157,
+          10570,
+          9782,
+          50664
+        ],
+        "temperature": 0,
+        "avg_logprob": -2.1148902348109653,
+        "compression_ratio": 0.6,
+        "no_speech_prob": 0.565066933631897,
+        "words": [
+          {
+            "word": "《",
+            "start": 24.44,
+            "end": 25.84,
+            "probability": 0.011870422400534153
+          },
+          {
+            "word": "愛",
+            "start": 25.84,
+            "end": 25.84,
+            "probability": 0.015415145084261894
+          },
+          {
+            "word": "情",
+            "start": 25.84,
+            "end": 28.12,
+            "probability": 0.232656791806221
+          },
+          {
+            "word": "》",
+            "start": 28.12,
+            "end": 28.3,
+            "probability": 0.42088454961776733
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "seek": 3000,
+        "start": 31.42,
+        "end": 34.22,
+        "text": "我都想要你",
+        "tokens": [
+          50364,
+          1654,
+          7182,
+          7093,
+          4275,
+          2166,
+          50414
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.8274664349026151,
+        "compression_ratio": 2.6785714285714284,
+        "no_speech_prob": 0.7983884215354919,
+        "words": [
+          {
+            "word": "我",
+            "start": 31.42,
+            "end": 32.82,
+            "probability": 0.019934117794036865
+          },
+          {
+            "word": "都",
+            "start": 32.82,
+            "end": 34.22,
+            "probability": 0.017154958099126816
+          },
+          {
+            "word": "想",
+            "start": 34.22,
+            "end": 34.22,
+            "probability": 0.0936669260263443
+          },
+          {
+            "word": "要",
+            "start": 34.22,
+            "end": 34.22,
+            "probability": 0.07080433517694473
+          },
+          {
+            "word": "你",
+            "start": 34.22,
+            "end": 34.22,
+            "probability": 0.06647699326276779
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "seek": 3000,
+        "start": 34.22,
+        "end": 34.22,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.8274664349026151,
+        "compression_ratio": 2.6785714285714284,
+        "no_speech_prob": 0.7983884215354919,
+        "words": []
+      },
+      {
+        "id": 3,
+        "seek": 3000,
+        "start": 34.22,
+        "end": 34.88,
+        "text": "你都想要你",
+        "tokens": [
+          50464,
+          2166,
+          7182,
+          7093,
+          4275,
+          2166,
+          50514
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.8274664349026151,
+        "compression_ratio": 2.6785714285714284,
+        "no_speech_prob": 0.7983884215354919,
+        "words": [
+          {
+            "word": "你",
+            "start": 34.22,
+            "end": 34.88,
+            "probability": 0.2612161636352539
+          },
+          {
+            "word": "都",
+            "start": 34.88,
+            "end": 34.88,
+            "probability": 0.22533489763736725
+          },
+          {
+            "word": "想",
+            "start": 34.88,
+            "end": 34.88,
+            "probability": 0.9853193759918213
+          },
+          {
+            "word": "要",
+            "start": 34.88,
+            "end": 34.88,
+            "probability": 0.827979326248169
+          },
+          {
+            "word": "你",
+            "start": 34.88,
+            "end": 34.88,
+            "probability": 0.8630631566047668
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "seek": 3000,
+        "start": 34.88,
+        "end": 34.98,
+        "text": "你都想要你",
+        "tokens": [
+          50514,
+          2166,
+          7182,
+          7093,
+          4275,
+          2166,
+          50564
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.8274664349026151,
+        "compression_ratio": 2.6785714285714284,
+        "no_speech_prob": 0.7983884215354919,
+        "words": [
+          {
+            "word": "你",
+            "start": 34.88,
+            "end": 34.98,
+            "probability": 0.47325319051742554
+          },
+          {
+            "word": "都",
+            "start": 34.98,
+            "end": 34.98,
+            "probability": 0.2565883696079254
+          },
+          {
+            "word": "想",
+            "start": 34.98,
+            "end": 34.98,
+            "probability": 0.9929412603378296
+          },
+          {
+            "word": "要",
+            "start": 34.98,
+            "end": 34.98,
+            "probability": 0.8943222165107727
+          },
+          {
+            "word": "你",
+            "start": 34.98,
+            "end": 34.98,
+            "probability": 0.8964409232139587
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "seek": 3000,
+        "start": 34.98,
+        "end": 34.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.8274664349026151,
+        "compression_ratio": 2.6785714285714284,
+        "no_speech_prob": 0.7983884215354919,
+        "words": []
+      }
+    ],
+    "language": "zh"
+  }
+}

@@ -1,0 +1,138 @@
+{
+  "audioSha256": "3b0d21feed5a9e484a55bc3a48c601b0166b5fc1838177b2792511f9d9396d6d",
+  "model": "whisper-base",
+  "start": 0,
+  "end": 37.763000000000005,
+  "result": {
+    "text": "休息一下は?楽しみねまた声がしたの",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 0.0,
+        "end": 0.94,
+        "text": "休息一下は?",
+        "tokens": [
+          50364,
+          39437,
+          26460,
+          8861,
+          3065,
+          30,
+          50464
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.9376233816146851,
+        "compression_ratio": 0.64,
+        "no_speech_prob": 0.0028096919413655996,
+        "words": [
+          {
+            "word": "休",
+            "start": 0.0,
+            "end": 0.34,
+            "probability": 0.9067758917808533
+          },
+          {
+            "word": "息",
+            "start": 0.34,
+            "end": 0.52,
+            "probability": 0.8618040084838867
+          },
+          {
+            "word": "一下",
+            "start": 0.52,
+            "end": 0.78,
+            "probability": 0.7403088808059692
+          },
+          {
+            "word": "は?",
+            "start": 0.78,
+            "end": 0.94,
+            "probability": 0.19800367951393127
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "seek": 3000,
+        "start": 30.0,
+        "end": 36.68,
+        "text": "楽しみねまた声がしたの",
+        "tokens": [
+          50364,
+          35479,
+          2849,
+          11362,
+          5555,
+          24712,
+          32045,
+          5142,
+          8533,
+          2972,
+          50746
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.7599576314290365,
+        "compression_ratio": 0.825,
+        "no_speech_prob": 0.4408767521381378,
+        "words": [
+          {
+            "word": "楽",
+            "start": 30.0,
+            "end": 30.66,
+            "probability": 0.5139820575714111
+          },
+          {
+            "word": "し",
+            "start": 30.66,
+            "end": 31.0,
+            "probability": 0.9442083835601807
+          },
+          {
+            "word": "み",
+            "start": 31.0,
+            "end": 31.58,
+            "probability": 0.9812881946563721
+          },
+          {
+            "word": "ね",
+            "start": 31.58,
+            "end": 31.98,
+            "probability": 0.551649272441864
+          },
+          {
+            "word": "また",
+            "start": 31.98,
+            "end": 33.04,
+            "probability": 0.3432214856147766
+          },
+          {
+            "word": "声",
+            "start": 33.04,
+            "end": 34.9,
+            "probability": 0.370108425617218
+          },
+          {
+            "word": "が",
+            "start": 34.9,
+            "end": 35.36,
+            "probability": 0.501923143863678
+          },
+          {
+            "word": "した",
+            "start": 35.36,
+            "end": 36.28,
+            "probability": 0.28582942485809326
+          },
+          {
+            "word": "の",
+            "start": 36.28,
+            "end": 36.68,
+            "probability": 0.9905748963356018
+          }
+        ]
+      }
+    ],
+    "language": "ja"
+  }
+}

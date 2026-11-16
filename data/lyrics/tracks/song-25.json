@@ -1,0 +1,193 @@
+{
+  "schemaVersion": 1,
+  "key": "song-25",
+  "songId": 25,
+  "songName": "三月雨",
+  "rowKey": "三月雨",
+  "displaySongName": "三月雨",
+  "artist": "乐正绫",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "来自 2026-08-11 歌回回放。根据音频切片转写出的歌词片段联网检索，命中《三月雨》歌词结果。",
+  "audio": {
+    "url": "assets/audio/song_03.m4a?v=e22b0f8bbed4",
+    "sha256": "e22b0f8bbed435beab866d9b038c7cb7e694b647d5603d36468be766a2b6fb25"
+  },
+  "retrievedAt": "2026-11-16T04:12:21.562Z",
+  "match": {
+    "status": "candidate_review_required",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E4%B8%89%E6%9C%88%E9%9B%A8&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E4%B8%89%E6%9C%88%E9%9B%A8%20%E4%B9%90%E6%AD%A3%E7%BB%AB&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 2026740264,
+        "name": "三月雨",
+        "artists": [
+          "晴海",
+          "乐正绫AI",
+          "乐正绫"
+        ],
+        "album": "三月雨",
+        "durationMs": 280320,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2604528480,
+        "name": "三月雨",
+        "artists": [
+          "洛天依Official"
+        ],
+        "album": "再生",
+        "durationMs": 257031,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 28832323,
+        "name": "三月雨",
+        "artists": [
+          "泠鸢yousa"
+        ],
+        "album": "热门华语229",
+        "durationMs": 278000,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2036837312,
+        "name": "三月雨",
+        "artists": [
+          "洛天依Official"
+        ],
+        "album": "三月雨",
+        "durationMs": 215384,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 28445470,
+        "name": "三月雨",
+        "artists": [
+          "洛天依Official"
+        ],
+        "album": "洛天依小鸡哔哔",
+        "durationMs": 277000,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 33682877,
+        "name": "三月雨",
+        "artists": [
+          "泠鸢yousa"
+        ],
+        "album": "翻唱作品集",
+        "durationMs": 278073,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 858927,
+        "name": "三月雨",
+        "artists": [
+          "Wing翼"
+        ],
+        "album": "Sing Sing Sing",
+        "durationMs": 271293,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 4876057,
+        "name": "三月雨",
+        "artists": [
+          "周志华",
+          "江建谊"
+        ],
+        "album": "水月洞天 电视原声带",
+        "durationMs": 144441,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 25,
+      "song_name": "三月雨",
+      "show_as_song_name": "",
+      "display_song_name": "三月雨",
+      "artist": "乐正绫",
+      "artist_search": "乐正绫",
+      "feat_artist": "",
+      "remark": "来自 2026-08-11 歌回回放。根据音频切片转写出的歌词片段联网检索，命中《三月雨》歌词结果。",
+      "tone": "",
+      "language": "中文",
+      "type": "中V、国风、古风",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1tA856aE3R/",
+      "sing_count": 3,
+      "status_labels": "歌回、半场、自动识别待人工复核、歌切合集补录、待后续回放时间定位、歌切合集复核",
+      "last_sing_at": "2026-11-08",
+      "row_key": "三月雨"
+    },
+    "sourceId": 2026740264,
+    "sourcePath": "sources/2026740264.json",
+    "sourceUrl": "https://music.163.com/#/song?id=2026740264",
+    "selected": {
+      "id": 2026740264,
+      "name": "三月雨",
+      "artists": [
+        "晴海",
+        "乐正绫AI",
+        "乐正绫"
+      ],
+      "album": "三月雨",
+      "durationMs": 280320,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 48,
+    "review": {
+      "reason": "Public search confirms 三月雨 by 晴海 / 乐正绫AI / 乐正绫, 280320ms; live lyric API returns 48 timestamped rows, first sung 细雨坠 at 12.64s. This is an artist-consistent source candidate versus current 洛天依 2024 再生 arrangement. Local cut is 439.765s, so do not promote to matched without checking which arrangement/extra material is present; source recommendation only.",
+      "evidenceUrl": "https://music.163.com/api/search/get?s=%E4%B8%89%E6%9C%88%E9%9B%A8%20%E6%99%B4%E6%B5%B7&type=1&limit=8",
+      "previousSourceId": 2026740264
+    }
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-25-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 439.765,
+    "sourceFirstLine": {
+      "t": 7.02,
+      "text": "混音、母带：CuTTleFiSh"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 8.98,
+      "endSeconds": 9.84,
+      "similarity": 0,
+      "recognizedText": "《星",
+      "meanProbability": 0.017,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

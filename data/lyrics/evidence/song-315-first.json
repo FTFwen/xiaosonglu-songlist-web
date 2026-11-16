@@ -1,0 +1,117 @@
+{
+  "audioSha256": "df2e509be126d0eca1de7b207c50b3d7277906e83f0dc8116467750cdd2f7481",
+  "model": "whisper-base",
+  "start": 0,
+  "end": 35,
+  "result": {
+    "text": "【音楽】明日を隠れたい",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 26.860000000000003,
+        "end": 29.98,
+        "text": "【音楽】",
+        "tokens": [
+          50364,
+          15588,
+          18034,
+          35479,
+          15623,
+          50464
+        ],
+        "temperature": 0,
+        "avg_logprob": -1.4065182549612862,
+        "compression_ratio": 0.5714285714285714,
+        "no_speech_prob": 0.5591769814491272,
+        "words": [
+          {
+            "word": "【",
+            "start": 26.860000000000003,
+            "end": 28.26,
+            "probability": 0.007936391048133373
+          },
+          {
+            "word": "音",
+            "start": 28.26,
+            "end": 29.66,
+            "probability": 0.020268401131033897
+          },
+          {
+            "word": "楽",
+            "start": 29.66,
+            "end": 29.96,
+            "probability": 0.6986821293830872
+          },
+          {
+            "word": "】",
+            "start": 29.96,
+            "end": 29.98,
+            "probability": 0.7190787196159363
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "seek": 3000,
+        "start": 30.0,
+        "end": 33.86,
+        "text": "明日を隠れたい",
+        "tokens": [
+          50364,
+          11100,
+          6890,
+          5998,
+          10673,
+          254,
+          4132,
+          20699,
+          50608
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.8151520729064942,
+        "compression_ratio": 0.7,
+        "no_speech_prob": 0.2283114194869995,
+        "words": [
+          {
+            "word": "明",
+            "start": 30.0,
+            "end": 30.64,
+            "probability": 0.24853868782520294
+          },
+          {
+            "word": "日",
+            "start": 30.64,
+            "end": 31.1,
+            "probability": 0.9815391898155212
+          },
+          {
+            "word": "を",
+            "start": 31.1,
+            "end": 31.64,
+            "probability": 0.9838362336158752
+          },
+          {
+            "word": "隠",
+            "start": 31.64,
+            "end": 32.24,
+            "probability": 0.5753940343856812
+          },
+          {
+            "word": "れ",
+            "start": 32.24,
+            "end": 33.0,
+            "probability": 0.14219476282596588
+          },
+          {
+            "word": "たい",
+            "start": 33.0,
+            "end": 33.86,
+            "probability": 0.993384063243866
+          }
+        ]
+      }
+    ],
+    "language": "ja"
+  }
+}

@@ -1,0 +1,371 @@
+{
+  "audioSha256": "13549dc38c8b2d99c71942d2fda8391896c5d55c54c2fb6dd8c75ecc7ffb601e",
+  "model": "whisper-base",
+  "start": 0,
+  "end": 43.65,
+  "result": {
+    "text": "《大陆》每一世每樣為每一心如何相配怕離手心脆 為母煎的花又為",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 27.0,
+        "end": 29.5,
+        "text": "《大陆》",
+        "tokens": [
+          50364,
+          9806,
+          3582,
+          8842,
+          228,
+          9782,
+          50564
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.6096701128729458,
+        "compression_ratio": 4.0,
+        "no_speech_prob": 0.6337512731552124,
+        "words": [
+          {
+            "word": "《",
+            "start": 27.0,
+            "end": 28.4,
+            "probability": 0.005775676108896732
+          },
+          {
+            "word": "大",
+            "start": 28.4,
+            "end": 28.4,
+            "probability": 0.020739223808050156
+          },
+          {
+            "word": "陆",
+            "start": 28.4,
+            "end": 28.8,
+            "probability": 0.17283785343170166
+          },
+          {
+            "word": "》",
+            "start": 28.8,
+            "end": 29.5,
+            "probability": 0.20606225728988647
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "seek": 0,
+        "start": 29.5,
+        "end": 29.5,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.6096701128729458,
+        "compression_ratio": 4.0,
+        "no_speech_prob": 0.6337512731552124,
+        "words": []
+      },
+      {
+        "id": 2,
+        "seek": 0,
+        "start": 29.5,
+        "end": 29.5,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.6096701128729458,
+        "compression_ratio": 4.0,
+        "no_speech_prob": 0.6337512731552124,
+        "words": []
+      },
+      {
+        "id": 3,
+        "seek": 0,
+        "start": 29.5,
+        "end": 29.5,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.6096701128729458,
+        "compression_ratio": 4.0,
+        "no_speech_prob": 0.6337512731552124,
+        "words": []
+      },
+      {
+        "id": 4,
+        "seek": 0,
+        "start": 29.5,
+        "end": 29.5,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.6096701128729458,
+        "compression_ratio": 4.0,
+        "no_speech_prob": 0.6337512731552124,
+        "words": []
+      },
+      {
+        "id": 5,
+        "seek": 0,
+        "start": 29.5,
+        "end": 29.5,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.6096701128729458,
+        "compression_ratio": 4.0,
+        "no_speech_prob": 0.6337512731552124,
+        "words": []
+      },
+      {
+        "id": 6,
+        "seek": 0,
+        "start": 29.5,
+        "end": 29.5,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.6096701128729458,
+        "compression_ratio": 4.0,
+        "no_speech_prob": 0.6337512731552124,
+        "words": []
+      },
+      {
+        "id": 7,
+        "seek": 0,
+        "start": 29.5,
+        "end": 29.5,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.6096701128729458,
+        "compression_ratio": 4.0,
+        "no_speech_prob": 0.6337512731552124,
+        "words": []
+      },
+      {
+        "id": 8,
+        "seek": 2950,
+        "start": 29.5,
+        "end": 31.58,
+        "text": "每一世每樣為",
+        "tokens": [
+          50364,
+          23664,
+          2257,
+          17484,
+          23664,
+          6180,
+          6344,
+          50514
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.864614767186782,
+        "compression_ratio": 0.95,
+        "no_speech_prob": 0.8311561346054077,
+        "words": [
+          {
+            "word": "每",
+            "start": 29.5,
+            "end": 29.62,
+            "probability": 0.12058641016483307
+          },
+          {
+            "word": "一",
+            "start": 29.62,
+            "end": 29.98,
+            "probability": 0.4081936776638031
+          },
+          {
+            "word": "世",
+            "start": 29.98,
+            "end": 30.16,
+            "probability": 0.08277162164449692
+          },
+          {
+            "word": "每",
+            "start": 30.16,
+            "end": 30.58,
+            "probability": 0.7252287268638611
+          },
+          {
+            "word": "樣",
+            "start": 30.58,
+            "end": 30.98,
+            "probability": 0.7226070761680603
+          },
+          {
+            "word": "為",
+            "start": 30.98,
+            "end": 31.58,
+            "probability": 0.2660992443561554
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "seek": 2950,
+        "start": 33.5,
+        "end": 37.56,
+        "text": "每一心如何相配",
+        "tokens": [
+          50564,
+          23664,
+          2257,
+          7945,
+          43526,
+          15106,
+          38846,
+          50764
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.864614767186782,
+        "compression_ratio": 0.95,
+        "no_speech_prob": 0.8311561346054077,
+        "words": [
+          {
+            "word": "每",
+            "start": 33.39999999999999,
+            "end": 33.81999999999999,
+            "probability": 0.8981241583824158
+          },
+          {
+            "word": "一",
+            "start": 33.81999999999999,
+            "end": 34.66,
+            "probability": 0.47808605432510376
+          },
+          {
+            "word": "心",
+            "start": 34.66,
+            "end": 35.16,
+            "probability": 0.1998888999223709
+          },
+          {
+            "word": "如何",
+            "start": 35.16,
+            "end": 35.92,
+            "probability": 0.28552597761154175
+          },
+          {
+            "word": "相",
+            "start": 35.92,
+            "end": 36.66,
+            "probability": 0.8637965321540833
+          },
+          {
+            "word": "配",
+            "start": 36.66,
+            "end": 37.56,
+            "probability": 0.6673292517662048
+          }
+        ]
+      },
+      {
+        "id": 10,
+        "seek": 2950,
+        "start": 38.5,
+        "end": 43.38,
+        "text": "怕離手心脆 為母煎的花又為",
+        "tokens": [
+          50814,
+          21164,
+          32662,
+          11389,
+          7945,
+          27067,
+          228,
+          220,
+          6344,
+          35744,
+          17867,
+          236,
+          1546,
+          20127,
+          17047,
+          6344,
+          51064
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.864614767186782,
+        "compression_ratio": 0.95,
+        "no_speech_prob": 0.8311561346054077,
+        "words": [
+          {
+            "word": "怕",
+            "start": 38.18,
+            "end": 38.6,
+            "probability": 0.622953474521637
+          },
+          {
+            "word": "離",
+            "start": 38.6,
+            "end": 38.9,
+            "probability": 0.22691309452056885
+          },
+          {
+            "word": "手",
+            "start": 38.9,
+            "end": 39.5,
+            "probability": 0.5259695649147034
+          },
+          {
+            "word": "心",
+            "start": 39.5,
+            "end": 40.34,
+            "probability": 0.4851556420326233
+          },
+          {
+            "word": "脆",
+            "start": 40.34,
+            "end": 40.78,
+            "probability": 0.8116461038589478
+          },
+          {
+            "word": " 為",
+            "start": 41.26,
+            "end": 41.4,
+            "probability": 0.4910823106765747
+          },
+          {
+            "word": "母",
+            "start": 41.4,
+            "end": 41.72,
+            "probability": 0.36450716853141785
+          },
+          {
+            "word": "煎",
+            "start": 41.72,
+            "end": 42.06,
+            "probability": 0.5637066066265106
+          },
+          {
+            "word": "的",
+            "start": 42.06,
+            "end": 42.38,
+            "probability": 0.2828601002693176
+          },
+          {
+            "word": "花",
+            "start": 42.38,
+            "end": 42.8,
+            "probability": 0.7978300452232361
+          },
+          {
+            "word": "又",
+            "start": 42.8,
+            "end": 43.06,
+            "probability": 0.4317466616630554
+          },
+          {
+            "word": "為",
+            "start": 43.06,
+            "end": 43.38,
+            "probability": 0.27724671363830566
+          }
+        ]
+      }
+    ],
+    "language": "zh"
+  }
+}

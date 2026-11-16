@@ -1,0 +1,188 @@
+{
+  "schemaVersion": 1,
+  "key": "song-85",
+  "songId": 85,
+  "songName": "Fly me to the star",
+  "rowKey": "Fly me to the star",
+  "displaySongName": "Fly me to the star",
+  "artist": "九九组（少女歌剧）",
+  "language": "日文",
+  "derivative": false,
+  "edition": "",
+  "remark": "来自 2026-08-20 偶像歌回。经弹幕歌词交叉验证 + 歌切视频《【小松绿Viridis/歌回】20260820-偶像歌回？欸》分P第15章节确认曲目；时间按歌切分P累计估算，待回放复核。歌手信息来自网易云音乐/萌娘百科检索。",
+  "audio": {
+    "url": "assets/audio/song_76.m4a?v=131633c96931",
+    "sha256": "131633c969314d5100311e10fd830b4ddc0f01aef0e102ad02c9886baa5fa903"
+  },
+  "retrievedAt": "2026-11-16T04:13:00.103Z",
+  "match": {
+    "status": "candidate_review_required",
+    "queries": [
+      "https://music.163.com/api/search/get?s=Fly%20me%20to%20the%20star&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=Fly%20me%20to%20the%20star%20%E4%B9%9D%E4%B9%9D%E7%BB%84&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1297747109,
+        "name": "Fly Me to the Star",
+        "artists": [
+          "小山百代",
+          "三森すずこ"
+        ],
+        "album": "Fly Me to the Star",
+        "durationMs": 193800,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1832154734,
+        "name": "Fly Me to the Star",
+        "artists": [
+          "スタァライト九九組"
+        ],
+        "album": "「少女☆歌劇 レヴュースタァライト」ベストアルバム",
+        "durationMs": 193800,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2724765223,
+        "name": "Fly Me to the Star",
+        "artists": [
+          "Elira Pendora"
+        ],
+        "album": "Fly Me to the Star",
+        "durationMs": 192339,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1322619309,
+        "name": "Fly Me to the Star",
+        "artists": [
+          "Mokona",
+          "冥月"
+        ],
+        "album": "MOKONA010(aka阿黄)的日语翻唱",
+        "durationMs": 194343,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3454357566,
+        "name": "Fly Me to the Star (九九組Ver.)",
+        "artists": [
+          "スタァライト九九組"
+        ],
+        "album": "Star Tales",
+        "durationMs": 194400,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 1317457741,
+        "name": "Fly Me to the Star #9",
+        "artists": [
+          "佐藤日向",
+          "小泉萌香"
+        ],
+        "album": "「少女☆歌劇 レヴュースタァライト」劇中歌アルバム Vol.2「ラ レヴュー ド ソワレ」",
+        "durationMs": 93786,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 1303028280,
+        "name": "Fly Me to the Star #5",
+        "artists": [
+          "岩田陽葵"
+        ],
+        "album": "「少女☆歌劇 レヴュースタァライト」劇中歌アルバムVol.1「ラ レヴュー ド マチネ」",
+        "durationMs": 93786,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 1303026286,
+        "name": "Fly Me to the Star #6",
+        "artists": [
+          "伊藤彩沙",
+          "生田輝"
+        ],
+        "album": "「少女☆歌劇 レヴュースタァライト」劇中歌アルバムVol.1「ラ レヴュー ド マチネ」",
+        "durationMs": 93800,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      }
+    ],
+    "workQuery": {
+      "song_id": 85,
+      "song_name": "Fly me to the star",
+      "show_as_song_name": "",
+      "display_song_name": "Fly me to the star",
+      "artist": "九九组（少女歌剧）",
+      "artist_search": "Fly me to the star 少女歌剧 九九组 Revue Starlight",
+      "feat_artist": "",
+      "remark": "来自 2026-08-20 偶像歌回。经弹幕歌词交叉验证 + 歌切视频《【小松绿Viridis/歌回】20260820-偶像歌回？欸》分P第15章节确认曲目；时间按歌切分P累计估算，待回放复核。歌手信息来自网易云音乐/萌娘百科检索。",
+      "tone": "",
+      "language": "日文",
+      "type": "动画、少女歌剧",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1WS8c6XE9w?p=15",
+      "sing_count": 1,
+      "status_labels": "歌回、自动识别待人工复核",
+      "last_sing_at": "2026-08-20",
+      "row_key": "Fly me to the star"
+    },
+    "sourceId": 1297747109,
+    "sourcePath": "sources/1297747109.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1297747109",
+    "selected": {
+      "id": 1297747109,
+      "name": "Fly Me to the Star",
+      "artists": [
+        "小山百代",
+        "三森すずこ"
+      ],
+      "album": "Fly Me to the Star",
+      "durationMs": 193800,
+      "titleScore": 1,
+      "artistMatch": false,
+      "score": 0.8
+    },
+    "timedLineCount": 22
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-85-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 191.147,
+    "sourceFirstLine": {
+      "t": 3,
+      "text": "Strings编曲 : 加藤達也"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 17.24,
+      "endSeconds": 17.24,
+      "similarity": 0.14285714285714285,
+      "recognizedText": "曲",
+      "meanProbability": 0.841,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "ja",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

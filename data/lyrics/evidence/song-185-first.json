@@ -1,0 +1,518 @@
+{
+  "audioSha256": "8e2c3b7c9c1753bad126df86c0043252fbaa70d444b556d18e25b3669a23e8d0",
+  "model": "whisper-base",
+  "start": 0,
+  "end": 37.61,
+  "result": {
+    "text": "你等晚安剩下一束的錄影我留著眼神這流是描迷你等我那风说些心流在心里相听来不及",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 17.860000000000007,
+        "end": 20.84,
+        "text": "你等晚安",
+        "tokens": [
+          50364,
+          2166,
+          10187,
+          27080,
+          16206,
+          50464
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.6902213760569126,
+        "compression_ratio": 1.6630434782608696,
+        "no_speech_prob": 0.709148645401001,
+        "words": [
+          {
+            "word": "你",
+            "start": 17.860000000000007,
+            "end": 18.76,
+            "probability": 0.08503247797489166
+          },
+          {
+            "word": "等",
+            "start": 18.76,
+            "end": 19.02,
+            "probability": 0.5468557476997375
+          },
+          {
+            "word": "晚",
+            "start": 19.02,
+            "end": 19.68,
+            "probability": 0.5247633457183838
+          },
+          {
+            "word": "安",
+            "start": 19.68,
+            "end": 20.84,
+            "probability": 0.5335938930511475
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "seek": 0,
+        "start": 20.84,
+        "end": 24.46,
+        "text": "剩下一束的錄影",
+        "tokens": [
+          50464,
+          5935,
+          102,
+          4438,
+          2257,
+          44320,
+          1546,
+          9567,
+          226,
+          16820,
+          50564
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.6902213760569126,
+        "compression_ratio": 1.6630434782608696,
+        "no_speech_prob": 0.709148645401001,
+        "words": [
+          {
+            "word": "剩",
+            "start": 20.84,
+            "end": 21.62,
+            "probability": 0.2349006123840809
+          },
+          {
+            "word": "下",
+            "start": 21.62,
+            "end": 22.06,
+            "probability": 0.5926907062530518
+          },
+          {
+            "word": "一",
+            "start": 22.06,
+            "end": 22.46,
+            "probability": 0.6275206208229065
+          },
+          {
+            "word": "束",
+            "start": 22.46,
+            "end": 22.76,
+            "probability": 0.1660669595003128
+          },
+          {
+            "word": "的",
+            "start": 22.76,
+            "end": 23.24,
+            "probability": 0.9310520887374878
+          },
+          {
+            "word": "錄",
+            "start": 23.24,
+            "end": 23.58,
+            "probability": 0.3025330975651741
+          },
+          {
+            "word": "影",
+            "start": 23.58,
+            "end": 24.46,
+            "probability": 0.7314833402633667
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "seek": 0,
+        "start": 24.46,
+        "end": 26.94,
+        "text": "我留著眼神",
+        "tokens": [
+          50564,
+          1654,
+          24456,
+          19382,
+          25281,
+          20432,
+          50664
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.6902213760569126,
+        "compression_ratio": 1.6630434782608696,
+        "no_speech_prob": 0.709148645401001,
+        "words": [
+          {
+            "word": "我",
+            "start": 24.46,
+            "end": 25.16,
+            "probability": 0.9276313185691833
+          },
+          {
+            "word": "留",
+            "start": 25.16,
+            "end": 25.5,
+            "probability": 0.8127332925796509
+          },
+          {
+            "word": "著",
+            "start": 25.5,
+            "end": 25.92,
+            "probability": 0.7320857048034668
+          },
+          {
+            "word": "眼",
+            "start": 25.92,
+            "end": 26.32,
+            "probability": 0.22085343301296234
+          },
+          {
+            "word": "神",
+            "start": 26.32,
+            "end": 26.94,
+            "probability": 0.7361158132553101
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "seek": 0,
+        "start": 26.94,
+        "end": 29.04,
+        "text": "這流是描迷",
+        "tokens": [
+          50664,
+          2664,
+          27854,
+          1541,
+          11673,
+          237,
+          3316,
+          115,
+          50764
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.6902213760569126,
+        "compression_ratio": 1.6630434782608696,
+        "no_speech_prob": 0.709148645401001,
+        "words": [
+          {
+            "word": "這",
+            "start": 26.94,
+            "end": 27.54,
+            "probability": 0.1726059764623642
+          },
+          {
+            "word": "流",
+            "start": 27.54,
+            "end": 27.9,
+            "probability": 0.15227968990802765
+          },
+          {
+            "word": "是",
+            "start": 27.9,
+            "end": 28.28,
+            "probability": 0.2205273061990738
+          },
+          {
+            "word": "描",
+            "start": 28.28,
+            "end": 28.74,
+            "probability": 0.5613699480891228
+          },
+          {
+            "word": "迷",
+            "start": 28.74,
+            "end": 29.04,
+            "probability": 0.4758596122264862
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "seek": 0,
+        "start": 29.04,
+        "end": 29.98,
+        "text": "你等我",
+        "tokens": [
+          50764,
+          2166,
+          10187,
+          1654,
+          50864
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.6902213760569126,
+        "compression_ratio": 1.6630434782608696,
+        "no_speech_prob": 0.709148645401001,
+        "words": [
+          {
+            "word": "你",
+            "start": 29.04,
+            "end": 29.98,
+            "probability": 0.3416081368923187
+          },
+          {
+            "word": "等",
+            "start": 29.98,
+            "end": 29.98,
+            "probability": 0.0038718704599887133
+          },
+          {
+            "word": "我",
+            "start": 29.98,
+            "end": 29.98,
+            "probability": 0.09998264908790588
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "seek": 0,
+        "start": 29.98,
+        "end": 29.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.6902213760569126,
+        "compression_ratio": 1.6630434782608696,
+        "no_speech_prob": 0.709148645401001,
+        "words": []
+      },
+      {
+        "id": 6,
+        "seek": 0,
+        "start": 29.98,
+        "end": 29.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.6902213760569126,
+        "compression_ratio": 1.6630434782608696,
+        "no_speech_prob": 0.709148645401001,
+        "words": []
+      },
+      {
+        "id": 7,
+        "seek": 0,
+        "start": 29.98,
+        "end": 29.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.6902213760569126,
+        "compression_ratio": 1.6630434782608696,
+        "no_speech_prob": 0.709148645401001,
+        "words": []
+      },
+      {
+        "id": 8,
+        "seek": 0,
+        "start": 29.98,
+        "end": 29.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.6902213760569126,
+        "compression_ratio": 1.6630434782608696,
+        "no_speech_prob": 0.709148645401001,
+        "words": []
+      },
+      {
+        "id": 9,
+        "seek": 0,
+        "start": 29.98,
+        "end": 29.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.6902213760569126,
+        "compression_ratio": 1.6630434782608696,
+        "no_speech_prob": 0.709148645401001,
+        "words": []
+      },
+      {
+        "id": 10,
+        "seek": 0,
+        "start": 29.98,
+        "end": 29.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.6902213760569126,
+        "compression_ratio": 1.6630434782608696,
+        "no_speech_prob": 0.709148645401001,
+        "words": []
+      },
+      {
+        "id": 11,
+        "seek": 0,
+        "start": 29.98,
+        "end": 29.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.6902213760569126,
+        "compression_ratio": 1.6630434782608696,
+        "no_speech_prob": 0.709148645401001,
+        "words": []
+      },
+      {
+        "id": 12,
+        "seek": 0,
+        "start": 29.98,
+        "end": 29.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.6902213760569126,
+        "compression_ratio": 1.6630434782608696,
+        "no_speech_prob": 0.709148645401001,
+        "words": []
+      },
+      {
+        "id": 13,
+        "seek": 0,
+        "start": 29.98,
+        "end": 29.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.6902213760569126,
+        "compression_ratio": 1.6630434782608696,
+        "no_speech_prob": 0.709148645401001,
+        "words": []
+      },
+      {
+        "id": 14,
+        "seek": 2998,
+        "start": 29.98,
+        "end": 35.82,
+        "text": "那风说些心流在心里相听",
+        "tokens": [
+          50364,
+          4184,
+          47209,
+          8090,
+          13824,
+          7945,
+          27854,
+          3581,
+          7945,
+          15759,
+          15106,
+          31022,
+          50664
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.5848959872597143,
+        "compression_ratio": 0.7924528301886793,
+        "no_speech_prob": 0.8314843773841858,
+        "words": [
+          {
+            "word": "那",
+            "start": 29.98,
+            "end": 31.48,
+            "probability": 0.5155634880065918
+          },
+          {
+            "word": "风",
+            "start": 31.48,
+            "end": 31.86,
+            "probability": 0.4535411298274994
+          },
+          {
+            "word": "说",
+            "start": 31.86,
+            "end": 32.2,
+            "probability": 0.3878296911716461
+          },
+          {
+            "word": "些",
+            "start": 32.2,
+            "end": 32.78,
+            "probability": 0.8266605138778687
+          },
+          {
+            "word": "心",
+            "start": 32.78,
+            "end": 33.44,
+            "probability": 0.8499508500099182
+          },
+          {
+            "word": "流",
+            "start": 33.44,
+            "end": 33.82,
+            "probability": 0.46172913908958435
+          },
+          {
+            "word": "在",
+            "start": 33.82,
+            "end": 34.16,
+            "probability": 0.8978366255760193
+          },
+          {
+            "word": "心",
+            "start": 34.16,
+            "end": 34.6,
+            "probability": 0.9730746746063232
+          },
+          {
+            "word": "里",
+            "start": 34.6,
+            "end": 35.02,
+            "probability": 0.9243955016136169
+          },
+          {
+            "word": "相",
+            "start": 35.02,
+            "end": 35.46,
+            "probability": 0.48457786440849304
+          },
+          {
+            "word": "听",
+            "start": 35.46,
+            "end": 35.82,
+            "probability": 0.3691100776195526
+          }
+        ]
+      },
+      {
+        "id": 15,
+        "seek": 2998,
+        "start": 35.82,
+        "end": 37.42,
+        "text": "来不及",
+        "tokens": [
+          50664,
+          6912,
+          1960,
+          25703,
+          50764
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.5848959872597143,
+        "compression_ratio": 0.7924528301886793,
+        "no_speech_prob": 0.8314843773841858,
+        "words": [
+          {
+            "word": "来",
+            "start": 35.82,
+            "end": 36.6,
+            "probability": 0.8023615479469299
+          },
+          {
+            "word": "不",
+            "start": 36.6,
+            "end": 37.04,
+            "probability": 0.9510069489479065
+          },
+          {
+            "word": "及",
+            "start": 37.04,
+            "end": 37.42,
+            "probability": 0.8762137293815613
+          }
+        ]
+      }
+    ],
+    "language": "zh"
+  }
+}

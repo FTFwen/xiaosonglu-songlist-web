@@ -1,0 +1,171 @@
+{
+  "schemaVersion": 1,
+  "key": "derivative-1101",
+  "songId": -1101,
+  "songName": "小松绿-云烟成雨",
+  "rowKey": "小松绿-云烟成雨",
+  "displaySongName": "云烟成雨",
+  "artist": "白烁",
+  "language": "",
+  "derivative": true,
+  "edition": "",
+  "remark": "",
+  "audio": {
+    "url": "assets/derivative/yunyan-chengyu.mp3?v=a57ebeff7a64",
+    "sha256": "a57ebeff7a64addfa3502fd3f08ab12e3bfc8d4192f9db6b4e7109bd4250cec2"
+  },
+  "retrievedAt": "2026-11-16T04:08:35.606Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E4%BA%91%E7%83%9F%E6%88%90%E9%9B%A8&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E4%BA%91%E7%83%9F%E6%88%90%E9%9B%A8%20%E6%88%BF%E4%B8%9C%E7%9A%84%E7%8C%AB&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 513360721,
+        "name": "云烟成雨",
+        "artists": [
+          "房东的猫"
+        ],
+        "album": "云烟成雨",
+        "durationMs": 240782,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1843021092,
+        "name": "云烟成雨",
+        "artists": [
+          "房东的猫"
+        ],
+        "album": "谁是宝藏歌手 第3期",
+        "durationMs": 212647,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1947212916,
+        "name": "云烟成雨",
+        "artists": [
+          "筱晓鱼"
+        ],
+        "album": "筱晓鱼",
+        "durationMs": 241439,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1432655319,
+        "name": "云烟成雨",
+        "artists": [
+          "袁必有"
+        ],
+        "album": "失眠天堂",
+        "durationMs": 29837,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2077660967,
+        "name": "云烟成雨",
+        "artists": [
+          "陈浩"
+        ],
+        "album": "好想离开",
+        "durationMs": 177642,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 573466109,
+        "name": "云烟成雨",
+        "artists": [
+          "寞笙"
+        ],
+        "album": "云烟成雨",
+        "durationMs": 239960,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3433480881,
+        "name": "云烟成雨",
+        "artists": [
+          "空心人i"
+        ],
+        "album": "云烟成雨",
+        "durationMs": 229564,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1957017377,
+        "name": "云烟成雨",
+        "artists": [
+          "阿伟"
+        ],
+        "album": "云烟成雨",
+        "durationMs": 229320,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": -1101,
+      "song_name": "云烟成雨",
+      "display_song_name": "云烟成雨",
+      "artist": "房东的猫",
+      "language": "",
+      "audio": "assets/derivative/yunyan-chengyu.mp3?v=a57ebeff7a64",
+      "derivative": true
+    },
+    "sourceId": 513360721,
+    "sourcePath": "sources/513360721.json",
+    "sourceUrl": "https://music.163.com/#/song?id=513360721",
+    "selected": {
+      "id": 513360721,
+      "name": "云烟成雨",
+      "artists": [
+        "房东的猫"
+      ],
+      "album": "云烟成雨",
+      "durationMs": 240782,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 45
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/derivative-1101-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 233.274,
+    "sourceFirstLine": {
+      "t": 17.61,
+      "text": "你的晚安 是下意识的恻隐"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 15.64,
+      "endSeconds": 21.6,
+      "similarity": 0.6,
+      "recognizedText": "你的晚旁是下一世的",
+      "meanProbability": 0.588,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

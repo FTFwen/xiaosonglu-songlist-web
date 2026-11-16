@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 1,
+  "key": "song-38",
+  "songId": 38,
+  "songName": "苍蝇",
+  "displaySongName": "苍蝇",
+  "artist": "ilem / 赤羽",
+  "language": "中文",
+  "derivative": false,
+  "audio": {
+    "url": "assets/audio/song_08.m4a?v=86bf4d083c4e",
+    "sha256": "86bf4d083c4e2908abf2f79b1fa1d4bca2bd30bfddc0e16eef60ce77bc01af6a"
+  },
+  "retrievedAt": "2026-11-16T03:58:38.046Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E8%8B%8D%E8%9D%87&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 3392513819,
+        "name": "苍蝇",
+        "artists": [
+          "ilem",
+          "赤羽"
+        ],
+        "album": "ilem2019-2023年作品合集",
+        "durationMs": 200045,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1485402072,
+        "name": "苍蝇",
+        "artists": [
+          "三无Marblue"
+        ],
+        "album": "苍蝇",
+        "durationMs": 200150,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2679739811,
+        "name": "苍蝇",
+        "artists": [
+          "犬儒乐队"
+        ],
+        "album": "天才艺术家",
+        "durationMs": 187384,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1473839284,
+        "name": "苍蝇",
+        "artists": [
+          "祖娅纳惜"
+        ],
+        "album": "苍蝇",
+        "durationMs": 200086,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 186108,
+        "name": "苍蝇",
+        "artists": [
+          "张楚"
+        ],
+        "album": "孤独的人是可耻的",
+        "durationMs": 277266,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1470395739,
+        "name": "苍蝇 - 初音未来",
+        "artists": [
+          "晴海",
+          "初音未来"
+        ],
+        "album": "「苍蝇」",
+        "durationMs": 200359,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 3407304723,
+        "name": "“苍蝇 freestyle” SASIOVERLXRD",
+        "artists": [
+          "SEASON4DIE"
+        ],
+        "album": "SASI FREESTYLE TAPE",
+        "durationMs": 149970,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 2120350755,
+        "name": "苍蝇与蜜蜂 | 益智故事#59",
+        "artists": [
+          "倩倩讲故事"
+        ],
+        "album": "益智之声-倩倩讲故事",
+        "durationMs": 161673,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      }
+    ],
+    "sourceId": 3392513819,
+    "sourcePath": "sources/3392513819.json",
+    "sourceUrl": "https://music.163.com/#/song?id=3392513819",
+    "selected": {
+      "id": 3392513819,
+      "name": "苍蝇",
+      "artists": [
+        "ilem",
+        "赤羽"
+      ],
+      "album": "ilem2019-2023年作品合集",
+      "durationMs": 200045,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 56
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-38-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 208.832,
+    "sourceFirstLine": {
+      "t": 12.48,
+      "text": "猫可爱 狗可爱"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 26.32,
+      "endSeconds": 26.48,
+      "similarity": 0.0,
+      "recognizedText": "作",
+      "meanProbability": 0.01,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  },
+  "rowKey": "苍蝇",
+  "edition": "",
+  "remark": "来自 2026-08-11 中V歌回回放 49-52 分钟段。Whisper 原始转写噪声很大，但仍能稳定命中“收集这世界的背面的残渣”“它带着荣耀死去，灵魂到天堂或地狱”“但我哪也不去，我留在这儿唱唱歌”等高辨识度句群；DuckDuckGo 结果同时返回《苍蝇》歌词页、百度百科与 B 站动态歌词片段，均指向 ilem 创作、赤羽演唱的《苍蝇》，可先入库并保留人工复核标签。 按用户放宽后的匹配规则，已补入对应公开歌切：【小松绿Viridis/歌切】苍蝇（BV1SKuC68Eaj）。"
+}

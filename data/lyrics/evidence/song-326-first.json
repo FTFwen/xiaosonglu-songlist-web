@@ -1,0 +1,57 @@
+{
+  "audioSha256": "3e7650e0f53f0688b52a7ee6ac55f593bf0282c72f3ab56d9eb2904ab72c4904",
+  "model": "whisper-base",
+  "start": 0,
+  "end": 35,
+  "result": {
+    "text": "【音楽】",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 26.92,
+        "end": 29.76,
+        "text": "【音楽】",
+        "tokens": [
+          50364,
+          15588,
+          18034,
+          35479,
+          15623,
+          51639
+        ],
+        "temperature": 0,
+        "avg_logprob": -1.6256678104400635,
+        "compression_ratio": 0.5714285714285714,
+        "no_speech_prob": 0.274746298789978,
+        "words": [
+          {
+            "word": "【",
+            "start": 26.92,
+            "end": 28.32,
+            "probability": 0.004056068137288094
+          },
+          {
+            "word": "音",
+            "start": 28.32,
+            "end": 29.72,
+            "probability": 0.01425013318657875
+          },
+          {
+            "word": "楽",
+            "start": 29.72,
+            "end": 29.74,
+            "probability": 0.7669432759284973
+          },
+          {
+            "word": "】",
+            "start": 29.74,
+            "end": 29.76,
+            "probability": 0.6548908352851868
+          }
+        ]
+      }
+    ],
+    "language": "ja"
+  }
+}

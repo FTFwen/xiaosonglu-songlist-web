@@ -1,0 +1,218 @@
+{
+  "schemaVersion": 1,
+  "key": "song-375",
+  "songId": 375,
+  "songName": "辞职信",
+  "rowKey": "辞职信",
+  "displaySongName": "辞职信",
+  "artist": "ChiliChill乐团",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "",
+  "audio": {
+    "url": "assets/audio/song_374.m4a?v=cb3ab9500c25",
+    "sha256": "cb3ab9500c250b25d3de4701d36b89cf648d33628e16ed404825ab873ce82f1d"
+  },
+  "retrievedAt": "2026-11-16T04:07:57.429Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E8%BE%9E%E8%81%8C%E4%BF%A1&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E8%BE%9E%E8%81%8C%E4%BF%A1%20ChiliChill%E4%B9%90%E5%9B%A2&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 3378909144,
+        "name": "辞职信",
+        "artists": [
+          "ChiliChill乐团"
+        ],
+        "album": "辞职信",
+        "durationMs": 202634,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 3384117136,
+        "name": "辞职信",
+        "artists": [
+          "一定要开心吆"
+        ],
+        "album": "想你呀",
+        "durationMs": 184229,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3426252229,
+        "name": "辞职信",
+        "artists": [
+          "阿杰"
+        ],
+        "album": "辞职信",
+        "durationMs": 198791,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3435185588,
+        "name": "辞职信",
+        "artists": [
+          "哑衣"
+        ],
+        "album": "辞职信",
+        "durationMs": 202212,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3384796865,
+        "name": "辞职信",
+        "artists": [
+          "来一口肉"
+        ],
+        "album": "辞职信",
+        "durationMs": 202634,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3379496862,
+        "name": "辞职信",
+        "artists": [
+          "小雪"
+        ],
+        "album": "辞职信",
+        "durationMs": 202684,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3435044105,
+        "name": "辞职信",
+        "artists": [
+          "二一",
+          "orcaicey",
+          "TIE++"
+        ],
+        "album": "TIED UP",
+        "durationMs": 165000,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2100948127,
+        "name": "辞职信",
+        "artists": [
+          "青筋暴起乐队"
+        ],
+        "album": "福厘",
+        "durationMs": 274000,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 375,
+      "song_name": "辞职信",
+      "show_as_song_name": "",
+      "display_song_name": "辞职信",
+      "artist": "ChiliChill乐团",
+      "artist_search": "ChiliChill乐团",
+      "feat_artist": "",
+      "remark": "",
+      "tone": "",
+      "language": "中文",
+      "type": "流行",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV18pWH6gEzr/?p=1",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-11-08",
+      "row_key": "辞职信"
+    },
+    "sourceId": 3378909144,
+    "sourcePath": "sources/3378909144.json",
+    "sourceUrl": "https://music.163.com/#/song?id=3378909144",
+    "selected": {
+      "id": 3378909144,
+      "name": "辞职信",
+      "artists": [
+        "ChiliChill乐团"
+      ],
+      "album": "辞职信",
+      "durationMs": 202634,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 40
+  },
+  "alignment": {
+    "status": "spotcheck_review_required",
+    "evidencePath": "evidence/song-375-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 206.571,
+    "sourceFirstLine": {
+      "t": 19.505,
+      "text": "按下“发送”键前的两分钟"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 19.6,
+      "endSeconds": 22.74,
+      "similarity": 0.7368421052631579,
+      "recognizedText": "下发送前前的六分钟",
+      "meanProbability": 0.807,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": 0.095,
+    "checks": [
+      {
+        "sourceLine": {
+          "t": 101.649,
+          "text": "书签停在 “追寻内心声音” 那课"
+        },
+        "evidencePath": "evidence/song-375-check0.json",
+        "candidate": {
+          "audioSeconds": 95.744,
+          "endSeconds": 96.744,
+          "similarity": 0.0,
+          "recognizedText": "應該",
+          "meanProbability": 0.823,
+          "tokenPrefixOnly": false
+        },
+        "residualSeconds": -6.0
+      },
+      {
+        "sourceLine": {
+          "t": 178.965,
+          "text": "不售卖返程"
+        },
+        "evidencePath": "evidence/song-375-check1.json",
+        "candidate": {
+          "audioSeconds": 178.52,
+          "endSeconds": 179.08,
+          "similarity": 0.3333333333333333,
+          "recognizedText": "不",
+          "meanProbability": 0.4,
+          "tokenPrefixOnly": false
+        },
+        "residualSeconds": -0.54
+      }
+    ],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

@@ -1,0 +1,184 @@
+{
+  "schemaVersion": 1,
+  "key": "song-332",
+  "songId": 332,
+  "songName": "蓝精灵",
+  "rowKey": "蓝精灵",
+  "displaySongName": "蓝精灵",
+  "artist": "儿歌多多",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "桐人今天睡大觉「全自动歌切项目」2026.10.21 歌切合集第 7 分P（章节「07_蓝精灵 - 儿歌多多」）。弹幕02:18–02:22 儿歌回簇位置与之吻合。本场括号歌词弹幕为 0，仅以合集章节 + 简介日期确认；未定位回放时间点。",
+  "audio": {
+    "url": "assets/audio/song_331.m4a?v=4214a2eec7a7",
+    "sha256": "4214a2eec7a75ab881d5d69ea9e151a0b4c5001d2af9f75781432a797e8db52d"
+  },
+  "retrievedAt": "2026-11-16T04:13:19.282Z",
+  "match": {
+    "status": "candidate_review_required",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E8%93%9D%E7%B2%BE%E7%81%B5&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E8%93%9D%E7%B2%BE%E7%81%B5%20%E5%84%BF%E6%AD%8C%E5%A4%9A%E5%A4%9A&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 2114146440,
+        "name": "蓝精灵",
+        "artists": [
+          "儿歌多多"
+        ],
+        "album": "蓝精灵",
+        "durationMs": 124042,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 233293,
+        "name": "蓝精灵",
+        "artists": [
+          "樊竹青"
+        ],
+        "album": "经典动画歌曲大赏",
+        "durationMs": 126012,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3357322795,
+        "name": "蓝精灵",
+        "artists": [
+          "儿歌大全"
+        ],
+        "album": "蓝精灵",
+        "durationMs": 118239,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1304882253,
+        "name": "蓝精灵",
+        "artists": [
+          "蓝天合唱团"
+        ],
+        "album": "小歌星(2)",
+        "durationMs": 100066,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2160701230,
+        "name": "蓝精灵",
+        "artists": [
+          "呀虎儿歌",
+          "小蓝背心"
+        ],
+        "album": "呀虎儿歌合辑",
+        "durationMs": 99637,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2103482810,
+        "name": "蓝精灵",
+        "artists": [
+          "新时代小星星"
+        ],
+        "album": "数鸭子 儿歌系列 7",
+        "durationMs": 121152,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1472854405,
+        "name": "蓝精灵",
+        "artists": [
+          "安安"
+        ],
+        "album": "蓝精灵",
+        "durationMs": 83500,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2153451203,
+        "name": "蓝精灵（DJ版）",
+        "artists": [
+          "儿歌多多"
+        ],
+        "album": "儿歌多多动感儿歌2",
+        "durationMs": 116307,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      }
+    ],
+    "workQuery": {
+      "song_id": 332,
+      "song_name": "蓝精灵",
+      "show_as_song_name": "",
+      "display_song_name": "蓝精灵",
+      "artist": "儿歌多多",
+      "artist_search": "儿歌多多 蓝精灵",
+      "feat_artist": "",
+      "remark": "桐人今天睡大觉「全自动歌切项目」2026.10.21 歌切合集第 7 分P（章节「07_蓝精灵 - 儿歌多多」）。弹幕02:18–02:22 儿歌回簇位置与之吻合。本场括号歌词弹幕为 0，仅以合集章节 + 简介日期确认；未定位回放时间点。",
+      "tone": "",
+      "language": "中文",
+      "type": "翻唱、流行、儿歌",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1d6n66fEgy/?p=7",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-21",
+      "row_key": "蓝精灵"
+    },
+    "sourceId": 233293,
+    "sourcePath": "sources/233293.json",
+    "sourceUrl": "https://music.163.com/#/song?id=233293",
+    "selected": {
+      "id": 233293,
+      "name": "蓝精灵",
+      "artists": [
+        "樊竹青"
+      ],
+      "album": "经典动画歌曲大赏",
+      "durationMs": 126012,
+      "titleScore": 1,
+      "artistMatch": false,
+      "score": 0.8
+    },
+    "timedLineCount": 23
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-332-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 121.024,
+    "sourceFirstLine": {
+      "t": 0.363,
+      "text": "樊竹青-蓝精灵"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 1.54,
+      "endSeconds": 2.12,
+      "similarity": 0.0,
+      "recognizedText": "我",
+      "meanProbability": 0.019,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

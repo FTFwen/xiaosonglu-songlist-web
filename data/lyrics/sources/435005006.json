@@ -1,0 +1,253 @@
+{
+  "platform": "netease",
+  "id": 435005006,
+  "url": "https://music.163.com/#/song?id=435005006",
+  "apiUrl": "https://music.163.com/api/song/lyric?id=435005006&lv=1&kv=1&tv=-1",
+  "retrievedAt": "2026-11-16T04:07:00.546Z",
+  "track": {
+    "id": 435005006,
+    "name": "RTRT",
+    "artists": [
+      "Mili"
+    ],
+    "album": "Miracle Milk",
+    "durationMs": 215026,
+    "titleScore": 1,
+    "artistMatch": true,
+    "score": 1
+  },
+  "lrc": "[00:29.33]Hop hop\n[00:30.77]You came along my secret laboratory\n[00:36.50]Spiky spiky bloody fangs hungry for my Qi\n[00:43.77]Hold up, mister\n[00:45.71]Right there, mister\n[00:47.25]Sit down, mister\n[00:48.89]How about some retort pouch of curry\n[00:52.94]Pouch of chili\n[00:54.68]Pouch of MRE\n[00:56.52]But you're rather picky\n[00:58.71]\n[01:00.31]Well\n[01:00.80]I'll make you something else\n[01:02.30]Don't need to show me how\n[01:03.84]Since I'm the mad scientist, proclaimed by myself\n[01:07.92]Canton or Sichuan\n[01:09.61]Jiangsu or Hunan\n[01:11.28]No matter which one you pick I'll get it done\n[01:14.76]Zhajiangmian and Xiaolongbao\n[01:16.80]Wonton and Chashao\n[01:18.54]Delivery or takeout won't beat my retort pouch\n[01:20.69]You're loving my retort\n[01:24.13]I'm loving your retort\n[01:25.87]You're my only retort\n[01:27.81]You're my only retort\n[01:30.05]一 一 一 二 一 一 二 三 四 五 六 七\n[01:36.62]一 一 一 二 一 一 二 三 四 五 六 七\n[01:43.79]\n[01:44.03]Crack crack\n[01:45.13]You stretch your arms out asking for a hug\n[01:50.50]Hidden under your talisman is your practiced smile\n[01:58.51]Come here, mister\n[02:00.01]Help me, mister\n[02:01.65]Right here, mister\n[02:03.49]You took up my spoon\n[02:05.53]Stirring curry\n[02:06.92]Stirring chili\n[02:08.83]That's when I've realized\n[02:10.97]We've became family\n[02:12.26]\n[02:13.82]Then he came\n[02:16.91]A man in black and white\n[02:18.30]He's holding laser guns and Bagua signs\n[02:28.45]Then he aimed at your slimy skin\n[02:33.28]And pulled the trigger\n[02:38.86]Your head bursts\n[02:42.54]Shh\n[02:44.63]\n[02:45.43]I'll stitch you back up\n[02:47.28]Don't need to show me how\n[02:48.87]Since I'm the mad scientist, proclaimed by myself\n[02:52.26]I'll give you plastic eyes\n[02:53.90]And give you nylon hair\n[02:55.74]And I'll make sure I get your talisman repaired\n[02:59.08]Shark fin soup or Dim sum\n[03:01.17]Dumpling or Peking duck\n[03:03.01]Nothing I make is gonna bring that charm inside you back\n[03:07.16]But you're still my retort\n[03:08.85]But you're still my retort\n[03:10.54]I'm seeking for retort\n[03:12.43]I'm seeking for retort\n",
+  "translationLrc": "[by:AtaraxiaEta]\n[00:29.33]连蹦带跳\n[00:30.77]你来到了我的秘密研究所\n[00:36.50]尖锐血腥的獠牙渴望着我的气\n[00:43.77]等等，先生\n[00:45.71]站住，先生\n[00:47.25]请坐，先生\n[00:48.89]要不要尝尝这蒸煮袋咖喱\n[00:52.94]蒸煮袋墨西哥辣酱汤\n[00:54.68]蒸煮袋MRE\n[00:56.52]不过你好像有点挑食\n[01:00.31]没关系\n[01:00.80]我给你做点别的\n[01:02.30]不用告诉我方法\n[01:03.84]我可是疯狂科学家，尽管是自封的\n[01:07.92]不管是粤菜还是川菜\n[01:09.61]苏菜还是湘菜\n[01:11.28]你选哪个我都能做\n[01:14.76]炸酱面和小笼包\n[01:16.80]馄饨和叉烧\n[01:18.54]外卖打包也比不上我的蒸煮袋\n[01:20.69]你爱上了我的曲颈瓶\n[01:24.13]我爱上了你的回应\n[01:25.87]你是我唯一的报复\n[01:27.81]你是我唯一的报复\n[01:30.05]\n[01:36.62]\n[01:44.03]咯吱咯吱\n[01:45.13]你伸出双臂索要抱抱\n[01:50.50]藏在纸符之下的是你练习出的笑容\n[01:58.51]快来，先生\n[02:00.01]帮帮我，先生\n[02:01.65]这边，先生\n[02:03.49]你拾起我的汤勺\n[02:05.53]搅拌咖喱\n[02:06.92]搅拌墨西哥辣酱汤\n[02:08.83]在不知不觉间\n[02:10.97]我们成了一家人\n[02:13.82]然后那个人来了\n[02:16.91]身穿黑白袍子\n[02:18.30]手拿激光枪与八卦盘\n[02:28.45]他瞄准你黏糊糊的肌肤\n[02:33.28]扣动了扳机\n[02:38.86]你的脑袋就此迸裂\n[02:42.54]嘘－－\n[02:45.43]我来把你缝成原样\n[02:47.28]不用告诉我方法\n[02:48.87]我可是疯狂科学家，尽管是自封的\n[02:52.26]给你塑料眼球\n[02:53.90]给你尼龙毛发\n[02:55.74]就连你那张纸符我也会给你修好\n[02:59.08]不管是鱼翅汤还是茶点\n[03:01.17]饺子还是北京烤鸭\n[03:03.01]我做什么也无法将你的魅力复原\n[03:07.16]但你还是我的RTRT\n[03:08.85]但你还是我的RTRT\n[03:10.54]我期盼着RTRT\n[03:12.43]我期盼着RTRT\n",
+  "romanizationLrc": "",
+  "instrumental": false,
+  "lines": [
+    {
+      "t": 29.33,
+      "text": "Hop hop"
+    },
+    {
+      "t": 30.77,
+      "text": "You came along my secret laboratory"
+    },
+    {
+      "t": 36.5,
+      "text": "Spiky spiky bloody fangs hungry for my Qi"
+    },
+    {
+      "t": 43.77,
+      "text": "Hold up, mister"
+    },
+    {
+      "t": 45.71,
+      "text": "Right there, mister"
+    },
+    {
+      "t": 47.25,
+      "text": "Sit down, mister"
+    },
+    {
+      "t": 48.89,
+      "text": "How about some retort pouch of curry"
+    },
+    {
+      "t": 52.94,
+      "text": "Pouch of chili"
+    },
+    {
+      "t": 54.68,
+      "text": "Pouch of MRE"
+    },
+    {
+      "t": 56.52,
+      "text": "But you're rather picky"
+    },
+    {
+      "t": 60.31,
+      "text": "Well"
+    },
+    {
+      "t": 60.8,
+      "text": "I'll make you something else"
+    },
+    {
+      "t": 62.3,
+      "text": "Don't need to show me how"
+    },
+    {
+      "t": 63.84,
+      "text": "Since I'm the mad scientist, proclaimed by myself"
+    },
+    {
+      "t": 67.92,
+      "text": "Canton or Sichuan"
+    },
+    {
+      "t": 69.61,
+      "text": "Jiangsu or Hunan"
+    },
+    {
+      "t": 71.28,
+      "text": "No matter which one you pick I'll get it done"
+    },
+    {
+      "t": 74.76,
+      "text": "Zhajiangmian and Xiaolongbao"
+    },
+    {
+      "t": 76.8,
+      "text": "Wonton and Chashao"
+    },
+    {
+      "t": 78.54,
+      "text": "Delivery or takeout won't beat my retort pouch"
+    },
+    {
+      "t": 80.69,
+      "text": "You're loving my retort"
+    },
+    {
+      "t": 84.13,
+      "text": "I'm loving your retort"
+    },
+    {
+      "t": 85.87,
+      "text": "You're my only retort"
+    },
+    {
+      "t": 87.81,
+      "text": "You're my only retort"
+    },
+    {
+      "t": 90.05,
+      "text": "一 一 一 二 一 一 二 三 四 五 六 七"
+    },
+    {
+      "t": 96.62,
+      "text": "一 一 一 二 一 一 二 三 四 五 六 七"
+    },
+    {
+      "t": 104.03,
+      "text": "Crack crack"
+    },
+    {
+      "t": 105.13,
+      "text": "You stretch your arms out asking for a hug"
+    },
+    {
+      "t": 110.5,
+      "text": "Hidden under your talisman is your practiced smile"
+    },
+    {
+      "t": 118.51,
+      "text": "Come here, mister"
+    },
+    {
+      "t": 120.01,
+      "text": "Help me, mister"
+    },
+    {
+      "t": 121.65,
+      "text": "Right here, mister"
+    },
+    {
+      "t": 123.49,
+      "text": "You took up my spoon"
+    },
+    {
+      "t": 125.53,
+      "text": "Stirring curry"
+    },
+    {
+      "t": 126.92,
+      "text": "Stirring chili"
+    },
+    {
+      "t": 128.83,
+      "text": "That's when I've realized"
+    },
+    {
+      "t": 130.97,
+      "text": "We've became family"
+    },
+    {
+      "t": 133.82,
+      "text": "Then he came"
+    },
+    {
+      "t": 136.91,
+      "text": "A man in black and white"
+    },
+    {
+      "t": 138.3,
+      "text": "He's holding laser guns and Bagua signs"
+    },
+    {
+      "t": 148.45,
+      "text": "Then he aimed at your slimy skin"
+    },
+    {
+      "t": 153.28,
+      "text": "And pulled the trigger"
+    },
+    {
+      "t": 158.86,
+      "text": "Your head bursts"
+    },
+    {
+      "t": 162.54,
+      "text": "Shh"
+    },
+    {
+      "t": 165.43,
+      "text": "I'll stitch you back up"
+    },
+    {
+      "t": 167.28,
+      "text": "Don't need to show me how"
+    },
+    {
+      "t": 168.87,
+      "text": "Since I'm the mad scientist, proclaimed by myself"
+    },
+    {
+      "t": 172.26,
+      "text": "I'll give you plastic eyes"
+    },
+    {
+      "t": 173.9,
+      "text": "And give you nylon hair"
+    },
+    {
+      "t": 175.74,
+      "text": "And I'll make sure I get your talisman repaired"
+    },
+    {
+      "t": 179.08,
+      "text": "Shark fin soup or Dim sum"
+    },
+    {
+      "t": 181.17,
+      "text": "Dumpling or Peking duck"
+    },
+    {
+      "t": 183.01,
+      "text": "Nothing I make is gonna bring that charm inside you back"
+    },
+    {
+      "t": 187.16,
+      "text": "But you're still my retort"
+    },
+    {
+      "t": 188.85,
+      "text": "But you're still my retort"
+    },
+    {
+      "t": 190.54,
+      "text": "I'm seeking for retort"
+    },
+    {
+      "t": 192.43,
+      "text": "I'm seeking for retort"
+    }
+  ]
+}

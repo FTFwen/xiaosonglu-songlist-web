@@ -1,0 +1,110 @@
+{
+  "audioSha256": "c7803838c854ddad1f944ce552a746ec5c8b789ba803fb6238cd52944e49e07f",
+  "model": "whisper-base",
+  "start": 0,
+  "end": 39.8,
+  "result": {
+    "text": "典型都没学走到那邊",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 0.0,
+        "end": 0.96,
+        "text": "典型都没学",
+        "tokens": [
+          50364,
+          2347,
+          116,
+          39823,
+          7182,
+          10062,
+          29618,
+          50430
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.6264815860324435,
+        "compression_ratio": 0.625,
+        "no_speech_prob": 0.01744108833372593,
+        "words": [
+          {
+            "word": "典",
+            "start": 0.0,
+            "end": 0.16,
+            "probability": 0.5909381657838821
+          },
+          {
+            "word": "型",
+            "start": 0.16,
+            "end": 0.34,
+            "probability": 0.9662320017814636
+          },
+          {
+            "word": "都",
+            "start": 0.34,
+            "end": 0.48,
+            "probability": 0.9287792444229126
+          },
+          {
+            "word": "没",
+            "start": 0.48,
+            "end": 0.66,
+            "probability": 0.8396149277687073
+          },
+          {
+            "word": "学",
+            "start": 0.66,
+            "end": 0.96,
+            "probability": 0.3338545560836792
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "seek": 3000,
+        "start": 30.0,
+        "end": 31.8,
+        "text": "走到那邊",
+        "tokens": [
+          50364,
+          9575,
+          4511,
+          4184,
+          14901,
+          50464
+        ],
+        "temperature": 0,
+        "avg_logprob": -1.6126113619123186,
+        "compression_ratio": 0.5714285714285714,
+        "no_speech_prob": 0.5091124773025513,
+        "words": [
+          {
+            "word": "走",
+            "start": 30.0,
+            "end": 30.34,
+            "probability": 0.0320589654147625
+          },
+          {
+            "word": "到",
+            "start": 30.34,
+            "end": 30.78,
+            "probability": 0.4298097491264343
+          },
+          {
+            "word": "那",
+            "start": 30.78,
+            "end": 31.2,
+            "probability": 0.02832401543855667
+          },
+          {
+            "word": "邊",
+            "start": 31.2,
+            "end": 31.8,
+            "probability": 0.14274880290031433
+          }
+        ]
+      }
+    ],
+    "language": "zh"
+  }
+}

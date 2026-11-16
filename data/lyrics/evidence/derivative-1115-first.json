@@ -1,0 +1,1765 @@
+{
+  "audioSha256": "7f8f5c4ec906da79882fdba5f4732b60f109c15bd8d4e4f784b459b6359881f8",
+  "model": "whisper-base",
+  "start": 0,
+  "end": 63.36,
+  "result": {
+    "text": " 1 tbc 1 tbc 1 tbc 1 tbc 1 tbc 1 tbc 1 tbc 1 tbc 1 tbc ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ No, for not me, no, for not me, no, for not me, no, for not me, no, for not me, no, for not me, no, for not me, no, for not me, no, for not me, no, for not me, no, for not me, no, for not me, no, for not me, no, for not me, no, for not me, no, for not me, no, for not me, no, for not me, no, for not me, no, for not me, no, for not me, no, for not me, no, for not me, no, for not me, no, for not me, no, for not me, no, for not me, no, for not me, no, for not me, no, for not me, no, for not me, no, for not me, no, for not me, no, for not me, no, for not me, no, for not me, no, for not me, no",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 4.4399999999999995,
+        "end": 7.24,
+        "text": " 1 tbc",
+        "tokens": [
+          50364,
+          502,
+          256,
+          65,
+          66,
+          50464
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.22094589730967645,
+        "compression_ratio": 5.235294117647059,
+        "no_speech_prob": 0.7341564297676086,
+        "words": [
+          {
+            "word": " 1",
+            "start": 4.4399999999999995,
+            "end": 5.84,
+            "probability": 0.07791953533887863
+          },
+          {
+            "word": " tbc",
+            "start": 5.84,
+            "end": 7.24,
+            "probability": 0.2536997515708208
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "seek": 0,
+        "start": 7.24,
+        "end": 7.24,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.22094589730967645,
+        "compression_ratio": 5.235294117647059,
+        "no_speech_prob": 0.7341564297676086,
+        "words": []
+      },
+      {
+        "id": 2,
+        "seek": 0,
+        "start": 7.24,
+        "end": 8.84,
+        "text": " 1 tbc",
+        "tokens": [
+          50564,
+          502,
+          256,
+          65,
+          66,
+          50664
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.22094589730967645,
+        "compression_ratio": 5.235294117647059,
+        "no_speech_prob": 0.7341564297676086,
+        "words": [
+          {
+            "word": " 1",
+            "start": 7.24,
+            "end": 7.24,
+            "probability": 0.11345604807138443
+          },
+          {
+            "word": " tbc",
+            "start": 7.24,
+            "end": 8.84,
+            "probability": 0.84934534629186
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "seek": 0,
+        "start": 8.84,
+        "end": 8.84,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.22094589730967645,
+        "compression_ratio": 5.235294117647059,
+        "no_speech_prob": 0.7341564297676086,
+        "words": []
+      },
+      {
+        "id": 4,
+        "seek": 0,
+        "start": 8.84,
+        "end": 10.0,
+        "text": " 1 tbc",
+        "tokens": [
+          50764,
+          502,
+          256,
+          65,
+          66,
+          50864
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.22094589730967645,
+        "compression_ratio": 5.235294117647059,
+        "no_speech_prob": 0.7341564297676086,
+        "words": [
+          {
+            "word": " 1",
+            "start": 8.84,
+            "end": 8.84,
+            "probability": 0.7615175843238831
+          },
+          {
+            "word": " tbc",
+            "start": 8.84,
+            "end": 10.0,
+            "probability": 0.9489431778589884
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "seek": 0,
+        "start": 10.92,
+        "end": 11.12,
+        "text": " 1 tbc",
+        "tokens": [
+          50864,
+          502,
+          256,
+          65,
+          66,
+          50964
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.22094589730967645,
+        "compression_ratio": 5.235294117647059,
+        "no_speech_prob": 0.7341564297676086,
+        "words": [
+          {
+            "word": " 1",
+            "start": 10.92,
+            "end": 10.92,
+            "probability": 0.8278669714927673
+          },
+          {
+            "word": " tbc",
+            "start": 10.92,
+            "end": 11.12,
+            "probability": 0.9666753013928732
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "seek": 0,
+        "start": 11.12,
+        "end": 11.88,
+        "text": " 1 tbc",
+        "tokens": [
+          50964,
+          502,
+          256,
+          65,
+          66,
+          51064
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.22094589730967645,
+        "compression_ratio": 5.235294117647059,
+        "no_speech_prob": 0.7341564297676086,
+        "words": [
+          {
+            "word": " 1",
+            "start": 11.12,
+            "end": 11.12,
+            "probability": 0.8578366637229919
+          },
+          {
+            "word": " tbc",
+            "start": 11.12,
+            "end": 11.88,
+            "probability": 0.9713995854059855
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "seek": 0,
+        "start": 11.88,
+        "end": 15.64,
+        "text": " 1 tbc",
+        "tokens": [
+          51064,
+          502,
+          256,
+          65,
+          66,
+          51164
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.22094589730967645,
+        "compression_ratio": 5.235294117647059,
+        "no_speech_prob": 0.7341564297676086,
+        "words": [
+          {
+            "word": " 1",
+            "start": 11.88,
+            "end": 11.88,
+            "probability": 0.8811174035072327
+          },
+          {
+            "word": " tbc",
+            "start": 11.88,
+            "end": 15.64,
+            "probability": 0.9738568663597107
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "seek": 0,
+        "start": 15.64,
+        "end": 16.54,
+        "text": " 1 tbc",
+        "tokens": [
+          51164,
+          502,
+          256,
+          65,
+          66,
+          51264
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.22094589730967645,
+        "compression_ratio": 5.235294117647059,
+        "no_speech_prob": 0.7341564297676086,
+        "words": [
+          {
+            "word": " 1",
+            "start": 15.64,
+            "end": 15.64,
+            "probability": 0.8971032500267029
+          },
+          {
+            "word": " tbc",
+            "start": 15.64,
+            "end": 16.54,
+            "probability": 0.9791717330614725
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "seek": 0,
+        "start": 16.54,
+        "end": 16.54,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.22094589730967645,
+        "compression_ratio": 5.235294117647059,
+        "no_speech_prob": 0.7341564297676086,
+        "words": []
+      },
+      {
+        "id": 10,
+        "seek": 0,
+        "start": 16.54,
+        "end": 16.54,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.22094589730967645,
+        "compression_ratio": 5.235294117647059,
+        "no_speech_prob": 0.7341564297676086,
+        "words": []
+      },
+      {
+        "id": 11,
+        "seek": 0,
+        "start": 16.54,
+        "end": 21.06,
+        "text": " 1 tbc",
+        "tokens": [
+          51464,
+          502,
+          256,
+          65,
+          66,
+          51564
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.22094589730967645,
+        "compression_ratio": 5.235294117647059,
+        "no_speech_prob": 0.7341564297676086,
+        "words": [
+          {
+            "word": " 1",
+            "start": 16.54,
+            "end": 16.54,
+            "probability": 0.9039493203163147
+          },
+          {
+            "word": " tbc",
+            "start": 16.54,
+            "end": 21.06,
+            "probability": 0.9780463576316833
+          }
+        ]
+      },
+      {
+        "id": 12,
+        "seek": 0,
+        "start": 21.06,
+        "end": 21.06,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.22094589730967645,
+        "compression_ratio": 5.235294117647059,
+        "no_speech_prob": 0.7341564297676086,
+        "words": []
+      },
+      {
+        "id": 13,
+        "seek": 0,
+        "start": 21.06,
+        "end": 21.06,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.22094589730967645,
+        "compression_ratio": 5.235294117647059,
+        "no_speech_prob": 0.7341564297676086,
+        "words": []
+      },
+      {
+        "id": 14,
+        "seek": 0,
+        "start": 21.06,
+        "end": 29.98,
+        "text": " 1 tbc",
+        "tokens": [
+          51764,
+          502,
+          256,
+          65,
+          66,
+          51864
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.22094589730967645,
+        "compression_ratio": 5.235294117647059,
+        "no_speech_prob": 0.7341564297676086,
+        "words": [
+          {
+            "word": " 1",
+            "start": 21.06,
+            "end": 21.06,
+            "probability": 0.9210910201072693
+          },
+          {
+            "word": " tbc",
+            "start": 21.06,
+            "end": 29.98,
+            "probability": 0.9814125895500183
+          }
+        ]
+      },
+      {
+        "id": 15,
+        "seek": 2998,
+        "start": 58.36,
+        "end": 59.76,
+        "text": " ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ",
+        "tokens": [
+          50364,
+          220,
+          134,
+          119,
+          913,
+          235,
+          134,
+          119,
+          913,
+          235,
+          134,
+          119,
+          913,
+          235,
+          134,
+          119,
+          913,
+          235,
+          134,
+          119,
+          913,
+          235,
+          134,
+          119,
+          913,
+          235,
+          134,
+          119,
+          913,
+          235,
+          134,
+          119,
+          913,
+          235,
+          134,
+          119,
+          913,
+          235,
+          134,
+          119,
+          913,
+          235,
+          134,
+          119,
+          913,
+          235,
+          134,
+          119,
+          913,
+          235,
+          134,
+          119,
+          913,
+          235,
+          134,
+          119,
+          913,
+          235,
+          134,
+          119,
+          913,
+          235,
+          134,
+          119,
+          913,
+          235,
+          134,
+          119,
+          913,
+          235,
+          134,
+          119,
+          913,
+          235,
+          134,
+          119,
+          913,
+          235,
+          134,
+          119,
+          913,
+          235,
+          134,
+          119,
+          913,
+          235,
+          134,
+          119,
+          913,
+          235,
+          134,
+          119,
+          913,
+          235,
+          134,
+          119,
+          913,
+          235,
+          134,
+          119,
+          913,
+          235,
+          134,
+          119,
+          913,
+          235,
+          134,
+          119,
+          913,
+          235,
+          134,
+          119,
+          913,
+          235,
+          134,
+          119,
+          913,
+          235,
+          134,
+          119,
+          913,
+          235,
+          134,
+          119,
+          913,
+          235,
+          134,
+          119,
+          913,
+          235,
+          134,
+          119,
+          913,
+          235,
+          134,
+          119,
+          913,
+          235,
+          134,
+          119,
+          913,
+          235,
+          134,
+          119,
+          913,
+          235,
+          134,
+          119,
+          913,
+          235,
+          134,
+          119,
+          913,
+          235,
+          134,
+          119,
+          913,
+          235,
+          134,
+          119,
+          913,
+          235,
+          134,
+          119,
+          913,
+          235,
+          134,
+          119,
+          913,
+          235,
+          134,
+          119,
+          913,
+          235,
+          134,
+          119,
+          913,
+          235,
+          134,
+          119,
+          913,
+          235,
+          134,
+          119,
+          913,
+          235,
+          134,
+          119,
+          913,
+          235,
+          134,
+          119,
+          913,
+          235,
+          134,
+          119,
+          913,
+          235,
+          134,
+          119,
+          913,
+          235,
+          134,
+          119,
+          913,
+          235,
+          134,
+          119,
+          913,
+          235,
+          134,
+          119,
+          913,
+          235,
+          134,
+          119,
+          913,
+          235,
+          134,
+          119,
+          913,
+          235,
+          134,
+          119
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.19526385837131077,
+        "compression_ratio": 15.38888888888889,
+        "no_speech_prob": 0.33923864364624023,
+        "words": [
+          {
+            "word": " ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ‍ʻ",
+            "start": 58.36,
+            "end": 59.76,
+            "probability": 0.8718799439095997
+          }
+        ]
+      },
+      {
+        "id": 16,
+        "seek": 5976,
+        "start": 59.76,
+        "end": 63.34,
+        "text": " No, for not me, no, for not me, no, for not me, no, for not me, no, for not me, no, for not me, no, for not me, no, for not me, no, for not me, no, for not me, no, for not me, no, for not me, no, for not me, no, for not me, no, for not me, no, for not me, no, for not me, no, for not me, no, for not me, no, for not me, no, for not me, no, for not me, no, for not me, no, for not me, no, for not me, no, for not me, no, for not me, no, for not me, no, for not me, no, for not me, no, for not me, no, for not me, no, for not me, no, for not me, no, for not me, no, for not me, no, for not me, no",
+        "tokens": [
+          50364,
+          883,
+          11,
+          337,
+          406,
+          385,
+          11,
+          572,
+          11,
+          337,
+          406,
+          385,
+          11,
+          572,
+          11,
+          337,
+          406,
+          385,
+          11,
+          572,
+          11,
+          337,
+          406,
+          385,
+          11,
+          572,
+          11,
+          337,
+          406,
+          385,
+          11,
+          572,
+          11,
+          337,
+          406,
+          385,
+          11,
+          572,
+          11,
+          337,
+          406,
+          385,
+          11,
+          572,
+          11,
+          337,
+          406,
+          385,
+          11,
+          572,
+          11,
+          337,
+          406,
+          385,
+          11,
+          572,
+          11,
+          337,
+          406,
+          385,
+          11,
+          572,
+          11,
+          337,
+          406,
+          385,
+          11,
+          572,
+          11,
+          337,
+          406,
+          385,
+          11,
+          572,
+          11,
+          337,
+          406,
+          385,
+          11,
+          572,
+          11,
+          337,
+          406,
+          385,
+          11,
+          572,
+          11,
+          337,
+          406,
+          385,
+          11,
+          572,
+          11,
+          337,
+          406,
+          385,
+          11,
+          572,
+          11,
+          337,
+          406,
+          385,
+          11,
+          572,
+          11,
+          337,
+          406,
+          385,
+          11,
+          572,
+          11,
+          337,
+          406,
+          385,
+          11,
+          572,
+          11,
+          337,
+          406,
+          385,
+          11,
+          572,
+          11,
+          337,
+          406,
+          385,
+          11,
+          572,
+          11,
+          337,
+          406,
+          385,
+          11,
+          572,
+          11,
+          337,
+          406,
+          385,
+          11,
+          572,
+          11,
+          337,
+          406,
+          385,
+          11,
+          572,
+          11,
+          337,
+          406,
+          385,
+          11,
+          572,
+          11,
+          337,
+          406,
+          385,
+          11,
+          572,
+          11,
+          337,
+          406,
+          385,
+          11,
+          572,
+          11,
+          337,
+          406,
+          385,
+          11,
+          572,
+          11,
+          337,
+          406,
+          385,
+          11,
+          572,
+          11,
+          337,
+          406,
+          385,
+          11,
+          572,
+          11,
+          337,
+          406,
+          385,
+          11,
+          572,
+          11,
+          337,
+          406,
+          385,
+          11,
+          572,
+          11,
+          337,
+          406,
+          385,
+          11,
+          572,
+          11,
+          337,
+          406,
+          385,
+          11,
+          572,
+          11,
+          337,
+          406,
+          385,
+          11,
+          572,
+          11,
+          337,
+          406,
+          385,
+          11,
+          572,
+          11,
+          337,
+          406,
+          385,
+          11,
+          572
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.1435117424858941,
+        "compression_ratio": 19.8,
+        "no_speech_prob": 0.7252914309501648,
+        "words": [
+          {
+            "word": " No,",
+            "start": 59.76,
+            "end": 60.22,
+            "probability": 0.029132196679711342
+          },
+          {
+            "word": " for",
+            "start": 60.56,
+            "end": 60.98,
+            "probability": 0.1609741449356079
+          },
+          {
+            "word": " not",
+            "start": 60.98,
+            "end": 61.42,
+            "probability": 0.14554983377456665
+          },
+          {
+            "word": " me,",
+            "start": 61.42,
+            "end": 61.98,
+            "probability": 0.22979730367660522
+          },
+          {
+            "word": " no,",
+            "start": 62.4,
+            "end": 62.6,
+            "probability": 0.34091222286224365
+          },
+          {
+            "word": " for",
+            "start": 62.6,
+            "end": 62.6,
+            "probability": 0.7364253997802734
+          },
+          {
+            "word": " not",
+            "start": 62.6,
+            "end": 62.6,
+            "probability": 0.7538774013519287
+          },
+          {
+            "word": " me,",
+            "start": 62.6,
+            "end": 62.6,
+            "probability": 0.8937621712684631
+          },
+          {
+            "word": " no,",
+            "start": 62.6,
+            "end": 62.9,
+            "probability": 0.8874556422233582
+          },
+          {
+            "word": " for",
+            "start": 63.24,
+            "end": 63.24,
+            "probability": 0.8830991983413696
+          },
+          {
+            "word": " not",
+            "start": 63.24,
+            "end": 63.24,
+            "probability": 0.9157612323760986
+          },
+          {
+            "word": " me,",
+            "start": 63.24,
+            "end": 63.24,
+            "probability": 0.9663261771202087
+          },
+          {
+            "word": " no,",
+            "start": 63.24,
+            "end": 63.24,
+            "probability": 0.954106867313385
+          },
+          {
+            "word": " for",
+            "start": 63.24,
+            "end": 63.24,
+            "probability": 0.9156633615493774
+          },
+          {
+            "word": " not",
+            "start": 63.24,
+            "end": 63.24,
+            "probability": 0.918005645275116
+          },
+          {
+            "word": " me,",
+            "start": 63.24,
+            "end": 63.24,
+            "probability": 0.9733737707138062
+          },
+          {
+            "word": " no,",
+            "start": 63.24,
+            "end": 63.24,
+            "probability": 0.959077000617981
+          },
+          {
+            "word": " for",
+            "start": 63.24,
+            "end": 63.24,
+            "probability": 0.9417171478271484
+          },
+          {
+            "word": " not",
+            "start": 63.24,
+            "end": 63.24,
+            "probability": 0.9467363953590393
+          },
+          {
+            "word": " me,",
+            "start": 63.24,
+            "end": 63.24,
+            "probability": 0.9714492559432983
+          },
+          {
+            "word": " no,",
+            "start": 63.24,
+            "end": 63.24,
+            "probability": 0.9651275873184204
+          },
+          {
+            "word": " for",
+            "start": 63.24,
+            "end": 63.24,
+            "probability": 0.9509566426277161
+          },
+          {
+            "word": " not",
+            "start": 63.24,
+            "end": 63.24,
+            "probability": 0.9570288062095642
+          },
+          {
+            "word": " me,",
+            "start": 63.24,
+            "end": 63.24,
+            "probability": 0.9691739082336426
+          },
+          {
+            "word": " no,",
+            "start": 63.24,
+            "end": 63.24,
+            "probability": 0.9637179970741272
+          },
+          {
+            "word": " for",
+            "start": 63.24,
+            "end": 63.24,
+            "probability": 0.95766282081604
+          },
+          {
+            "word": " not",
+            "start": 63.24,
+            "end": 63.24,
+            "probability": 0.9634118676185608
+          },
+          {
+            "word": " me,",
+            "start": 63.24,
+            "end": 63.24,
+            "probability": 0.9669791460037231
+          },
+          {
+            "word": " no,",
+            "start": 63.24,
+            "end": 63.24,
+            "probability": 0.9659563302993774
+          },
+          {
+            "word": " for",
+            "start": 63.24,
+            "end": 63.24,
+            "probability": 0.9620213508605957
+          },
+          {
+            "word": " not",
+            "start": 63.24,
+            "end": 63.24,
+            "probability": 0.9684158563613892
+          },
+          {
+            "word": " me,",
+            "start": 63.24,
+            "end": 63.24,
+            "probability": 0.9703872799873352
+          },
+          {
+            "word": " no,",
+            "start": 63.24,
+            "end": 63.24,
+            "probability": 0.9687734246253967
+          },
+          {
+            "word": " for",
+            "start": 63.24,
+            "end": 63.24,
+            "probability": 0.9666342735290527
+          },
+          {
+            "word": " not",
+            "start": 63.24,
+            "end": 63.24,
+            "probability": 0.9735496640205383
+          },
+          {
+            "word": " me,",
+            "start": 63.24,
+            "end": 63.24,
+            "probability": 0.9682393670082092
+          },
+          {
+            "word": " no,",
+            "start": 63.24,
+            "end": 63.24,
+            "probability": 0.9660888314247131
+          },
+          {
+            "word": " for",
+            "start": 63.24,
+            "end": 63.24,
+            "probability": 0.9664011001586914
+          },
+          {
+            "word": " not",
+            "start": 63.24,
+            "end": 63.24,
+            "probability": 0.9746301770210266
+          },
+          {
+            "word": " me,",
+            "start": 63.24,
+            "end": 63.24,
+            "probability": 0.9695135354995728
+          },
+          {
+            "word": " no,",
+            "start": 63.24,
+            "end": 63.24,
+            "probability": 0.9680771231651306
+          },
+          {
+            "word": " for",
+            "start": 63.24,
+            "end": 63.24,
+            "probability": 0.9694699048995972
+          },
+          {
+            "word": " not",
+            "start": 63.24,
+            "end": 63.24,
+            "probability": 0.9782132506370544
+          },
+          {
+            "word": " me,",
+            "start": 63.24,
+            "end": 63.24,
+            "probability": 0.9653423428535461
+          },
+          {
+            "word": " no,",
+            "start": 63.24,
+            "end": 63.24,
+            "probability": 0.9635856747627258
+          },
+          {
+            "word": " for",
+            "start": 63.24,
+            "end": 63.24,
+            "probability": 0.9683544039726257
+          },
+          {
+            "word": " not",
+            "start": 63.24,
+            "end": 63.24,
+            "probability": 0.9770780801773071
+          },
+          {
+            "word": " me,",
+            "start": 63.24,
+            "end": 63.24,
+            "probability": 0.9638910889625549
+          },
+          {
+            "word": " no,",
+            "start": 63.24,
+            "end": 63.24,
+            "probability": 0.9650508761405945
+          },
+          {
+            "word": " for",
+            "start": 63.24,
+            "end": 63.24,
+            "probability": 0.9699295163154602
+          },
+          {
+            "word": " not",
+            "start": 63.24,
+            "end": 63.24,
+            "probability": 0.9766428470611572
+          },
+          {
+            "word": " me,",
+            "start": 63.24,
+            "end": 63.24,
+            "probability": 0.9630717039108276
+          },
+          {
+            "word": " no,",
+            "start": 63.24,
+            "end": 63.24,
+            "probability": 0.9633516669273376
+          },
+          {
+            "word": " for",
+            "start": 63.24,
+            "end": 63.24,
+            "probability": 0.9696742296218872
+          },
+          {
+            "word": " not",
+            "start": 63.24,
+            "end": 63.24,
+            "probability": 0.9752129316329956
+          },
+          {
+            "word": " me,",
+            "start": 63.24,
+            "end": 63.24,
+            "probability": 0.9643896222114563
+          },
+          {
+            "word": " no,",
+            "start": 63.24,
+            "end": 63.24,
+            "probability": 0.9615738987922668
+          },
+          {
+            "word": " for",
+            "start": 63.24,
+            "end": 63.24,
+            "probability": 0.9694660902023315
+          },
+          {
+            "word": " not",
+            "start": 63.24,
+            "end": 63.24,
+            "probability": 0.9745950102806091
+          },
+          {
+            "word": " me,",
+            "start": 63.24,
+            "end": 63.24,
+            "probability": 0.963008463382721
+          },
+          {
+            "word": " no,",
+            "start": 63.24,
+            "end": 63.24,
+            "probability": 0.9614885449409485
+          },
+          {
+            "word": " for",
+            "start": 63.24,
+            "end": 63.24,
+            "probability": 0.9688865542411804
+          },
+          {
+            "word": " not",
+            "start": 63.24,
+            "end": 63.24,
+            "probability": 0.9704099893569946
+          },
+          {
+            "word": " me,",
+            "start": 63.24,
+            "end": 63.24,
+            "probability": 0.96189945936203
+          },
+          {
+            "word": " no,",
+            "start": 63.24,
+            "end": 63.24,
+            "probability": 0.9595701098442078
+          },
+          {
+            "word": " for",
+            "start": 63.24,
+            "end": 63.24,
+            "probability": 0.9695677161216736
+          },
+          {
+            "word": " not",
+            "start": 63.24,
+            "end": 63.24,
+            "probability": 0.9694485068321228
+          },
+          {
+            "word": " me,",
+            "start": 63.24,
+            "end": 63.24,
+            "probability": 0.9612988233566284
+          },
+          {
+            "word": " no,",
+            "start": 63.24,
+            "end": 63.24,
+            "probability": 0.9545770287513733
+          },
+          {
+            "word": " for",
+            "start": 63.24,
+            "end": 63.24,
+            "probability": 0.9695309996604919
+          },
+          {
+            "word": " not",
+            "start": 63.24,
+            "end": 63.24,
+            "probability": 0.9689338803291321
+          },
+          {
+            "word": " me,",
+            "start": 63.24,
+            "end": 63.24,
+            "probability": 0.9619348645210266
+          },
+          {
+            "word": " no,",
+            "start": 63.24,
+            "end": 63.24,
+            "probability": 0.9523811936378479
+          },
+          {
+            "word": " for",
+            "start": 63.24,
+            "end": 63.24,
+            "probability": 0.9702548384666443
+          },
+          {
+            "word": " not",
+            "start": 63.24,
+            "end": 63.24,
+            "probability": 0.9688472747802734
+          },
+          {
+            "word": " me,",
+            "start": 63.24,
+            "end": 63.24,
+            "probability": 0.9637554883956909
+          },
+          {
+            "word": " no,",
+            "start": 63.24,
+            "end": 63.24,
+            "probability": 0.9502407908439636
+          },
+          {
+            "word": " for",
+            "start": 63.24,
+            "end": 63.24,
+            "probability": 0.9697709679603577
+          },
+          {
+            "word": " not",
+            "start": 63.24,
+            "end": 63.24,
+            "probability": 0.9686000347137451
+          },
+          {
+            "word": " me,",
+            "start": 63.24,
+            "end": 63.24,
+            "probability": 0.9619300365447998
+          },
+          {
+            "word": " no,",
+            "start": 63.24,
+            "end": 63.24,
+            "probability": 0.951106071472168
+          },
+          {
+            "word": " for",
+            "start": 63.24,
+            "end": 63.24,
+            "probability": 0.9711044430732727
+          },
+          {
+            "word": " not",
+            "start": 63.24,
+            "end": 63.24,
+            "probability": 0.9700036644935608
+          },
+          {
+            "word": " me,",
+            "start": 63.24,
+            "end": 63.24,
+            "probability": 0.9629308581352234
+          },
+          {
+            "word": " no,",
+            "start": 63.24,
+            "end": 63.24,
+            "probability": 0.9528707265853882
+          },
+          {
+            "word": " for",
+            "start": 63.24,
+            "end": 63.24,
+            "probability": 0.9701446294784546
+          },
+          {
+            "word": " not",
+            "start": 63.24,
+            "end": 63.24,
+            "probability": 0.965833842754364
+          },
+          {
+            "word": " me,",
+            "start": 63.24,
+            "end": 63.24,
+            "probability": 0.9604537487030029
+          },
+          {
+            "word": " no,",
+            "start": 63.24,
+            "end": 63.24,
+            "probability": 0.9571146965026855
+          },
+          {
+            "word": " for",
+            "start": 63.24,
+            "end": 63.24,
+            "probability": 0.9688112139701843
+          },
+          {
+            "word": " not",
+            "start": 63.24,
+            "end": 63.24,
+            "probability": 0.9646579623222351
+          },
+          {
+            "word": " me,",
+            "start": 63.24,
+            "end": 63.24,
+            "probability": 0.9662818908691406
+          },
+          {
+            "word": " no,",
+            "start": 63.24,
+            "end": 63.24,
+            "probability": 0.9504581689834595
+          },
+          {
+            "word": " for",
+            "start": 63.26,
+            "end": 63.26,
+            "probability": 0.9694063067436218
+          },
+          {
+            "word": " not",
+            "start": 63.26,
+            "end": 63.26,
+            "probability": 0.958480179309845
+          },
+          {
+            "word": " me,",
+            "start": 63.26,
+            "end": 63.26,
+            "probability": 0.964422881603241
+          },
+          {
+            "word": " no,",
+            "start": 63.26,
+            "end": 63.26,
+            "probability": 0.9541630148887634
+          },
+          {
+            "word": " for",
+            "start": 63.26,
+            "end": 63.26,
+            "probability": 0.9696100950241089
+          },
+          {
+            "word": " not",
+            "start": 63.26,
+            "end": 63.26,
+            "probability": 0.9601680636405945
+          },
+          {
+            "word": " me,",
+            "start": 63.26,
+            "end": 63.26,
+            "probability": 0.9648237228393555
+          },
+          {
+            "word": " no,",
+            "start": 63.26,
+            "end": 63.26,
+            "probability": 0.9496919512748718
+          },
+          {
+            "word": " for",
+            "start": 63.26,
+            "end": 63.26,
+            "probability": 0.9699239134788513
+          },
+          {
+            "word": " not",
+            "start": 63.26,
+            "end": 63.26,
+            "probability": 0.9592121839523315
+          },
+          {
+            "word": " me,",
+            "start": 63.26,
+            "end": 63.26,
+            "probability": 0.9677774906158447
+          },
+          {
+            "word": " no,",
+            "start": 63.26,
+            "end": 63.26,
+            "probability": 0.9506971836090088
+          },
+          {
+            "word": " for",
+            "start": 63.26,
+            "end": 63.26,
+            "probability": 0.9682493209838867
+          },
+          {
+            "word": " not",
+            "start": 63.26,
+            "end": 63.26,
+            "probability": 0.9567734599113464
+          },
+          {
+            "word": " me,",
+            "start": 63.26,
+            "end": 63.26,
+            "probability": 0.9671707153320312
+          },
+          {
+            "word": " no,",
+            "start": 63.26,
+            "end": 63.26,
+            "probability": 0.9406329393386841
+          },
+          {
+            "word": " for",
+            "start": 63.26,
+            "end": 63.26,
+            "probability": 0.9681702852249146
+          },
+          {
+            "word": " not",
+            "start": 63.26,
+            "end": 63.26,
+            "probability": 0.9573500156402588
+          },
+          {
+            "word": " me,",
+            "start": 63.26,
+            "end": 63.26,
+            "probability": 0.9641647934913635
+          },
+          {
+            "word": " no,",
+            "start": 63.26,
+            "end": 63.26,
+            "probability": 0.9541447758674622
+          },
+          {
+            "word": " for",
+            "start": 63.26,
+            "end": 63.26,
+            "probability": 0.968599796295166
+          },
+          {
+            "word": " not",
+            "start": 63.26,
+            "end": 63.26,
+            "probability": 0.9561107754707336
+          },
+          {
+            "word": " me,",
+            "start": 63.26,
+            "end": 63.26,
+            "probability": 0.9672276973724365
+          },
+          {
+            "word": " no,",
+            "start": 63.26,
+            "end": 63.26,
+            "probability": 0.9493119120597839
+          },
+          {
+            "word": " for",
+            "start": 63.26,
+            "end": 63.26,
+            "probability": 0.9702033400535583
+          },
+          {
+            "word": " not",
+            "start": 63.26,
+            "end": 63.26,
+            "probability": 0.9595385193824768
+          },
+          {
+            "word": " me,",
+            "start": 63.26,
+            "end": 63.26,
+            "probability": 0.9641715884208679
+          },
+          {
+            "word": " no,",
+            "start": 63.26,
+            "end": 63.26,
+            "probability": 0.9515612125396729
+          },
+          {
+            "word": " for",
+            "start": 63.26,
+            "end": 63.26,
+            "probability": 0.9703601002693176
+          },
+          {
+            "word": " not",
+            "start": 63.26,
+            "end": 63.26,
+            "probability": 0.9568554162979126
+          },
+          {
+            "word": " me,",
+            "start": 63.26,
+            "end": 63.26,
+            "probability": 0.9638581871986389
+          },
+          {
+            "word": " no,",
+            "start": 63.26,
+            "end": 63.26,
+            "probability": 0.9475429058074951
+          },
+          {
+            "word": " for",
+            "start": 63.26,
+            "end": 63.26,
+            "probability": 0.9687525033950806
+          },
+          {
+            "word": " not",
+            "start": 63.26,
+            "end": 63.26,
+            "probability": 0.9573194980621338
+          },
+          {
+            "word": " me,",
+            "start": 63.26,
+            "end": 63.26,
+            "probability": 0.9662477374076843
+          },
+          {
+            "word": " no,",
+            "start": 63.26,
+            "end": 63.26,
+            "probability": 0.9498990774154663
+          },
+          {
+            "word": " for",
+            "start": 63.26,
+            "end": 63.26,
+            "probability": 0.9700813889503479
+          },
+          {
+            "word": " not",
+            "start": 63.26,
+            "end": 63.26,
+            "probability": 0.9545687437057495
+          },
+          {
+            "word": " me,",
+            "start": 63.26,
+            "end": 63.26,
+            "probability": 0.9661179780960083
+          },
+          {
+            "word": " no,",
+            "start": 63.26,
+            "end": 63.26,
+            "probability": 0.9504784345626831
+          },
+          {
+            "word": " for",
+            "start": 63.26,
+            "end": 63.26,
+            "probability": 0.9668512940406799
+          },
+          {
+            "word": " not",
+            "start": 63.26,
+            "end": 63.26,
+            "probability": 0.9553712010383606
+          },
+          {
+            "word": " me,",
+            "start": 63.26,
+            "end": 63.26,
+            "probability": 0.96342933177948
+          },
+          {
+            "word": " no,",
+            "start": 63.26,
+            "end": 63.26,
+            "probability": 0.9483634829521179
+          },
+          {
+            "word": " for",
+            "start": 63.26,
+            "end": 63.26,
+            "probability": 0.9679285287857056
+          },
+          {
+            "word": " not",
+            "start": 63.26,
+            "end": 63.26,
+            "probability": 0.9471850395202637
+          },
+          {
+            "word": " me,",
+            "start": 63.26,
+            "end": 63.26,
+            "probability": 0.9647110104560852
+          },
+          {
+            "word": " no,",
+            "start": 63.26,
+            "end": 63.26,
+            "probability": 0.9489494562149048
+          },
+          {
+            "word": " for",
+            "start": 63.34,
+            "end": 63.34,
+            "probability": 0.9680283069610596
+          },
+          {
+            "word": " not",
+            "start": 63.34,
+            "end": 63.34,
+            "probability": 0.9506233930587769
+          },
+          {
+            "word": " me,",
+            "start": 63.34,
+            "end": 63.34,
+            "probability": 0.9643691182136536
+          },
+          {
+            "word": " no,",
+            "start": 63.34,
+            "end": 63.34,
+            "probability": 0.9515365362167358
+          },
+          {
+            "word": " for",
+            "start": 63.34,
+            "end": 63.34,
+            "probability": 0.9661771655082703
+          },
+          {
+            "word": " not",
+            "start": 63.34,
+            "end": 63.34,
+            "probability": 0.948062539100647
+          },
+          {
+            "word": " me,",
+            "start": 63.34,
+            "end": 63.34,
+            "probability": 0.9606688022613525
+          },
+          {
+            "word": " no",
+            "start": 63.34,
+            "end": 63.34,
+            "probability": 0.9253373742103577
+          }
+        ]
+      }
+    ],
+    "language": "jw"
+  }
+}

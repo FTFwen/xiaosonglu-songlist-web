@@ -1,0 +1,195 @@
+{
+  "schemaVersion": 1,
+  "key": "song-269",
+  "songId": 269,
+  "songName": "花园舞曲",
+  "rowKey": "花园舞曲",
+  "displaySongName": "花园舞曲",
+  "artist": "SNH48",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "",
+  "audio": {
+    "url": "assets/audio/song_268.m4a?v=b07fe063ab2f",
+    "sha256": "b07fe063ab2f119e8ffb61fa8c271de20cf22e2c4249409a10bf4c4f5b0f10e5"
+  },
+  "retrievedAt": "2026-11-16T04:06:00.483Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E8%8A%B1%E5%9B%AD%E8%88%9E%E6%9B%B2&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E8%8A%B1%E5%9B%AD%E8%88%9E%E6%9B%B2%20SNH48&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1409942674,
+        "name": "花园舞曲",
+        "artists": [
+          "SNH48"
+        ],
+        "album": "遗忘的国度 (上)",
+        "durationMs": 266535,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1485343657,
+        "name": "花园舞曲",
+        "artists": [
+          "YXJ48",
+          "栗栗",
+          "牛奶别吃了",
+          "浅汐",
+          "从心"
+        ],
+        "album": "三周年·花园舞曲",
+        "durationMs": 266814,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1866419382,
+        "name": "花园舞曲",
+        "artists": [
+          "DME48翻唱团"
+        ],
+        "album": "DME48 GROUP第三届总选举演唱会",
+        "durationMs": 266631,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2065727454,
+        "name": "花园舞曲",
+        "artists": [
+          "韩穆死活都要娶我（叶韶雪）",
+          "叶韶雪死活要嫁给我（韩穆）",
+          "展林霏",
+          "千玥Jasmyn.Z",
+          "姚临"
+        ],
+        "album": "花园舞曲【这河里吗？Round 2】",
+        "durationMs": 266433,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1951221904,
+        "name": "花园舞曲",
+        "artists": [
+          "DOG哒哒"
+        ],
+        "album": "My Heart Is Your Land",
+        "durationMs": 268610,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1953104889,
+        "name": "花园舞曲",
+        "artists": [
+          "RAOOM",
+          "溏诗",
+          "裕茶",
+          "乐乐",
+          "十三"
+        ],
+        "album": "花园舞曲",
+        "durationMs": 266721,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1946743155,
+        "name": "花园舞曲",
+        "artists": [
+          "林在"
+        ],
+        "album": "林在翻唱",
+        "durationMs": 266565,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2075844823,
+        "name": "花园舞曲",
+        "artists": [
+          "sl_ng"
+        ],
+        "album": "塞纳河钢琴COVER",
+        "durationMs": 265815,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 269,
+      "song_name": "花园舞曲",
+      "show_as_song_name": "",
+      "display_song_name": "花园舞曲",
+      "artist": "SNH48",
+      "artist_search": "SNH48",
+      "feat_artist": "",
+      "remark": "",
+      "tone": "",
+      "language": "中文",
+      "type": "SNH48、偶像",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV18Jpw6mE82/?p=2",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-06",
+      "row_key": "花园舞曲"
+    },
+    "sourceId": 1409942674,
+    "sourcePath": "sources/1409942674.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1409942674",
+    "selected": {
+      "id": 1409942674,
+      "name": "花园舞曲",
+      "artists": [
+        "SNH48"
+      ],
+      "album": "遗忘的国度 (上)",
+      "durationMs": 266535,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 76
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-269-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 267.115,
+    "sourceFirstLine": {
+      "t": 26.7,
+      "text": "花只开花园里"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 35.54,
+      "endSeconds": 35.96,
+      "similarity": 0.2857142857142857,
+      "recognizedText": "里",
+      "meanProbability": 0.836,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

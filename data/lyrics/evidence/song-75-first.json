@@ -1,0 +1,123 @@
+{
+  "audioSha256": "8b759386e63f14f5f59f85b2f7dff788a654865ed15dcdf69cf3e5eaa02b87f5",
+  "model": "whisper-base",
+  "start": 0,
+  "end": 35,
+  "result": {
+    "text": "うそずいてるのだあれさよなら",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 27.019999999999996,
+        "end": 29.98,
+        "text": "うそずいてるのだあれ",
+        "tokens": [
+          50364,
+          2646,
+          5040,
+          18216,
+          18549,
+          4895,
+          2972,
+          5362,
+          30659,
+          50518
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.1508260769314236,
+        "compression_ratio": 17.945454545454545,
+        "no_speech_prob": 0.07224275171756744,
+        "words": [
+          {
+            "word": "う",
+            "start": 27.019999999999996,
+            "end": 27.06,
+            "probability": 0.007741178851574659
+          },
+          {
+            "word": "そ",
+            "start": 27.06,
+            "end": 27.1,
+            "probability": 0.7552305459976196
+          },
+          {
+            "word": "ず",
+            "start": 27.1,
+            "end": 29.88,
+            "probability": 0.19128699600696564
+          },
+          {
+            "word": "いて",
+            "start": 29.88,
+            "end": 29.9,
+            "probability": 0.42064687609672546
+          },
+          {
+            "word": "る",
+            "start": 29.9,
+            "end": 29.92,
+            "probability": 0.520826518535614
+          },
+          {
+            "word": "の",
+            "start": 29.92,
+            "end": 29.94,
+            "probability": 0.8841786980628967
+          },
+          {
+            "word": "だ",
+            "start": 29.94,
+            "end": 29.96,
+            "probability": 0.8793817162513733
+          },
+          {
+            "word": "あれ",
+            "start": 29.96,
+            "end": 29.98,
+            "probability": 0.8140280842781067
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "seek": 2998,
+        "start": 29.98,
+        "end": 30.24,
+        "text": "さよなら",
+        "tokens": [
+          50364,
+          6722,
+          5591,
+          42540,
+          50464
+        ],
+        "temperature": 0,
+        "avg_logprob": -1.4197808901468914,
+        "compression_ratio": 0.6,
+        "no_speech_prob": 0.496724396944046,
+        "words": [
+          {
+            "word": "さ",
+            "start": 29.98,
+            "end": 30.18,
+            "probability": 0.11213722079992294
+          },
+          {
+            "word": "よ",
+            "start": 30.18,
+            "end": 30.24,
+            "probability": 0.5542490482330322
+          },
+          {
+            "word": "なら",
+            "start": 30.24,
+            "end": 30.24,
+            "probability": 0.11393343657255173
+          }
+        ]
+      }
+    ],
+    "language": "ja"
+  }
+}

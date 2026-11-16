@@ -1,0 +1,183 @@
+{
+  "schemaVersion": 1,
+  "key": "song-179",
+  "songId": 179,
+  "songName": "普通朋友（半首）",
+  "rowKey": "普通朋友（半首）",
+  "displaySongName": "普通朋友（半首）",
+  "artist": "陶喆",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "合集章节标注（半首）；弹幕 01:53 多次提及「普通朋友」印证",
+  "audio": {
+    "url": "assets/audio/song_178.m4a?v=8e0aaf65e0d5",
+    "sha256": "8e0aaf65e0d5199b2273974494edfdf09f41699aae637a874bfd688eef952604"
+  },
+  "retrievedAt": "2026-11-16T04:04:28.491Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E6%99%AE%E9%80%9A%E6%9C%8B%E5%8F%8B&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E6%99%AE%E9%80%9A%E6%9C%8B%E5%8F%8B%20%E9%99%B6%E5%96%86&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 150623,
+        "name": "普通朋友",
+        "artists": [
+          "陶喆"
+        ],
+        "album": "I'm OK",
+        "durationMs": 255133,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 150506,
+        "name": "普通朋友",
+        "artists": [
+          "陶喆"
+        ],
+        "album": "Ultrasound 乐之路 1997-2003",
+        "durationMs": 255000,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2110023759,
+        "name": "普通朋友",
+        "artists": [
+          "宋雨琦"
+        ],
+        "album": "普通朋友",
+        "durationMs": 251813,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2117608396,
+        "name": "普通朋友",
+        "artists": [
+          "WiFi歪歪"
+        ],
+        "album": "普通朋友",
+        "durationMs": 216404,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1323301262,
+        "name": "普通朋友",
+        "artists": [
+          "张叶蕾"
+        ],
+        "album": "你回头看",
+        "durationMs": 234703,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1452979629,
+        "name": "普通朋友",
+        "artists": [
+          "PIggy"
+        ],
+        "album": "普通朋友",
+        "durationMs": 191580,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1808085682,
+        "name": "普通朋友",
+        "artists": [
+          "蔡依林"
+        ],
+        "album": "CUXI 蔡依林特务J庆功演唱会现场实录盘",
+        "durationMs": 139853,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1411971034,
+        "name": "普通朋友",
+        "artists": [
+          "菜籽油"
+        ],
+        "album": "翻唱part1.",
+        "durationMs": 254484,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 179,
+      "song_name": "普通朋友",
+      "show_as_song_name": "",
+      "display_song_name": "普通朋友（半首）",
+      "artist": "陶喆",
+      "artist_search": "陶喆",
+      "feat_artist": "",
+      "remark": "合集章节标注（半首）；弹幕 01:53 多次提及「普通朋友」印证",
+      "tone": "",
+      "language": "中文",
+      "type": "流行",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1q9YB6xErK/?p=12",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-09-13",
+      "row_key": "普通朋友（半首）"
+    },
+    "sourceId": 150623,
+    "sourcePath": "sources/150623.json",
+    "sourceUrl": "https://music.163.com/#/song?id=150623",
+    "selected": {
+      "id": 150623,
+      "name": "普通朋友",
+      "artists": [
+        "陶喆"
+      ],
+      "album": "I'm OK",
+      "durationMs": 255133,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 63
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-179-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 106.742,
+    "sourceFirstLine": {
+      "t": 19,
+      "text": "等待"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 0.0,
+      "endSeconds": 0.6,
+      "similarity": 0.0,
+      "recognizedText": "女",
+      "meanProbability": 0.131,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

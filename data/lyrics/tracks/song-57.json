@@ -1,0 +1,214 @@
+{
+  "schemaVersion": 1,
+  "key": "song-57",
+  "songId": 57,
+  "songName": "可愛くてごめん",
+  "rowKey": "可愛くてごめん",
+  "displaySongName": "可愛くてごめん",
+  "artist": "HoneyWorks / 早見沙織",
+  "language": "日文",
+  "derivative": false,
+  "edition": "",
+  "remark": "来自 2026-08-18 歌切合集《【663645TV】神回！我已启动！全力绿来唱完了！8月18日歌切合集【小松绿Viridis】》的分P《10-可愛くてごめん》。按当前 song-cut-first 策略，将合集章节名直接并入正式曲库；当前记录的是合集内顺序时间，不是原始直播回放时间。",
+  "audio": {
+    "url": "assets/audio/song_30.m4a?v=4af6030ee3d3",
+    "sha256": "4af6030ee3d3455fe699dfe30cf8d025f307e498c9613f56596914daf95aaf6f"
+  },
+  "retrievedAt": "2026-11-16T04:02:45.997Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E5%8F%AF%E6%84%9B%E3%81%8F%E3%81%A6%E3%81%94%E3%82%81%E3%82%93&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E5%8F%AF%E6%84%9B%E3%81%8F%E3%81%A6%E3%81%94%E3%82%81%E3%82%93%20HoneyWorks%20%2F%20%E6%97%A9%E8%A6%8B%E6%B2%99%E7%B9%94&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1996929972,
+        "name": "可愛くてごめん",
+        "artists": [
+          "HoneyWorks",
+          "早見沙織"
+        ],
+        "album": "可愛くてごめん",
+        "durationMs": 219892,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2025974731,
+        "name": "可愛くてごめん",
+        "artists": [
+          "HoneyWorks",
+          "早見沙織"
+        ],
+        "album": "ねぇ、好きって痛いよ。～告白実行委員会キャラクターソング集～",
+        "durationMs": 219892,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2108142023,
+        "name": "可愛くてごめん",
+        "artists": [
+          "Ado"
+        ],
+        "album": "Adoの歌ってみたアルバム",
+        "durationMs": 219133,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2023341615,
+        "name": "可愛くてごめん",
+        "artists": [
+          "Risei"
+        ],
+        "album": "可愛くてごめん",
+        "durationMs": 220917,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2016855399,
+        "name": "可愛くてごめん",
+        "artists": [
+          "高嶺のなでしこ"
+        ],
+        "album": "可愛くてごめん",
+        "durationMs": 218306,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3371456703,
+        "name": "可愛くてごめん",
+        "artists": [
+          "林知微",
+          "陈与默"
+        ],
+        "album": "可愛くてごめん",
+        "durationMs": 164682,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2606892496,
+        "name": "可愛くてごめん",
+        "artists": [
+          "上坂すみれ"
+        ],
+        "album": "可愛くてごめん（TVアニメ「時々ボソッとロシア語でデレる隣のアーリャさん」エンディングテーマ）",
+        "durationMs": 215661,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2061189199,
+        "name": "可愛くてごめん",
+        "artists": [
+          "茶理理",
+          "Hanser"
+        ],
+        "album": "可愛くてごめん",
+        "durationMs": 220961,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 57,
+      "song_name": "可愛くてごめん",
+      "show_as_song_name": "",
+      "display_song_name": "可愛くてごめん",
+      "artist": "HoneyWorks / 早見沙織",
+      "artist_search": "HoneyWorks 早见沙织",
+      "feat_artist": "",
+      "remark": "来自 2026-08-18 歌切合集《【663645TV】神回！我已启动！全力绿来唱完了！8月18日歌切合集【小松绿Viridis】》的分P《10-可愛くてごめん》。按当前 song-cut-first 策略，将合集章节名直接并入正式曲库；当前记录的是合集内顺序时间，不是原始直播回放时间。",
+      "tone": "",
+      "language": "日文",
+      "type": "J-Pop、动漫",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1rv8V6DExk/",
+      "sing_count": 1,
+      "status_labels": "歌切合集补录、待后续回放时间定位",
+      "last_sing_at": "2026-08-18",
+      "row_key": "可愛くてごめん"
+    },
+    "sourceId": 1996929972,
+    "sourcePath": "sources/1996929972.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1996929972",
+    "selected": {
+      "id": 1996929972,
+      "name": "可愛くてごめん",
+      "artists": [
+        "HoneyWorks",
+        "早見沙織"
+      ],
+      "album": "可愛くてごめん",
+      "durationMs": 219892,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 58
+  },
+  "alignment": {
+    "status": "spotcheck_review_required",
+    "evidencePath": "evidence/song-57-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 221.054,
+    "sourceFirstLine": {
+      "t": 11.95,
+      "text": "私が私の事を愛して"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 11.8,
+      "endSeconds": 14.9,
+      "similarity": 0.8421052631578947,
+      "recognizedText": "私が私のことを愛して",
+      "meanProbability": 0.799,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": -0.15,
+    "checks": [
+      {
+        "sourceLine": {
+          "t": 111.37,
+          "text": "Chu！ 可愛くてごめん"
+        },
+        "evidencePath": "evidence/song-57-check0.json",
+        "candidate": null,
+        "residualSeconds": null
+      },
+      {
+        "sourceLine": {
+          "t": 200.41,
+          "text": "ムカついちゃうよね？ざまあｗ"
+        },
+        "evidencePath": "evidence/song-57-check1.json",
+        "candidate": {
+          "audioSeconds": 200.78,
+          "endSeconds": 202.62,
+          "similarity": 0.6363636363636364,
+          "recognizedText": "いっちゃうよね ぞま",
+          "meanProbability": 0.497,
+          "tokenPrefixOnly": false
+        },
+        "residualSeconds": 0.52
+      }
+    ],
+    "asrLanguage": "ja",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

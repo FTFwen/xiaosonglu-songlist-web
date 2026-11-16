@@ -1,0 +1,183 @@
+{
+  "schemaVersion": 1,
+  "key": "song-323",
+  "songId": 323,
+  "songName": "红豆",
+  "rowKey": "红豆",
+  "displaySongName": "红豆",
+  "artist": "王菲",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "桐人今天睡大觉「全自动歌切项目」2026.10.18 歌切合集第 16 分P（章节「17_红豆 - 王菲」）。弹幕共 61 条直接出现该歌名。未定位回放时间点。",
+  "audio": {
+    "url": "assets/audio/song_322.m4a?v=16d532fc76be",
+    "sha256": "16d532fc76bebea27b3caab177d2071b7dabb24b37cbac42fcdd0991c0dfe36f"
+  },
+  "retrievedAt": "2026-11-16T04:06:54.630Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E7%BA%A2%E8%B1%86&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E7%BA%A2%E8%B1%86%20%E7%8E%8B%E8%8F%B2&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 299936,
+        "name": "红豆",
+        "artists": [
+          "王菲"
+        ],
+        "album": "唱游",
+        "durationMs": 256026,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 299757,
+        "name": "红豆",
+        "artists": [
+          "王菲"
+        ],
+        "album": "Eyes On Me",
+        "durationMs": 260000,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 298986,
+        "name": "红豆",
+        "artists": [
+          "王菲"
+        ],
+        "album": "阿菲正传",
+        "durationMs": 257573,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 28029104,
+        "name": "红豆",
+        "artists": [
+          "方大同"
+        ],
+        "album": "The Soulboy Collection",
+        "durationMs": 236093,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1468957767,
+        "name": "红豆",
+        "artists": [
+          "徐泽（要不要买菜）"
+        ],
+        "album": "红豆",
+        "durationMs": 204179,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 26590188,
+        "name": "红豆",
+        "artists": [
+          "张悬"
+        ],
+        "album": "如果你冷",
+        "durationMs": 256000,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 82139,
+        "name": "红豆",
+        "artists": [
+          "方大同"
+        ],
+        "album": "Timeless 可啦思刻",
+        "durationMs": 236093,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2140422465,
+        "name": "红豆",
+        "artists": [
+          "刘大拿"
+        ],
+        "album": "红豆",
+        "durationMs": 221298,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 323,
+      "song_name": "红豆",
+      "show_as_song_name": "",
+      "display_song_name": "红豆",
+      "artist": "王菲",
+      "artist_search": "王菲 红豆",
+      "feat_artist": "",
+      "remark": "桐人今天睡大觉「全自动歌切项目」2026.10.18 歌切合集第 16 分P（章节「17_红豆 - 王菲」）。弹幕共 61 条直接出现该歌名。未定位回放时间点。",
+      "tone": "",
+      "language": "中文",
+      "type": "华语经典、流行",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1UPnV6zEs4/?p=16",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-18",
+      "row_key": "红豆"
+    },
+    "sourceId": 299936,
+    "sourcePath": "sources/299936.json",
+    "sourceUrl": "https://music.163.com/#/song?id=299936",
+    "selected": {
+      "id": 299936,
+      "name": "红豆",
+      "artists": [
+        "王菲"
+      ],
+      "album": "唱游",
+      "durationMs": 256026,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 44
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-323-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 258.859,
+    "sourceFirstLine": {
+      "t": 15.51,
+      "text": "还没好好的感受"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 0.0,
+      "endSeconds": 0.58,
+      "similarity": 0.0,
+      "recognizedText": "我們",
+      "meanProbability": 0.121,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

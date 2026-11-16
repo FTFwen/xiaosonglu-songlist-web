@@ -1,0 +1,188 @@
+{
+  "schemaVersion": 1,
+  "key": "song-168",
+  "songId": 168,
+  "songName": "中华墨水娘",
+  "rowKey": "中华墨水娘",
+  "displaySongName": "中华墨水娘",
+  "artist": "洛天依Official、Soda纯白",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "桐人今天睡大觉合集第18章误标为《中华铄金娘》；经用户提供的独立B站歌切 BV165YJ6gEUy 复核，实际为《中华墨水娘》",
+  "audio": {
+    "url": "assets/audio/song_156.m4a?v=f79d52634080",
+    "sha256": "f79d526340808e50f836ded4b237f0c66d28142091c37061e7525fc718d7d2b9"
+  },
+  "retrievedAt": "2026-11-16T04:04:25.915Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E4%B8%AD%E5%8D%8E%E5%A2%A8%E6%B0%B4%E5%A8%98&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E4%B8%AD%E5%8D%8E%E5%A2%A8%E6%B0%B4%E5%A8%98%20%E6%B4%9B%E5%A4%A9%E4%BE%9DOfficial&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 28445471,
+        "name": "中华墨水娘",
+        "artists": [
+          "洛天依Official"
+        ],
+        "album": "热门华语215",
+        "durationMs": 204000,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1485703136,
+        "name": "中华墨水娘",
+        "artists": [
+          "西商清樂",
+          "RB绯雀",
+          "酱鸭酱酱酱。"
+        ],
+        "album": "中华墨水娘",
+        "durationMs": 204000,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1342687379,
+        "name": "中华墨水娘",
+        "artists": [
+          "郝帅s"
+        ],
+        "album": "中华墨水娘",
+        "durationMs": 204277,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1395178437,
+        "name": "中华墨水娘",
+        "artists": [
+          "陆逐影",
+          "梵夜九"
+        ],
+        "album": "黄金矿工の合唱",
+        "durationMs": 205139,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1412655309,
+        "name": "中华墨水娘",
+        "artists": [
+          "Tsukui",
+          "徵羽摩柯"
+        ],
+        "album": "中华墨水娘",
+        "durationMs": 205944,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1485467948,
+        "name": "中华墨水娘",
+        "artists": [
+          "酱鸭酱酱酱。"
+        ],
+        "album": "中华墨水娘",
+        "durationMs": 204000,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3459369246,
+        "name": "中华墨水娘",
+        "artists": [
+          "風权"
+        ],
+        "album": "",
+        "durationMs": 204330,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 435307370,
+        "name": "中华墨水娘 (Album Version)",
+        "artists": [
+          "洛天依Official",
+          "Soda纯白"
+        ],
+        "album": "中华少女Project (Deluxe Edition)",
+        "durationMs": 209031,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      }
+    ],
+    "workQuery": {
+      "song_id": 168,
+      "song_name": "中华墨水娘",
+      "show_as_song_name": "",
+      "display_song_name": "中华墨水娘",
+      "artist": "洛天依Official、Soda纯白",
+      "artist_search": "洛天依Official、Soda纯白",
+      "feat_artist": "",
+      "remark": "桐人今天睡大觉合集第18章误标为《中华铄金娘》；经用户提供的独立B站歌切 BV165YJ6gEUy 复核，实际为《中华墨水娘》",
+      "tone": "",
+      "language": "中文",
+      "type": "中V",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV165YJ6gEUy/",
+      "sing_count": 1,
+      "status_labels": "歌回、独立歌切复核",
+      "last_sing_at": "2026-09-08",
+      "row_key": "中华墨水娘"
+    },
+    "sourceId": 28445471,
+    "sourcePath": "sources/28445471.json",
+    "sourceUrl": "https://music.163.com/#/song?id=28445471",
+    "selected": {
+      "id": 28445471,
+      "name": "中华墨水娘",
+      "artists": [
+        "洛天依Official"
+      ],
+      "album": "热门华语215",
+      "durationMs": 204000,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 42
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-168-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 208.98,
+    "sourceFirstLine": {
+      "t": 3,
+      "text": "混缩 : 純白P"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 22.76,
+      "endSeconds": 24.16,
+      "similarity": 0.0,
+      "recognizedText": "作",
+      "meanProbability": 0.006,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

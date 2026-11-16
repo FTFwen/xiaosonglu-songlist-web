@@ -1,0 +1,1330 @@
+{
+  "audioSha256": "245a35c58ee6ea44c05378c8348d4956b46bce572817186cb12d670ef5b91340",
+  "model": "whisper-base",
+  "start": 0,
+  "end": 43.760000000000005,
+  "result": {
+    "text": "みて。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。【音楽】超過嗎?何知らん?【音楽】超過嗎?無い超過嗎?お取り出そう無い超過嗎?【音楽】あのね、私、実はぴついてるのほら君がいいんだけどあまり考えとやって思いたくて忘れがいたけどもっと",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 0.0,
+        "end": 0.74,
+        "text": "みて",
+        "tokens": [
+          50364,
+          11362,
+          2996,
+          50414
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.3299740382603237,
+        "compression_ratio": 5.368421052631579,
+        "no_speech_prob": 0.17936433851718903,
+        "words": [
+          {
+            "word": "み",
+            "start": 0.0,
+            "end": 0.44,
+            "probability": 0.0016465334920212626
+          },
+          {
+            "word": "て。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。",
+            "start": 0.44,
+            "end": 0.74,
+            "probability": 0.13980814814567566
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "seek": 0,
+        "start": 1.0,
+        "end": 2.0,
+        "text": "。",
+        "tokens": [
+          50414,
+          1543,
+          50464
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.3299740382603237,
+        "compression_ratio": 5.368421052631579,
+        "no_speech_prob": 0.17936433851718903,
+        "words": []
+      },
+      {
+        "id": 2,
+        "seek": 0,
+        "start": 2.0,
+        "end": 3.0,
+        "text": "。",
+        "tokens": [
+          50464,
+          1543,
+          50514
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.3299740382603237,
+        "compression_ratio": 5.368421052631579,
+        "no_speech_prob": 0.17936433851718903,
+        "words": []
+      },
+      {
+        "id": 3,
+        "seek": 0,
+        "start": 3.0,
+        "end": 4.0,
+        "text": "。",
+        "tokens": [
+          50514,
+          1543,
+          50564
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.3299740382603237,
+        "compression_ratio": 5.368421052631579,
+        "no_speech_prob": 0.17936433851718903,
+        "words": []
+      },
+      {
+        "id": 4,
+        "seek": 0,
+        "start": 4.0,
+        "end": 5.0,
+        "text": "。",
+        "tokens": [
+          50564,
+          1543,
+          50614
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.3299740382603237,
+        "compression_ratio": 5.368421052631579,
+        "no_speech_prob": 0.17936433851718903,
+        "words": []
+      },
+      {
+        "id": 5,
+        "seek": 0,
+        "start": 5.0,
+        "end": 6.0,
+        "text": "。",
+        "tokens": [
+          50614,
+          1543,
+          50664
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.3299740382603237,
+        "compression_ratio": 5.368421052631579,
+        "no_speech_prob": 0.17936433851718903,
+        "words": []
+      },
+      {
+        "id": 6,
+        "seek": 0,
+        "start": 6.0,
+        "end": 7.0,
+        "text": "。",
+        "tokens": [
+          50664,
+          1543,
+          50714
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.3299740382603237,
+        "compression_ratio": 5.368421052631579,
+        "no_speech_prob": 0.17936433851718903,
+        "words": []
+      },
+      {
+        "id": 7,
+        "seek": 0,
+        "start": 7.0,
+        "end": 8.0,
+        "text": "。",
+        "tokens": [
+          50714,
+          1543,
+          50764
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.3299740382603237,
+        "compression_ratio": 5.368421052631579,
+        "no_speech_prob": 0.17936433851718903,
+        "words": []
+      },
+      {
+        "id": 8,
+        "seek": 0,
+        "start": 8.0,
+        "end": 9.0,
+        "text": "。",
+        "tokens": [
+          50764,
+          1543,
+          50814
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.3299740382603237,
+        "compression_ratio": 5.368421052631579,
+        "no_speech_prob": 0.17936433851718903,
+        "words": []
+      },
+      {
+        "id": 9,
+        "seek": 0,
+        "start": 9.0,
+        "end": 10.0,
+        "text": "。",
+        "tokens": [
+          50814,
+          1543,
+          50864
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.3299740382603237,
+        "compression_ratio": 5.368421052631579,
+        "no_speech_prob": 0.17936433851718903,
+        "words": []
+      },
+      {
+        "id": 10,
+        "seek": 0,
+        "start": 10.0,
+        "end": 11.0,
+        "text": "。",
+        "tokens": [
+          50864,
+          1543,
+          50914
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.3299740382603237,
+        "compression_ratio": 5.368421052631579,
+        "no_speech_prob": 0.17936433851718903,
+        "words": []
+      },
+      {
+        "id": 11,
+        "seek": 0,
+        "start": 11.0,
+        "end": 12.0,
+        "text": "。",
+        "tokens": [
+          50914,
+          1543,
+          50964
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.3299740382603237,
+        "compression_ratio": 5.368421052631579,
+        "no_speech_prob": 0.17936433851718903,
+        "words": []
+      },
+      {
+        "id": 12,
+        "seek": 0,
+        "start": 12.0,
+        "end": 13.0,
+        "text": "。",
+        "tokens": [
+          50964,
+          1543,
+          51014
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.3299740382603237,
+        "compression_ratio": 5.368421052631579,
+        "no_speech_prob": 0.17936433851718903,
+        "words": []
+      },
+      {
+        "id": 13,
+        "seek": 0,
+        "start": 13.0,
+        "end": 14.0,
+        "text": "。",
+        "tokens": [
+          51014,
+          1543,
+          51064
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.3299740382603237,
+        "compression_ratio": 5.368421052631579,
+        "no_speech_prob": 0.17936433851718903,
+        "words": []
+      },
+      {
+        "id": 14,
+        "seek": 0,
+        "start": 14.0,
+        "end": 15.0,
+        "text": "。",
+        "tokens": [
+          51064,
+          1543,
+          51114
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.3299740382603237,
+        "compression_ratio": 5.368421052631579,
+        "no_speech_prob": 0.17936433851718903,
+        "words": []
+      },
+      {
+        "id": 15,
+        "seek": 0,
+        "start": 15.0,
+        "end": 16.0,
+        "text": "。",
+        "tokens": [
+          51114,
+          1543,
+          51164
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.3299740382603237,
+        "compression_ratio": 5.368421052631579,
+        "no_speech_prob": 0.17936433851718903,
+        "words": []
+      },
+      {
+        "id": 16,
+        "seek": 0,
+        "start": 16.0,
+        "end": 17.0,
+        "text": "。",
+        "tokens": [
+          51164,
+          1543,
+          51214
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.3299740382603237,
+        "compression_ratio": 5.368421052631579,
+        "no_speech_prob": 0.17936433851718903,
+        "words": []
+      },
+      {
+        "id": 17,
+        "seek": 0,
+        "start": 17.0,
+        "end": 18.0,
+        "text": "。",
+        "tokens": [
+          51214,
+          1543,
+          51264
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.3299740382603237,
+        "compression_ratio": 5.368421052631579,
+        "no_speech_prob": 0.17936433851718903,
+        "words": []
+      },
+      {
+        "id": 18,
+        "seek": 0,
+        "start": 18.0,
+        "end": 19.0,
+        "text": "。",
+        "tokens": [
+          51264,
+          1543,
+          51314
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.3299740382603237,
+        "compression_ratio": 5.368421052631579,
+        "no_speech_prob": 0.17936433851718903,
+        "words": []
+      },
+      {
+        "id": 19,
+        "seek": 0,
+        "start": 19.0,
+        "end": 20.0,
+        "text": "。",
+        "tokens": [
+          51314,
+          1543,
+          51364
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.3299740382603237,
+        "compression_ratio": 5.368421052631579,
+        "no_speech_prob": 0.17936433851718903,
+        "words": []
+      },
+      {
+        "id": 20,
+        "seek": 0,
+        "start": 20.0,
+        "end": 21.0,
+        "text": "。",
+        "tokens": [
+          51364,
+          1543,
+          51414
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.3299740382603237,
+        "compression_ratio": 5.368421052631579,
+        "no_speech_prob": 0.17936433851718903,
+        "words": []
+      },
+      {
+        "id": 21,
+        "seek": 0,
+        "start": 21.0,
+        "end": 22.0,
+        "text": "。",
+        "tokens": [
+          51414,
+          1543,
+          51464
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.3299740382603237,
+        "compression_ratio": 5.368421052631579,
+        "no_speech_prob": 0.17936433851718903,
+        "words": []
+      },
+      {
+        "id": 22,
+        "seek": 0,
+        "start": 22.0,
+        "end": 23.0,
+        "text": "。",
+        "tokens": [
+          51464,
+          1543,
+          51514
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.3299740382603237,
+        "compression_ratio": 5.368421052631579,
+        "no_speech_prob": 0.17936433851718903,
+        "words": []
+      },
+      {
+        "id": 23,
+        "seek": 0,
+        "start": 23.0,
+        "end": 24.0,
+        "text": "。",
+        "tokens": [
+          51514,
+          1543,
+          51564
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.3299740382603237,
+        "compression_ratio": 5.368421052631579,
+        "no_speech_prob": 0.17936433851718903,
+        "words": []
+      },
+      {
+        "id": 24,
+        "seek": 0,
+        "start": 24.0,
+        "end": 25.0,
+        "text": "。",
+        "tokens": [
+          51564,
+          1543,
+          51614
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.3299740382603237,
+        "compression_ratio": 5.368421052631579,
+        "no_speech_prob": 0.17936433851718903,
+        "words": []
+      },
+      {
+        "id": 25,
+        "seek": 0,
+        "start": 25.0,
+        "end": 26.0,
+        "text": "。",
+        "tokens": [
+          51614,
+          1543,
+          51664
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.3299740382603237,
+        "compression_ratio": 5.368421052631579,
+        "no_speech_prob": 0.17936433851718903,
+        "words": []
+      },
+      {
+        "id": 26,
+        "seek": 0,
+        "start": 26.0,
+        "end": 27.0,
+        "text": "。",
+        "tokens": [
+          51664,
+          1543,
+          51714
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.3299740382603237,
+        "compression_ratio": 5.368421052631579,
+        "no_speech_prob": 0.17936433851718903,
+        "words": []
+      },
+      {
+        "id": 27,
+        "seek": 0,
+        "start": 27.0,
+        "end": 28.0,
+        "text": "。",
+        "tokens": [
+          51714,
+          1543,
+          51764
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.3299740382603237,
+        "compression_ratio": 5.368421052631579,
+        "no_speech_prob": 0.17936433851718903,
+        "words": []
+      },
+      {
+        "id": 28,
+        "seek": 0,
+        "start": 28.0,
+        "end": 29.0,
+        "text": "。",
+        "tokens": [
+          51764,
+          1543,
+          51814
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.3299740382603237,
+        "compression_ratio": 5.368421052631579,
+        "no_speech_prob": 0.17936433851718903,
+        "words": []
+      },
+      {
+        "id": 29,
+        "seek": 0,
+        "start": 29.0,
+        "end": 29.5,
+        "text": "。",
+        "tokens": [
+          51814,
+          1543,
+          51839
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.3299740382603237,
+        "compression_ratio": 5.368421052631579,
+        "no_speech_prob": 0.17936433851718903,
+        "words": []
+      },
+      {
+        "id": 30,
+        "seek": 0,
+        "start": 29.5,
+        "end": 30.0,
+        "text": "。",
+        "tokens": [
+          51839,
+          1543,
+          51864
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.3299740382603237,
+        "compression_ratio": 5.368421052631579,
+        "no_speech_prob": 0.17936433851718903,
+        "words": []
+      },
+      {
+        "id": 31,
+        "seek": 74,
+        "start": 0.74,
+        "end": 4.02,
+        "text": "【音楽】",
+        "tokens": [
+          50364,
+          15588,
+          18034,
+          35479,
+          15623,
+          50664
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.7225213835511026,
+        "compression_ratio": 1.4,
+        "no_speech_prob": 0.2624379098415375,
+        "words": [
+          {
+            "word": "【",
+            "start": 0.74,
+            "end": 1.1,
+            "probability": 0.002763435710221529
+          },
+          {
+            "word": "音",
+            "start": 1.1,
+            "end": 1.82,
+            "probability": 0.014537203125655651
+          },
+          {
+            "word": "楽",
+            "start": 1.82,
+            "end": 1.82,
+            "probability": 0.7323858141899109
+          },
+          {
+            "word": "】",
+            "start": 1.82,
+            "end": 4.02,
+            "probability": 0.7776358127593994
+          }
+        ]
+      },
+      {
+        "id": 32,
+        "seek": 74,
+        "start": 6.279999999999998,
+        "end": 7.28,
+        "text": "超過嗎?",
+        "tokens": [
+          50664,
+          19869,
+          8816,
+          7434,
+          30,
+          50714
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.7225213835511026,
+        "compression_ratio": 1.4,
+        "no_speech_prob": 0.2624379098415375,
+        "words": [
+          {
+            "word": "超",
+            "start": 6.279999999999998,
+            "end": 6.84,
+            "probability": 0.10345965623855591
+          },
+          {
+            "word": "過",
+            "start": 6.84,
+            "end": 7.04,
+            "probability": 0.7420353293418884
+          },
+          {
+            "word": "嗎?",
+            "start": 7.04,
+            "end": 7.28,
+            "probability": 0.2480265200138092
+          }
+        ]
+      },
+      {
+        "id": 33,
+        "seek": 74,
+        "start": 7.84,
+        "end": 8.48,
+        "text": "何知らん?",
+        "tokens": [
+          50714,
+          11906,
+          6498,
+          5154,
+          3225,
+          30,
+          50764
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.7225213835511026,
+        "compression_ratio": 1.4,
+        "no_speech_prob": 0.2624379098415375,
+        "words": [
+          {
+            "word": "何",
+            "start": 7.84,
+            "end": 8.08,
+            "probability": 0.02568947896361351
+          },
+          {
+            "word": "知",
+            "start": 8.08,
+            "end": 8.22,
+            "probability": 0.3361321985721588
+          },
+          {
+            "word": "ら",
+            "start": 8.22,
+            "end": 8.38,
+            "probability": 0.2564827501773834
+          },
+          {
+            "word": "ん?",
+            "start": 8.38,
+            "end": 8.48,
+            "probability": 0.3467336595058441
+          }
+        ]
+      },
+      {
+        "id": 34,
+        "seek": 74,
+        "start": 9.959999999999996,
+        "end": 11.08,
+        "text": "【音楽】",
+        "tokens": [
+          50764,
+          15588,
+          18034,
+          35479,
+          15623,
+          50914
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.7225213835511026,
+        "compression_ratio": 1.4,
+        "no_speech_prob": 0.2624379098415375,
+        "words": [
+          {
+            "word": "【",
+            "start": 9.959999999999996,
+            "end": 10.519999999999998,
+            "probability": 0.03718000277876854
+          },
+          {
+            "word": "音",
+            "start": 10.519999999999998,
+            "end": 11.08,
+            "probability": 0.46684348583221436
+          },
+          {
+            "word": "楽",
+            "start": 11.08,
+            "end": 11.08,
+            "probability": 0.968772292137146
+          },
+          {
+            "word": "】",
+            "start": 11.08,
+            "end": 11.08,
+            "probability": 0.9844390749931335
+          }
+        ]
+      },
+      {
+        "id": 35,
+        "seek": 74,
+        "start": 11.74,
+        "end": 12.28,
+        "text": "超過嗎?",
+        "tokens": [
+          50914,
+          19869,
+          8816,
+          7434,
+          30,
+          50964
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.7225213835511026,
+        "compression_ratio": 1.4,
+        "no_speech_prob": 0.2624379098415375,
+        "words": [
+          {
+            "word": "超",
+            "start": 11.499999999999998,
+            "end": 11.78,
+            "probability": 0.7529866695404053
+          },
+          {
+            "word": "過",
+            "start": 11.78,
+            "end": 12.06,
+            "probability": 0.9928419589996338
+          },
+          {
+            "word": "嗎?",
+            "start": 12.06,
+            "end": 12.28,
+            "probability": 0.25414255261421204
+          }
+        ]
+      },
+      {
+        "id": 36,
+        "seek": 74,
+        "start": 13.04,
+        "end": 14.44,
+        "text": "無い超過嗎?",
+        "tokens": [
+          50964,
+          16976,
+          1764,
+          19869,
+          8816,
+          7434,
+          30,
+          51064
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.7225213835511026,
+        "compression_ratio": 1.4,
+        "no_speech_prob": 0.2624379098415375,
+        "words": [
+          {
+            "word": "無",
+            "start": 13.04,
+            "end": 13.6,
+            "probability": 0.1477644294500351
+          },
+          {
+            "word": "い",
+            "start": 13.6,
+            "end": 13.7,
+            "probability": 0.8922454714775085
+          },
+          {
+            "word": "超",
+            "start": 13.7,
+            "end": 13.9,
+            "probability": 0.6458078026771545
+          },
+          {
+            "word": "過",
+            "start": 13.9,
+            "end": 14.22,
+            "probability": 0.9941830039024353
+          },
+          {
+            "word": "嗎?",
+            "start": 14.22,
+            "end": 14.44,
+            "probability": 0.4676841199398041
+          }
+        ]
+      },
+      {
+        "id": 37,
+        "seek": 74,
+        "start": 14.62,
+        "end": 16.2,
+        "text": "お取り出そう無い超過嗎?",
+        "tokens": [
+          51064,
+          6117,
+          29436,
+          5095,
+          7781,
+          9955,
+          16976,
+          1764,
+          19869,
+          8816,
+          7434,
+          30,
+          51164
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.7225213835511026,
+        "compression_ratio": 1.4,
+        "no_speech_prob": 0.2624379098415375,
+        "words": [
+          {
+            "word": "お",
+            "start": 14.62,
+            "end": 14.72,
+            "probability": 0.09837078303098679
+          },
+          {
+            "word": "取",
+            "start": 14.72,
+            "end": 14.86,
+            "probability": 0.22585728764533997
+          },
+          {
+            "word": "り",
+            "start": 14.86,
+            "end": 14.92,
+            "probability": 0.4610886573791504
+          },
+          {
+            "word": "出",
+            "start": 14.92,
+            "end": 14.98,
+            "probability": 0.1257818639278412
+          },
+          {
+            "word": "そう",
+            "start": 14.98,
+            "end": 15.12,
+            "probability": 0.21134153008460999
+          },
+          {
+            "word": "無",
+            "start": 15.12,
+            "end": 15.26,
+            "probability": 0.6707025170326233
+          },
+          {
+            "word": "い",
+            "start": 15.26,
+            "end": 15.34,
+            "probability": 0.9978305697441101
+          },
+          {
+            "word": "超",
+            "start": 15.34,
+            "end": 15.52,
+            "probability": 0.9711913466453552
+          },
+          {
+            "word": "過",
+            "start": 15.52,
+            "end": 15.78,
+            "probability": 0.9972123503684998
+          },
+          {
+            "word": "嗎?",
+            "start": 15.78,
+            "end": 16.2,
+            "probability": 0.8844213485717773
+          }
+        ]
+      },
+      {
+        "id": 38,
+        "seek": 74,
+        "start": 16.84,
+        "end": 21.14,
+        "text": "【音楽】",
+        "tokens": [
+          51164,
+          15588,
+          18034,
+          35479,
+          15623,
+          51414
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.7225213835511026,
+        "compression_ratio": 1.4,
+        "no_speech_prob": 0.2624379098415375,
+        "words": [
+          {
+            "word": "【",
+            "start": 16.84,
+            "end": 17.4,
+            "probability": 0.4347687363624573
+          },
+          {
+            "word": "音",
+            "start": 17.4,
+            "end": 17.8,
+            "probability": 0.9604339599609375
+          },
+          {
+            "word": "楽",
+            "start": 17.8,
+            "end": 17.8,
+            "probability": 0.9956415891647339
+          },
+          {
+            "word": "】",
+            "start": 17.8,
+            "end": 21.14,
+            "probability": 0.995509147644043
+          }
+        ]
+      },
+      {
+        "id": 39,
+        "seek": 74,
+        "start": 21.72,
+        "end": 22.56,
+        "text": "あのね、",
+        "tokens": [
+          51414,
+          24910,
+          5555,
+          1231,
+          51514
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.7225213835511026,
+        "compression_ratio": 1.4,
+        "no_speech_prob": 0.2624379098415375,
+        "words": [
+          {
+            "word": "あの",
+            "start": 21.72,
+            "end": 22.28,
+            "probability": 0.07814457267522812
+          },
+          {
+            "word": "ね、",
+            "start": 22.28,
+            "end": 22.56,
+            "probability": 0.7962519526481628
+          }
+        ]
+      },
+      {
+        "id": 40,
+        "seek": 74,
+        "start": 24.56,
+        "end": 25.12,
+        "text": "私、",
+        "tokens": [
+          51514,
+          20083,
+          1231,
+          51614
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.7225213835511026,
+        "compression_ratio": 1.4,
+        "no_speech_prob": 0.2624379098415375,
+        "words": [
+          {
+            "word": "私、",
+            "start": 24.56,
+            "end": 25.12,
+            "probability": 0.6752234697341919
+          }
+        ]
+      },
+      {
+        "id": 41,
+        "seek": 74,
+        "start": 26.04,
+        "end": 28.1,
+        "text": "実はぴついてるの",
+        "tokens": [
+          51614,
+          33197,
+          3065,
+          487,
+          112,
+          9335,
+          18549,
+          4895,
+          2972,
+          51714
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.7225213835511026,
+        "compression_ratio": 1.4,
+        "no_speech_prob": 0.2624379098415375,
+        "words": [
+          {
+            "word": "実",
+            "start": 26.04,
+            "end": 26.32,
+            "probability": 0.37616676092147827
+          },
+          {
+            "word": "は",
+            "start": 26.32,
+            "end": 26.72,
+            "probability": 0.9890480637550354
+          },
+          {
+            "word": "ぴ",
+            "start": 26.72,
+            "end": 27.02,
+            "probability": 0.47753618843853474
+          },
+          {
+            "word": "つ",
+            "start": 27.02,
+            "end": 27.16,
+            "probability": 0.8834273219108582
+          },
+          {
+            "word": "いて",
+            "start": 27.16,
+            "end": 27.42,
+            "probability": 0.39740893244743347
+          },
+          {
+            "word": "る",
+            "start": 27.42,
+            "end": 27.66,
+            "probability": 0.9972787499427795
+          },
+          {
+            "word": "の",
+            "start": 27.66,
+            "end": 28.1,
+            "probability": 0.9875504374504089
+          }
+        ]
+      },
+      {
+        "id": 42,
+        "seek": 2810,
+        "start": 28.1,
+        "end": 30.6,
+        "text": "ほら君がいいんだけど",
+        "tokens": [
+          50364,
+          15190,
+          5154,
+          24168,
+          5142,
+          13806,
+          26983,
+          21891,
+          50514
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.482320077078683,
+        "compression_ratio": 1.2,
+        "no_speech_prob": 0.21327002346515656,
+        "words": [
+          {
+            "word": "ほ",
+            "start": 28.1,
+            "end": 28.86,
+            "probability": 0.3095835745334625
+          },
+          {
+            "word": "ら",
+            "start": 28.86,
+            "end": 29.08,
+            "probability": 0.99136883020401
+          },
+          {
+            "word": "君",
+            "start": 29.08,
+            "end": 29.48,
+            "probability": 0.3144226670265198
+          },
+          {
+            "word": "が",
+            "start": 29.48,
+            "end": 29.68,
+            "probability": 0.9931842684745789
+          },
+          {
+            "word": "いい",
+            "start": 29.68,
+            "end": 29.94,
+            "probability": 0.3527882695198059
+          },
+          {
+            "word": "んだ",
+            "start": 29.94,
+            "end": 30.16,
+            "probability": 0.43141236901283264
+          },
+          {
+            "word": "けど",
+            "start": 30.16,
+            "end": 30.6,
+            "probability": 0.9529635310173035
+          }
+        ]
+      },
+      {
+        "id": 43,
+        "seek": 2810,
+        "start": 31.98,
+        "end": 33.24,
+        "text": "あまり",
+        "tokens": [
+          50564,
+          3590,
+          41446,
+          50664
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.482320077078683,
+        "compression_ratio": 1.2,
+        "no_speech_prob": 0.21327002346515656,
+        "words": [
+          {
+            "word": "あ",
+            "start": 31.98,
+            "end": 32.86,
+            "probability": 0.5706395506858826
+          },
+          {
+            "word": "まり",
+            "start": 32.86,
+            "end": 33.24,
+            "probability": 0.9778452515602112
+          }
+        ]
+      },
+      {
+        "id": 44,
+        "seek": 2810,
+        "start": 34.839999999999996,
+        "end": 38.8,
+        "text": "考えとやって思いたくて",
+        "tokens": [
+          50714,
+          26504,
+          6474,
+          3193,
+          31497,
+          8870,
+          17679,
+          6134,
+          2996,
+          50914
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.482320077078683,
+        "compression_ratio": 1.2,
+        "no_speech_prob": 0.21327002346515656,
+        "words": [
+          {
+            "word": "考",
+            "start": 34.839999999999996,
+            "end": 35.72,
+            "probability": 0.21486586332321167
+          },
+          {
+            "word": "え",
+            "start": 35.72,
+            "end": 36.5,
+            "probability": 0.6962866187095642
+          },
+          {
+            "word": "と",
+            "start": 36.5,
+            "end": 37.3,
+            "probability": 0.40686917304992676
+          },
+          {
+            "word": "やって",
+            "start": 37.3,
+            "end": 37.3,
+            "probability": 0.7185885310173035
+          },
+          {
+            "word": "思",
+            "start": 37.3,
+            "end": 37.76,
+            "probability": 0.8141536116600037
+          },
+          {
+            "word": "いた",
+            "start": 37.76,
+            "end": 38.08,
+            "probability": 0.542388379573822
+          },
+          {
+            "word": "く",
+            "start": 38.08,
+            "end": 38.32,
+            "probability": 0.9894924163818359
+          },
+          {
+            "word": "て",
+            "start": 38.32,
+            "end": 38.8,
+            "probability": 0.9923840165138245
+          }
+        ]
+      },
+      {
+        "id": 45,
+        "seek": 2810,
+        "start": 38.8,
+        "end": 41.22,
+        "text": "忘れがいたけど",
+        "tokens": [
+          50914,
+          26677,
+          4132,
+          5142,
+          17679,
+          21891,
+          51064
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.482320077078683,
+        "compression_ratio": 1.2,
+        "no_speech_prob": 0.21327002346515656,
+        "words": [
+          {
+            "word": "忘",
+            "start": 38.8,
+            "end": 39.54,
+            "probability": 0.9242388606071472
+          },
+          {
+            "word": "れ",
+            "start": 39.54,
+            "end": 39.96,
+            "probability": 0.5507310032844543
+          },
+          {
+            "word": "が",
+            "start": 39.96,
+            "end": 40.3,
+            "probability": 0.5766923427581787
+          },
+          {
+            "word": "いた",
+            "start": 40.3,
+            "end": 40.76,
+            "probability": 0.6928884387016296
+          },
+          {
+            "word": "けど",
+            "start": 40.76,
+            "end": 41.22,
+            "probability": 0.9960097074508667
+          }
+        ]
+      },
+      {
+        "id": 46,
+        "seek": 2810,
+        "start": 42.32,
+        "end": 43.52,
+        "text": "もっと",
+        "tokens": [
+          51064,
+          4801,
+          13137,
+          51164
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.482320077078683,
+        "compression_ratio": 1.2,
+        "no_speech_prob": 0.21327002346515656,
+        "words": [
+          {
+            "word": "も",
+            "start": 42.32,
+            "end": 43.2,
+            "probability": 0.548829972743988
+          },
+          {
+            "word": "っと",
+            "start": 43.2,
+            "end": 43.52,
+            "probability": 0.979510486125946
+          }
+        ]
+      }
+    ],
+    "language": "ja"
+  }
+}

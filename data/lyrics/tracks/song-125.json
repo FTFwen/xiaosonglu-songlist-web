@@ -1,0 +1,189 @@
+{
+  "schemaVersion": 1,
+  "key": "song-125",
+  "songId": 125,
+  "songName": "小丑的品格",
+  "rowKey": "小丑的品格",
+  "displaySongName": "小丑的品格",
+  "artist": "泠鸢yousa",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "2026-09-03「也许康复的随便唱唱」21点场；歌切合集【桐人今天睡大觉】【小松绿Viridis】随便唱唱的歌回 歌切合集 2026.09.03 分P5（04:30）。泠鸢yousa《茜色诗集》(2016) 收录曲（歌切分P标题含专辑名）。",
+  "audio": {
+    "url": "assets/audio/song_124.m4a?v=fc6eeb614ac0",
+    "sha256": "fc6eeb614ac0a77949f81bf0b312d3f081ceec5fa8729261e2fc859f417d17ed"
+  },
+  "retrievedAt": "2026-11-16T04:12:55.877Z",
+  "match": {
+    "status": "candidate_review_required",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E5%B0%8F%E4%B8%91%E7%9A%84%E5%93%81%E6%A0%BC&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E5%B0%8F%E4%B8%91%E7%9A%84%E5%93%81%E6%A0%BC%20%E6%B3%A0%E9%B8%A2yousa&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 3461054224,
+        "name": "小丑的品格",
+        "artists": [
+          "花晞ovo",
+          "荷溪"
+        ],
+        "album": "小丑的品格",
+        "durationMs": 272550,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1382765906,
+        "name": "小丑的品格",
+        "artists": [
+          "懿辰",
+          "江镜Lea"
+        ],
+        "album": "小丑的品格",
+        "durationMs": 272238,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1354707173,
+        "name": "小丑的品格",
+        "artists": [
+          "Ch!maki",
+          "乐正龙牙",
+          "洛天依"
+        ],
+        "album": "V家调校练习",
+        "durationMs": 268094,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1452017898,
+        "name": "小丑的品格",
+        "artists": [
+          "怪盗V"
+        ],
+        "album": "怪盗的美学",
+        "durationMs": 207242,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 428391149,
+        "name": "小丑的品格",
+        "artists": [
+          "怪盗V"
+        ],
+        "album": "小丑的品格【原创曲】",
+        "durationMs": 213407,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1410242504,
+        "name": "小丑的品格",
+        "artists": [
+          "落炎Royin",
+          "冽冽"
+        ],
+        "album": "小丑的品格",
+        "durationMs": 271177,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1315840208,
+        "name": "小丑的品格",
+        "artists": [
+          "陈小满阿"
+        ],
+        "album": "瑾姝の翻唱",
+        "durationMs": 270106,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 866274149,
+        "name": "小丑的品格",
+        "artists": [
+          "ErdanBiu"
+        ],
+        "album": "erdanBiu｜小丑的品格",
+        "durationMs": 274468,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 125,
+      "song_name": "小丑的品格",
+      "show_as_song_name": "",
+      "display_song_name": "小丑的品格",
+      "artist": "泠鸢yousa",
+      "artist_search": "小丑的品格 泠鸢yousa",
+      "feat_artist": "",
+      "remark": "2026-09-03「也许康复的随便唱唱」21点场；歌切合集【桐人今天睡大觉】【小松绿Viridis】随便唱唱的歌回 歌切合集 2026.09.03 分P5（04:30）。泠鸢yousa《茜色诗集》(2016) 收录曲（歌切分P标题含专辑名）。",
+      "tone": "",
+      "language": "中文",
+      "type": "原创、流行",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=5",
+      "sing_count": 1,
+      "status_labels": "歌回",
+      "last_sing_at": "2026-09-03",
+      "row_key": "小丑的品格"
+    },
+    "sourceId": 1382765906,
+    "sourcePath": "sources/1382765906.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1382765906",
+    "selected": {
+      "id": 1382765906,
+      "name": "小丑的品格",
+      "artists": [
+        "懿辰",
+        "江镜Lea"
+      ],
+      "album": "小丑的品格",
+      "durationMs": 272238,
+      "titleScore": 1,
+      "artistMatch": false,
+      "score": 0.8
+    },
+    "timedLineCount": 57
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-125-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 269.653,
+    "sourceFirstLine": {
+      "t": 10.975,
+      "text": "脂粉鼓乐灯箱 上演着"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 0.0,
+      "endSeconds": 0.08,
+      "similarity": 0.0,
+      "recognizedText": "感",
+      "meanProbability": 0.232,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

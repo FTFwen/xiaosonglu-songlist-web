@@ -1,0 +1,183 @@
+{
+  "schemaVersion": 1,
+  "key": "song-282",
+  "songId": 282,
+  "songName": "小兔子乖乖",
+  "rowKey": "小兔子乖乖",
+  "displaySongName": "小兔子乖乖",
+  "artist": "儿歌多多",
+  "language": "中文",
+  "derivative": false,
+  "edition": "半首",
+  "remark": "心灵火 P15 标注「小兔子乖乖(半首)」87s（桐人 P15 为 110s 完整版）。",
+  "audio": {
+    "url": "assets/audio/song_281.m4a?v=4d104aa2e364",
+    "sha256": "4d104aa2e3640f8bb7c1ac42b9abcdf0bb59060d894661a061742e79671293f8"
+  },
+  "retrievedAt": "2026-11-16T04:06:08.819Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E5%B0%8F%E5%85%94%E5%AD%90%E4%B9%96%E4%B9%96&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E5%B0%8F%E5%85%94%E5%AD%90%E4%B9%96%E4%B9%96%20%E5%84%BF%E6%AD%8C%E5%A4%9A%E5%A4%9A&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1451390681,
+        "name": "小兔子乖乖",
+        "artists": [
+          "儿歌多多"
+        ],
+        "album": "儿歌多多经典儿歌",
+        "durationMs": 132181,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1417885726,
+        "name": "小兔子乖乖",
+        "artists": [
+          "贝乐虎儿歌"
+        ],
+        "album": "贝乐虎儿歌",
+        "durationMs": 108494,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1450764840,
+        "name": "小兔子乖乖",
+        "artists": [
+          "东东龙儿歌"
+        ],
+        "album": "东东龙|中文经典儿歌",
+        "durationMs": 92351,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2758095988,
+        "name": "小兔子乖乖",
+        "artists": [
+          "宝宝巴士儿童故事"
+        ],
+        "album": "儿歌三百 合辑片",
+        "durationMs": 134025,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 28700264,
+        "name": "小兔子乖乖",
+        "artists": [
+          "贝瓦儿歌"
+        ],
+        "album": "贝瓦儿歌",
+        "durationMs": 110000,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2705380869,
+        "name": "小兔子乖乖",
+        "artists": [
+          "宝宝巴士"
+        ],
+        "album": "安徒生童话故事2",
+        "durationMs": 250409,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1300381951,
+        "name": "小兔子乖乖",
+        "artists": [
+          "小蓓蕾组合"
+        ],
+        "album": "亲子儿童歌曲-咏鹅",
+        "durationMs": 125066,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1298400558,
+        "name": "小兔子乖乖",
+        "artists": [
+          "群星"
+        ],
+        "album": "欢乐的动物世界",
+        "durationMs": 71235,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 282,
+      "song_name": "小兔子乖乖",
+      "show_as_song_name": "",
+      "display_song_name": "小兔子乖乖",
+      "artist": "儿歌多多",
+      "artist_search": "儿歌多多",
+      "feat_artist": "",
+      "remark": "心灵火 P15 标注「小兔子乖乖(半首)」87s（桐人 P15 为 110s 完整版）。",
+      "tone": "",
+      "language": "中文",
+      "type": "民谣、儿歌",
+      "identification": "",
+      "display_version": "半首",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV18Jpw6mE82/?p=15",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-06",
+      "row_key": "小兔子乖乖"
+    },
+    "sourceId": 1451390681,
+    "sourcePath": "sources/1451390681.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1451390681",
+    "selected": {
+      "id": 1451390681,
+      "name": "小兔子乖乖",
+      "artists": [
+        "儿歌多多"
+      ],
+      "album": "儿歌多多经典儿歌",
+      "durationMs": 132181,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 43
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-282-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 86.507,
+    "sourceFirstLine": {
+      "t": 2,
+      "text": "（未经许可,不得翻唱或使用）"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 23.24,
+      "endSeconds": 24.04,
+      "similarity": 0.0,
+      "recognizedText": "作",
+      "meanProbability": 0.007,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

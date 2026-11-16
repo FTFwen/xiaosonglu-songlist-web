@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 1,
+  "key": "song-29",
+  "songId": 29,
+  "songName": "偏食",
+  "displaySongName": "偏食",
+  "artist": "香椎モイミ / 初音ミク",
+  "language": "日文",
+  "derivative": false,
+  "audio": {
+    "url": "assets/audio/song_38.m4a?v=c685b04d2680",
+    "sha256": "c685b04d2680f99e7a84cf4bd94a16cb639a167b422db06018fe112f01e8a040"
+  },
+  "retrievedAt": "2026-11-16T03:57:46.860Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E5%81%8F%E9%A3%9F&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1841222221,
+        "name": "偏食",
+        "artists": [
+          "香椎モイミ",
+          "初音ミク"
+        ],
+        "album": "渇愛",
+        "durationMs": 228066,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 22740093,
+        "name": "偏食",
+        "artists": [
+          "杨丞琳"
+        ],
+        "album": "异想天开(新歌+精选)",
+        "durationMs": 283562,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2622290654,
+        "name": "偏食",
+        "artists": [
+          "戌亥とこ"
+        ],
+        "album": "偏食",
+        "durationMs": 230088,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1869774698,
+        "name": "偏食",
+        "artists": [
+          "冰山",
+          "可不"
+        ],
+        "album": "偏食",
+        "durationMs": 228037,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 523008554,
+        "name": "偏食",
+        "artists": [
+          "杨丞琳"
+        ],
+        "album": "杨丞琳 再见 青春 极精选",
+        "durationMs": 285573,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2704246421,
+        "name": "偏食",
+        "artists": [
+          "芝麻Mochi"
+        ],
+        "album": "COVER",
+        "durationMs": 228021,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1927680085,
+        "name": "偏食",
+        "artists": [
+          "熊子"
+        ],
+        "album": "偏食",
+        "durationMs": 222660,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1428834261,
+        "name": "偏食（翻自 初音ミク）",
+        "artists": [
+          "芝麻Mochi"
+        ],
+        "album": "2020Cover",
+        "durationMs": 228021,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      }
+    ],
+    "sourceId": 1841222221,
+    "sourcePath": "sources/1841222221.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1841222221",
+    "selected": {
+      "id": 1841222221,
+      "name": "偏食",
+      "artists": [
+        "香椎モイミ",
+        "初音ミク"
+      ],
+      "album": "渇愛",
+      "durationMs": 228066,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 37
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-29-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 270.891,
+    "sourceFirstLine": {
+      "t": 1.688,
+      "text": "ダーリン、ダーリン、私を愛して。"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 14.6,
+      "endSeconds": 15.76,
+      "similarity": 0.23529411764705882,
+      "recognizedText": "を開いて",
+      "meanProbability": 0.432,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "ja",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  },
+  "rowKey": "偏食",
+  "edition": "",
+  "remark": "视频标题直接给出真实歌曲名；日期未直写，但与同一批 2026-08-11 歌切候选同网出现，先按 2026-08-11 manual-normalized 收录。"
+}

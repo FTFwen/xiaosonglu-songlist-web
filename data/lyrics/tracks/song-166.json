@@ -1,0 +1,189 @@
+{
+  "schemaVersion": 1,
+  "key": "song-166",
+  "songId": 166,
+  "songName": "若梦境来袭",
+  "rowKey": "若梦境来袭",
+  "displaySongName": "若梦境来袭",
+  "artist": "Kevinz、Creuzer、言和",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "",
+  "audio": {
+    "url": "assets/audio/song_165.m4a?v=f664fc3d8826",
+    "sha256": "f664fc3d8826209429f4ca194bb3f2c6525aed3fa15871b0cddf8b40ec68097e"
+  },
+  "retrievedAt": "2026-11-16T04:04:12.664Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E8%8B%A5%E6%A2%A6%E5%A2%83%E6%9D%A5%E8%A2%AD&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E8%8B%A5%E6%A2%A6%E5%A2%83%E6%9D%A5%E8%A2%AD%20Kevinz&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 495386486,
+        "name": "若梦境来袭",
+        "artists": [
+          "Kevinz",
+          "Creuzer",
+          "言和"
+        ],
+        "album": "空中楼阁",
+        "durationMs": 264875,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1974562754,
+        "name": "若梦境来袭",
+        "artists": [
+          "言和"
+        ],
+        "album": "若梦境来袭",
+        "durationMs": 250009,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1435168675,
+        "name": "若梦境来袭",
+        "artists": [
+          "艾莉Anicca"
+        ],
+        "album": "若梦境来袭【三周年自贺】",
+        "durationMs": 269580,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1316322551,
+        "name": "若梦境来袭",
+        "artists": [
+          "赭柚奶",
+          "玫月"
+        ],
+        "album": "若梦境来袭",
+        "durationMs": 269247,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1361259370,
+        "name": "若梦境来袭",
+        "artists": [
+          "徵徵徵Apr",
+          "虞人"
+        ],
+        "album": "若梦境来袭",
+        "durationMs": 264402,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1294991184,
+        "name": "若梦境来袭",
+        "artists": [
+          "纸马"
+        ],
+        "album": "若梦境来袭",
+        "durationMs": 264239,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1316443731,
+        "name": "若梦境来袭",
+        "artists": [
+          "玫月"
+        ],
+        "album": "若梦境来袭",
+        "durationMs": 269505,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1476568175,
+        "name": "若梦境来袭",
+        "artists": [
+          "事儿精"
+        ],
+        "album": "若梦境来袭",
+        "durationMs": 264463,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 166,
+      "song_name": "若梦境来袭",
+      "show_as_song_name": "",
+      "display_song_name": "若梦境来袭",
+      "artist": "Kevinz、Creuzer、言和",
+      "artist_search": "Kevinz、Creuzer、言和",
+      "feat_artist": "",
+      "remark": "",
+      "tone": "",
+      "language": "中文",
+      "type": "中V",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=28",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-09-08",
+      "row_key": "若梦境来袭"
+    },
+    "sourceId": 495386486,
+    "sourcePath": "sources/495386486.json",
+    "sourceUrl": "https://music.163.com/#/song?id=495386486",
+    "selected": {
+      "id": 495386486,
+      "name": "若梦境来袭",
+      "artists": [
+        "Kevinz",
+        "Creuzer",
+        "言和"
+      ],
+      "album": "空中楼阁",
+      "durationMs": 264875,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 38
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-166-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 257.904,
+    "sourceFirstLine": {
+      "t": 12.04,
+      "text": "词曲/Kevinz"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 15.32,
+      "endSeconds": 16.12,
+      "similarity": 0.0,
+      "recognizedText": "哈哈",
+      "meanProbability": 0.012,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

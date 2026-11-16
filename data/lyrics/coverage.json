@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-11-16T04:35:25.259Z",
+  "expected": 421,
+  "processed": 421,
+  "matchCounts": {
+    "candidate_review_required": 61,
+    "matched": 339,
+    "no_timed_lyrics": 2,
+    "not_found": 2,
+    "version_review_required": 17
+  },
+  "alignmentCounts": {
+    "anchor_not_found": 355,
+    "asr_consistent_draft": 1,
+    "spotcheck_review_required": 39,
+    "timing_drift_review_required": 3,
+    "unavailable": 6,
+    "version_review_required": 17
+  },
+  "withAudio": 419,
+  "withTimedSource": 417,
+  "humanVerified": 0,
+  "syncReady": 0,
+  "notes": [
+    "matched means title/artist heuristic, not manual verification",
+    "No live/synth audio marked human verified",
+    "Pending, wrong-language and ambiguous versions must never be rendered as verified synchronized lyrics",
+    "withTimedSource includes unresolved candidates and version-review sources; use workMatched for accepted work-level matches"
+  ],
+  "workMatched": 339,
+  "unresolvedTimedSources": 78,
+  "asrConsistentDrafts": 1
+}

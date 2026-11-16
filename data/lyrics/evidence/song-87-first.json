@@ -1,0 +1,817 @@
+{
+  "audioSha256": "25c48adec33de02e0c378195e85dee306fc6a30397ca7a4474e1d1979097f206",
+  "model": "whisper-base",
+  "start": 0,
+  "end": 35,
+  "result": {
+    "text": "ダフニー6パイリスマーキアリソンメリカサービアフロースI'm aI'm aI'm aI'm aI'm aI'm aI'm aI'm aI'm aI'm aI'm aI'm aI'm a",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 2.2999999999999994,
+        "end": 3.94,
+        "text": "ダフニー6",
+        "tokens": [
+          50364,
+          28651,
+          17320,
+          34737,
+          3384,
+          21,
+          50576
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.7702679517792492,
+        "compression_ratio": 1.1285714285714286,
+        "no_speech_prob": 0.2996521294116974,
+        "words": [
+          {
+            "word": "ダ",
+            "start": 2.2999999999999994,
+            "end": 2.72,
+            "probability": 0.0609608069062233
+          },
+          {
+            "word": "フ",
+            "start": 2.72,
+            "end": 2.86,
+            "probability": 0.892195463180542
+          },
+          {
+            "word": "ニ",
+            "start": 2.86,
+            "end": 3.0,
+            "probability": 0.41619545221328735
+          },
+          {
+            "word": "ー",
+            "start": 3.0,
+            "end": 3.52,
+            "probability": 0.8948182463645935
+          },
+          {
+            "word": "6",
+            "start": 3.52,
+            "end": 3.94,
+            "probability": 0.20202964544296265
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "seek": 0,
+        "start": 4.379999999999999,
+        "end": 5.28,
+        "text": "パイリス",
+        "tokens": [
+          50576,
+          23268,
+          8040,
+          12376,
+          9550,
+          50634
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.7702679517792492,
+        "compression_ratio": 1.1285714285714286,
+        "no_speech_prob": 0.2996521294116974,
+        "words": [
+          {
+            "word": "パ",
+            "start": 4.379999999999999,
+            "end": 4.8,
+            "probability": 0.05244126170873642
+          },
+          {
+            "word": "イ",
+            "start": 4.8,
+            "end": 4.88,
+            "probability": 0.7436365485191345
+          },
+          {
+            "word": "リ",
+            "start": 4.88,
+            "end": 4.96,
+            "probability": 0.6435951590538025
+          },
+          {
+            "word": "ス",
+            "start": 4.96,
+            "end": 5.28,
+            "probability": 0.8133098483085632
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "seek": 0,
+        "start": 5.28,
+        "end": 7.1,
+        "text": "マーキアリソン",
+        "tokens": [
+          50634,
+          13258,
+          3384,
+          15535,
+          12817,
+          12376,
+          42668,
+          4824,
+          50733
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.7702679517792492,
+        "compression_ratio": 1.1285714285714286,
+        "no_speech_prob": 0.2996521294116974,
+        "words": [
+          {
+            "word": "マ",
+            "start": 5.28,
+            "end": 5.76,
+            "probability": 0.7123457193374634
+          },
+          {
+            "word": "ー",
+            "start": 5.76,
+            "end": 5.92,
+            "probability": 0.5170133113861084
+          },
+          {
+            "word": "キ",
+            "start": 5.92,
+            "end": 6.0,
+            "probability": 0.8059986233711243
+          },
+          {
+            "word": "ア",
+            "start": 6.0,
+            "end": 6.12,
+            "probability": 0.6611506342887878
+          },
+          {
+            "word": "リ",
+            "start": 6.12,
+            "end": 6.74,
+            "probability": 0.6930292248725891
+          },
+          {
+            "word": "ソ",
+            "start": 6.74,
+            "end": 6.96,
+            "probability": 0.7253370881080627
+          },
+          {
+            "word": "ン",
+            "start": 6.96,
+            "end": 7.1,
+            "probability": 0.4878429174423218
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "seek": 0,
+        "start": 7.1,
+        "end": 8.06,
+        "text": "メリカ",
+        "tokens": [
+          50733,
+          21647,
+          12376,
+          10111,
+          50784
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.7702679517792492,
+        "compression_ratio": 1.1285714285714286,
+        "no_speech_prob": 0.2996521294116974,
+        "words": [
+          {
+            "word": "メ",
+            "start": 7.1,
+            "end": 7.76,
+            "probability": 0.05446799099445343
+          },
+          {
+            "word": "リ",
+            "start": 7.76,
+            "end": 7.84,
+            "probability": 0.8804944753646851
+          },
+          {
+            "word": "カ",
+            "start": 7.84,
+            "end": 8.06,
+            "probability": 0.995262861251831
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "seek": 0,
+        "start": 8.06,
+        "end": 9.2,
+        "text": "サービア",
+        "tokens": [
+          50784,
+          23607,
+          15266,
+          241,
+          12817,
+          50836
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.7702679517792492,
+        "compression_ratio": 1.1285714285714286,
+        "no_speech_prob": 0.2996521294116974,
+        "words": [
+          {
+            "word": "サ",
+            "start": 8.06,
+            "end": 8.84,
+            "probability": 0.7056972980499268
+          },
+          {
+            "word": "ービ",
+            "start": 8.84,
+            "end": 9.06,
+            "probability": 0.704628050327301
+          },
+          {
+            "word": "ア",
+            "start": 9.06,
+            "end": 9.2,
+            "probability": 0.9222979545593262
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "seek": 0,
+        "start": 9.2,
+        "end": 10.14,
+        "text": "フロース",
+        "tokens": [
+          50836,
+          17320,
+          17164,
+          3384,
+          9550,
+          50876
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.7702679517792492,
+        "compression_ratio": 1.1285714285714286,
+        "no_speech_prob": 0.2996521294116974,
+        "words": [
+          {
+            "word": "フ",
+            "start": 9.2,
+            "end": 9.76,
+            "probability": 0.8531690239906311
+          },
+          {
+            "word": "ロ",
+            "start": 9.76,
+            "end": 9.86,
+            "probability": 0.9467296600341797
+          },
+          {
+            "word": "ー",
+            "start": 9.86,
+            "end": 10.06,
+            "probability": 0.5855664610862732
+          },
+          {
+            "word": "ス",
+            "start": 10.06,
+            "end": 10.14,
+            "probability": 0.9031928777694702
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "seek": 1014,
+        "start": 10.14,
+        "end": 10.76,
+        "text": "I'm a",
+        "tokens": [
+          50364,
+          40,
+          478,
+          257,
+          50464
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.4204818407694499,
+        "compression_ratio": 4.375,
+        "no_speech_prob": 0.15505701303482056,
+        "words": [
+          {
+            "word": "I",
+            "start": 10.14,
+            "end": 10.74,
+            "probability": 0.003717874875292182
+          },
+          {
+            "word": "'m",
+            "start": 10.74,
+            "end": 10.76,
+            "probability": 0.10480622947216034
+          },
+          {
+            "word": " a",
+            "start": 10.76,
+            "end": 10.76,
+            "probability": 0.07698597759008408
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "seek": 1014,
+        "start": 10.76,
+        "end": 11.68,
+        "text": "I'm a",
+        "tokens": [
+          50464,
+          40,
+          478,
+          257,
+          50564
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.4204818407694499,
+        "compression_ratio": 4.375,
+        "no_speech_prob": 0.15505701303482056,
+        "words": [
+          {
+            "word": "I",
+            "start": 10.76,
+            "end": 11.68,
+            "probability": 9.373141074320301e-05
+          },
+          {
+            "word": "'m",
+            "start": 11.68,
+            "end": 11.68,
+            "probability": 0.007961698807775974
+          },
+          {
+            "word": " a",
+            "start": 11.68,
+            "end": 11.68,
+            "probability": 0.8253391981124878
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "seek": 1014,
+        "start": 17.080000000000002,
+        "end": 18.88,
+        "text": "I'm a",
+        "tokens": [
+          50564,
+          40,
+          478,
+          257,
+          50664
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.4204818407694499,
+        "compression_ratio": 4.375,
+        "no_speech_prob": 0.15505701303482056,
+        "words": [
+          {
+            "word": "I",
+            "start": 17.080000000000002,
+            "end": 18.28,
+            "probability": 0.35430288314819336
+          },
+          {
+            "word": "'m",
+            "start": 18.28,
+            "end": 18.28,
+            "probability": 0.5741409659385681
+          },
+          {
+            "word": " a",
+            "start": 18.28,
+            "end": 18.88,
+            "probability": 0.896619975566864
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "seek": 1014,
+        "start": 20.3,
+        "end": 21.5,
+        "text": "I'm a",
+        "tokens": [
+          50664,
+          40,
+          478,
+          257,
+          50764
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.4204818407694499,
+        "compression_ratio": 4.375,
+        "no_speech_prob": 0.15505701303482056,
+        "words": [
+          {
+            "word": "I",
+            "start": 20.3,
+            "end": 21.5,
+            "probability": 0.7955350279808044
+          },
+          {
+            "word": "'m",
+            "start": 21.5,
+            "end": 21.5,
+            "probability": 0.7733175158500671
+          },
+          {
+            "word": " a",
+            "start": 21.5,
+            "end": 21.5,
+            "probability": 0.9083225131034851
+          }
+        ]
+      },
+      {
+        "id": 10,
+        "seek": 1014,
+        "start": 21.5,
+        "end": 22.7,
+        "text": "I'm a",
+        "tokens": [
+          50764,
+          40,
+          478,
+          257,
+          50864
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.4204818407694499,
+        "compression_ratio": 4.375,
+        "no_speech_prob": 0.15505701303482056,
+        "words": [
+          {
+            "word": "I",
+            "start": 21.5,
+            "end": 22.44,
+            "probability": 0.887098491191864
+          },
+          {
+            "word": "'m",
+            "start": 22.44,
+            "end": 22.44,
+            "probability": 0.8511748909950256
+          },
+          {
+            "word": " a",
+            "start": 22.44,
+            "end": 22.7,
+            "probability": 0.9045019745826721
+          }
+        ]
+      },
+      {
+        "id": 11,
+        "seek": 1014,
+        "start": 22.7,
+        "end": 22.7,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.4204818407694499,
+        "compression_ratio": 4.375,
+        "no_speech_prob": 0.15505701303482056,
+        "words": []
+      },
+      {
+        "id": 12,
+        "seek": 1014,
+        "start": 22.7,
+        "end": 22.96,
+        "text": "I'm a",
+        "tokens": [
+          50964,
+          40,
+          478,
+          257,
+          51064
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.4204818407694499,
+        "compression_ratio": 4.375,
+        "no_speech_prob": 0.15505701303482056,
+        "words": [
+          {
+            "word": "I",
+            "start": 22.7,
+            "end": 22.96,
+            "probability": 0.90949547290802
+          },
+          {
+            "word": "'m",
+            "start": 22.96,
+            "end": 22.96,
+            "probability": 0.8666896820068359
+          },
+          {
+            "word": " a",
+            "start": 22.96,
+            "end": 22.96,
+            "probability": 0.8812445998191833
+          }
+        ]
+      },
+      {
+        "id": 13,
+        "seek": 1014,
+        "start": 24.14,
+        "end": 25.22,
+        "text": "I'm a",
+        "tokens": [
+          51064,
+          40,
+          478,
+          257,
+          51164
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.4204818407694499,
+        "compression_ratio": 4.375,
+        "no_speech_prob": 0.15505701303482056,
+        "words": [
+          {
+            "word": "I",
+            "start": 24.14,
+            "end": 25.22,
+            "probability": 0.919743001461029
+          },
+          {
+            "word": "'m",
+            "start": 25.22,
+            "end": 25.22,
+            "probability": 0.8538210988044739
+          },
+          {
+            "word": " a",
+            "start": 25.22,
+            "end": 25.22,
+            "probability": 0.877597451210022
+          }
+        ]
+      },
+      {
+        "id": 14,
+        "seek": 1014,
+        "start": 25.22,
+        "end": 25.58,
+        "text": "I'm a",
+        "tokens": [
+          51164,
+          40,
+          478,
+          257,
+          51264
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.4204818407694499,
+        "compression_ratio": 4.375,
+        "no_speech_prob": 0.15505701303482056,
+        "words": [
+          {
+            "word": "I",
+            "start": 25.22,
+            "end": 25.54,
+            "probability": 0.9318469166755676
+          },
+          {
+            "word": "'m",
+            "start": 25.54,
+            "end": 25.54,
+            "probability": 0.8820081949234009
+          },
+          {
+            "word": " a",
+            "start": 25.54,
+            "end": 25.58,
+            "probability": 0.8749104142189026
+          }
+        ]
+      },
+      {
+        "id": 15,
+        "seek": 1014,
+        "start": 25.58,
+        "end": 25.66,
+        "text": "I'm a",
+        "tokens": [
+          51264,
+          40,
+          478,
+          257,
+          51364
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.4204818407694499,
+        "compression_ratio": 4.375,
+        "no_speech_prob": 0.15505701303482056,
+        "words": [
+          {
+            "word": "I",
+            "start": 25.58,
+            "end": 25.58,
+            "probability": 0.9311657547950745
+          },
+          {
+            "word": "'m",
+            "start": 25.58,
+            "end": 25.58,
+            "probability": 0.8787201642990112
+          },
+          {
+            "word": " a",
+            "start": 25.58,
+            "end": 25.66,
+            "probability": 0.8762947916984558
+          }
+        ]
+      },
+      {
+        "id": 16,
+        "seek": 1014,
+        "start": 25.66,
+        "end": 27.5,
+        "text": "I'm a",
+        "tokens": [
+          51364,
+          40,
+          478,
+          257,
+          51464
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.4204818407694499,
+        "compression_ratio": 4.375,
+        "no_speech_prob": 0.15505701303482056,
+        "words": [
+          {
+            "word": "I",
+            "start": 25.66,
+            "end": 25.66,
+            "probability": 0.9408358335494995
+          },
+          {
+            "word": "'m",
+            "start": 25.66,
+            "end": 25.66,
+            "probability": 0.9009274244308472
+          },
+          {
+            "word": " a",
+            "start": 25.66,
+            "end": 27.5,
+            "probability": 0.8702332377433777
+          }
+        ]
+      },
+      {
+        "id": 17,
+        "seek": 1014,
+        "start": 27.5,
+        "end": 31.74,
+        "text": "I'm a",
+        "tokens": [
+          51464,
+          40,
+          478,
+          257,
+          51564
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.4204818407694499,
+        "compression_ratio": 4.375,
+        "no_speech_prob": 0.15505701303482056,
+        "words": [
+          {
+            "word": "I",
+            "start": 27.5,
+            "end": 27.52,
+            "probability": 0.9402039647102356
+          },
+          {
+            "word": "'m",
+            "start": 27.52,
+            "end": 31.74,
+            "probability": 0.9073556065559387
+          },
+          {
+            "word": " a",
+            "start": 31.74,
+            "end": 31.74,
+            "probability": 0.8689983487129211
+          }
+        ]
+      },
+      {
+        "id": 18,
+        "seek": 1014,
+        "start": 31.74,
+        "end": 34.58,
+        "text": "I'm a",
+        "tokens": [
+          51564,
+          40,
+          478,
+          257,
+          51664
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.4204818407694499,
+        "compression_ratio": 4.375,
+        "no_speech_prob": 0.15505701303482056,
+        "words": [
+          {
+            "word": "I",
+            "start": 31.74,
+            "end": 33.88,
+            "probability": 0.9409880042076111
+          },
+          {
+            "word": "'m",
+            "start": 33.88,
+            "end": 34.58,
+            "probability": 0.9128878712654114
+          },
+          {
+            "word": " a",
+            "start": 34.58,
+            "end": 34.58,
+            "probability": 0.8674001693725586
+          }
+        ]
+      },
+      {
+        "id": 19,
+        "seek": 1014,
+        "start": 34.58,
+        "end": 34.98,
+        "text": "I'm a",
+        "tokens": [
+          51664,
+          40,
+          478,
+          257,
+          51764
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.4204818407694499,
+        "compression_ratio": 4.375,
+        "no_speech_prob": 0.15505701303482056,
+        "words": [
+          {
+            "word": "I",
+            "start": 34.58,
+            "end": 34.58,
+            "probability": 0.940955638885498
+          },
+          {
+            "word": "'m",
+            "start": 34.58,
+            "end": 34.98,
+            "probability": 0.9202584028244019
+          },
+          {
+            "word": " a",
+            "start": 34.98,
+            "end": 34.98,
+            "probability": 0.8699420094490051
+          }
+        ]
+      },
+      {
+        "id": 20,
+        "seek": 3498,
+        "start": 34.96,
+        "end": 34.96,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.14399609035915797,
+        "compression_ratio": 20.272727272727273,
+        "no_speech_prob": 0.7864711284637451,
+        "words": []
+      }
+    ],
+    "language": "ja"
+  }
+}

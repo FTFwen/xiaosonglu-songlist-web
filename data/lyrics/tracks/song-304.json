@@ -1,0 +1,194 @@
+{
+  "schemaVersion": 1,
+  "key": "song-304",
+  "songId": 304,
+  "songName": "星愿",
+  "rowKey": "星愿",
+  "displaySongName": "星愿",
+  "artist": "茶理理",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "分P标题 02_星愿 - 茶理理；心灵火 P2 同名同序；弹幕 03:11-03:19 讨论五维介质/星之海专辑，与该曲来路一致。",
+  "audio": {
+    "url": "assets/audio/song_303.m4a?v=08ea3864bd14",
+    "sha256": "08ea3864bd14add5bbab81d407eab45f72746a54ae2ad007a0512ca4d3d51217"
+  },
+  "retrievedAt": "2026-11-16T04:06:38.962Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E6%98%9F%E6%84%BF&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E6%98%9F%E6%84%BF%20%E8%8C%B6%E7%90%86%E7%90%86&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 497769792,
+        "name": "星愿",
+        "artists": [
+          "茶理理"
+        ],
+        "album": "星愿",
+        "durationMs": 267238,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 3455221707,
+        "name": "星愿",
+        "artists": [
+          "霍戈戈"
+        ],
+        "album": "星愿",
+        "durationMs": 232800,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2643643915,
+        "name": "星愿",
+        "artists": [
+          "吴雅妮",
+          "秦笙音乐",
+          "梵沐音乐",
+          "脱发混音师"
+        ],
+        "album": "星愿",
+        "durationMs": 162352,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 225682,
+        "name": "星愿",
+        "artists": [
+          "艾敬",
+          "毛阿敏",
+          "张学友",
+          "潘越云",
+          "齐豫",
+          "齐秦",
+          "钟镇涛"
+        ],
+        "album": "但愿人长久 15周年纪念集",
+        "durationMs": 302497,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2082116207,
+        "name": "星愿",
+        "artists": [
+          "常静"
+        ],
+        "album": "星愿",
+        "durationMs": 372449,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2738512404,
+        "name": "星愿",
+        "artists": [
+          "董唧唧",
+          "荣耀Forry"
+        ],
+        "album": "星愿",
+        "durationMs": 236472,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 497774071,
+        "name": "星愿 off vocal",
+        "artists": [
+          "茶理理"
+        ],
+        "album": "星愿",
+        "durationMs": 268008,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      },
+      {
+        "id": 506607859,
+        "name": "星愿StarWish",
+        "artists": [
+          "星尘",
+          "平行四界Quadimension"
+        ],
+        "album": "星愿StarWish",
+        "durationMs": 268042,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      }
+    ],
+    "workQuery": {
+      "song_id": 304,
+      "song_name": "星愿",
+      "show_as_song_name": "",
+      "display_song_name": "星愿",
+      "artist": "茶理理",
+      "artist_search": "茶理理",
+      "feat_artist": "",
+      "remark": "分P标题 02_星愿 - 茶理理；心灵火 P2 同名同序；弹幕 03:11-03:19 讨论五维介质/星之海专辑，与该曲来路一致。",
+      "tone": "",
+      "language": "中文",
+      "type": "中文原创",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1uPJ86DE95/?p=2",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-16",
+      "row_key": "星愿"
+    },
+    "sourceId": 497769792,
+    "sourcePath": "sources/497769792.json",
+    "sourceUrl": "https://music.163.com/#/song?id=497769792",
+    "selected": {
+      "id": 497769792,
+      "name": "星愿",
+      "artists": [
+        "茶理理"
+      ],
+      "album": "星愿",
+      "durationMs": 267238,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 59
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-304-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 267.883,
+    "sourceFirstLine": {
+      "t": 16.18,
+      "text": "穿越过浩瀚星间"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 28.76,
+      "endSeconds": 28.96,
+      "similarity": 0.0,
+      "recognizedText": "作",
+      "meanProbability": 0.01,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

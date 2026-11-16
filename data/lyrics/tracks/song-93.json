@@ -1,0 +1,219 @@
+{
+  "schemaVersion": 1,
+  "key": "song-93",
+  "songId": 93,
+  "songName": "夏恋慕",
+  "rowKey": "夏恋慕",
+  "displaySongName": "夏恋慕",
+  "artist": "kobasolo / 春茶",
+  "language": "日文",
+  "derivative": false,
+  "edition": "",
+  "remark": "弹幕02:49:34“夏恋慕神！！！”、02:49:51/02:49:58“还有夏恋慕”；02:51:42-48日文歌词行“ぽたりぽたり通る夏の日”“僕は君に恋して いいの”。网易云核实：kobasolo feat. 春茶。",
+  "audio": {
+    "url": "assets/audio/song_95.m4a?v=df46b044f308",
+    "sha256": "df46b044f308fdb0666881139312fbf33ec8015661d60cdfdea45ed76be9cf7e"
+  },
+  "retrievedAt": "2026-11-16T04:03:25.614Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E5%A4%8F%E6%81%8B%E6%85%95&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E5%A4%8F%E6%81%8B%E6%85%95%20kobasolo%20%2F%20%E6%98%A5%E8%8C%B6&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1335529596,
+        "name": "夏恋慕",
+        "artists": [
+          "kobasolo",
+          "春茶"
+        ],
+        "album": "夏恋慕",
+        "durationMs": 267888,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1354813260,
+        "name": "夏恋慕",
+        "artists": [
+          "kobasolo",
+          "春茶"
+        ],
+        "album": "Clumsy",
+        "durationMs": 267865,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1862517468,
+        "name": "夏恋慕",
+        "artists": [
+          "早凉"
+        ],
+        "album": "夏恋慕",
+        "durationMs": 267964,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1884321747,
+        "name": "夏恋慕",
+        "artists": [
+          "黎歌Neeko"
+        ],
+        "album": "黎歌Neeko的翻唱",
+        "durationMs": 259728,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1383967685,
+        "name": "夏恋慕",
+        "artists": [
+          "クルミ"
+        ],
+        "album": "夏恋慕（生贺）~~~",
+        "durationMs": 268016,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2692631415,
+        "name": "夏恋慕",
+        "artists": [
+          "肆寻shihiro"
+        ],
+        "album": "夏恋慕",
+        "durationMs": 268424,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3343676344,
+        "name": "夏恋慕",
+        "artists": [
+          "赤也也也子"
+        ],
+        "album": "feat.AKAaka2026",
+        "durationMs": 265918,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1836694783,
+        "name": "夏恋慕",
+        "artists": [
+          "小芋爱喝椰奶"
+        ],
+        "album": "夏恋慕（生贺to宅）",
+        "durationMs": 267964,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 93,
+      "song_name": "夏恋慕",
+      "show_as_song_name": "",
+      "display_song_name": "夏恋慕",
+      "artist": "kobasolo / 春茶",
+      "artist_search": "kobasolo 春茶 夏恋慕",
+      "feat_artist": "",
+      "remark": "弹幕02:49:34“夏恋慕神！！！”、02:49:51/02:49:58“还有夏恋慕”；02:51:42-48日文歌词行“ぽたりぽたり通る夏の日”“僕は君に恋して いいの”。网易云核实：kobasolo feat. 春茶。",
+      "tone": "",
+      "language": "日文",
+      "type": "J-Pop",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1m9886kEMZ/?p=7",
+      "sing_count": 1,
+      "status_labels": "清唱、自动识别待人工复核",
+      "last_sing_at": "2026-08-23",
+      "row_key": "夏恋慕"
+    },
+    "sourceId": 1335529596,
+    "sourcePath": "sources/1335529596.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1335529596",
+    "selected": {
+      "id": 1335529596,
+      "name": "夏恋慕",
+      "artists": [
+        "kobasolo",
+        "春茶"
+      ],
+      "album": "夏恋慕",
+      "durationMs": 267888,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 37
+  },
+  "alignment": {
+    "status": "spotcheck_review_required",
+    "evidencePath": "evidence/song-93-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 263.221,
+    "sourceFirstLine": {
+      "t": 12,
+      "text": "君が好きって分かっちゃうな"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 13.0,
+      "endSeconds": 17.64,
+      "similarity": 0.9230769230769231,
+      "recognizedText": "君が好きって わかっちゃうな",
+      "meanProbability": 0.777,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": 1.0,
+    "checks": [
+      {
+        "sourceLine": {
+          "t": 129,
+          "text": "君が笑う"
+        },
+        "evidencePath": "evidence/song-93-check0.json",
+        "candidate": {
+          "audioSeconds": 131.5,
+          "endSeconds": 132.56,
+          "similarity": 0.6666666666666666,
+          "recognizedText": "君が",
+          "meanProbability": 0.881,
+          "tokenPrefixOnly": false
+        },
+        "residualSeconds": 1.5
+      },
+      {
+        "sourceLine": {
+          "t": 236,
+          "text": "泡のようには儚いような"
+        },
+        "evidencePath": "evidence/song-93-check1.json",
+        "candidate": {
+          "audioSeconds": 239.18,
+          "endSeconds": 243.0,
+          "similarity": 0.6666666666666666,
+          "recognizedText": "ように引かないような",
+          "meanProbability": 0.805,
+          "tokenPrefixOnly": false
+        },
+        "residualSeconds": 2.18
+      }
+    ],
+    "asrLanguage": "ja",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

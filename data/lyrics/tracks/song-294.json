@@ -1,0 +1,184 @@
+{
+  "schemaVersion": 1,
+  "key": "song-294",
+  "songId": 294,
+  "songName": "易燃易爆炸",
+  "rowKey": "易燃易爆炸",
+  "displaySongName": "易燃易爆炸",
+  "artist": "陈粒",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "两份合集（BV1TApG6uEPX 分P07、BV1Qrpj6ZELm 分P07）同曲同序，原唱字段均为陈粒；弹幕 01:01:57「陈粒专场来了」、01:02:14「真就v圈陈粒」佐证该段为陈粒作品连唱。类型标签沿用本站陈粒曲目的既有组合。",
+  "audio": {
+    "url": "assets/audio/song_293.m4a?v=a5eb2c3eaf6d",
+    "sha256": "a5eb2c3eaf6d181ab88ab869fb9266eb4023d9dc18becb99e54ab8f4b2b5b030"
+  },
+  "retrievedAt": "2026-11-16T04:06:28.375Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E6%98%93%E7%87%83%E6%98%93%E7%88%86%E7%82%B8&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E6%98%93%E7%87%83%E6%98%93%E7%88%86%E7%82%B8%20%E9%99%88%E7%B2%92&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 30431376,
+        "name": "易燃易爆炸",
+        "artists": [
+          "陈粒"
+        ],
+        "album": "如也",
+        "durationMs": 200347,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2749430422,
+        "name": "易燃易爆炸",
+        "artists": [
+          "陈粒"
+        ],
+        "album": "十年自选",
+        "durationMs": 201600,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2619709372,
+        "name": "易燃易爆炸",
+        "artists": [
+          "毛不易"
+        ],
+        "album": "",
+        "durationMs": 201065,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1872333496,
+        "name": "易燃易爆炸",
+        "artists": [
+          "谭维维",
+          "梦幻西游"
+        ],
+        "album": "易燃易爆炸",
+        "durationMs": 206357,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 559787989,
+        "name": "易燃易爆炸",
+        "artists": [
+          "西瓜JUN"
+        ],
+        "album": "易燃易爆炸",
+        "durationMs": 226037,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 466864953,
+        "name": "易燃易爆炸",
+        "artists": [
+          "易世樊花"
+        ],
+        "album": "易世樊花2017翻唱选集",
+        "durationMs": 200463,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1313920960,
+        "name": "易燃易爆炸",
+        "artists": [
+          "萧忆情Alex"
+        ],
+        "album": "易燃易爆炸",
+        "durationMs": 200568,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1869973030,
+        "name": "易燃易爆炸",
+        "artists": [
+          "池鱼"
+        ],
+        "album": "池鱼的翻唱专辑",
+        "durationMs": 18310,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 294,
+      "song_name": "易燃易爆炸",
+      "show_as_song_name": "",
+      "display_song_name": "易燃易爆炸",
+      "artist": "陈粒",
+      "artist_search": "陈粒",
+      "feat_artist": "",
+      "remark": "两份合集（BV1TApG6uEPX 分P07、BV1Qrpj6ZELm 分P07）同曲同序，原唱字段均为陈粒；弹幕 01:01:57「陈粒专场来了」、01:02:14「真就v圈陈粒」佐证该段为陈粒作品连唱。类型标签沿用本站陈粒曲目的既有组合。",
+      "tone": "",
+      "language": "中文",
+      "type": "民谣、流行",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1TApG6uEPX/?p=7",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-10",
+      "row_key": "易燃易爆炸"
+    },
+    "sourceId": 30431376,
+    "sourcePath": "sources/30431376.json",
+    "sourceUrl": "https://music.163.com/#/song?id=30431376",
+    "selected": {
+      "id": 30431376,
+      "name": "易燃易爆炸",
+      "artists": [
+        "陈粒"
+      ],
+      "album": "如也",
+      "durationMs": 200347,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 28
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-294-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 189.931,
+    "sourceFirstLine": {
+      "t": 15.82,
+      "text": "盼我疯魔还盼我孑孓不独活"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 31.2,
+      "endSeconds": 35.08,
+      "similarity": 0.3333333333333333,
+      "recognizedText": "我够笑不住还心我心如共不",
+      "meanProbability": 0.536,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

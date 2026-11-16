@@ -1,0 +1,162 @@
+{
+  "schemaVersion": 1,
+  "key": "song-175",
+  "songId": 175,
+  "songName": "たばこ",
+  "displaySongName": "たばこ",
+  "artist": "Sawako碎花",
+  "language": "日文",
+  "derivative": false,
+  "audio": {
+    "url": "assets/audio/song_174.m4a?v=2c61b58f20cd",
+    "sha256": "2c61b58f20cd2749e5a5ba20443733ac26bc74a799e73e67633a47297ff23f5d"
+  },
+  "retrievedAt": "2026-11-16T03:58:18.198Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E3%81%9F%E3%81%B0%E3%81%93&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1303296958,
+        "name": "たばこ",
+        "artists": [
+          "Sawako碎花"
+        ],
+        "album": "烟草",
+        "durationMs": 377626,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1308778862,
+        "name": "たばこ",
+        "artists": [
+          "コレサワ"
+        ],
+        "album": "コレカラー",
+        "durationMs": 374600,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1308778861,
+        "name": "たばこ",
+        "artists": [
+          "コレサワ"
+        ],
+        "album": "コレカラー",
+        "durationMs": 374653,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1952085597,
+        "name": "たばこ",
+        "artists": [
+          "DAZBEE"
+        ],
+        "album": "Remindful.Two",
+        "durationMs": 365068,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1355871453,
+        "name": "たばこ",
+        "artists": [
+          "96猫"
+        ],
+        "album": "Tear",
+        "durationMs": 373524,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2060474635,
+        "name": "たばこ",
+        "artists": [
+          "火西肆"
+        ],
+        "album": "煙草",
+        "durationMs": 373564,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 574921790,
+        "name": "たばこ",
+        "artists": [
+          "しゅーず"
+        ],
+        "album": "Pastel",
+        "durationMs": 369580,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1330944279,
+        "name": "たばこ",
+        "artists": [
+          "夏野Natsuno",
+          "群青"
+        ],
+        "album": "たばこ",
+        "durationMs": 358452,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "sourceId": 1303296958,
+    "sourcePath": "sources/1303296958.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1303296958",
+    "selected": {
+      "id": 1303296958,
+      "name": "たばこ",
+      "artists": [
+        "Sawako碎花"
+      ],
+      "album": "烟草",
+      "durationMs": 377626,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 33
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-175-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 359.027,
+    "sourceFirstLine": {
+      "t": 26.59,
+      "text": "昨日の夜から君がいなくなって"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 30.0,
+      "endSeconds": 34.0,
+      "similarity": 0.6666666666666666,
+      "recognizedText": "君がいないなくなって",
+      "meanProbability": 0.503,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "ja",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  },
+  "rowKey": "たばこ",
+  "edition": "",
+  "remark": "碎花翻唱版本；原唱为日本创作歌手コレサワ（Koresawa）"
+}

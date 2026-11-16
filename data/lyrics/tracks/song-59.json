@@ -1,0 +1,191 @@
+{
+  "schemaVersion": 1,
+  "key": "song-59",
+  "songId": 59,
+  "songName": "未来は風のように",
+  "rowKey": "未来は風のように",
+  "displaySongName": "未来は風のように",
+  "artist": "Liella!",
+  "language": "日文",
+  "derivative": false,
+  "edition": "",
+  "remark": "来自 2026-08-18 歌切合集《【663645TV】神回！我已启动！全力绿来唱完了！8月18日歌切合集【小松绿Viridis】》的分P《12-未来は風のように》。按当前 song-cut-first 策略，将合集章节名直接并入正式曲库；当前记录的是合集内顺序时间，不是原始直播回放时间。",
+  "audio": {
+    "url": "assets/audio/song_61.m4a?v=5e12d6b2d029",
+    "sha256": "5e12d6b2d0295321b5b37ef3e4616f8db1107371585c992c96b529667533acfb"
+  },
+  "retrievedAt": "2026-11-16T04:03:21.602Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E6%9C%AA%E6%9D%A5%E3%81%AF%E9%A2%A8%E3%81%AE%E3%82%88%E3%81%86%E3%81%AB&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E6%9C%AA%E6%9D%A5%E3%81%AF%E9%A2%A8%E3%81%AE%E3%82%88%E3%81%86%E3%81%AB%20Liella!&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1866489156,
+        "name": "未来は風のように",
+        "artists": [
+          "Liella!"
+        ],
+        "album": "未来は風のように",
+        "durationMs": 247537,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1924863798,
+        "name": "未来は風のように",
+        "artists": [
+          "Liella!"
+        ],
+        "album": "What a Wonderful Dream!!",
+        "durationMs": 247514,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1898935974,
+        "name": "未来は風のように",
+        "artists": [
+          "咩纪",
+          "梓希Azusa",
+          "西洛卡",
+          "箜焱mitsuhi",
+          "优柠Yuure"
+        ],
+        "album": "未来如风",
+        "durationMs": 247614,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1895416496,
+        "name": "未来は風のように",
+        "artists": [
+          "Fuki",
+          "日巡",
+          "牧野冰",
+          "牧野咲良",
+          "小鱼干"
+        ],
+        "album": "Meteor cover.Liella!",
+        "durationMs": 243920,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1896022630,
+        "name": "未来は風のように",
+        "artists": [
+          "佯佐"
+        ],
+        "album": "未来は風のように",
+        "durationMs": 246066,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1929579691,
+        "name": "未来は風のように",
+        "artists": [
+          "透明碳酸"
+        ],
+        "album": "未来は風のように",
+        "durationMs": 95895,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2024620396,
+        "name": "未来は風のように",
+        "artists": [
+          "RainbowRAI"
+        ],
+        "album": "未来は風のように",
+        "durationMs": 247510,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1863747249,
+        "name": "未来は風のように（Love Live! Superstar!! ED）（翻自 Liella!）",
+        "artists": [
+          "Kyle Xian"
+        ],
+        "album": "2021七月动漫新番歌曲合集Vol.3",
+        "durationMs": 190772,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      }
+    ],
+    "workQuery": {
+      "song_id": 59,
+      "song_name": "未来は風のように",
+      "show_as_song_name": "",
+      "display_song_name": "未来は風のように",
+      "artist": "Liella!",
+      "artist_search": "Liella",
+      "feat_artist": "",
+      "remark": "来自 2026-08-18 歌切合集《【663645TV】神回！我已启动！全力绿来唱完了！8月18日歌切合集【小松绿Viridis】》的分P《12-未来は風のように》。按当前 song-cut-first 策略，将合集章节名直接并入正式曲库；当前记录的是合集内顺序时间，不是原始直播回放时间。",
+      "tone": "",
+      "language": "日文",
+      "type": "动漫、J-Pop",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1rv8V6DExk/",
+      "sing_count": 1,
+      "status_labels": "歌切合集补录、待后续回放时间定位",
+      "last_sing_at": "2026-08-18",
+      "row_key": "未来は風のように"
+    },
+    "sourceId": 1866489156,
+    "sourcePath": "sources/1866489156.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1866489156",
+    "selected": {
+      "id": 1866489156,
+      "name": "未来は風のように",
+      "artists": [
+        "Liella!"
+      ],
+      "album": "未来は風のように",
+      "durationMs": 247537,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 47
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-59-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 245.179,
+    "sourceFirstLine": {
+      "t": 21.722,
+      "text": "香音：未来は風のように"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 29.84,
+      "endSeconds": 29.92,
+      "similarity": 0.0,
+      "recognizedText": "作",
+      "meanProbability": 0.001,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "ja",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

@@ -1,0 +1,185 @@
+{
+  "schemaVersion": 1,
+  "key": "song-176",
+  "songId": 176,
+  "songName": "我愛你-上海蟹-",
+  "rowKey": "我愛你-上海蟹-",
+  "displaySongName": "我愛你-上海蟹-",
+  "artist": "カニ研究会",
+  "language": "日文",
+  "derivative": false,
+  "edition": "",
+  "remark": "中日混合歌词的网络热门曲（KKBOX/YouTube 收录核实）；弹幕 01:36「哦哦哦上海蟹」印证",
+  "audio": {
+    "url": "assets/audio/song_175.m4a?v=181cdbec38d9",
+    "sha256": "181cdbec38d9aaefc81999afd6081f5389ceec7bdbd84a66ce96a940fade752e"
+  },
+  "retrievedAt": "2026-11-16T04:13:05.786Z",
+  "match": {
+    "status": "candidate_review_required",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E6%88%91%E6%84%9B%E4%BD%A0-%E4%B8%8A%E6%B5%B7%E8%9F%B9-&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E6%88%91%E6%84%9B%E4%BD%A0-%E4%B8%8A%E6%B5%B7%E8%9F%B9-%20%E3%82%AB%E3%83%8B%E7%A0%94%E7%A9%B6%E4%BC%9A&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1949073459,
+        "name": "我愛你-上海蟹-",
+        "artists": [
+          "カニ研究会"
+        ],
+        "album": "我愛你-上海蟹-",
+        "durationMs": 113898,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2029927056,
+        "name": "我愛你-上海蟹-",
+        "artists": [
+          "早稻叽"
+        ],
+        "album": "2023.03",
+        "durationMs": 114620,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2124381553,
+        "name": "我愛你-上海蟹-",
+        "artists": [
+          "榛葉nami"
+        ],
+        "album": "我愛你-上海蟹-",
+        "durationMs": 112254,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3370493394,
+        "name": "我愛你-上海蟹-",
+        "artists": [
+          "嘉然今天吃什么",
+          "咬一口果丹皮"
+        ],
+        "album": "我愛你-上海蟹--嘉然|【MV】Hello~Hello~听得到嘛？",
+        "durationMs": 112338,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2727544080,
+        "name": "我愛你-上海蟹-",
+        "artists": [
+          "bili_47477328786"
+        ],
+        "album": "我愛你-上海蟹-",
+        "durationMs": 111347,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2021756021,
+        "name": "我愛你-上海蟹-",
+        "artists": [
+          "十ZOMBIE十",
+          "禁果由物"
+        ],
+        "album": "我愛你-上海蟹-",
+        "durationMs": 113972,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2070587560,
+        "name": "我愛你-上海蟹",
+        "artists": [
+          "早凉"
+        ],
+        "album": "我愛你-上海蟹",
+        "durationMs": 114218,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2022344182,
+        "name": "我愛你-上海蟹- (Sped Up)",
+        "artists": [
+          "カニ研究会"
+        ],
+        "album": "我愛你-上海蟹- (Sped Up)",
+        "durationMs": 99130,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      }
+    ],
+    "workQuery": {
+      "song_id": 176,
+      "song_name": "我愛你-上海蟹-",
+      "show_as_song_name": "",
+      "display_song_name": "我愛你-上海蟹-",
+      "artist": "カニ研究会",
+      "artist_search": "カニ研究会",
+      "feat_artist": "",
+      "remark": "中日混合歌词的网络热门曲（KKBOX/YouTube 收录核实）；弹幕 01:36「哦哦哦上海蟹」印证",
+      "tone": "",
+      "language": "日文",
+      "type": "J-Pop",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1q9YB6xErK/?p=9",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-09-13",
+      "row_key": "我愛你-上海蟹-"
+    },
+    "sourceId": 2029927056,
+    "sourcePath": "sources/2029927056.json",
+    "sourceUrl": "https://music.163.com/#/song?id=2029927056",
+    "selected": {
+      "id": 2029927056,
+      "name": "我愛你-上海蟹-",
+      "artists": [
+        "早稻叽"
+      ],
+      "album": "2023.03",
+      "durationMs": 114620,
+      "titleScore": 1,
+      "artistMatch": false,
+      "score": 0.8
+    },
+    "timedLineCount": 48
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-176-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 103.561,
+    "sourceFirstLine": {
+      "t": 0.74,
+      "text": "我 愛你"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 2.64,
+      "endSeconds": 3.36,
+      "similarity": 0.0,
+      "recognizedText": "で",
+      "meanProbability": 0.018,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "ja",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

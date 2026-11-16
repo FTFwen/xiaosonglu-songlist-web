@@ -1,0 +1,615 @@
+{
+  "audioSha256": "bbff5fe5159faa104ac6bee2dbb5260c85b6201315097b586c6b5f5e3c12cc11",
+  "model": "whisper-base",
+  "start": 0,
+  "end": 36.717,
+  "result": {
+    "text": "谢谢啊我们的晚上一条草的啊啊啊啊啊啊啊啊啊啊啊啊啊啊",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 11.739999999999995,
+        "end": 12.14,
+        "text": "谢谢",
+        "tokens": [
+          50364,
+          19879,
+          50412
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.7636256267115012,
+        "compression_ratio": 2.34,
+        "no_speech_prob": 0.31517714262008667,
+        "words": [
+          {
+            "word": "谢谢",
+            "start": 11.739999999999995,
+            "end": 12.14,
+            "probability": 0.7917917370796204
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "seek": 0,
+        "start": 12.639999999999993,
+        "end": 14.36,
+        "text": "啊我们的晚上一条草的",
+        "tokens": [
+          50412,
+          4905,
+          15003,
+          1546,
+          50157,
+          2257,
+          48837,
+          31409,
+          231,
+          1546,
+          50514
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.7636256267115012,
+        "compression_ratio": 2.34,
+        "no_speech_prob": 0.31517714262008667,
+        "words": [
+          {
+            "word": "啊",
+            "start": 12.639999999999993,
+            "end": 13.04,
+            "probability": 0.4955582022666931
+          },
+          {
+            "word": "我们",
+            "start": 13.04,
+            "end": 13.22,
+            "probability": 0.8283191323280334
+          },
+          {
+            "word": "的",
+            "start": 13.22,
+            "end": 13.32,
+            "probability": 0.9345393180847168
+          },
+          {
+            "word": "晚上",
+            "start": 13.32,
+            "end": 13.52,
+            "probability": 0.22322195768356323
+          },
+          {
+            "word": "一",
+            "start": 13.52,
+            "end": 13.9,
+            "probability": 0.22612890601158142
+          },
+          {
+            "word": "条",
+            "start": 13.9,
+            "end": 14.0,
+            "probability": 0.2817758619785309
+          },
+          {
+            "word": "草",
+            "start": 14.0,
+            "end": 14.24,
+            "probability": 0.557793527841568
+          },
+          {
+            "word": "的",
+            "start": 14.24,
+            "end": 14.36,
+            "probability": 0.20456184446811676
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "seek": 0,
+        "start": 14.36,
+        "end": 15.06,
+        "text": "啊",
+        "tokens": [
+          50664,
+          4905,
+          50712
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.7636256267115012,
+        "compression_ratio": 2.34,
+        "no_speech_prob": 0.31517714262008667,
+        "words": [
+          {
+            "word": "啊",
+            "start": 14.36,
+            "end": 15.06,
+            "probability": 0.04662395268678665
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "seek": 0,
+        "start": 17.899999999999995,
+        "end": 18.3,
+        "text": "啊",
+        "tokens": [
+          50712,
+          4905,
+          50762
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.7636256267115012,
+        "compression_ratio": 2.34,
+        "no_speech_prob": 0.31517714262008667,
+        "words": [
+          {
+            "word": "啊",
+            "start": 17.899999999999995,
+            "end": 18.3,
+            "probability": 0.028983224183321
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "seek": 0,
+        "start": 24.459999999999994,
+        "end": 24.86,
+        "text": "啊",
+        "tokens": [
+          50762,
+          4905,
+          50812
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.7636256267115012,
+        "compression_ratio": 2.34,
+        "no_speech_prob": 0.31517714262008667,
+        "words": [
+          {
+            "word": "啊",
+            "start": 24.459999999999994,
+            "end": 24.86,
+            "probability": 0.15117119252681732
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "seek": 0,
+        "start": 24.86,
+        "end": 25.34,
+        "text": "啊",
+        "tokens": [
+          50812,
+          4905,
+          50862
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.7636256267115012,
+        "compression_ratio": 2.34,
+        "no_speech_prob": 0.31517714262008667,
+        "words": [
+          {
+            "word": "啊",
+            "start": 24.86,
+            "end": 25.34,
+            "probability": 0.5197927951812744
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "seek": 0,
+        "start": 25.34,
+        "end": 25.58,
+        "text": "啊",
+        "tokens": [
+          50862,
+          4905,
+          50874
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.7636256267115012,
+        "compression_ratio": 2.34,
+        "no_speech_prob": 0.31517714262008667,
+        "words": [
+          {
+            "word": "啊",
+            "start": 25.34,
+            "end": 25.58,
+            "probability": 0.6797105073928833
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "seek": 0,
+        "start": 25.58,
+        "end": 25.76,
+        "text": "啊",
+        "tokens": [
+          50874,
+          4905,
+          50924
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.7636256267115012,
+        "compression_ratio": 2.34,
+        "no_speech_prob": 0.31517714262008667,
+        "words": [
+          {
+            "word": "啊",
+            "start": 25.58,
+            "end": 25.76,
+            "probability": 0.7456399202346802
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "seek": 0,
+        "start": 25.76,
+        "end": 25.76,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.7636256267115012,
+        "compression_ratio": 2.34,
+        "no_speech_prob": 0.31517714262008667,
+        "words": []
+      },
+      {
+        "id": 9,
+        "seek": 0,
+        "start": 25.76,
+        "end": 25.88,
+        "text": "啊",
+        "tokens": [
+          50974,
+          4905,
+          51024
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.7636256267115012,
+        "compression_ratio": 2.34,
+        "no_speech_prob": 0.31517714262008667,
+        "words": [
+          {
+            "word": "啊",
+            "start": 25.76,
+            "end": 25.88,
+            "probability": 0.8080924153327942
+          }
+        ]
+      },
+      {
+        "id": 10,
+        "seek": 0,
+        "start": 25.88,
+        "end": 25.88,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.7636256267115012,
+        "compression_ratio": 2.34,
+        "no_speech_prob": 0.31517714262008667,
+        "words": []
+      },
+      {
+        "id": 11,
+        "seek": 0,
+        "start": 25.88,
+        "end": 25.88,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.7636256267115012,
+        "compression_ratio": 2.34,
+        "no_speech_prob": 0.31517714262008667,
+        "words": []
+      },
+      {
+        "id": 12,
+        "seek": 0,
+        "start": 25.88,
+        "end": 26.06,
+        "text": "啊",
+        "tokens": [
+          51074,
+          4905,
+          51124
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.7636256267115012,
+        "compression_ratio": 2.34,
+        "no_speech_prob": 0.31517714262008667,
+        "words": [
+          {
+            "word": "啊",
+            "start": 25.88,
+            "end": 26.06,
+            "probability": 0.8634467720985413
+          }
+        ]
+      },
+      {
+        "id": 13,
+        "seek": 0,
+        "start": 26.06,
+        "end": 26.06,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.7636256267115012,
+        "compression_ratio": 2.34,
+        "no_speech_prob": 0.31517714262008667,
+        "words": []
+      },
+      {
+        "id": 14,
+        "seek": 0,
+        "start": 26.06,
+        "end": 26.06,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.7636256267115012,
+        "compression_ratio": 2.34,
+        "no_speech_prob": 0.31517714262008667,
+        "words": []
+      },
+      {
+        "id": 15,
+        "seek": 0,
+        "start": 26.06,
+        "end": 26.06,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.7636256267115012,
+        "compression_ratio": 2.34,
+        "no_speech_prob": 0.31517714262008667,
+        "words": []
+      },
+      {
+        "id": 16,
+        "seek": 0,
+        "start": 26.06,
+        "end": 26.12,
+        "text": "啊",
+        "tokens": [
+          51274,
+          4905,
+          51324
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.7636256267115012,
+        "compression_ratio": 2.34,
+        "no_speech_prob": 0.31517714262008667,
+        "words": [
+          {
+            "word": "啊",
+            "start": 26.06,
+            "end": 26.12,
+            "probability": 0.9087333083152771
+          }
+        ]
+      },
+      {
+        "id": 17,
+        "seek": 0,
+        "start": 26.12,
+        "end": 26.12,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.7636256267115012,
+        "compression_ratio": 2.34,
+        "no_speech_prob": 0.31517714262008667,
+        "words": []
+      },
+      {
+        "id": 18,
+        "seek": 0,
+        "start": 26.12,
+        "end": 26.24,
+        "text": "啊",
+        "tokens": [
+          51374,
+          4905,
+          51424
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.7636256267115012,
+        "compression_ratio": 2.34,
+        "no_speech_prob": 0.31517714262008667,
+        "words": [
+          {
+            "word": "啊",
+            "start": 26.12,
+            "end": 26.24,
+            "probability": 0.9237270355224609
+          }
+        ]
+      },
+      {
+        "id": 19,
+        "seek": 0,
+        "start": 26.24,
+        "end": 26.24,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.7636256267115012,
+        "compression_ratio": 2.34,
+        "no_speech_prob": 0.31517714262008667,
+        "words": []
+      },
+      {
+        "id": 20,
+        "seek": 0,
+        "start": 26.24,
+        "end": 26.44,
+        "text": "啊",
+        "tokens": [
+          51474,
+          4905,
+          51524
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.7636256267115012,
+        "compression_ratio": 2.34,
+        "no_speech_prob": 0.31517714262008667,
+        "words": [
+          {
+            "word": "啊",
+            "start": 26.24,
+            "end": 26.44,
+            "probability": 0.9361190795898438
+          }
+        ]
+      },
+      {
+        "id": 21,
+        "seek": 0,
+        "start": 26.44,
+        "end": 26.54,
+        "text": "啊",
+        "tokens": [
+          51524,
+          4905,
+          51574
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.7636256267115012,
+        "compression_ratio": 2.34,
+        "no_speech_prob": 0.31517714262008667,
+        "words": [
+          {
+            "word": "啊",
+            "start": 26.44,
+            "end": 26.54,
+            "probability": 0.9416354298591614
+          }
+        ]
+      },
+      {
+        "id": 22,
+        "seek": 0,
+        "start": 26.54,
+        "end": 26.54,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.7636256267115012,
+        "compression_ratio": 2.34,
+        "no_speech_prob": 0.31517714262008667,
+        "words": []
+      },
+      {
+        "id": 23,
+        "seek": 0,
+        "start": 26.54,
+        "end": 27.26,
+        "text": "啊",
+        "tokens": [
+          51624,
+          4905,
+          51674
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.7636256267115012,
+        "compression_ratio": 2.34,
+        "no_speech_prob": 0.31517714262008667,
+        "words": [
+          {
+            "word": "啊",
+            "start": 26.54,
+            "end": 27.26,
+            "probability": 0.950670599937439
+          }
+        ]
+      },
+      {
+        "id": 24,
+        "seek": 0,
+        "start": 27.26,
+        "end": 27.26,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.7636256267115012,
+        "compression_ratio": 2.34,
+        "no_speech_prob": 0.31517714262008667,
+        "words": []
+      },
+      {
+        "id": 25,
+        "seek": 0,
+        "start": 27.26,
+        "end": 27.26,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.7636256267115012,
+        "compression_ratio": 2.34,
+        "no_speech_prob": 0.31517714262008667,
+        "words": []
+      },
+      {
+        "id": 26,
+        "seek": 0,
+        "start": 27.26,
+        "end": 27.26,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.7636256267115012,
+        "compression_ratio": 2.34,
+        "no_speech_prob": 0.31517714262008667,
+        "words": []
+      },
+      {
+        "id": 27,
+        "seek": 0,
+        "start": 27.26,
+        "end": 27.26,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.7636256267115012,
+        "compression_ratio": 2.34,
+        "no_speech_prob": 0.31517714262008667,
+        "words": []
+      },
+      {
+        "id": 28,
+        "seek": 0,
+        "start": 27.26,
+        "end": 27.84,
+        "text": "啊",
+        "tokens": [
+          51834,
+          4905,
+          51854
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.7636256267115012,
+        "compression_ratio": 2.34,
+        "no_speech_prob": 0.31517714262008667,
+        "words": [
+          {
+            "word": "啊",
+            "start": 27.26,
+            "end": 27.84,
+            "probability": 0.9608159065246582
+          }
+        ]
+      }
+    ],
+    "language": "zh"
+  }
+}

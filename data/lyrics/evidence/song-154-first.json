@@ -1,0 +1,68 @@
+{
+  "audioSha256": "eca933b5c4eda082f72adb4bc1f8a4913093123863b931ce8e48c135fcfc516b",
+  "model": "whisper-base",
+  "start": 0,
+  "end": 35,
+  "result": {
+    "text": "詞曲 李宗晨",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 27.98,
+        "end": 29.98,
+        "text": "詞曲 李宗晨",
+        "tokens": [
+          50364,
+          6716,
+          252,
+          30753,
+          220,
+          31206,
+          2415,
+          245,
+          5094,
+          101,
+          50464
+        ],
+        "temperature": 0,
+        "avg_logprob": -1.4384241104125977,
+        "compression_ratio": 0.64,
+        "no_speech_prob": 0.5413395762443542,
+        "words": [
+          {
+            "word": "詞",
+            "start": 27.98,
+            "end": 29.38,
+            "probability": 0.475397914997302
+          },
+          {
+            "word": "曲",
+            "start": 29.38,
+            "end": 29.38,
+            "probability": 0.3236190974712372
+          },
+          {
+            "word": " 李",
+            "start": 29.38,
+            "end": 29.38,
+            "probability": 0.07767113298177719
+          },
+          {
+            "word": "宗",
+            "start": 29.38,
+            "end": 29.98,
+            "probability": 0.27537100948393345
+          },
+          {
+            "word": "晨",
+            "start": 29.98,
+            "end": 29.98,
+            "probability": 0.2625194024294615
+          }
+        ]
+      }
+    ],
+    "language": "zh"
+  }
+}

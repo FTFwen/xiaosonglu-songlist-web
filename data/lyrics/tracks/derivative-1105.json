@@ -1,0 +1,172 @@
+{
+  "schemaVersion": 1,
+  "key": "derivative-1105",
+  "songId": -1105,
+  "songName": "小松绿-雨爱",
+  "rowKey": "小松绿-雨爱",
+  "displaySongName": "雨爱",
+  "artist": "白烁",
+  "language": "",
+  "derivative": true,
+  "edition": "",
+  "remark": "",
+  "audio": {
+    "url": "assets/derivative/yuai.mp3?v=8428a5a9df1e",
+    "sha256": "8428a5a9df1eff7a97657cd9e8f474c5d2fd9112dacd06d1ee3c6d677732ca58"
+  },
+  "retrievedAt": "2026-11-16T04:08:39.894Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E9%9B%A8%E7%88%B1&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E9%9B%A8%E7%88%B1%20%E6%9D%A8%E4%B8%9E%E7%90%B3&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 316100,
+        "name": "雨爱",
+        "artists": [
+          "杨丞琳"
+        ],
+        "album": "雨爱",
+        "durationMs": 260480,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 5235487,
+        "name": "雨爱",
+        "artists": [
+          "杨丞琳"
+        ],
+        "album": "为日本加油",
+        "durationMs": 260480,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 400162850,
+        "name": "雨爱",
+        "artists": [
+          "杨丞琳"
+        ],
+        "album": "雨爱(缤纷庆功版)",
+        "durationMs": 260480,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 523008516,
+        "name": "雨爱",
+        "artists": [
+          "杨丞琳"
+        ],
+        "album": "杨丞琳 再见 青春 极精选",
+        "durationMs": 260480,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1882809264,
+        "name": "雨爱",
+        "artists": [
+          "李之谦",
+          "杨丞琳"
+        ],
+        "album": "翻唱合集",
+        "durationMs": 23040,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 22740087,
+        "name": "雨爱",
+        "artists": [
+          "杨丞琳"
+        ],
+        "album": "异想天开(新歌+精选)",
+        "durationMs": 260480,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 5233024,
+        "name": "雨爱",
+        "artists": [
+          "杨丞琳"
+        ],
+        "album": "K情歌9",
+        "durationMs": 260480,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 3442281398,
+        "name": "雨爱",
+        "artists": [
+          "DJ冷冰冰"
+        ],
+        "album": "雨爱",
+        "durationMs": 94204,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": -1105,
+      "song_name": "雨爱",
+      "display_song_name": "雨爱",
+      "artist": "杨丞琳",
+      "language": "",
+      "audio": "assets/derivative/yuai.mp3?v=8428a5a9df1e",
+      "derivative": true
+    },
+    "sourceId": 316100,
+    "sourcePath": "sources/316100.json",
+    "sourceUrl": "https://music.163.com/#/song?id=316100",
+    "selected": {
+      "id": 316100,
+      "name": "雨爱",
+      "artists": [
+        "杨丞琳"
+      ],
+      "album": "雨爱",
+      "durationMs": 260480,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 57
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/derivative-1105-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 258.664,
+    "sourceFirstLine": {
+      "t": 16.286,
+      "text": "窗外的天气"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 31.88,
+      "endSeconds": 32.68,
+      "similarity": 0.0,
+      "recognizedText": "看",
+      "meanProbability": 0.131,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

@@ -1,0 +1,183 @@
+{
+  "schemaVersion": 1,
+  "key": "song-88",
+  "songId": 88,
+  "songName": "纸星瓶",
+  "rowKey": "纸星瓶",
+  "displaySongName": "纸星瓶",
+  "artist": "海蓝色 / 星尘",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "来自 2026-08-20 偶像歌回。补录安可曲：弹幕 13:19-13:21 UTC 命中歌词「所有念与想　叠作纸星瓶装」（02:21:36 附近），且 Justice-Wen 歌切合集《绿考子必看！偶像主题歌回全切合集》sp1 章节收录《纸星瓶》。歌手海蓝色（SapphireSea）2023-08-27 投稿、星尘演唱，来自萌娘百科/VocaDB 检索。时间按弹幕出现时段估算，待回放复核。",
+  "audio": {
+    "url": "assets/audio/song_73.m4a?v=850febf8e712",
+    "sha256": "850febf8e7128c84e19dcd8b7ff11d3cf195ec91ec2e44e2d9256cf799ecf6c7"
+  },
+  "retrievedAt": "2026-11-16T04:03:43.735Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E7%BA%B8%E6%98%9F%E7%93%B6&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E7%BA%B8%E6%98%9F%E7%93%B6%20%E6%B5%B7%E8%93%9D%E8%89%B2%20%2F%20%E6%98%9F%E5%B0%98&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 2091419020,
+        "name": "纸星瓶",
+        "artists": [
+          "星尘"
+        ],
+        "album": "纸星瓶",
+        "durationMs": 215500,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2091419135,
+        "name": "纸星瓶 伴奏",
+        "artists": [
+          "星尘"
+        ],
+        "album": "纸星瓶",
+        "durationMs": 215500,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      },
+      {
+        "id": 2759511525,
+        "name": "星露瓷瓶",
+        "artists": [
+          "纸杯"
+        ],
+        "album": "翟傅干诘",
+        "durationMs": 53225,
+        "titleScore": 0,
+        "artistMatch": false,
+        "score": 0
+      },
+      {
+        "id": 3418484579,
+        "name": "衔接模糊的记忆",
+        "artists": [
+          "上星漂流瓶"
+        ],
+        "album": "纸袋笑脸计划",
+        "durationMs": 60418,
+        "titleScore": 0,
+        "artistMatch": false,
+        "score": 0
+      },
+      {
+        "id": 3418484544,
+        "name": "做自己人生中的解",
+        "artists": [
+          "上星漂流瓶"
+        ],
+        "album": "纸袋笑脸计划",
+        "durationMs": 29373,
+        "titleScore": 0,
+        "artistMatch": false,
+        "score": 0
+      },
+      {
+        "id": 3378692467,
+        "name": "第112集  从一个漂流瓶说起 4：纸条上的心愿",
+        "artists": [
+          "星星帮成长大百科"
+        ],
+        "album": "猪八戒爆笑成语日记 第二季：哪吒捉妖记6",
+        "durationMs": 316003,
+        "titleScore": 0,
+        "artistMatch": false,
+        "score": 0
+      },
+      {
+        "id": 3418484551,
+        "name": "又杀回来了",
+        "artists": [
+          "上星漂流瓶"
+        ],
+        "album": "纸袋笑脸计划",
+        "durationMs": 44187,
+        "titleScore": 0,
+        "artistMatch": false,
+        "score": 0
+      },
+      {
+        "id": 2064618638,
+        "name": "신문지 찢는 소리",
+        "artists": [
+          "V.A."
+        ],
+        "album": "안정/숙면/집중력에 좋은 세상의 모든 소리효과 300",
+        "durationMs": 8007,
+        "titleScore": 0,
+        "artistMatch": false,
+        "score": 0
+      }
+    ],
+    "workQuery": {
+      "song_id": 88,
+      "song_name": "纸星瓶",
+      "show_as_song_name": "",
+      "display_song_name": "纸星瓶",
+      "artist": "海蓝色 / 星尘",
+      "artist_search": "海蓝色 星尘",
+      "feat_artist": "",
+      "remark": "来自 2026-08-20 偶像歌回。补录安可曲：弹幕 13:19-13:21 UTC 命中歌词「所有念与想　叠作纸星瓶装」（02:21:36 附近），且 Justice-Wen 歌切合集《绿考子必看！偶像主题歌回全切合集》sp1 章节收录《纸星瓶》。歌手海蓝色（SapphireSea）2023-08-27 投稿、星尘演唱，来自萌娘百科/VocaDB 检索。时间按弹幕出现时段估算，待回放复核。",
+      "tone": "",
+      "language": "中文",
+      "type": "中V、抒情",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1EC8w62EAD/?p=19",
+      "sing_count": 1,
+      "status_labels": "歌回、自动识别待人工复核",
+      "last_sing_at": "2026-08-20",
+      "row_key": "纸星瓶"
+    },
+    "sourceId": 2091419020,
+    "sourcePath": "sources/2091419020.json",
+    "sourceUrl": "https://music.163.com/#/song?id=2091419020",
+    "selected": {
+      "id": 2091419020,
+      "name": "纸星瓶",
+      "artists": [
+        "星尘"
+      ],
+      "album": "纸星瓶",
+      "durationMs": 215500,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 54
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-88-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 132.145,
+    "sourceFirstLine": {
+      "t": 4.65,
+      "text": "作曲/编曲：海蓝色"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 4.48,
+      "endSeconds": 4.94,
+      "similarity": 0.25,
+      "recognizedText": "作",
+      "meanProbability": 0.456,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

@@ -1,0 +1,190 @@
+{
+  "schemaVersion": 1,
+  "key": "song-62",
+  "songId": 62,
+  "songName": "所以我伸出了手",
+  "rowKey": "所以我伸出了手",
+  "displaySongName": "所以我伸出了手",
+  "artist": "Evalia / 星尘",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "来自 2026-08-18 歌切合集《【663645TV】神回！我已启动！全力绿来唱完了！8月18日歌切合集【小松绿Viridis】》的分P《15-所以我伸出了手》。按当前 song-cut-first 策略，将合集章节名直接并入正式曲库；当前记录的是合集内顺序时间，不是原始直播回放时间。",
+  "audio": {
+    "url": "assets/audio/song_55.m4a?v=8570bd0ad1c8",
+    "sha256": "8570bd0ad1c8ba8c85a5c15a62f447efe091821354488878e2d92a516b273adc"
+  },
+  "retrievedAt": "2026-11-16T04:12:52.117Z",
+  "match": {
+    "status": "candidate_review_required",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E6%89%80%E4%BB%A5%E6%88%91%E4%BC%B8%E5%87%BA%E4%BA%86%E6%89%8B&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E6%89%80%E4%BB%A5%E6%88%91%E4%BC%B8%E5%87%BA%E4%BA%86%E6%89%8B%20Evalia%20%2F%20%E6%98%9F%E5%B0%98&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 2688916758,
+        "name": "所以我伸出了手",
+        "artists": [
+          "三无Marblue",
+          "芝麻Mochi"
+        ],
+        "album": "2025翻唱合集",
+        "durationMs": 195881,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3365326897,
+        "name": "所以我伸出了手",
+        "artists": [
+          "VIOMEAT"
+        ],
+        "album": "所以我伸出了手",
+        "durationMs": 197766,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2705717647,
+        "name": "所以我伸出了手",
+        "artists": [
+          "Sorane"
+        ],
+        "album": "所以，我伸出了手——",
+        "durationMs": 195566,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2700048084,
+        "name": "所以我伸出了手",
+        "artists": [
+          "昏惩-Twilight",
+          "BAR Studio"
+        ],
+        "album": "所以我伸出了手【龙肆 Cover.】",
+        "durationMs": 195471,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2703765347,
+        "name": "所以我伸出了手",
+        "artists": [
+          "天赐不了墨Q"
+        ],
+        "album": "2025年翻唱堆堆",
+        "durationMs": 195377,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2732595847,
+        "name": "所以我伸出了手",
+        "artists": [
+          "玹辞辞辞辞",
+          "Valyn慧媛"
+        ],
+        "album": "所以我伸出了手",
+        "durationMs": 194716,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2671973491,
+        "name": "所以我伸出了手",
+        "artists": [
+          "羅威",
+          "狼音アロ"
+        ],
+        "album": "天地无用",
+        "durationMs": 200881,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2702719231,
+        "name": "所以我伸出了手",
+        "artists": [
+          "卍风儿",
+          "MiDiCat",
+          "心华"
+        ],
+        "album": "所以我伸出了手",
+        "durationMs": 198072,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 62,
+      "song_name": "所以我伸出了手",
+      "show_as_song_name": "",
+      "display_song_name": "所以我伸出了手",
+      "artist": "Evalia / 星尘",
+      "artist_search": "Evalia 星尘",
+      "feat_artist": "",
+      "remark": "来自 2026-08-18 歌切合集《【663645TV】神回！我已启动！全力绿来唱完了！8月18日歌切合集【小松绿Viridis】》的分P《15-所以我伸出了手》。按当前 song-cut-first 策略，将合集章节名直接并入正式曲库；当前记录的是合集内顺序时间，不是原始直播回放时间。",
+      "tone": "",
+      "language": "中文",
+      "type": "中V、流行",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1rv8V6DExk/",
+      "sing_count": 1,
+      "status_labels": "歌切合集补录、待后续回放时间定位",
+      "last_sing_at": "2026-08-18",
+      "row_key": "所以我伸出了手"
+    },
+    "sourceId": 2688916758,
+    "sourcePath": "sources/2688916758.json",
+    "sourceUrl": "https://music.163.com/#/song?id=2688916758",
+    "selected": {
+      "id": 2688916758,
+      "name": "所以我伸出了手",
+      "artists": [
+        "三无Marblue",
+        "芝麻Mochi"
+      ],
+      "album": "2025翻唱合集",
+      "durationMs": 195881,
+      "titleScore": 1,
+      "artistMatch": false,
+      "score": 0.8
+    },
+    "timedLineCount": 57
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-62-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 194.746,
+    "sourceFirstLine": {
+      "t": 9.42,
+      "text": "词曲 Evalia"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 30.0,
+      "endSeconds": 30.16,
+      "similarity": 0.0,
+      "recognizedText": "是",
+      "meanProbability": 0.019,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

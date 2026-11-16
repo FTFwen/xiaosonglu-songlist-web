@@ -1,0 +1,185 @@
+{
+  "schemaVersion": 1,
+  "key": "song-126",
+  "songId": 126,
+  "songName": "东风志",
+  "rowKey": "东风志",
+  "displaySongName": "东风志",
+  "artist": "银临",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "2026-09-03「也许康复的随便唱唱」21点场；歌切合集【桐人今天睡大觉】【小松绿Viridis】随便唱唱的歌回 歌切合集 2026.09.03 分P6（04:38）。歌切分P标注 cover Aki阿杰；Aki阿杰 2016-06-09《东风志》（银临与慕寒亦有合作版）→ 本场演唱为银临版。",
+  "audio": {
+    "url": "assets/audio/song_125.m4a?v=b0553d8660f4",
+    "sha256": "b0553d8660f4b4f2f70a6de62a432fa6e31a9a5219f3c5c3159c3eb23823e072"
+  },
+  "retrievedAt": "2026-11-16T04:12:43.780Z",
+  "match": {
+    "status": "candidate_review_required",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E4%B8%9C%E9%A3%8E%E5%BF%97&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E4%B8%9C%E9%A3%8E%E5%BF%97%20%E9%93%B6%E4%B8%B4&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 429459016,
+        "name": "东风志",
+        "artists": [
+          "Aki阿杰"
+        ],
+        "album": "东风志",
+        "durationMs": 271517,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1379545133,
+        "name": "东风志",
+        "artists": [
+          "司南"
+        ],
+        "album": "司南·黑历史之古风cover",
+        "durationMs": 273862,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 431795289,
+        "name": "东风志",
+        "artists": [
+          "哦漏"
+        ],
+        "album": "东风志",
+        "durationMs": 271595,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 442493604,
+        "name": "东风志",
+        "artists": [
+          "小坠"
+        ],
+        "album": "古韵",
+        "durationMs": 267629,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 440767380,
+        "name": "东风志",
+        "artists": [
+          "异新音乐",
+          "Aki阿杰"
+        ],
+        "album": "原创作品集",
+        "durationMs": 271568,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 435306744,
+        "name": "东风志（cover Aki阿杰）",
+        "artists": [
+          "银临",
+          "慕寒"
+        ],
+        "album": "东风志",
+        "durationMs": 271361,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      },
+      {
+        "id": 3411794348,
+        "name": "东风志 （弹唱版）",
+        "artists": [
+          "乔缨辞Cynthia"
+        ],
+        "album": "乔缨辞弹唱集",
+        "durationMs": 81000,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 3425153853,
+        "name": "东风志（弹唱完整版）",
+        "artists": [
+          "乔缨辞Cynthia"
+        ],
+        "album": "乔缨辞弹唱集",
+        "durationMs": 274104,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      }
+    ],
+    "workQuery": {
+      "song_id": 126,
+      "song_name": "东风志",
+      "show_as_song_name": "",
+      "display_song_name": "东风志",
+      "artist": "银临",
+      "artist_search": "东风志 银临",
+      "feat_artist": "",
+      "remark": "2026-09-03「也许康复的随便唱唱」21点场；歌切合集【桐人今天睡大觉】【小松绿Viridis】随便唱唱的歌回 歌切合集 2026.09.03 分P6（04:38）。歌切分P标注 cover Aki阿杰；Aki阿杰 2016-06-09《东风志》（银临与慕寒亦有合作版）→ 本场演唱为银临版。",
+      "tone": "",
+      "language": "中文",
+      "type": "古风、国风",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=6",
+      "sing_count": 1,
+      "status_labels": "歌回",
+      "last_sing_at": "2026-09-03",
+      "row_key": "东风志"
+    },
+    "sourceId": 429459016,
+    "sourcePath": "sources/429459016.json",
+    "sourceUrl": "https://music.163.com/#/song?id=429459016",
+    "selected": {
+      "id": 429459016,
+      "name": "东风志",
+      "artists": [
+        "Aki阿杰"
+      ],
+      "album": "东风志",
+      "durationMs": 271517,
+      "titleScore": 1,
+      "artistMatch": false,
+      "score": 0.8
+    },
+    "timedLineCount": 42
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-126-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 274.389,
+    "sourceFirstLine": {
+      "t": 1.73,
+      "text": "编曲/混音：@灰原穷_"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 2.76,
+      "endSeconds": 3.54,
+      "similarity": 0.0,
+      "recognizedText": "你",
+      "meanProbability": 0.767,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

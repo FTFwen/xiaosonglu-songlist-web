@@ -1,0 +1,192 @@
+{
+  "schemaVersion": 1,
+  "key": "song-105",
+  "songId": 105,
+  "songName": "临川浮梦",
+  "rowKey": "临川浮梦",
+  "displaySongName": "临川浮梦",
+  "artist": "忘川风华录 / 赤羽、星尘",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "弹幕 01:02:30「临川浮梦」点名 + 01:03:00「xsl戏腔好绝」→ 忘川风华录 2023-01-13 投稿 Synthesizer V 中文原创（赤羽/星尘演唱，传说曲），国风戏腔与弹幕反应吻合。 2026-08-29 2026-08-29 心灵火Flame合集补录：【小松绿Viridis】20260829 歌切 分P6（03:59）印证，置信度升至 0.9。",
+  "audio": {
+    "url": "assets/audio/song_100.m4a?v=c1b6abdfba52",
+    "sha256": "c1b6abdfba527d007669f071fb9cf7cf0a841fd4ad65704d8fd89c5c3a8e49ca"
+  },
+  "retrievedAt": "2026-11-16T04:02:49.965Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E4%B8%B4%E5%B7%9D%E6%B5%AE%E6%A2%A6&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E4%B8%B4%E5%B7%9D%E6%B5%AE%E6%A2%A6%20%E5%BF%98%E5%B7%9D%E9%A3%8E%E5%8D%8E%E5%BD%95%20%2F%20%E8%B5%A4%E7%BE%BD&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 2019526861,
+        "name": "临川浮梦",
+        "artists": [
+          "星尘",
+          "忘川风华录"
+        ],
+        "album": "临川浮梦",
+        "durationMs": 238724,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2016354722,
+        "name": "临川浮梦",
+        "artists": [
+          "茶了了"
+        ],
+        "album": "临川浮梦",
+        "durationMs": 238033,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2024881845,
+        "name": "临川浮梦",
+        "artists": [
+          "徵徵徵Apr",
+          "虞人"
+        ],
+        "album": "临川浮梦",
+        "durationMs": 239033,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2017999888,
+        "name": "临川浮梦",
+        "artists": [
+          "江陵"
+        ],
+        "album": "临川浮梦",
+        "durationMs": 238518,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2017392708,
+        "name": "临川浮梦",
+        "artists": [
+          "Lorien"
+        ],
+        "album": "临川浮梦",
+        "durationMs": 238823,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2019526991,
+        "name": "临川浮梦 伴奏",
+        "artists": [
+          "星尘",
+          "赤羽",
+          "忘川风华录"
+        ],
+        "album": "临川浮梦",
+        "durationMs": 238724,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      },
+      {
+        "id": 2636780239,
+        "name": "临川浮梦·守岸成蝶",
+        "artists": [
+          "落橘生秋",
+          "琲鸢Sayaka",
+          "班超BanC",
+          "赤羽",
+          "星尘infinity"
+        ],
+        "album": "《鸣潮》填词翻唱集",
+        "durationMs": 238518,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      },
+      {
+        "id": 2019296831,
+        "name": "临川浮梦 【男声】",
+        "artists": [
+          "初青"
+        ],
+        "album": "临川浮梦",
+        "durationMs": 237899,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      }
+    ],
+    "workQuery": {
+      "song_id": 105,
+      "song_name": "临川浮梦",
+      "show_as_song_name": "",
+      "display_song_name": "临川浮梦",
+      "artist": "忘川风华录 / 赤羽、星尘",
+      "artist_search": "忘川风华录 赤羽 星尘",
+      "feat_artist": "",
+      "remark": "弹幕 01:02:30「临川浮梦」点名 + 01:03:00「xsl戏腔好绝」→ 忘川风华录 2023-01-13 投稿 Synthesizer V 中文原创（赤羽/星尘演唱，传说曲），国风戏腔与弹幕反应吻合。 2026-08-29 2026-08-29 心灵火Flame合集补录：【小松绿Viridis】20260829 歌切 分P6（03:59）印证，置信度升至 0.9。",
+      "tone": "",
+      "language": "中文",
+      "type": "国风、中V",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1gm4C65Ey6/?p=6",
+      "sing_count": 1,
+      "status_labels": "歌回、自动识别待人工复核",
+      "last_sing_at": "2026-08-29",
+      "row_key": "临川浮梦"
+    },
+    "sourceId": 2019526861,
+    "sourcePath": "sources/2019526861.json",
+    "sourceUrl": "https://music.163.com/#/song?id=2019526861",
+    "selected": {
+      "id": 2019526861,
+      "name": "临川浮梦",
+      "artists": [
+        "星尘",
+        "忘川风华录"
+      ],
+      "album": "临川浮梦",
+      "durationMs": 238724,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 36
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-105-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 238.028,
+    "sourceFirstLine": {
+      "t": 1.286,
+      "text": "调教：瑞安Ryan"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 6.22,
+      "endSeconds": 7.62,
+      "similarity": 0.0,
+      "recognizedText": "不",
+      "meanProbability": 0.033,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

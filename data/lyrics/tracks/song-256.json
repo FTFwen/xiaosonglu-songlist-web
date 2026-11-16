@@ -1,0 +1,186 @@
+{
+  "schemaVersion": 1,
+  "key": "song-256",
+  "songId": 256,
+  "songName": "Grown-up's Paradise",
+  "rowKey": "Grown-up's Paradise",
+  "displaySongName": "Grown-up's Paradise",
+  "artist": "Mili, 塞壬唱片-MSR",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "",
+  "audio": {
+    "url": "assets/audio/song_255.m4a?v=f0806d947542",
+    "sha256": "f0806d9475421a9a9e250719beb31eefa714f51403886c456ac6d56762fc2028"
+  },
+  "retrievedAt": "2026-11-16T04:05:56.915Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=Grown-up's%20Paradise&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=Grown-up's%20Paradise%20Mili&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 2148397627,
+        "name": "Grown-up's Paradise",
+        "artists": [
+          "Mili",
+          "塞壬唱片-MSR"
+        ],
+        "album": "Grown-up's Paradise",
+        "durationMs": 241680,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 3382415121,
+        "name": "Grown-Up's Paradise",
+        "artists": [
+          "tofupudding",
+          "翎婉"
+        ],
+        "album": "Grown-up's Paradise",
+        "durationMs": 241846,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3381097252,
+        "name": "Grown-up's Paradise",
+        "artists": [
+          "莱妮娅Rynia"
+        ],
+        "album": "2024翻唱不完整合集",
+        "durationMs": 128888,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2677834772,
+        "name": "Grown-up's Paradise",
+        "artists": [
+          "沈安纾"
+        ],
+        "album": "Grown-up's Paradise",
+        "durationMs": 241763,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3348969119,
+        "name": "Grown-up's Paradise",
+        "artists": [
+          "lim"
+        ],
+        "album": "POLYTOPE.",
+        "durationMs": 241800,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3442131349,
+        "name": "Rendezvous",
+        "artists": [
+          "Mili"
+        ],
+        "album": "Rendezvous",
+        "durationMs": 208533,
+        "titleScore": 0,
+        "artistMatch": true,
+        "score": 0.2
+      },
+      {
+        "id": 1905978716,
+        "name": "游灵",
+        "artists": [
+          "Mili"
+        ],
+        "album": "SPii",
+        "durationMs": 126040,
+        "titleScore": 0,
+        "artistMatch": true,
+        "score": 0.2
+      },
+      {
+        "id": 1902751346,
+        "name": "你的思念",
+        "artists": [
+          "Mili"
+        ],
+        "album": "SPii",
+        "durationMs": 62418,
+        "titleScore": 0,
+        "artistMatch": true,
+        "score": 0.2
+      }
+    ],
+    "workQuery": {
+      "song_id": 256,
+      "song_name": "Grown-up's Paradise",
+      "show_as_song_name": "",
+      "display_song_name": "Grown-up's Paradise",
+      "artist": "Mili, 塞壬唱片-MSR",
+      "artist_search": "Mili, 塞壬唱片-MSR",
+      "feat_artist": "",
+      "remark": "",
+      "tone": "",
+      "language": "中文",
+      "type": "游戏（原曲Mili）",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1UkaS6zEk3/?p=6",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-02",
+      "row_key": "Grown-up's Paradise"
+    },
+    "sourceId": 2148397627,
+    "sourcePath": "sources/2148397627.json",
+    "sourceUrl": "https://music.163.com/#/song?id=2148397627",
+    "selected": {
+      "id": 2148397627,
+      "name": "Grown-up's Paradise",
+      "artists": [
+        "Mili",
+        "塞壬唱片-MSR"
+      ],
+      "album": "Grown-up's Paradise",
+      "durationMs": 241680,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 47
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-256-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 239.104,
+    "sourceFirstLine": {
+      "t": 9.708,
+      "text": "Do you recall?"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 4.24,
+      "endSeconds": 4.68,
+      "similarity": 0.0,
+      "recognizedText": "沒",
+      "meanProbability": 0.75,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

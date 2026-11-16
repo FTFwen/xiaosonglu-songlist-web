@@ -1,0 +1,615 @@
+{
+  "audioSha256": "72e8866877d17140c1b3287fe2b39a83396c4db94120f572d89dc09695b7905a",
+  "model": "whisper-base",
+  "start": 0,
+  "end": 35,
+  "result": {
+    "text": "我都想要看你我都想要看你从了解没有人曾感受我心愈白我被死了",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 27.679999999999996,
+        "end": 29.92,
+        "text": "我都想要看你",
+        "tokens": [
+          50364,
+          1654,
+          7182,
+          7093,
+          4275,
+          4200,
+          2166,
+          50464
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.18697213066948784,
+        "compression_ratio": 15.272727272727273,
+        "no_speech_prob": 0.6570770144462585,
+        "words": [
+          {
+            "word": "我",
+            "start": 27.679999999999996,
+            "end": 28.38,
+            "probability": 0.08024860918521881
+          },
+          {
+            "word": "都",
+            "start": 28.38,
+            "end": 28.58,
+            "probability": 0.03201634809374809
+          },
+          {
+            "word": "想",
+            "start": 28.58,
+            "end": 28.84,
+            "probability": 0.03910849615931511
+          },
+          {
+            "word": "要",
+            "start": 28.84,
+            "end": 29.28,
+            "probability": 0.00892094150185585
+          },
+          {
+            "word": "看",
+            "start": 29.28,
+            "end": 29.92,
+            "probability": 0.05366823449730873
+          },
+          {
+            "word": "你",
+            "start": 29.92,
+            "end": 29.92,
+            "probability": 0.1758069097995758
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "seek": 0,
+        "start": 29.92,
+        "end": 29.92,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.18697213066948784,
+        "compression_ratio": 15.272727272727273,
+        "no_speech_prob": 0.6570770144462585,
+        "words": []
+      },
+      {
+        "id": 2,
+        "seek": 0,
+        "start": 29.92,
+        "end": 29.92,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.18697213066948784,
+        "compression_ratio": 15.272727272727273,
+        "no_speech_prob": 0.6570770144462585,
+        "words": []
+      },
+      {
+        "id": 3,
+        "seek": 0,
+        "start": 29.92,
+        "end": 29.92,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.18697213066948784,
+        "compression_ratio": 15.272727272727273,
+        "no_speech_prob": 0.6570770144462585,
+        "words": []
+      },
+      {
+        "id": 4,
+        "seek": 0,
+        "start": 29.92,
+        "end": 29.92,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.18697213066948784,
+        "compression_ratio": 15.272727272727273,
+        "no_speech_prob": 0.6570770144462585,
+        "words": []
+      },
+      {
+        "id": 5,
+        "seek": 0,
+        "start": 29.92,
+        "end": 29.92,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.18697213066948784,
+        "compression_ratio": 15.272727272727273,
+        "no_speech_prob": 0.6570770144462585,
+        "words": []
+      },
+      {
+        "id": 6,
+        "seek": 0,
+        "start": 29.92,
+        "end": 29.92,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.18697213066948784,
+        "compression_ratio": 15.272727272727273,
+        "no_speech_prob": 0.6570770144462585,
+        "words": []
+      },
+      {
+        "id": 7,
+        "seek": 0,
+        "start": 29.92,
+        "end": 29.98,
+        "text": "我都想要看你",
+        "tokens": [
+          50764,
+          1654,
+          7182,
+          7093,
+          4275,
+          4200,
+          2166,
+          50814
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.18697213066948784,
+        "compression_ratio": 15.272727272727273,
+        "no_speech_prob": 0.6570770144462585,
+        "words": [
+          {
+            "word": "我",
+            "start": 29.92,
+            "end": 29.92,
+            "probability": 0.8208677172660828
+          },
+          {
+            "word": "都",
+            "start": 29.92,
+            "end": 29.98,
+            "probability": 0.9499517679214478
+          },
+          {
+            "word": "想",
+            "start": 29.98,
+            "end": 29.98,
+            "probability": 0.9974840879440308
+          },
+          {
+            "word": "要",
+            "start": 29.98,
+            "end": 29.98,
+            "probability": 0.9496262669563293
+          },
+          {
+            "word": "看",
+            "start": 29.98,
+            "end": 29.98,
+            "probability": 0.9766543507575989
+          },
+          {
+            "word": "你",
+            "start": 29.98,
+            "end": 29.98,
+            "probability": 0.9457360506057739
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "seek": 0,
+        "start": 29.98,
+        "end": 29.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.18697213066948784,
+        "compression_ratio": 15.272727272727273,
+        "no_speech_prob": 0.6570770144462585,
+        "words": []
+      },
+      {
+        "id": 9,
+        "seek": 0,
+        "start": 29.98,
+        "end": 29.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.18697213066948784,
+        "compression_ratio": 15.272727272727273,
+        "no_speech_prob": 0.6570770144462585,
+        "words": []
+      },
+      {
+        "id": 10,
+        "seek": 0,
+        "start": 29.98,
+        "end": 29.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.18697213066948784,
+        "compression_ratio": 15.272727272727273,
+        "no_speech_prob": 0.6570770144462585,
+        "words": []
+      },
+      {
+        "id": 11,
+        "seek": 0,
+        "start": 29.98,
+        "end": 29.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.18697213066948784,
+        "compression_ratio": 15.272727272727273,
+        "no_speech_prob": 0.6570770144462585,
+        "words": []
+      },
+      {
+        "id": 12,
+        "seek": 0,
+        "start": 29.98,
+        "end": 29.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.18697213066948784,
+        "compression_ratio": 15.272727272727273,
+        "no_speech_prob": 0.6570770144462585,
+        "words": []
+      },
+      {
+        "id": 13,
+        "seek": 0,
+        "start": 29.98,
+        "end": 29.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.18697213066948784,
+        "compression_ratio": 15.272727272727273,
+        "no_speech_prob": 0.6570770144462585,
+        "words": []
+      },
+      {
+        "id": 14,
+        "seek": 0,
+        "start": 29.98,
+        "end": 29.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.18697213066948784,
+        "compression_ratio": 15.272727272727273,
+        "no_speech_prob": 0.6570770144462585,
+        "words": []
+      },
+      {
+        "id": 15,
+        "seek": 0,
+        "start": 29.98,
+        "end": 29.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.18697213066948784,
+        "compression_ratio": 15.272727272727273,
+        "no_speech_prob": 0.6570770144462585,
+        "words": []
+      },
+      {
+        "id": 16,
+        "seek": 0,
+        "start": 29.98,
+        "end": 29.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.18697213066948784,
+        "compression_ratio": 15.272727272727273,
+        "no_speech_prob": 0.6570770144462585,
+        "words": []
+      },
+      {
+        "id": 17,
+        "seek": 0,
+        "start": 29.98,
+        "end": 29.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.18697213066948784,
+        "compression_ratio": 15.272727272727273,
+        "no_speech_prob": 0.6570770144462585,
+        "words": []
+      },
+      {
+        "id": 18,
+        "seek": 0,
+        "start": 29.98,
+        "end": 29.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.18697213066948784,
+        "compression_ratio": 15.272727272727273,
+        "no_speech_prob": 0.6570770144462585,
+        "words": []
+      },
+      {
+        "id": 19,
+        "seek": 0,
+        "start": 29.98,
+        "end": 29.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.18697213066948784,
+        "compression_ratio": 15.272727272727273,
+        "no_speech_prob": 0.6570770144462585,
+        "words": []
+      },
+      {
+        "id": 20,
+        "seek": 0,
+        "start": 29.98,
+        "end": 29.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.18697213066948784,
+        "compression_ratio": 15.272727272727273,
+        "no_speech_prob": 0.6570770144462585,
+        "words": []
+      },
+      {
+        "id": 21,
+        "seek": 0,
+        "start": 29.98,
+        "end": 29.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.18697213066948784,
+        "compression_ratio": 15.272727272727273,
+        "no_speech_prob": 0.6570770144462585,
+        "words": []
+      },
+      {
+        "id": 22,
+        "seek": 0,
+        "start": 29.98,
+        "end": 29.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.18697213066948784,
+        "compression_ratio": 15.272727272727273,
+        "no_speech_prob": 0.6570770144462585,
+        "words": []
+      },
+      {
+        "id": 23,
+        "seek": 0,
+        "start": 29.98,
+        "end": 29.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.18697213066948784,
+        "compression_ratio": 15.272727272727273,
+        "no_speech_prob": 0.6570770144462585,
+        "words": []
+      },
+      {
+        "id": 24,
+        "seek": 0,
+        "start": 29.98,
+        "end": 29.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.18697213066948784,
+        "compression_ratio": 15.272727272727273,
+        "no_speech_prob": 0.6570770144462585,
+        "words": []
+      },
+      {
+        "id": 25,
+        "seek": 0,
+        "start": 29.98,
+        "end": 29.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.18697213066948784,
+        "compression_ratio": 15.272727272727273,
+        "no_speech_prob": 0.6570770144462585,
+        "words": []
+      },
+      {
+        "id": 26,
+        "seek": 0,
+        "start": 29.98,
+        "end": 29.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.18697213066948784,
+        "compression_ratio": 15.272727272727273,
+        "no_speech_prob": 0.6570770144462585,
+        "words": []
+      },
+      {
+        "id": 27,
+        "seek": 0,
+        "start": 29.98,
+        "end": 29.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.18697213066948784,
+        "compression_ratio": 15.272727272727273,
+        "no_speech_prob": 0.6570770144462585,
+        "words": []
+      },
+      {
+        "id": 28,
+        "seek": 3000,
+        "start": 30.0,
+        "end": 34.0,
+        "text": "从了解没有人曾感受我心愈白",
+        "tokens": [
+          50364,
+          35630,
+          2289,
+          17278,
+          17944,
+          4035,
+          43801,
+          9709,
+          23151,
+          1654,
+          7945,
+          4820,
+          230,
+          13558,
+          50566
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.8376263705166903,
+        "compression_ratio": 0.8225806451612904,
+        "no_speech_prob": 0.805216908454895,
+        "words": [
+          {
+            "word": "从",
+            "start": 30.0,
+            "end": 30.22,
+            "probability": 0.010849758982658386
+          },
+          {
+            "word": "了",
+            "start": 30.22,
+            "end": 30.5,
+            "probability": 0.7302126884460449
+          },
+          {
+            "word": "解",
+            "start": 30.5,
+            "end": 30.82,
+            "probability": 0.8873480558395386
+          },
+          {
+            "word": "没有",
+            "start": 30.82,
+            "end": 31.26,
+            "probability": 0.752461314201355
+          },
+          {
+            "word": "人",
+            "start": 31.26,
+            "end": 31.52,
+            "probability": 0.9892198443412781
+          },
+          {
+            "word": "曾",
+            "start": 31.52,
+            "end": 31.78,
+            "probability": 0.22184394299983978
+          },
+          {
+            "word": "感",
+            "start": 31.78,
+            "end": 32.18,
+            "probability": 0.8703925013542175
+          },
+          {
+            "word": "受",
+            "start": 32.18,
+            "end": 32.52,
+            "probability": 0.965785026550293
+          },
+          {
+            "word": "我",
+            "start": 32.52,
+            "end": 32.96,
+            "probability": 0.9774755239486694
+          },
+          {
+            "word": "心",
+            "start": 32.96,
+            "end": 33.34,
+            "probability": 0.7503592371940613
+          },
+          {
+            "word": "愈",
+            "start": 33.34,
+            "end": 33.76,
+            "probability": 0.5208579301834106
+          },
+          {
+            "word": "白",
+            "start": 33.76,
+            "end": 34.0,
+            "probability": 0.33507704734802246
+          }
+        ]
+      },
+      {
+        "id": 29,
+        "seek": 3000,
+        "start": 34.0,
+        "end": 34.88,
+        "text": "我被死了",
+        "tokens": [
+          50566,
+          1654,
+          23238,
+          16989,
+          2289,
+          50616
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.8376263705166903,
+        "compression_ratio": 0.8225806451612904,
+        "no_speech_prob": 0.805216908454895,
+        "words": [
+          {
+            "word": "我",
+            "start": 34.0,
+            "end": 34.32,
+            "probability": 0.34821316599845886
+          },
+          {
+            "word": "被",
+            "start": 34.32,
+            "end": 34.52,
+            "probability": 0.9479271173477173
+          },
+          {
+            "word": "死",
+            "start": 34.52,
+            "end": 34.72,
+            "probability": 0.4881804585456848
+          },
+          {
+            "word": "了",
+            "start": 34.72,
+            "end": 34.88,
+            "probability": 0.06459114700555801
+          }
+        ]
+      }
+    ],
+    "language": "zh"
+  }
+}

@@ -1,0 +1,188 @@
+{
+  "schemaVersion": 1,
+  "key": "song-123",
+  "songId": 123,
+  "songName": "别找我麻烦",
+  "rowKey": "别找我麻烦",
+  "displaySongName": "别找我麻烦",
+  "artist": "蔡健雅",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "2026-09-03「也许康复的随便唱唱」21点场；歌切合集【桐人今天睡大觉】【小松绿Viridis】随便唱唱的歌回 歌切合集 2026.09.03 分P3（04:11）。蔡健雅《说到爱》专辑经典（Bossanova 风）。",
+  "audio": {
+    "url": "assets/audio/song_122.m4a?v=6a58c1759867",
+    "sha256": "6a58c17598671b84b547e9b58584c3e02875b4489cd3355627ad4e8397a76bc0"
+  },
+  "retrievedAt": "2026-11-16T04:02:26.892Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E5%88%AB%E6%89%BE%E6%88%91%E9%BA%BB%E7%83%A6&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E5%88%AB%E6%89%BE%E6%88%91%E9%BA%BB%E7%83%A6%20%E8%94%A1%E5%81%A5%E9%9B%85&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 208889,
+        "name": "别找我麻烦",
+        "artists": [
+          "蔡健雅"
+        ],
+        "album": "说到爱",
+        "durationMs": 248493,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 38018396,
+        "name": "别找我麻烦",
+        "artists": [
+          "蔡健雅"
+        ],
+        "album": "隐藏的歌手 第八期",
+        "durationMs": 257365,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 477332980,
+        "name": "别找我麻烦",
+        "artists": [
+          "蔡健雅",
+          "亚森",
+          "Sby",
+          "申申&小鱼籽"
+        ],
+        "album": "我想和你唱 第二季 第3期",
+        "durationMs": 228345,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2704506820,
+        "name": "别找我麻烦",
+        "artists": [
+          "赵乃吉"
+        ],
+        "album": "乃吉的翻唱集（持续更新中）",
+        "durationMs": 70884,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3371392979,
+        "name": "别找我麻烦",
+        "artists": [
+          "i人的松弛角落"
+        ],
+        "album": "",
+        "durationMs": 248503,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2156793332,
+        "name": "别找我麻烦",
+        "artists": [
+          "布朗尼"
+        ],
+        "album": "日落后的20分钟",
+        "durationMs": 208923,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 469065610,
+        "name": "别找我麻烦",
+        "artists": [
+          "金志文",
+          "高丽雯",
+          "千斤组合"
+        ],
+        "album": "厉害了！我的歌 第十一期",
+        "durationMs": 210618,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1340366324,
+        "name": "别找我麻烦",
+        "artists": [
+          "野生大大卷"
+        ],
+        "album": "26",
+        "durationMs": 246164,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 123,
+      "song_name": "别找我麻烦",
+      "show_as_song_name": "",
+      "display_song_name": "别找我麻烦",
+      "artist": "蔡健雅",
+      "artist_search": "别找我麻烦 蔡健雅",
+      "feat_artist": "",
+      "remark": "2026-09-03「也许康复的随便唱唱」21点场；歌切合集【桐人今天睡大觉】【小松绿Viridis】随便唱唱的歌回 歌切合集 2026.09.03 分P3（04:11）。蔡健雅《说到爱》专辑经典（Bossanova 风）。",
+      "tone": "",
+      "language": "中文",
+      "type": "流行",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=3",
+      "sing_count": 1,
+      "status_labels": "歌回",
+      "last_sing_at": "2026-09-03",
+      "row_key": "别找我麻烦"
+    },
+    "sourceId": 208889,
+    "sourcePath": "sources/208889.json",
+    "sourceUrl": "https://music.163.com/#/song?id=208889",
+    "selected": {
+      "id": 208889,
+      "name": "别找我麻烦",
+      "artists": [
+        "蔡健雅"
+      ],
+      "album": "说到爱",
+      "durationMs": 248493,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 46
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-123-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 248.747,
+    "sourceFirstLine": {
+      "t": 9.85,
+      "text": "是故意的吗"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 23.86,
+      "endSeconds": 24.38,
+      "similarity": 0.0,
+      "recognizedText": "作",
+      "meanProbability": 0.005,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

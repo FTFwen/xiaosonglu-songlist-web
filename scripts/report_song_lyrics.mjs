@@ -1,0 +1,26 @@
+import fs from 'node:fs';
+import path from 'node:path';
+const dir='data/lyrics';const tracks=fs.readdirSync(path.join(dir,'tracks')).filter(x=>x.endsWith('.json')).map(x=>JSON.parse(fs.readFileSync(path.join(dir,'tracks',x),'utf8')));
+const counts=(f)=>Object.fromEntries([...new Set(tracks.map(f))].sort().map(s=>[s,tracks.filter(x=>f(x)===s).length]));
+const save=(p,v)=>fs.writeFileSync(p,JSON.stringify(v,null,2)+'\n');
+import { currentTracks } from './validate_lyrics.mjs';
+const inventory=currentTracks(process.cwd());
+const expected=inventory.length;
+if(tracks.length!==expected || inventory.some(x=>!tracks.some(t=>t.key===x.key)))throw Error('Current lyric inventory is incomplete');
+const summary={schemaVersion:1,generatedAt:new Date().toISOString(),expected,processed:tracks.length,matchCounts:counts(x=>x.match.status),alignmentCounts:counts(x=>x.alignment.status),withAudio:tracks.filter(x=>x.audio.sha256).length,withTimedSource:tracks.filter(x=>x.match.timedLineCount>=3).length,humanVerified:tracks.filter(x=>x.alignment.humanVerified).length,syncReady:0,notes:['matched means title/artist heuristic, not manual verification','No live/synth audio marked human verified','Pending, wrong-language and ambiguous versions must never be rendered as verified synchronized lyrics']};
+summary.workMatched=tracks.filter(x=>x.match.status==='matched'&&x.match.timedLineCount>=3).length;
+summary.unresolvedTimedSources=summary.withTimedSource-summary.workMatched;
+summary.asrConsistentDrafts=tracks.filter(x=>x.match.status==='matched'&&x.alignment.status==='asr_consistent_draft').length;
+summary.notes.push('withTimedSource includes unresolved candidates and version-review sources; use workMatched for accepted work-level matches');
+const manifest={...summary,scope:'current catalog + built-in derivatives; excludes browser-local imports',count:expected,tracks:tracks.map(x=>({key:x.key,songId:x.songId,songName:x.songName,path:'tracks/'+x.key+'.json',matchStatus:x.match.status,alignmentStatus:x.alignment.status,sourceId:x.match.sourceId||null,audioSha256:x.audio.sha256}))};save(path.join(dir,'index.json'),manifest);save(path.join(dir,'coverage.json'),summary);
+fs.mkdirSync(path.join(dir,'draft-lrc'),{recursive:true});
+const eligible=new Set(tracks.filter(x=>x.alignment.status==='asr_consistent_draft'&&x.match.status==='matched').map(x=>x.key+'.lrc'));
+const draftDir=path.resolve(dir,'draft-lrc');
+for(const name of fs.readdirSync(draftDir)){if(/^(song|derivative)-\d+\.lrc$/.test(name)&&!eligible.has(name))fs.unlinkSync(path.join(draftDir,name));}
+save(path.join(dir,'review-queue.json'),tracks.filter(x=>x.match.status!=='matched'||x.alignment.status!=='asr_consistent_draft').map(x=>({key:x.key,songName:x.songName,artist:x.artist,matchStatus:x.match.status,alignmentStatus:x.alignment.status,sourceId:x.match.sourceId||null,reason:x.match.review?.reason||x.alignment.caveat||x.match.error||x.match.status,offsetSeconds:x.alignment.offsetSeconds})));
+
+for(const x of tracks){if(x.alignment.status!=='asr_consistent_draft'||x.match.status!=='matched')continue;const source=JSON.parse(fs.readFileSync(path.join(dir,x.match.sourcePath),'utf8'));const off=x.alignment.offsetSeconds;const rows=source.lines.filter(l=>! /^(作[词曲]|编曲|制作|词|曲|混音|歌手|演唱|出品)\s*[:：]/u.test(l.text));
+const lrc=['[ti:'+x.songName+']','[by:UNVERIFIED ASR DRAFT; audio sha256 '+x.audio.sha256+']',...rows.map(l=>{const ms=Math.max(0,Math.round((l.t+off)*1000)),sec=Math.floor(ms/1000),min=Math.floor(sec/60);return '['+String(min).padStart(2,'0')+':'+String(sec%60).padStart(2,'0')+'.'+String(ms%1000).padStart(3,'0')+']'+l.text;})].join('\n')+'\n';fs.writeFileSync(path.join(dir,'draft-lrc',x.key+'.lrc'),lrc);}
+const cell=s=>String(s??'').replace(/\|/g,'\\|').replace(/[\r\n]/g,' ');
+const lines=['# 当前曲库歌词对应报告','','此目录是网页歌词功能的数据准备。没有修改网页，没有部署。','',`共 ${tracks.length}/${expected} 条；取得带时间戳来源 ${summary.withTimedSource} 条；有本地音频 ${summary.withAudio} 条；人工确认 ${summary.humanVerified} 条。`,'',`其中作品层面对应 ${summary.workMatched} 条；待核验的时间歌词来源 ${summary.unresolvedTimedSources} 条。上述来源数包含歧义及版本待核验，不能视为同步覆盖率。`,`首句及中尾机器检查一致的草稿 ${summary.asrConsistentDrafts} 条；人工听审与可确认上线的同步歌词仍为 0 条。`,'','## 来源匹配统计','',...Object.entries(summary.matchCounts).map(([k,v])=>`- ${k}: ${v}`),'','## 音频校准统计','',...Object.entries(summary.alignmentCounts).map(([k,v])=>`- ${k}: ${v}`),'','## 使用约定','','- index.json 为完整行身份索引。使用 key/songId/rowKey，禁止仅按去后缀歌名合并。','- tracks/ 的 sourceId 指向 sources/ 平台原始 LRC、翻译和原文时间轴。原文保持不变。','- match.status=matched 仅表示题名和艺术家启发式对应；不等于人工确认。','- alignment.offsetSeconds 是本地音频首句减源首句。只允许加到该 audio.sha256 绑定的音频。','- asr_consistent_draft 表示首句与两个不同中尾抽样候选满足阈值，仍不是人工听审。','- draft-lrc/ 仅导出来源 matched 且 asr_consistent_draft 的未确认草稿。所有其它条目不生成伪装成已对齐的 LRC。','- version_review_required 不能自动显示成正确歌词；中文填词不能用日文原曲替代。','- 没有音频、平台下架、同名歧义、漏句、变速、半首和重唱各自保留待核验原因。','- 二创白烁为制作人；声库1.0/1.1不作为歌曲版本。','- evidence/ 为识别模型与窗口、音频哈希、逐词概率和时间戳证据。','', '## 逐条状态','','|Key|歌曲|来源|匹配|音频校准|偏移秒|','|---|---|---|---|---|---|',...tracks.map(x=>`|${x.key}|${cell(x.songName)}|${x.match.sourceId?`[网易云 ${x.match.sourceId}](${x.match.sourceUrl})`:'—'}|${x.match.status}|${x.alignment.status}|${x.alignment.offsetSeconds??'—'}|`)];
+fs.writeFileSync(path.join(dir,'REPORT.md'),lines.join('\n')+'\n');console.log(JSON.stringify(summary,null,2));

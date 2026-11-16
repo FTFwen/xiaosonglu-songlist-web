@@ -1,0 +1,183 @@
+{
+  "schemaVersion": 1,
+  "key": "song-49",
+  "songId": 49,
+  "songName": "世界は恋に落ちている",
+  "rowKey": "世界は恋に落ちている",
+  "displaySongName": "世界は恋に落ちている",
+  "artist": "CHiCO with HoneyWorks",
+  "language": "日文",
+  "derivative": false,
+  "edition": "",
+  "remark": "来自 2026-08-18 小唱一会儿聊回放前段。6-9 分钟切片前半仍有试音和调音量，但后半连续命中“世界は恋に落ちている”“光の矢胸を射す”“君をわかりたいんだよ”等高辨识度句群，与 CHiCO with HoneyWorks《世界は恋に落ちている》高度重合，可先入库并保留人工复核标签。",
+  "audio": {
+    "url": "assets/audio/song_47.m4a?v=5969631361c2",
+    "sha256": "5969631361c206e3cb3809900b0d9c4259516e5eb5f6e40a0c1d2bb9a5b7b8c7"
+  },
+  "retrievedAt": "2026-11-16T04:03:08.819Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E4%B8%96%E7%95%8C%E3%81%AF%E6%81%8B%E3%81%AB%E8%90%BD%E3%81%A1%E3%81%A6%E3%81%84%E3%82%8B&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E4%B8%96%E7%95%8C%E3%81%AF%E6%81%8B%E3%81%AB%E8%90%BD%E3%81%A1%E3%81%A6%E3%81%84%E3%82%8B%20CHiCO%20with%20HoneyWorks&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 28891491,
+        "name": "世界は恋に落ちている",
+        "artists": [
+          "CHiCO with HoneyWorks"
+        ],
+        "album": "世界は恋に落ちている",
+        "durationMs": 311356,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 36841047,
+        "name": "世界は恋に落ちている",
+        "artists": [
+          "CHiCO with HoneyWorks"
+        ],
+        "album": "世界はiに満ちている",
+        "durationMs": 312888,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 3358072149,
+        "name": "世界は恋に落ちている",
+        "artists": [
+          "CHiCO with HoneyWorks"
+        ],
+        "album": "i BEST -Singles Collection-",
+        "durationMs": 312626,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2742175782,
+        "name": "世界は恋に落ちている",
+        "artists": [
+          "CHiCO with HoneyWorks"
+        ],
+        "album": "CHiCO with HoneyWorks 2019.08.06 \"LiVE 5's ON !!-0806-\" at Zepp Tokyo",
+        "durationMs": 311293,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2742175761,
+        "name": "世界は恋に落ちている",
+        "artists": [
+          "CHiCO with HoneyWorks"
+        ],
+        "album": "CHiCO with HoneyWorks 2018.03.16 \"i contact\" at 日本武道館",
+        "durationMs": 311293,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2740917986,
+        "name": "世界は恋に落ちている",
+        "artists": [
+          "CHiCO with HoneyWorks"
+        ],
+        "album": "CHiCO with HoneyWorks 2023.4.8 \"iは自由で、縛れない。\" at Zepp Nagoya",
+        "durationMs": 311293,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 3355339386,
+        "name": "世界は恋に落ちている",
+        "artists": [
+          "高嶺のなでしこ"
+        ],
+        "album": "世界は恋に落ちている",
+        "durationMs": 312226,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 454224294,
+        "name": "世界は恋に落ちている",
+        "artists": [
+          "柊優花"
+        ],
+        "album": "柊 優花 翻唱集",
+        "durationMs": 321096,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 49,
+      "song_name": "世界は恋に落ちている",
+      "show_as_song_name": "",
+      "display_song_name": "世界は恋に落ちている",
+      "artist": "CHiCO with HoneyWorks",
+      "artist_search": "CHiCO with HoneyWorks HoneyWorks",
+      "feat_artist": "",
+      "remark": "来自 2026-08-18 小唱一会儿聊回放前段。6-9 分钟切片前半仍有试音和调音量，但后半连续命中“世界は恋に落ちている”“光の矢胸を射す”“君をわかりたいんだよ”等高辨识度句群，与 CHiCO with HoneyWorks《世界は恋に落ちている》高度重合，可先入库并保留人工复核标签。",
+      "tone": "",
+      "language": "日文",
+      "type": "动漫、J-Pop",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1rv8V6DExk/",
+      "sing_count": 1,
+      "status_labels": "歌回、自动识别待人工复核",
+      "last_sing_at": "2026-08-18",
+      "row_key": "世界は恋に落ちている"
+    },
+    "sourceId": 28891491,
+    "sourcePath": "sources/28891491.json",
+    "sourceUrl": "https://music.163.com/#/song?id=28891491",
+    "selected": {
+      "id": 28891491,
+      "name": "世界は恋に落ちている",
+      "artists": [
+        "CHiCO with HoneyWorks"
+      ],
+      "album": "世界は恋に落ちている",
+      "durationMs": 311356,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 62
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-49-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 311.449,
+    "sourceFirstLine": {
+      "t": 3.4,
+      "text": "光の矢 胸を射す"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 4.06,
+      "endSeconds": 5.46,
+      "similarity": 0.0,
+      "recognizedText": "お",
+      "meanProbability": 0.001,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "ja",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

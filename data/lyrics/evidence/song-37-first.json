@@ -1,0 +1,512 @@
+{
+  "audioSha256": "8bac8ac98a62667846a65a62f5d76ecea90e459613afdca3fe26ed6ec2b6fa2b",
+  "model": "whisper-base",
+  "start": 0,
+  "end": 44.17,
+  "result": {
+    "text": "我会不会有什么好事我会不会有什么好事我会不会有什么好事我会不会有什么好事我会不会有什么好事我会不会有什么好事",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 22.56,
+        "end": 23.2,
+        "text": "我会不会有什么好事",
+        "tokens": [
+          50364,
+          1654,
+          12949,
+          47928,
+          2412,
+          10440,
+          2131,
+          6973,
+          50464
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.3346177637577057,
+        "compression_ratio": 9.21951219512195,
+        "no_speech_prob": 0.6974925994873047,
+        "words": [
+          {
+            "word": "我",
+            "start": 22.56,
+            "end": 23.2,
+            "probability": 0.031031925231218338
+          },
+          {
+            "word": "会",
+            "start": 23.2,
+            "end": 23.2,
+            "probability": 0.015684824436903
+          },
+          {
+            "word": "不会",
+            "start": 23.2,
+            "end": 23.2,
+            "probability": 0.05262089893221855
+          },
+          {
+            "word": "有",
+            "start": 23.2,
+            "end": 23.2,
+            "probability": 0.033324625343084335
+          },
+          {
+            "word": "什么",
+            "start": 23.2,
+            "end": 23.2,
+            "probability": 0.04217865690588951
+          },
+          {
+            "word": "好",
+            "start": 23.2,
+            "end": 23.2,
+            "probability": 0.13042068481445312
+          },
+          {
+            "word": "事",
+            "start": 23.2,
+            "end": 23.2,
+            "probability": 0.059673842042684555
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "seek": 0,
+        "start": 23.2,
+        "end": 23.2,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.3346177637577057,
+        "compression_ratio": 9.21951219512195,
+        "no_speech_prob": 0.6974925994873047,
+        "words": []
+      },
+      {
+        "id": 2,
+        "seek": 0,
+        "start": 23.2,
+        "end": 23.2,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.3346177637577057,
+        "compression_ratio": 9.21951219512195,
+        "no_speech_prob": 0.6974925994873047,
+        "words": []
+      },
+      {
+        "id": 3,
+        "seek": 0,
+        "start": 23.2,
+        "end": 23.2,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.3346177637577057,
+        "compression_ratio": 9.21951219512195,
+        "no_speech_prob": 0.6974925994873047,
+        "words": []
+      },
+      {
+        "id": 4,
+        "seek": 0,
+        "start": 23.2,
+        "end": 23.2,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.3346177637577057,
+        "compression_ratio": 9.21951219512195,
+        "no_speech_prob": 0.6974925994873047,
+        "words": []
+      },
+      {
+        "id": 5,
+        "seek": 0,
+        "start": 23.2,
+        "end": 23.2,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.3346177637577057,
+        "compression_ratio": 9.21951219512195,
+        "no_speech_prob": 0.6974925994873047,
+        "words": []
+      },
+      {
+        "id": 6,
+        "seek": 0,
+        "start": 23.2,
+        "end": 23.2,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.3346177637577057,
+        "compression_ratio": 9.21951219512195,
+        "no_speech_prob": 0.6974925994873047,
+        "words": []
+      },
+      {
+        "id": 7,
+        "seek": 0,
+        "start": 23.2,
+        "end": 23.22,
+        "text": "我会不会有什么好事",
+        "tokens": [
+          51064,
+          1654,
+          12949,
+          47928,
+          2412,
+          10440,
+          2131,
+          6973,
+          51164
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.3346177637577057,
+        "compression_ratio": 9.21951219512195,
+        "no_speech_prob": 0.6974925994873047,
+        "words": [
+          {
+            "word": "我",
+            "start": 23.2,
+            "end": 23.2,
+            "probability": 0.8800257444381714
+          },
+          {
+            "word": "会",
+            "start": 23.2,
+            "end": 23.2,
+            "probability": 0.9649878144264221
+          },
+          {
+            "word": "不会",
+            "start": 23.2,
+            "end": 23.2,
+            "probability": 0.9878525733947754
+          },
+          {
+            "word": "有",
+            "start": 23.2,
+            "end": 23.2,
+            "probability": 0.9245410561561584
+          },
+          {
+            "word": "什么",
+            "start": 23.2,
+            "end": 23.2,
+            "probability": 0.9497362375259399
+          },
+          {
+            "word": "好",
+            "start": 23.2,
+            "end": 23.22,
+            "probability": 0.973747968673706
+          },
+          {
+            "word": "事",
+            "start": 23.22,
+            "end": 23.22,
+            "probability": 0.9694377779960632
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "seek": 0,
+        "start": 23.22,
+        "end": 23.24,
+        "text": "我会不会有什么好事",
+        "tokens": [
+          51164,
+          1654,
+          12949,
+          47928,
+          2412,
+          10440,
+          2131,
+          6973,
+          51264
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.3346177637577057,
+        "compression_ratio": 9.21951219512195,
+        "no_speech_prob": 0.6974925994873047,
+        "words": [
+          {
+            "word": "我",
+            "start": 23.22,
+            "end": 23.22,
+            "probability": 0.8897528648376465
+          },
+          {
+            "word": "会",
+            "start": 23.22,
+            "end": 23.22,
+            "probability": 0.9661444425582886
+          },
+          {
+            "word": "不会",
+            "start": 23.22,
+            "end": 23.24,
+            "probability": 0.9881811141967773
+          },
+          {
+            "word": "有",
+            "start": 23.24,
+            "end": 23.24,
+            "probability": 0.9000364542007446
+          },
+          {
+            "word": "什么",
+            "start": 23.24,
+            "end": 23.24,
+            "probability": 0.955829381942749
+          },
+          {
+            "word": "好",
+            "start": 23.24,
+            "end": 23.24,
+            "probability": 0.9729323387145996
+          },
+          {
+            "word": "事",
+            "start": 23.24,
+            "end": 23.24,
+            "probability": 0.9686992168426514
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "seek": 0,
+        "start": 23.24,
+        "end": 23.24,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.3346177637577057,
+        "compression_ratio": 9.21951219512195,
+        "no_speech_prob": 0.6974925994873047,
+        "words": []
+      },
+      {
+        "id": 10,
+        "seek": 0,
+        "start": 23.24,
+        "end": 23.24,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.3346177637577057,
+        "compression_ratio": 9.21951219512195,
+        "no_speech_prob": 0.6974925994873047,
+        "words": []
+      },
+      {
+        "id": 11,
+        "seek": 0,
+        "start": 23.24,
+        "end": 24.52,
+        "text": "我会不会有什么好事",
+        "tokens": [
+          51464,
+          1654,
+          12949,
+          47928,
+          2412,
+          10440,
+          2131,
+          6973,
+          51564
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.3346177637577057,
+        "compression_ratio": 9.21951219512195,
+        "no_speech_prob": 0.6974925994873047,
+        "words": [
+          {
+            "word": "我",
+            "start": 23.24,
+            "end": 23.24,
+            "probability": 0.902633011341095
+          },
+          {
+            "word": "会",
+            "start": 23.24,
+            "end": 23.24,
+            "probability": 0.9750926494598389
+          },
+          {
+            "word": "不会",
+            "start": 23.24,
+            "end": 23.68,
+            "probability": 0.9848086833953857
+          },
+          {
+            "word": "有",
+            "start": 23.68,
+            "end": 23.68,
+            "probability": 0.9635631442070007
+          },
+          {
+            "word": "什么",
+            "start": 23.68,
+            "end": 23.7,
+            "probability": 0.9680827260017395
+          },
+          {
+            "word": "好",
+            "start": 23.7,
+            "end": 24.52,
+            "probability": 0.976588249206543
+          },
+          {
+            "word": "事",
+            "start": 24.52,
+            "end": 24.52,
+            "probability": 0.9755950570106506
+          }
+        ]
+      },
+      {
+        "id": 12,
+        "seek": 0,
+        "start": 24.52,
+        "end": 25.36,
+        "text": "我会不会有什么好事",
+        "tokens": [
+          51564,
+          1654,
+          12949,
+          47928,
+          2412,
+          10440,
+          2131,
+          6973,
+          51664
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.3346177637577057,
+        "compression_ratio": 9.21951219512195,
+        "no_speech_prob": 0.6974925994873047,
+        "words": [
+          {
+            "word": "我",
+            "start": 24.52,
+            "end": 24.52,
+            "probability": 0.9027752876281738
+          },
+          {
+            "word": "会",
+            "start": 24.52,
+            "end": 24.52,
+            "probability": 0.9773140549659729
+          },
+          {
+            "word": "不会",
+            "start": 24.52,
+            "end": 24.98,
+            "probability": 0.9843251705169678
+          },
+          {
+            "word": "有",
+            "start": 24.98,
+            "end": 24.98,
+            "probability": 0.9672661423683167
+          },
+          {
+            "word": "什么",
+            "start": 24.98,
+            "end": 25.1,
+            "probability": 0.9703697562217712
+          },
+          {
+            "word": "好",
+            "start": 25.1,
+            "end": 25.36,
+            "probability": 0.9782959818840027
+          },
+          {
+            "word": "事",
+            "start": 25.36,
+            "end": 25.36,
+            "probability": 0.9783793687820435
+          }
+        ]
+      },
+      {
+        "id": 13,
+        "seek": 0,
+        "start": 25.36,
+        "end": 29.86,
+        "text": "我会不会有什么好事",
+        "tokens": [
+          51664,
+          1654,
+          12949,
+          47928,
+          2412,
+          10440,
+          2131,
+          6973,
+          51764
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.3346177637577057,
+        "compression_ratio": 9.21951219512195,
+        "no_speech_prob": 0.6974925994873047,
+        "words": [
+          {
+            "word": "我",
+            "start": 25.36,
+            "end": 25.36,
+            "probability": 0.9098742008209229
+          },
+          {
+            "word": "会",
+            "start": 25.36,
+            "end": 25.8,
+            "probability": 0.9775181412696838
+          },
+          {
+            "word": "不会",
+            "start": 25.8,
+            "end": 29.24,
+            "probability": 0.9822951555252075
+          },
+          {
+            "word": "有",
+            "start": 29.24,
+            "end": 29.24,
+            "probability": 0.9676328897476196
+          },
+          {
+            "word": "什么",
+            "start": 29.24,
+            "end": 29.24,
+            "probability": 0.9692443013191223
+          },
+          {
+            "word": "好",
+            "start": 29.24,
+            "end": 29.56,
+            "probability": 0.9747005105018616
+          },
+          {
+            "word": "事",
+            "start": 29.56,
+            "end": 29.86,
+            "probability": 0.9768975973129272
+          }
+        ]
+      }
+    ],
+    "language": "zh"
+  }
+}

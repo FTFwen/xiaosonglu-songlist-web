@@ -1,0 +1,921 @@
+{
+  "audioSha256": "3ab0401cdfa44af6f819ae0643badb3537b8bfbdddf178801864dad1cc5fb160",
+  "model": "whisper-base",
+  "start": 0,
+  "end": 35,
+  "result": {
+    "text": "あなたはあなたはあなたはあなたはあなたはあなたはあなたはあなたはあなたはあなたはあなたはあなたはあなたはあなたはあなたはあなたはあなたはあなたはあなたはあなたはあなたは変わってないんだね",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 6.339999999999999,
+        "end": 9.06,
+        "text": "あなたは",
+        "tokens": [
+          50364,
+          3590,
+          42847,
+          3065,
+          50464
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.24192769508662187,
+        "compression_ratio": 11.538461538461538,
+        "no_speech_prob": 0.01953197456896305,
+        "words": [
+          {
+            "word": "あ",
+            "start": 6.339999999999999,
+            "end": 6.94,
+            "probability": 0.025843704119324684
+          },
+          {
+            "word": "なた",
+            "start": 6.94,
+            "end": 7.34,
+            "probability": 0.20726102590560913
+          },
+          {
+            "word": "は",
+            "start": 7.34,
+            "end": 9.06,
+            "probability": 0.3577476739883423
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "seek": 0,
+        "start": 9.06,
+        "end": 12.78,
+        "text": "あなたは",
+        "tokens": [
+          50464,
+          3590,
+          42847,
+          3065,
+          50514
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.24192769508662187,
+        "compression_ratio": 11.538461538461538,
+        "no_speech_prob": 0.01953197456896305,
+        "words": [
+          {
+            "word": "あ",
+            "start": 9.06,
+            "end": 9.42,
+            "probability": 0.020637666806578636
+          },
+          {
+            "word": "なた",
+            "start": 9.42,
+            "end": 9.64,
+            "probability": 0.862350344657898
+          },
+          {
+            "word": "は",
+            "start": 9.64,
+            "end": 12.78,
+            "probability": 0.15946394205093384
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "seek": 0,
+        "start": 12.78,
+        "end": 13.12,
+        "text": "あなたは",
+        "tokens": [
+          50514,
+          3590,
+          42847,
+          3065,
+          50614
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.24192769508662187,
+        "compression_ratio": 11.538461538461538,
+        "no_speech_prob": 0.01953197456896305,
+        "words": [
+          {
+            "word": "あ",
+            "start": 12.78,
+            "end": 12.78,
+            "probability": 0.6497715711593628
+          },
+          {
+            "word": "なた",
+            "start": 12.78,
+            "end": 12.78,
+            "probability": 0.9966300129890442
+          },
+          {
+            "word": "は",
+            "start": 12.78,
+            "end": 13.12,
+            "probability": 0.6475399136543274
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "seek": 0,
+        "start": 13.12,
+        "end": 13.3,
+        "text": "あなたは",
+        "tokens": [
+          50614,
+          3590,
+          42847,
+          3065,
+          50664
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.24192769508662187,
+        "compression_ratio": 11.538461538461538,
+        "no_speech_prob": 0.01953197456896305,
+        "words": [
+          {
+            "word": "あ",
+            "start": 13.12,
+            "end": 13.12,
+            "probability": 0.979835033416748
+          },
+          {
+            "word": "なた",
+            "start": 13.12,
+            "end": 13.12,
+            "probability": 0.9951087832450867
+          },
+          {
+            "word": "は",
+            "start": 13.12,
+            "end": 13.3,
+            "probability": 0.8549801111221313
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "seek": 0,
+        "start": 13.3,
+        "end": 13.34,
+        "text": "あなたは",
+        "tokens": [
+          50664,
+          3590,
+          42847,
+          3065,
+          50714
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.24192769508662187,
+        "compression_ratio": 11.538461538461538,
+        "no_speech_prob": 0.01953197456896305,
+        "words": [
+          {
+            "word": "あ",
+            "start": 13.3,
+            "end": 13.3,
+            "probability": 0.9858684539794922
+          },
+          {
+            "word": "なた",
+            "start": 13.3,
+            "end": 13.3,
+            "probability": 0.9925528168678284
+          },
+          {
+            "word": "は",
+            "start": 13.3,
+            "end": 13.34,
+            "probability": 0.9101027250289917
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "seek": 0,
+        "start": 13.34,
+        "end": 15.02,
+        "text": "あなたは",
+        "tokens": [
+          50714,
+          3590,
+          42847,
+          3065,
+          50764
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.24192769508662187,
+        "compression_ratio": 11.538461538461538,
+        "no_speech_prob": 0.01953197456896305,
+        "words": [
+          {
+            "word": "あ",
+            "start": 13.34,
+            "end": 13.9,
+            "probability": 0.9857694506645203
+          },
+          {
+            "word": "なた",
+            "start": 13.9,
+            "end": 14.08,
+            "probability": 0.9882897138595581
+          },
+          {
+            "word": "は",
+            "start": 14.08,
+            "end": 15.02,
+            "probability": 0.9414348602294922
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "seek": 0,
+        "start": 15.02,
+        "end": 16.32,
+        "text": "あなたは",
+        "tokens": [
+          50764,
+          3590,
+          42847,
+          3065,
+          50814
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.24192769508662187,
+        "compression_ratio": 11.538461538461538,
+        "no_speech_prob": 0.01953197456896305,
+        "words": [
+          {
+            "word": "あ",
+            "start": 15.02,
+            "end": 15.02,
+            "probability": 0.9865708947181702
+          },
+          {
+            "word": "なた",
+            "start": 15.02,
+            "end": 15.68,
+            "probability": 0.9861652851104736
+          },
+          {
+            "word": "は",
+            "start": 15.68,
+            "end": 16.32,
+            "probability": 0.9599287509918213
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "seek": 0,
+        "start": 16.32,
+        "end": 17.52,
+        "text": "あなたは",
+        "tokens": [
+          50814,
+          3590,
+          42847,
+          3065,
+          50864
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.24192769508662187,
+        "compression_ratio": 11.538461538461538,
+        "no_speech_prob": 0.01953197456896305,
+        "words": [
+          {
+            "word": "あ",
+            "start": 16.32,
+            "end": 16.52,
+            "probability": 0.9881891012191772
+          },
+          {
+            "word": "なた",
+            "start": 16.52,
+            "end": 16.64,
+            "probability": 0.985365092754364
+          },
+          {
+            "word": "は",
+            "start": 16.64,
+            "end": 17.52,
+            "probability": 0.9690552353858948
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "seek": 0,
+        "start": 17.52,
+        "end": 17.72,
+        "text": "あなたは",
+        "tokens": [
+          50864,
+          3590,
+          42847,
+          3065,
+          50914
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.24192769508662187,
+        "compression_ratio": 11.538461538461538,
+        "no_speech_prob": 0.01953197456896305,
+        "words": [
+          {
+            "word": "あ",
+            "start": 17.52,
+            "end": 17.52,
+            "probability": 0.9874742031097412
+          },
+          {
+            "word": "なた",
+            "start": 17.52,
+            "end": 17.64,
+            "probability": 0.9792049527168274
+          },
+          {
+            "word": "は",
+            "start": 17.64,
+            "end": 17.72,
+            "probability": 0.9736703038215637
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "seek": 0,
+        "start": 17.72,
+        "end": 17.72,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.24192769508662187,
+        "compression_ratio": 11.538461538461538,
+        "no_speech_prob": 0.01953197456896305,
+        "words": []
+      },
+      {
+        "id": 10,
+        "seek": 0,
+        "start": 17.72,
+        "end": 18.42,
+        "text": "あなたは",
+        "tokens": [
+          50964,
+          3590,
+          42847,
+          3065,
+          51014
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.24192769508662187,
+        "compression_ratio": 11.538461538461538,
+        "no_speech_prob": 0.01953197456896305,
+        "words": [
+          {
+            "word": "あ",
+            "start": 17.72,
+            "end": 17.72,
+            "probability": 0.9881576895713806
+          },
+          {
+            "word": "なた",
+            "start": 17.72,
+            "end": 18.42,
+            "probability": 0.9804764986038208
+          },
+          {
+            "word": "は",
+            "start": 18.42,
+            "end": 18.42,
+            "probability": 0.9836982488632202
+          }
+        ]
+      },
+      {
+        "id": 11,
+        "seek": 0,
+        "start": 18.42,
+        "end": 18.42,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.24192769508662187,
+        "compression_ratio": 11.538461538461538,
+        "no_speech_prob": 0.01953197456896305,
+        "words": []
+      },
+      {
+        "id": 12,
+        "seek": 0,
+        "start": 18.42,
+        "end": 18.62,
+        "text": "あなたは",
+        "tokens": [
+          51064,
+          3590,
+          42847,
+          3065,
+          51114
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.24192769508662187,
+        "compression_ratio": 11.538461538461538,
+        "no_speech_prob": 0.01953197456896305,
+        "words": [
+          {
+            "word": "あ",
+            "start": 18.42,
+            "end": 18.42,
+            "probability": 0.9874495267868042
+          },
+          {
+            "word": "なた",
+            "start": 18.42,
+            "end": 18.58,
+            "probability": 0.9740197658538818
+          },
+          {
+            "word": "は",
+            "start": 18.58,
+            "end": 18.62,
+            "probability": 0.9864485859870911
+          }
+        ]
+      },
+      {
+        "id": 13,
+        "seek": 0,
+        "start": 18.62,
+        "end": 18.72,
+        "text": "あなたは",
+        "tokens": [
+          51114,
+          3590,
+          42847,
+          3065,
+          51164
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.24192769508662187,
+        "compression_ratio": 11.538461538461538,
+        "no_speech_prob": 0.01953197456896305,
+        "words": [
+          {
+            "word": "あ",
+            "start": 18.62,
+            "end": 18.72,
+            "probability": 0.9868899583816528
+          },
+          {
+            "word": "なた",
+            "start": 18.72,
+            "end": 18.72,
+            "probability": 0.9710268974304199
+          },
+          {
+            "word": "は",
+            "start": 18.72,
+            "end": 18.72,
+            "probability": 0.9884312152862549
+          }
+        ]
+      },
+      {
+        "id": 14,
+        "seek": 0,
+        "start": 18.72,
+        "end": 19.04,
+        "text": "あなたは",
+        "tokens": [
+          51164,
+          3590,
+          42847,
+          3065,
+          51214
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.24192769508662187,
+        "compression_ratio": 11.538461538461538,
+        "no_speech_prob": 0.01953197456896305,
+        "words": [
+          {
+            "word": "あ",
+            "start": 18.72,
+            "end": 18.72,
+            "probability": 0.986979603767395
+          },
+          {
+            "word": "なた",
+            "start": 18.72,
+            "end": 18.76,
+            "probability": 0.9764518737792969
+          },
+          {
+            "word": "は",
+            "start": 18.76,
+            "end": 19.04,
+            "probability": 0.9888982176780701
+          }
+        ]
+      },
+      {
+        "id": 15,
+        "seek": 0,
+        "start": 19.04,
+        "end": 21.6,
+        "text": "あなたは",
+        "tokens": [
+          51214,
+          3590,
+          42847,
+          3065,
+          51264
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.24192769508662187,
+        "compression_ratio": 11.538461538461538,
+        "no_speech_prob": 0.01953197456896305,
+        "words": [
+          {
+            "word": "あ",
+            "start": 19.04,
+            "end": 20.0,
+            "probability": 0.9870643615722656
+          },
+          {
+            "word": "なた",
+            "start": 20.0,
+            "end": 20.08,
+            "probability": 0.9773827195167542
+          },
+          {
+            "word": "は",
+            "start": 20.08,
+            "end": 21.6,
+            "probability": 0.9908548593521118
+          }
+        ]
+      },
+      {
+        "id": 16,
+        "seek": 0,
+        "start": 21.6,
+        "end": 22.7,
+        "text": "あなたは",
+        "tokens": [
+          51264,
+          3590,
+          42847,
+          3065,
+          51314
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.24192769508662187,
+        "compression_ratio": 11.538461538461538,
+        "no_speech_prob": 0.01953197456896305,
+        "words": [
+          {
+            "word": "あ",
+            "start": 21.6,
+            "end": 21.68,
+            "probability": 0.9870262742042542
+          },
+          {
+            "word": "なた",
+            "start": 21.68,
+            "end": 21.82,
+            "probability": 0.9652701616287231
+          },
+          {
+            "word": "は",
+            "start": 21.82,
+            "end": 22.7,
+            "probability": 0.991797685623169
+          }
+        ]
+      },
+      {
+        "id": 17,
+        "seek": 0,
+        "start": 22.7,
+        "end": 23.36,
+        "text": "あなたは",
+        "tokens": [
+          51314,
+          3590,
+          42847,
+          3065,
+          51364
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.24192769508662187,
+        "compression_ratio": 11.538461538461538,
+        "no_speech_prob": 0.01953197456896305,
+        "words": [
+          {
+            "word": "あ",
+            "start": 22.7,
+            "end": 23.0,
+            "probability": 0.9864799380302429
+          },
+          {
+            "word": "なた",
+            "start": 23.0,
+            "end": 23.0,
+            "probability": 0.963374137878418
+          },
+          {
+            "word": "は",
+            "start": 23.0,
+            "end": 23.36,
+            "probability": 0.9922400712966919
+          }
+        ]
+      },
+      {
+        "id": 18,
+        "seek": 0,
+        "start": 23.36,
+        "end": 24.62,
+        "text": "あなたは",
+        "tokens": [
+          51364,
+          3590,
+          42847,
+          3065,
+          51464
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.24192769508662187,
+        "compression_ratio": 11.538461538461538,
+        "no_speech_prob": 0.01953197456896305,
+        "words": [
+          {
+            "word": "あ",
+            "start": 23.36,
+            "end": 23.46,
+            "probability": 0.9853310585021973
+          },
+          {
+            "word": "なた",
+            "start": 23.46,
+            "end": 24.62,
+            "probability": 0.9612102508544922
+          },
+          {
+            "word": "は",
+            "start": 24.62,
+            "end": 24.62,
+            "probability": 0.993164598941803
+          }
+        ]
+      },
+      {
+        "id": 19,
+        "seek": 0,
+        "start": 24.62,
+        "end": 24.62,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.24192769508662187,
+        "compression_ratio": 11.538461538461538,
+        "no_speech_prob": 0.01953197456896305,
+        "words": []
+      },
+      {
+        "id": 20,
+        "seek": 0,
+        "start": 24.62,
+        "end": 25.36,
+        "text": "あなたは",
+        "tokens": [
+          51514,
+          3590,
+          42847,
+          3065,
+          51564
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.24192769508662187,
+        "compression_ratio": 11.538461538461538,
+        "no_speech_prob": 0.01953197456896305,
+        "words": [
+          {
+            "word": "あ",
+            "start": 24.62,
+            "end": 24.62,
+            "probability": 0.9854257106781006
+          },
+          {
+            "word": "なた",
+            "start": 24.62,
+            "end": 25.36,
+            "probability": 0.955670177936554
+          },
+          {
+            "word": "は",
+            "start": 25.36,
+            "end": 25.36,
+            "probability": 0.9936090707778931
+          }
+        ]
+      },
+      {
+        "id": 21,
+        "seek": 0,
+        "start": 25.36,
+        "end": 25.36,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.24192769508662187,
+        "compression_ratio": 11.538461538461538,
+        "no_speech_prob": 0.01953197456896305,
+        "words": []
+      },
+      {
+        "id": 22,
+        "seek": 0,
+        "start": 25.36,
+        "end": 25.38,
+        "text": "あなたは",
+        "tokens": [
+          51614,
+          3590,
+          42847,
+          3065,
+          51664
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.24192769508662187,
+        "compression_ratio": 11.538461538461538,
+        "no_speech_prob": 0.01953197456896305,
+        "words": [
+          {
+            "word": "あ",
+            "start": 25.36,
+            "end": 25.36,
+            "probability": 0.9839553236961365
+          },
+          {
+            "word": "なた",
+            "start": 25.36,
+            "end": 25.38,
+            "probability": 0.9517396688461304
+          },
+          {
+            "word": "は",
+            "start": 25.38,
+            "end": 25.38,
+            "probability": 0.994053304195404
+          }
+        ]
+      },
+      {
+        "id": 23,
+        "seek": 0,
+        "start": 27.54,
+        "end": 28.22,
+        "text": "あなたは",
+        "tokens": [
+          51664,
+          3590,
+          42847,
+          3065,
+          51764
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.24192769508662187,
+        "compression_ratio": 11.538461538461538,
+        "no_speech_prob": 0.01953197456896305,
+        "words": [
+          {
+            "word": "あ",
+            "start": 27.54,
+            "end": 28.14,
+            "probability": 0.9845649003982544
+          },
+          {
+            "word": "なた",
+            "start": 28.14,
+            "end": 28.22,
+            "probability": 0.9520452618598938
+          },
+          {
+            "word": "は",
+            "start": 28.22,
+            "end": 28.22,
+            "probability": 0.9943828582763672
+          }
+        ]
+      },
+      {
+        "id": 24,
+        "seek": 0,
+        "start": 28.22,
+        "end": 28.56,
+        "text": "あなたは",
+        "tokens": [
+          51764,
+          3590,
+          42847,
+          3065,
+          51814
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.24192769508662187,
+        "compression_ratio": 11.538461538461538,
+        "no_speech_prob": 0.01953197456896305,
+        "words": [
+          {
+            "word": "あ",
+            "start": 28.22,
+            "end": 28.22,
+            "probability": 0.9827494621276855
+          },
+          {
+            "word": "なた",
+            "start": 28.22,
+            "end": 28.24,
+            "probability": 0.9441297650337219
+          },
+          {
+            "word": "は",
+            "start": 28.24,
+            "end": 28.56,
+            "probability": 0.9945198893547058
+          }
+        ]
+      },
+      {
+        "id": 25,
+        "seek": 2856,
+        "start": 28.56,
+        "end": 31.86,
+        "text": "変わってないんだね",
+        "tokens": [
+          50364,
+          40931,
+          9206,
+          6102,
+          9311,
+          26983,
+          5555,
+          50539
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.6277066866556803,
+        "compression_ratio": 0.7105263157894737,
+        "no_speech_prob": 0.37504610419273376,
+        "words": [
+          {
+            "word": "変",
+            "start": 28.56,
+            "end": 29.52,
+            "probability": 0.18204240500926971
+          },
+          {
+            "word": "わ",
+            "start": 29.52,
+            "end": 29.82,
+            "probability": 0.9993539452552795
+          },
+          {
+            "word": "って",
+            "start": 29.82,
+            "end": 30.16,
+            "probability": 0.8315099477767944
+          },
+          {
+            "word": "ない",
+            "start": 30.16,
+            "end": 30.74,
+            "probability": 0.9497300982475281
+          },
+          {
+            "word": "んだ",
+            "start": 30.74,
+            "end": 31.54,
+            "probability": 0.6384068131446838
+          },
+          {
+            "word": "ね",
+            "start": 31.54,
+            "end": 31.86,
+            "probability": 0.9601736664772034
+          }
+        ]
+      }
+    ],
+    "language": "ja"
+  }
+}

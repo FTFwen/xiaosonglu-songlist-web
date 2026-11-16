@@ -1,0 +1,216 @@
+{
+  "schemaVersion": 1,
+  "key": "song-183",
+  "songId": 183,
+  "songName": "言って。",
+  "rowKey": "言って。",
+  "displaySongName": "言って。",
+  "artist": "ヨルシカ",
+  "language": "日文",
+  "derivative": false,
+  "edition": "",
+  "remark": "弹幕 02:15 点歌「有没有ヨルシカ」后连续演唱的三首ヨルシカ曲目之二",
+  "audio": {
+    "url": "assets/audio/song_182.m4a?v=245a35c58ee6",
+    "sha256": "245a35c58ee6ea44c05378c8348d4956b46bce572817186cb12d670ef5b91340"
+  },
+  "retrievedAt": "2026-11-16T04:04:33.661Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E8%A8%80%E3%81%A3%E3%81%A6%E3%80%82&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E8%A8%80%E3%81%A3%E3%81%A6%E3%80%82%20%E3%83%A8%E3%83%AB%E3%82%B7%E3%82%AB&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 487527980,
+        "name": "言って。",
+        "artists": [
+          "ヨルシカ"
+        ],
+        "album": "夏草が邪魔をする",
+        "durationMs": 242230,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1335298114,
+        "name": "言って。",
+        "artists": [
+          "冰山"
+        ],
+        "album": "言って。",
+        "durationMs": 243487,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1467517135,
+        "name": "言って。（说吧。）（翻自 ヨルシカ）",
+        "artists": [
+          "夏天的西瓜"
+        ],
+        "album": "言って。",
+        "durationMs": 241813,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 2608642044,
+        "name": "言って。 (说吧。)- cover ヨルシカ (Yorushika)",
+        "artists": [
+          "星织Aria"
+        ],
+        "album": "言って。 (说吧。) - cover ヨルシカ (Yorushika)",
+        "durationMs": 241833,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 2080468360,
+        "name": "言って。（cover：ヨルシカ）",
+        "artists": [
+          "YURE_尤尔"
+        ],
+        "album": "言って。（cover：ヨルシカ）",
+        "durationMs": 246433,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 2020784526,
+        "name": "言って。（cover：ヨルシカ）",
+        "artists": [
+          "栗花落"
+        ],
+        "album": "翻唱合集",
+        "durationMs": 243500,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 3325005935,
+        "name": "言って。-ヨルシカ（KawaiiBass remix）",
+        "artists": [
+          "橘波辉_Tachibana Haki"
+        ],
+        "album": "Kawaii Bass Everying",
+        "durationMs": 259999,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 2084432801,
+        "name": "言って。 (Cover) [オリジナル歌手：ヨルシカ]",
+        "artists": [
+          "Mobile Melody Series"
+        ],
+        "album": "Relax-ヒーリングオルゴール- omnibus vol.112",
+        "durationMs": 39679,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      }
+    ],
+    "workQuery": {
+      "song_id": 183,
+      "song_name": "言って。",
+      "show_as_song_name": "",
+      "display_song_name": "言って。",
+      "artist": "ヨルシカ",
+      "artist_search": "ヨルシカ",
+      "feat_artist": "",
+      "remark": "弹幕 02:15 点歌「有没有ヨルシカ」后连续演唱的三首ヨルシカ曲目之二",
+      "tone": "",
+      "language": "日文",
+      "type": "J-Pop",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1q9YB6xErK/?p=16",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-09-13",
+      "row_key": "言って。"
+    },
+    "sourceId": 487527980,
+    "sourcePath": "sources/487527980.json",
+    "sourceUrl": "https://music.163.com/#/song?id=487527980",
+    "selected": {
+      "id": 487527980,
+      "name": "言って。",
+      "artists": [
+        "ヨルシカ"
+      ],
+      "album": "夏草が邪魔をする",
+      "durationMs": 242230,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 33
+  },
+  "alignment": {
+    "status": "timing_drift_review_required",
+    "evidencePath": "evidence/song-183-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 237.888,
+    "sourceFirstLine": {
+      "t": 23.76,
+      "text": "あのね、私実は気付いてるの"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 17.8,
+      "endSeconds": 28.1,
+      "similarity": 0.8333333333333334,
+      "recognizedText": "】あのね、私、実はぴついてるの",
+      "meanProbability": 0.696,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": -5.96,
+    "checks": [
+      {
+        "sourceLine": {
+          "t": 117.06,
+          "text": "夜の雲が高いのってどうすれば君もわかるんだろう"
+        },
+        "evidencePath": "evidence/song-183-check0.json",
+        "candidate": {
+          "audioSeconds": 122.28,
+          "endSeconds": 123.98,
+          "similarity": 0.4375,
+          "recognizedText": "のわかんないだろう",
+          "meanProbability": 0.522,
+          "tokenPrefixOnly": false
+        },
+        "residualSeconds": 11.18
+      },
+      {
+        "sourceLine": {
+          "t": 219.31,
+          "text": "もっと、もっと、もっと、もっと"
+        },
+        "evidencePath": "evidence/song-183-check1.json",
+        "candidate": {
+          "audioSeconds": 216.99,
+          "endSeconds": 223.55,
+          "similarity": 1.0,
+          "recognizedText": "もっともっともっともっと",
+          "meanProbability": 0.917,
+          "tokenPrefixOnly": false
+        },
+        "residualSeconds": 3.64
+      }
+    ],
+    "asrLanguage": "ja",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

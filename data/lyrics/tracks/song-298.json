@@ -1,0 +1,162 @@
+{
+  "schemaVersion": 1,
+  "key": "song-298",
+  "songId": 298,
+  "songName": "ドライフラワー",
+  "displaySongName": "ドライフラワー",
+  "artist": "優里",
+  "language": "日文",
+  "derivative": false,
+  "audio": {
+    "url": "assets/audio/song_297.m4a?v=3ab0401cdfa4",
+    "sha256": "3ab0401cdfa44af6f819ae0643badb3537b8bfbdddf178801864dad1cc5fb160"
+  },
+  "retrievedAt": "2026-11-16T03:58:50.902Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E3%83%89%E3%83%A9%E3%82%A4%E3%83%95%E3%83%A9%E3%83%AF%E3%83%BC&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1485033549,
+        "name": "ドライフラワー",
+        "artists": [
+          "優里"
+        ],
+        "album": "ドライフラワー",
+        "durationMs": 285651,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1905070116,
+        "name": "ドライフラワー",
+        "artists": [
+          "優里"
+        ],
+        "album": "壱",
+        "durationMs": 285651,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2108142019,
+        "name": "ドライフラワー",
+        "artists": [
+          "Ado"
+        ],
+        "album": "Adoの歌ってみたアルバム",
+        "durationMs": 288800,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1820950546,
+        "name": "ドライフラワー",
+        "artists": [
+          "Uru"
+        ],
+        "album": "ファーストラヴ",
+        "durationMs": 286116,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1818596984,
+        "name": "ドライフラワー",
+        "artists": [
+          "春茶",
+          "茶泡饭"
+        ],
+        "album": "ドライフラワー",
+        "durationMs": 302718,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2612971216,
+        "name": "ドライフラワー",
+        "artists": [
+          "Hanon"
+        ],
+        "album": "ドライフラワー",
+        "durationMs": 285884,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 29097229,
+        "name": "ドライフラワー",
+        "artists": [
+          "Suck a Stew Dry"
+        ],
+        "album": "ラブレスレター",
+        "durationMs": 302733,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2010946546,
+        "name": "ドライフラワー",
+        "artists": [
+          "Uru"
+        ],
+        "album": "コントラスト(Special Edition)",
+        "durationMs": 286053,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "sourceId": 1485033549,
+    "sourcePath": "sources/1485033549.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1485033549",
+    "selected": {
+      "id": 1485033549,
+      "name": "ドライフラワー",
+      "artists": [
+        "優里"
+      ],
+      "album": "ドライフラワー",
+      "durationMs": 285651,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 47
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-298-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 316.736,
+    "sourceFirstLine": {
+      "t": 14.19,
+      "text": "多分、私じゃなくていいね"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 30.16,
+      "endSeconds": 31.86,
+      "similarity": 0.375,
+      "recognizedText": "ないんだね",
+      "meanProbability": 0.849,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "ja",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  },
+  "rowKey": "ドライフラワー",
+  "edition": "",
+  "remark": "两份合集同曲同序（BV1TApG6uEPX 分P12 时长 2:23；BV1Qrpj6ZELm 分P12 标为「ドライフラワ（半首）」1:49），应为半首。弹幕 01:31:43-01:34:05 连续 7 条「干花」佐证。分P的原唱字段写的是 Ado（Ado 在《Adoの歌ってみたアルバム》中翻唱过此曲），本曲原唱为優里（作词/作曲：優里），故按本站「artist 记原唱」的惯例记優里。"
+}

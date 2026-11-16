@@ -1,0 +1,185 @@
+{
+  "schemaVersion": 1,
+  "key": "song-391",
+  "songId": 391,
+  "songName": "烟雨行舟",
+  "rowKey": "烟雨行舟",
+  "displaySongName": "烟雨行舟",
+  "artist": "伦桑",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "分P标注「原唱：伦桑 - 司南」，本条记本家伦桑，直播为司南翻唱版。",
+  "audio": {
+    "url": "assets/audio/song_390.m4a?v=606d1e85c493",
+    "sha256": "606d1e85c493d7c96ee2816cb5d93f4d191960183bdfcf3c64a9a2e21d8b3f3f"
+  },
+  "retrievedAt": "2026-11-16T04:08:32.799Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E7%83%9F%E9%9B%A8%E8%A1%8C%E8%88%9F&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E7%83%9F%E9%9B%A8%E8%A1%8C%E8%88%9F%20%E4%BC%A6%E6%A1%91&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 32922246,
+        "name": "烟雨行舟",
+        "artists": [
+          "伦桑"
+        ],
+        "album": "桑道伦回",
+        "durationMs": 267154,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 483497897,
+        "name": "烟雨行舟",
+        "artists": [
+          "Vk"
+        ],
+        "album": "Vk歌曲集",
+        "durationMs": 281253,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3442262506,
+        "name": "烟雨行舟",
+        "artists": [
+          "语晓涵",
+          "洛天依"
+        ],
+        "album": "烟雨行舟",
+        "durationMs": 258666,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2165551273,
+        "name": "烟雨行舟",
+        "artists": [
+          "桃子夏天Hey"
+        ],
+        "album": "属于我们之间秘密",
+        "durationMs": 77572,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1940771908,
+        "name": "烟雨行舟",
+        "artists": [
+          "沈佳"
+        ],
+        "album": "不必",
+        "durationMs": 91207,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2633293065,
+        "name": "烟雨行舟",
+        "artists": [
+          "若水"
+        ],
+        "album": "若水",
+        "durationMs": 271026,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3461342795,
+        "name": "烟雨行舟",
+        "artists": [
+          "妹宝",
+          "郭琳琳"
+        ],
+        "album": "平安",
+        "durationMs": 22464,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3349292388,
+        "name": "烟雨行舟",
+        "artists": [
+          "sdfgc"
+        ],
+        "album": "WubeHek",
+        "durationMs": 267048,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 391,
+      "song_name": "烟雨行舟",
+      "show_as_song_name": "",
+      "display_song_name": "烟雨行舟",
+      "artist": "伦桑",
+      "artist_search": "伦桑",
+      "feat_artist": "",
+      "remark": "分P标注「原唱：伦桑 - 司南」，本条记本家伦桑，直播为司南翻唱版。",
+      "tone": "",
+      "language": "中文",
+      "type": "国风",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1LRWd6jEqp/?p=4",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-11-12",
+      "row_key": "烟雨行舟"
+    },
+    "sourceId": 32922246,
+    "sourcePath": "sources/32922246.json",
+    "sourceUrl": "https://music.163.com/#/song?id=32922246",
+    "selected": {
+      "id": 32922246,
+      "name": "烟雨行舟",
+      "artists": [
+        "伦桑"
+      ],
+      "album": "桑道伦回",
+      "durationMs": 267154,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 57
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-391-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 268.523,
+    "sourceFirstLine": {
+      "t": 36.75,
+      "text": "烟雨入江南"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 46.4,
+      "endSeconds": 46.72,
+      "similarity": 0.0,
+      "recognizedText": "作",
+      "meanProbability": 0.001,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

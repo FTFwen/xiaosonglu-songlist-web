@@ -1,0 +1,186 @@
+{
+  "schemaVersion": 1,
+  "key": "song-37",
+  "songId": 37,
+  "songName": "目的论",
+  "rowKey": "目的论",
+  "displaySongName": "目的论",
+  "artist": "JUSF周存 / 洛天依 / 言和",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "来自 2026-08-11 中V歌回回放中后段。对 40-46 分钟切片复核后，先在 40-43 分钟后半听到“若向深渊之中凝望，便会坠入漆黑夜空”一类句群，43-46 分钟又连续命中“若还记得黑白的梦”“一场忘了结局的梦”“守护的人也消失不见”“一句从未说出口的话，一双从未牵起过的手”等高辨识度歌词；DuckDuckGo 检索结果稳定指向 JUSF周存《目的论》，对应洛天依 / 言和版本，可先入库并保留人工复核标签。 按用户放宽后的匹配规则，已补入对应公开歌切：【小松绿Viridis】《目的论》（BV1gzuz6pE4C）。",
+  "audio": {
+    "url": "assets/audio/song_36.m4a?v=8bac8ac98a62",
+    "sha256": "8bac8ac98a62667846a65a62f5d76ecea90e459613afdca3fe26ed6ec2b6fa2b"
+  },
+  "retrievedAt": "2026-11-16T04:02:56.798Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E7%9B%AE%E7%9A%84%E8%AE%BA&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E7%9B%AE%E7%9A%84%E8%AE%BA%20JUSF%E5%91%A8%E5%AD%98%20%2F%20%E6%B4%9B%E5%A4%A9%E4%BE%9D%20%2F%20%E8%A8%80%E5%92%8C&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 420400455,
+        "name": "目的论",
+        "artists": [
+          "JUSF周存"
+        ],
+        "album": "目的论-洛天依·言和",
+        "durationMs": 270057,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2647425137,
+        "name": "目的论",
+        "artists": [
+          "法樱Fay"
+        ],
+        "album": "JUSF周存系列翻唱",
+        "durationMs": 270054,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1355679390,
+        "name": "目的论",
+        "artists": [
+          "MyApril15"
+        ],
+        "album": "在云村先投的50首中文翻唱",
+        "durationMs": 271804,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1855009411,
+        "name": "目的论",
+        "artists": [
+          "Ardilen Lay_许磊"
+        ],
+        "album": "魔都异闻录",
+        "durationMs": 227576,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 493771720,
+        "name": "目的论（Cover 洛天依 / 言和）",
+        "artists": [
+          "艾莉Anicca"
+        ],
+        "album": "论",
+        "durationMs": 271886,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 456671798,
+        "name": "目的论（Cover JUSF周存）",
+        "artists": [
+          "阿演呐"
+        ],
+        "album": "存娘曲翻唱",
+        "durationMs": 270291,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 2151542906,
+        "name": "目的论（cover 木芽&藤&明）",
+        "artists": [
+          "椰椰子想睡大觉"
+        ],
+        "album": "四神之坻",
+        "durationMs": 269841,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 3447102073,
+        "name": "一是无底神",
+        "artists": [
+          "JUSF周存",
+          "洛天依",
+          "言和",
+          "重音テト"
+        ],
+        "album": "概念神",
+        "durationMs": 151745,
+        "titleScore": 0,
+        "artistMatch": true,
+        "score": 0.2
+      }
+    ],
+    "workQuery": {
+      "song_id": 37,
+      "song_name": "目的论",
+      "show_as_song_name": "",
+      "display_song_name": "目的论",
+      "artist": "JUSF周存 / 洛天依 / 言和",
+      "artist_search": "JUSF周存 洛天依 言和",
+      "feat_artist": "",
+      "remark": "来自 2026-08-11 中V歌回回放中后段。对 40-46 分钟切片复核后，先在 40-43 分钟后半听到“若向深渊之中凝望，便会坠入漆黑夜空”一类句群，43-46 分钟又连续命中“若还记得黑白的梦”“一场忘了结局的梦”“守护的人也消失不见”“一句从未说出口的话，一双从未牵起过的手”等高辨识度歌词；DuckDuckGo 检索结果稳定指向 JUSF周存《目的论》，对应洛天依 / 言和版本，可先入库并保留人工复核标签。 按用户放宽后的匹配规则，已补入对应公开歌切：【小松绿Viridis】《目的论》（BV1gzuz6pE4C）。",
+      "tone": "",
+      "language": "中文",
+      "type": "中V、流行",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1gzuz6pE4C/",
+      "sing_count": 1,
+      "status_labels": "歌回、半场、自动识别待人工复核",
+      "last_sing_at": "2026-08-11",
+      "row_key": "目的论"
+    },
+    "sourceId": 420400455,
+    "sourcePath": "sources/420400455.json",
+    "sourceUrl": "https://music.163.com/#/song?id=420400455",
+    "selected": {
+      "id": 420400455,
+      "name": "目的论",
+      "artists": [
+        "JUSF周存"
+      ],
+      "album": "目的论-洛天依·言和",
+      "durationMs": 270057,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 39
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-37-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 269.119,
+    "sourceFirstLine": {
+      "t": 24.17,
+      "text": "绘/PV/间奏文案：乜"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 22.56,
+      "endSeconds": 23.2,
+      "similarity": 0.0,
+      "recognizedText": "我",
+      "meanProbability": 0.031,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

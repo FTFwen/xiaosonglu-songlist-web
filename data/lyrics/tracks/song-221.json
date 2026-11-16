@@ -1,0 +1,183 @@
+{
+  "schemaVersion": 1,
+  "key": "song-221",
+  "songId": 221,
+  "songName": "歌鳥風月",
+  "rowKey": "歌鳥風月",
+  "displaySongName": "歌鳥風月",
+  "artist": "Aimer",
+  "language": "日文",
+  "derivative": false,
+  "edition": "",
+  "remark": "UP 桐人今天睡大觉《2026.09.23练歌歌切合集》P12；分P 时长 8:50 显著长于原曲单曲版（~4:48），可能含完整/加长演绎",
+  "audio": {
+    "url": "assets/audio/song_220.m4a?v=a9bb1409c8fe",
+    "sha256": "a9bb1409c8fe10b5b61ac553200212cfaf20a049b247cfea715d0de11c74f898"
+  },
+  "retrievedAt": "2026-11-16T04:05:04.957Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E6%AD%8C%E9%B3%A5%E9%A2%A8%E6%9C%88&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E6%AD%8C%E9%B3%A5%E9%A2%A8%E6%9C%88%20Aimer&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 476081907,
+        "name": "歌鳥風月",
+        "artists": [
+          "Aimer"
+        ],
+        "album": "BEST SELECTION \"blanc\"",
+        "durationMs": 344626,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 3446266289,
+        "name": "歌鳥風月",
+        "artists": [
+          "早稻叽"
+        ],
+        "album": "歌鸟风月",
+        "durationMs": 343978,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 32358691,
+        "name": "Brave Shine",
+        "artists": [
+          "Aimer"
+        ],
+        "album": "Brave Shine (期間生産限定アニメ盤)",
+        "durationMs": 233973,
+        "titleScore": 0,
+        "artistMatch": true,
+        "score": 0.2
+      },
+      {
+        "id": 536623501,
+        "name": "Ref:rain",
+        "artists": [
+          "Aimer"
+        ],
+        "album": "Ref:rain / 眩いばかり",
+        "durationMs": 290202,
+        "titleScore": 0,
+        "artistMatch": true,
+        "score": 0.2
+      },
+      {
+        "id": 2694779693,
+        "name": "Eclipse",
+        "artists": [
+          "Aimer"
+        ],
+        "album": "Eclipse",
+        "durationMs": 235264,
+        "titleScore": 0,
+        "artistMatch": true,
+        "score": 0.2
+      },
+      {
+        "id": 33418857,
+        "name": "LAST STARDUST",
+        "artists": [
+          "Aimer"
+        ],
+        "album": "DAWN",
+        "durationMs": 318662,
+        "titleScore": 0,
+        "artistMatch": true,
+        "score": 0.2
+      },
+      {
+        "id": 431259256,
+        "name": "カタオモイ",
+        "artists": [
+          "Aimer"
+        ],
+        "album": "daydream",
+        "durationMs": 207934,
+        "titleScore": 0,
+        "artistMatch": true,
+        "score": 0.2
+      },
+      {
+        "id": 514774419,
+        "name": "ONE",
+        "artists": [
+          "Aimer"
+        ],
+        "album": "ONE / 花の唄 / 六等星の夜 Magic Blue ver. (初回生産限定盤)",
+        "durationMs": 331720,
+        "titleScore": 0,
+        "artistMatch": true,
+        "score": 0.2
+      }
+    ],
+    "workQuery": {
+      "song_id": 221,
+      "song_name": "歌鳥風月",
+      "show_as_song_name": "",
+      "display_song_name": "歌鳥風月",
+      "artist": "Aimer",
+      "artist_search": "Aimer 歌鳥風月",
+      "feat_artist": "",
+      "remark": "UP 桐人今天睡大觉《2026.09.23练歌歌切合集》P12；分P 时长 8:50 显著长于原曲单曲版（~4:48），可能含完整/加长演绎",
+      "tone": "",
+      "language": "日文",
+      "type": "J-Pop、抒情",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1ouhW6GEoD/?p=12",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-09-23",
+      "row_key": "歌鳥風月"
+    },
+    "sourceId": 476081907,
+    "sourcePath": "sources/476081907.json",
+    "sourceUrl": "https://music.163.com/#/song?id=476081907",
+    "selected": {
+      "id": 476081907,
+      "name": "歌鳥風月",
+      "artists": [
+        "Aimer"
+      ],
+      "album": "BEST SELECTION \"blanc\"",
+      "durationMs": 344626,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 51
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-221-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 528.997,
+    "sourceFirstLine": {
+      "t": 1,
+      "text": "春 霞たつ"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 8.74,
+      "endSeconds": 9.94,
+      "similarity": 0.4,
+      "recognizedText": "つ",
+      "meanProbability": 0.28,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "ja",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

@@ -1,0 +1,168 @@
+{
+  "schemaVersion": 1,
+  "key": "song-41",
+  "songId": 41,
+  "songName": "霜雪千年",
+  "displaySongName": "霜雪千年",
+  "artist": "洛天依Official / 乐正绫",
+  "language": "中文",
+  "derivative": false,
+  "audio": {
+    "url": "assets/audio/song_49.m4a?v=1747a5e0e2f6",
+    "sha256": "1747a5e0e2f6c1df5dce5841425b4db804f2eee4ea66c2ddf6ee11561e0af54c"
+  },
+  "retrievedAt": "2026-11-16T03:58:00.511Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E9%9C%9C%E9%9B%AA%E5%8D%83%E5%B9%B4&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 2631318598,
+        "name": "霜雪千年",
+        "artists": [
+          "洛天依",
+          "乐正绫"
+        ],
+        "album": "虚拟复调方程式",
+        "durationMs": 245481,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2667517209,
+        "name": "霜雪千年",
+        "artists": [
+          "洛天依"
+        ],
+        "album": "翻调作品",
+        "durationMs": 237428,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2602502225,
+        "name": "霜雪千年",
+        "artists": [
+          "莫默OwO",
+          "洛天依",
+          "乐正绫"
+        ],
+        "album": "霜雪千年",
+        "durationMs": 244339,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2164723454,
+        "name": "霜雪千年",
+        "artists": [
+          "比尔盖茨爹爹",
+          "洛天依",
+          "乐正绫"
+        ],
+        "album": "【洛天依AI/乐正绫AI】霜雪千年",
+        "durationMs": 243690,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 409650851,
+        "name": "霜雪千年",
+        "artists": [
+          "双笙（陈元汐）",
+          "封茗囧菌"
+        ],
+        "album": "霜雪千年（翻唱）",
+        "durationMs": 246909,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2144714241,
+        "name": "霜雪千年",
+        "artists": [
+          "不是花火呀"
+        ],
+        "album": "霜雪千年",
+        "durationMs": 227625,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2158554299,
+        "name": "霜雪千年",
+        "artists": [
+          "糯米Nomi"
+        ],
+        "album": "霜雪千年",
+        "durationMs": 219045,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3458598672,
+        "name": "霜雪千年",
+        "artists": [
+          "行崽ou"
+        ],
+        "album": "霜雪千年for南柯忆梦ou",
+        "durationMs": 241396,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "sourceId": 2631318598,
+    "sourcePath": "sources/2631318598.json",
+    "sourceUrl": "https://music.163.com/#/song?id=2631318598",
+    "selected": {
+      "id": 2631318598,
+      "name": "霜雪千年",
+      "artists": [
+        "洛天依",
+        "乐正绫"
+      ],
+      "album": "虚拟复调方程式",
+      "durationMs": 245481,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 74
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-41-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 240.814,
+    "sourceFirstLine": {
+      "t": 12.72,
+      "text": "梨花香"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 15.28,
+      "endSeconds": 16.1,
+      "similarity": 0.0,
+      "recognizedText": "李",
+      "meanProbability": 0.285,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  },
+  "rowKey": "霜雪千年",
+  "edition": "",
+  "remark": "直链页面 meta description 明示日期 2026.08.15，标题直接给出真实歌曲名《霜雪千年》，可作为当日 song-cut-first 增量收录。"
+}

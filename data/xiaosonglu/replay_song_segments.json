@@ -3,7 +3,7 @@
   "roomId": "1727071052",
   "sourceType": "bilibili-live-replay-song-segments",
   "description": "从小松绿直播回放中识别出的唱歌片段原始记录。由每日自动化或人工补录维护，随后通过 scripts/build_xiaosonglu_song_data.js 聚合成插件可直接读取的歌单与历史数据。歌名允许先根据歌词片段联网检索后再补全，回放日期允许先留空并由脚本从回放标题中解析。",
-  "updatedAt": "2026-11-13T03:10:03.293Z",
+  "updatedAt": "2026-11-16T03:01:32.994Z",
   "segments": [
     {
       "replay_id": "BV1Xiu86aEwV",
@@ -19066,6 +19066,39 @@
       "cut_link": "https://www.bilibili.com/video/BV1LRWd6jEqp/?p=31",
       "confidence": 0.9,
       "row_key": "晚想",
+      "search_name": "",
+      "resolution_candidates": []
+    },
+    {
+      "replay_id": "live:9fc7c749-a2c9-4b63-a63e-e75ea8200f22",
+      "replay_title": "【小松绿Viridis】对棉花糖进行一个了结 2026-11-10",
+      "replay_url": "",
+      "replay_date": "2026-11-10",
+      "replay_date_source": "live-api-date",
+      "segment_index": 12,
+      "start_time": "",
+      "end_time": "",
+      "lyric_excerpt": "我唱着妈妈唱着的歌谣 牡丹儿绣在金匾上",
+      "song_search_query": "蝴蝶泉边",
+      "song_resolution_method": "song-cut-title",
+      "song_name": "蝴蝶泉边",
+      "display_song_name": "蝴蝶泉边",
+      "artist": "黄雅莉",
+      "artist_search": "黄雅莉",
+      "feat_artist": "",
+      "language": "中文",
+      "tone": "",
+      "status_labels": [
+        "歌回",
+        "歌切复核"
+      ],
+      "display_version": "",
+      "type": "影视、经典",
+      "remark": "1959 年电影《五朵金花》插曲（季康词、雷振邦曲，原唱李世荣 / 赵履珠）；本场为黄雅莉传唱版演绎。弹幕全程未点名，靠直播期间发布的三支歌切锚定（另两支：BV11hWg6NERq、BV1vfWG69EES）。",
+      "identification": "",
+      "cut_link": "https://www.bilibili.com/video/BV1pxWV6TETx/",
+      "confidence": 0.85,
+      "row_key": "蝴蝶泉边",
       "search_name": "",
       "resolution_candidates": []
     }

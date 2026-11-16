@@ -1,0 +1,970 @@
+{
+  "audioSha256": "eeff99b626f334cfbc3ab74e1cfe186c76f280b32553df41d6368b7a79708dfc",
+  "model": "whisper-base",
+  "start": 0,
+  "end": 51.8,
+  "result": {
+    "text": "我以为你对我来的我以为你对我来的我以为你对我来的我以为你对我来的我以为你对我来的我以为你对我来的《夜夜夹心》夜夜夹心 夜夜夹心夜夜夹心 探紧起切为军阻心以赐取不过教习一却忘了三季 学分飞要留啊",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 10.139999999999999,
+        "end": 11.7,
+        "text": "我以为你对我来的",
+        "tokens": [
+          50364,
+          1654,
+          3588,
+          13992,
+          2166,
+          8713,
+          1654,
+          6912,
+          1546,
+          50464
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.2969699913347271,
+        "compression_ratio": 8.4,
+        "no_speech_prob": 0.5748421549797058,
+        "words": [
+          {
+            "word": "我",
+            "start": 10.139999999999999,
+            "end": 11.54,
+            "probability": 0.014547751285135746
+          },
+          {
+            "word": "以",
+            "start": 11.54,
+            "end": 11.7,
+            "probability": 0.011040708981454372
+          },
+          {
+            "word": "为",
+            "start": 11.7,
+            "end": 11.7,
+            "probability": 0.46122387051582336
+          },
+          {
+            "word": "你",
+            "start": 11.7,
+            "end": 11.7,
+            "probability": 0.24819371104240417
+          },
+          {
+            "word": "对",
+            "start": 11.7,
+            "end": 11.7,
+            "probability": 0.021502230316400528
+          },
+          {
+            "word": "我",
+            "start": 11.7,
+            "end": 11.7,
+            "probability": 0.2807409465312958
+          },
+          {
+            "word": "来",
+            "start": 11.7,
+            "end": 11.7,
+            "probability": 0.03316737338900566
+          },
+          {
+            "word": "的",
+            "start": 11.7,
+            "end": 11.7,
+            "probability": 0.2900241017341614
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "seek": 0,
+        "start": 11.7,
+        "end": 11.7,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.2969699913347271,
+        "compression_ratio": 8.4,
+        "no_speech_prob": 0.5748421549797058,
+        "words": []
+      },
+      {
+        "id": 2,
+        "seek": 0,
+        "start": 11.7,
+        "end": 11.7,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.2969699913347271,
+        "compression_ratio": 8.4,
+        "no_speech_prob": 0.5748421549797058,
+        "words": []
+      },
+      {
+        "id": 3,
+        "seek": 0,
+        "start": 11.7,
+        "end": 11.7,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.2969699913347271,
+        "compression_ratio": 8.4,
+        "no_speech_prob": 0.5748421549797058,
+        "words": []
+      },
+      {
+        "id": 4,
+        "seek": 0,
+        "start": 11.7,
+        "end": 13.12,
+        "text": "我以为你对我来的",
+        "tokens": [
+          50764,
+          1654,
+          3588,
+          13992,
+          2166,
+          8713,
+          1654,
+          6912,
+          1546,
+          50864
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.2969699913347271,
+        "compression_ratio": 8.4,
+        "no_speech_prob": 0.5748421549797058,
+        "words": [
+          {
+            "word": "我",
+            "start": 11.7,
+            "end": 11.7,
+            "probability": 0.7825223207473755
+          },
+          {
+            "word": "以",
+            "start": 11.7,
+            "end": 11.7,
+            "probability": 0.9171031713485718
+          },
+          {
+            "word": "为",
+            "start": 11.7,
+            "end": 11.7,
+            "probability": 0.9598543643951416
+          },
+          {
+            "word": "你",
+            "start": 11.7,
+            "end": 13.12,
+            "probability": 0.9346438646316528
+          },
+          {
+            "word": "对",
+            "start": 13.12,
+            "end": 13.12,
+            "probability": 0.8771244883537292
+          },
+          {
+            "word": "我",
+            "start": 13.12,
+            "end": 13.12,
+            "probability": 0.9440926909446716
+          },
+          {
+            "word": "来",
+            "start": 13.12,
+            "end": 13.12,
+            "probability": 0.8937097191810608
+          },
+          {
+            "word": "的",
+            "start": 13.12,
+            "end": 13.12,
+            "probability": 0.9204738736152649
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "seek": 0,
+        "start": 13.12,
+        "end": 20.0,
+        "text": "我以为你对我来的",
+        "tokens": [
+          50864,
+          1654,
+          3588,
+          13992,
+          2166,
+          8713,
+          1654,
+          6912,
+          1546,
+          50964
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.2969699913347271,
+        "compression_ratio": 8.4,
+        "no_speech_prob": 0.5748421549797058,
+        "words": [
+          {
+            "word": "我",
+            "start": 13.12,
+            "end": 14.0,
+            "probability": 0.8184808492660522
+          },
+          {
+            "word": "以",
+            "start": 14.0,
+            "end": 18.68,
+            "probability": 0.9211130738258362
+          },
+          {
+            "word": "为",
+            "start": 18.68,
+            "end": 18.68,
+            "probability": 0.9500032067298889
+          },
+          {
+            "word": "你",
+            "start": 18.68,
+            "end": 20.0,
+            "probability": 0.9404487013816833
+          },
+          {
+            "word": "对",
+            "start": 20.0,
+            "end": 20.0,
+            "probability": 0.9283980131149292
+          },
+          {
+            "word": "我",
+            "start": 20.0,
+            "end": 20.0,
+            "probability": 0.9489591121673584
+          },
+          {
+            "word": "来",
+            "start": 20.0,
+            "end": 20.0,
+            "probability": 0.9044601321220398
+          },
+          {
+            "word": "的",
+            "start": 20.0,
+            "end": 20.0,
+            "probability": 0.9403917789459229
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "seek": 0,
+        "start": 20.0,
+        "end": 20.0,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.2969699913347271,
+        "compression_ratio": 8.4,
+        "no_speech_prob": 0.5748421549797058,
+        "words": []
+      },
+      {
+        "id": 7,
+        "seek": 0,
+        "start": 20.0,
+        "end": 20.98,
+        "text": "我以为你对我来的",
+        "tokens": [
+          51064,
+          1654,
+          3588,
+          13992,
+          2166,
+          8713,
+          1654,
+          6912,
+          1546,
+          51164
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.2969699913347271,
+        "compression_ratio": 8.4,
+        "no_speech_prob": 0.5748421549797058,
+        "words": [
+          {
+            "word": "我",
+            "start": 20.0,
+            "end": 20.0,
+            "probability": 0.8808915019035339
+          },
+          {
+            "word": "以",
+            "start": 20.0,
+            "end": 20.6,
+            "probability": 0.9334831237792969
+          },
+          {
+            "word": "为",
+            "start": 20.6,
+            "end": 20.6,
+            "probability": 0.9373873472213745
+          },
+          {
+            "word": "你",
+            "start": 20.6,
+            "end": 20.98,
+            "probability": 0.9528459310531616
+          },
+          {
+            "word": "对",
+            "start": 20.98,
+            "end": 20.98,
+            "probability": 0.9558736681938171
+          },
+          {
+            "word": "我",
+            "start": 20.98,
+            "end": 20.98,
+            "probability": 0.9578693509101868
+          },
+          {
+            "word": "来",
+            "start": 20.98,
+            "end": 20.98,
+            "probability": 0.8984163999557495
+          },
+          {
+            "word": "的",
+            "start": 20.98,
+            "end": 20.98,
+            "probability": 0.9422353506088257
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "seek": 0,
+        "start": 20.98,
+        "end": 29.4,
+        "text": "我以为你对我来的",
+        "tokens": [
+          51164,
+          1654,
+          3588,
+          13992,
+          2166,
+          8713,
+          1654,
+          6912,
+          1546,
+          51264
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.2969699913347271,
+        "compression_ratio": 8.4,
+        "no_speech_prob": 0.5748421549797058,
+        "words": [
+          {
+            "word": "我",
+            "start": 20.98,
+            "end": 21.12,
+            "probability": 0.8910159468650818
+          },
+          {
+            "word": "以",
+            "start": 21.12,
+            "end": 24.3,
+            "probability": 0.9390367865562439
+          },
+          {
+            "word": "为",
+            "start": 24.3,
+            "end": 24.3,
+            "probability": 0.9371582865715027
+          },
+          {
+            "word": "你",
+            "start": 24.3,
+            "end": 29.4,
+            "probability": 0.9487826824188232
+          },
+          {
+            "word": "对",
+            "start": 29.4,
+            "end": 29.4,
+            "probability": 0.9594286680221558
+          },
+          {
+            "word": "我",
+            "start": 29.4,
+            "end": 29.4,
+            "probability": 0.9598921537399292
+          },
+          {
+            "word": "来",
+            "start": 29.4,
+            "end": 29.4,
+            "probability": 0.8951458930969238
+          },
+          {
+            "word": "的",
+            "start": 29.4,
+            "end": 29.4,
+            "probability": 0.9479003548622131
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "seek": 0,
+        "start": 29.4,
+        "end": 29.4,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.2969699913347271,
+        "compression_ratio": 8.4,
+        "no_speech_prob": 0.5748421549797058,
+        "words": []
+      },
+      {
+        "id": 10,
+        "seek": 0,
+        "start": 29.4,
+        "end": 29.4,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.2969699913347271,
+        "compression_ratio": 8.4,
+        "no_speech_prob": 0.5748421549797058,
+        "words": []
+      },
+      {
+        "id": 11,
+        "seek": 0,
+        "start": 29.4,
+        "end": 29.4,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.2969699913347271,
+        "compression_ratio": 8.4,
+        "no_speech_prob": 0.5748421549797058,
+        "words": []
+      },
+      {
+        "id": 12,
+        "seek": 0,
+        "start": 29.4,
+        "end": 29.4,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.2969699913347271,
+        "compression_ratio": 8.4,
+        "no_speech_prob": 0.5748421549797058,
+        "words": []
+      },
+      {
+        "id": 13,
+        "seek": 0,
+        "start": 29.4,
+        "end": 29.98,
+        "text": "我以为你对我来的",
+        "tokens": [
+          51664,
+          1654,
+          3588,
+          13992,
+          2166,
+          8713,
+          1654,
+          6912,
+          1546,
+          51764
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.2969699913347271,
+        "compression_ratio": 8.4,
+        "no_speech_prob": 0.5748421549797058,
+        "words": [
+          {
+            "word": "我",
+            "start": 29.4,
+            "end": 29.4,
+            "probability": 0.9182369709014893
+          },
+          {
+            "word": "以",
+            "start": 29.4,
+            "end": 29.4,
+            "probability": 0.9533215165138245
+          },
+          {
+            "word": "为",
+            "start": 29.4,
+            "end": 29.4,
+            "probability": 0.9355435371398926
+          },
+          {
+            "word": "你",
+            "start": 29.4,
+            "end": 29.98,
+            "probability": 0.9580687880516052
+          },
+          {
+            "word": "对",
+            "start": 29.98,
+            "end": 29.98,
+            "probability": 0.9673906564712524
+          },
+          {
+            "word": "我",
+            "start": 29.98,
+            "end": 29.98,
+            "probability": 0.9580378532409668
+          },
+          {
+            "word": "来",
+            "start": 29.98,
+            "end": 29.98,
+            "probability": 0.857978880405426
+          },
+          {
+            "word": "的",
+            "start": 29.98,
+            "end": 29.98,
+            "probability": 0.9655980467796326
+          }
+        ]
+      },
+      {
+        "id": 14,
+        "seek": 2998,
+        "start": 33.7,
+        "end": 36.16,
+        "text": "《夜夜夹心》",
+        "tokens": [
+          50364,
+          9806,
+          30124,
+          30124,
+          1787,
+          117,
+          7945,
+          9782,
+          50564
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.818453311920166,
+        "compression_ratio": 1.2105263157894737,
+        "no_speech_prob": 0.7864592671394348,
+        "words": [
+          {
+            "word": "《",
+            "start": 33.7,
+            "end": 34.46,
+            "probability": 0.007905499078333378
+          },
+          {
+            "word": "夜",
+            "start": 34.46,
+            "end": 34.46,
+            "probability": 0.2770109474658966
+          },
+          {
+            "word": "夜",
+            "start": 34.46,
+            "end": 34.88,
+            "probability": 0.1386445313692093
+          },
+          {
+            "word": "夹",
+            "start": 34.88,
+            "end": 35.38,
+            "probability": 0.1827055886387825
+          },
+          {
+            "word": "心",
+            "start": 35.38,
+            "end": 35.7,
+            "probability": 0.2071557641029358
+          },
+          {
+            "word": "》",
+            "start": 35.7,
+            "end": 36.16,
+            "probability": 0.8168262839317322
+          }
+        ]
+      },
+      {
+        "id": 15,
+        "seek": 2998,
+        "start": 36.16,
+        "end": 39.64,
+        "text": "夜夜夹心 夜夜夹心",
+        "tokens": [
+          50564,
+          30124,
+          30124,
+          1787,
+          117,
+          7945,
+          220,
+          30124,
+          30124,
+          1787,
+          117,
+          7945,
+          50764
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.818453311920166,
+        "compression_ratio": 1.2105263157894737,
+        "no_speech_prob": 0.7864592671394348,
+        "words": [
+          {
+            "word": "夜",
+            "start": 36.16,
+            "end": 36.3,
+            "probability": 0.33500033617019653
+          },
+          {
+            "word": "夜",
+            "start": 36.3,
+            "end": 36.66,
+            "probability": 0.058713220059871674
+          },
+          {
+            "word": "夹",
+            "start": 36.66,
+            "end": 37.26,
+            "probability": 0.8484866321086884
+          },
+          {
+            "word": "心",
+            "start": 37.26,
+            "end": 37.98,
+            "probability": 0.8566303849220276
+          },
+          {
+            "word": " 夜",
+            "start": 38.64,
+            "end": 38.64,
+            "probability": 0.004978484474122524
+          },
+          {
+            "word": "夜",
+            "start": 38.64,
+            "end": 39.28,
+            "probability": 0.47302791476249695
+          },
+          {
+            "word": "夹",
+            "start": 39.28,
+            "end": 39.64,
+            "probability": 0.6580227017402649
+          },
+          {
+            "word": "心",
+            "start": 39.64,
+            "end": 39.64,
+            "probability": 0.9406734704971313
+          }
+        ]
+      },
+      {
+        "id": 16,
+        "seek": 2998,
+        "start": 39.64,
+        "end": 43.56,
+        "text": "夜夜夹心 探紧起切为军阻心以赐取",
+        "tokens": [
+          50764,
+          30124,
+          30124,
+          1787,
+          117,
+          7945,
+          220,
+          6900,
+          95,
+          7732,
+          100,
+          9147,
+          23632,
+          13992,
+          5676,
+          249,
+          10034,
+          119,
+          7945,
+          3588,
+          5266,
+          238,
+          29436,
+          51064
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.818453311920166,
+        "compression_ratio": 1.2105263157894737,
+        "no_speech_prob": 0.7864592671394348,
+        "words": [
+          {
+            "word": "夜",
+            "start": 39.64,
+            "end": 39.88,
+            "probability": 0.001822429010644555
+          },
+          {
+            "word": "夜",
+            "start": 39.88,
+            "end": 39.88,
+            "probability": 0.4736614525318146
+          },
+          {
+            "word": "夹",
+            "start": 39.88,
+            "end": 39.88,
+            "probability": 0.7845314741134644
+          },
+          {
+            "word": "心",
+            "start": 39.88,
+            "end": 39.88,
+            "probability": 0.9742138981819153
+          },
+          {
+            "word": " 探",
+            "start": 39.88,
+            "end": 40.06,
+            "probability": 0.503183051943779
+          },
+          {
+            "word": "紧",
+            "start": 40.06,
+            "end": 40.28,
+            "probability": 0.5045322328805923
+          },
+          {
+            "word": "起",
+            "start": 40.28,
+            "end": 40.68,
+            "probability": 0.07037898898124695
+          },
+          {
+            "word": "切",
+            "start": 40.68,
+            "end": 41.0,
+            "probability": 0.1523391455411911
+          },
+          {
+            "word": "为",
+            "start": 41.0,
+            "end": 41.32,
+            "probability": 0.6698723435401917
+          },
+          {
+            "word": "军",
+            "start": 41.32,
+            "end": 41.6,
+            "probability": 0.6713335812091827
+          },
+          {
+            "word": "阻",
+            "start": 41.6,
+            "end": 41.88,
+            "probability": 0.5292634963989258
+          },
+          {
+            "word": "心",
+            "start": 41.88,
+            "end": 42.2,
+            "probability": 0.44898882508277893
+          },
+          {
+            "word": "以",
+            "start": 42.2,
+            "end": 42.58,
+            "probability": 0.39121976494789124
+          },
+          {
+            "word": "赐",
+            "start": 42.58,
+            "end": 43.1,
+            "probability": 0.33571504056453705
+          },
+          {
+            "word": "取",
+            "start": 43.1,
+            "end": 43.56,
+            "probability": 0.7524601817131042
+          }
+        ]
+      },
+      {
+        "id": 17,
+        "seek": 2998,
+        "start": 43.56,
+        "end": 46.94,
+        "text": "不过教习一却",
+        "tokens": [
+          51064,
+          1960,
+          16866,
+          21936,
+          2930,
+          254,
+          2257,
+          5322,
+          112,
+          51214
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.818453311920166,
+        "compression_ratio": 1.2105263157894737,
+        "no_speech_prob": 0.7864592671394348,
+        "words": [
+          {
+            "word": "不",
+            "start": 43.56,
+            "end": 44.44,
+            "probability": 0.3334929645061493
+          },
+          {
+            "word": "过",
+            "start": 44.44,
+            "end": 44.76,
+            "probability": 0.983941376209259
+          },
+          {
+            "word": "教",
+            "start": 44.76,
+            "end": 45.02,
+            "probability": 0.19335056841373444
+          },
+          {
+            "word": "习",
+            "start": 45.02,
+            "end": 45.44,
+            "probability": 0.6155496388673782
+          },
+          {
+            "word": "一",
+            "start": 45.44,
+            "end": 45.9,
+            "probability": 0.22043026983737946
+          },
+          {
+            "word": "却",
+            "start": 45.9,
+            "end": 46.94,
+            "probability": 0.6567432880401611
+          }
+        ]
+      },
+      {
+        "id": 18,
+        "seek": 2998,
+        "start": 46.94,
+        "end": 51.66,
+        "text": "忘了三季 学分飞要留啊",
+        "tokens": [
+          51214,
+          26677,
+          2289,
+          10960,
+          8052,
+          96,
+          220,
+          29618,
+          6627,
+          11808,
+          252,
+          4275,
+          24456,
+          4905,
+          51464
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.818453311920166,
+        "compression_ratio": 1.2105263157894737,
+        "no_speech_prob": 0.7864592671394348,
+        "words": [
+          {
+            "word": "忘",
+            "start": 46.94,
+            "end": 47.58,
+            "probability": 0.26929783821105957
+          },
+          {
+            "word": "了",
+            "start": 47.58,
+            "end": 47.82,
+            "probability": 0.6979937553405762
+          },
+          {
+            "word": "三",
+            "start": 47.82,
+            "end": 48.32,
+            "probability": 0.8132289052009583
+          },
+          {
+            "word": "季",
+            "start": 48.32,
+            "end": 48.9,
+            "probability": 0.6310478746891022
+          },
+          {
+            "word": " 学",
+            "start": 49.04,
+            "end": 49.56,
+            "probability": 0.3963533639907837
+          },
+          {
+            "word": "分",
+            "start": 49.56,
+            "end": 50.3,
+            "probability": 0.27721086144447327
+          },
+          {
+            "word": "飞",
+            "start": 50.3,
+            "end": 50.66,
+            "probability": 0.8305436372756958
+          },
+          {
+            "word": "要",
+            "start": 50.66,
+            "end": 50.98,
+            "probability": 0.1303114891052246
+          },
+          {
+            "word": "留",
+            "start": 50.98,
+            "end": 51.3,
+            "probability": 0.7827165126800537
+          },
+          {
+            "word": "啊",
+            "start": 51.3,
+            "end": 51.66,
+            "probability": 0.6826563477516174
+          }
+        ]
+      }
+    ],
+    "language": "zh"
+  }
+}

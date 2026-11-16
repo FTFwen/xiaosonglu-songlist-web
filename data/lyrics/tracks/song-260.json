@@ -1,0 +1,185 @@
+{
+  "schemaVersion": 1,
+  "key": "song-260",
+  "songId": 260,
+  "songName": "贝加尔湖畔",
+  "rowKey": "贝加尔湖畔",
+  "displaySongName": "贝加尔湖畔",
+  "artist": "李健",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "",
+  "audio": {
+    "url": "assets/audio/song_259.m4a?v=6dec1a7f759a",
+    "sha256": "6dec1a7f759a7e911aaa3e1c16181d5a0394ae50e57da8bb2517b2319c9adcff"
+  },
+  "retrievedAt": "2026-11-16T04:05:46.562Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E8%B4%9D%E5%8A%A0%E5%B0%94%E6%B9%96%E7%95%94&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E8%B4%9D%E5%8A%A0%E5%B0%94%E6%B9%96%E7%95%94%20%E6%9D%8E%E5%81%A5&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 109998,
+        "name": "贝加尔湖畔",
+        "artists": [
+          "李健"
+        ],
+        "album": "依然",
+        "durationMs": 245600,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1832737291,
+        "name": "贝加尔湖畔",
+        "artists": [
+          "迷嗓",
+          "李健"
+        ],
+        "album": "专属天使",
+        "durationMs": 243490,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1296100883,
+        "name": "贝加尔湖畔",
+        "artists": [
+          "大伟老师",
+          "牟晋博"
+        ],
+        "album": "雅韵之声艺术中心（少儿）学员演唱作品",
+        "durationMs": 146050,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3403403853,
+        "name": "贝加尔湖畔",
+        "artists": [
+          "林知微"
+        ],
+        "album": "贝加尔湖畔",
+        "durationMs": 131472,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 502238427,
+        "name": "贝加尔湖畔",
+        "artists": [
+          "王晰"
+        ],
+        "album": "Low C的诱惑2",
+        "durationMs": 209475,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2736209355,
+        "name": "贝加尔湖畔",
+        "artists": [
+          "小石头和孩子们"
+        ],
+        "album": "",
+        "durationMs": 245655,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 31877245,
+        "name": "贝加尔湖畔 (Live)",
+        "artists": [
+          "李健"
+        ],
+        "album": "我是歌手第三季 第4期",
+        "durationMs": 318439,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      },
+      {
+        "id": 2730182206,
+        "name": "贝加尔湖畔(DJ版)",
+        "artists": [
+          "李健"
+        ],
+        "album": "贝加尔湖畔 (DJ阿福 Remix)",
+        "durationMs": 392399,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      }
+    ],
+    "workQuery": {
+      "song_id": 260,
+      "song_name": "贝加尔湖畔",
+      "show_as_song_name": "",
+      "display_song_name": "贝加尔湖畔",
+      "artist": "李健",
+      "artist_search": "李健",
+      "feat_artist": "",
+      "remark": "",
+      "tone": "",
+      "language": "中文",
+      "type": "流行",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1UkaS6zEk3/?p=14",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-02",
+      "row_key": "贝加尔湖畔"
+    },
+    "sourceId": 109998,
+    "sourcePath": "sources/109998.json",
+    "sourceUrl": "https://music.163.com/#/song?id=109998",
+    "selected": {
+      "id": 109998,
+      "name": "贝加尔湖畔",
+      "artists": [
+        "李健"
+      ],
+      "album": "依然",
+      "durationMs": 245600,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 18
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-260-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 245.312,
+    "sourceFirstLine": {
+      "t": 48.2,
+      "text": "在我的怀里 在你的眼里"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 21.22,
+      "endSeconds": 21.38,
+      "similarity": 0.2857142857142857,
+      "recognizedText": "我认为你",
+      "meanProbability": 0.238,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

@@ -1,0 +1,916 @@
+{
+  "audioSha256": "485ee6badfc6557a7a6cf37241338371bdae3bb6d5073ecaa4d94649db6abdd4",
+  "model": "whisper-base",
+  "start": 0,
+  "end": 35,
+  "result": {
+    "text": "これがコツァー唱来るスモー滑ってなからスタッとネララー笑ってイキルコとかかれになるのまたもねかいたかなるからもなにもいつはないでよおー應該是非理論上の所会でスタッフの音が出てくる",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 0.0,
+        "end": 2.0,
+        "text": "これがコツァー唱来る",
+        "tokens": [
+          50364,
+          9329,
+          5142,
+          18066,
+          39406,
+          36151,
+          3384,
+          39861,
+          6912,
+          4895,
+          50464
+        ],
+        "temperature": 0,
+        "avg_logprob": -1.0189842455314868,
+        "compression_ratio": 1.3928571428571428,
+        "no_speech_prob": 0.04087704047560692,
+        "words": [
+          {
+            "word": "これ",
+            "start": 0.0,
+            "end": 1.14,
+            "probability": 0.1649632751941681
+          },
+          {
+            "word": "が",
+            "start": 1.14,
+            "end": 1.28,
+            "probability": 0.23432429134845734
+          },
+          {
+            "word": "コ",
+            "start": 1.28,
+            "end": 1.28,
+            "probability": 0.03788728639483452
+          },
+          {
+            "word": "ツ",
+            "start": 1.28,
+            "end": 1.36,
+            "probability": 0.15068624913692474
+          },
+          {
+            "word": "ァ",
+            "start": 1.36,
+            "end": 1.42,
+            "probability": 0.42536836862564087
+          },
+          {
+            "word": "ー",
+            "start": 1.42,
+            "end": 1.5,
+            "probability": 0.4443444013595581
+          },
+          {
+            "word": "唱",
+            "start": 1.5,
+            "end": 1.66,
+            "probability": 0.3054440915584564
+          },
+          {
+            "word": "来",
+            "start": 1.66,
+            "end": 1.84,
+            "probability": 0.2610454559326172
+          },
+          {
+            "word": "る",
+            "start": 1.84,
+            "end": 2.1799999999999997,
+            "probability": 0.45257291197776794
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "seek": 0,
+        "start": 2.88,
+        "end": 4.36,
+        "text": "スモー",
+        "tokens": [
+          50464,
+          9550,
+          29183,
+          3384,
+          50564
+        ],
+        "temperature": 0,
+        "avg_logprob": -1.0189842455314868,
+        "compression_ratio": 1.3928571428571428,
+        "no_speech_prob": 0.04087704047560692,
+        "words": [
+          {
+            "word": "ス",
+            "start": 2.88,
+            "end": 3.0,
+            "probability": 0.0036879389081150293
+          },
+          {
+            "word": "モ",
+            "start": 3.0,
+            "end": 3.18,
+            "probability": 0.1861942857503891
+          },
+          {
+            "word": "ー",
+            "start": 3.18,
+            "end": 4.36,
+            "probability": 0.46234145760536194
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "seek": 0,
+        "start": 4.36,
+        "end": 5.74,
+        "text": "滑ってなから",
+        "tokens": [
+          50564,
+          15868,
+          239,
+          6102,
+          3203,
+          11046,
+          50664
+        ],
+        "temperature": 0,
+        "avg_logprob": -1.0189842455314868,
+        "compression_ratio": 1.3928571428571428,
+        "no_speech_prob": 0.04087704047560692,
+        "words": [
+          {
+            "word": "滑",
+            "start": 4.36,
+            "end": 4.52,
+            "probability": 0.4434337532147765
+          },
+          {
+            "word": "って",
+            "start": 4.52,
+            "end": 4.9,
+            "probability": 0.8514683842658997
+          },
+          {
+            "word": "な",
+            "start": 4.9,
+            "end": 5.24,
+            "probability": 0.45961007475852966
+          },
+          {
+            "word": "から",
+            "start": 5.24,
+            "end": 5.74,
+            "probability": 0.2830214500427246
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "seek": 0,
+        "start": 5.74,
+        "end": 6.7,
+        "text": "スタッと",
+        "tokens": [
+          50664,
+          9550,
+          12144,
+          8276,
+          3193,
+          50700
+        ],
+        "temperature": 0,
+        "avg_logprob": -1.0189842455314868,
+        "compression_ratio": 1.3928571428571428,
+        "no_speech_prob": 0.04087704047560692,
+        "words": [
+          {
+            "word": "ス",
+            "start": 5.74,
+            "end": 6.18,
+            "probability": 0.5544412136077881
+          },
+          {
+            "word": "タ",
+            "start": 6.18,
+            "end": 6.38,
+            "probability": 0.4631260633468628
+          },
+          {
+            "word": "ッ",
+            "start": 6.38,
+            "end": 6.62,
+            "probability": 0.7544634938240051
+          },
+          {
+            "word": "と",
+            "start": 6.62,
+            "end": 6.7,
+            "probability": 0.14183080196380615
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "seek": 0,
+        "start": 6.7,
+        "end": 7.92,
+        "text": "ネララー",
+        "tokens": [
+          50700,
+          1047,
+          235,
+          11353,
+          11353,
+          3384,
+          50748
+        ],
+        "temperature": 0,
+        "avg_logprob": -1.0189842455314868,
+        "compression_ratio": 1.3928571428571428,
+        "no_speech_prob": 0.04087704047560692,
+        "words": [
+          {
+            "word": "ネ",
+            "start": 6.7,
+            "end": 7.06,
+            "probability": 0.4875088781118393
+          },
+          {
+            "word": "ラ",
+            "start": 7.06,
+            "end": 7.2,
+            "probability": 0.5949718356132507
+          },
+          {
+            "word": "ラ",
+            "start": 7.2,
+            "end": 7.46,
+            "probability": 0.7792033553123474
+          },
+          {
+            "word": "ー",
+            "start": 7.46,
+            "end": 7.92,
+            "probability": 0.06217281520366669
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "seek": 0,
+        "start": 7.92,
+        "end": 9.2,
+        "text": "笑って",
+        "tokens": [
+          50748,
+          11600,
+          6102,
+          50848
+        ],
+        "temperature": 0,
+        "avg_logprob": -1.0189842455314868,
+        "compression_ratio": 1.3928571428571428,
+        "no_speech_prob": 0.04087704047560692,
+        "words": [
+          {
+            "word": "笑",
+            "start": 7.92,
+            "end": 8.16,
+            "probability": 0.793182373046875
+          },
+          {
+            "word": "って",
+            "start": 8.16,
+            "end": 9.2,
+            "probability": 0.9317850470542908
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "seek": 0,
+        "start": 9.2,
+        "end": 11.18,
+        "text": "イキルコと",
+        "tokens": [
+          50848,
+          8040,
+          15535,
+          9405,
+          18066,
+          3193,
+          50924
+        ],
+        "temperature": 0,
+        "avg_logprob": -1.0189842455314868,
+        "compression_ratio": 1.3928571428571428,
+        "no_speech_prob": 0.04087704047560692,
+        "words": [
+          {
+            "word": "イ",
+            "start": 9.2,
+            "end": 10.24,
+            "probability": 0.05396677553653717
+          },
+          {
+            "word": "キ",
+            "start": 10.24,
+            "end": 10.38,
+            "probability": 0.3040265142917633
+          },
+          {
+            "word": "ル",
+            "start": 10.38,
+            "end": 10.6,
+            "probability": 0.5786853432655334
+          },
+          {
+            "word": "コ",
+            "start": 10.6,
+            "end": 10.94,
+            "probability": 0.32455042004585266
+          },
+          {
+            "word": "と",
+            "start": 10.94,
+            "end": 11.18,
+            "probability": 0.1284341812133789
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "seek": 0,
+        "start": 11.18,
+        "end": 13.22,
+        "text": "かかれになるの",
+        "tokens": [
+          50924,
+          3703,
+          3703,
+          4132,
+          22615,
+          4895,
+          2972,
+          51036
+        ],
+        "temperature": 0,
+        "avg_logprob": -1.0189842455314868,
+        "compression_ratio": 1.3928571428571428,
+        "no_speech_prob": 0.04087704047560692,
+        "words": [
+          {
+            "word": "か",
+            "start": 11.18,
+            "end": 11.62,
+            "probability": 0.21451379358768463
+          },
+          {
+            "word": "か",
+            "start": 11.62,
+            "end": 12.0,
+            "probability": 0.8168794512748718
+          },
+          {
+            "word": "れ",
+            "start": 12.0,
+            "end": 12.26,
+            "probability": 0.6844101548194885
+          },
+          {
+            "word": "にな",
+            "start": 12.26,
+            "end": 12.66,
+            "probability": 0.956137478351593
+          },
+          {
+            "word": "る",
+            "start": 12.66,
+            "end": 12.94,
+            "probability": 0.8970146179199219
+          },
+          {
+            "word": "の",
+            "start": 12.94,
+            "end": 13.22,
+            "probability": 0.9592265486717224
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "seek": 0,
+        "start": 13.22,
+        "end": 14.62,
+        "text": "またも",
+        "tokens": [
+          51036,
+          24712,
+          4801,
+          51092
+        ],
+        "temperature": 0,
+        "avg_logprob": -1.0189842455314868,
+        "compression_ratio": 1.3928571428571428,
+        "no_speech_prob": 0.04087704047560692,
+        "words": [
+          {
+            "word": "また",
+            "start": 13.22,
+            "end": 13.98,
+            "probability": 0.5120018720626831
+          },
+          {
+            "word": "も",
+            "start": 13.98,
+            "end": 14.62,
+            "probability": 0.6827905178070068
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "seek": 0,
+        "start": 14.62,
+        "end": 17.46,
+        "text": "ねかいたかなるから",
+        "tokens": [
+          51092,
+          5555,
+          3703,
+          17679,
+          24939,
+          4895,
+          11046,
+          51256
+        ],
+        "temperature": 0,
+        "avg_logprob": -1.0189842455314868,
+        "compression_ratio": 1.3928571428571428,
+        "no_speech_prob": 0.04087704047560692,
+        "words": [
+          {
+            "word": "ね",
+            "start": 14.62,
+            "end": 14.98,
+            "probability": 0.3317125737667084
+          },
+          {
+            "word": "か",
+            "start": 14.98,
+            "end": 15.3,
+            "probability": 0.4126150608062744
+          },
+          {
+            "word": "いた",
+            "start": 15.3,
+            "end": 15.94,
+            "probability": 0.5873713493347168
+          },
+          {
+            "word": "かな",
+            "start": 15.94,
+            "end": 16.58,
+            "probability": 0.3001779615879059
+          },
+          {
+            "word": "る",
+            "start": 16.58,
+            "end": 16.92,
+            "probability": 0.9698456525802612
+          },
+          {
+            "word": "から",
+            "start": 16.92,
+            "end": 17.46,
+            "probability": 0.9799526333808899
+          }
+        ]
+      },
+      {
+        "id": 10,
+        "seek": 0,
+        "start": 17.46,
+        "end": 19.06,
+        "text": "もなにも",
+        "tokens": [
+          51256,
+          4801,
+          3203,
+          4108,
+          4801,
+          51324
+        ],
+        "temperature": 0,
+        "avg_logprob": -1.0189842455314868,
+        "compression_ratio": 1.3928571428571428,
+        "no_speech_prob": 0.04087704047560692,
+        "words": [
+          {
+            "word": "も",
+            "start": 17.46,
+            "end": 18.14,
+            "probability": 0.6886128187179565
+          },
+          {
+            "word": "な",
+            "start": 18.14,
+            "end": 18.48,
+            "probability": 0.4085608124732971
+          },
+          {
+            "word": "に",
+            "start": 18.48,
+            "end": 18.66,
+            "probability": 0.9337865710258484
+          },
+          {
+            "word": "も",
+            "start": 18.66,
+            "end": 19.06,
+            "probability": 0.9919641017913818
+          }
+        ]
+      },
+      {
+        "id": 11,
+        "seek": 0,
+        "start": 19.06,
+        "end": 21.66,
+        "text": "いつはないでよ",
+        "tokens": [
+          51324,
+          40162,
+          3065,
+          9311,
+          2474,
+          5591,
+          51448
+        ],
+        "temperature": 0,
+        "avg_logprob": -1.0189842455314868,
+        "compression_ratio": 1.3928571428571428,
+        "no_speech_prob": 0.04087704047560692,
+        "words": [
+          {
+            "word": "いつ",
+            "start": 19.06,
+            "end": 19.64,
+            "probability": 0.021707311272621155
+          },
+          {
+            "word": "は",
+            "start": 19.64,
+            "end": 19.94,
+            "probability": 0.3823109269142151
+          },
+          {
+            "word": "ない",
+            "start": 19.94,
+            "end": 20.58,
+            "probability": 0.6198329925537109
+          },
+          {
+            "word": "で",
+            "start": 20.58,
+            "end": 21.02,
+            "probability": 0.31620922684669495
+          },
+          {
+            "word": "よ",
+            "start": 21.02,
+            "end": 21.66,
+            "probability": 0.9293042421340942
+          }
+        ]
+      },
+      {
+        "id": 12,
+        "seek": 0,
+        "start": 23.32,
+        "end": 24.6,
+        "text": "おー",
+        "tokens": [
+          51548,
+          6117,
+          3384,
+          51596
+        ],
+        "temperature": 0,
+        "avg_logprob": -1.0189842455314868,
+        "compression_ratio": 1.3928571428571428,
+        "no_speech_prob": 0.04087704047560692,
+        "words": [
+          {
+            "word": "お",
+            "start": 23.32,
+            "end": 24.0,
+            "probability": 0.12026704102754593
+          },
+          {
+            "word": "ー",
+            "start": 24.0,
+            "end": 24.6,
+            "probability": 0.29727739095687866
+          }
+        ]
+      },
+      {
+        "id": 13,
+        "seek": 0,
+        "start": 24.6,
+        "end": 25.12,
+        "text": "應該是非",
+        "tokens": [
+          51596,
+          26087,
+          1541,
+          12107,
+          51648
+        ],
+        "temperature": 0,
+        "avg_logprob": -1.0189842455314868,
+        "compression_ratio": 1.3928571428571428,
+        "no_speech_prob": 0.04087704047560692,
+        "words": [
+          {
+            "word": "應該",
+            "start": 24.6,
+            "end": 24.94,
+            "probability": 0.12817390263080597
+          },
+          {
+            "word": "是",
+            "start": 24.94,
+            "end": 25.1,
+            "probability": 0.21405614912509918
+          },
+          {
+            "word": "非",
+            "start": 25.1,
+            "end": 25.12,
+            "probability": 0.9597341418266296
+          }
+        ]
+      },
+      {
+        "id": 14,
+        "seek": 0,
+        "start": 25.12,
+        "end": 28.42,
+        "text": "理論上の所会で",
+        "tokens": [
+          51736,
+          13876,
+          29340,
+          5708,
+          2972,
+          5966,
+          12949,
+          2474,
+          51836
+        ],
+        "temperature": 0,
+        "avg_logprob": -1.0189842455314868,
+        "compression_ratio": 1.3928571428571428,
+        "no_speech_prob": 0.04087704047560692,
+        "words": [
+          {
+            "word": "理",
+            "start": 25.12,
+            "end": 25.74,
+            "probability": 0.0002610440133139491
+          },
+          {
+            "word": "論",
+            "start": 25.74,
+            "end": 25.74,
+            "probability": 0.9831897020339966
+          },
+          {
+            "word": "上",
+            "start": 25.74,
+            "end": 27.98,
+            "probability": 0.9232028722763062
+          },
+          {
+            "word": "の",
+            "start": 27.98,
+            "end": 28.04,
+            "probability": 0.09765131026506424
+          },
+          {
+            "word": "所",
+            "start": 28.04,
+            "end": 28.12,
+            "probability": 0.459695041179657
+          },
+          {
+            "word": "会",
+            "start": 28.12,
+            "end": 28.28,
+            "probability": 0.15575136244297028
+          },
+          {
+            "word": "で",
+            "start": 28.28,
+            "end": 28.42,
+            "probability": 0.20731987059116364
+          }
+        ]
+      },
+      {
+        "id": 15,
+        "seek": 3000,
+        "start": 33.58,
+        "end": 34.98,
+        "text": "スタッフの音が出てくる",
+        "tokens": [
+          50364,
+          9550,
+          12144,
+          8276,
+          17320,
+          2972,
+          18034,
+          5142,
+          7781,
+          2996,
+          6134,
+          4895,
+          50564
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.3961301003732989,
+        "compression_ratio": 4.914893617021277,
+        "no_speech_prob": 0.7850927710533142,
+        "words": [
+          {
+            "word": "ス",
+            "start": 33.58,
+            "end": 34.98,
+            "probability": 0.011031095869839191
+          },
+          {
+            "word": "タ",
+            "start": 34.98,
+            "end": 34.98,
+            "probability": 0.1344042271375656
+          },
+          {
+            "word": "ッ",
+            "start": 34.98,
+            "end": 34.98,
+            "probability": 0.5083411931991577
+          },
+          {
+            "word": "フ",
+            "start": 34.98,
+            "end": 34.98,
+            "probability": 0.8943191170692444
+          },
+          {
+            "word": "の",
+            "start": 34.98,
+            "end": 34.98,
+            "probability": 0.1533031314611435
+          },
+          {
+            "word": "音",
+            "start": 34.98,
+            "end": 34.98,
+            "probability": 0.020297951996326447
+          },
+          {
+            "word": "が",
+            "start": 34.98,
+            "end": 34.98,
+            "probability": 0.21365927159786224
+          },
+          {
+            "word": "出",
+            "start": 34.98,
+            "end": 34.98,
+            "probability": 0.034876007586717606
+          },
+          {
+            "word": "て",
+            "start": 34.98,
+            "end": 34.98,
+            "probability": 0.38738390803337097
+          },
+          {
+            "word": "く",
+            "start": 34.98,
+            "end": 34.98,
+            "probability": 0.15188586711883545
+          },
+          {
+            "word": "る",
+            "start": 34.98,
+            "end": 34.98,
+            "probability": 0.39106905460357666
+          }
+        ]
+      },
+      {
+        "id": 16,
+        "seek": 3000,
+        "start": 34.98,
+        "end": 34.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.3961301003732989,
+        "compression_ratio": 4.914893617021277,
+        "no_speech_prob": 0.7850927710533142,
+        "words": []
+      },
+      {
+        "id": 17,
+        "seek": 3000,
+        "start": 34.98,
+        "end": 34.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.3961301003732989,
+        "compression_ratio": 4.914893617021277,
+        "no_speech_prob": 0.7850927710533142,
+        "words": []
+      },
+      {
+        "id": 18,
+        "seek": 3000,
+        "start": 34.98,
+        "end": 34.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.3961301003732989,
+        "compression_ratio": 4.914893617021277,
+        "no_speech_prob": 0.7850927710533142,
+        "words": []
+      },
+      {
+        "id": 19,
+        "seek": 3000,
+        "start": 34.98,
+        "end": 34.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.3961301003732989,
+        "compression_ratio": 4.914893617021277,
+        "no_speech_prob": 0.7850927710533142,
+        "words": []
+      },
+      {
+        "id": 20,
+        "seek": 3000,
+        "start": 34.98,
+        "end": 34.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.3961301003732989,
+        "compression_ratio": 4.914893617021277,
+        "no_speech_prob": 0.7850927710533142,
+        "words": []
+      },
+      {
+        "id": 21,
+        "seek": 3000,
+        "start": 34.98,
+        "end": 34.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.3961301003732989,
+        "compression_ratio": 4.914893617021277,
+        "no_speech_prob": 0.7850927710533142,
+        "words": []
+      },
+      {
+        "id": 22,
+        "seek": 3498,
+        "start": 34.96,
+        "end": 34.96,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.10233116997612847,
+        "compression_ratio": 20.272727272727273,
+        "no_speech_prob": 0.7834448218345642,
+        "words": []
+      }
+    ],
+    "language": "ja"
+  }
+}

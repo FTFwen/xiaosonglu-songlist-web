@@ -1,0 +1,301 @@
+{
+  "audioSha256": "02600e62989e625f152b61bf798b67a7242249d77c04b06f459d856837d2b5de",
+  "model": "whisper-base",
+  "start": 0,
+  "end": 42.803,
+  "result": {
+    "text": "没有在你身头啊哎呀哎呀你哭哭家乡人心看着",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 19.900000000000002,
+        "end": 21.3,
+        "text": "没有",
+        "tokens": [
+          50364,
+          17944,
+          50396
+        ],
+        "temperature": 0,
+        "avg_logprob": -1.1269256046840124,
+        "compression_ratio": 0.65625,
+        "no_speech_prob": 0.04131053015589714,
+        "words": [
+          {
+            "word": "没有",
+            "start": 19.900000000000002,
+            "end": 21.3,
+            "probability": 0.029106972739100456
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "seek": 0,
+        "start": 23.12,
+        "end": 25.46,
+        "text": "在你身头",
+        "tokens": [
+          51520,
+          3581,
+          2166,
+          19847,
+          39862,
+          51660
+        ],
+        "temperature": 0,
+        "avg_logprob": -1.1269256046840124,
+        "compression_ratio": 0.65625,
+        "no_speech_prob": 0.04131053015589714,
+        "words": [
+          {
+            "word": "在",
+            "start": 22.720000000000002,
+            "end": 23.42,
+            "probability": 0.2892538905143738
+          },
+          {
+            "word": "你",
+            "start": 23.42,
+            "end": 24.5,
+            "probability": 0.9496493935585022
+          },
+          {
+            "word": "身",
+            "start": 24.5,
+            "end": 24.96,
+            "probability": 0.6325972676277161
+          },
+          {
+            "word": "头",
+            "start": 24.96,
+            "end": 25.46,
+            "probability": 0.41910508275032043
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "seek": 0,
+        "start": 25.46,
+        "end": 26.44,
+        "text": "啊",
+        "tokens": [
+          51660,
+          4905,
+          51728
+        ],
+        "temperature": 0,
+        "avg_logprob": -1.1269256046840124,
+        "compression_ratio": 0.65625,
+        "no_speech_prob": 0.04131053015589714,
+        "words": [
+          {
+            "word": "啊",
+            "start": 25.46,
+            "end": 26.44,
+            "probability": 0.6958224773406982
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "seek": 2644,
+        "start": 26.44,
+        "end": 28.84,
+        "text": "哎呀",
+        "tokens": [
+          50364,
+          26755,
+          15348,
+          50389
+        ],
+        "temperature": 0,
+        "avg_logprob": -1.3434402202737743,
+        "compression_ratio": 0.8863636363636364,
+        "no_speech_prob": 0.5408384203910828,
+        "words": [
+          {
+            "word": "哎",
+            "start": 26.44,
+            "end": 28.54,
+            "probability": 0.04898804426193237
+          },
+          {
+            "word": "呀",
+            "start": 28.54,
+            "end": 28.84,
+            "probability": 0.42610669136047363
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "seek": 2644,
+        "start": 28.84,
+        "end": 29.66,
+        "text": "哎呀",
+        "tokens": [
+          50464,
+          26755,
+          15348,
+          50514
+        ],
+        "temperature": 0,
+        "avg_logprob": -1.3434402202737743,
+        "compression_ratio": 0.8863636363636364,
+        "no_speech_prob": 0.5408384203910828,
+        "words": [
+          {
+            "word": "哎",
+            "start": 28.84,
+            "end": 29.5,
+            "probability": 0.29827189445495605
+          },
+          {
+            "word": "呀",
+            "start": 29.5,
+            "end": 29.66,
+            "probability": 0.8793103694915771
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "seek": 2644,
+        "start": 29.66,
+        "end": 33.58,
+        "text": "你哭",
+        "tokens": [
+          50664,
+          2166,
+          3858,
+          255,
+          50714
+        ],
+        "temperature": 0,
+        "avg_logprob": -1.3434402202737743,
+        "compression_ratio": 0.8863636363636364,
+        "no_speech_prob": 0.5408384203910828,
+        "words": [
+          {
+            "word": "你",
+            "start": 29.66,
+            "end": 31.94,
+            "probability": 0.010184533894062042
+          },
+          {
+            "word": "哭",
+            "start": 31.94,
+            "end": 33.58,
+            "probability": 0.49235087633132935
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "seek": 2644,
+        "start": 33.58,
+        "end": 34.14,
+        "text": "哭",
+        "tokens": [
+          50764,
+          3858,
+          255,
+          50814
+        ],
+        "temperature": 0,
+        "avg_logprob": -1.3434402202737743,
+        "compression_ratio": 0.8863636363636364,
+        "no_speech_prob": 0.5408384203910828,
+        "words": [
+          {
+            "word": "哭",
+            "start": 33.58,
+            "end": 34.14,
+            "probability": 0.03684289939701557
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "seek": 2644,
+        "start": 34.14,
+        "end": 37.32,
+        "text": "家乡",
+        "tokens": [
+          50864,
+          5155,
+          2930,
+          94,
+          50914
+        ],
+        "temperature": 0,
+        "avg_logprob": -1.3434402202737743,
+        "compression_ratio": 0.8863636363636364,
+        "no_speech_prob": 0.5408384203910828,
+        "words": [
+          {
+            "word": "家",
+            "start": 34.14,
+            "end": 35.1,
+            "probability": 0.002462207805365324
+          },
+          {
+            "word": "乡",
+            "start": 35.1,
+            "end": 37.32,
+            "probability": 0.2842338904738426
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "seek": 2644,
+        "start": 39.44,
+        "end": 41.5,
+        "text": "人心看着",
+        "tokens": [
+          51014,
+          4035,
+          7945,
+          4200,
+          20708,
+          51164
+        ],
+        "temperature": 0,
+        "avg_logprob": -1.3434402202737743,
+        "compression_ratio": 0.8863636363636364,
+        "no_speech_prob": 0.5408384203910828,
+        "words": [
+          {
+            "word": "人",
+            "start": 38.86,
+            "end": 39.56,
+            "probability": 0.03708958253264427
+          },
+          {
+            "word": "心",
+            "start": 39.56,
+            "end": 40.48,
+            "probability": 0.33402571082115173
+          },
+          {
+            "word": "看",
+            "start": 40.48,
+            "end": 41.04,
+            "probability": 0.154537633061409
+          },
+          {
+            "word": "着",
+            "start": 41.04,
+            "end": 41.5,
+            "probability": 0.29445067048072815
+          }
+        ]
+      }
+    ],
+    "language": "zh"
+  }
+}

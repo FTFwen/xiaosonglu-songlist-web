@@ -1,0 +1,182 @@
+{
+  "schemaVersion": 1,
+  "key": "song-21",
+  "songId": 21,
+  "songName": "苏州河",
+  "rowKey": "苏州河",
+  "displaySongName": "苏州河",
+  "artist": "薛凯琪",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "来自 2026-08-09 第一次歌回回放 p2 后段。54-57 分钟里主播先口头说“就是苏州河啊”，随后约 55:57 开始进入正式试唱；57-60 分钟连续命中“我只是渔火，你是泡沫”“运河上的起落，惹起了烟波”“爱只是爱，伟大的爱情到头来也只是爱”等高辨识度句群，DuckDuckGo 检索结果稳定指向薛凯琪《苏州河》。59 分半后主播明确表示自己忘词，因此先按该主段入库并保留人工复核标签。",
+  "audio": {
+    "url": "assets/audio/song_53.m4a?v=2400bd295b23",
+    "sha256": "2400bd295b236381002d0439ac8c0fb78bfa11027101fac7cbf900e2cd4ea29b"
+  },
+  "retrievedAt": "2026-11-16T04:12:22.908Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E8%8B%8F%E5%B7%9E%E6%B2%B3&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E8%8B%8F%E5%B7%9E%E6%B2%B3%20%E8%96%9B%E5%87%AF%E7%90%AA&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 2699610836,
+        "name": "苏州河",
+        "artists": [
+          "南青乐队"
+        ],
+        "album": "猎人与爱",
+        "durationMs": 325040,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1991128040,
+        "name": "苏州河",
+        "artists": [
+          "Aliosha"
+        ],
+        "album": "SuZhou He",
+        "durationMs": 320875,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 308884,
+        "name": "苏州河",
+        "artists": [
+          "徐千雅"
+        ],
+        "album": "彩云之南",
+        "durationMs": 315120,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1470039599,
+        "name": "苏州河",
+        "artists": [
+          "Andrea Bocelli",
+          "那英"
+        ],
+        "album": "The Eight Hundred (Original Movie Soundtrack)",
+        "durationMs": 290795,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3339549783,
+        "name": "苏州河",
+        "artists": [
+          "江越"
+        ],
+        "album": "苏州河",
+        "durationMs": 239952,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2128179822,
+        "name": "苏州河",
+        "artists": [
+          "Freedan"
+        ],
+        "album": "苏州河",
+        "durationMs": 227754,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2089746456,
+        "name": "苏州河",
+        "artists": [
+          "Dirk"
+        ],
+        "album": "幻听",
+        "durationMs": 369898,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2108515336,
+        "name": "苏州河",
+        "artists": [
+          "苏玮"
+        ],
+        "album": "苏州河",
+        "durationMs": 248174,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 21,
+      "song_name": "苏州河",
+      "show_as_song_name": "",
+      "display_song_name": "苏州河",
+      "artist": "薛凯琪",
+      "artist_search": "薛凯琪 苏州河",
+      "feat_artist": "",
+      "remark": "来自 2026-08-09 第一次歌回回放 p2 后段。54-57 分钟里主播先口头说“就是苏州河啊”，随后约 55:57 开始进入正式试唱；57-60 分钟连续命中“我只是渔火，你是泡沫”“运河上的起落，惹起了烟波”“爱只是爱，伟大的爱情到头来也只是爱”等高辨识度句群，DuckDuckGo 检索结果稳定指向薛凯琪《苏州河》。59 分半后主播明确表示自己忘词，因此先按该主段入库并保留人工复核标签。",
+      "tone": "",
+      "language": "中文",
+      "type": "流行",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1qqum6REvu/",
+      "sing_count": 3,
+      "status_labels": "歌回、自动识别待人工复核、歌切合集复核",
+      "last_sing_at": "2026-11-08",
+      "row_key": "苏州河"
+    },
+    "sourceId": 306855,
+    "sourcePath": "sources/306855.json",
+    "sourceUrl": "https://music.163.com/#/song?id=306855",
+    "selected": {
+      "id": 306855,
+      "name": "蘇州河 (慕容雪 - Mandarin Version)",
+      "artists": [
+        "薛凯琪"
+      ],
+      "album": "Read Me",
+      "durationMs": 240520,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 55,
+    "review": {
+      "reason": "Public search/get confirms 薛凯琪 蘇州河 (慕容雪 - Mandarin Version), 240520ms. Current source is 南青乐队 same-title different song. Live lyric API returns 56 timestamped rows, first sung text 我只是渔火 你是泡沫. Traditional title/subtitle alias required; recording alignment unverified.",
+      "evidenceUrl": "https://music.163.com/api/search/get?s=%E8%8B%8F%E5%B7%9E%E6%B2%B3%20%E8%96%9B%E5%87%AF%E7%90%AA&type=1&limit=8",
+      "previousSourceId": 2699610836
+    }
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-21-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 238.613,
+    "sourceFirstLine": {
+      "t": 18.92,
+      "text": "我只是渔火 你是泡沫"
+    },
+    "anchorCandidate": null,
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

@@ -1,0 +1,183 @@
+{
+  "schemaVersion": 1,
+  "key": "song-58",
+  "songId": 58,
+  "songName": "風になる",
+  "rowKey": "風になる",
+  "displaySongName": "風になる",
+  "artist": "つじあやの",
+  "language": "日文",
+  "derivative": false,
+  "edition": "",
+  "remark": "来自 2026-08-18 歌切合集《【663645TV】神回！我已启动！全力绿来唱完了！8月18日歌切合集【小松绿Viridis】》的分P《11-風になる》。按当前 song-cut-first 策略，将合集章节名直接并入正式曲库；当前记录的是合集内顺序时间，不是原始直播回放时间。",
+  "audio": {
+    "url": "assets/audio/song_19.m4a?v=91f460e56d82",
+    "sha256": "91f460e56d8253374cfcb363d2e8bbd71867cf9803c88ec9b7557e6257109566"
+  },
+  "retrievedAt": "2026-11-16T04:02:39.946Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E9%A2%A8%E3%81%AB%E3%81%AA%E3%82%8B&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E9%A2%A8%E3%81%AB%E3%81%AA%E3%82%8B%20%E3%81%A4%E3%81%98%E3%81%82%E3%82%84%E3%81%AE&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 643034,
+        "name": "風になる",
+        "artists": [
+          "つじあやの"
+        ],
+        "album": "恋恋風歌",
+        "durationMs": 276600,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 26110153,
+        "name": "風になる",
+        "artists": [
+          "つじあやの"
+        ],
+        "album": "風になる",
+        "durationMs": 276600,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 642676,
+        "name": "風になる",
+        "artists": [
+          "つじあやの"
+        ],
+        "album": "つじベスト",
+        "durationMs": 276600,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 482172,
+        "name": "風になる",
+        "artists": [
+          "つじあやの"
+        ],
+        "album": "猫の恩返し サウンドトラック",
+        "durationMs": 249439,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 443090,
+        "name": "風になる",
+        "artists": [
+          "つじあやの"
+        ],
+        "album": "千と千寻の神隠し~ジブリ・コレクション α波オルゴール",
+        "durationMs": 283346,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 29394504,
+        "name": "風になる(猫の恩返し)",
+        "artists": [
+          "つじあやの"
+        ],
+        "album": "スタジオジブリの歌 増補盤",
+        "durationMs": 249439,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      },
+      {
+        "id": 643121,
+        "name": "風になる（Acoustic Version)",
+        "artists": [
+          "つじあやの"
+        ],
+        "album": "恋する眼鏡",
+        "durationMs": 246001,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      },
+      {
+        "id": 26110154,
+        "name": "風になる（Acoustic Version)",
+        "artists": [
+          "つじあやの"
+        ],
+        "album": "風になる",
+        "durationMs": 246001,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      }
+    ],
+    "workQuery": {
+      "song_id": 58,
+      "song_name": "風になる",
+      "show_as_song_name": "",
+      "display_song_name": "風になる",
+      "artist": "つじあやの",
+      "artist_search": "つじあやの",
+      "feat_artist": "",
+      "remark": "来自 2026-08-18 歌切合集《【663645TV】神回！我已启动！全力绿来唱完了！8月18日歌切合集【小松绿Viridis】》的分P《11-風になる》。按当前 song-cut-first 策略，将合集章节名直接并入正式曲库；当前记录的是合集内顺序时间，不是原始直播回放时间。",
+      "tone": "",
+      "language": "日文",
+      "type": "动漫、J-Pop",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1rv8V6DExk/",
+      "sing_count": 1,
+      "status_labels": "歌切合集补录、待后续回放时间定位",
+      "last_sing_at": "2026-08-18",
+      "row_key": "風になる"
+    },
+    "sourceId": 643034,
+    "sourcePath": "sources/643034.json",
+    "sourceUrl": "https://music.163.com/#/song?id=643034",
+    "selected": {
+      "id": 643034,
+      "name": "風になる",
+      "artists": [
+        "つじあやの"
+      ],
+      "album": "恋恋風歌",
+      "durationMs": 276600,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 25
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-58-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 275.946,
+    "sourceFirstLine": {
+      "t": 17.83,
+      "text": "忘れていた目を閉（と）じて 取り戻（もど）せ恋（こい）のうた"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 30.02,
+      "endSeconds": 33.44,
+      "similarity": 0.35294117647058826,
+      "recognizedText": "れている 手を伸ばしても",
+      "meanProbability": 0.913,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "ja",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

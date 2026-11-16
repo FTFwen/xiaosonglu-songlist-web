@@ -1,0 +1,205 @@
+{
+  "schemaVersion": 1,
+  "key": "derivative-1113",
+  "songId": -1113,
+  "songName": "小松绿-天狼星的心脏",
+  "rowKey": "小松绿-天狼星的心脏",
+  "displaySongName": "天狼星的心脏",
+  "artist": "白烁",
+  "language": "",
+  "derivative": true,
+  "edition": "",
+  "remark": "",
+  "audio": {
+    "url": "assets/derivative/tianlangxing-de-xinzang.mp3?v=b986e4c72837",
+    "sha256": "b986e4c72837388150ad14a35e5e58ba3c58009c476e2ab4c879cafa6152f809"
+  },
+  "retrievedAt": "2026-11-16T04:08:46.667Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E3%82%B7%E3%83%AA%E3%82%A6%E3%82%B9%E3%81%AE%E5%BF%83%E8%87%93&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E3%82%B7%E3%83%AA%E3%82%A6%E3%82%B9%E3%81%AE%E5%BF%83%E8%87%93%20%E3%83%B0%E4%B8%96%E7%95%8C%E6%83%85%E7%B7%92&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E5%A4%A9%E7%8B%BC%E6%98%9F%E7%9A%84%E5%BF%83%E8%84%8F&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1907751320,
+        "name": "シリウスの心臓",
+        "artists": [
+          "ヰ世界情緒"
+        ],
+        "album": "創生",
+        "durationMs": 298136,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2013729650,
+        "name": "シリウスの心臓",
+        "artists": [
+          "ヰ世界情緒"
+        ],
+        "album": "KAMITSUBAKI STUDIO SAMPLER Vol. 1",
+        "durationMs": 295226,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1987987485,
+        "name": "シリウスの心臓",
+        "artists": [
+          "ヰ世界情緒"
+        ],
+        "album": "CANDY LIVE",
+        "durationMs": 299880,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2047257203,
+        "name": "シリウスの心臓",
+        "artists": [
+          "熊子"
+        ],
+        "album": "シリウスの心臓",
+        "durationMs": 292761,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1996279993,
+        "name": "シリウスの心臓 (Live at Virtual, 2022)",
+        "artists": [
+          "ヰ世界情緒"
+        ],
+        "album": "Singularity Live",
+        "durationMs": 322032,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      },
+      {
+        "id": 2160468564,
+        "name": "シリウスの心臓 (天狼星的心脏)(网友改编)",
+        "artists": [
+          "ヰ世界情緒"
+        ],
+        "album": "",
+        "durationMs": 320444,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      },
+      {
+        "id": 2106473337,
+        "name": "シリウスの心臓(天狼星的心脏)[八音盒版]",
+        "artists": [
+          "黄老咩"
+        ],
+        "album": "纸带八音盒小集子",
+        "durationMs": 170362,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 2667468026,
+        "name": "シリウスの心臓 (Piano Ver.)",
+        "artists": [
+          "星辰不唏嘘"
+        ],
+        "album": "东方红的心脏",
+        "durationMs": 330096,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      }
+    ],
+    "workQuery": {
+      "song_id": -1113,
+      "song_name": "シリウスの心臓",
+      "display_song_name": "天狼星的心脏",
+      "artist": "ヰ世界情緒",
+      "language": "",
+      "audio": "assets/derivative/tianlangxing-de-xinzang.mp3?v=b986e4c72837",
+      "derivative": true
+    },
+    "sourceId": 1907751320,
+    "sourcePath": "sources/1907751320.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1907751320",
+    "selected": {
+      "id": 1907751320,
+      "name": "シリウスの心臓",
+      "artists": [
+        "ヰ世界情緒"
+      ],
+      "album": "創生",
+      "durationMs": 298136,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 33
+  },
+  "alignment": {
+    "status": "spotcheck_review_required",
+    "evidencePath": "evidence/derivative-1113-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 291.825,
+    "sourceFirstLine": {
+      "t": 0.7,
+      "text": "歌を歌うのは寂しいから"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 0.0,
+      "endSeconds": 6.86,
+      "similarity": 1.0,
+      "recognizedText": "歌を歌うのは寂しいから",
+      "meanProbability": 0.681,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": -0.7,
+    "checks": [
+      {
+        "sourceLine": {
+          "t": 160.06,
+          "text": "（ I Love You ）"
+        },
+        "evidencePath": "evidence/derivative-1113-check0.json",
+        "candidate": {
+          "audioSeconds": 153.36,
+          "endSeconds": 153.36,
+          "similarity": 0.0,
+          "recognizedText": "で",
+          "meanProbability": 0.0,
+          "tokenPrefixOnly": false
+        },
+        "residualSeconds": -6.0
+      },
+      {
+        "sourceLine": {
+          "t": 262.49,
+          "text": "明かりになったあなたへ"
+        },
+        "evidencePath": "evidence/derivative-1113-check1.json",
+        "candidate": {
+          "audioSeconds": 260.03,
+          "endSeconds": 261.11,
+          "similarity": 0.15384615384615385,
+          "recognizedText": "ああ",
+          "meanProbability": 0.051,
+          "tokenPrefixOnly": false
+        },
+        "residualSeconds": -1.76
+      }
+    ],
+    "asrLanguage": "ja",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

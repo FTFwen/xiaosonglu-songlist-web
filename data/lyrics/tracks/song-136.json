@@ -1,0 +1,183 @@
+{
+  "schemaVersion": 1,
+  "key": "song-136",
+  "songId": 136,
+  "songName": "あなたに出会わなければ~夏雪冬花~",
+  "rowKey": "あなたに出会わなければ~夏雪冬花~",
+  "displaySongName": "あなたに出会わなければ~夏雪冬花~",
+  "artist": "Aimer",
+  "language": "日文",
+  "derivative": false,
+  "edition": "",
+  "remark": "2026-09-03「也许康复的随便唱唱」21点场；歌切合集【桐人今天睡大觉】【小松绿Viridis】随便唱唱的歌回 歌切合集 2026.09.03 分P17（02:14）。弹幕歌词窗 02:10:56-02:13:59（「无可替代的季节/想在你身边一同欢笑」+「AIMER有品/老公」刷屏）；Aimer《絶園のテンペスト》ED 相关名曲。",
+  "audio": {
+    "url": "assets/audio/song_135.m4a?v=d0f4a234ae1c",
+    "sha256": "d0f4a234ae1c120e8659b535b8cae97b373ef3116b1b87df2376450379e3d2bb"
+  },
+  "retrievedAt": "2026-11-16T04:03:56.796Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E3%81%82%E3%81%AA%E3%81%9F%E3%81%AB%E5%87%BA%E4%BC%9A%E3%82%8F%E3%81%AA%E3%81%91%E3%82%8C%E3%81%B0~%E5%A4%8F%E9%9B%AA%E5%86%AC%E8%8A%B1~&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E3%81%82%E3%81%AA%E3%81%9F%E3%81%AB%E5%87%BA%E4%BC%9A%E3%82%8F%E3%81%AA%E3%81%91%E3%82%8C%E3%81%B0~%E5%A4%8F%E9%9B%AA%E5%86%AC%E8%8A%B1~%20Aimer&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 560079,
+        "name": "あなたに出会わなければ~夏雪冬花~",
+        "artists": [
+          "Aimer"
+        ],
+        "album": "あなたに出会わなければ〜夏雪冬花〜/星屑ビーナス",
+        "durationMs": 362386,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1325113691,
+        "name": "あなたに出会わなければ ～夏雪冬花～",
+        "artists": [
+          "Aimer"
+        ],
+        "album": "Aimer special concert with スロヴァキア国立放送交響楽団 \"ARIA STRINGS\"",
+        "durationMs": 392453,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 31649318,
+        "name": "あなたに出会わなければ~夏雪冬花~",
+        "artists": [
+          "Aimer"
+        ],
+        "album": "ノイタミナ FAN BEST",
+        "durationMs": 362000,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 476081896,
+        "name": "あなたに出会わなければ～夏雪冬花～",
+        "artists": [
+          "Aimer"
+        ],
+        "album": "BEST SELECTION \"blanc\"",
+        "durationMs": 362386,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 22643753,
+        "name": "あなたに出会わなければ～夏雪冬花～",
+        "artists": [
+          "Aimer"
+        ],
+        "album": "Sleepless Nights",
+        "durationMs": 362386,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1418295736,
+        "name": "あなたに出会わなければ~夏雪冬花~",
+        "artists": [
+          "一沫"
+        ],
+        "album": "夏雪密会ED（钢琴改编）",
+        "durationMs": 356961,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1901080742,
+        "name": "あなたに出会わなければ~夏雪冬花~",
+        "artists": [
+          "何芷茵"
+        ],
+        "album": "小盒盒盒的翻唱片段合集（持续更新）",
+        "durationMs": 61048,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1414536993,
+        "name": "あなたに出会わなければ～夏雪冬花～",
+        "artists": [
+          "柑橘绿律"
+        ],
+        "album": "绿律日文翻唱集",
+        "durationMs": 363024,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 136,
+      "song_name": "あなたに出会わなければ~夏雪冬花~",
+      "show_as_song_name": "",
+      "display_song_name": "あなたに出会わなければ~夏雪冬花~",
+      "artist": "Aimer",
+      "artist_search": "あなたに出会わなければ~夏雪冬花~ Aimer",
+      "feat_artist": "",
+      "remark": "2026-09-03「也许康复的随便唱唱」21点场；歌切合集【桐人今天睡大觉】【小松绿Viridis】随便唱唱的歌回 歌切合集 2026.09.03 分P17（02:14）。弹幕歌词窗 02:10:56-02:13:59（「无可替代的季节/想在你身边一同欢笑」+「AIMER有品/老公」刷屏）；Aimer《絶園のテンペスト》ED 相关名曲。",
+      "tone": "",
+      "language": "日文",
+      "type": "动画、J-Pop",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=17",
+      "sing_count": 1,
+      "status_labels": "歌回",
+      "last_sing_at": "2026-09-03",
+      "row_key": "あなたに出会わなければ~夏雪冬花~"
+    },
+    "sourceId": 560079,
+    "sourcePath": "sources/560079.json",
+    "sourceUrl": "https://music.163.com/#/song?id=560079",
+    "selected": {
+      "id": 560079,
+      "name": "あなたに出会わなければ~夏雪冬花~",
+      "artists": [
+        "Aimer"
+      ],
+      "album": "あなたに出会わなければ〜夏雪冬花〜/星屑ビーナス",
+      "durationMs": 362386,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 43
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-136-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 132.032,
+    "sourceFirstLine": {
+      "t": 0.3,
+      "text": "あなたに出会わなければ"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 20.86,
+      "endSeconds": 20.98,
+      "similarity": 0.16666666666666666,
+      "recognizedText": "に",
+      "meanProbability": 0.172,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "ja",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

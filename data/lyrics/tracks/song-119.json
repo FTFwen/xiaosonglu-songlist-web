@@ -1,0 +1,184 @@
+{
+  "schemaVersion": 1,
+  "key": "song-119",
+  "songId": 119,
+  "songName": "远旅休憩中的邂逅",
+  "rowKey": "远旅休憩中的邂逅",
+  "displaySongName": "远旅休憩中的邂逅",
+  "artist": "泠鸢yousa",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "2026-08-29 心灵火Flame合集补录：【小松绿Viridis】20260829 歌切 分P13（05:05）。核实：泠鸢yousa 歌曲（Encounters in a Long Journey's Rest）；对应 08-29 审计遗留的 yousa 专场段。",
+  "audio": {
+    "url": "assets/audio/song_116.m4a?v=a30287f013ea",
+    "sha256": "a30287f013ea7c2c1a1ba15f5a9d8d446d437ffe44bd388f72a9c0d9cb3a70e0"
+  },
+  "retrievedAt": "2026-11-16T04:03:39.564Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E8%BF%9C%E6%97%85%E4%BC%91%E6%86%A9%E4%B8%AD%E7%9A%84%E9%82%82%E9%80%85&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E8%BF%9C%E6%97%85%E4%BC%91%E6%86%A9%E4%B8%AD%E7%9A%84%E9%82%82%E9%80%85%20%E6%B3%A0%E9%B8%A2yousa&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1804552408,
+        "name": "远旅休憩中的邂逅",
+        "artists": [
+          "泠鸢yousa"
+        ],
+        "album": "折纸信笺",
+        "durationMs": 302997,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1804262884,
+        "name": "远旅休憩中的邂逅",
+        "artists": [
+          "YUKIri"
+        ],
+        "album": "远旅休憩中的邂逅",
+        "durationMs": 301270,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1949480782,
+        "name": "远旅休憩中的邂逅",
+        "artists": [
+          "泪弦Leixian"
+        ],
+        "album": "翻唱",
+        "durationMs": 303098,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1805586037,
+        "name": "远旅休憩中的邂逅",
+        "artists": [
+          "hotpoter"
+        ],
+        "album": "hotpoter的翻唱",
+        "durationMs": 303071,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2639484666,
+        "name": "远旅休憩中的邂逅",
+        "artists": [
+          "洛天依",
+          "山轮料叉"
+        ],
+        "album": "山轮料叉翻调集",
+        "durationMs": 301253,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1810935111,
+        "name": "远旅休憩中的邂逅",
+        "artists": [
+          "草木蓁"
+        ],
+        "album": "唱什么好呢",
+        "durationMs": 301185,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1804912408,
+        "name": "远旅休憩中的邂逅",
+        "artists": [
+          "椋笙栗Kuri"
+        ],
+        "album": "远旅休憩中的邂逅",
+        "durationMs": 303046,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1808038544,
+        "name": "远旅休憩中的邂逅",
+        "artists": [
+          "雪翊"
+        ],
+        "album": "远旅休憩中的邂逅",
+        "durationMs": 128036,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 119,
+      "song_name": "远旅休憩中的邂逅",
+      "show_as_song_name": "",
+      "display_song_name": "远旅休憩中的邂逅",
+      "artist": "泠鸢yousa",
+      "artist_search": "远旅休憩中的邂逅 泠鸢yousa",
+      "feat_artist": "",
+      "remark": "2026-08-29 心灵火Flame合集补录：【小松绿Viridis】20260829 歌切 分P13（05:05）。核实：泠鸢yousa 歌曲（Encounters in a Long Journey's Rest）；对应 08-29 审计遗留的 yousa 专场段。",
+      "tone": "",
+      "language": "中文",
+      "type": "国风、流行",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1gm4C65Ey6/?p=13",
+      "sing_count": 1,
+      "status_labels": "歌回",
+      "last_sing_at": "2026-08-29",
+      "row_key": "远旅休憩中的邂逅"
+    },
+    "sourceId": 1804552408,
+    "sourcePath": "sources/1804552408.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1804552408",
+    "selected": {
+      "id": 1804552408,
+      "name": "远旅休憩中的邂逅",
+      "artists": [
+        "泠鸢yousa"
+      ],
+      "album": "折纸信笺",
+      "durationMs": 302997,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 39
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-119-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 304.623,
+    "sourceFirstLine": {
+      "t": 21.77,
+      "text": "草垛间温暖火焰轻轻闪"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 28.54,
+      "endSeconds": 29.94,
+      "similarity": 0.0,
+      "recognizedText": "作",
+      "meanProbability": 0.004,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

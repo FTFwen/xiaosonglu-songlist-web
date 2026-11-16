@@ -1,0 +1,222 @@
+{
+  "schemaVersion": 1,
+  "key": "song-302",
+  "songId": 302,
+  "songName": "流年如歌",
+  "rowKey": "流年如歌",
+  "displaySongName": "流年如歌",
+  "artist": "苍穹",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "两份合集（BV1TApG6uEPX 分P20、BV1Qrpj6ZELm 分P19）同曲同序；弹幕 02:38:34「流年如歌」直接点名。分P原唱字段写「泠鸢yousa」，但据萌娘百科/百度百科：本曲是纳兰寻风 2020-01-24 投稿的 Synthesizer V 中文原创曲（哔哩哔哩 2020 拜年祭单品），作曲西门振、作词纳兰寻风，由苍穹演唱，泠鸢yousa 的版本是翻唱，故按「artist 记原唱」记苍穹。另注：同日的锦芸_official BV1ydpj6EE66《流年如歌-精修》描述自称素材来自「20261008晚间直播」，与本场两份合集及本场弹幕 02:38:34 的点名冲突，以本场证据为准。",
+  "audio": {
+    "url": "assets/audio/song_301.m4a?v=7383d302f7db",
+    "sha256": "7383d302f7db4321047a5a5cdafe61049f48e7557b463814f5e680a8a4718989"
+  },
+  "retrievedAt": "2026-11-16T04:06:23.687Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E6%B5%81%E5%B9%B4%E5%A6%82%E6%AD%8C&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E6%B5%81%E5%B9%B4%E5%A6%82%E6%AD%8C%20%E8%8B%8D%E7%A9%B9&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1831474126,
+        "name": "流年如歌",
+        "artists": [
+          "苍穹"
+        ],
+        "album": "哔哩哔哩拜年纪金曲回顾",
+        "durationMs": 285333,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1418726489,
+        "name": "流年如歌",
+        "artists": [
+          "Kinoko蘑菇"
+        ],
+        "album": "流年如歌 Cover by Kinoko",
+        "durationMs": 285349,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1420233821,
+        "name": "流年如歌",
+        "artists": [
+          "岚AYA"
+        ],
+        "album": "Bilibili拜年祭",
+        "durationMs": 285333,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1996615116,
+        "name": "流年如歌",
+        "artists": [
+          "255p",
+          "洛天依",
+          "星尘",
+          "初音ミク",
+          "绿坝娘"
+        ],
+        "album": "流年如歌 2023 Miku / Greendam / Tianyi / Stardust",
+        "durationMs": 303066,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2735591310,
+        "name": "流年如歌",
+        "artists": [
+          "苏谭谭"
+        ],
+        "album": "流年如歌",
+        "durationMs": 207750,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2031355080,
+        "name": "流年如歌",
+        "artists": [
+          "洛天依",
+          "北七OAO",
+          "千矢"
+        ],
+        "album": "ACE乐园",
+        "durationMs": 285089,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1418756325,
+        "name": "流年如歌",
+        "artists": [
+          "仓鼠ミツキ"
+        ],
+        "album": "流年如歌【2020年B站拜年祭/翻唱】",
+        "durationMs": 285333,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1948326685,
+        "name": "流年如歌",
+        "artists": [
+          "哲桑"
+        ],
+        "album": "流年如歌",
+        "durationMs": 268095,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 302,
+      "song_name": "流年如歌",
+      "show_as_song_name": "",
+      "display_song_name": "流年如歌",
+      "artist": "苍穹",
+      "artist_search": "苍穹",
+      "feat_artist": "",
+      "remark": "两份合集（BV1TApG6uEPX 分P20、BV1Qrpj6ZELm 分P19）同曲同序；弹幕 02:38:34「流年如歌」直接点名。分P原唱字段写「泠鸢yousa」，但据萌娘百科/百度百科：本曲是纳兰寻风 2020-01-24 投稿的 Synthesizer V 中文原创曲（哔哩哔哩 2020 拜年祭单品），作曲西门振、作词纳兰寻风，由苍穹演唱，泠鸢yousa 的版本是翻唱，故按「artist 记原唱」记苍穹。另注：同日的锦芸_official BV1ydpj6EE66《流年如歌-精修》描述自称素材来自「20261008晚间直播」，与本场两份合集及本场弹幕 02:38:34 的点名冲突，以本场证据为准。",
+      "tone": "",
+      "language": "中文",
+      "type": "Synthesizer V、中文原创",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1TApG6uEPX/?p=20",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-10",
+      "row_key": "流年如歌"
+    },
+    "sourceId": 1831474126,
+    "sourcePath": "sources/1831474126.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1831474126",
+    "selected": {
+      "id": 1831474126,
+      "name": "流年如歌",
+      "artists": [
+        "苍穹"
+      ],
+      "album": "哔哩哔哩拜年纪金曲回顾",
+      "durationMs": 285333,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 45
+  },
+  "alignment": {
+    "status": "spotcheck_review_required",
+    "evidencePath": "evidence/song-302-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 287.317,
+    "sourceFirstLine": {
+      "t": 34.804,
+      "text": "我从这首歌出发"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 34.9,
+      "endSeconds": 37.6,
+      "similarity": 1.0,
+      "recognizedText": "我从这首歌出发",
+      "meanProbability": 0.783,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": 0.096,
+    "checks": [
+      {
+        "sourceLine": {
+          "t": 141.3,
+          "text": "春夏秋冬转眼便是刹那"
+        },
+        "evidencePath": "evidence/song-302-check0.json",
+        "candidate": {
+          "audioSeconds": 142.896,
+          "endSeconds": 143.576,
+          "similarity": 0.3333333333333333,
+          "recognizedText": "轉眼",
+          "meanProbability": 0.73,
+          "tokenPrefixOnly": false
+        },
+        "residualSeconds": 1.5
+      },
+      {
+        "sourceLine": {
+          "t": 262,
+          "text": "流年似水，岁月如歌，回想与“你”的邂逅，至今仍历历在目。春夏秋冬年复一年，这十年间，“我”是否找到属于自己的答案，又或许，这个答案还藏在下一个十年？"
+        },
+        "evidencePath": "evidence/song-302-check1.json",
+        "candidate": {
+          "audioSeconds": 257.276,
+          "endSeconds": 257.796,
+          "similarity": 0.031746031746031744,
+          "recognizedText": "我在",
+          "meanProbability": 0.59,
+          "tokenPrefixOnly": false
+        },
+        "residualSeconds": -4.82
+      }
+    ],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

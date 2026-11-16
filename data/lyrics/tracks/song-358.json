@@ -1,0 +1,247 @@
+{
+  "schemaVersion": 1,
+  "key": "song-358",
+  "songId": 358,
+  "songName": "不可思議のカルテ",
+  "rowKey": "不可思議のカルテ",
+  "displaySongName": "不可思議のカルテ",
+  "artist": "瀬戸麻沙美 ほか",
+  "language": "日文",
+  "derivative": false,
+  "edition": "",
+  "remark": "《青春ブタ野郎はお医者さんの夢を見ない》特典曲，角色 cast 演唱",
+  "audio": {
+    "url": "assets/audio/song_357.m4a?v=2aa78023aca6",
+    "sha256": "2aa78023aca6c3873c49eccefda5613171a95275ded05455e98d3928f782caeb"
+  },
+  "retrievedAt": "2026-11-16T04:07:34.452Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E4%B8%8D%E5%8F%AF%E6%80%9D%E8%AD%B0%E3%81%AE%E3%82%AB%E3%83%AB%E3%83%86&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E4%B8%8D%E5%8F%AF%E6%80%9D%E8%AD%B0%E3%81%AE%E3%82%AB%E3%83%AB%E3%83%86%20%E7%80%AC%E6%88%B8%E9%BA%BB%E6%B2%99%E7%BE%8E%20%E3%81%BB%E3%81%8B&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1313052943,
+        "name": "不可思議のカルテ",
+        "artists": [
+          "瀬戸麻沙美",
+          "東山奈央",
+          "種崎敦美",
+          "内田真礼",
+          "久保ユリカ",
+          "水瀬いのり"
+        ],
+        "album": "【青春ブタ野郎はバニーガール先輩の夢を見ない】不可思議のカルテ",
+        "durationMs": 239211,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 3322064080,
+        "name": "不可思議のカルテ",
+        "artists": [
+          "fox capture plan",
+          "Chihiro Sings"
+        ],
+        "album": "RESONANCE",
+        "durationMs": 246801,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1336866655,
+        "name": "不可思議のカルテ (桜島麻衣ソロVer.)",
+        "artists": [
+          "瀬戸麻沙美"
+        ],
+        "album": "青春ブタ野郎はバニーガール先輩の夢を見ない 1 Special CD",
+        "durationMs": 242173,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      },
+      {
+        "id": 2616906055,
+        "name": "不可思議のカルテ Juvenile Ver.",
+        "artists": [
+          "瀬戸麻沙美"
+        ],
+        "album": "青春ブタ野郎はランドセルガールの夢を見ない 特典CD",
+        "durationMs": 290120,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      },
+      {
+        "id": 2616908969,
+        "name": "不可思議のカルテAll Heroine Ver.",
+        "artists": [
+          "瀬戸麻沙美",
+          "東山奈央",
+          "種崎敦美",
+          "内田真礼",
+          "久保ユリカ",
+          "水瀬いのり"
+        ],
+        "album": "青春ブタ野郎はランドセルガールの夢を見ない 特典CD",
+        "durationMs": 238453,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      },
+      {
+        "id": 1410797887,
+        "name": "不可思議のカルテ movie Ver.",
+        "artists": [
+          "瀬戸麻沙美",
+          "東山奈央",
+          "種崎敦美",
+          "内田真礼",
+          "久保ユリカ",
+          "水瀬いのり"
+        ],
+        "album": "青春ブタ野郎はゆめみる少女の夢を見ない Original Soundtrack",
+        "durationMs": 239211,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      },
+      {
+        "id": 2099501694,
+        "name": "不可思議のカルテ All Heroine Ver.",
+        "artists": [
+          "瀬戸麻沙美",
+          "東山奈央",
+          "種崎敦美",
+          "内田真礼",
+          "久保ユリカ",
+          "水瀬いのり"
+        ],
+        "album": "不可思議のカルテ All Heroine Ver.",
+        "durationMs": 237168,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      },
+      {
+        "id": 2100024004,
+        "name": "不可思議のカルテ short ver.",
+        "artists": [
+          "瀬戸麻沙美",
+          "東山奈央",
+          "種崎敦美",
+          "内田真礼",
+          "久保ユリカ",
+          "水瀬いのり"
+        ],
+        "album": "不可思議のカルテ short ver.",
+        "durationMs": 59884,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      }
+    ],
+    "workQuery": {
+      "song_id": 358,
+      "song_name": "不可思議のカルテ",
+      "show_as_song_name": "",
+      "display_song_name": "不可思議のカルテ",
+      "artist": "瀬戸麻沙美 ほか",
+      "artist_search": "瀬戸麻沙美 ほか",
+      "feat_artist": "",
+      "remark": "《青春ブタ野郎はお医者さんの夢を見ない》特典曲，角色 cast 演唱",
+      "tone": "",
+      "language": "日文",
+      "type": "动画、J-Pop",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1nRxJ6tEPC/?p=6",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-31",
+      "row_key": "不可思議のカルテ"
+    },
+    "sourceId": 1313052943,
+    "sourcePath": "sources/1313052943.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1313052943",
+    "selected": {
+      "id": 1313052943,
+      "name": "不可思議のカルテ",
+      "artists": [
+        "瀬戸麻沙美",
+        "東山奈央",
+        "種崎敦美",
+        "内田真礼",
+        "久保ユリカ",
+        "水瀬いのり"
+      ],
+      "album": "【青春ブタ野郎はバニーガール先輩の夢を見ない】不可思議のカルテ",
+      "durationMs": 239211,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 37
+  },
+  "alignment": {
+    "status": "spotcheck_review_required",
+    "evidencePath": "evidence/song-358-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 237.184,
+    "sourceFirstLine": {
+      "t": 1.46,
+      "text": "語れない眠れないトロイメライ"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 1.75,
+      "endSeconds": 4.1,
+      "similarity": 0.7272727272727273,
+      "recognizedText": "語れない眠れない",
+      "meanProbability": 0.667,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": 0.29,
+    "checks": [
+      {
+        "sourceLine": {
+          "t": 120.95,
+          "text": "なんにも疑わないで"
+        },
+        "evidencePath": "evidence/song-358-check0.json",
+        "candidate": {
+          "audioSeconds": 122.92,
+          "endSeconds": 129.58,
+          "similarity": 0.8,
+          "recognizedText": "も 疑わないで",
+          "meanProbability": 0.892,
+          "tokenPrefixOnly": false
+        },
+        "residualSeconds": 1.68
+      },
+      {
+        "sourceLine": {
+          "t": 212.32,
+          "text": "あなたと跨ぐ境界"
+        },
+        "evidencePath": "evidence/song-358-check1.json",
+        "candidate": {
+          "audioSeconds": 214.07,
+          "endSeconds": 214.95,
+          "similarity": 0.5454545454545454,
+          "recognizedText": " あなた",
+          "meanProbability": 0.671,
+          "tokenPrefixOnly": false
+        },
+        "residualSeconds": 1.46
+      }
+    ],
+    "asrLanguage": "ja",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

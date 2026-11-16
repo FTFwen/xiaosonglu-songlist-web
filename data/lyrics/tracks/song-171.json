@@ -1,0 +1,191 @@
+{
+  "schemaVersion": 1,
+  "key": "song-171",
+  "songId": 171,
+  "songName": "大小姐和大少爷的反派生涯",
+  "rowKey": "大小姐和大少爷的反派生涯",
+  "displaySongName": "大小姐和大少爷的反派生涯",
+  "artist": "JUSF周存、洛天依Official",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "",
+  "audio": {
+    "url": "assets/audio/song_170.m4a?v=0b569b715783",
+    "sha256": "0b569b715783e922b078ba555fd13eee439d7d4658bf692a1bafac39aee8f43d"
+  },
+  "retrievedAt": "2026-11-16T04:04:27.142Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E5%A4%A7%E5%B0%8F%E5%A7%90%E5%92%8C%E5%A4%A7%E5%B0%91%E7%88%B7%E7%9A%84%E5%8F%8D%E6%B4%BE%E7%94%9F%E6%B6%AF&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E5%A4%A7%E5%B0%8F%E5%A7%90%E5%92%8C%E5%A4%A7%E5%B0%91%E7%88%B7%E7%9A%84%E5%8F%8D%E6%B4%BE%E7%94%9F%E6%B6%AF%20JUSF%E5%91%A8%E5%AD%98&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 510213198,
+        "name": "大小姐和大少爷的反派生涯",
+        "artists": [
+          "JUSF周存",
+          "洛天依Official"
+        ],
+        "album": "大小姐和大少爷的反派生涯",
+        "durationMs": 171392,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 536173340,
+        "name": "大小姐和大少爷的反派生涯",
+        "artists": [
+          "失桃",
+          "凌逝"
+        ],
+        "album": "跟傻桃的合唱",
+        "durationMs": 170500,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1392122098,
+        "name": "大小姐和大少爷的反派生涯",
+        "artists": [
+          "柠央Reo",
+          "ABbbb君"
+        ],
+        "album": "大小姐和大少爷的反派生涯",
+        "durationMs": 171475,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 517285610,
+        "name": "大小姐和大少爷的反派生涯",
+        "artists": [
+          "KBShinya",
+          "哦漏"
+        ],
+        "album": "大小姐和大少爷的反派生涯",
+        "durationMs": 171520,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1368869084,
+        "name": "大小姐和大少爷的反派生涯",
+        "artists": [
+          "倪莫问",
+          "颜素susu"
+        ],
+        "album": "「大小姐和大少爷的反派生涯」",
+        "durationMs": 171467,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2753737874,
+        "name": "大小姐和大少爷的反派生涯",
+        "artists": [
+          "灵食菌",
+          "Sophia星雨"
+        ],
+        "album": "大小姐和大少爷的反派生涯",
+        "durationMs": 172222,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1863765541,
+        "name": "大小姐和大少爷的反派生涯",
+        "artists": [
+          "涼太RyoT"
+        ],
+        "album": "大小姐和大少爷的反派生涯",
+        "durationMs": 59427,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1351841899,
+        "name": "大小姐和大少爷的反派生涯",
+        "artists": [
+          "暖阳nya",
+          "冰镇豆沙君"
+        ],
+        "album": "大小姐和大少爷的反派生涯",
+        "durationMs": 171441,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 171,
+      "song_name": "大小姐和大少爷的反派生涯",
+      "show_as_song_name": "",
+      "display_song_name": "大小姐和大少爷的反派生涯",
+      "artist": "JUSF周存、洛天依Official",
+      "artist_search": "JUSF周存、洛天依Official",
+      "feat_artist": "",
+      "remark": "",
+      "tone": "",
+      "language": "中文",
+      "type": "中V",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1q9YB6xErK/?p=3",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-09-13",
+      "row_key": "大小姐和大少爷的反派生涯"
+    },
+    "sourceId": 510213198,
+    "sourcePath": "sources/510213198.json",
+    "sourceUrl": "https://music.163.com/#/song?id=510213198",
+    "selected": {
+      "id": 510213198,
+      "name": "大小姐和大少爷的反派生涯",
+      "artists": [
+        "JUSF周存",
+        "洛天依Official"
+      ],
+      "album": "大小姐和大少爷的反派生涯",
+      "durationMs": 171392,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 61
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-171-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 199.297,
+    "sourceFirstLine": {
+      "t": 0.3,
+      "text": "编调混：JUSF周存"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 0.0,
+      "endSeconds": 0.48,
+      "similarity": 0.0,
+      "recognizedText": "應該",
+      "meanProbability": 0.215,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

@@ -1,0 +1,186 @@
+{
+  "schemaVersion": 1,
+  "key": "song-292",
+  "songId": 292,
+  "songName": "水叙湖风",
+  "rowKey": "水叙湖风",
+  "displaySongName": "水叙湖风",
+  "artist": "忘川风华录 / 星尘Minus",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "两份 20261010 合集（BV1TApG6uEPX 分P02、BV1Qrpj6ZELm 分P02）同曲同序；弹幕无直接点名。原唱字段沿用分P标题「忘川风华录, 星尘minus」，与本站忘川风华录系列（思华年、栖凰）标注风格一致。",
+  "audio": {
+    "url": "assets/audio/song_291.m4a?v=cfbfd14fe1c7",
+    "sha256": "cfbfd14fe1c740e3060c1f99fcdcceb8b2b9835a63e81bfd2ec247124f540207"
+  },
+  "retrievedAt": "2026-11-16T04:02:24.436Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E6%B0%B4%E5%8F%99%E6%B9%96%E9%A3%8E&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E6%B0%B4%E5%8F%99%E6%B9%96%E9%A3%8E%20%E5%BF%98%E5%B7%9D%E9%A3%8E%E5%8D%8E%E5%BD%95%20%2F%20%E6%98%9F%E5%B0%98Minus&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1484393801,
+        "name": "水叙湖风",
+        "artists": [
+          "忘川风华录",
+          "星尘minus"
+        ],
+        "album": "水叙湖风",
+        "durationMs": 262034,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1484424276,
+        "name": "水叙湖风",
+        "artists": [
+          "三无Marblue"
+        ],
+        "album": "水叙湖风（Cover 忘川风华录）",
+        "durationMs": 262101,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1483807403,
+        "name": "水叙湖风",
+        "artists": [
+          "茶了了"
+        ],
+        "album": "水叙湖风",
+        "durationMs": 262118,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1484021464,
+        "name": "水叙湖风",
+        "artists": [
+          "こいずみ桃黎",
+          "诗岸"
+        ],
+        "album": "桃黎的翻调",
+        "durationMs": 262392,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1484951227,
+        "name": "水叙湖风",
+        "artists": [
+          "KBShinya"
+        ],
+        "album": "水叙湖风",
+        "durationMs": 262353,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1920975966,
+        "name": "水叙湖风",
+        "artists": [
+          "冽冽"
+        ],
+        "album": "水叙湖风",
+        "durationMs": 263111,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1485513211,
+        "name": "水叙湖风",
+        "artists": [
+          "知性的小方块"
+        ],
+        "album": "水叙湖风",
+        "durationMs": 262353,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1484930071,
+        "name": "水叙湖风",
+        "artists": [
+          "应钟Clochette"
+        ],
+        "album": "西湖的水我的泪之水叙湖风",
+        "durationMs": 261921,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 292,
+      "song_name": "水叙湖风",
+      "show_as_song_name": "",
+      "display_song_name": "水叙湖风",
+      "artist": "忘川风华录 / 星尘Minus",
+      "artist_search": "忘川风华录 / 星尘Minus",
+      "feat_artist": "",
+      "remark": "两份 20261010 合集（BV1TApG6uEPX 分P02、BV1Qrpj6ZELm 分P02）同曲同序；弹幕无直接点名。原唱字段沿用分P标题「忘川风华录, 星尘minus」，与本站忘川风华录系列（思华年、栖凰）标注风格一致。",
+      "tone": "",
+      "language": "中文",
+      "type": "忘川风华录、国风",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1TApG6uEPX/?p=2",
+      "sing_count": 2,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-11-12",
+      "row_key": "水叙湖风"
+    },
+    "sourceId": 1484393801,
+    "sourcePath": "sources/1484393801.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1484393801",
+    "selected": {
+      "id": 1484393801,
+      "name": "水叙湖风",
+      "artists": [
+        "忘川风华录",
+        "星尘minus"
+      ],
+      "album": "水叙湖风",
+      "durationMs": 262034,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 53
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-292-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 263.744,
+    "sourceFirstLine": {
+      "t": 3.434,
+      "text": "水光潋滟晴方好 山色空蒙雨亦奇"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 31.76,
+      "endSeconds": 33.16,
+      "similarity": 0.0,
+      "recognizedText": "請",
+      "meanProbability": 0.006,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

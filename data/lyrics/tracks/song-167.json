@@ -1,0 +1,195 @@
+{
+  "schemaVersion": 1,
+  "key": "song-167",
+  "songId": 167,
+  "songName": "Say a Good Bye",
+  "rowKey": "Say a Good Bye",
+  "displaySongName": "Say a Good Bye",
+  "artist": "Kevinz、星尘、言和、洛天依",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "章节标题带有（卡了）前缀，已排除前缀后录入歌曲名",
+  "audio": {
+    "url": "assets/audio/song_166.m4a?v=5baf5b5c638b",
+    "sha256": "5baf5b5c638b0bba3b69d5793cd215ff04eb26af583897b6751ab35a5b8be84f"
+  },
+  "retrievedAt": "2026-11-16T04:04:24.507Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=Say%20a%20Good%20Bye&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=Say%20a%20Good%20Bye%20Kevinz&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 501715986,
+        "name": "Say a Good Bye",
+        "artists": [
+          "Kevinz",
+          "URUUT",
+          "洛天依Official",
+          "星尘"
+        ],
+        "album": "Say a Good Bye",
+        "durationMs": 343638,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 447854850,
+        "name": "Say a Good Bye",
+        "artists": [
+          "Kevinz",
+          "洛天依Official",
+          "言和",
+          "星尘"
+        ],
+        "album": "马耳东风",
+        "durationMs": 343576,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 501715781,
+        "name": "Say a Good Bye - Arrange Ver. -",
+        "artists": [
+          "Kevinz",
+          "洛天依Official"
+        ],
+        "album": "Say a Good Bye",
+        "durationMs": 343345,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      },
+      {
+        "id": 503152137,
+        "name": "say a goodbye（Cover krz）",
+        "artists": [
+          "洛天依"
+        ],
+        "album": "say a goodbye",
+        "durationMs": 343640,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      },
+      {
+        "id": 501970836,
+        "name": "Say a Good Bye(人声本家)",
+        "artists": [
+          "泥鳅Niko",
+          "Babystop_山竹"
+        ],
+        "album": "Say a goodbye（人声本家）",
+        "durationMs": 343683,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 1403942372,
+        "name": "say a good bye(徵羽摩柯)(翻自 Kevinz)",
+        "artists": [
+          "流乐",
+          "徵羽摩柯"
+        ],
+        "album": "say a good bye",
+        "durationMs": 343823,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 1425322099,
+        "name": "Say a Good Bye（翻自 洛天依）",
+        "artists": [
+          "踏碎照野"
+        ],
+        "album": "Say a good bye",
+        "durationMs": 343640,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 512330215,
+        "name": "SAY A GOOD BYE 重庆(自填词翻唱)(Cover)",
+        "artists": [
+          "芊年"
+        ],
+        "album": "【自填词翻唱】Say A Good Bye【重庆Ver.】",
+        "durationMs": 343666,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      }
+    ],
+    "workQuery": {
+      "song_id": 167,
+      "song_name": "Say a Good Bye",
+      "show_as_song_name": "",
+      "display_song_name": "Say a Good Bye",
+      "artist": "Kevinz、星尘、言和、洛天依",
+      "artist_search": "Kevinz、星尘、言和、洛天依",
+      "feat_artist": "",
+      "remark": "章节标题带有（卡了）前缀，已排除前缀后录入歌曲名",
+      "tone": "",
+      "language": "中文",
+      "type": "中V",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=29",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-09-08",
+      "row_key": "Say a Good Bye"
+    },
+    "sourceId": 501715986,
+    "sourcePath": "sources/501715986.json",
+    "sourceUrl": "https://music.163.com/#/song?id=501715986",
+    "selected": {
+      "id": 501715986,
+      "name": "Say a Good Bye",
+      "artists": [
+        "Kevinz",
+        "URUUT",
+        "洛天依Official",
+        "星尘"
+      ],
+      "album": "Say a Good Bye",
+      "durationMs": 343638,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 42
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-167-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 295.985,
+    "sourceFirstLine": {
+      "t": 5.27,
+      "text": "“说/一个/很好的/再见。”"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 0.48,
+      "endSeconds": 1.62,
+      "similarity": 0.2857142857142857,
+      "recognizedText": "很续和结束的",
+      "meanProbability": 0.684,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

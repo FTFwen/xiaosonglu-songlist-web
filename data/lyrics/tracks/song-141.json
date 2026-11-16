@@ -1,0 +1,163 @@
+{
+  "schemaVersion": 1,
+  "key": "song-141",
+  "songId": 141,
+  "songName": "夜宴风波",
+  "displaySongName": "夜宴风波",
+  "artist": "音阙诗听、王梓钰",
+  "language": "中文",
+  "derivative": false,
+  "audio": {
+    "url": "assets/audio/song_140.m4a?v=9d66f21c5fbc",
+    "sha256": "9d66f21c5fbcfaeee6da9285bed59ab5450527d9904a7564609cfde33090e753"
+  },
+  "retrievedAt": "2026-11-16T03:59:02.726Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E5%A4%9C%E5%AE%B4%E9%A3%8E%E6%B3%A2&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1308819790,
+        "name": "夜宴风波",
+        "artists": [
+          "音阙诗听",
+          "王梓钰"
+        ],
+        "album": "等你来见 (中国名画系列七部曲)",
+        "durationMs": 204141,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1324873177,
+        "name": "夜宴风波",
+        "artists": [
+          "泠鸢yousa"
+        ],
+        "album": "夜宴风波【泠鸢·翻唱】",
+        "durationMs": 205216,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1348992802,
+        "name": "夜宴风波",
+        "artists": [
+          "洛天依Official"
+        ],
+        "album": "夜宴风波",
+        "durationMs": 204141,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1349500443,
+        "name": "夜宴风波",
+        "artists": [
+          "锦零"
+        ],
+        "album": "夜宴风波",
+        "durationMs": 206785,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1326536521,
+        "name": "夜宴风波",
+        "artists": [
+          "少年霜"
+        ],
+        "album": "夜宴风波",
+        "durationMs": 210055,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1353473035,
+        "name": "夜宴风波",
+        "artists": [
+          "ABbbb君"
+        ],
+        "album": "夜宴风波",
+        "durationMs": 205172,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1338286693,
+        "name": "夜宴风波",
+        "artists": [
+          "易言"
+        ],
+        "album": "夜宴风波",
+        "durationMs": 205644,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1340035436,
+        "name": "夜宴风波",
+        "artists": [
+          "大柯"
+        ],
+        "album": "夜宴风波",
+        "durationMs": 206666,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "sourceId": 1308819790,
+    "sourcePath": "sources/1308819790.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1308819790",
+    "selected": {
+      "id": 1308819790,
+      "name": "夜宴风波",
+      "artists": [
+        "音阙诗听",
+        "王梓钰"
+      ],
+      "album": "等你来见 (中国名画系列七部曲)",
+      "durationMs": 204141,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 49
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-141-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 206.4,
+    "sourceFirstLine": {
+      "t": 1.1,
+      "text": "琵琶声动荡玄机被暗藏 谁在唱"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 32.66,
+      "endSeconds": 32.96,
+      "similarity": 0.14285714285714285,
+      "recognizedText": "在",
+      "meanProbability": 0.98,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  },
+  "rowKey": "夜宴风波",
+  "edition": "",
+  "remark": ""
+}

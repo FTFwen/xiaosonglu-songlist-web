@@ -1,0 +1,196 @@
+{
+  "schemaVersion": 1,
+  "key": "song-239",
+  "songId": 239,
+  "songName": "千年食谱颂",
+  "rowKey": "千年食谱颂",
+  "displaySongName": "千年食谱颂",
+  "artist": "洛天依Official",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "",
+  "audio": {
+    "url": "assets/audio/song_238.m4a?v=f21e043c65dd",
+    "sha256": "f21e043c65ddf704775b548e1e6502461bcba005e1d720299aaa523884e9d8f2"
+  },
+  "retrievedAt": "2026-11-16T04:05:30.890Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E5%8D%83%E5%B9%B4%E9%A3%9F%E8%B0%B1%E9%A2%82&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E5%8D%83%E5%B9%B4%E9%A3%9F%E8%B0%B1%E9%A2%82%20%E6%B4%9B%E5%A4%A9%E4%BE%9DOfficial&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 359939,
+        "name": "千年食谱颂",
+        "artists": [
+          "洛天依Official"
+        ],
+        "album": "千年食谱颂",
+        "durationMs": 330000,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 858939,
+        "name": "千年食谱颂",
+        "artists": [
+          "H.K.(HEROAR)"
+        ],
+        "album": "Sing Sing Sing",
+        "durationMs": 317000,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 30284643,
+        "name": "千年食谱颂",
+        "artists": [
+          "少年霜"
+        ],
+        "album": "热门华语259",
+        "durationMs": 330000,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1420515858,
+        "name": "千年食谱颂",
+        "artists": [
+          "岚AYA",
+          "司夏"
+        ],
+        "album": "曾经唱过的歌呀",
+        "durationMs": 331154,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 30284641,
+        "name": "千年食谱颂",
+        "artists": [
+          "汐汉三"
+        ],
+        "album": "热门华语259",
+        "durationMs": 330000,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2727215652,
+        "name": "千年食谱颂",
+        "artists": [
+          "karin"
+        ],
+        "album": "2024 - 2026年翻唱",
+        "durationMs": 332364,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1369034546,
+        "name": "千年食谱颂",
+        "artists": [
+          "糖叁",
+          "周弦",
+          "安安安安茉",
+          "洛九",
+          "简亦欢",
+          "阿兰lan",
+          "K小熙",
+          "阿宁姑娘",
+          "挪挪Noh",
+          "藏澜",
+          "重歌",
+          "熊喵CC"
+        ],
+        "album": "千年食谱颂",
+        "durationMs": 330945,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1326078427,
+        "name": "千年食谱颂",
+        "artists": [
+          "ねこdesu",
+          "幻晓伊"
+        ],
+        "album": "千年食谱颂（Cover 洛天依）",
+        "durationMs": 330195,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 239,
+      "song_name": "千年食谱颂",
+      "show_as_song_name": "",
+      "display_song_name": "千年食谱颂",
+      "artist": "洛天依Official",
+      "artist_search": "洛天依Official",
+      "feat_artist": "",
+      "remark": "",
+      "tone": "",
+      "language": "中文",
+      "type": "中V",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1g1ah6REpb/?p=13",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-09-27",
+      "row_key": "千年食谱颂"
+    },
+    "sourceId": 359939,
+    "sourcePath": "sources/359939.json",
+    "sourceUrl": "https://music.163.com/#/song?id=359939",
+    "selected": {
+      "id": 359939,
+      "name": "千年食谱颂",
+      "artists": [
+        "洛天依Official"
+      ],
+      "album": "千年食谱颂",
+      "durationMs": 330000,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 43
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-239-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 325.172,
+    "sourceFirstLine": {
+      "t": 15.06,
+      "text": "小笼包 叉烧包 奶黄芝麻豆沙包"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 16.06,
+      "endSeconds": 17.46,
+      "similarity": 0.0,
+      "recognizedText": "走",
+      "meanProbability": 0.113,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

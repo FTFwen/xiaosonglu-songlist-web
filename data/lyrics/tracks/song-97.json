@@ -1,0 +1,171 @@
+{
+  "schemaVersion": 1,
+  "key": "song-97",
+  "songId": 97,
+  "songName": "月巷",
+  "displaySongName": "月巷",
+  "artist": "乐正绫",
+  "language": "中文",
+  "derivative": false,
+  "audio": {
+    "url": "assets/audio/song_98.m4a?v=92c2fc982b59",
+    "sha256": "92c2fc982b5972d95908e9bb4a5c8b8f590b1f9971fb6368ec51b8a781944dc7"
+  },
+  "retrievedAt": "2026-11-16T03:58:01.700Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E6%9C%88%E5%B7%B7&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 2123816639,
+        "name": "月巷",
+        "artists": [
+          "星葵77",
+          "乐正绫"
+        ],
+        "album": "月巷【2024虚拟歌手贺岁纪】",
+        "durationMs": 230031,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2693651247,
+        "name": "月巷",
+        "artists": [
+          "院长不是元璋",
+          "乐正绫"
+        ],
+        "album": "月巷（乐正绫V3）",
+        "durationMs": 230170,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2133585575,
+        "name": "月巷",
+        "artists": [
+          "洛天依",
+          "First Studio"
+        ],
+        "album": "First的小翻唱",
+        "durationMs": 230112,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2129504195,
+        "name": "月巷",
+        "artists": [
+          "祈Inory"
+        ],
+        "album": "月巷",
+        "durationMs": 230000,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2661242658,
+        "name": "月巷",
+        "artists": [
+          "鹊瞳"
+        ],
+        "album": "翻唱",
+        "durationMs": 230069,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2131458998,
+        "name": "月巷",
+        "artists": [
+          "归醒",
+          "桑杏"
+        ],
+        "album": "月巷",
+        "durationMs": 230384,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2670321855,
+        "name": "月巷",
+        "artists": [
+          "樱井瑶",
+          "仓鼠ミツキ",
+          "木子立青Akira",
+          "言零YanRei",
+          "桃月绯momotsuki",
+          "乐萱子☆"
+        ],
+        "album": "月巷",
+        "durationMs": 232000,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2128358179,
+        "name": "月巷",
+        "artists": [
+          "昼白"
+        ],
+        "album": "月巷",
+        "durationMs": 230027,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "sourceId": 2123816639,
+    "sourcePath": "sources/2123816639.json",
+    "sourceUrl": "https://music.163.com/#/song?id=2123816639",
+    "selected": {
+      "id": 2123816639,
+      "name": "月巷",
+      "artists": [
+        "星葵77",
+        "乐正绫"
+      ],
+      "album": "月巷【2024虚拟歌手贺岁纪】",
+      "durationMs": 230031,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 40
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-97-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 227.347,
+    "sourceFirstLine": {
+      "t": 1.8900000000000001,
+      "text": "哪弯儿月陪我跑过街巷"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 3.2,
+      "endSeconds": 5.28,
+      "similarity": 0.6666666666666666,
+      "recognizedText": "陪我跑过街",
+      "meanProbability": 0.695,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  },
+  "rowKey": "月巷",
+  "edition": "",
+  "remark": "歌切标题《【小松绿Viridis|歌切】月巷 8.12》（UP 银河的鱼，2026-08-12 发布）。vcpedia 核实：《月巷》中文原创歌曲，乐正绫演唱，2024 虚拟歌手贺岁纪单品，另有祈Inory人声本家。按 song-cut-first 规则收录。"
+}

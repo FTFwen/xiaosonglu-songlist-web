@@ -1,0 +1,168 @@
+{
+  "schemaVersion": 1,
+  "key": "song-139",
+  "songId": 139,
+  "songName": "如果有来生",
+  "displaySongName": "如果有来生",
+  "artist": "谭维维",
+  "language": "中文",
+  "derivative": false,
+  "audio": {
+    "url": "assets/audio/song_138.m4a?v=f0c256f8d503",
+    "sha256": "f0c256f8d5034d4e781d488a1341d0f9a022b1785b82c2359fe67b4eccc01e15"
+  },
+  "retrievedAt": "2026-11-16T03:58:07.279Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E5%A6%82%E6%9E%9C%E6%9C%89%E6%9D%A5%E7%94%9F&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 293948,
+        "name": "如果有来生",
+        "artists": [
+          "谭维维"
+        ],
+        "album": "谭某某",
+        "durationMs": 247267,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 25703004,
+        "name": "如果有来生",
+        "artists": [
+          "谭维维"
+        ],
+        "album": "此间的少年",
+        "durationMs": 247267,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 482999736,
+        "name": "如果有来生",
+        "artists": [
+          "谭维维",
+          "张家语",
+          "郑浩天",
+          "泽宙斯姬"
+        ],
+        "album": "我想和你唱 第二季 第7期",
+        "durationMs": 245802,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 33856886,
+        "name": "如果有来生",
+        "artists": [
+          "蔡明希（不才）"
+        ],
+        "album": "热门华语273",
+        "durationMs": 241920,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2747560149,
+        "name": "如果有来生",
+        "artists": [
+          "于适",
+          "胡海泉",
+          "希林娜依高",
+          "莫西子诗",
+          "刘凤瑶"
+        ],
+        "album": "听，谁在唱歌 第5期",
+        "durationMs": 289500,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1914650514,
+        "name": "如果有来生",
+        "artists": [
+          "福建门虫合唱团"
+        ],
+        "album": "门虫合唱作品集",
+        "durationMs": 255738,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1388858946,
+        "name": "如果有来生",
+        "artists": [
+          "应钟Clochette"
+        ],
+        "album": "如果有来生",
+        "durationMs": 247588,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 518645603,
+        "name": "如果有来生",
+        "artists": [
+          "張子铭"
+        ],
+        "album": "所有的记忆都是潮湿的",
+        "durationMs": 246361,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "sourceId": 293948,
+    "sourcePath": "sources/293948.json",
+    "sourceUrl": "https://music.163.com/#/song?id=293948",
+    "selected": {
+      "id": 293948,
+      "name": "如果有来生",
+      "artists": [
+        "谭维维"
+      ],
+      "album": "谭某某",
+      "durationMs": 247267,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 41
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-139-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 243.179,
+    "sourceFirstLine": {
+      "t": 16.83,
+      "text": "以前人们在四月开始收获"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 30.96,
+      "endSeconds": 31.14,
+      "similarity": 0.16666666666666666,
+      "recognizedText": "人",
+      "meanProbability": 0.701,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  },
+  "rowKey": "如果有来生",
+  "edition": "",
+  "remark": "2026-09-03「也许康复的随便唱唱」21点场；歌切合集【桐人今天睡大觉】【小松绿Viridis】随便唱唱的歌回 歌切合集 2026.09.03 分P21（04:05）。弹幕歌词窗 02:53:12-02:55:02（「以前人们在四月开始收获/如果有来生」）；谭维维 2010 经典。"
+}

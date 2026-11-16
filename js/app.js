@@ -1308,6 +1308,7 @@ function updatePlayerUI() {
   updatePlayerFavState();
   syncPlayingButton();
   renderPlaylist();
+  if (lyricsPip) lyricsPip.refresh();
 }
 
 // 更新播放栏收藏按钮：根据当前播放的歌是否已加入中意，切换爱心实/空心
@@ -1492,6 +1493,17 @@ function initCrossPageNavigation() {
     if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
     const link = event.target.closest && event.target.closest('a[href]');
     if (!link || link.target === '_blank' || link.hasAttribute('download')) return;
+    const pipWindow = window.documentPictureInPicture && window.documentPictureInPicture.window;
+    if (pipWindow && !pipWindow.closed) {
+      const url = new URL(link.href, window.location.href);
+      const samePageHash = url.hash && url.pathname === window.location.pathname && url.search === window.location.search;
+      if (url.origin === window.location.origin && !samePageHash && !link.getAttribute('href').startsWith('#')) {
+        event.preventDefault();
+        window.open(link.href, '_blank', 'noopener');
+        showToast('已在新标签打开，以保留歌词窗口');
+        return;
+      }
+    }
     const destination = normalizeCrossPageDestination(link.href);
     if (destination !== '/buttons/' && destination !== '/24xsl/') return;
     writeCrossPageHandoff(destination);
@@ -4917,9 +4929,41 @@ function initListenTogether() {
   });
 }
 
+// 画中画只读取当前播放器，控制复用原有队列/一起听/收藏逻辑。
+let lyricsPip = null;
+function initLyricsPip() {
+  if (!window.XSLLyricsPip) return;
+  lyricsPip = window.XSLLyricsPip.init({
+    button: document.getElementById('playerLyricsPipBtn'),
+    audio: player.audio,
+    getTrack() {
+      const song = player.current;
+      return song ? {
+        songId: song.song_id,
+        rowKey: song.row_key || song.song_name || '',
+        name: song.display_song_name || song.song_name || '未命名',
+        artist: song.artist || '',
+        audioUrl: audioUrlOf(song),
+      } : null;
+    },
+    getFavorite: () => !!player.current && !!state.favoritesMap[getFavoriteKey(player.current)],
+    previous: playPrev,
+    next: () => playNext(false),
+    toggle: togglePlay,
+    async favorite() {
+      const song = player.current;
+      if (!song) return;
+      await toggleFavoriteBySong(song);
+      updatePlayerFavState();
+    },
+    showMessage: showToast,
+  });
+}
+
 async function init() {
   bindDom();
   bindEvents();
+  initLyricsPip();
   syncClearButton();
   syncSearchModeButtons();
   syncFilterInputs();

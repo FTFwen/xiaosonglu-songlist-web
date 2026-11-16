@@ -1,0 +1,194 @@
+{
+  "schemaVersion": 1,
+  "key": "song-230",
+  "songId": 230,
+  "songName": "凉凉",
+  "rowKey": "凉凉",
+  "displaySongName": "凉凉",
+  "artist": "杨宗纬, 张碧晨",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "",
+  "audio": {
+    "url": "assets/audio/song_229.m4a?v=9f0f4faed8ff",
+    "sha256": "9f0f4faed8ffad875e1aa5c133e22a270976a3d7fb5d3a0e1c8217c465e10f69"
+  },
+  "retrievedAt": "2026-11-16T04:05:29.711Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E5%87%89%E5%87%89&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E5%87%89%E5%87%89%20%E6%9D%A8%E5%AE%97%E7%BA%AC&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 479408220,
+        "name": "凉凉",
+        "artists": [
+          "张碧晨",
+          "陈奕夫",
+          "傲日其愣",
+          "唐倩"
+        ],
+        "album": "我想和你唱 第二季 第4期",
+        "durationMs": 274996,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 3417325418,
+        "name": "凉凉",
+        "artists": [
+          "小雪",
+          "DJ冷冰冰"
+        ],
+        "album": "凉凉",
+        "durationMs": 117486,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1325897643,
+        "name": "凉凉",
+        "artists": [
+          "夏丹丹",
+          "陈振邦"
+        ],
+        "album": "爱的天堂",
+        "durationMs": 334200,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 536622115,
+        "name": "凉凉",
+        "artists": [
+          "张梓轩",
+          "倪睿思"
+        ],
+        "album": "凉凉",
+        "durationMs": 329602,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2108978174,
+        "name": "凉凉",
+        "artists": [
+          "侑yuki",
+          "文轩君"
+        ],
+        "album": "侑yukiの翻唱集（古风）",
+        "durationMs": 338400,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 472137697,
+        "name": "凉凉 (Live)",
+        "artists": [
+          "张碧晨",
+          "杨宗纬"
+        ],
+        "album": "歌手 第13期",
+        "durationMs": 323120,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      },
+      {
+        "id": 1320030901,
+        "name": "凉凉 (Live)",
+        "artists": [
+          "张碧晨"
+        ],
+        "album": "张碧晨2018北京极光演唱会",
+        "durationMs": 334267,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      },
+      {
+        "id": 2159249744,
+        "name": "凉凉（DJ婷婷版）",
+        "artists": [
+          "小雅"
+        ],
+        "album": "不是因为寂寞才想你（DJ婷婷版）",
+        "durationMs": 191645,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      }
+    ],
+    "workQuery": {
+      "song_id": 230,
+      "song_name": "凉凉",
+      "show_as_song_name": "",
+      "display_song_name": "凉凉",
+      "artist": "杨宗纬, 张碧晨",
+      "artist_search": "杨宗纬, 张碧晨",
+      "feat_artist": "",
+      "remark": "",
+      "tone": "",
+      "language": "中文",
+      "type": "影视、流行",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1g1ah6REpb/?p=3",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-09-27",
+      "row_key": "凉凉"
+    },
+    "sourceId": 479408220,
+    "sourcePath": "sources/479408220.json",
+    "sourceUrl": "https://music.163.com/#/song?id=479408220",
+    "selected": {
+      "id": 479408220,
+      "name": "凉凉",
+      "artists": [
+        "张碧晨",
+        "陈奕夫",
+        "傲日其愣",
+        "唐倩"
+      ],
+      "album": "我想和你唱 第二季 第4期",
+      "durationMs": 274996,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 54
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-230-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 326.983,
+    "sourceFirstLine": {
+      "t": 0.22,
+      "text": "音乐总监 : 赵兆"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 31.72,
+      "endSeconds": 32.06,
+      "similarity": 0.2857142857142857,
+      "recognizedText": "总",
+      "meanProbability": 0.796,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

@@ -1,0 +1,189 @@
+{
+  "schemaVersion": 1,
+  "key": "song-96",
+  "songId": 96,
+  "songName": "光",
+  "rowKey": "光",
+  "displaySongName": "光",
+  "artist": "Kide / Ddickky / 星尘",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "来自 2026-08-23 行道树投稿回（2）清唱加演段，歌切合集《【小松绿Viridis】20260823 歌切》分P《光》（心灵火Flame，04:10）与忆夏追凉单切（BV1ZH8Y6wEAw，04:21）双重印证。原曲核实：星尘「光」为2021-08-12星尘诞生日5周年曲，作曲/编曲Kide、作词Ddickky（平行四界），原曲BV1K64y1z71C（04:16），歌切时长与原曲吻合；弹幕\"还有《光》\"\"星尘专场吗这是\"（流霰/栖凰/恋苦同为星尘曲）印证。此前误记为ventus/星尘Infinity，本轮修正为Kide/Ddickky/星尘。",
+  "audio": {
+    "url": "assets/audio/song_97.m4a?v=e5f52ab1446f",
+    "sha256": "e5f52ab1446fb962327186b375aef8a6f9e34b670b58161fcd40c03026865c04"
+  },
+  "retrievedAt": "2026-11-16T04:12:30.921Z",
+  "match": {
+    "status": "candidate_review_required",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E5%85%89&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E5%85%89%20Kide%20%2F%20Ddickky%20%2F%20%E6%98%9F%E5%B0%98&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 30431364,
+        "name": "光",
+        "artists": [
+          "陈粒"
+        ],
+        "album": "如也",
+        "durationMs": 141176,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 488388943,
+        "name": "光",
+        "artists": [
+          "當山みれい"
+        ],
+        "album": "願い E.P.",
+        "durationMs": 224954,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3402687142,
+        "name": "光",
+        "artists": [
+          "櫻井優衣"
+        ],
+        "album": "光",
+        "durationMs": 240378,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1885205681,
+        "name": "光",
+        "artists": [
+          "茶理理"
+        ],
+        "album": "光",
+        "durationMs": 218067,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2749430421,
+        "name": "光",
+        "artists": [
+          "陈粒"
+        ],
+        "album": "十年自选",
+        "durationMs": 209407,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 36496726,
+        "name": "光",
+        "artists": [
+          "刘惜君"
+        ],
+        "album": "当我身边空无一人",
+        "durationMs": 206616,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 666935,
+        "name": "光",
+        "artists": [
+          "宇多田ヒカル"
+        ],
+        "album": "光",
+        "durationMs": 301464,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1298504813,
+        "name": "光",
+        "artists": [
+          "姜米條"
+        ],
+        "album": "Lost in",
+        "durationMs": 292517,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 96,
+      "song_name": "光",
+      "show_as_song_name": "",
+      "display_song_name": "光",
+      "artist": "Kide / Ddickky / 星尘",
+      "artist_search": "光 Kide Ddickky 星尘",
+      "feat_artist": "",
+      "remark": "来自 2026-08-23 行道树投稿回（2）清唱加演段，歌切合集《【小松绿Viridis】20260823 歌切》分P《光》（心灵火Flame，04:10）与忆夏追凉单切（BV1ZH8Y6wEAw，04:21）双重印证。原曲核实：星尘「光」为2021-08-12星尘诞生日5周年曲，作曲/编曲Kide、作词Ddickky（平行四界），原曲BV1K64y1z71C（04:16），歌切时长与原曲吻合；弹幕\"还有《光》\"\"星尘专场吗这是\"（流霰/栖凰/恋苦同为星尘曲）印证。此前误记为ventus/星尘Infinity，本轮修正为Kide/Ddickky/星尘。",
+      "tone": "",
+      "language": "中文",
+      "type": "Synthesizer V、中文Vocaloid",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1m9886kEMZ/?p=4",
+      "sing_count": 2,
+      "status_labels": "清唱、自动识别待人工复核、歌回、歌切合集复核",
+      "last_sing_at": "2026-10-27",
+      "row_key": "光"
+    },
+    "sourceId": 1885205681,
+    "sourcePath": "sources/1885205681.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1885205681",
+    "selected": {
+      "id": 1885205681,
+      "name": "光",
+      "artists": [
+        "茶理理"
+      ],
+      "album": "光",
+      "durationMs": 218067,
+      "titleScore": 1,
+      "artistMatch": false,
+      "score": 0.8,
+      "reviewedWorkIdentity": true
+    },
+    "timedLineCount": 65,
+    "review": {
+      "reason": "Reject current 30431364 陈粒, a different work. Verified 2010336912 is 光（伴奏）, artist kide, album 光, 253910ms, lyric endpoint empty. Exact original 星尘 vocal ID was not recovered within bounded research. Verified related vocal edition 1885205681 is 茶理理 光, 218067ms; its lyric endpoint explicitly credits 作词 Ddickky / 作曲 Kide / 编曲 AST / 演唱 茶理理 and begins 如在黑夜中／被熄灭了星空. This establishes same composition but a different performer, arrangement, and duration, so it is not proposed as the exact 星尘 source. Retained explicitly as a related-work/arrangement candidate, NOT as the requested recording.",
+      "evidenceUrl": "https://music.163.com/api/song/detail/?id=2010336912&ids=[2010336912]",
+      "previousSourceId": 30431364
+    }
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-96-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 249.237,
+    "sourceFirstLine": {
+      "t": 17.192,
+      "text": "如在黑夜中"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 26.84,
+      "endSeconds": 27.24,
+      "similarity": 0.0,
+      "recognizedText": "作",
+      "meanProbability": 0.009,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

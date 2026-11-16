@@ -1,0 +1,159 @@
+{
+  "audioSha256": "b25cffe0616ed3475a301a7ebd993f55363a0e4fd9e7fe9fa302d6337666fd76",
+  "model": "whisper-base",
+  "start": 0,
+  "end": 35,
+  "result": {
+    "text": "我刚才一个叫合适的版本所以重新学了一下",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 0.0,
+        "end": 1.48,
+        "text": "我刚才一个叫合适的版本",
+        "tokens": [
+          50364,
+          1654,
+          49160,
+          18888,
+          20182,
+          19855,
+          14245,
+          2215,
+          224,
+          1546,
+          42096,
+          8802,
+          50447
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.5293534885753285,
+        "compression_ratio": 0.8636363636363636,
+        "no_speech_prob": 0.00582842854782939,
+        "words": [
+          {
+            "word": "我",
+            "start": 0.0,
+            "end": 0.08,
+            "probability": 0.33382943272590637
+          },
+          {
+            "word": "刚",
+            "start": 0.08,
+            "end": 0.16,
+            "probability": 0.10290467739105225
+          },
+          {
+            "word": "才",
+            "start": 0.16,
+            "end": 0.22,
+            "probability": 0.40292537212371826
+          },
+          {
+            "word": "一个",
+            "start": 0.22,
+            "end": 0.36,
+            "probability": 0.5898237228393555
+          },
+          {
+            "word": "叫",
+            "start": 0.36,
+            "end": 0.6,
+            "probability": 0.5232316851615906
+          },
+          {
+            "word": "合",
+            "start": 0.6,
+            "end": 0.8,
+            "probability": 0.7209234833717346
+          },
+          {
+            "word": "适",
+            "start": 0.8,
+            "end": 0.98,
+            "probability": 0.9498837292194366
+          },
+          {
+            "word": "的",
+            "start": 0.98,
+            "end": 1.14,
+            "probability": 0.8243635296821594
+          },
+          {
+            "word": "版",
+            "start": 1.14,
+            "end": 1.28,
+            "probability": 0.9165741205215454
+          },
+          {
+            "word": "本",
+            "start": 1.28,
+            "end": 1.48,
+            "probability": 0.8976293206214905
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "seek": 0,
+        "start": 1.48,
+        "end": 2.98,
+        "text": "所以重新学了一下",
+        "tokens": [
+          50447,
+          7239,
+          12624,
+          12560,
+          29618,
+          2289,
+          8861,
+          50522
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.5293534885753285,
+        "compression_ratio": 0.8636363636363636,
+        "no_speech_prob": 0.00582842854782939,
+        "words": [
+          {
+            "word": "所以",
+            "start": 1.48,
+            "end": 1.84,
+            "probability": 0.8818674683570862
+          },
+          {
+            "word": "重",
+            "start": 1.84,
+            "end": 2.08,
+            "probability": 0.9327223300933838
+          },
+          {
+            "word": "新",
+            "start": 2.08,
+            "end": 2.24,
+            "probability": 0.9339048862457275
+          },
+          {
+            "word": "学",
+            "start": 2.24,
+            "end": 2.52,
+            "probability": 0.9670635461807251
+          },
+          {
+            "word": "了",
+            "start": 2.52,
+            "end": 2.68,
+            "probability": 0.8975196480751038
+          },
+          {
+            "word": "一下",
+            "start": 2.68,
+            "end": 2.98,
+            "probability": 0.9896427989006042
+          }
+        ]
+      }
+    ],
+    "language": "zh"
+  }
+}

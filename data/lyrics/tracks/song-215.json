@@ -1,0 +1,190 @@
+{
+  "schemaVersion": 1,
+  "key": "song-215",
+  "songId": 215,
+  "songName": "妄想感傷代償連盟",
+  "rowKey": "妄想感傷代償連盟",
+  "displaySongName": "妄想感傷代償連盟",
+  "artist": "25時、ナイトコードで。 / 初音ミク",
+  "language": "日文",
+  "derivative": false,
+  "edition": "",
+  "remark": "UP 桐人今天睡大觉《2026.09.23练歌歌切合集》P6；原曲为《プロジェクトセカイ》25時、ナイトコードで。团体曲（ feat. 初音ミク），弹幕以 pjsk 语境佐证",
+  "audio": {
+    "url": "assets/audio/song_214.m4a?v=9420db1483fd",
+    "sha256": "9420db1483fdd815d7aa924087cf27a780ca478e646f33336a9d1d70e6770e55"
+  },
+  "retrievedAt": "2026-11-16T04:05:09.817Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E5%A6%84%E6%83%B3%E6%84%9F%E5%82%B7%E4%BB%A3%E5%84%9F%E9%80%A3%E7%9B%9F&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E5%A6%84%E6%83%B3%E6%84%9F%E5%82%B7%E4%BB%A3%E5%84%9F%E9%80%A3%E7%9B%9F%2025%E6%99%82&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 432486474,
+        "name": "妄想感傷代償連盟",
+        "artists": [
+          "DECO*27",
+          "初音ミク"
+        ],
+        "album": "GHOST",
+        "durationMs": 270000,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1943868960,
+        "name": "妄想感傷代償連盟",
+        "artists": [
+          "佐仓樱",
+          "GUMI",
+          "初音ミク"
+        ],
+        "album": "樱小姐の调教翻唱合集~",
+        "durationMs": 270336,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 3445953566,
+        "name": "妄想感傷代償連盟",
+        "artists": [
+          "Settle一虾子"
+        ],
+        "album": "妄想感傷代償連盟",
+        "durationMs": 221040,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1451206513,
+        "name": "妄想感傷代償連盟",
+        "artists": [
+          "神田沙也加",
+          "DECO*27"
+        ],
+        "album": "MUSICALOID #38 Act. 2",
+        "durationMs": 266306,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3429672291,
+        "name": "妄想感傷代償連盟",
+        "artists": [
+          "夢ノ結唱ROSE",
+          "Akifuyu"
+        ],
+        "album": "夢ノ結唱翻唱",
+        "durationMs": 267493,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1440950083,
+        "name": "妄想感傷代償連盟",
+        "artists": [
+          "uen"
+        ],
+        "album": "妄想感傷代償連盟",
+        "durationMs": 267758,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3445301765,
+        "name": "妄想感傷代償連盟",
+        "artists": [
+          "怀念_oMUi"
+        ],
+        "album": "妄想感伤代偿联盟",
+        "durationMs": 268636,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2111993053,
+        "name": "妄想感傷代償連盟 (feat. 宵崎奏&東雲絵名&初音ミク)",
+        "artists": [
+          "25時、ナイトコードで。",
+          "初音ミク"
+        ],
+        "album": "25時、ナイトコードで。 SEKAI ALBUM vol.2",
+        "durationMs": 267500,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      }
+    ],
+    "workQuery": {
+      "song_id": 215,
+      "song_name": "妄想感傷代償連盟",
+      "show_as_song_name": "",
+      "display_song_name": "妄想感傷代償連盟",
+      "artist": "25時、ナイトコードで。 / 初音ミク",
+      "artist_search": "妄想感傷代償連盟 25時、ナイトコードで。",
+      "feat_artist": "",
+      "remark": "UP 桐人今天睡大觉《2026.09.23练歌歌切合集》P6；原曲为《プロジェクトセカイ》25時、ナイトコードで。团体曲（ feat. 初音ミク），弹幕以 pjsk 语境佐证",
+      "tone": "",
+      "language": "日文",
+      "type": "Project SEKAI、Vocaloid",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1ouhW6GEoD/?p=6",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-09-23",
+      "row_key": "妄想感傷代償連盟"
+    },
+    "sourceId": 432486474,
+    "sourcePath": "sources/432486474.json",
+    "sourceUrl": "https://music.163.com/#/song?id=432486474",
+    "selected": {
+      "id": 432486474,
+      "name": "妄想感傷代償連盟",
+      "artists": [
+        "DECO*27",
+        "初音ミク"
+      ],
+      "album": "GHOST",
+      "durationMs": 270000,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 58
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-215-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 266.519,
+    "sourceFirstLine": {
+      "t": 7.64,
+      "text": "言っちゃった"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 6.3,
+      "endSeconds": 6.48,
+      "similarity": 0.2857142857142857,
+      "recognizedText": "た",
+      "meanProbability": 0.418,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "ja",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

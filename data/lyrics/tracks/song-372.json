@@ -1,0 +1,196 @@
+{
+  "schemaVersion": 1,
+  "key": "song-372",
+  "songId": 372,
+  "songName": "水上灯",
+  "rowKey": "水上灯",
+  "displaySongName": "水上灯",
+  "artist": "Braska",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "Braska 概念专辑《伍觉》火元素主题曲；分P 署名曹浩然",
+  "audio": {
+    "url": "assets/audio/song_371.m4a?v=589469ea48eb",
+    "sha256": "589469ea48eb25b309494d0b118caeb724798a24b361255ef4202ed40e3edbf7"
+  },
+  "retrievedAt": "2026-11-16T04:13:31.065Z",
+  "match": {
+    "status": "candidate_review_required",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E6%B0%B4%E4%B8%8A%E7%81%AF&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E6%B0%B4%E4%B8%8A%E7%81%AF%20Braska&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 2152911855,
+        "name": "水上灯",
+        "artists": [
+          "郁千"
+        ],
+        "album": "水上灯",
+        "durationMs": 260650,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2618797183,
+        "name": "水上灯",
+        "artists": [
+          "Bauhinia7x",
+          "言和"
+        ],
+        "album": "水上灯",
+        "durationMs": 261694,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3426189803,
+        "name": "水上灯",
+        "artists": [
+          "茶了了"
+        ],
+        "album": "水上灯",
+        "durationMs": 261098,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2686723083,
+        "name": "水上灯",
+        "artists": [
+          "轩凌拾弋SHIYI.",
+          "媯煌",
+          "鹤归故里",
+          "竹也"
+        ],
+        "album": "水上灯",
+        "durationMs": 261699,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3399093464,
+        "name": "水上灯",
+        "artists": [
+          "清尘暮"
+        ],
+        "album": "下架歌曲补档",
+        "durationMs": 260780,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2159644866,
+        "name": "水上灯",
+        "artists": [
+          "曹稳健"
+        ],
+        "album": "水上灯",
+        "durationMs": 258984,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2603907812,
+        "name": "水上灯",
+        "artists": [
+          "Juillet",
+          "景序Dasein",
+          "千玥Jasmyn.Z",
+          "冰冰没有钱",
+          "南怀玉_GCH"
+        ],
+        "album": "水上灯",
+        "durationMs": 266424,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2163906684,
+        "name": "水上灯",
+        "artists": [
+          "流萤",
+          "瀹宛",
+          "绾湘",
+          "幽灵",
+          "知清禅"
+        ],
+        "album": "水上灯（大总攻团建版）",
+        "durationMs": 260652,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 372,
+      "song_name": "水上灯",
+      "show_as_song_name": "",
+      "display_song_name": "水上灯",
+      "artist": "Braska",
+      "artist_search": "Braska",
+      "feat_artist": "",
+      "remark": "Braska 概念专辑《伍觉》火元素主题曲；分P 署名曹浩然",
+      "tone": "",
+      "language": "中文",
+      "type": "国风、中文原创",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1nRxJ6tEPC/?p=25",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-31",
+      "row_key": "水上灯"
+    },
+    "sourceId": 2618797183,
+    "sourcePath": "sources/2618797183.json",
+    "sourceUrl": "https://music.163.com/#/song?id=2618797183",
+    "selected": {
+      "id": 2618797183,
+      "name": "水上灯",
+      "artists": [
+        "Bauhinia7x",
+        "言和"
+      ],
+      "album": "水上灯",
+      "durationMs": 261694,
+      "titleScore": 1,
+      "artistMatch": false,
+      "score": 0.8
+    },
+    "timedLineCount": 52
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-372-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 320.384,
+    "sourceFirstLine": {
+      "t": 5.106,
+      "text": "作曲/编曲：Braska"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 0.0,
+      "endSeconds": 0.4,
+      "similarity": 0.0,
+      "recognizedText": "其实",
+      "meanProbability": 0.577,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

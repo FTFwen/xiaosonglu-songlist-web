@@ -1,0 +1,190 @@
+{
+  "schemaVersion": 1,
+  "key": "song-218",
+  "songId": 218,
+  "songName": "ゴーストルール",
+  "rowKey": "ゴーストルール",
+  "displaySongName": "ゴーストルール",
+  "artist": "mafumafu（原曲 DECO*27 / 初音ミク）",
+  "language": "日文",
+  "derivative": false,
+  "edition": "",
+  "remark": "UP 桐人今天睡大觉《2026.09.23练歌歌切合集》P9；原曲为 DECO*27 feat. 初音ミク 的 VOCALOID 曲，分P 标注 mafumafu 翻唱版本参照",
+  "audio": {
+    "url": "assets/audio/song_217.m4a?v=716c44e13152",
+    "sha256": "716c44e131525dcc22c3d9cbd3cfcd851cac1f3084f99beb34ce640cbba220fc"
+  },
+  "retrievedAt": "2026-11-16T04:05:18.674Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E3%82%B4%E3%83%BC%E3%82%B9%E3%83%88%E3%83%AB%E3%83%BC%E3%83%AB&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E3%82%B4%E3%83%BC%E3%82%B9%E3%83%88%E3%83%AB%E3%83%BC%E3%83%AB%20mafumafu&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 432486470,
+        "name": "ゴーストルール",
+        "artists": [
+          "DECO*27",
+          "初音ミク"
+        ],
+        "album": "GHOST",
+        "durationMs": 210000,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 399552421,
+        "name": "ゴーストルール",
+        "artists": [
+          "DECO*27",
+          "初音ミク"
+        ],
+        "album": "最新热歌慢摇114",
+        "durationMs": 210000,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 512489734,
+        "name": "ゴーストルール",
+        "artists": [
+          "DECO*27",
+          "まらしぃ"
+        ],
+        "album": "Vocalo Piano ～marasy vocaloid songs cover on piano～",
+        "durationMs": 220826,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1824719369,
+        "name": "ゴーストルール",
+        "artists": [
+          "DECO*27",
+          "Naoki Itai",
+          "初音ミク"
+        ],
+        "album": "初音ミク Project DIVA MEGA39’s 10th アニバーサリーコレクション",
+        "durationMs": 209640,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 566442382,
+        "name": "ゴーストルール",
+        "artists": [
+          "初音ミク",
+          "DECO*27"
+        ],
+        "album": "初音ミク「マジカルミライ 2016」LIVE",
+        "durationMs": 221887,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 3442857612,
+        "name": "ゴーストルール",
+        "artists": [
+          "まふまふ"
+        ],
+        "album": "世会色ユニバース (初回限定盤A)",
+        "durationMs": 208971,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1317078152,
+        "name": "ゴーストルール",
+        "artists": [
+          "shack"
+        ],
+        "album": "Cyclo Caravan",
+        "durationMs": 209960,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 417250833,
+        "name": "ゴーストルール",
+        "artists": [
+          "あいす"
+        ],
+        "album": "最新热歌慢摇112",
+        "durationMs": 206524,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 218,
+      "song_name": "ゴーストルール",
+      "show_as_song_name": "",
+      "display_song_name": "ゴーストルール",
+      "artist": "mafumafu（原曲 DECO*27 / 初音ミク）",
+      "artist_search": "ゴーストルール DECO*27 初音ミク",
+      "feat_artist": "",
+      "remark": "UP 桐人今天睡大觉《2026.09.23练歌歌切合集》P9；原曲为 DECO*27 feat. 初音ミク 的 VOCALOID 曲，分P 标注 mafumafu 翻唱版本参照",
+      "tone": "",
+      "language": "日文",
+      "type": "Vocaloid、翻唱",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1ouhW6GEoD/?p=9",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-09-23",
+      "row_key": "ゴーストルール"
+    },
+    "sourceId": 432486470,
+    "sourcePath": "sources/432486470.json",
+    "sourceUrl": "https://music.163.com/#/song?id=432486470",
+    "selected": {
+      "id": 432486470,
+      "name": "ゴーストルール",
+      "artists": [
+        "DECO*27",
+        "初音ミク"
+      ],
+      "album": "GHOST",
+      "durationMs": 210000,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 36
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-218-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 129.939,
+    "sourceFirstLine": {
+      "t": 18.22,
+      "text": "どうだっていい言を 嘘って吐いて戻れない"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 21.74,
+      "endSeconds": 25.92,
+      "similarity": 0.7027027027027027,
+      "recognizedText": "どうだっていいかと嘘で早いで戻れない",
+      "meanProbability": 0.697,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "ja",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

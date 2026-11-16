@@ -1,0 +1,185 @@
+{
+  "schemaVersion": 1,
+  "key": "song-326",
+  "songId": 326,
+  "songName": "扉をあけて",
+  "rowKey": "扉をあけて",
+  "displaySongName": "扉をあけて",
+  "artist": "ANZA",
+  "language": "日文",
+  "derivative": false,
+  "edition": "",
+  "remark": "桐人今天睡大觉「全自动歌切项目」2026.10.18 歌切合集第 22 分P（章节「23_扉をあけて - ANZA」）。弹幕未直接出现歌名，仅以合集章节 + 日期确认。未定位回放时间点。",
+  "audio": {
+    "url": "assets/audio/song_325.m4a?v=3e7650e0f53f",
+    "sha256": "3e7650e0f53f0688b52a7ee6ac55f593bf0282c72f3ab56d9eb2904ab72c4904"
+  },
+  "retrievedAt": "2026-11-16T04:06:52.110Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E6%89%89%E3%82%92%E3%81%82%E3%81%91%E3%81%A6&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E6%89%89%E3%82%92%E3%81%82%E3%81%91%E3%81%A6%20ANZA&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 555959,
+        "name": "扉をあけて",
+        "artists": [
+          "ANZA"
+        ],
+        "album": "扉をあけて",
+        "durationMs": 283493,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1847207199,
+        "name": "扉をあけて",
+        "artists": [
+          "ANZA"
+        ],
+        "album": "カードキャプターさくら　ソングコレクション 1999.4～2001.2",
+        "durationMs": 282906,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 4995153,
+        "name": "扉をあけて",
+        "artists": [
+          "ANZA"
+        ],
+        "album": "カードキャプターさくら 主题歌コレクション",
+        "durationMs": 282906,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 3361263299,
+        "name": "扉をあけて",
+        "artists": [
+          "ANZA"
+        ],
+        "album": "",
+        "durationMs": 282906,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 28785362,
+        "name": "扉をあけて",
+        "artists": [
+          "ANZA"
+        ],
+        "album": "カードキャプターさくら オリジナル・サウンドトラック3",
+        "durationMs": 283493,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 4996902,
+        "name": "扉をあけて",
+        "artists": [
+          "ANZA"
+        ],
+        "album": "「カードキャプターさくら」コンプリート・ヴォーカル・コレクション",
+        "durationMs": 281826,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2034111511,
+        "name": "扉をあけて",
+        "artists": [
+          "ONNONANA_呐呐"
+        ],
+        "album": "【Nana】魔卡少女樱的OPED插曲翻唱",
+        "durationMs": 81087,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2107704181,
+        "name": "扉をあけて",
+        "artists": [
+          "鈴木勝吾",
+          "平野良",
+          "ミュージカル『憂国のモリアーティ』Op.3"
+        ],
+        "album": "ミュージカル『憂国のモリアーティ』Song Collection -Op.1/Op.2/Op.3-",
+        "durationMs": 242588,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 326,
+      "song_name": "扉をあけて",
+      "show_as_song_name": "",
+      "display_song_name": "扉をあけて",
+      "artist": "ANZA",
+      "artist_search": "ANZA 扉をあけて",
+      "feat_artist": "",
+      "remark": "桐人今天睡大觉「全自动歌切项目」2026.10.18 歌切合集第 22 分P（章节「23_扉をあけて - ANZA」）。弹幕未直接出现歌名，仅以合集章节 + 日期确认。未定位回放时间点。",
+      "tone": "",
+      "language": "日文",
+      "type": "动漫、经典",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1UPnV6zEs4/?p=22",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-18",
+      "row_key": "扉をあけて"
+    },
+    "sourceId": 555959,
+    "sourcePath": "sources/555959.json",
+    "sourceUrl": "https://music.163.com/#/song?id=555959",
+    "selected": {
+      "id": 555959,
+      "name": "扉をあけて",
+      "artists": [
+        "ANZA"
+      ],
+      "album": "扉をあけて",
+      "durationMs": 283493,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 24
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-326-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 326.165,
+    "sourceFirstLine": {
+      "t": 6.92,
+      "text": "It's all right 大丈夫 ダイジョウブ だいじょうぶ"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 26.92,
+      "endSeconds": 29.72,
+      "similarity": 0.0,
+      "recognizedText": "【音",
+      "meanProbability": 0.009,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "ja",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

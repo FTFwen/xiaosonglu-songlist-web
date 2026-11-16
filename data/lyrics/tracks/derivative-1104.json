@@ -1,0 +1,174 @@
+{
+  "schemaVersion": 1,
+  "key": "derivative-1104",
+  "songId": -1104,
+  "songName": "小松绿-群青",
+  "rowKey": "小松绿-群青",
+  "displaySongName": "群青",
+  "artist": "白烁",
+  "language": "",
+  "derivative": true,
+  "edition": "",
+  "remark": "",
+  "audio": {
+    "url": "assets/derivative/qunqing.mp3?v=4a57d94b4ea6",
+    "sha256": "4a57d94b4ea65d04a7134c4bfcf7825811e81234f25c7bcf47a1d36a4e07fc06"
+  },
+  "retrievedAt": "2026-11-16T04:08:39.041Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E7%BE%A4%E9%9D%92&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E7%BE%A4%E9%9D%92%20YOASOBI&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1472480890,
+        "name": "群青",
+        "artists": [
+          "YOASOBI"
+        ],
+        "album": "群青",
+        "durationMs": 248444,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1500151581,
+        "name": "群青",
+        "artists": [
+          "YOASOBI"
+        ],
+        "album": "THE BOOK",
+        "durationMs": 248444,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1942909267,
+        "name": "群青",
+        "artists": [
+          "泠鸢yousa",
+          "Ayase"
+        ],
+        "album": "群青 (中文填词)",
+        "durationMs": 120058,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2016702105,
+        "name": "群青",
+        "artists": [
+          "小铭"
+        ],
+        "album": "群青 群青伴奏 群青YOASOBI 群青崩坏三",
+        "durationMs": 246010,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1881312611,
+        "name": "群青",
+        "artists": [
+          "Hanser",
+          "小缘"
+        ],
+        "album": "hanser唱的歌(181016开始的",
+        "durationMs": 249117,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3453847201,
+        "name": "群青 (YOASOBI 5th ANNIVERSARY DOME LIVE 2024 “超現実”)",
+        "artists": [
+          "YOASOBI"
+        ],
+        "album": "YOASOBI 5th ANNIVERSARY DOME LIVE 2024 “超現実” at TOKYO DOME",
+        "durationMs": 299653,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      },
+      {
+        "id": 2007396062,
+        "name": "群青 (Remix)",
+        "artists": [
+          "DJ Agos",
+          "Ayase"
+        ],
+        "album": "My Soul",
+        "durationMs": 245351,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 2681294641,
+        "name": "群青 (RLC PIANO REMIX)",
+        "artists": [
+          "あおね"
+        ],
+        "album": "群青 (RLC PIANO REMIX)",
+        "durationMs": 77437,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      }
+    ],
+    "workQuery": {
+      "song_id": -1104,
+      "song_name": "群青",
+      "display_song_name": "群青",
+      "artist": "YOASOBI",
+      "language": "",
+      "audio": "assets/derivative/qunqing.mp3?v=4a57d94b4ea6",
+      "derivative": true
+    },
+    "sourceId": 1472480890,
+    "sourcePath": "sources/1472480890.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1472480890",
+    "selected": {
+      "id": 1472480890,
+      "name": "群青",
+      "artists": [
+        "YOASOBI"
+      ],
+      "album": "群青",
+      "durationMs": 248444,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 76
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/derivative-1104-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 65.646,
+    "sourceFirstLine": {
+      "t": 0.966,
+      "text": "嗚呼いつもの様に"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 0.44,
+      "endSeconds": 1.7,
+      "similarity": 0.6666666666666666,
+      "recognizedText": "いつもの",
+      "meanProbability": 0.751,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "ja",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

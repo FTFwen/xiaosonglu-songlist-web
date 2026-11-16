@@ -1,0 +1,185 @@
+{
+  "schemaVersion": 1,
+  "key": "song-377",
+  "songId": 377,
+  "songName": "Vitamins",
+  "rowKey": "Vitamins",
+  "displaySongName": "Vitamins",
+  "artist": "Mili / world's end girlfriend",
+  "language": "英文",
+  "derivative": false,
+  "edition": "",
+  "remark": "Mili 与 world's end girlfriend 合作曲，英文演唱；章节标注",
+  "audio": {
+    "url": "assets/audio/song_376.m4a?v=c7803838c854",
+    "sha256": "c7803838c854ddad1f944ce552a746ec5c8b789ba803fb6238cd52944e49e07f"
+  },
+  "retrievedAt": "2026-11-16T04:08:05.880Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=Vitamins&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=Vitamins%20Mili%20%2F%20world's%20end%20girlfriend&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 554245891,
+        "name": "Vitamins",
+        "artists": [
+          "Mili",
+          "world's end girlfriend"
+        ],
+        "album": "Millennium Mother",
+        "durationMs": 302386,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2164216015,
+        "name": "Vitamins",
+        "artists": [
+          "Mili、World's End Girlfriend"
+        ],
+        "album": "",
+        "durationMs": 300486,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1401418162,
+        "name": "Vitamins",
+        "artists": [
+          "Qveen Herby"
+        ],
+        "album": "EP 7",
+        "durationMs": 140000,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2149381683,
+        "name": "Vitamins",
+        "artists": [
+          "Mabel"
+        ],
+        "album": "Vitamins",
+        "durationMs": 152290,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1939468436,
+        "name": "Vitamins",
+        "artists": [
+          "Novaa"
+        ],
+        "album": "She's A Star",
+        "durationMs": 179758,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1940201986,
+        "name": "Vitamins",
+        "artists": [
+          "ELIO"
+        ],
+        "album": "ELIO'S INFERNO",
+        "durationMs": 148819,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2142298418,
+        "name": "VITAMIN",
+        "artists": [
+          "Migg"
+        ],
+        "album": "P.M.W",
+        "durationMs": 116700,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 1855538218,
+        "name": "VITAMIN",
+        "artists": [
+          "ASHAT-AC"
+        ],
+        "album": "VITAMIN",
+        "durationMs": 189400,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      }
+    ],
+    "workQuery": {
+      "song_id": 377,
+      "song_name": "Vitamins",
+      "show_as_song_name": "",
+      "display_song_name": "Vitamins",
+      "artist": "Mili / world's end girlfriend",
+      "artist_search": "Mili / world's end girlfriend",
+      "feat_artist": "",
+      "remark": "Mili 与 world's end girlfriend 合作曲，英文演唱；章节标注",
+      "tone": "",
+      "language": "英文",
+      "type": "摇滚",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV18pWH6gEzr/?p=6",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-11-08",
+      "row_key": "Vitamins"
+    },
+    "sourceId": 554245891,
+    "sourcePath": "sources/554245891.json",
+    "sourceUrl": "https://music.163.com/#/song?id=554245891",
+    "selected": {
+      "id": 554245891,
+      "name": "Vitamins",
+      "artists": [
+        "Mili",
+        "world's end girlfriend"
+      ],
+      "album": "Millennium Mother",
+      "durationMs": 302386,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 73
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-377-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 303.851,
+    "sourceFirstLine": {
+      "t": 19.8,
+      "text": "If you think we take too much then you can sacrifice yourself"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 0.0,
+      "endSeconds": 0.16,
+      "similarity": 0.0,
+      "recognizedText": "典",
+      "meanProbability": 0.591,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

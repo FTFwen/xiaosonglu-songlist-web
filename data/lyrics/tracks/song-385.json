@@ -1,0 +1,184 @@
+{
+  "schemaVersion": 1,
+  "key": "song-385",
+  "songId": 385,
+  "songName": "ヒッチコック",
+  "rowKey": "ヒッチコック",
+  "displaySongName": "ヒッチコック",
+  "artist": "ヨルシカ",
+  "language": "日文",
+  "derivative": false,
+  "edition": "",
+  "remark": "回放 03:21:32 弹幕「希区柯克」，03:22:45「跟不上就原创」与同窗口「已原创」刷屏对应歌切改编唱法；同场另有小松绿天生就喜欢笑 BV16bWV6PE92「ヒッチコック（希区柯克 完全原创版）」225s 为同一演出的另一剪辑（弹幕仅一次演唱证据），留作交叉复核。原曲ヨルシカ「ヒッチコック」（作詞作曲 n-buna）。",
+  "audio": {
+    "url": "assets/audio/song_384.m4a?v=bb2feabf501a",
+    "sha256": "bb2feabf501a9a95688d6b5819d13a1e71b8c8f122ef0414512f3100e699e9c8"
+  },
+  "retrievedAt": "2026-11-16T04:08:13.745Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E3%83%92%E3%83%83%E3%83%81%E3%82%B3%E3%83%83%E3%82%AF&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E3%83%92%E3%83%83%E3%83%81%E3%82%B3%E3%83%83%E3%82%AF%20%E3%83%A8%E3%83%AB%E3%82%B7%E3%82%AB&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 557581315,
+        "name": "ヒッチコック",
+        "artists": [
+          "ヨルシカ"
+        ],
+        "album": "負け犬にアンコールはいらない",
+        "durationMs": 222813,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 572354726,
+        "name": "ヒッチコック",
+        "artists": [
+          "Sawako碎花"
+        ],
+        "album": "ヒッチコック",
+        "durationMs": 221471,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3355479296,
+        "name": "ヒッチコック (Re-Recording)",
+        "artists": [
+          "ヨルシカ"
+        ],
+        "album": "二人称",
+        "durationMs": 225144,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      },
+      {
+        "id": 561415582,
+        "name": "ヒッチコック（翻自 ヨルシカ）",
+        "artists": [
+          "冰山",
+          "初音ミク"
+        ],
+        "album": "ヒッチコック",
+        "durationMs": 226075,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 1356176694,
+        "name": "ヒッチコック 01（翻自 ヨルシカ）",
+        "artists": [
+          "逄日帆_hiho"
+        ],
+        "album": "ヒッチコック/Hitchcock",
+        "durationMs": 228963,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 1974639628,
+        "name": "ヒッチコック (cover:ヨルシカ)",
+        "artists": [
+          "天竹Amatake"
+        ],
+        "album": "Amatake's 2022 Collection",
+        "durationMs": 231575,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 1951538226,
+        "name": "ヒッチコック (cover by ヨルシカ)",
+        "artists": [
+          "莫榆梓"
+        ],
+        "album": "翻唱",
+        "durationMs": 221810,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 1850977722,
+        "name": "又三郎",
+        "artists": [
+          "ヨルシカ"
+        ],
+        "album": "又三郎",
+        "durationMs": 227731,
+        "titleScore": 0,
+        "artistMatch": true,
+        "score": 0.2
+      }
+    ],
+    "workQuery": {
+      "song_id": 385,
+      "song_name": "ヒッチコック",
+      "show_as_song_name": "",
+      "display_song_name": "ヒッチコック",
+      "artist": "ヨルシカ",
+      "artist_search": "ヨルシカ",
+      "feat_artist": "",
+      "remark": "回放 03:21:32 弹幕「希区柯克」，03:22:45「跟不上就原创」与同窗口「已原创」刷屏对应歌切改编唱法；同场另有小松绿天生就喜欢笑 BV16bWV6PE92「ヒッチコック（希区柯克 完全原创版）」225s 为同一演出的另一剪辑（弹幕仅一次演唱证据），留作交叉复核。原曲ヨルシカ「ヒッチコック」（作詞作曲 n-buna）。",
+      "tone": "",
+      "language": "日文",
+      "type": "J-Pop",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1BUWg6XEwc/",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切复核",
+      "last_sing_at": "2026-11-10",
+      "row_key": "ヒッチコック"
+    },
+    "sourceId": 557581315,
+    "sourcePath": "sources/557581315.json",
+    "sourceUrl": "https://music.163.com/#/song?id=557581315",
+    "selected": {
+      "id": 557581315,
+      "name": "ヒッチコック",
+      "artists": [
+        "ヨルシカ"
+      ],
+      "album": "負け犬にアンコールはいらない",
+      "durationMs": 222813,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 40
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-385-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 216.299,
+    "sourceFirstLine": {
+      "t": 0.33,
+      "text": "「雨の匂いに懐かしくなるのは何でなんでしょうか。"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 30.82,
+      "endSeconds": 34.46,
+      "similarity": 0.125,
+      "recognizedText": "いた進階人生相談です",
+      "meanProbability": 0.474,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "ja",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

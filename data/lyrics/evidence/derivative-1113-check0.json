@@ -1,0 +1,117 @@
+{
+  "audioSha256": "b986e4c72837388150ad14a35e5e58ba3c58009c476e2ab4c879cafa6152f809",
+  "model": "whisper-base",
+  "start": 153.36,
+  "end": 173.36,
+  "result": {
+    "text": "でーすあかりに泣かん",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 0.0,
+        "end": 2.0,
+        "text": "でーす",
+        "tokens": [
+          50364,
+          2474,
+          3384,
+          2659,
+          50464
+        ],
+        "temperature": 0,
+        "avg_logprob": -1.1177411079406738,
+        "compression_ratio": 0.8333333333333334,
+        "no_speech_prob": 0.19442957639694214,
+        "words": [
+          {
+            "word": "で",
+            "start": 0.0,
+            "end": 0.0,
+            "probability": 0.00015225894458126277
+          },
+          {
+            "word": "ー",
+            "start": 0.0,
+            "end": 0.0,
+            "probability": 0.2161005437374115
+          },
+          {
+            "word": "す",
+            "start": 0.0,
+            "end": 2.0,
+            "probability": 0.35812100768089294
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "seek": 0,
+        "start": 13.86,
+        "end": 19.7,
+        "text": "あかりに泣かん",
+        "tokens": [
+          51164,
+          3590,
+          3703,
+          5095,
+          4108,
+          6847,
+          96,
+          3703,
+          3225,
+          51364
+        ],
+        "temperature": 0,
+        "avg_logprob": -1.1177411079406738,
+        "compression_ratio": 0.8333333333333334,
+        "no_speech_prob": 0.19442957639694214,
+        "words": [
+          {
+            "word": "あ",
+            "start": 13.86,
+            "end": 15.26,
+            "probability": 0.07999330759048462
+          },
+          {
+            "word": "か",
+            "start": 15.26,
+            "end": 16.66,
+            "probability": 0.5777120590209961
+          },
+          {
+            "word": "り",
+            "start": 16.66,
+            "end": 16.98,
+            "probability": 0.980628490447998
+          },
+          {
+            "word": "に",
+            "start": 16.98,
+            "end": 17.54,
+            "probability": 0.3934289813041687
+          },
+          {
+            "word": "泣",
+            "start": 17.54,
+            "end": 18.4,
+            "probability": 0.479034960269928
+          },
+          {
+            "word": "か",
+            "start": 18.4,
+            "end": 18.84,
+            "probability": 0.6691485643386841
+          },
+          {
+            "word": "ん",
+            "start": 18.84,
+            "end": 19.7,
+            "probability": 0.27698376774787903
+          }
+        ]
+      }
+    ],
+    "language": "ja"
+  }
+}

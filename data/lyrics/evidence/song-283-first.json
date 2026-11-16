@@ -1,0 +1,43 @@
+{
+  "audioSha256": "d3c4c7aa08b3c98061c39a3f973d53c5df6d199b70ae530d0b13d9c2c7b749a6",
+  "model": "whisper-base",
+  "start": 0,
+  "end": 35,
+  "result": {
+    "text": "二哥",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 4.960000000000001,
+        "end": 6.38,
+        "text": "二哥",
+        "tokens": [
+          50364,
+          11217,
+          14078,
+          50404
+        ],
+        "temperature": 0,
+        "avg_logprob": -1.0866024017333984,
+        "compression_ratio": 0.42857142857142855,
+        "no_speech_prob": 0.07171748578548431,
+        "words": [
+          {
+            "word": "二",
+            "start": 4.960000000000001,
+            "end": 6.36,
+            "probability": 0.09732188284397125
+          },
+          {
+            "word": "哥",
+            "start": 6.36,
+            "end": 6.38,
+            "probability": 0.8997599482536316
+          }
+        ]
+      }
+    ],
+    "language": "zh"
+  }
+}

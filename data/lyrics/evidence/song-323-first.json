@@ -1,0 +1,125 @@
+{
+  "audioSha256": "16d532fc76bebea27b3caab177d2071b7dabb24b37cbac42fcdd0991c0dfe36f",
+  "model": "whisper-base",
+  "start": 0,
+  "end": 35.51,
+  "result": {
+    "text": "我們進大學會更明白什麼是溫柔",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 0.0,
+        "end": 1.42,
+        "text": "我們進大學",
+        "tokens": [
+          50364,
+          5884,
+          18214,
+          3582,
+          21372,
+          50464
+        ],
+        "temperature": 0,
+        "avg_logprob": -1.1188620839800154,
+        "compression_ratio": 0.625,
+        "no_speech_prob": 0.5144467353820801,
+        "words": [
+          {
+            "word": "我們",
+            "start": 0.0,
+            "end": 0.58,
+            "probability": 0.12087537348270416
+          },
+          {
+            "word": "進",
+            "start": 0.58,
+            "end": 0.88,
+            "probability": 0.2700985372066498
+          },
+          {
+            "word": "大",
+            "start": 0.88,
+            "end": 1.16,
+            "probability": 0.5987992286682129
+          },
+          {
+            "word": "學",
+            "start": 1.16,
+            "end": 1.42,
+            "probability": 0.2987334132194519
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "seek": 3000,
+        "start": 30.0,
+        "end": 35.08,
+        "text": "會更明白什麼是溫柔",
+        "tokens": [
+          50364,
+          6236,
+          19002,
+          28430,
+          7598,
+          1541,
+          16084,
+          104,
+          17238,
+          242,
+          50632
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.42668986320495605,
+        "compression_ratio": 0.7105263157894737,
+        "no_speech_prob": 0.14641474187374115,
+        "words": [
+          {
+            "word": "會",
+            "start": 30.0,
+            "end": 30.44,
+            "probability": 0.4769613742828369
+          },
+          {
+            "word": "更",
+            "start": 30.44,
+            "end": 30.9,
+            "probability": 0.8049528002738953
+          },
+          {
+            "word": "明白",
+            "start": 30.9,
+            "end": 31.72,
+            "probability": 0.9975118637084961
+          },
+          {
+            "word": "什麼",
+            "start": 31.72,
+            "end": 32.96,
+            "probability": 0.777412474155426
+          },
+          {
+            "word": "是",
+            "start": 32.96,
+            "end": 33.54,
+            "probability": 0.8551841974258423
+          },
+          {
+            "word": "溫",
+            "start": 33.54,
+            "end": 34.0,
+            "probability": 0.8851820528507233
+          },
+          {
+            "word": "柔",
+            "start": 34.0,
+            "end": 35.08,
+            "probability": 0.9986637234687805
+          }
+        ]
+      }
+    ],
+    "language": "zh"
+  }
+}

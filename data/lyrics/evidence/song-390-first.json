@@ -1,0 +1,1191 @@
+{
+  "audioSha256": "0c9806ba6f7119e819ea5982c0de1c17aae240de4fd7fd9f9fc0108ec9e53e10",
+  "model": "whisper-base",
+  "start": 0,
+  "end": 51.86,
+  "result": {
+    "text": "我去找你你去找你你去找你你去找你你去找你我心里的心里我心里的心里我心里的心里我心里的心里我心里的心里我心里的心里我心里的心里我心里的心里我心里的心里我心里的心里",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 24.580000000000002,
+        "end": 27.34,
+        "text": "我去找你",
+        "tokens": [
+          50364,
+          1654,
+          6734,
+          25085,
+          2166,
+          50414
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.1798385273326527,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.7355058193206787,
+        "words": [
+          {
+            "word": "我",
+            "start": 24.580000000000002,
+            "end": 25.98,
+            "probability": 0.030882911756634712
+          },
+          {
+            "word": "去",
+            "start": 25.98,
+            "end": 27.34,
+            "probability": 0.024937033653259277
+          },
+          {
+            "word": "找",
+            "start": 27.34,
+            "end": 27.34,
+            "probability": 0.16186858713626862
+          },
+          {
+            "word": "你",
+            "start": 27.34,
+            "end": 27.34,
+            "probability": 0.4120756685733795
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "seek": 0,
+        "start": 27.34,
+        "end": 27.34,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.1798385273326527,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.7355058193206787,
+        "words": []
+      },
+      {
+        "id": 2,
+        "seek": 0,
+        "start": 27.34,
+        "end": 27.34,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.1798385273326527,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.7355058193206787,
+        "words": []
+      },
+      {
+        "id": 3,
+        "seek": 0,
+        "start": 27.34,
+        "end": 27.34,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.1798385273326527,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.7355058193206787,
+        "words": []
+      },
+      {
+        "id": 4,
+        "seek": 0,
+        "start": 27.34,
+        "end": 27.34,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.1798385273326527,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.7355058193206787,
+        "words": []
+      },
+      {
+        "id": 5,
+        "seek": 0,
+        "start": 27.34,
+        "end": 27.34,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.1798385273326527,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.7355058193206787,
+        "words": []
+      },
+      {
+        "id": 6,
+        "seek": 0,
+        "start": 27.34,
+        "end": 27.34,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.1798385273326527,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.7355058193206787,
+        "words": []
+      },
+      {
+        "id": 7,
+        "seek": 0,
+        "start": 27.34,
+        "end": 27.34,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.1798385273326527,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.7355058193206787,
+        "words": []
+      },
+      {
+        "id": 8,
+        "seek": 0,
+        "start": 27.34,
+        "end": 27.34,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.1798385273326527,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.7355058193206787,
+        "words": []
+      },
+      {
+        "id": 9,
+        "seek": 0,
+        "start": 27.34,
+        "end": 27.34,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.1798385273326527,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.7355058193206787,
+        "words": []
+      },
+      {
+        "id": 10,
+        "seek": 0,
+        "start": 27.34,
+        "end": 27.34,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.1798385273326527,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.7355058193206787,
+        "words": []
+      },
+      {
+        "id": 11,
+        "seek": 0,
+        "start": 27.34,
+        "end": 27.34,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.1798385273326527,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.7355058193206787,
+        "words": []
+      },
+      {
+        "id": 12,
+        "seek": 0,
+        "start": 27.34,
+        "end": 27.34,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.1798385273326527,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.7355058193206787,
+        "words": []
+      },
+      {
+        "id": 13,
+        "seek": 0,
+        "start": 27.34,
+        "end": 27.34,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.1798385273326527,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.7355058193206787,
+        "words": []
+      },
+      {
+        "id": 14,
+        "seek": 0,
+        "start": 27.34,
+        "end": 27.34,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.1798385273326527,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.7355058193206787,
+        "words": []
+      },
+      {
+        "id": 15,
+        "seek": 0,
+        "start": 27.34,
+        "end": 27.34,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.1798385273326527,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.7355058193206787,
+        "words": []
+      },
+      {
+        "id": 16,
+        "seek": 0,
+        "start": 27.34,
+        "end": 27.36,
+        "text": "你去找你",
+        "tokens": [
+          51164,
+          2166,
+          6734,
+          25085,
+          2166,
+          51214
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.1798385273326527,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.7355058193206787,
+        "words": [
+          {
+            "word": "你",
+            "start": 27.34,
+            "end": 27.34,
+            "probability": 0.7663776278495789
+          },
+          {
+            "word": "去",
+            "start": 27.34,
+            "end": 27.34,
+            "probability": 0.7917718887329102
+          },
+          {
+            "word": "找",
+            "start": 27.34,
+            "end": 27.34,
+            "probability": 0.979430079460144
+          },
+          {
+            "word": "你",
+            "start": 27.34,
+            "end": 27.36,
+            "probability": 0.9551423192024231
+          }
+        ]
+      },
+      {
+        "id": 17,
+        "seek": 0,
+        "start": 27.36,
+        "end": 27.36,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.1798385273326527,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.7355058193206787,
+        "words": []
+      },
+      {
+        "id": 18,
+        "seek": 0,
+        "start": 27.36,
+        "end": 27.36,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.1798385273326527,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.7355058193206787,
+        "words": []
+      },
+      {
+        "id": 19,
+        "seek": 0,
+        "start": 27.36,
+        "end": 27.36,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.1798385273326527,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.7355058193206787,
+        "words": []
+      },
+      {
+        "id": 20,
+        "seek": 0,
+        "start": 27.36,
+        "end": 27.36,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.1798385273326527,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.7355058193206787,
+        "words": []
+      },
+      {
+        "id": 21,
+        "seek": 0,
+        "start": 27.36,
+        "end": 27.36,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.1798385273326527,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.7355058193206787,
+        "words": []
+      },
+      {
+        "id": 22,
+        "seek": 0,
+        "start": 27.36,
+        "end": 27.36,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.1798385273326527,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.7355058193206787,
+        "words": []
+      },
+      {
+        "id": 23,
+        "seek": 0,
+        "start": 27.36,
+        "end": 27.36,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.1798385273326527,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.7355058193206787,
+        "words": []
+      },
+      {
+        "id": 24,
+        "seek": 0,
+        "start": 27.36,
+        "end": 27.36,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.1798385273326527,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.7355058193206787,
+        "words": []
+      },
+      {
+        "id": 25,
+        "seek": 0,
+        "start": 27.36,
+        "end": 27.36,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.1798385273326527,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.7355058193206787,
+        "words": []
+      },
+      {
+        "id": 26,
+        "seek": 0,
+        "start": 27.36,
+        "end": 27.42,
+        "text": "你去找你",
+        "tokens": [
+          51664,
+          2166,
+          6734,
+          25085,
+          2166,
+          51714
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.1798385273326527,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.7355058193206787,
+        "words": [
+          {
+            "word": "你",
+            "start": 27.36,
+            "end": 27.36,
+            "probability": 0.8107002377510071
+          },
+          {
+            "word": "去",
+            "start": 27.36,
+            "end": 27.36,
+            "probability": 0.8792930841445923
+          },
+          {
+            "word": "找",
+            "start": 27.36,
+            "end": 27.36,
+            "probability": 0.9854947328567505
+          },
+          {
+            "word": "你",
+            "start": 27.36,
+            "end": 27.42,
+            "probability": 0.9566511511802673
+          }
+        ]
+      },
+      {
+        "id": 27,
+        "seek": 0,
+        "start": 27.42,
+        "end": 28.0,
+        "text": "你去找你",
+        "tokens": [
+          51714,
+          2166,
+          6734,
+          25085,
+          2166,
+          51764
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.1798385273326527,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.7355058193206787,
+        "words": [
+          {
+            "word": "你",
+            "start": 27.42,
+            "end": 27.42,
+            "probability": 0.801105260848999
+          },
+          {
+            "word": "去",
+            "start": 27.42,
+            "end": 27.42,
+            "probability": 0.8990043997764587
+          },
+          {
+            "word": "找",
+            "start": 27.42,
+            "end": 27.42,
+            "probability": 0.9857378005981445
+          },
+          {
+            "word": "你",
+            "start": 27.42,
+            "end": 28.12,
+            "probability": 0.9553519487380981
+          }
+        ]
+      },
+      {
+        "id": 28,
+        "seek": 0,
+        "start": 29.84,
+        "end": 29.98,
+        "text": "你去找你",
+        "tokens": [
+          51764,
+          2166,
+          6734,
+          25085,
+          2166,
+          51814
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.1798385273326527,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.7355058193206787,
+        "words": [
+          {
+            "word": "你",
+            "start": 29.84,
+            "end": 29.84,
+            "probability": 0.7850217223167419
+          },
+          {
+            "word": "去",
+            "start": 29.84,
+            "end": 29.98,
+            "probability": 0.9012306332588196
+          },
+          {
+            "word": "找",
+            "start": 29.98,
+            "end": 29.98,
+            "probability": 0.986663818359375
+          },
+          {
+            "word": "你",
+            "start": 29.98,
+            "end": 29.98,
+            "probability": 0.959895670413971
+          }
+        ]
+      },
+      {
+        "id": 29,
+        "seek": 2998,
+        "start": 29.98,
+        "end": 35.24,
+        "text": "我心里的心里",
+        "tokens": [
+          50364,
+          1654,
+          7945,
+          15759,
+          1546,
+          7945,
+          15759,
+          50464
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.3009227953459087,
+        "compression_ratio": 9.692307692307692,
+        "no_speech_prob": 0.8474503755569458,
+        "words": [
+          {
+            "word": "我",
+            "start": 29.98,
+            "end": 30.86,
+            "probability": 0.006281594280153513
+          },
+          {
+            "word": "心",
+            "start": 30.86,
+            "end": 34.9,
+            "probability": 0.023452289402484894
+          },
+          {
+            "word": "里",
+            "start": 34.9,
+            "end": 35.14,
+            "probability": 0.2525440454483032
+          },
+          {
+            "word": "的",
+            "start": 35.14,
+            "end": 35.14,
+            "probability": 0.05025464668869972
+          },
+          {
+            "word": "心",
+            "start": 35.14,
+            "end": 35.14,
+            "probability": 0.062258895486593246
+          },
+          {
+            "word": "里",
+            "start": 35.14,
+            "end": 35.24,
+            "probability": 0.4512268304824829
+          }
+        ]
+      },
+      {
+        "id": 30,
+        "seek": 2998,
+        "start": 35.24,
+        "end": 35.24,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.3009227953459087,
+        "compression_ratio": 9.692307692307692,
+        "no_speech_prob": 0.8474503755569458,
+        "words": []
+      },
+      {
+        "id": 31,
+        "seek": 2998,
+        "start": 35.24,
+        "end": 35.24,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.3009227953459087,
+        "compression_ratio": 9.692307692307692,
+        "no_speech_prob": 0.8474503755569458,
+        "words": []
+      },
+      {
+        "id": 32,
+        "seek": 2998,
+        "start": 35.24,
+        "end": 35.24,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.3009227953459087,
+        "compression_ratio": 9.692307692307692,
+        "no_speech_prob": 0.8474503755569458,
+        "words": []
+      },
+      {
+        "id": 33,
+        "seek": 2998,
+        "start": 35.24,
+        "end": 35.24,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.3009227953459087,
+        "compression_ratio": 9.692307692307692,
+        "no_speech_prob": 0.8474503755569458,
+        "words": []
+      },
+      {
+        "id": 34,
+        "seek": 2998,
+        "start": 35.24,
+        "end": 35.66,
+        "text": "我心里的心里",
+        "tokens": [
+          50864,
+          1654,
+          7945,
+          15759,
+          1546,
+          7945,
+          15759,
+          50964
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.3009227953459087,
+        "compression_ratio": 9.692307692307692,
+        "no_speech_prob": 0.8474503755569458,
+        "words": [
+          {
+            "word": "我",
+            "start": 35.24,
+            "end": 35.24,
+            "probability": 0.1394466906785965
+          },
+          {
+            "word": "心",
+            "start": 35.24,
+            "end": 35.24,
+            "probability": 0.9820267558097839
+          },
+          {
+            "word": "里",
+            "start": 35.24,
+            "end": 35.24,
+            "probability": 0.9876190423965454
+          },
+          {
+            "word": "的",
+            "start": 35.24,
+            "end": 35.24,
+            "probability": 0.8066192865371704
+          },
+          {
+            "word": "心",
+            "start": 35.24,
+            "end": 35.24,
+            "probability": 0.9552139639854431
+          },
+          {
+            "word": "里",
+            "start": 35.24,
+            "end": 35.66,
+            "probability": 0.9697322845458984
+          }
+        ]
+      },
+      {
+        "id": 35,
+        "seek": 2998,
+        "start": 35.66,
+        "end": 38.0,
+        "text": "我心里的心里",
+        "tokens": [
+          50964,
+          1654,
+          7945,
+          15759,
+          1546,
+          7945,
+          15759,
+          51064
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.3009227953459087,
+        "compression_ratio": 9.692307692307692,
+        "no_speech_prob": 0.8474503755569458,
+        "words": [
+          {
+            "word": "我",
+            "start": 35.66,
+            "end": 35.66,
+            "probability": 0.10574118047952652
+          },
+          {
+            "word": "心",
+            "start": 35.66,
+            "end": 35.66,
+            "probability": 0.9859764575958252
+          },
+          {
+            "word": "里",
+            "start": 35.66,
+            "end": 35.9,
+            "probability": 0.9901752471923828
+          },
+          {
+            "word": "的",
+            "start": 35.9,
+            "end": 35.9,
+            "probability": 0.8386417627334595
+          },
+          {
+            "word": "心",
+            "start": 35.9,
+            "end": 38.0,
+            "probability": 0.9618445634841919
+          },
+          {
+            "word": "里",
+            "start": 38.0,
+            "end": 38.0,
+            "probability": 0.9762993454933167
+          }
+        ]
+      },
+      {
+        "id": 36,
+        "seek": 2998,
+        "start": 38.0,
+        "end": 38.38,
+        "text": "我心里的心里",
+        "tokens": [
+          51064,
+          1654,
+          7945,
+          15759,
+          1546,
+          7945,
+          15759,
+          51164
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.3009227953459087,
+        "compression_ratio": 9.692307692307692,
+        "no_speech_prob": 0.8474503755569458,
+        "words": [
+          {
+            "word": "我",
+            "start": 38.0,
+            "end": 38.0,
+            "probability": 0.12775543332099915
+          },
+          {
+            "word": "心",
+            "start": 38.0,
+            "end": 38.12,
+            "probability": 0.9897720217704773
+          },
+          {
+            "word": "里",
+            "start": 38.12,
+            "end": 38.12,
+            "probability": 0.9928971529006958
+          },
+          {
+            "word": "的",
+            "start": 38.12,
+            "end": 38.12,
+            "probability": 0.8622750043869019
+          },
+          {
+            "word": "心",
+            "start": 38.12,
+            "end": 38.38,
+            "probability": 0.9736484885215759
+          },
+          {
+            "word": "里",
+            "start": 38.38,
+            "end": 38.38,
+            "probability": 0.9827008843421936
+          }
+        ]
+      },
+      {
+        "id": 37,
+        "seek": 2998,
+        "start": 38.38,
+        "end": 41.5,
+        "text": "我心里的心里",
+        "tokens": [
+          51164,
+          1654,
+          7945,
+          15759,
+          1546,
+          7945,
+          15759,
+          51264
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.3009227953459087,
+        "compression_ratio": 9.692307692307692,
+        "no_speech_prob": 0.8474503755569458,
+        "words": [
+          {
+            "word": "我",
+            "start": 38.38,
+            "end": 38.38,
+            "probability": 0.09127353131771088
+          },
+          {
+            "word": "心",
+            "start": 38.38,
+            "end": 41.1,
+            "probability": 0.9914795160293579
+          },
+          {
+            "word": "里",
+            "start": 41.1,
+            "end": 41.18,
+            "probability": 0.9935937523841858
+          },
+          {
+            "word": "的",
+            "start": 41.18,
+            "end": 41.5,
+            "probability": 0.8583152890205383
+          },
+          {
+            "word": "心",
+            "start": 41.5,
+            "end": 41.5,
+            "probability": 0.9790134429931641
+          },
+          {
+            "word": "里",
+            "start": 41.5,
+            "end": 41.5,
+            "probability": 0.9838539361953735
+          }
+        ]
+      },
+      {
+        "id": 38,
+        "seek": 2998,
+        "start": 41.5,
+        "end": 41.66,
+        "text": "我心里的心里",
+        "tokens": [
+          51264,
+          1654,
+          7945,
+          15759,
+          1546,
+          7945,
+          15759,
+          51364
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.3009227953459087,
+        "compression_ratio": 9.692307692307692,
+        "no_speech_prob": 0.8474503755569458,
+        "words": [
+          {
+            "word": "我",
+            "start": 41.5,
+            "end": 41.58,
+            "probability": 0.09651795029640198
+          },
+          {
+            "word": "心",
+            "start": 41.58,
+            "end": 41.58,
+            "probability": 0.9930596351623535
+          },
+          {
+            "word": "里",
+            "start": 41.58,
+            "end": 41.66,
+            "probability": 0.9939665794372559
+          },
+          {
+            "word": "的",
+            "start": 41.66,
+            "end": 41.66,
+            "probability": 0.8669572472572327
+          },
+          {
+            "word": "心",
+            "start": 41.66,
+            "end": 41.66,
+            "probability": 0.9838451147079468
+          },
+          {
+            "word": "里",
+            "start": 41.66,
+            "end": 41.66,
+            "probability": 0.98689866065979
+          }
+        ]
+      },
+      {
+        "id": 39,
+        "seek": 2998,
+        "start": 41.66,
+        "end": 42.34,
+        "text": "我心里的心里",
+        "tokens": [
+          51364,
+          1654,
+          7945,
+          15759,
+          1546,
+          7945,
+          15759,
+          51464
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.3009227953459087,
+        "compression_ratio": 9.692307692307692,
+        "no_speech_prob": 0.8474503755569458,
+        "words": [
+          {
+            "word": "我",
+            "start": 41.66,
+            "end": 41.66,
+            "probability": 0.08995787054300308
+          },
+          {
+            "word": "心",
+            "start": 41.66,
+            "end": 42.02,
+            "probability": 0.9940991401672363
+          },
+          {
+            "word": "里",
+            "start": 42.02,
+            "end": 42.02,
+            "probability": 0.9947285056114197
+          },
+          {
+            "word": "的",
+            "start": 42.02,
+            "end": 42.02,
+            "probability": 0.8842647075653076
+          },
+          {
+            "word": "心",
+            "start": 42.02,
+            "end": 42.34,
+            "probability": 0.9862087965011597
+          },
+          {
+            "word": "里",
+            "start": 42.34,
+            "end": 42.34,
+            "probability": 0.9881161451339722
+          }
+        ]
+      },
+      {
+        "id": 40,
+        "seek": 2998,
+        "start": 42.34,
+        "end": 44.88,
+        "text": "我心里的心里",
+        "tokens": [
+          51464,
+          1654,
+          7945,
+          15759,
+          1546,
+          7945,
+          15759,
+          51564
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.3009227953459087,
+        "compression_ratio": 9.692307692307692,
+        "no_speech_prob": 0.8474503755569458,
+        "words": [
+          {
+            "word": "我",
+            "start": 42.34,
+            "end": 42.34,
+            "probability": 0.11185106635093689
+          },
+          {
+            "word": "心",
+            "start": 42.34,
+            "end": 42.34,
+            "probability": 0.9948892593383789
+          },
+          {
+            "word": "里",
+            "start": 42.34,
+            "end": 43.3,
+            "probability": 0.9954426288604736
+          },
+          {
+            "word": "的",
+            "start": 43.3,
+            "end": 43.3,
+            "probability": 0.8788982033729553
+          },
+          {
+            "word": "心",
+            "start": 43.3,
+            "end": 43.58,
+            "probability": 0.9893624186515808
+          },
+          {
+            "word": "里",
+            "start": 43.58,
+            "end": 44.88,
+            "probability": 0.9900631308555603
+          }
+        ]
+      },
+      {
+        "id": 41,
+        "seek": 2998,
+        "start": 44.88,
+        "end": 46.9,
+        "text": "我心里的心里",
+        "tokens": [
+          51564,
+          1654,
+          7945,
+          15759,
+          1546,
+          7945,
+          15759,
+          51664
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.3009227953459087,
+        "compression_ratio": 9.692307692307692,
+        "no_speech_prob": 0.8474503755569458,
+        "words": [
+          {
+            "word": "我",
+            "start": 44.88,
+            "end": 45.22,
+            "probability": 0.08758118003606796
+          },
+          {
+            "word": "心",
+            "start": 45.22,
+            "end": 45.36,
+            "probability": 0.9957003593444824
+          },
+          {
+            "word": "里",
+            "start": 45.36,
+            "end": 45.36,
+            "probability": 0.9958052635192871
+          },
+          {
+            "word": "的",
+            "start": 45.36,
+            "end": 45.36,
+            "probability": 0.8802580833435059
+          },
+          {
+            "word": "心",
+            "start": 45.36,
+            "end": 46.9,
+            "probability": 0.9900875687599182
+          },
+          {
+            "word": "里",
+            "start": 46.9,
+            "end": 46.9,
+            "probability": 0.9912580847740173
+          }
+        ]
+      },
+      {
+        "id": 42,
+        "seek": 2998,
+        "start": 48.5,
+        "end": 51.84,
+        "text": "我心里的心里",
+        "tokens": [
+          51664,
+          1654,
+          7945,
+          15759,
+          1546,
+          7945,
+          15759,
+          51764
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.3009227953459087,
+        "compression_ratio": 9.692307692307692,
+        "no_speech_prob": 0.8474503755569458,
+        "words": [
+          {
+            "word": "我",
+            "start": 48.5,
+            "end": 49.16,
+            "probability": 0.1132679283618927
+          },
+          {
+            "word": "心",
+            "start": 49.16,
+            "end": 49.82,
+            "probability": 0.9961608648300171
+          },
+          {
+            "word": "里",
+            "start": 49.82,
+            "end": 49.82,
+            "probability": 0.9964683055877686
+          },
+          {
+            "word": "的",
+            "start": 49.82,
+            "end": 49.82,
+            "probability": 0.8971043229103088
+          },
+          {
+            "word": "心",
+            "start": 49.82,
+            "end": 50.12,
+            "probability": 0.9920762777328491
+          },
+          {
+            "word": "里",
+            "start": 50.12,
+            "end": 51.84,
+            "probability": 0.9924261569976807
+          }
+        ]
+      }
+    ],
+    "language": "zh"
+  }
+}

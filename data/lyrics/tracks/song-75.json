@@ -1,0 +1,216 @@
+{
+  "schemaVersion": 1,
+  "key": "song-75",
+  "songId": 75,
+  "songName": "おともだち",
+  "rowKey": "おともだち",
+  "displaySongName": "おともだち",
+  "artist": "ファントムシータ",
+  "language": "日文",
+  "derivative": false,
+  "edition": "",
+  "remark": "来自 2026-08-20 偶像歌回。经弹幕歌词交叉验证 + 歌切视频《【小松绿Viridis/歌回】20260820-偶像歌回？欸》分P第5章节确认曲目；时间按歌切分P累计估算，待回放复核。歌手信息来自网易云音乐/萌娘百科检索。",
+  "audio": {
+    "url": "assets/audio/song_85.m4a?v=8b759386e63f",
+    "sha256": "8b759386e63f14f5f59f85b2f7dff788a654865ed15dcdf69cf3e5eaa02b87f5"
+  },
+  "retrievedAt": "2026-11-16T04:03:59.507Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E3%81%8A%E3%81%A8%E3%82%82%E3%81%A0%E3%81%A1&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E3%81%8A%E3%81%A8%E3%82%82%E3%81%A0%E3%81%A1%20%E3%83%95%E3%82%A1%E3%83%B3%E3%83%88%E3%83%A0%E3%82%B7%E3%83%BC%E3%82%BF&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 2602239731,
+        "name": "おともだち",
+        "artists": [
+          "ファントムシータ"
+        ],
+        "album": "おともだち",
+        "durationMs": 195000,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2641403248,
+        "name": "おともだち",
+        "artists": [
+          "ファントムシータ"
+        ],
+        "album": "少女の日の思い出",
+        "durationMs": 195000,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2110210629,
+        "name": "おともだち",
+        "artists": [
+          "星野源"
+        ],
+        "album": "光の跡／生命体",
+        "durationMs": 192400,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2114702248,
+        "name": "おともだち",
+        "artists": [
+          "裏谷玲央"
+        ],
+        "album": "モンスターハンターライズ オリジナルサウンドトラック",
+        "durationMs": 212186,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2099856925,
+        "name": "おともだち",
+        "artists": [
+          "edhiii boi"
+        ],
+        "album": "満身創意",
+        "durationMs": 185320,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 416595,
+        "name": "おともだち",
+        "artists": [
+          "岩崎琢"
+        ],
+        "album": "R.O.D-THE TV-O.S.T",
+        "durationMs": 153120,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2742124369,
+        "name": "お　と　も　だ　ち",
+        "artists": [
+          "久保早瑠菜"
+        ],
+        "album": "サイレント・ウィッチ 沈黙の魔女の隠しごと Original Soundtrack",
+        "durationMs": 105697,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 29482805,
+        "name": "おともだち",
+        "artists": [
+          "アトラスサウンドチーム"
+        ],
+        "album": "ペルソナQ シャドウ オブ ザ ラビリンス オリジナル・サウンドトラック",
+        "durationMs": 216506,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 75,
+      "song_name": "おともだち",
+      "show_as_song_name": "",
+      "display_song_name": "おともだち",
+      "artist": "ファントムシータ",
+      "artist_search": "ファントムシータ おともだち",
+      "feat_artist": "",
+      "remark": "来自 2026-08-20 偶像歌回。经弹幕歌词交叉验证 + 歌切视频《【小松绿Viridis/歌回】20260820-偶像歌回？欸》分P第5章节确认曲目；时间按歌切分P累计估算，待回放复核。歌手信息来自网易云音乐/萌娘百科检索。",
+      "tone": "",
+      "language": "日文",
+      "type": "J-Pop",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1WS8c6XE9w?p=5",
+      "sing_count": 1,
+      "status_labels": "歌回、自动识别待人工复核",
+      "last_sing_at": "2026-08-20",
+      "row_key": "おともだち"
+    },
+    "sourceId": 2602239731,
+    "sourcePath": "sources/2602239731.json",
+    "sourceUrl": "https://music.163.com/#/song?id=2602239731",
+    "selected": {
+      "id": 2602239731,
+      "name": "おともだち",
+      "artists": [
+        "ファントムシータ"
+      ],
+      "album": "おともだち",
+      "durationMs": 195000,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 55
+  },
+  "alignment": {
+    "status": "spotcheck_review_required",
+    "evidencePath": "evidence/song-75-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 174.498,
+    "sourceFirstLine": {
+      "t": 0.702,
+      "text": "嘘ついてるのだあれ"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 29.88,
+      "endSeconds": 29.98,
+      "similarity": 0.875,
+      "recognizedText": "いてるのだあれ",
+      "meanProbability": 0.704,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": 29.178,
+    "checks": [
+      {
+        "sourceLine": {
+          "t": 57.783,
+          "text": "嘘ついてるのだあれ"
+        },
+        "evidencePath": "evidence/song-75-check0.json",
+        "candidate": {
+          "audioSeconds": 80.961,
+          "endSeconds": 81.241,
+          "similarity": 0.0,
+          "recognizedText": "来",
+          "meanProbability": 0.041,
+          "tokenPrefixOnly": false
+        },
+        "residualSeconds": -6.0
+      },
+      {
+        "sourceLine": {
+          "t": 126.866,
+          "text": "なにが本当のことだっけ"
+        },
+        "evidencePath": "evidence/song-75-check1.json",
+        "candidate": {
+          "audioSeconds": 150.764,
+          "endSeconds": 151.504,
+          "similarity": 0.3076923076923077,
+          "recognizedText": "のだ",
+          "meanProbability": 0.757,
+          "tokenPrefixOnly": false
+        },
+        "residualSeconds": -5.28
+      }
+    ],
+    "asrLanguage": "ja",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

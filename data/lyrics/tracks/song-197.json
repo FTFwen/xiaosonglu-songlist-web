@@ -1,0 +1,183 @@
+{
+  "schemaVersion": 1,
+  "key": "song-197",
+  "songId": 197,
+  "songName": "在夜里跳舞",
+  "rowKey": "在夜里跳舞",
+  "displaySongName": "在夜里跳舞",
+  "artist": "单依纯",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "",
+  "audio": {
+    "url": "assets/audio/song_196.m4a?v=1cc72080a733",
+    "sha256": "1cc72080a73347fb0f6b6bc93d00b0b0c0c172505fa5848c708adc5f61219835"
+  },
+  "retrievedAt": "2026-11-16T04:04:49.767Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E5%9C%A8%E5%A4%9C%E9%87%8C%E8%B7%B3%E8%88%9E&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E5%9C%A8%E5%A4%9C%E9%87%8C%E8%B7%B3%E8%88%9E%20%E5%8D%95%E4%BE%9D%E7%BA%AF&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1812994979,
+        "name": "在夜里跳舞",
+        "artists": [
+          "单依纯"
+        ],
+        "album": "在夜里跳舞",
+        "durationMs": 243077,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2099310772,
+        "name": "在夜里跳舞",
+        "artists": [
+          "唐汉霄"
+        ],
+        "album": "在夜里跳舞",
+        "durationMs": 267560,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1900003260,
+        "name": "在夜里跳舞",
+        "artists": [
+          "阿纪米德"
+        ],
+        "album": "在夜里跳舞",
+        "durationMs": 242279,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1981070689,
+        "name": "在夜里跳舞",
+        "artists": [
+          "王云峰"
+        ],
+        "album": "精选翻唱歌曲",
+        "durationMs": 242787,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1813357240,
+        "name": "在夜里跳舞",
+        "artists": [
+          "王子轩"
+        ],
+        "album": "在夜里跳舞",
+        "durationMs": 17999,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2155537442,
+        "name": "在夜里跳舞",
+        "artists": [
+          "芙昕--"
+        ],
+        "album": "芙昕",
+        "durationMs": 243216,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1870561019,
+        "name": "在夜里跳舞",
+        "artists": [
+          "陈南心"
+        ],
+        "album": "cover",
+        "durationMs": 243173,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1979300665,
+        "name": "在夜里跳舞",
+        "artists": [
+          "管珩心"
+        ],
+        "album": "在夜里跳舞",
+        "durationMs": 245543,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 197,
+      "song_name": "在夜里跳舞",
+      "show_as_song_name": "",
+      "display_song_name": "在夜里跳舞",
+      "artist": "单依纯",
+      "artist_search": "单依纯",
+      "feat_artist": "",
+      "remark": "",
+      "tone": "",
+      "language": "中文",
+      "type": "流行",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1xger6jEYS/?p=13",
+      "sing_count": 1,
+      "status_labels": "自动识别待人工复核",
+      "last_sing_at": "2026-09-17",
+      "row_key": "在夜里跳舞"
+    },
+    "sourceId": 1812994979,
+    "sourcePath": "sources/1812994979.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1812994979",
+    "selected": {
+      "id": 1812994979,
+      "name": "在夜里跳舞",
+      "artists": [
+        "单依纯"
+      ],
+      "album": "在夜里跳舞",
+      "durationMs": 243077,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 62
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-197-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 245.296,
+    "sourceFirstLine": {
+      "t": 2.56,
+      "text": "出品人/总监制 : 赵凯"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 11.38,
+      "endSeconds": 12.1,
+      "similarity": 0.0,
+      "recognizedText": "我",
+      "meanProbability": 0.301,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

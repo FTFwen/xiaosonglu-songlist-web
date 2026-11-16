@@ -1,0 +1,183 @@
+{
+  "schemaVersion": 1,
+  "key": "song-200",
+  "songId": 200,
+  "songName": "惬意的事",
+  "rowKey": "惬意的事",
+  "displaySongName": "惬意的事",
+  "artist": "泠鸢yousa（玖玲 曲）",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "UP 心灵火Flame《20260919 歌切》P2；泠鸢yousa 作词演唱、玖玲作编曲（专辑《折纸信笺》）",
+  "audio": {
+    "url": "assets/audio/song_199.m4a?v=3a7acd159ec9",
+    "sha256": "3a7acd159ec90c04975c879d9defff3c87652ebfce3852ec653c92ad06322184"
+  },
+  "retrievedAt": "2026-11-16T04:04:57.217Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E6%83%AC%E6%84%8F%E7%9A%84%E4%BA%8B&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E6%83%AC%E6%84%8F%E7%9A%84%E4%BA%8B%20%E6%B3%A0%E9%B8%A2yousa&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1804555744,
+        "name": "惬意的事",
+        "artists": [
+          "泠鸢yousa"
+        ],
+        "album": "折纸信笺",
+        "durationMs": 280255,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2097447732,
+        "name": "惬意的事",
+        "artists": [
+          "电池猫Dc_cat"
+        ],
+        "album": "清爽の夏天",
+        "durationMs": 278668,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3312502364,
+        "name": "惬意的事",
+        "artists": [
+          "猫崽君不是猫"
+        ],
+        "album": "纳西妲翻唱集 2期",
+        "durationMs": 211069,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2090387342,
+        "name": "惬意的事",
+        "artists": [
+          "白冰堂"
+        ],
+        "album": "惬意的事",
+        "durationMs": 278725,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3387130333,
+        "name": "惬意的事",
+        "artists": [
+          "潜水船员2021金色"
+        ],
+        "album": "历史翻唱",
+        "durationMs": 280344,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2647519862,
+        "name": "惬意的事",
+        "artists": [
+          "杨正欣"
+        ],
+        "album": "泠音绕梁",
+        "durationMs": 125463,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1975546934,
+        "name": "惬意的事 (伴奏)",
+        "artists": [
+          "泠鸢yousa"
+        ],
+        "album": "折纸信笺",
+        "durationMs": 278671,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      },
+      {
+        "id": 2132360615,
+        "name": "惬意的事(不插电版)",
+        "artists": [
+          "泠鸢yousa"
+        ],
+        "album": "泠鸢不插电元宵音乐会",
+        "durationMs": 300000,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      }
+    ],
+    "workQuery": {
+      "song_id": 200,
+      "song_name": "惬意的事",
+      "show_as_song_name": "",
+      "display_song_name": "惬意的事",
+      "artist": "泠鸢yousa（玖玲 曲）",
+      "artist_search": "泠鸢yousa 惬意的事 玖玲",
+      "feat_artist": "",
+      "remark": "UP 心灵火Flame《20260919 歌切》P2；泠鸢yousa 作词演唱、玖玲作编曲（专辑《折纸信笺》）",
+      "tone": "",
+      "language": "中文",
+      "type": "流行",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1rZe86yE49/?p=2",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-09-19",
+      "row_key": "惬意的事"
+    },
+    "sourceId": 1804555744,
+    "sourcePath": "sources/1804555744.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1804555744",
+    "selected": {
+      "id": 1804555744,
+      "name": "惬意的事",
+      "artists": [
+        "泠鸢yousa"
+      ],
+      "album": "折纸信笺",
+      "durationMs": 280255,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 42
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-200-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 280.729,
+    "sourceFirstLine": {
+      "t": 44.34,
+      "text": "蜜糖布丁  和你最讨厌的冷饮"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 59.98,
+      "endSeconds": 62.56,
+      "similarity": 0.23529411764705882,
+      "recognizedText": " �你随便找的",
+      "meanProbability": 0.578,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

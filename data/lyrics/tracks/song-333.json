@@ -1,0 +1,185 @@
+{
+  "schemaVersion": 1,
+  "key": "song-333",
+  "songId": 333,
+  "songName": "我是一个粉刷匠",
+  "rowKey": "我是一个粉刷匠",
+  "displaySongName": "我是一个粉刷匠",
+  "artist": "儿歌多多",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "桐人今天睡大觉「全自动歌切项目」2026.10.21 歌切合集第 8 分P（章节「08_我是一个粉刷匠 - 儿歌多多」）。弹幕02:18–02:22 儿歌回簇位置与之吻合。本场括号歌词弹幕为 0，仅以合集章节 + 简介日期确认；未定位回放时间点。",
+  "audio": {
+    "url": "assets/audio/song_332.m4a?v=ecbc1b5d7627",
+    "sha256": "ecbc1b5d7627fb6acfa6ebd2d2003162373fa75cc2b4d384b6f6b1eeeeafa4f7"
+  },
+  "retrievedAt": "2026-11-16T04:13:20.105Z",
+  "match": {
+    "status": "candidate_review_required",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E6%88%91%E6%98%AF%E4%B8%80%E4%B8%AA%E7%B2%89%E5%88%B7%E5%8C%A0&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E6%88%91%E6%98%AF%E4%B8%80%E4%B8%AA%E7%B2%89%E5%88%B7%E5%8C%A0%20%E5%84%BF%E6%AD%8C%E5%A4%9A%E5%A4%9A&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1417885728,
+        "name": "我是一个粉刷匠",
+        "artists": [
+          "贝乐虎儿歌"
+        ],
+        "album": "贝乐虎儿歌",
+        "durationMs": 52777,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3442307648,
+        "name": "我是一个粉刷匠",
+        "artists": [
+          "DJ冷冰冰",
+          "礼崩乐不坏"
+        ],
+        "album": "我是一个粉刷匠",
+        "durationMs": 95559,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3446231587,
+        "name": "我是一个粉刷匠",
+        "artists": [
+          "Settle一虾子"
+        ],
+        "album": "我是一个粉刷匠",
+        "durationMs": 119823,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 28700268,
+        "name": "我是一个粉刷匠",
+        "artists": [
+          "贝瓦儿歌"
+        ],
+        "album": "贝瓦儿歌",
+        "durationMs": 186749,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2622290870,
+        "name": "我是一个粉刷匠",
+        "artists": [
+          "咚咚儿歌"
+        ],
+        "album": "咚咚儿歌",
+        "durationMs": 95000,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2164255951,
+        "name": "我是一个粉刷匠",
+        "artists": [
+          "呀虎儿歌",
+          "小蓝背心"
+        ],
+        "album": "呀虎儿歌合辑",
+        "durationMs": 72698,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2067521598,
+        "name": "我是一个粉刷匠",
+        "artists": [
+          "大耳图"
+        ],
+        "album": "幸运小孩",
+        "durationMs": 62066,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1952805400,
+        "name": "我是一个粉刷匠",
+        "artists": [
+          "尹慧心"
+        ],
+        "album": "婴儿安抚音乐 中外经典儿歌童谣",
+        "durationMs": 166811,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 333,
+      "song_name": "我是一个粉刷匠",
+      "show_as_song_name": "",
+      "display_song_name": "我是一个粉刷匠",
+      "artist": "儿歌多多",
+      "artist_search": "儿歌多多 我是一个粉刷匠",
+      "feat_artist": "",
+      "remark": "桐人今天睡大觉「全自动歌切项目」2026.10.21 歌切合集第 8 分P（章节「08_我是一个粉刷匠 - 儿歌多多」）。弹幕02:18–02:22 儿歌回簇位置与之吻合。本场括号歌词弹幕为 0，仅以合集章节 + 简介日期确认；未定位回放时间点。",
+      "tone": "",
+      "language": "中文",
+      "type": "翻唱、流行、儿歌",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1d6n66fEgy/?p=8",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-21",
+      "row_key": "我是一个粉刷匠"
+    },
+    "sourceId": 1417885728,
+    "sourcePath": "sources/1417885728.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1417885728",
+    "selected": {
+      "id": 1417885728,
+      "name": "我是一个粉刷匠",
+      "artists": [
+        "贝乐虎儿歌"
+      ],
+      "album": "贝乐虎儿歌",
+      "durationMs": 52777,
+      "titleScore": 1,
+      "artistMatch": false,
+      "score": 0.8
+    },
+    "timedLineCount": 16
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-333-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 93.568,
+    "sourceFirstLine": {
+      "t": 7.08,
+      "text": "粉刷本领强"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 0.0,
+      "endSeconds": 0.22,
+      "similarity": 0.0,
+      "recognizedText": "孩子",
+      "meanProbability": 0.093,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

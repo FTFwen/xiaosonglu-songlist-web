@@ -1,0 +1,194 @@
+{
+  "schemaVersion": 1,
+  "key": "song-341",
+  "songId": 341,
+  "songName": "ぼくのかみさま",
+  "rowKey": "ぼくのかみさま",
+  "displaySongName": "ぼくのかみさま",
+  "artist": "",
+  "language": "日文",
+  "derivative": false,
+  "edition": "",
+  "remark": "合集分P只给出曲名，原唱/出处未核实，标记待复核。",
+  "audio": {
+    "url": "assets/audio/song_340.m4a?v=39b87b3fa021",
+    "sha256": "39b87b3fa021d5a99ad3a5da7a38758d53f2cb48b3d082be8e15b63696f4b542"
+  },
+  "retrievedAt": "2026-11-16T04:13:27.942Z",
+  "match": {
+    "status": "candidate_review_required",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E3%81%BC%E3%81%8F%E3%81%AE%E3%81%8B%E3%81%BF%E3%81%95%E3%81%BE&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 2652699636,
+        "name": "ぼくのかみさま",
+        "artists": [
+          "ワンダーランズ×ショウタイム",
+          "草薙寧々",
+          "鏡音レン",
+          "天馬司",
+          "鳳えむ",
+          "神代類"
+        ],
+        "album": "",
+        "durationMs": 168843,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2660469961,
+        "name": "ぼくのかみさま",
+        "artists": [
+          "羽生まゐご"
+        ],
+        "album": "ぼくのかみさま",
+        "durationMs": 175749,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3391234283,
+        "name": "ぼくのかみさま",
+        "artists": [
+          "ふぉるて"
+        ],
+        "album": "ぼくのかみさま",
+        "durationMs": 177580,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3323993349,
+        "name": "ぼくのかみさま（feat.草薙寧々）",
+        "artists": [
+          "草薙寧々",
+          "アヤメミク"
+        ],
+        "album": "ぼくのかみさま（feat.草薙寧々）",
+        "durationMs": 122508,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 2743471297,
+        "name": "ぼくのかみさま (feat. 天馬司&鳳えむ&草薙寧々&神代類&鏡音レン)",
+        "artists": [
+          "ワンダーランズ×ショウタイム"
+        ],
+        "album": "ぼくのかみさま/オールセーブチャレンジ",
+        "durationMs": 167700,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 2111993057,
+        "name": "ノンブレス・オブリージュ (feat. 宵崎奏&朝比奈まふゆ&東雲絵名&暁山瑞希&初音ミク)",
+        "artists": [
+          "25時、ナイトコードで。",
+          "初音ミク"
+        ],
+        "album": "25時、ナイトコードで。 SEKAI ALBUM vol.2",
+        "durationMs": 209933,
+        "titleScore": 0,
+        "artistMatch": false,
+        "score": 0
+      },
+      {
+        "id": 2111993048,
+        "name": "神のまにまに (feat. 天馬司&鳳えむ&草薙寧々&神代類&初音ミク)",
+        "artists": [
+          "ワンダーランズ×ショウタイム"
+        ],
+        "album": "ワンダーランズ×ショウタイム SEKAI ALBUM vol.2",
+        "durationMs": 255566,
+        "titleScore": 0,
+        "artistMatch": false,
+        "score": 0
+      },
+      {
+        "id": 2702706951,
+        "name": "とても素敵な六月でした (feat. 宵崎奏&朝比奈まふゆ&東雲絵名&暁山瑞希&初音ミク)",
+        "artists": [
+          "25時、ナイトコードで。"
+        ],
+        "album": "25時、ナイトコードで。 SEKAI ALBUM vol.3",
+        "durationMs": 284933,
+        "titleScore": 0,
+        "artistMatch": false,
+        "score": 0
+      }
+    ],
+    "workQuery": {
+      "song_id": 341,
+      "song_name": "ぼくのかみさま",
+      "show_as_song_name": "",
+      "display_song_name": "ぼくのかみさま",
+      "artist": "",
+      "artist_search": "",
+      "feat_artist": "",
+      "remark": "合集分P只给出曲名，原唱/出处未核实，标记待复核。",
+      "tone": "",
+      "language": "日文",
+      "type": "待复核",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1naxj62Epw/?p=9",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-27",
+      "row_key": "ぼくのかみさま"
+    },
+    "sourceId": 2652699636,
+    "sourcePath": "sources/2652699636.json",
+    "sourceUrl": "https://music.163.com/#/song?id=2652699636",
+    "selected": {
+      "id": 2652699636,
+      "name": "ぼくのかみさま",
+      "artists": [
+        "ワンダーランズ×ショウタイム",
+        "草薙寧々",
+        "鏡音レン",
+        "天馬司",
+        "鳳えむ",
+        "神代類"
+      ],
+      "album": "",
+      "durationMs": 168843,
+      "titleScore": 1,
+      "artistMatch": false,
+      "score": 0.8
+    },
+    "timedLineCount": 32
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-341-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 167.211,
+    "sourceFirstLine": {
+      "t": 9.77,
+      "text": "夕立とカラスの群れを"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 33.06,
+      "endSeconds": 33.52,
+      "similarity": 0.18181818181818182,
+      "recognizedText": "を",
+      "meanProbability": 0.933,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "ja",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

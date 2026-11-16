@@ -1,0 +1,24 @@
+{
+  "platform": "netease",
+  "id": 2757593727,
+  "url": "https://music.163.com/#/song?id=2757593727",
+  "apiUrl": "https://music.163.com/api/song/lyric?id=2757593727&lv=1&kv=1&tv=-1",
+  "retrievedAt": "2026-11-16T04:08:45.672Z",
+  "track": {
+    "id": 2757593727,
+    "name": "神曼波",
+    "artists": [
+      "鱼青辞"
+    ],
+    "album": "神曼波【哈基米音乐】",
+    "durationMs": 151669,
+    "titleScore": 1,
+    "artistMatch": false,
+    "score": 0.8
+  },
+  "lrc": "",
+  "translationLrc": "",
+  "romanizationLrc": "",
+  "instrumental": false,
+  "lines": []
+}

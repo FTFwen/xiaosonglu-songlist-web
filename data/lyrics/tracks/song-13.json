@@ -1,0 +1,165 @@
+{
+  "schemaVersion": 1,
+  "key": "song-13",
+  "songId": 13,
+  "songName": "棠梨煎雪",
+  "displaySongName": "棠梨煎雪",
+  "artist": "银临",
+  "language": "中文",
+  "derivative": false,
+  "audio": {
+    "url": "assets/audio/song_57.m4a?v=02f43776bd06",
+    "sha256": "02f43776bd067290d7d67f2c979298ca12bcf0dd801e3f4764bd7c5bbd8d116c"
+  },
+  "retrievedAt": "2026-11-16T03:58:59.577Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E6%A3%A0%E6%A2%A8%E7%85%8E%E9%9B%AA&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 28188427,
+        "name": "棠梨煎雪",
+        "artists": [
+          "银临"
+        ],
+        "album": "腐草为萤",
+        "durationMs": 245760,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 450234761,
+        "name": "棠梨煎雪",
+        "artists": [
+          "异新音乐",
+          "银临"
+        ],
+        "album": "原创作品集",
+        "durationMs": 245760,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2705742226,
+        "name": "棠梨煎雪",
+        "artists": [
+          "陆青杉Vict"
+        ],
+        "album": "棠梨煎雪",
+        "durationMs": 244034,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1930590612,
+        "name": "棠梨煎雪",
+        "artists": [
+          "慵狐"
+        ],
+        "album": "棠梨煎雪",
+        "durationMs": 244036,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1841787634,
+        "name": "棠梨煎雪",
+        "artists": [
+          "鹤尤yurii"
+        ],
+        "album": "棠梨煎雪",
+        "durationMs": 245251,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1945277014,
+        "name": "棠梨煎雪",
+        "artists": [
+          "洛天依",
+          "三山半落原创配音音乐社团"
+        ],
+        "album": "棠梨煎雪",
+        "durationMs": 244120,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1887060174,
+        "name": "棠梨煎雪",
+        "artists": [
+          "毕琛",
+          "凡世Eros",
+          "凌世若尘"
+        ],
+        "album": "棠梨煎雪",
+        "durationMs": 244165,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 468469640,
+        "name": "棠梨煎雪（Cover 银临）",
+        "artists": [
+          "双笙（陈元汐）"
+        ],
+        "album": "棠梨煎雪",
+        "durationMs": 242707,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      }
+    ],
+    "sourceId": 28188427,
+    "sourcePath": "sources/28188427.json",
+    "sourceUrl": "https://music.163.com/#/song?id=28188427",
+    "selected": {
+      "id": 28188427,
+      "name": "棠梨煎雪",
+      "artists": [
+        "银临"
+      ],
+      "album": "腐草为萤",
+      "durationMs": 245760,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 34
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-13-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 242.304,
+    "sourceFirstLine": {
+      "t": 26.24,
+      "text": "青鲤来时遥闻春溪声声碎"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 30.16,
+      "endSeconds": 30.78,
+      "similarity": 0.16666666666666666,
+      "recognizedText": "碎",
+      "meanProbability": 0.526,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  },
+  "rowKey": "棠梨煎雪",
+  "edition": "",
+  "remark": "来自 2026-08-09 第一次歌回回放中段。28-33 分钟切片虽然转写噪声较重，但“青鲤来时遥闻春溪声声碎 / 嗅得手植棠梨初发轻黄蕊 / 偏爱枕惊鸿二字 / 一路而来的半生风雪”等关键句对应关系很强，基本可锁定银临《棠梨煎雪》；仍保留人工复核标签。 按用户放宽后的匹配规则，已补入对应公开歌切：棠梨煎雪 歌切【小松绿】（BV1Lcum6nEva）。"
+}

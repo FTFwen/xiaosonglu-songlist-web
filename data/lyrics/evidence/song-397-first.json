@@ -1,0 +1,161 @@
+{
+  "audioSha256": "ebfac0751746ac6f717483afbeb70813491e7bbac7c01389fc6526fbceb8545c",
+  "model": "whisper-base",
+  "start": 0,
+  "end": 35,
+  "result": {
+    "text": "來的欸對了對了對了能对了别人",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 0.0,
+        "end": 1.1,
+        "text": "來的",
+        "tokens": [
+          50364,
+          3763,
+          1546,
+          50414
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.30665242513020835,
+        "compression_ratio": 19.323529411764707,
+        "no_speech_prob": 0.042651284486055374,
+        "words": [
+          {
+            "word": "來",
+            "start": 0.0,
+            "end": 0.66,
+            "probability": 0.16613395512104034
+          },
+          {
+            "word": "的",
+            "start": 0.66,
+            "end": 1.1,
+            "probability": 0.25836819410324097
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "seek": 0,
+        "start": 7.219999999999998,
+        "end": 9.0,
+        "text": "欸對了對了對了",
+        "tokens": [
+          50714,
+          18387,
+          2855,
+          2289,
+          2855,
+          2289,
+          2855,
+          2289,
+          50814
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.30665242513020835,
+        "compression_ratio": 19.323529411764707,
+        "no_speech_prob": 0.042651284486055374,
+        "words": [
+          {
+            "word": "欸",
+            "start": 7.219999999999998,
+            "end": 7.62,
+            "probability": 0.3653554320335388
+          },
+          {
+            "word": "對",
+            "start": 7.62,
+            "end": 7.78,
+            "probability": 0.43071919679641724
+          },
+          {
+            "word": "了",
+            "start": 7.78,
+            "end": 7.92,
+            "probability": 0.45129692554473877
+          },
+          {
+            "word": "對",
+            "start": 7.92,
+            "end": 8.08,
+            "probability": 0.4225459098815918
+          },
+          {
+            "word": "了",
+            "start": 8.08,
+            "end": 8.18,
+            "probability": 0.8343714475631714
+          },
+          {
+            "word": "對",
+            "start": 8.18,
+            "end": 8.38,
+            "probability": 0.1783360093832016
+          },
+          {
+            "word": "了",
+            "start": 8.38,
+            "end": 9.0,
+            "probability": 0.9127283692359924
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "seek": 900,
+        "start": 9.0,
+        "end": 9.78,
+        "text": "能对了别人",
+        "tokens": [
+          50364,
+          8225,
+          8713,
+          2289,
+          18453,
+          4035,
+          50404
+        ],
+        "temperature": 0,
+        "avg_logprob": -1.2236610651016235,
+        "compression_ratio": 0.625,
+        "no_speech_prob": 0.02180003747344017,
+        "words": [
+          {
+            "word": "能",
+            "start": 9.0,
+            "end": 9.14,
+            "probability": 0.0736418068408966
+          },
+          {
+            "word": "对",
+            "start": 9.14,
+            "end": 9.34,
+            "probability": 0.18874326348304749
+          },
+          {
+            "word": "了",
+            "start": 9.34,
+            "end": 9.46,
+            "probability": 0.5060235857963562
+          },
+          {
+            "word": "别",
+            "start": 9.46,
+            "end": 9.58,
+            "probability": 0.3661321997642517
+          },
+          {
+            "word": "人",
+            "start": 9.58,
+            "end": 9.78,
+            "probability": 0.5440754890441895
+          }
+        ]
+      }
+    ],
+    "language": "zh"
+  }
+}

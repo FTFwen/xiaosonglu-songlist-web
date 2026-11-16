@@ -1,0 +1,187 @@
+{
+  "schemaVersion": 1,
+  "key": "song-406",
+  "songId": 406,
+  "songName": "蝴蝶泉边",
+  "rowKey": "蝴蝶泉边",
+  "displaySongName": "蝴蝶泉边",
+  "artist": "黄雅莉",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "1959 年电影《五朵金花》插曲（季康词、雷振邦曲，原唱李世荣 / 赵履珠）；本场为黄雅莉传唱版演绎。弹幕全程未点名，靠直播期间发布的三支歌切锚定（另两支：BV11hWg6NERq、BV1vfWG69EES）。",
+  "audio": {
+    "url": "assets/audio/song_405.m4a?v=dfe7997675a3",
+    "sha256": "dfe7997675a3185f175d17e325eacd815df46c10682b1966d5b359514f9d43c2"
+  },
+  "retrievedAt": "2026-11-16T04:08:34.326Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E8%9D%B4%E8%9D%B6%E6%B3%89%E8%BE%B9&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E8%9D%B4%E8%9D%B6%E6%B3%89%E8%BE%B9%20%E9%BB%84%E9%9B%85%E8%8E%89&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 239682,
+        "name": "蝴蝶泉边",
+        "artists": [
+          "黄雅莉"
+        ],
+        "album": "崽崽",
+        "durationMs": 245185,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1920784999,
+        "name": "蝴蝶泉边",
+        "artists": [
+          "Bell玲惠"
+        ],
+        "album": "蝴蝶泉边（吉他版）",
+        "durationMs": 163333,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 28953010,
+        "name": "蝴蝶泉边",
+        "artists": [
+          "牛欣欣"
+        ],
+        "album": "中国新声代第二季 第十二期",
+        "durationMs": 182035,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 5286070,
+        "name": "蝴蝶泉边",
+        "artists": [
+          "李初健",
+          "宋艳红"
+        ],
+        "album": "雷振邦电影歌曲专辑",
+        "durationMs": 285867,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 196028,
+        "name": "蝴蝶泉边",
+        "artists": [
+          "臧天朔",
+          "斯琴格日乐"
+        ],
+        "album": "山歌好比春江水",
+        "durationMs": 220773,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1895373102,
+        "name": "蝴蝶泉边",
+        "artists": [
+          "刘玉婉",
+          "吕继宏"
+        ],
+        "album": "中国民族歌曲经典",
+        "durationMs": 286000,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 289240,
+        "name": "蝴蝶泉边",
+        "artists": [
+          "宋祖英"
+        ],
+        "album": "好日子",
+        "durationMs": 284573,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 277191,
+        "name": "蝴蝶泉边",
+        "artists": [
+          "米线",
+          "包伍"
+        ],
+        "album": "月下相思",
+        "durationMs": 181852,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 406,
+      "song_name": "蝴蝶泉边",
+      "show_as_song_name": "",
+      "display_song_name": "蝴蝶泉边",
+      "artist": "黄雅莉",
+      "artist_search": "黄雅莉",
+      "feat_artist": "",
+      "remark": "1959 年电影《五朵金花》插曲（季康词、雷振邦曲，原唱李世荣 / 赵履珠）；本场为黄雅莉传唱版演绎。弹幕全程未点名，靠直播期间发布的三支歌切锚定（另两支：BV11hWg6NERq、BV1vfWG69EES）。",
+      "tone": "",
+      "language": "中文",
+      "type": "影视、经典",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1pxWV6TETx/",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切复核",
+      "last_sing_at": "2026-11-10",
+      "row_key": "蝴蝶泉边"
+    },
+    "sourceId": 239682,
+    "sourcePath": "sources/239682.json",
+    "sourceUrl": "https://music.163.com/#/song?id=239682",
+    "selected": {
+      "id": 239682,
+      "name": "蝴蝶泉边",
+      "artists": [
+        "黄雅莉"
+      ],
+      "album": "崽崽",
+      "durationMs": 245185,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 46
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-406-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 253.696,
+    "sourceFirstLine": {
+      "t": 30.828,
+      "text": "我看到满片花儿都开放"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 9.96,
+      "endSeconds": 10.72,
+      "similarity": 0.18181818181818182,
+      "recognizedText": "我",
+      "meanProbability": 0.963,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

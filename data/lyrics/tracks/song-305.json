@@ -1,0 +1,190 @@
+{
+  "schemaVersion": 1,
+  "key": "song-305",
+  "songId": 305,
+  "songName": "绮云泽",
+  "rowKey": "绮云泽",
+  "displaySongName": "绮云泽",
+  "artist": "妖橙Yumo, 星尘",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "分P标题 03_绮云泽 - 妖橙Yumo, 星尘；心灵火 P3 同名同序；星尘为五维介质声库。",
+  "audio": {
+    "url": "assets/audio/song_304.m4a?v=7e14bec18d89",
+    "sha256": "7e14bec18d89af8feed47bb76c3b00bf1dc58342bc3bd4c47d75e026fdf6a0be"
+  },
+  "retrievedAt": "2026-11-16T04:06:37.841Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E7%BB%AE%E4%BA%91%E6%B3%BD&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E7%BB%AE%E4%BA%91%E6%B3%BD%20%E5%A6%96%E6%A9%99Yumo&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1923262125,
+        "name": "绮云泽",
+        "artists": [
+          "妖橙Yumo",
+          "星尘"
+        ],
+        "album": "绮云泽【星尘Infinity×妖橙·跨次元合唱】",
+        "durationMs": 250932,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2604538130,
+        "name": "绮云泽",
+        "artists": [
+          "正版鸩想",
+          "苏打岚Soda"
+        ],
+        "album": "绮云泽（合唱）",
+        "durationMs": 250932,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1488343699,
+        "name": "绮云泽",
+        "artists": [
+          "杨槿Alchemy"
+        ],
+        "album": "绮云泽",
+        "durationMs": 250279,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3413987663,
+        "name": "绮云泽",
+        "artists": [
+          "乌有乡乡乡",
+          "困困"
+        ],
+        "album": "绮云泽",
+        "durationMs": 243057,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1965048596,
+        "name": "绮云泽",
+        "artists": [
+          "穗子酱就是穗子做的酱",
+          "扶摇Freya"
+        ],
+        "album": "绮云泽",
+        "durationMs": 250958,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3435921703,
+        "name": "绮云泽",
+        "artists": [
+          "鱼清眠yum",
+          "有一"
+        ],
+        "album": "绮云泽",
+        "durationMs": 246073,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2702113340,
+        "name": "绮云泽",
+        "artists": [
+          "吕慧桢"
+        ],
+        "album": "古风版",
+        "durationMs": 242337,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3443084596,
+        "name": "绮云泽",
+        "artists": [
+          "江晏姝",
+          "璃初"
+        ],
+        "album": "绮云泽",
+        "durationMs": 246908,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 305,
+      "song_name": "绮云泽",
+      "show_as_song_name": "",
+      "display_song_name": "绮云泽",
+      "artist": "妖橙Yumo, 星尘",
+      "artist_search": "妖橙Yumo, 星尘",
+      "feat_artist": "",
+      "remark": "分P标题 03_绮云泽 - 妖橙Yumo, 星尘；心灵火 P3 同名同序；星尘为五维介质声库。",
+      "tone": "",
+      "language": "中文",
+      "type": "中文Vocaloid",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1uPJ86DE95/?p=3",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-16",
+      "row_key": "绮云泽"
+    },
+    "sourceId": 1923262125,
+    "sourcePath": "sources/1923262125.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1923262125",
+    "selected": {
+      "id": 1923262125,
+      "name": "绮云泽",
+      "artists": [
+        "妖橙Yumo",
+        "星尘"
+      ],
+      "album": "绮云泽【星尘Infinity×妖橙·跨次元合唱】",
+      "durationMs": 250932,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 52
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-305-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 239.381,
+    "sourceFirstLine": {
+      "t": 11.717,
+      "text": "调混：妖橙"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 33.58,
+      "endSeconds": 34.98,
+      "similarity": 0.0,
+      "recognizedText": "我",
+      "meanProbability": 0.018,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

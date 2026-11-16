@@ -1,0 +1,169 @@
+{
+  "schemaVersion": 1,
+  "key": "song-3",
+  "songId": 3,
+  "songName": "人间应又雪",
+  "displaySongName": "人间应又雪",
+  "artist": "忘川风华录 / 洛天依Official / 言和",
+  "language": "中文",
+  "derivative": false,
+  "audio": {
+    "url": "assets/audio/song_43.m4a?v=851a245bbca0",
+    "sha256": "851a245bbca0677aa50e849f3358dde2bcc10e8fa38f37e0d40361149dd3b6db"
+  },
+  "retrievedAt": "2026-11-16T03:58:06.103Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E4%BA%BA%E9%97%B4%E5%BA%94%E5%8F%88%E9%9B%AA&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 2103661510,
+        "name": "人间应又雪",
+        "artists": [
+          "忘川风华录",
+          "洛天依Official",
+          "言和"
+        ],
+        "album": "人间应又雪",
+        "durationMs": 246243,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2093114088,
+        "name": "人间应又雪",
+        "artists": [
+          "茶了了"
+        ],
+        "album": "人间应又雪",
+        "durationMs": 245328,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2104979093,
+        "name": "人间应又雪",
+        "artists": [
+          "夕妄",
+          "Tatsu不帕"
+        ],
+        "album": "人间应又雪",
+        "durationMs": 245328,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2097932129,
+        "name": "人间应又雪",
+        "artists": [
+          "Zshi晨晨晨同学",
+          "温砚"
+        ],
+        "album": "忘川风华录系列",
+        "durationMs": 246243,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2108797406,
+        "name": "人间应又雪",
+        "artists": [
+          "秋璇Liye",
+          "红心柚"
+        ],
+        "album": "人间应又雪",
+        "durationMs": 246328,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2114771782,
+        "name": "人间应又雪",
+        "artists": [
+          "淮央",
+          "早雪"
+        ],
+        "album": "人间应又雪",
+        "durationMs": 246243,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2093686273,
+        "name": "人间应又雪",
+        "artists": [
+          "萧迟"
+        ],
+        "album": "人间应又雪",
+        "durationMs": 251204,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2142380402,
+        "name": "人间应又雪",
+        "artists": [
+          "沢织"
+        ],
+        "album": "人间应又雪",
+        "durationMs": 245934,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "sourceId": 2103661510,
+    "sourcePath": "sources/2103661510.json",
+    "sourceUrl": "https://music.163.com/#/song?id=2103661510",
+    "selected": {
+      "id": 2103661510,
+      "name": "人间应又雪",
+      "artists": [
+        "忘川风华录",
+        "洛天依Official",
+        "言和"
+      ],
+      "album": "人间应又雪",
+      "durationMs": 246243,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 36
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-3-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 241.418,
+    "sourceFirstLine": {
+      "t": 5.41,
+      "text": "调校：Creuzer"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 29.06,
+      "endSeconds": 29.22,
+      "similarity": 0.0,
+      "recognizedText": "作",
+      "meanProbability": 0.001,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  },
+  "rowKey": "人间应又雪",
+  "edition": "",
+  "remark": "直链页面 title 为【小松绿Viridis/翻唱】《人间应又雪》，meta description 明示日期 2026.08.08 与 UP 主小鸡奇遇記。song_name 归一化为真实曲名“人间应又雪”。"
+}

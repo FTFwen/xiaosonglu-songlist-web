@@ -1,0 +1,154 @@
+{
+  "audioSha256": "c61a71990cc76a18eb4f8f8ccab1f925b94722fcab78f655d0eed9279b29877e",
+  "model": "whisper-base",
+  "start": 0,
+  "end": 35,
+  "result": {
+    "text": "えっても今はなさないように形に心は",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 29.12,
+        "end": 29.74,
+        "text": "えっても",
+        "tokens": [
+          50364,
+          6474,
+          6102,
+          4801,
+          50464
+        ],
+        "temperature": 0,
+        "avg_logprob": -1.3941529591878254,
+        "compression_ratio": 0.6,
+        "no_speech_prob": 0.5642216205596924,
+        "words": [
+          {
+            "word": "え",
+            "start": 29.12,
+            "end": 29.52,
+            "probability": 0.050798673182725906
+          },
+          {
+            "word": "って",
+            "start": 29.52,
+            "end": 29.72,
+            "probability": 0.12803679704666138
+          },
+          {
+            "word": "も",
+            "start": 29.72,
+            "end": 29.74,
+            "probability": 0.4126070737838745
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "seek": 3000,
+        "start": 30.66,
+        "end": 32.58,
+        "text": "今はなさないように",
+        "tokens": [
+          50364,
+          6480,
+          3065,
+          3203,
+          6722,
+          9311,
+          34483,
+          50464
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.879703140258789,
+        "compression_ratio": 0.9285714285714286,
+        "no_speech_prob": 0.8457328677177429,
+        "words": [
+          {
+            "word": "今",
+            "start": 30.66,
+            "end": 31.26,
+            "probability": 0.047072041779756546
+          },
+          {
+            "word": "は",
+            "start": 31.26,
+            "end": 31.54,
+            "probability": 0.3159715235233307
+          },
+          {
+            "word": "な",
+            "start": 31.54,
+            "end": 31.68,
+            "probability": 0.10542160272598267
+          },
+          {
+            "word": "さ",
+            "start": 31.68,
+            "end": 31.82,
+            "probability": 0.3565422594547272
+          },
+          {
+            "word": "ない",
+            "start": 31.82,
+            "end": 32.1,
+            "probability": 0.5653533935546875
+          },
+          {
+            "word": "ように",
+            "start": 32.1,
+            "end": 32.58,
+            "probability": 0.9822815656661987
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "seek": 3000,
+        "start": 33.36,
+        "end": 34.98,
+        "text": "形に心は",
+        "tokens": [
+          50464,
+          30900,
+          4108,
+          7945,
+          3065,
+          50564
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.879703140258789,
+        "compression_ratio": 0.9285714285714286,
+        "no_speech_prob": 0.8457328677177429,
+        "words": [
+          {
+            "word": "形",
+            "start": 33.36,
+            "end": 33.96,
+            "probability": 0.23438981175422668
+          },
+          {
+            "word": "に",
+            "start": 33.96,
+            "end": 34.28,
+            "probability": 0.9700108170509338
+          },
+          {
+            "word": "心",
+            "start": 34.28,
+            "end": 34.7,
+            "probability": 0.5392429232597351
+          },
+          {
+            "word": "は",
+            "start": 34.7,
+            "end": 34.98,
+            "probability": 0.4585781693458557
+          }
+        ]
+      }
+    ],
+    "language": "ja"
+  }
+}

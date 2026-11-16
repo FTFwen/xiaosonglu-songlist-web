@@ -1,0 +1,173 @@
+{
+  "schemaVersion": 1,
+  "key": "song-65",
+  "songId": 65,
+  "songName": "涟漪",
+  "rowKey": "涟漪",
+  "displaySongName": "涟漪",
+  "artist": "Zeno / 星尘",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "来自 2026-08-18 歌切合集《【663645TV】神回！我已启动！全力绿来唱完了！8月18日歌切合集【小松绿Viridis】》的分P《18-涟漪》。原曲为 Zeno 作词、作曲、编曲、调教及混音，星尘演唱的中文虚拟歌手原创曲；当前记录的是合集内顺序时间，不是原始直播回放时间。",
+  "audio": {
+    "url": "assets/audio/song_31.m4a?v=d443844445be",
+    "sha256": "d443844445becd96e45df8a3396ce4e43838a8c4ffa1cc623531b3b74695b2a7"
+  },
+  "retrievedAt": "2026-11-16T04:12:47.395Z",
+  "match": {
+    "status": "version_review_required",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E6%B6%9F%E6%BC%AA&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E6%B6%9F%E6%BC%AA%20Zeno%20%2F%20%E6%98%9F%E5%B0%98&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 3426083946,
+        "name": "涟漪",
+        "artists": [
+          "供销社乐队"
+        ],
+        "album": "涟漪",
+        "durationMs": 201237,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 66365,
+        "name": "涟漪",
+        "artists": [
+          "陈百强"
+        ],
+        "album": "陈百强精选",
+        "durationMs": 189544,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2110351565,
+        "name": "涟漪",
+        "artists": [
+          "Sunken Boat 沉舟乐队"
+        ],
+        "album": "野风入夜",
+        "durationMs": 254767,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 64717,
+        "name": "涟漪",
+        "artists": [
+          "陈百强"
+        ],
+        "album": "陈百强华纳超极品音色系列",
+        "durationMs": 189544,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2672540472,
+        "name": "涟漪",
+        "artists": [
+          "CMJ"
+        ],
+        "album": "涟漪",
+        "durationMs": 170769,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3404236541,
+        "name": "涟漪",
+        "artists": [
+          "-艾兜",
+          "等一下就回家"
+        ],
+        "album": "躁郁",
+        "durationMs": 153230,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1294537485,
+        "name": "涟漪",
+        "artists": [
+          "关淑怡"
+        ],
+        "album": "涟漪",
+        "durationMs": 231097,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 28068836,
+        "name": "涟漪",
+        "artists": [
+          "陈绮贞"
+        ],
+        "album": "时间的歌",
+        "durationMs": 293814,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 65,
+      "song_name": "涟漪",
+      "show_as_song_name": "",
+      "display_song_name": "涟漪",
+      "artist": "Zeno / 星尘",
+      "artist_search": "Zeno 星尘 涟漪",
+      "feat_artist": "",
+      "remark": "来自 2026-08-18 歌切合集《【663645TV】神回！我已启动！全力绿来唱完了！8月18日歌切合集【小松绿Viridis】》的分P《18-涟漪》。原曲为 Zeno 作词、作曲、编曲、调教及混音，星尘演唱的中文虚拟歌手原创曲；当前记录的是合集内顺序时间，不是原始直播回放时间。",
+      "tone": "",
+      "language": "中文",
+      "type": "中V、流行",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1rv8V6DExk/",
+      "sing_count": 1,
+      "status_labels": "歌切合集补录、待后续回放时间定位",
+      "last_sing_at": "2026-08-18",
+      "row_key": "涟漪"
+    },
+    "sourceId": 1938216578,
+    "sourcePath": "sources/1938216578.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1938216578",
+    "selected": {
+      "id": 1938216578,
+      "name": "涟漪(星尘Infinity 2022Ver.)",
+      "artists": [
+        "平行四界Quadimension",
+        "星尘"
+      ],
+      "album": "涟漪",
+      "durationMs": 250830,
+      "titleScore": 1,
+      "artistMatch": false,
+      "score": 0.8,
+      "reviewedWorkIdentity": true
+    },
+    "timedLineCount": 51,
+    "review": {
+      "reason": "Verified song/detail: 涟漪(星尘Infinity 2022Ver.), artists 平行四界Quadimension / 星尘, album 涟漪, 250830ms. Verified lyric endpoint: 将漂浮的声音都吞没／描绘着贝壳上的轮廓; chorus 你盛开于那盛夏的污浊／我流连于那温柔的疼痛 and 陪我多一些多一些的时间. Reject current 3426083946 供销社乐队, an unrelated artist/work. Exact verified edition is 2022 Infinity, not a claim that the older Zeno original master has been recovered; endpoint credits corporate 平行四界Quadimension rather than Zeno. Requires edition check before alignment.",
+      "evidenceUrl": "https://music.163.com/api/song/detail/?id=1938216578&ids=[1938216578]",
+      "previousSourceId": 3426083946
+    }
+  },
+  "alignment": {
+    "status": "version_review_required",
+    "offsetSeconds": null,
+    "humanVerified": false
+  }
+}

@@ -1,0 +1,184 @@
+{
+  "schemaVersion": 1,
+  "key": "song-193",
+  "songId": 193,
+  "songName": "又三郎",
+  "rowKey": "又三郎",
+  "displaySongName": "又三郎",
+  "artist": "ヨルシカ",
+  "language": "日文",
+  "derivative": false,
+  "edition": "",
+  "remark": "",
+  "audio": {
+    "url": "assets/audio/song_192.m4a?v=ebf5d8faf2c3",
+    "sha256": "ebf5d8faf2c3b1bcc0ffbdfd13f20733b81f6053251d79fb4802b9a2f5e59b78"
+  },
+  "retrievedAt": "2026-11-16T04:04:48.467Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E5%8F%88%E4%B8%89%E9%83%8E&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E5%8F%88%E4%B8%89%E9%83%8E%20%E3%83%A8%E3%83%AB%E3%82%B7%E3%82%AB&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1850977722,
+        "name": "又三郎",
+        "artists": [
+          "ヨルシカ"
+        ],
+        "album": "又三郎",
+        "durationMs": 227731,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1855953084,
+        "name": "又三郎",
+        "artists": [
+          "ヨルシカ"
+        ],
+        "album": "TOKYO - SUMMER 2021 -",
+        "durationMs": 227731,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 3407566722,
+        "name": "又三郎",
+        "artists": [
+          "ヨルシカ"
+        ],
+        "album": "Global Hits Collection|",
+        "durationMs": 227731,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 3400023089,
+        "name": "又三郎",
+        "artists": [
+          "ヨルシカ"
+        ],
+        "album": "幻燈",
+        "durationMs": 229360,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2036445129,
+        "name": "又三郎",
+        "artists": [
+          "ヨルシカ"
+        ],
+        "album": "幻燈",
+        "durationMs": 229360,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 3439003900,
+        "name": "又三郎",
+        "artists": [
+          "提米FM"
+        ],
+        "album": "又三郎",
+        "durationMs": 226560,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3439827934,
+        "name": "又三郎",
+        "artists": [
+          "霓虹兔",
+          "皮皮午"
+        ],
+        "album": "又三郎",
+        "durationMs": 140106,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3449295563,
+        "name": "又三郎",
+        "artists": [
+          "虾胡闹"
+        ],
+        "album": "又三郎",
+        "durationMs": 176000,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 193,
+      "song_name": "又三郎",
+      "show_as_song_name": "",
+      "display_song_name": "又三郎",
+      "artist": "ヨルシカ",
+      "artist_search": "ヨルシカ",
+      "feat_artist": "",
+      "remark": "",
+      "tone": "",
+      "language": "日文",
+      "type": "J-Pop",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1xger6jEYS/?p=6",
+      "sing_count": 1,
+      "status_labels": "自动识别待人工复核",
+      "last_sing_at": "2026-09-17",
+      "row_key": "又三郎"
+    },
+    "sourceId": 1850977722,
+    "sourcePath": "sources/1850977722.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1850977722",
+    "selected": {
+      "id": 1850977722,
+      "name": "又三郎",
+      "artists": [
+        "ヨルシカ"
+      ],
+      "album": "又三郎",
+      "durationMs": 227731,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 37
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-193-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 228.902,
+    "sourceFirstLine": {
+      "t": 20.941,
+      "text": "水溜りに足を突っ込んで"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 29.52,
+      "endSeconds": 30.66,
+      "similarity": 0.23529411764705882,
+      "recognizedText": "まりちょっと",
+      "meanProbability": 0.135,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "ja",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

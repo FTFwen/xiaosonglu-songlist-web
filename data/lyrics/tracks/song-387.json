@@ -1,0 +1,184 @@
+{
+  "schemaVersion": 1,
+  "key": "song-387",
+  "songId": 387,
+  "songName": "Odd Dice",
+  "rowKey": "Odd Dice",
+  "displaySongName": "Odd Dice",
+  "artist": "millsage",
+  "language": "日文",
+  "derivative": false,
+  "edition": "",
+  "remark": "BanG Dream!（少女乐团派对）收录的原创曲，原唱 millsage。本场弹幕无曲名点名（发布时间 23:48 落在山遥路远与后来之间的演唱窗口），置信度略降。",
+  "audio": {
+    "url": "assets/audio/song_386.m4a?v=09588be81bd7",
+    "sha256": "09588be81bd73567de6e6cca913809b79abe7c3b0c391ec5ed3973e2e75b1def"
+  },
+  "retrievedAt": "2026-11-16T04:08:12.572Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=Odd%20Dice&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=Odd%20Dice%20millsage&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 3446954477,
+        "name": "Odd Dice",
+        "artists": [
+          "millsage"
+        ],
+        "album": "Odd Dice",
+        "durationMs": 248828,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 3454258273,
+        "name": "Odd Dice",
+        "artists": [
+          "蓝色大肥鱼"
+        ],
+        "album": "Odd Dice",
+        "durationMs": 184737,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3457589801,
+        "name": "Odd Dice",
+        "artists": [
+          "筱翼はね"
+        ],
+        "album": "Odd Dice",
+        "durationMs": 254014,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3451102036,
+        "name": "Odd Dice",
+        "artists": [
+          "木木林语"
+        ],
+        "album": "millsage翻唱",
+        "durationMs": 248800,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3450978343,
+        "name": "Odd Dice",
+        "artists": [
+          "DJ冷冰冰",
+          "天才小八爱唱歌"
+        ],
+        "album": "Odd Dice",
+        "durationMs": 131243,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3450822695,
+        "name": "Odd Dice",
+        "artists": [
+          "绵绵雨"
+        ],
+        "album": "Odd Dice",
+        "durationMs": 195918,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3450104636,
+        "name": "Odd Dice",
+        "artists": [
+          "kasano"
+        ],
+        "album": "Odd Dice",
+        "durationMs": 120271,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1301038873,
+        "name": "Odd Dice",
+        "artists": [
+          "Kereni"
+        ],
+        "album": "VA1",
+        "durationMs": 344785,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 387,
+      "song_name": "Odd Dice",
+      "show_as_song_name": "",
+      "display_song_name": "Odd Dice",
+      "artist": "millsage",
+      "artist_search": "millsage",
+      "feat_artist": "",
+      "remark": "BanG Dream!（少女乐团派对）收录的原创曲，原唱 millsage。本场弹幕无曲名点名（发布时间 23:48 落在山遥路远与后来之间的演唱窗口），置信度略降。",
+      "tone": "",
+      "language": "日文",
+      "type": "J-Pop、动漫",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1kzWg6fEvS/",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切复核",
+      "last_sing_at": "2026-11-10",
+      "row_key": "Odd Dice"
+    },
+    "sourceId": 3446954477,
+    "sourcePath": "sources/3446954477.json",
+    "sourceUrl": "https://music.163.com/#/song?id=3446954477",
+    "selected": {
+      "id": 3446954477,
+      "name": "Odd Dice",
+      "artists": [
+        "millsage"
+      ],
+      "album": "Odd Dice",
+      "durationMs": 248828,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 43
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-387-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 154.24,
+    "sourceFirstLine": {
+      "t": 20.363,
+      "text": "あ、比べる"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 0.0,
+      "endSeconds": 0.42,
+      "similarity": 0.4,
+      "recognizedText": "あ、",
+      "meanProbability": 0.152,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "ja",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

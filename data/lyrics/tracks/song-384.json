@@ -1,0 +1,190 @@
+{
+  "schemaVersion": 1,
+  "key": "song-384",
+  "songId": 384,
+  "songName": "ツギハギスタッカート",
+  "rowKey": "ツギハギスタッカート",
+  "displaySongName": "ツギハギスタッカート",
+  "artist": "とあ / 初音ミク",
+  "language": "日文",
+  "derivative": false,
+  "edition": "",
+  "remark": "とあ feat. 初音ミク 经典曲",
+  "audio": {
+    "url": "assets/audio/song_383.m4a?v=77bee02fedca",
+    "sha256": "77bee02fedcad57eff27892a41bce16aabd38fadbf8a62e6b3b9664dbda82950"
+  },
+  "retrievedAt": "2026-11-16T04:08:07.425Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E3%83%84%E3%82%AE%E3%83%8F%E3%82%AE%E3%82%B9%E3%82%BF%E3%83%83%E3%82%AB%E3%83%BC%E3%83%88&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E3%83%84%E3%82%AE%E3%83%8F%E3%82%AE%E3%82%B9%E3%82%BF%E3%83%83%E3%82%AB%E3%83%BC%E3%83%88%20%E3%81%A8%E3%81%82%20%2F%20%E5%88%9D%E9%9F%B3%E3%83%9F%E3%82%AF&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 30148963,
+        "name": "ツギハギスタッカート",
+        "artists": [
+          "とあ",
+          "初音ミク"
+        ],
+        "album": "ツギハギスタッカート",
+        "durationMs": 250359,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 32958083,
+        "name": "ツギハギスタッカート",
+        "artists": [
+          "とあ",
+          "初音ミク"
+        ],
+        "album": "MIKU/TOA",
+        "durationMs": 247760,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 30870179,
+        "name": "ツギハギスタッカート",
+        "artists": [
+          "初音ミク",
+          "とあ"
+        ],
+        "album": "EXIT TUNES PRESENTS Vocalofantasy",
+        "durationMs": 245900,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 31997140,
+        "name": "ツギハギスタッカート",
+        "artists": [
+          "初音ミク",
+          "とあ"
+        ],
+        "album": "EXIT TUNES PRESENTS 私とボカロのある日常",
+        "durationMs": 246500,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 514543098,
+        "name": "ツギハギスタッカート",
+        "artists": [
+          "初音ミク",
+          "とあ"
+        ],
+        "album": "《初音速》游戏原声音乐",
+        "durationMs": 247493,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 566443275,
+        "name": "ツギハギスタッカート",
+        "artists": [
+          "初音ミク",
+          "とあ"
+        ],
+        "album": "初音ミク「マジカルミライ 2017」LIVE",
+        "durationMs": 253536,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 38689090,
+        "name": "ツギハギスタッカート",
+        "artists": [
+          "nameless"
+        ],
+        "album": "212",
+        "durationMs": 248160,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3426634495,
+        "name": "ツギハギスタッカート",
+        "artists": [
+          "96猫"
+        ],
+        "album": "WALK（初回限定盤）",
+        "durationMs": 245750,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 384,
+      "song_name": "ツギハギスタッカート",
+      "show_as_song_name": "",
+      "display_song_name": "ツギハギスタッカート",
+      "artist": "とあ / 初音ミク",
+      "artist_search": "とあ / 初音ミク",
+      "feat_artist": "",
+      "remark": "とあ feat. 初音ミク 经典曲",
+      "tone": "",
+      "language": "日文",
+      "type": "Vocaloid、J-Pop",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV18pWH6gEzr/?p=26",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-11-08",
+      "row_key": "ツギハギスタッカート"
+    },
+    "sourceId": 30148963,
+    "sourcePath": "sources/30148963.json",
+    "sourceUrl": "https://music.163.com/#/song?id=30148963",
+    "selected": {
+      "id": 30148963,
+      "name": "ツギハギスタッカート",
+      "artists": [
+        "とあ",
+        "初音ミク"
+      ],
+      "album": "ツギハギスタッカート",
+      "durationMs": 250359,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 56
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-384-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 250.304,
+    "sourceFirstLine": {
+      "t": 2.4,
+      "text": "ツギハギだらけの君との時間も"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 19.82,
+      "endSeconds": 21.6,
+      "similarity": 0.3333333333333333,
+      "recognizedText": "ら あの時",
+      "meanProbability": 0.66,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "ja",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

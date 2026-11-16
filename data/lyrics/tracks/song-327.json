@@ -1,0 +1,162 @@
+{
+  "schemaVersion": 1,
+  "key": "song-327",
+  "songId": 327,
+  "songName": "茶汤",
+  "displaySongName": "茶汤",
+  "artist": "郁可唯",
+  "language": "中文",
+  "derivative": false,
+  "audio": {
+    "url": "assets/audio/song_326.m4a?v=399fa3b97309",
+    "sha256": "399fa3b97309aff29217baa6cde60bf38f546be3d110f92e0a43a1b68b01fbbf"
+  },
+  "retrievedAt": "2026-11-16T03:58:52.608Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E8%8C%B6%E6%B1%A4&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 316157,
+        "name": "茶汤",
+        "artists": [
+          "郁可唯"
+        ],
+        "album": "微加幸福",
+        "durationMs": 308773,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 5232456,
+        "name": "茶汤",
+        "artists": [
+          "郁可唯"
+        ],
+        "album": "命中注定最犀利 影视主题曲大合辑",
+        "durationMs": 308773,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 3442643180,
+        "name": "茶汤",
+        "artists": [
+          "郁可唯"
+        ],
+        "album": "微加幸福 (微笑幸福庆功版)",
+        "durationMs": 306746,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 366233,
+        "name": "茶汤",
+        "artists": [
+          "明萌派"
+        ],
+        "album": "Simple Band",
+        "durationMs": 309333,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3446372563,
+        "name": "茶汤",
+        "artists": [
+          "苏也莉"
+        ],
+        "album": "茶汤",
+        "durationMs": 192496,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3444525025,
+        "name": "茶汤",
+        "artists": [
+          "苏也莉",
+          "霓虹兔"
+        ],
+        "album": "茶汤",
+        "durationMs": 139520,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3437537587,
+        "name": "茶汤",
+        "artists": [
+          "屈雪森"
+        ],
+        "album": "茶汤",
+        "durationMs": 308012,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 151006,
+        "name": "茶汤",
+        "artists": [
+          "邰正宵"
+        ],
+        "album": "我不配",
+        "durationMs": 303706,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "sourceId": 316157,
+    "sourcePath": "sources/316157.json",
+    "sourceUrl": "https://music.163.com/#/song?id=316157",
+    "selected": {
+      "id": 316157,
+      "name": "茶汤",
+      "artists": [
+        "郁可唯"
+      ],
+      "album": "微加幸福",
+      "durationMs": 308773,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 52
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-327-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 303.125,
+    "sourceFirstLine": {
+      "t": 25.64,
+      "text": "山岚像茶杯上的云烟"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 35.92,
+      "endSeconds": 36.44,
+      "similarity": 0.18181818181818182,
+      "recognizedText": "的话",
+      "meanProbability": 0.852,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  },
+  "rowKey": "茶汤",
+  "edition": "",
+  "remark": "桐人今天睡大觉「全自动歌切项目」2026.10.21 歌切合集第 1 分P（章节「01_茶汤 - 郁可唯」）。弹幕00:32–00:41 开嗓簇位置与之吻合。本场括号歌词弹幕为 0，仅以合集章节 + 简介日期确认；未定位回放时间点。"
+}

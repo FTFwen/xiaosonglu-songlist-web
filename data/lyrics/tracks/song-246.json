@@ -1,0 +1,183 @@
+{
+  "schemaVersion": 1,
+  "key": "song-246",
+  "songId": 246,
+  "songName": "承天",
+  "rowKey": "承天",
+  "displaySongName": "承天",
+  "artist": "忘川风华录",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "",
+  "audio": {
+    "url": "assets/audio/song_245.m4a?v=5a1decde47b7",
+    "sha256": "5a1decde47b711c9dc5f8f0ea0a13ab97b49c6de2d840e25a4195e3d0f53090d"
+  },
+  "retrievedAt": "2026-11-16T04:05:22.744Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E6%89%BF%E5%A4%A9&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E6%89%BF%E5%A4%A9%20%E5%BF%98%E5%B7%9D%E9%A3%8E%E5%8D%8E%E5%BD%95&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 2664775978,
+        "name": "承天",
+        "artists": [
+          "忘川风华录"
+        ],
+        "album": "承天",
+        "durationMs": 215336,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2640361550,
+        "name": "承天",
+        "artists": [
+          "茶了了"
+        ],
+        "album": "承天",
+        "durationMs": 215500,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2646745037,
+        "name": "承天",
+        "artists": [
+          "应钟Clochette"
+        ],
+        "album": "承天",
+        "durationMs": 215336,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2640331237,
+        "name": "承天",
+        "artists": [
+          "郁千"
+        ],
+        "album": "承天",
+        "durationMs": 215553,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2671758541,
+        "name": "承天",
+        "artists": [
+          "白昼之光"
+        ],
+        "album": "忘川风华录【翻唱集】",
+        "durationMs": 215336,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2645270585,
+        "name": "承天",
+        "artists": [
+          "曌曌"
+        ],
+        "album": "承天",
+        "durationMs": 216666,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2643545851,
+        "name": "承天",
+        "artists": [
+          "Foxyie"
+        ],
+        "album": "承天（Cover.忘川风华录）",
+        "durationMs": 215860,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2640608506,
+        "name": "承天",
+        "artists": [
+          "薛否否否"
+        ],
+        "album": "承天——翻自《忘川风华录》",
+        "durationMs": 215833,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 246,
+      "song_name": "承天",
+      "show_as_song_name": "",
+      "display_song_name": "承天",
+      "artist": "忘川风华录",
+      "artist_search": "忘川风华录",
+      "feat_artist": "",
+      "remark": "",
+      "tone": "",
+      "language": "中文",
+      "type": "忘川风华录、国风",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1g1ah6REpb/?p=23",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-09-27",
+      "row_key": "承天"
+    },
+    "sourceId": 2664775978,
+    "sourcePath": "sources/2664775978.json",
+    "sourceUrl": "https://music.163.com/#/song?id=2664775978",
+    "selected": {
+      "id": 2664775978,
+      "name": "承天",
+      "artists": [
+        "忘川风华录"
+      ],
+      "album": "承天",
+      "durationMs": 215336,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 36
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-246-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 220.218,
+    "sourceFirstLine": {
+      "t": 8.894,
+      "text": "调校：坐标P"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 0.0,
+      "endSeconds": 0.0,
+      "similarity": 0.0,
+      "recognizedText": "我",
+      "meanProbability": 0.039,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

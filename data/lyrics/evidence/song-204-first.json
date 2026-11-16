@@ -1,0 +1,506 @@
+{
+  "audioSha256": "9d092c1746167fdc4d5f22abcda726a5272d3ee1a0831337b9dde72e32398caa",
+  "model": "whisper-base",
+  "start": 0,
+  "end": 35,
+  "result": {
+    "text": "我都想要你你都想要你你都想要你",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 3000,
+        "start": 30.620000000000005,
+        "end": 33.42,
+        "text": "我都想要你",
+        "tokens": [
+          50364,
+          1654,
+          7182,
+          7093,
+          4275,
+          2166,
+          50414
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.18289281333365093,
+        "compression_ratio": 14.5,
+        "no_speech_prob": 0.78884357213974,
+        "words": [
+          {
+            "word": "我",
+            "start": 30.620000000000005,
+            "end": 32.02,
+            "probability": 0.024764416739344597
+          },
+          {
+            "word": "都",
+            "start": 32.02,
+            "end": 33.42,
+            "probability": 0.017758287489414215
+          },
+          {
+            "word": "想",
+            "start": 33.42,
+            "end": 33.42,
+            "probability": 0.0872669517993927
+          },
+          {
+            "word": "要",
+            "start": 33.42,
+            "end": 33.42,
+            "probability": 0.07042444497346878
+          },
+          {
+            "word": "你",
+            "start": 33.42,
+            "end": 33.42,
+            "probability": 0.06726442277431488
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "seek": 3000,
+        "start": 33.42,
+        "end": 33.42,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.18289281333365093,
+        "compression_ratio": 14.5,
+        "no_speech_prob": 0.78884357213974,
+        "words": []
+      },
+      {
+        "id": 2,
+        "seek": 3000,
+        "start": 33.42,
+        "end": 34.74,
+        "text": "你都想要你",
+        "tokens": [
+          50464,
+          2166,
+          7182,
+          7093,
+          4275,
+          2166,
+          50514
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.18289281333365093,
+        "compression_ratio": 14.5,
+        "no_speech_prob": 0.78884357213974,
+        "words": [
+          {
+            "word": "你",
+            "start": 33.42,
+            "end": 34.74,
+            "probability": 0.2658996880054474
+          },
+          {
+            "word": "都",
+            "start": 34.74,
+            "end": 34.74,
+            "probability": 0.22817155718803406
+          },
+          {
+            "word": "想",
+            "start": 34.74,
+            "end": 34.74,
+            "probability": 0.9867029190063477
+          },
+          {
+            "word": "要",
+            "start": 34.74,
+            "end": 34.74,
+            "probability": 0.7940753698348999
+          },
+          {
+            "word": "你",
+            "start": 34.74,
+            "end": 34.74,
+            "probability": 0.8702259063720703
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "seek": 3000,
+        "start": 34.74,
+        "end": 34.98,
+        "text": "你都想要你",
+        "tokens": [
+          50514,
+          2166,
+          7182,
+          7093,
+          4275,
+          2166,
+          50564
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.18289281333365093,
+        "compression_ratio": 14.5,
+        "no_speech_prob": 0.78884357213974,
+        "words": [
+          {
+            "word": "你",
+            "start": 34.74,
+            "end": 34.98,
+            "probability": 0.4645901024341583
+          },
+          {
+            "word": "都",
+            "start": 34.98,
+            "end": 34.98,
+            "probability": 0.2548883259296417
+          },
+          {
+            "word": "想",
+            "start": 34.98,
+            "end": 34.98,
+            "probability": 0.9932789206504822
+          },
+          {
+            "word": "要",
+            "start": 34.98,
+            "end": 34.98,
+            "probability": 0.8850023150444031
+          },
+          {
+            "word": "你",
+            "start": 34.98,
+            "end": 34.98,
+            "probability": 0.903593897819519
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "seek": 3000,
+        "start": 34.98,
+        "end": 34.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.18289281333365093,
+        "compression_ratio": 14.5,
+        "no_speech_prob": 0.78884357213974,
+        "words": []
+      },
+      {
+        "id": 5,
+        "seek": 3000,
+        "start": 34.98,
+        "end": 34.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.18289281333365093,
+        "compression_ratio": 14.5,
+        "no_speech_prob": 0.78884357213974,
+        "words": []
+      },
+      {
+        "id": 6,
+        "seek": 3000,
+        "start": 34.98,
+        "end": 34.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.18289281333365093,
+        "compression_ratio": 14.5,
+        "no_speech_prob": 0.78884357213974,
+        "words": []
+      },
+      {
+        "id": 7,
+        "seek": 3000,
+        "start": 34.98,
+        "end": 34.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.18289281333365093,
+        "compression_ratio": 14.5,
+        "no_speech_prob": 0.78884357213974,
+        "words": []
+      },
+      {
+        "id": 8,
+        "seek": 3000,
+        "start": 34.98,
+        "end": 34.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.18289281333365093,
+        "compression_ratio": 14.5,
+        "no_speech_prob": 0.78884357213974,
+        "words": []
+      },
+      {
+        "id": 9,
+        "seek": 3000,
+        "start": 34.98,
+        "end": 34.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.18289281333365093,
+        "compression_ratio": 14.5,
+        "no_speech_prob": 0.78884357213974,
+        "words": []
+      },
+      {
+        "id": 10,
+        "seek": 3000,
+        "start": 34.98,
+        "end": 34.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.18289281333365093,
+        "compression_ratio": 14.5,
+        "no_speech_prob": 0.78884357213974,
+        "words": []
+      },
+      {
+        "id": 11,
+        "seek": 3000,
+        "start": 34.98,
+        "end": 34.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.18289281333365093,
+        "compression_ratio": 14.5,
+        "no_speech_prob": 0.78884357213974,
+        "words": []
+      },
+      {
+        "id": 12,
+        "seek": 3000,
+        "start": 34.98,
+        "end": 34.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.18289281333365093,
+        "compression_ratio": 14.5,
+        "no_speech_prob": 0.78884357213974,
+        "words": []
+      },
+      {
+        "id": 13,
+        "seek": 3000,
+        "start": 34.98,
+        "end": 34.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.18289281333365093,
+        "compression_ratio": 14.5,
+        "no_speech_prob": 0.78884357213974,
+        "words": []
+      },
+      {
+        "id": 14,
+        "seek": 3000,
+        "start": 34.98,
+        "end": 34.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.18289281333365093,
+        "compression_ratio": 14.5,
+        "no_speech_prob": 0.78884357213974,
+        "words": []
+      },
+      {
+        "id": 15,
+        "seek": 3000,
+        "start": 34.98,
+        "end": 34.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.18289281333365093,
+        "compression_ratio": 14.5,
+        "no_speech_prob": 0.78884357213974,
+        "words": []
+      },
+      {
+        "id": 16,
+        "seek": 3000,
+        "start": 34.98,
+        "end": 34.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.18289281333365093,
+        "compression_ratio": 14.5,
+        "no_speech_prob": 0.78884357213974,
+        "words": []
+      },
+      {
+        "id": 17,
+        "seek": 3000,
+        "start": 34.98,
+        "end": 34.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.18289281333365093,
+        "compression_ratio": 14.5,
+        "no_speech_prob": 0.78884357213974,
+        "words": []
+      },
+      {
+        "id": 18,
+        "seek": 3000,
+        "start": 34.98,
+        "end": 34.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.18289281333365093,
+        "compression_ratio": 14.5,
+        "no_speech_prob": 0.78884357213974,
+        "words": []
+      },
+      {
+        "id": 19,
+        "seek": 3000,
+        "start": 34.98,
+        "end": 34.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.18289281333365093,
+        "compression_ratio": 14.5,
+        "no_speech_prob": 0.78884357213974,
+        "words": []
+      },
+      {
+        "id": 20,
+        "seek": 3000,
+        "start": 34.98,
+        "end": 34.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.18289281333365093,
+        "compression_ratio": 14.5,
+        "no_speech_prob": 0.78884357213974,
+        "words": []
+      },
+      {
+        "id": 21,
+        "seek": 3000,
+        "start": 34.98,
+        "end": 34.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.18289281333365093,
+        "compression_ratio": 14.5,
+        "no_speech_prob": 0.78884357213974,
+        "words": []
+      },
+      {
+        "id": 22,
+        "seek": 3000,
+        "start": 34.98,
+        "end": 34.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.18289281333365093,
+        "compression_ratio": 14.5,
+        "no_speech_prob": 0.78884357213974,
+        "words": []
+      },
+      {
+        "id": 23,
+        "seek": 3000,
+        "start": 34.98,
+        "end": 34.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.18289281333365093,
+        "compression_ratio": 14.5,
+        "no_speech_prob": 0.78884357213974,
+        "words": []
+      },
+      {
+        "id": 24,
+        "seek": 3000,
+        "start": 34.98,
+        "end": 34.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.18289281333365093,
+        "compression_ratio": 14.5,
+        "no_speech_prob": 0.78884357213974,
+        "words": []
+      },
+      {
+        "id": 25,
+        "seek": 3000,
+        "start": 34.98,
+        "end": 34.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.18289281333365093,
+        "compression_ratio": 14.5,
+        "no_speech_prob": 0.78884357213974,
+        "words": []
+      },
+      {
+        "id": 26,
+        "seek": 3000,
+        "start": 34.98,
+        "end": 34.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.18289281333365093,
+        "compression_ratio": 14.5,
+        "no_speech_prob": 0.78884357213974,
+        "words": []
+      },
+      {
+        "id": 27,
+        "seek": 3000,
+        "start": 34.98,
+        "end": 34.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.18289281333365093,
+        "compression_ratio": 14.5,
+        "no_speech_prob": 0.78884357213974,
+        "words": []
+      },
+      {
+        "id": 28,
+        "seek": 3000,
+        "start": 34.98,
+        "end": 34.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.18289281333365093,
+        "compression_ratio": 14.5,
+        "no_speech_prob": 0.78884357213974,
+        "words": []
+      }
+    ],
+    "language": "zh"
+  }
+}

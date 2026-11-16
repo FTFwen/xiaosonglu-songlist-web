@@ -1,0 +1,217 @@
+{
+  "schemaVersion": 1,
+  "key": "song-195",
+  "songId": 195,
+  "songName": "ラピスのお人形",
+  "rowKey": "ラピスのお人形",
+  "displaySongName": "ラピスのお人形",
+  "artist": "ヰ世界情緒",
+  "language": "日文",
+  "derivative": false,
+  "edition": "",
+  "remark": "",
+  "audio": {
+    "url": "assets/audio/song_194.m4a?v=df3628ed5aa8",
+    "sha256": "df3628ed5aa857f96b0f6140fdba5655d32aaebb5d72073243fd09618ef7832f"
+  },
+  "retrievedAt": "2026-11-16T04:04:52.027Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E3%83%A9%E3%83%94%E3%82%B9%E3%81%AE%E3%81%8A%E4%BA%BA%E5%BD%A2&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E3%83%A9%E3%83%94%E3%82%B9%E3%81%AE%E3%81%8A%E4%BA%BA%E5%BD%A2%20%E3%83%B0%E4%B8%96%E7%95%8C%E6%83%85%E7%B7%92&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 2082329207,
+        "name": "ラピスのお人形",
+        "artists": [
+          "ヰ世界情緒"
+        ],
+        "album": "ラピスのお人形",
+        "durationMs": 188158,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2137413644,
+        "name": "ラピスのお人形",
+        "artists": [
+          "ヰ世界情緒"
+        ],
+        "album": "色彩",
+        "durationMs": 189079,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2660478419,
+        "name": "ラピスのお人形",
+        "artists": [
+          "ヰ世界情緒"
+        ],
+        "album": "KAMITSUBAKI LABEL SAMPLER Vol. 1",
+        "durationMs": 187053,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2730255653,
+        "name": "ラピスのお人形",
+        "artists": [
+          "御莉姫"
+        ],
+        "album": "ラピスのお人形",
+        "durationMs": 186027,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2612465694,
+        "name": "ラピスのお人形",
+        "artists": [
+          "四六時Shirokuji",
+          "墨橙"
+        ],
+        "album": "ラピスのお人形/青金石娃娃",
+        "durationMs": 188630,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2607316283,
+        "name": "ラピスのお人形",
+        "artists": [
+          "トトロ"
+        ],
+        "album": "Kanayuku’s 1st Anniversary of Love Vol.5",
+        "durationMs": 185397,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2092318218,
+        "name": "ラピスのお人形",
+        "artists": [
+          "米拉依Mirai"
+        ],
+        "album": "米拉依2023",
+        "durationMs": 187941,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2730016973,
+        "name": "ラピスのお人形（青金石娃娃）",
+        "artists": [
+          "凛奈RINNA"
+        ],
+        "album": "青金石娃娃",
+        "durationMs": 188531,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      }
+    ],
+    "workQuery": {
+      "song_id": 195,
+      "song_name": "ラピスのお人形",
+      "show_as_song_name": "",
+      "display_song_name": "ラピスのお人形",
+      "artist": "ヰ世界情緒",
+      "artist_search": "ヰ世界情緒",
+      "feat_artist": "",
+      "remark": "",
+      "tone": "",
+      "language": "日文",
+      "type": "J-Pop",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1xger6jEYS/?p=10",
+      "sing_count": 1,
+      "status_labels": "自动识别待人工复核",
+      "last_sing_at": "2026-09-17",
+      "row_key": "ラピスのお人形"
+    },
+    "sourceId": 2082329207,
+    "sourcePath": "sources/2082329207.json",
+    "sourceUrl": "https://music.163.com/#/song?id=2082329207",
+    "selected": {
+      "id": 2082329207,
+      "name": "ラピスのお人形",
+      "artists": [
+        "ヰ世界情緒"
+      ],
+      "album": "ラピスのお人形",
+      "durationMs": 188158,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 35
+  },
+  "alignment": {
+    "status": "spotcheck_review_required",
+    "evidencePath": "evidence/song-195-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 185.063,
+    "sourceFirstLine": {
+      "t": 1.219,
+      "text": "こわれるまでだきしめて"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 2.88,
+      "endSeconds": 6.08,
+      "similarity": 0.8,
+      "recognizedText": "れるまで 抱きしめて",
+      "meanProbability": 0.917,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": 1.661,
+    "checks": [
+      {
+        "sourceLine": {
+          "t": 90.347,
+          "text": "私を視てた"
+        },
+        "evidencePath": "evidence/song-195-check0.json",
+        "candidate": {
+          "audioSeconds": 90.188,
+          "endSeconds": 93.448,
+          "similarity": 0.6,
+          "recognizedText": "私を見せた",
+          "meanProbability": 0.727,
+          "tokenPrefixOnly": false
+        },
+        "residualSeconds": -1.82
+      },
+      {
+        "sourceLine": {
+          "t": 165.138,
+          "text": "付き合ってくれる？"
+        },
+        "evidencePath": "evidence/song-195-check1.json",
+        "candidate": {
+          "audioSeconds": 165.479,
+          "endSeconds": 167.619,
+          "similarity": 0.875,
+          "recognizedText": "付き合えてくれる",
+          "meanProbability": 0.666,
+          "tokenPrefixOnly": false
+        },
+        "residualSeconds": -1.32
+      }
+    ],
+    "asrLanguage": "ja",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

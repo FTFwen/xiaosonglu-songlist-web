@@ -1,0 +1,111 @@
+{
+  "audioSha256": "c1b6abdfba527d007669f071fb9cf7cf0a841fd4ad65704d8fd89c5c3a8e49ca",
+  "model": "whisper-base",
+  "start": 0,
+  "end": 35,
+  "result": {
+    "text": "不道余宇曾经春色星",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 6.220000000000001,
+        "end": 9.96,
+        "text": "不道余宇",
+        "tokens": [
+          50364,
+          1960,
+          6025,
+          1593,
+          247,
+          2415,
+          229,
+          50714
+        ],
+        "temperature": 0,
+        "avg_logprob": -1.7367589473724365,
+        "compression_ratio": 0.7105263157894737,
+        "no_speech_prob": 0.3275175988674164,
+        "words": [
+          {
+            "word": "不",
+            "start": 6.220000000000001,
+            "end": 7.62,
+            "probability": 0.03334832936525345
+          },
+          {
+            "word": "道",
+            "start": 7.62,
+            "end": 8.28,
+            "probability": 0.3336383104324341
+          },
+          {
+            "word": "余",
+            "start": 8.28,
+            "end": 9.0,
+            "probability": 0.47948791831731796
+          },
+          {
+            "word": "宇",
+            "start": 9.0,
+            "end": 9.96,
+            "probability": 0.19671845436096191
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "seek": 0,
+        "start": 9.96,
+        "end": 15.66,
+        "text": "曾经春色星",
+        "tokens": [
+          50714,
+          43801,
+          30276,
+          46953,
+          17673,
+          20682,
+          51164
+        ],
+        "temperature": 0,
+        "avg_logprob": -1.7367589473724365,
+        "compression_ratio": 0.7105263157894737,
+        "no_speech_prob": 0.3275175988674164,
+        "words": [
+          {
+            "word": "曾",
+            "start": 9.96,
+            "end": 10.82,
+            "probability": 0.12257451564073563
+          },
+          {
+            "word": "经",
+            "start": 10.82,
+            "end": 11.9,
+            "probability": 0.5517579317092896
+          },
+          {
+            "word": "春",
+            "start": 11.9,
+            "end": 13.06,
+            "probability": 0.07854583114385605
+          },
+          {
+            "word": "色",
+            "start": 13.06,
+            "end": 14.34,
+            "probability": 0.7389437556266785
+          },
+          {
+            "word": "星",
+            "start": 14.34,
+            "end": 15.66,
+            "probability": 0.13618719577789307
+          }
+        ]
+      }
+    ],
+    "language": "zh"
+  }
+}

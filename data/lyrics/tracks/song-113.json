@@ -1,0 +1,200 @@
+{
+  "schemaVersion": 1,
+  "key": "song-113",
+  "songId": 113,
+  "songName": "虚拟",
+  "displaySongName": "虚拟",
+  "artist": "陈粒",
+  "language": "中文",
+  "derivative": false,
+  "audio": {
+    "url": "assets/audio/song_115.m4a?v=01c537ef54b7",
+    "sha256": "01c537ef54b7ac63ff4c952c0d61e713eebab565d1309c321714cb03e0885081"
+  },
+  "retrievedAt": "2026-11-16T03:57:56.565Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E8%99%9A%E6%8B%9F&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 421423808,
+        "name": "虚拟",
+        "artists": [
+          "陈粒"
+        ],
+        "album": "小梦大半",
+        "durationMs": 240626,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2110385348,
+        "name": "虚拟",
+        "artists": [
+          "DJ阿布"
+        ],
+        "album": "DJ阿布Remix",
+        "durationMs": 75507,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3429727902,
+        "name": "虚拟",
+        "artists": [
+          "雷米克斯"
+        ],
+        "album": "虚拟",
+        "durationMs": 97853,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2125938683,
+        "name": "虚拟",
+        "artists": [
+          "小民",
+          "蓝莓举高高",
+          "DJ大胡",
+          "DJ小红",
+          "DJ小骚杨",
+          "DJ小强",
+          "DJ萍",
+          "DJ华哥",
+          "六陆六",
+          "小馨馨",
+          "向往的风",
+          "DJ琪琪",
+          "无法遗忘",
+          "橙子",
+          "一碗稀饭",
+          "憨憨喊",
+          "大古变成光",
+          "圣菲达",
+          "小四",
+          "辉辉"
+        ],
+        "album": "虚拟",
+        "durationMs": 318750,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3436100895,
+        "name": "虚拟",
+        "artists": [
+          "紫莹"
+        ],
+        "album": "温柔",
+        "durationMs": 161389,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2105001536,
+        "name": "虚拟",
+        "artists": [
+          "聚散",
+          "风儿吹",
+          "时空伴随者",
+          "简遇而安",
+          "规范化广泛立刻赶赴",
+          "一碗稀饭",
+          "辰619",
+          "卷心菜",
+          "憨憨喊",
+          "DoubleJ",
+          "蓝莓举高高",
+          "小民",
+          "髓鸣",
+          "林北",
+          "张砚书",
+          "艺荇",
+          "勾勾手指",
+          "烨聆",
+          "朦胧原野",
+          "DJ筒子"
+        ],
+        "album": "虚拟",
+        "durationMs": 328014,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3432947243,
+        "name": "虚拟",
+        "artists": [
+          "悔1906"
+        ],
+        "album": "晚风叙心事",
+        "durationMs": 34110,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3433268554,
+        "name": "虚拟",
+        "artists": [
+          "无人区",
+          "吉泽树"
+        ],
+        "album": "虚拟",
+        "durationMs": 122142,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "sourceId": 421423808,
+    "sourcePath": "sources/421423808.json",
+    "sourceUrl": "https://music.163.com/#/song?id=421423808",
+    "selected": {
+      "id": 421423808,
+      "name": "虚拟",
+      "artists": [
+        "陈粒"
+      ],
+      "album": "小梦大半",
+      "durationMs": 240626,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 30
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-113-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 232.641,
+    "sourceFirstLine": {
+      "t": 15.11,
+      "text": "固执押韵的排比"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 32.24,
+      "endSeconds": 32.72,
+      "similarity": 0.25,
+      "recognizedText": "的",
+      "meanProbability": 0.838,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  },
+  "rowKey": "虚拟",
+  "edition": "",
+  "remark": "2026-08-29 B站歌切搜索补充：心灵火Flame《20260815 歌切》分P10、也许是因为我喜欢《2026-08-15 歌切》分P10、垒下浮云单切（BV127bv6UEnN，3:19）、祝理安_单切（BV18Xb26sEYg，3:51，08-15 23:45发布）多源印证。判定为陈粒《虚拟》（萌百无同名中V曲目；08-15 歌？杂？场含人声歌如双笙《月出》）。歌手待人工复核。08-15 场次补录。"
+}

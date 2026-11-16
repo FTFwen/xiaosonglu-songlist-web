@@ -1,0 +1,4202 @@
+[
+  {
+    "key": "derivative-1101",
+    "songName": "小松绿-云烟成雨",
+    "artist": "白烁",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 513360721,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "derivative-1102",
+    "songName": "小松绿-单相思",
+    "artist": "白烁",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 431259256,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "derivative-1103",
+    "songName": "小松绿-江南",
+    "artist": "白烁",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 108914,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "derivative-1104",
+    "songName": "小松绿-群青",
+    "artist": "白烁",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 1472480890,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "derivative-1105",
+    "songName": "小松绿-雨爱",
+    "artist": "白烁",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 316100,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "derivative-1106",
+    "songName": "小松绿-不问天",
+    "artist": "白烁",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 1824454149,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "derivative-1107",
+    "songName": "小松绿-世末积雨云",
+    "artist": "白烁",
+    "matchStatus": "matched",
+    "alignmentStatus": "spotcheck_review_required",
+    "sourceId": 34834947,
+    "reason": "Same underlying work as song-151; original 洛天依Official source confirmed by live song/detail and 66 timestamped lyric rows. Current source is ACE cover. Derivative vocal/arrangement alignment must remain separately unverified.",
+    "offsetSeconds": -1.753
+  },
+  {
+    "key": "derivative-1108",
+    "songName": "小松绿-失落沙洲",
+    "artist": "白烁",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 306662,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "derivative-1109",
+    "songName": "小松绿-春天的芭蕾",
+    "artist": "白烁",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 222799,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "derivative-1110",
+    "songName": "小松绿-梦境与魔女",
+    "artist": "白烁",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 452093215,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "derivative-1111",
+    "songName": "小松绿-神曼波",
+    "artist": "白烁",
+    "matchStatus": "candidate_review_required",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 2754602855,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "derivative-1112",
+    "songName": "小松绿-心墙",
+    "artist": "白烁",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 27671269,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "derivative-1113",
+    "songName": "小松绿-天狼星的心脏",
+    "artist": "白烁",
+    "matchStatus": "matched",
+    "alignmentStatus": "spotcheck_review_required",
+    "sourceId": 1907751320,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": -0.7
+  },
+  {
+    "key": "derivative-1114",
+    "songName": "小松绿-茉莉雨",
+    "artist": "白烁",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 1366053680,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "derivative-1115",
+    "songName": "小松绿-マリーの架空世界",
+    "artist": "白烁",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 26440341,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-1",
+    "songName": "少女レイ",
+    "artist": "みきとP / 初音ミク",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 2068956580,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-10",
+    "songName": "心愿便利贴",
+    "artist": "元若蓝 / 大Q秉洛",
+    "matchStatus": "matched",
+    "alignmentStatus": "spotcheck_review_required",
+    "sourceId": 4873340,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": -0.639
+  },
+  {
+    "key": "song-100",
+    "songName": "难过233秒",
+    "artist": "ChiliChill",
+    "matchStatus": "matched",
+    "alignmentStatus": "unavailable",
+    "sourceId": 1857014541,
+    "reason": "matched",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-101",
+    "songName": "想和你迎着台风去看海",
+    "artist": "桑拿猫黑糖 / 洛天依",
+    "matchStatus": "matched",
+    "alignmentStatus": "spotcheck_review_required",
+    "sourceId": 1979042819,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": 1.24
+  },
+  {
+    "key": "song-102",
+    "songName": "你究竟有几个好妹妹",
+    "artist": "孟庭苇",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 276724,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-103",
+    "songName": "阿拉斯加海湾",
+    "artist": "菲道尔",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 1441758913,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-104",
+    "songName": "梦良衣",
+    "artist": "ilem / 赤羽",
+    "matchStatus": "matched",
+    "alignmentStatus": "unavailable",
+    "sourceId": 3392512961,
+    "reason": "matched",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-105",
+    "songName": "临川浮梦",
+    "artist": "忘川风华录 / 赤羽、星尘",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 2019526861,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-106",
+    "songName": "Talking to the Rain",
+    "artist": "芹菜猪肉大馄饨 / 星尘Official、海伊",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 1921953354,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-107",
+    "songName": "泼墨漓江",
+    "artist": "玖玲 / 冥凰 / 泠鸢yousa",
+    "matchStatus": "candidate_review_required",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 1415966713,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-108",
+    "songName": "流光记",
+    "artist": "银临 / 初音未来",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 1314438112,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-109",
+    "songName": "炼金少女日志",
+    "artist": "时之歌Project（泛音堂）/ 言和",
+    "matchStatus": "candidate_review_required",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 490869473,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-11",
+    "songName": "词不达意",
+    "artist": "林忆莲",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 255858,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-110",
+    "songName": "四重罪孽",
+    "artist": "DELA / 雨狸 / 洛天依、言和、乐正绫",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 407764392,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-111",
+    "songName": "月出",
+    "artist": "双笙（词：温莨 / 曲：徐梦圆）",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 36117196,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-112",
+    "songName": "女孩你为何踮脚尖",
+    "artist": "Ddickky / 墨兰花语 / 洛天依",
+    "matchStatus": "candidate_review_required",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 1994548706,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-113",
+    "songName": "虚拟",
+    "artist": "陈粒",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 421423808,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-114",
+    "songName": "初恋日記",
+    "artist": "香椎モイミ / 音街鳗",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 1997514875,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-115",
+    "songName": "是风动",
+    "artist": "银临 / 河图",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 504686859,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-116",
+    "songName": "下个夏天的烟火",
+    "artist": "Cidai Jun / 海伊",
+    "matchStatus": "candidate_review_required",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 2075632186,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-117",
+    "songName": "绮凝盏",
+    "artist": "MeLo / 海伊",
+    "matchStatus": "candidate_review_required",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 1405420941,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-118",
+    "songName": "夏日已所剩无几",
+    "artist": "泠鸢yousa",
+    "matchStatus": "candidate_review_required",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 1483145968,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-119",
+    "songName": "远旅休憩中的邂逅",
+    "artist": "泠鸢yousa",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 1804552408,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-12",
+    "songName": "花粉症",
+    "artist": "诗岸 / 海伊",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 1833149333,
+    "reason": "Verified song/detail: title 【诗岸/海伊】花粉症, artist/uploader 清风疾行_, album 花粉症, 193897ms. Verified api/song/lyric?id=1833149333&lv=1&kv=1&tv=-1: 作词 格林子, 作曲 清风疾行_; begins 紧闭的玻璃窗／被季节遗忘的地方 and includes 花海间徜徉／那是每个少女的梦想／别幻想／美好景象, matching catalog evidence. Reject current 1310023030 许茹芸, whose first line 为什么 我眼泪流不停 belongs to a different work. Also distinguished 1441569227 【诗岸】花粉症 from the requested duet.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-120",
+    "songName": "サリシノハラ",
+    "artist": "みきとP / 初音ミク",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 26219263,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-121",
+    "songName": "只对你有感觉",
+    "artist": "飞轮海 / 田馥甄",
+    "matchStatus": "candidate_review_required",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 3355672045,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-122",
+    "songName": "有点甜",
+    "artist": "汪苏泷 / By2",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 165340,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-123",
+    "songName": "别找我麻烦",
+    "artist": "蔡健雅",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 208889,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-124",
+    "songName": "小半",
+    "artist": "陈粒",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 421423806,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-125",
+    "songName": "小丑的品格",
+    "artist": "泠鸢yousa",
+    "matchStatus": "candidate_review_required",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 1382765906,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-126",
+    "songName": "东风志",
+    "artist": "银临",
+    "matchStatus": "candidate_review_required",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 429459016,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-127",
+    "songName": "她追逐着月光的尽头",
+    "artist": "石榴皮_ / 诗岸",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 1468436144,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-128",
+    "songName": "焦糖星",
+    "artist": "",
+    "matchStatus": "version_review_required",
+    "alignmentStatus": "version_review_required",
+    "sourceId": 1373906533,
+    "reason": "version_review_required",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-129",
+    "songName": "十万个春天",
+    "artist": "娅娅酱 / 洛天依",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 2683699962,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-13",
+    "songName": "棠梨煎雪",
+    "artist": "银临",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 28188427,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-130",
+    "songName": "腐草为萤",
+    "artist": "银临",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 28188426,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-131",
+    "songName": "深夜诗人",
+    "artist": "洛天依 / 言和 / ilem",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 477936261,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-132",
+    "songName": "铁花飞 中文版",
+    "artist": "时光罅隙间",
+    "matchStatus": "version_review_required",
+    "alignmentStatus": "version_review_required",
+    "sourceId": 3386571322,
+    "reason": "version_review_required",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-133",
+    "songName": "Fly, My Wings",
+    "artist": "Mili",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 2058124989,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-134",
+    "songName": "浴槽とネオンテトラ",
+    "artist": "REISAI（feat. v flower）",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 2139032030,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-135",
+    "songName": "March of Time",
+    "artist": "Aimer",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 476081906,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-136",
+    "songName": "あなたに出会わなければ~夏雪冬花~",
+    "artist": "Aimer",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 560079,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-137",
+    "songName": "花の塔",
+    "artist": "さユり",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 1956534872,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-138",
+    "songName": "ミカヅキ",
+    "artist": "さユり",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 34179228,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-139",
+    "songName": "如果有来生",
+    "artist": "谭维维",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 293948,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-14",
+    "songName": "人间失宠",
+    "artist": "闹闹丶 / 洛天依Official",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 537076556,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-140",
+    "songName": "泸沽寻梦",
+    "artist": "银临",
+    "matchStatus": "candidate_review_required",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 1306166816,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-141",
+    "songName": "夜宴风波",
+    "artist": "音阙诗听、王梓钰",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 1308819790,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-142",
+    "songName": "牵丝戏",
+    "artist": "银临、Aki阿杰",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 30352891,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-143",
+    "songName": "一花依世界",
+    "artist": "洛天依Official",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 1979009860,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-144",
+    "songName": "绝体绝命",
+    "artist": "阿良良木健、洛天依Official",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 550059604,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-145",
+    "songName": "告别曲（Love Elegia Ver.）",
+    "artist": "阿良良木健、洛天依",
+    "matchStatus": "version_review_required",
+    "alignmentStatus": "version_review_required",
+    "sourceId": 1356370987,
+    "reason": "version_review_required",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-146",
+    "songName": "（区）最终祈愿",
+    "artist": "平行四界Quadimension、星尘",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 1927889265,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-147",
+    "songName": "小雨",
+    "artist": "黄龄",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 1997435585,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-148",
+    "songName": "给自己的情书",
+    "artist": "王菲",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 299604,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-149",
+    "songName": "灼之花",
+    "artist": "洛天依Official、乐正绫",
+    "matchStatus": "candidate_review_required",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 1338492643,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-15",
+    "songName": "小幸运",
+    "artist": "田馥甄",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 3343236872,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-150",
+    "songName": "樱花草",
+    "artist": "Sweety",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 376971,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-151",
+    "songName": "世末积雨云",
+    "artist": "洛天依Official",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 34834947,
+    "reason": "Indexed public song page and live song/detail confirm original 洛天依Official 世末积雨云, album 洛天依作品集, 285910ms. Live song/lyric returns 66 timestamped rows with COP credits and first sung line 为世界终结前最后的画面. Current source is 离大 / ACE虚拟歌姬 cover. Prefer original over 2024 鬼否 rearrangement 2604528479. No audio alignment claim.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-152",
+    "songName": "純白の花～Under Divine Gaze",
+    "artist": "不凋花project",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 3333272225,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-153",
+    "songName": "悬捱",
+    "artist": "星尘",
+    "matchStatus": "no_timed_lyrics",
+    "alignmentStatus": "unavailable",
+    "sourceId": 3407800072,
+    "reason": "no_timed_lyrics",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-154",
+    "songName": "奶水",
+    "artist": "Mili",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 554245892,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-155",
+    "songName": "兔子先生",
+    "artist": "陈秋桦、洛天依",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 568041120,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-156",
+    "songName": "溺水金鱼",
+    "artist": "漆柚",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 1386335928,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-157",
+    "songName": "中华铄金娘",
+    "artist": "洛天依Official、Soda纯白",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 420401134,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-158",
+    "songName": "中华烛火娘 (原版)",
+    "artist": "洛天依Official、Soda纯白",
+    "matchStatus": "version_review_required",
+    "alignmentStatus": "version_review_required",
+    "sourceId": 466300136,
+    "reason": "version_review_required",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-159",
+    "songName": "中华缘木娘",
+    "artist": "洛天依Official",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 409302032,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-16",
+    "songName": "青柠",
+    "artist": "徐秉龙 / 桃十五",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 504624714,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-160",
+    "songName": "中华粘土娘 (Album Version)",
+    "artist": "洛天依Official、Soda纯白",
+    "matchStatus": "version_review_required",
+    "alignmentStatus": "version_review_required",
+    "sourceId": 435307372,
+    "reason": "version_review_required",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-161",
+    "songName": "阳山绝",
+    "artist": "平行四界Quadimension、洛天依Official、乐正绫、Soda纯白",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 458012938,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-162",
+    "songName": "花头台",
+    "artist": "洛天依",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 31421299,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-163",
+    "songName": "三千世界鸦杀尽",
+    "artist": "洛天依Official",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 27908601,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-164",
+    "songName": "生死一舞的爱语",
+    "artist": "平行四界Quadimension、星尘",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 478391482,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-165",
+    "songName": "凉雨",
+    "artist": "COP、洛天依Official",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 477137425,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-166",
+    "songName": "若梦境来袭",
+    "artist": "Kevinz、Creuzer、言和",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 495386486,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-167",
+    "songName": "Say a Good Bye",
+    "artist": "Kevinz、星尘、言和、洛天依",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 501715986,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-168",
+    "songName": "中华墨水娘",
+    "artist": "洛天依Official、Soda纯白",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 28445471,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-169",
+    "songName": "遇见你的时候所有星星都落到我头上",
+    "artist": "高姗",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 30089063,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-17",
+    "songName": "Virtual to LIVE",
+    "artist": "にじさんじ",
+    "matchStatus": "version_review_required",
+    "alignmentStatus": "version_review_required",
+    "sourceId": 1928403045,
+    "reason": "version_review_required",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-170",
+    "songName": "月光食堂",
+    "artist": "古川本舗、ちびた",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 31546854,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-171",
+    "songName": "大小姐和大少爷的反派生涯",
+    "artist": "JUSF周存、洛天依Official",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 510213198,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-172",
+    "songName": "下雨天",
+    "artist": "南拳妈妈",
+    "matchStatus": "candidate_review_required",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 1426112587,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-173",
+    "songName": "夏天的风",
+    "artist": "温岚",
+    "matchStatus": "candidate_review_required",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 1436709403,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-174",
+    "songName": "小小",
+    "artist": "容祖儿",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 287231,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-175",
+    "songName": "たばこ",
+    "artist": "Sawako碎花",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 1303296958,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-176",
+    "songName": "我愛你-上海蟹-",
+    "artist": "カニ研究会",
+    "matchStatus": "candidate_review_required",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 2029927056,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-177",
+    "songName": "情歌",
+    "artist": "梁静茹",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 254059,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-178",
+    "songName": "Melody（半首）",
+    "artist": "陶喆",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 150520,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-179",
+    "songName": "普通朋友（半首）",
+    "artist": "陶喆",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 150623,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-18",
+    "songName": "虫儿飞",
+    "artist": "郑伊健",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 192994,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-180",
+    "songName": "年轮",
+    "artist": "张碧晨",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 32619064,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-181",
+    "songName": "たぶん",
+    "artist": "YOASOBI",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 1500152660,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-182",
+    "songName": "老人と海",
+    "artist": "ヨルシカ",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 1870469768,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-183",
+    "songName": "言って。",
+    "artist": "ヨルシカ",
+    "matchStatus": "matched",
+    "alignmentStatus": "timing_drift_review_required",
+    "sourceId": 487527980,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": -5.96
+  },
+  {
+    "key": "song-184",
+    "songName": "啄木鳥（半首）",
+    "artist": "ヨルシカ",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 3355479295,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-185",
+    "songName": "云烟成雨",
+    "artist": "房东的猫",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 513360721,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-186",
+    "songName": "死別",
+    "artist": "シャノン、GUMI",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 2134872913,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-187",
+    "songName": "给电影人的情书",
+    "artist": "蔡琴",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 209835,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-188",
+    "songName": "住在天狼星的那个人",
+    "artist": "OHMYMEITING（黄美婷）",
+    "matchStatus": "candidate_review_required",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 2002473823,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-189",
+    "songName": "心做し",
+    "artist": "蝶々P / GUMI",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 28370757,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-19",
+    "songName": "寄明月",
+    "artist": "SING女团 / 乐正绫",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 523250132,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-190",
+    "songName": "小夜子（中文填词）",
+    "artist": "みきとP / 初音ミク",
+    "matchStatus": "version_review_required",
+    "alignmentStatus": "version_review_required",
+    "sourceId": 430685027,
+    "reason": "version_review_required",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-191",
+    "songName": "小夜子",
+    "artist": "みきとP / 初音ミク",
+    "matchStatus": "version_review_required",
+    "alignmentStatus": "version_review_required",
+    "sourceId": 26219268,
+    "reason": "version_review_required",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-192",
+    "songName": "天ノ弱",
+    "artist": "164 / GUMI",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 4885597,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-193",
+    "songName": "又三郎",
+    "artist": "ヨルシカ",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 1850977722,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-194",
+    "songName": "秒针を噛む",
+    "artist": "ずっと真夜中でいいのに。",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 1325357378,
+    "reason": "Public search/get confirms canonical title and original artist ずっと真夜中でいいのに。; stored simplified 针 prevents title equality despite canonical alias query. Live lyric API code 200 returns 54 timestamped rows. Correct canonical matching title; recording alignment remains unverified.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-195",
+    "songName": "ラピスのお人形",
+    "artist": "ヰ世界情緒",
+    "matchStatus": "matched",
+    "alignmentStatus": "spotcheck_review_required",
+    "sourceId": 2082329207,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": 1.661
+  },
+  {
+    "key": "song-196",
+    "songName": "探窗",
+    "artist": "浮生梦",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 1861616820,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-197",
+    "songName": "在夜里跳舞",
+    "artist": "单依纯",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 1812994979,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-198",
+    "songName": "珠玉",
+    "artist": "单依纯",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 2704708142,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-199",
+    "songName": "千里邀月",
+    "artist": "纯白 / 乐正绫",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 1391419936,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-2",
+    "songName": "迂回步",
+    "artist": "星辉P / 洛天依Official / 乐正绫 / 雨狸",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 2000770578,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-20",
+    "songName": "跳楼机",
+    "artist": "LBI利比",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 2645500113,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-200",
+    "songName": "惬意的事",
+    "artist": "泠鸢yousa（玖玲 曲）",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 1804555744,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-201",
+    "songName": "大喜",
+    "artist": "泠鸢yousa / 音阙诗听",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 1824222230,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-202",
+    "songName": "告死鸟",
+    "artist": "ilem / 洛天依",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 3372975275,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-203",
+    "songName": "木兰行",
+    "artist": "忘川风华录 / 苍穹",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 1436879629,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-204",
+    "songName": "春意红包",
+    "artist": "乐正绫 / 洛天依 / 心华",
+    "matchStatus": "candidate_review_required",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 459004290,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-205",
+    "songName": "遥相逢",
+    "artist": "ono / GrogTony / cumin_cike（星尘）",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 1972529962,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-206",
+    "songName": "百里芭蕉百里花",
+    "artist": "MeLo（诗岸 / 海伊）",
+    "matchStatus": "candidate_review_required",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 2745005065,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-207",
+    "songName": "权御天下",
+    "artist": "乌龟Sui / 洛天依",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 1404797306,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-208",
+    "songName": "404 Not Found",
+    "artist": "赤羽",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 1957493200,
+    "reason": "Current REOL 404 not found is a different work. Public search confirms 平行四界Quadimension 404 Not Found (322233ms), consistent with 赤羽 catalog work; live lyric API returns 39 timestamped rows, beginning 当万木俱焚别走近我. Treat as original-work source requiring recording alignment.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-209",
+    "songName": "Lemon",
+    "artist": "米津玄師",
+    "matchStatus": "matched",
+    "alignmentStatus": "spotcheck_review_required",
+    "sourceId": 536622304,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": 0.209
+  },
+  {
+    "key": "song-21",
+    "songName": "苏州河",
+    "artist": "薛凯琪",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 306855,
+    "reason": "Public search/get confirms 薛凯琪 蘇州河 (慕容雪 - Mandarin Version), 240520ms. Current source is 南青乐队 same-title different song. Live lyric API returns 56 timestamped rows, first sung text 我只是渔火 你是泡沫. Traditional title/subtitle alias required; recording alignment unverified.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-210",
+    "songName": "嘘月",
+    "artist": "ヨルシカ",
+    "matchStatus": "matched",
+    "alignmentStatus": "spotcheck_review_required",
+    "sourceId": 1815109509,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": 3.898
+  },
+  {
+    "key": "song-211",
+    "songName": "花に亡霊",
+    "artist": "ヨルシカ",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 1442466883,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-212",
+    "songName": "啄木鳥",
+    "artist": "ヨルシカ",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 3355479295,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-213",
+    "songName": "花と水飴、最終電車",
+    "artist": "n-buna / 初音ミク",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 33367346,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-214",
+    "songName": "打上花火",
+    "artist": "Daoko / 米津玄師",
+    "matchStatus": "matched",
+    "alignmentStatus": "spotcheck_review_required",
+    "sourceId": 496869422,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": -0.54
+  },
+  {
+    "key": "song-215",
+    "songName": "妄想感傷代償連盟",
+    "artist": "25時、ナイトコードで。 / 初音ミク",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 432486474,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-216",
+    "songName": "愛して愛して愛して",
+    "artist": "きくお / 初音ミク",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 29185030,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-217",
+    "songName": "愛言葉",
+    "artist": "DECO*27 / 初音ミク",
+    "matchStatus": "matched",
+    "alignmentStatus": "spotcheck_review_required",
+    "sourceId": 28152549,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": 1.65
+  },
+  {
+    "key": "song-218",
+    "songName": "ゴーストルール",
+    "artist": "mafumafu（原曲 DECO*27 / 初音ミク）",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 432486470,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-219",
+    "songName": "独りんぼエンヴィー",
+    "artist": "koyori / 初音ミク",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 27515069,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-22",
+    "songName": "太聪明",
+    "artist": "陈绮贞",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 209397,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-220",
+    "songName": "恋愛裁判",
+    "artist": "40mP / 初音ミク",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 28953243,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-221",
+    "songName": "歌鳥風月",
+    "artist": "Aimer",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 476081907,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-222",
+    "songName": "ECHO",
+    "artist": "+α/あるふぁきゅん。（原曲 Crusher-P）",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 29812004,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-223",
+    "songName": "からくりピエロ",
+    "artist": "40mP / 初音ミク",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 22821014,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-224",
+    "songName": "桜の季節",
+    "artist": "ゆうゆ / 初音ミク",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 469073350,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-226",
+    "songName": "少女未遂",
+    "artist": "古墳P / 巡音ルカ・初音ミク",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 4886807,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-227",
+    "songName": "しかばねの踊り",
+    "artist": "きくお / 初音ミク",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 29185031,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-228",
+    "songName": "月灯りと氷晶核",
+    "artist": "一二三 / 初音ミク",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 1375960068,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-229",
+    "songName": "为谁而为",
+    "artist": "COP, 洛天依Official",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 1335760301,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-23",
+    "songName": "踊り子",
+    "artist": "Vaundy",
+    "matchStatus": "matched",
+    "alignmentStatus": "spotcheck_review_required",
+    "sourceId": 1888864514,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": 0.211
+  },
+  {
+    "key": "song-230",
+    "songName": "凉凉",
+    "artist": "杨宗纬, 张碧晨",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 479408220,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-231",
+    "songName": "大鱼",
+    "artist": "周深",
+    "matchStatus": "matched",
+    "alignmentStatus": "spotcheck_review_required",
+    "sourceId": 3361256119,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": 24.94
+  },
+  {
+    "key": "song-232",
+    "songName": "∞ TIMEs",
+    "artist": "洛天依Official, 星葵77",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 1986743401,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-233",
+    "songName": "白石溪",
+    "artist": "乐正绫, Soda纯白, 洛天依Official",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 415086297,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-234",
+    "songName": "我可能放了假寒假",
+    "artist": "PoKeR, 洛天依Official",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 454051043,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-235",
+    "songName": "干物女",
+    "artist": "三无Marblue",
+    "matchStatus": "candidate_review_required",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 2136620964,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-236",
+    "songName": "情深深雨蒙蒙",
+    "artist": "夏歆依",
+    "matchStatus": "candidate_review_required",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 3378390495,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-237",
+    "songName": "但愿人长久",
+    "artist": "王菲",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 299714,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-238",
+    "songName": "洛天依投食歌",
+    "artist": "洛天依Official",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 27907941,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-239",
+    "songName": "千年食谱颂",
+    "artist": "洛天依Official",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 359939,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-24",
+    "songName": "YOU & IDOL",
+    "artist": "相対性理論",
+    "matchStatus": "matched",
+    "alignmentStatus": "spotcheck_review_required",
+    "sourceId": 27501693,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": 4.3
+  },
+  {
+    "key": "song-240",
+    "songName": "我的一个道姑朋友（第一遍）",
+    "artist": "",
+    "matchStatus": "candidate_review_required",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 1367452194,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-241",
+    "songName": "我的一个道姑朋友（第二遍）",
+    "artist": "",
+    "matchStatus": "candidate_review_required",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 1367452194,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-242",
+    "songName": "神的随波逐流",
+    "artist": "泠鸢yousa",
+    "matchStatus": "version_review_required",
+    "alignmentStatus": "version_review_required",
+    "sourceId": 33682739,
+    "reason": "version_review_required",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-243",
+    "songName": "红昭愿",
+    "artist": "音阙诗听",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 452986458,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-244",
+    "songName": "叹云兮",
+    "artist": "鞠婧祎",
+    "matchStatus": "candidate_review_required",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 2745061701,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-245",
+    "songName": "ローリンガール",
+    "artist": "",
+    "matchStatus": "candidate_review_required",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 22699098,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-246",
+    "songName": "承天",
+    "artist": "忘川风华录",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 2664775978,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-247",
+    "songName": "沸雪煮相思",
+    "artist": "Newbiao好梦一场, 洛天依Official, 星尘infinity",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 2648538864,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-248",
+    "songName": "我的心是不夜城",
+    "artist": "泠鸢yousa",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 2664421401,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-249",
+    "songName": "我的故事未写完",
+    "artist": "泠鸢Yousa",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 1989729997,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-25",
+    "songName": "三月雨",
+    "artist": "乐正绫",
+    "matchStatus": "candidate_review_required",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 2026740264,
+    "reason": "Public search confirms 三月雨 by 晴海 / 乐正绫AI / 乐正绫, 280320ms; live lyric API returns 48 timestamped rows, first sung 细雨坠 at 12.64s. This is an artist-consistent source candidate versus current 洛天依 2024 再生 arrangement. Local cut is 439.765s, so do not promote to matched without checking which arrangement/extra material is present; source recommendation only.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-250",
+    "songName": "巡恋風",
+    "artist": "Luna Safari",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 29103528,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-251",
+    "songName": "月下蝉",
+    "artist": "洛天依Official, 言和, PoKeR",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 31421298,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-252",
+    "songName": "Misty Memory (Night Version)",
+    "artist": "塞壬唱片-MSR, Elvin Shen, ZT, Erik Castro, David L",
+    "matchStatus": "version_review_required",
+    "alignmentStatus": "version_review_required",
+    "sourceId": 2070351310,
+    "reason": "version_review_required",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-253",
+    "songName": "south wind",
+    "artist": "三都",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 1961354219,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-254",
+    "songName": "あの夢をなぞって",
+    "artist": "YOASOBI",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 1417236632,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-255",
+    "songName": "ダーリン",
+    "artist": "須田景凪",
+    "matchStatus": "matched",
+    "alignmentStatus": "spotcheck_review_required",
+    "sourceId": 2014795398,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": 1.47
+  },
+  {
+    "key": "song-256",
+    "songName": "Grown-up's Paradise",
+    "artist": "Mili, 塞壬唱片-MSR",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 2148397627,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-257",
+    "songName": "交织together",
+    "artist": "OriginGirls, 迟色, 舞雪, 饼饼Causa, 沈音音",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 1838286288,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-258",
+    "songName": "丑马",
+    "artist": "ChiliChill乐团",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 1837575277,
+    "reason": "Public search identifies requested ChiliChill乐团 丑马（翻自 乐正绫）, 207807ms. Current source is cloud米米 cover. Live lyric API returns 55 timestamped rows with ChiliChill writing credits. Parenthetical cover suffix currently loses to exact-title covers. Recording alignment unverified.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-259",
+    "songName": "桃花诺",
+    "artist": "G.M.E邓紫棋",
+    "matchStatus": "candidate_review_required",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 480579393,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-26",
+    "songName": "カタオモイ",
+    "artist": "Aimer",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 431259256,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-260",
+    "songName": "贝加尔湖畔",
+    "artist": "李健",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 109998,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-261",
+    "songName": "社畜烧酒",
+    "artist": "ChiliChill乐团, 洛天依Official",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 1433403010,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-262",
+    "songName": "衡山路宛平路",
+    "artist": "ChiliChill乐团",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 2617356789,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-263",
+    "songName": "霞光",
+    "artist": "曲锦楠",
+    "matchStatus": "matched",
+    "alignmentStatus": "spotcheck_review_required",
+    "sourceId": 2027067479,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": 2.54
+  },
+  {
+    "key": "song-264",
+    "songName": "Melody",
+    "artist": "陶喆",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 150520,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-265",
+    "songName": "好了现在可以哭了",
+    "artist": "停電前夜, 洛天依",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 2075674757,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-266",
+    "songName": "春天没有落花。",
+    "artist": "raynodon",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 2035797254,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-267",
+    "songName": "达拉崩吧",
+    "artist": "ilem, 洛天依Official, 言和",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 521493845,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-268",
+    "songName": "冬日",
+    "artist": "鞠橘络",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 2009355588,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-269",
+    "songName": "花园舞曲",
+    "artist": "SNH48",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 1409942674,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-27",
+    "songName": "下等马",
+    "artist": "ChiliChill乐团 / 洛天依Official",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 2709782550,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-270",
+    "songName": "永恒曲",
+    "artist": "太痕, 阿宣七二",
+    "matchStatus": "candidate_review_required",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 41653009,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-271",
+    "songName": "梦乡",
+    "artist": "黄恩茹",
+    "matchStatus": "version_review_required",
+    "alignmentStatus": "version_review_required",
+    "sourceId": 2059496999,
+    "reason": "Verified song/detail: 梦乡demo(黄恩茹), artist/uploader 滕少, album 应许之地demo合集, 200208ms. Verified lyric endpoint credits 作曲 DogP(乾英明 松野恭平), 作词 符酷@混核基音, 制作人 滕少, 和声演唱 SNH48黄恩茹、SNH48由淼, 版权 丝芭传媒; lyric begins 忽而别绪随风起／光与影 悠长岁月斑驳陆离, chorus 灯里 眼里 字里 心里 梦里／留一缕春意. Reject current 1379873872 陈鸿宇, whose lyric begins 你望黄昏有灯，晚风有骨, a different work. Verified source is explicitly demo, not a confirmed released solo master. Initial lyric timestamps are suspiciously compressed (26.79–28.78 covers several lines), so retain edition/timing review rather than automatic alignment.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-272",
+    "songName": "春夏秋冬",
+    "artist": "万丽娜",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 1342571623,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-273",
+    "songName": "夏之回忆",
+    "artist": "李艺彤",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 1406257924,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-274",
+    "songName": "双生花",
+    "artist": "SNH48",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 525239559,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-275",
+    "songName": "渊（Deep Down）",
+    "artist": "SNH48",
+    "matchStatus": "candidate_review_required",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 1966832918,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-276",
+    "songName": "恋爱告急",
+    "artist": "鞠婧祎",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 1401226842,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-277",
+    "songName": "Little Wish",
+    "artist": "塞壬唱片-MSR, WS MUSIC",
+    "matchStatus": "version_review_required",
+    "alignmentStatus": "version_review_required",
+    "sourceId": 2731325796,
+    "reason": "Catalog language is Chinese but source lyrics are Japanese. Catalog language may itself be wrong. Confirm actual sung language and lyric edition before selecting any alternate Chinese cover.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-278",
+    "songName": "Mystic Light Quest",
+    "artist": "塞壬唱片-MSR, 宋柏, 十音, 解伟苓",
+    "matchStatus": "version_review_required",
+    "alignmentStatus": "version_review_required",
+    "sourceId": 2612747239,
+    "reason": "Catalog language is Chinese but source lyrics are Japanese. Catalog language may itself be wrong. Confirm actual sung language and lyric edition before selecting any alternate Chinese cover.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-279",
+    "songName": "天文馆的猫",
+    "artist": "泠鸢yousa",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 1804555743,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-28",
+    "songName": "月が綺麗ね",
+    "artist": "柿崎ユウタ",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 3341026792,
+    "reason": "Keep source ID; expand abbreviated catalog title 月が綺麗ね to canonical 柿崎ユウタ title 月が綺麗ねと言われたい！. Public search confirms artist and 147187ms. Live API returns 48 timestamped rows; sung stamps include colon-fraction syntax [00:12:95], which the current parser already supports. Title-only correction; recording alignment remains unverified.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-280",
+    "songName": "朝汐",
+    "artist": "双笙（陈元汐）, 泠鸢yousa",
+    "matchStatus": "candidate_review_required",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 1315517813,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-281",
+    "songName": "花月成双",
+    "artist": "泠鸢yousa_朽木素_魂喵喵",
+    "matchStatus": "candidate_review_required",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 1831829639,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-282",
+    "songName": "小兔子乖乖",
+    "artist": "儿歌多多",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 1451390681,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-283",
+    "songName": "蜗牛与黄鹂鸟",
+    "artist": "儿歌多多",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 1451396964,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-284",
+    "songName": "小螺号",
+    "artist": "儿歌多多",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 2106816012,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-285",
+    "songName": "农夫渔夫",
+    "artist": "大乔小乔",
+    "matchStatus": "matched",
+    "alignmentStatus": "spotcheck_review_required",
+    "sourceId": 350760,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": -30.859
+  },
+  {
+    "key": "song-286",
+    "songName": "ハッピーエンド",
+    "artist": "back number",
+    "matchStatus": "matched",
+    "alignmentStatus": "spotcheck_review_required",
+    "sourceId": 441116300,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": 8.9
+  },
+  {
+    "key": "song-287",
+    "songName": "萤萤微光",
+    "artist": "泠鸢yousa",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 2601618915,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-288",
+    "songName": "月が綺麗ねと言われたい!（第一遍）",
+    "artist": "柿崎ユウタ",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 3341026792,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-289",
+    "songName": "月が綺麗ねと言われたい!（第二遍）",
+    "artist": "柿崎ユウタ",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 3341026792,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-29",
+    "songName": "偏食",
+    "artist": "香椎モイミ / 初音ミク",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 1841222221,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-290",
+    "songName": "宇宙冷漠",
+    "artist": "幻琉HL",
+    "matchStatus": "no_timed_lyrics",
+    "alignmentStatus": "unavailable",
+    "sourceId": 3376649653,
+    "reason": "no_timed_lyrics",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-291",
+    "songName": "惊鹊",
+    "artist": "忘川风华录 / 海伊 / 星尘Minus",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 1840749937,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-292",
+    "songName": "水叙湖风",
+    "artist": "忘川风华录 / 星尘Minus",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 1484393801,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-293",
+    "songName": "梦境与魔女",
+    "artist": "时之歌Project（泛音堂）/ 喵☆酱",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 452093215,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-294",
+    "songName": "易燃易爆炸",
+    "artist": "陈粒",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 30431376,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-295",
+    "songName": "奇妙能力歌",
+    "artist": "陈粒",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 30431366,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-296",
+    "songName": "走马",
+    "artist": "陈粒",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 30431367,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-297",
+    "songName": "余命3日少女",
+    "artist": "プロペリン / VY1",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 3339196338,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-298",
+    "songName": "ドライフラワー",
+    "artist": "優里",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 1485033549,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-299",
+    "songName": "采茶纪",
+    "artist": "双笙",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 2115066180,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-3",
+    "songName": "人间应又雪",
+    "artist": "忘川风华录 / 洛天依Official / 言和",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 2103661510,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-30",
+    "songName": "春日影",
+    "artist": "MyGO!!!!!",
+    "matchStatus": "candidate_review_required",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 2149887904,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-300",
+    "songName": "XY&Z",
+    "artist": "松本梨香",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 41643682,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-301",
+    "songName": "秘宝",
+    "artist": "litterzy / 洛天依",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 1366000915,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-302",
+    "songName": "流年如歌",
+    "artist": "苍穹",
+    "matchStatus": "matched",
+    "alignmentStatus": "spotcheck_review_required",
+    "sourceId": 1831474126,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": 0.096
+  },
+  {
+    "key": "song-303",
+    "songName": "种族假象",
+    "artist": "漆柚, 绾绾Akari, 纸马, 柚子茶",
+    "matchStatus": "candidate_review_required",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 480110837,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-304",
+    "songName": "星愿",
+    "artist": "茶理理",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 497769792,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-305",
+    "songName": "绮云泽",
+    "artist": "妖橙Yumo, 星尘",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 1923262125,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-306",
+    "songName": "永不失联的爱",
+    "artist": "周兴哲",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 523250334,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-307",
+    "songName": "梦语",
+    "artist": "乐正绫",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 33190543,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-308",
+    "songName": "不染",
+    "artist": "萨顶顶",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 545590357,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-309",
+    "songName": "路过人间",
+    "artist": "郁可唯",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 1888915574,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-31",
+    "songName": "匆匆那年",
+    "artist": "王菲",
+    "matchStatus": "matched",
+    "alignmentStatus": "spotcheck_review_required",
+    "sourceId": 29713754,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": 11.4
+  },
+  {
+    "key": "song-310",
+    "songName": "冻夏",
+    "artist": "Soda纯白, 心华",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 1877233190,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-311",
+    "songName": "フォニイ",
+    "artist": "可不, ツミキ",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 1900172235,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-312",
+    "songName": "なでなで",
+    "artist": "莉犬",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 1912898097,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-313",
+    "songName": "笑忘书",
+    "artist": "王菲",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 299601,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-314",
+    "songName": "如愿",
+    "artist": "王菲",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 1888381008,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-315",
+    "songName": "回る空うさぎ",
+    "artist": "Orangestar / 初音ミク",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 458231455,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-316",
+    "songName": "心拍数♯0822",
+    "artist": "蝶々P / 初音ミク",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 22677419,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-317",
+    "songName": "爱情转移",
+    "artist": "陈奕迅",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 65536,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-318",
+    "songName": "传奇",
+    "artist": "王菲",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 298838,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-319",
+    "songName": "泡沫",
+    "artist": "G.M.E邓紫棋",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 2071698173,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-32",
+    "songName": "食虫植物",
+    "artist": "理芽",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 1867921493,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-320",
+    "songName": "血腥爱情故事",
+    "artist": "张惠妹",
+    "matchStatus": "candidate_review_required",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 430053207,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-321",
+    "songName": "RTRT",
+    "artist": "Mili",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 435005006,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-322",
+    "songName": "海底",
+    "artist": "小陈陈",
+    "matchStatus": "candidate_review_required",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 1430583016,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-323",
+    "songName": "红豆",
+    "artist": "王菲",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 299936,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-324",
+    "songName": "拜云台",
+    "artist": "忘川风华录",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 2617247700,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-325",
+    "songName": "鳥の詩",
+    "artist": "Lia",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 28151022,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-326",
+    "songName": "扉をあけて",
+    "artist": "ANZA",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 555959,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-327",
+    "songName": "茶汤",
+    "artist": "郁可唯",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 316157,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-328",
+    "songName": "知否知否",
+    "artist": "胡夏、郁可唯",
+    "matchStatus": "candidate_review_required",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 1343472148,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-329",
+    "songName": "猪之歌",
+    "artist": "香香",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 308780,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-33",
+    "songName": "恋爱困难少女",
+    "artist": "ChiliChill乐团",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 1494813207,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-330",
+    "songName": "束花线",
+    "artist": "COP、洛天依Official",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 3418660048,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-331",
+    "songName": "数鸭子",
+    "artist": "儿歌多多",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 2081793137,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-332",
+    "songName": "蓝精灵",
+    "artist": "儿歌多多",
+    "matchStatus": "candidate_review_required",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 233293,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-333",
+    "songName": "我是一个粉刷匠",
+    "artist": "儿歌多多",
+    "matchStatus": "candidate_review_required",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 1417885728,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-334",
+    "songName": "TIAN TIAN",
+    "artist": "Mili",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 2707332868,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-335",
+    "songName": "甲乙丙丁",
+    "artist": "李佳薇",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 3399839173,
+    "reason": "Existing search candidates identify 李佳薇 甲乙丙丁 (你我怎么两清), matching catalog artist; current 张学友 / 郑中基 / 许志安 song is unrelated. Live lyric API returns 70 timestamped rows, credits 应晓璃@SoundJoin词曲. Recording alignment remains unverified.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-336",
+    "songName": "天生反骨的鸵鸟",
+    "artist": "",
+    "matchStatus": "candidate_review_required",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 2010607045,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-337",
+    "songName": "入秋的第一场雨真让人矫情",
+    "artist": "",
+    "matchStatus": "candidate_review_required",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 1909424935,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-338",
+    "songName": "光与影的对白",
+    "artist": "洛天依",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 1963053471,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-339",
+    "songName": "星降る海",
+    "artist": "",
+    "matchStatus": "candidate_review_required",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 3340112782,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-34",
+    "songName": "白鸟过河滩",
+    "artist": "ilem / 洛天依Official",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 3392512962,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-340",
+    "songName": "地球最後の告白を",
+    "artist": "kemu / GUMI",
+    "matchStatus": "matched",
+    "alignmentStatus": "spotcheck_review_required",
+    "sourceId": 26212270,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": -1
+  },
+  {
+    "key": "song-341",
+    "songName": "ぼくのかみさま",
+    "artist": "",
+    "matchStatus": "candidate_review_required",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 2652699636,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-342",
+    "songName": "オノマトペ",
+    "artist": "",
+    "matchStatus": "candidate_review_required",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 1838030532,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-343",
+    "songName": "Ditto",
+    "artist": "NewJeans",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 2758025627,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-344",
+    "songName": "SaIN",
+    "artist": "",
+    "matchStatus": "candidate_review_required",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 443967301,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-345",
+    "songName": "一人行者",
+    "artist": "",
+    "matchStatus": "candidate_review_required",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 526116050,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-346",
+    "songName": "哀温ノ詩",
+    "artist": "指出毬亜",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 1834949969,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-347",
+    "songName": "月夜見海月",
+    "artist": "乙宗梢",
+    "matchStatus": "candidate_review_required",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 2621677275,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-348",
+    "songName": "Fighting My Way",
+    "artist": "",
+    "matchStatus": "candidate_review_required",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 2156579528,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-349",
+    "songName": "CQCQ",
+    "artist": "",
+    "matchStatus": "candidate_review_required",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 472287534,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-35",
+    "songName": "勾指起誓",
+    "artist": "洛天依Official / ilem",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 1345872140,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-350",
+    "songName": "群青",
+    "artist": "YOASOBI",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 1472480890,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-351",
+    "songName": "祝福",
+    "artist": "YOASOBI",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 1983292457,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-352",
+    "songName": "恋愛脳",
+    "artist": "なきそ / 可不",
+    "matchStatus": "version_review_required",
+    "alignmentStatus": "version_review_required",
+    "sourceId": 1958186873,
+    "reason": "Catalog names なきそ / 可不 but selected source is another same-title song; isolate pending composition confirmation.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-353",
+    "songName": "一梦千宵",
+    "artist": "洛天依",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 1913873767,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-354",
+    "songName": "メルト",
+    "artist": "ryo / 初音ミク",
+    "matchStatus": "matched",
+    "alignmentStatus": "spotcheck_review_required",
+    "sourceId": 825736,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": 0.89
+  },
+  {
+    "key": "song-355",
+    "songName": "EMOTION",
+    "artist": "三船栞子（小泉萌香）",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 1960852862,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-356",
+    "songName": "泛泛人类不会祈祷",
+    "artist": "一碗热汤p / 洛天依",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 2085763107,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-357",
+    "songName": "追憶",
+    "artist": "PIKASONIC / なこたんまる",
+    "matchStatus": "matched",
+    "alignmentStatus": "spotcheck_review_required",
+    "sourceId": 1869161372,
+    "reason": "Exact requested artists PIKASONIC / なこたんまる match 追憶 (feat. nakotanmaru), duration 249000ms. Current source is unrelated V.W.P song. Live lyric API returns 50 timestamped rows. Source identity confirmed; recording alignment unverified.",
+    "offsetSeconds": 0.5
+  },
+  {
+    "key": "song-358",
+    "songName": "不可思議のカルテ",
+    "artist": "瀬戸麻沙美 ほか",
+    "matchStatus": "matched",
+    "alignmentStatus": "spotcheck_review_required",
+    "sourceId": 1313052943,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": 0.29
+  },
+  {
+    "key": "song-359",
+    "songName": "ちっちゃな私",
+    "artist": "重音テト / マサラダ",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 2084302199,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-36",
+    "songName": "玛德琳娜电塔",
+    "artist": "Soda纯白 / 洛天依Official",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 1412991631,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-360",
+    "songName": "また あした",
+    "artist": "悠木碧",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 28138666,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-361",
+    "songName": "东京不太热",
+    "artist": "洛天依Official",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 1478965386,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-362",
+    "songName": "普通朋友",
+    "artist": "零度甜",
+    "matchStatus": "candidate_review_required",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 150623,
+    "reason": "Verified exact title+artist search and song/detail: 普通朋友（翻唱正式版）, artist 零度甜, album 高能翻唱热播系列13, 251812ms. Current 150623 is 陶喆, not the requested performer. Crucial limitation: lyric endpoint api/song/lyric?id=2157482420&lv=1&kv=1&tv=-1 returns empty lyric; source identity verified but no timed lyrics recovered. Title explicitly says 翻唱: research does not establish that this is a different composition from 陶喆, only that current source performer is not 零度甜. Do not infer a different work solely from artist mismatch. Retain Tao source as composition candidate; cover title is not sufficient alone to certify identical lyrics or timing.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-363",
+    "songName": "何日重到苏澜桥",
+    "artist": "泠鸢yousa",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 550137051,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-364",
+    "songName": "敢归云间宿",
+    "artist": "茶了了",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 2024651780,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-365",
+    "songName": "得了吧张小姐",
+    "artist": "李想Evelyn",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 1329820228,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-366",
+    "songName": "宝贝",
+    "artist": "张悬",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 1883959452,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-367",
+    "songName": "CLEAR",
+    "artist": "坂本真綾",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 534066224,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-368",
+    "songName": "Catch You Catch Me",
+    "artist": "日向めぐみ",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 28762528,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-369",
+    "songName": "本色",
+    "artist": "洛天依",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 1999635395,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-37",
+    "songName": "目的论",
+    "artist": "JUSF周存 / 洛天依 / 言和",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 420400455,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-370",
+    "songName": "海海海",
+    "artist": "阿悄",
+    "matchStatus": "candidate_review_required",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 3346074369,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-371",
+    "songName": "赤伶",
+    "artist": "HITA",
+    "matchStatus": "candidate_review_required",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 2137661995,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-372",
+    "songName": "水上灯",
+    "artist": "Braska",
+    "matchStatus": "candidate_review_required",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 2618797183,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-373",
+    "songName": "就让这大雨全都落下",
+    "artist": "容祖儿",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 1984475097,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-374",
+    "songName": "伪善者",
+    "artist": "金渔",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 1929356674,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-375",
+    "songName": "辞职信",
+    "artist": "ChiliChill乐团",
+    "matchStatus": "matched",
+    "alignmentStatus": "spotcheck_review_required",
+    "sourceId": 3378909144,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": 0.095
+  },
+  {
+    "key": "song-376",
+    "songName": "暗恋人类日记",
+    "artist": "Bo Peep / 洛天依Official",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 1962946869,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-377",
+    "songName": "Vitamins",
+    "artist": "Mili / world's end girlfriend",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 554245891,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-378",
+    "songName": "巫山云",
+    "artist": "旅行の蜗牛 / 诗岸",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 1463239438,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-379",
+    "songName": "桃花笑",
+    "artist": "洛天依 / 言和 / 乐正绫",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 35566904,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-38",
+    "songName": "苍蝇",
+    "artist": "ilem / 赤羽",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 3392513819,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-380",
+    "songName": "月球",
+    "artist": "银临",
+    "matchStatus": "matched",
+    "alignmentStatus": "spotcheck_review_required",
+    "sourceId": 1380262781,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": -0.083
+  },
+  {
+    "key": "song-381",
+    "songName": "好字唯之",
+    "artist": "忘川风华录 / 海伊",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 1455047532,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-382",
+    "songName": "一片柳叶响山坳",
+    "artist": "泠鸢yousa",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 1804555737,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-383",
+    "songName": "咸咸的",
+    "artist": "Soda纯白 / 洛天依Official",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 484708741,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-384",
+    "songName": "ツギハギスタッカート",
+    "artist": "とあ / 初音ミク",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 30148963,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-385",
+    "songName": "ヒッチコック",
+    "artist": "ヨルシカ",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 557581315,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-386",
+    "songName": "纸花",
+    "artist": "COP / 乐正绫",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 1450516489,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-387",
+    "songName": "Odd Dice",
+    "artist": "millsage",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 3446954477,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-388",
+    "songName": "没那么简单",
+    "artist": "黄小琥",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 239188,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-389",
+    "songName": "套马杆",
+    "artist": "乌兰图雅",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 3349052584,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-39",
+    "songName": "一半一半",
+    "artist": "洛天依Official",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 32628084,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-390",
+    "songName": "山外小楼夜听雨",
+    "artist": "洛天依Official",
+    "matchStatus": "candidate_review_required",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 405597568,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-391",
+    "songName": "烟雨行舟",
+    "artist": "伦桑",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 32922246,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-392",
+    "songName": "九万字",
+    "artist": "黄诗扶",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 1335942780,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-393",
+    "songName": "画骨成沙",
+    "artist": "樱九",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 26584256,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-394",
+    "songName": "半壶纱",
+    "artist": "刘珂矣",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 28793140,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-395",
+    "songName": "千古",
+    "artist": "阿兰",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 33223036,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-396",
+    "songName": "我的一个道姑朋友",
+    "artist": "双笙",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 1367452194,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-397",
+    "songName": "盗墓笔记·十年人间",
+    "artist": "Soda纯白 / 洛天依Official",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 1298336783,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-398",
+    "songName": "归期",
+    "artist": "钱润玉",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 1971054019,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-399",
+    "songName": "倾尽天下",
+    "artist": "河图",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 27571867,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-4",
+    "songName": "暖暖",
+    "artist": "梁静茹",
+    "matchStatus": "matched",
+    "alignmentStatus": "timing_drift_review_required",
+    "sourceId": 254141,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": 0.75
+  },
+  {
+    "key": "song-40",
+    "songName": "我多想说再见啊",
+    "artist": "柯立可",
+    "matchStatus": "candidate_review_required",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 2052910904,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-400",
+    "songName": "红颜劫",
+    "artist": "姚贝娜",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 109054,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-401",
+    "songName": "万神纪",
+    "artist": "肥皂菌丨珉珉的猫咪丨",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 459555084,
+    "reason": "Existing search candidates identify 万神纪(人声本家·) by requested 肥皂菌丨珉珉的猫咪丨, rather than current 凤凰传奇 version. Live lyric API returns 77 timestamped rows with 邪叫教主 / 海鲜面 credits. Audio alignment remains unverified.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-402",
+    "songName": "万古生香",
+    "artist": "洛天依Official",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 1831476078,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-403",
+    "songName": "不问天",
+    "artist": "说说Crystal",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 1824454149,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-404",
+    "songName": "恋友",
+    "artist": "Kevinz / FFF君 / 徵羽摩柯 / 乐正绫",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 1322404518,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-405",
+    "songName": "晚想",
+    "artist": "Kevinz / 跨海星尘 / 徵羽摩柯",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 2687217413,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-406",
+    "songName": "蝴蝶泉边",
+    "artist": "黄雅莉",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 239682,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-41",
+    "songName": "霜雪千年",
+    "artist": "洛天依Official / 乐正绫",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 2631318598,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-42",
+    "songName": "航向你的海岛",
+    "artist": "泠鸢yousa",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 1804552401,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-43",
+    "songName": "外婆桥",
+    "artist": "任然",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 1393659632,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-44",
+    "songName": "锦鲤抄",
+    "artist": "银临 / 云之泣",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 28188434,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-45",
+    "songName": "故梦",
+    "artist": "橙翼",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 27506597,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-46",
+    "songName": "山遥路远",
+    "artist": "ChiliChill乐团 / 乐正绫",
+    "matchStatus": "candidate_review_required",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 2040826236,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-47",
+    "songName": "我的悲伤是水做的",
+    "artist": "ChiliChill乐团 / 洛天依Official",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 1439814454,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-48",
+    "songName": "雨爱",
+    "artist": "杨丞琳",
+    "matchStatus": "matched",
+    "alignmentStatus": "spotcheck_review_required",
+    "sourceId": 316100,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": -0.886
+  },
+  {
+    "key": "song-49",
+    "songName": "世界は恋に落ちている",
+    "artist": "CHiCO with HoneyWorks",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 28891491,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-5",
+    "songName": "后来",
+    "artist": "刘若英",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 254574,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-50",
+    "songName": "蜜月アン・ドゥ・トロワ",
+    "artist": "DATEKEN / 鏡音リン",
+    "matchStatus": "matched",
+    "alignmentStatus": "spotcheck_review_required",
+    "sourceId": 29133426,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": 0.2
+  },
+  {
+    "key": "song-51",
+    "songName": "君色に染まる",
+    "artist": "TOKOTOKO（西沢さんP） / GUMI",
+    "matchStatus": "matched",
+    "alignmentStatus": "spotcheck_review_required",
+    "sourceId": 39443782,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": -1.27
+  },
+  {
+    "key": "song-52",
+    "songName": "爱情讯息",
+    "artist": "郭静",
+    "matchStatus": "matched",
+    "alignmentStatus": "spotcheck_review_required",
+    "sourceId": 233888,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": 0.61
+  },
+  {
+    "key": "song-53",
+    "songName": "繁华唱遍",
+    "artist": "乐正绫",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 1831474117,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-54",
+    "songName": "外婆的澎湖湾",
+    "artist": "潘安邦",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 140409,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-55",
+    "songName": "アヤノの幸福理論",
+    "artist": "じん / IA",
+    "matchStatus": "matched",
+    "alignmentStatus": "spotcheck_review_required",
+    "sourceId": 26440340,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": -1.02
+  },
+  {
+    "key": "song-56",
+    "songName": "都落ち",
+    "artist": "ヨルシカ",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 2036445126,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-57",
+    "songName": "可愛くてごめん",
+    "artist": "HoneyWorks / 早見沙織",
+    "matchStatus": "matched",
+    "alignmentStatus": "spotcheck_review_required",
+    "sourceId": 1996929972,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": -0.15
+  },
+  {
+    "key": "song-58",
+    "songName": "風になる",
+    "artist": "つじあやの",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 643034,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-59",
+    "songName": "未来は風のように",
+    "artist": "Liella!",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 1866489156,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-6",
+    "songName": "プロポーズ",
+    "artist": "なとり",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 2707202386,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-60",
+    "songName": "人间不值得",
+    "artist": "黄诗扶",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 1340543218,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-61",
+    "songName": "思华年",
+    "artist": "忘川风华录 / 星尘",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 2635563892,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-62",
+    "songName": "所以我伸出了手",
+    "artist": "Evalia / 星尘",
+    "matchStatus": "candidate_review_required",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 2688916758,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-63",
+    "songName": "世末歌者",
+    "artist": "乐正绫 / COP",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 429460239,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-64",
+    "songName": "上山岗",
+    "artist": "ilem / 洛天依Official",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 3392513818,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-65",
+    "songName": "涟漪",
+    "artist": "Zeno / 星尘",
+    "matchStatus": "version_review_required",
+    "alignmentStatus": "version_review_required",
+    "sourceId": 1938216578,
+    "reason": "Verified song/detail: 涟漪(星尘Infinity 2022Ver.), artists 平行四界Quadimension / 星尘, album 涟漪, 250830ms. Verified lyric endpoint: 将漂浮的声音都吞没／描绘着贝壳上的轮廓; chorus 你盛开于那盛夏的污浊／我流连于那温柔的疼痛 and 陪我多一些多一些的时间. Reject current 3426083946 供销社乐队, an unrelated artist/work. Exact verified edition is 2022 Infinity, not a claim that the older Zeno original master has been recovered; endpoint credits corporate 平行四界Quadimension rather than Zeno. Requires edition check before alignment.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-66",
+    "songName": "聘书",
+    "artist": "洛天依Official",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 2681734305,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-67",
+    "songName": "蝴蝶",
+    "artist": "洛天依Official",
+    "matchStatus": "matched",
+    "alignmentStatus": "spotcheck_review_required",
+    "sourceId": 2750754678,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": -1.09
+  },
+  {
+    "key": "song-68",
+    "songName": "シリウスの心臓",
+    "artist": "ヰ世界情緒",
+    "matchStatus": "matched",
+    "alignmentStatus": "timing_drift_review_required",
+    "sourceId": 1907751320,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": 3.42
+  },
+  {
+    "key": "song-69",
+    "songName": "アスノヨゾラ哨戒班",
+    "artist": "Orangestar / IA",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 30870173,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-7",
+    "songName": "木偶",
+    "artist": "李艺彤",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 1323302995,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-70",
+    "songName": "碎梦",
+    "artist": "COP / 乐正绫",
+    "matchStatus": "version_review_required",
+    "alignmentStatus": "version_review_required",
+    "sourceId": 515964379,
+    "reason": "Verified song/detail: 碎梦（short ver.）, artists COP / 乐正绫, album 碎梦（short ver.）, 97959ms. Verified lyric endpoint credits 作词/作曲 COP and begins 事到如今 懒得想什么明天; chorus 从我又小又拥挤的房间／从我堆满了贪念的床边／飞向总有容身处的世界／却碎裂 却碎裂. Reject current 2058711050 胡彦斌/逆水长琴, a different composition. This is an exact verified original short edition ONLY: do not claim complete-song lyrics or align a full performance against it. No original full-version ID was verified.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-71",
+    "songName": "START:DASH!!!",
+    "artist": "μ's",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 32235941,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-72",
+    "songName": "CHASE!",
+    "artist": "優木せつ菜（楠木灯）",
+    "matchStatus": "candidate_review_required",
+    "alignmentStatus": "spotcheck_review_required",
+    "sourceId": 1327263606,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": -0.71
+  },
+  {
+    "key": "song-73",
+    "songName": "MORE JUMP MORE!",
+    "artist": "MORE MORE JUMP！",
+    "matchStatus": "matched",
+    "alignmentStatus": "spotcheck_review_required",
+    "sourceId": 1854231422,
+    "reason": "Public search/get maps translated MORE JUMP MORE! to モア！ジャンプ！モア！ (feat. 花里みのり&桐谷遥&桃井愛莉&日野森雫&初音ミク), artists ナユタン星人 / MORE MORE JUMP！ / 初音ミク, duration 182183ms. Live lyric API returns 83 timestamped rows. Alias correction only; recording alignment unverified.",
+    "offsetSeconds": 0.54
+  },
+  {
+    "key": "song-74",
+    "songName": "私、アイドル宣言",
+    "artist": "HoneyWorks（CHiCO with HoneyWorks）",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 541511317,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-75",
+    "songName": "おともだち",
+    "artist": "ファントムシータ",
+    "matchStatus": "matched",
+    "alignmentStatus": "spotcheck_review_required",
+    "sourceId": 2602239731,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": 29.178
+  },
+  {
+    "key": "song-76",
+    "songName": "第一只小兔子",
+    "artist": "SNH48 Team NII（AKB48 中文版）",
+    "matchStatus": "not_found",
+    "alignmentStatus": "unavailable",
+    "sourceId": null,
+    "reason": "not_found",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-77",
+    "songName": "大声钻石",
+    "artist": "AKB48 Team SH",
+    "matchStatus": "version_review_required",
+    "alignmentStatus": "version_review_required",
+    "sourceId": 1927161844,
+    "reason": "version_review_required",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-78",
+    "songName": "夜蝶",
+    "artist": "SNH48（李艺彤/黄婷婷）",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 1342571624,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-79",
+    "songName": "光景",
+    "artist": "篠澤広（初星学園）",
+    "matchStatus": "matched",
+    "alignmentStatus": "spotcheck_review_required",
+    "sourceId": 2156579770,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": 12.897
+  },
+  {
+    "key": "song-8",
+    "songName": "绝不认输",
+    "artist": "王绎龙",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 163180,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-80",
+    "songName": "SOS",
+    "artist": "黛冬優子（偶像大师 闪耀色彩）",
+    "matchStatus": "candidate_review_required",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 2126481191,
+    "reason": "Reject current 1357848241: Avicii/Aloe Blacc is a different work. Exact title+character, simplified character, and voice-actor searches found official 2005000974 SOS (Off Vocal), artist 幸村恵理, 241800ms; its lyric endpoint is empty, so it is not a vocal lyric source. Verified cover 2126481191 is ONNONANA_呐呐, album 【Nana翻唱】SOS／幸村恵理; its lyric endpoint begins キミにFall in love／恋のSOSずっと胸が苦しいんです. This confirms the intended work but not an exact original-vocal source ID. Do not substitute the cover or off-vocal silently. Retained explicitly as a cover-source candidate for the confirmed composition, NOT as the original master.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-81",
+    "songName": "私のSymphony",
+    "artist": "Liella!（澁谷かのん）",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 2103448203,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-82",
+    "songName": "Starlight Prologue",
+    "artist": "Liella!",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 1888667282,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-83",
+    "songName": "アイドル",
+    "artist": "YOASOBI",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 2034742057,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-84",
+    "songName": "二人セゾン",
+    "artist": "乃木坂46",
+    "matchStatus": "candidate_review_required",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 443882735,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-85",
+    "songName": "Fly me to the star",
+    "artist": "九九组（少女歌剧）",
+    "matchStatus": "candidate_review_required",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 1297747109,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-86",
+    "songName": "I LOVE U",
+    "artist": "洛天依（阿良良木健）",
+    "matchStatus": "matched",
+    "alignmentStatus": "spotcheck_review_required",
+    "sourceId": 28830337,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": 0.97
+  },
+  {
+    "key": "song-87",
+    "songName": "flos",
+    "artist": "R Sound Design（初音ミク）",
+    "matchStatus": "matched",
+    "alignmentStatus": "spotcheck_review_required",
+    "sourceId": 1906952532,
+    "reason": "Reuse the original-artist Flos source from the completed per-audio pilot (audio SHA 25c48adec33de02e0c378195e85dee306fc6a30397ca7a4474e1d1979097f206). Pilot offset -0.006 was unverified and had possible missing lyrics near 246.54s; recompute strict ASR evidence, do not inherit human verification or completeness.",
+    "offsetSeconds": -0.006
+  },
+  {
+    "key": "song-88",
+    "songName": "纸星瓶",
+    "artist": "海蓝色 / 星尘",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 2091419020,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-89",
+    "songName": "流霰",
+    "artist": "旅行的蜗牛（Snapmod）/ 星尘",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 1925101032,
+    "reason": "Existing search candidates identify 流霰 (星尘Infinity Version), 旅行の蜗牛 / 星尘, 240544ms, matching catalog artist/version notes. Current source is 诗岸 version. Live lyric API returns 74 timestamped rows. Replace work-version source and realign separately.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-9",
+    "songName": "横竖撇点折",
+    "artist": "米白",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 1831476071,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-90",
+    "songName": "栖凰",
+    "artist": "忘川风华录 / 星尘",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 1319596898,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-91",
+    "songName": "多情岸",
+    "artist": "忘川风华录 / 洛天依",
+    "matchStatus": "candidate_review_required",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 863034934,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-92",
+    "songName": "吹灭小山河",
+    "artist": "国风堂 / 司南",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 1412559986,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-93",
+    "songName": "夏恋慕",
+    "artist": "kobasolo / 春茶",
+    "matchStatus": "matched",
+    "alignmentStatus": "spotcheck_review_required",
+    "sourceId": 1335529596,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": 1
+  },
+  {
+    "key": "song-94",
+    "songName": "夏霞",
+    "artist": "あたらよ",
+    "matchStatus": "matched",
+    "alignmentStatus": "spotcheck_review_required",
+    "sourceId": 1867150097,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": -0.338
+  },
+  {
+    "key": "song-95",
+    "songName": "恋苦",
+    "artist": "月犬P / 星尘",
+    "matchStatus": "not_found",
+    "alignmentStatus": "unavailable",
+    "sourceId": null,
+    "reason": "Reject current ID: local cached and live search metadata show unrelated 45.302s 恋苦 by 斌, empty LRC. Public original upload and https://vocadb.net/S/409522 identify 戀苦 by 月犬P / 坐标P / 踏云社 feat. 星尘Infinity (4:52). Searches for 恋苦/戀苦 plus 月犬/星尘/踏云社 yielded no verified matching Netease ID. Null explicitly means remove wrong match and retain unresolved; do not invent replacement ID.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-96",
+    "songName": "光",
+    "artist": "Kide / Ddickky / 星尘",
+    "matchStatus": "candidate_review_required",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 1885205681,
+    "reason": "Reject current 30431364 陈粒, a different work. Verified 2010336912 is 光（伴奏）, artist kide, album 光, 253910ms, lyric endpoint empty. Exact original 星尘 vocal ID was not recovered within bounded research. Verified related vocal edition 1885205681 is 茶理理 光, 218067ms; its lyric endpoint explicitly credits 作词 Ddickky / 作曲 Kide / 编曲 AST / 演唱 茶理理 and begins 如在黑夜中／被熄灭了星空. This establishes same composition but a different performer, arrangement, and duration, so it is not proposed as the exact 星尘 source. Retained explicitly as a related-work/arrangement candidate, NOT as the requested recording.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-97",
+    "songName": "月巷",
+    "artist": "乐正绫",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 2123816639,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-98",
+    "songName": "青鸟衔风",
+    "artist": "海伊 / 诗岸",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 1409603530,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-99",
+    "songName": "绿色",
+    "artist": "陈雪凝",
+    "matchStatus": "matched",
+    "alignmentStatus": "anchor_not_found",
+    "sourceId": 1345848098,
+    "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  }
+]

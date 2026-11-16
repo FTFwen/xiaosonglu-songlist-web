@@ -1,0 +1,43 @@
+{
+  "audioSha256": "db7c29fc27e533c059b3ce8977132ccbcae2437b88578d87af4b77926c20d6e6",
+  "model": "whisper-base",
+  "start": 0,
+  "end": 48.86,
+  "result": {
+    "text": "放下",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 0.0,
+        "end": 1.0,
+        "text": "放下",
+        "tokens": [
+          50364,
+          12744,
+          4438,
+          50422
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.8408543586730957,
+        "compression_ratio": 0.42857142857142855,
+        "no_speech_prob": 0.002394432667642832,
+        "words": [
+          {
+            "word": "放",
+            "start": 0.0,
+            "end": 0.62,
+            "probability": 0.8428979516029358
+          },
+          {
+            "word": "下",
+            "start": 0.62,
+            "end": 1.0,
+            "probability": 0.49168145656585693
+          }
+        ]
+      }
+    ],
+    "language": "zh"
+  }
+}

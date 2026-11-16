@@ -1,0 +1,183 @@
+{
+  "schemaVersion": 1,
+  "key": "song-308",
+  "songId": 308,
+  "songName": "不染",
+  "rowKey": "不染",
+  "displaySongName": "不染",
+  "artist": "萨顶顶",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "分P标题 10_不染 - 萨顶顶；心灵火 P10 同名同序；弹幕无直接点名，按两份合集章节锁定。",
+  "audio": {
+    "url": "assets/audio/song_307.m4a?v=c62f01e6fe22",
+    "sha256": "c62f01e6fe220b8e056ebb852c24536ba6a4fb26bb5e5682a4f54bedb46a2511"
+  },
+  "retrievedAt": "2026-11-16T04:06:33.025Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E4%B8%8D%E6%9F%93&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E4%B8%8D%E6%9F%93%20%E8%90%A8%E9%A1%B6%E9%A1%B6&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 545590357,
+        "name": "不染",
+        "artists": [
+          "萨顶顶"
+        ],
+        "album": "香蜜沉沉烬如霜 电视原声音乐专辑",
+        "durationMs": 271792,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 536099160,
+        "name": "不染",
+        "artists": [
+          "毛不易"
+        ],
+        "album": "香蜜沉沉烬如霜 电视原声音乐专辑",
+        "durationMs": 325844,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1332489493,
+        "name": "不染",
+        "artists": [
+          "毛不易"
+        ],
+        "album": "我们的主题曲Vol.1 The Very Best of Golden Dog",
+        "durationMs": 325844,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3417293028,
+        "name": "不染",
+        "artists": [
+          "小雪"
+        ],
+        "album": "不染",
+        "durationMs": 277106,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2135856257,
+        "name": "不染",
+        "artists": [
+          "杨紫"
+        ],
+        "album": "",
+        "durationMs": 128391,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2619465408,
+        "name": "不染",
+        "artists": [
+          "Jan"
+        ],
+        "album": "不染（DJ）",
+        "durationMs": 177254,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 533181327,
+        "name": "不染",
+        "artists": [
+          "河图"
+        ],
+        "album": "一梦江湖《不染》",
+        "durationMs": 236855,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1306498730,
+        "name": "不染 (钢琴版)",
+        "artists": [
+          "萨顶顶"
+        ],
+        "album": "香蜜沉沉烬如霜 电视原声音乐专辑",
+        "durationMs": 257367,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      }
+    ],
+    "workQuery": {
+      "song_id": 308,
+      "song_name": "不染",
+      "show_as_song_name": "",
+      "display_song_name": "不染",
+      "artist": "萨顶顶",
+      "artist_search": "萨顶顶",
+      "feat_artist": "",
+      "remark": "分P标题 10_不染 - 萨顶顶；心灵火 P10 同名同序；弹幕无直接点名，按两份合集章节锁定。",
+      "tone": "",
+      "language": "中文",
+      "type": "影视",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1uPJ86DE95/?p=10",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-16",
+      "row_key": "不染"
+    },
+    "sourceId": 545590357,
+    "sourcePath": "sources/545590357.json",
+    "sourceUrl": "https://music.163.com/#/song?id=545590357",
+    "selected": {
+      "id": 545590357,
+      "name": "不染",
+      "artists": [
+        "萨顶顶"
+      ],
+      "album": "香蜜沉沉烬如霜 电视原声音乐专辑",
+      "durationMs": 271792,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 41
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-308-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 275.499,
+    "sourceFirstLine": {
+      "t": 28.09,
+      "text": "不愿染是与非 怎料事与愿违"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 32.14,
+      "endSeconds": 35.22,
+      "similarity": 0.35294117647058826,
+      "recognizedText": "是玉妃 怎料",
+      "meanProbability": 0.68,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

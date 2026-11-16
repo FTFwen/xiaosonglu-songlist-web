@@ -1,0 +1,184 @@
+{
+  "schemaVersion": 1,
+  "key": "song-130",
+  "songId": 130,
+  "songName": "腐草为萤",
+  "rowKey": "腐草为萤",
+  "displaySongName": "腐草为萤",
+  "artist": "银临",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "2026-09-03「也许康复的随便唱唱」21点场；歌切合集【桐人今天睡大觉】【小松绿Viridis】随便唱唱的歌回 歌切合集 2026.09.03 分P10（04:38）。银临 2013 古风名曲。",
+  "audio": {
+    "url": "assets/audio/song_129.m4a?v=b60324175f6d",
+    "sha256": "b60324175f6ddd2ee9b21c7fa88a2233515e2900b2dbe99c04188b0d259bf360"
+  },
+  "retrievedAt": "2026-11-16T04:02:41.273Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E8%85%90%E8%8D%89%E4%B8%BA%E8%90%A4&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E8%85%90%E8%8D%89%E4%B8%BA%E8%90%A4%20%E9%93%B6%E4%B8%B4&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 28188426,
+        "name": "腐草为萤",
+        "artists": [
+          "银临"
+        ],
+        "album": "腐草为萤",
+        "durationMs": 280706,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2704491864,
+        "name": "腐草为萤",
+        "artists": [
+          "萧忆情Alex"
+        ],
+        "album": "萧忆情歌曲合集",
+        "durationMs": 280267,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3451936771,
+        "name": "腐草为萤",
+        "artists": [
+          "桂汾"
+        ],
+        "album": "腐草为萤",
+        "durationMs": 257602,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 28308572,
+        "name": "腐草为萤",
+        "artists": [
+          "Tacke竹桑"
+        ],
+        "album": "热门华语209",
+        "durationMs": 279000,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1968598647,
+        "name": "腐草为萤",
+        "artists": [
+          "兰音Reine"
+        ],
+        "album": "腐草为萤",
+        "durationMs": 280560,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 455542819,
+        "name": "腐草为萤",
+        "artists": [
+          "周果亦"
+        ],
+        "album": "挥不走的萤火",
+        "durationMs": 279700,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1965874176,
+        "name": "腐草为萤",
+        "artists": [
+          "邱有句",
+          "邹牧虞"
+        ],
+        "album": "腐草为萤",
+        "durationMs": 184947,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 427017050,
+        "name": "腐草为萤",
+        "artists": [
+          "诺言Jason"
+        ],
+        "album": "腐草为萤",
+        "durationMs": 279873,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 130,
+      "song_name": "腐草为萤",
+      "show_as_song_name": "",
+      "display_song_name": "腐草为萤",
+      "artist": "银临",
+      "artist_search": "腐草为萤 银临",
+      "feat_artist": "",
+      "remark": "2026-09-03「也许康复的随便唱唱」21点场；歌切合集【桐人今天睡大觉】【小松绿Viridis】随便唱唱的歌回 歌切合集 2026.09.03 分P10（04:38）。银临 2013 古风名曲。",
+      "tone": "",
+      "language": "中文",
+      "type": "古风、国风",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=10",
+      "sing_count": 1,
+      "status_labels": "歌回",
+      "last_sing_at": "2026-09-03",
+      "row_key": "腐草为萤"
+    },
+    "sourceId": 28188426,
+    "sourcePath": "sources/28188426.json",
+    "sourceUrl": "https://music.163.com/#/song?id=28188426",
+    "selected": {
+      "id": 28188426,
+      "name": "腐草为萤",
+      "artists": [
+        "银临"
+      ],
+      "album": "腐草为萤",
+      "durationMs": 280706,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 28
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-130-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 276.459,
+    "sourceFirstLine": {
+      "t": 29.493,
+      "text": "纤弱的 淤泥中妖冶"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 28.58,
+      "endSeconds": 29.98,
+      "similarity": 0.0,
+      "recognizedText": "我",
+      "meanProbability": 0.017,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

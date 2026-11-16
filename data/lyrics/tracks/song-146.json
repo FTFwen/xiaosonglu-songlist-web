@@ -1,0 +1,191 @@
+{
+  "schemaVersion": 1,
+  "key": "song-146",
+  "songId": 146,
+  "songName": "（区）最终祈愿",
+  "rowKey": "（区）最终祈愿",
+  "displaySongName": "（区）最终祈愿",
+  "artist": "平行四界Quadimension、星尘",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "",
+  "audio": {
+    "url": "assets/audio/song_145.m4a?v=01e0781d6666",
+    "sha256": "01e0781d666655f33216d8d57d5f029b73ff57063367f59b5bcdc9aeabb5be55"
+  },
+  "retrievedAt": "2026-11-16T04:04:03.191Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E6%9C%80%E7%BB%88%E7%A5%88%E6%84%BF&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E6%9C%80%E7%BB%88%E7%A5%88%E6%84%BF%20%E5%B9%B3%E8%A1%8C%E5%9B%9B%E7%95%8CQuadimension&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1927889265,
+        "name": "最终祈愿",
+        "artists": [
+          "平行四界Quadimension",
+          "星尘"
+        ],
+        "album": "最终祈愿",
+        "durationMs": 259639,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2159681696,
+        "name": "最终祈愿",
+        "artists": [
+          "星尘infinity、瑞安Ryan"
+        ],
+        "album": "",
+        "durationMs": 269844,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1940013356,
+        "name": "最终祈愿",
+        "artists": [
+          "徵羽摩柯",
+          "冬至"
+        ],
+        "album": "最终祈愿（feat.徵羽摩柯）",
+        "durationMs": 262323,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2621642753,
+        "name": "最终祈愿",
+        "artists": [
+          "砚书",
+          "简兮兮",
+          "池未请早睡",
+          "木白",
+          "盛姝",
+          "不唱愁"
+        ],
+        "album": "最终祈愿",
+        "durationMs": 255641,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2014561138,
+        "name": "最终祈愿",
+        "artists": [
+          "黎言"
+        ],
+        "album": "2023翻唱集",
+        "durationMs": 259537,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3319467653,
+        "name": "最终祈愿",
+        "artists": [
+          "犬飼アキ"
+        ],
+        "album": "这小炒你就吃吧",
+        "durationMs": 57777,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2018355295,
+        "name": "最终祈愿（cover.五维介质-星尘infinity）",
+        "artists": [
+          "梦爻"
+        ],
+        "album": "五维介质",
+        "durationMs": 259728,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 2115122335,
+        "name": "【夢ノ結唱 ROSE】最终祈愿【Synthesizer V Cover】",
+        "artists": [
+          "naniP"
+        ],
+        "album": "naniP的翻调",
+        "durationMs": 260719,
+        "titleScore": 0,
+        "artistMatch": false,
+        "score": 0
+      }
+    ],
+    "workQuery": {
+      "song_id": 146,
+      "song_name": "最终祈愿",
+      "show_as_song_name": "",
+      "display_song_name": "（区）最终祈愿",
+      "artist": "平行四界Quadimension、星尘",
+      "artist_search": "平行四界Quadimension、星尘",
+      "feat_artist": "",
+      "remark": "",
+      "tone": "",
+      "language": "中文",
+      "type": "中V",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=7",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-09-08",
+      "row_key": "（区）最终祈愿"
+    },
+    "sourceId": 1927889265,
+    "sourcePath": "sources/1927889265.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1927889265",
+    "selected": {
+      "id": 1927889265,
+      "name": "最终祈愿",
+      "artists": [
+        "平行四界Quadimension",
+        "星尘"
+      ],
+      "album": "最终祈愿",
+      "durationMs": 259639,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 49
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-146-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 258.949,
+    "sourceFirstLine": {
+      "t": 1.454,
+      "text": "虚无洁白"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 24.12,
+      "endSeconds": 25.52,
+      "similarity": 0.0,
+      "recognizedText": "作",
+      "meanProbability": 0.004,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

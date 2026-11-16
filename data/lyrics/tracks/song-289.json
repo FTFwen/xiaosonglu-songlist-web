@@ -1,0 +1,183 @@
+{
+  "schemaVersion": 1,
+  "key": "song-289",
+  "songId": 289,
+  "songName": "月が綺麗ねと言われたい!（第二遍）",
+  "rowKey": "月が綺麗ねと言われたい!（第二遍）",
+  "displaySongName": "月が綺麗ねと言われたい!",
+  "artist": "柿崎ユウタ",
+  "language": "日文",
+  "derivative": false,
+  "edition": "第二遍",
+  "remark": "",
+  "audio": {
+    "url": "assets/audio/song_286.m4a?v=0f5dae858673",
+    "sha256": "0f5dae8586739cc6d456e9df797d08265336c7982e8185fd6f4661b2d7e4912e"
+  },
+  "retrievedAt": "2026-11-16T04:06:17.849Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E6%9C%88%E3%81%8C%E7%B6%BA%E9%BA%97%E3%81%AD%E3%81%A8%E8%A8%80%E3%82%8F%E3%82%8C%E3%81%9F%E3%81%84!&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E6%9C%88%E3%81%8C%E7%B6%BA%E9%BA%97%E3%81%AD%E3%81%A8%E8%A8%80%E3%82%8F%E3%82%8C%E3%81%9F%E3%81%84!%20%E6%9F%BF%E5%B4%8E%E3%83%A6%E3%82%A6%E3%82%BF&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 3341026792,
+        "name": "月が綺麗ねと言われたい！",
+        "artists": [
+          "柿崎ユウタ"
+        ],
+        "album": "月が綺麗ねと言われたい！",
+        "durationMs": 147187,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 3339128120,
+        "name": "月が綺麗ねと言われたい！",
+        "artists": [
+          "柿崎ユウタ"
+        ],
+        "album": "月が綺麗ねと言われたい！",
+        "durationMs": 147187,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 3419472359,
+        "name": "月が綺麗ねと言われたい！",
+        "artists": [
+          "Sawako碎花"
+        ],
+        "album": "月が綺麗ねと言われたい！",
+        "durationMs": 147187,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3392145285,
+        "name": "月が綺麗ねと言われたい！",
+        "artists": [
+          "ふぉるて"
+        ],
+        "album": "月が綺麗ねと言われたい！",
+        "durationMs": 148728,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3356967681,
+        "name": "月が綺麗ねと言われたい！",
+        "artists": [
+          "鱼子p"
+        ],
+        "album": "月が綺麗ねと言われたい！",
+        "durationMs": 147187,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3373832339,
+        "name": "月が綺麗ねと言われたい！",
+        "artists": [
+          "uwu"
+        ],
+        "album": "月が綺麗ねと言われたい！",
+        "durationMs": 147200,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3347471904,
+        "name": "月が綺麗ねと言われたい！",
+        "artists": [
+          "橘子汽水泡饭"
+        ],
+        "album": "甜甜的女声44",
+        "durationMs": 146784,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3372516144,
+        "name": "月が綺麗ねと言われたい！",
+        "artists": [
+          "今歌奏井"
+        ],
+        "album": "今歌奏井2026",
+        "durationMs": 147187,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 289,
+      "song_name": "月が綺麗ねと言われたい!",
+      "show_as_song_name": "",
+      "display_song_name": "月が綺麗ねと言われたい!",
+      "artist": "柿崎ユウタ",
+      "artist_search": "柿崎ユウタ",
+      "feat_artist": "",
+      "remark": "",
+      "tone": "",
+      "language": "日文",
+      "type": "J-Pop",
+      "identification": "",
+      "display_version": "第二遍",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1Pxa269EiF/?p=7",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切复核",
+      "last_sing_at": "2026-10-02",
+      "row_key": "月が綺麗ねと言われたい!（第二遍）"
+    },
+    "sourceId": 3341026792,
+    "sourcePath": "sources/3341026792.json",
+    "sourceUrl": "https://music.163.com/#/song?id=3341026792",
+    "selected": {
+      "id": 3341026792,
+      "name": "月が綺麗ねと言われたい！",
+      "artists": [
+        "柿崎ユウタ"
+      ],
+      "album": "月が綺麗ねと言われたい！",
+      "durationMs": 147187,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 45
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-289-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 147.029,
+    "sourceFirstLine": {
+      "t": 12.95,
+      "text": "センチメンタル　嫌になる"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 13.28,
+      "endSeconds": 14.42,
+      "similarity": 0.625,
+      "recognizedText": "ンチメタル",
+      "meanProbability": 0.804,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "ja",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

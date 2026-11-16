@@ -1,0 +1,157 @@
+{
+  "schemaVersion": 1,
+  "key": "song-203",
+  "songId": 203,
+  "songName": "木兰行",
+  "displaySongName": "木兰行",
+  "artist": "忘川风华录 / 苍穹",
+  "language": "中文",
+  "derivative": false,
+  "audio": {
+    "url": "assets/audio/song_202.m4a?v=3a3d6dbc17d9",
+    "sha256": "3a3d6dbc17d910c2a6c51593b98b3a6ab7ffae9fdd314c75c776f9e04556525d"
+  },
+  "retrievedAt": "2026-11-16T03:58:41.350Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E6%9C%A8%E5%85%B0%E8%A1%8C&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1436879629,
+        "name": "木兰行",
+        "artists": [
+          "忘川风华录",
+          "苍穹"
+        ],
+        "album": "木兰行",
+        "durationMs": 207999,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1437881558,
+        "name": "木兰行",
+        "artists": [
+          "祖娅纳惜"
+        ],
+        "album": "木兰行",
+        "durationMs": 206537,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1839560526,
+        "name": "木兰行",
+        "artists": [
+          "吉克隽逸"
+        ],
+        "album": "木兰行",
+        "durationMs": 212500,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1436764996,
+        "name": "木兰行",
+        "artists": [
+          "茶了了"
+        ],
+        "album": "木兰行",
+        "durationMs": 209178,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1437030556,
+        "name": "木兰行",
+        "artists": [
+          "哦漏"
+        ],
+        "album": "木兰行",
+        "durationMs": 208039,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1808534497,
+        "name": "木兰行",
+        "artists": [
+          "漆柚"
+        ],
+        "album": "【漆柚】木兰行不行？行！【忘川风华录/原key+1】",
+        "durationMs": 209197,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1823324957,
+        "name": "木兰行",
+        "artists": [
+          "Assen捷",
+          "双笙（陈元汐）"
+        ],
+        "album": "木兰行",
+        "durationMs": 225930,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3385454115,
+        "name": "木兰行",
+        "artists": [
+          "龙淋雨"
+        ],
+        "album": "森森的战锤音乐2馆",
+        "durationMs": 194624,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "sourceId": 1436879629,
+    "sourcePath": "sources/1436879629.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1436879629",
+    "selected": {
+      "id": 1436879629,
+      "name": "木兰行",
+      "artists": [
+        "忘川风华录",
+        "苍穹"
+      ],
+      "album": "木兰行",
+      "durationMs": 207999,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 32
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-203-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 211.477,
+    "sourceFirstLine": {
+      "t": 3,
+      "text": "二胡 : 二胡妹"
+    },
+    "anchorCandidate": null,
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  },
+  "rowKey": "木兰行",
+  "edition": "",
+  "remark": "UP 心灵火Flame《20260919 歌切》P5；忘川风华录企划、苍穹演唱（骆栖淮作词、塔库作曲，2020-04-01 投稿，神话曲）"
+}

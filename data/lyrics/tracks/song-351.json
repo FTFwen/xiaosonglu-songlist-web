@@ -1,0 +1,183 @@
+{
+  "schemaVersion": 1,
+  "key": "song-351",
+  "songId": 351,
+  "songName": "祝福",
+  "rowKey": "祝福",
+  "displaySongName": "祝福",
+  "artist": "YOASOBI",
+  "language": "日文",
+  "derivative": false,
+  "edition": "",
+  "remark": "",
+  "audio": {
+    "url": "assets/audio/song_350.m4a?v=ac17c955841d",
+    "sha256": "ac17c955841dec0de522664af161754e21f103ca340857c309bbfb17be44bce9"
+  },
+  "retrievedAt": "2026-11-16T04:07:22.146Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E7%A5%9D%E7%A6%8F&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E7%A5%9D%E7%A6%8F%20YOASOBI&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1983292457,
+        "name": "祝福",
+        "artists": [
+          "YOASOBI"
+        ],
+        "album": "祝福",
+        "durationMs": 196235,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2083872223,
+        "name": "祝福",
+        "artists": [
+          "YOASOBI"
+        ],
+        "album": "THE BOOK 3",
+        "durationMs": 192400,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 318648,
+        "name": "祝福",
+        "artists": [
+          "叶蒨文"
+        ],
+        "album": "祝福",
+        "durationMs": 240883,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 190328,
+        "name": "祝福",
+        "artists": [
+          "张学友"
+        ],
+        "album": "祝福",
+        "durationMs": 272000,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1316574767,
+        "name": "祝福",
+        "artists": [
+          "张学友"
+        ],
+        "album": "张学友4合1珍藏集",
+        "durationMs": 271493,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 406089329,
+        "name": "祝福",
+        "artists": [
+          "叶蒨文"
+        ],
+        "album": "华纳我爱经典系列-叶倩文",
+        "durationMs": 240883,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 153294,
+        "name": "祝福",
+        "artists": [
+          "谭咏麟"
+        ],
+        "album": "我们一起唱过的歌",
+        "durationMs": 215852,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 5282893,
+        "name": "祝福",
+        "artists": [
+          "叶蒨文"
+        ],
+        "album": "永远新一天",
+        "durationMs": 238906,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 351,
+      "song_name": "祝福",
+      "show_as_song_name": "",
+      "display_song_name": "祝福",
+      "artist": "YOASOBI",
+      "artist_search": "YOASOBI",
+      "feat_artist": "",
+      "remark": "",
+      "tone": "",
+      "language": "日文",
+      "type": "J-Pop、动画",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1naxj62Epw/?p=23",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-27",
+      "row_key": "祝福"
+    },
+    "sourceId": 1983292457,
+    "sourcePath": "sources/1983292457.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1983292457",
+    "selected": {
+      "id": 1983292457,
+      "name": "祝福",
+      "artists": [
+        "YOASOBI"
+      ],
+      "album": "祝福",
+      "durationMs": 196235,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 52
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-351-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 89.92,
+    "sourceFirstLine": {
+      "t": 1,
+      "text": "遥か遠くに浮かぶ星を"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 5.5,
+      "endSeconds": 7.08,
+      "similarity": 0.26666666666666666,
+      "recognizedText": "く】【君の選ぶ",
+      "meanProbability": 0.774,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "ja",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

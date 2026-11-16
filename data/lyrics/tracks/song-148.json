@@ -1,0 +1,161 @@
+{
+  "schemaVersion": 1,
+  "key": "song-148",
+  "songId": 148,
+  "songName": "给自己的情书",
+  "displaySongName": "给自己的情书",
+  "artist": "王菲",
+  "language": "中文",
+  "derivative": false,
+  "audio": {
+    "url": "assets/audio/song_147.m4a?v=a5b247293673",
+    "sha256": "a5b247293673074f7b67fd0060beca38dca602c8972f720eae6c71fb61a36013"
+  },
+  "retrievedAt": "2026-11-16T03:58:28.595Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E7%BB%99%E8%87%AA%E5%B7%B1%E7%9A%84%E6%83%85%E4%B9%A6&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 299604,
+        "name": "给自己的情书",
+        "artists": [
+          "王菲"
+        ],
+        "album": "寓言",
+        "durationMs": 267600,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 299138,
+        "name": "给自己的情书",
+        "artists": [
+          "王菲"
+        ],
+        "album": "情·菲·得意",
+        "durationMs": 269466,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 113900,
+        "name": "给自己的情书",
+        "artists": [
+          "李克勤"
+        ],
+        "album": "大乐队",
+        "durationMs": 276160,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1465547886,
+        "name": "给自己的情书",
+        "artists": [
+          "L1IN"
+        ],
+        "album": "F A Y E",
+        "durationMs": 264907,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3411715478,
+        "name": "给自己的情书",
+        "artists": [
+          "雷狗子"
+        ],
+        "album": "百变狗子",
+        "durationMs": 184728,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 89168,
+        "name": "给自己的情书",
+        "artists": [
+          "甘仕良"
+        ],
+        "album": "钢琴恋曲101",
+        "durationMs": 226278,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3412585631,
+        "name": "给自己的情书",
+        "artists": [
+          "沈青青"
+        ],
+        "album": "",
+        "durationMs": 213275,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1316372317,
+        "name": "给自己的情书",
+        "artists": [
+          "陈洁仪"
+        ],
+        "album": "A Time For Everything",
+        "durationMs": 306512,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "sourceId": 299604,
+    "sourcePath": "sources/299604.json",
+    "sourceUrl": "https://music.163.com/#/song?id=299604",
+    "selected": {
+      "id": 299604,
+      "name": "给自己的情书",
+      "artists": [
+        "王菲"
+      ],
+      "album": "寓言",
+      "durationMs": 267600,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 110
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-148-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 358.33,
+    "sourceFirstLine": {
+      "t": 12.31,
+      "text": "请"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 24.28,
+      "endSeconds": 25.68,
+      "similarity": 0.0,
+      "recognizedText": "作",
+      "meanProbability": 0.004,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  },
+  "rowKey": "给自己的情书",
+  "edition": "",
+  "remark": ""
+}

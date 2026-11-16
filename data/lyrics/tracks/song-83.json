@@ -1,0 +1,192 @@
+{
+  "schemaVersion": 1,
+  "key": "song-83",
+  "songId": 83,
+  "songName": "アイドル",
+  "rowKey": "アイドル",
+  "displaySongName": "アイドル",
+  "artist": "YOASOBI",
+  "language": "日文",
+  "derivative": false,
+  "edition": "",
+  "remark": "来自 2026-08-20 偶像歌回。经弹幕歌词交叉验证 + 歌切视频《【小松绿Viridis/歌回】20260820-偶像歌回？欸》分P第13章节确认曲目；时间按歌切分P累计估算，待回放复核。歌手信息来自网易云音乐/萌娘百科检索。",
+  "audio": {
+    "url": "assets/audio/song_82.m4a?v=90153558364d",
+    "sha256": "90153558364d7f2cf1cfdae5fbc153f8f5c329b744f7a275a96e08c30b180825"
+  },
+  "retrievedAt": "2026-11-16T04:03:54.090Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E3%82%A2%E3%82%A4%E3%83%89%E3%83%AB&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E3%82%A2%E3%82%A4%E3%83%89%E3%83%AB%20YOASOBI&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 2034742057,
+        "name": "アイドル",
+        "artists": [
+          "YOASOBI"
+        ],
+        "album": "アイドル",
+        "durationMs": 213233,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2083870325,
+        "name": "アイドル",
+        "artists": [
+          "YOASOBI"
+        ],
+        "album": "THE BOOK 3",
+        "durationMs": 211733,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2051948570,
+        "name": "アイドル",
+        "artists": [
+          "KyotoJam",
+          "幾田りら"
+        ],
+        "album": "アイドル",
+        "durationMs": 290158,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2044902366,
+        "name": "アイドル",
+        "artists": [
+          "PromiSe彭S"
+        ],
+        "album": "アイドル（Cover：YOASOBI）",
+        "durationMs": 214363,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2039423703,
+        "name": "アイドル",
+        "artists": [
+          "冰山",
+          "初音ミク"
+        ],
+        "album": "アイドル",
+        "durationMs": 213233,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3453846403,
+        "name": "アイドル (YOASOBI 5th ANNIVERSARY DOME LIVE 2024 “超現実”)",
+        "artists": [
+          "YOASOBI"
+        ],
+        "album": "YOASOBI 5th ANNIVERSARY DOME LIVE 2024 “超現実” at TOKYO DOME",
+        "durationMs": 287966,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      },
+      {
+        "id": 2059786617,
+        "name": "アイドル（七人合唱）",
+        "artists": [
+          "失心少年",
+          "YOASOBI.",
+          "HIMEHINA",
+          "朔炭パリカ",
+          "セラフィー",
+          "春歌みこと",
+          "un:c"
+        ],
+        "album": "偶像（七人合唱）",
+        "durationMs": 211638,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      },
+      {
+        "id": 3437294536,
+        "name": "アイドル (feat. 初音ミク)",
+        "artists": [
+          "アーリーバード研究所",
+          "初音ミク"
+        ],
+        "album": "アイドル (feat. 初音ミク)",
+        "durationMs": 244800,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      }
+    ],
+    "workQuery": {
+      "song_id": 83,
+      "song_name": "アイドル",
+      "show_as_song_name": "",
+      "display_song_name": "アイドル",
+      "artist": "YOASOBI",
+      "artist_search": "YOASOBI アイドル 我推的孩子",
+      "feat_artist": "",
+      "remark": "来自 2026-08-20 偶像歌回。经弹幕歌词交叉验证 + 歌切视频《【小松绿Viridis/歌回】20260820-偶像歌回？欸》分P第13章节确认曲目；时间按歌切分P累计估算，待回放复核。歌手信息来自网易云音乐/萌娘百科检索。",
+      "tone": "",
+      "language": "日文",
+      "type": "J-Pop、动画",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1WS8c6XE9w?p=13",
+      "sing_count": 1,
+      "status_labels": "歌回、自动识别待人工复核",
+      "last_sing_at": "2026-08-20",
+      "row_key": "アイドル"
+    },
+    "sourceId": 2034742057,
+    "sourcePath": "sources/2034742057.json",
+    "sourceUrl": "https://music.163.com/#/song?id=2034742057",
+    "selected": {
+      "id": 2034742057,
+      "name": "アイドル",
+      "artists": [
+        "YOASOBI"
+      ],
+      "album": "アイドル",
+      "durationMs": 213233,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 80
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-83-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 255.025,
+    "sourceFirstLine": {
+      "t": 0.273,
+      "text": "無敵の笑顔で荒らすメディア"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 2.06,
+      "endSeconds": 4.66,
+      "similarity": 0.3,
+      "recognizedText": "の人が多いです。",
+      "meanProbability": 0.199,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "ja",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

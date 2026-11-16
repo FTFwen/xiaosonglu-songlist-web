@@ -1,0 +1,171 @@
+{
+  "schemaVersion": 1,
+  "key": "derivative-1106",
+  "songId": -1106,
+  "songName": "小松绿-不问天",
+  "rowKey": "小松绿-不问天",
+  "displaySongName": "不问天",
+  "artist": "白烁",
+  "language": "",
+  "derivative": true,
+  "edition": "",
+  "remark": "",
+  "audio": {
+    "url": "assets/derivative/buwentian.mp3?v=ba84af9fedbd",
+    "sha256": "ba84af9fedbd3a4cc22ef6677fb0517920b2da4daa204d5338e7e03ece46a462"
+  },
+  "retrievedAt": "2026-11-16T04:08:40.745Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E4%B8%8D%E9%97%AE%E5%A4%A9&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E4%B8%8D%E9%97%AE%E5%A4%A9%20%E8%AF%B4%E8%AF%B4Crystal&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1824454149,
+        "name": "不问天",
+        "artists": [
+          "说说Crystal"
+        ],
+        "album": "2021哔哩哔哩拜年纪",
+        "durationMs": 256000,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1905945600,
+        "name": "不问天",
+        "artists": [
+          "2233"
+        ],
+        "album": "BILIBILI MACRO LINK - Visual Release 2021",
+        "durationMs": 254444,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2024069500,
+        "name": "不问天",
+        "artists": [
+          "蛋哥"
+        ],
+        "album": "不谓侠",
+        "durationMs": 256052,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2152154492,
+        "name": "不问天",
+        "artists": [
+          "卖艺兔Art"
+        ],
+        "album": "不问天",
+        "durationMs": 256764,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1821308261,
+        "name": "不问天（翻自 说说Crystal）",
+        "artists": [
+          "兰音Reine"
+        ],
+        "album": "不问天",
+        "durationMs": 256077,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 1822204582,
+        "name": "不问天（翻自 说说）",
+        "artists": [
+          "萧忆情Alex"
+        ],
+        "album": "不问天",
+        "durationMs": 256052,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 1821539081,
+        "name": "不问天（粤语版）（翻自 说说Crystal）",
+        "artists": [
+          "雪霏岚岚"
+        ],
+        "album": "不问天粤语翻唱",
+        "durationMs": 257042,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 1820050368,
+        "name": "不问天（翻自 说说）",
+        "artists": [
+          "茶了了"
+        ],
+        "album": "不问天",
+        "durationMs": 256348,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      }
+    ],
+    "workQuery": {
+      "song_id": -1106,
+      "song_name": "不问天",
+      "display_song_name": "不问天",
+      "artist": "说说Crystal",
+      "language": "",
+      "audio": "assets/derivative/buwentian.mp3?v=ba84af9fedbd",
+      "derivative": true
+    },
+    "sourceId": 1824454149,
+    "sourcePath": "sources/1824454149.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1824454149",
+    "selected": {
+      "id": 1824454149,
+      "name": "不问天",
+      "artists": [
+        "说说Crystal"
+      ],
+      "album": "2021哔哩哔哩拜年纪",
+      "durationMs": 256000,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 42
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/derivative-1106-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 162.194,
+    "sourceFirstLine": {
+      "t": 20.386,
+      "text": "今宵明月不是上选 只合陪我轻轻谈"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 37.28,
+      "endSeconds": 37.66,
+      "similarity": 0.125,
+      "recognizedText": "上",
+      "meanProbability": 0.188,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

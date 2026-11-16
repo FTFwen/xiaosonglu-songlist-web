@@ -1,0 +1,92 @@
+{
+  "audioSha256": "af9578a74b03d183b0664e63f2a6dc4bf4c96c37940fecae68f2cfb8654c76e5",
+  "model": "whisper-base",
+  "start": 0,
+  "end": 35,
+  "result": {
+    "text": "初めてファントどこだら",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 3000,
+        "start": 31.72,
+        "end": 34.64,
+        "text": "初めてファントどこだら",
+        "tokens": [
+          50364,
+          28727,
+          38975,
+          17320,
+          36151,
+          29971,
+          7594,
+          3503,
+          5362,
+          5154,
+          50614
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.8696413040161133,
+        "compression_ratio": 0.75,
+        "no_speech_prob": 0.43858063220977783,
+        "words": [
+          {
+            "word": "初",
+            "start": 31.72,
+            "end": 32.32,
+            "probability": 0.3006044626235962
+          },
+          {
+            "word": "めて",
+            "start": 32.32,
+            "end": 32.76,
+            "probability": 0.9991293549537659
+          },
+          {
+            "word": "フ",
+            "start": 32.76,
+            "end": 33.18,
+            "probability": 0.0893445611000061
+          },
+          {
+            "word": "ァ",
+            "start": 33.18,
+            "end": 33.36,
+            "probability": 0.9719021320343018
+          },
+          {
+            "word": "ント",
+            "start": 33.36,
+            "end": 33.68,
+            "probability": 0.7981041073799133
+          },
+          {
+            "word": "ど",
+            "start": 33.68,
+            "end": 33.92,
+            "probability": 0.6704065203666687
+          },
+          {
+            "word": "こ",
+            "start": 33.92,
+            "end": 34.1,
+            "probability": 0.9979566335678101
+          },
+          {
+            "word": "だ",
+            "start": 34.1,
+            "end": 34.4,
+            "probability": 0.8071218132972717
+          },
+          {
+            "word": "ら",
+            "start": 34.4,
+            "end": 34.64,
+            "probability": 0.3461121916770935
+          }
+        ]
+      }
+    ],
+    "language": "ja"
+  }
+}

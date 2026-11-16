@@ -1,0 +1,184 @@
+{
+  "schemaVersion": 1,
+  "key": "song-334",
+  "songId": 334,
+  "songName": "TIAN TIAN",
+  "rowKey": "TIAN TIAN",
+  "displaySongName": "TIAN TIAN",
+  "artist": "Mili",
+  "language": "中文/英文",
+  "derivative": false,
+  "edition": "",
+  "remark": "Mintolu 单曲歌切 BV1Kbx36VExF，desc 标注「绿神藏了手绿式英语 20261027 混乱水果小杂谈」。曲目为 Mili 2025-06-02 发行的《边狱巴士公司》（Limbus Company）第八章主题曲，中英混唱（音乐平台歌词含「今天明天期待每天」与英文主歌）。顺序按歌切上传顺序推定。",
+  "audio": {
+    "url": "assets/audio/song_333.m4a?v=d8d05a6e8f5b",
+    "sha256": "d8d05a6e8f5bcd3419ae8e34326a2f890fe100691bf9bc1a3306932fdae5d15e"
+  },
+  "retrievedAt": "2026-11-16T04:07:09.044Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=TIAN%20TIAN&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=TIAN%20TIAN%20Mili&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 2707332868,
+        "name": "TIAN TIAN",
+        "artists": [
+          "Mili"
+        ],
+        "album": "TIAN TIAN",
+        "durationMs": 248583,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2047926449,
+        "name": "Tiantian",
+        "artists": [
+          "Tiantian"
+        ],
+        "album": "Tiantian",
+        "durationMs": 177377,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2720984151,
+        "name": "TIAN TIAN（cover Mili）",
+        "artists": [
+          "栗七浔"
+        ],
+        "album": "TIAN TIAN（cover Mili）",
+        "durationMs": 250000,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 1888390861,
+        "name": "梨涡",
+        "artists": [
+          "Milie"
+        ],
+        "album": "梨涡",
+        "durationMs": 258914,
+        "titleScore": 0,
+        "artistMatch": true,
+        "score": 0.2
+      },
+      {
+        "id": 3342981041,
+        "name": "铁花飞",
+        "artists": [
+          "Mili",
+          "塞壬唱片-MSR"
+        ],
+        "album": "铁花飞",
+        "durationMs": 242613,
+        "titleScore": 0,
+        "artistMatch": true,
+        "score": 0.2
+      },
+      {
+        "id": 3442131349,
+        "name": "Rendezvous",
+        "artists": [
+          "Mili"
+        ],
+        "album": "Rendezvous",
+        "durationMs": 208533,
+        "titleScore": 0,
+        "artistMatch": true,
+        "score": 0.2
+      },
+      {
+        "id": 1918603216,
+        "name": "六天",
+        "artists": [
+          "Milie"
+        ],
+        "album": "六天",
+        "durationMs": 221123,
+        "titleScore": 0,
+        "artistMatch": true,
+        "score": 0.2
+      },
+      {
+        "id": 2109974469,
+        "name": "旧天堂",
+        "artists": [
+          "Milie"
+        ],
+        "album": "旧天堂",
+        "durationMs": 247619,
+        "titleScore": 0,
+        "artistMatch": true,
+        "score": 0.2
+      }
+    ],
+    "workQuery": {
+      "song_id": 334,
+      "song_name": "TIAN TIAN",
+      "show_as_song_name": "",
+      "display_song_name": "TIAN TIAN",
+      "artist": "Mili",
+      "artist_search": "Mili",
+      "feat_artist": "",
+      "remark": "Mintolu 单曲歌切 BV1Kbx36VExF，desc 标注「绿神藏了手绿式英语 20261027 混乱水果小杂谈」。曲目为 Mili 2025-06-02 发行的《边狱巴士公司》（Limbus Company）第八章主题曲，中英混唱（音乐平台歌词含「今天明天期待每天」与英文主歌）。顺序按歌切上传顺序推定。",
+      "tone": "",
+      "language": "中文/英文",
+      "type": "游戏（原曲Mili）、J-Pop",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1Kbx36VExF/",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切直补",
+      "last_sing_at": "2026-10-27",
+      "row_key": "TIAN TIAN"
+    },
+    "sourceId": 2707332868,
+    "sourcePath": "sources/2707332868.json",
+    "sourceUrl": "https://music.163.com/#/song?id=2707332868",
+    "selected": {
+      "id": 2707332868,
+      "name": "TIAN TIAN",
+      "artists": [
+        "Mili"
+      ],
+      "album": "TIAN TIAN",
+      "durationMs": 248583,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 86
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-334-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 249.6,
+    "sourceFirstLine": {
+      "t": 0.953,
+      "text": "今天"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 20.68,
+      "endSeconds": 21.02,
+      "similarity": 0.0,
+      "recognizedText": "作",
+      "meanProbability": 0.004,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

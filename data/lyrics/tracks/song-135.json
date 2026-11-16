@@ -1,0 +1,183 @@
+{
+  "schemaVersion": 1,
+  "key": "song-135",
+  "songId": 135,
+  "songName": "March of Time",
+  "rowKey": "March of Time",
+  "displaySongName": "March of Time",
+  "artist": "Aimer",
+  "language": "日文",
+  "derivative": false,
+  "edition": "",
+  "remark": "2026-09-03「也许康复的随便唱唱」21点场；歌切合集【桐人今天睡大觉】【小松绿Viridis】随便唱唱的歌回 歌切合集 2026.09.03 分P16（01:48）。Aimer《BEST SELECTION \"blanc\"》(2017) 收录。",
+  "audio": {
+    "url": "assets/audio/song_134.m4a?v=e98c942e7e57",
+    "sha256": "e98c942e7e57bfd8eb0da8f9f72be5befb493dd6cd52221ec91747bcfa2d7ea7"
+  },
+  "retrievedAt": "2026-11-16T04:03:47.691Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=March%20of%20Time&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=March%20of%20Time%20Aimer&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 476081906,
+        "name": "March of Time",
+        "artists": [
+          "Aimer"
+        ],
+        "album": "BEST SELECTION \"blanc\"",
+        "durationMs": 296600,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 28385983,
+        "name": "March Of Time",
+        "artists": [
+          "Boogie Belgique"
+        ],
+        "album": "Nightwalker Vol. II",
+        "durationMs": 265000,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1455687236,
+        "name": "March of Time",
+        "artists": [
+          "Helloween"
+        ],
+        "album": "Keeper of the Seven Keys (Pt. 2 / Expanded Edition)",
+        "durationMs": 315480,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2117207333,
+        "name": "March of Time",
+        "artists": [
+          "Boogie Belgique"
+        ],
+        "album": "Nightwalker Vol. 2",
+        "durationMs": 265714,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1425435,
+        "name": "March of Time",
+        "artists": [
+          "Helloween"
+        ],
+        "album": "Keeper of the Seven Keys, Pt. 2",
+        "durationMs": 315920,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 566514050,
+        "name": "March Of Time",
+        "artists": [
+          "Helloween"
+        ],
+        "album": "Keeper Of The Seven Keys Part II",
+        "durationMs": 315920,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 18188220,
+        "name": "March Of Time",
+        "artists": [
+          "Helloween"
+        ],
+        "album": "Keeper Of The Seven Keys (Deluxe Edition)",
+        "durationMs": 315453,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 567160813,
+        "name": "March of Time",
+        "artists": [
+          "Helloween"
+        ],
+        "album": "Keeper of the Seven Keys, Pts. I & II",
+        "durationMs": 315453,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 135,
+      "song_name": "March of Time",
+      "show_as_song_name": "",
+      "display_song_name": "March of Time",
+      "artist": "Aimer",
+      "artist_search": "March of Time Aimer",
+      "feat_artist": "",
+      "remark": "2026-09-03「也许康复的随便唱唱」21点场；歌切合集【桐人今天睡大觉】【小松绿Viridis】随便唱唱的歌回 歌切合集 2026.09.03 分P16（01:48）。Aimer《BEST SELECTION \"blanc\"》(2017) 收录。",
+      "tone": "",
+      "language": "日文",
+      "type": "J-Pop",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=16",
+      "sing_count": 1,
+      "status_labels": "歌回",
+      "last_sing_at": "2026-09-03",
+      "row_key": "March of Time"
+    },
+    "sourceId": 476081906,
+    "sourcePath": "sources/476081906.json",
+    "sourceUrl": "https://music.163.com/#/song?id=476081906",
+    "selected": {
+      "id": 476081906,
+      "name": "March of Time",
+      "artists": [
+        "Aimer"
+      ],
+      "album": "BEST SELECTION \"blanc\"",
+      "durationMs": 296600,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 48
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-135-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 103.851,
+    "sourceFirstLine": {
+      "t": 12.82,
+      "text": "それはいつもの帰り道"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 8.86,
+      "endSeconds": 9.38,
+      "similarity": 0.375,
+      "recognizedText": "は見ているの",
+      "meanProbability": 0.218,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "ja",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

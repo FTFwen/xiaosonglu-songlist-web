@@ -1,0 +1,169 @@
+{
+  "schemaVersion": 1,
+  "key": "song-233",
+  "songId": 233,
+  "songName": "白石溪",
+  "displaySongName": "白石溪",
+  "artist": "乐正绫, Soda纯白, 洛天依Official",
+  "language": "中文",
+  "derivative": false,
+  "audio": {
+    "url": "assets/audio/song_232.m4a?v=a64f26409363",
+    "sha256": "a64f2640936362fd49eb846754b496acacaa09053585fe2bcb536d9232462ac5"
+  },
+  "retrievedAt": "2026-11-16T03:59:03.425Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E7%99%BD%E7%9F%B3%E6%BA%AA&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 415086297,
+        "name": "白石溪",
+        "artists": [
+          "乐正绫",
+          "Soda纯白",
+          "洛天依Official"
+        ],
+        "album": "中华少女Project (Deluxe Edition)",
+        "durationMs": 333800,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 415792298,
+        "name": "白石溪",
+        "artists": [
+          "Soda纯白"
+        ],
+        "album": "热门华语283",
+        "durationMs": 333800,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2070333038,
+        "name": "白石溪",
+        "artists": [
+          "洛羽绫Aya Hata",
+          "洛天依",
+          "乐正绫"
+        ],
+        "album": "白石溪",
+        "durationMs": 329903,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1409137973,
+        "name": "白石溪",
+        "artists": [
+          "洛天依Official",
+          "乐正绫"
+        ],
+        "album": "合集1",
+        "durationMs": 333800,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 421885393,
+        "name": "白石溪",
+        "artists": [
+          "一抹无尘"
+        ],
+        "album": "翻唱集 · 音尘",
+        "durationMs": 330347,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1379231310,
+        "name": "白石溪",
+        "artists": [
+          "沉虞CHENY"
+        ],
+        "album": "白石溪",
+        "durationMs": 331154,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 508144409,
+        "name": "白石溪",
+        "artists": [
+          "德芙",
+          "明熹Milo"
+        ],
+        "album": "白石溪",
+        "durationMs": 331572,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2750066226,
+        "name": "白石溪",
+        "artists": [
+          "唱歌废物"
+        ],
+        "album": "白石溪",
+        "durationMs": 331781,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "sourceId": 415086297,
+    "sourcePath": "sources/415086297.json",
+    "sourceUrl": "https://music.163.com/#/song?id=415086297",
+    "selected": {
+      "id": 415086297,
+      "name": "白石溪",
+      "artists": [
+        "乐正绫",
+        "Soda纯白",
+        "洛天依Official"
+      ],
+      "album": "中华少女Project (Deluxe Edition)",
+      "durationMs": 333800,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 44
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-233-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 331.093,
+    "sourceFirstLine": {
+      "t": 47.375,
+      "text": "微露点滴 沾衿落袖"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 0.0,
+      "endSeconds": 0.48,
+      "similarity": 0.0,
+      "recognizedText": "我在",
+      "meanProbability": 0.255,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  },
+  "rowKey": "白石溪",
+  "edition": "",
+  "remark": ""
+}

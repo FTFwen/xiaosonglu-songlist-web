@@ -1,0 +1,191 @@
+{
+  "schemaVersion": 1,
+  "key": "song-28",
+  "songId": 28,
+  "songName": "月が綺麗ね",
+  "rowKey": "月が綺麗ね",
+  "displaySongName": "月色真美",
+  "artist": "柿崎ユウタ",
+  "language": "日文",
+  "derivative": false,
+  "edition": "",
+  "remark": "标题核心曲名可归一化为“月が綺麗ね”；日期未直写，但与同一批 2026-08-11 歌切候选同网出现，先按 2026-08-11 manual-normalized 收录，备注保留原始花字标题。",
+  "audio": {
+    "url": "assets/audio/song_72.m4a?v=cd283abd4d71",
+    "sha256": "cd283abd4d71769abb86b2de6d7c32207c6a936af0526e4cebd58121aa8dd403"
+  },
+  "retrievedAt": "2026-11-16T04:12:56.747Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E6%9C%88%E3%81%8C%E7%B6%BA%E9%BA%97%E3%81%AD&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E6%9C%88%E3%81%8C%E7%B6%BA%E9%BA%97%E3%81%AD%20%E6%9F%BF%E5%B4%8E%E3%83%A6%E3%82%A6%E3%82%BF&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E6%9C%88%E8%89%B2%E7%9C%9F%E7%BE%8E&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 3341026792,
+        "name": "月が綺麗ねと言われたい！",
+        "artists": [
+          "柿崎ユウタ"
+        ],
+        "album": "月が綺麗ねと言われたい！",
+        "durationMs": 147187,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      },
+      {
+        "id": 3339128120,
+        "name": "月が綺麗ねと言われたい！",
+        "artists": [
+          "柿崎ユウタ"
+        ],
+        "album": "月が綺麗ねと言われたい！",
+        "durationMs": 147187,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      },
+      {
+        "id": 3419830464,
+        "name": "月が綺麗ねと言われたい！ (8bit)",
+        "artists": [
+          "柿崎ユウタ"
+        ],
+        "album": "kakizaki 8bit",
+        "durationMs": 147000,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      },
+      {
+        "id": 3392145285,
+        "name": "月が綺麗ねと言われたい！",
+        "artists": [
+          "ふぉるて"
+        ],
+        "album": "月が綺麗ねと言われたい！",
+        "durationMs": 148728,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 3360385398,
+        "name": "月が綺麗ねと言われたい！(feat.重音テト)",
+        "artists": [
+          "OleneP",
+          "重音テト"
+        ],
+        "album": "月が綺麗ねと言われたい！【重音テト.ver】",
+        "durationMs": 146554,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 3419472359,
+        "name": "月が綺麗ねと言われたい！",
+        "artists": [
+          "Sawako碎花"
+        ],
+        "album": "月が綺麗ねと言われたい！",
+        "durationMs": 147187,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 3430522171,
+        "name": "月が綺麗ねと言われたい！(feat.花隈千冬)",
+        "artists": [
+          "桃",
+          "花隈千冬"
+        ],
+        "album": "花隈千冬",
+        "durationMs": 147498,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 3384145974,
+        "name": "月が綺麗ねと言われたい！中文填词",
+        "artists": [
+          "咕咕札"
+        ],
+        "album": "月が綺麗ねと言われたい！中文填词",
+        "durationMs": 148593,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      }
+    ],
+    "workQuery": {
+      "song_id": 28,
+      "song_name": "月が綺麗ね",
+      "show_as_song_name": "",
+      "display_song_name": "月色真美",
+      "artist": "柿崎ユウタ",
+      "artist_search": "柿崎ユウタ",
+      "feat_artist": "",
+      "remark": "标题核心曲名可归一化为“月が綺麗ね”；日期未直写，但与同一批 2026-08-11 歌切候选同网出现，先按 2026-08-11 manual-normalized 收录，备注保留原始花字标题。",
+      "tone": "",
+      "language": "日文",
+      "type": "J-Pop",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1F7uz6qEKN/",
+      "sing_count": 1,
+      "status_labels": "歌切直补、待原始回放定位",
+      "last_sing_at": "2026-08-11",
+      "row_key": "月が綺麗ね"
+    },
+    "sourceId": 3341026792,
+    "sourcePath": "sources/3341026792.json",
+    "sourceUrl": "https://music.163.com/#/song?id=3341026792",
+    "selected": {
+      "id": 3341026792,
+      "name": "月が綺麗ねと言われたい！",
+      "artists": [
+        "柿崎ユウタ"
+      ],
+      "album": "月が綺麗ねと言われたい！",
+      "durationMs": 147187,
+      "titleScore": 0.7,
+      "artistMatch": true,
+      "score": 0.76
+    },
+    "timedLineCount": 48,
+    "review": {
+      "reason": "Keep source ID; expand abbreviated catalog title 月が綺麗ね to canonical 柿崎ユウタ title 月が綺麗ねと言われたい！. Public search confirms artist and 147187ms. Live API returns 48 timestamped rows; sung stamps include colon-fraction syntax [00:12:95], which the current parser already supports. Title-only correction; recording alignment remains unverified.",
+      "evidenceUrl": "https://music.163.com/api/search/get?s=%E6%9C%88%E3%81%8C%E7%B6%BA%E9%BA%97%E3%81%AD%E3%81%A8%E8%A8%80%E3%82%8F%E3%82%8C%E3%81%9F%E3%81%84&type=1&limit=5",
+      "previousSourceId": 3341026792
+    }
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-28-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 150.379,
+    "sourceFirstLine": {
+      "t": 12.95,
+      "text": "センチメンタル　嫌になる"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 30.5,
+      "endSeconds": 32.86,
+      "similarity": 0.23529411764705882,
+      "recognizedText": "嫌い君裏ない",
+      "meanProbability": 0.748,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "ja",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

@@ -1,0 +1,210 @@
+{
+  "schemaVersion": 1,
+  "key": "song-17",
+  "songId": 17,
+  "songName": "Virtual to LIVE",
+  "displaySongName": "Virtual to LIVE",
+  "artist": "にじさんじ",
+  "language": "中文",
+  "derivative": false,
+  "audio": {
+    "url": "assets/audio/song_05.m4a?v=afa0296658c6",
+    "sha256": "afa0296658c6926fb00a46b5861f4330a88de03d120c8b7d0de6474345306916"
+  },
+  "retrievedAt": "2026-11-16T03:57:41.929Z",
+  "match": {
+    "status": "version_review_required",
+    "queries": [
+      "https://music.163.com/api/search/get?s=Virtual%20to%20LIVE&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1928403045,
+        "name": "Virtual to LIVE",
+        "artists": [
+          "にじさんじ"
+        ],
+        "album": "Virtual to LIVE",
+        "durationMs": 268004,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1968529670,
+        "name": "Virtual to LIVE",
+        "artists": [
+          "F未來",
+          "椛空から☆",
+          "绘奈",
+          "冬名",
+          "Shikako",
+          "Sawako碎花",
+          "COKIECOLA",
+          "小虚",
+          "Echoisas",
+          "ylenkun",
+          "喧笑",
+          "Nobu"
+        ],
+        "album": "Virtual to LIVE",
+        "durationMs": 269975,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2086359690,
+        "name": "Virtual to LIVE",
+        "artists": [
+          "诺希shiro",
+          "药药yakuyaku",
+          "金一",
+          "花俞Hana",
+          "芊狸koi",
+          "MIROL",
+          "怕怕",
+          "雪吹yubuki",
+          "神奇森绮",
+          "阿晏Billie",
+          "琼玖不要木瓜"
+        ],
+        "album": "Virtual to LIVE（11人绝美翻唱）",
+        "durationMs": 270769,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2735564679,
+        "name": "Virtual to live",
+        "artists": [
+          "加賀美ハヤト",
+          "葉加瀬冬雪",
+          "夜見れな"
+        ],
+        "album": "Virtual to live",
+        "durationMs": 265218,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2062479782,
+        "name": "Virtual to Live（超绝中文版大合后20p）",
+        "artists": [
+          "陆白芷",
+          "一只桐梦菌",
+          "奕阳九生",
+          "骨杏琉璃ruri",
+          "岚星hazesei",
+          "十二和猫",
+          "季尘 Kuan",
+          "顾依祎",
+          "顾墨雲",
+          "Neroli_12",
+          "-艺落-",
+          "卜古不咕咕",
+          "肉米脆皮酥",
+          "Honey Lolita",
+          "鹤凌云",
+          "妖月",
+          "坤居",
+          "时谨言Tokki",
+          "日敦吞"
+        ],
+        "album": "Virtual to live（超绝中文版40p大合）",
+        "durationMs": 269640,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 2621133050,
+        "name": "Virtual to LIVE（日V/中V合唱版）",
+        "artists": [
+          "hyacinth_P"
+        ],
+        "album": "V家大合唱",
+        "durationMs": 265334,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 3380522337,
+        "name": "Virtual to LIVE (Classical Arrangement)",
+        "artists": [
+          "社築",
+          "ジョー・力一",
+          "町田ちま",
+          "戌亥とこ",
+          "長尾景",
+          "東堂コハク",
+          "伊波ライ",
+          "早乙女ベリー"
+        ],
+        "album": "Virtual to LIVE (Classical Arrangement)",
+        "durationMs": 286750,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 2062472240,
+        "name": "Virtual to Live（超绝中文版大合前20p）",
+        "artists": [
+          "陆白芷",
+          "Zhen凤天",
+          "醒醒",
+          "亦辰Yee",
+          "车厘子小七",
+          "是阿婉不是阿碗",
+          "法提獭Agalta",
+          "白憐仃",
+          "秋秋（别名秋秋球球了）",
+          "猫崎星卷",
+          "阿叩AKoru",
+          "霖77吖",
+          "由莉_re",
+          "金一",
+          "开饭速来",
+          "轮回是酸菜鱼",
+          "星空明矢",
+          "柒月July",
+          "眠だん",
+          "阿衍"
+        ],
+        "album": "Virtual to live（超绝中文版40p大合）",
+        "durationMs": 269640,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      }
+    ],
+    "sourceId": 1928403045,
+    "sourcePath": "sources/1928403045.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1928403045",
+    "selected": {
+      "id": 1928403045,
+      "name": "Virtual to LIVE",
+      "artists": [
+        "にじさんじ"
+      ],
+      "album": "Virtual to LIVE",
+      "durationMs": 268004,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 66
+  },
+  "alignment": {
+    "status": "version_review_required",
+    "offsetSeconds": null,
+    "humanVerified": false
+  },
+  "rowKey": "Virtual to LIVE",
+  "edition": "中文版",
+  "remark": "来自 2026-08-09 第一次歌回回放 p2 中段。主播口头直接提到“该唱 VTL 了”，随后切片转写又命中“总是过度紧张，在镜头前红了脸”“现实总是面对太多无奈和辛酸”“虽然在世界两端，用我的歌声将你胸腔填满”等高辨识度句群，与《Virtual to LIVE》中文版歌词高度重合，可先入库并保留人工复核标签。"
+}

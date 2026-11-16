@@ -1,0 +1,185 @@
+{
+  "schemaVersion": 1,
+  "key": "song-156",
+  "songId": 156,
+  "songName": "溺水金鱼",
+  "rowKey": "溺水金鱼",
+  "displaySongName": "溺水金鱼",
+  "artist": "漆柚",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "",
+  "audio": {
+    "url": "assets/audio/song_155.m4a?v=99e77668aa1c",
+    "sha256": "99e77668aa1cadfb1f49efb9c02d0b5ff96f42fe6e3ab11834ecddc6769be043"
+  },
+  "retrievedAt": "2026-11-16T04:04:11.553Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E6%BA%BA%E6%B0%B4%E9%87%91%E9%B1%BC&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E6%BA%BA%E6%B0%B4%E9%87%91%E9%B1%BC%20%E6%BC%86%E6%9F%9A&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1386335928,
+        "name": "溺水金鱼",
+        "artists": [
+          "漆柚"
+        ],
+        "album": "【漆柚/人声本家】溺水金鱼【John Towse/融合音乐】",
+        "durationMs": 258803,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1403790608,
+        "name": "溺水金鱼",
+        "artists": [
+          "说说Crystal"
+        ],
+        "album": "溺水金鱼（翻自 漆柚）",
+        "durationMs": 259056,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1392287482,
+        "name": "溺水金鱼",
+        "artists": [
+          "希斯缇Shisute"
+        ],
+        "album": "溺水金鱼",
+        "durationMs": 258009,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2016147084,
+        "name": "千灯展卷",
+        "artists": [
+          "漆柚",
+          "椒椒JMJ"
+        ],
+        "album": "千灯展卷",
+        "durationMs": 208230,
+        "titleScore": 0,
+        "artistMatch": true,
+        "score": 0.2
+      },
+      {
+        "id": 1440936344,
+        "name": "不世功",
+        "artists": [
+          "漆柚"
+        ],
+        "album": "大理寺日志",
+        "durationMs": 109376,
+        "titleScore": 0,
+        "artistMatch": true,
+        "score": 0.2
+      },
+      {
+        "id": 434052631,
+        "name": "封刀不为峥嵘",
+        "artists": [
+          "漆柚"
+        ],
+        "album": "【漆柚】封刀不为峥嵘",
+        "durationMs": 269165,
+        "titleScore": 0,
+        "artistMatch": true,
+        "score": 0.2
+      },
+      {
+        "id": 2057232063,
+        "name": "三秋",
+        "artists": [
+          "漆柚",
+          "杨芮"
+        ],
+        "album": "三秋",
+        "durationMs": 190464,
+        "titleScore": 0,
+        "artistMatch": true,
+        "score": 0.2
+      },
+      {
+        "id": 864962415,
+        "name": "谁杀死了知更鸟？（中英双语）",
+        "artists": [
+          "漆柚"
+        ],
+        "album": "谁杀死了知更鸟？（中英双语/和声魔改向）",
+        "durationMs": 327095,
+        "titleScore": 0,
+        "artistMatch": true,
+        "score": 0.2
+      }
+    ],
+    "workQuery": {
+      "song_id": 156,
+      "song_name": "溺水金鱼",
+      "show_as_song_name": "",
+      "display_song_name": "溺水金鱼",
+      "artist": "漆柚",
+      "artist_search": "漆柚",
+      "feat_artist": "",
+      "remark": "",
+      "tone": "",
+      "language": "中文",
+      "type": "流行",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=17",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-09-08",
+      "row_key": "溺水金鱼"
+    },
+    "sourceId": 1386335928,
+    "sourcePath": "sources/1386335928.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1386335928",
+    "selected": {
+      "id": 1386335928,
+      "name": "溺水金鱼",
+      "artists": [
+        "漆柚"
+      ],
+      "album": "【漆柚/人声本家】溺水金鱼【John Towse/融合音乐】",
+      "durationMs": 258803,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 40
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-156-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 258.949,
+    "sourceFirstLine": {
+      "t": 1.172,
+      "text": "听 视界某侧 燃烧着什么 毕剥 作响"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 0.0,
+      "endSeconds": 0.08,
+      "similarity": 0.0,
+      "recognizedText": "我",
+      "meanProbability": 0.724,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

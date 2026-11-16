@@ -1,0 +1,183 @@
+{
+  "schemaVersion": 1,
+  "key": "song-198",
+  "songId": 198,
+  "songName": "珠玉",
+  "rowKey": "珠玉",
+  "displaySongName": "珠玉",
+  "artist": "单依纯",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "",
+  "audio": {
+    "url": "assets/audio/song_197.m4a?v=3f15cf85d82e",
+    "sha256": "3f15cf85d82e7d366c604af1a04cf98f96c30fac8e448df191495c715705f761"
+  },
+  "retrievedAt": "2026-11-16T04:04:50.892Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E7%8F%A0%E7%8E%89&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E7%8F%A0%E7%8E%89%20%E5%8D%95%E4%BE%9D%E7%BA%AF&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 2704708142,
+        "name": "珠玉",
+        "artists": [
+          "单依纯"
+        ],
+        "album": "珠玉",
+        "durationMs": 202402,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 3333131682,
+        "name": "珠玉",
+        "artists": [
+          "单依纯"
+        ],
+        "album": "纯妹妹",
+        "durationMs": 202402,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 3407186562,
+        "name": "珠玉",
+        "artists": [
+          "单依纯-Live"
+        ],
+        "album": "单依纯live",
+        "durationMs": 264868,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2716607702,
+        "name": "珠玉",
+        "artists": [
+          "初续印记"
+        ],
+        "album": "珠玉-ai方大同",
+        "durationMs": 161935,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2705964610,
+        "name": "珠玉",
+        "artists": [
+          "兰音Reine"
+        ],
+        "album": "珠玉",
+        "durationMs": 202811,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2709763947,
+        "name": "珠玉",
+        "artists": [
+          "代司凝（琉焉）"
+        ],
+        "album": "珠玉",
+        "durationMs": 201936,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2715507463,
+        "name": "珠玉",
+        "artists": [
+          "赵思瑶"
+        ],
+        "album": "珠玉 (R&B版)",
+        "durationMs": 209770,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2709108448,
+        "name": "珠玉",
+        "artists": [
+          "祖娅纳惜"
+        ],
+        "album": "珠玉",
+        "durationMs": 174335,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 198,
+      "song_name": "珠玉",
+      "show_as_song_name": "",
+      "display_song_name": "珠玉",
+      "artist": "单依纯",
+      "artist_search": "单依纯",
+      "feat_artist": "",
+      "remark": "",
+      "tone": "",
+      "language": "中文",
+      "type": "流行",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1xger6jEYS/?p=14",
+      "sing_count": 1,
+      "status_labels": "自动识别待人工复核",
+      "last_sing_at": "2026-09-17",
+      "row_key": "珠玉"
+    },
+    "sourceId": 2704708142,
+    "sourcePath": "sources/2704708142.json",
+    "sourceUrl": "https://music.163.com/#/song?id=2704708142",
+    "selected": {
+      "id": 2704708142,
+      "name": "珠玉",
+      "artists": [
+        "单依纯"
+      ],
+      "album": "珠玉",
+      "durationMs": 202402,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 53
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-198-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 199.576,
+    "sourceFirstLine": {
+      "t": 1.168,
+      "text": "编曲/制作人 : 常石磊"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 29.62,
+      "endSeconds": 30.28,
+      "similarity": 0.0,
+      "recognizedText": " 】 】 】 】 】 】 】 】 】 】 】 】 】 】 】 】 】 】 】 】 】 】 】 】 】 】 】 】 】 】 】 】 】 】 】 】 】 】 】 】 】 】 】 】只",
+      "meanProbability": 0.976,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

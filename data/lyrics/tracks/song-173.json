@@ -1,0 +1,184 @@
+{
+  "schemaVersion": 1,
+  "key": "song-173",
+  "songId": 173,
+  "songName": "夏天的风",
+  "rowKey": "夏天的风",
+  "displaySongName": "夏天的风",
+  "artist": "温岚",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "",
+  "audio": {
+    "url": "assets/audio/song_172.m4a?v=89f3e2ca87af",
+    "sha256": "89f3e2ca87af718253cfb35f705e640158594936777f2eebb35b2cf481774a81"
+  },
+  "retrievedAt": "2026-11-16T04:12:33.758Z",
+  "match": {
+    "status": "candidate_review_required",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E5%A4%8F%E5%A4%A9%E7%9A%84%E9%A3%8E&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E5%A4%8F%E5%A4%A9%E7%9A%84%E9%A3%8E%20%E6%B8%A9%E5%B2%9A&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1436709403,
+        "name": "夏天的风",
+        "artists": [
+          "火羊瞌睡了"
+        ],
+        "album": "夏天的风",
+        "durationMs": 221750,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2138072360,
+        "name": "夏天的风",
+        "artists": [
+          "雯岚"
+        ],
+        "album": "夏天的风",
+        "durationMs": 174209,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1441993974,
+        "name": "夏天的风",
+        "artists": [
+          "Uu"
+        ],
+        "album": "夏天的风",
+        "durationMs": 230679,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3344407896,
+        "name": "夏天的风",
+        "artists": [
+          "放任"
+        ],
+        "album": "我的粉丝萌是可爱猪",
+        "durationMs": 31791,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1431738249,
+        "name": "夏天的风",
+        "artists": [
+          "凯雯很忙"
+        ],
+        "album": "眼泪很咸",
+        "durationMs": 54122,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2055878310,
+        "name": "夏天的风",
+        "artists": [
+          "XMASwu(吴骜)",
+          "yihuik苡慧"
+        ],
+        "album": "夏天的风",
+        "durationMs": 207656,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3400346553,
+        "name": "夏天的风",
+        "artists": [
+          "落日微醺"
+        ],
+        "album": "夏天的风",
+        "durationMs": 242520,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1440176366,
+        "name": "夏天的风",
+        "artists": [
+          "赵栖兑"
+        ],
+        "album": "夏天的风",
+        "durationMs": 238013,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 173,
+      "song_name": "夏天的风",
+      "show_as_song_name": "",
+      "display_song_name": "夏天的风",
+      "artist": "温岚",
+      "artist_search": "温岚",
+      "feat_artist": "",
+      "remark": "",
+      "tone": "",
+      "language": "中文",
+      "type": "流行",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1q9YB6xErK/?p=5",
+      "sing_count": 2,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-31",
+      "row_key": "夏天的风"
+    },
+    "sourceId": 1436709403,
+    "sourcePath": "sources/1436709403.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1436709403",
+    "selected": {
+      "id": 1436709403,
+      "name": "夏天的风",
+      "artists": [
+        "火羊瞌睡了"
+      ],
+      "album": "夏天的风",
+      "durationMs": 221750,
+      "titleScore": 1,
+      "artistMatch": false,
+      "score": 0.8
+    },
+    "timedLineCount": 67
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-173-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 241.387,
+    "sourceFirstLine": {
+      "t": 0.3,
+      "text": "原唱：温岚"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 17.3,
+      "endSeconds": 17.94,
+      "similarity": 0.0,
+      "recognizedText": "詞",
+      "meanProbability": 0.494,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

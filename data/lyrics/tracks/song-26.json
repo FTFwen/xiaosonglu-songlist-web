@@ -1,0 +1,163 @@
+{
+  "schemaVersion": 1,
+  "key": "song-26",
+  "songId": 26,
+  "songName": "カタオモイ",
+  "displaySongName": "单相思",
+  "artist": "Aimer",
+  "language": "日文",
+  "derivative": false,
+  "audio": {
+    "url": "assets/audio/song_14.m4a?v=826bd0874360",
+    "sha256": "826bd08743602092f685266c7960ce5989a338a15001099a34fbec1045e33b94"
+  },
+  "retrievedAt": "2026-11-16T03:57:48.311Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E5%8D%95%E7%9B%B8%E6%80%9D&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 431259256,
+        "name": "カタオモイ",
+        "artists": [
+          "Aimer"
+        ],
+        "album": "daydream",
+        "durationMs": 207934,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 476081901,
+        "name": "カタオモイ",
+        "artists": [
+          "Aimer"
+        ],
+        "album": "BEST SELECTION \"blanc\"",
+        "durationMs": 207423,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1952087295,
+        "name": "カタオモイ",
+        "artists": [
+          "DAZBEE",
+          "ゐづ"
+        ],
+        "album": "Remindful.Two",
+        "durationMs": 202848,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 524148291,
+        "name": "カタオモイ (Live Ver.)",
+        "artists": [
+          "Aimer"
+        ],
+        "album": "Aimer Live in 武道館 \"blanc et noir\" 音源収録特典CD",
+        "durationMs": 230146,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      },
+      {
+        "id": 2003298514,
+        "name": "カタオモイ - From THE FIRST TAKE",
+        "artists": [
+          "Aimer"
+        ],
+        "album": "カタオモイ - From THE FIRST TAKE",
+        "durationMs": 222865,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      },
+      {
+        "id": 2002402846,
+        "name": "カタオモイ - From THE FIRST TAKE",
+        "artists": [
+          "Aimer"
+        ],
+        "album": "Deep down",
+        "durationMs": 222865,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      },
+      {
+        "id": 1820313943,
+        "name": "カタオモイ/单相思",
+        "artists": [
+          "夕沢yuusawa"
+        ],
+        "album": "カタオモイ/单相思",
+        "durationMs": 207464,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 2623524131,
+        "name": "カタオモイ/单相思（AI東雪蓮）",
+        "artists": [
+          "李墨",
+          "东洋雪莲"
+        ],
+        "album": "AI東雪蓮",
+        "durationMs": 204432,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      }
+    ],
+    "sourceId": 431259256,
+    "sourcePath": "sources/431259256.json",
+    "sourceUrl": "https://music.163.com/#/song?id=431259256",
+    "selected": {
+      "id": 431259256,
+      "name": "カタオモイ",
+      "artists": [
+        "Aimer"
+      ],
+      "album": "daydream",
+      "durationMs": 207934,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 38
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-26-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 208.0,
+    "sourceFirstLine": {
+      "t": 1.7,
+      "text": "例えば君の顔に昔よりシワが増えても"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 29.82,
+      "endSeconds": 30.86,
+      "similarity": 0.2857142857142857,
+      "recognizedText": "に歌えて",
+      "meanProbability": 0.654,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "ja",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  },
+  "rowKey": "カタオモイ",
+  "edition": "",
+  "remark": "直链页面 meta description 明示 20260811；视频标题使用中文译名“单相思”，按真实曲名归一化为 Aimer《カタオモイ》，display_song_name 保留为“单相思”。"
+}

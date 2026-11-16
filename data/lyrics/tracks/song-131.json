@@ -1,0 +1,185 @@
+{
+  "schemaVersion": 1,
+  "key": "song-131",
+  "songId": 131,
+  "songName": "深夜诗人",
+  "rowKey": "深夜诗人",
+  "displaySongName": "深夜诗人",
+  "artist": "洛天依 / 言和 / ilem",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "2026-09-03「也许康复的随便唱唱」21点场；歌切合集【桐人今天睡大觉】【小松绿Viridis】随便唱唱的歌回 歌切合集 2026.09.03 分P11（05:43）。ilem 2016 VOCALOID 中文原创，洛天依/言和演唱。",
+  "audio": {
+    "url": "assets/audio/song_130.m4a?v=33f3bbcd5e62",
+    "sha256": "33f3bbcd5e62d8dc697be12caf85db47594c74a1a770b007d86be04c20ba08b4"
+  },
+  "retrievedAt": "2026-11-16T04:03:06.380Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E6%B7%B1%E5%A4%9C%E8%AF%97%E4%BA%BA&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E6%B7%B1%E5%A4%9C%E8%AF%97%E4%BA%BA%20%E6%B4%9B%E5%A4%A9%E4%BE%9D%20%2F%20%E8%A8%80%E5%92%8C%20%2F%20ilem&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 477936261,
+        "name": "深夜诗人",
+        "artists": [
+          "洛天依Official",
+          "言和",
+          "ilem"
+        ],
+        "album": "深夜诗人",
+        "durationMs": 194768,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 3392500453,
+        "name": "深夜诗人",
+        "artists": [
+          "ilem",
+          "洛天依Official",
+          "言和"
+        ],
+        "album": "ilem2016年作品合集",
+        "durationMs": 194768,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2014515362,
+        "name": "深夜诗人",
+        "artists": [
+          "言和",
+          "文栗",
+          "石舟",
+          "玖尾"
+        ],
+        "album": "深夜诗人——言和AI",
+        "durationMs": 196000,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1896427863,
+        "name": "深夜诗人",
+        "artists": [
+          "三无Marblue"
+        ],
+        "album": "深夜诗人",
+        "durationMs": 194809,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 447303772,
+        "name": "深夜诗人",
+        "artists": [
+          "三无Marblue"
+        ],
+        "album": "三无Marblue（170509更新）",
+        "durationMs": 194809,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 453144067,
+        "name": "深夜诗人",
+        "artists": [
+          "昼夜"
+        ],
+        "album": "囿于昼夜",
+        "durationMs": 195410,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 480362303,
+        "name": "深夜诗人",
+        "artists": [
+          "Nil2_"
+        ],
+        "album": "深夜诗人",
+        "durationMs": 184135,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1439053839,
+        "name": "《深夜诗人》",
+        "artists": [
+          "晓鸢"
+        ],
+        "album": "深夜诗人（cover：洛天依 言和 ilem）",
+        "durationMs": 194976,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 131,
+      "song_name": "深夜诗人",
+      "show_as_song_name": "",
+      "display_song_name": "深夜诗人",
+      "artist": "洛天依 / 言和 / ilem",
+      "artist_search": "深夜诗人 洛天依 / 言和 / ilem",
+      "feat_artist": "",
+      "remark": "2026-09-03「也许康复的随便唱唱」21点场；歌切合集【桐人今天睡大觉】【小松绿Viridis】随便唱唱的歌回 歌切合集 2026.09.03 分P11（05:43）。ilem 2016 VOCALOID 中文原创，洛天依/言和演唱。",
+      "tone": "",
+      "language": "中文",
+      "type": "Vocaloid、中V",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=11",
+      "sing_count": 1,
+      "status_labels": "歌回",
+      "last_sing_at": "2026-09-03",
+      "row_key": "深夜诗人"
+    },
+    "sourceId": 477936261,
+    "sourcePath": "sources/477936261.json",
+    "sourceUrl": "https://music.163.com/#/song?id=477936261",
+    "selected": {
+      "id": 477936261,
+      "name": "深夜诗人",
+      "artists": [
+        "洛天依Official",
+        "言和",
+        "ilem"
+      ],
+      "album": "深夜诗人",
+      "durationMs": 194768,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 41
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-131-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 340.907,
+    "sourceFirstLine": {
+      "t": 11.17,
+      "text": "月光落在我窗台"
+    },
+    "anchorCandidate": null,
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

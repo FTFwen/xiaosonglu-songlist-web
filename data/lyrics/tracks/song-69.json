@@ -1,0 +1,189 @@
+{
+  "schemaVersion": 1,
+  "key": "song-69",
+  "songId": 69,
+  "songName": "アスノヨゾラ哨戒班",
+  "rowKey": "アスノヨゾラ哨戒班",
+  "displaySongName": "アスノヨゾラ哨戒班",
+  "artist": "Orangestar / IA",
+  "language": "日文",
+  "derivative": false,
+  "edition": "",
+  "remark": "来自 2026-08-18 歌切合集《【663645TV】神回！我已启动！全力绿来唱完了！8月18日歌切合集【小松绿Viridis】》的分P《23-アスノヨゾラ哨戒班》。按当前 song-cut-first 策略，将合集章节名直接并入正式曲库；当前记录的是合集内顺序时间，不是原始直播回放时间。2026-08-25 补录核查：确认哨戒班仅 08-18「小唱一会儿聊」场演唱（并非 08-21 后日谈——该场 29751 条弹幕 0 提及）；另有两个独立单切——雾山_Kiriyama BV1n7826GE9K（3:52，08-22 发布）与 不要念我的名字我社恐 BV1Do8V6iEPw（3:55，08-19 00:50 发布，标题\"夜半火力全开\"对应 08-18 场尾）——时长与合集章节（3:55）高度吻合，判定为同一场演出的多源切片，已入 cut_index secondary。",
+  "audio": {
+    "url": "assets/audio/song_83.m4a?v=63429fd19a83",
+    "sha256": "63429fd19a835296321cad6f7979f110d8f067616eec0d376ff409992a552667"
+  },
+  "retrievedAt": "2026-11-16T04:03:55.400Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E3%82%A2%E3%82%B9%E3%83%8E%E3%83%A8%E3%82%BE%E3%83%A9%E5%93%A8%E6%88%92%E7%8F%AD&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E3%82%A2%E3%82%B9%E3%83%8E%E3%83%A8%E3%82%BE%E3%83%A9%E5%93%A8%E6%88%92%E7%8F%AD%20Orangestar%20%2F%20IA&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 30870173,
+        "name": "アスノヨゾラ哨戒班",
+        "artists": [
+          "Orangestar",
+          "IA"
+        ],
+        "album": "EXIT TUNES PRESENTS Vocalofantasy",
+        "durationMs": 176600,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1946819289,
+        "name": "アスノヨゾラ哨戒班",
+        "artists": [
+          "Leo/need",
+          "Orangestar"
+        ],
+        "album": "Leo/need SEKAI ALBUM vol.1",
+        "durationMs": 180095,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 31830623,
+        "name": "アスノヨゾラ哨戒班",
+        "artists": [
+          "Orangestar",
+          "IA"
+        ],
+        "album": "未完成エイトビーツ",
+        "durationMs": 177773,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 512489742,
+        "name": "アスノヨゾラ哨戒班",
+        "artists": [
+          "まらしぃ",
+          "Orangestar"
+        ],
+        "album": "Vocalo Piano ～marasy vocaloid songs cover on piano～",
+        "durationMs": 192160,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2090583190,
+        "name": "アスノヨゾラ哨戒班",
+        "artists": [
+          "Orangestar",
+          "IA"
+        ],
+        "album": "IA SUPER BEST -THE CREATORS-",
+        "durationMs": 176546,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 428642839,
+        "name": "アスノヨゾラ哨戒班",
+        "artists": [
+          "ゆある"
+        ],
+        "album": "最新热歌慢摇118",
+        "durationMs": 176822,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 31356495,
+        "name": "アスノヨゾラ哨戒班",
+        "artists": [
+          "Reol"
+        ],
+        "album": "れをる 作品集",
+        "durationMs": 176000,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 35845175,
+        "name": "アスノヨゾラ哨戒班",
+        "artists": [
+          "いすぼくろ"
+        ],
+        "album": "Sound of the heart -Boy's Side-",
+        "durationMs": 175856,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 69,
+      "song_name": "アスノヨゾラ哨戒班",
+      "show_as_song_name": "",
+      "display_song_name": "アスノヨゾラ哨戒班",
+      "artist": "Orangestar / IA",
+      "artist_search": "Orangestar IA",
+      "feat_artist": "",
+      "remark": "来自 2026-08-18 歌切合集《【663645TV】神回！我已启动！全力绿来唱完了！8月18日歌切合集【小松绿Viridis】》的分P《23-アスノヨゾラ哨戒班》。按当前 song-cut-first 策略，将合集章节名直接并入正式曲库；当前记录的是合集内顺序时间，不是原始直播回放时间。2026-08-25 补录核查：确认哨戒班仅 08-18「小唱一会儿聊」场演唱（并非 08-21 后日谈——该场 29751 条弹幕 0 提及）；另有两个独立单切——雾山_Kiriyama BV1n7826GE9K（3:52，08-22 发布）与 不要念我的名字我社恐 BV1Do8V6iEPw（3:55，08-19 00:50 发布，标题\"夜半火力全开\"对应 08-18 场尾）——时长与合集章节（3:55）高度吻合，判定为同一场演出的多源切片，已入 cut_index secondary。",
+      "tone": "",
+      "language": "日文",
+      "type": "Vocaloid、J-Pop",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1rv8V6DExk/",
+      "sing_count": 1,
+      "status_labels": "歌切合集补录、多源歌切交叉验证",
+      "last_sing_at": "2026-08-18",
+      "row_key": "アスノヨゾラ哨戒班"
+    },
+    "sourceId": 30870173,
+    "sourcePath": "sources/30870173.json",
+    "sourceUrl": "https://music.163.com/#/song?id=30870173",
+    "selected": {
+      "id": 30870173,
+      "name": "アスノヨゾラ哨戒班",
+      "artists": [
+        "Orangestar",
+        "IA"
+      ],
+      "album": "EXIT TUNES PRESENTS Vocalofantasy",
+      "durationMs": 176600,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 40
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-69-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 234.313,
+    "sourceFirstLine": {
+      "t": 0.76,
+      "text": "気分次第です僕は"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 7.16,
+      "endSeconds": 8.38,
+      "similarity": 0.6666666666666666,
+      "recognizedText": "です 僕は",
+      "meanProbability": 0.791,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "ja",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

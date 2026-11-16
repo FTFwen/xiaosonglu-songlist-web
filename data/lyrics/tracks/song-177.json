@@ -1,0 +1,161 @@
+{
+  "schemaVersion": 1,
+  "key": "song-177",
+  "songId": 177,
+  "songName": "情歌",
+  "displaySongName": "情歌",
+  "artist": "梁静茹",
+  "language": "中文",
+  "derivative": false,
+  "audio": {
+    "url": "assets/audio/song_176.m4a?v=fbc5facce703",
+    "sha256": "fbc5facce7037e9cc3cff83c07318e89adb39795baa9b2b47333b4c556dd87d3"
+  },
+  "retrievedAt": "2026-11-16T03:58:11.579Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E6%83%85%E6%AD%8C&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 254059,
+        "name": "情歌",
+        "artists": [
+          "梁静茹"
+        ],
+        "album": "现在开始我爱你",
+        "durationMs": 263293,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 254102,
+        "name": "情歌",
+        "artists": [
+          "梁静茹"
+        ],
+        "album": "静茹&情歌",
+        "durationMs": 260093,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 209155,
+        "name": "情歌",
+        "artists": [
+          "陈珊妮"
+        ],
+        "album": "后来 我们都哭了",
+        "durationMs": 289240,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1434354649,
+        "name": "情歌",
+        "artists": [
+          "史一"
+        ],
+        "album": "情歌",
+        "durationMs": 261084,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2613025821,
+        "name": "情歌",
+        "artists": [
+          "en（王翊恩）"
+        ],
+        "album": "情歌",
+        "durationMs": 236522,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 411314660,
+        "name": "情歌",
+        "artists": [
+          "草东没有派对"
+        ],
+        "album": "丑奴儿",
+        "durationMs": 256733,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 64325,
+        "name": "情歌",
+        "artists": [
+          "侧田"
+        ],
+        "album": "From Justin Collection Of His First 3 Years",
+        "durationMs": 301546,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2610967914,
+        "name": "情歌",
+        "artists": [
+          "DJ阿布"
+        ],
+        "album": "情歌 DJ阿布版",
+        "durationMs": 307397,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "sourceId": 254059,
+    "sourcePath": "sources/254059.json",
+    "sourceUrl": "https://music.163.com/#/song?id=254059",
+    "selected": {
+      "id": 254059,
+      "name": "情歌",
+      "artists": [
+        "梁静茹"
+      ],
+      "album": "现在开始我爱你",
+      "durationMs": 263293,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 67
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-177-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 262.803,
+    "sourceFirstLine": {
+      "t": 25.86,
+      "text": "时光是琥珀"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 28.04,
+      "endSeconds": 29.1,
+      "similarity": 0.0,
+      "recognizedText": "《大",
+      "meanProbability": 0.006,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  },
+  "rowKey": "情歌",
+  "edition": "",
+  "remark": ""
+}

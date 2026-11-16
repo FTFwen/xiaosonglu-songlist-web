@@ -1,0 +1,167 @@
+{
+  "schemaVersion": 1,
+  "key": "song-229",
+  "songId": 229,
+  "songName": "为谁而为",
+  "displaySongName": "为谁而为",
+  "artist": "COP, 洛天依Official",
+  "language": "中文",
+  "derivative": false,
+  "audio": {
+    "url": "assets/audio/song_228.m4a?v=998f8ec0f914",
+    "sha256": "998f8ec0f914a1a432f3726a7b056ea602bb9ce3d575b304871dac45fada6f57"
+  },
+  "retrievedAt": "2026-11-16T03:58:30.118Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E4%B8%BA%E8%B0%81%E8%80%8C%E4%B8%BA&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1335760301,
+        "name": "为谁而为",
+        "artists": [
+          "COP",
+          "洛天依Official"
+        ],
+        "album": "为谁而为",
+        "durationMs": 208169,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2091183457,
+        "name": "为谁而为",
+        "artists": [
+          "莫默OwO",
+          "洛天依"
+        ],
+        "album": "为谁而为",
+        "durationMs": 208185,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1857340345,
+        "name": "为谁而为",
+        "artists": [
+          "风见兰",
+          "乐正绫"
+        ],
+        "album": "为谁而为",
+        "durationMs": 208395,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2062507050,
+        "name": "为谁而为",
+        "artists": [
+          "idealclover",
+          "星尘infinity"
+        ],
+        "album": "为谁而为（星尘infinity Ver.）",
+        "durationMs": 209815,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1417925955,
+        "name": "为谁而为",
+        "artists": [
+          "芜幽you"
+        ],
+        "album": "呦呦球音乐口袋",
+        "durationMs": 209034,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1948907083,
+        "name": "为谁而为",
+        "artists": [
+          "花汐玖.Alive",
+          "翼雪兰心"
+        ],
+        "album": "翼雪兰心翻调",
+        "durationMs": 208390,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1422316500,
+        "name": "为谁而为",
+        "artists": [
+          "某个不愿意透露姓名的人"
+        ],
+        "album": "为谁而为",
+        "durationMs": 209522,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1956213293,
+        "name": "为谁而为",
+        "artists": [
+          "莫杋"
+        ],
+        "album": "余生",
+        "durationMs": 208390,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "sourceId": 1335760301,
+    "sourcePath": "sources/1335760301.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1335760301",
+    "selected": {
+      "id": 1335760301,
+      "name": "为谁而为",
+      "artists": [
+        "COP",
+        "洛天依Official"
+      ],
+      "album": "为谁而为",
+      "durationMs": 208169,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 55
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-229-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 211.394,
+    "sourceFirstLine": {
+      "t": 6,
+      "text": "绘:王刃、唯Tu（封面）"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 30.0,
+      "endSeconds": 30.44,
+      "similarity": 0.0,
+      "recognizedText": "終",
+      "meanProbability": 0.469,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  },
+  "rowKey": "为谁而为",
+  "edition": "",
+  "remark": ""
+}

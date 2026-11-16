@@ -1,0 +1,191 @@
+{
+  "schemaVersion": 1,
+  "key": "song-220",
+  "songId": 220,
+  "songName": "恋愛裁判",
+  "rowKey": "恋愛裁判",
+  "displaySongName": "恋愛裁判",
+  "artist": "40mP / 初音ミク",
+  "language": "日文",
+  "derivative": false,
+  "edition": "",
+  "remark": "UP 桐人今天睡大觉《2026.09.23练歌歌切合集》P11",
+  "audio": {
+    "url": "assets/audio/song_219.m4a?v=9226b343126d",
+    "sha256": "9226b343126dcf0cb5f7130f70491d84a8d51f95b92ed3e124a70ef8d2042a61"
+  },
+  "retrievedAt": "2026-11-16T04:05:07.227Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E6%81%8B%E6%84%9B%E8%A3%81%E5%88%A4&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E6%81%8B%E6%84%9B%E8%A3%81%E5%88%A4%2040mP%20%2F%20%E5%88%9D%E9%9F%B3%E3%83%9F%E3%82%AF&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 28953243,
+        "name": "恋愛裁判",
+        "artists": [
+          "40mP",
+          "初音ミク"
+        ],
+        "album": "41m",
+        "durationMs": 222026,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 30870191,
+        "name": "恋愛裁判",
+        "artists": [
+          "40mP",
+          "初音ミク"
+        ],
+        "album": "EXIT TUNES PRESENTS Vocalofantasy",
+        "durationMs": 221300,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 36783642,
+        "name": "恋愛裁判",
+        "artists": [
+          "40mP"
+        ],
+        "album": "1.7m",
+        "durationMs": 222403,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 30398232,
+        "name": "恋愛裁判",
+        "artists": [
+          "Chano",
+          "40mP"
+        ],
+        "album": "Berry",
+        "durationMs": 221131,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 29827550,
+        "name": "恋愛裁判",
+        "artists": [
+          "40mP",
+          "初音ミク"
+        ],
+        "album": "Download feat.初音ミク",
+        "durationMs": 222880,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 416552647,
+        "name": "恋愛裁判",
+        "artists": [
+          "40mP",
+          "初音ミク"
+        ],
+        "album": "初音ミク -Project DIVA- X Complete Collection",
+        "durationMs": 221493,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1927199105,
+        "name": "恋愛裁判",
+        "artists": [
+          "40mP",
+          "初音ミク"
+        ],
+        "album": "初音ミク「マジカルミライ 2015」LIVE",
+        "durationMs": 222000,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 33937487,
+        "name": "恋愛裁判",
+        "artists": [
+          "40mP",
+          "初音ミク"
+        ],
+        "album": "「マジカルミライ2015」OFFICIAL ALBUM",
+        "durationMs": 223266,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      }
+    ],
+    "workQuery": {
+      "song_id": 220,
+      "song_name": "恋愛裁判",
+      "show_as_song_name": "",
+      "display_song_name": "恋愛裁判",
+      "artist": "40mP / 初音ミク",
+      "artist_search": "40mP 恋愛裁判 初音ミク",
+      "feat_artist": "",
+      "remark": "UP 桐人今天睡大觉《2026.09.23练歌歌切合集》P11",
+      "tone": "",
+      "language": "日文",
+      "type": "Vocaloid、J-Pop",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1ouhW6GEoD/?p=11",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-09-23",
+      "row_key": "恋愛裁判"
+    },
+    "sourceId": 28953243,
+    "sourcePath": "sources/28953243.json",
+    "sourceUrl": "https://music.163.com/#/song?id=28953243",
+    "selected": {
+      "id": 28953243,
+      "name": "恋愛裁判",
+      "artists": [
+        "40mP",
+        "初音ミク"
+      ],
+      "album": "41m",
+      "durationMs": 222026,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 43
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-220-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 225.443,
+    "sourceFirstLine": {
+      "t": 22.6,
+      "text": "Oh! No! No! No!"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 1.72,
+      "endSeconds": 2.3,
+      "similarity": 0.0,
+      "recognizedText": "さ",
+      "meanProbability": 0.012,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "ja",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

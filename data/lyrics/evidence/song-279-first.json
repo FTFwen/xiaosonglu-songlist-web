@@ -1,0 +1,279 @@
+{
+  "audioSha256": "e1726acb9297df86b4a8bbd77d2518bdeaf36e22f12f56f95ef44a6069d9efc7",
+  "model": "whisper-base",
+  "start": 0,
+  "end": 35,
+  "result": {
+    "text": "老闆二成就的天温光你最爱守在这个房间你最爱守在这个房间",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 16.7,
+        "end": 21.38,
+        "text": "老闆二成就的天温光",
+        "tokens": [
+          50364,
+          10439,
+          8259,
+          228,
+          11217,
+          11336,
+          3111,
+          1546,
+          6135,
+          9592,
+          102,
+          20690,
+          50564
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.37773983295147234,
+        "compression_ratio": 2.347826086956522,
+        "no_speech_prob": 0.46554550528526306,
+        "words": [
+          {
+            "word": "老",
+            "start": 16.7,
+            "end": 17.66,
+            "probability": 0.5267242789268494
+          },
+          {
+            "word": "闆",
+            "start": 17.66,
+            "end": 18.02,
+            "probability": 0.442529633641243
+          },
+          {
+            "word": "二",
+            "start": 18.02,
+            "end": 18.54,
+            "probability": 0.2573363184928894
+          },
+          {
+            "word": "成",
+            "start": 18.54,
+            "end": 18.78,
+            "probability": 0.6717575788497925
+          },
+          {
+            "word": "就",
+            "start": 18.78,
+            "end": 19.24,
+            "probability": 0.4633902907371521
+          },
+          {
+            "word": "的",
+            "start": 19.24,
+            "end": 20.08,
+            "probability": 0.7399836182594299
+          },
+          {
+            "word": "天",
+            "start": 20.08,
+            "end": 20.48,
+            "probability": 0.7775954604148865
+          },
+          {
+            "word": "温",
+            "start": 20.48,
+            "end": 20.92,
+            "probability": 0.7844696938991547
+          },
+          {
+            "word": "光",
+            "start": 20.92,
+            "end": 21.38,
+            "probability": 0.6046703457832336
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "seek": 0,
+        "start": 23.18,
+        "end": 28.0,
+        "text": "你最爱守在这个房间",
+        "tokens": [
+          50564,
+          2166,
+          8661,
+          27324,
+          48480,
+          3581,
+          15368,
+          38242,
+          31685,
+          50864
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.37773983295147234,
+        "compression_ratio": 2.347826086956522,
+        "no_speech_prob": 0.46554550528526306,
+        "words": [
+          {
+            "word": "你",
+            "start": 23.18,
+            "end": 24.14,
+            "probability": 0.9562525749206543
+          },
+          {
+            "word": "最",
+            "start": 24.14,
+            "end": 24.5,
+            "probability": 0.9890607595443726
+          },
+          {
+            "word": "爱",
+            "start": 24.5,
+            "end": 24.98,
+            "probability": 0.7368982434272766
+          },
+          {
+            "word": "守",
+            "start": 24.98,
+            "end": 25.34,
+            "probability": 0.689912736415863
+          },
+          {
+            "word": "在",
+            "start": 25.34,
+            "end": 26.0,
+            "probability": 0.9887441396713257
+          },
+          {
+            "word": "这个",
+            "start": 26.0,
+            "end": 26.9,
+            "probability": 0.8995062112808228
+          },
+          {
+            "word": "房",
+            "start": 26.9,
+            "end": 27.48,
+            "probability": 0.943560779094696
+          },
+          {
+            "word": "间",
+            "start": 27.48,
+            "end": 28.0,
+            "probability": 0.9952676296234131
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "seek": 0,
+        "start": 28.0,
+        "end": 29.98,
+        "text": "你最爱守在这个房间",
+        "tokens": [
+          50864,
+          2166,
+          8661,
+          27324,
+          48480,
+          3581,
+          15368,
+          38242,
+          31685,
+          51064
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.37773983295147234,
+        "compression_ratio": 2.347826086956522,
+        "no_speech_prob": 0.46554550528526306,
+        "words": [
+          {
+            "word": "你",
+            "start": 28.0,
+            "end": 29.88,
+            "probability": 0.1241467297077179
+          },
+          {
+            "word": "最",
+            "start": 29.88,
+            "end": 29.98,
+            "probability": 0.05505217984318733
+          },
+          {
+            "word": "爱",
+            "start": 29.98,
+            "end": 29.98,
+            "probability": 0.9358704090118408
+          },
+          {
+            "word": "守",
+            "start": 29.98,
+            "end": 29.98,
+            "probability": 0.8269023895263672
+          },
+          {
+            "word": "在",
+            "start": 29.98,
+            "end": 29.98,
+            "probability": 0.9975380897521973
+          },
+          {
+            "word": "这个",
+            "start": 29.98,
+            "end": 29.98,
+            "probability": 0.8176841139793396
+          },
+          {
+            "word": "房",
+            "start": 29.98,
+            "end": 29.98,
+            "probability": 0.9987456798553467
+          },
+          {
+            "word": "间",
+            "start": 29.98,
+            "end": 29.98,
+            "probability": 0.9933933615684509
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "seek": 0,
+        "start": 29.98,
+        "end": 29.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.37773983295147234,
+        "compression_ratio": 2.347826086956522,
+        "no_speech_prob": 0.46554550528526306,
+        "words": []
+      },
+      {
+        "id": 4,
+        "seek": 0,
+        "start": 29.98,
+        "end": 29.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.37773983295147234,
+        "compression_ratio": 2.347826086956522,
+        "no_speech_prob": 0.46554550528526306,
+        "words": []
+      },
+      {
+        "id": 5,
+        "seek": 0,
+        "start": 29.98,
+        "end": 29.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.37773983295147234,
+        "compression_ratio": 2.347826086956522,
+        "no_speech_prob": 0.46554550528526306,
+        "words": []
+      }
+    ],
+    "language": "zh"
+  }
+}

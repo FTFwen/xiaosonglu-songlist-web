@@ -1,0 +1,185 @@
+{
+  "schemaVersion": 1,
+  "key": "song-249",
+  "songId": 249,
+  "songName": "我的故事未写完",
+  "rowKey": "我的故事未写完",
+  "displaySongName": "我的故事未写完",
+  "artist": "泠鸢Yousa",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "",
+  "audio": {
+    "url": "assets/audio/song_248.m4a?v=21f139089837",
+    "sha256": "21f139089837c1fcc32771945f10e2e8d8ddc84ddb25b8b58f9c874af30b8df4"
+  },
+  "retrievedAt": "2026-11-16T04:05:35.371Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E6%88%91%E7%9A%84%E6%95%85%E4%BA%8B%E6%9C%AA%E5%86%99%E5%AE%8C&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E6%88%91%E7%9A%84%E6%95%85%E4%BA%8B%E6%9C%AA%E5%86%99%E5%AE%8C%20%E6%B3%A0%E9%B8%A2Yousa&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1989729997,
+        "name": "我的故事未写完",
+        "artists": [
+          "泠鸢yousa"
+        ],
+        "album": "我的故事未写完",
+        "durationMs": 325411,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2664421415,
+        "name": "我的故事未写完",
+        "artists": [
+          "泠鸢yousa"
+        ],
+        "album": "自下而向上生",
+        "durationMs": 325411,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2624525597,
+        "name": "我的故事未写完",
+        "artists": [
+          "洛天依"
+        ],
+        "album": "虚拟复调方程式",
+        "durationMs": 335435,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1996934002,
+        "name": "我的故事未写完",
+        "artists": [
+          "虾小雀"
+        ],
+        "album": "❀翻唱集❀",
+        "durationMs": 333781,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2039725732,
+        "name": "我的故事未写完",
+        "artists": [
+          "穆小泠"
+        ],
+        "album": "我的故事未写完",
+        "durationMs": 332982,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3448103834,
+        "name": "我的故事未写完",
+        "artists": [
+          "悠米_Yuumi"
+        ],
+        "album": "我的故事未写完",
+        "durationMs": 333176,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2017290336,
+        "name": "我的故事未写完",
+        "artists": [
+          "绫月汐"
+        ],
+        "album": "翻唱·2023",
+        "durationMs": 333479,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2639466096,
+        "name": "我的故事未写完",
+        "artists": [
+          "先生と牛",
+          "鲤鱼塘塘",
+          "捡破烂的"
+        ],
+        "album": "给自己的生日贺歌",
+        "durationMs": 325411,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 249,
+      "song_name": "我的故事未写完",
+      "show_as_song_name": "",
+      "display_song_name": "我的故事未写完",
+      "artist": "泠鸢Yousa",
+      "artist_search": "泠鸢Yousa",
+      "feat_artist": "",
+      "remark": "",
+      "tone": "",
+      "language": "中文",
+      "type": "V圈",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1g1ah6REpb/?p=26",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-09-27",
+      "row_key": "我的故事未写完"
+    },
+    "sourceId": 1989729997,
+    "sourcePath": "sources/1989729997.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1989729997",
+    "selected": {
+      "id": 1989729997,
+      "name": "我的故事未写完",
+      "artists": [
+        "泠鸢yousa"
+      ],
+      "album": "我的故事未写完",
+      "durationMs": 325411,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 46
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-249-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 320.505,
+    "sourceFirstLine": {
+      "t": 25.4,
+      "text": "记忆就像是画片"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 28.58,
+      "endSeconds": 29.98,
+      "similarity": 0.0,
+      "recognizedText": "作",
+      "meanProbability": 0.001,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

@@ -1,0 +1,187 @@
+{
+  "schemaVersion": 1,
+  "key": "song-261",
+  "songId": 261,
+  "songName": "社畜烧酒",
+  "rowKey": "社畜烧酒",
+  "displaySongName": "社畜烧酒",
+  "artist": "ChiliChill乐团, 洛天依Official",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "",
+  "audio": {
+    "url": "assets/audio/song_260.m4a?v=ca8f17ba39de",
+    "sha256": "ca8f17ba39de7ff6dd5e061b673893025d3b358e6a5c1e2cdbd894c6667eeb9e"
+  },
+  "retrievedAt": "2026-11-16T04:05:53.613Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E7%A4%BE%E7%95%9C%E7%83%A7%E9%85%92&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E7%A4%BE%E7%95%9C%E7%83%A7%E9%85%92%20ChiliChill%E4%B9%90%E5%9B%A2&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1433403010,
+        "name": "社畜烧酒",
+        "artists": [
+          "ChiliChill乐团",
+          "洛天依Official"
+        ],
+        "album": "社畜烧酒",
+        "durationMs": 230101,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1445568867,
+        "name": "社畜烧酒",
+        "artists": [
+          "熊太kuma"
+        ],
+        "album": "中文合集",
+        "durationMs": 234835,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2684743634,
+        "name": "社畜烧酒",
+        "artists": [
+          "红箭红"
+        ],
+        "album": "社畜烧酒",
+        "durationMs": 230259,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1441314492,
+        "name": "社畜烧酒",
+        "artists": [
+          "今歌奏井"
+        ],
+        "album": "今歌奏井2020",
+        "durationMs": 230838,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1456015217,
+        "name": "社畜烧酒",
+        "artists": [
+          "清源Kiyo"
+        ],
+        "album": "Kiyo国语翻唱合集",
+        "durationMs": 230184,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1938650770,
+        "name": "社畜烧酒",
+        "artists": [
+          "星尘infinity",
+          "idealclover",
+          "青溯"
+        ],
+        "album": "社畜烧酒（青溯&星尘Infinity Ver.）",
+        "durationMs": 229041,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2112914270,
+        "name": "社畜烧酒",
+        "artists": [
+          "YuuKA柚小圆"
+        ],
+        "album": "圆子唱的歌(2023)",
+        "durationMs": 229745,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1452409784,
+        "name": "社畜烧酒",
+        "artists": [
+          "胃里有棵柠檬树"
+        ],
+        "album": "2020",
+        "durationMs": 232942,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 261,
+      "song_name": "社畜烧酒",
+      "show_as_song_name": "",
+      "display_song_name": "社畜烧酒",
+      "artist": "ChiliChill乐团, 洛天依Official",
+      "artist_search": "ChiliChill乐团, 洛天依Official",
+      "feat_artist": "",
+      "remark": "",
+      "tone": "",
+      "language": "中文",
+      "type": "中V",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1UkaS6zEk3/?p=17",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-02",
+      "row_key": "社畜烧酒"
+    },
+    "sourceId": 1433403010,
+    "sourcePath": "sources/1433403010.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1433403010",
+    "selected": {
+      "id": 1433403010,
+      "name": "社畜烧酒",
+      "artists": [
+        "ChiliChill乐团",
+        "洛天依Official"
+      ],
+      "album": "社畜烧酒",
+      "durationMs": 230101,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 45
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-261-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 230.293,
+    "sourceFirstLine": {
+      "t": 16.716,
+      "text": "追早高峰的地铁"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 23.92,
+      "endSeconds": 24.94,
+      "similarity": 0.0,
+      "recognizedText": "作",
+      "meanProbability": 0.003,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

@@ -1,0 +1,192 @@
+{
+  "schemaVersion": 1,
+  "key": "song-353",
+  "songId": 353,
+  "songName": "一梦千宵",
+  "rowKey": "一梦千宵",
+  "displaySongName": "一梦千宵",
+  "artist": "洛天依",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "",
+  "audio": {
+    "url": "assets/audio/song_352.m4a?v=ca400566d35d",
+    "sha256": "ca400566d35d613170ead81ce424e28ae246d147be264e4fb715cc58b743cf24"
+  },
+  "retrievedAt": "2026-11-16T04:07:18.721Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E4%B8%80%E6%A2%A6%E5%8D%83%E5%AE%B5&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E4%B8%80%E6%A2%A6%E5%8D%83%E5%AE%B5%20%E6%B4%9B%E5%A4%A9%E4%BE%9D&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1913873767,
+        "name": "一梦千宵",
+        "artists": [
+          "苏逸_Suyi",
+          "洛天依Official"
+        ],
+        "album": "一梦千宵",
+        "durationMs": 255348,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2136164774,
+        "name": "一梦千宵",
+        "artists": [
+          "洛天依",
+          "颛宇"
+        ],
+        "album": "一梦千宵",
+        "durationMs": 255365,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2012977122,
+        "name": "一梦千宵",
+        "artists": [
+          "昕声寄语",
+          "枫绘p",
+          "洛天依"
+        ],
+        "album": "一梦千宵",
+        "durationMs": 255425,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1921165459,
+        "name": "一梦千宵",
+        "artists": [
+          "Akie秋绘"
+        ],
+        "album": "一梦千宵（2022原神新春会）",
+        "durationMs": 255348,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1916817216,
+        "name": "一梦千宵",
+        "artists": [
+          "Rasie地铁"
+        ],
+        "album": "【海伊&赤羽】一梦千宵",
+        "durationMs": 255512,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1922107589,
+        "name": "一梦千宵",
+        "artists": [
+          "米白"
+        ],
+        "album": "一梦千宵",
+        "durationMs": 255425,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2130328643,
+        "name": "一梦千宵",
+        "artists": [
+          "阿梓",
+          "苏逸_Suyi"
+        ],
+        "album": "一梦千宵",
+        "durationMs": 255348,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2034924304,
+        "name": "一梦千宵",
+        "artists": [
+          "御A桑",
+          "朝韶",
+          "温谕枫",
+          "岑岑岑"
+        ],
+        "album": "一梦千宵（《原神》新春会四人翻唱版）",
+        "durationMs": 252074,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 353,
+      "song_name": "一梦千宵",
+      "show_as_song_name": "",
+      "display_song_name": "一梦千宵",
+      "artist": "洛天依",
+      "artist_search": "洛天依",
+      "feat_artist": "",
+      "remark": "",
+      "tone": "",
+      "language": "中文",
+      "type": "中V、国风",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1naxj62Epw/?p=26",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-27",
+      "row_key": "一梦千宵"
+    },
+    "sourceId": 1913873767,
+    "sourcePath": "sources/1913873767.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1913873767",
+    "selected": {
+      "id": 1913873767,
+      "name": "一梦千宵",
+      "artists": [
+        "苏逸_Suyi",
+        "洛天依Official"
+      ],
+      "album": "一梦千宵",
+      "durationMs": 255348,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 67
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-353-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 253.312,
+    "sourceFirstLine": {
+      "t": 8.07,
+      "text": "作曲/编曲/制作人：人形兎"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 30.0,
+      "endSeconds": 30.54,
+      "similarity": 0.0,
+      "recognizedText": "原",
+      "meanProbability": 0.437,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

@@ -1,0 +1,186 @@
+{
+  "schemaVersion": 1,
+  "key": "song-307",
+  "songId": 307,
+  "songName": "梦语",
+  "rowKey": "梦语",
+  "displaySongName": "梦语",
+  "artist": "乐正绫",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "弹幕 03:51:51「还有梦语」、03:53:56「现在是梦语，上一首是大喜」；两份合集 P9 同名同序。",
+  "audio": {
+    "url": "assets/audio/song_306.m4a?v=00d4b1fa188c",
+    "sha256": "00d4b1fa188c253350d770a04cfddc17b6f0e7ba7ea1e05cd9d57b8a39cc0f4a"
+  },
+  "retrievedAt": "2026-11-16T04:06:36.618Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E6%A2%A6%E8%AF%AD&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E6%A2%A6%E8%AF%AD%20%E4%B9%90%E6%AD%A3%E7%BB%AB&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 33190543,
+        "name": "梦语",
+        "artists": [
+          "乐正绫"
+        ],
+        "album": "热门华语267",
+        "durationMs": 295000,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 33419473,
+        "name": "梦语",
+        "artists": [
+          "乐正绫"
+        ],
+        "album": "热门华语269",
+        "durationMs": 282000,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 3389723111,
+        "name": "梦语",
+        "artists": [
+          "山鹰组合"
+        ],
+        "album": "一曲母语",
+        "durationMs": 305528,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 377984,
+        "name": "梦语",
+        "artists": [
+          "山鹰组合"
+        ],
+        "album": "忧伤母语",
+        "durationMs": 305533,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 426342277,
+        "name": "梦语",
+        "artists": [
+          "苏逸_Suyi"
+        ],
+        "album": "Vsinger乐正绫试听曲",
+        "durationMs": 295350,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2007594653,
+        "name": "梦语",
+        "artists": [
+          "洛天依",
+          "肆葉草"
+        ],
+        "album": "永不静止（翻调合集）",
+        "durationMs": 282668,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2684722492,
+        "name": "梦语(乐正绫ACE AI)",
+        "artists": [
+          "院长不是元璋",
+          "乐正绫"
+        ],
+        "album": "梦语（乐正绫ACE AI）",
+        "durationMs": 281706,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      },
+      {
+        "id": 2016014819,
+        "name": "梦语(乐正绫AI.ver)",
+        "artists": [
+          "洛宇谣",
+          "乐正绫"
+        ],
+        "album": "梦语【乐正绫AI.ver】",
+        "durationMs": 297022,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      }
+    ],
+    "workQuery": {
+      "song_id": 307,
+      "song_name": "梦语",
+      "show_as_song_name": "",
+      "display_song_name": "梦语",
+      "artist": "乐正绫",
+      "artist_search": "乐正绫",
+      "feat_artist": "",
+      "remark": "弹幕 03:51:51「还有梦语」、03:53:56「现在是梦语，上一首是大喜」；两份合集 P9 同名同序。",
+      "tone": "",
+      "language": "中文",
+      "type": "中文Vocaloid",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1uPJ86DE95/?p=9",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-16",
+      "row_key": "梦语"
+    },
+    "sourceId": 33190543,
+    "sourcePath": "sources/33190543.json",
+    "sourceUrl": "https://music.163.com/#/song?id=33190543",
+    "selected": {
+      "id": 33190543,
+      "name": "梦语",
+      "artists": [
+        "乐正绫"
+      ],
+      "album": "热门华语267",
+      "durationMs": 295000,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 55
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-307-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 284.843,
+    "sourceFirstLine": {
+      "t": 2.854,
+      "text": "如果说有一天再相见"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 17.9,
+      "endSeconds": 18.38,
+      "similarity": 0.0,
+      "recognizedText": "作",
+      "meanProbability": 0.03,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

@@ -1,0 +1,167 @@
+{
+  "schemaVersion": 1,
+  "key": "song-238",
+  "songId": 238,
+  "songName": "洛天依投食歌",
+  "displaySongName": "洛天依投食歌",
+  "artist": "洛天依Official",
+  "language": "中文",
+  "derivative": false,
+  "audio": {
+    "url": "assets/audio/song_237.m4a?v=dd3a0f8720b4",
+    "sha256": "dd3a0f8720b44182655fce739feb6cf5f1756594dfedd50e499b339d9e0e6d7a"
+  },
+  "retrievedAt": "2026-11-16T03:59:04.229Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E6%B4%9B%E5%A4%A9%E4%BE%9D%E6%8A%95%E9%A3%9F%E6%AD%8C&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 27907941,
+        "name": "洛天依投食歌",
+        "artists": [
+          "洛天依Official"
+        ],
+        "album": "热门华语114",
+        "durationMs": 167183,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 3392569294,
+        "name": "洛天依投食歌",
+        "artists": [
+          "嘉然Diana",
+          "咬一口果丹皮"
+        ],
+        "album": "20251222-20251228合集",
+        "durationMs": 166492,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3414514949,
+        "name": "洛天依投食歌",
+        "artists": [
+          "视听ウタ"
+        ],
+        "album": "旋转苹果",
+        "durationMs": 147841,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3399353809,
+        "name": "洛天依投食歌",
+        "artists": [
+          "贝拉Bella",
+          "嘉然Diana",
+          "乃琳Eileen",
+          "咬一口果丹皮"
+        ],
+        "album": "20260622-20260628合集",
+        "durationMs": 168576,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3379674898,
+        "name": "洛天依投食歌",
+        "artists": [
+          "嘉然Diana",
+          "乃琳Eileen",
+          "咬一口果丹皮"
+        ],
+        "album": "20250623-20250629合集",
+        "durationMs": 167360,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3416669784,
+        "name": "洛天依投食歌",
+        "artists": [
+          "全网找歌君"
+        ],
+        "album": "洛天依投食歌",
+        "durationMs": 169665,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2155600988,
+        "name": "洛天依投食歌",
+        "artists": [
+          "DJ 道长"
+        ],
+        "album": "",
+        "durationMs": 59088,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1862492029,
+        "name": "洛天依投食歌 (Inst.)",
+        "artists": [
+          "洛天依"
+        ],
+        "album": "冬天里的一把火",
+        "durationMs": 167114,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      }
+    ],
+    "sourceId": 27907941,
+    "sourcePath": "sources/27907941.json",
+    "sourceUrl": "https://music.163.com/#/song?id=27907941",
+    "selected": {
+      "id": 27907941,
+      "name": "洛天依投食歌",
+      "artists": [
+        "洛天依Official"
+      ],
+      "album": "热门华语114",
+      "durationMs": 167183,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 53
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-238-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 175.275,
+    "sourceFirstLine": {
+      "t": 6.66,
+      "text": "好饿好饿好饿 我真的好饿"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 29.92,
+      "endSeconds": 32.52,
+      "similarity": 0.6363636363636364,
+      "recognizedText": "好了好了好了我真的好了",
+      "meanProbability": 0.618,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  },
+  "rowKey": "洛天依投食歌",
+  "edition": "",
+  "remark": ""
+}

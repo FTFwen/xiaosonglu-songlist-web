@@ -1,0 +1,153 @@
+{
+  "schemaVersion": 1,
+  "key": "song-275",
+  "songId": 275,
+  "songName": "渊（Deep Down）",
+  "rowKey": "渊（Deep Down）",
+  "displaySongName": "渊（Deep Down）",
+  "artist": "SNH48",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "",
+  "audio": {
+    "url": "assets/audio/song_274.m4a?v=13fdd8139890",
+    "sha256": "13fdd8139890f44e9bf9e31420968624de0d39daf44e9dad74bb9019b33b220e"
+  },
+  "retrievedAt": "2026-11-16T04:13:15.071Z",
+  "match": {
+    "status": "candidate_review_required",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E6%B8%8A%EF%BC%88Deep%20Down%EF%BC%89&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E6%B8%8A%EF%BC%88Deep%20Down%EF%BC%89%20SNH48&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1966832918,
+        "name": "渊 (Deep Down)",
+        "artists": [
+          "孙芮"
+        ],
+        "album": "渊 (Deep Down)",
+        "durationMs": 226559,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1863822769,
+        "name": "渊",
+        "artists": [
+          "SNH48"
+        ],
+        "album": "终极任务Ultimate Mission（上）",
+        "durationMs": 226048,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      },
+      {
+        "id": 2018414734,
+        "name": "渊 (Deep Down) (第八届年度金曲大赏live)",
+        "artists": [
+          "蒋芸",
+          "SNH48王晓佳"
+        ],
+        "album": "SNH48 GROUP第八届年度金曲大赏演唱会LIVE版",
+        "durationMs": 250080,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      },
+      {
+        "id": 1937052299,
+        "name": "渊（Deep Down）(钢琴版Piano Cover)",
+        "artists": [
+          "傷跡"
+        ],
+        "album": "渊",
+        "durationMs": 291829,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 1968637546,
+        "name": "渊（deep down)（翻自 SNH48袁一琦）",
+        "artists": [
+          "周培溪"
+        ],
+        "album": "渊（deep down)",
+        "durationMs": 226048,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 1915982693,
+        "name": "渊 (Deep Down) 粤语",
+        "artists": [
+          "LUKA"
+        ],
+        "album": "Deep Down (Cantonese Ver.)",
+        "durationMs": 226298,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      }
+    ],
+    "workQuery": {
+      "song_id": 275,
+      "song_name": "渊（Deep Down）",
+      "show_as_song_name": "",
+      "display_song_name": "渊（Deep Down）",
+      "artist": "SNH48",
+      "artist_search": "SNH48",
+      "feat_artist": "",
+      "remark": "",
+      "tone": "",
+      "language": "中文",
+      "type": "SNH48、偶像",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV18Jpw6mE82/?p=8",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-06",
+      "row_key": "渊（Deep Down）"
+    },
+    "sourceId": 1966832918,
+    "sourcePath": "sources/1966832918.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1966832918",
+    "selected": {
+      "id": 1966832918,
+      "name": "渊 (Deep Down)",
+      "artists": [
+        "孙芮"
+      ],
+      "album": "渊 (Deep Down)",
+      "durationMs": 226559,
+      "titleScore": 1,
+      "artistMatch": false,
+      "score": 0.8
+    },
+    "timedLineCount": 50
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-275-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 226.603,
+    "sourceFirstLine": {
+      "t": 4.52,
+      "text": "监棚配唱：Wario@X-studio"
+    },
+    "anchorCandidate": null,
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

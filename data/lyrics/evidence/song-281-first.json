@@ -1,0 +1,960 @@
+{
+  "audioSha256": "d5bfca0023cc2dee3666d92414c02d964abed83ab5bcaeeb02763925c35a16b9",
+  "model": "whisper-base",
+  "start": 0,
+  "end": 44.2,
+  "result": {
+    "text": "我去找你我去找你我去找你我去找你我去找你我去找你我去找你转头路或中往南的门听堂当堂风轻扬了手帮助一换听谁家的姑娘很长一区花月成双",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 23.759999999999998,
+        "end": 24.86,
+        "text": "我去找你",
+        "tokens": [
+          50364,
+          1654,
+          6734,
+          25085,
+          2166,
+          50414
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.15930084748701615,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.5996772050857544,
+        "words": [
+          {
+            "word": "我",
+            "start": 23.759999999999998,
+            "end": 24.38,
+            "probability": 0.022630766034126282
+          },
+          {
+            "word": "去",
+            "start": 24.38,
+            "end": 24.38,
+            "probability": 0.004857236053794622
+          },
+          {
+            "word": "找",
+            "start": 24.38,
+            "end": 24.38,
+            "probability": 0.04730786383152008
+          },
+          {
+            "word": "你",
+            "start": 24.38,
+            "end": 24.86,
+            "probability": 0.02257716655731201
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "seek": 0,
+        "start": 24.86,
+        "end": 26.02,
+        "text": "我去找你",
+        "tokens": [
+          50414,
+          1654,
+          6734,
+          25085,
+          2166,
+          50464
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.15930084748701615,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.5996772050857544,
+        "words": [
+          {
+            "word": "我",
+            "start": 24.86,
+            "end": 24.86,
+            "probability": 0.016574041917920113
+          },
+          {
+            "word": "去",
+            "start": 24.86,
+            "end": 25.24,
+            "probability": 0.37200966477394104
+          },
+          {
+            "word": "找",
+            "start": 25.24,
+            "end": 25.9,
+            "probability": 0.7431146502494812
+          },
+          {
+            "word": "你",
+            "start": 25.9,
+            "end": 26.02,
+            "probability": 0.8700949549674988
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "seek": 0,
+        "start": 26.02,
+        "end": 26.12,
+        "text": "我去找你",
+        "tokens": [
+          50464,
+          1654,
+          6734,
+          25085,
+          2166,
+          50514
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.15930084748701615,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.5996772050857544,
+        "words": [
+          {
+            "word": "我",
+            "start": 26.02,
+            "end": 26.04,
+            "probability": 0.31892526149749756
+          },
+          {
+            "word": "去",
+            "start": 26.04,
+            "end": 26.12,
+            "probability": 0.808529794216156
+          },
+          {
+            "word": "找",
+            "start": 26.12,
+            "end": 26.12,
+            "probability": 0.9738362431526184
+          },
+          {
+            "word": "你",
+            "start": 26.12,
+            "end": 26.12,
+            "probability": 0.9667800068855286
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "seek": 0,
+        "start": 26.12,
+        "end": 26.12,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.15930084748701615,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.5996772050857544,
+        "words": []
+      },
+      {
+        "id": 4,
+        "seek": 0,
+        "start": 26.12,
+        "end": 26.12,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.15930084748701615,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.5996772050857544,
+        "words": []
+      },
+      {
+        "id": 5,
+        "seek": 0,
+        "start": 26.12,
+        "end": 26.12,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.15930084748701615,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.5996772050857544,
+        "words": []
+      },
+      {
+        "id": 6,
+        "seek": 0,
+        "start": 26.12,
+        "end": 26.12,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.15930084748701615,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.5996772050857544,
+        "words": []
+      },
+      {
+        "id": 7,
+        "seek": 0,
+        "start": 26.12,
+        "end": 26.12,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.15930084748701615,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.5996772050857544,
+        "words": []
+      },
+      {
+        "id": 8,
+        "seek": 0,
+        "start": 26.12,
+        "end": 26.12,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.15930084748701615,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.5996772050857544,
+        "words": []
+      },
+      {
+        "id": 9,
+        "seek": 0,
+        "start": 26.12,
+        "end": 26.12,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.15930084748701615,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.5996772050857544,
+        "words": []
+      },
+      {
+        "id": 10,
+        "seek": 0,
+        "start": 26.12,
+        "end": 27.32,
+        "text": "我去找你",
+        "tokens": [
+          50864,
+          1654,
+          6734,
+          25085,
+          2166,
+          50914
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.15930084748701615,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.5996772050857544,
+        "words": [
+          {
+            "word": "我",
+            "start": 26.12,
+            "end": 26.12,
+            "probability": 0.6319373846054077
+          },
+          {
+            "word": "去",
+            "start": 26.12,
+            "end": 26.6,
+            "probability": 0.9762197136878967
+          },
+          {
+            "word": "找",
+            "start": 26.6,
+            "end": 26.8,
+            "probability": 0.9951344132423401
+          },
+          {
+            "word": "你",
+            "start": 26.8,
+            "end": 27.32,
+            "probability": 0.9552428126335144
+          }
+        ]
+      },
+      {
+        "id": 11,
+        "seek": 0,
+        "start": 27.32,
+        "end": 28.7,
+        "text": "我去找你",
+        "tokens": [
+          50914,
+          1654,
+          6734,
+          25085,
+          2166,
+          50964
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.15930084748701615,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.5996772050857544,
+        "words": [
+          {
+            "word": "我",
+            "start": 27.32,
+            "end": 27.32,
+            "probability": 0.6274518966674805
+          },
+          {
+            "word": "去",
+            "start": 27.32,
+            "end": 27.32,
+            "probability": 0.9757981896400452
+          },
+          {
+            "word": "找",
+            "start": 27.32,
+            "end": 28.7,
+            "probability": 0.9947139620780945
+          },
+          {
+            "word": "你",
+            "start": 28.7,
+            "end": 28.7,
+            "probability": 0.9561946988105774
+          }
+        ]
+      },
+      {
+        "id": 12,
+        "seek": 0,
+        "start": 28.7,
+        "end": 29.8,
+        "text": "我去找你",
+        "tokens": [
+          50964,
+          1654,
+          6734,
+          25085,
+          2166,
+          51014
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.15930084748701615,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.5996772050857544,
+        "words": [
+          {
+            "word": "我",
+            "start": 28.7,
+            "end": 28.74,
+            "probability": 0.6843729615211487
+          },
+          {
+            "word": "去",
+            "start": 28.74,
+            "end": 29.56,
+            "probability": 0.9785879850387573
+          },
+          {
+            "word": "找",
+            "start": 29.56,
+            "end": 29.8,
+            "probability": 0.995571494102478
+          },
+          {
+            "word": "你",
+            "start": 29.8,
+            "end": 29.8,
+            "probability": 0.9588211178779602
+          }
+        ]
+      },
+      {
+        "id": 13,
+        "seek": 0,
+        "start": 29.8,
+        "end": 29.8,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.15930084748701615,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.5996772050857544,
+        "words": []
+      },
+      {
+        "id": 14,
+        "seek": 0,
+        "start": 29.8,
+        "end": 29.8,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.15930084748701615,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.5996772050857544,
+        "words": []
+      },
+      {
+        "id": 15,
+        "seek": 0,
+        "start": 29.8,
+        "end": 29.8,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.15930084748701615,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.5996772050857544,
+        "words": []
+      },
+      {
+        "id": 16,
+        "seek": 0,
+        "start": 29.8,
+        "end": 29.98,
+        "text": "我去找你",
+        "tokens": [
+          51164,
+          1654,
+          6734,
+          25085,
+          2166,
+          51214
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.15930084748701615,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.5996772050857544,
+        "words": [
+          {
+            "word": "我",
+            "start": 29.8,
+            "end": 29.8,
+            "probability": 0.7328542470932007
+          },
+          {
+            "word": "去",
+            "start": 29.8,
+            "end": 29.8,
+            "probability": 0.9786738753318787
+          },
+          {
+            "word": "找",
+            "start": 29.8,
+            "end": 29.84,
+            "probability": 0.9949554800987244
+          },
+          {
+            "word": "你",
+            "start": 29.84,
+            "end": 29.98,
+            "probability": 0.9552925229072571
+          }
+        ]
+      },
+      {
+        "id": 17,
+        "seek": 0,
+        "start": 29.98,
+        "end": 29.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.15930084748701615,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.5996772050857544,
+        "words": []
+      },
+      {
+        "id": 18,
+        "seek": 0,
+        "start": 29.98,
+        "end": 29.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.15930084748701615,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.5996772050857544,
+        "words": []
+      },
+      {
+        "id": 19,
+        "seek": 0,
+        "start": 29.98,
+        "end": 29.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.15930084748701615,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.5996772050857544,
+        "words": []
+      },
+      {
+        "id": 20,
+        "seek": 0,
+        "start": 29.98,
+        "end": 29.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.15930084748701615,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.5996772050857544,
+        "words": []
+      },
+      {
+        "id": 21,
+        "seek": 0,
+        "start": 29.98,
+        "end": 29.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.15930084748701615,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.5996772050857544,
+        "words": []
+      },
+      {
+        "id": 22,
+        "seek": 0,
+        "start": 29.98,
+        "end": 29.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.15930084748701615,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.5996772050857544,
+        "words": []
+      },
+      {
+        "id": 23,
+        "seek": 0,
+        "start": 29.98,
+        "end": 29.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.15930084748701615,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.5996772050857544,
+        "words": []
+      },
+      {
+        "id": 24,
+        "seek": 0,
+        "start": 29.98,
+        "end": 29.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.15930084748701615,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.5996772050857544,
+        "words": []
+      },
+      {
+        "id": 25,
+        "seek": 0,
+        "start": 29.98,
+        "end": 29.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.15930084748701615,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.5996772050857544,
+        "words": []
+      },
+      {
+        "id": 26,
+        "seek": 0,
+        "start": 29.98,
+        "end": 29.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.15930084748701615,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.5996772050857544,
+        "words": []
+      },
+      {
+        "id": 27,
+        "seek": 0,
+        "start": 29.98,
+        "end": 29.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.15930084748701615,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.5996772050857544,
+        "words": []
+      },
+      {
+        "id": 28,
+        "seek": 0,
+        "start": 29.98,
+        "end": 29.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.15930084748701615,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.5996772050857544,
+        "words": []
+      },
+      {
+        "id": 29,
+        "seek": 2998,
+        "start": 29.98,
+        "end": 33.58,
+        "text": "转头路或中往南的门听堂",
+        "tokens": [
+          50364,
+          17819,
+          105,
+          39862,
+          24658,
+          19780,
+          5975,
+          29510,
+          31021,
+          1546,
+          8259,
+          101,
+          31022,
+          10726,
+          224,
+          50556
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.8679851732755962,
+        "compression_ratio": 0.9557522123893806,
+        "no_speech_prob": 0.8249512314796448,
+        "words": [
+          {
+            "word": "转",
+            "start": 29.98,
+            "end": 30.36,
+            "probability": 0.4416320100426674
+          },
+          {
+            "word": "头",
+            "start": 30.36,
+            "end": 30.52,
+            "probability": 0.25344762206077576
+          },
+          {
+            "word": "路",
+            "start": 30.52,
+            "end": 30.8,
+            "probability": 0.4064488410949707
+          },
+          {
+            "word": "或",
+            "start": 30.8,
+            "end": 31.12,
+            "probability": 0.4954770505428314
+          },
+          {
+            "word": "中",
+            "start": 31.12,
+            "end": 31.4,
+            "probability": 0.23349648714065552
+          },
+          {
+            "word": "往",
+            "start": 31.4,
+            "end": 31.72,
+            "probability": 0.48017042875289917
+          },
+          {
+            "word": "南",
+            "start": 31.72,
+            "end": 32.08,
+            "probability": 0.4833361804485321
+          },
+          {
+            "word": "的",
+            "start": 32.08,
+            "end": 32.48,
+            "probability": 0.8915162682533264
+          },
+          {
+            "word": "门",
+            "start": 32.48,
+            "end": 32.72,
+            "probability": 0.5881551876664162
+          },
+          {
+            "word": "听",
+            "start": 32.72,
+            "end": 33.12,
+            "probability": 0.22948932647705078
+          },
+          {
+            "word": "堂",
+            "start": 33.12,
+            "end": 33.58,
+            "probability": 0.6960893869400024
+          }
+        ]
+      },
+      {
+        "id": 30,
+        "seek": 2998,
+        "start": 33.58,
+        "end": 34.6,
+        "text": "当堂",
+        "tokens": [
+          50556,
+          16233,
+          10726,
+          224,
+          50608
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.8679851732755962,
+        "compression_ratio": 0.9557522123893806,
+        "no_speech_prob": 0.8249512314796448,
+        "words": [
+          {
+            "word": "当",
+            "start": 33.58,
+            "end": 34.16,
+            "probability": 0.12264418601989746
+          },
+          {
+            "word": "堂",
+            "start": 34.16,
+            "end": 34.6,
+            "probability": 0.9125651717185974
+          }
+        ]
+      },
+      {
+        "id": 31,
+        "seek": 2998,
+        "start": 34.6,
+        "end": 36.74,
+        "text": "风轻扬了手帮助一换",
+        "tokens": [
+          50608,
+          47209,
+          17819,
+          119,
+          3416,
+          105,
+          2289,
+          11389,
+          4845,
+          106,
+          37618,
+          2257,
+          26075,
+          95,
+          50710
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.8679851732755962,
+        "compression_ratio": 0.9557522123893806,
+        "no_speech_prob": 0.8249512314796448,
+        "words": [
+          {
+            "word": "风",
+            "start": 34.6,
+            "end": 35.08,
+            "probability": 0.06950578838586807
+          },
+          {
+            "word": "轻",
+            "start": 35.08,
+            "end": 35.22,
+            "probability": 0.5714425817131996
+          },
+          {
+            "word": "扬",
+            "start": 35.22,
+            "end": 35.46,
+            "probability": 0.39413416385650635
+          },
+          {
+            "word": "了",
+            "start": 35.46,
+            "end": 35.68,
+            "probability": 0.18957436084747314
+          },
+          {
+            "word": "手",
+            "start": 35.68,
+            "end": 35.86,
+            "probability": 0.2644823491573334
+          },
+          {
+            "word": "帮",
+            "start": 35.86,
+            "end": 36.1,
+            "probability": 0.6754859685897827
+          },
+          {
+            "word": "助",
+            "start": 36.1,
+            "end": 36.38,
+            "probability": 0.18523049354553223
+          },
+          {
+            "word": "一",
+            "start": 36.38,
+            "end": 36.62,
+            "probability": 0.626490592956543
+          },
+          {
+            "word": "换",
+            "start": 36.62,
+            "end": 36.74,
+            "probability": 0.5551353394985199
+          }
+        ]
+      },
+      {
+        "id": 32,
+        "seek": 2998,
+        "start": 36.74,
+        "end": 38.96,
+        "text": "听谁家的姑娘",
+        "tokens": [
+          50710,
+          31022,
+          33556,
+          5155,
+          1546,
+          46563,
+          31999,
+          50824
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.8679851732755962,
+        "compression_ratio": 0.9557522123893806,
+        "no_speech_prob": 0.8249512314796448,
+        "words": [
+          {
+            "word": "听",
+            "start": 36.74,
+            "end": 37.08,
+            "probability": 0.41410884261131287
+          },
+          {
+            "word": "谁",
+            "start": 37.08,
+            "end": 37.4,
+            "probability": 0.9804908633232117
+          },
+          {
+            "word": "家",
+            "start": 37.4,
+            "end": 37.8,
+            "probability": 0.9486845135688782
+          },
+          {
+            "word": "的",
+            "start": 37.8,
+            "end": 38.12,
+            "probability": 0.9919891953468323
+          },
+          {
+            "word": "姑",
+            "start": 38.12,
+            "end": 38.38,
+            "probability": 0.9765798449516296
+          },
+          {
+            "word": "娘",
+            "start": 38.38,
+            "end": 38.96,
+            "probability": 0.9987234473228455
+          }
+        ]
+      },
+      {
+        "id": 33,
+        "seek": 2998,
+        "start": 38.96,
+        "end": 42.74,
+        "text": "很长一区花月成双",
+        "tokens": [
+          50824,
+          4563,
+          32271,
+          2257,
+          9937,
+          118,
+          20127,
+          6939,
+          11336,
+          2129,
+          234,
+          51072
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.8679851732755962,
+        "compression_ratio": 0.9557522123893806,
+        "no_speech_prob": 0.8249512314796448,
+        "words": [
+          {
+            "word": "很",
+            "start": 38.96,
+            "end": 39.44,
+            "probability": 0.7568572163581848
+          },
+          {
+            "word": "长",
+            "start": 39.44,
+            "end": 39.72,
+            "probability": 0.3304785490036011
+          },
+          {
+            "word": "一",
+            "start": 39.72,
+            "end": 40.22,
+            "probability": 0.8939774632453918
+          },
+          {
+            "word": "区",
+            "start": 40.22,
+            "end": 40.72,
+            "probability": 0.6739469170570374
+          },
+          {
+            "word": "花",
+            "start": 40.72,
+            "end": 41.46,
+            "probability": 0.5460585355758667
+          },
+          {
+            "word": "月",
+            "start": 41.46,
+            "end": 41.76,
+            "probability": 0.21271611750125885
+          },
+          {
+            "word": "成",
+            "start": 41.76,
+            "end": 42.14,
+            "probability": 0.713566243648529
+          },
+          {
+            "word": "双",
+            "start": 42.14,
+            "end": 42.74,
+            "probability": 0.6682344973087311
+          }
+        ]
+      }
+    ],
+    "language": "zh"
+  }
+}

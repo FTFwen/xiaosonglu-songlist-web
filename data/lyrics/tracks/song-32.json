@@ -1,0 +1,163 @@
+{
+  "schemaVersion": 1,
+  "key": "song-32",
+  "songId": 32,
+  "songName": "食虫植物",
+  "displaySongName": "食虫植物",
+  "artist": "理芽",
+  "language": "日文",
+  "derivative": false,
+  "audio": {
+    "url": "assets/audio/song_46.m4a?v=a15cb9a1e43f",
+    "sha256": "a15cb9a1e43f9c9e7a543ffe115fc7de0fe091e03b47e797b3d6fe668a9007e3"
+  },
+  "retrievedAt": "2026-11-16T03:57:36.997Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E9%A3%9F%E8%99%AB%E6%A4%8D%E7%89%A9&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1867921493,
+        "name": "食虫植物",
+        "artists": [
+          "理芽"
+        ],
+        "album": "NEW ROMANCER",
+        "durationMs": 157946,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2013726950,
+        "name": "食虫植物",
+        "artists": [
+          "理芽"
+        ],
+        "album": "KAMITSUBAKI STUDIO SAMPLER Vol. 1",
+        "durationMs": 157280,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1852021760,
+        "name": "食虫植物",
+        "artists": [
+          "理芽"
+        ],
+        "album": "食虫植物",
+        "durationMs": 157946,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 3403350064,
+        "name": "食虫植物",
+        "artists": [
+          "理芽"
+        ],
+        "album": "CHOCOLATE LIVE",
+        "durationMs": 159432,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1861901520,
+        "name": "食虫植物",
+        "artists": [
+          "冰山",
+          "可不"
+        ],
+        "album": "食虫植物",
+        "durationMs": 159395,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1918892639,
+        "name": "食虫植物",
+        "artists": [
+          "笹川真生"
+        ],
+        "album": "食虫植物",
+        "durationMs": 182384,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3394057628,
+        "name": "食虫植物",
+        "artists": [
+          "椎名唯華",
+          "星導ショウ"
+        ],
+        "album": "食虫植物",
+        "durationMs": 160104,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2707721803,
+        "name": "食虫植物",
+        "artists": [
+          "ふぉるて"
+        ],
+        "album": "♛歌ってみた（2023）",
+        "durationMs": 158302,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "sourceId": 1867921493,
+    "sourcePath": "sources/1867921493.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1867921493",
+    "selected": {
+      "id": 1867921493,
+      "name": "食虫植物",
+      "artists": [
+        "理芽"
+      ],
+      "album": "NEW ROMANCER",
+      "durationMs": 157946,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 31
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-32-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 161.237,
+    "sourceFirstLine": {
+      "t": 8.381,
+      "text": "DADALADALADIDA"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 26.94,
+      "endSeconds": 29.74,
+      "similarity": 0.0,
+      "recognizedText": "【音",
+      "meanProbability": 0.014,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "ja",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  },
+  "rowKey": "食虫植物",
+  "edition": "",
+  "remark": "视频标题直接给出真实歌曲名《食虫植物》；页面未直写日期，但该条与《偏食》《下等马》《月が綺麗ね》《春日影》《白鸟过河滩》等同属 2026-08-11 歌切候选网络，按当前 song-cut-first 流程先以 2026-08-11 manual-normalized 收录。"
+}

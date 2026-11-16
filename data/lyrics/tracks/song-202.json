@@ -1,0 +1,162 @@
+{
+  "schemaVersion": 1,
+  "key": "song-202",
+  "songId": 202,
+  "songName": "告死鸟",
+  "displaySongName": "告死鸟",
+  "artist": "ilem / 洛天依",
+  "language": "中文",
+  "derivative": false,
+  "audio": {
+    "url": "assets/audio/song_201.m4a?v=ab768bfe10ed",
+    "sha256": "ab768bfe10eda6e1f0619948038d86178cb889f8b4b03cbb6e9d81049a8e0edf"
+  },
+  "retrievedAt": "2026-11-16T03:58:47.679Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E5%91%8A%E6%AD%BB%E9%B8%9F&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 3372975275,
+        "name": "告死鸟",
+        "artists": [
+          "ilem"
+        ],
+        "album": "告死鸟",
+        "durationMs": 241286,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 3374037302,
+        "name": "告死鸟",
+        "artists": [
+          "洛天依",
+          "xohRat@"
+        ],
+        "album": "告死鸟",
+        "durationMs": 239088,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 3441836094,
+        "name": "告死鸟",
+        "artists": [
+          "三无Marblue"
+        ],
+        "album": "告死鸟",
+        "durationMs": 238988,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3377508896,
+        "name": "告死鸟",
+        "artists": [
+          "西瓜Kune"
+        ],
+        "album": "告死鸟",
+        "durationMs": 238497,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3388256302,
+        "name": "告死鸟",
+        "artists": [
+          "敛云烟"
+        ],
+        "album": "敛云烟2026翻唱合集",
+        "durationMs": 241286,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3374587913,
+        "name": "告死鸟",
+        "artists": [
+          "沈玄汐"
+        ],
+        "album": "告死鸟（翻自 洛天依）",
+        "durationMs": 241286,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3372975276,
+        "name": "告死鸟 (伴奏)",
+        "artists": [
+          "ilem"
+        ],
+        "album": "告死鸟",
+        "durationMs": 241286,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      },
+      {
+        "id": 3373465233,
+        "name": "告死鸟（古风版）",
+        "artists": [
+          "芝士808"
+        ],
+        "album": "告死鸟",
+        "durationMs": 253200,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      }
+    ],
+    "sourceId": 3372975275,
+    "sourcePath": "sources/3372975275.json",
+    "sourceUrl": "https://music.163.com/#/song?id=3372975275",
+    "selected": {
+      "id": 3372975275,
+      "name": "告死鸟",
+      "artists": [
+        "ilem"
+      ],
+      "album": "告死鸟",
+      "durationMs": 241286,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 57
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-202-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 270.869,
+    "sourceFirstLine": {
+      "t": 13.75,
+      "text": "蝉声稀 竹花起"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 5.68,
+      "endSeconds": 6.46,
+      "similarity": 0.0,
+      "recognizedText": "弄",
+      "meanProbability": 0.508,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  },
+  "rowKey": "告死鸟",
+  "edition": "",
+  "remark": "UP 心灵火Flame《20260919 歌切》P4；ilem 作曲、洛天依演唱（2024 投稿，两小时殿堂）"
+}

@@ -1,0 +1,166 @@
+{
+  "schemaVersion": 1,
+  "key": "song-61",
+  "songId": 61,
+  "songName": "思华年",
+  "displaySongName": "思华年",
+  "artist": "忘川风华录 / 星尘",
+  "language": "中文",
+  "derivative": false,
+  "audio": {
+    "url": "assets/audio/song_52.m4a?v=9d120efa7624",
+    "sha256": "9d120efa7624ac11295c4619c93037f34fce375807cef452b0117e611cb1eae3"
+  },
+  "retrievedAt": "2026-11-16T03:58:16.713Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E6%80%9D%E5%8D%8E%E5%B9%B4&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 2635563892,
+        "name": "思华年",
+        "artists": [
+          "忘川风华录",
+          "星尘"
+        ],
+        "album": "思华年",
+        "durationMs": 256208,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2677951991,
+        "name": "思华年",
+        "artists": [
+          "东方栀子",
+          "忘川风华录",
+          "WWateRZ"
+        ],
+        "album": "WWateRZ翻调",
+        "durationMs": 256789,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2618532738,
+        "name": "思华年",
+        "artists": [
+          "茶了了"
+        ],
+        "album": "思华年",
+        "durationMs": 250996,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2624881600,
+        "name": "思华年",
+        "artists": [
+          "萧忆情Alex"
+        ],
+        "album": "思华年",
+        "durationMs": 256208,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2653019563,
+        "name": "思华年",
+        "artists": [
+          "Lorien"
+        ],
+        "album": "思华年",
+        "durationMs": 254913,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2636479524,
+        "name": "思华年",
+        "artists": [
+          "江陵"
+        ],
+        "album": "思华年",
+        "durationMs": 253015,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2635568497,
+        "name": "思华年 伴奏",
+        "artists": [
+          "忘川风华录",
+          "星尘infinity"
+        ],
+        "album": "思华年",
+        "durationMs": 256208,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      },
+      {
+        "id": 2684932904,
+        "name": "思华年(男声版)",
+        "artists": [
+          "灰治岚枔"
+        ],
+        "album": "思华年",
+        "durationMs": 255122,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      }
+    ],
+    "sourceId": 2635563892,
+    "sourcePath": "sources/2635563892.json",
+    "sourceUrl": "https://music.163.com/#/song?id=2635563892",
+    "selected": {
+      "id": 2635563892,
+      "name": "思华年",
+      "artists": [
+        "忘川风华录",
+        "星尘"
+      ],
+      "album": "思华年",
+      "durationMs": 256208,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 45
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-61-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 252.471,
+    "sourceFirstLine": {
+      "t": 3.6109999999999998,
+      "text": "调校：坐标P"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 25.46,
+      "endSeconds": 26.22,
+      "similarity": 0.0,
+      "recognizedText": "我",
+      "meanProbability": 0.034,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  },
+  "rowKey": "思华年",
+  "edition": "",
+  "remark": "来自 2026-08-18 歌切合集《【663645TV】神回！我已启动！全力绿来唱完了！8月18日歌切合集【小松绿Viridis】》的分P《14-思华年》。按当前 song-cut-first 策略，将合集章节名直接并入正式曲库；当前记录的是合集内顺序时间，不是原始直播回放时间。"
+}

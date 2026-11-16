@@ -1,0 +1,183 @@
+{
+  "schemaVersion": 1,
+  "key": "song-395",
+  "songId": 395,
+  "songName": "千古",
+  "rowKey": "千古",
+  "displaySongName": "千古",
+  "artist": "阿兰",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "电视剧《花千骨》主题曲，阿兰演唱。",
+  "audio": {
+    "url": "assets/audio/song_394.m4a?v=9c544fb87c39",
+    "sha256": "9c544fb87c3916205016e00ec312d6791bd7584778083d3218a0e7c293e36d9d"
+  },
+  "retrievedAt": "2026-11-16T04:08:24.588Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E5%8D%83%E5%8F%A4&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E5%8D%83%E5%8F%A4%20%E9%98%BF%E5%85%B0&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 33223036,
+        "name": "千古",
+        "artists": [
+          "阿兰"
+        ],
+        "album": "花千骨 电视原声带",
+        "durationMs": 255648,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2066790538,
+        "name": "千古",
+        "artists": [
+          "阿兰"
+        ],
+        "album": "千古",
+        "durationMs": 201605,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 34040693,
+        "name": "千古",
+        "artists": [
+          "许嵩"
+        ],
+        "album": "千古",
+        "durationMs": 221180,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3336195350,
+        "name": "千古",
+        "artists": [
+          "洪尘"
+        ],
+        "album": "山河赋（叁）",
+        "durationMs": 124137,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 512699360,
+        "name": "千古",
+        "artists": [
+          "繁音"
+        ],
+        "album": "千古",
+        "durationMs": 221232,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3362250535,
+        "name": "千古",
+        "artists": [
+          "阿蘭·達瓦卓瑪"
+        ],
+        "album": "",
+        "durationMs": 255698,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3372434732,
+        "name": "千古 (Cover 阿兰)",
+        "artists": [
+          "司空月白"
+        ],
+        "album": "",
+        "durationMs": 251385,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 34057977,
+        "name": "千古(云音乐特别版)",
+        "artists": [
+          "许嵩"
+        ],
+        "album": "千古",
+        "durationMs": 220046,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      }
+    ],
+    "workQuery": {
+      "song_id": 395,
+      "song_name": "千古",
+      "show_as_song_name": "",
+      "display_song_name": "千古",
+      "artist": "阿兰",
+      "artist_search": "阿兰",
+      "feat_artist": "",
+      "remark": "电视剧《花千骨》主题曲，阿兰演唱。",
+      "tone": "",
+      "language": "中文",
+      "type": "影视、国风",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1LRWd6jEqp/?p=12",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-11-12",
+      "row_key": "千古"
+    },
+    "sourceId": 33223036,
+    "sourcePath": "sources/33223036.json",
+    "sourceUrl": "https://music.163.com/#/song?id=33223036",
+    "selected": {
+      "id": 33223036,
+      "name": "千古",
+      "artists": [
+        "阿兰"
+      ],
+      "album": "花千骨 电视原声带",
+      "durationMs": 255648,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 28
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-395-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 253.76,
+    "sourceFirstLine": {
+      "t": 27.359,
+      "text": "夏蝉冬雪不过轮回一瞥"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 29.94,
+      "endSeconds": 32.26,
+      "similarity": 0.4,
+      "recognizedText": " 不過冷會一",
+      "meanProbability": 0.522,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

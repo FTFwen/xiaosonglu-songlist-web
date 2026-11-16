@@ -1,0 +1,505 @@
+{
+  "audioSha256": "6836f198903516f1b7ea94f5ac01b1c8454a949a645959780d2c3d79103877b9",
+  "model": "whisper-base",
+  "start": 0,
+  "end": 57.01,
+  "result": {
+    "text": " Music I'm not a good guy. I'm not a good guy. I'm not a good guy. I'm not a good guy. I'm not a good guy. I'm not a good guy. I'm not a good guy.",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 22.92,
+        "end": 24.32,
+        "text": " Music",
+        "tokens": [
+          50364,
+          7609,
+          51364
+        ],
+        "temperature": 0,
+        "avg_logprob": -1.7257884740829468,
+        "compression_ratio": 0.38461538461538464,
+        "no_speech_prob": 0.5313029885292053,
+        "words": [
+          {
+            "word": " Music",
+            "start": 22.92,
+            "end": 24.32,
+            "probability": 0.0045588212087750435
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "seek": 3000,
+        "start": 34.42,
+        "end": 40.64,
+        "text": " I'm not a good guy.",
+        "tokens": [
+          50364,
+          286,
+          478,
+          406,
+          257,
+          665,
+          2146,
+          13,
+          50464
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.32610493898391724,
+        "compression_ratio": 9.0,
+        "no_speech_prob": 0.48028868436813354,
+        "words": [
+          {
+            "word": " I'm",
+            "start": 34.42,
+            "end": 35.82,
+            "probability": 0.04959511198103428
+          },
+          {
+            "word": " not",
+            "start": 35.82,
+            "end": 37.22,
+            "probability": 0.0323437824845314
+          },
+          {
+            "word": " a",
+            "start": 37.22,
+            "end": 39.28,
+            "probability": 0.06755541265010834
+          },
+          {
+            "word": " good",
+            "start": 39.28,
+            "end": 39.36,
+            "probability": 0.04056773707270622
+          },
+          {
+            "word": " guy.",
+            "start": 39.36,
+            "end": 40.64,
+            "probability": 0.0746457576751709
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "seek": 3000,
+        "start": 41.48,
+        "end": 42.62,
+        "text": " I'm not a good guy.",
+        "tokens": [
+          50464,
+          286,
+          478,
+          406,
+          257,
+          665,
+          2146,
+          13,
+          50564
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.32610493898391724,
+        "compression_ratio": 9.0,
+        "no_speech_prob": 0.48028868436813354,
+        "words": [
+          {
+            "word": " I'm",
+            "start": 41.48,
+            "end": 42.62,
+            "probability": 0.4093557894229889
+          },
+          {
+            "word": " not",
+            "start": 42.62,
+            "end": 42.62,
+            "probability": 0.47041961550712585
+          },
+          {
+            "word": " a",
+            "start": 42.62,
+            "end": 42.62,
+            "probability": 0.6129822134971619
+          },
+          {
+            "word": " good",
+            "start": 42.62,
+            "end": 42.62,
+            "probability": 0.5265557169914246
+          },
+          {
+            "word": " guy.",
+            "start": 42.62,
+            "end": 42.62,
+            "probability": 0.8117181658744812
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "seek": 3000,
+        "start": 42.62,
+        "end": 42.62,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.32610493898391724,
+        "compression_ratio": 9.0,
+        "no_speech_prob": 0.48028868436813354,
+        "words": []
+      },
+      {
+        "id": 4,
+        "seek": 3000,
+        "start": 42.62,
+        "end": 42.62,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.32610493898391724,
+        "compression_ratio": 9.0,
+        "no_speech_prob": 0.48028868436813354,
+        "words": []
+      },
+      {
+        "id": 5,
+        "seek": 3000,
+        "start": 42.62,
+        "end": 42.62,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.32610493898391724,
+        "compression_ratio": 9.0,
+        "no_speech_prob": 0.48028868436813354,
+        "words": []
+      },
+      {
+        "id": 6,
+        "seek": 3000,
+        "start": 42.62,
+        "end": 42.62,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.32610493898391724,
+        "compression_ratio": 9.0,
+        "no_speech_prob": 0.48028868436813354,
+        "words": []
+      },
+      {
+        "id": 7,
+        "seek": 3000,
+        "start": 42.62,
+        "end": 42.62,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.32610493898391724,
+        "compression_ratio": 9.0,
+        "no_speech_prob": 0.48028868436813354,
+        "words": []
+      },
+      {
+        "id": 8,
+        "seek": 3000,
+        "start": 42.62,
+        "end": 42.62,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.32610493898391724,
+        "compression_ratio": 9.0,
+        "no_speech_prob": 0.48028868436813354,
+        "words": []
+      },
+      {
+        "id": 9,
+        "seek": 3000,
+        "start": 42.62,
+        "end": 42.62,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.32610493898391724,
+        "compression_ratio": 9.0,
+        "no_speech_prob": 0.48028868436813354,
+        "words": []
+      },
+      {
+        "id": 10,
+        "seek": 3000,
+        "start": 42.7,
+        "end": 45.52,
+        "text": " I'm not a good guy.",
+        "tokens": [
+          51264,
+          286,
+          478,
+          406,
+          257,
+          665,
+          2146,
+          13,
+          51364
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.32610493898391724,
+        "compression_ratio": 9.0,
+        "no_speech_prob": 0.48028868436813354,
+        "words": [
+          {
+            "word": " I'm",
+            "start": 42.7,
+            "end": 44.1,
+            "probability": 0.778990238904953
+          },
+          {
+            "word": " not",
+            "start": 44.1,
+            "end": 44.1,
+            "probability": 0.9892725944519043
+          },
+          {
+            "word": " a",
+            "start": 44.1,
+            "end": 44.1,
+            "probability": 0.9559256434440613
+          },
+          {
+            "word": " good",
+            "start": 44.1,
+            "end": 45.48,
+            "probability": 0.9557871222496033
+          },
+          {
+            "word": " guy.",
+            "start": 45.48,
+            "end": 45.52,
+            "probability": 0.9724329113960266
+          }
+        ]
+      },
+      {
+        "id": 11,
+        "seek": 3000,
+        "start": 46.06,
+        "end": 49.14,
+        "text": " I'm not a good guy.",
+        "tokens": [
+          51364,
+          286,
+          478,
+          406,
+          257,
+          665,
+          2146,
+          13,
+          51464
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.32610493898391724,
+        "compression_ratio": 9.0,
+        "no_speech_prob": 0.48028868436813354,
+        "words": [
+          {
+            "word": " I'm",
+            "start": 46.06,
+            "end": 47.02,
+            "probability": 0.7828089892864227
+          },
+          {
+            "word": " not",
+            "start": 47.02,
+            "end": 47.22,
+            "probability": 0.9895161390304565
+          },
+          {
+            "word": " a",
+            "start": 47.22,
+            "end": 47.26,
+            "probability": 0.955094575881958
+          },
+          {
+            "word": " good",
+            "start": 47.26,
+            "end": 49.14,
+            "probability": 0.9573972821235657
+          },
+          {
+            "word": " guy.",
+            "start": 49.14,
+            "end": 49.14,
+            "probability": 0.975713849067688
+          }
+        ]
+      },
+      {
+        "id": 12,
+        "seek": 3000,
+        "start": 49.14,
+        "end": 50.74,
+        "text": " I'm not a good guy.",
+        "tokens": [
+          51464,
+          286,
+          478,
+          406,
+          257,
+          665,
+          2146,
+          13,
+          51564
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.32610493898391724,
+        "compression_ratio": 9.0,
+        "no_speech_prob": 0.48028868436813354,
+        "words": [
+          {
+            "word": " I'm",
+            "start": 49.14,
+            "end": 49.44,
+            "probability": 0.7891226708889008
+          },
+          {
+            "word": " not",
+            "start": 49.44,
+            "end": 50.74,
+            "probability": 0.9898384809494019
+          },
+          {
+            "word": " a",
+            "start": 50.74,
+            "end": 50.74,
+            "probability": 0.9500033855438232
+          },
+          {
+            "word": " good",
+            "start": 50.74,
+            "end": 50.74,
+            "probability": 0.9616217017173767
+          },
+          {
+            "word": " guy.",
+            "start": 50.74,
+            "end": 50.74,
+            "probability": 0.9765716791152954
+          }
+        ]
+      },
+      {
+        "id": 13,
+        "seek": 3000,
+        "start": 51.06,
+        "end": 53.42,
+        "text": " I'm not a good guy.",
+        "tokens": [
+          51564,
+          286,
+          478,
+          406,
+          257,
+          665,
+          2146,
+          13,
+          51664
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.32610493898391724,
+        "compression_ratio": 9.0,
+        "no_speech_prob": 0.48028868436813354,
+        "words": [
+          {
+            "word": " I'm",
+            "start": 51.06,
+            "end": 52.46,
+            "probability": 0.7948219180107117
+          },
+          {
+            "word": " not",
+            "start": 52.46,
+            "end": 53.42,
+            "probability": 0.9882901906967163
+          },
+          {
+            "word": " a",
+            "start": 53.42,
+            "end": 53.42,
+            "probability": 0.9495389461517334
+          },
+          {
+            "word": " good",
+            "start": 53.42,
+            "end": 53.42,
+            "probability": 0.9606994986534119
+          },
+          {
+            "word": " guy.",
+            "start": 53.42,
+            "end": 53.42,
+            "probability": 0.977860689163208
+          }
+        ]
+      },
+      {
+        "id": 14,
+        "seek": 3000,
+        "start": 56.0,
+        "end": 56.98,
+        "text": " I'm not a good guy.",
+        "tokens": [
+          51664,
+          286,
+          478,
+          406,
+          257,
+          665,
+          2146,
+          13,
+          51764
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.32610493898391724,
+        "compression_ratio": 9.0,
+        "no_speech_prob": 0.48028868436813354,
+        "words": [
+          {
+            "word": " I'm",
+            "start": 55.68,
+            "end": 56.38,
+            "probability": 0.7997264862060547
+          },
+          {
+            "word": " not",
+            "start": 56.38,
+            "end": 56.98,
+            "probability": 0.9888485670089722
+          },
+          {
+            "word": " a",
+            "start": 56.98,
+            "end": 56.98,
+            "probability": 0.9483908414840698
+          },
+          {
+            "word": " good",
+            "start": 56.98,
+            "end": 56.98,
+            "probability": 0.9638322591781616
+          },
+          {
+            "word": " guy.",
+            "start": 56.98,
+            "end": 56.98,
+            "probability": 0.9793216586112976
+          }
+        ]
+      }
+    ],
+    "language": "en"
+  }
+}

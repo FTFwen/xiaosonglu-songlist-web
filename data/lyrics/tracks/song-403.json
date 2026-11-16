@@ -1,0 +1,183 @@
+{
+  "schemaVersion": 1,
+  "key": "song-403",
+  "songId": 403,
+  "songName": "不问天",
+  "rowKey": "不问天",
+  "displaySongName": "不问天",
+  "artist": "说说Crystal",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "说说Crystal 演唱，2021 拜年纪单品（B站官方 ©2021 上海宽娱）。",
+  "audio": {
+    "url": "assets/audio/song_402.m4a?v=ceed601ce44f",
+    "sha256": "ceed601ce44fb0b1e7d1fe4ececdea4fec2dbd467f6caadf547d7930fba0ac70"
+  },
+  "retrievedAt": "2026-11-16T04:08:16.078Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E4%B8%8D%E9%97%AE%E5%A4%A9&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E4%B8%8D%E9%97%AE%E5%A4%A9%20%E8%AF%B4%E8%AF%B4Crystal&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1824454149,
+        "name": "不问天",
+        "artists": [
+          "说说Crystal"
+        ],
+        "album": "2021哔哩哔哩拜年纪",
+        "durationMs": 256000,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1905945600,
+        "name": "不问天",
+        "artists": [
+          "2233"
+        ],
+        "album": "BILIBILI MACRO LINK - Visual Release 2021",
+        "durationMs": 254444,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2024069500,
+        "name": "不问天",
+        "artists": [
+          "蛋哥"
+        ],
+        "album": "不谓侠",
+        "durationMs": 256052,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2152154492,
+        "name": "不问天",
+        "artists": [
+          "卖艺兔Art"
+        ],
+        "album": "不问天",
+        "durationMs": 256764,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1821308261,
+        "name": "不问天（翻自 说说Crystal）",
+        "artists": [
+          "兰音Reine"
+        ],
+        "album": "不问天",
+        "durationMs": 256077,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 1822204582,
+        "name": "不问天（翻自 说说）",
+        "artists": [
+          "萧忆情Alex"
+        ],
+        "album": "不问天",
+        "durationMs": 256052,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 1821539081,
+        "name": "不问天（粤语版）（翻自 说说Crystal）",
+        "artists": [
+          "雪霏岚岚"
+        ],
+        "album": "不问天粤语翻唱",
+        "durationMs": 257042,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 1820050368,
+        "name": "不问天（翻自 说说）",
+        "artists": [
+          "茶了了"
+        ],
+        "album": "不问天",
+        "durationMs": 256348,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      }
+    ],
+    "workQuery": {
+      "song_id": 403,
+      "song_name": "不问天",
+      "show_as_song_name": "",
+      "display_song_name": "不问天",
+      "artist": "说说Crystal",
+      "artist_search": "说说Crystal",
+      "feat_artist": "",
+      "remark": "说说Crystal 演唱，2021 拜年纪单品（B站官方 ©2021 上海宽娱）。",
+      "tone": "",
+      "language": "中文",
+      "type": "国风",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1LRWd6jEqp/?p=28",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-11-12",
+      "row_key": "不问天"
+    },
+    "sourceId": 1824454149,
+    "sourcePath": "sources/1824454149.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1824454149",
+    "selected": {
+      "id": 1824454149,
+      "name": "不问天",
+      "artists": [
+        "说说Crystal"
+      ],
+      "album": "2021哔哩哔哩拜年纪",
+      "durationMs": 256000,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 42
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-403-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 253.867,
+    "sourceFirstLine": {
+      "t": 20.386,
+      "text": "今宵明月不是上选 只合陪我轻轻谈"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 29.02,
+      "endSeconds": 29.26,
+      "similarity": 0.0,
+      "recognizedText": "作",
+      "meanProbability": 0.002,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

@@ -1,0 +1,187 @@
+{
+  "schemaVersion": 1,
+  "key": "song-356",
+  "songId": 356,
+  "songName": "泛泛人类不会祈祷",
+  "rowKey": "泛泛人类不会祈祷",
+  "displaySongName": "泛泛人类不会祈祷",
+  "artist": "一碗热汤p / 洛天依",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "一碗热汤p 词曲编混调一体，VC 曲",
+  "audio": {
+    "url": "assets/audio/song_355.m4a?v=f8b653cb5aa2",
+    "sha256": "f8b653cb5aa20bdd77527fe8914a07a4cf9ebe87ba3e1b22eda00476438f5fa6"
+  },
+  "retrievedAt": "2026-11-16T04:07:39.506Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E6%B3%9B%E6%B3%9B%E4%BA%BA%E7%B1%BB%E4%B8%8D%E4%BC%9A%E7%A5%88%E7%A5%B7&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E6%B3%9B%E6%B3%9B%E4%BA%BA%E7%B1%BB%E4%B8%8D%E4%BC%9A%E7%A5%88%E7%A5%B7%20%E4%B8%80%E7%A2%97%E7%83%AD%E6%B1%A4p%20%2F%20%E6%B4%9B%E5%A4%A9%E4%BE%9D&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 2085763107,
+        "name": "泛泛人类不会祈祷",
+        "artists": [
+          "一碗热汤p"
+        ],
+        "album": "泛泛人类不会祈祷",
+        "durationMs": 258990,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2733447566,
+        "name": "泛泛人类不会祈祷",
+        "artists": [
+          "洛天依",
+          "Ranken"
+        ],
+        "album": "泛泛人类不会祈祷",
+        "durationMs": 260992,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 3421244554,
+        "name": "泛泛人类不会祈祷",
+        "artists": [
+          "Kiryu啊啊啊",
+          "洛天依"
+        ],
+        "album": "翻调练习",
+        "durationMs": 259200,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2125701063,
+        "name": "泛泛人类不会祈祷",
+        "artists": [
+          "洛天依",
+          "伊点半"
+        ],
+        "album": "来听听我的翻调吧",
+        "durationMs": 258996,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2091942735,
+        "name": "泛泛人类不会祈祷",
+        "artists": [
+          "这就是天幻呀",
+          "svc融合歌手-幻"
+        ],
+        "album": "幻酱的作品集（1）",
+        "durationMs": 258645,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2120217768,
+        "name": "泛泛人类不会祈祷",
+        "artists": [
+          "忆辰Rebacca"
+        ],
+        "album": "忆辰的翻唱",
+        "durationMs": 259055,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2645611729,
+        "name": "泛泛人类不会祈祷",
+        "artists": [
+          "ギリギリ雾乃"
+        ],
+        "album": "听听！",
+        "durationMs": 259030,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2105233825,
+        "name": "泛泛人类不会祈祷",
+        "artists": [
+          "滋滋是滋滋"
+        ],
+        "album": "2023",
+        "durationMs": 262471,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 356,
+      "song_name": "泛泛人类不会祈祷",
+      "show_as_song_name": "",
+      "display_song_name": "泛泛人类不会祈祷",
+      "artist": "一碗热汤p / 洛天依",
+      "artist_search": "一碗热汤p / 洛天依",
+      "feat_artist": "",
+      "remark": "一碗热汤p 词曲编混调一体，VC 曲",
+      "tone": "",
+      "language": "中文",
+      "type": "中V、中文原创",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1nRxJ6tEPC/?p=2",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-31",
+      "row_key": "泛泛人类不会祈祷"
+    },
+    "sourceId": 2085763107,
+    "sourcePath": "sources/2085763107.json",
+    "sourceUrl": "https://music.163.com/#/song?id=2085763107",
+    "selected": {
+      "id": 2085763107,
+      "name": "泛泛人类不会祈祷",
+      "artists": [
+        "一碗热汤p"
+      ],
+      "album": "泛泛人类不会祈祷",
+      "durationMs": 258990,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 48
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-356-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 256.405,
+    "sourceFirstLine": {
+      "t": 26.88,
+      "text": "我跟上你 向哪去 向哪去 向哪去 海边风铃"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 26.2,
+      "endSeconds": 32.56,
+      "similarity": 0.4117647058823529,
+      "recognizedText": "我跟上一项那句像我这句想拿去海边风",
+      "meanProbability": 0.501,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

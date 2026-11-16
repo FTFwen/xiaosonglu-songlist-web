@@ -1,0 +1,163 @@
+{
+  "schemaVersion": 1,
+  "key": "song-150",
+  "songId": 150,
+  "songName": "樱花草",
+  "displaySongName": "樱花草",
+  "artist": "Sweety",
+  "language": "中文",
+  "derivative": false,
+  "audio": {
+    "url": "assets/audio/song_149.m4a?v=90feeeda187c",
+    "sha256": "90feeeda187c046f95d3ee0510e7c28883b0cf3ff08eeaa856cd245e53c4021f"
+  },
+  "retrievedAt": "2026-11-16T03:58:45.729Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E6%A8%B1%E8%8A%B1%E8%8D%89&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 376971,
+        "name": "樱花草",
+        "artists": [
+          "Sweety"
+        ],
+        "album": "花言乔语",
+        "durationMs": 283840,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2131035285,
+        "name": "樱花草",
+        "artists": [
+          "Sweety"
+        ],
+        "album": "花言乔语 (精装版)",
+        "durationMs": 283826,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2625404141,
+        "name": "樱花草",
+        "artists": [
+          "Sweety",
+          "Enko"
+        ],
+        "album": "回忆录",
+        "durationMs": 284723,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 5256963,
+        "name": "樱花草",
+        "artists": [
+          "Sweety"
+        ],
+        "album": "再爱一次",
+        "durationMs": 283840,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 3402363201,
+        "name": "樱花草",
+        "artists": [
+          "陈与默"
+        ],
+        "album": "樱花草",
+        "durationMs": 131421,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3406281319,
+        "name": "樱花草",
+        "artists": [
+          "小雪"
+        ],
+        "album": "樱花草",
+        "durationMs": 283860,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3448153952,
+        "name": "樱花草",
+        "artists": [
+          "林可期",
+          "krs"
+        ],
+        "album": "樱花草",
+        "durationMs": 133758,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3399851341,
+        "name": "樱花草",
+        "artists": [
+          "DJ大大怪"
+        ],
+        "album": "樱花草",
+        "durationMs": 124865,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "sourceId": 376971,
+    "sourcePath": "sources/376971.json",
+    "sourceUrl": "https://music.163.com/#/song?id=376971",
+    "selected": {
+      "id": 376971,
+      "name": "樱花草",
+      "artists": [
+        "Sweety"
+      ],
+      "album": "花言乔语",
+      "durationMs": 283840,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 58
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-150-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 292.075,
+    "sourceFirstLine": {
+      "t": 32.02,
+      "text": "晚风吹动着竹林"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 43.46,
+      "endSeconds": 43.82,
+      "similarity": 0.25,
+      "recognizedText": "风",
+      "meanProbability": 0.331,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  },
+  "rowKey": "樱花草",
+  "edition": "",
+  "remark": ""
+}

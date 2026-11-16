@@ -1,0 +1,183 @@
+{
+  "schemaVersion": 1,
+  "key": "song-374",
+  "songId": 374,
+  "songName": "伪善者",
+  "rowKey": "伪善者",
+  "displaySongName": "伪善者",
+  "artist": "金渔",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "金渔 2022 原创",
+  "audio": {
+    "url": "assets/audio/song_373.m4a?v=b7215dd97448",
+    "sha256": "b7215dd97448e06670840734a11f1b2ae2ab6007863660bb7dc145a6615a54a3"
+  },
+  "retrievedAt": "2026-11-16T04:07:48.384Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E4%BC%AA%E5%96%84%E8%80%85&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E4%BC%AA%E5%96%84%E8%80%85%20%E9%87%91%E6%B8%94&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1929356674,
+        "name": "伪善者",
+        "artists": [
+          "金渔"
+        ],
+        "album": "自游",
+        "durationMs": 220952,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1946611970,
+        "name": "伪善者",
+        "artists": [
+          "金渔"
+        ],
+        "album": "怜",
+        "durationMs": 220960,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 3459432628,
+        "name": "伪善者",
+        "artists": [
+          "金渔"
+        ],
+        "album": "伪善者",
+        "durationMs": 220952,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1963287657,
+        "name": "伪善者",
+        "artists": [
+          "月霜"
+        ],
+        "album": "伪善者",
+        "durationMs": 218598,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1941563131,
+        "name": "伪善者",
+        "artists": [
+          "米花六六"
+        ],
+        "album": "六的翻唱",
+        "durationMs": 19319,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2117410903,
+        "name": "伪善者",
+        "artists": [
+          "晴岚"
+        ],
+        "album": "伪善者",
+        "durationMs": 218122,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2008742577,
+        "name": "伪善者",
+        "artists": [
+          "妍月月"
+        ],
+        "album": "伪善者——翻自 金渔",
+        "durationMs": 219454,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1929356675,
+        "name": "伪善者 (伴奏)",
+        "artists": [
+          "金渔"
+        ],
+        "album": "自游",
+        "durationMs": 220952,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      }
+    ],
+    "workQuery": {
+      "song_id": 374,
+      "song_name": "伪善者",
+      "show_as_song_name": "",
+      "display_song_name": "伪善者",
+      "artist": "金渔",
+      "artist_search": "金渔",
+      "feat_artist": "",
+      "remark": "金渔 2022 原创",
+      "tone": "",
+      "language": "中文",
+      "type": "流行",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1nRxJ6tEPC/?p=28",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-31",
+      "row_key": "伪善者"
+    },
+    "sourceId": 1929356674,
+    "sourcePath": "sources/1929356674.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1929356674",
+    "selected": {
+      "id": 1929356674,
+      "name": "伪善者",
+      "artists": [
+        "金渔"
+      ],
+      "album": "自游",
+      "durationMs": 220952,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 53
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-374-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 221.419,
+    "sourceFirstLine": {
+      "t": 19.02,
+      "text": "迷雾偷走了颜色"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 26.84,
+      "endSeconds": 27.08,
+      "similarity": 0.0,
+      "recognizedText": "作",
+      "meanProbability": 0.007,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

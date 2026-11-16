@@ -1,0 +1,198 @@
+{
+  "schemaVersion": 1,
+  "key": "song-4",
+  "songId": 4,
+  "songName": "暖暖",
+  "displaySongName": "暖暖",
+  "artist": "梁静茹",
+  "language": "中文",
+  "derivative": false,
+  "audio": {
+    "url": "assets/audio/song_37.m4a?v=56b8c5407847",
+    "sha256": "56b8c5407847dbe236309cc8157c344bad230482f1607fbca289ec3c6a74713a"
+  },
+  "retrievedAt": "2026-11-16T03:58:26.347Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E6%9A%96%E6%9A%96&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 254141,
+        "name": "暖暖",
+        "artists": [
+          "梁静茹"
+        ],
+        "album": "亲亲",
+        "durationMs": 243160,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 254078,
+        "name": "暖暖",
+        "artists": [
+          "梁静茹"
+        ],
+        "album": "现在开始我爱你",
+        "durationMs": 242800,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1967350587,
+        "name": "暖暖",
+        "artists": [
+          "李玉刚"
+        ],
+        "album": "暖暖",
+        "durationMs": 229120,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1968773532,
+        "name": "暖暖",
+        "artists": [
+          "1个球"
+        ],
+        "album": "暖暖",
+        "durationMs": 185627,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1336866429,
+        "name": "暖暖",
+        "artists": [
+          "窜天猴少女组",
+          "丸子菇凉",
+          "康妮",
+          "柿崽"
+        ],
+        "album": "暖暖",
+        "durationMs": 240124,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1392719801,
+        "name": "暖暖",
+        "artists": [
+          "王伟丞"
+        ],
+        "album": "为光",
+        "durationMs": 248727,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2751461133,
+        "name": "暖暖",
+        "artists": [
+          "洛天依",
+          "流帧音画Auralvis"
+        ],
+        "album": "天依的翻唱日记",
+        "durationMs": 189332,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1422301586,
+        "name": "暖暖",
+        "artists": [
+          "郑豪豪"
+        ],
+        "album": "暖暖",
+        "durationMs": 73221,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "sourceId": 254141,
+    "sourcePath": "sources/254141.json",
+    "sourceUrl": "https://music.163.com/#/song?id=254141",
+    "selected": {
+      "id": 254141,
+      "name": "暖暖",
+      "artists": [
+        "梁静茹"
+      ],
+      "album": "亲亲",
+      "durationMs": 243160,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 68
+  },
+  "alignment": {
+    "status": "timing_drift_review_required",
+    "evidencePath": "evidence/song-4-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 244.111,
+    "sourceFirstLine": {
+      "t": 32.31,
+      "text": "都可以 随便的"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 33.06,
+      "endSeconds": 35.5,
+      "similarity": 1.0,
+      "recognizedText": "都可以随便的",
+      "meanProbability": 0.7,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": 0.75,
+    "checks": [
+      {
+        "sourceLine": {
+          "t": 121.56,
+          "text": "完全信任你"
+        },
+        "evidencePath": "evidence/song-4-check0.json",
+        "candidate": {
+          "audioSeconds": 127.15,
+          "endSeconds": 130.11,
+          "similarity": 1.0,
+          "recognizedText": "完全信任你",
+          "meanProbability": 0.792,
+          "tokenPrefixOnly": false
+        },
+        "residualSeconds": 4.84
+      },
+      {
+        "sourceLine": {
+          "t": 221.62,
+          "text": "Lalala"
+        },
+        "evidencePath": "evidence/song-4-check1.json",
+        "candidate": {
+          "audioSeconds": 216.37,
+          "endSeconds": 216.93,
+          "similarity": 0.0,
+          "recognizedText": "噢",
+          "meanProbability": 0.307,
+          "tokenPrefixOnly": false
+        },
+        "residualSeconds": -6.0
+      }
+    ],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  },
+  "rowKey": "暖暖",
+  "edition": "",
+  "remark": "直链页面 title 为【小松绿Viridis/翻唱】《暖暖》，meta description 明示日期 2026.08.08 与 UP 主小鸡奇遇記。song_name 归一化为真实曲名“暖暖”。"
+}

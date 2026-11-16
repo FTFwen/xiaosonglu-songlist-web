@@ -1,0 +1,186 @@
+{
+  "schemaVersion": 1,
+  "key": "song-172",
+  "songId": 172,
+  "songName": "下雨天",
+  "rowKey": "下雨天",
+  "displaySongName": "下雨天",
+  "artist": "南拳妈妈",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "",
+  "audio": {
+    "url": "assets/audio/song_171.m4a?v=b5921f839af8",
+    "sha256": "b5921f839af87431455ecab67a06d97cc5834d9b7690118f2bf08bbfb3f547b7"
+  },
+  "retrievedAt": "2026-11-16T04:12:39.990Z",
+  "match": {
+    "status": "candidate_review_required",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E4%B8%8B%E9%9B%A8%E5%A4%A9&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E4%B8%8B%E9%9B%A8%E5%A4%A9%20%E5%8D%97%E6%8B%B3%E5%A6%88%E5%A6%88&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1426112587,
+        "name": "下雨天",
+        "artists": [
+          "与少年他",
+          "芝麻Mochi"
+        ],
+        "album": "下雨天",
+        "durationMs": 265846,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3384823504,
+        "name": "下雨天",
+        "artists": [
+          "梁心颐"
+        ],
+        "album": "一人一首成名曲合辑1",
+        "durationMs": 253053,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 36198577,
+        "name": "下雨天",
+        "artists": [
+          "AJ张杰"
+        ],
+        "album": "小丑与英雄",
+        "durationMs": 281525,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 257813,
+        "name": "下雨天",
+        "artists": [
+          "林忆莲",
+          "Blue Jeans"
+        ],
+        "album": "Ready",
+        "durationMs": 304204,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 25642568,
+        "name": "下雨天",
+        "artists": [
+          "梁咏琪"
+        ],
+        "album": "加洲红红人馆903梁咏琪狂热份子音乐会",
+        "durationMs": 283720,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2166067707,
+        "name": "下雨天",
+        "artists": [
+          "en（王翊恩）"
+        ],
+        "album": "下雨天",
+        "durationMs": 227763,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3357841276,
+        "name": "下雨天",
+        "artists": [
+          "下雨"
+        ],
+        "album": "雨天",
+        "durationMs": 17474,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 362916,
+        "name": "下雨天",
+        "artists": [
+          "武艺"
+        ],
+        "album": "My Stage",
+        "durationMs": 199760,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 172,
+      "song_name": "下雨天",
+      "show_as_song_name": "",
+      "display_song_name": "下雨天",
+      "artist": "南拳妈妈",
+      "artist_search": "南拳妈妈",
+      "feat_artist": "",
+      "remark": "",
+      "tone": "",
+      "language": "中文",
+      "type": "流行",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1q9YB6xErK/?p=4",
+      "sing_count": 2,
+      "status_labels": "歌回、歌切合集复核、歌切复核",
+      "last_sing_at": "2026-11-10",
+      "row_key": "下雨天"
+    },
+    "sourceId": 1426112587,
+    "sourcePath": "sources/1426112587.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1426112587",
+    "selected": {
+      "id": 1426112587,
+      "name": "下雨天",
+      "artists": [
+        "与少年他",
+        "芝麻Mochi"
+      ],
+      "album": "下雨天",
+      "durationMs": 265846,
+      "titleScore": 1,
+      "artistMatch": false,
+      "score": 0.8
+    },
+    "timedLineCount": 63
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-172-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 256.853,
+    "sourceFirstLine": {
+      "t": 13.284,
+      "text": "下雨天了怎么办 我好想你"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 32.56,
+      "endSeconds": 33.54,
+      "similarity": 0.3076923076923077,
+      "recognizedText": "了好",
+      "meanProbability": 0.686,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

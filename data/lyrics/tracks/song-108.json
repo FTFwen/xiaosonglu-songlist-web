@@ -1,0 +1,169 @@
+{
+  "schemaVersion": 1,
+  "key": "song-108",
+  "songId": 108,
+  "songName": "流光记",
+  "displaySongName": "流光记",
+  "artist": "银临 / 初音未来",
+  "language": "中文",
+  "derivative": false,
+  "audio": {
+    "url": "assets/audio/song_102.m4a?v=3756a017568f",
+    "sha256": "3756a017568f4adef730f7e8c61a741762d327f0372fba620f277925aa6ecfdf"
+  },
+  "retrievedAt": "2026-11-16T03:58:58.820Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E6%B5%81%E5%85%89%E8%AE%B0&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1314438112,
+        "name": "流光记",
+        "artists": [
+          "银临"
+        ],
+        "album": "流光记",
+        "durationMs": 285000,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1833061520,
+        "name": "流光记",
+        "artists": [
+          "初音ミク",
+          "银临"
+        ],
+        "album": "流光记 (初音未来「ListenING计划」)",
+        "durationMs": 276279,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1373041366,
+        "name": "流光记",
+        "artists": [
+          "萧忆情Alex"
+        ],
+        "album": "流光记",
+        "durationMs": 283892,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1935670818,
+        "name": "流光记",
+        "artists": [
+          "苏流西",
+          "簌晴"
+        ],
+        "album": "流光记",
+        "durationMs": 285000,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1841289532,
+        "name": "流光记",
+        "artists": [
+          "晴愔"
+        ],
+        "album": "流光记",
+        "durationMs": 285017,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2061946343,
+        "name": "流光记",
+        "artists": [
+          "斯绫舞",
+          "锦弈",
+          "咕咕栎！",
+          "Lorien",
+          "燕南栖",
+          "杜蘅",
+          "戒网瘾游击队"
+        ],
+        "album": "流光记",
+        "durationMs": 283062,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1488022712,
+        "name": "流光记",
+        "artists": [
+          "Gluneko"
+        ],
+        "album": "Gluneko",
+        "durationMs": 284753,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2050975581,
+        "name": "流光记",
+        "artists": [
+          "小凌"
+        ],
+        "album": "流光记",
+        "durationMs": 285100,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "sourceId": 1314438112,
+    "sourcePath": "sources/1314438112.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1314438112",
+    "selected": {
+      "id": 1314438112,
+      "name": "流光记",
+      "artists": [
+        "银临"
+      ],
+      "album": "流光记",
+      "durationMs": 285000,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 53
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-108-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 276.8,
+    "sourceFirstLine": {
+      "t": 14.721,
+      "text": "人声监唱：灰原穷"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 29.6,
+      "endSeconds": 29.7,
+      "similarity": 0.0,
+      "recognizedText": "《大",
+      "meanProbability": 0.009,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  },
+  "rowKey": "流光记",
+  "edition": "",
+  "remark": "弹幕实锤：02:00:53「有品的有品的还会唱流光记」+ 02:02:00「学不会别离」为歌词句（「长亭只在书里 把折柳听了又听 总学不会别离」）→ 演唱时段 02:00-02:03。银临 2021-04-08 投稿 VOCALOID 中文原创（初音未来/银临演唱，初音未来「ListenING计划」单曲，殿堂曲；原曲为银临 2018 纯人声单曲）。 2026-08-29 2026-08-29 心灵火Flame合集补录：【小松绿Viridis】20260829 歌切 分P15（04:41）印证，置信度升至 0.9。"
+}

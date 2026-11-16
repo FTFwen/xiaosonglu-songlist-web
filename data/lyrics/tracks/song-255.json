@@ -1,0 +1,195 @@
+{
+  "schemaVersion": 1,
+  "key": "song-255",
+  "songId": 255,
+  "songName": "ダーリン",
+  "displaySongName": "ダーリン",
+  "artist": "須田景凪",
+  "language": "日文",
+  "derivative": false,
+  "audio": {
+    "url": "assets/audio/song_254.m4a?v=eb25f4c412ff",
+    "sha256": "eb25f4c412ff7fdb42e1a537447dae9ae5e876ec4d9b8afd7560da7fce468ac0"
+  },
+  "retrievedAt": "2026-11-16T03:58:49.145Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E3%83%80%E3%83%BC%E3%83%AA%E3%83%B3&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 2014795398,
+        "name": "ダーリン",
+        "artists": [
+          "須田景凪"
+        ],
+        "album": "ダーリン",
+        "durationMs": 148521,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2695900088,
+        "name": "ダーリン",
+        "artists": [
+          "ふぉるて"
+        ],
+        "album": "ダーリン",
+        "durationMs": 146677,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1408586353,
+        "name": "ダーリン",
+        "artists": [
+          "MARETU",
+          "初音ミク"
+        ],
+        "album": "しう",
+        "durationMs": 223793,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2628260371,
+        "name": "ダーリン",
+        "artists": [
+          "MARETU"
+        ],
+        "album": "ダーリン",
+        "durationMs": 223793,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2088768006,
+        "name": "ダーリン",
+        "artists": [
+          "渡恩Dawn"
+        ],
+        "album": "ダーリン",
+        "durationMs": 146599,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2616554303,
+        "name": "ダーリン",
+        "artists": [
+          "戌亥とこ"
+        ],
+        "album": "ダーリン",
+        "durationMs": 146496,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 31563627,
+        "name": "ダーリン。",
+        "artists": [
+          "Official髭男dism"
+        ],
+        "album": "ラブとピースは君の中",
+        "durationMs": 314240,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2667564835,
+        "name": "ダーリン",
+        "artists": [
+          "Mrs. GREEN APPLE"
+        ],
+        "album": "ダーリン",
+        "durationMs": 278506,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "sourceId": 2014795398,
+    "sourcePath": "sources/2014795398.json",
+    "sourceUrl": "https://music.163.com/#/song?id=2014795398",
+    "selected": {
+      "id": 2014795398,
+      "name": "ダーリン",
+      "artists": [
+        "須田景凪"
+      ],
+      "album": "ダーリン",
+      "durationMs": 148521,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 41
+  },
+  "alignment": {
+    "status": "spotcheck_review_required",
+    "evidencePath": "evidence/song-255-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 145.365,
+    "sourceFirstLine": {
+      "t": 13.91,
+      "text": "私じゃ駄目ですか"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 15.38,
+      "endSeconds": 17.08,
+      "similarity": 0.75,
+      "recognizedText": "私じゃダメですか",
+      "meanProbability": 0.547,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": 1.47,
+    "checks": [
+      {
+        "sourceLine": {
+          "t": 69.57,
+          "text": "ひとりじゃ意味がない"
+        },
+        "evidencePath": "evidence/song-255-check0.json",
+        "candidate": {
+          "audioSeconds": 69.94,
+          "endSeconds": 71.98,
+          "similarity": 0.75,
+          "recognizedText": "ひとりじゃい",
+          "meanProbability": 0.75,
+          "tokenPrefixOnly": false
+        },
+        "residualSeconds": -1.1
+      },
+      {
+        "sourceLine": {
+          "t": 127.2,
+          "text": "その日が来るのを待っているわ"
+        },
+        "evidencePath": "evidence/song-255-check1.json",
+        "candidate": {
+          "audioSeconds": 127.75,
+          "endSeconds": 131.35,
+          "similarity": 0.48,
+          "recognizedText": "その光のんだまといるわ",
+          "meanProbability": 0.515,
+          "tokenPrefixOnly": false
+        },
+        "residualSeconds": -0.92
+      }
+    ],
+    "asrLanguage": "ja",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  },
+  "rowKey": "ダーリン",
+  "edition": "",
+  "remark": ""
+}

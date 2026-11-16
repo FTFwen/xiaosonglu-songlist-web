@@ -1,0 +1,191 @@
+{
+  "audioSha256": "c44ecef8ded1f54dfdb133dc66667ab07d5e0c9bcdf7089c165ebbf49c710ea1",
+  "model": "whisper-base",
+  "start": 247.94400000000002,
+  "end": 267.944,
+  "result": {
+    "text": "望着爱我都知不不不得在新鲜的日中不得",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 0.0,
+        "end": 3.9,
+        "text": "望着爱我都知不不不得",
+        "tokens": [
+          50364,
+          22694,
+          20708,
+          27324,
+          1654,
+          7182,
+          6498,
+          1960,
+          1960,
+          1960,
+          5916,
+          50564
+        ],
+        "temperature": 0,
+        "avg_logprob": -1.0461141798231337,
+        "compression_ratio": 0.9642857142857143,
+        "no_speech_prob": 0.22210177779197693,
+        "words": [
+          {
+            "word": "望",
+            "start": 0.0,
+            "end": 0.3,
+            "probability": 0.34439292550086975
+          },
+          {
+            "word": "着",
+            "start": 0.3,
+            "end": 0.58,
+            "probability": 0.5044974088668823
+          },
+          {
+            "word": "爱",
+            "start": 0.58,
+            "end": 1.08,
+            "probability": 0.7770478129386902
+          },
+          {
+            "word": "我",
+            "start": 1.08,
+            "end": 1.42,
+            "probability": 0.3760616183280945
+          },
+          {
+            "word": "都",
+            "start": 1.42,
+            "end": 1.86,
+            "probability": 0.1233782097697258
+          },
+          {
+            "word": "知",
+            "start": 1.86,
+            "end": 2.22,
+            "probability": 0.2361731082201004
+          },
+          {
+            "word": "不",
+            "start": 2.22,
+            "end": 2.66,
+            "probability": 0.2586662769317627
+          },
+          {
+            "word": "不",
+            "start": 2.66,
+            "end": 3.14,
+            "probability": 0.26474863290786743
+          },
+          {
+            "word": "不",
+            "start": 3.14,
+            "end": 3.54,
+            "probability": 0.9124837517738342
+          },
+          {
+            "word": "得",
+            "start": 3.54,
+            "end": 3.9,
+            "probability": 0.27143794298171997
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "seek": 0,
+        "start": 3.9,
+        "end": 6.4,
+        "text": "在新鲜的日中",
+        "tokens": [
+          50564,
+          3581,
+          12560,
+          165,
+          110,
+          250,
+          1546,
+          6890,
+          5975,
+          50711
+        ],
+        "temperature": 0,
+        "avg_logprob": -1.0461141798231337,
+        "compression_ratio": 0.9642857142857143,
+        "no_speech_prob": 0.22210177779197693,
+        "words": [
+          {
+            "word": "在",
+            "start": 3.9,
+            "end": 4.36,
+            "probability": 0.06779509782791138
+          },
+          {
+            "word": "新",
+            "start": 4.36,
+            "end": 4.78,
+            "probability": 0.17908179759979248
+          },
+          {
+            "word": "鲜",
+            "start": 4.78,
+            "end": 5.28,
+            "probability": 0.9641800324122111
+          },
+          {
+            "word": "的",
+            "start": 5.28,
+            "end": 5.62,
+            "probability": 0.9827966690063477
+          },
+          {
+            "word": "日",
+            "start": 5.62,
+            "end": 6.0,
+            "probability": 0.8183162212371826
+          },
+          {
+            "word": "中",
+            "start": 6.0,
+            "end": 6.4,
+            "probability": 0.6037757992744446
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "seek": 0,
+        "start": 6.94,
+        "end": 7.92,
+        "text": "不得",
+        "tokens": [
+          50711,
+          1960,
+          5916,
+          50936
+        ],
+        "temperature": 0,
+        "avg_logprob": -1.0461141798231337,
+        "compression_ratio": 0.9642857142857143,
+        "no_speech_prob": 0.22210177779197693,
+        "words": [
+          {
+            "word": "不",
+            "start": 6.94,
+            "end": 7.42,
+            "probability": 0.1922718733549118
+          },
+          {
+            "word": "得",
+            "start": 7.42,
+            "end": 7.92,
+            "probability": 0.15813563764095306
+          }
+        ]
+      }
+    ],
+    "language": "zh"
+  }
+}

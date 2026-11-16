@@ -1,0 +1,11 @@
+{
+  "audioSha256": "ffd47cfb26ee34e8f65a5334edb57fc428e86fd1c9109cd7fc5458a9c499ae67",
+  "model": "whisper-base",
+  "start": 0,
+  "end": 35,
+  "result": {
+    "text": "",
+    "segments": [],
+    "language": "zh"
+  }
+}

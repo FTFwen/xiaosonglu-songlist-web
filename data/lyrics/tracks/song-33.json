@@ -1,0 +1,165 @@
+{
+  "schemaVersion": 1,
+  "key": "song-33",
+  "songId": 33,
+  "songName": "恋爱困难少女",
+  "displaySongName": "恋爱困难少女",
+  "artist": "ChiliChill乐团",
+  "language": "中文",
+  "derivative": false,
+  "audio": {
+    "url": "assets/audio/song_32.m4a?v=9d7b9cbf928b",
+    "sha256": "9d7b9cbf928b18fb28e9cdb787e13c8913a58086a625cd15de0490e0dc006847"
+  },
+  "retrievedAt": "2026-11-16T03:57:51.172Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E6%81%8B%E7%88%B1%E5%9B%B0%E9%9A%BE%E5%B0%91%E5%A5%B3&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1494813207,
+        "name": "恋爱困难少女",
+        "artists": [
+          "ChiliChill乐团"
+        ],
+        "album": "恋爱困难少女",
+        "durationMs": 248768,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1815303036,
+        "name": "恋爱困难少女",
+        "artists": [
+          "一只猛龙丶"
+        ],
+        "album": "思味特",
+        "durationMs": 249008,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1935426857,
+        "name": "恋爱困难少女",
+        "artists": [
+          "挪挪Noh",
+          "饭饭凡凡"
+        ],
+        "album": "恋爱困难少女",
+        "durationMs": 248946,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1830686254,
+        "name": "恋爱困难少女",
+        "artists": [
+          "朵芊",
+          "琉狸sama"
+        ],
+        "album": "恋爱困难少女",
+        "durationMs": 247000,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1844734781,
+        "name": "恋爱困难少女",
+        "artists": [
+          "一个路人",
+          "一三更"
+        ],
+        "album": "恋爱困难少女",
+        "durationMs": 250044,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1819667496,
+        "name": "恋爱困难少女",
+        "artists": [
+          "咩啊"
+        ],
+        "album": "2021翻唱集",
+        "durationMs": 248856,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1812856127,
+        "name": "恋爱困难少女",
+        "artists": [
+          "谣君"
+        ],
+        "album": "一些您可能爱听的歌",
+        "durationMs": 21484,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1815706429,
+        "name": "恋爱困难少女",
+        "artists": [
+          "碎碎冰",
+          "布兰"
+        ],
+        "album": "“每天晚上梦见你怎么办。”",
+        "durationMs": 249291,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "sourceId": 1494813207,
+    "sourcePath": "sources/1494813207.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1494813207",
+    "selected": {
+      "id": 1494813207,
+      "name": "恋爱困难少女",
+      "artists": [
+        "ChiliChill乐团"
+      ],
+      "album": "恋爱困难少女",
+      "durationMs": 248768,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 61
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-33-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 252.181,
+    "sourceFirstLine": {
+      "t": 7.668,
+      "text": "OP：时光颂歌"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 32.38,
+      "endSeconds": 32.76,
+      "similarity": 0.2,
+      "recognizedText": " love",
+      "meanProbability": 0.137,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  },
+  "rowKey": "恋爱困难少女",
+  "edition": "",
+  "remark": "标题明确给出《恋爱困难少女》且注明为“小松绿Viridis｜歌切”；页面未直写日期，但该条出现在 8/11 歌切候选网络中，并与单相思、春日影、下等马等同批小松绿歌切强关联，按当前 song-cut-first 流程先以 2026-08-11 manual-normalized 收录。"
+}

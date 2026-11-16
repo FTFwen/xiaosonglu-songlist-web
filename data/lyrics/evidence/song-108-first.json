@@ -1,0 +1,175 @@
+{
+  "audioSha256": "3756a017568f4adef730f7e8c61a741762d327f0372fba620f277925aa6ecfdf",
+  "model": "whisper-base",
+  "start": 0,
+  "end": 35,
+  "result": {
+    "text": "《大王》當周又天地回來能將三百個傳",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 29.6,
+        "end": 29.74,
+        "text": "《大王》",
+        "tokens": [
+          50364,
+          9806,
+          3582,
+          19940,
+          9782,
+          50564
+        ],
+        "temperature": 0,
+        "avg_logprob": -2.618206024169922,
+        "compression_ratio": 0.6,
+        "no_speech_prob": 0.5825713872909546,
+        "words": [
+          {
+            "word": "《",
+            "start": 29.6,
+            "end": 29.66,
+            "probability": 0.011783260852098465
+          },
+          {
+            "word": "大",
+            "start": 29.66,
+            "end": 29.7,
+            "probability": 0.006638748105615377
+          },
+          {
+            "word": "王",
+            "start": 29.7,
+            "end": 29.72,
+            "probability": 0.019282907247543335
+          },
+          {
+            "word": "》",
+            "start": 29.72,
+            "end": 29.74,
+            "probability": 0.14448541402816772
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "seek": 3000,
+        "start": 30.0,
+        "end": 31.58,
+        "text": "當周又天地",
+        "tokens": [
+          50364,
+          13118,
+          37390,
+          17047,
+          6135,
+          10928,
+          50464
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.6368586596320657,
+        "compression_ratio": 0.78,
+        "no_speech_prob": 0.48753422498703003,
+        "words": [
+          {
+            "word": "當",
+            "start": 30.0,
+            "end": 30.4,
+            "probability": 0.44406890869140625
+          },
+          {
+            "word": "周",
+            "start": 30.4,
+            "end": 30.66,
+            "probability": 0.256456196308136
+          },
+          {
+            "word": "又",
+            "start": 30.66,
+            "end": 30.9,
+            "probability": 0.8444774746894836
+          },
+          {
+            "word": "天",
+            "start": 30.9,
+            "end": 31.2,
+            "probability": 0.8938306570053101
+          },
+          {
+            "word": "地",
+            "start": 31.2,
+            "end": 31.58,
+            "probability": 0.7166131734848022
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "seek": 3000,
+        "start": 31.58,
+        "end": 34.74,
+        "text": "回來能將三百個傳",
+        "tokens": [
+          50464,
+          46556,
+          8225,
+          34168,
+          10960,
+          31906,
+          3338,
+          40852,
+          50614
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.6368586596320657,
+        "compression_ratio": 0.78,
+        "no_speech_prob": 0.48753422498703003,
+        "words": [
+          {
+            "word": "回來",
+            "start": 31.58,
+            "end": 32.62,
+            "probability": 0.650277316570282
+          },
+          {
+            "word": "能",
+            "start": 32.62,
+            "end": 33.08,
+            "probability": 0.85704106092453
+          },
+          {
+            "word": "將",
+            "start": 33.08,
+            "end": 33.28,
+            "probability": 0.5640195608139038
+          },
+          {
+            "word": "三",
+            "start": 33.28,
+            "end": 33.58,
+            "probability": 0.7956333756446838
+          },
+          {
+            "word": "百",
+            "start": 33.58,
+            "end": 33.92,
+            "probability": 0.9758033752441406
+          },
+          {
+            "word": "個",
+            "start": 33.92,
+            "end": 34.22,
+            "probability": 0.9846885204315186
+          },
+          {
+            "word": "傳",
+            "start": 34.22,
+            "end": 34.74,
+            "probability": 0.18899506330490112
+          }
+        ]
+      }
+    ],
+    "language": "zh"
+  }
+}

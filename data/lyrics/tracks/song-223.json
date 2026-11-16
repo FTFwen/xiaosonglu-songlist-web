@@ -1,0 +1,165 @@
+{
+  "schemaVersion": 1,
+  "key": "song-223",
+  "songId": 223,
+  "songName": "からくりピエロ",
+  "displaySongName": "からくりピエロ",
+  "artist": "40mP / 初音ミク",
+  "language": "日文",
+  "derivative": false,
+  "audio": {
+    "url": "assets/audio/song_222.m4a?v=809f8dd3d237",
+    "sha256": "809f8dd3d237ad521557dc00f9fbe92cb0a3c7d411d07ca3d548c4093440ce43"
+  },
+  "retrievedAt": "2026-11-16T03:58:35.610Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E3%81%8B%E3%82%89%E3%81%8F%E3%82%8A%E3%83%94%E3%82%A8%E3%83%AD&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 22821014,
+        "name": "からくりピエロ",
+        "artists": [
+          "40mP",
+          "初音ミク"
+        ],
+        "album": "小さな自分と大きな世界",
+        "durationMs": 249493,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 857553,
+        "name": "からくりピエロ",
+        "artists": [
+          "ココル",
+          "40mP"
+        ],
+        "album": "EXIT TUNES PRESENTS 10代うたってみたライブ!BEST 2",
+        "durationMs": 249600,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 31814031,
+        "name": "からくりピエロ",
+        "artists": [
+          "蛇足",
+          "40mP"
+        ],
+        "album": "蛇足",
+        "durationMs": 289000,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 36783643,
+        "name": "からくりピエロ",
+        "artists": [
+          "40mP"
+        ],
+        "album": "1.7m",
+        "durationMs": 283210,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 29023434,
+        "name": "からくりピエロ",
+        "artists": [
+          "Gero"
+        ],
+        "album": "最新热歌慢摇80",
+        "durationMs": 295000,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 34274704,
+        "name": "からくりピエロ",
+        "artists": [
+          "りぶ"
+        ],
+        "album": "虹色オーケストラ～Grand Symphony with Full Orchestra～ in 東京国際フォーラム　ホールA 2014.12.27",
+        "durationMs": 469542,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 536244,
+        "name": "からくりピエロ",
+        "artists": [
+          "vip店長"
+        ],
+        "album": "maru○sankaku△",
+        "durationMs": 286000,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 28830017,
+        "name": "からくりピエロ",
+        "artists": [
+          "イトヲカシ"
+        ],
+        "album": "ホシアイ",
+        "durationMs": 287000,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "sourceId": 22821014,
+    "sourcePath": "sources/22821014.json",
+    "sourceUrl": "https://music.163.com/#/song?id=22821014",
+    "selected": {
+      "id": 22821014,
+      "name": "からくりピエロ",
+      "artists": [
+        "40mP",
+        "初音ミク"
+      ],
+      "album": "小さな自分と大きな世界",
+      "durationMs": 249493,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 33
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-223-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 256.32,
+    "sourceFirstLine": {
+      "t": 29.15,
+      "text": "待ち合わせは2時間前で"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 29.98,
+      "endSeconds": 32.46,
+      "similarity": 0.4444444444444444,
+      "recognizedText": "は忘れた2時間",
+      "meanProbability": 0.546,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "ja",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  },
+  "rowKey": "からくりピエロ",
+  "edition": "",
+  "remark": "UP 桐人今天睡大觉《2026.09.23练歌歌切合集》P14"
+}

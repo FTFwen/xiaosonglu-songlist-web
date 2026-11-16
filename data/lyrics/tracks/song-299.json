@@ -1,0 +1,191 @@
+{
+  "schemaVersion": 1,
+  "key": "song-299",
+  "songId": 299,
+  "songName": "采茶纪",
+  "rowKey": "采茶纪",
+  "displaySongName": "采茶纪",
+  "artist": "双笙",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "两份合集（BV1TApG6uEPX 分P16、BV1Qrpj6ZELm 分P16）同曲同序；弹幕 02:10:21「采茶纪好好好」、02:12:21「采茶纪」、02:12:31「采茶纪吗」连续点名。据百度百科：双笙演唱的中国风古风歌曲，作词温莨、作曲/编曲徐梦圆，2015-12-02 发行，故记双笙。",
+  "audio": {
+    "url": "assets/audio/song_298.m4a?v=864cf8ff968f",
+    "sha256": "864cf8ff968fc45de0d8fb22846c4833dc113934388ef7df813b3ae33ae2f344"
+  },
+  "retrievedAt": "2026-11-16T04:06:21.213Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E9%87%87%E8%8C%B6%E7%BA%AA&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E9%87%87%E8%8C%B6%E7%BA%AA%20%E5%8F%8C%E7%AC%99&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 2115066180,
+        "name": "采茶纪",
+        "artists": [
+          "双笙（陈元汐）"
+        ],
+        "album": "采茶纪",
+        "durationMs": 207005,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2140996854,
+        "name": "采茶纪",
+        "artists": [
+          "甜心积木屋",
+          "朵芊",
+          "蜂蜜拌白糖",
+          "千界",
+          "毛儿",
+          "卿池",
+          "温予",
+          "萌萌落",
+          "达达几"
+        ],
+        "album": "屋SING！各唱各的",
+        "durationMs": 205443,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1464223154,
+        "name": "采茶纪",
+        "artists": [
+          "鹤尤yurii"
+        ],
+        "album": "采茶纪",
+        "durationMs": 206381,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1302603024,
+        "name": "采茶纪",
+        "artists": [
+          "OSS"
+        ],
+        "album": "采茶纪",
+        "durationMs": 205536,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2704490972,
+        "name": "采茶纪",
+        "artists": [
+          "萧忆情Alex"
+        ],
+        "album": "萧忆情歌曲合集",
+        "durationMs": 205583,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 41646265,
+        "name": "采茶纪（Ins）",
+        "artists": [
+          "徐梦圆"
+        ],
+        "album": "月圆，笙起（Ins）",
+        "durationMs": 205401,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 464552127,
+        "name": "采茶纪（Cover 双笙）",
+        "artists": [
+          "少年霜"
+        ],
+        "album": "少年霜",
+        "durationMs": 205328,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 1926825305,
+        "name": "采茶纪(纯音乐)",
+        "artists": [
+          "司腾"
+        ],
+        "album": "红色高跟鞋",
+        "durationMs": 100426,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      }
+    ],
+    "workQuery": {
+      "song_id": 299,
+      "song_name": "采茶纪",
+      "show_as_song_name": "",
+      "display_song_name": "采茶纪",
+      "artist": "双笙",
+      "artist_search": "双笙",
+      "feat_artist": "",
+      "remark": "两份合集（BV1TApG6uEPX 分P16、BV1Qrpj6ZELm 分P16）同曲同序；弹幕 02:10:21「采茶纪好好好」、02:12:21「采茶纪」、02:12:31「采茶纪吗」连续点名。据百度百科：双笙演唱的中国风古风歌曲，作词温莨、作曲/编曲徐梦圆，2015-12-02 发行，故记双笙。",
+      "tone": "",
+      "language": "中文",
+      "type": "国风、古风",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1TApG6uEPX/?p=16",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-10",
+      "row_key": "采茶纪"
+    },
+    "sourceId": 2115066180,
+    "sourcePath": "sources/2115066180.json",
+    "sourceUrl": "https://music.163.com/#/song?id=2115066180",
+    "selected": {
+      "id": 2115066180,
+      "name": "采茶纪",
+      "artists": [
+        "双笙（陈元汐）"
+      ],
+      "album": "采茶纪",
+      "durationMs": 207005,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 71
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-299-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 206.955,
+    "sourceFirstLine": {
+      "t": 21.27,
+      "text": "寒食过 云雨消"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 25.46,
+      "endSeconds": 25.72,
+      "similarity": 0.0,
+      "recognizedText": "作",
+      "meanProbability": 0.002,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

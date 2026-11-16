@@ -1,0 +1,191 @@
+{
+  "schemaVersion": 1,
+  "key": "song-39",
+  "songId": 39,
+  "songName": "一半一半",
+  "rowKey": "一半一半",
+  "displaySongName": "一半一半",
+  "artist": "洛天依Official",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "直链页面 meta description 明示日期 2026.08.15，标题直接给出真实歌曲名《一半一半》，可作为当日 song-cut-first 增量收录。",
+  "audio": {
+    "url": "assets/audio/song_68.m4a?v=4e609f672005",
+    "sha256": "4e609f6720058b2588893a9fcdd95ce95a411e058a7fec3209b41ad7496e7987"
+  },
+  "retrievedAt": "2026-11-16T04:03:34.919Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E4%B8%80%E5%8D%8A%E4%B8%80%E5%8D%8A&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E4%B8%80%E5%8D%8A%E4%B8%80%E5%8D%8A%20%E6%B4%9B%E5%A4%A9%E4%BE%9DOfficial&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 32628084,
+        "name": "一半一半",
+        "artists": [
+          "鸟爷ToriSama",
+          "洛天依Official"
+        ],
+        "album": "一半一半",
+        "durationMs": 273110,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1979007503,
+        "name": "一半一半",
+        "artists": [
+          "洛天依Official"
+        ],
+        "album": "依如初见",
+        "durationMs": 270344,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 27510174,
+        "name": "一半一半",
+        "artists": [
+          "洛天依Official"
+        ],
+        "album": "一半一半",
+        "durationMs": 273110,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 3333988321,
+        "name": "一半一半",
+        "artists": [
+          "Top Barry",
+          "INDEcompany"
+        ],
+        "album": "一半一半",
+        "durationMs": 235285,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3394079946,
+        "name": "一半一半",
+        "artists": [
+          "苏流西",
+          "钟可",
+          "季子樱"
+        ],
+        "album": "一半一半",
+        "durationMs": 235311,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3332724276,
+        "name": "一半一半",
+        "artists": [
+          "有三",
+          "TizzyT"
+        ],
+        "album": "一半一半",
+        "durationMs": 224883,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2115392098,
+        "name": "一半一半",
+        "artists": [
+          "泰格西",
+          "功夫胖KUNGFU-PEN",
+          "cLoner23"
+        ],
+        "album": "50%50",
+        "durationMs": 191707,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2622400588,
+        "name": "一半一半",
+        "artists": [
+          "GAI周延"
+        ],
+        "album": "一半一半",
+        "durationMs": 232329,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 39,
+      "song_name": "一半一半",
+      "show_as_song_name": "",
+      "display_song_name": "一半一半",
+      "artist": "洛天依Official",
+      "artist_search": "洛天依",
+      "feat_artist": "",
+      "remark": "直链页面 meta description 明示日期 2026.08.15，标题直接给出真实歌曲名《一半一半》，可作为当日 song-cut-first 增量收录。",
+      "tone": "",
+      "language": "中文",
+      "type": "中V、流行",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1mgby6LEhy/",
+      "sing_count": 1,
+      "status_labels": "歌切直补、待原始回放定位",
+      "last_sing_at": "2026-08-15",
+      "row_key": "一半一半"
+    },
+    "sourceId": 32628084,
+    "sourcePath": "sources/32628084.json",
+    "sourceUrl": "https://music.163.com/#/song?id=32628084",
+    "selected": {
+      "id": 32628084,
+      "name": "一半一半",
+      "artists": [
+        "鸟爷ToriSama",
+        "洛天依Official"
+      ],
+      "album": "一半一半",
+      "durationMs": 273110,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 54
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-39-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 272.509,
+    "sourceFirstLine": {
+      "t": 34.5,
+      "text": "时间的微风吹过 缓缓拂过了耳畔"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 18.7,
+      "endSeconds": 20.1,
+      "similarity": 0.0,
+      "recognizedText": "我",
+      "meanProbability": 0.028,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

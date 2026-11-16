@@ -1,0 +1,189 @@
+{
+  "schemaVersion": 1,
+  "key": "song-194",
+  "songId": 194,
+  "songName": "秒针を噛む",
+  "rowKey": "秒针を噛む",
+  "displaySongName": "秒针を噛む",
+  "artist": "ずっと真夜中でいいのに。",
+  "language": "日文",
+  "derivative": false,
+  "edition": "",
+  "remark": "",
+  "audio": {
+    "url": "assets/audio/song_193.m4a?v=36ca4bbbd65f",
+    "sha256": "36ca4bbbd65f7c0bd68bcced535a26a81ff1564b11d9b56a2e07c4eca6c1160a"
+  },
+  "retrievedAt": "2026-11-16T04:12:35.719Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E7%A7%92%E9%87%9D%E3%82%92%E5%99%9B%E3%82%80&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E7%A7%92%E9%87%9D%E3%82%92%E5%99%9B%E3%82%80%20%E3%81%9A%E3%81%A3%E3%81%A8%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%A7%E3%81%84%E3%81%84%E3%81%AE%E3%81%AB%E3%80%82&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E7%A7%92%E9%92%88%E3%82%92%E5%99%9B%E3%82%80&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1325357378,
+        "name": "秒針を噛む",
+        "artists": [
+          "ずっと真夜中でいいのに。"
+        ],
+        "album": "正しい偽りからの起床",
+        "durationMs": 258626,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1873231849,
+        "name": "秒針を噛む",
+        "artists": [
+          "ずっと真夜中でいいのに。"
+        ],
+        "album": "ZUTOMAYO’s Playlist for Mainland China",
+        "durationMs": 259053,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1940302782,
+        "name": "秒針を噛む",
+        "artists": [
+          "ずっと真夜中でいいのに。"
+        ],
+        "album": "ZUTOMAYO's Playlist for Mainland China Vol.2",
+        "durationMs": 259053,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1399788807,
+        "name": "秒針を噛む",
+        "artists": [
+          "ずっと真夜中でいいのに。"
+        ],
+        "album": "潜潜話",
+        "durationMs": 260800,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2126406613,
+        "name": "秒針を噛む",
+        "artists": [
+          "ずっと真夜中でいいのに。"
+        ],
+        "album": "ZUTOMAYO - 2024 中国特别版",
+        "durationMs": 259053,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 3461191378,
+        "name": "秒針を噛む",
+        "artists": [
+          "ずっと真夜中でいいのに。"
+        ],
+        "album": "게임 실력은 몰라도 브금은 1티어",
+        "durationMs": 259053,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2142610740,
+        "name": "秒針を噛む",
+        "artists": [
+          "ずっと真夜中でいいのに。"
+        ],
+        "album": "春の夜に聴きたくなるJ-POP",
+        "durationMs": 259053,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1306163092,
+        "name": "秒針を噛む",
+        "artists": [
+          "ずっと真夜中でいいのに。"
+        ],
+        "album": "秒針を噛む",
+        "durationMs": 259053,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      }
+    ],
+    "workQuery": {
+      "song_id": 194,
+      "song_name": "秒針を噛む",
+      "show_as_song_name": "",
+      "display_song_name": "秒针を噛む",
+      "artist": "ずっと真夜中でいいのに。",
+      "artist_search": "ずっと真夜中でいいのに",
+      "feat_artist": "",
+      "remark": "",
+      "tone": "",
+      "language": "日文",
+      "type": "J-Pop、乐队",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1xger6jEYS/?p=8",
+      "sing_count": 2,
+      "status_labels": "自动识别待人工复核、歌回、歌切合集复核",
+      "last_sing_at": "2026-11-08",
+      "row_key": "秒针を噛む"
+    },
+    "sourceId": 1325357378,
+    "sourcePath": "sources/1325357378.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1325357378",
+    "selected": {
+      "id": 1325357378,
+      "name": "秒針を噛む",
+      "artists": [
+        "ずっと真夜中でいいのに。"
+      ],
+      "album": "正しい偽りからの起床",
+      "durationMs": 258626,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 50,
+    "review": {
+      "reason": "Public search/get confirms canonical title and original artist ずっと真夜中でいいのに。; stored simplified 针 prevents title equality despite canonical alias query. Live lyric API code 200 returns 54 timestamped rows. Correct canonical matching title; recording alignment remains unverified.",
+      "evidenceUrl": "https://music.163.com/api/song/lyric?id=1325357378&lv=1&kv=1&tv=-1",
+      "previousSourceId": 1325357378
+    }
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-194-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 257.707,
+    "sourceFirstLine": {
+      "t": 29.31,
+      "text": "生活の偽造 いつも通り 通り過ぎて"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 31.26,
+      "endSeconds": 34.24,
+      "similarity": 0.6086956521739131,
+      "recognizedText": "の嘘いつも通り通",
+      "meanProbability": 0.774,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "ja",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

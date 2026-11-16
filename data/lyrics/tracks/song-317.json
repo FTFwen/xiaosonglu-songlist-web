@@ -1,0 +1,183 @@
+{
+  "schemaVersion": 1,
+  "key": "song-317",
+  "songId": 317,
+  "songName": "爱情转移",
+  "rowKey": "爱情转移",
+  "displaySongName": "爱情转移",
+  "artist": "陈奕迅",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "桐人今天睡大觉「全自动歌切项目」2026.10.18 歌切合集第 3 分P（章节「03_爱情转移 - 陈奕迅」）。弹幕共 19 条直接出现该歌名。未定位回放时间点。",
+  "audio": {
+    "url": "assets/audio/song_316.m4a?v=628399e0ee81",
+    "sha256": "628399e0ee81c3b1795149accd5dea382dfdf6302687772b239c5d39474765ca"
+  },
+  "retrievedAt": "2026-11-16T04:06:48.662Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E7%88%B1%E6%83%85%E8%BD%AC%E7%A7%BB&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E7%88%B1%E6%83%85%E8%BD%AC%E7%A7%BB%20%E9%99%88%E5%A5%95%E8%BF%85&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 65536,
+        "name": "爱情转移",
+        "artists": [
+          "陈奕迅"
+        ],
+        "album": "认了吧",
+        "durationMs": 259986,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 5250063,
+        "name": "爱情转移",
+        "artists": [
+          "陈奕迅"
+        ],
+        "album": "Love国语情歌集",
+        "durationMs": 255906,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 406737971,
+        "name": "爱情转移",
+        "artists": [
+          "陈奕迅"
+        ],
+        "album": "跨年演唱会2012-2013 华语篇1",
+        "durationMs": 243853,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 5252854,
+        "name": "爱情转移",
+        "artists": [
+          "陈奕迅"
+        ],
+        "album": "环球音乐通 (07年精选)",
+        "durationMs": 290847,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2141090301,
+        "name": "爱情转移",
+        "artists": [
+          "李雨霏_晚饭"
+        ],
+        "album": "爱情转移",
+        "durationMs": 204600,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3344782211,
+        "name": "爱情转移",
+        "artists": [
+          "王有有"
+        ],
+        "album": "爱情转移",
+        "durationMs": 248155,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3395146288,
+        "name": "爱情转移",
+        "artists": [
+          "幻心烟鬼"
+        ],
+        "album": "复古R&B系列188",
+        "durationMs": 203424,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2139086664,
+        "name": "爱情转移",
+        "artists": [
+          "WiFi歪歪"
+        ],
+        "album": "爱情转移",
+        "durationMs": 200000,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 317,
+      "song_name": "爱情转移",
+      "show_as_song_name": "",
+      "display_song_name": "爱情转移",
+      "artist": "陈奕迅",
+      "artist_search": "陈奕迅 爱情转移",
+      "feat_artist": "",
+      "remark": "桐人今天睡大觉「全自动歌切项目」2026.10.18 歌切合集第 3 分P（章节「03_爱情转移 - 陈奕迅」）。弹幕共 19 条直接出现该歌名。未定位回放时间点。",
+      "tone": "",
+      "language": "中文",
+      "type": "华语经典、流行",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1UPnV6zEs4/?p=3",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-18",
+      "row_key": "爱情转移"
+    },
+    "sourceId": 65536,
+    "sourcePath": "sources/65536.json",
+    "sourceUrl": "https://music.163.com/#/song?id=65536",
+    "selected": {
+      "id": 65536,
+      "name": "爱情转移",
+      "artists": [
+        "陈奕迅"
+      ],
+      "album": "认了吧",
+      "durationMs": 259986,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 60
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-317-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 226.005,
+    "sourceFirstLine": {
+      "t": 22.479,
+      "text": "徘徊过多少橱窗 住过多少旅馆"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 40.42,
+      "endSeconds": 40.74,
+      "similarity": 0.14285714285714285,
+      "recognizedText": "過",
+      "meanProbability": 0.985,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

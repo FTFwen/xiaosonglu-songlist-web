@@ -1,0 +1,185 @@
+{
+  "schemaVersion": 1,
+  "key": "song-369",
+  "songId": 369,
+  "songName": "本色",
+  "rowKey": "本色",
+  "displaySongName": "本色",
+  "artist": "洛天依",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "",
+  "audio": {
+    "url": "assets/audio/song_368.m4a?v=c311511e8789",
+    "sha256": "c311511e8789dc4cd792c454d3bbedfcba522512bd6fbb5f303498ef165eef06"
+  },
+  "retrievedAt": "2026-11-16T04:07:33.106Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E6%9C%AC%E8%89%B2&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E6%9C%AC%E8%89%B2%20%E6%B4%9B%E5%A4%A9%E4%BE%9D&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1999635395,
+        "name": "本色",
+        "artists": [
+          "洛天依",
+          "紫杉醇Azure"
+        ],
+        "album": "紫杉醇Azure的洛天依AI翻调作品",
+        "durationMs": 314000,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 256204,
+        "name": "本色",
+        "artists": [
+          "林忆莲"
+        ],
+        "album": "本色 S/L",
+        "durationMs": 232822,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1898195532,
+        "name": "本色",
+        "artists": [
+          "兰音Reine"
+        ],
+        "album": "本色",
+        "durationMs": 317540,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 345013,
+        "name": "本色",
+        "artists": [
+          "八三夭"
+        ],
+        "album": "最后的8/31",
+        "durationMs": 204213,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1379410931,
+        "name": "本色",
+        "artists": [
+          "小可学妹"
+        ],
+        "album": "本色",
+        "durationMs": 315183,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1304000599,
+        "name": "本色",
+        "artists": [
+          "酷"
+        ],
+        "album": "翻唱集",
+        "durationMs": 314299,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1342429109,
+        "name": "本色",
+        "artists": [
+          "绯绝"
+        ],
+        "album": "本色",
+        "durationMs": 314932,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2704293240,
+        "name": "本色 (后期重做版)",
+        "artists": [
+          "泠鸢yousa"
+        ],
+        "album": "",
+        "durationMs": 314671,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      }
+    ],
+    "workQuery": {
+      "song_id": 369,
+      "song_name": "本色",
+      "show_as_song_name": "",
+      "display_song_name": "本色",
+      "artist": "洛天依",
+      "artist_search": "洛天依",
+      "feat_artist": "",
+      "remark": "",
+      "tone": "",
+      "language": "中文",
+      "type": "中V",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1nRxJ6tEPC/?p=22",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-31",
+      "row_key": "本色"
+    },
+    "sourceId": 1999635395,
+    "sourcePath": "sources/1999635395.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1999635395",
+    "selected": {
+      "id": 1999635395,
+      "name": "本色",
+      "artists": [
+        "洛天依",
+        "紫杉醇Azure"
+      ],
+      "album": "紫杉醇Azure的洛天依AI翻调作品",
+      "durationMs": 314000,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 54
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-369-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 313.771,
+    "sourceFirstLine": {
+      "t": 1.3980000000000001,
+      "text": "本色 - 洛天依AI"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 25.28,
+      "endSeconds": 26.68,
+      "similarity": 0.0,
+      "recognizedText": "我",
+      "meanProbability": 0.031,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

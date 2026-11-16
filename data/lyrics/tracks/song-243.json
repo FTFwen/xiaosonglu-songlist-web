@@ -1,0 +1,187 @@
+{
+  "schemaVersion": 1,
+  "key": "song-243",
+  "songId": 243,
+  "songName": "红昭愿",
+  "rowKey": "红昭愿",
+  "displaySongName": "红昭愿",
+  "artist": "音阙诗听",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "",
+  "audio": {
+    "url": "assets/audio/song_242.m4a?v=d0f56297b3e7",
+    "sha256": "d0f56297b3e75bbb9b308bb30778c900ed864ae7b8544127b314417c1ebd9174"
+  },
+  "retrievedAt": "2026-11-16T04:05:28.527Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E7%BA%A2%E6%98%AD%E6%84%BF&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E7%BA%A2%E6%98%AD%E6%84%BF%20%E9%9F%B3%E9%98%99%E8%AF%97%E5%90%AC&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 452986458,
+        "name": "红昭愿",
+        "artists": [
+          "音阙诗听"
+        ],
+        "album": "红昭愿",
+        "durationMs": 173217,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 460514067,
+        "name": "红昭愿",
+        "artists": [
+          "洛天依",
+          "音阙诗听"
+        ],
+        "album": "洛天依作品辑",
+        "durationMs": 173242,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1468506656,
+        "name": "红昭愿",
+        "artists": [
+          "音阙诗听",
+          "王梓钰"
+        ],
+        "album": "红昭愿",
+        "durationMs": 173217,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 460323849,
+        "name": "红昭愿",
+        "artists": [
+          "乐正绫",
+          "音阙诗听"
+        ],
+        "album": "红昭愿",
+        "durationMs": 173242,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 3327140881,
+        "name": "红昭愿",
+        "artists": [
+          "单循"
+        ],
+        "album": "红昭愿（温柔版）",
+        "durationMs": 173217,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1297742219,
+        "name": "红昭愿",
+        "artists": [
+          "刘初寻 (二逗)"
+        ],
+        "album": "红昭愿",
+        "durationMs": 173217,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3446769033,
+        "name": "红昭愿",
+        "artists": [
+          "ic22y"
+        ],
+        "album": "yalai",
+        "durationMs": 63042,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 864648569,
+        "name": "红昭愿 (高音质版)",
+        "artists": [
+          "音阙诗听",
+          "王梓钰"
+        ],
+        "album": "红昭愿（高音质版）",
+        "durationMs": 171909,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      }
+    ],
+    "workQuery": {
+      "song_id": 243,
+      "song_name": "红昭愿",
+      "show_as_song_name": "",
+      "display_song_name": "红昭愿",
+      "artist": "音阙诗听",
+      "artist_search": "音阙诗听",
+      "feat_artist": "",
+      "remark": "",
+      "tone": "",
+      "language": "中文",
+      "type": "国风、流行",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1g1ah6REpb/?p=19",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-09-27",
+      "row_key": "红昭愿"
+    },
+    "sourceId": 452986458,
+    "sourcePath": "sources/452986458.json",
+    "sourceUrl": "https://music.163.com/#/song?id=452986458",
+    "selected": {
+      "id": 452986458,
+      "name": "红昭愿",
+      "artists": [
+        "音阙诗听"
+      ],
+      "album": "红昭愿",
+      "durationMs": 173217,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 64
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-243-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 178.097,
+    "sourceFirstLine": {
+      "t": 18.73,
+      "text": "手中雕刻生花"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 32.18,
+      "endSeconds": 32.52,
+      "similarity": 0.2857142857142857,
+      "recognizedText": "手",
+      "meanProbability": 0.117,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

@@ -1,0 +1,179 @@
+{
+  "schemaVersion": 1,
+  "key": "song-278",
+  "songId": 278,
+  "songName": "Mystic Light Quest",
+  "rowKey": "Mystic Light Quest",
+  "displaySongName": "Mystic Light Quest",
+  "artist": "塞壬唱片-MSR, 宋柏, 十音, 解伟苓",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "心灵火 P11 写作「Mystic Light Ques」、桐人 P11 误写为《浸春芜》；独立证据 BV12spw6VEyq（2026-10-06 19:32「【小松绿Viridis】唱唱little wish和Mystic Light Quest」7:28）与 P10《Little Wish》239s + P11 208s = 447s 吻合，曲名确认为《Mystic Light Quest》。",
+  "audio": {
+    "url": "assets/audio/song_277.m4a?v=f39f817c4f71",
+    "sha256": "f39f817c4f71eb47656f4a4bb4a8355837a1f39ffeb6dc4c00ad4cdd201c1ff3"
+  },
+  "retrievedAt": "2026-11-16T04:06:12.727Z",
+  "match": {
+    "status": "version_review_required",
+    "queries": [
+      "https://music.163.com/api/search/get?s=Mystic%20Light%20Quest&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=Mystic%20Light%20Quest%20%E5%A1%9E%E5%A3%AC%E5%94%B1%E7%89%87-MSR&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 2612747239,
+        "name": "Mystic Light Quest",
+        "artists": [
+          "塞壬唱片-MSR",
+          "RANASOL",
+          "KOTONOHOUSE",
+          "Machico"
+        ],
+        "album": "Mystic Light Quest",
+        "durationMs": 207000,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 3420988767,
+        "name": "Mystic Light Quest",
+        "artists": [
+          "Dazzle"
+        ],
+        "album": "任由夜色包裹",
+        "durationMs": 107234,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2616541588,
+        "name": "Mystic Light Quest",
+        "artists": [
+          "yido酱Official",
+          "洛天依"
+        ],
+        "album": "Mystic Light Quest",
+        "durationMs": 207000,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2616619747,
+        "name": "Mystic Light Quest",
+        "artists": [
+          "悠米_Yuumi"
+        ],
+        "album": "Mystic Light Quest",
+        "durationMs": 207000,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2612746324,
+        "name": "Mystic Light Quest (Instrumental)",
+        "artists": [
+          "塞壬唱片-MSR",
+          "KOTONOHOUSE"
+        ],
+        "album": "Mystic Light Quest",
+        "durationMs": 207000,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      },
+      {
+        "id": 3444428383,
+        "name": "Mystic Light Quest(司凤版)",
+        "artists": [
+          "d.m.kiana"
+        ],
+        "album": "司凤音乐",
+        "durationMs": 181909,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 2617013450,
+        "name": "Mystic Light Quest (Hardcore Remix)",
+        "artists": [
+          "Henry"
+        ],
+        "album": "《明日方舟》佩佩角色EP｜Hardcore Remix",
+        "durationMs": 212089,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 3458794445,
+        "name": "Mystic Light Quest（Cover）",
+        "artists": [
+          "KOTONOHOUSE",
+          "Minatsuki"
+        ],
+        "album": "Mystic Light Quest（Cover）",
+        "durationMs": 209541,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      }
+    ],
+    "workQuery": {
+      "song_id": 278,
+      "song_name": "Mystic Light Quest",
+      "show_as_song_name": "",
+      "display_song_name": "Mystic Light Quest",
+      "artist": "塞壬唱片-MSR, 宋柏, 十音, 解伟苓",
+      "artist_search": "塞壬唱片-MSR, 宋柏, 十音, 解伟苓",
+      "feat_artist": "",
+      "remark": "心灵火 P11 写作「Mystic Light Ques」、桐人 P11 误写为《浸春芜》；独立证据 BV12spw6VEyq（2026-10-06 19:32「【小松绿Viridis】唱唱little wish和Mystic Light Quest」7:28）与 P10《Little Wish》239s + P11 208s = 447s 吻合，曲名确认为《Mystic Light Quest》。",
+      "tone": "",
+      "language": "中文",
+      "type": "游戏",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV18Jpw6mE82/?p=11",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-06",
+      "row_key": "Mystic Light Quest"
+    },
+    "sourceId": 2612747239,
+    "sourcePath": "sources/2612747239.json",
+    "sourceUrl": "https://music.163.com/#/song?id=2612747239",
+    "selected": {
+      "id": 2612747239,
+      "name": "Mystic Light Quest",
+      "artists": [
+        "塞壬唱片-MSR",
+        "RANASOL",
+        "KOTONOHOUSE",
+        "Machico"
+      ],
+      "album": "Mystic Light Quest",
+      "durationMs": 207000,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 42,
+    "review": {
+      "reason": "Catalog language is Chinese but source lyrics are Japanese. Catalog language may itself be wrong. Confirm actual sung language and lyric edition before selecting any alternate Chinese cover.",
+      "evidenceUrl": "https://music.163.com/#/song?id=2612747239",
+      "previousSourceId": 2612747239
+    }
+  },
+  "alignment": {
+    "status": "version_review_required",
+    "offsetSeconds": null,
+    "humanVerified": false
+  }
+}

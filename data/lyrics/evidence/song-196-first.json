@@ -1,0 +1,57 @@
+{
+  "audioSha256": "bd507c4dd7b1cbf465279d4d37f5c68023383fc338050811ff82c02d28c6ea24",
+  "model": "whisper-base",
+  "start": 0,
+  "end": 35,
+  "result": {
+    "text": "是哈这个吧",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 2.4999999999999996,
+        "end": 4.32,
+        "text": "是哈这个吧",
+        "tokens": [
+          50364,
+          1541,
+          10595,
+          15368,
+          6062,
+          50464
+        ],
+        "temperature": 0,
+        "avg_logprob": -1.1172902924673898,
+        "compression_ratio": 0.625,
+        "no_speech_prob": 0.051375862210989,
+        "words": [
+          {
+            "word": "是",
+            "start": 2.4999999999999996,
+            "end": 3.34,
+            "probability": 0.3924611508846283
+          },
+          {
+            "word": "哈",
+            "start": 3.34,
+            "end": 3.48,
+            "probability": 0.37212541699409485
+          },
+          {
+            "word": "这个",
+            "start": 3.48,
+            "end": 3.66,
+            "probability": 0.7412388324737549
+          },
+          {
+            "word": "吧",
+            "start": 3.66,
+            "end": 4.32,
+            "probability": 0.9647901058197021
+          }
+        ]
+      }
+    ],
+    "language": "zh"
+  }
+}

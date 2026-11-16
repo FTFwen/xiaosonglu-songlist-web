@@ -1,0 +1,88 @@
+{
+  "audioSha256": "7991c67cd8ecc440b021b05f82c655595496d206a6f2d91bfbe646d0b028b590",
+  "model": "whisper-base",
+  "start": 0,
+  "end": 35,
+  "result": {
+    "text": "只要是我睡吧",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 3000,
+        "start": 30.0,
+        "end": 31.16,
+        "text": "只要是我",
+        "tokens": [
+          50364,
+          14003,
+          4275,
+          1541,
+          1654,
+          50464
+        ],
+        "temperature": 0,
+        "avg_logprob": -1.4227107654918323,
+        "compression_ratio": 0.6206896551724138,
+        "no_speech_prob": 0.46637797355651855,
+        "words": [
+          {
+            "word": "只",
+            "start": 30.0,
+            "end": 30.32,
+            "probability": 0.030872007831931114
+          },
+          {
+            "word": "要",
+            "start": 30.32,
+            "end": 30.46,
+            "probability": 0.728847861289978
+          },
+          {
+            "word": "是",
+            "start": 30.46,
+            "end": 30.62,
+            "probability": 0.11366698145866394
+          },
+          {
+            "word": "我",
+            "start": 30.62,
+            "end": 31.16,
+            "probability": 0.0943061038851738
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "seek": 3000,
+        "start": 32.0,
+        "end": 33.16,
+        "text": "睡吧",
+        "tokens": [
+          50464,
+          40490,
+          6062,
+          50614
+        ],
+        "temperature": 0,
+        "avg_logprob": -1.4227107654918323,
+        "compression_ratio": 0.6206896551724138,
+        "no_speech_prob": 0.46637797355651855,
+        "words": [
+          {
+            "word": "睡",
+            "start": 32.0,
+            "end": 32.44,
+            "probability": 0.11527778953313828
+          },
+          {
+            "word": "吧",
+            "start": 32.44,
+            "end": 33.16,
+            "probability": 0.4368087947368622
+          }
+        ]
+      }
+    ],
+    "language": "zh"
+  }
+}

@@ -1,0 +1,168 @@
+{
+  "schemaVersion": 1,
+  "key": "song-190",
+  "songId": 190,
+  "songName": "小夜子（中文填词）",
+  "rowKey": "小夜子（中文填词）",
+  "displaySongName": "小夜子",
+  "artist": "みきとP / 初音ミク",
+  "language": "中文",
+  "derivative": false,
+  "edition": "中文填词",
+  "remark": "",
+  "audio": {
+    "url": "assets/audio/song_189.m4a?v=6bdfe18f66bb",
+    "sha256": "6bdfe18f66bb23cc260174a4310e2b3f1aacea903b9c20c053c6687530b7002d"
+  },
+  "retrievedAt": "2026-11-16T04:04:45.435Z",
+  "match": {
+    "status": "version_review_required",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E5%B0%8F%E5%A4%9C%E5%AD%90%20%E4%B8%AD%E6%96%87%E5%A1%AB%E8%AF%8D&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E5%B0%8F%E5%A4%9C%E5%AD%90%20%E4%B8%AD%E6%96%87%E5%A1%AB%E8%AF%8D%20%E3%81%BF%E3%81%8D%E3%81%A8P%20%2F%20%E5%88%9D%E9%9F%B3%E3%83%9F%E3%82%AF&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E5%B0%8F%E5%A4%9C%E5%AD%90&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 430685027,
+        "name": "小夜子(中文填词）",
+        "artists": [
+          "雲翼星辰"
+        ],
+        "album": "中文填词翻唱集",
+        "durationMs": 241323,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 486071229,
+        "name": "小夜子(中文填词）",
+        "artists": [
+          "寞笙"
+        ],
+        "album": "小夜子",
+        "durationMs": 237875,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 26219268,
+        "name": "小夜子",
+        "artists": [
+          "初音ミク",
+          "みきとP"
+        ],
+        "album": "僕は初音ミクとキスをした",
+        "durationMs": 255931,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      },
+      {
+        "id": 623112,
+        "name": "小夜子",
+        "artists": [
+          "みきとP",
+          "初音ミク"
+        ],
+        "album": "刹那プラス+",
+        "durationMs": 255931,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      },
+      {
+        "id": 28936445,
+        "name": "小夜子",
+        "artists": [
+          "みきとP"
+        ],
+        "album": "moji moji",
+        "durationMs": 255931,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      },
+      {
+        "id": 33682743,
+        "name": "小夜子",
+        "artists": [
+          "泠鸢yousa"
+        ],
+        "album": "填词作品集",
+        "durationMs": 254693,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 511854287,
+        "name": "小夜子（中文填词）（Cover 初音ミク）",
+        "artists": [
+          "纸鹤"
+        ],
+        "album": "中文填词才没有在这里((٩(//̀Д/́/)۶))",
+        "durationMs": 274128,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 22705500,
+        "name": "小夜子",
+        "artists": [
+          "鹿乃"
+        ],
+        "album": "Sweet Ices Cream",
+        "durationMs": 253653,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      }
+    ],
+    "workQuery": {
+      "song_id": 190,
+      "song_name": "小夜子（中文填词）",
+      "show_as_song_name": "",
+      "display_song_name": "小夜子",
+      "artist": "みきとP / 初音ミク",
+      "artist_search": "みきとP 初音ミク",
+      "feat_artist": "",
+      "remark": "",
+      "tone": "",
+      "language": "中文",
+      "type": "中文填词、Vocaloid",
+      "identification": "",
+      "display_version": "中文填词",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1xger6jEYS/?p=3",
+      "sing_count": 1,
+      "status_labels": "自动识别待人工复核",
+      "last_sing_at": "2026-09-17",
+      "row_key": "小夜子（中文填词）"
+    },
+    "sourceId": 430685027,
+    "sourcePath": "sources/430685027.json",
+    "sourceUrl": "https://music.163.com/#/song?id=430685027",
+    "selected": {
+      "id": 430685027,
+      "name": "小夜子(中文填词）",
+      "artists": [
+        "雲翼星辰"
+      ],
+      "album": "中文填词翻唱集",
+      "durationMs": 241323,
+      "titleScore": 1,
+      "artistMatch": false,
+      "score": 0.8
+    },
+    "timedLineCount": 45
+  },
+  "alignment": {
+    "status": "version_review_required",
+    "offsetSeconds": null,
+    "humanVerified": false
+  }
+}

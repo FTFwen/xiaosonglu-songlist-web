@@ -1,0 +1,198 @@
+{
+  "schemaVersion": 1,
+  "key": "song-402",
+  "songId": 402,
+  "songName": "万古生香",
+  "rowKey": "万古生香",
+  "displaySongName": "万古生香",
+  "artist": "洛天依Official",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "2019 拜年祭单品，洛天依Official 演唱的中V传说曲；本场为超长完整版（529s）。",
+  "audio": {
+    "url": "assets/audio/song_401.m4a?v=1d01b367bec5",
+    "sha256": "1d01b367bec5a9877cd8c8242b4d159ad1516d5230d6862d1c4c93295bb8f264"
+  },
+  "retrievedAt": "2026-11-16T04:08:29.485Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E4%B8%87%E5%8F%A4%E7%94%9F%E9%A6%99&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E4%B8%87%E5%8F%A4%E7%94%9F%E9%A6%99%20%E6%B4%9B%E5%A4%A9%E4%BE%9DOfficial&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1831476078,
+        "name": "万古生香",
+        "artists": [
+          "洛天依Official"
+        ],
+        "album": "哔哩哔哩拜年纪金曲回顾",
+        "durationMs": 293709,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1420295382,
+        "name": "万古生香",
+        "artists": [
+          "三无Marblue"
+        ],
+        "album": "翻唱合集（更新到《overthink》",
+        "durationMs": 293610,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1418515871,
+        "name": "万古生香",
+        "artists": [
+          "祖娅纳惜"
+        ],
+        "album": "万古生香",
+        "durationMs": 293082,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1419873257,
+        "name": "万古生香",
+        "artists": [
+          "肥皂菌丨珉珉的猫咪丨"
+        ],
+        "album": "万古生香",
+        "durationMs": 293597,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1419468903,
+        "name": "万古生香",
+        "artists": [
+          "司夏"
+        ],
+        "album": "万古生香",
+        "durationMs": 294635,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1421843592,
+        "name": "万古生香(乐正绫/洛天依/言和)(翻自 洛天依)",
+        "artists": [
+          "洛天yi微笑时好美丶",
+          "乐正绫 / 言和 / 洛天依"
+        ],
+        "album": "翻调合集√",
+        "durationMs": 293597,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      },
+      {
+        "id": 1449107684,
+        "name": "万古生香 (Live)",
+        "artists": [
+          "洛天依Official",
+          "白举纲"
+        ],
+        "album": "天赐的声音 第12期",
+        "durationMs": 238262,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      },
+      {
+        "id": 1427664816,
+        "name": "万古生香 柔情版（翻自 洛天依）",
+        "artists": [
+          "小宇Cosmos",
+          "洛天依",
+          "心华",
+          "墨清弦",
+          "言和",
+          "乐正绫",
+          "苍穹",
+          "诗岸",
+          "星尘",
+          "海伊",
+          "赤羽",
+          "溱绫西陌",
+          "星葵77",
+          "CARDINAL星海"
+        ],
+        "album": "万古生香 柔情版",
+        "durationMs": 270000,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      }
+    ],
+    "workQuery": {
+      "song_id": 402,
+      "song_name": "万古生香",
+      "show_as_song_name": "",
+      "display_song_name": "万古生香",
+      "artist": "洛天依Official",
+      "artist_search": "洛天依Official",
+      "feat_artist": "",
+      "remark": "2019 拜年祭单品，洛天依Official 演唱的中V传说曲；本场为超长完整版（529s）。",
+      "tone": "",
+      "language": "中文",
+      "type": "中V",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1LRWd6jEqp/?p=27",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-11-12",
+      "row_key": "万古生香"
+    },
+    "sourceId": 1831476078,
+    "sourcePath": "sources/1831476078.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1831476078",
+    "selected": {
+      "id": 1831476078,
+      "name": "万古生香",
+      "artists": [
+        "洛天依Official"
+      ],
+      "album": "哔哩哔哩拜年纪金曲回顾",
+      "durationMs": 293709,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 48
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-402-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 528.853,
+    "sourceFirstLine": {
+      "t": 55.71,
+      "text": "今夜若欠清光满堂"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 0.0,
+      "endSeconds": 0.2,
+      "similarity": 0.0,
+      "recognizedText": "不",
+      "meanProbability": 0.967,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

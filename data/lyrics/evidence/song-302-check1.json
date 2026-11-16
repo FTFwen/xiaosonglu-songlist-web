@@ -1,0 +1,79 @@
+{
+  "audioSha256": "7383d302f7db4321047a5a5cdafe61049f48e7557b463814f5e680a8a4718989",
+  "model": "whisper-base",
+  "start": 256.096,
+  "end": 276.096,
+  "result": {
+    "text": "早已已替我在守着",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 0.0,
+        "end": 3.52,
+        "text": "早已已替我在守着",
+        "tokens": [
+          50364,
+          21176,
+          15701,
+          15701,
+          9531,
+          123,
+          40528,
+          48480,
+          20708,
+          50718
+        ],
+        "temperature": 0,
+        "avg_logprob": -1.1076515371149236,
+        "compression_ratio": 0.75,
+        "no_speech_prob": 0.03164970129728317,
+        "words": [
+          {
+            "word": "早",
+            "start": 0.0,
+            "end": 0.28,
+            "probability": 0.2185065895318985
+          },
+          {
+            "word": "已",
+            "start": 0.28,
+            "end": 0.62,
+            "probability": 0.814196765422821
+          },
+          {
+            "word": "已",
+            "start": 0.62,
+            "end": 1.06,
+            "probability": 0.0733937919139862
+          },
+          {
+            "word": "替",
+            "start": 1.06,
+            "end": 1.18,
+            "probability": 0.5292410813271999
+          },
+          {
+            "word": "我在",
+            "start": 1.18,
+            "end": 1.7,
+            "probability": 0.5895540714263916
+          },
+          {
+            "word": "守",
+            "start": 1.7,
+            "end": 3.14,
+            "probability": 0.6226963996887207
+          },
+          {
+            "word": "着",
+            "start": 3.14,
+            "end": 3.52,
+            "probability": 0.27601829171180725
+          }
+        ]
+      }
+    ],
+    "language": "zh"
+  }
+}

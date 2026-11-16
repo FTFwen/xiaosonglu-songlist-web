@@ -1,0 +1,183 @@
+{
+  "schemaVersion": 1,
+  "key": "song-91",
+  "songId": 91,
+  "songName": "多情岸",
+  "rowKey": "多情岸",
+  "displaySongName": "多情岸",
+  "artist": "忘川风华录 / 洛天依",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "弹幕02:40:26“多情岸是写曹植的吗”、02:40:36“多情岸，落泪了”；02:42:57“这是天依原唱吧”印证洛天依原唱。百度百科核实：忘川风华录曹植主题曲，洛天依演唱。已找到专门歌切 BV1yw8h6TEBf（华丽失败酱）。",
+  "audio": {
+    "url": "assets/audio/song_91.m4a?v=e6960af7ad1b",
+    "sha256": "e6960af7ad1b8ebae3210cfb165a7d590a4b59bef4c538dbb6fafc9a0faa3334"
+  },
+  "retrievedAt": "2026-11-16T04:12:44.667Z",
+  "match": {
+    "status": "candidate_review_required",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E5%A4%9A%E6%83%85%E5%B2%B8&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E5%A4%9A%E6%83%85%E5%B2%B8%20%E5%BF%98%E5%B7%9D%E9%A3%8E%E5%8D%8E%E5%BD%95%20%2F%20%E6%B4%9B%E5%A4%A9%E4%BE%9D&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 863034934,
+        "name": "多情岸",
+        "artists": [
+          "萧忆情Alex"
+        ],
+        "album": "多情岸",
+        "durationMs": 295784,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1298717831,
+        "name": "多情岸",
+        "artists": [
+          "排骨教主"
+        ],
+        "album": "忘川风华录（排骨版）",
+        "durationMs": 291500,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 863373993,
+        "name": "多情岸",
+        "artists": [
+          "小曲儿"
+        ],
+        "album": "多情岸",
+        "durationMs": 293198,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1304885187,
+        "name": "多情岸",
+        "artists": [
+          "Aki阿杰"
+        ],
+        "album": "多情岸",
+        "durationMs": 295714,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1294692697,
+        "name": "多情岸",
+        "artists": [
+          "黑崎子"
+        ],
+        "album": "多情岸",
+        "durationMs": 293417,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1304884659,
+        "name": "多情岸",
+        "artists": [
+          "龟娘"
+        ],
+        "album": "龟娘翻唱歌曲合集",
+        "durationMs": 293367,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 864879357,
+        "name": "多情岸",
+        "artists": [
+          "灰老板"
+        ],
+        "album": "多情岸",
+        "durationMs": 298107,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1924266383,
+        "name": "多情岸",
+        "artists": [
+          "茶了了"
+        ],
+        "album": "多情岸",
+        "durationMs": 293091,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 91,
+      "song_name": "多情岸",
+      "show_as_song_name": "",
+      "display_song_name": "多情岸",
+      "artist": "忘川风华录 / 洛天依",
+      "artist_search": "忘川风华录 洛天依 多情岸",
+      "feat_artist": "",
+      "remark": "弹幕02:40:26“多情岸是写曹植的吗”、02:40:36“多情岸，落泪了”；02:42:57“这是天依原唱吧”印证洛天依原唱。百度百科核实：忘川风华录曹植主题曲，洛天依演唱。已找到专门歌切 BV1yw8h6TEBf（华丽失败酱）。",
+      "tone": "",
+      "language": "中文",
+      "type": "忘川风华录、古风",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1yw8h6TEBf/",
+      "sing_count": 1,
+      "status_labels": "清唱、自动识别待人工复核",
+      "last_sing_at": "2026-08-23",
+      "row_key": "多情岸"
+    },
+    "sourceId": 863034934,
+    "sourcePath": "sources/863034934.json",
+    "sourceUrl": "https://music.163.com/#/song?id=863034934",
+    "selected": {
+      "id": 863034934,
+      "name": "多情岸",
+      "artists": [
+        "萧忆情Alex"
+      ],
+      "album": "多情岸",
+      "durationMs": 295784,
+      "titleScore": 1,
+      "artistMatch": false,
+      "score": 0.8
+    },
+    "timedLineCount": 60
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-91-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 295.451,
+    "sourceFirstLine": {
+      "t": 8.76,
+      "text": "曲绘：企鹅子"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 25.24,
+      "endSeconds": 26.4,
+      "similarity": 0.0,
+      "recognizedText": "我",
+      "meanProbability": 0.035,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

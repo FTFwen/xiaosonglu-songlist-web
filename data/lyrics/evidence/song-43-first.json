@@ -1,0 +1,58 @@
+{
+  "audioSha256": "0fd994607b509548a699afa47ac445596977d3d88f0942fbf1b99f762b03e408",
+  "model": "whisper-base",
+  "start": 0,
+  "end": 35.45,
+  "result": {
+    "text": "《大陆》",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 28.580000000000002,
+        "end": 29.98,
+        "text": "《大陆》",
+        "tokens": [
+          50364,
+          9806,
+          3582,
+          8842,
+          228,
+          9782,
+          50464
+        ],
+        "temperature": 0,
+        "avg_logprob": -2.479252576828003,
+        "compression_ratio": 0.5714285714285714,
+        "no_speech_prob": 0.5897733569145203,
+        "words": [
+          {
+            "word": "《",
+            "start": 28.580000000000002,
+            "end": 29.98,
+            "probability": 0.005027759354561567
+          },
+          {
+            "word": "大",
+            "start": 29.98,
+            "end": 29.98,
+            "probability": 0.0075921895913779736
+          },
+          {
+            "word": "陆",
+            "start": 29.98,
+            "end": 29.98,
+            "probability": 0.1454361923970282
+          },
+          {
+            "word": "》",
+            "start": 29.98,
+            "end": 29.98,
+            "probability": 0.1688987761735916
+          }
+        ]
+      }
+    ],
+    "language": "zh"
+  }
+}

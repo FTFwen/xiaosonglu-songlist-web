@@ -1,0 +1,185 @@
+{
+  "schemaVersion": 1,
+  "key": "song-373",
+  "songId": 373,
+  "songName": "就让这大雨全都落下",
+  "rowKey": "就让这大雨全都落下",
+  "displaySongName": "就让这大雨全都落下",
+  "artist": "容祖儿",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "单曲歌切(Mintolu)佐证",
+  "audio": {
+    "url": "assets/audio/song_372.m4a?v=2d810422592f",
+    "sha256": "2d810422592f0e829311f5d38cf555bfa2dc1a25337087efd83be7aabb8237e4"
+  },
+  "retrievedAt": "2026-11-16T04:07:44.626Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E5%B0%B1%E8%AE%A9%E8%BF%99%E5%A4%A7%E9%9B%A8%E5%85%A8%E9%83%BD%E8%90%BD%E4%B8%8B&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E5%B0%B1%E8%AE%A9%E8%BF%99%E5%A4%A7%E9%9B%A8%E5%85%A8%E9%83%BD%E8%90%BD%E4%B8%8B%20%E5%AE%B9%E7%A5%96%E5%84%BF&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1984475097,
+        "name": "就让这大雨全都落下",
+        "artists": [
+          "容祖儿"
+        ],
+        "album": "联名",
+        "durationMs": 254160,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2024035483,
+        "name": "就让这大雨全都落下",
+        "artists": [
+          "郑润泽"
+        ],
+        "album": "就让这大雨全都落下",
+        "durationMs": 217710,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2022116424,
+        "name": "就让这大雨全都落下",
+        "artists": [
+          "苏星婕"
+        ],
+        "album": "就让这大雨全都落下",
+        "durationMs": 234212,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1968599553,
+        "name": "就让这大雨全都落下",
+        "artists": [
+          "shadow夏一瓶"
+        ],
+        "album": "就让这大雨全都落下",
+        "durationMs": 247317,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2062959356,
+        "name": "就让这大雨全都落下",
+        "artists": [
+          "M31"
+        ],
+        "album": "夏了个夏天",
+        "durationMs": 249920,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3423031097,
+        "name": "就让这大雨全都落下",
+        "artists": [
+          "霓虹兔",
+          "Luv4"
+        ],
+        "album": "就让这大雨全都落下",
+        "durationMs": 133927,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3403380856,
+        "name": "就让这大雨全都落下",
+        "artists": [
+          "音屿"
+        ],
+        "album": "就让这大雨全都落下",
+        "durationMs": 247353,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3423483785,
+        "name": "就让这大雨全都落下",
+        "artists": [
+          "灰蒙蒙",
+          "雷米克斯"
+        ],
+        "album": "就让这大雨全都落下",
+        "durationMs": 103375,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 373,
+      "song_name": "就让这大雨全都落下",
+      "show_as_song_name": "",
+      "display_song_name": "就让这大雨全都落下",
+      "artist": "容祖儿",
+      "artist_search": "容祖儿",
+      "feat_artist": "",
+      "remark": "单曲歌切(Mintolu)佐证",
+      "tone": "",
+      "language": "中文",
+      "type": "流行",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1nRxJ6tEPC/?p=26",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-31",
+      "row_key": "就让这大雨全都落下"
+    },
+    "sourceId": 1984475097,
+    "sourcePath": "sources/1984475097.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1984475097",
+    "selected": {
+      "id": 1984475097,
+      "name": "就让这大雨全都落下",
+      "artists": [
+        "容祖儿"
+      ],
+      "album": "联名",
+      "durationMs": 254160,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 66
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-373-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 250.389,
+    "sourceFirstLine": {
+      "t": 1.3,
+      "text": "共同制作人 : 金若晨"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 24.88,
+      "endSeconds": 26.28,
+      "similarity": 0.0,
+      "recognizedText": "哦",
+      "meanProbability": 0.072,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

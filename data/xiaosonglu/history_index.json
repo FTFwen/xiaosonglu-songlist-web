@@ -1,7 +1,7 @@
 {
   "roomKey": "xiaosonglu",
   "roomId": "1727071052",
-  "generatedAt": "2026-11-13T03:10:03.293Z",
+  "generatedAt": "2026-11-16T03:01:32.994Z",
   "source": "local-replay-ingestion",
   "latest": {
     "year": "2026",
@@ -23,7 +23,7 @@
         "02": 33
       },
       "11": {
-        "10": 10,
+        "10": 11,
         "12": 30,
         "08": 31
       },
@@ -9206,6 +9206,24 @@
         "lyric_excerpt": "",
         "song_resolution_method": "song-cut-title",
         "cut_link": "https://www.bilibili.com/video/BV1x7WV6rEkh/"
+      },
+      {
+        "song_name": "蝴蝶泉边",
+        "sing_time": "",
+        "statuses": [
+          "歌回",
+          "歌切复核"
+        ],
+        "artist": "黄雅莉",
+        "replay_id": "live:9fc7c749-a2c9-4b63-a63e-e75ea8200f22",
+        "replay_title": "【小松绿Viridis】对棉花糖进行一个了结 2026-11-10",
+        "replay_url": "",
+        "start_time": "",
+        "end_time": "",
+        "row_key": "蝴蝶泉边",
+        "lyric_excerpt": "我唱着妈妈唱着的歌谣 牡丹儿绣在金匾上",
+        "song_resolution_method": "song-cut-title",
+        "cut_link": "https://www.bilibili.com/video/BV1pxWV6TETx/"
       }
     ],
     "2026-11-12": [

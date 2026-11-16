@@ -1,0 +1,558 @@
+{
+  "audioSha256": "245a35c58ee6ea44c05378c8348d4956b46bce572817186cb12d670ef5b91340",
+  "model": "whisper-base",
+  "start": 207.35,
+  "end": 227.35,
+  "result": {
+    "text": "だよイスタジン最高の日君がいろんなだしかしんじれるないけどもっともっともっともっともっともっともっともっともっともっと",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 0.0,
+        "end": 0.68,
+        "text": "だよ",
+        "tokens": [
+          50364,
+          5362,
+          5591,
+          50464
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.48451781599488974,
+        "compression_ratio": 1.8631578947368421,
+        "no_speech_prob": 0.6549234390258789,
+        "words": [
+          {
+            "word": "だ",
+            "start": 0.0,
+            "end": 0.18,
+            "probability": 0.036561269313097
+          },
+          {
+            "word": "よ",
+            "start": 0.18,
+            "end": 0.68,
+            "probability": 0.9953814744949341
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "seek": 0,
+        "start": 0.68,
+        "end": 5.1,
+        "text": "イスタジン最高の日",
+        "tokens": [
+          50464,
+          8040,
+          9550,
+          12144,
+          14655,
+          4824,
+          8661,
+          12979,
+          2972,
+          6890,
+          50639
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.48451781599488974,
+        "compression_ratio": 1.8631578947368421,
+        "no_speech_prob": 0.6549234390258789,
+        "words": [
+          {
+            "word": "イ",
+            "start": 0.68,
+            "end": 1.84,
+            "probability": 0.0020965272560715675
+          },
+          {
+            "word": "ス",
+            "start": 1.84,
+            "end": 2.72,
+            "probability": 0.24634002149105072
+          },
+          {
+            "word": "タ",
+            "start": 2.72,
+            "end": 2.9,
+            "probability": 0.6035316586494446
+          },
+          {
+            "word": "ジ",
+            "start": 2.9,
+            "end": 3.1,
+            "probability": 0.6459898352622986
+          },
+          {
+            "word": "ン",
+            "start": 3.1,
+            "end": 3.34,
+            "probability": 0.5914902091026306
+          },
+          {
+            "word": "最",
+            "start": 3.34,
+            "end": 3.6,
+            "probability": 0.7959677577018738
+          },
+          {
+            "word": "高",
+            "start": 3.6,
+            "end": 4.12,
+            "probability": 0.5298590064048767
+          },
+          {
+            "word": "の",
+            "start": 4.12,
+            "end": 4.84,
+            "probability": 0.970094621181488
+          },
+          {
+            "word": "日",
+            "start": 4.84,
+            "end": 5.1,
+            "probability": 0.9309913516044617
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "seek": 0,
+        "start": 5.1,
+        "end": 7.3,
+        "text": "君がいろんなだ",
+        "tokens": [
+          50639,
+          24168,
+          5142,
+          1764,
+          12488,
+          16548,
+          5362,
+          50739
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.48451781599488974,
+        "compression_ratio": 1.8631578947368421,
+        "no_speech_prob": 0.6549234390258789,
+        "words": [
+          {
+            "word": "君",
+            "start": 5.1,
+            "end": 5.82,
+            "probability": 0.05998953804373741
+          },
+          {
+            "word": "が",
+            "start": 5.82,
+            "end": 6.12,
+            "probability": 0.8244097232818604
+          },
+          {
+            "word": "い",
+            "start": 6.12,
+            "end": 6.46,
+            "probability": 0.2895415425300598
+          },
+          {
+            "word": "ろ",
+            "start": 6.46,
+            "end": 6.58,
+            "probability": 0.7831474542617798
+          },
+          {
+            "word": "んな",
+            "start": 6.58,
+            "end": 6.92,
+            "probability": 0.6246479749679565
+          },
+          {
+            "word": "だ",
+            "start": 6.92,
+            "end": 7.3,
+            "probability": 0.16471174359321594
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "seek": 0,
+        "start": 7.3,
+        "end": 9.64,
+        "text": "しかしんじれるないけど",
+        "tokens": [
+          50739,
+          32156,
+          2849,
+          3225,
+          9257,
+          35367,
+          9311,
+          21891,
+          50864
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.48451781599488974,
+        "compression_ratio": 1.8631578947368421,
+        "no_speech_prob": 0.6549234390258789,
+        "words": [
+          {
+            "word": "しか",
+            "start": 7.3,
+            "end": 7.98,
+            "probability": 0.18360218405723572
+          },
+          {
+            "word": "し",
+            "start": 7.98,
+            "end": 8.28,
+            "probability": 0.9751229286193848
+          },
+          {
+            "word": "ん",
+            "start": 8.28,
+            "end": 8.52,
+            "probability": 0.23464083671569824
+          },
+          {
+            "word": "じ",
+            "start": 8.52,
+            "end": 8.62,
+            "probability": 0.6878174543380737
+          },
+          {
+            "word": "れる",
+            "start": 8.62,
+            "end": 8.92,
+            "probability": 0.8511815667152405
+          },
+          {
+            "word": "ない",
+            "start": 8.92,
+            "end": 9.26,
+            "probability": 0.5493279099464417
+          },
+          {
+            "word": "けど",
+            "start": 9.26,
+            "end": 9.64,
+            "probability": 0.9937769174575806
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "seek": 0,
+        "start": 9.64,
+        "end": 10.82,
+        "text": "もっと",
+        "tokens": [
+          50864,
+          4801,
+          13137,
+          50914
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.48451781599488974,
+        "compression_ratio": 1.8631578947368421,
+        "no_speech_prob": 0.6549234390258789,
+        "words": [
+          {
+            "word": "も",
+            "start": 9.64,
+            "end": 10.5,
+            "probability": 0.7425840497016907
+          },
+          {
+            "word": "っと",
+            "start": 10.5,
+            "end": 10.82,
+            "probability": 0.9873523712158203
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "seek": 0,
+        "start": 10.82,
+        "end": 12.22,
+        "text": "もっと",
+        "tokens": [
+          50914,
+          4801,
+          13137,
+          50964
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.48451781599488974,
+        "compression_ratio": 1.8631578947368421,
+        "no_speech_prob": 0.6549234390258789,
+        "words": [
+          {
+            "word": "も",
+            "start": 10.82,
+            "end": 11.84,
+            "probability": 0.8202100396156311
+          },
+          {
+            "word": "っと",
+            "start": 11.84,
+            "end": 12.22,
+            "probability": 0.9976536631584167
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "seek": 0,
+        "start": 12.22,
+        "end": 13.56,
+        "text": "もっと",
+        "tokens": [
+          50964,
+          4801,
+          13137,
+          51014
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.48451781599488974,
+        "compression_ratio": 1.8631578947368421,
+        "no_speech_prob": 0.6549234390258789,
+        "words": [
+          {
+            "word": "も",
+            "start": 12.22,
+            "end": 13.18,
+            "probability": 0.8888007402420044
+          },
+          {
+            "word": "っと",
+            "start": 13.18,
+            "end": 13.56,
+            "probability": 0.9980006814002991
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "seek": 0,
+        "start": 13.56,
+        "end": 16.2,
+        "text": "もっと",
+        "tokens": [
+          51014,
+          4801,
+          13137,
+          51064
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.48451781599488974,
+        "compression_ratio": 1.8631578947368421,
+        "no_speech_prob": 0.6549234390258789,
+        "words": [
+          {
+            "word": "も",
+            "start": 13.56,
+            "end": 14.46,
+            "probability": 0.9019888043403625
+          },
+          {
+            "word": "っと",
+            "start": 14.46,
+            "end": 16.2,
+            "probability": 0.9984264373779297
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "seek": 0,
+        "start": 16.2,
+        "end": 17.86,
+        "text": "もっと",
+        "tokens": [
+          51064,
+          4801,
+          13137,
+          51114
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.48451781599488974,
+        "compression_ratio": 1.8631578947368421,
+        "no_speech_prob": 0.6549234390258789,
+        "words": [
+          {
+            "word": "も",
+            "start": 16.2,
+            "end": 17.14,
+            "probability": 0.8873650431632996
+          },
+          {
+            "word": "っと",
+            "start": 17.14,
+            "end": 17.86,
+            "probability": 0.9986913800239563
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "seek": 0,
+        "start": 17.86,
+        "end": 18.32,
+        "text": "もっと",
+        "tokens": [
+          51114,
+          4801,
+          13137,
+          51164
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.48451781599488974,
+        "compression_ratio": 1.8631578947368421,
+        "no_speech_prob": 0.6549234390258789,
+        "words": [
+          {
+            "word": "も",
+            "start": 17.86,
+            "end": 17.86,
+            "probability": 0.8757007718086243
+          },
+          {
+            "word": "っと",
+            "start": 17.86,
+            "end": 18.32,
+            "probability": 0.9981092214584351
+          }
+        ]
+      },
+      {
+        "id": 10,
+        "seek": 0,
+        "start": 18.32,
+        "end": 19.18,
+        "text": "もっと",
+        "tokens": [
+          51164,
+          4801,
+          13137,
+          51214
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.48451781599488974,
+        "compression_ratio": 1.8631578947368421,
+        "no_speech_prob": 0.6549234390258789,
+        "words": [
+          {
+            "word": "も",
+            "start": 18.32,
+            "end": 18.46,
+            "probability": 0.7174344658851624
+          },
+          {
+            "word": "っと",
+            "start": 18.46,
+            "end": 19.18,
+            "probability": 0.9970224499702454
+          }
+        ]
+      },
+      {
+        "id": 11,
+        "seek": 0,
+        "start": 19.18,
+        "end": 19.2,
+        "text": "もっと",
+        "tokens": [
+          51214,
+          4801,
+          13137,
+          51264
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.48451781599488974,
+        "compression_ratio": 1.8631578947368421,
+        "no_speech_prob": 0.6549234390258789,
+        "words": [
+          {
+            "word": "も",
+            "start": 19.18,
+            "end": 19.18,
+            "probability": 0.21051722764968872
+          },
+          {
+            "word": "っと",
+            "start": 19.18,
+            "end": 19.2,
+            "probability": 0.9962134957313538
+          }
+        ]
+      },
+      {
+        "id": 12,
+        "seek": 0,
+        "start": 19.2,
+        "end": 19.62,
+        "text": "もっと",
+        "tokens": [
+          51264,
+          4801,
+          13137,
+          51314
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.48451781599488974,
+        "compression_ratio": 1.8631578947368421,
+        "no_speech_prob": 0.6549234390258789,
+        "words": [
+          {
+            "word": "も",
+            "start": 19.2,
+            "end": 19.62,
+            "probability": 0.16017897427082062
+          },
+          {
+            "word": "っと",
+            "start": 19.62,
+            "end": 19.62,
+            "probability": 0.9953429698944092
+          }
+        ]
+      },
+      {
+        "id": 13,
+        "seek": 0,
+        "start": 19.62,
+        "end": 19.76,
+        "text": "もっと",
+        "tokens": [
+          51314,
+          4801,
+          13137,
+          51364
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.48451781599488974,
+        "compression_ratio": 1.8631578947368421,
+        "no_speech_prob": 0.6549234390258789,
+        "words": [
+          {
+            "word": "も",
+            "start": 19.62,
+            "end": 19.76,
+            "probability": 0.2116243541240692
+          },
+          {
+            "word": "っと",
+            "start": 19.76,
+            "end": 19.76,
+            "probability": 0.9937641620635986
+          }
+        ]
+      }
+    ],
+    "language": "ja"
+  }
+}

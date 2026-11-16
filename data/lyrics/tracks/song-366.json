@@ -1,0 +1,183 @@
+{
+  "schemaVersion": 1,
+  "key": "song-366",
+  "songId": 366,
+  "songName": "宝贝",
+  "rowKey": "宝贝",
+  "displaySongName": "宝贝",
+  "artist": "张悬",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "分P 为 In a Day 版本，歌名归一为「宝贝」",
+  "audio": {
+    "url": "assets/audio/song_365.m4a?v=4b44bccf3f10",
+    "sha256": "4b44bccf3f103d9c40a254fa74b0d0014c017930ed4dee01ebbd67b0c348c2b3"
+  },
+  "retrievedAt": "2026-11-16T04:07:31.765Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E5%AE%9D%E8%B4%9D&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E5%AE%9D%E8%B4%9D%20%E5%BC%A0%E6%82%AC&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1883959452,
+        "name": "宝贝",
+        "artists": [
+          "张悬"
+        ],
+        "album": "再见",
+        "durationMs": 142629,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 409941465,
+        "name": "宝贝",
+        "artists": [
+          "易烊千玺"
+        ],
+        "album": "",
+        "durationMs": 167213,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 28864941,
+        "name": "宝贝",
+        "artists": [
+          "顾莉雅"
+        ],
+        "album": "绽放",
+        "durationMs": 248000,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2127890323,
+        "name": "宝贝",
+        "artists": [
+          "张真源"
+        ],
+        "album": "",
+        "durationMs": 34944,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1480094612,
+        "name": "宝贝",
+        "artists": [
+          "莫文蔚"
+        ],
+        "album": "宝贝(2ND EDITION)",
+        "durationMs": 238747,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1336871144,
+        "name": "宝贝",
+        "artists": [
+          "徐秉龙"
+        ],
+        "album": "宝贝",
+        "durationMs": 223027,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 326738,
+        "name": "宝贝 (In a Day)",
+        "artists": [
+          "张悬"
+        ],
+        "album": "my life will…",
+        "durationMs": 147493,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      },
+      {
+        "id": 5234480,
+        "name": "宝贝 (in the night)",
+        "artists": [
+          "张悬"
+        ],
+        "album": "跨世纪金曲精选",
+        "durationMs": 161173,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      }
+    ],
+    "workQuery": {
+      "song_id": 366,
+      "song_name": "宝贝",
+      "show_as_song_name": "",
+      "display_song_name": "宝贝",
+      "artist": "张悬",
+      "artist_search": "张悬",
+      "feat_artist": "",
+      "remark": "分P 为 In a Day 版本，歌名归一为「宝贝」",
+      "tone": "",
+      "language": "中文",
+      "type": "民谣",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1nRxJ6tEPC/?p=18",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-31",
+      "row_key": "宝贝"
+    },
+    "sourceId": 1883959452,
+    "sourcePath": "sources/1883959452.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1883959452",
+    "selected": {
+      "id": 1883959452,
+      "name": "宝贝",
+      "artists": [
+        "张悬"
+      ],
+      "album": "再见",
+      "durationMs": 142629,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 32
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-366-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 147.968,
+    "sourceFirstLine": {
+      "t": 4.261,
+      "text": "耶"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 3.7,
+      "endSeconds": 4.14,
+      "similarity": 0.0,
+      "recognizedText": "这个",
+      "meanProbability": 0.687,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

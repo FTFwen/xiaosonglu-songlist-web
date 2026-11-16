@@ -1,0 +1,190 @@
+{
+  "schemaVersion": 1,
+  "key": "song-222",
+  "songId": 222,
+  "songName": "ECHO",
+  "rowKey": "ECHO",
+  "displaySongName": "ECHO（歌ってみた）",
+  "artist": "+α/あるふぁきゅん。（原曲 Crusher-P）",
+  "language": "英文",
+  "derivative": false,
+  "edition": "",
+  "remark": "UP 桐人今天睡大觉《2026.09.23练歌歌切合集》P13；原曲为 Crusher-P 创作的英文 VOCALOID 曲（GUMI 演唱），分P 标注 +α/あるふぁきゅん。翻唱版本参照",
+  "audio": {
+    "url": "assets/audio/song_221.m4a?v=d9ce00f9dc10",
+    "sha256": "d9ce00f9dc103b0dfe2ec8a2373d55875f1fac452ed80448e65a531cd5d46642"
+  },
+  "retrievedAt": "2026-11-16T04:05:15.467Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=ECHO&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=ECHO%20%2B%CE%B1%2F%E3%81%82%E3%82%8B%E3%81%B5%E3%81%81%E3%81%8D%E3%82%85%E3%82%93%E3%80%82&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=ECHO%EF%BC%88%E6%AD%8C%E3%81%A3%E3%81%A6%E3%81%BF%E3%81%9F%EF%BC%89&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 29812004,
+        "name": "ECHO",
+        "artists": [
+          "Crusher-P",
+          "GUMI"
+        ],
+        "album": "CrusherP",
+        "durationMs": 244793,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 30830853,
+        "name": "ECHO",
+        "artists": [
+          "GUMI",
+          "CircusP",
+          "Crusher-P"
+        ],
+        "album": "EXIT TUNES PRESENTS THE BEST OF GUMI from Megpoid",
+        "durationMs": 227900,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 41650120,
+        "name": "ECHO",
+        "artists": [
+          "+α/あるふぁきゅん。"
+        ],
+        "album": "αβ叫喚<通常盤>",
+        "durationMs": 229400,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 41667298,
+        "name": "ECHO",
+        "artists": [
+          "+α/あるふぁきゅん。"
+        ],
+        "album": "αβ叫喚<初回限定盤>",
+        "durationMs": 229400,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 38679920,
+        "name": "ECHO",
+        "artists": [
+          "+α/あるふぁきゅん。"
+        ],
+        "album": "最新热歌慢摇112",
+        "durationMs": 246571,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1406451662,
+        "name": "ECHO",
+        "artists": [
+          "+α",
+          "あるふぁきゅん。"
+        ],
+        "album": "αβ叫喚",
+        "durationMs": 229400,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2623126896,
+        "name": "ECHO",
+        "artists": [
+          "小豆沢こはね",
+          "青柳冬弥"
+        ],
+        "album": "プロジェクトセカイ カラフルステージ！ feat. 初音ミク　アナザーボーカルアルバム Vivid BAD SQUAD",
+        "durationMs": 229466,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3344393308,
+        "name": "Echo",
+        "artists": [
+          "花墙FancyWall"
+        ],
+        "album": "电台公休日",
+        "durationMs": 214618,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 222,
+      "song_name": "ECHO",
+      "show_as_song_name": "",
+      "display_song_name": "ECHO（歌ってみた）",
+      "artist": "+α/あるふぁきゅん。（原曲 Crusher-P）",
+      "artist_search": "ECHO Crusher-P VOCALOID",
+      "feat_artist": "",
+      "remark": "UP 桐人今天睡大觉《2026.09.23练歌歌切合集》P13；原曲为 Crusher-P 创作的英文 VOCALOID 曲（GUMI 演唱），分P 标注 +α/あるふぁきゅん。翻唱版本参照",
+      "tone": "",
+      "language": "英文",
+      "type": "Vocaloid、翻唱",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1ouhW6GEoD/?p=13",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-09-23",
+      "row_key": "ECHO"
+    },
+    "sourceId": 29812004,
+    "sourcePath": "sources/29812004.json",
+    "sourceUrl": "https://music.163.com/#/song?id=29812004",
+    "selected": {
+      "id": 29812004,
+      "name": "ECHO",
+      "artists": [
+        "Crusher-P",
+        "GUMI"
+      ],
+      "album": "CrusherP",
+      "durationMs": 244793,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 60
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-222-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 118.143,
+    "sourceFirstLine": {
+      "t": 19.3,
+      "text": "The clock stopped ticking forever ago"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 0.0,
+      "endSeconds": 0.62,
+      "similarity": 0.0,
+      "recognizedText": " 아코야,",
+      "meanProbability": 0.418,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "ko",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

@@ -1,0 +1,217 @@
+{
+  "schemaVersion": 1,
+  "key": "song-380",
+  "songId": 380,
+  "songName": "月球",
+  "rowKey": "月球",
+  "displaySongName": "月球",
+  "artist": "银临",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "章节标注 银临",
+  "audio": {
+    "url": "assets/audio/song_379.m4a?v=02600e62989e",
+    "sha256": "02600e62989e625f152b61bf798b67a7242249d77c04b06f459d856837d2b5de"
+  },
+  "retrievedAt": "2026-11-16T04:08:04.653Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E6%9C%88%E7%90%83&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E6%9C%88%E7%90%83%20%E9%93%B6%E4%B8%B4&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1380262781,
+        "name": "月球",
+        "artists": [
+          "银临"
+        ],
+        "album": "Life·Live",
+        "durationMs": 279101,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 159927,
+        "name": "月球",
+        "artists": [
+          "韦礼安"
+        ],
+        "album": "有人在等",
+        "durationMs": 251933,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1380263183,
+        "name": "月球 (伴奏)",
+        "artists": [
+          "银临"
+        ],
+        "album": "Life·Live",
+        "durationMs": 279101,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      },
+      {
+        "id": 212516,
+        "name": "月球 (Moon)",
+        "artists": [
+          "陈冠蒨"
+        ],
+        "album": "欲言又止",
+        "durationMs": 412333,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 65549,
+        "name": "月球上的人",
+        "artists": [
+          "陈奕迅"
+        ],
+        "album": "认了吧",
+        "durationMs": 222640,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 407927304,
+        "name": "月球下的人",
+        "artists": [
+          "李幸倪"
+        ],
+        "album": "月球下的人",
+        "durationMs": 283846,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 1912405371,
+        "name": "月球上碰面",
+        "artists": [
+          "薛凯琪",
+          "麦浚龙"
+        ],
+        "album": "月球上碰面",
+        "durationMs": 266427,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 1479053134,
+        "name": "月球阴谋论",
+        "artists": [
+          "Toni"
+        ],
+        "album": "月球阴谋论",
+        "durationMs": 187586,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      }
+    ],
+    "workQuery": {
+      "song_id": 380,
+      "song_name": "月球",
+      "show_as_song_name": "",
+      "display_song_name": "月球",
+      "artist": "银临",
+      "artist_search": "银临",
+      "feat_artist": "",
+      "remark": "章节标注 银临",
+      "tone": "",
+      "language": "中文",
+      "type": "国风、古风",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV18pWH6gEzr/?p=15",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-11-08",
+      "row_key": "月球"
+    },
+    "sourceId": 1380262781,
+    "sourcePath": "sources/1380262781.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1380262781",
+    "selected": {
+      "id": 1380262781,
+      "name": "月球",
+      "artists": [
+        "银临"
+      ],
+      "album": "Life·Live",
+      "durationMs": 279101,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 25
+  },
+  "alignment": {
+    "status": "spotcheck_review_required",
+    "evidencePath": "evidence/song-380-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 377.067,
+    "sourceFirstLine": {
+      "t": 22.803,
+      "text": "在你身侧"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 22.72,
+      "endSeconds": 24.96,
+      "similarity": 0.8571428571428571,
+      "recognizedText": "在你身",
+      "meanProbability": 0.624,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": -0.083,
+    "checks": [
+      {
+        "sourceLine": {
+          "t": 189.423,
+          "text": "那些相望相随的、彼此明亮的年纪"
+        },
+        "evidencePath": "evidence/song-380-check0.json",
+        "candidate": {
+          "audioSeconds": 186.26,
+          "endSeconds": 186.68,
+          "similarity": 0.13333333333333333,
+          "recognizedText": "的",
+          "meanProbability": 0.977,
+          "tokenPrefixOnly": false
+        },
+        "residualSeconds": -3.08
+      },
+      {
+        "sourceLine": {
+          "t": 275.872,
+          "text": "箱琴：文正"
+        },
+        "evidencePath": "evidence/song-380-check1.json",
+        "candidate": {
+          "audioSeconds": 269.789,
+          "endSeconds": 271.329,
+          "similarity": 0.0,
+          "recognizedText": "是",
+          "meanProbability": 0.129,
+          "tokenPrefixOnly": false
+        },
+        "residualSeconds": -6.0
+      }
+    ],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

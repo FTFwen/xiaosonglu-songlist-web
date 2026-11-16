@@ -1,0 +1,216 @@
+{
+  "schemaVersion": 1,
+  "key": "song-52",
+  "songId": 52,
+  "songName": "爱情讯息",
+  "rowKey": "爱情讯息",
+  "displaySongName": "爱情讯息",
+  "artist": "郭静",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "来自 2026-08-18 小唱一会儿聊回放后半段。72-78 分钟切片中连续命中“如果可以，偶尔任性应该也没关系”“每次相遇，都会有一种让人感动的美丽”“想念变成空气在叹息”“那是爱情带来的讯息”等句群，DuckDuckGo 检索结果稳定指向郭静《爱情讯息》；78-81 分钟转写又出现“听一万遍爱情讯息”“前面忘了后面忘了”等收尾聊天，可先入库并保留人工复核标签。",
+  "audio": {
+    "url": "assets/audio/song_06.m4a?v=cc20351c0992",
+    "sha256": "cc20351c09924d623cfa05b596a8c72c7fea3ea8e336dae84f88bcaadd4c980a"
+  },
+  "retrievedAt": "2026-11-16T04:02:25.740Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E7%88%B1%E6%83%85%E8%AE%AF%E6%81%AF&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E7%88%B1%E6%83%85%E8%AE%AF%E6%81%AF%20%E9%83%AD%E9%9D%99&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 233888,
+        "name": "爱情讯息",
+        "artists": [
+          "郭静"
+        ],
+        "album": "下一个天亮",
+        "durationMs": 280680,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 3368011262,
+        "name": "爱情讯息",
+        "artists": [
+          "爱唱歌的茜特菈莉"
+        ],
+        "album": "爱情讯息",
+        "durationMs": 282986,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2724740279,
+        "name": "爱情讯息",
+        "artists": [
+          "yihuik苡慧"
+        ],
+        "album": "爱情讯息",
+        "durationMs": 212000,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2729780974,
+        "name": "爱情讯息",
+        "artists": [
+          "汉堡黄"
+        ],
+        "album": "爱情讯息",
+        "durationMs": 232452,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2717670823,
+        "name": "爱情讯息",
+        "artists": [
+          "汪珂楠"
+        ],
+        "album": "爱情讯息",
+        "durationMs": 279940,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2723764957,
+        "name": "爱情讯息",
+        "artists": [
+          "洪一诺"
+        ],
+        "album": "爱情讯息",
+        "durationMs": 160000,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2727016371,
+        "name": "爱情讯息",
+        "artists": [
+          "刘大拿"
+        ],
+        "album": "爱情讯息",
+        "durationMs": 225600,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2725013017,
+        "name": "爱情讯息",
+        "artists": [
+          "MC小小志"
+        ],
+        "album": "2024超好听的爆火歌曲【163】",
+        "durationMs": 159843,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 52,
+      "song_name": "爱情讯息",
+      "show_as_song_name": "",
+      "display_song_name": "爱情讯息",
+      "artist": "郭静",
+      "artist_search": "郭静",
+      "feat_artist": "",
+      "remark": "来自 2026-08-18 小唱一会儿聊回放后半段。72-78 分钟切片中连续命中“如果可以，偶尔任性应该也没关系”“每次相遇，都会有一种让人感动的美丽”“想念变成空气在叹息”“那是爱情带来的讯息”等句群，DuckDuckGo 检索结果稳定指向郭静《爱情讯息》；78-81 分钟转写又出现“听一万遍爱情讯息”“前面忘了后面忘了”等收尾聊天，可先入库并保留人工复核标签。",
+      "tone": "",
+      "language": "中文",
+      "type": "流行、抒情",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1rv8V6DExk/",
+      "sing_count": 1,
+      "status_labels": "歌回、自动识别待人工复核",
+      "last_sing_at": "2026-08-18",
+      "row_key": "爱情讯息"
+    },
+    "sourceId": 233888,
+    "sourcePath": "sources/233888.json",
+    "sourceUrl": "https://music.163.com/#/song?id=233888",
+    "selected": {
+      "id": 233888,
+      "name": "爱情讯息",
+      "artists": [
+        "郭静"
+      ],
+      "album": "下一个天亮",
+      "durationMs": 280680,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 52
+  },
+  "alignment": {
+    "status": "spotcheck_review_required",
+    "evidencePath": "evidence/song-52-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 278.686,
+    "sourceFirstLine": {
+      "t": 31.29,
+      "text": "那又怎样 让自己习惯这个频率"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 31.9,
+      "endSeconds": 38.58,
+      "similarity": 0.8461538461538461,
+      "recognizedText": "那有怎样 让自己 习惯着个频率",
+      "meanProbability": 0.766,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": 0.61,
+    "checks": [
+      {
+        "sourceLine": {
+          "t": 140,
+          "text": "想让流星能够实现 幸福的愿望"
+        },
+        "evidencePath": "evidence/song-52-check0.json",
+        "candidate": {
+          "audioSeconds": 145.23,
+          "endSeconds": 145.47,
+          "similarity": 0.14285714285714285,
+          "recognizedText": "的",
+          "meanProbability": 0.892,
+          "tokenPrefixOnly": false
+        },
+        "residualSeconds": 4.62
+      },
+      {
+        "sourceLine": {
+          "t": 246.03,
+          "text": "不管多少时间我会等你"
+        },
+        "evidencePath": "evidence/song-52-check1.json",
+        "candidate": {
+          "audioSeconds": 240.64,
+          "endSeconds": 240.92,
+          "similarity": 0.0,
+          "recognizedText": "月",
+          "meanProbability": 0.048,
+          "tokenPrefixOnly": false
+        },
+        "residualSeconds": -6.0
+      }
+    ],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

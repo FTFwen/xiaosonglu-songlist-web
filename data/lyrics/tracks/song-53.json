@@ -1,0 +1,185 @@
+{
+  "schemaVersion": 1,
+  "key": "song-53",
+  "songId": 53,
+  "songName": "繁华唱遍",
+  "rowKey": "繁华唱遍",
+  "displaySongName": "繁华唱遍",
+  "artist": "乐正绫",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "来自 2026-08-18 小唱一会儿聊回放后半段。81-84 分钟聊天里主播已明确说“刚好下一首就是繁华唱面/繁华唱遍”，随后 87-93 分钟短段试唱连续命中“别怪我心太贪”“罪名都在戏台前”“要把灯火轻轻燃”等句群；90-93 分钟前半继续同曲，约 92 分钟后才重新回到读礼物与聊天。DuckDuckGo 检索结果稳定指向乐正绫《繁华唱遍》，可先入库并保留人工复核标签。",
+  "audio": {
+    "url": "assets/audio/song_18.m4a?v=1221b7cf32e2",
+    "sha256": "1221b7cf32e26563c28e1fdb319c93de0a81fb74b72b9fec90dce8366a961d07"
+  },
+  "retrievedAt": "2026-11-16T04:02:38.688Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E7%B9%81%E5%8D%8E%E5%94%B1%E9%81%8D&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E7%B9%81%E5%8D%8E%E5%94%B1%E9%81%8D%20%E4%B9%90%E6%AD%A3%E7%BB%AB&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1831474117,
+        "name": "繁华唱遍",
+        "artists": [
+          "乐正绫"
+        ],
+        "album": "哔哩哔哩拜年纪金曲回顾",
+        "durationMs": 245712,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1347714984,
+        "name": "繁华唱遍",
+        "artists": [
+          "萧忆情Alex"
+        ],
+        "album": "繁华唱遍",
+        "durationMs": 247048,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2016179253,
+        "name": "繁华唱遍",
+        "artists": [
+          "茶了了"
+        ],
+        "album": "繁华唱遍",
+        "durationMs": 246842,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1940379459,
+        "name": "繁华唱遍",
+        "artists": [
+          "咻咻满"
+        ],
+        "album": "咻咻满翻唱",
+        "durationMs": 249999,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1412860574,
+        "name": "繁华唱遍",
+        "artists": [
+          "玖肆仟"
+        ],
+        "album": "仟の歲 [翻唱辑]",
+        "durationMs": 245764,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1878870883,
+        "name": "繁华唱遍",
+        "artists": [
+          "简薇"
+        ],
+        "album": "富士山下",
+        "durationMs": 69672,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2014848661,
+        "name": "繁华唱遍(AI)",
+        "artists": [
+          "文舞bin",
+          "乐正绫"
+        ],
+        "album": "乐正绫AI翻调",
+        "durationMs": 246108,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      },
+      {
+        "id": 2677855353,
+        "name": "繁华唱遍(乐正绫ACE AI)",
+        "artists": [
+          "院长不是元璋",
+          "乐正绫"
+        ],
+        "album": "繁华唱遍（乐正绫ACE AI）",
+        "durationMs": 245712,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      }
+    ],
+    "workQuery": {
+      "song_id": 53,
+      "song_name": "繁华唱遍",
+      "show_as_song_name": "",
+      "display_song_name": "繁华唱遍",
+      "artist": "乐正绫",
+      "artist_search": "乐正绫",
+      "feat_artist": "",
+      "remark": "来自 2026-08-18 小唱一会儿聊回放后半段。81-84 分钟聊天里主播已明确说“刚好下一首就是繁华唱面/繁华唱遍”，随后 87-93 分钟短段试唱连续命中“别怪我心太贪”“罪名都在戏台前”“要把灯火轻轻燃”等句群；90-93 分钟前半继续同曲，约 92 分钟后才重新回到读礼物与聊天。DuckDuckGo 检索结果稳定指向乐正绫《繁华唱遍》，可先入库并保留人工复核标签。",
+      "tone": "",
+      "language": "中文",
+      "type": "中V、国风、古风",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1rv8V6DExk/",
+      "sing_count": 1,
+      "status_labels": "歌回、自动识别待人工复核",
+      "last_sing_at": "2026-08-18",
+      "row_key": "繁华唱遍"
+    },
+    "sourceId": 1831474117,
+    "sourcePath": "sources/1831474117.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1831474117",
+    "selected": {
+      "id": 1831474117,
+      "name": "繁华唱遍",
+      "artists": [
+        "乐正绫"
+      ],
+      "album": "哔哩哔哩拜年纪金曲回顾",
+      "durationMs": 245712,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 36
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-53-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 240.118,
+    "sourceFirstLine": {
+      "t": 10.15,
+      "text": "我以为那个时代已过去，殊不知当你歌唱时，属于那个时代的一切都在归来。——题记"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 16.02,
+      "endSeconds": 18.1,
+      "similarity": 0.16216216216216217,
+      "recognizedText": "我去找你",
+      "meanProbability": 0.065,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

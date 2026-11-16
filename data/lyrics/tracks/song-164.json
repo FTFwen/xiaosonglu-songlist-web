@@ -1,0 +1,168 @@
+{
+  "schemaVersion": 1,
+  "key": "song-164",
+  "songId": 164,
+  "songName": "生死一舞的爱语",
+  "displaySongName": "生死一舞的爱语",
+  "artist": "平行四界Quadimension、星尘",
+  "language": "中文",
+  "derivative": false,
+  "audio": {
+    "url": "assets/audio/song_163.m4a?v=c655bdf13115",
+    "sha256": "c655bdf1311553504db05243fcc06c827e3bc8ae8dfe679a6941b2728fc83ce3"
+  },
+  "retrievedAt": "2026-11-16T03:59:01.250Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E7%94%9F%E6%AD%BB%E4%B8%80%E8%88%9E%E7%9A%84%E7%88%B1%E8%AF%AD&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 478391482,
+        "name": "生死一舞的爱语",
+        "artists": [
+          "平行四界Quadimension",
+          "星尘"
+        ],
+        "album": "星语Star Whisper",
+        "durationMs": 225933,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1378301684,
+        "name": "生死一舞的爱语",
+        "artists": [
+          "双笙（陈元汐）"
+        ],
+        "album": "生死一舞的爱语（Cover 星尘）",
+        "durationMs": 225897,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1976182078,
+        "name": "生死一舞的爱语",
+        "artists": [
+          "朵芊"
+        ],
+        "album": "萝卜篮子",
+        "durationMs": 225959,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1457995605,
+        "name": "生死一舞的爱语",
+        "artists": [
+          "洛天yi微笑时好美丶",
+          "诗岸"
+        ],
+        "album": "翻调合集√",
+        "durationMs": 228666,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2108229047,
+        "name": "生死一舞的爱语",
+        "artists": [
+          "秦曲曲"
+        ],
+        "album": "翻唱集",
+        "durationMs": 225302,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1472232691,
+        "name": "生死一舞的爱语",
+        "artists": [
+          "苏沐辞晚Ciwsulm",
+          "赤羽",
+          "苍穹",
+          "海伊",
+          "诗岸"
+        ],
+        "album": "生死一舞的爱语",
+        "durationMs": 227400,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1426163342,
+        "name": "生死一舞的爱语",
+        "artists": [
+          "阿英"
+        ],
+        "album": "流行派",
+        "durationMs": 225336,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1911705851,
+        "name": "生死一舞的爱语",
+        "artists": [
+          "粲然"
+        ],
+        "album": "失踪人口回归",
+        "durationMs": 226464,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "sourceId": 478391482,
+    "sourcePath": "sources/478391482.json",
+    "sourceUrl": "https://music.163.com/#/song?id=478391482",
+    "selected": {
+      "id": 478391482,
+      "name": "生死一舞的爱语",
+      "artists": [
+        "平行四界Quadimension",
+        "星尘"
+      ],
+      "album": "星语Star Whisper",
+      "durationMs": 225933,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 34
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-164-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 218.368,
+    "sourceFirstLine": {
+      "t": 24.92,
+      "text": "我在大漠中汲踽"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 20.76,
+      "endSeconds": 21.84,
+      "similarity": 0.25,
+      "recognizedText": "我",
+      "meanProbability": 0.288,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  },
+  "rowKey": "生死一舞的爱语",
+  "edition": "",
+  "remark": ""
+}

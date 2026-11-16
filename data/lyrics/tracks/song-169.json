@@ -1,0 +1,183 @@
+{
+  "schemaVersion": 1,
+  "key": "song-169",
+  "songId": 169,
+  "songName": "遇见你的时候所有星星都落到我头上",
+  "rowKey": "遇见你的时候所有星星都落到我头上",
+  "displaySongName": "遇见你的时候所有星星都落到我头上",
+  "artist": "高姗",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "",
+  "audio": {
+    "url": "assets/audio/song_168.m4a?v=6e5c76a58cad",
+    "sha256": "6e5c76a58cadad57cee57c4e272c4b574ba6f50b7113bf39476da38a126a7fcf"
+  },
+  "retrievedAt": "2026-11-16T04:04:34.876Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E9%81%87%E8%A7%81%E4%BD%A0%E7%9A%84%E6%97%B6%E5%80%99%E6%89%80%E6%9C%89%E6%98%9F%E6%98%9F%E9%83%BD%E8%90%BD%E5%88%B0%E6%88%91%E5%A4%B4%E4%B8%8A&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E9%81%87%E8%A7%81%E4%BD%A0%E7%9A%84%E6%97%B6%E5%80%99%E6%89%80%E6%9C%89%E6%98%9F%E6%98%9F%E9%83%BD%E8%90%BD%E5%88%B0%E6%88%91%E5%A4%B4%E4%B8%8A%20%E9%AB%98%E5%A7%97&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 30089063,
+        "name": "遇见你的时候所有星星都落到我头上",
+        "artists": [
+          "高姗"
+        ],
+        "album": "遇见你的时候所有星星都落到我头上",
+        "durationMs": 228685,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1379631199,
+        "name": "遇见你的时候所有星星都落到我头上",
+        "artists": [
+          "萝卜不爱吃萝卜"
+        ],
+        "album": "遇见你的时候星星都落到我头上",
+        "durationMs": 228923,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1395766632,
+        "name": "遇见你的时候所有星星都落到我头上",
+        "artists": [
+          "千里狗"
+        ],
+        "album": "Cover 6",
+        "durationMs": 36984,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1957480120,
+        "name": "遇见你的时候所有星星都落到我头上",
+        "artists": [
+          "云仔"
+        ],
+        "album": "云层阶梯",
+        "durationMs": 221675,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1892079305,
+        "name": "遇见你的时候所有星星都落到我头上",
+        "artists": [
+          "偷颗星星"
+        ],
+        "album": "星星她说",
+        "durationMs": 225133,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3382246084,
+        "name": "遇见你的时候所有星星都落到我头上",
+        "artists": [
+          "白允y"
+        ],
+        "album": "遇见你的时候所有星星都落到我头上",
+        "durationMs": 228798,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1445204581,
+        "name": "遇见你的时候所有星星都落到我头上",
+        "artists": [
+          "郑豪豪"
+        ],
+        "album": "我字开头",
+        "durationMs": 34137,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1431011518,
+        "name": "遇见你的时候所有星星都落到我头上",
+        "artists": [
+          "南淮"
+        ],
+        "album": "遇见你的时候所有星星都落到我头上",
+        "durationMs": 228754,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 169,
+      "song_name": "遇见你的时候所有星星都落到我头上",
+      "show_as_song_name": "",
+      "display_song_name": "遇见你的时候所有星星都落到我头上",
+      "artist": "高姗",
+      "artist_search": "高姗",
+      "feat_artist": "",
+      "remark": "",
+      "tone": "",
+      "language": "中文",
+      "type": "流行",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1q9YB6xErK/?p=1",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-09-13",
+      "row_key": "遇见你的时候所有星星都落到我头上"
+    },
+    "sourceId": 30089063,
+    "sourcePath": "sources/30089063.json",
+    "sourceUrl": "https://music.163.com/#/song?id=30089063",
+    "selected": {
+      "id": 30089063,
+      "name": "遇见你的时候所有星星都落到我头上",
+      "artists": [
+        "高姗"
+      ],
+      "album": "遇见你的时候所有星星都落到我头上",
+      "durationMs": 228685,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 36
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-169-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 225.837,
+    "sourceFirstLine": {
+      "t": 12.68,
+      "text": "你给我了一个微笑"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 31.0,
+      "endSeconds": 32.6,
+      "similarity": 0.2857142857142857,
+      "recognizedText": "你的眼睛在笑",
+      "meanProbability": 0.792,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

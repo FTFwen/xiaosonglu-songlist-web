@@ -1,0 +1,63 @@
+{
+  "audioSha256": "cfbfd14fe1c740e3060c1f99fcdcceb8b2b9835a63e81bfd2ec247124f540207",
+  "model": "whisper-base",
+  "start": 0,
+  "end": 35,
+  "result": {
+    "text": "請到員",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 3000,
+        "start": 30.0,
+        "end": 30.0,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -2.1643884446885853,
+        "compression_ratio": 0.5714285714285714,
+        "no_speech_prob": 0.521940290927887,
+        "words": []
+      },
+      {
+        "id": 1,
+        "seek": 3000,
+        "start": 31.760000000000005,
+        "end": 34.8,
+        "text": "請到員",
+        "tokens": [
+          50564,
+          16302,
+          4511,
+          20992,
+          50614
+        ],
+        "temperature": 0,
+        "avg_logprob": -2.1643884446885853,
+        "compression_ratio": 0.5714285714285714,
+        "no_speech_prob": 0.521940290927887,
+        "words": [
+          {
+            "word": "請",
+            "start": 31.760000000000005,
+            "end": 33.160000000000004,
+            "probability": 0.0061289225704967976
+          },
+          {
+            "word": "到",
+            "start": 33.160000000000004,
+            "end": 34.56,
+            "probability": 0.18793584406375885
+          },
+          {
+            "word": "員",
+            "start": 34.56,
+            "end": 34.8,
+            "probability": 0.0758076012134552
+          }
+        ]
+      }
+    ],
+    "language": "zh"
+  }
+}

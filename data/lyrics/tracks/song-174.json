@@ -1,0 +1,183 @@
+{
+  "schemaVersion": 1,
+  "key": "song-174",
+  "songId": 174,
+  "songName": "小小",
+  "rowKey": "小小",
+  "displaySongName": "小小",
+  "artist": "容祖儿",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "",
+  "audio": {
+    "url": "assets/audio/song_173.m4a?v=9f975bfa15ae",
+    "sha256": "9f975bfa15ae9e93899a9defdef8ad25d23d01c145aa829abadd915b39e8a9fd"
+  },
+  "retrievedAt": "2026-11-16T04:04:32.447Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E5%B0%8F%E5%B0%8F&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E5%B0%8F%E5%B0%8F%20%E5%AE%B9%E7%A5%96%E5%84%BF&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 287231,
+        "name": "小小",
+        "artists": [
+          "容祖儿"
+        ],
+        "album": "小小",
+        "durationMs": 264601,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 447076433,
+        "name": "小小",
+        "artists": [
+          "容祖儿"
+        ],
+        "album": "一百个我 国语新曲+精选",
+        "durationMs": 264931,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 3404106573,
+        "name": "小小",
+        "artists": [
+          "Rosy赵露思"
+        ],
+        "album": "小小",
+        "durationMs": 232137,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2607383500,
+        "name": "小小",
+        "artists": [
+          "一颗狼星"
+        ],
+        "album": "小小",
+        "durationMs": 226518,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 223794,
+        "name": "小小",
+        "artists": [
+          "戴佩妮"
+        ],
+        "album": "iPenny",
+        "durationMs": 225344,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2740178981,
+        "name": "小小",
+        "artists": [
+          "王朝1982"
+        ],
+        "album": "小小",
+        "durationMs": 231818,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2667413086,
+        "name": "小小",
+        "artists": [
+          "赵政豪"
+        ],
+        "album": "小小",
+        "durationMs": 213009,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2754800045,
+        "name": "小小",
+        "artists": [
+          "Viima"
+        ],
+        "album": "white lace",
+        "durationMs": 130194,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 174,
+      "song_name": "小小",
+      "show_as_song_name": "",
+      "display_song_name": "小小",
+      "artist": "容祖儿",
+      "artist_search": "容祖儿",
+      "feat_artist": "",
+      "remark": "",
+      "tone": "",
+      "language": "中文",
+      "type": "流行",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1q9YB6xErK/?p=7",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-09-13",
+      "row_key": "小小"
+    },
+    "sourceId": 287231,
+    "sourcePath": "sources/287231.json",
+    "sourceUrl": "https://music.163.com/#/song?id=287231",
+    "selected": {
+      "id": 287231,
+      "name": "小小",
+      "artists": [
+        "容祖儿"
+      ],
+      "album": "小小",
+      "durationMs": 264601,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 49
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-174-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 266.286,
+    "sourceFirstLine": {
+      "t": 16.29,
+      "text": "回忆像个说书的人"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 27.96,
+      "endSeconds": 28.04,
+      "similarity": 0.0,
+      "recognizedText": "作",
+      "meanProbability": 0.005,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

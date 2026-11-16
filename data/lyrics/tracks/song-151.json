@@ -1,0 +1,186 @@
+{
+  "schemaVersion": 1,
+  "key": "song-151",
+  "songId": 151,
+  "songName": "世末积雨云",
+  "rowKey": "世末积雨云",
+  "displaySongName": "世末积雨云",
+  "artist": "洛天依Official",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "",
+  "audio": {
+    "url": "assets/audio/song_150.m4a?v=d7ca8a80c879",
+    "sha256": "d7ca8a80c879e69d62338eb4ff3a5e1db3e25da273afc611b9db46134ced021e"
+  },
+  "retrievedAt": "2026-11-16T04:12:20.636Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E4%B8%96%E6%9C%AB%E7%A7%AF%E9%9B%A8%E4%BA%91&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E4%B8%96%E6%9C%AB%E7%A7%AF%E9%9B%A8%E4%BA%91%20%E6%B4%9B%E5%A4%A9%E4%BE%9DOfficial&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1978276328,
+        "name": "世末积雨云",
+        "artists": [
+          "离大",
+          "ACE虚拟歌姬"
+        ],
+        "album": "普通的翻调",
+        "durationMs": 286167,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2604528479,
+        "name": "世末积雨云 feat. 鬼否",
+        "artists": [
+          "洛天依Official",
+          "鬼否"
+        ],
+        "album": "再生",
+        "durationMs": 317400,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      },
+      {
+        "id": 3441685668,
+        "name": "世末积雨云-南北组",
+        "artists": [
+          "任君",
+          "乐正绫",
+          "洛天依"
+        ],
+        "album": "Vsinger",
+        "durationMs": 286023,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      },
+      {
+        "id": 2694803576,
+        "name": "世末积雨云(ACE乐正绫)",
+        "artists": [
+          "梦德切尔",
+          "乐正绫"
+        ],
+        "album": "世末积雨云乐正绫",
+        "durationMs": 287829,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 1918691072,
+        "name": "世末积雨云_歌姬合唱版",
+        "artists": [
+          "这就是天幻呀"
+        ],
+        "album": "天幻的二创调校",
+        "durationMs": 285648,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 2082062097,
+        "name": "世末积雨云 instrumental cover. Remix",
+        "artists": [
+          "LYCORITHSVE#"
+        ],
+        "album": "世 末 積 雨 雲 【 无AI-綾 】cover. cop",
+        "durationMs": 285348,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 465219974,
+        "name": "世末积雨云（Cover 洛天依）",
+        "artists": [
+          "冰狼"
+        ],
+        "album": "KOORIOOKAMI CHINESE",
+        "durationMs": 285406,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 2064175821,
+        "name": "世末积雨云 -【绫】< rearranged ver >",
+        "artists": [
+          "LYCORITHSVE#"
+        ],
+        "album": "世 末 積 雨 雲 【 无AI-綾 】cover. cop",
+        "durationMs": 285596,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      }
+    ],
+    "workQuery": {
+      "song_id": 151,
+      "song_name": "世末积雨云",
+      "show_as_song_name": "",
+      "display_song_name": "世末积雨云",
+      "artist": "洛天依Official",
+      "artist_search": "洛天依Official",
+      "feat_artist": "",
+      "remark": "",
+      "tone": "",
+      "language": "中文",
+      "type": "中V",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=12",
+      "sing_count": 3,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-18",
+      "row_key": "世末积雨云"
+    },
+    "sourceId": 34834947,
+    "sourcePath": "sources/34834947.json",
+    "sourceUrl": "https://music.163.com/#/song?id=34834947",
+    "selected": {
+      "id": 34834947,
+      "name": "世末积雨云",
+      "artists": [
+        "洛天依Official"
+      ],
+      "album": "洛天依作品集",
+      "durationMs": 285910,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 66,
+    "review": {
+      "reason": "Indexed public song page and live song/detail confirm original 洛天依Official 世末积雨云, album 洛天依作品集, 285910ms. Live song/lyric returns 66 timestamped rows with COP credits and first sung line 为世界终结前最后的画面. Current source is 离大 / ACE虚拟歌姬 cover. Prefer original over 2024 鬼否 rearrangement 2604528479. No audio alignment claim.",
+      "evidenceUrl": "https://music.163.com/song?id=34834947",
+      "previousSourceId": 1978276328
+    }
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-151-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 294.267,
+    "sourceFirstLine": {
+      "t": 1.7530000000000001,
+      "text": "为世界终结前最后的画面"
+    },
+    "anchorCandidate": null,
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

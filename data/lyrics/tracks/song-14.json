@@ -1,0 +1,186 @@
+{
+  "schemaVersion": 1,
+  "key": "song-14",
+  "songId": 14,
+  "songName": "人间失宠",
+  "rowKey": "人间失宠",
+  "displaySongName": "人间失宠",
+  "artist": "闹闹丶 / 洛天依Official",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "来自 2026-08-09 第一次歌回回放中段。34-43 分钟区间里第二遍演唱的关键句与《人间失宠》网页歌词高度重合，尤其是“三十四年，够我绽放所有炽热”“至少百年后有人记得我”“我知世间来往步履太匆”等，证据已足够强，可先正式入库并保留人工复核标签。",
+  "audio": {
+    "url": "assets/audio/song_42.m4a?v=ed2cec242fe0",
+    "sha256": "ed2cec242fe0dcd10c1f987e602f5c1d2e6cccef301b1f83d40c1692ddac04b5"
+  },
+  "retrievedAt": "2026-11-16T04:03:05.263Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E4%BA%BA%E9%97%B4%E5%A4%B1%E5%AE%A0&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E4%BA%BA%E9%97%B4%E5%A4%B1%E5%AE%A0%20%E9%97%B9%E9%97%B9%E4%B8%B6%20%2F%20%E6%B4%9B%E5%A4%A9%E4%BE%9DOfficial&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 537076556,
+        "name": "人间失宠",
+        "artists": [
+          "闹闹丶",
+          "洛天依Official"
+        ],
+        "album": "人间失宠",
+        "durationMs": 246851,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 3313578702,
+        "name": "人间失宠",
+        "artists": [
+          "苏伊翎"
+        ],
+        "album": "人间失宠",
+        "durationMs": 249143,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1921170154,
+        "name": "人间失宠",
+        "artists": [
+          "温柔御姐梦寐"
+        ],
+        "album": "人间最宠你",
+        "durationMs": 246909,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1379637878,
+        "name": "人间失宠",
+        "artists": [
+          "徐天依"
+        ],
+        "album": "人间失宠",
+        "durationMs": 246905,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1395178252,
+        "name": "人间失宠",
+        "artists": [
+          "樱庭落"
+        ],
+        "album": "人间失宠【翻唱集】",
+        "durationMs": 246889,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1303268880,
+        "name": "人间失宠",
+        "artists": [
+          "洛茫"
+        ],
+        "album": "人间失宠",
+        "durationMs": 247066,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1462941930,
+        "name": "人间失宠",
+        "artists": [
+          "青犽"
+        ],
+        "album": "人间失宠",
+        "durationMs": 247482,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2740866272,
+        "name": "人间失宠",
+        "artists": [
+          "诗岸",
+          "CafeShark"
+        ],
+        "album": "人间失宠【翻自 洛天依】",
+        "durationMs": 248000,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 14,
+      "song_name": "人间失宠",
+      "show_as_song_name": "",
+      "display_song_name": "人间失宠",
+      "artist": "闹闹丶 / 洛天依Official",
+      "artist_search": "闹闹丶 洛天依",
+      "feat_artist": "",
+      "remark": "来自 2026-08-09 第一次歌回回放中段。34-43 分钟区间里第二遍演唱的关键句与《人间失宠》网页歌词高度重合，尤其是“三十四年，够我绽放所有炽热”“至少百年后有人记得我”“我知世间来往步履太匆”等，证据已足够强，可先正式入库并保留人工复核标签。",
+      "tone": "",
+      "language": "中文",
+      "type": "中V、流行",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1yEu16FEQe/",
+      "sing_count": 1,
+      "status_labels": "歌回、自动识别待人工复核",
+      "last_sing_at": "2026-08-09",
+      "row_key": "人间失宠"
+    },
+    "sourceId": 537076556,
+    "sourcePath": "sources/537076556.json",
+    "sourceUrl": "https://music.163.com/#/song?id=537076556",
+    "selected": {
+      "id": 537076556,
+      "name": "人间失宠",
+      "artists": [
+        "闹闹丶",
+        "洛天依Official"
+      ],
+      "album": "人间失宠",
+      "durationMs": 246851,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 50
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-14-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 246.41,
+    "sourceFirstLine": {
+      "t": 12.19,
+      "text": "映像 : Ansa"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 28.24,
+      "endSeconds": 28.72,
+      "similarity": 0.0,
+      "recognizedText": "作",
+      "meanProbability": 0.001,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

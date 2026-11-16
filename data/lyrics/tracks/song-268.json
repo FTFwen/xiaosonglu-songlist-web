@@ -1,0 +1,184 @@
+{
+  "schemaVersion": 1,
+  "key": "song-268",
+  "songId": 268,
+  "songName": "冬日",
+  "rowKey": "冬日",
+  "displaySongName": "冬日",
+  "artist": "鞠橘络",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "",
+  "audio": {
+    "url": "assets/audio/song_267.m4a?v=8f61ef68ef2b",
+    "sha256": "8f61ef68ef2bd0581f6443888f8e43cdcc649b5911c6764670c7d41e952f26b2"
+  },
+  "retrievedAt": "2026-11-16T04:05:59.337Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E5%86%AC%E6%97%A5&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E5%86%AC%E6%97%A5%20%E9%9E%A0%E6%A9%98%E7%BB%9C&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 2009355588,
+        "name": "冬日",
+        "artists": [
+          "鞠橘络"
+        ],
+        "album": "若想念飞行",
+        "durationMs": 233875,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1428784488,
+        "name": "冬日",
+        "artists": [
+          "鞠婧祎"
+        ],
+        "album": "冬日",
+        "durationMs": 233840,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1410642595,
+        "name": "冬日",
+        "artists": [
+          "SNH48"
+        ],
+        "album": "遗忘的国度 (下)",
+        "durationMs": 326970,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1428787121,
+        "name": "冬日",
+        "artists": [
+          "鞠婧祎",
+          "SNH48"
+        ],
+        "album": "冬日",
+        "durationMs": 231010,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1904216215,
+        "name": "冬日",
+        "artists": [
+          "柚子不想练琴"
+        ],
+        "album": "钢琴小曲集",
+        "durationMs": 170061,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2659967672,
+        "name": "冬日",
+        "artists": [
+          "猎豹游戏-Cheetah Mobile Games"
+        ],
+        "album": "2024年 音乐精选集",
+        "durationMs": 95687,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1325054527,
+        "name": "冬日",
+        "artists": [
+          "猎豹游戏-Cheetah Mobile Games"
+        ],
+        "album": "滚动的天空-Vol.1",
+        "durationMs": 95625,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1431167481,
+        "name": "冬日",
+        "artists": [
+          "绫子RINGO"
+        ],
+        "album": "冬日",
+        "durationMs": 234000,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 268,
+      "song_name": "冬日",
+      "show_as_song_name": "",
+      "display_song_name": "冬日",
+      "artist": "鞠橘络",
+      "artist_search": "鞠橘络",
+      "feat_artist": "",
+      "remark": "",
+      "tone": "",
+      "language": "中文",
+      "type": "流行",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV18Jpw6mE82/?p=1",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-06",
+      "row_key": "冬日"
+    },
+    "sourceId": 2009355588,
+    "sourcePath": "sources/2009355588.json",
+    "sourceUrl": "https://music.163.com/#/song?id=2009355588",
+    "selected": {
+      "id": 2009355588,
+      "name": "冬日",
+      "artists": [
+        "鞠橘络"
+      ],
+      "album": "若想念飞行",
+      "durationMs": 233875,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 48
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-268-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 326.357,
+    "sourceFirstLine": {
+      "t": 3.12,
+      "text": "作曲\\编曲： Mu_ Chan"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 26.8,
+      "endSeconds": 26.8,
+      "similarity": 0.4,
+      "recognizedText": " 作曲 作曲",
+      "meanProbability": 0.519,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

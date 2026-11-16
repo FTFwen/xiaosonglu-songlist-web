@@ -1,0 +1,190 @@
+{
+  "schemaVersion": 1,
+  "key": "song-378",
+  "songId": 378,
+  "songName": "巫山云",
+  "rowKey": "巫山云",
+  "displaySongName": "巫山云",
+  "artist": "旅行の蜗牛 / 诗岸",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "章节标注 旅行の蜗牛, 诗岸；诗岸为 Synthesizer V 声库",
+  "audio": {
+    "url": "assets/audio/song_377.m4a?v=293cbe4288a4",
+    "sha256": "293cbe4288a491b8eb8e9545be7efaa817700ade07a8170deeb94dd2f85bc3f8"
+  },
+  "retrievedAt": "2026-11-16T04:08:00.987Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E5%B7%AB%E5%B1%B1%E4%BA%91&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E5%B7%AB%E5%B1%B1%E4%BA%91%20%E6%97%85%E8%A1%8C%E3%81%AE%E8%9C%97%E7%89%9B%20%2F%20%E8%AF%97%E5%B2%B8&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1463239438,
+        "name": "巫山云",
+        "artists": [
+          "旅行の蜗牛",
+          "诗岸"
+        ],
+        "album": "18.",
+        "durationMs": 228460,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2639655957,
+        "name": "巫山云",
+        "artists": [
+          "烨烨然"
+        ],
+        "album": "巫山云",
+        "durationMs": 228000,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2109753920,
+        "name": "巫山云",
+        "artists": [
+          "卿羽"
+        ],
+        "album": "广播剧《春江花月夜》第一季 原声带",
+        "durationMs": 122500,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2675688011,
+        "name": "巫山云",
+        "artists": [
+          "樱井瑶",
+          "茗泠",
+          "语岚Yoran",
+          "甜音er"
+        ],
+        "album": "【各唱各】巫山云",
+        "durationMs": 230304,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2040371051,
+        "name": "巫山云",
+        "artists": [
+          "应钟Clochette"
+        ],
+        "album": "录到麦克风冒烟！",
+        "durationMs": 229773,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2699070045,
+        "name": "巫山云",
+        "artists": [
+          "Q-LAB",
+          "小鱼豆腐（虚拟歌手）"
+        ],
+        "album": "xstudio翻唱集",
+        "durationMs": 228158,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1970174812,
+        "name": "巫山云",
+        "artists": [
+          "即墨子（李佳璐）"
+        ],
+        "album": "巫山云",
+        "durationMs": 243267,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3350079422,
+        "name": "巫山云",
+        "artists": [
+          "白鼠P",
+          "海伊"
+        ],
+        "album": "【海伊AI】巫山云",
+        "durationMs": 228577,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 378,
+      "song_name": "巫山云",
+      "show_as_song_name": "",
+      "display_song_name": "巫山云",
+      "artist": "旅行の蜗牛 / 诗岸",
+      "artist_search": "旅行の蜗牛 / 诗岸",
+      "feat_artist": "",
+      "remark": "章节标注 旅行の蜗牛, 诗岸；诗岸为 Synthesizer V 声库",
+      "tone": "",
+      "language": "中文",
+      "type": "Synthesizer V、国风",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV18pWH6gEzr/?p=10",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-11-08",
+      "row_key": "巫山云"
+    },
+    "sourceId": 1463239438,
+    "sourcePath": "sources/1463239438.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1463239438",
+    "selected": {
+      "id": 1463239438,
+      "name": "巫山云",
+      "artists": [
+        "旅行の蜗牛",
+        "诗岸"
+      ],
+      "album": "18.",
+      "durationMs": 228460,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 57
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-378-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 227.627,
+    "sourceFirstLine": {
+      "t": 5.943,
+      "text": "词/曲/调/混：Snapmod"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 2.14,
+      "endSeconds": 2.7,
+      "similarity": 0.0,
+      "recognizedText": "我想",
+      "meanProbability": 0.826,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

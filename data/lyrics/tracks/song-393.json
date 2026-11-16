@@ -1,0 +1,183 @@
+{
+  "schemaVersion": 1,
+  "key": "song-393",
+  "songId": 393,
+  "songName": "画骨成沙",
+  "rowKey": "画骨成沙",
+  "displaySongName": "画骨成沙",
+  "artist": "樱九",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "",
+  "audio": {
+    "url": "assets/audio/song_392.m4a?v=8e04387ae03f",
+    "sha256": "8e04387ae03f0a876ff5a1f8e8b455c0d5877622697b6f7323529bc00db2314e"
+  },
+  "retrievedAt": "2026-11-16T04:08:20.663Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E7%94%BB%E9%AA%A8%E6%88%90%E6%B2%99&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E7%94%BB%E9%AA%A8%E6%88%90%E6%B2%99%20%E6%A8%B1%E4%B9%9D&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 26584256,
+        "name": "画骨成沙",
+        "artists": [
+          "樱九"
+        ],
+        "album": "樱九作品合辑",
+        "durationMs": 280346,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 451588277,
+        "name": "画骨成沙",
+        "artists": [
+          "Lecia夕颜"
+        ],
+        "album": "惜君惜时颜",
+        "durationMs": 285273,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1934636001,
+        "name": "画骨成沙",
+        "artists": [
+          "耶律阿宝菇"
+        ],
+        "album": "耶律阿宝菇的翻唱合集",
+        "durationMs": 280398,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3455327056,
+        "name": "画骨成沙",
+        "artists": [
+          "爱笑"
+        ],
+        "album": "聊斋异闻录",
+        "durationMs": 255613,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3460519091,
+        "name": "画骨成沙",
+        "artists": [
+          "倒烛台"
+        ],
+        "album": "翻唱",
+        "durationMs": 280398,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3455322347,
+        "name": "画骨成沙",
+        "artists": [
+          "爱笑"
+        ],
+        "album": "画骨成沙",
+        "durationMs": 241093,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2152126287,
+        "name": "画骨成沙",
+        "artists": [
+          "小宝"
+        ],
+        "album": "沉默",
+        "durationMs": 164784,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2150458190,
+        "name": "画骨成沙",
+        "artists": [
+          "红蜻蜓"
+        ],
+        "album": "烟花",
+        "durationMs": 159768,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 393,
+      "song_name": "画骨成沙",
+      "show_as_song_name": "",
+      "display_song_name": "画骨成沙",
+      "artist": "樱九",
+      "artist_search": "樱九",
+      "feat_artist": "",
+      "remark": "",
+      "tone": "",
+      "language": "中文",
+      "type": "国风",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1LRWd6jEqp/?p=6",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-11-12",
+      "row_key": "画骨成沙"
+    },
+    "sourceId": 26584256,
+    "sourcePath": "sources/26584256.json",
+    "sourceUrl": "https://music.163.com/#/song?id=26584256",
+    "selected": {
+      "id": 26584256,
+      "name": "画骨成沙",
+      "artists": [
+        "樱九"
+      ],
+      "album": "樱九作品合辑",
+      "durationMs": 280346,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 32
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-393-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 270.336,
+    "sourceFirstLine": {
+      "t": 37.45,
+      "text": "落地残花 指尖蒹葭"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 30.0,
+      "endSeconds": 32.06,
+      "similarity": 0.5,
+      "recognizedText": "落地藏花",
+      "meanProbability": 0.699,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

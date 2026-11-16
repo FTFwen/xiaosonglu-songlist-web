@@ -1,0 +1,109 @@
+{
+  "audioSha256": "f0806d9475421a9a9e250719beb31eefa714f51403886c456ac6d56762fc2028",
+  "model": "whisper-base",
+  "start": 0,
+  "end": 35,
+  "result": {
+    "text": "沒學會但這個會學到放心",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 4.240000000000002,
+        "end": 5.0,
+        "text": "沒學會",
+        "tokens": [
+          50364,
+          4913,
+          21372,
+          6236,
+          50464
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.9152367455618722,
+        "compression_ratio": 0.8048780487804879,
+        "no_speech_prob": 0.013341792859137058,
+        "words": [
+          {
+            "word": "沒",
+            "start": 4.240000000000002,
+            "end": 4.68,
+            "probability": 0.7503226399421692
+          },
+          {
+            "word": "學",
+            "start": 4.68,
+            "end": 4.8,
+            "probability": 0.7103723883628845
+          },
+          {
+            "word": "會",
+            "start": 4.8,
+            "end": 5.0,
+            "probability": 0.920010507106781
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "seek": 0,
+        "start": 7.440000000000002,
+        "end": 8.94,
+        "text": "但這個會學到放心",
+        "tokens": [
+          50764,
+          8395,
+          6287,
+          6236,
+          21372,
+          4511,
+          39619,
+          50864
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.9152367455618722,
+        "compression_ratio": 0.8048780487804879,
+        "no_speech_prob": 0.013341792859137058,
+        "words": [
+          {
+            "word": "但",
+            "start": 7.440000000000002,
+            "end": 7.88,
+            "probability": 0.15696193277835846
+          },
+          {
+            "word": "這個",
+            "start": 7.88,
+            "end": 8.16,
+            "probability": 0.8388872146606445
+          },
+          {
+            "word": "會",
+            "start": 8.16,
+            "end": 8.3,
+            "probability": 0.9945774078369141
+          },
+          {
+            "word": "學",
+            "start": 8.3,
+            "end": 8.52,
+            "probability": 0.977501630783081
+          },
+          {
+            "word": "到",
+            "start": 8.52,
+            "end": 8.66,
+            "probability": 0.7306727170944214
+          },
+          {
+            "word": "放心",
+            "start": 8.66,
+            "end": 8.94,
+            "probability": 0.900871753692627
+          }
+        ]
+      }
+    ],
+    "language": "zh"
+  }
+}

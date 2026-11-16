@@ -1,0 +1,186 @@
+{
+  "schemaVersion": 1,
+  "key": "song-155",
+  "songId": 155,
+  "songName": "兔子先生",
+  "rowKey": "兔子先生",
+  "displaySongName": "兔子先生",
+  "artist": "陈秋桦、洛天依",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "",
+  "audio": {
+    "url": "assets/audio/song_154.m4a?v=898d7f62c90a",
+    "sha256": "898d7f62c90a196667e38157b0813e51d053d7ee451c612117e60d016fba73d1"
+  },
+  "retrievedAt": "2026-11-16T04:04:15.284Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E5%85%94%E5%AD%90%E5%85%88%E7%94%9F&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E5%85%94%E5%AD%90%E5%85%88%E7%94%9F%20%E9%99%88%E7%A7%8B%E6%A1%A6&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 568041120,
+        "name": "兔子先生",
+        "artists": [
+          "陈秋桦",
+          "洛天依"
+        ],
+        "album": "小桦作品集",
+        "durationMs": 210480,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 440239266,
+        "name": "兔子先生",
+        "artists": [
+          "萧忆情Alex",
+          "满汉全席"
+        ],
+        "album": "【纯男声】满汉全席音乐团队",
+        "durationMs": 210522,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 34749917,
+        "name": "兔子先生",
+        "artists": [
+          "萧忆情Alex"
+        ],
+        "album": "热门华语284",
+        "durationMs": 210522,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 34614479,
+        "name": "兔子先生",
+        "artists": [
+          "云之泣"
+        ],
+        "album": "热门华语281",
+        "durationMs": 209920,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 34614487,
+        "name": "兔子先生",
+        "artists": [
+          "西瓜Kune"
+        ],
+        "album": "热门华语281",
+        "durationMs": 209893,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 34614480,
+        "name": "兔子先生",
+        "artists": [
+          "少恭"
+        ],
+        "album": "热门华语281",
+        "durationMs": 209867,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1320060799,
+        "name": "兔子先生",
+        "artists": [
+          "菠萝赛东"
+        ],
+        "album": "兔子先生",
+        "durationMs": 210181,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1471832715,
+        "name": "兔子先生",
+        "artists": [
+          "橘诺诺"
+        ],
+        "album": "兔子先生（云の泣版本原唱洛天依）",
+        "durationMs": 211121,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 155,
+      "song_name": "兔子先生",
+      "show_as_song_name": "",
+      "display_song_name": "兔子先生",
+      "artist": "陈秋桦、洛天依",
+      "artist_search": "陈秋桦、洛天依",
+      "feat_artist": "",
+      "remark": "",
+      "tone": "",
+      "language": "中文",
+      "type": "中V",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=16",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-09-08",
+      "row_key": "兔子先生"
+    },
+    "sourceId": 568041120,
+    "sourcePath": "sources/568041120.json",
+    "sourceUrl": "https://music.163.com/#/song?id=568041120",
+    "selected": {
+      "id": 568041120,
+      "name": "兔子先生",
+      "artists": [
+        "陈秋桦",
+        "洛天依"
+      ],
+      "album": "小桦作品集",
+      "durationMs": 210480,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 45
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-155-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 207.61,
+    "sourceFirstLine": {
+      "t": 4.86,
+      "text": "洛天依"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 0.0,
+      "endSeconds": 0.2,
+      "similarity": 0.0,
+      "recognizedText": "哎",
+      "meanProbability": 0.285,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

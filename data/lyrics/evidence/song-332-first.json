@@ -1,0 +1,1199 @@
+{
+  "audioSha256": "4214a2eec7a75ab881d5d69ea9e151a0b4c5001d2af9f75781432a797e8db52d",
+  "model": "whisper-base",
+  "start": 0,
+  "end": 35,
+  "result": {
+    "text": "我去找你我去找你我去找你我去找你我去找你我去找你我去找你我去找你我去找你我去找你我去找你我去找你我去找你我去找你我去找你我去找你我去找你我去找你我去找你我去找你我去找你我去找你用乾燒火通快醒Oh 可愛你",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 1.5400000000000018,
+        "end": 9.04,
+        "text": "我去找你",
+        "tokens": [
+          50364,
+          1654,
+          6734,
+          25085,
+          2166,
+          50414
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.1798522580753673,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.4763081669807434,
+        "words": [
+          {
+            "word": "我",
+            "start": 1.5400000000000018,
+            "end": 2.12,
+            "probability": 0.018619516864418983
+          },
+          {
+            "word": "去",
+            "start": 2.12,
+            "end": 2.24,
+            "probability": 0.01870732195675373
+          },
+          {
+            "word": "找",
+            "start": 2.24,
+            "end": 3.82,
+            "probability": 0.1343521922826767
+          },
+          {
+            "word": "你",
+            "start": 3.82,
+            "end": 9.04,
+            "probability": 0.3236972987651825
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "seek": 0,
+        "start": 9.04,
+        "end": 9.04,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.1798522580753673,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.4763081669807434,
+        "words": []
+      },
+      {
+        "id": 2,
+        "seek": 0,
+        "start": 9.04,
+        "end": 9.08,
+        "text": "我去找你",
+        "tokens": [
+          50464,
+          1654,
+          6734,
+          25085,
+          2166,
+          50514
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.1798522580753673,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.4763081669807434,
+        "words": [
+          {
+            "word": "我",
+            "start": 9.04,
+            "end": 9.08,
+            "probability": 0.341085284948349
+          },
+          {
+            "word": "去",
+            "start": 9.08,
+            "end": 9.08,
+            "probability": 0.8886581063270569
+          },
+          {
+            "word": "找",
+            "start": 9.08,
+            "end": 9.08,
+            "probability": 0.9328750967979431
+          },
+          {
+            "word": "你",
+            "start": 9.08,
+            "end": 9.08,
+            "probability": 0.9632626175880432
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "seek": 0,
+        "start": 9.08,
+        "end": 9.08,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.1798522580753673,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.4763081669807434,
+        "words": []
+      },
+      {
+        "id": 4,
+        "seek": 0,
+        "start": 9.08,
+        "end": 9.08,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.1798522580753673,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.4763081669807434,
+        "words": []
+      },
+      {
+        "id": 5,
+        "seek": 0,
+        "start": 9.08,
+        "end": 9.12,
+        "text": "我去找你",
+        "tokens": [
+          50614,
+          1654,
+          6734,
+          25085,
+          2166,
+          50664
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.1798522580753673,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.4763081669807434,
+        "words": [
+          {
+            "word": "我",
+            "start": 9.08,
+            "end": 9.08,
+            "probability": 0.6157600283622742
+          },
+          {
+            "word": "去",
+            "start": 9.08,
+            "end": 9.08,
+            "probability": 0.9798173308372498
+          },
+          {
+            "word": "找",
+            "start": 9.08,
+            "end": 9.08,
+            "probability": 0.9729418158531189
+          },
+          {
+            "word": "你",
+            "start": 9.08,
+            "end": 9.12,
+            "probability": 0.9690163731575012
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "seek": 0,
+        "start": 9.12,
+        "end": 9.58,
+        "text": "我去找你",
+        "tokens": [
+          50664,
+          1654,
+          6734,
+          25085,
+          2166,
+          50714
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.1798522580753673,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.4763081669807434,
+        "words": [
+          {
+            "word": "我",
+            "start": 9.12,
+            "end": 9.12,
+            "probability": 0.6383013725280762
+          },
+          {
+            "word": "去",
+            "start": 9.12,
+            "end": 9.34,
+            "probability": 0.9835405945777893
+          },
+          {
+            "word": "找",
+            "start": 9.34,
+            "end": 9.34,
+            "probability": 0.9766562581062317
+          },
+          {
+            "word": "你",
+            "start": 9.34,
+            "end": 9.58,
+            "probability": 0.9689931869506836
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "seek": 0,
+        "start": 9.58,
+        "end": 10.96,
+        "text": "我去找你",
+        "tokens": [
+          50714,
+          1654,
+          6734,
+          25085,
+          2166,
+          50764
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.1798522580753673,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.4763081669807434,
+        "words": [
+          {
+            "word": "我",
+            "start": 9.58,
+            "end": 9.58,
+            "probability": 0.6580117344856262
+          },
+          {
+            "word": "去",
+            "start": 9.58,
+            "end": 10.38,
+            "probability": 0.9852851033210754
+          },
+          {
+            "word": "找",
+            "start": 10.38,
+            "end": 10.38,
+            "probability": 0.9775484204292297
+          },
+          {
+            "word": "你",
+            "start": 10.38,
+            "end": 10.96,
+            "probability": 0.9697660207748413
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "seek": 0,
+        "start": 10.96,
+        "end": 11.42,
+        "text": "我去找你",
+        "tokens": [
+          50764,
+          1654,
+          6734,
+          25085,
+          2166,
+          50814
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.1798522580753673,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.4763081669807434,
+        "words": [
+          {
+            "word": "我",
+            "start": 10.96,
+            "end": 11.42,
+            "probability": 0.667395830154419
+          },
+          {
+            "word": "去",
+            "start": 11.42,
+            "end": 11.42,
+            "probability": 0.985706090927124
+          },
+          {
+            "word": "找",
+            "start": 11.42,
+            "end": 11.42,
+            "probability": 0.9761901497840881
+          },
+          {
+            "word": "你",
+            "start": 11.42,
+            "end": 11.42,
+            "probability": 0.9693729877471924
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "seek": 0,
+        "start": 11.42,
+        "end": 11.42,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.1798522580753673,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.4763081669807434,
+        "words": []
+      },
+      {
+        "id": 10,
+        "seek": 0,
+        "start": 11.42,
+        "end": 13.52,
+        "text": "我去找你",
+        "tokens": [
+          50864,
+          1654,
+          6734,
+          25085,
+          2166,
+          50914
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.1798522580753673,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.4763081669807434,
+        "words": [
+          {
+            "word": "我",
+            "start": 11.42,
+            "end": 11.42,
+            "probability": 0.6951725482940674
+          },
+          {
+            "word": "去",
+            "start": 11.42,
+            "end": 12.72,
+            "probability": 0.9857189059257507
+          },
+          {
+            "word": "找",
+            "start": 12.72,
+            "end": 12.72,
+            "probability": 0.9789133667945862
+          },
+          {
+            "word": "你",
+            "start": 12.72,
+            "end": 13.52,
+            "probability": 0.9695001840591431
+          }
+        ]
+      },
+      {
+        "id": 11,
+        "seek": 0,
+        "start": 15.100000000000001,
+        "end": 15.98,
+        "text": "我去找你",
+        "tokens": [
+          50914,
+          1654,
+          6734,
+          25085,
+          2166,
+          50964
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.1798522580753673,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.4763081669807434,
+        "words": [
+          {
+            "word": "我",
+            "start": 15.100000000000001,
+            "end": 15.68,
+            "probability": 0.6928019523620605
+          },
+          {
+            "word": "去",
+            "start": 15.68,
+            "end": 15.72,
+            "probability": 0.9849588871002197
+          },
+          {
+            "word": "找",
+            "start": 15.72,
+            "end": 15.72,
+            "probability": 0.9785230755805969
+          },
+          {
+            "word": "你",
+            "start": 15.72,
+            "end": 15.98,
+            "probability": 0.9681133031845093
+          }
+        ]
+      },
+      {
+        "id": 12,
+        "seek": 0,
+        "start": 15.98,
+        "end": 15.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.1798522580753673,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.4763081669807434,
+        "words": []
+      },
+      {
+        "id": 13,
+        "seek": 0,
+        "start": 15.98,
+        "end": 16.5,
+        "text": "我去找你",
+        "tokens": [
+          51014,
+          1654,
+          6734,
+          25085,
+          2166,
+          51064
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.1798522580753673,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.4763081669807434,
+        "words": [
+          {
+            "word": "我",
+            "start": 15.98,
+            "end": 16.4,
+            "probability": 0.7232955098152161
+          },
+          {
+            "word": "去",
+            "start": 16.4,
+            "end": 16.5,
+            "probability": 0.9859117269515991
+          },
+          {
+            "word": "找",
+            "start": 16.5,
+            "end": 16.5,
+            "probability": 0.9781140089035034
+          },
+          {
+            "word": "你",
+            "start": 16.5,
+            "end": 16.5,
+            "probability": 0.9690635800361633
+          }
+        ]
+      },
+      {
+        "id": 14,
+        "seek": 0,
+        "start": 16.5,
+        "end": 16.68,
+        "text": "我去找你",
+        "tokens": [
+          51064,
+          1654,
+          6734,
+          25085,
+          2166,
+          51114
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.1798522580753673,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.4763081669807434,
+        "words": [
+          {
+            "word": "我",
+            "start": 16.5,
+            "end": 16.5,
+            "probability": 0.7432414293289185
+          },
+          {
+            "word": "去",
+            "start": 16.5,
+            "end": 16.52,
+            "probability": 0.986690878868103
+          },
+          {
+            "word": "找",
+            "start": 16.52,
+            "end": 16.68,
+            "probability": 0.9796664118766785
+          },
+          {
+            "word": "你",
+            "start": 16.68,
+            "end": 16.68,
+            "probability": 0.9673317670822144
+          }
+        ]
+      },
+      {
+        "id": 15,
+        "seek": 0,
+        "start": 16.68,
+        "end": 17.44,
+        "text": "我去找你",
+        "tokens": [
+          51114,
+          1654,
+          6734,
+          25085,
+          2166,
+          51164
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.1798522580753673,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.4763081669807434,
+        "words": [
+          {
+            "word": "我",
+            "start": 16.68,
+            "end": 16.68,
+            "probability": 0.7442013025283813
+          },
+          {
+            "word": "去",
+            "start": 16.68,
+            "end": 16.92,
+            "probability": 0.9867119789123535
+          },
+          {
+            "word": "找",
+            "start": 16.92,
+            "end": 17.44,
+            "probability": 0.9812231063842773
+          },
+          {
+            "word": "你",
+            "start": 17.44,
+            "end": 17.44,
+            "probability": 0.9702017903327942
+          }
+        ]
+      },
+      {
+        "id": 16,
+        "seek": 0,
+        "start": 17.44,
+        "end": 18.72,
+        "text": "我去找你",
+        "tokens": [
+          51164,
+          1654,
+          6734,
+          25085,
+          2166,
+          51214
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.1798522580753673,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.4763081669807434,
+        "words": [
+          {
+            "word": "我",
+            "start": 17.44,
+            "end": 17.44,
+            "probability": 0.7484726309776306
+          },
+          {
+            "word": "去",
+            "start": 17.44,
+            "end": 17.72,
+            "probability": 0.9843164682388306
+          },
+          {
+            "word": "找",
+            "start": 17.72,
+            "end": 18.6,
+            "probability": 0.9765720963478088
+          },
+          {
+            "word": "你",
+            "start": 18.6,
+            "end": 18.72,
+            "probability": 0.9668835401535034
+          }
+        ]
+      },
+      {
+        "id": 17,
+        "seek": 0,
+        "start": 18.72,
+        "end": 19.18,
+        "text": "我去找你",
+        "tokens": [
+          51214,
+          1654,
+          6734,
+          25085,
+          2166,
+          51264
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.1798522580753673,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.4763081669807434,
+        "words": [
+          {
+            "word": "我",
+            "start": 18.72,
+            "end": 18.72,
+            "probability": 0.7509143948554993
+          },
+          {
+            "word": "去",
+            "start": 18.72,
+            "end": 18.72,
+            "probability": 0.9861589074134827
+          },
+          {
+            "word": "找",
+            "start": 18.72,
+            "end": 19.12,
+            "probability": 0.9795551896095276
+          },
+          {
+            "word": "你",
+            "start": 19.12,
+            "end": 19.18,
+            "probability": 0.967818021774292
+          }
+        ]
+      },
+      {
+        "id": 18,
+        "seek": 0,
+        "start": 19.18,
+        "end": 20.12,
+        "text": "我去找你",
+        "tokens": [
+          51264,
+          1654,
+          6734,
+          25085,
+          2166,
+          51314
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.1798522580753673,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.4763081669807434,
+        "words": [
+          {
+            "word": "我",
+            "start": 19.18,
+            "end": 20.1,
+            "probability": 0.7551248073577881
+          },
+          {
+            "word": "去",
+            "start": 20.1,
+            "end": 20.12,
+            "probability": 0.9867246747016907
+          },
+          {
+            "word": "找",
+            "start": 20.12,
+            "end": 20.12,
+            "probability": 0.9804627895355225
+          },
+          {
+            "word": "你",
+            "start": 20.12,
+            "end": 20.12,
+            "probability": 0.9706892371177673
+          }
+        ]
+      },
+      {
+        "id": 19,
+        "seek": 0,
+        "start": 20.12,
+        "end": 20.22,
+        "text": "我去找你",
+        "tokens": [
+          51314,
+          1654,
+          6734,
+          25085,
+          2166,
+          51364
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.1798522580753673,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.4763081669807434,
+        "words": [
+          {
+            "word": "我",
+            "start": 20.12,
+            "end": 20.12,
+            "probability": 0.7680990099906921
+          },
+          {
+            "word": "去",
+            "start": 20.12,
+            "end": 20.22,
+            "probability": 0.9852065443992615
+          },
+          {
+            "word": "找",
+            "start": 20.22,
+            "end": 20.22,
+            "probability": 0.9789443016052246
+          },
+          {
+            "word": "你",
+            "start": 20.22,
+            "end": 20.22,
+            "probability": 0.9691811800003052
+          }
+        ]
+      },
+      {
+        "id": 20,
+        "seek": 0,
+        "start": 20.22,
+        "end": 20.22,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.1798522580753673,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.4763081669807434,
+        "words": []
+      },
+      {
+        "id": 21,
+        "seek": 0,
+        "start": 20.22,
+        "end": 20.72,
+        "text": "我去找你",
+        "tokens": [
+          51414,
+          1654,
+          6734,
+          25085,
+          2166,
+          51464
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.1798522580753673,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.4763081669807434,
+        "words": [
+          {
+            "word": "我",
+            "start": 20.22,
+            "end": 20.22,
+            "probability": 0.7710822820663452
+          },
+          {
+            "word": "去",
+            "start": 20.22,
+            "end": 20.58,
+            "probability": 0.9852862358093262
+          },
+          {
+            "word": "找",
+            "start": 20.58,
+            "end": 20.58,
+            "probability": 0.9821893572807312
+          },
+          {
+            "word": "你",
+            "start": 20.58,
+            "end": 20.72,
+            "probability": 0.9721825122833252
+          }
+        ]
+      },
+      {
+        "id": 22,
+        "seek": 0,
+        "start": 20.72,
+        "end": 20.72,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.1798522580753673,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.4763081669807434,
+        "words": []
+      },
+      {
+        "id": 23,
+        "seek": 0,
+        "start": 20.72,
+        "end": 21.0,
+        "text": "我去找你",
+        "tokens": [
+          51514,
+          1654,
+          6734,
+          25085,
+          2166,
+          51564
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.1798522580753673,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.4763081669807434,
+        "words": [
+          {
+            "word": "我",
+            "start": 20.72,
+            "end": 20.72,
+            "probability": 0.7881172895431519
+          },
+          {
+            "word": "去",
+            "start": 20.72,
+            "end": 20.74,
+            "probability": 0.985648512840271
+          },
+          {
+            "word": "找",
+            "start": 20.74,
+            "end": 20.92,
+            "probability": 0.9814372062683105
+          },
+          {
+            "word": "你",
+            "start": 20.92,
+            "end": 21.0,
+            "probability": 0.9731082916259766
+          }
+        ]
+      },
+      {
+        "id": 24,
+        "seek": 0,
+        "start": 21.0,
+        "end": 21.56,
+        "text": "我去找你",
+        "tokens": [
+          51564,
+          1654,
+          6734,
+          25085,
+          2166,
+          51614
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.1798522580753673,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.4763081669807434,
+        "words": [
+          {
+            "word": "我",
+            "start": 21.0,
+            "end": 21.0,
+            "probability": 0.7869065999984741
+          },
+          {
+            "word": "去",
+            "start": 21.0,
+            "end": 21.0,
+            "probability": 0.9867976307868958
+          },
+          {
+            "word": "找",
+            "start": 21.0,
+            "end": 21.12,
+            "probability": 0.9829365015029907
+          },
+          {
+            "word": "你",
+            "start": 21.12,
+            "end": 21.56,
+            "probability": 0.9740639925003052
+          }
+        ]
+      },
+      {
+        "id": 25,
+        "seek": 0,
+        "start": 21.56,
+        "end": 23.72,
+        "text": "我去找你",
+        "tokens": [
+          51614,
+          1654,
+          6734,
+          25085,
+          2166,
+          51664
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.1798522580753673,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.4763081669807434,
+        "words": [
+          {
+            "word": "我",
+            "start": 21.56,
+            "end": 22.4,
+            "probability": 0.7896609902381897
+          },
+          {
+            "word": "去",
+            "start": 22.4,
+            "end": 22.58,
+            "probability": 0.9854809641838074
+          },
+          {
+            "word": "找",
+            "start": 22.58,
+            "end": 22.64,
+            "probability": 0.982337236404419
+          },
+          {
+            "word": "你",
+            "start": 22.64,
+            "end": 23.72,
+            "probability": 0.9743506908416748
+          }
+        ]
+      },
+      {
+        "id": 26,
+        "seek": 0,
+        "start": 23.72,
+        "end": 25.38,
+        "text": "我去找你",
+        "tokens": [
+          51664,
+          1654,
+          6734,
+          25085,
+          2166,
+          51714
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.1798522580753673,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.4763081669807434,
+        "words": [
+          {
+            "word": "我",
+            "start": 23.72,
+            "end": 24.66,
+            "probability": 0.796907901763916
+          },
+          {
+            "word": "去",
+            "start": 24.66,
+            "end": 24.96,
+            "probability": 0.9859856367111206
+          },
+          {
+            "word": "找",
+            "start": 24.96,
+            "end": 24.98,
+            "probability": 0.9823657870292664
+          },
+          {
+            "word": "你",
+            "start": 24.98,
+            "end": 25.38,
+            "probability": 0.9731238484382629
+          }
+        ]
+      },
+      {
+        "id": 27,
+        "seek": 0,
+        "start": 25.38,
+        "end": 28.48,
+        "text": "我去找你",
+        "tokens": [
+          51714,
+          1654,
+          6734,
+          25085,
+          2166,
+          51764
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.1798522580753673,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.4763081669807434,
+        "words": [
+          {
+            "word": "我",
+            "start": 25.38,
+            "end": 25.38,
+            "probability": 0.790102481842041
+          },
+          {
+            "word": "去",
+            "start": 25.38,
+            "end": 25.38,
+            "probability": 0.9844637513160706
+          },
+          {
+            "word": "找",
+            "start": 25.38,
+            "end": 26.06,
+            "probability": 0.9817368984222412
+          },
+          {
+            "word": "你",
+            "start": 26.06,
+            "end": 28.48,
+            "probability": 0.9714462161064148
+          }
+        ]
+      },
+      {
+        "id": 28,
+        "seek": 0,
+        "start": 28.48,
+        "end": 29.98,
+        "text": "我去找你",
+        "tokens": [
+          51764,
+          1654,
+          6734,
+          25085,
+          2166,
+          51814
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.1798522580753673,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.4763081669807434,
+        "words": [
+          {
+            "word": "我",
+            "start": 28.48,
+            "end": 29.26,
+            "probability": 0.7987712025642395
+          },
+          {
+            "word": "去",
+            "start": 29.26,
+            "end": 29.52,
+            "probability": 0.9836148619651794
+          },
+          {
+            "word": "找",
+            "start": 29.52,
+            "end": 29.52,
+            "probability": 0.982113778591156
+          },
+          {
+            "word": "你",
+            "start": 29.52,
+            "end": 29.98,
+            "probability": 0.9742704629898071
+          }
+        ]
+      },
+      {
+        "id": 29,
+        "seek": 2998,
+        "start": 29.98,
+        "end": 32.84,
+        "text": "用乾燒火通快醒",
+        "tokens": [
+          50364,
+          9254,
+          39698,
+          24184,
+          240,
+          26171,
+          19550,
+          10251,
+          40796,
+          50522
+        ],
+        "temperature": 0,
+        "avg_logprob": -1.144539103788488,
+        "compression_ratio": 0.75,
+        "no_speech_prob": 0.4873197674751282,
+        "words": [
+          {
+            "word": "用",
+            "start": 29.98,
+            "end": 30.16,
+            "probability": 0.6943814158439636
+          },
+          {
+            "word": "乾",
+            "start": 30.16,
+            "end": 30.42,
+            "probability": 0.20894469320774078
+          },
+          {
+            "word": "燒",
+            "start": 30.42,
+            "end": 30.68,
+            "probability": 0.6466381400823593
+          },
+          {
+            "word": "火",
+            "start": 30.68,
+            "end": 31.0,
+            "probability": 0.16379523277282715
+          },
+          {
+            "word": "通",
+            "start": 31.0,
+            "end": 31.22,
+            "probability": 0.2463926374912262
+          },
+          {
+            "word": "快",
+            "start": 31.22,
+            "end": 31.56,
+            "probability": 0.7532676458358765
+          },
+          {
+            "word": "醒",
+            "start": 31.56,
+            "end": 32.84,
+            "probability": 0.32540518045425415
+          }
+        ]
+      },
+      {
+        "id": 30,
+        "seek": 2998,
+        "start": 32.84,
+        "end": 34.92,
+        "text": "Oh 可愛你",
+        "tokens": [
+          50522,
+          3756,
+          220,
+          34193,
+          2166,
+          50619
+        ],
+        "temperature": 0,
+        "avg_logprob": -1.144539103788488,
+        "compression_ratio": 0.75,
+        "no_speech_prob": 0.4873197674751282,
+        "words": [
+          {
+            "word": "Oh",
+            "start": 32.84,
+            "end": 33.74,
+            "probability": 0.14695017039775848
+          },
+          {
+            "word": " 可愛",
+            "start": 34.0,
+            "end": 34.56,
+            "probability": 0.6142034530639648
+          },
+          {
+            "word": "你",
+            "start": 34.56,
+            "end": 34.92,
+            "probability": 0.4745900630950928
+          }
+        ]
+      }
+    ],
+    "language": "zh"
+  }
+}

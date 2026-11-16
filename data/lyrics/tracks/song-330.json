@@ -1,0 +1,191 @@
+{
+  "schemaVersion": 1,
+  "key": "song-330",
+  "songId": 330,
+  "songName": "束花线",
+  "rowKey": "束花线",
+  "displaySongName": "束花线",
+  "artist": "COP、洛天依Official",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "桐人今天睡大觉「全自动歌切项目」2026.10.21 歌切合集第 5 分P（章节「05_束花线 - COP, 洛天依」）。弹幕未直接出现歌名。本场括号歌词弹幕为 0，仅以合集章节 + 简介日期确认；未定位回放时间点。",
+  "audio": {
+    "url": "assets/audio/song_329.m4a?v=1e9278c6faae",
+    "sha256": "1e9278c6faaec83d1c2559f59020940e340b13a9b50734740fbffa68a5e16652"
+  },
+  "retrievedAt": "2026-11-16T04:07:01.930Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E6%9D%9F%E8%8A%B1%E7%BA%BF&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E6%9D%9F%E8%8A%B1%E7%BA%BF%20COP&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 3418660048,
+        "name": "束花线",
+        "artists": [
+          "COP",
+          "洛天依"
+        ],
+        "album": "束花线",
+        "durationMs": 228537,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 3418667347,
+        "name": "束花线（inst.）",
+        "artists": [
+          "COP"
+        ],
+        "album": "束花线",
+        "durationMs": 228537,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      },
+      {
+        "id": 3415186398,
+        "name": "束花线-泠鸢&秋绘diffinger翻调",
+        "artists": [
+          "指尖的宇宙kerze",
+          "泠鸢diffsinger",
+          "Aikie秋绘"
+        ],
+        "album": "束花线-泠鸢&秋绘diffinger翻调",
+        "durationMs": 228577,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 429460239,
+        "name": "世末歌者",
+        "artists": [
+          "乐正绫",
+          "COP"
+        ],
+        "album": "世末歌者-COSMOSⅡ",
+        "durationMs": 321802,
+        "titleScore": 0,
+        "artistMatch": true,
+        "score": 0.2
+      },
+      {
+        "id": 1450516489,
+        "name": "纸花",
+        "artists": [
+          "COP"
+        ],
+        "album": "纸花",
+        "durationMs": 216000,
+        "titleScore": 0,
+        "artistMatch": true,
+        "score": 0.2
+      },
+      {
+        "id": 429460240,
+        "name": "南北组-世末歌者",
+        "artists": [
+          "乐正绫",
+          "洛天依Official",
+          "COP"
+        ],
+        "album": "世末歌者-COSMOSⅡ",
+        "durationMs": 321802,
+        "titleScore": 0,
+        "artistMatch": true,
+        "score": 0.2
+      },
+      {
+        "id": 515964379,
+        "name": "碎梦（short ver.）",
+        "artists": [
+          "COP",
+          "乐正绫"
+        ],
+        "album": "碎梦（short ver.）",
+        "durationMs": 97959,
+        "titleScore": 0,
+        "artistMatch": true,
+        "score": 0.2
+      },
+      {
+        "id": 407039301,
+        "name": "hello&bye，days（piano.ver）-洛天依/乐正绫",
+        "artists": [
+          "COP"
+        ],
+        "album": "hello&bye，days（piano.ver）-洛天依/乐正绫",
+        "durationMs": 252760,
+        "titleScore": 0,
+        "artistMatch": true,
+        "score": 0.2
+      }
+    ],
+    "workQuery": {
+      "song_id": 330,
+      "song_name": "束花线",
+      "show_as_song_name": "",
+      "display_song_name": "束花线",
+      "artist": "COP、洛天依Official",
+      "artist_search": "COP、洛天依Official 束花线",
+      "feat_artist": "",
+      "remark": "桐人今天睡大觉「全自动歌切项目」2026.10.21 歌切合集第 5 分P（章节「05_束花线 - COP, 洛天依」）。弹幕未直接出现歌名。本场括号歌词弹幕为 0，仅以合集章节 + 简介日期确认；未定位回放时间点。",
+      "tone": "",
+      "language": "中文",
+      "type": "中V、流行",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1d6n66fEgy/?p=5",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-21",
+      "row_key": "束花线"
+    },
+    "sourceId": 3418660048,
+    "sourcePath": "sources/3418660048.json",
+    "sourceUrl": "https://music.163.com/#/song?id=3418660048",
+    "selected": {
+      "id": 3418660048,
+      "name": "束花线",
+      "artists": [
+        "COP",
+        "洛天依"
+      ],
+      "album": "束花线",
+      "durationMs": 228537,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 42
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-330-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 227.904,
+    "sourceFirstLine": {
+      "t": 2.765,
+      "text": "拾花人曾埋下伏线"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 1.68,
+      "endSeconds": 2.32,
+      "similarity": 0.4,
+      "recognizedText": "花人",
+      "meanProbability": 0.577,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

@@ -1,0 +1,221 @@
+{
+  "audioSha256": "9ac6037dd71d23dcdf88ed99d43c4cfe9f4b36345c01567ecfdc2a611b8142c7",
+  "model": "whisper-base",
+  "start": 0,
+  "end": 35,
+  "result": {
+    "text": "《大陆》如秋作怕你的人吧即便可不",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 28.580000000000002,
+        "end": 29.98,
+        "text": "《大陆》",
+        "tokens": [
+          50364,
+          9806,
+          3582,
+          8842,
+          228,
+          9782,
+          50664
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.8700979078138197,
+        "compression_ratio": 2.5,
+        "no_speech_prob": 0.576630711555481,
+        "words": [
+          {
+            "word": "《",
+            "start": 28.580000000000002,
+            "end": 29.98,
+            "probability": 0.010489446111023426
+          },
+          {
+            "word": "大",
+            "start": 29.98,
+            "end": 29.98,
+            "probability": 0.007587410509586334
+          },
+          {
+            "word": "陆",
+            "start": 29.98,
+            "end": 29.98,
+            "probability": 0.17815811559557915
+          },
+          {
+            "word": "》",
+            "start": 29.98,
+            "end": 29.98,
+            "probability": 0.1569422483444214
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "seek": 0,
+        "start": 29.98,
+        "end": 29.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.8700979078138197,
+        "compression_ratio": 2.5,
+        "no_speech_prob": 0.576630711555481,
+        "words": []
+      },
+      {
+        "id": 2,
+        "seek": 0,
+        "start": 29.98,
+        "end": 29.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.8700979078138197,
+        "compression_ratio": 2.5,
+        "no_speech_prob": 0.576630711555481,
+        "words": []
+      },
+      {
+        "id": 3,
+        "seek": 0,
+        "start": 29.98,
+        "end": 29.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.8700979078138197,
+        "compression_ratio": 2.5,
+        "no_speech_prob": 0.576630711555481,
+        "words": []
+      },
+      {
+        "id": 4,
+        "seek": 0,
+        "start": 29.98,
+        "end": 29.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.8700979078138197,
+        "compression_ratio": 2.5,
+        "no_speech_prob": 0.576630711555481,
+        "words": []
+      },
+      {
+        "id": 5,
+        "seek": 2998,
+        "start": 29.98,
+        "end": 33.34,
+        "text": "如秋作怕你的人吧",
+        "tokens": [
+          50364,
+          8238,
+          40190,
+          11914,
+          21164,
+          18961,
+          4035,
+          6062,
+          50544
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.8301680088043213,
+        "compression_ratio": 0.7659574468085106,
+        "no_speech_prob": 0.7217706441879272,
+        "words": [
+          {
+            "word": "如",
+            "start": 29.98,
+            "end": 30.24,
+            "probability": 0.0982869490981102
+          },
+          {
+            "word": "秋",
+            "start": 30.24,
+            "end": 30.72,
+            "probability": 0.11085968464612961
+          },
+          {
+            "word": "作",
+            "start": 30.72,
+            "end": 31.12,
+            "probability": 0.3026432394981384
+          },
+          {
+            "word": "怕",
+            "start": 31.12,
+            "end": 31.78,
+            "probability": 0.31257516145706177
+          },
+          {
+            "word": "你的",
+            "start": 31.78,
+            "end": 32.22,
+            "probability": 0.8854370713233948
+          },
+          {
+            "word": "人",
+            "start": 32.22,
+            "end": 32.76,
+            "probability": 0.9599521160125732
+          },
+          {
+            "word": "吧",
+            "start": 32.76,
+            "end": 33.34,
+            "probability": 0.7278918623924255
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "seek": 2998,
+        "start": 33.34,
+        "end": 34.98,
+        "text": "即便可不",
+        "tokens": [
+          50544,
+          39127,
+          27364,
+          4429,
+          1960,
+          50614
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.8301680088043213,
+        "compression_ratio": 0.7659574468085106,
+        "no_speech_prob": 0.7217706441879272,
+        "words": [
+          {
+            "word": "即",
+            "start": 33.34,
+            "end": 33.74,
+            "probability": 0.8352503180503845
+          },
+          {
+            "word": "便",
+            "start": 33.74,
+            "end": 34.12,
+            "probability": 0.9940390586853027
+          },
+          {
+            "word": "可",
+            "start": 34.12,
+            "end": 34.74,
+            "probability": 0.9084087610244751
+          },
+          {
+            "word": "不",
+            "start": 34.74,
+            "end": 34.98,
+            "probability": 0.2514679431915283
+          }
+        ]
+      }
+    ],
+    "language": "zh"
+  }
+}

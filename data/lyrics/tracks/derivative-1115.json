@@ -1,0 +1,177 @@
+{
+  "schemaVersion": 1,
+  "key": "derivative-1115",
+  "songId": -1115,
+  "songName": "小松绿-マリーの架空世界",
+  "rowKey": "小松绿-マリーの架空世界",
+  "displaySongName": "マリーの架空世界",
+  "artist": "白烁",
+  "language": "",
+  "derivative": true,
+  "edition": "",
+  "remark": "",
+  "audio": {
+    "url": "assets/derivative/mary-no-kakuu-sekai.mp3?v=7f8f5c4ec906",
+    "sha256": "7f8f5c4ec906da79882fdba5f4732b60f109c15bd8d4e4f784b459b6359881f8"
+  },
+  "retrievedAt": "2026-11-16T04:08:49.084Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E3%83%9E%E3%83%AA%E3%83%BC%E3%81%AE%E6%9E%B6%E7%A9%BA%E4%B8%96%E7%95%8C&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E3%83%9E%E3%83%AA%E3%83%BC%E3%81%AE%E6%9E%B6%E7%A9%BA%E4%B8%96%E7%95%8C%20%E3%81%98%E3%82%93&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 26440341,
+        "name": "マリーの架空世界",
+        "artists": [
+          "じん",
+          "IA"
+        ],
+        "album": "メカクシティレコーズ",
+        "durationMs": 179443,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 31260700,
+        "name": "マリーの架空世界",
+        "artists": [
+          "じん",
+          "Lia",
+          "Maya"
+        ],
+        "album": "MEKAKUCITY M's MEKAKUCITY ACTORS VOCAL & SOUND COLLECTION",
+        "durationMs": 219008,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2740168400,
+        "name": "マリーの架空世界",
+        "artists": [
+          "じん",
+          "Lia",
+          "Maya"
+        ],
+        "album": "MEKAKUCITY M’s 2 ～メカクシティアクターズ・ヴォーカル＆サウンドコレクション～",
+        "durationMs": 219008,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2669778011,
+        "name": "マリーの架空世界",
+        "artists": [
+          "星呓_hoshi"
+        ],
+        "album": "去往成人世界的时光机",
+        "durationMs": 180706,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3408076524,
+        "name": "マリーの架空世界",
+        "artists": [
+          "Jin"
+        ],
+        "album": "",
+        "durationMs": 179373,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1305527097,
+        "name": "「マリーの架空世界」Guitar Cover.（翻自 じん）",
+        "artists": [
+          "群青"
+        ],
+        "album": "Fingerstyle Cover Collection Vol.1",
+        "durationMs": 138295,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 2626397630,
+        "name": "マリーの架空世界 -breezy-",
+        "artists": [
+          "おた"
+        ],
+        "album": "おた LOVES カゲプロ -three-",
+        "durationMs": 300922,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 2626396699,
+        "name": "マリーの架空世界 -fluffy-",
+        "artists": [
+          "おた"
+        ],
+        "album": "おた LOVES カゲプロ -two- (Part 1)",
+        "durationMs": 274172,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      }
+    ],
+    "workQuery": {
+      "song_id": -1115,
+      "song_name": "マリーの架空世界",
+      "display_song_name": "マリーの架空世界",
+      "artist": "じん",
+      "language": "",
+      "audio": "assets/derivative/mary-no-kakuu-sekai.mp3?v=7f8f5c4ec906",
+      "derivative": true
+    },
+    "sourceId": 26440341,
+    "sourcePath": "sources/26440341.json",
+    "sourceUrl": "https://music.163.com/#/song?id=26440341",
+    "selected": {
+      "id": 26440341,
+      "name": "マリーの架空世界",
+      "artists": [
+        "じん",
+        "IA"
+      ],
+      "album": "メカクシティレコーズ",
+      "durationMs": 179443,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 13
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/derivative-1115-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 179.52,
+    "sourceFirstLine": {
+      "t": 43.36,
+      "text": "同じ声 同じ風景に"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 4.44,
+      "endSeconds": 5.84,
+      "similarity": 0.0,
+      "recognizedText": " 1",
+      "meanProbability": 0.078,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "jw",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

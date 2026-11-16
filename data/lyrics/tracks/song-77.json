@@ -1,0 +1,187 @@
+{
+  "schemaVersion": 1,
+  "key": "song-77",
+  "songId": 77,
+  "songName": "大声钻石",
+  "rowKey": "大声钻石",
+  "displaySongName": "大声钻石",
+  "artist": "AKB48 Team SH",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "来自 2026-08-20 偶像歌回。经弹幕歌词交叉验证 + 歌切视频《【小松绿Viridis/歌回】20260820-偶像歌回？欸》分P第7章节确认曲目；时间按歌切分P累计估算，待回放复核。歌手信息来自网易云音乐/萌娘百科检索。",
+  "audio": {
+    "url": "assets/audio/song_13.m4a?v=f683df98cb12",
+    "sha256": "f683df98cb12abe6dfdec634c0d05b7f98399952690b34059c455271cadfe856"
+  },
+  "retrievedAt": "2026-11-16T04:02:31.374Z",
+  "match": {
+    "status": "version_review_required",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E5%A4%A7%E5%A3%B0%E9%92%BB%E7%9F%B3&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E5%A4%A7%E5%A3%B0%E9%92%BB%E7%9F%B3%20AKB48%20Team%20SH&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1928338988,
+        "name": "大声钻石",
+        "artists": [
+          "AKB48 Team SH"
+        ],
+        "album": "大声钻石",
+        "durationMs": 245356,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1927161844,
+        "name": "大声钻石",
+        "artists": [
+          "AKB48 Team SH"
+        ],
+        "album": "大声钻石",
+        "durationMs": 245048,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1960559174,
+        "name": "大声钻石",
+        "artists": [
+          "RAOOM",
+          "龙咩",
+          "米团maru",
+          "小词Sanako",
+          "元乔",
+          "木兮君",
+          "Akira"
+        ],
+        "album": "大声钻石（各唱各挑战）",
+        "durationMs": 245002,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1927163724,
+        "name": "大声钻石 (Off vocal ver.)",
+        "artists": [
+          "AKB48 Team SH"
+        ],
+        "album": "大声钻石",
+        "durationMs": 245048,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      },
+      {
+        "id": 1928337972,
+        "name": "大声钻石 (伴奏)",
+        "artists": [
+          "AKB48 Team SH"
+        ],
+        "album": "大声钻石",
+        "durationMs": 245173,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      },
+      {
+        "id": 3334860051,
+        "name": "大声钻石【粤语版】",
+        "artists": [
+          "奶油",
+          "傻莓酱",
+          "里子",
+          "祈椋sama",
+          "睡莲",
+          "一颗飘",
+          "叮叮"
+        ],
+        "album": "大声钻石【粤语版】",
+        "durationMs": 247043,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 459795296,
+        "name": "大声钻石＜大声ダイヤモンド 中文版＞（翻自 AKB48）（Cover ）",
+        "artists": [
+          "自由国度少女团"
+        ],
+        "album": "48G中文翻唱合集-自由国度少女团",
+        "durationMs": 249338,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 2006061650,
+        "name": "大声钻石2022（大声ダイヤモンド 中文版）（翻自：AKB48）",
+        "artists": [
+          "自由国度少女团",
+          "靡夏koali",
+          "橘络",
+          "小雨",
+          "君尔",
+          "梦回落茉",
+          "岚月",
+          "Ruii-Z",
+          "花儿HANANA",
+          "洛凌",
+          "Raysa"
+        ],
+        "album": "大声钻石2022",
+        "durationMs": 245220,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      }
+    ],
+    "workQuery": {
+      "song_id": 77,
+      "song_name": "大声钻石",
+      "show_as_song_name": "",
+      "display_song_name": "大声钻石",
+      "artist": "AKB48 Team SH",
+      "artist_search": "AKB48 Team SH 大声钻石 大声ダイヤモンド",
+      "feat_artist": "",
+      "remark": "来自 2026-08-20 偶像歌回。经弹幕歌词交叉验证 + 歌切视频《【小松绿Viridis/歌回】20260820-偶像歌回？欸》分P第7章节确认曲目；时间按歌切分P累计估算，待回放复核。歌手信息来自网易云音乐/萌娘百科检索。",
+      "tone": "",
+      "language": "中文",
+      "type": "偶像、AKB48",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1WS8c6XE9w?p=7",
+      "sing_count": 1,
+      "status_labels": "歌回、自动识别待人工复核",
+      "last_sing_at": "2026-08-20",
+      "row_key": "大声钻石"
+    },
+    "sourceId": 1927161844,
+    "sourcePath": "sources/1927161844.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1927161844",
+    "selected": {
+      "id": 1927161844,
+      "name": "大声钻石",
+      "artists": [
+        "AKB48 Team SH"
+      ],
+      "album": "大声钻石",
+      "durationMs": 245048,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 127
+  },
+  "alignment": {
+    "status": "version_review_required",
+    "offsetSeconds": null,
+    "humanVerified": false
+  }
+}

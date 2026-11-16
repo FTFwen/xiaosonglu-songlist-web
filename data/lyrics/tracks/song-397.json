@@ -1,0 +1,185 @@
+{
+  "schemaVersion": 1,
+  "key": "song-397",
+  "songId": 397,
+  "songName": "盗墓笔记·十年人间",
+  "rowKey": "盗墓笔记·十年人间",
+  "displaySongName": "盗墓笔记·十年人间",
+  "artist": "Soda纯白 / 洛天依Official",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "",
+  "audio": {
+    "url": "assets/audio/song_396.m4a?v=ebfac0751746",
+    "sha256": "ebfac0751746ac6f717483afbeb70813491e7bbac7c01389fc6526fbceb8545c"
+  },
+  "retrievedAt": "2026-11-16T04:08:17.288Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E7%9B%97%E5%A2%93%E7%AC%94%E8%AE%B0%C2%B7%E5%8D%81%E5%B9%B4%E4%BA%BA%E9%97%B4&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E7%9B%97%E5%A2%93%E7%AC%94%E8%AE%B0%C2%B7%E5%8D%81%E5%B9%B4%E4%BA%BA%E9%97%B4%20Soda%E7%BA%AF%E7%99%BD%20%2F%20%E6%B4%9B%E5%A4%A9%E4%BE%9DOfficial&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1298336783,
+        "name": "盗墓笔记·十年人间",
+        "artists": [
+          "Soda纯白",
+          "洛天依Official"
+        ],
+        "album": "盗墓笔记·十年人间",
+        "durationMs": 277296,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1297802566,
+        "name": "盗墓笔记·十年人间",
+        "artists": [
+          "李常超 (Lao乾妈)"
+        ],
+        "album": "盗墓笔记·十年人间",
+        "durationMs": 277350,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2615448018,
+        "name": "盗墓笔记·十年人间",
+        "artists": [
+          "缘为冰"
+        ],
+        "album": "盗墓笔记·十年人间(DJ完整热播)",
+        "durationMs": 331875,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2617961460,
+        "name": "盗墓笔记·十年人间",
+        "artists": [
+          "陈砚舟"
+        ],
+        "album": "十年人间——《盗墓笔记》",
+        "durationMs": 276869,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1435132254,
+        "name": "盗墓笔记·十年人间",
+        "artists": [
+          "袁王月"
+        ],
+        "album": "Demo",
+        "durationMs": 32438,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1412846581,
+        "name": "盗墓笔记 ·十年人间",
+        "artists": [
+          "千里狗"
+        ],
+        "album": "Cover 8",
+        "durationMs": 37632,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1430745040,
+        "name": "《盗墓笔记·十年人间》",
+        "artists": [
+          "小班圆妹妹"
+        ],
+        "album": "典狱司（片段）",
+        "durationMs": 25308,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1887439185,
+        "name": "盗墓笔记·十年人间 (DJ版)",
+        "artists": [
+          "歌者达达"
+        ],
+        "album": "2023抖音歌曲最火的中文DJ串烧",
+        "durationMs": 230708,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      }
+    ],
+    "workQuery": {
+      "song_id": 397,
+      "song_name": "盗墓笔记·十年人间",
+      "show_as_song_name": "",
+      "display_song_name": "盗墓笔记·十年人间",
+      "artist": "Soda纯白 / 洛天依Official",
+      "artist_search": "Soda纯白 / 洛天依Official",
+      "feat_artist": "",
+      "remark": "",
+      "tone": "",
+      "language": "中文",
+      "type": "中V",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1LRWd6jEqp/?p=19",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-11-12",
+      "row_key": "盗墓笔记·十年人间"
+    },
+    "sourceId": 1298336783,
+    "sourcePath": "sources/1298336783.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1298336783",
+    "selected": {
+      "id": 1298336783,
+      "name": "盗墓笔记·十年人间",
+      "artists": [
+        "Soda纯白",
+        "洛天依Official"
+      ],
+      "album": "盗墓笔记·十年人间",
+      "durationMs": 277296,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 37
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-397-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 280.747,
+    "sourceFirstLine": {
+      "t": 8,
+      "text": "二胡 : 陆二胡"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 0.0,
+      "endSeconds": 0.66,
+      "similarity": 0.0,
+      "recognizedText": "來",
+      "meanProbability": 0.166,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

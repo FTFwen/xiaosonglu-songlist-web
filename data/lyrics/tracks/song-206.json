@@ -1,0 +1,187 @@
+{
+  "schemaVersion": 1,
+  "key": "song-206",
+  "songId": 206,
+  "songName": "百里芭蕉百里花",
+  "rowKey": "百里芭蕉百里花",
+  "displaySongName": "百里芭蕉百里花（半首）",
+  "artist": "MeLo（诗岸 / 海伊）",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "UP 心灵火Flame《20260919 歌切》P8，分P名自带「半首」标注，直播中只唱了部分（词窗 01:02:37~01:05:36 约3分钟，原曲更长）；MeLo作编曲、诗岸与海伊演唱（五维介质专辑《海纳百川Storybook》，2021-07-16 投稿）",
+  "audio": {
+    "url": "assets/audio/song_205.m4a?v=1d19bf53ef35",
+    "sha256": "1d19bf53ef357495da86eba81bddcb14018ae28cf650704bc5686d7efd8138fa"
+  },
+  "retrievedAt": "2026-11-16T04:12:26.644Z",
+  "match": {
+    "status": "candidate_review_required",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E7%99%BE%E9%87%8C%E8%8A%AD%E8%95%89%E7%99%BE%E9%87%8C%E8%8A%B1&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E7%99%BE%E9%87%8C%E8%8A%AD%E8%95%89%E7%99%BE%E9%87%8C%E8%8A%B1%20MeLo&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 2745005065,
+        "name": "百里芭蕉百里花",
+        "artists": [
+          "洛天依",
+          "乐正绫"
+        ],
+        "album": "易升的V家翻调合集",
+        "durationMs": 231250,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3416336849,
+        "name": "百里芭蕉百里花",
+        "artists": [
+          "双笙（陈元汐）"
+        ],
+        "album": "百里芭蕉百里花",
+        "durationMs": 224825,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3405695223,
+        "name": "百里芭蕉百里花",
+        "artists": [
+          "平行四界Quadimension"
+        ],
+        "album": "百里芭蕉百里花",
+        "durationMs": 231095,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3428794880,
+        "name": "百里芭蕉百里花",
+        "artists": [
+          "傲栗",
+          "言双"
+        ],
+        "album": "百里芭蕉百里花",
+        "durationMs": 231303,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3417282448,
+        "name": "百里芭蕉百里花",
+        "artists": [
+          "睡眠火山"
+        ],
+        "album": "百里芭蕉百里花",
+        "durationMs": 213916,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3418822548,
+        "name": "百里芭蕉百里花",
+        "artists": [
+          "郑三和弦"
+        ],
+        "album": "百里芭蕉百里花-de1b6e9b",
+        "durationMs": 171128,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3418147246,
+        "name": "百里芭蕉百里花",
+        "artists": [
+          "郑三和弦",
+          "苏七和弦"
+        ],
+        "album": "百里芭蕉百里花-3d4b638f",
+        "durationMs": 238288,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3419374939,
+        "name": "百里芭蕉百里花",
+        "artists": [
+          "陈哲轩"
+        ],
+        "album": "",
+        "durationMs": 237423,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 206,
+      "song_name": "百里芭蕉百里花",
+      "show_as_song_name": "",
+      "display_song_name": "百里芭蕉百里花（半首）",
+      "artist": "MeLo（诗岸 / 海伊）",
+      "artist_search": "百里芭蕉百里花 诗岸 海伊 MeLo",
+      "feat_artist": "",
+      "remark": "UP 心灵火Flame《20260919 歌切》P8，分P名自带「半首」标注，直播中只唱了部分（词窗 01:02:37~01:05:36 约3分钟，原曲更长）；MeLo作编曲、诗岸与海伊演唱（五维介质专辑《海纳百川Storybook》，2021-07-16 投稿）",
+      "tone": "",
+      "language": "中文",
+      "type": "Synthesizer V",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1rZe86yE49/?p=8",
+      "sing_count": 2,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-09-27",
+      "row_key": "百里芭蕉百里花"
+    },
+    "sourceId": 2745005065,
+    "sourcePath": "sources/2745005065.json",
+    "sourceUrl": "https://music.163.com/#/song?id=2745005065",
+    "selected": {
+      "id": 2745005065,
+      "name": "百里芭蕉百里花",
+      "artists": [
+        "洛天依",
+        "乐正绫"
+      ],
+      "album": "易升的V家翻调合集",
+      "durationMs": 231250,
+      "titleScore": 1,
+      "artistMatch": false,
+      "score": 0.8
+    },
+    "timedLineCount": 18
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-206-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 222.401,
+    "sourceFirstLine": {
+      "t": 1.74,
+      "text": "昨夜芭蕉雨打了花落地成了个她"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 11.58,
+      "endSeconds": 11.92,
+      "similarity": 0.13333333333333333,
+      "recognizedText": "了",
+      "meanProbability": 0.807,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

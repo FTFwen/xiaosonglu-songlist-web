@@ -1,0 +1,187 @@
+{
+  "schemaVersion": 1,
+  "key": "song-189",
+  "songId": 189,
+  "songName": "心做し",
+  "rowKey": "心做し",
+  "displaySongName": "心做し",
+  "artist": "蝶々P / GUMI",
+  "language": "日文",
+  "derivative": false,
+  "edition": "",
+  "remark": "",
+  "audio": {
+    "url": "assets/audio/song_188.m4a?v=485ee6badfc6",
+    "sha256": "485ee6badfc6557a7a6cf37241338371bdae3bb6d5073ecaa4d94649db6abdd4"
+  },
+  "retrievedAt": "2026-11-16T04:04:47.269Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E5%BF%83%E5%81%9A%E3%81%97&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E5%BF%83%E5%81%9A%E3%81%97%20%E8%9D%B6%E3%80%85P%20%2F%20GUMI&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 28370757,
+        "name": "心做し",
+        "artists": [
+          "GUMI",
+          "一之瀬ユウ"
+        ],
+        "album": "EXIT TUNES PRESENTS GUMical from Megpoid",
+        "durationMs": 268000,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 29747157,
+        "name": "心做し",
+        "artists": [
+          "一之瀬ユウ",
+          "GUMI"
+        ],
+        "album": "End of the World",
+        "durationMs": 268355,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1817733952,
+        "name": "心做し",
+        "artists": [
+          "一之瀬ユウ",
+          "GUMI"
+        ],
+        "album": "SPACE DIVE!! feat. GUMI from Megpoid",
+        "durationMs": 268000,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 478303470,
+        "name": "心做し",
+        "artists": [
+          "双笙（陈元汐）"
+        ],
+        "album": "心做し",
+        "durationMs": 268773,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 31421443,
+        "name": "心做し",
+        "artists": [
+          "majiko"
+        ],
+        "album": "Contrast",
+        "durationMs": 273583,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 40915694,
+        "name": "心做し",
+        "artists": [
+          "鹿乃"
+        ],
+        "album": "メリー",
+        "durationMs": 269746,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 39224533,
+        "name": "心做し",
+        "artists": [
+          "Sou"
+        ],
+        "album": "最新热歌慢摇112",
+        "durationMs": 272561,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 29713638,
+        "name": "心做し",
+        "artists": [
+          "花たん"
+        ],
+        "album": "最新热歌慢摇82",
+        "durationMs": 268724,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 189,
+      "song_name": "心做し",
+      "show_as_song_name": "",
+      "display_song_name": "心做し",
+      "artist": "蝶々P / GUMI",
+      "artist_search": "蝶々P GUMI",
+      "feat_artist": "",
+      "remark": "",
+      "tone": "",
+      "language": "日文",
+      "type": "Vocaloid、J-Pop",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1xger6jEYS/?p=2",
+      "sing_count": 1,
+      "status_labels": "自动识别待人工复核",
+      "last_sing_at": "2026-09-17",
+      "row_key": "心做し"
+    },
+    "sourceId": 28370757,
+    "sourcePath": "sources/28370757.json",
+    "sourceUrl": "https://music.163.com/#/song?id=28370757",
+    "selected": {
+      "id": 28370757,
+      "name": "心做し",
+      "artists": [
+        "GUMI",
+        "一之瀬ユウ"
+      ],
+      "album": "EXIT TUNES PRESENTS GUMical from Megpoid",
+      "durationMs": 268000,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 34
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-189-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 266.008,
+    "sourceFirstLine": {
+      "t": 0.74,
+      "text": "ねぇ、もしも全て投げ捨てられたら"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 14.62,
+      "endSeconds": 19.06,
+      "similarity": 0.21428571428571427,
+      "recognizedText": "ねかいたかなるからもなにも",
+      "meanProbability": 0.66,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "ja",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

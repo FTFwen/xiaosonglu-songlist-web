@@ -1,0 +1,57 @@
+{
+  "audioSha256": "2e88e5ba5e125fc4938855f41ef3728f1b965abc35fe6a8b7b781274a523e68c",
+  "model": "whisper-base",
+  "start": 0,
+  "end": 35.711,
+  "result": {
+    "text": "《愛情》",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 29.6,
+        "end": 29.98,
+        "text": "《愛情》",
+        "tokens": [
+          50364,
+          9806,
+          15157,
+          10570,
+          9782,
+          50664
+        ],
+        "temperature": 0,
+        "avg_logprob": -1.918182100568499,
+        "compression_ratio": 0.6,
+        "no_speech_prob": 0.5447702407836914,
+        "words": [
+          {
+            "word": "《",
+            "start": 29.6,
+            "end": 29.78,
+            "probability": 0.010263667441904545
+          },
+          {
+            "word": "愛",
+            "start": 29.78,
+            "end": 29.8,
+            "probability": 0.015834536403417587
+          },
+          {
+            "word": "情",
+            "start": 29.8,
+            "end": 29.86,
+            "probability": 0.1999277025461197
+          },
+          {
+            "word": "》",
+            "start": 29.86,
+            "end": 29.98,
+            "probability": 0.4651082158088684
+          }
+        ]
+      }
+    ],
+    "language": "zh"
+  }
+}

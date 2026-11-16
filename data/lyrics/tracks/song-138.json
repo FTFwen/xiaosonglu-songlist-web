@@ -1,0 +1,161 @@
+{
+  "schemaVersion": 1,
+  "key": "song-138",
+  "songId": 138,
+  "songName": "ミカヅキ",
+  "displaySongName": "ミカヅキ",
+  "artist": "さユり",
+  "language": "日文",
+  "derivative": false,
+  "audio": {
+    "url": "assets/audio/song_137.m4a?v=1771b5797f66",
+    "sha256": "1771b5797f66c9d62c591475f228b3ebb93cf026ae073a89e7ef72d49009f1be"
+  },
+  "retrievedAt": "2026-11-16T03:58:37.251Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E3%83%9F%E3%82%AB%E3%83%85%E3%82%AD&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 34179228,
+        "name": "ミカヅキ",
+        "artists": [
+          "さユり"
+        ],
+        "album": "ミカヅキ",
+        "durationMs": 261773,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 478920048,
+        "name": "ミカヅキ",
+        "artists": [
+          "さユり"
+        ],
+        "album": "ミカヅキの航海",
+        "durationMs": 261773,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 33875962,
+        "name": "ミカヅキ",
+        "artists": [
+          "さユり"
+        ],
+        "album": "最新热歌慢摇105",
+        "durationMs": 93283,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1454078349,
+        "name": "ミカヅキ",
+        "artists": [
+          "さユり"
+        ],
+        "album": "ミカヅキ-special edition",
+        "durationMs": 261773,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 22720973,
+        "name": "ミカヅキ",
+        "artists": [
+          "より子"
+        ],
+        "album": "記憶",
+        "durationMs": 327840,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 34179277,
+        "name": "ミカヅキ -street弾き語りver.-",
+        "artists": [
+          "さユり"
+        ],
+        "album": "ミカヅキ",
+        "durationMs": 274949,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      },
+      {
+        "id": 1452448266,
+        "name": "ミカヅキ-「め」弾き語りver.-",
+        "artists": [
+          "さユり"
+        ],
+        "album": "め",
+        "durationMs": 261387,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      },
+      {
+        "id": 1331300870,
+        "name": "ミカヅキ-Hiro(MY FIRST STORY)Vo ver.-",
+        "artists": [
+          "森内寛樹"
+        ],
+        "album": "レイメイ",
+        "durationMs": 260481,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      }
+    ],
+    "sourceId": 34179228,
+    "sourcePath": "sources/34179228.json",
+    "sourceUrl": "https://music.163.com/#/song?id=34179228",
+    "selected": {
+      "id": 34179228,
+      "name": "ミカヅキ",
+      "artists": [
+        "さユり"
+      ],
+      "album": "ミカヅキ",
+      "durationMs": 261773,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 38
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-138-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 145.984,
+    "sourceFirstLine": {
+      "t": 0.5,
+      "text": "今宵も頭上では 綺麗な満月がキラキラ"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 30.78,
+      "endSeconds": 31.22,
+      "similarity": 0.1111111111111111,
+      "recognizedText": "は",
+      "meanProbability": 0.67,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "ja",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  },
+  "rowKey": "ミカヅキ",
+  "edition": "",
+  "remark": "2026-09-03「也许康复的随便唱唱」21点场；歌切合集【桐人今天睡大觉】【小松绿Viridis】随便唱唱的歌回 歌切合集 2026.09.03 分P19（04:26）。さユり《乱步奇谭》ED。"
+}

@@ -1,0 +1,187 @@
+{
+  "schemaVersion": 1,
+  "key": "song-319",
+  "songId": 319,
+  "songName": "泡沫",
+  "rowKey": "泡沫",
+  "displaySongName": "泡沫",
+  "artist": "G.M.E邓紫棋",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "桐人今天睡大觉「全自动歌切项目」2026.10.18 歌切合集第 12 分P（章节「13_泡沫 - 邓紫棋」）。弹幕共 4 条直接出现该歌名。未定位回放时间点。",
+  "audio": {
+    "url": "assets/audio/song_318.m4a?v=7438246d350a",
+    "sha256": "7438246d350ad3f4ee79e39ffb82c9da2cdfb462cfa3da4ddfe6f6d525dd8d9d"
+  },
+  "retrievedAt": "2026-11-16T04:06:57.075Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E6%B3%A1%E6%B2%AB&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E6%B3%A1%E6%B2%AB%20G.M.E%E9%82%93%E7%B4%AB%E6%A3%8B&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 2071698173,
+        "name": "泡沫",
+        "artists": [
+          "Zhz",
+          "邓 紫 棋"
+        ],
+        "album": "泡沫",
+        "durationMs": 259041,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 518682659,
+        "name": "泡沫",
+        "artists": [
+          "Swang多雷"
+        ],
+        "album": "FORBIDDEN SPACE",
+        "durationMs": 190241,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 233931,
+        "name": "泡沫",
+        "artists": [
+          "G.E.M.邓紫棋"
+        ],
+        "album": "Xposed",
+        "durationMs": 258866,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 357384,
+        "name": "泡沫",
+        "artists": [
+          "花儿乐队"
+        ],
+        "album": "草莓声明",
+        "durationMs": 314000,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3376626124,
+        "name": "泡沫",
+        "artists": [
+          "Arthurnevawakes",
+          "R!R!Riot"
+        ],
+        "album": ":)",
+        "durationMs": 137752,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3340700531,
+        "name": "泡沫",
+        "artists": [
+          "梦里啥都有DY",
+          "大头针"
+        ],
+        "album": "泡沫 Beyoncé版",
+        "durationMs": 244512,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3445679878,
+        "name": "泡沫",
+        "artists": [
+          "故事人生"
+        ],
+        "album": "泡沫",
+        "durationMs": 214778,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3374290614,
+        "name": "泡沫",
+        "artists": [
+          "旦正昂加"
+        ],
+        "album": "自画像",
+        "durationMs": 226344,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 319,
+      "song_name": "泡沫",
+      "show_as_song_name": "",
+      "display_song_name": "泡沫",
+      "artist": "G.M.E邓紫棋",
+      "artist_search": "G.M.E邓紫棋 泡沫",
+      "feat_artist": "",
+      "remark": "桐人今天睡大觉「全自动歌切项目」2026.10.18 歌切合集第 12 分P（章节「13_泡沫 - 邓紫棋」）。弹幕共 4 条直接出现该歌名。未定位回放时间点。",
+      "tone": "",
+      "language": "中文",
+      "type": "影视、流行",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1UPnV6zEs4/?p=12",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-18",
+      "row_key": "泡沫"
+    },
+    "sourceId": 2071698173,
+    "sourcePath": "sources/2071698173.json",
+    "sourceUrl": "https://music.163.com/#/song?id=2071698173",
+    "selected": {
+      "id": 2071698173,
+      "name": "泡沫",
+      "artists": [
+        "Zhz",
+        "邓 紫 棋"
+      ],
+      "album": "泡沫",
+      "durationMs": 259041,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 36
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-319-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 257.28,
+    "sourceFirstLine": {
+      "t": 2.37,
+      "text": "录音室：张新航工作室"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 3.88,
+      "endSeconds": 4.88,
+      "similarity": 0.0,
+      "recognizedText": "梁",
+      "meanProbability": 0.491,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

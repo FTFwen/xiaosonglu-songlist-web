@@ -1,0 +1,190 @@
+{
+  "schemaVersion": 1,
+  "key": "song-311",
+  "songId": 311,
+  "songName": "フォニイ",
+  "rowKey": "フォニイ",
+  "displaySongName": "フォニイ",
+  "artist": "可不, ツミキ",
+  "language": "日文",
+  "derivative": false,
+  "edition": "",
+  "remark": "弹幕 04:35:31「phony」直接点名；两份合集 P15 同名同序。",
+  "audio": {
+    "url": "assets/audio/song_310.m4a?v=1eacff282ea1",
+    "sha256": "1eacff282ea197e073d55b6dc89334ae12e06a8a9e4bf1e5ceb9a471d44bf952"
+  },
+  "retrievedAt": "2026-11-16T04:06:43.738Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E3%83%95%E3%82%A9%E3%83%8B%E3%82%A4&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E3%83%95%E3%82%A9%E3%83%8B%E3%82%A4%20%E5%8F%AF%E4%B8%8D&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1900172235,
+        "name": "フォニイ",
+        "artists": [
+          "可不",
+          "ツミキ"
+        ],
+        "album": "KAF+YOU KAFU COMPILATION ALBUM シンメトリー",
+        "durationMs": 189884,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 3353203995,
+        "name": "フォニイ",
+        "artists": [
+          "可不",
+          "ツミキ"
+        ],
+        "album": "フォニイ",
+        "durationMs": 189884,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2128548036,
+        "name": "フォニイ",
+        "artists": [
+          "Luca Kaneshiro"
+        ],
+        "album": "",
+        "durationMs": 189994,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2116074304,
+        "name": "フォニイ",
+        "artists": [
+          "不破湊"
+        ],
+        "album": "",
+        "durationMs": 188520,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1888688617,
+        "name": "フォニイ",
+        "artists": [
+          "Shikako"
+        ],
+        "album": "コウモリ",
+        "durationMs": 188117,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2101784048,
+        "name": "フォニイ - STUDY WITH MIKU ver. -",
+        "artists": [
+          "ツミキ",
+          "STUDY WITH MIKU"
+        ],
+        "album": "STUDY WITH MIKU part3",
+        "durationMs": 291407,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      },
+      {
+        "id": 3441499512,
+        "name": "フォニイ(伪物)(feat.初音ミク)",
+        "artists": [
+          "初音ミク￴￴￴",
+          "ツミキ￴￴￴",
+          "Tiy-21"
+        ],
+        "album": "フォニイ(伪物)(feat.KAITO)",
+        "durationMs": 146300,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      },
+      {
+        "id": 3397506968,
+        "name": "フォニイ (Cover)",
+        "artists": [
+          "Afterglow",
+          "96猫"
+        ],
+        "album": "フォニイ (Cover)",
+        "durationMs": 192025,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      }
+    ],
+    "workQuery": {
+      "song_id": 311,
+      "song_name": "フォニイ",
+      "show_as_song_name": "",
+      "display_song_name": "フォニイ",
+      "artist": "可不, ツミキ",
+      "artist_search": "可不, ツミキ",
+      "feat_artist": "",
+      "remark": "弹幕 04:35:31「phony」直接点名；两份合集 P15 同名同序。",
+      "tone": "",
+      "language": "日文",
+      "type": "日V",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1uPJ86DE95/?p=15",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-16",
+      "row_key": "フォニイ"
+    },
+    "sourceId": 1900172235,
+    "sourcePath": "sources/1900172235.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1900172235",
+    "selected": {
+      "id": 1900172235,
+      "name": "フォニイ",
+      "artists": [
+        "可不",
+        "ツミキ"
+      ],
+      "album": "KAF+YOU KAFU COMPILATION ALBUM シンメトリー",
+      "durationMs": 189884,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 37
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-311-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 193.365,
+    "sourceFirstLine": {
+      "t": 0.617,
+      "text": "この世で造花より綺麗な花は無いわ"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 7.46,
+      "endSeconds": 8.86,
+      "similarity": 0.0,
+      "recognizedText": "作",
+      "meanProbability": 0.001,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "ja",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

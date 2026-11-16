@@ -1,0 +1,348 @@
+{
+  "audioSha256": "eb25f4c412ff7fdb42e1a537447dae9ae5e876ec4d9b8afd7560da7fce468ac0",
+  "model": "whisper-base",
+  "start": 65.03999999999999,
+  "end": 85.03999999999999,
+  "result": {
+    "text": "たりひとりじゃいられない言葉は生まれないわかってるのわかってるのにずっとSo let's see thatずっと",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 1.4600000000000009,
+        "end": 2.84,
+        "text": "たり",
+        "tokens": [
+          50364,
+          3368,
+          5095,
+          50464
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.583805167156717,
+        "compression_ratio": 1.2641509433962264,
+        "no_speech_prob": 0.4355224668979645,
+        "words": [
+          {
+            "word": "た",
+            "start": 1.4600000000000009,
+            "end": 2.34,
+            "probability": 0.03512904420495033
+          },
+          {
+            "word": "り",
+            "start": 2.34,
+            "end": 2.84,
+            "probability": 0.6045371890068054
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "seek": 0,
+        "start": 4.900000000000001,
+        "end": 7.78,
+        "text": "ひとりじゃいられない",
+        "tokens": [
+          50464,
+          26950,
+          3193,
+          5095,
+          15339,
+          1764,
+          5154,
+          48535,
+          50764
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.583805167156717,
+        "compression_ratio": 1.2641509433962264,
+        "no_speech_prob": 0.4355224668979645,
+        "words": [
+          {
+            "word": "ひ",
+            "start": 4.900000000000001,
+            "end": 5.78,
+            "probability": 0.6467352509498596
+          },
+          {
+            "word": "と",
+            "start": 5.78,
+            "end": 6.04,
+            "probability": 0.9693328142166138
+          },
+          {
+            "word": "り",
+            "start": 6.04,
+            "end": 6.28,
+            "probability": 0.9982654452323914
+          },
+          {
+            "word": "じゃ",
+            "start": 6.28,
+            "end": 6.68,
+            "probability": 0.33660972118377686
+          },
+          {
+            "word": "い",
+            "start": 6.68,
+            "end": 6.94,
+            "probability": 0.7985342144966125
+          },
+          {
+            "word": "ら",
+            "start": 6.94,
+            "end": 7.12,
+            "probability": 0.42220163345336914
+          },
+          {
+            "word": "れない",
+            "start": 7.12,
+            "end": 7.78,
+            "probability": 0.9477834701538086
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "seek": 0,
+        "start": 7.78,
+        "end": 11.64,
+        "text": "言葉は生まれない",
+        "tokens": [
+          50764,
+          12009,
+          46290,
+          3065,
+          8244,
+          2889,
+          48535,
+          50964
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.583805167156717,
+        "compression_ratio": 1.2641509433962264,
+        "no_speech_prob": 0.4355224668979645,
+        "words": [
+          {
+            "word": "言",
+            "start": 7.78,
+            "end": 9.16,
+            "probability": 0.7532129287719727
+          },
+          {
+            "word": "葉",
+            "start": 9.16,
+            "end": 9.76,
+            "probability": 0.9774100184440613
+          },
+          {
+            "word": "は",
+            "start": 9.76,
+            "end": 10.2,
+            "probability": 0.6200525760650635
+          },
+          {
+            "word": "生",
+            "start": 10.2,
+            "end": 10.52,
+            "probability": 0.24265475571155548
+          },
+          {
+            "word": "ま",
+            "start": 10.52,
+            "end": 10.66,
+            "probability": 0.8540161848068237
+          },
+          {
+            "word": "れない",
+            "start": 10.66,
+            "end": 11.64,
+            "probability": 0.9749649167060852
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "seek": 0,
+        "start": 11.64,
+        "end": 13.6,
+        "text": "わかってるの",
+        "tokens": [
+          50964,
+          44054,
+          45350,
+          2972,
+          51064
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.583805167156717,
+        "compression_ratio": 1.2641509433962264,
+        "no_speech_prob": 0.4355224668979645,
+        "words": [
+          {
+            "word": "わか",
+            "start": 11.64,
+            "end": 12.62,
+            "probability": 0.43177905678749084
+          },
+          {
+            "word": "ってる",
+            "start": 12.62,
+            "end": 13.28,
+            "probability": 0.9406326413154602
+          },
+          {
+            "word": "の",
+            "start": 13.28,
+            "end": 13.6,
+            "probability": 0.9820870161056519
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "seek": 0,
+        "start": 13.6,
+        "end": 16.28,
+        "text": "わかってるのにずっと",
+        "tokens": [
+          51064,
+          44054,
+          45350,
+          2972,
+          4108,
+          18216,
+          13137,
+          51164
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.583805167156717,
+        "compression_ratio": 1.2641509433962264,
+        "no_speech_prob": 0.4355224668979645,
+        "words": [
+          {
+            "word": "わか",
+            "start": 13.6,
+            "end": 14.28,
+            "probability": 0.17244572937488556
+          },
+          {
+            "word": "ってる",
+            "start": 14.28,
+            "end": 15.04,
+            "probability": 0.9855119585990906
+          },
+          {
+            "word": "の",
+            "start": 15.04,
+            "end": 15.32,
+            "probability": 0.9936833381652832
+          },
+          {
+            "word": "に",
+            "start": 15.32,
+            "end": 15.52,
+            "probability": 0.9934493899345398
+          },
+          {
+            "word": "ず",
+            "start": 15.52,
+            "end": 15.8,
+            "probability": 0.7651751041412354
+          },
+          {
+            "word": "っと",
+            "start": 15.8,
+            "end": 16.28,
+            "probability": 0.9854106903076172
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "seek": 0,
+        "start": 16.28,
+        "end": 18.2,
+        "text": "So let's see that",
+        "tokens": [
+          51164,
+          6455,
+          718,
+          311,
+          536,
+          300,
+          51264
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.583805167156717,
+        "compression_ratio": 1.2641509433962264,
+        "no_speech_prob": 0.4355224668979645,
+        "words": [
+          {
+            "word": "So",
+            "start": 16.28,
+            "end": 16.82,
+            "probability": 0.03971092402935028
+          },
+          {
+            "word": " let",
+            "start": 16.82,
+            "end": 17.12,
+            "probability": 0.30222758650779724
+          },
+          {
+            "word": "'s",
+            "start": 17.12,
+            "end": 17.42,
+            "probability": 0.9775965213775635
+          },
+          {
+            "word": " see",
+            "start": 17.42,
+            "end": 17.72,
+            "probability": 0.24600496888160706
+          },
+          {
+            "word": " that",
+            "start": 17.72,
+            "end": 18.2,
+            "probability": 0.631632387638092
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "seek": 0,
+        "start": 18.2,
+        "end": 19.84,
+        "text": "ずっと",
+        "tokens": [
+          51264,
+          18216,
+          13137,
+          51364
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.583805167156717,
+        "compression_ratio": 1.2641509433962264,
+        "no_speech_prob": 0.4355224668979645,
+        "words": [
+          {
+            "word": "ず",
+            "start": 18.2,
+            "end": 18.56,
+            "probability": 0.004922406282275915
+          },
+          {
+            "word": "っと",
+            "start": 18.56,
+            "end": 19.84,
+            "probability": 0.7342023253440857
+          }
+        ]
+      }
+    ],
+    "language": "ja"
+  }
+}

@@ -1,0 +1,167 @@
+{
+  "schemaVersion": 1,
+  "key": "song-201",
+  "songId": 201,
+  "songName": "大喜",
+  "displaySongName": "大喜",
+  "artist": "泠鸢yousa / 音阙诗听",
+  "language": "中文",
+  "derivative": false,
+  "audio": {
+    "url": "assets/audio/song_200.m4a?v=123d563d4792",
+    "sha256": "123d563d479228de220109001d286c15b286578d8e94b116032c1a2476cfe112"
+  },
+  "retrievedAt": "2026-11-16T03:58:24.112Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E5%A4%A7%E5%96%9C&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1824222230,
+        "name": "大喜",
+        "artists": [
+          "泠鸢yousa",
+          "音阙诗听"
+        ],
+        "album": "大喜",
+        "durationMs": 181237,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1953526993,
+        "name": "大喜【直播精修】2022泠鸢十周年纪念生日会",
+        "artists": [
+          "泠鸢yousa"
+        ],
+        "album": "2022泠鸢十周年纪念生日会【直播演唱精修】",
+        "durationMs": 181845,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      },
+      {
+        "id": 357282,
+        "name": "大喜宙",
+        "artists": [
+          "花儿乐队"
+        ],
+        "album": "花天囍世",
+        "durationMs": 247666,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 1310728498,
+        "name": "R.",
+        "artists": [
+          "李子豪(HtFR)",
+          "大喜"
+        ],
+        "album": "R.",
+        "durationMs": 181250,
+        "titleScore": 0,
+        "artistMatch": false,
+        "score": 0
+      },
+      {
+        "id": 1352912738,
+        "name": "Honesty",
+        "artists": [
+          "大喜"
+        ],
+        "album": "Honesty(cover)",
+        "durationMs": 147408,
+        "titleScore": 0,
+        "artistMatch": false,
+        "score": 0
+      },
+      {
+        "id": 2126264648,
+        "name": "Flower2",
+        "artists": [
+          "大喜"
+        ],
+        "album": "Flower2",
+        "durationMs": 134213,
+        "titleScore": 0,
+        "artistMatch": false,
+        "score": 0
+      },
+      {
+        "id": 1300475473,
+        "name": "喜欢",
+        "artists": [
+          "大喜",
+          "恶梦Yk",
+          "SanJin"
+        ],
+        "album": "大喜与恶梦",
+        "durationMs": 279260,
+        "titleScore": 0,
+        "artistMatch": false,
+        "score": 0
+      },
+      {
+        "id": 2617472061,
+        "name": "不如不见面2024",
+        "artists": [
+          "6SP",
+          "梁淞Tsong"
+        ],
+        "album": "不如不见面2024",
+        "durationMs": 225159,
+        "titleScore": 0,
+        "artistMatch": false,
+        "score": 0
+      }
+    ],
+    "sourceId": 1824222230,
+    "sourcePath": "sources/1824222230.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1824222230",
+    "selected": {
+      "id": 1824222230,
+      "name": "大喜",
+      "artists": [
+        "泠鸢yousa",
+        "音阙诗听"
+      ],
+      "album": "大喜",
+      "durationMs": 181237,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 68
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-201-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 181.719,
+    "sourceFirstLine": {
+      "t": 8.029,
+      "text": "喜鹊叫闹"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 30.0,
+      "endSeconds": 30.56,
+      "similarity": 0.0,
+      "recognizedText": "也",
+      "meanProbability": 0.103,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  },
+  "rowKey": "大喜",
+  "edition": "",
+  "remark": "UP 心灵火Flame《20260919 歌切》P3；原唱泠鸢yousa联合音阙诗听创作的国风电音单曲；本曲无直接歌词弹幕，按分P章节名+前后曲时间轴推定，置信度酌减"
+}

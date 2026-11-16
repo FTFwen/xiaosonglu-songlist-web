@@ -1,0 +1,183 @@
+{
+  "schemaVersion": 1,
+  "key": "song-211",
+  "songId": 211,
+  "songName": "花に亡霊",
+  "rowKey": "花に亡霊",
+  "displaySongName": "花に亡霊",
+  "artist": "ヨルシカ",
+  "language": "日文",
+  "derivative": false,
+  "edition": "",
+  "remark": "UP 桐人今天睡大觉《2026.09.23练歌歌切合集》P2；ヨルシカ连续曲段第一首",
+  "audio": {
+    "url": "assets/audio/song_210.m4a?v=c61a71990cc7",
+    "sha256": "c61a71990cc76a18eb4f8f8ccab1f925b94722fcab78f655d0eed9279b29877e"
+  },
+  "retrievedAt": "2026-11-16T04:05:06.044Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E8%8A%B1%E3%81%AB%E4%BA%A1%E9%9C%8A&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E8%8A%B1%E3%81%AB%E4%BA%A1%E9%9C%8A%20%E3%83%A8%E3%83%AB%E3%82%B7%E3%82%AB&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1442466883,
+        "name": "花に亡霊",
+        "artists": [
+          "ヨルシカ"
+        ],
+        "album": "花に亡霊",
+        "durationMs": 239932,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1871073313,
+        "name": "花に亡霊",
+        "artists": [
+          "ヨルシカ"
+        ],
+        "album": "TOKYO -ANIME FLAVOR -",
+        "durationMs": 241226,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1466520419,
+        "name": "花に亡霊",
+        "artists": [
+          "ヨルシカ"
+        ],
+        "album": "盗作",
+        "durationMs": 241206,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2617906971,
+        "name": "花に亡霊",
+        "artists": [
+          "ヨルシカ"
+        ],
+        "album": "夏スイッチOFF - 冷却編 -",
+        "durationMs": 241226,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2143798407,
+        "name": "花に亡霊",
+        "artists": [
+          "ヨルシカ"
+        ],
+        "album": "TOKYO - ANIME & GAMES -",
+        "durationMs": 241226,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 3410506919,
+        "name": "花に亡霊",
+        "artists": [
+          "ヨルシカ"
+        ],
+        "album": "夏恋パッション - Hot Summer Love Song -",
+        "durationMs": 241226,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1876985136,
+        "name": "花に亡霊",
+        "artists": [
+          "ヨルシカ"
+        ],
+        "album": "TOKYO - ANIME ROCK -",
+        "durationMs": 241206,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1982877789,
+        "name": "花に亡霊",
+        "artists": [
+          "ヨルシカ"
+        ],
+        "album": "J-Pop Obsessed",
+        "durationMs": 241206,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      }
+    ],
+    "workQuery": {
+      "song_id": 211,
+      "song_name": "花に亡霊",
+      "show_as_song_name": "",
+      "display_song_name": "花に亡霊",
+      "artist": "ヨルシカ",
+      "artist_search": "ヨルシカ 花に亡霊",
+      "feat_artist": "",
+      "remark": "UP 桐人今天睡大觉《2026.09.23练歌歌切合集》P2；ヨルシカ连续曲段第一首",
+      "tone": "",
+      "language": "日文",
+      "type": "J-Pop",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1ouhW6GEoD/?p=2",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-09-23",
+      "row_key": "花に亡霊"
+    },
+    "sourceId": 1442466883,
+    "sourcePath": "sources/1442466883.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1442466883",
+    "selected": {
+      "id": 1442466883,
+      "name": "花に亡霊",
+      "artists": [
+        "ヨルシカ"
+      ],
+      "album": "花に亡霊",
+      "durationMs": 239932,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 38
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-211-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 240.419,
+    "sourceFirstLine": {
+      "t": 0.73,
+      "text": "もう忘れてしまったかな"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 29.72,
+      "endSeconds": 31.68,
+      "similarity": 0.26666666666666666,
+      "recognizedText": "も今はな",
+      "meanProbability": 0.22,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "ja",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

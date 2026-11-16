@@ -1,0 +1,216 @@
+{
+  "schemaVersion": 1,
+  "key": "song-285",
+  "songId": 285,
+  "songName": "农夫渔夫",
+  "rowKey": "农夫渔夫",
+  "displaySongName": "农夫渔夫",
+  "artist": "大乔小乔",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "标题为「绿の学歌」，描述明示「小松绿直播学歌回」「【小松绿viridis】2026/9/26」，是当场次的专用歌切。",
+  "audio": {
+    "url": "assets/audio/song_287.m4a?v=a28fd1cacf4a",
+    "sha256": "a28fd1cacf4ac7b2a63d2f7ae0d7a9c817d782f7e436b7a566ca76ae131fd8f3"
+  },
+  "retrievedAt": "2026-11-16T04:06:13.929Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E5%86%9C%E5%A4%AB%E6%B8%94%E5%A4%AB&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E5%86%9C%E5%A4%AB%E6%B8%94%E5%A4%AB%20%E5%A4%A7%E4%B9%94%E5%B0%8F%E4%B9%94&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 350760,
+        "name": "农夫渔夫",
+        "artists": [
+          "大乔小乔"
+        ],
+        "album": "渔樵问答",
+        "durationMs": 231106,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 31544985,
+        "name": "农夫渔夫",
+        "artists": [
+          "小猛"
+        ],
+        "album": "拾年北京",
+        "durationMs": 230032,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 516819090,
+        "name": "农夫渔夫",
+        "artists": [
+          "小猛"
+        ],
+        "album": "兄弟别闹",
+        "durationMs": 230032,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1387607610,
+        "name": "农夫渔夫",
+        "artists": [
+          "千里狗"
+        ],
+        "album": "Cover 5",
+        "durationMs": 41256,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 417594615,
+        "name": "农夫渔夫",
+        "artists": [
+          "森冬"
+        ],
+        "album": "蓬岛以左 煮雪烧茶 B",
+        "durationMs": 224180,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1361188309,
+        "name": "农夫渔夫",
+        "artists": [
+          "八点档布莱克"
+        ],
+        "album": "弹唱合集",
+        "durationMs": 71047,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 461726007,
+        "name": "农夫渔夫",
+        "artists": [
+          "石头er"
+        ],
+        "album": "疯狂的石头",
+        "durationMs": 224496,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1474209812,
+        "name": "农夫渔夫",
+        "artists": [
+          "李溜溜"
+        ],
+        "album": "102室的怪咖",
+        "durationMs": 226560,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 285,
+      "song_name": "农夫渔夫",
+      "show_as_song_name": "",
+      "display_song_name": "农夫渔夫",
+      "artist": "大乔小乔",
+      "artist_search": "大乔小乔",
+      "feat_artist": "",
+      "remark": "标题为「绿の学歌」，描述明示「小松绿直播学歌回」「【小松绿viridis】2026/9/26」，是当场次的专用歌切。",
+      "tone": "",
+      "language": "中文",
+      "type": "民谣",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1suhR6CEpJ/",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切复核",
+      "last_sing_at": "2026-09-26",
+      "row_key": "农夫渔夫"
+    },
+    "sourceId": 350760,
+    "sourcePath": "sources/350760.json",
+    "sourceUrl": "https://music.163.com/#/song?id=350760",
+    "selected": {
+      "id": 350760,
+      "name": "农夫渔夫",
+      "artists": [
+        "大乔小乔"
+      ],
+      "album": "渔樵问答",
+      "durationMs": 231106,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 25
+  },
+  "alignment": {
+    "status": "spotcheck_review_required",
+    "evidencePath": "evidence/song-285-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 188.987,
+    "sourceFirstLine": {
+      "t": 30.859,
+      "text": "如果有一天我能够拥有一个大果园"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 0.0,
+      "endSeconds": 5.28,
+      "similarity": 0.9285714285714286,
+      "recognizedText": "如果有一天我能夠擁有一個大",
+      "meanProbability": 0.858,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": -30.859,
+    "checks": [
+      {
+        "sourceLine": {
+          "t": 125.219,
+          "text": "每一个早晨我航行在晨曦的海面"
+        },
+        "evidencePath": "evidence/song-285-check0.json",
+        "candidate": {
+          "audioSeconds": 94.8,
+          "endSeconds": 101.06,
+          "similarity": 0.5714285714285714,
+          "recognizedText": "每一个造成我好心在沉洗的海面",
+          "meanProbability": 0.841,
+          "tokenPrefixOnly": false
+        },
+        "residualSeconds": 0.44
+      },
+      {
+        "sourceLine": {
+          "t": 203.1,
+          "text": "我们会停泊在爱人的码头"
+        },
+        "evidencePath": "evidence/song-285-check1.json",
+        "candidate": {
+          "audioSeconds": 168.581,
+          "endSeconds": 171.281,
+          "similarity": 0.375,
+          "recognizedText": "我會心裡的",
+          "meanProbability": 0.298,
+          "tokenPrefixOnly": false
+        },
+        "residualSeconds": -3.66
+      }
+    ],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

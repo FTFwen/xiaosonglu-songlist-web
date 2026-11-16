@@ -1,0 +1,184 @@
+{
+  "schemaVersion": 1,
+  "key": "song-284",
+  "songId": 284,
+  "songName": "小螺号",
+  "rowKey": "小螺号",
+  "displaySongName": "小螺号",
+  "artist": "儿歌多多",
+  "language": "中文",
+  "derivative": false,
+  "edition": "半首",
+  "remark": "心灵火 P17 标注「小螺号（半首）」76s（桐人 P17 为 87s）。",
+  "audio": {
+    "url": "assets/audio/song_283.m4a?v=83c4a8ff37a7",
+    "sha256": "83c4a8ff37a7837ab3082acfb539dfac6206d36a8d621061e02eafe8bbeded3d"
+  },
+  "retrievedAt": "2026-11-16T04:06:07.661Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E5%B0%8F%E8%9E%BA%E5%8F%B7&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E5%B0%8F%E8%9E%BA%E5%8F%B7%20%E5%84%BF%E6%AD%8C%E5%A4%9A%E5%A4%9A&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 2106816012,
+        "name": "小螺号",
+        "artists": [
+          "儿歌多多"
+        ],
+        "album": "儿歌多多经典儿歌3",
+        "durationMs": 107649,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1417892380,
+        "name": "小螺号",
+        "artists": [
+          "贝乐虎儿歌"
+        ],
+        "album": "贝乐虎儿歌",
+        "durationMs": 102600,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 395559,
+        "name": "小螺号",
+        "artists": [
+          "中央人民广播电台少年广播合唱团"
+        ],
+        "album": "梦幻童年，甜美童歌 50首童年儿歌经典一",
+        "durationMs": 43000,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 5278689,
+        "name": "小螺号",
+        "artists": [
+          "程琳"
+        ],
+        "album": "原唱经典名曲珍藏8",
+        "durationMs": 114024,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 28700266,
+        "name": "小螺号",
+        "artists": [
+          "贝瓦儿歌"
+        ],
+        "album": "贝瓦儿歌",
+        "durationMs": 121000,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 5242615,
+        "name": "小螺号",
+        "artists": [
+          "群星"
+        ],
+        "album": "如歌童年",
+        "durationMs": 175635,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1300592464,
+        "name": "小螺号",
+        "artists": [
+          "小蓓蕾组合"
+        ],
+        "album": "亲子儿童歌曲-小放牛",
+        "durationMs": 123820,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2161502916,
+        "name": "小螺号",
+        "artists": [
+          "呀虎儿歌",
+          "小蓝背心"
+        ],
+        "album": "呀虎儿歌合辑",
+        "durationMs": 90967,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 284,
+      "song_name": "小螺号",
+      "show_as_song_name": "",
+      "display_song_name": "小螺号",
+      "artist": "儿歌多多",
+      "artist_search": "儿歌多多",
+      "feat_artist": "",
+      "remark": "心灵火 P17 标注「小螺号（半首）」76s（桐人 P17 为 87s）。",
+      "tone": "",
+      "language": "中文",
+      "type": "民谣、儿歌",
+      "identification": "",
+      "display_version": "半首",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV18Jpw6mE82/?p=17",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-06",
+      "row_key": "小螺号"
+    },
+    "sourceId": 2106816012,
+    "sourcePath": "sources/2106816012.json",
+    "sourceUrl": "https://music.163.com/#/song?id=2106816012",
+    "selected": {
+      "id": 2106816012,
+      "name": "小螺号",
+      "artists": [
+        "儿歌多多"
+      ],
+      "album": "儿歌多多经典儿歌3",
+      "durationMs": 107649,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 33
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-284-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 75.008,
+    "sourceFirstLine": {
+      "t": 7.64,
+      "text": "小螺号滴滴滴吹"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 6.34,
+      "endSeconds": 8.68,
+      "similarity": 0.46153846153846156,
+      "recognizedText": "小龙号 弟弟吹",
+      "meanProbability": 0.479,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

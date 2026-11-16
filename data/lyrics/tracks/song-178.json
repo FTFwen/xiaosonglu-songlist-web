@@ -1,0 +1,186 @@
+{
+  "schemaVersion": 1,
+  "key": "song-178",
+  "songId": 178,
+  "songName": "Melody（半首）",
+  "rowKey": "Melody（半首）",
+  "displaySongName": "Melody（半首）",
+  "artist": "陶喆",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "合集章节标注（半首），仅演唱半首，歌名保留标注以区别完整版",
+  "audio": {
+    "url": "assets/audio/song_177.m4a?v=a07f84592d65",
+    "sha256": "a07f84592d657b1f29a32600ef54001e193dc0b8cc028631dbdc4302caab6f25"
+  },
+  "retrievedAt": "2026-11-16T04:04:39.539Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=Melody&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=Melody%20%E9%99%B6%E5%96%86&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 150520,
+        "name": "Melody",
+        "artists": [
+          "陶喆"
+        ],
+        "album": "Ultrasound 乐之路 1997-2003",
+        "durationMs": 269026,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 150563,
+        "name": "Melody",
+        "artists": [
+          "陶喆"
+        ],
+        "album": "黑色柳丁",
+        "durationMs": 269000,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1988292923,
+        "name": "melody",
+        "artists": [
+          "小陶喆"
+        ],
+        "album": "关于翻唱",
+        "durationMs": 269160,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2143230383,
+        "name": "Melody",
+        "artists": [
+          "刘大拿"
+        ],
+        "album": "Melody",
+        "durationMs": 221250,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1430000692,
+        "name": "Melody",
+        "artists": [
+          "ZIV",
+          "KIPES"
+        ],
+        "album": "倒叙爱情",
+        "durationMs": 237473,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2736303762,
+        "name": "Melody",
+        "artists": [
+          "半吨兄弟"
+        ],
+        "album": "Melody",
+        "durationMs": 280609,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3411938792,
+        "name": "Melody",
+        "artists": [
+          "Dimitri Vegas & Like Mike",
+          "Steve Aoki",
+          "Ummet Ozcan"
+        ],
+        "album": "Melody",
+        "durationMs": 223384,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 591371,
+        "name": "Melody",
+        "artists": [
+          "梶浦由記"
+        ],
+        "album": "TBSアニメーション“PandoraHearts”オリジナルサウンドトラック1",
+        "durationMs": 94066,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 178,
+      "song_name": "Melody",
+      "show_as_song_name": "",
+      "display_song_name": "Melody（半首）",
+      "artist": "陶喆",
+      "artist_search": "陶喆",
+      "feat_artist": "",
+      "remark": "合集章节标注（半首），仅演唱半首，歌名保留标注以区别完整版",
+      "tone": "",
+      "language": "中文",
+      "type": "流行",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1q9YB6xErK/?p=11",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-09-13",
+      "row_key": "Melody（半首）"
+    },
+    "sourceId": 150520,
+    "sourcePath": "sources/150520.json",
+    "sourceUrl": "https://music.163.com/#/song?id=150520",
+    "selected": {
+      "id": 150520,
+      "name": "Melody",
+      "artists": [
+        "陶喆"
+      ],
+      "album": "Ultrasound 乐之路 1997-2003",
+      "durationMs": 269026,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 64
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-178-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 195.767,
+    "sourceFirstLine": {
+      "t": 20.15,
+      "text": "终于明白你已变成回忆"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 0.0,
+      "endSeconds": 0.3,
+      "similarity": 0.0,
+      "recognizedText": "朋友",
+      "meanProbability": 0.553,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

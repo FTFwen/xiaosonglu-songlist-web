@@ -1,0 +1,184 @@
+{
+  "schemaVersion": 1,
+  "key": "song-398",
+  "songId": 398,
+  "songName": "归期",
+  "rowKey": "归期",
+  "displaySongName": "归期",
+  "artist": "钱润玉",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "动画《凡人修仙传》第二季角色插曲，钱润玉演唱，于洛萱作词作曲（百度百科）。",
+  "audio": {
+    "url": "assets/audio/song_397.m4a?v=c91c2407d5be",
+    "sha256": "c91c2407d5be565cd3a6d33a8e00c6c348b571267fa2509d4b10e073b40e8987"
+  },
+  "retrievedAt": "2026-11-16T04:08:18.436Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E5%BD%92%E6%9C%9F&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E5%BD%92%E6%9C%9F%20%E9%92%B1%E6%B6%A6%E7%8E%89&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1971054019,
+        "name": "归期",
+        "artists": [
+          "钱润玉"
+        ],
+        "album": "凡人修仙传 第二季 动画原声带",
+        "durationMs": 279878,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 3330397652,
+        "name": "归期",
+        "artists": [
+          "钱润玉"
+        ],
+        "album": "哔哩哔哩ACG杜比精选",
+        "durationMs": 279878,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 3427801510,
+        "name": "归期",
+        "artists": [
+          "唐云菲"
+        ],
+        "album": "凡人修仙传合集",
+        "durationMs": 279869,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2041486022,
+        "name": "归期",
+        "artists": [
+          "YiFi"
+        ],
+        "album": "归期",
+        "durationMs": 250000,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2758561491,
+        "name": "归期",
+        "artists": [
+          "向小羊"
+        ],
+        "album": "野草",
+        "durationMs": 192912,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1816777492,
+        "name": "归期",
+        "artists": [
+          "Lorien",
+          "国风音乐联盟"
+        ],
+        "album": "归期",
+        "durationMs": 236470,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1981028006,
+        "name": "归期 (伴奏)",
+        "artists": [
+          "钱润玉"
+        ],
+        "album": "凡人修仙传 第二季 动画原声带",
+        "durationMs": 279878,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      },
+      {
+        "id": 3460503342,
+        "name": "归期雨抄 (Live)",
+        "artists": [
+          "刘宇宁"
+        ],
+        "album": "音乐缘计划3 第2期",
+        "durationMs": 216192,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      }
+    ],
+    "workQuery": {
+      "song_id": 398,
+      "song_name": "归期",
+      "show_as_song_name": "",
+      "display_song_name": "归期",
+      "artist": "钱润玉",
+      "artist_search": "钱润玉",
+      "feat_artist": "",
+      "remark": "动画《凡人修仙传》第二季角色插曲，钱润玉演唱，于洛萱作词作曲（百度百科）。",
+      "tone": "",
+      "language": "中文",
+      "type": "影视、国风",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1LRWd6jEqp/?p=21",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-11-12",
+      "row_key": "归期"
+    },
+    "sourceId": 1971054019,
+    "sourcePath": "sources/1971054019.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1971054019",
+    "selected": {
+      "id": 1971054019,
+      "name": "归期",
+      "artists": [
+        "钱润玉"
+      ],
+      "album": "凡人修仙传 第二季 动画原声带",
+      "durationMs": 279878,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 56
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-398-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 276.587,
+    "sourceFirstLine": {
+      "t": 24.81,
+      "text": "长夜道不尽离别 又时过境迁"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 30.6,
+      "endSeconds": 34.54,
+      "similarity": 0.5,
+      "recognizedText": "不经历别又是过境",
+      "meanProbability": 0.692,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

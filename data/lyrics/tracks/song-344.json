@@ -1,0 +1,192 @@
+{
+  "schemaVersion": 1,
+  "key": "song-344",
+  "songId": 344,
+  "songName": "SaIN",
+  "rowKey": "SaIN",
+  "displaySongName": "SaIN",
+  "artist": "",
+  "language": "日文",
+  "derivative": false,
+  "edition": "",
+  "remark": "合集分P只给出曲名，原唱/出处未核实，标记待复核。",
+  "audio": {
+    "url": "assets/audio/song_343.m4a?v=3b88d7594175",
+    "sha256": "3b88d7594175dc1103a774f472408563733373cb0500ce560cf013c10c5ea2db"
+  },
+  "retrievedAt": "2026-11-16T04:13:26.885Z",
+  "match": {
+    "status": "candidate_review_required",
+    "queries": [
+      "https://music.163.com/api/search/get?s=SaIN&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 443967301,
+        "name": "SaIN",
+        "artists": [
+          "JUSF周存",
+          "洛天依Official",
+          "言和"
+        ],
+        "album": "SaIN",
+        "durationMs": 181919,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1418280812,
+        "name": "SaIN",
+        "artists": [
+          "粲然"
+        ],
+        "album": "拖更的翻唱",
+        "durationMs": 181603,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1443777454,
+        "name": "SaIN",
+        "artists": [
+          "こいずみ桃黎",
+          "艾可",
+          "诗岸"
+        ],
+        "album": "桃黎的翻调",
+        "durationMs": 182544,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1938303933,
+        "name": "SaIN",
+        "artists": [
+          "奈露",
+          "ACE虚拟歌姬",
+          "雀河-AI虚拟歌手"
+        ],
+        "album": "恋恋绵绵贪得无厌",
+        "durationMs": 181890,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1983649575,
+        "name": "Sain",
+        "artists": [
+          "Gangaa"
+        ],
+        "album": "Sain",
+        "durationMs": 184398,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2043622003,
+        "name": "SaIN",
+        "artists": [
+          "MyApril15"
+        ],
+        "album": "虚拟歌姬相关的翻唱",
+        "durationMs": 182793,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2645848284,
+        "name": "Sain",
+        "artists": [
+          "Marius Nitzbon"
+        ],
+        "album": "Sain (Live at Tonstudio Tessmar)",
+        "durationMs": 103647,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 451352041,
+        "name": "SaIN(星尘·星砂)(翻自 洛天依·言和)",
+        "artists": [
+          "不安定",
+          "星尘",
+          "星砂"
+        ],
+        "album": "单曲翻唱 by.不安定",
+        "durationMs": 181841,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      }
+    ],
+    "workQuery": {
+      "song_id": 344,
+      "song_name": "SaIN",
+      "show_as_song_name": "",
+      "display_song_name": "SaIN",
+      "artist": "",
+      "artist_search": "",
+      "feat_artist": "",
+      "remark": "合集分P只给出曲名，原唱/出处未核实，标记待复核。",
+      "tone": "",
+      "language": "日文",
+      "type": "待复核",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1naxj62Epw/?p=14",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-27",
+      "row_key": "SaIN"
+    },
+    "sourceId": 443967301,
+    "sourcePath": "sources/443967301.json",
+    "sourceUrl": "https://music.163.com/#/song?id=443967301",
+    "selected": {
+      "id": 443967301,
+      "name": "SaIN",
+      "artists": [
+        "JUSF周存",
+        "洛天依Official",
+        "言和"
+      ],
+      "album": "SaIN",
+      "durationMs": 181919,
+      "titleScore": 1,
+      "artistMatch": false,
+      "score": 0.8
+    },
+    "timedLineCount": 52
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-344-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 181.141,
+    "sourceFirstLine": {
+      "t": 2.39,
+      "text": "作为仍站立的人"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 34.06,
+      "endSeconds": 34.18,
+      "similarity": 0.25,
+      "recognizedText": "的",
+      "meanProbability": 0.225,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "ja",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

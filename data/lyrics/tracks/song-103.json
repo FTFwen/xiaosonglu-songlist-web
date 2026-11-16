@@ -1,0 +1,161 @@
+{
+  "schemaVersion": 1,
+  "key": "song-103",
+  "songId": 103,
+  "songName": "阿拉斯加海湾",
+  "displaySongName": "阿拉斯加海湾",
+  "artist": "菲道尔",
+  "language": "中文",
+  "derivative": false,
+  "audio": {
+    "url": "assets/audio/song_104.m4a?v=f85be13a4848",
+    "sha256": "f85be13a4848abc3fb56f69cfa65705bf6d9ffa4a5c69f4f30ac1ca5184e3baa"
+  },
+  "retrievedAt": "2026-11-16T03:58:27.865Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E9%98%BF%E6%8B%89%E6%96%AF%E5%8A%A0%E6%B5%B7%E6%B9%BE&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1441758913,
+        "name": "阿拉斯加海湾",
+        "artists": [
+          "菲道尔"
+        ],
+        "album": "A Letter.",
+        "durationMs": 245991,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1500569811,
+        "name": "阿拉斯加海湾",
+        "artists": [
+          "蓝心羽"
+        ],
+        "album": "阿拉斯加海湾",
+        "durationMs": 241043,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1501661847,
+        "name": "阿拉斯加海湾",
+        "artists": [
+          "刘可以"
+        ],
+        "album": "阿拉斯加海湾",
+        "durationMs": 261461,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1835526945,
+        "name": "阿拉斯加海湾",
+        "artists": [
+          "乐叔网易现场"
+        ],
+        "album": "乐叔翻唱集",
+        "durationMs": 243754,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1820200167,
+        "name": "阿拉斯加海湾",
+        "artists": [
+          "顾清瑶"
+        ],
+        "album": "阿拉斯加海湾",
+        "durationMs": 237027,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3335788314,
+        "name": "阿拉斯加海湾",
+        "artists": [
+          "蔡恩雨 PRISCILLA ABBY"
+        ],
+        "album": "阿拉斯加海湾",
+        "durationMs": 237840,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1809780771,
+        "name": "阿拉斯加海湾",
+        "artists": [
+          "凌小奈"
+        ],
+        "album": "阿拉斯加海湾（深情版）",
+        "durationMs": 237113,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1811578852,
+        "name": "阿拉斯加海湾",
+        "artists": [
+          "蔡恩雨"
+        ],
+        "album": "阿拉斯加海湾",
+        "durationMs": 237840,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "sourceId": 1441758913,
+    "sourcePath": "sources/1441758913.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1441758913",
+    "selected": {
+      "id": 1441758913,
+      "name": "阿拉斯加海湾",
+      "artists": [
+        "菲道尔"
+      ],
+      "album": "A Letter.",
+      "durationMs": 245991,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 40
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-103-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 237.981,
+    "sourceFirstLine": {
+      "t": 20.5,
+      "text": "上天啊"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 23.9,
+      "endSeconds": 25.3,
+      "similarity": 0.0,
+      "recognizedText": "作",
+      "meanProbability": 0.0,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  },
+  "rowKey": "阿拉斯加海湾",
+  "edition": "",
+  "remark": "切片《上天啊 你难道不知道我很爱她【小松绿Viridis】阿拉斯加海湾》（BV1JX4y6fEpy，小冬青Viridis，pub 14:59，3:58）+ 弹幕 00:48-00:52「我去还是阿拉斯加海湾」「？还有阿拉斯加海湾」「dnys 阿拉斯加海湾来了」+ 00:52-00:54 全场哭刷屏（羽啾CP梗）。菲道尔（Firdhaus）2020 原唱，菲道尔/李康宁作词、菲道尔作曲。"
+}

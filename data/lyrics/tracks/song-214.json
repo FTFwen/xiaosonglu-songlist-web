@@ -1,0 +1,214 @@
+{
+  "schemaVersion": 1,
+  "key": "song-214",
+  "songId": 214,
+  "songName": "打上花火",
+  "rowKey": "打上花火",
+  "displaySongName": "打上花火",
+  "artist": "Daoko / 米津玄師",
+  "language": "日文",
+  "derivative": false,
+  "edition": "",
+  "remark": "UP 桐人今天睡大觉《2026.09.23练歌歌切合集》P5；《烟花》主题曲",
+  "audio": {
+    "url": "assets/audio/song_213.m4a?v=ab45bf06f9b8",
+    "sha256": "ab45bf06f9b89d419305fdec06842518afbf16f10117af9c6e717e60691072bd"
+  },
+  "retrievedAt": "2026-11-16T04:05:02.426Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E6%89%93%E4%B8%8A%E8%8A%B1%E7%81%AB&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E6%89%93%E4%B8%8A%E8%8A%B1%E7%81%AB%20Daoko%20%2F%20%E7%B1%B3%E6%B4%A5%E7%8E%84%E5%B8%AB&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 496869422,
+        "name": "打上花火",
+        "artists": [
+          "Daoko",
+          "米津玄師"
+        ],
+        "album": "打上花火",
+        "durationMs": 289334,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 512358200,
+        "name": "打上花火",
+        "artists": [
+          "米津玄師"
+        ],
+        "album": "BOOTLEG",
+        "durationMs": 259459,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1842318007,
+        "name": "打上花火",
+        "artists": [
+          "昆玉",
+          "潘新越"
+        ],
+        "album": "一些翻唱作品",
+        "durationMs": 288931,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2623512956,
+        "name": "打上花火",
+        "artists": [
+          "AI德尔塔",
+          "隼雷"
+        ],
+        "album": "狂热蓝调德尔塔AI翻唱合集",
+        "durationMs": 291271,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1332889917,
+        "name": "打上花火 (DAOKO SOLO ver.)",
+        "artists": [
+          "Daoko"
+        ],
+        "album": "私的旅行",
+        "durationMs": 291266,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      },
+      {
+        "id": 1451778670,
+        "name": "打上花火（钢琴版）",
+        "artists": [
+          "柳轻颂"
+        ],
+        "album": "Sunflower",
+        "durationMs": 284785,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 1428579206,
+        "name": "打上花火(中文版)",
+        "artists": [
+          "青潋",
+          "阿空"
+        ],
+        "album": "晴空万里",
+        "durationMs": 283617,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 1346076194,
+        "name": "打上花火（编曲版）",
+        "artists": [
+          "文劲松"
+        ],
+        "album": "打上花火",
+        "durationMs": 201250,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      }
+    ],
+    "workQuery": {
+      "song_id": 214,
+      "song_name": "打上花火",
+      "show_as_song_name": "",
+      "display_song_name": "打上花火",
+      "artist": "Daoko / 米津玄師",
+      "artist_search": "Daoko 米津玄師 打上花火",
+      "feat_artist": "",
+      "remark": "UP 桐人今天睡大觉《2026.09.23练歌歌切合集》P5；《烟花》主题曲",
+      "tone": "",
+      "language": "日文",
+      "type": "J-Pop",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1ouhW6GEoD/?p=5",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-09-23",
+      "row_key": "打上花火"
+    },
+    "sourceId": 496869422,
+    "sourcePath": "sources/496869422.json",
+    "sourceUrl": "https://music.163.com/#/song?id=496869422",
+    "selected": {
+      "id": 496869422,
+      "name": "打上花火",
+      "artists": [
+        "Daoko",
+        "米津玄師"
+      ],
+      "album": "打上花火",
+      "durationMs": 289334,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 46
+  },
+  "alignment": {
+    "status": "spotcheck_review_required",
+    "evidencePath": "evidence/song-214-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 273.717,
+    "sourceFirstLine": {
+      "t": 19.64,
+      "text": "あの日見渡した渚を"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 19.1,
+      "endSeconds": 22.24,
+      "similarity": 0.8,
+      "recognizedText": "あの日見渡し",
+      "meanProbability": 0.571,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": -0.54,
+    "checks": [
+      {
+        "sourceLine": {
+          "t": 137.17,
+          "text": "はっと息を飲めば"
+        },
+        "evidencePath": "evidence/song-214-check0.json",
+        "candidate": null,
+        "residualSeconds": null
+      },
+      {
+        "sourceLine": {
+          "t": 221.94,
+          "text": "この夜が 続いて欲しかった"
+        },
+        "evidencePath": "evidence/song-214-check1.json",
+        "candidate": {
+          "audioSeconds": 221.56,
+          "endSeconds": 225.68,
+          "similarity": 0.56,
+          "recognizedText": "この世のかず ずいて 走かった",
+          "meanProbability": 0.436,
+          "tokenPrefixOnly": false
+        },
+        "residualSeconds": 0.16
+      }
+    ],
+    "asrLanguage": "ja",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

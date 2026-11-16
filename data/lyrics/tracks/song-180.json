@@ -1,0 +1,163 @@
+{
+  "schemaVersion": 1,
+  "key": "song-180",
+  "songId": 180,
+  "songName": "年轮",
+  "displaySongName": "年轮",
+  "artist": "张碧晨",
+  "language": "中文",
+  "derivative": false,
+  "audio": {
+    "url": "assets/audio/song_179.m4a?v=837f8af16ce7",
+    "sha256": "837f8af16ce7095102bc2a0eabbe32ad577bbf3c0f9288fcc5c70c3a68ad1939"
+  },
+  "retrievedAt": "2026-11-16T03:58:46.475Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E5%B9%B4%E8%BD%AE&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 32619064,
+        "name": "年轮",
+        "artists": [
+          "张碧晨"
+        ],
+        "album": "花千骨 电视原声带",
+        "durationMs": 274504,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1304922103,
+        "name": "年轮",
+        "artists": [
+          "张碧晨",
+          "周芷莹"
+        ],
+        "album": "中国新声代 第五季 第五期",
+        "durationMs": 113000,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 32897777,
+        "name": "年轮",
+        "artists": [
+          "汪苏泷"
+        ],
+        "album": "花千骨 电视原声带",
+        "durationMs": 245822,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3346821799,
+        "name": "年轮",
+        "artists": [
+          "DJ大大怪"
+        ],
+        "album": "年轮",
+        "durationMs": 278050,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3348123746,
+        "name": "年轮",
+        "artists": [
+          "小雪"
+        ],
+        "album": "年轮",
+        "durationMs": 274530,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1830448879,
+        "name": "年轮",
+        "artists": [
+          "不是花火呀"
+        ],
+        "album": "年轮",
+        "durationMs": 270857,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3423501800,
+        "name": "年轮",
+        "artists": [
+          "阿杰",
+          "krs"
+        ],
+        "album": "年轮",
+        "durationMs": 120004,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3431699233,
+        "name": "年轮",
+        "artists": [
+          "宋子西"
+        ],
+        "album": "年轮",
+        "durationMs": 191724,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "sourceId": 32619064,
+    "sourcePath": "sources/32619064.json",
+    "sourceUrl": "https://music.163.com/#/song?id=32619064",
+    "selected": {
+      "id": 32619064,
+      "name": "年轮",
+      "artists": [
+        "张碧晨"
+      ],
+      "album": "花千骨 电视原声带",
+      "durationMs": 274504,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 67
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-180-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 277.717,
+    "sourceFirstLine": {
+      "t": 18.739,
+      "text": "圆圈勾勒成指纹"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 22.4,
+      "endSeconds": 23.8,
+      "similarity": 0.0,
+      "recognizedText": "阿",
+      "meanProbability": 0.013,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  },
+  "rowKey": "年轮",
+  "edition": "",
+  "remark": "电视剧《花千骨》插曲，故加影视标签"
+}

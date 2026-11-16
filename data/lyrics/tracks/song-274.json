@@ -1,0 +1,187 @@
+{
+  "schemaVersion": 1,
+  "key": "song-274",
+  "songId": 274,
+  "songName": "双生花",
+  "rowKey": "双生花",
+  "displaySongName": "双生花",
+  "artist": "SNH48",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "",
+  "audio": {
+    "url": "assets/audio/song_273.m4a?v=fd8bc0a2748b",
+    "sha256": "fd8bc0a2748b7eb3ea2c5bf33acab20611c038c9d4b03635b82ffd2e631ea845"
+  },
+  "retrievedAt": "2026-11-16T04:06:04.134Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E5%8F%8C%E7%94%9F%E8%8A%B1&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E5%8F%8C%E7%94%9F%E8%8A%B1%20SNH48&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 525239559,
+        "name": "双生花",
+        "artists": [
+          "SNH48"
+        ],
+        "album": "命运的X号UNIT版",
+        "durationMs": 223898,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1342571625,
+        "name": "双生花",
+        "artists": [
+          "SNH48苏杉杉",
+          "刘力菲"
+        ],
+        "album": "SNH48 GROUP第五届年度金曲大赏演唱会LIVE版(中)",
+        "durationMs": 174720,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 3417923510,
+        "name": "双生花",
+        "artists": [
+          "一只白羊"
+        ],
+        "album": "双生花",
+        "durationMs": 185145,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2027827860,
+        "name": "双生花",
+        "artists": [
+          "Youngior"
+        ],
+        "album": "Geminate flower",
+        "durationMs": 208525,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1843286516,
+        "name": "双生花",
+        "artists": [
+          "王允宸",
+          "蒋芸"
+        ],
+        "album": "浮光",
+        "durationMs": 153502,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3419397744,
+        "name": "双生花",
+        "artists": [
+          "花花一点都不甜呐"
+        ],
+        "album": "双生花",
+        "durationMs": 185145,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2739279033,
+        "name": "双生花",
+        "artists": [
+          "千合公主万万岁"
+        ],
+        "album": "双生花",
+        "durationMs": 214000,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2679500299,
+        "name": "双生花",
+        "artists": [
+          "Happer",
+          "Rezey",
+          "无面小生"
+        ],
+        "album": "双生花",
+        "durationMs": 197250,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 274,
+      "song_name": "双生花",
+      "show_as_song_name": "",
+      "display_song_name": "双生花",
+      "artist": "SNH48",
+      "artist_search": "SNH48",
+      "feat_artist": "",
+      "remark": "",
+      "tone": "",
+      "language": "中文",
+      "type": "SNH48、偶像",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV18Jpw6mE82/?p=7",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-06",
+      "row_key": "双生花"
+    },
+    "sourceId": 525239559,
+    "sourcePath": "sources/525239559.json",
+    "sourceUrl": "https://music.163.com/#/song?id=525239559",
+    "selected": {
+      "id": 525239559,
+      "name": "双生花",
+      "artists": [
+        "SNH48"
+      ],
+      "album": "命运的X号UNIT版",
+      "durationMs": 223898,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 71
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-274-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 223.403,
+    "sourceFirstLine": {
+      "t": 6.87,
+      "text": "啊其实还好吧"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 0.0,
+      "endSeconds": 1.78,
+      "similarity": 0.0,
+      "recognizedText": "哇",
+      "meanProbability": 0.04,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

@@ -1,0 +1,226 @@
+{
+  "platform": "netease",
+  "id": 2148397627,
+  "url": "https://music.163.com/#/song?id=2148397627",
+  "apiUrl": "https://music.163.com/api/song/lyric?id=2148397627&lv=1&kv=1&tv=-1",
+  "retrievedAt": "2026-11-16T04:05:58.153Z",
+  "track": {
+    "id": 2148397627,
+    "name": "Grown-up's Paradise",
+    "artists": [
+      "Mili",
+      "塞壬唱片-MSR"
+    ],
+    "album": "Grown-up's Paradise",
+    "durationMs": 241680,
+    "titleScore": 1,
+    "artistMatch": true,
+    "score": 1
+  },
+  "lrc": "[00:00.000] 作词 : Cassie Wei\n[00:01.000] 作曲 : Yamato Kasai/Cassie Wei\n[00:02.000] 编曲 : Yamato Kasai/三友行人/吉田翔人\n[00:03.000] 制作人 : Mill/塞壬唱片-MSR\n[00:09.708] Do you recall?\n[00:12.516] We couldn't wait to become adults\n[00:16.238] We dreamed\n[00:17.632] We grew\n[00:18.783] And now we are stuck\n[00:21.484] In a grown-up's hellish paradise\n[00:27.500] I'm down on my knees, carrying our sins\n[00:30.072] In order to be heard\n[00:32.436] In order to be heard\n[00:34.948] Must I deliver loud and clear in sound waves of violence?\n[00:41.913]\n[00:42.600] Plastic mini trucks, dollies\n[00:46.452] We were so easily satisfied and happy\n[00:52.441] Even if I break your favourite teddy bear\n[00:57.641] A \"sorry\" could fix everything\n[01:02.547]\n[01:03.956] When did it change? When did we forget?\n[01:08.925] Why is it now so hard to forgive?\n[01:13.923] Do we advance, never stopping our steps\n[01:18.876] Because we are scared to look back on what we did?\n[01:24.017]\n[01:24.562] Do you recall?\n[01:27.418] Back when a smile was more than enough\n[01:32.450] To make us friends\n[01:34.591] Do you recall?\n[01:37.463] We couldn't wait to become adults\n[01:41.151] We dreamed\n[01:42.390] We grew\n[01:43.780] And now we are stuck\n[01:46.358] In a grown-up's hellish paradise\n[01:52.516] I'm down on my knees, carrying our sins\n[01:55.107] Pretending you're still here\n[01:57.497] Pretending you're still here\n[01:59.953] As my confidence disappeared, I clung onto your silence\n[02:07.273]\n[02:10.102] Even if tricycles become battleships, finger guns become real\n[02:18.789] We are still (Lost)\n[02:21.253]\n[02:22.088] Where's our tomorrow?\n[02:26.884] Where does our future go?\n[02:31.487] Does our hope have to be sown upon somebody's sorrow?\n[02:43.995]\n[02:46.429] Truth is, I know as long as we live\n[02:51.466] Our ideals dye rivers scarlet\n[02:56.408] Firing shots in the name of justice\n[03:01.429] Declaring love we can only reminisce\n[03:06.387] As cruelty becomes heroic\n[03:11.397] I'm on your ark\n[03:13.669] Answer me, my sinking ship\n[03:16.842]\n[03:16.985] Where's our tomorrow?\n[03:21.910] Where does our future go?\n[03:26.463] Does our hope have to be sown upon somebody's sorrow?\n",
+  "translationLrc": "[by:烤鱼_YuXian]\n[00:09.708]还记得吗？\n[00:12.516]我们迫不及待地想要长大成人\n[00:16.238]我们做梦\n[00:17.632]我们成长\n[00:18.783]直到现在，我们束手无策\n[00:21.484]被困在大人们的那个如地狱一般的乐园里\n[00:27.500]我跪在地上，身负我们的罪\n[00:30.072]若想传达我的声音\n[00:32.436]若想传达我的声音\n[00:34.948]难道需要把那个宏亮清晰的一字一句系在暴力的音波上吗？\n[00:41.913]\n[00:42.600]塑料迷你卡车，小娃娃\n[00:46.452]过去的我们如此轻易开心满足\n[00:52.441]就算我玩坏你最喜欢的那只泰迪熊\n[00:57.641]一句“对不起”足以修复一切\n[01:02.547]\n[01:03.956]什么时候开始变了？什么时候开始忘记了？\n[01:08.925]为何我们不再原谅他人？\n[01:13.923]我们前进，不停息步伐\n[01:18.876]是否因为我们畏惧回顾我们的所作所为？\n[01:24.017]\n[01:24.562]还记得吗？\n[01:27.418]曾经，一个微笑便远远足够\n[01:32.450]让我们成为好朋友\n[01:34.591]还记得吗？\n[01:37.463]我们迫不及待地想要长大成人\n[01:41.151]我们做梦\n[01:42.390]我们成长\n[01:43.780]直到现在，我们束手无策\n[01:46.358]被困在大人们的那个如地狱一般的乐园里\n[01:52.516]我跪在地上，身负我们的罪\n[01:55.107]假装你还在身边\n[01:57.497]假装你还在身边\n[01:59.953]当我的自信消失不见之时，我紧抓你的寂静\n[02:07.273]\n[02:10.102]就算三轮车变成战舰，手指枪变成真品\n[02:18.789]我们还一如既往（迷失方向）\n[02:21.253]\n[02:22.088]我们的明日在哪里？\n[02:26.884]我们的未来去往何处？\n[02:31.487]我们的希望是否真的需要被播种在谁的悲伤之上？\n[02:43.995]\n[02:46.429]其实我深知，只要我们继续存活\n[02:51.466]我们的理想将染红河川\n[02:56.408]以正义之名发射炮弹\n[03:01.429]宣告那份只剩追忆的爱\n[03:06.387]当凶残也变得英勇\n[03:11.397]我乘在你的方舟之上\n[03:13.669]下沉的船儿，回答我\n[03:16.842]\n[03:16.985]我们的明日在哪里？\n[03:21.910]我们的未来去往何处？\n[03:26.463]我们的希望是否真的需要被播种在谁的悲伤之上？\n",
+  "romanizationLrc": "",
+  "instrumental": false,
+  "lines": [
+    {
+      "t": 0,
+      "text": "作词 : Cassie Wei"
+    },
+    {
+      "t": 1,
+      "text": "作曲 : Yamato Kasai/Cassie Wei"
+    },
+    {
+      "t": 2,
+      "text": "编曲 : Yamato Kasai/三友行人/吉田翔人"
+    },
+    {
+      "t": 3,
+      "text": "制作人 : Mill/塞壬唱片-MSR"
+    },
+    {
+      "t": 9.708,
+      "text": "Do you recall?"
+    },
+    {
+      "t": 12.516,
+      "text": "We couldn't wait to become adults"
+    },
+    {
+      "t": 16.238,
+      "text": "We dreamed"
+    },
+    {
+      "t": 17.632,
+      "text": "We grew"
+    },
+    {
+      "t": 18.783,
+      "text": "And now we are stuck"
+    },
+    {
+      "t": 21.484,
+      "text": "In a grown-up's hellish paradise"
+    },
+    {
+      "t": 27.5,
+      "text": "I'm down on my knees, carrying our sins"
+    },
+    {
+      "t": 30.072,
+      "text": "In order to be heard"
+    },
+    {
+      "t": 32.436,
+      "text": "In order to be heard"
+    },
+    {
+      "t": 34.948,
+      "text": "Must I deliver loud and clear in sound waves of violence?"
+    },
+    {
+      "t": 42.6,
+      "text": "Plastic mini trucks, dollies"
+    },
+    {
+      "t": 46.452,
+      "text": "We were so easily satisfied and happy"
+    },
+    {
+      "t": 52.441,
+      "text": "Even if I break your favourite teddy bear"
+    },
+    {
+      "t": 57.641,
+      "text": "A \"sorry\" could fix everything"
+    },
+    {
+      "t": 63.956,
+      "text": "When did it change? When did we forget?"
+    },
+    {
+      "t": 68.925,
+      "text": "Why is it now so hard to forgive?"
+    },
+    {
+      "t": 73.923,
+      "text": "Do we advance, never stopping our steps"
+    },
+    {
+      "t": 78.876,
+      "text": "Because we are scared to look back on what we did?"
+    },
+    {
+      "t": 84.562,
+      "text": "Do you recall?"
+    },
+    {
+      "t": 87.418,
+      "text": "Back when a smile was more than enough"
+    },
+    {
+      "t": 92.45,
+      "text": "To make us friends"
+    },
+    {
+      "t": 94.591,
+      "text": "Do you recall?"
+    },
+    {
+      "t": 97.463,
+      "text": "We couldn't wait to become adults"
+    },
+    {
+      "t": 101.151,
+      "text": "We dreamed"
+    },
+    {
+      "t": 102.39,
+      "text": "We grew"
+    },
+    {
+      "t": 103.78,
+      "text": "And now we are stuck"
+    },
+    {
+      "t": 106.358,
+      "text": "In a grown-up's hellish paradise"
+    },
+    {
+      "t": 112.516,
+      "text": "I'm down on my knees, carrying our sins"
+    },
+    {
+      "t": 115.107,
+      "text": "Pretending you're still here"
+    },
+    {
+      "t": 117.497,
+      "text": "Pretending you're still here"
+    },
+    {
+      "t": 119.953,
+      "text": "As my confidence disappeared, I clung onto your silence"
+    },
+    {
+      "t": 130.102,
+      "text": "Even if tricycles become battleships, finger guns become real"
+    },
+    {
+      "t": 138.789,
+      "text": "We are still (Lost)"
+    },
+    {
+      "t": 142.088,
+      "text": "Where's our tomorrow?"
+    },
+    {
+      "t": 146.884,
+      "text": "Where does our future go?"
+    },
+    {
+      "t": 151.487,
+      "text": "Does our hope have to be sown upon somebody's sorrow?"
+    },
+    {
+      "t": 166.429,
+      "text": "Truth is, I know as long as we live"
+    },
+    {
+      "t": 171.466,
+      "text": "Our ideals dye rivers scarlet"
+    },
+    {
+      "t": 176.408,
+      "text": "Firing shots in the name of justice"
+    },
+    {
+      "t": 181.429,
+      "text": "Declaring love we can only reminisce"
+    },
+    {
+      "t": 186.387,
+      "text": "As cruelty becomes heroic"
+    },
+    {
+      "t": 191.397,
+      "text": "I'm on your ark"
+    },
+    {
+      "t": 193.669,
+      "text": "Answer me, my sinking ship"
+    },
+    {
+      "t": 196.985,
+      "text": "Where's our tomorrow?"
+    },
+    {
+      "t": 201.91,
+      "text": "Where does our future go?"
+    },
+    {
+      "t": 206.463,
+      "text": "Does our hope have to be sown upon somebody's sorrow?"
+    }
+  ]
+}

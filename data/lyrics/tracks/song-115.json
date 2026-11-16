@@ -1,0 +1,180 @@
+{
+  "schemaVersion": 1,
+  "key": "song-115",
+  "songId": 115,
+  "songName": "是风动",
+  "displaySongName": "是风动",
+  "artist": "银临 / 河图",
+  "language": "中文",
+  "derivative": false,
+  "audio": {
+    "url": "assets/audio/song_110.m4a?v=b2cfe0619080",
+    "sha256": "b2cfe06190802fe153d7601a2b0509ec8b2d495c373a1478e116dbf21e81dc37"
+  },
+  "retrievedAt": "2026-11-16T03:58:27.075Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E6%98%AF%E9%A3%8E%E5%8A%A8&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 504686859,
+        "name": "是风动",
+        "artists": [
+          "银临",
+          "河图"
+        ],
+        "album": "蚍蜉渡海",
+        "durationMs": 288314,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1294152571,
+        "name": "是风动",
+        "artists": [
+          "西瓜JUN",
+          "萧忆情Alex"
+        ],
+        "album": "是风动",
+        "durationMs": 288148,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1860527494,
+        "name": "是风动",
+        "artists": [
+          "王敬轩（妖扬）"
+        ],
+        "album": "是风动",
+        "durationMs": 267500,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1301883744,
+        "name": "是风动",
+        "artists": [
+          "司南",
+          "阿离_Alley"
+        ],
+        "album": "司南·黑历史之古风cover",
+        "durationMs": 293207,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1305445315,
+        "name": "是风动",
+        "artists": [
+          "池年",
+          "墨橙"
+        ],
+        "album": "是风动",
+        "durationMs": 288417,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1321801923,
+        "name": "是风动",
+        "artists": [
+          "花千诚"
+        ],
+        "album": "是风动",
+        "durationMs": 293207,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1936779309,
+        "name": "是风动",
+        "artists": [
+          "甜心积木屋",
+          "野咕",
+          "笙烟呀",
+          "漱石Soren",
+          "弹唱小饺子",
+          "唱歌废物",
+          "千默",
+          "千书",
+          "Nine.",
+          "舒遥",
+          "何小椰",
+          "鹤川",
+          "大家D朋友",
+          "林秣祤"
+        ],
+        "album": "是风动（13人合唱版）",
+        "durationMs": 287618,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1381835758,
+        "name": "是风动",
+        "artists": [
+          "南风ZJN",
+          "落樱风"
+        ],
+        "album": "【忘羡】对唱版《是风动》",
+        "durationMs": 288016,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "sourceId": 504686859,
+    "sourcePath": "sources/504686859.json",
+    "sourceUrl": "https://music.163.com/#/song?id=504686859",
+    "selected": {
+      "id": 504686859,
+      "name": "是风动",
+      "artists": [
+        "银临",
+        "河图"
+      ],
+      "album": "蚍蜉渡海",
+      "durationMs": 288314,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 36
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-115-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 288.415,
+    "sourceFirstLine": {
+      "t": 5,
+      "text": "电吉他 : Tanjoy"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 11.24,
+      "endSeconds": 11.96,
+      "similarity": 0.0,
+      "recognizedText": "我",
+      "meanProbability": 0.018,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  },
+  "rowKey": "是风动",
+  "edition": "",
+  "remark": "2026-08-29 心灵火Flame合集补录：【小松绿Viridis】20260829 歌切 分P8（04:49）。百度百科核实：银临×河图 2017 古风单曲（银临作曲/择荇填词/灰原穷编曲，收录《蚍蜉渡海》）。"
+}

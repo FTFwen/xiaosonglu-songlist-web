@@ -1,0 +1,24 @@
+{
+  "platform": "netease",
+  "id": 2160050416,
+  "url": "https://music.163.com/#/song?id=2160050416",
+  "apiUrl": "https://music.163.com/api/song/lyric?id=2160050416&lv=1&kv=1&tv=-1",
+  "retrievedAt": "2026-11-16T04:05:33.068Z",
+  "track": {
+    "id": 2160050416,
+    "name": "情深深雨蒙蒙",
+    "artists": [
+      "夏歆依"
+    ],
+    "album": "",
+    "durationMs": 278047,
+    "titleScore": 1,
+    "artistMatch": true,
+    "score": 1
+  },
+  "lrc": "",
+  "translationLrc": "",
+  "romanizationLrc": "",
+  "instrumental": false,
+  "lines": []
+}

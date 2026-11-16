@@ -1,0 +1,163 @@
+{
+  "schemaVersion": 1,
+  "key": "song-137",
+  "songId": 137,
+  "songName": "花の塔",
+  "displaySongName": "花の塔",
+  "artist": "さユり",
+  "language": "日文",
+  "derivative": false,
+  "audio": {
+    "url": "assets/audio/song_136.m4a?v=adf5c41747c3",
+    "sha256": "adf5c41747c3ebca0926a7e3bbab19c86cc4cbd527b8c62d409c04c1e305bd19"
+  },
+  "retrievedAt": "2026-11-16T03:58:33.235Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E8%8A%B1%E3%81%AE%E5%A1%94&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1956534872,
+        "name": "花の塔",
+        "artists": [
+          "さユり"
+        ],
+        "album": "花の塔",
+        "durationMs": 275876,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1968782163,
+        "name": "花の塔",
+        "artists": [
+          "さユり"
+        ],
+        "album": "酸欠少女",
+        "durationMs": 275876,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 3362306938,
+        "name": "花の塔",
+        "artists": [
+          "酸欠少女"
+        ],
+        "album": "",
+        "durationMs": 275960,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2616899157,
+        "name": "花の塔",
+        "artists": [
+          "Kotoha",
+          "Hanon"
+        ],
+        "album": "花の塔",
+        "durationMs": 278204,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1986726521,
+        "name": "「花の塔」( TV リコリス・リコイル ED Instrumental )",
+        "artists": [
+          "ねねこ"
+        ],
+        "album": "リコリス・リコイル",
+        "durationMs": 275043,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 1980994758,
+        "name": "花の塔 (feat. 小春六花) [Cover]",
+        "artists": [
+          "タカオカミズキ",
+          "小春六花"
+        ],
+        "album": "花の塔 (feat. 小春六花) [Cover]",
+        "durationMs": 275615,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 2685828090,
+        "name": "花の塔 (cover)",
+        "artists": [
+          "VESPERBELL カスカ"
+        ],
+        "album": "",
+        "durationMs": 277315,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 1992729668,
+        "name": "花の塔 (花之塔) (TV动画《莉可丽丝》片尾曲)（翻自 酸欠少女さユり）",
+        "artists": [
+          "Hyan紫炫"
+        ],
+        "album": "花の塔 (花之塔) (TV动画《莉可丽丝》片尾曲)（翻自 酸欠少女さユり）",
+        "durationMs": 101000,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      }
+    ],
+    "sourceId": 1956534872,
+    "sourcePath": "sources/1956534872.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1956534872",
+    "selected": {
+      "id": 1956534872,
+      "name": "花の塔",
+      "artists": [
+        "さユり"
+      ],
+      "album": "花の塔",
+      "durationMs": 275876,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 36
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-137-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 206.421,
+    "sourceFirstLine": {
+      "t": 13.996,
+      "text": "君が持ってきた漫画"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 24.92,
+      "endSeconds": 26.2,
+      "similarity": 0.4,
+      "recognizedText": "ってしまった",
+      "meanProbability": 0.974,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "ja",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  },
+  "rowKey": "花の塔",
+  "edition": "",
+  "remark": "2026-09-03「也许康复的随便唱唱」21点场；歌切合集【桐人今天睡大觉】【小松绿Viridis】随便唱唱的歌回 歌切合集 2026.09.03 分P18（04:42）。さユり《Lycoris Recoil》ED。"
+}

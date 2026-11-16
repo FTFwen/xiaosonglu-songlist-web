@@ -1,0 +1,170 @@
+{
+  "schemaVersion": 1,
+  "key": "song-44",
+  "songId": 44,
+  "songName": "锦鲤抄",
+  "displaySongName": "锦鲤抄",
+  "artist": "银临 / 云之泣",
+  "language": "中文",
+  "derivative": false,
+  "audio": {
+    "url": "assets/audio/song_27.m4a?v=9a19053c7e67",
+    "sha256": "9a19053c7e673cdecfb98f93dc630a5e01dc3994878f0f7a2f3bdfa39f052209"
+  },
+  "retrievedAt": "2026-11-16T03:58:20.938Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E9%94%A6%E9%B2%A4%E6%8A%84&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 28188434,
+        "name": "锦鲤抄",
+        "artists": [
+          "银临",
+          "云之泣"
+        ],
+        "album": "腐草为萤",
+        "durationMs": 245120,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2155537406,
+        "name": "锦鲤抄",
+        "artists": [
+          "杨花三三",
+          "陈一斤"
+        ],
+        "album": "三木森森",
+        "durationMs": 245057,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2078405794,
+        "name": "锦鲤抄",
+        "artists": [
+          "-Jason嘉-",
+          "吾恩"
+        ],
+        "album": "歌手合作辑",
+        "durationMs": 243392,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3321790841,
+        "name": "锦鲤抄",
+        "artists": [
+          "清茗微漾°",
+          "稚鱼Yiyuu"
+        ],
+        "album": "萌鱼炒鲤鱼",
+        "durationMs": 244879,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2758208583,
+        "name": "锦鲤抄",
+        "artists": [
+          "蔡翊昇",
+          "橙翼",
+          "陈鹏杰",
+          "流浪的蛙蛙"
+        ],
+        "album": "锦鲤抄",
+        "durationMs": 241475,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2616258092,
+        "name": "锦鲤抄",
+        "artists": [
+          "铃"
+        ],
+        "album": "旧时堂前雪",
+        "durationMs": 245047,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2681905484,
+        "name": "锦鲤抄",
+        "artists": [
+          "布可布朗尼"
+        ],
+        "album": "翻唱",
+        "durationMs": 245251,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3424358971,
+        "name": "锦鲤抄",
+        "artists": [
+          "若见音社",
+          "溪月"
+        ],
+        "album": "锦鲤抄",
+        "durationMs": 245047,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "sourceId": 28188434,
+    "sourcePath": "sources/28188434.json",
+    "sourceUrl": "https://music.163.com/#/song?id=28188434",
+    "selected": {
+      "id": 28188434,
+      "name": "锦鲤抄",
+      "artists": [
+        "银临",
+        "云之泣"
+      ],
+      "album": "腐草为萤",
+      "durationMs": 245120,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 51
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-44-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 244.947,
+    "sourceFirstLine": {
+      "t": 2.31,
+      "text": "文案：慕清明"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 22.68,
+      "endSeconds": 23.48,
+      "similarity": 0.0,
+      "recognizedText": "我",
+      "meanProbability": 0.026,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  },
+  "rowKey": "锦鲤抄",
+  "edition": "",
+  "remark": "直链页面 title 为【小松绿Viridis/翻唱】《锦鲤抄》，meta description 明示日期 2026.08.15 与 UP 主小鸡奇遇記。song_name 归一化为真实曲名“锦鲤抄”。"
+}

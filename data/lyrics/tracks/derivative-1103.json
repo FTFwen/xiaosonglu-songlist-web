@@ -1,0 +1,171 @@
+{
+  "schemaVersion": 1,
+  "key": "derivative-1103",
+  "songId": -1103,
+  "songName": "小松绿-江南",
+  "rowKey": "小松绿-江南",
+  "displaySongName": "江南",
+  "artist": "白烁",
+  "language": "",
+  "derivative": true,
+  "edition": "",
+  "remark": "",
+  "audio": {
+    "url": "assets/derivative/jiangnan.mp3?v=6836f1989035",
+    "sha256": "6836f198903516f1b7ea94f5ac01b1c8454a949a645959780d2c3d79103877b9"
+  },
+  "retrievedAt": "2026-11-16T04:13:35.305Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E6%B1%9F%E5%8D%97&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E6%B1%9F%E5%8D%97%20%E6%9E%97%E4%BF%8A%E6%9D%B0&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 108914,
+        "name": "江南",
+        "artists": [
+          "林俊杰"
+        ],
+        "album": "第二天堂",
+        "durationMs": 267946,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 26305527,
+        "name": "江南",
+        "artists": [
+          "林俊杰"
+        ],
+        "album": "他是…JJ林俊杰",
+        "durationMs": 267000,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 523250508,
+        "name": "江南",
+        "artists": [
+          "林俊杰"
+        ],
+        "album": "SOT电remix专辑",
+        "durationMs": 124630,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 5252737,
+        "name": "江南",
+        "artists": [
+          "林俊杰"
+        ],
+        "album": "海蝶夯之唱响世界",
+        "durationMs": 267946,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 5258172,
+        "name": "江南",
+        "artists": [
+          "林俊杰"
+        ],
+        "album": "2006海蝶音乐15周年聆听世界精选集",
+        "durationMs": 267946,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 28747583,
+        "name": "江南",
+        "artists": [
+          "Jason Chen"
+        ],
+        "album": "热门华语226",
+        "durationMs": 213000,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1957399149,
+        "name": "江南",
+        "artists": [
+          "沐嘉谦"
+        ],
+        "album": "小郑的翻唱歌曲合辑",
+        "durationMs": 264986,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3399455494,
+        "name": "江南",
+        "artists": [
+          "陈与默"
+        ],
+        "album": "江南",
+        "durationMs": 182597,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": -1103,
+      "song_name": "江南",
+      "display_song_name": "江南",
+      "artist": "林俊杰",
+      "language": "",
+      "audio": "assets/derivative/jiangnan.mp3?v=6836f1989035",
+      "derivative": true
+    },
+    "sourceId": 108914,
+    "sourcePath": "sources/108914.json",
+    "sourceUrl": "https://music.163.com/#/song?id=108914",
+    "selected": {
+      "id": 108914,
+      "name": "江南",
+      "artists": [
+        "林俊杰"
+      ],
+      "album": "第二天堂",
+      "durationMs": 267946,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 56
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/derivative-1103-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 259.84,
+    "sourceFirstLine": {
+      "t": 37.01,
+      "text": "风到这里就是粘"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 22.92,
+      "endSeconds": 24.32,
+      "similarity": 0.0,
+      "recognizedText": " Music",
+      "meanProbability": 0.005,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "en",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

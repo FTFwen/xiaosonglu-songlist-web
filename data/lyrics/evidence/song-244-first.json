@@ -1,0 +1,117 @@
+{
+  "audioSha256": "4cdc8c2ea4cc97bc34727738b913a423b708d3c547ac9277b70408c6df12466c",
+  "model": "whisper-base",
+  "start": 0,
+  "end": 35,
+  "result": {
+    "text": "这一切都在无情但不练",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 3000,
+        "start": 30.0,
+        "end": 33.12,
+        "text": "这一切都在无情",
+        "tokens": [
+          50364,
+          5562,
+          2257,
+          23632,
+          7182,
+          3581,
+          31364,
+          10570,
+          50534
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.9856259822845459,
+        "compression_ratio": 0.7317073170731707,
+        "no_speech_prob": 0.758364200592041,
+        "words": [
+          {
+            "word": "这",
+            "start": 30.0,
+            "end": 30.38,
+            "probability": 0.22625817358493805
+          },
+          {
+            "word": "一",
+            "start": 30.38,
+            "end": 31.0,
+            "probability": 0.5467630624771118
+          },
+          {
+            "word": "切",
+            "start": 31.0,
+            "end": 31.22,
+            "probability": 0.6860498785972595
+          },
+          {
+            "word": "都",
+            "start": 31.22,
+            "end": 31.84,
+            "probability": 0.9812777638435364
+          },
+          {
+            "word": "在",
+            "start": 31.84,
+            "end": 32.28,
+            "probability": 0.986687183380127
+          },
+          {
+            "word": "无",
+            "start": 32.28,
+            "end": 32.64,
+            "probability": 0.8175927400588989
+          },
+          {
+            "word": "情",
+            "start": 32.64,
+            "end": 33.12,
+            "probability": 0.9192280769348145
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "seek": 3000,
+        "start": 33.12,
+        "end": 34.64,
+        "text": "但不练",
+        "tokens": [
+          50534,
+          8395,
+          1960,
+          10115,
+          225,
+          50614
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.9856259822845459,
+        "compression_ratio": 0.7317073170731707,
+        "no_speech_prob": 0.758364200592041,
+        "words": [
+          {
+            "word": "但",
+            "start": 33.12,
+            "end": 34.04,
+            "probability": 0.009090546518564224
+          },
+          {
+            "word": "不",
+            "start": 34.04,
+            "end": 34.36,
+            "probability": 0.35860180854797363
+          },
+          {
+            "word": "练",
+            "start": 34.36,
+            "end": 34.64,
+            "probability": 0.5931866317987442
+          }
+        ]
+      }
+    ],
+    "language": "zh"
+  }
+}

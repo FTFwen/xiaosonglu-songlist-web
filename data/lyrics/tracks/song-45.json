@@ -1,0 +1,161 @@
+{
+  "schemaVersion": 1,
+  "key": "song-45",
+  "songId": 45,
+  "songName": "故梦",
+  "displaySongName": "故梦",
+  "artist": "橙翼",
+  "language": "中文",
+  "derivative": false,
+  "audio": {
+    "url": "assets/audio/song_20.m4a?v=bc2652bbcdd7",
+    "sha256": "bc2652bbcdd7e8986c84a63f3a58aae29aeed47e3b5f60484f16b83e07236fcf"
+  },
+  "retrievedAt": "2026-11-16T03:57:54.454Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E6%95%85%E6%A2%A6&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 27506597,
+        "name": "故梦",
+        "artists": [
+          "橙翼"
+        ],
+        "album": "故梦",
+        "durationMs": 288626,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 26830570,
+        "name": "故梦",
+        "artists": [
+          "橙翼"
+        ],
+        "album": "原创作品集",
+        "durationMs": 288626,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 34609166,
+        "name": "故梦",
+        "artists": [
+          "伦桑"
+        ],
+        "album": "热门华语276",
+        "durationMs": 288261,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 31814417,
+        "name": "故梦",
+        "artists": [
+          "西国之海妖"
+        ],
+        "album": "热门华语264",
+        "durationMs": 292048,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1415091453,
+        "name": "故梦",
+        "artists": [
+          "礼越"
+        ],
+        "album": "十一",
+        "durationMs": 289645,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1378953974,
+        "name": "故梦",
+        "artists": [
+          "筝叽QAQ"
+        ],
+        "album": "网瘾少女一只筝",
+        "durationMs": 289593,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1397142388,
+        "name": "故梦",
+        "artists": [
+          "司夏"
+        ],
+        "album": "那些年翻唱过的歌……（1）",
+        "durationMs": 292022,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 409654891,
+        "name": "故梦（Cover 橙翼）",
+        "artists": [
+          "双笙（陈元汐）"
+        ],
+        "album": "故梦（翻唱）",
+        "durationMs": 284108,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      }
+    ],
+    "sourceId": 27506597,
+    "sourcePath": "sources/27506597.json",
+    "sourceUrl": "https://music.163.com/#/song?id=27506597",
+    "selected": {
+      "id": 27506597,
+      "name": "故梦",
+      "artists": [
+        "橙翼"
+      ],
+      "album": "故梦",
+      "durationMs": 288626,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 34
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-45-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 283.883,
+    "sourceFirstLine": {
+      "t": 0.509,
+      "text": "旧忆就像一扇窗"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 2.02,
+      "endSeconds": 4.14,
+      "similarity": 0.6,
+      "recognizedText": "就像一",
+      "meanProbability": 0.446,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  },
+  "rowKey": "故梦",
+  "edition": "",
+  "remark": "直链页面 title 为【小松绿Viridis/翻唱】《故梦》，meta description 明示日期 2026.08.15 与 UP 主小鸡奇遇記。song_name 归一化为真实曲名“故梦”。"
+}

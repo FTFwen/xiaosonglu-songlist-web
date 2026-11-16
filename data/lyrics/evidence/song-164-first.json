@@ -1,0 +1,477 @@
+{
+  "audioSha256": "c655bdf1311553504db05243fcc06c827e3bc8ae8dfe679a6941b2728fc83ce3",
+  "model": "whisper-base",
+  "start": 0,
+  "end": 44.92,
+  "result": {
+    "text": "我再打抹装几句手向你在的海域我再打抹装几句日夜就提大风吹起我一声所有担心都寂寞地下了",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 20.76,
+        "end": 24.78,
+        "text": "我再打抹装几句",
+        "tokens": [
+          50364,
+          1654,
+          8623,
+          12467,
+          7235,
+          117,
+          8083,
+          227,
+          6336,
+          254,
+          34592,
+          50464
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.35755784776475696,
+        "compression_ratio": 2.9473684210526314,
+        "no_speech_prob": 0.6928125023841858,
+        "words": [
+          {
+            "word": "我",
+            "start": 20.76,
+            "end": 21.84,
+            "probability": 0.2882397472858429
+          },
+          {
+            "word": "再",
+            "start": 21.84,
+            "end": 22.2,
+            "probability": 0.8102483153343201
+          },
+          {
+            "word": "打",
+            "start": 22.2,
+            "end": 22.74,
+            "probability": 0.3859345018863678
+          },
+          {
+            "word": "抹",
+            "start": 22.74,
+            "end": 23.26,
+            "probability": 0.6264895051717758
+          },
+          {
+            "word": "装",
+            "start": 23.26,
+            "end": 23.7,
+            "probability": 0.5214406326413155
+          },
+          {
+            "word": "几",
+            "start": 23.7,
+            "end": 24.32,
+            "probability": 0.7569245100021362
+          },
+          {
+            "word": "句",
+            "start": 24.32,
+            "end": 24.78,
+            "probability": 0.8710777163505554
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "seek": 0,
+        "start": 24.78,
+        "end": 29.12,
+        "text": "手向你在的海域",
+        "tokens": [
+          50464,
+          11389,
+          24282,
+          2166,
+          3581,
+          1546,
+          20078,
+          16262,
+          253,
+          50664
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.35755784776475696,
+        "compression_ratio": 2.9473684210526314,
+        "no_speech_prob": 0.6928125023841858,
+        "words": [
+          {
+            "word": "手",
+            "start": 24.78,
+            "end": 26.08,
+            "probability": 0.07052185386419296
+          },
+          {
+            "word": "向",
+            "start": 26.08,
+            "end": 26.4,
+            "probability": 0.5487551689147949
+          },
+          {
+            "word": "你",
+            "start": 26.4,
+            "end": 26.86,
+            "probability": 0.5890533924102783
+          },
+          {
+            "word": "在",
+            "start": 26.86,
+            "end": 27.44,
+            "probability": 0.5135723948478699
+          },
+          {
+            "word": "的",
+            "start": 27.44,
+            "end": 27.96,
+            "probability": 0.7111343145370483
+          },
+          {
+            "word": "海",
+            "start": 27.96,
+            "end": 28.58,
+            "probability": 0.8687183260917664
+          },
+          {
+            "word": "域",
+            "start": 28.58,
+            "end": 29.12,
+            "probability": 0.9197851419448853
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "seek": 0,
+        "start": 29.12,
+        "end": 29.98,
+        "text": "我再打抹装几句",
+        "tokens": [
+          50664,
+          1654,
+          8623,
+          12467,
+          7235,
+          117,
+          8083,
+          227,
+          6336,
+          254,
+          34592,
+          50764
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.35755784776475696,
+        "compression_ratio": 2.9473684210526314,
+        "no_speech_prob": 0.6928125023841858,
+        "words": [
+          {
+            "word": "我",
+            "start": 29.12,
+            "end": 29.98,
+            "probability": 0.04176337644457817
+          },
+          {
+            "word": "再",
+            "start": 29.98,
+            "end": 29.98,
+            "probability": 0.20422768592834473
+          },
+          {
+            "word": "打",
+            "start": 29.98,
+            "end": 29.98,
+            "probability": 0.7041204571723938
+          },
+          {
+            "word": "抹",
+            "start": 29.98,
+            "end": 29.98,
+            "probability": 0.9940125942230225
+          },
+          {
+            "word": "装",
+            "start": 29.98,
+            "end": 29.98,
+            "probability": 0.9742779433727264
+          },
+          {
+            "word": "几",
+            "start": 29.98,
+            "end": 29.98,
+            "probability": 0.9964937567710876
+          },
+          {
+            "word": "句",
+            "start": 29.98,
+            "end": 29.98,
+            "probability": 0.9998445510864258
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "seek": 0,
+        "start": 29.98,
+        "end": 29.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.35755784776475696,
+        "compression_ratio": 2.9473684210526314,
+        "no_speech_prob": 0.6928125023841858,
+        "words": []
+      },
+      {
+        "id": 4,
+        "seek": 0,
+        "start": 29.98,
+        "end": 29.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.35755784776475696,
+        "compression_ratio": 2.9473684210526314,
+        "no_speech_prob": 0.6928125023841858,
+        "words": []
+      },
+      {
+        "id": 5,
+        "seek": 0,
+        "start": 29.98,
+        "end": 29.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.35755784776475696,
+        "compression_ratio": 2.9473684210526314,
+        "no_speech_prob": 0.6928125023841858,
+        "words": []
+      },
+      {
+        "id": 6,
+        "seek": 0,
+        "start": 29.98,
+        "end": 29.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.35755784776475696,
+        "compression_ratio": 2.9473684210526314,
+        "no_speech_prob": 0.6928125023841858,
+        "words": []
+      },
+      {
+        "id": 7,
+        "seek": 0,
+        "start": 29.98,
+        "end": 29.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.35755784776475696,
+        "compression_ratio": 2.9473684210526314,
+        "no_speech_prob": 0.6928125023841858,
+        "words": []
+      },
+      {
+        "id": 8,
+        "seek": 2998,
+        "start": 29.98,
+        "end": 35.8,
+        "text": "日夜就提大风吹起",
+        "tokens": [
+          50364,
+          6890,
+          30124,
+          3111,
+          20949,
+          3582,
+          47209,
+          2392,
+          117,
+          9147,
+          50784
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.734497316422001,
+        "compression_ratio": 0.8513513513513513,
+        "no_speech_prob": 0.17048336565494537,
+        "words": [
+          {
+            "word": "日",
+            "start": 29.98,
+            "end": 30.3,
+            "probability": 0.8748106360435486
+          },
+          {
+            "word": "夜",
+            "start": 30.3,
+            "end": 30.94,
+            "probability": 0.8368360996246338
+          },
+          {
+            "word": "就",
+            "start": 30.94,
+            "end": 31.64,
+            "probability": 0.346607506275177
+          },
+          {
+            "word": "提",
+            "start": 31.64,
+            "end": 32.42,
+            "probability": 0.6109700202941895
+          },
+          {
+            "word": "大",
+            "start": 32.42,
+            "end": 33.46,
+            "probability": 0.3406725525856018
+          },
+          {
+            "word": "风",
+            "start": 33.46,
+            "end": 34.12,
+            "probability": 0.5660445094108582
+          },
+          {
+            "word": "吹",
+            "start": 34.12,
+            "end": 34.56,
+            "probability": 0.9827314913272858
+          },
+          {
+            "word": "起",
+            "start": 34.56,
+            "end": 35.8,
+            "probability": 0.7315276265144348
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "seek": 2998,
+        "start": 38.38,
+        "end": 41.96,
+        "text": "我一声所有担心",
+        "tokens": [
+          50784,
+          1654,
+          2257,
+          32045,
+          39300,
+          6852,
+          227,
+          7945,
+          50998
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.734497316422001,
+        "compression_ratio": 0.8513513513513513,
+        "no_speech_prob": 0.17048336565494537,
+        "words": [
+          {
+            "word": "我",
+            "start": 38.07,
+            "end": 38.72,
+            "probability": 0.9314507246017456
+          },
+          {
+            "word": "一",
+            "start": 38.72,
+            "end": 39.12,
+            "probability": 0.8514218330383301
+          },
+          {
+            "word": "声",
+            "start": 39.12,
+            "end": 39.44,
+            "probability": 0.3797086477279663
+          },
+          {
+            "word": "所有",
+            "start": 39.44,
+            "end": 40.38,
+            "probability": 0.9285156726837158
+          },
+          {
+            "word": "担",
+            "start": 40.38,
+            "end": 41.18,
+            "probability": 0.9300963878631592
+          },
+          {
+            "word": "心",
+            "start": 41.18,
+            "end": 41.96,
+            "probability": 0.995958149433136
+          }
+        ]
+      },
+      {
+        "id": 10,
+        "seek": 2998,
+        "start": 42.66,
+        "end": 44.72,
+        "text": "都寂寞地下了",
+        "tokens": [
+          50998,
+          7182,
+          4510,
+          224,
+          4510,
+          252,
+          10928,
+          4438,
+          2289,
+          51120
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.734497316422001,
+        "compression_ratio": 0.8513513513513513,
+        "no_speech_prob": 0.17048336565494537,
+        "words": [
+          {
+            "word": "都",
+            "start": 42.33,
+            "end": 42.98,
+            "probability": 0.8600031137466431
+          },
+          {
+            "word": "寂",
+            "start": 42.98,
+            "end": 43.4,
+            "probability": 0.38061100244522095
+          },
+          {
+            "word": "寞",
+            "start": 43.4,
+            "end": 43.56,
+            "probability": 0.7293277382850647
+          },
+          {
+            "word": "地",
+            "start": 43.56,
+            "end": 44.2,
+            "probability": 0.18697266280651093
+          },
+          {
+            "word": "下",
+            "start": 44.2,
+            "end": 44.36,
+            "probability": 0.07443878799676895
+          },
+          {
+            "word": "了",
+            "start": 44.36,
+            "end": 44.72,
+            "probability": 0.1791345179080963
+          }
+        ]
+      }
+    ],
+    "language": "zh"
+  }
+}

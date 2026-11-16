@@ -1,0 +1,148 @@
+{
+  "schemaVersion": 1,
+  "key": "song-128",
+  "songId": 128,
+  "songName": "焦糖星",
+  "displaySongName": "焦糖星",
+  "artist": "",
+  "language": "中文",
+  "derivative": false,
+  "audio": {
+    "url": "assets/audio/song_127.m4a?v=4ac25ecb9006",
+    "sha256": "4ac25ecb90063f09de01c62f3c4c9958e1d10ef4be44dfbc07bdc5017191d23c"
+  },
+  "retrievedAt": "2026-11-16T03:58:39.009Z",
+  "match": {
+    "status": "version_review_required",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E7%84%A6%E7%B3%96%E6%98%9F&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1373906533,
+        "name": "焦糖星",
+        "artists": [
+          "warma"
+        ],
+        "album": "焦糖星",
+        "durationMs": 235232,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1836673077,
+        "name": "焦糖星",
+        "artists": [
+          "朵芊"
+        ],
+        "album": "焦糖星 HB2杉奈",
+        "durationMs": 235232,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2093114460,
+        "name": "焦糖星",
+        "artists": [
+          "音箱Speaker",
+          "乐正龙牙"
+        ],
+        "album": "焦糖星-乐正龙牙AI",
+        "durationMs": 237716,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1379998140,
+        "name": "焦糖星",
+        "artists": [
+          "白藏蜜雨"
+        ],
+        "album": "甜点森林",
+        "durationMs": 240404,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3319017045,
+        "name": "焦糖星",
+        "artists": [
+          "伊水_Uryan",
+          "万敌",
+          "白厄"
+        ],
+        "album": "DEAR",
+        "durationMs": 235170,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2635285148,
+        "name": "焦糖星",
+        "artists": [
+          "忆辰Rebacca"
+        ],
+        "album": "忆辰的翻唱",
+        "durationMs": 107328,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2040861413,
+        "name": "焦糖星",
+        "artists": [
+          "伊水_Uryan",
+          "RK",
+          "瑞琪"
+        ],
+        "album": "暴风雨的圆舞曲",
+        "durationMs": 233207,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1377748537,
+        "name": "焦糖星（翻自 初音ミク）",
+        "artists": [
+          "Chih1r0_0"
+        ],
+        "album": "焦糖星",
+        "durationMs": 234983,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      }
+    ],
+    "sourceId": 1373906533,
+    "sourcePath": "sources/1373906533.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1373906533",
+    "selected": {
+      "id": 1373906533,
+      "name": "焦糖星",
+      "artists": [
+        "warma"
+      ],
+      "album": "焦糖星",
+      "durationMs": 235232,
+      "titleScore": 1,
+      "artistMatch": false,
+      "score": 0.8
+    },
+    "timedLineCount": 41
+  },
+  "alignment": {
+    "status": "version_review_required",
+    "offsetSeconds": null,
+    "humanVerified": false
+  },
+  "rowKey": "焦糖星",
+  "edition": "",
+  "remark": "2026-09-03「也许康复的随便唱唱」21点场；歌切合集【桐人今天睡大觉】【小松绿Viridis】随便唱唱的歌回 歌切合集 2026.09.03 分P8（03:55）。歌切分P无歌手标注；网易云同名为「焦糖星」有 X Studio洛天依（忆零）版、warma 人声本家（作曲味素/词大九_LN，日文初音本家 av30963867、诗岸赤羽SV中文本家 av56433925）→ 版本待复核。"
+}

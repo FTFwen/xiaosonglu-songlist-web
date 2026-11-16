@@ -1,0 +1,227 @@
+{
+  "schemaVersion": 1,
+  "key": "song-357",
+  "songId": 357,
+  "songName": "追憶",
+  "rowKey": "追憶",
+  "displaySongName": "追憶",
+  "artist": "PIKASONIC / なこたんまる",
+  "language": "日文",
+  "derivative": false,
+  "edition": "",
+  "remark": "心灵火Flame 合集缺此首，仅桐人版收录",
+  "audio": {
+    "url": "assets/audio/song_356.m4a?v=c0c89cda5bb5",
+    "sha256": "c0c89cda5bb5ea51f0ea3b46a81403ee08f4a6c3f0414e2d4f46720d86bb73d7"
+  },
+  "retrievedAt": "2026-11-16T04:13:32.093Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E8%BF%BD%E6%86%B6&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E8%BF%BD%E6%86%B6%20PIKASONIC%20%2F%20%E3%81%AA%E3%81%93%E3%81%9F%E3%82%93%E3%81%BE%E3%82%8B&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 2722023883,
+        "name": "追憶",
+        "artists": [
+          "V.W.P"
+        ],
+        "album": "追憶",
+        "durationMs": 207777,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1345938263,
+        "name": "追憶",
+        "artists": [
+          "Noras"
+        ],
+        "album": "死に逝く君、館に芽吹く憎悪 オリジナルサウンドトラックCD",
+        "durationMs": 121000,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 27928359,
+        "name": "追憶",
+        "artists": [
+          "Kalafina"
+        ],
+        "album": "君の銀の庭",
+        "durationMs": 277292,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 526558,
+        "name": "追憶",
+        "artists": [
+          "武部聡志"
+        ],
+        "album": "コクリコ坂から サウンドトラック",
+        "durationMs": 122600,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1869161372,
+        "name": "追憶 (feat. nakotanmaru)",
+        "artists": [
+          "PIKASONIC",
+          "なこたんまる"
+        ],
+        "album": "追憶 (feat. nakotanmaru)",
+        "durationMs": 249000,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      },
+      {
+        "id": 2043976339,
+        "name": "春めく",
+        "artists": [
+          "ナナツカゼ",
+          "PIKASONIC",
+          "なこたんまる"
+        ],
+        "album": "春めく",
+        "durationMs": 185500,
+        "titleScore": 0,
+        "artistMatch": true,
+        "score": 0.2
+      },
+      {
+        "id": 2003904108,
+        "name": "ドリームイーター (nakotanmaru ver.)",
+        "artists": [
+          "なこたんまる",
+          "PIKASONIC"
+        ],
+        "album": "ドリームイーター (nakotanmaru ver.)",
+        "durationMs": 228000,
+        "titleScore": 0,
+        "artistMatch": true,
+        "score": 0.2
+      },
+      {
+        "id": 1979210461,
+        "name": "ヒロイン (nakotanmaru ver.)",
+        "artists": [
+          "なこたんまる",
+          "PIKASONIC"
+        ],
+        "album": "ヒロイン (nakotanmaru ver.)",
+        "durationMs": 252272,
+        "titleScore": 0,
+        "artistMatch": true,
+        "score": 0.2
+      }
+    ],
+    "workQuery": {
+      "song_id": 357,
+      "song_name": "追憶",
+      "show_as_song_name": "",
+      "display_song_name": "追憶",
+      "artist": "PIKASONIC / なこたんまる",
+      "artist_search": "PIKASONIC / なこたんまる",
+      "feat_artist": "",
+      "remark": "心灵火Flame 合集缺此首，仅桐人版收录",
+      "tone": "",
+      "language": "日文",
+      "type": "J-Pop",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1nRxJ6tEPC/?p=5",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-31",
+      "row_key": "追憶"
+    },
+    "sourceId": 1869161372,
+    "sourcePath": "sources/1869161372.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1869161372",
+    "selected": {
+      "id": 1869161372,
+      "name": "追憶 (feat. nakotanmaru)",
+      "artists": [
+        "PIKASONIC",
+        "なこたんまる"
+      ],
+      "album": "追憶 (feat. nakotanmaru)",
+      "durationMs": 249000,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 50,
+    "review": {
+      "reason": "Exact requested artists PIKASONIC / なこたんまる match 追憶 (feat. nakotanmaru), duration 249000ms. Current source is unrelated V.W.P song. Live lyric API returns 50 timestamped rows. Source identity confirmed; recording alignment unverified.",
+      "evidenceUrl": "https://music.163.com/api/search/get?s=%E8%BF%BD%E6%86%B6%20PIKASONIC&type=1&limit=10",
+      "previousSourceId": 2722023883
+    }
+  },
+  "alignment": {
+    "status": "spotcheck_review_required",
+    "evidencePath": "evidence/song-357-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 160.107,
+    "sourceFirstLine": {
+      "t": 3.22,
+      "text": "何か忘れている気がしたんだ"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 3.72,
+      "endSeconds": 8.84,
+      "similarity": 0.8461538461538461,
+      "recognizedText": "何か失っている気がしたんだ",
+      "meanProbability": 0.629,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": 0.5,
+    "checks": [
+      {
+        "sourceLine": {
+          "t": 80.04,
+          "text": "そんなこと言ったって"
+        },
+        "evidencePath": "evidence/song-357-check0.json",
+        "candidate": {
+          "audioSeconds": 80.8,
+          "endSeconds": 82.88,
+          "similarity": 0.8888888888888888,
+          "recognizedText": "そんなこと言って",
+          "meanProbability": 0.735,
+          "tokenPrefixOnly": false
+        },
+        "residualSeconds": 0.26
+      },
+      {
+        "sourceLine": {
+          "t": 142.48,
+          "text": "何も変わってなくてさ"
+        },
+        "evidencePath": "evidence/song-357-check1.json",
+        "candidate": {
+          "audioSeconds": 142.86,
+          "endSeconds": 142.86,
+          "similarity": 0.3333333333333333,
+          "recognizedText": "って",
+          "meanProbability": 0.554,
+          "tokenPrefixOnly": false
+        },
+        "residualSeconds": -0.12
+      }
+    ],
+    "asrLanguage": "ja",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

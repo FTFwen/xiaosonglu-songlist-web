@@ -1,0 +1,25 @@
+{
+  "platform": "netease",
+  "id": 3461054224,
+  "url": "https://music.163.com/#/song?id=3461054224",
+  "apiUrl": "https://music.163.com/api/song/lyric?id=3461054224&lv=1&kv=1&tv=-1",
+  "retrievedAt": "2026-11-16T04:03:30.528Z",
+  "track": {
+    "id": 3461054224,
+    "name": "小丑的品格",
+    "artists": [
+      "花晞ovo",
+      "荷溪"
+    ],
+    "album": "小丑的品格",
+    "durationMs": 272550,
+    "titleScore": 1,
+    "artistMatch": false,
+    "score": 0.8
+  },
+  "lrc": "",
+  "translationLrc": "",
+  "romanizationLrc": "",
+  "instrumental": false,
+  "lines": []
+}

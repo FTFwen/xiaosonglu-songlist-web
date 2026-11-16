@@ -1,0 +1,191 @@
+{
+  "schemaVersion": 1,
+  "key": "song-301",
+  "songId": 301,
+  "songName": "秘宝",
+  "rowKey": "秘宝",
+  "displaySongName": "秘宝",
+  "artist": "litterzy / 洛天依",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "两份合集均有此曲（BV1TApG6uEPX 分P19「秘宝」、BV1Qrpj6ZELm 分P18 写作「密保」，属同音错字，以优先 UP 的「秘宝」为准）。据百度百科：litterzy 作曲、冥凰作词、虚拟歌手洛天依演唱的原创 Vocaloid 中文歌曲，凯尔特风。",
+  "audio": {
+    "url": "assets/audio/song_300.m4a?v=4ec6ae2f804d",
+    "sha256": "4ec6ae2f804d86c28aa0e311c6ac8566ac67846d166105d4fbefe3bc9b8c319e"
+  },
+  "retrievedAt": "2026-11-16T04:06:25.976Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E7%A7%98%E5%AE%9D&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E7%A7%98%E5%AE%9D%20litterzy%20%2F%20%E6%B4%9B%E5%A4%A9%E4%BE%9D&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1366000915,
+        "name": "秘宝",
+        "artists": [
+          "litterzy",
+          "洛天依Official"
+        ],
+        "album": "秘宝",
+        "durationMs": 198000,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1464292983,
+        "name": "秘宝",
+        "artists": [
+          "こいずみ桃黎",
+          "诗岸",
+          "艾可"
+        ],
+        "album": "【诗岸·艾可】秘宝",
+        "durationMs": 196056,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1371720509,
+        "name": "秘宝",
+        "artists": [
+          "V.A."
+        ],
+        "album": "廃都の物语 OST",
+        "durationMs": 46367,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1939045742,
+        "name": "秘宝",
+        "artists": [
+          "伊水_Uryan",
+          "言和",
+          "乐正龙牙"
+        ],
+        "album": "龙言集",
+        "durationMs": 194455,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1383972562,
+        "name": "秘宝",
+        "artists": [
+          "棠华"
+        ],
+        "album": "秘宝",
+        "durationMs": 196416,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1937929359,
+        "name": "秘宝",
+        "artists": [
+          "赤羽",
+          "沧浪小白龙"
+        ],
+        "album": "翻调集",
+        "durationMs": 195375,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1830828037,
+        "name": "秘宝",
+        "artists": [
+          "鬼面P",
+          "夏祁铭"
+        ],
+        "album": "夏祁铭官方试听合辑",
+        "durationMs": 79516,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1368756838,
+        "name": "秘宝",
+        "artists": [
+          "琥珀奇迹子"
+        ],
+        "album": "秘宝",
+        "durationMs": 195374,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 301,
+      "song_name": "秘宝",
+      "show_as_song_name": "",
+      "display_song_name": "秘宝",
+      "artist": "litterzy / 洛天依",
+      "artist_search": "litterzy / 洛天依",
+      "feat_artist": "",
+      "remark": "两份合集均有此曲（BV1TApG6uEPX 分P19「秘宝」、BV1Qrpj6ZELm 分P18 写作「密保」，属同音错字，以优先 UP 的「秘宝」为准）。据百度百科：litterzy 作曲、冥凰作词、虚拟歌手洛天依演唱的原创 Vocaloid 中文歌曲，凯尔特风。",
+      "tone": "",
+      "language": "中文",
+      "type": "中V、原创",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1TApG6uEPX/?p=19",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-10",
+      "row_key": "秘宝"
+    },
+    "sourceId": 1366000915,
+    "sourcePath": "sources/1366000915.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1366000915",
+    "selected": {
+      "id": 1366000915,
+      "name": "秘宝",
+      "artists": [
+        "litterzy",
+        "洛天依Official"
+      ],
+      "album": "秘宝",
+      "durationMs": 198000,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 27
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-301-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 200.469,
+    "sourceFirstLine": {
+      "t": 19.73,
+      "text": "晚来的雪 压低纤细树梢"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 26.06,
+      "endSeconds": 26.18,
+      "similarity": 0.0,
+      "recognizedText": "要",
+      "meanProbability": 0.202,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

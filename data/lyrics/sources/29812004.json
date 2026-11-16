@@ -1,0 +1,274 @@
+{
+  "platform": "netease",
+  "id": 29812004,
+  "url": "https://music.163.com/#/song?id=29812004",
+  "apiUrl": "https://music.163.com/api/song/lyric?id=29812004&lv=1&kv=1&tv=-1",
+  "retrievedAt": "2026-11-16T04:05:17.343Z",
+  "track": {
+    "id": 29812004,
+    "name": "ECHO",
+    "artists": [
+      "Crusher-P",
+      "GUMI"
+    ],
+    "album": "CrusherP",
+    "durationMs": 244793,
+    "titleScore": 1,
+    "artistMatch": true,
+    "score": 1
+  },
+  "lrc": "[00:00.00] 作词 : Crusher-P\n[00:01.00] 作曲 : Crusher-P\n[00:19.30]The clock stopped ticking forever ago\n[00:23.300]How long have I been up?\n[00:25.300]I don't know.\n[00:26.300]I can't get a grip,\n[00:28.300]But I can't let go\n[00:30.300]There wasn't anything\n[00:31.300]To hold onto though...\n[00:33.300]Why can't I see?\n[00:35.300]Why can't I see?\n[00:37.300]All the colors that you see?\n[00:40.300]Please, Can I be,\n[00:42.300]Please, Can I be\n[00:44.300]Colorful and free?\n[00:47.300]WHAT THE HELL'S GOING ON?!\n[00:48.300]CAN SOMEONE TELL ME PLEASE--\n[00:50.300]WHY, I'M SWITCHING FASTER THAN THE CHANNELS ON TV!!\n[00:53.300]I'M black, THEN I'M white!!\n[00:55.300]NO!!!\n[00:56.300]SOMETHING ISN'T RIGHT!!\n[00:57.300]MY ENEMY'S INVISIBLE, I DON'T KNOW HOW TO FIGHT!!\n[01:01.300]THE TREMBLING FEAR IS MORE THAN I CAN TAKE,\n[01:04.300]WHEN I'M UP AGAINST\n[01:05.300]THE ECHO IN THE MIRROR!!\n[01:08.300]ECHO!!\n[01:14.300]\n[02:23.300]I'm gonna burn my house down,\n[02:27.300]Into an ugly black.\n[02:28.300]I'm gonna run away, Now\n[02:31.300]And never look back.\n[02:32.300]I'm gonna burn my house down,\n[02:34.300]Into an ugly black.\n[02:35.300]I'm gonna run away, Now\n[02:37.300]And never look back.\n[02:39.300]I'm gonna run away down,\n[02:41.300]I'm gonna run away.\n[02:42.300]I'm gonna run away, Now\n[02:44.300]I'm gonna run away\n[02:53.300]I'm gonna burn my house down.\n[02:54.300]And never look back.\n[02:56.300]And never look back.\n[02:58.300]AND NEVER LOOK BACK!!\n[02:59.300]WHAT THE HELL'S GOING ON?!\n[03:01.300]CAN SOMEONE TELL ME PLEASE--\n[03:03.300]WHY, I'M SWITCHING FASTER THAN THE CHANNELS ON TV!!\n[03:06.300]I'M black, THEN I'M white!!\n[03:08.300]NO!!!\n[03:08.300]SOMETHING ISN'T RIGHT!!\n[03:10.300]MY ENEMY'S INVISIBLE, I DON'T KNOW HOW TO FIGHT!!\n[03:13.300]WHAT THE HELL'S GOING ON?!\n[03:15.300]CAN SOMEONE TELL ME PLEASE--\n[03:17.300]WHY, I'M SWITCHING FASTER THAN THE CHANNELS ON TV!!\n[03:20.300]I'M black, THEN I'M white!!\n[03:21.300]NO!!!\n[03:22.300]SOMETHING ISN'T RIGHT!!\n[03:23.300]MY ENEMY'S INVISIBLE, I DON'T KNOW HOW TO FIGHT!!\n[03:27.300]THE TREMBLING FEAR IS MORE THAN I CAN TAKE,\n[03:31.300]WHEN I'M UP AGAINST\n[03:32.300]THE ECHO IN THE MIRROR!!\n[03:34.300]THE TREMBLING FEAR IS MORE THAN I CAN TAKE,\n[03:37.300]WHEN I'M UP AGAINST\n[03:39.300]THE ECHO IN THE MIRROR!!\n",
+  "translationLrc": "[by:月餖]\n[00:19.30]时钟在很久之前就已经停止转动\n[00:23.300]我究竟起来（醒来）了多久?\n[00:25.300]我不知道:-(\n[00:26.300]我无法将其守住\n[00:28.300]但亦无法放手\n[00:30.300]没有任何东西\n[00:31.300]值得我去坚持...\n[00:33.300]为何我目及不到?\n[00:35.300]为何我目及不到?\n[00:37.300]你所目及到的全部色彩?\n[00:40.300]请问我能变得\n[00:42.300]请问我能变得\n[00:44.300]色彩斑斓的以及自由的吗?\n[00:47.300]究竟是怎么回事?!\n[00:48.300]谁来告诉我好吗--\n[00:50.300]为何我切换得比电视频道都要快\n[00:53.300]我是黑色而后变成白色!!\n[00:55.300]不!!!\n[00:56.300]有什么不对劲!!\n[00:57.300]我的敌人是无形的,我不知道如何去战斗!!\n[01:01.300]颤栗着的恐惧已超出我的承受能力\n[01:04.300]当我与镜子中的\n[01:05.300]回声对峙!!\n[01:08.300]回声!!\n[02:23.300]我必须把我的房子\n[01:14.300]\n[02:27.300]烧毁成狰狞的黑色\n[02:28.300]我此刻就要逃跑\n[02:31.300]再也不回头\n[02:32.300]我必须把我的房子\n[02:34.300]烧毁成狰狞的黑色\n[02:35.300]我此刻就要逃跑\n[02:37.300]再也不回头\n[02:39.300]我此刻就要逃跑\n[02:41.300]再也不回头\n[02:42.300]我此刻就要逃跑\n[02:44.300]我就要逃跑\n[02:53.300]我要一把火烧了我的房子\n[02:54.300]再也不回头\n[02:56.300]再也不回头\n[02:58.300]再也不回头!!\n[02:59.300]究竟是怎么回事?!\n[03:01.300]谁来告诉我好吗--\n[03:03.300]为何我切换得比电视频道都要快!!\n[03:06.300]我是黑色 而后变成白色!!\n[03:08.300]有什么不对劲!!\n[03:08.300]有什么不对劲!!\n[03:10.300]我的敌人是无形的,我不知道如何去战斗!!\n[03:13.300]究竟是怎么回事?!\n[03:15.300]谁来告诉我好吗--\n[03:17.300]为何我切换得比电视频道都要快!!\n[03:20.300]我是黑色 而后变成白色!!\n[03:22.300]有什么不对劲!!\n[03:23.300]我的敌人是无形的,我不知道如何去战斗!!\n[03:27.300]颤栗着的恐惧已超出我的承受能力\n[03:31.300]当我与镜子中的\n[03:32.300]回声对峙!!\n[03:34.300]颤栗着的恐惧已超出我的承受能力\n[03:37.300]当我与镜子中的\n[03:39.300]回声对峙!!",
+  "romanizationLrc": "",
+  "instrumental": false,
+  "lines": [
+    {
+      "t": 0,
+      "text": "作词 : Crusher-P"
+    },
+    {
+      "t": 1,
+      "text": "作曲 : Crusher-P"
+    },
+    {
+      "t": 19.3,
+      "text": "The clock stopped ticking forever ago"
+    },
+    {
+      "t": 23.3,
+      "text": "How long have I been up?"
+    },
+    {
+      "t": 25.3,
+      "text": "I don't know."
+    },
+    {
+      "t": 26.3,
+      "text": "I can't get a grip,"
+    },
+    {
+      "t": 28.3,
+      "text": "But I can't let go"
+    },
+    {
+      "t": 30.3,
+      "text": "There wasn't anything"
+    },
+    {
+      "t": 31.3,
+      "text": "To hold onto though..."
+    },
+    {
+      "t": 33.3,
+      "text": "Why can't I see?"
+    },
+    {
+      "t": 35.3,
+      "text": "Why can't I see?"
+    },
+    {
+      "t": 37.3,
+      "text": "All the colors that you see?"
+    },
+    {
+      "t": 40.3,
+      "text": "Please, Can I be,"
+    },
+    {
+      "t": 42.3,
+      "text": "Please, Can I be"
+    },
+    {
+      "t": 44.3,
+      "text": "Colorful and free?"
+    },
+    {
+      "t": 47.3,
+      "text": "WHAT THE HELL'S GOING ON?!"
+    },
+    {
+      "t": 48.3,
+      "text": "CAN SOMEONE TELL ME PLEASE--"
+    },
+    {
+      "t": 50.3,
+      "text": "WHY, I'M SWITCHING FASTER THAN THE CHANNELS ON TV!!"
+    },
+    {
+      "t": 53.3,
+      "text": "I'M black, THEN I'M white!!"
+    },
+    {
+      "t": 55.3,
+      "text": "NO!!!"
+    },
+    {
+      "t": 56.3,
+      "text": "SOMETHING ISN'T RIGHT!!"
+    },
+    {
+      "t": 57.3,
+      "text": "MY ENEMY'S INVISIBLE, I DON'T KNOW HOW TO FIGHT!!"
+    },
+    {
+      "t": 61.3,
+      "text": "THE TREMBLING FEAR IS MORE THAN I CAN TAKE,"
+    },
+    {
+      "t": 64.3,
+      "text": "WHEN I'M UP AGAINST"
+    },
+    {
+      "t": 65.3,
+      "text": "THE ECHO IN THE MIRROR!!"
+    },
+    {
+      "t": 68.3,
+      "text": "ECHO!!"
+    },
+    {
+      "t": 143.3,
+      "text": "I'm gonna burn my house down,"
+    },
+    {
+      "t": 147.3,
+      "text": "Into an ugly black."
+    },
+    {
+      "t": 148.3,
+      "text": "I'm gonna run away, Now"
+    },
+    {
+      "t": 151.3,
+      "text": "And never look back."
+    },
+    {
+      "t": 152.3,
+      "text": "I'm gonna burn my house down,"
+    },
+    {
+      "t": 154.3,
+      "text": "Into an ugly black."
+    },
+    {
+      "t": 155.3,
+      "text": "I'm gonna run away, Now"
+    },
+    {
+      "t": 157.3,
+      "text": "And never look back."
+    },
+    {
+      "t": 159.3,
+      "text": "I'm gonna run away down,"
+    },
+    {
+      "t": 161.3,
+      "text": "I'm gonna run away."
+    },
+    {
+      "t": 162.3,
+      "text": "I'm gonna run away, Now"
+    },
+    {
+      "t": 164.3,
+      "text": "I'm gonna run away"
+    },
+    {
+      "t": 173.3,
+      "text": "I'm gonna burn my house down."
+    },
+    {
+      "t": 174.3,
+      "text": "And never look back."
+    },
+    {
+      "t": 176.3,
+      "text": "And never look back."
+    },
+    {
+      "t": 178.3,
+      "text": "AND NEVER LOOK BACK!!"
+    },
+    {
+      "t": 179.3,
+      "text": "WHAT THE HELL'S GOING ON?!"
+    },
+    {
+      "t": 181.3,
+      "text": "CAN SOMEONE TELL ME PLEASE--"
+    },
+    {
+      "t": 183.3,
+      "text": "WHY, I'M SWITCHING FASTER THAN THE CHANNELS ON TV!!"
+    },
+    {
+      "t": 186.3,
+      "text": "I'M black, THEN I'M white!!"
+    },
+    {
+      "t": 188.3,
+      "text": "NO!!!"
+    },
+    {
+      "t": 188.3,
+      "text": "SOMETHING ISN'T RIGHT!!"
+    },
+    {
+      "t": 190.3,
+      "text": "MY ENEMY'S INVISIBLE, I DON'T KNOW HOW TO FIGHT!!"
+    },
+    {
+      "t": 193.3,
+      "text": "WHAT THE HELL'S GOING ON?!"
+    },
+    {
+      "t": 195.3,
+      "text": "CAN SOMEONE TELL ME PLEASE--"
+    },
+    {
+      "t": 197.3,
+      "text": "WHY, I'M SWITCHING FASTER THAN THE CHANNELS ON TV!!"
+    },
+    {
+      "t": 200.3,
+      "text": "I'M black, THEN I'M white!!"
+    },
+    {
+      "t": 201.3,
+      "text": "NO!!!"
+    },
+    {
+      "t": 202.3,
+      "text": "SOMETHING ISN'T RIGHT!!"
+    },
+    {
+      "t": 203.3,
+      "text": "MY ENEMY'S INVISIBLE, I DON'T KNOW HOW TO FIGHT!!"
+    },
+    {
+      "t": 207.3,
+      "text": "THE TREMBLING FEAR IS MORE THAN I CAN TAKE,"
+    },
+    {
+      "t": 211.3,
+      "text": "WHEN I'M UP AGAINST"
+    },
+    {
+      "t": 212.3,
+      "text": "THE ECHO IN THE MIRROR!!"
+    },
+    {
+      "t": 214.3,
+      "text": "THE TREMBLING FEAR IS MORE THAN I CAN TAKE,"
+    },
+    {
+      "t": 217.3,
+      "text": "WHEN I'M UP AGAINST"
+    },
+    {
+      "t": 219.3,
+      "text": "THE ECHO IN THE MIRROR!!"
+    }
+  ]
+}

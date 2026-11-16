@@ -1,0 +1,185 @@
+{
+  "schemaVersion": 1,
+  "key": "song-272",
+  "songId": 272,
+  "songName": "春夏秋冬",
+  "rowKey": "春夏秋冬",
+  "displaySongName": "春夏秋冬",
+  "artist": "万丽娜",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "",
+  "audio": {
+    "url": "assets/audio/song_271.m4a?v=60dc0a6b1ae7",
+    "sha256": "60dc0a6b1ae70ef17c6e835db88ddeb69f7111786067c9bed8c1233c5de75b3c"
+  },
+  "retrievedAt": "2026-11-16T04:05:58.158Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E6%98%A5%E5%A4%8F%E7%A7%8B%E5%86%AC&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E6%98%A5%E5%A4%8F%E7%A7%8B%E5%86%AC%20%E4%B8%87%E4%B8%BD%E5%A8%9C&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1342571623,
+        "name": "春夏秋冬",
+        "artists": [
+          "SNH48万丽娜"
+        ],
+        "album": "SNH48 GROUP第五届年度金曲大赏演唱会LIVE版(中)",
+        "durationMs": 184840,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 186453,
+        "name": "春夏秋冬",
+        "artists": [
+          "张国荣"
+        ],
+        "album": "I Am What I Am",
+        "durationMs": 247640,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2093486011,
+        "name": "春夏秋冬",
+        "artists": [
+          "张国荣"
+        ],
+        "album": "秋日恋曲",
+        "durationMs": 251790,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2620098664,
+        "name": "春夏秋冬",
+        "artists": [
+          "kkluv",
+          "KKECHO"
+        ],
+        "album": "灵魂破碎综合征",
+        "durationMs": 148000,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3355999628,
+        "name": "春夏秋冬",
+        "artists": [
+          "等一下就回家",
+          "KANNA BUSH"
+        ],
+        "album": "入门级",
+        "durationMs": 208530,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1305366565,
+        "name": "春夏秋冬",
+        "artists": [
+          "sumika"
+        ],
+        "album": "ファンファーレ / 春夏秋冬",
+        "durationMs": 274560,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 512100117,
+        "name": "春夏秋冬",
+        "artists": [
+          "SNH48"
+        ],
+        "album": "以爱之名",
+        "durationMs": 257154,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1366963632,
+        "name": "春夏秋冬",
+        "artists": [
+          "張子铭"
+        ],
+        "album": "春夏秋冬",
+        "durationMs": 247066,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 272,
+      "song_name": "春夏秋冬",
+      "show_as_song_name": "",
+      "display_song_name": "春夏秋冬",
+      "artist": "万丽娜",
+      "artist_search": "万丽娜",
+      "feat_artist": "",
+      "remark": "",
+      "tone": "",
+      "language": "中文",
+      "type": "SNH48、偶像",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV18Jpw6mE82/?p=5",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-06",
+      "row_key": "春夏秋冬"
+    },
+    "sourceId": 1342571623,
+    "sourcePath": "sources/1342571623.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1342571623",
+    "selected": {
+      "id": 1342571623,
+      "name": "春夏秋冬",
+      "artists": [
+        "SNH48万丽娜"
+      ],
+      "album": "SNH48 GROUP第五届年度金曲大赏演唱会LIVE版(中)",
+      "durationMs": 184840,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 31
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-272-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 181.525,
+    "sourceFirstLine": {
+      "t": 32.3,
+      "text": "可曾记得碧云天"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 33.12,
+      "endSeconds": 34.56,
+      "similarity": 0.3076923076923077,
+      "recognizedText": "曾经地被晕天",
+      "meanProbability": 0.593,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

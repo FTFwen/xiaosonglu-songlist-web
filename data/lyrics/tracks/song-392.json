@@ -1,0 +1,183 @@
+{
+  "schemaVersion": 1,
+  "key": "song-392",
+  "songId": 392,
+  "songName": "九万字",
+  "rowKey": "九万字",
+  "displaySongName": "九万字",
+  "artist": "黄诗扶",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "",
+  "audio": {
+    "url": "assets/audio/song_391.m4a?v=a56ee37ca6e2",
+    "sha256": "a56ee37ca6e2e3235610a16de713b967ce9c52b2dbe7285c890e193a11d56ce1"
+  },
+  "retrievedAt": "2026-11-16T04:08:21.852Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E4%B9%9D%E4%B8%87%E5%AD%97&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E4%B9%9D%E4%B8%87%E5%AD%97%20%E9%BB%84%E8%AF%97%E6%89%B6&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1335942780,
+        "name": "九万字",
+        "artists": [
+          "黄诗扶"
+        ],
+        "album": "人间不值得",
+        "durationMs": 232060,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2711883185,
+        "name": "九万字",
+        "artists": [
+          "张靓颖"
+        ],
+        "album": "九万字",
+        "durationMs": 231520,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1354645399,
+        "name": "九万字",
+        "artists": [
+          "王敬轩（妖扬）"
+        ],
+        "album": "九万字",
+        "durationMs": 231692,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3408572140,
+        "name": "九万字",
+        "artists": [
+          "恨海情天"
+        ],
+        "album": "九万字",
+        "durationMs": 24636,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3404213472,
+        "name": "九万字",
+        "artists": [
+          "陈与默"
+        ],
+        "album": "九万字",
+        "durationMs": 179593,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1351973067,
+        "name": "九万字 (念白版)",
+        "artists": [
+          "黄诗扶"
+        ],
+        "album": "人间不值得",
+        "durationMs": 232060,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      },
+      {
+        "id": 1335952039,
+        "name": "九万字 (伴奏)",
+        "artists": [
+          "黄诗扶"
+        ],
+        "album": "人间不值得",
+        "durationMs": 232060,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      },
+      {
+        "id": 2730164841,
+        "name": "九万字(DJ版)",
+        "artists": [
+          "黄诗扶"
+        ],
+        "album": "九万字（DJ名龙）",
+        "durationMs": 320208,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      }
+    ],
+    "workQuery": {
+      "song_id": 392,
+      "song_name": "九万字",
+      "show_as_song_name": "",
+      "display_song_name": "九万字",
+      "artist": "黄诗扶",
+      "artist_search": "黄诗扶",
+      "feat_artist": "",
+      "remark": "",
+      "tone": "",
+      "language": "中文",
+      "type": "国风",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1LRWd6jEqp/?p=5",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-11-12",
+      "row_key": "九万字"
+    },
+    "sourceId": 1335942780,
+    "sourcePath": "sources/1335942780.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1335942780",
+    "selected": {
+      "id": 1335942780,
+      "name": "九万字",
+      "artists": [
+        "黄诗扶"
+      ],
+      "album": "人间不值得",
+      "durationMs": 232060,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 46
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-392-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 229.888,
+    "sourceFirstLine": {
+      "t": 4.5,
+      "text": "和声编写/和声 : 黄诗扶"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 25.12,
+      "endSeconds": 26.52,
+      "similarity": 0.0,
+      "recognizedText": "一",
+      "meanProbability": 0.18,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

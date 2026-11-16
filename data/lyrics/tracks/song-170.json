@@ -1,0 +1,187 @@
+{
+  "schemaVersion": 1,
+  "key": "song-170",
+  "songId": 170,
+  "songName": "月光食堂",
+  "rowKey": "月光食堂",
+  "displaySongName": "月光食堂",
+  "artist": "古川本舗、ちびた",
+  "language": "日文",
+  "derivative": false,
+  "edition": "",
+  "remark": "弹幕 00:03~00:10 多次提及「月光食堂」（「竟然有月光食堂」「月光食堂好听」），位置与本章节吻合",
+  "audio": {
+    "url": "assets/audio/song_169.m4a?v=ebb7b090d449",
+    "sha256": "ebb7b090d44940c6b3edadeba4cb66c4ba35fb11090631ee9d61aebdb9b1febd"
+  },
+  "retrievedAt": "2026-11-16T04:04:36.058Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E6%9C%88%E5%85%89%E9%A3%9F%E5%A0%82&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E6%9C%88%E5%85%89%E9%A3%9F%E5%A0%82%20%E5%8F%A4%E5%B7%9D%E6%9C%AC%E8%88%97&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 31546854,
+        "name": "月光食堂",
+        "artists": [
+          "古川本舗",
+          "ちびた"
+        ],
+        "album": "SINGALONG6",
+        "durationMs": 285049,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 25870658,
+        "name": "月光食堂",
+        "artists": [
+          "古川本舗",
+          "acane_madder"
+        ],
+        "album": "ガールフレンド・フロム・キョウト",
+        "durationMs": 283760,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 3448676970,
+        "name": "月光食堂",
+        "artists": [
+          "初音ミク",
+          "古川本舗"
+        ],
+        "album": "月光食堂",
+        "durationMs": 288862,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1966177771,
+        "name": "月光食堂",
+        "artists": [
+          "そらる"
+        ],
+        "album": "そらるの歌ってみた[2009-2010]",
+        "durationMs": 285167,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1865588027,
+        "name": "月光食堂",
+        "artists": [
+          "YoyoAidoru"
+        ],
+        "album": "✧原神✧ 月光食堂・七七可莉版",
+        "durationMs": 285519,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2010586119,
+        "name": "月光食堂",
+        "artists": [
+          "すぃ"
+        ],
+        "album": "",
+        "durationMs": 283872,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1371772494,
+        "name": "月光食堂",
+        "artists": [
+          "长泽陵川"
+        ],
+        "album": "月光食堂",
+        "durationMs": 283521,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1988493423,
+        "name": "月光食堂",
+        "artists": [
+          "盐汀Ytine"
+        ],
+        "album": "月光食堂",
+        "durationMs": 285144,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 170,
+      "song_name": "月光食堂",
+      "show_as_song_name": "",
+      "display_song_name": "月光食堂",
+      "artist": "古川本舗、ちびた",
+      "artist_search": "古川本舗、ちびた",
+      "feat_artist": "",
+      "remark": "弹幕 00:03~00:10 多次提及「月光食堂」（「竟然有月光食堂」「月光食堂好听」），位置与本章节吻合",
+      "tone": "",
+      "language": "日文",
+      "type": "J-Pop",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1q9YB6xErK/?p=2",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-09-13",
+      "row_key": "月光食堂"
+    },
+    "sourceId": 31546854,
+    "sourcePath": "sources/31546854.json",
+    "sourceUrl": "https://music.163.com/#/song?id=31546854",
+    "selected": {
+      "id": 31546854,
+      "name": "月光食堂",
+      "artists": [
+        "古川本舗",
+        "ちびた"
+      ],
+      "album": "SINGALONG6",
+      "durationMs": 285049,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 25
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-170-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 284.932,
+    "sourceFirstLine": {
+      "t": 13.85,
+      "text": "君が触れた白と銀の爪先"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 0.34,
+      "endSeconds": 0.8,
+      "similarity": 0.16666666666666666,
+      "recognizedText": "の",
+      "meanProbability": 0.235,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "ja",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

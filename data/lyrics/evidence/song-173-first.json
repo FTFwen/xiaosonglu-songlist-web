@@ -1,0 +1,510 @@
+{
+  "audioSha256": "89f3e2ca87af718253cfb35f705e640158594936777f2eebb35b2cf481774a81",
+  "model": "whisper-base",
+  "start": 0,
+  "end": 35,
+  "result": {
+    "text": "詞曲 李宗曲 李宗曲 李宗曲 李宗G.Y.的風浪浪的連圓都變熱熱的不做好天漫漫的一整月後約下了過",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 17.3,
+        "end": 17.94,
+        "text": "詞曲 李宗",
+        "tokens": [
+          50364,
+          6716,
+          252,
+          30753,
+          220,
+          31206,
+          2415,
+          245,
+          50514
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.6114765764719032,
+        "compression_ratio": 2.05,
+        "no_speech_prob": 0.5446777939796448,
+        "words": [
+          {
+            "word": "詞",
+            "start": 17.3,
+            "end": 17.94,
+            "probability": 0.49366393499076366
+          },
+          {
+            "word": "曲",
+            "start": 17.94,
+            "end": 17.94,
+            "probability": 0.2410650998353958
+          },
+          {
+            "word": " 李",
+            "start": 17.94,
+            "end": 17.94,
+            "probability": 0.10003956407308578
+          },
+          {
+            "word": "宗",
+            "start": 17.94,
+            "end": 17.94,
+            "probability": 0.2649246882647276
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "seek": 0,
+        "start": 17.94,
+        "end": 17.94,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.6114765764719032,
+        "compression_ratio": 2.05,
+        "no_speech_prob": 0.5446777939796448,
+        "words": []
+      },
+      {
+        "id": 2,
+        "seek": 0,
+        "start": 17.94,
+        "end": 17.94,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.6114765764719032,
+        "compression_ratio": 2.05,
+        "no_speech_prob": 0.5446777939796448,
+        "words": []
+      },
+      {
+        "id": 3,
+        "seek": 0,
+        "start": 17.94,
+        "end": 17.94,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.6114765764719032,
+        "compression_ratio": 2.05,
+        "no_speech_prob": 0.5446777939796448,
+        "words": []
+      },
+      {
+        "id": 4,
+        "seek": 0,
+        "start": 17.94,
+        "end": 17.96,
+        "text": "曲 李宗",
+        "tokens": [
+          50864,
+          30753,
+          220,
+          31206,
+          2415,
+          245,
+          50964
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.6114765764719032,
+        "compression_ratio": 2.05,
+        "no_speech_prob": 0.5446777939796448,
+        "words": [
+          {
+            "word": "曲",
+            "start": 17.94,
+            "end": 17.94,
+            "probability": 0.7046310901641846
+          },
+          {
+            "word": " 李",
+            "start": 17.96,
+            "end": 17.96,
+            "probability": 0.8759045600891113
+          },
+          {
+            "word": "宗",
+            "start": 17.96,
+            "end": 17.96,
+            "probability": 0.9927451312541962
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "seek": 0,
+        "start": 17.96,
+        "end": 18.28,
+        "text": "曲 李宗",
+        "tokens": [
+          50964,
+          30753,
+          220,
+          31206,
+          2415,
+          245,
+          51064
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.6114765764719032,
+        "compression_ratio": 2.05,
+        "no_speech_prob": 0.5446777939796448,
+        "words": [
+          {
+            "word": "曲",
+            "start": 17.96,
+            "end": 17.96,
+            "probability": 0.7720484137535095
+          },
+          {
+            "word": " 李",
+            "start": 18.28,
+            "end": 18.28,
+            "probability": 0.8855314254760742
+          },
+          {
+            "word": "宗",
+            "start": 18.28,
+            "end": 18.28,
+            "probability": 0.9934839308261871
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "seek": 0,
+        "start": 18.28,
+        "end": 18.28,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.6114765764719032,
+        "compression_ratio": 2.05,
+        "no_speech_prob": 0.5446777939796448,
+        "words": []
+      },
+      {
+        "id": 7,
+        "seek": 0,
+        "start": 18.28,
+        "end": 18.32,
+        "text": "曲 李宗",
+        "tokens": [
+          51164,
+          30753,
+          220,
+          31206,
+          2415,
+          245,
+          51264
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.6114765764719032,
+        "compression_ratio": 2.05,
+        "no_speech_prob": 0.5446777939796448,
+        "words": [
+          {
+            "word": "曲",
+            "start": 18.28,
+            "end": 18.28,
+            "probability": 0.8285681009292603
+          },
+          {
+            "word": " 李",
+            "start": 18.32,
+            "end": 18.32,
+            "probability": 0.8931707739830017
+          },
+          {
+            "word": "宗",
+            "start": 18.32,
+            "end": 18.32,
+            "probability": 0.9912747740745544
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "seek": 0,
+        "start": 18.32,
+        "end": 21.2,
+        "text": "G.Y.的風浪浪的",
+        "tokens": [
+          51264,
+          38,
+          13,
+          56,
+          13,
+          1546,
+          22713,
+          11038,
+          103,
+          11038,
+          103,
+          1546,
+          51464
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.6114765764719032,
+        "compression_ratio": 2.05,
+        "no_speech_prob": 0.5446777939796448,
+        "words": [
+          {
+            "word": "G.",
+            "start": 18.32,
+            "end": 18.32,
+            "probability": 0.0005128222401253879
+          },
+          {
+            "word": "Y.",
+            "start": 18.56,
+            "end": 18.6,
+            "probability": 0.0869968980550766
+          },
+          {
+            "word": "的",
+            "start": 18.8,
+            "end": 18.86,
+            "probability": 0.3225673735141754
+          },
+          {
+            "word": "風",
+            "start": 18.86,
+            "end": 19.24,
+            "probability": 0.6092645525932312
+          },
+          {
+            "word": "浪",
+            "start": 19.24,
+            "end": 19.74,
+            "probability": 0.7003040611743927
+          },
+          {
+            "word": "浪",
+            "start": 19.74,
+            "end": 20.48,
+            "probability": 0.8642970621585846
+          },
+          {
+            "word": "的",
+            "start": 20.48,
+            "end": 21.2,
+            "probability": 0.3573651611804962
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "seek": 0,
+        "start": 21.88,
+        "end": 26.06,
+        "text": "連圓都變熱熱的",
+        "tokens": [
+          51464,
+          36252,
+          2523,
+          241,
+          7182,
+          26327,
+          32745,
+          32745,
+          1546,
+          51664
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.6114765764719032,
+        "compression_ratio": 2.05,
+        "no_speech_prob": 0.5446777939796448,
+        "words": [
+          {
+            "word": "連",
+            "start": 21.88,
+            "end": 22.52,
+            "probability": 0.516384482383728
+          },
+          {
+            "word": "圓",
+            "start": 22.52,
+            "end": 22.78,
+            "probability": 0.5636430084705353
+          },
+          {
+            "word": "都",
+            "start": 22.78,
+            "end": 23.1,
+            "probability": 0.9043172597885132
+          },
+          {
+            "word": "變",
+            "start": 23.1,
+            "end": 23.36,
+            "probability": 0.9723363518714905
+          },
+          {
+            "word": "熱",
+            "start": 23.36,
+            "end": 23.88,
+            "probability": 0.33746927976608276
+          },
+          {
+            "word": "熱",
+            "start": 23.88,
+            "end": 24.76,
+            "probability": 0.8309399485588074
+          },
+          {
+            "word": "的",
+            "start": 24.76,
+            "end": 26.06,
+            "probability": 0.9905661940574646
+          }
+        ]
+      },
+      {
+        "id": 10,
+        "seek": 2606,
+        "start": 26.06,
+        "end": 31.38,
+        "text": "不做好天漫漫的一整月後",
+        "tokens": [
+          50364,
+          1960,
+          10907,
+          2131,
+          6135,
+          14065,
+          104,
+          14065,
+          104,
+          1546,
+          2257,
+          27662,
+          6939,
+          5661,
+          50639
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.8239518945867365,
+        "compression_ratio": 0.8333333333333334,
+        "no_speech_prob": 0.6465066075325012,
+        "words": [
+          {
+            "word": "不",
+            "start": 26.06,
+            "end": 26.78,
+            "probability": 0.4878723621368408
+          },
+          {
+            "word": "做",
+            "start": 26.78,
+            "end": 27.0,
+            "probability": 0.5939679145812988
+          },
+          {
+            "word": "好",
+            "start": 27.0,
+            "end": 27.26,
+            "probability": 0.9175001978874207
+          },
+          {
+            "word": "天",
+            "start": 27.26,
+            "end": 27.58,
+            "probability": 0.4976186752319336
+          },
+          {
+            "word": "漫",
+            "start": 27.58,
+            "end": 28.1,
+            "probability": 0.5999635830521584
+          },
+          {
+            "word": "漫",
+            "start": 28.1,
+            "end": 28.8,
+            "probability": 0.9979507625102997
+          },
+          {
+            "word": "的",
+            "start": 28.8,
+            "end": 29.2,
+            "probability": 0.9282118678092957
+          },
+          {
+            "word": "一",
+            "start": 29.2,
+            "end": 29.66,
+            "probability": 0.5131213665008545
+          },
+          {
+            "word": "整",
+            "start": 29.66,
+            "end": 29.98,
+            "probability": 0.5570937395095825
+          },
+          {
+            "word": "月",
+            "start": 29.98,
+            "end": 30.7,
+            "probability": 0.48493969440460205
+          },
+          {
+            "word": "後",
+            "start": 30.7,
+            "end": 31.38,
+            "probability": 0.43145695328712463
+          }
+        ]
+      },
+      {
+        "id": 11,
+        "seek": 2606,
+        "start": 31.38,
+        "end": 33.24,
+        "text": "約下了過",
+        "tokens": [
+          50639,
+          30889,
+          4438,
+          2289,
+          8816,
+          50764
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.8239518945867365,
+        "compression_ratio": 0.8333333333333334,
+        "no_speech_prob": 0.6465066075325012,
+        "words": [
+          {
+            "word": "約",
+            "start": 31.38,
+            "end": 31.74,
+            "probability": 0.11482703685760498
+          },
+          {
+            "word": "下",
+            "start": 31.74,
+            "end": 32.24,
+            "probability": 0.16852131485939026
+          },
+          {
+            "word": "了",
+            "start": 32.24,
+            "end": 32.78,
+            "probability": 0.36333057284355164
+          },
+          {
+            "word": "過",
+            "start": 32.78,
+            "end": 33.24,
+            "probability": 0.8500511050224304
+          }
+        ]
+      }
+    ],
+    "language": "zh"
+  }
+}

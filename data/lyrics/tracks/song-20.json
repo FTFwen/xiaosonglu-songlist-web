@@ -1,0 +1,183 @@
+{
+  "schemaVersion": 1,
+  "key": "song-20",
+  "songId": 20,
+  "songName": "跳楼机",
+  "rowKey": "跳楼机",
+  "displaySongName": "跳楼机",
+  "artist": "LBI利比",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "来自 2026-08-09 第一次歌回回放 p2 后段。51-54 分钟切片前半仍有试音和断续跟唱，但约 52:19 起连续命中“Baby我们的感情，好像跳楼机”“让我突然地升空，又急速落地”“那天的天气难得放晴”“你说的话却把我困在雨季”等高辨识度句群，DuckDuckGo 检索结果稳定指向 LBI利比《跳楼机》，可先入库并保留人工复核标签。",
+  "audio": {
+    "url": "assets/audio/song_58.m4a?v=6bcf16d586d4",
+    "sha256": "6bcf16d586d4242718f5a2857e2986f50526dc1eef91980449cd7d1812304fce"
+  },
+  "retrievedAt": "2026-11-16T04:03:16.754Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E8%B7%B3%E6%A5%BC%E6%9C%BA&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E8%B7%B3%E6%A5%BC%E6%9C%BA%20LBI%E5%88%A9%E6%AF%94&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 2645500113,
+        "name": "跳楼机",
+        "artists": [
+          "LBI利比"
+        ],
+        "album": "跳楼机",
+        "durationMs": 201711,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2683018415,
+        "name": "跳楼机",
+        "artists": [
+          "Babbitt巴比特"
+        ],
+        "album": "跳楼机（氛围版）",
+        "durationMs": 201643,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2674085487,
+        "name": "跳楼机",
+        "artists": [
+          "缘为冰"
+        ],
+        "album": "跳楼机 (baby我们的感情好像跳楼机)",
+        "durationMs": 117469,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2675178373,
+        "name": "跳楼机",
+        "artists": [
+          "en（王翊恩）"
+        ],
+        "album": "跳楼机",
+        "durationMs": 209158,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2730161776,
+        "name": "跳楼机",
+        "artists": [
+          "DJ迷人磊"
+        ],
+        "album": "跳楼机",
+        "durationMs": 243840,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2689185648,
+        "name": "跳楼机",
+        "artists": [
+          "兰音Reine"
+        ],
+        "album": "跳楼机",
+        "durationMs": 201244,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2676045691,
+        "name": "跳楼机",
+        "artists": [
+          "刘大拿"
+        ],
+        "album": "跳楼机 (女版)",
+        "durationMs": 201883,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2662625817,
+        "name": "跳楼机 (DJ阿布版)",
+        "artists": [
+          "LBI利比"
+        ],
+        "album": "跳楼机",
+        "durationMs": 185295,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      }
+    ],
+    "workQuery": {
+      "song_id": 20,
+      "song_name": "跳楼机",
+      "show_as_song_name": "",
+      "display_song_name": "跳楼机",
+      "artist": "LBI利比",
+      "artist_search": "LBI利比 跳楼机",
+      "feat_artist": "",
+      "remark": "来自 2026-08-09 第一次歌回回放 p2 后段。51-54 分钟切片前半仍有试音和断续跟唱，但约 52:19 起连续命中“Baby我们的感情，好像跳楼机”“让我突然地升空，又急速落地”“那天的天气难得放晴”“你说的话却把我困在雨季”等高辨识度句群，DuckDuckGo 检索结果稳定指向 LBI利比《跳楼机》，可先入库并保留人工复核标签。",
+      "tone": "",
+      "language": "中文",
+      "type": "流行",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1izum6WEZf/",
+      "sing_count": 1,
+      "status_labels": "歌回、自动识别待人工复核",
+      "last_sing_at": "2026-08-09",
+      "row_key": "跳楼机"
+    },
+    "sourceId": 2645500113,
+    "sourcePath": "sources/2645500113.json",
+    "sourceUrl": "https://music.163.com/#/song?id=2645500113",
+    "selected": {
+      "id": 2645500113,
+      "name": "跳楼机",
+      "artists": [
+        "LBI利比"
+      ],
+      "album": "跳楼机",
+      "durationMs": 201711,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 62
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-20-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 196.523,
+    "sourceFirstLine": {
+      "t": 5,
+      "text": "混音&母带 : LBI利比"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 32.2,
+      "endSeconds": 32.42,
+      "similarity": 0.2,
+      "recognizedText": "母",
+      "meanProbability": 0.17,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

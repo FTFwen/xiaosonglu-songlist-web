@@ -1,0 +1,193 @@
+{
+  "schemaVersion": 1,
+  "key": "song-404",
+  "songId": 404,
+  "songName": "恋友",
+  "rowKey": "恋友",
+  "displaySongName": "恋友",
+  "artist": "Kevinz / FFF君 / 徵羽摩柯 / 乐正绫",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "",
+  "audio": {
+    "url": "assets/audio/song_403.m4a?v=a5c5c6ec4002",
+    "sha256": "a5c5c6ec4002ec77fef2c531d4d9bb026e15f0a10997481111c75cff5aaf2626"
+  },
+  "retrievedAt": "2026-11-16T04:08:23.349Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E6%81%8B%E5%8F%8B&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E6%81%8B%E5%8F%8B%20Kevinz%20%2F%20FFF%E5%90%9B%20%2F%20%E5%BE%B5%E7%BE%BD%E6%91%A9%E6%9F%AF%20%2F%20%E4%B9%90%E6%AD%A3%E7%BB%AB&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1322404518,
+        "name": "恋友",
+        "artists": [
+          "Kevinz",
+          "FFF君",
+          "徵羽摩柯",
+          "乐正绫"
+        ],
+        "album": "恋友",
+        "durationMs": 348715,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2142075795,
+        "name": "恋友",
+        "artists": [
+          "竺柏影",
+          "莫米兔"
+        ],
+        "album": "盖竺柏影也",
+        "durationMs": 342837,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2628057328,
+        "name": "恋友",
+        "artists": [
+          "马哥",
+          "潋妤",
+          "血焰玖蝶"
+        ],
+        "album": "恋友【徵羽摩柯AI】",
+        "durationMs": 346764,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2703931964,
+        "name": "恋友",
+        "artists": [
+          "周东彦"
+        ],
+        "album": "周而复始",
+        "durationMs": 173313,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3440472419,
+        "name": "恋友",
+        "artists": [
+          "沐雨辰"
+        ],
+        "album": "恋友",
+        "durationMs": 170773,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1322407176,
+        "name": "恋友 - Off Vocal -",
+        "artists": [
+          "Kevinz"
+        ],
+        "album": "恋友",
+        "durationMs": 347689,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      },
+      {
+        "id": 2653703989,
+        "name": "恋友（Cover Kevinz/FFF君）",
+        "artists": [
+          "雍雁P",
+          "星尘Infinity"
+        ],
+        "album": "雍雁P的翻调作品集",
+        "durationMs": 349013,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 2688114077,
+        "name": "恋友禅",
+        "artists": [
+          "江夏夕香"
+        ],
+        "album": "恋友禅 / むらさき傘",
+        "durationMs": 310773,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      }
+    ],
+    "workQuery": {
+      "song_id": 404,
+      "song_name": "恋友",
+      "show_as_song_name": "",
+      "display_song_name": "恋友",
+      "artist": "Kevinz / FFF君 / 徵羽摩柯 / 乐正绫",
+      "artist_search": "Kevinz / FFF君 / 徵羽摩柯 / 乐正绫",
+      "feat_artist": "",
+      "remark": "",
+      "tone": "",
+      "language": "中文",
+      "type": "中V",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1LRWd6jEqp/?p=30",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-11-12",
+      "row_key": "恋友"
+    },
+    "sourceId": 1322404518,
+    "sourcePath": "sources/1322404518.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1322404518",
+    "selected": {
+      "id": 1322404518,
+      "name": "恋友",
+      "artists": [
+        "Kevinz",
+        "FFF君",
+        "徵羽摩柯",
+        "乐正绫"
+      ],
+      "album": "恋友",
+      "durationMs": 348715,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 47
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-404-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 332.8,
+    "sourceFirstLine": {
+      "t": 2.63,
+      "text": "调混 : FFF君"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 0.0,
+      "endSeconds": 0.14,
+      "similarity": 0.0,
+      "recognizedText": "我",
+      "meanProbability": 0.041,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

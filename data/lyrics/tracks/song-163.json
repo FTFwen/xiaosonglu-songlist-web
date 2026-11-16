@@ -1,0 +1,185 @@
+{
+  "schemaVersion": 1,
+  "key": "song-163",
+  "songId": 163,
+  "songName": "三千世界鸦杀尽",
+  "rowKey": "三千世界鸦杀尽",
+  "displaySongName": "三千世界鸦杀尽",
+  "artist": "洛天依Official",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "",
+  "audio": {
+    "url": "assets/audio/song_162.m4a?v=eeff99b626f3",
+    "sha256": "eeff99b626f334cfbc3ab74e1cfe186c76f280b32553df41d6368b7a79708dfc"
+  },
+  "retrievedAt": "2026-11-16T04:04:13.826Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E4%B8%89%E5%8D%83%E4%B8%96%E7%95%8C%E9%B8%A6%E6%9D%80%E5%B0%BD&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E4%B8%89%E5%8D%83%E4%B8%96%E7%95%8C%E9%B8%A6%E6%9D%80%E5%B0%BD%20%E6%B4%9B%E5%A4%A9%E4%BE%9DOfficial&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 27908601,
+        "name": "三千世界鸦杀尽",
+        "artists": [
+          "洛天依Official"
+        ],
+        "album": "热门华语136",
+        "durationMs": 217129,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 31563609,
+        "name": "三千世界鸦杀尽",
+        "artists": [
+          "花之祭P",
+          "洛天依Official"
+        ],
+        "album": "百鬼绘卷",
+        "durationMs": 217129,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 29109022,
+        "name": "三千世界鸦杀尽",
+        "artists": [
+          "VOCALOID"
+        ],
+        "album": "花洛兮",
+        "durationMs": 217129,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1312252926,
+        "name": "三千世界鸦杀尽",
+        "artists": [
+          "朝妹夕推"
+        ],
+        "album": "2012-2015年部分歌曲补档",
+        "durationMs": 216555,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1437258986,
+        "name": "三千世界鸦杀尽",
+        "artists": [
+          "帕苏卡露",
+          "余袅袅"
+        ],
+        "album": "【余袅袅】三千世界鸦杀尽",
+        "durationMs": 220598,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3459367759,
+        "name": "三千世界鸦杀尽",
+        "artists": [
+          "風权"
+        ],
+        "album": "",
+        "durationMs": 219157,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3441609208,
+        "name": "三千世界鸦杀尽",
+        "artists": [
+          "四叶是你的谎言"
+        ],
+        "album": "幻灯",
+        "durationMs": 217803,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 502111409,
+        "name": "三千世界鸦杀尽（Cover 洛天依）",
+        "artists": [
+          "陈俞瑾"
+        ],
+        "album": "Eclipse",
+        "durationMs": 217282,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      }
+    ],
+    "workQuery": {
+      "song_id": 163,
+      "song_name": "三千世界鸦杀尽",
+      "show_as_song_name": "",
+      "display_song_name": "三千世界鸦杀尽",
+      "artist": "洛天依Official",
+      "artist_search": "洛天依Official",
+      "feat_artist": "",
+      "remark": "",
+      "tone": "",
+      "language": "中文",
+      "type": "中V",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=25",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-09-08",
+      "row_key": "三千世界鸦杀尽"
+    },
+    "sourceId": 27908601,
+    "sourcePath": "sources/27908601.json",
+    "sourceUrl": "https://music.163.com/#/song?id=27908601",
+    "selected": {
+      "id": 27908601,
+      "name": "三千世界鸦杀尽",
+      "artists": [
+        "洛天依Official"
+      ],
+      "album": "热门华语136",
+      "durationMs": 217129,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 34
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-163-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 225.744,
+    "sourceFirstLine": {
+      "t": 31.8,
+      "text": "夜寂夜鸦起 夜息夜鸦寂"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 33.7,
+      "endSeconds": 36.66,
+      "similarity": 0.5,
+      "recognizedText": "《夜夜夹心》夜夜",
+      "meanProbability": 0.253,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

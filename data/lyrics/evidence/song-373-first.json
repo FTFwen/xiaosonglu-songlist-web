@@ -1,0 +1,36 @@
+{
+  "audioSha256": "2d810422592f0e829311f5d38cf555bfa2dc1a25337087efd83be7aabb8237e4",
+  "model": "whisper-base",
+  "start": 0,
+  "end": 35,
+  "result": {
+    "text": "哦",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 24.880000000000003,
+        "end": 26.28,
+        "text": "哦",
+        "tokens": [
+          50364,
+          14659,
+          50389
+        ],
+        "temperature": 0,
+        "avg_logprob": -1.4167752265930176,
+        "compression_ratio": 0.2727272727272727,
+        "no_speech_prob": 0.11626671999692917,
+        "words": [
+          {
+            "word": "哦",
+            "start": 24.880000000000003,
+            "end": 26.28,
+            "probability": 0.07163386046886444
+          }
+        ]
+      }
+    ],
+    "language": "zh"
+  }
+}

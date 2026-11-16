@@ -1,0 +1,212 @@
+[
+  {
+    "key": "song-194",
+    "currentSource": null,
+    "proposedSourceId": 1325357378,
+    "evidenceUrl": "https://music.163.com/api/song/lyric?id=1325357378&lv=1&kv=1&tv=-1",
+    "reason": "Public search/get confirms canonical title and original artist ずっと真夜中でいいのに。; stored simplified 针 prevents title equality despite canonical alias query. Live lyric API code 200 returns 54 timestamped rows. Correct canonical matching title; recording alignment remains unverified.",
+    "proposedTitle": "秒針を噛む",
+    "status": "matched"
+  },
+  {
+    "key": "song-73",
+    "currentSource": null,
+    "proposedSourceId": 1854231422,
+    "evidenceUrl": "https://music.163.com/api/song/lyric?id=1854231422&lv=1&kv=1&tv=-1",
+    "reason": "Public search/get maps translated MORE JUMP MORE! to モア！ジャンプ！モア！ (feat. 花里みのり&桐谷遥&桃井愛莉&日野森雫&初音ミク), artists ナユタン星人 / MORE MORE JUMP！ / 初音ミク, duration 182183ms. Live lyric API returns 83 timestamped rows. Alias correction only; recording alignment unverified.",
+    "proposedTitle": "モア！ジャンプ！モア！",
+    "status": "matched"
+  },
+  {
+    "key": "song-357",
+    "currentSource": 2722023883,
+    "proposedSourceId": 1869161372,
+    "evidenceUrl": "https://music.163.com/api/search/get?s=%E8%BF%BD%E6%86%B6%20PIKASONIC&type=1&limit=10",
+    "reason": "Exact requested artists PIKASONIC / なこたんまる match 追憶 (feat. nakotanmaru), duration 249000ms. Current source is unrelated V.W.P song. Live lyric API returns 50 timestamped rows. Source identity confirmed; recording alignment unverified.",
+    "proposedTitle": "追憶 (feat. nakotanmaru)",
+    "status": "matched"
+  },
+  {
+    "key": "song-21",
+    "currentSource": 2699610836,
+    "proposedSourceId": 306855,
+    "evidenceUrl": "https://music.163.com/api/search/get?s=%E8%8B%8F%E5%B7%9E%E6%B2%B3%20%E8%96%9B%E5%87%AF%E7%90%AA&type=1&limit=8",
+    "reason": "Public search/get confirms 薛凯琪 蘇州河 (慕容雪 - Mandarin Version), 240520ms. Current source is 南青乐队 same-title different song. Live lyric API returns 56 timestamped rows, first sung text 我只是渔火 你是泡沫. Traditional title/subtitle alias required; recording alignment unverified.",
+    "proposedTitle": "蘇州河 (慕容雪 - Mandarin Version)",
+    "status": "matched"
+  },
+  {
+    "key": "song-208",
+    "currentSource": 436016480,
+    "proposedSourceId": 1957493200,
+    "evidenceUrl": "https://music.163.com/api/search/get?s=404%20Not%20Found%20%E5%B9%B3%E8%A1%8C%E5%9B%9B%E7%95%8C&type=1&limit=10",
+    "reason": "Current REOL 404 not found is a different work. Public search confirms 平行四界Quadimension 404 Not Found (322233ms), consistent with 赤羽 catalog work; live lyric API returns 39 timestamped rows, beginning 当万木俱焚别走近我. Treat as original-work source requiring recording alignment.",
+    "proposedTitle": "404 Not Found",
+    "status": "matched"
+  },
+  {
+    "key": "song-151",
+    "currentSource": 1978276328,
+    "proposedSourceId": 34834947,
+    "evidenceUrl": "https://music.163.com/song?id=34834947",
+    "reason": "Indexed public song page and live song/detail confirm original 洛天依Official 世末积雨云, album 洛天依作品集, 285910ms. Live song/lyric returns 66 timestamped rows with COP credits and first sung line 为世界终结前最后的画面. Current source is 离大 / ACE虚拟歌姬 cover. Prefer original over 2024 鬼否 rearrangement 2604528479. No audio alignment claim.",
+    "proposedTitle": "世末积雨云",
+    "status": "matched"
+  },
+  {
+    "key": "derivative-1107",
+    "currentSource": 1978276328,
+    "proposedSourceId": 34834947,
+    "evidenceUrl": "https://music.163.com/song?id=34834947",
+    "reason": "Same underlying work as song-151; original 洛天依Official source confirmed by live song/detail and 66 timestamped lyric rows. Current source is ACE cover. Derivative vocal/arrangement alignment must remain separately unverified.",
+    "proposedTitle": "世末积雨云",
+    "status": "matched"
+  },
+  {
+    "key": "song-25",
+    "currentSource": 2604528480,
+    "proposedSourceId": 2026740264,
+    "evidenceUrl": "https://music.163.com/api/search/get?s=%E4%B8%89%E6%9C%88%E9%9B%A8%20%E6%99%B4%E6%B5%B7&type=1&limit=8",
+    "reason": "Public search confirms 三月雨 by 晴海 / 乐正绫AI / 乐正绫, 280320ms; live lyric API returns 48 timestamped rows, first sung 细雨坠 at 12.64s. This is an artist-consistent source candidate versus current 洛天依 2024 再生 arrangement. Local cut is 439.765s, so do not promote to matched without checking which arrangement/extra material is present; source recommendation only.",
+    "proposedTitle": "三月雨",
+    "status": "candidate_review_required"
+  },
+  {
+    "key": "song-89",
+    "currentSource": 1906608497,
+    "proposedSourceId": 1925101032,
+    "evidenceUrl": "https://music.163.com/song?id=1925101032",
+    "reason": "Existing search candidates identify 流霰 (星尘Infinity Version), 旅行の蜗牛 / 星尘, 240544ms, matching catalog artist/version notes. Current source is 诗岸 version. Live lyric API returns 74 timestamped rows. Replace work-version source and realign separately.",
+    "proposedTitle": "流霰 (星尘Infinity Version)",
+    "status": "matched"
+  },
+  {
+    "key": "song-335",
+    "currentSource": 189000,
+    "proposedSourceId": 3399839173,
+    "evidenceUrl": "https://music.163.com/song?id=3399839173",
+    "reason": "Existing search candidates identify 李佳薇 甲乙丙丁 (你我怎么两清), matching catalog artist; current 张学友 / 郑中基 / 许志安 song is unrelated. Live lyric API returns 70 timestamped rows, credits 应晓璃@SoundJoin词曲. Recording alignment remains unverified.",
+    "proposedTitle": "甲乙丙丁 (你我怎么两清)",
+    "status": "matched"
+  },
+  {
+    "key": "song-401",
+    "currentSource": 1915256320,
+    "proposedSourceId": 459555084,
+    "evidenceUrl": "https://music.163.com/song?id=459555084",
+    "reason": "Existing search candidates identify 万神纪(人声本家·) by requested 肥皂菌丨珉珉的猫咪丨, rather than current 凤凰传奇 version. Live lyric API returns 77 timestamped rows with 邪叫教主 / 海鲜面 credits. Audio alignment remains unverified.",
+    "proposedTitle": "万神纪(人声本家·)",
+    "status": "matched"
+  },
+  {
+    "key": "song-258",
+    "currentSource": 1932320908,
+    "proposedSourceId": 1837575277,
+    "evidenceUrl": "https://music.163.com/api/search/get?s=%E4%B8%91%E9%A9%AC%20ChiliChill&type=1&limit=5",
+    "reason": "Public search identifies requested ChiliChill乐团 丑马（翻自 乐正绫）, 207807ms. Current source is cloud米米 cover. Live lyric API returns 55 timestamped rows with ChiliChill writing credits. Parenthetical cover suffix currently loses to exact-title covers. Recording alignment unverified.",
+    "proposedTitle": "丑马（翻自 乐正绫）",
+    "status": "matched"
+  },
+  {
+    "key": "song-28",
+    "currentSource": 3341026792,
+    "proposedSourceId": 3341026792,
+    "evidenceUrl": "https://music.163.com/api/search/get?s=%E6%9C%88%E3%81%8C%E7%B6%BA%E9%BA%97%E3%81%AD%E3%81%A8%E8%A8%80%E3%82%8F%E3%82%8C%E3%81%9F%E3%81%84&type=1&limit=5",
+    "reason": "Keep source ID; expand abbreviated catalog title 月が綺麗ね to canonical 柿崎ユウタ title 月が綺麗ねと言われたい！. Public search confirms artist and 147187ms. Live API returns 48 timestamped rows; sung stamps include colon-fraction syntax [00:12:95], which the current parser already supports. Title-only correction; recording alignment remains unverified.",
+    "proposedTitle": "月が綺麗ねと言われたい！",
+    "status": "matched"
+  },
+  {
+    "key": "song-95",
+    "currentSource": 1974146645,
+    "proposedSourceId": null,
+    "evidenceUrl": "https://www.bilibili.com/video/BV1kg411d7gK/",
+    "reason": "Reject current ID: local cached and live search metadata show unrelated 45.302s 恋苦 by 斌, empty LRC. Public original upload and https://vocadb.net/S/409522 identify 戀苦 by 月犬P / 坐标P / 踏云社 feat. 星尘Infinity (4:52). Searches for 恋苦/戀苦 plus 月犬/星尘/踏云社 yielded no verified matching Netease ID. Null explicitly means remove wrong match and retain unresolved; do not invent replacement ID.",
+    "proposedTitle": "戀苦",
+    "status": "not_found"
+  },
+  {
+    "key": "song-80",
+    "proposedSourceId": 2126481191,
+    "proposedTitle": "SOS — 黛冬優子（CV.幸村恵理）",
+    "evidenceUrl": "https://music.163.com/api/song/detail/?id=2005000974&ids=[2005000974]",
+    "reason": "Reject current 1357848241: Avicii/Aloe Blacc is a different work. Exact title+character, simplified character, and voice-actor searches found official 2005000974 SOS (Off Vocal), artist 幸村恵理, 241800ms; its lyric endpoint is empty, so it is not a vocal lyric source. Verified cover 2126481191 is ONNONANA_呐呐, album 【Nana翻唱】SOS／幸村恵理; its lyric endpoint begins キミにFall in love／恋のSOSずっと胸が苦しいんです. This confirms the intended work but not an exact original-vocal source ID. Do not substitute the cover or off-vocal silently. Retained explicitly as a cover-source candidate for the confirmed composition, NOT as the original master.",
+    "status": "candidate_review_required"
+  },
+  {
+    "key": "song-12",
+    "proposedSourceId": 1833149333,
+    "proposedTitle": "【诗岸/海伊】花粉症",
+    "evidenceUrl": "https://music.163.com/api/song/detail/?id=1833149333&ids=[1833149333]",
+    "reason": "Verified song/detail: title 【诗岸/海伊】花粉症, artist/uploader 清风疾行_, album 花粉症, 193897ms. Verified api/song/lyric?id=1833149333&lv=1&kv=1&tv=-1: 作词 格林子, 作曲 清风疾行_; begins 紧闭的玻璃窗／被季节遗忘的地方 and includes 花海间徜徉／那是每个少女的梦想／别幻想／美好景象, matching catalog evidence. Reject current 1310023030 许茹芸, whose first line 为什么 我眼泪流不停 belongs to a different work. Also distinguished 1441569227 【诗岸】花粉症 from the requested duet.",
+    "status": "matched"
+  },
+  {
+    "key": "song-96",
+    "proposedSourceId": 1885205681,
+    "proposedTitle": "光 — Kide / Ddickky / 星尘",
+    "evidenceUrl": "https://music.163.com/api/song/detail/?id=2010336912&ids=[2010336912]",
+    "reason": "Reject current 30431364 陈粒, a different work. Verified 2010336912 is 光（伴奏）, artist kide, album 光, 253910ms, lyric endpoint empty. Exact original 星尘 vocal ID was not recovered within bounded research. Verified related vocal edition 1885205681 is 茶理理 光, 218067ms; its lyric endpoint explicitly credits 作词 Ddickky / 作曲 Kide / 编曲 AST / 演唱 茶理理 and begins 如在黑夜中／被熄灭了星空. This establishes same composition but a different performer, arrangement, and duration, so it is not proposed as the exact 星尘 source. Retained explicitly as a related-work/arrangement candidate, NOT as the requested recording.",
+    "status": "candidate_review_required"
+  },
+  {
+    "key": "song-70",
+    "proposedSourceId": 515964379,
+    "proposedTitle": "碎梦（short ver.） — COP / 乐正绫",
+    "evidenceUrl": "https://music.163.com/api/song/detail/?id=515964379&ids=[515964379]",
+    "reason": "Verified song/detail: 碎梦（short ver.）, artists COP / 乐正绫, album 碎梦（short ver.）, 97959ms. Verified lyric endpoint credits 作词/作曲 COP and begins 事到如今 懒得想什么明天; chorus 从我又小又拥挤的房间／从我堆满了贪念的床边／飞向总有容身处的世界／却碎裂 却碎裂. Reject current 2058711050 胡彦斌/逆水长琴, a different composition. This is an exact verified original short edition ONLY: do not claim complete-song lyrics or align a full performance against it. No original full-version ID was verified.",
+    "status": "version_review_required"
+  },
+  {
+    "key": "song-65",
+    "proposedSourceId": 1938216578,
+    "proposedTitle": "涟漪(星尘Infinity 2022Ver.) — 平行四界Quadimension / 星尘",
+    "evidenceUrl": "https://music.163.com/api/song/detail/?id=1938216578&ids=[1938216578]",
+    "reason": "Verified song/detail: 涟漪(星尘Infinity 2022Ver.), artists 平行四界Quadimension / 星尘, album 涟漪, 250830ms. Verified lyric endpoint: 将漂浮的声音都吞没／描绘着贝壳上的轮廓; chorus 你盛开于那盛夏的污浊／我流连于那温柔的疼痛 and 陪我多一些多一些的时间. Reject current 3426083946 供销社乐队, an unrelated artist/work. Exact verified edition is 2022 Infinity, not a claim that the older Zeno original master has been recovered; endpoint credits corporate 平行四界Quadimension rather than Zeno. Requires edition check before alignment.",
+    "status": "version_review_required"
+  },
+  {
+    "key": "song-362",
+    "proposedSourceId": 150623,
+    "proposedTitle": "普通朋友（翻唱正式版） — 零度甜",
+    "evidenceUrl": "https://music.163.com/api/song/detail/?id=2157482420&ids=[2157482420]",
+    "reason": "Verified exact title+artist search and song/detail: 普通朋友（翻唱正式版）, artist 零度甜, album 高能翻唱热播系列13, 251812ms. Current 150623 is 陶喆, not the requested performer. Crucial limitation: lyric endpoint api/song/lyric?id=2157482420&lv=1&kv=1&tv=-1 returns empty lyric; source identity verified but no timed lyrics recovered. Title explicitly says 翻唱: research does not establish that this is a different composition from 陶喆, only that current source performer is not 零度甜. Do not infer a different work solely from artist mismatch. Retain Tao source as composition candidate; cover title is not sufficient alone to certify identical lyrics or timing.",
+    "status": "candidate_review_required"
+  },
+  {
+    "key": "song-271",
+    "proposedSourceId": 2059496999,
+    "proposedTitle": "梦乡demo(黄恩茹) — 滕少",
+    "evidenceUrl": "https://music.163.com/api/song/detail/?id=2059496999&ids=[2059496999]",
+    "reason": "Verified song/detail: 梦乡demo(黄恩茹), artist/uploader 滕少, album 应许之地demo合集, 200208ms. Verified lyric endpoint credits 作曲 DogP(乾英明 松野恭平), 作词 符酷@混核基音, 制作人 滕少, 和声演唱 SNH48黄恩茹、SNH48由淼, 版权 丝芭传媒; lyric begins 忽而别绪随风起／光与影 悠长岁月斑驳陆离, chorus 灯里 眼里 字里 心里 梦里／留一缕春意. Reject current 1379873872 陈鸿宇, whose lyric begins 你望黄昏有灯，晚风有骨, a different work. Verified source is explicitly demo, not a confirmed released solo master. Initial lyric timestamps are suspiciously compressed (26.79–28.78 covers several lines), so retain edition/timing review rather than automatic alignment.",
+    "status": "version_review_required"
+  },
+  {
+    "key": "song-277",
+    "proposedSourceId": 2731325796,
+    "status": "version_review_required",
+    "evidenceUrl": "https://music.163.com/#/song?id=2731325796",
+    "reason": "Catalog language is Chinese but source lyrics are Japanese. Catalog language may itself be wrong. Confirm actual sung language and lyric edition before selecting any alternate Chinese cover."
+  },
+  {
+    "key": "song-278",
+    "proposedSourceId": 2612747239,
+    "status": "version_review_required",
+    "evidenceUrl": "https://music.163.com/#/song?id=2612747239",
+    "reason": "Catalog language is Chinese but source lyrics are Japanese. Catalog language may itself be wrong. Confirm actual sung language and lyric edition before selecting any alternate Chinese cover."
+  },
+  {
+    "key": "song-352",
+    "proposedSourceId": 1958186873,
+    "status": "version_review_required",
+    "evidenceUrl": "https://music.163.com/#/song?id=1958186873",
+    "reason": "Catalog names なきそ / 可不 but selected source is another same-title song; isolate pending composition confirmation."
+  },
+  {
+    "key": "song-87",
+    "proposedSourceId": 1906952532,
+    "status": "matched",
+    "evidenceUrl": "https://music.163.com/#/song?id=1906952532",
+    "reason": "Reuse the original-artist Flos source from the completed per-audio pilot (audio SHA 25c48adec33de02e0c378195e85dee306fc6a30397ca7a4474e1d1979097f206). Pilot offset -0.006 was unverified and had possible missing lyrics near 246.54s; recompute strict ASR evidence, do not inherit human verification or completeness."
+  }
+]

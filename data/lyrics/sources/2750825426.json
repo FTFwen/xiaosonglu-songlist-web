@@ -1,0 +1,25 @@
+{
+  "platform": "netease",
+  "id": 2750825426,
+  "url": "https://music.163.com/#/song?id=2750825426",
+  "apiUrl": "https://music.163.com/api/song/lyric?id=2750825426&lv=1&kv=1&tv=-1",
+  "retrievedAt": "2026-11-16T04:04:54.411Z",
+  "track": {
+    "id": 2750825426,
+    "name": "404 not found",
+    "artists": [
+      "赤羽",
+      "W & J"
+    ],
+    "album": "404not found",
+    "durationMs": 321024,
+    "titleScore": 1,
+    "artistMatch": true,
+    "score": 1
+  },
+  "lrc": "",
+  "translationLrc": "",
+  "romanizationLrc": "",
+  "instrumental": false,
+  "lines": []
+}

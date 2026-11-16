@@ -1,0 +1,162 @@
+{
+  "schemaVersion": 1,
+  "key": "song-5",
+  "songId": 5,
+  "songName": "后来",
+  "displaySongName": "后来",
+  "artist": "刘若英",
+  "language": "中文",
+  "derivative": false,
+  "audio": {
+    "url": "assets/audio/song_24.m4a?v=c149795db53a",
+    "sha256": "c149795db53a9df45e6281b0bb2637c908c600c738df21befc5ef46a5d2a9767"
+  },
+  "retrievedAt": "2026-11-16T03:58:54.189Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E5%90%8E%E6%9D%A5&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 254574,
+        "name": "后来",
+        "artists": [
+          "刘若英"
+        ],
+        "album": "我等你",
+        "durationMs": 341400,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 254524,
+        "name": "后来",
+        "artists": [
+          "刘若英"
+        ],
+        "album": "收获 新歌+精选",
+        "durationMs": 338140,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1854759997,
+        "name": "后来",
+        "artists": [
+          "笑靖"
+        ],
+        "album": "爱你到最后一刻",
+        "durationMs": 341952,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1900980989,
+        "name": "后来",
+        "artists": [
+          "张敬轩"
+        ],
+        "album": "张敬轩国语苦恋情歌",
+        "durationMs": 359720,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3458616235,
+        "name": "后来",
+        "artists": [
+          "抛弃",
+          "忘记"
+        ],
+        "album": "sj",
+        "durationMs": 30360,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 34834580,
+        "name": "后来 (伴奏)",
+        "artists": [
+          "刘若英"
+        ],
+        "album": "热门华语281",
+        "durationMs": 341400,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      },
+      {
+        "id": 25949862,
+        "name": "后来 (Live)",
+        "artists": [
+          "刘若英"
+        ],
+        "album": "刘若英 脱掉高跟鞋 世界巡回演唱会 LIVE",
+        "durationMs": 310987,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      },
+      {
+        "id": 2128902724,
+        "name": "后来（温柔女声版）",
+        "artists": [
+          "西罕"
+        ],
+        "album": "后来",
+        "durationMs": 335395,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      }
+    ],
+    "sourceId": 254574,
+    "sourcePath": "sources/254574.json",
+    "sourceUrl": "https://music.163.com/#/song?id=254574",
+    "selected": {
+      "id": 254574,
+      "name": "后来",
+      "artists": [
+        "刘若英"
+      ],
+      "album": "我等你",
+      "durationMs": 341400,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 56
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-5-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 328.213,
+    "sourceFirstLine": {
+      "t": 12.571,
+      "text": "后来 我总算学会了如何去爱"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 0.0,
+      "endSeconds": 0.22,
+      "similarity": 0.0,
+      "recognizedText": "超",
+      "meanProbability": 0.674,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  },
+  "rowKey": "后来",
+  "edition": "",
+  "remark": "来自 2026-08-09 第一次歌回回放前段。5-8 分钟切片转写质量较差，但出现了“到后来”等关键字；再结合“栀子花 白花瓣 落在我蓝色百褶裙上”搜索结果，可较高概率对应刘若英《后来》。时间段为近似切段，后续仍建议人工复核。"
+}

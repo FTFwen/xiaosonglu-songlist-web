@@ -1,0 +1,163 @@
+{
+  "schemaVersion": 1,
+  "key": "song-205",
+  "songId": 205,
+  "songName": "遥相逢",
+  "displaySongName": "遥相逢",
+  "artist": "ono / GrogTony / cumin_cike（星尘）",
+  "language": "中文",
+  "derivative": false,
+  "audio": {
+    "url": "assets/audio/song_204.m4a?v=bbff5fe5159f",
+    "sha256": "bbff5fe5159faa104ac6bee2dbb5260c85b6201315097b586c6b5f5e3c12cc11"
+  },
+  "retrievedAt": "2026-11-16T03:58:04.251Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E9%81%A5%E7%9B%B8%E9%80%A2&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1972529962,
+        "name": "遥相逢",
+        "artists": [
+          "小野道ono",
+          "星尘"
+        ],
+        "album": "遥相逢",
+        "durationMs": 219692,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2019370178,
+        "name": "遥相逢",
+        "artists": [
+          "冬名"
+        ],
+        "album": "冬名翻唱合集",
+        "durationMs": 219816,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1996082224,
+        "name": "遥相逢",
+        "artists": [
+          "不是Av的Ay君"
+        ],
+        "album": "遥相逢",
+        "durationMs": 219998,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1974012782,
+        "name": "遥相逢",
+        "artists": [
+          "花晞ovo"
+        ],
+        "album": "遥相逢",
+        "durationMs": 219742,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2637315150,
+        "name": "遥相逢",
+        "artists": [
+          "花信"
+        ],
+        "album": "未修存放",
+        "durationMs": 218480,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2021940666,
+        "name": "遥相逢",
+        "artists": [
+          "月落夕下"
+        ],
+        "album": "月兔的翻唱",
+        "durationMs": 220000,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3372045809,
+        "name": "遥相逢",
+        "artists": [
+          "粤兔文化"
+        ],
+        "album": "遥相逢",
+        "durationMs": 185852,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2603956201,
+        "name": "遥相逢",
+        "artists": [
+          "闫震（Edison Yan）"
+        ],
+        "album": "双子星闫震",
+        "durationMs": 216448,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "sourceId": 1972529962,
+    "sourcePath": "sources/1972529962.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1972529962",
+    "selected": {
+      "id": 1972529962,
+      "name": "遥相逢",
+      "artists": [
+        "小野道ono",
+        "星尘"
+      ],
+      "album": "遥相逢",
+      "durationMs": 219692,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 41
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-205-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 214.459,
+    "sourceFirstLine": {
+      "t": 16.717,
+      "text": "花鸟风月早已被尘封"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 11.74,
+      "endSeconds": 12.14,
+      "similarity": 0.0,
+      "recognizedText": "谢谢",
+      "meanProbability": 0.792,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  },
+  "rowKey": "遥相逢",
+  "edition": "",
+  "remark": "UP 心灵火Flame《20260919 歌切》P7；ono/GrogTony/cumin_cike 创作、星尘演唱（Vocaloid Lyrics Wiki 歌词逐句核对）"
+}

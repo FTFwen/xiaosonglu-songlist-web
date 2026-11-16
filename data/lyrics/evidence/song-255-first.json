@@ -1,0 +1,390 @@
+{
+  "audioSha256": "eb25f4c412ff7fdb42e1a537447dae9ae5e876ec4d9b8afd7560da7fce468ac0",
+  "model": "whisper-base",
+  "start": 0,
+  "end": 35,
+  "result": {
+    "text": "I'm not a good girl私じゃダメですか誰よりもあなたをわかってるよわかってるのはきっと私だけ私にちょっと目ですか心は前に",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 0.0,
+        "end": 15.38,
+        "text": "I'm not a good girl",
+        "tokens": [
+          50364,
+          40,
+          478,
+          406,
+          257,
+          665,
+          2013,
+          50464
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.8269025802612304,
+        "compression_ratio": 1.1071428571428572,
+        "no_speech_prob": 0.222475066781044,
+        "words": [
+          {
+            "word": "I",
+            "start": 0.0,
+            "end": 0.22,
+            "probability": 0.003528774483129382
+          },
+          {
+            "word": "'m",
+            "start": 0.22,
+            "end": 15.38,
+            "probability": 0.18589946627616882
+          },
+          {
+            "word": " not",
+            "start": 15.38,
+            "end": 15.38,
+            "probability": 0.1268833577632904
+          },
+          {
+            "word": " a",
+            "start": 15.38,
+            "end": 15.38,
+            "probability": 0.18508991599082947
+          },
+          {
+            "word": " good",
+            "start": 15.38,
+            "end": 15.38,
+            "probability": 0.05672287195920944
+          },
+          {
+            "word": " girl",
+            "start": 15.38,
+            "end": 15.38,
+            "probability": 0.14075303077697754
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "seek": 0,
+        "start": 15.38,
+        "end": 17.08,
+        "text": "私じゃダメですか",
+        "tokens": [
+          51114,
+          20083,
+          15339,
+          28651,
+          21647,
+          30913,
+          51264
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.8269025802612304,
+        "compression_ratio": 1.1071428571428572,
+        "no_speech_prob": 0.222475066781044,
+        "words": [
+          {
+            "word": "私",
+            "start": 15.38,
+            "end": 15.38,
+            "probability": 0.0006814734661020339
+          },
+          {
+            "word": "じゃ",
+            "start": 15.38,
+            "end": 16.04,
+            "probability": 0.12598340213298798
+          },
+          {
+            "word": "ダ",
+            "start": 16.04,
+            "end": 16.34,
+            "probability": 0.6492556929588318
+          },
+          {
+            "word": "メ",
+            "start": 16.34,
+            "end": 16.48,
+            "probability": 0.9878349900245667
+          },
+          {
+            "word": "ですか",
+            "start": 16.48,
+            "end": 17.08,
+            "probability": 0.9709288477897644
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "seek": 0,
+        "start": 18.0,
+        "end": 20.88,
+        "text": "誰よりもあなたを",
+        "tokens": [
+          51264,
+          20757,
+          5591,
+          5095,
+          4801,
+          3590,
+          42847,
+          5998,
+          51414
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.8269025802612304,
+        "compression_ratio": 1.1071428571428572,
+        "no_speech_prob": 0.222475066781044,
+        "words": [
+          {
+            "word": "誰",
+            "start": 18.0,
+            "end": 18.74,
+            "probability": 0.4887165129184723
+          },
+          {
+            "word": "よ",
+            "start": 18.74,
+            "end": 19.08,
+            "probability": 0.9972871541976929
+          },
+          {
+            "word": "り",
+            "start": 19.08,
+            "end": 19.32,
+            "probability": 0.9997522234916687
+          },
+          {
+            "word": "も",
+            "start": 19.32,
+            "end": 19.56,
+            "probability": 0.9616467356681824
+          },
+          {
+            "word": "あ",
+            "start": 19.56,
+            "end": 19.76,
+            "probability": 0.7695549726486206
+          },
+          {
+            "word": "なた",
+            "start": 19.76,
+            "end": 20.18,
+            "probability": 0.9932317733764648
+          },
+          {
+            "word": "を",
+            "start": 20.18,
+            "end": 20.88,
+            "probability": 0.9806928038597107
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "seek": 0,
+        "start": 20.88,
+        "end": 23.04,
+        "text": "わかってるよ",
+        "tokens": [
+          51414,
+          44054,
+          45350,
+          5591,
+          51514
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.8269025802612304,
+        "compression_ratio": 1.1071428571428572,
+        "no_speech_prob": 0.222475066781044,
+        "words": [
+          {
+            "word": "わか",
+            "start": 20.88,
+            "end": 22.02,
+            "probability": 0.4664708077907562
+          },
+          {
+            "word": "ってる",
+            "start": 22.02,
+            "end": 22.7,
+            "probability": 0.7776735424995422
+          },
+          {
+            "word": "よ",
+            "start": 22.7,
+            "end": 23.04,
+            "probability": 0.9189066886901855
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "seek": 0,
+        "start": 23.04,
+        "end": 27.7,
+        "text": "わかってるのはきっと私だけ",
+        "tokens": [
+          51514,
+          44054,
+          45350,
+          35662,
+          7016,
+          13137,
+          20083,
+          36215,
+          51764
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.8269025802612304,
+        "compression_ratio": 1.1071428571428572,
+        "no_speech_prob": 0.222475066781044,
+        "words": [
+          {
+            "word": "わか",
+            "start": 23.04,
+            "end": 23.76,
+            "probability": 0.8819502592086792
+          },
+          {
+            "word": "ってる",
+            "start": 23.76,
+            "end": 24.46,
+            "probability": 0.9842936396598816
+          },
+          {
+            "word": "のは",
+            "start": 24.46,
+            "end": 24.88,
+            "probability": 0.9681252837181091
+          },
+          {
+            "word": "き",
+            "start": 24.88,
+            "end": 25.18,
+            "probability": 0.8882964253425598
+          },
+          {
+            "word": "っと",
+            "start": 25.18,
+            "end": 25.62,
+            "probability": 0.9977582097053528
+          },
+          {
+            "word": "私",
+            "start": 25.62,
+            "end": 26.76,
+            "probability": 0.7468460202217102
+          },
+          {
+            "word": "だけ",
+            "start": 26.76,
+            "end": 27.7,
+            "probability": 0.9650024175643921
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "seek": 2770,
+        "start": 27.7,
+        "end": 31.02,
+        "text": "私にちょっと目ですか",
+        "tokens": [
+          50364,
+          20083,
+          4108,
+          21888,
+          11386,
+          30913,
+          50548
+        ],
+        "temperature": 0,
+        "avg_logprob": -1.0856964928763253,
+        "compression_ratio": 0.7924528301886793,
+        "no_speech_prob": 0.46860286593437195,
+        "words": [
+          {
+            "word": "私",
+            "start": 27.7,
+            "end": 29.38,
+            "probability": 0.609035074710846
+          },
+          {
+            "word": "に",
+            "start": 29.38,
+            "end": 29.76,
+            "probability": 0.43997788429260254
+          },
+          {
+            "word": "ちょっと",
+            "start": 29.76,
+            "end": 30.14,
+            "probability": 0.19667579233646393
+          },
+          {
+            "word": "目",
+            "start": 30.14,
+            "end": 30.48,
+            "probability": 0.5534895062446594
+          },
+          {
+            "word": "ですか",
+            "start": 30.48,
+            "end": 31.02,
+            "probability": 0.9812915325164795
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "seek": 2770,
+        "start": 31.02,
+        "end": 34.44,
+        "text": "心は前に",
+        "tokens": [
+          50548,
+          7945,
+          3065,
+          8945,
+          4108,
+          50714
+        ],
+        "temperature": 0,
+        "avg_logprob": -1.0856964928763253,
+        "compression_ratio": 0.7924528301886793,
+        "no_speech_prob": 0.46860286593437195,
+        "words": [
+          {
+            "word": "心",
+            "start": 31.02,
+            "end": 32.8,
+            "probability": 0.7517293095588684
+          },
+          {
+            "word": "は",
+            "start": 32.8,
+            "end": 33.48,
+            "probability": 0.7860093712806702
+          },
+          {
+            "word": "前",
+            "start": 33.48,
+            "end": 34.14,
+            "probability": 0.06545886397361755
+          },
+          {
+            "word": "に",
+            "start": 34.14,
+            "end": 34.44,
+            "probability": 0.26727989315986633
+          }
+        ]
+      }
+    ],
+    "language": "ja"
+  }
+}

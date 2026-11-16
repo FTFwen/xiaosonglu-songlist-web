@@ -1,0 +1,197 @@
+{
+  "schemaVersion": 1,
+  "key": "song-405",
+  "songId": 405,
+  "songName": "晚想",
+  "rowKey": "晚想",
+  "displaySongName": "晚想",
+  "artist": "Kevinz / 跨海星尘 / 徵羽摩柯",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "",
+  "audio": {
+    "url": "assets/audio/song_404.m4a?v=da20c8af4061",
+    "sha256": "da20c8af40612e67284eb6ed4c48c6e048465415c32ba54952e336fff8ede35b"
+  },
+  "retrievedAt": "2026-11-16T04:08:28.275Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E6%99%9A%E6%83%B3&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E6%99%9A%E6%83%B3%20Kevinz%20%2F%20%E8%B7%A8%E6%B5%B7%E6%98%9F%E5%B0%98%20%2F%20%E5%BE%B5%E7%BE%BD%E6%91%A9%E6%9F%AF&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 2687217413,
+        "name": "晚想",
+        "artists": [
+          "Kevinz",
+          "跨海星尘",
+          "徵羽摩柯"
+        ],
+        "album": "蜉蝣航标",
+        "durationMs": 300170,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 3351743288,
+        "name": "晚想",
+        "artists": [
+          "东方羽灵Rias"
+        ],
+        "album": "旅者日志",
+        "durationMs": 300170,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 463472873,
+        "name": "Kissin' Noise❤",
+        "artists": [
+          "Kevinz",
+          "洛天依Official"
+        ],
+        "album": "o(*≧▽≦)ツ",
+        "durationMs": 174922,
+        "titleScore": 0,
+        "artistMatch": true,
+        "score": 0.2
+      },
+      {
+        "id": 2687214827,
+        "name": "见面是最棒的事",
+        "artists": [
+          "Kevinz",
+          "徵羽摩柯",
+          "洛天依"
+        ],
+        "album": "蜉蝣航标",
+        "durationMs": 290526,
+        "titleScore": 0,
+        "artistMatch": true,
+        "score": 0.2
+      },
+      {
+        "id": 2133003682,
+        "name": "信 - Live Ver. -",
+        "artists": [
+          "Kevinz"
+        ],
+        "album": "信",
+        "durationMs": 236329,
+        "titleScore": 0,
+        "artistMatch": true,
+        "score": 0.2
+      },
+      {
+        "id": 3449971761,
+        "name": "那么就吃点冰淇淋吧",
+        "artists": [
+          "Kevinz",
+          "小墨P",
+          "洛天依",
+          "徵羽摩柯"
+        ],
+        "album": "那么就吃点冰淇淋吧",
+        "durationMs": 309616,
+        "titleScore": 0,
+        "artistMatch": true,
+        "score": 0.2
+      },
+      {
+        "id": 469437368,
+        "name": "蔷薇山",
+        "artists": [
+          "Kevinz",
+          "言和"
+        ],
+        "album": "o(*≧▽≦)ツ",
+        "durationMs": 223311,
+        "titleScore": 0,
+        "artistMatch": true,
+        "score": 0.2
+      },
+      {
+        "id": 1322404518,
+        "name": "恋友",
+        "artists": [
+          "Kevinz",
+          "FFF君",
+          "徵羽摩柯",
+          "乐正绫"
+        ],
+        "album": "恋友",
+        "durationMs": 348715,
+        "titleScore": 0,
+        "artistMatch": true,
+        "score": 0.2
+      }
+    ],
+    "workQuery": {
+      "song_id": 405,
+      "song_name": "晚想",
+      "show_as_song_name": "",
+      "display_song_name": "晚想",
+      "artist": "Kevinz / 跨海星尘 / 徵羽摩柯",
+      "artist_search": "Kevinz / 跨海星尘 / 徵羽摩柯",
+      "feat_artist": "",
+      "remark": "",
+      "tone": "",
+      "language": "中文",
+      "type": "中V",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1LRWd6jEqp/?p=31",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-11-12",
+      "row_key": "晚想"
+    },
+    "sourceId": 2687217413,
+    "sourcePath": "sources/2687217413.json",
+    "sourceUrl": "https://music.163.com/#/song?id=2687217413",
+    "selected": {
+      "id": 2687217413,
+      "name": "晚想",
+      "artists": [
+        "Kevinz",
+        "跨海星尘",
+        "徵羽摩柯"
+      ],
+      "album": "蜉蝣航标",
+      "durationMs": 300170,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 50
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-405-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 302.464,
+    "sourceFirstLine": {
+      "t": 21.3,
+      "text": "调声：跨海星尘"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 0.0,
+      "endSeconds": 0.32,
+      "similarity": 0.0,
+      "recognizedText": "想",
+      "meanProbability": 0.192,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

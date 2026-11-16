@@ -1,0 +1,178 @@
+{
+  "schemaVersion": 1,
+  "key": "song-145",
+  "songId": 145,
+  "songName": "告别曲（Love Elegia Ver.）",
+  "rowKey": "告别曲（Love Elegia Ver.）",
+  "displaySongName": "告别曲（Love Elegia Ver.）",
+  "artist": "阿良良木健、洛天依",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "",
+  "audio": {
+    "url": "assets/audio/song_144.m4a?v=a78419b55655",
+    "sha256": "a78419b556558f6374a3f6be87a0821b7d02ad68c1947d7565c53b5b60c7920a"
+  },
+  "retrievedAt": "2026-11-16T04:04:05.367Z",
+  "match": {
+    "status": "version_review_required",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E5%91%8A%E5%88%AB%E6%9B%B2%EF%BC%88Love%20Elegia%20Ver.%EF%BC%89&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E5%91%8A%E5%88%AB%E6%9B%B2%EF%BC%88Love%20Elegia%20Ver.%EF%BC%89%20%E9%98%BF%E8%89%AF%E8%89%AF%E6%9C%A8%E5%81%A5&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1356370987,
+        "name": "告别曲（Love Elegia Ver.）",
+        "artists": [
+          "阿良良木健",
+          "洛天依"
+        ],
+        "album": "奇爱人生 LOVE ELEGIA",
+        "durationMs": 293375,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1329820082,
+        "name": "告别曲",
+        "artists": [
+          "阿良良木健",
+          "洛天依Official"
+        ],
+        "album": "洛天依作品2号：E",
+        "durationMs": 279355,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      },
+      {
+        "id": 1356379328,
+        "name": "亲爱的（Love Elegia Ver.）",
+        "artists": [
+          "阿良良木健",
+          "洛天依（萌）",
+          "洛天依（凝）",
+          "徵羽摩柯",
+          "乐正绫",
+          "墨清弦",
+          "言和"
+        ],
+        "album": "奇爱人生 LOVE ELEGIA",
+        "durationMs": 348358,
+        "titleScore": 0,
+        "artistMatch": true,
+        "score": 0.2
+      },
+      {
+        "id": 1329819177,
+        "name": "告别曲（Instrumental）",
+        "artists": [
+          "阿良良木健"
+        ],
+        "album": "洛天依作品2号：E",
+        "durationMs": 279652,
+        "titleScore": 0,
+        "artistMatch": true,
+        "score": 0.2
+      },
+      {
+        "id": 28830337,
+        "name": "I LOVE U",
+        "artists": [
+          "阿良良木健",
+          "洛天依Official"
+        ],
+        "album": "末日DISCO",
+        "durationMs": 276000,
+        "titleScore": 0,
+        "artistMatch": true,
+        "score": 0.2
+      },
+      {
+        "id": 2693474798,
+        "name": "Oi",
+        "artists": [
+          "阿良良木健",
+          "乐正绫"
+        ],
+        "album": "Oi",
+        "durationMs": 201870,
+        "titleScore": 0,
+        "artistMatch": true,
+        "score": 0.2
+      },
+      {
+        "id": 427016438,
+        "name": "I LOVE U (Love Theory Ver.)",
+        "artists": [
+          "阿良良木健",
+          "洛天依"
+        ],
+        "album": "恋爱理论",
+        "durationMs": 278709,
+        "titleScore": 0,
+        "artistMatch": true,
+        "score": 0.2
+      },
+      {
+        "id": 2021110596,
+        "name": "不老不死",
+        "artists": [
+          "阿良良木健",
+          "洛天依Official"
+        ],
+        "album": "异托邦 LOVETOPIA 之 不老不死",
+        "durationMs": 226976,
+        "titleScore": 0,
+        "artistMatch": true,
+        "score": 0.2
+      }
+    ],
+    "workQuery": {
+      "song_id": 145,
+      "song_name": "告别曲（Love Elegia Ver.）",
+      "show_as_song_name": "",
+      "display_song_name": "告别曲（Love Elegia Ver.）",
+      "artist": "阿良良木健、洛天依",
+      "artist_search": "阿良良木健、洛天依",
+      "feat_artist": "",
+      "remark": "",
+      "tone": "",
+      "language": "中文",
+      "type": "中V",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=6",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-09-08",
+      "row_key": "告别曲（Love Elegia Ver.）"
+    },
+    "sourceId": 1356370987,
+    "sourcePath": "sources/1356370987.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1356370987",
+    "selected": {
+      "id": 1356370987,
+      "name": "告别曲（Love Elegia Ver.）",
+      "artists": [
+        "阿良良木健",
+        "洛天依"
+      ],
+      "album": "奇爱人生 LOVE ELEGIA",
+      "durationMs": 293375,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 44
+  },
+  "alignment": {
+    "status": "version_review_required",
+    "offsetSeconds": null,
+    "humanVerified": false
+  }
+}

@@ -1,0 +1,381 @@
+{
+  "platform": "netease",
+  "id": 2707332868,
+  "url": "https://music.163.com/#/song?id=2707332868",
+  "apiUrl": "https://music.163.com/api/song/lyric?id=2707332868&lv=1&kv=1&tv=-1",
+  "retrievedAt": "2026-11-16T04:07:10.576Z",
+  "track": {
+    "id": 2707332868,
+    "name": "TIAN TIAN",
+    "artists": [
+      "Mili"
+    ],
+    "album": "TIAN TIAN",
+    "durationMs": 248583,
+    "titleScore": 1,
+    "artistMatch": true,
+    "score": 1
+  },
+  "lrc": "[00:00.000] 作词 : Cassie Wei\n[00:00.238] 作曲 : Yamato Kasai/Cassie Wei\n[00:00.476] 编曲 : Yamato Kasai\n[00:00.714] 制作人 : Mili\n[00:00.953]今天\n[00:02.099]明天\n[00:03.036]期待每天\n[00:05.105]不需要永远\n[00:09.070]阴天\n[00:10.084]晴天\n[00:11.031]无论哪天\n[00:13.051]好心情无限\n[00:15.904]\n[00:17.183]Lala lalu lula\n[00:21.714]Tututu…\n[00:23.710]“喂，奶奶你好吗？”\n[00:25.099]Lala lalu lula\n[00:29.520]Tututu…\n[00:31.535]“注意身体噢，拜拜”\n[00:33.185]\n[00:33.634]I used to think it's not worth it\n[00:41.794]That I just have to endure it\n[00:47.807]\n[00:49.579]Watch me take my steps\n[00:51.100](Lalulula lalulula hun)\n[00:53.242]My journey may be short and sweet\n[00:55.647](Lululu short and sweet)\n[00:57.580]Kindness leads my way\n[00:59.055](Lalulula lalulula hun)\n[01:03.041](No detours, no detours)\n[01:05.313]\n[01:05.417]Let us not forget\n[01:07.044](Lalulula lalulula hun)\n[01:09.068]We're invited to a lifelong party\n[01:11.374](Lululu lifelong party)\n[01:13.287]It's rude to overstay\n[01:15.123](Lalulula lalulula hun)\n[01:19.090](Bad manners, bad manners)\n[01:21.501]\n[01:21.621]人之初\n[01:23.775]性本善\n[01:25.787]性相近\n[01:27.796]习相远\n[01:29.777]It's alright\n[01:31.766]Mou man tai\n[01:33.827]It is time\n[01:35.777]Such is life\n[01:37.026]\n[01:37.053]TIAN TIAN\n[01:38.084]“喂，奶奶！最近发生了一件非常有趣的事，我讲给你听啊”\n[01:45.050]TIAN TIAN\n[01:46.354]“奶奶再见！不过我们今后应该也不会再见了，呵呵。对吧？”\n[01:52.461]\n[01:53.071]今天\n[01:54.072]明天\n[01:55.088]期待每天\n[01:57.062]不需要永远\n[02:01.054]阴天\n[02:02.082]晴天\n[02:03.053]无论哪天\n[02:05.051]好心情无限\n[02:07.789]\n[02:09.723]I won't pretend that I don't care\n[02:13.975](无限)\n[02:17.896]Take in the weight each moment bears\n[02:21.811](无限)\n[02:25.849]Fresh air so crisp, water so clear\n[02:29.806](无限)\n[02:33.783]Caterpillars dream; butterflies fear\n[02:37.842](永远)\n[02:38.787]\n[02:40.046]So what if we can race against the wheels of death?\n[02:48.290]If we are always running, we can't behold the sceneries\n[02:56.053]Hoping that through my finder\n[03:00.028]You'll find another answer\n[03:04.156]The well inside my heart is overflowed with love\n[03:11.446]\n[03:13.503]Watch me take my steps\n[03:15.333](Lalulula lalulula hun)\n[03:17.091]My journey may be short and sweet\n[03:19.456](Lululu short and sweet)\n[03:21.528]Kindness leads my way\n[03:23.075](Lalulula lalulula hun)\n[03:27.061](No detours, no detours)\n[03:29.044]\n[03:29.252]Someday I'll be dead\n[03:31.067](Lalulula lalulula hun)\n[03:33.078]Don't be jealous of me resting in peace\n[03:35.400](Lululu resting in peace)\n[03:37.345]With a smile on my face\n[03:39.146](Lalulula lalulula hun)\n[03:43.028](Rest assured, rest assured)\n[03:45.767]\n[03:45.789]人之初\n[03:47.848]性本善\n[03:49.811]性相近\n[03:51.774]习相远\n[03:53.794]It's alright\n[03:55.717]Mou man tai\n[03:57.800]It is time\n[03:59.844]Such is life\n",
+  "translationLrc": "[by:gurantouw]\n[00:00.953]\n[00:02.099]\n[00:03.036]\n[00:05.105]\n[00:09.070]\n[00:10.084]\n[00:11.031]\n[00:13.051]\n[00:15.904]\n[00:17.183]啦啦啦噜噜啦\n[00:21.714]\n[00:23.710]\n[00:25.099]啦啦啦噜噜啦\n[00:29.520]Tututu…\n[00:31.535]\n[00:33.185]\n[00:33.634]我曾以为这些都不值得做\n[00:41.794]我只需默默忍受 就已足矣\n[00:47.807]\n[00:49.579]目光追随我的脚步\n[00:51.100](Lalulula lalulula hun)\n[00:53.242]我的旅途 或许短暂而又美好\n[00:55.647](Lululu 短暂而美好)\n[00:57.580]善意化作明灯 指明前路\n[00:59.055](Lalulula lalulula hun)\n[01:03.041](令我无需误入歧途)\n[01:05.313]\n[01:05.417]千万不要忘记\n[01:07.044](Lalulula lalulula hun)\n[01:09.068]我们是这场人生派对中的宾客\n[01:11.374](Lululu 人生派对)\n[01:13.287]切勿流连忘返 那样失了礼数\n[01:15.123](Lalulula lalulula hun)\n[01:19.090](有失礼数 有失礼数)\n[01:21.501]\n[01:21.621]\n[01:23.775]\n[01:25.787]\n[01:27.796]\n[01:29.777]没关系\n[01:31.766]冇问题 (没问题)\n[01:33.827]时也\n[01:35.777]命也\n[01:37.026]\n[01:37.053]\n[01:38.084]\n[01:45.050]\n[01:46.354]\n[01:52.461]\n[01:53.071]\n[01:54.072]\n[01:55.088]\n[01:57.062]\n[02:01.054]\n[02:02.082]\n[02:03.053]\n[02:05.051]\n[02:07.789]\n[02:09.723]我不会故作毫不在意\n[02:13.975]\n[02:17.896]我会背负起每一分每一秒的重量\n[02:21.811]\n[02:25.849]空气清冽，流水澄澈\n[02:29.806]\n[02:33.783]青虫尚且怀梦 蝴蝶却已生怯\n[02:37.842]\n[02:38.787]\n[02:40.046]就算能与死神的车轮赛跑，又能怎样？\n[02:48.290]若我们只顾向前，如何看清一路风景\n[02:56.053]愿你能以我的双眼\n[03:00.028]你能找到新的答案\n[03:04.156]我心中的水井，早已满溢着爱\n[03:11.446]\n[03:13.503]目光追随我的脚步\n[03:15.333](Lalulula lalulula hun)\n[03:17.091]我的旅途 或许短暂而又美好\n[03:19.456](Lululu 短暂而美好)\n[03:21.528]善意化作明灯 指明前路\n[03:23.075](Lalulula lalulula hun)\n[03:27.061](令我无需误入歧途)\n[03:29.044]\n[03:29.252]我也终有一死\n[03:31.067](Lalulula lalulula hun)\n[03:33.078]可不要嫉妒我的安息\n[03:35.400](Lululu 安然长眠)\n[03:37.345]脸上挂着微笑\n[03:39.146](Lalulula lalulula hun)\n[03:43.028](请你放心 请你放心)\n[03:45.767]\n[03:45.789]\n[03:47.848]\n[03:49.811]\n[03:51.774]\n[03:53.794]没关系\n[03:55.717]冇问题 (没问题)\n[03:57.800]时也\n[03:59.844]命也\n",
+  "romanizationLrc": "",
+  "instrumental": false,
+  "lines": [
+    {
+      "t": 0,
+      "text": "作词 : Cassie Wei"
+    },
+    {
+      "t": 0.238,
+      "text": "作曲 : Yamato Kasai/Cassie Wei"
+    },
+    {
+      "t": 0.476,
+      "text": "编曲 : Yamato Kasai"
+    },
+    {
+      "t": 0.714,
+      "text": "制作人 : Mili"
+    },
+    {
+      "t": 0.953,
+      "text": "今天"
+    },
+    {
+      "t": 2.099,
+      "text": "明天"
+    },
+    {
+      "t": 3.036,
+      "text": "期待每天"
+    },
+    {
+      "t": 5.105,
+      "text": "不需要永远"
+    },
+    {
+      "t": 9.07,
+      "text": "阴天"
+    },
+    {
+      "t": 10.084,
+      "text": "晴天"
+    },
+    {
+      "t": 11.031,
+      "text": "无论哪天"
+    },
+    {
+      "t": 13.051,
+      "text": "好心情无限"
+    },
+    {
+      "t": 17.183,
+      "text": "Lala lalu lula"
+    },
+    {
+      "t": 21.714,
+      "text": "Tututu…"
+    },
+    {
+      "t": 23.71,
+      "text": "“喂，奶奶你好吗？”"
+    },
+    {
+      "t": 25.099,
+      "text": "Lala lalu lula"
+    },
+    {
+      "t": 29.52,
+      "text": "Tututu…"
+    },
+    {
+      "t": 31.535,
+      "text": "“注意身体噢，拜拜”"
+    },
+    {
+      "t": 33.634,
+      "text": "I used to think it's not worth it"
+    },
+    {
+      "t": 41.794,
+      "text": "That I just have to endure it"
+    },
+    {
+      "t": 49.579,
+      "text": "Watch me take my steps"
+    },
+    {
+      "t": 51.1,
+      "text": "(Lalulula lalulula hun)"
+    },
+    {
+      "t": 53.242,
+      "text": "My journey may be short and sweet"
+    },
+    {
+      "t": 55.647,
+      "text": "(Lululu short and sweet)"
+    },
+    {
+      "t": 57.58,
+      "text": "Kindness leads my way"
+    },
+    {
+      "t": 59.055,
+      "text": "(Lalulula lalulula hun)"
+    },
+    {
+      "t": 63.041,
+      "text": "(No detours, no detours)"
+    },
+    {
+      "t": 65.417,
+      "text": "Let us not forget"
+    },
+    {
+      "t": 67.044,
+      "text": "(Lalulula lalulula hun)"
+    },
+    {
+      "t": 69.068,
+      "text": "We're invited to a lifelong party"
+    },
+    {
+      "t": 71.374,
+      "text": "(Lululu lifelong party)"
+    },
+    {
+      "t": 73.287,
+      "text": "It's rude to overstay"
+    },
+    {
+      "t": 75.123,
+      "text": "(Lalulula lalulula hun)"
+    },
+    {
+      "t": 79.09,
+      "text": "(Bad manners, bad manners)"
+    },
+    {
+      "t": 81.621,
+      "text": "人之初"
+    },
+    {
+      "t": 83.775,
+      "text": "性本善"
+    },
+    {
+      "t": 85.787,
+      "text": "性相近"
+    },
+    {
+      "t": 87.796,
+      "text": "习相远"
+    },
+    {
+      "t": 89.777,
+      "text": "It's alright"
+    },
+    {
+      "t": 91.766,
+      "text": "Mou man tai"
+    },
+    {
+      "t": 93.827,
+      "text": "It is time"
+    },
+    {
+      "t": 95.777,
+      "text": "Such is life"
+    },
+    {
+      "t": 97.053,
+      "text": "TIAN TIAN"
+    },
+    {
+      "t": 98.084,
+      "text": "“喂，奶奶！最近发生了一件非常有趣的事，我讲给你听啊”"
+    },
+    {
+      "t": 105.05,
+      "text": "TIAN TIAN"
+    },
+    {
+      "t": 106.354,
+      "text": "“奶奶再见！不过我们今后应该也不会再见了，呵呵。对吧？”"
+    },
+    {
+      "t": 113.071,
+      "text": "今天"
+    },
+    {
+      "t": 114.072,
+      "text": "明天"
+    },
+    {
+      "t": 115.088,
+      "text": "期待每天"
+    },
+    {
+      "t": 117.062,
+      "text": "不需要永远"
+    },
+    {
+      "t": 121.054,
+      "text": "阴天"
+    },
+    {
+      "t": 122.082,
+      "text": "晴天"
+    },
+    {
+      "t": 123.053,
+      "text": "无论哪天"
+    },
+    {
+      "t": 125.051,
+      "text": "好心情无限"
+    },
+    {
+      "t": 129.723,
+      "text": "I won't pretend that I don't care"
+    },
+    {
+      "t": 133.975,
+      "text": "(无限)"
+    },
+    {
+      "t": 137.896,
+      "text": "Take in the weight each moment bears"
+    },
+    {
+      "t": 141.811,
+      "text": "(无限)"
+    },
+    {
+      "t": 145.849,
+      "text": "Fresh air so crisp, water so clear"
+    },
+    {
+      "t": 149.806,
+      "text": "(无限)"
+    },
+    {
+      "t": 153.783,
+      "text": "Caterpillars dream; butterflies fear"
+    },
+    {
+      "t": 157.842,
+      "text": "(永远)"
+    },
+    {
+      "t": 160.046,
+      "text": "So what if we can race against the wheels of death?"
+    },
+    {
+      "t": 168.29,
+      "text": "If we are always running, we can't behold the sceneries"
+    },
+    {
+      "t": 176.053,
+      "text": "Hoping that through my finder"
+    },
+    {
+      "t": 180.028,
+      "text": "You'll find another answer"
+    },
+    {
+      "t": 184.156,
+      "text": "The well inside my heart is overflowed with love"
+    },
+    {
+      "t": 193.503,
+      "text": "Watch me take my steps"
+    },
+    {
+      "t": 195.333,
+      "text": "(Lalulula lalulula hun)"
+    },
+    {
+      "t": 197.091,
+      "text": "My journey may be short and sweet"
+    },
+    {
+      "t": 199.456,
+      "text": "(Lululu short and sweet)"
+    },
+    {
+      "t": 201.528,
+      "text": "Kindness leads my way"
+    },
+    {
+      "t": 203.075,
+      "text": "(Lalulula lalulula hun)"
+    },
+    {
+      "t": 207.061,
+      "text": "(No detours, no detours)"
+    },
+    {
+      "t": 209.252,
+      "text": "Someday I'll be dead"
+    },
+    {
+      "t": 211.067,
+      "text": "(Lalulula lalulula hun)"
+    },
+    {
+      "t": 213.078,
+      "text": "Don't be jealous of me resting in peace"
+    },
+    {
+      "t": 215.4,
+      "text": "(Lululu resting in peace)"
+    },
+    {
+      "t": 217.345,
+      "text": "With a smile on my face"
+    },
+    {
+      "t": 219.146,
+      "text": "(Lalulula lalulula hun)"
+    },
+    {
+      "t": 223.028,
+      "text": "(Rest assured, rest assured)"
+    },
+    {
+      "t": 225.789,
+      "text": "人之初"
+    },
+    {
+      "t": 227.848,
+      "text": "性本善"
+    },
+    {
+      "t": 229.811,
+      "text": "性相近"
+    },
+    {
+      "t": 231.774,
+      "text": "习相远"
+    },
+    {
+      "t": 233.794,
+      "text": "It's alright"
+    },
+    {
+      "t": 235.717,
+      "text": "Mou man tai"
+    },
+    {
+      "t": 237.8,
+      "text": "It is time"
+    },
+    {
+      "t": 239.844,
+      "text": "Such is life"
+    }
+  ]
+}

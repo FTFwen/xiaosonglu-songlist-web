@@ -1,0 +1,134 @@
+{
+  "audioSha256": "ab768bfe10eda6e1f0619948038d86178cb889f8b4b03cbb6e9d81049a8e0edf",
+  "model": "whisper-base",
+  "start": 0,
+  "end": 35,
+  "result": {
+    "text": "弄掉啊这个掉没问题通通开始",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 5.679999999999999,
+        "end": 6.48,
+        "text": "弄掉",
+        "tokens": [
+          50364,
+          5702,
+          226,
+          29327,
+          50389
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.7833254072401259,
+        "compression_ratio": 0.8297872340425532,
+        "no_speech_prob": 0.008976639248430729,
+        "words": [
+          {
+            "word": "弄",
+            "start": 5.679999999999999,
+            "end": 6.46,
+            "probability": 0.5080066323280334
+          },
+          {
+            "word": "掉",
+            "start": 6.46,
+            "end": 6.48,
+            "probability": 0.8891837000846863
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "seek": 0,
+        "start": 22.119999999999997,
+        "end": 24.42,
+        "text": "啊这个掉没问题",
+        "tokens": [
+          51539,
+          4905,
+          15368,
+          29327,
+          10062,
+          34069,
+          51589
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.7833254072401259,
+        "compression_ratio": 0.8297872340425532,
+        "no_speech_prob": 0.008976639248430729,
+        "words": [
+          {
+            "word": "啊",
+            "start": 22.119999999999997,
+            "end": 22.9,
+            "probability": 0.01630016230046749
+          },
+          {
+            "word": "这个",
+            "start": 22.9,
+            "end": 23.68,
+            "probability": 0.8298675417900085
+          },
+          {
+            "word": "掉",
+            "start": 23.68,
+            "end": 23.84,
+            "probability": 0.7612795829772949
+          },
+          {
+            "word": "没",
+            "start": 23.84,
+            "end": 24.02,
+            "probability": 0.9415534138679504
+          },
+          {
+            "word": "问题",
+            "start": 24.02,
+            "end": 24.42,
+            "probability": 0.9967442750930786
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "seek": 0,
+        "start": 26.2,
+        "end": 26.86,
+        "text": "通通开始",
+        "tokens": [
+          51674,
+          19550,
+          19550,
+          45213,
+          51719
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.7833254072401259,
+        "compression_ratio": 0.8297872340425532,
+        "no_speech_prob": 0.008976639248430729,
+        "words": [
+          {
+            "word": "通",
+            "start": 25.99,
+            "end": 26.38,
+            "probability": 0.2816171646118164
+          },
+          {
+            "word": "通",
+            "start": 26.38,
+            "end": 26.48,
+            "probability": 0.9949483871459961
+          },
+          {
+            "word": "开始",
+            "start": 26.48,
+            "end": 26.86,
+            "probability": 0.9867631793022156
+          }
+        ]
+      }
+    ],
+    "language": "zh"
+  }
+}

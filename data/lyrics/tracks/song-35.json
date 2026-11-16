@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 1,
+  "key": "song-35",
+  "songId": 35,
+  "songName": "勾指起誓",
+  "displaySongName": "勾指起誓",
+  "artist": "洛天依Official / ilem",
+  "language": "中文",
+  "derivative": false,
+  "audio": {
+    "url": "assets/audio/song_88.m4a?v=82fb0051bfb2",
+    "sha256": "82fb0051bfb211f3b698454a2fe51d8c844e86e7d5b2880149026fcfed85a613"
+  },
+  "retrievedAt": "2026-11-16T03:57:43.963Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E5%8B%BE%E6%8C%87%E8%B5%B7%E8%AA%93&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1345872140,
+        "name": "勾指起誓",
+        "artists": [
+          "洛天依Official",
+          "ilem"
+        ],
+        "album": "2:3",
+        "durationMs": 183536,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1350160463,
+        "name": "勾指起誓",
+        "artists": [
+          "泠鸢yousa"
+        ],
+        "album": "【泠鸢翻唱2019】",
+        "durationMs": 183500,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1359165195,
+        "name": "勾指起誓",
+        "artists": [
+          "Hanser"
+        ],
+        "album": "hanser唱的歌(181016开始的",
+        "durationMs": 184176,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1355916022,
+        "name": "勾指起誓",
+        "artists": [
+          "羊仔",
+          "糖醋排骨"
+        ],
+        "album": "勾指起誓",
+        "durationMs": 183588,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1362503051,
+        "name": "勾指起誓",
+        "artists": [
+          "青尢"
+        ],
+        "album": "2019.5.1",
+        "durationMs": 183601,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1831322245,
+        "name": "勾指起誓",
+        "artists": [
+          "宴宁"
+        ],
+        "album": "勾指起誓",
+        "durationMs": 183902,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1351810962,
+        "name": "勾指起誓",
+        "artists": [
+          "萧忆情Alex"
+        ],
+        "album": "勾指起誓",
+        "durationMs": 183529,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1813405342,
+        "name": "勾指起誓",
+        "artists": [
+          "多多poi"
+        ],
+        "album": "多多翻唱-2021",
+        "durationMs": 183587,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "sourceId": 1345872140,
+    "sourcePath": "sources/1345872140.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1345872140",
+    "selected": {
+      "id": 1345872140,
+      "name": "勾指起誓",
+      "artists": [
+        "洛天依Official",
+        "ilem"
+      ],
+      "album": "2:3",
+      "durationMs": 183536,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 40
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-35-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 203.819,
+    "sourceFirstLine": {
+      "t": 22.067,
+      "text": "你是信的开头诗的内容"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 31.5,
+      "endSeconds": 34.26,
+      "similarity": 0.35294117647058826,
+      "recognizedText": "你是理所當然的",
+      "meanProbability": 0.805,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  },
+  "rowKey": "勾指起誓",
+  "edition": "",
+  "remark": "根据 00:25 附近音频切片的歌词片段联网检索，命中《勾指起誓》。Whisper 在前半段有错字，但副歌和主歌词匹配度较高。"
+}

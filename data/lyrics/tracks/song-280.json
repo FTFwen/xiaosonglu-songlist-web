@@ -1,0 +1,193 @@
+{
+  "schemaVersion": 1,
+  "key": "song-280",
+  "songId": 280,
+  "songName": "朝汐",
+  "rowKey": "朝汐",
+  "displaySongName": "朝汐",
+  "artist": "双笙（陈元汐）, 泠鸢yousa",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "",
+  "audio": {
+    "url": "assets/audio/song_279.m4a?v=b1cff9511c86",
+    "sha256": "b1cff9511c8623b4cc2420358cbad53ce1d3281082c887f6b61d4f1000532ee0"
+  },
+  "retrievedAt": "2026-11-16T04:12:34.666Z",
+  "match": {
+    "status": "candidate_review_required",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E6%9C%9D%E6%B1%90&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E6%9C%9D%E6%B1%90%20%E5%8F%8C%E7%AC%99&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1315517813,
+        "name": "朝汐",
+        "artists": [
+          "音葉",
+          "洛天依Official"
+        ],
+        "album": "朝汐",
+        "durationMs": 295489,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1336716433,
+        "name": "朝汐",
+        "artists": [
+          "大柯",
+          "浣语"
+        ],
+        "album": "朝夕",
+        "durationMs": 294196,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1873737554,
+        "name": "朝汐",
+        "artists": [
+          "SHIYULAB",
+          "诗岸",
+          "海伊"
+        ],
+        "album": "朝汐",
+        "durationMs": 293736,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2020716723,
+        "name": "朝汐",
+        "artists": [
+          "-三语-",
+          "林密"
+        ],
+        "album": "朝汐（cover.泠鸢 双笙）",
+        "durationMs": 293904,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1344090924,
+        "name": "朝汐",
+        "artists": [
+          "咩纪",
+          "幸己"
+        ],
+        "album": "蝶蝶2019翻",
+        "durationMs": 294086,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1413089718,
+        "name": "朝汐",
+        "artists": [
+          "十八薰",
+          "椋霁子"
+        ],
+        "album": "朝汐",
+        "durationMs": 295209,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2678355719,
+        "name": "朝汐",
+        "artists": [
+          "温予",
+          "橘枝"
+        ],
+        "album": "朝汐 （翻自：泠鸢yousa&双笙/陈元汐)",
+        "durationMs": 293838,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1806193393,
+        "name": "朝汐",
+        "artists": [
+          "Miaozi苗子",
+          "刘刘"
+        ],
+        "album": "朝汐（Cover: 泠鸢yousa 双笙）",
+        "durationMs": 293903,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 280,
+      "song_name": "朝汐",
+      "show_as_song_name": "",
+      "display_song_name": "朝汐",
+      "artist": "双笙（陈元汐）, 泠鸢yousa",
+      "artist_search": "双笙（陈元汐）, 泠鸢yousa",
+      "feat_artist": "",
+      "remark": "",
+      "tone": "",
+      "language": "中文",
+      "type": "流行",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV18Jpw6mE82/?p=13",
+      "sing_count": 2,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-31",
+      "row_key": "朝汐"
+    },
+    "sourceId": 1315517813,
+    "sourcePath": "sources/1315517813.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1315517813",
+    "selected": {
+      "id": 1315517813,
+      "name": "朝汐",
+      "artists": [
+        "音葉",
+        "洛天依Official"
+      ],
+      "album": "朝汐",
+      "durationMs": 295489,
+      "titleScore": 1,
+      "artistMatch": false,
+      "score": 0.8
+    },
+    "timedLineCount": 32
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-280-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 292.949,
+    "sourceFirstLine": {
+      "t": 30.275,
+      "text": "那轮夕阳 向海中落下"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 22.72,
+      "endSeconds": 23.12,
+      "similarity": 0.0,
+      "recognizedText": "我",
+      "meanProbability": 0.036,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

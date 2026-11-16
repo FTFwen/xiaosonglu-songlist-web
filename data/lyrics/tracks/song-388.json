@@ -1,0 +1,184 @@
+{
+  "schemaVersion": 1,
+  "key": "song-388",
+  "songId": 388,
+  "songName": "没那么简单",
+  "rowKey": "没那么简单",
+  "displaySongName": "没那么简单",
+  "artist": "黄小琥",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "回放 04:07:16 弹幕「没那么简单」点名；黄小琥 2009 年原唱，华语经典。",
+  "audio": {
+    "url": "assets/audio/song_387.m4a?v=0f127b37b9b1",
+    "sha256": "0f127b37b9b1021957fe9066b0b96c15f6bad7fc9f4e475d045a913db7e4811a"
+  },
+  "retrievedAt": "2026-11-16T04:08:08.712Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E6%B2%A1%E9%82%A3%E4%B9%88%E7%AE%80%E5%8D%95&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E6%B2%A1%E9%82%A3%E4%B9%88%E7%AE%80%E5%8D%95%20%E9%BB%84%E5%B0%8F%E7%90%A5&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 239188,
+        "name": "没那么简单",
+        "artists": [
+          "黄小琥"
+        ],
+        "album": "简单/不简单",
+        "durationMs": 310133,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 419827620,
+        "name": "没那么简单",
+        "artists": [
+          "黄小琥"
+        ],
+        "album": "靓声天后",
+        "durationMs": 308133,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 5236998,
+        "name": "没那么简单",
+        "artists": [
+          "黄小琥"
+        ],
+        "album": "发烧最红",
+        "durationMs": 308133,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 5231510,
+        "name": "没那么简单",
+        "artists": [
+          "黄小琥"
+        ],
+        "album": "因为爱情",
+        "durationMs": 308133,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1889957208,
+        "name": "《没那么简单》",
+        "artists": [
+          "悦耳",
+          "黄小琥"
+        ],
+        "album": "梦",
+        "durationMs": 304561,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 406737389,
+        "name": "没那么简单",
+        "artists": [
+          "黄小琥"
+        ],
+        "album": "史上最伤感的网络情歌",
+        "durationMs": 308133,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 400074289,
+        "name": "没那么简单",
+        "artists": [
+          "黄小琥"
+        ],
+        "album": "城市 女声",
+        "durationMs": 308133,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1400184355,
+        "name": "没那么简单",
+        "artists": [
+          "Maria苗睿婷"
+        ],
+        "album": "翻唱",
+        "durationMs": 304901,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 388,
+      "song_name": "没那么简单",
+      "show_as_song_name": "",
+      "display_song_name": "没那么简单",
+      "artist": "黄小琥",
+      "artist_search": "黄小琥",
+      "feat_artist": "",
+      "remark": "回放 04:07:16 弹幕「没那么简单」点名；黄小琥 2009 年原唱，华语经典。",
+      "tone": "",
+      "language": "中文",
+      "type": "华语经典、流行",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1nbWV6PEJq/",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切复核",
+      "last_sing_at": "2026-11-10",
+      "row_key": "没那么简单"
+    },
+    "sourceId": 239188,
+    "sourcePath": "sources/239188.json",
+    "sourceUrl": "https://music.163.com/#/song?id=239188",
+    "selected": {
+      "id": 239188,
+      "name": "没那么简单",
+      "artists": [
+        "黄小琥"
+      ],
+      "album": "简单/不简单",
+      "durationMs": 310133,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 68
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-388-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 293.675,
+    "sourceFirstLine": {
+      "t": 23.17,
+      "text": "就能找到 聊得来的伴"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 1.94,
+      "endSeconds": 2.58,
+      "similarity": 0.0,
+      "recognizedText": "我",
+      "meanProbability": 0.833,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

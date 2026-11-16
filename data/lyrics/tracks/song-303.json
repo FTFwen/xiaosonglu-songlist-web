@@ -1,0 +1,193 @@
+{
+  "schemaVersion": 1,
+  "key": "song-303",
+  "songId": 303,
+  "songName": "种族假象",
+  "rowKey": "种族假象",
+  "displaySongName": "种族假象",
+  "artist": "漆柚, 绾绾Akari, 纸马, 柚子茶",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "分P标题 01_种族假象(人声本家)；心灵火 BV1e4Jv6gEKz P1 同名同序；弹幕无直接点名。",
+  "audio": {
+    "url": "assets/audio/song_302.m4a?v=8089534f0aee",
+    "sha256": "8089534f0aeebaf1ee6690644511bf15449f1d216fd7e253ce0d44f0f638c955"
+  },
+  "retrievedAt": "2026-11-16T04:13:16.644Z",
+  "match": {
+    "status": "candidate_review_required",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E7%A7%8D%E6%97%8F%E5%81%87%E8%B1%A1&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E7%A7%8D%E6%97%8F%E5%81%87%E8%B1%A1%20%E6%BC%86%E6%9F%9A&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 480110837,
+        "name": "种族假象",
+        "artists": [
+          "乐正绫",
+          "言和",
+          "心华",
+          "星尘"
+        ],
+        "album": "种族假象",
+        "durationMs": 273792,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1344124012,
+        "name": "种族假象",
+        "artists": [
+          "倪莫问",
+          "大哥L-",
+          "颜素susu",
+          "纳豆nado"
+        ],
+        "album": "「种族假象」",
+        "durationMs": 269714,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1350921680,
+        "name": "种族假象",
+        "artists": [
+          "浣语"
+        ],
+        "album": "种族假象",
+        "durationMs": 270976,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1343523713,
+        "name": "种族假象",
+        "artists": [
+          "嘻嘻铃_",
+          "喵玖（雯雯）",
+          "重九",
+          "策风",
+          "司和Nye"
+        ],
+        "album": "种族假象",
+        "durationMs": 269688,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1352157208,
+        "name": "种族假象",
+        "artists": [
+          "希斯缇Shisute",
+          "念安",
+          "三沐_Mu",
+          "钦和"
+        ],
+        "album": "种族假象",
+        "durationMs": 269505,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2130401793,
+        "name": "种族假象",
+        "artists": [
+          "霭柚洧Ayuvey",
+          "小含"
+        ],
+        "album": "种族假象",
+        "durationMs": 266922,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1490490039,
+        "name": "种族假象",
+        "artists": [
+          "炎祾"
+        ],
+        "album": "种族假象",
+        "durationMs": 276328,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1461124060,
+        "name": "种族假象",
+        "artists": [
+          "麓舫"
+        ],
+        "album": "翻车现场",
+        "durationMs": 270770,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 303,
+      "song_name": "种族假象",
+      "show_as_song_name": "",
+      "display_song_name": "种族假象",
+      "artist": "漆柚, 绾绾Akari, 纸马, 柚子茶",
+      "artist_search": "漆柚, 绾绾Akari, 纸马, 柚子茶",
+      "feat_artist": "",
+      "remark": "分P标题 01_种族假象(人声本家)；心灵火 BV1e4Jv6gEKz P1 同名同序；弹幕无直接点名。",
+      "tone": "",
+      "language": "中文",
+      "type": "中文原创",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1uPJ86DE95/?p=1",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-16",
+      "row_key": "种族假象"
+    },
+    "sourceId": 480110837,
+    "sourcePath": "sources/480110837.json",
+    "sourceUrl": "https://music.163.com/#/song?id=480110837",
+    "selected": {
+      "id": 480110837,
+      "name": "种族假象",
+      "artists": [
+        "乐正绫",
+        "言和",
+        "心华",
+        "星尘"
+      ],
+      "album": "种族假象",
+      "durationMs": 273792,
+      "titleScore": 1,
+      "artistMatch": false,
+      "score": 0.8
+    },
+    "timedLineCount": 70
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-303-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 270.443,
+    "sourceFirstLine": {
+      "t": 0,
+      "text": "调：Creuzer，Scarlet桑戎，芹菜猪肉大馄饨，影随龙风"
+    },
+    "anchorCandidate": null,
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

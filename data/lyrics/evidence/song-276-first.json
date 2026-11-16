@@ -1,0 +1,133 @@
+{
+  "audioSha256": "e305d1984d912c31c76124a9809109f188773c777701d5c06c51dcd3444da01d",
+  "model": "whisper-base",
+  "start": 0,
+  "end": 35.468,
+  "result": {
+    "text": "往这一座一般剩下剩下的风",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 3000,
+        "start": 30.0,
+        "end": 33.66,
+        "text": "往这一座一般剩下",
+        "tokens": [
+          50364,
+          29510,
+          5562,
+          2257,
+          6346,
+          100,
+          2257,
+          49640,
+          5935,
+          102,
+          4438,
+          50546
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.6325302600860596,
+        "compression_ratio": 0.9,
+        "no_speech_prob": 0.49991732835769653,
+        "words": [
+          {
+            "word": "往",
+            "start": 30.0,
+            "end": 30.32,
+            "probability": 0.12039487063884735
+          },
+          {
+            "word": "这",
+            "start": 30.32,
+            "end": 30.68,
+            "probability": 0.34676414728164673
+          },
+          {
+            "word": "一",
+            "start": 30.68,
+            "end": 31.1,
+            "probability": 0.9442490935325623
+          },
+          {
+            "word": "座",
+            "start": 31.1,
+            "end": 31.46,
+            "probability": 0.6059226170182228
+          },
+          {
+            "word": "一",
+            "start": 31.46,
+            "end": 31.94,
+            "probability": 0.8929241299629211
+          },
+          {
+            "word": "般",
+            "start": 31.94,
+            "end": 32.46,
+            "probability": 0.47419703006744385
+          },
+          {
+            "word": "剩",
+            "start": 32.46,
+            "end": 33.26,
+            "probability": 0.7801973521709442
+          },
+          {
+            "word": "下",
+            "start": 33.26,
+            "end": 33.66,
+            "probability": 0.9977306723594666
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "seek": 3000,
+        "start": 33.66,
+        "end": 35.4,
+        "text": "剩下的风",
+        "tokens": [
+          50546,
+          5935,
+          102,
+          4438,
+          1546,
+          47209,
+          50636
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.6325302600860596,
+        "compression_ratio": 0.9,
+        "no_speech_prob": 0.49991732835769653,
+        "words": [
+          {
+            "word": "剩",
+            "start": 33.66,
+            "end": 34.08,
+            "probability": 0.9266129434108734
+          },
+          {
+            "word": "下",
+            "start": 34.08,
+            "end": 34.52,
+            "probability": 0.9984910488128662
+          },
+          {
+            "word": "的",
+            "start": 34.52,
+            "end": 34.94,
+            "probability": 0.9739614129066467
+          },
+          {
+            "word": "风",
+            "start": 34.94,
+            "end": 35.4,
+            "probability": 0.41512545943260193
+          }
+        ]
+      }
+    ],
+    "language": "zh"
+  }
+}

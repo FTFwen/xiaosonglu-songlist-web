@@ -1,0 +1,185 @@
+{
+  "schemaVersion": 1,
+  "key": "song-295",
+  "songId": 295,
+  "songName": "奇妙能力歌",
+  "rowKey": "奇妙能力歌",
+  "displaySongName": "奇妙能力歌",
+  "artist": "陈粒",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "两份合集（BV1TApG6uEPX 分P08、BV1Qrpj6ZELm 分P08）同曲同序，原唱字段均为陈粒；属 01:01 起的陈粒连唱段。类型标签沿用本站陈粒曲目的既有组合。",
+  "audio": {
+    "url": "assets/audio/song_294.m4a?v=3365f04049a7",
+    "sha256": "3365f04049a77d6c9d403f4ae1d81bde9e6d6511574956a52b69ce1c039ce1cf"
+  },
+  "retrievedAt": "2026-11-16T04:06:27.225Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E5%A5%87%E5%A6%99%E8%83%BD%E5%8A%9B%E6%AD%8C&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E5%A5%87%E5%A6%99%E8%83%BD%E5%8A%9B%E6%AD%8C%20%E9%99%88%E7%B2%92&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 30431366,
+        "name": "奇妙能力歌",
+        "artists": [
+          "陈粒"
+        ],
+        "album": "如也",
+        "durationMs": 253090,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2749430418,
+        "name": "奇妙能力歌",
+        "artists": [
+          "陈粒"
+        ],
+        "album": "十年自选",
+        "durationMs": 245264,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 29357047,
+        "name": "奇妙能力歌",
+        "artists": [
+          "陈粒"
+        ],
+        "album": "热门华语238",
+        "durationMs": 253000,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1942035260,
+        "name": "奇妙能力歌",
+        "artists": [
+          "柚子",
+          "陈粒"
+        ],
+        "album": "柚子翻唱",
+        "durationMs": 253305,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1879806033,
+        "name": "奇妙能力歌",
+        "artists": [
+          "是小胖纸呀",
+          "陈粒"
+        ],
+        "album": "你好吗",
+        "durationMs": 217612,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1359028425,
+        "name": "奇妙能力歌",
+        "artists": [
+          "汤棋"
+        ],
+        "album": "追",
+        "durationMs": 138773,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1929411205,
+        "name": "奇妙能力歌",
+        "artists": [
+          "周星星"
+        ],
+        "album": "可乐鸡翅",
+        "durationMs": 252821,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1938781471,
+        "name": "奇妙能力歌",
+        "artists": [
+          "丸子"
+        ],
+        "album": "jkkk的珂",
+        "durationMs": 253376,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 295,
+      "song_name": "奇妙能力歌",
+      "show_as_song_name": "",
+      "display_song_name": "奇妙能力歌",
+      "artist": "陈粒",
+      "artist_search": "陈粒",
+      "feat_artist": "",
+      "remark": "两份合集（BV1TApG6uEPX 分P08、BV1Qrpj6ZELm 分P08）同曲同序，原唱字段均为陈粒；属 01:01 起的陈粒连唱段。类型标签沿用本站陈粒曲目的既有组合。",
+      "tone": "",
+      "language": "中文",
+      "type": "民谣、流行",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1TApG6uEPX/?p=8",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-10",
+      "row_key": "奇妙能力歌"
+    },
+    "sourceId": 30431366,
+    "sourcePath": "sources/30431366.json",
+    "sourceUrl": "https://music.163.com/#/song?id=30431366",
+    "selected": {
+      "id": 30431366,
+      "name": "奇妙能力歌",
+      "artists": [
+        "陈粒"
+      ],
+      "album": "如也",
+      "durationMs": 253090,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 44
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-295-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 255.531,
+    "sourceFirstLine": {
+      "t": 20.312,
+      "text": "我看过沙漠下暴雨"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 30.0,
+      "endSeconds": 31.3,
+      "similarity": 0.4,
+      "recognizedText": "看過",
+      "meanProbability": 0.801,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

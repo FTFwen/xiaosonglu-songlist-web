@@ -1,0 +1,196 @@
+{
+  "schemaVersion": 1,
+  "key": "song-149",
+  "songId": 149,
+  "songName": "灼之花",
+  "rowKey": "灼之花",
+  "displaySongName": "灼之花",
+  "artist": "洛天依Official、乐正绫",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "",
+  "audio": {
+    "url": "assets/audio/song_148.m4a?v=b12f0bef5590",
+    "sha256": "b12f0bef55905793c602613ace61256ec6531a6b9af69a8583614a52726e241c"
+  },
+  "retrievedAt": "2026-11-16T04:13:04.668Z",
+  "match": {
+    "status": "candidate_review_required",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E7%81%BC%E4%B9%8B%E8%8A%B1&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E7%81%BC%E4%B9%8B%E8%8A%B1%20%E6%B4%9B%E5%A4%A9%E4%BE%9DOfficial&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 2108811699,
+        "name": "灼之花",
+        "artists": [
+          "洛天依",
+          "乐正绫",
+          "無藏"
+        ],
+        "album": "ACE翻调",
+        "durationMs": 249861,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1338492643,
+        "name": "灼之花",
+        "artists": [
+          "里子",
+          "知树"
+        ],
+        "album": "花烬",
+        "durationMs": 247561,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1404196824,
+        "name": "灼之花",
+        "artists": [
+          "王允宸"
+        ],
+        "album": "灼之花",
+        "durationMs": 248320,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3416101924,
+        "name": "灼之花",
+        "artists": [
+          "墨素Mohius",
+          "星尘"
+        ],
+        "album": "尘十特别节目-Stardust 10th Anniversary",
+        "durationMs": 253005,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1420368326,
+        "name": "灼之花",
+        "artists": [
+          "灯大蝶",
+          "赤羽"
+        ],
+        "album": "灼之花",
+        "durationMs": 247118,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1834129464,
+        "name": "灼之花",
+        "artists": [
+          "知缓",
+          "予霁"
+        ],
+        "album": "三岁值域",
+        "durationMs": 247119,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1420302122,
+        "name": "灼之花",
+        "artists": [
+          "十三酱吖",
+          "墨希"
+        ],
+        "album": "【2019合唱辑】",
+        "durationMs": 248189,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1484637474,
+        "name": "灼之花",
+        "artists": [
+          "兔兔空铃",
+          "铃霜",
+          "缪可",
+          "郁阴disley",
+          "和风smiley",
+          "开心宝贝战队"
+        ],
+        "album": "兔兔三姐妹",
+        "durationMs": 249196,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 149,
+      "song_name": "灼之花",
+      "show_as_song_name": "",
+      "display_song_name": "灼之花",
+      "artist": "洛天依Official、乐正绫",
+      "artist_search": "洛天依Official、乐正绫",
+      "feat_artist": "",
+      "remark": "",
+      "tone": "",
+      "language": "中文",
+      "type": "中V",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=10",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-09-08",
+      "row_key": "灼之花"
+    },
+    "sourceId": 1338492643,
+    "sourcePath": "sources/1338492643.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1338492643",
+    "selected": {
+      "id": 1338492643,
+      "name": "灼之花",
+      "artists": [
+        "里子",
+        "知树"
+      ],
+      "album": "花烬",
+      "durationMs": 247561,
+      "titleScore": 1,
+      "artistMatch": false,
+      "score": 0.8
+    },
+    "timedLineCount": 67
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-149-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 486.574,
+    "sourceFirstLine": {
+      "t": 4.15,
+      "text": "词曲编调：COP"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 20.78,
+      "endSeconds": 21.44,
+      "similarity": 0.0,
+      "recognizedText": "《眼",
+      "meanProbability": 0.082,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

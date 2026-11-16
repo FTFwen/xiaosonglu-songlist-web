@@ -1,0 +1,195 @@
+{
+  "schemaVersion": 1,
+  "key": "song-259",
+  "songId": 259,
+  "songName": "桃花诺",
+  "rowKey": "桃花诺",
+  "displaySongName": "桃花诺",
+  "artist": "G.M.E邓紫棋",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "",
+  "audio": {
+    "url": "assets/audio/song_258.m4a?v=f13581518e16",
+    "sha256": "f13581518e168657f9b53823381d9e0e55dfd6f059582a579c4bcd530fe195e2"
+  },
+  "retrievedAt": "2026-11-16T04:13:12.147Z",
+  "match": {
+    "status": "candidate_review_required",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E6%A1%83%E8%8A%B1%E8%AF%BA&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E6%A1%83%E8%8A%B1%E8%AF%BA%20G.M.E%E9%82%93%E7%B4%AB%E6%A3%8B&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 480579393,
+        "name": "桃花诺",
+        "artists": [
+          "G.E.M.邓紫棋"
+        ],
+        "album": "上古情歌 电视剧原声带",
+        "durationMs": 219759,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1902280609,
+        "name": "桃花诺",
+        "artists": [
+          "Y"
+        ],
+        "album": "cover",
+        "durationMs": 224182,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2025822726,
+        "name": "桃花诺",
+        "artists": [
+          "王巨星"
+        ],
+        "album": "桃花诺",
+        "durationMs": 201420,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2038190908,
+        "name": "桃花诺",
+        "artists": [
+          "兰音Reine"
+        ],
+        "album": "桃花诺",
+        "durationMs": 211778,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2029438354,
+        "name": "桃花诺",
+        "artists": [
+          "喝一杯酒今晚好眠",
+          "大古变成光",
+          "圣菲达",
+          "山野星晴",
+          "Mos蚊子",
+          "小四",
+          "泪绝堤",
+          "朦胧原野",
+          "wuke小蓝",
+          "小黄帽",
+          "嘎嘎好吃",
+          "一枚贝壳儿",
+          "木杉",
+          "记得梦见我",
+          "卷心菜",
+          "Titzz",
+          "萬象生息",
+          "吕小布",
+          "张砚书",
+          "艺荇"
+        ],
+        "album": "该怎么说爱你",
+        "durationMs": 227136,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3395205512,
+        "name": "桃花诺",
+        "artists": [
+          "落日微醺"
+        ],
+        "album": "桃花诺",
+        "durationMs": 220029,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1879567851,
+        "name": "桃花诺",
+        "artists": [
+          "周男孩"
+        ],
+        "album": "桃花诺",
+        "durationMs": 220285,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2033722358,
+        "name": "桃花诺",
+        "artists": [
+          "小坠"
+        ],
+        "album": "桃花诺",
+        "durationMs": 212506,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 259,
+      "song_name": "桃花诺",
+      "show_as_song_name": "",
+      "display_song_name": "桃花诺",
+      "artist": "G.M.E邓紫棋",
+      "artist_search": "G.M.E邓紫棋",
+      "feat_artist": "",
+      "remark": "",
+      "tone": "",
+      "language": "中文",
+      "type": "影视、流行",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1UkaS6zEk3/?p=12",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-02",
+      "row_key": "桃花诺"
+    },
+    "sourceId": 480579393,
+    "sourcePath": "sources/480579393.json",
+    "sourceUrl": "https://music.163.com/#/song?id=480579393",
+    "selected": {
+      "id": 480579393,
+      "name": "桃花诺",
+      "artists": [
+        "G.E.M.邓紫棋"
+      ],
+      "album": "上古情歌 电视剧原声带",
+      "durationMs": 219759,
+      "titleScore": 1,
+      "artistMatch": false,
+      "score": 0.8
+    },
+    "timedLineCount": 37
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-259-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 222.464,
+    "sourceFirstLine": {
+      "t": 2,
+      "text": "制作人（美国）：Xueran Chen"
+    },
+    "anchorCandidate": null,
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

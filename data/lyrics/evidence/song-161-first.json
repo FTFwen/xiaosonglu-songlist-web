@@ -1,0 +1,74 @@
+{
+  "audioSha256": "6656bc220b43381d269b177bc80177d0f0c8d42350a8df082c0da70b4cbaef4d",
+  "model": "whisper-base",
+  "start": 0,
+  "end": 35,
+  "result": {
+    "text": "将作星传领寇",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 25.580000000000002,
+        "end": 26.18,
+        "text": "将作星传领寇",
+        "tokens": [
+          50364,
+          45456,
+          11914,
+          20682,
+          7384,
+          254,
+          12501,
+          228,
+          4510,
+          229,
+          50495
+        ],
+        "temperature": 0,
+        "avg_logprob": -1.2006499767303467,
+        "compression_ratio": 0.6206896551724138,
+        "no_speech_prob": 0.4743320941925049,
+        "words": [
+          {
+            "word": "将",
+            "start": 25.580000000000002,
+            "end": 25.66,
+            "probability": 0.0019872665870934725
+          },
+          {
+            "word": "作",
+            "start": 25.66,
+            "end": 25.66,
+            "probability": 0.22535620629787445
+          },
+          {
+            "word": "星",
+            "start": 25.66,
+            "end": 25.68,
+            "probability": 0.31257814168930054
+          },
+          {
+            "word": "传",
+            "start": 25.68,
+            "end": 25.72,
+            "probability": 0.7121676802635193
+          },
+          {
+            "word": "领",
+            "start": 25.72,
+            "end": 26.14,
+            "probability": 0.6921429634094238
+          },
+          {
+            "word": "寇",
+            "start": 26.14,
+            "end": 26.18,
+            "probability": 0.2606407478451729
+          }
+        ]
+      }
+    ],
+    "language": "zh"
+  }
+}

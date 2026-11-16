@@ -1,0 +1,139 @@
+{
+  "audioSha256": "f182f0428c6fce80981532a2c95f5aa0faa052b0a48e8dad79dcb96dbf7be8d1",
+  "model": "whisper-base",
+  "start": 0,
+  "end": 35,
+  "result": {
+    "text": "冬天的哥哥你是对的世界对的照顾",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 3000,
+        "start": 30.0,
+        "end": 31.8,
+        "text": "冬天的哥哥",
+        "tokens": [
+          50364,
+          5676,
+          105,
+          6135,
+          1546,
+          14078,
+          14078,
+          50494
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.6680590629577636,
+        "compression_ratio": 0.9183673469387755,
+        "no_speech_prob": 0.6631761789321899,
+        "words": [
+          {
+            "word": "冬",
+            "start": 30.0,
+            "end": 30.24,
+            "probability": 0.7247901260852814
+          },
+          {
+            "word": "天",
+            "start": 30.24,
+            "end": 30.52,
+            "probability": 0.988854169845581
+          },
+          {
+            "word": "的",
+            "start": 30.52,
+            "end": 31.1,
+            "probability": 0.9654551148414612
+          },
+          {
+            "word": "哥",
+            "start": 31.1,
+            "end": 31.34,
+            "probability": 0.5502490997314453
+          },
+          {
+            "word": "哥",
+            "start": 31.34,
+            "end": 31.8,
+            "probability": 0.9993194341659546
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "seek": 3000,
+        "start": 32.6,
+        "end": 34.98,
+        "text": "你是对的世界对的照顾",
+        "tokens": [
+          50494,
+          32526,
+          8713,
+          1546,
+          24486,
+          8713,
+          1546,
+          32150,
+          10178,
+          122,
+          50614
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.6680590629577636,
+        "compression_ratio": 0.9183673469387755,
+        "no_speech_prob": 0.6631761789321899,
+        "words": [
+          {
+            "word": "你是",
+            "start": 32.6,
+            "end": 32.88,
+            "probability": 0.9431319832801819
+          },
+          {
+            "word": "对",
+            "start": 32.88,
+            "end": 33.14,
+            "probability": 0.3721410930156708
+          },
+          {
+            "word": "的",
+            "start": 33.14,
+            "end": 33.36,
+            "probability": 0.82807856798172
+          },
+          {
+            "word": "世界",
+            "start": 33.36,
+            "end": 33.76,
+            "probability": 0.25731292366981506
+          },
+          {
+            "word": "对",
+            "start": 33.76,
+            "end": 34.26,
+            "probability": 0.9228515625
+          },
+          {
+            "word": "的",
+            "start": 34.26,
+            "end": 34.5,
+            "probability": 0.9875856637954712
+          },
+          {
+            "word": "照",
+            "start": 34.5,
+            "end": 34.8,
+            "probability": 0.145466610789299
+          },
+          {
+            "word": "顾",
+            "start": 34.8,
+            "end": 34.98,
+            "probability": 0.5183738991618156
+          }
+        ]
+      }
+    ],
+    "language": "zh"
+  }
+}

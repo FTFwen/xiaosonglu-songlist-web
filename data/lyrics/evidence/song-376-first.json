@@ -1,0 +1,156 @@
+{
+  "audioSha256": "72f3ef287d9ee963805808ba160420ec84630c0b9a32d7c10224be13111e6d52",
+  "model": "whisper-base",
+  "start": 0,
+  "end": 35,
+  "result": {
+    "text": "不太好文章把你的身边擺着新世界",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 0.0,
+        "end": 1.4,
+        "text": "不太好文章",
+        "tokens": [
+          50364,
+          1960,
+          9455,
+          2131,
+          17174,
+          11957,
+          254,
+          50464
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.8615253236558702,
+        "compression_ratio": 0.625,
+        "no_speech_prob": 0.05240704491734505,
+        "words": [
+          {
+            "word": "不",
+            "start": 0.0,
+            "end": 0.18,
+            "probability": 0.5452969074249268
+          },
+          {
+            "word": "太",
+            "start": 0.18,
+            "end": 1.02,
+            "probability": 0.8077160120010376
+          },
+          {
+            "word": "好",
+            "start": 1.02,
+            "end": 1.16,
+            "probability": 0.7911190390586853
+          },
+          {
+            "word": "文",
+            "start": 1.16,
+            "end": 1.34,
+            "probability": 0.22461488842964172
+          },
+          {
+            "word": "章",
+            "start": 1.34,
+            "end": 1.4,
+            "probability": 0.69611756503582
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "seek": 3000,
+        "start": 30.0,
+        "end": 32.48,
+        "text": "把你的身边",
+        "tokens": [
+          50364,
+          16075,
+          18961,
+          19847,
+          40503,
+          50504
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.8712342126028878,
+        "compression_ratio": 0.7317073170731707,
+        "no_speech_prob": 0.7569814920425415,
+        "words": [
+          {
+            "word": "把",
+            "start": 30.0,
+            "end": 30.1,
+            "probability": 0.05634062737226486
+          },
+          {
+            "word": "你的",
+            "start": 30.1,
+            "end": 30.82,
+            "probability": 0.8825151920318604
+          },
+          {
+            "word": "身",
+            "start": 30.82,
+            "end": 31.82,
+            "probability": 0.8633438348770142
+          },
+          {
+            "word": "边",
+            "start": 31.82,
+            "end": 32.48,
+            "probability": 0.6273236870765686
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "seek": 3000,
+        "start": 32.48,
+        "end": 34.84,
+        "text": "擺着新世界",
+        "tokens": [
+          50504,
+          13167,
+          118,
+          20708,
+          12560,
+          24486,
+          50616
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.8712342126028878,
+        "compression_ratio": 0.7317073170731707,
+        "no_speech_prob": 0.7569814920425415,
+        "words": [
+          {
+            "word": "擺",
+            "start": 32.48,
+            "end": 33.16,
+            "probability": 0.4658201150596142
+          },
+          {
+            "word": "着",
+            "start": 33.16,
+            "end": 33.48,
+            "probability": 0.6704361438751221
+          },
+          {
+            "word": "新",
+            "start": 33.48,
+            "end": 34.1,
+            "probability": 0.5701689124107361
+          },
+          {
+            "word": "世界",
+            "start": 34.1,
+            "end": 34.84,
+            "probability": 0.7078065276145935
+          }
+        ]
+      }
+    ],
+    "language": "zh"
+  }
+}

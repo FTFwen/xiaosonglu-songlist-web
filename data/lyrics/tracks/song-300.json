@@ -1,0 +1,186 @@
+{
+  "schemaVersion": 1,
+  "key": "song-300",
+  "songId": 300,
+  "songName": "XY&Z",
+  "rowKey": "XY&Z",
+  "displaySongName": "XY&Z",
+  "artist": "松本梨香",
+  "language": "日文",
+  "derivative": false,
+  "edition": "",
+  "remark": "仅出现在桐人今天睡大觉 BV1TApG6uEPX 分P18（心灵火Flame 的 BV1Qrpj6ZELm 少此曲，其余 19 首完全一致），以优先 UP 的合集为准。弹幕 02:28:07「竟然是宝可梦」与该曲为《宝可梦 XY&Z》片头曲相符。",
+  "audio": {
+    "url": "assets/audio/song_299.m4a?v=a47024e254b3",
+    "sha256": "a47024e254b305f5c90de8868a970d08d0b03358c62a49f73065b5f6e55a55ba"
+  },
+  "retrievedAt": "2026-11-16T04:06:31.923Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=XY%26Z&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=XY%26Z%20%E6%9D%BE%E6%9C%AC%E6%A2%A8%E9%A6%99&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 41643682,
+        "name": "XY&Z",
+        "artists": [
+          "松本梨香"
+        ],
+        "album": "アニメ「ポケットモンスターXY&Z」キャラソンプロジェクト集vol.1",
+        "durationMs": 211066,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 38689864,
+        "name": "XY&Z",
+        "artists": [
+          "松本梨香"
+        ],
+        "album": "XY&Z",
+        "durationMs": 211066,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2019516288,
+        "name": "XY＆Z",
+        "artists": [
+          "松本梨香"
+        ],
+        "album": "ポケモンTVアニメ主題歌 BEST OF BEST OF BEST 1997-2023",
+        "durationMs": 211073,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 440101051,
+        "name": "XY&Z",
+        "artists": [
+          "松本梨香"
+        ],
+        "album": "アニメ「ポケットモンスターXY&Z」キャラソンプロジェクト集vol.2 -総集編-",
+        "durationMs": 209080,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 521493119,
+        "name": "XY&Z",
+        "artists": [
+          "松本梨香"
+        ],
+        "album": "めざせポケモンマスター -20th Anniversary-",
+        "durationMs": 211333,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1948107264,
+        "name": "XYZ",
+        "artists": [
+          "deadmau5"
+        ],
+        "album": "XYZ",
+        "durationMs": 575625,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 26165936,
+        "name": "XYZ",
+        "artists": [
+          "少女时代"
+        ],
+        "album": "GIRLS' GENERATION THE 4TH ALBUM 'I GOT A BOY'",
+        "durationMs": 195233,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3408836161,
+        "name": "XYZ",
+        "artists": [
+          "HAON",
+          "NOWIMYOUNG",
+          "JMIN",
+          "KC"
+        ],
+        "album": "2000 TAPE",
+        "durationMs": 88615,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 300,
+      "song_name": "XY&Z",
+      "show_as_song_name": "",
+      "display_song_name": "XY&Z",
+      "artist": "松本梨香",
+      "artist_search": "松本梨香",
+      "feat_artist": "",
+      "remark": "仅出现在桐人今天睡大觉 BV1TApG6uEPX 分P18（心灵火Flame 的 BV1Qrpj6ZELm 少此曲，其余 19 首完全一致），以优先 UP 的合集为准。弹幕 02:28:07「竟然是宝可梦」与该曲为《宝可梦 XY&Z》片头曲相符。",
+      "tone": "",
+      "language": "日文",
+      "type": "动漫、J-Pop",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1TApG6uEPX/?p=18",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-10",
+      "row_key": "XY&Z"
+    },
+    "sourceId": 41643682,
+    "sourcePath": "sources/41643682.json",
+    "sourceUrl": "https://music.163.com/#/song?id=41643682",
+    "selected": {
+      "id": 41643682,
+      "name": "XY&Z",
+      "artists": [
+        "松本梨香"
+      ],
+      "album": "アニメ「ポケットモンスターXY&Z」キャラソンプロジェクト集vol.1",
+      "durationMs": 211066,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 44
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-300-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 216.704,
+    "sourceFirstLine": {
+      "t": 11.79,
+      "text": "へい！カロスを照らすあの朝日のように"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 11.9,
+      "endSeconds": 12.02,
+      "similarity": 0.1111111111111111,
+      "recognizedText": "ス",
+      "meanProbability": 0.397,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "ja",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

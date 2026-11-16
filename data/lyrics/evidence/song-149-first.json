@@ -1,0 +1,765 @@
+{
+  "audioSha256": "b12f0bef55905793c602613ace61256ec6531a6b9af69a8583614a52726e241c",
+  "model": "whisper-base",
+  "start": 0,
+  "end": 35,
+  "result": {
+    "text": "《眼中风》的规矩我们偏偏闻随随之间让冰的草烂浑身入雪水火的划班这些人都在看同时获得联系住时车空动的下线之月一点",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 20.779999999999998,
+        "end": 22.76,
+        "text": "《眼中风》的规矩",
+        "tokens": [
+          50364,
+          9806,
+          25281,
+          5975,
+          47209,
+          9782,
+          1546,
+          6758,
+          226,
+          5881,
+          102,
+          50464
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.5831283479047245,
+        "compression_ratio": 2.142857142857143,
+        "no_speech_prob": 0.7861831188201904,
+        "words": [
+          {
+            "word": "《",
+            "start": 20.779999999999998,
+            "end": 21.34,
+            "probability": 0.009225859306752682
+          },
+          {
+            "word": "眼",
+            "start": 21.34,
+            "end": 21.44,
+            "probability": 0.1540713608264923
+          },
+          {
+            "word": "中",
+            "start": 21.44,
+            "end": 21.68,
+            "probability": 0.13758966326713562
+          },
+          {
+            "word": "风",
+            "start": 21.68,
+            "end": 21.94,
+            "probability": 0.4253712296485901
+          },
+          {
+            "word": "》",
+            "start": 21.94,
+            "end": 21.96,
+            "probability": 0.8936083316802979
+          },
+          {
+            "word": "的",
+            "start": 21.96,
+            "end": 22.22,
+            "probability": 0.8247572779655457
+          },
+          {
+            "word": "规",
+            "start": 22.22,
+            "end": 22.4,
+            "probability": 0.7352807968854904
+          },
+          {
+            "word": "矩",
+            "start": 22.4,
+            "end": 22.76,
+            "probability": 0.9244780540466309
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "seek": 0,
+        "start": 22.76,
+        "end": 24.18,
+        "text": "我们偏偏闻",
+        "tokens": [
+          50464,
+          15003,
+          7437,
+          237,
+          7437,
+          237,
+          8259,
+          119,
+          50514
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.5831283479047245,
+        "compression_ratio": 2.142857142857143,
+        "no_speech_prob": 0.7861831188201904,
+        "words": [
+          {
+            "word": "我们",
+            "start": 22.76,
+            "end": 23.22,
+            "probability": 0.045042186975479126
+          },
+          {
+            "word": "偏",
+            "start": 23.22,
+            "end": 23.48,
+            "probability": 0.8925461173057556
+          },
+          {
+            "word": "偏",
+            "start": 23.48,
+            "end": 23.82,
+            "probability": 0.5205610506236553
+          },
+          {
+            "word": "闻",
+            "start": 23.82,
+            "end": 24.18,
+            "probability": 0.34008205542340875
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "seek": 0,
+        "start": 24.18,
+        "end": 25.64,
+        "text": "随随之间",
+        "tokens": [
+          50514,
+          10673,
+          237,
+          10673,
+          237,
+          9574,
+          31685,
+          50564
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.5831283479047245,
+        "compression_ratio": 2.142857142857143,
+        "no_speech_prob": 0.7861831188201904,
+        "words": [
+          {
+            "word": "随",
+            "start": 24.18,
+            "end": 24.62,
+            "probability": 0.49899402679875493
+          },
+          {
+            "word": "随",
+            "start": 24.62,
+            "end": 25.08,
+            "probability": 0.4276503287255764
+          },
+          {
+            "word": "之",
+            "start": 25.08,
+            "end": 25.42,
+            "probability": 0.9698890447616577
+          },
+          {
+            "word": "间",
+            "start": 25.42,
+            "end": 25.64,
+            "probability": 0.9603769183158875
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "seek": 0,
+        "start": 25.64,
+        "end": 27.06,
+        "text": "让冰的草烂",
+        "tokens": [
+          50564,
+          33650,
+          5676,
+          108,
+          1546,
+          31409,
+          231,
+          23661,
+          224,
+          50664
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.5831283479047245,
+        "compression_ratio": 2.142857142857143,
+        "no_speech_prob": 0.7861831188201904,
+        "words": [
+          {
+            "word": "让",
+            "start": 25.64,
+            "end": 26.06,
+            "probability": 0.8836113810539246
+          },
+          {
+            "word": "冰",
+            "start": 26.06,
+            "end": 26.28,
+            "probability": 0.6922440975904465
+          },
+          {
+            "word": "的",
+            "start": 26.28,
+            "end": 26.52,
+            "probability": 0.2612384557723999
+          },
+          {
+            "word": "草",
+            "start": 26.52,
+            "end": 26.7,
+            "probability": 0.5965283513069153
+          },
+          {
+            "word": "烂",
+            "start": 26.7,
+            "end": 27.06,
+            "probability": 0.6876250505447388
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "seek": 0,
+        "start": 27.06,
+        "end": 29.6,
+        "text": "浑身入雪水火的划班",
+        "tokens": [
+          50664,
+          11038,
+          239,
+          19847,
+          14028,
+          47939,
+          15590,
+          26171,
+          1546,
+          2437,
+          240,
+          44695,
+          50764
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.5831283479047245,
+        "compression_ratio": 2.142857142857143,
+        "no_speech_prob": 0.7861831188201904,
+        "words": [
+          {
+            "word": "浑",
+            "start": 27.06,
+            "end": 27.34,
+            "probability": 0.2516219783574343
+          },
+          {
+            "word": "身",
+            "start": 27.34,
+            "end": 27.62,
+            "probability": 0.0808485746383667
+          },
+          {
+            "word": "入",
+            "start": 27.62,
+            "end": 27.92,
+            "probability": 0.2597079575061798
+          },
+          {
+            "word": "雪",
+            "start": 27.92,
+            "end": 28.16,
+            "probability": 0.5331220030784607
+          },
+          {
+            "word": "水",
+            "start": 28.16,
+            "end": 28.46,
+            "probability": 0.45000672340393066
+          },
+          {
+            "word": "火",
+            "start": 28.46,
+            "end": 28.66,
+            "probability": 0.4220086634159088
+          },
+          {
+            "word": "的",
+            "start": 28.66,
+            "end": 28.92,
+            "probability": 0.5224168300628662
+          },
+          {
+            "word": "划",
+            "start": 28.92,
+            "end": 29.24,
+            "probability": 0.6707179844379425
+          },
+          {
+            "word": "班",
+            "start": 29.24,
+            "end": 29.6,
+            "probability": 0.17268209159374237
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "seek": 0,
+        "start": 29.6,
+        "end": 29.98,
+        "text": "这些人都在看",
+        "tokens": [
+          50764,
+          5562,
+          13824,
+          4035,
+          7182,
+          3581,
+          4200,
+          50864
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.5831283479047245,
+        "compression_ratio": 2.142857142857143,
+        "no_speech_prob": 0.7861831188201904,
+        "words": [
+          {
+            "word": "这",
+            "start": 29.6,
+            "end": 29.98,
+            "probability": 0.06837300956249237
+          },
+          {
+            "word": "些",
+            "start": 29.98,
+            "end": 29.98,
+            "probability": 0.04646768420934677
+          },
+          {
+            "word": "人",
+            "start": 29.98,
+            "end": 29.98,
+            "probability": 0.09794329106807709
+          },
+          {
+            "word": "都",
+            "start": 29.98,
+            "end": 29.98,
+            "probability": 0.1158127710223198
+          },
+          {
+            "word": "在",
+            "start": 29.98,
+            "end": 29.98,
+            "probability": 0.0998641699552536
+          },
+          {
+            "word": "看",
+            "start": 29.98,
+            "end": 29.98,
+            "probability": 0.04520878940820694
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "seek": 0,
+        "start": 29.98,
+        "end": 29.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.5831283479047245,
+        "compression_ratio": 2.142857142857143,
+        "no_speech_prob": 0.7861831188201904,
+        "words": []
+      },
+      {
+        "id": 7,
+        "seek": 0,
+        "start": 29.98,
+        "end": 29.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.5831283479047245,
+        "compression_ratio": 2.142857142857143,
+        "no_speech_prob": 0.7861831188201904,
+        "words": []
+      },
+      {
+        "id": 8,
+        "seek": 0,
+        "start": 29.98,
+        "end": 29.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.5831283479047245,
+        "compression_ratio": 2.142857142857143,
+        "no_speech_prob": 0.7861831188201904,
+        "words": []
+      },
+      {
+        "id": 9,
+        "seek": 0,
+        "start": 29.98,
+        "end": 29.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.5831283479047245,
+        "compression_ratio": 2.142857142857143,
+        "no_speech_prob": 0.7861831188201904,
+        "words": []
+      },
+      {
+        "id": 10,
+        "seek": 0,
+        "start": 29.98,
+        "end": 29.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.5831283479047245,
+        "compression_ratio": 2.142857142857143,
+        "no_speech_prob": 0.7861831188201904,
+        "words": []
+      },
+      {
+        "id": 11,
+        "seek": 0,
+        "start": 29.98,
+        "end": 29.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.5831283479047245,
+        "compression_ratio": 2.142857142857143,
+        "no_speech_prob": 0.7861831188201904,
+        "words": []
+      },
+      {
+        "id": 12,
+        "seek": 0,
+        "start": 29.98,
+        "end": 29.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.5831283479047245,
+        "compression_ratio": 2.142857142857143,
+        "no_speech_prob": 0.7861831188201904,
+        "words": []
+      },
+      {
+        "id": 13,
+        "seek": 0,
+        "start": 29.98,
+        "end": 29.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.5831283479047245,
+        "compression_ratio": 2.142857142857143,
+        "no_speech_prob": 0.7861831188201904,
+        "words": []
+      },
+      {
+        "id": 14,
+        "seek": 0,
+        "start": 29.98,
+        "end": 29.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.5831283479047245,
+        "compression_ratio": 2.142857142857143,
+        "no_speech_prob": 0.7861831188201904,
+        "words": []
+      },
+      {
+        "id": 15,
+        "seek": 0,
+        "start": 29.98,
+        "end": 29.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.5831283479047245,
+        "compression_ratio": 2.142857142857143,
+        "no_speech_prob": 0.7861831188201904,
+        "words": []
+      },
+      {
+        "id": 16,
+        "seek": 0,
+        "start": 29.98,
+        "end": 29.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.5831283479047245,
+        "compression_ratio": 2.142857142857143,
+        "no_speech_prob": 0.7861831188201904,
+        "words": []
+      },
+      {
+        "id": 17,
+        "seek": 0,
+        "start": 29.98,
+        "end": 29.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.5831283479047245,
+        "compression_ratio": 2.142857142857143,
+        "no_speech_prob": 0.7861831188201904,
+        "words": []
+      },
+      {
+        "id": 18,
+        "seek": 0,
+        "start": 29.98,
+        "end": 29.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.5831283479047245,
+        "compression_ratio": 2.142857142857143,
+        "no_speech_prob": 0.7861831188201904,
+        "words": []
+      },
+      {
+        "id": 19,
+        "seek": 0,
+        "start": 29.98,
+        "end": 29.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.5831283479047245,
+        "compression_ratio": 2.142857142857143,
+        "no_speech_prob": 0.7861831188201904,
+        "words": []
+      },
+      {
+        "id": 20,
+        "seek": 0,
+        "start": 29.98,
+        "end": 29.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.5831283479047245,
+        "compression_ratio": 2.142857142857143,
+        "no_speech_prob": 0.7861831188201904,
+        "words": []
+      },
+      {
+        "id": 21,
+        "seek": 0,
+        "start": 29.98,
+        "end": 29.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.5831283479047245,
+        "compression_ratio": 2.142857142857143,
+        "no_speech_prob": 0.7861831188201904,
+        "words": []
+      },
+      {
+        "id": 22,
+        "seek": 0,
+        "start": 29.98,
+        "end": 29.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.5831283479047245,
+        "compression_ratio": 2.142857142857143,
+        "no_speech_prob": 0.7861831188201904,
+        "words": []
+      },
+      {
+        "id": 23,
+        "seek": 0,
+        "start": 29.98,
+        "end": 29.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.5831283479047245,
+        "compression_ratio": 2.142857142857143,
+        "no_speech_prob": 0.7861831188201904,
+        "words": []
+      },
+      {
+        "id": 24,
+        "seek": 0,
+        "start": 29.98,
+        "end": 29.98,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.5831283479047245,
+        "compression_ratio": 2.142857142857143,
+        "no_speech_prob": 0.7861831188201904,
+        "words": []
+      },
+      {
+        "id": 25,
+        "seek": 2998,
+        "start": 29.98,
+        "end": 34.88,
+        "text": "同时获得联系住时车空动的下线之月一点",
+        "tokens": [
+          50364,
+          13089,
+          15729,
+          31127,
+          115,
+          5916,
+          8171,
+          242,
+          25368,
+          21632,
+          15729,
+          17819,
+          99,
+          23322,
+          34961,
+          1546,
+          4438,
+          16853,
+          123,
+          9574,
+          6939,
+          49042,
+          50618
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.8014722665150961,
+        "compression_ratio": 0.8307692307692308,
+        "no_speech_prob": 0.5881499648094177,
+        "words": [
+          {
+            "word": "同",
+            "start": 29.98,
+            "end": 30.1,
+            "probability": 0.035445064306259155
+          },
+          {
+            "word": "时",
+            "start": 30.1,
+            "end": 30.36,
+            "probability": 0.83784019947052
+          },
+          {
+            "word": "获",
+            "start": 30.36,
+            "end": 30.68,
+            "probability": 0.5227082818746567
+          },
+          {
+            "word": "得",
+            "start": 30.68,
+            "end": 30.86,
+            "probability": 0.902961790561676
+          },
+          {
+            "word": "联",
+            "start": 30.86,
+            "end": 31.1,
+            "probability": 0.6952081322669983
+          },
+          {
+            "word": "系",
+            "start": 31.1,
+            "end": 31.38,
+            "probability": 0.9752956032752991
+          },
+          {
+            "word": "住",
+            "start": 31.38,
+            "end": 31.7,
+            "probability": 0.17839591205120087
+          },
+          {
+            "word": "时",
+            "start": 31.7,
+            "end": 31.96,
+            "probability": 0.5168557167053223
+          },
+          {
+            "word": "车",
+            "start": 31.96,
+            "end": 32.28,
+            "probability": 0.8117059469223022
+          },
+          {
+            "word": "空",
+            "start": 32.28,
+            "end": 32.48,
+            "probability": 0.9551750421524048
+          },
+          {
+            "word": "动",
+            "start": 32.48,
+            "end": 32.8,
+            "probability": 0.19755896925926208
+          },
+          {
+            "word": "的",
+            "start": 32.8,
+            "end": 33.0,
+            "probability": 0.8265455365180969
+          },
+          {
+            "word": "下",
+            "start": 33.0,
+            "end": 33.28,
+            "probability": 0.8321488499641418
+          },
+          {
+            "word": "线",
+            "start": 33.28,
+            "end": 33.64,
+            "probability": 0.8104364573955536
+          },
+          {
+            "word": "之",
+            "start": 33.64,
+            "end": 33.96,
+            "probability": 0.2053632289171219
+          },
+          {
+            "word": "月",
+            "start": 33.96,
+            "end": 34.28,
+            "probability": 0.20126944780349731
+          },
+          {
+            "word": "一点",
+            "start": 34.28,
+            "end": 34.88,
+            "probability": 0.9333705306053162
+          }
+        ]
+      }
+    ],
+    "language": "zh"
+  }
+}

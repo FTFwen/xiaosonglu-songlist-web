@@ -1,0 +1,163 @@
+{
+  "schemaVersion": 1,
+  "key": "song-47",
+  "songId": 47,
+  "songName": "我的悲伤是水做的",
+  "displaySongName": "我的悲伤是水做的",
+  "artist": "ChiliChill乐团 / 洛天依Official",
+  "language": "中文",
+  "derivative": false,
+  "audio": {
+    "url": "assets/audio/song_62.m4a?v=f7ae7b224405",
+    "sha256": "f7ae7b2244052e227a4f2decfeb19266a10659a306214199f9fe21df24ffdf3b"
+  },
+  "retrievedAt": "2026-11-16T03:58:23.004Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E6%88%91%E7%9A%84%E6%82%B2%E4%BC%A4%E6%98%AF%E6%B0%B4%E5%81%9A%E7%9A%84&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1439814454,
+        "name": "我的悲伤是水做的",
+        "artists": [
+          "ChiliChill乐团",
+          "洛天依Official"
+        ],
+        "album": "我的悲伤是水做的",
+        "durationMs": 225817,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1909424934,
+        "name": "我的悲伤是水做的",
+        "artists": [
+          "ChiliChill乐团"
+        ],
+        "album": "每到夜里我就很饿",
+        "durationMs": 226994,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1815918921,
+        "name": "我的悲伤是水做的",
+        "artists": [
+          "封茗囧菌"
+        ],
+        "album": "我的悲伤是水做的",
+        "durationMs": 225936,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1485450213,
+        "name": "我的悲伤是水做的",
+        "artists": [
+          "泠鸢yousa"
+        ],
+        "album": "泠鸢yousa.2020年翻唱合集",
+        "durationMs": 225714,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1440943328,
+        "name": "我的悲伤是水做的",
+        "artists": [
+          "少恭"
+        ],
+        "album": "我的悲伤是水做的",
+        "durationMs": 226104,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3426101318,
+        "name": "我的悲伤是水做的",
+        "artists": [
+          "SayenNnn"
+        ],
+        "album": "我的悲伤是水做的",
+        "durationMs": 227448,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1442528756,
+        "name": "我的悲伤是水做的",
+        "artists": [
+          "柚木暖"
+        ],
+        "album": "我的悲伤是水做的",
+        "durationMs": 225817,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3387597390,
+        "name": "我的悲伤是水做的",
+        "artists": [
+          "洛少爷"
+        ],
+        "album": "我的悲伤是水做的",
+        "durationMs": 225880,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "sourceId": 1439814454,
+    "sourcePath": "sources/1439814454.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1439814454",
+    "selected": {
+      "id": 1439814454,
+      "name": "我的悲伤是水做的",
+      "artists": [
+        "ChiliChill乐团",
+        "洛天依Official"
+      ],
+      "album": "我的悲伤是水做的",
+      "durationMs": 225817,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 46
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-47-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 223.422,
+    "sourceFirstLine": {
+      "t": 25.606,
+      "text": "嫌弃下雨的天气"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 31.46,
+      "endSeconds": 31.74,
+      "similarity": 0.25,
+      "recognizedText": "下",
+      "meanProbability": 0.418,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  },
+  "rowKey": "我的悲伤是水做的",
+  "edition": "",
+  "remark": "直链页面 title 为【小松绿Viridis/翻唱】《我的悲伤是水做的》，meta description 明示日期 2026.08.15 与 UP 主小鸡奇遇記。song_name 归一化为真实曲名“我的悲伤是水做的”。"
+}

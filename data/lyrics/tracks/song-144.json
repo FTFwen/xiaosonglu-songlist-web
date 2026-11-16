@@ -1,0 +1,189 @@
+{
+  "schemaVersion": 1,
+  "key": "song-144",
+  "songId": 144,
+  "songName": "绝体绝命",
+  "rowKey": "绝体绝命",
+  "displaySongName": "绝体绝命",
+  "artist": "阿良良木健、洛天依Official",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "",
+  "audio": {
+    "url": "assets/audio/song_143.m4a?v=72e8866877d1",
+    "sha256": "72e8866877d17140c1b3287fe2b39a83396c4db94120f572d89dc09695b7905a"
+  },
+  "retrievedAt": "2026-11-16T04:04:06.644Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E7%BB%9D%E4%BD%93%E7%BB%9D%E5%91%BD&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E7%BB%9D%E4%BD%93%E7%BB%9D%E5%91%BD%20%E9%98%BF%E8%89%AF%E8%89%AF%E6%9C%A8%E5%81%A5&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 550059604,
+        "name": "绝体绝命",
+        "artists": [
+          "阿良良木健",
+          "洛天依Official"
+        ],
+        "album": "洛天依作品2号：V",
+        "durationMs": 213157,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 3402764239,
+        "name": "绝体绝命",
+        "artists": [
+          "洛天依Official"
+        ],
+        "album": "四重奏",
+        "durationMs": 228157,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1293929391,
+        "name": "绝体绝命",
+        "artists": [
+          "落Aki",
+          "Lisa"
+        ],
+        "album": "绝体绝命",
+        "durationMs": 214101,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2136298400,
+        "name": "绝体绝命",
+        "artists": [
+          "咩咩Miemie"
+        ],
+        "album": "星铁二创",
+        "durationMs": 213157,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2084323704,
+        "name": "绝体绝命",
+        "artists": [
+          "惊蛰"
+        ],
+        "album": "翻唱",
+        "durationMs": 213315,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1356379213,
+        "name": "绝体绝命（Love Elegia Ver.）",
+        "artists": [
+          "阿良良木健",
+          "洛天依"
+        ],
+        "album": "奇爱人生 LOVE ELEGIA",
+        "durationMs": 213552,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      },
+      {
+        "id": 550058871,
+        "name": "绝体绝命（Instrumental）",
+        "artists": [
+          "阿良良木健",
+          "洛天依Official"
+        ],
+        "album": "洛天依作品2号：V",
+        "durationMs": 213157,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      },
+      {
+        "id": 28830337,
+        "name": "I LOVE U",
+        "artists": [
+          "阿良良木健",
+          "洛天依Official"
+        ],
+        "album": "末日DISCO",
+        "durationMs": 276000,
+        "titleScore": 0,
+        "artistMatch": true,
+        "score": 0.2
+      }
+    ],
+    "workQuery": {
+      "song_id": 144,
+      "song_name": "绝体绝命",
+      "show_as_song_name": "",
+      "display_song_name": "绝体绝命",
+      "artist": "阿良良木健、洛天依Official",
+      "artist_search": "阿良良木健、洛天依Official",
+      "feat_artist": "",
+      "remark": "",
+      "tone": "",
+      "language": "中文",
+      "type": "中V",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1qfYJ6gEm8/?p=5",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-09-08",
+      "row_key": "绝体绝命"
+    },
+    "sourceId": 550059604,
+    "sourcePath": "sources/550059604.json",
+    "sourceUrl": "https://music.163.com/#/song?id=550059604",
+    "selected": {
+      "id": 550059604,
+      "name": "绝体绝命",
+      "artists": [
+        "阿良良木健",
+        "洛天依Official"
+      ],
+      "album": "洛天依作品2号：V",
+      "durationMs": 213157,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 51
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-144-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 258.368,
+    "sourceFirstLine": {
+      "t": 0.47,
+      "text": "调教：阿良良木健"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 27.68,
+      "endSeconds": 28.38,
+      "similarity": 0.0,
+      "recognizedText": "我",
+      "meanProbability": 0.08,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

@@ -1,0 +1,216 @@
+{
+  "schemaVersion": 1,
+  "key": "song-209",
+  "songId": 209,
+  "songName": "Lemon",
+  "rowKey": "Lemon",
+  "displaySongName": "Lemon",
+  "artist": "米津玄師",
+  "language": "日文",
+  "derivative": false,
+  "edition": "",
+  "remark": "UP 心灵火Flame《20260919 歌切》P12；原唱米津玄師（2018）",
+  "audio": {
+    "url": "assets/audio/song_208.m4a?v=46e1bb97a662",
+    "sha256": "46e1bb97a662217ae28e1b90d7f265295acad26e92bc96e4ef028a69766aa85c"
+  },
+  "retrievedAt": "2026-11-16T04:04:59.687Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=Lemon&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=Lemon%20%E7%B1%B3%E6%B4%A5%E7%8E%84%E5%B8%AB&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 536622304,
+        "name": "Lemon",
+        "artists": [
+          "米津玄師"
+        ],
+        "album": "Lemon",
+        "durationMs": 256000,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1466598056,
+        "name": "Lemon",
+        "artists": [
+          "米津玄師"
+        ],
+        "album": "STRAY SHEEP",
+        "durationMs": 255883,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 3401323513,
+        "name": "Lemon",
+        "artists": [
+          "安亚尔Anyar"
+        ],
+        "album": "Lemon",
+        "durationMs": 124612,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 445844572,
+        "name": "Lemon",
+        "artists": [
+          "秦四风"
+        ],
+        "album": "SEDAR",
+        "durationMs": 221645,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1487807886,
+        "name": "Lemon",
+        "artists": [
+          "sanowei"
+        ],
+        "album": "Lemon",
+        "durationMs": 124707,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3370879187,
+        "name": "lemon",
+        "artists": [
+          "강지원"
+        ],
+        "album": "Ordinary Ever After",
+        "durationMs": 201730,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1496098034,
+        "name": "Lemon",
+        "artists": [
+          "Raon"
+        ],
+        "album": "",
+        "durationMs": 258000,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1344729444,
+        "name": "lemon（钢琴改编版）（翻自 米津玄師）",
+        "artists": [
+          "米津玄師"
+        ],
+        "album": "把各种有名的流行歌曲（或纯音乐）改成大（小）调等各种调式会怎么样呢？",
+        "durationMs": 87536,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      }
+    ],
+    "workQuery": {
+      "song_id": 209,
+      "song_name": "Lemon",
+      "show_as_song_name": "",
+      "display_song_name": "Lemon",
+      "artist": "米津玄師",
+      "artist_search": "米津玄師 Lemon",
+      "feat_artist": "",
+      "remark": "UP 心灵火Flame《20260919 歌切》P12；原唱米津玄師（2018）",
+      "tone": "",
+      "language": "日文",
+      "type": "J-Pop",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1rZe86yE49/?p=12",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-09-19",
+      "row_key": "Lemon"
+    },
+    "sourceId": 536622304,
+    "sourcePath": "sources/536622304.json",
+    "sourceUrl": "https://music.163.com/#/song?id=536622304",
+    "selected": {
+      "id": 536622304,
+      "name": "Lemon",
+      "artists": [
+        "米津玄師"
+      ],
+      "album": "Lemon",
+      "durationMs": 256000,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 43
+  },
+  "alignment": {
+    "status": "spotcheck_review_required",
+    "evidencePath": "evidence/song-209-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 249.08,
+    "sourceFirstLine": {
+      "t": 0.851,
+      "text": "夢ならばどれほどよかったでしょう"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 1.06,
+      "endSeconds": 5.88,
+      "similarity": 0.9375,
+      "recognizedText": "夢ならば取れほどよかったでしょう",
+      "meanProbability": 0.666,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": 0.209,
+    "checks": [
+      {
+        "sourceLine": {
+          "t": 125.58,
+          "text": "わたしの知らない横顔で"
+        },
+        "evidencePath": "evidence/song-209-check0.json",
+        "candidate": {
+          "audioSeconds": 126.729,
+          "endSeconds": 130.309,
+          "similarity": 0.7368421052631579,
+          "recognizedText": "の知らないよ 顔で",
+          "meanProbability": 0.847,
+          "tokenPrefixOnly": false
+        },
+        "residualSeconds": 0.94
+      },
+      {
+        "sourceLine": {
+          "t": 224.28,
+          "text": "苦いレモンの匂い"
+        },
+        "evidencePath": "evidence/song-209-check1.json",
+        "candidate": {
+          "audioSeconds": 226.909,
+          "endSeconds": 227.489,
+          "similarity": 0.2222222222222222,
+          "recognizedText": "い",
+          "meanProbability": 0.11,
+          "tokenPrefixOnly": false
+        },
+        "residualSeconds": 2.42
+      }
+    ],
+    "asrLanguage": "ja",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

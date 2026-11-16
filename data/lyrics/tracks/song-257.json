@@ -1,0 +1,208 @@
+{
+  "schemaVersion": 1,
+  "key": "song-257",
+  "songId": 257,
+  "songName": "交织together",
+  "rowKey": "交织together",
+  "displaySongName": "交织together",
+  "artist": "OriginGirls, 迟色, 舞雪, 饼饼Causa, 沈音音",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "",
+  "audio": {
+    "url": "assets/audio/song_256.m4a?v=34e1a030fa8f",
+    "sha256": "34e1a030fa8ff79b9371ecdfa99653fffb251d5ee3466f05ee2eb27a4235bcba"
+  },
+  "retrievedAt": "2026-11-16T04:05:52.326Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E4%BA%A4%E7%BB%87together&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E4%BA%A4%E7%BB%87together%20OriginGirls&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1838286288,
+        "name": "交织together",
+        "artists": [
+          "OriginGirls",
+          "迟色",
+          "舞雪",
+          "饼饼Causa",
+          "沈音音"
+        ],
+        "album": "交织",
+        "durationMs": 261955,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 460478768,
+        "name": "「交织together」",
+        "artists": [
+          "DMYoung",
+          "Hanser",
+          "泠鸢yousa"
+        ],
+        "album": "交织together",
+        "durationMs": 260909,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1860936680,
+        "name": "交织together",
+        "artists": [
+          "柳醉烟",
+          "吃不饱的梅宝",
+          "秋枫不疯",
+          "扶苏少吃点",
+          "萌芽W",
+          "先生と牛",
+          "觉觉想睡觉",
+          "汉子",
+          "鱼好好",
+          "舞榭"
+        ],
+        "album": "交织together",
+        "durationMs": 260912,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1306065337,
+        "name": "交织together",
+        "artists": [
+          "萌比Yfh",
+          "程兮兮"
+        ],
+        "album": "【萌๑BDF2017】交织together",
+        "durationMs": 260597,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1484165233,
+        "name": "「交织together」",
+        "artists": [
+          "许殇Neu",
+          "沐风_Breeze"
+        ],
+        "album": "交织together",
+        "durationMs": 260899,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1445282580,
+        "name": "交织together",
+        "artists": [
+          "宁夏菌",
+          "黑黑黑白机"
+        ],
+        "album": "俺和朋友的合作",
+        "durationMs": 261093,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1961734827,
+        "name": "交织together",
+        "artists": [
+          "桃井もっと",
+          "Assarm"
+        ],
+        "album": "萨x逗 交织together",
+        "durationMs": 260909,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1934755488,
+        "name": "交织together",
+        "artists": [
+          "苦味荠",
+          "地缚少女花翎酱",
+          "拜托了番茄炒蛋"
+        ],
+        "album": "黑龙会2022生贺企划单品",
+        "durationMs": 260928,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 257,
+      "song_name": "交织together",
+      "show_as_song_name": "",
+      "display_song_name": "交织together",
+      "artist": "OriginGirls, 迟色, 舞雪, 饼饼Causa, 沈音音",
+      "artist_search": "OriginGirls, 迟色, 舞雪, 饼饼Causa, 沈音音",
+      "feat_artist": "",
+      "remark": "",
+      "tone": "",
+      "language": "中文",
+      "type": "中V",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1UkaS6zEk3/?p=7",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-02",
+      "row_key": "交织together"
+    },
+    "sourceId": 1838286288,
+    "sourcePath": "sources/1838286288.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1838286288",
+    "selected": {
+      "id": 1838286288,
+      "name": "交织together",
+      "artists": [
+        "OriginGirls",
+        "迟色",
+        "舞雪",
+        "饼饼Causa",
+        "沈音音"
+      ],
+      "album": "交织",
+      "durationMs": 261955,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 77
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-257-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 260.693,
+    "sourceFirstLine": {
+      "t": 4.385,
+      "text": "----"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 23.78,
+      "endSeconds": 24.18,
+      "similarity": 0.6,
+      "recognizedText": "作词 作曲 作曲 作",
+      "meanProbability": 0.488,
+      "tokenPrefixOnly": true
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

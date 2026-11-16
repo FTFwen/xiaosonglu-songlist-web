@@ -1,0 +1,187 @@
+{
+  "schemaVersion": 1,
+  "key": "song-196",
+  "songId": 196,
+  "songName": "探窗",
+  "rowKey": "探窗",
+  "displaySongName": "探窗",
+  "artist": "浮生梦",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "",
+  "audio": {
+    "url": "assets/audio/song_195.m4a?v=bd507c4dd7b1",
+    "sha256": "bd507c4dd7b1cbf465279d4d37f5c68023383fc338050811ff82c02d28c6ea24"
+  },
+  "retrievedAt": "2026-11-16T04:04:41.805Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E6%8E%A2%E7%AA%97&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E6%8E%A2%E7%AA%97%20%E6%B5%AE%E7%94%9F%E6%A2%A6&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1861616820,
+        "name": "探窗",
+        "artists": [
+          "国风新语",
+          "浮生梦tuzi",
+          "汐音社"
+        ],
+        "album": "探窗",
+        "durationMs": 217095,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1861380338,
+        "name": "探窗",
+        "artists": [
+          "明月社"
+        ],
+        "album": "探户",
+        "durationMs": 132261,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3379490948,
+        "name": "探窗",
+        "artists": [
+          "肉肉"
+        ],
+        "album": "",
+        "durationMs": 205054,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3329198095,
+        "name": "探窗",
+        "artists": [
+          "DJ鹿先生"
+        ],
+        "album": "2025土嗨合集-390",
+        "durationMs": 144080,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3329604498,
+        "name": "探窗",
+        "artists": [
+          "倾.C"
+        ],
+        "album": "抖音爆火的歌曲 291",
+        "durationMs": 162043,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3403308675,
+        "name": "探窗",
+        "artists": [
+          "赧然"
+        ],
+        "album": "探窗",
+        "durationMs": 217000,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3329198957,
+        "name": "探窗",
+        "artists": [
+          "绷带"
+        ],
+        "album": "氛围感歌曲311",
+        "durationMs": 155827,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2735875092,
+        "name": "探窗",
+        "artists": [
+          "尘ah."
+        ],
+        "album": "",
+        "durationMs": 19249,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 196,
+      "song_name": "探窗",
+      "show_as_song_name": "",
+      "display_song_name": "探窗",
+      "artist": "浮生梦",
+      "artist_search": "浮生梦",
+      "feat_artist": "",
+      "remark": "",
+      "tone": "",
+      "language": "中文",
+      "type": "古风、翻唱",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1xger6jEYS/?p=12",
+      "sing_count": 1,
+      "status_labels": "自动识别待人工复核",
+      "last_sing_at": "2026-09-17",
+      "row_key": "探窗"
+    },
+    "sourceId": 1861616820,
+    "sourcePath": "sources/1861616820.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1861616820",
+    "selected": {
+      "id": 1861616820,
+      "name": "探窗",
+      "artists": [
+        "国风新语",
+        "浮生梦tuzi",
+        "汐音社"
+      ],
+      "album": "探窗",
+      "durationMs": 217095,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 54
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-196-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 220.613,
+    "sourceFirstLine": {
+      "t": 0,
+      "text": "探窗 - 国风新语/浮生梦/汐音社"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 2.5,
+      "endSeconds": 3.34,
+      "similarity": 0.0,
+      "recognizedText": "是",
+      "meanProbability": 0.392,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

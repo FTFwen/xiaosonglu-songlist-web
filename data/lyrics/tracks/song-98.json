@@ -1,0 +1,163 @@
+{
+  "schemaVersion": 1,
+  "key": "song-98",
+  "songId": 98,
+  "songName": "青鸟衔风",
+  "displaySongName": "青鸟衔风",
+  "artist": "海伊 / 诗岸",
+  "language": "中文",
+  "derivative": false,
+  "audio": {
+    "url": "assets/audio/song_99.m4a?v=72967913fd2b",
+    "sha256": "72967913fd2b8962820a9db9e6e46c076cf80d00ef78bde01975a4645c447ed8"
+  },
+  "retrievedAt": "2026-11-16T03:58:05.226Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E9%9D%92%E9%B8%9F%E8%A1%94%E9%A3%8E&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1409603530,
+        "name": "青鸟衔风",
+        "artists": [
+          "忘川风华录",
+          "海伊",
+          "诗岸"
+        ],
+        "album": "青鸟衔风",
+        "durationMs": 186290,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1409838411,
+        "name": "青鸟衔风",
+        "artists": [
+          "三无Marblue",
+          "Hanser"
+        ],
+        "album": "2019翻唱合集",
+        "durationMs": 186317,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1410273439,
+        "name": "青鸟衔风",
+        "artists": [
+          "茶了了"
+        ],
+        "album": "青鸟衔风",
+        "durationMs": 185759,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1422745607,
+        "name": "青鸟衔风",
+        "artists": [
+          "柠央Reo",
+          "F未來"
+        ],
+        "album": "青鸟衔风",
+        "durationMs": 186290,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1483554944,
+        "name": "青鸟衔风",
+        "artists": [
+          "卿池",
+          "朵芊"
+        ],
+        "album": "青鸟衔风",
+        "durationMs": 184304,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1806871742,
+        "name": "青鸟衔风",
+        "artists": [
+          "青橙Touko",
+          "木易Maria"
+        ],
+        "album": "青鸟衔风（圣诞快乐）",
+        "durationMs": 186356,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1948278097,
+        "name": "青鸟衔风",
+        "artists": [
+          "暮卿凝",
+          "一颗飘"
+        ],
+        "album": "5.18 生贺～",
+        "durationMs": 188571,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1410739479,
+        "name": "青鸟衔风",
+        "artists": [
+          "墨绛"
+        ],
+        "album": "青鸟衔风",
+        "durationMs": 186279,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "sourceId": 1409603530,
+    "sourcePath": "sources/1409603530.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1409603530",
+    "selected": {
+      "id": 1409603530,
+      "name": "青鸟衔风",
+      "artists": [
+        "忘川风华录",
+        "海伊",
+        "诗岸"
+      ],
+      "album": "青鸟衔风",
+      "durationMs": 186290,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 55
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-98-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 183.322,
+    "sourceFirstLine": {
+      "t": 8.433,
+      "text": "音效：hanser"
+    },
+    "anchorCandidate": null,
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  },
+  "rowKey": "青鸟衔风",
+  "edition": "",
+  "remark": "歌切标题《【小松绿Viridis】《青鸟衔风》》（UP 天生就喜欢笑，简介 20260811）。萌百核实：忘川风华录 2019-12-14 投稿 Synthesizer V 中文原创，海伊与诗岸演唱（慕清明作词、PoKeR 作曲）。按 song-cut-first 规则收录。"
+}

@@ -1,0 +1,161 @@
+{
+  "schemaVersion": 1,
+  "key": "song-22",
+  "songId": 22,
+  "songName": "太聪明",
+  "displaySongName": "太聪明",
+  "artist": "陈绮贞",
+  "language": "中文",
+  "derivative": false,
+  "audio": {
+    "url": "assets/audio/song_56.m4a?v=2ff7051783a2",
+    "sha256": "2ff7051783a2a6cc7f20371b0fadf951995354bbaf26fe18ed56775ef8b4addd"
+  },
+  "retrievedAt": "2026-11-16T03:58:08.189Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E5%A4%AA%E8%81%AA%E6%98%8E&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 209397,
+        "name": "太聪明",
+        "artists": [
+          "陈绮贞"
+        ],
+        "album": "Groupies吉他手",
+        "durationMs": 263173,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 209287,
+        "name": "太聪明",
+        "artists": [
+          "陈绮贞"
+        ],
+        "album": "陈绮贞 精选 1998-2005",
+        "durationMs": 263221,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 3457542530,
+        "name": "太聪明",
+        "artists": [
+          "悲"
+        ],
+        "album": "反话",
+        "durationMs": 79777,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1329771977,
+        "name": "太聪明",
+        "artists": [
+          "丁倩倩"
+        ],
+        "album": "E M o T i o N",
+        "durationMs": 270385,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3360434921,
+        "name": "太聪明",
+        "artists": [
+          "欧阳娜娜"
+        ],
+        "album": "太聪明",
+        "durationMs": 276170,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2612735514,
+        "name": "太聪明",
+        "artists": [
+          "CashMoon"
+        ],
+        "album": "太聪明",
+        "durationMs": 123712,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2067434767,
+        "name": "太聪明",
+        "artists": [
+          "火鸡"
+        ],
+        "album": "太聪明",
+        "durationMs": 226818,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3367716973,
+        "name": "太聪明",
+        "artists": [
+          "微醺卡带"
+        ],
+        "album": "太聪明",
+        "durationMs": 140379,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "sourceId": 209397,
+    "sourcePath": "sources/209397.json",
+    "sourceUrl": "https://music.163.com/#/song?id=209397",
+    "selected": {
+      "id": 209397,
+      "name": "太聪明",
+      "artists": [
+        "陈绮贞"
+      ],
+      "album": "Groupies吉他手",
+      "durationMs": 263173,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 44
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-22-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 259.785,
+    "sourceFirstLine": {
+      "t": 7.58,
+      "text": "总以为谜一般难懂的我"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 31.04,
+      "endSeconds": 31.88,
+      "similarity": 0.16666666666666666,
+      "recognizedText": "我的",
+      "meanProbability": 0.956,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  },
+  "rowKey": "太聪明",
+  "edition": "",
+  "remark": "来自 2026-08-10 小练歌回放后段。42-45 分钟切片虽然前面仍夹杂设备电流与聊天，但从约 43:15 开始连续命中“总以为谜一般难懂的我”“在你了解了以后”“只是怕爱你的心被你看透”“我开始后悔不应该太聪明的卖弄”等高辨识度句群，与陈绮贞《太聪明》高度重合，可先入库并保留人工复核标签。 按用户放宽后的匹配规则，已补入对应公开歌切：【小松绿Viridis】《太聪明》（BV1FMud6mEuh）。"
+}

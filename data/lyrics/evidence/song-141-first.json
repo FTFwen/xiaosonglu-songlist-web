@@ -1,0 +1,108 @@
+{
+  "audioSha256": "9d66f21c5fbcfaeee6da9285bed59ab5450527d9904a7564609cfde33090e753",
+  "model": "whisper-base",
+  "start": 0,
+  "end": 35,
+  "result": {
+    "text": "你和我共银合在这儿要上",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 3000,
+        "start": 30.22,
+        "end": 34.42,
+        "text": "你和我共银合在这儿要上",
+        "tokens": [
+          50364,
+          2166,
+          12565,
+          1654,
+          15408,
+          165,
+          241,
+          114,
+          14245,
+          3581,
+          5562,
+          22933,
+          4275,
+          5708,
+          50596
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.8081938028335571,
+        "compression_ratio": 0.75,
+        "no_speech_prob": 0.8166640400886536,
+        "words": [
+          {
+            "word": "你",
+            "start": 30.22,
+            "end": 30.96,
+            "probability": 0.44973328709602356
+          },
+          {
+            "word": "和",
+            "start": 30.96,
+            "end": 31.34,
+            "probability": 0.985748827457428
+          },
+          {
+            "word": "我",
+            "start": 31.34,
+            "end": 31.68,
+            "probability": 0.953370213508606
+          },
+          {
+            "word": "共",
+            "start": 31.68,
+            "end": 32.0,
+            "probability": 0.6287925839424133
+          },
+          {
+            "word": "银",
+            "start": 32.0,
+            "end": 32.3,
+            "probability": 0.647456169128418
+          },
+          {
+            "word": "合",
+            "start": 32.3,
+            "end": 32.66,
+            "probability": 0.3165896534919739
+          },
+          {
+            "word": "在",
+            "start": 32.66,
+            "end": 32.96,
+            "probability": 0.9802830219268799
+          },
+          {
+            "word": "这",
+            "start": 32.96,
+            "end": 33.36,
+            "probability": 0.4458808898925781
+          },
+          {
+            "word": "儿",
+            "start": 33.36,
+            "end": 33.98,
+            "probability": 0.1553754359483719
+          },
+          {
+            "word": "要",
+            "start": 33.98,
+            "end": 33.98,
+            "probability": 0.1850319355726242
+          },
+          {
+            "word": "上",
+            "start": 33.98,
+            "end": 34.42,
+            "probability": 0.4443055987358093
+          }
+        ]
+      }
+    ],
+    "language": "zh"
+  }
+}

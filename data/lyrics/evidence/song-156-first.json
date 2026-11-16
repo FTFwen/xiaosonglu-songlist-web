@@ -1,0 +1,185 @@
+{
+  "audioSha256": "99e77668aa1cadfb1f49efb9c02d0b5ff96f42fe6e3ab11834ecddc6769be043",
+  "model": "whisper-base",
+  "start": 0,
+  "end": 35,
+  "result": {
+    "text": "我讲了一辈唱歌而空虚都今生莫见接受",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 0.0,
+        "end": 0.98,
+        "text": "我讲了一辈唱歌",
+        "tokens": [
+          50364,
+          1654,
+          39255,
+          2289,
+          2257,
+          9830,
+          230,
+          39861,
+          29582,
+          50434
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.8489588824185458,
+        "compression_ratio": 0.65625,
+        "no_speech_prob": 0.0608215294778347,
+        "words": [
+          {
+            "word": "我",
+            "start": 0.0,
+            "end": 0.08,
+            "probability": 0.7244245409965515
+          },
+          {
+            "word": "讲",
+            "start": 0.08,
+            "end": 0.26,
+            "probability": 0.25330838561058044
+          },
+          {
+            "word": "了",
+            "start": 0.26,
+            "end": 0.36,
+            "probability": 0.2077164351940155
+          },
+          {
+            "word": "一",
+            "start": 0.36,
+            "end": 0.44,
+            "probability": 0.6865091919898987
+          },
+          {
+            "word": "辈",
+            "start": 0.44,
+            "end": 0.54,
+            "probability": 0.483333982527256
+          },
+          {
+            "word": "唱",
+            "start": 0.54,
+            "end": 0.76,
+            "probability": 0.9031018614768982
+          },
+          {
+            "word": "歌",
+            "start": 0.76,
+            "end": 0.98,
+            "probability": 0.9954812526702881
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "seek": 3000,
+        "start": 30.0,
+        "end": 33.4,
+        "text": "而空虚都今生莫见",
+        "tokens": [
+          50364,
+          11070,
+          23322,
+          12026,
+          248,
+          7182,
+          6480,
+          8244,
+          31127,
+          104,
+          23813,
+          50564
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.8764646754545324,
+        "compression_ratio": 0.7317073170731707,
+        "no_speech_prob": 0.6715516448020935,
+        "words": [
+          {
+            "word": "而",
+            "start": 30.0,
+            "end": 30.14,
+            "probability": 0.07942667603492737
+          },
+          {
+            "word": "空",
+            "start": 30.14,
+            "end": 30.38,
+            "probability": 0.7093733549118042
+          },
+          {
+            "word": "虚",
+            "start": 30.38,
+            "end": 30.72,
+            "probability": 0.9161190092563629
+          },
+          {
+            "word": "都",
+            "start": 30.72,
+            "end": 31.1,
+            "probability": 0.8034119606018066
+          },
+          {
+            "word": "今",
+            "start": 31.1,
+            "end": 31.82,
+            "probability": 0.09333378821611404
+          },
+          {
+            "word": "生",
+            "start": 31.82,
+            "end": 32.4,
+            "probability": 0.5553610920906067
+          },
+          {
+            "word": "莫",
+            "start": 32.4,
+            "end": 33.12,
+            "probability": 0.5946350768208504
+          },
+          {
+            "word": "见",
+            "start": 33.12,
+            "end": 33.4,
+            "probability": 0.10544408857822418
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "seek": 3000,
+        "start": 34.0,
+        "end": 34.56,
+        "text": "接受",
+        "tokens": [
+          50564,
+          14468,
+          23151,
+          50614
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.8764646754545324,
+        "compression_ratio": 0.7317073170731707,
+        "no_speech_prob": 0.6715516448020935,
+        "words": [
+          {
+            "word": "接",
+            "start": 33.9,
+            "end": 34.26,
+            "probability": 0.5363703966140747
+          },
+          {
+            "word": "受",
+            "start": 34.26,
+            "end": 34.56,
+            "probability": 0.7449678182601929
+          }
+        ]
+      }
+    ],
+    "language": "zh"
+  }
+}

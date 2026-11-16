@@ -1,0 +1,190 @@
+{
+  "schemaVersion": 1,
+  "key": "song-120",
+  "songId": 120,
+  "songName": "サリシノハラ",
+  "rowKey": "サリシノハラ",
+  "displaySongName": "サリシノハラ（离去之原）",
+  "artist": "みきとP / 初音ミク",
+  "language": "日文",
+  "derivative": false,
+  "edition": "",
+  "remark": "2026-08-29 心灵火Flame合集补录：【小松绿Viridis】20260829 歌切 分P14（04:28）。みきとP 2013 年名曲（离去之原），初音ミク演唱。",
+  "audio": {
+    "url": "assets/audio/song_119.m4a?v=6adb10e42176",
+    "sha256": "6adb10e4217635fc53feff4b6309cfa8f4bcc6d124b89bca7d2285259cd84bde"
+  },
+  "retrievedAt": "2026-11-16T04:04:00.899Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E3%82%B5%E3%83%AA%E3%82%B7%E3%83%8E%E3%83%8F%E3%83%A9&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E3%82%B5%E3%83%AA%E3%82%B7%E3%83%8E%E3%83%8F%E3%83%A9%20%E3%81%BF%E3%81%8D%E3%81%A8P%20%2F%20%E5%88%9D%E9%9F%B3%E3%83%9F%E3%82%AF&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E3%82%B5%E3%83%AA%E3%82%B7%E3%83%8E%E3%83%8F%E3%83%A9%EF%BC%88%E7%A6%BB%E5%8E%BB%E4%B9%8B%E5%8E%9F%EF%BC%89&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 26219263,
+        "name": "サリシノハラ",
+        "artists": [
+          "初音ミク",
+          "みきとP"
+        ],
+        "album": "僕は初音ミクとキスをした",
+        "durationMs": 273019,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 33955384,
+        "name": "サリシノハラ",
+        "artists": [
+          "初音ミク",
+          "みきとP"
+        ],
+        "album": "最新热歌慢摇108",
+        "durationMs": 273019,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 28936440,
+        "name": "サリシノハラ",
+        "artists": [
+          "みきとP",
+          "初音ミク"
+        ],
+        "album": "ぼかろ男子 ぼかろ女子",
+        "durationMs": 273019,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 469065456,
+        "name": "サリシノハラ",
+        "artists": [
+          "みきとP",
+          "初音ミク"
+        ],
+        "album": "EXIT TUNES PRESENTS Vocalohistory",
+        "durationMs": 273013,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 28063243,
+        "name": "サリシノハラ",
+        "artists": [
+          "みきとP"
+        ],
+        "album": "EXIT TUNES PRESENTS Vocalofuture feat. 初音ミク",
+        "durationMs": 272000,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 478686054,
+        "name": "サリシノハラ",
+        "artists": [
+          "みきとP",
+          "初音ミク"
+        ],
+        "album": "EVERGREEN SONGS 2012",
+        "durationMs": 273013,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 31421441,
+        "name": "サリシノハラ",
+        "artists": [
+          "majiko"
+        ],
+        "album": "Contrast",
+        "durationMs": 269347,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 28739718,
+        "name": "サリシノハラ",
+        "artists": [
+          "しゅーず"
+        ],
+        "album": "最新热歌慢摇70",
+        "durationMs": 273000,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 120,
+      "song_name": "サリシノハラ",
+      "show_as_song_name": "",
+      "display_song_name": "サリシノハラ（离去之原）",
+      "artist": "みきとP / 初音ミク",
+      "artist_search": "サリシノハラ みきとP 初音ミク",
+      "feat_artist": "",
+      "remark": "2026-08-29 心灵火Flame合集补录：【小松绿Viridis】20260829 歌切 分P14（04:28）。みきとP 2013 年名曲（离去之原），初音ミク演唱。",
+      "tone": "",
+      "language": "日文",
+      "type": "Vocaloid、J-Pop",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1gm4C65Ey6/?p=14",
+      "sing_count": 1,
+      "status_labels": "歌回",
+      "last_sing_at": "2026-08-29",
+      "row_key": "サリシノハラ"
+    },
+    "sourceId": 26219263,
+    "sourcePath": "sources/26219263.json",
+    "sourceUrl": "https://music.163.com/#/song?id=26219263",
+    "selected": {
+      "id": 26219263,
+      "name": "サリシノハラ",
+      "artists": [
+        "初音ミク",
+        "みきとP"
+      ],
+      "album": "僕は初音ミクとキスをした",
+      "durationMs": 273019,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 34
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-120-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 267.61,
+    "sourceFirstLine": {
+      "t": 21.906,
+      "text": "大抵の事じゃ挫けない 僕は君と共にある"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 39.72,
+      "endSeconds": 41.08,
+      "similarity": 0.2608695652173913,
+      "recognizedText": "ないよ人は",
+      "meanProbability": 0.709,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "ja",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

@@ -1,0 +1,163 @@
+{
+  "schemaVersion": 1,
+  "key": "song-42",
+  "songId": 42,
+  "songName": "航向你的海岛",
+  "displaySongName": "航向你的海岛",
+  "artist": "泠鸢yousa",
+  "language": "中文",
+  "derivative": false,
+  "audio": {
+    "url": "assets/audio/song_22.m4a?v=2e29bd2b9081",
+    "sha256": "2e29bd2b9081b34c6521d25af7cd3794787565266806fb77b47c88028c87b49f"
+  },
+  "retrievedAt": "2026-11-16T03:58:43.525Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E8%88%AA%E5%90%91%E4%BD%A0%E7%9A%84%E6%B5%B7%E5%B2%9B&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1804552401,
+        "name": "航向你的海岛",
+        "artists": [
+          "泠鸢yousa"
+        ],
+        "album": "折纸信笺",
+        "durationMs": 283101,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2681436802,
+        "name": "航向你的海岛",
+        "artists": [
+          "度娘你要闹哪样",
+          "洛天依"
+        ],
+        "album": "航向你的海岛",
+        "durationMs": 283147,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2709362074,
+        "name": "航向你的海岛",
+        "artists": [
+          "顾疚"
+        ],
+        "album": "航向你的海岛",
+        "durationMs": 284782,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2146526604,
+        "name": "航向你的海岛",
+        "artists": [
+          "月上逸影"
+        ],
+        "album": "与鸟有关",
+        "durationMs": 283167,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1991308722,
+        "name": "航向你的海岛",
+        "artists": [
+          "芷菡"
+        ],
+        "album": "泠泠之音-茜色信笺",
+        "durationMs": 283167,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2124479608,
+        "name": "航向你的海岛",
+        "artists": [
+          "咩纪"
+        ],
+        "album": "航向你的海岛",
+        "durationMs": 284730,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1991746500,
+        "name": "航向你的海岛",
+        "artists": [
+          "柚沐P"
+        ],
+        "album": "航向你的海岛",
+        "durationMs": 284865,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2108639946,
+        "name": "航向你的海岛",
+        "artists": [
+          "北都楠水",
+          "洛天依"
+        ],
+        "album": "回弦",
+        "durationMs": 284476,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "sourceId": 1804552401,
+    "sourcePath": "sources/1804552401.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1804552401",
+    "selected": {
+      "id": 1804552401,
+      "name": "航向你的海岛",
+      "artists": [
+        "泠鸢yousa"
+      ],
+      "album": "折纸信笺",
+      "durationMs": 283101,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 37
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-42-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 286.699,
+    "sourceFirstLine": {
+      "t": 16.35,
+      "text": "淹没沙滩的海浪渐渐退潮"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 27.04,
+      "endSeconds": 27.76,
+      "similarity": 0.0,
+      "recognizedText": "作",
+      "meanProbability": 0.004,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  },
+  "rowKey": "航向你的海岛",
+  "edition": "",
+  "remark": "直链页面 meta description 明示日期 2026.08.15，标题直接给出真实歌曲名《航向你的海岛》，可作为当日 song-cut-first 增量收录。"
+}

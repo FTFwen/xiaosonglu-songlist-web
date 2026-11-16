@@ -1,0 +1,147 @@
+{
+  "audioSha256": "f1a07b05e27d020f035120c150ab46bfd191aea55657149f4d933e309ed36a4d",
+  "model": "whisper-base",
+  "start": 115.55000000000001,
+  "end": 135.55,
+  "result": {
+    "text": "美冬天空翻起彩色下光在這回憶",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 0.0,
+        "end": 4.4,
+        "text": "美冬天空翻起彩色",
+        "tokens": [
+          50364,
+          9175,
+          5676,
+          105,
+          6135,
+          23322,
+          42716,
+          9147,
+          7391,
+          102,
+          17673,
+          50604
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.9655998064124066,
+        "compression_ratio": 0.7924528301886793,
+        "no_speech_prob": 0.7814633250236511,
+        "words": [
+          {
+            "word": "美",
+            "start": 0.0,
+            "end": 0.98,
+            "probability": 0.19993428885936737
+          },
+          {
+            "word": "冬",
+            "start": 0.98,
+            "end": 1.6,
+            "probability": 0.3578682169318199
+          },
+          {
+            "word": "天",
+            "start": 1.6,
+            "end": 2.26,
+            "probability": 0.8065138459205627
+          },
+          {
+            "word": "空",
+            "start": 2.26,
+            "end": 2.44,
+            "probability": 0.9984194040298462
+          },
+          {
+            "word": "翻",
+            "start": 2.44,
+            "end": 2.8,
+            "probability": 0.17201711237430573
+          },
+          {
+            "word": "起",
+            "start": 2.8,
+            "end": 3.26,
+            "probability": 0.8087567687034607
+          },
+          {
+            "word": "彩",
+            "start": 3.26,
+            "end": 3.86,
+            "probability": 0.7475565969944
+          },
+          {
+            "word": "色",
+            "start": 3.86,
+            "end": 4.4,
+            "probability": 0.4892273247241974
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "seek": 0,
+        "start": 4.4,
+        "end": 8.44,
+        "text": "下光在這回憶",
+        "tokens": [
+          50604,
+          4438,
+          20690,
+          3581,
+          2664,
+          8350,
+          29713,
+          114,
+          50786
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.9655998064124066,
+        "compression_ratio": 0.7924528301886793,
+        "no_speech_prob": 0.7814633250236511,
+        "words": [
+          {
+            "word": "下",
+            "start": 4.4,
+            "end": 5.28,
+            "probability": 0.36729490756988525
+          },
+          {
+            "word": "光",
+            "start": 5.28,
+            "end": 5.78,
+            "probability": 0.4970875680446625
+          },
+          {
+            "word": "在",
+            "start": 5.78,
+            "end": 6.7,
+            "probability": 0.34111708402633667
+          },
+          {
+            "word": "這",
+            "start": 6.7,
+            "end": 7.2,
+            "probability": 0.4029279947280884
+          },
+          {
+            "word": "回",
+            "start": 7.2,
+            "end": 7.66,
+            "probability": 0.7180582284927368
+          },
+          {
+            "word": "憶",
+            "start": 7.66,
+            "end": 8.44,
+            "probability": 0.6261469423770905
+          }
+        ]
+      }
+    ],
+    "language": "zh"
+  }
+}

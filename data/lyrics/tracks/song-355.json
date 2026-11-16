@@ -1,0 +1,188 @@
+{
+  "schemaVersion": 1,
+  "key": "song-355",
+  "songId": 355,
+  "songName": "EMOTION",
+  "rowKey": "EMOTION",
+  "displaySongName": "EMOTION",
+  "artist": "三船栞子（小泉萌香）",
+  "language": "日文",
+  "derivative": false,
+  "edition": "",
+  "remark": "出处核实：LoveLive！虹ヶ咲学園スクールアイドル同好会 2期第7话挿入歌，作词/作曲/编曲 tofubeats，TV size 1:40；桐人版分P时长 3:58。",
+  "audio": {
+    "url": "assets/audio/song_354.m4a?v=720e146a70c4",
+    "sha256": "720e146a70c4fc2b26f7e45dda9ce874c15c5663b9cd707a81cf0de891383027"
+  },
+  "retrievedAt": "2026-11-16T04:07:30.430Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=EMOTION&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=EMOTION%20%E4%B8%89%E8%88%B9%E6%A0%9E%E5%AD%90&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1960852862,
+        "name": "EMOTION",
+        "artists": [
+          "小泉萌香"
+        ],
+        "album": "Eutopia / EMOTION / stars we chase【鐘 嵐珠盤】",
+        "durationMs": 230693,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2079892122,
+        "name": "EMOTION",
+        "artists": [
+          "小泉萌香"
+        ],
+        "album": "Eutopia / EMOTION / stars we chase【三船栞子盤】",
+        "durationMs": 230693,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 3423603647,
+        "name": "Emotion",
+        "artists": [
+          "Yoyi",
+          "User116",
+          "Misty Mirror"
+        ],
+        "album": "Emotion",
+        "durationMs": 180000,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1375380647,
+        "name": "Emotion",
+        "artists": [
+          "hazey eyes",
+          "Panama"
+        ],
+        "album": "Emotion (Remixes)",
+        "durationMs": 204525,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1970825812,
+        "name": "Emotion",
+        "artists": [
+          "天幕Tiam",
+          "VANGUARD RECORDS"
+        ],
+        "album": "Emotion",
+        "durationMs": 215172,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 26166282,
+        "name": "Emotion",
+        "artists": [
+          "BIGBANG"
+        ],
+        "album": "My Heaven",
+        "durationMs": 198800,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 557098227,
+        "name": "Emotion",
+        "artists": [
+          "Samantha Sang",
+          "Bee Gees"
+        ],
+        "album": "Emotion",
+        "durationMs": 237293,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 4970268,
+        "name": "EMOTION",
+        "artists": [
+          "田中理恵"
+        ],
+        "album": "機動戦士ガンダムSEED~SEED DESTINY BEST“THE BRIDGE”Across the Songs from GUNDAM SEED&SEED DESTINY",
+        "durationMs": 243960,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 355,
+      "song_name": "EMOTION",
+      "show_as_song_name": "",
+      "display_song_name": "EMOTION",
+      "artist": "三船栞子（小泉萌香）",
+      "artist_search": "三船栞子（小泉萌香）",
+      "feat_artist": "",
+      "remark": "出处核实：LoveLive！虹ヶ咲学園スクールアイドル同好会 2期第7话挿入歌，作词/作曲/编曲 tofubeats，TV size 1:40；桐人版分P时长 3:58。",
+      "tone": "",
+      "language": "日文",
+      "type": "LoveLive虹咲、偶像、J-Pop",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1HUx769Ejg/?p=17",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-27",
+      "row_key": "EMOTION"
+    },
+    "sourceId": 1960852862,
+    "sourcePath": "sources/1960852862.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1960852862",
+    "selected": {
+      "id": 1960852862,
+      "name": "EMOTION",
+      "artists": [
+        "小泉萌香"
+      ],
+      "album": "Eutopia / EMOTION / stars we chase【鐘 嵐珠盤】",
+      "durationMs": 230693,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 29
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-355-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 237.675,
+    "sourceFirstLine": {
+      "t": 27.94,
+      "text": "雨のあとの道には"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 28.48,
+      "endSeconds": 31.34,
+      "similarity": 0.7142857142857143,
+      "recognizedText": "の後の道には",
+      "meanProbability": 0.859,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "ja",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

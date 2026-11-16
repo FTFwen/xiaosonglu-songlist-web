@@ -1,0 +1,172 @@
+{
+  "schemaVersion": 1,
+  "key": "song-271",
+  "songId": 271,
+  "songName": "梦乡",
+  "rowKey": "梦乡",
+  "displaySongName": "梦乡",
+  "artist": "黄恩茹",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "",
+  "audio": {
+    "url": "assets/audio/song_270.m4a?v=b30b38cbe0f2",
+    "sha256": "b30b38cbe0f295c65505f79567588e1ebf439255ae0f7ab69b065acf52c3ec53"
+  },
+  "retrievedAt": "2026-11-16T04:13:13.190Z",
+  "match": {
+    "status": "version_review_required",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E6%A2%A6%E4%B9%A1&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E6%A2%A6%E4%B9%A1%20%E9%BB%84%E6%81%A9%E8%8C%B9&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1379873872,
+        "name": "梦乡",
+        "artists": [
+          "陈鸿宇"
+        ],
+        "album": "三旬",
+        "durationMs": 201216,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 27665002,
+        "name": "梦乡",
+        "artists": [
+          "群星"
+        ],
+        "album": "中国最爱儿歌经典二",
+        "durationMs": 100205,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2037131656,
+        "name": "梦乡",
+        "artists": [
+          "Uzzy"
+        ],
+        "album": "Ordinary",
+        "durationMs": 133999,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 516654015,
+        "name": "梦乡",
+        "artists": [
+          "李东勇"
+        ],
+        "album": "故梦小夜集",
+        "durationMs": 364714,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1804362735,
+        "name": "梦乡",
+        "artists": [
+          "苏诗丁",
+          "魏虎虎"
+        ],
+        "album": "三更子",
+        "durationMs": 254812,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 267745,
+        "name": "梦乡",
+        "artists": [
+          "林玉英"
+        ],
+        "album": "皇牌难忘名典",
+        "durationMs": 174720,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3401626443,
+        "name": "梦乡",
+        "artists": [
+          "张一鸣"
+        ],
+        "album": "1",
+        "durationMs": 83822,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 427016021,
+        "name": "梦乡",
+        "artists": [
+          "李东勇"
+        ],
+        "album": "粤乡谣",
+        "durationMs": 322063,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 271,
+      "song_name": "梦乡",
+      "show_as_song_name": "",
+      "display_song_name": "梦乡",
+      "artist": "黄恩茹",
+      "artist_search": "黄恩茹",
+      "feat_artist": "",
+      "remark": "",
+      "tone": "",
+      "language": "中文",
+      "type": "SNH48、偶像",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV18Jpw6mE82/?p=4",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-06",
+      "row_key": "梦乡"
+    },
+    "sourceId": 2059496999,
+    "sourcePath": "sources/2059496999.json",
+    "sourceUrl": "https://music.163.com/#/song?id=2059496999",
+    "selected": {
+      "id": 2059496999,
+      "name": "梦乡demo(黄恩茹)",
+      "artists": [
+        "滕少"
+      ],
+      "album": "应许之地demo合集",
+      "durationMs": 200208,
+      "titleScore": 1,
+      "artistMatch": false,
+      "score": 0.8,
+      "reviewedWorkIdentity": true
+    },
+    "timedLineCount": 46,
+    "review": {
+      "reason": "Verified song/detail: 梦乡demo(黄恩茹), artist/uploader 滕少, album 应许之地demo合集, 200208ms. Verified lyric endpoint credits 作曲 DogP(乾英明 松野恭平), 作词 符酷@混核基音, 制作人 滕少, 和声演唱 SNH48黄恩茹、SNH48由淼, 版权 丝芭传媒; lyric begins 忽而别绪随风起／光与影 悠长岁月斑驳陆离, chorus 灯里 眼里 字里 心里 梦里／留一缕春意. Reject current 1379873872 陈鸿宇, whose lyric begins 你望黄昏有灯，晚风有骨, a different work. Verified source is explicitly demo, not a confirmed released solo master. Initial lyric timestamps are suspiciously compressed (26.79–28.78 covers several lines), so retain edition/timing review rather than automatic alignment.",
+      "evidenceUrl": "https://music.163.com/api/song/detail/?id=2059496999&ids=[2059496999]",
+      "previousSourceId": 1379873872
+    }
+  },
+  "alignment": {
+    "status": "version_review_required",
+    "offsetSeconds": null,
+    "humanVerified": false
+  }
+}

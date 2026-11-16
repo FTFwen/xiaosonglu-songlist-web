@@ -1,0 +1,185 @@
+{
+  "schemaVersion": 1,
+  "key": "song-338",
+  "songId": 338,
+  "songName": "光与影的对白",
+  "rowKey": "光与影的对白",
+  "displaySongName": "光与影的对白",
+  "artist": "洛天依",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "",
+  "audio": {
+    "url": "assets/audio/song_337.m4a?v=e478a10095ab",
+    "sha256": "e478a10095ab9c79ca9430143d05c4fcc8d99fefe70103b86d4c9c3dce605184"
+  },
+  "retrievedAt": "2026-11-16T04:07:12.956Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E5%85%89%E4%B8%8E%E5%BD%B1%E7%9A%84%E5%AF%B9%E7%99%BD&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E5%85%89%E4%B8%8E%E5%BD%B1%E7%9A%84%E5%AF%B9%E7%99%BD%20%E6%B4%9B%E5%A4%A9%E4%BE%9D&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1963053471,
+        "name": "光与影的对白",
+        "artists": [
+          "洛天依Official"
+        ],
+        "album": "光与影的对白",
+        "durationMs": 248257,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1979009861,
+        "name": "光与影的对白",
+        "artists": [
+          "洛天依Official"
+        ],
+        "album": "依如初见",
+        "durationMs": 248257,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 3460064490,
+        "name": "光与影的对白",
+        "artists": [
+          "洛羽绫Aya_Hata"
+        ],
+        "album": "",
+        "durationMs": 246269,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2748657741,
+        "name": "光与影的对白",
+        "artists": [
+          "升半音P"
+        ],
+        "album": "升半音P的个人翻调",
+        "durationMs": 250264,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3383936243,
+        "name": "光与影的对白",
+        "artists": [
+          "木柴叔"
+        ],
+        "album": "紫",
+        "durationMs": 201639,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1963849549,
+        "name": "光与影的对白",
+        "artists": [
+          "飞侠Shrimp"
+        ],
+        "album": "《光与影的对白》钢琴编配",
+        "durationMs": 243435,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2750058998,
+        "name": "光与影的对白 数字藏品版",
+        "artists": [
+          "洛天依",
+          "小v"
+        ],
+        "album": "光与影的对白",
+        "durationMs": 251072,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      },
+      {
+        "id": 2754811834,
+        "name": "光与影的对白（cover by：不称职的乌鱼禅师P）",
+        "artists": [
+          "不称职的乌鱼禅师P",
+          "洛天依"
+        ],
+        "album": "华风夏韵，洛水天依",
+        "durationMs": 241188,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      }
+    ],
+    "workQuery": {
+      "song_id": 338,
+      "song_name": "光与影的对白",
+      "show_as_song_name": "",
+      "display_song_name": "光与影的对白",
+      "artist": "洛天依",
+      "artist_search": "洛天依",
+      "feat_artist": "",
+      "remark": "",
+      "tone": "",
+      "language": "中文",
+      "type": "中V、流行",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1naxj62Epw/?p=6",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-10-27",
+      "row_key": "光与影的对白"
+    },
+    "sourceId": 1963053471,
+    "sourcePath": "sources/1963053471.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1963053471",
+    "selected": {
+      "id": 1963053471,
+      "name": "光与影的对白",
+      "artists": [
+        "洛天依Official"
+      ],
+      "album": "光与影的对白",
+      "durationMs": 248257,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 57
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-338-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 245.312,
+    "sourceFirstLine": {
+      "t": 25,
+      "text": "当重逢你清澈眼睛"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 30.0,
+      "endSeconds": 30.0,
+      "similarity": 0.2222222222222222,
+      "recognizedText": "你",
+      "meanProbability": 0.025,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

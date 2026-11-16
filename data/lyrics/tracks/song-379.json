@@ -1,0 +1,196 @@
+{
+  "schemaVersion": 1,
+  "key": "song-379",
+  "songId": 379,
+  "songName": "桃花笑",
+  "rowKey": "桃花笑",
+  "displaySongName": "桃花笑",
+  "artist": "洛天依 / 言和 / 乐正绫",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "小松绿跟唱泠鸢yousa 翻唱版；本家为洛天依&言和&乐正绫（av2961713，词青萝子/曲西门振），另有汪睿人声版",
+  "audio": {
+    "url": "assets/audio/song_378.m4a?v=b38bda183fd2",
+    "sha256": "b38bda183fd2c70b07a19926504c7fde2f40623de85bd8a92824ed98f33ffbb9"
+  },
+  "retrievedAt": "2026-11-16T04:07:59.681Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E6%A1%83%E8%8A%B1%E7%AC%91&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E6%A1%83%E8%8A%B1%E7%AC%91%20%E6%B4%9B%E5%A4%A9%E4%BE%9D%20%2F%20%E8%A8%80%E5%92%8C%20%2F%20%E4%B9%90%E6%AD%A3%E7%BB%AB&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 35566904,
+        "name": "桃花笑",
+        "artists": [
+          "言和",
+          "乐正绫",
+          "洛天依Official"
+        ],
+        "album": "桃花笑",
+        "durationMs": 234837,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2738549792,
+        "name": "桃花笑",
+        "artists": [
+          "曹稳健",
+          "洛天依",
+          "言和",
+          "乐正绫"
+        ],
+        "album": "桃花笑",
+        "durationMs": 232896,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 34999982,
+        "name": "桃花笑",
+        "artists": [
+          "洛天依Official",
+          "乐正绫",
+          "言和"
+        ],
+        "album": "洛天依作品集",
+        "durationMs": 234837,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1400021098,
+        "name": "桃花笑",
+        "artists": [
+          "锦零"
+        ],
+        "album": "桃花笑",
+        "durationMs": 200256,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1918224097,
+        "name": "桃花笑",
+        "artists": [
+          "太痕",
+          "玖月歌",
+          "阿宣七二"
+        ],
+        "album": "桃花笑",
+        "durationMs": 196224,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3335830889,
+        "name": "桃花笑",
+        "artists": [
+          "张含韵",
+          "卢昱晓"
+        ],
+        "album": "",
+        "durationMs": 163793,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1840182082,
+        "name": "桃花笑",
+        "artists": [
+          "任贤齐",
+          "梦幻西游"
+        ],
+        "album": "桃花笑",
+        "durationMs": 215690,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 419375705,
+        "name": "桃花笑",
+        "artists": [
+          "叶洛洛"
+        ],
+        "album": "桃花笑",
+        "durationMs": 232777,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 379,
+      "song_name": "桃花笑",
+      "show_as_song_name": "",
+      "display_song_name": "桃花笑",
+      "artist": "洛天依 / 言和 / 乐正绫",
+      "artist_search": "洛天依 / 言和 / 乐正绫",
+      "feat_artist": "",
+      "remark": "小松绿跟唱泠鸢yousa 翻唱版；本家为洛天依&言和&乐正绫（av2961713，词青萝子/曲西门振），另有汪睿人声版",
+      "tone": "",
+      "language": "中文",
+      "type": "中V、国风",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV18pWH6gEzr/?p=11",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-11-08",
+      "row_key": "桃花笑"
+    },
+    "sourceId": 35566904,
+    "sourcePath": "sources/35566904.json",
+    "sourceUrl": "https://music.163.com/#/song?id=35566904",
+    "selected": {
+      "id": 35566904,
+      "name": "桃花笑",
+      "artists": [
+        "言和",
+        "乐正绫",
+        "洛天依Official"
+      ],
+      "album": "桃花笑",
+      "durationMs": 234837,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 54
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-379-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 198.464,
+    "sourceFirstLine": {
+      "t": 6,
+      "text": "曲/编：西门振"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 17.72,
+      "endSeconds": 18.6,
+      "similarity": 0.0,
+      "recognizedText": "《月",
+      "meanProbability": 0.085,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

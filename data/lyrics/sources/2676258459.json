@@ -1,0 +1,25 @@
+{
+  "platform": "netease",
+  "id": 2676258459,
+  "url": "https://music.163.com/#/song?id=2676258459",
+  "apiUrl": "https://music.163.com/api/song/lyric?id=2676258459&lv=1&kv=1&tv=-1",
+  "retrievedAt": "2026-11-16T04:06:11.281Z",
+  "track": {
+    "id": 2676258459,
+    "name": "永恒曲",
+    "artists": [
+      "太痕",
+      "阿宣七二"
+    ],
+    "album": "永恒曲",
+    "durationMs": 253512,
+    "titleScore": 1,
+    "artistMatch": true,
+    "score": 1
+  },
+  "lrc": "",
+  "translationLrc": "",
+  "romanizationLrc": "",
+  "instrumental": false,
+  "lines": []
+}

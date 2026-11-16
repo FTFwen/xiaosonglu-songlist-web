@@ -1,0 +1,125 @@
+{
+  "audioSha256": "c149795db53a9df45e6281b0bb2637c908c600c738df21befc5ef46a5d2a9767",
+  "model": "whisper-base",
+  "start": 0,
+  "end": 35,
+  "result": {
+    "text": "超安靜的明白有些人一旦走",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 0.0,
+        "end": 1.0,
+        "text": "超安靜的",
+        "tokens": [
+          50364,
+          19869,
+          16206,
+          5363,
+          250,
+          1546,
+          50414
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.6087017059326172,
+        "compression_ratio": 0.5714285714285714,
+        "no_speech_prob": 0.003804154694080353,
+        "words": [
+          {
+            "word": "超",
+            "start": 0.0,
+            "end": 0.22,
+            "probability": 0.6740434169769287
+          },
+          {
+            "word": "安",
+            "start": 0.22,
+            "end": 0.38,
+            "probability": 0.5454022288322449
+          },
+          {
+            "word": "靜",
+            "start": 0.38,
+            "end": 0.44,
+            "probability": 0.8225401341915131
+          },
+          {
+            "word": "的",
+            "start": 0.44,
+            "end": 1.0,
+            "probability": 0.576019287109375
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "seek": 3000,
+        "start": 30.740000000000002,
+        "end": 34.8,
+        "text": "明白有些人一旦走",
+        "tokens": [
+          50364,
+          28430,
+          2412,
+          13824,
+          4035,
+          2257,
+          4479,
+          99,
+          9575,
+          50614
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.6613734852183949,
+        "compression_ratio": 0.6857142857142857,
+        "no_speech_prob": 0.7760935425758362,
+        "words": [
+          {
+            "word": "明白",
+            "start": 30.740000000000002,
+            "end": 31.78,
+            "probability": 0.09614945948123932
+          },
+          {
+            "word": "有",
+            "start": 31.78,
+            "end": 32.78,
+            "probability": 0.7240697145462036
+          },
+          {
+            "word": "些",
+            "start": 32.78,
+            "end": 33.0,
+            "probability": 0.9977837204933167
+          },
+          {
+            "word": "人",
+            "start": 33.0,
+            "end": 33.84,
+            "probability": 0.999360978603363
+          },
+          {
+            "word": "一",
+            "start": 33.84,
+            "end": 34.36,
+            "probability": 0.7894461750984192
+          },
+          {
+            "word": "旦",
+            "start": 34.36,
+            "end": 34.54,
+            "probability": 0.9335896074771881
+          },
+          {
+            "word": "走",
+            "start": 34.54,
+            "end": 34.8,
+            "probability": 0.5695905089378357
+          }
+        ]
+      }
+    ],
+    "language": "zh"
+  }
+}

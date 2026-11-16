@@ -1,0 +1,185 @@
+{
+  "schemaVersion": 1,
+  "key": "song-234",
+  "songId": 234,
+  "songName": "我可能放了假寒假",
+  "rowKey": "我可能放了假寒假",
+  "displaySongName": "我可能放了假寒假",
+  "artist": "PoKeR, 洛天依Official",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "",
+  "audio": {
+    "url": "assets/audio/song_233.m4a?v=0342249516ad",
+    "sha256": "0342249516ad8e9e5b8cb45bef64b825a64fd19be1ddb5abd8cbef1023b80d7d"
+  },
+  "retrievedAt": "2026-11-16T04:05:39.254Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E6%88%91%E5%8F%AF%E8%83%BD%E6%94%BE%E4%BA%86%E5%81%87%E5%AF%92%E5%81%87&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E6%88%91%E5%8F%AF%E8%83%BD%E6%94%BE%E4%BA%86%E5%81%87%E5%AF%92%E5%81%87%20PoKeR&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 454051043,
+        "name": "我可能放了假寒假",
+        "artists": [
+          "PoKeR",
+          "洛天依"
+        ],
+        "album": "PoKeR",
+        "durationMs": 147931,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1404795621,
+        "name": "我可能放了假寒假",
+        "artists": [
+          "洛天依Official"
+        ],
+        "album": "Vsinger作品集-1",
+        "durationMs": 147973,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1344350259,
+        "name": "我可能放了假寒假",
+        "artists": [
+          "Yakuri"
+        ],
+        "album": "猪年寒假瞎唱1",
+        "durationMs": 148715,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2019425670,
+        "name": "我可能放了假寒假",
+        "artists": [
+          "墨逸轩-あさいつのき-"
+        ],
+        "album": "墨逸轩的翻唱 Vol.1",
+        "durationMs": 148000,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3436755605,
+        "name": "我可能放了假寒假",
+        "artists": [
+          "徵羽摩柯"
+        ],
+        "album": "我可能放了假寒假",
+        "durationMs": 147911,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 455409632,
+        "name": "我可能放了假寒假（Cover 洛天依）",
+        "artists": [
+          "Hanser"
+        ],
+        "album": "Hanser唱的歌（180924为止",
+        "durationMs": 148115,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 455541884,
+        "name": "我可能放了假寒假（翻自 洛天依）",
+        "artists": [
+          "知性的小方块"
+        ],
+        "album": "我可能放了假寒假 （Cover 洛天依）",
+        "durationMs": 147147,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 455486177,
+        "name": "我可能放了假寒假...（Cover ~~~）",
+        "artists": [
+          "狂风桑"
+        ],
+        "album": "少年狂风桑",
+        "durationMs": 146938,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      }
+    ],
+    "workQuery": {
+      "song_id": 234,
+      "song_name": "我可能放了假寒假",
+      "show_as_song_name": "",
+      "display_song_name": "我可能放了假寒假",
+      "artist": "PoKeR, 洛天依Official",
+      "artist_search": "PoKeR, 洛天依Official",
+      "feat_artist": "",
+      "remark": "",
+      "tone": "",
+      "language": "中文",
+      "type": "中V",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1g1ah6REpb/?p=8",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切合集复核",
+      "last_sing_at": "2026-09-27",
+      "row_key": "我可能放了假寒假"
+    },
+    "sourceId": 454051043,
+    "sourcePath": "sources/454051043.json",
+    "sourceUrl": "https://music.163.com/#/song?id=454051043",
+    "selected": {
+      "id": 454051043,
+      "name": "我可能放了假寒假",
+      "artists": [
+        "PoKeR",
+        "洛天依"
+      ],
+      "album": "PoKeR",
+      "durationMs": 147931,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 44
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-234-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 156.015,
+    "sourceFirstLine": {
+      "t": 12,
+      "text": "今天从学校考完试了回家"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 13.58,
+      "endSeconds": 17.38,
+      "similarity": 0.5454545454545454,
+      "recognizedText": "今天从雪小看完时乐回家",
+      "meanProbability": 0.473,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

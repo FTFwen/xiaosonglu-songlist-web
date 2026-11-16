@@ -1,0 +1,169 @@
+{
+  "schemaVersion": 1,
+  "key": "song-127",
+  "songId": 127,
+  "songName": "她追逐着月光的尽头",
+  "displaySongName": "她追逐着月光的尽头",
+  "artist": "石榴皮_ / 诗岸",
+  "language": "中文",
+  "derivative": false,
+  "audio": {
+    "url": "assets/audio/song_126.m4a?v=91d505caf3ef",
+    "sha256": "91d505caf3ef070f3bcc04ace61405a09bbc2a9cb1548816bb11bc349552d40c"
+  },
+  "retrievedAt": "2026-11-16T03:58:39.768Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E5%A5%B9%E8%BF%BD%E9%80%90%E7%9D%80%E6%9C%88%E5%85%89%E7%9A%84%E5%B0%BD%E5%A4%B4&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1468436144,
+        "name": "她追逐着月光的尽头",
+        "artists": [
+          "46_P",
+          "诗岸"
+        ],
+        "album": "月光入侵计划",
+        "durationMs": 222352,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1868711061,
+        "name": "她追逐着月光的尽头",
+        "artists": [
+          "warma"
+        ],
+        "album": "【翻唱】她追逐着月光的尽头",
+        "durationMs": 223764,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2639357280,
+        "name": "她追逐着月光的尽头",
+        "artists": [
+          "洛天依",
+          "山轮料叉"
+        ],
+        "album": "山轮料叉翻调集",
+        "durationMs": 222362,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1471297278,
+        "name": "她追逐着月光的尽头",
+        "artists": [
+          "有绪"
+        ],
+        "album": "她追逐着月光的尽头",
+        "durationMs": 223058,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2154895580,
+        "name": "她追逐着月光的尽头",
+        "artists": [
+          "樱井瑶",
+          "豆原千春",
+          "毅木",
+          "又又zzz",
+          "烛兮",
+          "随性不逾"
+        ],
+        "album": "【各唱各】她追逐着月光的尽头",
+        "durationMs": 220235,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1895372979,
+        "name": "她追逐着月光的尽头",
+        "artists": [
+          "黎黎亚Riria"
+        ],
+        "album": "星星降落之夜",
+        "durationMs": 222514,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2115353153,
+        "name": "她追逐着月光的尽头",
+        "artists": [
+          "橙屿醉daiyu"
+        ],
+        "album": "拾忤·碎乐（橙屿醉の翻唱集）",
+        "durationMs": 220682,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1879633769,
+        "name": "她追逐着月光的尽头",
+        "artists": [
+          "Henry B. W."
+        ],
+        "album": "她追逐着月光的尽头",
+        "durationMs": 180196,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "sourceId": 1468436144,
+    "sourcePath": "sources/1468436144.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1468436144",
+    "selected": {
+      "id": 1468436144,
+      "name": "她追逐着月光的尽头",
+      "artists": [
+        "46_P",
+        "诗岸"
+      ],
+      "album": "月光入侵计划",
+      "durationMs": 222352,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 34
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-127-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 224.107,
+    "sourceFirstLine": {
+      "t": 1.103,
+      "text": "十一点钟 皓月升空 夜色垂落"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 5.42,
+      "endSeconds": 6.06,
+      "similarity": 0.0,
+      "recognizedText": "我",
+      "meanProbability": 0.021,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  },
+  "rowKey": "她追逐着月光的尽头",
+  "edition": "",
+  "remark": "2026-09-03「也许康复的随便唱唱」21点场；歌切合集【桐人今天睡大觉】【小松绿Viridis】随便唱唱的歌回 歌切合集 2026.09.03 分P7（03:48）。石榴皮_ 与诗岸（SV）2020《月光入侵计划》收录。"
+}

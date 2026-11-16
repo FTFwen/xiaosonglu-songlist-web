@@ -1,0 +1,186 @@
+{
+  "schemaVersion": 1,
+  "key": "song-102",
+  "songId": 102,
+  "songName": "你究竟有几个好妹妹",
+  "rowKey": "你究竟有几个好妹妹",
+  "displaySongName": "你究竟有几个好妹妹",
+  "artist": "孟庭苇",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "切片《你究竟有几个好妹妹》（BV1dd4y6oEQb，怎样能想到合适的昵称，pub 15:15，5:44）+ 互动切片《@羽啾：你是我最爱的妹妹 测谎仪：👎》（BV1Bg4k6SEeW，小冬青Viridis，pub 14:53，5:21）+ 弹幕 00:41-00:45「羽啾你究竟有几个好妹妹」「你究竟有几个好妹妹」密集刷屏。孟庭苇 1993《谁的眼泪在飞》收录曲（梁文福词曲）。",
+  "audio": {
+    "url": "assets/audio/song_107.m4a?v=9f976cf4ef5b",
+    "sha256": "9f976cf4ef5be916473c2d9dec00435e1aaadb619c0989cbf788686c8bfb1d54"
+  },
+  "retrievedAt": "2026-11-16T04:02:59.263Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E4%BD%A0%E7%A9%B6%E7%AB%9F%E6%9C%89%E5%87%A0%E4%B8%AA%E5%A5%BD%E5%A6%B9%E5%A6%B9&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E4%BD%A0%E7%A9%B6%E7%AB%9F%E6%9C%89%E5%87%A0%E4%B8%AA%E5%A5%BD%E5%A6%B9%E5%A6%B9%20%E5%AD%9F%E5%BA%AD%E8%8B%87&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 276724,
+        "name": "你究竟有几个好妹妹",
+        "artists": [
+          "孟庭苇"
+        ],
+        "album": "谁的眼泪在飞",
+        "durationMs": 321066,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 29414458,
+        "name": "你究竟有几个好妹妹",
+        "artists": [
+          "好妹妹乐队",
+          "孟庭苇"
+        ],
+        "album": "说时依旧",
+        "durationMs": 326000,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1313634511,
+        "name": "你究竟有几个好妹妹",
+        "artists": [
+          "孟庭苇"
+        ],
+        "album": "孟庭苇钻石金选集 1990 - 1994 (上)",
+        "durationMs": 319000,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 276680,
+        "name": "你究竟有几个好妹妹",
+        "artists": [
+          "孟庭苇"
+        ],
+        "album": "1990-1994 钻石金选集",
+        "durationMs": 319000,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 276487,
+        "name": "你究竟有几个好妹妹",
+        "artists": [
+          "孟庭苇"
+        ],
+        "album": "月亮说话精选辑",
+        "durationMs": 319466,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 25923109,
+        "name": "你究竟有几个好妹妹",
+        "artists": [
+          "孟庭苇"
+        ],
+        "album": "醇经典",
+        "durationMs": 321066,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 28196419,
+        "name": "你究竟有几个好妹妹",
+        "artists": [
+          "孟庭苇",
+          "余凯旋",
+          "史合玲"
+        ],
+        "album": "天下无双",
+        "durationMs": 155000,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2165452207,
+        "name": "你究竟有几个好妹妹",
+        "artists": [
+          "dj马仔"
+        ],
+        "album": "新不了情",
+        "durationMs": 236747,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 102,
+      "song_name": "你究竟有几个好妹妹",
+      "show_as_song_name": "",
+      "display_song_name": "你究竟有几个好妹妹",
+      "artist": "孟庭苇",
+      "artist_search": "孟庭苇",
+      "feat_artist": "",
+      "remark": "切片《你究竟有几个好妹妹》（BV1dd4y6oEQb，怎样能想到合适的昵称，pub 15:15，5:44）+ 互动切片《@羽啾：你是我最爱的妹妹 测谎仪：👎》（BV1Bg4k6SEeW，小冬青Viridis，pub 14:53，5:21）+ 弹幕 00:41-00:45「羽啾你究竟有几个好妹妹」「你究竟有几个好妹妹」密集刷屏。孟庭苇 1993《谁的眼泪在飞》收录曲（梁文福词曲）。",
+      "tone": "",
+      "language": "中文",
+      "type": "华语经典",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1dd4y6oEQb/",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切确认",
+      "last_sing_at": "2026-08-29",
+      "row_key": "你究竟有几个好妹妹"
+    },
+    "sourceId": 276724,
+    "sourcePath": "sources/276724.json",
+    "sourceUrl": "https://music.163.com/#/song?id=276724",
+    "selected": {
+      "id": 276724,
+      "name": "你究竟有几个好妹妹",
+      "artists": [
+        "孟庭苇"
+      ],
+      "album": "谁的眼泪在飞",
+      "durationMs": 321066,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 41
+  },
+  "alignment": {
+    "status": "anchor_not_found",
+    "evidencePath": "evidence/song-102-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 343.679,
+    "sourceFirstLine": {
+      "t": 26.34,
+      "text": "是否每一位你身边的女子"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 0.0,
+      "endSeconds": 1.18,
+      "similarity": 0.14285714285714285,
+      "recognizedText": "等一下",
+      "meanProbability": 0.587,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": null,
+    "checks": [],
+    "asrLanguage": "zh",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  }
+}

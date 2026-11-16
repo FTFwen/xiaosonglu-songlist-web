@@ -1,0 +1,197 @@
+{
+  "schemaVersion": 1,
+  "key": "song-51",
+  "songId": 51,
+  "songName": "君色に染まる",
+  "displaySongName": "君色に染まる",
+  "artist": "TOKOTOKO（西沢さんP） / GUMI",
+  "language": "日文",
+  "derivative": false,
+  "audio": {
+    "url": "assets/audio/song_29.m4a?v=a2d91d54d658",
+    "sha256": "a2d91d54d658d6fd4272433f2af613b00a12e1a155c96caded6ae11da55ce895"
+  },
+  "retrievedAt": "2026-11-16T03:58:13.177Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E5%90%9B%E8%89%B2%E3%81%AB%E6%9F%93%E3%81%BE%E3%82%8B&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 39443782,
+        "name": "君色に染まる",
+        "artists": [
+          "西沢さんP",
+          "GUMI"
+        ],
+        "album": "また同じ夢を見てる",
+        "durationMs": 194119,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 536937691,
+        "name": "君色に染まる",
+        "artists": [
+          "あやぽんず*",
+          "西沢さんP"
+        ],
+        "album": "ぽんでぃねーと!",
+        "durationMs": 192783,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 425295141,
+        "name": "君色に染まる",
+        "artists": [
+          "ヲタみん"
+        ],
+        "album": "最新热歌慢摇112",
+        "durationMs": 193235,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 501133567,
+        "name": "君色に染まる",
+        "artists": [
+          "ゆいこんぬ"
+        ],
+        "album": "夢見がちなクリームパッフル",
+        "durationMs": 192373,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1309901537,
+        "name": "君色に染まる",
+        "artists": [
+          "*菜乃"
+        ],
+        "album": "夢想ポップスター",
+        "durationMs": 194666,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2606543102,
+        "name": "君色に染まる",
+        "artists": [
+          "北見遊征"
+        ],
+        "album": "染上你的颜色",
+        "durationMs": 193120,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 459139757,
+        "name": "君色に染まる",
+        "artists": [
+          "柊南"
+        ],
+        "album": "poco a poco cresc.",
+        "durationMs": 191843,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3441240677,
+        "name": "君色に染まる",
+        "artists": [
+          "りぃふ"
+        ],
+        "album": "君色に染まる",
+        "durationMs": 193123,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "sourceId": 39443782,
+    "sourcePath": "sources/39443782.json",
+    "sourceUrl": "https://music.163.com/#/song?id=39443782",
+    "selected": {
+      "id": 39443782,
+      "name": "君色に染まる",
+      "artists": [
+        "西沢さんP",
+        "GUMI"
+      ],
+      "album": "また同じ夢を見てる",
+      "durationMs": 194119,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 29
+  },
+  "alignment": {
+    "status": "spotcheck_review_required",
+    "evidencePath": "evidence/song-51-first.json",
+    "method": "whisper-base-first-line-rigid-shift",
+    "humanVerified": false,
+    "audioDurationSeconds": 192.981,
+    "sourceFirstLine": {
+      "t": 31.27,
+      "text": "期待してすぐに諦めて"
+    },
+    "anchorCandidate": {
+      "audioSeconds": 30.0,
+      "endSeconds": 34.82,
+      "similarity": 1.0,
+      "recognizedText": "期待してすぐに諦めて",
+      "meanProbability": 0.788,
+      "tokenPrefixOnly": false
+    },
+    "offsetSeconds": -1.27,
+    "checks": [
+      {
+        "sourceLine": {
+          "t": 96.25,
+          "text": "そんな不安もたまに過るけれど"
+        },
+        "evidencePath": "evidence/song-51-check0.json",
+        "candidate": {
+          "audioSeconds": 95.54,
+          "endSeconds": 99.86,
+          "similarity": 0.5333333333333333,
+          "recognizedText": "そんなずはもう邪魔によいぎけれど",
+          "meanProbability": 0.648,
+          "tokenPrefixOnly": false
+        },
+        "residualSeconds": 0.56
+      },
+      {
+        "sourceLine": {
+          "t": 175.52,
+          "text": "好きだよって伝えたい"
+        },
+        "evidencePath": "evidence/song-51-check1.json",
+        "candidate": {
+          "audioSeconds": 172.71,
+          "endSeconds": 174.39,
+          "similarity": 0.4444444444444444,
+          "recognizedText": "だよ見つかれたい",
+          "meanProbability": 0.803,
+          "tokenPrefixOnly": false
+        },
+        "residualSeconds": -1.54
+      }
+    ],
+    "asrLanguage": "ja",
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+  },
+  "rowKey": "君色に染まる",
+  "edition": "",
+  "remark": "来自 2026-08-18 小唱一会儿聊回放后段。对 51:00-54:00 做更细切并改用日文转写后，歌词已稳定命中“期待してすぐに諦めて”“曖昧な答えに流されては”“生まれたならちょっと嬉しいね”等句群，与 TOKOTOKO（西沢さんP） feat. GUMI《君色に染まる》高度重合，可先入库并保留人工复核标签。"
+}

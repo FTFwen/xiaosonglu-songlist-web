@@ -1,0 +1,1588 @@
+{
+  "audioSha256": "384bfce6d87d78175178c09f13ee5e70d8c8618911e313bbed5601567bf611b0",
+  "model": "whisper-base",
+  "start": 0,
+  "end": 65,
+  "result": {
+    "text": "我都能陪你我都能陪你我都能陪你我都能陪你我都能陪你我都能陪你我都能陪你我都能陪你我都能陪你我都能陪你我會不會有那麼多的事我會不會有那麼多的事我會不會有那麼多的事我會不會有那麼多的事我會不會有那麼多的事我會不會有那麼多的事我认为你我认为你我认为你我认为你我认为你我认为你我认为你",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 2.4999999999999973,
+        "end": 5.94,
+        "text": "我都能陪你",
+        "tokens": [
+          50364,
+          1654,
+          7182,
+          8225,
+          8842,
+          103,
+          2166,
+          50514
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.4013109904963796,
+        "compression_ratio": 5.357142857142857,
+        "no_speech_prob": 0.5781761407852173,
+        "words": [
+          {
+            "word": "我",
+            "start": 2.4999999999999973,
+            "end": 3.7,
+            "probability": 0.052727747708559036
+          },
+          {
+            "word": "都",
+            "start": 3.7,
+            "end": 4.76,
+            "probability": 0.0447758287191391
+          },
+          {
+            "word": "能",
+            "start": 4.76,
+            "end": 5.1,
+            "probability": 0.0935407280921936
+          },
+          {
+            "word": "陪",
+            "start": 5.1,
+            "end": 5.48,
+            "probability": 0.5882193446159363
+          },
+          {
+            "word": "你",
+            "start": 5.48,
+            "end": 5.94,
+            "probability": 0.47599583864212036
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "seek": 0,
+        "start": 5.94,
+        "end": 7.62,
+        "text": "我都能陪你",
+        "tokens": [
+          50514,
+          1654,
+          7182,
+          8225,
+          8842,
+          103,
+          2166,
+          50664
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.4013109904963796,
+        "compression_ratio": 5.357142857142857,
+        "no_speech_prob": 0.5781761407852173,
+        "words": [
+          {
+            "word": "我",
+            "start": 5.94,
+            "end": 7.34,
+            "probability": 0.07011016458272934
+          },
+          {
+            "word": "都",
+            "start": 7.34,
+            "end": 7.62,
+            "probability": 0.6730130314826965
+          },
+          {
+            "word": "能",
+            "start": 7.62,
+            "end": 7.62,
+            "probability": 0.11905363947153091
+          },
+          {
+            "word": "陪",
+            "start": 7.62,
+            "end": 7.62,
+            "probability": 0.6714890897274017
+          },
+          {
+            "word": "你",
+            "start": 7.62,
+            "end": 7.62,
+            "probability": 0.974994421005249
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "seek": 0,
+        "start": 7.62,
+        "end": 10.44,
+        "text": "我都能陪你",
+        "tokens": [
+          50664,
+          1654,
+          7182,
+          8225,
+          8842,
+          103,
+          2166,
+          50764
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.4013109904963796,
+        "compression_ratio": 5.357142857142857,
+        "no_speech_prob": 0.5781761407852173,
+        "words": [
+          {
+            "word": "我",
+            "start": 7.62,
+            "end": 7.92,
+            "probability": 0.2918134927749634
+          },
+          {
+            "word": "都",
+            "start": 7.92,
+            "end": 8.14,
+            "probability": 0.8260274529457092
+          },
+          {
+            "word": "能",
+            "start": 8.14,
+            "end": 8.52,
+            "probability": 0.19853980839252472
+          },
+          {
+            "word": "陪",
+            "start": 8.52,
+            "end": 10.44,
+            "probability": 0.9770741760730743
+          },
+          {
+            "word": "你",
+            "start": 10.44,
+            "end": 10.44,
+            "probability": 0.9811217784881592
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "seek": 0,
+        "start": 10.44,
+        "end": 13.82,
+        "text": "我都能陪你",
+        "tokens": [
+          50764,
+          1654,
+          7182,
+          8225,
+          8842,
+          103,
+          2166,
+          50864
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.4013109904963796,
+        "compression_ratio": 5.357142857142857,
+        "no_speech_prob": 0.5781761407852173,
+        "words": [
+          {
+            "word": "我",
+            "start": 10.44,
+            "end": 11.16,
+            "probability": 0.18724605441093445
+          },
+          {
+            "word": "都",
+            "start": 11.16,
+            "end": 13.82,
+            "probability": 0.7920773029327393
+          },
+          {
+            "word": "能",
+            "start": 13.82,
+            "end": 13.82,
+            "probability": 0.7685416340827942
+          },
+          {
+            "word": "陪",
+            "start": 13.82,
+            "end": 13.82,
+            "probability": 0.9687722623348236
+          },
+          {
+            "word": "你",
+            "start": 13.82,
+            "end": 13.82,
+            "probability": 0.9773969650268555
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "seek": 0,
+        "start": 13.82,
+        "end": 17.62,
+        "text": "我都能陪你",
+        "tokens": [
+          50864,
+          1654,
+          7182,
+          8225,
+          8842,
+          103,
+          2166,
+          50964
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.4013109904963796,
+        "compression_ratio": 5.357142857142857,
+        "no_speech_prob": 0.5781761407852173,
+        "words": [
+          {
+            "word": "我",
+            "start": 13.82,
+            "end": 13.82,
+            "probability": 0.5727081298828125
+          },
+          {
+            "word": "都",
+            "start": 13.82,
+            "end": 13.84,
+            "probability": 0.5925194025039673
+          },
+          {
+            "word": "能",
+            "start": 13.84,
+            "end": 14.32,
+            "probability": 0.8686774373054504
+          },
+          {
+            "word": "陪",
+            "start": 14.32,
+            "end": 14.7,
+            "probability": 0.9674995243549347
+          },
+          {
+            "word": "你",
+            "start": 14.7,
+            "end": 17.62,
+            "probability": 0.9798357486724854
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "seek": 0,
+        "start": 17.62,
+        "end": 18.76,
+        "text": "我都能陪你",
+        "tokens": [
+          50964,
+          1654,
+          7182,
+          8225,
+          8842,
+          103,
+          2166,
+          51114
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.4013109904963796,
+        "compression_ratio": 5.357142857142857,
+        "no_speech_prob": 0.5781761407852173,
+        "words": [
+          {
+            "word": "我",
+            "start": 17.62,
+            "end": 18.76,
+            "probability": 0.7464108467102051
+          },
+          {
+            "word": "都",
+            "start": 18.76,
+            "end": 18.76,
+            "probability": 0.572279155254364
+          },
+          {
+            "word": "能",
+            "start": 18.76,
+            "end": 18.76,
+            "probability": 0.6916695237159729
+          },
+          {
+            "word": "陪",
+            "start": 18.76,
+            "end": 18.76,
+            "probability": 0.9197650253772736
+          },
+          {
+            "word": "你",
+            "start": 18.76,
+            "end": 18.76,
+            "probability": 0.9806982278823853
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "seek": 0,
+        "start": 18.76,
+        "end": 20.58,
+        "text": "我都能陪你",
+        "tokens": [
+          51114,
+          1654,
+          7182,
+          8225,
+          8842,
+          103,
+          2166,
+          51264
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.4013109904963796,
+        "compression_ratio": 5.357142857142857,
+        "no_speech_prob": 0.5781761407852173,
+        "words": [
+          {
+            "word": "我",
+            "start": 18.76,
+            "end": 18.76,
+            "probability": 0.7548201084136963
+          },
+          {
+            "word": "都",
+            "start": 18.76,
+            "end": 19.8,
+            "probability": 0.6559647917747498
+          },
+          {
+            "word": "能",
+            "start": 19.8,
+            "end": 20.18,
+            "probability": 0.6885328888893127
+          },
+          {
+            "word": "陪",
+            "start": 20.18,
+            "end": 20.58,
+            "probability": 0.9101593494415283
+          },
+          {
+            "word": "你",
+            "start": 20.58,
+            "end": 20.58,
+            "probability": 0.9877504706382751
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "seek": 0,
+        "start": 20.58,
+        "end": 21.78,
+        "text": "我都能陪你",
+        "tokens": [
+          51264,
+          1654,
+          7182,
+          8225,
+          8842,
+          103,
+          2166,
+          51414
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.4013109904963796,
+        "compression_ratio": 5.357142857142857,
+        "no_speech_prob": 0.5781761407852173,
+        "words": [
+          {
+            "word": "我",
+            "start": 20.58,
+            "end": 21.14,
+            "probability": 0.767049252986908
+          },
+          {
+            "word": "都",
+            "start": 21.14,
+            "end": 21.14,
+            "probability": 0.788585901260376
+          },
+          {
+            "word": "能",
+            "start": 21.14,
+            "end": 21.14,
+            "probability": 0.8669800162315369
+          },
+          {
+            "word": "陪",
+            "start": 21.14,
+            "end": 21.14,
+            "probability": 0.9335862994194031
+          },
+          {
+            "word": "你",
+            "start": 21.14,
+            "end": 21.78,
+            "probability": 0.9889407753944397
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "seek": 0,
+        "start": 21.78,
+        "end": 22.78,
+        "text": "我都能陪你",
+        "tokens": [
+          51414,
+          1654,
+          7182,
+          8225,
+          8842,
+          103,
+          2166,
+          51564
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.4013109904963796,
+        "compression_ratio": 5.357142857142857,
+        "no_speech_prob": 0.5781761407852173,
+        "words": [
+          {
+            "word": "我",
+            "start": 21.78,
+            "end": 22.66,
+            "probability": 0.7963571548461914
+          },
+          {
+            "word": "都",
+            "start": 22.66,
+            "end": 22.78,
+            "probability": 0.8483458161354065
+          },
+          {
+            "word": "能",
+            "start": 22.78,
+            "end": 22.78,
+            "probability": 0.9573255181312561
+          },
+          {
+            "word": "陪",
+            "start": 22.78,
+            "end": 22.78,
+            "probability": 0.9882494509220123
+          },
+          {
+            "word": "你",
+            "start": 22.78,
+            "end": 22.78,
+            "probability": 0.9886244535446167
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "seek": 0,
+        "start": 24.199999999999996,
+        "end": 28.0,
+        "text": "我都能陪你",
+        "tokens": [
+          51564,
+          1654,
+          7182,
+          8225,
+          8842,
+          103,
+          2166,
+          51764
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.4013109904963796,
+        "compression_ratio": 5.357142857142857,
+        "no_speech_prob": 0.5781761407852173,
+        "words": [
+          {
+            "word": "我",
+            "start": 24.199999999999996,
+            "end": 25.4,
+            "probability": 0.8220208883285522
+          },
+          {
+            "word": "都",
+            "start": 25.4,
+            "end": 26.26,
+            "probability": 0.8869910836219788
+          },
+          {
+            "word": "能",
+            "start": 26.26,
+            "end": 27.12,
+            "probability": 0.9732226729393005
+          },
+          {
+            "word": "陪",
+            "start": 27.12,
+            "end": 27.14,
+            "probability": 0.9933636784553528
+          },
+          {
+            "word": "你",
+            "start": 27.14,
+            "end": 28.0,
+            "probability": 0.9900818467140198
+          }
+        ]
+      },
+      {
+        "id": 10,
+        "seek": 2800,
+        "start": 31.96,
+        "end": 33.86,
+        "text": "我會不會有那麼多的事",
+        "tokens": [
+          50364,
+          1654,
+          6236,
+          21121,
+          2412,
+          20504,
+          6392,
+          1546,
+          6973,
+          50464
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.5802713613041112,
+        "compression_ratio": 4.186046511627907,
+        "no_speech_prob": 0.44919851422309875,
+        "words": [
+          {
+            "word": "我",
+            "start": 31.96,
+            "end": 32.78,
+            "probability": 0.022928232327103615
+          },
+          {
+            "word": "會",
+            "start": 32.78,
+            "end": 32.78,
+            "probability": 0.026126403361558914
+          },
+          {
+            "word": "不會",
+            "start": 32.78,
+            "end": 32.78,
+            "probability": 0.37867093086242676
+          },
+          {
+            "word": "有",
+            "start": 32.78,
+            "end": 33.08,
+            "probability": 0.031108632683753967
+          },
+          {
+            "word": "那麼",
+            "start": 33.08,
+            "end": 33.86,
+            "probability": 0.040549762547016144
+          },
+          {
+            "word": "多",
+            "start": 33.86,
+            "end": 33.86,
+            "probability": 0.4541373550891876
+          },
+          {
+            "word": "的",
+            "start": 33.86,
+            "end": 33.86,
+            "probability": 0.06693939119577408
+          },
+          {
+            "word": "事",
+            "start": 33.86,
+            "end": 33.86,
+            "probability": 0.0320766381919384
+          }
+        ]
+      },
+      {
+        "id": 11,
+        "seek": 2800,
+        "start": 33.86,
+        "end": 35.86,
+        "text": "我會不會有那麼多的事",
+        "tokens": [
+          50464,
+          1654,
+          6236,
+          21121,
+          2412,
+          20504,
+          6392,
+          1546,
+          6973,
+          50564
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.5802713613041112,
+        "compression_ratio": 4.186046511627907,
+        "no_speech_prob": 0.44919851422309875,
+        "words": [
+          {
+            "word": "我",
+            "start": 33.86,
+            "end": 33.86,
+            "probability": 0.13626673817634583
+          },
+          {
+            "word": "會",
+            "start": 33.86,
+            "end": 33.86,
+            "probability": 0.6109461188316345
+          },
+          {
+            "word": "不會",
+            "start": 33.86,
+            "end": 33.86,
+            "probability": 0.8451971411705017
+          },
+          {
+            "word": "有",
+            "start": 33.86,
+            "end": 33.86,
+            "probability": 0.27549633383750916
+          },
+          {
+            "word": "那麼",
+            "start": 33.86,
+            "end": 34.02,
+            "probability": 0.6851261258125305
+          },
+          {
+            "word": "多",
+            "start": 34.02,
+            "end": 34.34,
+            "probability": 0.9875412583351135
+          },
+          {
+            "word": "的",
+            "start": 34.34,
+            "end": 34.9,
+            "probability": 0.43118613958358765
+          },
+          {
+            "word": "事",
+            "start": 34.9,
+            "end": 35.86,
+            "probability": 0.9466511607170105
+          }
+        ]
+      },
+      {
+        "id": 12,
+        "seek": 2800,
+        "start": 35.86,
+        "end": 38.18,
+        "text": "我會不會有那麼多的事",
+        "tokens": [
+          50564,
+          1654,
+          6236,
+          21121,
+          2412,
+          20504,
+          6392,
+          1546,
+          6973,
+          50664
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.5802713613041112,
+        "compression_ratio": 4.186046511627907,
+        "no_speech_prob": 0.44919851422309875,
+        "words": [
+          {
+            "word": "我",
+            "start": 35.86,
+            "end": 37.04,
+            "probability": 0.43805670738220215
+          },
+          {
+            "word": "會",
+            "start": 37.04,
+            "end": 37.06,
+            "probability": 0.8258858919143677
+          },
+          {
+            "word": "不會",
+            "start": 37.06,
+            "end": 38.14,
+            "probability": 0.9949268102645874
+          },
+          {
+            "word": "有",
+            "start": 38.14,
+            "end": 38.14,
+            "probability": 0.7963757514953613
+          },
+          {
+            "word": "那麼",
+            "start": 38.14,
+            "end": 38.14,
+            "probability": 0.9205619692802429
+          },
+          {
+            "word": "多",
+            "start": 38.14,
+            "end": 38.14,
+            "probability": 0.9979744553565979
+          },
+          {
+            "word": "的",
+            "start": 38.14,
+            "end": 38.18,
+            "probability": 0.5271629691123962
+          },
+          {
+            "word": "事",
+            "start": 38.18,
+            "end": 38.18,
+            "probability": 0.9845678806304932
+          }
+        ]
+      },
+      {
+        "id": 13,
+        "seek": 2800,
+        "start": 38.18,
+        "end": 44.98,
+        "text": "我會不會有那麼多的事",
+        "tokens": [
+          50664,
+          1654,
+          6236,
+          21121,
+          2412,
+          20504,
+          6392,
+          1546,
+          6973,
+          50764
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.5802713613041112,
+        "compression_ratio": 4.186046511627907,
+        "no_speech_prob": 0.44919851422309875,
+        "words": [
+          {
+            "word": "我",
+            "start": 38.18,
+            "end": 38.56,
+            "probability": 0.8056957721710205
+          },
+          {
+            "word": "會",
+            "start": 38.56,
+            "end": 38.8,
+            "probability": 0.9365156888961792
+          },
+          {
+            "word": "不會",
+            "start": 38.8,
+            "end": 38.94,
+            "probability": 0.9983887672424316
+          },
+          {
+            "word": "有",
+            "start": 38.94,
+            "end": 39.28,
+            "probability": 0.9062674045562744
+          },
+          {
+            "word": "那麼",
+            "start": 39.28,
+            "end": 39.54,
+            "probability": 0.9539623856544495
+          },
+          {
+            "word": "多",
+            "start": 39.54,
+            "end": 39.54,
+            "probability": 0.9989363551139832
+          },
+          {
+            "word": "的",
+            "start": 39.54,
+            "end": 39.54,
+            "probability": 0.8224548101425171
+          },
+          {
+            "word": "事",
+            "start": 39.54,
+            "end": 44.98,
+            "probability": 0.9822527170181274
+          }
+        ]
+      },
+      {
+        "id": 14,
+        "seek": 2800,
+        "start": 44.98,
+        "end": 49.96,
+        "text": "我會不會有那麼多的事",
+        "tokens": [
+          50764,
+          1654,
+          6236,
+          21121,
+          2412,
+          20504,
+          6392,
+          1546,
+          6973,
+          50864
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.5802713613041112,
+        "compression_ratio": 4.186046511627907,
+        "no_speech_prob": 0.44919851422309875,
+        "words": [
+          {
+            "word": "我",
+            "start": 44.98,
+            "end": 44.98,
+            "probability": 0.8921476006507874
+          },
+          {
+            "word": "會",
+            "start": 44.98,
+            "end": 45.42,
+            "probability": 0.9699576497077942
+          },
+          {
+            "word": "不會",
+            "start": 45.42,
+            "end": 45.52,
+            "probability": 0.9984927177429199
+          },
+          {
+            "word": "有",
+            "start": 45.52,
+            "end": 45.52,
+            "probability": 0.9581019282341003
+          },
+          {
+            "word": "那麼",
+            "start": 45.52,
+            "end": 49.96,
+            "probability": 0.9650928378105164
+          },
+          {
+            "word": "多",
+            "start": 49.96,
+            "end": 49.96,
+            "probability": 0.9991986155509949
+          },
+          {
+            "word": "的",
+            "start": 49.96,
+            "end": 49.96,
+            "probability": 0.9010394811630249
+          },
+          {
+            "word": "事",
+            "start": 49.96,
+            "end": 49.96,
+            "probability": 0.9774824976921082
+          }
+        ]
+      },
+      {
+        "id": 15,
+        "seek": 2800,
+        "start": 49.96,
+        "end": 57.98,
+        "text": "我會不會有那麼多的事",
+        "tokens": [
+          50864,
+          1654,
+          6236,
+          21121,
+          2412,
+          20504,
+          6392,
+          1546,
+          6973,
+          50964
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.5802713613041112,
+        "compression_ratio": 4.186046511627907,
+        "no_speech_prob": 0.44919851422309875,
+        "words": [
+          {
+            "word": "我",
+            "start": 49.96,
+            "end": 49.96,
+            "probability": 0.9118077754974365
+          },
+          {
+            "word": "會",
+            "start": 49.96,
+            "end": 53.72,
+            "probability": 0.9767314195632935
+          },
+          {
+            "word": "不會",
+            "start": 53.72,
+            "end": 57.98,
+            "probability": 0.9981518387794495
+          },
+          {
+            "word": "有",
+            "start": 57.98,
+            "end": 57.98,
+            "probability": 0.9703077077865601
+          },
+          {
+            "word": "那麼",
+            "start": 57.98,
+            "end": 57.98,
+            "probability": 0.9690589904785156
+          },
+          {
+            "word": "多",
+            "start": 57.98,
+            "end": 57.98,
+            "probability": 0.9993525147438049
+          },
+          {
+            "word": "的",
+            "start": 57.98,
+            "end": 57.98,
+            "probability": 0.9324978590011597
+          },
+          {
+            "word": "事",
+            "start": 57.98,
+            "end": 57.98,
+            "probability": 0.9758993983268738
+          }
+        ]
+      },
+      {
+        "id": 16,
+        "seek": 5800,
+        "start": 60.260000000000005,
+        "end": 61.74,
+        "text": "我认为你",
+        "tokens": [
+          50364,
+          1654,
+          7422,
+          97,
+          13992,
+          2166,
+          50414
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.19080276489257814,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.7611327767372131,
+        "words": [
+          {
+            "word": "我",
+            "start": 60.260000000000005,
+            "end": 60.88,
+            "probability": 0.008420177735388279
+          },
+          {
+            "word": "认",
+            "start": 60.88,
+            "end": 61.38,
+            "probability": 0.26340133557096124
+          },
+          {
+            "word": "为",
+            "start": 61.38,
+            "end": 61.38,
+            "probability": 0.43080875277519226
+          },
+          {
+            "word": "你",
+            "start": 61.38,
+            "end": 61.74,
+            "probability": 0.16457679867744446
+          }
+        ]
+      },
+      {
+        "id": 17,
+        "seek": 5800,
+        "start": 61.74,
+        "end": 61.74,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.19080276489257814,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.7611327767372131,
+        "words": []
+      },
+      {
+        "id": 18,
+        "seek": 5800,
+        "start": 61.74,
+        "end": 61.74,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.19080276489257814,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.7611327767372131,
+        "words": []
+      },
+      {
+        "id": 19,
+        "seek": 5800,
+        "start": 61.74,
+        "end": 61.74,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.19080276489257814,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.7611327767372131,
+        "words": []
+      },
+      {
+        "id": 20,
+        "seek": 5800,
+        "start": 61.74,
+        "end": 61.74,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.19080276489257814,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.7611327767372131,
+        "words": []
+      },
+      {
+        "id": 21,
+        "seek": 5800,
+        "start": 61.74,
+        "end": 61.74,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.19080276489257814,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.7611327767372131,
+        "words": []
+      },
+      {
+        "id": 22,
+        "seek": 5800,
+        "start": 61.74,
+        "end": 62.02,
+        "text": "我认为你",
+        "tokens": [
+          50664,
+          1654,
+          7422,
+          97,
+          13992,
+          2166,
+          50714
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.19080276489257814,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.7611327767372131,
+        "words": [
+          {
+            "word": "我",
+            "start": 61.74,
+            "end": 62.02,
+            "probability": 0.8099290728569031
+          },
+          {
+            "word": "认",
+            "start": 62.02,
+            "end": 62.02,
+            "probability": 0.9546525180339813
+          },
+          {
+            "word": "为",
+            "start": 62.02,
+            "end": 62.02,
+            "probability": 0.9780576825141907
+          },
+          {
+            "word": "你",
+            "start": 62.02,
+            "end": 62.02,
+            "probability": 0.9479221701622009
+          }
+        ]
+      },
+      {
+        "id": 23,
+        "seek": 5800,
+        "start": 62.02,
+        "end": 62.36,
+        "text": "我认为你",
+        "tokens": [
+          50714,
+          1654,
+          7422,
+          97,
+          13992,
+          2166,
+          50764
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.19080276489257814,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.7611327767372131,
+        "words": [
+          {
+            "word": "我",
+            "start": 62.02,
+            "end": 62.02,
+            "probability": 0.799101710319519
+          },
+          {
+            "word": "认",
+            "start": 62.02,
+            "end": 62.02,
+            "probability": 0.9443077445030212
+          },
+          {
+            "word": "为",
+            "start": 62.02,
+            "end": 62.02,
+            "probability": 0.9761887788772583
+          },
+          {
+            "word": "你",
+            "start": 62.02,
+            "end": 62.36,
+            "probability": 0.9489473104476929
+          }
+        ]
+      },
+      {
+        "id": 24,
+        "seek": 5800,
+        "start": 62.36,
+        "end": 62.6,
+        "text": "我认为你",
+        "tokens": [
+          50764,
+          1654,
+          7422,
+          97,
+          13992,
+          2166,
+          50814
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.19080276489257814,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.7611327767372131,
+        "words": [
+          {
+            "word": "我",
+            "start": 62.36,
+            "end": 62.56,
+            "probability": 0.8036675453186035
+          },
+          {
+            "word": "认",
+            "start": 62.56,
+            "end": 62.6,
+            "probability": 0.9523666501045227
+          },
+          {
+            "word": "为",
+            "start": 62.6,
+            "end": 62.6,
+            "probability": 0.9753336906433105
+          },
+          {
+            "word": "你",
+            "start": 62.6,
+            "end": 62.6,
+            "probability": 0.953675389289856
+          }
+        ]
+      },
+      {
+        "id": 25,
+        "seek": 5800,
+        "start": 62.6,
+        "end": 63.36,
+        "text": "我认为你",
+        "tokens": [
+          50814,
+          1654,
+          7422,
+          97,
+          13992,
+          2166,
+          50864
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.19080276489257814,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.7611327767372131,
+        "words": [
+          {
+            "word": "我",
+            "start": 62.6,
+            "end": 62.6,
+            "probability": 0.8281238675117493
+          },
+          {
+            "word": "认",
+            "start": 62.6,
+            "end": 62.78,
+            "probability": 0.9461035430431366
+          },
+          {
+            "word": "为",
+            "start": 62.78,
+            "end": 62.78,
+            "probability": 0.9759572148323059
+          },
+          {
+            "word": "你",
+            "start": 62.78,
+            "end": 63.36,
+            "probability": 0.953015148639679
+          }
+        ]
+      },
+      {
+        "id": 26,
+        "seek": 5800,
+        "start": 63.36,
+        "end": 64.66,
+        "text": "我认为你",
+        "tokens": [
+          50864,
+          1654,
+          7422,
+          97,
+          13992,
+          2166,
+          50914
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.19080276489257814,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.7611327767372131,
+        "words": [
+          {
+            "word": "我",
+            "start": 63.36,
+            "end": 64.48,
+            "probability": 0.8454425930976868
+          },
+          {
+            "word": "认",
+            "start": 64.48,
+            "end": 64.48,
+            "probability": 0.9573888182640076
+          },
+          {
+            "word": "为",
+            "start": 64.48,
+            "end": 64.48,
+            "probability": 0.9744895696640015
+          },
+          {
+            "word": "你",
+            "start": 64.48,
+            "end": 64.66,
+            "probability": 0.953061044216156
+          }
+        ]
+      },
+      {
+        "id": 27,
+        "seek": 5800,
+        "start": 64.66,
+        "end": 64.86,
+        "text": "我认为你",
+        "tokens": [
+          50914,
+          1654,
+          7422,
+          97,
+          13992,
+          2166,
+          50964
+        ],
+        "temperature": 0,
+        "avg_logprob": -0.19080276489257814,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.7611327767372131,
+        "words": [
+          {
+            "word": "我",
+            "start": 64.66,
+            "end": 64.86,
+            "probability": 0.8391022086143494
+          },
+          {
+            "word": "认",
+            "start": 64.86,
+            "end": 64.86,
+            "probability": 0.9507687985897064
+          },
+          {
+            "word": "为",
+            "start": 64.86,
+            "end": 64.86,
+            "probability": 0.9744150042533875
+          },
+          {
+            "word": "你",
+            "start": 64.86,
+            "end": 64.86,
+            "probability": 0.9543609023094177
+          }
+        ]
+      },
+      {
+        "id": 28,
+        "seek": 5800,
+        "start": 64.86,
+        "end": 64.86,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.19080276489257814,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.7611327767372131,
+        "words": []
+      },
+      {
+        "id": 29,
+        "seek": 5800,
+        "start": 64.86,
+        "end": 64.86,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.19080276489257814,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.7611327767372131,
+        "words": []
+      },
+      {
+        "id": 30,
+        "seek": 5800,
+        "start": 64.86,
+        "end": 64.86,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.19080276489257814,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.7611327767372131,
+        "words": []
+      },
+      {
+        "id": 31,
+        "seek": 5800,
+        "start": 64.86,
+        "end": 64.86,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.19080276489257814,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.7611327767372131,
+        "words": []
+      },
+      {
+        "id": 32,
+        "seek": 5800,
+        "start": 64.86,
+        "end": 64.86,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.19080276489257814,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.7611327767372131,
+        "words": []
+      },
+      {
+        "id": 33,
+        "seek": 5800,
+        "start": 64.86,
+        "end": 64.86,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.19080276489257814,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.7611327767372131,
+        "words": []
+      },
+      {
+        "id": 34,
+        "seek": 5800,
+        "start": 64.86,
+        "end": 64.86,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.19080276489257814,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.7611327767372131,
+        "words": []
+      },
+      {
+        "id": 35,
+        "seek": 5800,
+        "start": 64.86,
+        "end": 64.86,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.19080276489257814,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.7611327767372131,
+        "words": []
+      },
+      {
+        "id": 36,
+        "seek": 5800,
+        "start": 64.86,
+        "end": 64.86,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.19080276489257814,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.7611327767372131,
+        "words": []
+      },
+      {
+        "id": 37,
+        "seek": 5800,
+        "start": 64.86,
+        "end": 64.86,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.19080276489257814,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.7611327767372131,
+        "words": []
+      },
+      {
+        "id": 38,
+        "seek": 5800,
+        "start": 64.86,
+        "end": 64.86,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.19080276489257814,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.7611327767372131,
+        "words": []
+      },
+      {
+        "id": 39,
+        "seek": 5800,
+        "start": 64.86,
+        "end": 64.86,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.19080276489257814,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.7611327767372131,
+        "words": []
+      },
+      {
+        "id": 40,
+        "seek": 5800,
+        "start": 64.86,
+        "end": 64.86,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.19080276489257814,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.7611327767372131,
+        "words": []
+      },
+      {
+        "id": 41,
+        "seek": 5800,
+        "start": 64.86,
+        "end": 64.86,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.19080276489257814,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.7611327767372131,
+        "words": []
+      },
+      {
+        "id": 42,
+        "seek": 5800,
+        "start": 64.86,
+        "end": 64.86,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.19080276489257814,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.7611327767372131,
+        "words": []
+      },
+      {
+        "id": 43,
+        "seek": 5800,
+        "start": 64.86,
+        "end": 64.86,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.19080276489257814,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.7611327767372131,
+        "words": []
+      },
+      {
+        "id": 44,
+        "seek": 5800,
+        "start": 64.86,
+        "end": 64.86,
+        "text": "",
+        "tokens": [],
+        "temperature": 0,
+        "avg_logprob": -0.19080276489257814,
+        "compression_ratio": 13.384615384615385,
+        "no_speech_prob": 0.7611327767372131,
+        "words": []
+      }
+    ],
+    "language": "zh"
+  }
+}
