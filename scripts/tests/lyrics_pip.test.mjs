@@ -10,7 +10,7 @@ const baseURI = 'https://example.test/player/';
 const audioBytes = Buffer.from('lyrics PiP black-box audio fixture');
 const audioHash = createHash('sha256').update(audioBytes).digest('hex');
 const audioURL = `assets/audio/fixture.m4a?v=${audioHash.slice(0, 16)}`;
-const audioEvents = ['timeupdate', 'play', 'pause', 'seeking', 'seeked', 'ended', 'loadedmetadata', 'ratechange', 'emptied'];
+const audioEvents = ['timeupdate', 'play', 'pause', 'seeking', 'seeked', 'ended', 'loadedmetadata', 'ratechange', 'emptied', 'volumechange'];
 
 class Events {
   constructor() { this.listeners = new Map(); }
@@ -177,7 +177,7 @@ function longFixture() {
 function harness(t, config = {}) {
   const data = config.data || fixture();
   const host = new Events(), button = new Element('button'), audio = new Events();
-  Object.assign(audio, { currentTime: 0, paused: true, ended: false, seeking: false });
+  Object.assign(audio, { currentTime: 0, paused: true, ended: false, seeking: false, volume: 0.8, muted: false });
   const intervals = new Map(), requests = [], fetches = [], notifications = [], windows = [], digestCalls = [];
   let intervalId = 0, inGesture = false, selected = data.track, liked = false;
   const calls = { previous: 0, next: 0, toggle: 0, favorite: 0 };
@@ -197,6 +197,7 @@ function harness(t, config = {}) {
         const response = config.fetch(url, options);
         if (response !== undefined) return response;
       }
+      if (url.pathname === '/api/lyrics/offset') return { ok: true, json: async () => ({ ok: true, record: null }) };
       if (url.pathname === '/player/assets/audio/fixture.m4a') return {
         ok: true, arrayBuffer: async () => Uint8Array.from(config.audioBytes || audioBytes).buffer,
       };
@@ -299,13 +300,14 @@ test('matched lyrics load only from validated URLs, filter metadata and sort val
   assert.equal(pip.document.title, 'Fixture song · 歌词');
   assert.deepEqual(h.fetches.map(call => call.url.href), [
     `${baseURI}data/lyrics/tracks/song-7.json`, `${baseURI}data/lyrics/sources/42.json`,
+    'https://example.test/api/lyrics/offset?key=song-7',
   ]);
-  for (const { options } of h.fetches) {
-    assert.equal(options.cache, 'no-cache'); assert.equal(options.credentials, 'same-origin');
+  for (const { url, options } of h.fetches) {
+    assert.equal(options.cache, url.pathname.startsWith('/api/') ? 'no-store' : 'no-cache'); assert.equal(options.credentials, 'same-origin');
     assert.equal(options.redirect, 'error'); assert.equal(options.signal.aborted, false);
   }
   assert.equal(h.digestCalls.length, 0, 'matching versioned URLs need no audio download');
-  assert.equal(pip.document.head.children[0].href, `${baseURI}css/lyrics-pip.css`);
+  assert.equal(pip.document.head.children[0].href, `${baseURI}css/lyrics-pip.css?v=2`);
 });
 
 const identityFailures = [
@@ -594,4 +596,109 @@ test('titles, artists, lyrics and server errors render literally through textCon
   h.host.fetch = async () => { throw new Error(payload); };
   control(pip, '重新加载歌词').click(); await settle();
   assert.equal(text(pip, 'lp-empty'), payload); assert.equal(byClass(pip, 'lp-empty')[0].children.length, 0);
+});
+
+function sharedRecord(offsetSeconds = 4) {
+  return { key: 'song-7', rowKey: 'fixture-row', audioSha256: audioHash, sourceId: 42,
+    offsetSeconds, updatedAt: '2026-11-16T06:00:00.000Z' };
+}
+function sharedResponse(record) { return { ok: true, json: async () => ({ ok: true, record }) }; }
+
+test('volume slider controls same audio and follows external volume/mute changes', async t => {
+  const h = harness(t), pip = await h.open(), slider = byClass(pip, 'lp-volume')[0];
+  assert.equal(slider.value, '80');
+  slider.value = '25'; h.audio.muted = true; slider.emit('input');
+  assert.equal(h.audio.volume, 0.25); assert.equal(h.audio.muted, false);
+  assert.equal(text(pip, 'lp-volume-value'), '25%');
+  h.audio.volume = 0.6; h.audio.muted = true; h.audio.emit('volumechange');
+  assert.equal(slider.value, '60'); assert.equal(text(pip, 'lp-volume-value'), '静音');
+  slider.value = '0'; slider.emit('input'); assert.equal(h.audio.volume, 0);
+});
+
+test('volume uses main-player callback', async t => {
+  let value;
+  const h = harness(t, { options: { setVolume: n => { value = n; h.audio.volume = n; } } });
+  const pip = await h.open(), slider = byClass(pip, 'lp-volume')[0];
+  slider.value = '32'; slider.emit('input'); assert.equal(value, 0.32); assert.equal(h.audio.volume, 0.32);
+});
+
+test('shared offset replaces machine offset and controls automatic highlight', async t => {
+  const data = fixture(); data.record.alignment.offsetSeconds = 3;
+  const h = harness(t, { data, fetch: url => url.pathname === '/api/lyrics/offset' ? sharedResponse(sharedRecord(8)) : undefined });
+  const pip = await h.open(); assert.equal(text(pip, 'lp-offset'), '偏移 8.0 秒');
+  h.audio.currentTime = 12; h.audio.emit('timeupdate'); assert.deepEqual(activeTexts(pip), ['first line']);
+  control(pip, '+0.5 秒').click(); assert.equal(text(pip, 'lp-offset'), '偏移 8.5 秒');
+});
+
+test('failed shared GET leaves lyrics and adjustments usable and can retry', async t => {
+  let failing = true;
+  const h = harness(t, { fetch: url => url.pathname === '/api/lyrics/offset' ? failing ? { ok: false, status: 503 } : sharedResponse(null) : undefined });
+  const pip = await h.open(); assert.equal(lyricTexts(pip).length, 3);
+  assert.match(text(pip, 'lp-shared-status'), /读取失败/); control(pip, '+0.5 秒').click();
+  failing = false; control(pip, '重读共享偏移').click(); await settle();
+  assert.equal(text(pip, 'lp-offset'), '偏移 0.5 秒'); assert.equal(control(pip, '重读共享偏移').hidden, true);
+});
+
+for (const [name, change] of [
+  ['key', r => { r.key = 'song-8'; }], ['row', r => { r.rowKey = 'other'; }],
+  ['hash', r => { r.audioSha256 = '0'.repeat(64); }], ['source', r => { r.sourceId = 43; }],
+  ['offset type', r => { r.offsetSeconds = '4'; }], ['offset range', r => { r.offsetSeconds = 601; }],
+  ['date', r => { r.updatedAt = 'bad'; }],
+]) test(`invalid shared ${name} cannot alter original lyrics`, async t => {
+  const record = sharedRecord(); change(record);
+  const h = harness(t, { fetch: url => url.pathname === '/api/lyrics/offset' ? sharedResponse(record) : undefined });
+  const pip = await h.open(); assert.equal(lyricTexts(pip).length, 3);
+  assert.equal(text(pip, 'lp-offset'), '偏移 0.0 秒'); assert.match(text(pip, 'lp-shared-status'), /读取失败/);
+});
+
+test('upload sends total offset and preserves further edits made during upload', async t => {
+  const pending = deferred(); let submitted;
+  const h = harness(t, { fetch: (url, options) => {
+    if (url.pathname !== '/api/lyrics/offset') return;
+    if (options.method === 'GET') return sharedResponse(sharedRecord(4));
+    submitted = JSON.parse(options.body); return pending.promise;
+  } });
+  const pip = await h.open(); control(pip, '+0.5 秒').click(); control(pip, '上传偏移').click();
+  assert.deepEqual(submitted, { key: 'song-7', rowKey: 'fixture-row', audioSha256: audioHash, sourceId: 42, offsetSeconds: 4.5 });
+  assert.equal(control(pip, '上传偏移').disabled, true); control(pip, '+0.5 秒').click();
+  pending.resolve(sharedResponse(sharedRecord(4.5))); await settle();
+  assert.match(text(pip, 'lp-shared-status'), /上传成功/); assert.equal(text(pip, 'lp-offset'), '偏移 5.0 秒');
+  assert.equal(control(pip, '上传偏移').disabled, false);
+});
+
+test('failed upload preserves local edits without reporting success', async t => {
+  const h = harness(t, { fetch: (url, options) => url.pathname === '/api/lyrics/offset' && options.method === 'PUT' ? { ok: false, status: 503 } : undefined });
+  const pip = await h.open(); control(pip, '−0.5 秒').click(); control(pip, '上传偏移').click(); await settle();
+  assert.equal(text(pip, 'lp-offset'), '偏移 -0.5 秒'); assert.match(text(pip, 'lp-shared-status'), /上传失败/);
+  assert.equal(control(pip, '上传偏移').disabled, false);
+});
+
+test('late shared GET cannot overwrite successful upload', async t => {
+  const pending = deferred();
+  const h = harness(t, { fetch: (url, options) => {
+    if (url.pathname !== '/api/lyrics/offset') return;
+    return options.method === 'GET' ? pending.promise : sharedResponse(sharedRecord(0.5));
+  } });
+  const pip = await h.open(); control(pip, '+0.5 秒').click(); control(pip, '上传偏移').click(); await settle();
+  pending.resolve(sharedResponse(sharedRecord(30))); await settle();
+  assert.equal(text(pip, 'lp-offset'), '偏移 0.5 秒'); assert.match(text(pip, 'lp-shared-status'), /上传成功/);
+});
+
+test('late shared GET preserves a local edit', async t => {
+  const pending = deferred();
+  const h = harness(t, { fetch: url => url.pathname === '/api/lyrics/offset' ? pending.promise : undefined });
+  const pip = await h.open(); control(pip, '+0.5 秒').click();
+  pending.resolve(sharedResponse(sharedRecord(30))); await settle();
+  assert.equal(text(pip, 'lp-offset'), '偏移 0.5 秒'); assert.match(text(pip, 'lp-shared-status'), /保留当前本地/);
+});
+
+test('switching songs invalidates a pending shared request and close cleans volume listener', async t => {
+  const pending = deferred(); let signal;
+  const h = harness(t, { fetch: (url, options) => {
+    if (url.pathname === '/api/lyrics/offset') { signal = options.signal; return pending.promise; }
+  } });
+  const pip = await h.open(); h.setTrack(null); h.api.refresh(); assert.equal(signal.aborted, true);
+  pending.resolve(sharedResponse(sharedRecord(30))); await settle();
+  assert.equal(text(pip, 'lp-status'), '未选歌'); assert.deepEqual(lyricTexts(pip), []);
+  h.api.close(); assert.equal(h.audio.listenerCount('volumechange'), 0);
 });

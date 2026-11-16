@@ -19,7 +19,10 @@
     }
     if (instances.has(button)) instances.get(button)();
     const base = host.document.baseURI;
-    const cssURL = new URL('css/lyrics-pip.css', base).href;
+    const cssURL = new URL('css/lyrics-pip.css?v=2', base).href;
+    const sharedURL = new URL('/api/lyrics/offset', base);
+    let canonical = null, sharedBase = null, sharedState = '', uploading = false, sharedLoading = false;
+    let adjustmentRevision = 0, sharedRequest = 0;
     let pip = null, opening = false, generation = 0, controller = null;
     let timer = null, raf = null, ui = null, identity = null, track = null;
     let lines = [], nodes = [], active = -1, alignment = null;
@@ -100,9 +103,15 @@
       state.setAttribute('role', 'status');
       el('p', 'lp-hint', '拖动窗口标题栏移动 · 请保留歌单页面', head);
       const timing = el('div', 'lp-timing', undefined, main);
+      const upload = action(timing, '上传偏移', uploadOffset);
+      upload.classList.add('lp-upload');
       const minus = action(timing, '−0.5 秒', () => adjust(-0.5));
       const offset = el('span', 'lp-offset', '', timing);
       const plus = action(timing, '+0.5 秒', () => adjust(0.5));
+      const sharedStatus = el('p', 'lp-shared-status', '', timing);
+      sharedStatus.setAttribute('role', 'status');
+      const sharedRetry = action(timing, '重读共享偏移', () => readShared(generation));
+      sharedRetry.classList.add('lp-shared-retry'); sharedRetry.hidden = true;
       const viewport = el('section', 'lp-viewport', undefined, main);
       viewport.setAttribute('aria-label', '歌词'); viewport.tabIndex = 0;
       const list = el('div', 'lp-lines', undefined, viewport);
@@ -114,7 +123,22 @@
       toggle.classList.add('lp-toggle');
       const next = action(foot, '下一首', () => invoke('next'), 'next');
       const favorite = action(foot, '收藏', () => invoke('favorite'), 'favorite');
-      ui = { title, artist, state, timing, minus, plus, offset,
+      const volumeRow = el('label', 'lp-volume-row', undefined, main);
+      el('span', '', '音量', volumeRow);
+      const volume = el('input', 'lp-volume', undefined, volumeRow);
+      volume.type = 'range'; volume.min = '0'; volume.max = '100'; volume.step = '1';
+      volume.setAttribute('aria-label', '音量');
+      const volumeValue = el('span', 'lp-volume-value', '', volumeRow);
+      listen(volume, 'input', () => {
+        const value = Number(volume.value) / 100;
+        if (!Number.isFinite(value)) return;
+        const normalized = Math.max(0, Math.min(1, value));
+        if (typeof options.setVolume === 'function') options.setVolume(normalized);
+        else audio.volume = normalized;
+        if (normalized > 0) audio.muted = false;
+        sync();
+      });
+      ui = { title, artist, state, timing, minus, plus, offset, upload, sharedStatus, sharedRetry, volume, volumeValue,
         viewport, list, retry, previous, toggle, next, favorite, playing: null, liked: null };
       listen(doc, 'keydown', event => {
         if (event.code !== 'Space' || event.altKey || event.ctrlKey || event.metaKey || event.repeat) return;
@@ -123,12 +147,81 @@
       });
     }
     function adjust(delta) {
-      adjustment = Math.round((adjustment + delta) * 10) / 10;
+      adjustmentRevision++;
+      adjustment = Math.round((adjustment + delta) * 1000) / 1000;
+      recenter();
+    }
+    function recenter() {
       if (nodes[active]) nodes[active].classList.remove('is-active');
       active = -1; updateStatus(); sync();
     }
     function offsetSeconds() {
-      return (alignment && Number.isFinite(alignment.offsetSeconds) ? alignment.offsetSeconds : 0) + adjustment;
+      return (sharedBase !== null ? sharedBase :
+        alignment && Number.isFinite(alignment.offsetSeconds) ? alignment.offsetSeconds : 0) + adjustment;
+    }
+    function validShared(record) {
+      return record && canonical && record.key === canonical.key && record.rowKey === canonical.rowKey &&
+        record.audioSha256 === canonical.audioSha256 && record.sourceId === canonical.sourceId &&
+        typeof record.offsetSeconds === 'number' && Number.isFinite(record.offsetSeconds) &&
+        Math.abs(record.offsetSeconds) <= 600 && typeof record.updatedAt === 'string' &&
+        Number.isFinite(Date.parse(record.updatedAt));
+    }
+    async function sharedJSON(method, signal, body) {
+      const url = new URL(sharedURL.href);
+      if (method === 'GET') url.searchParams.set('key', canonical.key);
+      const requestSignal = typeof AbortSignal !== 'undefined' && typeof AbortSignal.any === 'function' && typeof AbortSignal.timeout === 'function'
+        ? AbortSignal.any([signal, AbortSignal.timeout(15000)]) : signal;
+      const response = await host.fetch(url.href, { method, signal: requestSignal, cache: 'no-store',
+        credentials: 'same-origin', redirect: 'error',
+        ...(body ? { headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) } : {}) });
+      if (!response.ok) throw new Error('HTTP ' + response.status);
+      const result = await response.json();
+      if (!result || result.ok !== true || (result.record !== null && !validShared(result.record))) throw new Error('共享偏移版本不匹配');
+      return result.record;
+    }
+    async function readShared(token) {
+      if (!current(token) || !canonical || uploading || loadState !== 'ready') return;
+      const request = ++sharedRequest, revision = adjustmentRevision;
+      sharedLoading = true; sharedState = '正在读取共享偏移…'; updateStatus();
+      try {
+        const record = await sharedJSON('GET', controller.signal);
+        if (!current(token) || request !== sharedRequest) return;
+        if (revision !== adjustmentRevision || adjustmentRevision > 0) {
+          sharedState = '保留当前本地调整 · 重新打开时读取共享偏移';
+        } else if (record) {
+          sharedBase = record.offsetSeconds;
+          sharedState = '已应用共享偏移 · ' + new Date(record.updatedAt).toLocaleString('zh-CN');
+          recenter();
+        } else sharedState = '暂无适用共享偏移 · 调好后可上传';
+      } catch (error) {
+        if (!current(token) || request !== sharedRequest || error.name === 'AbortError') return;
+        sharedState = '共享偏移读取失败 · 仍可本地调整';
+      } finally {
+        if (current(token) && request === sharedRequest) { sharedLoading = false; updateStatus(); }
+      }
+    }
+    async function uploadOffset() {
+      if (!canonical || uploading || loadState !== 'ready') return;
+      const token = generation, total = Math.round(offsetSeconds() * 1000) / 1000;
+      if (!Number.isFinite(total) || Math.abs(total) > 600) { notify('偏移需要在 −600 到 +600 秒之间'); return; }
+      const sentAdjustment = adjustment;
+      const body = { ...canonical, offsetSeconds: total };
+      ++sharedRequest; sharedLoading = false; uploading = true;
+      sharedState = '正在上传偏移…'; updateStatus();
+      try {
+        const record = await sharedJSON('PUT', controller.signal, body);
+        if (!current(token)) return;
+        if (!record || record.offsetSeconds !== total) throw new Error('保存结果不一致');
+        sharedBase = record.offsetSeconds;
+        adjustment = Math.round((adjustment - sentAdjustment) * 1000) / 1000;
+        sharedState = '上传成功 · 所有用户将读取此偏移';
+        recenter();
+      } catch (error) {
+        if (!current(token) || error.name === 'AbortError') return;
+        sharedState = '上传失败 · 本地调整已保留，请重试';
+      } finally {
+        if (current(token)) { uploading = false; updateStatus(); }
+      }
     }
     function updateStatus() {
       if (!ui) return;
@@ -142,6 +235,10 @@
       ui.timing.hidden = loadState !== 'ready';
       ui.minus.hidden = ui.plus.hidden = ui.offset.hidden = loadState !== 'ready';
       ui.offset.textContent = '偏移 ' + offsetSeconds().toFixed(1) + ' 秒';
+      ui.upload.disabled = loadState !== 'ready' || uploading || !canonical || Math.abs(offsetSeconds()) > 600;
+      ui.upload.textContent = uploading ? '上传中…' : '上传偏移';
+      ui.sharedStatus.textContent = sharedState;
+      ui.sharedRetry.hidden = loadState !== 'ready' || sharedLoading || uploading || !sharedState.includes('读取失败');
     }
     function message(text) { ui.list.replaceChildren(el('p', 'lp-empty', text)); }
     async function json(url, signal) {
@@ -175,6 +272,8 @@
       controller = new AbortController();
       const signal = controller.signal;
       lines = []; nodes = []; active = -1; adjustment = 0; alignment = null;
+      canonical = null; sharedBase = null; sharedState = ''; uploading = false; sharedLoading = false;
+      adjustmentRevision = 0; ++sharedRequest;
       loadState = selected ? '正在核验歌词与音频版本…' : '未选歌';
       ui.retry.hidden = true;
       message(selected ? '正在载入歌词…' : '先在主页面选一首歌吧'); updateStatus();
@@ -208,7 +307,9 @@
           loadState = 'ready'; ui.list.replaceChildren(); ui.viewport.scrollTop = 0;
           nodes = lines.map(line => el('p', 'lp-line', line.text, ui.list));
         }
+        canonical = { key, rowKey: record.rowKey, audioSha256: record.audio.sha256.toLowerCase(), sourceId };
         updateStatus(); sync();
+        if (loadState === 'ready') void readShared(token);
       } catch (error) {
         if (!current(token) || error.name === 'AbortError') return;
         loadState = '歌词加载失败 · 可重试';
@@ -229,6 +330,9 @@
         ui.favorite.setAttribute('aria-pressed', String(liked));
         ui.favorite.setAttribute('aria-label', liked ? '取消收藏' : '收藏');
       }
+      const volume = Math.round(Math.max(0, Math.min(1, Number.isFinite(audio.volume) ? audio.volume : 0.8)) * 100);
+      ui.volume.value = String(volume);
+      ui.volumeValue.textContent = audio.muted ? '静音' : volume + '%';
       for (const name of ['previous', 'toggle', 'next', 'favorite']) ui[name].disabled = !track || typeof options[name] !== 'function';
       if (loadState !== 'ready') return;
       const time = audio.currentTime - offsetSeconds();
@@ -302,7 +406,7 @@
         try {
           build(); pressed(true);
           listen(pip, 'pagehide', cleanup, { once: true });
-          for (const name of ['timeupdate', 'play', 'pause', 'seeking', 'seeked', 'ended', 'loadedmetadata', 'ratechange', 'emptied']) listen(audio, name, refresh);
+          for (const name of ['timeupdate', 'play', 'pause', 'seeking', 'seeked', 'ended', 'loadedmetadata', 'ratechange', 'emptied', 'volumechange']) listen(audio, name, refresh);
           refresh(); timer = host.setInterval(refresh, 250); raf = pip.requestAnimationFrame(frame);
         } catch (error) { close(); notify('画中画歌词初始化失败：' + error.message); }
       }, error => { opening = false; if (!disposed) notify('无法打开画中画歌词：' + (error.message || '请求被浏览器拒绝')); });

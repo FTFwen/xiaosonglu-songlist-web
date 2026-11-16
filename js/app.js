@@ -4947,6 +4947,13 @@ function initLyricsPip() {
       } : null;
     },
     getFavorite: () => !!player.current && !!state.favoritesMap[getFavoriteKey(player.current)],
+    setVolume(value) {
+      if (!Number.isFinite(value)) return;
+      player.volume = Math.max(0, Math.min(1, value));
+      player.audio.volume = player.volume;
+      if (player.volume > 0) player.audio.muted = false;
+      dom.playerVolume.value = String(Math.round(player.volume * 100));
+    },
     previous: playPrev,
     next: () => playNext(false),
     toggle: togglePlay,
