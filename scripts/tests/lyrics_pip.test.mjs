@@ -373,28 +373,25 @@ for (const status of ['candidate', 'version_review_required', 'not_found']) test
   assert.equal(byClass(pip, 'lp-timing')[0].hidden, true);
 });
 
-test('unverified lyrics default to static reading, trial scrolling is opt-in and stops cleanly', async t => {
+test('unverified lyrics automatically highlight and scroll without a trial button', async t => {
   const h = harness(t), pip = await h.open(), viewport = byClass(pip, 'lp-viewport')[0];
   h.audio.currentTime = 15; h.audio.emit('timeupdate'); pip.runFrame(); h.tick();
-  assert.equal(text(pip, 'lp-status'), '歌词待校准 · 静态阅读');
-  assert.deepEqual(activeTexts(pip), []); assert.equal(viewport.scrollCalls.length, 0);
-  assert.equal(control(pip, '+0.5 秒').hidden, true);
-  const trial = control(pip, '试滚歌词'); trial.click();
-  assert.equal(trial.textContent, '停止试滚'); assert.equal(trial.getAttribute('aria-pressed'), 'true');
-  assert.match(text(pip, 'lp-status'), /试滚 · 时间未校准/); assert.deepEqual(activeTexts(pip), ['middle line']);
+  assert.equal(text(pip, 'lp-status'), '自动滚动 · 时间待校准');
+  assert.deepEqual(activeTexts(pip), ['middle line']);
+  assert.ok(viewport.scrollCalls.length > 0);
+  assert.equal(byClass(pip, 'lp-button').some(button => /试滚/.test(button.textContent)), false);
   assert.equal(control(pip, '+0.5 秒').hidden, false);
-  const scrollCount = viewport.scrollCalls.length;
-  trial.click(); h.audio.currentTime = 25; h.audio.emit('timeupdate');
-  assert.deepEqual(activeTexts(pip), []); assert.equal(viewport.scrollCalls.length, scrollCount);
-  assert.equal(trial.textContent, '试滚歌词'); assert.equal(trial.getAttribute('aria-pressed'), 'false');
-  assert.equal(control(pip, '+0.5 秒').hidden, true);
+  h.audio.currentTime = 25; h.audio.emit('timeupdate');
+  assert.deepEqual(activeTexts(pip), ['last line']);
+  control(pip, '+0.5 秒').click();
+  assert.equal(text(pip, 'lp-offset'), '偏移 0.5 秒');
 });
 
 for (const humanVerified of [false, true]) test(`${humanVerified ? 'human-verified' : 'machine-draft'} alignment highlights across offset and forward/backward seeks`, async t => {
   const data = fixture(); data.record.alignment = { status: 'asr_consistent_draft', humanVerified, offsetSeconds: 2 };
   const h = harness(t, { data }), pip = await h.open(), viewport = byClass(pip, 'lp-viewport')[0];
   assert.equal(text(pip, 'lp-status'), humanVerified ? '人工核验 · 同步歌词' : '机器草稿 · 未人工核验');
-  assert.equal(control(pip, '试滚歌词').hidden, true); assert.equal(text(pip, 'lp-offset'), '偏移 2.0 秒');
+  assert.equal(control(pip, '+0.5 秒').hidden, false); assert.equal(text(pip, 'lp-offset'), '偏移 2.0 秒');
   for (const [time, expected] of [[2.9, []], [3, ['first line']], [12, ['middle line']], [22, ['last line']], [5, ['first line']], [0, []]]) {
     h.audio.currentTime = time; h.audio.seeking = true; h.audio.emit('seeking');
     assert.deepEqual(activeTexts(pip), expected, `seek to ${time}`);

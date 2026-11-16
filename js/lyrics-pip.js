@@ -23,7 +23,7 @@
     let pip = null, opening = false, generation = 0, controller = null;
     let timer = null, raf = null, ui = null, identity = null, track = null;
     let lines = [], nodes = [], active = -1, alignment = null;
-    let trial = false, adjustment = 0, loadState = '', disposed = false;
+    let adjustment = 0, loadState = '', disposed = false;
     const removers = [];
     const notify = text => {
       if (typeof options.showMessage === 'function') options.showMessage(text);
@@ -100,10 +100,6 @@
       state.setAttribute('role', 'status');
       el('p', 'lp-hint', '拖动窗口标题栏移动 · 请保留歌单页面', head);
       const timing = el('div', 'lp-timing', undefined, main);
-      const tryButton = action(timing, '试滚歌词', () => {
-        if (nodes[active]) nodes[active].classList.remove('is-active');
-        trial = !trial; active = -1; updateStatus(); sync();
-      });
       const minus = action(timing, '−0.5 秒', () => adjust(-0.5));
       const offset = el('span', 'lp-offset', '', timing);
       const plus = action(timing, '+0.5 秒', () => adjust(0.5));
@@ -118,7 +114,7 @@
       toggle.classList.add('lp-toggle');
       const next = action(foot, '下一首', () => invoke('next'), 'next');
       const favorite = action(foot, '收藏', () => invoke('favorite'), 'favorite');
-      ui = { title, artist, state, timing, tryButton, minus, plus, offset,
+      ui = { title, artist, state, timing, minus, plus, offset,
         viewport, list, retry, previous, toggle, next, favorite, playing: null, liked: null };
       listen(doc, 'keydown', event => {
         if (event.code !== 'Space' || event.altKey || event.ctrlKey || event.metaKey || event.repeat) return;
@@ -131,9 +127,6 @@
       if (nodes[active]) nodes[active].classList.remove('is-active');
       active = -1; updateStatus(); sync();
     }
-    function automatic() {
-      return alignment && (alignment.humanVerified === true || alignment.status === 'asr_consistent_draft');
-    }
     function offsetSeconds() {
       return (alignment && Number.isFinite(alignment.offsetSeconds) ? alignment.offsetSeconds : 0) + adjustment;
     }
@@ -141,16 +134,13 @@
       if (!ui) return;
       let text = loadState;
       if (loadState === 'ready') {
-        text = trial ? '试滚 · 时间未校准' : alignment.humanVerified === true ? '人工核验 · 同步歌词' :
-          alignment.status === 'asr_consistent_draft' ? '机器草稿 · 未人工核验' : '歌词待校准 · 静态阅读';
+        text = alignment.humanVerified === true ? '人工核验 · 同步歌词' :
+          alignment.status === 'asr_consistent_draft' ? '机器草稿 · 未人工核验' : '自动滚动 · 时间待校准';
         if (adjustment !== 0) text += ' · 本地试调 ' + (adjustment > 0 ? '+' : '') + adjustment.toFixed(1) + ' 秒';
       }
       ui.state.textContent = text;
       ui.timing.hidden = loadState !== 'ready';
-      ui.tryButton.hidden = !!automatic();
-      ui.tryButton.textContent = trial ? '停止试滚' : '试滚歌词';
-      ui.tryButton.setAttribute('aria-pressed', String(trial));
-      ui.minus.hidden = ui.plus.hidden = ui.offset.hidden = !(automatic() || trial);
+      ui.minus.hidden = ui.plus.hidden = ui.offset.hidden = loadState !== 'ready';
       ui.offset.textContent = '偏移 ' + offsetSeconds().toFixed(1) + ' 秒';
     }
     function message(text) { ui.list.replaceChildren(el('p', 'lp-empty', text)); }
@@ -184,7 +174,7 @@
       if (controller) controller.abort();
       controller = new AbortController();
       const signal = controller.signal;
-      lines = []; nodes = []; active = -1; trial = false; adjustment = 0; alignment = null;
+      lines = []; nodes = []; active = -1; adjustment = 0; alignment = null;
       loadState = selected ? '正在核验歌词与音频版本…' : '未选歌';
       ui.retry.hidden = true;
       message(selected ? '正在载入歌词…' : '先在主页面选一首歌吧'); updateStatus();
@@ -240,7 +230,7 @@
         ui.favorite.setAttribute('aria-label', liked ? '取消收藏' : '收藏');
       }
       for (const name of ['previous', 'toggle', 'next', 'favorite']) ui[name].disabled = !track || typeof options[name] !== 'function';
-      if (loadState !== 'ready' || !(automatic() || trial)) return;
+      if (loadState !== 'ready') return;
       const time = audio.currentTime - offsetSeconds();
       let lo = 0, hi = lines.length;
       while (lo < hi) { const mid = (lo + hi) >>> 1; if (lines[mid].t <= time) lo = mid + 1; else hi = mid; }
