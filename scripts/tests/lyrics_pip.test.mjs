@@ -307,7 +307,7 @@ test('matched lyrics load only from validated URLs, filter metadata and sort val
     assert.equal(options.redirect, 'error'); assert.equal(options.signal.aborted, false);
   }
   assert.equal(h.digestCalls.length, 0, 'matching versioned URLs need no audio download');
-  assert.equal(pip.document.head.children[0].href, `${baseURI}css/lyrics-pip.css?v=2`);
+  assert.equal(pip.document.head.children[0].href, `${baseURI}css/lyrics-pip.css?v=3`);
 });
 
 const identityFailures = [
@@ -378,7 +378,8 @@ for (const status of ['candidate', 'version_review_required', 'not_found']) test
 test('unverified lyrics automatically highlight and scroll without a trial button', async t => {
   const h = harness(t), pip = await h.open(), viewport = byClass(pip, 'lp-viewport')[0];
   h.audio.currentTime = 15; h.audio.emit('timeupdate'); pip.runFrame(); h.tick();
-  assert.equal(text(pip, 'lp-status'), '自动滚动 · 时间待校准');
+  assert.equal(byClass(pip, 'lp-status')[0].hidden, true);
+  assert.equal(byClass(pip, 'lp-hint').length, 0);
   assert.deepEqual(activeTexts(pip), ['middle line']);
   assert.ok(viewport.scrollCalls.length > 0);
   assert.equal(byClass(pip, 'lp-button').some(button => /试滚/.test(button.textContent)), false);
@@ -392,7 +393,7 @@ test('unverified lyrics automatically highlight and scroll without a trial butto
 for (const humanVerified of [false, true]) test(`${humanVerified ? 'human-verified' : 'machine-draft'} alignment highlights across offset and forward/backward seeks`, async t => {
   const data = fixture(); data.record.alignment = { status: 'asr_consistent_draft', humanVerified, offsetSeconds: 2 };
   const h = harness(t, { data }), pip = await h.open(), viewport = byClass(pip, 'lp-viewport')[0];
-  assert.equal(text(pip, 'lp-status'), humanVerified ? '人工核验 · 同步歌词' : '机器草稿 · 未人工核验');
+  assert.equal(byClass(pip, 'lp-status')[0].hidden, true);
   assert.equal(control(pip, '+0.5 秒').hidden, false); assert.equal(text(pip, 'lp-offset'), '偏移 2.0 秒');
   for (const [time, expected] of [[2.9, []], [3, ['first line']], [12, ['middle line']], [22, ['last line']], [5, ['first line']], [0, []]]) {
     h.audio.currentTime = time; h.audio.seeking = true; h.audio.emit('seeking');
@@ -404,7 +405,7 @@ for (const humanVerified of [false, true]) test(`${humanVerified ? 'human-verifi
   assert.deepEqual(activeTexts(pip), ['middle line']); assert.equal(viewport.scrollCalls.at(-1).behavior, 'smooth');
   control(pip, '+0.5 秒').click();
   assert.equal(text(pip, 'lp-offset'), '偏移 2.5 秒'); assert.deepEqual(activeTexts(pip), ['first line']);
-  assert.match(text(pip, 'lp-status'), /本地试调 \+0.5 秒/);
+  assert.equal(byClass(pip, 'lp-status')[0].hidden, true);
   control(pip, '−0.5 秒').click(); assert.deepEqual(activeTexts(pip), ['middle line']);
   assert.equal(text(pip, 'lp-offset'), '偏移 2.0 秒');
   pip.reducedMotion = true; h.audio.currentTime = 22; h.audio.emit('timeupdate');

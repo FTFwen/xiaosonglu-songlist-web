@@ -19,7 +19,7 @@
     }
     if (instances.has(button)) instances.get(button)();
     const base = host.document.baseURI;
-    const cssURL = new URL('css/lyrics-pip.css?v=2', base).href;
+    const cssURL = new URL('css/lyrics-pip.css?v=3', base).href;
     const sharedURL = new URL('/api/lyrics/offset', base);
     let canonical = null, sharedBase = null, sharedState = '', uploading = false, sharedLoading = false;
     let adjustmentRevision = 0, sharedRequest = 0;
@@ -101,7 +101,6 @@
       const artist = el('p', 'lp-artist', '', head);
       const state = el('p', 'lp-status', '', head);
       state.setAttribute('role', 'status');
-      el('p', 'lp-hint', '拖动窗口标题栏移动 · 请保留歌单页面', head);
       const timing = el('div', 'lp-timing', undefined, main);
       const upload = action(timing, '上传偏移', uploadOffset);
       upload.classList.add('lp-upload');
@@ -225,13 +224,8 @@
     }
     function updateStatus() {
       if (!ui) return;
-      let text = loadState;
-      if (loadState === 'ready') {
-        text = alignment.humanVerified === true ? '人工核验 · 同步歌词' :
-          alignment.status === 'asr_consistent_draft' ? '机器草稿 · 未人工核验' : '自动滚动 · 时间待校准';
-        if (adjustment !== 0) text += ' · 本地试调 ' + (adjustment > 0 ? '+' : '') + adjustment.toFixed(1) + ' 秒';
-      }
-      ui.state.textContent = text;
+      ui.state.textContent = loadState === 'ready' ? '' : loadState;
+      ui.state.hidden = loadState === 'ready';
       ui.timing.hidden = loadState !== 'ready';
       ui.minus.hidden = ui.plus.hidden = ui.offset.hidden = loadState !== 'ready';
       ui.offset.textContent = '偏移 ' + offsetSeconds().toFixed(1) + ' 秒';
