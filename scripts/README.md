@@ -132,6 +132,7 @@ curated 的每个条目都必须使用带规范 `kind` 与 B 站视频 URL 的�
 node scripts/build_xiaosonglu_song_data.mjs --write
 node scripts/build_xiaosonglu_song_data.mjs --check
 node scripts/validate_song_data.mjs
+node scripts/sync_song_lyrics.mjs
 node --test --test-isolation=none scripts/tests/song_pipeline.test.mjs
 ```
 

@@ -463,6 +463,9 @@ $overlayRelativePaths = @(
     'buttons\index.html',
     'workshop\index.html',
     'js\app.js',
+    'js\lyrics-pip.js',
+    'css\lyrics-pip.css',
+    'functions\api\lyrics\offset.js',
     'js\cross-page-player.js',
     'js\shared.js',
     'js\listen-together.js',
@@ -533,6 +536,18 @@ if ($LASTEXITCODE -ne 0) { throw 'Final staged song-data validation failed; refu
 & $powershellCommand '-NoProfile' '-ExecutionPolicy' 'Bypass' '-File' (Join-Path $rootPath 'xsl-web-tools\sync_workspace_data.ps1') '-Check' '-Root' $stagePath | Out-Host
 if ($LASTEXITCODE -ne 0) { throw 'Final staged workshop mirror check failed; refusing deployment.' }
 
+# Replace the complete lyrics subtree: a HEAD-only track must never survive the
+# current worktree snapshot. The helper rejects links/escapes and stages only the
+# explicit JSON/LRC/document allowlist plus referenced transient ASR evidence.
+$lyricsStageHelper = Join-Path $rootPath 'scripts\stage_lyrics_deploy.mjs'
+$lyricsOverlayJson = & $nodeCommand $lyricsStageHelper "--root=$rootPath" "--stage=$stagePath"
+if ($LASTEXITCODE -ne 0) { throw 'Lyrics deployment overlay failed; refusing deployment.' }
+foreach ($lyricRelative in ($lyricsOverlayJson | ConvertFrom-Json)) { $overlayed += [string]$lyricRelative }
+& $nodeCommand (Join-Path $rootPath 'scripts\validate_lyrics.mjs') "--root=$stagePath" | Out-Host
+if ($LASTEXITCODE -ne 0) { throw 'Final staged lyrics validation failed; refusing deployment.' }
+& $nodeCommand $lyricsStageHelper "--stage=$stagePath" '--prune-evidence' | Out-Host
+if ($LASTEXITCODE -ne 0) { throw 'Removing transient staged lyrics evidence failed; refusing deployment.' }
+
 # Defense in depth: downloaded videos and transient review files can never enter the stage.
 $blockedDirectories = @(
     'assets\video', 'assets\videos', 'data\xiaosonglu\videos',
@@ -602,6 +617,10 @@ foreach ($relative in @(
     'workshop/js/shared.js',
     'workshop/js/start.js',
     'workshop/js/data.js',
+    'data/lyrics/index.json',
+    'data/lyrics/coverage.json',
+    'js/lyrics-pip.js',
+    'css/lyrics-pip.css',
     'data/xiaosonglu/audio_index.json',
     'data/xiaosonglu/history_index.json',
     'data/xiaosonglu/replay_song_segments.json',
@@ -620,6 +639,21 @@ foreach ($relative in @(
     $staged = Join-Path $stagePath $relative.Replace('/', '\')
     if (-not (Test-Path -LiteralPath $staged -PathType Leaf)) { throw "Final stage is missing verification payload: $relative" }
     $expectedStaticHashes[$relative] = (Get-FileHash -LiteralPath $staged -Algorithm SHA256).Hash.ToLowerInvariant()
+}
+# Verify a newest main-track and derivative lyric record/source on both release
+# endpoints, in addition to the complete index hash. Avoid hundreds of requests.
+$lyricsIndex = Get-Content -LiteralPath (Join-Path $stagePath 'data\lyrics\index.json') -Raw -Encoding UTF8 | ConvertFrom-Json
+foreach ($family in @('song-', 'derivative-')) {
+    $latest = @($lyricsIndex.tracks | Where-Object { ([string]$_.key).StartsWith($family) } | Sort-Object { [math]::Abs([long]$_.songId) } -Descending | Select-Object -First 1)
+    foreach ($entry in $latest) {
+        $lyricPaths = @('data/lyrics/' + [string]$entry.path)
+        if ($null -ne $entry.sourceId) { $lyricPaths += 'data/lyrics/sources/' + [string]$entry.sourceId + '.json' }
+        foreach ($relative in $lyricPaths) {
+            $staged = Join-Path $stagePath $relative.Replace('/', '\')
+            if (-not (Test-Path -LiteralPath $staged -PathType Leaf)) { throw "Final stage is missing lyric verification payload: $relative" }
+            $expectedStaticHashes[$relative] = (Get-FileHash -LiteralPath $staged -Algorithm SHA256).Hash.ToLowerInvariant()
+        }
+    }
 }
 $expectedVersionedAudio = @{}
 $verificationTargets = @($audioIndex.verificationTargets)

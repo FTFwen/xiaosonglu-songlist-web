@@ -336,6 +336,9 @@ function Get-PipelineHashes {
         'buttons\index.html',
         'buttons\buttons.js',
         'js\app.js',
+        'js\lyrics-pip.js',
+        'css\lyrics-pip.css',
+        'functions\api\lyrics\offset.js',
         'js\cross-page-player.js',
         'js\data.js',
         'js\shared.js',
@@ -368,6 +371,22 @@ function Get-PipelineHashes {
             $hashes[$relative.Replace('\', '/')] = if (Test-Path -LiteralPath $path -PathType Leaf) {
                 (Get-FileHash -LiteralPath $path -Algorithm SHA256).Hash.ToLowerInvariant()
             } else { $null }
+        }
+    }
+    # Include lyric records, sources and reports in change detection. Evidence is
+    # validation-only and is intentionally excluded from the public snapshot.
+    $lyricsRoot = Join-Path $rootPath 'data\lyrics'
+    if (Test-Path -LiteralPath $lyricsRoot -PathType Container) {
+        $lyricsFiles = @(Get-ChildItem -LiteralPath $lyricsRoot -File)
+        foreach ($folder in @('tracks', 'sources', 'draft-lrc')) {
+            $folderPath = Join-Path $lyricsRoot $folder
+            if (Test-Path -LiteralPath $folderPath -PathType Container) {
+                $lyricsFiles += @(Get-ChildItem -LiteralPath $folderPath -File)
+            }
+        }
+        foreach ($file in @($lyricsFiles | Sort-Object FullName)) {
+            $relative = $file.FullName.Substring($rootPath.TrimEnd('\').Length + 1).Replace('\', '/')
+            $hashes[$relative] = (Get-FileHash -LiteralPath $file.FullName -Algorithm SHA256).Hash.ToLowerInvariant()
         }
     }
     return $hashes
@@ -662,6 +681,11 @@ try {
     Assert-ExitCode $LASTEXITCODE @(0) 'song data idempotency check'
     & $node 'scripts/validate_song_data.mjs'
     Assert-ExitCode $LASTEXITCODE @(0) 'song data validation'
+    # Lyrics are part of the same release snapshot as the song and audio data.
+    # Do not invoke the expensive whole-library ASR pass in unattended runs.
+    & $node 'scripts/sync_song_lyrics.mjs'
+    Assert-ExitCode $LASTEXITCODE @(0) 'incremental lyrics synchronization and validation'
+
     $nodeTestFiles = @(Get-ChildItem -LiteralPath (Join-Path $rootPath 'scripts\tests') -Filter '*.test.mjs' -File | Sort-Object Name | ForEach-Object { $_.FullName })
     & $node '--test' '--test-isolation=none' @nodeTestFiles
     Assert-ExitCode $LASTEXITCODE @(0) 'web and song pipeline tests'
