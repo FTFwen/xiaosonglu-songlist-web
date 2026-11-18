@@ -16,7 +16,7 @@
 
 `match.status=matched` 只表示作品来源的题名/艺人启发式对应或有记录的定点复核，不能证明现场音频时间轴正确。`candidate_review_required` 表示翻唱源、同名或作品身份仍需确认；`version_review_required` 表示短版、demo、翻填、语种或版本疑问。语种冲突也可能来自旧台账误标，不能只按标签改成另一种歌词。
 
-`alignment.offsetSeconds = 本地音频首句秒数 - 来源首句秒数`。校准仅使用统一平移，不自动处理现场漏句、变速、重唱、间奏或不同编曲。
+`alignment.offsetSeconds = 本地音频首句秒数 - 来源首句秒数`，作为固定平移的基准。通过首尾锚点与独立中段验算的机器草稿还可包含 `alignment.timeline`，其中 `音频时间 = 来源时间 × scale + interceptSeconds`。播放器在服务器明确返回没有适用共享偏移时才使用这个时间轴。漏句、重唱、截断或版本差异需要另行核验。
 
 首句候选要求文本相似度至少 0.72、识别词平均概率至少 0.35。中间及结尾两个抽查需采用不同歌词行，来源时间相隔至少 15 秒；两个残差绝对值均不超过 1.25 秒才标记 `asr_consistent_draft`。大多数唱词未被 base 模型可靠识别，保留 `anchor_not_found`，不能降低阈值后伪装成同步完成。`spotcheck_review_required` 仅有首句候选；`timing_drift_review_required` 表示抽查已提示统一偏移不能对齐。
 
@@ -55,7 +55,7 @@ node --test scripts/tests/lyrics_matching.test.mjs
 - `GET /api/lyrics/offset?key=song-225`：读取当前歌曲的共享偏移，二创使用 `derivative-<正数ID>`。没有记录或旧记录的音频/来源版本已失效时，返回空记录并沿用本地数据中的原始偏移。
 - `PUT /api/lyrics/offset`：提交 `{key,rowKey,audioSha256,sourceId,offsetSeconds}`，偏移必须是有限数字且在 −600 到 +600 秒内。服务端重新读取歌曲台账核对身份和版本，不接受把其他歌曲或旧版本偏移写入当前歌曲。
 - 记录存于已有 R2 存储的 `lyrics-offset/v1/` 命名空间，按稳定 `rowKey` 的 SHA-256 定位单个对象，每首仅保存最新成功上传的记录；服务端生成更新时间，条件写入处理并发覆盖。
-- 总偏移沿用 `音频时间 − 歌词来源时间` 的定义。共享偏移替代原始机器偏移，不再与其重复相加；±0.5 秒是在当前基准上做本地微调，点击上传后才共享。重新打开或切回歌曲时读取最新共享值。
+- 总偏移沿用 `音频时间 − 歌词来源时间` 的定义。共享偏移作为固定偏移优先应用。机器时间轴变化时，界面显示当前播放位置的等效固定偏移，±0.5 秒在当前基准上微调，上传时保存点击当下的等效固定偏移。重新打开或切回歌曲时读取最新共享值。
 - 访客上传表示社区校准贡献，不改变 `humanVerified` 或 ASR 证据状态。网络读取失败不阻止歌词显示，上传失败不清除本地调整，也不报告成功。
 
 接口返回 JSON 且设置 `Cache-Control: no-store`。正式域名 `/api/` 经 ECS 透明转发至 Pages Functions，和 Pages 域名共用同一份 R2 数据。相关回归检查为 `scripts/tests/lyrics_offset_api.test.mjs` 与 `scripts/tests/lyrics_pip.test.mjs`。

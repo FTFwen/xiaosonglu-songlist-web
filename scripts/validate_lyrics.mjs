@@ -39,6 +39,14 @@ export function validateTrack(record, { expected, source, audioBytes } = {}) {
   if (!ALIGN_STATUSES.has(a.status)) add('alignment_status','Unknown alignment status: '+a.status);
   if (a.humanVerified !== false) add('verification_claim','Automatic pipeline records must explicitly remain humanVerified=false');
   if (a.offsetSeconds !== null && !finite(a.offsetSeconds)) add('offset_schema','offsetSeconds must be null or finite');
+  if (Object.hasOwn(a, 'timeline')) {
+    const timeline = a.timeline;
+    if (!timeline || typeof timeline !== 'object' || Array.isArray(timeline) ||
+        !finite(timeline.scale) || timeline.scale < 0.97 || timeline.scale > 1.03 ||
+        !finite(timeline.interceptSeconds) || Math.abs(timeline.interceptSeconds) > 600) {
+      add('timeline_schema','timeline requires a finite scale in [0.97, 1.03] and interceptSeconds in [-600, 600]');
+    }
+  }
   const needsSource = ['matched','candidate_review_required','instrumental','no_timed_lyrics'].includes(m.status) || m.sourceId != null;
   if (needsSource) {
     if (!Number.isInteger(m.sourceId) || m.sourcePath !== `sources/${m.sourceId}.json` || m.selected?.id !== m.sourceId) add('source_identity','Selected id/path/sourceId disagree');

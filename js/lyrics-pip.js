@@ -22,6 +22,7 @@
     const cssURL = new URL('css/lyrics-pip.css?v=3', base).href;
     const sharedURL = new URL('/api/lyrics/offset', base);
     let canonical = null, sharedBase = null, sharedState = '', uploading = false, sharedLoading = false;
+    let timeline = null, sharedReadEmpty = false;
     let adjustmentRevision = 0, sharedRequest = 0;
     let pip = null, opening = false, generation = 0, controller = null;
     let timer = null, raf = null, ui = null, identity = null, track = null;
@@ -154,7 +155,15 @@
       if (nodes[active]) nodes[active].classList.remove('is-active');
       active = -1; updateStatus(); sync();
     }
+    function affineTimeline() {
+      return sharedReadEmpty && sharedBase === null ? timeline : null;
+    }
     function offsetSeconds() {
+      const affine = affineTimeline();
+      if (affine) {
+        // Flat offset giving the same lyric time at this playback position.
+        return ((affine.scale - 1) * audio.currentTime + affine.interceptSeconds + adjustment) / affine.scale;
+      }
       return (sharedBase !== null ? sharedBase :
         alignment && Number.isFinite(alignment.offsetSeconds) ? alignment.offsetSeconds : 0) + adjustment;
     }
@@ -185,13 +194,16 @@
       try {
         const record = await sharedJSON('GET', controller.signal);
         if (!current(token) || request !== sharedRequest) return;
-        if (revision !== adjustmentRevision || adjustmentRevision > 0) {
+        if (!timeline && (revision !== adjustmentRevision || adjustmentRevision > 0)) {
           sharedState = '保留当前本地调整 · 重新打开时读取共享偏移';
-        } else if (record) {
-          sharedBase = record.offsetSeconds;
-          sharedState = '已应用共享偏移 · ' + new Date(record.updatedAt).toLocaleString('zh-CN');
-          recenter();
-        } else sharedState = '暂无适用共享偏移 · 调好后可上传';
+        } else {
+          // Affine tracks use the resolved base and keep local tweaks as a delta.
+          sharedReadEmpty = record === null;
+          sharedBase = record ? record.offsetSeconds : null;
+          sharedState = record ? '已应用共享偏移 · ' + new Date(record.updatedAt).toLocaleString('zh-CN')
+            : timeline ? '暂无适用共享偏移 · 已应用时间轴校正' : '暂无适用共享偏移 · 调好后可上传';
+          if (record || timeline) recenter();
+        }
       } catch (error) {
         if (!current(token) || request !== sharedRequest || error.name === 'AbortError') return;
         sharedState = '共享偏移读取失败 · 仍可本地调整';
@@ -228,11 +240,17 @@
       ui.state.hidden = loadState === 'ready';
       ui.timing.hidden = loadState !== 'ready';
       ui.minus.hidden = ui.plus.hidden = ui.offset.hidden = loadState !== 'ready';
-      ui.offset.textContent = '偏移 ' + offsetSeconds().toFixed(1) + ' 秒';
-      ui.upload.disabled = loadState !== 'ready' || uploading || !canonical || Math.abs(offsetSeconds()) > 600;
+      updateTiming();
+      ui.upload.title = affineTimeline() ? '上传当前播放位置的等效固定偏移' : '上传偏移';
       ui.upload.textContent = uploading ? '上传中…' : '上传偏移';
       ui.sharedStatus.textContent = sharedState;
       ui.sharedRetry.hidden = loadState !== 'ready' || sharedLoading || uploading || !sharedState.includes('读取失败');
+    }
+    function updateTiming() {
+      const total = offsetSeconds();
+      const label = '偏移 ' + total.toFixed(1) + ' 秒';
+      if (ui.offset.textContent !== label) ui.offset.textContent = label;
+      ui.upload.disabled = loadState !== 'ready' || uploading || !canonical || !Number.isFinite(total) || Math.abs(total) > 600;
     }
     function message(text) { ui.list.replaceChildren(el('p', 'lp-empty', text)); }
     async function json(url, signal) {
@@ -266,6 +284,7 @@
       controller = new AbortController();
       const signal = controller.signal;
       lines = []; nodes = []; active = -1; adjustment = 0; alignment = null;
+      timeline = null; sharedReadEmpty = false;
       canonical = null; sharedBase = null; sharedState = ''; uploading = false; sharedLoading = false;
       adjustmentRevision = 0; ++sharedRequest;
       loadState = selected ? '正在核验歌词与音频版本…' : '未选歌';
@@ -296,6 +315,12 @@
           .map(line => ({ t: line.t, text: line.text.trim() }))
           .filter(line => line.text && !credit.test(line.text)).sort((a, b) => a.t - b.t);
         alignment = record.alignment || {};
+        const proposed = alignment.timeline;
+        if (proposed && typeof proposed === 'object' && !Array.isArray(proposed) &&
+          Number.isFinite(proposed.scale) && proposed.scale >= 0.97 && proposed.scale <= 1.03 &&
+          Number.isFinite(proposed.interceptSeconds) && Math.abs(proposed.interceptSeconds) <= 600) {
+          timeline = proposed;
+        }
         if (!lines.length) { loadState = '暂无可展示歌词'; message('这首歌还没有可展示的歌词'); }
         else {
           loadState = 'ready'; ui.list.replaceChildren(); ui.viewport.scrollTop = 0;
@@ -329,9 +354,13 @@
       ui.volumeValue.textContent = audio.muted ? '静音' : volume + '%';
       for (const name of ['previous', 'toggle', 'next', 'favorite']) ui[name].disabled = !track || typeof options[name] !== 'function';
       if (loadState !== 'ready') return;
-      const time = audio.currentTime - offsetSeconds();
+      const affine = affineTimeline();
+      if (affine) updateTiming();
+      const scale = affine?.scale ?? 1;
+      const delay = affine ? affine.interceptSeconds + adjustment : offsetSeconds();
+      const time = audio.currentTime;
       let lo = 0, hi = lines.length;
-      while (lo < hi) { const mid = (lo + hi) >>> 1; if (lines[mid].t <= time) lo = mid + 1; else hi = mid; }
+      while (lo < hi) { const mid = (lo + hi) >>> 1; if (lines[mid].t * scale + delay <= time) lo = mid + 1; else hi = mid; }
       const index = lo - 1;
       if (index === active) return;
       if (nodes[active]) nodes[active].classList.remove('is-active');

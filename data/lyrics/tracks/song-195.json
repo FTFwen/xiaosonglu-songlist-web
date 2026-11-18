@@ -212,6 +212,10 @@
       }
     ],
     "asrLanguage": "ja",
-    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness."
+    "caveat": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "timeline": {
+      "scale": 1,
+      "interceptSeconds": 0.1615
+    }
   }
 }

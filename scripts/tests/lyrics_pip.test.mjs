@@ -633,6 +633,82 @@ test('volume uses main-player callback', async t => {
   slider.value = '32'; slider.emit('input'); assert.equal(value, 0.32); assert.equal(h.audio.volume, 0.32);
 });
 
+function affineFixture() {
+  const data = fixture();
+  data.record.alignment.offsetSeconds = 0.25;
+  data.record.alignment.timeline = { scale: 1.025, interceptSeconds: 2 };
+  return data;
+}
+
+test('affine timing waits for an explicit shared null and keeps manual audio-time adjustments', async t => {
+  const pending = deferred();
+  const h = harness(t, { data: affineFixture(), fetch: url => url.pathname === '/api/lyrics/offset' ? pending.promise : undefined });
+  const pip = await h.open();
+  h.audio.currentTime = 12.3; h.audio.emit('timeupdate');
+  assert.deepEqual(activeTexts(pip), ['middle line']);
+  control(pip, '+0.5 秒').click();
+  pending.resolve(sharedResponse(null)); await settle();
+  assert.match(text(pip, 'lp-shared-status'), /已应用时间轴校正/);
+  assert.deepEqual(activeTexts(pip), ['first line']);
+  h.audio.currentTime = 12.75; h.audio.emit('timeupdate');
+  assert.deepEqual(activeTexts(pip), ['middle line']);
+  h.audio.currentTime = 22.99; h.audio.emit('seeking');
+  assert.deepEqual(activeTexts(pip), ['middle line']);
+  h.audio.currentTime = 23; h.audio.emit('seeked');
+  assert.deepEqual(activeTexts(pip), ['last line']);
+  assert.equal(text(pip, 'lp-offset'), '偏移 3.0 秒');
+  assert.match(control(pip, '上传偏移').title, /当前播放位置/);
+});
+
+test('a shared record overrides an affine timeline even with an in-flight local edit', async t => {
+  const pending = deferred();
+  const h = harness(t, { data: affineFixture(), fetch: url => url.pathname === '/api/lyrics/offset' ? pending.promise : undefined });
+  const pip = await h.open(); control(pip, '+0.5 秒').click();
+  pending.resolve(sharedResponse(sharedRecord(0))); await settle();
+  h.audio.currentTime = 20.5; h.audio.emit('seeked');
+  assert.deepEqual(activeTexts(pip), ['last line']);
+  assert.equal(text(pip, 'lp-offset'), '偏移 0.5 秒');
+  assert.match(text(pip, 'lp-shared-status'), /已应用共享偏移/);
+});
+
+for (const [name, response] of [
+  ['HTTP failure', { ok: false, status: 503 }],
+  ['missing record', sharedResponse(undefined)],
+  ['wrong shared version', sharedResponse({ ...sharedRecord(), sourceId: 99 })],
+]) test(`${name} keeps the classic machine offset for an affine track`, async t => {
+  const h = harness(t, { data: affineFixture(), fetch: url => url.pathname === '/api/lyrics/offset' ? response : undefined });
+  const pip = await h.open();
+  h.audio.currentTime = 10.3; h.audio.emit('seeked');
+  assert.deepEqual(activeTexts(pip), ['middle line']);
+  assert.match(text(pip, 'lp-shared-status'), /读取失败/);
+});
+
+test('an invalid affine timeline stays on the classic offset even with a shared null', async t => {
+  const data = affineFixture(); data.record.alignment.timeline.scale = 1.031;
+  const h = harness(t, { data }), pip = await h.open();
+  h.audio.currentTime = 10.3; h.audio.emit('seeked');
+  assert.deepEqual(activeTexts(pip), ['middle line']);
+});
+
+test('affine upload samples the current equivalent flat offset and preserves later manual edits', async t => {
+  const pending = deferred(); let submitted;
+  const h = harness(t, { data: affineFixture(), fetch: (url, options) => {
+    if (url.pathname !== '/api/lyrics/offset') return;
+    if (options.method === 'GET') return sharedResponse(null);
+    submitted = JSON.parse(options.body); return pending.promise;
+  } });
+  const pip = await h.open();
+  h.audio.currentTime = 23; h.audio.emit('timeupdate');
+  control(pip, '+0.5 秒').click(); control(pip, '上传偏移').click();
+  assert.deepEqual(submitted, { key: 'song-7', rowKey: 'fixture-row', audioSha256: audioHash, sourceId: 42, offsetSeconds: 3 });
+  h.audio.currentTime = 100; h.audio.emit('timeupdate');
+  control(pip, '+0.5 秒').click();
+  pending.resolve(sharedResponse(sharedRecord(3))); await settle();
+  assert.equal(text(pip, 'lp-offset'), '偏移 3.5 秒');
+  h.audio.currentTime = 23.5; h.audio.emit('seeked');
+  assert.deepEqual(activeTexts(pip), ['last line']);
+});
+
 test('shared offset replaces machine offset and controls automatic highlight', async t => {
   const data = fixture(); data.record.alignment.offsetSeconds = 3;
   const h = harness(t, { data, fetch: url => url.pathname === '/api/lyrics/offset' ? sharedResponse(sharedRecord(8)) : undefined });

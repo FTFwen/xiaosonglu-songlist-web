@@ -19,6 +19,20 @@ test('pending and unavailable work are valid; readiness is not required',()=>{
   const r=fixture();r.match={status:'not_found'};r.audio={url:'',sha256:null};r.alignment.status='not_started';
   assert.deepEqual(validateTrack(r),[]);
 });
+test('optional timeline accepts finite bounded coefficients and retains identity checks',()=>{
+  for (const timeline of [{scale:0.97,interceptSeconds:-600},{scale:1.03,interceptSeconds:600}]) {
+    const r=fixture();r.alignment.timeline=timeline;
+    assert.deepEqual(codes(r),[]);
+    assert.ok(codes(r,{audioBytes:Buffer.from('replacement')}).includes('audio_sha256'));
+    assert.ok(codes(r,{source:{...source,id:43}}).includes('source_identity'));
+  }
+  for (const timeline of [null,[],{}, {scale:0.969,interceptSeconds:0}, {scale:1.031,interceptSeconds:0},
+    {scale:'1',interceptSeconds:0}, {scale:NaN,interceptSeconds:0}, {scale:1,interceptSeconds:Infinity},
+    {scale:1,interceptSeconds:600.001}, {scale:1,interceptSeconds:-600.001}, {scale:1,interceptSeconds:'0'}]) {
+    const r=fixture();r.alignment.timeline=timeline;
+    assert.deepEqual(codes(r),['timeline_schema']);
+  }
+});
 test('documented alias review preserves raw ranking without allowing unsupported matches',()=>{
   const r=fixture();r.match.selected.titleScore=.7;
   assert.ok(codes(r).includes('matched_evidence'));
