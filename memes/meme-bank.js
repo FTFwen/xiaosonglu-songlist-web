@@ -9,7 +9,9 @@
   const copying = new Set();
   let featured, submitting = false;
   const validCopies = value => Number.isSafeInteger(value) && value >= 0;
-  const label = id => `#${String(id).padStart(3, '0')}`;
+  // The original catalog occupies numbers 1–85. Submissions continue at 86.
+  const entryNumber = id => id < 1_000_000 ? id : id - 1_000_000 + 86;
+  const label = id => `#${String(entryNumber(id)).padStart(3, '0')}`;
   const normalize = value => value.normalize('NFKC').toLowerCase();
   const tagName = value => value.normalize('NFKC').trim().replace(/^#+\s*/, '').replace(/\s+/g, ' ');
   const validTag = tag => tag.length > 0 && tag.length <= 20 && !/[、,，\n]/.test(tag);
@@ -130,8 +132,11 @@
     const terms = normalize(get('query').value).trim().split(/\s+/).filter(Boolean);
     const byLatest = (a, b) => b.date.localeCompare(a.date) || b.id - a.id;
     const results = entries.filter(entry => {
-      const searchable = normalize([entry.text, ...entry.tags.flatMap(tag => [tag, `#${tag}`]), String(entry.id), label(entry.id)].join(' '));
-      return terms.every(term => searchable.includes(term)) && [...view.selected].every(tag => entry.tags.includes(tag));
+      const searchable = normalize([entry.text, ...entry.tags.flatMap(tag => [tag, `#${tag}`]), String(entryNumber(entry.id)), label(entry.id)].join(' '));
+      const matches = terms.every(term => /^#\d+$/.test(term)
+        ? Number(term.slice(1)) === entryNumber(entry.id)
+        : searchable.includes(term));
+      return matches && [...view.selected].every(tag => entry.tags.includes(tag));
     });
     results.sort(get('order').value === 'copies' ? (a, b) => b.copies - a.copies || byLatest(a, b) : byLatest);
     get('results').replaceChildren(...results.map(entry => card(entry, view)));
