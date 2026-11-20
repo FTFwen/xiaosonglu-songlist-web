@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f4f6e8">
+<title>小松绿烂梗库</title>
+<link rel="icon" href="../assets/xiaosonglu-logo.png">
+<link rel="stylesheet" href="meme-bank.css?v=4">
+<style media="(max-width: 768px)">
+  .site-tabs, .layout { display: none; }
+</style>
+<script>
+  const narrowScreen = window.matchMedia('(max-width: 768px)');
+  function returnToSonglist() {
+    if (narrowScreen.matches) window.location.replace('../');
+  }
+  returnToSonglist();
+  narrowScreen.addEventListener('change', returnToSonglist);
+</script>
+</head>
+<body>
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+  <symbol id="message" viewBox="0 0 24 24"><path d="M21 11.5a7.5 7.5 0 0 1-7.5 7.5H4l1.7-3.4A7.5 7.5 0 1 1 21 11.5Z"/><path d="M9 11h7m-7 3h4"/></symbol>
+  <symbol id="shuffle" viewBox="0 0 24 24"><path d="m18 14 4 4-4 4m0-20 4 4-4 4M2 18h2.5a5 5 0 0 0 4-2l6-8a5 5 0 0 1 4-2H22M2 6h2.5a5 5 0 0 1 4 2l1 1.3m4.8 6.4.2.3a5 5 0 0 0 4 2H22"/></symbol>
+  <symbol id="copy-icon" viewBox="0 0 24 24"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 4H6a2 2 0 0 0-2 2v10"/></symbol>
+</svg>
+<nav class="site-tabs" aria-label="站点导航">
+  <a class="site-tab" href="https://workshop.viridis.love/">首页</a>
+  <a class="site-tab" href="../index.html">歌单</a>
+  <a class="site-tab" href="../buttons/index.html">按钮墙</a>
+  <a class="site-tab" href="./index.html" aria-current="page"><svg fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><use href="#message"/></svg>烂梗库</a>
+  <a class="site-tab" href="../24xsl/index.html"><img src="../assets/24xsl-title.webp" alt="24点"></a>
+  <a class="site-tab" href="https://viridis.website" target="_blank" rel="noopener">标本馆</a>
+</nav>
+<main class="layout">
+  <header class="masthead">
+    <div class="brand"><img src="../assets/xiaosonglu-logo.png" alt="" width="52" height="52"><h1>小松绿烂梗库</h1></div>
+    <button class="action submit-trigger" id="open-submission" type="button" aria-haspopup="dialog" disabled>＋ 投稿</button>
+  </header>
+  <section class="feature" aria-labelledby="random-title">
+    <div class="section-head"><h2 id="random-title">随机一条</h2><button class="action" id="shuffle-button" type="button" disabled><svg fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#shuffle"/></svg>换一换</button></div>
+    <div id="random-card"></div>
+    <p class="feedback" id="feedback" role="status"></p>
+  </section>
+  <section class="list-section" aria-labelledby="list-title">
+    <div class="section-head"><h2 id="list-title">全部条目</h2><p class="count" id="result-count" role="status"></p></div>
+    <div class="filters">
+      <div class="controls">
+        <label><span class="sr-only">搜索梗</span><input type="search" id="query" disabled placeholder="搜索正文、标签或编号" autocomplete="off"></label>
+        <label><span class="sr-only">排序</span><select id="order" disabled><option value="latest">最新收录</option><option value="copies">复制次数</option></select></label>
+      </div>
+      <div class="tags" id="tags" role="group" aria-label="标签筛选"></div>
+    </div>
+    <div class="load-state" id="load-state">
+      <p id="load-message" role="status">正在加载梗库…</p>
+      <button class="action" id="retry-load" type="button" hidden>重新加载</button>
+    </div>
+    <div class="results" id="results"></div>
+    <p class="empty" id="empty" hidden>没有找到符合条件的条目。</p>
+  </section>
+</main>
+<dialog id="submission-dialog" aria-labelledby="submission-title">
+  <form id="submission-form">
+    <h2 id="submission-title">投稿烂梗</h2>
+    <label for="submission-text">正文</label>
+    <textarea id="submission-text" required maxlength="500" rows="4" placeholder="输入想加入烂梗库的句子" autofocus></textarea>
+    <label for="submission-tags">标签</label>
+    <input id="submission-tags" list="submission-tag-options" required maxlength="120" autocomplete="off" aria-describedby="submission-help" placeholder="例如：吐槽、疑惑">
+    <datalist id="submission-tag-options"></datalist>
+    <p id="submission-help">多个标签用顿号或逗号分隔。投稿成功后会加入公开梗库。</p>
+    <p id="submission-error" role="alert" hidden></p>
+    <div class="dialog-actions">
+      <button class="action" id="cancel-submission" type="button">取消</button>
+      <button class="action primary" id="submit-entry" type="submit">加入梗库</button>
+    </div>
+  </form>
+</dialog>
+<template id="card-template">
+  <article class="card">
+    <div class="meta"><span data-field="id"></span><time></time><span data-field="tags"></span></div>
+    <button class="copy" type="button" title="点击正文复制"><span class="quote"></span><span class="sr-only">（点击复制）</span></button>
+    <div class="card-foot"><span><span data-field="count"></span><span class="copy-status" aria-hidden="true"></span></span><button class="copy-label" type="button"><svg fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><use href="#copy-icon"/></svg>复制正文</button></div>
+  </article>
+</template>
+<noscript><p class="layout">请启用 JavaScript 查看梗库。</p></noscript>
+
+<script src="meme-bank.js?v=4" defer></script>
+</body>
+</html>
