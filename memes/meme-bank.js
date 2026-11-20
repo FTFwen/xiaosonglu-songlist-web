@@ -3,7 +3,9 @@
   const endpoint = '/api/memes';
   let entries = [];
   const $ = id => document.getElementById(id);
-  const selected = new Set();
+  const mainView = { doc: document, selected: new Set() };
+  let pipView, openingPip = false;
+  const viewElement = (view, id) => view.doc.getElementById(id);
   const copying = new Set();
   let featured, submitting = false;
   const validCopies = value => Number.isSafeInteger(value) && value >= 0;
@@ -11,6 +13,15 @@
   const normalize = value => value.normalize('NFKC').toLowerCase();
   const tagName = value => value.normalize('NFKC').trim().replace(/^#+\s*/, '').replace(/\s+/g, ' ');
   const validTag = tag => tag.length > 0 && tag.length <= 20 && !/[、,，\n]/.test(tag);
+  const retiredTag = '直播名场面';
+  const tagIcons = new Map(Object.entries({
+    反串: '🎭', 口头禅: '💬', 吐槽: '🙄', 夸夸: '👏', 开心: '😄', 心疼: '🥺',
+    惊讶: '😲', 懂你: '🤝', 戏精: '🎬', 打Call: '📣', 摸鱼: '🐟', 无奈: '😮‍💨',
+    爆笑: '🤣', 玩梗: '🤹', 疑惑: '🤔', 着急: '😰', 贴贴: '🫂',
+  }).map(([tag, icon]) => [normalize(tag), icon]));
+  const showTag = tag => tagName(tag) !== retiredTag;
+  const tagIcon = tag => tagIcons.get(normalize(tagName(tag))) ?? '🏷️';
+  const visibleEntry = entry => ({ ...entry, tags: entry.tags.filter(showTag) });
 
   function validEntry(entry) {
     return entry && Number.isSafeInteger(entry.id) && entry.id > 0 && validCopies(entry.copies) &&
@@ -34,8 +45,8 @@
     return data;
   }
 
-  async function copyText(text) {
-    try { await navigator.clipboard.writeText(text); return true; } catch {}
+  async function copyText(text, document) {
+    try { await document.defaultView.navigator.clipboard.writeText(text); return true; } catch {}
     const previous = document.activeElement;
     const field = document.createElement('textarea');
     field.value = text;
@@ -46,19 +57,20 @@
     finally { field.remove(); previous?.focus(); }
   }
 
-  async function copyEntry(entry, button, selector) {
+  async function copyEntry(entry, button, selector, view) {
     if (copying.has(entry.id)) return;
     copying.add(entry.id);
-    const region = $('results').contains(button) ? $('results') : $('random-card');
+    const results = viewElement(view, 'results');
+    const region = results.contains(button) ? results : $('random-card');
     const cardSelector = `[data-entry="${entry.id}"]`;
     function report(message) {
-      $('feedback').textContent = message;
+      viewElement(view, 'feedback').textContent = message;
       const status = region.querySelector(`${cardSelector} .copy-status`);
       if (status) status.textContent = message;
     }
     try {
       report('');
-      if (!await copyText(entry.text)) {
+      if (!await copyText(entry.text, view.doc)) {
         report('复制失败，请重试。');
         return;
       }
@@ -71,32 +83,35 @@
         report('已复制正文，但无法确认复制计数是否更新。');
         return;
       }
-      for (const node of document.querySelectorAll(`[data-copies="${entry.id}"]`)) {
-        node.textContent = `${entry.copies} 次复制`;
+      for (const target of [mainView, pipView].filter(Boolean)) {
+        for (const node of target.doc.querySelectorAll(`[data-copies="${entry.id}"]`)) {
+          node.textContent = `${entry.copies} 次复制`;
+        }
+        if (viewElement(target, 'order').value !== 'copies') continue;
+        const restoreFocus = target === view && region === results && view.doc.activeElement === button;
+        renderResults(target);
+        if (restoreFocus) results.querySelector(`${cardSelector} ${selector}`)?.focus();
       }
-      if ($('order').value === 'copies') {
-        const restoreFocus = region === $('results') && document.activeElement === button;
-        renderResults();
-        if (restoreFocus) region.querySelector(`${cardSelector} ${selector}`)?.focus();
-      }
+
       report('已复制正文');
     } finally { copying.delete(entry.id); }
   }
 
-  function card(entry) {
-    const node = $('card-template').content.firstElementChild.cloneNode(true);
+  function card(entry, view = mainView) {
+    const node = view.doc.importNode($('card-template').content.firstElementChild, true);
+    if (view !== mainView) node.querySelector('.copy-label svg')?.remove();
     node.dataset.entry = entry.id;
     node.querySelector('[data-field="id"]').textContent = label(entry.id);
     const time = node.querySelector('time');
     time.dateTime = time.textContent = entry.date;
-    node.querySelector('[data-field="tags"]').textContent = entry.tags.map(tag => `#${tag}`).join('  ');
+    node.querySelector('[data-field="tags"]').textContent = entry.tags.map(tag => `${tagIcon(tag)} #${tag}`).join('  ');
     node.querySelector('.quote').textContent = entry.text;
     const counter = node.querySelector('[data-field="count"]');
     counter.dataset.copies = entry.id;
     counter.textContent = `${entry.copies} 次复制`;
     for (const selector of ['.copy', '.copy-label']) {
       const button = node.querySelector(selector);
-      button.addEventListener('click', () => copyEntry(entry, button, selector));
+      button.addEventListener('click', () => copyEntry(entry, button, selector, view));
     }
     return node;
   }
@@ -110,54 +125,134 @@
     if (notify) $('feedback').textContent = entries.length === 1 ? '目前只有这一条。' : '已换一条';
   }
 
-  function renderResults() {
-    const terms = normalize($('query').value).trim().split(/\s+/).filter(Boolean);
+  function renderResults(view = mainView) {
+    const get = id => viewElement(view, id);
+    const terms = normalize(get('query').value).trim().split(/\s+/).filter(Boolean);
     const byLatest = (a, b) => b.date.localeCompare(a.date) || b.id - a.id;
     const results = entries.filter(entry => {
       const searchable = normalize([entry.text, ...entry.tags.flatMap(tag => [tag, `#${tag}`]), String(entry.id), label(entry.id)].join(' '));
-      return terms.every(term => searchable.includes(term)) && [...selected].every(tag => entry.tags.includes(tag));
+      return terms.every(term => searchable.includes(term)) && [...view.selected].every(tag => entry.tags.includes(tag));
     });
-    results.sort($('order').value === 'copies' ? (a, b) => b.copies - a.copies || byLatest(a, b) : byLatest);
-    $('results').replaceChildren(...results.map(card));
-    $('result-count').textContent = `${results.length} / ${entries.length} 条`;
-    $('empty').hidden = results.length > 0;
+    results.sort(get('order').value === 'copies' ? (a, b) => b.copies - a.copies || byLatest(a, b) : byLatest);
+    get('results').replaceChildren(...results.map(entry => card(entry, view)));
+    get('result-count').textContent = `${results.length} / ${entries.length} 条`;
+    get('empty').hidden = results.length > 0;
   }
 
-  function renderTags() {
+  function renderTags(view = mainView, focusTag) {
+    const { doc, selected } = view;
     const tags = new Map();
     for (const entry of entries) {
       for (const tag of new Set(entry.tags)) tags.set(tag, (tags.get(tag) || 0) + 1);
     }
-    const controls = new Map();
     const sortedTags = [...tags].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0], 'zh-CN'));
-    for (const [tag, number] of [[null, entries.length], ...sortedTags]) {
-      const button = document.createElement('button');
-      const badge = document.createElement('span');
+    function chip(tag, count, removable = false) {
+      const button = doc.createElement('button');
+      const badge = doc.createElement('span');
+      const active = selected.has(tag);
       button.type = 'button';
       button.className = 'tag';
-      button.textContent = tag ?? '全部标签';
-      badge.textContent = number;
+      button.textContent = `${tagIcon(tag)} ${tag}`;
+      badge.textContent = removable ? '×' : `${count} ${active ? '✓' : '+'}`;
+      badge.setAttribute('aria-hidden', 'true');
+      if (removable) button.setAttribute('aria-label', `移除标签 ${tag}`);
+      else button.setAttribute('aria-pressed', String(active));
       button.append(badge);
-      controls.set(tag, button);
       button.addEventListener('click', () => {
-        if (tag === null) selected.clear();
-        else if (!selected.delete(tag)) selected.add(tag);
-        updatePressed();
-        renderResults();
+        if (!selected.delete(tag)) selected.add(tag);
+        renderTags(view, tag);
+        renderResults(view);
       });
+      return button;
     }
-    function updatePressed() {
-      for (const [name, control] of controls) {
-        control.setAttribute('aria-pressed', String(name === null ? !selected.size : selected.has(name)));
+    const selectedTags = viewElement(view, 'selected-tags');
+    if (selected.size) {
+      const reset = doc.createElement('button');
+      reset.type = 'button';
+      reset.className = 'tag tag-clear';
+      reset.textContent = '清空';
+      reset.addEventListener('click', () => {
+        const first = selected.values().next().value;
+        selected.clear();
+        renderTags(view, first);
+        renderResults(view);
+      });
+      selectedTags.replaceChildren(...[...selected].map(tag => chip(tag, 0, true)), reset);
+    } else {
+      const empty = doc.createElement('span');
+      empty.className = 'tag-placeholder';
+      empty.textContent = '暂未选择标签';
+      selectedTags.replaceChildren(empty);
+    }
+    const buttons = new Map(sortedTags.map(([tag, count]) => [tag, chip(tag, count)]));
+    viewElement(view, 'tags').replaceChildren(...buttons.values());
+    buttons.get(focusTag)?.focus({ preventScroll: true });
+    if (view === mainView) {
+      $('submission-tag-options').replaceChildren(...sortedTags.map(([tag]) => {
+        const option = doc.createElement('option');
+        option.value = tag;
+        option.label = `${tagIcon(tag)} ${tag}`;
+        return option;
+      }));
+    }
+  }
+
+  function bindFilters(view) {
+    viewElement(view, 'query').addEventListener('input', () => renderResults(view));
+    viewElement(view, 'order').addEventListener('change', () => renderResults(view));
+  }
+
+  async function openPip() {
+    const button = $('open-pip');
+    const status = $('pip-message');
+    const api = window.documentPictureInPicture;
+    if (!api?.requestWindow) {
+      status.textContent = '此浏览器不支持画中画，请用桌面版 Chrome 或 Edge。';
+      return;
+    }
+    if (pipView || openingPip) return;
+    openingPip = true;
+    button.disabled = true;
+    status.textContent = '';
+    let child;
+    try {
+      child = await api.requestWindow({ width: 440, height: 570 });
+      const doc = child.document;
+      const view = { doc, selected: new Set(mainView.selected) };
+      function cleanup() {
+        if (pipView !== view) return;
+        pipView = undefined;
+        button.disabled = false;
+        button.setAttribute('aria-pressed', 'false');
       }
+      pipView = view;
+      child.addEventListener('pagehide', cleanup, { once: true });
+      doc.title = '小松绿烂梗库';
+      doc.documentElement.lang = 'zh-CN';
+      doc.documentElement.classList.add('memes-pip');
+      const style = doc.createElement('link');
+      style.rel = 'stylesheet';
+      style.href = document.querySelector('link[href*="meme-bank.css"]').href;
+      doc.head.append(style);
+      const panel = doc.importNode($('pip-template').content, true);
+      panel.querySelector('.pip-filters').append(doc.importNode(document.querySelector('.filters'), true));
+      doc.body.append(panel);
+      viewElement(view, 'query').value = $('query').value;
+      viewElement(view, 'order').value = $('order').value;
+      bindFilters(view);
+      renderTags(view);
+      renderResults(view);
+      button.setAttribute('aria-pressed', 'true');
+      viewElement(view, 'query').focus();
+    } catch {
+      child?.close();
+      pipView = undefined;
+      button.setAttribute('aria-pressed', 'false');
+      status.textContent = '画中画未能打开，请再试一次。';
+    } finally {
+      openingPip = false;
+      button.disabled = Boolean(pipView);
     }
-    updatePressed();
-    $('tags').replaceChildren(...controls.values());
-    $('submission-tag-options').replaceChildren(...sortedTags.map(([tag]) => {
-      const option = document.createElement('option');
-      option.value = tag;
-      return option;
-    }));
   }
 
   const dialog = $('submission-dialog');
@@ -189,6 +284,7 @@
     for (const value of rawTags.split(/[、,，\n]+/)) {
       const tag = tagName(value);
       if (!tag) continue;
+       if (!showTag(tag)) return submissionError('「直播名场面」已停用，请选用其他标签。');
       const key = normalize(tag);
       if (!chosen.has(key)) chosen.set(key, byName.get(key) ?? tag);
     }
@@ -206,12 +302,16 @@
       const { entry } = await request({ action: 'submit', text, tags });
       if (!validEntry(entry)) throw new Error('invalid_response');
       if (entries.some(item => item.id === entry.id)) throw new Error('invalid_response');
-      entries.push(entry);
-      selected.clear();
+      entries.push(visibleEntry(entry));
+      mainView.selected.clear();
       $('query').value = '';
       $('order').value = 'latest';
       renderTags();
       renderResults();
+      if (pipView) {
+        renderTags(pipView);
+        renderResults(pipView);
+      }
       if (!featured) showRandom();
       form.reset();
       dialog.close();
@@ -247,12 +347,12 @@
           new Set(data.entries.map(entry => entry.id)).size !== data.entries.length) {
         throw new Error('invalid_response');
       }
-      entries = data.entries;
+      entries = data.entries.map(visibleEntry);
       renderTags();
       showRandom();
       renderResults();
       $('load-state').hidden = true;
-      $('query').disabled = $('order').disabled = $('open-submission').disabled = false;
+      $('query').disabled = $('order').disabled = $('open-submission').disabled = $('open-pip').disabled = false;
     } catch {
       $('load-message').textContent = '梗库加载失败，请重试。';
       retry.hidden = false;
@@ -262,8 +362,8 @@
     }
   }
 
-  $('query').addEventListener('input', renderResults);
-  $('order').addEventListener('change', renderResults);
+  bindFilters(mainView);
+  $('open-pip').addEventListener('click', openPip);
   $('shuffle-button').addEventListener('click', () => showRandom(true));
   $('retry-load').addEventListener('click', loadEntries);
   if (!window.matchMedia('(max-width: 768px)').matches) loadEntries();

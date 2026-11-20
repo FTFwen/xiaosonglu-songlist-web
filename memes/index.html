@@ -6,7 +6,7 @@
 <meta name="theme-color" content="#f4f6e8">
 <title>小松绿烂梗库</title>
 <link rel="icon" href="../assets/xiaosonglu-logo.png">
-<link rel="stylesheet" href="meme-bank.css?v=5">
+<link rel="stylesheet" href="meme-bank.css?v=6">
 <style media="(max-width: 768px)">
   .site-tabs, .layout { display: none; }
 </style>
@@ -38,7 +38,11 @@
 <main class="layout">
   <header class="masthead">
     <div class="brand"><img src="../assets/xiaosonglu-logo.png" alt="" width="52" height="52"><h1>小松绿烂梗库</h1></div>
-    <button class="action submit-trigger" id="open-submission" type="button" aria-haspopup="dialog" disabled>＋ 投稿</button>
+    <div class="header-actions">
+      <button class="action" id="open-pip" type="button" aria-pressed="false" disabled><svg fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><rect x="11" y="11" width="7" height="5" rx="1"/></svg>画中画</button>
+      <button class="action submit-trigger" id="open-submission" type="button" aria-haspopup="dialog" disabled>＋ 投稿</button>
+      <p class="pip-message" id="pip-message" role="status"></p>
+    </div>
   </header>
   <section class="feature" aria-labelledby="random-title">
     <div class="section-head"><h2 id="random-title">随机一条</h2><button class="action" id="shuffle-button" type="button" disabled><svg fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#shuffle"/></svg>换一换</button></div>
@@ -52,7 +56,14 @@
         <label><span class="sr-only">搜索梗</span><input type="search" id="query" disabled placeholder="搜索正文、标签或编号" autocomplete="off"></label>
         <label><span class="sr-only">排序</span><select id="order" disabled><option value="latest">最新收录</option><option value="copies">复制次数</option></select></label>
       </div>
-      <div class="tags" id="tags" role="group" aria-label="标签筛选"></div>
+      <div class="tag-section">
+        <p class="tag-heading" id="selected-heading">已选标签</p>
+        <div class="tags" id="selected-tags" role="group" aria-labelledby="selected-heading"></div>
+      </div>
+      <div class="tag-section">
+        <p class="tag-heading" id="all-heading">所有标签</p>
+        <div class="tags" id="tags" role="group" aria-labelledby="all-heading"></div>
+      </div>
     </div>
     <div class="load-state" id="load-state">
       <p id="load-message" role="status">正在加载梗库…</p>
@@ -78,6 +89,19 @@
     </div>
   </form>
 </dialog>
+<template id="pip-template">
+  <main class="pip-panel" aria-label="小松绿烂梗库">
+    <div class="pip-filters"></div>
+    <div class="pip-summary">
+      <p class="count" id="result-count" role="status"></p>
+      <p id="feedback" role="status"></p>
+    </div>
+    <div class="pip-scroll">
+      <div class="results" id="results"></div>
+      <p class="empty" id="empty" hidden>没有找到符合条件的条目。</p>
+    </div>
+  </main>
+</template>
 <template id="card-template">
   <article class="card">
     <div class="meta"><span data-field="id"></span><time></time><span data-field="tags"></span></div>
@@ -87,6 +111,6 @@
 </template>
 <noscript><p class="layout">请启用 JavaScript 查看梗库。</p></noscript>
 
-<script src="meme-bank.js?v=4" defer></script>
+<script src="meme-bank.js?v=6" defer></script>
 </body>
 </html>

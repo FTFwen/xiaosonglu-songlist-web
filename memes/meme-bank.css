@@ -92,7 +92,24 @@ h2 { font-size: 17px; line-height: 1.4; }
 .controls label { min-width: 0; }
 input, select { width: 100%; min-height: 36px; padding: 6px 10px; border: 1px solid var(--line); border-radius: 10px; background: rgba(255,255,255,.65); }
 input::placeholder { color: var(--muted); }
-.tags { display: flex; align-items: center; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+.header-actions { position: relative; display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 8px; }
+.pip-message:not(:empty) { position: absolute; right: 0; top: calc(100% + 8px); z-index: 3; width: max-content; max-width: 280px; padding: 7px 10px; border-radius: 10px; background: #fff; color: var(--text); box-shadow: var(--shadow); }
+.tag-section { margin-top: 10px; }
+.tag-heading { font-weight: 700; }
+.tags { display: flex; align-items: center; flex-wrap: wrap; gap: 6px; margin-top: 5px; }
+.tag-placeholder { color: var(--muted); font-size: 12px; }
+#selected-tags .tag:not(.tag-clear) { border-color: var(--primary); background: var(--primary-soft); }
+html.memes-pip { min-height: 0; background: var(--bg); }
+.memes-pip body { overflow: hidden; }
+.pip-panel { display: flex; flex-direction: column; gap: 8px; padding: 10px; height: 100dvh; }
+.pip-filters { max-height: 46%; overflow: auto; flex: 0 0 auto; }
+.pip-panel .filters { margin: 0; padding: 8px; border-radius: 12px; }
+.pip-summary { display: flex; align-items: center; gap: 8px; color: var(--muted); font-size: 12px; }
+.pip-summary .count { white-space: nowrap; }
+.pip-scroll { overflow: auto; flex: 1; min-height: 0; }
+.pip-panel .card { border-radius: 12px; }
+.pip-panel .quote { font-size: 14px; }
+.pip-panel :focus-visible { outline-offset: -2px; }
 .tag { padding: 4px 10px; min-height: 29px; border: 1px solid var(--line); border-radius: 999px; background: rgba(255,255,255,.7); font-size: 12px; }
 .tag span { margin-left: 5px; color: var(--muted); }
 .tag[aria-pressed="true"] { background: var(--primary-soft); border-color: var(--primary); color: var(--primary-dark); font-weight: 700; }
