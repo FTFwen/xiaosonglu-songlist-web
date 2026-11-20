@@ -52,12 +52,17 @@ try {
     if ($LASTEXITCODE -ne 0) { throw 'Could not compare release branch with GitHub.' }
     if ([int]$ahead -eq 0) { Write-Output 'No live meme release changes.'; return }
 
-    & powershell.exe -NoLogo -NoProfile -NonInteractive -ExecutionPolicy Bypass -File (Join-Path $PSScriptRoot 'deploy_web.ps1') -Root $rootPath -Deploy -AllowOAuth -VerifyBaseUrl 'https://viridis.love'
-    if ($LASTEXITCODE -ne 0) { throw 'Website deployment failed.' }
-    $state = Get-Content -LiteralPath 'data/xiaosonglu/_deploy_state.json' -Raw -Encoding UTF8 | ConvertFrom-Json
+    $deployOutput = & powershell.exe -NoLogo -NoProfile -NonInteractive -ExecutionPolicy Bypass -File (Join-Path $PSScriptRoot 'deploy_web.ps1') -Root $rootPath -Deploy -AllowOAuth -VerifyBaseUrl 'https://viridis.love'
+    $deployExit = $LASTEXITCODE
+    $deployOutput | Write-Output
+    if ($deployExit -ne 0) { throw 'Website deployment failed.' }
+    # The deployer emits preliminary check output before its final JSON object.
+    $summaryStart = [Array]::LastIndexOf([string[]]$deployOutput, '{')
+    if ($summaryStart -lt 0) { throw 'The deployment summary is missing.' }
+    $result = ($deployOutput[$summaryStart..($deployOutput.Count - 1)] -join "`n") | ConvertFrom-Json
     $head = & $git rev-parse HEAD
-    if ($LASTEXITCODE -ne 0 -or $state.commitHash -ne $head -or -not $state.onlineVerification.ok) {
-        throw 'The deploy state does not confirm that this release is online.'
+    if ($LASTEXITCODE -ne 0 -or $result.commitHash -ne $head -or -not $result.onlineVerification.ok -or -not $result.ecsMirror.ok) {
+        throw 'The deploy result does not confirm that this release is online.'
     }
     & $git push origin main
     if ($LASTEXITCODE -ne 0) { throw 'Website deployed, but Git push failed.' }
