@@ -45,8 +45,9 @@ h1, h2, p { margin: 0; }
 .site-tab:hover::before { background: rgba(255,255,255,.92); }
 .site-tab[aria-current] { color: #3c4a22; font-weight: 800; }
 .site-tab[aria-current]::before { background: rgba(138,154,78,.42); }
-.site-tab img { height: 52px; width: auto; object-fit: contain; }
-.site-tab svg { width: 18px; height: 18px; flex: none; fill: currentColor; }
+.site-tab img { height: 52px; width: auto; display: block; flex-shrink: 0; object-fit: contain; }
+.site-tab svg.icon { width: 18px; height: 18px; display: block; flex-shrink: 0; fill: currentColor; }
+.site-tab .tab-emoji { font-size: 26px; line-height: 1; display: inline-block; flex-shrink: 0; }
 @media (min-width: 769px) and (max-width: 1440px) {
   .site-tabs { transform: translateX(-56px); opacity: .88; transition: transform .25s var(--ease), opacity .2s; }
   .site-tabs:hover, .site-tabs:focus-within { transform: translateX(0); opacity: 1; }
