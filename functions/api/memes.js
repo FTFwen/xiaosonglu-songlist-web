@@ -120,7 +120,8 @@ export async function onRequest({ request, env }) {
   let origin = '';
   try {
     const sent = request.headers.get('origin');
-    const target = new URL(request.url).origin;
+    const url = new URL(request.url);
+    const target = url.origin;
     // The production reverse proxy rewrites Host and preserves the browser Origin.
     const proxied = sent === 'https://viridis.love' && target === 'https://xsl-songlist.pages.dev';
     if (sent !== null && sent !== target && !proxied) throw new ApiError(403, 'forbidden_origin');
@@ -134,15 +135,19 @@ export async function onRequest({ request, env }) {
     const action = method === 'POST' ? actionOf(await parseBody(request)) : null;
     const bucket = env?.xsl_buttons;
     if (typeof bucket?.get !== 'function' || typeof bucket?.put !== 'function') throw new ApiError(503, 'storage_unavailable');
-    const seed = await readCatalog(request, env.ASSETS);
-    if (!action) {
+    if (!action && url.searchParams.get('view') === 'counts') {
       const { state } = await readState(bucket);
+      return response(200, { ok: true, copies: state.copies }, origin);
+    }
+    const [seed, initial] = await Promise.all([readCatalog(request, env.ASSETS), readState(bucket)]);
+    if (!action) {
+      const { state } = initial;
       const entries = [...seed, ...state.submissions].map(({ id, date, text, tags }) => ({ id, date, text, tags, copies: state.copies[id] ?? 0 }));
       return response(200, { ok: true, entries }, origin);
     }
     for (let attempt = 0; attempt < 10; attempt++) {
       if (attempt) await new Promise(resolve => setTimeout(resolve, Math.min(50, 2 ** attempt) + Math.random() * 10));
-      const { state, etag } = await readState(bucket);
+      const { state, etag } = attempt === 0 ? initial : await readState(bucket);
       const { status, ...result } = mutate(seed, state, action);
       const saved = await bucket.put(key, JSON.stringify(state), {
         onlyIf: etag ? { etagMatches: etag } : { etagDoesNotMatch: '*' },

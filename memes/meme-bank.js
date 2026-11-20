@@ -36,14 +36,19 @@
       entry.tags.every(tag => typeof tag === 'string' && tag.length > 0);
   }
 
-  async function request(payload) {
+  const directEndpoint = 'https://xsl-songlist.pages.dev/api/memes';
+  const production = window.location?.origin === 'https://viridis.love';
+  let writeEndpoint = endpoint;
+  let countsKnown = false;
+
+  async function request(payload, url = payload ? writeEndpoint : endpoint) {
     const options = { cache: 'no-store', signal: AbortSignal.timeout(12000) };
     if (payload) {
       options.method = 'POST';
       options.headers = { 'Content-Type': 'application/json' };
       options.body = JSON.stringify(payload);
     }
-    const response = await fetch(endpoint, options);
+    const response = await fetch(url, options);
     const data = await response.json();
     if (!response.ok || data?.ok !== true) {
       throw new Error(data?.ok === false && typeof data.error === 'string' ? data.error : 'invalid_response');
@@ -87,6 +92,9 @@
         entry.copies = Math.max(entry.copies, copies);
         const current = entries.find(item => item.id === entry.id);
         if (current) current.copies = Math.max(current.copies, copies);
+        if (source === 'live') {
+          try { localStorage.setItem(snapshotKey, JSON.stringify(entries)); } catch {}
+        }
       } catch {
         report('已复制正文，但无法确认复制计数是否更新。');
         return;
@@ -116,7 +124,7 @@
     node.querySelector('.quote').textContent = entry.text;
     const counter = node.querySelector('[data-field="count"]');
     counter.dataset.copies = entry.id;
-    counter.textContent = source === 'seed' && !entry.copies ? '复制次数待同步' : `${entry.copies} 次复制`;
+    counter.textContent = source === 'seed' && !countsKnown && !entry.copies ? '复制次数待同步' : `${entry.copies} 次复制`;
     const liveCount = node.querySelector('[data-field="danmaku"]');
     const count = danmakuCounts[entry.id];
     liveCount.hidden = !validCopies(count);
@@ -384,7 +392,7 @@
     const old = new Map(entries.map(row => [row.id, row]));
     entries = rows.map(row => {
       const item = visibleEntry(row);
-      item.copies = Math.max(item.copies, old.get(item.id)?.copies ?? 0);
+      item.copies = Math.max(item.copies, knownCounts[item.id] ?? 0, old.get(item.id)?.copies ?? 0);
       return item;
     });
     source = kind;
@@ -406,6 +414,45 @@
     return response.json();
   }
 
+  let knownCounts = {};
+  function rememberCounts(copies) {
+    if (!copies || typeof copies !== 'object' || Array.isArray(copies) || !Object.values(copies).every(validCopies)) return;
+    countsKnown = true;
+    knownCounts = copies;
+    for (const row of entries) row.copies = Math.max(row.copies, copies[row.id] ?? 0);
+    for (const view of [mainView, pipView].filter(Boolean)) {
+      if (viewElement(view, 'order').value === 'copies') renderResults(view);
+      const rows = new Map(entries.map(row => [String(row.id), row.copies]));
+      for (const node of view.doc.querySelectorAll('[data-copies]')) {
+        const value = rows.get(String(node.dataset.copies));
+        if (value !== undefined) node.textContent = `${value} 次复制`;
+      }
+    }
+  }
+
+  async function readLive() {
+    async function readFrom(url) {
+      const data = await request(null, url);
+      if (!validList(data.entries)) throw new Error('invalid_response');
+      return {rows: data.entries, url};
+    }
+    if (!production) return readFrom(endpoint);
+    // Start a second read only when the normal route is slow or failed. Never replay writes.
+    let timer, startFallback;
+    const fallback = new Promise((resolve, reject) => {
+      let started = false;
+      startFallback = () => {
+        if (started) return;
+        started = true;
+        readFrom(directEndpoint).then(resolve, reject);
+      };
+      timer = setTimeout(startFallback, 900);
+    });
+    try {
+      return await Promise.any([readFrom(endpoint).catch(error => { startFallback(); throw error; }), fallback]);
+    } finally { clearTimeout(timer); }
+  }
+
   async function loadEntries() {
     if (syncing) return;
     syncing = true;
@@ -418,6 +465,8 @@
       } catch {}
     }
     status();
+    // A compact R2 read lets seed cards show real counts while the catalog loads.
+    request(null, `${endpoint}?view=counts`).then(data => rememberCounts(data.copies)).catch(() => {});
     if (!source) staticJson('/memes/seed.json').then(rows => {
       if (source) return;
       const seed = rows.map(row => ({...row, copies: 0}));
@@ -434,8 +483,8 @@
       }
     }).catch(() => {});
     try {
-      const {entries: rows} = await request();
-      if (!validList(rows)) throw new Error('invalid_response');
+      const {rows, url} = await readLive();
+      writeEndpoint = url;
       display(rows, 'live');
       try { localStorage.setItem(snapshotKey, JSON.stringify(entries)); } catch {}
     } catch { syncFailed = true; }
