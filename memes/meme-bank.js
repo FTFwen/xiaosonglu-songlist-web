@@ -84,7 +84,9 @@
       try {
         const { copies } = await request({ action: 'copy', id: entry.id });
         if (!validCopies(copies)) throw new Error('invalid_response');
-        entry.copies = copies;
+        entry.copies = Math.max(entry.copies, copies);
+        const current = entries.find(item => item.id === entry.id);
+        if (current) current.copies = Math.max(current.copies, copies);
       } catch {
         report('已复制正文，但无法确认复制计数是否更新。');
         return;
@@ -114,7 +116,7 @@
     node.querySelector('.quote').textContent = entry.text;
     const counter = node.querySelector('[data-field="count"]');
     counter.dataset.copies = entry.id;
-    counter.textContent = `${entry.copies} 次复制`;
+    counter.textContent = source === 'seed' && !entry.copies ? '复制次数待同步' : `${entry.copies} 次复制`;
     const liveCount = node.querySelector('[data-field="danmaku"]');
     const count = danmakuCounts[entry.id];
     liveCount.hidden = !validCopies(count);
@@ -149,7 +151,18 @@
       return matches && [...view.selected].every(tag => entry.tags.includes(tag));
     });
     results.sort(get('order').value === 'copies' ? (a, b) => b.copies - a.copies || byLatest(a, b) : byLatest);
-    get('results').replaceChildren(...results.map(entry => card(entry, view)));
+    const list = get('results');
+    const token = view.renderToken = {};
+    list.replaceChildren(...results.slice(0, 20).map(entry => card(entry, view)));
+    function appendBatch(start) {
+      if (start >= results.length) return;
+      view.doc.defaultView.requestAnimationFrame(() => {
+        if (view.renderToken !== token || (view !== mainView && pipView !== view)) return;
+        list.append(...results.slice(start, start + 20).map(entry => card(entry, view)));
+        appendBatch(start + 20);
+      });
+    }
+    appendBatch(20);
     get('result-count').textContent = `${results.length} / ${entries.length} 条`;
     get('empty').hidden = results.length > 0;
   }
@@ -351,36 +364,82 @@
     }
   }
 
-  async function loadEntries() {
-    $('load-message').textContent = '正在加载梗库…';
-    const retry = $('retry-load');
-    retry.disabled = true;
-    $('results').setAttribute('aria-busy', 'true');
-    try {
-      const [data, stats] = await Promise.all([
-        request(),
-        fetch('/memes/danmaku-stats.json', { cache: 'no-store', signal: AbortSignal.timeout(4000) })
-          .then(response => response.ok ? response.json() : null)
-          .catch(() => null),
-      ]);
-      danmakuCounts = stats?.counts ?? {};
-      if (!Array.isArray(data.entries) || !data.entries.every(validEntry) ||
-          new Set(data.entries.map(entry => entry.id)).size !== data.entries.length) {
-        throw new Error('invalid_response');
-      }
-      entries = data.entries.map(visibleEntry);
-      renderTags();
-      showRandom();
-      renderResults();
-      $('load-state').hidden = true;
-      $('query').disabled = $('order').disabled = $('open-submission').disabled = $('open-pip').disabled = false;
-    } catch {
-      $('load-message').textContent = '梗库加载失败，请重试。';
-      retry.hidden = false;
-    } finally {
-      retry.disabled = false;
-      $('results').removeAttribute('aria-busy');
+  const snapshotKey = 'memes:entries:v1';
+  let source = '', syncing = false, syncFailed = false, started = false;
+
+  function validList(rows) {
+    return Array.isArray(rows) && rows.every(validEntry) && new Set(rows.map(row => row.id)).size === rows.length;
+  }
+
+  function status() {
+    $('load-state').hidden = source === 'live';
+    $('load-message').textContent = source
+      ? (syncFailed ? '正在显示已有条目，最新投稿和复制次数暂未同步。' : '条目已可使用，正在同步最新投稿和复制次数…')
+      : (syncFailed ? '暂时无法加载梗库。' : '正在加载梗库…');
+    $('retry-load').hidden = !syncFailed;
+    $('retry-load').disabled = syncing;
+  }
+
+  function display(rows, kind) {
+    const old = new Map(entries.map(row => [row.id, row]));
+    entries = rows.map(row => {
+      const item = visibleEntry(row);
+      item.copies = Math.max(item.copies, old.get(item.id)?.copies ?? 0);
+      return item;
+    });
+    source = kind;
+    featured = entries.find(row => row.id === featured?.id);
+    if (featured) $('random-card').replaceChildren(card(featured));
+    else showRandom();
+    for (const view of [mainView, pipView].filter(Boolean)) {
+      renderTags(view);
+      renderResults(view);
     }
+    $('query').disabled = $('order').disabled = $('open-pip').disabled = false;
+    $('open-submission').disabled = kind !== 'live';
+    status();
+  }
+
+  async function staticJson(path) {
+    const response = await fetch(path, {signal: AbortSignal.timeout(8000)});
+    if (!response.ok) throw new Error('invalid_response');
+    return response.json();
+  }
+
+  async function loadEntries() {
+    if (syncing) return;
+    syncing = true;
+    syncFailed = false;
+    if (!started) {
+      started = true;
+      try {
+        const cached = JSON.parse(localStorage.getItem(snapshotKey));
+        if (validList(cached) && cached.length) display(cached, 'cache');
+      } catch {}
+    }
+    status();
+    if (!source) staticJson('/memes/seed.json').then(rows => {
+      if (source) return;
+      const seed = rows.map(row => ({...row, copies: 0}));
+      if (validList(seed) && seed.length) display(seed, 'seed');
+    }).catch(() => {});
+    staticJson('/memes/danmaku-stats.json').then(stats => {
+      danmakuCounts = stats?.counts ?? {};
+      for (const view of [mainView, pipView].filter(Boolean)) {
+        for (const node of view.doc.querySelectorAll('[data-field="danmaku"]')) {
+          const count = danmakuCounts[node.closest('[data-entry]')?.dataset.entry];
+          node.hidden = !validCopies(count);
+          if (!node.hidden) node.textContent = `直播弹幕 ${count} 次`;
+        }
+      }
+    }).catch(() => {});
+    try {
+      const {entries: rows} = await request();
+      if (!validList(rows)) throw new Error('invalid_response');
+      display(rows, 'live');
+      try { localStorage.setItem(snapshotKey, JSON.stringify(entries)); } catch {}
+    } catch { syncFailed = true; }
+    finally { syncing = false; status(); }
   }
 
   bindFilters(mainView);
