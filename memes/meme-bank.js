@@ -9,9 +9,13 @@
   const copying = new Set();
   let featured, submitting = false;
   const validCopies = value => Number.isSafeInteger(value) && value >= 0;
-  // The original catalog occupies numbers 1–85. Submissions continue at 86.
+  // Preserve existing public numbers while assigning a separate sequence to live archive entries.
   const entryNumber = id => id < 1_000_000 ? id : id - 1_000_000 + 86;
-  const label = id => `#${String(entryNumber(id)).padStart(3, '0')}`;
+  const isLiveEntry = id => id > 85 && id < 1_000_000;
+  const label = id => isLiveEntry(id)
+    ? `#L${String(id - 85).padStart(3, '0')}`
+    : `#${String(entryNumber(id)).padStart(3, '0')}`;
+  let danmakuCounts = {};
   const normalize = value => value.normalize('NFKC').toLowerCase();
   const tagName = value => value.normalize('NFKC').trim().replace(/^#+\s*/, '').replace(/\s+/g, ' ');
   const validTag = tag => tag.length > 0 && tag.length <= 20 && !/[、,，\n]/.test(tag);
@@ -111,6 +115,10 @@
     const counter = node.querySelector('[data-field="count"]');
     counter.dataset.copies = entry.id;
     counter.textContent = `${entry.copies} 次复制`;
+    const liveCount = node.querySelector('[data-field="danmaku"]');
+    const count = danmakuCounts[entry.id];
+    liveCount.hidden = !validCopies(count);
+    if (!liveCount.hidden) liveCount.textContent = `直播弹幕 ${count} 次`;
     for (const selector of ['.copy', '.copy-label']) {
       const button = node.querySelector(selector);
       button.addEventListener('click', () => copyEntry(entry, button, selector, view));
@@ -132,10 +140,12 @@
     const terms = normalize(get('query').value).trim().split(/\s+/).filter(Boolean);
     const byLatest = (a, b) => b.date.localeCompare(a.date) || b.id - a.id;
     const results = entries.filter(entry => {
-      const searchable = normalize([entry.text, ...entry.tags.flatMap(tag => [tag, `#${tag}`]), String(entryNumber(entry.id)), label(entry.id)].join(' '));
-      const matches = terms.every(term => /^#\d+$/.test(term)
-        ? Number(term.slice(1)) === entryNumber(entry.id)
-        : searchable.includes(term));
+      const searchable = normalize([entry.text, ...entry.tags.flatMap(tag => [tag, `#${tag}`]), label(entry.id)].join(' '));
+      const matches = terms.every(term => {
+        if (/^#l\d+$/.test(term)) return isLiveEntry(entry.id) && Number(term.slice(2)) === entry.id - 85;
+        if (/^#\d+$/.test(term)) return !isLiveEntry(entry.id) && Number(term.slice(1)) === entryNumber(entry.id);
+        return searchable.includes(term);
+      });
       return matches && [...view.selected].every(tag => entry.tags.includes(tag));
     });
     results.sort(get('order').value === 'copies' ? (a, b) => b.copies - a.copies || byLatest(a, b) : byLatest);
@@ -347,7 +357,13 @@
     retry.disabled = true;
     $('results').setAttribute('aria-busy', 'true');
     try {
-      const data = await request();
+      const [data, stats] = await Promise.all([
+        request(),
+        fetch('/memes/danmaku-stats.json', { cache: 'no-store', signal: AbortSignal.timeout(4000) })
+          .then(response => response.ok ? response.json() : null)
+          .catch(() => null),
+      ]);
+      danmakuCounts = stats?.counts ?? {};
       if (!Array.isArray(data.entries) || !data.entries.every(validEntry) ||
           new Set(data.entries.map(entry => entry.id)).size !== data.entries.length) {
         throw new Error('invalid_response');

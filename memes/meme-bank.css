@@ -136,7 +136,7 @@ html.memes-pip { min-height: 0; background: var(--bg); }
 .count { padding: 3px 9px; background: rgba(255,255,255,.65); border: 1px solid #fffc; border-radius: 999px; }
 .empty, .load-state { padding: 12px; background: #fffc; border-radius: 12px; }
 .load-state { display: flex; align-items: center; gap: 10px; }
-.copy-status:not(:empty) { margin-inline-start: 8px; }
+[data-field="danmaku"], .copy-status:not(:empty) { margin-inline-start: 8px; }
 .feedback { min-height: 18px; margin: 4px 4px 0; }
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
 @media (min-width: 769px) and (max-width: 1210px) { .layout { padding-left: max(26px, calc((1210px - 100vw) * .05 + 14px)); } }

@@ -609,6 +609,7 @@ foreach ($relative in @(
     'memes/meme-bank.js',
     'memes/meme-bank.css',
     'memes/seed.json',
+    'memes/danmaku-stats.json',
     'js/app.js',
     'js/cross-page-player.js',
     'js/shared.js',
