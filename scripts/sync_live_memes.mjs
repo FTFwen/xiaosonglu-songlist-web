@@ -14,6 +14,8 @@ const FIRST_NEW_SEED_ID = 86;
 const MAX_SEEDS = 512;
 const MAX_ADDITIONS = 6;
 const RECENT_STREAMS = 20;
+// 单场爆梗通道：一场之内刷到这么多次就够格，不看跨场覆盖。
+const BURST_PEAK = 15;
 const RECENT_AGE_MS = 30 * 86400_000;
 const LIVE_ID = /^[a-f\d]{8}-(?:[a-f\d]{4}-){3}[a-f\d]{12}$/i;
 const byText = (left, right) => left < right ? -1 : left > right ? 1 : 0;
@@ -248,10 +250,16 @@ export function countAndSelect({ archives, channel, seed, users, previous, now =
       }
     }
   }
-  // 准入门槛（2026-11-23 放宽，让更多真梗能进来）：
-  //   30 天内累计 ≥15 次、≥2 场里各 ≥3 次且跨度 ≥60 秒、≥2 个不同直播日，
-  //   且单场最高峰不超过总数的 70%（防止一夜爆火后无人再提）。
-  const winners = [...candidates].filter(([, c]) => c.recent >= 15 && c.streams >= 2 && c.dates.size >= 2 && c.peak * 10 <= c.recent * 7)
+  // 准入门槛（2026-11-23 放宽两档）：
+  //   A. 常规梗：30 天内累计 ≥15 次、≥2 场里各 ≥3 次且跨度 ≥60 秒、≥2 个不同直播日，
+  //      且单场最高峰不超过总数的 70%。
+  //   B. 单场爆梗：只在一场火起来也算——单场刷到 ≥15 次，且整场里不是单字复读
+  //      （至少 3 个不同字符，且含汉字或拉丁字母）。B 通道给「一夜爆火」的梗留门。
+  const burst = candidate => candidate.peak >= BURST_PEAK
+    && new Set(memeKey(candidate.text)).size >= 3
+    && /[\p{Script=Han}a-z]/iu.test(candidate.text);
+  const winners = [...candidates].filter(([, c]) =>
+    (c.recent >= 15 && c.streams >= 2 && c.dates.size >= 2 && c.peak * 10 <= c.recent * 7) || burst(c))
     .sort(([a, x], [b, y]) => y.streams - x.streams || y.recent - x.recent || byText(a, b));
   const occupied = new Set([...seed, ...users].map(row => row.id));
   let nextId = Math.max(FIRST_NEW_SEED_ID, ...seed.map(row => row.id + 1));
