@@ -12,8 +12,8 @@ const PUBLIC_URL = 'https://viridis.love/api/memes';
 const USER_ID_START = 1_000_000;
 const FIRST_NEW_SEED_ID = 86;
 const MAX_SEEDS = 512;
-const MAX_ADDITIONS = 4;
-const RECENT_STREAMS = 12;
+const MAX_ADDITIONS = 6;
+const RECENT_STREAMS = 20;
 const RECENT_AGE_MS = 30 * 86400_000;
 const LIVE_ID = /^[a-f\d]{8}-(?:[a-f\d]{4}-){3}[a-f\d]{12}$/i;
 const byText = (left, right) => left < right ? -1 : left > right ? 1 : 0;
@@ -248,7 +248,10 @@ export function countAndSelect({ archives, channel, seed, users, previous, now =
       }
     }
   }
-  const winners = [...candidates].filter(([, c]) => c.recent >= 30 && c.streams >= 3 && c.dates.size >= 3 && c.peak * 2 <= c.recent)
+  // 准入门槛（2026-11-23 放宽，让更多真梗能进来）：
+  //   30 天内累计 ≥15 次、≥2 场里各 ≥3 次且跨度 ≥60 秒、≥2 个不同直播日，
+  //   且单场最高峰不超过总数的 70%（防止一夜爆火后无人再提）。
+  const winners = [...candidates].filter(([, c]) => c.recent >= 15 && c.streams >= 2 && c.dates.size >= 2 && c.peak * 10 <= c.recent * 7)
     .sort(([a, x], [b, y]) => y.streams - x.streams || y.recent - x.recent || byText(a, b));
   const occupied = new Set([...seed, ...users].map(row => row.id));
   let nextId = Math.max(FIRST_NEW_SEED_ID, ...seed.map(row => row.id + 1));
