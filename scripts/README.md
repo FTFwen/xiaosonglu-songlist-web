@@ -10,7 +10,7 @@
 - 可人工维护的元数据：`song_metadata_overrides.json` 与已有 `song_cut_info.json` 选择。
 - 派生产物：`song_catalog.json`、`history_index.json`、`song_details.json`、`song_cut_info.json`、`song_cut_table.csv`、`js/data.js`。
 - 扫描状态：`ingestion_state.json`。它按 liveId 记录终态与分页进度，避免每天反复抓取。
-- `_danmaku_*`、`_candidate_*` 是本地证据缓存，已被 `.gitignore` 排除。`_danmaku_*` 每页原子落盘，意外中断后从 `checkpoint.nextOffset` 继续；完整 artifact 会直接复用，不再请求弹幕接口。
+- `_danmaku_*`、`_candidate_*` 是本地证据缓存，已被 `.gitignore` 排除。`_danmaku_*` 现在一次取回整场快照后原子落盘（旧的分页 checkpoint 仅在历史缓存里出现）；完整 artifact 会直接复用，不再请求弹幕接口。
 - 线上基线：`remote_baseline_manifest.json`。只用 `tools/sync_viridis_baseline.py` 通过 ETag/Last-Modified 条件请求校验，304 不下载正文，规范化 JSON 哈希相同不重写。
 - 不需要视频即可完成弹幕证据收录。若人工复核临时下载视频，必须放在已忽略的 `assets/video/`、`assets/videos/` 或 `data/xiaosonglu/videos/`，不得加入 Git。
 
@@ -25,6 +25,8 @@ node scripts/scan_unrecorded_lives.mjs --write
 ```
 
 扫描时频道列表每轮只请求一次；基线当天仍会纳入候选，再按 liveId 判断是否已经完成，避免漏掉同日多场。写入模式持有本地锁，同一时刻只有一个扫描器；分页状态先写 evidence artifact、再写 ingestion state。扫描规则：只取 `payloadKind === 1` 的 `payload.rawText`；歌词证据为 `【】［］「」『』` 包围、去标点后长度至少 4 的弹幕；相邻歌词弹幕间隔超过 150 秒时开启新候选段。ASCII `[表情]` 不会被误判为歌词。
+
+弹幕来源说明（2026-11-23 起）：danmakus.com 已经取代旧的 `ukamnads.icu` 分页接口，旧地址 `https://ukamnads.icu/api/v3/lives/<liveId>/danmakus` 现在恒定返回 503。现行取数走单次快照 `https://api.ukamnads.icu/api/v3/lives/<liveId>/full?include=extra&includeEnter=false`，响应是 MessagePack 编码的 `[channel, live, extra]`，其中 `extra = [baseTimestamp, actors, emoticons, records]`，每条 record 为 `[deltaMs, type, actorIndex, uploadAccountId, subtype, payload]`，时间戳按 `deltaMs` 累加得到。只有 `subtype === 1` 是文本弹幕（礼物、舰长、录制开始等都不计入），`scripts/lib/msgpack.mjs` 负责解码（零依赖）。因此一次请求就能拿到整场去重后的完整弹幕，`checkpoint` 恒为 `complete: true`，中断后重跑即可。频道列表接口同步改为 `https://api.ukamnads.icu/api/v2/channel?uId=1891335475`（参数名是 `uId`，不要加 `maxLives`，否则 `hasMoreLives` 会变 true 只返回一页）。
 
 此外还有第二条证据通道「唱歌反应窗口」（2026-09-17 直播实际唱歌但观众未刷括号歌词后引入）：在 420 秒滑动窗口内，若出现至少 1 个唱歌动作关键词（唱歌了/开口/跟唱/安可/点歌等）且去重后动作+好评关键词合计至少 3 种（好听/天籁/原唱/声线等），则生成 `kind: "reaction"` 的候选段供人工复核。单纯的好评刷屏没有动作词不会触发。两个通道都可以用参数收紧或关闭：`--minimum-length`（恢复旧严格长度）、`--reaction-min-patterns`、`--reaction-window-seconds`、`--no-reaction`。
 

@@ -7,7 +7,7 @@ import { fetchLiveDanmaku } from './fetch_live_danmaku.mjs';
 import { fetchJson, isoDateInZone, parseArgs, readJson, withFileLock, writeJsonAtomic, writeTextAtomic } from './lib/io.mjs';
 
 const ROOT = fileURLToPath(new URL('../', import.meta.url));
-const CHANNEL_URL = 'https://ukamnads.icu/api/v2/channel?uid=1891335475';
+const CHANNEL_URL = 'https://api.ukamnads.icu/api/v2/channel?uId=1891335475';
 const PUBLIC_URL = 'https://viridis.love/api/memes';
 const USER_ID_START = 1_000_000;
 const FIRST_NEW_SEED_ID = 86;

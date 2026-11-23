@@ -5,6 +5,7 @@ import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { clusterLyrics, lyricBody } from '../cluster_lyrics.mjs';
 import { fetchLiveDanmaku } from '../fetch_live_danmaku.mjs';
+import { encodeMsgpack } from '../lib/msgpack.mjs';
 import { discoverFromLives } from '../scan_unrecorded_lives.mjs';
 import { upsertLiveState } from '../lib/ingestion-state.mjs';
 import { collectSameNameReviews, mergeLiveImportEvidence } from '../import_curated_songs.mjs';
@@ -539,54 +540,64 @@ test('ingestion-state terminal review is idempotent while preserving fetch check
   }
 });
 
-test('danmaku fetch resumes from an atomic page checkpoint and then reuses the complete artifact', async () => {
+test('danmaku fetch decodes the full MessagePack archive, dedupes text records and reuses the complete artifact', async () => {
   const directory = await mkdtemp(join(tmpdir(), 'xsl-danmaku-'));
   const output = join(directory, 'cached.json');
+  const startDate = Date.parse('2026-09-03T08:00:00Z');
   const live = {
     liveId: 'live-checkpoint', title: '测试直播', isFinish: true, isFull: true, isMerged: true,
-    startDate: Date.parse('2026-09-03T08:00:00Z'), stopDate: Date.parse('2026-09-03T09:00:00Z'),
+    startDate, stopDate: Date.parse('2026-09-03T09:00:00Z'),
   };
-  const raw = (ts, text) => ({ ts, type: 1, payloadKind: 1, payload: { rawText: text } });
-  const firstOffsets = [];
+  // [channel, live, extra] with extra = [baseTimestamp, actors, emoticons, records] and
+  // records = [deltaMs, type, actorIndex, uploadAccountId, subtype, payload].
+  const archive = encodeMsgpack([
+    [1891335475, '小松绿Viridis', 1727071052],
+    [live.liveId, live.title, 'cover.jpg', startDate, live.stopDate, true, true, true, 7],
+    [startDate + 500, [['uid-1', '观众甲']], [], [
+      [0, 1, 1, 0, 1, ['【第一句足够长的歌词】']],
+      [1_000, 1, 0, 0, 1, ['普通弹幕']],
+      [0, 1, 0, 0, 1, ['普通弹幕']],
+      [1_000, 1, 0, 0, 3, ['粉丝团灯牌']],
+      [1_000, 1, 1, 0, 1, ['【第二句足够长的歌词】']],
+      [1_000, 1, 0, 0, 9, ['录制开始']],
+    ]],
+  ]);
   try {
+    let failedCalls = 0;
     await assert.rejects(fetchLiveDanmaku({
       liveId: live.liveId,
       live,
-      pageSize: 2,
       output,
-      fetcher: async url => {
-        const offset = Number(new URL(url).searchParams.get('offset'));
-        firstOffsets.push(offset);
-        if (offset === 0) return { data: { total: 4, hasMore: true, records: [raw(live.startDate, '【第一句足够长的歌词】'), raw(live.startDate + 1_000, '普通弹幕')] } };
-        throw new Error('simulated interruption');
-      },
+      fetcher: async () => { failedCalls += 1; throw new Error('simulated interruption'); },
     }), /simulated interruption/u);
-    assert.deepEqual(firstOffsets, [0, 2]);
-    const partial = JSON.parse(await readFile(output, 'utf8'));
-    assert.equal(partial.checkpoint.nextOffset, 2);
-    assert.equal(partial.checkpoint.complete, false);
+    assert.equal(failedCalls, 1);
+    await assert.rejects(readFile(output, 'utf8'), /ENOENT/u);
 
-    const resumedOffsets = [];
-    const resumed = await fetchLiveDanmaku({
+    const urls = [];
+    const fetched = await fetchLiveDanmaku({
       liveId: live.liveId,
       live,
-      pageSize: 2,
       output,
-      fetcher: async url => {
-        const offset = Number(new URL(url).searchParams.get('offset'));
-        resumedOffsets.push(offset);
-        return { data: { total: 4, hasMore: false, records: [raw(live.startDate + 2_000, '【第二句足够长的歌词】'), raw(live.startDate + 3_000, '普通弹幕二')] } };
-      },
+      fetcher: async url => { urls.push(url); return archive; },
     });
-    assert.deepEqual(resumedOffsets, [2]);
-    assert.equal(resumed.result.checkpoint.complete, true);
-    assert.equal(resumed.result.records.length, 4);
+    assert.equal(urls.length, 1);
+    assert.match(urls[0], /\/api\/v3\/lives\/live-checkpoint\/full\?include=extra&includeEnter=false$/u);
+    assert.equal(fetched.reused, false);
+    assert.equal(fetched.result.checkpoint.complete, true);
+    assert.equal(fetched.result.checkpoint.nextOffset, 6);
+    assert.equal(fetched.result.stats.fetchedRecords, 6);
+    assert.equal(fetched.result.stats.textRecords, 3);
+    assert.deepEqual(fetched.result.records.map(record => record.text), ['【第一句足够长的歌词】', '普通弹幕', '【第二句足够长的歌词】']);
+    assert.deepEqual(fetched.result.records.map(record => record.ts - startDate), [500, 1500, 3500]);
+    assert.equal(fetched.result.records[0].userName, '观众甲');
+    assert.equal(fetched.result.records[1].offsetMs, 1500);
+    assert.equal(fetched.result.source, 'danmakus-live-full-v3');
+    assert.equal(JSON.parse(await readFile(output, 'utf8')).stats.textRecords, 3);
 
     let networkCalls = 0;
     const reused = await fetchLiveDanmaku({
       liveId: live.liveId,
       live,
-      pageSize: 2,
       output,
       fetcher: async () => { networkCalls += 1; throw new Error('must not fetch'); },
     });

@@ -6,7 +6,7 @@ import { fetchLiveDanmaku } from './fetch_live_danmaku.mjs';
 import { loadIngestionState, upsertLiveState } from './lib/ingestion-state.mjs';
 import { fetchJson, isoDateInZone, parseArgs, readJson, withFileLock, writeJsonAtomic } from './lib/io.mjs';
 
-const CHANNEL_URL = 'https://ukamnads.icu/api/v2/channel?uid=1891335475';
+const CHANNEL_URL = 'https://api.ukamnads.icu/api/v2/channel?uId=1891335475';
 const FETCHED_DECISIONS = new Set(['no-songs', 'review-needed', 'imported', 'deferred']);
 
 export function discoverFromLives({ lives, state, segmentsDocument, since = '' }) {
