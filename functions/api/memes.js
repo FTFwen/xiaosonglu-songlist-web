@@ -1,6 +1,11 @@
 const key = 'memes/v1/state.json';
 const methods = 'GET, POST, OPTIONS';
-const limit = 8192;
+const limit = 32 * 1024;
+const catalogLimit = 1024 * 1024;
+const stateLimit = 4 * 1024 * 1024;
+const maxCatalogRows = 512;
+const maxSubmissions = 5000;
+const encoder = new TextEncoder();
 const firstId = 1_000_000;
 
 class ApiError extends Error {
@@ -11,37 +16,49 @@ const normalize = value => value.normalize('NFKC').trim().replace(/\s+/gu, ' ').
 const validId = value => Number.isSafeInteger(value) && value > 0;
 
 function response(status, body, origin, extra = {}) {
-  return new Response(body === null ? null : JSON.stringify(body), { status, headers: {
+  const payload = body === null ? null : JSON.stringify(body).replace(/[<>&\u2028\u2029]/g, char =>
+    `\\u${char.charCodeAt(0).toString(16).padStart(4, '0')}`);
+  return new Response(payload, { status, headers: {
     'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-store', vary: 'Origin',
+    'x-content-type-options': 'nosniff',
     ...(origin ? { 'access-control-allow-origin': origin } : {}), ...extra,
   } });
+}
+
+async function readJsonStream(message, maxBytes, tooLarge) {
+  if (Number(message.headers.get('content-length')) > maxBytes) throw tooLarge;
+  if (!message.body) throw new SyntaxError('Missing body');
+  const reader = message.body.getReader();
+  const decoder = new TextDecoder('utf-8', { fatal: true });
+  let size = 0;
+  let text = '';
+  let doneReading = false;
+  try {
+    for (;;) {
+      const { done, value } = await reader.read();
+      if (done) break;
+      size += value.byteLength;
+      if (size > maxBytes) throw tooLarge;
+      text += decoder.decode(value, { stream: true });
+    }
+    doneReading = true;
+    return JSON.parse(text + decoder.decode());
+  } finally {
+    if (!doneReading) void reader.cancel().catch(() => {});
+    reader.releaseLock();
+  }
 }
 
 async function parseBody(request) {
   if (request.headers.get('content-type')?.split(';')[0].trim().toLowerCase() !== 'application/json') {
     throw new ApiError(415, 'json_required');
   }
-  if (Number(request.headers.get('content-length')) > limit) throw new ApiError(413, 'payload_too_large');
-  if (!request.body) throw new ApiError(400, 'invalid_json');
-  const reader = request.body.getReader();
-  const bytes = new Uint8Array(limit);
-  let size = 0;
   try {
-    for (;;) {
-      const { done, value } = await reader.read();
-      if (done) break;
-      if (size + value.byteLength > limit) {
-        void reader.cancel().catch(() => {});
-        throw new ApiError(413, 'payload_too_large');
-      }
-      bytes.set(value, size);
-      size += value.byteLength;
-    }
-    return JSON.parse(new TextDecoder('utf-8', { fatal: true }).decode(bytes.subarray(0, size)));
+    return await readJsonStream(request, limit, new ApiError(413, 'payload_too_large'));
   } catch (error) {
     if (error instanceof ApiError) throw error;
     throw new ApiError(400, 'invalid_json');
-  } finally { reader.releaseLock(); }
+  }
 }
 
 function actionOf(body) {
@@ -72,23 +89,38 @@ function validRows(rows, submitted) {
 }
 
 async function readCatalog(request, assets) {
-  const res = await assets.fetch(new Request(new URL('/memes/seed.json', request.url)));
-  if (!res.ok) throw new ApiError(503, 'catalog_unavailable');
-  const rows = await res.json();
-  if (!validRows(rows, false) || !rows.length) throw new ApiError(503, 'catalog_invalid');
+  let res;
+  try {
+    res = await assets.fetch(new Request(new URL('/memes/seed.json', request.url)));
+    if (!res.ok) throw new Error('Catalog fetch failed');
+  } catch { throw new ApiError(503, 'catalog_unavailable'); }
+  const invalid = new ApiError(503, 'catalog_invalid');
+  let rows;
+  try { rows = await readJsonStream(res, catalogLimit, invalid); }
+  catch { throw invalid; }
+  if (!Array.isArray(rows) || !rows.length || rows.length > maxCatalogRows || !validRows(rows, false)) throw invalid;
   return rows;
 }
 
 async function readState(bucket) {
-  const record = await bucket.get(key);
+  const invalid = new ApiError(503, 'storage_unavailable');
+  let record;
+  try { record = await bucket.get(key); }
+  catch { throw new ApiError(503, 'service_unavailable'); }
   if (!record) return { state: { version: 1, submissions: [], copies: {} }, etag: null };
-  const state = JSON.parse(await record.text());
-  if (!record.etag || state?.version !== 1 || !validRows(state.submissions, true) ||
-      !state.copies || typeof state.copies !== 'object' || Array.isArray(state.copies) ||
-      !Object.entries(state.copies).every(([id, count]) => /^[1-9]\d*$/.test(id) && Number.isSafeInteger(count) && count >= 0)) {
-    throw new ApiError(503, 'storage_unavailable');
-  }
-  return { state, etag: record.etag };
+  const etag = record.etag || record.httpEtag?.replace(/^"|"$/g, '');
+  if (!etag || record.size > stateLimit) throw invalid;
+  let state;
+  try {
+    const text = await record.text();
+    if (encoder.encode(text).byteLength > stateLimit) throw invalid;
+    state = JSON.parse(text);
+  } catch { throw invalid; }
+  if (state?.version !== 1 || !Array.isArray(state.submissions) || state.submissions.length > maxSubmissions ||
+      !validRows(state.submissions, true) || !state.copies || typeof state.copies !== 'object' ||
+      Array.isArray(state.copies) || !Object.entries(state.copies).every(([id, count]) =>
+        /^[1-9]\d*$/.test(id) && validId(Number(id)) && Number.isSafeInteger(count) && count >= 0)) throw invalid;
+  return { state, etag };
 }
 
 function mutate(seed, state, action) {
@@ -101,13 +133,14 @@ function mutate(seed, state, action) {
     return { status: 200, copies };
   }
   if (rows.some(row => normalize(row.text) === normalize(action.text))) throw new ApiError(409, 'duplicate_text');
-  if (state.submissions.length >= 5000) throw new ApiError(503, 'storage_full');
+  if (state.submissions.length >= maxSubmissions) throw new ApiError(503, 'storage_full');
   const labels = new Map();
   let id = firstId;
   for (const row of rows) {
     id = Math.max(id, row.id + 1);
     for (const tag of row.tags) if (!labels.has(normalize(tag))) labels.set(normalize(tag), tag);
   }
+  if (!validId(id)) throw new ApiError(503, 'storage_full');
   const entry = {
     id, date: new Date(Date.now() + 8 * 3600000).toISOString().slice(0, 10), text: action.text,
     tags: Array.from(action.tags, ([normalized, label]) => labels.get(normalized) ?? label),
@@ -149,7 +182,9 @@ export async function onRequest({ request, env }) {
       if (attempt) await new Promise(resolve => setTimeout(resolve, Math.min(50, 2 ** attempt) + Math.random() * 10));
       const { state, etag } = attempt === 0 ? initial : await readState(bucket);
       const { status, ...result } = mutate(seed, state, action);
-      const saved = await bucket.put(key, JSON.stringify(state), {
+      const serialized = JSON.stringify(state);
+      if (encoder.encode(serialized).byteLength > stateLimit) throw new ApiError(503, 'storage_full');
+      const saved = await bucket.put(key, serialized, {
         onlyIf: etag ? { etagMatches: etag } : { etagDoesNotMatch: '*' },
         httpMetadata: { contentType: 'application/json', cacheControl: 'no-store' },
       });

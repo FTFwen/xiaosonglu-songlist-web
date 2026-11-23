@@ -68,6 +68,7 @@ test('untrusted origins and invalid writes leave the catalog intact', async () =
   assert.equal((await post(copy, 'https://other.invalid')).status, 403);
   assert.equal((await post({ action: 'copy', id: 999999 })).status, 404);
   assert.equal((await post({ action: 'submit', text: '', tags: ['测试'] })).status, 400);
-  assert.equal((await post({ action: 'submit', text: 'x'.repeat(9000), tags: ['测试'] })).status, 413);
+  assert.equal((await post({ action: 'submit', text: 'x'.repeat(2001), tags: ['测试'] })).status, 400);
+  assert.equal((await post({ action: 'submit', text: 'x'.repeat(33 * 1024), tags: ['测试'] })).status, 413);
   assert.equal((await (await get()).json()).entries[0].copies, 0);
 });
