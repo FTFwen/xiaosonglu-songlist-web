@@ -1,0 +1,178 @@
+{
+  "schemaVersion": 1,
+  "key": "song-409",
+  "songId": 409,
+  "songName": "还是你的笑容最可爱",
+  "rowKey": "还是你的笑容最可爱",
+  "displaySongName": "还是你的笑容最可爱",
+  "artist": "泠鸢yousa / 音阙诗听",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "",
+  "audio": {
+    "url": "assets/audio/song_408.m4a?v=012fb366ef0c",
+    "sha256": "012fb366ef0c909aabf2da1415b8fe0fed8b9dd380c23bc9374d8e255968f43f"
+  },
+  "retrievedAt": "2026-11-26T04:35:01.704Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E8%BF%98%E6%98%AF%E4%BD%A0%E7%9A%84%E7%AC%91%E5%AE%B9%E6%9C%80%E5%8F%AF%E7%88%B1&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E8%BF%98%E6%98%AF%E4%BD%A0%E7%9A%84%E7%AC%91%E5%AE%B9%E6%9C%80%E5%8F%AF%E7%88%B1%20%E6%B3%A0%E9%B8%A2yousa%20%2F%20%E9%9F%B3%E9%98%99%E8%AF%97%E5%90%AC&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1927432302,
+        "name": "还是你的笑容最可爱",
+        "artists": [
+          "音阙诗听",
+          "泠鸢yousa",
+          "王梓钰"
+        ],
+        "album": "还是你的笑容最可爱",
+        "durationMs": 165000,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1965956823,
+        "name": "还是你的笑容最可爱",
+        "artists": [
+          "紫苏九月",
+          "宴宁"
+        ],
+        "album": "一些翻唱",
+        "durationMs": 165067,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1934720221,
+        "name": "还是你的笑容最可爱",
+        "artists": [
+          "青尢",
+          "凉一Ryoi"
+        ],
+        "album": "还是你的笑容最可爱",
+        "durationMs": 164911,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1977521330,
+        "name": "还是你的笑容最可爱",
+        "artists": [
+          "一颗飘",
+          "某科学的五河士织"
+        ],
+        "album": "崩坏三填词翻唱",
+        "durationMs": 165000,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2037101337,
+        "name": "还是你的笑容最可爱",
+        "artists": [
+          "猫宁孜然",
+          "妖刀炎王木木"
+        ],
+        "album": "还是你的笑容最可爱（双正太）",
+        "durationMs": 165000,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1937129993,
+        "name": "还是你的笑容最可爱",
+        "artists": [
+          "祈Inory",
+          "诗小雅"
+        ],
+        "album": "♪祈りの歌♪",
+        "durationMs": 166138,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2145331602,
+        "name": "还是你的笑容最可爱",
+        "artists": [
+          "洛天依",
+          "白石喵酱"
+        ],
+        "album": "SNEKO V 2024",
+        "durationMs": 166000,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1983088052,
+        "name": "还是你的笑容最可爱",
+        "artists": [
+          "黎歌Neeko",
+          "冬雪沫沫"
+        ],
+        "album": "黎歌Neeko的翻唱",
+        "durationMs": 165093,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      }
+    ],
+    "workQuery": {
+      "song_id": 409,
+      "song_name": "还是你的笑容最可爱",
+      "show_as_song_name": "",
+      "display_song_name": "还是你的笑容最可爱",
+      "artist": "泠鸢yousa / 音阙诗听",
+      "artist_search": "泠鸢yousa / 音阙诗听",
+      "feat_artist": "",
+      "remark": "",
+      "tone": "",
+      "language": "中文",
+      "type": "流行",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1ZbyCz7Ejt/?p=9",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切复核",
+      "last_sing_at": "2026-11-25",
+      "row_key": "还是你的笑容最可爱",
+      "key": "song-409",
+      "audio": "assets/audio/song_408.m4a?v=012fb366ef0c"
+    },
+    "sourceId": 1927432302,
+    "sourcePath": "sources/1927432302.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1927432302",
+    "selected": {
+      "id": 1927432302,
+      "name": "还是你的笑容最可爱",
+      "artists": [
+        "音阙诗听",
+        "泠鸢yousa",
+        "王梓钰"
+      ],
+      "album": "还是你的笑容最可爱",
+      "durationMs": 165000,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 58
+  },
+  "alignment": {
+    "status": "pending_asr",
+    "offsetSeconds": null,
+    "humanVerified": false
+  }
+}

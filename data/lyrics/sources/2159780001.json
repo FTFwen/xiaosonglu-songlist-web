@@ -1,0 +1,25 @@
+{
+  "platform": "netease",
+  "id": 2159780001,
+  "url": "https://music.163.com/#/song?id=2159780001",
+  "apiUrl": "https://music.163.com/api/song/lyric?id=2159780001&lv=1&kv=1&tv=-1",
+  "retrievedAt": "2026-11-26T04:35:01.405Z",
+  "track": {
+    "id": 2159780001,
+    "name": "此刻Memories",
+    "artists": [
+      "妖橙Yumo",
+      "阿妍子"
+    ],
+    "album": "此刻Memories【BDF2024主题曲】",
+    "durationMs": 196999,
+    "titleScore": 1,
+    "artistMatch": false,
+    "score": 0.8
+  },
+  "lrc": "",
+  "translationLrc": "",
+  "romanizationLrc": "",
+  "instrumental": false,
+  "lines": []
+}

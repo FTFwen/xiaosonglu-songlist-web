@@ -1,25 +1,26 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-16T04:35:25.259Z",
-  "expected": 421,
-  "processed": 421,
+  "generatedAt": "2026-11-26T04:35:12.225Z",
+  "expected": 430,
+  "processed": 430,
   "matchCounts": {
-    "candidate_review_required": 61,
-    "matched": 339,
-    "no_timed_lyrics": 2,
+    "candidate_review_required": 62,
+    "matched": 346,
+    "no_timed_lyrics": 3,
     "not_found": 2,
     "version_review_required": 17
   },
   "alignmentCounts": {
     "anchor_not_found": 355,
     "asr_consistent_draft": 1,
+    "pending_asr": 8,
     "spotcheck_review_required": 39,
     "timing_drift_review_required": 3,
-    "unavailable": 6,
+    "unavailable": 7,
     "version_review_required": 17
   },
-  "withAudio": 419,
-  "withTimedSource": 417,
+  "withAudio": 428,
+  "withTimedSource": 425,
   "humanVerified": 0,
   "syncReady": 0,
   "notes": [
@@ -28,11 +29,11 @@
     "Pending, wrong-language and ambiguous versions must never be rendered as verified synchronized lyrics",
     "withTimedSource includes unresolved candidates and version-review sources; use workMatched for accepted work-level matches"
   ],
-  "workMatched": 339,
-  "unresolvedTimedSources": 78,
+  "workMatched": 346,
+  "unresolvedTimedSources": 79,
   "asrConsistentDrafts": 1,
   "scope": "current catalog + built-in derivatives; excludes browser-local imports",
-  "count": 421,
+  "count": 430,
   "tracks": [
     {
       "key": "derivative-1101",
@@ -3605,6 +3606,36 @@
       "audioSha256": "dfe7997675a3185f175d17e325eacd815df46c10682b1966d5b359514f9d43c2"
     },
     {
+      "key": "song-407",
+      "songId": 407,
+      "songName": "情绪未响应",
+      "path": "tracks/song-407.json",
+      "matchStatus": "matched",
+      "alignmentStatus": "pending_asr",
+      "sourceId": 2661119343,
+      "audioSha256": "7bff171d4634f97ed471b4257cbb2c6aead6d966de9003dbaac98ecc6d813bf2"
+    },
+    {
+      "key": "song-408",
+      "songId": 408,
+      "songName": "½如梦",
+      "path": "tracks/song-408.json",
+      "matchStatus": "candidate_review_required",
+      "alignmentStatus": "pending_asr",
+      "sourceId": 1437363540,
+      "audioSha256": "4bfe77ada1792e511e427e58d993a6c3870841bb247728830fc42a213105de11"
+    },
+    {
+      "key": "song-409",
+      "songId": 409,
+      "songName": "还是你的笑容最可爱",
+      "path": "tracks/song-409.json",
+      "matchStatus": "matched",
+      "alignmentStatus": "pending_asr",
+      "sourceId": 1927432302,
+      "audioSha256": "012fb366ef0c909aabf2da1415b8fe0fed8b9dd380c23bc9374d8e255968f43f"
+    },
+    {
       "key": "song-41",
       "songId": 41,
       "songName": "霜雪千年",
@@ -3613,6 +3644,66 @@
       "alignmentStatus": "anchor_not_found",
       "sourceId": 2631318598,
       "audioSha256": "1747a5e0e2f6c1df5dce5841425b4db804f2eee4ea66c2ddf6ee11561e0af54c"
+    },
+    {
+      "key": "song-410",
+      "songId": 410,
+      "songName": "海芋恋",
+      "path": "tracks/song-410.json",
+      "matchStatus": "matched",
+      "alignmentStatus": "pending_asr",
+      "sourceId": 168039,
+      "audioSha256": "b4a8c46108eb76d171cd35d739f32f51708fa0d5f9bfcf9493b6be85c626517b"
+    },
+    {
+      "key": "song-411",
+      "songId": 411,
+      "songName": "瘦子",
+      "path": "tracks/song-411.json",
+      "matchStatus": "matched",
+      "alignmentStatus": "pending_asr",
+      "sourceId": 2132838764,
+      "audioSha256": "ac810d421cd4e297e4ca8add23b319332f7cdc5c24e2fc7777094bfb2ee8f3a4"
+    },
+    {
+      "key": "song-412",
+      "songId": 412,
+      "songName": "我只在乎你",
+      "path": "tracks/song-412.json",
+      "matchStatus": "matched",
+      "alignmentStatus": "pending_asr",
+      "sourceId": 1888076998,
+      "audioSha256": "c4fc51d1ed0615ab913275df49f99f71f57f717ca1a79aafd4ca0b52dd910b39"
+    },
+    {
+      "key": "song-413",
+      "songId": 413,
+      "songName": "九九八十一",
+      "path": "tracks/song-413.json",
+      "matchStatus": "matched",
+      "alignmentStatus": "pending_asr",
+      "sourceId": 404543406,
+      "audioSha256": "6a4c103f3915c16923accf62aa020ac3ba80b2740293e97ed552d4493215349a"
+    },
+    {
+      "key": "song-414",
+      "songId": 414,
+      "songName": "此刻Memories",
+      "path": "tracks/song-414.json",
+      "matchStatus": "no_timed_lyrics",
+      "alignmentStatus": "unavailable",
+      "sourceId": 2162951449,
+      "audioSha256": "15c826e183b4f96863aa9c1a013de1bbbfe1d147dba0e833bdf3efaae0684869"
+    },
+    {
+      "key": "song-415",
+      "songId": 415,
+      "songName": "在水一方",
+      "path": "tracks/song-415.json",
+      "matchStatus": "matched",
+      "alignmentStatus": "pending_asr",
+      "sourceId": 229731,
+      "audioSha256": "d9f5df6ef9b488339ea1963c1546f8102d882d08e349bea3d3a3e6c9c1b5d848"
     },
     {
       "key": "song-42",

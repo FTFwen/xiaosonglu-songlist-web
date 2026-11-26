@@ -1,0 +1,167 @@
+{
+  "schemaVersion": 1,
+  "key": "song-412",
+  "songId": 412,
+  "songName": "我只在乎你",
+  "rowKey": "我只在乎你",
+  "displaySongName": "我只在乎你",
+  "artist": "邓丽君",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "",
+  "audio": {
+    "url": "assets/audio/song_411.m4a?v=c4fc51d1ed06",
+    "sha256": "c4fc51d1ed0615ab913275df49f99f71f57f717ca1a79aafd4ca0b52dd910b39"
+  },
+  "retrievedAt": "2026-11-26T04:35:07.244Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E6%88%91%E5%8F%AA%E5%9C%A8%E4%B9%8E%E4%BD%A0&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E6%88%91%E5%8F%AA%E5%9C%A8%E4%B9%8E%E4%BD%A0%20%E9%82%93%E4%B8%BD%E5%90%9B&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1888076998,
+        "name": "我只在乎你",
+        "artists": [
+          "邓丽君"
+        ],
+        "album": "温情如水国语集",
+        "durationMs": 256133,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1296092982,
+        "name": "我只在乎你",
+        "artists": [
+          "邓丽君"
+        ],
+        "album": "君天籁之音101 - 邓丽君65年纪念",
+        "durationMs": 257840,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2153720087,
+        "name": "我只在乎你",
+        "artists": [
+          "邓丽君"
+        ],
+        "album": "君之日和 邓丽君",
+        "durationMs": 254333,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 229010,
+        "name": "我只在乎你",
+        "artists": [
+          "邓丽君"
+        ],
+        "album": "我只在乎你",
+        "durationMs": 252146,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2730550989,
+        "name": "我只在乎你",
+        "artists": [
+          "邓丽君"
+        ],
+        "album": "君・依然在乎你",
+        "durationMs": 254333,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1847408948,
+        "name": "我只在乎你",
+        "artists": [
+          "邓丽君"
+        ],
+        "album": "90年代粵語情歌集",
+        "durationMs": 256133,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 5252649,
+        "name": "我只在乎你",
+        "artists": [
+          "邓丽君"
+        ],
+        "album": "壹 (1)",
+        "durationMs": 256185,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 473021610,
+        "name": "我只在乎你",
+        "artists": [
+          "邓丽君"
+        ],
+        "album": "传奇再续",
+        "durationMs": 255240,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      }
+    ],
+    "workQuery": {
+      "song_id": 412,
+      "song_name": "我只在乎你",
+      "show_as_song_name": "",
+      "display_song_name": "我只在乎你",
+      "artist": "邓丽君",
+      "artist_search": "邓丽君",
+      "feat_artist": "",
+      "remark": "",
+      "tone": "",
+      "language": "中文",
+      "type": "华语经典",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1ZbyCz7Ejt/?p=20",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切复核",
+      "last_sing_at": "2026-11-25",
+      "row_key": "我只在乎你",
+      "key": "song-412",
+      "audio": "assets/audio/song_411.m4a?v=c4fc51d1ed06"
+    },
+    "sourceId": 1888076998,
+    "sourcePath": "sources/1888076998.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1888076998",
+    "selected": {
+      "id": 1888076998,
+      "name": "我只在乎你",
+      "artists": [
+        "邓丽君"
+      ],
+      "album": "温情如水国语集",
+      "durationMs": 256133,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 44
+  },
+  "alignment": {
+    "status": "pending_asr",
+    "offsetSeconds": null,
+    "humanVerified": false
+  }
+}

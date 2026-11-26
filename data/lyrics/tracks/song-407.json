@@ -1,0 +1,174 @@
+{
+  "schemaVersion": 1,
+  "key": "song-407",
+  "songId": 407,
+  "songName": "情绪未响应",
+  "rowKey": "情绪未响应",
+  "displaySongName": "情绪未响应",
+  "artist": "夜踊Yoodori / 洛天依Official",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "",
+  "audio": {
+    "url": "assets/audio/song_406.m4a?v=7bff171d4634",
+    "sha256": "7bff171d4634f97ed471b4257cbb2c6aead6d966de9003dbaac98ecc6d813bf2"
+  },
+  "retrievedAt": "2026-11-26T04:35:05.050Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E6%83%85%E7%BB%AA%E6%9C%AA%E5%93%8D%E5%BA%94&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E6%83%85%E7%BB%AA%E6%9C%AA%E5%93%8D%E5%BA%94%20%E5%A4%9C%E8%B8%8AYoodori%20%2F%20%E6%B4%9B%E5%A4%A9%E4%BE%9DOfficial&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 2661119343,
+        "name": "情绪未响应",
+        "artists": [
+          "夜踊Yoodori",
+          "洛天依"
+        ],
+        "album": "情绪未响应",
+        "durationMs": 367399,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2669389336,
+        "name": "情绪未响应",
+        "artists": [
+          "小饕"
+        ],
+        "album": "情绪未响应",
+        "durationMs": 367920,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2669533580,
+        "name": "情绪未响应 伴奏",
+        "artists": [
+          "夜踊Yoodori",
+          "洛天依"
+        ],
+        "album": "情绪未响应",
+        "durationMs": 367750,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      },
+      {
+        "id": 2681146143,
+        "name": "夜踊Radio",
+        "artists": [
+          "夜踊Yoodori",
+          "洛天依"
+        ],
+        "album": "情绪未响应",
+        "durationMs": 261333,
+        "titleScore": 0,
+        "artistMatch": true,
+        "score": 0.2
+      },
+      {
+        "id": 2718083347,
+        "name": "不命题作文",
+        "artists": [
+          "夜踊Yoodori",
+          "洛天依"
+        ],
+        "album": "情绪未响应",
+        "durationMs": 292670,
+        "titleScore": 0,
+        "artistMatch": true,
+        "score": 0.2
+      },
+      {
+        "id": 2709731935,
+        "name": "左手谜题，右手真理",
+        "artists": [
+          "夜踊Yoodori"
+        ],
+        "album": "情绪未响应",
+        "durationMs": 173538,
+        "titleScore": 0,
+        "artistMatch": true,
+        "score": 0.2
+      },
+      {
+        "id": 2718084451,
+        "name": "不命题作文 伴奏",
+        "artists": [
+          "夜踊Yoodori",
+          "洛天依"
+        ],
+        "album": "情绪未响应",
+        "durationMs": 292670,
+        "titleScore": 0,
+        "artistMatch": true,
+        "score": 0.2
+      },
+      {
+        "id": 2681155217,
+        "name": "夜踊Radio 伴奏",
+        "artists": [
+          "夜踊Yoodori",
+          "洛天依"
+        ],
+        "album": "情绪未响应",
+        "durationMs": 261333,
+        "titleScore": 0,
+        "artistMatch": true,
+        "score": 0.2
+      }
+    ],
+    "workQuery": {
+      "song_id": 407,
+      "song_name": "情绪未响应",
+      "show_as_song_name": "",
+      "display_song_name": "情绪未响应",
+      "artist": "夜踊Yoodori / 洛天依Official",
+      "artist_search": "夜踊Yoodori / 洛天依Official",
+      "feat_artist": "",
+      "remark": "",
+      "tone": "",
+      "language": "中文",
+      "type": "中V、流行",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1ZbyCz7Ejt/?p=2",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切复核",
+      "last_sing_at": "2026-11-25",
+      "row_key": "情绪未响应",
+      "key": "song-407",
+      "audio": "assets/audio/song_406.m4a?v=7bff171d4634"
+    },
+    "sourceId": 2661119343,
+    "sourcePath": "sources/2661119343.json",
+    "sourceUrl": "https://music.163.com/#/song?id=2661119343",
+    "selected": {
+      "id": 2661119343,
+      "name": "情绪未响应",
+      "artists": [
+        "夜踊Yoodori",
+        "洛天依"
+      ],
+      "album": "情绪未响应",
+      "durationMs": 367399,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 68
+  },
+  "alignment": {
+    "status": "pending_asr",
+    "offsetSeconds": null,
+    "humanVerified": false
+  }
+}

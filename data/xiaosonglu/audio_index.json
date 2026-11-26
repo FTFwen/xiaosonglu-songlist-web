@@ -1,10 +1,10 @@
 {
   "roomKey": "xiaosonglu",
   "roomId": "1727071052",
-  "generatedAt": "2026-11-16T03:01:55.370Z",
+  "generatedAt": "2026-11-26T04:34:54.315Z",
   "source": "song-cut-audio-download",
   "description": "每首歌对应的翻唱切片音频（从 B 站歌切/回放下载），供网页在线播放。",
-  "count": 404,
+  "count": 413,
   "audios": {
     "勾指起誓": "assets/audio/song_88.m4a?v=82fb0051bfb2",
     "蝴蝶": "assets/audio/song_25.m4a?v=d8fb99252c26",
@@ -409,7 +409,16 @@
     "不问天": "assets/audio/song_402.m4a?v=ceed601ce44f",
     "恋友": "assets/audio/song_403.m4a?v=a5c5c6ec4002",
     "晚想": "assets/audio/song_404.m4a?v=da20c8af4061",
-    "蝴蝶泉边": "assets/audio/song_405.m4a?v=dfe7997675a3"
+    "蝴蝶泉边": "assets/audio/song_405.m4a?v=dfe7997675a3",
+    "情绪未响应": "assets/audio/song_406.m4a?v=7bff171d4634",
+    "½如梦": "assets/audio/song_407.m4a?v=4bfe77ada179",
+    "还是你的笑容最可爱": "assets/audio/song_408.m4a?v=012fb366ef0c",
+    "海芋恋": "assets/audio/song_409.m4a?v=b4a8c46108eb",
+    "瘦子": "assets/audio/song_410.m4a?v=ac810d421cd4",
+    "我只在乎你": "assets/audio/song_411.m4a?v=c4fc51d1ed06",
+    "九九八十一": "assets/audio/song_412.m4a?v=6a4c103f3915",
+    "此刻Memories": "assets/audio/song_413.m4a?v=15c826e183b4",
+    "在水一方": "assets/audio/song_414.m4a?v=d9f5df6ef9b4"
   },
   "verificationTargets": [
     "中华墨水娘",

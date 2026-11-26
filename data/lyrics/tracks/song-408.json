@@ -1,0 +1,178 @@
+{
+  "schemaVersion": 1,
+  "key": "song-408",
+  "songId": 408,
+  "songName": "½如梦",
+  "rowKey": "½如梦",
+  "displaySongName": "½如梦",
+  "artist": "星尘 / H.K.(HEROAR) / JazMaybe(HEROAR)",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "分P标注「½如梦（1_2如梦）【HEROAR】」，星尘演唱的 VOCALOID 中文原创。",
+  "audio": {
+    "url": "assets/audio/song_407.m4a?v=4bfe77ada179",
+    "sha256": "4bfe77ada1792e511e427e58d993a6c3870841bb247728830fc42a213105de11"
+  },
+  "retrievedAt": "2026-11-26T04:34:58.842Z",
+  "match": {
+    "status": "candidate_review_required",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%C2%BD%E5%A6%82%E6%A2%A6&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%C2%BD%E5%A6%82%E6%A2%A6%20%E6%98%9F%E5%B0%98%20%2F%20H.K.&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 1437363540,
+        "name": "½如梦",
+        "artists": [
+          "朵芊"
+        ],
+        "album": "好好吃饭:)",
+        "durationMs": 235151,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1295726377,
+        "name": "½如梦",
+        "artists": [
+          "星宿阁CNT",
+          "乐正绫",
+          "小墨P"
+        ],
+        "album": "墨小墨的翻调作品",
+        "durationMs": 234788,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2018124201,
+        "name": "½如梦",
+        "artists": [
+          "不务正业咸鱼组",
+          "阿乞",
+          "一把电刀",
+          "一颗小石头呀呼",
+          "露小易",
+          "小呀小钥匙",
+          "阿三"
+        ],
+        "album": "½如梦",
+        "durationMs": 234000,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1385157599,
+        "name": "½如梦",
+        "artists": [
+          "依清"
+        ],
+        "album": "½如梦",
+        "durationMs": 234605,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1923416283,
+        "name": "1/2如梦",
+        "artists": [
+          "南玉颜"
+        ],
+        "album": "½如梦",
+        "durationMs": 234552,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 460389527,
+        "name": "½如梦（1/2如梦）【HEROAR】",
+        "artists": [
+          "星尘",
+          "H.K.(HEROAR)",
+          "JazMaybe(HEROAR)"
+        ],
+        "album": "½如夢（1/2如梦）",
+        "durationMs": 234672,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      },
+      {
+        "id": 1806525214,
+        "name": "½如梦(1/2如梦)",
+        "artists": [
+          "嗷天",
+          "何畅"
+        ],
+        "album": "½如梦",
+        "durationMs": 236592,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 3341096213,
+        "name": "½如梦 2025 feat.Arpa",
+        "artists": [
+          "山椒阿露波Arpa"
+        ],
+        "album": "阿波的翻唱",
+        "durationMs": 234666,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      }
+    ],
+    "workQuery": {
+      "song_id": 408,
+      "song_name": "½如梦",
+      "show_as_song_name": "",
+      "display_song_name": "½如梦",
+      "artist": "星尘 / H.K.(HEROAR) / JazMaybe(HEROAR)",
+      "artist_search": "星尘 / H.K.(HEROAR) / JazMaybe(HEROAR)",
+      "feat_artist": "",
+      "remark": "分P标注「½如梦（1_2如梦）【HEROAR】」，星尘演唱的 VOCALOID 中文原创。",
+      "tone": "",
+      "language": "中文",
+      "type": "中V、原创",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1ZbyCz7Ejt/?p=6",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切复核",
+      "last_sing_at": "2026-11-25",
+      "row_key": "½如梦",
+      "key": "song-408",
+      "audio": "assets/audio/song_407.m4a?v=4bfe77ada179"
+    },
+    "sourceId": 1437363540,
+    "sourcePath": "sources/1437363540.json",
+    "sourceUrl": "https://music.163.com/#/song?id=1437363540",
+    "selected": {
+      "id": 1437363540,
+      "name": "½如梦",
+      "artists": [
+        "朵芊"
+      ],
+      "album": "好好吃饭:)",
+      "durationMs": 235151,
+      "titleScore": 1,
+      "artistMatch": false,
+      "score": 0.8
+    },
+    "timedLineCount": 59
+  },
+  "alignment": {
+    "status": "pending_asr",
+    "offsetSeconds": null,
+    "humanVerified": false
+  }
+}

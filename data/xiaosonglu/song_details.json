@@ -1,7 +1,7 @@
 {
   "roomKey": "xiaosonglu",
   "roomId": "1727071052",
-  "generatedAt": "2026-11-16T03:01:32.994Z",
+  "generatedAt": "2026-11-26T04:33:13.052Z",
   "source": "local-replay-ingestion",
   "bySongKey": {
     "少女レイ": {
@@ -1345,8 +1345,23 @@
       "display_song_name": "白鸟过河滩",
       "artist": "ilem / 洛天依Official",
       "cut_link": "https://www.bilibili.com/video/BV1etuz6fEaa/",
-      "total_count": 2,
+      "total_count": 3,
       "entries": [
+        {
+          "date": "2026-11-25",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切复核",
+          "artist": "ilem / 洛天依Official",
+          "replay_id": "live:3252ace9-c7e0-401f-aa78-b1e02c7c0757",
+          "replay_title": "【小松绿Viridis】和麦克风培养感情中 2026-11-25",
+          "replay_url": "",
+          "remark": "",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-collection-chapter",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1ZbyCz7Ejt/?p=11"
+        },
         {
           "date": "2026-09-17",
           "time": "",
@@ -1850,8 +1865,23 @@
       "display_song_name": "我的悲伤是水做的",
       "artist": "ChiliChill乐团 / 洛天依Official",
       "cut_link": "https://www.bilibili.com/video/BV1AJby6gECN/",
-      "total_count": 2,
+      "total_count": 3,
       "entries": [
+        {
+          "date": "2026-11-25",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切复核",
+          "artist": "ChiliChill乐团 / 洛天依Official",
+          "replay_id": "live:3252ace9-c7e0-401f-aa78-b1e02c7c0757",
+          "replay_title": "【小松绿Viridis】和麦克风培养感情中 2026-11-25",
+          "replay_url": "",
+          "remark": "",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-collection-chapter",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1ZbyCz7Ejt/?p=1"
+        },
         {
           "date": "2026-10-16",
           "time": "",
@@ -2310,8 +2340,23 @@
       "display_song_name": "世末歌者",
       "artist": "乐正绫 / COP",
       "cut_link": "https://www.bilibili.com/video/BV1Pa8V69ECP/",
-      "total_count": 4,
+      "total_count": 5,
       "entries": [
+        {
+          "date": "2026-11-25",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切复核",
+          "artist": "乐正绫 / COP",
+          "replay_id": "live:3252ace9-c7e0-401f-aa78-b1e02c7c0757",
+          "replay_title": "【小松绿Viridis】和麦克风培养感情中 2026-11-25",
+          "replay_url": "",
+          "remark": "合集分P标注演唱者为双笙、封茗囧菌（翻唱版），按站内既有记录沿用原唱乐正绫 / COP。",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-collection-chapter",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1ZbyCz7Ejt/?p=15"
+        },
         {
           "date": "2026-11-08",
           "time": "",
@@ -2470,8 +2515,23 @@
       "display_song_name": "蝴蝶",
       "artist": "洛天依Official",
       "cut_link": "https://www.bilibili.com/video/BV1rv8V6DExk/",
-      "total_count": 3,
+      "total_count": 4,
       "entries": [
+        {
+          "date": "2026-11-25",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切复核",
+          "artist": "洛天依Official",
+          "replay_id": "live:3252ace9-c7e0-401f-aa78-b1e02c7c0757",
+          "replay_title": "【小松绿Viridis】和麦克风培养感情中 2026-11-25",
+          "replay_url": "",
+          "remark": "",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-collection-chapter",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1ZbyCz7Ejt/?p=5"
+        },
         {
           "date": "2026-10-16",
           "time": "",
@@ -4210,8 +4270,23 @@
       "display_song_name": "只对你有感觉",
       "artist": "飞轮海 / 田馥甄",
       "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=1",
-      "total_count": 1,
+      "total_count": 2,
       "entries": [
+        {
+          "date": "2026-11-25",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切复核",
+          "artist": "飞轮海 / 田馥甄",
+          "replay_id": "live:3252ace9-c7e0-401f-aa78-b1e02c7c0757",
+          "replay_title": "【小松绿Viridis】和麦克风培养感情中 2026-11-25",
+          "replay_url": "",
+          "remark": "",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-collection-chapter",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1ZbyCz7Ejt/?p=7"
+        },
         {
           "date": "2026-09-03",
           "time": "",
@@ -4455,8 +4530,23 @@
       "display_song_name": "十万个春天",
       "artist": "娅娅酱 / 洛天依",
       "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=9",
-      "total_count": 1,
+      "total_count": 2,
       "entries": [
+        {
+          "date": "2026-11-25",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切复核",
+          "artist": "娅娅酱 / 洛天依",
+          "replay_id": "live:3252ace9-c7e0-401f-aa78-b1e02c7c0757",
+          "replay_title": "【小松绿Viridis】和麦克风培养感情中 2026-11-25",
+          "replay_url": "",
+          "remark": "",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-collection-chapter",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1ZbyCz7Ejt/?p=13"
+        },
         {
           "date": "2026-09-03",
           "time": "01:12:57",
@@ -4750,8 +4840,23 @@
       "display_song_name": "如果有来生",
       "artist": "谭维维",
       "cut_link": "https://www.bilibili.com/video/BV1ihtf6PEG3/?p=21",
-      "total_count": 2,
+      "total_count": 3,
       "entries": [
+        {
+          "date": "2026-11-25",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切复核",
+          "artist": "谭维维",
+          "replay_id": "live:3252ace9-c7e0-401f-aa78-b1e02c7c0757",
+          "replay_title": "【小松绿Viridis】和麦克风培养感情中 2026-11-25",
+          "replay_url": "",
+          "remark": "",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-collection-chapter",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1ZbyCz7Ejt/?p=12"
+        },
         {
           "date": "2026-10-02",
           "time": "",
@@ -6260,8 +6365,23 @@
       "display_song_name": "住在天狼星的那个人",
       "artist": "OHMYMEITING（黄美婷）",
       "cut_link": "https://www.bilibili.com/video/BV1PQeN6kETG/",
-      "total_count": 2,
+      "total_count": 3,
       "entries": [
+        {
+          "date": "2026-11-25",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切复核",
+          "artist": "OHMYMEITING（黄美婷）",
+          "replay_id": "live:3252ace9-c7e0-401f-aa78-b1e02c7c0757",
+          "replay_title": "【小松绿Viridis】和麦克风培养感情中 2026-11-25",
+          "replay_url": "",
+          "remark": "",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-collection-chapter",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1ZbyCz7Ejt/?p=4"
+        },
         {
           "date": "2026-10-08",
           "time": "",
@@ -6655,8 +6775,23 @@
       "display_song_name": "告死鸟",
       "artist": "ilem / 洛天依",
       "cut_link": "https://www.bilibili.com/video/BV1rZe86yE49/?p=4",
-      "total_count": 2,
+      "total_count": 3,
       "entries": [
+        {
+          "date": "2026-11-25",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切复核",
+          "artist": "ilem / 洛天依",
+          "replay_id": "live:3252ace9-c7e0-401f-aa78-b1e02c7c0757",
+          "replay_title": "【小松绿Viridis】和麦克风培养感情中 2026-11-25",
+          "replay_url": "",
+          "remark": "",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-collection-chapter",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1ZbyCz7Ejt/?p=3"
+        },
         {
           "date": "2026-11-08",
           "time": "",
@@ -7805,8 +7940,23 @@
       "display_song_name": "神的随波逐流",
       "artist": "泠鸢yousa",
       "cut_link": "https://www.bilibili.com/video/BV1g1ah6REpb/?p=18",
-      "total_count": 1,
+      "total_count": 2,
       "entries": [
+        {
+          "date": "2026-11-25",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切复核",
+          "artist": "泠鸢yousa",
+          "replay_id": "live:3252ace9-c7e0-401f-aa78-b1e02c7c0757",
+          "replay_title": "【小松绿Viridis】和麦克风培养感情中 2026-11-25",
+          "replay_url": "",
+          "remark": "",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-collection-chapter",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1ZbyCz7Ejt/?p=18"
+        },
         {
           "date": "2026-09-27",
           "time": "",
@@ -8225,8 +8375,23 @@
       "display_song_name": "交织together",
       "artist": "OriginGirls, 迟色, 舞雪, 饼饼Causa, 沈音音",
       "cut_link": "https://www.bilibili.com/video/BV1UkaS6zEk3/?p=7",
-      "total_count": 1,
+      "total_count": 2,
       "entries": [
+        {
+          "date": "2026-11-25",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切复核",
+          "artist": "OriginGirls, 迟色, 舞雪, 饼饼Causa, 沈音音",
+          "replay_id": "live:3252ace9-c7e0-401f-aa78-b1e02c7c0757",
+          "replay_title": "【小松绿Viridis】和麦克风培养感情中 2026-11-25",
+          "replay_url": "",
+          "remark": "",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-collection-chapter",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1ZbyCz7Ejt/?p=10"
+        },
         {
           "date": "2026-10-02",
           "time": "",
@@ -10085,8 +10250,23 @@
       "display_song_name": "扉をあけて",
       "artist": "ANZA",
       "cut_link": "https://www.bilibili.com/video/BV1UPnV6zEs4/?p=22",
-      "total_count": 1,
+      "total_count": 2,
       "entries": [
+        {
+          "date": "2026-11-25",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切复核",
+          "artist": "ANZA",
+          "replay_id": "live:3252ace9-c7e0-401f-aa78-b1e02c7c0757",
+          "replay_title": "【小松绿Viridis】和麦克风培养感情中 2026-11-25",
+          "replay_url": "",
+          "remark": "",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-collection-chapter",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1ZbyCz7Ejt/?p=8"
+        },
         {
           "date": "2026-10-18",
           "time": "",
@@ -10390,8 +10570,23 @@
       "display_song_name": "入秋的第一场雨真让人矫情",
       "artist": "",
       "cut_link": "https://www.bilibili.com/video/BV1naxj62Epw/?p=4",
-      "total_count": 1,
+      "total_count": 2,
       "entries": [
+        {
+          "date": "2026-11-25",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切复核",
+          "artist": "",
+          "replay_id": "live:3252ace9-c7e0-401f-aa78-b1e02c7c0757",
+          "replay_title": "【小松绿Viridis】和麦克风培养感情中 2026-11-25",
+          "replay_url": "",
+          "remark": "合集分P只给出曲名，原唱/出处未核实，沿用站内既有「待复核」标记。",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-collection-chapter",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1ZbyCz7Ejt/?p=14"
+        },
         {
           "date": "2026-10-27",
           "time": "",
@@ -11765,8 +11960,23 @@
       "display_song_name": "九万字",
       "artist": "黄诗扶",
       "cut_link": "https://www.bilibili.com/video/BV1LRWd6jEqp/?p=5",
-      "total_count": 1,
+      "total_count": 2,
       "entries": [
+        {
+          "date": "2026-11-25",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切复核",
+          "artist": "黄诗扶",
+          "replay_id": "live:3252ace9-c7e0-401f-aa78-b1e02c7c0757",
+          "replay_title": "【小松绿Viridis】和麦克风培养感情中 2026-11-25",
+          "replay_url": "",
+          "remark": "",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-collection-chapter",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1ZbyCz7Ejt/?p=19"
+        },
         {
           "date": "2026-11-12",
           "time": "",
@@ -12131,6 +12341,231 @@
           "song_resolution_method": "song-cut-title",
           "replay_date_source": "live-api-date",
           "cut_link": "https://www.bilibili.com/video/BV1pxWV6TETx/"
+        }
+      ]
+    },
+    "情绪未响应": {
+      "row_key": "情绪未响应",
+      "song_name": "情绪未响应",
+      "display_song_name": "情绪未响应",
+      "artist": "夜踊Yoodori / 洛天依Official",
+      "cut_link": "https://www.bilibili.com/video/BV1ZbyCz7Ejt/?p=2",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-11-25",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切复核",
+          "artist": "夜踊Yoodori / 洛天依Official",
+          "replay_id": "live:3252ace9-c7e0-401f-aa78-b1e02c7c0757",
+          "replay_title": "【小松绿Viridis】和麦克风培养感情中 2026-11-25",
+          "replay_url": "",
+          "remark": "",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-collection-chapter",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1ZbyCz7Ejt/?p=2"
+        }
+      ]
+    },
+    "½如梦": {
+      "row_key": "½如梦",
+      "song_name": "½如梦",
+      "display_song_name": "½如梦",
+      "artist": "星尘 / H.K.(HEROAR) / JazMaybe(HEROAR)",
+      "cut_link": "https://www.bilibili.com/video/BV1ZbyCz7Ejt/?p=6",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-11-25",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切复核",
+          "artist": "星尘 / H.K.(HEROAR) / JazMaybe(HEROAR)",
+          "replay_id": "live:3252ace9-c7e0-401f-aa78-b1e02c7c0757",
+          "replay_title": "【小松绿Viridis】和麦克风培养感情中 2026-11-25",
+          "replay_url": "",
+          "remark": "分P标注「½如梦（1_2如梦）【HEROAR】」，星尘演唱的 VOCALOID 中文原创。",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-collection-chapter",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1ZbyCz7Ejt/?p=6"
+        }
+      ]
+    },
+    "还是你的笑容最可爱": {
+      "row_key": "还是你的笑容最可爱",
+      "song_name": "还是你的笑容最可爱",
+      "display_song_name": "还是你的笑容最可爱",
+      "artist": "泠鸢yousa / 音阙诗听",
+      "cut_link": "https://www.bilibili.com/video/BV1ZbyCz7Ejt/?p=9",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-11-25",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切复核",
+          "artist": "泠鸢yousa / 音阙诗听",
+          "replay_id": "live:3252ace9-c7e0-401f-aa78-b1e02c7c0757",
+          "replay_title": "【小松绿Viridis】和麦克风培养感情中 2026-11-25",
+          "replay_url": "",
+          "remark": "",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-collection-chapter",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1ZbyCz7Ejt/?p=9"
+        }
+      ]
+    },
+    "海芋恋": {
+      "row_key": "海芋恋",
+      "song_name": "海芋恋",
+      "display_song_name": "海芋恋",
+      "artist": "萧敬腾",
+      "cut_link": "https://www.bilibili.com/video/BV1ZbyCz7Ejt/?p=16",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-11-25",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切复核",
+          "artist": "萧敬腾",
+          "replay_id": "live:3252ace9-c7e0-401f-aa78-b1e02c7c0757",
+          "replay_title": "【小松绿Viridis】和麦克风培养感情中 2026-11-25",
+          "replay_url": "",
+          "remark": "",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-collection-chapter",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1ZbyCz7Ejt/?p=16"
+        }
+      ]
+    },
+    "瘦子": {
+      "row_key": "瘦子",
+      "song_name": "瘦子",
+      "display_song_name": "瘦子",
+      "artist": "丁世光",
+      "cut_link": "https://www.bilibili.com/video/BV1ZbyCz7Ejt/?p=17",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-11-25",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切复核",
+          "artist": "丁世光",
+          "replay_id": "live:3252ace9-c7e0-401f-aa78-b1e02c7c0757",
+          "replay_title": "【小松绿Viridis】和麦克风培养感情中 2026-11-25",
+          "replay_url": "",
+          "remark": "",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-collection-chapter",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1ZbyCz7Ejt/?p=17"
+        }
+      ]
+    },
+    "我只在乎你": {
+      "row_key": "我只在乎你",
+      "song_name": "我只在乎你",
+      "display_song_name": "我只在乎你",
+      "artist": "邓丽君",
+      "cut_link": "https://www.bilibili.com/video/BV1ZbyCz7Ejt/?p=20",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-11-25",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切复核",
+          "artist": "邓丽君",
+          "replay_id": "live:3252ace9-c7e0-401f-aa78-b1e02c7c0757",
+          "replay_title": "【小松绿Viridis】和麦克风培养感情中 2026-11-25",
+          "replay_url": "",
+          "remark": "",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-collection-chapter",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1ZbyCz7Ejt/?p=20"
+        }
+      ]
+    },
+    "九九八十一": {
+      "row_key": "九九八十一",
+      "song_name": "九九八十一",
+      "display_song_name": "九九八十一",
+      "artist": "乐正绫",
+      "cut_link": "https://www.bilibili.com/video/BV1ZbyCz7Ejt/?p=21",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-11-25",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切复核",
+          "artist": "乐正绫",
+          "replay_id": "live:3252ace9-c7e0-401f-aa78-b1e02c7c0757",
+          "replay_title": "【小松绿Viridis】和麦克风培养感情中 2026-11-25",
+          "replay_url": "",
+          "remark": "",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-collection-chapter",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1ZbyCz7Ejt/?p=21"
+        }
+      ]
+    },
+    "此刻Memories": {
+      "row_key": "此刻Memories",
+      "song_name": "此刻Memories",
+      "display_song_name": "此刻Memories",
+      "artist": "洛天依",
+      "cut_link": "https://www.bilibili.com/video/BV1ZbyCz7Ejt/?p=22",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-11-25",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切复核",
+          "artist": "洛天依",
+          "replay_id": "live:3252ace9-c7e0-401f-aa78-b1e02c7c0757",
+          "replay_title": "【小松绿Viridis】和麦克风培养感情中 2026-11-25",
+          "replay_url": "",
+          "remark": "",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-collection-chapter",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1ZbyCz7Ejt/?p=22"
+        }
+      ]
+    },
+    "在水一方": {
+      "row_key": "在水一方",
+      "song_name": "在水一方",
+      "display_song_name": "在水一方",
+      "artist": "邓丽君",
+      "cut_link": "https://www.bilibili.com/video/BV1ZbyCz7Ejt/?p=23",
+      "total_count": 1,
+      "entries": [
+        {
+          "date": "2026-11-25",
+          "time": "",
+          "end_time": "",
+          "status": "歌回、歌切复核",
+          "artist": "邓丽君",
+          "replay_id": "live:3252ace9-c7e0-401f-aa78-b1e02c7c0757",
+          "replay_title": "【小松绿Viridis】和麦克风培养感情中 2026-11-25",
+          "replay_url": "",
+          "remark": "",
+          "lyric_excerpt": "",
+          "song_resolution_method": "song-cut-collection-chapter",
+          "replay_date_source": "live-api-date",
+          "cut_link": "https://www.bilibili.com/video/BV1ZbyCz7Ejt/?p=23"
         }
       ]
     }

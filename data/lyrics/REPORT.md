@@ -2,16 +2,16 @@
 
 此目录是网页歌词功能的数据准备。没有修改网页，没有部署。
 
-共 421/421 条；取得带时间戳来源 417 条；有本地音频 419 条；人工确认 0 条。
+共 430/430 条；取得带时间戳来源 425 条；有本地音频 428 条；人工确认 0 条。
 
-其中作品层面对应 339 条；待核验的时间歌词来源 78 条。上述来源数包含歧义及版本待核验，不能视为同步覆盖率。
+其中作品层面对应 346 条；待核验的时间歌词来源 79 条。上述来源数包含歧义及版本待核验，不能视为同步覆盖率。
 首句及中尾机器检查一致的草稿 1 条；人工听审与可确认上线的同步歌词仍为 0 条。
 
 ## 来源匹配统计
 
-- candidate_review_required: 61
-- matched: 339
-- no_timed_lyrics: 2
+- candidate_review_required: 62
+- matched: 346
+- no_timed_lyrics: 3
 - not_found: 2
 - version_review_required: 17
 
@@ -19,9 +19,10 @@
 
 - anchor_not_found: 355
 - asr_consistent_draft: 1
+- pending_asr: 8
 - spotcheck_review_required: 39
 - timing_drift_review_required: 3
-- unavailable: 6
+- unavailable: 7
 - version_review_required: 17
 
 ## 使用约定
@@ -398,7 +399,16 @@
 |song-404|恋友|[网易云 1322404518](https://music.163.com/#/song?id=1322404518)|matched|anchor_not_found|—|
 |song-405|晚想|[网易云 2687217413](https://music.163.com/#/song?id=2687217413)|matched|anchor_not_found|—|
 |song-406|蝴蝶泉边|[网易云 239682](https://music.163.com/#/song?id=239682)|matched|anchor_not_found|—|
+|song-407|情绪未响应|[网易云 2661119343](https://music.163.com/#/song?id=2661119343)|matched|pending_asr|—|
+|song-408|½如梦|[网易云 1437363540](https://music.163.com/#/song?id=1437363540)|candidate_review_required|pending_asr|—|
+|song-409|还是你的笑容最可爱|[网易云 1927432302](https://music.163.com/#/song?id=1927432302)|matched|pending_asr|—|
 |song-41|霜雪千年|[网易云 2631318598](https://music.163.com/#/song?id=2631318598)|matched|anchor_not_found|—|
+|song-410|海芋恋|[网易云 168039](https://music.163.com/#/song?id=168039)|matched|pending_asr|—|
+|song-411|瘦子|[网易云 2132838764](https://music.163.com/#/song?id=2132838764)|matched|pending_asr|—|
+|song-412|我只在乎你|[网易云 1888076998](https://music.163.com/#/song?id=1888076998)|matched|pending_asr|—|
+|song-413|九九八十一|[网易云 404543406](https://music.163.com/#/song?id=404543406)|matched|pending_asr|—|
+|song-414|此刻Memories|[网易云 2162951449](https://music.163.com/#/song?id=2162951449)|no_timed_lyrics|unavailable|—|
+|song-415|在水一方|[网易云 229731](https://music.163.com/#/song?id=229731)|matched|pending_asr|—|
 |song-42|航向你的海岛|[网易云 1804552401](https://music.163.com/#/song?id=1804552401)|matched|anchor_not_found|—|
 |song-43|外婆桥|[网易云 1393659632](https://music.163.com/#/song?id=1393659632)|matched|anchor_not_found|—|
 |song-44|锦鲤抄|[网易云 28188434](https://music.163.com/#/song?id=28188434)|matched|anchor_not_found|—|

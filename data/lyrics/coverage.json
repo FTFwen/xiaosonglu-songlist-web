@@ -1,25 +1,26 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-16T04:35:25.259Z",
-  "expected": 421,
-  "processed": 421,
+  "generatedAt": "2026-11-26T04:35:12.225Z",
+  "expected": 430,
+  "processed": 430,
   "matchCounts": {
-    "candidate_review_required": 61,
-    "matched": 339,
-    "no_timed_lyrics": 2,
+    "candidate_review_required": 62,
+    "matched": 346,
+    "no_timed_lyrics": 3,
     "not_found": 2,
     "version_review_required": 17
   },
   "alignmentCounts": {
     "anchor_not_found": 355,
     "asr_consistent_draft": 1,
+    "pending_asr": 8,
     "spotcheck_review_required": 39,
     "timing_drift_review_required": 3,
-    "unavailable": 6,
+    "unavailable": 7,
     "version_review_required": 17
   },
-  "withAudio": 419,
-  "withTimedSource": 417,
+  "withAudio": 428,
+  "withTimedSource": 425,
   "humanVerified": 0,
   "syncReady": 0,
   "notes": [
@@ -28,7 +29,7 @@
     "Pending, wrong-language and ambiguous versions must never be rendered as verified synchronized lyrics",
     "withTimedSource includes unresolved candidates and version-review sources; use workMatched for accepted work-level matches"
   ],
-  "workMatched": 339,
-  "unresolvedTimedSources": 78,
+  "workMatched": 346,
+  "unresolvedTimedSources": 79,
   "asrConsistentDrafts": 1
 }

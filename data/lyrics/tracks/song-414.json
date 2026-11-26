@@ -1,0 +1,169 @@
+{
+  "schemaVersion": 1,
+  "key": "song-414",
+  "songId": 414,
+  "songName": "此刻Memories",
+  "rowKey": "此刻Memories",
+  "displaySongName": "此刻Memories",
+  "artist": "洛天依",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "",
+  "audio": {
+    "url": "assets/audio/song_413.m4a?v=15c826e183b4",
+    "sha256": "15c826e183b4f96863aa9c1a013de1bbbfe1d147dba0e833bdf3efaae0684869"
+  },
+  "retrievedAt": "2026-11-26T04:34:59.999Z",
+  "match": {
+    "status": "no_timed_lyrics",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E6%AD%A4%E5%88%BBMemories&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E6%AD%A4%E5%88%BBMemories%20%E6%B4%9B%E5%A4%A9%E4%BE%9D&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 2162951449,
+        "name": "此刻Memories",
+        "artists": [
+          "洛天依"
+        ],
+        "album": "",
+        "durationMs": 199402,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 2159780001,
+        "name": "此刻Memories",
+        "artists": [
+          "妖橙Yumo",
+          "阿妍子"
+        ],
+        "album": "此刻Memories【BDF2024主题曲】",
+        "durationMs": 196999,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2650083147,
+        "name": "此刻Memories",
+        "artists": [
+          "星光Kirarin"
+        ],
+        "album": "Kirarin的偶像日记",
+        "durationMs": 204656,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3417198080,
+        "name": "此刻Memories",
+        "artists": [
+          "双叶豆w"
+        ],
+        "album": "扳手赛高w",
+        "durationMs": 97619,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2159097838,
+        "name": "此刻Memories",
+        "artists": [
+          "恰蘑菇",
+          "璎珞珞不加糖"
+        ],
+        "album": "此刻Memories",
+        "durationMs": 197381,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2623036119,
+        "name": "此刻Memories",
+        "artists": [
+          "芋桃桃"
+        ],
+        "album": "此刻Memories",
+        "durationMs": 194429,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2601389241,
+        "name": "此刻Memories",
+        "artists": [
+          "柒月July"
+        ],
+        "album": "此刻Memories",
+        "durationMs": 199464,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2155835730,
+        "name": "此刻Memories (洛天依ver)",
+        "artists": [
+          "洛天依"
+        ],
+        "album": "哔哩哔哩宅舞嘉年华(BDF2024)",
+        "durationMs": 199402,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      }
+    ],
+    "workQuery": {
+      "song_id": 414,
+      "song_name": "此刻Memories",
+      "show_as_song_name": "",
+      "display_song_name": "此刻Memories",
+      "artist": "洛天依",
+      "artist_search": "洛天依",
+      "feat_artist": "",
+      "remark": "",
+      "tone": "",
+      "language": "中文",
+      "type": "中V、流行",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1ZbyCz7Ejt/?p=22",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切复核",
+      "last_sing_at": "2026-11-25",
+      "row_key": "此刻Memories",
+      "key": "song-414",
+      "audio": "assets/audio/song_413.m4a?v=15c826e183b4"
+    },
+    "sourceId": 2162951449,
+    "sourcePath": "sources/2162951449.json",
+    "sourceUrl": "https://music.163.com/#/song?id=2162951449",
+    "selected": {
+      "id": 2162951449,
+      "name": "此刻Memories",
+      "artists": [
+        "洛天依"
+      ],
+      "album": "",
+      "durationMs": 199402,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 0
+  },
+  "alignment": {
+    "status": "unavailable",
+    "offsetSeconds": null,
+    "humanVerified": false
+  }
+}

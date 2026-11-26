@@ -1,0 +1,187 @@
+{
+  "schemaVersion": 1,
+  "key": "song-413",
+  "songId": 413,
+  "songName": "九九八十一",
+  "rowKey": "九九八十一",
+  "displaySongName": "九九八十一",
+  "artist": "乐正绫",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "",
+  "audio": {
+    "url": "assets/audio/song_412.m4a?v=6a4c103f3915",
+    "sha256": "6a4c103f3915c16923accf62aa020ac3ba80b2740293e97ed552d4493215349a"
+  },
+  "retrievedAt": "2026-11-26T04:35:03.901Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E4%B9%9D%E4%B9%9D%E5%85%AB%E5%8D%81%E4%B8%80&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E4%B9%9D%E4%B9%9D%E5%85%AB%E5%8D%81%E4%B8%80%20%E4%B9%90%E6%AD%A3%E7%BB%AB&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 404543406,
+        "name": "九九八十一",
+        "artists": [
+          "洛天依Official",
+          "乐正绫"
+        ],
+        "album": "九九八十一",
+        "durationMs": 282488,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 419373902,
+        "name": "九九八十一",
+        "artists": [
+          "叶洛洛",
+          "西瓜JUN",
+          "知性的小方块",
+          "泥鳅Niko"
+        ],
+        "album": "九九八十一（柔情版）",
+        "durationMs": 269080,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 408280222,
+        "name": "九九八十一",
+        "artists": [
+          "西瓜Kune"
+        ],
+        "album": "eternal day",
+        "durationMs": 285179,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 1862586170,
+        "name": "九九八十一",
+        "artists": [
+          "苏运莹"
+        ],
+        "album": "九九八十一",
+        "durationMs": 225302,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3459122079,
+        "name": "九九八十一",
+        "artists": [
+          "砚归声",
+          "予淇",
+          "福福v",
+          "槐予月",
+          "岑枝韵-CGETIER",
+          "茶陵",
+          "秦淮柳",
+          "青藤",
+          "翼声",
+          "湫樾樨"
+        ],
+        "album": "九九八十一",
+        "durationMs": 288440,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 3460530760,
+        "name": "九九八十一",
+        "artists": [
+          "WAIKIKI614_",
+          "恩迪",
+          "沂一",
+          "梨枝yo"
+        ],
+        "album": "九九八十一",
+        "durationMs": 287999,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 409649830,
+        "name": "九九八十一（翻自 乐正绫 / 洛天依）",
+        "artists": [
+          "双笙（陈元汐）",
+          "南久",
+          "易言",
+          "樊棋"
+        ],
+        "album": "【四人合唱】九九八十一（翻唱）",
+        "durationMs": 287294,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      },
+      {
+        "id": 3442296802,
+        "name": "九九八十一（赤旗版）V2",
+        "artists": [
+          "北极星电台"
+        ],
+        "album": "九九八十一（赤旗版）V2",
+        "durationMs": 246800,
+        "titleScore": 0.7,
+        "artistMatch": false,
+        "score": 0.5599999999999999
+      }
+    ],
+    "workQuery": {
+      "song_id": 413,
+      "song_name": "九九八十一",
+      "show_as_song_name": "",
+      "display_song_name": "九九八十一",
+      "artist": "乐正绫",
+      "artist_search": "乐正绫",
+      "feat_artist": "",
+      "remark": "",
+      "tone": "",
+      "language": "中文",
+      "type": "中V",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1ZbyCz7Ejt/?p=21",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切复核",
+      "last_sing_at": "2026-11-25",
+      "row_key": "九九八十一",
+      "key": "song-413",
+      "audio": "assets/audio/song_412.m4a?v=6a4c103f3915"
+    },
+    "sourceId": 404543406,
+    "sourcePath": "sources/404543406.json",
+    "sourceUrl": "https://music.163.com/#/song?id=404543406",
+    "selected": {
+      "id": 404543406,
+      "name": "九九八十一",
+      "artists": [
+        "洛天依Official",
+        "乐正绫"
+      ],
+      "album": "九九八十一",
+      "durationMs": 282488,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 58
+  },
+  "alignment": {
+    "status": "pending_asr",
+    "offsetSeconds": null,
+    "humanVerified": false
+  }
+}

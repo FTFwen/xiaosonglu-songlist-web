@@ -3560,6 +3560,36 @@
     "offsetSeconds": null
   },
   {
+    "key": "song-407",
+    "songName": "情绪未响应",
+    "artist": "夜踊Yoodori / 洛天依Official",
+    "matchStatus": "matched",
+    "alignmentStatus": "pending_asr",
+    "sourceId": 2661119343,
+    "reason": "matched",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-408",
+    "songName": "½如梦",
+    "artist": "星尘 / H.K.(HEROAR) / JazMaybe(HEROAR)",
+    "matchStatus": "candidate_review_required",
+    "alignmentStatus": "pending_asr",
+    "sourceId": 1437363540,
+    "reason": "candidate_review_required",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-409",
+    "songName": "还是你的笑容最可爱",
+    "artist": "泠鸢yousa / 音阙诗听",
+    "matchStatus": "matched",
+    "alignmentStatus": "pending_asr",
+    "sourceId": 1927432302,
+    "reason": "matched",
+    "offsetSeconds": null
+  },
+  {
     "key": "song-41",
     "songName": "霜雪千年",
     "artist": "洛天依Official / 乐正绫",
@@ -3567,6 +3597,66 @@
     "alignmentStatus": "anchor_not_found",
     "sourceId": 2631318598,
     "reason": "ASR candidate only. No listening confirmation. Uniform offset does not prove lyric edition or completeness.",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-410",
+    "songName": "海芋恋",
+    "artist": "萧敬腾",
+    "matchStatus": "matched",
+    "alignmentStatus": "pending_asr",
+    "sourceId": 168039,
+    "reason": "matched",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-411",
+    "songName": "瘦子",
+    "artist": "丁世光",
+    "matchStatus": "matched",
+    "alignmentStatus": "pending_asr",
+    "sourceId": 2132838764,
+    "reason": "matched",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-412",
+    "songName": "我只在乎你",
+    "artist": "邓丽君",
+    "matchStatus": "matched",
+    "alignmentStatus": "pending_asr",
+    "sourceId": 1888076998,
+    "reason": "matched",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-413",
+    "songName": "九九八十一",
+    "artist": "乐正绫",
+    "matchStatus": "matched",
+    "alignmentStatus": "pending_asr",
+    "sourceId": 404543406,
+    "reason": "matched",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-414",
+    "songName": "此刻Memories",
+    "artist": "洛天依",
+    "matchStatus": "no_timed_lyrics",
+    "alignmentStatus": "unavailable",
+    "sourceId": 2162951449,
+    "reason": "no_timed_lyrics",
+    "offsetSeconds": null
+  },
+  {
+    "key": "song-415",
+    "songName": "在水一方",
+    "artist": "邓丽君",
+    "matchStatus": "matched",
+    "alignmentStatus": "pending_asr",
+    "sourceId": 229731,
+    "reason": "matched",
     "offsetSeconds": null
   },
   {

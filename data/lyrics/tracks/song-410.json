@@ -1,0 +1,199 @@
+{
+  "schemaVersion": 1,
+  "key": "song-410",
+  "songId": 410,
+  "songName": "海芋恋",
+  "rowKey": "海芋恋",
+  "displaySongName": "海芋恋",
+  "artist": "萧敬腾",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "",
+  "audio": {
+    "url": "assets/audio/song_409.m4a?v=b4a8c46108eb",
+    "sha256": "b4a8c46108eb76d171cd35d739f32f51708fa0d5f9bfcf9493b6be85c626517b"
+  },
+  "retrievedAt": "2026-11-26T04:35:02.817Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E6%B5%B7%E8%8A%8B%E6%81%8B&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E6%B5%B7%E8%8A%8B%E6%81%8B%20%E8%90%A7%E6%95%AC%E8%85%BE&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 168039,
+        "name": "海芋恋",
+        "artists": [
+          "萧敬腾"
+        ],
+        "album": "萧敬腾 同名专辑",
+        "durationMs": 240120,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1996896048,
+        "name": "海芋恋",
+        "artists": [
+          "萧敬腾"
+        ],
+        "album": "2060元音之境",
+        "durationMs": 218808,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 3340727748,
+        "name": "海芋恋",
+        "artists": [
+          "江越"
+        ],
+        "album": "海芋恋",
+        "durationMs": 249912,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2126274101,
+        "name": "海芋恋",
+        "artists": [
+          "潼婳喵",
+          "系葩葩吖"
+        ],
+        "album": "海芋恋",
+        "durationMs": 207810,
+        "titleScore": 1,
+        "artistMatch": false,
+        "score": 0.8
+      },
+      {
+        "id": 2616614696,
+        "name": "海芋恋 (Live)",
+        "artists": [
+          "萧敬腾",
+          "黄子弘凡",
+          "刘宇",
+          "谭聪翀",
+          "周震南",
+          "颜人中",
+          "黄誉博",
+          "蒲熠星",
+          "韩佩泉",
+          "ICE杨长青",
+          "张颜齐",
+          "胡宇桐",
+          "奥利",
+          "伯远",
+          "Capper"
+        ],
+        "album": "闪光的夏天 第6期",
+        "durationMs": 232372,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      },
+      {
+        "id": 1998358260,
+        "name": "海芋恋 (Live)",
+        "artists": [
+          "周传雄",
+          "萧敬腾",
+          "张淇",
+          "陆虎"
+        ],
+        "album": "中国梦之声·我们的歌第四季 第8期",
+        "durationMs": 239895,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      },
+      {
+        "id": 2616614697,
+        "name": "海芋恋 (Live|伴奏)",
+        "artists": [
+          "萧敬腾",
+          "黄子弘凡",
+          "刘宇",
+          "谭聪翀",
+          "周震南",
+          "颜人中",
+          "黄誉博",
+          "蒲熠星",
+          "韩佩泉",
+          "ICE杨长青",
+          "张颜齐",
+          "胡宇桐",
+          "奥利",
+          "伯远",
+          "Capper"
+        ],
+        "album": "闪光的夏天 第6期",
+        "durationMs": 232372,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      },
+      {
+        "id": 167893,
+        "name": "海芋恋 (洛克先生Live版)",
+        "artists": [
+          "萧敬腾"
+        ],
+        "album": "洛克先生 Mr. Rock 演唱会Live纪实",
+        "durationMs": 255173,
+        "titleScore": 0.7,
+        "artistMatch": true,
+        "score": 0.76
+      }
+    ],
+    "workQuery": {
+      "song_id": 410,
+      "song_name": "海芋恋",
+      "show_as_song_name": "",
+      "display_song_name": "海芋恋",
+      "artist": "萧敬腾",
+      "artist_search": "萧敬腾",
+      "feat_artist": "",
+      "remark": "",
+      "tone": "",
+      "language": "中文",
+      "type": "流行",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1ZbyCz7Ejt/?p=16",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切复核",
+      "last_sing_at": "2026-11-25",
+      "row_key": "海芋恋",
+      "key": "song-410",
+      "audio": "assets/audio/song_409.m4a?v=b4a8c46108eb"
+    },
+    "sourceId": 168039,
+    "sourcePath": "sources/168039.json",
+    "sourceUrl": "https://music.163.com/#/song?id=168039",
+    "selected": {
+      "id": 168039,
+      "name": "海芋恋",
+      "artists": [
+        "萧敬腾"
+      ],
+      "album": "萧敬腾 同名专辑",
+      "durationMs": 240120,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 43
+  },
+  "alignment": {
+    "status": "pending_asr",
+    "offsetSeconds": null,
+    "humanVerified": false
+  }
+}

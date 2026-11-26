@@ -1,0 +1,24 @@
+{
+  "platform": "netease",
+  "id": 2650083147,
+  "url": "https://music.163.com/#/song?id=2650083147",
+  "apiUrl": "https://music.163.com/api/song/lyric?id=2650083147&lv=1&kv=1&tv=-1",
+  "retrievedAt": "2026-11-26T04:35:01.700Z",
+  "track": {
+    "id": 2650083147,
+    "name": "此刻Memories",
+    "artists": [
+      "星光Kirarin"
+    ],
+    "album": "Kirarin的偶像日记",
+    "durationMs": 204656,
+    "titleScore": 1,
+    "artistMatch": false,
+    "score": 0.8
+  },
+  "lrc": "",
+  "translationLrc": "",
+  "romanizationLrc": "",
+  "instrumental": false,
+  "lines": []
+}

@@ -1,0 +1,167 @@
+{
+  "schemaVersion": 1,
+  "key": "song-415",
+  "songId": 415,
+  "songName": "在水一方",
+  "rowKey": "在水一方",
+  "displaySongName": "在水一方",
+  "artist": "邓丽君",
+  "language": "中文",
+  "derivative": false,
+  "edition": "",
+  "remark": "",
+  "audio": {
+    "url": "assets/audio/song_414.m4a?v=d9f5df6ef9b4",
+    "sha256": "d9f5df6ef9b488339ea1963c1546f8102d882d08e349bea3d3a3e6c9c1b5d848"
+  },
+  "retrievedAt": "2026-11-26T04:35:08.426Z",
+  "match": {
+    "status": "matched",
+    "queries": [
+      "https://music.163.com/api/search/get?s=%E5%9C%A8%E6%B0%B4%E4%B8%80%E6%96%B9&type=1&limit=20&offset=0",
+      "https://music.163.com/api/search/get?s=%E5%9C%A8%E6%B0%B4%E4%B8%80%E6%96%B9%20%E9%82%93%E4%B8%BD%E5%90%9B&type=1&limit=20&offset=0"
+    ],
+    "candidates": [
+      {
+        "id": 229731,
+        "name": "在水一方",
+        "artists": [
+          "邓丽君"
+        ],
+        "album": "在水一方",
+        "durationMs": 225291,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 27667024,
+        "name": "在水一方",
+        "artists": [
+          "邓丽君"
+        ],
+        "album": "琼瑶影视作品",
+        "durationMs": 225291,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 26608724,
+        "name": "在水一方",
+        "artists": [
+          "邓丽君"
+        ],
+        "album": "邓丽君15周年",
+        "durationMs": 225291,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 226849,
+        "name": "在水一方",
+        "artists": [
+          "邓丽君"
+        ],
+        "album": "天国的情人",
+        "durationMs": 150946,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 3437300335,
+        "name": "在水一方",
+        "artists": [
+          "邓丽君"
+        ],
+        "album": "永远的巨星 连串恰恰金曲24首, Vol. 2",
+        "durationMs": 118066,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 486999908,
+        "name": "在水一方",
+        "artists": [
+          "邓丽君"
+        ],
+        "album": "邓丽君24K金藏集",
+        "durationMs": 229291,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 1404951171,
+        "name": "在水一方",
+        "artists": [
+          "邓丽君"
+        ],
+        "album": "君之千言万语 - 演唱会2",
+        "durationMs": 151240,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      },
+      {
+        "id": 225639,
+        "name": "在水一方",
+        "artists": [
+          "邓丽君"
+        ],
+        "album": "但愿人长久 15周年纪念集",
+        "durationMs": 225291,
+        "titleScore": 1,
+        "artistMatch": true,
+        "score": 1
+      }
+    ],
+    "workQuery": {
+      "song_id": 415,
+      "song_name": "在水一方",
+      "show_as_song_name": "",
+      "display_song_name": "在水一方",
+      "artist": "邓丽君",
+      "artist_search": "邓丽君",
+      "feat_artist": "",
+      "remark": "",
+      "tone": "",
+      "language": "中文",
+      "type": "华语经典",
+      "identification": "",
+      "display_version": "",
+      "search_name": "",
+      "cut_link": "https://www.bilibili.com/video/BV1ZbyCz7Ejt/?p=23",
+      "sing_count": 1,
+      "status_labels": "歌回、歌切复核",
+      "last_sing_at": "2026-11-25",
+      "row_key": "在水一方",
+      "key": "song-415",
+      "audio": "assets/audio/song_414.m4a?v=d9f5df6ef9b4"
+    },
+    "sourceId": 229731,
+    "sourcePath": "sources/229731.json",
+    "sourceUrl": "https://music.163.com/#/song?id=229731",
+    "selected": {
+      "id": 229731,
+      "name": "在水一方",
+      "artists": [
+        "邓丽君"
+      ],
+      "album": "在水一方",
+      "durationMs": 225291,
+      "titleScore": 1,
+      "artistMatch": true,
+      "score": 1
+    },
+    "timedLineCount": 22
+  },
+  "alignment": {
+    "status": "pending_asr",
+    "offsetSeconds": null,
+    "humanVerified": false
+  }
+}
