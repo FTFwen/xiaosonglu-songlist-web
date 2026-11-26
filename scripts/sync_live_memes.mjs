@@ -143,27 +143,6 @@ function readChannel(payload) {
   return new Map(lives.map(live => [live.liveId, live]));
 }
 
-function pageFetcher() {
-  let expectedTotal;
-  return async href => {
-    await delay(1150);
-    // Keep rate-limit pressure low. An unsuccessful fetch leaves the existing checkpoint.
-    const payload = await fetchJson(href, { retries: 1, timeoutMs: 25_000 });
-    const data = payload?.data ?? payload;
-    const records = data?.frame?.records ?? data?.records;
-    const offset = Number(new URL(href).searchParams.get('offset'));
-    const next = offset + (records?.length ?? 0);
-    if (!Array.isArray(records) || data.offset !== offset || !natural(data.total) ||
-      (expectedTotal !== undefined && data.total !== expectedTotal) || next > data.total ||
-      data.hasMore !== (next < data.total) || (data.hasMore && !records.length) || records.some(record =>
-        record?.payloadKind === 1 && (!validId(record.ts) || typeof record.payload?.rawText !== 'string'))) {
-      throw new Error(`Incomplete or inconsistent danmaku page at offset ${offset}`);
-    }
-    expectedTotal = data.total;
-    return payload;
-  };
-}
-
 function requiredLives(channel) {
   return [...channel.values()].filter(live => live.isFinish && live.isFull)
     .sort((a, b) => b.startDate - a.startDate || byText(a.liveId, b.liveId));
@@ -180,7 +159,10 @@ async function fillArchives({ archives, channel, cache, localOnly }) {
     // intact and rebuild into a different checkpoint so they cannot be silently reused.
     const target = existing && (existing.checkpoint?.complete || existing.schemaVersion === 1)
       ? join(cache, 'rebuild', `${id}.json`) : output;
-    const { result } = await fetchLiveDanmaku({ liveId: id, live, output: target, pageSize: 1000, fetcher: pageFetcher() });
+    // 2026-11-25: 归档接口已改为一次取回的 MessagePack 快照，旧的分页 pageFetcher 会把
+    // 二进制响应当 JSON 解析而失败；这里交回默认的 fetchArchiveBinary 即可。
+    await delay(1150); // 保持请求间隔，降低触发限流的概率。
+    const { result } = await fetchLiveDanmaku({ liveId: id, live, output: target, pageSize: 1000 });
     if (!completeArchive(result)) throw new Error(`Completed stream ${id} has an incomplete downloaded archive`);
     if (target !== output) await writeJsonAtomic(output, result);
     archives.set(id, result);
